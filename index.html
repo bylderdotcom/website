@@ -178,10 +178,63 @@ body::before {
 </nav>
 
 <section class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
-  <div class="orb-warm" style="width:800px;height:600px;top:-200px;right:-200px;"></div>
-  <div class="orb-moss"  style="width:600px;height:500px;bottom:-100px;left:-150px;"></div>
+
+  <!-- Achtergrond: subtiel blauwdruk-grid met huisvormen -->
+  <div style="position:absolute;inset:0;z-index:0;overflow:hidden;">
+
+    <!-- Fijn grid zoals een blauwdruk/plattegrond -->
+    <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.06;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3D5A3E" stroke-width="0.8"/>
+        </pattern>
+        <pattern id="grid-large" width="200" height="200" patternUnits="userSpaceOnUse">
+          <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+      <rect width="100%" height="100%" fill="url(#grid-large)"/>
+    </svg>
+
+    <!-- Drijvende huisvormen — subtiel, groot, als plattegrond-iconen -->
+    <svg style="position:absolute;top:8%;right:6%;opacity:0.055;transform:rotate(6deg);" width="180" height="160" viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="90,10 170,70 10,70" fill="none" stroke="#3D5A3E" stroke-width="3"/>
+      <rect x="20" y="70" width="140" height="80" fill="none" stroke="#3D5A3E" stroke-width="3"/>
+      <rect x="70" y="100" width="40" height="50" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="30" y="85" width="30" height="25" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="120" y="85" width="30" height="25" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+    </svg>
+
+    <svg style="position:absolute;bottom:12%;left:4%;opacity:0.04;transform:rotate(-4deg);" width="140" height="120" viewBox="0 0 140 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="70,8 132,55 8,55" fill="none" stroke="#B85C38" stroke-width="2.5"/>
+      <rect x="15" y="55" width="110" height="60" fill="none" stroke="#B85C38" stroke-width="2.5"/>
+      <rect x="55" y="78" width="30" height="37" fill="none" stroke="#B85C38" stroke-width="2"/>
+      <rect x="25" y="68" width="22" height="18" fill="none" stroke="#B85C38" stroke-width="1.5"/>
+      <rect x="93" y="68" width="22" height="18" fill="none" stroke="#B85C38" stroke-width="1.5"/>
+    </svg>
+
+    <svg style="position:absolute;top:35%;right:18%;opacity:0.035;transform:rotate(2deg);" width="100" height="88" viewBox="0 0 100 88" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,6 94,40 6,40" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="10" y="40" width="80" height="44" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="38" y="58" width="24" height="26" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+      <rect x="16" y="50" width="18" height="14" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+      <rect x="66" y="50" width="18" height="14" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+    </svg>
+
+    <!-- Stippellijn als maatvoering — architecten-look -->
+    <svg style="position:absolute;top:22%;left:12%;opacity:0.04;" width="200" height="2" viewBox="0 0 200 2">
+      <line x1="0" y1="1" x2="200" y2="1" stroke="#3D5A3E" stroke-width="1.5" stroke-dasharray="8,5"/>
+    </svg>
+    <svg style="position:absolute;top:22%;left:12%;opacity:0.04;" width="2" height="120" viewBox="0 0 2 120">
+      <line x1="1" y1="0" x2="1" y2="120" stroke="#3D5A3E" stroke-width="1.5" stroke-dasharray="8,5"/>
+    </svg>
+
+    <!-- Warme gradient orbs -->
+    <div class="orb-warm" style="width:700px;height:500px;top:-150px;right:-150px;z-index:1;"></div>
+    <div class="orb-moss" style="width:500px;height:400px;bottom:-80px;left:-100px;z-index:1;"></div>
+  </div>
   <div class="container relative z-10">
-    <div class="mx-auto text-center" style="max-width:720px;margin:0 auto;">
+    <div class="mx-auto text-center" style="max-width:960px;margin:0 auto;">
       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-moss text-xs font-mono mb-8 animate-fade-up delay-1">
         <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background:#3D5A3E;"></span>
         AI-GESTUURD PLATFORM — NIEUWBOUW &amp; RENOVATIE
@@ -198,7 +251,7 @@ body::before {
         <span id="typewriter" class="text-sm font-mono" style="color:#B85C38;"></span>
         <span class="cursor-blink text-sm font-mono" style="color:#B85C38;">_</span>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mb-16 animate-fade-up delay-5" style="max-width:800px;margin:0 auto;">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto mb-16 animate-fade-up delay-5" style="max-width:960px;margin:0 auto;">
         <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)">
           <div class="text-4xl mb-4">&#127959;&#65039;</div>
           <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik koop Nieuwbouw</div>
