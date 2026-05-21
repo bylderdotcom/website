@@ -148,8 +148,8 @@ body::before {
       <a href="#" class="text-sm" style="color:rgba(61,46,30,0.5);">Over ons</a>
     </div>
     <div class="flex items-center gap-3">
-      <a href="#" class="hidden md:block text-sm" style="color:rgba(61,46,30,0.5);">Inloggen</a>
-      <button class="cta-btn px-5 py-2.5 rounded-lg text-sm">Start Project <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i></button>
+      <a href="https://mijn.bylder.com" class="hidden md:block text-sm" style="color:rgba(61,46,30,0.5);">Inloggen</a>
+      <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start Project <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i></a>
     </div>
   </div>
 </nav>
@@ -460,9 +460,9 @@ body::before {
             <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Goossens</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
           </div>
         </div>
-        <button class="mt-8 w-full py-3 rounded-xl text-sm font-bold transition-all" style="background:#F5F0E8;color:#3D5A3E;" onmouseover="this.style.background='#EDE6D8'" onmouseout="this.style.background='#F5F0E8'">
+        <a href="https://mijn.bylder.com" class="mt-8 w-full py-3 rounded-xl text-sm font-bold transition-all text-center block" style="background:#F5F0E8;color:#3D5A3E;" onmouseover="this.style.background='#EDE6D8'" onmouseout="this.style.background='#F5F0E8'">
           Alle Vouchers Claimen <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -543,8 +543,8 @@ function triggerScan(){
 }
 function resetScan(){document.getElementById('scanIdle').classList.remove('hidden');document.getElementById('scanActive').classList.add('hidden');document.getElementById('scanResult').classList.add('hidden');const p=document.getElementById('aiProgress');p.classList.remove('running');p.style.transition='none';setTimeout(()=>{p.style.transition='transform 2s cubic-bezier(0.4,0,0.2,1)';},50);}
 function showToast(title,msg){const t=document.getElementById('toast');document.getElementById('toastTitle').textContent=title;document.getElementById('toastMsg').textContent=msg;t.classList.remove('translate-y-24','opacity-0');t.classList.add('translate-y-0','opacity-100');setTimeout(()=>{t.classList.remove('translate-y-0','opacity-100');t.classList.add('translate-y-24','opacity-0');},3500);}
-function claimVoucher(btn,brand){if(btn.dataset.claimed)return;btn.dataset.claimed='1';btn.innerHTML='<i class="fa-solid fa-check mr-2"></i>Geclaimed!';btn.style.background='rgba(61,90,62,.15)';btn.style.borderColor='rgba(61,90,62,.5)';showToast(brand+' voucher geclaimed!','Bekijk je inbox voor de activatiecode.');}
-function claimVoucherRust(btn,brand){if(btn.dataset.claimed)return;btn.dataset.claimed='1';btn.innerHTML='<i class="fa-solid fa-check mr-2"></i>Geclaimed!';btn.style.background='rgba(184,92,56,.15)';btn.style.borderColor='rgba(184,92,56,.5)';showToast(brand+' voucher geclaimed!','Bekijk je inbox voor de activatiecode.');}
+function claimVoucher(btn,brand){window.location.href='https://mijn.bylder.com';}
+function claimVoucherRust(btn,brand){window.location.href='https://mijn.bylder.com';}
 </script>
 </body>
 </html>
