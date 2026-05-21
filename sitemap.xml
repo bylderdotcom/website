@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.bylder.com/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bylder.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/gids/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-tools/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/budgetplanning/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/aankooptraject/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/meerwerk/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/lichtplan/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/oplevering/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/verwarmingssystemen/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/keuken-badkamer-showroom/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/vloer-wand-plafond/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/raambekleding-gordijnen/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/tuin-aanleggen/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-gids/afwerking-na-oplevering/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-tools/budget-calculator/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-tools/meerwerk-calculator/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/nieuwbouw-tools/checklist-oplevering/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/gietvloer/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/stucwerk/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/trap-afwerken/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -30,21 +46,14 @@
   <url><loc>https://www.bylder.com/nieuwbouw-korting/arnhem/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/haarlem/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/amersfoort/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/nieuwbouw-korting/zaandam/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/nieuwbouw-korting/apeldoorn/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/nieuwbouw-korting/enschede/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/zwolle/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/delft/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/leeuwarden/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/lelystad/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-korting/alkmaar/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/nieuwbouw-korting/dordrecht/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/nieuwbouw-korting/deventer/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/gids/checklist-oplevering-nieuwbouw/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/gids/kosten-afwerken-nieuwbouw/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/gids/volgorde-afwerking-nieuwbouw/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/gids/nieuwbouw-oplevering-gebreken/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/gids/nieuwbouw-korting-tips/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/gids/meerwerk-nieuwbouw/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/gids/gietvloer-vs-pvc/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/gids/bouwkundig-inspecteur-oplevering/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
