@@ -158,12 +158,12 @@ body::before {
 
 <nav class="glass-nav fixed top-0 left-0 right-0 z-50 py-4">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
-    <div class="flex items-center gap-3">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:#3D5A3E;">
         <span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span>
       </div>
       <span class="font-bold text-lg tracking-tight" style="color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
-    </div>
+    </a>
     <div class="hidden md:flex items-center gap-8">
       <a href="#scan" class="text-sm" style="color:rgba(61,46,30,0.5);">QuickScan</a>
       <a href="#vouchers" class="text-sm" style="color:rgba(61,46,30,0.5);">Vouchers</a>
@@ -309,12 +309,30 @@ body::before {
     <div class="text-center mb-12">
       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-moss text-xs font-mono mb-6">
         <i class="fa-solid fa-bolt" style="color:#3D5A3E;font-size:10px;"></i>
-        AI QUICKSCAN &#8212; 60 SECONDEN
+        AI QUICKSCAN &#8212; GRATIS PROBEREN
       </div>
       <h2 class="text-3xl md:text-5xl font-extrabold mb-4" style="letter-spacing:-0.03em;color:#1A1208;">
-        Instant AI feedback op <span style="color:#3D5A3E;font-style:italic;font-weight:300;">jouw plan</span>
+        Wat kost jouw woning<br><span style="color:#3D5A3E;font-style:italic;font-weight:300;">echt om af te werken?</span>
       </h2>
-      <p class="text-lg max-w-xl mx-auto" style="color:rgba(61,46,30,.55);">Drop een plattegrond of renovatieofferte en ontvang direct een AI-analyse met bespaartips en risico&#39;s.</p>
+      <p class="text-lg max-w-2xl mx-auto mb-8" style="color:rgba(61,46,30,.55);line-height:1.7;">Upload je plattegrond en ontvang in 60 seconden een AI-analyse met een kostenraming per ruimte, risicoscore en gekoppelde kortingsvouchers. <strong style="color:#1A1208;">Gratis, geen account nodig.</strong></p>
+
+      <!-- Social proof strip -->
+      <div class="flex flex-wrap items-center justify-center gap-6 mb-10">
+        <div class="flex items-center gap-2 text-sm" style="color:rgba(61,46,30,.5);">
+          <i class="fa-solid fa-check-circle" style="color:#3D5A3E;"></i>
+          <span>4.800+ analyses uitgevoerd</span>
+        </div>
+        <div style="width:1px;height:16px;background:rgba(61,46,30,.15);"></div>
+        <div class="flex items-center gap-2 text-sm" style="color:rgba(61,46,30,.5);">
+          <i class="fa-solid fa-check-circle" style="color:#3D5A3E;"></i>
+          <span>Gemiddeld €4.200 bespaard</span>
+        </div>
+        <div style="width:1px;height:16px;background:rgba(61,46,30,.15);"></div>
+        <div class="flex items-center gap-2 text-sm" style="color:rgba(61,46,30,.5);">
+          <i class="fa-solid fa-check-circle" style="color:#3D5A3E;"></i>
+          <span>Geen spam, geen verplichtingen</span>
+        </div>
+      </div>
     </div>
     <div class="drop-zone rounded-3xl p-12 text-center relative" id="dropZone"
          ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
@@ -323,20 +341,23 @@ body::before {
       <!-- Idle state -->
       <div id="scanIdle">
         <div class="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center animate-float" style="background:rgba(61,90,62,.1);border:1px solid rgba(61,90,62,.2);">
-          <i class="fa-solid fa-cloud-arrow-up text-3xl" style="color:#3D5A3E;"></i>
+          <i class="fa-solid fa-file-lines text-3xl" style="color:#3D5A3E;"></i>
         </div>
-        <h3 class="text-xl font-bold mb-2" style="color:#1A1208;">Drop hier je bestand</h3>
-        <p class="text-sm mb-6" style="color:rgba(61,46,30,.5);">Plattegrond, offerte of tekening &#8212; PDF, PNG, JPG tot 25MB</p>
+        <h3 class="text-xl font-bold mb-2" style="color:#1A1208;">Sleep je plattegrond hierheen</h3>
+        <p class="text-sm mb-2" style="color:rgba(61,46,30,.5);">PDF, PNG of JPG &#8212; tot 25MB &#8212; resultaat in 60 seconden</p>
+        <p class="text-xs mb-6 font-mono" style="color:rgba(61,46,30,.35);">Je bestand wordt na analyse automatisch verwijderd</p>
         <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
           <span class="px-3 py-1.5 rounded-lg text-xs font-mono" style="background:rgba(61,46,30,.06);border:1px solid rgba(61,46,30,.1);color:rgba(61,46,30,.5);">Plattegrond</span>
           <span class="px-3 py-1.5 rounded-lg text-xs font-mono" style="background:rgba(61,46,30,.06);border:1px solid rgba(61,46,30,.1);color:rgba(61,46,30,.5);">Offerte</span>
+          <span class="px-3 py-1.5 rounded-lg text-xs font-mono" style="background:rgba(61,46,30,.06);border:1px solid rgba(61,46,30,.1);color:rgba(61,46,30,.5);">Bouwtekening</span>
           <span class="px-3 py-1.5 rounded-lg text-xs font-mono" style="background:rgba(61,46,30,.06);border:1px solid rgba(61,46,30,.1);color:rgba(61,46,30,.5);">Foto&#39;s</span>
         </div>
         <!-- Hidden file input -->
         <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg" style="display:none;" onchange="handleFileSelect(event)">
-        <button class="cta-btn px-8 py-3 rounded-xl text-sm" onclick="document.getElementById('fileInput').click()">
-          <i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Bestand kiezen of droppen
+        <button class="cta-btn px-8 py-4 rounded-xl text-sm" onclick="document.getElementById('fileInput').click()" style="font-size:15px;">
+          <i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Start gratis AI-analyse
         </button>
+        <p class="text-xs mt-4" style="color:rgba(61,46,30,.35);">Geen account nodig &#8212; resultaten direct zichtbaar</p>
       </div>
 
       <!-- Scanning state -->
@@ -475,7 +496,13 @@ body::before {
     <div class="grid grid-cols-3 gap-6 mt-8 text-center">
       <div><i class="fa-solid fa-shield-halved text-lg mb-2" style="color:rgba(61,90,62,.5);"></i><p class="text-xs font-mono" style="color:rgba(61,46,30,.4);">End-to-end versleuteld</p></div>
       <div><i class="fa-solid fa-clock text-lg mb-2" style="color:rgba(61,90,62,.5);"></i><p class="text-xs font-mono" style="color:rgba(61,46,30,.4);">Resultaat in 60 sec</p></div>
-      <div><i class="fa-solid fa-trash text-lg mb-2" style="color:rgba(61,90,62,.5);"></i><p class="text-xs font-mono" style="color:rgba(61,46,30,.4);">Data na 24u verwijderd</p></div>
+      <div><i class="fa-solid fa-trash text-lg mb-2" style="color:rgba(61,90,62,.5);"></i><p class="text-xs font-mono" style="color:rgba(61,46,30,.4);">Bestand na 24u verwijderd</p></div>
+    </div>
+
+    <!-- Overtuigingsregel onder de scan -->
+    <div class="text-center mt-10 pt-8" style="border-top:1px solid rgba(61,46,30,.08);">
+      <p class="text-sm mb-1" style="color:rgba(61,46,30,.5);">Wil je het volledige rapport bewaren en je vouchers activeren?</p>
+      <p class="text-base font-semibold" style="color:#1A1208;">Word lid voor <span style="color:#3D5A3E;">&#8364;99 eenmalig</span> en bespaar gemiddeld &#8364;4.200 op je afwerking.</p>
     </div>
   </div>
 </section>
