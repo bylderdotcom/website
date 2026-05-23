@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bylder.com — Waardebonnen voor Nieuwbouw</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream:   '#F5F0E8',
+        'cream-2': '#EDE6D8',
+        'cream-3': '#E4DBC8',
+        sand:    '#C8B89A',
+        'sand-dark': '#9A866A',
+        bark:    '#3D2E1E',
+        'bark-2': '#5C4433',
+        'bark-3': '#8A7060',
+        moss:    '#3D5A3E',
+        'moss-light': '#4E7350',
+        'moss-bg':   '#EBF0E8',
+        rust:    '#B85C38',
+        'rust-bg':   '#F5EBE5',
+        charcoal: '#1A1208',
+      },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
+        mono: ['Space Mono', 'monospace'],
+      },
+    }
+  }
+}
+</script>
+<style>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #F5F0E8; color: #3D2E1E; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+
+/* Breedte override — alle containers maximaal breed */
+.max-w-7xl { max-width: 1400px !important; }
+.max-w-5xl { max-width: 1200px !important; }
+.max-w-4xl { max-width: 1000px !important; }
+.max-w-3xl { max-width: 860px !important; }
+.max-w-2xl { max-width: 760px !important; }
+.max-w-xl  { max-width: 680px !important; }
+nav .max-w-7xl { max-width: 1500px !important; }
+
+/* Best practice container — 1280px gecentreerd */
+.container {
+  width: 100% !important;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+  box-sizing: border-box !important;
+}
+@media (max-width: 768px) {
+  .container { padding-left: 20px !important; padding-right: 20px !important; }
+}
+body::before {
+  content: ''; position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 0; opacity: 0.5;
+}
+.glass-nav {
+  background: rgba(245,240,232,0.88);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(61,46,30,0.08);
+}
+.orb-warm {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,184,154,0.35) 0%, transparent 70%);
+  animation: pulse-orb 8s ease-in-out infinite;
+}
+.orb-moss {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(61,90,62,0.12) 0%, transparent 70%);
+  animation: pulse-orb 10s ease-in-out infinite reverse;
+}
+@keyframes pulse-orb { 0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.08);opacity:1} }
+.choice-btn {
+  position: relative; overflow: hidden;
+  border: 1.5px solid rgba(61,46,30,0.12);
+  background: rgba(255,255,255,0.7);
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+}
+.choice-btn:hover { border-color: rgba(61,90,62,0.4); box-shadow: 0 12px 40px rgba(61,46,30,0.1); transform: translateY(-4px); background: rgba(255,255,255,0.95); }
+.choice-btn.active-choice { border-color: #3D5A3E; box-shadow: 0 12px 50px rgba(61,90,62,0.2); background: #fff; }
+.drop-zone { border: 2px dashed rgba(61,46,30,0.18); background: rgba(255,255,255,0.5); transition: all 0.3s; }
+.drop-zone:hover, .drop-zone.dragover { border-color: rgba(61,90,62,0.5); background: rgba(235,240,232,0.6); }
+.voucher-card {
+  position: relative; overflow: hidden;
+  border: 1px solid rgba(61,46,30,0.1);
+  background: #fff;
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1); cursor: pointer;
+}
+.voucher-card:hover { border-color: rgba(61,90,62,0.3); box-shadow: 0 20px 60px rgba(61,46,30,0.12); transform: translateY(-6px); }
+.shimmer {
+  position: absolute; top:0; left:-100%; width:60%; height:100%;
+  background: linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);
+  transition: left 0.6s; pointer-events: none;
+}
+.voucher-card:hover .shimmer { left:150%; }
+.cta-btn { background:#3D5A3E; color:#F5F0E8; font-weight:700; letter-spacing:-0.01em; transition:all 0.25s; }
+.cta-btn:hover { background:#4E7350; box-shadow:0 8px 30px rgba(61,90,62,0.3); transform:translateY(-1px); }
+.claim-btn {
+  border: 1.5px solid rgba(61,90,62,0.4); color:#3D5A3E;
+  background: rgba(61,90,62,0.05); font-weight:600; font-size:0.8rem;
+  letter-spacing:0.06em; text-transform:uppercase; transition:all 0.25s;
+}
+.claim-btn:hover { background:#3D5A3E; color:#F5F0E8; box-shadow:0 4px 16px rgba(61,90,62,0.25); }
+.badge-moss { background:rgba(61,90,62,0.1); border:1px solid rgba(61,90,62,0.2); color:#3D5A3E; }
+.badge-rust { background:rgba(184,92,56,0.1); border:1px solid rgba(184,92,56,0.2); color:#B85C38; }
+.badge-sand { background:rgba(200,184,154,0.2); border:1px solid rgba(200,184,154,0.4); color:#7A6040; }
+.scan-line {
+  position:absolute; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,transparent,#3D5A3E,transparent);
+  animation:scan 2s linear infinite; opacity:0;
+}
+.scanning .scan-line { opacity:1; }
+@keyframes scan { 0%{top:0%}100%{top:100%} }
+.ai-progress {
+  height:2px; background:linear-gradient(90deg,#3D5A3E,#8AAE8B);
+  border-radius:2px; transform-origin:left; transform:scaleX(0);
+  transition:transform 2s cubic-bezier(0.4,0,0.2,1);
+}
+.ai-progress.running { transform:scaleX(1); }
+.warm-divider { background:linear-gradient(90deg,transparent,rgba(200,184,154,0.5),transparent); height:1px; }
+.feature-card { border:1px solid rgba(61,46,30,0.08); background:rgba(255,255,255,0.6); transition:all 0.3s; }
+.feature-card:hover { border-color:rgba(61,90,62,0.2); background:#fff; transform:translateY(-2px); box-shadow:0 8px 30px rgba(61,46,30,0.08); }
+.grid-bg {
+  background-image: linear-gradient(rgba(61,46,30,0.03) 1px,transparent 1px), linear-gradient(90deg,rgba(61,46,30,0.03) 1px,transparent 1px);
+  background-size:60px 60px;
+}
+@keyframes fadeInUp { from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)} }
+@keyframes float { 0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)} }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:0} }
+.animate-fade-up { animation:fadeInUp 0.6s ease forwards; }
+.animate-float   { animation:float 4s ease-in-out infinite; }
+.delay-1{animation-delay:.1s;opacity:0} .delay-2{animation-delay:.25s;opacity:0}
+.delay-3{animation-delay:.4s;opacity:0} .delay-4{animation-delay:.55s;opacity:0}
+.delay-5{animation-delay:.7s;opacity:0}
+.cursor-blink { animation:blink 1.2s step-start infinite; }
+::-webkit-scrollbar{width:6px} ::-webkit-scrollbar-track{background:#EDE6D8} ::-webkit-scrollbar-thumb{background:#C8B89A;border-radius:3px}
+.stat-num { font-size:2.8rem; font-weight:800; letter-spacing:-0.04em; line-height:1; }
+.partner-logo { filter:grayscale(100%) opacity(0.3); transition:filter 0.3s; }
+.partner-logo:hover { filter:grayscale(40%) opacity(0.6); }
+</style>
+</head>
+<body>
+
+<nav class="glass-nav fixed top-0 left-0 right-0 z-50 py-4">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:#3D5A3E;">
+        <span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span>
+      </div>
+      <span class="font-bold text-lg tracking-tight" style="color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#scan" class="text-sm" style="color:rgba(61,46,30,0.5);">QuickScan</a>
+      <a href="#vouchers" class="text-sm" style="color:rgba(61,46,30,0.5);">Vouchers</a>
+      <a href="#features" class="text-sm" style="color:rgba(61,46,30,0.5);">Features</a>
+      <a href="/over-ons/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Over ons</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://mijn.bylder.com" class="hidden md:block text-sm" style="color:rgba(61,46,30,0.5);">Inloggen</a>
+      <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start Project <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i></a>
+    </div>
+  </div>
+</nav>
+
+<section class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+
+  <!-- Achtergrond: subtiel blauwdruk-grid met huisvormen -->
+  <div style="position:absolute;inset:0;z-index:0;overflow:hidden;">
+
+    <!-- Fijn grid zoals een blauwdruk/plattegrond -->
+    <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.06;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3D5A3E" stroke-width="0.8"/>
+        </pattern>
+        <pattern id="grid-large" width="200" height="200" patternUnits="userSpaceOnUse">
+          <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+      <rect width="100%" height="100%" fill="url(#grid-large)"/>
+    </svg>
+
+    <!-- Drijvende huisvormen — subtiel, groot, als plattegrond-iconen -->
+    <svg style="position:absolute;top:8%;right:6%;opacity:0.055;transform:rotate(6deg);" width="180" height="160" viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="90,10 170,70 10,70" fill="none" stroke="#3D5A3E" stroke-width="3"/>
+      <rect x="20" y="70" width="140" height="80" fill="none" stroke="#3D5A3E" stroke-width="3"/>
+      <rect x="70" y="100" width="40" height="50" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="30" y="85" width="30" height="25" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="120" y="85" width="30" height="25" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+    </svg>
+
+    <svg style="position:absolute;bottom:12%;left:4%;opacity:0.04;transform:rotate(-4deg);" width="140" height="120" viewBox="0 0 140 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="70,8 132,55 8,55" fill="none" stroke="#B85C38" stroke-width="2.5"/>
+      <rect x="15" y="55" width="110" height="60" fill="none" stroke="#B85C38" stroke-width="2.5"/>
+      <rect x="55" y="78" width="30" height="37" fill="none" stroke="#B85C38" stroke-width="2"/>
+      <rect x="25" y="68" width="22" height="18" fill="none" stroke="#B85C38" stroke-width="1.5"/>
+      <rect x="93" y="68" width="22" height="18" fill="none" stroke="#B85C38" stroke-width="1.5"/>
+    </svg>
+
+    <svg style="position:absolute;top:35%;right:18%;opacity:0.035;transform:rotate(2deg);" width="100" height="88" viewBox="0 0 100 88" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,6 94,40 6,40" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="10" y="40" width="80" height="44" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+      <rect x="38" y="58" width="24" height="26" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+      <rect x="16" y="50" width="18" height="14" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+      <rect x="66" y="50" width="18" height="14" fill="none" stroke="#3D5A3E" stroke-width="1.5"/>
+    </svg>
+
+    <!-- Stippellijn als maatvoering — architecten-look -->
+    <svg style="position:absolute;top:22%;left:12%;opacity:0.04;" width="200" height="2" viewBox="0 0 200 2">
+      <line x1="0" y1="1" x2="200" y2="1" stroke="#3D5A3E" stroke-width="1.5" stroke-dasharray="8,5"/>
+    </svg>
+    <svg style="position:absolute;top:22%;left:12%;opacity:0.04;" width="2" height="120" viewBox="0 0 2 120">
+      <line x1="1" y1="0" x2="1" y2="120" stroke="#3D5A3E" stroke-width="1.5" stroke-dasharray="8,5"/>
+    </svg>
+
+    <!-- Warme gradient orbs -->
+    <div class="orb-warm" style="width:700px;height:500px;top:-150px;right:-150px;z-index:1;"></div>
+    <div class="orb-moss" style="width:500px;height:400px;bottom:-80px;left:-100px;z-index:1;"></div>
+  </div>
+  <div class="container relative z-10">
+    <div class="mx-auto text-center" style="max-width:960px;margin:0 auto;">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-moss text-xs font-mono mb-8 animate-fade-up delay-1">
+        <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background:#3D5A3E;"></span>
+        AI-GESTUURD PLATFORM — NIEUWBOUW &amp; RENOVATIE
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-none mb-6 animate-fade-up delay-2" style="letter-spacing:-0.03em;color:#1A1208;">
+        Bouw of renoveer<br>
+        <span style="color:#3D5A3E;font-style:italic;font-weight:300;">zonder stress.</span>
+      </h1>
+      <p class="text-lg md:text-xl mb-4 animate-fade-up delay-3 max-w-2xl mx-auto leading-relaxed" style="color:rgba(61,46,30,0.6);">
+        Gestuurd door AI, gefinancierd door korting. Jouw woning-upgrade begint hier.
+      </p>
+      <div class="inline-flex items-center gap-2 mb-12 animate-fade-up delay-4">
+        <span class="text-sm font-mono" style="color:#B85C38;opacity:.8;">&#8594;</span>
+        <span id="typewriter" class="text-sm font-mono" style="color:#B85C38;"></span>
+        <span class="cursor-blink text-sm font-mono" style="color:#B85C38;">_</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto mb-16 animate-fade-up delay-5" style="max-width:960px;margin:0 auto;">
+        <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)">
+          <div class="text-4xl mb-4">&#127959;&#65039;</div>
+          <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik koop Nieuwbouw</div>
+          <div class="text-sm leading-relaxed" style="color:rgba(61,46,30,0.5);">AI-begeleiding bij oplevering, garanties &amp; inrichting</div>
+          <div class="mt-6"><span class="text-xs font-mono px-3 py-1.5 rounded-full badge-moss">Nieuwbouw</span></div>
+        </button>
+        <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)">
+          <div class="text-4xl mb-4">&#128296;</div>
+          <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik ga Renoveren</div>
+          <div class="text-sm leading-relaxed" style="color:rgba(61,46,30,0.5);">Offerteanalyse, aannemer-matching &amp; kortingvouchers</div>
+          <div class="mt-6"><span class="text-xs font-mono px-3 py-1.5 rounded-full badge-rust">Renovatie</span></div>
+        </button>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-12 animate-fade-up" style="animation-delay:.9s;opacity:0;">
+        <div class="text-center">
+          <div class="stat-num" style="color:#1A1208;">4.800+</div>
+          <div class="text-xs font-mono uppercase tracking-widest mt-1" style="color:rgba(61,46,30,0.4);">Projecten</div>
+        </div>
+        <div class="w-px h-10 hidden md:block" style="background:rgba(61,46,30,0.12);"></div>
+        <div class="text-center">
+          <div class="stat-num" style="color:#3D5A3E;">&#8364;2.4M</div>
+          <div class="text-xs font-mono uppercase tracking-widest mt-1" style="color:rgba(61,46,30,0.4);">Bespaard</div>
+        </div>
+        <div class="w-px h-10 hidden md:block" style="background:rgba(61,46,30,0.12);"></div>
+        <div class="text-center">
+          <div class="stat-num" style="color:#1A1208;">40+</div>
+          <div class="text-xs font-mono uppercase tracking-widest mt-1" style="color:rgba(61,46,30,0.4);">Merken</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style="opacity:.3;">
+    <span class="text-xs font-mono uppercase tracking-widest" style="color:rgba(61,46,30,.5);">Scroll</span>
+    <div class="w-px h-8" style="background:linear-gradient(to bottom,rgba(61,46,30,0.4),transparent);"></div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+<div class="py-8" style="background:rgba(237,230,216,0.5);padding-left:5vw;padding-right:5vw;">
+  <div class="container">
+    <p class="text-center text-xs font-mono uppercase tracking-widest mb-6" style="color:rgba(61,46,30,.4);">Samenwerking met 40+ geselecteerde merken</p>
+    <div class="flex flex-wrap items-center justify-center gap-8 md:gap-14">
+      <div class="partner-logo font-extrabold text-xl tracking-tight" style="color:#3D2E1E;">AUPING</div>
+      <div class="partner-logo font-extrabold text-xl" style="color:#3D2E1E;">TABLES BY TIM</div>
+      <div class="partner-logo font-extrabold text-xl tracking-tight" style="color:#3D2E1E;">WHOON</div>
+      <div class="partner-logo font-extrabold text-xl" style="color:#3D2E1E;">DRT CONTEMPORARY</div>
+      <div class="partner-logo font-extrabold text-xl" style="color:#3D2E1E;">GOOSSENS</div>
+    </div>
+  </div>
+</div>
+<div class="warm-divider"></div>
+
+<section id="scan" class="py-24 relative overflow-hidden grid-bg" style="width:100%;">
+  <div class="container relative z-10">
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-moss text-xs font-mono mb-6">
+        <i class="fa-solid fa-bolt" style="color:#3D5A3E;font-size:10px;"></i>
+        AI QUICKSCAN &#8212; 60 SECONDEN
+      </div>
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-4" style="letter-spacing:-0.03em;color:#1A1208;">
+        Instant AI feedback op <span style="color:#3D5A3E;font-style:italic;font-weight:300;">jouw plan</span>
+      </h2>
+      <p class="text-lg max-w-xl mx-auto" style="color:rgba(61,46,30,.55);">Drop een plattegrond of renovatieofferte en ontvang direct een AI-analyse met bespaartips en risico&#39;s.</p>
+    </div>
+    <div class="drop-zone rounded-3xl p-12 text-center relative" id="dropZone"
+         ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+      <div class="scan-line" id="scanLine"></div>
+
+      <!-- Idle state -->
+      <div id="scanIdle">
+        <div class="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center animate-float" style="background:rgba(61,90,62,.1);border:1px solid rgba(61,90,62,.2);">
+          <i class="fa-solid fa-cloud-arrow-up text-3xl" style="color:#3D5A3E;"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2" style="color:#1A1208;">Drop hier je bestand</h3>
+        <p class="text-sm mb-6" style="color:rgba(61,46,30,.5);">Plattegrond, offerte of tekening &#8212; PDF, PNG, JPG tot 25MB</p>
+        <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
+          <span class="px-3 py-1.5 rounded-lg text-xs font-mono" style="background:rgba(61,46,30,.06);border:1px solid rgba(61,46,30,.1);color:rgba(61,46,30,.5);">Plattegrond</span>
+          <span class="px-3 py-1.5 rounded-lg text-xs font-mono" style="background:rgba(61,46,30,.06);border:1px solid rgba(61,46,30,.1);color:rgba(61,46,30,.5);">Offerte</span>
+          <span class="px-3 py-1.5 rounded-lg text-xs font-mono" style="background:rgba(61,46,30,.06);border:1px solid rgba(61,46,30,.1);color:rgba(61,46,30,.5);">Foto&#39;s</span>
+        </div>
+        <!-- Hidden file input -->
+        <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg" style="display:none;" onchange="handleFileSelect(event)">
+        <button class="cta-btn px-8 py-3 rounded-xl text-sm" onclick="document.getElementById('fileInput').click()">
+          <i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Bestand kiezen of droppen
+        </button>
+      </div>
+
+      <!-- Scanning state -->
+      <div id="scanActive" class="hidden">
+        <div class="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background:rgba(61,90,62,.12);border:1px solid rgba(61,90,62,.3);">
+          <i class="fa-solid fa-brain text-3xl" style="color:#3D5A3E;"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3" style="color:#1A1208;">AI analyseert&#8230;</h3>
+        <div class="max-w-xs mx-auto mb-4">
+          <div class="h-px rounded mb-1" style="background:rgba(61,46,30,.1);">
+            <div class="ai-progress" id="aiProgress"></div>
+          </div>
+        </div>
+        <p id="scanStatus" class="text-xs font-mono" style="color:#3D5A3E;">Bestand uploaden&#8230;</p>
+      </div>
+
+      <!-- Result state -->
+      <div id="scanResult" class="hidden text-left">
+
+        <!-- Zichtbare samenvatting — altijd tonen -->
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="rounded-2xl p-5" style="background:rgba(61,90,62,.07);border:1px solid rgba(61,90,62,.2);">
+            <div class="text-xs font-mono mb-2 uppercase tracking-widest" style="color:rgba(61,90,62,.7);">Bespaar potentieel</div>
+            <div id="resultBespaar" class="text-3xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.03em;">&#8364;4.200</div>
+            <div id="resultBespaarSub" class="text-xs mt-1" style="color:rgba(61,46,30,.5);">op materialen &amp; arbeid</div>
+          </div>
+          <div class="rounded-2xl p-5" style="background:rgba(184,92,56,.07);border:1px solid rgba(184,92,56,.2);">
+            <div class="text-xs font-mono mb-2 uppercase tracking-widest" style="color:rgba(184,92,56,.7);">Risicoscore</div>
+            <div id="resultRisico" class="text-3xl font-extrabold" style="color:#B85C38;letter-spacing:-0.03em;">Laag</div>
+            <div id="resultRisicoSub" class="text-xs mt-1" style="color:rgba(61,46,30,.5);">geen verborgen gebreken</div>
+          </div>
+          <div class="rounded-2xl p-5" style="background:rgba(61,46,30,.04);border:1px solid rgba(61,46,30,.1);">
+            <div class="text-xs font-mono mb-2 uppercase tracking-widest" style="color:rgba(61,46,30,.4);">Gedetecteerde ruimtes</div>
+            <div class="text-3xl font-extrabold" style="color:#1A1208;letter-spacing:-0.03em;">6</div>
+            <div class="text-xs mt-1" style="color:rgba(61,46,30,.5);">woonkamer, keuken, slaapkamer…</div>
+          </div>
+        </div>
+
+        <!-- Top aanbeveling — zichtbaar -->
+        <div id="resultAanbeveling" class="rounded-2xl p-4 mb-5" style="background:rgba(61,90,62,.05);border:1px solid rgba(61,90,62,.15);display:none;">
+          <p class="text-xs font-mono uppercase tracking-widest mb-1" style="color:rgba(61,90,62,.6);">Top aanbeveling</p>
+          <p id="resultAanbevelingText" class="text-sm font-semibold" style="color:#1A1208;"></p>
+        </div>
+
+        <!-- Geblurde preview van ruimtedetails -->
+        <div style="position:relative;border-radius:16px;overflow:hidden;margin-bottom:20px;">
+
+          <!-- De geblurde content eronder -->
+          <div style="filter:blur(5px);pointer-events:none;user-select:none;">
+            <div style="background:#fff;border:1px solid rgba(61,46,30,.08);border-radius:16px;padding:20px;">
+              <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;">
+                <div style="padding:7px 14px;border-radius:999px;background:#3D5A3E;color:#F5F0E8;font-size:13px;font-weight:600;">🛋️ Woonkamer · €14.200</div>
+                <div style="padding:7px 14px;border-radius:999px;background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.5);font-size:13px;">🍳 Keuken · €12.500</div>
+                <div style="padding:7px 14px;border-radius:999px;background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.5);font-size:13px;">🛏️ Slaapkamer · €6.800</div>
+                <div style="padding:7px 14px;border-radius:999px;background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.5);font-size:13px;">🚿 Badkamer · €5.200</div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                <div style="background:#1a1a2e;border-radius:12px;height:140px;display:flex;align-items:center;justify-content:center;font-size:40px;">🛋️</div>
+                <div style="display:flex;flex-direction:column;gap:10px;">
+                  <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(61,46,30,.06);">
+                    <span style="font-size:13px;color:rgba(61,46,30,.5);">🪨 Gietvloer</span>
+                    <span style="font-size:13px;font-weight:700;color:#1A1208;">€5.120</span>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(61,46,30,.06);">
+                    <span style="font-size:13px;color:rgba(61,46,30,.5);">🖌️ Stucwerk</span>
+                    <span style="font-size:13px;font-weight:700;color:#1A1208;">€3.200</span>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;padding:10px 0;">
+                    <span style="font-size:13px;color:rgba(61,46,30,.5);">💡 Verlichting</span>
+                    <span style="font-size:13px;font-weight:700;color:#1A1208;">€2.400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overlay met login CTA -->
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(to bottom,rgba(245,240,232,0) 0%,rgba(245,240,232,0.85) 30%,rgba(245,240,232,0.97) 60%);border-radius:16px;padding:24px;text-align:center;">
+            <div style="background:#fff;border-radius:20px;padding:28px 32px;max-width:400px;box-shadow:0 20px 60px rgba(61,46,30,0.15);border:1px solid rgba(61,46,30,0.1);">
+              <div style="width:48px;height:48px;background:rgba(61,90,62,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;">🏠</div>
+              <h3 style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:6px;">Jouw analyse is klaar</h3>
+              <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:20px;line-height:1.6;">Maak een gratis account om het volledige rapport te bekijken — inclusief kostenraming per ruimte, producttips en vouchers. Je tekening wordt direct meegenomen.</p>
+
+              <!-- Social login buttons -->
+              <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+                <button onclick="continueWithProvider('google')" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:11px 16px;border:1.5px solid rgba(61,46,30,0.15);border-radius:10px;background:#fff;font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;transition:all 0.2s;color:#1A1208;" onmouseover="this.style.borderColor='rgba(61,46,30,0.3)';this.style.boxShadow='0 4px 12px rgba(61,46,30,0.1)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.15)';this.style.boxShadow='none'">
+                  <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z"/><path fill="#34A853" d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z"/><path fill="#FBBC05" d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z"/><path fill="#EA4335" d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z"/></svg>
+                  Doorgaan met Google
+                </button>
+                <button onclick="continueWithProvider('microsoft')" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:11px 16px;border:1.5px solid rgba(61,46,30,0.15);border-radius:10px;background:#fff;font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;transition:all 0.2s;color:#1A1208;" onmouseover="this.style.borderColor='rgba(61,46,30,0.3)';this.style.boxShadow='0 4px 12px rgba(61,46,30,0.1)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.15)';this.style.boxShadow='none'">
+                  <svg width="18" height="18" viewBox="0 0 18 18"><rect x="1" y="1" width="7.5" height="7.5" fill="#F25022"/><rect x="9.5" y="1" width="7.5" height="7.5" fill="#7FBA00"/><rect x="1" y="9.5" width="7.5" height="7.5" fill="#00A4EF"/><rect x="9.5" y="9.5" width="7.5" height="7.5" fill="#FFB900"/></svg>
+                  Doorgaan met Microsoft
+                </button>
+                <button onclick="continueWithProvider('apple')" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:11px 16px;border:1.5px solid rgba(61,46,30,0.15);border-radius:10px;background:#1A1208;font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;transition:all 0.2s;color:#F5F0E8;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+                  <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M13.44 9.6c-.02-2.1 1.72-3.12 1.8-3.17-1-1.43-2.53-1.63-3.08-1.65-1.32-.13-2.57.77-3.24.77-.67 0-1.71-.75-2.8-.73-1.44.02-2.77.84-3.51 2.13-1.5 2.6-.38 6.44 1.07 8.55.71 1.03 1.56 2.19 2.68 2.15 1.07-.04 1.48-.69 2.77-.69 1.3 0 1.66.69 2.8.67 1.15-.02 1.88-1.05 2.58-2.08.82-1.19 1.16-2.34 1.18-2.4-.03-.01-2.25-.86-2.25-3.35z" fill="#F5F0E8"/><path d="M11.23 3.17c.59-.71 .99-1.7.88-2.69-.85.03-1.88.57-2.49 1.28-.55.63-1.02 1.64-.89 2.61.94.07 1.91-.48 2.5-1.2z" fill="#F5F0E8"/></svg>
+                  Doorgaan met Apple
+                </button>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                <div style="flex:1;height:1px;background:rgba(61,46,30,0.1);"></div>
+                <span style="font-size:11px;color:rgba(61,46,30,0.4);font-family:'Space Mono',monospace;">of</span>
+                <div style="flex:1;height:1px;background:rgba(61,46,30,0.1);"></div>
+              </div>
+
+              <button onclick="continueWithProvider('email')" style="width:100%;padding:11px;border-radius:10px;background:rgba(61,90,62,0.08);border:1.5px solid rgba(61,90,62,0.25);color:#3D5A3E;font-size:14px;font-weight:700;font-family:inherit;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.background='rgba(61,90,62,0.15)'" onmouseout="this.style.background='rgba(61,90,62,0.08)'">
+                <i class="fa-solid fa-envelope mr-2" style="font-size:12px;"></i>Doorgaan met e-mailadres
+              </button>
+
+              <p style="font-size:11px;color:rgba(61,46,30,0.35);margin-top:14px;line-height:1.5;">
+                Gratis · Geen creditcard · Je tekening wordt direct meegenomen naar je account
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reset knop -->
+        <div style="text-align:center;">
+          <button onclick="resetScan();event.stopPropagation();" style="font-size:13px;color:rgba(61,46,30,0.4);background:none;border:none;cursor:pointer;font-family:inherit;padding:8px 16px;">
+            <i class="fa-solid fa-rotate-left mr-1" style="font-size:11px;"></i> Andere tekening proberen
+          </button>
+        </div>
+      </div>
+
+      <!-- Error state -->
+      <div id="scanError" class="hidden">
+        <div class="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background:rgba(184,92,56,.1);border:1px solid rgba(184,92,56,.2);">
+          <i class="fa-solid fa-triangle-exclamation text-3xl" style="color:#B85C38;"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2" style="color:#1A1208;">Er ging iets mis</h3>
+        <p id="scanErrorMsg" class="text-sm mb-6" style="color:rgba(61,46,30,.5);">Probeer het opnieuw.</p>
+        <button onclick="resetScan()" class="cta-btn px-8 py-3 rounded-xl text-sm">Opnieuw proberen</button>
+      </div>
+
+    </div>
+    <div class="grid grid-cols-3 gap-6 mt-8 text-center">
+      <div><i class="fa-solid fa-shield-halved text-lg mb-2" style="color:rgba(61,90,62,.5);"></i><p class="text-xs font-mono" style="color:rgba(61,46,30,.4);">End-to-end versleuteld</p></div>
+      <div><i class="fa-solid fa-clock text-lg mb-2" style="color:rgba(61,90,62,.5);"></i><p class="text-xs font-mono" style="color:rgba(61,46,30,.4);">Resultaat in 60 sec</p></div>
+      <div><i class="fa-solid fa-trash text-lg mb-2" style="color:rgba(61,90,62,.5);"></i><p class="text-xs font-mono" style="color:rgba(61,46,30,.4);">Data na 24u verwijderd</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<section id="vouchers" class="py-24" style="background:#EDE6D8;width:100%;">
+  <div class="container">
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-rust text-xs font-mono mb-6">
+        <i class="fa-solid fa-tag" style="color:#B85C38;font-size:10px;"></i>
+        RETAILER VOUCHER HUB
+      </div>
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-4" style="letter-spacing:-0.03em;color:#1A1208;">
+        Exclusieve kortingen voor <span style="color:#B85C38;font-style:italic;font-weight:300;">Bylder leden</span>
+      </h2>
+      <p class="text-lg max-w-xl mx-auto" style="color:rgba(61,46,30,.55);">Gekoppeld aan jouw project. Activeer en ontvang direct via e-mail.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Auping — featured -->
+      <div class="voucher-card rounded-3xl overflow-hidden relative" style="border:1.5px solid rgba(184,92,56,.3);box-shadow:0 8px 30px rgba(184,92,56,.08);">
+        <div class="shimmer"></div>
+        <div class="absolute top-0 left-0 right-0 h-1 rounded-t-3xl" style="background:linear-gradient(90deg,#B85C38,rgba(184,92,56,.3));"></div>
+        <div class="absolute top-4 right-4"><span class="text-xs font-mono font-bold px-3 py-1 rounded-full badge-rust">&#9733; POPULAIR</span></div>
+        <div class="p-6 pb-0">
+          <div class="flex items-start justify-between mb-5">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center font-extrabold text-lg" style="background:#1A1208;color:#F5F0E8;">AU</div>
+          </div>
+          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Auping</h3>
+          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Premium bedden &amp; matrassen</p>
+          <div class="flex items-end gap-2 mb-5">
+            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
+            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
+          </div>
+          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op het volledige Auping assortiment. Geldig voor Bylder leden bij aankoop nieuwbouwwoning.</p>
+        </div>
+        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
+        <div class="px-6 pb-6">
+          <div class="flex items-center gap-3">
+            <button class="flex-1 py-2.5 rounded-xl text-sm font-bold transition-all" style="border:1.5px solid rgba(184,92,56,.4);color:#B85C38;background:rgba(184,92,56,.05);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;" onclick="claimVoucherRust(this,'Auping')">Claim Voucher</button>
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="fa-solid fa-share-nodes text-xs" style="color:rgba(61,46,30,.3);"></i></div>
+          </div>
+          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Geldig in alle Auping Plaza vestigingen &#183; 94 claims</p>
+        </div>
+      </div>
+
+      <!-- Tables by Tim -->
+      <div class="voucher-card rounded-3xl overflow-hidden">
+        <div class="shimmer"></div>
+        <div class="p-6 pb-0">
+          <div class="flex items-start justify-between mb-5">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center font-extrabold text-lg" style="background:#5C4433;color:#F5F0E8;">TT</div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full badge-moss">ACTIEF</span>
+          </div>
+          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Tables by Tim</h3>
+          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Handgemaakte tafels op maat</p>
+          <div class="flex items-end gap-2 mb-5">
+            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
+            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
+          </div>
+          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op maatwerk tafels en meubels. Inclusief gratis opmeetafspraak aan huis.</p>
+        </div>
+        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
+        <div class="px-6 pb-6">
+          <div class="flex items-center gap-3">
+            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'Tables by Tim')">Claim Voucher</button>
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="fa-solid fa-share-nodes text-xs" style="color:rgba(61,46,30,.3);"></i></div>
+          </div>
+          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Levertijd 6&#8211;8 weken &#183; 41 claims vandaag</p>
+        </div>
+      </div>
+
+      <!-- Whoon -->
+      <div class="voucher-card rounded-3xl overflow-hidden">
+        <div class="shimmer"></div>
+        <div class="p-6 pb-0">
+          <div class="flex items-start justify-between mb-5">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center font-extrabold text-lg" style="background:#8A7060;color:#F5F0E8;">WH</div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full badge-moss">ACTIEF</span>
+          </div>
+          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Whoon</h3>
+          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Woonwinkel &amp; interieuradvies</p>
+          <div class="flex items-end gap-2 mb-5">
+            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
+            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
+          </div>
+          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op meubels, verlichting en woonaccessoires bij alle Whoon vestigingen.</p>
+        </div>
+        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
+        <div class="px-6 pb-6">
+          <div class="flex items-center gap-3">
+            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'Whoon')">Claim Voucher</button>
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="fa-solid fa-share-nodes text-xs" style="color:rgba(61,46,30,.3);"></i></div>
+          </div>
+          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Instore &amp; online geldig &#183; 67 claims vandaag</p>
+        </div>
+      </div>
+
+      <!-- DRT Contemporary Flooring -->
+      <div class="voucher-card rounded-3xl overflow-hidden">
+        <div class="shimmer"></div>
+        <div class="p-6 pb-0">
+          <div class="flex items-start justify-between mb-5">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center font-extrabold text-base" style="background:#3D5A3E;color:#F5F0E8;">DRT</div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full badge-sand">ACTIEF</span>
+          </div>
+          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">DRT Contemporary</h3>
+          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Design vloeren &amp; gietvloeren</p>
+          <div class="flex items-end gap-2 mb-5">
+            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
+            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
+          </div>
+          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op gietvloeren, PVC en parket. Inclusief gratis kleur- en materiaaladvies op locatie.</p>
+        </div>
+        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
+        <div class="px-6 pb-6">
+          <div class="flex items-center gap-3">
+            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'DRT Contemporary')">Claim Voucher</button>
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="fa-solid fa-share-nodes text-xs" style="color:rgba(61,46,30,.3);"></i></div>
+          </div>
+          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Gratis opmeting inbegrepen &#183; 53 claims</p>
+        </div>
+      </div>
+
+      <!-- Goossens -->
+      <div class="voucher-card rounded-3xl overflow-hidden">
+        <div class="shimmer"></div>
+        <div class="p-6 pb-0">
+          <div class="flex items-start justify-between mb-5">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center font-extrabold text-lg" style="background:#B85C38;color:#F5F0E8;">GO</div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full badge-moss">ACTIEF</span>
+          </div>
+          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Goossens</h3>
+          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Meubels, keukens &amp; wonen</p>
+          <div class="flex items-end gap-2 mb-5">
+            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
+            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
+          </div>
+          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op het volledige Goossens assortiment, van bank tot keuken. Geldig bij alle vestigingen.</p>
+        </div>
+        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
+        <div class="px-6 pb-6">
+          <div class="flex items-center gap-3">
+            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'Goossens')">Claim Voucher</button>
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="fa-solid fa-share-nodes text-xs" style="color:rgba(61,46,30,.3);"></i></div>
+          </div>
+          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Instore + online &#183; 78 claims vandaag</p>
+        </div>
+      </div>
+
+      <div class="rounded-3xl p-8 flex flex-col justify-between" style="background:#3D5A3E;color:#F5F0E8;">
+        <div>
+          <div class="text-xs font-mono mb-3 uppercase tracking-widest" style="color:rgba(245,240,232,.6);">Bij alle partnermerken</div>
+          <div class="text-5xl font-extrabold mb-2" style="color:#F5F0E8;letter-spacing:-0.04em;">10%</div>
+          <p class="text-sm mb-6" style="color:rgba(245,240,232,.6);">collectieve korting voor Bylder leden</p>
+          <div class="space-y-2">
+            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Auping</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
+            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Tables by Tim</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
+            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Whoon</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
+            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">DRT Contemporary</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
+            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Goossens</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
+          </div>
+        </div>
+        <button class="mt-8 w-full py-3 rounded-xl text-sm font-bold transition-all" style="background:#F5F0E8;color:#3D5A3E;" onmouseover="this.style.background='#EDE6D8'" onmouseout="this.style.background='#F5F0E8'">
+          Alle Vouchers Claimen <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<section id="features" class="py-24 grid-bg" style="width:100%;">
+  <div class="container">
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-moss text-xs font-mono mb-6">
+        <i class="fa-solid fa-microchip" style="color:#3D5A3E;font-size:10px;"></i>
+        PLATFORM FEATURES
+      </div>
+      <h2 class="text-3xl md:text-5xl font-extrabold" style="letter-spacing:-0.03em;color:#1A1208;">
+        Alles wat je nodig hebt,<br><span style="color:#3D5A3E;font-style:italic;font-weight:300;">in &#233;&#233;n platform</span>
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="feature-card rounded-2xl p-7"><div class="w-12 h-12 rounded-xl mb-5 flex items-center justify-center" style="background:rgba(184,92,56,.1);"><i class="fa-solid fa-tag text-xl" style="color:#B85C38;"></i></div><h3 class="text-lg font-bold mb-2" style="color:#1A1208;">Voucher Ecosystem</h3><p class="text-sm leading-relaxed" style="color:rgba(61,46,30,.55);">Automatisch de juiste retailer-kortingen gekoppeld aan jouw project. Gemiddeld &#8364;400 extra besparing bij merken als Auping, Goossens en DRT Contemporary.</p></div>
+      <div class="feature-card rounded-2xl p-7"><div class="w-12 h-12 rounded-xl mb-5 flex items-center justify-center" style="background:rgba(61,90,62,.1);"><i class="fa-solid fa-robot text-xl" style="color:#3D5A3E;"></i></div><h3 class="text-lg font-bold mb-2" style="color:#1A1208;">AI Offerte Analyse</h3><p class="text-sm leading-relaxed" style="color:rgba(61,46,30,.55);">Upload je offerte en krijg direct inzicht in marktconforme prijzen, risico&#39;s en alternatieven.</p></div>
+      <div class="feature-card rounded-2xl p-7"><div class="w-12 h-12 rounded-xl mb-5 flex items-center justify-center" style="background:rgba(184,92,56,.1);"><i class="fa-solid fa-handshake text-xl" style="color:#B85C38;"></i></div><h3 class="text-lg font-bold mb-2" style="color:#1A1208;">Aannemer Matching</h3><p class="text-sm leading-relaxed" style="color:rgba(61,46,30,.55);">Gecertificeerde aannemers gematcht op jouw project, budget en locatie.</p></div>
+      <div class="feature-card rounded-2xl p-7"><div class="w-12 h-12 rounded-xl mb-5 flex items-center justify-center" style="background:rgba(61,90,62,.1);"><i class="fa-solid fa-calendar-check text-xl" style="color:#3D5A3E;"></i></div><h3 class="text-lg font-bold mb-2" style="color:#1A1208;">Project Planning</h3><p class="text-sm leading-relaxed" style="color:rgba(61,46,30,.55);">Automatische planning op basis van beschikbaarheid en gewenste opleverdatum.</p></div>
+      <div class="feature-card rounded-2xl p-7"><div class="w-12 h-12 rounded-xl mb-5 flex items-center justify-center" style="background:rgba(184,92,56,.1);"><i class="fa-solid fa-chart-line text-xl" style="color:#B85C38;"></i></div><h3 class="text-lg font-bold mb-2" style="color:#1A1208;">Budget Tracker</h3><p class="text-sm leading-relaxed" style="color:rgba(61,46,30,.55);">Real-time inzicht in kosten versus budget. Waarschuwingen bij overschrijding.</p></div>
+      <div class="feature-card rounded-2xl p-7"><div class="w-12 h-12 rounded-xl mb-5 flex items-center justify-center" style="background:rgba(61,90,62,.1);"><i class="fa-solid fa-shield-halved text-xl" style="color:#3D5A3E;"></i></div><h3 class="text-lg font-bold mb-2" style="color:#1A1208;">Garantie &amp; Verzekering</h3><p class="text-sm leading-relaxed" style="color:rgba(61,46,30,.55);">Bouwgarantie via SWK of Woningborg, plus optionele allrisk verzekering.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- ═══ PRIJSSECTIE ═══ -->
+<section style="padding:80px 0;background:#1A1208;">
+  <div class="container">
+
+    <!-- Header -->
+    <div style="text-align:center;margin-bottom:56px;">
+      <div style="display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:999px;background:rgba(61,90,62,0.2);border:1px solid rgba(61,90,62,0.35);color:#8AAE8B;font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:20px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#8AAE8B;display:inline-block;"></span>
+        Eenmalige investering
+      </div>
+      <h2 style="font-size:2.8rem;font-weight:800;color:#F5F0E8;letter-spacing:-0.03em;margin-bottom:14px;line-height:1.1;">
+        Eén bedrag.<br><span style="color:#8AAE8B;font-style:italic;font-weight:300;">Jaren voordeel.</span>
+      </h2>
+      <p style="font-size:16px;color:rgba(245,240,232,0.5);max-width:520px;margin:0 auto;line-height:1.7;">
+        Bylder kost je eenmalig €99. Geen abonnement, geen verborgen kosten. Wat je terugkrijgt is het veelvoud daarvan.
+      </p>
+    </div>
+
+    <!-- Pricing card + what you get -->
+    <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:24px;align-items:start;max-width:1000px;margin:0 auto;">
+
+      <!-- Prijs card -->
+      <div style="background:rgba(245,240,232,0.05);border:1px solid rgba(245,240,232,0.1);border-radius:24px;padding:36px;text-align:center;position:sticky;top:100px;">
+        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.4);margin-bottom:12px;">Bylder lidmaatschap</div>
+        <div style="font-size:5rem;font-weight:800;color:#F5F0E8;letter-spacing:-0.05em;line-height:1;">€99</div>
+        <div style="font-size:13px;color:rgba(245,240,232,0.4);margin-top:6px;margin-bottom:28px;">eenmalig · geen abonnement</div>
+
+        <!-- Terugverdientijd -->
+        <div style="background:rgba(61,90,62,0.15);border:1px solid rgba(61,90,62,0.3);border-radius:12px;padding:16px;margin-bottom:24px;">
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:#8AAE8B;margin-bottom:6px;">Gemiddelde besparing</div>
+          <div style="font-size:2rem;font-weight:800;color:#8AAE8B;letter-spacing:-0.04em;">€4.200</div>
+          <div style="font-size:12px;color:rgba(245,240,232,0.4);margin-top:3px;">op afwerking & inrichting</div>
+          <div style="height:1px;background:rgba(61,90,62,0.3);margin:12px 0;"></div>
+          <div style="font-size:12px;color:rgba(245,240,232,0.5);">Terugverdiend na je <strong style="color:#8AAE8B;">eerste aankoop</strong></div>
+        </div>
+
+        <a href="https://mijn.bylder.com" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:14px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;text-align:center;transition:all 0.2s;margin-bottom:12px;" onmouseover="this.style.background='#4E7350'" onmouseout="this.style.background='#3D5A3E'">
+          Nu starten voor €99
+        </a>
+        <p style="font-size:11px;color:rgba(245,240,232,0.3);line-height:1.6;">
+          Veilig betalen via iDEAL, Bancontact of creditcard.<br>14 dagen niet-goed-geld-terug garantie.
+        </p>
+      </div>
+
+      <!-- Wat krijg je -->
+      <div style="display:flex;flex-direction:column;gap:14px;">
+
+        <!-- Sectie: vouchers -->
+        <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:18px;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+            <div style="width:40px;height:40px;border-radius:10px;background:rgba(184,92,56,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-tag" style="color:#B85C38;font-size:16px;"></i></div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:#F5F0E8;letter-spacing:-0.01em;">10% korting bij 40+ partnermerken</div>
+              <div style="font-size:12px;color:rgba(245,240,232,0.45);">Auping, Goossens, DRT Contemporary, Tables by Tim, Whoon en meer</div>
+            </div>
+            <div style="margin-left:auto;font-size:11px;font-weight:700;color:#B85C38;background:rgba(184,92,56,0.15);padding:4px 10px;border-radius:6px;white-space:nowrap;">Waarde €4.200+</div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="padding:4px 10px;border-radius:6px;background:rgba(245,240,232,0.06);font-size:11px;color:rgba(245,240,232,0.5);font-family:'Space Mono',monospace;">Gietvloer</span>
+            <span style="padding:4px 10px;border-radius:6px;background:rgba(245,240,232,0.06);font-size:11px;color:rgba(245,240,232,0.5);font-family:'Space Mono',monospace;">Bed & matras</span>
+            <span style="padding:4px 10px;border-radius:6px;background:rgba(245,240,232,0.06);font-size:11px;color:rgba(245,240,232,0.5);font-family:'Space Mono',monospace;">Meubels</span>
+            <span style="padding:4px 10px;border-radius:6px;background:rgba(245,240,232,0.06);font-size:11px;color:rgba(245,240,232,0.5);font-family:'Space Mono',monospace;">Gordijnen</span>
+            <span style="padding:4px 10px;border-radius:6px;background:rgba(245,240,232,0.06);font-size:11px;color:rgba(245,240,232,0.5);font-family:'Space Mono',monospace;">Verlichting</span>
+            <span style="padding:4px 10px;border-radius:6px;background:rgba(245,240,232,0.06);font-size:11px;color:rgba(245,240,232,0.5);font-family:'Space Mono',monospace;">Tuin</span>
+          </div>
+        </div>
+
+        <!-- Sectie: AI analyse -->
+        <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:18px;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:40px;height:40px;border-radius:10px;background:rgba(61,90,62,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-brain" style="color:#8AAE8B;font-size:16px;"></i></div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:#F5F0E8;letter-spacing:-0.01em;">AI Woninganalyse op maat</div>
+              <div style="font-size:12px;color:rgba(245,240,232,0.45);">Upload je plattegrond — ontvang per ruimte een complete kostenraming, tips en productaanbevelingen</div>
+            </div>
+            <div style="margin-left:auto;font-size:11px;font-weight:700;color:#8AAE8B;background:rgba(61,90,62,0.15);padding:4px 10px;border-radius:6px;white-space:nowrap;">Uniek</div>
+          </div>
+        </div>
+
+        <!-- Sectie: gidsen & tools -->
+        <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:18px;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:40px;height:40px;border-radius:10px;background:rgba(200,184,154,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-book-open" style="color:#C8B89A;font-size:16px;"></i></div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:#F5F0E8;letter-spacing:-0.01em;">Complete nieuwbouw gids & tools</div>
+              <div style="font-size:12px;color:rgba(245,240,232,0.45);">Budget calculator, meerwerk calculator, interactieve checklist oplevering en 11 gedetailleerde gidsen</div>
+            </div>
+            <div style="margin-left:auto;font-size:11px;font-weight:700;color:#C8B89A;background:rgba(200,184,154,0.1);padding:4px 10px;border-radius:6px;white-space:nowrap;">Gratis toegang</div>
+          </div>
+        </div>
+
+        <!-- Sectie: aannemer matching -->
+        <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:18px;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:40px;height:40px;border-radius:10px;background:rgba(184,92,56,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-handshake" style="color:#B85C38;font-size:16px;"></i></div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:#F5F0E8;letter-spacing:-0.01em;">Gecertificeerde aannemer matching</div>
+              <div style="font-size:12px;color:rgba(245,240,232,0.45);">Toegang tot ons netwerk van gescreende vakbedrijven — stucadoors, vloerenleggers, elektriciens en meer</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sectie: interieuradvies -->
+        <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:18px;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:40px;height:40px;border-radius:10px;background:rgba(61,90,62,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-couch" style="color:#8AAE8B;font-size:16px;"></i></div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:#F5F0E8;letter-spacing:-0.01em;">Gratis interieuradviesgesprek</div>
+              <div style="font-size:12px;color:rgba(245,240,232,0.45);">Eenmalig een videogesprek met een van onze gecertificeerde interieuradviseurs over jouw woning</div>
+            </div>
+            <div style="margin-left:auto;font-size:11px;font-weight:700;color:#8AAE8B;background:rgba(61,90,62,0.15);padding:4px 10px;border-radius:6px;white-space:nowrap;">t.w.v. €150</div>
+          </div>
+        </div>
+
+        <!-- Sociale bewijskracht -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:4px;">
+          <div style="text-align:center;padding:16px;background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.06);border-radius:12px;">
+            <div style="font-size:1.8rem;font-weight:800;color:#F5F0E8;letter-spacing:-0.04em;">4.800+</div>
+            <div style="font-size:11px;color:rgba(245,240,232,0.4);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;margin-top:3px;">Leden</div>
+          </div>
+          <div style="text-align:center;padding:16px;background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.06);border-radius:12px;">
+            <div style="font-size:1.8rem;font-weight:800;color:#8AAE8B;letter-spacing:-0.04em;">€2.4M</div>
+            <div style="font-size:11px;color:rgba(245,240,232,0.4);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;margin-top:3px;">Bespaard</div>
+          </div>
+          <div style="text-align:center;padding:16px;background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.06);border-radius:12px;">
+            <div style="font-size:1.8rem;font-weight:800;color:#F5F0E8;letter-spacing:-0.04em;">9.4/10</div>
+            <div style="font-size:11px;color:rgba(245,240,232,0.4);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;margin-top:3px;">Beoordeling</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom quote -->
+    <div style="text-align:center;margin-top:56px;padding-top:40px;border-top:1px solid rgba(245,240,232,0.08);">
+      <p style="font-size:1.1rem;color:rgba(245,240,232,0.5);max-width:560px;margin:0 auto;line-height:1.7;font-style:italic;">
+        "Wij betaalden €99 voor Bylder en bespaarden ruim €5.800 op onze gietvloer, bank en slaapkamerset. Dat is het beste wat we hebben gedaan na het tekenen van de koopakte."
+      </p>
+      <div style="margin-top:14px;display:flex;align-items:center;justify-content:center;gap:10px;">
+        <div style="width:36px;height:36px;border-radius:50%;background:#3D5A3E;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#F5F0E8;">MK</div>
+        <div style="text-align:left;">
+          <div style="font-size:13px;font-weight:600;color:rgba(245,240,232,0.7);">Marieke & Kevin</div>
+          <div style="font-size:11px;color:rgba(245,240,232,0.35);font-family:'Space Mono',monospace;">Nieuwbouwkoper · Utrecht</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+<section style="padding:48px 0;background:rgba(237,230,216,0.4);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;flex-wrap:wrap;">
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:14px;">Korting per categorie</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <a href="/nieuwbouw-korting/gietvloer/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Gietvloer nieuwbouw</a>
+          <a href="/nieuwbouw-korting/stucwerk/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Stucwerk nieuwbouw</a>
+          <a href="/nieuwbouw-korting/trap-afwerken/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Trap afwerken nieuwbouw</a>
+          <a href="/nieuwbouw-korting/slaapkamer/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Slaapkamer inrichten nieuwbouw</a>
+          <a href="/nieuwbouw-korting/zonnepanelen/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Zonnepanelen nieuwbouw</a>
+          <a href="/nieuwbouw-korting/keuken/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Keuken plaatsen nieuwbouw</a>
+          <a href="/nieuwbouw-korting/" style="font-size:13px;color:#3D5A3E;font-weight:600;margin-top:4px;">Alle categorieën →</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:14px;">Korting per stad</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <a href="/nieuwbouw-korting/amsterdam/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw korting Amsterdam</a>
+          <a href="/nieuwbouw-korting/rotterdam/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw korting Rotterdam</a>
+          <a href="/nieuwbouw-korting/utrecht/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw korting Utrecht</a>
+          <a href="/nieuwbouw-korting/almere/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw korting Almere</a>
+          <a href="/nieuwbouw-korting/den-bosch/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw korting Den Bosch</a>
+          <a href="/nieuwbouw-korting/eindhoven/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw korting Eindhoven</a>
+          <a href="/nieuwbouw-korting/" style="font-size:13px;color:#3D5A3E;font-weight:600;margin-top:4px;">Alle steden →</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:14px;">Nieuwbouw gidsen</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <a href="/gids/checklist-oplevering-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Checklist oplevering nieuwbouw</a>
+          <a href="/gids/kosten-afwerken-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Kosten afwerken nieuwbouw</a>
+          <a href="/gids/volgorde-afwerking-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Volgorde afwerking nieuwbouw</a>
+          <a href="/gids/meerwerk-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Meerwerk bij nieuwbouw</a>
+          <a href="/gids/gietvloer-vs-pvc/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Gietvloer of PVC — vergelijking</a>
+          <a href="/gids/bouwkundig-inspecteur-oplevering/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Bouwkundig inspecteur oplevering</a>
+          <a href="/gids/" style="font-size:13px;color:#3D5A3E;font-weight:600;margin-top:4px;">Alle gidsen →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+<footer style="padding:64px 0;background:#1A1208;color:rgba(245,240,232,.8);">
+  <div class="container">
+    <div class="flex flex-col md:flex-row items-start justify-between gap-10 mb-12">
+      <div class="max-w-xs">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:#3D5A3E;"><span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span></div>
+          <span class="font-bold text-lg tracking-tight" style="color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:rgba(245,240,232,.4);">Het AI-platform voor slimme woning-upgrades. Nieuwbouw en renovatie zonder gedoe.</p>
+      </div>
+      <div class="grid grid-cols-3 gap-12">
+        <div><p class="text-xs font-mono uppercase tracking-widest mb-4" style="color:rgba(245,240,232,.25);">Ontdek</p><ul class="space-y-3"><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">QuickScan</a></li><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">Vouchers</a></li><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">Aannemers</a></li></ul></div>
+        <div><p class="text-xs font-mono uppercase tracking-widest mb-4" style="color:rgba(245,240,232,.25);">Bedrijf</p><ul class="space-y-3"><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">Over ons</a></li><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">Partners</a></li><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">Blog</a></li></ul></div>
+        <div><p class="text-xs font-mono uppercase tracking-widest mb-4" style="color:rgba(245,240,232,.25);">Juridisch</p><ul class="space-y-3"><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">Privacy</a></li><li><a href="#" class="text-sm" style="color:rgba(245,240,232,.45);">Voorwaarden</a></li></ul></div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center justify-between pt-8 gap-4" style="border-top:1px solid rgba(245,240,232,.08);">
+      <p class="text-xs font-mono" style="color:rgba(245,240,232,.25);">&#169; 2025 Bylder Nederland B.V. &#8212; KvK 65020006</p>
+      <div class="flex items-center gap-1 text-xs font-mono" style="color:rgba(245,240,232,.25);"><span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background:#8AAE8B;"></span>Alle systemen operationeel</div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="fixed bottom-8 right-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+  <div class="rounded-2xl px-5 py-4 flex items-center gap-3" style="background:#fff;border:1px solid rgba(61,90,62,.2);box-shadow:0 20px 60px rgba(61,46,30,.15);">
+    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(61,90,62,.1);"><i class="fa-solid fa-check text-xs" style="color:#3D5A3E;"></i></div>
+    <div><p id="toastTitle" class="text-sm font-bold" style="color:#1A1208;">Voucher geclaimed!</p><p id="toastMsg" class="text-xs" style="color:rgba(61,46,30,.5);">Check je inbox voor de bevestiging.</p></div>
+  </div>
+</div>
+
+<script>
+// Typewriter
+const phrases=['Slimme AI-begeleiding bij elke stap.','Gemiddeld \u20ac4.200 bespaard per project.','Gecertificeerde aannemers in jouw regio.','Vouchers automatisch gekoppeld aan jouw plan.'];
+let pi=0,ci=0,del=false;
+function type(){const el=document.getElementById('typewriter'),cur=phrases[pi];if(!del){el.textContent=cur.slice(0,++ci);if(ci===cur.length){del=true;setTimeout(type,2200);return;}}else{el.textContent=cur.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;}}setTimeout(type,del?30:55);}
+setTimeout(type,1200);
+
+// Choice buttons
+function selectChoice(btn){
+  document.querySelectorAll('.choice-btn').forEach(b=>b.classList.remove('active-choice'));
+  btn.classList.add('active-choice');
+  document.getElementById('scan').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Drag & drop
+function handleDragOver(e){e.preventDefault();document.getElementById('dropZone').classList.add('dragover');}
+function handleDragLeave(){document.getElementById('dropZone').classList.remove('dragover');}
+function handleDrop(e){
+  e.preventDefault();
+  document.getElementById('dropZone').classList.remove('dragover');
+  const file = e.dataTransfer.files[0];
+  if (file) processFile(file);
+}
+function handleFileSelect(e){
+  const file = e.target.files[0];
+  if (file) processFile(file);
+}
+
+// Convert file to base64
+function fileToBase64(file){
+  return new Promise((resolve,reject)=>{
+    const reader = new FileReader();
+    reader.onload = ()=>resolve(reader.result.split(',')[1]);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+// Show scanning state
+function showScanning(){
+  document.getElementById('scanIdle').classList.add('hidden');
+  document.getElementById('scanActive').classList.remove('hidden');
+  document.getElementById('scanResult').classList.add('hidden');
+  document.getElementById('scanError').classList.add('hidden');
+  document.getElementById('dropZone').classList.add('scanning');
+  setTimeout(()=>document.getElementById('aiProgress').classList.add('running'), 50);
+}
+
+// Update status messages during scan
+function animateStatus(){
+  const msgs = [
+    'Bestand uploaden\u2026',
+    'Plattegrond analyseren\u2026',
+    'Materialen identificeren\u2026',
+    'Marktprijzen raadplegen\u2026',
+    'Vouchers matchen\u2026'
+  ];
+  let i = 0;
+  const el = document.getElementById('scanStatus');
+  return setInterval(()=>{ if(i < msgs.length) el.textContent = msgs[i++]; }, 1200);
+}
+
+// Main: process uploaded file and call API
+async function processFile(file){
+  // Validate type
+  const allowed = ['image/png','image/jpeg','image/jpg','application/pdf'];
+  if(!allowed.includes(file.type)){
+    alert('Alleen PDF, PNG of JPG bestanden zijn toegestaan.');
+    return;
+  }
+  // Validate size (25MB)
+  if(file.size > 25 * 1024 * 1024){
+    alert('Bestand is te groot. Maximum is 25MB.');
+    return;
+  }
+
+  showScanning();
+  const statusInterval = animateStatus();
+
+  try {
+    const base64 = await fileToBase64(file);
+
+    const response = await fetch('/api/scan', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fileData: base64,
+        fileType: file.type,
+        fileName: file.name
+      })
+    });
+
+    clearInterval(statusInterval);
+
+    if(!response.ok){
+      const err = await response.json();
+      throw new Error(err.error || 'API fout');
+    }
+
+    const result = await response.json();
+    showResult(result);
+
+  } catch(err){
+    clearInterval(statusInterval);
+    showError(err.message);
+  }
+}
+
+// Show results
+function showResult(data){
+  document.getElementById('dropZone').classList.remove('scanning');
+  document.getElementById('scanActive').classList.add('hidden');
+  document.getElementById('scanResult').classList.remove('hidden');
+
+  // Fill in results
+  document.getElementById('resultBespaar').textContent = data.bespaar_potentieel || '\u20ac3.500';
+  document.getElementById('resultBespaarSub').textContent = data.bespaar_toelichting || 'op materialen & arbeid';
+
+  const risicoEl = document.getElementById('resultRisico');
+  risicoEl.textContent = data.risicoscore || 'Laag';
+  risicoEl.style.color = data.risicoscore === 'Hoog' ? '#B85C38' : data.risicoscore === 'Gemiddeld' ? '#C8A830' : '#3D5A3E';
+  document.getElementById('resultRisicoSub').textContent = data.risico_toelichting || '';
+
+  const count = data.vouchers_count || (data.vouchers ? data.vouchers.length : 5);
+  document.getElementById('resultVouchers').textContent = count + ' stuks';
+
+  if(data.top_aanbeveling){
+    document.getElementById('resultAanbeveling').style.display = 'block';
+    document.getElementById('resultAanbevelingText').textContent = data.top_aanbeveling;
+  }
+
+  // Reset progress bar for next use
+  const p = document.getElementById('aiProgress');
+  p.classList.remove('running');
+  p.style.transition = 'none';
+  setTimeout(()=>{ p.style.transition = 'transform 2s cubic-bezier(0.4,0,0.2,1)'; }, 50);
+}
+
+// Show error
+function showError(msg){
+  document.getElementById('dropZone').classList.remove('scanning');
+  document.getElementById('scanActive').classList.add('hidden');
+  document.getElementById('scanError').classList.remove('hidden');
+  document.getElementById('scanErrorMsg').textContent = msg || 'Er ging iets mis. Probeer het opnieuw.';
+}
+
+// Reset scan
+function resetScan(){
+  document.getElementById('scanIdle').classList.remove('hidden');
+  document.getElementById('scanActive').classList.add('hidden');
+  document.getElementById('scanResult').classList.add('hidden');
+  document.getElementById('scanError').classList.add('hidden');
+  document.getElementById('dropZone').classList.remove('scanning');
+  document.getElementById('fileInput').value = '';
+  const p = document.getElementById('aiProgress');
+  p.classList.remove('running');
+  p.style.transition = 'none';
+  setTimeout(()=>{ p.style.transition = 'transform 2s cubic-bezier(0.4,0,0.2,1)'; }, 50);
+}
+
+// Vouchers
+function showToast(title,msg){const t=document.getElementById('toast');document.getElementById('toastTitle').textContent=title;document.getElementById('toastMsg').textContent=msg;t.classList.remove('translate-y-24','opacity-0');t.classList.add('translate-y-0','opacity-100');setTimeout(()=>{t.classList.remove('translate-y-0','opacity-100');t.classList.add('translate-y-24','opacity-0');},3500);}
+function continueWithProvider(provider){
+  const sessionToken = 'gs_' + Math.random().toString(36).substr(2,12) + '_' + Date.now();
+  sessionStorage.setItem('bylder_session', sessionToken);
+  sessionStorage.setItem('bylder_scan_result', JSON.stringify({
+    bespaar: document.getElementById('resultBespaar')?.textContent || '€4.200',
+    risico: document.getElementById('resultRisico')?.textContent || 'Laag',
+    timestamp: Date.now()
+  }));
+  const redirectUrl = 'https://mijn.bylder.com/register'
+    + '?session=' + sessionToken
+    + '&provider=' + provider
+    + '&source=quickscan';
+  const btn = event.currentTarget;
+  const original = btn.innerHTML;
+  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>Doorsturen\u2026';
+  btn.disabled = true;
+  setTimeout(() => { window.location.href = redirectUrl; }, 600);
+}
+function claimVoucher(btn,brand){window.location.href='https://mijn.bylder.com';}
+function claimVoucherRust(btn,brand){window.location.href='https://mijn.bylder.com';}
+</script>
+</body>
+</html>
