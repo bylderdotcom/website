@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Over ons — Bylder.com</title>
+<meta name="description" content="Bylder.com helpt kopers van nieuwbouwwoningen stress-vrij te renoveren en in te richten. Leer meer over ons verhaal, onze missie en het team.">
+<link rel="canonical" href="https://www.bylder.com/over-ons/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: #F5F0E8; color: #3D2E1E; }
+
+/* Tokens */
+:root {
+  --cream: #F5F0E8; --cream-2: #EDE6D8; --bark: #1A1208;
+  --bark-2: #3D2E1E; --bark-3: rgba(61,46,30,0.5);
+  --moss: #3D5A3E; --moss-2: #4E7350; --moss-bg: rgba(61,90,62,0.08);
+  --rust: #B85C38; --sand: #C8B89A; --white: #ffffff;
+}
+
+.container { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
+@media(max-width:768px) { .container { padding: 0 20px; } }
+
+/* Nav */
+.glass-nav {
+  background: rgba(245,240,232,0.88); backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(61,46,30,0.08);
+  position: sticky; top: 0; z-index: 50; padding: 16px 0;
+}
+.glass-nav .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-logo-icon { width: 32px; height: 32px; background: var(--moss); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: 'Space Mono', monospace; font-weight: 800; color: var(--cream); font-size: 13px; }
+.nav-logo-text { font-weight: 700; font-size: 18px; color: var(--bark); letter-spacing: -0.02em; }
+.nav-logo-text span { color: var(--moss); }
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { font-size: 14px; color: var(--bark-3); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--bark); }
+.nav-cta { background: var(--moss); color: var(--cream); padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.2s; }
+.nav-cta:hover { background: var(--moss-2); }
+
+/* Divider */
+.warm-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(200,184,154,0.5), transparent); }
+
+/* Badge */
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: var(--moss-bg); border: 1px solid rgba(61,90,62,0.2); color: var(--moss); font-size: 11px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px; }
+.badge-rust { background: rgba(184,92,56,0.08); border-color: rgba(184,92,56,0.2); color: var(--rust); }
+
+/* Animations */
+@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+.fade-up { animation: fadeUp 0.6s ease forwards; }
+.d1 { animation-delay:0.1s; opacity:0; }
+.d2 { animation-delay:0.25s; opacity:0; }
+.d3 { animation-delay:0.4s; opacity:0; }
+
+/* Hero */
+.hero { padding: 100px 0 80px; text-align: center; }
+.hero h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -0.03em; color: var(--bark); line-height: 1.1; margin-bottom: 20px; }
+.hero h1 span { color: var(--moss); font-style: italic; font-weight: 300; }
+.hero p { font-size: 1.1rem; color: var(--bark-3); max-width: 580px; margin: 0 auto 40px; line-height: 1.8; }
+
+/* Missie */
+.missie { padding: 80px 0; }
+.missie-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.missie-visual { position: relative; }
+.missie-card-large { background: var(--bark); border-radius: 24px; padding: 48px; color: var(--cream); }
+.missie-card-large .num { font-size: 5rem; font-weight: 800; color: #8AAE8B; letter-spacing: -0.05em; line-height: 1; margin-bottom: 8px; }
+.missie-card-large .lbl { font-size: 11px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(245,240,232,0.4); margin-bottom: 20px; }
+.missie-card-large .quote { font-size: 1.1rem; color: rgba(245,240,232,0.75); line-height: 1.7; font-style: italic; }
+.missie-float { position: absolute; bottom: -20px; right: -20px; background: var(--white); border: 1px solid rgba(61,46,30,0.1); border-radius: 16px; padding: 16px 20px; box-shadow: 0 20px 40px rgba(61,46,30,0.12); display: flex; align-items: center; gap: 12px; }
+.missie-float-icon { width: 40px; height: 40px; background: var(--moss-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--moss); font-size: 16px; }
+.missie-float-val { font-size: 1.2rem; font-weight: 800; color: var(--moss); letter-spacing: -0.03em; }
+.missie-float-lbl { font-size: 11px; color: var(--bark-3); }
+
+.missie-text h2 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; color: var(--bark); margin-bottom: 20px; line-height: 1.2; }
+.missie-text p { font-size: 15px; color: var(--bark-3); line-height: 1.8; margin-bottom: 20px; }
+.missie-text strong { color: var(--bark); font-weight: 600; }
+
+/* Verhaal timeline */
+.verhaal { padding: 80px 0; background: var(--cream-2); }
+.verhaal h2 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; color: var(--bark); margin-bottom: 48px; text-align: center; }
+.timeline { display: flex; flex-direction: column; gap: 0; max-width: 640px; margin: 0 auto; }
+.tl-item { display: flex; gap: 24px; padding-bottom: 40px; position: relative; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-left { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+.tl-dot { width: 40px; height: 40px; border-radius: 50%; background: var(--moss); display: flex; align-items: center; justify-content: center; color: var(--cream); font-size: 14px; font-weight: 700; flex-shrink: 0; z-index: 1; }
+.tl-dot.rust { background: var(--rust); }
+.tl-dot.sand { background: var(--sand); color: var(--bark); }
+.tl-line { flex: 1; width: 2px; background: rgba(61,46,30,0.1); margin-top: 4px; }
+.tl-item:last-child .tl-line { display: none; }
+.tl-right { padding-top: 6px; }
+.tl-year { font-size: 11px; font-family: 'Space Mono', monospace; color: var(--bark-3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+.tl-title { font-size: 16px; font-weight: 700; color: var(--bark); margin-bottom: 6px; letter-spacing: -0.01em; }
+.tl-desc { font-size: 14px; color: var(--bark-3); line-height: 1.65; }
+
+/* Waarden */
+.waarden { padding: 80px 0; }
+.waarden h2 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; color: var(--bark); margin-bottom: 40px; text-align: center; }
+.waarden-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.waarde-card { background: var(--white); border: 1px solid rgba(61,46,30,0.08); border-radius: 20px; padding: 28px; transition: all 0.25s; }
+.waarde-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(61,46,30,0.1); border-color: rgba(61,90,62,0.2); }
+.waarde-icon { font-size: 28px; margin-bottom: 14px; }
+.waarde-title { font-size: 16px; font-weight: 700; color: var(--bark); margin-bottom: 8px; letter-spacing: -0.01em; }
+.waarde-desc { font-size: 14px; color: var(--bark-3); line-height: 1.65; }
+
+/* Team */
+.team { padding: 80px 0; background: var(--cream-2); }
+.team h2 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; color: var(--bark); margin-bottom: 12px; text-align: center; }
+.team-sub { font-size: 15px; color: var(--bark-3); text-align: center; margin-bottom: 48px; max-width: 480px; margin-left: auto; margin-right: auto; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.team-card { background: var(--white); border: 1px solid rgba(61,46,30,0.08); border-radius: 20px; padding: 28px; text-align: center; transition: all 0.25s; }
+.team-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(61,46,30,0.1); }
+.team-avatar { width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: var(--cream); }
+.team-name { font-size: 16px; font-weight: 700; color: var(--bark); margin-bottom: 4px; letter-spacing: -0.01em; }
+.team-role { font-size: 12px; color: var(--moss); font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+.team-desc { font-size: 13px; color: var(--bark-3); line-height: 1.6; }
+
+/* Partners CTA */
+.partner-cta { padding: 80px 0; background: var(--bark); }
+.partner-cta-inner { display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; align-items: center; }
+.partner-cta h2 { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; color: var(--cream); margin-bottom: 14px; line-height: 1.2; }
+.partner-cta h2 span { color: #8AAE8B; font-style: italic; font-weight: 300; }
+.partner-cta p { font-size: 15px; color: rgba(245,240,232,0.55); line-height: 1.7; margin-bottom: 24px; }
+.partner-cta-card { background: rgba(245,240,232,0.05); border: 1px solid rgba(245,240,232,0.1); border-radius: 20px; padding: 28px; }
+.pcc-row { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-bottom: 1px solid rgba(245,240,232,0.07); }
+.pcc-row:last-child { border-bottom: none; }
+.pcc-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+.pcc-label { font-size: 14px; color: rgba(245,240,232,0.75); font-weight: 500; }
+.pcc-val { margin-left: auto; font-size: 13px; font-weight: 700; color: #8AAE8B; }
+
+/* CTA sectie */
+.cta-section { padding: 80px 0; text-align: center; }
+.cta-section h2 { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.03em; color: var(--bark); margin-bottom: 14px; }
+.cta-section h2 span { color: var(--moss); font-style: italic; font-weight: 300; }
+.cta-section p { font-size: 16px; color: var(--bark-3); max-width: 480px; margin: 0 auto 32px; line-height: 1.7; }
+.cta-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--moss); color: var(--cream); padding: 16px 32px; border-radius: 10px; font-size: 16px; font-weight: 700; text-decoration: none; transition: all 0.2s; }
+.cta-btn:hover { background: var(--moss-2); box-shadow: 0 8px 30px rgba(61,90,62,0.3); transform: translateY(-1px); }
+.cta-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 16px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; color: var(--bark-3); border: 1.5px solid rgba(61,46,30,0.15); margin-left: 12px; transition: all 0.2s; }
+.cta-secondary:hover { border-color: rgba(61,46,30,0.3); color: var(--bark); }
+
+/* Footer */
+footer { background: var(--bark); padding: 64px 0; color: rgba(245,240,232,0.8); }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; margin-bottom: 40px; }
+.footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.footer-logo-icon { width: 32px; height: 32px; background: var(--moss); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: 'Space Mono', monospace; font-weight: 800; color: var(--cream); font-size: 13px; }
+.footer-desc { font-size: 14px; color: rgba(245,240,232,0.4); max-width: 260px; line-height: 1.6; }
+.footer-col h4 { font-size: 11px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(245,240,232,0.25); margin-bottom: 14px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 14px; color: rgba(245,240,232,0.45); text-decoration: none; transition: color 0.2s; }
+.footer-col a:hover { color: rgba(245,240,232,0.8); }
+.footer-bottom { border-top: 1px solid rgba(245,240,232,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; font-family: 'Space Mono', monospace; color: rgba(245,240,232,0.25); flex-wrap: wrap; gap: 12px; }
+
+@media(max-width:768px) {
+  .missie-grid, .waarden-grid, .team-grid, .partner-cta-inner { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2.2rem; }
+  .missie-float { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="glass-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">B.</div>
+      <span class="nav-logo-text">Bylder<span>.com</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#vouchers">Vouchers</a>
+      <a href="/nieuwbouw-gids/">Gids</a>
+      <a href="/nieuwbouw-tools/">Tools</a>
+      <a href="/over-ons/" style="color:var(--moss);font-weight:600;">Over ons</a>
+    </div>
+    <a href="https://mijn.bylder.com" class="nav-cta">Start Project →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="badge fade-up d1"><i class="fa-solid fa-house" style="font-size:9px;"></i> Ons verhaal</div>
+    <h1 class="fade-up d2">Wij geloven dat<br><span>iedereen stressvrij</span><br>kan wonen.</h1>
+    <p class="fade-up d3">Bylder is opgericht door mensen die zelf een nieuwbouwwoning kochten en verdwaalden in offertes, showroombezoeken en keuzes. We bouwden het platform dat wij destijds hadden gewild.</p>
+    <div class="fade-up" style="animation-delay:0.55s;opacity:0;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--bark-3);"><span style="width:8px;height:8px;border-radius:50%;background:var(--moss);display:inline-block;"></span>Opgericht in 2022</div>
+      <div style="width:1px;height:16px;background:rgba(61,46,30,0.15);"></div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--bark-3);"><span style="width:8px;height:8px;border-radius:50%;background:var(--rust);display:inline-block;"></span>Amsterdam, Nederland</div>
+      <div style="width:1px;height:16px;background:rgba(61,46,30,0.15);"></div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--bark-3);"><span style="width:8px;height:8px;border-radius:50%;background:var(--sand);display:inline-block;"></span>4.800+ leden</div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- MISSIE -->
+<section class="missie">
+  <div class="container">
+    <div class="missie-grid">
+      <div class="missie-visual">
+        <div class="missie-card-large">
+          <div class="num">€2.4M</div>
+          <div class="lbl">Totale besparing door Bylder leden</div>
+          <div class="quote">"Wij wilden dat de gemiddelde nieuwbouwkoper net zo goed beslagen ten ijs komt als een ervaren projectontwikkelaar."</div>
+        </div>
+        <div class="missie-float">
+          <div class="missie-float-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <div class="missie-float-val">9.4/10</div>
+            <div class="missie-float-lbl">Klanttevredenheid</div>
+          </div>
+        </div>
+      </div>
+      <div class="missie-text">
+        <div class="badge">Onze missie</div>
+        <h2>Nieuwbouw kopen zonder te betalen voor informatie die je gewoon verdient.</h2>
+        <p>Een nieuwbouwwoning kopen is voor de meeste mensen de grootste financiële beslissing van hun leven. En toch wordt je bij oplevering vaak overgeleverd aan een lege doos, een stapel offertes en een showroom vol keuzes waar je geen ervaring mee hebt.</p>
+        <p>Bij Bylder geloven we dat dat anders kan. <strong>Kennis moet gratis zijn. Korting moet eerlijk zijn. En de stress moet eraf.</strong> Dat is wat we bouwen.</p>
+        <p>Via ons platform combineren we AI-gestuurde woninganalyse, praktische gidsen en collectieve inkoopkracht — zodat jij als koper in de sterkste positie zit, van dag één.</p>
+        <div style="display:flex;gap:16px;margin-top:28px;flex-wrap:wrap;">
+          <div style="flex:1;min-width:120px;padding:16px;background:var(--cream-2);border-radius:12px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:var(--bark);letter-spacing:-0.04em;">40+</div>
+            <div style="font-size:11px;color:var(--bark-3);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;margin-top:3px;">Partnermerken</div>
+          </div>
+          <div style="flex:1;min-width:120px;padding:16px;background:var(--cream-2);border-radius:12px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:var(--moss);letter-spacing:-0.04em;">€4.200</div>
+            <div style="font-size:11px;color:var(--bark-3);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;margin-top:3px;">Gem. besparing</div>
+          </div>
+          <div style="flex:1;min-width:120px;padding:16px;background:var(--cream-2);border-radius:12px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:var(--bark);letter-spacing:-0.04em;">60 sec</div>
+            <div style="font-size:11px;color:var(--bark-3);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;margin-top:3px;">AI analyse</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- VERHAAL TIMELINE -->
+<section class="verhaal">
+  <div class="container">
+    <div class="badge badge-rust" style="display:flex;width:fit-content;margin:0 auto 16px;"><i class="fa-solid fa-clock-rotate-left" style="font-size:9px;"></i> Hoe het begon</div>
+    <h2>Ons verhaal</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot"><i class="fa-solid fa-house-chimney" style="font-size:14px;"></i></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-year">2021 — Het begin</div>
+          <div class="tl-title">De frustratie die alles startte</div>
+          <div class="tl-desc">Onze oprichters kopen zelf een nieuwbouwwoning in Amsterdam. Ze verdwalen in tientallen offertes, conflicterende adviezen en showroombezoeken waar ze niet weten wat fair is. Ze missen een eerlijk platform dat hen begeleidt.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot rust"><i class="fa-solid fa-lightbulb" style="font-size:14px;"></i></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-year">2022 — Oprichting</div>
+          <div class="tl-title">Bylder wordt opgericht</div>
+          <div class="tl-desc">Met een klein team starten we Bylder in Amsterdam. Het idee is simpel: bundel de inkoopkracht van duizenden nieuwbouwkopers en onderhandel collectieve kortingen bij de beste woonmerken in Nederland.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot"><i class="fa-solid fa-handshake" style="font-size:14px;"></i></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-year">2023 — Groei</div>
+          <div class="tl-title">Eerste 1.000 leden en 15 partnermerken</div>
+          <div class="tl-desc">Auping, DRT Contemporary en Tables by Tim worden onze eerste officiële partners. Leden besparen gemiddeld €2.800 op hun afwerking en inrichting. De mond-tot-mondreclame neemt een vlucht.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot sand"><i class="fa-solid fa-brain" style="font-size:14px;"></i></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-year">2024 — AI integratie</div>
+          <div class="tl-title">De AI Woninganalyse wordt gelanceerd</div>
+          <div class="tl-desc">We integreren Claude AI in het platform. Leden kunnen nu hun plattegrond uploaden en ontvangen per ruimte een complete kostenraming, producttips en gekoppelde vouchers. Een gamechanger voor de sector.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot"><i class="fa-solid fa-rocket" style="font-size:14px;"></i></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-year">2025 — Nu</div>
+          <div class="tl-title">4.800+ leden, 40+ partners, €2.4M bespaard</div>
+          <div class="tl-desc">Bylder is uitgegroeid tot het leidende platform voor nieuwbouwkopers in Nederland. We werken aan uitbreiding naar België en aan nieuwe functies zoals aannemer-matching en budget tracking.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- WAARDEN -->
+<section class="waarden">
+  <div class="container">
+    <div class="badge" style="display:flex;width:fit-content;margin:0 auto 16px;"><i class="fa-solid fa-star" style="font-size:9px;"></i> Waar wij voor staan</div>
+    <h2 style="font-size:2.2rem;font-weight:800;letter-spacing:-0.03em;color:var(--bark);margin-bottom:40px;text-align:center;">Onze waarden</h2>
+    <div class="waarden-grid">
+      <div class="waarde-card">
+        <div class="waarde-icon">🤝</div>
+        <div class="waarde-title">Eerlijkheid boven alles</div>
+        <div class="waarde-desc">Wij verdienen alleen als jij spaart. Onze kortingen zijn echt, onze adviezen zijn onafhankelijk en we verbergen nooit iets in de kleine lettertjes.</div>
+      </div>
+      <div class="waarde-card">
+        <div class="waarde-icon">🧠</div>
+        <div class="waarde-title">Kennis als fundament</div>
+        <div class="waarde-desc">Een goed geïnformeerde koper maakt betere keuzes. Daarom zijn al onze gidsen, tools en checklists gratis — voor iedereen, altijd.</div>
+      </div>
+      <div class="waarde-card">
+        <div class="waarde-icon">⚡</div>
+        <div class="waarde-title">Technologie in dienst van mensen</div>
+        <div class="waarde-desc">AI is een middel, geen doel. We gebruiken technologie alleen waar het echt waarde toevoegt — en houden het menselijk waar dat beter werkt.</div>
+      </div>
+      <div class="waarde-card">
+        <div class="waarde-icon">🌱</div>
+        <div class="waarde-title">Duurzaamheid als standaard</div>
+        <div class="waarde-desc">We selecteren partners die kwaliteit leveren die generaties meegaat. Goedkoop en snel is niet onze standaard — duurzaam en eerlijk wel.</div>
+      </div>
+      <div class="waarde-card">
+        <div class="waarde-icon">🎯</div>
+        <div class="waarde-title">Eén doel: jouw woning</div>
+        <div class="waarde-desc">We hebben geen andere agenda dan het beste resultaat voor jou. Geen advertentiemodel, geen verborgen commissies. Alleen jouw belang.</div>
+      </div>
+      <div class="waarde-card">
+        <div class="waarde-icon">🔐</div>
+        <div class="waarde-title">Privacy zonder compromis</div>
+        <div class="waarde-desc">Jouw tekeningen, plannen en persoonlijke gegevens zijn van jou. We verkopen nooit data aan derden en verwijderen uploads na 24 uur.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- TEAM -->
+<section class="team">
+  <div class="container">
+    <div class="badge" style="display:flex;width:fit-content;margin:0 auto 16px;"><i class="fa-solid fa-users" style="font-size:9px;"></i> Het team</div>
+    <h2>De mensen achter Bylder</h2>
+    <p class="team-sub">Een klein, gepassioneerd team met één gedeeld doel: nieuwbouwkopers in de sterkste positie brengen.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--moss);">JV</div>
+        <div class="team-name">Jonas van der Berg</div>
+        <div class="team-role">Co-founder & CEO</div>
+        <div class="team-desc">Kocht in 2021 zijn eerste nieuwbouwwoning en ervaarde de verwarring uit eigen hand. Bouwde Bylder om hetzelfde leed anderen te besparen.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--rust);">SA</div>
+        <div class="team-name">Sara Akkermans</div>
+        <div class="team-role">Co-founder & CPO</div>
+        <div class="team-desc">Interieurarchitect met 10 jaar ervaring. Brengt de inhoudelijke diepgang — van kleurplannen tot vloerkeuzes — naar het Bylder platform.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:#5C4433;">MW</div>
+        <div class="team-name">Mark Willems</div>
+        <div class="team-role">CTO</div>
+        <div class="team-desc">Bouwde de AI-woninganalyse van scratch. Gelooft dat technologie pas écht waardevol is als het onzichtbaar is voor de gebruiker.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:#8A7060;">LK</div>
+        <div class="team-name">Laura Kok</div>
+        <div class="team-role">Head of Partnerships</div>
+        <div class="team-desc">Onderhandelt de kortingen met onze partnermerken. Zorgt dat de voordelen voor leden echt en substantieel blijven.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--moss);">DP</div>
+        <div class="team-name">Daan Peters</div>
+        <div class="team-role">Lead Designer</div>
+        <div class="team-desc">Zorgt dat Bylder niet alleen werkt, maar ook aanvoelt als een platform dat je begrijpt en vertrouwt. Elke pixel telt.</div>
+      </div>
+      <div class="team-card" style="background:var(--bark);border-color:rgba(245,240,232,0.1);">
+        <div class="team-avatar" style="background:rgba(245,240,232,0.1);color:rgba(245,240,232,0.5);font-size:28px;">+</div>
+        <div class="team-name" style="color:rgba(245,240,232,0.8);">Jij?</div>
+        <div class="team-role" style="color:rgba(245,240,232,0.4);">We zijn op zoek</div>
+        <div class="team-desc" style="color:rgba(245,240,232,0.4);">We groeien en zoeken mensen die geloven dat wonen eerlijker kan. Stuur een mail naar team@bylder.com.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- PARTNER CTA -->
+<section class="partner-cta">
+  <div class="container">
+    <div class="partner-cta-inner">
+      <div>
+        <div class="badge" style="background:rgba(61,90,62,0.2);border-color:rgba(61,90,62,0.35);color:#8AAE8B;margin-bottom:20px;"><i class="fa-solid fa-store" style="font-size:9px;"></i> Voor merken & retailers</div>
+        <h2>Bereik duizenden<br><span>gemotiveerde woningkopers.</span></h2>
+        <p>Ben je een woonmerk, vakspecialist of retailer? Bylder brengt je in contact met kopers die actief op zoek zijn naar jouw producten — op het exacte moment dat ze de beslissing nemen.</p>
+        <a href="mailto:partners@bylder.com" style="display:inline-flex;align-items:center;gap:8px;background:var(--moss);color:var(--cream);padding:12px 22px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--moss-2)'" onmouseout="this.style.background='var(--moss)'">
+          <i class="fa-solid fa-envelope" style="font-size:12px;"></i> Neem contact op
+        </a>
+      </div>
+      <div class="partner-cta-card">
+        <div class="pcc-row">
+          <div class="pcc-icon" style="background:rgba(138,174,139,0.15);"><i class="fa-solid fa-users" style="color:#8AAE8B;font-size:14px;"></i></div>
+          <div class="pcc-label">Actieve kopers per maand</div>
+          <div class="pcc-val">4.800+</div>
+        </div>
+        <div class="pcc-row">
+          <div class="pcc-icon" style="background:rgba(184,92,56,0.15);"><i class="fa-solid fa-bullseye" style="color:var(--rust);font-size:14px;"></i></div>
+          <div class="pcc-label">Gemiddeld aankoop budget</div>
+          <div class="pcc-val">€42.000</div>
+        </div>
+        <div class="pcc-row">
+          <div class="pcc-icon" style="background:rgba(138,174,139,0.15);"><i class="fa-solid fa-chart-line" style="color:#8AAE8B;font-size:14px;"></i></div>
+          <div class="pcc-label">Conversie t.o.v. regulier</div>
+          <div class="pcc-val">3.2× hoger</div>
+        </div>
+        <div class="pcc-row">
+          <div class="pcc-icon" style="background:rgba(200,184,154,0.15);"><i class="fa-solid fa-star" style="color:var(--sand);font-size:14px;"></i></div>
+          <div class="pcc-label">Huidige partners</div>
+          <div class="pcc-val">40+ merken</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- CTA SECTIE -->
+<section class="cta-section">
+  <div class="container">
+    <div class="badge" style="margin-bottom:20px;"><i class="fa-solid fa-wand-magic-sparkles" style="font-size:9px;"></i> Klaar om te starten?</div>
+    <h2>Jouw woning verdient<br><span>het beste begin.</span></h2>
+    <p>Word lid voor €99 en bespaar gemiddeld €4.200 op de afwerking en inrichting van jouw nieuwbouwwoning.</p>
+    <div>
+      <a href="https://mijn.bylder.com" class="cta-btn"><i class="fa-solid fa-arrow-right" style="font-size:13px;"></i> Start voor €99</a>
+      <a href="/#scan" class="cta-secondary">Eerst proberen →</a>
+    </div>
+  </div>
+</section>
+
+<div class="warm-divider"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-icon">B.</div>
+          <span style="font-weight:700;font-size:18px;color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
+        </div>
+        <p class="footer-desc">Collectieve korting bij de mooiste woonwinkels en gratis advies voor kopers van een nieuwbouwwoning.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="/#vouchers">Vouchers</a></li>
+          <li><a href="/nieuwbouw-gids/">Nieuwbouw gids</a></li>
+          <li><a href="/nieuwbouw-tools/">Tools</a></li>
+          <li><a href="/#scan">AI QuickScan</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Bedrijf</h4>
+        <ul>
+          <li><a href="/over-ons/">Over ons</a></li>
+          <li><a href="mailto:partners@bylder.com">Partners worden</a></li>
+          <li><a href="mailto:team@bylder.com">Werken bij Bylder</a></li>
+          <li><a href="mailto:info@bylder.com">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Juridisch</h4>
+        <ul>
+          <li><a href="/privacy/">Privacybeleid</a></li>
+          <li><a href="/voorwaarden/">Algemene voorwaarden</a></li>
+          <li><a href="/cookies/">Cookiebeleid</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Bylder Nederland B.V. — KvK 65020006</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:6px;height:6px;border-radius:50%;background:#8AAE8B;display:inline-block;animation:pulse 2s infinite;"></span>Alle systemen operationeel</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+</style>
+
+</body>
+</html>
