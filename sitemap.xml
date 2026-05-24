@@ -6,6 +6,16 @@
   <url><loc>https://www.bylder.com/privacy/</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.bylder.com/algemene-voorwaarden/</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.bylder.com/cookies/</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.bylder.com/blog/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/blog/besparen-nieuwbouw-meerwerk/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bylder.com/blog/lichtplan-nieuwbouw-tips/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bylder.com/blog/offerte-aannemer-controleren/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bylder.com/vouchers/</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://www.bylder.com/vouchers/auping/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/vouchers/drt-contemporary/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/vouchers/goossens/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/vouchers/tables-by-tim/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bylder.com/vouchers/whoon/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-gids/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-gids/budgetplanning/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-gids/aankooptraject/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
@@ -15,7 +25,6 @@
   <url><loc>https://www.bylder.com/nieuwbouw-gids/verwarmingssystemen/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-gids/keuken-badkamer-showroom/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-gids/vloer-wand-plafond/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://www.bylder.com/nieuwbouw-gids/raambekleding-gordijnen/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-gids/tuin-aanleggen/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-gids/afwerking-na-oplevering/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.bylder.com/nieuwbouw-tools/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
