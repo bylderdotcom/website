@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Keuken & badkamer offerte controleren | Bylder.com</title>
+<meta name="description" content="Is je keuken- of badkamerofferte eerlijk? Controleer verborgen kosten en vergelijk met marktprijzen. Gratis AI check via Bylder.">
+<link rel="canonical" href="https://www.bylder.com/keuken-badkamer-offerte-check/">
+<meta property="og:title" content="Keuken & badkamer offerte controleren | Bylder.com">
+<meta property="og:description" content="Is je keuken- of badkamerofferte eerlijk? Controleer verborgen kosten en vergelijk met marktprijzen. Gratis AI check via Bylder.">
+<meta property="og:url" content="https://www.bylder.com/keuken-badkamer-offerte-check/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.75;}
+h1,h2,h3,h4{letter-spacing:-0.02em;color:#1A1208;line-height:1.2;}
+a{color:#3D5A3E;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{max-width:1280px;margin:0 auto;padding:0 48px;}
+@media(max-width:768px){.container{padding:0 20px;}}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:999px;background:rgba(61,90,62,0.1);border:1px solid rgba(61,90,62,0.2);color:#3D5A3E;font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:20px;}
+.badge-rust{background:rgba(184,92,56,0.08);border-color:rgba(184,92,56,0.2);color:#B85C38;}
+.card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:16px;padding:24px;}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(200,184,154,0.5),transparent);margin:48px 0;}
+.highlight{background:rgba(61,90,62,0.06);border-left:3px solid #3D5A3E;padding:18px 22px;border-radius:0 10px 10px 0;margin:24px 0;font-size:15px;}
+.warn{background:rgba(184,92,56,0.06);border-left:3px solid #B85C38;padding:18px 22px;border-radius:0 10px 10px 0;margin:24px 0;font-size:15px;}
+.check-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin:16px 0;}
+.check-list li{display:flex;align-items:start;gap:12px;font-size:15px;color:rgba(61,46,30,0.75);}
+.check-list li::before{content:'✓';color:#3D5A3E;font-weight:800;flex-shrink:0;margin-top:2px;font-size:14px;}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:24px 0;}
+@media(max-width:768px){.step-grid{grid-template-columns:1fr;}}
+.step-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:16px;padding:24px;position:relative;}
+.step-num{width:36px;height:36px;background:#3D5A3E;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#F5F0E8;margin-bottom:14px;font-family:'Space Mono',monospace;}
+.step-title{font-size:16px;font-weight:700;color:#1A1208;margin-bottom:8px;}
+.step-desc{font-size:14px;color:rgba(61,46,30,0.6);line-height:1.65;}
+.cta-block{background:linear-gradient(135deg,#3D5A3E 0%,#4E7350 100%);border-radius:24px;padding:56px 48px;text-align:center;margin:48px 0;}
+.cta-block h2{font-size:2rem;font-weight:800;color:#F5F0E8;margin-bottom:14px;}
+.cta-block p{color:rgba(245,240,232,0.7);font-size:16px;max-width:520px;margin:0 auto 32px;}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;background:#F5F0E8;color:#3D5A3E;padding:16px 32px;border-radius:10px;font-weight:800;font-size:15px;text-decoration:none;transition:all 0.2s;}
+.cta-btn:hover{background:#EDE6D8;transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,0.15);}
+.cta-btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(245,240,232,0.8);padding:16px 24px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid rgba(245,240,232,0.25);margin-left:12px;transition:all 0.2s;}
+.cta-btn-ghost:hover{background:rgba(245,240,232,0.1);}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0;}
+.stat-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:16px;padding:24px;text-align:center;}
+.stat-val{font-size:2.2rem;font-weight:800;letter-spacing:-0.04em;color:#3D5A3E;}
+.stat-val.rust{color:#B85C38;}
+.stat-lbl{font-size:12px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;color:rgba(61,46,30,0.45);margin-top:4px;}
+.faq-item{border-bottom:1px solid rgba(61,46,30,0.08);padding:22px 0;}
+.faq-item:last-child{border-bottom:none;}
+.faq-q{font-size:16px;font-weight:700;color:#1A1208;margin-bottom:10px;}
+.faq-a{font-size:14px;color:rgba(61,46,30,0.65);line-height:1.75;}
+.voucher-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:20px;overflow:hidden;}
+.voucher-accent{height:4px;}
+.voucher-body{padding:22px;}
+.voucher-brand{font-size:18px;font-weight:700;color:#1A1208;margin-bottom:4px;}
+.voucher-cat{font-size:12px;color:rgba(61,46,30,0.4);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:14px;}
+.voucher-pct{font-size:3rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;line-height:1;}
+.voucher-foot{padding:14px 22px;border-top:1px solid rgba(61,46,30,0.07);display:flex;align-items:center;justify-content:space-between;}
+.claim-btn{padding:8px 16px;background:#3D5A3E;color:#F5F0E8;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;}
+.internal-links{background:rgba(61,46,30,0.03);border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:20px 24px;margin:32px 0;}
+.il-title{font-size:12px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);margin-bottom:12px;}
+.il-links{display:flex;flex-wrap:wrap;gap:10px;}
+.il-link{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:#fff;border:1px solid rgba(61,90,62,0.2);border-radius:999px;font-size:13px;color:#3D5A3E;text-decoration:none;font-weight:600;}
+.il-link:hover{background:rgba(61,90,62,0.06);}
+.two-col{display:grid;grid-template-columns:2fr 1fr;gap:56px;align-items:start;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+.sidebar-card{position:sticky;top:100px;}
+
+.mob-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.mob-btn span{display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;}
+.mob-btn.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.mob-btn.open span:nth-child(2){opacity:0;}
+.mob-btn.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+.mob-drawer{display:none;position:fixed;top:65px;left:0;right:0;background:rgba(245,240,232,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.1);padding:16px 20px;z-index:99;flex-direction:column;gap:4px;box-shadow:0 8px 32px rgba(61,46,30,0.1);}
+.mob-drawer.open{display:flex;}
+.mob-drawer a{display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);font-weight:500;text-decoration:none;}
+.mob-drawer a:hover{background:rgba(61,46,30,0.05);color:#1A1208;}
+.mob-cta2{background:#3D5A3E!important;color:#F5F0E8!important;font-weight:700!important;margin-top:6px;text-align:center;}
+@media(max-width:768px){
+  .desk-links{display:none!important;}
+  .mob-btn{display:flex!important;}
+  .two-col{grid-template-columns:1fr!important;}
+  .container{padding:0 20px!important;}
+}
+
+</style>
+</head>
+<body><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wat is een eerlijke prijs voor een complete keuken?", "acceptedAnswer": {"@type": "Answer", "text": "Een kwalitatieve keuken inclusief apparatuur en montage kost in Nederland gemiddeld €10.000 – €20.000 (middensegment). Budget keukens beginnen bij €5.000, premium loopt op tot €40.000+. De AI vergelijkt jouw offerte met vergelijkbare configuraties."}}, {"@type": "Question", "name": "Zitten er verborgen kosten in een keukenofferte?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, veelvoorkomende verborgen kosten zijn: aansluitkosten gas/water/elektra, kosten voor het verwijderen van de oude keuken, schilderwerk na plaatsing en spatwandbevestiging. Bylder's AI markeert deze automatisch."}}, {"@type": "Question", "name": "Kan ik via Bylder ook extra korting krijgen op een keuken?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Als Bylder lid ontvang je 10% korting bij Goossens op complete keukens en bij andere keukenleveranciers in ons partnernetwerk. Combineer dit met de offerte check voor maximaal voordeel."}}]}</script><nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:100;padding:16px 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
+      <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+    </a>
+    <div class="desk-links" style="display:flex;align-items:center;gap:24px;">
+      <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kopersbegeleider</a>
+      <a href="/#scan" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">QuickScan</a>
+      <a href="/#vouchers" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
+      <a href="/nieuwbouw-gids/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Gids</a>
+      <a href="https://mijn.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
+    </div>
+    <button class="mob-btn" id="mBtn" onclick="tMob()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob-drawer" id="mDrw">
+  <a href="/">Home</a>
+  <a href="/kopersbegeleiding-nieuwbouw/">Kopersbegeleider</a>
+  <a href="/#scan">QuickScan</a>
+  <a href="/#vouchers">Vouchers</a>
+  <a href="/nieuwbouw-gids/">Gids</a>
+  <a href="/over-ons/">Over ons</a>
+  <a href="https://mijn.bylder.com" class="mob-cta2">Start gratis →</a>
+</div>
+<main style="padding:72px 0 80px;">
+  <div class="container">
+    <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.4);">Bylder.com</a> → <span style="color:rgba(61,46,30,0.65);">Keuken & badkamer offerte controleren</span></p>
+    <div class="two-col">
+      <article>
+        <div class="badge">Offerte Analyse</div>
+        <h1 style="font-size:2.8rem;font-weight:800;margin-bottom:20px;line-height:1.1;">Keuken & badkamer offerte controleren</h1>
+        <p style="font-size:1.1rem;color:rgba(61,46,30,0.7);line-height:1.85;margin-bottom:16px;">Een nieuwe keuken of badkamer is een van de grootste aankopen bij een renovatie of nieuwbouw. Showroombezoeken zijn verleidelijk ingericht, verkopers zijn getraind op upselling en de offerte die je ontvangt bevat posten die je moeilijk kunt beoordelen.</p>
+<p style="font-size:1.1rem;color:rgba(61,46,30,0.7);line-height:1.85;"><strong style="color:#1A1208;">Bylder's AI kijkt door de showroomglitter heen</strong> en beoordeelt of de keuken- of badkamerofferte die je hebt ontvangen marktconform is — inclusief de apparatuur, montage en bijkomende kosten.</p>
+        <div class="stat-row"><div class="stat-card"><div class="stat-val rust">€4.200</div><div class="stat-lbl">Gemiddelde marge in keukenoffertes boven markt</div></div><div class="stat-card"><div class="stat-val green">15 min</div><div class="stat-lbl">Van upload naar volledig rapport</div></div><div class="stat-card"><div class="stat-val green">10%</div><div class="stat-lbl">Extra korting via Bylder vouchers</div></div></div>
+        <div class="divider"></div>
+        <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 24px;">In 3 stappen weet je of je goed zit</h2><div class="step-grid"><div class="step-card"><div class="step-num">01</div><div class="step-title">Upload de offerte</div><div class="step-desc">Stuur de keuken- of badkamerofferte als PDF of foto. De AI herkent automatisch de verschillende posten: kastindeling, apparatuur, werkblad, montage en bijkomende kosten.</div></div><div class="step-card"><div class="step-num">02</div><div class="step-title">Vergelijking per post</div><div class="step-desc">Elke post wordt apart beoordeeld. De AI vergelijkt op merk, kwaliteitsniveau en marktprijs. Zo zie je precies waar de marge zit.</div></div><div class="step-card"><div class="step-num">03</div><div class="step-title">Onderhandel met data</div><div class="step-desc">Je ontvangt een concrete samenvatting met onderhandeltips per post. Combineer dit met je Bylder vouchers voor extra besparing.</div></div></div>
+        <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 16px;">Waarom Bylder?</h2><ul class="check-list"><li>Beoordeling van keukenapparatuur (inductie, oven, vaatwasser) per merk en model</li><li>Check werkbladprijzen: composiet, graniet, kwarts, HPL of massief hout</li><li>Analyse van badkamertegels: prijs per m² vs. marktgemiddelde</li><li>Beoordeling sanitairprijzen: hangtoilet, inloopdouche, wastafelmeubel</li><li>Inzicht in montagekosten en of deze marktconform zijn</li></ul>
+        <div class="cta-block">
+  <h2>Controleer je keuken- of badkamerofferte gratis</h2>
+  <p>Betaal nooit te veel voor je keuken of badkamer. Upload je offerte en krijg direct inzicht.</p>
+  <a href="/#scan" class="cta-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Start gratis check</a>
+  <a href="/ai-keuken-ontwerpen-badkamerplanner/" class="cta-btn-ghost">Keuken ontwerpen met AI →</a>
+</div>
+        <div class="internal-links"><div class="il-title">Gerelateerde pagina's</div><div class="il-links"><a href="/ai-keuken-ontwerpen-badkamerplanner/" class="il-link"><i class="fa-solid fa-arrow-right" style="font-size:10px;"></i> AI keuken & badkamer ontwerper</a><a href="/ai-offerte-check-aannemer/" class="il-link"><i class="fa-solid fa-arrow-right" style="font-size:10px;"></i> Aannemer offerte check</a><a href="/nieuwbouw-gids/keuken-badkamer-showroom/" class="il-link"><i class="fa-solid fa-arrow-right" style="font-size:10px;"></i> Showroom gids</a><a href="/#vouchers" class="il-link"><i class="fa-solid fa-arrow-right" style="font-size:10px;"></i> Goossens korting</a></div></div>
+        <div class="divider"></div>
+        <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 8px;">Veelgestelde vragen</h2><div class="faq-item"><div class="faq-q">Wat is een eerlijke prijs voor een complete keuken?</div><div class="faq-a">Een kwalitatieve keuken inclusief apparatuur en montage kost in Nederland gemiddeld €10.000 – €20.000 (middensegment). Budget keukens beginnen bij €5.000, premium loopt op tot €40.000+. De AI vergelijkt jouw offerte met vergelijkbare configuraties.</div></div><div class="faq-item"><div class="faq-q">Zitten er verborgen kosten in een keukenofferte?</div><div class="faq-a">Ja, veelvoorkomende verborgen kosten zijn: aansluitkosten gas/water/elektra, kosten voor het verwijderen van de oude keuken, schilderwerk na plaatsing en spatwandbevestiging. Bylder's AI markeert deze automatisch.</div></div><div class="faq-item"><div class="faq-q">Kan ik via Bylder ook extra korting krijgen op een keuken?</div><div class="faq-a">Ja. Als Bylder lid ontvang je 10% korting bij Goossens op complete keukens en bij andere keukenleveranciers in ons partnernetwerk. Combineer dit met de offerte check voor maximaal voordeel.</div></div>
+      </article>
+      <aside class="sidebar-card">
+  <div class="card" style="margin-bottom:16px;">
+    <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">Gratis AI QuickScan</p>
+    <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:16px;line-height:1.6;">Upload je plattegrond of offerte en ontvang direct inzicht — gratis, geen account nodig.</p>
+    <a href="/#scan" style="display:block;text-align:center;background:#3D5A3E;color:#F5F0E8;padding:11px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start QuickScan →</a>
+  </div>
+  <div class="card" style="margin-bottom:16px;">
+    <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">10% korting bij 40+ merken</p>
+    <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:16px;line-height:1.6;">Auping, Goossens, DRT Contemporary, Tables by Tim en meer.</p>
+    <a href="https://mijn.bylder.com" style="display:block;text-align:center;background:#F5F0E8;color:#3D5A3E;border:1.5px solid rgba(61,90,62,0.3);padding:11px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Vouchers bekijken →</a>
+  </div>
+  <div class="card">
+    <p style="font-size:12px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;color:rgba(61,46,30,0.4);margin-bottom:12px;">Gerelateerde pagina's</p>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <a href="/ai-keuken-ontwerpen-badkamerplanner/" class="il-link">→ Keuken ontwerpen met AI</a><a href="/ai-offerte-check-aannemer/" class="il-link">→ Aannemer offerte check</a><a href="/#vouchers" class="il-link">→ Goossens voucher</a>
+    </div>
+  </div>
+</aside>
+    </div>
+  </div>
+</main><footer style="background:#1A1208;padding:64px 0 40px;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 48px;">
+    <div style="display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;margin-bottom:40px;">
+      <div style="max-width:260px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
+          <span style="font-weight:700;font-size:17px;color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
+        </div>
+        <p style="font-size:13px;color:rgba(245,240,232,0.4);line-height:1.7;">AI-gestuurd platform voor nieuwbouwkopers en verbouwers in Nederland.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,160px);gap:40px;">
+        <div>
+          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Diensten</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/#scan" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">AI QuickScan</a></li>
+            <li><a href="/ai-offerte-check-aannemer/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Offerte check</a></li>
+            <li><a href="/#vouchers" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Vouchers</a></li>
+            <li><a href="/hoe-werkt-bylder-quickscan/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Hoe werkt het?</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Gidsen</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/nieuwbouw-gids/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Nieuwbouw gids</a></li>
+            <li><a href="/kennisbank/kosten-besparen-nieuwbouw/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Kennisbank</a></li>
+            <li><a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Tools</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Bedrijf</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/over-ons/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Over ons</a></li>
+            <li><a href="mailto:partners@bylder.com" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Partners</a></li>
+            <li><a href="mailto:team@bylder.com" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Werken bij</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(245,240,232,0.08);padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">© 2025 Bylder Nederland B.V. — KvK 65020006</p>
+      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">Privacy · Voorwaarden · Cookies</p>
+    </div>
+  </div>
+</footer><script>
+function tMob(){document.getElementById('mBtn').classList.toggle('open');document.getElementById('mDrw').classList.toggle('open');}
+document.querySelectorAll('.mob-drawer a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('mBtn').classList.remove('open');document.getElementById('mDrw').classList.remove('open');}));
+</script>
+</body></html>
