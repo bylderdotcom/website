@@ -97,25 +97,42 @@ a:hover{text-decoration:underline;}
       <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
       <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
-    <div class="desk-links" style="display:flex;align-items:center;gap:24px;">
-      <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kopersbegeleider</a>
+    <div class="bylder-desk-nav" style="display:flex;align-items:center;gap:28px;">
       <a href="/#scan" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">QuickScan</a>
-      <a href="/#vouchers" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
-      <a href="/nieuwbouw-gids/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Gids</a>
-      <a href="https://mijn.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
+      <a href="/vouchers/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
+      <a href="/#features" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Features</a>
+      <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kopersbegeleider</a>
+      <a href="https://mijn.bylder.com" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Inloggen</a>
+      <a href="https://mijn.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
     </div>
-    <button class="mob-btn" id="mBtn" onclick="tMob()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="bylder-mob-btn" id="bMobBtn" onclick="bToggle()" aria-label="Menu" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;">
+      <span style="display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;"></span>
+      <span style="display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;"></span>
+      <span style="display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;"></span>
+    </button>
   </div>
 </nav>
-<div class="mob-drawer" id="mDrw">
-  <a href="/">Home</a>
-  <a href="/kopersbegeleiding-nieuwbouw/">Kopersbegeleider</a>
-  <a href="/#scan">QuickScan</a>
-  <a href="/#vouchers">Vouchers</a>
-  <a href="/nieuwbouw-gids/">Gids</a>
-  <a href="/over-ons/">Over ons</a>
-  <a href="https://mijn.bylder.com" class="mob-cta2">Start gratis →</a>
-</div><main style="padding:72px 0 80px;">
+<div id="bMobDrawer" style="display:none;position:fixed;top:65px;left:0;right:0;background:rgba(245,240,232,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.1);padding:16px 20px;z-index:99;flex-direction:column;gap:4px;box-shadow:0 8px 32px rgba(61,46,30,0.1);">
+  <a href="/" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">Home</a>
+  <a href="/#scan" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">QuickScan</a>
+  <a href="/vouchers/" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">Vouchers</a>
+  <a href="/kopersbegeleiding-nieuwbouw/" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">Kopersbegeleider</a>
+  <a href="https://mijn.bylder.com" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:11px 16px;border-radius:10px;font-weight:700;margin-top:6px;text-align:center;text-decoration:none;">Start gratis →</a>
+</div>
+<style>
+@media(max-width:768px){
+  .bylder-desk-nav{display:none!important;}
+  .bylder-mob-btn{display:flex!important;}
+}
+</style>
+<script>
+function bToggle(){
+  var d=document.getElementById('bMobDrawer');
+  d.style.display=d.style.display==='flex'?'none':'flex';
+  d.style.flexDirection='column';
+}
+</script>
+<main style="padding:72px 0 80px;">
   <div class="container">
     <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a> → <a href="/kopersbegeleiding-nieuwbouw/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Kopersbegeleiding</a> → <span style="color:rgba(61,46,30,0.6);">Sluitingsdata & deadlines meerwerk nieuwbouw — AI </span></p>
     <div class="two-col">
