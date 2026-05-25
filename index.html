@@ -285,6 +285,40 @@ body::before {
     grid-template-columns: 1fr !important;
   }
   .stat-num { font-size: 1.8rem; }
+  /* Extra 480px fixes */
+  .container { padding-left: 16px !important; padding-right: 16px !important; }
+  h1 { font-size: 2rem !important; line-height: 1.2 !important; }
+}
+
+/* ── GEMEENTE KAARTEN — mobiel 2 kolommen ── */
+@media (max-width: 768px) {
+  .gemeente-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  /* Repeat 4 kolommen → 2 op mobiel */
+  div[style*="grid-template-columns:repeat(4,1fr)"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  /* Provincie links 6 kolommen → 2 */
+  div[style*="grid-template-columns:repeat(6,1fr)"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  /* Statistieken rij */
+  div[style*="grid-template-columns:1fr 1fr 1fr;"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  /* Tijdlijn */
+  .tijdlijn-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* Tool calculator op mobiel */
+  .calc-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* Voucher cards */
+  .voucher-grid-4 {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 </style>
 </head>
@@ -1186,136 +1220,132 @@ body::before {
 
 <div class="warm-divider"></div>
 
-<!-- ═══ NIEUWBOUW PER GEMEENTE ═══ -->
-<section style="padding:80px 0;background:#fff;" id="gemeenten">
+<!-- ═══ NIEUWBOUWTIJDLIJN + CALCULATOR ═══ -->
+<section style="padding:80px 0;background:#fff;" id="tijdlijn">
   <div class="container">
 
-    <!-- Header -->
-    <div style="display:flex;align-items:end;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px;">
-      <div>
-        <div style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:rgba(61,90,62,0.1);border:1px solid rgba(61,90,62,0.2);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#3D5A3E;margin-bottom:14px;">
-          <span style="width:6px;height:6px;border-radius:50%;background:#3D5A3E;display:inline-block;"></span>
-          288 gemeenten — heel Nederland
-        </div>
-        <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.1;margin-bottom:8px;">
-          Nieuwbouw begeleiding<br>in jouw gemeente
-        </h2>
-        <p style="font-size:15px;color:rgba(61,46,30,0.55);max-width:520px;line-height:1.7;">AI-offerte check, kopersbegeleiding en collectieve korting — specifiek voor de nieuwbouwprojecten in jouw regio.</p>
+    <div style="text-align:center;max-width:640px;margin:0 auto 48px;">
+      <div style="display:inline-flex;align-items:center;gap:6px;padding:5px 14px;background:rgba(61,90,62,0.1);border:1px solid rgba(61,90,62,0.2);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#3D5A3E;margin-bottom:16px;">
+        Van koopakte tot sleuteloverdracht
       </div>
-      <a href="/nieuwbouw/" style="display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border:1.5px solid rgba(61,46,30,0.15);border-radius:10px;font-size:14px;font-weight:600;color:#3D2E1E;text-decoration:none;background:rgba(255,255,255,0.8);white-space:nowrap;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.4)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.15)'">
-        Alle gemeenten bekijken <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
-      </a>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px;">
+        Bylder begeleidt je door<br>alle fases van jouw traject
+      </h2>
+      <p style="font-size:16px;color:rgba(61,46,30,0.6);line-height:1.75;">Elke fase heeft eigen risico's, keuzes en deadlines. Bylder's AI bewaakt ze allemaal.</p>
     </div>
 
-    <!-- Grootste steden grid -->
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;">
+    <!-- Tijdlijn 3 fases -->
+    <div class="tijdlijn-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:56px;">
 
-      <!-- Amsterdam -->
-      <a href="/nieuwbouw/noord-holland/amsterdam/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:20px;transition:all 0.25s;position:relative;overflow:hidden;" onmouseover="this.style.borderColor='rgba(61,90,62,0.25)';this.style.background='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.background='#F5F0E8';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.35);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Noord-Holland</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">Amsterdam</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">42 projecten · gem. €6.200 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
+      <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:20px;padding:28px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:rgba(61,90,62,0.06);border-radius:0 20px 0 80px;"></div>
+        <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:rgba(61,90,62,0.1);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;color:#3D5A3E;margin-bottom:14px;">Fase 1</div>
+        <div style="font-size:1.4rem;margin-bottom:10px;">📝</div>
+        <h3 style="font-size:17px;font-weight:800;color:#1A1208;margin-bottom:8px;letter-spacing:-0.02em;">Oriëntatie & Aankoop</h3>
+        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.7;margin-bottom:16px;">Van inschrijving en loting tot koopakte en hypotheek. Bylder controleert je contracten en bewaakt deadlines.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <a href="/nieuwbouw-gids/fase-1-orientatie/koopakte-nieuwbouw-controleren/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Koopakte controleren <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          <a href="/nieuwbouw-gids/fase-1-orientatie/bouwdepot-wat-is-het/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Bouwdepot uitgelegd <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          <a href="/nieuwbouw-gids/fase-1-orientatie/hypotheek-nieuwbouw-tips/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Hypotheek tips <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+        </div>
+      </div>
 
-      <!-- Rotterdam -->
-      <a href="/nieuwbouw/zuid-holland/rotterdam/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:20px;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.25)';this.style.background='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.background='#F5F0E8';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.35);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Zuid-Holland</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">Rotterdam</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">31 projecten · gem. €5.100 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
+      <div style="background:linear-gradient(135deg,rgba(61,90,62,0.07),rgba(61,90,62,0.02));border:1px solid rgba(61,90,62,0.18);border-radius:20px;padding:28px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:rgba(61,90,62,0.1);border-radius:0 20px 0 80px;"></div>
+        <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:rgba(61,90,62,0.15);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;color:#3D5A3E;margin-bottom:14px;">Fase 2 · Meest kritisch</div>
+        <div style="font-size:1.4rem;margin-bottom:10px;">🏗️</div>
+        <h3 style="font-size:17px;font-weight:800;color:#1A1208;margin-bottom:8px;letter-spacing:-0.02em;">Bouwfase & Koperskeuzes</h3>
+        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.7;margin-bottom:16px;">Lichtplan, keuken, meerwerk en koperskeuzes. Gemiddeld 14% extra op de aanneemsom. Bylder checkt elke offerte.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <a href="/nieuwbouw-gids/fase-2-bouwfase/meerwerk-nieuwbouw/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Meerwerk controleren <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          <a href="/nieuwbouw-gids/fase-2-bouwfase/lichtplan-nieuwbouw/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Lichtplan tips <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          <a href="/nieuwbouw-gids/fase-2-bouwfase/keuken-casco-opgeleverd/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Keuken casco uitgelegd <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+        </div>
+      </div>
 
-      <!-- Den Haag -->
-      <a href="/nieuwbouw/zuid-holland/den-haag/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:20px;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.25)';this.style.background='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.background='#F5F0E8';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.35);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Zuid-Holland</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">Den Haag</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">28 projecten · gem. €5.300 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
-
-      <!-- Utrecht -->
-      <a href="/nieuwbouw/utrecht/utrecht/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:20px;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.25)';this.style.background='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.background='#F5F0E8';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.35);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Utrecht</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">Utrecht</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">26 projecten · gem. €5.400 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
-
-      <!-- Eindhoven -->
-      <a href="/nieuwbouw/noord-brabant/eindhoven/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:20px;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.25)';this.style.background='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.background='#F5F0E8';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.35);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Noord-Brabant</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">Eindhoven</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">24 projecten · gem. €4.800 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
-
-      <!-- Groningen -->
-      <a href="/nieuwbouw/groningen/groningen/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:20px;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.25)';this.style.background='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.background='#F5F0E8';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.35);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Groningen</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">Groningen</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">11 projecten · gem. €3.500 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
-
-      <!-- Tilburg -->
-      <a href="/nieuwbouw/noord-brabant/tilburg/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:20px;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.25)';this.style.background='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.background='#F5F0E8';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.35);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Noord-Brabant</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">Tilburg</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">16 projecten · gem. €4.100 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
-
-      <!-- 's-Hertogenbosch -->
-      <a href="/nieuwbouw/noord-brabant/s-hertogenbosch/" style="text-decoration:none;display:block;background:linear-gradient(135deg,rgba(61,90,62,0.06),rgba(61,90,62,0.02));border:1px solid rgba(61,90,62,0.2);border-radius:16px;padding:20px;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(61,90,62,0.4)';this.style.background='rgba(61,90,62,0.08)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(61,46,30,0.09)'" onmouseout="this.style.borderColor='rgba(61,90,62,0.2)';this.style.background='linear-gradient(135deg,rgba(61,90,62,0.06),rgba(61,90,62,0.02))';this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,90,62,0.6);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Noord-Brabant · Populair</div>
-        <div style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:4px;">'s-Hertogenbosch</div>
-        <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:14px;">18 projecten · gem. €4.350 bespaard</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;">Bekijk projecten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
-      </a>
+      <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:20px;padding:28px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:rgba(184,92,56,0.06);border-radius:0 20px 0 80px;"></div>
+        <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:rgba(184,92,56,0.1);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;color:#B85C38;margin-bottom:14px;">Fase 3</div>
+        <div style="font-size:1.4rem;margin-bottom:10px;">🔑</div>
+        <h3 style="font-size:17px;font-weight:800;color:#1A1208;margin-bottom:8px;letter-spacing:-0.02em;">Oplevering & Nazorg</h3>
+        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.7;margin-bottom:16px;">Vooroplevering, PvO, 5%-depot en garantieperiode. Bylder's checklist en AI-scan zorgen dat je niets mist.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <a href="/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Opleveringskeuring gids <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          <a href="/nieuwbouw-gids/fase-3-oplevering/5-procent-depot-regeling/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">5%-regeling uitgelegd <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          <a href="/nieuwbouw-gids/fase-3-oplevering/gebreken-melden-aannemer/" style="font-size:13px;color:#3D5A3E;text-decoration:none;display:flex;align-items:center;gap:6px;font-weight:600;">Gebreken melden <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+        </div>
+      </div>
 
     </div>
 
-    <!-- Per provincie tekstlinks -->
-    <div style="background:#F5F0E8;border-radius:16px;padding:24px 28px;">
-      <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:16px;">Alle provincies</p>
-      <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px 24px;">
-        <a href="/nieuwbouw/noord-holland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Noord-Holland</a>
-        <a href="/nieuwbouw/zuid-holland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Zuid-Holland</a>
-        <a href="/nieuwbouw/utrecht/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Utrecht</a>
-        <a href="/nieuwbouw/noord-brabant/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Noord-Brabant</a>
-        <a href="/nieuwbouw/gelderland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Gelderland</a>
-        <a href="/nieuwbouw/overijssel/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Overijssel</a>
-        <a href="/nieuwbouw/groningen/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Groningen</a>
-        <a href="/nieuwbouw/friesland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Friesland</a>
-        <a href="/nieuwbouw/drenthe/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Drenthe</a>
-        <a href="/nieuwbouw/flevoland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Flevoland</a>
-        <a href="/nieuwbouw/zeeland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Zeeland</a>
-        <a href="/nieuwbouw/limburg/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:500;" onmouseover="this.style.color='#3D5A3E'" onmouseout="this.style.color='rgba(61,46,30,0.6)'">Limburg</a>
+    <!-- 5% Depot Calculator -->
+    <div style="background:linear-gradient(135deg,#1A1208,#2D1F10);border-radius:24px;padding:40px;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(61,90,62,0.2) 0%,transparent 70%);pointer-events:none;"></div>
+      <div class="calc-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;z-index:1;">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.25);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;color:#C9A84C;margin-bottom:16px;text-transform:uppercase;letter-spacing:0.08em;">Gratis tool</div>
+          <h3 style="font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:800;color:#F5F0E8;letter-spacing:-0.03em;margin-bottom:12px;line-height:1.2;">5% depot &amp; meerwerk calculator</h3>
+          <p style="font-size:14px;color:rgba(245,240,232,0.5);line-height:1.75;margin-bottom:20px;">Bereken in 10 seconden hoeveel je in depot moet houden en hoeveel je voor meerwerk moet reserveren.</p>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(245,240,232,0.55);"><span style="width:6px;height:6px;border-radius:50%;background:#8AAE8B;display:inline-block;flex-shrink:0;"></span>Gebaseerd op marktdata per regio</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(245,240,232,0.55);"><span style="width:6px;height:6px;border-radius:50%;background:#8AAE8B;display:inline-block;flex-shrink:0;"></span>Gemiddeld 14% meerwerk-risico</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(245,240,232,0.55);"><span style="width:6px;height:6px;border-radius:50%;background:#8AAE8B;display:inline-block;flex-shrink:0;"></span>Direct resultaat, geen account nodig</div>
+          </div>
+        </div>
+        <div style="background:rgba(245,240,232,0.05);border:1px solid rgba(245,240,232,0.1);border-radius:16px;padding:24px;">
+          <div style="margin-bottom:14px;">
+            <label style="display:block;font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(245,240,232,0.4);margin-bottom:8px;">Aanneemsom (excl. grond)</label>
+            <div style="position:relative;">
+              <span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:rgba(245,240,232,0.35);font-weight:600;">€</span>
+              <input id="hpCalcInput" type="number" placeholder="350.000"
+                style="width:100%;padding:12px 14px 12px 32px;background:rgba(245,240,232,0.08);border:1.5px solid rgba(245,240,232,0.15);border-radius:10px;font-size:16px;color:#F5F0E8;font-family:inherit;outline:none;transition:border-color 0.2s;"
+                oninput="hpCalc(this.value)"
+                onfocus="this.style.borderColor='rgba(61,90,62,0.6)'"
+                onblur="this.style.borderColor='rgba(245,240,232,0.15)'">
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
+            <div style="background:rgba(61,90,62,0.15);border:1px solid rgba(61,90,62,0.25);border-radius:10px;padding:14px;text-align:center;">
+              <div style="font-size:10px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;color:rgba(245,240,232,0.4);margin-bottom:6px;">5% Depot</div>
+              <div id="hpDepot" style="font-size:1.3rem;font-weight:800;color:#8AAE8B;letter-spacing:-0.03em;">€ —</div>
+            </div>
+            <div style="background:rgba(184,92,56,0.12);border:1px solid rgba(184,92,56,0.25);border-radius:10px;padding:14px;text-align:center;">
+              <div style="font-size:10px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;color:rgba(245,240,232,0.4);margin-bottom:6px;">Meerwerk (14%)</div>
+              <div id="hpMeerwerk" style="font-size:1.3rem;font-weight:800;color:#E8A080;letter-spacing:-0.03em;">€ —</div>
+            </div>
+          </div>
+          <div id="hpTotaalWrap" style="display:none;background:rgba(245,240,232,0.06);border-radius:10px;padding:12px;text-align:center;margin-bottom:14px;">
+            <div style="font-size:10px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.4);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.06em;">Totaal benodigde liquiditeit</div>
+            <div id="hpTotaal" style="font-size:1.7rem;font-weight:800;color:#F5F0E8;letter-spacing:-0.04em;">€ —</div>
+          </div>
+          <a href="/login.html" style="display:flex;align-items:center;justify-content:center;gap:8px;background:#3D5A3E;color:#F5F0E8;border-radius:10px;padding:12px;font-size:13px;font-weight:700;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#4E7350'" onmouseout="this.style.background='#3D5A3E'">
+            <i class="fa-solid fa-wand-magic-sparkles" style="font-size:11px;"></i> Volledige AI-analyse starten
+          </a>
+        </div>
       </div>
     </div>
 
   </div>
 </section>
 
+<script>
+function hpCalc(val) {
+  const n = parseFloat(val) || 0;
+  const depot    = Math.round(n * 0.05);
+  const meerwerk = Math.round(n * 0.14);
+  const totaal   = n + meerwerk;
+  const fmt = v => '€ ' + Math.round(v).toLocaleString('nl-NL');
+  document.getElementById('hpDepot').textContent    = n ? fmt(depot)    : '€ —';
+  document.getElementById('hpMeerwerk').textContent = n ? fmt(meerwerk) : '€ —';
+  document.getElementById('hpTotaal').textContent   = n ? fmt(totaal)   : '€ —';
+  document.getElementById('hpTotaalWrap').style.display = n ? 'block' : 'none';
+}
+</script>
+
 <div class="warm-divider"></div>
 <section style="padding:52px 0;background:rgba(237,230,216,0.4);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:28px;flex-wrap:wrap;">
-
-      <!-- Kolom 0: Nieuwbouw per gemeente -->
-      <div>
-        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:14px;">Nieuwbouw per stad</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/nieuwbouw/noord-holland/amsterdam/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw Amsterdam</a>
-          <a href="/nieuwbouw/zuid-holland/rotterdam/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw Rotterdam</a>
-          <a href="/nieuwbouw/zuid-holland/den-haag/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw Den Haag</a>
-          <a href="/nieuwbouw/utrecht/utrecht/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw Utrecht</a>
-          <a href="/nieuwbouw/noord-brabant/eindhoven/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw Eindhoven</a>
-          <a href="/nieuwbouw/noord-brabant/s-hertogenbosch/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw 's-Hertogenbosch</a>
-          <a href="/nieuwbouw/" style="font-size:13px;color:#3D5A3E;font-weight:600;margin-top:4px;">Alle 288 gemeenten →</a>
-        </div>
-      </div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:32px;flex-wrap:wrap;">
 
       <!-- Kolom 1: Kopersbegeleiding -->
       <div>
@@ -1411,7 +1441,6 @@ body::before {
             <li><a href="/vouchers/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Vouchers</a></li>
             <li><a href="/blog/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Blog</a></li>
             <li><a href="/nieuwbouw-gids/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Nieuwbouw gids</a></li>
-            <li><a href="/nieuwbouw/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Gemeenten</a></li>
           </ul>
         </div>
         <div>
