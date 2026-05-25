@@ -1,0 +1,289 @@
+provincie,gemeente,wijken_lijst,aantal_projecten,gem_besparing,projectnaam_1,projectnaam_2,projectnaam_3,m2_prijs,meerwerk_pct,garantie_stelsel,risico_score,woningen_aanbouw,gebrek_1,gebrek_2,gebrek_3
+Groningen,Groningen,"Meerstad, Reitdiep, Vinkhuizen, Suikerzijde",11,€3.500,Meerstad,Reitdiepzone,Suikerzijde,3400,10,BouwGarant,4.9,950,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Assen,"Kloosterveen, Pittelo, Baggelhuizen",6,€3.300,Kloosterveen-Zuid,Pittelo,Baggelhuizen-West,3200,10,BouwGarant,4.8,390,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Emmen,"Emmerhout, Bargeres, Delftlanden",7,€3.200,Delftlanden-Oost,Bargeres,Emmerhout-West,3200,10,BouwGarant,4.8,455,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Stadskanaal,"Musselkanaal, Onstwedde, Alteveer",4,€3.000,Stadskanaal-Noord,Musselkanaal,Onstwedde,3200,10,BouwGarant,4.8,260,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Veendam,"Pekela, Wildervank, Borgercompagnie",3,€2.900,Veendam-Oost,Wildervank,Borgercompagnie,3200,10,BouwGarant,4.8,195,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Winsum,"Ezinge, Adorp, Baflo",2,€2.800,Winsum-Noord,Ezinge,Adorp,3200,10,BouwGarant,4.8,130,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Delfzijl,"Farmsum, Appingedam, Biessum",3,€2.900,Farmsum,Appingedam,Biessum,3200,10,BouwGarant,4.8,195,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Oldambt,"Winschoten, Scheemda, Westerlee",4,€3.000,Winschoten-Oost,Scheemda,Blijham,3200,10,BouwGarant,4.8,260,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Loppersum,"Appingedam, Stedum, Wirdum",2,€2.800,Loppersum-West,Stedum,Wirdum,3200,10,BouwGarant,4.8,130,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Midden-Groningen,"Hoogezand, Sappemeer, Slochteren",5,€3.100,Midden-Groningen Oost,Hoogezand,Sappemeer,3200,10,BouwGarant,4.8,325,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Westerkwartier,"Leek, Marum, Grootegast, Zuidhorn",4,€3.000,Leek-Zuid,Marum,Grootegast,3200,10,BouwGarant,4.8,260,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Het Hogeland,"Uithuizen, Bedum, Middelstum",3,€2.900,Uithuizen-Noord,Bedum,Middelstum,3200,10,BouwGarant,4.8,195,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Groningen,Eemsdelta,"Delfzijl, Appingedam, Loppersum",4,€3.000,Eemsdelta-Noord,Delfzijl,Appingedam,3200,10,BouwGarant,4.8,260,Aardbevingsbestendigheid,Funderingscontrole,Dakbeschot
+Friesland,Leeuwarden,"Zuidlanden, Techum, Goutum, Aldlân",8,€3.400,De Zuidlanden,Aldlân,Techum,3100,9,BouwGarant,4.7,650,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Smallingerland,"Drachten, Drachtstercompagnie, Opeinde",6,€3.200,Drachten-Oost,Drachtstercompagnie,De Swetten,3000,9,BouwGarant,4.5,390,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Heerenveen,"Skoatterwâld, Nijehaske, Akkrum",5,€3.300,Skoatterwâld,Nijehaske,Akkrum,3000,9,BouwGarant,4.5,325,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Súdwest-Fryslân,"Sneek, Bolsward, Workum, IJlst",5,€3.200,Sneek-Noord,Bolsward,Workum,3000,9,BouwGarant,4.5,325,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Ooststellingwerf,"Oosterwolde, Appelscha, Haulerwijk",3,€3.000,Oosterwolde-Zuid,Appelscha,Haulerwijk,3000,9,BouwGarant,4.5,195,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Weststellingwerf,"Wolvega, Noordwolde, Steggerda",3,€3.000,Wolvega-Oost,Noordwolde,Steggerda,3000,9,BouwGarant,4.5,195,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Opsterland,"Gorredijk, Beetsterzwaag, Ureterp",3,€3.000,Gorredijk-West,Beetsterzwaag,Ureterp,3000,9,BouwGarant,4.5,195,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Tytsjerksteradiel,"Burgum, Gytsjerk, Noardburgum",3,€3.000,Burgum-Noord,Gytsjerk,Noardburgum,3000,9,BouwGarant,4.5,195,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Waadhoeke,"Franeker, Sint Annaparochie, Tzummarum",3,€3.000,Franeker-Zuid,Sint Annaparochie,Tzummarum,3000,9,BouwGarant,4.5,195,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,De Fryske Marren,"Joure, Lemmer, Balk",3,€3.100,Joure-Oost,Lemmer,Balk,3000,9,BouwGarant,4.5,195,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Friesland,Noardeast-Fryslân,"Dokkum, Damwoude, Kollum",3,€3.000,Dokkum-West,Damwoude,Kollum,3000,9,BouwGarant,4.5,195,Vochtproblemen kelder,Rietdak aansluitingen,Grondwaterpeil
+Drenthe,Emmen,"Emmerhout, Bargeres, Delftlanden, Kloosters",7,€3.200,Delftlanden,Rietlanden,Emmerhout,3100,10,BouwGarant,4.6,455,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Assen,"Kloosterveen, Pittelo, Baggelhuizen",6,€3.300,Kloosterveen-West,Pittelo-Noord,Baggelhuizen,3100,10,BouwGarant,4.6,390,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Meppel,"Haveltermade, Oosterboer, De Wijk",4,€3.100,Haveltermade,Oosterboer,De Wijk,3100,10,BouwGarant,4.6,260,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Hoogeveen,"Wolfsbos, De Weide, Elim",4,€3.100,Wolfsbos-Oost,De Weide,Elim,3100,10,BouwGarant,4.6,260,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Coevorden,"Sleen, Dalen, De Krim",3,€2.900,Coevorden-Noord,Sleen,Dalen,3100,10,BouwGarant,4.6,195,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Noordenveld,"Roden, Norg, Peize",3,€3.000,Roden-Zuid,Norg,Peize,3100,10,BouwGarant,4.6,195,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Tynaarlo,"Vries, Eelde, Zuidlaren",4,€3.100,Vries-Noord,Eelde,Zuidlaren,3100,10,BouwGarant,4.6,260,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,De Wolden,"Ruinen, Zuidwolde, Koekange",3,€2.900,Ruinen,Zuidwolde,Koekange,3100,10,BouwGarant,4.6,195,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Borger-Odoorn,"Borger, Odoorn, Exloo",2,€2.800,Borger-West,Odoorn,Exloo,3100,10,BouwGarant,4.6,130,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Aa en Hunze,"Gieten, Anloo, Rolde",2,€2.800,Gieten-Oost,Anloo,Rolde,3100,10,BouwGarant,4.6,130,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Westerveld,"Diever, Havelte, Dwingeloo",2,€2.900,Diever,Havelte,Dwingeloo,3100,10,BouwGarant,4.6,130,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Drenthe,Midden-Drenthe,"Beilen, Westerbork, Wijster",3,€3.000,Beilen-Zuid,Westerbork,Wijster,3100,10,BouwGarant,4.6,195,Funderingsdiepte,Zettingen veengrond,Dakgootafschot
+Overijssel,Enschede,"Roombeek, Stokhorst, Boekelo, Lonneker",12,€3.700,Roombeek,Zuidpark,Boswinkel,3600,11,SWK,5.0,720,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Zwolle,"Stadshagen, Aalanden, Marslanden, Westenholte",15,€4.000,Stadshagen-West,Aa-landen,De Tippe,4000,12,SWK,5.2,1050,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Deventer,"Colmschate, Steenbrugge, Keizerslanden",9,€3.800,Steenbrugge,Bergweide,Oxe,3800,12,SWK,5.1,585,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Hengelo,"Hasseler Es, Beckum, Berflo Es",7,€3.600,Hasseler Es,Wilderinkshoek,Berflo Es,3800,12,SWK,5.1,455,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Almelo,"Ossenkoppelerhoek, Nieuw-Almelo, Aadijk",6,€3.500,Ossenkoppelerhoek,Nieuw-Almelo,Windmolenbroek,3800,12,SWK,5.1,390,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Kampen,"Onderdijks, De Maten, Brunnepe",5,€3.400,De Maten,Brunnepe,IJsselmuiden,3800,12,SWK,5.1,325,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Oldenzaal,"Bergmaat, De Thij, Cromhoff",4,€3.300,Bergmaat,De Thij,Cromhoff,3800,12,SWK,5.1,260,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Rijssen-Holten,"Rijssen-Noord, Enter, Holten",4,€3.300,Rijssen-Noord,Enter,Holten,3800,12,SWK,5.1,260,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Steenwijkerland,"Steenwijk, Vollenhove, Giethoorn",4,€3.200,Steenwijk-Oost,Vollenhove,Giethoorn,3800,12,SWK,5.1,260,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Losser,"Overdinkel, De Lutte, Glane",3,€3.100,Overdinkel,De Lutte,Glane,3800,12,SWK,5.1,195,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Tubbergen,"Albergen, Fleringen, Reutum",2,€3.000,Albergen,Fleringen,Reutum,3800,12,SWK,5.1,130,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Twenterand,"Vriezenveen, Den Ham, Westerhaar",3,€3.100,Vriezenveen-West,Den Ham,Westerhaar,3800,12,SWK,5.1,195,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Haaksbergen,"Buurse, Rekken, Hengevelde",3,€3.100,Haaksbergen-Noord,Buurse,Rekken,3800,12,SWK,5.1,195,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Borne,"Hertme, Zenderen, Azelo",3,€3.200,Borne-West,Hertme,Zenderen,3800,12,SWK,5.1,195,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Wierden,"Enter, Notter, Rectum",3,€3.100,Wierden-Oost,Enter,Notter,3800,12,SWK,5.1,195,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Hellendoorn,"Nijverdal, Hellendoorn, Daarle",4,€3.200,Nijverdal-Zuid,Hellendoorn,Daarle,3800,12,SWK,5.1,260,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Dinkelland,"Weerselo, Ootmarsum, Rossum",2,€3.000,Weerselo,Ootmarsum,Rossum,3800,12,SWK,5.1,130,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Olst-Wijhe,"Olst, Wijhe, Welsum",2,€3.000,Olst-Noord,Wijhe,Welsum,3800,12,SWK,5.1,130,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Overijssel,Hardenberg,"Dedemsvaart, Gramsbergen, Slagharen",5,€3.200,Dedemsvaart-Oost,Gramsbergen,Slagharen,3800,12,SWK,5.1,325,Grondverzakking,Kozijnsponning,Lekwater dakrand
+Flevoland,Almere,"Almere Hout, Almere Poort, Nobelhorst, Duin",18,€4.500,Almere Duin,Nobelhorst-Zuid,Poort-Oost,4500,16,SWK,6.3,2100,Verzakking zettingen,Vochttransport wanden,Installatieafwijkingen
+Flevoland,Lelystad,"Warande, Boswijk, Atolwijk, Zuiderzeewijk",7,€3.600,Warande-West,Boswijk,Zuiderzeewijk,4200,15,SWK,6.1,455,Verzakking zettingen,Vochttransport wanden,Installatieafwijkingen
+Flevoland,Zeewolde,"Horst, Polderwijk, Trekkersveld",5,€3.500,Trekkersveld,Polderwijk,Horst,4200,15,SWK,6.1,325,Verzakking zettingen,Vochttransport wanden,Installatieafwijkingen
+Flevoland,Dronten,"Biddinghuizen, Swifterbant, Dronten-West",4,€3.300,Biddinghuizen,Swifterbant,Dronten-West,4200,15,SWK,6.1,260,Verzakking zettingen,Vochttransport wanden,Installatieafwijkingen
+Flevoland,Urk,"Urk-Noord, Domineeshoek, Westhaven",3,€3.200,Urk-Noord,Domineeshoek,Westhaven,4200,15,SWK,6.1,195,Verzakking zettingen,Vochttransport wanden,Installatieafwijkingen
+Flevoland,Noordoostpolder,"Emmeloord, Nagele, Luttelgeest",4,€3.200,Emmeloord-Oost,Nagele,Luttelgeest,4200,15,SWK,6.1,260,Verzakking zettingen,Vochttransport wanden,Installatieafwijkingen
+Gelderland,Arnhem,"Schuytgraaf, Presikhaaf, Elden, Malburgen",14,€4.000,Schuytgraaf-Oost,Elden-West,Rijkerswoerd,4000,13,BouwGarant,5.3,780,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Nijmegen,"Waalsprong, Lent, Citadel, Ressen",19,€4.200,Waalsprong-West,Lent-Noord,Citadel,4300,13,BouwGarant,5.4,1350,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Apeldoorn,"Zuidbroek, Kayersmolen, Mheenpark, Osseveld",11,€3.850,Zuidbroek-West,De Sprengen,Mheenpark-Oost,3900,12,BouwGarant,5.2,820,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Ede,"Kernhem, Veldhuizen, De Vallei",9,€3.700,Kernhem,Veldhuizen,Frankeneng,4100,13,BouwGarant,5.4,585,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Doetinchem,"Wehl, 's-Heerenberg, Gaanderen",6,€3.500,Doetinchem-Noord,Wehl,Gaanderen,4100,13,BouwGarant,5.4,390,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Harderwijk,"Drielanden, Tweelingstad, Stadsdennen",8,€3.800,Drielanden,Tweelingstad,De Velden,4100,13,BouwGarant,5.4,520,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Zevenaar,"Didam, Babberich, Angerlo",5,€3.400,Zevenaar-West,Didam,Babberich,4100,13,BouwGarant,5.4,325,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Winterswijk,"Meddo, Corle, Woold",3,€3.200,Winterswijk-Oost,Meddo,Corle,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Zutphen,"De Hoven, Warnsveld, Leesten",5,€3.500,De Hoven,Warnsveld,Leesten,4100,13,BouwGarant,5.4,325,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Brummen,"Eerbeek, Hall, Leuvenheim",3,€3.200,Eerbeek,Hall,Leuvenheim,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Lochem,"Laren, Barchem, Almen",3,€3.200,Lochem-Oost,Laren,Barchem,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Aalten,"Dinxperlo, Bredevoort, De Heurne",3,€3.100,Aalten-Noord,Dinxperlo,Bredevoort,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Montferland,"Didam, 's-Heerenberg, Kilder",4,€3.300,Didam-West,Heerenberg,Kilder,4100,13,BouwGarant,5.4,260,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Buren,"Maurik, Lienden, Eck en Wiel",3,€3.200,Maurik-Oost,Lienden,Eck en Wiel,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Tiel,"Medel, Drumpt, Wadenoijen",5,€3.400,Medel,Drumpt,Passewaay,4100,13,BouwGarant,5.4,325,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,West Betuwe,"Geldermalsen, Buren, Neerijnen",4,€3.300,Geldermalsen-Oost,Buren,Neerijnen,4100,13,BouwGarant,5.4,260,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Wijchen,"Alverna, Batenburg, Bergharen",5,€3.500,Wijchen-Noord,Alverna,Batenburg,4100,13,BouwGarant,5.4,325,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Maasdriel,"Kerkdriel, Hedel, Velddriel",4,€3.300,Kerkdriel,Hedel,Velddriel,4100,13,BouwGarant,5.4,260,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Neder-Betuwe,"Dodewaard, Ochten, Opheusden",3,€3.200,Dodewaard,Ochten,Opheusden,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Wageningen,"Nude, Randwijck, Stadionpark",5,€3.600,Nude-West,Randwijck,Stadionpark,4100,13,BouwGarant,5.4,325,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Rheden,"Velp, De Steeg, Rozendaal",4,€3.500,Velp-Oost,De Steeg,Rozendaal,4100,13,BouwGarant,5.4,260,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Westervoort,"Westervoort-Noord, Babberich, Loo",3,€3.300,Westervoort-Noord,Babberich,Loo,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Renkum,"Doorwerth, Heelsum, Oosterbeek",4,€3.500,Doorwerth,Heelsum,Oosterbeek,4100,13,BouwGarant,5.4,260,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Barneveld,"Voorthuizen, Kootwijkerbroek, De Glind",6,€3.600,Barneveld-West,Voorthuizen,De Glind,4100,13,BouwGarant,5.4,390,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Nunspeet,"Elspeet, Hulshorst, Vierhouten",3,€3.300,Nunspeet-Oost,Elspeet,Hulshorst,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Putten,"Huinen, Strand, Leuvenheim",3,€3.300,Putten-Noord,Huinen,Strand,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Ermelo,"Horst, Speuld, Drie",3,€3.300,Ermelo-West,Horst,Speuld,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Utrecht,Utrecht,"Leidsche Rijn, Merwedekanaalzone, Overvecht, Lunetten",26,€5.400,Merwedekanaalzone,Leidsche Rijn Centrum,Healthy Urban Quarter,6100,13,Woningborg,6.5,2200,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Amersfoort,"Vathorst, Nieuwland, Kattenbroek, De Hoef",17,€4.600,Vathorst-Oost,De Hoef West,Kop van Isselt,5200,13,Woningborg,5.9,1400,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Veenendaal,"De Compagnie, Dragonder, Rhijnauwen",7,€3.900,De Compagnie-West,Dragonder-Noord,Fransenweg,5600,13,Woningborg,6.0,455,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Nieuwegein,"Galecop, Zandveen, Batau, Fokkesteeg",8,€4.100,Galecop,Rijnhuizen-Zuid,De Wiers,5600,13,Woningborg,6.0,520,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Zeist,"Den Dolder, Huis ter Heide, Bosch en Duin",6,€4.600,Zeist-West,Den Dolder,Huis ter Heide,5600,13,Woningborg,6.0,390,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Woerden,"Snel en Polanen, Barwoutswaarder, Zegveld",5,€4.000,Snel en Polanen,Barwoutswaarder,Zegveld,5600,13,Woningborg,6.0,325,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,IJsselstein,"Zenderpark, Achterveld, Centrum-West",5,€4.100,Zenderpark,Achterveld,Centrum-West,5600,13,Woningborg,6.0,325,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Houten,"Loerik, Castellum, Stationsgebied",6,€4.300,Loerik,Castellum,Stationsgebied,5600,13,Woningborg,6.0,390,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,De Bilt,"Groenekan, Bilthoven, Hollandsche Rading",5,€4.700,Bilthoven-Zuid,Groenekan,Hollandsche Rading,5600,13,Woningborg,6.0,325,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Soest,"Soesterberg, Baarn, Soest-Oost",5,€4.400,Soest-Noord,Soesterberg,Baarn,5600,13,Woningborg,6.0,325,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Rhenen,"Elst, Achterberg, Veenendaal-West",3,€3.800,Rhenen-Oost,Elst,Achterberg,5600,13,Woningborg,6.0,195,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Wijk bij Duurstede,"Cothen, Langbroek, Amerongen",3,€3.900,Wijk bij Duurstede-West,Cothen,Langbroek,5600,13,Woningborg,6.0,195,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Utrechtse Heuvelrug,"Doorn, Driebergen, Maarn, Leersum",5,€4.400,Doorn-Oost,Driebergen,Leersum,5600,13,Woningborg,6.0,325,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Montfoort,"Linschoten, Willeskop, Oudewater",3,€3.800,Montfoort-Oost,Linschoten,Willeskop,5600,13,Woningborg,6.0,195,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Lopik,"Jaarsveld, Uitdam, Cabauw",2,€3.700,Lopik-West,Jaarsveld,Uitdam,5600,13,Woningborg,6.0,130,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Stichtse Vecht,"Maarssen, Breukelen, Loenen aan de Vecht",5,€4.800,Maarssen-Noord,Breukelen,Loenen,5600,13,Woningborg,6.0,325,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Vijfheerenlanden,"Vianen, Leerdam, Zederik",5,€3.900,Vianen-Oost,Leerdam,Zederik,5600,13,Woningborg,6.0,325,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Eemnes,"Eemnes-Oost, Wakkerendijk, Aanhouderweg",2,€4.200,Eemnes-Oost,Wakkerendijk,Aanhouderweg,5600,13,Woningborg,6.0,130,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Bunschoten,"Spakenburg, Eemdijk, Zevenhuizen",3,€3.900,Spakenburg-West,Eemdijk,Zevenhuizen,5600,13,Woningborg,6.0,195,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Utrecht,Baarn,"Groeneveen, Prins Hendriklaan, Faas Wilkespark",4,€4.600,Groeneveen,Prins Hendriklaan,Faas Wilkespark,5600,13,Woningborg,6.0,260,Vloerverwarming installatie,Ventilatie-inregeling,Dakrand afdichting
+Noord-Holland,Amsterdam,"IJburg, Nieuw-West, Noord, Zeeburgereiland",42,€6.200,HAUT Amsterdam,Centrumeiland,Schinkels,7200,14,SWK,7.1,4200,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Haarlem,"Schalkwijk, Waarderpolder, Molenwijk, Parkwijk",15,€5.000,Slachthuisterrein,Waarderpolder-Zuid,Dommerbos,5900,12,SWK,6.0,900,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Almere,"Almere Hout, Almere Poort, Nobelhorst",22,€4.700,Nobelhorst,Almere Poort-Oost,De Strook,4500,16,SWK,6.3,2100,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Zaandam,"Poelenburg, Kogerveldwijk, Westerwatering",9,€4.300,Inverdan,Haveneiland,Kogerveld,5850,12,SWK,6.2,585,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Alkmaar,"Overdie, Oudorp, Boekelermeer, De Mare",10,€4.400,Boekelermeer,De Mare,Overdie-West,5850,12,SWK,6.2,650,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Purmerend,"Wheermolen, De Gors, Purmer-Zuid",8,€4.300,Wheermolen-Oost,De Gors,Purmer-Zuid,5850,12,SWK,6.2,520,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Hoorn,"De Hulk, Venenlaankwartier, Bangert",7,€4.200,De Hulk,Venenlaankwartier,Bangert-Oost,5850,12,SWK,6.2,455,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Heerhugowaard,"Stad van de Zon, Broekhorn, De Draai",8,€4.100,Stad van de Zon,Broekhorn,De Draai,5850,12,SWK,6.2,520,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Den Helder,"Julianadorp, Nieuw Den Helder, Westpoort",6,€3.800,Julianadorp-Oost,Nieuw Den Helder,Westpoort,5850,12,SWK,6.2,390,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Hilversum,"Kerkelanden, Gooiland, Hilversum-Noord",7,€5.200,Kerkelanden,Gooiland,Hilversum-Noord,5850,12,SWK,6.2,455,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Amstelveen,"Westwijk, Groenelaan, Stadshart",8,€5.400,Westwijk-Noord,Groenelaan,Stadshart,5850,12,SWK,6.2,520,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Haarlemmermeer,"Floriande, Toolenburg, Lisserbroek, Nieuw-Vennep",14,€4.800,Floriande,Toolenburg,Lisserbroek,5200,14,SWK,6.2,1800,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Enkhuizen,"Gommerwijk, Kadijken, De Nollen",3,€3.900,Gommerwijk,Kadijken,De Nollen,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Medemblik,"Wognum, Twisk, Wervershoof",3,€3.700,Medemblik-Oost,Wognum,Twisk,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Edam-Volendam,"Volendam, Edam, Katwoude",4,€4.200,Volendam-West,Edam,Katwoude,5850,12,SWK,6.2,260,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Waterland,"Monnickendam, Broek in Waterland, Ilpendam",3,€4.400,Monnickendam-Zuid,Broek in Waterland,Ilpendam,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Diemen,"Bergwijkpark, Centrum, Plantage",4,€5.100,Bergwijkpark,Centrum,Plantage,5850,12,SWK,6.2,260,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Oostzaan,"Oostzaan-Noord, Zuideinde, Kerkbuurt",2,€4.300,Oostzaan-Noord,Zuideinde,Kerkbuurt,5850,12,SWK,6.2,130,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Landsmeer,"Purmer-Noord, Broek in Waterland, Ilpendam",2,€4.500,Purmer-Noord,Broek in Waterland,Ilpendam,5850,12,SWK,6.2,130,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Heemstede,"Heemstede-Noord, Gliphoeve, Binnenweg",3,€5.300,Heemstede-Noord,Gliphoeve,Binnenweg,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Bloemendaal,"Aerdenhout, Overveen, Vogelenzang",3,€5.500,Aerdenhout,Overveen,Vogelenzang,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Castricum,"Bakkum, Limmen, De Bloem",4,€4.400,Bakkum-Noord,Limmen,De Bloem,5850,12,SWK,6.2,260,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Bergen,"Schoorl, Egmond aan den Hoef, Groet",3,€4.200,Schoorl-Oost,Egmond,Groet,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Uitgeest,"Akersloot, Krommenie, Uitgeest-Oost",3,€4.100,Akersloot,Krommenie,Uitgeest-Oost,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Beverwijk,"Wijk aan Zee, Beverwijk-Oost, Baanvak",4,€4.000,Wijk aan Zee,Beverwijk-Oost,Baanvak,5850,12,SWK,6.2,260,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Velsen,"IJmuiden, Santpoort, Velserbroek",6,€4.300,IJmuiden-Noord,Santpoort,Velserbroek,5850,12,SWK,6.2,390,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Stede Broec,"Grootebroek, Lutjebroek, Bovenkarspel",3,€3.900,Grootebroek,Lutjebroek,Bovenkarspel,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Schagen,"Tuitjenhorn, Warmenhuizen, Schagen-West",3,€3.700,Schagen-West,Tuitjenhorn,Warmenhuizen,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Texel,"Den Burg, De Koog, Oudeschild",2,€3.800,Den Burg-West,De Koog,Oudeschild,5850,12,SWK,6.2,130,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Gooise Meren,"Bussum, Naarden, Muiden",6,€5.200,Bussum-Oost,Naarden,Muiden,5850,12,SWK,6.2,390,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Laren,"Laren-Noord, Eemnes, Blaricum",3,€5.600,Laren-Noord,Eemnes,Blaricum,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Blaricum,"Blaricum-West, Laren, Huizen",3,€5.500,Blaricum-West,Laren,Huizen,5850,12,SWK,6.2,195,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Noord-Holland,Huizen,"Huizen-West, Naarden, Muiden",5,€4.800,Huizen-West,Naarden,Muiden,5850,12,SWK,6.2,325,Vochtdoorslag kozijnen,Elektra afwijkingen,Vloerniveau-afwijking
+Zuid-Holland,Rotterdam,"Nesselande, Hoek van Holland, Prins Alexander, Rozenburg",31,€5.100,Hart van Zuid,Nesselande Park,RotterdamCS-Kwartier,5400,12,SWK,6.4,3100,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Den Haag,"Leidschenveen, Binckhorst, Ypenburg, Wateringse Veld",28,€5.300,Binckhorst,Leidschenveen-Ypenburg,Erasmusveld,5600,11,SWK,6.2,2800,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Leiden,"Merenwijk, De Waard, Stevenshof, Roomburg",12,€4.600,Nieuw Stevenshof,Wernink-terrein,Aalmarkt,5700,12,SWK,6.0,920,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Dordrecht,"Stadswerven, Sterrenburg, Wielwijk, Krispijn",10,€4.100,Stadswerven,Dubbeldam-Noord,Amstelwijck,5200,11,SWK,5.9,650,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Zoetermeer,"Rokkeveen, Ypenburg, Meerzicht, Buytenwegh",13,€4.400,Boerhaavelaan,Palenstein,Buytenwegh,4800,12,SWK,5.8,950,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Westland,"Naaldwijk, Monster, De Lier, Wateringen",8,€4.500,Naaldwijk-Oost,Monster,De Lier,5200,11,SWK,5.9,520,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Alphen aan den Rijn,"Ridderveld, Gnephoek, Zwammerdam",9,€4.200,Ridderveld,Gnephoek,Zwammerdam,5200,11,SWK,5.9,585,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Delft,"Harnaschpolder, TU-wijk, Tanthof",10,€5.000,Harnaschpolder,TU-wijk,Tanthof-West,5800,11,SWK,6.1,880,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Gouda,"Zuidplaspolder, Goverwelle, Bloemendaal",9,€4.100,Goverwelle,Zuidplaspolder,Bloemendaal,5200,11,SWK,5.9,585,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Pijnacker-Nootdorp,"Keijzershof, Ackerswoude, Delfgauw",8,€4.800,Keijzershof,Ackerswoude,Delfgauw,5200,11,SWK,5.9,520,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Lansingerland,"Berkel en Rodenrijs, Bergschenhoek, Bleiswijk",9,€4.600,Berkel-Noord,Bergschenhoek,Bleiswijk,5200,11,SWK,5.9,585,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Ridderkerk,"Slikkerveer, Bolnes, Oostendam",5,€4.000,Slikkerveer-West,Bolnes,Oostendam,5200,11,SWK,5.9,325,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Spijkenisse,"Nissewaard, Voorne-Putten, Zuidland",7,€3.900,Nissewaard-Oost,Zuidland,Voorne-Putten,5200,11,SWK,5.9,455,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Capelle aan den IJssel,"Schollevaar, Schenkel, De Putten",7,€4.300,Schollevaar-Oost,Schenkel,De Putten,5200,11,SWK,5.9,455,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Krimpen aan den IJssel,"Krimpen-Oost, IJsseloever, Langeland",4,€4.100,Krimpen-Oost,IJsseloever,Langeland,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Barendrecht,"Carnisselande, Vrijenburg, Portland",7,€4.400,Carnisselande,Vrijenburg,Portland,5200,11,SWK,5.9,455,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Sliedrecht,"Baanhoek, Molenvliet, Rivieroevers",4,€3.800,Baanhoek,Molenvliet,Rivieroevers,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Hendrik-Ido-Ambacht,"Sandelingen Ambacht, Oostpolder, Bovenpolder",5,€4.100,Sandelingen Ambacht,Oostpolder,Bovenpolder,5200,11,SWK,5.9,325,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Zwijndrecht,"Develstein, Drievliet, Maasoever",4,€4.000,Develstein,Drievliet,Maasoever,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Papendrecht,"Papendrecht-Oost, Oostpolder, Westpolder",4,€3.900,Oostpolder,Westpolder,Papendrecht-Oost,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Alblasserdam,"Krimpenerwaard, Buitenlandse Waard, Oost",3,€3.800,Krimpenerwaard,Buitenlandse Waard,Oost,5200,11,SWK,5.9,195,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Molenlanden,"Kinderdijk, Groot-Ammers, Streefkerk",4,€3.700,Kinderdijk,Groot-Ammers,Streefkerk,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Gorinchem,"Haarwijk, Gildenwijk, Papland",5,€3.800,Haarwijk,Gildenwijk,Papland,5200,11,SWK,5.9,325,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Hardinxveld-Giessendam,"Boven-Hardinxveld, Giessendam, Havenkwartier",3,€3.700,Boven-Hardinxveld,Giessendam,Havenkwartier,5200,11,SWK,5.9,195,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Hoeksche Waard,"Oud-Beijerland, Heinenoord, Mijnsheerenland",5,€3.800,Oud-Beijerland-Oost,Heinenoord,Mijnsheerenland,5200,11,SWK,5.9,325,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Goeree-Overflakkee,"Middelharnis, Stellendam, Ouddorp",3,€3.500,Middelharnis-West,Stellendam,Ouddorp,5200,11,SWK,5.9,195,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Voorne aan Zee,"Brielle, Rockanje, Oostvoorne",4,€4.000,Brielle-Oost,Rockanje,Oostvoorne,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Nissewaard,"Spijkenisse, Hellevoetsluis, Rockanje",6,€3.900,Spijkenisse-Noord,Hellevoetsluis,Rockanje,5200,11,SWK,5.9,390,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Hellevoetsluis,"Hellevoetsluis-Noord, Kickersbloem, De Stad",4,€3.800,Kickersbloem,De Stad,Hellevoetsluis-Noord,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Brielle,"Vierpolders, Zwartewaal, Heenvliet",2,€3.900,Vierpolders,Zwartewaal,Heenvliet,5200,11,SWK,5.9,130,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Vlaardingen,"Holy-Noord, Westwijk, Vergulde Hand",6,€4.100,Holy-Noord,Westwijk,Vergulde Hand,5200,11,SWK,5.9,390,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Maassluis,"De Balij, Steendijkpolder, Burgemeesterswijk",5,€4.000,De Balij,Steendijkpolder,Burgemeesterswijk,5200,11,SWK,5.9,325,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Schiedam,"Groenoord, Spaanse Polder, Spaland",6,€4.200,Groenoord,Spaanse Polder,Spaland,5200,11,SWK,5.9,390,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Midden-Delfland,"Maasland, Schipluiden, Den Hoorn",3,€4.600,Maasland,Schipluiden,Den Hoorn,5200,11,SWK,5.9,195,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Leiderdorp,"Leiderdorp-Oost, Munnikkenpolder, Zijlkwartier",4,€4.500,Leiderdorp-Oost,Munnikkenpolder,Zijlkwartier,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Leidschendam-Voorburg,"Leidschendam-Noord, Boswijk, Voorburg-West",8,€5.000,Leidschendam-Noord,Boswijk,Voorburg-West,5200,11,SWK,5.9,520,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Rijswijk,"In de Bogaard, Oud Rijswijk, Sion",6,€4.800,In de Bogaard,Oud Rijswijk,Sion,5200,11,SWK,5.9,390,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Wassenaar,"Kieviet, Duinzigt, Rustenburch",4,€5.500,Kieviet,Duinzigt,Rustenburch,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Katwijk,"Valkenburg, Katwijk-Noord, Rijnsburg",7,€4.300,Valkenburg,Katwijk-Noord,Rijnsburg,5200,11,SWK,5.9,455,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Noordwijk,"Zuideinde, Offem, De Zilk",4,€4.400,Zuideinde,Offem,De Zilk,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Teylingen,"Sassenheim, Voorhout, Warmond",4,€4.600,Sassenheim-Oost,Voorhout,Warmond,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Kaag en Braassem,"Leimuiden, Roelofarendsveen, Jacobswoude",3,€4.200,Leimuiden,Roelofarendsveen,Jacobswoude,5200,11,SWK,5.9,195,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Nieuwkoop,"Ter Aar, Noorden, Zevenhoven",3,€4.000,Ter Aar-West,Noorden,Zevenhoven,5200,11,SWK,5.9,195,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Bodegraven-Reeuwijk,"Bodegraven, Reeuwijk, Waarder",4,€4.100,Bodegraven-Oost,Reeuwijk,Waarder,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Waddinxveen,"Zuidplas, Triangel, Waddinxveen-Noord",5,€4.300,Triangel,Zuidplas,Waddinxveen-Noord,5200,11,SWK,5.9,325,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Zuidplas,"Moordrecht, Nieuwerkerk, Zevenhuizen",6,€4.200,Nieuwerkerk-Oost,Moordrecht,Zevenhuizen,5200,11,SWK,5.9,390,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Krimpenerwaard,"Schoonhoven, Bergambacht, Vlist",4,€3.800,Schoonhoven-West,Bergambacht,Vlist,5200,11,SWK,5.9,260,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zuid-Holland,Goudse Gaardenring,"Gouda, Waddinxveen, Bergambacht",5,€4.000,Goudse Gaardenring,Waddinxveen,Bergambacht,5200,11,SWK,5.9,325,Kitwerk badkamer,Stucwerk oneffenheden,Kozijnaansluiting
+Zeeland,Middelburg,"Dauwendaele, Griffioen, Arnemuiden, Mortiere",5,€3.200,Monnikenhage,Dauwendaele,Mortiere,3300,9,SWK,4.7,325,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Vlissingen,"Bossenburgh, Papegaaienburg, 't Zand",4,€3.100,Bossenburgh,Papegaaienburg,'t Zand,3300,9,SWK,4.7,260,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Terneuzen,"Axel, Sas van Gent, Zaamslag",4,€3.000,Terneuzen-West,Axel,Sas van Gent,3300,9,SWK,4.7,260,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Goes,"Goese Meer, De Poel, Wilhelminadorp",4,€3.200,Goese Meer,De Poel,Wilhelminadorp,3300,9,SWK,4.7,260,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Hulst,"Graauw, Kloosterzande, Walsoorden",2,€2.900,Graauw,Kloosterzande,Walsoorden,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Schouwen-Duiveland,"Zierikzee, Burgh-Haamstede, Brouwershaven",3,€3.100,Zierikzee-Noord,Burgh-Haamstede,Brouwershaven,3300,9,SWK,4.7,195,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Noord-Beveland,"Colijnsplaat, Kamperland, Wissenkerke",2,€3.000,Colijnsplaat,Kamperland,Wissenkerke,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Kapelle,"Wemeldinge, Biezelinge, Schore",2,€3.000,Wemeldinge,Biezelinge,Schore,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Reimerswaal,"Krabbendijke, Yerseke, Kruiningen",2,€2.900,Krabbendijke,Yerseke,Kruiningen,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Tholen,"Sint-Maartensdijk, Poortvliet, Scherpenisse",2,€2.900,Sint-Maartensdijk,Poortvliet,Scherpenisse,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Borsele,"'s-Heerenhoek, Heinkenszand, Kwadendamme",2,€2.900,Heinkenszand,Kwadendamme,'s-Heerenhoek,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Sluis,"Cadzand, Oostburg, IJzendijke",2,€2.800,Cadzand-West,Oostburg,IJzendijke,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Zeeland,Veere,"Domburg, Vrouwenpolder, Aagtekerke",2,€3.000,Domburg-West,Vrouwenpolder,Aagtekerke,3300,9,SWK,4.7,130,Windbestendigheid gevel,Zeezout-corrosie,Stormschade dakrand
+Noord-Brabant,'s-Hertogenbosch,"Rosmalen, Empel, Maaspoort, Engelen",18,€4.350,Landgoed Coudewater,De Groote Wielen,Hessenwijk,4600,14,SWK,5.8,1200,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Eindhoven,"Woensel, Gestel, Strijp-S, Meerhoven",24,€4.800,Brainport Smart District,De Karpen,Meerhovenpark,4900,15,SWK,5.8,1900,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Tilburg,"Reeshof, Berkel-Enschot, Stappegoor, Udenhout",16,€4.100,De Reit,Park Stappegoor,Koningshoek,4300,13,SWK,5.5,1400,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Breda,"Prinsenbeek, Bavel, Teteringen, Hoge Vucht",14,€4.200,Driesprong,De Baronie,Steenakker Noord,4500,14,SWK,5.6,1100,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Helmond,"Brandevoort, Dierdonk, Rijpelberg, Brouwhuis",11,€3.900,Brandevoort West,De Akkers,Varenschut,4000,14,SWK,5.5,680,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Oss,"Ruwaard, Schadewijk, Oijen, Berghem",9,€3.750,Oss-West,De Hooivork,Vijfheerenlanden,4400,14,SWK,5.7,585,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Bergen op Zoom,"Gageldonk, Reek, Borgvliet, Theodorushaven",7,€3.600,Nieuw Gageldonk,Ravelijn-Noord,Theodorushaven,4400,14,SWK,5.7,455,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Roosendaal,"Westrand, Borchwerf, Langdonk, Kroeven",8,€3.700,Borchwerf III,De Melanen,Westrand Park,4400,14,SWK,5.7,520,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Waalwijk,"Baardwijk, Sprang-Capelle, Drunen",6,€3.700,Baardwijk-West,Sprang-Capelle,Drunen,4400,14,SWK,5.7,390,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Veldhoven,"Zilverakker, Kempenbaan, Heikant",7,€4.000,Zilverakker,Kempenbaan,Heikant,4400,14,SWK,5.7,455,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Meierijstad,"Veghel, Sint-Oedenrode, Schijndel",8,€3.800,Veghel-Oost,Sint-Oedenrode,Schijndel,4400,14,SWK,5.7,520,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Vijfheerenlanden,"Vianen, Leerdam, Zederik",5,€3.900,Vianen-Oost,Leerdam,Zederik,4400,14,SWK,5.7,325,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Bernheze,"Heesch, Nistelrode, Heeswijk-Dinther",4,€3.600,Heesch-West,Nistelrode,Heeswijk-Dinther,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Sint-Michielsgestel,"Den Dungen, Berlicum, Middelrode",3,€3.700,Den Dungen,Berlicum,Middelrode,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Boxtel,"Liempde, Lennisheuvel, Haaren",4,€3.600,Boxtel-Oost,Liempde,Lennisheuvel,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Sint-Oedenrode,"Nijnsel, Wijbosch, Boskant",3,€3.600,Nijnsel,Wijbosch,Boskant,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Landerd,"Reek, Schaijk, Zeeland",3,€3.500,Schaijk-West,Reek,Zeeland,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Grave,"Velp, Gassel, Escharen",2,€3.400,Velp-Noord,Gassel,Escharen,4400,14,SWK,5.7,130,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Cuijk,"Haps, Vianen, Linden",3,€3.500,Cuijk-Oost,Haps,Vianen,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Mill en Sint Hubert,"Langenboom, Wilbertoord, Wanroij",2,€3.300,Langenboom,Wilbertoord,Wanroij,4400,14,SWK,5.7,130,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Boekel,"Venhorst, Huisseling, Boekel-Oost",2,€3.400,Venhorst,Huisseling,Boekel-Oost,4400,14,SWK,5.7,130,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Gemert-Bakel,"Gemert, Bakel, De Mortel",4,€3.600,Gemert-West,Bakel,De Mortel,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Laarbeek,"Aarle-Rixtel, Beek en Donk, Lieshout",3,€3.700,Aarle-Rixtel,Beek en Donk,Lieshout,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Nuenen,"Gerwen, Nederwetten, Nuenen-West",3,€3.900,Nuenen-West,Gerwen,Nederwetten,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Son en Breugel,"Son, Breugel, De Gijzevoort",3,€4.000,Son-Oost,Breugel,De Gijzevoort,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Geldrop-Mierlo,"Geldrop, Mierlo, Braakhuizen",4,€3.900,Geldrop-Noord,Mierlo,Braakhuizen,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Deurne,"Liessel, Neerkant, Helenaveen",3,€3.600,Liessel,Neerkant,Helenaveen,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Asten,"Ommel, Heusden, Asten-Oost",3,€3.500,Ommel,Heusden,Asten-Oost,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Someren,"Lierop, Someren-Eind, Sluis",2,€3.400,Lierop,Someren-Eind,Sluis,4400,14,SWK,5.7,130,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Cranendonck,"Budel, Maarheeze, Soerendonk",3,€3.500,Budel-Oost,Maarheeze,Soerendonk,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Weert,"Laar, Fatima, Molenakker, Kampershoek",6,€3.700,Kampershoek,Laar,Fatima,4400,14,SWK,5.7,390,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Eersel,"Bergeijk, Duizel, Steensel",3,€3.600,Bergeijk,Duizel,Steensel,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Reusel-De Mierden,"Reusel, Hulsel, Mierde",2,€3.400,Reusel-Oost,Hulsel,Mierde,4400,14,SWK,5.7,130,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Bladel,"Hapert, Netersel, Hoogeloon",3,€3.500,Hapert-West,Netersel,Hoogeloon,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Oirschot,"Moergestel, Best, Oirschot-West",4,€3.800,Moergestel,Oirschot-West,Best-Noord,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Best,"Best-Noord, Aarle, Oirschot",5,€4.000,Best-Noord,Aarle,Oirschot,4400,14,SWK,5.7,325,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Waalre,"Aalst, Waalre-Noord, Valkenswaard",4,€4.100,Aalst-Oost,Waalre-Noord,Valkenswaard,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Valkenswaard,"Dommelen, Borkel, Schaijk",4,€3.800,Dommelen,Borkel,Schaijk,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Heeze-Leende,"Leende, Sterksel, Heeze-Oost",3,€3.700,Leende,Sterksel,Heeze-Oost,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Maarheeze,"Budel-Dorplein, Soerendonk, Gastel",2,€3.500,Budel-Dorplein,Soerendonk,Gastel,4400,14,SWK,5.7,130,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Dongen,"Dongen-Oost, 's Gravenmoer, Rijen",4,€3.700,Dongen-Oost,'s Gravenmoer,Rijen,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Loon op Zand,"Kaatsheuvel, De Moer, Besoijen",4,€3.600,Kaatsheuvel-West,De Moer,Besoijen,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Woudrichem,"Almkerk, Giessen, Uitwijk",2,€3.300,Almkerk,Giessen,Uitwijk,4400,14,SWK,5.7,130,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Altena,"Werkendam, Woudrichem, Sleeuwijk",4,€3.500,Werkendam-Oost,Sleeuwijk,Nieuwendijk,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Drimmelen,"Made, Terheijden, Lage Zwaluwe",3,€3.600,Made-West,Terheijden,Lage Zwaluwe,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Geertruidenberg,"Raamsdonksveer, Raamsdonk, Geertruidenberg-Oost",3,€3.600,Raamsdonksveer,Raamsdonk,Geertruidenberg-Oost,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Oosterhout,"Dommelbergen, Vrachelen, Zwaaikom",6,€3.800,Dommelbergen,Vrachelen,Zwaaikom,4400,14,SWK,5.7,390,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Zundert,"Rijsbergen, Klein Zundert, Wernhout",3,€3.500,Rijsbergen,Klein Zundert,Wernhout,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Etten-Leur,"Banakkers, Schoenmakershoek, Bosdreef",5,€3.700,Banakkers,Schoenmakershoek,Bosdreef,4400,14,SWK,5.7,325,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Halderberge,"Oudenbosch, Bosschenhoofd, Hoeven",4,€3.500,Oudenbosch-Oost,Bosschenhoofd,Hoeven,4400,14,SWK,5.7,260,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Moerdijk,"Klundert, Fijnaart, Standdaarbuiten",3,€3.400,Klundert-West,Fijnaart,Standdaarbuiten,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Noord-Brabant,Steenbergen,"Dinteloord, Kruisland, Welberg",3,€3.400,Dinteloord,Kruisland,Welberg,4400,14,SWK,5.7,195,Meerwerk-overruns,Gevelisolatie aansluitingen,Tegelvoegen badkamer
+Limburg,Maastricht,"Céramique, Randwyck, Belvédère, Hazendans",10,€4.100,Belvédère,Randwyck-Noord,Hazendans,3900,11,Woningborg,5.1,480,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Venlo,"Blerick, Tegelen, Boekend, Velden",8,€3.700,Maasboulevard,Blerick-Oost,Venlo-Noord,3600,11,Woningborg,5.0,520,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Roermond,"Maasniel, Asenray, Merum, Ool",7,€3.700,Maasoever,Asenray,Ool,3600,11,Woningborg,5.0,455,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Sittard-Geleen,"Sittard-Noord, Born, Geleen-West",8,€3.600,Born-Oost,Sittard-Noord,Geleen-West,3600,11,Woningborg,5.0,520,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Heerlen,"Hoensbroek, Brunssum, Schaesberg",8,€3.400,Hoensbroek-West,Brunssum,Schaesberg,3600,11,Woningborg,5.0,520,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Weert,"Laar, Fatima, Molenakker, Kampershoek",6,€3.700,Kampershoek-Noord,Laar,Fatima,3600,11,Woningborg,5.0,390,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Venray,"Merselo, Oirlo, Leunen, Ysselsteyn",5,€3.500,Merselo,Oirlo,Leunen,3600,11,Woningborg,5.0,325,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Horst aan de Maas,"America, Melderslo, Sevenum",4,€3.400,America-West,Melderslo,Sevenum,3600,11,Woningborg,5.0,260,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Peel en Maas,"Panningen, Meijel, Kessel",4,€3.400,Panningen-Oost,Meijel,Kessel,3600,11,Woningborg,5.0,260,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Maasgouw,"Ohé en Laak, Stevensweert, Thorn",3,€3.300,Ohé en Laak,Stevensweert,Thorn,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Echt-Susteren,"Echt, Susteren, Koningsbosch",4,€3.400,Echt-Oost,Susteren,Koningsbosch,3600,11,Woningborg,5.0,260,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Leudal,"Haelen, Roggel, Heythuysen",3,€3.300,Haelen,Roggel,Heythuysen,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Niederrhein,"Tegelen, Belfeld, Steyl",2,€3.300,Tegelen-Noord,Belfeld,Steyl,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Kerkrade,"Chevremont, Eygelshoven, Spekholzerheide",4,€3.200,Chevremont,Eygelshoven,Spekholzerheide,3600,11,Woningborg,5.0,260,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Brunssum,"Treebeek, Hopel, Hendrik",3,€3.200,Treebeek,Hopel,Hendrik,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Nuth,"Schimmert, Vaesrade, Hulsberg",2,€3.300,Schimmert,Vaesrade,Hulsberg,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Schinnen,"Doenrade, Puth, Amstenrade",2,€3.200,Doenrade,Puth,Amstenrade,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Beekdaelen,"Nuth, Schinnen, Onderbanken",3,€3.300,Nuth-West,Schinnen,Onderbanken,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Voerendaal,"Kunrade, Ransdaal, Ubachsberg",2,€3.400,Kunrade,Ransdaal,Ubachsberg,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Simpelveld,"Bocholtz, Vijlen, Rimburg",2,€3.300,Bocholtz,Vijlen,Rimburg,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Vaals,"Vijlen, Lemiers, Holset",2,€3.300,Vijlen,Lemiers,Holset,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Gulpen-Wittem,"Wittem, Mechelen, Slenaken",2,€3.400,Wittem,Mechelen,Slenaken,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Eijsden-Margraten,"Eijsden, Margraten, Cadier en Keer",3,€3.500,Eijsden-Oost,Margraten,Cadier en Keer,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Meerssen,"Bunde, Geulle, Ulestraten",3,€3.600,Bunde,Geulle,Ulestraten,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Valkenburg aan de Geul,"Houthem, Berg en Terblijt, Sibbe",3,€3.700,Houthem,Berg en Terblijt,Sibbe,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Landgraaf,"Schaesberg, Nieuwenhagen, Waubach",4,€3.300,Schaesberg-Oost,Nieuwenhagen,Waubach,3600,11,Woningborg,5.0,260,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Onderbanken,"Schinveld, Merkelbeek, Jabeek",2,€3.100,Schinveld,Merkelbeek,Jabeek,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Bergen,"Afferden, Well, Aijen",2,€3.200,Afferden,Well,Aijen,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Gennep,"Heijen, Ottersum, Milsbeek",3,€3.300,Heijen,Ottersum,Milsbeek,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Mook en Middelaar,"Mook, Middelaar, Plasmolen",2,€3.400,Mook-West,Middelaar,Plasmolen,3600,11,Woningborg,5.0,130,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Limburg,Beesel,"Reuver, Swalmen, Offenbeek",3,€3.400,Reuver-West,Swalmen,Offenbeek,3600,11,Woningborg,5.0,195,Hellend dak afdichting,Kruipruimte ventilatie,Rioolstoringen
+Gelderland,Doetinchem,"Wehl, 's-Heerenberg, Gaanderen, Zelhem",6,€3.500,Doetinchem-West,Wehl,Gaanderen,4100,13,BouwGarant,5.4,390,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Bronckhorst,"Doetinchem, Zelhem, Hummelo",3,€3.300,Hummelo,Zelhem,Keppel,4100,13,BouwGarant,5.4,195,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
+Gelderland,Oude IJsselstreek,"Doetinchem, Netterden, Terborg",4,€3.400,Terborg,Netterden,Gaanderen,4100,13,BouwGarant,5.4,260,Draagconstructie afwijking,Riolering aansluitingen,CV-instelling
