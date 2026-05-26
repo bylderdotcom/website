@@ -321,6 +321,11 @@ body::before {
     grid-template-columns: 1fr 1fr !important;
   }
 }
+@media (max-width: 768px) {
+  #mijn-situatie > div > div[style*="grid-template-columns:repeat(3"] {
+    grid-template-columns: 1fr !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -334,6 +339,9 @@ body::before {
       <span class="font-bold text-lg tracking-tight" style="color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
     <div class="hidden md:flex items-center gap-8">
+      <a href="/nieuwbouw-koper/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Nieuwbouw</a>
+      <a href="/bestaande-bouw/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Bestaande bouw</a>
+      <a href="/renovatie/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Renovatie</a>
       <a href="#scan" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">QuickScan</a>
       <a href="#vouchers" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
       <a href="#features" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Features</a>
@@ -349,6 +357,9 @@ body::before {
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
+  <a href="/nieuwbouw-koper/">Nieuwbouw koper</a>
+  <a href="/bestaande-bouw/">Bestaande bouw</a>
+  <a href="/renovatie/">Renovatie</a>
   <a href="#scan">QuickScan</a>
   <a href="#vouchers">Vouchers</a>
   <a href="#features">Features</a>
@@ -473,6 +484,97 @@ body::before {
     <div class="w-px h-8" style="background:linear-gradient(to bottom,rgba(61,46,30,0.4),transparent);"></div>
   </div>
 </section>
+
+<!-- ══════════════════════════════════════════════
+     DRIEWEG SEGMENTATIE — Jouw situatie
+     ══════════════════════════════════════════════ -->
+<section style="padding:80px 5%;background:#F5F0E8;" id="mijn-situatie">
+  <div style="max-width:1140px;margin:0 auto;">
+
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:#3D5A3E;font-weight:700;margin-bottom:12px;">Jouw situatie</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:12px;">Welk type woning heb jij?</h2>
+      <p style="font-size:16px;color:rgba(61,46,30,0.55);max-width:520px;margin:0 auto;">Kies jouw situatie — Bylder leidt je direct naar de juiste begeleiding, tools en informatie.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <!-- NIEUWBOUW -->
+      <a href="/nieuwbouw-koper/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#3D5A3E';this.style.boxShadow='0 16px 48px rgba(61,46,30,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#3D5A3E,#4E7350);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏗️</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#3D5A3E;font-weight:700;margin-bottom:8px;">Nieuwbouw koper</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik heb een nieuwbouwwoning gekocht</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Meerwerklijst controleren, vouchers voor Auping en Goossens activeren, lichtplan bewaken en 5% depot regelen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Meerwerk AI-check (gem. €1.840 besparing)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Kortingsvouchers t.w.v. gem. €2.549</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> 8-fasen projectplanning met reminders</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Bekijk nieuwbouw begeleiding →
+          </div>
+        </div>
+      </a>
+
+      <!-- BESTAANDE BOUW -->
+      <a href="/bestaande-bouw/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#B85C38';this.style.boxShadow='0 16px 48px rgba(184,92,56,0.1)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#B85C38,#D4784A);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏡</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#B85C38;font-weight:700;margin-bottom:8px;">Bestaande bouw</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik koop een bestaande woning</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Offertes controleren voor schilder, gietvloer en badkamer. AI vergelijkt direct met marktprijzen — eerlijk of overpriced?</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> AI offerte analyse (60 seconden)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Referentieprijzen 40.000+ facturen</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Onderhandelingstekst per post</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#B85C38;color:#fff;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Analyseer mijn offerte →
+          </div>
+        </div>
+      </a>
+
+      <!-- RENOVATIE -->
+      <a href="/renovatie/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#C9A84C';this.style.boxShadow='0 16px 48px rgba(201,168,76,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#C9A84C,#DDB840);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🔨</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#C9A84C;font-weight:700;margin-bottom:8px;">Renovatiewoning</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik ga mijn woning grondig renoveren</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Totaalrenovatie begeleiden, aannemer matchen met SWK-garantie, budget live bewaken en budgetoverschrijding voorkomen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Kostentabel 2026 per m² en categorie</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Aannemer matching + SWK/Woningborg</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Live budget tracker met factuurscan</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#1A1208;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Plan mijn renovatie →
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- TRUST BALK -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:40px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(61,46,30,0.08);flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">⭐</span> 4.8/5 gemiddelde beoordeling</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">👥</span> 20.600+ kopers geholpen</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">💶</span> Eenmalig €99 — geen abonnement</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">🔒</span> 14 dagen geld-terug garantie</div>
+    </div>
+
+  </div>
+</section>
+<!-- ══ einde segmentatie sectie ══ -->
 
 <div class="warm-divider"></div>
 <div class="py-8" style="background:rgba(237,230,216,0.5);padding-left:5vw;padding-right:5vw;">
@@ -692,6 +794,97 @@ body::before {
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════════
+     DRIEWEG SEGMENTATIE — Jouw situatie
+     ══════════════════════════════════════════════ -->
+<section style="padding:80px 5%;background:#F5F0E8;" id="mijn-situatie">
+  <div style="max-width:1140px;margin:0 auto;">
+
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:#3D5A3E;font-weight:700;margin-bottom:12px;">Jouw situatie</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:12px;">Welk type woning heb jij?</h2>
+      <p style="font-size:16px;color:rgba(61,46,30,0.55);max-width:520px;margin:0 auto;">Kies jouw situatie — Bylder leidt je direct naar de juiste begeleiding, tools en informatie.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <!-- NIEUWBOUW -->
+      <a href="/nieuwbouw-koper/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#3D5A3E';this.style.boxShadow='0 16px 48px rgba(61,46,30,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#3D5A3E,#4E7350);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏗️</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#3D5A3E;font-weight:700;margin-bottom:8px;">Nieuwbouw koper</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik heb een nieuwbouwwoning gekocht</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Meerwerklijst controleren, vouchers voor Auping en Goossens activeren, lichtplan bewaken en 5% depot regelen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Meerwerk AI-check (gem. €1.840 besparing)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Kortingsvouchers t.w.v. gem. €2.549</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> 8-fasen projectplanning met reminders</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Bekijk nieuwbouw begeleiding →
+          </div>
+        </div>
+      </a>
+
+      <!-- BESTAANDE BOUW -->
+      <a href="/bestaande-bouw/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#B85C38';this.style.boxShadow='0 16px 48px rgba(184,92,56,0.1)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#B85C38,#D4784A);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏡</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#B85C38;font-weight:700;margin-bottom:8px;">Bestaande bouw</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik koop een bestaande woning</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Offertes controleren voor schilder, gietvloer en badkamer. AI vergelijkt direct met marktprijzen — eerlijk of overpriced?</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> AI offerte analyse (60 seconden)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Referentieprijzen 40.000+ facturen</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Onderhandelingstekst per post</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#B85C38;color:#fff;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Analyseer mijn offerte →
+          </div>
+        </div>
+      </a>
+
+      <!-- RENOVATIE -->
+      <a href="/renovatie/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#C9A84C';this.style.boxShadow='0 16px 48px rgba(201,168,76,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#C9A84C,#DDB840);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🔨</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#C9A84C;font-weight:700;margin-bottom:8px;">Renovatiewoning</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik ga mijn woning grondig renoveren</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Totaalrenovatie begeleiden, aannemer matchen met SWK-garantie, budget live bewaken en budgetoverschrijding voorkomen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Kostentabel 2026 per m² en categorie</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Aannemer matching + SWK/Woningborg</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Live budget tracker met factuurscan</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#1A1208;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Plan mijn renovatie →
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- TRUST BALK -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:40px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(61,46,30,0.08);flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">⭐</span> 4.8/5 gemiddelde beoordeling</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">👥</span> 20.600+ kopers geholpen</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">💶</span> Eenmalig €99 — geen abonnement</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">🔒</span> 14 dagen geld-terug garantie</div>
+    </div>
+
+  </div>
+</section>
+<!-- ══ einde segmentatie sectie ══ -->
+
 <div class="warm-divider"></div>
 
 <section id="vouchers" class="py-24" style="background:#EDE6D8;width:100%;">
@@ -871,6 +1064,97 @@ body::before {
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════════
+     DRIEWEG SEGMENTATIE — Jouw situatie
+     ══════════════════════════════════════════════ -->
+<section style="padding:80px 5%;background:#F5F0E8;" id="mijn-situatie">
+  <div style="max-width:1140px;margin:0 auto;">
+
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:#3D5A3E;font-weight:700;margin-bottom:12px;">Jouw situatie</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:12px;">Welk type woning heb jij?</h2>
+      <p style="font-size:16px;color:rgba(61,46,30,0.55);max-width:520px;margin:0 auto;">Kies jouw situatie — Bylder leidt je direct naar de juiste begeleiding, tools en informatie.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <!-- NIEUWBOUW -->
+      <a href="/nieuwbouw-koper/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#3D5A3E';this.style.boxShadow='0 16px 48px rgba(61,46,30,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#3D5A3E,#4E7350);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏗️</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#3D5A3E;font-weight:700;margin-bottom:8px;">Nieuwbouw koper</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik heb een nieuwbouwwoning gekocht</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Meerwerklijst controleren, vouchers voor Auping en Goossens activeren, lichtplan bewaken en 5% depot regelen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Meerwerk AI-check (gem. €1.840 besparing)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Kortingsvouchers t.w.v. gem. €2.549</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> 8-fasen projectplanning met reminders</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Bekijk nieuwbouw begeleiding →
+          </div>
+        </div>
+      </a>
+
+      <!-- BESTAANDE BOUW -->
+      <a href="/bestaande-bouw/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#B85C38';this.style.boxShadow='0 16px 48px rgba(184,92,56,0.1)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#B85C38,#D4784A);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏡</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#B85C38;font-weight:700;margin-bottom:8px;">Bestaande bouw</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik koop een bestaande woning</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Offertes controleren voor schilder, gietvloer en badkamer. AI vergelijkt direct met marktprijzen — eerlijk of overpriced?</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> AI offerte analyse (60 seconden)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Referentieprijzen 40.000+ facturen</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Onderhandelingstekst per post</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#B85C38;color:#fff;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Analyseer mijn offerte →
+          </div>
+        </div>
+      </a>
+
+      <!-- RENOVATIE -->
+      <a href="/renovatie/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#C9A84C';this.style.boxShadow='0 16px 48px rgba(201,168,76,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#C9A84C,#DDB840);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🔨</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#C9A84C;font-weight:700;margin-bottom:8px;">Renovatiewoning</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik ga mijn woning grondig renoveren</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Totaalrenovatie begeleiden, aannemer matchen met SWK-garantie, budget live bewaken en budgetoverschrijding voorkomen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Kostentabel 2026 per m² en categorie</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Aannemer matching + SWK/Woningborg</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Live budget tracker met factuurscan</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#1A1208;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Plan mijn renovatie →
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- TRUST BALK -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:40px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(61,46,30,0.08);flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">⭐</span> 4.8/5 gemiddelde beoordeling</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">👥</span> 20.600+ kopers geholpen</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">💶</span> Eenmalig €99 — geen abonnement</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">🔒</span> 14 dagen geld-terug garantie</div>
+    </div>
+
+  </div>
+</section>
+<!-- ══ einde segmentatie sectie ══ -->
+
 <div class="warm-divider"></div>
 
 <section id="features" class="py-24 grid-bg" style="width:100%;">
@@ -894,6 +1178,97 @@ body::before {
     </div>
   </div>
 </section>
+
+<!-- ══════════════════════════════════════════════
+     DRIEWEG SEGMENTATIE — Jouw situatie
+     ══════════════════════════════════════════════ -->
+<section style="padding:80px 5%;background:#F5F0E8;" id="mijn-situatie">
+  <div style="max-width:1140px;margin:0 auto;">
+
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:#3D5A3E;font-weight:700;margin-bottom:12px;">Jouw situatie</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:12px;">Welk type woning heb jij?</h2>
+      <p style="font-size:16px;color:rgba(61,46,30,0.55);max-width:520px;margin:0 auto;">Kies jouw situatie — Bylder leidt je direct naar de juiste begeleiding, tools en informatie.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <!-- NIEUWBOUW -->
+      <a href="/nieuwbouw-koper/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#3D5A3E';this.style.boxShadow='0 16px 48px rgba(61,46,30,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#3D5A3E,#4E7350);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏗️</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#3D5A3E;font-weight:700;margin-bottom:8px;">Nieuwbouw koper</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik heb een nieuwbouwwoning gekocht</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Meerwerklijst controleren, vouchers voor Auping en Goossens activeren, lichtplan bewaken en 5% depot regelen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Meerwerk AI-check (gem. €1.840 besparing)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Kortingsvouchers t.w.v. gem. €2.549</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> 8-fasen projectplanning met reminders</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Bekijk nieuwbouw begeleiding →
+          </div>
+        </div>
+      </a>
+
+      <!-- BESTAANDE BOUW -->
+      <a href="/bestaande-bouw/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#B85C38';this.style.boxShadow='0 16px 48px rgba(184,92,56,0.1)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#B85C38,#D4784A);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏡</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#B85C38;font-weight:700;margin-bottom:8px;">Bestaande bouw</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik koop een bestaande woning</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Offertes controleren voor schilder, gietvloer en badkamer. AI vergelijkt direct met marktprijzen — eerlijk of overpriced?</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> AI offerte analyse (60 seconden)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Referentieprijzen 40.000+ facturen</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Onderhandelingstekst per post</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#B85C38;color:#fff;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Analyseer mijn offerte →
+          </div>
+        </div>
+      </a>
+
+      <!-- RENOVATIE -->
+      <a href="/renovatie/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#C9A84C';this.style.boxShadow='0 16px 48px rgba(201,168,76,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#C9A84C,#DDB840);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🔨</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#C9A84C;font-weight:700;margin-bottom:8px;">Renovatiewoning</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik ga mijn woning grondig renoveren</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Totaalrenovatie begeleiden, aannemer matchen met SWK-garantie, budget live bewaken en budgetoverschrijding voorkomen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Kostentabel 2026 per m² en categorie</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Aannemer matching + SWK/Woningborg</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Live budget tracker met factuurscan</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#1A1208;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Plan mijn renovatie →
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- TRUST BALK -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:40px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(61,46,30,0.08);flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">⭐</span> 4.8/5 gemiddelde beoordeling</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">👥</span> 20.600+ kopers geholpen</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">💶</span> Eenmalig €99 — geen abonnement</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">🔒</span> 14 dagen geld-terug garantie</div>
+    </div>
+
+  </div>
+</section>
+<!-- ══ einde segmentatie sectie ══ -->
 
 <div class="warm-divider"></div>
 
@@ -1445,6 +1820,97 @@ function hpCalc(val) {
     </div>
   </div>
 </section>
+
+<!-- ══════════════════════════════════════════════
+     DRIEWEG SEGMENTATIE — Jouw situatie
+     ══════════════════════════════════════════════ -->
+<section style="padding:80px 5%;background:#F5F0E8;" id="mijn-situatie">
+  <div style="max-width:1140px;margin:0 auto;">
+
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:#3D5A3E;font-weight:700;margin-bottom:12px;">Jouw situatie</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:12px;">Welk type woning heb jij?</h2>
+      <p style="font-size:16px;color:rgba(61,46,30,0.55);max-width:520px;margin:0 auto;">Kies jouw situatie — Bylder leidt je direct naar de juiste begeleiding, tools en informatie.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <!-- NIEUWBOUW -->
+      <a href="/nieuwbouw-koper/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#3D5A3E';this.style.boxShadow='0 16px 48px rgba(61,46,30,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#3D5A3E,#4E7350);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏗️</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#3D5A3E;font-weight:700;margin-bottom:8px;">Nieuwbouw koper</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik heb een nieuwbouwwoning gekocht</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Meerwerklijst controleren, vouchers voor Auping en Goossens activeren, lichtplan bewaken en 5% depot regelen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Meerwerk AI-check (gem. €1.840 besparing)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> Kortingsvouchers t.w.v. gem. €2.549</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#3D5A3E;font-weight:700;">✓</span> 8-fasen projectplanning met reminders</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Bekijk nieuwbouw begeleiding →
+          </div>
+        </div>
+      </a>
+
+      <!-- BESTAANDE BOUW -->
+      <a href="/bestaande-bouw/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#B85C38';this.style.boxShadow='0 16px 48px rgba(184,92,56,0.1)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#B85C38,#D4784A);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🏡</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#B85C38;font-weight:700;margin-bottom:8px;">Bestaande bouw</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik koop een bestaande woning</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Offertes controleren voor schilder, gietvloer en badkamer. AI vergelijkt direct met marktprijzen — eerlijk of overpriced?</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> AI offerte analyse (60 seconden)</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Referentieprijzen 40.000+ facturen</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#B85C38;font-weight:700;">✓</span> Onderhandelingstekst per post</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#B85C38;color:#fff;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Analyseer mijn offerte →
+          </div>
+        </div>
+      </a>
+
+      <!-- RENOVATIE -->
+      <a href="/renovatie/" style="display:block;text-decoration:none;">
+        <div style="background:#fff;border:1.5px solid rgba(61,46,30,0.08);border-radius:20px;padding:36px 28px;height:100%;transition:all 0.25s;cursor:pointer;position:relative;overflow:hidden;"
+             onmouseover="this.style.borderColor='#C9A84C';this.style.boxShadow='0 16px 48px rgba(201,168,76,0.12)';this.style.transform='translateY(-4px)';"
+             onmouseout="this.style.borderColor='rgba(61,46,30,0.08)';this.style.boxShadow='none';this.style.transform='none';">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#C9A84C,#DDB840);"></div>
+          <div style="font-size:2.8rem;margin-bottom:16px;">🔨</div>
+          <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#C9A84C;font-weight:700;margin-bottom:8px;">Renovatiewoning</div>
+          <h3 style="font-size:1.4rem;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.01em;">Ik ga mijn woning grondig renoveren</h3>
+          <p style="font-size:14px;color:rgba(61,46,30,0.55);line-height:1.65;margin-bottom:20px;">Totaalrenovatie begeleiden, aannemer matchen met SWK-garantie, budget live bewaken en budgetoverschrijding voorkomen.</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:24px;">
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Kostentabel 2026 per m² en categorie</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Aannemer matching + SWK/Woningborg</div>
+            <div style="font-size:13px;color:rgba(61,46,30,0.65);display:flex;align-items:center;gap:6px;"><span style="color:#C9A84C;font-weight:700;">✓</span> Live budget tracker met factuurscan</div>
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#1A1208;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:700;">
+            Plan mijn renovatie →
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- TRUST BALK -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:40px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(61,46,30,0.08);flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">⭐</span> 4.8/5 gemiddelde beoordeling</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">👥</span> 20.600+ kopers geholpen</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">💶</span> Eenmalig €99 — geen abonnement</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.5);"><span style="color:#3D5A3E;font-weight:700;">🔒</span> 14 dagen geld-terug garantie</div>
+    </div>
+
+  </div>
+</section>
+<!-- ══ einde segmentatie sectie ══ -->
 
 <div class="warm-divider"></div>
 <footer style="padding:64px 0 36px;background:#1A1208;color:rgba(245,240,232,.8);">

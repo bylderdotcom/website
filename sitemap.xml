@@ -1998,4 +1998,26 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- ══════════════════════════════════════
+       FUNNEL PAGINA'S — toegevoegd 2026-05-26
+       ══════════════════════════════════════ -->
+  <url>
+    <loc>https://bylder.com/nieuwbouw-koper/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bylder.com/bestaande-bouw/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bylder.com/renovatie/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
