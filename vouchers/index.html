@@ -2,314 +2,433 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kortingsvouchers nieuwbouw — 10% bij 40+ woonmerken | Bylder</title>
 <meta name="description" content="Exclusieve kortingsvouchers voor kopers van een nieuwbouwwoning. 10% korting bij Auping, DRT Contemporary, Goossens, Tables by Tim, Whoon en 35+ andere merken. Gratis voor Bylder leden.">
-<link rel="canonical" href="https://www.bylder.com/vouchers/">
 <meta property="og:title" content="Kortingsvouchers nieuwbouw — 10% bij 40+ woonmerken | Bylder">
 <meta property="og:description" content="Exclusieve kortingsvouchers voor kopers van een nieuwbouwwoning. 10% korting bij Auping, DRT Contemporary, Goossens en meer.">
-<meta property="og:url" content="https://www.bylder.com/vouchers/">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Wat zijn Bylder vouchers?","acceptedAnswer":{"@type":"Answer","text":"Bylder vouchers zijn exclusieve kortingscodes waarmee kopers van een nieuwbouwwoning of renovatiewoning 10% korting krijgen bij 40+ woonmerken zoals Auping, Goossens en DRT Contemporary."}},
-{"@type":"Question","name":"Hoe claim ik een voucher?","acceptedAnswer":{"@type":"Answer","text":"Word Bylder lid voor €99 eenmalig, ga naar het voucher overzicht in jouw account en klik op activeren. Je ontvangt de kortingscode direct per e-mail."}},
-{"@type":"Question","name":"Hoeveel kan ik besparen met Bylder vouchers?","acceptedAnswer":{"@type":"Answer","text":"Bylder leden besparen gemiddeld €4.200 via het voucher ecosysteem. Op een afwerkingsbudget van €42.000 staat 10% collectieve korting voor €4.200 directe besparing."}},
-{"@type":"Question","name":"Zijn de vouchers cumuleerbaar?","acceptedAnswer":{"@type":"Answer","text":"Ja, je kunt meerdere vouchers activeren — één per merk. Zo bespaar je bij meerdere merken tegelijk op je totale inrichtingsbudget."}}
-]}
-</script>
+<meta property="og:url" content="https://bylder.com/vouchers/">
+<link rel="canonical" href="https://bylder.com/vouchers/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0;}
-body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.75;}
-h1,h2,h3{letter-spacing:-0.02em;color:#1A1208;}
-a{color:#3D5A3E;text-decoration:none;}
-a:hover{text-decoration:underline;}
-.container{max-width:1280px;margin:0 auto;padding:0 48px;}
-@media(max-width:768px){.container{padding:0 20px;}.grid-3{grid-template-columns:1fr!important;}.grid-2{grid-template-columns:1fr!important;}.desk-links{display:none!important;}.mob-btn{display:flex!important;}}
-.mob-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
-.mob-btn span{display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;}
-.mob-btn.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
-.mob-btn.open span:nth-child(2){opacity:0;}
-.mob-btn.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
-.mob-drawer{display:none;position:fixed;top:65px;left:0;right:0;background:rgba(245,240,232,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.1);padding:16px 20px;z-index:99;flex-direction:column;gap:4px;box-shadow:0 8px 32px rgba(61,46,30,0.1);}
-.mob-drawer.open{display:flex;}
-.mob-drawer a{display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);font-weight:500;}
-.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:999px;background:rgba(61,90,62,0.1);border:1px solid rgba(61,90,62,0.2);color:#3D5A3E;font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;}
-.voucher-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:22px;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;position:relative;}
-.voucher-card:hover{transform:translateY(-5px);box-shadow:0 20px 56px rgba(61,46,30,0.1);}
-.voucher-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;}
-.card-moss::before{background:linear-gradient(90deg,#3D5A3E,#4E7350);}
-.card-bark::before{background:linear-gradient(90deg,#1A1208,#4A3020);}
-.card-rust::before{background:linear-gradient(90deg,#B85C38,#D4845A);}
-.card-gold::before{background:linear-gradient(90deg,#C9A84C,#E8C56A);}
-.card-blue::before{background:linear-gradient(90deg,#4A7C8E,#6BA3B8);}
-.faq-item{border-bottom:1px solid rgba(61,46,30,0.08);padding:24px 0;}
-.faq-item:first-child{border-top:1px solid rgba(61,46,30,0.08);}
-.check-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
-.check-list li{display:flex;align-items:start;gap:10px;font-size:15px;color:rgba(61,46,30,0.7);}
-.check-list li::before{content:'✓';color:#3D5A3E;font-weight:800;flex-shrink:0;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --cream:#F5F0E8;--cream-2:#EDE6D8;
+  --bark:#1A1208;--bark-2:#3D2E1E;--bark-3:rgba(61,46,30,0.5);
+  --moss:#3D5A3E;--moss-2:#4E7350;
+  --rust:#B85C38;--gold:#C9A84C;
+  --white:#fff;--border:rgba(61,46,30,0.1);
+}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:var(--bark-2);line-height:1.65}
+/* ═══════════════════════════════════════════
+   BYLDER UNIVERSELE NAVIGATIE — v2.0
+   Gebruik op ALLE pagina's van bylder.com
+═══════════════════════════════════════════ */
+
+/* NAV BASIS */
+.glass-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(245,240,232,0.93);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(61,46,30,0.08);
+  height: 64px;
+  display: flex; align-items: center;
+}
+.nav-inner {
+  width: 100%; max-width: 1200px; margin: 0 auto;
+  padding: 0 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px;
+}
+
+/* LOGO */
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; flex-shrink: 0;
+}
+.nav-logo-icon {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: #3D5A3E;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 800;
+  font-family: 'Space Mono', monospace;
+  color: #F5F0E8;
+}
+.nav-logo span {
+  font-weight: 800; font-size: 17px;
+  letter-spacing: -0.02em; color: #1A1208;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.nav-logo .nav-logo-dot { color: #3D5A3E; }
+
+/* LINKS */
+.nav-links {
+  display: flex; align-items: center; gap: 4px;
+  flex: 1; justify-content: center;
+}
+.nav-link {
+  font-size: 14px; font-weight: 500;
+  color: rgba(61,46,30,0.55);
+  text-decoration: none; padding: 8px 12px;
+  border-radius: 8px;
+  transition: color 0.15s, background 0.15s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: none; border: none; cursor: pointer;
+  white-space: nowrap;
+}
+.nav-link:hover, .nav-link:focus {
+  color: #1A1208;
+  background: rgba(61,46,30,0.05);
+  outline: none;
+}
+.nav-link.active { color: #3D5A3E; font-weight: 600; }
+
+/* DROPDOWN */
+.nav-dropdown { position: relative; }
+.nav-dropdown-btn { display: flex; align-items: center; gap: 4px; }
+.nav-arrow { font-size: 10px; transition: transform 0.2s; }
+.nav-dropdown:hover .nav-arrow,
+.nav-dropdown:focus-within .nav-arrow { transform: rotate(180deg); }
+
+.nav-dropdown-menu {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid rgba(61,46,30,0.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(61,46,30,0.12);
+  padding: 8px;
+  min-width: 260px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.15s, transform 0.15s;
+  transform: translateX(-50%) translateY(-4px);
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 10px;
+  text-decoration: none; color: #3D2E1E;
+  transition: background 0.12s;
+}
+.nav-dropdown-item:hover { background: #F5F0E8; }
+.nav-dropdown-item .ndi-icon { font-size: 20px; flex-shrink: 0; }
+.nav-dropdown-item strong {
+  display: block; font-size: 13px; font-weight: 700;
+  color: #1A1208; margin-bottom: 1px;
+}
+.nav-dropdown-item span {
+  display: block; font-size: 11px; color: rgba(61,46,30,0.5);
+}
+
+/* CTA GROEP */
+.nav-cta-group {
+  display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+}
+.nav-login {
+  font-size: 13px; font-weight: 600;
+  color: rgba(61,46,30,0.5); text-decoration: none;
+  padding: 8px 12px; border-radius: 8px;
+  transition: color 0.15s;
+}
+.nav-login:hover { color: #1A1208; }
+
+/* PRIMAIRE CTA KNOP */
+.btn-primary {
+  background: #3D5A3E; color: #F5F0E8;
+  padding: 10px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+  transition: all 0.2s; border: none; cursor: pointer; white-space: nowrap;
+}
+.btn-primary:hover {
+  background: #4E7350;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(61,90,62,0.25);
+}
+
+/* HAMBURGER */
+.mobile-menu-btn {
+  display: none; flex-direction: column; justify-content: center;
+  gap: 5px; background: none; border: none; cursor: pointer;
+  padding: 8px; border-radius: 8px; width: 40px; height: 40px;
+}
+.mobile-menu-btn span {
+  display: block; height: 2px; width: 22px;
+  background: #3D2E1E; border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+  display: none; position: fixed;
+  top: 64px; left: 0; right: 0;
+  background: #fff;
+  border-bottom: 1px solid rgba(61,46,30,0.1);
+  box-shadow: 0 8px 32px rgba(61,46,30,0.1);
+  z-index: 99; flex-direction: column; padding: 12px 5% 20px;
+  max-height: calc(100vh - 64px); overflow-y: auto;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  padding: 13px 4px; font-size: 15px; font-weight: 500;
+  color: #3D2E1E; text-decoration: none;
+  border-bottom: 1px solid rgba(61,46,30,0.06);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.mobile-nav a:last-child { border-bottom: none; }
+.mobile-nav a:hover { color: #3D5A3E; }
+.mobile-nav .mobile-login {
+  color: rgba(61,46,30,0.5); font-size: 14px;
+}
+.mobile-nav .mobile-cta {
+  margin-top: 8px; background: #3D5A3E; color: #F5F0E8 !important;
+  padding: 13px 20px !important; border-radius: 10px;
+  font-weight: 700 !important; text-align: center;
+  border-bottom: none !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav-login { display: none; }
+  .mobile-menu-btn { display: flex; }
+}
+@media (max-width: 480px) {
+  .nav-cta-group .btn-primary { display: none; }
+}
+
+.container{max-width:1060px;margin:0 auto;padding:0 5%}
+.section{padding:80px 0}
+.s-label{font-size:11px;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.12em;color:var(--moss);font-weight:700;margin-bottom:10px}
+.s-title{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:var(--bark);letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px}
+.s-sub{font-size:17px;color:var(--bark-3);line-height:1.65;max-width:580px}
+.hero{padding:120px 0 72px;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--gold);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:20px}
+.hero h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:800;color:var(--bark);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px}
+.hero h1 em{color:var(--moss);font-style:normal}
+.hero-sub{font-size:17px;color:var(--bark-3);max-width:560px;margin:0 auto 40px;line-height:1.65}
+.hero-stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;padding:32px 0;border-top:1px solid var(--border)}
+.stat-val{font-size:2.2rem;font-weight:800;color:var(--bark);letter-spacing:-0.03em;font-family:"Space Mono",monospace;line-height:1}
+.stat-lbl{font-size:12px;color:var(--bark-3);margin-top:4px}
+.vouchers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.voucher-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:box-shadow 0.2s}
+.voucher-card:hover{box-shadow:0 8px 32px rgba(61,46,30,0.1)}
+.voucher-top{display:flex;align-items:center;gap:12px}
+.voucher-icon{width:48px;height:48px;border-radius:12px;background:var(--cream-2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.voucher-brand{font-size:15px;font-weight:800;color:var(--bark)}
+.voucher-cat{font-size:11px;color:var(--bark-3);margin-top:2px}
+.voucher-discount{font-size:2rem;font-weight:800;color:var(--moss);letter-spacing:-0.02em;font-family:"Space Mono",monospace}
+.voucher-desc{font-size:13px;color:var(--bark-2);line-height:1.6;flex:1}
+.voucher-footer{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--border);margin-top:auto}
+.voucher-validity{font-size:11px;color:var(--bark-3)}
+.voucher-btn{background:var(--moss);color:var(--cream);border:none;padding:8px 16px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;text-decoration:none;transition:background 0.15s}
+.voucher-btn:hover{background:var(--moss-2)}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.how-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:28px 24px;text-align:center}
+.how-num{width:40px;height:40px;background:var(--moss);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;font-family:"Space Mono",monospace;margin:0 auto 16px}
+.how-title{font-size:16px;font-weight:800;color:var(--bark);margin-bottom:8px;letter-spacing:-0.01em}
+.how-desc{font-size:14px;color:var(--bark-2);line-height:1.6}
+.faq-list{max-width:720px;margin:40px auto 0}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:15px;font-weight:700;color:var(--bark);background:none;border:none;cursor:pointer;text-align:left;font-family:"Plus Jakarta Sans",sans-serif;gap:16px}
+.faq-q:hover{color:var(--moss)}
+.faq-icon{font-size:18px;flex-shrink:0;transition:transform 0.2s}
+.faq-a{display:none;padding:0 0 18px;font-size:14px;color:var(--bark-2);line-height:1.7}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+.cta-section{background:var(--bark);padding:80px 0;text-align:center}
+.cta-section h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:var(--cream);letter-spacing:-0.03em;margin-bottom:14px}
+.cta-section p{font-size:16px;color:rgba(245,240,232,0.55);max-width:480px;margin:0 auto 32px;line-height:1.65}
+.btn-primary{background:var(--moss);color:var(--cream);padding:14px 32px;border-radius:12px;font-size:16px;font-weight:800;font-family:"Plus Jakarta Sans",sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--moss-2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(61,90,62,0.3)}
+footer{background:var(--bark);border-top:1px solid rgba(245,240,232,0.06);padding:32px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(245,240,232,0.35)}
+footer a{color:rgba(245,240,232,0.4);text-decoration:none}
+footer a:hover{color:rgba(245,240,232,0.8)}
+@media(max-width:900px){.vouchers-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:1fr}}
+@media(max-width:540px){.vouchers-grid{grid-template-columns:1fr}.hero-stats{gap:24px}}
 </style>
 </head>
 <body>
+<!-- ═══════════════════════════════════════════════════
+     BYLDER UNIVERSELE NAV — v3.0
+     Volgorde: Voordelen | Vouchers | Voor wie?▾ | Prijzen
+════════════════════════════════════════════════════ -->
+<nav class="glass-nav">
+  <div class="nav-inner">
 
-<!-- NAV -->
-<nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:100;padding:16px 0;">
-  <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
-      <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+    <!-- LOGO -->
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">B.</div>
+      <span>Bylder<span class="nav-logo-dot">.com</span></span>
     </a>
-    <div class="bylder-desk-nav" style="display:flex;align-items:center;gap:28px;">
-      <a href="/#scan" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">QuickScan</a>
-      <a href="/vouchers/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
-      <a href="/#features" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Features</a>
-      <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kopersbegeleider</a>
-      <a href="https://mijn.bylder.com" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Inloggen</a>
-      <a href="https://mijn.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="nav-links">
+      <a href="/#features" class="nav-link">Voordelen</a>
+      <a href="/vouchers/" class="nav-link">Vouchers</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-btn">Voor wie? <span class="nav-arrow">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="/nieuwbouw-koper/" class="nav-dropdown-item">
+            <span class="ndi-icon">🏡</span>
+            <div><strong>Nieuwbouwkoper</strong><span>Meerwerklijst, vouchers, planning</span></div>
+          </a>
+          <a href="/bestaande-bouw/" class="nav-dropdown-item">
+            <span class="ndi-icon">🏠</span>
+            <div><strong>Bestaande bouw koper</strong><span>Offerte-check, aannemer matching</span></div>
+          </a>
+          <a href="/renovatie/" class="nav-dropdown-item">
+            <span class="ndi-icon">🔨</span>
+            <div><strong>Renovatiewoning</strong><span>Budgettool, subsidies, planning</span></div>
+          </a>
+        </div>
+      </div>
+
+      <a href="/prijzen/" class="nav-link">Prijzen</a>
     </div>
-    <button class="bylder-mob-btn" id="bMobBtn" onclick="bToggle()" aria-label="Menu" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;">
-      <span style="display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;"></span>
-      <span style="display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;"></span>
-      <span style="display:block;width:22px;height:2px;background:#1A1208;border-radius:2px;transition:all 0.3s;"></span>
-    </button>
+
+    <!-- CTA GROEP -->
+    <div class="nav-cta-group">
+      <a href="https://app.bylder.com" class="nav-login">Inloggen</a>
+      <a href="/betalen/" class="btn-primary">Start gratis →</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobile()" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
   </div>
 </nav>
-<div id="bMobDrawer" style="display:none;position:fixed;top:65px;left:0;right:0;background:rgba(245,240,232,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.1);padding:16px 20px;z-index:99;flex-direction:column;gap:4px;box-shadow:0 8px 32px rgba(61,46,30,0.1);">
-  <a href="/" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">Home</a>
-  <a href="/#scan" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">QuickScan</a>
-  <a href="/vouchers/" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">Vouchers</a>
-  <a href="/kopersbegeleiding-nieuwbouw/" style="display:block;padding:11px 16px;border-radius:10px;font-size:15px;color:rgba(61,46,30,0.7);text-decoration:none;font-weight:500;">Kopersbegeleider</a>
-  <a href="https://mijn.bylder.com" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:11px 16px;border-radius:10px;font-weight:700;margin-top:6px;text-align:center;text-decoration:none;">Start gratis →</a>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="/#features">Voordelen</a>
+  <a href="/vouchers/">Vouchers</a>
+  <a href="/nieuwbouw-koper/">🏡 Nieuwbouwkoper</a>
+  <a href="/bestaande-bouw/">🏠 Bestaande bouw koper</a>
+  <a href="/renovatie/">🔨 Renovatiewoning</a>
+  <a href="/prijzen/">Prijzen</a>
+  <a href="https://app.bylder.com" class="mobile-login">Inloggen</a>
+  <a href="/betalen/" class="mobile-cta">Start gratis →</a>
 </div>
-<style>
-@media(max-width:768px){
-  .bylder-desk-nav{display:none!important;}
-  .bylder-mob-btn{display:flex!important;}
-}
-</style>
-<script>
-function bToggle(){
-  var d=document.getElementById('bMobDrawer');
-  d.style.display=d.style.display==='flex'?'none':'flex';
-  d.style.flexDirection='column';
-}
-</script>
-<!-- HERO -->
-<section style="background:#1A1208;padding:80px 0 64px;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 50%,rgba(61,90,62,0.25) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(184,92,56,0.12) 0%,transparent 60%);"></div>
-  <div style="position:absolute;inset:0;opacity:0.04;background-image:linear-gradient(rgba(245,240,232,1) 1px,transparent 1px),linear-gradient(90deg,rgba(245,240,232,1) 1px,transparent 1px);background-size:48px 48px;"></div>
-  <div class="container" style="position:relative;z-index:2;">
-    <p style="font-size:13px;color:rgba(245,240,232,0.35);margin-bottom:24px;font-family:'Space Mono',monospace;">
-      <a href="/" style="color:rgba(245,240,232,0.35);">Bylder.com</a> → Vouchers
-    </p>
-    <div class="badge" style="background:rgba(61,90,62,0.25);border-color:rgba(61,90,62,0.4);color:#8AAE8B;margin-bottom:24px;">
-      <span style="width:6px;height:6px;border-radius:50%;background:#8AAE8B;display:inline-block;"></span>
-      Voucher Hub — 40+ merken
-    </div>
-    <h1 style="font-size:clamp(2.2rem,4vw,3.6rem);font-weight:800;color:#F5F0E8;margin-bottom:16px;line-height:1.1;">
-      Exclusieve kortingen voor<br><span style="color:#8AAE8B;font-style:italic;font-weight:300;">nieuwbouwkopers</span>
-    </h1>
-    <p style="font-size:17px;color:rgba(245,240,232,0.55);max-width:560px;line-height:1.8;margin-bottom:40px;">
-      10% collectieve korting bij 40+ woonmerken — van bedden en vloeren tot meubels en verlichting. Eén Bylder lidmaatschap, alle voordelen direct geactiveerd.
-    </p>
-    <div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:40px;">
-      <div><div style="font-size:2.4rem;font-weight:800;color:#8AAE8B;letter-spacing:-0.04em;line-height:1;">€4.200</div><div style="font-size:12px;color:rgba(245,240,232,0.35);font-family:'Space Mono',monospace;text-transform:uppercase;margin-top:4px;">Gem. besparing per lid</div></div>
-      <div><div style="font-size:2.4rem;font-weight:800;color:#F5F0E8;letter-spacing:-0.04em;line-height:1;">40+</div><div style="font-size:12px;color:rgba(245,240,232,0.35);font-family:'Space Mono',monospace;text-transform:uppercase;margin-top:4px;">Partnermerken</div></div>
-      <div><div style="font-size:2.4rem;font-weight:800;color:#D4845A;letter-spacing:-0.04em;line-height:1;">10%</div><div style="font-size:12px;color:rgba(245,240,232,0.35);font-family:'Space Mono',monospace;text-transform:uppercase;margin-top:4px;">Korting per merk</div></div>
-    </div>
-    <a href="https://mijn.bylder.com" style="display:inline-flex;align-items:center;gap:8px;background:#F5F0E8;color:#3D5A3E;padding:14px 28px;border-radius:10px;font-weight:800;font-size:15px;">
-      <i class="fa-solid fa-tag" style="font-size:13px;"></i> Claim jouw vouchers
-    </a>
-  </div>
-</section>
 
-<!-- VOUCHER KAARTEN -->
-<section style="padding:80px 0;background:#F5F0E8;">
+<script>
+function toggleMobile() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+document.querySelectorAll('.mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.remove('open');
+  });
+});
+</script>
+<section class="hero">
   <div class="container">
-    <div style="text-align:center;margin-bottom:52px;">
-      <h2 style="font-size:2rem;font-weight:800;margin-bottom:12px;">Bekende merken, directe korting</h2>
-      <p style="font-size:16px;color:rgba(61,46,30,0.55);max-width:520px;margin:0 auto;">Klik op een merk voor meer informatie en om de voucher te activeren.</p>
-    </div>
-    <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;">
-
-      <a href="/vouchers/auping/" class="voucher-card card-moss" style="padding:32px;display:block;">
-        <div style="font-size:2rem;margin-bottom:14px;">🛏️</div>
-        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);margin-bottom:8px;">Slaapkamer & Matrassen</div>
-        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;">Auping</h3>
-        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.65;margin-bottom:16px;">10% op het volledige Auping assortiment. Bedden, boxsprings en matrassen van topkwaliteit.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;">
-          <div style="font-size:2rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">10%</div>
-          <span style="font-size:13px;color:#3D5A3E;font-weight:700;">Bekijk voucher →</span>
-        </div>
-      </a>
-
-      <a href="/vouchers/drt-contemporary/" class="voucher-card card-bark" style="padding:32px;display:block;">
-        <div style="font-size:2rem;margin-bottom:14px;">🪨</div>
-        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);margin-bottom:8px;">Design Vloeren</div>
-        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;">DRT Contemporary</h3>
-        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.65;margin-bottom:16px;">10% op gietvloer en premium PVC-vloeren, inclusief gratis opmeting aan huis.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;">
-          <div style="font-size:2rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">10%</div>
-          <span style="font-size:13px;color:#3D5A3E;font-weight:700;">Bekijk voucher →</span>
-        </div>
-      </a>
-
-      <a href="/vouchers/goossens/" class="voucher-card card-rust" style="padding:32px;display:block;">
-        <div style="font-size:2rem;margin-bottom:14px;">🛋️</div>
-        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);margin-bottom:8px;">Meubels & Wonen</div>
-        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;">Goossens</h3>
-        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.65;margin-bottom:16px;">10% op banken, tafels, kasten en keukens. Een van Nederlands grootste woonwarenhuizen.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;">
-          <div style="font-size:2rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">10%</div>
-          <span style="font-size:13px;color:#3D5A3E;font-weight:700;">Bekijk voucher →</span>
-        </div>
-      </a>
-
-      <a href="/vouchers/tables-by-tim/" class="voucher-card card-gold" style="padding:32px;display:block;">
-        <div style="font-size:2rem;margin-bottom:14px;">🪵</div>
-        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);margin-bottom:8px;">Maatwerk Meubels</div>
-        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;">Tables by Tim</h3>
-        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.65;margin-bottom:16px;">10% op handgemaakte eettafels van massief eiken en walnoot. Inclusief gratis opmeetafspraak.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;">
-          <div style="font-size:2rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">10%</div>
-          <span style="font-size:13px;color:#3D5A3E;font-weight:700;">Bekijk voucher →</span>
-        </div>
-      </a>
-
-      <a href="/vouchers/whoon/" class="voucher-card card-blue" style="padding:32px;display:block;">
-        <div style="font-size:2rem;margin-bottom:14px;">🪴</div>
-        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);margin-bottom:8px;">Wonen & Lifestyle</div>
-        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;">Whoon</h3>
-        <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.65;margin-bottom:16px;">10% op verlichting, meubels en woonaccessoires. De online woonwinkel voor mensen met smaak.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;">
-          <div style="font-size:2rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">10%</div>
-          <span style="font-size:13px;color:#3D5A3E;font-weight:700;">Bekijk voucher →</span>
-        </div>
-      </a>
-
-      <!-- Meer merken kaart -->
-      <div style="background:rgba(61,46,30,0.04);border:2px dashed rgba(61,46,30,0.12);border-radius:22px;padding:32px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-        <div style="font-size:2rem;margin-bottom:14px;">+35</div>
-        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:8px;color:#1A1208;">Meer merken</h3>
-        <p style="font-size:13px;color:rgba(61,46,30,0.5);line-height:1.65;margin-bottom:16px;">Vloeren, verlichting, gordijnen, keukens, verzekeringen en meer — inbegrepen bij Bylder.</p>
-        <a href="https://mijn.bylder.com" style="display:inline-flex;align-items:center;gap:6px;background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;">Alle vouchers bekijken →</a>
-      </div>
-
-    </div>
-
-    <!-- Hoe werkt het -->
-    <div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:24px;padding:48px;margin-bottom:48px;">
-      <h2 style="font-size:1.6rem;font-weight:800;margin-bottom:32px;text-align:center;">Hoe claim je een voucher?</h2>
-      <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-        <div style="text-align:center;">
-          <div style="width:48px;height:48px;background:#3D5A3E;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:16px;margin:0 auto 16px;">01</div>
-          <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Word Bylder lid</h3>
-          <p style="font-size:14px;color:rgba(61,46,30,0.6);line-height:1.7;">Registreer voor €99 eenmalig — geen abonnement, geen verborgen kosten.</p>
-        </div>
-        <div style="text-align:center;">
-          <div style="width:48px;height:48px;background:#3D5A3E;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:16px;margin:0 auto 16px;">02</div>
-          <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Activeer de voucher</h3>
-          <p style="font-size:14px;color:rgba(61,46,30,0.6);line-height:1.7;">Klik op activeren bij het gewenste merk. Je ontvangt de kortingscode direct per e-mail.</p>
-        </div>
-        <div style="text-align:center;">
-          <div style="width:48px;height:48px;background:#3D5A3E;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:16px;margin:0 auto 16px;">03</div>
-          <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Bespaar direct</h3>
-          <p style="font-size:14px;color:rgba(61,46,30,0.6);line-height:1.7;">Gebruik de code online of in de winkel. 10% korting wordt direct verwerkt bij afrekenen.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- USP's -->
-    <div class="grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:48px;">
-      <div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:20px;padding:32px;">
-        <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:16px;">Waarom 10% collectieve korting?</h2>
-        <p style="font-size:15px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:16px;">Bylder onderhandelt als collectief namens duizenden kopers bij partnermerken. Door de bundeling van koopkracht realiseren we kortingen die individuele kopers nooit zouden krijgen.</p>
-        <p style="font-size:15px;color:rgba(61,46,30,0.65);line-height:1.8;">Op een totaal afwerkingsbudget van €42.000 staat 10% collectieve korting voor <strong style="color:#3D5A3E;">€4.200 directe besparing</strong> — meer dan 40x de kosten van het lidmaatschap.</p>
-      </div>
-      <div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:20px;padding:32px;">
-        <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:16px;">Wat zit er inbegrepen?</h2>
-        <ul class="check-list">
-          <li>10% korting bij 40+ partnermerken</li>
-          <li>Één kortingscode per merk — direct per e-mail</li>
-          <li>Geldig voor nieuwbouw én renovatiekopers</li>
-          <li>Meerdere vouchers tegelijk activeren</li>
-          <li>Geen minimumbesteding tenzij anders vermeld</li>
-          <li>AI Kopersbegeleider inbegrepen</li>
-          <li>QuickScan documenten analyse inbegrepen</li>
-        </ul>
-      </div>
+    <div class="hero-badge">🏷️ Exclusieve kortingen</div>
+    <h1>Bespaar <em>gemiddeld €4.200</em><br>op je inrichting &amp; verbouwing</h1>
+    <p class="hero-sub">Exclusieve kortingsvouchers bij 40+ woonmerken — direct actief na je Bylder lidmaatschap. Eenmalig €99.</p>
+    <a href="/betalen/" class="btn-primary" style="margin:0 auto 40px;display:inline-flex;">Vouchers activeren voor €99 →</a>
+    <div class="hero-stats">
+      <div><div class="stat-val">€4.200</div><div class="stat-lbl">Gem. besparing per lid</div></div>
+      <div><div class="stat-val">40+</div><div class="stat-lbl">Partnermerken</div></div>
+      <div><div class="stat-val">12.400+</div><div class="stat-lbl">Actieve leden</div></div>
+      <div><div class="stat-val">€99</div><div class="stat-lbl">Eenmalig lidmaatschap</div></div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section style="padding:64px 0;background:#EDE6D8;">
-  <div class="container" style="max-width:800px;">
-    <div style="text-align:center;margin-bottom:40px;">
-      <div class="badge" style="margin-bottom:16px;">Veelgestelde vragen</div>
-      <h2 style="font-size:1.8rem;font-weight:800;">Alles over Bylder vouchers</h2>
-    </div>
-    <div>
-      <div class="faq-item">
-        <h3 style="font-size:16px;font-weight:700;color:#1A1208;margin-bottom:10px;">Wat zijn Bylder vouchers?</h3>
-        <p style="font-size:14px;color:rgba(61,46,30,0.65);line-height:1.8;">Bylder vouchers zijn exclusieve kortingscodes waarmee kopers van een nieuwbouwwoning of renovatiewoning 10% korting krijgen bij 40+ woonmerken. Ze zijn inbegrepen bij het Bylder lidmaatschap van €99 eenmalig.</p>
-      </div>
-      <div class="faq-item">
-        <h3 style="font-size:16px;font-weight:700;color:#1A1208;margin-bottom:10px;">Zijn de vouchers cumuleerbaar?</h3>
-        <p style="font-size:14px;color:rgba(61,46,30,0.65);line-height:1.8;">Ja — je kunt meerdere vouchers activeren, één per merk. Je kunt dus tegelijk besparen bij Auping, DRT Contemporary en Goossens. Elke voucher wordt apart per e-mail bezorgd.</p>
-      </div>
-      <div class="faq-item">
-        <h3 style="font-size:16px;font-weight:700;color:#1A1208;margin-bottom:10px;">Zijn de vouchers ook geldig bij renovatie?</h3>
-        <p style="font-size:14px;color:rgba(61,46,30,0.65);line-height:1.8;">Ja. Bylder vouchers zijn geldig voor zowel kopers van een nieuwbouwwoning als mensen die een renovatie plannen. Je hoeft geen nieuwbouwwoning te kopen om gebruik te maken van de kortingen.</p>
-      </div>
-      <div class="faq-item">
-        <h3 style="font-size:16px;font-weight:700;color:#1A1208;margin-bottom:10px;">Hoe lang zijn de vouchers geldig?</h3>
-        <p style="font-size:14px;color:rgba(61,46,30,0.65);line-height:1.8;">Vouchers zijn geldig zolang je Bylder lid bent. Eenmaal geactiveerde codes hebben een geldigheidsduur die per merk verschilt — doorgaans 6-12 maanden na activering. De exacte geldigheid staat vermeld op de voucherpagina van elk merk.</p>
-      </div>
-      <div class="faq-item">
-        <h3 style="font-size:16px;font-weight:700;color:#1A1208;margin-bottom:10px;">Hoeveel kan ik besparen?</h3>
-        <p style="font-size:14px;color:rgba(61,46,30,0.65);line-height:1.8;">Bylder leden besparen gemiddeld €4.200 via het voucher ecosysteem. Op een afwerkingsbudget van €42.000 staat 10% collectieve korting voor €4.200 directe besparing — meer dan 40x de kosten van het lidmaatschap.</p>
-      </div>
+<section class="section" style="background:var(--white);padding-top:0">
+  <div class="container">
+    <div class="s-label">Slaap &amp; Meubelen</div>
+    <h2 class="s-title">Slaapkamer, meubels &amp; wonen</h2>
+    <div class="vouchers-grid">
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🛏️</div><div><div class="voucher-brand">Auping</div><div class="voucher-cat">Slaapkamer &amp; matrassen</div></div></div><div class="voucher-discount">10%</div><div class="voucher-desc">Geldig bij Auping Rotterdam Centrum, Den Haag Centrum en Zoetermeer. Inclusief gratis leenbed tijdens levertijd.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🛋️</div><div><div class="voucher-brand">Goossens Den Bosch</div><div class="voucher-cat">Meubelen &amp; wonen</div></div></div><div class="voucher-discount">10%</div><div class="voucher-desc">Winkelkorting + gratis 2D woonadviesdienst. Op alle banken, tafels, kasten en woonaccessoires.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🪑</div><div><div class="voucher-brand">Tylko</div><div class="voucher-cat">Maatwerk kasten</div></div></div><div class="voucher-discount">€250</div><div class="voucher-desc">€250 korting bij besteding vanaf €800. Op maatwerk kasten, wandmeubels en boekenkasten.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🪵</div><div><div class="voucher-brand">Tables by Tim</div><div class="voucher-cat">Maatwerk eettafels</div></div></div><div class="voucher-discount">€125</div><div class="voucher-desc">€125 korting op handgemaakte eettafels van massief eiken en walnoot. Gratis opmeetafspraak inbegrepen.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">💆</div><div><div class="voucher-brand">HelloChair</div><div class="voucher-cat">Ergonomische stoelen</div></div></div><div class="voucher-discount">10–15%</div><div class="voucher-desc">10% korting webshop, 15% in de winkel. Op alle ergonomische bureaustoelen en loungestoelen.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🏡</div><div><div class="voucher-brand">Kave Home</div><div class="voucher-cat">Design meubelen</div></div></div><div class="voucher-discount">10%</div><div class="voucher-desc">Op het volledige online assortiment van Kave Home. Moderne design meubels voor elke kamer.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section style="background:#1A1208;padding:80px 0;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(61,90,62,0.2) 0%,transparent 70%);"></div>
-  <div class="container" style="position:relative;z-index:2;text-align:center;">
-    <h2 style="font-size:2.2rem;font-weight:800;color:#F5F0E8;margin-bottom:14px;">Alle 40+ vouchers voor €99 eenmalig</h2>
-    <p style="font-size:17px;color:rgba(245,240,232,0.5);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.8;">Geen abonnement, geen verborgen kosten. Eén keer lid worden en direct toegang tot het volledige voucher ecosysteem én de AI Kopersbegeleider.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://mijn.bylder.com" style="display:inline-flex;align-items:center;gap:8px;background:#F5F0E8;color:#3D5A3E;padding:14px 28px;border-radius:10px;font-weight:800;font-size:15px;">
-        <i class="fa-solid fa-tag"></i> Word Bylder lid
-      </a>
-      <a href="/kopersbegeleiding-nieuwbouw/" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(245,240,232,0.65);padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;border:1.5px solid rgba(245,240,232,0.2);">
-        Meer over kopersbegeleiding →
-      </a>
+<section class="section" style="background:var(--cream-2)">
+  <div class="container">
+    <div class="s-label">Vloeren &amp; Wandafwerking</div>
+    <h2 class="s-title">Vloeren, tegels &amp; stucwerk</h2>
+    <div class="vouchers-grid">
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🪨</div><div><div class="voucher-brand">DRT Contemporary</div><div class="voucher-cat">Gietvloer &amp; PVC vloeren</div></div></div><div class="voucher-discount">10%</div><div class="voucher-desc">Op gietvloeren en premium PVC-vloeren bij DRT Den Bosch. Inclusief gratis opmeting aan huis.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🪵</div><div><div class="voucher-brand">Parketgigant Zaandam</div><div class="voucher-cat">Parket &amp; laminaat</div></div></div><div class="voucher-discount">25%</div><div class="voucher-desc">25% korting op parket en laminaat. Grootste assortiment van Nederland inclusief legservice.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🎨</div><div><div class="voucher-brand">Graham &amp; Brown</div><div class="voucher-cat">Behang &amp; verf</div></div></div><div class="voucher-discount">10%</div><div class="voucher-desc">Op het volledige behang en verf assortiment. Inclusief gratis stalenservice aan huis.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🏗️</div><div><div class="voucher-brand">Super-stuc.nl</div><div class="voucher-cat">Stucwerk materialen</div></div></div><div class="voucher-discount">€1/m²</div><div class="voucher-desc">€1,- korting per m² op stucwerkmaterialen. Direct te bestellen online, levertijd 2-3 werkdagen.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🪟</div><div><div class="voucher-brand">Solza</div><div class="voucher-cat">Vloeren online</div></div></div><div class="voucher-discount">10%</div><div class="voucher-desc">Op laminaat, pvc en vinyl vloeren. Groot online assortiment met snelle levering.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🏠</div><div><div class="voucher-brand">Laminaatpaleis Ede</div><div class="voucher-cat">Laminaat &amp; vinyl</div></div></div><div class="voucher-discount">Gratis legservice</div><div class="voucher-desc">Gratis plakservice bij aankoop van laminaat of vinyl vloer. Geldig in de winkel Ede.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer style="background:#1A1208;padding:32px 0;border-top:1px solid rgba(245,240,232,0.06);">
-  <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
-    <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">© 2025 Bylder Nederland B.V. — KvK 65020006</p>
-    <div style="display:flex;gap:20px;flex-wrap:wrap;">
-      <a href="/blog/" style="font-size:12px;color:rgba(245,240,232,0.25);font-family:'Space Mono',monospace;">Blog</a>
-      <a href="/over-ons/" style="font-size:12px;color:rgba(245,240,232,0.25);font-family:'Space Mono',monospace;">Over ons</a>
-      <a href="/partners/" style="font-size:12px;color:rgba(245,240,232,0.25);font-family:'Space Mono',monospace;">Partners</a>
-      <a href="/privacy/" style="font-size:12px;color:rgba(245,240,232,0.25);font-family:'Space Mono',monospace;">Privacy</a>
-      <a href="/algemene-voorwaarden/" style="font-size:12px;color:rgba(245,240,232,0.25);font-family:'Space Mono',monospace;">Voorwaarden</a>
+<section class="section" style="background:var(--white)">
+  <div class="container">
+    <div class="s-label">Sanitair &amp; Raamdecoratie</div>
+    <h2 class="s-title">Badkamer, keuken &amp; raamdecoratie</h2>
+    <div class="vouchers-grid">
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🚿</div><div><div class="voucher-brand">Sanitairwinkel</div><div class="voucher-cat">Sanitair online &amp; showroom</div></div></div><div class="voucher-discount">5–10%</div><div class="voucher-desc">5% korting webshop, 10% in de winkel Rosmalen. Op alle sanitair, douches en badkamers.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🪟</div><div><div class="voucher-brand">De Bossche Tapijtschuur</div><div class="voucher-cat">Raamdecoratie &amp; gordijnen</div></div></div><div class="voucher-discount">15%</div><div class="voucher-desc">Op het volledige assortiment gordijnen, vitrages en raamdecoratie. Den Bosch showroom.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">💡</div><div><div class="voucher-brand">Lampenlicht Breda/Eindhoven</div><div class="voucher-cat">Verlichting</div></div></div><div class="voucher-discount">20%</div><div class="voucher-desc">20% korting op het volledige verlichtingsassortiment in de winkels Breda en Eindhoven.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🚪</div><div><div class="voucher-brand">Topdeuren Veldhoven</div><div class="voucher-cat">Binnendeuren</div></div></div><div class="voucher-discount">10%</div><div class="voucher-desc">Op alle binnendeuren, kozijnen en deurbeslag. Showroom in Veldhoven, ook online te bestellen.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">🏗️</div><div><div class="voucher-brand">Debouwmarktshop.nl</div><div class="voucher-cat">Bouwmaterialen online</div></div></div><div class="voucher-discount">3–15%</div><div class="voucher-desc">3% op bouwmaterialen, 5% op deuren/gevels, 15% op vloeren/tegels. Groot online assortiment.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
+      <div class="voucher-card"><div class="voucher-top"><div class="voucher-icon">📦</div><div><div class="voucher-brand">Eduard Strang Verhuizingen</div><div class="voucher-cat">Verhuisservice</div></div></div><div class="voucher-discount">10 gratis dozen</div><div class="voucher-desc">10 gratis verhuisdozen + gratis inboedelverzekering tijdens de verhuizing. Noord-Nederland.</div><div class="voucher-footer"><span class="voucher-validity">t/m 31 dec 2026</span><a href="/betalen/" class="voucher-btn">Activeren</a></div></div>
     </div>
   </div>
+</section>
+
+<section class="section" style="background:var(--cream-2)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:0">
+      <div class="s-label" style="text-align:center">Hoe werkt het</div>
+      <h2 class="s-title" style="text-align:center;max-width:100%">Vouchers activeren in 3 stappen</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-card"><div class="how-num">1</div><div class="how-title">Word Bylder lid</div><div class="how-desc">Betaal eenmalig €99. Geen abonnement, geen automatische verlengingen. Direct toegang tot alle vouchers.</div></div>
+      <div class="how-card"><div class="how-num">2</div><div class="how-title">Activeer je voucher</div><div class="how-desc">Log in op app.bylder.com, kies het gewenste merk en klik activeren. Je kortingscode arriveert direct per e-mail.</div></div>
+      <div class="how-card"><div class="how-num">3</div><div class="how-title">Bespaar direct</div><div class="how-desc">Gebruik de code online of laat hem zien in de winkel. De korting wordt direct verwerkt bij het afrekenen.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--white)">
+  <div class="container">
+    <div style="text-align:center"><div class="s-label">Vragen</div><h2 class="s-title">Veelgestelde vragen over vouchers</h2></div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Zijn de vouchers cumuleerbaar?<span class="faq-icon">+</span></button><div class="faq-a">Ja — je kunt meerdere vouchers tegelijk activeren, één per merk. Je kunt dus tegelijk besparen bij Auping, DRT Contemporary en Goossens. Elke voucher wordt apart per e-mail bezorgd met je persoonlijke kortingscode.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Zijn de vouchers ook geldig bij renovatie, niet alleen nieuwbouw?<span class="faq-icon">+</span></button><div class="faq-a">Ja. Bylder vouchers zijn geldig voor zowel kopers van een nieuwbouwwoning als mensen die een bestaande woning hebben gekocht of grondig renoveren. Je hoeft geen nieuwbouwwoning te kopen om gebruik te maken van alle kortingen.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Hoe lang zijn de vouchers geldig na activering?<span class="faq-icon">+</span></button><div class="faq-a">Eenmaal geactiveerde codes hebben een geldigheidsduur die per merk verschilt — doorgaans 6 tot 12 maanden na activering. De exacte geldigheidsdatum staat vermeld in de bevestigingsmail en in je Bylder account.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Wat is de gratis leenbed service bij Auping?<span class="faq-icon">+</span></button><div class="faq-a">Auping levert maatwerk boxsprings met een levertijd van 6-12 weken. Bylder-leden mogen gratis een leenbed gebruiken tijdens de wachttijd, zodat je niet op de grond hoeft te slapen na je verhuizing. Dit is exclusief beschikbaar bij Auping Rotterdam Centrum, Den Haag Centrum en Zoetermeer.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Activeer alle 40+ vouchers</h2>
+    <p>Eenmalig €99. Direct toegang tot alle kortingsvouchers én de AI-kopersbegeleider.</p>
+    <a href="/betalen/" class="btn-primary">Activeer mijn vouchers →</a>
+    <div style="margin-top:16px;font-size:13px;color:rgba(245,240,232,0.35);font-family:'Space Mono',monospace">⭐ 4.8/5 · 12.400+ leden · 14 dagen geld-terug garantie</div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Bylder Nederland B.V. · KvK 65020006</div>
+  <div><a href="/privacy/">Privacy</a> · <a href="/algemene-voorwaarden/">Voorwaarden</a> · <a href="/nieuwbouw-gids/">Gidsen</a> · <a href="/tools/">Tools</a> · <a href="mailto:info@bylder.com">Contact</a></div>
 </footer>
-
-<script>
-function tMob(){document.getElementById('mBtn').classList.toggle('open');document.getElementById('mDrw').classList.toggle('open');}
-document.querySelectorAll('.mob-drawer a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('mBtn').classList.remove('open');document.getElementById('mDrw').classList.remove('open');}));
-</script>
+<script>function toggleFaq(btn){btn.parentElement.classList.toggle("open")}</script>
 </body>
 </html>
