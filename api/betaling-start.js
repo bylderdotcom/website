@@ -1,7 +1,8 @@
 // api/betaling-start.js
-// Vercel Serverless Function — Pay.nl transaction start
+// Vercel Serverless Function — Pay.nl transaction start (v2 API)
 
 const https = require('https');
+const querystring = require('querystring');
 
 module.exports = async function handler(req, res) {
   if (req.method === 'OPTIONS') {
@@ -21,13 +22,11 @@ module.exports = async function handler(req, res) {
   const API_TOKEN  = process.env.PAYNL_API_TOKEN;
 
   if (!SERVICE_ID || !API_TOKEN) {
-    console.error('Pay.nl credentials ontbreken');
     return res.status(500).json({ error: 'Betaalservice niet geconfigureerd' });
   }
 
   try {
     const body = req.body || {};
-
     const { voornaam, achternaam, email, telefoon, paymentMethod, issuer } = body;
 
     if (!voornaam || !achternaam || !email || !paymentMethod) {
@@ -36,40 +35,44 @@ module.exports = async function handler(req, res) {
 
     const ipAddress =
       (req.headers['x-forwarded-for'] || '').split(',')[0].trim() ||
-      req.headers['x-real-ip'] ||
       '127.0.0.1';
 
-    const payload = JSON.stringify({
-      serviceId:     SERVICE_ID,
-      amount:        { value: 9900, currency: 'EUR' },
-      description:   'Bylder Lidmaatschap',
-      returnUrl:     'https://bylder.com/betalen/succes/',
-      exchangeUrl:   'https://bylder.com/api/paynl-exchange',
-      paymentMethod: { id: paymentMethod },
-      customer: {
-        firstName:  voornaam,
-        lastName:   achternaam,
-        email:      email,
-        phone:      telefoon || '',
-        language:   'nl',
-        ipAddress,
-      },
-      ...(issuer ? { issuer } : {}),
-      extra1: email,
-      extra2: `${voornaam} ${achternaam}`,
-    });
+    // Pay.nl v2 gebruikt form-encoded POST parameters
+    const params = {
+      token:              API_TOKEN,
+      serviceId:          SERVICE_ID,
+      amount:             9900,
+      finishUrl:          'https://bylder.com/betalen/succes/',
+      exchangeUrl:        'https://bylder.com/api/paynl-exchange',
+      paymentMethodId:    paymentMethod,
+      extra1:             email,
+      extra2:             `${voornaam} ${achternaam}`,
+      'enduser[initials]':   voornaam.charAt(0),
+      'enduser[lastName]':   achternaam,
+      'enduser[emailAddress]': email,
+      'enduser[language]':   'nl',
+      'saleData[invoiceDate]': new Date().toISOString().slice(0, 10).replace(/-/g, ''),
+      'saleData[deliveryDate]': new Date().toISOString().slice(0, 10).replace(/-/g, ''),
+      'saleData[orderData][0][productId]': 'BYLDER-LID',
+      'saleData[orderData][0][description]': 'Bylder Lidmaatschap',
+      'saleData[orderData][0][price]': 9900,
+      'saleData[orderData][0][quantity]': 1,
+      'saleData[orderData][0][vatCode]': 'H',
+      'ipAddress': ipAddress,
+    };
 
-    const auth = Buffer.from(`${API_TOKEN}:`).toString('base64');
+    if (issuer) params['issuerId'] = issuer;
+    if (telefoon) params['enduser[phoneNumber]'] = telefoon;
+
+    const payload = querystring.stringify(params);
 
     const result = await new Promise((resolve, reject) => {
       const options = {
         hostname: 'rest-api.pay.nl',
-        path:     '/v13/Transaction/start',
+        path:     '/v7/transaction/start/json',
         method:   'POST',
         headers: {
-          'Content-Type':   'application/json',
-          'Authorization':  `Basic ${auth}`,
-          'Accept':         'application/json',
+          'Content-Type':   'application/x-www-form-urlencoded',
           'Content-Length': Buffer.byteLength(payload),
         },
       };
@@ -78,8 +81,12 @@ module.exports = async function handler(req, res) {
         let data = '';
         r.on('data', chunk => data += chunk);
         r.on('end', () => {
-          try { resolve({ status: r.statusCode, body: JSON.parse(data) }); }
-          catch(e) { reject(new Error('Ongeldig JSON antwoord van Pay.nl: ' + data)); }
+          console.log('Pay.nl raw response:', data.substring(0, 500));
+          try {
+            resolve({ status: r.statusCode, body: JSON.parse(data) });
+          } catch(e) {
+            reject(new Error('Ongeldig JSON antwoord van Pay.nl: ' + data.substring(0, 200)));
+          }
         });
       });
 
@@ -88,16 +95,18 @@ module.exports = async function handler(req, res) {
       reqHttp.end();
     });
 
-    console.log('Pay.nl response status:', result.status);
-    console.log('Pay.nl response body:', JSON.stringify(result.body));
+    console.log('Pay.nl status:', result.status, 'body:', JSON.stringify(result.body).substring(0, 300));
 
-    if (result.body && result.body.transaction && result.body.transaction.paymentUrl) {
+    // v7 API geeft request.result = '1' bij succes
+    if (result.body && result.body.request && result.body.request.result === '1') {
       return res.status(200).json({
-        paymentUrl:    result.body.transaction.paymentUrl,
+        paymentUrl:    result.body.transaction.paymentURL,
         transactionId: result.body.transaction.transactionId,
       });
     } else {
-      const errMsg = result.body?.message || result.body?.error || JSON.stringify(result.body);
+      const errMsg = result.body?.request?.errorMessage
+        || result.body?.message
+        || JSON.stringify(result.body).substring(0, 200);
       return res.status(502).json({ error: errMsg });
     }
 
