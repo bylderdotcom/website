@@ -338,18 +338,23 @@ body::before {
       </div>
       <span class="font-bold text-lg tracking-tight" style="color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
-    <div class="hidden md:flex items-center gap-8">
-      <a href="/nieuwbouw-koper/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Nieuwbouw</a>
-      <a href="/bestaande-bouw/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Bestaande bouw</a>
-      <a href="/renovatie/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Renovatie</a>
-      <a href="#scan" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">QuickScan</a>
-      <a href="#vouchers" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
-      <a href="#features" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Features</a>
-      <a href="#begeleider" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Kopersbegeleider</a>
+    <div class="hidden md:flex items-center gap-6">
+      <div class="nav-dropdown-hp" style="position:relative;">
+        <button onclick="toggleVoorWie()" style="background:none;border:none;cursor:pointer;font-size:14px;color:rgba(61,46,30,0.55);font-family:inherit;padding:8px 12px;border-radius:8px;display:flex;align-items:center;gap:4px;" onmouseenter="showVoorWie()" id="voorWieBtn">Voor wie? <span style="font-size:10px;">▾</span></button>
+        <div id="voorWieMenu" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 12px 40px rgba(61,46,30,0.12);padding:8px;min-width:260px;z-index:200;">
+          <a href="/nieuwbouw-koper/" style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#3D2E1E;transition:background 0.12s;" onmouseenter="this.style.background='#F5F0E8'" onmouseleave="this.style.background='transparent'"><span style="font-size:20px;">🏡</span><div><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Meerwerklijst, vouchers, planning</span></div></a>
+          <a href="/bestaande-bouw/" style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#3D2E1E;transition:background 0.12s;" onmouseenter="this.style.background='#F5F0E8'" onmouseleave="this.style.background='transparent'"><span style="font-size:20px;">🏠</span><div><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Offerte-check, aannemer matching</span></div></a>
+          <a href="/renovatie/" style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#3D2E1E;transition:background 0.12s;" onmouseenter="this.style.background='#F5F0E8'" onmouseleave="this.style.background='transparent'"><span style="font-size:20px;">🔨</span><div><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Budgettool, subsidies, planning</span></div></a>
+        </div>
+      </div>
+      <a href="/nieuwbouw-gids/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;padding:8px 4px;">Gidsen</a>
+      <a href="/nieuwbouw/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;padding:8px 4px;">Gemeenten</a>
+      <a href="/tools/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;padding:8px 4px;">Tools</a>
+      <a href="/vouchers/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;padding:8px 4px;">Vouchers</a>
     </div>
     <div class="flex items-center gap-3">
-      <a href="https://mijn.bylder.com" class="hidden md:block text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Inloggen</a>
-      <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start gratis <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i></a>
+      <a href="https://app.bylder.com" class="hidden md:block text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Inloggen</a>
+      <a href="https://app.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start gratis <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i></a>
       <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -357,14 +362,18 @@ body::before {
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="/nieuwbouw-koper/">Nieuwbouw koper</a>
-  <a href="/bestaande-bouw/">Bestaande bouw</a>
-  <a href="/renovatie/">Renovatie</a>
+  <a href="/nieuwbouw-koper/">🏡 Nieuwbouwkoper</a>
+  <a href="/bestaande-bouw/">🏠 Bestaande bouw koper</a>
+  <a href="/renovatie/">🔨 Renovatiewoning</a>
+  <a href="/nieuwbouw-gids/">Gidsen</a>
+  <a href="/nieuwbouw/">Gemeenten</a>
+  <a href="/tools/">Tools</a>
+  <a href="/vouchers/">Vouchers</a>
   <a href="#scan">QuickScan</a>
   <a href="#vouchers">Vouchers</a>
   <a href="#features">Features</a>
   <a href="#begeleider">Kopersbegeleider</a>
-  <a href="https://mijn.bylder.com" class="mobile-cta">Start gratis →</a>
+  <a href="https://app.bylder.com" class="mobile-cta">Start gratis →</a>
 </div>
 
 <section class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
@@ -1065,7 +1074,7 @@ body::before {
           </div>
         </div>
 
-        <a href="https://mijn.bylder.com" style="display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='#4E7350'" onmouseout="this.style.background='#3D5A3E'">
+        <a href="https://app.bylder.com" style="display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='#4E7350'" onmouseout="this.style.background='#3D5A3E'">
           <i class="fa-solid fa-comments" style="font-size:13px;"></i> Stel een vraag aan de begeleider
         </a>
         <p style="font-size:12px;color:rgba(61,46,30,0.4);margin-top:10px;">Inbegrepen bij Bylder lidmaatschap · €99 eenmalig</p>
@@ -1203,7 +1212,7 @@ body::before {
           <div style="font-size:12px;color:rgba(245,240,232,0.5);">Terugverdiend na je <strong style="color:#8AAE8B;">eerste aankoop</strong></div>
         </div>
 
-        <a href="https://mijn.bylder.com" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:14px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;text-align:center;transition:all 0.2s;margin-bottom:12px;" onmouseover="this.style.background='#4E7350'" onmouseout="this.style.background='#3D5A3E'">
+        <a href="https://app.bylder.com" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:14px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;text-align:center;transition:all 0.2s;margin-bottom:12px;" onmouseover="this.style.background='#4E7350'" onmouseout="this.style.background='#3D5A3E'">
           Nu starten voor €99
         </a>
         <p style="font-size:11px;color:rgba(245,240,232,0.3);line-height:1.6;">
@@ -1808,7 +1817,7 @@ function continueWithProvider(provider){
     risico: document.getElementById('resultRisico')?.textContent || 'Laag',
     timestamp: Date.now()
   }));
-  const redirectUrl = 'https://mijn.bylder.com/register'
+  const redirectUrl = 'https://app.bylder.com/register'
     + '?session=' + sessionToken
     + '&provider=' + provider
     + '&source=quickscan';
@@ -1818,8 +1827,14 @@ function continueWithProvider(provider){
   btn.disabled = true;
   setTimeout(() => { window.location.href = redirectUrl; }, 600);
 }
-function claimVoucher(btn,brand){window.location.href='https://mijn.bylder.com';}
-function claimVoucherRust(btn,brand){window.location.href='https://mijn.bylder.com';}
+function claimVoucher(btn,brand){window.location.href='https://app.bylder.com';}
+function claimVoucherRust(btn,brand){window.location.href='https://app.bylder.com';}
+</script>
+<script>
+function showVoorWie(){document.getElementById('voorWieMenu').style.display='block';}
+function toggleVoorWie(){var m=document.getElementById('voorWieMenu');m.style.display=m.style.display==='block'?'none':'block';}
+document.addEventListener('click',function(e){if(!e.target.closest('.nav-dropdown-hp')){var m=document.getElementById('voorWieMenu');if(m)m.style.display='none';}});
+document.querySelector('.nav-dropdown-hp')?.addEventListener('mouseleave',function(){setTimeout(function(){document.getElementById('voorWieMenu').style.display='none';},200);});
 </script>
 </body>
 </html>

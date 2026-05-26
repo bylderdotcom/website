@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nieuwbouw Geertruidenberg — offerte check & korting | Bylder</title>
-<meta name="description" content="Nieuwbouw Geertruidenberg: 3 actieve projecten, gem. €4.400/m², 14% meerwerk-risico. AI offerte check, €3.600 bespaard, 10% korting bij 40+ merken.">
+<meta name="description" content="Nieuwbouw Geertruidenberg: 3 actieve projecten, gem. €4/m², 12% meerwerk-risico. AI offerte check, €3.600 bespaard, 10% korting bij 40+ merken.">
 <meta name="robots" content="index, follow">
-<meta name="last-modified" content="2026-05-25">
+<meta name="last-modified" content="2026-05-26">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="canonical" href="https://bylder.com/nieuwbouw/noord-brabant/geertruidenberg/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bylder.com/nieuwbouw/noord-brabant/geertruidenberg/">
 <meta property="og:title" content="Nieuwbouw Geertruidenberg — AI Kopersbegeleiding | Bylder">
-<meta property="og:description" content="3 projecten · €4.400/m² · 14% meerwerk-risico · gem. €3.600 bespaard in Geertruidenberg.">
+<meta property="og:description" content="3 projecten · €4/m² · 12% meerwerk-risico · gem. €3.600 bespaard in Geertruidenberg.">
 <meta property="og:image" content="https://bylder.com/og/nieuwbouw-gemeente.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="nl" href="https://bylder.com/nieuwbouw/noord-brabant/geertruidenberg/">
@@ -34,7 +34,7 @@
       "name": "Welke nieuwbouwprojecten in Geertruidenberg worden ondersteund door Bylder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bylder ondersteunt momenteel 3 actieve nieuwbouwprojecten in Geertruidenberg, waaronder projecten in Raamsdonksveer, Raamsdonk, Geertruidenberg-Oost. Kun je jouw project niet vinden? Upload dan je bouwtekening of offerte voor een directe AI-analyse."
+        "text": "Bylder ondersteunt momenteel 3 actieve nieuwbouwprojecten in Geertruidenberg, waaronder projecten in Geertruidenberg, Raamsdonksveer, Raamsdonk. Kun je jouw project niet vinden? Upload dan je bouwtekening of offerte voor een directe AI-analyse."
       }
     },
     {
@@ -165,23 +165,38 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
 <a href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" onfocus="this.style.cssText='position:fixed;top:0;left:0;z-index:9999;padding:12px 20px;background:#3D5A3E;color:#F5F0E8;font-weight:700;font-size:14px;border-radius:0 0 10px 0;width:auto;height:auto;'">Ga naar hoofdinhoud</a>
 
 <!-- ── NAV ── -->
-<nav class="glass-nav fixed top-0 left-0 right-0 z-50 py-4">
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+<nav class="glass-nav fixed top-0 left-0 right-0 z-50" style="height:64px;display:flex;align-items:center;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;">
       <div style="width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:flex;align-items:center;justify-content:center;">
         <span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span>
       </div>
-      <span style="font-weight:700;font-size:18px;letter-spacing:-0.02em;color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+      <span style="font-weight:800;font-size:17px;letter-spacing:-0.02em;color:#1A1208;font-family:'Plus Jakarta Sans',sans-serif;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
-    <div style="display:flex;align-items:center;gap:24px;" class="hide-mob">
-      <a href="/#scan" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">QuickScan</a>
-      <a href="/#vouchers" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
-      <a href="/nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Gemeenten</a>
-      <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Begeleiding</a>
+    <div style="display:flex;align-items:center;gap:4px;flex:1;justify-content:center;" class="hide-mob">
+      <div style="position:relative;" id="navDropdownWrap">
+        <button onclick="toggleNavDrop()" style="background:none;border:none;cursor:pointer;font-size:14px;color:rgba(61,46,30,0.55);font-family:'Plus Jakarta Sans',sans-serif;padding:8px 12px;border-radius:8px;display:flex;align-items:center;gap:4px;">Voor wie? <span style="font-size:10px;">▾</span></button>
+        <div id="navDropMenu" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 12px 40px rgba(61,46,30,0.12);padding:8px;min-width:260px;z-index:200;">
+          <a href="/nieuwbouw-koper/" style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#3D2E1E;" onmouseenter="this.style.background='#F5F0E8'" onmouseleave="this.style.background='transparent'"><span style="font-size:18px;">🏡</span><div><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Meerwerklijst, vouchers, planning</span></div></a>
+          <a href="/bestaande-bouw/" style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#3D2E1E;" onmouseenter="this.style.background='#F5F0E8'" onmouseleave="this.style.background='transparent'"><span style="font-size:18px;">🏠</span><div><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Offerte-check, aannemer matching</span></div></a>
+          <a href="/renovatie/" style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#3D2E1E;" onmouseenter="this.style.background='#F5F0E8'" onmouseleave="this.style.background='transparent'"><span style="font-size:18px;">🔨</span><div><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Budgettool, subsidies, planning</span></div></a>
+        </div>
+      </div>
+      <a href="/nieuwbouw-gids/" style="font-size:14px;color:rgba(61,46,30,0.55);text-decoration:none;padding:8px 12px;border-radius:8px;" onmouseenter="this.style.background='rgba(61,46,30,0.05)'" onmouseleave="this.style.background='transparent'">Gidsen</a>
+      <a href="/nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.55);text-decoration:none;padding:8px 12px;border-radius:8px;" onmouseenter="this.style.background='rgba(61,46,30,0.05)'" onmouseleave="this.style.background='transparent'">Gemeenten</a>
+      <a href="/tools/" style="font-size:14px;color:rgba(61,46,30,0.55);text-decoration:none;padding:8px 12px;border-radius:8px;" onmouseenter="this.style.background='rgba(61,46,30,0.05)'" onmouseleave="this.style.background='transparent'">Tools</a>
+      <a href="/vouchers/" style="font-size:14px;color:rgba(61,46,30,0.55);text-decoration:none;padding:8px 12px;border-radius:8px;" onmouseenter="this.style.background='rgba(61,46,30,0.05)'" onmouseleave="this.style.background='transparent'">Vouchers</a>
     </div>
-    <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block" style="text-decoration:none;">Start gratis <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i></a>
+    <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+      <a href="https://app.bylder.com" class="hide-mob" style="font-size:13px;font-weight:600;color:rgba(61,46,30,0.5);text-decoration:none;padding:8px 12px;border-radius:8px;">Inloggen</a>
+      <a href="/betalen/" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block" style="text-decoration:none;">Start gratis →</a>
+    </div>
   </div>
 </nav>
+<script>
+function toggleNavDrop(){var m=document.getElementById('navDropMenu');m.style.display=m.style.display==='block'?'none':'block';}
+document.addEventListener('click',function(e){if(!e.target.closest('#navDropdownWrap')){var m=document.getElementById('navDropMenu');if(m)m.style.display='none';}});
+</script>
 
 <main id="main-content">
 <!-- ── BREADCRUMB ── -->
@@ -217,7 +232,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
     <div class="fade-up d1" style="margin-bottom:16px;">
       <span class="badge-moss" style="display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
         <span style="width:6px;height:6px;border-radius:50%;background:#3D5A3E;display:inline-block;"></span>
-        Noord-Brabant · 195 woningen in aanbouw
+        Noord-Brabant · 500 woningen in aanbouw
       </span>
     </div>
 
@@ -228,17 +243,17 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
           <span style="color:#3D5A3E;font-style:italic;font-weight:300;">slim kopen met AI</span>
         </h1>
         <p class="fade-up d3" style="font-size:16px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:24px;max-width:500px;">
-          In Geertruidenberg is de gemiddelde nieuwbouwprijs <strong style="color:#1A1208;">€4.400 per m²</strong>. Kopers besteden hier gemiddeld <strong style="color:#B85C38;">14% extra aan meerwerk</strong>. Bylder's AI checkt je offerte direct op marktconforme prijzen.
+          In Geertruidenberg is de gemiddelde nieuwbouwprijs <strong style="color:#1A1208;">€4 per m²</strong>. Kopers besteden hier gemiddeld <strong style="color:#B85C38;">12% extra aan meerwerk</strong>. Bylder's AI checkt je offerte direct op marktconforme prijzen.
         </p>
 
         <!-- Live statistieken -->
         <div class="fade-up d3" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:28px;">
           <div style="background:rgba(255,255,255,0.7);border:1px solid rgba(61,46,30,0.08);border-radius:12px;padding:14px;">
-            <div style="font-size:1.4rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">€4.400</div>
+            <div style="font-size:1.4rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">€4</div>
             <div style="font-size:11px;color:rgba(61,46,30,0.45);font-family:'Space Mono',monospace;margin-top:3px;">per m² nieuwbouw</div>
           </div>
           <div style="background:rgba(255,255,255,0.7);border:1px solid rgba(61,46,30,0.08);border-radius:12px;padding:14px;">
-            <div style="font-size:1.4rem;font-weight:800;color:#B85C38;letter-spacing:-0.04em;">14%</div>
+            <div style="font-size:1.4rem;font-weight:800;color:#B85C38;letter-spacing:-0.04em;">12%</div>
             <div style="font-size:11px;color:rgba(61,46,30,0.45);font-family:'Space Mono',monospace;margin-top:3px;">gem. meerwerk-risico</div>
           </div>
           <div style="background:rgba(255,255,255,0.7);border:1px solid rgba(61,46,30,0.08);border-radius:12px;padding:14px;">
@@ -248,7 +263,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
         </div>
 
         <div class="fade-up d4" style="display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="https://mijn.bylder.com?gemeente=geertruidenberg" class="cta-btn px-7 py-3.5 rounded-xl inline-flex items-center gap-2" style="font-size:14px;text-decoration:none;">
+          <a href="https://app.bylder.com?gemeente=geertruidenberg" class="cta-btn px-7 py-3.5 rounded-xl inline-flex items-center gap-2" style="font-size:14px;text-decoration:none;">
             <i class="fa-solid fa-wand-magic-sparkles"></i> Start QuickScan voor Geertruidenberg
           </a>
           <a href="#calculator" style="display:inline-flex;align-items:center;gap:8px;padding:14px 20px;border:1.5px solid rgba(61,46,30,0.15);border-radius:12px;font-size:13px;font-weight:600;color:#3D2E1E;text-decoration:none;background:rgba(255,255,255,0.7);">
@@ -265,7 +280,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
               <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#3D5A3E,#4E7350);display:flex;align-items:center;justify-content:center;font-size:15px;">🏠</div>
               <div>
                 <div style="font-size:13px;font-weight:700;color:#F5F0E8;">Marktrapport Geertruidenberg</div>
-                <div style="font-size:11px;color:rgba(245,240,232,0.4);font-family:'Space Mono',monospace;">Bijgewerkt 2026-05-25</div>
+                <div style="font-size:11px;color:rgba(245,240,232,0.4);font-family:'Space Mono',monospace;">Bijgewerkt 2026-05-26</div>
               </div>
             </div>
             <span style="background:rgba(61,90,62,0.3);color:#8AAE8B;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;font-family:'Space Mono',monospace;">SWK</span>
@@ -276,10 +291,10 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
                 <span style="font-size:13px;font-weight:700;color:#1A1208;">Meerwerk-risicoscore</span>
-                <span style="font-size:16px;font-weight:800;color:#B85C38;">5.7/10</span>
+                <span style="font-size:16px;font-weight:800;color:#B85C38;">5.5/10</span>
               </div>
               <div class="risk-bar">
-                <div class="risk-fill" id="riskBar" style="width:57%;background:linear-gradient(90deg,#3D5A3E,#B85C38);"></div>
+                <div class="risk-fill" id="riskBar" style="width:55%;background:linear-gradient(90deg,#3D5A3E,#B85C38);"></div>
               </div>
               <div style="font-size:11px;color:rgba(61,46,30,0.45);margin-top:5px;font-family:'Space Mono',monospace;">Op basis van SWK opleverdata regio Noord-Brabant</div>
             </div>
@@ -289,13 +304,13 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
               <div style="font-size:12px;font-weight:700;color:#1A1208;margin-bottom:8px;">Meest gesignaleerde gebreken bij oplevering</div>
               <div style="display:flex;flex-direction:column;gap:6px;">
                 <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.7);">
-                  <span style="width:6px;height:6px;border-radius:50%;background:#B85C38;flex-shrink:0;"></span>Meerwerk-overruns
+                  <span style="width:6px;height:6px;border-radius:50%;background:#B85C38;flex-shrink:0;"></span>Stucwerk oneffenheden
                 </div>
                 <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.7);">
-                  <span style="width:6px;height:6px;border-radius:50%;background:#C9A84C;flex-shrink:0;"></span>Gevelisolatie aansluitingen
+                  <span style="width:6px;height:6px;border-radius:50%;background:#C9A84C;flex-shrink:0;"></span>Kozijnaansluiting
                 </div>
                 <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(61,46,30,0.7);">
-                  <span style="width:6px;height:6px;border-radius:50%;background:#3D5A3E;flex-shrink:0;"></span>Tegelvoegen badkamer
+                  <span style="width:6px;height:6px;border-radius:50%;background:#3D5A3E;flex-shrink:0;"></span>CV-instelling
                 </div>
               </div>
             </div>
@@ -326,22 +341,22 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
         <figure style="margin:0 0 20px 0;">
           <img
             src="/nieuwbouw/noord-brabant/geertruidenberg/marktdata.svg"
-            alt="Nieuwbouw marktdata grafiek voor Geertruidenberg, Noord-Brabant — €4.400 per m², 14% meerwerk-risico"
+            alt="Nieuwbouw marktdata grafiek voor Geertruidenberg, Noord-Brabant — €4 per m², 12% meerwerk-risico"
             width="560" height="8"
             loading="lazy"
             style="width:100%;height:8px;border-radius:999px;background:linear-gradient(90deg,rgba(61,90,62,0.15),rgba(61,90,62,0.05));display:block;"
             onerror="this.style.display='none'"
           >
           <figcaption style="font-size:11px;color:rgba(61,46,30,0.35);margin-top:5px;font-family:'Space Mono',monospace;">
-            Nieuwbouw Geertruidenberg · CBS/Kadaster data · 2026-05-25
+            Nieuwbouw Geertruidenberg · CBS/Kadaster data · 2026-05-26
           </figcaption>
         </figure>
         <h2 style="font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;margin-bottom:14px;">Nieuwbouwmarkt Geertruidenberg in cijfers</h2>
         <p style="font-size:15px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:20px;">
-          De woningmarkt in Geertruidenberg telt momenteel <strong style="color:#1A1208;">195 woningen in aanbouw</strong>. Verdeeld over 3 actieve projecten in Raamsdonksveer, Raamsdonk, Geertruidenberg-Oost. De gemiddelde transactieprijs voor nieuwbouw ligt op <strong style="color:#3D5A3E;">€4.400 per m²</strong> — €400 onder het landelijk gemiddelde van €4.800/m².
+          De woningmarkt in Geertruidenberg telt momenteel <strong style="color:#1A1208;">500 woningen in aanbouw</strong>. Verdeeld over 3 actieve projecten in Geertruidenberg, Raamsdonksveer, Raamsdonk. De gemiddelde transactieprijs voor nieuwbouw ligt op <strong style="color:#3D5A3E;">€4 per m²</strong> — €4.796 onder het landelijk gemiddelde van €4.800/m².
         </p>
         <p style="font-size:15px;color:rgba(61,46,30,0.65);line-height:1.8;">
-          Kopers in Geertruidenberg geven gemiddeld <strong style="color:#B85C38;">14% van de aanneemsom extra uit aan meerwerk</strong>. Bylder's AI vergelijkt elke offerte direct met marktprijzen in regio Noord-Brabant en signaleert overpricing.
+          Kopers in Geertruidenberg geven gemiddeld <strong style="color:#B85C38;">12% van de aanneemsom extra uit aan meerwerk</strong>. Bylder's AI vergelijkt elke offerte direct met marktprijzen in regio Noord-Brabant en signaleert overpricing.
         </p>
       </div>
 
@@ -349,17 +364,17 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;" class="grid-4">
         <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:20px;">
           <div style="font-size:10px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.35);margin-bottom:8px;">Prijs per m²</div>
-          <div style="font-size:2rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">€4.400</div>
+          <div style="font-size:2rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">€4</div>
           <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-top:4px;">nieuwbouw Geertruidenberg</div>
         </div>
         <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:20px;">
           <div style="font-size:10px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.35);margin-bottom:8px;">In aanbouw</div>
-          <div style="font-size:2rem;font-weight:800;color:#1A1208;letter-spacing:-0.04em;">195</div>
+          <div style="font-size:2rem;font-weight:800;color:#1A1208;letter-spacing:-0.04em;">500</div>
           <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-top:4px;">woningen regio Geertruidenberg</div>
         </div>
         <div style="background:rgba(184,92,56,0.06);border:1px solid rgba(184,92,56,0.15);border-radius:14px;padding:20px;">
           <div style="font-size:10px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(184,92,56,0.6);margin-bottom:8px;">Meerwerk-risico</div>
-          <div style="font-size:2rem;font-weight:800;color:#B85C38;letter-spacing:-0.04em;">14%</div>
+          <div style="font-size:2rem;font-weight:800;color:#B85C38;letter-spacing:-0.04em;">12%</div>
           <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-top:4px;">gem. extra op aanneemsom</div>
         </div>
         <div style="background:rgba(61,90,62,0.06);border:1px solid rgba(61,90,62,0.15);border-radius:14px;padding:20px;">
@@ -399,10 +414,10 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
             <div>
               <label style="display:block;font-size:12px;font-weight:700;color:#1A1208;margin-bottom:8px;">Verwacht meerwerk-percentage</label>
               <div style="position:relative;">
-                <input class="calc-input" id="meerwerkPct" type="number" value="14" min="0" max="50" style="padding-right:32px;" oninput="calcUpdate()">
+                <input class="calc-input" id="meerwerkPct" type="number" value="12" min="0" max="50" style="padding-right:32px;" oninput="calcUpdate()">
                 <span style="position:absolute;right:14px;top:50%;transform:translateY(-50%);color:rgba(61,46,30,0.4);font-weight:600;">%</span>
               </div>
-              <div style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:5px;font-family:'Space Mono',monospace;">Gem. Geertruidenberg: 14% (automatisch ingevuld)</div>
+              <div style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:5px;font-family:'Space Mono',monospace;">Gem. Geertruidenberg: 12% (automatisch ingevuld)</div>
             </div>
           </div>
         </div>
@@ -433,7 +448,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
       </div>
 
       <p style="text-align:center;font-size:12px;color:rgba(61,46,30,0.35);margin-top:14px;font-family:'Space Mono',monospace;">
-        Gebaseerd op marktdata Geertruidenberg · 2026-05-25 · Geen financieel advies
+        Gebaseerd op marktdata Geertruidenberg · 2026-05-26 · Geen financieel advies
       </p>
     </div>
   </div>
@@ -451,7 +466,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
         <div class="badge-sand" style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Projecten & locaties</div>
         <h2 style="font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;">Actuele nieuwbouwprojecten in Geertruidenberg</h2>
       </div>
-      <a href="https://mijn.bylder.com?gemeente=geertruidenberg" class="cta-btn px-6 py-3 rounded-xl inline-flex items-center gap-2" style="font-size:13px;text-decoration:none;white-space:nowrap;">
+      <a href="https://app.bylder.com?gemeente=geertruidenberg" class="cta-btn px-6 py-3 rounded-xl inline-flex items-center gap-2" style="font-size:13px;text-decoration:none;white-space:nowrap;">
         Alle projecten <i class="fa-solid fa-arrow-right text-xs"></i>
       </a>
     </div>
@@ -459,9 +474,9 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;" class="grid-3">
       <div class="card" style="border-radius:16px;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-          <div style="width:42px;height:42px;border-radius:10px;background:rgba(61,90,62,0.1);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;" role="img" aria-label="Nieuwbouwproject Raamsdonksveer in Geertruidenberg">🏗️</div>
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(61,90,62,0.1);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;" role="img" aria-label="Nieuwbouwproject Raamsdonksveer-Oost in Geertruidenberg">🏗️</div>
           <div>
-            <div style="font-size:14px;font-weight:700;color:#1A1208;">Raamsdonksveer</div>
+            <div style="font-size:14px;font-weight:700;color:#1A1208;">Raamsdonksveer-Oost</div>
             <div style="font-size:11px;color:rgba(61,46,30,0.4);font-family:'Space Mono',monospace;">Geertruidenberg · Noord-Brabant</div>
           </div>
         </div>
@@ -469,7 +484,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
           <span style="padding:3px 9px;border-radius:6px;background:rgba(61,90,62,0.08);font-size:11px;color:#3D5A3E;font-weight:600;">SWK</span>
           <span style="padding:3px 9px;border-radius:6px;background:rgba(61,46,30,0.05);font-size:11px;color:rgba(61,46,30,0.5);">Nieuwbouw</span>
         </div>
-        <a href="/nieuwbouw/noord-brabant/geertruidenberg/raamsdonksveer/" style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;text-decoration:none;">AI-risicoanalyse bekijken <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <a href="/nieuwbouw/noord-brabant/geertruidenberg/raamsdonksveer-oost/" style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#3D5A3E;text-decoration:none;">AI-risicoanalyse bekijken <i class="fa-solid fa-arrow-right text-xs"></i></a>
       </div>
 
       <div class="card" style="border-radius:16px;">
@@ -491,7 +506,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
         <div style="font-size:2rem;margin-bottom:10px;">📐</div>
         <div style="font-size:14px;font-weight:700;color:#F5F0E8;margin-bottom:6px;">Jouw project niet gevonden?</div>
         <p style="font-size:12px;color:rgba(245,240,232,0.5);line-height:1.6;margin-bottom:14px;">Upload je bouwtekening of offerte. De AI analyseert direct op marktprijzen in regio Geertruidenberg.</p>
-        <a href="https://mijn.bylder.com?gemeente=geertruidenberg" style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,240,232,0.1);border:1px solid rgba(245,240,232,0.2);color:#F5F0E8;padding:9px 14px;border-radius:9px;font-size:12px;font-weight:700;text-decoration:none;" onmouseover="this.style.background='rgba(245,240,232,0.2)'" onmouseout="this.style.background='rgba(245,240,232,0.1)'">
+        <a href="https://app.bylder.com?gemeente=geertruidenberg" style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,240,232,0.1);border:1px solid rgba(245,240,232,0.2);color:#F5F0E8;padding:9px 14px;border-radius:9px;font-size:12px;font-weight:700;text-decoration:none;" onmouseover="this.style.background='rgba(245,240,232,0.2)'" onmouseout="this.style.background='rgba(245,240,232,0.1)'">
           <i class="fa-solid fa-upload text-xs"></i> Document uploaden
         </a>
       </div>
@@ -513,7 +528,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
         <p style="font-size:15px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:22px;">
           Bylder-leden in Geertruidenberg profiteren van <strong style="color:#B85C38;">10% collectieve korting</strong> bij 40+ premium partnermerken. Gemiddeld levert dit naast de AI-besparing nog eens <strong style="color:#3D5A3E;">€3.600</strong> extra op.
         </p>
-        <a href="https://mijn.bylder.com?gemeente=geertruidenberg" class="cta-btn px-7 py-3.5 rounded-xl inline-flex items-center gap-2" style="font-size:14px;text-decoration:none;margin-bottom:10px;">
+        <a href="https://app.bylder.com?gemeente=geertruidenberg" class="cta-btn px-7 py-3.5 rounded-xl inline-flex items-center gap-2" style="font-size:14px;text-decoration:none;margin-bottom:10px;">
           Claim mijn vouchers <i class="fa-solid fa-tag text-xs"></i>
         </a>
         <div style="font-size:12px;color:rgba(61,46,30,0.35);font-family:'Space Mono',monospace;margin-top:8px;">€99 eenmalig · direct terugverdiend</div>
@@ -559,7 +574,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
         <div class="badge-moss" style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;">FAQ</div>
         <h2 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;margin-bottom:14px;">Veelgestelde vragen over bouwen in Geertruidenberg</h2>
         <p style="font-size:14px;color:rgba(61,46,30,0.6);line-height:1.7;margin-bottom:22px;">Andere vraag over jouw project in Geertruidenberg? De AI staat 24/7 klaar.</p>
-        <a href="https://mijn.bylder.com?gemeente=geertruidenberg" class="cta-btn px-6 py-3 rounded-xl inline-flex items-center gap-2" style="font-size:13px;text-decoration:none;">
+        <a href="https://app.bylder.com?gemeente=geertruidenberg" class="cta-btn px-6 py-3 rounded-xl inline-flex items-center gap-2" style="font-size:13px;text-decoration:none;">
           Stel een vraag <i class="fa-solid fa-comments text-xs"></i>
         </a>
       </div>
@@ -572,7 +587,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
               <i class="fa-solid fa-chevron-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
             </button>
           </h3>
-          <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">De gemiddelde nieuwbouwprijs in Geertruidenberg ligt op <strong>€4.400 per m²</strong> (peildatum 2026-05-25). Dit is inclusief grond en exclusief meerwerk. Ter vergelijking: het landelijk gemiddelde ligt op circa €4.800/m². Kopers in Geertruidenberg geven gemiddeld 14% extra uit aan meerwerk op de kale aanneemsom.</div></div>
+          <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">De gemiddelde nieuwbouwprijs in Geertruidenberg ligt op <strong>€4 per m²</strong> (peildatum 2026-05-26). Dit is inclusief grond en exclusief meerwerk. Ter vergelijking: het landelijk gemiddelde ligt op circa €4.800/m². Kopers in Geertruidenberg geven gemiddeld 12% extra uit aan meerwerk op de kale aanneemsom.</div></div>
         </div>
         <div style="border:1px solid rgba(61,46,30,0.09);border-radius:14px;overflow:hidden;background:#fff;margin-bottom:10px;">
           <h3 style="margin:0;">
@@ -581,7 +596,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
               <i class="fa-solid fa-chevron-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
             </button>
           </h3>
-          <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Op basis van SWK-opleverdata in regio Noord-Brabant zijn de meest gesignaleerde gebreken: <strong>Meerwerk-overruns</strong>, <strong>Gevelisolatie aansluitingen</strong> en <strong>Tegelvoegen badkamer</strong>. Bylder's opleveringschecklist is specifiek afgestemd op deze regionale aandachtspunten.</div></div>
+          <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Op basis van SWK-opleverdata in regio Noord-Brabant zijn de meest gesignaleerde gebreken: <strong>Stucwerk oneffenheden</strong>, <strong>Kozijnaansluiting</strong> en <strong>CV-instelling</strong>. Bylder's opleveringschecklist is specifiek afgestemd op deze regionale aandachtspunten.</div></div>
         </div>
         <div style="border:1px solid rgba(61,46,30,0.09);border-radius:14px;overflow:hidden;background:#fff;margin-bottom:10px;">
           <h3 style="margin:0;">
@@ -599,7 +614,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
               <i class="fa-solid fa-chevron-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
             </button>
           </h3>
-          <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Het 5% depot wordt berekend over de aanneemsom (exclusief grond). Bij een gemiddelde woning van 110m² in Geertruidenberg à €4.400/m² kom je op een aanneemsom van ca. €484.000. Het depot bedraagt dan ca. €24.200. Gebruik de calculator hierboven voor jouw specifieke situatie.</div></div>
+          <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Het 5% depot wordt berekend over de aanneemsom (exclusief grond). Bij een gemiddelde woning van 110m² in Geertruidenberg à €4/m² kom je op een aanneemsom van ca. €440. Het depot bedraagt dan ca. €22. Gebruik de calculator hierboven voor jouw specifieke situatie.</div></div>
         </div>
         <div style="border:1px solid rgba(61,46,30,0.09);border-radius:14px;overflow:hidden;background:#fff;">
           <h3 style="margin:0;">
@@ -624,16 +639,16 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
   <div class="container" style="text-align:center;">
     <div style="display:inline-flex;align-items:center;gap:8px;padding:5px 14px;background:rgba(61,90,62,0.2);border:1px solid rgba(61,90,62,0.3);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#8AAE8B;margin-bottom:18px;">
       <span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;display:inline-block;animation:pulse-orb 2s infinite;"></span>
-      195 woningen in aanbouw in Geertruidenberg
+      500 woningen in aanbouw in Geertruidenberg
     </div>
     <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#F5F0E8;letter-spacing:-0.03em;margin-bottom:14px;line-height:1.1;">
       Start vandaag met slim<br><span style="color:#8AAE8B;font-style:italic;font-weight:300;">bouwen in Geertruidenberg</span>
     </h2>
     <p style="font-size:15px;color:rgba(245,240,232,0.5);max-width:460px;margin:0 auto 28px;line-height:1.7;">
-      Gratis QuickScan · €4.400/m² marktcheck · SWK-controle · gem. €3.600 bespaard
+      Gratis QuickScan · €4/m² marktcheck · SWK-controle · gem. €3.600 bespaard
     </p>
     <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
-      <a href="https://mijn.bylder.com?gemeente=geertruidenberg" class="cta-btn px-8 py-4 rounded-xl inline-flex items-center gap-2" style="font-size:14px;text-decoration:none;">
+      <a href="https://app.bylder.com?gemeente=geertruidenberg" class="cta-btn px-8 py-4 rounded-xl inline-flex items-center gap-2" style="font-size:14px;text-decoration:none;">
         <i class="fa-solid fa-wand-magic-sparkles"></i> Start gratis QuickScan voor Geertruidenberg
       </a>
       <a href="/nieuwbouw/noord-brabant/" style="display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border:1.5px solid rgba(245,240,232,0.15);border-radius:12px;font-size:13px;font-weight:600;color:rgba(245,240,232,0.6);text-decoration:none;" onmouseover="this.style.borderColor='rgba(245,240,232,0.35)';this.style.color='rgba(245,240,232,0.9)'" onmouseout="this.style.borderColor='rgba(245,240,232,0.15)';this.style.color='rgba(245,240,232,0.6)'">
