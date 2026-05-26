@@ -1,15 +1,22 @@
 {
-  "headers": [
+  "version": 2,
+  "routes": [
     {
-      "source": "/",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
+      "src": "/api/betaling-start",
+      "dest": "/api/betaling-start.js"
     },
     {
-      "source": "/:path*",
+      "src": "/api/paynl-exchange",
+      "dest": "/api/paynl-exchange.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        { "key": "Access-Control-Allow-Origin",  "value": "https://bylder.com" },
+        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
       ]
     }
   ]

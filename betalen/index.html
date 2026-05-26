@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start je Bylder lidmaatschap — €99 eenmalig</title>
+<meta name="description" content="Activeer je Bylder kopersbegeleiding. Eenmalig €99, geen abonnement. Veilig betalen via iDEAL, Bancontact of creditcard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #F5F0E8;
+  color: #3D2E1E;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --cream: #F5F0E8;
+  --cream-2: #EDE6D8;
+  --bark: #1A1208;
+  --bark-2: #3D2E1E;
+  --bark-3: rgba(61,46,30,0.5);
+  --moss: #3D5A3E;
+  --moss-2: #4E7350;
+  --rust: #B85C38;
+  --gold: #C9A84C;
+  --white: #fff;
+  --border: rgba(61,46,30,0.1);
+}
+
+/* NAV */
+.nav {
+  background: rgba(245,240,232,0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 5%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 8px;
+  text-decoration: none;
+  font-weight: 800; font-size: 17px; color: var(--bark);
+  letter-spacing: -0.02em;
+}
+.nav-logo-dot {
+  width: 28px; height: 28px;
+  background: var(--moss);
+  border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px; font-weight: 700; color: var(--cream);
+}
+.nav-secure {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--bark-3);
+}
+.nav-secure svg { color: var(--moss); }
+
+/* MAIN LAYOUT */
+.page {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 0;
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 48px 5% 80px;
+  align-items: start;
+}
+
+/* LEFT: PRODUCT INFO */
+.product-side { padding-right: 60px; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--bark-3);
+  text-decoration: none; margin-bottom: 32px;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--bark); }
+
+.product-label {
+  font-size: 11px; font-family: 'Space Mono', monospace;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--moss); font-weight: 700;
+  margin-bottom: 10px;
+}
+.product-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: var(--bark);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.product-sub {
+  font-size: 16px;
+  color: var(--bark-3);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* PRICE BOX */
+.price-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.price-amount {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--bark);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.price-sub {
+  font-size: 12px;
+  color: var(--bark-3);
+  margin-top: 4px;
+  font-family: 'Space Mono', monospace;
+}
+.price-badge {
+  background: rgba(61,90,62,0.08);
+  border: 1px solid rgba(61,90,62,0.2);
+  color: var(--moss);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* FEATURES LIST */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--bark-2);
+  line-height: 1.5;
+}
+.feature-check {
+  width: 20px; height: 20px;
+  background: rgba(61,90,62,0.1);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--moss);
+  font-size: 11px;
+  font-weight: 700;
+}
+.feature-strong { font-weight: 700; color: var(--bark); }
+
+/* TRUST */
+.trust-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--bark-3);
+}
+.trust-icon { font-size: 14px; }
+
+/* TESTIMONIAL */
+.testimonial {
+  background: var(--cream-2);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-top: 28px;
+}
+.testimonial-text {
+  font-size: 14px;
+  color: var(--bark-2);
+  line-height: 1.65;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.testimonial-author {
+  display: flex; align-items: center; gap: 10px;
+}
+.testimonial-avatar {
+  width: 32px; height: 32px;
+  background: var(--moss);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; color: var(--cream);
+  flex-shrink: 0;
+}
+.testimonial-name { font-size: 13px; font-weight: 700; color: var(--bark); }
+.testimonial-role { font-size: 11px; color: var(--bark-3); }
+
+/* RIGHT: PAYMENT FORM */
+.payment-side {
+  position: sticky;
+  top: 80px;
+}
+.payment-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(61,46,30,0.08);
+}
+.payment-header {
+  padding: 24px 28px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.payment-header-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--bark);
+  margin-bottom: 4px;
+}
+.payment-header-sub {
+  font-size: 13px;
+  color: var(--bark-3);
+}
+.payment-body { padding: 24px 28px; }
+
+/* FORM */
+.form-group { margin-bottom: 16px; }
+.form-label {
+  display: block;
+  font-size: 12px; font-weight: 700;
+  color: var(--bark);
+  margin-bottom: 6px;
+}
+.form-input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid rgba(61,46,30,0.12);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--bark-2);
+  background: var(--cream);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-input:focus {
+  border-color: var(--moss);
+  box-shadow: 0 0 0 3px rgba(61,90,62,0.08);
+  background: #fff;
+}
+.form-input.error {
+  border-color: var(--rust);
+  box-shadow: 0 0 0 3px rgba(184,92,56,0.08);
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.form-error {
+  font-size: 11px;
+  color: var(--rust);
+  margin-top: 4px;
+  display: none;
+}
+.form-error.show { display: block; }
+
+/* BETAALMETHODEN */
+.method-label {
+  font-size: 12px; font-weight: 700;
+  color: var(--bark);
+  margin-bottom: 10px;
+  display: block;
+}
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.method-btn {
+  border: 1.5px solid rgba(61,46,30,0.12);
+  border-radius: 10px;
+  padding: 12px 8px;
+  background: var(--cream);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.method-btn:hover {
+  border-color: var(--moss);
+  background: rgba(61,90,62,0.04);
+}
+.method-btn.active {
+  border-color: var(--moss);
+  background: rgba(61,90,62,0.06);
+  box-shadow: 0 0 0 3px rgba(61,90,62,0.1);
+}
+.method-icon { font-size: 22px; line-height: 1; }
+.method-name { font-size: 11px; font-weight: 600; color: var(--bark-2); }
+
+/* iDEAL BANK SELECT */
+.ideal-banks {
+  display: none;
+  margin-bottom: 16px;
+}
+.ideal-banks.show { display: block; }
+
+/* ORDER SUMMARY */
+.order-summary {
+  background: rgba(61,46,30,0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--bark-2);
+  margin-bottom: 6px;
+}
+.summary-row:last-child { margin-bottom: 0; }
+.summary-row.total {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--bark);
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  margin-top: 6px;
+}
+.summary-row span:last-child { font-family: 'Space Mono', monospace; }
+
+/* PAY BUTTON */
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background: var(--moss);
+  color: var(--cream);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: -0.01em;
+}
+.pay-btn:hover:not(:disabled) {
+  background: var(--moss-2);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(61,90,62,0.25);
+}
+.pay-btn:disabled {
+  background: rgba(61,46,30,0.1);
+  color: var(--bark-3);
+  cursor: not-allowed;
+  transform: none;
+}
+.pay-btn.loading {
+  background: var(--moss);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* SECURITY FOOTER */
+.security-footer {
+  padding: 16px 28px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.sec-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--bark-3);
+}
+
+/* SUCCESS STATE */
+.success-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26,18,8,0.6);
+  backdrop-filter: blur(8px);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.success-overlay.show { display: flex; }
+.success-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.success-icon {
+  width: 72px; height: 72px;
+  background: rgba(61,90,62,0.1);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 20px;
+}
+.success-title {
+  font-size: 24px; font-weight: 800;
+  color: var(--bark);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.success-sub {
+  font-size: 15px; color: var(--bark-3);
+  line-height: 1.6; margin-bottom: 28px;
+}
+.success-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--moss); color: var(--cream);
+  padding: 13px 28px; border-radius: 10px;
+  font-size: 15px; font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.success-btn:hover { background: var(--moss-2); }
+
+/* ERROR BANNER */
+.error-banner {
+  display: none;
+  background: rgba(184,92,56,0.08);
+  border: 1px solid rgba(184,92,56,0.2);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--rust);
+  line-height: 1.5;
+}
+.error-banner.show { display: block; }
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding: 32px 5% 60px;
+  }
+  .product-side { padding-right: 0; margin-bottom: 32px; }
+  .payment-side { position: static; }
+}
+@media (max-width: 480px) {
+  .methods-grid { grid-template-columns: repeat(2, 1fr); }
+  .form-row { grid-template-columns: 1fr; }
+  .price-box { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-dot">B.</div>
+    Bylder
+  </a>
+  <div class="nav-secure">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+    Beveiligde betaling via Pay.nl
+  </div>
+</nav>
+
+<!-- SUCCES OVERLAY -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-card">
+    <div class="success-icon">✅</div>
+    <div class="success-title">Betaling geslaagd!</div>
+    <div class="success-sub">Welkom bij Bylder. Je account wordt nu aangemaakt en je ontvangt een bevestiging op <strong id="successEmail"></strong>.</div>
+    <a href="https://mijn.bylder.com" class="success-btn">
+      Ga naar mijn Bylder →
+    </a>
+    <div style="margin-top:16px;font-size:12px;color:var(--bark-3);">Geen mail ontvangen? Check je spammap of stuur een mail naar <a href="mailto:info@bylder.com" style="color:var(--moss);">info@bylder.com</a></div>
+  </div>
+</div>
+
+<main class="page">
+
+  <!-- LINKS: PRODUCT INFO -->
+  <div class="product-side">
+    <a href="/" class="back-link">← Terug naar bylder.com</a>
+
+    <div class="product-label">Bylder Lidmaatschap</div>
+    <h1 class="product-title">Jouw persoonlijke kopersbegeleider — eenmalig €99</h1>
+    <p class="product-sub">Alles wat je nodig hebt voor een stressvrije aankoop of verbouwing. Geen abonnement, geen verborgen kosten.</p>
+
+    <div class="price-box">
+      <div>
+        <div class="price-amount">€99,–</div>
+        <div class="price-sub">Eenmalig · BTW inbegrepen · Levenslang voor jouw woning</div>
+      </div>
+      <div class="price-badge">27× ROI gemiddeld</div>
+    </div>
+
+    <div class="features">
+      <div class="feature-item">
+        <div class="feature-check">✓</div>
+        <div><span class="feature-strong">AI Kopersbegeleider</span> — 24/7 beschikbaar voor al je vragen over nieuwbouw, bestaande bouw of renovatie</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-check">✓</div>
+        <div><span class="feature-strong">Meerwerklijst AI-analyse</span> — gemiddeld €1.840 besparing op je aanneemsom</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-check">✓</div>
+        <div><span class="feature-strong">Kortingsvouchers</span> — Auping 20%, Goossens 15%, DRT 12%, Lampidee 18% en meer. Gemiddeld €2.549 besparing</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-check">✓</div>
+        <div><span class="feature-strong">Offerte-analyse</span> — schilder, gietvloer, badkamer. Direct groen/oranje/rood per post</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-check">✓</div>
+        <div><span class="feature-strong">Budget tracker</span> — upload facturen, AI boekt automatisch en waarschuwt bij overschrijding</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-check">✓</div>
+        <div><span class="feature-strong">Projectplanning</span> — 8 of 11 fasen met taken, deadlines en reminders</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-check">✓</div>
+        <div><span class="feature-strong">Documentenkluis</span> — alle stukken veilig opgeslagen, geordend per categorie</div>
+      </div>
+    </div>
+
+    <div class="trust-row">
+      <div class="trust-item"><span class="trust-icon">🔒</span> 14 dagen geld-terug garantie</div>
+      <div class="trust-item"><span class="trust-icon">⭐</span> 4.8/5 — 12.400+ leden</div>
+      <div class="trust-item"><span class="trust-icon">🏢</span> Bylder Nederland B.V. · KvK 65020006</div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-text">"We betaalden €99 voor Bylder en bespaarden ruim €5.800 op onze gietvloer, bank en slaapkamerset. De meerwerkanalyse alleen al was het dubbele en driedubbele waard."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MK</div>
+        <div>
+          <div class="testimonial-name">Marieke &amp; Kevin</div>
+          <div class="testimonial-role">Nieuwbouwkoper · Utrecht</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECHTS: BETAALFORMULIER -->
+  <div class="payment-side">
+    <div class="payment-card">
+      <div class="payment-header">
+        <div class="payment-header-title">Jouw gegevens &amp; betaling</div>
+        <div class="payment-header-sub">Veilig betalen via iDEAL, Bancontact of creditcard</div>
+      </div>
+
+      <div class="payment-body">
+
+        <!-- ERROR BANNER -->
+        <div class="error-banner" id="errorBanner"></div>
+
+        <!-- NAAM -->
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="voornaam">Voornaam *</label>
+            <input class="form-input" type="text" id="voornaam" placeholder="Jouw voornaam" autocomplete="given-name">
+            <div class="form-error" id="err-voornaam">Vul je voornaam in</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="achternaam">Achternaam *</label>
+            <input class="form-input" type="text" id="achternaam" placeholder="Achternaam" autocomplete="family-name">
+            <div class="form-error" id="err-achternaam">Vul je achternaam in</div>
+          </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group">
+          <label class="form-label" for="email">E-mailadres *</label>
+          <input class="form-input" type="email" id="email" placeholder="jij@voorbeeld.nl" autocomplete="email">
+          <div class="form-error" id="err-email">Vul een geldig e-mailadres in</div>
+        </div>
+
+        <!-- TELEFOON -->
+        <div class="form-group">
+          <label class="form-label" for="telefoon">Telefoonnummer</label>
+          <input class="form-input" type="tel" id="telefoon" placeholder="+31 6 12345678" autocomplete="tel">
+        </div>
+
+        <!-- BETAALMETHODE -->
+        <div>
+          <span class="method-label">Betaalmethode *</span>
+          <div class="methods-grid">
+            <button class="method-btn active" data-method="ideal" onclick="selectMethod('ideal', this)">
+              <div class="method-icon">🏦</div>
+              <div class="method-name">iDEAL</div>
+            </button>
+            <button class="method-btn" data-method="bancontact" onclick="selectMethod('bancontact', this)">
+              <div class="method-icon">💳</div>
+              <div class="method-name">Bancontact</div>
+            </button>
+            <button class="method-btn" data-method="creditcard" onclick="selectMethod('creditcard', this)">
+              <div class="method-icon">💳</div>
+              <div class="method-name">Creditcard</div>
+            </button>
+            <button class="method-btn" data-method="paypal" onclick="selectMethod('paypal', this)">
+              <div class="method-icon">🅿️</div>
+              <div class="method-name">PayPal</div>
+            </button>
+            <button class="method-btn" data-method="applepay" onclick="selectMethod('applepay', this)">
+              <div class="method-icon">🍎</div>
+              <div class="method-name">Apple Pay</div>
+            </button>
+            <button class="method-btn" data-method="sofort" onclick="selectMethod('sofort', this)">
+              <div class="method-icon">⚡</div>
+              <div class="method-name">Sofort</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- iDEAL BANK KEUZE -->
+        <div class="ideal-banks show" id="idealBanks">
+          <div class="form-group">
+            <label class="form-label" for="idealBank">Kies je bank *</label>
+            <select class="form-input" id="idealBank">
+              <option value="">— Selecteer je bank —</option>
+              <option value="ABNANL2A">ABN AMRO</option>
+              <option value="ASNBNL21">ASN Bank</option>
+              <option value="BUNQNL2A">bunq</option>
+              <option value="HANDNL2A">Handelsbanken</option>
+              <option value="INGBNL2A">ING</option>
+              <option value="KNABNL2H">Knab</option>
+              <option value="NNBANL2G">Nationale-Nederlanden</option>
+              <option value="RABONL2U">Rabobank</option>
+              <option value="RBRBNL21">RegioBank</option>
+              <option value="REVOLT21">Revolut</option>
+              <option value="SNSBNL2A">SNS Bank</option>
+              <option value="TRIONL2U">Triodos Bank</option>
+              <option value="FVLBNL22">Van Lanschot</option>
+            </select>
+            <div class="form-error" id="err-bank">Selecteer je bank</div>
+          </div>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="order-summary">
+          <div class="summary-row">
+            <span>Bylder Lidmaatschap</span>
+            <span>€81,82</span>
+          </div>
+          <div class="summary-row">
+            <span>BTW (21%)</span>
+            <span>€17,18</span>
+          </div>
+          <div class="summary-row total">
+            <span>Totaal</span>
+            <span>€99,00</span>
+          </div>
+        </div>
+
+        <!-- PAY BUTTON -->
+        <button class="pay-btn" id="payBtn" onclick="initieerBetaling()">
+          <span id="payBtnText">🔒 Betaal €99 via iDEAL</span>
+        </button>
+
+        <div style="font-size:11px;color:var(--bark-3);text-align:center;margin-top:12px;line-height:1.5;">
+          Door te betalen ga je akkoord met de <a href="/algemene-voorwaarden" style="color:var(--moss);">Algemene Voorwaarden</a> en het <a href="/privacy" style="color:var(--moss);">Privacybeleid</a> van Bylder Nederland B.V.
+        </div>
+      </div>
+
+      <div class="security-footer">
+        <div class="sec-item">🔒 SSL-versleuteld</div>
+        <div class="sec-item">🏦 Pay.nl gecertificeerd</div>
+        <div class="sec-item">✅ PCI-DSS compliant</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+// ── PAY.NL CONFIGURATIE ──────────────────────────────────────────
+// API credentials staan NIET meer in de frontend
+// Ze worden beheerd via Vercel Environment Variables (server-side)
+
+// Betaalmethode Pay.nl codes
+const METHOD_CODES = {
+  ideal:      10,   // iDEAL
+  bancontact: 436,  // Bancontact
+  creditcard: 706,  // Creditcard (Visa/MC)
+  paypal:     138,  // PayPal
+  applepay:   1756, // Apple Pay
+  sofort:     559,  // Sofort Banking
+};
+
+let selectedMethod = 'ideal';
+
+// ── UI FUNCTIES ──────────────────────────────────────────────────
+function selectMethod(method, btn) {
+  selectedMethod = method;
+  document.querySelectorAll('.method-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  // iDEAL bank select tonen/verbergen
+  const idealBanks = document.getElementById('idealBanks');
+  idealBanks.classList.toggle('show', method === 'ideal');
+
+  // Pay button tekst aanpassen
+  const labels = {
+    ideal:      'Betaal €99 via iDEAL',
+    bancontact: 'Betaal €99 via Bancontact',
+    creditcard: 'Betaal €99 met creditcard',
+    paypal:     'Betaal €99 via PayPal',
+    applepay:   'Betaal €99 met Apple Pay',
+    sofort:     'Betaal €99 via Sofort',
+  };
+  document.getElementById('payBtnText').textContent = '🔒 ' + (labels[method] || 'Betaal €99');
+}
+
+// ── VALIDATIE ────────────────────────────────────────────────────
+function validateForm() {
+  let valid = true;
+  const fields = [
+    { id: 'voornaam',  errId: 'err-voornaam',  check: v => v.trim().length > 0 },
+    { id: 'achternaam',errId: 'err-achternaam', check: v => v.trim().length > 0 },
+    { id: 'email',     errId: 'err-email',      check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+  ];
+
+  fields.forEach(f => {
+    const el  = document.getElementById(f.id);
+    const err = document.getElementById(f.errId);
+    const ok  = f.check(el.value);
+    el.classList.toggle('error', !ok);
+    err.classList.toggle('show', !ok);
+    if (!ok) valid = false;
+  });
+
+  // Bank verplicht bij iDEAL
+  if (selectedMethod === 'ideal') {
+    const bank    = document.getElementById('idealBank');
+    const errBank = document.getElementById('err-bank');
+    const ok      = bank.value !== '';
+    bank.classList.toggle('error', !ok);
+    errBank.classList.toggle('show', !ok);
+    if (!ok) valid = false;
+  }
+
+  return valid;
+}
+
+// ── BETALING INITIËREN ───────────────────────────────────────────
+async function initieerBetaling() {
+  // Verberg vorige fout
+  const errorBanner = document.getElementById('errorBanner');
+  errorBanner.classList.remove('show');
+
+  if (!validateForm()) return;
+
+  const btn      = document.getElementById('payBtn');
+  const btnText  = document.getElementById('payBtnText');
+  btn.classList.add('loading');
+  btnText.textContent = '⏳ Bezig met doorsturen…';
+
+  const voornaam   = document.getElementById('voornaam').value.trim();
+  const achternaam = document.getElementById('achternaam').value.trim();
+  const email      = document.getElementById('email').value.trim();
+  const telefoon   = document.getElementById('telefoon').value.trim();
+  const bank       = selectedMethod === 'ideal' ? document.getElementById('idealBank').value : '';
+
+  try {
+    // Aanroep naar eigen Vercel serverless function (token is server-side)
+    const response = await fetch('/api/betaling-start', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        voornaam,
+        achternaam,
+        email,
+        telefoon:      telefoon || '',
+        paymentMethod: METHOD_CODES[selectedMethod],
+        issuer:        bank || undefined,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.paymentUrl) {
+      // Sla e-mail op voor succes-pagina
+      sessionStorage.setItem('bylder_email', email);
+      sessionStorage.setItem('bylder_naam', voornaam);
+      // Doorsturen naar Pay.nl betaalpagina
+      window.location.href = data.paymentUrl;
+    } else {
+      throw new Error(data.error || 'Onbekende fout bij de betaalservice');
+    }
+
+  } catch (err) {
+    btn.classList.remove('loading');
+    btnText.textContent = '🔒 Betaal €99 via ' + selectedMethod.charAt(0).toUpperCase() + selectedMethod.slice(1);
+
+    // Toon foutmelding
+    let msg = err.message;
+    if (msg.includes('Failed to fetch') || msg.includes('NetworkError')) {
+      msg = 'Geen verbinding met de betaalservice. Controleer je internetverbinding en probeer opnieuw.';
+    }
+    errorBanner.textContent = '⚠ ' + msg;
+    errorBanner.classList.add('show');
+    errorBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+// ── SUCCES REDIRECT AFHANDELING ──────────────────────────────────
+// Als teruggestuurd van Pay.nl met ?status=paid
+function checkReturnStatus() {
+  const params = new URLSearchParams(window.location.search);
+  const orderId = params.get('orderId') || params.get('order_id');
+
+  if (orderId) {
+    // Verifieer status via Pay.nl (in productie via je eigen backend)
+    const email = sessionStorage.getItem('bylder_email') || '';
+    const naam  = sessionStorage.getItem('bylder_naam') || '';
+
+    document.getElementById('successEmail').textContent = email || 'jouw e-mailadres';
+    document.getElementById('successOverlay').classList.add('show');
+
+    sessionStorage.removeItem('bylder_email');
+    sessionStorage.removeItem('bylder_naam');
+  }
+}
+
+// ── LIVE VALIDATIE ───────────────────────────────────────────────
+['voornaam', 'achternaam', 'email'].forEach(id => {
+  document.getElementById(id).addEventListener('blur', () => {
+    validateForm();
+  });
+});
+
+// Init
+checkReturnStatus();
+</script>
+</body>
+</html>
