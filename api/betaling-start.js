@@ -1,105 +1,108 @@
 // api/betaling-start.js
 // Vercel Serverless Function — Pay.nl transaction start
-// Houd de API token server-side, nooit zichtbaar in de browser
 
-export default async function handler(req, res) {
-  // Alleen POST toestaan
+const https = require('https');
+
+module.exports = async function handler(req, res) {
+  if (req.method === 'OPTIONS') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    return res.status(200).end();
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // CORS headers — alleen eigen domein
-  res.setHeader('Access-Control-Allow-Origin', 'https://bylder.com');
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Origin', '*');
 
-  // Credentials uit Vercel Environment Variables (nooit hardcoden in code)
   const SERVICE_ID = process.env.PAYNL_SERVICE_ID;
   const API_TOKEN  = process.env.PAYNL_API_TOKEN;
 
   if (!SERVICE_ID || !API_TOKEN) {
-    console.error('Pay.nl credentials ontbreken in environment variables');
+    console.error('Pay.nl credentials ontbreken');
     return res.status(500).json({ error: 'Betaalservice niet geconfigureerd' });
   }
 
   try {
-    const body = req.body;
+    const body = req.body || {};
 
-    // Valideer verplichte velden
-    const required = ['voornaam', 'achternaam', 'email', 'paymentMethod'];
-    for (const field of required) {
-      if (!body[field]) {
-        return res.status(400).json({ error: `Veld ontbreekt: ${field}` });
-      }
+    const { voornaam, achternaam, email, telefoon, paymentMethod, issuer } = body;
+
+    if (!voornaam || !achternaam || !email || !paymentMethod) {
+      return res.status(400).json({ error: 'Verplichte velden ontbreken' });
     }
 
-    // E-mail validatie
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(body.email)) {
-      return res.status(400).json({ error: 'Ongeldig e-mailadres' });
-    }
-
-    // IP-adres ophalen
     const ipAddress =
-      req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
+      (req.headers['x-forwarded-for'] || '').split(',')[0].trim() ||
       req.headers['x-real-ip'] ||
-      req.socket?.remoteAddress ||
       '127.0.0.1';
 
-    // Pay.nl payload opbouwen
-    const payload = {
-      serviceId:   SERVICE_ID,
-      amount:      9900,            // €99,00 in centen
-      currency:    'EUR',
-      description: 'Bylder Lidmaatschap',
-      returnUrl:   'https://bylder.com/betalen/succes/',
-      exchangeUrl: 'https://bylder.com/api/paynl-exchange/',
-      paymentMethod: body.paymentMethod,
+    const payload = JSON.stringify({
+      serviceId:     SERVICE_ID,
+      amount:        { value: 9900, currency: 'EUR' },
+      description:   'Bylder Lidmaatschap',
+      returnUrl:     'https://bylder.com/betalen/succes/',
+      exchangeUrl:   'https://bylder.com/api/paynl-exchange',
+      paymentMethod: { id: paymentMethod },
       customer: {
-        firstName:  body.voornaam,
-        lastName:   body.achternaam,
-        email:      body.email,
-        phone:      body.telefoon || undefined,
+        firstName:  voornaam,
+        lastName:   achternaam,
+        email:      email,
+        phone:      telefoon || '',
         language:   'nl',
         ipAddress,
       },
-      extra1: body.email,
-      extra2: `${body.voornaam} ${body.achternaam}`,
-    };
-
-    // iDEAL bank meegeven
-    if (body.issuer) {
-      payload.issuer = body.issuer;
-    }
-
-    // Pay.nl API aanroepen
-    const paynlResponse = await fetch('https://rest-api.pay.nl/v13/Transaction/start', {
-      method:  'POST',
-      headers: {
-        'Content-Type':  'application/json',
-        'Authorization': 'Basic ' + Buffer.from(API_TOKEN + ':').toString('base64'),
-        'Accept':        'application/json',
-      },
-      body: JSON.stringify(payload),
+      ...(issuer ? { issuer } : {}),
+      extra1: email,
+      extra2: `${voornaam} ${achternaam}`,
     });
 
-    const data = await paynlResponse.json();
+    const auth = Buffer.from(`${API_TOKEN}:`).toString('base64');
 
-    if (!paynlResponse.ok || !data.transaction?.paymentUrl) {
-      console.error('Pay.nl fout:', JSON.stringify(data));
-      return res.status(502).json({
-        error: data.message || data.error || 'Betaalservice tijdelijk niet beschikbaar'
+    const result = await new Promise((resolve, reject) => {
+      const options = {
+        hostname: 'rest-api.pay.nl',
+        path:     '/v13/Transaction/start',
+        method:   'POST',
+        headers: {
+          'Content-Type':   'application/json',
+          'Authorization':  `Basic ${auth}`,
+          'Accept':         'application/json',
+          'Content-Length': Buffer.byteLength(payload),
+        },
+      };
+
+      const reqHttp = https.request(options, (r) => {
+        let data = '';
+        r.on('data', chunk => data += chunk);
+        r.on('end', () => {
+          try { resolve({ status: r.statusCode, body: JSON.parse(data) }); }
+          catch(e) { reject(new Error('Ongeldig JSON antwoord van Pay.nl: ' + data)); }
+        });
       });
-    }
 
-    // Alleen de betaal-URL terugsturen (geen gevoelige data)
-    return res.status(200).json({
-      paymentUrl: data.transaction.paymentUrl,
-      transactionId: data.transaction.transactionId,
+      reqHttp.on('error', reject);
+      reqHttp.write(payload);
+      reqHttp.end();
     });
+
+    console.log('Pay.nl response status:', result.status);
+    console.log('Pay.nl response body:', JSON.stringify(result.body));
+
+    if (result.body && result.body.transaction && result.body.transaction.paymentUrl) {
+      return res.status(200).json({
+        paymentUrl:    result.body.transaction.paymentUrl,
+        transactionId: result.body.transaction.transactionId,
+      });
+    } else {
+      const errMsg = result.body?.message || result.body?.error || JSON.stringify(result.body);
+      return res.status(502).json({ error: errMsg });
+    }
 
   } catch (err) {
-    console.error('Serverless function fout:', err);
-    return res.status(500).json({ error: 'Interne serverfout' });
+    console.error('Serverless fout:', err.message);
+    return res.status(500).json({ error: 'Interne serverfout: ' + err.message });
   }
-}
+};
