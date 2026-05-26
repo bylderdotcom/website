@@ -502,16 +502,79 @@ body {
 
 <body>
 
-<nav class="nav">
-  <a href="/" class="nav-logo">
-    <div class="nav-logo-dot">B.</div>
-    Bylder
-  </a>
-  <div class="nav-secure">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-    Beveiligde betaling via Pay.nl
+<!-- ═══════════════════════════════════════════════════
+     BYLDER UNIVERSELE NAV — v3.0
+     Volgorde: Voordelen | Vouchers | Voor wie?▾ | Prijzen
+════════════════════════════════════════════════════ -->
+<nav class="glass-nav">
+  <div class="nav-inner">
+
+    <!-- LOGO -->
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">B.</div>
+      <span>Bylder<span class="nav-logo-dot">.com</span></span>
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="nav-links">
+      <a href="/#features" class="nav-link">Voordelen</a>
+      <a href="/vouchers/" class="nav-link">Vouchers</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-btn">Voor wie? <span class="nav-arrow">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="/nieuwbouw-koper/" class="nav-dropdown-item">
+            <span class="ndi-icon">🏡</span>
+            <div><strong>Nieuwbouwkoper</strong><span>Meerwerklijst, vouchers, planning</span></div>
+          </a>
+          <a href="/bestaande-bouw/" class="nav-dropdown-item">
+            <span class="ndi-icon">🏠</span>
+            <div><strong>Bestaande bouw koper</strong><span>Offerte-check, aannemer matching</span></div>
+          </a>
+          <a href="/renovatie/" class="nav-dropdown-item">
+            <span class="ndi-icon">🔨</span>
+            <div><strong>Renovatiewoning</strong><span>Budgettool, subsidies, planning</span></div>
+          </a>
+        </div>
+      </div>
+
+      <a href="/betalen/" class="nav-link">Prijzen</a>
+    </div>
+
+    <!-- CTA GROEP -->
+    <div class="nav-cta-group">
+      <a href="https://app.bylder.com" class="nav-login">Inloggen</a>
+      <a href="/betalen/" class="btn-primary">Start gratis →</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobile()" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
   </div>
 </nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="/#features">Voordelen</a>
+  <a href="/vouchers/">Vouchers</a>
+  <a href="/nieuwbouw-koper/">🏡 Nieuwbouwkoper</a>
+  <a href="/bestaande-bouw/">🏠 Bestaande bouw koper</a>
+  <a href="/renovatie/">🔨 Renovatiewoning</a>
+  <a href="/betalen/">Prijzen</a>
+  <a href="https://app.bylder.com" class="mobile-login">Inloggen</a>
+  <a href="/betalen/" class="mobile-cta">Start gratis →</a>
+</div>
+
+<script>
+function toggleMobile() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+document.querySelectorAll('.mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.remove('open');
+  });
+});
+</script>
 
 <!-- SUCCES OVERLAY -->
 <div class="success-overlay" id="successOverlay">
