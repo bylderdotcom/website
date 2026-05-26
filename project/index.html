@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projecten & vakmannen — offerte check per stad | Bylder</title>
+<meta name="description" content="Controleer offertes voor 20+ woningprojecten in 288 gemeenten. Eerlijke marktprijzen, AI offerte-analyse en kortingsvouchers. Bylder begeleidt je van A tot Z.">
+<link rel="canonical" href="https://bylder.com/project/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{--cream:#F5F0E8;--cream-2:#EDE6D8;--bark:#1A1208;--bark-2:#3D2E1E;--bark-3:rgba(61,46,30,0.5);--moss:#3D5A3E;--moss-2:#4E7350;--rust:#B85C38;--gold:#C9A84C;--white:#fff;--border:rgba(61,46,30,0.1)}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:var(--bark-2);line-height:1.65}
+/* ═══════════════════════════════════════════
+   BYLDER UNIVERSELE NAVIGATIE — v2.0
+   Gebruik op ALLE pagina's van bylder.com
+═══════════════════════════════════════════ */
+
+/* NAV BASIS */
+.glass-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(245,240,232,0.93);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(61,46,30,0.08);
+  height: 64px;
+  display: flex; align-items: center;
+}
+.nav-inner {
+  width: 100%; max-width: 1200px; margin: 0 auto;
+  padding: 0 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px;
+}
+
+/* LOGO */
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; flex-shrink: 0;
+}
+.nav-logo-icon {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: #3D5A3E;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 800;
+  font-family: 'Space Mono', monospace;
+  color: #F5F0E8;
+}
+.nav-logo span {
+  font-weight: 800; font-size: 17px;
+  letter-spacing: -0.02em; color: #1A1208;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.nav-logo .nav-logo-dot { color: #3D5A3E; }
+
+/* LINKS */
+.nav-links {
+  display: flex; align-items: center; gap: 4px;
+  flex: 1; justify-content: center;
+}
+.nav-link {
+  font-size: 14px; font-weight: 500;
+  color: rgba(61,46,30,0.55);
+  text-decoration: none; padding: 8px 12px;
+  border-radius: 8px;
+  transition: color 0.15s, background 0.15s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: none; border: none; cursor: pointer;
+  white-space: nowrap;
+}
+.nav-link:hover, .nav-link:focus {
+  color: #1A1208;
+  background: rgba(61,46,30,0.05);
+  outline: none;
+}
+.nav-link.active { color: #3D5A3E; font-weight: 600; }
+
+/* DROPDOWN */
+.nav-dropdown { position: relative; }
+.nav-dropdown-btn { display: flex; align-items: center; gap: 4px; }
+.nav-arrow { font-size: 10px; transition: transform 0.2s; }
+.nav-dropdown:hover .nav-arrow,
+.nav-dropdown:focus-within .nav-arrow { transform: rotate(180deg); }
+
+.nav-dropdown-menu {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid rgba(61,46,30,0.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(61,46,30,0.12);
+  padding: 8px;
+  min-width: 260px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.15s, transform 0.15s;
+  transform: translateX(-50%) translateY(-4px);
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 10px;
+  text-decoration: none; color: #3D2E1E;
+  transition: background 0.12s;
+}
+.nav-dropdown-item:hover { background: #F5F0E8; }
+.nav-dropdown-item .ndi-icon { font-size: 20px; flex-shrink: 0; }
+.nav-dropdown-item strong {
+  display: block; font-size: 13px; font-weight: 700;
+  color: #1A1208; margin-bottom: 1px;
+}
+.nav-dropdown-item span {
+  display: block; font-size: 11px; color: rgba(61,46,30,0.5);
+}
+
+/* CTA GROEP */
+.nav-cta-group {
+  display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+}
+.nav-login {
+  font-size: 13px; font-weight: 600;
+  color: rgba(61,46,30,0.5); text-decoration: none;
+  padding: 8px 12px; border-radius: 8px;
+  transition: color 0.15s;
+}
+.nav-login:hover { color: #1A1208; }
+
+/* PRIMAIRE CTA KNOP */
+.btn-primary {
+  background: #3D5A3E; color: #F5F0E8;
+  padding: 10px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+  transition: all 0.2s; border: none; cursor: pointer; white-space: nowrap;
+}
+.btn-primary:hover {
+  background: #4E7350;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(61,90,62,0.25);
+}
+
+/* HAMBURGER */
+.mobile-menu-btn {
+  display: none; flex-direction: column; justify-content: center;
+  gap: 5px; background: none; border: none; cursor: pointer;
+  padding: 8px; border-radius: 8px; width: 40px; height: 40px;
+}
+.mobile-menu-btn span {
+  display: block; height: 2px; width: 22px;
+  background: #3D2E1E; border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+  display: none; position: fixed;
+  top: 64px; left: 0; right: 0;
+  background: #fff;
+  border-bottom: 1px solid rgba(61,46,30,0.1);
+  box-shadow: 0 8px 32px rgba(61,46,30,0.1);
+  z-index: 99; flex-direction: column; padding: 12px 5% 20px;
+  max-height: calc(100vh - 64px); overflow-y: auto;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  padding: 13px 4px; font-size: 15px; font-weight: 500;
+  color: #3D2E1E; text-decoration: none;
+  border-bottom: 1px solid rgba(61,46,30,0.06);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.mobile-nav a:last-child { border-bottom: none; }
+.mobile-nav a:hover { color: #3D5A3E; }
+.mobile-nav .mobile-login {
+  color: rgba(61,46,30,0.5); font-size: 14px;
+}
+.mobile-nav .mobile-cta {
+  margin-top: 8px; background: #3D5A3E; color: #F5F0E8 !important;
+  padding: 13px 20px !important; border-radius: 10px;
+  font-weight: 700 !important; text-align: center;
+  border-bottom: none !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav-login { display: none; }
+  .mobile-menu-btn { display: flex; }
+}
+@media (max-width: 480px) {
+  .nav-cta-group .btn-primary { display: none; }
+}
+
+.container{max-width:1100px;margin:0 auto;padding:0 5%}
+.section{padding:80px 0}
+.s-label{font-size:11px;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.12em;color:var(--moss);font-weight:700;margin-bottom:10px}
+.hero{padding:120px 0 72px;text-align:center}
+.hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--bark);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px}
+.hero h1 em{color:var(--moss);font-style:normal}
+.hero-sub{font-size:17px;color:var(--bark-3);max-width:560px;margin:0 auto 40px;line-height:1.65}
+.hero-stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;padding:28px 0;border-top:1px solid var(--border)}
+.stat-val{font-size:2rem;font-weight:800;color:var(--bark);letter-spacing:-0.03em;font-family:"Space Mono",monospace;line-height:1}
+.stat-lbl{font-size:12px;color:var(--bark-3);margin-top:4px}
+.projects-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.project-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:24px 20px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:8px;transition:all 0.2s;}
+.project-card:hover{border-color:var(--moss);box-shadow:0 8px 32px rgba(61,90,62,0.12);transform:translateY(-2px)}
+.project-icon{font-size:28px;margin-bottom:4px}
+.project-name{font-size:15px;font-weight:800;color:var(--bark);letter-spacing:-0.01em}
+.project-vakman{font-size:11px;color:var(--bark-3);font-family:"Space Mono",monospace}
+.project-prijs{font-size:13px;font-weight:700;color:var(--moss);font-family:"Space Mono",monospace}
+.project-desc{font-size:13px;color:var(--bark-2);line-height:1.55;flex:1}
+.project-cta{font-size:12px;font-weight:700;color:var(--moss);margin-top:auto}
+.search-box{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:28px 32px;margin-bottom:40px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.search-input{flex:1;min-width:200px;padding:11px 16px;border:1.5px solid rgba(61,46,30,0.12);border-radius:10px;font-size:15px;font-family:inherit;color:var(--bark-2);background:var(--cream);outline:none;transition:border-color 0.2s}
+.search-input:focus{border-color:var(--moss);background:#fff}
+.search-label{font-size:14px;font-weight:600;color:var(--bark-2);white-space:nowrap}
+.btn-primary{background:var(--moss);color:var(--cream);padding:12px 24px;border-radius:10px;font-size:14px;font-weight:700;font-family:"Plus Jakarta Sans",sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;border:none;cursor:pointer;white-space:nowrap}
+.btn-primary:hover{background:var(--moss-2);transform:translateY(-1px)}
+.cta-section{background:var(--bark);padding:80px 0;text-align:center}
+.cta-section h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:var(--cream);letter-spacing:-0.03em;margin-bottom:14px}
+.cta-section p{font-size:16px;color:rgba(245,240,232,0.55);max-width:480px;margin:0 auto 32px;line-height:1.65}
+footer{background:var(--bark);border-top:1px solid rgba(245,240,232,0.06);padding:32px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(245,240,232,0.35)}
+footer a{color:rgba(245,240,232,0.4);text-decoration:none}
+footer a:hover{color:rgba(245,240,232,0.8)}
+@media(max-width:1024px){.projects-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){.projects-grid{grid-template-columns:repeat(2,1fr)}.hero-stats{gap:24px}}
+@media(max-width:480px){.projects-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<!-- ═══════════════════════════════════════════════════
+     BYLDER UNIVERSELE NAV — v3.0
+     Volgorde: Voordelen | Vouchers | Voor wie?▾ | Prijzen
+════════════════════════════════════════════════════ -->
+<nav class="glass-nav">
+  <div class="nav-inner">
+
+    <!-- LOGO -->
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">B.</div>
+      <span>Bylder<span class="nav-logo-dot">.com</span></span>
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="nav-links">
+      <a href="/#features" class="nav-link">Voordelen</a>
+      <a href="/vouchers/" class="nav-link">Vouchers</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-btn">Voor wie? <span class="nav-arrow">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="/nieuwbouw-koper/" class="nav-dropdown-item">
+            <span class="ndi-icon">🏡</span>
+            <div><strong>Nieuwbouwkoper</strong><span>Meerwerklijst, vouchers, planning</span></div>
+          </a>
+          <a href="/bestaande-bouw/" class="nav-dropdown-item">
+            <span class="ndi-icon">🏠</span>
+            <div><strong>Bestaande bouw koper</strong><span>Offerte-check, aannemer matching</span></div>
+          </a>
+          <a href="/renovatie/" class="nav-dropdown-item">
+            <span class="ndi-icon">🔨</span>
+            <div><strong>Renovatiewoning</strong><span>Budgettool, subsidies, planning</span></div>
+          </a>
+        </div>
+      </div>
+
+      <a href="/prijzen/" class="nav-link">Prijzen</a>
+    </div>
+
+    <!-- CTA GROEP -->
+    <div class="nav-cta-group">
+      <a href="https://app.bylder.com" class="nav-login">Inloggen</a>
+      <a href="/betalen/" class="btn-primary">Start gratis →</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobile()" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="/#features">Voordelen</a>
+  <a href="/vouchers/">Vouchers</a>
+  <a href="/nieuwbouw-koper/">🏡 Nieuwbouwkoper</a>
+  <a href="/bestaande-bouw/">🏠 Bestaande bouw koper</a>
+  <a href="/renovatie/">🔨 Renovatiewoning</a>
+  <a href="/prijzen/">Prijzen</a>
+  <a href="https://app.bylder.com" class="mobile-login">Inloggen</a>
+  <a href="/betalen/" class="mobile-cta">Start gratis →</a>
+</div>
+
+<script>
+function toggleMobile() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+document.querySelectorAll('.mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.remove('open');
+  });
+});
+</script>
+<section class="hero">
+  <div class="container">
+    <div class="s-label">20 projecten · 288 gemeenten</div>
+    <h1>Wat kost jouw verbouwing in <em>jouw stad</em>?</h1>
+    <p class="hero-sub">Eerlijke marktprijzen, AI offerte-check en kortingsvouchers voor elk woningproject. Van badkamer tot laadpaal.</p>
+    <div class="hero-stats">
+      <div><div class="stat-val">5.620</div><div class="stat-lbl">Lokale projectpagina's</div></div>
+      <div><div class="stat-val">20</div><div class="stat-lbl">Projectcategorieën</div></div>
+      <div><div class="stat-val">288</div><div class="stat-lbl">Gemeenten</div></div>
+      <div><div class="stat-val">€99</div><div class="stat-lbl">Eenmalig lidmaatschap</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="search-box">
+      <span class="search-label">Zoek jouw project:</span>
+      <input type="text" class="search-input" id="projectSearch" placeholder="bijv. badkamer, laadpaal, gietvloer..." oninput="filterProjects(this.value)">
+      <input type="text" class="search-input" id="stadSearch" placeholder="bijv. Amsterdam, Eindhoven..." style="max-width:220px">
+      <button class="btn-primary" onclick="zoekProject()">Zoek →</button>
+    </div>
+    <div class="s-label">Alle projectcategorieën</div>
+    <h2 style="font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:800;color:var(--bark);letter-spacing:-0.025em;margin-bottom:0">Kies je project</h2>
+    <div class="projects-grid" id="projectsGrid">
+      
+      <a href="/project/badkamer-renovatie/" class="project-card">
+        <div class="project-icon">🚿</div>
+        <div class="project-name">Badkamer renovatie</div>
+        <div class="project-vakman">Loodgieter, Tegelzetter, Elektricien</div>
+        <div class="project-prijs">€7.500–€20.000+</div>
+        <div class="project-desc">Complete badkamerrenovatie inclusief tegelen, sanitair en loodgieterswerk.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/gietvloer-leggen/" class="project-card">
+        <div class="project-icon">🪨</div>
+        <div class="project-name">Gietvloer leggen</div>
+        <div class="project-vakman">Vloerenlegger</div>
+        <div class="project-prijs">€45–€110+/m²</div>
+        <div class="project-desc">Gietvloer of terrazzo leggen — strak, onderhoudsvriendelijk en modern.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/schilderwerk-binnen/" class="project-card">
+        <div class="project-icon">🎨</div>
+        <div class="project-name">Schilderwerk binnenshuis</div>
+        <div class="project-vakman">Schilder</div>
+        <div class="project-prijs">€6–€14+/m²</div>
+        <div class="project-desc">Muren, plafonds en kozijnen schilderen door een vakman.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/vloerverwarming-installeren/" class="project-card">
+        <div class="project-icon">🌡️</div>
+        <div class="project-name">Vloerverwarming installeren</div>
+        <div class="project-vakman">Loodgieter, Elektricien</div>
+        <div class="project-prijs">€30–€90+/m²</div>
+        <div class="project-desc">Water- of elektrische vloerverwarming installeren.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/traprenovatie/" class="project-card">
+        <div class="project-icon">🪜</div>
+        <div class="project-name">Traprenovatie</div>
+        <div class="project-vakman">Timmerman, Vloerenlegger</div>
+        <div class="project-prijs">€800–€2.500+</div>
+        <div class="project-desc">Trap renoveren met overzettreden of nieuwe leuning.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/inductiekookplaat-aansluiten/" class="project-card">
+        <div class="project-icon">⚡</div>
+        <div class="project-name">Inductiekookplaat aansluiten</div>
+        <div class="project-vakman">Elektricien</div>
+        <div class="project-prijs">€120–€380+</div>
+        <div class="project-desc">Inductiekookplaat of fornuis elektrisch aansluiten.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/laadpaal-installeren/" class="project-card">
+        <div class="project-icon">🔌</div>
+        <div class="project-name">Laadpaal installeren</div>
+        <div class="project-vakman">Elektricien</div>
+        <div class="project-prijs">€400–€1.400+</div>
+        <div class="project-desc">Laadpaal thuis installeren voor je elektrische auto.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/stucwerk/" class="project-card">
+        <div class="project-icon">🏗️</div>
+        <div class="project-name">Stucwerk</div>
+        <div class="project-vakman">Stukadoor</div>
+        <div class="project-prijs">€8–€18+/m²</div>
+        <div class="project-desc">Spuit- of sierpleister aanbrengen op wanden en plafonds.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/tuinbestrating/" class="project-card">
+        <div class="project-icon">🌿</div>
+        <div class="project-name">Tuinbestrating aanleggen</div>
+        <div class="project-vakman">Hovenier, Stratenmaker</div>
+        <div class="project-prijs">€20–€60+/m²</div>
+        <div class="project-desc">Tuin bestraten met tegels, klinkers of sierbestrating.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/dakkapel-plaatsen/" class="project-card">
+        <div class="project-icon">🏠</div>
+        <div class="project-name">Dakkapel plaatsen</div>
+        <div class="project-vakman">Timmerman, Dakdekker</div>
+        <div class="project-prijs">€7.500–€20.000+</div>
+        <div class="project-desc">Dakkapel plaatsen aan voor- of achterkant van de woning.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/keuken-monteren/" class="project-card">
+        <div class="project-icon">🍳</div>
+        <div class="project-name">Keuken monteren</div>
+        <div class="project-vakman">Timmerman, Loodgieter</div>
+        <div class="project-prijs">€400–€1.500+</div>
+        <div class="project-desc">Nieuwe keuken monteren en aansluiten door een vakman.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/badkamer-tegelen/" class="project-card">
+        <div class="project-icon">🪟</div>
+        <div class="project-name">Badkamer tegelen</div>
+        <div class="project-vakman">Tegelzetter</div>
+        <div class="project-prijs">€35–€95+/m²</div>
+        <div class="project-desc">Badkamer tegelen — wanden en vloer inclusief voegwerk.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/isolatie-aanbrengen/" class="project-card">
+        <div class="project-icon">🏡</div>
+        <div class="project-name">Isolatie aanbrengen</div>
+        <div class="project-vakman">Isolatiebedrijf</div>
+        <div class="project-prijs">€15–€50+/m²</div>
+        <div class="project-desc">Spouwmuur-, dak- of vloerisolatie voor energiebesparing.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/aanbouw-realiseren/" class="project-card">
+        <div class="project-icon">🔨</div>
+        <div class="project-name">Aanbouw realiseren</div>
+        <div class="project-vakman">Aannemer, Timmerman</div>
+        <div class="project-prijs">€1.200–€2.800+/m²</div>
+        <div class="project-desc">Aanbouw of uitbouw aan de woning realiseren.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/raamdecoratie-plaatsen/" class="project-card">
+        <div class="project-icon">🪟</div>
+        <div class="project-name">Raamdecoratie plaatsen</div>
+        <div class="project-vakman">Interieurstylist</div>
+        <div class="project-prijs">€80–€320+/raam</div>
+        <div class="project-desc">Gordijnen, shutters of lamellen plaatsen door een vakman.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/zonwering-installeren/" class="project-card">
+        <div class="project-icon">☀️</div>
+        <div class="project-name">Zonwering installeren</div>
+        <div class="project-vakman">Zonweringsspecialist</div>
+        <div class="project-prijs">€350–€1.400+</div>
+        <div class="project-desc">Buitenzonwering, screens of markiezen installeren.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/parket-leggen/" class="project-card">
+        <div class="project-icon">🪵</div>
+        <div class="project-name">Parket of laminaat leggen</div>
+        <div class="project-vakman">Vloerenlegger</div>
+        <div class="project-prijs">€18–€55+/m²</div>
+        <div class="project-desc">Parketvloer, laminaat of PVC-vloer leggen.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/slaapkamer-inrichten/" class="project-card">
+        <div class="project-icon">🛏️</div>
+        <div class="project-name">Slaapkamer inrichten</div>
+        <div class="project-vakman">Interieurstylist</div>
+        <div class="project-prijs">€2.500–€12.000+</div>
+        <div class="project-desc">Complete slaapkamer inrichten — bed, kast en verlichting.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/verlichting-installeren/" class="project-card">
+        <div class="project-icon">💡</div>
+        <div class="project-name">Verlichting installeren</div>
+        <div class="project-vakman">Elektricien</div>
+        <div class="project-prijs">€40–€150+/spot</div>
+        <div class="project-desc">Verlichting installeren — inbouwspots, hangers of wandlampen.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/duurzaam-verbouwen/" class="project-card">
+        <div class="project-icon">🌱</div>
+        <div class="project-name">Duurzaam verbouwen</div>
+        <div class="project-vakman">Installateur, Isolatiebedrijf</div>
+        <div class="project-prijs">€3.500–€18.000+</div>
+        <div class="project-desc">Warmtepomp, zonnepanelen of isolatie voor energiebesparing.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Klaar om je offerte te checken?</h2>
+    <p>Upload je offerte, activeer kortingsvouchers en laat je begeleiden. Eenmalig €99.</p>
+    <a href="/betalen/" class="btn-primary" style="font-size:16px;padding:15px 36px;display:inline-flex">Start mijn begeleiding →</a>
+    <div style="margin-top:16px;font-size:13px;color:rgba(245,240,232,0.35);font-family:'Space Mono',monospace">⭐ 4.8/5 · 12.400+ leden · 14 dagen geld-terug garantie</div>
+  </div>
+</section>
+<footer>
+  <div>© 2026 Bylder Nederland B.V. · KvK 65020006</div>
+  <div><a href="/vouchers/">Vouchers</a> · <a href="/prijzen/">Prijzen</a> · <a href="/nieuwbouw-gids/">Gidsen</a> · <a href="mailto:info@bylder.com">Contact</a></div>
+</footer>
+<script>
+function filterProjects(q) {
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach(c => {
+    const text = c.textContent.toLowerCase();
+    c.style.display = text.includes(q.toLowerCase()) ? '' : 'none';
+  });
+}
+function zoekProject() {
+  const project = document.getElementById('projectSearch').value.trim();
+  const stad = document.getElementById('stadSearch').value.trim();
+  if (project && stad) {
+    const pSlug = project.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    const sSlug = stad.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    window.location.href = '/project/' + pSlug + '/' + sSlug + '/';
+  } else if (project) {
+    filterProjects(project);
+  }
+}
+</script>
+</body>
+</html>
