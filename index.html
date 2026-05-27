@@ -2076,5 +2076,91 @@ document.addEventListener('click',function(e){
   }
 });
 </script>
+
+<!-- AUPING POP-UP — Bylder × Auping Rotterdam Centrum -->
+<div id="aupingPopup" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(8px);z-index:1000;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#fff;border-radius:24px;max-width:520px;width:100%;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.3);animation:popIn 0.4s cubic-bezier(0.34,1.56,0.64,1);">
+
+    <!-- AUPING HEADER -->
+    <div style="background:#003B6F;padding:28px 32px;position:relative;">
+      <button onclick="sluitPopup()" style="position:absolute;top:16px;right:16px;background:rgba(255,255,255,0.15);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background 0.2s;" onmouseenter="this.style.background='rgba(255,255,255,0.25)'" onmouseleave="this.style.background='rgba(255,255,255,0.15)'">×</button>
+
+      <!-- Auping logo (SVG tekst-stijl) -->
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <div style="background:#fff;border-radius:6px;padding:6px 12px;">
+          <span style="font-size:18px;font-weight:900;color:#003B6F;letter-spacing:0.1em;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif;">AUPING</span>
+        </div>
+        <span style="color:rgba(255,255,255,0.4);font-size:14px;">×</span>
+        <div style="background:rgba(61,90,62,0.9);border-radius:6px;padding:6px 12px;">
+          <span style="font-size:14px;font-weight:800;color:#F5F0E8;font-family:'Plus Jakarta Sans',sans-serif;">Bylder.com</span>
+        </div>
+      </div>
+      <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:8px;">Exclusief voor Bylder-leden</div>
+      <div style="font-size:20px;font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1.2;">Drie voordelen bij<br>Auping Rotterdam Centrum</div>
+    </div>
+
+    <!-- DRIE VOORDELEN -->
+    <div style="padding:24px 32px;display:flex;flex-direction:column;gap:14px;">
+
+      <div style="display:flex;align-items:flex-start;gap:14px;padding:14px;background:#E8EEF5;border-radius:12px;">
+        <div style="width:36px;height:36px;background:#003B6F;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;font-family:'Space Mono',sans-serif;flex-shrink:0;">1</div>
+        <div>
+          <div style="font-size:15px;font-weight:800;color:#003B6F;margin-bottom:2px;">10% korting op alles</div>
+          <div style="font-size:13px;color:#2D4A6B;line-height:1.5;">Op het volledige assortiment — boxsprings, matrassen en bedframes. Geen minimumbesteding.</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:14px;padding:14px;background:#E8EEF5;border-radius:12px;">
+        <div style="width:36px;height:36px;background:#003B6F;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;font-family:'Space Mono',sans-serif;flex-shrink:0;">2</div>
+        <div>
+          <div style="font-size:15px;font-weight:800;color:#003B6F;margin-bottom:2px;">🛏️ Gratis leenbed</div>
+          <div style="font-size:13px;color:#2D4A6B;line-height:1.5;">Slaap comfortabel tijdens de levertijd van je Auping. <strong>Vanaf €5.000 besteding.</strong></div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:14px;padding:14px;background:linear-gradient(135deg,#E8EEF5,#dce6f0);border-radius:12px;border:1px solid rgba(0,59,111,0.15);">
+        <div style="width:36px;height:36px;background:#003B6F;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;font-family:'Space Mono',sans-serif;flex-shrink:0;">3</div>
+        <div>
+          <div style="font-size:15px;font-weight:800;color:#003B6F;margin-bottom:2px;">🏨 Gratis Hotel Haverkist</div>
+          <div style="font-size:13px;color:#2D4A6B;line-height:1.5;">Overnachting + ontbijt voor 2 personen in Den Bosch, t.w.v. €199. <strong>Vanaf €6.500 besteding.</strong></div>
+        </div>
+      </div>
+
+      <div style="padding-top:4px;font-size:12px;color:rgba(0,59,111,0.5);text-align:center;font-family:'Space Mono',monospace;">UITSLUITEND GELDIG BIJ AUPING ROTTERDAM CENTRUM</div>
+
+      <a href="/vouchers/auping/" onclick="sluitPopup()" style="background:#003B6F;color:#fff;padding:14px;border-radius:12px;font-size:15px;font-weight:800;text-decoration:none;text-align:center;display:block;transition:background 0.2s;font-family:'Plus Jakarta Sans',sans-serif;" onmouseenter="this.style.background='#0066B3'" onmouseleave="this.style.background='#003B6F'">Bekijk alle Auping voordelen →</a>
+
+      <button onclick="sluitPopup();localStorage.setItem('aupingPopupDismissed','1')" style="background:none;border:none;color:rgba(61,46,30,0.4);font-size:13px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;padding:4px;">Niet meer tonen</button>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes popIn {{
+  from {{opacity:0;transform:scale(0.88)}}
+  to {{opacity:1;transform:scale(1)}}
+}}
+</style>
+
+<script>
+(function(){{
+  if(localStorage.getItem('aupingPopupDismissed')) return;
+  // Toon pop-up na 4 seconden
+  setTimeout(function(){{
+    var p = document.getElementById('aupingPopup');
+    if(p){{ p.style.display='flex'; }}
+  }}, 4000);
+}})();
+
+function sluitPopup(){{
+  document.getElementById('aupingPopup').style.display='none';
+}}
+
+// Sluit bij klik buiten popup
+document.getElementById('aupingPopup')?.addEventListener('click', function(e){{
+  if(e.target === this) sluitPopup();
+}});
+</script>
+
 </body>
 </html>
