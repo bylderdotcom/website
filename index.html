@@ -1694,78 +1694,168 @@ function hpCalc(val) {
   </div>
 </section>
 
-<footer style="padding:64px 0 36px;background:#1A1208;color:rgba(245,240,232,.8);">
-  <div class="container">
-    <div class="flex flex-col md:flex-row items-start justify-between gap-10 mb-12">
-      <div class="max-w-xs">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:#3D5A3E;"><span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span></div>
-          <div>
-            <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.3);font-weight:700;margin-bottom:16px;">Populaire projecten</div>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
-              <li><a href="/project/badkamer-renovatie/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Badkamer renovatie</a></li>
-              <li><a href="/project/gietvloer-leggen/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Gietvloer leggen</a></li>
-              <li><a href="/project/laadpaal-installeren/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Laadpaal installeren</a></li>
-              <li><a href="/project/schilderwerk-binnen/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Schilderwerk</a></li>
-              <li><a href="/project/parket-leggen/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Parket leggen</a></li>
-              <li><a href="/project/stucwerk/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Stucwerk</a></li>
-              <li><a href="/project/" style="font-size:13px;color:#3D5A3E;font-weight:600;text-decoration:none;">Alle 20 projecten →</a></li>
-            </ul>
-          </div>
-          <span class="font-bold text-lg tracking-tight" style="color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
-        </div>
-        <p class="text-sm leading-relaxed" style="color:rgba(245,240,232,.4);max-width:240px;">AI-platform voor slimme woning-upgrades. Nieuwbouw en renovatie zonder gedoe.</p>
-      </div>
-      <div class="grid grid-cols-3 gap-12">
-        <div>
-          <p class="text-xs font-mono uppercase tracking-widest mb-4" style="color:rgba(245,240,232,.25);">Ontdek</p>
-          <ul class="space-y-3">
-            <li><a href="/#scan" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">AI QuickScan</a></li>
-            <li><a href="/kopersbegeleiding-nieuwbouw/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Kopersbegeleider</a></li>
-            <li><a href="/project/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Alle projecten</a></li>
-            <li><a href="/prijzen/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Prijzen</a></li>
-            <li><a href="/vouchers/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Vouchers</a></li>
-            <li><a href="/blog/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Blog</a></li>
-            <li><a href="/nieuwbouw-gids/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Nieuwbouw gids</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-xs font-mono uppercase tracking-widest mb-4" style="color:rgba(245,240,232,.25);">Bedrijf</p>
-          <ul class="space-y-3">
-            <li><a href="/over-ons/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Over ons</a></li>
-            <li><a href="/partners/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Partners</a></li>
-            <li><a href="mailto:team@bylder.com" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Werken bij</a></li>
-            <li><a href="mailto:info@bylder.com" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-xs font-mono uppercase tracking-widest mb-4" style="color:rgba(245,240,232,.25);">Juridisch</p>
-          <ul class="space-y-3">
-            <li><a href="/privacy/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Privacybeleid</a></li>
-            <li><a href="/algemene-voorwaarden/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Algemene Voorwaarden</a></li>
-            <li><a href="/cookies/" class="text-sm" style="color:rgba(245,240,232,.45);text-decoration:none;">Cookiebeleid</a></li>
-          </ul>
-        </div>
-      </div>
+
+<!-- LAAG 2 SECTIE: VAKMANNEN, KOSTEN, OFFERTE CHECK -->
+<section style="padding:80px 0;background:#1A1208;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 5%;">
+    <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:rgba(201,168,76,0.7);font-weight:700;margin-bottom:10px;">Bylder diensten</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:32px;">
+      <h2 style="font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:800;color:#F5F0E8;letter-spacing:-0.025em;line-height:1.15;">Vakman vinden, kosten checken<br>en offerte controleren</h2>
     </div>
-    <div class="flex flex-col md:flex-row items-center justify-between pt-8 gap-4" style="border-top:1px solid rgba(245,240,232,.08);">
-      <p class="text-xs font-mono" style="color:rgba(245,240,232,.25);">&#169; 2025 Bylder Nederland B.V. &#8212; KvK 65020006 &#8212; Amsterdam</p>
-      <div class="flex items-center gap-1 text-xs font-mono" style="color:rgba(245,240,232,.25);"><span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background:#8AAE8B;"></span>Alle systemen operationeel</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+
+      <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:16px;padding:28px;">
+        <div style="font-size:28px;margin-bottom:12px;">🔧</div>
+        <div style="font-size:16px;font-weight:800;color:#F5F0E8;margin-bottom:8px;letter-spacing:-0.01em;">Aannemer matching</div>
+        <p style="font-size:13px;color:rgba(245,240,232,0.5);line-height:1.65;margin-bottom:20px;">Vind gecertificeerde loodgieters, elektriciens, stukadoors en 7 andere vaklieden in jouw gemeente.</p>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px;">
+          <a href="/aannemer-matching/loodgieter/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Loodgieter vinden</a>
+          <a href="/aannemer-matching/elektricien/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Elektricien vinden</a>
+          <a href="/aannemer-matching/schilder/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Schilder vinden</a>
+        </div>
+        <a href="/aannemer-matching/" style="font-size:13px;font-weight:700;color:rgba(245,240,232,0.6);text-decoration:none;">Alle 10 vaklieden →</a>
+      </div>
+
+      <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:16px;padding:28px;">
+        <div style="font-size:28px;margin-bottom:12px;">💰</div>
+        <div style="font-size:16px;font-weight:800;color:#F5F0E8;margin-bottom:8px;letter-spacing:-0.01em;">Renovatiekosten per stad</div>
+        <p style="font-size:13px;color:rgba(245,240,232,0.5);line-height:1.65;margin-bottom:20px;">Eerlijke marktprijzen 2026 voor badkamer, keuken, gietvloer, dakkapel en meer in jouw gemeente.</p>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px;">
+          <a href="/renovatiekosten/badkamer/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Badkamer renovatie kosten</a>
+          <a href="/renovatiekosten/gietvloer/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Gietvloer kosten</a>
+          <a href="/renovatiekosten/dakkapel/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Dakkapel kosten</a>
+        </div>
+        <a href="/renovatiekosten/" style="font-size:13px;font-weight:700;color:rgba(245,240,232,0.6);text-decoration:none;">Alle 8 categorieën →</a>
+      </div>
+
+      <div style="background:rgba(245,240,232,0.04);border:1px solid rgba(245,240,232,0.08);border-radius:16px;padding:28px;">
+        <div style="font-size:28px;margin-bottom:12px;">📋</div>
+        <div style="font-size:16px;font-weight:800;color:#F5F0E8;margin-bottom:8px;letter-spacing:-0.01em;">Offerte check per vakman</div>
+        <p style="font-size:13px;color:rgba(245,240,232,0.5);line-height:1.65;margin-bottom:20px;">Is jouw offerte eerlijk? AI analyseert per post groen/oranje/rood op basis van marktdata voor jouw gemeente.</p>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px;">
+          <a href="/offerte-check/schilder/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Schilder offerte checken</a>
+          <a href="/offerte-check/gietvloer/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Gietvloer offerte checken</a>
+          <a href="/offerte-check/badkamer/" style="font-size:12px;color:#3D5A3E;text-decoration:none;">→ Badkamer offerte checken</a>
+        </div>
+        <a href="/offerte-check/" style="font-size:13px;font-weight:700;color:rgba(245,240,232,0.6);text-decoration:none;">Alle 8 offertetypen →</a>
+      </div>
+
     </div>
   </div>
+</section>
 
-          <div>
-            <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.3);font-weight:700;margin-bottom:16px;">Gemeenten</div>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
-              <li><a href="/nieuwbouw/noord-brabant/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Noord-Brabant</a></li>
-              <li><a href="/nieuwbouw/zuid-holland/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Zuid-Holland</a></li>
-              <li><a href="/nieuwbouw/noord-holland/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Noord-Holland</a></li>
-              <li><a href="/nieuwbouw/utrecht/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Utrecht</a></li>
-              <li><a href="/nieuwbouw/gelderland/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Gelderland</a></li>
-              <li><a href="/nieuwbouw/overijssel/" style="font-size:13px;color:rgba(245,240,232,0.45);text-decoration:none;">Overijssel</a></li>
-              <li><a href="/nieuwbouw/" style="font-size:13px;color:#3D5A3E;font-weight:600;text-decoration:none;">Alle 12 provincies →</a></li>
-            </ul>
+<footer style="padding:64px 0 36px;background:#1A1208;color:rgba(245,240,232,.8);">
+  <div class="container">
+
+    <!-- FOOTER TOP: LOGO + 6 KOLOMMEN -->
+    <div style="display:grid;grid-template-columns:1.5fr repeat(6,1fr);gap:32px;margin-bottom:48px;align-items:start;">
+
+      <!-- LOGO + BESCHRIJVING -->
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <div style="width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:flex;align-items:center;justify-content:center;">
+            <span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span>
           </div>
+          <span style="font-weight:800;font-size:17px;letter-spacing:-0.02em;color:#F5F0E8;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+        </div>
+        <p style="font-size:13px;color:rgba(245,240,232,.4);line-height:1.7;max-width:200px;">AI-platform voor kopers van nieuwbouw, bestaande bouw en renovatiewoningen.</p>
+        <div style="margin-top:16px;font-size:11px;color:rgba(245,240,232,.25);font-family:'Space Mono',monospace;">Bylder Nederland B.V.<br>KvK 65020006</div>
+      </div>
+
+      <!-- KOLOM 1: ONTDEK -->
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,.25);font-weight:700;margin-bottom:16px;">Ontdek</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/prijzen/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Prijzen</a></li>
+          <li><a href="/vouchers/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Vouchers</a></li>
+          <li><a href="/nieuwbouw-koper/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Nieuwbouwkoper</a></li>
+          <li><a href="/bestaande-bouw/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Bestaande bouw</a></li>
+          <li><a href="/renovatie/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Renovatie</a></li>
+          <li><a href="/nieuwbouw-gids/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Gidsen</a></li>
+          <li><a href="/over-ons/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Over ons</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 2: PROJECTEN -->
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,.25);font-weight:700;margin-bottom:16px;">Projecten</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/project/badkamer-renovatie/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Badkamer renovatie</a></li>
+          <li><a href="/project/gietvloer-leggen/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Gietvloer leggen</a></li>
+          <li><a href="/project/laadpaal-installeren/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Laadpaal installeren</a></li>
+          <li><a href="/project/schilderwerk-binnen/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Schilderwerk</a></li>
+          <li><a href="/project/dakkapel-plaatsen/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Dakkapel plaatsen</a></li>
+          <li><a href="/project/duurzaam-verbouwen/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Duurzaam verbouwen</a></li>
+          <li><a href="/project/" style="font-size:13px;color:#3D5A3E;font-weight:600;text-decoration:none;">Alle 20 projecten →</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 3: KOPEN -->
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,.25);font-weight:700;margin-bottom:16px;">Kopen</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/kopen/vloeren/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Vloeren</a></li>
+          <li><a href="/kopen/sanitair/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Sanitair</a></li>
+          <li><a href="/kopen/verlichting/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Verlichting</a></li>
+          <li><a href="/kopen/laadpalen/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Laadpalen</a></li>
+          <li><a href="/kopen/zonnepanelen/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Zonnepanelen</a></li>
+          <li><a href="/kopen/raamdecoratie/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Raamdecoratie</a></li>
+          <li><a href="/kopen/" style="font-size:13px;color:#3D5A3E;font-weight:600;text-decoration:none;">Alle 19 categorieën →</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 4: VAKMANNEN & KOSTEN -->
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,.25);font-weight:700;margin-bottom:16px;">Vakmannen</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/aannemer-matching/loodgieter/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Loodgieter vinden</a></li>
+          <li><a href="/aannemer-matching/elektricien/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Elektricien vinden</a></li>
+          <li><a href="/aannemer-matching/schilder/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Schilder vinden</a></li>
+          <li><a href="/renovatiekosten/badkamer/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Badkamer kosten</a></li>
+          <li><a href="/renovatiekosten/gietvloer/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Gietvloer kosten</a></li>
+          <li><a href="/offerte-check/schilder/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Offerte check</a></li>
+          <li><a href="/aannemer-matching/" style="font-size:13px;color:#3D5A3E;font-weight:600;text-decoration:none;">Alle vaklieden →</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 5: GEMEENTEN -->
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,.25);font-weight:700;margin-bottom:16px;">Gemeenten</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/nieuwbouw/noord-holland/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Noord-Holland</a></li>
+          <li><a href="/nieuwbouw/zuid-holland/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Zuid-Holland</a></li>
+          <li><a href="/nieuwbouw/noord-brabant/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Noord-Brabant</a></li>
+          <li><a href="/nieuwbouw/utrecht/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Utrecht</a></li>
+          <li><a href="/nieuwbouw/gelderland/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Gelderland</a></li>
+          <li><a href="/nieuwbouw/overijssel/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Overijssel</a></li>
+          <li><a href="/nieuwbouw/" style="font-size:13px;color:#3D5A3E;font-weight:600;text-decoration:none;">Alle 12 provincies →</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 6: JURIDISCH -->
+      <div>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,.25);font-weight:700;margin-bottom:16px;">Juridisch</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/privacy/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Privacybeleid</a></li>
+          <li><a href="/algemene-voorwaarden/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Voorwaarden</a></li>
+          <li><a href="/cookies/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Cookiebeleid</a></li>
+          <li><a href="/partners/" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Partners</a></li>
+          <li><a href="mailto:info@bylder.com" style="font-size:13px;color:rgba(245,240,232,.45);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div style="border-top:1px solid rgba(245,240,232,.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,.25);">© 2026 Bylder Nederland B.V. — KvK 65020006</p>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,.25);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#3D5A3E;display:inline-block;animation:pulse 2s infinite;"></span>
+        Alle systemen operationeel
+      </div>
+    </div>
+
+  </div>
 </footer>
 
 <div id="toast" class="fixed bottom-8 right-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
