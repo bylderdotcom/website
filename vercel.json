@@ -48,14 +48,14 @@
     { "source": "/elektronica/:path*",           "destination": "/kopen/elektronica/",     "permanent": true },
     { "source": "/warmtepomp/:path*",            "destination": "/kopen/isolatie/",        "permanent": true }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/betaling-start",
-      "dest": "/api/betaling-start.js"
+      "source": "/api/betaling-start",
+      "destination": "/api/betaling-start.js"
     },
     {
-      "src": "/api/paynl-exchange",
-      "dest": "/api/paynl-exchange.js"
+      "source": "/api/paynl-exchange",
+      "destination": "/api/paynl-exchange.js"
     }
   ],
   "headers": [
