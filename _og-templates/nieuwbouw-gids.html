@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Mono:wght@700&display=swap');
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #F5F0E8;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 80px;
+    position: relative;
+  }
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 90% at 90% 50%, rgba(61,90,62,0.07) 0%, transparent 70%);
+  }
+  .left {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .logo-box {
+    width: 44px;
+    height: 44px;
+    background: #3D5A3E;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-letter {
+    color: #F5F0E8;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .logo-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1A1208;
+    letter-spacing: -0.02em;
+  }
+  .logo-name span { color: #3D5A3E; }
+  .label {
+    display: inline-block;
+    background: rgba(61,90,62,0.1);
+    border: 1px solid rgba(61,90,62,0.2);
+    color: #3D5A3E;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1A1208;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .sub {
+    font-size: 19px;
+    color: rgba(61,46,30,0.5);
+    line-height: 1.55;
+  }
+  .right {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .fase {
+    background: #fff;
+    border: 1px solid rgba(61,46,30,0.1);
+    border-radius: 14px;
+    padding: 16px 22px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .fase-num {
+    width: 36px;
+    height: 36px;
+    background: #3D5A3E;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5F0E8;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .fase-text {}
+  .fase-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A1208;
+    margin-bottom: 2px;
+  }
+  .fase-sub {
+    font-size: 12px;
+    color: rgba(61,46,30,0.45);
+  }
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3D5A3E, #8AAE8B, #3D5A3E);
+  }
+</style>
+</head>
+<body>
+  <div class="left">
+    <div class="logo">
+      <div class="logo-box"><span class="logo-letter">B.</span></div>
+      <span class="logo-name">Bylder<span>.com</span></span>
+    </div>
+    <div class="label">Nieuwbouw Gids</div>
+    <h1>Van koopakte<br>tot sleuteloverdracht</h1>
+    <p class="sub">15 gratis gidsen voor elke fase van<br>je nieuwbouwtraject — met AI-ondersteuning</p>
+  </div>
+  <div class="right">
+    <div class="fase">
+      <div class="fase-num">1</div>
+      <div class="fase-text">
+        <div class="fase-title">Oriëntatie & Koopakte</div>
+        <div class="fase-sub">Koopakte, financiering, meerwerk</div>
+      </div>
+    </div>
+    <div class="fase">
+      <div class="fase-num">2</div>
+      <div class="fase-text">
+        <div class="fase-title">Bouwfase</div>
+        <div class="fase-sub">Lichtplan, bouwbezoeken, beslissingen</div>
+      </div>
+    </div>
+    <div class="fase">
+      <div class="fase-num">3</div>
+      <div class="fase-text">
+        <div class="fase-title">Oplevering & Nazorg</div>
+        <div class="fase-sub">Voorschouw, keuring, 5%-depot</div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar"></div>
+</body>
+</html>
