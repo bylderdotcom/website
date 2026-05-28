@@ -8,45 +8,45 @@
       "permanent": true
     },
 
-    { "source": "/badkamer/:path*",              "destination": "/kopen/sanitair/",        "permanent": true },
-    { "source": "/badkamers/:path*",             "destination": "/kopen/sanitair/",        "permanent": true },
+    { "source": "/badkamer(.*)",              "destination": "/kopen/sanitair/",        "permanent": true },
+    { "source": "/badkamers(.*)",             "destination": "/kopen/sanitair/",        "permanent": true },
 
-    { "source": "/gereedschap/:path*",           "destination": "/kopen/",                 "permanent": true },
-    { "source": "/ijzerwaren/:path*",            "destination": "/kopen/",                 "permanent": true },
-    { "source": "/klussen/:path*",               "destination": "/kopen/",                 "permanent": true },
-    { "source": "/bouwmaterialen/:path*",        "destination": "/kopen/",                 "permanent": true },
-    { "source": "/bouwmarkt/:path*",             "destination": "/kopen/",                 "permanent": true },
-    { "source": "/doe-het-zelf/:path*",          "destination": "/kopen/",                 "permanent": true },
+    { "source": "/gereedschap(.*)",           "destination": "/kopen/",                 "permanent": true },
+    { "source": "/ijzerwaren(.*)",            "destination": "/kopen/",                 "permanent": true },
+    { "source": "/klussen(.*)",               "destination": "/kopen/",                 "permanent": true },
+    { "source": "/bouwmaterialen(.*)",        "destination": "/kopen/",                 "permanent": true },
+    { "source": "/bouwmarkt(.*)",             "destination": "/kopen/",                 "permanent": true },
+    { "source": "/doe-het-zelf(.*)",          "destination": "/kopen/",                 "permanent": true },
 
-    { "source": "/deuren-ramen-en-trappen/:path*", "destination": "/kopen/binnendeuren/",  "permanent": true },
-    { "source": "/deuren/:path*",                "destination": "/kopen/binnendeuren/",    "permanent": true },
-    { "source": "/kozijnen/:path*",              "destination": "/kopen/buitendeuren/",    "permanent": true },
-    { "source": "/ramen/:path*",                 "destination": "/kopen/buitendeuren/",    "permanent": true },
-    { "source": "/dakkapel/:path*",              "destination": "/kopen/dakkapellen/",     "permanent": true },
+    { "source": "/deuren-ramen-en-trappen(.*)", "destination": "/kopen/binnendeuren/",  "permanent": true },
+    { "source": "/deuren(.*)",                "destination": "/kopen/binnendeuren/",    "permanent": true },
+    { "source": "/kozijnen(.*)",              "destination": "/kopen/buitendeuren/",    "permanent": true },
+    { "source": "/ramen(.*)",                 "destination": "/kopen/buitendeuren/",    "permanent": true },
+    { "source": "/dakkapel(.*)",              "destination": "/kopen/dakkapellen/",     "permanent": true },
 
-    { "source": "/verf-en-behang/:path*",        "destination": "/kopen/verf/",            "permanent": true },
-    { "source": "/verf-behang/:path*",           "destination": "/kopen/verf/",            "permanent": true },
-    { "source": "/wanddecoratie/:path*",         "destination": "/kopen/wandafwerking/",   "permanent": true },
+    { "source": "/verf-en-behang(.*)",        "destination": "/kopen/verf/",            "permanent": true },
+    { "source": "/verf-behang(.*)",           "destination": "/kopen/verf/",            "permanent": true },
+    { "source": "/wanddecoratie(.*)",         "destination": "/kopen/wandafwerking/",   "permanent": true },
 
-    { "source": "/vloerbedekking/:path*",        "destination": "/kopen/vloeren/",         "permanent": true },
+    { "source": "/vloerbedekking(.*)",        "destination": "/kopen/vloeren/",         "permanent": true },
 
-    { "source": "/gordijnen/:path*",             "destination": "/kopen/raamdecoratie/",   "permanent": true },
-    { "source": "/zonwering/:path*",             "destination": "/kopen/raamdecoratie/",   "permanent": true },
-    { "source": "/raamdecoratie/:path*",         "destination": "/kopen/raamdecoratie/",   "permanent": true },
+    { "source": "/gordijnen(.*)",             "destination": "/kopen/raamdecoratie/",   "permanent": true },
+    { "source": "/zonwering(.*)",             "destination": "/kopen/raamdecoratie/",   "permanent": true },
+    { "source": "/raamdecoratie(.*)",         "destination": "/kopen/raamdecoratie/",   "permanent": true },
 
-    { "source": "/slaapkamer/:path*",            "destination": "/kopen/slaap-en-bedden/", "permanent": true },
-    { "source": "/bedden/:path*",                "destination": "/kopen/slaap-en-bedden/", "permanent": true },
-    { "source": "/matrassen/:path*",             "destination": "/kopen/slaap-en-bedden/", "permanent": true },
+    { "source": "/slaapkamer(.*)",            "destination": "/kopen/slaap-en-bedden/", "permanent": true },
+    { "source": "/bedden(.*)",                "destination": "/kopen/slaap-en-bedden/", "permanent": true },
+    { "source": "/matrassen(.*)",             "destination": "/kopen/slaap-en-bedden/", "permanent": true },
 
-    { "source": "/meubels/:path*",               "destination": "/kopen/zitmeubelen/",     "permanent": true },
-    { "source": "/meubelen/:path*",              "destination": "/kopen/zitmeubelen/",     "permanent": true },
+    { "source": "/meubels(.*)",               "destination": "/kopen/zitmeubelen/",     "permanent": true },
+    { "source": "/meubelen(.*)",              "destination": "/kopen/zitmeubelen/",     "permanent": true },
 
-    { "source": "/tuin-en-buiten/:path*",        "destination": "/kopen/tuin/",            "permanent": true },
-    { "source": "/buitenleven/:path*",           "destination": "/kopen/tuin/",            "permanent": true },
+    { "source": "/tuin-en-buiten(.*)",        "destination": "/kopen/tuin/",            "permanent": true },
+    { "source": "/buitenleven(.*)",           "destination": "/kopen/tuin/",            "permanent": true },
 
-    { "source": "/elektra/:path*",               "destination": "/kopen/elektronica/",     "permanent": true },
-    { "source": "/elektronica/:path*",           "destination": "/kopen/elektronica/",     "permanent": true },
-    { "source": "/warmtepomp/:path*",            "destination": "/kopen/isolatie/",        "permanent": true }
+    { "source": "/elektra(.*)",               "destination": "/kopen/elektronica/",     "permanent": true },
+    { "source": "/elektronica(.*)",           "destination": "/kopen/elektronica/",     "permanent": true },
+    { "source": "/warmtepomp(.*)",            "destination": "/kopen/isolatie/",        "permanent": true }
   ],
   "rewrites": [
     {
