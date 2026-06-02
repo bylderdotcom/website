@@ -7,6 +7,12 @@
       "destination": "https://www.bylder.com/:path*",
       "permanent": true
     },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "mijn.bylder.com" }],
+      "destination": "https://www.bylder.com",
+      "permanent": true
+    },
 
     { "source": "/badkamer(.*)",              "destination": "/kopen/sanitair/",        "permanent": true },
     { "source": "/badkamers(.*)",             "destination": "/kopen/sanitair/",        "permanent": true },
