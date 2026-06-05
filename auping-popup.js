@@ -18,21 +18,21 @@
       background:rgba(0,0,0,0.65);
       backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
       z-index:99999;
-      align-items:flex-end;justify-content:center;padding:0;
+      align-items:flex-start;justify-content:center;
+      padding:12px;padding-top:max(12px, env(safe-area-inset-top));
     }
     @media(min-width:600px){
       #aupingPopup{align-items:center;padding:20px;}
-      #aupingPopupInner{border-radius:20px!important;max-width:480px!important;}
     }
     #aupingPopupInner{
       background:#fff;
-      border-radius:20px 20px 0 0;
-      width:100%;max-width:100%;
+      border-radius:20px;
+      width:100%;max-width:480px;margin:0 auto;
       overflow:hidden;
-      box-shadow:0 -8px 40px rgba(0,0,0,0.25);
+      box-shadow:0 12px 40px rgba(0,0,0,0.25);
       animation:aupingSlideUp 0.35s cubic-bezier(0.34,1.4,0.64,1);
       padding-bottom:env(safe-area-inset-bottom);
-      max-height:92dvh;overflow-y:auto;
+      max-height:calc(100dvh - 24px);overflow-y:auto;
       -webkit-overflow-scrolling:touch;
     }
     .auping-drag{width:40px;height:4px;background:rgba(0,0,0,0.15);border-radius:2px;margin:10px auto 0;}
