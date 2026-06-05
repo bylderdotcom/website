@@ -196,6 +196,15 @@ for cat in N2:
     faq_schema = faq_ld(cat["faqs"])
 
     html = f"""<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{cat["title"]} — prijzen, tips & leveranciers | Bylder</title>
 <meta name="description" content="{cat["desc"][:155]}">

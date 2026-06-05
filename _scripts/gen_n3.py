@@ -476,6 +476,15 @@ for (cat_slug, cat_label, prod_slug, prod_title, h1, meta_desc, intro, price, le
     bc_ld = breadcrumb_ld([("Bylder", "/"), ("Op maat", "/op-maat/"), (cat_label, f"/op-maat/{cat_slug}/"), (prod_title, f"/op-maat/{cat_slug}/{prod_slug}/")])
 
     html = f"""<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{h1} | Bylder</title>
 <meta name="description" content="{meta_desc[:158]}">

@@ -109,6 +109,15 @@ def generate_provincie_page(provincie, gemeenten):
     html = f"""<!DOCTYPE html>
 <html lang="nl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title_txt}</title>
@@ -412,6 +421,15 @@ for prov, gemeenten in alle_provincies:
 overzicht_html = f"""<!DOCTYPE html>
 <html lang="nl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nieuwbouw per gemeente — heel Nederland | Bylder</title>

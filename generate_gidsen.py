@@ -74,6 +74,15 @@ def render_gids(gids):
     title = gids["title"] if len(gids["title"]) <= 62 else gids["title"][:59]+"..."
 
     return f'''<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{gids["meta_desc"]}">
@@ -161,6 +170,15 @@ def render_fase_overzicht(fase, gidsen_in_fase):
 <div style="font-size:13px;font-weight:700;color:{fc};">Lees gids →</div></a>''' for g in gidsen_in_fase)
 
     return f'''<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Nieuwbouw gids {fn} — {len(gidsen_in_fase)} artikelen | Bylder</title>
 <meta name="description" content="Bylder-gidsen voor {fn.lower()} bij nieuwbouw. {len(gidsen_in_fase)} artikelen.">
@@ -205,6 +223,15 @@ def render_hoofdoverzicht(alle_gidsen):
 </div>'''
 
     return f'''<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Nieuwbouw gids — complete tijdlijn | Bylder</title>
 <meta name="description" content="Alle {len(alle_gidsen)} Bylder nieuwbouw gidsen: van koopakte en bouwdepot tot meerwerk, lichtplan en opleveringskeuring.">
@@ -285,6 +312,15 @@ function adj(i,d){q[i]=Math.max(0,q[i]+d);document.getElementById('q'+i).textCon
 
     title = tool["title"] if len(tool["title"]) <= 62 else tool["title"][:59]+"..."
     return f'''<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{tool["meta_desc"]}">
@@ -346,7 +382,16 @@ for tool in TOOLS:
 d = OUTPUT / "tools"
 d.mkdir(parents=True, exist_ok=True)
 tools_kaarten = "".join(f'<a href="/tools/{t["slug"]}/" style="text-decoration:none;display:block;background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:20px;transition:all 0.2s;" onmouseover="this.style.transform=\'translateY(-2px)\'" onmouseout="this.style.transform=\'\'"><div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:6px;">{t["h1"]}</div><div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:12px;line-height:1.5;">{t["intro"][:80]}...</div><span style="font-size:13px;font-weight:700;color:#3D5A3E;">Gebruik tool →</span></a>' for t in TOOLS)
-tools_html = f'''<!DOCTYPE html><html lang="nl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Gratis nieuwbouw tools | Bylder</title><meta name="description" content="Gratis tools voor nieuwbouwkopers: depot calculator, meerwerk calculator en opleveringschecklist."><link rel="canonical" href="{BASE_URL}/tools/"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"><style>*{{box-sizing:border-box;margin:0;padding:0}}body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif}}.container{{max-width:1280px;margin:0 auto;padding:0 48px}}@media(max-width:768px){{.container{{padding:0 20px}}}}</style></head><body>{NAV}<div style="padding-top:68px;"></div><section style="padding:48px 0;background:#fff;text-align:center;"><div class="container" style="max-width:640px;"><h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;margin-bottom:14px;">Gratis tools voor nieuwbouwkopers</h1><p style="font-size:16px;color:rgba(61,46,30,0.6);line-height:1.75;margin-bottom:36px;">Bereken je depot, meerwerk-budget of doorloop de opleveringschecklist.</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left;">{tools_kaarten}</div></div></section>{FOOTER}</body></html>'''
+tools_html = f'''<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Gratis nieuwbouw tools | Bylder</title><meta name="description" content="Gratis tools voor nieuwbouwkopers: depot calculator, meerwerk calculator en opleveringschecklist."><link rel="canonical" href="{BASE_URL}/tools/"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"><style>*{{box-sizing:border-box;margin:0;padding:0}}body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif}}.container{{max-width:1280px;margin:0 auto;padding:0 48px}}@media(max-width:768px){{.container{{padding:0 20px}}}}</style></head><body>{NAV}<div style="padding-top:68px;"></div><section style="padding:48px 0;background:#fff;text-align:center;"><div class="container" style="max-width:640px;"><h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;margin-bottom:14px;">Gratis tools voor nieuwbouwkopers</h1><p style="font-size:16px;color:rgba(61,46,30,0.6);line-height:1.75;margin-bottom:36px;">Bereken je depot, meerwerk-budget of doorloop de opleveringschecklist.</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left;">{tools_kaarten}</div></div></section>{FOOTER}</body></html>'''
 (d / "index.html").write_text(tools_html, encoding="utf-8")
 sitemap_urls.append(f"{BASE_URL}/tools/"); generated += 1
 

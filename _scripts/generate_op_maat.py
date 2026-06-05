@@ -172,6 +172,15 @@ for slug, title, icon, desc, products in CATEGORIES:
 itemlist_items = ",".join([f'{{"@type":"ListItem","position":{i+1},"name":"{c[1]}","url":"https://www.bylder.com/op-maat/{c[0]}/"}}' for i, c in enumerate(CATEGORIES)])
 
 niveau1_html = f"""<!DOCTYPE html><html lang="nl"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-LZYCRP1169');
+</script>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Op maat laten maken voor nieuwbouw — overzicht | Bylder</title>
 <meta name="description" content="Alles wat je op maat kunt laten maken voor je nieuwbouwwoning: keuken, kasten, badkamer, raamdecoratie, verlichting en meer. Prijzen, tips en leveranciers.">
