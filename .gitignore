@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# secrets / env
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# python build artifacts
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
