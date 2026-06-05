@@ -685,7 +685,7 @@ body::before {
           </div>
           <div class="rounded-2xl p-5" style="background:rgba(61,46,30,.04);border:1px solid rgba(61,46,30,.1);">
             <div class="text-xs font-mono mb-2 uppercase tracking-widest" style="color:rgba(61,46,30,.4);">Gedetecteerde ruimtes</div>
-            <div class="text-3xl font-extrabold" style="color:#1A1208;letter-spacing:-0.03em;">6</div>
+            <div id="resultRuimtes" class="text-3xl font-extrabold" style="color:#1A1208;letter-spacing:-0.03em;">6</div>
             <div class="text-xs mt-1" style="color:rgba(61,46,30,.5);">woonkamer, keuken, slaapkamer…</div>
           </div>
         </div>
@@ -699,9 +699,9 @@ body::before {
         <!-- Geblurde preview van ruimtedetails -->
         <div style="position:relative;border-radius:16px;overflow:hidden;margin-bottom:20px;">
 
-          <!-- De geblurde content eronder -->
-          <div style="filter:blur(5px);pointer-events:none;user-select:none;">
-            <div style="background:#fff;border:1px solid rgba(61,46,30,.08);border-radius:16px;padding:20px;">
+          <!-- De geblurde content op de achtergrond -->
+          <div style="position:absolute;inset:0;filter:blur(5px);pointer-events:none;user-select:none;">
+            <div style="background:#fff;border:1px solid rgba(61,46,30,.08);border-radius:16px;padding:20px;height:100%;">
               <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;">
                 <div style="padding:7px 14px;border-radius:999px;background:#3D5A3E;color:#F5F0E8;font-size:13px;font-weight:600;">🛋️ Woonkamer · €14.200</div>
                 <div style="padding:7px 14px;border-radius:999px;background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.5);font-size:13px;">🍳 Keuken · €12.500</div>
@@ -728,12 +728,15 @@ body::before {
             </div>
           </div>
 
-          <!-- Overlay met login CTA -->
-          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(to bottom,rgba(245,240,232,0) 0%,rgba(245,240,232,0.85) 30%,rgba(245,240,232,0.97) 60%);border-radius:16px;padding:24px;text-align:center;">
-            <div style="background:#fff;border-radius:20px;padding:28px 32px;max-width:400px;box-shadow:0 20px 60px rgba(61,46,30,0.15);border:1px solid rgba(61,46,30,0.1);">
+          <!-- Gradient laag over de blur -->
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(245,240,232,0.55) 0%,rgba(245,240,232,0.9) 35%,rgba(245,240,232,0.97) 70%);"></div>
+
+          <!-- Login CTA — staat in de flow en bepaalt zelf de hoogte zodat de kaart nooit wordt afgekapt -->
+          <div style="position:relative;display:flex;align-items:center;justify-content:center;padding:48px 24px;text-align:center;">
+            <div style="background:#fff;border-radius:20px;padding:28px 32px;max-width:400px;width:100%;box-shadow:0 20px 60px rgba(61,46,30,0.15);border:1px solid rgba(61,46,30,0.1);">
               <div style="width:48px;height:48px;background:rgba(61,90,62,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;">🏠</div>
               <h3 style="font-size:18px;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:6px;">Jouw analyse is klaar</h3>
-              <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:20px;line-height:1.6;">Maak een gratis account om het volledige rapport te bekijken — inclusief kostenraming per ruimte, producttips en vouchers. Je tekening wordt direct meegenomen.</p>
+              <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:20px;line-height:1.6;">Maak een gratis account om het volledige rapport te bekijken — inclusief kostenraming per ruimte, producttips en kortingsvouchers. Je tekening wordt direct meegenomen.</p>
 
               <!-- Social login buttons -->
               <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
@@ -795,7 +798,7 @@ body::before {
 
     <!-- Overtuigingsregel onder de scan -->
     <div class="text-center mt-10 pt-8" style="border-top:1px solid rgba(61,46,30,.08);">
-      <p class="text-sm mb-1" style="color:rgba(61,46,30,.5);">Wil je het volledige rapport bewaren en je vouchers activeren?</p>
+      <p class="text-sm mb-1" style="color:rgba(61,46,30,.5);">Wil je het volledige rapport bewaren en je kortingsvouchers activeren?</p>
       <p class="text-base font-semibold" style="color:#1A1208;">Word lid voor <span style="color:#3D5A3E;">&#8364;99 eenmalig</span> en bespaar gemiddeld &#8364;4.200 op je afwerking.</p>
     </div>
   </div>
@@ -2037,8 +2040,7 @@ function showResult(data){
   risicoEl.style.color = data.risicoscore === 'Hoog' ? '#B85C38' : data.risicoscore === 'Gemiddeld' ? '#C8A830' : '#3D5A3E';
   document.getElementById('resultRisicoSub').textContent = data.risico_toelichting || '';
 
-  const count = data.vouchers_count || (data.vouchers ? data.vouchers.length : 5);
-  document.getElementById('resultVouchers').textContent = count + ' stuks';
+  document.getElementById('resultRuimtes').textContent = data.ruimtes_count || 6;
 
   if(data.top_aanbeveling){
     document.getElementById('resultAanbeveling').style.display = 'block';
