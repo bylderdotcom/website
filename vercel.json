@@ -14,6 +14,9 @@
       "permanent": true
     },
 
+    { "source": "/us",        "destination": "/en-us",        "permanent": true },
+    { "source": "/us/:path*", "destination": "/en-us/:path*", "permanent": true },
+
     { "source": "/badkamer(.*)",              "destination": "/kopen/sanitair/",        "permanent": true },
     { "source": "/badkamers(.*)",             "destination": "/kopen/sanitair/",        "permanent": true },
 

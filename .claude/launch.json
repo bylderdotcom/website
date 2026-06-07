@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "evtrader",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/danielpaaij/Documents/GitHub/evtrader", "run", "dev", "--", "-p", "3000"],
+      "port": 3000
+    },
+    {
+      "name": "og-templates",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4444"],
+      "port": 4444
+    },
+    {
+      "name": "website",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4555", "--directory", "/Users/danielpaaij/Documents/GitHub/website"],
+      "port": 4555
+    },
+    {
+      "name": "benned-next",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/danielpaaij/Documents/benned", "run", "dev", "--", "-p", "3300"],
+      "port": 3300
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # gen_us_cost.py — US pSEO cost-guide cluster for the /us MVP wedge.
-# Generates: /us/cost/ (hub) -> /us/cost/<project>/ (project hub) -> /us/cost/<project>/<city>/ (detail)
+# Generates: /en-us/cost/ (hub) -> /en-us/cost/<project>/ (project hub) -> /en-us/cost/<project>/<city>/ (detail)
 # Each detail page: localized cost range (national range x metro cost-index), breakdown table,
 # local factors, FAQ (+FAQPage schema), breadcrumbs (+BreadcrumbList schema), and the quote-check CTA.
 # Usage: python3 _scripts/gen_us_cost.py [--sample]
@@ -113,12 +113,12 @@ footer{{padding:34px 0;color:rgba(61,46,30,.45);font-size:13px;text-align:center
 {schema}
 </head>
 <body>
-<nav class="nav"><div class="nav-in"><a href="/us/" class="logo"><i>B.</i>Bylder</a><a href="/us/" class="btn">Check a quote — free</a></div></nav>
+<nav class="nav"><div class="nav-in"><a href="/en-us/" class="logo"><i>B.</i>Bylder</a><a href="/en-us/" class="btn">Check a quote — free</a></div></nav>
 <div class="container">
 """
 
 FOOT = """</div>
-<footer><div class="container">Bylder · AI quote &amp; upgrade checks for U.S. homeowners · <a href="/us/">Check your quote free</a><div class="disc">Cost figures are estimates based on national averages adjusted for local cost levels and are for guidance only. Always get itemized quotes.</div></div></footer>
+<footer><div class="container">Bylder · AI quote &amp; upgrade checks for U.S. homeowners · <a href="/en-us/">Check your quote free</a><div class="disc">Cost figures are estimates based on national averages adjusted for local cost levels and are for guidance only. Always get itemized quotes.</div></div></footer>
 </body></html>"""
 
 def write(path, html):
@@ -131,7 +131,7 @@ def detail_page(proj, metro):
     name = proj["name"]; nl = name.lower()
     title = f"{name} Cost in {city}, {st} (2026 Prices) | Bylder"
     desc = f"How much does a {nl} cost in {city}, {st}? Typical range {money(lo)}–{money(hi)} (avg {money(ty)}). See the cost breakdown, what drives price locally, and check your own quote free."
-    canonical = f"{BASE}/us/cost/{proj['slug']}/{mslug}/"
+    canonical = f"{BASE}/en-us/cost/{proj['slug']}/{mslug}/"
     rows = ""
     for cname, clo, chi in proj["components"]:
         rows += f"<tr><td>{cname}</td><td class='r'>{money(ty*clo)} – {money(ty*chi)}</td></tr>"
@@ -147,15 +147,15 @@ def detail_page(proj, metro):
     faq_ld = ",".join('{"@type":"Question","name":"%s","acceptedAnswer":{"@type":"Answer","text":"%s"}}' % (q.replace('"',"'"), a.replace('"',"'")) for q,a in faqs)
     schema = ('<script type="application/ld+json">{"@context":"https://schema.org","@graph":['
       '{"@type":"BreadcrumbList","itemListElement":['
-      '{"@type":"ListItem","position":1,"name":"Cost guides","item":"%s/us/cost/"},'
-      '{"@type":"ListItem","position":2,"name":"%s","item":"%s/us/cost/%s/"},'
+      '{"@type":"ListItem","position":1,"name":"Cost guides","item":"%s/en-us/cost/"},'
+      '{"@type":"ListItem","position":2,"name":"%s","item":"%s/en-us/cost/%s/"},'
       '{"@type":"ListItem","position":3,"name":"%s, %s"}]},'
       '{"@type":"FAQPage","mainEntity":[%s]}]}</script>') % (BASE, name, BASE, proj['slug'], city, st, faq_ld)
     # related cities (same project) + other projects (same city)
-    rel_cities = "".join(f"<a href='/us/cost/{proj['slug']}/{m[0]}/'>{m[1]}, {m[2]}</a>" for m in METROS if m[0]!=mslug)[:0] or \
-                 "".join(f"<a href='/us/cost/{proj['slug']}/{m[0]}/'>{m[1]}</a>" for m in METROS[:8] if m[0]!=mslug)
-    other_proj = "".join(f"<a href='/us/cost/{p['slug']}/{mslug}/'>{p['name']}</a>" for p in PROJECTS[:8] if p['slug']!=proj['slug'])
-    body = f"""<div class="crumb"><a href="/us/">Home</a> › <a href="/us/cost/">Cost guides</a> › <a href="/us/cost/{proj['slug']}/">{name}</a> › {city}, {st}</div>
+    rel_cities = "".join(f"<a href='/en-us/cost/{proj['slug']}/{m[0]}/'>{m[1]}, {m[2]}</a>" for m in METROS if m[0]!=mslug)[:0] or \
+                 "".join(f"<a href='/en-us/cost/{proj['slug']}/{m[0]}/'>{m[1]}</a>" for m in METROS[:8] if m[0]!=mslug)
+    other_proj = "".join(f"<a href='/en-us/cost/{p['slug']}/{mslug}/'>{p['name']}</a>" for p in PROJECTS[:8] if p['slug']!=proj['slug'])
+    body = f"""<div class="crumb"><a href="/en-us/">Home</a> › <a href="/en-us/cost/">Cost guides</a> › <a href="/en-us/cost/{proj['slug']}/">{name}</a> › {city}, {st}</div>
 <h1>How much does a {nl} cost in {city}, {st}?</h1>
 <p>A {nl} in {city} typically costs between <strong>{money(lo)}</strong> and <strong>{money(hi)}</strong>, with most homeowners paying around <strong>{money(ty)}</strong>. Local construction costs in {city} run {cost_level(mult)} the national average, so prices here differ from the U.S. typical of {money(proj['typ'])}.</p>
 <div class="range"><div class="big">{money(lo)} – {money(hi)}</div><div class="sm">Typical {nl} in {city}, {st} · average ~{money(ty)}</div></div>
@@ -164,7 +164,7 @@ def detail_page(proj, metro):
 <table><tr><th>Component</th><th class="r">Typical range</th></tr>{rows}</table>
 <h2>What drives {nl} cost in {city}</h2>
 <p>The biggest factors are project size and scope, the materials and finishes you choose, structural or permit work, and your contractor's rates. Because labor and materials in {city}, {st} are {cost_level(mult)} the national average, the same project can cost noticeably more or less than in other metros.</p>
-<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 4px;">Already have a quote for your {nl}?</p><p style="margin:0 0 14px;font-size:14px;">Upload it and our AI flags what's overpriced and what to negotiate — free, no account.</p><a href="/us/" class="btn">⚡ Check my quote free</a></div>
+<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 4px;">Already have a quote for your {nl}?</p><p style="margin:0 0 14px;font-size:14px;">Upload it and our AI flags what's overpriced and what to negotiate — free, no account.</p><a href="/en-us/" class="btn">⚡ Check my quote free</a></div>
 <h2>Frequently asked questions</h2>
 {faq_html}
 <h2>{name} cost in other cities</h2>
@@ -178,28 +178,28 @@ def project_hub(proj):
     name=proj["name"]; nl=name.lower()
     title=f"{name} Cost by City (2026) | Bylder"
     desc=f"Compare {nl} costs across major U.S. cities. National typical {money(proj['typ'])}. Pick your city for local prices and a free quote check."
-    canonical=f"{BASE}/us/cost/{proj['slug']}/"
-    cities="".join(f"<a href='/us/cost/{proj['slug']}/{m[0]}/'>{m[1]}, {m[2]}</a>" for m in METROS)
+    canonical=f"{BASE}/en-us/cost/{proj['slug']}/"
+    cities="".join(f"<a href='/en-us/cost/{proj['slug']}/{m[0]}/'>{m[1]}, {m[2]}</a>" for m in METROS)
     schema=('<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":['
-      '{"@type":"ListItem","position":1,"name":"Cost guides","item":"%s/us/cost/"},'
+      '{"@type":"ListItem","position":1,"name":"Cost guides","item":"%s/en-us/cost/"},'
       '{"@type":"ListItem","position":2,"name":"%s"}]}</script>')%(BASE,name)
-    body=f"""<div class="crumb"><a href="/us/">Home</a> › <a href="/us/cost/">Cost guides</a> › {name}</div>
+    body=f"""<div class="crumb"><a href="/en-us/">Home</a> › <a href="/en-us/cost/">Cost guides</a> › {name}</div>
 <h1>{name} cost by city</h1>
 <p>The national typical {nl} runs about <strong>{money(proj['typ'])}</strong> (range {money(proj['low'])}–{money(proj['high'])}), but local prices vary a lot. Choose your city for a localized estimate and a free quote check.</p>
 <h2>Select your city</h2><div class="links">{cities}</div>
-<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 14px;">Got a {nl} quote already?</p><a href="/us/" class="btn">⚡ Check my quote free</a></div>"""
+<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 14px;">Got a {nl} quote already?</p><a href="/en-us/" class="btn">⚡ Check my quote free</a></div>"""
     return canonical, HEAD.format(ga=GA,title=title,desc=desc,canonical=canonical,schema=schema)+body+FOOT
 
 def main_hub():
     title="Home Project Cost Guides by City (2026) | Bylder"
     desc="Real cost ranges for kitchen remodels, bathrooms, roofing, HVAC and more across U.S. cities — plus a free AI tool to check if your contractor quote is fair."
-    canonical=f"{BASE}/us/cost/"
-    projs="".join(f"<a href='/us/cost/{p['slug']}/'>{p['name']}</a>" for p in PROJECTS)
-    body=f"""<div class="crumb"><a href="/us/">Home</a> › Cost guides</div>
+    canonical=f"{BASE}/en-us/cost/"
+    projs="".join(f"<a href='/en-us/cost/{p['slug']}/'>{p['name']}</a>" for p in PROJECTS)
+    body=f"""<div class="crumb"><a href="/en-us/">Home</a> › Cost guides</div>
 <h1>Home project cost guides</h1>
-<p>Browse realistic U.S. cost ranges by project and city, then upload your own contractor bid or builder upgrade list for a <a href="/us/">free AI quote check</a>.</p>
+<p>Browse realistic U.S. cost ranges by project and city, then upload your own contractor bid or builder upgrade list for a <a href="/en-us/">free AI quote check</a>.</p>
 <h2>Projects</h2><div class="links">{projs}</div>
-<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 14px;">Have a quote to check?</p><a href="/us/" class="btn">⚡ Check my quote free</a></div>"""
+<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 14px;">Have a quote to check?</p><a href="/en-us/" class="btn">⚡ Check my quote free</a></div>"""
     schema=('<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":['
       '{"@type":"ListItem","position":1,"name":"Cost guides"}]}</script>')
     return canonical, HEAD.format(ga=GA,title=title,desc=desc,canonical=canonical,schema=schema)+body+FOOT
@@ -212,19 +212,19 @@ def main():
         write('/tmp/sample_us_cost.html', h)
         print("Sample geschreven: /tmp/sample_us_cost.html"); print("URL:", u); return
     # main hub
-    u,h=main_hub(); write(f"{ROOT}/us/cost/index.html", h); urls.append(u)
+    u,h=main_hub(); write(f"{ROOT}/en-us/cost/index.html", h); urls.append(u)
     for p in PROJECTS:
-        u,h=project_hub(p); write(f"{ROOT}/us/cost/{p['slug']}/index.html", h); urls.append(u)
+        u,h=project_hub(p); write(f"{ROOT}/en-us/cost/{p['slug']}/index.html", h); urls.append(u)
         for m in METROS:
-            u,h=detail_page(p,m); write(f"{ROOT}/us/cost/{p['slug']}/{m[0]}/index.html", h); urls.append(u)
+            u,h=detail_page(p,m); write(f"{ROOT}/en-us/cost/{p['slug']}/{m[0]}/index.html", h); urls.append(u)
     # sitemap
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    sm+=f'<url><loc>{BASE}/us/</loc><priority>0.9</priority></url>\n'
+    sm+=f'<url><loc>{BASE}/en-us/</loc><priority>0.9</priority></url>\n'
     for u in urls: sm+=f'<url><loc>{u}</loc></url>\n'
     sm+='</urlset>\n'
-    write(f"{ROOT}/us-sitemap.xml", sm)
+    write(f"{ROOT}/en-us-sitemap.xml", sm)
     print(f"Gegenereerd: {len(urls)} pagina's ({len(PROJECTS)} projecten x {len(METROS)} steden + hubs)")
-    print(f"Sitemap: us-sitemap.xml ({len(urls)+1} urls)")
+    print(f"Sitemap: en-us-sitemap.xml ({len(urls)+1} urls)")
 
 if __name__=='__main__':
     main()
