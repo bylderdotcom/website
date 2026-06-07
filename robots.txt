@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.bylder.com/sitemap.xml
+Sitemap: https://www.bylder.com/us-sitemap.xml
