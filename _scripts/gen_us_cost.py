@@ -60,6 +60,15 @@ METROS = [
   ("san-antonio-tx","San Antonio","TX",0.90),("indianapolis-in","Indianapolis","IN",0.90),
 ]
 
+# Hand-gemaakte pijler-/guide-pagina's (niet gegenereerd, wel in de sitemap)
+GUIDE_PATHS = [
+  "/en-us/guides/",
+  "/en-us/guides/are-builder-upgrades-worth-it/",
+  "/en-us/guides/is-my-contractor-quote-too-high/",
+  "/en-us/guides/how-to-negotiate-a-contractor-quote/",
+  "/en-us/guides/new-construction-walkthrough-checklist/",
+]
+
 def money(n):
     return "$" + format(int(round(n/100.0)*100), ",")
 
@@ -220,6 +229,7 @@ def main():
     # sitemap
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm+=f'<url><loc>{BASE}/en-us/</loc><priority>0.9</priority></url>\n'
+    for g in GUIDE_PATHS: sm+=f'<url><loc>{BASE}{g}</loc><priority>0.8</priority></url>\n'
     for u in urls: sm+=f'<url><loc>{u}</loc></url>\n'
     sm+='</urlset>\n'
     write(f"{ROOT}/en-us-sitemap.xml", sm)
