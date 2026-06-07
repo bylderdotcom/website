@@ -246,6 +246,7 @@ function animateStatus(){
   return setInterval(function(){ if(i<msgs.length) el.textContent=msgs[i++]; },1300);
 }
 
+var lastUpload=null;
 async function processFile(file){
   var allowed=['image/png','image/jpeg','image/jpg','application/pdf'];
   if(!allowed.includes(file.type)){ alert('Only PDF, PNG or JPG files are allowed.'); return; }
@@ -254,6 +255,7 @@ async function processFile(file){
   show('scanning'); statusTimer=animateStatus();
   try{
     var base64=await fileToBase64(file);
+    lastUpload={data:base64, type:file.type, name:file.name};
     var resp=await fetch('/api/quote-check',{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ fileData:base64, fileType:file.type }) });
     clearInterval(statusTimer);
     if(!resp.ok){ var er=await resp.json().catch(function(){return {};}); throw new Error(er.error||'API error'); }
@@ -276,10 +278,17 @@ function showResult(d){
 }
 function showError(msg){ document.getElementById('errorMsg').textContent=msg||'Please try again.'; show('error'); }
 function resetScan(){ document.getElementById('fileInput').value=''; show('idle'); }
-function onGetFull(){
+async function onGetFull(){
   if(window.gtag) gtag('event','get_full_report_click');
-  var note=document.getElementById('ctaNote');
-  note.innerHTML='Thanks! The full report is launching soon — email <a href="mailto:hello@bylder.com?subject=Bylder%20US%20early%20access" style="color:var(--moss);font-weight:600;">hello@bylder.com</a> for early access.';
+  var btn=document.getElementById('ctaFull'); var note=document.getElementById('ctaNote');
+  try{
+    if(lastUpload){ try{ sessionStorage.setItem('bylder_us_file', JSON.stringify(lastUpload)); }catch(e){} }
+    btn.textContent='Redirecting to secure checkout…'; btn.disabled=true;
+    var r=await fetch('/api/create-checkout',{ method:'POST', headers:{'Content-Type':'application/json'}, body:'{}' });
+    if(r.status===503){ note.textContent='Payments are launching shortly — check back soon.'; btn.disabled=false; btn.textContent='Get my full report →'; return; }
+    var d=await r.json();
+    if(d && d.url){ window.location.href=d.url; } else { throw new Error('No checkout URL'); }
+  }catch(e){ note.textContent='Could not start checkout. Please try again.'; btn.disabled=false; btn.textContent='Get my full report →'; }
 }
 </script>
 </body>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LZYCRP1169');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your full quote report | Bylder</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="/en-us/guides/guides.css">
+<style>
+.state{padding:60px 0;text-align:center}
+.spin{font-size:2rem;display:inline-block;animation:spin 1.6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.savings{background:#fff;border:1px solid rgba(61,90,62,.25);border-radius:16px;padding:22px;text-align:center;margin:16px 0}
+.savings .big{font-size:2.2rem;font-weight:800;color:#3D5A3E;letter-spacing:-.03em}
+.v-fair,.v-take,.v-low{color:#3D5A3E;font-weight:700}
+.v-high,.v-skip{color:#B85C38;font-weight:700}
+.v-negotiate{color:#B8901F;font-weight:700}
+.drop{background:#fff;border:2px dashed rgba(61,46,30,.18);border-radius:16px;padding:34px;text-align:center;margin:16px 0}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-in"><a href="/en-us/" class="logo"><i>B.</i>Bylder</a><a href="/en-us/" class="btn">New check</a></div></nav>
+<div class="container">
+
+<div id="loading" class="state">
+  <div class="spin">🧠</div>
+  <h1 style="font-size:1.4rem;margin-top:14px;">Generating your full report…</h1>
+  <p class="meta" id="loadingNote">Verifying your payment and analyzing every line item.</p>
+</div>
+
+<div id="reupload" class="state" style="display:none;text-align:left;">
+  <h1>Almost there — re-upload your document</h1>
+  <p>Your payment is confirmed ✅. Your file was too large to carry over from the previous step, so please upload it once more to generate your report.</p>
+  <div class="drop" onclick="document.getElementById('ru').click()" style="cursor:pointer;">
+    <div style="font-size:2rem;margin-bottom:10px;">📄</div>
+    <p style="font-weight:700;color:#1A1208;">Upload your quote or upgrade list</p>
+    <p class="meta">PDF, PNG or JPG</p>
+    <input type="file" id="ru" accept=".pdf,.png,.jpg,.jpeg" style="display:none;" onchange="onReupload(event)">
+  </div>
+</div>
+
+<div id="error" class="state" style="display:none;">
+  <div style="font-size:2rem;">⚠️</div>
+  <h1 style="font-size:1.4rem;margin-top:10px;">Something went wrong</h1>
+  <p class="meta" id="errorNote">Please try again.</p>
+  <p style="margin-top:14px;"><button class="btn" onclick="start()">Retry</button></p>
+</div>
+
+<div id="report" style="display:none;">
+  <div class="crumb"><a href="/en-us/">Home</a> › Your report</div>
+  <h1>Your full quote report</h1>
+  <p class="meta" id="docType"></p>
+  <div class="answer" id="summary"></div>
+  <div class="savings"><div class="meta" style="text-transform:uppercase;letter-spacing:.08em;">Estimated savings</div><div class="big" id="savings">$0</div></div>
+
+  <h2>Line-by-line breakdown</h2>
+  <table id="itemsTable"><thead><tr><th>Item</th><th>Quoted</th><th>Market range</th><th>Verdict</th><th>What to do</th></tr></thead><tbody id="itemsBody"></tbody></table>
+
+  <h2>Negotiation tips</h2>
+  <ul id="tips"></ul>
+
+  <h2>Next steps</h2>
+  <ol id="steps"></ol>
+
+  <div class="cta"><p style="font-weight:700;color:#1A1208;">Got another quote?</p><a href="/en-us/" class="btn">⚡ Check another — free</a></div>
+  <p class="meta">Tip: press Ctrl/Cmd + P to save this report as a PDF.</p>
+</div>
+
+</div>
+<footer><div class="container">Bylder · AI quote &amp; upgrade checks for U.S. homeowners · <a href="/en-us/">Bylder US</a></div></footer>
+
+<script>
+function qs(k){return new URLSearchParams(location.search).get(k);}
+function show(id){['loading','reupload','error','report'].forEach(function(s){document.getElementById(s).style.display=(s===id?'':'none');});}
+function getStoredFile(){ try{ var r=sessionStorage.getItem('bylder_us_file'); return r?JSON.parse(r):null; }catch(e){ return null; } }
+
+function esc(s){var d=document.createElement('div');d.textContent=(s==null?'':String(s));return d.innerHTML;}
+
+function render(d){
+  document.getElementById('docType').textContent = d.doc_type==='builder_upgrades' ? 'Builder upgrade list' : d.doc_type==='contractor_quote' ? 'Contractor quote' : 'Document analysis';
+  document.getElementById('summary').innerHTML = '<strong>Summary:</strong> ' + esc(d.summary||'');
+  document.getElementById('savings').textContent = d.estimated_savings || '$0';
+  var body=document.getElementById('itemsBody'); body.innerHTML='';
+  (d.items||[]).forEach(function(it){
+    var v=(it.verdict||'').toLowerCase();
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td>'+esc(it.name)+'</td><td>'+esc(it.quoted)+'</td><td>'+esc(it.market_range)+'</td>'+
+      '<td class="v-'+esc(v)+'">'+esc(it.verdict)+'</td><td>'+esc(it.note)+'</td>';
+    body.appendChild(tr);
+  });
+  var tips=document.getElementById('tips'); tips.innerHTML='';
+  (d.negotiation_tips||[]).forEach(function(t){var li=document.createElement('li');li.textContent=t;tips.appendChild(li);});
+  var steps=document.getElementById('steps'); steps.innerHTML='';
+  (d.next_steps||[]).forEach(function(t){var li=document.createElement('li');li.textContent=t;steps.appendChild(li);});
+  show('report');
+  if(window.gtag) gtag('event','report_viewed',{doc_type:d.doc_type});
+}
+
+async function callReport(file){
+  var sid=qs('session_id');
+  if(!sid){ document.getElementById('errorNote').textContent='Missing payment session. Please start from the home page.'; show('error'); return; }
+  show('loading');
+  try{
+    var resp=await fetch('/api/full-report',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ session_id:sid, fileData:file?file.data:null, fileType:file?file.type:null })});
+    if(resp.status===400){ var e=await resp.json().catch(function(){return{};}); if(e.need_file){ show('reupload'); return; } throw new Error(e.error||'Bad request'); }
+    if(!resp.ok){ var er=await resp.json().catch(function(){return{};}); throw new Error(er.error||'Error '+resp.status); }
+    var data=await resp.json();
+    render(data);
+  }catch(err){ document.getElementById('errorNote').textContent=err.message||'Please try again.'; show('error'); }
+}
+
+function fileToBase64(file){return new Promise(function(res,rej){var r=new FileReader();r.onload=function(){res(r.result.split(',')[1]);};r.onerror=rej;r.readAsDataURL(file);});}
+async function onReupload(e){
+  var f=e.target.files[0]; if(!f) return;
+  var allowed=['image/png','image/jpeg','image/jpg','application/pdf'];
+  if(!allowed.includes(f.type)){ alert('Only PDF, PNG or JPG.'); return; }
+  show('loading');
+  var b64=await fileToBase64(f);
+  callReport({data:b64,type:f.type});
+}
+
+function start(){ callReport(getStoredFile()); }
+start();
+</script>
+</body>
+</html>

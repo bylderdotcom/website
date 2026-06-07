@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.100.1"
+    "@anthropic-ai/sdk": "^0.100.1",
+    "stripe": "^17.7.0"
   }
 }
