@@ -91,6 +91,12 @@ p{{margin:10px 0;color:rgba(61,46,30,.8)}}
 .links a{{background:#fff;border:1px solid rgba(61,46,30,.12);border-radius:999px;padding:8px 14px;font-size:13px;text-decoration:none;color:#3D2E1E;font-weight:600}}
 .cta{{background:rgba(61,90,62,.07);border:1px solid rgba(61,90,62,.22);border-radius:16px;padding:20px;margin:24px 0}}
 footer{{padding:34px 0;color:rgba(61,46,30,.45);font-size:13px;text-align:center;border-top:1px solid rgba(61,46,30,.08);margin-top:30px}}
+.answer{{background:#fff;border:1px solid rgba(61,90,62,.25);border-left:4px solid #3D5A3E;border-radius:12px;padding:16px 18px;margin:16px 0;font-size:16px}}
+.answer strong{{color:#1A1208}}
+ul{{margin:10px 0 10px 22px;color:rgba(61,46,30,.8)}} li{{margin:6px 0}}
+.faq{{background:#fff;border:1px solid rgba(61,46,30,.08);border-radius:12px;padding:2px 16px;margin:8px 0}}
+.faq summary{{font-weight:700;color:#1A1208;cursor:pointer;padding:12px 0;font-size:15px}}
+.faq p{{padding-bottom:12px;margin:0}}
 </style>
 {schema}
 </head>
@@ -156,31 +162,78 @@ def brand_hub(brand, stores, outroot):
           HEAD.format(ga=GA, title=title, desc=desc, robots="index, follow", canonical=canonical, schema=schema) + body + FOOT)
     return canonical
 
+FAQS = [
+    ("Wat is een showroomsale?",
+     "Een showroomsale is de verkoop van showroommodellen: meubels die als demonstratiemodel in de winkel hebben gestaan, meestal in nieuwstaat. Je betaalt de showroomsale-prijs in plaats van de adviesprijs, doorgaans 20 tot 50% minder."),
+    ("Hoeveel korting krijg je op een showroommodel?",
+     "Showroommodellen zijn doorgaans 20 tot 50% goedkoper dan de adviesprijs, afhankelijk van het merk, de staat en hoe lang het model in de showroom heeft gestaan. Op duurdere A-merken loopt het voordeel al snel in de honderden tot duizenden euro's."),
+    ("Kan ik een showroommodel reserveren?",
+     "Ja. Via Bylder kun je een showroomstuk 4 dagen reserveren, zodat je het rustig in de winkel kunt bekijken voordat je beslist. Je kunt het ook direct vastleggen met een aanbetaling."),
+    ("Zijn showroommodellen nieuw?",
+     "Showroommodellen zijn niet nieuw verpakt, maar hebben alleen als demonstratiemodel in de winkel gestaan en zijn vaak nauwelijks gebruikt. Je krijgt dus een A-merk in nette staat voor een fractie van de nieuwprijs."),
+    ("Waarom showroommodellen kopen via Bylder?",
+     "Bylder bundelt showroomsales van geselecteerde woonwinkels op één plek, met eerlijke van/voor-prijzen. Als Bylder-lid krijg je daarnaast exclusieve kortingsvouchers bij 40+ woonmerken voor de rest van je inrichting."),
+]
+
 def main_hub(brands, outroot):
     canonical = f"{BASE}/showroomsale/"
-    title = "Showroomsale — woonmerken & meubels met korting | Bylder"
-    desc = "Echte showroommodellen in de sale bij geselecteerde woonwinkels. Bekijk de actuele showroomstukken per merk en winkel."
-    cards = "".join(f'<a href="/showroomsale/{slug(b)}/">{b}</a>' for b in brands)
+    title = "Showroomsale: showroommodellen met korting bij woonwinkels | Bylder"
+    desc = "Wat is een showroomsale en hoeveel bespaar je? Showroommodellen zijn demonstratiemeubels in nieuwstaat, vaak 20–50% goedkoper. Bekijk hoe het werkt en de deelnemende winkels."
+    if brands:
+        stores_section = ('<h2>Deelnemende merken</h2>'
+                          '<p>Bekijk de actuele showroommodellen per merk en winkel.</p>'
+                          '<div class="links">' + "".join(f'<a href="/showroomsale/{slug(b)}/">{b}</a>' for b in brands) + '</div>')
+    else:
+        stores_section = ('<h2>Deelnemende winkels</h2>'
+                          '<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 6px;">Binnenkort: showroommodellen bij geselecteerde winkels</p>'
+                          '<p style="margin:0;font-size:14px;">We koppelen woonwinkels die hun showroommodellen met korting aanbieden. '
+                          '<a href="/vouchers/">Word Bylder-lid</a> om als eerste de showroomsales te zien — plus exclusieve kortingsvouchers bij 40+ woonmerken.</p></div>')
+    faq_html = "".join('<details class="faq"><summary>%s</summary><p>%s</p></details>' % (q, a) for q, a in FAQS)
+    faq_ld = ",".join('{"@type":"Question","name":"%s","acceptedAnswer":{"@type":"Answer","text":"%s"}}'
+                      % (q.replace('"', "'"), a.replace('"', "'")) for q, a in FAQS)
+    schema = ('<script type="application/ld+json">{"@context":"https://schema.org","@graph":['
+              '{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Showroomsale"}]},'
+              '{"@type":"FAQPage","mainEntity":[%s]}]}</script>') % faq_ld
     body = f"""<div class="crumb">Showroomsale</div>
-<h1>Showroomsale</h1>
-<p>Echte showroommodellen met flinke korting bij geselecteerde woonwinkels. Kies een merk voor de actuele showroomstukken.</p>
-<div class="links">{cards}</div>"""
+<h1>Showroomsale: showroommodellen met flinke korting</h1>
+<div class="answer"><strong>Een showroomsale is de verkoop van showroommodellen</strong> — demonstratiemeubels die in de winkel hebben gestaan, meestal in nieuwstaat. Je betaalt de <strong>showroomsale-prijs</strong> in plaats van de adviesprijs, doorgaans <strong>20 tot 50% minder</strong>.</div>
+<p>Op zoek naar een topmerk voor een scherpe prijs? Showroommodellen zijn nauwelijks gebruikt, direct beschikbaar en flink afgeprijsd. Bylder bundelt de showroomsales van geselecteerde woonwinkels, met eerlijke van/voor-prijzen.</p>
+
+<h2>Waarom een showroommodel kopen?</h2>
+<ul>
+<li><strong>Flinke korting</strong> op A-merken — vaak honderden tot duizenden euro's voordeel.</li>
+<li><strong>Nauwelijks gebruikt</strong> — het model stond alleen als demonstratie in de showroom.</li>
+<li><strong>Direct beschikbaar</strong> — geen lange levertijd, je kunt het meteen meenemen of laten leveren.</li>
+<li><strong>Duurzamer</strong> — je geeft een bestaand product een tweede leven in plaats van nieuw te laten produceren.</li>
+</ul>
+
+<h2>Hoe werkt de showroomsale via Bylder?</h2>
+<ul>
+<li>Elke aanbieding toont de <strong>adviesprijs</strong> én de <strong>showroomsale-prijs</strong>, zodat je precies ziet wat je bespaart.</li>
+<li>Je kunt een showroomstuk <strong>4 dagen reserveren</strong> om het rustig in de winkel te bekijken.</li>
+<li>Of je legt het direct vast met een <strong>aanbetaling</strong> — zo grijpt een ander het niet voor je neus weg.</li>
+</ul>
+
+{stores_section}
+
+<h2>Veelgestelde vragen</h2>
+{faq_html}
+
+<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 6px;">Bespaar op je hele inrichting</p><p style="margin:0;font-size:14px;">Word Bylder-lid en krijg naast de showroomsales <strong>exclusieve kortingsvouchers bij 40+ woonmerken</strong> — gemiddeld €4.200 besparing. <a href="/vouchers/">Bekijk de vouchers →</a></p></div>"""
     write(f"{outroot}/showroomsale/index.html",
-          HEAD.format(ga=GA, title=title, desc=desc, robots="index, follow", canonical=canonical,
-                      schema='<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Showroomsale"}]}</script>') + body + FOOT)
+          HEAD.format(ga=GA, title=title, desc=desc, robots="index, follow", canonical=canonical, schema=schema) + body + FOOT)
     return canonical
 
 def main():
     sample = '--sample' in sys.argv
     outroot = '/tmp/showroomsale_preview' if sample else ROOT
     items = sample_items() if sample else fetch_items()
-    if not items:
-        print("Geen approved showroom-items gevonden → geen pagina's gegenereerd.")
-        return
-    # groepeer: merk -> winkel -> items
+    # groepeer: merk -> winkel -> items (kan leeg zijn: dan alleen de evergreen hub)
     by_brand = defaultdict(lambda: defaultdict(list))
     for it in items:
         by_brand[it['brand']][it['store_name']].append(it)
+    if not items:
+        print("Geen approved items → alleen de evergreen showroomsale-hub wordt gegenereerd.")
     urls = [main_hub(sorted(by_brand), outroot)]
     for brand, stores in by_brand.items():
         urls.append(brand_hub(brand, stores, outroot))
