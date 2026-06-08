@@ -265,8 +265,8 @@ body::before {
 .cursor-blink { animation:blink 1.2s step-start infinite; }
 ::-webkit-scrollbar{width:6px} ::-webkit-scrollbar-track{background:#EDE6D8} ::-webkit-scrollbar-thumb{background:#C8B89A;border-radius:3px}
 .stat-num { font-size:2.8rem; font-weight:800; letter-spacing:-0.04em; line-height:1; }
-.partner-logo { filter:grayscale(100%) opacity(0.3); transition:filter 0.3s; }
-.partner-logo:hover { filter:grayscale(40%) opacity(0.6); }
+.partner-logo { opacity:1; transition:transform 0.3s ease, opacity 0.3s ease; }
+.partner-logo:hover { transform:scale(1.05); }
 
 /* ── HAMBURGER MENU ── */
 .mobile-menu-btn {
