@@ -130,7 +130,7 @@ gtag('config', 'G-LZYCRP1169');
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="Nieuwbouw {provincie} — {len(gemeenten)} gemeenten | Bylder">
 <meta property="og:description" content="{totaal_proj} projecten in {provincie}. Gem. {gem_besp_fmt} bespaard via Bylder.">
-<meta property="og:image" content="https://bylder.com/og/nieuwbouw-gemeente.jpg">
+<meta property="og:image" content="https://www.bylder.com/og/nieuwbouw-gemeente.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="nl" href="{url}">
 <script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False, indent=2)}</script>

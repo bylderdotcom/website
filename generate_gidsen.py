@@ -90,7 +90,7 @@ gtag('config', 'G-LZYCRP1169');
 <link rel="canonical" href="{url}"><link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <meta property="og:type" content="article"><meta property="og:url" content="{url}">
 <meta property="og:title" content="{gids["h1"]}"><meta property="og:description" content="{gids["meta_desc"]}">
-<meta property="og:image" content="https://bylder.com/og/nieuwbouw-gids.jpg">
+<meta property="og:image" content="https://www.bylder.com/og/nieuwbouw-gids.jpg">
 <meta name="twitter:card" content="summary_large_image"><link rel="alternate" hreflang="nl" href="{url}">
 <script type="application/ld+json">{json.dumps(faq_ld,ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(bc_ld,ensure_ascii=False)}</script>

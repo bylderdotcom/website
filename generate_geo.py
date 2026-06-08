@@ -183,7 +183,7 @@ gtag('config', 'G-LZYCRP1169');
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{p["h1"]}">
 <meta property="og:description" content="{p["meta_desc"]}">
-<meta property="og:image" content="https://bylder.com/og/nieuwbouw-gids.jpg">
+<meta property="og:image" content="https://www.bylder.com/og/nieuwbouw-gids.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="nl" href="{url}">
 {ld_blocks}
