@@ -39,7 +39,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
 /* NAV BASIS */
 .glass-nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(245,240,232,0.93);
+  background: rgba(245,240,232,0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(61,46,30,0.08);
@@ -47,8 +47,8 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
   display: flex; align-items: center;
 }
 .nav-inner {
-  width: 100%; max-width: 1200px; margin: 0 auto;
-  padding: 0 5%;
+  width: 100%; max-width: 1280px; margin: 0 auto;
+  padding: 0 48px;
   display: flex; align-items: center; justify-content: space-between;
   gap: 24px;
 }
@@ -67,30 +67,27 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
   color: #F5F0E8;
 }
 .nav-logo span {
-  font-weight: 800; font-size: 17px;
-  letter-spacing: -0.02em; color: #1A1208;
+  font-weight: 800; font-size: 18px;
+  letter-spacing: -0.025em; color: #1A1208;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .nav-logo .nav-logo-dot { color: #3D5A3E; }
 
 /* LINKS */
 .nav-links {
-  display: flex; align-items: center; gap: 4px;
-  flex: 1; justify-content: center;
+  display: flex; align-items: center; gap: 24px;
 }
 .nav-link {
-  font-size: 14px; font-weight: 500;
-  color: rgba(61,46,30,0.55);
-  text-decoration: none; padding: 8px 12px;
-  border-radius: 8px;
-  transition: color 0.15s, background 0.15s;
+  font-size: 14px; font-weight: 400;
+  color: rgba(61,46,30,0.5);
+  text-decoration: none; padding: 0;
+  transition: color 0.15s;
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: none; border: none; cursor: pointer;
   white-space: nowrap;
 }
 .nav-link:hover, .nav-link:focus {
   color: #1A1208;
-  background: rgba(61,46,30,0.05);
   outline: none;
 }
 .nav-link.active { color: #3D5A3E; font-weight: 600; }
@@ -141,7 +138,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
   display: flex; align-items: center; gap: 10px; flex-shrink: 0;
 }
 .nav-login {
-  font-size: 13px; font-weight: 600;
+  font-size: 14px; font-weight: 500;
   color: rgba(61,46,30,0.5); text-decoration: none;
   padding: 8px 12px; border-radius: 8px;
   transition: color 0.15s;
@@ -161,6 +158,10 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
   background: #4E7350;
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(61,90,62,0.25);
+}
+/* Nav-knop gelijk aan homepage (.cta-btn px-5 py-2.5 rounded-lg text-sm) */
+.nav-cta-group .btn-primary {
+  padding: 10px 20px; border-radius: 8px; font-size: 14px;
 }
 
 /* HAMBURGER */
@@ -206,6 +207,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
 
 /* RESPONSIVE */
 @media (max-width: 860px) {
+  .nav-inner { padding: 0 20px; }
   .nav-links { display: none; }
   .nav-login { display: none; }
   .mobile-menu-btn { display: flex; }
@@ -295,7 +297,6 @@ footer a:hover{color:rgba(245,240,232,0.8)}
     <div class="nav-links">
       <a href="/#features" class="nav-link">Voordelen</a>
       <a href="/vouchers/" class="nav-link">Vouchers</a>
-      <a href="/showroomsale/" class="nav-link">Showroomsale</a>
 
       <div class="nav-dropdown">
         <button class="nav-link nav-dropdown-btn">Voor wie? <span class="nav-arrow">▾</span></button>
@@ -334,7 +335,6 @@ footer a:hover{color:rgba(245,240,232,0.8)}
 <div class="mobile-nav" id="mobileNav">
   <a href="/#features">Voordelen</a>
   <a href="/vouchers/">Vouchers</a>
-  <a href="/showroomsale/">Showroomsale</a>
   <a href="/nieuwbouw-koper/">🏡 Nieuwbouwkoper</a>
   <a href="/bestaande-bouw/">🏠 Bestaande bouw koper</a>
   <a href="/renovatie/">🔨 Renovatiewoning</a>
