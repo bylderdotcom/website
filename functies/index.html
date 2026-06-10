@@ -93,6 +93,9 @@ footer{padding:34px 0;border-top:1px solid rgba(61,46,30,.08);text-align:center;
     <button type="button" class="wt-btn" data-wt="bestaand">🏠 Bestaande bouw</button>
     <button type="button" class="wt-btn" data-wt="renovatie">🔨 Renovatie</button>
   </div></div>
+  <div class="wt-desc" data-wt="nieuwbouw" style="max-width:620px;margin:16px auto 0;font-size:14px;color:var(--bark-3);line-height:1.6">Je koopt een <strong>nieuw te bouwen woning</strong> — van tekening tot oplevering. Denk aan meerwerk, kopersopties en de bouwfasen.</div>
+  <div class="wt-desc" data-wt="bestaand" style="display:none;max-width:620px;margin:16px auto 0;font-size:14px;color:var(--bark-3);line-height:1.6">Je koopt een <strong>al bestaande, bewoonbare woning</strong> die je niet (meteen) ingrijpend gaat verbouwen. Denk aan bezichtiging, een eerlijk bod, financiering en de overdracht.</div>
+  <div class="wt-desc" data-wt="renovatie" style="display:none;max-width:620px;margin:16px auto 0;font-size:14px;color:var(--bark-3);line-height:1.6">Je gaat een woning <strong>(ver)bouwen of renoveren</strong> — denk aan verbouwplan, vergunning, budget en aannemer. <span style="color:var(--moss);font-weight:600">Kies dit ook als je een bestaande woning koopt om er meteen flink in te verbouwen.</span></div>
 </div></section>
 
 <section class="section"><div class="container">
@@ -141,8 +144,8 @@ footer{padding:34px 0;border-top:1px solid rgba(61,46,30,.08);text-align:center;
 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
-  var btns=document.querySelectorAll('.wt-btn'),grids=document.querySelectorAll('.wt-grid');
-  function sel(w){btns.forEach(function(b){b.classList.toggle('on',b.dataset.wt===w);});grids.forEach(function(g){g.style.display=g.dataset.wt===w?'grid':'none';});}
+  var btns=document.querySelectorAll('.wt-btn'),grids=document.querySelectorAll('.wt-grid'),descs=document.querySelectorAll('.wt-desc');
+  function sel(w){btns.forEach(function(b){b.classList.toggle('on',b.dataset.wt===w);});grids.forEach(function(g){g.style.display=g.dataset.wt===w?'grid':'none';});descs.forEach(function(d){d.style.display=d.dataset.wt===w?'block':'none';});}
   btns.forEach(function(b){b.addEventListener('click',function(){sel(b.dataset.wt);});});
 });
 </script>
