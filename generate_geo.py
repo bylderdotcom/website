@@ -190,6 +190,8 @@ gtag('config', 'G-LZYCRP1169');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
 {CSS}
 </head>
 <body>
@@ -207,7 +209,7 @@ gtag('config', 'G-LZYCRP1169');
     <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px;">{p["h1"]}</h1>
     <p style="font-size:17px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:24px;">{p["intro"]}</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <a href="/login.html" style="background:#3D5A3E;color:#F5F0E8;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;"><i class="fa-solid fa-wand-magic-sparkles"></i> AI controleert dit voor mij</a>
+      <a href="/login.html" style="background:#3D5A3E;color:#F5F0E8;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;"><i class="ph-thin ph-magic-wand"></i> AI controleert dit voor mij</a>
       <a href="/nieuwbouw-gids/" style="border:1.5px solid rgba(61,46,30,0.15);color:#3D2E1E;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;background:rgba(255,255,255,0.8);">Alle gidsen</a>
     </div>
   </div>
@@ -253,7 +255,7 @@ gtag('config', 'G-LZYCRP1169');
   <div class="container">
     <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:#F5F0E8;letter-spacing:-0.03em;margin-bottom:12px;">Laat Bylder dit voor jou regelen</h2>
     <p style="font-size:15px;color:rgba(245,240,232,0.5);max-width:420px;margin:0 auto 22px;line-height:1.7;">Upload je documenten, de AI controleert alles. €99 eenmalig.</p>
-    <a href="/login.html" style="background:#3D5A3E;color:#F5F0E8;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;"><i class="fa-solid fa-wand-magic-sparkles"></i> Start gratis QuickScan</a>
+    <a href="/login.html" style="background:#3D5A3E;color:#F5F0E8;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;"><i class="ph-thin ph-magic-wand"></i> Start gratis QuickScan</a>
   </div>
 </section>
 

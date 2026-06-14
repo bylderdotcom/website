@@ -98,7 +98,7 @@ def generate_provincie_page(provincie, gemeenten):
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">{g['gemeente']}</div>
           <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">{g['aantal_projecten']} projecten · {g['gem_besparing']} bespaard</div>
           <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">{g['wijken_lijst'][:60]}{'...' if len(g['wijken_lijst'])>60 else ''}</div>
-          <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
+          <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>"""
 
     # Volledige pagina HTML
@@ -138,6 +138,8 @@ gtag('config', 'G-LZYCRP1169');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
 *{{box-sizing:border-box}}html{{scroll-behavior:smooth}}
@@ -172,7 +174,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
       <a href="/#vouchers" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
       <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Begeleiding</a>
     </div>
-    <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start gratis <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+    <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start gratis <i class="ph-thin ph-arrow-right ml-1 text-xs"></i></a>
   </div>
 </nav>
 
@@ -240,7 +242,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
         <p style="font-size:14px;color:rgba(61,46,30,0.5);margin-top:6px;">Klik op een gemeente voor lokale marktdata, projecten en de 5% depot calculator</p>
       </div>
       <a href="https://mijn.bylder.com" class="cta-btn px-6 py-3 rounded-xl inline-flex items-center gap-2" style="font-size:13px;">
-        Start QuickScan <i class="fa-solid fa-arrow-right text-xs"></i>
+        Start QuickScan <i class="ph-thin ph-arrow-right text-xs"></i>
       </a>
     </div>
 
@@ -262,7 +264,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
     <div style="border:1px solid rgba(61,46,30,0.09);border-radius:14px;overflow:hidden;background:#fff;margin-bottom:10px;">
       <h3 style="margin:0;"><button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:none;border:none;font-family:inherit;font-size:15px;font-weight:700;color:#1A1208;">
         Welke nieuwbouwprojecten zijn er in {provincie}?
-        <i class="fa-solid fa-chevron-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
+        <i class="ph-thin ph-caret-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
       </button></h3>
       <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">In {provincie} zijn momenteel <strong>{totaal_proj} actieve nieuwbouwprojecten</strong> verdeeld over {len(gemeenten)} gemeenten. De grootste projecten vind je in {', '.join(g['gemeente'] for g in top6[:4])}. Klik op een gemeente hierboven voor het complete projectoverzicht.</div></div>
     </div>
@@ -270,7 +272,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
     <div style="border:1px solid rgba(61,46,30,0.09);border-radius:14px;overflow:hidden;background:#fff;margin-bottom:10px;">
       <h3 style="margin:0;"><button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:none;border:none;font-family:inherit;font-size:15px;font-weight:700;color:#1A1208;">
         Hoeveel bespaar ik als nieuwbouwkoper in {provincie}?
-        <i class="fa-solid fa-chevron-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
+        <i class="ph-thin ph-caret-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
       </button></h3>
       <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Kopers in {provincie} besparen gemiddeld <strong>{gem_besp_fmt}</strong> via Bylder. Dit is de gecombineerde besparing via AI-offerte controle, collectieve inkoopkorting bij 40+ merken en voucheractivaties. Per gemeente verschilt dit — klik op jouw gemeente voor de exacte cijfers.</div></div>
     </div>
@@ -278,7 +280,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
     <div style="border:1px solid rgba(61,46,30,0.09);border-radius:14px;overflow:hidden;background:#fff;">
       <h3 style="margin:0;"><button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:none;border:none;font-family:inherit;font-size:15px;font-weight:700;color:#1A1208;">
         In welke gemeenten in {provincie} is Bylder actief?
-        <i class="fa-solid fa-chevron-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
+        <i class="ph-thin ph-caret-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
       </button></h3>
       <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Bylder is actief in alle {len(gemeenten)} gemeenten van {provincie}: {', '.join(g['gemeente'] for g in sorted(gemeenten, key=lambda x: x['gemeente']))}.</div></div>
     </div>
@@ -295,7 +297,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
     </h2>
     <p style="font-size:15px;color:rgba(245,240,232,0.5);max-width:440px;margin:0 auto 28px;line-height:1.7;">Gratis QuickScan · gem. {gem_besp_fmt} bespaard · 10% korting bij 40+ merken</p>
     <a href="https://mijn.bylder.com" class="cta-btn px-8 py-4 rounded-xl inline-flex items-center gap-2" style="font-size:14px;">
-      <i class="fa-solid fa-wand-magic-sparkles"></i> Start gratis QuickScan
+      <i class="ph-thin ph-magic-wand"></i> Start gratis QuickScan
     </a>
   </div>
 </section>
@@ -415,7 +417,7 @@ for prov, gemeenten in alle_provincies:
   <div style="font-size:1.8rem;margin-bottom:8px;">{emoji}</div>
   <div style="font-size:16px;font-weight:800;color:#1A1208;margin-bottom:4px;">{prov}</div>
   <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:10px;">{len(gemeenten)} gemeenten · {totaal} projecten</div>
-  <div style="font-size:13px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk gemeenten <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></div>
+  <div style="font-size:13px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk gemeenten <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
 </a>"""
 
 overzicht_html = f"""<!DOCTYPE html>
@@ -440,6 +442,8 @@ gtag('config', 'G-LZYCRP1169');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
 *{{box-sizing:border-box}}body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}}
@@ -457,7 +461,7 @@ gtag('config', 'G-LZYCRP1169');
       <div style="width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:flex;align-items:center;justify-content:center;"><span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span></div>
       <span style="font-weight:700;font-size:18px;letter-spacing:-0.02em;color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
-    <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start gratis <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+    <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start gratis <i class="ph-thin ph-arrow-right ml-1 text-xs"></i></a>
   </div>
 </nav>
 <main style="padding-top:72px;">
