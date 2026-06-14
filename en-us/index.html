@@ -12,6 +12,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bylder — Don't overpay your contractor or builder | Free AI quote check</title>
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
 <meta name="description" content="Upload a contractor bid or your builder's upgrade list and get a free AI analysis: what's overpriced, what to negotiate, and which upgrades to skip. Built for U.S. homeowners and new-construction buyers.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.bylder.com/en-us/">
@@ -98,16 +100,16 @@
     <div class="drop" id="dropZone" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
       <!-- idle -->
       <div id="idle">
-        <div class="drop-ico">📄</div>
+        <div class="drop-ico"><i class="ph-thin ph-file-text"></i></div>
         <h2 style="font-size:1.3rem;margin-bottom:6px;">Drop your quote or upgrade list here</h2>
         <p class="muted" style="margin-bottom:20px;">PDF, PNG or JPG · up to 25MB · results in ~60 seconds</p>
         <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg" style="display:none;" onchange="onPick(event)">
-        <button class="cta" onclick="document.getElementById('fileInput').click()">⚡ Start free analysis</button>
+        <button class="cta" onclick="document.getElementById('fileInput').click()"><i class="ph-thin ph-lightning"></i> Start free analysis</button>
         <p class="muted" style="margin-top:14px;">No account needed · your file is deleted after analysis</p>
       </div>
       <!-- scanning -->
       <div id="scanning" class="hidden">
-        <div class="drop-ico">🧠</div>
+        <div class="drop-ico"><i class="ph-thin ph-brain"></i></div>
         <h2 style="font-size:1.3rem;margin-bottom:10px;">Analyzing…</h2>
         <p class="muted" id="scanStatus">Reading your document…</p>
       </div>
@@ -140,9 +142,9 @@
         <div class="blur-wrap">
           <div class="blur">
             <div style="background:#fff;border:1px solid rgba(61,46,30,.08);border-radius:16px;padding:20px;">
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(61,46,30,.06);"><span>🚿 Bathroom fixtures</span><span style="font-weight:700;">$4,800 · ⚠️ 22% high</span></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(61,46,30,.06);"><span>🪵 Hardwood flooring upgrade</span><span style="font-weight:700;">$6,200 · skip → do aftermarket</span></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;"><span>💡 Recessed lighting package</span><span style="font-weight:700;">$1,900 · ✓ fair</span></div>
+              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(61,46,30,.06);"><span><i class="ph-thin ph-shower"></i> Bathroom fixtures</span><span style="font-weight:700;">$4,800 · <i class="ph-thin ph-warning"></i> 22% high</span></div>
+              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(61,46,30,.06);"><span><i class="ph-thin ph-tree"></i> Hardwood flooring upgrade</span><span style="font-weight:700;">$6,200 · skip → do aftermarket</span></div>
+              <div style="display:flex;justify-content:space-between;padding:10px 0;"><span><i class="ph-thin ph-lightbulb"></i> Recessed lighting package</span><span style="font-weight:700;">$1,900 · ✓ fair</span></div>
             </div>
           </div>
           <div class="overlay">
@@ -161,7 +163,7 @@
       </div>
       <!-- error -->
       <div id="error" class="hidden">
-        <div class="drop-ico" style="background:rgba(184,92,56,.1);border-color:rgba(184,92,56,.2);">⚠️</div>
+        <div class="drop-ico" style="background:rgba(184,92,56,.1);border-color:rgba(184,92,56,.2);"><i class="ph-thin ph-warning"></i></div>
         <h2 style="font-size:1.3rem;margin-bottom:6px;">Something went wrong</h2>
         <p class="muted" id="errorMsg" style="margin-bottom:18px;">Please try again.</p>
         <button class="cta" onclick="resetScan()">Try again</button>
@@ -169,9 +171,9 @@
     </div>
 
     <div style="display:flex;gap:24px;justify-content:center;margin-top:24px;flex-wrap:wrap;">
-      <span class="muted">🔒 Private &amp; encrypted</span>
+      <span class="muted"><i class="ph-thin ph-lock-simple"></i> Private &amp; encrypted</span>
       <span class="muted">⏱️ Results in ~60s</span>
-      <span class="muted">🗑️ File deleted after analysis</span>
+      <span class="muted"><i class="ph-thin ph-trash"></i> File deleted after analysis</span>
     </div>
   </div>
 </section>

@@ -39,9 +39,9 @@ for row in rows:
 
 # Provincie emoji mapping
 prov_emoji = {
-    "Noord-Holland": "🌷", "Zuid-Holland": "🏙️", "Utrecht": "🏛️",
+    "Noord-Holland": "🌷", "Zuid-Holland": "🏙️", "Utrecht": "<i class="ph-thin ph-bank"></i>",
     "Noord-Brabant": "🌳", "Gelderland": "🦅", "Overijssel": "💧",
-    "Flevoland": "🌊", "Groningen": "⚡", "Friesland": "⛵",
+    "Flevoland": "🌊", "Groningen": "<i class="ph-thin ph-lightning"></i>", "Friesland": "⛵",
     "Drenthe": "🌲", "Zeeland": "🦞", "Limburg": "🏔️",
 }
 
@@ -51,7 +51,7 @@ def generate_provincie_page(provincie, gemeenten):
     totaal_proj   = sum(int(g['aantal_projecten']) for g in gemeenten)
     gem_besp      = sum(float(g['gem_besparing'].replace('€','').replace('.','').replace(',','.')) for g in gemeenten) / len(gemeenten)
     gem_besp_fmt  = fmt_euro(gem_besp)
-    emoji         = prov_emoji.get(provincie, "🏠")
+    emoji         = prov_emoji.get(provincie, "<i class="ph-thin ph-house"></i>")
 
     # Top 6 gemeenten op aantal projecten
     top6 = sorted(gemeenten, key=lambda g: int(g['aantal_projecten']), reverse=True)[:6]
@@ -412,7 +412,7 @@ prov_cards = ""
 for prov, gemeenten in alle_provincies:
     slug = slugify(prov)
     totaal = sum(int(g['aantal_projecten']) for g in gemeenten)
-    emoji = {"Noord-Holland":"🌷","Zuid-Holland":"🏙️","Utrecht":"🏛️","Noord-Brabant":"🌳","Gelderland":"🦅","Overijssel":"💧","Flevoland":"🌊","Groningen":"⚡","Friesland":"⛵","Drenthe":"🌲","Zeeland":"🦞","Limburg":"🏔️"}.get(prov,"🏠")
+    emoji = {"Noord-Holland":"🌷","Zuid-Holland":"🏙️","Utrecht":"<i class="ph-thin ph-bank"></i>","Noord-Brabant":"🌳","Gelderland":"🦅","Overijssel":"💧","Flevoland":"🌊","Groningen":"<i class="ph-thin ph-lightning"></i>","Friesland":"⛵","Drenthe":"🌲","Zeeland":"🦞","Limburg":"🏔️"}.get(prov,"<i class="ph-thin ph-house"></i>")
     prov_cards += f"""<a href="/nieuwbouw/{slug}/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:20px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform=''">
   <div style="font-size:1.8rem;margin-bottom:8px;">{emoji}</div>
   <div style="font-size:16px;font-weight:800;color:#1A1208;margin-bottom:4px;">{prov}</div>

@@ -13,6 +13,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Start je Bylder lidmaatschap — €99 eenmalig</title>
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
 <meta name="description" content="Activeer je Bylder kopersbegeleiding. Eenmalig €99, geen abonnement. Veilig betalen via iDEAL, Bancontact of creditcard.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
@@ -499,7 +501,7 @@ body {
 <!-- SUCCES OVERLAY -->
 <div class="success-overlay" id="successOverlay">
   <div class="success-card">
-    <div class="success-icon">✅</div>
+    <div class="success-icon"><i class="ph-thin ph-check-circle"></i></div>
     <div class="success-title">Betaling geslaagd!</div>
     <div class="success-sub">Welkom bij Bylder. Je account wordt nu aangemaakt en je ontvangt een bevestiging op <strong id="successEmail"></strong>.</div>
     <a href="https://app.bylder.com" class="success-btn">
@@ -559,8 +561,8 @@ body {
     </div>
 
     <div class="trust-row">
-      <div class="trust-item"><span class="trust-icon">🔒</span> 14 dagen geld-terug garantie</div>
-      <div class="trust-item"><span class="trust-icon">⭐</span> 4.8/5 — 12.400+ leden</div>
+      <div class="trust-item"><span class="trust-icon"><i class="ph-thin ph-lock-simple"></i></span> 14 dagen geld-terug garantie</div>
+      <div class="trust-item"><span class="trust-icon"><i class="ph-thin ph-star"></i></span> 4.8/5 — 12.400+ leden</div>
       <div class="trust-item"><span class="trust-icon">🏢</span> Bylder Nederland B.V. · KvK 65020006</div>
     </div>
 
@@ -625,11 +627,11 @@ body {
               <div class="method-name">iDEAL</div>
             </button>
             <button class="method-btn" data-method="bancontact" onclick="selectMethod('bancontact', this)">
-              <div class="method-icon">💳</div>
+              <div class="method-icon"><i class="ph-thin ph-credit-card"></i></div>
               <div class="method-name">Bancontact</div>
             </button>
             <button class="method-btn" data-method="creditcard" onclick="selectMethod('creditcard', this)">
-              <div class="method-icon">💳</div>
+              <div class="method-icon"><i class="ph-thin ph-credit-card"></i></div>
               <div class="method-name">Creditcard</div>
             </button>
             <button class="method-btn" data-method="paypal" onclick="selectMethod('paypal', this)">
@@ -641,7 +643,7 @@ body {
               <div class="method-name">Apple Pay</div>
             </button>
             <button class="method-btn" data-method="sofort" onclick="selectMethod('sofort', this)">
-              <div class="method-icon">⚡</div>
+              <div class="method-icon"><i class="ph-thin ph-lightning"></i></div>
               <div class="method-name">Sofort</div>
             </button>
           </div>
@@ -689,7 +691,7 @@ body {
 
         <!-- PAY BUTTON -->
         <button class="pay-btn" id="payBtn" onclick="initieerBetaling()">
-          <span id="payBtnText">🔒 Betaal €99 via iDEAL</span>
+          <span id="payBtnText"><i class="ph-thin ph-lock-simple"></i> Betaal €99 via iDEAL</span>
         </button>
 
         <div style="font-size:11px;color:var(--bark-3);text-align:center;margin-top:12px;line-height:1.5;">
@@ -698,9 +700,9 @@ body {
       </div>
 
       <div class="security-footer">
-        <div class="sec-item">🔒 SSL-versleuteld</div>
+        <div class="sec-item"><i class="ph-thin ph-lock-simple"></i> SSL-versleuteld</div>
         <div class="sec-item">🏦 Pay.nl gecertificeerd</div>
-        <div class="sec-item">✅ PCI-DSS compliant</div>
+        <div class="sec-item"><i class="ph-thin ph-check-circle"></i> PCI-DSS compliant</div>
       </div>
     </div>
   </div>

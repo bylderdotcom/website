@@ -148,7 +148,7 @@ def render_page(p):
     faq_html = render_faq(p.get("faq", []), badge_kleur)
 
     # Bronnen
-    bronnen_html = f'<div class="source-box">📊 Databronnen: {p["bronnen"]}</div>' if p.get("bronnen") else ""
+    bronnen_html = f'<div class="source-box"><i class="ph-thin ph-chart-bar"></i> Databronnen: {p["bronnen"]}</div>' if p.get("bronnen") else ""
 
     # Title
     title_txt = p["title"] if len(p["title"]) <= 62 else p["title"][:59]+"..."
@@ -229,7 +229,7 @@ gtag('config', 'G-LZYCRP1169');
     </article>
     <aside class="sidebar" style="position:sticky;top:80px;">
       <div style="background:#1A1208;border-radius:16px;padding:22px;margin-bottom:14px;">
-        <div style="font-size:1.3rem;margin-bottom:10px;">🤖</div>
+        <div style="font-size:1.3rem;margin-bottom:10px;"><i class="ph-thin ph-robot"></i></div>
         <div style="font-size:15px;font-weight:700;color:#F5F0E8;margin-bottom:8px;">Laat de AI dit checken</div>
         <p style="font-size:13px;color:rgba(245,240,232,0.5);line-height:1.6;margin-bottom:14px;">Upload je documenten en Bylder's AI analyseert direct jouw situatie.</p>
         <a href="/login.html" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:11px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;text-align:center;">Start gratis →</a>

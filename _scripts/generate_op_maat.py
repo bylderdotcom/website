@@ -48,7 +48,7 @@ CTA_SECTION = """<section style="padding:48px 0;background:#1A1208;text-align:ce
 </section>"""
 
 SIDEBAR_CTA = """<div style="background:#1A1208;border-radius:16px;padding:22px;margin-bottom:14px;">
-  <div style="font-size:1.3rem;margin-bottom:10px;">🔨</div>
+  <div style="font-size:1.3rem;margin-bottom:10px;"><i class="ph-thin ph-hammer"></i></div>
   <div style="font-size:15px;font-weight:700;color:#F5F0E8;margin-bottom:8px;">Maatwerk plannen?</div>
   <p style="font-size:13px;color:rgba(245,240,232,0.5);line-height:1.6;margin-bottom:14px;">Bylder's AI helpt je de juiste keuzes maken voor jouw nieuwbouwwoning.</p>
   <a href="/login.html" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:11px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;text-align:center;">Start gratis →</a>
@@ -96,7 +96,7 @@ def write_page(path, html):
 # ─────────────────────────────────────────────
 
 CATEGORIES = [
-    ("keuken", "Keuken op maat", "🍳", "Maatwerk keukens, eilanden en kastjes afgestemd op jouw nieuwbouwwoning.", [
+    ("keuken", "Keuken op maat", "<i class="ph-thin ph-cooking-pot"></i>", "Maatwerk keukens, eilanden en kastjes afgestemd op jouw nieuwbouwwoning.", [
         ("Maatwerk keuken", "maatwerk-keuken"),
         ("Keukeneiland op maat", "keukeneiland-op-maat"),
         ("Keukenkasten op maat", "keukenkasten-op-maat"),
@@ -109,49 +109,49 @@ CATEGORIES = [
         ("Boekenkast op maat", "boekenkast-op-maat"),
         ("Tv-meubel op maat", "tv-meubel-op-maat"),
     ]),
-    ("slaapkamer", "Slaapkamer op maat", "🛏️", "Bedombouwen, inloopkasten en hoofdborden voor de ideale slaapkamer.", [
+    ("slaapkamer", "Slaapkamer op maat", "<i class="ph-thin ph-bed"></i>", "Bedombouwen, inloopkasten en hoofdborden voor de ideale slaapkamer.", [
         ("Inloopkast slaapkamer", "inloopkast-slaapkamer"),
         ("Bedombouw op maat", "bedombouw-op-maat"),
         ("Hoofdbord op maat", "hoofdbord-op-maat"),
         ("Kinderkamer op maat", "kinderkamer-op-maat"),
     ]),
-    ("badkamer", "Badkamer op maat", "🚿", "Badkamermeubels, wastafelbladen en douchecabines op maat.", [
+    ("badkamer", "Badkamer op maat", "<i class="ph-thin ph-shower"></i>", "Badkamermeubels, wastafelbladen en douchecabines op maat.", [
         ("Badkamermeubel op maat", "badkamermeubel-op-maat"),
         ("Wastafelblad op maat", "wastafelblad-op-maat"),
         ("Spiegelkast op maat", "spiegelkast-op-maat"),
         ("Douchecabine op maat", "douchecabine-op-maat"),
         ("Bad op maat", "bad-op-maat"),
     ]),
-    ("woonkamer", "Woonkamer op maat", "🛋️", "Bankstellen, eettafels en roomdividers die passen bij jouw interieur.", [
+    ("woonkamer", "Woonkamer op maat", "<i class="ph-thin ph-armchair"></i>", "Bankstellen, eettafels en roomdividers die passen bij jouw interieur.", [
         ("Bankstellen op maat", "bankstellen-op-maat"),
         ("Eettafel op maat", "eettafel-op-maat"),
         ("Bureau op maat", "bureau-op-maat"),
         ("Roomdivider op maat", "roomdivider-op-maat"),
     ]),
-    ("trap-en-hal", "Trap & hal op maat", "🪜", "Trapombouwen, leuningen en garderobewanden voor entree en hal.", [
+    ("trap-en-hal", "Trap & hal op maat", "<i class="ph-thin ph-ladder"></i>", "Trapombouwen, leuningen en garderobewanden voor entree en hal.", [
         ("Trapombouw op maat", "trapombouw-op-maat"),
         ("Trapleuning op maat", "trapleuning-op-maat"),
         ("Garderobewand op maat", "garderobewand-op-maat"),
     ]),
-    ("raamdecoratie", "Raamdecoratie op maat", "🪟", "Gordijnen, shutters en vouwgordijnen op exact maat gesneden.", [
+    ("raamdecoratie", "Raamdecoratie op maat", "<i class="ph-thin ph-app-window"></i>", "Gordijnen, shutters en vouwgordijnen op exact maat gesneden.", [
         ("Gordijnen op maat", "gordijnen-op-maat"),
         ("Shutters op maat", "shutters-op-maat"),
         ("Jaloezieen op maat", "jaloezieen-op-maat"),
         ("Vouwgordijnen op maat", "vouwgordijnen-op-maat"),
     ]),
-    ("verlichting", "Verlichting op maat", "💡", "Lichtplannen, inbouwspots en hanglampen op maat voor nieuwbouw.", [
+    ("verlichting", "Verlichting op maat", "<i class="ph-thin ph-lightbulb"></i>", "Lichtplannen, inbouwspots en hanglampen op maat voor nieuwbouw.", [
         ("Lichtplan op maat", "lichtplan-op-maat"),
         ("Inbouwspots op maat", "inbouwspots-op-maat"),
         ("Hanglamp op maat", "hanglamp-op-maat"),
     ]),
-    ("tuin-en-buiten", "Tuin & buiten op maat", "🌿", "Overkappingen, schuttingen en terrasmeubilair afgestemd op jouw tuin.", [
+    ("tuin-en-buiten", "Tuin & buiten op maat", "<i class="ph-thin ph-plant"></i>", "Overkappingen, schuttingen en terrasmeubilair afgestemd op jouw tuin.", [
         ("Overkapping op maat", "overkapping-op-maat"),
         ("Tuinschuur op maat", "tuinschuur-op-maat"),
         ("Schutting op maat", "schutting-op-maat"),
         ("Terrasmeubilair op maat", "terrasmeubilair-op-maat"),
         ("Tuinverlichting op maat", "tuinverlichting-op-maat"),
     ]),
-    ("techniek-en-energie", "Techniek & energie op maat", "⚡", "Vloerverwarming, smart home en zonnepanelen voor jouw nieuwbouwwoning.", [
+    ("techniek-en-energie", "Techniek & energie op maat", "<i class="ph-thin ph-lightning"></i>", "Vloerverwarming, smart home en zonnepanelen voor jouw nieuwbouwwoning.", [
         ("Vloerverwarming op maat", "vloerverwarming-op-maat"),
         ("Smart home op maat", "smart-home-op-maat"),
         ("Zonnepanelen op maat", "zonnepanelen-op-maat"),

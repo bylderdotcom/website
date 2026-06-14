@@ -132,7 +132,7 @@ gtag('config', 'G-LZYCRP1169');
     </article>
     <aside class="sidebar" style="position:sticky;top:80px;">
       <div style="background:#1A1208;border-radius:16px;padding:22px;margin-bottom:14px;">
-        <div style="font-size:1.3rem;margin-bottom:10px;">🤖</div>
+        <div style="font-size:1.3rem;margin-bottom:10px;"><i class="ph-thin ph-robot"></i></div>
         <div style="font-size:15px;font-weight:700;color:#F5F0E8;margin-bottom:8px;">Laat de AI dit checken</div>
         <p style="font-size:13px;color:rgba(245,240,232,0.5);line-height:1.6;margin-bottom:14px;">Upload je documenten en Bylder's AI analyseert direct jouw situatie.</p>
         <a href="/login.html" style="display:block;background:#3D5A3E;color:#F5F0E8;padding:11px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;text-align:center;">Start gratis →</a>
@@ -212,12 +212,12 @@ gtag('config', 'G-LZYCRP1169');
 def render_hoofdoverzicht(alle_gidsen):
     url = f"{BASE_URL}/nieuwbouw-gids/"
     blokken = ""
-    emojis = {"fase-1-orientatie":"📝","fase-2-bouwfase":"🏗️","fase-3-oplevering":"🔑"}
+    emojis = {"fase-1-orientatie":"<i class="ph-thin ph-note-pencil"></i>","fase-2-bouwfase":"<i class="ph-thin ph-buildings"></i>","fase-3-oplevering":"<i class="ph-thin ph-key"></i>"}
     for fase, (fl, fn, fc, fbg) in FASE_MAP.items():
         g_fase = [g for g in alle_gidsen if g["fase"] == fase]
         links = "".join(f'<a href="/nieuwbouw-gids/{g["fase"]}/{g["slug"]}/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">› {g["h1"][:50]}</a>' for g in g_fase[:4])
         blokken += f'''<div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:18px;padding:24px;">
-<div style="font-size:1.6rem;margin-bottom:10px;">{emojis.get(fase,"📋")}</div>
+<div style="font-size:1.6rem;margin-bottom:10px;">{emojis.get(fase,"<i class="ph-thin ph-clipboard-text"></i>")}</div>
 <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.35);margin-bottom:6px;">{fl}</div>
 <h2 style="font-size:17px;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.02em;">{fn}</h2>
 <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px;">{links}</div>
