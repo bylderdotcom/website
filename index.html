@@ -269,6 +269,17 @@ body::before {
 .stat-num { font-size:2.8rem; font-weight:800; letter-spacing:-0.04em; line-height:1; }
 .partner-logo { opacity:1; transition:transform 0.3s ease, opacity 0.3s ease; }
 .partner-logo:hover { transform:scale(1.05); }
+/* Logo-band: statisch gecentreerd op desktop, bewegende carrousel op mobiel */
+.logo-track { display:flex; justify-content:center; }
+.logo-set { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:64px; }
+.logo-set.logo-dup { display:none; }
+@media (max-width:768px) {
+  .logo-marquee { overflow:hidden; }
+  .logo-track { width:max-content; flex-wrap:nowrap; animation:logo-scroll 20s linear infinite; }
+  .logo-set { flex-wrap:nowrap; gap:40px; padding-right:40px; }
+  .logo-set.logo-dup { display:flex; }
+}
+@keyframes logo-scroll { from { transform:translateX(0); } to { transform:translateX(-50%); } }
 
 /* ── HAMBURGER MENU ── */
 .mobile-menu-btn {
@@ -561,7 +572,7 @@ body::before {
         <span id="typewriter" class="text-sm font-mono" style="color:#B85C38;"></span>
         <span class="cursor-blink text-sm font-mono" style="color:#B85C38;">_</span>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto mb-16 animate-fade-up delay-5" style="max-width:960px;margin:0 auto;">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto mb-10 animate-fade-up delay-5" style="max-width:960px;margin:0 auto;">
         <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)">
           <div class="text-4xl mb-4"><i class="ph-thin ph-buildings"></i></div>
           <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik koop Nieuwbouw</div>
@@ -581,7 +592,7 @@ body::before {
           </div>
         </button>
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-12 animate-fade-up" style="animation-delay:.9s;opacity:0;">
+      <div class="flex flex-wrap items-center justify-center gap-12 animate-fade-up" style="animation-delay:.9s;opacity:0;max-width:560px;margin:32px auto 0;padding-top:34px;border-top:1px solid rgba(61,46,30,0.10);">
         <div class="text-center">
           <div class="stat-num" style="color:#1A1208;">4.800+</div>
           <div class="text-xs font-mono uppercase tracking-widest mt-1" style="color:rgba(61,46,30,0.4);">Projecten</div>
@@ -605,16 +616,57 @@ body::before {
   </div>
 </section>
 
+<!-- ═══ 3 UITKOMST-TEGELS ═══ -->
+<section class="py-16" style="background:#F5F0E8;width:100%;">
+  <div class="container">
+    <div class="text-center mb-10">
+      <p class="text-xs font-mono uppercase tracking-widest mb-3" style="color:rgba(61,46,30,.4);">Wat krijg je met Bylder</p>
+      <h2 class="text-2xl md:text-4xl font-extrabold" style="letter-spacing:-0.03em;color:#1A1208;">Slim afwerken &amp; inrichten in 3 stappen</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5" style="max-width:1000px;margin:0 auto;">
+      <a href="#begeleider" class="card group" style="display:block;text-decoration:none;padding:26px 24px;">
+        <i class="ph-thin ph-shield-check" style="font-size:30px;color:#3D5A3E;"></i>
+        <div style="font-size:1.15rem;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-top:12px;">Weet wat klopt</div>
+        <p style="font-size:13.5px;color:rgba(61,46,30,.58);line-height:1.55;margin-top:6px;">De AI checkt je offerte, meerwerk en bouwtekening — zodat je nooit teveel betaalt of iets mist.</p>
+        <span class="inline-flex items-center text-xs font-mono px-3 py-1.5 rounded-full badge-moss" style="margin-top:14px;">gem. &#8364;1.840 bespaard</span>
+      </a>
+      <a href="#visualisatie" class="card group" style="display:block;text-decoration:none;padding:26px 24px;">
+        <i class="ph-thin ph-cube" style="font-size:30px;color:#3D5A3E;"></i>
+        <div style="font-size:1.15rem;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-top:12px;">Zie je nieuwe huis</div>
+        <p style="font-size:13.5px;color:rgba(61,46,30,.58);line-height:1.55;margin-top:6px;">Je plattegrond als 3D-sfeerimpressie in jouw stijl — nog vóór je een keuze maakt.</p>
+        <span class="inline-flex items-center text-xs font-mono px-3 py-1.5 rounded-full badge-rust" style="margin-top:14px;">Nieuw</span>
+      </a>
+      <a href="#vouchers" class="card group" style="display:block;text-decoration:none;padding:26px 24px;">
+        <i class="ph-thin ph-tag" style="font-size:30px;color:#3D5A3E;"></i>
+        <div style="font-size:1.15rem;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-top:12px;">Bespaar op de afwerking</div>
+        <p style="font-size:13.5px;color:rgba(61,46,30,.58);line-height:1.55;margin-top:6px;">Exclusieve kortingscodes bij honderden woon-, interieur- en bouwmerken.</p>
+        <span class="inline-flex items-center text-xs font-mono px-3 py-1.5 rounded-full badge-moss" style="margin-top:14px;">500+ merken</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <div class="warm-divider"></div>
 <div class="py-8" style="background:rgba(237,230,216,0.5);padding-left:5vw;padding-right:5vw;">
   <div class="container">
     <p class="text-center text-xs font-mono uppercase tracking-widest mb-6" style="color:rgba(61,46,30,.4);">Samenwerking met 40+ geselecteerde merken</p>
-    <div class="flex flex-wrap items-center justify-center gap-8 md:gap-14">
-      <div class="partner-logo"><img src="/img/logos/auping-blue.svg" alt="Auping" style="height:24px;display:block;" loading="lazy"></div>
-      <div class="partner-logo"><img src="/img/logos/tablesbytim.png" alt="Tables by Tim" style="height:30px;display:block;" loading="lazy"></div>
-      <div class="partner-logo"><img src="/img/logos/whoon.png" alt="Whoon" style="height:26px;display:block;" loading="lazy"></div>
-      <div class="partner-logo"><img src="/img/logos/drt.svg" alt="DRT Contemporary" style="height:24px;display:block;" loading="lazy"></div>
-      <div class="partner-logo"><img src="/img/logos/goossens.svg" alt="Goossens" style="height:24px;display:block;" loading="lazy"></div>
+    <div class="logo-marquee">
+      <div class="logo-track">
+        <div class="logo-set">
+          <div class="partner-logo"><img src="/img/logos/auping-blue.svg" alt="Auping" style="height:38px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/tablesbytim.png" alt="Tables by Tim" style="height:46px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/whoon.png" alt="Whoon" style="height:40px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/drt.svg" alt="DRT Contemporary" style="height:36px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/goossens.svg" alt="Goossens" style="height:36px;display:block;" loading="lazy"></div>
+        </div>
+        <div class="logo-set logo-dup" aria-hidden="true">
+          <div class="partner-logo"><img src="/img/logos/auping-blue.svg" alt="" style="height:38px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/tablesbytim.png" alt="" style="height:46px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/whoon.png" alt="" style="height:40px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/drt.svg" alt="" style="height:36px;display:block;" loading="lazy"></div>
+          <div class="partner-logo"><img src="/img/logos/goossens.svg" alt="" style="height:36px;display:block;" loading="lazy"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -702,182 +754,83 @@ body::before {
   </div>
 </section>
 
+<!-- ═══ 3D-VISUALISATIE SECTIE ═══ -->
+<section id="visualisatie" style="padding:80px 0;background:#EDE6D8;width:100%;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center;max-width:1040px;margin:0 auto;">
+      <div>
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-rust text-xs font-mono mb-6">
+          <i class="ph-thin ph-cube" style="font-size:14px;"></i> NIEUW &#8212; IN DE APP
+        </div>
+        <h2 style="font-size:2.6rem;font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px;">
+          Zie je afgewerkte woning,<br><span style="color:#3D5A3E;font-style:italic;font-weight:300;">vóór je beslist</span>
+        </h2>
+        <p style="font-size:1.05rem;color:rgba(61,46,30,.62);line-height:1.7;margin-bottom:20px;">
+          Upload je bouwtekening en Bylder maakt er een 3D-sfeerimpressie van &#8212; in de stijl die jij kiest. Zo zie je hoe je nieuwe woning eruit kan zien, nog voordat de eerste muur geverfd is.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;">
+          <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.6);">Scandinavisch</span>
+          <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.6);">Japandi</span>
+          <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.6);">Industrieel</span>
+          <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.6);">Modern warm</span>
+          <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:#fff;border:1px solid rgba(61,46,30,.12);color:rgba(61,46,30,.6);">+ meer</span>
+        </div>
+        <a href="https://app.bylder.com/registreer" class="cta-btn px-8 py-4 rounded-xl" style="font-size:15px;display:inline-flex;align-items:center;gap:8px;">Probeer het in de app <i class="ph-thin ph-arrow-right"></i></a>
+      </div>
+      <div>
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(61,46,30,.1);box-shadow:0 24px 70px rgba(26,18,8,0.16);background:#fff;">
+          <img src="/img/3d-impressie-voorbeeld.jpg" alt="Voorbeeld: bouwtekening omgezet naar een 3D-sfeerimpressie" loading="lazy" style="width:100%;display:block;" />
+          <div class="font-mono" style="font-size:11px;color:rgba(61,46,30,.45);padding:10px 14px;border-top:1px solid rgba(61,46,30,.07);text-align:center;">Voorbeeld: plattegrond &#8594; 3D-impressie</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="warm-divider"></div>
 
-<section id="vouchers" class="py-24" style="background:#EDE6D8;width:100%;">
+<section id="vouchers" class="py-16" style="background:#EDE6D8;width:100%;">
   <div class="container">
-    <div class="text-center mb-14">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-rust text-xs font-mono mb-6">
-        <i class="ph-thin ph-tag" style="color:#B85C38;font-size:10px;"></i>
-        RETAILER VOUCHER HUB
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-rust text-xs font-mono mb-5">
+        <i class="ph-thin ph-tag" style="color:#B85C38;font-size:10px;"></i> KORTINGSVOUCHERS
       </div>
-      <h2 class="text-3xl md:text-5xl font-extrabold mb-4" style="letter-spacing:-0.03em;color:#1A1208;">
+      <h2 class="text-2xl md:text-4xl font-extrabold mb-3" style="letter-spacing:-0.03em;color:#1A1208;">
         Exclusieve kortingen voor <span style="color:#B85C38;font-style:italic;font-weight:300;">Bylder leden</span>
       </h2>
-      <p class="text-lg max-w-xl mx-auto" style="color:rgba(61,46,30,.55);">Gekoppeld aan jouw project. Activeer en ontvang direct via e-mail.</p>
+      <p class="max-w-xl mx-auto" style="color:rgba(61,46,30,.55);font-size:15px;">Honderden woon-, interieur- en bouwmerken. Word gratis lid en claim je codes &#8212; gekoppeld aan jouw project.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Auping — featured -->
-      <div class="voucher-card rounded-3xl overflow-hidden relative" style="border:1.5px solid rgba(184,92,56,.3);box-shadow:0 8px 30px rgba(184,92,56,.08);">
-        <div class="shimmer"></div>
-        <div class="absolute top-0 left-0 right-0 h-1 rounded-t-3xl" style="background:linear-gradient(90deg,#B85C38,rgba(184,92,56,.3));"></div>
-        <div class="absolute top-4 right-4"><span class="text-xs font-mono font-bold px-3 py-1 rounded-full badge-rust">&#9733; POPULAIR</span></div>
-        <div class="p-6 pb-0">
-          <div class="flex items-start justify-between mb-5">
-            <div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:#003B6F;padding:11px;"><img src="/img/logos/auping.png" alt="Auping logo" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" loading="lazy"></div>
-          </div>
-          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Auping</h3>
-          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Premium bedden &amp; matrassen</p>
-          <div class="flex items-end gap-2 mb-5">
-            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
-            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
-          </div>
-          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op het volledige Auping assortiment. Geldig voor Bylder leden bij aankoop nieuwbouwwoning.</p>
-        </div>
-        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
-        <div class="px-6 pb-6">
-          <div class="flex items-center gap-3">
-            <button class="flex-1 py-2.5 rounded-xl text-sm font-bold transition-all" style="border:1.5px solid rgba(184,92,56,.4);color:#B85C38;background:rgba(184,92,56,.05);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;" onclick="claimVoucherRust(this,'Auping')">Claim Voucher</button>
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="ph-thin ph-share-network text-xs" style="color:rgba(61,46,30,.3);"></i></div>
-          </div>
-          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Geldig in alle Auping Plaza vestigingen &#183; 94 claims</p>
-        </div>
+    <div class="grid gap-4" style="grid-template-columns:repeat(auto-fit,minmax(168px,1fr));max-width:880px;margin:0 auto;">
+      <div style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:14px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:11px;">
+        <div style="height:28px;display:flex;align-items:center;"><img src="/img/logos/auping-blue.svg" alt="Auping" style="height:24px;display:block;" loading="lazy"></div>
+        <span class="text-xs font-mono px-2.5 py-1 rounded-full badge-moss" style="align-self:flex-start;">10% korting</span>
       </div>
-
-      <!-- Tables by Tim -->
-      <div class="voucher-card rounded-3xl overflow-hidden">
-        <div class="shimmer"></div>
-        <div class="p-6 pb-0">
-          <div class="flex items-start justify-between mb-5">
-            <div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:#fff;border:1px solid rgba(61,46,30,.1);padding:7px;"><img src="/img/logos/tablesbytim.png" alt="Tables by Tim logo" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" loading="lazy"></div>
-            <span class="text-xs font-mono px-3 py-1 rounded-full badge-moss">ACTIEF</span>
-          </div>
-          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Tables by Tim</h3>
-          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Handgemaakte tafels op maat</p>
-          <div class="flex items-end gap-2 mb-5">
-            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
-            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
-          </div>
-          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op maatwerk tafels en meubels. Inclusief gratis opmeetafspraak aan huis.</p>
-        </div>
-        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
-        <div class="px-6 pb-6">
-          <div class="flex items-center gap-3">
-            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'Tables by Tim')">Claim Voucher</button>
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="ph-thin ph-share-network text-xs" style="color:rgba(61,46,30,.3);"></i></div>
-          </div>
-          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Levertijd 6&#8211;8 weken &#183; 41 claims vandaag</p>
-        </div>
+      <div style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:14px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:11px;">
+        <div style="height:28px;display:flex;align-items:center;"><img src="/img/logos/tablesbytim.png" alt="Tables by Tim" style="height:26px;display:block;" loading="lazy"></div>
+        <span class="text-xs font-mono px-2.5 py-1 rounded-full badge-moss" style="align-self:flex-start;">10% korting</span>
       </div>
-
-      <!-- Whoon -->
-      <div class="voucher-card rounded-3xl overflow-hidden">
-        <div class="shimmer"></div>
-        <div class="p-6 pb-0">
-          <div class="flex items-start justify-between mb-5">
-            <div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:#fff;border:1px solid rgba(61,46,30,.1);padding:7px;"><img src="/img/logos/whoon.png" alt="Whoon logo" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" loading="lazy"></div>
-            <span class="text-xs font-mono px-3 py-1 rounded-full badge-moss">ACTIEF</span>
-          </div>
-          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Whoon</h3>
-          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Woonwinkel &amp; interieuradvies</p>
-          <div class="flex items-end gap-2 mb-5">
-            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
-            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
-          </div>
-          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op meubels, verlichting en woonaccessoires bij alle Whoon vestigingen.</p>
-        </div>
-        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
-        <div class="px-6 pb-6">
-          <div class="flex items-center gap-3">
-            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'Whoon')">Claim Voucher</button>
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="ph-thin ph-share-network text-xs" style="color:rgba(61,46,30,.3);"></i></div>
-          </div>
-          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Instore &amp; online geldig &#183; 67 claims vandaag</p>
-        </div>
+      <div style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:14px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:11px;">
+        <div style="height:28px;display:flex;align-items:center;"><img src="/img/logos/whoon.png" alt="Whoon" style="height:24px;display:block;" loading="lazy"></div>
+        <span class="text-xs font-mono px-2.5 py-1 rounded-full badge-moss" style="align-self:flex-start;">10% korting</span>
       </div>
-
-      <!-- DRT Contemporary Flooring -->
-      <div class="voucher-card rounded-3xl overflow-hidden">
-        <div class="shimmer"></div>
-        <div class="p-6 pb-0">
-          <div class="flex items-start justify-between mb-5">
-            <div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:#fff;border:1px solid rgba(61,46,30,.1);padding:7px;"><img src="/img/logos/drt.svg" alt="DRT Contemporary logo" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" loading="lazy"></div>
-            <span class="text-xs font-mono px-3 py-1 rounded-full badge-sand">ACTIEF</span>
-          </div>
-          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">DRT Contemporary</h3>
-          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Design vloeren &amp; gietvloeren</p>
-          <div class="flex items-end gap-2 mb-5">
-            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
-            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
-          </div>
-          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op gietvloeren, PVC en parket. Inclusief gratis kleur- en materiaaladvies op locatie.</p>
-        </div>
-        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
-        <div class="px-6 pb-6">
-          <div class="flex items-center gap-3">
-            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'DRT Contemporary')">Claim Voucher</button>
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="ph-thin ph-share-network text-xs" style="color:rgba(61,46,30,.3);"></i></div>
-          </div>
-          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Gratis opmeting inbegrepen &#183; 53 claims</p>
-        </div>
+      <div style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:14px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:11px;">
+        <div style="height:28px;display:flex;align-items:center;"><img src="/img/logos/drt.svg" alt="DRT Contemporary" style="height:22px;display:block;" loading="lazy"></div>
+        <span class="text-xs font-mono px-2.5 py-1 rounded-full badge-moss" style="align-self:flex-start;">10% korting</span>
       </div>
-
-      <!-- Goossens -->
-      <div class="voucher-card rounded-3xl overflow-hidden">
-        <div class="shimmer"></div>
-        <div class="p-6 pb-0">
-          <div class="flex items-start justify-between mb-5">
-            <div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:#fff;border:1px solid rgba(61,46,30,.1);padding:7px;"><img src="/img/logos/goossens.svg" alt="Goossens logo" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" loading="lazy"></div>
-            <span class="text-xs font-mono px-3 py-1 rounded-full badge-moss">ACTIEF</span>
-          </div>
-          <h3 class="text-xl font-bold mb-1" style="color:#1A1208;letter-spacing:-0.02em;">Goossens</h3>
-          <p class="text-sm mb-4" style="color:rgba(61,46,30,.5);">Meubels, keukens &amp; wonen</p>
-          <div class="flex items-end gap-2 mb-5">
-            <span class="text-4xl font-extrabold" style="color:#3D5A3E;letter-spacing:-0.04em;">10%</span>
-            <span class="text-lg font-semibold mb-1" style="color:rgba(61,46,30,.5);">korting</span>
-          </div>
-          <p class="text-xs mb-6 leading-relaxed" style="color:rgba(61,46,30,.4);">10% op het volledige Goossens assortiment, van bank tot keuken. Geldig bij alle vestigingen.</p>
-        </div>
-        <div class="border-t mx-6 mb-6" style="border-color:rgba(61,46,30,.08);"></div>
-        <div class="px-6 pb-6">
-          <div class="flex items-center gap-3">
-            <button class="claim-btn flex-1 py-2.5 rounded-xl" onclick="claimVoucher(this,'Goossens')">Claim Voucher</button>
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(61,46,30,.05);border:1px solid rgba(61,46,30,.1);"><i class="ph-thin ph-share-network text-xs" style="color:rgba(61,46,30,.3);"></i></div>
-          </div>
-          <p class="text-xs mt-3 font-mono" style="color:rgba(61,46,30,.3);">Instore + online &#183; 78 claims vandaag</p>
-        </div>
+      <div style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:14px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:11px;">
+        <div style="height:28px;display:flex;align-items:center;"><img src="/img/logos/goossens.svg" alt="Goossens" style="height:22px;display:block;" loading="lazy"></div>
+        <span class="text-xs font-mono px-2.5 py-1 rounded-full badge-moss" style="align-self:flex-start;">10% korting</span>
       </div>
-
-      <div class="rounded-3xl p-8 flex flex-col justify-between" style="background:#3D5A3E;color:#F5F0E8;">
-        <div>
-          <div class="text-xs font-mono mb-3 uppercase tracking-widest" style="color:rgba(245,240,232,.6);">Bij alle partnermerken</div>
-          <div class="text-5xl font-extrabold mb-2" style="color:#F5F0E8;letter-spacing:-0.04em;">10%</div>
-          <p class="text-sm mb-6" style="color:rgba(245,240,232,.6);">collectieve korting voor Bylder leden</p>
-          <div class="space-y-2">
-            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Auping</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
-            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Tables by Tim</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
-            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Whoon</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
-            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">DRT Contemporary</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
-            <div class="flex justify-between text-xs" style="color:rgba(245,240,232,.5);"><span class="font-mono">Goossens</span><span style="color:rgba(245,240,232,.8);">10% korting</span></div>
-          </div>
-        </div>
-        <button class="mt-8 w-full py-3 rounded-xl text-sm font-bold transition-all" style="background:#F5F0E8;color:#3D5A3E;" onmouseover="this.style.background='#EDE6D8'" onmouseout="this.style.background='#F5F0E8'">
-          Alle Vouchers Claimen <i class="ph-thin ph-arrow-right ml-2 text-xs"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- CTA naar vouchers pagina -->
-    <div style="text-align:center;margin-top:48px;">
-      <p style="font-size:15px;color:rgba(61,46,30,0.5);margin-bottom:16px;">40+ merken beschikbaar — bekijk het volledige overzicht</p>
-      <a href="/vouchers/" style="display:inline-flex;align-items:center;gap:8px;background:#1A1208;color:#F5F0E8;padding:14px 32px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='#3D2E1E'" onmouseout="this.style.background='#1A1208'">
-        <i class="ph-thin ph-tag" style="font-size:13px;color:#B85C38;"></i>
-        Bekijk alle vouchers &amp; kortingen
-        <i class="ph-thin ph-arrow-right" style="font-size:12px;"></i>
+      <a href="/vouchers/" style="background:#3D5A3E;color:#F5F0E8;border-radius:14px;padding:16px;display:flex;flex-direction:column;justify-content:center;gap:3px;text-decoration:none;">
+        <span style="font-size:1.6rem;font-weight:800;letter-spacing:-0.03em;">500+</span>
+        <span style="font-size:12.5px;color:rgba(245,240,232,.85);">merken &amp; winkels</span>
       </a>
     </div>
-
+    <div style="text-align:center;margin-top:32px;">
+      <a href="/vouchers/" style="display:inline-flex;align-items:center;gap:8px;background:#1A1208;color:#F5F0E8;padding:13px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;" onmouseover="this.style.background='#3D2E1E'" onmouseout="this.style.background='#1A1208'">
+        <i class="ph-thin ph-tag" style="font-size:13px;color:#B85C38;"></i> Bekijk alle vouchers &amp; kortingen <i class="ph-thin ph-arrow-right" style="font-size:12px;"></i>
+      </a>
+    </div>
   </div>
 </section>
 
