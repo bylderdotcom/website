@@ -16,6 +16,74 @@ HUB = "/3d-sfeerimpressie"
 SIGNUP = "https://app.bylder.com/registreer"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
+# ── Standaard-navigatie (1-op-1 met de homepage, maar inline-CSS i.p.v. Tailwind) ──
+NAV_CSS = """
+.glass-nav{background:rgba(245,240,232,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;}
+.nav-inner{max-width:1280px;margin:0 auto;padding:14px 48px;display:flex;align-items:center;justify-content:space-between;}
+.nav-links{display:flex;align-items:center;gap:24px;}
+.nav-links>a{font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;}
+.nav-links>a:hover{color:#1A1208;}
+.nav-right{display:flex;align-items:center;gap:16px;}
+.nav-login{font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;}
+.nav-cta{background:#3D5A3E;color:#F5F0E8;font-weight:700;font-size:14px;padding:10px 20px;border-radius:8px;text-decoration:none;transition:all .25s;white-space:nowrap;}
+.nav-cta:hover{background:#4E7350;box-shadow:0 8px 30px rgba(61,90,62,0.3);transform:translateY(-1px);}
+.nav-dd{position:relative;}
+.nav-dd-btn{background:none;border:none;cursor:pointer;font-size:14px;color:rgba(61,46,30,0.5);font-family:inherit;padding:0;display:flex;align-items:center;gap:4px;}
+.nav-dd-btn:hover{color:#1A1208;}
+.nav-dd-menu{display:none;position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 12px 40px rgba(61,46,30,0.12);padding:8px;min-width:248px;z-index:200;}
+.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:block;}
+.nav-dd-menu a{display:block;padding:10px 14px;border-radius:10px;color:#3D2E1E;text-decoration:none;}
+.nav-dd-menu a:hover{background:#F5F0E8;}
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-burger span{width:22px;height:2px;background:#1A1208;border-radius:2px;display:block;}
+.nav-mobile{display:none;flex-direction:column;gap:2px;padding:10px 20px 18px;background:rgba(245,240,232,0.98);border-bottom:1px solid rgba(61,46,30,0.08);}
+.nav-mobile.open{display:flex;}
+.nav-mobile a{padding:11px 10px;color:rgba(61,46,30,0.72);text-decoration:none;font-size:15px;border-radius:8px;}
+.nav-mobile a:hover{background:rgba(61,46,30,0.05);}
+.nav-mobile .m-cta{background:#3D5A3E;color:#F5F0E8;font-weight:700;text-align:center;margin-top:8px;}
+@media(max-width:860px){.nav-links,.nav-login{display:none;}.nav-burger{display:flex;}.nav-inner{padding:14px 20px;}}
+"""
+
+NAV_HTML = f"""<nav class="glass-nav">
+  <div class="nav-inner">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
+      <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Voordelen</a>
+      <a href="/vouchers/">Vouchers</a>
+      <a href="/functies/">Functies</a>
+      <div class="nav-dd">
+        <button class="nav-dd-btn" type="button">Voor wie? <span style="font-size:10px;">&#9660;</span></button>
+        <div class="nav-dd-menu">
+          <a href="/nieuwbouw-koper/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Meerwerklijst, vouchers, planning</span></a>
+          <a href="/bestaande-bouw/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Offerte-check, aannemer matching</span></a>
+          <a href="/renovatie/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Budgettool, subsidies, planning</span></a>
+        </div>
+      </div>
+      <a href="/prijzen/">Prijzen</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://app.bylder.com" class="nav-login">Inloggen</a>
+      <a href="{SIGNUP}" class="nav-cta">Start gratis &#8594;</a>
+      <button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" onclick="var m=document.getElementById('navMobile');this.setAttribute('aria-expanded',m.classList.toggle('open'));"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="/#features">Voordelen</a>
+    <a href="/vouchers/">Vouchers</a>
+    <a href="/functies/">Functies</a>
+    <a href="/3d-sfeerimpressie/">3D-sfeerimpressie</a>
+    <a href="/nieuwbouw-koper/">Nieuwbouwkoper</a>
+    <a href="/bestaande-bouw/">Bestaande bouw</a>
+    <a href="/renovatie/">Renovatie</a>
+    <a href="/prijzen/">Prijzen</a>
+    <a href="https://app.bylder.com">Inloggen</a>
+    <a href="{SIGNUP}" class="m-cta">Start gratis &#8594;</a>
+  </div>
+</nav>"""
+
 # ── De 6 stijlen (1-op-1 met app/src/lib/renderStyles.ts) ────────────────────
 STYLES = [
     {
@@ -347,22 +415,10 @@ a{{color:#3D5A3E;}}
 .style-tile:hover{{border-color:rgba(61,90,62,0.4);}}
 .cta-primary{{display:inline-block;background:#F5F0E8;color:#3D5A3E;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;}}
 @media(max-width:768px){{.container{{padding:0 20px;}}.grid-2,.grid-3{{grid-template-columns:1fr;}}.hero-grid{{grid-template-columns:1fr!important;gap:32px!important;}}aside{{position:static!important;}}}}
+{NAV_CSS}
 </style>
 </head>
-<body><nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:16px 0;">
-  <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
-      <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
-    </a>
-    <div style="display:flex;align-items:center;gap:24px;">
-      <a href="/functies/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Functies</a>
-      <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Tools</a>
-      <a href="/#vouchers" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
-      <a href="{SIGNUP}" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
-    </div>
-  </div>
-</nav>"""
+<body>{NAV_HTML}"""
 
 FOOTER = """<footer style="background:#1A1208;padding:64px 0;">
   <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;">
