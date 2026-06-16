@@ -140,7 +140,7 @@ FOOTER = """</main>
 # ── DATA ────────────────────────────────────────────────────────────────────
 def load_data():
     brands = fetch("brands?select=id,slug,name,website,category,subcategory,status,priority&order=name.asc")
-    offers = fetch("brand_offers?select=brand_id,discount_label,title,description,verified_at&status=eq.active&order=created_at.asc")
+    offers = fetch("brand_offers?select=brand_id,discount_label,title,description,terms,verified_at&status=eq.active&order=created_at.asc")
     by_brand = {}
     for o in offers:
         by_brand.setdefault(o["brand_id"], []).append(o)
@@ -201,6 +201,7 @@ def render_brand(b, siblings):
     <span style="font-size:15px;font-weight:600;color:#1A1208;">{esc(o.get('title') or (name + ' korting'))}</span>
   </div>
   {f'<p style="font-size:14px;color:rgba(61,46,30,.6);line-height:1.5;margin-top:10px;">{esc(o.get("description"))}</p>' if o.get('description') else ''}
+  {f'<p style="font-size:12.5px;color:rgba(61,46,30,.55);line-height:1.5;margin-top:10px;"><i class="ph-thin ph-map-pin"></i> {esc(o.get("terms"))}</p>' if o.get('terms') else ''}
   <a href="{unlock}" class="cta-btn" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;padding:13px 18px;border-radius:10px;font-size:14px;text-decoration:none;"><i class="ph-thin ph-lock-simple"></i> Maak gratis account &amp; toon code</a>
   <p style="font-size:12px;color:rgba(61,46,30,.5);margin-top:14px;">✓ Geverifieerd op {TODAY_NL} · code rechtstreeks van {esc(name)}</p>
 </div>"""
