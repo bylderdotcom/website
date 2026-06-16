@@ -167,12 +167,14 @@ def render_brand(b, siblings):
     if has:
         faq = [
             (f"Hoe krijg ik de {name} kortingscode?", f"Maak gratis een Bylder-account aan, dan wordt de {name}-code direct zichtbaar. Je gebruikt 'm in de webshop of winkel van {name}."),
+            (f"Moet ik bij {name} onderhandelen over korting?", f"Nee. Met de {name}-korting via Bylder hoef je niet af te dingen — je krijgt direct een vaste ledenkorting. Veel woonmerken hanteren bewust vaste prijzen; in de winkel is het advies dan ook simpel: er is geen losse korting, behalve via een gratis Bylder-account. Zo bespaar je zeker, zonder het ongemak van onderhandelen."),
             (f"Werkt de {name} code echt?", f"Ja. Bylder-codes komen rechtstreeks van het merk en worden gecontroleerd (laatst geverifieerd op {TODAY_NL}). Werkt een code niet meer? Meld het en we updaten 'm."),
             ("Wat kost een Bylder-account?", "Een account is gratis en ontgrendelt de kortingscodes voor je nieuwe woning. Het uitgebreide lidmaatschap (kopersbegeleiding, offerte-check, meerwerk) is optioneel."),
         ]
     else:
         faq = [
             (f"Is er een {name} kortingscode?", f"Op dit moment heeft Bylder geen actieve {name}-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is."),
+            (f"Moet ik bij {name} onderhandelen over korting?", f"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een {name}-deal is, krijg je een vaste ledenkorting zonder afdingen."),
             (f"Hoe bespaar ik toch bij {name}?", "Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie."),
         ]
 
