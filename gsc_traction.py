@@ -5,16 +5,32 @@ Leest per /kortingscode/[merk]-pagina de impressies/klikken uit Google Search Co
 (service-account), zodat we de outreach kunnen gaten op aantoonbare vraag en de
 mailcijfers kunnen vullen. Geheime sleutel staat buiten git in de app-repo.
 
-Gebruik: python3 gsc_traction.py [dagen]   (default 28)
+Gebruik: python3 gsc_traction.py [dagen] [--sync]
+  --sync  schrijft impressies/klikken per merk naar Supabase brands.gsc_impressions/clicks
+          (matcht op de slug uit de /kortingscode/<slug>-URL) → voedt de admin-outreach-gate.
 """
-import json, ssl, sys, urllib.request, urllib.parse
-from datetime import date, timedelta
+import json, os, ssl, sys, urllib.request, urllib.parse
+from datetime import date, datetime, timezone, timedelta
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request
 
 KEY = "/Users/danielpaaij/Documents/GitHub/app/.gsc-key.json"
 SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
-DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 28
+ARGS = sys.argv[1:]
+SYNC = "--sync" in ARGS
+DAYS = next((int(a) for a in ARGS if a.isdigit()), 28)
+
+def app_env(name):
+    """Leest een waarde uit app/.env.local (voor de Supabase-sync)."""
+    path = "/Users/danielpaaij/Documents/GitHub/app/.env.local"
+    try:
+        with open(path) as f:
+            for line in f:
+                if line.startswith(name + "="):
+                    return line.split("=", 1)[1].strip().strip('"').strip("'")
+    except FileNotFoundError:
+        pass
+    return os.environ.get(name)
 
 try:
     import certifi
@@ -64,3 +80,43 @@ if rows:
         print(f"  {int(r['impressions']):>6} imp  {int(r['clicks']):>4} klik  {r['keys'][0]}")
 else:
     print("(nog geen data — pagina's zijn vers; GSC heeft doorgaans ~1–3 weken nodig na indexatie)")
+
+# 3) Optioneel: schrijf de cijfers per merk naar Supabase (admin-outreach-gate).
+def slug_from_url(u):
+    path = urllib.parse.urlparse(u).path.rstrip("/")
+    marker = "/kortingscode/"
+    return path.rsplit(marker, 1)[1] if marker in path else None
+
+if SYNC:
+    sb_url = app_env("NEXT_PUBLIC_SUPABASE_URL")
+    sb_key = app_env("SUPABASE_SERVICE_ROLE_KEY")
+    if not sb_url or not sb_key:
+        print("\n⚠ --sync: Supabase-URL of service-role-sleutel niet gevonden in app/.env.local."); sys.exit(1)
+    now = datetime.now(timezone.utc).isoformat()
+    ok = miss = 0
+    print("\nSynchroniseren naar Supabase (brands)…")
+    for r in rows:
+        slug = slug_from_url(r["keys"][0])
+        if not slug:
+            continue
+        payload = json.dumps({
+            "gsc_impressions": int(r["impressions"]),
+            "gsc_clicks": int(r["clicks"]),
+            "gsc_synced_at": now,
+        }).encode()
+        url = f"{sb_url}/rest/v1/brands?slug=eq.{urllib.parse.quote(slug)}"
+        req = urllib.request.Request(url, data=payload, method="PATCH", headers={
+            "apikey": sb_key, "Authorization": f"Bearer {sb_key}",
+            "Content-Type": "application/json", "Prefer": "return=representation",
+        })
+        try:
+            with urllib.request.urlopen(req, context=CTX) as resp:
+                updated = json.load(resp)
+            if updated:
+                ok += 1
+            else:
+                miss += 1  # slug bestaat (nog) niet in de brands-catalogus
+        except Exception as e:
+            miss += 1
+            print(f"  ! {slug}: {e}")
+    print(f"Bijgewerkt: {ok} merken · {miss} zonder match in catalogus.")
