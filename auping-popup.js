@@ -74,7 +74,7 @@
           <span class="auping-bylder">Bylder.com</span>
         </div>
         <div class="auping-label">Exclusief voor Bylder-leden</div>
-        <div class="auping-title">Drie voordelen bij<br>Auping Rotterdam Centrum</div>
+        <div class="auping-title">Drie voordelen bij<br>4 Auping Stores</div>
       </div>
       <div class="auping-body">
         <div class="auping-perk">
@@ -89,7 +89,7 @@
           <div class="auping-perk-num">3</div>
           <div><div class="auping-perk-t">&#127976; Gratis Hotel Haverkist</div><div class="auping-perk-d">Overnachting + ontbijt voor 2 in Den Bosch, t.w.v. &#8364;199. <strong>Vanaf &#8364;6.500 besteding.</strong></div></div>
         </div>
-        <div class="auping-loc">UITSLUITEND GELDIG BIJ AUPING ROTTERDAM CENTRUM</div>
+        <div class="auping-loc">UITSLUITEND GELDIG BIJ AUPING STORE DEN HAAG CENTRUM, ROTTERDAM CENTRUM, ROTTERDAM &amp; LEIDSCHENDAM</div>
         <a class="auping-cta" href="/vouchers/auping/" onclick="window._sluitAupingPopup()">Bekijk alle Auping voordelen &#8594;</a>
         <button class="auping-dismiss" onclick="window._sluitAupingPopup();localStorage.setItem('aupingPopupDismissed','1')">Niet meer tonen</button>
       </div>
