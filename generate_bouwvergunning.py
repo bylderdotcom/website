@@ -422,7 +422,8 @@ def build_hub():
     <div style="max-width:760px;">
       <div class="badge">Bouwen &amp; verbouwen</div>
       <h1 style="font-size:2.6rem;font-weight:800;line-height:1.14;margin-bottom:14px;">Heb je een bouwvergunning nodig?</h1>
-      <p style="font-size:1.12rem;color:rgba(61,46,30,0.65);line-height:1.7;margin-bottom:18px;">Of je nu een dakkapel, aanbouw, schuur of zonnepanelen plant: veel ingrepen mogen <strong>vergunningvrij</strong>, maar lang niet alles. Hieronder vind je per project wat is toegestaan, plus hoe je een <strong>omgevingsvergunning</strong> aanvraagt, wat het kost en hoe lang het duurt.</p>
+      <p style="font-size:1.12rem;color:rgba(61,46,30,0.65);line-height:1.7;margin-bottom:20px;">Of je nu een dakkapel, aanbouw, schuur of zonnepanelen plant: veel ingrepen mogen <strong>vergunningvrij</strong>, maar lang niet alles. Hieronder vind je per project wat is toegestaan, plus hoe je een <strong>omgevingsvergunning</strong> aanvraagt, wat het kost en hoe lang het duurt.</p>
+      <a href="{HUB}/check/" style="display:inline-block;background:#3D5A3E;color:#F5F0E8;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;">Doe de gratis vergunningcheck &#8594;</a>
     </div>
     {loket_note()}
 
@@ -494,8 +495,8 @@ def build_project(p):
       <aside style="position:sticky;top:96px;">
         <div class="card" style="margin-bottom:18px;">
           <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">Twijfel je over je situatie?</p>
-          <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:14px;line-height:1.6;">Doe de gratis vergunningcheck voor jouw adres in het Omgevingsloket.</p>
-          <a href="{LOKET}" rel="nofollow" style="display:block;text-align:center;background:#fff;color:#3D5A3E;border:1.5px solid rgba(61,90,62,0.3);padding:11px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Vergunningcheck &#8594;</a>
+          <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:14px;line-height:1.6;">Doe de gratis Bylder-vergunningcheck — een paar vragen, meteen een indicatie.</p>
+          <a href="{HUB}/check/" style="display:block;text-align:center;background:#3D5A3E;color:#F5F0E8;padding:11px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Doe de vergunningcheck &#8594;</a>
         </div>
         <div class="card">
           <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">Slim verbouwen met Bylder</p>
@@ -574,9 +575,120 @@ def build_topic(t):
 </main>"""
     return head(title, desc, canonical, schema) + body + footer()
 
+# ── Indicatie-wizard (/bouwvergunning/check/) ────────────────────────────────
+# Client-side vragenboom, regels-als-data. Uitkomst gratis zichtbaar + zachte CTA.
+# Indicatief, geen juridisch advies — verwijst altijd naar de officiële vergunningcheck.
+def build_check():
+    title = "Vergunningcheck: heb ik een bouwvergunning nodig? | Bylder.com"
+    desc = "Doe de gratis vergunning-indicatie van Bylder: beantwoord een paar vragen en zie of je plan waarschijnlijk vergunningvrij of vergunningplichtig is. Indicatief — bevestig in het Omgevingsloket."
+    canonical = f"{BASE}{HUB}/check/"
+    qa = [
+        ("Is deze check juridisch bindend?", "Nee. Het is een snelle indicatie op basis van je antwoorden. De officiële, bindende check doe je in het Omgevingsloket, dat ook het omgevingsplan van je gemeente meeneemt."),
+        ("Wat kan de uitkomst zijn?", "Waarschijnlijk vergunningvrij, waarschijnlijk vergunningplichtig, of een twijfelgeval. In alle gevallen verwijzen we je naar de officiële check ter bevestiging."),
+    ]
+    schema = [faq_schema(qa), breadcrumb([("Bylder.com", BASE + "/"), ("Bouwvergunning", f"{BASE}{HUB}/"), ("Vergunningcheck", canonical)])]
+
+    body = """<main style="padding:56px 0;">
+  <div class="container" style="max-width:820px;">
+    <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:24px;"><a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a> &#8594; <a href="__HUB__/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bouwvergunning</a> &#8594; <span style="color:rgba(61,46,30,0.6);">Vergunningcheck</span></p>
+    <div class="badge">Gratis indicatie</div>
+    <h1 style="font-size:2.3rem;font-weight:800;line-height:1.15;margin-bottom:10px;">Heb ik een bouwvergunning nodig?</h1>
+    <p style="font-size:1.05rem;color:rgba(61,46,30,0.65);line-height:1.7;margin-bottom:8px;">Beantwoord een paar vragen en zie meteen of je plan <strong>waarschijnlijk vergunningvrij</strong> of <strong>vergunningplichtig</strong> is. Gratis en zonder account.</p>
+
+    <div id="bvc" style="margin-top:28px;"></div>
+
+    <div class="highlight" style="margin-top:28px;">Deze check geeft een <strong>indicatie</strong> op basis van je antwoorden — geen juridisch advies. De bindende uitkomst hangt af van het omgevingsplan van je gemeente. Bevestig je plan altijd met de officiële <a href="__LOKET__" rel="nofollow">vergunningcheck in het Omgevingsloket</a>.</p>
+  </div>
+</main>
+<script>
+(function(){
+  var V=function(w){return{s:'vrij',w:w}},P=function(w){return{s:'plicht',w:w}},T=function(w){return{s:'twijfel',w:w}};
+  var monGuard=function(a){ if(a.mon==='Ja') return P('Bij een monument of een beschermd stads- of dorpsgezicht is vrijwel altijd een omgevingsvergunning nodig.'); if(a.mon==='Weet ik niet') return T('Of je woning een monument is of in een beschermd gezicht ligt, bepaalt veel. Check dit eerst bij je gemeente of in het Omgevingsloket.'); return null; };
+  var MON={id:'mon',t:'Staat je woning op de monumentenlijst of ligt ze in een beschermd stads- of dorpsgezicht?',o:['Nee','Ja','Weet ik niet']};
+  var LOC={id:'loc',t:'Waar komt het bouwwerk op je perceel?',o:['In de achtertuin / achtererf','Aan de voorkant of zijkant naar de straat']};
+  var isVoor=function(a){return a.loc && a.loc.indexOf('Aan de voor')===0};
+
+  var CHECK={
+    dakkapel:{label:'Dakkapel',slug:'dakkapel',q:[MON,{id:'vlak',t:'Op welk dakvlak komt de dakkapel?',o:['Achterkant / naar de achtertuin','Voorkant (naar de straat)']}],
+      rule:function(a){var m=monGuard(a);if(m)return m; if(a.vlak&&a.vlak.indexOf('Voor')===0)return P('Een dakkapel aan de voorkant (voordakvlak) is vrijwel altijd vergunningplichtig.'); return V('Op het achterdakvlak is een dakkapel vaak vergunningvrij, mits binnen de voorwaarden voor hoogte, breedte en afstand tot de dakranden (en met een plat dak).');}},
+    aanbouw:{label:'Aan- of uitbouw',slug:'aanbouw',q:[MON,LOC,{id:'grootte',t:'Weet je of de aanbouw binnen de standaardmaten blijft (beperkte diepte/oppervlakte voor jouw perceel)?',o:['Ja, het blijft beperkt','Nee, het wordt groot','Weet ik niet']}],
+      rule:function(a){var m=monGuard(a);if(m)return m; if(isVoor(a))return P('Aan de voorkant of een naar de straat gekeerde zijkant is een aan-/uitbouw doorgaans vergunningplichtig.'); if(a.grootte==='Nee, het wordt groot')return T('In het achtererfgebied is een aanbouw vaak vrij, maar boven de oppervlakte-/dieptegrenzen wordt het vergunningplichtig. Laat je exacte ruimte berekenen.'); if(a.grootte==='Weet ik niet')return T('In het achtererfgebied vaak vrij, mits binnen de grenzen voor jouw perceel. De vergunningcheck rekent dit precies uit.'); return V('In het achtererfgebied is een aan-/uitbouw vaak vergunningvrij, mits binnen de oppervlakte-, diepte- en hoogtevoorwaarden voor jouw perceel.');}},
+    bijgebouw:{label:'Schuur, tuinhuis of garage',slug:'schuur-tuinhuis',q:[MON,LOC,{id:'woon',t:'Wordt het (mede) gebruikt om in te wonen of te slapen?',o:['Nee, alleen berging/hobby','Ja, als woonruimte']}],
+      rule:function(a){var m=monGuard(a);if(m)return m; if(a.woon==='Ja, als woonruimte')return T('Een bijgebouw als zelfstandige woonruimte (behalve een mantelzorgwoning onder voorwaarden) vraagt meestal extra toestemming.'); if(isVoor(a))return P('Voor de voorgevelrooilijn of naar de straat gekeerd is een bijgebouw doorgaans vergunningplichtig.'); return V('In het achtererfgebied is een schuur, tuinhuis of vrijstaande garage vaak vergunningvrij, mits binnen de oppervlakte- en hoogtevoorwaarden voor jouw perceel.');}},
+    overkapping:{label:'Overkapping of carport',slug:'overkapping',q:[MON,LOC,{id:'dicht',t:'Wordt de overkapping (deels) dichtgemaakt met wanden of glas?',o:['Nee, open constructie','Ja, met wanden/glas (serre)']}],
+      rule:function(a){var m=monGuard(a);if(m)return m; if(a.dicht&&a.dicht.indexOf('Ja')===0)return T('Zodra je dichtmaakt ontstaat een serre, waarvoor strengere en vaker vergunningplichtige regels gelden.'); if(isVoor(a))return P('Aan de voorkant (bijvoorbeeld een carport bij de oprit) is een overkapping doorgaans vergunningplichtig.'); return V('In het achtererfgebied is een open overkapping of carport vaak vergunningvrij, mits binnen de oppervlakte- en hoogtevoorwaarden.');}},
+    schutting:{label:'Schutting of erfafscheiding',slug:'schutting',q:[{id:'plek',t:'Waar komt de erfafscheiding?',o:['Achter de voorgevel (zij-/achtertuin)','Aan de straatzijde / voor de voorgevel']},{id:'hoog',t:'Hoe hoog wordt de erfafscheiding?',o:['Tot 1 meter','1 tot 2 meter','Hoger dan 2 meter']}],
+      rule:function(a){ if(a.hoog==='Hoger dan 2 meter')return P('Hoger dan 2 meter is een erfafscheiding doorgaans vergunningplichtig.'); if(a.plek&&a.plek.indexOf('Aan de straat')===0){ if(a.hoog==='Tot 1 meter')return V('Aan de straatzijde is een erfafscheiding tot 1 meter vaak vergunningvrij.'); return P('Aan de straatzijde is doorgaans alleen tot 1 meter vergunningvrij; hoger is meestal vergunningplichtig.'); } return V('Achter de voorgevel is een erfafscheiding tot 2 meter vaak vergunningvrij. Houd rekening met het burenrecht bij plaatsing op de erfgrens.');}},
+    zonnepanelen:{label:'Zonnepanelen',slug:'zonnepanelen',q:[MON,{id:'dak',t:'Waar komen de panelen?',o:['Op een schuin dak','Op een plat dak','In de tuin (veldopstelling)']}],
+      rule:function(a){ if(a.mon==='Ja')return T('Op een monument of in een beschermd gezicht gelden uitzonderingen; vaak is hier wél toestemming nodig.'); if(a.mon==='Weet ik niet')return T('Check of je woning een monument is of in een beschermd gezicht ligt; dat bepaalt of het vergunningvrij is.'); if(a.dak&&a.dak.indexOf('In de tuin')===0)return T('Een veldopstelling in de tuin valt buiten de standaard dakregels en is vaker vergunningplichtig.'); return V('Op een gewone (niet-monumentale) woning zijn dakpanelen vrijwel altijd vergunningvrij — op een plat dak gelden voorwaarden voor afstand tot de dakrand en hoogte.');}},
+    dakraam:{label:'Dakraam',slug:'dakraam',q:[MON,{id:'vlak',t:'Op welk dakvlak komt het dakraam?',o:['Achterkant','Voorkant (naar de straat)']}],
+      rule:function(a){ if(a.mon==='Ja')return T('Bij een monument of beschermd gezicht is voor een dakraam vaak wél toestemming nodig.'); if(a.mon==='Weet ik niet')return T('Check eerst of je woning een monument is of in een beschermd gezicht ligt.'); return V('Een dakraam dat netjes in het dakvlak blijft, is op een gewone woning doorgaans vergunningvrij — op het achterdakvlak vrijwel altijd.');}},
+    kozijnen:{label:'Kozijnen vervangen',slug:'kozijnen',q:[MON,{id:'aanzicht',t:'Verandert het aanzicht van de gevel (andere maatvoering, indeling of uitstraling)?',o:['Nee, vergelijkbaar vervangen','Ja, het aanzicht wijzigt']}],
+      rule:function(a){var m=monGuard(a);if(m)return m; if(a.aanzicht&&a.aanzicht.indexOf('Ja')===0)return T('Wijzig je de maatvoering, indeling of uitstraling, dan kan een vergunning nodig zijn.'); return V('In een gewone woning is kozijnen vervangen in dezelfde maat en uitstraling (bijvoorbeeld voor isolatieglas) doorgaans vergunningvrij.');}},
+    gevel:{label:'Gevel wijzigen',slug:'gevelwijziging',q:[MON,{id:'kant',t:'Welke gevel wijzig je?',o:['Achtergevel (niet zichtbaar vanaf de straat)','Voorgevel of zijgevel naar de straat']}],
+      rule:function(a){var m=monGuard(a);if(m)return m; if(a.kant&&a.kant.indexOf('Voorgevel')===0)return P('Een wijziging aan de voorgevel of zijgevel naar de straat is doorgaans vergunningplichtig.'); return T('Aan de achterkant is een kleine wijziging soms vergunningvrij; constructieve ingrepen of grotere wijzigingen niet. Laat het checken.');}},
+    dakopbouw:{label:'Dakopbouw / extra verdieping',slug:'dakopbouw',q:[MON],
+      rule:function(a){ return P('Een dakopbouw verandert de bouwhoogte en het aanzicht en is vrijwel altijd vergunningplichtig — ook de constructie moet worden getoetst.');}},
+    mantelzorg:{label:'Mantelzorgwoning',slug:'mantelzorgwoning',q:[MON,{id:'behoefte',t:'Is er een aantoonbare mantelzorgbehoefte (bijv. een verklaring)?',o:['Ja','Nee / nog niet']}],
+      rule:function(a){var m=monGuard(a);if(m)return m; if(a.behoefte==='Nee / nog niet')return T('Zonder aantoonbare mantelzorgbehoefte geldt de vergunningvrije regeling niet; dan is meestal een vergunning nodig.'); return V('Met een aantoonbare mantelzorgbehoefte is een mantelzorgwoning in of bij de woning vaak vergunningvrij, mits binnen de voorwaarden voor bijbehorende bouwwerken.');}},
+    anders:{label:'Iets anders',slug:'',q:[],
+      rule:function(a){ return T('Voor dit plan kunnen we geen indicatie geven. Doe de officiële vergunningcheck in het Omgevingsloket of bekijk het bouwvergunning-overzicht.');}}
+  };
+  var ORDER=['dakkapel','aanbouw','bijgebouw','overkapping','schutting','zonnepanelen','dakraam','kozijnen','gevel','dakopbouw','mantelzorg','anders'];
+
+  var root=document.getElementById('bvc');
+  var esc=function(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
+  var card=function(inner){return '<div class="card" style="padding:24px;">'+inner+'</div>';};
+
+  function start(){
+    var btns=ORDER.map(function(k){return '<button data-k="'+k+'" class="bvc-pick" style="text-align:left;background:#fff;border:1px solid rgba(61,46,30,0.12);border-radius:12px;padding:14px 16px;font-size:15px;font-weight:600;color:#1A1208;cursor:pointer;font-family:inherit;">'+esc(CHECK[k].label)+'</button>';}).join('');
+    root.innerHTML=card('<div style="font-weight:700;font-size:16px;color:#1A1208;margin-bottom:14px;">Wat wil je (ver)bouwen?</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">'+btns+'</div>');
+    [].forEach.call(root.querySelectorAll('.bvc-pick'),function(b){b.onclick=function(){ask(b.getAttribute('data-k'));};});
+  }
+
+  function ask(k){
+    var c=CHECK[k];
+    if(!c.q.length){return result(k,{});}
+    var qs=c.q.map(function(q,i){
+      var opts=q.o.map(function(o){return '<label style="display:flex;align-items:center;gap:9px;padding:10px 12px;border:1px solid rgba(61,46,30,0.12);border-radius:9px;cursor:pointer;font-size:14px;margin-bottom:7px;"><input type="radio" name="'+q.id+'" value="'+esc(o)+'" style="accent-color:#3D5A3E;"> '+esc(o)+'</label>';}).join('');
+      return '<div style="margin-bottom:18px;"><div style="font-weight:600;font-size:14.5px;color:#1A1208;margin-bottom:9px;">'+(i+1)+'. '+esc(q.t)+'</div>'+opts+'</div>';
+    }).join('');
+    root.innerHTML=card('<div style="font-weight:700;font-size:16px;color:#1A1208;margin-bottom:4px;">'+esc(c.label)+'</div><div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:16px;">Beantwoord de vragen voor een indicatie.</div>'+qs+'<div id="bvc-err" style="display:none;font-size:13px;color:#B85C38;margin-bottom:10px;">Beantwoord eerst alle vragen.</div><div style="display:flex;gap:10px;align-items:center;"><button id="bvc-go" style="background:#3D5A3E;color:#F5F0E8;border:none;border-radius:10px;padding:12px 22px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit;">Toon indicatie &#8594;</button><button id="bvc-back" style="background:none;border:none;color:rgba(61,46,30,0.55);font-size:13px;cursor:pointer;font-family:inherit;">&#8592; Ander project</button></div>');
+    document.getElementById('bvc-go').onclick=function(){
+      var a={},ok=true;
+      c.q.forEach(function(q){var sel=root.querySelector('input[name="'+q.id+'"]:checked');if(sel)a[q.id]=sel.value;else ok=false;});
+      if(!ok){document.getElementById('bvc-err').style.display='block';return;}
+      result(k,a);
+    };
+    document.getElementById('bvc-back').onclick=start;
+  }
+
+  function result(k,a){
+    var c=CHECK[k],r=c.rule(a);
+    var theme={vrij:{c:'#3D5A3E',bg:'rgba(61,90,62,0.10)',t:'Waarschijnlijk vergunningvrij'},plicht:{c:'#B85C38',bg:'rgba(184,92,56,0.10)',t:'Waarschijnlijk een vergunning nodig'},twijfel:{c:'#B8901F',bg:'rgba(184,144,31,0.12)',t:'Het hangt af van je situatie'}}[r.s];
+    var moreLink=c.slug?'<a href="__HUB__/'+c.slug+'/" style="color:#3D5A3E;font-weight:600;">Lees meer over '+esc(c.label).toLowerCase()+' &#8594;</a> &middot; ':'';
+    var html='<div style="border-radius:14px;padding:20px 22px;background:'+theme.bg+';border:1px solid '+theme.c+'33;margin-bottom:16px;">'
+      +'<div style="font-size:11px;font-family:Space Mono,monospace;text-transform:uppercase;letter-spacing:0.08em;color:'+theme.c+';margin-bottom:6px;">Indicatie &middot; '+esc(c.label)+'</div>'
+      +'<div style="font-size:1.25rem;font-weight:800;color:#1A1208;margin-bottom:8px;">'+theme.t+'</div>'
+      +'<p style="font-size:14.5px;color:rgba(61,46,30,0.75);line-height:1.65;margin:0;">'+esc(r.w)+'</p></div>'
+      +'<p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.6;margin-bottom:18px;">'+moreLink+'Let op: dit is een indicatie. Vergunningvrij is niet regelvrij (bouwtechnische eisen blijven gelden). Bevestig altijd in het Omgevingsloket.</p>'
+      +'<div style="display:flex;flex-wrap:wrap;gap:10px;">'
+      +'<a href="__LOKET__" rel="nofollow" style="background:#fff;color:#3D5A3E;border:1.5px solid rgba(61,90,62,0.3);border-radius:10px;padding:12px 18px;font-weight:700;font-size:14px;text-decoration:none;">Officiële check (Omgevingsloket) &#8594;</a>'
+      +'<a href="__SIGNUP__" style="background:#3D5A3E;color:#F5F0E8;border-radius:10px;padding:12px 18px;font-weight:700;font-size:14px;text-decoration:none;">Slim verbouwen met Bylder &#8594;</a>'
+      +'<button id="bvc-restart" style="background:none;border:none;color:rgba(61,46,30,0.55);font-size:13px;cursor:pointer;font-family:inherit;">Opnieuw</button></div>';
+    root.innerHTML=card(html);
+    document.getElementById('bvc-restart').onclick=start;
+    root.scrollIntoView({block:'start',behavior:'smooth'});
+  }
+  start();
+})();
+</script>"""
+    body = body.replace("__HUB__", HUB).replace("__LOKET__", LOKET).replace("__SIGNUP__", SIGNUP)
+    return head(title, desc, canonical, schema) + body + footer()
+
 # ── Sitemap ──────────────────────────────────────────────────────────────────
 def build_sitemap():
-    urls = [f"{BASE}{HUB}/"] + [f"{BASE}{HUB}/{p['key']}/" for p in PROJECTS] + [f"{BASE}{HUB}/{t['key']}/" for t in TOPICS]
+    urls = [f"{BASE}{HUB}/", f"{BASE}{HUB}/check/"] + [f"{BASE}{HUB}/{p['key']}/" for p in PROJECTS] + [f"{BASE}{HUB}/{t['key']}/" for t in TOPICS]
     items = "".join(f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>\n" for u in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}</urlset>\n'
 
@@ -590,6 +702,7 @@ def write(path, content):
 if __name__ == "__main__":
     print("Bouwvergunning content-hub genereren…")
     write("bouwvergunning/index.html", build_hub())
+    write("bouwvergunning/check/index.html", build_check())
     for p in PROJECTS:
         write(f"bouwvergunning/{p['key']}/index.html", build_project(p))
     for t in TOPICS:
