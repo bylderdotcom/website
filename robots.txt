@@ -6,3 +6,4 @@ Sitemap: https://www.bylder.com/en-us-sitemap.xml
 Sitemap: https://www.bylder.com/showroomsale-sitemap.xml
 Sitemap: https://www.bylder.com/kortingscode-sitemap.xml
 Sitemap: https://www.bylder.com/3d-sfeerimpressie-sitemap.xml
+Sitemap: https://www.bylder.com/bouwvergunning-sitemap.xml
