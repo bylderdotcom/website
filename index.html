@@ -573,24 +573,30 @@ body::before {
         <span class="cursor-blink text-sm font-mono" style="color:#B85C38;">_</span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto mb-10 animate-fade-up delay-5" style="max-width:960px;margin:0 auto;">
-        <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)">
-          <div class="text-4xl mb-4"><i class="ph-thin ph-buildings"></i></div>
-          <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik koop Nieuwbouw</div>
-          <div class="text-sm leading-relaxed" style="color:rgba(61,46,30,0.5);">AI Kopersbegeleider, offerte check, oplevering & inrichting</div>
-          <div class="mt-6 flex items-center gap-2">
-            <span class="text-xs font-mono px-3 py-1.5 rounded-full badge-moss">Nieuwbouw</span>
-            <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:rgba(61,46,30,0.06);color:rgba(61,46,30,0.5);border:1px solid rgba(61,46,30,0.1);"><i class="ph-thin ph-house"></i> AI begeleiding</span>
-          </div>
-        </button>
-        <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)">
-          <div class="text-4xl mb-4"><i class="ph-thin ph-hammer"></i></div>
-          <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik ga Renoveren</div>
-          <div class="text-sm leading-relaxed" style="color:rgba(61,46,30,0.5);">Offerteanalyse, aannemer-matching &amp; kortingvouchers</div>
-          <div class="mt-6 flex items-center gap-2">
-            <span class="text-xs font-mono px-3 py-1.5 rounded-full badge-rust">Renovatie</span>
-            <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:rgba(61,46,30,0.06);color:rgba(61,46,30,0.5);border:1px solid rgba(61,46,30,0.1);"><i class="ph-thin ph-magnifying-glass"></i> AI offerte check</span>
-          </div>
-        </button>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)" style="height:100%;">
+            <div class="text-4xl mb-4"><i class="ph-thin ph-buildings"></i></div>
+            <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik koop Nieuwbouw</div>
+            <div class="text-sm leading-relaxed" style="color:rgba(61,46,30,0.5);">AI Kopersbegeleider, offerte check, oplevering & inrichting</div>
+            <div class="mt-6 flex items-center gap-2">
+              <span class="text-xs font-mono px-3 py-1.5 rounded-full badge-moss">Nieuwbouw</span>
+              <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:rgba(61,46,30,0.06);color:rgba(61,46,30,0.5);border:1px solid rgba(61,46,30,0.1);"><i class="ph-thin ph-house"></i> AI begeleiding</span>
+            </div>
+          </button>
+          <a href="/functies/#nieuwbouw" style="font-size:13px;font-weight:700;color:#3D5A3E;text-decoration:none;text-align:center;">Bekijk de functies voor nieuwbouw &#8594;</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <button class="choice-btn rounded-2xl p-8 text-left group" onclick="selectChoice(this)" style="height:100%;">
+            <div class="text-4xl mb-4"><i class="ph-thin ph-hammer"></i></div>
+            <div class="text-xl font-bold mb-1" style="letter-spacing:-0.02em;color:#1A1208;">Ik ga Renoveren</div>
+            <div class="text-sm leading-relaxed" style="color:rgba(61,46,30,0.5);">Offerteanalyse, aannemer-matching &amp; kortingvouchers</div>
+            <div class="mt-6 flex items-center gap-2">
+              <span class="text-xs font-mono px-3 py-1.5 rounded-full badge-rust">Renovatie</span>
+              <span class="text-xs font-mono px-3 py-1.5 rounded-full" style="background:rgba(61,46,30,0.06);color:rgba(61,46,30,0.5);border:1px solid rgba(61,46,30,0.1);"><i class="ph-thin ph-magnifying-glass"></i> AI offerte check</span>
+            </div>
+          </button>
+          <a href="/functies/#renovatie" style="font-size:13px;font-weight:700;color:#3D5A3E;text-decoration:none;text-align:center;">Bekijk de functies voor renovatie &#8594;</a>
+        </div>
       </div>
       <div class="flex flex-wrap md:flex-nowrap items-center justify-center gap-x-10 gap-y-6 animate-fade-up" style="animation-delay:.9s;opacity:0;max-width:720px;margin:32px auto 0;padding-top:34px;border-top:1px solid rgba(61,46,30,0.10);">
         <div class="text-center">

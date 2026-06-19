@@ -190,6 +190,9 @@ document.addEventListener('DOMContentLoaded',function(){
   var btns=document.querySelectorAll('.wt-btn'),grids=document.querySelectorAll('.wt-grid'),descs=document.querySelectorAll('.wt-desc');
   function sel(w){btns.forEach(function(b){b.classList.toggle('on',b.dataset.wt===w);});grids.forEach(function(g){g.style.display=g.dataset.wt===w?'grid':'none';});descs.forEach(function(d){d.style.display=d.dataset.wt===w?'block':'none';});}
   btns.forEach(function(b){b.addEventListener('click',function(){sel(b.dataset.wt);});});
+  // Voorselecteren op basis van #hash (bijv. /functies/#renovatie vanaf de homepage-tegels).
+  var h=(location.hash||'').replace('#','');
+  if(['nieuwbouw','bestaand','renovatie'].indexOf(h)>-1){sel(h);}
 });
 </script>
 </body>
