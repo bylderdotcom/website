@@ -8,3 +8,4 @@ Sitemap: https://www.bylder.com/kortingscode-sitemap.xml
 Sitemap: https://www.bylder.com/3d-sfeerimpressie-sitemap.xml
 Sitemap: https://www.bylder.com/bouwvergunning-sitemap.xml
 Sitemap: https://www.bylder.com/meerwerk-sitemap.xml
+Sitemap: https://www.bylder.com/eerlijke-prijzen-sitemap.xml
