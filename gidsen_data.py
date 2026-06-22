@@ -446,6 +446,10 @@ GIDSEN = [
         "tekst": "Normale gebreken die de aannemer niet hoeft te herstellen: kleine haarscheurtjes in stucwerk door zetting (tot 0,5mm), kleine verfspetters op niet-zichtbare plaatsen. Niet-normale gebreken die de aannemer WEL moet herstellen: vochtplekken, scheve kozijnen, niet-werkende installaties, ontbrekend meerwerk, zichtbare zetscheurtjes >1mm."
       },
       {
+        "h2": "Opleveringsgebreken voorkomen: zo bereid je je voor",
+        "tekst": "Voorkomen begint bij de vooroplevering: neem die serieus, loop rustig elke ruimte na en fotografeer élk gebrek (met een muntstuk of maatlat erbij voor de schaal). Neem je meerwerklijst mee en vink af of alles is uitgevoerd zoals besteld. Twijfel je over de bouwkundige staat? Schakel een onafhankelijke keurder in. En benut je sterkste drukmiddel: je mag <a href=\"/nieuwbouw-gids/fase-3-oplevering/5-procent-depot-regeling/\" style=\"color:#3D5A3E;font-weight:600;\">5% van de aanneemsom in depot houden</a> tot de gebreken zijn hersteld."
+      },
+      {
         "h2": "Laat Bylder meekijken bij de oplevering",
         "tekst": "Upload foto's van gebreken in de Bylder-app. De AI classificeert elk gebrek, bepaalt of het een bouwkundig probleem is, en genereert een formele gebrekenlijst die je direct naar de aannemer kunt sturen."
       }
@@ -462,6 +466,10 @@ GIDSEN = [
       {
         "vraag": "Mag ik een onafhankelijke keurder meenemen?",
         "antwoord": "Ja, en dat is sterk aan te raden. Een bouwkundig inspecteur (SWK-gecertificeerd) ziet gebreken die een leek mist. Kosten zijn €200-500 maar betalen zich altijd terug."
+      },
+      {
+        "vraag": "Wat staat er op een opleveringschecklist voor nieuwbouw?",
+        "antwoord": "Een goede opleveringschecklist loopt per categorie: buitenkant (gevel, dak, kozijnen, dakgoot), installaties (cv-ketel, ventilatie, groepen, meterkast), keuken en badkamer (aansluitingen, waterdichtheid, voegen, kitranden), binnenwerk (stucwerk, verf, vloeren, drempels) en je meerwerk. Bylder biedt een checklist van 47 punten en laat de AI je geüploade foto's classificeren tot een formele gebrekenlijst."
       }
     ]
   },

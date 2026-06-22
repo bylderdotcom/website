@@ -212,12 +212,12 @@ gtag('config', 'G-LZYCRP1169');
 def render_hoofdoverzicht(alle_gidsen):
     url = f"{BASE_URL}/nieuwbouw-gids/"
     blokken = ""
-    emojis = {"fase-1-orientatie":"<i class="ph-thin ph-note-pencil"></i>","fase-2-bouwfase":"<i class="ph-thin ph-buildings"></i>","fase-3-oplevering":"<i class="ph-thin ph-key"></i>"}
+    emojis = {"fase-1-orientatie":'<i class="ph-thin ph-note-pencil"></i>',"fase-2-bouwfase":'<i class="ph-thin ph-buildings"></i>',"fase-3-oplevering":'<i class="ph-thin ph-key"></i>'}
     for fase, (fl, fn, fc, fbg) in FASE_MAP.items():
         g_fase = [g for g in alle_gidsen if g["fase"] == fase]
         links = "".join(f'<a href="/nieuwbouw-gids/{g["fase"]}/{g["slug"]}/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">› {g["h1"][:50]}</a>' for g in g_fase[:4])
         blokken += f'''<div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:18px;padding:24px;">
-<div style="font-size:1.6rem;margin-bottom:10px;">{emojis.get(fase,"<i class="ph-thin ph-clipboard-text"></i>")}</div>
+<div style="font-size:1.6rem;margin-bottom:10px;">{emojis.get(fase,'<i class="ph-thin ph-clipboard-text"></i>')}</div>
 <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.35);margin-bottom:6px;">{fl}</div>
 <h2 style="font-size:17px;font-weight:800;color:#1A1208;margin-bottom:12px;letter-spacing:-0.02em;">{fn}</h2>
 <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px;">{links}</div>

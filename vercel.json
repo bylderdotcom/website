@@ -17,6 +17,8 @@
     { "source": "/us",        "destination": "/en-us",        "permanent": true },
     { "source": "/us/:path*", "destination": "/en-us/:path*", "permanent": true },
 
+    { "source": "/blog/checklist-bij-de-oplevering-van-je-nieuwbouwwoning-wat-moet-je-controleren-en-hoe-voorkom-je-opleveringsgebreken", "destination": "/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/", "permanent": true },
+
     { "source": "/badkamer(.*)",              "destination": "/kopen/sanitair/",        "permanent": true },
     { "source": "/badkamers(.*)",             "destination": "/kopen/sanitair/",        "permanent": true },
 
