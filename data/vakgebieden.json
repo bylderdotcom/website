@@ -1,0 +1,54 @@
+{
+  "_doc": "Master-taxonomie vakgebieden voor de Bylder vakbedrijven-laag. Single source of truth waarover de autonome pagina-/profiel-/workflow-generatie itereert. sbi = beste inschatting (SBI 2008) — VERIFIEER via KvK voordat je erop filtert; gebruik 'kvk_zoekterm' als primaire KvK-zoekquery. benchmark_key koppelt aan src/lib/priceBenchmarks.ts in de app (prijs-benchmark). offerte_check=true betekent dat er al /offerte-check/[slug]/[stad]/-pagina's bestaan (281 steden).",
+  "_status": "Pilot = stukadoor (pillar live op /stukadoor/). Overige: pillar + profiel-laag autonoom uitrollen zodra KvK_API_KEY + GOOGLE_PLACES_API_KEY beschikbaar zijn.",
+  "groepen": [
+    "Afbouw & afwerking",
+    "Installatietechniek",
+    "Ruwbouw & constructie",
+    "Dak, gevel & buiten",
+    "Specialisten & overig"
+  ],
+  "vakgebieden": [
+    { "slug": "stukadoor", "label": "Stukadoor", "plural": "Stukadoors", "werk": "stucwerk", "groep": "Afbouw & afwerking", "sbi": "43.31", "kvk_zoekterm": "stukadoor", "benchmark_key": "stucwerk", "offerte_check": true, "pilot": true },
+    { "slug": "schilder", "label": "Schilder", "plural": "Schilders", "werk": "schilderwerk", "groep": "Afbouw & afwerking", "sbi": "43.34.1", "kvk_zoekterm": "schildersbedrijf", "benchmark_key": "schilderwerk", "offerte_check": true },
+    { "slug": "tegelzetter", "label": "Tegelzetter", "plural": "Tegelzetters", "werk": "tegelwerk", "groep": "Afbouw & afwerking", "sbi": "43.33", "kvk_zoekterm": "tegelzetter", "benchmark_key": "tegelvloer", "offerte_check": false },
+    { "slug": "vloerenlegger", "label": "Vloerenlegger", "plural": "Vloerenleggers", "werk": "vloer leggen (PVC, laminaat, parket)", "groep": "Afbouw & afwerking", "sbi": "43.33", "kvk_zoekterm": "vloeren", "benchmark_key": "pvc-laminaat", "offerte_check": false },
+    { "slug": "gietvloer", "label": "Gietvloer-specialist", "plural": "Gietvloer-specialisten", "werk": "gietvloer", "groep": "Afbouw & afwerking", "sbi": "43.33", "kvk_zoekterm": "gietvloer", "benchmark_key": "gietvloer", "offerte_check": true },
+    { "slug": "behanger", "label": "Behanger", "plural": "Behangers", "werk": "behangwerk", "groep": "Afbouw & afwerking", "sbi": "43.34.1", "kvk_zoekterm": "behanger", "benchmark_key": null, "offerte_check": false },
+    { "slug": "plafond-specialist", "label": "Plafond-specialist", "plural": "Plafond-specialisten", "werk": "spanplafond / systeemplafond", "groep": "Afbouw & afwerking", "sbi": "43.39", "kvk_zoekterm": "spanplafond", "benchmark_key": null, "offerte_check": false },
+    { "slug": "interieurbouwer", "label": "Interieurbouwer / meubelmaker", "plural": "Interieurbouwers", "werk": "maatwerk interieur", "groep": "Afbouw & afwerking", "sbi": "31.09", "kvk_zoekterm": "interieurbouw", "benchmark_key": null, "offerte_check": false },
+    { "slug": "keukenmonteur", "label": "Keukenmonteur", "plural": "Keukenmonteurs", "werk": "keuken plaatsen", "groep": "Afbouw & afwerking", "sbi": "43.32", "kvk_zoekterm": "keuken montage", "benchmark_key": "keuken", "offerte_check": false },
+    { "slug": "badkamer", "label": "Badkamerspecialist", "plural": "Badkamerspecialisten", "werk": "badkamer renoveren", "groep": "Afbouw & afwerking", "sbi": "43.22", "kvk_zoekterm": "badkamer", "benchmark_key": "badkamer", "offerte_check": true },
+
+    { "slug": "elektricien", "label": "Elektricien", "plural": "Elektriciens", "werk": "elektra-installatie", "groep": "Installatietechniek", "sbi": "43.21", "kvk_zoekterm": "elektricien", "benchmark_key": null, "offerte_check": true },
+    { "slug": "loodgieter", "label": "Loodgieter", "plural": "Loodgieters", "werk": "loodgieterswerk / sanitair", "groep": "Installatietechniek", "sbi": "43.22", "kvk_zoekterm": "loodgieter", "benchmark_key": null, "offerte_check": true },
+    { "slug": "cv-installateur", "label": "CV-installateur", "plural": "CV-installateurs", "werk": "cv- en verwarmingsinstallatie", "groep": "Installatietechniek", "sbi": "43.22", "kvk_zoekterm": "verwarmingsinstallateur", "benchmark_key": null, "offerte_check": false },
+    { "slug": "warmtepomp-installateur", "label": "Warmtepomp-installateur", "plural": "Warmtepomp-installateurs", "werk": "warmtepomp plaatsen", "groep": "Installatietechniek", "sbi": "43.22", "kvk_zoekterm": "warmtepomp", "benchmark_key": null, "offerte_check": false },
+    { "slug": "airco-installateur", "label": "Airco-installateur", "plural": "Airco-installateurs", "werk": "airco plaatsen", "groep": "Installatietechniek", "sbi": "43.22", "kvk_zoekterm": "airco installatie", "benchmark_key": null, "offerte_check": false },
+    { "slug": "zonnepanelen-installateur", "label": "Zonnepanelen-installateur", "plural": "Zonnepanelen-installateurs", "werk": "zonnepanelen plaatsen", "groep": "Installatietechniek", "sbi": "43.21", "kvk_zoekterm": "zonnepanelen", "benchmark_key": null, "offerte_check": false },
+    { "slug": "ventilatie-specialist", "label": "Ventilatie-specialist (WTW)", "plural": "Ventilatie-specialisten", "werk": "mechanische ventilatie / WTW", "groep": "Installatietechniek", "sbi": "43.29", "kvk_zoekterm": "ventilatie installatie", "benchmark_key": null, "offerte_check": false },
+    { "slug": "vloerverwarming-specialist", "label": "Vloerverwarming-specialist", "plural": "Vloerverwarming-specialisten", "werk": "vloerverwarming aanleggen", "groep": "Installatietechniek", "sbi": "43.22", "kvk_zoekterm": "vloerverwarming", "benchmark_key": "vloerverwarming", "offerte_check": false },
+    { "slug": "domotica-installateur", "label": "Domotica-installateur", "plural": "Domotica-installateurs", "werk": "smarthome / domotica", "groep": "Installatietechniek", "sbi": "43.21", "kvk_zoekterm": "domotica", "benchmark_key": null, "offerte_check": false },
+
+    { "slug": "aannemer", "label": "Aannemer", "plural": "Aannemers", "werk": "bouw / verbouwing", "groep": "Ruwbouw & constructie", "sbi": "41.20", "kvk_zoekterm": "aannemersbedrijf", "benchmark_key": null, "offerte_check": true },
+    { "slug": "metselaar", "label": "Metselaar", "plural": "Metselaars", "werk": "metselwerk", "groep": "Ruwbouw & constructie", "sbi": "43.99", "kvk_zoekterm": "metselaar", "benchmark_key": null, "offerte_check": false },
+    { "slug": "timmerman", "label": "Timmerman", "plural": "Timmerlieden", "werk": "timmerwerk", "groep": "Ruwbouw & constructie", "sbi": "43.32", "kvk_zoekterm": "timmerbedrijf", "benchmark_key": null, "offerte_check": false },
+    { "slug": "betonboorder", "label": "Betonboorder / -zager", "plural": "Betonboorders", "werk": "beton boren en zagen", "groep": "Ruwbouw & constructie", "sbi": "43.99", "kvk_zoekterm": "betonboren", "benchmark_key": null, "offerte_check": false },
+    { "slug": "funderingsspecialist", "label": "Funderingsspecialist", "plural": "Funderingsspecialisten", "werk": "fundering / heiwerk", "groep": "Ruwbouw & constructie", "sbi": "43.13", "kvk_zoekterm": "fundering", "benchmark_key": null, "offerte_check": false },
+
+    { "slug": "dakdekker", "label": "Dakdekker", "plural": "Dakdekkers", "werk": "dakbedekking (plat & hellend)", "groep": "Dak, gevel & buiten", "sbi": "43.91", "kvk_zoekterm": "dakdekker", "benchmark_key": null, "offerte_check": false },
+    { "slug": "dakkapel", "label": "Dakkapel-specialist", "plural": "Dakkapel-specialisten", "werk": "dakkapel plaatsen", "groep": "Dak, gevel & buiten", "sbi": "43.91", "kvk_zoekterm": "dakkapel", "benchmark_key": null, "offerte_check": true },
+    { "slug": "voeger", "label": "Voeger / gevelspecialist", "plural": "Voegers", "werk": "voegwerk & gevelrenovatie", "groep": "Dak, gevel & buiten", "sbi": "43.99", "kvk_zoekterm": "voegbedrijf", "benchmark_key": null, "offerte_check": false },
+    { "slug": "isolatiespecialist", "label": "Isolatiespecialist", "plural": "Isolatiespecialisten", "werk": "na-isolatie (spouw, dak, vloer)", "groep": "Dak, gevel & buiten", "sbi": "43.29", "kvk_zoekterm": "isolatiebedrijf", "benchmark_key": null, "offerte_check": false },
+    { "slug": "kozijnen", "label": "Kozijnenspecialist", "plural": "Kozijnenspecialisten", "werk": "kunststof/aluminium kozijnen", "groep": "Dak, gevel & buiten", "sbi": "43.32", "kvk_zoekterm": "kozijnen", "benchmark_key": null, "offerte_check": false },
+    { "slug": "glaszetter", "label": "Glaszetter", "plural": "Glaszetters", "werk": "beglazing / HR++ glas", "groep": "Dak, gevel & buiten", "sbi": "43.34.2", "kvk_zoekterm": "glaszetter", "benchmark_key": null, "offerte_check": false },
+    { "slug": "zonwering-installateur", "label": "Zonwering-installateur", "plural": "Zonwering-installateurs", "werk": "zonwering & raamdecoratie", "groep": "Dak, gevel & buiten", "sbi": "43.29", "kvk_zoekterm": "zonwering", "benchmark_key": null, "offerte_check": false },
+    { "slug": "hovenier", "label": "Hovenier", "plural": "Hoveniers", "werk": "tuinaanleg", "groep": "Dak, gevel & buiten", "sbi": "81.30", "kvk_zoekterm": "hovenier", "benchmark_key": null, "offerte_check": false },
+    { "slug": "straatmaker", "label": "Straatmaker", "plural": "Straatmakers", "werk": "bestrating", "groep": "Dak, gevel & buiten", "sbi": "42.11", "kvk_zoekterm": "bestrating", "benchmark_key": null, "offerte_check": false },
+
+    { "slug": "traprenovatie", "label": "Traprenovatie-specialist", "plural": "Traprenovatie-specialisten", "werk": "trap renoveren", "groep": "Specialisten & overig", "sbi": "43.32", "kvk_zoekterm": "traprenovatie", "benchmark_key": null, "offerte_check": false },
+    { "slug": "vochtbestrijding", "label": "Vochtbestrijdingsspecialist", "plural": "Vochtbestrijders", "werk": "vochtbestrijding / kelderdichting", "groep": "Specialisten & overig", "sbi": "43.99", "kvk_zoekterm": "vochtbestrijding", "benchmark_key": null, "offerte_check": false },
+    { "slug": "asbestsanering", "label": "Asbestsaneerder", "plural": "Asbestsaneerders", "werk": "asbest verwijderen", "groep": "Specialisten & overig", "sbi": "39.00", "kvk_zoekterm": "asbestsanering", "benchmark_key": null, "offerte_check": false },
+    { "slug": "egalisatie", "label": "Vloer-egalisatiespecialist", "plural": "Egalisatiespecialisten", "werk": "vloer egaliseren", "groep": "Specialisten & overig", "sbi": "43.33", "kvk_zoekterm": "egaliseren vloer", "benchmark_key": null, "offerte_check": false }
+  ]
+}
