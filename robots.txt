@@ -10,3 +10,4 @@ Sitemap: https://www.bylder.com/bouwvergunning-sitemap.xml
 Sitemap: https://www.bylder.com/meerwerk-sitemap.xml
 Sitemap: https://www.bylder.com/eerlijke-prijzen-sitemap.xml
 Sitemap: https://www.bylder.com/stukadoor-sitemap.xml
+Sitemap: https://www.bylder.com/plattegrond-inrichten-sitemap.xml
