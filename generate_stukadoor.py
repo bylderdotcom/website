@@ -166,11 +166,50 @@ def breadcrumb(items): return {"@context": "https://schema.org", "@type": "Bread
 def faq_html(qa): return '<h2 style="font-size:1.5rem;font-weight:800;margin:8px 0 12px;">Veelgestelde vragen over stukadoors</h2>' + "".join(f'<div class="faq-item"><h3>{html.escape(q)}</h3><p>{a}</p></div>' for q, a in qa)
 
 
+def load_vakbedrijven(vak):
+    path = os.path.join(ROOT, "data", "vakbedrijven.json")
+    if not os.path.exists(path): return []
+    rows = [b for b in json.load(open(path, encoding="utf-8")).get("vakbedrijven", [])
+            if b.get("vak") == vak and not b.get("opt_out") and b.get("naam")]
+    rows.sort(key=lambda b: ((b.get("stad") or "zzz"), b.get("naam") or ""))
+    return rows
+
+
+def directory_html(bedrijven):
+    """Lokale bedrijvengids. KvK-vrij: naam/stad/website + (indien aanwezig) reviewscores."""
+    if not bedrijven:
+        return ""  # geen dunne lege lijst tonen
+    cards = ""
+    for b in bedrijven:
+        naam = html.escape(b["naam"])
+        stad = html.escape(b.get("stad") or "Nederland")
+        site = b.get("website")
+        rating = b.get("google_rating")
+        score = f'<span style="font-size:12px;color:#3D5A3E;font-weight:700;">&#9733; {rating} <span style="color:rgba(61,46,30,0.45);font-weight:400;">({b.get("google_reviews") or 0})</span></span>' if rating else ""
+        link = f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-size:13px;font-weight:700;">Website &#8594;</a>' if site else '<span style="font-size:12px;color:rgba(61,46,30,0.4);">Nog geen website bekend</span>'
+        cards += (f'<div class="card" style="padding:16px 18px;">'
+                  f'<div style="display:flex;justify-content:space-between;gap:10px;align-items:start;">'
+                  f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;">{naam}</div>'
+                  f'<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:2px;">{stad}</div></div>{score}</div>'
+                  f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">{link}'
+                  f'<a href="{SIGNUP}" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
+                  f'</div>')
+    return (f'<h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 6px;">Stukadoors in Nederland</h2>'
+            f'<p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Een groeiend, onafhankelijk overzicht van stukadoorsbedrijven. Reviewscores tonen we straks gebundeld uit meerdere bronnen.</p>'
+            f'<div class="grid-3">{cards}</div>'
+            f'<div style="background:rgba(184,92,56,0.06);border:1px solid rgba(184,92,56,0.2);border-radius:14px;padding:18px 20px;margin:18px 0;">'
+            f'<div style="font-weight:700;color:#1A1208;font-size:15px;margin-bottom:4px;">Ben jij stukadoor? Sta erbij.</div>'
+            f'<div style="font-size:13.5px;color:rgba(61,46,30,0.7);line-height:1.6;margin-bottom:12px;">Vermelding is gratis. Activeer je profiel eenmalig voor &euro;79 en word gekoppeld aan nieuwbouw- en verbouwkopers die n&uacute; een stukadoor zoeken &mdash; geen terugkerende leadkosten.</div>'
+            f'<a href="{SIGNUP}" style="display:inline-block;background:#B85C38;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Vermeld of activeer je bedrijf &#8594;</a></div>'
+            f'<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:8px;">Bedrijfsgegevens deels via OpenStreetMap (&copy; OpenStreetMap-bijdragers, ODbL). Staat jouw bedrijf er niet bij of klopt iets niet? Laat het ons weten.</p>')
+
+
 def build_pillar():
     title = "Stukadoor nodig? Marktprijzen, kosten per m² & een eerlijke offerte (2026) | Bylder"
     desc = ("Wat kost een stukadoor in 2026? Marktprijzen per m² per werksoort, de trends in de branche en hoe je via "
             "Bylder een eerlijke offerte checkt. Plus: stukadoors, claim je gratis neutrale profiel.")
     canonical = f"{BASE}{SLUG}/"
+    bedrijven = load_vakbedrijven("stukadoor")
 
     qa = [
         ("Wat kost een stukadoor per m² in 2026?",
@@ -191,8 +230,9 @@ def build_pillar():
          "We helpen kopers een eerlijke prijs te betalen en tonen stukadoors neutraal &mdash; met beoordelingsscores van "
          "verschillende externe bronnen naast elkaar."),
         ("Ik ben stukadoor &mdash; wat kost een profiel op Bylder?",
-         "Een basisprofiel is gratis. Je deelt je Werkspot-, Google- of websitelink en wij stellen je profiel samen. Je betaalt "
-         "geen vaste leadkosten; Bylder brengt je in contact met nieuwbouw- en verbouwkopers op het moment dat zij stucwerk plannen."),
+         "Vermelding is gratis. Wil je je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; "
+         "dan kost dat eenmalig &euro;79 (geen abonnement). Je deelt je Werkspot-, Google- of websitelink en wij stellen je profiel samen. "
+         "Je betaalt geen terugkerende leadkosten; Bylder brengt je in contact met nieuwbouw- en verbouwkopers op het moment dat zij stucwerk plannen."),
     ]
 
     schema = [
@@ -209,6 +249,15 @@ def build_pillar():
          "provider": {"@type": "Organization", "name": "Bylder.com", "url": BASE + "/"},
          "description": "Onafhankelijke controle van stukadoor-offertes op marktconformiteit en een neutraal overzicht van stukadoors."},
     ]
+    if bedrijven:
+        schema.append({"@context": "https://schema.org", "@type": "ItemList", "name": "Stukadoors in Nederland",
+                       "itemListElement": [
+                           {"@type": "ListItem", "position": i + 1,
+                            "item": {k: v for k, v in {
+                                "@type": "LocalBusiness", "name": b["naam"], "url": b.get("website"),
+                                "address": {"@type": "PostalAddress", "addressLocality": b.get("stad"), "addressCountry": "NL"} if b.get("stad") else None,
+                            }.items() if v}}
+                           for i, b in enumerate(bedrijven)]})
 
     # Marktprijs-tabel
     rows = "".join(
@@ -312,6 +361,9 @@ def build_pillar():
   <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;">Direct naar de marktprijs en offerte-check voor jouw plaats:</p>
   <div class="grid-3">{steden}</div>
   <p style="font-size:14px;color:rgba(61,46,30,0.6);margin-top:16px;">Staat jouw plaats er niet bij? Bekijk alle plaatsen via de <a href="{OFFERTE_HUB}/">offerte-check</a>.</p>
+
+  <!-- BEDRIJVENGIDS -->
+  {directory_html(bedrijven)}
 
   <div class="divider"></div>
 
