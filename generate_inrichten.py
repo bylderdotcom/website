@@ -154,6 +154,7 @@ SPOKES = [
      "h1": "Maak een mooie plattegrond van je bouwtekening",
      "desc": "Zet je rommelige technische bouwtekening om in een nette, overzichtelijke plattegrond — strakke wanden en duidelijke ruimtes. In je browser bij Bylder.",
      "intro": "Een technische bouwtekening is functioneel, maar rommelig en lastig te lezen. Bylder schoont 'm met één klik op tot een <strong>nette, overzichtelijke plattegrond</strong> &mdash; strakke wanden, duidelijke ruimtes, prettig om naar te kijken. Zo wordt je woning meteen tastbaarder.",
+     "image": "/img/plattegrond-voor-na.jpg", "image_caption": "Voorbeeld: een echte bouwtekening (links) opgeschoond (rechts). Indicatief beeld.",
      "bullets": ["Upload je bouwtekening of plattegrond.", "Eén klik &rarr; een opgeschoonde, overzichtelijke 2D-plattegrond.", "Je indeling blijft kloppen &mdash; alleen netter en duidelijker.", "Wil je verder? Pas je meubels in en render 'm in 3D in jouw stijl."],
      "faq": [("Hoe maak ik mijn plattegrond netter?", "Upload je technische tekening en Bylder schoont 'm met AI op tot een nette, overzichtelijke plattegrond &mdash; strakke wanden en duidelijke ruimtes, in je browser. Indicatief beeld."),
              ("Blijft mijn indeling kloppen?", "Ja. De opmaak houdt je plattegrond-indeling aan; het maakt 'm vooral netter en makkelijker te lezen.")]},
@@ -232,6 +233,7 @@ def build_spoke(s):
     <div class="badge">Inrichten</div>
     <h1 style="font-size:2.3rem;font-weight:800;line-height:1.14;margin-bottom:14px;">{html.escape(s["h1"])}</h1>
     <p style="font-size:1.08rem;color:rgba(61,46,30,0.72);line-height:1.8;margin-bottom:20px;">{s["intro"]}</p>
+    {f'<figure style="margin:0 0 22px;"><img src="{s["image"]}" alt="{html.escape(s.get("image_caption",""))}" loading="lazy" style="width:100%;border-radius:14px;border:1px solid rgba(61,46,30,0.1);display:block;" /><figcaption style="font-size:12px;color:rgba(61,46,30,0.45);margin-top:8px;text-align:center;">{html.escape(s.get("image_caption",""))}</figcaption></figure>' if s.get("image") else ""}
     <ul class="check-list">{bullets}</ul>
     {cta_block("Probeer het gratis", "Upload je plattegrond en pas je inrichting in — in je browser, gratis te starten.")}
     {faq_html(s["faq"])}
