@@ -222,6 +222,8 @@ def build_post(p):
               {"@context": "https://schema.org", "@type": "Article", "headline": f"Wat kost {label}? Eerlijke prijs", "description": desc, "author": {"@type": "Organization", "name": "Bylder.com"}, "publisher": {"@type": "Organization", "name": "Bylder.com"}}]
     factoren = "".join(f"<li>{html.escape(x)}</li>" for x in p["factoren"])
     others = "".join(f'<a href="{HUB}/{o["key"]}/" class="tile"><div style="font-weight:700;font-size:14px;color:#1A1208;">{o["label"]}</div></a>' for o in POSTEN if o["key"] != p["key"])
+    # Contextuele doorlink naar de vakbedrijven-laag (autoriteitspillar per vak).
+    vak_link = '<div class="highlight">Zoek je een stukadoor? Bekijk <a href="/stukadoor/">marktprijzen, trends en stukadoors per stad</a> &mdash; met beoordelingen uit meerdere bronnen naast elkaar.</div>' if p["key"] == "stucwerk" else ""
     body = f"""<main style="padding:56px 0;"><div class="container"><div class="hero-grid" style="display:grid;grid-template-columns:2fr 1fr;gap:56px;align-items:start;">
       <article>
         <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:28px;"><a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a> → <a href="{HUB}/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Eerlijke prijzen</a> → <span style="color:rgba(61,46,30,0.6);">{label}</span></p>
@@ -236,6 +238,7 @@ def build_post(p):
         </div>
         <h2 style="font-size:1.35rem;font-weight:700;margin:28px 0 10px;">Wat bepaalt de prijs?</h2>
         <ul class="check-list">{factoren}</ul>
+        {vak_link}
         {moat_block()}
         {cta_block()}
         {faq_html(qa)}
