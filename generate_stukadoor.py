@@ -217,7 +217,7 @@ def bedrijf_card(b):
             f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;">{naam}</div>'
             f'<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:2px;">{stad}</div></div>{score}</div>'
             f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">{link}'
-            f'<a href="{VOORDELEN}/" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
+            f'<a href="https://app.bylder.com/vakbedrijf/claim/{b["slug"]}" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
             f'</div>')
 
 
