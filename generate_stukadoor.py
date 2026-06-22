@@ -7,7 +7,7 @@ review-meta-laag. Volledig SEO/GEO/AEO/schema/CRO/a11y geoptimaliseerd.
 
 Prijzen INDICATIEF (NL 2026), gehedged. Gebruik: python3 generate_stukadoor.py
 """
-import os, html, json
+import os, html, json, re, unicodedata
 
 BASE = "https://www.bylder.com"
 SLUG = "/stukadoor"
@@ -100,7 +100,7 @@ NAV_HTML = f"""<nav class="glass-nav">
   </div>
 </nav>"""
 
-def head(title, desc, canonical, schema_blocks):
+def head(title, desc, canonical, schema_blocks, robots="index,follow"):
     schema = "\n".join(f'<script type="application/ld+json">{json.dumps(b, ensure_ascii=False)}</script>' for b in schema_blocks)
     return f"""<!DOCTYPE html>
 <html lang="nl">
@@ -113,7 +113,7 @@ def head(title, desc, canonical, schema_blocks):
 <link rel="canonical" href="{canonical}">
 <meta name="author" content="Bylder Nederland B.V.">
 <meta property="og:type" content="article"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{canonical}">
-<meta name="robots" content="index,follow">
+<meta name="robots" content="{robots}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 {schema}
@@ -175,33 +175,123 @@ def load_vakbedrijven(vak):
     return rows
 
 
-def directory_html(bedrijven):
-    """Lokale bedrijvengids. KvK-vrij: naam/stad/website + (indien aanwezig) reviewscores."""
-    if not bedrijven:
-        return ""  # geen dunne lege lijst tonen
-    cards = ""
+MIN_PER_STAD = 3        # index-gate: minder bedrijven → noindex (voorkomt dunne pagina's)
+
+
+def _slug(s):
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
+
+
+def _prominentie(b):
+    return (-(b.get("google_reviews") or 0), -(b.get("google_rating") or 0))
+
+
+def per_stad(bedrijven):
+    """Groepeer op stad → bedrijven (gesorteerd op prominentie). Sleutel = (label, slug)."""
+    groepen = {}
     for b in bedrijven:
-        naam = html.escape(b["naam"])
-        stad = html.escape(b.get("stad") or "Nederland")
-        site = b.get("website")
-        rating = b.get("google_rating")
-        score = f'<span style="font-size:12px;color:#3D5A3E;font-weight:700;">&#9733; {rating} <span style="color:rgba(61,46,30,0.45);font-weight:400;">({b.get("google_reviews") or 0})</span></span>' if rating else ""
-        link = f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-size:13px;font-weight:700;">Website &#8594;</a>' if site else '<span style="font-size:12px;color:rgba(61,46,30,0.4);">Nog geen website bekend</span>'
-        cards += (f'<div class="card" style="padding:16px 18px;">'
-                  f'<div style="display:flex;justify-content:space-between;gap:10px;align-items:start;">'
-                  f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;">{naam}</div>'
-                  f'<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:2px;">{stad}</div></div>{score}</div>'
-                  f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">{link}'
-                  f'<a href="{SIGNUP}" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
-                  f'</div>')
-    return (f'<h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 6px;">Stukadoors in Nederland</h2>'
-            f'<p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Een groeiend, onafhankelijk overzicht van stukadoorsbedrijven. Reviewscores tonen we straks gebundeld uit meerdere bronnen.</p>'
-            f'<div class="grid-3">{cards}</div>'
-            f'<div style="background:rgba(184,92,56,0.06);border:1px solid rgba(184,92,56,0.2);border-radius:14px;padding:18px 20px;margin:18px 0;">'
-            f'<div style="font-weight:700;color:#1A1208;font-size:15px;margin-bottom:4px;">Ben jij stukadoor? Sta erbij.</div>'
+        stad = (b.get("stad") or "").strip()
+        if not stad:
+            continue
+        groepen.setdefault(stad, []).append(b)
+    out = {}
+    for stad, lijst in groepen.items():
+        out[stad] = sorted(lijst, key=_prominentie)
+    return out
+
+
+def bedrijf_card(b):
+    naam = html.escape(b["naam"])
+    stad = html.escape(b.get("stad") or "Nederland")
+    site = b.get("website")
+    rating = b.get("google_rating")
+    score = (f'<span style="font-size:12px;color:#3D5A3E;font-weight:700;white-space:nowrap;">Google &#9733; {rating} '
+             f'<span style="color:rgba(61,46,30,0.45);font-weight:400;">({b.get("google_reviews") or 0})</span></span>') if rating else ""
+    link = (f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-size:13px;font-weight:700;">Website &#8594;</a>'
+            if site else '<span style="font-size:12px;color:rgba(61,46,30,0.4);">Nog geen website bekend</span>')
+    return (f'<div class="card" style="padding:16px 18px;">'
+            f'<div style="display:flex;justify-content:space-between;gap:10px;align-items:start;">'
+            f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;">{naam}</div>'
+            f'<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:2px;">{stad}</div></div>{score}</div>'
+            f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">{link}'
+            f'<a href="{SIGNUP}" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
+            f'</div>')
+
+
+def bedrijven_grid(lijst):
+    return f'<div class="grid-3">{"".join(bedrijf_card(b) for b in lijst)}</div>'
+
+
+def claim_cta(stad_label=None):
+    waar = f" in {html.escape(stad_label)}" if stad_label else ""
+    return (f'<div style="background:rgba(184,92,56,0.06);border:1px solid rgba(184,92,56,0.2);border-radius:14px;padding:18px 20px;margin:22px 0;">'
+            f'<div style="font-weight:700;color:#1A1208;font-size:15px;margin-bottom:4px;">Ben jij stukadoor{waar}? Sta erbij.</div>'
             f'<div style="font-size:13.5px;color:rgba(61,46,30,0.7);line-height:1.6;margin-bottom:12px;">Vermelding is gratis. Activeer je profiel eenmalig voor &euro;79 en word gekoppeld aan nieuwbouw- en verbouwkopers die n&uacute; een stukadoor zoeken &mdash; geen terugkerende leadkosten.</div>'
             f'<a href="{SIGNUP}" style="display:inline-block;background:#B85C38;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Vermeld of activeer je bedrijf &#8594;</a></div>'
-            f'<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:8px;">Bedrijfsgegevens deels via OpenStreetMap (&copy; OpenStreetMap-bijdragers, ODbL). Staat jouw bedrijf er niet bij of klopt iets niet? Laat het ons weten.</p>')
+            f'<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:8px;">Bedrijfsgegevens via Google &amp; OpenStreetMap (&copy; OpenStreetMap-bijdragers, ODbL). Reviewscores afkomstig van de genoemde bronnen. Klopt iets niet? Laat het ons weten.</p>')
+
+
+def offerte_check_slug_bestaat(slug):
+    return os.path.isdir(os.path.join(ROOT, "offerte-check", "stukadoor", slug))
+
+
+def build_city_page(stad, lokaal):
+    slug = _slug(stad)
+    n = len(lokaal)
+    canonical = f"{BASE}{SLUG}/{slug}/"
+    indexeer = n >= MIN_PER_STAD
+    title = f"Stukadoor in {stad} nodig? {n} bedrijven, reviews & prijzen (2026) | Bylder"
+    desc = (f"Vind en vergelijk {n} stukadoors in {stad}: reviews, websites en marktprijzen per m&sup2;. "
+            f"Check gratis of je offerte eerlijk is. Onafhankelijk overzicht van Bylder.")
+    qa = [
+        (f"Wat kost een stukadoor in {stad}?",
+         "Indicatief reken je in 2026 op &euro;8&ndash;&euro;14/m&sup2; voor spuitwerk, &euro;14&ndash;&euro;22/m&sup2; voor behangklaar "
+         "en &euro;18&ndash;&euro;38/m&sup2; voor glad sausklaar. De prijs hangt af van de ondergrond, het afwerkniveau en het oppervlak. "
+         "Check je offerte gratis tegen actuele marktdata."),
+        (f"Hoe vind ik een goede stukadoor in {stad}?",
+         f"Vergelijk de stukadoors in {stad} op beoordelingen uit meerdere bronnen naast elkaar in plaats van &eacute;&eacute;n platform. "
+         "Bylder toont ze neutraal en laat je je offerte per post controleren op een eerlijke prijs."),
+    ]
+    schema = [
+        faq_schema(qa),
+        breadcrumb([("Bylder.com", BASE + "/"), ("Stukadoor", f"{BASE}{SLUG}/"), (stad, canonical)]),
+        {"@context": "https://schema.org", "@type": "ItemList", "name": f"Stukadoors in {stad}",
+         "itemListElement": [
+             {"@type": "ListItem", "position": i + 1,
+              "item": {k: v for k, v in {
+                  "@type": "LocalBusiness", "name": b["naam"], "url": b.get("website"),
+                  "address": {"@type": "PostalAddress", "addressLocality": b.get("stad"), "addressCountry": "NL"},
+              }.items() if v}}
+             for i, b in enumerate(lokaal)]},
+    ]
+    oc = f'<a href="{OFFERTE_HUB}/stukadoor/{slug}/">offerte-check voor {html.escape(stad)}</a>' if offerte_check_slug_bestaat(slug) else f'<a href="{OFFERTE_HUB}/">offerte-check</a>'
+    body = f"""<main style="padding:48px 0 20px;"><div class="container" style="max-width:1000px;">
+  <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:18px;"><a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a> &rarr; <a href="{SLUG}/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Stukadoor</a> &rarr; <span style="color:rgba(61,46,30,0.6);">{html.escape(stad)}</span></p>
+  <div class="badge">Stukadoors &middot; {html.escape(stad)}</div>
+  <h1 style="font-size:2.3rem;font-weight:800;line-height:1.14;margin-bottom:12px;">Stukadoors in {html.escape(stad)}</h1>
+  <p style="font-size:1.08rem;color:rgba(61,46,30,0.7);line-height:1.7;max-width:760px;margin-bottom:8px;">
+    {n} stukadoorsbedrijven in en rond {html.escape(stad)}, met hun beoordelingen en websites naast elkaar. Bylder toont ze
+    <strong>neutraal</strong> &mdash; en laat je gratis checken of je offerte een eerlijke prijs heeft.</p>
+  <div class="highlight">Marktprijs stucwerk (2026): spuitwerk &euro;8&ndash;&euro;14/m&sup2;, behangklaar &euro;14&ndash;&euro;22/m&sup2;, glad sausklaar &euro;18&ndash;&euro;38/m&sup2;. Bekijk de volledige <a href="{SLUG}/">marktprijzen en werksoorten</a>.</div>
+
+  <h2 style="font-size:1.5rem;font-weight:800;margin:32px 0 14px;">{n} stukadoors in {html.escape(stad)}</h2>
+  {bedrijven_grid(lokaal)}
+  {claim_cta(stad)}
+
+  <div style="background:#3D5A3E;border-radius:18px;padding:34px;text-align:center;margin:32px 0;">
+    <h2 style="font-size:1.45rem;font-weight:800;color:#F5F0E8;margin-bottom:10px;">Een offerte van een stukadoor in {html.escape(stad)}?</h2>
+    <p style="color:rgba(245,240,232,0.72);margin-bottom:20px;max-width:540px;margin-left:auto;margin-right:auto;font-size:14.5px;line-height:1.6;">Check gratis of je prijs per m&sup2; marktconform is voordat je tekent.</p>
+    <a href="{SIGNUP}" class="cta-primary">Check je prijs gratis &#8594;</a>
+  </div>
+
+  <div class="divider"></div>
+  {faq_html(qa)}
+  <div class="divider"></div>
+  <p style="font-size:14px;color:rgba(61,46,30,0.6);">Verder: terug naar <a href="{SLUG}/">stukadoors &amp; marktprijzen</a> &middot; {oc} &middot; <a href="/eerlijke-prijzen/stucwerk/">wat kost stucwerk per m&sup2;</a></p>
+  </div></main>"""
+    robots = "index,follow" if indexeer else "noindex,follow"
+    return head(title, desc, canonical, schema, robots=robots) + body + FOOTER
 
 
 def build_pillar():
@@ -210,6 +300,10 @@ def build_pillar():
             "Bylder een eerlijke offerte checkt. Plus: stukadoors, claim je gratis neutrale profiel.")
     canonical = f"{BASE}{SLUG}/"
     bedrijven = load_vakbedrijven("stukadoor")
+    groepen = per_stad(bedrijven)
+    steden_idx = sorted([(s, l) for s, l in groepen.items() if len(l) >= MIN_PER_STAD],
+                        key=lambda x: (-len(x[1]), x[0]))
+    top_landelijk = sorted([b for b in bedrijven if b.get("google_reviews")], key=_prominentie)[:9]
 
     qa = [
         ("Wat kost een stukadoor per m² in 2026?",
@@ -249,15 +343,15 @@ def build_pillar():
          "provider": {"@type": "Organization", "name": "Bylder.com", "url": BASE + "/"},
          "description": "Onafhankelijke controle van stukadoor-offertes op marktconformiteit en een neutraal overzicht van stukadoors."},
     ]
-    if bedrijven:
-        schema.append({"@context": "https://schema.org", "@type": "ItemList", "name": "Stukadoors in Nederland",
+    if top_landelijk:
+        schema.append({"@context": "https://schema.org", "@type": "ItemList", "name": "Hoogst beoordeelde stukadoors in Nederland",
                        "itemListElement": [
                            {"@type": "ListItem", "position": i + 1,
                             "item": {k: v for k, v in {
                                 "@type": "LocalBusiness", "name": b["naam"], "url": b.get("website"),
                                 "address": {"@type": "PostalAddress", "addressLocality": b.get("stad"), "addressCountry": "NL"} if b.get("stad") else None,
                             }.items() if v}}
-                           for i, b in enumerate(bedrijven)]})
+                           for i, b in enumerate(top_landelijk)]})
 
     # Marktprijs-tabel
     rows = "".join(
@@ -269,9 +363,10 @@ def build_pillar():
         f'<div class="card"><div style="font-weight:700;font-size:15px;color:#1A1208;margin-bottom:6px;">{html.escape(t)}</div>'
         f'<div style="font-size:13.5px;color:rgba(61,46,30,0.68);line-height:1.65;">{html.escape(d)}</div></div>'
         for t, d in TRENDS)
-    steden = "".join(
-        f'<a href="{OFFERTE_HUB}/stukadoor/{s}/" class="tile">Stukadoor offerte {stadnaam(s)} &#8594;</a>'
-        for s in STEDEN)
+    stad_tiles = "".join(
+        f'<a href="{SLUG}/{_slug(s)}/" class="tile">Stukadoors in {html.escape(s)} <span style="color:rgba(61,46,30,0.4);font-weight:400;">({len(l)})</span></a>'
+        for s, l in steden_idx)
+    highlight_grid = bedrijven_grid(top_landelijk) if top_landelijk else ""
 
     body = f"""<main style="padding:56px 0 20px;"><div class="container">
 
@@ -356,14 +451,16 @@ def build_pillar():
   <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Wat er speelt in de afbouwsector &mdash; en wat het betekent voor jouw prijs en planning.</p>
   <div class="grid-2">{trends}</div>
 
-  <!-- STEDEN -->
-  <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 6px;">Stukadoor offerte checken per stad</h2>
-  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;">Direct naar de marktprijs en offerte-check voor jouw plaats:</p>
-  <div class="grid-3">{steden}</div>
-  <p style="font-size:14px;color:rgba(61,46,30,0.6);margin-top:16px;">Staat jouw plaats er niet bij? Bekijk alle plaatsen via de <a href="{OFFERTE_HUB}/">offerte-check</a>.</p>
+  <!-- HOOGST BEOORDEELD (landelijk) -->
+  <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 6px;">Hoogst beoordeelde stukadoors van Nederland</h2>
+  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Een onafhankelijk, groeiend overzicht van {len(bedrijven)} stukadoorsbedrijven &mdash; hier de best beoordeelde. Bekijk je eigen plaats hieronder.</p>
+  {highlight_grid}
+  {claim_cta()}
 
-  <!-- BEDRIJVENGIDS -->
-  {directory_html(bedrijven)}
+  <!-- PER STAD -->
+  <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 6px;">Stukadoors per stad</h2>
+  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;">Bekijk de stukadoors, reviews en marktprijzen voor jouw plaats:</p>
+  <div class="grid-3">{stad_tiles}</div>
 
   <div class="divider"></div>
 
@@ -377,8 +474,8 @@ def build_pillar():
     return head(title, desc, canonical, schema) + body + FOOTER
 
 
-def build_sitemap():
-    urls = [f"{BASE}{SLUG}/"]
+def build_sitemap(steden_idx):
+    urls = [f"{BASE}{SLUG}/"] + [f"{BASE}{SLUG}/{_slug(s)}/" for s, _ in steden_idx]
     items = "".join(f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>\n" for u in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}</urlset>\n'
 
@@ -387,11 +484,16 @@ def write(path, content):
     full = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w", encoding="utf-8").write(content)
-    print("  ✓", path)
 
 
 if __name__ == "__main__":
-    print("Stukadoor-autoriteitspillar genereren…")
+    print("Stukadoor-pillar + stad-pagina's genereren…")
+    bedrijven = load_vakbedrijven("stukadoor")
+    groepen = per_stad(bedrijven)
+    steden_idx = sorted([(s, l) for s, l in groepen.items() if len(l) >= MIN_PER_STAD],
+                        key=lambda x: (-len(x[1]), x[0]))
     write("stukadoor/index.html", build_pillar())
-    write("stukadoor-sitemap.xml", build_sitemap())
-    print("Klaar: /stukadoor/ + sitemap.")
+    for stad, lokaal in steden_idx:
+        write(f"stukadoor/{_slug(stad)}/index.html", build_city_page(stad, lokaal))
+    write("stukadoor-sitemap.xml", build_sitemap(steden_idx))
+    print(f"Klaar: pillar + {len(steden_idx)} stad-pagina's (≥{MIN_PER_STAD} bedrijven) + sitemap. Bron: {len(bedrijven)} bedrijven.")

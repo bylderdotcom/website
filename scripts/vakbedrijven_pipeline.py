@@ -39,6 +39,16 @@ def plaatsnaam(slug):
     return " ".join(w.capitalize() for w in slug.split("-")).replace("'S-", "'s-")
 
 
+def stad_uit_adres(adres, fallback):
+    """Echte plaats uit een NL Places-adres: '... , 1234 AB Plaatsnaam, Netherlands'."""
+    if not adres: return fallback
+    parts = [x.strip() for x in adres.split(",") if x.strip()]
+    if parts and parts[-1].lower() in ("netherlands", "nederland"): parts = parts[:-1]
+    if not parts: return fallback
+    m = re.match(r"^\d{4}\s?[A-Za-z]{2}\s+(.+)$", parts[-1])
+    return ((m.group(1) if m else parts[-1]).strip() or fallback)
+
+
 def zoekterm_voor(vak):
     """Natuurlijke zoekterm uit de taxonomie (kvk_zoekterm), bv. 'schildersbedrijf'."""
     try:
@@ -98,8 +108,15 @@ def upsert(records):
 
 
 def fetch_all():
-    url = env("NEXT_PUBLIC_SUPABASE_URL").rstrip("/") + "/rest/v1/vakbedrijven?select=*&opt_out=eq.false&order=vak,stad"
-    return curl_json("GET", url, supa_headers(content=False)) or []
+    base = env("NEXT_PUBLIC_SUPABASE_URL").rstrip("/") + "/rest/v1/vakbedrijven?select=*&opt_out=eq.false&order=vak,stad"
+    rows, page, size = [], 0, 1000
+    while True:                                  # PostgREST capt op 1000/req → pagineren
+        chunk = curl_json("GET", f"{base}&limit={size}&offset={page * size}", supa_headers(content=False))
+        if not isinstance(chunk, list) or not chunk: break
+        rows += chunk
+        if len(chunk) < size: break
+        page += 1
+    return rows
 
 
 # ---------- OSM ----------
@@ -166,7 +183,8 @@ def discover_places(vak):
                 if not pid or not naam or pid in by_place: continue
                 by_place[pid] = {
                     "slug": f"{vak}-{slugify(naam)}-{pid[-6:].lower()}",
-                    "naam": naam, "vak": vak, "stad": stad,
+                    "naam": naam, "vak": vak,
+                    "stad": stad_uit_adres(p.get("formattedAddress"), stad),
                     "website": p.get("websiteUri"), "telefoon": p.get("nationalPhoneNumber"),
                     "google_place_id": pid,
                     "google_rating": p.get("rating"), "google_reviews": p.get("userRatingCount"),
