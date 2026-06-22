@@ -12,6 +12,8 @@ import os, html, json, re, unicodedata
 BASE = "https://www.bylder.com"
 SLUG = "/stukadoor"
 SIGNUP = "https://app.bylder.com/registreer"
+VOORDELEN = "/voor-vakbedrijven"   # overtuigings-/activatiepagina voor vakbedrijven (€79)
+INTAKE = "mailto:partners@bylder.com?subject=Mijn%20bedrijf%20aanmelden%20op%20Bylder&body=Bedrijfsnaam%3A%0APlaats%3A%0AGoogle-%2FWerkspot-%2Fwebsite-link%3A%0A"
 OFFERTE_HUB = "/offerte-check"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -215,7 +217,7 @@ def bedrijf_card(b):
             f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;">{naam}</div>'
             f'<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:2px;">{stad}</div></div>{score}</div>'
             f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">{link}'
-            f'<a href="{SIGNUP}" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
+            f'<a href="{VOORDELEN}/" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
             f'</div>')
 
 
@@ -228,7 +230,7 @@ def claim_cta(stad_label=None):
     return (f'<div style="background:rgba(184,92,56,0.06);border:1px solid rgba(184,92,56,0.2);border-radius:14px;padding:18px 20px;margin:22px 0;">'
             f'<div style="font-weight:700;color:#1A1208;font-size:15px;margin-bottom:4px;">Ben jij stukadoor{waar}? Sta erbij.</div>'
             f'<div style="font-size:13.5px;color:rgba(61,46,30,0.7);line-height:1.6;margin-bottom:12px;">Vermelding is gratis. Activeer je profiel eenmalig voor &euro;79 en word gekoppeld aan nieuwbouw- en verbouwkopers die n&uacute; een stukadoor zoeken &mdash; geen terugkerende leadkosten.</div>'
-            f'<a href="{SIGNUP}" style="display:inline-block;background:#B85C38;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Vermeld of activeer je bedrijf &#8594;</a></div>'
+            f'<a href="{VOORDELEN}/" style="display:inline-block;background:#B85C38;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Bekijk de voordelen &amp; meld je aan &#8594;</a></div>'
             f'<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:8px;">Bedrijfsgegevens via Google &amp; OpenStreetMap (&copy; OpenStreetMap-bijdragers, ODbL). Reviewscores afkomstig van de genoemde bronnen. Klopt iets niet? Laat het ons weten.</p>')
 
 
@@ -409,7 +411,7 @@ def build_pillar():
         <li><strong>Geen vaste leadkosten.</strong> Geen veiling om dezelfde lead; je betaalt niet per klik.</li>
         <li><strong>Je reviews gebundeld.</strong> Je scores van alle platforms samen &mdash; eerlijk en transparant.</li>
       </ul>
-      <a href="{SIGNUP}" style="display:inline-block;margin-top:16px;background:#B85C38;color:#F5F0E8;padding:11px 22px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Profiel aanmelden &#8594;</a>
+      <a href="{VOORDELEN}/" style="display:inline-block;margin-top:16px;background:#B85C38;color:#F5F0E8;padding:11px 22px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Voordelen voor stukadoors &#8594;</a>
     </div>
   </div>
 
@@ -474,8 +476,122 @@ def build_pillar():
     return head(title, desc, canonical, schema) + body + FOOTER
 
 
+def build_voor_vakbedrijven(aantal_bedrijven, aantal_steden):
+    """Overtuigings- + activatiepagina voor vakbedrijven (€79). CTA = aanmeld-intake."""
+    canonical = f"{BASE}{VOORDELEN}/"
+    title = "Voor vakbedrijven: sta waar kopers je zoeken — eenmalig €79 | Bylder"
+    desc = ("Stukadoors, schilders, installateurs en andere vakbedrijven: activeer je Bylder-profiel voor eenmalig €79. "
+            "Geen abonnement, geen leadveiling. Gekoppeld aan nieuwbouw- en verbouwkopers op het juiste moment.")
+    qa = [
+        ("Wat kost een profiel op Bylder?",
+         "Vermelding is gratis &mdash; veel bedrijven staan er al in. Je profiel <strong>activeren</strong> kost eenmalig &euro;79. "
+         "Geen abonnement en geen terugkerende leadkosten."),
+        ("Wat is het verschil met Werkspot of een leadplatform?",
+         "Bij leadplatforms betaal je per lead of per maand en bied je mee op dezelfde aanvraag. Bij Bylder betaal je &eacute;&eacute;n keer &euro;79 "
+         "voor een geactiveerd profiel &mdash; en wij tonen je neutraal, met je beoordelingen uit meerdere bronnen naast elkaar."),
+        ("Hoe meld ik mijn bedrijf aan?",
+         "Je deelt je Google-, Werkspot- of websitelink en wij stellen je profiel samen &mdash; geen formulieren invullen. "
+         "Daarna activeer je het en ben je vindbaar voor kopers in jouw plaats."),
+        ("Voor welke vakbedrijven is dit?",
+         "We starten met stukadoors en breiden uit naar schilders, tegelzetters, installateurs, dakdekkers en alle andere bouw- en afbouwvakken."),
+        ("Krijg ik leads?",
+         "Je wordt gekoppeld aan nieuwbouw- en verbouwkopers in jouw regio op het moment dat zij jouw vak plannen &mdash; via hun project in de Bylder-app. "
+         "Geen koude leads, geen veiling."),
+    ]
+    schema = [
+        faq_schema(qa),
+        breadcrumb([("Bylder.com", BASE + "/"), ("Voor vakbedrijven", canonical)]),
+        {"@context": "https://schema.org", "@type": "Service", "serviceType": "Vakbedrijf-profiel en leadkoppeling",
+         "areaServed": {"@type": "Country", "name": "Nederland"},
+         "provider": {"@type": "Organization", "name": "Bylder.com", "url": BASE + "/"},
+         "offers": {"@type": "Offer", "price": "79", "priceCurrency": "EUR",
+                    "description": "Eenmalige activering van een vakbedrijf-profiel, geen abonnement."}},
+    ]
+    voordelen = [
+        ("Geverifieerd profiel + badge", "Een geclaimd, geverifieerd profiel valt op en wekt vertrouwen bij kopers."),
+        ("Hoger in je plaats", "Geactiveerde bedrijven staan bovenaan op de stad-pagina van jouw plaats."),
+        ("Beheer je eigen profiel", "Pas je gegevens, diensten en foto's zelf aan &mdash; altijd actueel."),
+        ("Reviews gebundeld", "Je scores van Google, Werkspot en Trustpilot naast elkaar &mdash; eerlijk en compleet."),
+        ("Gekoppeld aan kopers-projecten", "Word getoond aan kopers in jouw regio op het moment dat zij jouw vak plannen."),
+        ("Geen terugkerende leadkosten", "Eenmalig &euro;79. Geen abonnement, geen veiling, geen kosten per lead."),
+    ]
+    vgrid = "".join(
+        f'<div class="card"><div style="width:28px;height:4px;border-radius:2px;background:#3D5A3E;margin-bottom:12px;"></div>'
+        f'<div style="font-weight:700;font-size:15px;color:#1A1208;margin-bottom:4px;">{t}</div>'
+        f'<div style="font-size:13.5px;color:rgba(61,46,30,0.66);line-height:1.6;">{d}</div></div>'
+        for t, d in voordelen)
+    stappen = [
+        ("1", "Deel je link", "Stuur je Google-, Werkspot- of websitelink &mdash; geen formulieren."),
+        ("2", "Wij vullen je profiel", "Bylder stelt je profiel samen met je gegevens en gebundelde reviews."),
+        ("3", "Activeer voor &euro;79", "Eenmalig betalen en je bent live, hoger vindbaar en gekoppeld aan kopers."),
+    ]
+    sgrid = "".join(
+        f'<div style="flex:1;min-width:220px;"><div style="width:38px;height:38px;border-radius:10px;background:#3D5A3E;color:#F5F0E8;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:\'Space Mono\',monospace;">{n}</div>'
+        f'<div style="font-weight:700;font-size:15px;color:#1A1208;margin:12px 0 4px;">{t}</div>'
+        f'<div style="font-size:13.5px;color:rgba(61,46,30,0.66);line-height:1.6;">{d}</div></div>'
+        for n, t, d in stappen)
+
+    body = f"""<main style="padding:56px 0 20px;"><div class="container" style="max-width:1000px;">
+  <div style="max-width:760px;">
+    <div class="badge">Voor vakbedrijven</div>
+    <h1 style="font-size:2.6rem;font-weight:800;line-height:1.12;margin-bottom:14px;">Sta waar kopers je zoeken &mdash; voor eenmalig &euro;79</h1>
+    <p style="font-size:1.15rem;color:rgba(61,46,30,0.7);line-height:1.7;margin-bottom:14px;">
+      Bylder helpt nieuwbouw- en verbouwkopers een eerlijke prijs te betalen &mdash; en koppelt ze aan vakbedrijven in hun plaats.
+      Je staat er waarschijnlijk al tussen: <strong>{format(aantal_bedrijven, ",d").replace(",", ".")} stukadoors over {aantal_steden} plaatsen</strong>.
+      Activeer je profiel en word geverifieerd, beter vindbaar en gekoppeld aan kopers.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;">
+      <a href="{INTAKE}" style="background:#B85C38;color:#F5F0E8;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;">Meld je bedrijf aan &#8594;</a>
+      <a href="#hoe" style="background:#fff;border:1px solid rgba(61,46,30,0.15);color:#1A1208;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;">Hoe werkt het?</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2 style="font-size:1.6rem;font-weight:800;margin-bottom:6px;">Wat je krijgt voor &euro;79</h2>
+  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;">Eenmalig. Geen abonnement, geen leadkosten.</p>
+  <div class="grid-3">{vgrid}</div>
+
+  <h2 id="hoe" style="font-size:1.6rem;font-weight:800;margin:48px 0 18px;">Zo werkt het</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:28px;">{sgrid}</div>
+
+  <!-- VERGELIJK -->
+  <div style="background:rgba(61,90,62,0.06);border:1px solid rgba(61,90,62,0.18);border-radius:16px;padding:26px;margin:44px 0;">
+    <h2 style="font-size:1.4rem;font-weight:800;margin-bottom:14px;">Bylder vs. een leadplatform</h2>
+    <div class="grid-2" style="gap:16px;">
+      <div><div style="font-weight:700;color:#3D5A3E;margin-bottom:6px;">Bylder</div>
+        <ul class="check-list">
+          <li>Eenmalig &euro;79 &mdash; geen abonnement</li>
+          <li>Geen kosten per lead, geen veiling</li>
+          <li>Neutraal getoond, reviews uit meerdere bronnen</li>
+          <li>Gekoppeld aan het project van de koper</li>
+        </ul></div>
+      <div><div style="font-weight:700;color:rgba(61,46,30,0.5);margin-bottom:6px;">Leadplatform</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;color:rgba(61,46,30,0.6);">
+          <li>&times; Maandlasten of kosten per lead</li>
+          <li>&times; Meebieden op dezelfde aanvraag</li>
+          <li>&times; Alleen hun eigen reviews</li>
+          <li>&times; Koude leads</li>
+        </ul></div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="background:#3D5A3E;border-radius:20px;padding:42px;text-align:center;margin:40px 0;">
+    <h2 style="font-size:1.7rem;font-weight:800;color:#F5F0E8;margin-bottom:10px;">Klaar om erbij te staan?</h2>
+    <p style="color:rgba(245,240,232,0.72);margin-bottom:24px;max-width:520px;margin-left:auto;margin-right:auto;font-size:15px;line-height:1.6;">Deel je Google-, Werkspot- of websitelink. Wij stellen je profiel samen en je activeert het voor eenmalig &euro;79.</p>
+    <a href="{INTAKE}" class="cta-primary">Meld je bedrijf aan &#8594;</a>
+  </div>
+
+  <div class="divider"></div>
+  {faq_html(qa)}
+  <div class="divider"></div>
+  <p style="font-size:14px;color:rgba(61,46,30,0.6);">Bekijk een voorbeeld: <a href="{SLUG}/">stukadoors &amp; marktprijzen</a>. Vragen? <a href="mailto:partners@bylder.com">partners@bylder.com</a></p>
+  </div></main>"""
+    return head(title, desc, canonical, schema) + body + FOOTER
+
+
 def build_sitemap(steden_idx):
-    urls = [f"{BASE}{SLUG}/"] + [f"{BASE}{SLUG}/{_slug(s)}/" for s, _ in steden_idx]
+    urls = [f"{BASE}{SLUG}/", f"{BASE}{VOORDELEN}/"] + [f"{BASE}{SLUG}/{_slug(s)}/" for s, _ in steden_idx]
     items = "".join(f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>\n" for u in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}</urlset>\n'
 
@@ -493,6 +609,7 @@ if __name__ == "__main__":
     steden_idx = sorted([(s, l) for s, l in groepen.items() if len(l) >= MIN_PER_STAD],
                         key=lambda x: (-len(x[1]), x[0]))
     write("stukadoor/index.html", build_pillar())
+    write("voor-vakbedrijven/index.html", build_voor_vakbedrijven(len(bedrijven), len(groepen)))
     for stad, lokaal in steden_idx:
         write(f"stukadoor/{_slug(stad)}/index.html", build_city_page(stad, lokaal))
     write("stukadoor-sitemap.xml", build_sitemap(steden_idx))
