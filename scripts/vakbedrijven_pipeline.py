@@ -25,6 +25,32 @@ PILOT_STEDEN = ["amsterdam","rotterdam","den haag","utrecht","eindhoven","gronin
                 "almere","breda","nijmegen","apeldoorn","haarlem","arnhem","amersfoort","zwolle"]
 
 
+def plaatsen_voor(vak):
+    """Landelijke plaatslijst = de bestaande offerte-check/[vak]/[stad]-slugs (±281).
+    Fallback: de 15 pilot-steden."""
+    d = os.path.join(ROOT, "offerte-check", vak)
+    if os.path.isdir(d):
+        slugs = [s for s in os.listdir(d) if os.path.isdir(os.path.join(d, s))]
+        return sorted(slugs)
+    return [s.replace(" ", "-") for s in PILOT_STEDEN]
+
+
+def plaatsnaam(slug):
+    return " ".join(w.capitalize() for w in slug.split("-")).replace("'S-", "'s-")
+
+
+def zoekterm_voor(vak):
+    """Natuurlijke zoekterm uit de taxonomie (kvk_zoekterm), bv. 'schildersbedrijf'."""
+    try:
+        tax = json.load(open(os.path.join(ROOT, "data", "vakgebieden.json"), encoding="utf-8"))
+        for v in tax.get("vakgebieden", []):
+            if v["slug"] == vak:
+                return v.get("kvk_zoekterm") or vak
+    except Exception:
+        pass
+    return vak
+
+
 def env(key):
     if not os.path.exists(ENV): return None
     for line in open(ENV):
@@ -116,32 +142,47 @@ def seed_osm(vak):
 
 # ---------- Google Places ----------
 def discover_places(vak):
+    import time
     key = env("GOOGLE_PLACES_API_KEY")
     if not key:
         print("GOOGLE_PLACES_API_KEY ontbreekt (zet 'm in ../app/.env.local). Discovery overgeslagen."); return
-    from urllib.parse import quote
-    total = []
-    for stad in PILOT_STEDEN:
-        # Places Text Search (New): POST places:searchText
-        body = {"textQuery": f"{vak} {stad}", "languageCode": "nl", "regionCode": "NL", "maxResultCount": 20}
-        h = {"Content-Type": "application/json", "X-Goog-Api-Key": key,
-             "X-Goog-FieldMask": "places.id,places.displayName,places.formattedAddress,places.rating,places.userRatingCount,places.websiteUri,places.nationalPhoneNumber,places.location"}
-        res = curl_json("POST", "https://places.googleapis.com/v1/places:searchText", h, body)
-        for p in (res or {}).get("places", []):
-            naam = (p.get("displayName") or {}).get("text")
-            if not naam: continue
-            total.append({
-                "slug": f"{vak}-{slugify(naam)}-{slugify(stad)}",
-                "naam": naam, "vak": vak, "stad": stad.title(),
-                "website": p.get("websiteUri"), "telefoon": p.get("nationalPhoneNumber"),
-                "google_place_id": p.get("id"),
-                "google_rating": p.get("rating"), "google_reviews": p.get("userRatingCount"),
-                "lat": (p.get("location") or {}).get("latitude"),
-                "lng": (p.get("location") or {}).get("longitude"),
-                "status": "unclaimed", "bron": "places",
-            })
-    print(f"Places '{vak}': {len(total)} resultaten over {len(PILOT_STEDEN)} steden")
-    upsert(total)
+    term = zoekterm_voor(vak)
+    plaatsen = plaatsen_voor(vak)
+    h = {"Content-Type": "application/json", "X-Goog-Api-Key": key,
+         "X-Goog-FieldMask": "places.id,places.displayName,places.formattedAddress,places.rating,places.userRatingCount,places.websiteUri,places.nationalPhoneNumber,places.location,nextPageToken"}
+    by_place = {}   # dedup landelijk op place_id
+    print(f"Places '{term}' over {len(plaatsen)} plaatsen…")
+    for i, slug in enumerate(plaatsen):
+        stad = plaatsnaam(slug)
+        token = None
+        for _page in range(3):                       # tot 60 resultaten per plaats
+            body = {"textQuery": f"{term} {stad}", "languageCode": "nl", "regionCode": "NL", "maxResultCount": 20}
+            if token: body["pageToken"] = token
+            res = curl_json("POST", "https://places.googleapis.com/v1/places:searchText", h, body) or {}
+            if res.get("error"):
+                print("  API-fout:", json.dumps(res["error"])[:200]); return
+            for p in res.get("places", []):
+                pid = p.get("id"); naam = (p.get("displayName") or {}).get("text")
+                if not pid or not naam or pid in by_place: continue
+                by_place[pid] = {
+                    "slug": f"{vak}-{slugify(naam)}-{pid[-6:].lower()}",
+                    "naam": naam, "vak": vak, "stad": stad,
+                    "website": p.get("websiteUri"), "telefoon": p.get("nationalPhoneNumber"),
+                    "google_place_id": pid,
+                    "google_rating": p.get("rating"), "google_reviews": p.get("userRatingCount"),
+                    "lat": (p.get("location") or {}).get("latitude"),
+                    "lng": (p.get("location") or {}).get("longitude"),
+                    "status": "unclaimed", "bron": "places",
+                }
+            token = res.get("nextPageToken")
+            if not token: break
+            time.sleep(2)                            # pageToken even laten activeren
+        if (i + 1) % 25 == 0:
+            print(f"  …{i+1}/{len(plaatsen)} plaatsen, {len(by_place)} unieke bedrijven")
+    recs = list(by_place.values())
+    print(f"Places '{vak}': {len(recs)} unieke bedrijven landelijk")
+    for j in range(0, len(recs), 500):               # upsert in batches
+        upsert(recs[j:j + 500])
 
 
 # ---------- Export ----------
