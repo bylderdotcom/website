@@ -45,7 +45,8 @@ def stad_uit_adres(adres, fallback):
     parts = [x.strip() for x in adres.split(",") if x.strip()]
     if parts and parts[-1].lower() in ("netherlands", "nederland"): parts = parts[:-1]
     if not parts: return fallback
-    m = re.match(r"^\d{4}\s?[A-Za-z]{2}\s+(.+)$", parts[-1])
+    # NL-postcode strippen: zowel '1234 AB Plaats' als het bare '1234 Plaats'.
+    m = re.match(r"^\d{4}\s*(?:[A-Za-z]{2}\s+)?(.+)$", parts[-1])
     return ((m.group(1) if m else parts[-1]).strip() or fallback)
 
 

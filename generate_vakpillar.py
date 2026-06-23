@@ -229,11 +229,35 @@ def breadcrumb(items): return {"@context": "https://schema.org", "@type": "Bread
 def faq_html(vak, qa): return f'<h2 style="font-size:1.5rem;font-weight:800;margin:8px 0 12px;">Veelgestelde vragen over {html.escape(vak["plur"])}</h2>' + "".join(f'<div class="faq-item"><h3>{html.escape(q)}</h3><p>{a}</p></div>' for q, a in qa)
 
 
+# Namen die geen lokale vakman zijn maar een platform/opleiding/uitzender → uit de pagina's.
+# Conservatief: alleen ondubbelzinnige niet-vakmannen (geen marketing-namen van echte bedrijven).
+UITGESLOTEN = ("banenplatform", "platform van nederland", "vacature", "uitzend", "detachering",
+               "werving", "werktalent", "vakopleiding", "academie", "opleidingscentrum", "vergelijk offertes")
+
+def is_uitgesloten(naam):
+    n = (naam or "").lower()
+    return any(k in n for k in UITGESLOTEN)
+
+def schoon_stad(s):
+    """Strip een meegelekte NL-postcode uit de plaatsnaam ('7328 Apeldoorn' → 'Apeldoorn',
+    '1234 AB Plaats' → 'Plaats'). Pure-postcode-rest ('6678 MB') = onbruikbaar → None."""
+    if not s: return s
+    s = s.strip()
+    m = re.match(r"^\d{4}\s+(?:[A-Za-z]{2}\s+)?(.+)$", s)
+    if m: s = m.group(1).strip()
+    if not s or re.fullmatch(r"[A-Za-z]{1,2}", s): return None
+    return s
+
+
 def load_vakbedrijven(vak_slug):
     path = os.path.join(ROOT, "data", "vakbedrijven.json")
     if not os.path.exists(path): return []
-    rows = [b for b in json.load(open(path, encoding="utf-8")).get("vakbedrijven", [])
-            if b.get("vak") == vak_slug and not b.get("opt_out") and b.get("naam")]
+    rows = []
+    for b in json.load(open(path, encoding="utf-8")).get("vakbedrijven", []):
+        if b.get("vak") != vak_slug or b.get("opt_out") or not b.get("naam"): continue
+        if is_uitgesloten(b["naam"]): continue
+        b["stad"] = schoon_stad(b.get("stad"))
+        rows.append(b)
     rows.sort(key=lambda b: ((b.get("stad") or "zzz"), b.get("naam") or ""))
     return rows
 

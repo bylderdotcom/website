@@ -8,6 +8,12 @@
       "port": 3000
     },
     {
+      "name": "doc-preview",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4666", "--directory", "/Users/danielpaaij/Downloads"],
+      "port": 4666
+    },
+    {
       "name": "og-templates",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4444"],
