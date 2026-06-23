@@ -20,6 +20,11 @@ MIN_PER_STAD = 3
 
 def euro(n): return "€" + format(n, ",d").replace(",", ".")
 
+# Het '{vak}sbedrijven'-woord; configureerbaar voor vakken waar dat niet natuurlijk loopt
+# (bv. badkamer → 'badkamerbedrijven' i.p.v. 'badkamerspecialistsbedrijven').
+def bedrijf_plur(vak): return vak.get("bedrijf_plur") or f'{vak["sing"]}sbedrijven'
+def bedrijf_sing(vak): return vak.get("bedrijf_sing") or f'{vak["sing"]}sbedrijf'
+
 # ───────────────────────── VAK-CONFIGS ─────────────────────────
 VAKKEN = {
     "stukadoor": {
@@ -209,6 +214,44 @@ VAKKEN = {
             ("Ik ben aannemer &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
         ],
     },
+    "badkamer": {
+        "sing": "badkamerspecialist", "plur": "badkamerspecialisten", "werk": "badkamerrenovatie", "branche": "badkamerbranche",
+        "bedrijf_plur": "badkamerbedrijven", "bedrijf_sing": "badkamerbedrijf",
+        "ep_link": "/eerlijke-prijzen/badkamer/", "eenheid": "project", "calc_mode": "klus",
+        "pillar_h1": "Een badkamerspecialist met een eerlijke prijs &mdash; en een eerlijk oordeel",
+        "pillar_intro": "Een badkamer renoveren is een van de grootste verbouwposten &mdash; en offertes lopen sterk uiteen door verschil in afmeting, sanitair- en tegelkeuze en leidingwerk. Bylder laat je zien wat een eerlijke prijs is, controleert je offerte per post, en toont badkamerspecialisten <strong>neutraal</strong> &mdash; met beoordelingen uit meerdere bronnen naast elkaar in plaats van &eacute;&eacute;n gekleurd platform.",
+        "hero_cta": "Check je badkamer-offerte gratis",
+        "prijs_band": "Marktprijs badkamerrenovatie (2026): basis &euro;5.000&ndash;&euro;10.000, gemiddeld &euro;8.000&ndash;&euro;20.000, luxe maatwerk &euro;20.000&ndash;&euro;40.000.",
+        "stad_kost": "Een badkamerrenovatie kost indicatief (2026) &euro;5.000&ndash;&euro;10.000 voor een basisbadkamer, &euro;8.000&ndash;&euro;20.000 gemiddeld en &euro;20.000&ndash;&euro;40.000 voor luxe maatwerk &mdash; afhankelijk van afmeting, sanitair en tegelwerk.",
+        "werksoorten": [
+            {"naam": "Complete badkamer renoveren (gemiddeld)", "low": 8000, "high": 20000, "uitleg": "Een complete renovatie inclusief tegelwerk, sanitair en installatie; afmeting en luxe bepalen de prijs."},
+            {"naam": "Basis-/budgetbadkamer", "low": 5000, "high": 10000, "uitleg": "Een kleinere of basale badkamer met eenvoudige afwerking en standaard sanitair."},
+            {"naam": "Luxe badkamer (maatwerk)", "low": 20000, "high": 40000, "uitleg": "Hoogwaardig maatwerk met design-sanitair, grootformaat- of natuursteentegels en inbouw."},
+            {"naam": "Inloopdouche plaatsen", "low": 1500, "high": 4000, "uitleg": "Inclusief tegelwerk, afvoer en glaswand; losse ingreep binnen een bestaande badkamer."},
+            {"naam": "Apart toilet (wc) renoveren", "low": 1500, "high": 4000, "uitleg": "Een aparte wc-ruimte vernieuwen, inclusief tegelwerk en sanitair."},
+        ],
+        "factoren": [
+            "Afmeting van de badkamer — meer m&sup2; betekent meer tegelwerk, sanitair en arbeid.",
+            "Sanitair- en tegelkeuze — designmerken en grootformaat- of natuursteentegels zijn fors duurder.",
+            "Leidingwerk verleggen — afvoer en watertoevoer verplaatsen vraagt hak- en installatiewerk.",
+            "Vloerverwarming & ventilatie — elektrische vloerverwarming en een WTW-aansluiting tellen mee.",
+            "Maatwerk & inbouw — inbouwkranen, nissen en op maat gemaakte meubels verhogen de prijs.",
+        ],
+        "trends": [
+            ("Personeelstekort & wachttijden", "Een badkamer vraagt meerdere disciplines (tegelzetter, loodgieter, elektricien); goede badkamerbedrijven zijn vaak weken tot maanden vooruit volgeboekt."),
+            ("Inloopdouche & wellness", "Inloopdouches, regendouches en wellness-elementen zijn de norm geworden &mdash; comfortabel, maar prijsverhogend."),
+            ("Grootformaat tegels & natuurlijke materialen", "Grote tegels en natuurlijke looks (beton, natuursteen) winnen terrein; ze vragen meer vakmanschap bij het leggen."),
+            ("Levensloopbestendig wonen", "Drempelloze douches, beugels en comforthoogtes nemen toe door de vergrijzing en langer thuis wonen."),
+            ("Stijgende materiaalkosten", "Tegels en sanitair zijn duurder geworden, waardoor offertes voor een vergelijkbare badkamer sterker uiteenlopen &mdash; vergelijken loont."),
+        ],
+        "faq": [
+            ("Wat kost een complete badkamer in 2026?", "Indicatief &euro;8.000&ndash;&euro;20.000 voor een gemiddelde badkamer; een basisbadkamer vanaf &euro;5.000 en luxe maatwerk &euro;20.000&ndash;&euro;40.000. Check je offerte gratis tegen de markt op Bylder."),
+            ("Wat bepaalt de prijs van een badkamerrenovatie?", "Vooral de afmeting, de sanitair- en tegelkeuze en of er leidingwerk verlegd moet worden. Vloerverwarming, ventilatie en maatwerk verhogen de prijs verder."),
+            ("Hoe weet ik of mijn badkamer-offerte eerlijk is?", "Vergelijk per post (tegelwerk, sanitair, installatie, arbeid) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
+            ("Is Bylder een badkamerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen badkamers en zijn geen leadverkoper &mdash; we tonen badkamerspecialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Ik ben badkamerspecialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+        ],
+    },
 }
 
 # ───────────────────────── CHROME (gedeeld) ─────────────────────────
@@ -332,7 +375,7 @@ def FOOTER(vak):
       <div style="width:30px;height:30px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:12px;">B.</div>
       <span style="font-weight:700;font-size:16px;color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
     </div>
-    <p style="font-size:12px;color:rgba(245,240,232,0.4);max-width:620px;line-height:1.6;">Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is een onafhankelijk platform en geen {html.escape(vak["sing"])}sbedrijf.</p>
+    <p style="font-size:12px;color:rgba(245,240,232,0.4);max-width:620px;line-height:1.6;">Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is een onafhankelijk platform en geen {html.escape(bedrijf_sing(vak))}.</p>
     <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);margin-top:18px;">© 2025 Bylder Nederland B.V. — KvK 65020006</p>
   </div>
 </footer></body></html>"""
@@ -564,7 +607,7 @@ def build_city_page(vak, vak_slug, stad, lokaal):
   <div class="badge">{html.escape(vak['plur'].capitalize())} &middot; {html.escape(stad)}</div>
   <h1 style="font-size:2.3rem;font-weight:800;line-height:1.14;margin-bottom:12px;">{vak['plur'].capitalize()} in {html.escape(stad)}</h1>
   <p style="font-size:1.08rem;color:rgba(61,46,30,0.7);line-height:1.7;max-width:760px;margin-bottom:8px;">
-    {n} {html.escape(vak['sing'])}sbedrijven in en rond {html.escape(stad)}, met hun beoordelingen en websites naast elkaar. Bylder toont ze
+    {n} {html.escape(bedrijf_plur(vak))} in en rond {html.escape(stad)}, met hun beoordelingen en websites naast elkaar. Bylder toont ze
     <strong>neutraal</strong> &mdash; en laat je gratis checken of je offerte een eerlijke prijs heeft.</p>
   <div class="highlight">{vak['prijs_band']} Bekijk de volledige <a href="{base}/">marktprijzen en werksoorten</a>.</div>
 
@@ -692,7 +735,7 @@ def build_pillar(vak, vak_slug, bedrijven, steden_idx):
   {aanbesteding_block(vak)}
 
   <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 6px;">Hoogst beoordeelde {p} van Nederland</h2>
-  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Een onafhankelijk, groeiend overzicht van {len(bedrijven)} {html.escape(s)}sbedrijven &mdash; hier de best beoordeelde. Bekijk je eigen plaats hieronder.</p>
+  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Een onafhankelijk, groeiend overzicht van {len(bedrijven)} {html.escape(bedrijf_plur(vak))} &mdash; hier de best beoordeelde. Bekijk je eigen plaats hieronder.</p>
   {highlight_grid}
   {claim_cta(vak)}
 
