@@ -275,15 +275,18 @@ def bedrijf_card(b):
     chips_html = f'<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;">{chips}</div>' if chips else ""
     socials = _socials(b)
     socials_html = f'<div style="margin-top:8px;">{socials}</div>' if socials else ""
-    link = (f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-size:13px;font-weight:700;">Website &#8594;</a>'
-            if site else '<span style="font-size:12px;color:rgba(61,46,30,0.4);">Nog geen website bekend</span>')
+    purl = b.get("_profiel_url")
+    naam_html = f'<a href="{purl}" style="color:#1A1208;text-decoration:none;">{naam}</a>' if purl else naam
+    primary = (f'<a href="{purl}" style="font-size:13px;font-weight:700;">Bekijk profiel &#8594;</a>' if purl
+               else (f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-size:13px;font-weight:700;">Website &#8594;</a>'
+                     if site else '<span style="font-size:12px;color:rgba(61,46,30,0.4);">Nog geen website bekend</span>'))
     maps_link = f'<a href="{html.escape(maps)}" target="_blank" rel="nofollow noopener" style="font-size:12px;color:rgba(61,46,30,0.5);margin-left:10px;">Maps &#8594;</a>' if maps else ""
     return (f'<div class="card vb-card" data-rating="{rating or 0}" data-reviews="{reviews}" data-lid="{1 if lid else 0}" style="padding:16px 18px;">'
             f'<div style="display:flex;justify-content:space-between;gap:10px;align-items:start;">'
-            f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;display:flex;align-items:center;gap:7px;flex-wrap:wrap;">{naam}{badge}</div>'
+            f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;display:flex;align-items:center;gap:7px;flex-wrap:wrap;">{naam_html}{badge}</div>'
             f'<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:2px;">{stad}</div></div>{rechts}</div>'
             f'{summary_html}{chips_html}{socials_html}'
-            f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;"><span>{link}{maps_link}</span>'
+            f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:8px;flex-wrap:wrap;"><span>{primary}{maps_link}</span>'
             f'<a href="https://app.bylder.com/vakbedrijf/claim/{b["slug"]}" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
             f'</div>')
 
@@ -611,9 +614,138 @@ def build_voor_vakbedrijven(totaal, plaatsen):
     return head(title, desc, canonical, schema) + body + FOOTER(vak)
 
 
-def build_sitemap(vak_slug, steden_idx, include_voorvak=False):
+def assign_profiel_slugs(vak_slug, bedrijven):
+    """Geef elk bedrijf een nette, unieke profiel-URL onder /[vak]/bedrijf/[slug]/.
+    De DB-slug bevat al een vak-prefix (en bij Places een pid-suffix) → die strippen
+    we voor een schone URL; bij (zeldzame) botsing een teller eraan."""
+    used = set()
+    for b in bedrijven:
+        raw = b.get("slug") or _slug(b.get("naam") or "")
+        ps = re.sub(rf"^{re.escape(vak_slug)}-", "", raw) or _slug(b.get("naam") or "bedrijf")
+        if ps in used:
+            i = 2
+            while f"{ps}-{i}" in used: i += 1
+            ps = f"{ps}-{i}"
+        used.add(ps)
+        b["_profiel_slug"] = ps
+        b["_profiel_url"] = f"/{vak_slug}/bedrijf/{ps}/"
+
+
+def profiel_indexeerbaar(b):
+    """Index alleen profielen met écht signaal — voorkomt dunne pagina's in de index."""
+    return bool((b.get("google_rating") and (b.get("google_reviews") or 0) >= 5) or b.get("status") == "lid")
+
+
+def build_profile(vak, vak_slug, b, buren):
+    s, p = vak["sing"], vak["plur"]
+    naam = html.escape(b["naam"]); stad = b.get("stad") or "Nederland"; stad_e = html.escape(stad)
+    base = f"/{vak_slug}"; canonical = f"{BASE}{base}/bedrijf/{b['_profiel_slug']}/"
+    rating = b.get("google_rating"); reviews = b.get("google_reviews") or 0
+    site = b.get("website"); tel = b.get("telefoon"); maps = b.get("maps_uri")
+    prijs = b.get("price_level"); summary = (b.get("google_summary") or "").strip(); lid = b.get("status") == "lid"
+    has_stad = bool(b.get("stad"))
+
+    title = f"{b['naam']} — {s} in {stad} | reviews, prijzen & offerte-check | Bylder"
+    desc = (f"{b['naam']}, {s} in {stad}. "
+            + (f"Beoordeling {str(rating).replace('.', ',')}★ ({reviews} reviews). " if rating else "")
+            + f"Bekijk gegevens en gebundelde reviews, en check gratis of je {vak['werk']}-offerte een eerlijke prijs heeft.")
+
+    # LocalBusiness ZONDER aggregateRating: Google's structured-data-beleid staat geen
+    # geaggregeerde reviewscores van een ánder platform toe als eigen rich-result.
+    lb = {"@context": "https://schema.org", "@type": "LocalBusiness", "name": b["naam"],
+          "address": {"@type": "PostalAddress", "addressLocality": stad, "addressCountry": "NL"}, "areaServed": stad}
+    if site: lb["url"] = site
+    if tel: lb["telephone"] = tel
+    band = vak["prijs_band"].split(":", 1)[-1].strip() if ":" in vak["prijs_band"] else vak["prijs_band"]
+    qa = [
+        (f"Wat kost {b['naam']}?",
+         f"Een exacte prijs hangt af van je klus en afwerking. Indicatief voor {vak['werk']} (NL 2026): {band} "
+         f"Vraag {b['naam']} om een gespecificeerde offerte per werksoort en check gratis op Bylder of die marktconform is."),
+        (f"Hoe vraag ik een offerte aan bij {b['naam']}?",
+         (f"Neem rechtstreeks contact op via de website of telefoon. " if (site or tel) else "")
+         + f"Of vraag via Bylder in &eacute;&eacute;n keer voorstellen van meerdere {p}{' in ' + stad_e if has_stad else ''} &mdash; je vergelijkt de prijzen direct naast de marktbandbreedte."),
+        (f"Is {b['naam']} een goede {s}?",
+         f"Bekijk de beoordelingen van {b['naam']} uit meerdere bronnen naast elkaar in plaats van &eacute;&eacute;n platform. "
+         f"Bylder toont {p} neutraal en linkt door naar de volledige reviews bij de bron, zodat je zelf een eerlijk beeld vormt."),
+    ]
+    crumb = [("Bylder.com", BASE + "/"), (s.capitalize(), f"{BASE}{base}/")]
+    if has_stad: crumb.append((stad, f"{BASE}{base}/{_slug(stad)}/"))
+    crumb.append((b["naam"], canonical))
+    schema = [lb, faq_schema(qa), breadcrumb(crumb)]
+
+    # ── header ──
+    badge = '<span style="font-size:11px;font-weight:800;color:#3D5A3E;background:rgba(61,90,62,0.12);padding:3px 10px;border-radius:999px;">&#10003; Geverifieerd</span>' if lid else ""
+    rating_row = ""
+    if rating:
+        bron = f'<a href="{html.escape(maps)}" target="_blank" rel="nofollow noopener" style="color:#3D5A3E;font-weight:600;">bekijk op Google &#8594;</a>' if maps else "op Google"
+        rating_row = (f'<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px;">'
+                      f'<span style="font-size:15px;font-weight:800;color:#1A1208;">&#9733; {str(rating).replace(".", ",")}</span>'
+                      f'<span style="font-size:13px;color:rgba(61,46,30,0.6);">{reviews} beoordelingen {bron}</span></div>')
+    prijs_chip = f'<span style="font-size:12px;font-weight:700;color:rgba(61,46,30,0.6);background:#F5F0E8;padding:3px 10px;border-radius:6px;">Prijsniveau {prijs}</span>' if prijs else ""
+    summary_html = (f'<p style="font-size:14px;color:rgba(61,46,30,0.7);line-height:1.65;margin-top:12px;max-width:640px;">'
+                    f'{html.escape(summary[:180])} <span style="font-size:11px;color:rgba(61,46,30,0.4);">&mdash; bron: Google</span></p>') if summary else ""
+    contact = []
+    if site: contact.append(f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-weight:700;">Website &#8594;</a>')
+    if tel: contact.append(f'<a href="tel:{html.escape(re.sub(chr(92)+"s+", "", tel))}" style="font-weight:700;">{html.escape(tel)}</a>')
+    if maps: contact.append(f'<a href="{html.escape(maps)}" target="_blank" rel="nofollow noopener" style="color:rgba(61,46,30,0.6);">Route &#8594;</a>')
+    contact_html = f'<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:14px;">{"".join(contact)}</div>' if contact else ""
+
+    # ── buren (interne links) ──
+    buren_html = ""
+    if buren:
+        tiles = "".join(
+            f'<a href="{x["_profiel_url"]}" class="tile">{html.escape(x["naam"])}'
+            + (f' <span style="color:rgba(61,46,30,0.4);font-weight:400;">&#9733; {str(x.get("google_rating")).replace(".", ",")}</span>' if x.get("google_rating") else "")
+            + "</a>" for x in buren)
+        buren_html = (f'<h2 style="font-size:1.4rem;font-weight:800;margin:40px 0 6px;">Andere {p} in {stad_e}</h2>'
+                      f'<p style="font-size:14px;color:rgba(61,46,30,0.6);margin-bottom:14px;">Vergelijk gerust meerdere {p} &mdash; pr&iuml;s en aanpak verschillen sterk. '
+                      f'<a href="{base}/{_slug(stad)}/">Bekijk alle {p} in {stad_e} &#8594;</a></p>'
+                      f'<div class="grid-3">{tiles}</div>')
+
+    breadcrumb_html = " &rarr; ".join(
+        [f'<a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a>',
+         f'<a href="{base}/" style="color:rgba(61,46,30,0.4);text-decoration:none;">{s.capitalize()}</a>']
+        + ([f'<a href="{base}/{_slug(stad)}/" style="color:rgba(61,46,30,0.4);text-decoration:none;">{stad_e}</a>'] if has_stad else [])
+        + [f'<span style="color:rgba(61,46,30,0.6);">{naam}</span>'])
+
+    body = f"""<main style="padding:40px 0 20px;"><div class="container" style="max-width:920px;">
+  <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:18px;">{breadcrumb_html}</p>
+  <div class="card" style="padding:26px 28px;">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <h1 style="font-size:2rem;font-weight:800;line-height:1.15;">{naam}</h1>{badge}
+    </div>
+    <div style="font-size:15px;color:rgba(61,46,30,0.6);margin-top:6px;">{s.capitalize()} in {stad_e}</div>
+    {rating_row}
+    <div style="margin-top:10px;">{prijs_chip}</div>
+    {summary_html}
+    {contact_html}
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">Bylder toont {p} <strong>neutraal</strong> en verkoopt zelf geen {vak['werk']}. We bundelen beoordelingsscores uit meerdere bronnen en linken door naar de volledige reviews bij de bron &mdash; zodat je een eerlijk beeld krijgt.</div>
+
+  {claim_cta(vak, stad if has_stad else None)}
+
+  <h2 style="font-size:1.5rem;font-weight:800;margin:36px 0 6px;">Wat kost een {s} zoals {naam}?</h2>
+  <p style="font-size:15px;color:rgba(61,46,30,0.62);margin-bottom:4px;max-width:680px;">{vak['prijs_band']} Reken zelf een indicatie uit &mdash; en check daarna gratis of je échte offerte marktconform is.</p>
+  {klus_calculator(vak)}
+
+  {aanbesteding_block(vak, stad if has_stad else None)}
+
+  {buren_html}
+
+  <div class="divider"></div>
+  {faq_html(vak, qa)}
+  <div class="divider"></div>
+  <p style="font-size:14px;color:rgba(61,46,30,0.6);">Terug naar <a href="{base}/">{p} &amp; marktprijzen</a>{f' &middot; <a href="{base}/{_slug(stad)}/">{p} in {stad_e}</a>' if has_stad else ''} &middot; <a href="{vak['ep_link']}">wat kost {vak['werk']}</a></p>
+  </div></main>"""
+    robots = "index,follow" if profiel_indexeerbaar(b) else "noindex,follow"
+    return head(title, desc, canonical, schema, robots=robots) + body + FOOTER(vak)
+
+
+def build_sitemap(vak_slug, steden_idx, include_voorvak=False, profiel_urls=None):
     urls = [f"{BASE}/{vak_slug}/"] + ([f"{BASE}{VOORDELEN}/"] if include_voorvak else []) + [f"{BASE}/{vak_slug}/{_slug(s)}/" for s, _ in steden_idx]
     items = "".join(f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>\n" for u in urls)
+    items += "".join(f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>\n" for u in (profiel_urls or []))
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}</urlset>\n'
 
 
@@ -626,13 +758,21 @@ def write(path, content):
 def genereer_vak(vak_slug, primary=False):
     vak = VAKKEN[vak_slug]
     bedrijven = load_vakbedrijven(vak_slug)
+    assign_profiel_slugs(vak_slug, bedrijven)          # vóór de build → kaarten linken naar profiel
     groepen = per_stad(bedrijven)
     steden_idx = sorted([(s, l) for s, l in groepen.items() if len(l) >= MIN_PER_STAD], key=lambda x: (-len(x[1]), x[0]))
     write(f"{vak_slug}/index.html", build_pillar(vak, vak_slug, bedrijven, steden_idx))
     for stad, lokaal in steden_idx:
         write(f"{vak_slug}/{_slug(stad)}/index.html", build_city_page(vak, vak_slug, stad, lokaal))
-    write(f"{vak_slug}-sitemap.xml", build_sitemap(vak_slug, steden_idx, include_voorvak=primary))
-    print(f"  ✓ {vak_slug}: pillar + {len(steden_idx)} stad-pagina's ({len(bedrijven)} bedrijven)")
+    # bedrijfsprofielen (alle bedrijven krijgen een pagina; alleen sterke profielen → index + sitemap)
+    profiel_urls, n_idx = [], 0
+    for b in bedrijven:
+        buren = [x for x in groepen.get(b.get("stad") or "", []) if x is not b][:6]
+        write(f"{vak_slug}/bedrijf/{b['_profiel_slug']}/index.html", build_profile(vak, vak_slug, b, buren))
+        if profiel_indexeerbaar(b):
+            profiel_urls.append(f"{BASE}{b['_profiel_url']}"); n_idx += 1
+    write(f"{vak_slug}-sitemap.xml", build_sitemap(vak_slug, steden_idx, include_voorvak=primary, profiel_urls=profiel_urls))
+    print(f"  ✓ {vak_slug}: pillar + {len(steden_idx)} stad-pagina's + {len(bedrijven)} profielen ({n_idx} indexeerbaar)")
     return len(bedrijven), len(groepen)
 
 
