@@ -237,22 +237,98 @@ def per_stad(bedrijven):
     return {s: sorted(l, key=_prominentie) for s, l in groepen.items()}
 
 
+def _socials(b):
+    out = ""
+    for k, lbl in [("instagram", "Instagram"), ("facebook", "Facebook"), ("linkedin", "LinkedIn")]:
+        u = (b.get("socials") or {}).get(k)
+        if u: out += f'<a href="{html.escape(u)}" target="_blank" rel="nofollow noopener" style="font-size:11px;color:#3D5A3E;font-weight:600;margin-right:9px;">{lbl}</a>'
+    return out
+
 def bedrijf_card(b):
     naam = html.escape(b["naam"]); stad = html.escape(b.get("stad") or "Nederland")
-    site = b.get("website"); rating = b.get("google_rating")
+    site = b.get("website"); rating = b.get("google_rating"); reviews = b.get("google_reviews") or 0
+    lid = b.get("status") == "lid"
     score = (f'<span style="font-size:12px;color:#3D5A3E;font-weight:700;white-space:nowrap;">Google &#9733; {rating} '
-             f'<span style="color:rgba(61,46,30,0.45);font-weight:400;">({b.get("google_reviews") or 0})</span></span>') if rating else ""
+             f'<span style="color:rgba(61,46,30,0.45);font-weight:400;">({reviews})</span></span>') if rating else ""
+    badge = '<span style="font-size:10px;font-weight:800;color:#3D5A3E;background:rgba(61,90,62,0.12);padding:2px 8px;border-radius:999px;white-space:nowrap;">&#10003; Geverifieerd</span>' if lid else ""
+    diensten = b.get("diensten") or []
+    chips = "".join(f'<span style="font-size:11px;color:rgba(61,46,30,0.6);background:#F5F0E8;padding:2px 8px;border-radius:6px;">{html.escape(str(x))}</span>' for x in diensten[:3])
+    chips_html = f'<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;">{chips}</div>' if chips else ""
+    socials = _socials(b)
+    socials_html = f'<div style="margin-top:8px;">{socials}</div>' if socials else ""
     link = (f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-size:13px;font-weight:700;">Website &#8594;</a>'
             if site else '<span style="font-size:12px;color:rgba(61,46,30,0.4);">Nog geen website bekend</span>')
-    return (f'<div class="card" style="padding:16px 18px;">'
+    return (f'<div class="card vb-card" data-rating="{rating or 0}" data-reviews="{reviews}" data-lid="{1 if lid else 0}" style="padding:16px 18px;">'
             f'<div style="display:flex;justify-content:space-between;gap:10px;align-items:start;">'
-            f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;">{naam}</div>'
+            f'<div><div style="font-weight:700;font-size:15px;color:#1A1208;display:flex;align-items:center;gap:7px;flex-wrap:wrap;">{naam}{badge}</div>'
             f'<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:2px;">{stad}</div></div>{score}</div>'
+            f'{chips_html}{socials_html}'
             f'<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">{link}'
             f'<a href="https://app.bylder.com/vakbedrijf/claim/{b["slug"]}" style="font-size:11.5px;color:rgba(61,46,30,0.45);text-decoration:underline;">Is dit jouw bedrijf? Claim &#8594;</a></div>'
             f'</div>')
 
 def bedrijven_grid(lijst): return f'<div class="grid-3">{"".join(bedrijf_card(b) for b in lijst)}</div>'
+
+
+def klus_calculator(vak):
+    """Inline 'wat kost mijn klus?'-widget o.b.v. de werksoort-bandbreedtes."""
+    ws = vak["werksoorten"]
+    data = json.dumps([{"low": w["low"], "high": w["high"]} for w in ws])
+    opts = "".join(f'<option value="{i}">{html.escape(w["naam"])}</option>' for i, w in enumerate(ws))
+    h = ('<div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:16px;padding:22px;margin:24px 0;">'
+         '<div style="font-weight:800;font-size:1.05rem;color:#1A1208;margin-bottom:4px;">Wat kost jouw klus?</div>'
+         '<div style="font-size:13px;color:rgba(61,46,30,0.6);margin-bottom:14px;">Kies je werksoort en vul je oppervlak in voor een directe indicatie (NL 2026).</div>'
+         '<div style="display:grid;grid-template-columns:1.6fr 1fr;gap:10px;">'
+         '<select id="kc-werk" style="padding:11px;border:1.5px solid rgba(61,46,30,0.14);border-radius:10px;font-size:14px;background:#fff;color:#1A1208;font-family:inherit;">' + opts + '</select>'
+         '<input id="kc-m2" inputmode="decimal" placeholder="aantal m&sup2;" style="padding:11px;border:1.5px solid rgba(61,46,30,0.14);border-radius:10px;font-size:14px;color:#1A1208;font-family:inherit;" /></div>'
+         '<div id="kc-out" style="font-size:15px;color:#1A1208;margin-top:12px;min-height:22px;"></div>'
+         '<a href="' + SIGNUP + '" style="display:inline-block;margin-top:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 22px;border-radius:9px;font-weight:700;font-size:14px;text-decoration:none;">Check je échte offerte gratis &#8594;</a></div>')
+    js = ('<script>(function(){var W=' + data + ';var s=document.getElementById("kc-werk"),m=document.getElementById("kc-m2"),o=document.getElementById("kc-out");'
+          'function f(n){return n.toLocaleString("nl-NL");}function c(){var w=W[s.value],a=parseFloat((m.value||"").replace(",","."));'
+          'if(!w||!(a>0)){o.innerHTML="";return;}o.innerHTML="Indicatie voor jouw klus: <strong>\\u20ac"+f(Math.round(w.low*a))+" \\u2013 \\u20ac"+f(Math.round(w.high*a))'
+          '+"</strong> <span style=\\"color:rgba(61,46,30,0.5);font-size:13px;\\">("+w.low+"\\u2013"+w.high+" \\u20ac/m\\u00b2, indicatief)</span>";}'
+          's.addEventListener("change",c);m.addEventListener("input",c);})();</script>')
+    return h + js
+
+
+def aanbesteding_block(vak, stad=None):
+    waar = f" in {html.escape(stad)}" if stad else " bij jou in de buurt"
+    return ('<div style="background:#3D5A3E;border-radius:18px;padding:34px;text-align:center;margin:32px 0;">'
+            '<p style="font-size:11px;font-family:\'Space Mono\',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.55);margin-bottom:8px;">In &eacute;&eacute;n keer geregeld</p>'
+            f'<h2 style="font-size:1.5rem;font-weight:800;color:#F5F0E8;margin-bottom:10px;">Krijg voorstellen van {html.escape(vak["plur"])}{waar}</h2>'
+            f'<p style="color:rgba(245,240,232,0.78);margin-bottom:22px;max-width:560px;margin-left:auto;margin-right:auto;font-size:14.5px;line-height:1.6;">Beschrijf je klus &eacute;&eacute;n keer &mdash; lokale {html.escape(vak["plur"])} reageren met een prijs. Bylder zet de marktprijs ernaast, zodat je weet wat eerlijk is.</p>'
+            f'<a href="{SIGNUP}" class="cta-primary">Vraag gratis voorstellen aan &#8594;</a></div>')
+
+
+def keuzehulp_block(vak):
+    punten = [
+        f"Vergelijk minstens 3 {vak['plur']} &mdash; pr&iuml;s &eacute;n aanpak verschillen sterk.",
+        "Kijk naar beoordelingen uit meerdere bronnen, niet &eacute;&eacute;n platform.",
+        "Vraag een gespecificeerde offerte per werksoort (m&sup2;, voorwerk, aantal lagen).",
+        "Check of voorwerk en garantie in de prijs zitten.",
+        "Leg de afspraken en planning schriftelijk vast.",
+    ]
+    lis = "".join(f"<li>{x}</li>" for x in punten)
+    return (f'<h2 style="font-size:1.4rem;font-weight:800;margin:36px 0 12px;">Waar let je op bij het kiezen van een {html.escape(vak["sing"])}?</h2>'
+            f'<ul class="check-list">{lis}</ul>')
+
+
+def directory_sortable(vak, lijst):
+    if not lijst: return ""
+    ctrl = ('<div style="display:flex;align-items:center;gap:10px;margin:6px 0 14px;flex-wrap:wrap;">'
+            '<span style="font-size:13px;color:rgba(61,46,30,0.55);">Sorteer:</span>'
+            '<select id="dir-sort" style="padding:8px 11px;border:1.5px solid rgba(61,46,30,0.14);border-radius:9px;font-size:13px;background:#fff;color:#1A1208;font-family:inherit;">'
+            '<option value="prom">Relevantie (beste eerst)</option><option value="rating">Best beoordeeld</option><option value="reviews">Meeste reviews</option><option value="lid">Geverifieerd eerst</option>'
+            '</select></div>')
+    grid = f'<div class="grid-3" id="dir-grid">{"".join(bedrijf_card(b) for b in lijst)}</div>'
+    js = ('<script>(function(){var sel=document.getElementById("dir-sort"),g=document.getElementById("dir-grid");if(!sel||!g)return;'
+          'var cards=[].slice.call(g.children);function k(c,a){return parseFloat(c.getAttribute(a))||0;}'
+          'sel.addEventListener("change",function(){var m=sel.value,s=cards.slice();'
+          'if(m==="reviews")s.sort(function(a,b){return k(b,"data-reviews")-k(a,"data-reviews");});'
+          'else if(m==="rating")s.sort(function(a,b){return k(b,"data-rating")-k(a,"data-rating")||k(b,"data-reviews")-k(a,"data-reviews");});'
+          'else if(m==="lid")s.sort(function(a,b){return k(b,"data-lid")-k(a,"data-lid")||k(b,"data-reviews")-k(a,"data-reviews");});'
+          's.forEach(function(c){g.appendChild(c);});});})();</script>')
+    return ctrl + grid + js
 
 def claim_cta(vak, stad_label=None):
     waar = f" in {html.escape(stad_label)}" if stad_label else ""
@@ -278,6 +354,12 @@ def build_city_page(vak, vak_slug, stad, lokaal):
         (f"Hoe vind ik een goede {vak['sing']} in {stad}?",
          f"Vergelijk de {vak['plur']} in {stad} op beoordelingen uit meerdere bronnen naast elkaar in plaats van &eacute;&eacute;n platform. "
          "Bylder toont ze neutraal en laat je je offerte per post controleren op een eerlijke prijs."),
+        (f"Welke {vak['sing']} moet ik kiezen in {stad}?",
+         f"Er is niet &eacute;&eacute;n beste {vak['sing']}; het hangt af van je klus en budget. Vergelijk er minstens drie op beoordelingen, een "
+         f"gespecificeerde prijs per werksoort en hun aanpak. Via Bylder vraag je in &eacute;&eacute;n keer voorstellen aan en zet je de marktprijs ernaast."),
+        (f"Hoe vraag ik offertes aan {vak['plur']} in {stad}?",
+         f"Beschrijf je klus &eacute;&eacute;n keer op Bylder &mdash; lokale {vak['plur']} reageren met een voorstel. Je vergelijkt de prijzen naast de "
+         "marktbandbreedte, zodat je direct ziet of een offerte eerlijk is."),
     ]
     schema = [
         faq_schema(qa),
@@ -299,15 +381,16 @@ def build_city_page(vak, vak_slug, stad, lokaal):
     <strong>neutraal</strong> &mdash; en laat je gratis checken of je offerte een eerlijke prijs heeft.</p>
   <div class="highlight">{vak['prijs_band']} Bekijk de volledige <a href="{base}/">marktprijzen en werksoorten</a>.</div>
 
-  <h2 style="font-size:1.5rem;font-weight:800;margin:32px 0 14px;">{n} {vak['plur']} in {html.escape(stad)}</h2>
-  {bedrijven_grid(lokaal)}
+  {klus_calculator(vak)}
+
+  {aanbesteding_block(vak, stad)}
+
+  <h2 style="font-size:1.5rem;font-weight:800;margin:32px 0 8px;">{n} {vak['plur']} in {html.escape(stad)}</h2>
+  <p style="font-size:13.5px;color:rgba(61,46,30,0.55);margin-bottom:6px;">Onafhankelijk overzicht, standaard op relevantie gesorteerd. Geverifieerde bedrijven hebben hun profiel geclaimd.</p>
+  {directory_sortable(vak, lokaal)}
   {claim_cta(vak, stad)}
 
-  <div style="background:#3D5A3E;border-radius:18px;padding:34px;text-align:center;margin:32px 0;">
-    <h2 style="font-size:1.45rem;font-weight:800;color:#F5F0E8;margin-bottom:10px;">Een offerte van een {html.escape(vak['sing'])} in {html.escape(stad)}?</h2>
-    <p style="color:rgba(245,240,232,0.72);margin-bottom:20px;max-width:540px;margin-left:auto;margin-right:auto;font-size:14.5px;line-height:1.6;">Check gratis of je prijs marktconform is voordat je tekent.</p>
-    <a href="{SIGNUP}" class="cta-primary">Check je prijs gratis &#8594;</a>
-  </div>
+  {keuzehulp_block(vak)}
 
   <div class="divider"></div>
   {faq_html(vak, qa)}
@@ -406,6 +489,8 @@ def build_pillar(vak, vak_slug, bedrijven, steden_idx):
   <h3 style="font-size:1.2rem;font-weight:700;margin:28px 0 10px;">Wat bepaalt de prijs?</h3>
   <ul class="check-list">{factoren}</ul>
 
+  {klus_calculator(vak)}
+
   <div style="background:#3D5A3E;border-radius:20px;padding:42px;text-align:center;margin:44px 0;">
     <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.5);margin-bottom:10px;">Bylder Prijs-benchmark</p>
     <h2 style="font-size:1.7rem;font-weight:800;color:#F5F0E8;margin-bottom:12px;">Betaal jij een eerlijke prijs voor je {html.escape(vak['werk'])}?</h2>
@@ -416,6 +501,8 @@ def build_pillar(vak, vak_slug, bedrijven, steden_idx):
   <h2 style="font-size:1.6rem;font-weight:800;margin:8px 0 6px;">Trends in de {html.escape(vak['branche'])}</h2>
   <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Wat er speelt &mdash; en wat het betekent voor jouw prijs en planning.</p>
   <div class="grid-2">{trends}</div>
+
+  {aanbesteding_block(vak)}
 
   <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 6px;">Hoogst beoordeelde {p} van Nederland</h2>
   <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;max-width:760px;">Een onafhankelijk, groeiend overzicht van {len(bedrijven)} {html.escape(s)}sbedrijven &mdash; hier de best beoordeelde. Bekijk je eigen plaats hieronder.</p>
