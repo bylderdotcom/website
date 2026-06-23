@@ -1,0 +1,5094 @@
+{
+ "_bron": "nieuwbouw.nl (publieke projectdata, gescraped voor Bylder-MVP)",
+ "projecten": [
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01KSPWZZ1TSCH5XH8M4SRSE4ZR-parkbuurt-almelo-fase-3",
+   "plaats": "almelo",
+   "naam": "Parkbuurt Almelo Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KNP5ZAAE1PWTGJ574S4C2K7N-elzenhagen-parkvilla-8-en-9-zuidbuurt",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Parkvilla 8 En 9 Zuidbuurt"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KNP5ZAGHZ5X87XN11K7ZT49W-elzenhagen-noordhof-6-noordbuurt",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Noordhof 6 Noordbuurt"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KS7C2X0CF84T4Y898T62SJ75-dijkgraafplein-dijkers",
+   "plaats": "amsterdam",
+   "naam": "Dijkgraafplein Dijkers"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/best/01KV7TJMF12G59E96P2YQR7135-fase-7b",
+   "plaats": "best",
+   "naam": "Fase 7b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01KVANJMZQSRRKWB0PMB9B2ET5-heritage-fase-3b",
+   "plaats": "breda",
+   "naam": "Heritage Fase 3b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01KG4HD5XEKARK2EVCZVSM5XBX-de-hoven-fase-1",
+   "plaats": "de-ronde-venen",
+   "naam": "De Hoven Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01KTY1NTD6CES17VJQH2H2F4EK-sierlijke-dames",
+   "plaats": "eindhoven",
+   "naam": "Sierlijke Dames"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01KVSP5Q3YP86RJ4CRG5XVW0R9-lage-bothofstraat-enschede",
+   "plaats": "enschede",
+   "naam": "Lage Bothofstraat Enschede"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01KTXXTJ64QEP1EESPQHSKV6GE-victoriapark-hoofddorp-fase-2",
+   "plaats": "haarlemmermeer",
+   "naam": "Victoriapark Hoofddorp Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hellendoorn/01KVD1XFV1KPBSJN9K0X2W2GA7-parq-te-wechel",
+   "plaats": "hellendoorn",
+   "naam": "Parq Te Wechel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KV83ZP3W3V44147GNRXE9MYE-de-oosttribune",
+   "plaats": "leeuwarden",
+   "naam": "De Oosttribune"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/midden-groningen/01K4D2WFBFKSD2S2HMPST40DBM-16-woningen-werfkade-hoogezand",
+   "plaats": "midden-groningen",
+   "naam": "16 Woningen Werfkade Hoogezand"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/midden-groningen/01KMQA29BYSNTHQEG0GT1QV4FX-next-15-hoogezand",
+   "plaats": "midden-groningen",
+   "naam": "Next 15 Hoogezand"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oss/01KVFM9ZT8802SNK6FVV6X4JTZ-ooievaarshoek",
+   "plaats": "oss",
+   "naam": "Ooievaarshoek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5HBPJZ1TGSD1ZXKPGWKRT6-timber",
+   "plaats": "rotterdam",
+   "naam": "Timber"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KTXGYJV3CH373DQ8J9MNK9PP-riva",
+   "plaats": "rotterdam",
+   "naam": "Riva"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01KVSQ14WGVWTG1N0WZF8GEVJ3-nieuw-harculo-zwolle-parkvillas",
+   "plaats": "zwolle",
+   "naam": "Nieuw Harculo Zwolle Parkvillas",
+   "woningen": null,
+   "lat": 52.46817373,
+   "lng": 6.10937792,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alkmaar/01KTKXQMFZCVD34VCJK189PYG4-the-future",
+   "plaats": "alkmaar",
+   "naam": "The Future"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KT1KEMFQZ0GAWFM9F8943KTX-nobelhorst-het-dorpshart-fase-3",
+   "plaats": "almere",
+   "naam": "Nobelhorst Het Dorpshart Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KT8RM0P90DNM5P545AET8AZ9-loov-overgooi-fase-5",
+   "plaats": "almere",
+   "naam": "Loov Overgooi Fase 5"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01KTB8EBK4Y34RXM5JW0FXQKQP-dillekwartier-fase-2",
+   "plaats": "arnhem",
+   "naam": "Dillekwartier Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01KTRPF8Q64KRHJ3E6QX5AXG9G-de-horsten",
+   "plaats": "borne",
+   "naam": "De Horsten"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dongen/01KTA3JB8HSY80WBEB3YMYFH4T-heem",
+   "plaats": "dongen",
+   "naam": "Heem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/harlingen/01KSJ8Z4ZRGQT6SC4GA8FYZ92X-blok-a-en-blok-i-fase-1",
+   "plaats": "harlingen",
+   "naam": "Blok A En Blok I Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KS29T1DWNSDPTYN34XVCEBP9-pioniers-van-middelsee-fase-4",
+   "plaats": "leeuwarden",
+   "naam": "Pioniers Van Middelsee Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KTRSWK7KYYGZAB84SKQ4ND2W-fase-2a-32-appartementen",
+   "plaats": "leeuwarden",
+   "naam": "Fase 2a 32 Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01KTC0FCXBK27HAQFHPQCG523P-de-pauwentuin",
+   "plaats": "leidschendam-voorburg",
+   "naam": "De Pauwentuin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maassluis/01KTTVZF6DPVNQDWWQ87THVYCE-de-oevers-maassluis",
+   "plaats": "maassluis",
+   "naam": "De Oevers Maassluis"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oegstgeest/01KTK5PJKJMJCZ7B384H92VEPV-werf-oegstgeest",
+   "plaats": "oegstgeest",
+   "naam": "Werf Oegstgeest"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oegstgeest/01KTNTKWKAMZAFXT7RXK3A1X3P-nieuw-rijnvaert-fase-1b",
+   "plaats": "oegstgeest",
+   "naam": "Nieuw Rijnvaert Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schouwen-duiveland/01KTR7W309RH5HQ8BY6DAQTY10-buitenhoven",
+   "plaats": "schouwen-duiveland",
+   "naam": "Buitenhoven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/teylingen/01KRG911J2A4NYSBRJBQB1HGH4-gloed",
+   "plaats": "teylingen",
+   "naam": "Gloed"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/teylingen/01KS2W3Z5NDRBYYM2XHGAJ5MJW-nieuw-boekhorst-24-appartementen-dp-2",
+   "plaats": "teylingen",
+   "naam": "Nieuw Boekhorst 24 Appartementen Dp 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KCKVE8CSBX120PYS561J6M60-grow-merwede",
+   "plaats": "utrecht",
+   "naam": "Grow Merwede"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01KDQC20VVWE8Y7HCXD6Q29RMD-wonen-in-greenz-fase-2",
+   "plaats": "veenendaal",
+   "naam": "Wonen In Greenz Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01KST28RH3NMDNVNXSQ84XKYVH-thorbeckehof-almelo-fase-3",
+   "plaats": "almelo",
+   "naam": "Thorbeckehof Almelo Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KPDE48RKC9ER2MGEGFE5V50C-hoeksenes",
+   "plaats": "amsterdam",
+   "naam": "Hoeksenes"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01KT1954W8QD2SRCZC8NC9EJMM-munttuin",
+   "plaats": "arnhem",
+   "naam": "Munttuin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/best/01KSJB80EWDRSRCQWC938T7020-de-waarden-iv-aarlesche-erven",
+   "plaats": "best",
+   "naam": "De Waarden Iv Aarlesche Erven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HDRVG492QFH33BNWCJR8A94H-de-faam",
+   "plaats": "breda",
+   "naam": "De Faam"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/culemborg/01KSQ8ET0JG33GBSFZYV2H3VVE-borg-buiten-fase-4",
+   "plaats": "culemborg",
+   "naam": "Borg Buiten Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deventer/01HACJA7P6YGFKD0XT8SZWGZJP-de-kop-handelskade",
+   "plaats": "deventer",
+   "naam": "De Kop Handelskade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01J1YGD4X4ABP6SQ0B8SCE9BFX-van-marishof",
+   "plaats": "haarlemmermeer",
+   "naam": "Van Marishof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KT3MP1PXJNG55PTF0HK9CE8D-park-west-nijderbij",
+   "plaats": "leeuwarden",
+   "naam": "Park West Nijderbij"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KT3N2CBM6N1GJ6Z2TWEKK3GV-park-west-het-verlaat",
+   "plaats": "leeuwarden",
+   "naam": "Park West Het Verlaat"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/middelburg-z/01KRGM5YE6K67JME5J8FMKG4X5-middelburg-mortiere-connect-fase-1-32-won",
+   "plaats": "middelburg-z",
+   "naam": "Middelburg Mortiere Connect Fase 1 32 Won"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijssen-holten/01KG2JR6K3QDF0YRNZCQ7VQE6D-opbroek-oost-fase-1",
+   "plaats": "rijssen-holten",
+   "naam": "Opbroek Oost Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JNGMQ8D3ECME3N3SCKHE0TVZ-rotterdam-tree-house-koopappartementen",
+   "plaats": "rotterdam",
+   "naam": "Rotterdam Tree House Koopappartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/teylingen/01HQX314BKGG93GH8ZGYC2TNQE-nieuw-boekhorst",
+   "plaats": "teylingen",
+   "naam": "Nieuw Boekhorst"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KNKDJAT4JV1DJHBJN6HCFDAG-leeuwepoort-herenhuizen-en-stadswoningen",
+   "plaats": "utrecht",
+   "naam": "Leeuwepoort Herenhuizen En Stadswoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KQCSFTRTGP7JVDN08EJJZ1FX-zwanenpark-fase-4",
+   "plaats": "vlaardingen",
+   "naam": "Zwanenpark Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wageningen/01KPQWVVA96DE95GHKDS37XHQM-vad07bc-zelfbouwkavels",
+   "plaats": "wageningen",
+   "naam": "Vad07bc Zelfbouwkavels"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01H963AHMZT51RYX9HGXVWZ591-rolreder",
+   "plaats": "zaanstad",
+   "naam": "Rolreder"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01KS7NF75ASS10HJGN8Z6BJFQK-eschgaarde",
+   "plaats": "haaksbergen",
+   "naam": "Eschgaarde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hardenberg/01HSG6CM7FJAHCZ5PRS9KZXP0W-moerheim",
+   "plaats": "hardenberg",
+   "naam": "Moerheim"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hilversum/01KS7QD8SX7TS62TVNP3QE113A-monnikenpark-fase-2c",
+   "plaats": "hilversum",
+   "naam": "Monnikenpark Fase 2c"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hilversum/01KS7QE12PX4791JMF7R3CNDDA-monnikenpark-fase-2b",
+   "plaats": "hilversum",
+   "naam": "Monnikenpark Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/meierijstad/01KRXHXHSGF4E0KK8JF4MKVDJN-veghels-buiten-noordoost-fase-1",
+   "plaats": "meierijstad",
+   "naam": "Veghels Buiten Noordoost Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/moerdijk/01KPW4WCHJTF2XM6W8HJZNV4NS-markant",
+   "plaats": "moerdijk",
+   "naam": "Markant"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oss/01KS7AGYQVJW4VS5G8137972HK-het-veld-fase-5",
+   "plaats": "oss",
+   "naam": "Het Veld Fase 5"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JXHD9HWE9G2R8MGRC9663XRK-park-overdeschie-appartementen",
+   "plaats": "rotterdam",
+   "naam": "Park Overdeschie Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JXHD9J01CP2Y3RG98MXJVZ85-park-overdeschie-woningen",
+   "plaats": "rotterdam",
+   "naam": "Park Overdeschie Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/scherpenzeel/01KS7Q8BW3ER8DPDADCA4CV5B8-de-nieuwe-koepel-fase-2b",
+   "plaats": "scherpenzeel",
+   "naam": "De Nieuwe Koepel Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/twenterand/01KRZK3ZXZ19CB30NT1WMHRB9X-vroomshoop-oost-fase-3-6-woningen",
+   "plaats": "twenterand",
+   "naam": "Vroomshoop Oost Fase 3 6 Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlissingen/01KN72R250JRFCS9FFH9BEKVP4-souburg-noord-fase-iii",
+   "plaats": "vlissingen",
+   "naam": "Souburg Noord Fase Iii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vught/01KRX294AA9CBX43ES009H5DB5-isabellaveld-44-woningen",
+   "plaats": "vught",
+   "naam": "Isabellaveld 44 Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-betuwe/01KRXDCE4D5J3BG7N2ZJCK0195-de-plantage-de-zomergaard-ii",
+   "plaats": "west-betuwe",
+   "naam": "De Plantage De Zomergaard Ii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01KRXGQ56YZX30P594JNRWD5S9-brouwershoek-fase-1",
+   "plaats": "west-maas-en-waal",
+   "naam": "Brouwershoek Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01KS7DSYA72AEVKERNQTG0W5DE-maasterras-fase-3a",
+   "plaats": "zwijndrecht",
+   "naam": "Maasterras Fase 3a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01KS5FYF3FTWF0HD2ZJXZ5KKQA-floris-49-appartementen",
+   "plaats": "zwolle",
+   "naam": "Floris 49 Appartementen",
+   "woningen": 49,
+   "lat": 52.51113702,
+   "lng": 6.10372935,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01KS5GVRGHDD4MATM4RG2Y88TF-nova-67-appartementen",
+   "plaats": "zwolle",
+   "naam": "Nova 67 Appartementen",
+   "woningen": 67,
+   "lat": 52.51046119,
+   "lng": 6.10378299,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01KRX3HGQF27JTMY2XE60J5NK6-buitenveen-fase-3",
+   "plaats": "aalsmeer",
+   "naam": "Buitenveen Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bergeijk/01KRX29JNDRMWV5C82E679NGZC-kapelledries-fase-3",
+   "plaats": "bergeijk",
+   "naam": "Kapelledries Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deurne/01KRDT1C3Q11TRV4TM919A29FT-de-grote-bottel-35-woningen",
+   "plaats": "deurne",
+   "naam": "De Grote Bottel 35 Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/duiven/01KRX1Q0HAMJWRT8MC6QZC22NX-de-ploen-noord-fase-1",
+   "plaats": "duiven",
+   "naam": "De Ploen Noord Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gouda/01KRGCXDT1AJVXM9R4JEZ335RV-westerhof-2-gouda",
+   "plaats": "gouda",
+   "naam": "Westerhof 2 Gouda"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heusden/01KRX27S6NKF4NF65HPC286WSD-de-grassen-fase-2",
+   "plaats": "heusden",
+   "naam": "De Grassen Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/laarbeek/01KRGT5W2YBDKHE50S7Q4NAEGX-de-heuvelsche-velden-fase-1",
+   "plaats": "laarbeek",
+   "naam": "De Heuvelsche Velden Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/laarbeek/01KRGT73105B5F8RYMV7K42FHS-de-heuvelsche-velden-fase-2",
+   "plaats": "laarbeek",
+   "naam": "De Heuvelsche Velden Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KRX7K129G3QAM65CPN73J0S2-het-thuisvak",
+   "plaats": "leeuwarden",
+   "naam": "Het Thuisvak"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/loon-op-zand/01KRGNES5PCQZNXH2ZJD1T24T1-lobelia-fase-2",
+   "plaats": "loon-op-zand",
+   "naam": "Lobelia Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maashorst/01KRGR16ZNG0BE55G3C8FS70DG-niemeskant-fase-2",
+   "plaats": "maashorst",
+   "naam": "Niemeskant Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maashorst/01KRGVBDQQ3D21B8BYGRYD4VT0-akkerwinde-fase-3b-2",
+   "plaats": "maashorst",
+   "naam": "Akkerwinde Fase 3b 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/middelburg-z/01KNVK9YP52EZ33M5EBFVE8MPX-de-heeren-van-essen",
+   "plaats": "middelburg-z",
+   "naam": "De Heeren Van Essen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oss/01KRGVD10SM79VH6GZ2FAEYB40-het-veld-fase-4",
+   "plaats": "oss",
+   "naam": "Het Veld Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/roermond/01KRNEHS8S22ADVR4DGZMFVTQY-jazz-city",
+   "plaats": "roermond",
+   "naam": "Jazz City"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01KRGDNBA2RCP2M5BXHHPPGBGD-het-vennehof-fase-3",
+   "plaats": "veenendaal",
+   "naam": "Het Vennehof Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veldhoven/01KRGBTC6AKDHGKJX7QAXD53DT-gehucht-zuid-fase-1a",
+   "plaats": "veldhoven",
+   "naam": "Gehucht Zuid Fase 1a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaltbommel/01KRKCN8VXFY49W9GMPSYE5CYY-molendel-fase-3",
+   "plaats": "zaltbommel",
+   "naam": "Molendel Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/best/01KRE5ARZY3A3AW18EPBGFZ94B-aarlesche-erven-deelplan-6a",
+   "plaats": "best",
+   "naam": "Aarlesche Erven Deelplan 6a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-fryske-marren/01KR0V7K96SEXAAT374EBZW11R-lemster-kwartier",
+   "plaats": "de-fryske-marren",
+   "naam": "Lemster Kwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/diemen/01KQHD3VQ1QPJXHWV2ERGF4BPB-willow-iii",
+   "plaats": "diemen",
+   "naam": "Willow Iii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01KPNBAKP51N54504R5R864XP7-wonen-in-woodstone-sequoia",
+   "plaats": "dijk-en-waard",
+   "naam": "Wonen In Woodstone Sequoia"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01KN7C80G868H0AYDBMW5EN11N-de-hendrik",
+   "plaats": "dordrecht",
+   "naam": "De Hendrik"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01KREJYNT7V7JXPBC6N5YMH2DC-waterrijk-fase-1",
+   "plaats": "dronten",
+   "naam": "Waterrijk Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goirle/01KNRRC1TV974MDJXVVPRKBW96-de-oorsprong-fase-2",
+   "plaats": "goirle",
+   "naam": "De Oorsprong Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoeksche-waard/01KRBFCKWP63SVHDGJV58YJR8T-s-gravendeel-west-fase-1a",
+   "plaats": "hoeksche-waard",
+   "naam": "S Gravendeel West Fase 1a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lansingerland/01KRBA85H3A8J195MQEWP9SEJB-spetterend-wonen-de-zoom",
+   "plaats": "lansingerland",
+   "naam": "Spetterend Wonen De Zoom"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/meierijstad/01KRE02KTMM3EV4CDB4D30RZMK-zwembadweg-fase-1",
+   "plaats": "meierijstad",
+   "naam": "Zwembadweg Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01JWTF2P865SGK04E9KQMG7XDZ-het-nieuwe-metterswane-fase-3",
+   "plaats": "nijmegen",
+   "naam": "Het Nieuwe Metterswane Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01KR0VD325268TJE6FXADA2S5S-beemd-a",
+   "plaats": "s-hertogenbosch",
+   "naam": "Beemd A"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tytsjerksteradiel/01KQRWJVEY9D9BDDEKCSAVJV6X-oud-neef",
+   "plaats": "tytsjerksteradiel",
+   "naam": "Oud Neef"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01KRG9MQKFZJXXT2Y8TH1EY822-het-vennehof-fase-2",
+   "plaats": "veenendaal",
+   "naam": "Het Vennehof Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/voorne-aan-zee/01KJD5PMNKWT9FJX595T3FND75-twee-getuigen-fase-1b",
+   "plaats": "voorne-aan-zee",
+   "naam": "Twee Getuigen Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01KQVSAYCYDHEF5MZ4SN7AP33F-nieuw-achterveld",
+   "plaats": "west-maas-en-waal",
+   "naam": "Nieuw Achterveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01HYDJ2K989QM3S6VPDJ5GPDAV-wonen-aan-de-gantel",
+   "plaats": "westland",
+   "naam": "Wonen Aan De Gantel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01KK8RWYE21E3WTG059C76W4M3-boomgaerde-fase-3",
+   "plaats": "westland",
+   "naam": "Boomgaerde Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alblasserdam/01KQEPH3S8Y5NGSQ4QDFTCGDSP-de-manege",
+   "plaats": "alblasserdam",
+   "naam": "De Manege"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01KPXBARM5XV0H3597D5YKMRK3-hoog-soeren-18-b",
+   "plaats": "apeldoorn",
+   "naam": "Hoog Soeren 18 B"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deurne/01KQEKVDGK6SN2QVDVJCZ1SPWX-fase-1a",
+   "plaats": "deurne",
+   "naam": "Fase 1a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/geldrop-mierlo/01KQCSFTMEMCWN5EY2CNTDZ8VA-luchenweide",
+   "plaats": "geldrop-mierlo",
+   "naam": "Luchenweide"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01HD699JTAAS45VK28J8KBJPC8-bosryk-meerstad",
+   "plaats": "groningen",
+   "naam": "Bosryk Meerstad"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01KPTA807PQAH4GAFY8D829F8Y-wolderburght-meerstad",
+   "plaats": "groningen",
+   "naam": "Wolderburght Meerstad"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01KPWY7EAPY70GTZNTMS6C1ZRW-campus-driene-fase-5-triomfhof",
+   "plaats": "hengelo-o",
+   "naam": "Campus Driene Fase 5 Triomfhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01KM066NZBZ58QH282676W7ATT-de-remise",
+   "plaats": "hoorn",
+   "naam": "De Remise"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/land-van-cuijk/01KMQ5RTJ7Y461QT1PJ4R0TTSS-fase-3-woning-van-de-toekomst",
+   "plaats": "land-van-cuijk",
+   "naam": "Fase 3 Woning Van De Toekomst"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/neder-betuwe/01KMZAPEKE0EE4WY1QZ18JF0MB-regiment-ochten",
+   "plaats": "neder-betuwe",
+   "naam": "Regiment Ochten"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oldenzaal/01KQ9ZBVEY7EPX40QYWJG7ECXP-de-nieuwe-post",
+   "plaats": "oldenzaal",
+   "naam": "De Nieuwe Post"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oss/01H963APGW3YV2NDAFV659Y38R-linck",
+   "plaats": "oss",
+   "naam": "Linck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oudewater/01KPXB57VATHGD456TMBX04G6R-singelhaven-en-hollandsche-ijsselfabriek",
+   "plaats": "oudewater",
+   "naam": "Singelhaven En Hollandsche Ijsselfabriek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01JXHWQYE4PRSFE5MS8MAFQQ4F-de-glasfabriek-kaft-fase-2",
+   "plaats": "schiedam",
+   "naam": "De Glasfabriek Kaft Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/sliedrecht/01HY08BHPB1RB7EKBD9Z2Z1WH1-thuis-in-serenade",
+   "plaats": "sliedrecht",
+   "naam": "Thuis In Serenade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tholen/01KC6YTCYY2SWZ7F1DTY1RWTG3-parc-tholen-fase-1",
+   "plaats": "tholen",
+   "naam": "Parc Tholen Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01KQSRXA8DTN37Z4F6D5ERK9XC-terrazza",
+   "plaats": "westland",
+   "naam": "Terrazza"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zevenaar/01KQSCWMYCER7ZK21VC9VZA1ZN-liemershof-zevenaar",
+   "plaats": "zevenaar",
+   "naam": "Liemershof Zevenaar"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KP6BHK6RCBRXS498XKAK7ZFA-new-joymere",
+   "plaats": "almere",
+   "naam": "New Joymere"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HE343FREV27FVPE30TMP5YRJ-nelson-amsterdam",
+   "plaats": "amsterdam",
+   "naam": "Nelson Amsterdam"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/buren/01KC6G79XVPJZEXB020K4BCGZK-irenehof",
+   "plaats": "buren",
+   "naam": "Irenehof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01KNVVNEJ4KX50T61NXDNMZGF6-de-boeg",
+   "plaats": "dordrecht",
+   "naam": "De Boeg"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01KMN813KB1YV8FWQ53R6V4XX5-victoriapark-hoofddorp-fase-1",
+   "plaats": "haarlemmermeer",
+   "naam": "Victoriapark Hoofddorp Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/harderwijk/01KK346KATF40PAMGJD5M8ED48-de-3-baarsjes",
+   "plaats": "harderwijk",
+   "naam": "De 3 Baarsjes"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01K1B9E8KZXDCWV5PTKTKWTXHD-de-concurrent",
+   "plaats": "hengelo-o",
+   "naam": "De Concurrent"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/losser/01KG7PPRXVN82GRRHBNSDTHVQT-schoolstraat-overdinkel",
+   "plaats": "losser",
+   "naam": "Schoolstraat Overdinkel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/midden-groningen/01KPB9FNM6X7W6BDK6NWJ26Q48-vosholen",
+   "plaats": "midden-groningen",
+   "naam": "Vosholen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijkerk/01KHZGTH95ARXP83YY379WMGAF-wonen-bij-de-toren-fase-2",
+   "plaats": "nijkerk",
+   "naam": "Wonen Bij De Toren Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01KCGYPERBFZP6G117A7P04F9A-het-nieuwe-metterswane-fase-2",
+   "plaats": "nijmegen",
+   "naam": "Het Nieuwe Metterswane Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordenveld/01KNVW7709YCRR941KDZMA4EHH-thedemaborg-nietap",
+   "plaats": "noordenveld",
+   "naam": "Thedemaborg Nietap"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/overbetuwe/01JNR468K6AKJTC77W9MNAMKEM-op-zuid-in-zetten-fase-2",
+   "plaats": "overbetuwe",
+   "naam": "Op Zuid In Zetten Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/renkum/01KP5P4CNQMGJDENFPSPQMKRDE-stationsweg-49",
+   "plaats": "renkum",
+   "naam": "Stationsweg 49"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVTC759FY8EV7TY925MGTXJ-piekstraat",
+   "plaats": "rotterdam",
+   "naam": "Piekstraat"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/waadhoeke/01KP2ZCH4C2GSNBY7YPFZTZ3G6-mooi-st-anne",
+   "plaats": "waadhoeke",
+   "naam": "Mooi St Anne"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-betuwe/01KPR3RNT8NEWEYCYT6RBD00ZT-hartje-haaften-fase-2",
+   "plaats": "west-betuwe",
+   "naam": "Hartje Haaften Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01KECPDAXSQJNYEC4R3YZFX7W4-zaans-pijl",
+   "plaats": "zaanstad",
+   "naam": "Zaans Pijl"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amersfoort/01KNV7NECDDKEYGT5HZ6ZWZEV6-podium-fase-2",
+   "plaats": "amersfoort",
+   "naam": "Podium Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amersfoort/01KNV7TADFWQ2SW97SEYAYFERM-podium-fase-3",
+   "plaats": "amersfoort",
+   "naam": "Podium Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amersfoort/01KNV7Z28DH8WX2ZBYKXE6DADD-podium-flexihomes-en-parkwoningen",
+   "plaats": "amersfoort",
+   "naam": "Podium Flexihomes En Parkwoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/castricum/01KJCKNV5RSJRK60SZKQCJRTSZ-dampegheest",
+   "plaats": "castricum",
+   "naam": "Dampegheest"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/culemborg/01KNPTEE6ZHV09AF2M3KFMMZG0-borg-buiten-fase-3b",
+   "plaats": "culemborg",
+   "naam": "Borg Buiten Fase 3b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/culemborg/01KNVRJVT2YXEPR99M2R98WSK4-fortenkavels",
+   "plaats": "culemborg",
+   "naam": "Fortenkavels"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01KNVSWAATVWZ9BVYGVZQPREPZ-liv-dordrecht",
+   "plaats": "dordrecht",
+   "naam": "Liv Dordrecht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ede/01KNS1ZNPEKR6FVY97MEKFHKYC-bos-en-buur",
+   "plaats": "ede",
+   "naam": "Bos En Buur"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01KNS3H350GV06V0VFZ0JMTXH9-the-four",
+   "plaats": "eindhoven",
+   "naam": "The Four"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01KNVRZ1JHR8R59W7QKEGPX3VS-inck-veld-a",
+   "plaats": "eindhoven",
+   "naam": "Inck Veld A"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gouda/01KNVFXHMEFY0XXKMB2T54JPDR-goudse-linie",
+   "plaats": "gouda",
+   "naam": "Goudse Linie"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijkerk/01KNS53Z2ACTE3PPXENYHSCCNG-doornsteeg-fiore-fase-2",
+   "plaats": "nijkerk",
+   "naam": "Doornsteeg Fiore Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01KNVAK09JYDCNRDPJNZT8BVDP-zuijd-blok-2",
+   "plaats": "pijnacker-nootdorp",
+   "naam": "Zuijd Blok 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01KNVAQD284HHGXKFT5S8CQTRB-zuijd-blok-4",
+   "plaats": "pijnacker-nootdorp",
+   "naam": "Zuijd Blok 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS7BXY4D7479GWCG16XMXDB-nieuw-kralingen-in-de-lanen-i",
+   "plaats": "rotterdam",
+   "naam": "Nieuw Kralingen In De Lanen I"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVMXEAVV4BKPYPD64ZQKKA1-de-scharnier",
+   "plaats": "rotterdam",
+   "naam": "De Scharnier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/stichtse-vecht/01KNV6FDTVAE6ZEETMCA33AKY2-hof-van-clarenborg-fase-2",
+   "plaats": "stichtse-vecht",
+   "naam": "Hof Van Clarenborg Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KNPRHWBA4KEPCK2TTMRZHN8T-bellevue-fase-3-en-4",
+   "plaats": "utrecht",
+   "naam": "Bellevue Fase 3 En 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KNKG4RAV39VPFJHB0NFSY97G-brooklyn-heights",
+   "plaats": "almere",
+   "naam": "Brooklyn Heights"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KM35FAF1YQ64MJ1XY8E15R44-willow",
+   "plaats": "amsterdam",
+   "naam": "Willow"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/culemborg/01KNP1KQCFMT6TTRCHA4CMDG2J-architectenkavels-fase-3",
+   "plaats": "culemborg",
+   "naam": "Architectenkavels Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/duiven/01JNK740G1PK0VFQDV1TSGBEK8-op-den-donk",
+   "plaats": "duiven",
+   "naam": "Op Den Donk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gemert-bakel/01JRAA1Z1AGC2A854ZTSA2RCSQ-groesse-brink",
+   "plaats": "gemert-bakel",
+   "naam": "Groesse Brink"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hilversum/01KFK4D4CTB9SHX53K58AM7CX8-park-heuvellaan",
+   "plaats": "hilversum",
+   "naam": "Park Heuvellaan"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KFDQVJ5VHKF5DC0KFS3TDZSY-de-spjocht",
+   "plaats": "leeuwarden",
+   "naam": "De Spjocht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KNPJVAD8G6HQM6ECYYV6HTBT-wergea-grut-palma-west",
+   "plaats": "leeuwarden",
+   "naam": "Wergea Grut Palma West"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijkerk/01KNP3FDXD91VP5EEWQQ110CPQ-bakkerswaard-fase-2-bakkerspad",
+   "plaats": "nijkerk",
+   "naam": "Bakkerswaard Fase 2 Bakkerspad"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordwijk/01JZHXGW1JD9GVJ5YMERGP9RXS-residences-van-oranje-fase-1",
+   "plaats": "noordwijk",
+   "naam": "Residences Van Oranje Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNP2GX5SB2CP2EPJDHDD9G39-atlas-1",
+   "plaats": "rotterdam",
+   "naam": "Atlas 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schagen/01KMZHJ551BNQNGRAFM1ZK1D6C-sinmareveld",
+   "plaats": "schagen",
+   "naam": "Sinmareveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01KN71WK993WCXY51W5N5V302C-keizersmantel-the-one",
+   "plaats": "terneuzen",
+   "naam": "Keizersmantel The One"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01KN71WKDHD413RRFJAM93A9EK-keizersmantel-vorstenhof",
+   "plaats": "terneuzen",
+   "naam": "Keizersmantel Vorstenhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01KN71WKHW1KYBPH8008XP5Z8J-keizersmantel-kroonsingel",
+   "plaats": "terneuzen",
+   "naam": "Keizersmantel Kroonsingel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KNPR8JZTNM2SJTA0T31NTZ7H-bellevue-fase-1",
+   "plaats": "utrecht",
+   "naam": "Bellevue Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KNPRE6QG6G28BX49BNKWFK0N-bellevue-fase-2",
+   "plaats": "utrecht",
+   "naam": "Bellevue Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/winterswijk/01KMMNYHMXCJQT8CB33ZVQK452-de-rikker",
+   "plaats": "winterswijk",
+   "naam": "De Rikker"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01KMMN3112FDVFDXDA4R25K71P-westeinderhage-fase-1",
+   "plaats": "aalsmeer",
+   "naam": "Westeinderhage Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01KKVJJQN9X1ZHYGGMF6VZZDN8-kop-west-wonen",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Kop West Wonen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JQBPQ08WWGGV0MY6NEJQMGPT-pam-pampuslaan-1",
+   "plaats": "amsterdam",
+   "naam": "Pam Pampuslaan 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bodegraven-reeuwijk/01K5DZZ6B53H4DN69GKBNHMZ2P-voor-de-brug-fase-3",
+   "plaats": "bodegraven-reeuwijk",
+   "naam": "Voor De Brug Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01J8SK1ZQP5J64ZD34AQ4HSF9R-up-breda",
+   "plaats": "breda",
+   "naam": "Up Breda"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01KKEMVZGESZ9D6KG5BD28EHW6-backerrueb-fase-1",
+   "plaats": "breda",
+   "naam": "Backerrueb Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dalfsen/01KMD0F91S8497DWCFS8DK2P3B-wonen-in-oosterdalfsen",
+   "plaats": "dalfsen",
+   "naam": "Wonen In Oosterdalfsen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01KFDRPPFR8933SJ2CX3FQARDV-zuiderweide-fase-4a-de-vierspan",
+   "plaats": "dronten",
+   "naam": "Zuiderweide Fase 4a De Vierspan"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/emmen/01KMG99RS7A8F42K9K2C1JENTF-de-schalm",
+   "plaats": "emmen",
+   "naam": "De Schalm"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goeree-overflakkee/01KK9F725B9VT2V67GY3M2CZAJ-menheerse-erf-fase-5-de-vijg",
+   "plaats": "goeree-overflakkee",
+   "naam": "Menheerse Erf Fase 5 De Vijg"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/harderwijk/01KM0ASEDJQYC4NE0ND6YVDZ0W-havenhart",
+   "plaats": "harderwijk",
+   "naam": "Havenhart"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01K3K9ZZYDJMJNDV7K9D22GVNY-pioniers-van-middelsee-fase-2",
+   "plaats": "leeuwarden",
+   "naam": "Pioniers Van Middelsee Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/moerdijk/01H963AJ9YCQ66TY2P6MBNRZAG-oevers-roode-vaart-woningen",
+   "plaats": "moerdijk",
+   "naam": "Oevers Roode Vaart Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01KM08S0SDHPNN2QVZ7NWPG38J-grondleggers",
+   "plaats": "nijmegen",
+   "naam": "Grondleggers"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01KKENQJ3YFDXNDKAWQAS4X5D0-koningswei-koop",
+   "plaats": "tilburg",
+   "naam": "Koningswei Koop"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/twenterand/01JF7EJ688SYDC0G1D455QPFTR-wonen-aan-de-beeklaan-4-levensloopbestendige-woningen",
+   "plaats": "twenterand",
+   "naam": "Wonen Aan De Beeklaan 4 Levensloopbestendige Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01H9QJ6NFGS0BZ3FH8QQ7Z53X1-heemtuinen-vlaardingen-fase-3-woodstock",
+   "plaats": "vlaardingen",
+   "naam": "Heemtuinen Vlaardingen Fase 3 Woodstock"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wageningen/01KKBPERV7B81GHDZGDTY45H3G-vadapark",
+   "plaats": "wageningen",
+   "naam": "Vadapark"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01J039E784JE7Q5AV64DWFZTKJ-hibi",
+   "plaats": "amsterdam",
+   "naam": "Hibi"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01KJ7EWD4J8T065KWCA3A2X65G-de-stelling",
+   "plaats": "apeldoorn",
+   "naam": "De Stelling"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/doesburg/01KK8PAJ8JEWS597VACKF687AR-stoerwoud",
+   "plaats": "doesburg",
+   "naam": "Stoerwoud"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gennep/01J9XGAQM7KY8JCH717C22DEDN-de-heikant-fase-1a",
+   "plaats": "gennep",
+   "naam": "De Heikant Fase 1a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gilze-en-rijen/01JWZZCT58SCH4EY8AWH1QM7NE-tussen-de-leijen",
+   "plaats": "gilze-en-rijen",
+   "naam": "Tussen De Leijen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01KJ51MG71203T9FQM9WPPAAGV-woonveld-tuinen",
+   "plaats": "haarlemmermeer",
+   "naam": "Woonveld Tuinen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01KHKB51EGTWVV12RVJXNZWY9T-campus-driene-fase-3-sprinthof",
+   "plaats": "hengelo-o",
+   "naam": "Campus Driene Fase 3 Sprinthof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maashorst/01K248GY2FN7YSPE1JB8WJXX6P-connect",
+   "plaats": "maashorst",
+   "naam": "Connect"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwkoop/01HE5GZGXAH9A5ER333NDD86TE-hart-van-vrouwenakker",
+   "plaats": "nieuwkoop",
+   "naam": "Hart Van Vrouwenakker"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nunspeet/01KHV4XMR4JZ0T9GP99EYRZATX-zwolse-hofje",
+   "plaats": "nunspeet",
+   "naam": "Zwolse Hofje"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KHBHG69DRKV348T20DWD4ZRA-het-hoofdkwartier",
+   "plaats": "rotterdam",
+   "naam": "Het Hoofdkwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/steenwijkerland/01KJ7MWPM0DX84G5CDRQZ10H0J-kornputkwartier-nxt-fase-1b",
+   "plaats": "steenwijkerland",
+   "naam": "Kornputkwartier Nxt Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01KJT8KM7P4MTEND6TN8MNGFMQ-tresia",
+   "plaats": "tilburg",
+   "naam": "Tresia"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HFP7Z0MAEFV10NRSCKJ6JM8T-leeuwepoort",
+   "plaats": "utrecht",
+   "naam": "Leeuwepoort"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01K9VNHNADKZV8S4AJ2YF69ZDW-leeuwepoort-appartementen",
+   "plaats": "utrecht",
+   "naam": "Leeuwepoort Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KH8Q8J7SGNRFGYMZY0PBD244-cix-merwede-fase-2",
+   "plaats": "utrecht",
+   "naam": "Cix Merwede Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KG777RQV5EX0SZD194TPXSF3-zwanenpark-fase-3",
+   "plaats": "vlaardingen",
+   "naam": "Zwanenpark Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/woerden/01KAXPQSR4H7S8FKJ2VGHY5BVV-plan-woerden",
+   "plaats": "woerden",
+   "naam": "Plan Woerden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amstelveen/01KH951GHM4CQ2FMDRMS7VDHTC-landjuweel",
+   "plaats": "amstelveen",
+   "naam": "Landjuweel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KH94ENQY33S1QKGK6287M1HN-the-forest",
+   "plaats": "amsterdam",
+   "naam": "The Forest"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deventer/01K8T6CGMG1WJTCVRAEM176ZEX-dorpshoeve-don-jon",
+   "plaats": "deventer",
+   "naam": "Dorpshoeve Don Jon"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/drimmelen/01KH94S142VV6PFVB5SG1HX3QX-buitenmade",
+   "plaats": "drimmelen",
+   "naam": "Buitenmade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ede/01KCPAM48W8CTZZJ6QYXFX0JGJ-raadshof",
+   "plaats": "ede",
+   "naam": "Raadshof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eemnes/01KH953B7R08S5J4HWA31SCM7E-nieuw-wonen-stadwijk-eemnes",
+   "plaats": "eemnes",
+   "naam": "Nieuw Wonen Stadwijk Eemnes"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01JVVMCKS8B91WTCY3ZM7E00BT-tex-buitengewoon-8-grondgebonden-woningen",
+   "plaats": "enschede",
+   "naam": "Tex Buitengewoon 8 Grondgebonden Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heeze-leende/01KH97JE6369C75Y3Q5BTS7R5X-natuurrijk-fase-2",
+   "plaats": "heeze-leende",
+   "naam": "Natuurrijk Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01KHKB51K1H62ZH4A4Z0WPMPY7-campus-driene-fase-4-estafettehof",
+   "plaats": "hengelo-o",
+   "naam": "Campus Driene Fase 4 Estafettehof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KEV8F9FG30KEG1WTH7VQ54TM-pioniers-van-middelsee-fase-3",
+   "plaats": "leeuwarden",
+   "naam": "Pioniers Van Middelsee Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leiden/01HE5H556V6FC67VN8G3DAJQBN-saam",
+   "plaats": "leiden",
+   "naam": "Saam"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K71CFQ1QH04K61C8S87VMSYW-havenmeester",
+   "plaats": "rijswijk-zh",
+   "naam": "Havenmeester"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01KH93XKDT1AXVJNMC311AXBTV-boogiewood",
+   "plaats": "s-gravenhage",
+   "naam": "Boogiewood"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schouwen-duiveland/01KH95EN8MZ2M1NQHQM77WGAPE-riekusweel",
+   "plaats": "schouwen-duiveland",
+   "naam": "Riekusweel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KH94C0M9RXTTX5Y5A6WJVM2E-wisselkwartier",
+   "plaats": "utrecht",
+   "naam": "Wisselkwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01KH94X9Q1TVW67VQ3KAQX8A39-briljant12",
+   "plaats": "utrecht",
+   "naam": "Briljant12"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01K8QK450S98QSR6V5KCW4MM2Q-wonen-op-de-terpen",
+   "plaats": "zwolle",
+   "naam": "Wonen Op De Terpen",
+   "woningen": null,
+   "lat": 52.54678172,
+   "lng": 6.04362981,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01KG4VPRZSTZ4GEFMKGB1THWTN-groenhove-thuis-in-de-tippe",
+   "plaats": "zwolle",
+   "naam": "Groenhove Thuis In De Tippe",
+   "woningen": null,
+   "lat": 52.53405853,
+   "lng": 6.03804105,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KFXC7T1DN2FD4QASJ2DZHWWH-albertville",
+   "plaats": "almere",
+   "naam": "Albertville"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01KG79T5M4C0Y6KYGEX523KER8-springfield",
+   "plaats": "arnhem",
+   "naam": "Springfield"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bergen-op-zoom/01KG7EZ00PSW1KGA2SMY8FW0C8-dumontsdreef-bergen-op-zoom",
+   "plaats": "bergen-op-zoom",
+   "naam": "Dumontsdreef Bergen Op Zoom"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deventer/01KBM604SNPZ70Q34YAS4CHHQQ-wonen-op-het-erf-fase-2",
+   "plaats": "deventer",
+   "naam": "Wonen Op Het Erf Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01KCNZGBYM4QJSMTB4PXC3T73R-dordts-buiten-fase-3",
+   "plaats": "dordrecht",
+   "naam": "Dordts Buiten Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/geertruidenberg/01K7P27WC8NF9J7EY6GXGKF2WC-oude-haven",
+   "plaats": "geertruidenberg",
+   "naam": "Oude Haven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goirle/01KCH1HHEV4JHW7BMZFSPTR8TM-de-oorsprong-fase-1",
+   "plaats": "goirle",
+   "naam": "De Oorsprong Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01KBPT3SPX31VVJF9PXBCCSJ0V-suikerzijde-hanny-van-den-horsthof",
+   "plaats": "groningen",
+   "naam": "Suikerzijde Hanny Van Den Horsthof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01KGM37BMY21N97JF3VVCBSKHE-honk-hoofddorp",
+   "plaats": "haarlemmermeer",
+   "naam": "Honk Hoofddorp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/het-hogeland/01KC94AYNWJHG6YR763DPGNTC6-wonen-in-ter-laan-4",
+   "plaats": "het-hogeland",
+   "naam": "Wonen In Ter Laan 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/mook-en-middelaar/01KFASDZQ2XWHEC474TN0ZZ0WK-dorps-wonen-ii",
+   "plaats": "mook-en-middelaar",
+   "naam": "Dorps Wonen Ii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01KFWXMYZ3JN1RNXQQ99GXSH6X-hogekade",
+   "plaats": "nijmegen",
+   "naam": "Hogekade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rheden/01JZJ1T6WFHGGC8ZD3CZATPYVG-het-broekveld-vianenstraat-velp",
+   "plaats": "rheden",
+   "naam": "Het Broekveld Vianenstraat Velp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JJ740EFAJR12J5198S1ZCVTK-atlas",
+   "plaats": "rotterdam",
+   "naam": "Atlas"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wijchen/01JFA0YVGCT7TMME00E38SN4RC-tussen-kasteel-en-wijchens-meer",
+   "plaats": "wijchen",
+   "naam": "Tussen Kasteel En Wijchens Meer"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01KFJVS6VGYCQBSRPW5JNZ32TP-kreekrijk-residence-buitenveld",
+   "plaats": "zaanstad",
+   "naam": "Kreekrijk Residence Buitenveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01KBMP9ZZZZFPX0T5K22FA6CJT-maasterras-fase-2b",
+   "plaats": "zwijndrecht",
+   "naam": "Maasterras Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01K9S29FKY3ETA56T2NVJAJ7MH-berkummer-dijck",
+   "plaats": "zwolle",
+   "naam": "Berkummer Dijck",
+   "woningen": 40,
+   "lat": 52.52763446,
+   "lng": 6.14021784,
+   "status": "In verkoop",
+   "jaren": [
+    2026
+   ],
+   "oplevering": 2026
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01K4VTWV7RJZJ1JAWG45Z0SY3W-7-loftwoningen",
+   "plaats": "almelo",
+   "naam": "7 Loftwoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KEVHREBZV55SNPCC1EZ72DPZ-home-base-new-brooklyn-fase-1",
+   "plaats": "almere",
+   "naam": "Home Base New Brooklyn Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KEVHS9A0XZ4DA5ZRPRF2NFTH-home-base-new-brooklyn-fase-2",
+   "plaats": "almere",
+   "naam": "Home Base New Brooklyn Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KF38APEVJE8V8JKAB7QW9Z47-home-base-new-brooklyn-fase-3",
+   "plaats": "almere",
+   "naam": "Home Base New Brooklyn Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KF38AQD6CNNFNJ5YXHSGTNR5-home-base-new-brooklyn-fase-4",
+   "plaats": "almere",
+   "naam": "Home Base New Brooklyn Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/boxtel/01KAZVEWTKB0Z9QVRW4J6C5Y0H-domus-nova",
+   "plaats": "boxtel",
+   "naam": "Domus Nova"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01J0R3BQ4NMECYHYJ02RKQX6HK-strijp-s4-fase-spark",
+   "plaats": "eindhoven",
+   "naam": "Strijp S4 Fase Spark"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01K8B6V3EKSPYHJSJS0C9GWE7Y-rozenrijk-in-zwaag",
+   "plaats": "hoorn",
+   "naam": "Rozenrijk In Zwaag"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nissewaard/01JFA0YVM0HYN106GN7VT2P62Z-vredehof-fase-1",
+   "plaats": "nissewaard",
+   "naam": "Vredehof Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oss/01KF3M8NJ2W4CGT7JCAT4PBQQE-dn-hertog",
+   "plaats": "oss",
+   "naam": "Dn Hertog"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/overbetuwe/01KB506MSB7WFDCVFGXNAE7MZ0-de-pas-noord",
+   "plaats": "overbetuwe",
+   "naam": "De Pas Noord"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/papendrecht/01K4YXKE2F46VY0S7DGGX86Z19-la-vinea",
+   "plaats": "papendrecht",
+   "naam": "La Vinea"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HDR2ZX5ZMDKMKG416BTT78YZ-kj-den-haag",
+   "plaats": "s-gravenhage",
+   "naam": "Kj Den Haag"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HZ5NB4V49WF2TP9FQBCKJBM1-de-helden-van-vroondaal",
+   "plaats": "s-gravenhage",
+   "naam": "De Helden Van Vroondaal"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01JKZW8REQS78KH9AJ636PN2QH-prelude",
+   "plaats": "schiedam",
+   "naam": "Prelude"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vijfheerenlanden/01KCGNJP5K8XQHNF754BRQ8WCJ-droomweide-fase-3a",
+   "plaats": "vijfheerenlanden",
+   "naam": "Droomweide Fase 3a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/weert/01KEYDEDCZCQXZSCEPPRW9PTQD-laarveld",
+   "plaats": "weert",
+   "naam": "Laarveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01KEC4EF1WCNKKYC28PCT1RHQ1-waelhoven-fase-2",
+   "plaats": "westland",
+   "naam": "Waelhoven Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01J85EG0XXBHNJS7E8RKY0FFYK-parkbuurt",
+   "plaats": "almelo",
+   "naam": "Parkbuurt"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KBJ7RCNQQSVD473CNZPVT6TW-ace-amsterdam-fase-2",
+   "plaats": "amsterdam",
+   "naam": "Ace Amsterdam Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01KBYFK15TG7R3AMWYPFDC80C3-twist-2",
+   "plaats": "borne",
+   "naam": "Twist 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goeree-overflakkee/01KBD1P8MC6GFC0R53AS6R1PTW-menheerse-erf-fase-2-de-tulp",
+   "plaats": "goeree-overflakkee",
+   "naam": "Menheerse Erf Fase 2 De Tulp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hardenberg/01KBHH10Q0N02GQQ9E4FR5A516-de-vechthage",
+   "plaats": "hardenberg",
+   "naam": "De Vechthage"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hardenberg/01KBHJQYH9B2XN5RVX6CB44HDE-de-vechtvliet",
+   "plaats": "hardenberg",
+   "naam": "De Vechtvliet"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/krimpenerwaard/01KCQ02RJD2WYCJK5BZVX43G53-waardse-weelde",
+   "plaats": "krimpenerwaard",
+   "naam": "Waardse Weelde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/molenlanden/01JM9XNXQMMZFEJP95CRWP75RA-de-overtuin",
+   "plaats": "molenlanden",
+   "naam": "De Overtuin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijkerk/01JE3KRW83CE6SX34BY7MSFHS4-doornsteeg-nijkerk",
+   "plaats": "nijkerk",
+   "naam": "Doornsteeg Nijkerk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nissewaard/01KCS197QDBTVJKCMGWQFZVZHA-stockholm",
+   "plaats": "nissewaard",
+   "naam": "Stockholm"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ridderkerk/01K0S6Y9EZ161726E50M0SE81X-het-donckse-hof",
+   "plaats": "ridderkerk",
+   "naam": "Het Donckse Hof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/roermond/01K8DVXY53PGE4EDZJQ4F7B9Z7-aan-de-vallei-fase-kiem-bosvillas",
+   "plaats": "roermond",
+   "naam": "Aan De Vallei Fase Kiem Bosvillas"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01K6MEGHSY7CZFWK2BFEG7ERTT-de-meesters-van-vroondaal",
+   "plaats": "s-gravenhage",
+   "naam": "De Meesters Van Vroondaal"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01K749HWMCZD2R303R13N88K3W-joy-merwede",
+   "plaats": "utrecht",
+   "naam": "Joy Merwede"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01KCTWHP3A2NCE1Z823MHSJ2DW-de-meesters-fase-1",
+   "plaats": "veenendaal",
+   "naam": "De Meesters Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/venray/01JHQRATESPP1GJNF4PNKWFZ10-de-lierhof",
+   "plaats": "venray",
+   "naam": "De Lierhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/voorschoten/01KC901KZ204QSWJNB5ZC28MHD-starrenburg-fase-1",
+   "plaats": "voorschoten",
+   "naam": "Starrenburg Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01K4T4TG1CSWVT7YP6S2KDFDF4-maasterras-fase-2a",
+   "plaats": "zwijndrecht",
+   "naam": "Maasterras Fase 2a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01KB028S5VMSFZYXVDVV31798N-de-groene-eem-laatste-bouwnummers",
+   "plaats": "almere",
+   "naam": "De Groene Eem Laatste Bouwnummers"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-chaam/01K6AQ736MB0RTF9G41PBGK4R8-meesters-van-galder",
+   "plaats": "alphen-chaam",
+   "naam": "Meesters Van Galder"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01HE50XD6ARBSF7VZ37YYHS6FQ-thorbeckekwartier-fase-1",
+   "plaats": "arnhem",
+   "naam": "Thorbeckekwartier Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/barneveld/01KAGNKHQV1EH9XN7YG4JHB9W0-de-nieuwe-buurtweg-fase-2",
+   "plaats": "barneveld",
+   "naam": "De Nieuwe Buurtweg Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-fryske-marren/01JWZWTC43YDES2JZNAPJ2TT7E-kameleonhofje",
+   "plaats": "de-fryske-marren",
+   "naam": "Kameleonhofje"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deventer/01KAKHK87TF0MJ2PT0Z0PGAPCJ-het-havenkwartier",
+   "plaats": "deventer",
+   "naam": "Het Havenkwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01KAVRY7ZHDZZPZ9N2W2QF0BBM-wonen-in-woodstone-maple",
+   "plaats": "dijk-en-waard",
+   "naam": "Wonen In Woodstone Maple"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ede/01KBCJ7WYNJ9MB1AEN8CTNNBVX-kernhemmerzoom",
+   "plaats": "ede",
+   "naam": "Kernhemmerzoom"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goeree-overflakkee/01K7EQ27JCJB3SEF1CYCYA48Z7-de-heerlijckheid-fase-2",
+   "plaats": "goeree-overflakkee",
+   "naam": "De Heerlijckheid Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goeree-overflakkee/01KBCSZ193DHEB1HFCHHEHP1J5-menheerse-erf-fase-4-de-salie",
+   "plaats": "goeree-overflakkee",
+   "naam": "Menheerse Erf Fase 4 De Salie"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01K85TXRDM2T49E1DF1VSJKTNP-wickevoort-westelijke-lanen",
+   "plaats": "haarlemmermeer",
+   "naam": "Wickevoort Westelijke Lanen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/opmeer/01K9Y3N2RY140HB3WHMTBHCMZJ-lidwina-plantsoen-te-spanbroek",
+   "plaats": "opmeer",
+   "naam": "Lidwina Plantsoen Te Spanbroek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01KA8QHGSD0KFPGQ9W2W56SDP9-hof-van-rijswijk-hofwoningen",
+   "plaats": "rijswijk-zh",
+   "naam": "Hof Van Rijswijk Hofwoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01KAZVEWYQ5Z3RK0Q09MRGG25Z-buitenhof",
+   "plaats": "rijswijk-zh",
+   "naam": "Buitenhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01KABRH4MWEKYB1H245Y2HKJMY-monchy-den-haag",
+   "plaats": "s-gravenhage",
+   "naam": "Monchy Den Haag"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-betuwe/01K7PGTSFGEWSTAFNAC0W0WW4F-hartje-haaften-fase-1",
+   "plaats": "west-betuwe",
+   "naam": "Hartje Haaften Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01KADRX39TE2HY0RAK1BDXYDTS-bommels-buiten",
+   "plaats": "west-maas-en-waal",
+   "naam": "Bommels Buiten"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01KB4XM2G2DAF07MKWVYKTV0N2-waelrijk-fase-3",
+   "plaats": "westland",
+   "naam": "Waelrijk Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alkmaar/01K8TWPFEAFJWC4NZ17DMDJ2CM-pendorp-fase-1b",
+   "plaats": "alkmaar",
+   "naam": "Pendorp Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01K8NG5SG1S2DJQA5GYJHPD4DA-loov-overgooi-fase-4",
+   "plaats": "almere",
+   "naam": "Loov Overgooi Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01K94T1T61A1D1MMJ34M778HQS-conrad",
+   "plaats": "amsterdam",
+   "naam": "Conrad"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01K71RG7PCARV3Z4W9PFWPFJNR-rebel-fase-3a",
+   "plaats": "breda",
+   "naam": "Rebel Fase 3a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/coevorden/01K9PZB5PKDM5ZVV22YZTMXWVV-16-grondgebonden-woningen-coevorden",
+   "plaats": "coevorden",
+   "naam": "16 Grondgebonden Woningen Coevorden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/diemen/01K9PV1SREJXGPYGAHZ4QAYAAX-hazel-ii-en-iii",
+   "plaats": "diemen",
+   "naam": "Hazel Ii En Iii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01K9FJGCM70VQXTV2RF39G1GHK-wonen-in-de-zomertaling",
+   "plaats": "dijk-en-waard",
+   "naam": "Wonen In De Zomertaling"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/halderberge/01HT4VTSGER2WJ9TB2K3YQVDVB-markhaven",
+   "plaats": "halderberge",
+   "naam": "Markhaven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/krimpen-aan-den-ijssel/01K58RKC3A0XE3CDWE7EWR79HM-hof-driekamp",
+   "plaats": "krimpen-aan-den-ijssel",
+   "naam": "Hof Driekamp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/medemblik/01K94WVBMFEDGDNGX1SQ8VNB6Z-poldervaart",
+   "plaats": "medemblik",
+   "naam": "Poldervaart"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/meierijstad/01K3R3MBRQ9MH31EN7PQ4AANSJ-deelplan-2-bundersehoek",
+   "plaats": "meierijstad",
+   "naam": "Deelplan 2 Bundersehoek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/purmerend/01K608RX2WBPSWSAJW7DYS92TN-kwadijkerpark-fase-3",
+   "plaats": "purmerend",
+   "naam": "Kwadijkerpark Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HYN4ZDX3W8BEE93ZEW7T1MBM-duinhil",
+   "plaats": "s-gravenhage",
+   "naam": "Duinhil"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/staphorst/01KA1GNKM0KWA6FDC0XWA79DP2-dunninkserf",
+   "plaats": "staphorst",
+   "naam": "Dunninkserf"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01K7RR2EHS8DENT33KW3546VRD-cix-merwede-fase-1",
+   "plaats": "utrecht",
+   "naam": "Cix Merwede Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01K8TCEDFWHB6VA2AFJZR3GHKH-bloom-park-fase-2",
+   "plaats": "utrecht",
+   "naam": "Bloom Park Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01HTHJEGZMCRQGEGKNTZVKW40D-hof-van-wael-verandawoningen-fase-2",
+   "plaats": "westland",
+   "naam": "Hof Van Wael Verandawoningen Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wierden/01HACNR3P0VG4A0YSVR2597YV4-zuidbroek-wierden-fase-3",
+   "plaats": "wierden",
+   "naam": "Zuidbroek Wierden Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01K7KV073BTMEW6YV4F6TYFK8W-buitenwaard",
+   "plaats": "dijk-en-waard",
+   "naam": "Buitenwaard"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01JV9Q1E7WG3V3EQZ9AC6NZPZS-satijnhof-fase-2",
+   "plaats": "enschede",
+   "naam": "Satijnhof Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01HJ8C8FT3BA5TJBMF7A4SCF2G-bloom",
+   "plaats": "haarlem",
+   "naam": "Bloom"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01K7MNKMJAE62HZ3Q25GFJ6A52-bavo-residences",
+   "plaats": "haarlem",
+   "naam": "Bavo Residences"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01JSM2SB1M12F8X409SWBTVWEB-sem-hoofddorp",
+   "plaats": "haarlemmermeer",
+   "naam": "Sem Hoofddorp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/land-van-cuijk/01K85D6A8ECQRDKQ2VJGB1A55F-maasbroeksche-blokken",
+   "plaats": "land-van-cuijk",
+   "naam": "Maasbroeksche Blokken"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/medemblik/01K88BKXS6CGQGXJDEJ1DQ71AE-bries-in-medemblik",
+   "plaats": "medemblik",
+   "naam": "Bries In Medemblik"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oldebroek/01K836T3C9J6PAM3A9J5CZVKYD-thuis-in-broeck",
+   "plaats": "oldebroek",
+   "naam": "Thuis In Broeck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K5RFN1JJ8QQY0NDH5B3AJA9S-hof-van-rijswijk-de-prinses",
+   "plaats": "rijswijk-zh",
+   "naam": "Hof Van Rijswijk De Prinses"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/roermond/01K7744QGT8AJ1RFXTJC3CXRG7-aan-de-vallei-fase-kiem",
+   "plaats": "roermond",
+   "naam": "Aan De Vallei Fase Kiem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6S4RN6BCE8B5PZX8HDF-mix-a-b",
+   "plaats": "rotterdam",
+   "naam": "Mix A B"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01K6FBPPAQBAXB6EX949J1GEF6-het-heij",
+   "plaats": "rotterdam",
+   "naam": "Het Heij"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01K7RR2EDQ2ATQYY3AH4G3T37C-lake-estate",
+   "plaats": "rotterdam",
+   "naam": "Lake Estate"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01K7P4T8D1BSRGEYYT6946Z2ED-blok-5-stadswoningen",
+   "plaats": "s-hertogenbosch",
+   "naam": "Blok 5 Stadswoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01K83007FZXMWT8FQTGNSAX8WM-west",
+   "plaats": "vlaardingen",
+   "naam": "West"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/waalwijk/01K7PF3VQ02N75ZSEJ2B1ZB040-loeff-fase-1",
+   "plaats": "waalwijk",
+   "naam": "Loeff Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westerkwartier/01K7RQ710AJFK8P1NJBXGPK2AY-noorderhorizon-fase-4",
+   "plaats": "westerkwartier",
+   "naam": "Noorderhorizon Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01K7P27WGGYVA7Z2C2CZWBGH36-linthof",
+   "plaats": "zwolle",
+   "naam": "Linthof",
+   "woningen": null,
+   "lat": 52.53339219,
+   "lng": 6.03542265,
+   "status": "In verkoop",
+   "jaren": [
+    2026
+   ],
+   "oplevering": 2026
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alblasserdam/01K6WTJGSRNNWMNWF7K3HKPKA5-kloos-rivier-appartementen",
+   "plaats": "alblasserdam",
+   "naam": "Kloos Rivier Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01K5753D81ZHA9K9D1F82XXWBS-de-groene-eem-bungalows",
+   "plaats": "almere",
+   "naam": "De Groene Eem Bungalows"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JY3RC663Q57FZMZAABNPAVF5-the-triplets",
+   "plaats": "amsterdam",
+   "naam": "The Triplets"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01JW8CYAKSMFQ3WN3XDNW8PWFF-oosterland",
+   "plaats": "de-ronde-venen",
+   "naam": "Oosterland"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01K601KQVHNNM17G19MMQ8WKBV-ten-hag-toren",
+   "plaats": "enschede",
+   "naam": "Ten Hag Toren"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01K629PSYSTSJ4Y6Z9DFYEKBXS-de-nieuwe-stijl-van-bloemstraat",
+   "plaats": "groningen",
+   "naam": "De Nieuwe Stijl Van Bloemstraat"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01K7HCWTTWVNHQS8Z16GN3SNJN-flora",
+   "plaats": "haarlemmermeer",
+   "naam": "Flora"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/kaag-en-braassem/01JXFMMV22YNYSQVNGDTH30C8N-waterlint",
+   "plaats": "kaag-en-braassem",
+   "naam": "Waterlint"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/koggenland/01K71NXYWKP5RSGKFZ9XDH6WHX-de-tuinen-ii",
+   "plaats": "koggenland",
+   "naam": "De Tuinen Ii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01JW5VDWNSQZ25Y4FBNA86WB3K-groene-erven-fase-1",
+   "plaats": "nijmegen",
+   "naam": "Groene Erven Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01K0C0NCT68Q1KZJF22TEMKQ6Y-groene-erven-fase-2",
+   "plaats": "nijmegen",
+   "naam": "Groene Erven Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01K5731HSGZH1DDXHQTVN4FACS-het-nieuwe-metterswane-fase-1",
+   "plaats": "nijmegen",
+   "naam": "Het Nieuwe Metterswane Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01K6MZ4VGYPBJVFRX5K1CDD9SJ-joie-de-vivre",
+   "plaats": "nijmegen",
+   "naam": "Joie De Vivre"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noardeast-fryslan/01K0VPRM6AGWRT5EX59BR03RCK-noarderstek-fase-4",
+   "plaats": "noardeast-fryslan",
+   "naam": "Noarderstek Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01K2MD7BF996ZTXBV26BAQ6X48-de-vesting-blok-5",
+   "plaats": "s-hertogenbosch",
+   "naam": "De Vesting Blok 5"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01K6A56A9WDKHTDE538XKSCGP6-zwijsen-ii",
+   "plaats": "tilburg",
+   "naam": "Zwijsen Ii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01K5ZVKDVJXPDMV79EWCGRCAV1-kraanbaan-fase-2",
+   "plaats": "west-maas-en-waal",
+   "naam": "Kraanbaan Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wormerland/01K6DBCHYT8ETFEKVRDM5SFYH4-silhouet",
+   "plaats": "wormerland",
+   "naam": "Silhouet"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alblasserdam/01J17F40YC833C1M5GS5VAC20H-kloos-loodsappartementen",
+   "plaats": "alblasserdam",
+   "naam": "Kloos Loodsappartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01K4PXTKBAVMQJ5JS3N0W6PDG4-de-groene-eem-57-m2",
+   "plaats": "almere",
+   "naam": "De Groene Eem 57 M2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01JT3CGRGF2WTQJGMXTMQ8M8RY-dillekwartier-fase-1",
+   "plaats": "arnhem",
+   "naam": "Dillekwartier Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bronckhorst/01JC0JYQHAS85T8YB4NCXDHA8A-het-witte-paard",
+   "plaats": "bronckhorst",
+   "naam": "Het Witte Paard"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bronckhorst/01JS4M2F24MWBF4KKHWAQJ6Y8M-de-buitentuin-van-baak",
+   "plaats": "bronckhorst",
+   "naam": "De Buitentuin Van Baak"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01JKDVKS0RXGPV28FSRRSCFET9-zuidendijkse-tuin",
+   "plaats": "dordrecht",
+   "naam": "Zuidendijkse Tuin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01JZ2HPYSYY7VYJGBGGXXQWBNT-bebrink-het-warenhuis",
+   "plaats": "hengelo-o",
+   "naam": "Bebrink Het Warenhuis"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/kaag-en-braassem/01K0PG8ND3GPAKXF14Z50HZN73-nieuwe-rede-fase-3",
+   "plaats": "kaag-en-braassem",
+   "naam": "Nieuwe Rede Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/land-van-cuijk/01K2284ZT9YA5J1PM68G1ATMBW-oploo-de-blauwe-beek-fase-2",
+   "plaats": "land-van-cuijk",
+   "naam": "Oploo De Blauwe Beek Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maastricht/01HF97M8PDH13XQ380PGJR363R-cour-200-koop-en-huurappartementen",
+   "plaats": "maastricht",
+   "naam": "Cour 200 Koop En Huurappartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordwijk/01K0E719RYAXFSNY80TWT65BD2-marea-koopaanbod",
+   "plaats": "noordwijk",
+   "naam": "Marea Koopaanbod"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordwijk/01K5981QZBERKC4ENEGN77BSVJ-zalt",
+   "plaats": "noordwijk",
+   "naam": "Zalt"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K5RFJATC5D9QCDQ5VATMDX2K-hof-van-rijswijk-de-prins",
+   "plaats": "rijswijk-zh",
+   "naam": "Hof Van Rijswijk De Prins"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/roosendaal/01HJ8GXQVH1VFVZM3B6J7307X3-leonard-roosendaal",
+   "plaats": "roosendaal",
+   "naam": "Leonard Roosendaal"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01JZTBZ95418GR302TAH8QQR0Q-dirkzwager-fase-3",
+   "plaats": "schiedam",
+   "naam": "Dirkzwager Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/venlo/01JACQVAFCX2VWZ64F6BHMP4JG-tango",
+   "plaats": "venlo",
+   "naam": "Tango"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zeist/01K10PD7S895CE8M6N5CCA1Z3S-eikenstein-fase-3-36-woningen",
+   "plaats": "zeist",
+   "naam": "Eikenstein Fase 3 36 Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01K5NJW0TXCRQXGA805PYJMQEQ-de-tippe-de-zuidpunt",
+   "plaats": "zwolle",
+   "naam": "De Tippe De Zuidpunt",
+   "woningen": 300,
+   "lat": 52.52898812,
+   "lng": 6.04646508,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01K3JQBJF42PENKEWM65WZHR7D-de-nieuwe-meesters",
+   "plaats": "almelo",
+   "naam": "De Nieuwe Meesters"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JZJ59W22XZZ1B2PTAFR3DPVK-elzenhagen-noordhof-4",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Noordhof 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01K1ZZ6D20EPVXHBHFRDVNFV7B-elzenhagen-noordhof-3",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Noordhof 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/berkelland/01K0RZ73AZ4WRR0E7BBQM5AQSJ-de-oude-halte",
+   "plaats": "berkelland",
+   "naam": "De Oude Halte"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/brunssum/01JYH2YQ27ACD0PFFR7Q0Z63F1-brunssum-emmakwartier",
+   "plaats": "brunssum",
+   "naam": "Brunssum Emmakwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01K0P8M7GPCB7EE4E5W7MAAJR7-nova-groningen",
+   "plaats": "groningen",
+   "naam": "Nova Groningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01HACBEH67RECQVS1HNXZAKK7C-spaarnse-terrassen",
+   "plaats": "haarlem",
+   "naam": "Spaarnse Terrassen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01K1TECE9TN82NV7VNPZQZ07KY-slachthuis-suites",
+   "plaats": "haarlem",
+   "naam": "Slachthuis Suites"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/halderberge/01K0CBT5SV7KE1TD3E88FMYPY3-groene-vaart-fase-3",
+   "plaats": "halderberge",
+   "naam": "Groene Vaart Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hilversum/01K0XW9AT0D0TFMW507MDAJ2AA-de-inktfabriek",
+   "plaats": "hilversum",
+   "naam": "De Inktfabriek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lochem/01K0RZ73FQFHE8B0KE774AJKC7-de-hogekamp",
+   "plaats": "lochem",
+   "naam": "De Hogekamp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nederweert/01K361ZVZTF6C09181T59VPM2P-winnerstraat",
+   "plaats": "nederweert",
+   "naam": "Winnerstraat"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwkoop/01K2HNNVEW4V1R8HFNGS401G5F-heren-van-noord",
+   "plaats": "nieuwkoop",
+   "naam": "Heren Van Noord"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01K3XN9RRJGBFJZVPE52KB1H31-meijn",
+   "plaats": "nijmegen",
+   "naam": "Meijn"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01K0786JVFRKZ0E090M2XFSF58-victoria-tilburg-fase-1",
+   "plaats": "tilburg",
+   "naam": "Victoria Tilburg Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01K249CCT2BEMG0WD2MSJGV43C-nosara",
+   "plaats": "utrecht",
+   "naam": "Nosara"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westerkwartier/01J41S1E9G9JQ6SM1RPBZJ2ZVG-noorderhorizon-fase-2",
+   "plaats": "westerkwartier",
+   "naam": "Noorderhorizon Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01K1B9E8FDWAPGMYKPQ8XPFFXS-de-zwaan-zwolle",
+   "plaats": "zwolle",
+   "naam": "De Zwaan Zwolle",
+   "woningen": null,
+   "lat": 52.51635797,
+   "lng": 6.08960152,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01JZ2G0205XDFAWAK1RJ9DFSSJ-thorbeckehof-almelo-fase-2",
+   "plaats": "almelo",
+   "naam": "Thorbeckehof Almelo Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01JQBXSN8K3K3PS6SQJEAMQBKS-new-brooklyn-bridge",
+   "plaats": "almere",
+   "naam": "New Brooklyn Bridge"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01JZ2G01VK6AGAZN9JKVDQQW8J-groenwold",
+   "plaats": "apeldoorn",
+   "naam": "Groenwold"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bronckhorst/01JZ315BESBB7JNQ744WFVNXS8-wissinkerf-vorden",
+   "plaats": "bronckhorst",
+   "naam": "Wissinkerf Vorden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gooise-meren/01JZJEP6405677EJ03212RXK3S-marienburg-fase-1",
+   "plaats": "gooise-meren",
+   "naam": "Marienburg Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01JF09CS9ZWKD18YYVVC1AGCHP-lourdeshof-appartementen",
+   "plaats": "haaksbergen",
+   "naam": "Lourdeshof Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01JF7EJ5MTAN0S8B1RW0R5VXK8-hassinkborgh",
+   "plaats": "haaksbergen",
+   "naam": "Hassinkborgh"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hilvarenbeek/01K04FF7E4NRQABVCXB74MRE2G-hilvarenbeek-bosvillas-de-utrecht",
+   "plaats": "hilvarenbeek",
+   "naam": "Hilvarenbeek Bosvillas De Utrecht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01JZ315BAMYGXAC40G6AW4QPZK-rhijn",
+   "plaats": "nieuwegein",
+   "naam": "Rhijn"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordenveld/01JZ2HPYH578BSDSMN8F18V0HJ-de-boterlinie",
+   "plaats": "noordenveld",
+   "naam": "De Boterlinie"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/papendrecht/01JZ315BKEGFS5FR0GDAKN8Z6T-het-markthuis",
+   "plaats": "papendrecht",
+   "naam": "Het Markthuis"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01JZ2M5ZTNP08R8PT3B6G3ZV23-pasgeld",
+   "plaats": "rijswijk-zh",
+   "naam": "Pasgeld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5H2G80ZBHSCAREBN3VPD0S-koer-stadsvilla-karakter",
+   "plaats": "rotterdam",
+   "naam": "Koer Stadsvilla Karakter"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01JZHAGD6RRC3BFCE79JP72D97-smariuskade-fase-desem",
+   "plaats": "tilburg",
+   "naam": "Smariuskade Fase Desem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01K0CG3G2GNG3XYNTNWMDWM3N0-de-pieter-tilburg",
+   "plaats": "tilburg",
+   "naam": "De Pieter Tilburg"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01JZW1YYQWYE5Q34DMB7RWVSYM-bloom-park-fase-1",
+   "plaats": "utrecht",
+   "naam": "Bloom Park Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01JYNT0P8BFRP7MKSXCN2GGY2B-de-velden-deelplan-d-fase-2",
+   "plaats": "zaanstad",
+   "naam": "De Velden Deelplan D Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01JZ2F4JATC6NKRRNNCDR307XW-philip-milan-amelie-en-olivia",
+   "plaats": "zwolle",
+   "naam": "Philip Milan Amelie En Olivia",
+   "woningen": null,
+   "lat": 52.51159654,
+   "lng": 6.10237751,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01JWBSYGNXJ5660B6Q33DEDHX6-parkbuurt-fase-1b",
+   "plaats": "almelo",
+   "naam": "Parkbuurt Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01JWZV3F1CNKRFN7W6NSZT7HJE-parkbuurt-almelo-fase-1b",
+   "plaats": "almelo",
+   "naam": "Parkbuurt Almelo Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JN1QG8G0F69FNZAFBJ35DQ4S-bajeskwartier-the-emerald",
+   "plaats": "amsterdam",
+   "naam": "Bajeskwartier The Emerald"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01JY691Z7JR7V25SC8T0RVXSX2-wonen-in-woodstone-pine",
+   "plaats": "dijk-en-waard",
+   "naam": "Wonen In Woodstone Pine"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/druten/01JS3YJTBBMRNKNEYQKB8073SY-portier-woningen",
+   "plaats": "druten",
+   "naam": "Portier Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01H963AHQNQT3A37SR2279C2Z4-lightyards",
+   "plaats": "eindhoven",
+   "naam": "Lightyards"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gouda/01JY75CAWXA66K899Q4W3P8YMT-de-zaayer",
+   "plaats": "gouda",
+   "naam": "De Zaayer"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01JP7VEQQJ68A3VRDEHEJ3JVEF-nieuwe-weelde",
+   "plaats": "hoorn",
+   "naam": "Nieuwe Weelde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/laarbeek/01JYRN0N5GFNKF4JDA2CVSRRFE-klokkengietery",
+   "plaats": "laarbeek",
+   "naam": "Klokkengietery"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lelystad/01HDZZ9QGPN5QMJXCB2HK1S60K-duin-water-fase-3a",
+   "plaats": "lelystad",
+   "naam": "Duin Water Fase 3a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maastricht/01JX013PWTP9HCYFG395QAVCB1-fleur-deux-46-eengezinswoningen",
+   "plaats": "maastricht",
+   "naam": "Fleur Deux 46 Eengezinswoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01JY4RZW2WSJRP37M4RQEADR6N-duux",
+   "plaats": "nijmegen",
+   "naam": "Duux"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/opsterland/01JX20M5RE7WD5Q18BAEP0TYVN-de-vrieswijck-fase-3",
+   "plaats": "opsterland",
+   "naam": "De Vrieswijck Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JWQVCF4HNX5R2N3SEA0XS6AK-new-maas",
+   "plaats": "rotterdam",
+   "naam": "New Maas"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/valkenswaard/01J9XY9AB1BAS45XR0RNAXP6B8-valkenswaard-mariakerk",
+   "plaats": "valkenswaard",
+   "naam": "Valkenswaard Mariakerk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veldhoven/01JWZZCT0M2F25SW5HRM0DBP21-veldhoven-slot-oost",
+   "plaats": "veldhoven",
+   "naam": "Veldhoven Slot Oost"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01JXF3FG3448DHSBTGMGV1C2G7-zwanenpark-fase-1",
+   "plaats": "vlaardingen",
+   "naam": "Zwanenpark Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zevenaar/01JWB1DRFRH9E0Q3TWTDY2P2NG-het-hof-fase-2",
+   "plaats": "zevenaar",
+   "naam": "Het Hof Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01JFHSWKS1MKG44XXHAPYD4E7F-39-appartementen-5-havenvillas",
+   "plaats": "almelo",
+   "naam": "39 Appartementen 5 Havenvillas"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01JWAZB20JAPRA49H4HNFW5842-bouwkavels-almelo-noordoost",
+   "plaats": "almelo",
+   "naam": "Bouwkavels Almelo Noordoost"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JNGNKZT04BFP95MABH3G3G6A-elzenhagen-zuidbuurt-parkvillas-10-11-en-12",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Zuidbuurt Parkvillas 10 11 En 12"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01JWTVET1B10C15FY28RTK7C09-avalon-fase-2",
+   "plaats": "breda",
+   "naam": "Avalon Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01JX2BS7PG1QSVHG92K1Z4QD9N-de-veenhoven-mijdrecht",
+   "plaats": "de-ronde-venen",
+   "naam": "De Veenhoven Mijdrecht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01JPMB49Z3HRFW5KXC7P7RAMRH-the-yard-ii",
+   "plaats": "dordrecht",
+   "naam": "The Yard Ii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGVVD3AJRMXAXZ98F0VAM69-de-assinkhof",
+   "plaats": "enschede",
+   "naam": "De Assinkhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01JXD33JJPF3ASQ75TMH9KZKQG-de-pastorie-markt-12",
+   "plaats": "haaksbergen",
+   "naam": "De Pastorie Markt 12"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01JVPEQXHB6F4AE2DE1NXJB9QW-rootz-haarlem-blossom",
+   "plaats": "haarlem",
+   "naam": "Rootz Haarlem Blossom"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01HHYGRDDM6FRWM66ZVSNVCY72-de-oost-hoofddorp",
+   "plaats": "haarlemmermeer",
+   "naam": "De Oost Hoofddorp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01JWZM7QM44KVX3KSKC092YHRJ-leeuwarden-unia-de-boomgaard",
+   "plaats": "leeuwarden",
+   "naam": "Leeuwarden Unia De Boomgaard"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leiden/01JVY991QPQNDX4FXPC3390MJ1-de-lakenpoort",
+   "plaats": "leiden",
+   "naam": "De Lakenpoort"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01JWBZ3JK3HACH1PDE07A6Q6QY-het-zandse-hoogland",
+   "plaats": "nijmegen",
+   "naam": "Het Zandse Hoogland"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/smallingerland/01JWZM7QF75BH9FWG26G954CQP-drachten-elzenrijck",
+   "plaats": "smallingerland",
+   "naam": "Drachten Elzenrijck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westerkwartier/01JS1719TDXYE4KDE4KX01XR4N-de-groene-gaarde",
+   "plaats": "westerkwartier",
+   "naam": "De Groene Gaarde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01HTHJEGWW9YAGJAM9FT9ZXCFC-hof-van-wael-verandawoningen-fase-1",
+   "plaats": "westland",
+   "naam": "Hof Van Wael Verandawoningen Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01JSPFNR7QYRN6AMD580ZM0ZA5-waelhoven-fase-1",
+   "plaats": "westland",
+   "naam": "Waelhoven Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wijchen/01JEDYBZA3PR6N82SGP5WS7N17-de-burchtwaarde",
+   "plaats": "wijchen",
+   "naam": "De Burchtwaarde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01JR7QPMQGJZQADRR583XNXS9F-thorbeckehof-almelo-fase-1",
+   "plaats": "almelo",
+   "naam": "Thorbeckehof Almelo Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JQBV64YRPD6GMAYFCDCSJ0QH-elzenhagen-noordhof-5",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Noordhof 5"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01JS46AB45VD2Z9VZ27BZ7TZD5-2-geschakelde-levensloopbestendige-woningen",
+   "plaats": "apeldoorn",
+   "naam": "2 Geschakelde Levensloopbestendige Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01JRG1QBW42BQDWVQ0ZYDEXDVX-bolstoren",
+   "plaats": "haarlemmermeer",
+   "naam": "Bolstoren"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hendrik-ido-ambacht/01JMYSYH5FTNW5PMEKTZH7NY05-kraanspoor",
+   "plaats": "hendrik-ido-ambacht",
+   "naam": "Kraanspoor"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01JAT2DSTCFQPVQG1G60KVHHC2-common-ground",
+   "plaats": "nieuwegein",
+   "naam": "Common Ground"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JR09HGSAJMES98D26E2Y3WNW-nieuw-kralingen",
+   "plaats": "rotterdam",
+   "naam": "Nieuw Kralingen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JRYV0RX2SMRT0Z3EHBR65K6Y-carnisse-eiland",
+   "plaats": "rotterdam",
+   "naam": "Carnisse Eiland"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JSPHCMW8C9EN4PDHGHGE5BSJ-weder",
+   "plaats": "rotterdam",
+   "naam": "Weder"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JRYVHZM1KZV19X63QR5761Q7-opdreef",
+   "plaats": "s-gravenhage",
+   "naam": "Opdreef"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schagen/01JRZ42ZQWZEHSPC700YJGMHK4-dijkzicht",
+   "plaats": "schagen",
+   "naam": "Dijkzicht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/stein-l/01JSED3Q5M9PRG85663575S3XA-lindehagen-fase-1b",
+   "plaats": "stein-l",
+   "naam": "Lindehagen Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/stichtse-vecht/01J2EASZV7M2KKAXYZYB9A1DDS-hof-van-clarenborg-fase-1",
+   "plaats": "stichtse-vecht",
+   "naam": "Hof Van Clarenborg Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01JR89NJAC6FH4C8VAATXRQFSV-bosuil",
+   "plaats": "terneuzen",
+   "naam": "Bosuil"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01JSEBKJD9Z09MDNYJB82802TF-wildgroei",
+   "plaats": "utrecht",
+   "naam": "Wildgroei"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vijfheerenlanden/01JS018T23YMC96T2ZMXT83AQ5-droomweide-fase-2",
+   "plaats": "vijfheerenlanden",
+   "naam": "Droomweide Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westerkwartier/01JQPAKFK0YWBGNPXQS7KRC0HS-noorderhorizon-fase-3",
+   "plaats": "westerkwartier",
+   "naam": "Noorderhorizon Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01JTTFGV2DV1E0312MXRAFBN91-wonen-op-hembrug",
+   "plaats": "zaanstad",
+   "naam": "Wonen Op Hembrug"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JPHHYR8WYH5KGMJQRK4BK9H2-patchwork-fase-1",
+   "plaats": "amsterdam",
+   "naam": "Patchwork Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JQV5YTM0798HBVMAZPPQHV3G-tuinkwartier",
+   "plaats": "amsterdam",
+   "naam": "Tuinkwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01J9NXDWN74EJXCFA950Z7SAMA-avalon-fase-1",
+   "plaats": "breda",
+   "naam": "Avalon Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/emmen/01JPWBTF2595A58H371A7AA18M-de-angerloo",
+   "plaats": "emmen",
+   "naam": "De Angerloo"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01JFHPEH6N7M33RC8P8MQGPVMT-bolke-next",
+   "plaats": "enschede",
+   "naam": "Bolke Next"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ermelo/01JPSJD2KAAF6XPYJ95K8R1X9T-bosleven-ermelo-fase-villa-veldwijck",
+   "plaats": "ermelo",
+   "naam": "Bosleven Ermelo Fase Villa Veldwijck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01J4VTFKX95QHZBYSSZXXX18E4-23stories",
+   "plaats": "haarlem",
+   "naam": "23stories"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leiden/01HTPHS3HC4YGYBVPSAKEW2F0Q-sonja-sophia",
+   "plaats": "leiden",
+   "naam": "Sonja Sophia"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01H9GN7P44YGJTYAFFWBG9MK32-eve-nieuwbouw",
+   "plaats": "leidschendam-voorburg",
+   "naam": "Eve Nieuwbouw"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lochem/01HSGWPRA3PZEWMR3ZE5MQQSM2-opgelder",
+   "plaats": "lochem",
+   "naam": "Opgelder"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/meppel/01J089RQRAHYDGTZ7YAXW73D10-de-tuinkamer-fase-2-noordelijk-lint",
+   "plaats": "meppel",
+   "naam": "De Tuinkamer Fase 2 Noordelijk Lint"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/meppel/01JN0YKS0K6XBKXCHNGBFNNGNS-de-tuinkamer-fase-3-noordelijk-lint",
+   "plaats": "meppel",
+   "naam": "De Tuinkamer Fase 3 Noordelijk Lint"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JPSWSPAHN5XQ95KQA2FDTNKV-the-caland",
+   "plaats": "rotterdam",
+   "naam": "The Caland"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schouwen-duiveland/01JN68J00N3WE77F6W62TH7HN4-hofstee-ii",
+   "plaats": "schouwen-duiveland",
+   "naam": "Hofstee Ii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schouwen-duiveland/01JN68J05QJFMC4092D2QQWCHF-noorderlofts-madeleine",
+   "plaats": "schouwen-duiveland",
+   "naam": "Noorderlofts Madeleine"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/stichtse-vecht/01JC0R3GZNKS9M6SC5W2KZWBVE-neptunus",
+   "plaats": "stichtse-vecht",
+   "naam": "Neptunus"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01HSBJRKJ5KE5Y189VETQ419MJ-boomgaerde-fase-2",
+   "plaats": "westland",
+   "naam": "Boomgaerde Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01JPSHMMF9V0MV27MCNJB90R1G-de-velden-deelplan-d-fase1",
+   "plaats": "zaanstad",
+   "naam": "De Velden Deelplan D Fase1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JJ7CQCZAQ9CPK5NXAKRDNZ2E-boegbeeld-79-woningen",
+   "plaats": "amsterdam",
+   "naam": "Boegbeeld 79 Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HJ8GXM8H3NJM058ZRGJDT953-fonkel-breda",
+   "plaats": "breda",
+   "naam": "Fonkel Breda"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/drechterland/01JKG13QCYRRFC35V1JA8K0TSV-hillegaar-venhuizen",
+   "plaats": "drechterland",
+   "naam": "Hillegaar Venhuizen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/etten-leur/01HT5CVV7FCKPR3V24DB8080FJ-podium",
+   "plaats": "etten-leur",
+   "naam": "Podium"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01HE50XCXC18G7KFC4FBRGRSKG-o-kade",
+   "plaats": "groningen",
+   "naam": "O Kade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01J8SWG312TBRPWX65DV3R9BCE-suikerzijde-bernard-rolinghof",
+   "plaats": "groningen",
+   "naam": "Suikerzijde Bernard Rolinghof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01JN427M21BTR1SS716357HB83-de-schakeling",
+   "plaats": "hengelo-o",
+   "naam": "De Schakeling"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/krimpenerwaard/01JKR5482R3ET92KSQ3GD3ZBY2-wonen-aan-de-spoorsingel-fase-2",
+   "plaats": "krimpenerwaard",
+   "naam": "Wonen Aan De Spoorsingel Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01JFTNZ4YE5CEXRG8C1WR9Q2XD-pioniers-van-middelsee-fase-1",
+   "plaats": "leeuwarden",
+   "naam": "Pioniers Van Middelsee Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/medemblik/01JMYK2SKX61DAM1BR8M720XKR-beldershoek",
+   "plaats": "medemblik",
+   "naam": "Beldershoek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oosterhout/01JP27RVX7GEDMQ14DV8Y68TGJ-wisselkwartier",
+   "plaats": "oosterhout",
+   "naam": "Wisselkwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rheden/01JC0J3GGT26KKCAZ3R536DJTD-velperwaard",
+   "plaats": "rheden",
+   "naam": "Velperwaard"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H906KQK346GPP7CR2T37V5CZ-willemspoort-zuid",
+   "plaats": "s-hertogenbosch",
+   "naam": "Willemspoort Zuid"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01JP5665NYYXPCNSE037XT4PBA-stek-othene",
+   "plaats": "terneuzen",
+   "naam": "Stek Othene"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/voorne-aan-zee/01JNZHY8WSN0DDTFPTTX7R6Q2W-duinkust",
+   "plaats": "voorne-aan-zee",
+   "naam": "Duinkust"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01JM2C4QTZ26GMRSBQN6TH4GPK-kraanbaan-fase-1b",
+   "plaats": "west-maas-en-waal",
+   "naam": "Kraanbaan Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zevenaar/01HQ3PR6N2VPWH984K7ECPST45-dorpsweide-fase-1",
+   "plaats": "zevenaar",
+   "naam": "Dorpsweide Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zevenaar/01JF7FDKS7XBD78HZCS59VVYBT-vier-appartementen-tolkamer",
+   "plaats": "zevenaar",
+   "naam": "Vier Appartementen Tolkamer"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01JBHC9M0FZZ024KMJ4TASYG56-oosteinderkwartier",
+   "plaats": "aalsmeer",
+   "naam": "Oosteinderkwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/barendrecht/01JF0C105VY9DPKKHA0S31DPK8-zuydpolder-barendrecht-kastanje-erf",
+   "plaats": "barendrecht",
+   "naam": "Zuydpolder Barendrecht Kastanje Erf"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/best/01JFCN22AK8SR21B18W0XGW2AH-b-centraal",
+   "plaats": "best",
+   "naam": "B Centraal"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dongen/01JF7AGNXJMG55GGNC3BX085MK-noorderbunder",
+   "plaats": "dongen",
+   "naam": "Noorderbunder"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01JERE3FX1EW2TFFCSNZ6NTDWY-het-baken-van-meerstad",
+   "plaats": "groningen",
+   "naam": "Het Baken Van Meerstad"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01JFAJ4683K5E3ZY75JYR6YB89-stadshavens-trossen-los",
+   "plaats": "groningen",
+   "naam": "Stadshavens Trossen Los"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01JF7EJ5RAA8A82F7NQXNRFK84-t-notarishoes",
+   "plaats": "haaksbergen",
+   "naam": "T Notarishoes"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01J08BFNEDHDRJXR42AQA4K4N2-de-venoever",
+   "plaats": "haarlemmermeer",
+   "naam": "De Venoever"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/halderberge/01J194M8Z1EC1GKGK4BHZ56TEF-sint-anna-oudenbosch",
+   "plaats": "halderberge",
+   "naam": "Sint Anna Oudenbosch"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hardinxveld-giessendam/01JEBG6S9ND39ECWBPGGT5XXQZ-ons-dorp-fase-3",
+   "plaats": "hardinxveld-giessendam",
+   "naam": "Ons Dorp Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01JF7EJ65389GN273FSYCH3GC2-dikkerscomplex",
+   "plaats": "hengelo-o",
+   "naam": "Dikkerscomplex"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/roermond/01JEZPT9MDYWQ9A9MDK2JVBAMM-sjtadshaof-fase-2b",
+   "plaats": "roermond",
+   "naam": "Sjtadshaof Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HSDTVM298367FN1V8NYT3A8J-corner-lofts",
+   "plaats": "s-gravenhage",
+   "naam": "Corner Lofts"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JJ4QQ7VPAEXYR06BYMT0HRAX-orion",
+   "plaats": "s-gravenhage",
+   "naam": "Orion"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01HD3C418G9SX0BF59MQAE32PD-park-vijfsluizen",
+   "plaats": "vlaardingen",
+   "naam": "Park Vijfsluizen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/waalwijk/01JFAACZGY2QH1Q7S4RQE33ZWZ-florissant",
+   "plaats": "waalwijk",
+   "naam": "Florissant"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01JAQP2VBQK5Y8447B3CB74BMS-muntbloem",
+   "plaats": "zaanstad",
+   "naam": "Muntbloem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zevenaar/01JJP3YGBQKXWMSJ3S4Z6S682W-het-nieuwe-juvenaat",
+   "plaats": "zevenaar",
+   "naam": "Het Nieuwe Juvenaat"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01HQAJ8JM9HTF4WPN6BHRY6V9G-wonen-in-het-tolhof",
+   "plaats": "almelo",
+   "naam": "Wonen In Het Tolhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-chaam/01HGFPE8QBZC8CGS4YBBRJX401-eijckenwijck",
+   "plaats": "alphen-chaam",
+   "naam": "Eijckenwijck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01J8MATP5YQV2PY74WMKEF4BN9-urbn62",
+   "plaats": "groningen",
+   "naam": "Urbn62"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01JDJEHPDNJQHHDW3TAS75KG7Z-evert-wonen",
+   "plaats": "groningen",
+   "naam": "Evert Wonen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/kaag-en-braassem/01JBCGY9EBWK8KB0F1GT4SRP49-nieuwe-rede-fase-2a",
+   "plaats": "kaag-en-braassem",
+   "naam": "Nieuwe Rede Fase 2a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/land-van-cuijk/01J9XY3ZGP17A85M2B8ZYMWJ8V-velp-bosrijk-mariendaal",
+   "plaats": "land-van-cuijk",
+   "naam": "Velp Bosrijk Mariendaal"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maassluis/01HMGYM131R94XVDBNYMAXGV9Q-puur-maassluis",
+   "plaats": "maassluis",
+   "naam": "Puur Maassluis"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/moerdijk/01HY2VKQ7RE07T0K6S6DG5GDMR-het-nieuwe-suikerentrepot",
+   "plaats": "moerdijk",
+   "naam": "Het Nieuwe Suikerentrepot"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwkoop/01JC3ESJT704PNN4WQT89F5GHM-buyteleven",
+   "plaats": "nieuwkoop",
+   "naam": "Buyteleven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oostzaan/01JBM7AT70BG1V8ZHMQRR701JZ-waterhof-oostzaan",
+   "plaats": "oostzaan",
+   "naam": "Waterhof Oostzaan"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vught/01JD6XYA7Q0EKM0RYTYHCT2E92-buitenplaats-kraaijenberg",
+   "plaats": "vught",
+   "naam": "Buitenplaats Kraaijenberg"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01HR761BVFFMH489RFWPK8X2HF-kraanbaan-fase-1",
+   "plaats": "west-maas-en-waal",
+   "naam": "Kraanbaan Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01HW7G5VVE39H50GQ8C1BV0JP5-lauwendael-fase-1",
+   "plaats": "west-maas-en-waal",
+   "naam": "Lauwendael Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wijdemeren/01JD2FW7T8PK6MWTRQXCQ8GS65-porseleinhaven",
+   "plaats": "wijdemeren",
+   "naam": "Porseleinhaven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/winterswijk/01HSGVVCV0QXXGXK36KYXGD6PC-nieuw-gelle-fase-3",
+   "plaats": "winterswijk",
+   "naam": "Nieuw Gelle Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01J8J5F6KGWZH9DDHQFRYJWW9C-zaam-zaandam",
+   "plaats": "zaanstad",
+   "naam": "Zaam Zaandam"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01JDW68FM3GJ54JS8EQAPHCMAT-edisonpark",
+   "plaats": "zoetermeer",
+   "naam": "Edisonpark"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01JDQ4R6GDRNT066ZVQZYP7PFC-nieuwstad-zwolle",
+   "plaats": "zwolle",
+   "naam": "Nieuwstad Zwolle",
+   "woningen": null,
+   "lat": 52.51898472,
+   "lng": 6.10379831,
+   "status": "In verkoop",
+   "jaren": [
+    2027
+   ],
+   "oplevering": 2027
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963AVFRFD3822N2W92ZJ6WV-zoe",
+   "plaats": "amsterdam",
+   "naam": "Zoe"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HE5GGGB6J174N6CR0855MEFF-ace",
+   "plaats": "amsterdam",
+   "naam": "Ace"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01J8SY71H3NE6JC1ST6CVSJ5RN-roof-garden",
+   "plaats": "amsterdam",
+   "naam": "Roof Garden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HX75SJYTNMGDS4DX0TJGKFZ7-de-generaal",
+   "plaats": "breda",
+   "naam": "De Generaal"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-fryske-marren/01HWSTD0VP1YN230GCRXF9QQ9G-hof-fan-lemmer-kavels",
+   "plaats": "de-fryske-marren",
+   "naam": "Hof Fan Lemmer Kavels"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01HDZYZZHFT1ZHXQ3TTVG3HX40-havenkade-watervillas-libera",
+   "plaats": "dronten",
+   "naam": "Havenkade Watervillas Libera"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01J6F0YZYAG0SDSXQX8D11F3RY-vdma",
+   "plaats": "eindhoven",
+   "naam": "Vdma"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gemert-bakel/01J8EYA1YR8Z92C69Z596NMFFY-doonheide-ii-fase-4",
+   "plaats": "gemert-bakel",
+   "naam": "Doonheide Ii Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01HWDD0B6J6R0Q50Z2PH3WJE6Q-plaza-residences-haarlem",
+   "plaats": "haarlem",
+   "naam": "Plaza Residences Haarlem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/harderwijk/01J326W8KFPD94PTBYMYMB29T7-kop-van-de-stadswerven",
+   "plaats": "harderwijk",
+   "naam": "Kop Van De Stadswerven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leusden/01HAC4JSE8TW0MAAM8RBA672NH-florant",
+   "plaats": "leusden",
+   "naam": "Florant"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/molenlanden/01HPS2E507GC019PZ0E8QRTDT0-het-houthof",
+   "plaats": "molenlanden",
+   "naam": "Het Houthof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/roermond/01HT28VHA1P0RMVQEJA7Y2TB8S-sjtadshaof-fase-2a",
+   "plaats": "roermond",
+   "naam": "Sjtadshaof Fase 2a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01J5R4WF26K61XKC3RMB4PDC4Z-oranjehof",
+   "plaats": "terneuzen",
+   "naam": "Oranjehof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westerkwartier/01J84SVYVVRYDGSK8FA420FR7Y-de-oostergast",
+   "plaats": "westerkwartier",
+   "naam": "De Oostergast"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wierden/01HQAK0CECTE2V5TAAJ844HVYS-wederstaete",
+   "plaats": "wierden",
+   "naam": "Wederstaete"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zutphen/01J1WBQWSXA63ATVVPN9QN9N57-schouwbroek",
+   "plaats": "zutphen",
+   "naam": "Schouwbroek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01H963AJ4X19MFKFAXJHSGG970-lindesteyn",
+   "plaats": "zwijndrecht",
+   "naam": "Lindesteyn"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HSZFM4QZ5PGA3ZD5C9QXD90G-blau",
+   "plaats": "amsterdam",
+   "naam": "Blau"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HT56DBHK19TZ6K8MPKA85AH6-beeks-buiten",
+   "plaats": "breda",
+   "naam": "Beeks Buiten"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HT56EYHCNH491ZR92HQ49T0S-heiveldhoef",
+   "plaats": "breda",
+   "naam": "Heiveldhoef"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deurne/01HY0970H8N2YE7MQEYEMW2FNZ-grote-bottel",
+   "plaats": "deurne",
+   "naam": "Grote Bottel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/diemen/01HWDB9Q3XFXEYKBE1VVR3TGV8-the-green-gallery",
+   "plaats": "diemen",
+   "naam": "The Green Gallery"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01HSZFM4MQVVFM9TC47X46S5G0-wonen-in-woodstone-oak",
+   "plaats": "dijk-en-waard",
+   "naam": "Wonen In Woodstone Oak"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/echt-susteren/01HVK6F156KK5ZE2C7QDQVAD18-apollo",
+   "plaats": "echt-susteren",
+   "naam": "Apollo"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01HJ5WHMVTCZJ2MC59WCGZ9J6B-nieuw-bergen-fase-1",
+   "plaats": "eindhoven",
+   "naam": "Nieuw Bergen Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGWPQW3JS1WFRTRNNZ1YGSN-eschmarkerveld",
+   "plaats": "enschede",
+   "naam": "Eschmarkerveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGWPRG2TV5MY3J3PMV595K7-t-stadswit",
+   "plaats": "enschede",
+   "naam": "T Stadswit"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/halderberge/01HT4WEKJFD3AZSY95WVXTEX0A-de-bovenhof",
+   "plaats": "halderberge",
+   "naam": "De Bovenhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/halderberge/01HTHWMN6KJK5V4SGWY42QETGK-de-bovendonken",
+   "plaats": "halderberge",
+   "naam": "De Bovendonken"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rucphen/01HT56GHGZWN1VADBXB95JHNFK-ruitenheer",
+   "plaats": "rucphen",
+   "naam": "Ruitenheer"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HV9HEHBA0P2S3A17NF2G94BD-mares",
+   "plaats": "s-gravenhage",
+   "naam": "Mares"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HSV4AA1YG26Z0VN60JANS4NA-wonderwoods",
+   "plaats": "utrecht",
+   "naam": "Wonderwoods"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01HW2D55RWGZP4Z5AYQ8H2CJ8H-lauwendael-fase-2",
+   "plaats": "west-maas-en-waal",
+   "naam": "Lauwendael Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wierden/01HSDF0EXBTNQK913S458RWPQX-de-berghorst-fase-1",
+   "plaats": "wierden",
+   "naam": "De Berghorst Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01HV0YSFQKRVJB5090V2VTKF1B-overhoeken",
+   "plaats": "zaanstad",
+   "naam": "Overhoeken"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01HPGXP14PYFC69P1J4115EGCD-jachtlaan-woudrijck",
+   "plaats": "apeldoorn",
+   "naam": "Jachtlaan Woudrijck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01HRYV9Z5CV7Z53BHDGJ20CETP-meijnerswijck",
+   "plaats": "arnhem",
+   "naam": "Meijnerswijck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bronckhorst/01HSGTZV6NXZ1AWT4QF0QG1FED-raadhuys",
+   "plaats": "bronckhorst",
+   "naam": "Raadhuys"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/doetinchem/01HSGVVDBVJ0KS8KW1MSDSXR36-dr-huber-noodthof",
+   "plaats": "doetinchem",
+   "naam": "Dr Huber Noodthof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGT5YKFZRAWG2R5TDJ0PWVQ-de-bleekerij-woonkavels-en-woon-werkkavels",
+   "plaats": "enschede",
+   "naam": "De Bleekerij Woonkavels En Woon Werkkavels"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGTZTXZ63C68P014DBP6QXB-cromhoffpark-toekomstige-ontwikkeling",
+   "plaats": "enschede",
+   "naam": "Cromhoffpark Toekomstige Ontwikkeling"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gemert-bakel/01HRVTY292QBMJ5PR9R76AYE6T-doonheide-ii-de-lebber-fase-2a",
+   "plaats": "gemert-bakel",
+   "naam": "Doonheide Ii De Lebber Fase 2a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gennep/01HNZ6A97DGAG7D5HB9GAMGWXQ-de-houtkade",
+   "plaats": "gennep",
+   "naam": "De Houtkade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gouda/01HS95GJG7D14TWHPFDZW5EVE1-wonen-van-loon",
+   "plaats": "gouda",
+   "naam": "Wonen Van Loon"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01HSGTZV3WZNZCCQPT9VSSKBPD-ok-terrein-toekomstige-ontwikkeling",
+   "plaats": "haaksbergen",
+   "naam": "Ok Terrein Toekomstige Ontwikkeling"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01HRYPV1EXW3ADPGW95C2675Z5-dikkers-hengelo",
+   "plaats": "hengelo-o",
+   "naam": "Dikkers Hengelo"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01HSGTZVJ25FW8S0A4FGEWKMDB-de-bieb",
+   "plaats": "hengelo-o",
+   "naam": "De Bieb"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/horst-aan-de-maas/01HPP3AYC03YSXE6C6KJ03X3A2-t-maoleveld",
+   "plaats": "horst-aan-de-maas",
+   "naam": "T Maoleveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/katwijk/01HSG9TFPYPXKPH9PKQGY6ET44-duinpaviljoen",
+   "plaats": "katwijk",
+   "naam": "Duinpaviljoen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/roermond/01HP23A387D8TRT5KCDW9Q5RH2-roerdelta",
+   "plaats": "roermond",
+   "naam": "Roerdelta"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/steenwijkerland/01HR527K2TNWFTAMT46JG7CBP2-landgoed-de-woldberg-steenwijk",
+   "plaats": "steenwijkerland",
+   "naam": "Landgoed De Woldberg Steenwijk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01HJ8GXFSRDB5Z0YNPN2J1F8ZF-clarissenhof",
+   "plaats": "tilburg",
+   "naam": "Clarissenhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/twenterand/01HSGWPQYVDAD8C78WEN89WE05-vroomshoop-oost-fase-3",
+   "plaats": "twenterand",
+   "naam": "Vroomshoop Oost Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01HEARK3P45WRVF9DAWTQKD13P-kop-west",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Kop West"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HE7T5V54CEM0B4YWWTCJDHEC-de-johan-van-beverwijck",
+   "plaats": "dordrecht",
+   "naam": "De Johan Van Beverwijck"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HE7T5V7Z4KP87T7HKJFC7Z4T-buitenplaats-zuidwijk",
+   "plaats": "dordrecht",
+   "naam": "Buitenplaats Zuidwijk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goirle/01HBGCQSA0WWCJKPYXNDGPBDSW-aan-de-leij",
+   "plaats": "goirle",
+   "naam": "Aan De Leij"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AT7C2D215C5PYTKV1Y9Q-woonveld-aan-de-bosrand",
+   "plaats": "haarlemmermeer",
+   "naam": "Woonveld Aan De Bosrand"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01HKWDCVGCS8J49Y1DZR3VGHMJ-de-elisabeth-hoeve",
+   "plaats": "haarlemmermeer",
+   "naam": "De Elisabeth Hoeve"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoeksche-waard/01HDK04CRN5SW17RVDK90FRWNF-land-van-essche-fase-1",
+   "plaats": "hoeksche-waard",
+   "naam": "Land Van Essche Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoeksche-waard/01HJ88KS0H9K6RNJJ1TMBMF223-parc-alcazar",
+   "plaats": "hoeksche-waard",
+   "naam": "Parc Alcazar"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rhenen/01HFC9FCAZAVE2FSH86EBQPAPY-buytenplaets-rhenen",
+   "plaats": "rhenen",
+   "naam": "Buytenplaets Rhenen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01H963AVMW1M8SXF12YZX22PYT-populus",
+   "plaats": "rotterdam",
+   "naam": "Populus"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HJ6FZ8M6QXWASQE84M5PNQ73-maestro",
+   "plaats": "s-gravenhage",
+   "naam": "Maestro"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/sluis/01HHKSC8GS2YDKY1EX42T8T6X9-beaufort-fase-mistral-b-en-p",
+   "plaats": "sluis",
+   "naam": "Beaufort Fase Mistral B En P"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/sluis/01HHKSC94ENEZ73XHJ0BZY1HN3-beaufort-fase-levante",
+   "plaats": "sluis",
+   "naam": "Beaufort Fase Levante"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/sluis/01HJ8GXWBT4GEZGVMMNP1RZCPX-cadzand-duinhof-noord",
+   "plaats": "sluis",
+   "naam": "Cadzand Duinhof Noord"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/steenwijkerland/01HFC9FCE7EJ631BNEK06B9BHH-watervillaparck-giethoorn",
+   "plaats": "steenwijkerland",
+   "naam": "Watervillaparck Giethoorn"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01HHMAWM5S3SPX46CEB0MTRA01-valley-towers",
+   "plaats": "veenendaal",
+   "naam": "Valley Towers"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veere/01HHF634A35ACGX29BFNSF2GQB-koningshof-2",
+   "plaats": "veere",
+   "naam": "Koningshof 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01HHEZ7CTT3N5WZ2CHXTQTH5JA-wartz",
+   "plaats": "zwolle",
+   "naam": "Wartz",
+   "woningen": null,
+   "lat": 52.50627562,
+   "lng": 6.08234882,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01H963AFQHYQ3D4CHG20VFWVJX-amstelkade",
+   "plaats": "de-ronde-venen",
+   "naam": "Amstelkade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/delft/01H963AE6G4MYKTWGV494RAR4V-nieuwe-haven-delft",
+   "plaats": "delft",
+   "naam": "Nieuwe Haven Delft"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deurne/01H963AKNKPJ1FDHXEEHK9J0YC-de-groene-heerlijkheid",
+   "plaats": "deurne",
+   "naam": "De Groene Heerlijkheid"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goes/01H963AS3HN2EKGJ9C7P4F3J3M-bellevue-goese-diep-appartementen",
+   "plaats": "goes",
+   "naam": "Bellevue Goese Diep Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/harderwijk/01HE355XR9CVM6ZHRX3E76KHVP-wonen-in-waterfront",
+   "plaats": "harderwijk",
+   "naam": "Wonen In Waterfront"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heemskerk/01HC9VFT77EKM12TPNSDAP5Z7B-de-heerlijkheid-curtis",
+   "plaats": "heemskerk",
+   "naam": "De Heerlijkheid Curtis"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maastricht/01HE2X3KD1H8RJWAVD8BY8Y5ZE-fleur-le-sud-fase-5",
+   "plaats": "maastricht",
+   "naam": "Fleur Le Sud Fase 5"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/molenlanden/01HDRVQVP34SP5C99E3C6Q0NGZ-de-overtuin",
+   "plaats": "molenlanden",
+   "naam": "De Overtuin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01HE2CSRJHJVZBB2DTYF8C6ZQJ-de-waalhoven",
+   "plaats": "nijmegen",
+   "naam": "De Waalhoven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01HE34TSJKQK9MTWC9BCG8HGQR-kiem-wonen",
+   "plaats": "pijnacker-nootdorp",
+   "naam": "Kiem Wonen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/putten/01HDZTD2Q0XCJXSVFWPMCH92TG-de-bosrande",
+   "plaats": "putten",
+   "naam": "De Bosrande"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/teylingen/01H963AWCCVGMJG4BG3K52E08C-bloementuin-bootligplaatsen",
+   "plaats": "teylingen",
+   "naam": "Bloementuin Bootligplaatsen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HBTXF5T6660H2Q52B07EXM16-costa-stadswoningen",
+   "plaats": "utrecht",
+   "naam": "Costa Stadswoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01HDZTD2SD53C510CNS2CPJYVS-de-meesters",
+   "plaats": "veenendaal",
+   "naam": "De Meesters"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01H963ARJBZMZX9TW974D72EP2-fortunapark-vlaardingen",
+   "plaats": "vlaardingen",
+   "naam": "Fortunapark Vlaardingen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01HACEWCDJD9EGSA1Z6R6E7T21-james-van-de-weezen",
+   "plaats": "zwolle",
+   "naam": "James Van De Weezen",
+   "woningen": null,
+   "lat": 52.51091551,
+   "lng": 6.10179484,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01HD699JWREWHZ1SZVPWYSG6CK-zwolle-het-gildenhof",
+   "plaats": "zwolle",
+   "naam": "Zwolle Het Gildenhof",
+   "woningen": null,
+   "lat": 52.50142869,
+   "lng": 6.09840453,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01HE51SEH4NT907AR74S35Q760-wonen-in-bolster",
+   "plaats": "zwolle",
+   "naam": "Wonen In Bolster",
+   "woningen": null,
+   "lat": 52.50846519,
+   "lng": 6.08149668,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amersfoort/01H98DQE1284YY1G5KSW486W4D-podium",
+   "plaats": "amersfoort",
+   "naam": "Podium"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amstelveen/01H963AFT8TAR36TVM6E156Y24-hollandse-meesters",
+   "plaats": "amstelveen",
+   "naam": "Hollandse Meesters"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01HDRG3TF0REMCNTK33R0021PX-bk40",
+   "plaats": "arnhem",
+   "naam": "Bk40"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HE5GZFKBT1YEX54920DKRC5E-frontier",
+   "plaats": "dordrecht",
+   "naam": "Frontier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AH9GV6ENFN790269R4FB-le-jardin-hoofddorp",
+   "plaats": "haarlemmermeer",
+   "naam": "Le Jardin Hoofddorp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01HE50XD3A91WN5DBXZNKD9ZSP-lange-wemen",
+   "plaats": "hengelo-o",
+   "naam": "Lange Wemen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hillegom/01H9GN7P70T53B86MQENXMPJZX-hillegoms-wonen",
+   "plaats": "hillegom",
+   "naam": "Hillegoms Wonen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01H963ARTTJCRSW7TVKMFGX56S-rozenbuurt-fase-1a",
+   "plaats": "hoorn",
+   "naam": "Rozenbuurt Fase 1a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ijsselstein/01HE5H9CD458K3H5VSXZ84SFXM-t-veld-ijsselstein",
+   "plaats": "ijsselstein",
+   "naam": "T Veld Ijsselstein"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maassluis/01HE3P04P5NF22YQANCRPV5RK8-wonen-in-groen-fase-3",
+   "plaats": "maassluis",
+   "naam": "Wonen In Groen Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/middelburg-z/01H90VSGNTJMFKMPXJAR26XFGQ-feel-good-mortiere",
+   "plaats": "middelburg-z",
+   "naam": "Feel Good Mortiere"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01HE51SEM1X22QW5M2EJEJE43R-wonen-in-duet",
+   "plaats": "nijmegen",
+   "naam": "Wonen In Duet"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schouwen-duiveland/01H963AR2E0JMYAHQYYPM18E6E-weids",
+   "plaats": "schouwen-duiveland",
+   "naam": "Weids"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HDK1VA6H5S5VYJ9ENTVJXT7S-kloostergaerde",
+   "plaats": "utrecht",
+   "naam": "Kloostergaerde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/woerden/01H963AEWB8184E7SZ6GFQV3FX-hanick",
+   "plaats": "woerden",
+   "naam": "Hanick"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01H963AFWG3VTM4F77GYHMYZGF-eilanden-van-hain",
+   "plaats": "zaanstad",
+   "naam": "Eilanden Van Hain"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01H963AME4K7KNP3MYTCRG8CFK-wonen-in-hilko-zaandam",
+   "plaats": "zaanstad",
+   "naam": "Wonen In Hilko Zaandam"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01H9QHB73WRDA9YXT7QB375NXN-oostzijderpark-woonveld-e",
+   "plaats": "zaanstad",
+   "naam": "Oostzijderpark Woonveld E"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01HDS4Z8R7PT3NSF759BGWRJET-westvaartpark",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Westvaartpark"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963AMTNB7YW6T5P1H1HHGCD-eleven-square",
+   "plaats": "amsterdam",
+   "naam": "Eleven Square"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HE5HCXNV2G0K60W4FR4K7GKW-groei",
+   "plaats": "amsterdam",
+   "naam": "Groei"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01HDZZHTWY859EK599KSC7QBHS-arnhems-luw",
+   "plaats": "arnhem",
+   "naam": "Arnhems Luw"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01H963AK2N7RQE20DX6WJK6JYB-mica-mijdrecht",
+   "plaats": "de-ronde-venen",
+   "naam": "Mica Mijdrecht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01H963AJ7CFK372XZ04NDF268E-jachthaven",
+   "plaats": "dordrecht",
+   "naam": "Jachthaven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goeree-overflakkee/01H963ANXPT42PXQHHVMX011BN-de-hoogheijd",
+   "plaats": "goeree-overflakkee",
+   "naam": "De Hoogheijd"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AED79S38VFPSXVJ7815W-turfspoor",
+   "plaats": "haarlemmermeer",
+   "naam": "Turfspoor"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AF7K9TZQFAA7QQN93PQC-quatrebras-badhoevedorp",
+   "plaats": "haarlemmermeer",
+   "naam": "Quatrebras Badhoevedorp"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoeksche-waard/01HAPFW9ARBNJQC39F7G7AFZAH-wonen-in-t-groen-fase-4",
+   "plaats": "hoeksche-waard",
+   "naam": "Wonen In T Groen Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/middelburg-z/01H9GMM6YJZGC59QSMKN97NNVF-mortiere-kavels",
+   "plaats": "middelburg-z",
+   "naam": "Mortiere Kavels"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/purmerend/01H963AGE0FDGVP86FSVSQTB6F-kwadijkerpark-fase-1",
+   "plaats": "purmerend",
+   "naam": "Kwadijkerpark Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5H98RS391XD3CCQ5BWYH2K-de-kaai",
+   "plaats": "rotterdam",
+   "naam": "De Kaai"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01H963AK00PQNGH9CQQF7PE931-houthaven",
+   "plaats": "schiedam",
+   "naam": "Houthaven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01H963AMK0M5RW7BV9D1F50K15-othene-kokmeeuw",
+   "plaats": "terneuzen",
+   "naam": "Othene Kokmeeuw"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01HE2JGEW1XN3HWK2AN9W49D1W-willemskwartier",
+   "plaats": "tilburg",
+   "naam": "Willemskwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/waddinxveen/01HBTXF5QMKM8VRGDRQ57RNF0Z-waddix",
+   "plaats": "waddinxveen",
+   "naam": "Waddix"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/wierden/01HARTGA9T0MDSZ0YH69SF2Y1E-zuidbroek-fase-ii-iii",
+   "plaats": "wierden",
+   "naam": "Zuidbroek Fase Ii Iii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01HACNR3W41TJV7F12PZ9ZTMND-nxt-avenue-almere",
+   "plaats": "almere",
+   "naam": "Nxt Avenue Almere"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HE2XX2AKT5QN3ACZKWGNZKF8-brisk-amsterdam",
+   "plaats": "amsterdam",
+   "naam": "Brisk Amsterdam"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/culemborg/01KNPTBA5ME4QPJCX926S86ZK3-borg-buiten-fase-3a",
+   "plaats": "culemborg",
+   "naam": "Borg Buiten Fase 3a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/geldrop-mierlo/01KRGT477ZR0TNGTRJD02W91Q3-mierlos-mooiste-fase-2",
+   "plaats": "geldrop-mierlo",
+   "naam": "Mierlos Mooiste Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01HDDVAY5QXCHXMRE40V4T4B0N-mercator",
+   "plaats": "haarlemmermeer",
+   "naam": "Mercator"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01HD699K1WTW0ZG2KTP5XJ5N5M-hengelo-kms-locatie-stork",
+   "plaats": "hengelo-o",
+   "naam": "Hengelo Kms Locatie Stork"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01H9QJ6NN6J3E05FZDMQ1JGV7J-rozenbuurt-fase-1b",
+   "plaats": "hoorn",
+   "naam": "Rozenbuurt Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01JCNPEABGC7AWYD72E7FH27ME-rozenbuurt-fase-3",
+   "plaats": "hoorn",
+   "naam": "Rozenbuurt Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01JBKDH16V18EB2FKRZQGEEKF0-hoeverijk-nieuwegein-fase-1",
+   "plaats": "nieuwegein",
+   "naam": "Hoeverijk Nieuwegein Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nissewaard/01HDRWENHD8P1V4AY88WX6W1TF-new-haven",
+   "plaats": "nissewaard",
+   "naam": "New Haven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oss/01KS7QHPPNG3AXH92981PK15G7-berghse-weide-fase-1",
+   "plaats": "oss",
+   "naam": "Berghse Weide Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS9H0DG7XDE03ZSSP0AB8G6-nieuw-kralingen-aan-de-boezem-ii",
+   "plaats": "rotterdam",
+   "naam": "Nieuw Kralingen Aan De Boezem Ii"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H906KZXNTMNX0ZT6VFY26MS4-brabantbad",
+   "plaats": "s-hertogenbosch",
+   "naam": "Brabantbad"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H963AEMDBXP6VAQTWVVTKASS-gasthuiskwartier",
+   "plaats": "s-hertogenbosch",
+   "naam": "Gasthuiskwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/smallingerland/01KNVXGZPRG0HQYZD43S4CKM4E-weegbree-drachten",
+   "plaats": "smallingerland",
+   "naam": "Weegbree Drachten"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01KNVWQP6YE7FFGG0KRKJ3K7YE-spinaker",
+   "plaats": "tilburg",
+   "naam": "Spinaker"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01H963AM6DH512K151KN9VWQV4-wolvenplein-levenslang-genieten",
+   "plaats": "utrecht",
+   "naam": "Wolvenplein Levenslang Genieten"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01JKQK3FAAN6X7PY7GT3DBH4AS-waelrijk-fase-2",
+   "plaats": "westland",
+   "naam": "Waelrijk Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01KA10C7YN4J9T3MZ2G3H5HPPC-buitenveen-aalsmeer-fase-2",
+   "plaats": "aalsmeer",
+   "naam": "Buitenveen Aalsmeer Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/culemborg/01K187K4PYADBB5M51K6YWCPJP-het-prijsse-achtererf",
+   "plaats": "culemborg",
+   "naam": "Het Prijsse Achtererf"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01KGKVG5Q8F0N20H42QBSW0MRX-oosterlicht-fase-1",
+   "plaats": "de-ronde-venen",
+   "naam": "Oosterlicht Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01KFAZE8M5BHCRPKVSAXFEVTWM-hugo-4",
+   "plaats": "dijk-en-waard",
+   "naam": "Hugo 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01HWQNQR7ERHYRKVX31EK4JT8Z-milestone",
+   "plaats": "eindhoven",
+   "naam": "Milestone"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eindhoven/01KCKY9DS3F9P106K80MMMY0HQ-air-eindhoven",
+   "plaats": "eindhoven",
+   "naam": "Air Eindhoven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heusden/01K71M89DMAR52BSRNVEJG5Y61-landgoed-steenenburg-appartementen-elenore",
+   "plaats": "heusden",
+   "naam": "Landgoed Steenenburg Appartementen Elenore"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoeksche-waard/01K82S2NG8WAJ8RRA3WZBX462V-blom-fase-4",
+   "plaats": "hoeksche-waard",
+   "naam": "Blom Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/katwijk/01KD808E5QKYWE3CQHFPY7RHZV-kavels-nieuw-rijnvaert",
+   "plaats": "katwijk",
+   "naam": "Kavels Nieuw Rijnvaert"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maassluis/01JK6B5JY6SZG1SYBF7GQ844VP-burg-meesters",
+   "plaats": "maassluis",
+   "naam": "Burg Meesters"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oirschot/01HEJ21V6TN8743D7MF8JG5MPW-erve-solms",
+   "plaats": "oirschot",
+   "naam": "Erve Solms"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H963AJCTRCV57PY37TXEWYFK-gasthuiskwartier-derde-fase-d-en-e",
+   "plaats": "s-hertogenbosch",
+   "naam": "Gasthuiskwartier Derde Fase D En E"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/smallingerland/01KBHH10JXCAR5WKQJCH9AY7MN-kompanjon",
+   "plaats": "smallingerland",
+   "naam": "Kompanjon"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/valkenswaard/01KF0D8QY4PYS3E0TYS9JRPBVV-wonen-bij-maenen",
+   "plaats": "valkenswaard",
+   "naam": "Wonen Bij Maenen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KFJMXGSAS54V963S8KPHX10J-zwanenpark-fase-2",
+   "plaats": "vlaardingen",
+   "naam": "Zwanenpark Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01HC2E3DX0JM8ESNGS38V1DJWA-nieuw-zand",
+   "plaats": "westland",
+   "naam": "Nieuw Zand"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01JM9XP07FGXPNZCF7XV4W1RQM-nest-poel",
+   "plaats": "zuidplas",
+   "naam": "Nest Poel"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01K772MT9V3VXT6D0GAKXXENRH-gaard",
+   "plaats": "zuidplas",
+   "naam": "Gaard"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01JZQPBE5H4AQD8A4R3JPY248B-koopse-glorie-fase-3",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Koopse Glorie Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JS1BAMSA5DGK19F7MSVM66T2-one50",
+   "plaats": "amsterdam",
+   "naam": "One50"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01JXZ5KHP53GVFMP3QHB8EPR7N-twee-bouwkavels-deventerstraat",
+   "plaats": "apeldoorn",
+   "naam": "Twee Bouwkavels Deventerstraat"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bergen-op-zoom/01K5DXCT386QTF72ZXJQ8QZBQP-walzicht",
+   "plaats": "bergen-op-zoom",
+   "naam": "Walzicht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01JTTH7S0CES304GBQQRWY5Q87-de-maten-fase-3",
+   "plaats": "borne",
+   "naam": "De Maten Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01K88CF0HMRJV50569J31PDPQV-twist-1",
+   "plaats": "borne",
+   "naam": "Twist 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-fryske-marren/01K4PXTKG3Y1PYJEJ81J8W9PCB-lemsterlint-fase-2",
+   "plaats": "de-fryske-marren",
+   "naam": "Lemsterlint Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ede/01JDJDP729DCWF69YC4KP228S1-kernhemmerhout",
+   "plaats": "ede",
+   "naam": "Kernhemmerhout"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01JZHWNF70BXGB9G4W34FHBBVF-franklinhof",
+   "plaats": "enschede",
+   "naam": "Franklinhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hardinxveld-giessendam/01K2KSG517ABMV7HXC5GEEGRDF-de-binnenoever",
+   "plaats": "hardinxveld-giessendam",
+   "naam": "De Binnenoever"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hendrik-ido-ambacht/01JVVSHCW2RF564GP8DTRHCBMS-het-erfgoed",
+   "plaats": "hendrik-ido-ambacht",
+   "naam": "Het Erfgoed"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01JWXADN68NYGEM350MS1RNAF9-erve-berchus-fase-3",
+   "plaats": "hengelo-o",
+   "naam": "Erve Berchus Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01K0V0EGEJFNRYTEYVMT78ZJYP-campus-driene-fase-2-marathonhof",
+   "plaats": "hengelo-o",
+   "naam": "Campus Driene Fase 2 Marathonhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hillegom/01K0EERFP39G3QRTPHJ2054F0F-tuindorp-hillegom-fase-3-eengezinswoningen",
+   "plaats": "hillegom",
+   "naam": "Tuindorp Hillegom Fase 3 Eengezinswoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hillegom/01K0EERFTCJX6FR8046V0W9H14-tuindorp-hillegom-fase-3-bebos",
+   "plaats": "hillegom",
+   "naam": "Tuindorp Hillegom Fase 3 Bebos"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hillegom/01K0EERFYHV9QY3X95529HZYJ0-tuindorp-hillegom-fase-3-prijsgebonden-app",
+   "plaats": "hillegom",
+   "naam": "Tuindorp Hillegom Fase 3 Prijsgebonden App"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01HE4ZT01HVH0ACC76XYKPW9WK-de-juffer",
+   "plaats": "pijnacker-nootdorp",
+   "naam": "De Juffer"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zeist/01JYH238HSFAMGG1YPPMMH04K7-eikenstein-fase-2-29-appartementen-bosvilla",
+   "plaats": "zeist",
+   "naam": "Eikenstein Fase 2 29 Appartementen Bosvilla"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almelo/01JZ2G01Q11CJVQM1G9S171F47-thuis-in-rumerslanden-fase-2",
+   "plaats": "almelo",
+   "naam": "Thuis In Rumerslanden Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01JBH2VFA0YPQJCTBMSJRJA3M0-zes-van-boss",
+   "plaats": "almere",
+   "naam": "Zes Van Boss"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01JN6FDQ2Q9FB45CXJCHNWH7EV-de-nieuwe-boterpolder",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "De Nieuwe Boterpolder"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01JXZ5KHHF95BTFFPGBK8DSYJN-grondgebonden-appartementen-eksterweg",
+   "plaats": "apeldoorn",
+   "naam": "Grondgebonden Appartementen Eksterweg"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/best/01JYNNQBSQ8YWDFJGJ19786290-de-steegh",
+   "plaats": "best",
+   "naam": "De Steegh"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/de-bilt/01JV1Y4BPDE27W10RVNTF1TK1M-leyens-erve-bilthoven-woningen",
+   "plaats": "de-bilt",
+   "naam": "Leyens Erve Bilthoven Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01JVPHA34F32WRXM0EQY8S1VXC-amstelwijck-park-fase-4b",
+   "plaats": "dordrecht",
+   "naam": "Amstelwijck Park Fase 4b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01JXJ4GGT4TPRYJ41DVCPJQXP6-32-woningen-biddinghuizen",
+   "plaats": "dronten",
+   "naam": "32 Woningen Biddinghuizen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01JTK3FRA6FEPP72SQQ5SSDQS8-lansink59",
+   "plaats": "haaksbergen",
+   "naam": "Lansink59"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01JTK56PC2V1QPFZMHES1X3NRP-de-vesting-blok-3",
+   "plaats": "s-hertogenbosch",
+   "naam": "De Vesting Blok 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/stichtse-vecht/01JZ2HPYNTPRVRMXYACJK57S13-ensemble-maarssen",
+   "plaats": "stichtse-vecht",
+   "naam": "Ensemble Maarssen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01J2EBQ906FBRGAECS4TA4W4DA-circulus",
+   "plaats": "utrecht",
+   "naam": "Circulus"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/voorne-aan-zee/01JH30D1F64P2V97T89XW0JRMC-wonen-in-appelgaard",
+   "plaats": "voorne-aan-zee",
+   "naam": "Wonen In Appelgaard"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01JJPE7Q2QQDX29BQA8KT8095P-waelrijk-fase-1-deel-1",
+   "plaats": "westland",
+   "naam": "Waelrijk Fase 1 Deel 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/weststellingwerf/01HDRCPV1N4RRC7G00S7E6X7MN-mooi-noordwolde",
+   "plaats": "weststellingwerf",
+   "naam": "Mooi Noordwolde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/woerden/01JWV6KVMXSB4P8WPVAMB3T8Z2-harmelen-fase-2",
+   "plaats": "woerden",
+   "naam": "Harmelen Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01HTMQNZY01K68BFE15V68WEKX-euryza-welgelegen",
+   "plaats": "zwijndrecht",
+   "naam": "Euryza Welgelegen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01JZ2F4J52R19RT6A8YRPDP0XZ-mees-18-appartementen",
+   "plaats": "zwolle",
+   "naam": "Mees 18 Appartementen",
+   "woningen": 18,
+   "lat": 52.51145713,
+   "lng": 6.1030706,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01JQ6MG5YZJ7B58MRRTXVBPZ8X-buitenveen-aalsmeer-fase-1",
+   "plaats": "aalsmeer",
+   "naam": "Buitenveen Aalsmeer Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alkmaar/01JRZF823PQBRV43XNTCMJNYQH-pendorp-fase-1a",
+   "plaats": "alkmaar",
+   "naam": "Pendorp Fase 1a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/best/01JPJCF9A26PXN2ZXWKWTN7BNV-de-hoven-deelplan-4",
+   "plaats": "best",
+   "naam": "De Hoven Deelplan 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bodegraven-reeuwijk/01H963AGZAG2YE8WD4RPDTARPT-bundereiland",
+   "plaats": "bodegraven-reeuwijk",
+   "naam": "Bundereiland"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01JQTK2H7NK5DB5573YG89M1FF-hofstede-fase-2",
+   "plaats": "borne",
+   "naam": "Hofstede Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01JSM0PVSGD5ESNAZYJFCG482Y-zuiderweide-fase-3",
+   "plaats": "dronten",
+   "naam": "Zuiderweide Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/eemnes/01JSHAW9FAPKC91DMJY3P0CXH9-weideveld-fase-1",
+   "plaats": "eemnes",
+   "naam": "Weideveld Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gorinchem/01JP0860XGS2SMSP3XW7B239F6-negen-van-de-wilg",
+   "plaats": "gorinchem",
+   "naam": "Negen Van De Wilg"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gorinchem/01JSEVWPDNCRB30BG92E8WJAX3-lauwerserf-gorinchem",
+   "plaats": "gorinchem",
+   "naam": "Lauwerserf Gorinchem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leiden/01JRZG3GCJ3P6K2RVB7DZHE7PH-aan-de-kade",
+   "plaats": "leiden",
+   "naam": "Aan De Kade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maassluis/01JTJ2W17H3PCVHZ876T8CXZ2X-vogelrijk",
+   "plaats": "maassluis",
+   "naam": "Vogelrijk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01HBAW4SDMZH86K0BB26X2RQE6-eureka",
+   "plaats": "nieuwegein",
+   "naam": "Eureka"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ommen/01JTTHD77G8BH87KN0YPGSSAJ2-drie-onder-een-kapwoningen-in-beerzerveld",
+   "plaats": "ommen",
+   "naam": "Drie Onder Een Kapwoningen In Beerzerveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/stein-l/01JSYBDK5593DQQXX0XCCPPZWT-lindehagen-fase-9",
+   "plaats": "stein-l",
+   "naam": "Lindehagen Fase 9"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01JPMRVQ76HE517GHJP9KCZDRD-staaloever",
+   "plaats": "terneuzen",
+   "naam": "Staaloever"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01JQTTSQBRW589YH92DP1GEBKM-wonen-in-groenpark-fase-2",
+   "plaats": "veenendaal",
+   "naam": "Wonen In Groenpark Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01JVKQ65M9XGH1XZVSMVTYNC37-waelrijk-fase-1-deel-2",
+   "plaats": "westland",
+   "naam": "Waelrijk Fase 1 Deel 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01JV2DJQ2QEG0589FJGEKBEB0P-de-bostuinen-fase-2",
+   "plaats": "zwijndrecht",
+   "naam": "De Bostuinen Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01JF7EJ5EDMBS62PA60QMW9Y1Z-de-maten-fase-2",
+   "plaats": "borne",
+   "naam": "De Maten Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/doetinchem/01HH21GWA7AWSXQJRN5NJW2Y1J-weidewald",
+   "plaats": "doetinchem",
+   "naam": "Weidewald"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01J69H0GENS4J7NV0HSA6PZN3Y-stroom",
+   "plaats": "dordrecht",
+   "naam": "Stroom"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01JHG203RZAX6T9RSVRSC61MXT-amstelwijck-park-fase-4a",
+   "plaats": "dordrecht",
+   "naam": "Amstelwijck Park Fase 4a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/ede/01H963APBDF02GW6CB9T8ECZY4-enka-t-hartogshof",
+   "plaats": "ede",
+   "naam": "Enka T Hartogshof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goeree-overflakkee/01H963APSDA37D8AM99X07EA12-de-heerlijckheid-fase-1",
+   "plaats": "goeree-overflakkee",
+   "naam": "De Heerlijckheid Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gorinchem/01JJKVY4EJWRZKBS6QTK29V645-de-wilg-hoog-dalem",
+   "plaats": "gorinchem",
+   "naam": "De Wilg Hoog Dalem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01HABTHB0SSQ6425J02FJ3T02E-parkhoven",
+   "plaats": "groningen",
+   "naam": "Parkhoven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haaksbergen/01JFFPZF3VRG1D2P174SZR7X44-de-blankenborg",
+   "plaats": "haaksbergen",
+   "naam": "De Blankenborg"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01JJ46JZB3F33ZZMT9X6BGP6JE-het-lint-10-appartementen",
+   "plaats": "haarlemmermeer",
+   "naam": "Het Lint 10 Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01JMW38E61GTHQGG0EN2REFTVR-campus-driene-fase-1-cadanshof",
+   "plaats": "hengelo-o",
+   "naam": "Campus Driene Fase 1 Cadanshof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/kapelle/01JP0ZXX3J2R1YBVRC95VZ213B-de-zeven-kapelle",
+   "plaats": "kapelle",
+   "naam": "De Zeven Kapelle"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lochem/01HSGVVDHH9QFC8VJWWK44AEBZ-rutgershof",
+   "plaats": "lochem",
+   "naam": "Rutgershof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maassluis/01JN0ZF7SW9D3SDZR36N7QJXJE-parkhof-wilgenrijk",
+   "plaats": "maassluis",
+   "naam": "Parkhof Wilgenrijk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01J9B9HDCX4S1Y8HY6APAQP5D1-het-rozenerf",
+   "plaats": "schiedam",
+   "naam": "Het Rozenerf"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01JPMKPYFTKQTZXZYYT8DVWY3K-the-one",
+   "plaats": "terneuzen",
+   "naam": "The One"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01JPSBMCMPGKGMZ1FQ5V3NSDP8-kraanvogel-fase-2",
+   "plaats": "terneuzen",
+   "naam": "Kraanvogel Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01HQN9HP3E0YYM3NMBHKP1HATX-leeuwenkwartier",
+   "plaats": "west-maas-en-waal",
+   "naam": "Leeuwenkwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963AQXG8E2PEC5KWJ87KNCJ-bajeskwartier-the-martin",
+   "plaats": "amsterdam",
+   "naam": "Bajeskwartier The Martin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bloemendaal/01JKFPRH1VW9S28SX8C2KFSGPH-park-lokhorst-fase-1b",
+   "plaats": "bloemendaal",
+   "naam": "Park Lokhorst Fase 1b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HHYS5WYAJYD15ZA0RJC5XB4T-post-breda-fase-1",
+   "plaats": "breda",
+   "naam": "Post Breda Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/deventer/01HVK855PV7M7STG19X1JAR0P7-melkfabriek-colmschate",
+   "plaats": "deventer",
+   "naam": "Melkfabriek Colmschate"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HDGQ5S0296BFH6AE05A4R97K-het-wantij-stadswoningen",
+   "plaats": "dordrecht",
+   "naam": "Het Wantij Stadswoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGWPQS8WRVRP8MJ5GHG7758-bleker14",
+   "plaats": "enschede",
+   "naam": "Bleker14"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goirle/01HBGCQS7MG05CTGW7G70Q4CHJ-in-de-velden",
+   "plaats": "goirle",
+   "naam": "In De Velden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/harderwijk/01J67BFTMYWFVRGR441AY1HDJS-kade-10",
+   "plaats": "harderwijk",
+   "naam": "Kade 10"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01JJ4GWMMJQ3TWT41BN8HYFJ9D-waterroos-kwarts",
+   "plaats": "hoorn",
+   "naam": "Waterroos Kwarts"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01HX92S2WK62C14MPVRCS5MXEQ-mix-cammingha-melkema-hof",
+   "plaats": "leeuwarden",
+   "naam": "Mix Cammingha Melkema Hof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01HD699JZ63F9CZ870BA0MVH84-lotus-nieuwegein",
+   "plaats": "nieuwegein",
+   "naam": "Lotus Nieuwegein"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01JKQSZ5Y7FNNGDGE2CZ9AZ83E-hoeverijk-nieuwegein-fase-2",
+   "plaats": "nieuwegein",
+   "naam": "Hoeverijk Nieuwegein Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwkoop/01J9685TS1DYC58QWHW3D3F5CP-krekenlanden",
+   "plaats": "nieuwkoop",
+   "naam": "Krekenlanden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordwijk/01J8J65D6M75YN0E7E1Q9WAA8C-buitenrijk-deelgebied-2-fase-1",
+   "plaats": "noordwijk",
+   "naam": "Buitenrijk Deelgebied 2 Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oudewater/01J2E89DWGP00K77FV74CBG0TQ-wonen-op-de-westerwal-fase-3",
+   "plaats": "oudewater",
+   "naam": "Wonen Op De Westerwal Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01J9C1KVQS32C0JW3D61F61BYM-tuinenrijk-veld-1",
+   "plaats": "s-hertogenbosch",
+   "naam": "Tuinenrijk Veld 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01HHQ5BW1Y79R3KCK6JCM1VK1H-ketelhuis-spoorzone",
+   "plaats": "tilburg",
+   "naam": "Ketelhuis Spoorzone"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01J2XRC065PB9H06KF7QGDFGXT-maasterras-fase-1",
+   "plaats": "zwijndrecht",
+   "naam": "Maasterras Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01JDWR4J338SX2YGNREY11RQAZ-veenbes",
+   "plaats": "borne",
+   "naam": "Veenbes"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HTJ7JVVV1YE02FXV3HEJCQ8D-amstelwijck-park-3a",
+   "plaats": "dordrecht",
+   "naam": "Amstelwijck Park 3a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HXBSF44KSPSGK2SJFTQ0JKX0-oranjetuin",
+   "plaats": "dordrecht",
+   "naam": "Oranjetuin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01HD6A67J67V71ZNVZ775S9P2P-zuiderweide-dronten-fase-1b-rar-en-hofwoningen",
+   "plaats": "dronten",
+   "naam": "Zuiderweide Dronten Fase 1b Rar En Hofwoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01JF0A886TYPF1PTYQQXPYBMGN-heidevlinder-zuid",
+   "plaats": "enschede",
+   "naam": "Heidevlinder Zuid"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01JF7EJ5VH68413E8BRVHZKHF8-twentse-tres",
+   "plaats": "enschede",
+   "naam": "Twentse Tres"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goes/01H963AS607CAPN182CEP341XX-bellevue-goese-diep-herenhuizen",
+   "plaats": "goes",
+   "naam": "Bellevue Goese Diep Herenhuizen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01J499BVRZPF938SJ5Y5RFG7S4-tussen-de-hagen-huis-van-nu",
+   "plaats": "haarlemmermeer",
+   "naam": "Tussen De Hagen Huis Van Nu"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/halderberge/01J0TY9F27TRVES4KEY6HBJ5WV-groene-vaart-fase-2",
+   "plaats": "halderberge",
+   "naam": "Groene Vaart Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lingewaard/01HAYERCKZFV5WG7CG8ACHGEFY-slingerbos-huissen",
+   "plaats": "lingewaard",
+   "naam": "Slingerbos Huissen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/purmerend/01HRETN4TW9GV940MXN5Z2C0KC-kwadijkerpark-fase-2a2",
+   "plaats": "purmerend",
+   "naam": "Kwadijkerpark Fase 2a2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/raalte/01HGDTBMMDHK0325QEEZKZTSGX-raelterhof",
+   "plaats": "raalte",
+   "naam": "Raelterhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01H963AS8JVP5JHAPR23J9SXJA-othene-iqube",
+   "plaats": "terneuzen",
+   "naam": "Othene Iqube"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01H963AWVW3FRV4F9ZMMWK0YHW-othene-strandplevier",
+   "plaats": "terneuzen",
+   "naam": "Othene Strandplevier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01J9XY3ZMH4FF251TPG9PJY6QK-utrecht-stadsgeluk",
+   "plaats": "utrecht",
+   "naam": "Utrecht Stadsgeluk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/veenendaal/01HWDD0B9FVXVD09H812JGMW7H-wonen-in-groenpark-fase-1",
+   "plaats": "veenendaal",
+   "naam": "Wonen In Groenpark Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01HHY0RY947CCGD5655FMMQT48-leeuwendonk-fase-1",
+   "plaats": "west-maas-en-waal",
+   "naam": "Leeuwendonk Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01H963ASB5QW844EZTAV73C611-euryza-nouveau-en-oeverture",
+   "plaats": "zwijndrecht",
+   "naam": "Euryza Nouveau En Oeverture"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963APE8T20KPXCWZ9YKHXHF-weespersluis-deelplan-xa2",
+   "plaats": "amsterdam",
+   "naam": "Weespersluis Deelplan Xa2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963ARE76C2ARPKJPP6RMFFV-bajeskwartier-the-starling",
+   "plaats": "amsterdam",
+   "naam": "Bajeskwartier The Starling"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963ARG926ZSGCFP74DMHZEJ-bajeskwartier-the-jay",
+   "plaats": "amsterdam",
+   "naam": "Bajeskwartier The Jay"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963AWSN3VG8B0WVG6CGJAV9-weespersluis-vechtrijk-3b1-fase-3",
+   "plaats": "amsterdam",
+   "naam": "Weespersluis Vechtrijk 3b1 Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01JF7EJ61N6YAPNM7HE4KE1RJH-jolie",
+   "plaats": "borne",
+   "naam": "Jolie"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bronckhorst/01HSGVVDMACF9FQP62NC2622M4-jf-oltmanstraat",
+   "plaats": "bronckhorst",
+   "naam": "Jf Oltmanstraat"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bronckhorst/01JF7FDKK27YQ68FH8ERHFBVJZ-acht-appartementen-vorden",
+   "plaats": "bronckhorst",
+   "naam": "Acht Appartementen Vorden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/echt-susteren/01H963AHX5QJP1T5MTDM2QG1Z9-sterrendael",
+   "plaats": "echt-susteren",
+   "naam": "Sterrendael"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gorinchem/01HNZE5KAKXR1KYEAAH7P43274-het-lint-fase-berk",
+   "plaats": "gorinchem",
+   "naam": "Het Lint Fase Berk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AQ8S1KKDKWN51KK7DKBY-quatrebras-park-quartier-iii-fase-2",
+   "plaats": "haarlemmermeer",
+   "naam": "Quatrebras Park Quartier Iii Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01JF7EJ5YK8SZ0KMG2K42XE2KH-kavels-marskant",
+   "plaats": "hengelo-o",
+   "naam": "Kavels Marskant"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/purmerend/01H963AVQS1YQ84R6H2QXMSVVT-kwadijkerpark-fase-2a1",
+   "plaats": "purmerend",
+   "naam": "Kwadijkerpark Fase 2a1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01H963AR5FWCSA8RR2MC4FBYC3-parkrijk-de-lanen-fase-3",
+   "plaats": "rijswijk-zh",
+   "naam": "Parkrijk De Lanen Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/teylingen/01H963AW9H32TJZ793FW15H7Q1-bloementuin-appartementen",
+   "plaats": "teylingen",
+   "naam": "Bloementuin Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/twenterand/01JF09CSDXTYX0Y7NVW9SZFM33-bouwkavel-noorderweg-34-vroomshoop",
+   "plaats": "twenterand",
+   "naam": "Bouwkavel Noorderweg 34 Vroomshoop"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vlissingen/01HNZ76K8YN4RZ6QNH6JF56RV6-lloyds",
+   "plaats": "vlissingen",
+   "naam": "Lloyds"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01H963AN72QQ1DCH0ECTJD971K-waelse-weelde",
+   "plaats": "westland",
+   "naam": "Waelse Weelde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/winterswijk/01JF7FDM09RBR1M703FX3KAK00-nieuw-gelle-fase-4",
+   "plaats": "winterswijk",
+   "naam": "Nieuw Gelle Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/almere/01HAV9ZYCJNNZNX4MK49CTZG0P-new-brooklyn-almere",
+   "plaats": "almere",
+   "naam": "New Brooklyn Almere"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963APPNWY0H157Y3RPXZ5N2-weespersluis-vechtrijk-3b1-fase-1",
+   "plaats": "amsterdam",
+   "naam": "Weespersluis Vechtrijk 3b1 Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01HSGWPQPHH0QEVBZQMS4G056M-de-maten",
+   "plaats": "borne",
+   "naam": "De Maten"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01HYDFG64B86VDAKBQSS7RJAZY-bleekershof-fase-3",
+   "plaats": "borne",
+   "naam": "Bleekershof Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01H963AHSX9ZNCD9S7994TR83G-havenkade-ceres",
+   "plaats": "dronten",
+   "naam": "Havenkade Ceres"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01H963AS0H16C7PSE65ASQBQ8M-havenkade-tellus-fase-2",
+   "plaats": "dronten",
+   "naam": "Havenkade Tellus Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01J8M1CHMAEZGTK120CMSDMBBE-zuiderweide-fase-2a",
+   "plaats": "dronten",
+   "naam": "Zuiderweide Fase 2a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01JER5AMF57EQHM0JEJN3VTN7R-zuiderweide-dronten-fase-2b",
+   "plaats": "dronten",
+   "naam": "Zuiderweide Dronten Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gemert-bakel/01HRVT2K99X4A4GZA23TSW2KJ4-doonheide-ii-de-kampen-fase-3",
+   "plaats": "gemert-bakel",
+   "naam": "Doonheide Ii De Kampen Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/goirle/01JDKZK718Z6YV7JBAJHZDADXB-bosch-veld",
+   "plaats": "goirle",
+   "naam": "Bosch Veld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gorinchem/01H963AQ15N4XF133YHRASP0GG-het-lint-fase-linde",
+   "plaats": "gorinchem",
+   "naam": "Het Lint Fase Linde"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01J99TASFPZFHPQ3BN6J9ECAXB-wickevoort-fase-3-groene-lanen",
+   "plaats": "haarlemmermeer",
+   "naam": "Wickevoort Fase 3 Groene Lanen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/landgraaf/01H9QJ6NW2FDB0SXTC9NMPDBJB-de-bousberg-woningen",
+   "plaats": "landgraaf",
+   "naam": "De Bousberg Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01HQTN6VBVBEYCWN8Y7600X4TK-hazenpark",
+   "plaats": "nijmegen",
+   "naam": "Hazenpark"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01HD5YZZS31PK2DCYE9V1Z19VD-knoest-wonen",
+   "plaats": "pijnacker-nootdorp",
+   "naam": "Knoest Wonen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BH0SXMTSV91GG1857PW1K-koer-parkwoningen",
+   "plaats": "rotterdam",
+   "naam": "Koer Parkwoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/steenbergen/01HT4XKZZR84VKE77BHCCK7YCZ-hof-van-beemden",
+   "plaats": "steenbergen",
+   "naam": "Hof Van Beemden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01J8SPFTYZF5XSRRGYEKXYWR07-de-bostuinen-fase-1",
+   "plaats": "zwijndrecht",
+   "naam": "De Bostuinen Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amstelveen/01HSXDQCYZTZKEXJ9SFNVD6XSR-nieuw-eilands-eigen-parkwoningen",
+   "plaats": "amstelveen",
+   "naam": "Nieuw Eilands Eigen Parkwoningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JCG3XDZRDRDBVGKTX6M1Z3QD-up-north",
+   "plaats": "amsterdam",
+   "naam": "Up North"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01HKMJH70VSC7Y1C7MVHBRGJTB-meesters-van-apeldoorn-herenhuizen",
+   "plaats": "apeldoorn",
+   "naam": "Meesters Van Apeldoorn Herenhuizen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/beek-l/01HJ8GVJT857F6TW9Q030SQDZ6-heer-van-beek",
+   "plaats": "beek-l",
+   "naam": "Heer Van Beek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/doetinchem/01HSGVVCXS3MMYP9NBV1X0TT9K-stadsdok",
+   "plaats": "doetinchem",
+   "naam": "Stadsdok"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/druten/01J9KKKTX134C7Z5S0EXBVT9XA-poortwachter",
+   "plaats": "druten",
+   "naam": "Poortwachter"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/emmen/01HT2REWRPKSCQA8EZJC9N3SZS-dromen-in-de-delftlanden-fase-delft-kwartier",
+   "plaats": "emmen",
+   "naam": "Dromen In De Delftlanden Fase Delft Kwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/emmen/01HT2RFAFY6M3M8QC7GN135SNN-dromen-in-de-delftlanden-fase-dromen-in-de-delftlanden",
+   "plaats": "emmen",
+   "naam": "Dromen In De Delftlanden Fase Dromen In De Delftlanden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gemert-bakel/01HRVT2K5YN7SDB2RTNTPAVHC5-doonheide-ii-de-kampen-fase-2b",
+   "plaats": "gemert-bakel",
+   "naam": "Doonheide Ii De Kampen Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/helmond/01HJ17B6E86EPXBAMTHX23FJGA-subliem-suyt",
+   "plaats": "helmond",
+   "naam": "Subliem Suyt"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoeksche-waard/01HSBEF5DBB09PHXAQHSG7G44W-blom-fase-3",
+   "plaats": "hoeksche-waard",
+   "naam": "Blom Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/kampen/01HQB4S6YM3Z9R7J4P0T51EYR6-sonnenwijzer",
+   "plaats": "kampen",
+   "naam": "Sonnenwijzer"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/laren-nh/01JC0R3GVHXBHH9Z9CEPEKKRJR-lindenhof-laren",
+   "plaats": "laren-nh",
+   "naam": "Lindenhof Laren"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01HAPY0FA8JXE1W70V1A35HNNZ-blent-nijmegen",
+   "plaats": "nijmegen",
+   "naam": "Blent Nijmegen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JC0KT64VFMX12YF3VBXGYKWS-het-zuider-carre",
+   "plaats": "rotterdam",
+   "naam": "Het Zuider Carre"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/valkenburg-aan-de-geul/01HJ8GVHHJQZ8ECT3XX5B3SRZM-berg-en-terblijt-bergervliet-fase-1",
+   "plaats": "valkenburg-aan-de-geul",
+   "naam": "Berg En Terblijt Bergervliet Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/valkenburg-aan-de-geul/01J0W8JK513WF892X59TGV5GX9-berg-en-terblijt-bergervliet-fase-2",
+   "plaats": "valkenburg-aan-de-geul",
+   "naam": "Berg En Terblijt Bergervliet Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zevenaar/01HS8QA19QH42QRXS0G3083BKM-dorpsweide-fase-2",
+   "plaats": "zevenaar",
+   "naam": "Dorpsweide Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/arnhem/01HWD2PREDDWE9GDVA90ZB02PC-de-spykerij",
+   "plaats": "arnhem",
+   "naam": "De Spykerij"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HTJ7JVRW7PK01MHADVWW8XST-amstelwijck-park-fase-3b",
+   "plaats": "dordrecht",
+   "naam": "Amstelwijck Park Fase 3b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01JADGQZGF9XNJJ1FFZ5XT7M8A-san-francisco",
+   "plaats": "haarlem",
+   "naam": "San Francisco"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01JADGQZMS8S58VEHR14WFMAZ2-long-beach",
+   "plaats": "haarlem",
+   "naam": "Long Beach"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heeze-leende/01H98C9TMRV8S07KJZWWKAGCPA-natuurrijk-fase-1",
+   "plaats": "heeze-leende",
+   "naam": "Natuurrijk Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heiloo/01JADFWC2B6T9006FBGEMQ259Q-hollands-roem",
+   "plaats": "heiloo",
+   "naam": "Hollands Roem"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heusden/01J1A7H0AMEVXZAEHKDKTHYW0V-landgoed-steenenburg-appartementen-isabella",
+   "plaats": "heusden",
+   "naam": "Landgoed Steenenburg Appartementen Isabella"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heusden/01JAA8WEK5AFC0B6ZR71F9PWEJ-landgoed-steenenburg-appartementen-florentius",
+   "plaats": "heusden",
+   "naam": "Landgoed Steenenburg Appartementen Florentius"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hollands-kroon/01J96PRRHA0DGYEVR5BY5RB29Q-dahlia-park-fase-2a",
+   "plaats": "hollands-kroon",
+   "naam": "Dahlia Park Fase 2a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/landgraaf/01H9QJ6NRN8EDWFJ5EFRQTX83N-de-bousberg-bouwkavels",
+   "plaats": "landgraaf",
+   "naam": "De Bousberg Bouwkavels"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lansingerland/01J3CTPM1SB5H5V05YPH3KEPGC-spetterend-wonen-waterwijk",
+   "plaats": "lansingerland",
+   "naam": "Spetterend Wonen Waterwijk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lochem/01HAKTVMN63HJA091094R1FA82-kop-van-oost-fase-1",
+   "plaats": "lochem",
+   "naam": "Kop Van Oost Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/medemblik/01J80739Z3WPCAR0M5WECYJAP5-de-perenlaan",
+   "plaats": "medemblik",
+   "naam": "De Perenlaan"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/purmerend/01J58D07A166R7TR49DQ0RATX7-kwadijkerpark-fase-2b",
+   "plaats": "purmerend",
+   "naam": "Kwadijkerpark Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01J1YCZ9EHX8V82QVDZ4VSM3DG-dirkzwager-fase-2b",
+   "plaats": "schiedam",
+   "naam": "Dirkzwager Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01J7EBF1H0D9PRE2T5DYY8H1HB-smariuskade-fase-carre",
+   "plaats": "tilburg",
+   "naam": "Smariuskade Fase Carre"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vijfheerenlanden/01J9153BBY1PY2SWPYPVB46CCE-droomweide-fase-1",
+   "plaats": "vijfheerenlanden",
+   "naam": "Droomweide Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/voorne-aan-zee/01HRSFD2KRATR6X7SFV9DH61AN-nieuwe-vesting-fase-3b-2",
+   "plaats": "voorne-aan-zee",
+   "naam": "Nieuwe Vesting Fase 3b 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amstelveen/01HWA8JFVQY1RPC2SXG296W0ZA-nieuw-eilands-eigen",
+   "plaats": "amstelveen",
+   "naam": "Nieuw Eilands Eigen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01HWCYDDYJPS3MSYESZSXQV7EX-perceel-tbv-realisatie-schuurwoning-beemte",
+   "plaats": "apeldoorn",
+   "naam": "Perceel Tbv Realisatie Schuurwoning Beemte"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01HWZ58HJ3EQT6E77NGBVYDHG5-de-hoge-veste",
+   "plaats": "borne",
+   "naam": "De Hoge Veste"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/borne/01HWZ58HN7WR9N41J35536EHX0-de-lage-veste",
+   "plaats": "borne",
+   "naam": "De Lage Veste"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HQTRNWCYRRYYTT2NVDSHRK25-post-breda-fase-fifth",
+   "plaats": "breda",
+   "naam": "Post Breda Fase Fifth"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hendrik-ido-ambacht/01HQT3621FWG2KAHJ53FJR2EQY-ambachts-lint-i-appartementen-en-patiobungalows",
+   "plaats": "hendrik-ido-ambacht",
+   "naam": "Ambachts Lint I Appartementen En Patiobungalows"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hendrik-ido-ambacht/01HQT3624Q3Y9FB1E2D31HFDPQ-ambachts-lint-startersappartementen",
+   "plaats": "hendrik-ido-ambacht",
+   "naam": "Ambachts Lint Startersappartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01HX92S2ZDRFSDGWHMEFA890WY-mix-cammingha-melkema-staete",
+   "plaats": "leeuwarden",
+   "naam": "Mix Cammingha Melkema Staete"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lelystad/01HTM6987S3QS83V9B17KBMT8S-bataviahaven-stadsfront-appartementen",
+   "plaats": "lelystad",
+   "naam": "Bataviahaven Stadsfront Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijkerk/01HFBZ5S6FZMBQWJDYBMAYMF6H-ooststreeck-fase-2",
+   "plaats": "nijkerk",
+   "naam": "Ooststreeck Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijkerk/01HFBZ5SCT64FSZ9PFNZHTBHH4-ooststreeck-fase-3",
+   "plaats": "nijkerk",
+   "naam": "Ooststreeck Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5GZED0T0036FD8YQ4Q7QWE-de-hofrij",
+   "plaats": "rotterdam",
+   "naam": "De Hofrij"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6QKKB5Z7NT764HS98DWBKZ-vlietpark-fase-2",
+   "plaats": "rotterdam",
+   "naam": "Vlietpark Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01HJ8GWV22HGAWTTHDR4972JW1-ekp-fase-1",
+   "plaats": "s-hertogenbosch",
+   "naam": "Ekp Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01HGDP2AVRAM6B0EVM47YG91FY-de-glasfabriek-entree-fase-1",
+   "plaats": "schiedam",
+   "naam": "De Glasfabriek Entree Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vijfheerenlanden/01HTKZC0FKVB396ME2421XPNR4-in-de-buurt-fase-2",
+   "plaats": "vijfheerenlanden",
+   "naam": "In De Buurt Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01J2E3PVXVV1V918NB2Q70ZKNY-beemd",
+   "plaats": "zuidplas",
+   "naam": "Beemd"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01J1ST6P5XG5DK6S6H8XG3CD8K-het-buyten-fase-1-en-2a",
+   "plaats": "zwolle",
+   "naam": "Het Buyten Fase 1 En 2a",
+   "woningen": null,
+   "lat": 52.49282667,
+   "lng": 6.16779967,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/altena/01HSBNAWV8GPQT10TFSS0AW8YQ-hof-van-courtine-penthouses",
+   "plaats": "altena",
+   "naam": "Hof Van Courtine Penthouses"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/diemen/01HSZFM4YFGEQE0PFD1HDJ4HFC-hof-van-saan-appartementen",
+   "plaats": "diemen",
+   "naam": "Hof Van Saan Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dinkelland/01HSGVVCR4B1124AV84YYRMX7G-klooster-ad-fontes",
+   "plaats": "dinkelland",
+   "naam": "Klooster Ad Fontes"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/doesburg/01HSGTZTR5BBR5JHRS41AZD7PS-de-havenmeester",
+   "plaats": "doesburg",
+   "naam": "De Havenmeester"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/doetinchem/01HSGTZTNB2NK7VH59W4WV02RB-dok-5-schippersdok",
+   "plaats": "doetinchem",
+   "naam": "Dok 5 Schippersdok"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/doetinchem/01HSGVVDQ3Q8KW3NCA2GH9FBRW-t-zandvoort",
+   "plaats": "doetinchem",
+   "naam": "T Zandvoort"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HNZE2AJC3WV65PQ5QH0Y07NT-lots-hof",
+   "plaats": "dordrecht",
+   "naam": "Lots Hof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGS9HYDTYJB6J34XRVRXHR2-bouwkavels-t-vaneker",
+   "plaats": "enschede",
+   "naam": "Bouwkavels T Vaneker"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGTZTV0Z9WXWA3H2N1TQYTF-bolke-locatie-toekomstige-ontwikkeling",
+   "plaats": "enschede",
+   "naam": "Bolke Locatie Toekomstige Ontwikkeling"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/enschede/01HSGVVD904DG63MT2NK8G27CZ-de-noabers",
+   "plaats": "enschede",
+   "naam": "De Noabers"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gemert-bakel/01HRVT2K285HYBCC7BZ00C0DG4-doonheide-ii-de-erven",
+   "plaats": "gemert-bakel",
+   "naam": "Doonheide Ii De Erven"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hellendoorn/01HSGTZV9D5Y8CM3WBP0P9A218-de-linderbeek-vroomshoop",
+   "plaats": "hellendoorn",
+   "naam": "De Linderbeek Vroomshoop"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01HSGT5YSJ2BM43NSAW213SB06-bataafse-kamp-voormalig-schoolgebouw",
+   "plaats": "hengelo-o",
+   "naam": "Bataafse Kamp Voormalig Schoolgebouw"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01HSGT5YWB98Q2N3FMCASN85R6-esreyn",
+   "plaats": "hengelo-o",
+   "naam": "Esreyn"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oost-gelre/01HJ8H044PNQD1C2GHAFCDMY5K-wonen-in-zieuwent",
+   "plaats": "oost-gelre",
+   "naam": "Wonen In Zieuwent"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/twenterand/01HSGTZVC8JFKEN1AP62K00WCX-het-mozaiek",
+   "plaats": "twenterand",
+   "naam": "Het Mozaiek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HHMA13EX15F1ZXD74PEE8NAZ-art-royale",
+   "plaats": "utrecht",
+   "naam": "Art Royale"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/valkenburg-aan-de-geul/01HHPDTKRPC1M0GGA2X5MN0GHF-villa-via-nova",
+   "plaats": "valkenburg-aan-de-geul",
+   "naam": "Villa Via Nova"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01H9Q9M0JNA8BZWMXF9QYMQ18S-bentwijck-fase-2b",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Bentwijck Fase 2b"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01HDZZC0AK5N9EYAW858X9ASB2-bentwijck-fase-3",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Bentwijck Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HKSHAC7KDBRBM40W88GEX3SF-weespersluis-vechtrijk-3b1-fase-5",
+   "plaats": "amsterdam",
+   "naam": "Weespersluis Vechtrijk 3b1 Fase 5"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01HNDNVXW69SJKB8Z8Q5G5D194-20-senioren-appartementen-hof-van-osseveld",
+   "plaats": "apeldoorn",
+   "naam": "20 Senioren Appartementen Hof Van Osseveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01HRPX0BXHQNVMR6KAFRHSQKKC-dijkzicht-fase-1",
+   "plaats": "groningen",
+   "naam": "Dijkzicht Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/harderwijk/01HR7SS2QEZ0ED4HP99YVXCE7K-ons-stadsgezicht-fase-2",
+   "plaats": "harderwijk",
+   "naam": "Ons Stadsgezicht Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heiloo/01HJ0XFVMP3KBVRW29JYVWNXS0-de-dubbele-ambacht",
+   "plaats": "heiloo",
+   "naam": "De Dubbele Ambacht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hoorn/01H963ATC6DSC228WPK6XC8H5N-de-stolptuin",
+   "plaats": "hoorn",
+   "naam": "De Stolptuin"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leusden/01HDK0ZWDVC0PHVHM5799GNW1Q-parkrand-leusden-fase-3",
+   "plaats": "leusden",
+   "naam": "Parkrand Leusden Fase 3"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijkerk/01HFBZ5S9QRKWF6DRT0CKRQ9CW-ooststreeck-fase-1",
+   "plaats": "nijkerk",
+   "naam": "Ooststreeck Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordenveld/01HMZWPGBDV0NQGRB8AV03KRPX-roderstate",
+   "plaats": "noordenveld",
+   "naam": "Roderstate"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6VJGDKJGXGBX2ZA0AKZ-mix-b",
+   "plaats": "rotterdam",
+   "naam": "Mix B"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HJ6FZ8PZR4DG8ZNDKTF6R6FS-moodz",
+   "plaats": "rotterdam",
+   "naam": "Moodz"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BFP53RY8NNBA5B65NGWT8-koer-appartementen",
+   "plaats": "rotterdam",
+   "naam": "Koer Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BGBGPRNFS0DACQ2V9HZ46-koer-herenhuizen",
+   "plaats": "rotterdam",
+   "naam": "Koer Herenhuizen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01HDP3NRWG5D0285JZ37HY84PB-de-harmonie",
+   "plaats": "westland",
+   "naam": "De Harmonie"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01HJ67E39NY8ZJ848PR1G9WS00-de-zaanse-helden",
+   "plaats": "zaanstad",
+   "naam": "De Zaanse Helden"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01HKSDM4BFTM9DECNCPNWAHHJV-woud",
+   "plaats": "zuidplas",
+   "naam": "Woud"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HDS43HCBC706QPP3W87PG7C8-floating-gardens",
+   "plaats": "amsterdam",
+   "naam": "Floating Gardens"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HFVTE34RJMYKJYYAP6ZJTTNQ-weespersluis-vechtrijk-3b1-fase-4",
+   "plaats": "amsterdam",
+   "naam": "Weespersluis Vechtrijk 3b1 Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01H963AQ649F3V7BCP9FQTBPRE-het-wantij-appartementen",
+   "plaats": "dordrecht",
+   "naam": "Het Wantij Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/gouda/01H963ASDNBW2H24BTKVK49YMS-parcour",
+   "plaats": "gouda",
+   "naam": "Parcour"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01H963AX6AWXH1YVC5J83QG2SP-schoterkwartier-fase-2-appartementen",
+   "plaats": "haarlem",
+   "naam": "Schoterkwartier Fase 2 Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01HHM8AY71YMFRA9PTQZ375TM8-bonheur",
+   "plaats": "haarlemmermeer",
+   "naam": "Bonheur"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/land-van-cuijk/01HHM1G95MP0JGSW3G009WXAAR-carmelveste",
+   "plaats": "land-van-cuijk",
+   "naam": "Carmelveste"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/leusden/01HE0E4RQ9CQB9HA33CER2B0TQ-parkrand-leusden-fase-4",
+   "plaats": "leusden",
+   "naam": "Parkrand Leusden Fase 4"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lingewaard/01HESTYWFAPGHX6JMHW5CZZGTZ-de-blauwe-hoek",
+   "plaats": "lingewaard",
+   "naam": "De Blauwe Hoek"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/maastricht/01HE2X3K9X7Z8FWWHPZQ5JJHSW-miller-38-koopappartementen",
+   "plaats": "maastricht",
+   "naam": "Miller 38 Koopappartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01HE5GGBVB8QWAX43CKFZN71TM-aan-de-zijdewende-kavels",
+   "plaats": "nieuwegein",
+   "naam": "Aan De Zijdewende Kavels"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordwijk/01HGFZY736V2TG9J7WC46XG2TR-de-lanen-deelplan-6-verkocht",
+   "plaats": "noordwijk",
+   "naam": "De Lanen Deelplan 6 Verkocht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/renkum/01HEPZZGZ01XP35F4T1JF44DPM-dunoveste",
+   "plaats": "renkum",
+   "naam": "Dunoveste"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/sluis/01HHKSBVWQDYN0JHC1Y2RBN67S-beaufort-fase-mistral",
+   "plaats": "sluis",
+   "naam": "Beaufort Fase Mistral"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01H963AJFSR74ZV7Y1A4T6QR6S-othene-frisiusschans",
+   "plaats": "terneuzen",
+   "naam": "Othene Frisiusschans"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/velsen/01HEQFDWQH6EYPEEZVVA3K64VY-missiehuis-park",
+   "plaats": "velsen",
+   "naam": "Missiehuis Park"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01HACBEH0F0A37A1STNA3NZH5C-de-velden-kreekrijk",
+   "plaats": "zaanstad",
+   "naam": "De Velden Kreekrijk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01HE35PCKVQ2C1YH9WEENZDXDD-het-buyten-fase-1",
+   "plaats": "zwolle",
+   "naam": "Het Buyten Fase 1",
+   "woningen": null,
+   "lat": 52.49178888,
+   "lng": 6.1677289,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01H963ATSYV60QCMDTMF7V10WA-bentwijck-fase-1",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Bentwijck Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01H963ATX1KKKZE5TFB5B3ZXAM-bentwijck-fase-2",
+   "plaats": "alphen-aan-den-rijn",
+   "naam": "Bentwijck Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963ATEY1E8SKSB2R0S05NFP-elzenhagen-zuidbuurt-parkvillaz-7-en-14",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Zuidbuurt Parkvillaz 7 En 14"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963AWHRH1DDKGDAP5K9GDE7-weespersluis-vechtrijk-3b1-fase-2",
+   "plaats": "amsterdam",
+   "naam": "Weespersluis Vechtrijk 3b1 Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H9848CZX80G55CJFV4C5SHTF-elzenhagen-zuidbuurt-parkvillaz-6",
+   "plaats": "amsterdam",
+   "naam": "Elzenhagen Zuidbuurt Parkvillaz 6"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/capelle-aan-den-ijssel/01H963APYVS6ZVN6FDJKJAM8F6-blinq",
+   "plaats": "capelle-aan-den-ijssel",
+   "naam": "Blinq"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/delft/01H963AJTRJSZEZZ8AREWP57XY-de-tuin-van-teding",
+   "plaats": "delft",
+   "naam": "De Tuin Van Teding"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dordrecht/01HE0E4RT1QZ0GXVBCBT2N5FW2-amstelwijck-park-fase-4c",
+   "plaats": "dordrecht",
+   "naam": "Amstelwijck Park Fase 4c"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/echt-susteren/01HB67N6VPD45S9QR92MWX2NE9-egmondhof",
+   "plaats": "echt-susteren",
+   "naam": "Egmondhof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AT4V8QRNJRNS5J5CWDJ7-woonveld-tussen-de-hagen",
+   "plaats": "haarlemmermeer",
+   "naam": "Woonveld Tussen De Hagen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/middelburg-z/01HAPFW8SJTHNPYGJ95803YJ4H-essenvelt-laanvillas",
+   "plaats": "middelburg-z",
+   "naam": "Essenvelt Laanvillas"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01HE4ZDQYPH0Z5A7GZA5GC7KFQ-aan-de-zijdewende",
+   "plaats": "nieuwegein",
+   "naam": "Aan De Zijdewende"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01H963AJK0YHW351QJWM58T1E2-kops-kwartier",
+   "plaats": "nijmegen",
+   "naam": "Kops Kwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/oudewater/01HDK04CVHXC8V5S2EP1Q9JN7W-wonen-op-de-westerwal-fase-2",
+   "plaats": "oudewater",
+   "naam": "Wonen Op De Westerwal Fase 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HDR0MVEAKMXE028EBRYJGM7Q-flair10",
+   "plaats": "s-gravenhage",
+   "naam": "Flair10"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H963ASGDJ8JR79ZEHEF8X41V-tuinenrijk-veld-2",
+   "plaats": "s-hertogenbosch",
+   "naam": "Tuinenrijk Veld 2"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/velsen/01HBGD0JCWETC152QC018899VT-landje-van-sinneveld",
+   "plaats": "velsen",
+   "naam": "Landje Van Sinneveld"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/voorschoten/01HDPAA8X2PCC6BVR45HVYRQ4X-het-fortuyn",
+   "plaats": "voorschoten",
+   "naam": "Het Fortuyn"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963ANTWSY8M69EYQKA90NRM-geins-amsterdam-zuidoost",
+   "plaats": "amsterdam",
+   "naam": "Geins Amsterdam Zuidoost"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HDS4QYCWE27RT279AZJEAMJ0-tolhuiskade",
+   "plaats": "amsterdam",
+   "naam": "Tolhuiskade"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HE5GZD6TTJS8X1DPGWPDZS60-cacaokwartier",
+   "plaats": "amsterdam",
+   "naam": "Cacaokwartier"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/apeldoorn/01H9GN7NZSJH49W8D5BN196N7A-meesters-van-apeldoorn-monumentale-stadsvilla",
+   "plaats": "apeldoorn",
+   "naam": "Meesters Van Apeldoorn Monumentale Stadsvilla"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01HDR1RHXXWJWBQQCTWWVHSBQN-tuinen-van-genta",
+   "plaats": "breda",
+   "naam": "Tuinen Van Genta"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/dronten/01HD6A67AYYWBJRBPHZXBDQ37N-zuiderweide-dronten-fase-1a-appartementen",
+   "plaats": "dronten",
+   "naam": "Zuiderweide Dronten Fase 1a Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlem/01H963AX3PFG69GJK52Q46ZDJ1-schoterkwartier-fase-2-woningen",
+   "plaats": "haarlem",
+   "naam": "Schoterkwartier Fase 2 Woningen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AT29BMZH98ARPJPB7KW3-woonveld-bos",
+   "plaats": "haarlemmermeer",
+   "naam": "Woonveld Bos"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/heerde/01H963ATZZ2BXP2R80WV0XJZAC-van-meurshof",
+   "plaats": "heerde",
+   "naam": "Van Meurshof"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01HDRA3KMAQ7T86FVP3CWT0Z0G-tuinenrijk-veld-3a",
+   "plaats": "s-hertogenbosch",
+   "naam": "Tuinenrijk Veld 3a"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HBTXF5WX9DWH0F236AC58GDW-cobana-coco-appartementen",
+   "plaats": "utrecht",
+   "naam": "Cobana Coco Appartementen"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HE2CED6WR60WZ0WHK7ZWH1SE-utrecht-wisselspoor",
+   "plaats": "utrecht",
+   "naam": "Utrecht Wisselspoor"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HE5FX3ATTZFWV3MC5MW74J3S-new-roots-villa-apartments",
+   "plaats": "utrecht",
+   "naam": "New Roots Villa Apartments"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/vijfheerenlanden/01HBT7YPSW951VTSFBB5679K99-in-de-buurt-fase-1",
+   "plaats": "vijfheerenlanden",
+   "naam": "In De Buurt Fase 1"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01HE2ZXNZ7PW9WKKR0AW4NADV3-soeterdael",
+   "plaats": "zoetermeer",
+   "naam": "Soeterdael"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01H963ARBABYBBJZ02D7RDBKGG-koningskwartier-fase-8",
+   "plaats": "zuidplas",
+   "naam": "Koningskwartier Fase 8"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01H963AV7ZNM4B22CMSCC9G0H5-koningskwartier-aan-de-laan",
+   "plaats": "zuidplas",
+   "naam": "Koningskwartier Aan De Laan"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zutphen/01HABWZWA7XQHTZG8K66BV95KJ-pracht",
+   "plaats": "zutphen",
+   "naam": "Pracht"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/groningen/01H963ATPWV18WZAJNN44JAM5F-parkrand-estate",
+   "plaats": "groningen",
+   "naam": "Parkrand Estate"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/noordenveld/01HACNR3K9Y6JCKNVZC4WE3S7D-brink",
+   "plaats": "noordenveld",
+   "naam": "Brink"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/terneuzen/01H963AHZKM29716HTV5X27APF-othene-leeuwerik",
+   "plaats": "terneuzen",
+   "naam": "Othene Leeuwerik"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zaanstad/01HACBEH8V8H9JEECXC47T5MVD-vrije-kavels-kreekrijk",
+   "plaats": "zaanstad",
+   "naam": "Vrije Kavels Kreekrijk"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01HE2Z6C6Q0DX7MDMQZNMH0S9Q-swanladriehoek",
+   "plaats": "zuidplas",
+   "naam": "Swanladriehoek"
+  }
+ ]
+}
