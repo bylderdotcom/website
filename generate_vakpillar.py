@@ -96,6 +96,44 @@ VAKKEN = {
             ("Ik ben schilder &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
         ],
     },
+    "loodgieter": {
+        "sing": "loodgieter", "plur": "loodgieters", "werk": "loodgieterswerk", "branche": "installatiebranche",
+        "ep_link": "/eerlijke-prijzen/", "eenheid": "klus", "calc_mode": "klus",
+        "pillar_h1": "Een loodgieter met een eerlijke prijs &mdash; en een eerlijk oordeel",
+        "pillar_intro": "Loodgieterswerk wordt vaak per klus of per uur geoffreerd &mdash; en juist daardoor lopen prijzen sterk uiteen. Bylder laat je zien wat een eerlijke prijs is, controleert je offerte per post, en toont loodgieters <strong>neutraal</strong> &mdash; met beoordelingen uit meerdere bronnen naast elkaar in plaats van &eacute;&eacute;n gekleurd platform.",
+        "hero_cta": "Check je loodgieter-offerte gratis",
+        "prijs_band": "Marktprijs loodgieter (2026): uurtarief &euro;45&ndash;&euro;75 + &euro;25&ndash;&euro;50 voorrijkosten; kraan vervangen &euro;90&ndash;&euro;180, cv-ketel vervangen &euro;1.800&ndash;&euro;3.500.",
+        "stad_kost": "Indicatief reken je in 2026 op &euro;45&ndash;&euro;75 per uur plus &euro;25&ndash;&euro;50 voorrijkosten. Losse klussen (kraan, toilet, lekkage) worden meestal per klus geoffreerd; een cv-ketel vervangen kost &euro;1.800&ndash;&euro;3.500.",
+        "werksoorten": [
+            {"naam": "Kraan of mengkraan vervangen", "low": 90, "high": 180, "uitleg": "Vervangen van een keuken- of badkamerkraan, inclusief arbeid en kleine materialen."},
+            {"naam": "Lekkage opsporen en verhelpen", "low": 90, "high": 350, "uitleg": "Lokaliseren en repareren; prijs hangt af van bereikbaarheid en de oorzaak van de lekkage."},
+            {"naam": "Toilet vervangen (staand of hangend)", "low": 150, "high": 600, "uitleg": "Demontage oud en plaatsen nieuw toilet; een hangend toilet met inbouwreservoir is arbeidsintensiever."},
+            {"naam": "Radiator plaatsen of vervangen (per stuk)", "low": 150, "high": 450, "uitleg": "Per radiator, inclusief aansluiten op de bestaande cv-leidingen."},
+            {"naam": "Cv-ketel vervangen (incl. installatie)", "low": 1800, "high": 3500, "uitleg": "Nieuwe hr-combiketel inclusief montage; merk, vermogen en aansluitwerk bepalen de prijs."},
+            {"naam": "Afvoer of riool ontstoppen", "low": 90, "high": 250, "uitleg": "Ontstoppen van een afvoer of riolering; bij graafwerk of een hardnekkige verstopping loopt het op."},
+        ],
+        "factoren": [
+            "Uurtarief en voorrijkosten — reken op &euro;45&ndash;&euro;75 per uur plus &euro;25&ndash;&euro;50 voorrijkosten, sterk regio-afhankelijk.",
+            "Spoed versus ingepland — spoed-, avond- en weekendwerk kent een toeslag.",
+            "Bereikbaarheid van leidingen — ingebouwde of slecht bereikbare leidingen kosten meer arbeid.",
+            "Materiaal- en merkkeuze — een A-merk kraan of ketel is duurder dan een basismodel.",
+            "Omvang van de klus — een los klusje versus een complete installatie scheelt sterk in efficiëntie per uur.",
+        ],
+        "trends": [
+            ("Personeelstekort & wachttijden", "De installatiebranche kampt met een groot tekort aan vakmensen. Goede loodgieters zijn vaak weken vooruit volgeboekt — op tijd plannen en vergelijken scheelt geld en wachttijd."),
+            ("Van cv-ketel naar warmtepomp", "De overstap naar (hybride) warmtepompen groeit hard; installateurs verschuiven mee, vaak met ISDE-subsidie die de terugverdientijd verkort."),
+            ("Waterkwaliteit & legionella", "Strengere eisen rond drinkwater en legionellapreventie maken een correcte aanleg en periodieke controle belangrijker."),
+            ("Stijgende materiaalkosten", "Koper, leidingmateriaal en ketels zijn duurder geworden, waardoor offertes voor hetzelfde werk sterker uiteenlopen — vergelijken loont."),
+            ("Inbouw- & designsanitair", "Hangende toiletten, inbouwkranen en regendouches vragen meer montagetijd en precisie, en drijven de prijs op."),
+        ],
+        "faq": [
+            ("Wat kost een loodgieter per uur in 2026?", "Indicatief &euro;45&ndash;&euro;75 per uur, plus &euro;25&ndash;&euro;50 voorrijkosten &mdash; regio- en spoedafhankelijk. Veel klussen worden per klus geoffreerd; check je offerte gratis tegen de markt op Bylder."),
+            ("Wat kost het vervangen van een cv-ketel?", "Een nieuwe hr-combiketel inclusief installatie kost indicatief &euro;1.800&ndash;&euro;3.500, afhankelijk van merk, vermogen en aansluitwerk."),
+            ("Hoe weet ik of mijn loodgieter-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, voorrijkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
+            ("Is Bylder een loodgietersbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen loodgieterswerk en zijn geen leadverkoper &mdash; we tonen loodgieters neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Ik ben loodgieter &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+        ],
+    },
 }
 
 # ───────────────────────── CHROME (gedeeld) ─────────────────────────
@@ -328,22 +366,39 @@ def bedrijven_grid(lijst): return f'<div class="grid-3">{"".join(bedrijf_card(b)
 
 
 def klus_calculator(vak):
-    """Inline 'wat kost mijn klus?'-widget o.b.v. de werksoort-bandbreedtes."""
+    """Inline 'wat kost mijn klus?'-widget. Twee modi:
+    - 'oppervlak' (m²/meter): hoeveelheid × bandbreedte (stukadoor, schilder, gietvloer).
+    - 'klus' (per klus/stuk/project): kies werk → toon bandbreedte (loodgieter, elektricien, badkamer)."""
     ws = vak["werksoorten"]
+    eenheid = vak.get("eenheid", "m²")
+    mode = vak.get("calc_mode", "oppervlak")
     data = json.dumps([{"low": w["low"], "high": w["high"]} for w in ws])
     opts = "".join(f'<option value="{i}">{html.escape(w["naam"])}</option>' for i, w in enumerate(ws))
-    h = ('<div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:16px;padding:22px;margin:24px 0;">'
-         '<div style="font-weight:800;font-size:1.05rem;color:#1A1208;margin-bottom:4px;">Wat kost jouw klus?</div>'
-         '<div style="font-size:13px;color:rgba(61,46,30,0.6);margin-bottom:14px;">Kies je werksoort en vul je oppervlak in voor een directe indicatie (NL 2026).</div>'
-         '<div style="display:grid;grid-template-columns:1.6fr 1fr;gap:10px;">'
-         '<select id="kc-werk" style="padding:11px;border:1.5px solid rgba(61,46,30,0.14);border-radius:10px;font-size:14px;background:#fff;color:#1A1208;font-family:inherit;">' + opts + '</select>'
-         '<input id="kc-m2" inputmode="decimal" placeholder="aantal m&sup2;" style="padding:11px;border:1.5px solid rgba(61,46,30,0.14);border-radius:10px;font-size:14px;color:#1A1208;font-family:inherit;" /></div>'
-         '<div id="kc-out" style="font-size:15px;color:#1A1208;margin-top:12px;min-height:22px;"></div>'
-         '<a href="' + SIGNUP + '" style="display:inline-block;margin-top:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 22px;border-radius:9px;font-weight:700;font-size:14px;text-decoration:none;">Check je échte offerte gratis &#8594;</a></div>')
-    js = ('<script>(function(){var W=' + data + ';var s=document.getElementById("kc-werk"),m=document.getElementById("kc-m2"),o=document.getElementById("kc-out");'
+    wrap_open = '<div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:16px;padding:22px;margin:24px 0;"><div style="font-weight:800;font-size:1.05rem;color:#1A1208;margin-bottom:4px;">Wat kost jouw klus?</div>'
+    cta = '<a href="' + SIGNUP + '" style="display:inline-block;margin-top:8px;background:#3D5A3E;color:#F5F0E8;padding:11px 22px;border-radius:9px;font-weight:700;font-size:14px;text-decoration:none;">Check je échte offerte gratis &#8594;</a></div>'
+    sel = '<select id="kc-werk" style="padding:11px;border:1.5px solid rgba(61,46,30,0.14);border-radius:10px;font-size:14px;background:#fff;color:#1A1208;font-family:inherit;width:100%;">' + opts + '</select>'
+    out = '<div id="kc-out" style="font-size:15px;color:#1A1208;margin-top:12px;min-height:22px;"></div>'
+    if mode == "klus":
+        h = (wrap_open
+             + '<div style="font-size:13px;color:rgba(61,46,30,0.6);margin-bottom:14px;">Kies het type werk voor een directe prijsindicatie (NL 2026).</div>'
+             + sel + out + cta)
+        js = ('<script>(function(){var W=' + data + ';var s=document.getElementById("kc-werk"),o=document.getElementById("kc-out");'
+              'function f(n){return n.toLocaleString("nl-NL");}function c(){var w=W[s.value];if(!w){o.innerHTML="";return;}'
+              'o.innerHTML="Indicatie: <strong>\\u20ac"+f(w.low)+" \\u2013 \\u20ac"+f(w.high)+"</strong> '
+              '<span style=\\"color:rgba(61,46,30,0.5);font-size:13px;\\">(indicatief, per klus, excl. voorrijkosten/btw)</span>";}'
+              's.addEventListener("change",c);c();})();</script>')
+        return h + js
+    # oppervlak-modus
+    eh = html.escape(eenheid)
+    h = (wrap_open
+         + '<div style="font-size:13px;color:rgba(61,46,30,0.6);margin-bottom:14px;">Kies je werksoort en vul je hoeveelheid in voor een directe indicatie (NL 2026).</div>'
+         + '<div style="display:grid;grid-template-columns:1.6fr 1fr;gap:10px;">' + sel
+         + f'<input id="kc-m2" inputmode="decimal" placeholder="aantal {eh}" style="padding:11px;border:1.5px solid rgba(61,46,30,0.14);border-radius:10px;font-size:14px;color:#1A1208;font-family:inherit;" /></div>'
+         + out + cta)
+    js = ('<script>(function(){var W=' + data + ';var EH=' + json.dumps(eenheid) + ';var s=document.getElementById("kc-werk"),m=document.getElementById("kc-m2"),o=document.getElementById("kc-out");'
           'function f(n){return n.toLocaleString("nl-NL");}function c(){var w=W[s.value],a=parseFloat((m.value||"").replace(",","."));'
           'if(!w||!(a>0)){o.innerHTML="";return;}o.innerHTML="Indicatie voor jouw klus: <strong>\\u20ac"+f(Math.round(w.low*a))+" \\u2013 \\u20ac"+f(Math.round(w.high*a))'
-          '+"</strong> <span style=\\"color:rgba(61,46,30,0.5);font-size:13px;\\">("+w.low+"\\u2013"+w.high+" \\u20ac/m\\u00b2, indicatief)</span>";}'
+          '+"</strong> <span style=\\"color:rgba(61,46,30,0.5);font-size:13px;\\">("+w.low+"\\u2013"+w.high+" \\u20ac/"+EH+", indicatief)</span>";}'
           's.addEventListener("change",c);m.addEventListener("input",c);})();</script>')
     return h + js
 
@@ -483,7 +538,7 @@ def build_pillar(vak, vak_slug, bedrijven, steden_idx):
 
     rows = "".join(
         f'<tr><td>{html.escape(w["naam"])}<div style="font-size:12.5px;color:rgba(61,46,30,0.55);margin-top:3px;">{html.escape(w["uitleg"])}</div></td>'
-        f'<td class="price">{euro(w["low"])}&ndash;{euro(w["high"])}<div style="font-size:11px;font-weight:400;color:rgba(61,46,30,0.45);">per m&sup2;</div></td></tr>'
+        f'<td class="price">{euro(w["low"])}&ndash;{euro(w["high"])}<div style="font-size:11px;font-weight:400;color:rgba(61,46,30,0.45);">per {html.escape(vak.get("eenheid", "m²"))}</div></td></tr>'
         for w in vak["werksoorten"])
     factoren = "".join(f"<li>{html.escape(x)}</li>" for x in vak["factoren"])
     trends = "".join(

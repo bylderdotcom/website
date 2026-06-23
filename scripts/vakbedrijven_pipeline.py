@@ -4,7 +4,8 @@ Vakbedrijven-datapijplijn (KvK-VRIJ) voor de vakbedrijven-laag.
 
 Modes:
   seed-osm <vak>            Haal échte bedrijven uit OpenStreetMap (gratis, geen key) en upsert.
-  discover-places <vak>     Ontdek via Google Places API (vereist GOOGLE_PLACES_API_KEY) per stad.
+  discover-places <vak> [n] Ontdek via Google Places API (betaald per call) per stad; n = pagina's/plaats (default 1, kostenbewust).
+  clean-data                Schoon de bron op: postcode/huisnummer uit plaatsnaam + platforms/opleidingen op opt_out.
   export                    Haal alles uit Supabase en schrijf data/vakbedrijven.json (door de SEO-generator gelezen).
 
 Bron van waarheid = Supabase-tabel public.vakbedrijven. HTTP via curl (stabiele system-certs).
@@ -159,7 +160,12 @@ def seed_osm(vak):
 
 
 # ---------- Google Places ----------
-def discover_places(vak):
+def discover_places(vak, max_pages=1):
+    """Ontdek bedrijven via Places searchText. Kosten-bewust:
+    - Trimme field-mask (geen priceLevel/googleMapsUri/editorialSummary: leeg voor vakbedrijven +
+      duurdere SKU; Maps-deeplink bouwen we gratis uit place_id).
+    - max_pages bepaalt het aantal betaalde verzoeken per plaats (1 = 20 resultaten, goedkoopst).
+    - Telt en logt het totale aantal API-calls zodat de kosten zichtbaar zijn."""
     import time
     key = env("GOOGLE_PLACES_API_KEY")
     if not key:
@@ -167,17 +173,18 @@ def discover_places(vak):
     term = zoekterm_voor(vak)
     plaatsen = plaatsen_voor(vak)
     h = {"Content-Type": "application/json", "X-Goog-Api-Key": key,
-         "X-Goog-FieldMask": "places.id,places.displayName,places.formattedAddress,places.rating,places.userRatingCount,places.websiteUri,places.nationalPhoneNumber,places.location,places.priceLevel,places.googleMapsUri,places.editorialSummary,nextPageToken"}
-    PRICE = {"PRICE_LEVEL_INEXPENSIVE": "€", "PRICE_LEVEL_MODERATE": "€€", "PRICE_LEVEL_EXPENSIVE": "€€€", "PRICE_LEVEL_VERY_EXPENSIVE": "€€€€"}
+         "X-Goog-FieldMask": "places.id,places.displayName,places.formattedAddress,places.rating,places.userRatingCount,places.websiteUri,places.nationalPhoneNumber,places.location,nextPageToken"}
     by_place = {}   # dedup landelijk op place_id
-    print(f"Places '{term}' over {len(plaatsen)} plaatsen…")
+    calls = 0
+    print(f"Places '{term}' over {len(plaatsen)} plaatsen (max {max_pages} pagina/plaats)…")
     for i, slug in enumerate(plaatsen):
         stad = plaatsnaam(slug)
         token = None
-        for _page in range(3):                       # tot 60 resultaten per plaats
+        for _page in range(max_pages):
             body = {"textQuery": f"{term} {stad}", "languageCode": "nl", "regionCode": "NL", "maxResultCount": 20}
             if token: body["pageToken"] = token
             res = curl_json("POST", "https://places.googleapis.com/v1/places:searchText", h, body) or {}
+            calls += 1
             if res.get("error"):
                 print("  API-fout:", json.dumps(res["error"])[:200]); return
             for p in res.get("places", []):
@@ -192,18 +199,15 @@ def discover_places(vak):
                     "google_rating": p.get("rating"), "google_reviews": p.get("userRatingCount"),
                     "lat": (p.get("location") or {}).get("latitude"),
                     "lng": (p.get("location") or {}).get("longitude"),
-                    "price_level": PRICE.get(p.get("priceLevel")),
-                    "maps_uri": p.get("googleMapsUri"),
-                    "google_summary": (p.get("editorialSummary") or {}).get("text"),
                     "status": "unclaimed", "bron": "places",
                 }
             token = res.get("nextPageToken")
             if not token: break
             time.sleep(2)                            # pageToken even laten activeren
         if (i + 1) % 25 == 0:
-            print(f"  …{i+1}/{len(plaatsen)} plaatsen, {len(by_place)} unieke bedrijven")
+            print(f"  …{i+1}/{len(plaatsen)} plaatsen, {len(by_place)} bedrijven, {calls} API-calls")
     recs = list(by_place.values())
-    print(f"Places '{vak}': {len(recs)} unieke bedrijven landelijk")
+    print(f"Places '{vak}': {len(recs)} unieke bedrijven landelijk in {calls} API-calls")
     for j in range(0, len(recs), 500):               # upsert in batches
         upsert(recs[j:j + 500])
 
@@ -264,7 +268,7 @@ if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else ""
     arg = sys.argv[2] if len(sys.argv) > 2 else "stukadoor"
     if mode == "seed-osm": seed_osm(arg)
-    elif mode == "discover-places": discover_places(arg)
+    elif mode == "discover-places": discover_places(arg, int(sys.argv[3]) if len(sys.argv) > 3 else 1)
     elif mode == "clean-data": clean_data()
     elif mode == "export": export()
     else:
