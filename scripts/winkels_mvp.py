@@ -21,7 +21,9 @@ CATS = {"meubelwinkel": "meubelwinkel", "woonwinkel": "woonwinkel woonaccessoire
 KETENS = ("hornbach", "gamma", "praxis", "karwei", "kwantum", "ikea", "leen bakker", "jysk", "beter bed",
           "veneta", "intratuin", "woonboulevard", "bauhaus", "hubo", "multimate", "fonq", "xenos", "action",
           "carpetright", "tapijtcentrum", "mandemakers", "sanidump", "praxis", "welkoop", "boer staphorst",
-          "trendhopper", "seats and sofas", "swiss sense", "auping store", "kwantum", "pamono")
+          "trendhopper", "seats and sofas", "swiss sense", "auping store", "kwantum", "pamono",
+          # regionale ketens / centrale-balie (converteren slecht voor lokale €79-listing)
+          "jeha", "montel", "montèl", "goossens", "prominent", "sfeer.nl")
 
 def env(k):
     for line in open(ENV):
@@ -61,7 +63,10 @@ def discover(stad):
     print(f"{stad}: {len(seen)} lokale woonwinkels met website (ketens gefilterd).")
 
 
-JUNK = ("example.", "sentry", "wix", "@2x", ".png", ".jpg", ".gif", "your-email", "domain.com", "u003e")
+JUNK = ("example.", "sentry", "wix", "@2x", ".png", ".jpg", ".gif", "your-email", "domain.com", "u003e",
+        # NL/placeholder-adressen die geen echt postvak zijn
+        "domein.", "gebruiker@", "voorbeeld", "naam@", "jouw@", "uw-email", "@example", "emailadres",
+        "noreply", "no-reply", "no_reply", "@sentry", ".webp", ".svg", "@email.com", "test@")
 def email_uit(html):
     cand = re.findall(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", html or "")
     cand = [c for c in cand if not any(j in c.lower() for j in JUNK) and len(c) < 60]
@@ -101,7 +106,7 @@ def scrape_emails(stad):
 
 def batch(stad, n=10):
     d = load(stad)
-    klaar = [w for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild"]
+    klaar = [w for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild" and not is_keten(w["naam"])]
     print(f"{stad}: {len(klaar)} winkels klaar om te mailen. Volgende {min(n,len(klaar))}:")
     for w in klaar[:n]:
         print(f"  {w['email']:34} {w['naam'][:38]:38} ★{w.get('rating')} [{w['cat']}]")
@@ -118,9 +123,10 @@ def mails(stad, n=10):
     EERLIJK: geen 'kopers aangemeld'-claim (projecten van nieuwbouw.nl, niet uit signups) — wel #woningen + projectlink."""
     d = load(stad)
     pj = os.path.join(ROOT, "data", "nieuwbouwprojecten.json")
-    proj = [p for p in json.load(open(pj, encoding="utf-8"))["projecten"]
+    alle = [p for p in json.load(open(pj, encoding="utf-8"))["projecten"]
             if p.get("plaats") == stad and p.get("lat")] if os.path.exists(pj) else []
-    klaar = [w for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild"][:n]
+    proj = [p for p in alle if p.get("woningen")] or alle      # voorkeur: projecten MÉT woningtal
+    klaar = [w for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild" and not is_keten(w["naam"])][:n]
     stad_l = stad.capitalize()
     for w in klaar:
         pr = min(proj, key=lambda p: _afstand(w["lat"], w["lng"], p["lat"], p["lng"])) if (proj and w.get("lat")) else (proj[0] if proj else {})
@@ -144,6 +150,11 @@ graag met u in contact.
 Met vriendelijke groet,
 Daniël Paaij
 Bylder.com""")
+        w["status"] = "gemaild"                        # doortellen → morgen verse 10
+    save(stad, d)
+    rest = sum(1 for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild" and not is_keten(w["naam"]))
+    print("=" * 72)
+    print(f"\n{len(klaar)} gemarkeerd als verzonden. Nog {rest} winkels in de wachtrij voor volgende rondes.")
 
 
 if __name__ == "__main__":
