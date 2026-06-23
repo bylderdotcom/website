@@ -22,8 +22,8 @@
   <url><loc>https://www.bylder.com/stukadoor/hilversum/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/apeldoorn/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/deventer/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/stukadoor/oss/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/enschede/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bylder.com/stukadoor/oss/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/huizen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/leeuwarden/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/alkmaar/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -148,6 +148,7 @@
   <url><loc>https://www.bylder.com/stukadoor/didam/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/dronten/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/eersel/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bylder.com/stukadoor/emmeloord/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/garyp/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/geldermalsen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/hank/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -179,7 +180,6 @@
   <url><loc>https://www.bylder.com/stukadoor/duiven/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/edam/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/edam-volendam/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/stukadoor/emmeloord/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/enter/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/geffen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/goirle/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -318,9 +318,6 @@
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/valk-stucadoor-rxpv3y/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/van-der-velden-stukadoors-bedrijf-trjnfo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/wand-en-plafond-expert-0xn2ng/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/stukadoor/bedrijf/nvg-tegelzetters-en-stukadoors-enschede-g6k0o4/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/stukadoor/bedrijf/polder-stuc-m4aoge/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoor-amsterdam-schilder-stukadoorsbedrijf-ykm-rg12-s/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/fleurbaaij-totaal-afbouw-b-v-xdqxcc/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/tonnie-rave-stukadoorsbedrijf-regio-doetinchem-aalten-winterswijk-herefg/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/de-noord-stucadoors-3sqdyk/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -397,6 +394,7 @@
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/sijne-zn-b-v-x1r_0c/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/starman-docjeq/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stucdeal-6uhhie/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoor-amsterdam-schilder-stukadoorsbedrijf-ykm-rg12-s/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoorsclub-2gqk4w/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/van-ibra-stukadoors-en-schilders-b-v-z1m3po/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/yigit-stukadoorsbedrijf-9k-gww/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -508,8 +506,8 @@
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/rt-afbouw-yz7joi/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/schildersbedrijf-picobello-breda-ulvenhout-uretzw/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stucstad-nl-b-v-qt4cca/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoor-breda-7vvdx8/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoor-breda-u7scvq/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoor-breda-7vvdx8/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoorsbedrijf-p-vd-velden-zihctu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoorsbedrijf-van-gastel-bv-r9exva/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoor-bedrijf-sneijers-pwlbae/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -669,6 +667,7 @@
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/diphoorn-stuck-spackbedrijf-2pieuw/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stucadoorsbedrijf-dols-5fy2ia/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/v-o-f-stucadoorsbedrijf-gebr-jansen-is4hsm/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/stukadoor/bedrijf/polder-stuc-m4aoge/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoorsbedrijf-l-brouwer-q_5xeo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/crownstuc-stukadoors-tag4-q/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/hpb-gevelisolatie-stukadoorsbedrijf-oljpky/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -683,6 +682,7 @@
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/duinkerk-stucwerken-g0kisq/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/enschede-stukadoor-dunpleister-3vwise/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/eric-booij-spackspuitbedrijf-e4yhiu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/stukadoor/bedrijf/nvg-tegelzetters-en-stukadoors-enschede-g6k0o4/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stucadoor-schilderwerk-hasan-agn9vo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stucadoorsbedrijf-weterholt-wyd1mi/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/stukadoor-enschede-fv2xu8/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -796,8 +796,8 @@
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/poffers-afbouw-cjpq9u/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/colorrit-9bt8vq/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/het-schippertje-ornamenten-en-sierlijsten-van-gips-_ekfts/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/stukadoor/bedrijf/van-bijsteren-stukadoorsbedrijf-b-v-rjm840/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/van-bijsteren-stukadoorsbedrijf-b-v-0c5bpo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/stukadoor/bedrijf/van-bijsteren-stukadoorsbedrijf-b-v-rjm840/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/frank-s-stuc-en-afbouwbedrijf-1riqn0/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/jos-sikkema-stukadoorsbedrijf-nxmgfm/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/stukadoor/bedrijf/r-huisman-ik-9oy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>

@@ -34,13 +34,13 @@
   <url><loc>https://www.bylder.com/schilder/dordrecht/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/huizen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/deventer/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/schilder/nieuwegein/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/soest/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bylder.com/schilder/nieuwegein/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/weert/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bylder.com/schilder/assen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/leiden/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/volendam/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/alphen-aan-den-rijn/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/schilder/assen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/emmen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/heerhugowaard/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/houten/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -104,9 +104,9 @@
   <url><loc>https://www.bylder.com/schilder/bergen-op-zoom/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/den-helder/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/enschede/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bylder.com/schilder/ermelo/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/maassluis/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/oldenzaal/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bylder.com/schilder/ermelo/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/hellevoetsluis/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/rosmalen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bylder.com/schilder/borne/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -786,15 +786,16 @@
   <url><loc>https://www.bylder.com/schilder/bedrijf/zijlstra-glas-en-schilderwerken-w-dbwhvu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/t-gooi-b-v-3zrekm/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/jpdv-schilders-vghylo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/schilder/bedrijf/ak-dienstverlening-qjhgfo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/gebroeders-lemmers-schilderwerken-zixzje/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/schilder/bedrijf/gebroeders-lemmers-schilderwerken-zixzje-2/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/m-buijs-schilderwerken-vwasdo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/schilder/bedrijf/m-buijs-schilderwerken-vwasdo-2/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/milort-schilders-vof-rr8aro/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/ralph-kraaivanger-renovlies-sauzen-schilderwerk-behangen-stucwerk-ln-52k/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/schildersbedrijf-zzp-schilder-nl-capelle-aan-den-ijssel-bvsuku/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/schilder/bedrijf/schildersbedrijf-zzp-schilder-nl-capelle-aan-den-ijssel-bvsuku-2/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/van-der-heeden-schilderwerken-b_zwka/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/wandenspuiten-t7aq8g/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/wandenspuiten-t7aq8g-2/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/zekerart-i2tbji/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bylder.com/schilder/bedrijf/van-der-heeden-schilderwerken-b_zwka-2/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/tuinkamer-yvonne-dikke-dames-schilderen-steigerhout-workshop-porselein-servies-schilderen-gv6yii/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/bakker-vastgoed-en-onderhoudsbedrijf-bv-8q4wik/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/schilder-damming-onderhoud-rnabwo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -1244,12 +1245,8 @@
   <url><loc>https://www.bylder.com/schilder/bedrijf/slot-schilders-sycyvm/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/uw-onderhoudspartner-lenferink-hardenberg-voorheen-schildersbedrijf-sander-beekhof-1fd69g/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/yousef-onderhoudsbedrijf-9l-zby/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/bart-s-schildersbedrijf-0bemlc/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/deri-huisdecoratie-uluvsk/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/gouweleeuw-schilders-b-v-1oy4le/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/mg-schilders-harderwijk-fx8x28/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/mg-schilders-harderwijk-fx8x28-2/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.bylder.com/schilder/bedrijf/schilder-harderwijk-7smcnq/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/schildersbedrijf-kluinhaar-rqydsk/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/buto-schilderwerken-b-v-drnt_m/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.bylder.com/schilder/bedrijf/klustotaalservice-0oq1s0/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>

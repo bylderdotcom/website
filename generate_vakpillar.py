@@ -243,7 +243,7 @@ def schoon_stad(s):
     '1234 AB Plaats' → 'Plaats'). Pure-postcode-rest ('6678 MB') = onbruikbaar → None."""
     if not s: return s
     s = s.strip()
-    m = re.match(r"^\d{4}\s+(?:[A-Za-z]{2}\s+)?(.+)$", s)
+    m = re.match(r"^\d+\s+(?:[A-Za-z]{2}\s+)?(.+)$", s)
     if m: s = m.group(1).strip()
     if not s or re.fullmatch(r"[A-Za-z]{1,2}", s): return None
     return s

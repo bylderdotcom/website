@@ -208,6 +208,46 @@ def discover_places(vak):
         upsert(recs[j:j + 500])
 
 
+# ---------- Data-opschoning ----------
+UITGESLOTEN = ("banenplatform", "platform van nederland", "vacature", "uitzend", "detachering",
+               "werving", "werktalent", "vakopleiding", "academie", "opleidingscentrum", "vergelijk offertes")
+
+def _schoon_stad(s):
+    if not s: return s
+    s = s.strip()
+    m = re.match(r"^\d+\s+(?:[A-Za-z]{2}\s+)?(.+)$", s)
+    if m: s = m.group(1).strip()
+    if not s or re.fullmatch(r"[A-Za-z]{1,2}", s): return None
+    return s
+
+
+def _patch(slug, body):
+    url = env("NEXT_PUBLIC_SUPABASE_URL").rstrip("/") + f"/rest/v1/vakbedrijven?slug=eq.{slug}"
+    h = supa_headers(); h["Prefer"] = "return=minimal"
+    cmd = ["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", "-X", "PATCH", url]
+    for k, v in h.items(): cmd += ["-H", f"{k}: {v}"]
+    cmd += ["--data", json.dumps(body)]
+    return subprocess.run(cmd, capture_output=True, text=True, timeout=60).stdout
+
+
+def clean_data():
+    """Sync de pagina-opschoning naar de bron: postcode uit stad strippen + platforms op opt_out."""
+    rows = fetch_all()
+    if not isinstance(rows, list):
+        print("Fout bij ophalen:", rows); return
+    n_stad = n_plat = 0
+    for b in rows:
+        naam = (b.get("naam") or "").lower()
+        if any(k in naam for k in UITGESLOTEN):
+            print(f"  opt_out: {b['naam']}  → http={_patch(b['slug'], {'opt_out': True})}"); n_plat += 1
+            continue
+        stad = b.get("stad")
+        if stad and re.match(r"^\d", stad):
+            schoon = _schoon_stad(stad)
+            print(f"  stad: {stad!r} → {schoon!r}  http={_patch(b['slug'], {'stad': schoon})}"); n_stad += 1
+    print(f"Opgeschoond: {n_stad} plaatsnamen + {n_plat} platforms op opt_out.")
+
+
 # ---------- Export ----------
 def export():
     rows = fetch_all()
@@ -225,6 +265,7 @@ if __name__ == "__main__":
     arg = sys.argv[2] if len(sys.argv) > 2 else "stukadoor"
     if mode == "seed-osm": seed_osm(arg)
     elif mode == "discover-places": discover_places(arg)
+    elif mode == "clean-data": clean_data()
     elif mode == "export": export()
     else:
         print(__doc__)
