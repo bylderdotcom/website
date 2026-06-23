@@ -172,6 +172,43 @@ VAKKEN = {
             ("Ik ben elektricien &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
         ],
     },
+    "aannemer": {
+        "sing": "aannemer", "plur": "aannemers", "werk": "bouw- en verbouwwerk", "branche": "bouwsector",
+        "ep_link": "/eerlijke-prijzen/", "eenheid": "project", "calc_mode": "klus",
+        "pillar_h1": "Een aannemer met een eerlijke prijs &mdash; en een eerlijk oordeel",
+        "pillar_intro": "Aannemerswerk is sterk projectafhankelijk en juist daarom lopen offertes enorm uiteen &mdash; door verschil in omvang, afwerkingsniveau en constructief werk. Bylder laat je zien wat een eerlijke prijs is, controleert je offerte per post, en toont aannemers <strong>neutraal</strong> &mdash; met beoordelingen uit meerdere bronnen naast elkaar in plaats van &eacute;&eacute;n gekleurd platform.",
+        "hero_cta": "Check je aannemer-offerte gratis",
+        "prijs_band": "Marktprijs aannemer (2026): aanbouw/uitbouw &euro;15.000&ndash;&euro;60.000, dakkapel &euro;7.000&ndash;&euro;18.000, verbouwing &euro;10.000&ndash;&euro;80.000 &mdash; sterk projectafhankelijk.",
+        "stad_kost": "Aannemerswerk is sterk projectafhankelijk. Indicatief (2026): een aanbouw of uitbouw &euro;15.000&ndash;&euro;60.000, een dakkapel &euro;7.000&ndash;&euro;18.000 en een verbouwing &euro;10.000&ndash;&euro;80.000, afhankelijk van omvang en afwerking.",
+        "werksoorten": [
+            {"naam": "Aanbouw of uitbouw", "low": 15000, "high": 60000, "uitleg": "Uitbreiding van de woning; prijs hangt sterk af van oppervlak, afwerking en fundering."},
+            {"naam": "Verbouwing of renovatie", "low": 10000, "high": 80000, "uitleg": "Van één kamer tot een complete woning; sterk afhankelijk van omvang en afwerkingsniveau."},
+            {"naam": "Dakkapel plaatsen", "low": 7000, "high": 18000, "uitleg": "Inclusief plaatsing en afwerking; breedte en materiaal bepalen de prijs."},
+            {"naam": "Draagmuur verwijderen (incl. stalen ligger)", "low": 1500, "high": 5000, "uitleg": "Inclusief constructieberekening en stalen ligger; afhankelijk van de overspanning."},
+            {"naam": "Fundering of grondwerk", "low": 5000, "high": 25000, "uitleg": "Funderingsherstel of het uitgraven van een kelder/souterrain; sterk projectafhankelijk."},
+        ],
+        "factoren": [
+            "Omvang en complexiteit — één kamer verbouwen versus een complete woning maakt een groot verschil.",
+            "Afwerkingsniveau — standaard versus high-end materialen en maatwerk.",
+            "Constructief werk — draagmuren, fundering en staal vragen berekeningen en soms vergunningen.",
+            "Vergunningen & begeleiding — omgevingsvergunning, constructeur en bouwbegeleiding tellen mee.",
+            "Regio en planning — in de Randstad en bij krappe planning liggen de tarieven hoger.",
+        ],
+        "trends": [
+            ("Personeelstekort & wachttijden", "De bouwsector kampt met een groot tekort aan vakmensen; goede aannemers zijn vaak maanden vooruit volgeboekt. Op tijd plannen en vergelijken loont."),
+            ("Verbouwen in plaats van verhuizen", "Door de krappe woningmarkt kiezen meer huiseigenaren voor een aanbouw, uitbouw of dakkapel in plaats van verhuizen."),
+            ("Verduurzaming bij verbouwing", "Isolatie, warmtepompen en zonnepanelen worden steeds vaker in één keer meegenomen — vaak met subsidie die de terugverdientijd verkort."),
+            ("Stijgende bouwkosten", "Materiaal- en loonkosten zijn de afgelopen jaren gestegen, waardoor offertes voor hetzelfde werk sterker uiteenlopen — vergelijken loont meer dan ooit."),
+            ("Circulair & hergebruik", "Hergebruik van materialen en circulair bouwen winnen terrein, zowel uit milieu- als kostenoogpunt."),
+        ],
+        "faq": [
+            ("Wat kost een aanbouw of uitbouw in 2026?", "Indicatief &euro;15.000&ndash;&euro;60.000, sterk afhankelijk van oppervlak, afwerking en fundering. Vraag een gespecificeerde offerte en check gratis op Bylder of die marktconform is."),
+            ("Wat kost een verbouwing?", "Van &euro;10.000 voor een enkele kamer tot &euro;80.000+ voor een complete woning &mdash; het hangt af van omvang, constructief werk en afwerkingsniveau."),
+            ("Hoe weet ik of mijn aannemer-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, onderaanneming, staartkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
+            ("Is Bylder een aannemer of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij voeren zelf geen bouwwerk uit en zijn geen leadverkoper &mdash; we tonen aannemers neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Ik ben aannemer &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+        ],
+    },
 }
 
 # ───────────────────────── CHROME (gedeeld) ─────────────────────────
@@ -420,10 +457,10 @@ def klus_calculator(vak):
         h = (wrap_open
              + '<div style="font-size:13px;color:rgba(61,46,30,0.6);margin-bottom:14px;">Kies het type werk voor een directe prijsindicatie (NL 2026).</div>'
              + sel + out + cta)
-        js = ('<script>(function(){var W=' + data + ';var s=document.getElementById("kc-werk"),o=document.getElementById("kc-out");'
+        js = ('<script>(function(){var W=' + data + ';var EH=' + json.dumps(eenheid) + ';var s=document.getElementById("kc-werk"),o=document.getElementById("kc-out");'
               'function f(n){return n.toLocaleString("nl-NL");}function c(){var w=W[s.value];if(!w){o.innerHTML="";return;}'
               'o.innerHTML="Indicatie: <strong>\\u20ac"+f(w.low)+" \\u2013 \\u20ac"+f(w.high)+"</strong> '
-              '<span style=\\"color:rgba(61,46,30,0.5);font-size:13px;\\">(indicatief, per klus, excl. voorrijkosten/btw)</span>";}'
+              '<span style=\\"color:rgba(61,46,30,0.5);font-size:13px;\\">(indicatief, per "+EH+", excl. btw)</span>";}'
               's.addEventListener("change",c);c();})();</script>')
         return h + js
     # oppervlak-modus
