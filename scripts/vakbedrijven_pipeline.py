@@ -176,17 +176,30 @@ def discover_places(vak, max_pages=1):
          "X-Goog-FieldMask": "places.id,places.displayName,places.formattedAddress,places.rating,places.userRatingCount,places.websiteUri,places.nationalPhoneNumber,places.location,nextPageToken"}
     by_place = {}   # dedup landelijk op place_id
     calls = 0
+    overgeslagen = []
+    abort = False
+    TRANSIENT = {429, 500, 502, 503, "UNAVAILABLE", "RESOURCE_EXHAUSTED", "INTERNAL", "DEADLINE_EXCEEDED", "ABORTED"}
     print(f"Places '{term}' over {len(plaatsen)} plaatsen (max {max_pages} pagina/plaats)…")
     for i, slug in enumerate(plaatsen):
+        if abort: break
         stad = plaatsnaam(slug)
         token = None
         for _page in range(max_pages):
             body = {"textQuery": f"{term} {stad}", "languageCode": "nl", "regionCode": "NL", "maxResultCount": 20}
             if token: body["pageToken"] = token
-            res = curl_json("POST", "https://places.googleapis.com/v1/places:searchText", h, body) or {}
-            calls += 1
+            # retry op transiente fouten; persistente fout (auth/quota/veldmask) = harde stop
+            res = {}
+            for attempt in range(4):
+                res = curl_json("POST", "https://places.googleapis.com/v1/places:searchText", h, body) or {}
+                calls += 1
+                err = res.get("error")
+                if not err: break
+                if err.get("code") in TRANSIENT or err.get("status") in TRANSIENT:
+                    time.sleep(2 * (attempt + 1)); continue          # backoff en opnieuw
+                print("  Persistente API-fout (stop):", json.dumps(err)[:200]); abort = True; break
+            if abort: break
             if res.get("error"):
-                print("  API-fout:", json.dumps(res["error"])[:200]); return
+                overgeslagen.append(stad); break                     # transient bleef → stad overslaan
             for p in res.get("places", []):
                 pid = p.get("id"); naam = (p.get("displayName") or {}).get("text")
                 if not pid or not naam or pid in by_place: continue
@@ -207,7 +220,10 @@ def discover_places(vak, max_pages=1):
         if (i + 1) % 25 == 0:
             print(f"  …{i+1}/{len(plaatsen)} plaatsen, {len(by_place)} bedrijven, {calls} API-calls")
     recs = list(by_place.values())
-    print(f"Places '{vak}': {len(recs)} unieke bedrijven landelijk in {calls} API-calls")
+    status = "AFGEBROKEN (persistente fout)" if abort else "klaar"
+    print(f"Places '{vak}': {len(recs)} unieke bedrijven in {calls} API-calls — {status}")
+    if overgeslagen:
+        print(f"  {len(overgeslagen)} plaatsen overgeslagen na transient-fouten: {', '.join(overgeslagen[:15])}{'…' if len(overgeslagen) > 15 else ''}")
     for j in range(0, len(recs), 500):               # upsert in batches
         upsert(recs[j:j + 500])
 

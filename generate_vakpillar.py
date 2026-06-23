@@ -134,6 +134,44 @@ VAKKEN = {
             ("Ik ben loodgieter &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
         ],
     },
+    "elektricien": {
+        "sing": "elektricien", "plur": "elektriciens", "werk": "elektrawerk", "branche": "installatiebranche",
+        "ep_link": "/eerlijke-prijzen/", "eenheid": "klus", "calc_mode": "klus",
+        "pillar_h1": "Een elektricien met een eerlijke prijs &mdash; en een eerlijk oordeel",
+        "pillar_intro": "Elektrawerk wordt meestal per klus of per uur geoffreerd, en de prijzen lopen sterk uiteen &mdash; door verschil in het aantal punten, de staat van de installatie en hak- en freeswerk. Bylder laat je zien wat een eerlijke prijs is, controleert je offerte per post, en toont elektriciens <strong>neutraal</strong> &mdash; met beoordelingen uit meerdere bronnen naast elkaar in plaats van &eacute;&eacute;n gekleurd platform.",
+        "hero_cta": "Check je elektricien-offerte gratis",
+        "prijs_band": "Marktprijs elektricien (2026): uurtarief &euro;45&ndash;&euro;70 + &euro;25&ndash;&euro;50 voorrijkosten; stopcontact bijplaatsen &euro;80&ndash;&euro;180, groepenkast vervangen &euro;600&ndash;&euro;1.500, laadpaal &euro;500&ndash;&euro;1.500.",
+        "stad_kost": "Indicatief reken je in 2026 op &euro;45&ndash;&euro;70 per uur plus &euro;25&ndash;&euro;50 voorrijkosten. Losse klussen (stopcontact, verlichting, storing) worden per klus geoffreerd; een groepenkast vervangen kost &euro;600&ndash;&euro;1.500 en een laadpaal &euro;500&ndash;&euro;1.500.",
+        "werksoorten": [
+            {"naam": "Stopcontact of schakelaar bijplaatsen (per punt)", "low": 80, "high": 180, "uitleg": "Per punt, inclusief bedrading vanaf de groepenkast; meerdere punten tegelijk is voordeliger."},
+            {"naam": "Verlichting of inbouwspots aanleggen", "low": 90, "high": 350, "uitleg": "Aanleg van lichtpunten of inbouwspots inclusief bedrading en schakelaar."},
+            {"naam": "Storing opsporen of aardlekschakelaar vervangen", "low": 90, "high": 250, "uitleg": "Lokaliseren en verhelpen van een storing of vervangen van een aardlekautomaat."},
+            {"naam": "Laadpaal (thuislader) installeren", "low": 500, "high": 1500, "uitleg": "Installatie van een thuislaadpunt inclusief bekabeling en zekering; de afstand tot de meterkast bepaalt de prijs."},
+            {"naam": "Groepenkast vervangen of uitbreiden", "low": 600, "high": 1500, "uitleg": "Vervangen of uitbreiden van de meterkast inclusief aardlekautomaten, afhankelijk van het aantal groepen."},
+            {"naam": "Woning of verdieping volledig herbedraden", "low": 1500, "high": 6000, "uitleg": "Volledig vernieuwen van de elektra; sterk afhankelijk van het oppervlak en het aantal punten."},
+        ],
+        "factoren": [
+            "Uurtarief en voorrijkosten — reken op &euro;45&ndash;&euro;70 per uur plus &euro;25&ndash;&euro;50 voorrijkosten, regio-afhankelijk.",
+            "Aantal punten en groepen — meer stopcontacten, lichtpunten en groepen betekent meer materiaal en arbeid.",
+            "Staat van de bestaande installatie — oude bedrading, ontbrekende aarde of te weinig groepen vraagt extra werk.",
+            "Hak- en freeswerk — leidingen wegwerken in wanden kost meer dan opbouwmontage.",
+            "Spoed versus ingepland — spoed-, avond- en weekendwerk kent een toeslag.",
+        ],
+        "trends": [
+            ("Personeelstekort & wachttijden", "De installatiebranche kampt met een groot tekort aan vakmensen. Goede elektriciens zijn vaak weken vooruit volgeboekt — op tijd plannen en vergelijken scheelt geld en wachttijd."),
+            ("Verzwaring & laadpalen", "Door elektrificatie (EV, warmtepomp, inductie) verzwaren steeds meer huishoudens hun aansluiting; de installatie van laadpalen groeit hard."),
+            ("Zonnepanelen & thuisbatterij", "Omvormers, de afbouw van de salderingsregeling en thuisbatterijen vragen meer elektrawerk en slimme sturing."),
+            ("Slimme woning & domotica", "Slimme schakelaars, netwerk-/databekabeling en domotica worden steeds vaker meegenomen bij een verbouwing."),
+            ("Stijgende materiaalkosten", "Koper, kabel en componenten zijn duurder geworden, waardoor offertes voor hetzelfde werk sterker uiteenlopen — vergelijken loont."),
+        ],
+        "faq": [
+            ("Wat kost een elektricien per uur in 2026?", "Indicatief &euro;45&ndash;&euro;70 per uur, plus &euro;25&ndash;&euro;50 voorrijkosten &mdash; regio- en spoedafhankelijk. Veel klussen worden per klus geoffreerd; check je offerte gratis tegen de markt op Bylder."),
+            ("Wat kost het vervangen van de groepenkast of een laadpaal?", "Een groepenkast vervangen of uitbreiden kost indicatief &euro;600&ndash;&euro;1.500; een thuislaadpaal installeren &euro;500&ndash;&euro;1.500, afhankelijk van het aantal groepen en de afstand tot de meterkast."),
+            ("Hoe weet ik of mijn elektricien-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, voorrijkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
+            ("Is Bylder een elektricien of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen elektrawerk en zijn geen leadverkoper &mdash; we tonen elektriciens neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Ik ben elektricien &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+        ],
+    },
 }
 
 # ───────────────────────── CHROME (gedeeld) ─────────────────────────

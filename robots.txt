@@ -12,4 +12,5 @@ Sitemap: https://www.bylder.com/eerlijke-prijzen-sitemap.xml
 Sitemap: https://www.bylder.com/stukadoor-sitemap.xml
 Sitemap: https://www.bylder.com/schilder-sitemap.xml
 Sitemap: https://www.bylder.com/loodgieter-sitemap.xml
+Sitemap: https://www.bylder.com/elektricien-sitemap.xml
 Sitemap: https://www.bylder.com/plattegrond-inrichten-sitemap.xml
