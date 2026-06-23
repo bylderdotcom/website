@@ -166,7 +166,8 @@ def discover_places(vak):
     term = zoekterm_voor(vak)
     plaatsen = plaatsen_voor(vak)
     h = {"Content-Type": "application/json", "X-Goog-Api-Key": key,
-         "X-Goog-FieldMask": "places.id,places.displayName,places.formattedAddress,places.rating,places.userRatingCount,places.websiteUri,places.nationalPhoneNumber,places.location,nextPageToken"}
+         "X-Goog-FieldMask": "places.id,places.displayName,places.formattedAddress,places.rating,places.userRatingCount,places.websiteUri,places.nationalPhoneNumber,places.location,places.priceLevel,places.googleMapsUri,places.editorialSummary,nextPageToken"}
+    PRICE = {"PRICE_LEVEL_INEXPENSIVE": "€", "PRICE_LEVEL_MODERATE": "€€", "PRICE_LEVEL_EXPENSIVE": "€€€", "PRICE_LEVEL_VERY_EXPENSIVE": "€€€€"}
     by_place = {}   # dedup landelijk op place_id
     print(f"Places '{term}' over {len(plaatsen)} plaatsen…")
     for i, slug in enumerate(plaatsen):
@@ -190,6 +191,9 @@ def discover_places(vak):
                     "google_rating": p.get("rating"), "google_reviews": p.get("userRatingCount"),
                     "lat": (p.get("location") or {}).get("latitude"),
                     "lng": (p.get("location") or {}).get("longitude"),
+                    "price_level": PRICE.get(p.get("priceLevel")),
+                    "maps_uri": p.get("googleMapsUri"),
+                    "google_summary": (p.get("editorialSummary") or {}).get("text"),
                     "status": "unclaimed", "bron": "places",
                 }
             token = res.get("nextPageToken")

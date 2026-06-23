@@ -22,7 +22,7 @@
     {
       "name": "benned-next",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "/Users/danielpaaij/Documents/benned", "run", "dev", "--", "-p", "3300"],
+      "runtimeArgs": ["--prefix", "/Users/danielpaaij/Documents/GitHub/benned", "run", "dev", "--", "-p", "3300"],
       "port": 3300
     }
   ]

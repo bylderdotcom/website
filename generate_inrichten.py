@@ -27,6 +27,12 @@ NAV_CSS = """
 .nav-mobile.open{display:flex;}
 .nav-mobile a{padding:11px 10px;color:rgba(61,46,30,0.72);text-decoration:none;font-size:15px;border-radius:8px;}
 .nav-mobile .m-cta{background:#3D5A3E;color:#F5F0E8;font-weight:700;text-align:center;margin-top:8px;}
+.nav-dd{position:relative;}
+.nav-dd-btn{background:none;border:none;cursor:pointer;font-size:14px;color:rgba(61,46,30,0.5);font-family:inherit;padding:0;display:flex;align-items:center;gap:4px;}
+.nav-dd-menu{display:none;position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 12px 40px rgba(61,46,30,0.12);padding:8px;min-width:248px;z-index:200;}
+.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:block;}
+.nav-dd-menu a{display:block;padding:10px 14px;border-radius:10px;color:#3D2E1E;text-decoration:none;}
+.nav-dd-menu a:hover{background:#F5F0E8;}
 @media(max-width:860px){.nav-links,.nav-login{display:none;}.nav-burger{display:flex;}.nav-inner{padding:14px 20px;}}
 """
 
@@ -38,9 +44,16 @@ NAV_HTML = f"""<nav class="glass-nav">
     </a>
     <div class="nav-links">
       <a href="/#features">Voordelen</a>
-      <a href="/functies/">Functies</a>
-      <a href="/3d-sfeerimpressie/">3D-impressie</a>
       <a href="/vouchers/">Vouchers</a>
+      <a href="/functies/">Functies</a>
+      <div class="nav-dd">
+        <button class="nav-dd-btn" type="button">Voor wie? <span style="font-size:10px;">&#9660;</span></button>
+        <div class="nav-dd-menu">
+          <a href="/nieuwbouw-koper/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Meerwerklijst, vouchers, planning</span></a>
+          <a href="/bestaande-bouw/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Offerte-check, aannemer matching</span></a>
+          <a href="/renovatie/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Budgettool, subsidies, planning</span></a>
+        </div>
+      </div>
       <a href="/prijzen/">Prijzen</a>
     </div>
     <div class="nav-right">
@@ -51,9 +64,11 @@ NAV_HTML = f"""<nav class="glass-nav">
   </div>
   <div class="nav-mobile" id="navMobile">
     <a href="/#features">Voordelen</a>
-    <a href="/functies/">Functies</a>
-    <a href="/3d-sfeerimpressie/">3D-impressie</a>
     <a href="/vouchers/">Vouchers</a>
+    <a href="/functies/">Functies</a>
+    <a href="/nieuwbouw-koper/">Voor nieuwbouwkopers</a>
+    <a href="/bestaande-bouw/">Voor bestaande bouw</a>
+    <a href="/renovatie/">Voor renovatie</a>
     <a href="/prijzen/">Prijzen</a>
     <a href="https://app.bylder.com">Inloggen</a>
     <a href="{SIGNUP}" class="m-cta">Start gratis &#8594;</a>
