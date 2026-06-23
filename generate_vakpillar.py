@@ -8,7 +8,7 @@ Volledig SEO/GEO/AEO/schema/CRO geoptimaliseerd. Prijzen INDICATIEF (NL 2026).
 Gebruik: python3 generate_vakpillar.py            (alle vakken in VAKKEN)
          python3 generate_vakpillar.py schilder   (één vak)
 """
-import os, html, json, re, unicodedata, sys
+import os, html, json, re, unicodedata, sys, urllib.parse
 
 BASE = "https://www.bylder.com"
 SIGNUP = "https://app.bylder.com/registreer"
@@ -244,6 +244,16 @@ def _slug(s):
 
 def _prominentie(b): return (-(b.get("google_reviews") or 0), -(b.get("google_rating") or 0))
 
+def maps_url(b):
+    """Deeplink naar de Google-vermelding. Gebruikt maps_uri indien aanwezig, anders
+    construeert uit google_place_id via Google's officiële Maps-URL (gratis, geen API-call).
+    priceLevel/editorialSummary zijn voor vakbedrijven structureel leeg → niet nagejaagd."""
+    if b.get("maps_uri"): return b["maps_uri"]
+    pid = b.get("google_place_id")
+    if pid:
+        return f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(b.get('naam') or '')}&query_place_id={pid}"
+    return None
+
 def per_stad(bedrijven):
     groepen = {}
     for b in bedrijven:
@@ -263,7 +273,7 @@ def bedrijf_card(b):
     naam = html.escape(b["naam"]); stad = html.escape(b.get("stad") or "Nederland")
     site = b.get("website"); rating = b.get("google_rating"); reviews = b.get("google_reviews") or 0
     lid = b.get("status") == "lid"
-    prijs = b.get("price_level"); summary = (b.get("google_summary") or "").strip(); maps = b.get("maps_uri")
+    prijs = b.get("price_level"); summary = (b.get("google_summary") or "").strip(); maps = maps_url(b)
     score = (f'<span style="font-size:12px;color:#3D5A3E;font-weight:700;white-space:nowrap;">Google &#9733; {rating} '
              f'<span style="color:rgba(61,46,30,0.45);font-weight:400;">({reviews})</span></span>') if rating else ""
     prijs_chip = f'<span title="Prijsniveau volgens Google" style="font-size:11px;font-weight:700;color:rgba(61,46,30,0.6);background:#F5F0E8;padding:1px 8px;border-radius:6px;white-space:nowrap;">{prijs}</span>' if prijs else ""
@@ -641,7 +651,7 @@ def build_profile(vak, vak_slug, b, buren):
     naam = html.escape(b["naam"]); stad = b.get("stad") or "Nederland"; stad_e = html.escape(stad)
     base = f"/{vak_slug}"; canonical = f"{BASE}{base}/bedrijf/{b['_profiel_slug']}/"
     rating = b.get("google_rating"); reviews = b.get("google_reviews") or 0
-    site = b.get("website"); tel = b.get("telefoon"); maps = b.get("maps_uri")
+    site = b.get("website"); tel = b.get("telefoon"); maps = maps_url(b)
     prijs = b.get("price_level"); summary = (b.get("google_summary") or "").strip(); lid = b.get("status") == "lid"
     has_stad = bool(b.get("stad"))
 
