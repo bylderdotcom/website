@@ -15,4 +15,5 @@ Sitemap: https://www.bylder.com/loodgieter-sitemap.xml
 Sitemap: https://www.bylder.com/elektricien-sitemap.xml
 Sitemap: https://www.bylder.com/aannemer-sitemap.xml
 Sitemap: https://www.bylder.com/badkamer-sitemap.xml
+Sitemap: https://www.bylder.com/dakkapel-sitemap.xml
 Sitemap: https://www.bylder.com/plattegrond-inrichten-sitemap.xml
