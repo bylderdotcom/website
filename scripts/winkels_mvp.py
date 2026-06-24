@@ -149,9 +149,10 @@ Beste heer/mevrouw,
 In {stad_l} worden meerdere nieuwbouwprojecten gebouwd — waaronder {projzin}.
 Honderden nieuwe bewoners gaan binnenkort hun woning inrichten.
 
-Via Bylder.com brengen wij die kopers in contact met lokale winkels. Voor
-eenmalig €79 staat u erbij als aanbevolen lokale winkel en kunt u hen een
-nieuwbouwkorting bieden — geen abonnement.
+Via Bylder.com brengen wij die kopers in contact met lokale winkels. Vanaf
+eenmalig €79 (excl. btw) staat u erbij als aanbevolen lokale winkel en kunt u
+hen een nieuwbouwkorting bieden — geen abonnement. Uw korting blijft een jaar
+geldig na activatie.
 
 Lees de voordelen en meld u direct aan: {DEELNEMEN_URL}
 
