@@ -118,39 +118,52 @@ def _afstand(la, lo, lb, mb):
     x = math.sin(dla / 2) ** 2 + math.cos(p(la)) * math.cos(p(lb)) * math.sin(dlo / 2) ** 2
     return 2 * R * math.asin(math.sqrt(x))
 
-def mails(stad, n=10):
-    """Render verzendklare mails: per winkel het dichtstbijzijnde nieuwbouwproject + Daniels template.
-    EERLIJK: geen 'kopers aangemeld'-claim (projecten van nieuwbouw.nl, niet uit signups) — wel #woningen + projectlink."""
-    d = load(stad)
+DEELNEMEN_URL = "https://app.bylder.com/deelnemen"
+
+def _projecten_zin(stad):
+    """Noem de 3 grootste projecten (op #woningen) als één zin — zelfde mail voor alle winkels."""
     pj = os.path.join(ROOT, "data", "nieuwbouwprojecten.json")
     alle = [p for p in json.load(open(pj, encoding="utf-8"))["projecten"]
-            if p.get("plaats") == stad and p.get("lat")] if os.path.exists(pj) else []
-    proj = [p for p in alle if p.get("woningen")] or alle      # voorkeur: projecten MÉT woningtal
-    klaar = [w for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild" and not is_keten(w["naam"])][:n]
+            if p.get("plaats") == stad and p.get("woningen")] if os.path.exists(pj) else []
+    top = sorted(alle, key=lambda p: -(p.get("woningen") or 0))[:3]
+    delen = [f"{p['naam']} ({p['woningen']} woningen)" for p in top]
+    if len(delen) >= 2:
+        return ", ".join(delen[:-1]) + " en " + delen[-1]
+    return delen[0] if delen else "meerdere projecten"
+
+def mails(stad, n=10):
+    """Eén gedeelde mail (meerdere projecten + /deelnemen-link) + de adreslijst voor de volgende n winkels.
+    EERLIJK: geen 'kopers aangemeld'-claim (projecten van nieuwbouw.nl) — wel het publieke #woningen-signaal."""
+    d = load(stad)
     stad_l = stad.capitalize()
-    for w in klaar:
-        pr = min(proj, key=lambda p: _afstand(w["lat"], w["lng"], p["lat"], p["lng"])) if (proj and w.get("lat")) else (proj[0] if proj else {})
-        naam = pr.get("naam", ""); won = pr.get("woningen"); url = pr.get("url", "")
-        wc = f" ({won} woningen)" if won else ""
-        print("=" * 72)
-        print(f"AAN:       {w['email']}   ({w['naam']})")
-        print(f"ONDERWERP: Nieuwbouwproject {naam} in {stad_l} — lokale deelnemers gezocht")
-        print(f"""
+    klaar = [w for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild" and not is_keten(w["naam"])][:n]
+    projzin = _projecten_zin(stad)
+
+    print("=" * 72)
+    print("DEZELFDE MAIL NAAR ALLE ONDERSTAANDE WINKELS")
+    print("=" * 72)
+    print(f"ONDERWERP: Nieuwe bewoners in {stad_l} zoeken lokale winkels — doe mee")
+    print(f"""
 Beste heer/mevrouw,
 
-In {stad_l} wordt nieuwbouwproject {naam}{wc} opgeleverd. Voor de nieuwe
-bewoners, die binnenkort hun woning gaan inrichten, zoeken wij via Bylder.com
-lokale deelnemers die hen een nieuwbouwkorting willen bieden.
+In {stad_l} worden meerdere nieuwbouwprojecten gebouwd — waaronder {projzin}.
+Honderden nieuwe bewoners gaan binnenkort hun woning inrichten.
 
-Meer over het project: {url}
+Via Bylder.com brengen wij die kopers in contact met lokale winkels. Voor
+eenmalig €79 staat u erbij als aanbevolen lokale winkel en kunt u hen een
+nieuwbouwkorting bieden — geen abonnement.
 
-Deelname is eenmalig en laagdrempelig (geen abonnement). Bij interesse kom ik
-graag met u in contact.
+Lees de voordelen en meld u direct aan: {DEELNEMEN_URL}
 
 Met vriendelijke groet,
 Daniël Paaij
 Bylder.com""")
-        w["status"] = "gemaild"                        # doortellen → morgen verse 10
+    print("\n" + "=" * 72)
+    print(f"VERSTUUR NAAR DEZE {len(klaar)} ADRESSEN (één voor één):")
+    print("=" * 72)
+    for w in klaar:
+        print(f"  {w['email']:34} {w['naam'][:40]}")
+        w["status"] = "gemaild"
     save(stad, d)
     rest = sum(1 for w in d["winkels"] if w.get("email") and w.get("status") != "gemaild" and not is_keten(w["naam"]))
     print("=" * 72)
