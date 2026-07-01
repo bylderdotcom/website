@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CEP-kaart · Bylder woning-reis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F5F0E8;
+      --bg-card: #FDFAF5;
+      --text: #3D2E1E;
+      --text-muted: #7A6652;
+      --heading: #1A1208;
+      --green: #3D5A3E;
+      --green-bg: rgba(61,90,62,0.08);
+      --green-border: #3D5A3E;
+      --amber: #C9A84C;
+      --amber-bg: rgba(201,168,76,0.1);
+      --amber-border: #C9A84C;
+      --orange: #B85C38;
+      --orange-bg: rgba(184,92,56,0.07);
+      --orange-border: #B85C38;
+      --border: rgba(61,46,30,0.12);
+      --mono: 'Space Mono', monospace;
+      --sans: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--heading);
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.15s;
+    }
+    nav a:hover { color: #fff; }
+    nav a svg { flex-shrink: 0; }
+    .nav-logo {
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 15px;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .nav-sep {
+      color: rgba(255,255,255,0.2);
+      font-size: 18px;
+      font-weight: 200;
+    }
+    .nav-title {
+      color: rgba(255,255,255,0.4);
+      font-size: 12px;
+      font-family: var(--mono);
+      letter-spacing: 0.02em;
+    }
+    .nav-spacer { flex: 1; }
+    .nav-badge {
+      background: rgba(201,168,76,0.2);
+      color: #C9A84C;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-family: var(--mono);
+    }
+
+    /* LAYOUT */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER */
+    .header {
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .header-text {}
+    .header-eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--heading);
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+    .header-sub {
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* KPI BOXES */
+    .kpi-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .kpi {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      min-width: 140px;
+      text-align: center;
+    }
+    .kpi-num {
+      font-family: var(--mono);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--heading);
+      line-height: 1;
+    }
+    .kpi-num.green { color: var(--green); }
+    .kpi-num.amber { color: var(--amber); }
+    .kpi-num.orange { color: var(--orange); }
+    .kpi-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* SECTION */
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    section:last-child { border-bottom: none; }
+    .section-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+    }
+
+    /* SWIMLANES */
+    .swimlane-wrapper {
+      overflow-x: auto;
+      padding-bottom: 8px;
+    }
+    .swimlane-track {
+      display: flex;
+      gap: 16px;
+      min-width: max-content;
+    }
+    .swimlane-col {
+      width: 200px;
+      flex-shrink: 0;
+    }
+    .swimlane-phase {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 6px 10px;
+      background: rgba(61,46,30,0.06);
+      border-radius: 6px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .cep-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .cep-card {
+      background: var(--bg-card);
+      border-radius: 8px;
+      padding: 12px 14px;
+      border: 1.5px solid transparent;
+    }
+    .cep-card.volledig {
+      background: var(--green-bg);
+      border-color: var(--green-border);
+    }
+    .cep-card.partieel {
+      background: var(--amber-bg);
+      border-color: var(--amber-border);
+    }
+    .cep-card.gap {
+      background: var(--orange-bg);
+      border-color: var(--orange-border);
+      border-style: dashed;
+    }
+    .cep-card-name {
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--heading);
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+    .cep-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .status-pill {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 7px;
+      border-radius: 99px;
+      font-family: var(--mono);
+    }
+    .status-pill.volledig { background: var(--green); color: #fff; }
+    .status-pill.partieel { background: var(--amber); color: #fff; }
+    .status-pill.gap { background: var(--orange); color: #fff; }
+    .score-badge {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: rgba(61,46,30,0.06);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+    .hub-link {
+      font-size: 10px;
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 600;
+      opacity: 0.85;
+      display: block;
+      margin-top: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .hub-link:hover { opacity: 1; }
+
+    /* LEGENDA */
+    .legenda {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .legenda-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .legenda-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .legenda-dot.green { background: var(--green); }
+    .legenda-dot.amber { background: var(--amber); }
+    .legenda-dot.orange { background: var(--orange); }
+
+    /* PRIORITERINGS TABEL */
+    .prio-table-wrap {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    thead th {
+      text-align: left;
+      padding: 10px 14px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: rgba(61,46,30,0.04);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+    tbody tr:hover { background: rgba(61,46,30,0.025); }
+    tbody td {
+      padding: 11px 14px;
+      vertical-align: top;
+    }
+    .td-name { font-weight: 600; color: var(--heading); }
+    .td-fase {
+      font-size: 11px;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .score-cell {
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .score-cell.dim { color: var(--text-muted); font-weight: 400; }
+    .score-total {
+      font-family: var(--mono);
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .score-9 { color: var(--green); }
+    .score-8 { color: #5A7A3A; }
+    .score-7 { color: var(--amber); }
+    .score-6 { color: var(--orange); }
+    .aanbeveling {
+      font-size: 12px;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .top-row { background: rgba(61,90,62,0.04); }
+    .top-row td:first-child {
+      border-left: 3px solid var(--green);
+    }
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      margin-right: 6px;
+      flex-shrink: 0;
+    }
+    .rank-1 { background: var(--green); color: #fff; }
+    .rank-2 { background: #5A7A3A; color: #fff; }
+    .rank-3 { background: #7A943A; color: #fff; }
+
+    /* 7-W DEEP DIVE */
+    .deepdive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 16px;
+    }
+    .deepdive-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .deepdive-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .deepdive-rank {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .deepdive-title {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--heading);
+      line-height: 1.3;
+    }
+    .deepdive-score {
+      margin-top: 4px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .deepdive-body {
+      padding: 16px 20px;
+    }
+    .w-row {
+      display: flex;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(61,46,30,0.07);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .w-row:last-child { border-bottom: none; }
+    .w-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+      width: 70px;
+      padding-top: 1px;
+    }
+    .w-value { color: var(--text); }
+    .bylder-hook {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: var(--green-bg);
+      border-left: 3px solid var(--green);
+      border-radius: 0 6px 6px 0;
+      font-size: 12px;
+      color: var(--heading);
+      line-height: 1.5;
+    }
+    .bylder-hook strong {
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: var(--mono);
+      color: var(--green);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* COVERAGE PROGRESS */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+    .coverage-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+    }
+    .coverage-phase {
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--heading);
+      margin-bottom: 2px;
+    }
+    .coverage-numbers {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .progress-track {
+      height: 8px;
+      background: rgba(61,46,30,0.1);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      border-radius: 99px;
+      background: var(--green);
+      transition: width 0.3s ease;
+    }
+    .progress-pct {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--green);
+      margin-top: 4px;
+    }
+    .coverage-total {
+      margin-top: 16px;
+      padding: 16px 20px;
+      background: var(--green-bg);
+      border: 1px solid rgba(61,90,62,0.25);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .coverage-total-label {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--heading);
+    }
+    .coverage-total-num {
+      font-family: var(--mono);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1;
+    }
+    .coverage-total-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ROADMAP */
+    .roadmap-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .roadmap-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .roadmap-num {
+      font-family: var(--mono);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--green);
+      opacity: 0.25;
+      line-height: 1;
+      flex-shrink: 0;
+      min-width: 28px;
+    }
+    .roadmap-body {}
+    .roadmap-title {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--heading);
+      margin-bottom: 4px;
+    }
+    .roadmap-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .meta-tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+    }
+    .meta-tag.score { background: var(--green-bg); color: var(--green); border: 1px solid rgba(61,90,62,0.2); }
+    .meta-tag.pages { background: rgba(61,46,30,0.06); color: var(--text-muted); border: 1px solid var(--border); }
+    .roadmap-desc {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-meta {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .footer-link {
+      font-size: 13px;
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .footer-link:hover { opacity: 0.7; }
+
+    /* UTILITIES */
+    .tag-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 22px; }
+      .kpi { min-width: 110px; padding: 12px 14px; }
+      .kpi-num { font-size: 22px; }
+      .deepdive-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">B.</a>
+  <span class="nav-sep">/</span>
+  <span class="nav-title">CEP-kaart</span>
+  <div class="nav-spacer"></div>
+  <span class="nav-badge">Intern</span>
+  <a href="/" style="margin-left:8px;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+    Bylder.com
+  </a>
+</nav>
+
+<!-- HEADER -->
+<div class="container">
+  <div class="header">
+    <div class="header-inner">
+      <div class="header-text">
+        <div class="header-eyebrow">Intern strategisch document &middot; Byron Sharp / EBI-framework</div>
+        <h1>CEP-kaart &middot; Bylder woning-reis</h1>
+        <p class="header-sub">Mentale beschikbaarheid op elk beslismoment in de NL nieuwbouw- en verbouw-reis</p>
+      </div>
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="kpi-num">20</div>
+          <div class="kpi-label">Geïdentificeerde CEPs</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num green">10</div>
+          <div class="kpi-label">Volledig gedekt</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num amber">5</div>
+          <div class="kpi-label">Partieel gedekt</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num orange">5</div>
+          <div class="kpi-label">Gaps (open kans)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 1. SWIMLANES -->
+<section>
+  <div class="container">
+    <div class="section-label">Sectie 1</div>
+    <h2>Fase-overzicht per CEP</h2>
+    <div class="legenda">
+      <div class="legenda-item"><div class="legenda-dot green"></div> Volledig gedekt</div>
+      <div class="legenda-item"><div class="legenda-dot amber"></div> Partieel gedekt</div>
+      <div class="legenda-item"><div class="legenda-dot orange"></div> Gap &mdash; open kans</div>
+    </div>
+    <div class="swimlane-wrapper">
+      <div class="swimlane-track">
+
+        <!-- PRE-KOOP -->
+        <div class="swimlane-col">
+          <div class="swimlane-phase">Pre-koop</div>
+          <div class="cep-cards">
+            <div class="cep-card gap">
+              <div class="cep-card-name">Kopen vs huren vergelijken</div>
+              <div class="cep-card-footer">
+                <span class="status-pill gap">GAP</span>
+                <span class="score-badge">3C&nbsp;7</span>
+              </div>
+            </div>
+            <div class="cep-card gap">
+              <div class="cep-card-name">Hypotheek &amp; financiering</div>
+              <div class="cep-card-footer">
+                <span class="status-pill gap">GAP</span>
+                <span class="score-badge">3C&nbsp;6</span>
+              </div>
+            </div>
+            <div class="cep-card partieel">
+              <div class="cep-card-name">Nieuwbouw vs bestaand</div>
+              <a href="/nieuwbouw-gids/" class="hub-link">/nieuwbouw-gids/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill partieel">PARTIEEL</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KOPEN -->
+        <div class="swimlane-col">
+          <div class="swimlane-phase">Kopen</div>
+          <div class="cep-cards">
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Nieuwbouwcontract &amp; meerwerk</div>
+              <a href="/offerte-check/" class="hub-link">/nieuwbouw/ + /offerte-check/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;9</span>
+              </div>
+            </div>
+            <div class="cep-card partieel">
+              <div class="cep-card-name">Bod op bestaande woning</div>
+              <a href="/bestaande-bouw/" class="hub-link">/bestaande-bouw/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill partieel">PARTIEEL</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Bouwkundige keuring</div>
+              <a href="/bouwkundige-keuring/" class="hub-link">/bouwkundige-keuring/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card gap">
+              <div class="cep-card-name">VvE &amp; appartement kopen</div>
+              <div class="cep-card-footer">
+                <span class="status-pill gap">GAP</span>
+                <span class="score-badge">3C&nbsp;7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VERHUIZEN -->
+        <div class="swimlane-col">
+          <div class="swimlane-phase">Verhuizen</div>
+          <div class="cep-cards">
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Verhuizen naar nieuwe woning</div>
+              <a href="/verhuizen-nieuwbouw/" class="hub-link">/verhuizen-nieuwbouw/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card partieel">
+              <div class="cep-card-name">Oplevering nieuwbouw inspectie</div>
+              <div class="cep-card-footer">
+                <span class="status-pill partieel">PARTIEEL</span>
+                <span class="score-badge">3C&nbsp;9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VERBOUWEN -->
+        <div class="swimlane-col" style="width:220px;">
+          <div class="swimlane-phase">Verbouwen</div>
+          <div class="cep-cards">
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Bouwvergunning aanvragen</div>
+              <a href="/bouwvergunning/" class="hub-link">/bouwvergunning/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;7</span>
+              </div>
+            </div>
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Offerte opvragen &amp; checken</div>
+              <a href="/offerte-check/" class="hub-link">/offerte-check/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;9</span>
+              </div>
+            </div>
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Vakbedrijf vinden</div>
+              <a href="/isolatiebedrijf/" class="hub-link">/[vak]bedrijf/ hubs</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;7</span>
+              </div>
+            </div>
+            <div class="cep-card partieel">
+              <div class="cep-card-name">Badkamer renoveren</div>
+              <a href="/offerte-check/badkamer/" class="hub-link">/offerte-check/badkamer/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill partieel">PARTIEEL</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card partieel">
+              <div class="cep-card-name">Keuken renoveren</div>
+              <a href="/interieur-woning/keuken-afwerking/" class="hub-link">/interieur-woning/keuken-afwerking/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill partieel">PARTIEEL</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card gap">
+              <div class="cep-card-name">Tuin aanleggen na oplevering</div>
+              <div class="cep-card-footer">
+                <span class="status-pill gap">GAP</span>
+                <span class="score-badge">3C&nbsp;7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WONEN & VERDUURZAMEN -->
+        <div class="swimlane-col">
+          <div class="swimlane-phase">Wonen &amp; Verduurzamen</div>
+          <div class="cep-cards">
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Woning verduurzamen (breed)</div>
+              <a href="/woning-verduurzamen/" class="hub-link">/woning-verduurzamen/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Zonnepanelen laten plaatsen</div>
+              <a href="/woning-verduurzamen/zonnepanelen/" class="hub-link">/woning-verduurzamen/zonnepanelen/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Warmtepomp installeren</div>
+              <a href="/woning-verduurzamen/warmtepomp/" class="hub-link">/woning-verduurzamen/warmtepomp/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INRICHTEN -->
+        <div class="swimlane-col">
+          <div class="swimlane-phase">Inrichten &amp; Shoppen</div>
+          <div class="cep-cards">
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Interieur afwerken na oplevering</div>
+              <a href="/interieur-woning/" class="hub-link">/interieur-woning/</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;8</span>
+              </div>
+            </div>
+            <div class="cep-card volledig">
+              <div class="cep-card-name">Kortingscode woonmerk zoeken</div>
+              <a href="/kortingscode/" class="hub-link">/kortingscode/ (522 merken)</a>
+              <div class="cep-card-footer">
+                <span class="status-pill volledig">VOLLEDIG</span>
+                <span class="score-badge">3C&nbsp;7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /swimlane-track -->
+    </div><!-- /swimlane-wrapper -->
+  </div>
+</section>
+
+<!-- 2. PRIORITERINGSMATRIX -->
+<section>
+  <div class="container">
+    <div class="section-label">Sectie 2</div>
+    <h2>3C-prioriteringsmatrix &mdash; Gaps &amp; Partieel</h2>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:20px;">Gesorteerd op totaalscore (hoog&rarr;laag). Groen gemarkeerd = top-3 volgende hubs. Credibility/Competitiveness/Commonality elk 1&ndash;3.</p>
+    <div class="prio-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>CEP</th>
+            <th>Fase</th>
+            <th>Status</th>
+            <th>Cred.</th>
+            <th>Comp.</th>
+            <th>Comm.</th>
+            <th>Totaal</th>
+            <th>Aanbeveling</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Score 9 -->
+          <tr class="top-row">
+            <td class="td-name"><span class="rank-badge rank-1">1</span>Oplevering nieuwbouw inspectie</td>
+            <td class="td-fase">Verhuizen</td>
+            <td><span class="status-pill partieel">PARTIEEL</span></td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-9">9</td>
+            <td class="aanbeveling">Kern-CEP; hoogste 3C. Eigen hub (6&ndash;8 pag) bouwen: checklist, gebreken-protocol, link naar /offerte-check/ voor herstel.</td>
+          </tr>
+          <!-- Score 8 -->
+          <tr class="top-row">
+            <td class="td-name"><span class="rank-badge rank-2">2</span>Nieuwbouw vs bestaand vergelijken</td>
+            <td class="td-fase">Pre-koop</td>
+            <td><span class="status-pill partieel">PARTIEEL</span></td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-8">8</td>
+            <td class="aanbeveling">Pillar /nieuwbouw-gids/ bestaat; voeg neutrale vergelijkingspagina toe (kosten, risico, tijdlijn). Pre-koop funnel, hoog bereik.</td>
+          </tr>
+          <tr class="top-row">
+            <td class="td-name"><span class="rank-badge rank-3">3</span>Bod op bestaande woning</td>
+            <td class="td-fase">Kopen</td>
+            <td><span class="status-pill partieel">PARTIEEL</span></td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-8">8</td>
+            <td class="aanbeveling">/bestaande-bouw/ pillar aanwezig. Cluster-pagina's toevoegen: biedstrategie, vraagprijs-check, bouwkundige-keuring koppeling.</td>
+          </tr>
+          <tr>
+            <td class="td-name">Badkamer renoveren</td>
+            <td class="td-fase">Verbouwen</td>
+            <td><span class="status-pill partieel">PARTIEEL</span></td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-8">8</td>
+            <td class="aanbeveling">Alleen offerte-check. Inhoudelijke hub toevoegen (kosten, materialen, volgorde). Grote commerciële markt.</td>
+          </tr>
+          <tr>
+            <td class="td-name">Keuken renoveren</td>
+            <td class="td-fase">Verbouwen</td>
+            <td><span class="status-pill partieel">PARTIEEL</span></td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-8">8</td>
+            <td class="aanbeveling">Één cluster-pagina. Eigen hub nodig: budget-gids, keuken-offerte-check, showroomsale koppeling.</td>
+          </tr>
+          <!-- Score 7 -->
+          <tr>
+            <td class="td-name">VvE &amp; appartement kopen</td>
+            <td class="td-fase">Kopen</td>
+            <td><span class="status-pill gap">GAP</span></td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">2</td>
+            <td class="score-total score-7">7</td>
+            <td class="aanbeveling">~30% NL woningmarkt is appartement. Specifiek CEP; VvE-rechten, splitsingsakte, onderhoudsfonds.</td>
+          </tr>
+          <tr>
+            <td class="td-name">Kopen vs huren vergelijken</td>
+            <td class="td-fase">Pre-koop</td>
+            <td><span class="status-pill gap">GAP</span></td>
+            <td class="score-cell">1</td>
+            <td class="score-cell">3</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-7">7</td>
+            <td class="aanbeveling">YMYL; lage Credibility want geen hypotheek-licentie. Alleen affiliate-laag / doorverwijzing bouwen.</td>
+          </tr>
+          <tr>
+            <td class="td-name">Tuin aanleggen na oplevering</td>
+            <td class="td-fase">Verbouwen</td>
+            <td><span class="status-pill gap">GAP</span></td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-7">7</td>
+            <td class="aanbeveling">Logisch vervolg op verhuizen-hub. Hoog bereik, lage competitie. Later stadium; eerst top-3 afronden.</td>
+          </tr>
+          <!-- Score 6 -->
+          <tr>
+            <td class="td-name">Hypotheek &amp; financiering</td>
+            <td class="td-fase">Pre-koop</td>
+            <td><span class="status-pill gap">GAP</span></td>
+            <td class="score-cell">1</td>
+            <td class="score-cell">2</td>
+            <td class="score-cell">3</td>
+            <td class="score-total score-6">6</td>
+            <td class="aanbeveling">Streng YMYL; AFM-regulering. Laagste prioriteit. Enige optie = doorverwijzing naar adviseur/vergelijker.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 7-W DEEP DIVE -->
+<section>
+  <div class="container">
+    <div class="section-label">Sectie 3</div>
+    <h2>7-W deep-dive &mdash; Top-3 gaps / partieel</h2>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:24px;">Per CEP de volledige Byron Sharp 7-W-analyse en de Bylder-haak.</p>
+    <div class="deepdive-grid">
+
+      <!-- CEP 9: Oplevering -->
+      <div class="deepdive-card">
+        <div class="deepdive-header">
+          <div class="deepdive-rank">#1</div>
+          <div>
+            <div class="deepdive-title">Oplevering nieuwbouw inspectie</div>
+            <div class="deepdive-score">3C-score 9 &middot; PARTIEEL gedekt</div>
+          </div>
+        </div>
+        <div class="deepdive-body">
+          <div class="w-row">
+            <div class="w-label">Why</div>
+            <div class="w-value">Gebreken ontdekken vóór/bij sleuteloverdracht; aannemer aansprakelijk houden binnen de garantietermijn.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">When</div>
+            <div class="w-value">2&ndash;4 weken voor geplande oplevering tot en met de dag van overdracht.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">Where</div>
+            <div class="w-value">Digitaal op telefoon bij bouwplaats (zoeken ter plekke), thuis op laptop in voorbereiding.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">With whom</div>
+            <div class="w-value">Partner, bouwbegeleider, makelaar, SWK- of Woningborg-inspecteur.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">With what</div>
+            <div class="w-value">Bylder meerwerk-check, bouwtekeningen, technische omschrijving, Woningborg-garantiekaart.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">While</div>
+            <div class="w-value">Eindcontrole meerwerk, adreswijziging regelen, verhuisplanning afronden.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">Feeling</div>
+            <div class="w-value">Gespannen, hoog-stakes, bang iets te missen. Vlucht naar autoriteit.</div>
+          </div>
+          <div class="bylder-hook">
+            <strong>Bylder-haak</strong>
+            AI-check "wat controleer ik bij oplevering?", printbare checklist per woningtype (rijwoning / appartement / 2-onder-1-kap), koppeling naar /offerte-check/ voor hersteloffertes na gebreken. Positionering: Bylder als de enige die de hele keten dekt (kopen → oplevering → verbouwen).
+          </div>
+        </div>
+      </div>
+
+      <!-- CEP 3: Nieuwbouw vs bestaand -->
+      <div class="deepdive-card">
+        <div class="deepdive-header">
+          <div class="deepdive-rank">#2</div>
+          <div>
+            <div class="deepdive-title">Nieuwbouw vs bestaand vergelijken</div>
+            <div class="deepdive-score">3C-score 8 &middot; PARTIEEL gedekt</div>
+          </div>
+        </div>
+        <div class="deepdive-body">
+          <div class="w-row">
+            <div class="w-label">Why</div>
+            <div class="w-value">Beide koopvarianten overwegen; behoefte aan objectief, cijfer-onderbouwd advies zonder verkopersbelang.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">When</div>
+            <div class="w-value">Vroeg in kooporiëntatie, 3&ndash;12 maanden voor aankoop. Lange beslissingscyclus.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">Where</div>
+            <div class="w-value">Thuis op laptop (uitgebreid lezen), ook mobiel (snelle check, Funda-sessie).</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">With whom</div>
+            <div class="w-value">Partner, ouders, hypotheekadviseur in spe.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">With what</div>
+            <div class="w-value">Funda, hypotheek-rekentool, Google, nieuwbouwprojecten-websites.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">While</div>
+            <div class="w-value">Hypotheek oriëntatie, buurt-research, spaargeld &amp; eigen inbreng berekenen.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">Feeling</div>
+            <div class="w-value">Onzeker, overweldigd, informatie-hongering. Wil een helder antwoord.</div>
+          </div>
+          <div class="bylder-hook">
+            <strong>Bylder-haak</strong>
+            Neutrale vergelijker (kosten, risico, tijdlijn, duurzaamheid), data-gedreven vanuit eigen meerwerk-marktdata. CTA splitsen: "Oriënteer op nieuwbouw" → /nieuwbouw-gids/ OF "Koop bestaand" → /bouwkundige-keuring/. Eerste paginabezoek = begin van de Bylder-reis.
+          </div>
+        </div>
+      </div>
+
+      <!-- CEP 5: Bod op bestaande woning -->
+      <div class="deepdive-card">
+        <div class="deepdive-header">
+          <div class="deepdive-rank">#3</div>
+          <div>
+            <div class="deepdive-title">Bod doen op bestaande woning</div>
+            <div class="deepdive-score">3C-score 8 &middot; PARTIEEL gedekt</div>
+          </div>
+        </div>
+        <div class="deepdive-body">
+          <div class="w-row">
+            <div class="w-label">Why</div>
+            <div class="w-value">Maximale bieding bepalen, vraagprijs beoordelen. Wil weten of hij/zij niet te veel betaalt.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">When</div>
+            <div class="w-value">Bij bezichtiging of direct erna. Hoge tijdsdruk (overbieders actief).</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">Where</div>
+            <div class="w-value">Mobiel onderweg of bij de woning. Snelle lookup vereist.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">With whom</div>
+            <div class="w-value">Partner, aankoopmakelaar, financieel adviseur.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">With what</div>
+            <div class="w-value">Funda, biedlogger-tools, NVM-transactiedata, hypotheek-app.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">While</div>
+            <div class="w-value">Hypotheek-check, bouwkundige keuring plannen, vergelijken met alternatieven.</div>
+          </div>
+          <div class="w-row">
+            <div class="w-label">Feeling</div>
+            <div class="w-value">Competitieve stress, angst om mis te grijpen, tijdsdruk. Irrationele beslisomgeving.</div>
+          </div>
+          <div class="bylder-hook">
+            <strong>Bylder-haak</strong>
+            "Is deze vraagprijs eerlijk?" tool-aanzet (eigen marktdata als moat), directe koppeling naar /bouwkundige-keuring/ (risico verlagen) en /offerte-check/ (verbouw-budget inzichtelijk). Ideaal mobiel-geoptimaliseerde pagina voor hoge tijdsdruk.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 4. COVERAGE PER FASE -->
+<section>
+  <div class="container">
+    <div class="section-label">Sectie 4</div>
+    <h2>CEP-coverage per fase</h2>
+
+    <div class="coverage-grid">
+
+      <div class="coverage-item">
+        <div class="coverage-phase">Pre-koop</div>
+        <div class="coverage-numbers">1 van 3 volledig gedekt</div>
+        <div class="progress-track"><div class="progress-bar" style="width:33%;background:var(--orange);"></div></div>
+        <div class="progress-pct" style="color:var(--orange);">33%</div>
+      </div>
+
+      <div class="coverage-item">
+        <div class="coverage-phase">Kopen</div>
+        <div class="coverage-numbers">2 van 4 volledig gedekt</div>
+        <div class="progress-track"><div class="progress-bar" style="width:50%;background:var(--amber);"></div></div>
+        <div class="progress-pct" style="color:var(--amber);">50%</div>
+      </div>
+
+      <div class="coverage-item">
+        <div class="coverage-phase">Verhuizen</div>
+        <div class="coverage-numbers">1,5 van 2 gedekt (partieel meegerekend)</div>
+        <div class="progress-track"><div class="progress-bar" style="width:75%;background:#7A943A;"></div></div>
+        <div class="progress-pct" style="color:#7A943A;">75%</div>
+      </div>
+
+      <div class="coverage-item">
+        <div class="coverage-phase">Verbouwen</div>
+        <div class="coverage-numbers">3,5 van 6 gedekt (partieel meegerekend)</div>
+        <div class="progress-track"><div class="progress-bar" style="width:58%;background:var(--amber);"></div></div>
+        <div class="progress-pct" style="color:var(--amber);">58%</div>
+      </div>
+
+      <div class="coverage-item">
+        <div class="coverage-phase">Wonen &amp; Verduurzamen</div>
+        <div class="coverage-numbers">3 van 3 volledig gedekt</div>
+        <div class="progress-track"><div class="progress-bar" style="width:100%;"></div></div>
+        <div class="progress-pct">100%</div>
+      </div>
+
+      <div class="coverage-item">
+        <div class="coverage-phase">Inrichten &amp; Shoppen</div>
+        <div class="coverage-numbers">2 van 2 volledig gedekt</div>
+        <div class="progress-track"><div class="progress-bar" style="width:100%;"></div></div>
+        <div class="progress-pct">100%</div>
+      </div>
+
+    </div>
+
+    <div class="coverage-total">
+      <div>
+        <div class="coverage-total-label">Totale CEP-dekking Bylder.com</div>
+        <div class="coverage-total-sub">10 volledig + 5 partieel (als 0,5 meegerekend) van 20 CEPs</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="coverage-total-num">65%</div>
+        <div class="coverage-total-sub">13 / 20 CEPs gedekt</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 5. ROADMAP -->
+<section>
+  <div class="container">
+    <div class="section-label">Sectie 5</div>
+    <h2>Volgende 3 hubs &mdash; 3C &ge;8, sterke Bylder-fit</h2>
+    <div class="roadmap-list">
+
+      <div class="roadmap-item">
+        <div class="roadmap-num">01</div>
+        <div class="roadmap-body">
+          <div class="roadmap-title">Oplevering nieuwbouw hub</div>
+          <div class="roadmap-meta">
+            <span class="meta-tag score">3C-score 9</span>
+            <span class="meta-tag pages">Geschat 6&ndash;8 pagina's</span>
+            <span class="meta-tag pages">Fase: Verhuizen</span>
+          </div>
+          <div class="roadmap-desc">
+            Kern-CEP, complement op het bestaande meerwerk-cluster. Gebruiker zoekt op het meest hoog-stakes moment in het koopproces actief naar autoriteit. Bylder kan de enige zijn die kopen, meerwerk-check én oplevering-inspectie dekt in één content-ecosysteem. Opbouw: pillar (wat is oplevering?), checklist per woningtype, veelvoorkomende gebreken, protocol voor herstel, koppeling offerte-check. Interne links vanuit /nieuwbouw/, /verhuizen-nieuwbouw/ en /offerte-check/.
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-num">02</div>
+        <div class="roadmap-body">
+          <div class="roadmap-title">Nieuwbouw vs bestaand vergelijkingspagina</div>
+          <div class="roadmap-meta">
+            <span class="meta-tag score">3C-score 8</span>
+            <span class="meta-tag pages">Geschat 3&ndash;5 pagina's</span>
+            <span class="meta-tag pages">Fase: Pre-koop</span>
+          </div>
+          <div class="roadmap-desc">
+            Pre-koop funnel-pagina: trekt verkeer in de vroegste oriëntatiefase. Kan verkeer vanuit /nieuwbouw-gids/ absorberen via interne link. Neutrale vergelijker werkt als vertrouwenspagina: kosten (aankoopprijs, meerwerk, verbouwkosten), risico (bouwrisico vs verborgen gebreken), tijdlijn, duurzaamheid. CTA splitst stroom: nieuwbouw-scan vs bouwkundige-keuring.
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-num">03</div>
+        <div class="roadmap-body">
+          <div class="roadmap-title">Bestaande woning kopen (full hub)</div>
+          <div class="roadmap-meta">
+            <span class="meta-tag score">3C-score 8</span>
+            <span class="meta-tag pages">Geschat 5&ndash;7 pagina's</span>
+            <span class="meta-tag pages">Fase: Kopen</span>
+          </div>
+          <div class="roadmap-desc">
+            Pillar /bestaande-bouw/ bestaat maar mist cluster-pagina's. Uit te bouwen met: biedstrategie-gids, vraagprijs-check (data-gedreven), kosten koper uitgesplitst, bouwkundige keuring plannen, eerste verbouw-budget inschatten. Hoge intentie-zoekvolumes ("wat bieden op huis"). Interne links naar /bouwkundige-keuring/, /offerte-check/ en de vergelijkingspagina (hub 2).
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="container">
+  <footer>
+    <div class="footer-meta">
+      Gegenereerd: 1 juli 2026 &nbsp;&middot;&nbsp; Bylder intern &nbsp;&middot;&nbsp; Byron Sharp / EBI CEP-framework<br>
+      Niet voor publiek gebruik &middot; noindex, nofollow
+    </div>
+    <a href="/" class="footer-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      Terug naar Bylder.com
+    </a>
+  </footer>
+</div>
+
+</body>
+</html>
