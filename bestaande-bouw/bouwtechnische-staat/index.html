@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouwtechnische staat beoordelen bestaande woning | Bylder.com</title>
+  <meta name="description" content="Hoe beoordeel je de bouwtechnische staat van een bestaande woning? Wat controleer je zelf, wanneer is een bouwkundige keuring noodzakelijk en op welke gebreken let je?">
+  <link rel="canonical" href="https://www.bylder.com/bestaande-bouw/bouwtechnische-staat/">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bouwtechnische staat beoordelen bestaande woning | Bylder.com">
+  <meta property="og:description" content="Hoe beoordeel je de bouwtechnische staat van een bestaande woning? Wat controleer je zelf, wanneer is een bouwkundige keuring noodzakelijk en op welke gebreken let je?">
+  <meta property="og:url" content="https://www.bylder.com/bestaande-bouw/bouwtechnische-staat/">
+  <meta property="og:image" content="https://www.bylder.com/og-image.jpg?v=2">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bouwtechnische staat beoordelen bestaande woning | Bylder.com">
+  <meta name="twitter:description" content="Hoe beoordeel je de bouwtechnische staat van een bestaande woning? Wat controleer je zelf, wanneer is een bouwkundige keuring noodzakelijk en op welke gebreken let je?">
+  <meta name="twitter:image" content="https://www.bylder.com/og-image.jpg?v=2">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LZYCRP1169');
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #F5F0E8;
+      color: #3D2E1E;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    h1, h2, h3 {
+      color: #1A1208;
+      line-height: 1.25;
+    }
+
+    a { color: #3D5A3E; }
+    a:hover { text-decoration: underline; }
+
+    @media(max-width:768px){.nav-links{display:none!important;}}
+
+    /* ── Layout ── */
+    .page-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      font-size: 13px;
+      color: rgba(61,46,30,0.55);
+      padding: 20px 0 4px;
+      align-items: center;
+    }
+    .breadcrumb a {
+      color: rgba(61,46,30,0.55);
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { color: #3D5A3E; text-decoration: underline; }
+    .breadcrumb span { color: rgba(61,46,30,0.35); }
+
+    .last-updated {
+      font-size: 12px;
+      color: rgba(61,46,30,0.45);
+      padding-bottom: 28px;
+    }
+
+    /* ── Hero ── */
+    .badge {
+      display: inline-block;
+      background: rgba(61,90,62,0.1);
+      color: #3D5A3E;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 800;
+      margin-bottom: 28px;
+    }
+
+    /* ── KV Boxes ── */
+    .kv-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    @media(max-width:580px){ .kv-row { grid-template-columns: 1fr; } }
+
+    .kv-box {
+      background: #fff;
+      border: 1px solid rgba(61,46,30,0.1);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    .kv-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #3D5A3E;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .kv-value {
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      font-size: 22px;
+      color: #1A1208;
+    }
+    .kv-value-sm {
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      font-size: 16px;
+      color: #1A1208;
+    }
+
+    /* ── Section titles ── */
+    h2 {
+      font-size: clamp(20px, 3.5vw, 28px);
+      font-weight: 800;
+      margin-bottom: 24px;
+      margin-top: 56px;
+    }
+
+    /* ── Aandachtsgebieden ── */
+    .aandacht-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .aandacht-card {
+      background: #fff;
+      border: 1px solid rgba(61,46,30,0.09);
+      border-radius: 12px;
+      padding: 22px 26px;
+    }
+
+    .aandacht-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .aandacht-num {
+      width: 32px;
+      height: 32px;
+      background: #3D5A3E;
+      color: #F5F0E8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .aandacht-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1A1208;
+    }
+
+    .aandacht-body {
+      font-size: 15px;
+      color: #3D2E1E;
+      line-height: 1.65;
+    }
+
+    /* ── Warning block ── */
+    .warning-block {
+      background: #FFF3EE;
+      border-left: 4px solid #B85C38;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin: 40px 0;
+      font-size: 15px;
+      color: #1A1208;
+      line-height: 1.65;
+    }
+
+    /* ── Drie niveaus ── */
+    .niveaus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    @media(max-width:720px){ .niveaus-grid { grid-template-columns: 1fr; } }
+
+    .niveau-card {
+      background: #fff;
+      border: 1px solid rgba(61,46,30,0.09);
+      border-radius: 12px;
+      padding: 22px 22px;
+    }
+
+    .niveau-card.gering { border-left: 3px solid #3D5A3E; }
+    .niveau-card.serieus { border-left: 3px solid #C9A84C; }
+    .niveau-card.afkraker { border-left: 3px solid #B85C38; }
+
+    .niveau-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .niveau-card.gering .niveau-label { color: #3D5A3E; }
+    .niveau-card.serieus .niveau-label { color: #A07A28; }
+    .niveau-card.afkraker .niveau-label { color: #B85C38; }
+
+    .niveau-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1A1208;
+      margin-bottom: 14px;
+    }
+
+    .niveau-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .niveau-card ul li {
+      font-size: 14px;
+      color: #3D2E1E;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .niveau-card ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: rgba(61,46,30,0.35);
+    }
+
+    .niveau-note {
+      font-size: 13px;
+      color: rgba(61,46,30,0.6);
+      border-top: 1px solid rgba(61,46,30,0.08);
+      padding-top: 12px;
+      font-style: italic;
+    }
+
+    /* ── Checklist ── */
+    .checklist-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 8px;
+    }
+    @media(max-width:640px){ .checklist-wrapper { grid-template-columns: 1fr; } }
+
+    .checklist-block {
+      background: #fff;
+      border: 1px solid rgba(61,46,30,0.09);
+      border-radius: 12px;
+      padding: 22px 24px;
+    }
+
+    .checklist-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1A1208;
+      margin-bottom: 14px;
+    }
+
+    .checklist-block ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .checklist-block ul li {
+      font-size: 14px;
+      color: #3D2E1E;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .checklist-block ul li.ok::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 16px;
+      height: 16px;
+      background: rgba(61,90,62,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* SVG icons via inline */
+    .checklist-block ul li.ok::after {
+      content: '✓';
+      position: absolute;
+      left: 3px;
+      top: 1px;
+      font-size: 11px;
+      color: #3D5A3E;
+      font-weight: 700;
+    }
+
+    .checklist-block ul li.warn::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 16px;
+      height: 16px;
+      background: rgba(184,92,56,0.12);
+      border-radius: 50%;
+    }
+
+    .checklist-block ul li.warn::after {
+      content: '!';
+      position: absolute;
+      left: 5px;
+      top: 1px;
+      font-size: 11px;
+      color: #B85C38;
+      font-weight: 700;
+    }
+
+    /* ── FAQ ── */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid rgba(61,46,30,0.09);
+      border-radius: 12px;
+      padding: 22px 26px;
+    }
+
+    .faq-question {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1A1208;
+      margin-bottom: 10px;
+    }
+
+    .faq-answer {
+      font-size: 15px;
+      color: #3D2E1E;
+      line-height: 1.65;
+    }
+
+    /* ── CTA ── */
+    .cta-block {
+      background: #3D5A3E;
+      border-radius: 16px;
+      padding: 40px 40px;
+      margin: 56px 0;
+      text-align: center;
+    }
+
+    .cta-badge {
+      display: inline-block;
+      background: rgba(245,240,232,0.15);
+      color: #F5F0E8;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .cta-block h2 {
+      color: #F5F0E8;
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: clamp(20px, 3.5vw, 26px);
+    }
+
+    .cta-sub {
+      color: rgba(245,240,232,0.75);
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #F5F0E8;
+      color: #3D5A3E;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+    }
+
+    .cta-btn:hover { background: #fff; text-decoration: none; }
+
+    /* ── Verder lezen ── */
+    .verder-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 56px;
+    }
+
+    .verder-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      color: #3D5A3E;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .verder-links a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      background: #1A1208;
+      color: rgba(245,240,232,0.55);
+      padding: 40px 5%;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand {
+      font-weight: 700;
+      font-size: 16px;
+      color: #F5F0E8;
+    }
+
+    .footer-brand span { color: #3D5A3E; }
+
+    .footer-meta {
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(245,240,232,0.45);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover { color: #F5F0E8; }
+
+    .footer-copy {
+      font-size: 12px;
+      margin-top: 6px;
+      color: rgba(245,240,232,0.3);
+    }
+  </style>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat kost een bouwkundige keuring bij een bestaande woning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een bouwkundige keuring kost gemiddeld €300–€500. Voor grotere woningen of uitgebreide funderingskeuring loopt dit op tot €500–€800. Het rapport bevat alle geconstateerde gebreken en een kostenraming voor herstel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik asbest zelf verwijderen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kleine hoeveelheden hechtgebonden asbest mogen particulieren in sommige gevallen zelf verwijderen. Voor niet-hechtgebonden asbest is een gecertificeerd asbestverwijderingsbedrijf verplicht. Bij twijfel altijd een asbestinventarisatie laten uitvoeren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wanneer is een funderingskeuring nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij diagonale scheuren in de gevel (>3–5mm), klemmende deuren/ramen of zichtbare hoogteverschillen in de vloer. In veengebieden (Randstad, Groningen, Zuid-Holland) is een funderingskeuring standaard verstandig bij woningen ouder dan 40 jaar."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Bylder.com", "item": "https://www.bylder.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Bestaande bouw kopen", "item": "https://www.bylder.com/bestaande-bouw/"},
+      {"@type": "ListItem", "position": 3, "name": "Bouwtechnische staat", "item": "https://www.bylder.com/bestaande-bouw/bouwtechnische-staat/"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Bouwtechnische staat van een bestaande woning beoordelen",
+    "datePublished": "2026-07-01",
+    "dateModified": "2026-07-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bylder.com",
+      "url": "https://www.bylder.com"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ── Nav ── -->
+<nav style="background:rgba(245,240,232,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:0 5%;">
+  <div style="max-width:1100px;margin:0 auto;height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
+      <div style="width:32px;height:32px;background:#3D5A3E;border-radius:7px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:12px;flex-shrink:0;">B.</div>
+      <span style="font-weight:700;color:#1A1208;font-size:16px;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+    </a>
+    <div class="nav-links" role="list" style="display:flex;align-items:center;gap:4px;">
+      <a href="/#features" role="listitem" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;padding:8px 12px;border-radius:8px;">Voordelen</a>
+      <a href="/vouchers/" role="listitem" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;padding:8px 12px;border-radius:8px;">Vouchers</a>
+      <a href="/kortingscode/" role="listitem" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;padding:8px 12px;border-radius:8px;">Kortingscodes</a>
+      <a href="/functies/" role="listitem" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;padding:8px 12px;border-radius:8px;">Functies</a>
+      <a href="/woning-verduurzamen/" role="listitem" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;padding:8px 12px;border-radius:8px;">Verduurzamen</a>
+      <a href="/prijzen/" role="listitem" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;padding:8px 12px;border-radius:8px;">Prijzen</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://app.bylder.com" style="font-size:13px;font-weight:600;color:rgba(61,46,30,0.5);text-decoration:none;padding:8px 12px;border-radius:8px;">Inloggen</a>
+      <a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;font-size:13px;font-weight:700;text-decoration:none;padding:10px 18px;border-radius:8px;">Start gratis →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Main content ── -->
+<main>
+  <div class="page-wrapper">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Kruimelpad" class="breadcrumb">
+      <a href="/">Bylder.com</a>
+      <span aria-hidden="true">›</span>
+      <a href="/bestaande-bouw/">Bestaande bouw kopen</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Bouwtechnische staat</span>
+    </nav>
+    <p class="last-updated">Laatst bijgewerkt: 1 juli 2026</p>
+
+    <!-- Hero -->
+    <div class="badge">Bouwtechnische staat · keuring</div>
+    <h1>Bouwtechnische staat van een bestaande woning beoordelen</h1>
+
+    <!-- KV boxes -->
+    <div class="kv-row">
+      <div class="kv-box">
+        <div class="kv-label">Bouwkundige keuring</div>
+        <div class="kv-value">€300–€500</div>
+      </div>
+      <div class="kv-box">
+        <div class="kv-label">Veelvoorkomende verborgen gebreken</div>
+        <div class="kv-value-sm">Fundering · asbest · vochtproblemen</div>
+      </div>
+    </div>
+
+    <!-- 7 aandachtsgebieden -->
+    <h2>7 aandachtsgebieden bij de bezichtiging</h2>
+
+    <div class="aandacht-list">
+
+      <div class="aandacht-card">
+        <div class="aandacht-header">
+          <div class="aandacht-num">1</div>
+          <div class="aandacht-title">Fundering</div>
+        </div>
+        <p class="aandacht-body">Ophaalverschil in de vloer, scheuren in muren (diagonale scheuren zijn een alarmsignaal), klemmende deuren en ramen. Een professionele funderingskeuring is noodzakelijk als je ook maar één van deze signalen ziet.</p>
+      </div>
+
+      <div class="aandacht-card">
+        <div class="aandacht-header">
+          <div class="aandacht-num">2</div>
+          <div class="aandacht-title">Dak</div>
+        </div>
+        <p class="aandacht-body">Conditie van dakbedekking, dakpannen en nokvorst. Controleer de zolder op vochtplekken en lekkagesporen. Vraag naar de leeftijd van het dak — verwachte levensduur is 25–40 jaar, afhankelijk van het materiaal.</p>
+      </div>
+
+      <div class="aandacht-card">
+        <div class="aandacht-header">
+          <div class="aandacht-num">3</div>
+          <div class="aandacht-title">Vocht en schimmel</div>
+        </div>
+        <p class="aandacht-body">Kelderlekkage, vochtige kruipruimte, condensatieschimmel (zwarte vlekjes bij kozijnen en hoeken) of doorslagvocht (zoutkristallen op de muur). Deze twee zijn anders van aard en hebben een andere oplossing.</p>
+      </div>
+
+      <div class="aandacht-card">
+        <div class="aandacht-header">
+          <div class="aandacht-num">4</div>
+          <div class="aandacht-title">Elektra</div>
+        </div>
+        <p class="aandacht-body">Ouderdom van de installatie (pre-1980 = vaak geen aarding), aantal groepen (reken 1 groep per 2.000W) en de staat van de meterkast. Laat ouder elektra beoordelen door een erkend elektrotechnisch installateur.</p>
+      </div>
+
+      <div class="aandacht-card">
+        <div class="aandacht-header">
+          <div class="aandacht-num">5</div>
+          <div class="aandacht-title">Sanitair en riolering</div>
+        </div>
+        <p class="aandacht-body">Afvoersnelheid bij douche en toilet, rioollucht in de kelder of kruipruimte, leeftijd van de warmwaterboiler. Bij oudere woningen (&lt;1970): overweeg een rioolcamera-inspectie — grès-buizen slijten. Kosten: €150–€400.</p>
+      </div>
+
+      <div class="aandacht-card">
+        <div class="aandacht-header">
+          <div class="aandacht-num">6</div>
+          <div class="aandacht-title">Asbest</div>
+        </div>
+        <p class="aandacht-body">Verdachte plekken: golfplaten dak, dakplaten van eternit, vloerbedekking (vinylvloer pre-1994), isolatiemateriaal rond de ketelleiding. Als asbest aanwezig is: asbestinventarisatie (€250–€500) verplicht vóór sloop of renovatie.</p>
+      </div>
+
+      <div class="aandacht-card">
+        <div class="aandacht-header">
+          <div class="aandacht-num">7</div>
+          <div class="aandacht-title">Energieprestatie</div>
+        </div>
+        <p class="aandacht-body">Is het energielabel aanwezig en actueel? Controleer isolatie van dak, spouwmuur en vloer (kijk in de kruipruimte). Glastype vaststellen: enkel, dubbel of HR++. Een laag label (D–G) is verhandelbaar in de koopprijs.</p>
+      </div>
+
+    </div>
+
+    <!-- Warning block -->
+    <div class="warning-block">
+      <strong>Let op:</strong> Diagonale scheuren groter dan 5mm in de gevelmuur zijn bijna altijd een funderingssignaal. Koop nooit een woning met dit kenmerk zonder een uitgebreide funderingskeuring — herstelkosten lopen op tot €50.000 en hoger.
+    </div>
+
+    <!-- Drie niveaus van gebreken -->
+    <h2>Drie niveaus van gebreken</h2>
+
+    <div class="niveaus-grid">
+
+      <div class="niveau-card gering">
+        <div class="niveau-label">Gering</div>
+        <div class="niveau-title">Zelf op te lossen</div>
+        <ul>
+          <li>Verouderd kitwerk in badkamer of keuken</li>
+          <li>Vlekken in latex-verf (condensatie)</li>
+          <li>Roestige kraan of versleten toilet-mechanisme</li>
+          <li>Losse deurbeslag</li>
+        </ul>
+        <div class="niveau-note">Makkelijk zelf of met een klusjesman te verhelpen; kosten &lt; €500</div>
+      </div>
+
+      <div class="niveau-card serieus">
+        <div class="niveau-label">Serieus</div>
+        <div class="niveau-title">Kosten inrekenen</div>
+        <ul>
+          <li>Lekkend dak (schaduw op zolderbalken)</li>
+          <li>Vochtige kelder of kruipruimte</li>
+          <li>Verouderd elektra (pre-1980, geen aarding)</li>
+          <li>Slechte energieprestatie (label E–G)</li>
+        </ul>
+        <div class="niveau-note">Herstelbaar, maar plan budget en laat het meewegen in je bod</div>
+      </div>
+
+      <div class="niveau-card afkraker">
+        <div class="niveau-label">Afkraker</div>
+        <div class="niveau-title">Beïnvloedt je bod sterk</div>
+        <ul>
+          <li>Funderingsproblemen (ophaalverschil, diagonale scheuren)</li>
+          <li>Asbesthoudend dak in slechte staat</li>
+          <li>Rioollekkage buiten het perceel</li>
+          <li>Structurele houtrot in draagconstructie</li>
+        </ul>
+        <div class="niveau-note">Herstelkosten €20.000–€60.000+; laat dit altijd door een professional beoordelen vóór je een bod uitbrengt</div>
+      </div>
+
+    </div>
+
+    <!-- Checklist -->
+    <h2>Zelf controleren bij de bezichtiging</h2>
+
+    <div class="checklist-wrapper">
+
+      <div class="checklist-block">
+        <div class="checklist-title">Tijdens bezichtiging meenemen</div>
+        <ul>
+          <li class="ok">Muren voelen op vocht (hand flat tegen de muur)</li>
+          <li class="ok">Deuren en ramen openen en sluiten (klemmend = funderingssignaal)</li>
+          <li class="ok">Zolder bekijken op lekkagesporen</li>
+          <li class="ok">Kruipruimte (als toegankelijk) op vocht checken</li>
+          <li class="ok">Lichten en stopcontacten testen</li>
+          <li class="ok">Waterdruk controleren (douchestand volledig open)</li>
+          <li class="ok">Meterkast openen: aarding aanwezig? Aantal groepen tellen</li>
+        </ul>
+      </div>
+
+      <div class="checklist-block">
+        <div class="checklist-title">Altijd door een professional laten doen</div>
+        <ul>
+          <li class="warn">Funderingsonderzoek bij signalen</li>
+          <li class="warn">Asbestinventarisatie bij pre-1994 panden</li>
+          <li class="warn">Elektrische keuring bij pre-1980 elektra</li>
+          <li class="warn">Rioolcamera bij vermoeden van lekkage</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- FAQ -->
+    <h2>Veelgestelde vragen</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-question">Wat kost een bouwkundige keuring bij een bestaande woning?</div>
+        <p class="faq-answer">Een bouwkundige keuring kost gemiddeld €300–€500 voor een standaard woning. Voor grotere woningen of bij een uitgebreide funderingskeuring loopt dit op tot €500–€800. De keuring levert een rapport op met alle geconstateerde gebreken en een kostenraming voor herstel.</p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Kan ik asbest zelf verwijderen?</div>
+        <p class="faq-answer">Kleine hoeveelheden hechtgebonden asbest (zoals vinylvloertegels) mogen particulieren in sommige gevallen zelf verwijderen, maar voor niet-hechtgebonden asbest (zoals losjes loskomende isolatievezels) is een gecertificeerd asbestverwijderingsbedrijf verplicht. Bij twijfel altijd een asbestinventarisatie laten uitvoeren.</p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Wanneer is een funderingskeuring nodig?</div>
+        <p class="faq-answer">Altijd als je scheuren in de gevel ziet (zeker diagonale scheuren groter dan 3–5mm), als deuren of ramen slecht sluiten, of als de vloer duidelijk hoogteverschillen vertoont. In gebieden met veenbodem of ophoogzand (Randstad, Groningen, Zuid-Holland) is een funderingskeuring standaard verstandig voor woningen ouder dan 40 jaar.</p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <div class="cta-badge">Bylder-lidmaatschap · eenmalig €99</div>
+      <h2>Offertes voor herstelwerk checken?</h2>
+      <p class="cta-sub">Bylder vergelijkt jouw offertes voor schilder, stukadoor, gietvloer en herstelwerk met actuele marktprijzen. Zo weet je wat een eerlijke prijs is.</p>
+      <a href="https://app.bylder.com/registreer" class="cta-btn">Start gratis →</a>
+    </div>
+
+    <!-- Verder lezen -->
+    <h2 style="margin-top:0;">Verder lezen</h2>
+    <div class="verder-links">
+      <a href="/bestaande-bouw/">← Terug naar Bestaande bouw kopen</a>
+      <a href="/bouwkundige-keuring/">Bouwkundige keuring aanvragen →</a>
+      <a href="/bestaande-bouw/verbouwing-plannen/">Verbouwing plannen →</a>
+      <a href="/bestaande-bouw/bod-uitbrengen/">Bod uitbrengen op een woning →</a>
+    </div>
+
+  </div><!-- end page-wrapper -->
+</main>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a href="/" class="footer-logo">
+        <div style="width:28px;height:28px;background:#3D5A3E;border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:11px;flex-shrink:0;">B.</div>
+        <span class="footer-brand">Bylder<span>.com</span></span>
+      </a>
+      <div class="footer-meta">
+        KvK 65020006<br>
+        Informatief overzicht. Prijzen zijn indicatieve marktbandbreedtes voor NL 2026.
+      </div>
+      <div class="footer-copy">© 2026 Bylder.com</div>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/algemene-voorwaarden/">Algemene voorwaarden</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
