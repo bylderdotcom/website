@@ -1,0 +1,1717 @@
+{
+  "generated": "2026-07-02T18:12:27",
+  "root": "/Users/danielpaaij/Documents/GitHub/website",
+  "checks": {
+    "1_sitemap_files": {
+      "sitemaps": [
+        "sitemap.xml",
+        "en-us-sitemap.xml",
+        "showroomsale-sitemap.xml",
+        "kortingscode-sitemap.xml",
+        "3d-sfeerimpressie-sitemap.xml",
+        "bouwvergunning-sitemap.xml",
+        "meerwerk-sitemap.xml",
+        "eerlijke-prijzen-sitemap.xml",
+        "stukadoor-sitemap.xml",
+        "schilder-sitemap.xml",
+        "loodgieter-sitemap.xml",
+        "elektricien-sitemap.xml",
+        "aannemer-sitemap.xml",
+        "badkamer-sitemap.xml",
+        "dakkapel-sitemap.xml",
+        "gietvloer-sitemap.xml",
+        "plattegrond-inrichten-sitemap.xml",
+        "dakdekker-sitemap.xml",
+        "energieadviseur-sitemap.xml",
+        "isolatiebedrijf-sitemap.xml",
+        "kozijnbedrijf-sitemap.xml",
+        "timmerman-sitemap.xml",
+        "ventilatiebedrijf-sitemap.xml",
+        "warmtepompinstallateur-sitemap.xml"
+      ],
+      "sitemaps_in_robots": [
+        "sitemap.xml",
+        "en-us-sitemap.xml",
+        "showroomsale-sitemap.xml",
+        "kortingscode-sitemap.xml",
+        "3d-sfeerimpressie-sitemap.xml",
+        "bouwvergunning-sitemap.xml",
+        "meerwerk-sitemap.xml",
+        "eerlijke-prijzen-sitemap.xml",
+        "stukadoor-sitemap.xml",
+        "schilder-sitemap.xml",
+        "loodgieter-sitemap.xml",
+        "elektricien-sitemap.xml",
+        "aannemer-sitemap.xml",
+        "badkamer-sitemap.xml",
+        "dakkapel-sitemap.xml",
+        "gietvloer-sitemap.xml",
+        "plattegrond-inrichten-sitemap.xml"
+      ],
+      "sitemaps_on_disk_not_in_robots": [
+        "dakdekker-sitemap.xml",
+        "energieadviseur-sitemap.xml",
+        "isolatiebedrijf-sitemap.xml",
+        "kozijnbedrijf-sitemap.xml",
+        "timmerman-sitemap.xml",
+        "ventilatiebedrijf-sitemap.xml",
+        "warmtepompinstallateur-sitemap.xml"
+      ],
+      "sitemap_files_missing": [],
+      "urls_checked": 56561,
+      "violations": 0,
+      "examples": []
+    },
+    "2_noindex_in_sitemap": {
+      "pages_scanned": 75861,
+      "noindex_pages": 18834,
+      "violations": 0,
+      "examples": []
+    },
+    "3_canonical": {
+      "pages_with_canonical": 75856,
+      "violations": 375,
+      "examples": [
+        {
+          "path": "template_v2.html",
+          "canonical": "[Canonical_URL]"
+        },
+        {
+          "path": "tools/index.html",
+          "canonical": "https://bylder.com/tools/"
+        },
+        {
+          "path": "tools/bouwkosten-per-m2/index.html",
+          "canonical": "https://bylder.com/tools/bouwkosten-per-m2/"
+        },
+        {
+          "path": "tools/opleveringschecklist-download/index.html",
+          "canonical": "https://bylder.com/tools/opleveringschecklist-download/"
+        },
+        {
+          "path": "tools/meerwerk-calculator/index.html",
+          "canonical": "https://bylder.com/tools/meerwerk-calculator/"
+        },
+        {
+          "path": "tools/5-procent-depot-calculator/index.html",
+          "canonical": "https://bylder.com/tools/5-procent-depot-calculator/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/haaksbergen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/haaksbergen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/kampen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/kampen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/losser/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/losser/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/oldenzaal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/oldenzaal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/twenterand/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/twenterand/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/hengelo/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/hengelo/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/tubbergen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/tubbergen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/olst-wijhe/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/olst-wijhe/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/hellendoorn/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/hellendoorn/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/borne/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/borne/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/dinkelland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/dinkelland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/hardenberg/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/hardenberg/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/enschede/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/enschede/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/wierden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/wierden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/rijssen-holten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/rijssen-holten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/almelo/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/almelo/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/deventer/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/deventer/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/steenwijkerland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/steenwijkerland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/overijssel/zwolle/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/overijssel/zwolle/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/gorinchem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/gorinchem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/katwijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/katwijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/teylingen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/teylingen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/maassluis/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/maassluis/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/brielle/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/brielle/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/sliedrecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/sliedrecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/hoeksche-waard/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/hoeksche-waard/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/waddinxveen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/waddinxveen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/nissewaard/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/nissewaard/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/delft/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/delft/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/rotterdam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/rotterdam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/nieuwkoop/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/nieuwkoop/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/capelle-aan-den-ijssel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/capelle-aan-den-ijssel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/zwijndrecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/zwijndrecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/rijswijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/rijswijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/goudse-gaardenring/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/goudse-gaardenring/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/goeree-overflakkee/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/goeree-overflakkee/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/molenlanden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/molenlanden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/dordrecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/dordrecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/gouda/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/gouda/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/krimpenerwaard/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/krimpenerwaard/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/pijnacker-nootdorp/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/pijnacker-nootdorp/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/zoetermeer/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/zoetermeer/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/westland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/westland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/ridderkerk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/ridderkerk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/voorne-aan-zee/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/voorne-aan-zee/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/hardinxveld-giessendam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/hardinxveld-giessendam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/barendrecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/barendrecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/papendrecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/papendrecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/wassenaar/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/wassenaar/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/midden-delfland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/midden-delfland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/leiderdorp/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/leiderdorp/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/leidschendam-voorburg/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/leidschendam-voorburg/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/krimpen-aan-den-ijssel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/krimpen-aan-den-ijssel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/hellevoetsluis/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/hellevoetsluis/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/bodegraven-reeuwijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/bodegraven-reeuwijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/schiedam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/schiedam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/den-haag/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/den-haag/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/alblasserdam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/alblasserdam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/hendrik-ido-ambacht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/hendrik-ido-ambacht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/spijkenisse/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/spijkenisse/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/alphen-aan-den-rijn/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/alphen-aan-den-rijn/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/noordwijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/noordwijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/leiden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/leiden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/kaag-en-braassem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/kaag-en-braassem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/zuidplas/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/zuidplas/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/vlaardingen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/vlaardingen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zuid-holland/lansingerland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zuid-holland/lansingerland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/maastricht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/maastricht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/heerlen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/heerlen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/leudal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/leudal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/venray/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/venray/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/nuth/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/nuth/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/mook-en-middelaar/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/mook-en-middelaar/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/niederrhein/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/niederrhein/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/kerkrade/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/kerkrade/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/meerssen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/meerssen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/peel-en-maas/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/peel-en-maas/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/brunssum/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/brunssum/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/schinnen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/schinnen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/vaals/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/vaals/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/echt-susteren/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/echt-susteren/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/maasgouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/maasgouw/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/gulpen-wittem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/gulpen-wittem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/valkenburg-aan-de-geul/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/valkenburg-aan-de-geul/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/beekdaelen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/beekdaelen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/venlo/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/venlo/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/horst-aan-de-maas/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/horst-aan-de-maas/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/onderbanken/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/onderbanken/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/bergen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/bergen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/simpelveld/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/simpelveld/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/voerendaal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/voerendaal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/roermond/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/roermond/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/eijsden-margraten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/eijsden-margraten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/sittard-geleen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/sittard-geleen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/landgraaf/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/landgraaf/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/beesel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/beesel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/weert/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/weert/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/limburg/gennep/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/limburg/gennep/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/nieuwegein/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/nieuwegein/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/houten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/houten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/vijfheerenlanden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/vijfheerenlanden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/bunschoten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/bunschoten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/amersfoort/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/amersfoort/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/eemnes/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/eemnes/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/utrecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/utrecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/ijsselstein/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/ijsselstein/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/soest/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/soest/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/de-bilt/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/de-bilt/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/zeist/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/zeist/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/montfoort/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/montfoort/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/lopik/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/lopik/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/veenendaal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/veenendaal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/stichtse-vecht/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/stichtse-vecht/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/wijk-bij-duurstede/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/wijk-bij-duurstede/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/utrechtse-heuvelrug/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/utrechtse-heuvelrug/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/rhenen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/rhenen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/baarn/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/baarn/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/utrecht/woerden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/utrecht/woerden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/goes/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/goes/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/schouwen-duiveland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/schouwen-duiveland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/hulst/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/hulst/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/kapelle/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/kapelle/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/noord-beveland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/noord-beveland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/vlissingen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/vlissingen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/reimerswaal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/reimerswaal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/veere/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/veere/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/borsele/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/borsele/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/tholen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/tholen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/terneuzen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/terneuzen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/middelburg/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/middelburg/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/zeeland/sluis/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/zeeland/sluis/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/veendam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/veendam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/oldambt/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/oldambt/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/assen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/assen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/eemsdelta/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/eemsdelta/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/emmen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/emmen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/groningen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/groningen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/delfzijl/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/delfzijl/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/westerkwartier/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/westerkwartier/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/het-hogeland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/het-hogeland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/winsum/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/winsum/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/midden-groningen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/midden-groningen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/stadskanaal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/stadskanaal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/groningen/loppersum/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/groningen/loppersum/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/schagen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/schagen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/alkmaar/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/alkmaar/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/hilversum/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/hilversum/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/medemblik/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/medemblik/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/purmerend/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/purmerend/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/stede-broec/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/stede-broec/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/texel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/texel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/den-helder/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/den-helder/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/haarlem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/haarlem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/bloemendaal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/bloemendaal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/landsmeer/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/landsmeer/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/zaandam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/zaandam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/diemen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/diemen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/laren/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/laren/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/haarlemmermeer/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/haarlemmermeer/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/gooise-meren/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/gooise-meren/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/hoorn/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/hoorn/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/uitgeest/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/uitgeest/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/beverwijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/beverwijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/heemstede/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/heemstede/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/bergen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/bergen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/castricum/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/castricum/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/blaricum/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/blaricum/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/edam-volendam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/edam-volendam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/heerhugowaard/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/heerhugowaard/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/enkhuizen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/enkhuizen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/velsen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/velsen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/amsterdam/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/amsterdam/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/huizen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/huizen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/amstelveen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/amstelveen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/waterland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/waterland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/almere/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/almere/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-holland/oostzaan/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-holland/oostzaan/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/doetinchem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/doetinchem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/apeldoorn/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/apeldoorn/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/brummen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/brummen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/arnhem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/arnhem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/buren/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/buren/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/lochem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/lochem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/tiel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/tiel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/wijchen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/wijchen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/aalten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/aalten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/oude-ijsselstreek/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/oude-ijsselstreek/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/bronckhorst/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/bronckhorst/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/ermelo/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/ermelo/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/wageningen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/wageningen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/winterswijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/winterswijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/barneveld/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/barneveld/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/ede/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/ede/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/nijmegen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/nijmegen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/nunspeet/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/nunspeet/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/neder-betuwe/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/neder-betuwe/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/zevenaar/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/zevenaar/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/westervoort/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/westervoort/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/zutphen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/zutphen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/harderwijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/harderwijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/renkum/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/renkum/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/rheden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/rheden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/west-betuwe/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/west-betuwe/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/maasdriel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/maasdriel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/putten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/putten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/gelderland/montferland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/gelderland/montferland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/ooststellingwerf/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/ooststellingwerf/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/noardeast-frysl-n/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/noardeast-frysl-n/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/heerenveen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/heerenveen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/smallingerland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/smallingerland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/tytsjerksteradiel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/tytsjerksteradiel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/opsterland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/opsterland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/leeuwarden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/leeuwarden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/de-fryske-marren/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/de-fryske-marren/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/waadhoeke/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/waadhoeke/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/weststellingwerf/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/weststellingwerf/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/friesland/s-dwest-frysl-n/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/friesland/s-dwest-frysl-n/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/laarbeek/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/laarbeek/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/geldrop-mierlo/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/geldrop-mierlo/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/valkenswaard/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/valkenswaard/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/altena/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/altena/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/s-hertogenbosch/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/s-hertogenbosch/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/dongen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/dongen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/helmond/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/helmond/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/geertruidenberg/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/geertruidenberg/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/boekel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/boekel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/steenbergen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/steenbergen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/vijfheerenlanden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/vijfheerenlanden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/bergen-op-zoom/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/bergen-op-zoom/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/deurne/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/deurne/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/moerdijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/moerdijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/waalre/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/waalre/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/son-en-breugel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/son-en-breugel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/halderberge/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/halderberge/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/mill-en-sint-hubert/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/mill-en-sint-hubert/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/zundert/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/zundert/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/cuijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/cuijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/grave/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/grave/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/veldhoven/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/veldhoven/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/landerd/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/landerd/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/someren/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/someren/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/cranendonck/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/cranendonck/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/heeze-leende/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/heeze-leende/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/woudrichem/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/woudrichem/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/best/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/best/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/boxtel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/boxtel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/drimmelen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/drimmelen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/sint-michielsgestel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/sint-michielsgestel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/asten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/asten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/tilburg/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/tilburg/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/roosendaal/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/roosendaal/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/oosterhout/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/oosterhout/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/nuenen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/nuenen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/maarheeze/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/maarheeze/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/bernheze/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/bernheze/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/gemert-bakel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/gemert-bakel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/oss/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/oss/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/etten-leur/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/etten-leur/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/sint-oedenrode/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/sint-oedenrode/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/meierijstad/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/meierijstad/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/waalwijk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/waalwijk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/reusel-de-mierden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/reusel-de-mierden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/loon-op-zand/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/loon-op-zand/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/oirschot/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/oirschot/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/breda/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/breda/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/eersel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/eersel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/weert/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/weert/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/eindhoven/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/eindhoven/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/noord-brabant/bladel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/noord-brabant/bladel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/aa-en-hunze/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/aa-en-hunze/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/de-wolden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/de-wolden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/westerveld/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/westerveld/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/tynaarlo/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/tynaarlo/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/assen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/assen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/emmen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/emmen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/borger-odoorn/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/borger-odoorn/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/midden-drenthe/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/midden-drenthe/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/noordenveld/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/noordenveld/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/coevorden/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/coevorden/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/meppel/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/meppel/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/drenthe/hoogeveen/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/drenthe/hoogeveen/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/flevoland/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/flevoland/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/flevoland/noordoostpolder/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/flevoland/noordoostpolder/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/flevoland/lelystad/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/flevoland/lelystad/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/flevoland/urk/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/flevoland/urk/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/flevoland/zeewolde/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/flevoland/zeewolde/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/flevoland/dronten/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/flevoland/dronten/"
+        },
+        {
+          "path": "nieuwbouw/nieuwbouw/flevoland/almere/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw/flevoland/almere/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-2-bouwfase/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-2-bouwfase/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-2-bouwfase/keuken-casco-opgeleverd/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-2-bouwfase/keuken-casco-opgeleverd/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-2-bouwfase/akoestiek-nieuwbouw/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-2-bouwfase/akoestiek-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-2-bouwfase/badkamer-koperskeuzes/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-2-bouwfase/badkamer-koperskeuzes/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-2-bouwfase/gietvloer-of-tegels-nieuwbouw/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-2-bouwfase/gietvloer-of-tegels-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-2-bouwfase/meerwerk-nieuwbouw/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-2-bouwfase/meerwerk-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-2-bouwfase/lichtplan-nieuwbouw/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-2-bouwfase/lichtplan-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-1-orientatie/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-1-orientatie/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-1-orientatie/koopakte-nieuwbouw-controleren/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-1-orientatie/koopakte-nieuwbouw-controleren/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-1-orientatie/bouwdepot-wat-is-het/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-1-orientatie/bouwdepot-wat-is-het/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-1-orientatie/inschrijven-nieuwbouw/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-1-orientatie/inschrijven-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-1-orientatie/hypotheek-nieuwbouw-tips/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-1-orientatie/hypotheek-nieuwbouw-tips/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-1-orientatie/nieuwbouw-loting-hoe-werkt-het/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-1-orientatie/nieuwbouw-loting-hoe-werkt-het/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-2-bouwfase/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-2-bouwfase/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-2-bouwfase/keuken-casco-opgeleverd/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-2-bouwfase/keuken-casco-opgeleverd/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-2-bouwfase/akoestiek-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-2-bouwfase/akoestiek-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-2-bouwfase/badkamer-koperskeuzes/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-2-bouwfase/badkamer-koperskeuzes/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-2-bouwfase/gietvloer-of-tegels-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-2-bouwfase/gietvloer-of-tegels-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-2-bouwfase/meerwerk-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-2-bouwfase/meerwerk-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-2-bouwfase/lichtplan-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-2-bouwfase/lichtplan-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-1-orientatie/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-1-orientatie/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-1-orientatie/koopakte-nieuwbouw-controleren/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-1-orientatie/koopakte-nieuwbouw-controleren/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-1-orientatie/bouwdepot-wat-is-het/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-1-orientatie/bouwdepot-wat-is-het/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-1-orientatie/inschrijven-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-1-orientatie/inschrijven-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-1-orientatie/hypotheek-nieuwbouw-tips/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-1-orientatie/hypotheek-nieuwbouw-tips/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-1-orientatie/nieuwbouw-loting-hoe-werkt-het/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-1-orientatie/nieuwbouw-loting-hoe-werkt-het/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-3-oplevering/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-3-oplevering/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-3-oplevering/nazorg-garantieperiode-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-3-oplevering/nazorg-garantieperiode-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-3-oplevering/5-procent-depot-regeling/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-3-oplevering/5-procent-depot-regeling/"
+        },
+        {
+          "path": "nieuwbouw-gids/nieuwbouw-gids/fase-3-oplevering/gebreken-melden-aannemer/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-gids/fase-3-oplevering/gebreken-melden-aannemer/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-3-oplevering/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-3-oplevering/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-3-oplevering/nazorg-garantieperiode-nieuwbouw/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-3-oplevering/nazorg-garantieperiode-nieuwbouw/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-3-oplevering/5-procent-depot-regeling/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-3-oplevering/5-procent-depot-regeling/"
+        },
+        {
+          "path": "nieuwbouw-gids/fase-3-oplevering/gebreken-melden-aannemer/index.html",
+          "canonical": "https://bylder.com/nieuwbouw-gids/fase-3-oplevering/gebreken-melden-aannemer/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding-nieuwbouw/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding/elektra-lichtplan-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding/elektra-lichtplan-nieuwbouw/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding/klimaat-vloerkoeling-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding/klimaat-vloerkoeling-nieuwbouw/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding/bouwkundig-meerwerk-indeling/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding/bouwkundig-meerwerk-indeling/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding/keuken-badkamer-casco-opleveren/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding/keuken-badkamer-casco-opleveren/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding/sluitingsdata-meerwerk-deadlines/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding/sluitingsdata-meerwerk-deadlines/"
+        },
+        {
+          "path": "bylder-seo-v5/kopersbegeleiding/onafhankelijke-kopersbegeleider-bouwkundig/index.html",
+          "canonical": "https://www.bylder.com/kopersbegeleiding/onafhankelijke-kopersbegeleider-bouwkundig/"
+        },
+        {
+          "path": "bylder-seo-v4/auping-korting-nieuwbouw-verhuizen/index.html",
+          "canonical": "https://www.bylder.com/auping-korting-nieuwbouw-verhuizen/"
+        },
+        {
+          "path": "bylder-seo-v4/hoe-werkt-bylder-quickscan/index.html",
+          "canonical": "https://www.bylder.com/hoe-werkt-bylder-quickscan/"
+        },
+        {
+          "path": "bylder-seo-v4/keuken-badkamer-offerte-check/index.html",
+          "canonical": "https://www.bylder.com/keuken-badkamer-offerte-check/"
+        },
+        {
+          "path": "bylder-seo-v4/gietvloer-pvc-vouchers-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/gietvloer-pvc-vouchers-nieuwbouw/"
+        },
+        {
+          "path": "bylder-seo-v4/kennisbank/kosten-besparen-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/kennisbank/kosten-besparen-nieuwbouw/"
+        },
+        {
+          "path": "bylder-seo-v4/kosten-gietvloer-stucwerk-analyseren/index.html",
+          "canonical": "https://www.bylder.com/kosten-gietvloer-stucwerk-analyseren/"
+        },
+        {
+          "path": "bylder-seo-v4/automatische-projectplanning-nieuwbouw/index.html",
+          "canonical": "https://www.bylder.com/automatische-projectplanning-nieuwbouw/"
+        },
+        {
+          "path": "bylder-seo-v4/online-budget-tracker-verbouwing/index.html",
+          "canonical": "https://www.bylder.com/online-budget-tracker-verbouwing/"
+        },
+        {
+          "path": "bylder-seo-v4/ai-offerte-check-aannemer/index.html",
+          "canonical": "https://www.bylder.com/ai-offerte-check-aannemer/"
+        },
+        {
+          "path": "bylder-seo-v4/maatwerk-meubels-tafels-korting/index.html",
+          "canonical": "https://www.bylder.com/maatwerk-meubels-tafels-korting/"
+        },
+        {
+          "path": "bylder-seo-v4/nieuwbouw-korting-meubels-vouchers/index.html",
+          "canonical": "https://www.bylder.com/nieuwbouw-korting-meubels-vouchers/"
+        },
+        {
+          "path": "bylder-seo-v4/offerte-analyseren-verduurzaming/index.html",
+          "canonical": "https://www.bylder.com/offerte-analyseren-verduurzaming/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-energieadvies-woning-verduurzamen/index.html",
+          "canonical": "https://www.bylder.com/ai-energieadvies-woning-verduurzamen/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-verhuisassistent-slimme-planner/index.html",
+          "canonical": "https://www.bylder.com/ai-verhuisassistent-slimme-planner/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-keuken-ontwerpen-badkamerplanner/index.html",
+          "canonical": "https://www.bylder.com/ai-keuken-ontwerpen-badkamerplanner/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-tuinontwerp-gratis-planner/index.html",
+          "canonical": "https://www.bylder.com/ai-tuinontwerp-gratis-planner/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-plattegrond-maken-3d/index.html",
+          "canonical": "https://www.bylder.com/ai-plattegrond-maken-3d/"
+        },
+        {
+          "path": "bylder-seo-v3/verbouwing-visualiseren-met-ai/index.html",
+          "canonical": "https://www.bylder.com/verbouwing-visualiseren-met-ai/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-verbouwingskosten-berekenen/index.html",
+          "canonical": "https://www.bylder.com/ai-verbouwingskosten-berekenen/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-interieurontwerp-room-planner/index.html",
+          "canonical": "https://www.bylder.com/ai-interieurontwerp-room-planner/"
+        },
+        {
+          "path": "bylder-seo-v3/ai-muurkleur-testen-kleuradvies/index.html",
+          "canonical": "https://www.bylder.com/ai-muurkleur-testen-kleuradvies/"
+        },
+        {
+          "path": "bylder-seo-v3/inboedel-volume-berekenen-ai/index.html",
+          "canonical": "https://www.bylder.com/inboedel-volume-berekenen-ai/"
+        },
+        {
+          "path": "bylder-seo-v3/droomhuis-ontwerpen-met-ai/index.html",
+          "canonical": "https://www.bylder.com/droomhuis-ontwerpen-met-ai/"
+        },
+        {
+          "path": "voucher/index.html",
+          "canonical": "https://www.bylder.com/vouchers/"
+        }
+      ]
+    },
+    "4_lang_attr": {
+      "pages_checked": 75861,
+      "violations": 0,
+      "examples": []
+    },
+    "5_jsonld": {
+      "blocks_checked": 173036,
+      "violations": 0,
+      "examples": []
+    },
+    "6_internal_links": {
+      "mode": "steekproef: homepage + index.html van elke top-level clustermap",
+      "pages_sampled": 86,
+      "links_checked": 4000,
+      "violations": 30,
+      "examples": [
+        {
+          "page": "index.html",
+          "href": "/renovatiekosten/badkamer/"
+        },
+        {
+          "page": "index.html",
+          "href": "/renovatiekosten/gietvloer/"
+        },
+        {
+          "page": "index.html",
+          "href": "/renovatiekosten/dakkapel/"
+        },
+        {
+          "page": "index.html",
+          "href": "/offerte-check/schilder/"
+        },
+        {
+          "page": "index.html",
+          "href": "/offerte-check/gietvloer/"
+        },
+        {
+          "page": "index.html",
+          "href": "/offerte-check/badkamer/"
+        },
+        {
+          "page": "badkamer-renoveren/index.html",
+          "href": "/privacybeleid/"
+        },
+        {
+          "page": "badkamer-renoveren/index.html",
+          "href": "/contact/"
+        },
+        {
+          "page": "bouwkundige-keuring/index.html",
+          "href": "/offerte-check/aannemer/"
+        },
+        {
+          "page": "interieur-woning/index.html",
+          "href": "/offerte-check/schilder/"
+        },
+        {
+          "page": "interieur-woning/index.html",
+          "href": "/offerte-check/gietvloer/"
+        },
+        {
+          "page": "interieur-woning/index.html",
+          "href": "/offerte-check/badkamer/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/schilder/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/gietvloer/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/badkamer/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/aannemer/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/elektricien/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/loodgieter/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/stukadoor/"
+        },
+        {
+          "page": "offerte-check/index.html",
+          "href": "/offerte-check/dakkapel/"
+        },
+        {
+          "page": "oplevering-nieuwbouw/index.html",
+          "href": "/contact/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/badkamer/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/keuken/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/gietvloer/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/schilderwerk/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/dakkapel/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/aanbouw/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/zonnepanelen/"
+        },
+        {
+          "page": "renovatiekosten/index.html",
+          "href": "/renovatiekosten/warmtepomp/"
+        },
+        {
+          "page": "tuin-aanleggen/index.html",
+          "href": "/contact/"
+        }
+      ]
+    }
+  },
+  "runtime_seconds": 4.1
+}
