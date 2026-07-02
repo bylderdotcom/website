@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LZYCRP1169');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{url}}">
+<meta name="author" content="Bylder Nederland B.V.">
+<meta name="robots" content="{{robots}}">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_description}}">
+<meta property="og:url" content="{{og_url}}">
+<meta property="og:type" content="{{og_type}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="{{twitter_card}}">
+<meta name="twitter:title" content="Producten kopen voor je woning — Bylder">
+<meta name="twitter:description" content="Vergelijk prijzen voor vloeren, tegels, sanitair, laadpalen en meer in 288 gemeenten.">
+{{ldjson}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{--cream:#F5F0E8;--cream-2:#EDE6D8;--bark:#1A1208;--bark-2:#3D2E1E;--bark-3:rgba(61,46,30,0.5);--moss:#3D5A3E;--moss-2:#4E7350;--white:#fff;--border:rgba(61,46,30,0.1)}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:var(--bark-2);line-height:1.65}
+/* ═══════════════════════════════════════════
+   BYLDER UNIVERSELE NAVIGATIE — v2.0
+   Gebruik op ALLE pagina's van bylder.com
+═══════════════════════════════════════════ */
+
+/* NAV BASIS */
+.glass-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(245,240,232,0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(61,46,30,0.08);
+  height: 64px;
+  display: flex; align-items: center;
+}
+.nav-inner {
+  width: 100%; max-width: 1280px; margin: 0 auto;
+  padding: 0 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px;
+}
+
+/* LOGO */
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; flex-shrink: 0;
+}
+.nav-logo-icon {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: #3D5A3E;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 800;
+  font-family: 'Space Mono', monospace;
+  color: #F5F0E8;
+}
+.nav-logo span {
+  font-weight: 800; font-size: 18px;
+  letter-spacing: -0.025em; color: #1A1208;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.nav-logo .nav-logo-dot { color: #3D5A3E; }
+
+/* LINKS */
+.nav-links {
+  display: flex; align-items: center; gap: 24px;
+}
+.nav-link {
+  font-size: 14px; font-weight: 400;
+  color: rgba(61,46,30,0.5);
+  text-decoration: none; padding: 0;
+  transition: color 0.15s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: none; border: none; cursor: pointer;
+  white-space: nowrap;
+}
+.nav-link:hover, .nav-link:focus {
+  color: #1A1208;
+  outline: none;
+}
+.nav-link.active { color: #3D5A3E; font-weight: 600; }
+
+/* DROPDOWN */
+.nav-dropdown { position: relative; }
+.nav-dropdown-btn { display: flex; align-items: center; gap: 4px; }
+.nav-arrow { font-size: 10px; transition: transform 0.2s; }
+.nav-dropdown:hover .nav-arrow,
+.nav-dropdown:focus-within .nav-arrow { transform: rotate(180deg); }
+
+.nav-dropdown-menu {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid rgba(61,46,30,0.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(61,46,30,0.12);
+  padding: 8px;
+  min-width: 260px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.15s, transform 0.15s;
+  transform: translateX(-50%) translateY(-4px);
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 10px;
+  text-decoration: none; color: #3D2E1E;
+  transition: background 0.12s;
+}
+.nav-dropdown-item:hover { background: #F5F0E8; }
+.nav-dropdown-item .ndi-icon { font-size: 20px; flex-shrink: 0; }
+.nav-dropdown-item strong {
+  display: block; font-size: 13px; font-weight: 700;
+  color: #1A1208; margin-bottom: 1px;
+}
+.nav-dropdown-item span {
+  display: block; font-size: 11px; color: rgba(61,46,30,0.5);
+}
+
+/* CTA GROEP */
+.nav-cta-group {
+  display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+}
+.nav-login {
+  font-size: 14px; font-weight: 500;
+  color: rgba(61,46,30,0.5); text-decoration: none;
+  padding: 8px 12px; border-radius: 8px;
+  transition: color 0.15s;
+}
+.nav-login:hover { color: #1A1208; }
+
+/* PRIMAIRE CTA KNOP */
+.btn-primary {
+  background: #3D5A3E; color: #F5F0E8;
+  padding: 10px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+  transition: all 0.2s; border: none; cursor: pointer; white-space: nowrap;
+}
+.btn-primary:hover {
+  background: #4E7350;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(61,90,62,0.25);
+}
+
+/* HAMBURGER */
+.mobile-menu-btn {
+  display: none; flex-direction: column; justify-content: center;
+  gap: 5px; background: none; border: none; cursor: pointer;
+  padding: 8px; border-radius: 8px; width: 40px; height: 40px;
+}
+.mobile-menu-btn span {
+  display: block; height: 2px; width: 22px;
+  background: #3D2E1E; border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+  display: none; position: fixed;
+  top: 64px; left: 0; right: 0;
+  background: #fff;
+  border-bottom: 1px solid rgba(61,46,30,0.1);
+  box-shadow: 0 8px 32px rgba(61,46,30,0.1);
+  z-index: 99; flex-direction: column; padding: 12px 5% 20px;
+  max-height: calc(100vh - 64px); overflow-y: auto;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  padding: 13px 4px; font-size: 15px; font-weight: 500;
+  color: #3D2E1E; text-decoration: none;
+  border-bottom: 1px solid rgba(61,46,30,0.06);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.mobile-nav a:last-child { border-bottom: none; }
+.mobile-nav a:hover { color: #3D5A3E; }
+.mobile-nav .mobile-login {
+  color: rgba(61,46,30,0.5); font-size: 14px;
+}
+.mobile-nav .mobile-cta {
+  margin-top: 8px; background: #3D5A3E; color: #F5F0E8 !important;
+  padding: 13px 20px !important; border-radius: 10px;
+  font-weight: 700 !important; text-align: center;
+  border-bottom: none !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .nav-inner { padding: 0 20px; }
+  .nav-links { display: none; }
+  .nav-login { display: none; }
+  .mobile-menu-btn { display: flex; }
+}
+@media (max-width: 480px) {
+  .nav-cta-group .btn-primary { display: none; }
+}
+
+.container{max-width:1100px;margin:0 auto;padding:0 5%}
+.section{padding:80px 0}
+.s-label{font-size:11px;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.12em;color:var(--moss);font-weight:700;margin-bottom:10px}
+.hero{padding:120px 0 72px;text-align:center}
+.hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--bark);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px}
+.hero h1 em{color:var(--moss);font-style:normal}
+.hero-sub{font-size:17px;color:var(--bark-3);max-width:560px;margin:0 auto 40px;line-height:1.65}
+.stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;padding:28px 0;border-top:1px solid var(--border)}
+.stat-val{font-size:2rem;font-weight:800;color:var(--bark);font-family:"Space Mono",monospace;letter-spacing:-0.03em;line-height:1}
+.stat-lbl{font-size:12px;color:var(--bark-3);margin-top:4px}
+.search-bar{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 28px;margin-bottom:40px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 4px 16px rgba(61,46,30,0.06)}
+.search-input{flex:1;min-width:200px;padding:11px 16px;border:1.5px solid rgba(61,46,30,0.12);border-radius:10px;font-size:15px;font-family:inherit;color:var(--bark-2);background:var(--cream);outline:none;transition:border-color 0.2s}
+.search-input:focus{border-color:var(--moss);background:#fff}
+.cats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.faq-list{max-width:720px;margin:32px auto 0}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:15px;font-weight:700;color:var(--bark);background:none;border:none;cursor:pointer;text-align:left;font-family:"Plus Jakarta Sans",sans-serif;gap:16px}
+.faq-q:hover{color:var(--moss)}
+.faq-icon{font-size:18px;flex-shrink:0;transition:transform 0.2s}
+.faq-a{display:none;padding:0 0 18px;font-size:14px;color:var(--bark-2);line-height:1.7}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+.cta-section{background:var(--bark);padding:80px 0;text-align:center}
+.cta-section h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:var(--cream);letter-spacing:-0.03em;margin-bottom:14px}
+.cta-section p{font-size:16px;color:rgba(245,240,232,0.55);max-width:480px;margin:0 auto 32px;line-height:1.65}
+.btn-primary{background:var(--moss);color:var(--cream);padding:14px 32px;border-radius:12px;font-size:16px;font-weight:800;font-family:"Plus Jakarta Sans",sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--moss-2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(61,90,62,0.3)}
+footer{background:var(--bark);border-top:1px solid rgba(245,240,232,0.06);padding:32px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(245,240,232,0.35)}
+footer a{color:rgba(245,240,232,0.4);text-decoration:none}
+footer a:hover{color:rgba(245,240,232,0.8)}
+@media(max-width:1024px){.cats-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){.cats-grid{grid-template-columns:repeat(2,1fr)}.stats{gap:24px}}
+@media(max-width:480px){.cats-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>{{main}}{{footer}}
+
+<script>
+function toggleFaq(btn){btn.parentElement.classList.toggle("open")}
+function filterCats(q){
+  document.querySelectorAll('.cats-grid a').forEach(c=>{
+    c.style.display=c.textContent.toLowerCase().includes(q.toLowerCase())?'':'none'
+  })
+}
+function zoekProduct(){
+  const cat=document.getElementById('catsGrid').querySelector('a:not([style*="none"])');
+  const stad=document.getElementById('stadInput').value.trim();
+  if(cat&&stad){
+    const catSlug=cat.href.split('/kopen/')[1].replace('/','');
+    const stadSlug=stad.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'');
+    window.location.href='/kopen/'+catSlug+'/'+stadSlug+'/';
+  }
+}
+</script>
+<script src="/auping-popup.js"></script>
+</body>
+</html>

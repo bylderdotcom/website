@@ -39,7 +39,7 @@ CLUSTERS = {
     for name in (
         "bouwvergunning", "gietvloer", "aannemer", "elektricien", "offerte-check",
         "aannemer-matching", "badkamer", "dakkapel", "schilder", "loodgieter",
-        "stukadoor", "renovatiekosten",
+        "stukadoor", "renovatiekosten", "kopen",
     )
 }
 
@@ -51,6 +51,19 @@ VAKSTAD_CLUSTERS = {
     # Stad geanchord op het map-pin-icoon: de h1 bevat een dubbele "kosten"
     # (bron-bug) waardoor een h1-patroon de stad niet betrouwbaar vangt.
     "renovatiekosten": {"h1_city": r'ph-map-pin"></i> ([^<]+)<'},
+    # kopen = subcategorie×stad: slug heeft 3 segmenten (vloeren/tapijt/goes).
+    "kopen": {"h1_city": r" in (.*?) —", "depth": 3},
+}
+
+# Per-cluster waarde-slots binnen de footer (vóór variant-groepering gemaskeerd);
+# waarden komen als footer_*-velden in pages.json en worden bij render teruggezet.
+FOOTER_SLOTS = {
+    "kopen": [
+        (r'<a href="/kopen/([a-z0-9-]+/[a-z0-9-]+)/">Alle steden voor ', "{{footer_sub_slug}}", "footer_sub_slug"),
+        (r'">Alle steden voor ([^<]+)</a>', "{{footer_sub_label}}", "footer_sub_label"),
+        (r'<a href="/kopen/([a-z0-9-]+)/">[^<]+</a> ·\s*<a href="/kopen/">', "{{footer_cat_slug}}", "footer_cat_slug"),
+        (r'<a href="/kopen/\{\{footer_cat_slug\}\}/">([^<]+)</a>', "{{footer_cat_label}}", "footer_cat_label"),
+    ],
 }
 
 PROVINCES = {
@@ -76,7 +89,7 @@ class ParseError(Exception):
 # ---------------------------------------------------------------------------
 # Parsen: waarde-spans lokaliseren. Alles wat we NIET benoemen blijft skelet.
 # ---------------------------------------------------------------------------
-def parse_page(html: str, rel_path: str) -> dict:
+def parse_page(html: str, rel_path: str, cluster: str = "") -> dict:
     if "{{" in html:
         raise ParseError(f"{rel_path}: bevat letterlijke '{{{{' — placeholder-conflict")
 
@@ -89,11 +102,13 @@ def parse_page(html: str, rel_path: str) -> dict:
             if required:
                 raise ParseError(f"{rel_path}: niet gevonden: {pattern[:60]}")
             return None
-        if len(matches) > 1:
-            raise ParseError(f"{rel_path}: meerdere matches voor {pattern[:60]}")
-        m = matches[0]
-        spans.append((m.start(1), m.end(1), placeholder))
-        return m.group(1)
+        # Meerdere matches mag alleen bij identieke waarden (bv. dubbele robots-tag
+        # in de bron) — elk voorkomen wordt dezelfde placeholder.
+        if len({m.group(1) for m in matches}) > 1:
+            raise ParseError(f"{rel_path}: meerdere ONGELIJKE matches voor {pattern[:60]}")
+        for m in matches:
+            spans.append((m.start(1), m.end(1), placeholder))
+        return matches[0].group(1)
 
     values["title"] = span(r"<title>(.*?)</title>", "{{title}}", flags=re.S)
     values["description"] = span(r'<meta name="description" content="(.*?)"', "{{description}}")
@@ -105,15 +120,15 @@ def parse_page(html: str, rel_path: str) -> dict:
     for pattern, placeholder, key in [
         (r'<meta property="og:title" content="(.*?)"', "{{og_title}}", "og_title"),
         (r'<meta property="og:description" content="(.*?)"', "{{og_description}}", "og_description"),
-        (r'<meta property="og:url" content="(.*?)"', "{{url}}", "og_url"),
+        (r'<meta property="og:url" content="(.*?)"', "{{og_url}}", "og_url"),
         (r'<meta property="og:type" content="(.*?)"', "{{og_type}}", "og_type"),
         (r'<meta name="robots" content="(.*?)"', "{{robots}}", "robots"),
         (r'<meta property="og:image" content="(.*?)"', "{{og_image}}", "og_image"),
         (r'<meta name="twitter:card" content="(.*?)"', "{{twitter_card}}", "twitter_card"),
     ]:
         values[key] = span(pattern, placeholder, required=key == "robots")
-    if values.get("og_url") is not None and values["og_url"] != canonical:
-        raise ParseError(f"{rel_path}: og:url wijkt af van canonical")
+    # og:url wijkt soms af van de canonical (bron-bug, bv. kopen-subcategorieën
+    # die naar de bovenliggende categorie wijzen) — dan blijft het een dataveld.
 
     # JSON-LD: elk blok is data; de regio (incl. scheidingstekens) wordt {{ldjson}}.
     ld = list(re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S))
@@ -138,7 +153,10 @@ def parse_page(html: str, rel_path: str) -> dict:
     spans.append((main_start, footer.start(), "{{main}}"))
     values["_main"] = html[main_start: footer.start()]
     spans.append((footer.start(), footer.end(), "{{footer}}"))
-    values["_footer"] = footer.group(0)
+    footer_blob = footer.group(0)
+    for pattern, placeholder, key in FOOTER_SLOTS.get(cluster, []):
+        footer_blob = mask(footer_blob, pattern, placeholder, key, values, rel_path, required=False)
+    values["_footer"] = footer_blob
 
     # Skelet: waarde-spans vervangen door placeholders (van achter naar voren).
     for a, b, _ in spans:
@@ -166,6 +184,7 @@ def render_page(page: dict, template: str, fragments: dict, content: str) -> str
         "{{url}}": SITE + page["path"],
         "{{og_title}}": page.get("og_title") or page["title"],
         "{{og_description}}": page.get("og_description") or page["description"],
+        "{{og_url}}": page.get("og_url") or (SITE + page["path"]),
         "{{og_type}}": page.get("og_type") or "",
         "{{robots}}": page["robots"],
         "{{og_image}}": page.get("og_image") or "",
@@ -179,6 +198,10 @@ def render_page(page: dict, template: str, fragments: dict, content: str) -> str
     out = template
     for key, val in subs.items():
         out = out.replace(key, val)
+    # Footer-slots (FOOTER_SLOTS): waarden staan als footer_*-velden op de pagina.
+    for key, val in page.items():
+        if key.startswith("footer_") and isinstance(val, str) and key != "footer":
+            out = out.replace("{{" + key + "}}", val)
     return out
 
 
@@ -427,7 +450,7 @@ def parse_vakstad_fragment(html: str, rel: str, page_slug: str, h1_city: str):
     if not m:
         raise ParseError(f"{rel}: stadsnaam niet in h1 gevonden ({h1_city})")
     city = m.group(1)
-    city_slug = page_slug.split("/")[1]
+    city_slug = page_slug.rsplit("/", 1)[1]
     entry = {"city": city, "city_slug": city_slug}
 
     body = html
@@ -495,9 +518,9 @@ def extract_content(cluster: str):
         frag = ddir / "content" / f"{page['slug'].replace('/', '__')}.html"
         if page.get("content_kind") or not frag.exists():
             continue
-        if vakstad_cfg and page["slug"].count("/") == 1:
+        if vakstad_cfg and page["slug"].count("/") == vakstad_cfg.get("depth", 2) - 1:
             body, entry = parse_vakstad_fragment(frag.read_text(), page["file"], page["slug"], vakstad_cfg["h1_city"])
-            vak = page["slug"].split("/")[0]
+            vak = page["slug"].rsplit("/", 1)[0].replace("/", "__")
             vakstad_bodies.setdefault(vak, {})[page["file"]] = {"_skeleton": body}
             vaksteden[page["slug"]] = entry
             vakstad_pages.append((page, frag, vak))
@@ -628,7 +651,7 @@ def name_variants(parsed: dict, key: str, label: str):
 # extract — bootstrap template/fragments/data uit de bestaande HTML.
 # ---------------------------------------------------------------------------
 def extract(cluster: str):
-    parsed = {rel: parse_page((ROOT / rel).read_text(), rel) for rel in CLUSTERS[cluster]}
+    parsed = {rel: parse_page((ROOT / rel).read_text(), rel, cluster) for rel in CLUSTERS[cluster]}
 
     tdir, ddir = tpl_dir(cluster), data_dir(cluster)
     tdir.mkdir(parents=True, exist_ok=True)
@@ -681,13 +704,18 @@ def extract(cluster: str):
             "ldjson": p["ldjson"],
             "ldjson_sep": p["ldjson_sep"],
         }
-        for opt in ("og_title", "og_description", "og_image", "twitter_card"):
+        for opt in ("og_title", "og_description", "og_url", "og_image", "twitter_card"):
             if p.get(opt) is not None and p[opt] != entry.get(opt.replace("og_title", "title").replace("og_description", "description")):
                 if opt == "og_title" and p[opt] == p["title"]:
                     continue
                 if opt == "og_description" and p[opt] == p["description"]:
                     continue
+                if opt == "og_url" and p[opt] == SITE + p["path"]:
+                    continue
                 entry[opt] = p[opt]
+        for key, val in p.items():
+            if key.startswith("footer_"):
+                entry[key] = val
         pages.append(entry)
     (ddir / "pages.json").write_text(json.dumps(pages, ensure_ascii=False, indent=1) + "\n")
     print(
