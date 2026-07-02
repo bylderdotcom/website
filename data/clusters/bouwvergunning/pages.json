@@ -1,0 +1,476 @@
+[
+ {
+  "slug": "aanbouw",
+  "file": "bouwvergunning/aanbouw/index.html",
+  "path": "/bouwvergunning/aanbouw/",
+  "title": "Aanbouw: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Aanbouw (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Hoe groot mag een aanbouw vergunningvrij zijn?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat hangt af van je perceelgrootte en de landelijke voorwaarden voor het achtererfgebied. Doe de vergunningcheck om je exacte ruimte te bepalen.\"}}, {\"@type\": \"Question\", \"name\": \"Telt een aanbouw mee voor de woningwaarde?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, extra woonoppervlak verhoogt doorgaans de waarde — mits netjes en (indien nodig) vergund uitgevoerd.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Aanbouw\", \"item\": \"https://www.bylder.com/bouwvergunning/aanbouw/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Aanbouw: vergunning nodig?\", \"description\": \"Aanbouw (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "bestemmingsplan-omgevingsplan",
+  "file": "bouwvergunning/bestemmingsplan-omgevingsplan/index.html",
+  "path": "/bouwvergunning/bestemmingsplan-omgevingsplan/",
+  "title": "Bestemmingsplan &amp; omgevingsplan — Wat mag er op jouw locatie | Bylder.com",
+  "description": "Wat je op een perceel mag bouwen, staat in het omgevingsplan (voorheen het bestemmingsplan). Het bepaalt functies, bouwhoogtes en grenzen.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Hoe vind ik wat mag op mijn adres?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Bekijk het omgevingsplan via het Omgevingsloket of vraag het op bij je gemeente.\"}}, {\"@type\": \"Question\", \"name\": \"Mijn plan past niet in het omgevingsplan — kan het toch?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Soms, via een vergunning om af te wijken. De gemeente weegt dan de belangen af; vooroverleg is aan te raden.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Bestemmingsplan & omgevingsplan\", \"item\": \"https://www.bylder.com/bouwvergunning/bestemmingsplan-omgevingsplan/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Bestemmingsplan & omgevingsplan\", \"description\": \"Wat je op een perceel mag bouwen, staat in het omgevingsplan (voorheen het bestemmingsplan). Het bepaalt functies, bouwhoogtes en grenzen.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "bezwaar",
+  "file": "bouwvergunning/bezwaar/index.html",
+  "path": "/bouwvergunning/bezwaar/",
+  "title": "Bezwaar maken tegen een vergunning — Jij of je buren | Bylder.com",
+  "description": "Belanghebbenden — zoals omwonenden — kunnen bezwaar maken tegen een verleende omgevingsvergunning. Andersom kun jij bezwaar maken tegen een vergunning van ",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Kan mijn buurman mijn verbouwing tegenhouden?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Alleen bij een vergunningplichtig plan, via bezwaar binnen de termijn. Bij vergunningvrij bouwen kan dat niet via de vergunning.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe voorkom ik bezwaar?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Informeer je buren vroeg en betrek ze bij je plannen; dat voorkomt veel weerstand.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Bezwaar maken tegen een vergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/bezwaar/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Bezwaar maken tegen een vergunning\", \"description\": \"Belanghebbenden — zoals omwonenden — kunnen bezwaar maken tegen een verleende omgevingsvergunning. Andersom kun jij bezwaar maken tegen een vergunning van \", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "carport",
+  "file": "bouwvergunning/carport/index.html",
+  "path": "/bouwvergunning/carport/",
+  "title": "Carport: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Carport (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Mag een carport aan de voorkant zonder vergunning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Meestal niet — de voorzijde valt buiten het achtererfgebied, dus daar is doorgaans een vergunning nodig.\"}}, {\"@type\": \"Question\", \"name\": \"Is een carport hetzelfde als een overkapping?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Een carport is een overkapping specifiek voor een auto. De vergunningregels zijn vergelijkbaar met die van een overkapping.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Carport\", \"item\": \"https://www.bylder.com/bouwvergunning/carport/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Carport: vergunning nodig?\", \"description\": \"Carport (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "check",
+  "file": "bouwvergunning/check/index.html",
+  "path": "/bouwvergunning/check/",
+  "title": "Vergunningcheck: heb ik een bouwvergunning nodig? | Bylder.com",
+  "description": "Doe de gratis vergunning-indicatie van Bylder: beantwoord een paar vragen en zie of je plan waarschijnlijk vergunningvrij of vergunningplichtig is. Indicatief — bevestig in het Omgevingsloket.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": null,
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is deze check juridisch bindend?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Het is een snelle indicatie op basis van je antwoorden. De officiële, bindende check doe je in het Omgevingsloket, dat ook het omgevingsplan van je gemeente meeneemt.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kan de uitkomst zijn?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Waarschijnlijk vergunningvrij, waarschijnlijk vergunningplichtig, of een twijfelgeval. In alle gevallen verwijzen we je naar de officiële check ter bevestiging.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Vergunningcheck\", \"item\": \"https://www.bylder.com/bouwvergunning/check/\"}]}"
+  ]
+ },
+ {
+  "slug": "dakkapel",
+  "file": "bouwvergunning/dakkapel/index.html",
+  "path": "/bouwvergunning/dakkapel/",
+  "title": "Dakkapel: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Dakkapel (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Mag een dakkapel aan de voorkant zonder vergunning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Meestal niet. Aan de voorzijde is een dakkapel vrijwel altijd vergunningplichtig; aan de achterkant kan het vaak vergunningvrij, onder voorwaarden.\"}}, {\"@type\": \"Question\", \"name\": \"Mag mijn buurman bezwaar maken tegen mijn dakkapel?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Bij een vergunningvrije dakkapel niet via de vergunning. Is er wél een vergunning nodig, dan kunnen belanghebbenden bezwaar maken nadat de vergunning is verleend.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Dakkapel\", \"item\": \"https://www.bylder.com/bouwvergunning/dakkapel/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Dakkapel: vergunning nodig?\", \"description\": \"Dakkapel (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "dakopbouw",
+  "file": "bouwvergunning/dakopbouw/index.html",
+  "path": "/bouwvergunning/dakopbouw/",
+  "title": "Dakopbouw: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Dakopbouw (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is een dakopbouw ooit vergunningvrij?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In de praktijk zelden. Omdat de bouwhoogte en het aanzicht veranderen, is bijna altijd een omgevingsvergunning vereist.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik mijn buren informeren?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Verstandig wel. Bij een vergunning kunnen omwonenden bezwaar maken; vroeg overleg voorkomt verrassingen.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Dakopbouw\", \"item\": \"https://www.bylder.com/bouwvergunning/dakopbouw/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Dakopbouw: vergunning nodig?\", \"description\": \"Dakopbouw (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "dakraam",
+  "file": "bouwvergunning/dakraam/index.html",
+  "path": "/bouwvergunning/dakraam/",
+  "title": "Dakraam: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Dakraam (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is een dakraam hetzelfde als een dakkapel?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Een dakraam ligt vlak in het dakvlak; een dakkapel steekt uit het dak. Een dakraam is daardoor vaker vergunningvrij.\"}}, {\"@type\": \"Question\", \"name\": \"Mag een dakraam aan de voorkant?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vaak wel, mits het netjes in het dakvlak blijft. Bij een monument of beschermd gezicht eerst checken.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Dakraam\", \"item\": \"https://www.bylder.com/bouwvergunning/dakraam/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Dakraam: vergunning nodig?\", \"description\": \"Dakraam (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "doorlooptijd",
+  "file": "bouwvergunning/doorlooptijd/index.html",
+  "path": "/bouwvergunning/doorlooptijd/",
+  "title": "Hoe lang duurt een vergunning — Doorlooptijd en procedures | Bylder.com",
+  "description": "De meeste aanvragen lopen via de reguliere procedure met een beslistermijn van 8 weken. Complexe of afwijkende plannen kunnen de uitgebreide procedure van ",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wat als de gemeente niet op tijd beslist?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onder de Omgevingswet is er niet langer automatisch een vergunning van rechtswege; neem bij overschrijding contact op met je gemeente.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik de doorlooptijd verkorten?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Met een complete aanvraag en vooroverleg voorkom je aanvullende vragen en vertraging.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Hoe lang duurt een vergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/doorlooptijd/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Hoe lang duurt een vergunning\", \"description\": \"De meeste aanvragen lopen via de reguliere procedure met een beslistermijn van 8 weken. Complexe of afwijkende plannen kunnen de uitgebreide procedure van \", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "garage",
+  "file": "bouwvergunning/garage/index.html",
+  "path": "/bouwvergunning/garage/",
+  "title": "Garage: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Garage (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Heb ik een vergunning nodig voor een inrit?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het aanleggen of verbreden van een inrit/uitrit vraagt meestal toestemming van de gemeente, los van de garage zelf.\"}}, {\"@type\": \"Question\", \"name\": \"Mag ik mijn garage ombouwen tot kamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Inwendig verbouwen is vaak vergunningvrij, maar het wijzigen van de gevel (bijv. de garagedeur vervangen door een raam) kan vergunningplichtig zijn.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Garage\", \"item\": \"https://www.bylder.com/bouwvergunning/garage/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Garage: vergunning nodig?\", \"description\": \"Garage (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "gevelwijziging",
+  "file": "bouwvergunning/gevelwijziging/index.html",
+  "path": "/bouwvergunning/gevelwijziging/",
+  "title": "Gevel wijzigen: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Gevel wijzigen (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Mag ik een raam vergroten zonder vergunning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Aan de achterkant soms; aan de voorgevel of bij een monument meestal niet. Doe de vergunningcheck.\"}}, {\"@type\": \"Question\", \"name\": \"Geldt dit ook voor een nieuwe voordeur?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vervangen in dezelfde opening is vaak vrij; verplaatsen of het aanzicht wijzigen kan vergunningplichtig zijn.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Gevel wijzigen\", \"item\": \"https://www.bylder.com/bouwvergunning/gevelwijziging/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Gevel wijzigen: vergunning nodig?\", \"description\": \"Gevel wijzigen (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "index",
+  "file": "bouwvergunning/index.html",
+  "path": "/bouwvergunning/",
+  "title": "Bouwvergunning nodig? Compleet overzicht per project | Bylder.com",
+  "description": "Heb je een bouwvergunning (omgevingsvergunning) nodig voor je dakkapel, aanbouw, schuur of zonnepanelen? Per project uitgelegd wat vergunningvrij mag — plus aanvragen, kosten en doorlooptijd.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": "https://www.bylder.com/og-image.jpg?v=2",
+  "twitter_card": "summary_large_image",
+  "preconnect_gstatic": true,
+  "footer": "hub",
+  "aside": null,
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Heb ik een bouwvergunning nodig?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat hangt af van wat en waar je (ver)bouwt. Veel kleinere ingrepen in het achtererfgebied zijn vergunningvrij, maar er gelden voorwaarden. Doe de vergunningcheck in het Omgevingsloket voor jouw situatie.\"}}, {\"@type\": \"Question\", \"name\": \"Wat is een omgevingsvergunning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Sinds de Omgevingswet (2024) is dit de vergunning voor o.a. bouwen, verbouwen en slopen. Je vraagt 'm aan via het Omgevingsloket.\"}}, {\"@type\": \"Question\", \"name\": \"Wat betekent vergunningvrij bouwen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat je voor je plan geen vergunning hoeft aan te vragen, mits het binnen de landelijke voorwaarden valt. Let op: vergunningvrij is niet regelvrij — bouwtechnische eisen blijven gelden.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een vergunning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Je betaalt leges aan de gemeente; die verschillen per gemeente en hangen vaak samen met de bouwsom. Bij vergunningvrij bouwen vervallen die kosten.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Bouwvergunning nodig? Compleet overzicht\", \"datePublished\": \"2025-01-01\", \"dateModified\": \"2026-07-02\", \"description\": \"Heb je een bouwvergunning (omgevingsvergunning) nodig voor je dakkapel, aanbouw, schuur of zonnepanelen? Per project uitgelegd wat vergunningvrij mag — plus aanvragen, kosten en doorlooptijd.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "kosten",
+  "file": "bouwvergunning/kosten/index.html",
+  "path": "/bouwvergunning/kosten/",
+  "title": "Wat kost een omgevingsvergunning — Leges en bijkomende kosten | Bylder.com",
+  "description": "Voor het behandelen van je aanvraag betaal je leges aan de gemeente. De hoogte verschilt per gemeente en hangt vaak samen met de bouwkosten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Hoeveel kost een vergunning gemiddeld?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat loopt sterk uiteen omdat leges per gemeente verschillen en meebewegen met de bouwsom. Vraag het tarief op bij je gemeente.\"}}, {\"@type\": \"Question\", \"name\": \"Krijg ik leges terug bij weigering?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Soms gedeeltelijk. Gemeenten hanteren hiervoor eigen regels in hun legesverordening.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Wat kost een omgevingsvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/kosten/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Wat kost een omgevingsvergunning\", \"description\": \"Voor het behandelen van je aanvraag betaal je leges aan de gemeente. De hoogte verschilt per gemeente en hangt vaak samen met de bouwkosten.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "kozijnen",
+  "file": "bouwvergunning/kozijnen/index.html",
+  "path": "/bouwvergunning/kozijnen/",
+  "title": "Kozijnen vervangen: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Kozijnen vervangen (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Mag ik kunststof kozijnen plaatsen in plaats van hout?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In een gewone woning vaak wel als het aanzicht vergelijkbaar blijft. Bij een monument of beschermd gezicht meestal niet zonder vergunning.\"}}, {\"@type\": \"Question\", \"name\": \"Krijg ik subsidie voor isolerende kozijnen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Voor isolatieglas zijn er regelmatig landelijke of gemeentelijke subsidies. Combineer dit met een goede offerte-check.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Kozijnen vervangen\", \"item\": \"https://www.bylder.com/bouwvergunning/kozijnen/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Kozijnen vervangen: vergunning nodig?\", \"description\": \"Kozijnen vervangen (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "mantelzorgwoning",
+  "file": "bouwvergunning/mantelzorgwoning/index.html",
+  "path": "/bouwvergunning/mantelzorgwoning/",
+  "title": "Mantelzorgwoning: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Mantelzorgwoning (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Heb ik een vergunning nodig voor een mantelzorgwoning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onder voorwaarden is het vergunningvrij, mits er een mantelzorgbehoefte is en je binnen de grenzen voor bijbehorende bouwwerken blijft.\"}}, {\"@type\": \"Question\", \"name\": \"Wat gebeurt er als de zorg stopt?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"De zelfstandige woonfunctie moet dan worden beëindigd; anders kan alsnog een vergunning nodig zijn. Leg dit vooraf goed vast.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Mantelzorgwoning\", \"item\": \"https://www.bylder.com/bouwvergunning/mantelzorgwoning/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Mantelzorgwoning: vergunning nodig?\", \"description\": \"Mantelzorgwoning (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "omgevingsvergunning-aanvragen",
+  "file": "bouwvergunning/omgevingsvergunning-aanvragen/index.html",
+  "path": "/bouwvergunning/omgevingsvergunning-aanvragen/",
+  "title": "Omgevingsvergunning aanvragen — Stap voor stap | Bylder.com",
+  "description": "Heb je een vergunning nodig, dan vraag je sinds 2024 een omgevingsvergunning aan via het Omgevingsloket. Zo pak je het aan.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Waar vraag ik een omgevingsvergunning aan?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Via het landelijke Omgevingsloket (omgevingsloket.nl), met DigiD of eHerkenning.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik eerst overleggen met de gemeente?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, veel gemeenten bieden een vooroverleg of conceptaanvraag aan om je plan af te stemmen.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Omgevingsvergunning aanvragen\", \"item\": \"https://www.bylder.com/bouwvergunning/omgevingsvergunning-aanvragen/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"HowTo\", \"name\": \"Omgevingsvergunning aanvragen\", \"step\": [{\"@type\": \"HowToStep\", \"name\": \"Vergunningcheck\", \"text\": \"Check in het Omgevingsloket of je een vergunning nodig hebt.\"}, {\"@type\": \"HowToStep\", \"name\": \"Aanvraag voorbereiden\", \"text\": \"Verzamel tekeningen, situatieschets en eventuele berekeningen.\"}, {\"@type\": \"HowToStep\", \"name\": \"Indienen\", \"text\": \"Dien de aanvraag in via het Omgevingsloket met DigiD/eHerkenning.\"}, {\"@type\": \"HowToStep\", \"name\": \"Besluit\", \"text\": \"De gemeente neemt binnen de wettelijke termijn een besluit.\"}]}"
+  ]
+ },
+ {
+  "slug": "omgevingswet",
+  "file": "bouwvergunning/omgevingswet/index.html",
+  "path": "/bouwvergunning/omgevingswet/",
+  "title": "De Omgevingswet — Wat veranderde in 2024 | Bylder.com",
+  "description": "Sinds 1 januari 2024 geldt de Omgevingswet. Die bundelt tientallen wetten over de leefomgeving en verving o.a. de Wabo en het bestemmingsplan.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Bestaat het bestemmingsplan nog?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Bestaande bestemmingsplannen gaan op in het omgevingsplan (overgangsfase). De regels blijven leidend voor wat mag op jouw locatie.\"}}, {\"@type\": \"Question\", \"name\": \"Is vergunningvrij bouwen veranderd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"De systematiek is grotendeels voortgezet onder de Omgevingswet, met nieuwe terminologie. Doe altijd de actuele vergunningcheck.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"De Omgevingswet\", \"item\": \"https://www.bylder.com/bouwvergunning/omgevingswet/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"De Omgevingswet\", \"description\": \"Sinds 1 januari 2024 geldt de Omgevingswet. Die bundelt tientallen wetten over de leefomgeving en verving o.a. de Wabo en het bestemmingsplan.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "overkapping",
+  "file": "bouwvergunning/overkapping/index.html",
+  "path": "/bouwvergunning/overkapping/",
+  "title": "Overkapping of veranda: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Overkapping of veranda (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt een overkapping een serre?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Zodra je hem (deels) dichtmaakt met wanden/glas ontstaat een serre, waarvoor andere — en vaker vergunningplichtige — regels gelden.\"}}, {\"@type\": \"Question\", \"name\": \"Mag een overkapping tegen de schutting van de buren?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op de erfgrens gelden afstands- en hoogtevoorwaarden. Overleg met je buren en check je situatie.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Overkapping of veranda\", \"item\": \"https://www.bylder.com/bouwvergunning/overkapping/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Overkapping of veranda: vergunning nodig?\", \"description\": \"Overkapping of veranda (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "schutting",
+  "file": "bouwvergunning/schutting/index.html",
+  "path": "/bouwvergunning/schutting/",
+  "title": "Schutting of erfafscheiding: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Schutting of erfafscheiding (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Hoe hoog mag een schutting zijn zonder vergunning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Achter de voorgevel vaak tot 2 meter, aan de straatzijde meestal tot 1 meter — onder voorwaarden. Check je situatie.\"}}, {\"@type\": \"Question\", \"name\": \"Mag een schutting op de erfgrens?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat mag, maar via het burenrecht heeft je buur er ook mee te maken. Overleg voorkomt conflicten.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Schutting of erfafscheiding\", \"item\": \"https://www.bylder.com/bouwvergunning/schutting/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Schutting of erfafscheiding: vergunning nodig?\", \"description\": \"Schutting of erfafscheiding (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "schuur-tuinhuis",
+  "file": "bouwvergunning/schuur-tuinhuis/index.html",
+  "path": "/bouwvergunning/schuur-tuinhuis/",
+  "title": "Schuur of tuinhuis: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Schuur of tuinhuis (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Hoeveel m² schuur mag ik vergunningvrij bouwen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat hangt af van de grootte van je achtererf. Er geldt een staffel; de vergunningcheck rekent het voor jouw perceel uit.\"}}, {\"@type\": \"Question\", \"name\": \"Mag ik in een tuinhuis (laten) wonen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee, een vergunningvrij bijgebouw is niet bedoeld als zelfstandige woonruimte. Bewoning vraagt aparte toestemming.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Schuur of tuinhuis\", \"item\": \"https://www.bylder.com/bouwvergunning/schuur-tuinhuis/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Schuur of tuinhuis: vergunning nodig?\", \"description\": \"Schuur of tuinhuis (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "uitbouw",
+  "file": "bouwvergunning/uitbouw/index.html",
+  "path": "/bouwvergunning/uitbouw/",
+  "title": "Uitbouw: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Uitbouw (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wat is het verschil tussen aanbouw en uitbouw?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In de praktijk worden ze door elkaar gebruikt. Een uitbouw vergroot meestal een bestaande ruimte; een aanbouw voegt een nieuwe ruimte toe. De vergunningregels zijn vergelijkbaar.\"}}, {\"@type\": \"Question\", \"name\": \"Heb ik een constructieberekening nodig?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vaak wel, ook bij vergunningvrij bouwen, omdat je aan de bouwtechnische eisen (Bbl) moet voldoen. Je aannemer of constructeur regelt dit.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Uitbouw\", \"item\": \"https://www.bylder.com/bouwvergunning/uitbouw/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Uitbouw: vergunning nodig?\", \"description\": \"Uitbouw (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "vergunningcheck",
+  "file": "bouwvergunning/vergunningcheck/index.html",
+  "path": "/bouwvergunning/vergunningcheck/",
+  "title": "Vergunningcheck doen — Heb ik een vergunning nodig? | Bylder.com",
+  "description": "Met de vergunningcheck in het Omgevingsloket bepaal je in een paar minuten of je plan vergunningvrij of vergunningplichtig is — voor jouw exacte adres.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is de vergunningcheck bindend?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het geeft een sterke indicatie op basis van je antwoorden. Twijfel je? Stem af met je gemeente of vraag een conceptaanvraag aan.\"}}, {\"@type\": \"Question\", \"name\": \"Wat heb ik nodig voor de check?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Je adres en een duidelijk idee van wat je wilt doen. Voor de daadwerkelijke aanvraag heb je meer gegevens nodig.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Vergunningcheck doen\", \"item\": \"https://www.bylder.com/bouwvergunning/vergunningcheck/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"HowTo\", \"name\": \"Vergunningcheck doen\", \"step\": [{\"@type\": \"HowToStep\", \"name\": \"Ga naar het Omgevingsloket\", \"text\": \"Open de vergunningcheck op omgevingsloket.nl.\"}, {\"@type\": \"HowToStep\", \"name\": \"Vul je adres en plan in\", \"text\": \"Beschrijf wat je wilt (ver)bouwen.\"}, {\"@type\": \"HowToStep\", \"name\": \"Beantwoord de vragen\", \"text\": \"De check leidt je langs de relevante voorwaarden.\"}, {\"@type\": \"HowToStep\", \"name\": \"Bekijk de uitkomst\", \"text\": \"Je ziet of het vergunningvrij is of dat je moet aanvragen.\"}]}"
+  ]
+ },
+ {
+  "slug": "vergunningvrij-bouwen",
+  "file": "bouwvergunning/vergunningvrij-bouwen/index.html",
+  "path": "/bouwvergunning/vergunningvrij-bouwen/",
+  "title": "Vergunningvrij bouwen — Wat mag zonder vergunning | Bylder.com",
+  "description": "Veel kleinere (ver)bouwingen mogen zonder omgevingsvergunning, mits ze binnen de landelijke voorwaarden vallen. Vergunningvrij is echter niet regelvrij.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Betekent vergunningvrij dat ik alles mag?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Je hoeft geen vergunning aan te vragen, maar je moet wel binnen de voorwaarden blijven én voldoen aan de bouwtechnische eisen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe weet ik zeker dat mijn plan vergunningvrij is?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Doe de vergunningcheck in het Omgevingsloket; die toetst jouw specifieke situatie aan de regels en het omgevingsplan.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Vergunningvrij bouwen\", \"item\": \"https://www.bylder.com/bouwvergunning/vergunningvrij-bouwen/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Vergunningvrij bouwen\", \"description\": \"Veel kleinere (ver)bouwingen mogen zonder omgevingsvergunning, mits ze binnen de landelijke voorwaarden vallen. Vergunningvrij is echter niet regelvrij.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "wkb",
+  "file": "bouwvergunning/wkb/index.html",
+  "path": "/bouwvergunning/wkb/",
+  "title": "Wet kwaliteitsborging (Wkb) — Bouwkwaliteit geborgd | Bylder.com",
+  "description": "De Wet kwaliteitsborging voor het bouwen (Wkb) ging samen met de Omgevingswet in op 1 januari 2024. Bij eenvoudigere nieuwbouw en verbouw controleert een o",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "thema",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Geldt de Wkb voor mijn verbouwing?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Voor bouwwerken in gevolgklasse 1 (zoals veel grondgebonden woningen) vaak wel. Je aannemer of de gemeente kan dit voor jouw project bevestigen.\"}}, {\"@type\": \"Question\", \"name\": \"Wat heb ik aan de Wkb als koper?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Meer zekerheid over de bouwkwaliteit en een sterkere positie als er na oplevering gebreken blijken.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Wet kwaliteitsborging (Wkb)\", \"item\": \"https://www.bylder.com/bouwvergunning/wkb/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Wet kwaliteitsborging (Wkb)\", \"description\": \"De Wet kwaliteitsborging voor het bouwen (Wkb) ging samen met de Omgevingswet in op 1 januari 2024. Bij eenvoudigere nieuwbouw en verbouw controleert een o\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ },
+ {
+  "slug": "zonnepanelen",
+  "file": "bouwvergunning/zonnepanelen/index.html",
+  "path": "/bouwvergunning/zonnepanelen/",
+  "title": "Zonnepanelen: vergunning nodig? Vergunningvrij &amp; aanvragen | Bylder.com",
+  "description": "Zonnepanelen (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "og_image": null,
+  "twitter_card": null,
+  "preconnect_gstatic": false,
+  "footer": "default",
+  "aside": "project",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Heb ik een vergunning nodig voor zonnepanelen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Meestal niet — op een normale woning zijn dakpanelen doorgaans vergunningvrij. Bij een monument of beschermd gezicht wel checken.\"}}, {\"@type\": \"Question\", \"name\": \"Gelden er regels voor zonnepanelen op een plat dak?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, dan gelden voorwaarden voor de afstand tot de dakrand en de hoogte. Binnen die voorwaarden meestal vergunningvrij.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Bouwvergunning\", \"item\": \"https://www.bylder.com/bouwvergunning/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zonnepanelen\", \"item\": \"https://www.bylder.com/bouwvergunning/zonnepanelen/\"}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Zonnepanelen: vergunning nodig?\", \"description\": \"Zonnepanelen (ver)bouwen: heb je een omgevingsvergunning nodig of mag het vergunningvrij? Voorwaarden, wanneer je wél een vergunning nodig hebt, kosten en de vergunningcheck.\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}}"
+  ]
+ }
+]
