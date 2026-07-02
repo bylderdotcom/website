@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZYCRP1169"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LZYCRP1169');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{url}}">
+<meta name="author" content="Bylder Nederland B.V.">
+<meta name="robots" content="{{robots}}">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_description}}">
+<meta property="og:url" content="{{og_url}}">
+<meta property="og:type" content="{{og_type}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:locale" content="nl_NL">
+{{ldjson}}
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{--cream:#F5F0E8;--cream-2:#EDE6D8;--bark:#1A1208;--bark-2:#3D2E1E;--bark-3:rgba(61,46,30,0.5);--moss:#3D5A3E;--moss-2:#4E7350;--rust:#B85C38;--gold:#C9A84C;--white:#fff;--border:rgba(61,46,30,0.1)}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:var(--bark-2);line-height:1.65}
+nav{background:rgba(245,240,232,0.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;position:fixed;top:0;left:0;right:0;z-index:100;padding:0 5%}
+.nav-inner{width:100%;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-icon{width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;font-family:"Space Mono",monospace;color:#F5F0E8}
+.nav-logo span{font-weight:800;font-size:17px;letter-spacing:-0.02em;color:#1A1208}
+.nav-logo .dot{color:#3D5A3E}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-link{font-size:14px;color:rgba(61,46,30,0.55);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500;transition:color 0.15s,background 0.15s}
+.nav-link:hover{color:#1A1208;background:rgba(61,46,30,0.05)}
+.btn-primary{background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:10px;font-size:14px;font-weight:700;font-family:"Plus Jakarta Sans",sans-serif;text-decoration:none;transition:all 0.2s;white-space:nowrap}
+.btn-primary:hover{background:#4E7350;transform:translateY(-1px)}
+.container{max-width:1060px;margin:0 auto;padding:0 5%}
+.section{padding:72px 0}
+.breadcrumb{padding:80px 0 0;font-size:13px;color:var(--bark-3)}
+.breadcrumb a{color:var(--moss);text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+.hero{padding:24px 0 64px}
+.hero-label{font-size:11px;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.12em;color:var(--moss);font-weight:700;margin-bottom:12px}
+.hero h1{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:var(--bark);letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px}
+.hero-sub{font-size:16px;color:var(--bark-3);max-width:640px;line-height:1.65;margin-bottom:32px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn-ghost{padding:10px 20px;border-radius:10px;font-size:14px;font-weight:600;color:var(--moss);border:1.5px solid rgba(61,90,62,0.3);text-decoration:none;transition:all 0.2s}
+.btn-ghost:hover{border-color:var(--moss);background:rgba(61,90,62,0.05)}
+.price-table{width:100%;border-collapse:collapse;background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);margin-top:32px}
+.price-table th{background:var(--cream-2);padding:12px 16px;font-size:11px;font-weight:700;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.06em;color:var(--bark-3);text-align:left}
+.price-table td{padding:13px 16px;font-size:14px;border-top:1px solid var(--border);color:var(--bark-2)}
+.price-table td:first-child{font-weight:600;color:var(--bark)}
+.badge{display:inline-flex;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700}
+.badge-ok{background:rgba(61,90,62,0.1);color:var(--moss)}
+.badge-warn{background:rgba(201,168,76,0.12);color:#9A7A30}
+.badge-alert{background:rgba(184,92,56,0.1);color:var(--rust)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.trade-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.trade-list li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--bark-2);padding:12px 16px;background:var(--white);border:1px solid var(--border);border-radius:10px}
+.trade-list li::before{content:"✓";background:rgba(61,90,62,0.1);color:var(--moss);width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0}
+.voucher-table{width:100%;border-collapse:collapse;background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.voucher-table th{background:var(--cream-2);padding:12px 16px;font-size:11px;font-weight:700;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.06em;color:var(--bark-3);text-align:left}
+.voucher-table td{padding:13px 16px;font-size:14px;border-top:1px solid var(--border);color:var(--bark-2)}
+.ai-box{background:var(--bark);border-radius:20px;padding:40px;margin-top:40px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.ai-box h3{font-size:1.3rem;font-weight:800;color:var(--cream);letter-spacing:-0.02em;margin-bottom:8px}
+.ai-box p{font-size:14px;color:rgba(245,240,232,0.6);line-height:1.65}
+.faq-list{max-width:720px;margin-top:32px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:15px;font-weight:700;color:var(--bark);background:none;border:none;cursor:pointer;text-align:left;font-family:"Plus Jakarta Sans",sans-serif;gap:16px}
+.faq-q:hover{color:var(--moss)}
+.faq-icon{font-size:18px;flex-shrink:0;transition:transform 0.2s}
+.faq-a{display:none;padding:0 0 16px;font-size:14px;color:var(--bark-2);line-height:1.7}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+.cta-section{background:var(--bark);padding:72px 0;text-align:center}
+.cta-section h2{font-size:clamp(1.6rem,2.5vw,2.4rem);font-weight:800;color:var(--cream);letter-spacing:-0.03em;margin-bottom:12px}
+.cta-section p{font-size:15px;color:rgba(245,240,232,0.5);max-width:440px;margin:0 auto 28px;line-height:1.65}
+footer{background:var(--bark);border-top:1px solid rgba(245,240,232,0.06);padding:28px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(245,240,232,0.3)}
+footer a{color:rgba(245,240,232,0.4);text-decoration:none}
+footer a:hover{color:rgba(245,240,232,0.8)}
+@media(max-width:860px){.two-col{grid-template-columns:1fr}.ai-box{grid-template-columns:1fr}.nav-links{display:none}}
+</style>
+</head>
+<body>{{main}}{{footer}}
+
+<script>function toggleFaq(btn){btn.parentElement.classList.toggle("open")}</script>
+<script src="/auping-popup.js"></script>
+</body>
+</html>

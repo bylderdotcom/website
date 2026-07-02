@@ -39,7 +39,7 @@ CLUSTERS = {
     for name in (
         "bouwvergunning", "gietvloer", "aannemer", "elektricien", "offerte-check",
         "aannemer-matching", "badkamer", "dakkapel", "schilder", "loodgieter",
-        "stukadoor", "renovatiekosten", "kopen",
+        "stukadoor", "renovatiekosten", "kopen", "project", "kortingscode",
     )
 }
 
@@ -53,6 +53,7 @@ VAKSTAD_CLUSTERS = {
     "renovatiekosten": {"h1_city": r'ph-map-pin"></i> ([^<]+)<'},
     # kopen = subcategorie×stad: slug heeft 3 segmenten (vloeren/tapijt/goes).
     "kopen": {"h1_city": r" in (.*?) —", "depth": 3},
+    "project": {"h1_city": r" in (.*?) —"},
 }
 
 # Per-cluster waarde-slots binnen de footer (vóór variant-groepering gemaskeerd);
@@ -63,6 +64,13 @@ FOOTER_SLOTS = {
         (r'">Alle steden voor ([^<]+)</a>', "{{footer_sub_label}}", "footer_sub_label"),
         (r'<a href="/kopen/([a-z0-9-]+)/">[^<]+</a> ·\s*<a href="/kopen/">', "{{footer_cat_slug}}", "footer_cat_slug"),
         (r'<a href="/kopen/\{\{footer_cat_slug\}\}/">([^<]+)</a>', "{{footer_cat_label}}", "footer_cat_label"),
+    ],
+    "project": [
+        (r'<a href="/project/([a-z0-9-]+)/">Alle steden voor ', "{{footer_sub_slug}}", "footer_sub_slug"),
+        (r'">Alle steden voor ([^<]+)</a>', "{{footer_sub_label}}", "footer_sub_label"),
+        (r'<a href="/nieuwbouw/([a-z-]+)/[a-z0-9-]+/">Nieuwbouw ', "{{footer_prov_slug}}", "footer_prov_slug"),
+        (r'<a href="/nieuwbouw/\{\{footer_prov_slug\}\}/([a-z0-9-]+)/">Nieuwbouw ', "{{footer_city_slug}}", "footer_city_slug"),
+        (r'/">Nieuwbouw ([^<]+)</a>', "{{footer_city}}", "footer_city"),
     ],
 }
 
@@ -116,6 +124,11 @@ def parse_page(html: str, rel_path: str, cluster: str = "") -> dict:
     if not canonical.startswith(SITE):
         raise ParseError(f"{rel_path}: canonical buiten {SITE}: {canonical}")
     values["path"] = canonical[len(SITE):]
+    # Zelf-verwijzende hreflang-tags (href == canonical) worden {{url}};
+    # cross-market hreflangs (andere href) blijven letterlijk in het skelet.
+    for m in re.finditer(r'<link rel="alternate" hreflang="[^"]*" href="(.*?)"', html):
+        if m.group(1) == canonical:
+            spans.append((m.start(1), m.end(1), "{{url}}"))
 
     for pattern, placeholder, key in [
         (r'<meta property="og:title" content="(.*?)"', "{{og_title}}", "og_title"),
@@ -126,7 +139,7 @@ def parse_page(html: str, rel_path: str, cluster: str = "") -> dict:
         (r'<meta property="og:image" content="(.*?)"', "{{og_image}}", "og_image"),
         (r'<meta name="twitter:card" content="(.*?)"', "{{twitter_card}}", "twitter_card"),
     ]:
-        values[key] = span(pattern, placeholder, required=key == "robots")
+        values[key] = span(pattern, placeholder, required=False)
     # og:url wijkt soms af van de canonical (bron-bug, bv. kopen-subcategorieën
     # die naar de bovenliggende categorie wijzen) — dan blijft het een dataveld.
 
@@ -186,7 +199,7 @@ def render_page(page: dict, template: str, fragments: dict, content: str) -> str
         "{{og_description}}": page.get("og_description") or page["description"],
         "{{og_url}}": page.get("og_url") or (SITE + page["path"]),
         "{{og_type}}": page.get("og_type") or "",
-        "{{robots}}": page["robots"],
+        "{{robots}}": page.get("robots") or "",
         "{{og_image}}": page.get("og_image") or "",
         "{{twitter_card}}": page.get("twitter_card") or "",
         "{{ldjson}}": page["ldjson_sep"].join(

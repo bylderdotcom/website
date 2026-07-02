@@ -1,0 +1,272 @@
+
+<!-- ═══════════════════════════════════════════════════
+     BYLDER UNIVERSELE NAV — v3.0
+     Volgorde: Voordelen | Vouchers | Voor wie?▾ | Prijzen
+════════════════════════════════════════════════════ -->
+<nav class="glass-nav">
+  <div class="nav-inner">
+
+    <!-- LOGO -->
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">B.</div>
+      <span>Bylder<span class="nav-logo-dot">.com</span></span>
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="nav-links">
+      <a href="/#features" class="nav-link">Voordelen</a>
+      <a href="/vouchers/" class="nav-link">Vouchers</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-btn">Voor wie? <span class="nav-arrow">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="/nieuwbouw-koper/" class="nav-dropdown-item">
+            <span class="ndi-icon"><i class="ph-thin ph-house"></i></span>
+            <div><strong>Nieuwbouwkoper</strong><span>Meerwerklijst, vouchers, planning</span></div>
+          </a>
+          <a href="/bestaande-bouw/" class="nav-dropdown-item">
+            <span class="ndi-icon"><i class="ph-thin ph-house"></i></span>
+            <div><strong>Bestaande bouw koper</strong><span>Offerte-check, aannemer matching</span></div>
+          </a>
+          <a href="/renovatie/" class="nav-dropdown-item">
+            <span class="ndi-icon"><i class="ph-thin ph-hammer"></i></span>
+            <div><strong>Renovatiewoning</strong><span>Budgettool, subsidies, planning</span></div>
+          </a>
+        </div>
+      </div>
+
+      <a href="/prijzen/" class="nav-link">Prijzen</a>
+    </div>
+
+    <!-- CTA GROEP -->
+    <div class="nav-cta-group">
+      <a href="https://app.bylder.com" class="nav-login">Inloggen</a>
+      <a href="/betalen/" class="btn-primary">Start gratis →</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobile()" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="/#features">Voordelen</a>
+  <a href="/vouchers/">Vouchers</a>
+  <a href="/nieuwbouw-koper/"><i class="ph-thin ph-house"></i> Nieuwbouwkoper</a>
+  <a href="/bestaande-bouw/"><i class="ph-thin ph-house"></i> Bestaande bouw koper</a>
+  <a href="/renovatie/"><i class="ph-thin ph-hammer"></i> Renovatiewoning</a>
+  <a href="/prijzen/">Prijzen</a>
+  <a href="https://app.bylder.com" class="mobile-login">Inloggen</a>
+  <a href="/betalen/" class="mobile-cta">Start gratis →</a>
+</div>
+
+<script>
+function toggleMobile() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+document.querySelectorAll('.mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.remove('open');
+  });
+});
+</script>
+<section class="hero">
+  <div class="container">
+    <div class="s-label">20 projecten · 288 gemeenten</div>
+    <h1>Wat kost jouw verbouwing in <em>jouw stad</em>?</h1>
+    <p class="hero-sub">Eerlijke marktprijzen, AI offerte-check en kortingsvouchers voor elk woningproject. Van badkamer tot laadpaal.</p>
+    <div class="hero-stats">
+      <div><div class="stat-val">5.620</div><div class="stat-lbl">Lokale projectpagina's</div></div>
+      <div><div class="stat-val">20</div><div class="stat-lbl">Projectcategorieën</div></div>
+      <div><div class="stat-val">288</div><div class="stat-lbl">Gemeenten</div></div>
+      <div><div class="stat-val">€99</div><div class="stat-lbl">Eenmalig lidmaatschap</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="search-box">
+      <span class="search-label">Zoek jouw project:</span>
+      <input type="text" class="search-input" id="projectSearch" placeholder="bijv. badkamer, laadpaal, gietvloer..." oninput="filterProjects(this.value)">
+      <input type="text" class="search-input" id="stadSearch" placeholder="bijv. Amsterdam, Eindhoven..." style="max-width:220px">
+      <button class="btn-primary" onclick="zoekProject()">Zoek →</button>
+    </div>
+    <div class="s-label">Alle projectcategorieën</div>
+    <h2 style="font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:800;color:var(--bark);letter-spacing:-0.025em;margin-bottom:0">Kies je project</h2>
+    <div class="projects-grid" id="projectsGrid">
+      
+      <a href="/project/badkamer-renovatie/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-shower"></i></div>
+        <div class="project-name">Badkamer renovatie</div>
+        <div class="project-vakman">Loodgieter, Tegelzetter, Elektricien</div>
+        <div class="project-prijs">€7.500–€20.000+</div>
+        <div class="project-desc">Complete badkamerrenovatie inclusief tegelen, sanitair en loodgieterswerk.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/gietvloer-leggen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-mountains"></i></div>
+        <div class="project-name">Gietvloer leggen</div>
+        <div class="project-vakman">Vloerenlegger</div>
+        <div class="project-prijs">€45–€110+/m²</div>
+        <div class="project-desc">Gietvloer of terrazzo leggen — strak, onderhoudsvriendelijk en modern.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/schilderwerk-binnen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-paint-brush"></i></div>
+        <div class="project-name">Schilderwerk binnenshuis</div>
+        <div class="project-vakman">Schilder</div>
+        <div class="project-prijs">€6–€14+/m²</div>
+        <div class="project-desc">Muren, plafonds en kozijnen schilderen door een vakman.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/vloerverwarming-installeren/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-thermometer"></i></div>
+        <div class="project-name">Vloerverwarming installeren</div>
+        <div class="project-vakman">Loodgieter, Elektricien</div>
+        <div class="project-prijs">€30–€90+/m²</div>
+        <div class="project-desc">Water- of elektrische vloerverwarming installeren.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/traprenovatie/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-ladder"></i></div>
+        <div class="project-name">Traprenovatie</div>
+        <div class="project-vakman">Timmerman, Vloerenlegger</div>
+        <div class="project-prijs">€800–€2.500+</div>
+        <div class="project-desc">Trap renoveren met overzettreden of nieuwe leuning.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/inductiekookplaat-aansluiten/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-lightning"></i></div>
+        <div class="project-name">Inductiekookplaat aansluiten</div>
+        <div class="project-vakman">Elektricien</div>
+        <div class="project-prijs">€120–€380+</div>
+        <div class="project-desc">Inductiekookplaat of fornuis elektrisch aansluiten.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/laadpaal-installeren/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-plug"></i></div>
+        <div class="project-name">Laadpaal installeren</div>
+        <div class="project-vakman">Elektricien</div>
+        <div class="project-prijs">€400–€1.400+</div>
+        <div class="project-desc">Laadpaal thuis installeren voor je elektrische auto.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/stucwerk/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-buildings"></i></div>
+        <div class="project-name">Stucwerk</div>
+        <div class="project-vakman">Stukadoor</div>
+        <div class="project-prijs">€8–€18+/m²</div>
+        <div class="project-desc">Spuit- of sierpleister aanbrengen op wanden en plafonds.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/tuinbestrating/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-plant"></i></div>
+        <div class="project-name">Tuinbestrating aanleggen</div>
+        <div class="project-vakman">Hovenier, Stratenmaker</div>
+        <div class="project-prijs">€20–€60+/m²</div>
+        <div class="project-desc">Tuin bestraten met tegels, klinkers of sierbestrating.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/dakkapel-plaatsen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-house"></i></div>
+        <div class="project-name">Dakkapel plaatsen</div>
+        <div class="project-vakman">Timmerman, Dakdekker</div>
+        <div class="project-prijs">€7.500–€20.000+</div>
+        <div class="project-desc">Dakkapel plaatsen aan voor- of achterkant van de woning.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/keuken-monteren/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-cooking-pot"></i></div>
+        <div class="project-name">Keuken monteren</div>
+        <div class="project-vakman">Timmerman, Loodgieter</div>
+        <div class="project-prijs">€400–€1.500+</div>
+        <div class="project-desc">Nieuwe keuken monteren en aansluiten door een vakman.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/badkamer-tegelen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-app-window"></i></div>
+        <div class="project-name">Badkamer tegelen</div>
+        <div class="project-vakman">Tegelzetter</div>
+        <div class="project-prijs">€35–€95+/m²</div>
+        <div class="project-desc">Badkamer tegelen — wanden en vloer inclusief voegwerk.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/isolatie-aanbrengen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-house"></i></div>
+        <div class="project-name">Isolatie aanbrengen</div>
+        <div class="project-vakman">Isolatiebedrijf</div>
+        <div class="project-prijs">€15–€50+/m²</div>
+        <div class="project-desc">Spouwmuur-, dak- of vloerisolatie voor energiebesparing.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/aanbouw-realiseren/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-hammer"></i></div>
+        <div class="project-name">Aanbouw realiseren</div>
+        <div class="project-vakman">Aannemer, Timmerman</div>
+        <div class="project-prijs">€1.200–€2.800+/m²</div>
+        <div class="project-desc">Aanbouw of uitbouw aan de woning realiseren.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/raamdecoratie-plaatsen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-app-window"></i></div>
+        <div class="project-name">Raamdecoratie plaatsen</div>
+        <div class="project-vakman">Interieurstylist</div>
+        <div class="project-prijs">€80–€320+/raam</div>
+        <div class="project-desc">Gordijnen, shutters of lamellen plaatsen door een vakman.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/zonwering-installeren/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-sun"></i></div>
+        <div class="project-name">Zonwering installeren</div>
+        <div class="project-vakman">Zonweringsspecialist</div>
+        <div class="project-prijs">€350–€1.400+</div>
+        <div class="project-desc">Buitenzonwering, screens of markiezen installeren.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/parket-leggen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-tree"></i></div>
+        <div class="project-name">Parket of laminaat leggen</div>
+        <div class="project-vakman">Vloerenlegger</div>
+        <div class="project-prijs">€18–€55+/m²</div>
+        <div class="project-desc">Parketvloer, laminaat of PVC-vloer leggen.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/slaapkamer-inrichten/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-bed"></i></div>
+        <div class="project-name">Slaapkamer inrichten</div>
+        <div class="project-vakman">Interieurstylist</div>
+        <div class="project-prijs">€2.500–€12.000+</div>
+        <div class="project-desc">Complete slaapkamer inrichten — bed, kast en verlichting.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/verlichting-installeren/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-lightbulb"></i></div>
+        <div class="project-name">Verlichting installeren</div>
+        <div class="project-vakman">Elektricien</div>
+        <div class="project-prijs">€40–€150+/spot</div>
+        <div class="project-desc">Verlichting installeren — inbouwspots, hangers of wandlampen.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+      <a href="/project/duurzaam-verbouwen/" class="project-card">
+        <div class="project-icon"><i class="ph-thin ph-plant"></i></div>
+        <div class="project-name">Duurzaam verbouwen</div>
+        <div class="project-vakman">Installateur, Isolatiebedrijf</div>
+        <div class="project-prijs">€3.500–€18.000+</div>
+        <div class="project-desc">Warmtepomp, zonnepanelen of isolatie voor energiebesparing.</div>
+        <div class="project-cta">Bekijk alle steden →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Klaar om je offerte te checken?</h2>
+    <p>Upload je offerte, activeer kortingsvouchers en laat je begeleiden. Eenmalig €99.</p>
+    <a href="/betalen/" class="btn-primary" style="font-size:16px;padding:15px 36px;display:inline-flex">Start mijn begeleiding →</a>
+    <div style="margin-top:16px;font-size:13px;color:rgba(245,240,232,0.35);font-family:'Space Mono',monospace"><i class="ph-thin ph-star"></i> 4.8/5 · 12.400+ leden · 14 dagen geld-terug garantie</div>
+  </div>
+</section>
