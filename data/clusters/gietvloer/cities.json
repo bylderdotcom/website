@@ -1,0 +1,4017 @@
+{
+ "alkmaar": {
+  "city": "Alkmaar",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/issa-vloeren-alkmaar-bv-uk698a/",
+    "name": "Issa Vloeren Alkmaar BV",
+    "plaats": "Alkmaar",
+    "rating": "4.7",
+    "reviews": "179",
+    "rating_disp": "4.7",
+    "reviews_disp": "179",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Issa%20Vloeren%20Alkmaar%20BV&amp;query_place_id=ChIJu_uPCHz4xUcRrbow1Uk698A",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-issa-vloeren-alkmaar-bv-uk698a",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/the-floor-design-company-w16za4/",
+    "name": "The Floor &amp; Design company",
+    "plaats": "Alkmaar",
+    "rating": "5.0",
+    "reviews": "49",
+    "rating_disp": "5.0",
+    "reviews_disp": "49",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=The%20Floor%20%26%20Design%20company&amp;query_place_id=ChIJt8sBkeRXz0cR72KQHw16Za4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-the-floor-design-company-w16za4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/indri-vloersystemen-bv-erfqo8/",
+    "name": "Indri Vloersystemen bv",
+    "plaats": "Alkmaar",
+    "rating": "4.3",
+    "reviews": "25",
+    "rating_disp": "4.3",
+    "reviews_disp": "25",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Indri%20Vloersystemen%20bv&amp;query_place_id=ChIJhZZXLI9Wz0cR4SHbRErFQo8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-indri-vloersystemen-bv-erfqo8",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/tsn-vloeren-qjm2la/",
+    "name": "TSN Vloeren",
+    "plaats": "Alkmaar",
+    "rating": "5.0",
+    "reviews": "17",
+    "rating_disp": "5.0",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=TSN%20Vloeren&amp;query_place_id=ChIJW0U9LBpVz0cR6NWYhQJM2LA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-tsn-vloeren-qjm2la",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloer-zo-eapz-c/",
+    "name": "Vloer &amp; Zo",
+    "plaats": "Alkmaar",
+    "rating": "4.2",
+    "reviews": "13",
+    "rating_disp": "4.2",
+    "reviews_disp": "13",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloer%20%26%20Zo&amp;query_place_id=ChIJn7ecuklWz0cRBXmVxeapz-c",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloer-zo-eapz-c",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-alkmaar-yek1yo/",
+    "name": "Gietvloer Alkmaar",
+    "plaats": "Alkmaar",
+    "rating": "4.8",
+    "reviews": "6",
+    "rating_disp": "4.8",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Alkmaar&amp;query_place_id=ChIJjSaNi_ZXz0cR-oLXzYEk1yo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-alkmaar-yek1yo",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/floor-is-art-jvni5k/",
+    "name": "Floor is Art",
+    "plaats": "Alkmaar",
+    "rating": "5.0",
+    "reviews": "2",
+    "rating_disp": "5.0",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Floor%20is%20Art&amp;query_place_id=ChIJO9KhGE1Wz0cRDzfc1JvnI5k",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-floor-is-art-jvni5k",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/van-der-wekken-vloeren-8ixxjc/",
+    "name": "van der wekken vloeren",
+    "plaats": "Alkmaar",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=van%20der%20wekken%20vloeren&amp;query_place_id=ChIJ3WEc4rhXz0cR5URkf8iXXjc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-van-der-wekken-vloeren-8ixxjc",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "alkmaar",
+  "template": "default"
+ },
+ "almere": {
+  "city": "Almere",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/interpleister-stukadoor-gietvloeren-almere-met-showroom-olygyi/",
+    "name": "InterPleister Stukadoor &amp; Gietvloeren Almere Mét Showroom",
+    "plaats": "Almere",
+    "rating": "4.6",
+    "reviews": "31",
+    "rating_disp": "4.6",
+    "reviews_disp": "31",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=InterPleister%20Stukadoor%20%26%20Gietvloeren%20Almere%20M%C3%A9t%20Showroom&amp;query_place_id=ChIJ-ykhUlEWxkcRqrSudOLygyI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-interpleister-stukadoor-gietvloeren-almere-met-showroom-olygyi",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloermeester-b-v-zandcement-dekvloer-16g5vg/",
+    "name": "VloerMeester B.V. Zandcement Dekvloer",
+    "plaats": "Almere",
+    "rating": "4.6",
+    "reviews": "20",
+    "rating_disp": "4.6",
+    "reviews_disp": "20",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=VloerMeester%20B.V.%20Zandcement%20Dekvloer&amp;query_place_id=ChIJSfOLS2T9xUcRduaXq16g5Vg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloermeester-b-v-zandcement-dekvloer-16g5vg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/perfectevloer-gxpj94/",
+    "name": "Perfectevloer",
+    "plaats": "Almere",
+    "rating": "4.9",
+    "reviews": "15",
+    "rating_disp": "4.9",
+    "reviews_disp": "15",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Perfectevloer&amp;query_place_id=ChIJYb7_EIyHwW4Rq1U4MGXPJ94",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-perfectevloer-gxpj94",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-almere-qcdxvu/",
+    "name": "Gietvloer Almere",
+    "plaats": "Almere",
+    "rating": "4.8",
+    "reviews": "15",
+    "rating_disp": "4.8",
+    "reviews_disp": "15",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Almere&amp;query_place_id=ChIJL8AuiOgXxkcRrtQ5pqcdXvU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-almere-qcdxvu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloeren-almere-gietvloer-0zk9nu/",
+    "name": "Gietvloeren | Almere Gietvloer",
+    "plaats": "Almere",
+    "rating": "4.9",
+    "reviews": "10",
+    "rating_disp": "4.9",
+    "reviews_disp": "10",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloeren%20%7C%20Almere%20Gietvloer&amp;query_place_id=ChIJ8cKcbgAXxkcR_7hVB0Zk9nU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloeren-almere-gietvloer-0zk9nu",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "almere",
+  "template": "default"
+ },
+ "amsterdam": {
+  "city": "Amsterdam",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/g-vloeren-gietvloeren-jffnfq/",
+    "name": "G-vloeren Gietvloeren",
+    "plaats": "Amsterdam",
+    "rating": "4.9",
+    "reviews": "355",
+    "rating_disp": "4.9",
+    "reviews_disp": "355",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=G-vloeren%20Gietvloeren&amp;query_place_id=ChIJD5eaQg_ixUcRmzaG3jFfNFQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-g-vloeren-gietvloeren-jffnfq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/coatingvloer-nl-dr00g0/",
+    "name": "Coatingvloer.nl",
+    "plaats": "Amsterdam",
+    "rating": "4.7",
+    "reviews": "317",
+    "rating_disp": "4.7",
+    "reviews_disp": "317",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Coatingvloer.nl&amp;query_place_id=ChIJd1RMgPMJxkcRqv-JFdr00g0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-coatingvloer-nl-dr00g0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/motion-gietvloeren-amsterdam-jmfeti/",
+    "name": "Motion Gietvloeren Amsterdam",
+    "plaats": "Amsterdam",
+    "rating": "4.5",
+    "reviews": "136",
+    "rating_disp": "4.5",
+    "reviews_disp": "136",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Motion%20Gietvloeren%20Amsterdam&amp;query_place_id=ChIJgc_7A50LxkcRiEeTeJmfEtI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-motion-gietvloeren-amsterdam-jmfeti",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/sinck-ko-ibhgxs/",
+    "name": "Sinck&amp;Ko",
+    "plaats": "Amsterdam",
+    "rating": "4.4",
+    "reviews": "44",
+    "rating_disp": "4.4",
+    "reviews_disp": "44",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Sinck%26Ko&amp;query_place_id=ChIJU4qvbLUOxkcRVsKnhIBHgXs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-sinck-ko-ibhgxs",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/senso-vagxy0/",
+    "name": "Senso",
+    "plaats": "Amsterdam",
+    "rating": "3.7",
+    "reviews": "42",
+    "rating_disp": "3.7",
+    "reviews_disp": "42",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Senso&amp;query_place_id=ChIJV33sd7UOxkcRCVEt7vAgXy0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-senso-vagxy0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/design-gietvloer-amsterdam-ege-ny/",
+    "name": "Design Gietvloer Amsterdam",
+    "plaats": "Amsterdam",
+    "rating": "4.1",
+    "reviews": "29",
+    "rating_disp": "4.1",
+    "reviews_disp": "29",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Design%20Gietvloer%20Amsterdam&amp;query_place_id=ChIJfx2g_ygKxkcRsHSSyeGe-NY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-design-gietvloer-amsterdam-ege-ny",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-amsterdam-p8k22u/",
+    "name": "Gietvloer Amsterdam",
+    "plaats": "Amsterdam",
+    "rating": "4.9",
+    "reviews": "19",
+    "rating_disp": "4.9",
+    "reviews_disp": "19",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Amsterdam&amp;query_place_id=ChIJ6ZiIuGvjxUcRGz2J-p8K22U",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-amsterdam-p8k22u",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/amsterdam-gietvloer-amsterdamgietvloer-kav4b0/",
+    "name": "Amsterdam Gietvloer - amsterdamgietvloer",
+    "plaats": "Amsterdam",
+    "rating": "4.9",
+    "reviews": "8",
+    "rating_disp": "4.9",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Gietvloer%20-%20amsterdamgietvloer&amp;query_place_id=ChIJC-MqIJMLxkcRqHBSgkaV4B0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-amsterdam-gietvloer-amsterdamgietvloer-kav4b0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-amsterdam-xl0dkq/",
+    "name": "Gietvloer Amsterdam",
+    "plaats": "Amsterdam",
+    "rating": "1.5",
+    "reviews": "2",
+    "rating_disp": "1.5",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Amsterdam&amp;query_place_id=ChIJsxneWCLjxUcRlXfKvxl0DkQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-amsterdam-xl0dkq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/doe-het-zelf-gietvloeren-5ghzwe/",
+    "name": "Doe Het Zelf Gietvloeren",
+    "plaats": "Amsterdam",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Doe%20Het%20Zelf%20Gietvloeren&amp;query_place_id=ChIJ-w8545wLxkcRGdTXe5gHzwE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-doe-het-zelf-gietvloeren-5ghzwe",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/puur-vloeren-amsterdam-xnu1mm/",
+    "name": "PUUR! Vloeren Amsterdam",
+    "plaats": "Amsterdam",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=PUUR%21%20Vloeren%20Amsterdam&amp;query_place_id=ChIJGYRzm00JxkcR1fnH1xNU1mM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-puur-vloeren-amsterdam-xnu1mm",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "amsterdam",
+  "template": "default"
+ },
+ "apeldoorn": {
+  "city": "Apeldoorn",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/indigo-floor-5as9g4/",
+    "name": "Indigo Floor",
+    "plaats": "Apeldoorn",
+    "rating": "4.9",
+    "reviews": "54",
+    "rating_disp": "4.9",
+    "reviews_disp": "54",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Indigo%20Floor&amp;query_place_id=ChIJHVTclVzHx0cRuwYWW5AS9G4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-indigo-floor-5as9g4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/o-design-gietvloeren-mrbr_0/",
+    "name": "O-Design Gietvloeren",
+    "plaats": "Apeldoorn",
+    "rating": "4.8",
+    "reviews": "21",
+    "rating_disp": "4.8",
+    "reviews_disp": "21",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=O-Design%20Gietvloeren&amp;query_place_id=ChIJfWCHkFC5x0cRjbE8ZMRbR_0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-o-design-gietvloeren-mrbr_0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-apeldoorn-xwxkwa/",
+    "name": "Gietvloer Apeldoorn",
+    "plaats": "Apeldoorn",
+    "rating": "4.9",
+    "reviews": "15",
+    "rating_disp": "4.9",
+    "reviews_disp": "15",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Apeldoorn&amp;query_place_id=ChIJGTVBx83Hx0cRjWANAxwXKWA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-apeldoorn-xwxkwa",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "apeldoorn",
+  "template": "default"
+ },
+ "belgie": {
+  "city": "België",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/steppa-bv-usgd0s/",
+    "name": "Steppa bv",
+    "plaats": "België",
+    "rating": "4.9",
+    "reviews": "35",
+    "rating_disp": "4.9",
+    "reviews_disp": "35",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Steppa%20bv&amp;query_place_id=ChIJb6miQ0AJxEcR9DDgMUsgD0s",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-steppa-bv-usgd0s",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/atlastic-epoxyvloeren-7n4txe/",
+    "name": "Atlastic Epoxyvloeren",
+    "plaats": "België",
+    "rating": "5.0",
+    "reviews": "15",
+    "rating_disp": "5.0",
+    "reviews_disp": "15",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Atlastic%20Epoxyvloeren&amp;query_place_id=ChIJV-ibk6jnwEcR488-g7N4txE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-atlastic-epoxyvloeren-7n4txe",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/all-flooring-system-6zklnq/",
+    "name": "All Flooring System",
+    "plaats": "België",
+    "rating": "1.0",
+    "reviews": "1",
+    "rating_disp": "1.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=All%20Flooring%20System&amp;query_place_id=ChIJ38MOjRGHw0cR0HeBE6ZklnQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-all-flooring-system-6zklnq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/jvg-designvloeren-t6nvke/",
+    "name": "JVG Designvloeren",
+    "plaats": "België",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=JVG%20Designvloeren&amp;query_place_id=ChIJ8Vx6eIrdwEcR4DVtQT6NVkE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-jvg-designvloeren-t6nvke",
+    "shape": "unrated"
+   }
+  ],
+  "template": "v2"
+ },
+ "berlicum": {
+  "city": "Berlicum",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vbh-totaalvloeren-0qzowy/",
+    "name": "VBH Totaalvloeren",
+    "plaats": "Berlicum",
+    "rating": "4.5",
+    "reviews": "33",
+    "rating_disp": "4.5",
+    "reviews_disp": "33",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=VBH%20Totaalvloeren&amp;query_place_id=ChIJ5aLcSQnvxkcRaNgoc0qzoWY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vbh-totaalvloeren-0qzowy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/dormi-designvloeren-vof-wqa8ou/",
+    "name": "Dormi Designvloeren VOF",
+    "plaats": "Berlicum",
+    "rating": "4.8",
+    "reviews": "32",
+    "rating_disp": "4.8",
+    "reviews_disp": "32",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Dormi%20Designvloeren%20VOF&amp;query_place_id=ChIJ9Z0kYlLkxkcR7QVTRWqA8OU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-dormi-designvloeren-vof-wqa8ou",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/van-den-bos-vloeren-ggb3l0/",
+    "name": "Van Den Bos Vloeren",
+    "plaats": "Berlicum",
+    "rating": "5.0",
+    "reviews": "14",
+    "rating_disp": "5.0",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Den%20Bos%20Vloeren&amp;query_place_id=ChIJPSyiT4zlxkcRhjz-LGgb3L0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-van-den-bos-vloeren-ggb3l0",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "best": {
+  "city": "Best",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/ruud-van-delft-gietvloeren-zs70gk/",
+    "name": "Ruud van Delft Gietvloeren",
+    "plaats": "Best",
+    "rating": "4.6",
+    "reviews": "17",
+    "rating_disp": "4.6",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Ruud%20van%20Delft%20Gietvloeren&amp;query_place_id=ChIJ8xjMbOrcxkcRp3CbkZS70gk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ruud-van-delft-gietvloeren-zs70gk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/engelen-gietvloeren-nhkoto/",
+    "name": "Engelen Gietvloeren",
+    "plaats": "Best",
+    "rating": "5.0",
+    "reviews": "8",
+    "rating_disp": "5.0",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Engelen%20Gietvloeren&amp;query_place_id=ChIJr0moavDdxkcRGO_W-NHkOto",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-engelen-gietvloeren-nhkoto",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-best-osixx0/",
+    "name": "Gietvloer Best",
+    "plaats": "Best",
+    "rating": "4.8",
+    "reviews": "5",
+    "rating_disp": "4.8",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Best&amp;query_place_id=ChIJPwA8Sf7dxkcRHspEGOSIxx0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-best-osixx0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/eco-design-flooring-bv-wtpa-8/",
+    "name": "Eco Design Flooring BV",
+    "plaats": "Best",
+    "rating": "4.5",
+    "reviews": "2",
+    "rating_disp": "4.5",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Eco%20Design%20Flooring%20BV&amp;query_place_id=ChIJmXmPv6TdxkcReH_anWtPa-8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-eco-design-flooring-bv-wtpa-8",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "best",
+  "template": "default"
+ },
+ "blaricum": {
+  "city": "Blaricum",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/sterk-vloerverwijdering-tapijt-pvc-parket-en-trapbekleding-verwijderen-s8eghg/",
+    "name": "Sterk Vloerverwijdering | Tapijt, PVC, Parket en Trapbekleding Verwijderen",
+    "plaats": "Blaricum",
+    "rating": "4.3",
+    "reviews": "137",
+    "rating_disp": "4.3",
+    "reviews_disp": "137",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Sterk%20Vloerverwijdering%20%7C%20Tapijt%2C%20PVC%2C%20Parket%20en%20Trapbekleding%20Verwijderen&amp;query_place_id=ChIJi-BCpUo_xkcR2-xXaS8EGHg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-sterk-vloerverwijdering-tapijt-pvc-parket-en-trapbekleding-verwijderen-s8eghg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/buildings-vloeren-39dyyg/",
+    "name": "BUILDINGS Vloeren",
+    "plaats": "Blaricum",
+    "rating": "3.8",
+    "reviews": "10",
+    "rating_disp": "3.8",
+    "reviews_disp": "10",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=BUILDINGS%20Vloeren&amp;query_place_id=ChIJnwmQ15BrxkcR-POJQ39dyyg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-buildings-vloeren-39dyyg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/floor-en-more-jciw3y/",
+    "name": "Floor en More",
+    "plaats": "Blaricum",
+    "rating": "5.0",
+    "reviews": "2",
+    "rating_disp": "5.0",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Floor%20en%20More&amp;query_place_id=ChIJXdrERdI_xkcRV9B0yJCIW3Y",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-floor-en-more-jciw3y",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/decovloeren-cxovym/",
+    "name": "DecoVloeren",
+    "plaats": "Blaricum",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DecoVloeren&amp;query_place_id=ChIJRxiy1Fc_xkcR3MLlhCxoVYM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-decovloeren-cxovym",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "blaricum",
+  "template": "default"
+ },
+ "boekel": {
+  "city": "Boekel",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vbc-isolatiebeton-vloerverwarming-en-cementdekvloeren-5vc2dy/",
+    "name": "VBC Isolatiebeton, vloerverwarming en cementdekvloeren",
+    "plaats": "Boekel",
+    "rating": "4.8",
+    "reviews": "49",
+    "rating_disp": "4.8",
+    "reviews_disp": "49",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=VBC%20Isolatiebeton%2C%20vloerverwarming%20en%20cementdekvloeren&amp;query_place_id=ChIJx9G0a7Uex0cRIbIrz5vc2dY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vbc-isolatiebeton-vloerverwarming-en-cementdekvloeren-5vc2dy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/multi-vloeren-brabant-zlqpug/",
+    "name": "Multi Vloeren Brabant",
+    "plaats": "Boekel",
+    "rating": "4.6",
+    "reviews": "27",
+    "rating_disp": "4.6",
+    "reviews_disp": "27",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Multi%20Vloeren%20Brabant&amp;query_place_id=ChIJ0VoCaDAZx0cRDQCB7ZlQpug",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-multi-vloeren-brabant-zlqpug",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/bekkers-vloeren-cementdekvloeren-afwerking-fri1vc/",
+    "name": "Bekkers vloeren | Cementdekvloeren &amp; afwerking",
+    "plaats": "Boekel",
+    "rating": "5.0",
+    "reviews": "6",
+    "rating_disp": "5.0",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bekkers%20vloeren%20%7C%20Cementdekvloeren%20%26%20afwerking&amp;query_place_id=ChIJzWrJiTsfx0cRj99R8FRi1Vc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-bekkers-vloeren-cementdekvloeren-afwerking-fri1vc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gijs-timmers-betonvloeren-fxp3vu/",
+    "name": "Gijs Timmers Betonvloeren",
+    "plaats": "Boekel",
+    "rating": "5.0",
+    "reviews": "6",
+    "rating_disp": "5.0",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gijs%20Timmers%20Betonvloeren&amp;query_place_id=ChIJj4V-T88fx0cRDXYobFXp3VU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gijs-timmers-betonvloeren-fxp3vu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/flooratlas-nederland-b-v-8wewgs/",
+    "name": "Flooratlas Nederland B.V.",
+    "plaats": "Boekel",
+    "rating": "4.5",
+    "reviews": "2",
+    "rating_disp": "4.5",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Flooratlas%20Nederland%20B.V.&amp;query_place_id=ChIJZX9cN5voxkcRukzcK8wEwGs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-flooratlas-nederland-b-v-8wewgs",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "boekel",
+  "template": "default"
+ },
+ "breda": {
+  "city": "Breda",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/kleijn-coatings-gietvloer-en-wandsystemen-toef1s/",
+    "name": "Kleijn Coatings - Gietvloer- en Wandsystemen",
+    "plaats": "Breda",
+    "rating": "4.8",
+    "reviews": "66",
+    "rating_disp": "4.8",
+    "reviews_disp": "66",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Kleijn%20Coatings%20-%20Gietvloer-%20en%20Wandsystemen&amp;query_place_id=ChIJdzvCzAwgxEcRsAuvHtOef1s",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-kleijn-coatings-gietvloer-en-wandsystemen-toef1s",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-breda-cwywvw/",
+    "name": "Gietvloer Breda",
+    "plaats": "Breda",
+    "rating": "4.6",
+    "reviews": "14",
+    "rating_disp": "4.6",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Breda&amp;query_place_id=ChIJBfU-IPWhxkcR5V9D6cWYWVw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-breda-cwywvw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloeren-breda-gietvloer-ecchhm/",
+    "name": "gietvloeren - Breda Gietvloer",
+    "plaats": "Breda",
+    "rating": "4.9",
+    "reviews": "10",
+    "rating_disp": "4.9",
+    "reviews_disp": "10",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=gietvloeren%20-%20Breda%20Gietvloer&amp;query_place_id=ChIJYfOBV9qhxkcRN2dEwECChhM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloeren-breda-gietvloer-ecchhm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloeren-breda-gietvloer-syagci/",
+    "name": "gietvloeren - Breda Gietvloer",
+    "plaats": "Breda",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=gietvloeren%20-%20Breda%20Gietvloer&amp;query_place_id=ChIJH-SUTAChxkcRogcstsyAGcI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloeren-breda-gietvloer-syagci",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "breda",
+  "template": "default"
+ },
+ "brunssum": {
+  "city": "Brunssum",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vst-vloeren-fb6xyw/",
+    "name": "VST Vloeren",
+    "plaats": "Brunssum",
+    "rating": "4.5",
+    "reviews": "11",
+    "rating_disp": "4.5",
+    "reviews_disp": "11",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=VST%20Vloeren&amp;query_place_id=ChIJOw0HwBG8wEcRvbWNNFb6Xyw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vst-vloeren-fb6xyw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/grindexpert-nl-grindvloeren-en-meer-dpvo5e/",
+    "name": "Grindexpert.nl | Grindvloeren en meer",
+    "plaats": "Brunssum",
+    "rating": "4.2",
+    "reviews": "5",
+    "rating_disp": "4.2",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Grindexpert.nl%20%7C%20Grindvloeren%20en%20meer&amp;query_place_id=ChIJe_jsWnm7wEcRRM6rWDPVo5E",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-grindexpert-nl-grindvloeren-en-meer-dpvo5e",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-brunssum-h7qmh8/",
+    "name": "Gietvloer Brunssum",
+    "plaats": "Brunssum",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Brunssum&amp;query_place_id=ChIJW255Opi9wEcRWDm8Eh7qMh8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-brunssum-h7qmh8",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "brunssum",
+  "template": "default"
+ },
+ "bunschoten-spakenburg": {
+  "city": "Bunschoten-Spakenburg",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/blitz-traprenovatie-vloeren-1zfbnw/",
+    "name": "Blitz Traprenovatie &amp; Vloeren",
+    "plaats": "Bunschoten-Spakenburg",
+    "rating": "5.0",
+    "reviews": "18",
+    "rating_disp": "5.0",
+    "reviews_disp": "18",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Blitz%20Traprenovatie%20%26%20Vloeren&amp;query_place_id=ChIJTb18Y2k_xkcRqa4NE1zfbNw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-blitz-traprenovatie-vloeren-1zfbnw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/ed-vloeren-wgeaxc/",
+    "name": "ED Vloeren",
+    "plaats": "Bunschoten-Spakenburg",
+    "rating": "4.9",
+    "reviews": "7",
+    "rating_disp": "4.9",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=ED%20Vloeren&amp;query_place_id=ChIJD4DOUZpBxkcRTAfYFWgEAxc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ed-vloeren-wgeaxc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/systeemvloeren-service-bunschoten-b-v-7oslgk/",
+    "name": "Systeemvloeren Service Bunschoten B.V.",
+    "plaats": "Bunschoten-Spakenburg",
+    "rating": "5.0",
+    "reviews": "3",
+    "rating_disp": "5.0",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Systeemvloeren%20Service%20Bunschoten%20B.V.&amp;query_place_id=ChIJpVvOd1g_xkcRjSrdq7oSLgk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-systeemvloeren-service-bunschoten-b-v-7oslgk",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "coevorden": {
+  "city": "Coevorden",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/forbo-novilon-b-v-sx0odg/",
+    "name": "Forbo-Novilon B.V.",
+    "plaats": "Coevorden",
+    "rating": "4.4",
+    "reviews": "152",
+    "rating_disp": "4.4",
+    "reviews_disp": "152",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Forbo-Novilon%20B.V.&amp;query_place_id=ChIJnfX_btz8t0cR5MRtKsx0oDg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-forbo-novilon-b-v-sx0odg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/forbo-kqi0aq/",
+    "name": "Forbo",
+    "plaats": "Coevorden",
+    "rating": "4.7",
+    "reviews": "51",
+    "rating_disp": "4.7",
+    "reviews_disp": "51",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Forbo&amp;query_place_id=ChIJq6qqb9z8t0cRIQfonkqi0aQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-forbo-kqi0aq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/hovenk-betonreparatie-kunststof-gietvloeren-l4nje0/",
+    "name": "Hovenk - Betonreparatie, Kunststof Gietvloeren",
+    "plaats": "Coevorden",
+    "rating": "3.4",
+    "reviews": "7",
+    "rating_disp": "3.4",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Hovenk%20-%20Betonreparatie%2C%20Kunststof%20Gietvloeren&amp;query_place_id=ChIJsd6f7OD8t0cRwAoJWL4nJe0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-hovenk-betonreparatie-kunststof-gietvloeren-l4nje0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/carefree-protect-g8tvz8/",
+    "name": "Carefree Protect",
+    "plaats": "Coevorden",
+    "rating": "4.2",
+    "reviews": "5",
+    "rating_disp": "4.2",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Carefree%20Protect&amp;query_place_id=ChIJI3CS7h39t0cRWT8mEg8tVz8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-carefree-protect-g8tvz8",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "coevorden",
+  "template": "default"
+ },
+ "den-haag": {
+  "city": "Den Haag",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/beton-cire-webshop-tehkim/",
+    "name": "Beton cire webshop",
+    "plaats": "Den Haag",
+    "rating": "4.9",
+    "reviews": "179",
+    "rating_disp": "4.9",
+    "reviews_disp": "179",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Beton%20cire%20webshop&amp;query_place_id=ChIJj-6B3Xe3xUcRmjg1lTEhkIM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-beton-cire-webshop-tehkim",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/raza-ucczhg/",
+    "name": "RAZA",
+    "plaats": "Den Haag",
+    "rating": "5.0",
+    "reviews": "30",
+    "rating_disp": "5.0",
+    "reviews_disp": "30",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RAZA&amp;query_place_id=ChIJb3rRIdW3xUcR6oel7uCCZHg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-raza-ucczhg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/evolve-interior-den-haag-gietvloer-pvc-interieurontwerp-ndo2my/",
+    "name": "Evolve Interior Den Haag | Gietvloer - PVC - Interieurontwerp",
+    "plaats": "Den Haag",
+    "rating": "4.9",
+    "reviews": "30",
+    "rating_disp": "4.9",
+    "reviews_disp": "30",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Evolve%20Interior%20Den%20Haag%20%7C%20Gietvloer%20-%20PVC%20-%20Interieurontwerp&amp;query_place_id=ChIJDfPgxTu3xUcR5FId8ndO2mY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-evolve-interior-den-haag-gietvloer-pvc-interieurontwerp-ndo2my",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/devloer-nl-xq5mua/",
+    "name": "DeVloer.nl",
+    "plaats": "Den Haag",
+    "rating": "5.0",
+    "reviews": "21",
+    "rating_disp": "5.0",
+    "reviews_disp": "21",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DeVloer.nl&amp;query_place_id=ChIJW1E3TQuxxUcRPVKOdXQ5mUA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-devloer-nl-xq5mua",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloeren-van-bart-urvtji/",
+    "name": "Vloeren van Bart",
+    "plaats": "Den Haag",
+    "rating": "4.7",
+    "reviews": "19",
+    "rating_disp": "4.7",
+    "reviews_disp": "19",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloeren%20van%20Bart&amp;query_place_id=ChIJi981xfS2xUcR-u9VZURVtjI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloeren-van-bart-urvtji",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/floors-bv-vloeren-groothandel-den-haag-laminaat-pvc-en-houten-vloeren-ac9enm/",
+    "name": "Floors BV - Vloeren Groothandel Den Haag | Laminaat - PVC en Houten Vloeren",
+    "plaats": "Den Haag",
+    "rating": "5.0",
+    "reviews": "14",
+    "rating_disp": "5.0",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Floors%20BV%20-%20Vloeren%20Groothandel%20Den%20Haag%20%7C%20Laminaat%20-%20PVC%20en%20Houten%20Vloeren&amp;query_place_id=ChIJyaL60_i2xUcRD7Tp5ac9ENM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-floors-bv-vloeren-groothandel-den-haag-laminaat-pvc-en-houten-vloeren-ac9enm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/de-vloergieters-5e3du0/",
+    "name": "De Vloergieters",
+    "plaats": "Den Haag",
+    "rating": "5.0",
+    "reviews": "13",
+    "rating_disp": "5.0",
+    "reviews_disp": "13",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Vloergieters&amp;query_place_id=ChIJ9UwiIwnMU6IRLUdwX5E3dU0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-de-vloergieters-5e3du0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/den-haag-gietvloer-nynf9g/",
+    "name": "Den Haag Gietvloer",
+    "plaats": "Den Haag",
+    "rating": "5.0",
+    "reviews": "9",
+    "rating_disp": "5.0",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Den%20Haag%20Gietvloer&amp;query_place_id=ChIJieBTEGDXqCYRJE3UtnyNf9g",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-den-haag-gietvloer-nynf9g",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/wg-vloeren-den-haag-gietvloeren-egaliseren-meer-ufw-fs/",
+    "name": "WG Vloeren Den Haag - Gietvloeren, Egaliseren &amp; meer",
+    "plaats": "Den Haag",
+    "rating": "5.0",
+    "reviews": "7",
+    "rating_disp": "5.0",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=WG%20Vloeren%20Den%20Haag%20-%20Gietvloeren%2C%20Egaliseren%20%26%20meer&amp;query_place_id=ChIJWx1oqYS3xUcRjtJIyufW-fs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-wg-vloeren-den-haag-gietvloeren-egaliseren-meer-ufw-fs",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-ypenburg-f7f6z4/",
+    "name": "Gietvloer Ypenburg",
+    "plaats": "Den Haag",
+    "rating": "5.0",
+    "reviews": "6",
+    "rating_disp": "5.0",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Ypenburg&amp;query_place_id=ChIJEW14PMXJxUcRy8khMF7f6z4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-ypenburg-f7f6z4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/s-f-system-floors-bv-jlpqkg/",
+    "name": "S.F. System Floors BV",
+    "plaats": "Den Haag",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=S.F.%20System%20Floors%20BV&amp;query_place_id=ChIJCwnxu5ewxUcRSD_48jlPQkg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-s-f-system-floors-bv-jlpqkg",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "den-haag",
+  "template": "default"
+ },
+ "deventer": {
+  "city": "Deventer",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/soldicoat-bv-kunststofvloeren-ep55wu/",
+    "name": "Soldicoat BV Kunststofvloeren",
+    "plaats": "Deventer",
+    "rating": "4.9",
+    "reviews": "18",
+    "rating_disp": "4.9",
+    "reviews_disp": "18",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Soldicoat%20BV%20Kunststofvloeren&amp;query_place_id=ChIJfTEvkafrx0cR7pV2xeP55wU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-soldicoat-bv-kunststofvloeren-ep55wu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/mh-kunstofvloeren-yj7azw/",
+    "name": "MH Kunstofvloeren",
+    "plaats": "Deventer",
+    "rating": "5.0",
+    "reviews": "14",
+    "rating_disp": "5.0",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MH%20Kunstofvloeren&amp;query_place_id=ChIJ0xgkQXTqx0cRygjUoYJ7aZw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-mh-kunstofvloeren-yj7azw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/floors-in-style-krya8c/",
+    "name": "Floors in Style",
+    "plaats": "Deventer",
+    "rating": "4.3",
+    "reviews": "12",
+    "rating_disp": "4.3",
+    "reviews_disp": "12",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Floors%20in%20Style&amp;query_place_id=ChIJXVuFKzvtx0cRU9ONwkRyA8c",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-floors-in-style-krya8c",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/floro-vloerenspecialist-igfje8/",
+    "name": "Flōrō vloerenspecialist",
+    "plaats": "Deventer",
+    "rating": "5.0",
+    "reviews": "8",
+    "rating_disp": "5.0",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Fl%C5%8Dr%C5%8D%20vloerenspecialist&amp;query_place_id=ChIJBTuPxWrrx0cRxkKQbIgFje8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-floro-vloerenspecialist-igfje8",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gerton-sport-design-ajn1mk/",
+    "name": "Gerton Sport &amp; Design",
+    "plaats": "Deventer",
+    "rating": "4.3",
+    "reviews": "4",
+    "rating_disp": "4.3",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gerton%20Sport%20%26%20Design&amp;query_place_id=ChIJ8xE2zVfqx0cRiiOBoAJN1Mk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gerton-sport-design-ajn1mk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/nb-vloeren-zj4aq4/",
+    "name": "NB Vloeren",
+    "plaats": "Deventer",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=NB%20Vloeren&amp;query_place_id=ChIJqTuHrCzrx0cRP7PmuZj4aQ4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-nb-vloeren-zj4aq4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/uwvloerafwerking-nl-jd1n50/",
+    "name": "Uwvloerafwerking.nl",
+    "plaats": "Deventer",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Uwvloerafwerking.nl&amp;query_place_id=ChIJIVLQp-Trx0cR-jqUzjD1N50",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-uwvloerafwerking-nl-jd1n50",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/living-stones-gdvxvm/",
+    "name": "Living Stones",
+    "plaats": "Deventer",
+    "rating": "4.0",
+    "reviews": "1",
+    "rating_disp": "4.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Living%20Stones&amp;query_place_id=ChIJQ02MpBfqx0cRhABnVGdvXVM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-living-stones-gdvxvm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/ddm-designvloeren-omlcno/",
+    "name": "DDM Designvloeren",
+    "plaats": "Deventer",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DDM%20Designvloeren&amp;query_place_id=ChIJW7-WIrLrx0cRzf7ljOMLCno",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ddm-designvloeren-omlcno",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "deventer",
+  "template": "default"
+ },
+ "doetinchem": {
+  "city": "Doetinchem",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/multi-vloer-doetinchem-opmrju/",
+    "name": "Multi Vloer Doetinchem",
+    "plaats": "Doetinchem",
+    "rating": "4.6",
+    "reviews": "72",
+    "rating_disp": "4.6",
+    "reviews_disp": "72",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Multi%20Vloer%20Doetinchem&amp;query_place_id=ChIJ2QBn0lKbx0cRdu39_opMRJU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-multi-vloer-doetinchem-opmrju",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/smit-vloersystemen-bv-4svbzy/",
+    "name": "Smit Vloersystemen BV",
+    "plaats": "Doetinchem",
+    "rating": "4.1",
+    "reviews": "9",
+    "rating_disp": "4.1",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Smit%20Vloersystemen%20BV&amp;query_place_id=ChIJra4_QKyEx0cRON61T4svbzY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-smit-vloersystemen-bv-4svbzy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-doetinchem-rldn-g/",
+    "name": "Gietvloer Doetinchem",
+    "plaats": "Doetinchem",
+    "rating": "4.8",
+    "reviews": "5",
+    "rating_disp": "4.8",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Doetinchem&amp;query_place_id=ChIJg7Q8-t2Fx0cRqwTnhRldn-g",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-doetinchem-rldn-g",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/zilly-designvloeren-b-v-l4v06k/",
+    "name": "Zilly Designvloeren B.V.",
+    "plaats": "Doetinchem",
+    "rating": "3.2",
+    "reviews": "5",
+    "rating_disp": "3.2",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Zilly%20Designvloeren%20B.V.&amp;query_place_id=ChIJoQ1uG6yEx0cRfsWgLl4V06k",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-zilly-designvloeren-b-v-l4v06k",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-vloeren-6qp4bg/",
+    "name": "Gietvloer Vloeren",
+    "plaats": "Doetinchem",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Vloeren&amp;query_place_id=ChIJ__-_FqyEx0cRi9I9w6qp4bg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-vloeren-6qp4bg",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "doetinchem",
+  "template": "default"
+ },
+ "dongen": {
+  "city": "Dongen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/wall-floor-solutions-0rwtkq/",
+    "name": "Wall &amp; Floor Solutions",
+    "plaats": "Dongen",
+    "rating": "4.9",
+    "reviews": "60",
+    "rating_disp": "4.9",
+    "reviews_disp": "60",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Wall%20%26%20Floor%20Solutions&amp;query_place_id=ChIJ_35FUGSZxkcRJ-KoN0RwTkQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-wall-floor-solutions-0rwtkq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/glad-gietvloeren-8fx-g8/",
+    "name": "Glad Gietvloeren",
+    "plaats": "Dongen",
+    "rating": "4.8",
+    "reviews": "60",
+    "rating_disp": "4.8",
+    "reviews_disp": "60",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Glad%20Gietvloeren&amp;query_place_id=ChIJ__-_01efxkcRy3LSW8fx-G8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-glad-gietvloeren-8fx-g8",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gm-vloeren-design-jqa4la/",
+    "name": "GM VLOEREN DESIGN",
+    "plaats": "Dongen",
+    "rating": "4.6",
+    "reviews": "33",
+    "rating_disp": "4.6",
+    "reviews_disp": "33",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=GM%20VLOEREN%20DESIGN&amp;query_place_id=ChIJLX3i-R87cEERwSWKrjqA4LA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gm-vloeren-design-jqa4la",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/purliquids-hlo_le/",
+    "name": "Purliquids",
+    "plaats": "Dongen",
+    "rating": "4.7",
+    "reviews": "11",
+    "rating_disp": "4.7",
+    "reviews_disp": "11",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Purliquids&amp;query_place_id=ChIJCX1ul4ifxkcRS_MPbhLo_LE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-purliquids-hlo_le",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/game-kunststofvloeren-cvwg7a/",
+    "name": "Game Kunststofvloeren",
+    "plaats": "Dongen",
+    "rating": "3.4",
+    "reviews": "8",
+    "rating_disp": "3.4",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Game%20Kunststofvloeren&amp;query_place_id=ChIJmxQfKS6YxkcRRcACQcvwg7A",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-game-kunststofvloeren-cvwg7a",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "dongen",
+  "template": "default"
+ },
+ "dordrecht": {
+  "city": "Dordrecht",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/beton-creation-xl-dhk/",
+    "name": "Beton Creation",
+    "plaats": "Dordrecht",
+    "rating": "4.8",
+    "reviews": "23",
+    "rating_disp": "4.8",
+    "reviews_disp": "23",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Beton%20Creation&amp;query_place_id=ChIJK2_PWRwpxEcRFN9_Cxl-Dhk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-beton-creation-xl-dhk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/creative-floors-gietvloeren-dordrecht-suul6e/",
+    "name": "Creative Floors Gietvloeren Dordrecht",
+    "plaats": "Dordrecht",
+    "rating": "5.0",
+    "reviews": "15",
+    "rating_disp": "5.0",
+    "reviews_disp": "15",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Creative%20Floors%20Gietvloeren%20Dordrecht&amp;query_place_id=ChIJH9tewGAvxEcRlQbXASuul6E",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-creative-floors-gietvloeren-dordrecht-suul6e",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-dordrecht-gieavw/",
+    "name": "Gietvloer Dordrecht",
+    "plaats": "Dordrecht",
+    "rating": "4.8",
+    "reviews": "6",
+    "rating_disp": "4.8",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Dordrecht&amp;query_place_id=ChIJx9x2KmopxEcRaRuKwgiEavw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-dordrecht-gieavw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/malema-coatings-yy7lqi/",
+    "name": "Malema Coatings",
+    "plaats": "Dordrecht",
+    "rating": "5.0",
+    "reviews": "3",
+    "rating_disp": "5.0",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Malema%20Coatings&amp;query_place_id=ChIJ47QAWrAvxEcRUpcE8yY7lqI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-malema-coatings-yy7lqi",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "dordrecht",
+  "template": "default"
+ },
+ "duiven": {
+  "city": "Duiven",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vloeren-studio-duiven-4ikbuk/",
+    "name": "Vloeren Studio Duiven",
+    "plaats": "Duiven",
+    "rating": "4.3",
+    "reviews": "46",
+    "rating_disp": "4.3",
+    "reviews_disp": "46",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloeren%20Studio%20Duiven&amp;query_place_id=ChIJA2SopsKjx0cRhOMcl4IkBuk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloeren-studio-duiven-4ikbuk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/projectvloeren-nederland-dsk6f0/",
+    "name": "Projectvloeren Nederland",
+    "plaats": "Duiven",
+    "rating": "4.8",
+    "reviews": "17",
+    "rating_disp": "4.8",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Projectvloeren%20Nederland&amp;query_place_id=ChIJw1l-dDKix0cRmZrIAdsk6f0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-projectvloeren-nederland-dsk6f0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/diamond-flooring-wxka1i/",
+    "name": "Diamond Flooring",
+    "plaats": "Duiven",
+    "rating": "4.0",
+    "reviews": "8",
+    "rating_disp": "4.0",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Diamond%20Flooring&amp;query_place_id=ChIJ50EXrO81x0cRYJpM7wxka1I",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-diamond-flooring-wxka1i",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "eindhoven": {
+  "city": "Eindhoven",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/de-vloeren-dokters-ip4dii/",
+    "name": "De Vloeren Dokters",
+    "plaats": "Eindhoven",
+    "rating": "4.9",
+    "reviews": "173",
+    "rating_disp": "4.9",
+    "reviews_disp": "173",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Vloeren%20Dokters&amp;query_place_id=ChIJqcSPCTDbxkcRqINt7IP4DII",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-de-vloeren-dokters-ip4dii",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/microcement-studio-zp-wjg/",
+    "name": "Microcement Studio",
+    "plaats": "Eindhoven",
+    "rating": "5.0",
+    "reviews": "38",
+    "rating_disp": "5.0",
+    "reviews_disp": "38",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Microcement%20Studio&amp;query_place_id=ChIJ30r3YW3fxkcRKECOFZp-wJg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-microcement-studio-zp-wjg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-eindhoven-nlcnhy/",
+    "name": "Gietvloer Eindhoven",
+    "plaats": "Eindhoven",
+    "rating": "4.9",
+    "reviews": "14",
+    "rating_disp": "4.9",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Eindhoven&amp;query_place_id=ChIJ9dEkP1bbxkcRCoRemnLcNhY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-eindhoven-nlcnhy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/eindhovengietvloer-eindhoven-gietvloer-4wkmcm/",
+    "name": "eindhovengietvloer - Eindhoven Gietvloer",
+    "plaats": "Eindhoven",
+    "rating": "4.9",
+    "reviews": "9",
+    "rating_disp": "4.9",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=eindhovengietvloer%20-%20Eindhoven%20Gietvloer&amp;query_place_id=ChIJR6eB7RnbxkcRz81Ra4wkmCM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-eindhovengietvloer-eindhoven-gietvloer-4wkmcm",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "eindhoven",
+  "template": "default"
+ },
+ "enkhuizen": {
+  "city": "Enkhuizen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerglijders-nl-wxmh_g/",
+    "name": "Vloerglijders.nl",
+    "plaats": "Enkhuizen",
+    "rating": "4.8",
+    "reviews": "925",
+    "rating_disp": "4.8",
+    "reviews_disp": "925",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerglijders.nl&amp;query_place_id=ChIJO5d5E4mlyEcRjFea4wxMH_g",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerglijders-nl-wxmh_g",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerendirect-x29v7y/",
+    "name": "Vloerendirect",
+    "plaats": "Enkhuizen",
+    "rating": "4.0",
+    "reviews": "45",
+    "rating_disp": "4.0",
+    "reviews_disp": "45",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerendirect&amp;query_place_id=ChIJaQnwZ3ejyEcRjn821x29V7Y",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerendirect-x29v7y",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloeren-legservice-enkhuizen-eiw7we/",
+    "name": "Vloeren legservice Enkhuizen",
+    "plaats": "Enkhuizen",
+    "rating": "4.6",
+    "reviews": "9",
+    "rating_disp": "4.6",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloeren%20legservice%20Enkhuizen&amp;query_place_id=ChIJv7TgU-omtSkRZhU1beiw7WE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloeren-legservice-enkhuizen-eiw7we",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/ovylusso-n8ix94/",
+    "name": "OvyLusso",
+    "plaats": "Enkhuizen",
+    "rating": "5.0",
+    "reviews": "7",
+    "rating_disp": "5.0",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=OvyLusso&amp;query_place_id=ChIJnXu0-mSjyEcR1kKWln8IX94",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ovylusso-n8ix94",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "enkhuizen",
+  "template": "default"
+ },
+ "erp": {
+  "city": "Erp",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/de-vloerenmakers-bv-n190dg/",
+    "name": "De Vloerenmakers BV",
+    "plaats": "Erp",
+    "rating": "5.0",
+    "reviews": "26",
+    "rating_disp": "5.0",
+    "reviews_disp": "26",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Vloerenmakers%20BV&amp;query_place_id=ChIJ73g5VGUfx0cRwCMB3n190dg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-de-vloerenmakers-bv-n190dg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/ideaal-vloeren-mjfyjm/",
+    "name": "Ideaal Vloeren",
+    "plaats": "Erp",
+    "rating": "4.3",
+    "reviews": "12",
+    "rating_disp": "4.3",
+    "reviews_disp": "12",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Ideaal%20Vloeren&amp;query_place_id=ChIJj7uWW_DhxkcRB6jY6MJfYJM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ideaal-vloeren-mjfyjm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/levels-gietvloeren-z0162a/",
+    "name": "Levels gietvloeren",
+    "plaats": "Erp",
+    "rating": "5.0",
+    "reviews": "8",
+    "rating_disp": "5.0",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Levels%20gietvloeren&amp;query_place_id=ChIJ46SCrIkfx0cRF9-NOz0162A",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-levels-gietvloeren-z0162a",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "geleen": {
+  "city": "Geleen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/sealteq-zuid-studio-bovitec-qo4n4w/",
+    "name": "SealteQ Zuid | Studio Bovitec",
+    "plaats": "Geleen",
+    "rating": "4.0",
+    "reviews": "40",
+    "rating_disp": "4.0",
+    "reviews_disp": "40",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=SealteQ%20Zuid%20%7C%20Studio%20Bovitec&amp;query_place_id=ChIJF3cICTDHwEcRdTCUAQo4N4w",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-sealteq-zuid-studio-bovitec-qo4n4w",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/solid-floors-cement-gietdekvloeren--7mdno/",
+    "name": "Solid Floors | Cement- &amp; Gietdekvloeren",
+    "plaats": "Geleen",
+    "rating": "4.5",
+    "reviews": "27",
+    "rating_disp": "4.5",
+    "reviews_disp": "27",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Solid%20Floors%20%7C%20Cement-%20%26%20Gietdekvloeren&amp;query_place_id=ChIJgS-ZgS3HwEcR3os1_-7mdno",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-solid-floors-cement-gietdekvloeren--7mdno",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/grindstunter-c_gwmm/",
+    "name": "Grindstunter",
+    "plaats": "Geleen",
+    "rating": "3.9",
+    "reviews": "11",
+    "rating_disp": "3.9",
+    "reviews_disp": "11",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Grindstunter&amp;query_place_id=ChIJObewVxHHwEcRcJLoDc_gWMM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-grindstunter-c_gwmm",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "goes": {
+  "city": "Goes",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/ab-epoxy-osm6ru/",
+    "name": "AB-epoxy",
+    "plaats": "Goes",
+    "rating": "5.0",
+    "reviews": "18",
+    "rating_disp": "5.0",
+    "reviews_disp": "18",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=AB-epoxy&amp;query_place_id=ChIJtfzwukxjxEcREdbcNOsM6rU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ab-epoxy-osm6ru",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-goes-lbgqro/",
+    "name": "Gietvloer Goes",
+    "plaats": "Goes",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Goes&amp;query_place_id=ChIJx-x99HKJxEcRbCnOVlBgqro",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-goes-lbgqro",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/dream-art-gietvloeren-sn8ask/",
+    "name": "Dream art gietvloeren",
+    "plaats": "Goes",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Dream%20art%20gietvloeren&amp;query_place_id=ChIJbVJwd9JkxEcRSMfw3sN8aSk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-dream-art-gietvloeren-sn8ask",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "goes",
+  "template": "default"
+ },
+ "gouda": {
+  "city": "Gouda",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/goudse-vloeren-lrq7xg/",
+    "name": "Goudse Vloeren",
+    "plaats": "Gouda",
+    "rating": "4.7",
+    "reviews": "58",
+    "rating_disp": "4.7",
+    "reviews_disp": "58",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Goudse%20Vloeren&amp;query_place_id=ChIJY0lJc2jRxUcRDOxTELRQ7xg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-goudse-vloeren-lrq7xg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/fusion-gietvloeren-td5efi/",
+    "name": "Fusion Gietvloeren",
+    "plaats": "Gouda",
+    "rating": "4.7",
+    "reviews": "33",
+    "rating_disp": "4.7",
+    "reviews_disp": "33",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Fusion%20Gietvloeren&amp;query_place_id=ChIJ3e57-vrTxUcRam_Ugtd5EFI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-fusion-gietvloeren-td5efi",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-gouda-gzbc6i/",
+    "name": "Gietvloer Gouda",
+    "plaats": "Gouda",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Gouda&amp;query_place_id=ChIJ3fITSMPRxUcRkSBEQGZBC6I",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-gouda-gzbc6i",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "gouda",
+  "template": "default"
+ },
+ "groningen": {
+  "city": "Groningen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/smid-interieur--tjtla/",
+    "name": "Smid interieur",
+    "plaats": "Groningen",
+    "rating": "4.6",
+    "reviews": "51",
+    "rating_disp": "4.6",
+    "reviews_disp": "51",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Smid%20interieur&amp;query_place_id=ChIJf9K-0J3SyUcRFInVr-TjTlA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-smid-interieur--tjtla",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerenkunst-jjfvlq/",
+    "name": "Vloerenkunst",
+    "plaats": "Groningen",
+    "rating": "4.7",
+    "reviews": "46",
+    "rating_disp": "4.7",
+    "reviews_disp": "46",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerenkunst&amp;query_place_id=ChIJezR22HvNyUcRmlQT8JjFVLQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerenkunst-jjfvlq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/floormade-pywbks/",
+    "name": "Floormade",
+    "plaats": "Groningen",
+    "rating": "4.4",
+    "reviews": "11",
+    "rating_disp": "4.4",
+    "reviews_disp": "11",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Floormade&amp;query_place_id=ChIJO9slhjMtyEcRtBpYGpYWBKs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-floormade-pywbks",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-groningen-4oyz_m/",
+    "name": "Gietvloer Groningen",
+    "plaats": "Groningen",
+    "rating": "4.8",
+    "reviews": "10",
+    "rating_disp": "4.8",
+    "reviews_disp": "10",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Groningen&amp;query_place_id=ChIJvwNdmv6ozEsR9-YEp4OYZ_M",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-groningen-4oyz_m",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/groningen-gietvloer-groningengietvloer-2rka2m/",
+    "name": "Groningen Gietvloer - groningengietvloer",
+    "plaats": "Groningen",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Groningen%20Gietvloer%20-%20groningengietvloer&amp;query_place_id=ChIJHXU9bADNyUcRUjsAx2Rka2M",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-groningen-gietvloer-groningengietvloer-2rka2m",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/jouweigenvloer-dlw4-c/",
+    "name": "Jouweigenvloer",
+    "plaats": "Groningen",
+    "rating": "4.5",
+    "reviews": "2",
+    "rating_disp": "4.5",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Jouweigenvloer&amp;query_place_id=ChIJSxsoDOItyEcRo5vpbdLW4-c",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-jouweigenvloer-dlw4-c",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "groningen",
+  "template": "default"
+ },
+ "haarlem": {
+  "city": "Haarlem",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-garant-jx-tuo/",
+    "name": "Gietvloer Garant",
+    "plaats": "Haarlem",
+    "rating": "4.6",
+    "reviews": "50",
+    "rating_disp": "4.6",
+    "reviews_disp": "50",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Garant&amp;query_place_id=ChIJ88rWFH_vxUcRAE9f7Jx-tUo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-garant-jx-tuo",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-haarlem-sdzoos/",
+    "name": "Gietvloer Haarlem",
+    "plaats": "Haarlem",
+    "rating": "4.7",
+    "reviews": "16",
+    "rating_disp": "4.7",
+    "reviews_disp": "16",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Haarlem&amp;query_place_id=ChIJAz1m7bbvxUcRU56OfSDZOos",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-haarlem-sdzoos",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/cicami-gietvloeren-haarlem-l_bshc/",
+    "name": "Cicami | Gietvloeren Haarlem",
+    "plaats": "Haarlem",
+    "rating": "5.0",
+    "reviews": "12",
+    "rating_disp": "5.0",
+    "reviews_disp": "12",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Cicami%20%7C%20Gietvloeren%20Haarlem&amp;query_place_id=ChIJXRjRX3_vxUcRTox5Pl_bshc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-cicami-gietvloeren-haarlem-l_bshc",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "haarlem",
+  "template": "default"
+ },
+ "heesch": {
+  "city": "Heesch",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/becksvloeren-xyi01y/",
+    "name": "Becksvloeren",
+    "plaats": "Heesch",
+    "rating": "4.9",
+    "reviews": "25",
+    "rating_disp": "4.9",
+    "reviews_disp": "25",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Becksvloeren&amp;query_place_id=ChIJ1XOtU7XkRA0RRAkbFxyI01Y",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-becksvloeren-xyi01y",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/bvs-gietvloeren-w4mqko/",
+    "name": "BvS Gietvloeren",
+    "plaats": "Heesch",
+    "rating": "4.2",
+    "reviews": "14",
+    "rating_disp": "4.2",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=BvS%20Gietvloeren&amp;query_place_id=ChIJOabM6q_8xkcRzY_ctw4MQKo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-bvs-gietvloeren-w4mqko",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/van-berkel-bernheze-beheer-b-v-ntxuws/",
+    "name": "Van Berkel Bernheze Beheer B.V.",
+    "plaats": "Heesch",
+    "rating": "2.7",
+    "reviews": "13",
+    "rating_disp": "2.7",
+    "reviews_disp": "13",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Berkel%20Bernheze%20Beheer%20B.V.&amp;query_place_id=ChIJx7HIc7X8xkcREeFm2nTxUWs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-van-berkel-bernheze-beheer-b-v-ntxuws",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "helmond": {
+  "city": "Helmond",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/my-design-floors-wxojgg/",
+    "name": "MY design floors",
+    "plaats": "Helmond",
+    "rating": "4.9",
+    "reviews": "34",
+    "rating_disp": "4.9",
+    "reviews_disp": "34",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MY%20design%20floors&amp;query_place_id=ChIJcc0SFJ4jx0cR3pg0TWxojGg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-my-design-floors-wxojgg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/c-kornuyt-bv--1knd0/",
+    "name": "C. Kornuyt BV",
+    "plaats": "Helmond",
+    "rating": "4.6",
+    "reviews": "8",
+    "rating_disp": "4.6",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=C.%20Kornuyt%20BV&amp;query_place_id=ChIJlVmDFfIjx0cRcBoLR-1knD0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-c-kornuyt-bv--1knd0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-helmond-pukegk/",
+    "name": "Gietvloer Helmond",
+    "plaats": "Helmond",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Helmond&amp;query_place_id=ChIJc8NsghQjx0cRhTEA7pUKEGk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-helmond-pukegk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/coatingshop-nl-hte0oc/",
+    "name": "CoatingShop.nl",
+    "plaats": "Helmond",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=CoatingShop.nl&amp;query_place_id=ChIJKakVZo8jx0cRIWw8Lhte0Oc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-coatingshop-nl-hte0oc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/jaberg-bedrijfsvloercoating-mrrm00/",
+    "name": "Jaberg Bedrijfsvloercoating",
+    "plaats": "Helmond",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Jaberg%20Bedrijfsvloercoating&amp;query_place_id=ChIJzUP0N5Ajx0cRcDDN5mrRm00",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-jaberg-bedrijfsvloercoating-mrrm00",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "helmond",
+  "template": "default"
+ },
+ "hoogeveen": {
+  "city": "Hoogeveen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/hooge-vloeren-gietvloeren-epoxy-coating-vloer-hoogeveen-bgjljm/",
+    "name": "Hooge Vloeren | Gietvloeren | Epoxy | Coating vloer | Hoogeveen",
+    "plaats": "Hoogeveen",
+    "rating": "5.0",
+    "reviews": "22",
+    "rating_disp": "5.0",
+    "reviews_disp": "22",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Hooge%20Vloeren%20%7C%20Gietvloeren%20%7C%20Epoxy%20%7C%20Coating%20vloer%20%7C%20Hoogeveen&amp;query_place_id=ChIJvR4Thv0byEcRIEPCwbgjlJM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-hooge-vloeren-gietvloeren-epoxy-coating-vloer-hoogeveen-bgjljm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloertechniek-hoogeveen-kunststof-bedrijfsvloeren-bdyagc/",
+    "name": "Vloertechniek Hoogeveen - Kunststof bedrijfsvloeren",
+    "plaats": "Hoogeveen",
+    "rating": "4.0",
+    "reviews": "16",
+    "rating_disp": "4.0",
+    "reviews_disp": "16",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloertechniek%20Hoogeveen%20-%20Kunststof%20bedrijfsvloeren&amp;query_place_id=ChIJVxk5hAYbyEcRxlxm0BDyagc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloertechniek-hoogeveen-kunststof-bedrijfsvloeren-bdyagc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-hoogeveen-wsdtrw/",
+    "name": "Gietvloer Hoogeveen",
+    "plaats": "Hoogeveen",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Hoogeveen&amp;query_place_id=ChIJt7XytD4byEcRZZ7ddwsDtrw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-hoogeveen-wsdtrw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/rv-kunststofvloeren-mnmm4o/",
+    "name": "RV kunststofvloeren",
+    "plaats": "Hoogeveen",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RV%20kunststofvloeren&amp;query_place_id=ChIJoRbPok8byEcRD2e8oMnMm4o",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-rv-kunststofvloeren-mnmm4o",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "hoogeveen",
+  "template": "default"
+ },
+ "huizen": {
+  "city": "Huizen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/tgs-huizen-3_upge/",
+    "name": "TGS Huizen",
+    "plaats": "Huizen",
+    "rating": "4.5",
+    "reviews": "20",
+    "rating_disp": "4.5",
+    "reviews_disp": "20",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=TGS%20Huizen&amp;query_place_id=ChIJca13xbYVxkcRj5l5v3_UpGE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-tgs-huizen-3_upge",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-huizen-tpzfza/",
+    "name": "Gietvloer Huizen",
+    "plaats": "Huizen",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Huizen&amp;query_place_id=ChIJfQORxm8VxkcRiE2rNtPzfZA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-huizen-tpzfza",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/indurfloor-bedrijfsvloeren-specialist-6ucgm0/",
+    "name": "Indurfloor Bedrijfsvloeren Specialist",
+    "plaats": "Huizen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Indurfloor%20Bedrijfsvloeren%20Specialist&amp;query_place_id=ChIJUxAwjLgVxkcRxZUm06UCGm0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-indurfloor-bedrijfsvloeren-specialist-6ucgm0",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "huizen",
+  "template": "default"
+ },
+ "ijsselstein": {
+  "city": "IJsselstein",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/de-vloerenman-vloertegels-sfjazy/",
+    "name": "De Vloerenman vloertegels",
+    "plaats": "IJsselstein",
+    "rating": "4.7",
+    "reviews": "129",
+    "rating_disp": "4.7",
+    "reviews_disp": "129",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Vloerenman%20vloertegels&amp;query_place_id=ChIJlUr52upkxkcRJe943sFjAZY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-de-vloerenman-vloertegels-sfjazy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/megafloors-pvc-laminaat-visgraat-de-vloerenspecialist-van-nederland-xldt8k/",
+    "name": "MegaFloors | PVC, Laminaat, Visgraat | Dè vloerenspecialist van Nederland",
+    "plaats": "IJsselstein",
+    "rating": "4.7",
+    "reviews": "76",
+    "rating_disp": "4.7",
+    "reviews_disp": "76",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MegaFloors%20%7C%20PVC%2C%20Laminaat%2C%20Visgraat%20%7C%20D%C3%A8%20vloerenspecialist%20van%20Nederland&amp;query_place_id=ChIJY8jAaRllxkcRZ6jWSxLdT8k",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-megafloors-pvc-laminaat-visgraat-de-vloerenspecialist-van-nederland-xldt8k",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/u-floor-pj8-wc/",
+    "name": "U-Floor",
+    "plaats": "IJsselstein",
+    "rating": "4.9",
+    "reviews": "57",
+    "rating_disp": "4.9",
+    "reviews_disp": "57",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=U-Floor&amp;query_place_id=ChIJKaR9WGVjxkcRW4lMTpJ8-Wc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-u-floor-pj8-wc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/js-vloeren-3czyb0/",
+    "name": "JS Vloeren",
+    "plaats": "IJsselstein",
+    "rating": "4.6",
+    "reviews": "53",
+    "rating_disp": "4.6",
+    "reviews_disp": "53",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=JS%20Vloeren&amp;query_place_id=ChIJ-Rfd-41kxkcRTIYR33cZYb0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-js-vloeren-3czyb0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerix-g-iuf4/",
+    "name": "Vloerix",
+    "plaats": "IJsselstein",
+    "rating": "4.8",
+    "reviews": "20",
+    "rating_disp": "4.8",
+    "reviews_disp": "20",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerix&amp;query_place_id=ChIJE3yBs35lxkcRK1BzmG-iUF4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerix-g-iuf4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/de-egaline-experts-brlp80/",
+    "name": "De Egaline Experts",
+    "plaats": "IJsselstein",
+    "rating": "5.0",
+    "reviews": "13",
+    "rating_disp": "5.0",
+    "reviews_disp": "13",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Egaline%20Experts&amp;query_place_id=ChIJPxUqnBplxkcRXz2SXbrLP80",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-de-egaline-experts-brlp80",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/slipsafe-products-bv-kh1f2q/",
+    "name": "SlipSafe Products BV",
+    "plaats": "IJsselstein",
+    "rating": "5.0",
+    "reviews": "7",
+    "rating_disp": "5.0",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=SlipSafe%20Products%20BV&amp;query_place_id=ChIJ92Sd9ZJkxkcRRDCgXKh1f2Q",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-slipsafe-products-bv-kh1f2q",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "ijsselstein",
+  "template": "default"
+ },
+ "kampen": {
+  "city": "Kampen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/robin-ruijmgaart-kunststofvloeren-ahxpw4/",
+    "name": "Robin Ruijmgaart Kunststofvloeren",
+    "plaats": "Kampen",
+    "rating": "5.0",
+    "reviews": "13",
+    "rating_disp": "5.0",
+    "reviews_disp": "13",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Robin%20Ruijmgaart%20Kunststofvloeren&amp;query_place_id=ChIJXU6Ees3Xx0cRJ-n8uaHxPw4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-robin-ruijmgaart-kunststofvloeren-ahxpw4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-kampen-ezlf4a/",
+    "name": "Gietvloer Kampen",
+    "plaats": "Kampen",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Kampen&amp;query_place_id=ChIJW3e_sSt5yEcRFndyaEzLF4A",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-kampen-ezlf4a",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/straxt-design-qezbn0/",
+    "name": "Straxt Design",
+    "plaats": "Kampen",
+    "rating": "5.0",
+    "reviews": "2",
+    "rating_disp": "5.0",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Straxt%20Design&amp;query_place_id=ChIJex5NzXZ5yEcRl-WGGqEZBN0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-straxt-design-qezbn0",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "kampen",
+  "template": "default"
+ },
+ "kerkrade": {
+  "city": "Kerkrade",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/intro-vloerencentrum-9hzffy/",
+    "name": "Intro Vloerencentrum",
+    "plaats": "Kerkrade",
+    "rating": "4.3",
+    "reviews": "100",
+    "rating_disp": "4.3",
+    "reviews_disp": "100",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Intro%20Vloerencentrum&amp;query_place_id=ChIJa1dfeL-XwEcRbZ35b9hZfFY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-intro-vloerencentrum-9hzffy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-kerkrade-sp98s0/",
+    "name": "Gietvloer Kerkrade",
+    "plaats": "Kerkrade",
+    "rating": "4.8",
+    "reviews": "5",
+    "rating_disp": "4.8",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Kerkrade&amp;query_place_id=ChIJP1e0bxaXwEcR1lCpgsP98S0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-kerkrade-sp98s0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerenboulevard-limburg-ckprao/",
+    "name": "Vloerenboulevard Limburg",
+    "plaats": "Kerkrade",
+    "rating": "5.0",
+    "reviews": "3",
+    "rating_disp": "5.0",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerenboulevard%20Limburg&amp;query_place_id=ChIJH3AmaN6XwEcRyVMsWCkpRAo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerenboulevard-limburg-ckprao",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "kerkrade",
+  "template": "default"
+ },
+ "leerdam": {
+  "city": "Leerdam",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/de-gietvloer-designers-ukp7ky/",
+    "name": "De Gietvloer Designers",
+    "plaats": "Leerdam",
+    "rating": "5.0",
+    "reviews": "82",
+    "rating_disp": "5.0",
+    "reviews_disp": "82",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Gietvloer%20Designers&amp;query_place_id=ChIJW2ovrx2JxkcRrvDOdUKP7KY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-de-gietvloer-designers-ukp7ky",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerx-q1n0oq/",
+    "name": "VloerX",
+    "plaats": "Leerdam",
+    "rating": "4.4",
+    "reviews": "45",
+    "rating_disp": "4.4",
+    "reviews_disp": "45",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=VloerX&amp;query_place_id=ChIJuyt81qeJxkcRLeh6Uq1N0oQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerx-q1n0oq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/middag-gietvloeren-kl142k/",
+    "name": "Middag Gietvloeren",
+    "plaats": "Leerdam",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Middag%20Gietvloeren&amp;query_place_id=ChIJmdkgKOaJxkcRc0S_AKL142k",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-middag-gietvloeren-kl142k",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "leeuwarden": {
+  "city": "Leeuwarden",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/lab21-leeuwarden-pvc-vloeren-laminaat-parket-_xdvwa/",
+    "name": "LAB21 Leeuwarden | PVC vloeren, laminaat &amp; parket",
+    "plaats": "Leeuwarden",
+    "rating": "3.6",
+    "reviews": "113",
+    "rating_disp": "3.6",
+    "reviews_disp": "113",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=LAB21%20Leeuwarden%20%7C%20PVC%20vloeren%2C%20laminaat%20%26%20parket&amp;query_place_id=ChIJXzVAVP3-yEcRgFS6m_xDvwA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-lab21-leeuwarden-pvc-vloeren-laminaat-parket-_xdvwa",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/kunststofvloeren-noord-r_qrzm/",
+    "name": "Kunststofvloeren Noord",
+    "plaats": "Leeuwarden",
+    "rating": "5.0",
+    "reviews": "31",
+    "rating_disp": "5.0",
+    "reviews_disp": "31",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Kunststofvloeren%20Noord&amp;query_place_id=ChIJ1zrZONz9yEcRqvyjjR_qRZM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-kunststofvloeren-noord-r_qrzm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-leeuwarden-nkin30/",
+    "name": "Gietvloer Leeuwarden",
+    "plaats": "Leeuwarden",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Leeuwarden&amp;query_place_id=ChIJ9wV-96n9yEcRnbDN6NkIN30",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-leeuwarden-nkin30",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vdv-betonrenovatie-kunststofvloeren-snuy8y/",
+    "name": "VDV Betonrenovatie &amp; Kunststofvloeren",
+    "plaats": "Leeuwarden",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=VDV%20Betonrenovatie%20%26%20Kunststofvloeren&amp;query_place_id=ChIJ7-rzjJv-yEcRU_xGzsnuY8Y",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vdv-betonrenovatie-kunststofvloeren-snuy8y",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "leeuwarden",
+  "template": "default"
+ },
+ "lelystad": {
+  "city": "Lelystad",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/multiquartz-g1gmhs/",
+    "name": "MultiQuartz",
+    "plaats": "Lelystad",
+    "rating": "4.8",
+    "reviews": "38",
+    "rating_disp": "4.8",
+    "reviews_disp": "38",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MultiQuartz&amp;query_place_id=ChIJTyyTyrwmxkcRH8hFHg1GMhs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-multiquartz-g1gmhs",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-lelystad-lc1pxk/",
+    "name": "Gietvloer Lelystad",
+    "plaats": "Lelystad",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Lelystad&amp;query_place_id=ChIJmUQkC0QlxkcRp5TN0LC1pxk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-lelystad-lc1pxk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/abk-kunststofvloeren-bv-rncdju/",
+    "name": "ABK Kunststofvloeren BV.",
+    "plaats": "Lelystad",
+    "rating": "4.5",
+    "reviews": "2",
+    "rating_disp": "4.5",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=ABK%20Kunststofvloeren%20BV.&amp;query_place_id=ChIJZ-tpw1VVdAwRnh4o6RNcDJU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-abk-kunststofvloeren-bv-rncdju",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "lelystad",
+  "template": "default"
+ },
+ "maastricht": {
+  "city": "Maastricht",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-maastricht-yhpv9m/",
+    "name": "Gietvloer Maastricht",
+    "plaats": "Maastricht",
+    "rating": "4.8",
+    "reviews": "6",
+    "rating_disp": "4.8",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Maastricht&amp;query_place_id=ChIJuRBgeQfpwEcR2WKNbyHpV9M",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-maastricht-yhpv9m",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/intro-vloerencentrum-maastricht-qbg7vk/",
+    "name": "Intro Vloerencentrum Maastricht",
+    "plaats": "Maastricht",
+    "rating": "3.7",
+    "reviews": "3",
+    "rating_disp": "3.7",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Intro%20Vloerencentrum%20Maastricht&amp;query_place_id=ChIJoyYB6ufpwEcRqbKzjqBg7Vk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-intro-vloerencentrum-maastricht-qbg7vk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/j2-eflpns/",
+    "name": "J2+",
+    "plaats": "Maastricht",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=J2%2B&amp;query_place_id=ChIJMVPpOy7DwEcR8NO0zEfLPNs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-j2-eflpns",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "maastricht",
+  "template": "default"
+ },
+ "nieuwegein": {
+  "city": "Nieuwegein",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/restyle-floor-solutions-mike-repi-53_p8a/",
+    "name": "Restyle Floor Solutions - Mike Repi",
+    "plaats": "Nieuwegein",
+    "rating": "4.9",
+    "reviews": "72",
+    "rating_disp": "4.9",
+    "reviews_disp": "72",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Restyle%20Floor%20Solutions%20-%20Mike%20Repi&amp;query_place_id=ChIJu8CyMqllxkcRoiUeP53_p8A",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-restyle-floor-solutions-mike-repi-53_p8a",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/zitman-vloeren-trxcam/",
+    "name": "Zitman Vloeren",
+    "plaats": "Nieuwegein",
+    "rating": "5.0",
+    "reviews": "11",
+    "rating_disp": "5.0",
+    "reviews_disp": "11",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Zitman%20Vloeren&amp;query_place_id=ChIJX9ZyZV1lxkcRfJKI1TrXcaM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-zitman-vloeren-trxcam",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-nieuwegein-ml7irm/",
+    "name": "Gietvloer Nieuwegein",
+    "plaats": "Nieuwegein",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Nieuwegein&amp;query_place_id=ChIJ99gT6oNlxkcRggefxMl7iRM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-nieuwegein-ml7irm",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "nieuwegein",
+  "template": "default"
+ },
+ "nijmegen": {
+  "city": "Nijmegen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-nijmegen-omebmi/",
+    "name": "Gietvloer Nijmegen",
+    "plaats": "Nijmegen",
+    "rating": "5.0",
+    "reviews": "15",
+    "rating_disp": "5.0",
+    "reviews_disp": "15",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Nijmegen&amp;query_place_id=ChIJg63AsJgHx0cR4o08noMEbMI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-nijmegen-omebmi",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/wg-vloeren-nijmegen-gietvloeren-egaliseren-meer-1ppy0k/",
+    "name": "WG Vloeren Nijmegen | Gietvloeren, Egaliseren &amp; meer",
+    "plaats": "Nijmegen",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=WG%20Vloeren%20Nijmegen%20%7C%20Gietvloeren%2C%20Egaliseren%20%26%20meer&amp;query_place_id=ChIJ1ZXCiX4Jx0cRCWAb11ppy0k",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-wg-vloeren-nijmegen-gietvloeren-egaliseren-meer-1ppy0k",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/wilfra-vloeren-d_02us/",
+    "name": "Wilfra vloeren",
+    "plaats": "Nijmegen",
+    "rating": "3.5",
+    "reviews": "2",
+    "rating_disp": "3.5",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Wilfra%20vloeren&amp;query_place_id=ChIJ9zzAVJAHx0cRonTZld_02Us",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-wilfra-vloeren-d_02us",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vithex-gietvloeren-wwsy9c/",
+    "name": "Vithex Gietvloeren",
+    "plaats": "Nijmegen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vithex%20Gietvloeren&amp;query_place_id=ChIJvTMxW3IIx0cREj6f3wWSY9c",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vithex-gietvloeren-wwsy9c",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "nijmegen",
+  "template": "default"
+ },
+ "noordwijk": {
+  "city": "Noordwijk",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/pvcfloeren-nl-persiafloor-v2neqw/",
+    "name": "Pvcfloeren.nl(Persiafloor)",
+    "plaats": "Noordwijk",
+    "rating": "5.0",
+    "reviews": "64",
+    "rating_disp": "5.0",
+    "reviews_disp": "64",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Pvcfloeren.nl%28Persiafloor%29&amp;query_place_id=ChIJuWm0ulW_xUcRlkZGpV2neqw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-pvcfloeren-nl-persiafloor-v2neqw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/cees-noppe-parketvloeren-n9hzva/",
+    "name": "Cees Noppe Parketvloeren",
+    "plaats": "Noordwijk",
+    "rating": "5.0",
+    "reviews": "2",
+    "rating_disp": "5.0",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Cees%20Noppe%20Parketvloeren&amp;query_place_id=ChIJE43t677AxUcRYZyTFN9hZVA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-cees-noppe-parketvloeren-n9hzva",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/blom-vloerdeco-o9na2i/",
+    "name": "Blom Vloerdeco",
+    "plaats": "Noordwijk",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Blom%20Vloerdeco&amp;query_place_id=ChIJBfCx3xzBxUcR3ynfkO9NA2I",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-blom-vloerdeco-o9na2i",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "noordwijk",
+  "template": "default"
+ },
+ "opheusden": {
+  "city": "Opheusden",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/willem-designvloeren-gevlinderde-betonvloeren-gietvloeren-en-beton-cire-4iq6vu/",
+    "name": "Willem Designvloeren - Gevlinderde betonvloeren, gietvloeren en beton ciré",
+    "plaats": "Opheusden",
+    "rating": "4.8",
+    "reviews": "484",
+    "rating_disp": "4.8",
+    "reviews_disp": "484",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Willem%20Designvloeren%20-%20Gevlinderde%20betonvloeren%2C%20gietvloeren%20en%20beton%20cir%C3%A9&amp;query_place_id=ChIJZ0TF8NZUxkcR1CHQf4IQ6vU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-willem-designvloeren-gevlinderde-betonvloeren-gietvloeren-en-beton-cire-4iq6vu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/essenz-vloeren-bv-ml7n3q/",
+    "name": "Essenz Vloeren bv",
+    "plaats": "Opheusden",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Essenz%20Vloeren%20bv&amp;query_place_id=ChIJp3FbETurx0cRAGq6OMl7n3Q",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-essenz-vloeren-bv-ml7n3q",
+    "shape": "unrated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/hdv-gietvloeren-gism9g/",
+    "name": "HDV gietvloeren",
+    "plaats": "Opheusden",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=HDV%20gietvloeren&amp;query_place_id=ChIJk94FncSrx0cR9iW6TGisM9g",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-hdv-gietvloeren-gism9g",
+    "shape": "unrated"
+   }
+  ],
+  "template": "v2"
+ },
+ "oss": {
+  "city": "Oss",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/bart-gietvloerboutique-gietvloeren-en-pvc-vloeren-showroombezoek-op-afspraak-lq6qg8/",
+    "name": "B·Art Gietvloerboutique | Gietvloeren en PVC vloeren (showroombezoek op afspraak)",
+    "plaats": "Oss",
+    "rating": "4.8",
+    "reviews": "79",
+    "rating_disp": "4.8",
+    "reviews_disp": "79",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=B%C2%B7Art%20Gietvloerboutique%20%7C%20Gietvloeren%20en%20PVC%20vloeren%20%28showroombezoek%20op%20afspraak%29&amp;query_place_id=ChIJn6au42H8xkcRDj-H9Lq6qG8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-bart-gietvloerboutique-gietvloeren-en-pvc-vloeren-showroombezoek-op-afspraak-lq6qg8",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/drt-flooring-group-bv-_y7jec/",
+    "name": "DRT Flooring Group BV",
+    "plaats": "Oss",
+    "rating": "4.2",
+    "reviews": "28",
+    "rating_disp": "4.2",
+    "reviews_disp": "28",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DRT%20Flooring%20Group%20BV&amp;query_place_id=ChIJR5OJbQD9xkcRkH5u7_y7jEc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-drt-flooring-group-bv-_y7jec",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/cellotec-gietvloer-specialist-oss-zvqnpe/",
+    "name": "CelloTec Gietvloer Specialist Oss",
+    "plaats": "Oss",
+    "rating": "5.0",
+    "reviews": "7",
+    "rating_disp": "5.0",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=CelloTec%20Gietvloer%20Specialist%20Oss&amp;query_place_id=ChIJ3xL458X9xkcR3V_O5zVqNPE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-cellotec-gietvloer-specialist-oss-zvqnpe",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-oss-bx8wf0/",
+    "name": "Gietvloer Oss",
+    "plaats": "Oss",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Oss&amp;query_place_id=ChIJPfA439z9xkcR8qvCJBx8wf0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-oss-bx8wf0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/rdesignvloeren-yd-hiw/",
+    "name": "RDesignvloeren",
+    "plaats": "Oss",
+    "rating": "5.0",
+    "reviews": "2",
+    "rating_disp": "5.0",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RDesignvloeren&amp;query_place_id=ChIJM_2oQUv9xkcR0IiqMYD-HIw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-rdesignvloeren-yd-hiw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/stone-carpets-design-gietvloeren-gietvloer-prijzen-vzj534/",
+    "name": "Stone Carpets design gietvloeren gietvloer prijzen",
+    "plaats": "Oss",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stone%20Carpets%20design%20gietvloeren%20gietvloer%20prijzen&amp;query_place_id=ChIJQZgo2478xkcR_C0DCvzj534",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-stone-carpets-design-gietvloeren-gietvloer-prijzen-vzj534",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "oss",
+  "template": "default"
+ },
+ "rijssen": {
+  "city": "Rijssen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/betonlook-nl-5wbxd4/",
+    "name": "betonlook.nl",
+    "plaats": "Rijssen",
+    "rating": "4.4",
+    "reviews": "234",
+    "rating_disp": "4.4",
+    "reviews_disp": "234",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=betonlook.nl&amp;query_place_id=ChIJAamilyr3x0cR4q5n-5wBXD4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-betonlook-nl-5wbxd4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/spaanmeesters-uf6owu/",
+    "name": "Spaanmeesters",
+    "plaats": "Rijssen",
+    "rating": "4.8",
+    "reviews": "4",
+    "rating_disp": "4.8",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Spaanmeesters&amp;query_place_id=ChIJF0bNNcT3x0cRUyDXvuf6owU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-spaanmeesters-uf6owu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vive-z5qxqc/",
+    "name": "Vive",
+    "plaats": "Rijssen",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vive&amp;query_place_id=ChIJhxoaPRj3x0cRV6e6fz5qxqc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vive-z5qxqc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vive-vloeren-rr-xr8/",
+    "name": "Vive Vloeren",
+    "plaats": "Rijssen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vive%20Vloeren&amp;query_place_id=ChIJaTpx0xz3x0cRgB3VDrr-xR8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vive-vloeren-rr-xr8",
+    "shape": "unrated"
+   }
+  ],
+  "template": "v2"
+ },
+ "rijswijk": {
+  "city": "Rijswijk",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/het-rijswijkse-vloerenhuis-b-v-r5fjuc/",
+    "name": "Het Rijswijkse Vloerenhuis B.V.",
+    "plaats": "Rijswijk",
+    "rating": "4.7",
+    "reviews": "115",
+    "rating_disp": "4.7",
+    "reviews_disp": "115",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Het%20Rijswijkse%20Vloerenhuis%20B.V.&amp;query_place_id=ChIJ-0fuPom2xUcRAft07R5FjUc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-het-rijswijkse-vloerenhuis-b-v-r5fjuc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/bruizt-rijswijk-den-haag-gietvloeren-beton-cire-bsdsma/",
+    "name": "Bruizt Rijswijk / Den Haag - Gietvloeren &amp; Beton ciré",
+    "plaats": "Rijswijk",
+    "rating": "5.0",
+    "reviews": "27",
+    "rating_disp": "5.0",
+    "reviews_disp": "27",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bruizt%20Rijswijk%20/%20Den%20Haag%20-%20Gietvloeren%20%26%20Beton%20cir%C3%A9&amp;query_place_id=ChIJSSIXTb63xUcR8w0xFbSdsmA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-bruizt-rijswijk-den-haag-gietvloeren-beton-cire-bsdsma",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-rijswijk-ygw3cc/",
+    "name": "Gietvloer Rijswijk",
+    "plaats": "Rijswijk",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Rijswijk&amp;query_place_id=ChIJETnD9cq3xUcRPeV27ygw3cc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-rijswijk-ygw3cc",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "rijswijk",
+  "template": "default"
+ },
+ "rosmalen": {
+  "city": "Rosmalen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/cementdek-nl-jdupdq/",
+    "name": "Cementdek.nl",
+    "plaats": "Rosmalen",
+    "rating": "4.4",
+    "reviews": "106",
+    "rating_disp": "4.4",
+    "reviews_disp": "106",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Cementdek.nl&amp;query_place_id=ChIJ9WKMer7lxkcReyEnCJDuPdQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-cementdek-nl-jdupdq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/wg-vloeren-gietvloeren-egaliseren-meer-scid64/",
+    "name": "WG Vloeren | Gietvloeren, Egaliseren &amp; meer",
+    "plaats": "Rosmalen",
+    "rating": "5.0",
+    "reviews": "48",
+    "rating_disp": "5.0",
+    "reviews_disp": "48",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=WG%20Vloeren%20%7C%20Gietvloeren%2C%20Egaliseren%20%26%20meer&amp;query_place_id=ChIJCf0LoIflxkcRmz-OlScId64",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-wg-vloeren-gietvloeren-egaliseren-meer-scid64",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/egaliseren-nl-vloer-egaliseren-laat-je-vloer-egaliseren-door-door-onze-experts-spktne/",
+    "name": "Egaliseren.nl | Vloer egaliseren ? Laat je vloer egaliseren door door onze experts",
+    "plaats": "Rosmalen",
+    "rating": "3.8",
+    "reviews": "19",
+    "rating_disp": "3.8",
+    "reviews_disp": "19",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Egaliseren.nl%20%7C%20Vloer%20egaliseren%20%3F%20Laat%20je%20vloer%20egaliseren%20door%20door%20onze%20experts&amp;query_place_id=ChIJe56JV-T9xkcRsQ8-bSPkTNE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-egaliseren-nl-vloer-egaliseren-laat-je-vloer-egaliseren-door-door-onze-experts-spktne",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerenbedrijf-van-zandvoort-b-v-5-pzc0/",
+    "name": "Vloerenbedrijf van Zandvoort B.V.",
+    "plaats": "Rosmalen",
+    "rating": "4.2",
+    "reviews": "6",
+    "rating_disp": "4.2",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerenbedrijf%20van%20Zandvoort%20B.V.&amp;query_place_id=ChIJ04DneOnvxkcR1xacm5-pZC0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerenbedrijf-van-zandvoort-b-v-5-pzc0",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "rotterdam": {
+  "city": "Rotterdam",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerenplan-totaal-uzm5zk/",
+    "name": "Vloerenplan Totaal",
+    "plaats": "Rotterdam",
+    "rating": "5.0",
+    "reviews": "49",
+    "rating_disp": "5.0",
+    "reviews_disp": "49",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerenplan%20Totaal&amp;query_place_id=ChIJ1cb0Xdk0xEcRtHNL0Uzm5zk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerenplan-totaal-uzm5zk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/creafloors-xoharc/",
+    "name": "Creafloors",
+    "plaats": "Rotterdam",
+    "rating": "5.0",
+    "reviews": "36",
+    "rating_disp": "5.0",
+    "reviews_disp": "36",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Creafloors&amp;query_place_id=ChIJ9RkEUkUzxEcRIMQ0bXohARc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-creafloors-xoharc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/base-vloer-wandafwerkingen-dwguse/",
+    "name": "Base Vloer &amp; Wandafwerkingen",
+    "plaats": "Rotterdam",
+    "rating": "5.0",
+    "reviews": "34",
+    "rating_disp": "5.0",
+    "reviews_disp": "34",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Base%20Vloer%20%26%20Wandafwerkingen&amp;query_place_id=ChIJfYNn79s0xEcRMOwKPDwGUSE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-base-vloer-wandafwerkingen-dwguse",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-rotterdam-wihixe/",
+    "name": "Gietvloer Rotterdam",
+    "plaats": "Rotterdam",
+    "rating": "4.9",
+    "reviews": "17",
+    "rating_disp": "4.9",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Rotterdam&amp;query_place_id=ChIJze9YGTk1xEcRvw_olWIhixE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-rotterdam-wihixe",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/rs-kunststofvloeren--zfcwq/",
+    "name": "RS Kunststofvloeren",
+    "plaats": "Rotterdam",
+    "rating": "4.8",
+    "reviews": "14",
+    "rating_disp": "4.8",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RS%20Kunststofvloeren&amp;query_place_id=ChIJVVXKHq8zxEcROxyp6-ZFCwQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-rs-kunststofvloeren--zfcwq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/s-b-r-vloeren-en-interieur-b-v-oozmys/",
+    "name": "S.B.R. Vloeren en Interieur B.V.",
+    "plaats": "Rotterdam",
+    "rating": "4.4",
+    "reviews": "14",
+    "rating_disp": "4.4",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=S.B.R.%20Vloeren%20en%20Interieur%20B.V.&amp;query_place_id=ChIJi5sUlne2xUcRzOdd7oOZmYs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-s-b-r-vloeren-en-interieur-b-v-oozmys",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/rotterdam-gietvloer-duurzame-gietvloeren-gxzkjq/",
+    "name": "Rotterdam Gietvloer - Duurzame Gietvloeren",
+    "plaats": "Rotterdam",
+    "rating": "4.9",
+    "reviews": "9",
+    "rating_disp": "4.9",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Rotterdam%20Gietvloer%20-%20Duurzame%20Gietvloeren&amp;query_place_id=ChIJM3djaQAzxEcRPFL-NgXZKJQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-rotterdam-gietvloer-duurzame-gietvloeren-gxzkjq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/rfs-group-flooring-solutions-xtwcmu/",
+    "name": "RFS Group - Flooring Solutions",
+    "plaats": "Rotterdam",
+    "rating": "5.0",
+    "reviews": "2",
+    "rating_disp": "5.0",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RFS%20Group%20-%20Flooring%20Solutions&amp;query_place_id=ChIJz5cXwxDNxUcRZWAY_XtWcmU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-rfs-group-flooring-solutions-xtwcmu",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "rotterdam",
+  "template": "default"
+ },
+ "s-hertogenbosch": {
+  "city": "&#x27;s-Hertogenbosch",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/drt-contemporary-flooring-bqtv7e/",
+    "name": "DRT Contemporary Flooring",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "4.5",
+    "reviews": "66",
+    "rating_disp": "4.5",
+    "reviews_disp": "66",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DRT%20Contemporary%20Flooring&amp;query_place_id=ChIJISMeu_TuxkcRb-MpEBQTV7E",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-drt-contemporary-flooring-bqtv7e",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/barbo-vloeren-en-wanden-_4pca0/",
+    "name": "Barbo Vloeren en Wanden",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "4.7",
+    "reviews": "54",
+    "rating_disp": "4.7",
+    "reviews_disp": "54",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Barbo%20Vloeren%20en%20Wanden&amp;query_place_id=ChIJixmKpCPtxkcRIfgqT_4pCA0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-barbo-vloeren-en-wanden-_4pca0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/grindkeizer-siergrind-en-marmerstone-vloeren-2puhvy/",
+    "name": "Grindkeizer Siergrind en Marmerstone Vloeren",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "4.0",
+    "reviews": "38",
+    "rating_disp": "4.0",
+    "reviews_disp": "38",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Grindkeizer%20Siergrind%20en%20Marmerstone%20Vloeren&amp;query_place_id=ChIJBUzyDKrvxkcRrGLpD2pUHvY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-grindkeizer-siergrind-en-marmerstone-vloeren-2puhvy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-den-bosch-kay1_0/",
+    "name": "Gietvloer Den Bosch",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "4.8",
+    "reviews": "19",
+    "rating_disp": "4.8",
+    "reviews_disp": "19",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Den%20Bosch&amp;query_place_id=ChIJ6aCG1QTvxkcRFlQq6KAy1_0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-den-bosch-kay1_0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/het-bossche-vloerenbedrijf-b-v-n0tpjo/",
+    "name": "Het Bossche Vloerenbedrijf B.V.",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "4.9",
+    "reviews": "16",
+    "rating_disp": "4.9",
+    "reviews_disp": "16",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Het%20Bossche%20Vloerenbedrijf%20B.V.&amp;query_place_id=ChIJUabTdujtxkcRCgXWWn0tPJo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-het-bossche-vloerenbedrijf-b-v-n0tpjo",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/stonhard-nederland-bv-w_otha/",
+    "name": "Stonhard Nederland BV",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "4.4",
+    "reviews": "7",
+    "rating_disp": "4.4",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stonhard%20Nederland%20BV&amp;query_place_id=ChIJV-JdNfsWxEcRDsBvXW_OTHA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-stonhard-nederland-bv-w_otha",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/art-of-deco-gl-projecten-x7cukg/",
+    "name": "Art of Deco - GL Projecten",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Art%20of%20Deco%20-%20GL%20Projecten&amp;query_place_id=ChIJYdbNuHjyxkcRj3gl_x7Cukg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-art-of-deco-gl-projecten-x7cukg",
+    "shape": "unrated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-brabant-gietvloeren-voor-woning-en-industrie-gratis-afspraak-op-uw-locatie-1dt8ku/",
+    "name": "Gietvloer Brabant | Gietvloeren voor woning en industrie (gratis afspraak op uw locatie)",
+    "plaats": "&#x27;s-Hertogenbosch",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Brabant%20%7C%20Gietvloeren%20voor%20woning%20en%20industrie%20%28gratis%20afspraak%20op%20uw%20locatie%29&amp;query_place_id=ChIJ4TZeIA_vxkcREHGmP1Dt8KU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-brabant-gietvloeren-voor-woning-en-industrie-gratis-afspraak-op-uw-locatie-1dt8ku",
+    "shape": "unrated"
+   }
+  ],
+  "city_alt": "'s-Hertogenbosch",
+  "city_slug": "s-hertogenbosch",
+  "template": "v3"
+ },
+ "schagen": {
+  "city": "Schagen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/martijn-de-wit-vloeren-_praaq/",
+    "name": "Martijn de Wit Vloeren",
+    "plaats": "Schagen",
+    "rating": "4.6",
+    "reviews": "103",
+    "rating_disp": "4.6",
+    "reviews_disp": "103",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Martijn%20de%20Wit%20Vloeren&amp;query_place_id=ChIJRdKzqR5Oz0cRZi4s-_PRAaQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-martijn-de-wit-vloeren-_praaq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/tegel-outlet-holland-schagen-7ehnzm/",
+    "name": "Tegel Outlet Holland Schagen",
+    "plaats": "Schagen",
+    "rating": "4.8",
+    "reviews": "88",
+    "rating_disp": "4.8",
+    "reviews_disp": "88",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Tegel%20Outlet%20Holland%20Schagen&amp;query_place_id=ChIJ6WkGulH0yEcRoedKf7EhnzM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-tegel-outlet-holland-schagen-7ehnzm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/parketmeester-schagen-klitsie-parket-qa99ja/",
+    "name": "Parketmeester Schagen - Klitsie Parket",
+    "plaats": "Schagen",
+    "rating": "4.2",
+    "reviews": "18",
+    "rating_disp": "4.2",
+    "reviews_disp": "18",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Parketmeester%20Schagen%20-%20Klitsie%20Parket&amp;query_place_id=ChIJifDiqh5Oz0cR7Ym7Rqa99jA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-parketmeester-schagen-klitsie-parket-qa99ja",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/betonsense-bejuj0/",
+    "name": "BetonSense",
+    "plaats": "Schagen",
+    "rating": "5.0",
+    "reviews": "16",
+    "rating_disp": "5.0",
+    "reviews_disp": "16",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=BetonSense&amp;query_place_id=ChIJTUnJK3y_F6sRZBQhhBejUj0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-betonsense-bejuj0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/aanreno-b-v--vz_gk/",
+    "name": "AanReno B.V.",
+    "plaats": "Schagen",
+    "rating": "3.7",
+    "reviews": "3",
+    "rating_disp": "3.7",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=AanReno%20B.V.&amp;query_place_id=ChIJIaMcEstPz0cR_CxD7-vz_gk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-aanreno-b-v--vz_gk",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "schagen",
+  "template": "default"
+ },
+ "schiedam": {
+  "city": "Schiedam",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/coatking-wij-egaliseren-zscyds/",
+    "name": "CoatKing/Wij-egaliseren",
+    "plaats": "Schiedam",
+    "rating": "4.3",
+    "reviews": "23",
+    "rating_disp": "4.3",
+    "reviews_disp": "23",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=CoatKing/Wij-egaliseren&amp;query_place_id=ChIJw6roP81LxEcRdbwEczscyds",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-coatking-wij-egaliseren-zscyds",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/mikes-vloeren-hh6sla/",
+    "name": "Mike’s Vloeren",
+    "plaats": "Schiedam",
+    "rating": "5.0",
+    "reviews": "18",
+    "rating_disp": "5.0",
+    "reviews_disp": "18",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Mike%E2%80%99s%20Vloeren&amp;query_place_id=ChIJawuwegA1xEcRJQMa7Hh6sLA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-mikes-vloeren-hh6sla",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/spr-coatings-bv-e6lhqg/",
+    "name": "SPR Coatings bv",
+    "plaats": "Schiedam",
+    "rating": "4.3",
+    "reviews": "10",
+    "rating_disp": "4.3",
+    "reviews_disp": "10",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=SPR%20Coatings%20bv&amp;query_place_id=ChIJt2z26zc1xEcRpF2_WE6LHQg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-spr-coatings-bv-e6lhqg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vekavloeren-vb7peq/",
+    "name": "Vekavloeren",
+    "plaats": "Schiedam",
+    "rating": "3.8",
+    "reviews": "5",
+    "rating_disp": "3.8",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vekavloeren&amp;query_place_id=ChIJt_O9NGU1xEcRDNWgXvb7peQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vekavloeren-vb7peq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vandevloeren-yxp0se/",
+    "name": "Vandevloeren",
+    "plaats": "Schiedam",
+    "rating": "4.3",
+    "reviews": "3",
+    "rating_disp": "4.3",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vandevloeren&amp;query_place_id=ChIJt_O9NGU1xEcRFWblhYxP0SE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vandevloeren-yxp0se",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "schiedam",
+  "template": "default"
+ },
+ "sliedrecht": {
+  "city": "Sliedrecht",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/laminaatenparket-nl-sliedrecht-pvc-visgraat-laminaat-en-houten-vloeren-qjwscy/",
+    "name": "LaminaatenParket.nl Sliedrecht | PVC - Visgraat, laminaat en Houten Vloeren",
+    "plaats": "Sliedrecht",
+    "rating": "4.8",
+    "reviews": "368",
+    "rating_disp": "4.8",
+    "reviews_disp": "368",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=LaminaatenParket.nl%20Sliedrecht%20%7C%20PVC%20-%20Visgraat%2C%20laminaat%20en%20Houten%20Vloeren&amp;query_place_id=ChIJM_oENjMpxEcR0sg9kqJWSCY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-laminaatenparket-nl-sliedrecht-pvc-visgraat-laminaat-en-houten-vloeren-qjwscy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/dutch-floorstore-ldiunq/",
+    "name": "Dutch Floorstore",
+    "plaats": "Sliedrecht",
+    "rating": "4.2",
+    "reviews": "60",
+    "rating_disp": "4.2",
+    "reviews_disp": "60",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Dutch%20Floorstore&amp;query_place_id=ChIJ6fA6HfApxEcRHi1GGldIUnQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-dutch-floorstore-ldiunq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/betoncoatingonline-nl-lneqbg/",
+    "name": "BETONCOATINGonline.nl",
+    "plaats": "Sliedrecht",
+    "rating": "3.7",
+    "reviews": "15",
+    "rating_disp": "3.7",
+    "reviews_disp": "15",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=BETONCOATINGonline.nl&amp;query_place_id=ChIJ63D2WfspxEcR8p1cZLNeqBg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-betoncoatingonline-nl-lneqbg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloerwinkel-ki6yzg/",
+    "name": "Gietvloerwinkel",
+    "plaats": "Sliedrecht",
+    "rating": "5.0",
+    "reviews": "2",
+    "rating_disp": "5.0",
+    "reviews_disp": "2",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloerwinkel&amp;query_place_id=ChIJZxCOy2yCxkcRafzESkI6Yzg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloerwinkel-ki6yzg",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "sliedrecht",
+  "template": "default"
+ },
+ "someren": {
+  "city": "Someren",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/fb-woning-projectstoffering-1j3hi4/",
+    "name": "FB Woning &amp; Projectstoffering",
+    "plaats": "Someren",
+    "rating": "5.0",
+    "reviews": "148",
+    "rating_disp": "5.0",
+    "reviews_disp": "148",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=FB%20Woning%20%26%20Projectstoffering&amp;query_place_id=ChIJp0Tu83klx0cRBPuBx1j3Hi4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-fb-woning-projectstoffering-1j3hi4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/slabbers-gietvloeren-en-textuurwanden-ba6vck/",
+    "name": "Slabbers Gietvloeren en Textuurwanden",
+    "plaats": "Someren",
+    "rating": "5.0",
+    "reviews": "37",
+    "rating_disp": "5.0",
+    "reviews_disp": "37",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Slabbers%20Gietvloeren%20en%20Textuurwanden&amp;query_place_id=ChIJKx8OLeu-EqMRPZtiIba6VCk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-slabbers-gietvloeren-en-textuurwanden-ba6vck",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/lemmen-vloeren-vu11h4/",
+    "name": "Lemmen Vloeren",
+    "plaats": "Someren",
+    "rating": "4.8",
+    "reviews": "12",
+    "rating_disp": "4.8",
+    "reviews_disp": "12",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Lemmen%20Vloeren&amp;query_place_id=ChIJMfcZVvwvx0cRRNQ52Vu11h4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-lemmen-vloeren-vu11h4",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "someren",
+  "template": "default"
+ },
+ "stadskanaal": {
+  "city": "Stadskanaal",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/ventas-voordeel-tldge0/",
+    "name": "Ventas Voordeel",
+    "plaats": "Stadskanaal",
+    "rating": "4.7",
+    "reviews": "401",
+    "rating_disp": "4.7",
+    "reviews_disp": "401",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Ventas%20Voordeel&amp;query_place_id=ChIJaaJIVCzFt0cRoQDfqTLDGE0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ventas-voordeel-tldge0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/mg-vloeren-is-op-afspraak-open-s9qe60/",
+    "name": "MG Vloeren is op afspraak open!",
+    "plaats": "Stadskanaal",
+    "rating": "4.8",
+    "reviews": "34",
+    "rating_disp": "4.8",
+    "reviews_disp": "34",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MG%20Vloeren%20is%20op%20afspraak%20open%21&amp;query_place_id=ChIJwyiFIOnat0cR2L1exs9qE60",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-mg-vloeren-is-op-afspraak-open-s9qe60",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/folkers-vloeren-v2_m40/",
+    "name": "Folkers-vloeren",
+    "plaats": "Stadskanaal",
+    "rating": "4.8",
+    "reviews": "26",
+    "rating_disp": "4.8",
+    "reviews_disp": "26",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Folkers-vloeren&amp;query_place_id=ChIJJ1HAqULbt0cRk32SMV2_m40",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-folkers-vloeren-v2_m40",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloervernieuwing-nl-kmopug/",
+    "name": "Vloervernieuwing.nl",
+    "plaats": "Stadskanaal",
+    "rating": "4.8",
+    "reviews": "21",
+    "rating_disp": "4.8",
+    "reviews_disp": "21",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloervernieuwing.nl&amp;query_place_id=ChIJgcXYAyzFt0cRy8mSSkMOPUg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloervernieuwing-nl-kmopug",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/hemestuc-8tejw8/",
+    "name": "Heméstuc",
+    "plaats": "Stadskanaal",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Hem%C3%A9stuc&amp;query_place_id=ChIJnTB-u9Pat0cR3eNl98TeJw8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-hemestuc-8tejw8",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "stadskanaal",
+  "template": "default"
+ },
+ "tiel": {
+  "city": "Tiel",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/invedra-vloertechniek-b-v-_gmyj0/",
+    "name": "Invedra Vloertechniek B.V.",
+    "plaats": "Tiel",
+    "rating": "4.6",
+    "reviews": "93",
+    "rating_disp": "4.6",
+    "reviews_disp": "93",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Invedra%20Vloertechniek%20B.V.&amp;query_place_id=ChIJKwO2UBz4xkcRoAlMF_GMyj0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-invedra-vloertechniek-b-v-_gmyj0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/dg-vloertechniek-pjhyym/",
+    "name": "DG Vloertechniek",
+    "plaats": "Tiel",
+    "rating": "4.9",
+    "reviews": "35",
+    "rating_disp": "4.9",
+    "reviews_disp": "35",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DG%20Vloertechniek&amp;query_place_id=ChIJMTjiTsFXxkcRoq5j_pJHYYM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-dg-vloertechniek-pjhyym",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-tiel--th5_y/",
+    "name": "Gietvloer Tiel",
+    "plaats": "Tiel",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Tiel&amp;query_place_id=ChIJzdUP1bpXxkcRk4fK4-tH5_Y",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-tiel--th5_y",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "tiel",
+  "template": "default"
+ },
+ "tilburg": {
+  "city": "Tilburg",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/verhoof-vloeren-b-v-n_cjz4/",
+    "name": "Verhoof Vloeren B.V.",
+    "plaats": "Tilburg",
+    "rating": "4.6",
+    "reviews": "28",
+    "rating_disp": "4.6",
+    "reviews_disp": "28",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Verhoof%20Vloeren%20B.V.&amp;query_place_id=ChIJ-3QVRYe9xkcRcwIUJN_Cjz4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-verhoof-vloeren-b-v-n_cjz4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/new-brand-achsx0/",
+    "name": "New Brand",
+    "plaats": "Tilburg",
+    "rating": "4.7",
+    "reviews": "23",
+    "rating_disp": "4.7",
+    "reviews_disp": "23",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=New%20Brand&amp;query_place_id=ChIJ2-HNut6_xkcRit3eiaChsX0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-new-brand-achsx0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/enssieg-groep-6s9xsg/",
+    "name": "Enssieg Groep",
+    "plaats": "Tilburg",
+    "rating": "4.1",
+    "reviews": "18",
+    "rating_disp": "4.1",
+    "reviews_disp": "18",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Enssieg%20Groep&amp;query_place_id=ChIJqRIMT-GVxkcR_NMSa6S9xSg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-enssieg-groep-6s9xsg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/rt-coatings-b-v-r9ecm0/",
+    "name": "Rt coatings.B.V",
+    "plaats": "Tilburg",
+    "rating": "5.0",
+    "reviews": "17",
+    "rating_disp": "5.0",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Rt%20coatings.B.V&amp;query_place_id=ChIJfaLrHAmVxkcRW5EyhR9ecm0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-rt-coatings-b-v-r9ecm0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-tilburg-hpt16o/",
+    "name": "Gietvloer Tilburg",
+    "plaats": "Tilburg",
+    "rating": "5.0",
+    "reviews": "14",
+    "rating_disp": "5.0",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Tilburg&amp;query_place_id=ChIJ-VnGQKO_xkcRIIgmKHpt16o",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-tilburg-hpt16o",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/tilburggietvloer-tilburg-gietvloer-yaxjhu/",
+    "name": "tilburggietvloer - Tilburg Gietvloer",
+    "plaats": "Tilburg",
+    "rating": "5.0",
+    "reviews": "9",
+    "rating_disp": "5.0",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=tilburggietvloer%20-%20Tilburg%20Gietvloer&amp;query_place_id=ChIJu7tbbAC_xkcRqp5T_YAxJhU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-tilburggietvloer-tilburg-gietvloer-yaxjhu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloeren-gressmann-design-vloeren-p6ucoq/",
+    "name": "Gietvloeren | Gressmann design vloeren",
+    "plaats": "Tilburg",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloeren%20%7C%20Gressmann%20design%20vloeren&amp;query_place_id=ChIJP9DZpBHHxkcR60ovNp6UcOQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloeren-gressmann-design-vloeren-p6ucoq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/epoxy-vloeren-eu-63qxz8/",
+    "name": "Epoxy-vloeren.eu",
+    "plaats": "Tilburg",
+    "rating": "4.0",
+    "reviews": "4",
+    "rating_disp": "4.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Epoxy-vloeren.eu&amp;query_place_id=ChIJQUvCEAuXxkcRRLrXI63QXz8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-epoxy-vloeren-eu-63qxz8",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/bnl-coatings-b-v-pwuab4/",
+    "name": "BNL Coatings B.V.",
+    "plaats": "Tilburg",
+    "rating": "5.0",
+    "reviews": "3",
+    "rating_disp": "5.0",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=BNL%20Coatings%20B.V.&amp;query_place_id=ChIJl2BLq02XxkcRw-ZddpWuAB4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-bnl-coatings-b-v-pwuab4",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "tilburg",
+  "template": "default"
+ },
+ "uden": {
+  "city": "Uden",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/van-tol-vloeren-bv-xrbw8s/",
+    "name": "Van Tol Vloeren BV",
+    "plaats": "Uden",
+    "rating": "4.9",
+    "reviews": "122",
+    "rating_disp": "4.9",
+    "reviews_disp": "122",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Tol%20Vloeren%20BV&amp;query_place_id=ChIJHwhCflIcx0cRSdb1oXrBW8s",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-van-tol-vloeren-bv-xrbw8s",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/van-engelen-vloeren-uden-zgibni/",
+    "name": "van Engelen Vloeren Uden",
+    "plaats": "Uden",
+    "rating": "5.0",
+    "reviews": "12",
+    "rating_disp": "5.0",
+    "reviews_disp": "12",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=van%20Engelen%20Vloeren%20Uden&amp;query_place_id=ChIJpwQFutgdx0cRBY4ABzgIBNI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-van-engelen-vloeren-uden-zgibni",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/sohovloeren-by-vincent-stiekema-rp8ido/",
+    "name": "SOHOvloeren by Vincent Stiekema",
+    "plaats": "Uden",
+    "rating": "5.0",
+    "reviews": "6",
+    "rating_disp": "5.0",
+    "reviews_disp": "6",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=SOHOvloeren%20by%20Vincent%20Stiekema&amp;query_place_id=ChIJUVt6JCJ5xkcRViwWFrp8ido",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-sohovloeren-by-vincent-stiekema-rp8ido",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/dg-totaalvloeren-b-v-dekvloeren-gietvloeren-en-vloerisolatie-cvwxlu/",
+    "name": "DG Totaalvloeren B.V. - Dekvloeren, Gietvloeren en Vloerisolatie",
+    "plaats": "Uden",
+    "rating": "3.7",
+    "reviews": "3",
+    "rating_disp": "3.7",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DG%20Totaalvloeren%20B.V.%20-%20Dekvloeren%2C%20Gietvloeren%20en%20Vloerisolatie&amp;query_place_id=ChIJU3GkG4sdx0cRJeCkxcvwxLU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-dg-totaalvloeren-b-v-dekvloeren-gietvloeren-en-vloerisolatie-cvwxlu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/diba-vloeren-erpqpe/",
+    "name": "DIBA Vloeren",
+    "plaats": "Uden",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DIBA%20Vloeren&amp;query_place_id=ChIJqaGWbkgdx0cRtI4BderPqPE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-diba-vloeren-erpqpe",
+    "shape": "unrated"
+   }
+  ],
+  "template": "v2"
+ },
+ "uitgeest": {
+  "city": "Uitgeest",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/rotho-houten-vloeren-v-o-f-v5wtdu/",
+    "name": "Rotho Houten Vloeren V.o.f.",
+    "plaats": "Uitgeest",
+    "rating": "4.9",
+    "reviews": "53",
+    "rating_disp": "4.9",
+    "reviews_disp": "53",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Rotho%20Houten%20Vloeren%20V.o.f.&amp;query_place_id=ChIJPdANgZH5xUcRzNNx5V5wtdU",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-rotho-houten-vloeren-v-o-f-v5wtdu",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/schonevloeren-nl-g1ahoe/",
+    "name": "SchoneVloeren.nl",
+    "plaats": "Uitgeest",
+    "rating": "5.0",
+    "reviews": "9",
+    "rating_disp": "5.0",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=SchoneVloeren.nl&amp;query_place_id=ChIJa-WluJH5xUcR0380Bg1ahOE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-schonevloeren-nl-g1ahoe",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/sanitair-en-tegels-uitgeest-ppe43i/",
+    "name": "Sanitair en Tegels Uitgeest",
+    "plaats": "Uitgeest",
+    "rating": "5.0",
+    "reviews": "4",
+    "rating_disp": "5.0",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Sanitair%20en%20Tegels%20Uitgeest&amp;query_place_id=ChIJVcEn-5H5xUcRMgJkSPpE43I",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-sanitair-en-tegels-uitgeest-ppe43i",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "uitgeest",
+  "template": "default"
+ },
+ "utrecht": {
+  "city": "Utrecht",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vloer-utrecht-sehuds/",
+    "name": "Vloer Utrecht",
+    "plaats": "Utrecht",
+    "rating": "4.3",
+    "reviews": "58",
+    "rating_disp": "4.3",
+    "reviews_disp": "58",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloer%20Utrecht&amp;query_place_id=ChIJtQL3yJRlxkcRAOb7msehUds",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloer-utrecht-sehuds",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/zeb-den-uyl-vloerrenovatie-lejuy0/",
+    "name": "Zeb den Uyl Vloerrenovatie",
+    "plaats": "Utrecht",
+    "rating": "5.0",
+    "reviews": "27",
+    "rating_disp": "5.0",
+    "reviews_disp": "27",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Zeb%20den%20Uyl%20Vloerrenovatie&amp;query_place_id=ChIJi5itc8VxxkcRJmMrIlejuY0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-zeb-den-uyl-vloerrenovatie-lejuy0",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-utrecht-0vlmci/",
+    "name": "Gietvloer Utrecht",
+    "plaats": "Utrecht",
+    "rating": "4.8",
+    "reviews": "17",
+    "rating_disp": "4.8",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Utrecht&amp;query_place_id=ChIJCepNsQBvxkcR4jt2F0vLMCI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-utrecht-0vlmci",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/utrechtgietvloer-utrecht-gietvloer-wbnsh8/",
+    "name": "utrechtgietvloer - Utrecht Gietvloer",
+    "plaats": "Utrecht",
+    "rating": "4.9",
+    "reviews": "9",
+    "rating_disp": "4.9",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=utrechtgietvloer%20-%20Utrecht%20Gietvloer&amp;query_place_id=ChIJJSd-NYBlxkcRfDq57wbNsh8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-utrechtgietvloer-utrecht-gietvloer-wbnsh8",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "utrecht",
+  "template": "default"
+ },
+ "veenendaal": {
+  "city": "Veenendaal",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/puur-vloeren-ktayyw/",
+    "name": "PUUR! Vloeren",
+    "plaats": "Veenendaal",
+    "rating": "4.8",
+    "reviews": "87",
+    "rating_disp": "4.8",
+    "reviews_disp": "87",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=PUUR%21%20Vloeren&amp;query_place_id=ChIJhSsmOL5RxkcRr1AO9kTAyYw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-puur-vloeren-ktayyw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/iqon-gietvloeren-gs-bqi/",
+    "name": "IQON Gietvloeren",
+    "plaats": "Veenendaal",
+    "rating": "5.0",
+    "reviews": "17",
+    "rating_disp": "5.0",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=IQON%20Gietvloeren&amp;query_place_id=ChIJi0HurGpTxkcRBgF0kGS-BqI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-iqon-gietvloeren-gs-bqi",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vallei-gietvloeren-hoorvk/",
+    "name": "Vallei Gietvloeren",
+    "plaats": "Veenendaal",
+    "rating": "4.9",
+    "reviews": "7",
+    "rating_disp": "4.9",
+    "reviews_disp": "7",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vallei%20Gietvloeren&amp;query_place_id=ChIJq5wDN9lTxkcRp4QH8HoORVk",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vallei-gietvloeren-hoorvk",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-veenendaal-xgtdwc/",
+    "name": "Gietvloer Veenendaal",
+    "plaats": "Veenendaal",
+    "rating": "4.8",
+    "reviews": "4",
+    "rating_disp": "4.8",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Veenendaal&amp;query_place_id=ChIJ5XL0CQlTxkcRY9ZK4XGTdWc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-veenendaal-xgtdwc",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "veenendaal",
+  "template": "default"
+ },
+ "veghel": {
+  "city": "Veghel",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/brugmans-groep-hwmbzq/",
+    "name": "Brugmans Groep",
+    "plaats": "Veghel",
+    "rating": "4.0",
+    "reviews": "24",
+    "rating_disp": "4.0",
+    "reviews_disp": "24",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Brugmans%20Groep&amp;query_place_id=ChIJqfvHna7hxkcRcnTXChwMbZQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-brugmans-groep-hwmbzq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerenbedrijf-van-der-linden-ipfwwo/",
+    "name": "Vloerenbedrijf van der Linden",
+    "plaats": "Veghel",
+    "rating": "4.3",
+    "reviews": "3",
+    "rating_disp": "4.3",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerenbedrijf%20van%20der%20Linden&amp;query_place_id=ChIJvz9GPrvhxkcRXghMPIpfWwo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerenbedrijf-van-der-linden-ipfwwo",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/varoo-vloeren-kq2ne0/",
+    "name": "Varoo Vloeren",
+    "plaats": "Veghel",
+    "rating": "3.7",
+    "reviews": "3",
+    "rating_disp": "3.7",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Varoo%20Vloeren&amp;query_place_id=ChIJicwl3JfhxkcRkGCynkQ2ne0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-varoo-vloeren-kq2ne0",
+    "shape": "rated"
+   }
+  ],
+  "template": "v2"
+ },
+ "veldhoven": {
+  "city": "Veldhoven",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerenbaas-pvc-vloeren-laminaat-houten-vloeren-gietvloeren-tapijt-xkwpmo/",
+    "name": "VloerenBaas | PVC vloeren | Laminaat | Houten vloeren | Gietvloeren | Tapijt",
+    "plaats": "Veldhoven",
+    "rating": "4.6",
+    "reviews": "215",
+    "rating_disp": "4.6",
+    "reviews_disp": "215",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=VloerenBaas%20%7C%20PVC%20vloeren%20%7C%20Laminaat%20%7C%20Houten%20vloeren%20%7C%20Gietvloeren%20%7C%20Tapijt&amp;query_place_id=ChIJI2wqnubbxkcR3fgA6XkWPMo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerenbaas-pvc-vloeren-laminaat-houten-vloeren-gietvloeren-tapijt-xkwpmo",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/vreven-vloeren-lnxfi4/",
+    "name": "Vreven Vloeren",
+    "plaats": "Veldhoven",
+    "rating": "5.0",
+    "reviews": "107",
+    "rating_disp": "5.0",
+    "reviews_disp": "107",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vreven%20Vloeren&amp;query_place_id=ChIJPU8zP0PaxkcRZSztYlnXfi4",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vreven-vloeren-lnxfi4",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/bartels-parket-wonen-y4lxxc/",
+    "name": "Bartels Parket &amp; Wonen",
+    "plaats": "Veldhoven",
+    "rating": "4.6",
+    "reviews": "27",
+    "rating_disp": "4.6",
+    "reviews_disp": "27",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bartels%20Parket%20%26%20Wonen&amp;query_place_id=ChIJdWHJySPaxkcRO0YkLy4lXXc",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-bartels-parket-wonen-y4lxxc",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/house-trends-hsgnls/",
+    "name": "House-Trends",
+    "plaats": "Veldhoven",
+    "rating": "4.9",
+    "reviews": "22",
+    "rating_disp": "4.9",
+    "reviews_disp": "22",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=House-Trends&amp;query_place_id=ChIJv_1yIpjZxkcR8Cz93hSgnls",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-house-trends-hsgnls",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/grimijzervloeren-6_db9a/",
+    "name": "Grimijzervloeren",
+    "plaats": "Veldhoven",
+    "rating": "4.7",
+    "reviews": "12",
+    "rating_disp": "4.7",
+    "reviews_disp": "12",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Grimijzervloeren&amp;query_place_id=ChIJERqritfbxkcR1i5lx6_DB9A",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-grimijzervloeren-6_db9a",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/icm-projects-avr860/",
+    "name": "ICM Projects",
+    "plaats": "Veldhoven",
+    "rating": "4.5",
+    "reviews": "8",
+    "rating_disp": "4.5",
+    "reviews_disp": "8",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=ICM%20Projects&amp;query_place_id=ChIJVUGs-xHaxkcRE7YxQAVr860",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-icm-projects-avr860",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "veldhoven",
+  "template": "default"
+ },
+ "waalwijk": {
+  "city": "Waalwijk",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/gp-decor-bv-f6n5so/",
+    "name": "GP Decor BV",
+    "plaats": "Waalwijk",
+    "rating": "4.5",
+    "reviews": "40",
+    "rating_disp": "4.5",
+    "reviews_disp": "40",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=GP%20Decor%20BV&amp;query_place_id=ChIJK0GMPzaRxkcR_Dvcpf6N5So",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gp-decor-bv-f6n5so",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/strizo-kunststoffen-b-v-uwcpnw/",
+    "name": "Strizo Kunststoffen B.V.",
+    "plaats": "Waalwijk",
+    "rating": "3.8",
+    "reviews": "17",
+    "rating_disp": "3.8",
+    "reviews_disp": "17",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Strizo%20Kunststoffen%20B.V.&amp;query_place_id=ChIJ4219QmCVxkcRSZw7sUWCpNw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-strizo-kunststoffen-b-v-uwcpnw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-waalwijk-yypkxq/",
+    "name": "Gietvloer Waalwijk",
+    "plaats": "Waalwijk",
+    "rating": "5.0",
+    "reviews": "5",
+    "rating_disp": "5.0",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Waalwijk&amp;query_place_id=ChIJYewx8HaTxkcRUHDrJYYpKXQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-waalwijk-yypkxq",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "waalwijk",
+  "template": "default"
+ },
+ "wijchen": {
+  "city": "Wijchen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/vloerverwarming-cuijk-8oeahy/",
+    "name": "Vloerverwarming Cuijk",
+    "plaats": "Wijchen",
+    "rating": "4.6",
+    "reviews": "108",
+    "rating_disp": "4.6",
+    "reviews_disp": "108",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vloerverwarming%20Cuijk&amp;query_place_id=ChIJWUUBIksPx0cRZMTMw8OeahY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-vloerverwarming-cuijk-8oeahy",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/first-class-floors-k-u-ea/",
+    "name": "First class floors",
+    "plaats": "Wijchen",
+    "rating": "4.8",
+    "reviews": "24",
+    "rating_disp": "4.8",
+    "reviews_disp": "24",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=First%20class%20floors&amp;query_place_id=ChIJZTOV7vsHx0cRByMsXk-U-eA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-first-class-floors-k-u-ea",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-wijchen-hhxf8w/",
+    "name": "Gietvloer Wijchen",
+    "plaats": "Wijchen",
+    "rating": "4.7",
+    "reviews": "3",
+    "rating_disp": "4.7",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Wijchen&amp;query_place_id=ChIJG-eMGnkHx0cRYXZklHHXF8w",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-wijchen-hhxf8w",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "wijchen",
+  "template": "default"
+ },
+ "zaandam": {
+  "city": "Zaandam",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-zaandam-z6udg8/",
+    "name": "Gietvloer Zaandam",
+    "plaats": "Zaandam",
+    "rating": "4.6",
+    "reviews": "22",
+    "rating_disp": "4.6",
+    "reviews_disp": "22",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Zaandam&amp;query_place_id=ChIJzS4Pj079xUcRNo4I2z6Udg8",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-zaandam-z6udg8",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/correctfloor-p9f5ti/",
+    "name": "Correctfloor",
+    "plaats": "Zaandam",
+    "rating": "4.2",
+    "reviews": "9",
+    "rating_disp": "4.2",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Correctfloor&amp;query_place_id=ChIJb3r_gEnjxUcRtEmBQp9f5tI",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-correctfloor-p9f5ti",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/bkv-5nauk0/",
+    "name": "BKV",
+    "plaats": "Zaandam",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=BKV&amp;query_place_id=ChIJndrRQMH8xUcR-p0k65nAuK0",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-bkv-5nauk0",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "zaandam",
+  "template": "default"
+ },
+ "zevenbergen": {
+  "city": "Zevenbergen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/sloopvloer-bv-qwpivm/",
+    "name": "Sloopvloer BV",
+    "plaats": "Zevenbergen",
+    "rating": "4.0",
+    "reviews": "9",
+    "rating_disp": "4.0",
+    "reviews_disp": "9",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Sloopvloer%20BV&amp;query_place_id=ChIJS2COFiI2xEcR_cweYqWPIvM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-sloopvloer-bv-qwpivm",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/hoederkunststofvloeren-uuimjw/",
+    "name": "Hoederkunststofvloeren",
+    "plaats": "Zevenbergen",
+    "rating": "5.0",
+    "reviews": "1",
+    "rating_disp": "5.0",
+    "reviews_disp": "1",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Hoederkunststofvloeren&amp;query_place_id=ChIJ74OU4gcjxEcR8Rvx5uUiMJw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-hoederkunststofvloeren-uuimjw",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-holland-wid_ta/",
+    "name": "Gietvloer Holland",
+    "plaats": "Zevenbergen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Holland&amp;query_place_id=ChIJpzCgjscjxEcRZ6hQowid_TA",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-holland-wid_ta",
+    "shape": "unrated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloeren-zrqrxo/",
+    "name": "Gietvloeren",
+    "plaats": "Zevenbergen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloeren&amp;query_place_id=ChIJAQCUrK0jxEcRdwfdrzrQrXo",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloeren-zrqrxo",
+    "shape": "unrated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/siergrindvloeren-moerdijk-wg2yle/",
+    "name": "Siergrindvloeren Moerdijk",
+    "plaats": "Zevenbergen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Siergrindvloeren%20Moerdijk&amp;query_place_id=ChIJQVp5q60jxEcRytxl3WG2yLE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-siergrindvloeren-moerdijk-wg2yle",
+    "shape": "unrated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/chescogietvloeren-kvgajs/",
+    "name": "chescogietvloeren",
+    "plaats": "Zevenbergen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=chescogietvloeren&amp;query_place_id=ChIJff61uOUjxEcRGwKtGKvgajs",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-chescogietvloeren-kvgajs",
+    "shape": "unrated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-atelier-5m09om/",
+    "name": "gietvloer atelier",
+    "plaats": "Zevenbergen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=gietvloer%20atelier&amp;query_place_id=ChIJ-VZJn6wjxEcRZCpxw5m09OM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-atelier-5m09om",
+    "shape": "unrated"
+   }
+  ],
+  "template": "v2"
+ },
+ "zutphen": {
+  "city": "Zutphen",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/amipox-bv-ym8uje/",
+    "name": "Amipox BV",
+    "plaats": "Zutphen",
+    "rating": "4.2",
+    "reviews": "5",
+    "rating_disp": "4.2",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Amipox%20BV&amp;query_place_id=ChIJVb6bYvuTx0cRiIHTyYm8UJE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-amipox-bv-ym8uje",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/xylo-vloeren-80nrey/",
+    "name": "Xylo Vloeren",
+    "plaats": "Zutphen",
+    "rating": "4.3",
+    "reviews": "4",
+    "rating_disp": "4.3",
+    "reviews_disp": "4",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Xylo%20Vloeren&amp;query_place_id=ChIJaX3gEGeUx0cRUgaz180NreY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-xylo-vloeren-80nrey",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/agos-kunststof-vloeren-b-v-nhlspg/",
+    "name": "AGOS Kunststof Vloeren B.V.",
+    "plaats": "Zutphen",
+    "rating": "5.0",
+    "reviews": "3",
+    "rating_disp": "5.0",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=AGOS%20Kunststof%20Vloeren%20B.V.&amp;query_place_id=ChIJuesNkWCUx0cRJbph2nhlSPg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-agos-kunststof-vloeren-b-v-nhlspg",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/drt-contemporary-flooring-zutphen-0trqem/",
+    "name": "DRT Contemporary Flooring Zutphen",
+    "plaats": "Zutphen",
+    "rating": "4.7",
+    "reviews": "3",
+    "rating_disp": "4.7",
+    "reviews_disp": "3",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=DRT%20Contemporary%20Flooring%20Zutphen&amp;query_place_id=ChIJieHuEGeUx0cR5C3x-0trQeM",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-drt-contemporary-flooring-zutphen-0trqem",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/uni-vloer-cixtig/",
+    "name": "Uni Vloer",
+    "plaats": "Zutphen",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Uni%20Vloer&amp;query_place_id=ChIJbRFtRb6Vx0cRhaDCmcixtIg",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-uni-vloer-cixtig",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "zutphen",
+  "template": "default"
+ },
+ "zwijndrecht": {
+  "city": "Zwijndrecht",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/boncreations-bv-jslrhe/",
+    "name": "Boncreations BV",
+    "plaats": "Zwijndrecht",
+    "rating": "4.2",
+    "reviews": "69",
+    "rating_disp": "4.2",
+    "reviews_disp": "69",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Boncreations%20BV&amp;query_place_id=ChIJq9IL5GMuxEcRpCY-dJslRhE",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-boncreations-bv-jslrhe",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-zwijndrecht-5gb0ms/",
+    "name": "Gietvloer Zwijndrecht",
+    "plaats": "Zwijndrecht",
+    "rating": "4.8",
+    "reviews": "5",
+    "rating_disp": "4.8",
+    "reviews_disp": "5",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Zwijndrecht&amp;query_place_id=ChIJ7xhH0LUvxEcRiK5jd5Gb0ms",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-zwijndrecht-5gb0ms",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/ozturkvloeren-965icy/",
+    "name": "Öztürkvloeren",
+    "plaats": "Zwijndrecht",
+    "rating": "0",
+    "reviews": "0",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=%C3%96zt%C3%BCrkvloeren&amp;query_place_id=ChIJ31vkOOwuxEcRfSd-s965ICY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-ozturkvloeren-965icy",
+    "shape": "unrated"
+   }
+  ],
+  "city_slug": "zwijndrecht",
+  "template": "default"
+ },
+ "zwolle": {
+  "city": "Zwolle",
+  "companies": [
+   {
+    "profile_href": "/gietvloer/bedrijf/traff-floor-solutions-wrktgq/",
+    "name": "TRAFF | Floor Solutions",
+    "plaats": "Zwolle",
+    "rating": "4.5",
+    "reviews": "29",
+    "rating_disp": "4.5",
+    "reviews_disp": "29",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=TRAFF%20%7C%20Floor%20Solutions&amp;query_place_id=ChIJq-rDXhjfx0cR6EWiEWRKtgQ",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-traff-floor-solutions-wrktgq",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/gietvloer-zwolle-4mgyow/",
+    "name": "Gietvloer Zwolle",
+    "plaats": "Zwolle",
+    "rating": "4.6",
+    "reviews": "19",
+    "rating_disp": "4.6",
+    "reviews_disp": "19",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gietvloer%20Zwolle&amp;query_place_id=ChIJ93k6zMTZx0cRuXDx44MgyOw",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-gietvloer-zwolle-4mgyow",
+    "shape": "rated"
+   },
+   {
+    "profile_href": "/gietvloer/bedrijf/multipox-kunststof-vloeren-owgedy/",
+    "name": "Multipox Kunststof Vloeren",
+    "plaats": "Zwolle",
+    "rating": "3.9",
+    "reviews": "14",
+    "rating_disp": "3.9",
+    "reviews_disp": "14",
+    "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Multipox%20Kunststof%20Vloeren&amp;query_place_id=ChIJpYesG0_bx0cRtlcnOowGEDY",
+    "claim_href": "https://app.bylder.com/vakbedrijf/claim/gietvloer-multipox-kunststof-vloeren-owgedy",
+    "shape": "rated"
+   }
+  ],
+  "city_slug": "zwolle",
+  "template": "default"
+ }
+}

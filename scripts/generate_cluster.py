@@ -168,6 +168,173 @@ def data_dir(cluster):
     return ROOT / "data" / "clusters" / cluster
 
 
+# ---------------------------------------------------------------------------
+# CONTENT-NIVEAU (fase 2 per cluster): stad-directorypagina's → template + data.
+# De artikel-fragmenten van stadspagina's zijn zelf getemplated (stad, aantal,
+# bedrijfskaarten). Deze laag vervangt die fragmenten door één content-template
+# + kaart-vormen + een datarij per stad in cities.json. Zelfde bewijsstandaard:
+# na extract-content moet `check` 100% byte-identiek blijven.
+# ---------------------------------------------------------------------------
+GRID_START = '<div class="grid-3" id="dir-grid">'
+GRID_END = "</div><script>(function(){var sel"
+CARD_START = '<div class="card vb-card"'
+# Vaste tekst die met een stadsnaam kan botsen (stad "Best" vs sorteeroptie).
+PROTECTED_LITERALS = ["Best beoordeeld"]
+
+
+def mask(text, pattern, placeholder, key, values, rel, required=True):
+    """Vervang groep(1)-spans door placeholder; alle voorkomens moeten gelijk zijn."""
+    ms = list(re.finditer(pattern, text))
+    if not ms:
+        if required:
+            raise ParseError(f"{rel}: content-slot niet gevonden: {key}")
+        return text
+    vals = {m.group(1) for m in ms}
+    if len(vals) > 1:
+        raise ParseError(f"{rel}: {key} inconsistent binnen pagina: {vals}")
+    if key in values and values[key] != ms[0].group(1):
+        raise ParseError(f"{rel}: {key} wijkt af van eerder gevonden waarde")
+    values[key] = ms[0].group(1)
+    out, last = [], 0
+    for m in ms:
+        out.append(text[last: m.start(1)])
+        out.append(placeholder)
+        last = m.end(1)
+    out.append(text[last:])
+    return "".join(out)
+
+
+CARD_SLOTS = [
+    (r'href="(/gietvloer/bedrijf/[^"]+)"', "{{profile_href}}", "profile_href", True),
+    (r'style="color:#1A1208;text-decoration:none;">(.*?)</a>', "{{name}}", "name", True),
+    (r'margin-top:2px;">(.*?)</div>', "{{plaats}}", "plaats", True),
+    (r'data-rating="([\d.]+)"', "{{rating}}", "rating", True),
+    (r'data-reviews="(\d+)"', "{{reviews}}", "reviews", True),
+    (r"Google &#9733; ([\d.]+) <span", "{{rating_disp}}", "rating_disp", False),
+    (r'font-weight:400;">\((\d+)\)</span>', "{{reviews_disp}}", "reviews_disp", False),
+    (r'href="(https://www\.google\.com/maps/search/[^"]*)"', "{{maps_href}}", "maps_href", True),
+    (r'href="(https://app\.bylder\.com/vakbedrijf/claim/[^"]*)"', "{{claim_href}}", "claim_href", True),
+]
+
+
+def mask_card(card: str, rel: str):
+    values = {}
+    for pattern, placeholder, key, required in CARD_SLOTS:
+        card = mask(card, pattern, placeholder, key, values, rel, required)
+    return card, values
+
+
+def parse_city_fragment(html: str, rel: str):
+    """None als dit geen stad-directorypagina is; anders (template, datarij, kaartvormen)."""
+    h1 = re.search(r"<h1[^>]*>Gietvloer-specialisten in (.*?)</h1>", html)
+    if not h1 or GRID_START not in html:
+        return None
+    city = h1.group(1)
+    a = html.index(GRID_START) + len(GRID_START)
+    b = html.index(GRID_END, a)
+    parts = html[a:b].split(CARD_START)
+    if parts[0] != "":
+        raise ParseError(f"{rel}: onverwachte inhoud vóór eerste kaart in dir-grid")
+    companies, shapes = [], []
+    for raw in parts[1:]:
+        shape, v = mask_card(CARD_START + raw, rel)
+        shapes.append(shape)
+        companies.append(v)
+
+    body = html[:a] + "{{cards}}" + html[b:]
+    values = {}
+    body = mask(body, r"(\d+) gietvloerbedrijven in en rond", "{{count}}", "count", values, rel)
+    body = mask(body, r'">(\d+) gietvloer-specialisten in ', "{{count}}", "count", values, rel)
+    if int(values["count"]) != len(companies):
+        raise ParseError(f"{rel}: count {values['count']} ≠ {len(companies)} kaarten")
+    for i, lit in enumerate(PROTECTED_LITERALS):
+        body = body.replace(lit, f"\x00P{i}\x00")
+    body = re.sub(rf"(?<![\w-]){re.escape(city)}(?![\w-])", "{{city}}", body)
+    # Sommige pagina's mixen apostrof-encodings (&#x27; in h1, rauwe ' in lopende
+    # tekst) — de alternatieve spelling krijgt een eigen slot zodat het template
+    # geen stad-literal overhoudt én de bytes exact reproduceren.
+    city_alt = city.replace("&#x27;", "'")
+    has_alt = city_alt != city and re.search(rf"(?<![\w-]){re.escape(city_alt)}(?![\w-])", body)
+    if has_alt:
+        body = re.sub(rf"(?<![\w-]){re.escape(city_alt)}(?![\w-])", "{{city_alt}}", body)
+    for i, lit in enumerate(PROTECTED_LITERALS):
+        body = body.replace(f"\x00P{i}\x00", lit)
+    body = mask(body, r"/offerte-check/gietvloer/([a-z0-9-]+)/", "{{city_slug}}", "city_slug", values, rel, required=False)
+    entry = {"city": city, "companies": companies}
+    if has_alt:
+        entry["city_alt"] = city_alt
+    if "city_slug" in values:
+        entry["city_slug"] = values["city_slug"]
+    return body, entry, shapes
+
+
+def render_city_content(entry: dict, body_tpl: str, card_shapes: dict) -> str:
+    cards = []
+    for c in entry["companies"]:
+        card = card_shapes[c["shape"]]
+        for key, val in c.items():
+            if key != "shape":
+                card = card.replace("{{" + key + "}}", val)
+        cards.append(card)
+    out = body_tpl.replace("{{cards}}", "".join(cards))
+    out = out.replace("{{count}}", str(len(entry["companies"])))
+    out = out.replace("{{city}}", entry["city"])
+    if "city_alt" in entry:
+        out = out.replace("{{city_alt}}", entry["city_alt"])
+    if "city_slug" in entry:
+        out = out.replace("{{city_slug}}", entry["city_slug"])
+    if "{{" in out:
+        raise ParseError(f"onvervulde placeholder in stad '{entry['city_slug']}'")
+    return out
+
+
+def extract_content(cluster: str):
+    """Vervang stad-fragmenten door content-template + cities.json (pariteit verplicht)."""
+    ddir, tdir = data_dir(cluster), tpl_dir(cluster)
+    pages = json.loads((ddir / "pages.json").read_text())
+    bodies, cities, all_shapes = {}, {}, {}
+    migrated = []
+    for page in pages:
+        frag = ddir / "content" / f"{page['slug'].replace('/', '__')}.html"
+        if page.get("content_kind") or not frag.exists():
+            continue
+        parsed = parse_city_fragment(frag.read_text(), page["file"])
+        if not parsed:
+            continue
+        body, entry, shapes = parsed
+        bodies[page["file"]] = {"_skeleton": body}
+        for c, shape in zip(entry["companies"], shapes):
+            all_shapes.setdefault(shape, []).append(c)
+        cities[page["slug"]] = entry
+        migrated.append((page, frag, shapes))
+
+    if not migrated:
+        print("extract-content: geen stad-fragmenten gevonden")
+        return
+    body_names, body_blobs = name_variants(bodies, "_skeleton", "content-template")
+    for name, blob in body_blobs.items():
+        (tdir / f"content.city.{name}.html").write_text(blob)
+
+    shape_names = {}
+    for i, (shape, _) in enumerate(sorted(all_shapes.items(), key=lambda kv: -len(kv[1]))):
+        name = ["rated", "unrated"][i] if i < 2 else VARIANT_NAMES[i]
+        shape_names[shape] = name
+        (tdir / f"card.{name}.html").write_text(shape)
+    for page, frag, shapes in migrated:
+        for c, shape in zip(cities[page["slug"]]["companies"], shapes):
+            c["shape"] = shape_names[shape]
+        cities[page["slug"]]["template"] = body_names[page["file"]]
+        page["content_kind"] = "city"
+        frag.unlink()
+    (ddir / "cities.json").write_text(json.dumps(cities, ensure_ascii=False, indent=1) + "\n")
+    (ddir / "pages.json").write_text(json.dumps(pages, ensure_ascii=False, indent=1) + "\n")
+    print(
+        f"extract-content: {len(migrated)} stadspagina's → {len(body_blobs)} content-template(s) + "
+        f"{len(shape_names)} kaartvormen + cities.json "
+        f"({sum(len(e['companies']) for e in cities.values())} bedrijfsvermeldingen)"
+    )
+
+
 def name_variants(parsed: dict, key: str, label: str):
     """Groepeer byte-identieke blobs; geef {rel: naam} + {naam: blob} (grootste eerst)."""
     seen = {}
@@ -262,10 +429,17 @@ def extract(cluster: str):
 def build(cluster: str, check_only: bool) -> int:
     fragments = {f.stem: f.read_text() for f in tpl_dir(cluster).glob("*.html")}
     pages = json.loads((data_dir(cluster) / "pages.json").read_text())
+    cities_file = data_dir(cluster) / "cities.json"
+    cities = json.loads(cities_file.read_text()) if cities_file.exists() else {}
+    card_shapes = {name.split(".", 1)[1]: blob for name, blob in fragments.items() if name.startswith("card.")}
     mismatches = []
     for page in pages:
         template = fragments[f"template.{page['template']}"]
-        content = (data_dir(cluster) / "content" / f"{page['slug'].replace('/', '__')}.html").read_text()
+        if page.get("content_kind") == "city":
+            entry = cities[page["slug"]]
+            content = render_city_content(entry, fragments[f"content.city.{entry['template']}"], card_shapes)
+        else:
+            content = (data_dir(cluster) / "content" / f"{page['slug'].replace('/', '__')}.html").read_text()
         out = render_page(page, template, fragments, content)
         target = ROOT / page["file"]
         if check_only:
@@ -286,12 +460,16 @@ def build(cluster: str, check_only: bool) -> int:
 
 
 def main():
-    if len(sys.argv) != 3 or sys.argv[1] not in ("extract", "build", "check") or sys.argv[2] not in CLUSTERS:
-        print(f"gebruik: {sys.argv[0]} extract|build|check {'|'.join(CLUSTERS)}")
+    modes = ("extract", "extract-content", "build", "check")
+    if len(sys.argv) != 3 or sys.argv[1] not in modes or sys.argv[2] not in CLUSTERS:
+        print(f"gebruik: {sys.argv[0]} {'|'.join(modes)} {'|'.join(CLUSTERS)}")
         sys.exit(2)
     mode, cluster = sys.argv[1], sys.argv[2]
     if mode == "extract":
         extract(cluster)
+        sys.exit(build(cluster, check_only=True))
+    if mode == "extract-content":
+        extract_content(cluster)
         sys.exit(build(cluster, check_only=True))
     sys.exit(build(cluster, check_only=(mode == "check")))
 

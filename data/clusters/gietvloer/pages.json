@@ -15,7 +15,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Alkmaar\", \"item\": \"https://www.bylder.com/gietvloer/alkmaar/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Alkmaar\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Issa Vloeren Alkmaar BV\", \"url\": \"https://issa-vloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"The Floor & Design company\", \"url\": \"https://www.thefloordesigncompany.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Indri Vloersystemen bv\", \"url\": \"http://www.indri.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"TSN Vloeren\", \"url\": \"http://www.tsnvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloer & Zo\", \"url\": \"https://woonspecialist.nl/winkels/vloer-enzo-alkmaar/?utm_campaign=Vloer+%26+Zo&utm_medium=organic&utm_source=gmb\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Alkmaar\", \"url\": \"https://gietvloeralkmaar.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Floor is Art\", \"url\": \"http://www.floorisart.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 8, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"van der wekken vloeren\", \"url\": \"http://vanderwekkenvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Alkmaar\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "almere",
@@ -33,7 +34,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Almere\", \"item\": \"https://www.bylder.com/gietvloer/almere/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Almere\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"InterPleister Stukadoor & Gietvloeren Almere Mét Showroom\", \"url\": \"http://www.interpleister.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Almere\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"VloerMeester B.V. Zandcement Dekvloer\", \"url\": \"http://vloer-meester.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Almere\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Perfectevloer\", \"url\": \"http://www.perfectevloer.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Almere\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Almere\", \"url\": \"https://gietvloeralmere.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Almere\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloeren | Almere Gietvloer\", \"url\": \"https://sites.google.com/view/almeregietvloer\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Almere\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "amsterdam",
@@ -51,7 +53,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Amsterdam\", \"item\": \"https://www.bylder.com/gietvloer/amsterdam/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Amsterdam\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"G-vloeren Gietvloeren\", \"url\": \"https://www.g-vloeren.nl/?utm_source=googlemaps&utm_medium=organic&utm_campaign=gmb\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Coatingvloer.nl\", \"url\": \"https://www.coatingvloer.nl/?utm_source=google_gmb&utm_medium=organic&utm_campaign=bedrijfsprofiel\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Motion Gietvloeren Amsterdam\", \"url\": \"http://www.motiongietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Sinck&Ko\", \"url\": \"https://www.sinck-ko.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Senso\", \"url\": \"http://www.sensovloeren.nl/?utm_source=local&utm_medium=organic&utm_campaign=gmb-amsterdam\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Design Gietvloer Amsterdam\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Amsterdam\", \"url\": \"https://gietvloeramsterdam.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 8, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Amsterdam Gietvloer - amsterdamgietvloer\", \"url\": \"https://sites.google.com/view/amsterdamgietvloer\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 9, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Amsterdam\", \"url\": \"https://www.gietvloeramsterdam.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 10, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Doe Het Zelf Gietvloeren\", \"url\": \"https://doehetzelf-gietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 11, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"PUUR! Vloeren Amsterdam\", \"url\": \"https://puurvloeren.nl/puur-amsterdam/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "apeldoorn",
@@ -69,7 +72,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Apeldoorn\", \"item\": \"https://www.bylder.com/gietvloer/apeldoorn/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Apeldoorn\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Indigo Floor\", \"url\": \"http://www.indigofloor.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Apeldoorn\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"O-Design Gietvloeren\", \"url\": \"http://www.o-designvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Apeldoorn\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Apeldoorn\", \"url\": \"https://gietvloerapeldoorn.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Apeldoorn\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "bedrijf/a-r-vloerenservice-pmadqw",
@@ -10671,7 +10675,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"België\", \"item\": \"https://www.bylder.com/gietvloer/belgie/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in België\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Steppa bv\", \"url\": \"https://www.steppa.be/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"België\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Atlastic Epoxyvloeren\", \"url\": \"https://www.atlasticepoxyvloeren.be/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"België\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"All Flooring System\", \"url\": \"https://www.allflooring.be/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"België\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"JVG Designvloeren\", \"url\": \"http://www.jvgdesignvloeren.be/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"België\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "berlicum",
@@ -10689,7 +10694,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Berlicum\", \"item\": \"https://www.bylder.com/gietvloer/berlicum/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Berlicum\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"VBH Totaalvloeren\", \"url\": \"https://www.vbhtotaalvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Berlicum\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Dormi Designvloeren VOF\", \"url\": \"http://www.dormi.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Berlicum\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Van Den Bos Vloeren\", \"url\": \"https://www.vandenbosvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Berlicum\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "best",
@@ -10707,7 +10713,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Best\", \"item\": \"https://www.bylder.com/gietvloer/best/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Best\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Ruud van Delft Gietvloeren\", \"url\": \"http://rvdbetonrenovatie.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Best\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Engelen Gietvloeren\", \"url\": \"http://www.engelengietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Best\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Best\", \"url\": \"https://gietvloerbest.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Best\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Eco Design Flooring BV\", \"url\": \"http://www.ecodesignflooring.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Best\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "blaricum",
@@ -10725,7 +10732,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Blaricum\", \"item\": \"https://www.bylder.com/gietvloer/blaricum/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Blaricum\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Sterk Vloerverwijdering | Tapijt, PVC, Parket en Trapbekleding Verwijderen\", \"url\": \"https://www.sterk-vloerverwijdering.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Blaricum\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"BUILDINGS Vloeren\", \"url\": \"https://www.buildingsvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Blaricum\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Floor en More\", \"url\": \"https://www.floorenmore.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Blaricum\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DecoVloeren\", \"url\": \"http://www.decovloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Blaricum\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "boekel",
@@ -10743,7 +10751,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Boekel\", \"item\": \"https://www.bylder.com/gietvloer/boekel/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Boekel\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"VBC Isolatiebeton, vloerverwarming en cementdekvloeren\", \"url\": \"https://www.vanberlocementdekvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Boekel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Multi Vloeren Brabant\", \"url\": \"http://www.multivloerenbrabant.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Boekel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Bekkers vloeren | Cementdekvloeren & afwerking\", \"url\": \"https://bekkersvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Boekel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gijs Timmers Betonvloeren\", \"url\": \"https://www.gijstimmers.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Boekel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Flooratlas Nederland B.V.\", \"url\": \"https://www.flooratlas.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Boekel\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "breda",
@@ -10761,7 +10770,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Breda\", \"item\": \"https://www.bylder.com/gietvloer/breda/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Breda\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Kleijn Coatings - Gietvloer- en Wandsystemen\", \"url\": \"https://www.kleijncoatings.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Breda\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Breda\", \"url\": \"https://gietvloerbreda.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Breda\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"gietvloeren - Breda Gietvloer\", \"url\": \"https://sites.google.com/view/bredagietvloer\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Breda\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"gietvloeren - Breda Gietvloer\", \"url\": \"http://bredagietvloer.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Breda\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "brunssum",
@@ -10779,7 +10789,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Brunssum\", \"item\": \"https://www.bylder.com/gietvloer/brunssum/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Brunssum\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"VST Vloeren\", \"url\": \"http://vstvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Brunssum\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Grindexpert.nl | Grindvloeren en meer\", \"url\": \"https://grindexpert.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Brunssum\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Brunssum\", \"url\": \"https://gietvloerbrunssum.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Brunssum\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "bunschoten-spakenburg",
@@ -10797,7 +10808,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Bunschoten-Spakenburg\", \"item\": \"https://www.bylder.com/gietvloer/bunschoten-spakenburg/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Bunschoten-Spakenburg\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Blitz Traprenovatie & Vloeren\", \"url\": \"http://www.blitzinterieur.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Bunschoten-Spakenburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"ED Vloeren\", \"url\": \"https://www.edvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Bunschoten-Spakenburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Systeemvloeren Service Bunschoten B.V.\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Bunschoten-Spakenburg\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "coevorden",
@@ -10815,7 +10827,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Coevorden\", \"item\": \"https://www.bylder.com/gietvloer/coevorden/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Coevorden\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Forbo-Novilon B.V.\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Coevorden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Forbo\", \"url\": \"https://www.forbo.com/flooring/fi-fi/tietoa-meista/organisaatio/coevorden/pglsiv\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Coevorden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Hovenk - Betonreparatie, Kunststof Gietvloeren\", \"url\": \"http://www.hovenk.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Coevorden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Carefree Protect\", \"url\": \"http://carefreeprotect.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Coevorden\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "den-haag",
@@ -10833,7 +10846,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Den Haag\", \"item\": \"https://www.bylder.com/gietvloer/den-haag/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Den Haag\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Beton cire webshop\", \"url\": \"https://beton-cire-webshop.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"RAZA\", \"url\": \"http://www.razaflooring.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Evolve Interior Den Haag | Gietvloer - PVC - Interieurontwerp\", \"url\": \"https://evolve-interior.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DeVloer.nl\", \"url\": \"https://www.devloer.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloeren van Bart\", \"url\": \"http://www.vloerenvanbart.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Floors BV - Vloeren Groothandel Den Haag | Laminaat - PVC en Houten Vloeren\", \"url\": \"https://floorsbv.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"De Vloergieters\", \"url\": \"https://devloergieters.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 8, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Den Haag Gietvloer\", \"url\": \"https://denhaaggietvloer.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 9, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"WG Vloeren Den Haag - Gietvloeren, Egaliseren & meer\", \"url\": \"https://www.wgvloeren.nl/vloerenspecialist-den-haag/?utm_medium=Click&utm_source=GMB\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 10, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Ypenburg\", \"url\": \"https://gietvloerypenburg.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 11, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"S.F. System Floors BV\", \"url\": \"http://www.systemfloors.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "deventer",
@@ -10851,7 +10865,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Deventer\", \"item\": \"https://www.bylder.com/gietvloer/deventer/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Deventer\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Soldicoat BV Kunststofvloeren\", \"url\": \"http://www.soldicoat.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"MH Kunstofvloeren\", \"url\": \"http://mhkunststofvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Floors in Style\", \"url\": \"http://floorsinstyle.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Flōrō vloerenspecialist\", \"url\": \"http://www.florovloerenspecialist.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gerton Sport & Design\", \"url\": \"http://www.gertonsport.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"NB Vloeren\", \"url\": \"https://www.nbvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Uwvloerafwerking.nl\", \"url\": \"https://www.uwvloerafwerking.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 8, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Living Stones\", \"url\": \"https://www.living-stones.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 9, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DDM Designvloeren\", \"url\": \"http://ddmdesign.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Deventer\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "doetinchem",
@@ -10869,7 +10884,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Doetinchem\", \"item\": \"https://www.bylder.com/gietvloer/doetinchem/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Doetinchem\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Multi Vloer Doetinchem\", \"url\": \"https://www.multivloerdoetinchem.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Doetinchem\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Smit Vloersystemen BV\", \"url\": \"https://www.smitbedrijfsvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Doetinchem\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Doetinchem\", \"url\": \"https://gietvloerdoetinchem.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Doetinchem\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Zilly Designvloeren B.V.\", \"url\": \"http://www.zillydesign.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Doetinchem\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Vloeren\", \"url\": \"http://www.gietvloer-vloeren.nl/contact/contact.html\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Doetinchem\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "dongen",
@@ -10887,7 +10903,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Dongen\", \"item\": \"https://www.bylder.com/gietvloer/dongen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Dongen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Wall & Floor Solutions\", \"url\": \"https://www.wfsolutions.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dongen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Glad Gietvloeren\", \"url\": \"https://gladvloeren.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dongen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"GM VLOEREN DESIGN\", \"url\": \"http://www.gmvloerendesign.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dongen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Purliquids\", \"url\": \"http://www.purliquids.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dongen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Game Kunststofvloeren\", \"url\": \"http://www.game-kunststofvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dongen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "dordrecht",
@@ -10905,7 +10922,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Dordrecht\", \"item\": \"https://www.bylder.com/gietvloer/dordrecht/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Dordrecht\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Beton Creation\", \"url\": \"http://www.betoncreation.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dordrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Creative Floors Gietvloeren Dordrecht\", \"url\": \"http://www.creative-floors.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dordrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Dordrecht\", \"url\": \"https://gietvloerdordrecht.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dordrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Malema Coatings\", \"url\": \"https://malemacoatings.nl/?utm_medium=Click&utm_source=GMB\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Dordrecht\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "duiven",
@@ -10923,7 +10941,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Duiven\", \"item\": \"https://www.bylder.com/gietvloer/duiven/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Duiven\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloeren Studio Duiven\", \"url\": \"http://www.vloerenstudioduiven.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Duiven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Projectvloeren Nederland\", \"url\": \"http://www.projectvloerennederland.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Duiven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Diamond Flooring\", \"url\": \"https://diamond-flooring.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Duiven\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "eindhoven",
@@ -10941,7 +10960,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Eindhoven\", \"item\": \"https://www.bylder.com/gietvloer/eindhoven/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Eindhoven\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"De Vloeren Dokters\", \"url\": \"https://devloerendokters.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Eindhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Microcement Studio\", \"url\": \"https://www.microcementstudio.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Eindhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Eindhoven\", \"url\": \"https://gietvloereindhoven.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Eindhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"eindhovengietvloer - Eindhoven Gietvloer\", \"url\": \"https://sites.google.com/view/eindhovengietvloer\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Eindhoven\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "enkhuizen",
@@ -10959,7 +10979,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Enkhuizen\", \"item\": \"https://www.bylder.com/gietvloer/enkhuizen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Enkhuizen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerglijders.nl\", \"url\": \"https://www.vloerglijders.nl/?utm_source=gmb&utm_medium=organic\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Enkhuizen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerendirect\", \"url\": \"https://www.vloerendirect.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Enkhuizen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloeren legservice Enkhuizen\", \"url\": \"http://www.vloerenlegserviceenkhuizen.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Enkhuizen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"OvyLusso\", \"url\": \"https://www.ovylusso.com/nl/?UTM_source=GMB_listing&UTM_medium=organic\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Enkhuizen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "erp",
@@ -10977,7 +10998,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Erp\", \"item\": \"https://www.bylder.com/gietvloer/erp/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Erp\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"De Vloerenmakers BV\", \"url\": \"http://www.devloerenmakers.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Erp\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Ideaal Vloeren\", \"url\": \"http://www.ideaalvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Erp\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Levels gietvloeren\", \"url\": \"https://www.levelsgietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Erp\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "geleen",
@@ -10995,7 +11017,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Geleen\", \"item\": \"https://www.bylder.com/gietvloer/geleen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Geleen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"SealteQ Zuid | Studio Bovitec\", \"url\": \"https://www.sealteq.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Geleen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Solid Floors | Cement- & Gietdekvloeren\", \"url\": \"https://solidfloors.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Geleen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Grindstunter\", \"url\": \"https://www.grindstunter.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Geleen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "goes",
@@ -11013,7 +11036,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Goes\", \"item\": \"https://www.bylder.com/gietvloer/goes/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Goes\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"AB-epoxy\", \"url\": \"http://ab-epoxy.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Goes\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Goes\", \"url\": \"https://gietvloergoes.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Goes\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Dream art gietvloeren\", \"url\": \"http://www.dreamartgietvloer.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Goes\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "gouda",
@@ -11031,7 +11055,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Gouda\", \"item\": \"https://www.bylder.com/gietvloer/gouda/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Gouda\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Goudse Vloeren\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Gouda\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Fusion Gietvloeren\", \"url\": \"https://fusiongietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Gouda\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Gouda\", \"url\": \"https://gietvloergouda.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Gouda\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "groningen",
@@ -11049,7 +11074,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Groningen\", \"item\": \"https://www.bylder.com/gietvloer/groningen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Groningen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Smid interieur\", \"url\": \"http://www.smid-interieur.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerenkunst\", \"url\": \"https://vloerenkunst.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Floormade\", \"url\": \"https://www.floormade.nl/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Groningen\", \"url\": \"https://gietvloergroningen.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Groningen Gietvloer - groningengietvloer\", \"url\": \"https://groningengietvloer.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Jouweigenvloer\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "haarlem",
@@ -11067,7 +11093,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Haarlem\", \"item\": \"https://www.bylder.com/gietvloer/haarlem/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Haarlem\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Garant\", \"url\": \"http://www.gietvloergarant.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Haarlem\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Haarlem\", \"url\": \"https://gietvloerhaarlem.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Haarlem\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Cicami | Gietvloeren Haarlem\", \"url\": \"http://www.cicami.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Haarlem\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "heesch",
@@ -11085,7 +11112,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Heesch\", \"item\": \"https://www.bylder.com/gietvloer/heesch/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Heesch\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Becksvloeren\", \"url\": \"http://becksvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Heesch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"BvS Gietvloeren\", \"url\": \"http://www.bvsvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Heesch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Van Berkel Bernheze Beheer B.V.\", \"url\": \"http://www.berkelvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Heesch\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "helmond",
@@ -11103,7 +11131,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Helmond\", \"item\": \"https://www.bylder.com/gietvloer/helmond/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Helmond\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"MY design floors\", \"url\": \"http://www.mydesignfloors.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Helmond\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"C. Kornuyt BV\", \"url\": \"https://www.kornuyt.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Helmond\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Helmond\", \"url\": \"https://gietvloerhelmond.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Helmond\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"CoatingShop.nl\", \"url\": \"http://www.coatingshop.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Helmond\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Jaberg Bedrijfsvloercoating\", \"url\": \"http://www.bedrijfsvloercoating.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Helmond\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "hoogeveen",
@@ -11121,7 +11150,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Hoogeveen\", \"item\": \"https://www.bylder.com/gietvloer/hoogeveen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Hoogeveen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Hooge Vloeren | Gietvloeren | Epoxy | Coating vloer | Hoogeveen\", \"url\": \"https://hoogevloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Hoogeveen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloertechniek Hoogeveen - Kunststof bedrijfsvloeren\", \"url\": \"http://www.vloertechniekhoogeveen.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Hoogeveen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Hoogeveen\", \"url\": \"https://gietvloerhoogeveen.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Hoogeveen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"RV kunststofvloeren\", \"url\": \"http://rvkunststofvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Hoogeveen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "huizen",
@@ -11139,7 +11169,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Huizen\", \"item\": \"https://www.bylder.com/gietvloer/huizen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Huizen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"TGS Huizen\", \"url\": \"http://www.tgs-huizen.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Huizen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Huizen\", \"url\": \"https://gietvloerhuizen.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Huizen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Indurfloor Bedrijfsvloeren Specialist\", \"url\": \"https://www.indurfloor.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Huizen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "ijsselstein",
@@ -11157,7 +11188,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"IJsselstein\", \"item\": \"https://www.bylder.com/gietvloer/ijsselstein/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in IJsselstein\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"De Vloerenman vloertegels\", \"url\": \"https://www.vloerenmantegels.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"IJsselstein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"MegaFloors | PVC, Laminaat, Visgraat | Dè vloerenspecialist van Nederland\", \"url\": \"https://www.megafloors.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"IJsselstein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"U-Floor\", \"url\": \"https://u-floor.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"IJsselstein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"JS Vloeren\", \"url\": \"http://www.jsvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"IJsselstein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerix\", \"url\": \"https://www.vloerix.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"IJsselstein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"De Egaline Experts\", \"url\": \"https://egalineexperts.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"IJsselstein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"SlipSafe Products BV\", \"url\": \"http://www.slipsafe.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"IJsselstein\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "index",
@@ -11195,7 +11227,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Kampen\", \"item\": \"https://www.bylder.com/gietvloer/kampen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Kampen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Robin Ruijmgaart Kunststofvloeren\", \"url\": \"https://www.kunststofvloerkopen.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Kampen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Kampen\", \"url\": \"https://gietvloerkampen.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Kampen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Straxt Design\", \"url\": \"https://www.straxtdesign.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Kampen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "kerkrade",
@@ -11213,7 +11246,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Kerkrade\", \"item\": \"https://www.bylder.com/gietvloer/kerkrade/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Kerkrade\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Intro Vloerencentrum\", \"url\": \"http://www.introvloerencentrum.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Kerkrade\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Kerkrade\", \"url\": \"https://gietvloerkerkrade.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Kerkrade\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerenboulevard Limburg\", \"url\": \"https://www.vloerenboulevard.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Kerkrade\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "leerdam",
@@ -11231,7 +11265,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Leerdam\", \"item\": \"https://www.bylder.com/gietvloer/leerdam/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Leerdam\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"De Gietvloer Designers\", \"url\": \"http://www.degietvloerdesigners.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leerdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"VloerX\", \"url\": \"https://vloerx.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leerdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Middag Gietvloeren\", \"url\": \"https://middaggietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leerdam\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "leeuwarden",
@@ -11249,7 +11284,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Leeuwarden\", \"item\": \"https://www.bylder.com/gietvloer/leeuwarden/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Leeuwarden\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"LAB21 Leeuwarden | PVC vloeren, laminaat & parket\", \"url\": \"https://www.lab21.nl/showrooms/leeuwarden/?utm_source=googlebusinessprofile&utm_campaign=gbp-lab21-leeuwarden&utm_medium=organic\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leeuwarden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Kunststofvloeren Noord\", \"url\": \"https://kunststofvloerennoord.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leeuwarden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Leeuwarden\", \"url\": \"https://gietvloerleeuwarden.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leeuwarden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"VDV Betonrenovatie & Kunststofvloeren\", \"url\": \"http://www.vdvbetonrenovatie.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leeuwarden\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "lelystad",
@@ -11267,7 +11303,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Lelystad\", \"item\": \"https://www.bylder.com/gietvloer/lelystad/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Lelystad\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"MultiQuartz\", \"url\": \"https://www.multiquartz.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Lelystad\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Lelystad\", \"url\": \"https://gietvloerlelystad.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Lelystad\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"ABK Kunststofvloeren BV.\", \"url\": \"http://www.abk-kunststofvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Lelystad\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "maastricht",
@@ -11285,7 +11322,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Maastricht\", \"item\": \"https://www.bylder.com/gietvloer/maastricht/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Maastricht\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Maastricht\", \"url\": \"https://gietvloermaastricht.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Maastricht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Intro Vloerencentrum Maastricht\", \"url\": \"http://www.introvloerencentrum.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Maastricht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"J2+\", \"url\": \"http://www.j2plus.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Maastricht\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "nieuwegein",
@@ -11303,7 +11341,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Nieuwegein\", \"item\": \"https://www.bylder.com/gietvloer/nieuwegein/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Nieuwegein\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Restyle Floor Solutions - Mike Repi\", \"url\": \"https://www.mikerepi.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nieuwegein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Zitman Vloeren\", \"url\": \"http://www.zitmanvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nieuwegein\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Nieuwegein\", \"url\": \"https://gietvloernieuwegein.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nieuwegein\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "nijmegen",
@@ -11321,7 +11360,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Nijmegen\", \"item\": \"https://www.bylder.com/gietvloer/nijmegen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Nijmegen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Nijmegen\", \"url\": \"https://gietvloernijmegen.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nijmegen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"WG Vloeren Nijmegen | Gietvloeren, Egaliseren & meer\", \"url\": \"https://www.wgvloeren.nl/vloerenspecialist-nijmegen/?utm_medium=Click&utm_source=GMB\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nijmegen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Wilfra vloeren\", \"url\": \"http://willfra.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nijmegen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vithex Gietvloeren\", \"url\": \"http://www.vithexgietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nijmegen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "noordwijk",
@@ -11339,7 +11379,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Noordwijk\", \"item\": \"https://www.bylder.com/gietvloer/noordwijk/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Noordwijk\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Pvcfloeren.nl(Persiafloor)\", \"url\": \"http://www.pvcfloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Noordwijk\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Cees Noppe Parketvloeren\", \"url\": \"https://ceesnoppe.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Noordwijk\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Blom Vloerdeco\", \"url\": \"http://www.blomvloerdeco.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Noordwijk\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "opheusden",
@@ -11357,7 +11398,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Opheusden\", \"item\": \"https://www.bylder.com/gietvloer/opheusden/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Opheusden\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Willem Designvloeren - Gevlinderde betonvloeren, gietvloeren en beton ciré\", \"url\": \"https://www.willemdesignvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Opheusden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Essenz Vloeren bv\", \"url\": \"https://www.essenz-vloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Opheusden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"HDV gietvloeren\", \"url\": \"https://www.hdvgietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Opheusden\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "oss",
@@ -11375,7 +11417,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Oss\", \"item\": \"https://www.bylder.com/gietvloer/oss/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Oss\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"B·Art Gietvloerboutique | Gietvloeren en PVC vloeren (showroombezoek op afspraak)\", \"url\": \"https://b-artgietvloerboutique.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Oss\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DRT Flooring Group BV\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Oss\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"CelloTec Gietvloer Specialist Oss\", \"url\": \"https://www.cellotec.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Oss\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Oss\", \"url\": \"https://gietvloeross.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Oss\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"RDesignvloeren\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Oss\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Stone Carpets design gietvloeren gietvloer prijzen\", \"url\": \"http://www.gietvloer-stonecarpets.net/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Oss\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "rijssen",
@@ -11393,7 +11436,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Rijssen\", \"item\": \"https://www.bylder.com/gietvloer/rijssen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Rijssen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"betonlook.nl\", \"url\": \"https://www.betonlook.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijssen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Spaanmeesters\", \"url\": \"http://www.spaanmeesters.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijssen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vive\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijssen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vive Vloeren\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijssen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "rijswijk",
@@ -11411,7 +11455,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Rijswijk\", \"item\": \"https://www.bylder.com/gietvloer/rijswijk/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Rijswijk\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Het Rijswijkse Vloerenhuis B.V.\", \"url\": \"http://www.hetrijswijksevloerenhuis.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijswijk\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Bruizt Rijswijk / Den Haag - Gietvloeren & Beton ciré\", \"url\": \"https://bruizt.nl/?utm_source=google&utm_medium=gmb&utm_campaign=gmb&utm_content=website\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijswijk\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Rijswijk\", \"url\": \"https://gietvloerrijswijk.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijswijk\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "rosmalen",
@@ -11429,7 +11474,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Rosmalen\", \"item\": \"https://www.bylder.com/gietvloer/rosmalen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Rosmalen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Cementdek.nl\", \"url\": \"http://www.cementdek.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rosmalen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"WG Vloeren | Gietvloeren, Egaliseren & meer\", \"url\": \"http://www.wgvloeren.nl/?utm_medium=Click&utm_source=GMB\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rosmalen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Egaliseren.nl | Vloer egaliseren ? Laat je vloer egaliseren door door onze experts\", \"url\": \"http://www.egaliseren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rosmalen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerenbedrijf van Zandvoort B.V.\", \"url\": \"http://www.vanzandvoort.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rosmalen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "rotterdam",
@@ -11447,7 +11493,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Rotterdam\", \"item\": \"https://www.bylder.com/gietvloer/rotterdam/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Rotterdam\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerenplan Totaal\", \"url\": \"http://www.vloerenplan-totaal.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Creafloors\", \"url\": \"https://www.creafloors.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Base Vloer & Wandafwerkingen\", \"url\": \"http://www.baseinterieur.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Rotterdam\", \"url\": \"https://gietvloerrotterdam.net/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"RS Kunststofvloeren\", \"url\": \"https://www.rskunststofvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"S.B.R. Vloeren en Interieur B.V.\", \"url\": \"http://www.sbrvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Rotterdam Gietvloer - Duurzame Gietvloeren\", \"url\": \"http://rotterdamgietvloer.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 8, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"RFS Group - Flooring Solutions\", \"url\": \"http://www.rfsgroup.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "s-hertogenbosch",
@@ -11465,7 +11512,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"'s-Hertogenbosch\", \"item\": \"https://www.bylder.com/gietvloer/s-hertogenbosch/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in 's-Hertogenbosch\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DRT Contemporary Flooring\", \"url\": \"https://drt.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Barbo Vloeren en Wanden\", \"url\": \"https://www.barbovloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Grindkeizer Siergrind en Marmerstone Vloeren\", \"url\": \"https://www.grindkeizer.nl/?utm_source=google&utm_medium=gmb&utm_campaign=gmb-organic\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Den Bosch\", \"url\": \"https://gietvloerdenbosch.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Het Bossche Vloerenbedrijf B.V.\", \"url\": \"http://www.bosschevloerenbedrijf.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Stonhard Nederland BV\", \"url\": \"http://www.stonhard.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Art of Deco - GL Projecten\", \"url\": \"http://artofdeco.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 8, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Brabant | Gietvloeren voor woning en industrie (gratis afspraak op uw locatie)\", \"url\": \"http://www.gietvloerbrabant.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"'s-Hertogenbosch\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "schagen",
@@ -11483,7 +11531,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Schagen\", \"item\": \"https://www.bylder.com/gietvloer/schagen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Schagen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Martijn de Wit Vloeren\", \"url\": \"http://www.martijndewitvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schagen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Tegel Outlet Holland Schagen\", \"url\": \"http://www.tegeloutlethollandschagen.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schagen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Parketmeester Schagen - Klitsie Parket\", \"url\": \"https://www.parketmeester.nl/vestigingen/parketmeester-schagen/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schagen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"BetonSense\", \"url\": \"https://www.betonsense.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schagen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"AanReno B.V.\", \"url\": \"https://aanreno.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schagen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "schiedam",
@@ -11501,7 +11550,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Schiedam\", \"item\": \"https://www.bylder.com/gietvloer/schiedam/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Schiedam\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"CoatKing/Wij-egaliseren\", \"url\": \"https://www.wij-egaliseren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schiedam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Mike’s Vloeren\", \"url\": \"https://www.mikesvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schiedam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"SPR Coatings bv\", \"url\": \"http://www.sprcoatings.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schiedam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vekavloeren\", \"url\": \"http://www.vekavloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schiedam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vandevloeren\", \"url\": \"http://vandevloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Schiedam\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "sliedrecht",
@@ -11519,7 +11569,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Sliedrecht\", \"item\": \"https://www.bylder.com/gietvloer/sliedrecht/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Sliedrecht\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"LaminaatenParket.nl Sliedrecht | PVC - Visgraat, laminaat en Houten Vloeren\", \"url\": \"https://www.laminaatenparket.nl/pages/winkels/sliedrecht?utm_source=GMB&utm_medium=organic&utm_campaign=sliedrecht+vestiging\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Sliedrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Dutch Floorstore\", \"url\": \"http://dutchfloorstore.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Sliedrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"BETONCOATINGonline.nl\", \"url\": \"https://betoncoatingonline.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Sliedrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloerwinkel\", \"url\": \"http://gietvloerwinkel.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Sliedrecht\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "someren",
@@ -11537,7 +11588,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Someren\", \"item\": \"https://www.bylder.com/gietvloer/someren/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Someren\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"FB Woning & Projectstoffering\", \"url\": \"https://www.fbwoningenprojectstoffering.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Someren\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Slabbers Gietvloeren en Textuurwanden\", \"url\": \"https://www.slabbersgietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Someren\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Lemmen Vloeren\", \"url\": \"https://www.lemmenvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Someren\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "stadskanaal",
@@ -11555,7 +11607,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Stadskanaal\", \"item\": \"https://www.bylder.com/gietvloer/stadskanaal/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Stadskanaal\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Ventas Voordeel\", \"url\": \"http://www.ventasvoordeel.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Stadskanaal\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"MG Vloeren is op afspraak open!\", \"url\": \"http://www.mgvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Stadskanaal\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Folkers-vloeren\", \"url\": \"http://www.folkers-vloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Stadskanaal\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloervernieuwing.nl\", \"url\": \"https://www.vloervernieuwing.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Stadskanaal\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Heméstuc\", \"url\": \"https://www.hemestuc.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Stadskanaal\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "tiel",
@@ -11573,7 +11626,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Tiel\", \"item\": \"https://www.bylder.com/gietvloer/tiel/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Tiel\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Invedra Vloertechniek B.V.\", \"url\": \"https://www.invedra.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tiel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DG Vloertechniek\", \"url\": \"http://www.dgvloertechniek.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tiel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Tiel\", \"url\": \"https://gietvloertiel.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tiel\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "tilburg",
@@ -11591,7 +11645,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Tilburg\", \"item\": \"https://www.bylder.com/gietvloer/tilburg/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Tilburg\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Verhoof Vloeren B.V.\", \"url\": \"http://www.verhoof.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"New Brand\", \"url\": \"https://www.newbrandgietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Enssieg Groep\", \"url\": \"https://www.enssieg.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Rt coatings.B.V\", \"url\": \"http://www.rtcoatings.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Tilburg\", \"url\": \"https://gietvloertilburg.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"tilburggietvloer - Tilburg Gietvloer\", \"url\": \"http://tilburggietvloer.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloeren | Gressmann design vloeren\", \"url\": \"https://www.gressmanndesignvloerenbv.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 8, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Epoxy-vloeren.eu\", \"url\": \"https://epoxy-vloeren.eu/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 9, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"BNL Coatings B.V.\", \"url\": \"https://www.bnl-coatings.eu/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Tilburg\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "uden",
@@ -11609,7 +11664,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Uden\", \"item\": \"https://www.bylder.com/gietvloer/uden/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Uden\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Van Tol Vloeren BV\", \"url\": \"https://vantolvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"van Engelen Vloeren Uden\", \"url\": \"https://vanengelenvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"SOHOvloeren by Vincent Stiekema\", \"url\": \"https://www.sohovloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DG Totaalvloeren B.V. - Dekvloeren, Gietvloeren en Vloerisolatie\", \"url\": \"https://dgtotaalvloerenbv.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uden\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DIBA Vloeren\", \"url\": \"https://www.dibagroep.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uden\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "uitgeest",
@@ -11627,7 +11683,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Uitgeest\", \"item\": \"https://www.bylder.com/gietvloer/uitgeest/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Uitgeest\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Rotho Houten Vloeren V.o.f.\", \"url\": \"http://www.rothohoutenvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uitgeest\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"SchoneVloeren.nl\", \"url\": \"http://www.schonevloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uitgeest\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Sanitair en Tegels Uitgeest\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Uitgeest\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "utrecht",
@@ -11645,7 +11702,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Utrecht\", \"item\": \"https://www.bylder.com/gietvloer/utrecht/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Utrecht\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloer Utrecht\", \"url\": \"http://www.vloer.nu/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Utrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Zeb den Uyl Vloerrenovatie\", \"url\": \"http://www.zebdenuyl.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Utrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Utrecht\", \"url\": \"https://gietvloerutrecht.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Utrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"utrechtgietvloer - Utrecht Gietvloer\", \"url\": \"http://utrechtgietvloer.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Utrecht\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "veenendaal",
@@ -11663,7 +11721,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Veenendaal\", \"item\": \"https://www.bylder.com/gietvloer/veenendaal/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Veenendaal\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"PUUR! Vloeren\", \"url\": \"https://puurvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veenendaal\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"IQON Gietvloeren\", \"url\": \"http://www.iqongietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veenendaal\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vallei Gietvloeren\", \"url\": \"http://www.valleigietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veenendaal\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Veenendaal\", \"url\": \"https://gietvloerveenendaal.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veenendaal\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "veghel",
@@ -11681,7 +11740,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Veghel\", \"item\": \"https://www.bylder.com/gietvloer/veghel/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Veghel\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Brugmans Groep\", \"url\": \"https://www.brugmansgroep.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veghel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerenbedrijf van der Linden\", \"url\": \"http://www.vloerenbedrijfvdlinden.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veghel\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Varoo Vloeren\", \"url\": \"http://www.varoovloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veghel\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "veldhoven",
@@ -11699,7 +11759,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Veldhoven\", \"item\": \"https://www.bylder.com/gietvloer/veldhoven/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Veldhoven\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"VloerenBaas | PVC vloeren | Laminaat | Houten vloeren | Gietvloeren | Tapijt\", \"url\": \"https://vloerenbaas.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veldhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vreven Vloeren\", \"url\": \"http://www.vrevenvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veldhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Bartels Parket & Wonen\", \"url\": \"http://bartelsparket.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veldhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"House-Trends\", \"url\": \"https://www.house-trends.nl/?utm_source=google&utm_medium=gmb\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veldhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Grimijzervloeren\", \"url\": \"http://grimijzervloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veldhoven\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"ICM Projects\", \"url\": \"https://icmprojects.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veldhoven\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "waalwijk",
@@ -11717,7 +11778,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Waalwijk\", \"item\": \"https://www.bylder.com/gietvloer/waalwijk/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Waalwijk\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"GP Decor BV\", \"url\": \"http://www.gpdecor.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Waalwijk\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Strizo Kunststoffen B.V.\", \"url\": \"http://www.strizo.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Waalwijk\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Waalwijk\", \"url\": \"https://gietvloerwaalwijk.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Waalwijk\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "wijchen",
@@ -11735,7 +11797,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Wijchen\", \"item\": \"https://www.bylder.com/gietvloer/wijchen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Wijchen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Vloerverwarming Cuijk\", \"url\": \"https://vloerverwarmingcuijk.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Wijchen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"First class floors\", \"url\": \"https://firstclassfloors.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Wijchen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Wijchen\", \"url\": \"https://gietvloerwijchen.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Wijchen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "zaandam",
@@ -11753,7 +11816,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zaandam\", \"item\": \"https://www.bylder.com/gietvloer/zaandam/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Zaandam\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Zaandam\", \"url\": \"https://gietvloerzaandam.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zaandam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Correctfloor\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zaandam\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"BKV\", \"url\": \"http://demooistegietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zaandam\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "zevenbergen",
@@ -11771,7 +11835,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zevenbergen\", \"item\": \"https://www.bylder.com/gietvloer/zevenbergen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Zevenbergen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Sloopvloer BV\", \"url\": \"https://www.sloopvloer.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zevenbergen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Hoederkunststofvloeren\", \"url\": \"http://www.hoederkunststofvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zevenbergen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Holland\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zevenbergen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloeren\", \"url\": \"https://www.boergietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zevenbergen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Siergrindvloeren Moerdijk\", \"url\": \"http://www.moerdijkvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zevenbergen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 6, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"chescogietvloeren\", \"url\": \"https://chescogietvloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zevenbergen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 7, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"gietvloer atelier\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zevenbergen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "zutphen",
@@ -11789,7 +11854,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zutphen\", \"item\": \"https://www.bylder.com/gietvloer/zutphen/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Zutphen\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Amipox BV\", \"url\": \"http://www.amipox.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zutphen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Xylo Vloeren\", \"url\": \"http://xylovloeren.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zutphen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"AGOS Kunststof Vloeren B.V.\", \"url\": \"https://www.kunststofvloer.info/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zutphen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 4, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"DRT Contemporary Flooring Zutphen\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zutphen\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 5, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Uni Vloer\", \"url\": \"https://www.univloer.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zutphen\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "zwijndrecht",
@@ -11807,7 +11873,8 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zwijndrecht\", \"item\": \"https://www.bylder.com/gietvloer/zwijndrecht/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Zwijndrecht\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Boncreations BV\", \"url\": \"http://www.boncreations.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zwijndrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Zwijndrecht\", \"url\": \"https://gietvloerzwijndrecht.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zwijndrecht\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Öztürkvloeren\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zwijndrecht\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  },
  {
   "slug": "zwolle",
@@ -11825,6 +11892,7 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Gietvloer-specialist\", \"item\": \"https://www.bylder.com/gietvloer/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zwolle\", \"item\": \"https://www.bylder.com/gietvloer/zwolle/\"}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"name\": \"Gietvloer-specialisten in Zwolle\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"TRAFF | Floor Solutions\", \"url\": \"http://www.traff.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zwolle\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 2, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Gietvloer Zwolle\", \"url\": \"https://gietvloerzwolle.com/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zwolle\", \"addressCountry\": \"NL\"}}}, {\"@type\": \"ListItem\", \"position\": 3, \"item\": {\"@type\": \"LocalBusiness\", \"name\": \"Multipox Kunststof Vloeren\", \"url\": \"http://www.multipox.nl/\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zwolle\", \"addressCountry\": \"NL\"}}}]}"
   ],
-  "ldjson_sep": "\n"
+  "ldjson_sep": "\n",
+  "content_kind": "city"
  }
 ]
