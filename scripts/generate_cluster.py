@@ -36,7 +36,7 @@ CLUSTERS = {
     name: sorted(
         p.relative_to(ROOT).as_posix() for p in (ROOT / name).rglob("index.html")
     )
-    for name in ("bouwvergunning", "gietvloer", "aannemer", "elektricien", "offerte-check", "aannemer-matching")
+    for name in ("bouwvergunning", "gietvloer", "aannemer", "elektricien", "offerte-check", "aannemer-matching", "badkamer", "dakkapel")
 }
 
 # Clusters met vak×stad-tekstpagina's (geen bedrijfskaarten): template per vak +
