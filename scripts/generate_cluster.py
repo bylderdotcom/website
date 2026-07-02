@@ -36,10 +36,10 @@ CLUSTERS = {
     name: sorted(
         p.relative_to(ROOT).as_posix() for p in (ROOT / name).rglob("index.html")
     )
-    for name in ("bouwvergunning", "gietvloer")
+    for name in ("bouwvergunning", "gietvloer", "aannemer", "elektricien")
 }
 
-VARIANT_NAMES = ["default"] + [f"v{i}" for i in range(2, 17)]
+VARIANT_NAMES = ["default"] + [f"v{i}" for i in range(2, 41)]
 
 
 def slug_of(rel_path: str) -> str:
@@ -204,29 +204,30 @@ def mask(text, pattern, placeholder, key, values, rel, required=True):
     return "".join(out)
 
 
-CARD_SLOTS = [
-    (r'href="(/gietvloer/bedrijf/[^"]+)"', "{{profile_href}}", "profile_href", True),
-    (r'style="color:#1A1208;text-decoration:none;">(.*?)</a>', "{{name}}", "name", True),
-    (r'margin-top:2px;">(.*?)</div>', "{{plaats}}", "plaats", True),
-    (r'data-rating="([\d.]+)"', "{{rating}}", "rating", True),
-    (r'data-reviews="(\d+)"', "{{reviews}}", "reviews", True),
-    (r"Google &#9733; ([\d.]+) <span", "{{rating_disp}}", "rating_disp", False),
-    (r'font-weight:400;">\((\d+)\)</span>', "{{reviews_disp}}", "reviews_disp", False),
-    (r'href="(https://www\.google\.com/maps/search/[^"]*)"', "{{maps_href}}", "maps_href", True),
-    (r'href="(https://app\.bylder\.com/vakbedrijf/claim/[^"]*)"', "{{claim_href}}", "claim_href", True),
-]
+def card_slots(cluster: str):
+    return [
+        (rf'href="(/{cluster}/bedrijf/[^"]+)"', "{{profile_href}}", "profile_href", True),
+        (r'style="color:#1A1208;text-decoration:none;">(.*?)</a>', "{{name}}", "name", True),
+        (r'margin-top:2px;">(.*?)</div>', "{{plaats}}", "plaats", True),
+        (r'data-rating="([\d.]+)"', "{{rating}}", "rating", True),
+        (r'data-reviews="(\d+)"', "{{reviews}}", "reviews", True),
+        (r"Google &#9733; ([\d.]+) <span", "{{rating_disp}}", "rating_disp", False),
+        (r'font-weight:400;">\((\d+)\)</span>', "{{reviews_disp}}", "reviews_disp", False),
+        (r'href="(https://www\.google\.com/maps/search/[^"]*)"', "{{maps_href}}", "maps_href", False),
+        (r'href="(https://app\.bylder\.com/vakbedrijf/claim/[^"]*)"', "{{claim_href}}", "claim_href", True),
+    ]
 
 
-def mask_card(card: str, rel: str):
+def mask_card(card: str, rel: str, cluster: str):
     values = {}
-    for pattern, placeholder, key, required in CARD_SLOTS:
+    for pattern, placeholder, key, required in card_slots(cluster):
         card = mask(card, pattern, placeholder, key, values, rel, required)
     return card, values
 
 
-def parse_city_fragment(html: str, rel: str):
+def parse_city_fragment(html: str, rel: str, cluster: str):
     """None als dit geen stad-directorypagina is; anders (template, datarij, kaartvormen)."""
-    h1 = re.search(r"<h1[^>]*>Gietvloer-specialisten in (.*?)</h1>", html)
+    h1 = re.search(r"<h1[^>]*>[^<]*? in (.*?)</h1>", html)
     if not h1 or GRID_START not in html:
         return None
     city = h1.group(1)
@@ -237,14 +238,14 @@ def parse_city_fragment(html: str, rel: str):
         raise ParseError(f"{rel}: onverwachte inhoud vóór eerste kaart in dir-grid")
     companies, shapes = [], []
     for raw in parts[1:]:
-        shape, v = mask_card(CARD_START + raw, rel)
+        shape, v = mask_card(CARD_START + raw, rel, cluster)
         shapes.append(shape)
         companies.append(v)
 
     body = html[:a] + "{{cards}}" + html[b:]
     values = {}
-    body = mask(body, r"(\d+) gietvloerbedrijven in en rond", "{{count}}", "count", values, rel)
-    body = mask(body, r'">(\d+) gietvloer-specialisten in ', "{{count}}", "count", values, rel)
+    body = mask(body, r"(\d+) [a-z-]+ in en rond", "{{count}}", "count", values, rel)
+    body = mask(body, r'margin:32px 0 8px;">(\d+) ', "{{count}}", "count", values, rel)
     if int(values["count"]) != len(companies):
         raise ParseError(f"{rel}: count {values['count']} ≠ {len(companies)} kaarten")
     for i, lit in enumerate(PROTECTED_LITERALS):
@@ -259,7 +260,7 @@ def parse_city_fragment(html: str, rel: str):
         body = re.sub(rf"(?<![\w-]){re.escape(city_alt)}(?![\w-])", "{{city_alt}}", body)
     for i, lit in enumerate(PROTECTED_LITERALS):
         body = body.replace(f"\x00P{i}\x00", lit)
-    body = mask(body, r"/offerte-check/gietvloer/([a-z0-9-]+)/", "{{city_slug}}", "city_slug", values, rel, required=False)
+    body = mask(body, rf"/offerte-check/{cluster}/([a-z0-9-]+)/", "{{city_slug}}", "city_slug", values, rel, required=False)
     entry = {"city": city, "companies": companies}
     if has_alt:
         entry["city_alt"] = city_alt
@@ -283,23 +284,24 @@ def replace_spellings(body: str, value: str, base: str, entry: dict) -> str:
     return body
 
 
-TILE_RE = re.compile(
-    r'<a href="(/gietvloer/bedrijf/[^"]+)" class="tile">(.*?)'
-    r'(?: <span style="color:rgba\(61,46,30,0\.4\);font-weight:400;">&#9733; ([\d,]+)</span>)?</a>'
-)
+def tile_re(cluster: str):
+    return re.compile(
+        rf'<a href="(/{cluster}/bedrijf/[^"]+)" class="tile">(.*?)'
+        r'(?: <span style="color:rgba\(61,46,30,0\.4\);font-weight:400;">&#9733; ([\d,]+)</span>)?</a>'
+    )
 
 
-def parse_bedrijf_fragment(html: str, rel: str):
+def parse_bedrijf_fragment(html: str, rel: str, cluster: str):
     """Bedrijfsprofielpagina → (template, datarij). Tegels (siblings) worden data."""
     values = {}
     body = mask(html, r"<h1[^>]*>(.*?)</h1>", "{{name}}", "name", values, rel)
     name = values.pop("name")
 
-    # Siblings-regio ("Andere gietvloer-specialisten") vóór de naam/stad-vervanging.
+    # Siblings-regio ("Andere <vak> in <stad>") vóór de naam/stad-vervanging.
     grid = re.search(r'<div class="grid-3">(.*?)</div>', body, re.S)
     siblings = []
     if grid:
-        tiles = list(TILE_RE.finditer(grid.group(1)))
+        tiles = list(tile_re(cluster).finditer(grid.group(1)))
         if "".join(t.group(0) for t in tiles) != grid.group(1):
             raise ParseError(f"{rel}: grid-3 bevat meer dan alleen tegels")
         for t in tiles:
@@ -310,7 +312,7 @@ def parse_bedrijf_fragment(html: str, rel: str):
         body = body[: grid.start(1)] + "{{tiles}}" + body[grid.end(1):]
 
     city = None
-    m = re.search(r'<a href="/gietvloer/(?!bedrijf)[a-z0-9-]+/"[^>]*>([^<]+)</a> &rarr; <span', body)
+    m = re.search(rf'<a href="/{cluster}/(?!bedrijf)[a-z0-9-]+/"[^>]*>([^<]+)</a> &rarr; <span', body)
     if m:
         city = m.group(1)
 
@@ -325,12 +327,28 @@ def parse_bedrijf_fragment(html: str, rel: str):
     entry = {"name": name, **({"city": city} if city else {}), **values}
     for i, lit in enumerate(PROTECTED_LITERALS):
         body = body.replace(lit, f"\x00P{i}\x00")
-    body = replace_spellings(body, name, "name", entry)
+    # Stad éérst en alleen op geanchorde plekken (breadcrumb + "… in <stad>"):
+    # bedrijven die naar hun stad heten ("Borne", "Balk") zouden bij een globale
+    # naam-vervanging anders de stad-plekken opeten (en andersom).
     if city:
-        body = replace_spellings(body, city, "city", entry)
+        for spelling, base in ((city, "city"), (city.replace("&#x27;", "'").replace("&amp;", "&"), "city_alt")):
+            if base == "city_alt" and spelling == city:
+                continue
+            hit = False
+            pat1 = rf"{re.escape(spelling)}(</a> &rarr; <span)"
+            if re.search(pat1, body):
+                body = re.sub(pat1, "{{" + base + "}}\\1", body)
+                hit = True
+            pat2 = rf"(?<= in ){re.escape(spelling)}(?![\w-])"
+            if re.search(pat2, body):
+                body = re.sub(pat2, "{{" + base + "}}", body)
+                hit = True
+            if hit and base == "city_alt":
+                entry["city_alt"] = spelling
+    body = replace_spellings(body, name, "name", entry)
     for i, lit in enumerate(PROTECTED_LITERALS):
         body = body.replace(f"\x00P{i}\x00", lit)
-    body = mask(body, r"/gietvloer/(?!bedrijf)([a-z0-9-]+)/", "{{city_slug}}", "city_slug", entry, rel, required=False)
+    body = mask(body, rf"/{cluster}/(?!bedrijf)([a-z0-9-]+)/", "{{city_slug}}", "city_slug", entry, rel, required=False)
 
     # Rating- en contact-rij worden sub-templates: de aan/afwezigheid en volgorde
     # van website/tel/rating creëert anders tientallen body-varianten.
@@ -397,10 +415,15 @@ def render_city_content(entry: dict, body_tpl: str, card_shapes: dict) -> str:
 
 
 def extract_content(cluster: str):
-    """Vervang stad- en bedrijf-fragmenten door content-templates + data (pariteit verplicht)."""
+    """Vervang stad- en bedrijf-fragmenten door content-templates + data (pariteit verplicht).
+
+    Transactioneel: eerst wordt ALLES geparseerd en gegroepeerd; pas als dat
+    volledig slaagt worden bestanden geschreven en fragmenten verwijderd. Een
+    ParseError halverwege laat de cluster-data dus onaangeroerd."""
     ddir, tdir = data_dir(cluster), tpl_dir(cluster)
     pages = json.loads((ddir / "pages.json").read_text())
 
+    # ---- fase 1: parsen (geen mutaties) ----
     city_bodies, cities, card_shapes = {}, {}, {}
     bedrijf_bodies, bedrijven = {}, {}
     city_pages, bedrijf_pages = [], []
@@ -409,12 +432,12 @@ def extract_content(cluster: str):
         if page.get("content_kind") or not frag.exists():
             continue
         if page["slug"].startswith("bedrijf/"):
-            body, entry, rows = parse_bedrijf_fragment(frag.read_text(), page["file"])
+            body, entry, rows = parse_bedrijf_fragment(frag.read_text(), page["file"], cluster)
             bedrijf_bodies[page["file"]] = {"_skeleton": body}
             bedrijven[page["slug"]] = entry
             bedrijf_pages.append((page, frag, rows))
             continue
-        parsed = parse_city_fragment(frag.read_text(), page["file"])
+        parsed = parse_city_fragment(frag.read_text(), page["file"], cluster)
         if not parsed:
             continue
         body, entry, shapes = parsed
@@ -424,59 +447,66 @@ def extract_content(cluster: str):
         cities[page["slug"]] = entry
         city_pages.append((page, frag, shapes))
 
+    if not city_pages and not bedrijf_pages:
+        print("extract-content: geen content-fragmenten gevonden om te migreren")
+        return
+
+    city_body_names = city_body_blobs = shape_names = None
     if city_pages:
-        body_names, body_blobs = name_variants(city_bodies, "_skeleton", "content-template stad")
-        for name, blob in body_blobs.items():
-            (tdir / f"content.city.{name}.html").write_text(blob)
+        city_body_names, city_body_blobs = name_variants(city_bodies, "_skeleton", "content-template stad")
         shape_names = {}
         for i, (shape, _) in enumerate(sorted(card_shapes.items(), key=lambda kv: -len(kv[1]))):
-            name = ["rated", "unrated"][i] if i < 2 else VARIANT_NAMES[i]
-            shape_names[shape] = name
-            (tdir / f"card.{name}.html").write_text(shape)
-        for page, frag, shapes in city_pages:
-            for c, shape in zip(cities[page["slug"]]["companies"], shapes):
-                c["shape"] = shape_names[shape]
-            cities[page["slug"]]["template"] = body_names[page["file"]]
-            page["content_kind"] = "city"
-            frag.unlink()
-        (ddir / "cities.json").write_text(json.dumps(cities, ensure_ascii=False, indent=1) + "\n")
-        print(
-            f"extract-content: {len(city_pages)} stadspagina's → {len(body_blobs)} template(s) + "
-            f"{len(shape_names)} kaartvormen ({sum(len(e['companies']) for e in cities.values())} vermeldingen)"
-        )
+            shape_names[shape] = ["rated", "unrated"][i] if i < 2 else VARIANT_NAMES[i]
 
+    bedrijf_body_names = bedrijf_body_blobs = None
+    row_variants = {}
     if bedrijf_pages:
-        body_names, body_blobs = name_variants(bedrijf_bodies, "_skeleton", "content-template bedrijf")
-        for name, blob in body_blobs.items():
-            (tdir / f"content.bedrijf.{name}.html").write_text(blob)
-        row_counts = {}
+        bedrijf_body_names, bedrijf_body_blobs = name_variants(bedrijf_bodies, "_skeleton", "content-template bedrijf")
         for row_key in ("rating_row", "contact_row"):
             rows_by_page = {
                 page["file"]: {"_skeleton": rows[row_key]}
                 for page, _, rows in bedrijf_pages if row_key in rows
             }
-            if not rows_by_page:
-                continue
-            row_names, row_blobs = name_variants(rows_by_page, "_skeleton", f"rij {row_key}")
-            row_counts[row_key] = len(row_blobs)
+            if rows_by_page:
+                row_variants[row_key] = name_variants(rows_by_page, "_skeleton", f"rij {row_key}")
+
+    # ---- fase 2: wegschrijven (alle parsing is geslaagd) ----
+    if city_pages:
+        for name, blob in city_body_blobs.items():
+            (tdir / f"content.city.{name}.html").write_text(blob)
+        for shape, name in shape_names.items():
+            (tdir / f"card.{name}.html").write_text(shape)
+        for page, frag, shapes in city_pages:
+            for c, shape in zip(cities[page["slug"]]["companies"], shapes):
+                c["shape"] = shape_names[shape]
+            cities[page["slug"]]["template"] = city_body_names[page["file"]]
+            page["content_kind"] = "city"
+            frag.unlink()
+        (ddir / "cities.json").write_text(json.dumps(cities, ensure_ascii=False, indent=1) + "\n")
+        print(
+            f"extract-content: {len(city_pages)} stadspagina's → {len(city_body_blobs)} template(s) + "
+            f"{len(shape_names)} kaartvormen ({sum(len(e['companies']) for e in cities.values())} vermeldingen)"
+        )
+
+    if bedrijf_pages:
+        for name, blob in bedrijf_body_blobs.items():
+            (tdir / f"content.bedrijf.{name}.html").write_text(blob)
+        for row_key, (row_names, row_blobs) in row_variants.items():
             for name, blob in row_blobs.items():
                 (tdir / f"row.{row_key}.{name}.html").write_text(blob)
             for page, _, rows in bedrijf_pages:
                 if row_key in rows:
                     bedrijven[page["slug"]][row_key] = row_names[page["file"]]
         for page, frag, _ in bedrijf_pages:
-            bedrijven[page["slug"]]["template"] = body_names[page["file"]]
+            bedrijven[page["slug"]]["template"] = bedrijf_body_names[page["file"]]
             page["content_kind"] = "bedrijf"
             frag.unlink()
         (ddir / "bedrijven.json").write_text(json.dumps(bedrijven, ensure_ascii=False, indent=1) + "\n")
         print(
-            f"extract-content: {len(bedrijf_pages)} bedrijfspagina's → {len(body_blobs)} body-template(s), "
-            f"rijvarianten: {row_counts}"
+            f"extract-content: {len(bedrijf_pages)} bedrijfspagina's → {len(bedrijf_body_blobs)} body-template(s), "
+            f"rijvarianten: { {k: len(v[1]) for k, v in row_variants.items()} }"
         )
 
-    if not city_pages and not bedrijf_pages:
-        print("extract-content: geen content-fragmenten gevonden om te migreren")
-        return
     (ddir / "pages.json").write_text(json.dumps(pages, ensure_ascii=False, indent=1) + "\n")
 
 
