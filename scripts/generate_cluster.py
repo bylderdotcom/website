@@ -2,21 +2,26 @@
 # ============================================================================
 # CLUSTER-GENERATOR — build-time generatie, cluster voor cluster.
 #
-#   python3 scripts/generate_cluster.py extract bouwvergunning   # eenmalig: bootstrap
-#   python3 scripts/generate_cluster.py build bouwvergunning     # data+template → HTML
-#   python3 scripts/generate_cluster.py check bouwvergunning     # byte-pariteit vs disk
+#   python3 scripts/generate_cluster.py extract <cluster>   # eenmalig: bootstrap
+#   python3 scripts/generate_cluster.py build <cluster>     # data+template → HTML
+#   python3 scripts/generate_cluster.py check <cluster>     # byte-pariteit vs disk
+#
+# Werkwijze: het template wordt uit de ECHTE pagina-bytes afgeleid — de waarde-
+# spans (title, description, canonical/og, robots, JSON-LD, artikel, footer)
+# worden vervangen door placeholders, al het overige blijft letterlijk staan.
+# Pagina's met een afwijkend skelet worden automatisch een eigen template-
+# variant (template.<naam>.html). Zo blijft elke cluster-conventie (regelindeling,
+# extra meta-tags) byte-exact behouden zonder cluster-specifieke code.
 #
 # Model per cluster:
-#   templates/clusters/<cluster>/page.html            gedeelde chrome (head/nav/style/…)
-#   templates/clusters/<cluster>/aside.<naam>.html    gedeelde aside-varianten
-#   templates/clusters/<cluster>/footer.<naam>.html   gedeelde footer-varianten
-#   data/clusters/<cluster>/pages.json                per pagina: meta + varianten
-#   data/clusters/<cluster>/content/<slug>.html       artikel-content (verbatim), met
-#                                                     {{aside}} waar een gedeelde aside zat
+#   templates/clusters/<cluster>/template.<variant>.html  gedeelde chrome
+#   templates/clusters/<cluster>/aside.<naam>.html         gedeelde asides
+#   templates/clusters/<cluster>/footer.<naam>.html        gedeelde footers
+#   data/clusters/<cluster>/pages.json                     per pagina: meta + varianten
+#   data/clusters/<cluster>/content/<slug>.html            artikel-content (verbatim)
 #
-# De extract-modus is de inverse van build: na extract moet `check` 100% byte-
-# identiek zijn. Elke chrome-wijziging daarna = één template-edit + `build`.
-# Alleen stdlib; geen dependencies.
+# Na extract moet `check` 100% byte-identiek zijn; daarna is elke chrome-
+# wijziging één template-edit + `build`. Alleen stdlib; geen dependencies.
 # ============================================================================
 import hashlib
 import json
@@ -27,132 +32,132 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.bylder.com"
 
-# Per cluster: welke bestanden horen erbij (relatief aan repo-root).
 CLUSTERS = {
-    "bouwvergunning": sorted(
-        p.relative_to(ROOT).as_posix() for p in (ROOT / "bouwvergunning").rglob("index.html")
-    ),
+    name: sorted(
+        p.relative_to(ROOT).as_posix() for p in (ROOT / name).rglob("index.html")
+    )
+    for name in ("bouwvergunning", "gietvloer")
 }
 
+VARIANT_NAMES = ["default", "v2", "v3", "v4", "v5", "v6"]
 
-def slug_of(rel_path: str, cluster: str) -> str:
-    # "bouwvergunning/dakkapel/index.html" → "dakkapel"; hub-index → "index"
+
+def slug_of(rel_path: str) -> str:
     parts = Path(rel_path).parts
     return "index" if len(parts) == 2 else "/".join(parts[1:-1])
 
 
-# ---------------------------------------------------------------------------
-# Parsen: strikt geanchord — een pagina die niet matcht is een variant die we
-# expliciet willen zien (extract faalt dan luid, geen stille gaten).
-# ---------------------------------------------------------------------------
 class ParseError(Exception):
     pass
 
 
+# ---------------------------------------------------------------------------
+# Parsen: waarde-spans lokaliseren. Alles wat we NIET benoemen blijft skelet.
+# ---------------------------------------------------------------------------
 def parse_page(html: str, rel_path: str) -> dict:
-    def grab(pattern, required=True, flags=0):
-        m = re.search(pattern, html, flags)
-        if not m and required:
-            raise ParseError(f"{rel_path}: patroon niet gevonden: {pattern[:60]}")
-        return m
+    if "{{" in html:
+        raise ParseError(f"{rel_path}: bevat letterlijke '{{{{' — placeholder-conflict")
 
-    title = grab(r"<title>(.*?)</title>", flags=re.S).group(1)
-    desc = grab(r'<meta name="description" content="(.*?)">').group(1)
-    canonical = grab(r'<link rel="canonical" href="(.*?)">').group(1)
-    og_type = grab(r'<meta property="og:type" content="(.*?)">').group(1)
-    og_title = grab(r'<meta property="og:title" content="(.*?)">').group(1)
-    og_desc = grab(r'<meta property="og:description" content="(.*?)">').group(1)
-    og_url = grab(r'<meta property="og:url" content="(.*?)">').group(1)
-    robots = grab(r'<meta name="robots" content="(.*?)">').group(1)
-    og_image = grab(r'<meta property="og:image" content="(.*?)">', required=False)
-    twitter = grab(r'<meta name="twitter:card" content="(.*?)">', required=False)
-    gstatic = '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' in html
+    spans = []  # (start, eind, placeholder)
+    values = {}
 
+    def span(pattern, placeholder, required=True, flags=0):
+        matches = list(re.finditer(pattern, html, flags))
+        if not matches:
+            if required:
+                raise ParseError(f"{rel_path}: niet gevonden: {pattern[:60]}")
+            return None
+        if len(matches) > 1:
+            raise ParseError(f"{rel_path}: meerdere matches voor {pattern[:60]}")
+        m = matches[0]
+        spans.append((m.start(1), m.end(1), placeholder))
+        return m.group(1)
+
+    values["title"] = span(r"<title>(.*?)</title>", "{{title}}", flags=re.S)
+    values["description"] = span(r'<meta name="description" content="(.*?)"', "{{description}}")
+    canonical = span(r'<link rel="canonical" href="(.*?)"', "{{url}}")
     if not canonical.startswith(SITE):
         raise ParseError(f"{rel_path}: canonical buiten {SITE}: {canonical}")
-    expected = canonical[len(SITE):]
-    if og_title != title or og_desc != desc or og_url != canonical:
-        raise ParseError(f"{rel_path}: og-velden wijken af van title/description/canonical")
+    values["path"] = canonical[len(SITE):]
 
-    ldjson = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
-    for block in ldjson:
-        json.loads(block)  # moet geldige JSON zijn
+    for pattern, placeholder, key in [
+        (r'<meta property="og:title" content="(.*?)"', "{{og_title}}", "og_title"),
+        (r'<meta property="og:description" content="(.*?)"', "{{og_description}}", "og_description"),
+        (r'<meta property="og:url" content="(.*?)"', "{{url}}", "og_url"),
+        (r'<meta property="og:type" content="(.*?)"', "{{og_type}}", "og_type"),
+        (r'<meta name="robots" content="(.*?)"', "{{robots}}", "robots"),
+        (r'<meta property="og:image" content="(.*?)"', "{{og_image}}", "og_image"),
+        (r'<meta name="twitter:card" content="(.*?)"', "{{twitter_card}}", "twitter_card"),
+    ]:
+        values[key] = span(pattern, placeholder, required=key in ("og_type", "robots"))
+    if values.get("og_url") is not None and values["og_url"] != canonical:
+        raise ParseError(f"{rel_path}: og:url wijkt af van canonical")
 
-    nav_m = grab(r"<body>(<nav.*?</nav>)", flags=re.S)
-    style_m = grab(r"<style>.*?</style>", flags=re.S)
-    footer_m = grab(r"<footer.*?</footer>", flags=re.S)
-    main = html[nav_m.end(1): footer_m.start()]
-    tail = html[footer_m.end():]
+    # JSON-LD: elk blok is data; de regio (incl. scheidingstekens) wordt {{ldjson}}.
+    ld = list(re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S))
+    if ld:
+        seps = {html[a.end(): b.start()] for a, b in zip(ld, ld[1:])}
+        if len(seps) > 1:
+            raise ParseError(f"{rel_path}: JSON-LD-blokken met wisselende scheidingstekens")
+        values["ldjson"] = [m.group(1) for m in ld]
+        for block in values["ldjson"]:
+            json.loads(block)
+        values["ldjson_sep"] = seps.pop() if seps else ""
+        spans.append((ld[0].start(), ld[-1].end(), "{{ldjson}}"))
+    else:
+        values["ldjson"], values["ldjson_sep"] = [], ""
 
-    return {
-        "path": expected,
-        "title": title,
-        "description": desc,
-        "og_type": og_type,
-        "robots": robots,
-        "og_image": og_image.group(1) if og_image else None,
-        "twitter_card": twitter.group(1) if twitter else None,
-        "preconnect_gstatic": gstatic,
-        "ldjson": ldjson,
-        "_nav": nav_m.group(1),
-        "_style": style_m.group(0),
-        "_footer": footer_m.group(0),
-        "_main": main,
-        "_head_prefix": html[: html.find("<title>")],
-        "_tail": tail,
-    }
+    # Artikel (main): tussen </nav> (of <body>) en <footer. Footer: eigen fragment.
+    footer = re.search(r"<footer.*?</footer>", html, re.S)
+    if not footer:
+        raise ParseError(f"{rel_path}: geen <footer> gevonden")
+    nav = re.search(r"<body>(<nav.*?</nav>)", html, re.S)
+    main_start = nav.end(1) if nav else re.search(r"<body[^>]*>", html).end()
+    spans.append((main_start, footer.start(), "{{main}}"))
+    values["_main"] = html[main_start: footer.start()]
+    spans.append((footer.start(), footer.end(), "{{footer}}"))
+    values["_footer"] = footer.group(0)
+
+    # Skelet: waarde-spans vervangen door placeholders (van achter naar voren).
+    for a, b, _ in spans:
+        for a2, b2, _ in spans:
+            if (a, b) != (a2, b2) and a < b2 and a2 < b and not (a >= b2 or a2 >= b):
+                if not (b <= a2 or b2 <= a):
+                    raise ParseError(f"{rel_path}: overlappende spans")
+    skeleton = html
+    for a, b, placeholder in sorted(spans, key=lambda s: -s[0]):
+        skeleton = skeleton[:a] + placeholder + skeleton[b:]
+    values["_skeleton"] = skeleton
+    return values
 
 
 # ---------------------------------------------------------------------------
-# Renderen — exact de inverse van parse_page.
+# Renderen — exact de inverse: placeholders → waarden.
 # ---------------------------------------------------------------------------
-def render_page(page: dict, tpl: str, fragments: dict, content: str) -> str:
-    aside = fragments.get(f"aside.{page['aside']}") if page.get("aside") else None
-    main = content.replace("{{aside}}", aside) if aside else content
-    head_extra = ""
-    if page.get("og_image"):
-        head_extra += f'\n<meta property="og:image" content="{page["og_image"]}">'
-    if page.get("twitter_card"):
-        head_extra += f'\n<meta name="twitter:card" content="{page["twitter_card"]}">'
-    gstatic = (
-        '\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-        if page.get("preconnect_gstatic")
-        else ""
-    )
-    ldjson = "".join(
-        f'\n<script type="application/ld+json">{b}</script>' for b in page["ldjson"]
-    )
-    url = SITE + page["path"]
-    out = tpl
-    for key, val in {
+def render_page(page: dict, template: str, fragments: dict, content: str) -> str:
+    main = content
+    if page.get("aside"):
+        main = main.replace("{{aside}}", fragments[f"aside.{page['aside']}"])
+    subs = {
         "{{title}}": page["title"],
         "{{description}}": page["description"],
-        "{{url}}": url,
+        "{{url}}": SITE + page["path"],
+        "{{og_title}}": page.get("og_title") or page["title"],
+        "{{og_description}}": page.get("og_description") or page["description"],
         "{{og_type}}": page["og_type"],
         "{{robots}}": page["robots"],
-        "{{head_extra}}": head_extra,
-        "{{preconnect_gstatic}}": gstatic,
-        "{{ldjson}}": ldjson,
+        "{{og_image}}": page.get("og_image") or "",
+        "{{twitter_card}}": page.get("twitter_card") or "",
+        "{{ldjson}}": page["ldjson_sep"].join(
+            f'<script type="application/ld+json">{b}</script>' for b in page["ldjson"]
+        ),
         "{{main}}": main,
         "{{footer}}": fragments[f"footer.{page['footer']}"],
-    }.items():
+    }
+    out = template
+    for key, val in subs.items():
         out = out.replace(key, val)
     return out
-
-
-PAGE_TEMPLATE = """{{head_prefix}}<title>{{title}}</title>
-<meta name="description" content="{{description}}">
-<link rel="canonical" href="{{url}}">
-<meta property="og:type" content="{{og_type}}">
-<meta property="og:title" content="{{title}}">
-<meta property="og:description" content="{{description}}">
-<meta property="og:url" content="{{url}}">{{head_extra}}
-<meta name="robots" content="{{robots}}">
-<link rel="preconnect" href="https://fonts.googleapis.com">{{preconnect_gstatic}}
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">{{ldjson}}
-{{style}}
-</head>
-<body>{{nav}}{{main}}{{footer}}{{tail}}"""
 
 
 def tpl_dir(cluster):
@@ -163,69 +168,66 @@ def data_dir(cluster):
     return ROOT / "data" / "clusters" / cluster
 
 
+def name_variants(parsed: dict, key: str, label: str):
+    """Groepeer byte-identieke blobs; geef {rel: naam} + {naam: blob} (grootste eerst)."""
+    seen = {}
+    for rel, p in parsed.items():
+        seen.setdefault(hashlib.md5(p[key].encode()).hexdigest(), {"blob": p[key], "pages": []})["pages"].append(rel)
+    ordered = sorted(seen.values(), key=lambda v: -len(v["pages"]))
+    if len(ordered) > len(VARIANT_NAMES):
+        raise ParseError(f"{label}: {len(ordered)} varianten (> {len(VARIANT_NAMES)}) — cluster eerst normaliseren")
+    names, blobs = {}, {}
+    for i, v in enumerate(ordered):
+        blobs[VARIANT_NAMES[i]] = v["blob"]
+        for rel in v["pages"]:
+            names[rel] = VARIANT_NAMES[i]
+    return names, blobs
+
+
 # ---------------------------------------------------------------------------
 # extract — bootstrap template/fragments/data uit de bestaande HTML.
 # ---------------------------------------------------------------------------
 def extract(cluster: str):
-    pages = []
-    parsed = {}
-    for rel in CLUSTERS[cluster]:
-        parsed[rel] = parse_page((ROOT / rel).read_text(), rel)
+    parsed = {rel: parse_page((ROOT / rel).read_text(), rel) for rel in CLUSTERS[cluster]}
 
-    # Footer-varianten: aparte fragment-bestanden per unieke variant (meest gebruikte eerst).
-    seen = {}
-    for rel, p in parsed.items():
-        h = hashlib.md5(p["_footer"].encode()).hexdigest()
-        seen.setdefault(h, {"blob": p["_footer"], "pages": []})["pages"].append(rel)
-    footer_variants = sorted(seen.values(), key=lambda v: -len(v["pages"]))
-    names = ["default", "hub", "extra1", "extra2"]
-    if len(footer_variants) > len(names):
-        raise ParseError(f"_footer: {len(footer_variants)} varianten, breid namenlijst uit")
-    footer_names = {}
-    for i, v in enumerate(footer_variants):
-        for rel in v["pages"]:
-            footer_names[rel] = names[i]
-        (tpl_dir(cluster) / f"footer.{names[i]}.html").parent.mkdir(parents=True, exist_ok=True)
-        (tpl_dir(cluster) / f"footer.{names[i]}.html").write_text(v["blob"])
+    tdir, ddir = tpl_dir(cluster), data_dir(cluster)
+    tdir.mkdir(parents=True, exist_ok=True)
+    (ddir / "content").mkdir(parents=True, exist_ok=True)
+    for stale in list(tdir.glob("*.html")) + list((ddir / "content").glob("*.html")):
+        stale.unlink()
 
-    # Nav/style/head-prefix/tail moeten cluster-uniform zijn (anders: eerst opschonen).
-    for key in ("_nav", "_style", "_head_prefix", "_tail"):
-        blobs = {p[key] for p in parsed.values()}
-        if len(blobs) != 1:
-            raise ParseError(f"{key} is niet uniform over het cluster ({len(blobs)} varianten)")
-    ref = parsed[CLUSTERS[cluster][0]]
+    tpl_names, tpl_blobs = name_variants(parsed, "_skeleton", "template")
+    footer_names, footer_blobs = name_variants(parsed, "_footer", "footer")
+    for name, blob in tpl_blobs.items():
+        (tdir / f"template.{name}.html").write_text(blob)
+    for name, blob in footer_blobs.items():
+        (tdir / f"footer.{name}.html").write_text(blob)
 
-    # Aside-varianten: byte-identieke asides in main → {{aside}} + fragment.
+    # Gedeelde asides binnen main → {{aside}} + fragment.
     aside_re = re.compile(r"<aside.*?</aside>", re.S)
-    aside_count = {}
+    by_aside = {}
     for rel, p in parsed.items():
         m = aside_re.search(p["_main"])
         if m:
-            aside_count.setdefault(m.group(0), []).append(rel)
+            by_aside.setdefault(m.group(0), []).append(rel)
     aside_names = {}
-    shared = [(blob, rels) for blob, rels in aside_count.items() if len(rels) > 1]
-    for i, (blob, rels) in enumerate(sorted(shared, key=lambda x: -len(x[1]))):
-        name = ["project", "thema", "extra1", "extra2"][i]
-        (tpl_dir(cluster) / f"aside.{name}.html").write_text(blob)
+    shared = sorted(((b, r) for b, r in by_aside.items() if len(r) > 1), key=lambda x: -len(x[1]))
+    for i, (blob, rels) in enumerate(shared):
+        name = ["project", "thema"][i] if i < 2 else VARIANT_NAMES[i]
+        (tdir / f"aside.{name}.html").write_text(blob)
         for rel in rels:
             aside_names[rel] = (name, blob)
 
-    # Template + content-fragmenten + pages.json wegschrijven.
-    tpl = PAGE_TEMPLATE.replace("{{head_prefix}}", ref["_head_prefix"])
-    tpl = tpl.replace("{{style}}", ref["_style"]).replace("{{nav}}", ref["_nav"])
-    tpl = tpl.replace("{{tail}}", ref["_tail"])
-    (tpl_dir(cluster) / "page.html").write_text(tpl)
-
-    (data_dir(cluster) / "content").mkdir(parents=True, exist_ok=True)
+    pages = []
     for rel in CLUSTERS[cluster]:
-        p, slug = parsed[rel], slug_of(rel, cluster)
+        p, slug = parsed[rel], slug_of(rel)
         main = p["_main"]
         aside = None
         if rel in aside_names:
             aside, blob = aside_names[rel]
             main = main.replace(blob, "{{aside}}")
-        (data_dir(cluster) / "content" / f"{slug.replace('/', '__')}.html").write_text(main)
-        pages.append({
+        (ddir / "content" / f"{slug.replace('/', '__')}.html").write_text(main)
+        entry = {
             "slug": slug,
             "file": rel,
             "path": p["path"],
@@ -233,48 +235,51 @@ def extract(cluster: str):
             "description": p["description"],
             "og_type": p["og_type"],
             "robots": p["robots"],
-            "og_image": p["og_image"],
-            "twitter_card": p["twitter_card"],
-            "preconnect_gstatic": p["preconnect_gstatic"],
+            "template": tpl_names[rel],
             "footer": footer_names[rel],
             "aside": aside,
             "ldjson": p["ldjson"],
-        })
-    (data_dir(cluster) / "pages.json").write_text(
-        json.dumps(pages, ensure_ascii=False, indent=1) + "\n"
+            "ldjson_sep": p["ldjson_sep"],
+        }
+        for opt in ("og_title", "og_description", "og_image", "twitter_card"):
+            if p.get(opt) is not None and p[opt] != entry.get(opt.replace("og_title", "title").replace("og_description", "description")):
+                if opt == "og_title" and p[opt] == p["title"]:
+                    continue
+                if opt == "og_description" and p[opt] == p["description"]:
+                    continue
+                entry[opt] = p[opt]
+        pages.append(entry)
+    (ddir / "pages.json").write_text(json.dumps(pages, ensure_ascii=False, indent=1) + "\n")
+    print(
+        f"extract: {len(pages)} pagina's — templates: {len(tpl_blobs)}, "
+        f"footers: {len(footer_blobs)}, gedeelde asides: {sorted({v[0] for v in aside_names.values()})}"
     )
-    print(f"extract: {len(pages)} pagina's → {data_dir(cluster).relative_to(ROOT)} + {tpl_dir(cluster).relative_to(ROOT)}")
-    print(f"  footer-varianten: {len(footer_variants)}, gedeelde asides: {sorted({v[0] for v in aside_names.values()})}")
 
 
 # ---------------------------------------------------------------------------
 # build / check
 # ---------------------------------------------------------------------------
 def build(cluster: str, check_only: bool) -> int:
-    tpl = (tpl_dir(cluster) / "page.html").read_text()
-    fragments = {
-        f.stem: f.read_text()
-        for f in tpl_dir(cluster).glob("*.html")
-        if f.name != "page.html"
-    }
+    fragments = {f.stem: f.read_text() for f in tpl_dir(cluster).glob("*.html")}
     pages = json.loads((data_dir(cluster) / "pages.json").read_text())
     mismatches = []
     for page in pages:
+        template = fragments[f"template.{page['template']}"]
         content = (data_dir(cluster) / "content" / f"{page['slug'].replace('/', '__')}.html").read_text()
-        out = render_page(page, tpl, fragments, content)
+        out = render_page(page, template, fragments, content)
         target = ROOT / page["file"]
         if check_only:
-            current = target.read_text() if target.exists() else None
-            if current != out:
+            if not target.exists() or target.read_text() != out:
                 mismatches.append(page["file"])
         else:
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(out)
     if check_only:
-        ok = len(pages) - len(mismatches)
-        print(f"check: {ok}/{len(pages)} byte-identiek")
-        for f in mismatches:
+        print(f"check: {len(pages) - len(mismatches)}/{len(pages)} byte-identiek")
+        for f in mismatches[:10]:
             print(f"   MISMATCH: {f}")
+        if len(mismatches) > 10:
+            print(f"   … +{len(mismatches) - 10} meer")
         return 1 if mismatches else 0
     print(f"build: {len(pages)} pagina's geschreven")
     return 0
