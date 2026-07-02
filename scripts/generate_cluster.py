@@ -36,7 +36,22 @@ CLUSTERS = {
     name: sorted(
         p.relative_to(ROOT).as_posix() for p in (ROOT / name).rglob("index.html")
     )
-    for name in ("bouwvergunning", "gietvloer", "aannemer", "elektricien")
+    for name in ("bouwvergunning", "gietvloer", "aannemer", "elektricien", "offerte-check", "aannemer-matching")
+}
+
+# Clusters met vak×stad-tekstpagina's (geen bedrijfskaarten): template per vak +
+# datarij per stad. h1_city = patroon dat de stadsnaam uit de h1 haalt.
+VAKSTAD_CLUSTERS = {
+    "offerte-check": {"h1_city": r" in (.*?) —"},
+    "aannemer-matching": {"h1_city": r"<h1[^>]*>[A-Za-zëï-]+ (.*?) — "},
+}
+
+PROVINCES = {
+    "drenthe": "Drenthe", "flevoland": "Flevoland", "friesland": "Friesland",
+    "gelderland": "Gelderland", "groningen": "Groningen", "limburg": "Limburg",
+    "noord-brabant": "Noord-Brabant", "noord-holland": "Noord-Holland",
+    "overijssel": "Overijssel", "utrecht": "Utrecht", "zeeland": "Zeeland",
+    "zuid-holland": "Zuid-Holland",
 }
 
 VARIANT_NAMES = ["default"] + [f"v{i}" for i in range(2, 41)]
@@ -89,7 +104,7 @@ def parse_page(html: str, rel_path: str) -> dict:
         (r'<meta property="og:image" content="(.*?)"', "{{og_image}}", "og_image"),
         (r'<meta name="twitter:card" content="(.*?)"', "{{twitter_card}}", "twitter_card"),
     ]:
-        values[key] = span(pattern, placeholder, required=key in ("og_type", "robots"))
+        values[key] = span(pattern, placeholder, required=key == "robots")
     if values.get("og_url") is not None and values["og_url"] != canonical:
         raise ParseError(f"{rel_path}: og:url wijkt af van canonical")
 
@@ -144,7 +159,7 @@ def render_page(page: dict, template: str, fragments: dict, content: str) -> str
         "{{url}}": SITE + page["path"],
         "{{og_title}}": page.get("og_title") or page["title"],
         "{{og_description}}": page.get("og_description") or page["description"],
-        "{{og_type}}": page["og_type"],
+        "{{og_type}}": page.get("og_type") or "",
         "{{robots}}": page["robots"],
         "{{og_image}}": page.get("og_image") or "",
         "{{twitter_card}}": page.get("twitter_card") or "",
@@ -394,6 +409,43 @@ TILE_SHAPES = {
 }
 
 
+def parse_vakstad_fragment(html: str, rel: str, page_slug: str, h1_city: str):
+    """Vak×stad-tekstpagina → (template, datarij). Variabelen: stad (+alt), stad-slug,
+    provincie (+slug). Steden die gelijk heten aan hun provincie worden vanzelf een
+    eigen template-variant (onherleidbaar onder byte-pariteit)."""
+    m = re.search(h1_city, html)
+    if not m:
+        raise ParseError(f"{rel}: stadsnaam niet in h1 gevonden ({h1_city})")
+    city = m.group(1)
+    city_slug = page_slug.split("/")[1]
+    entry = {"city": city, "city_slug": city_slug}
+
+    body = html
+    prov_m = re.search(r"/nieuwbouw/([a-z-]+)/", body)
+    if prov_m:
+        prov_slug = prov_m.group(1)
+        if prov_slug not in PROVINCES:
+            raise ParseError(f"{rel}: onbekende provincie-slug '{prov_slug}'")
+        entry["prov_slug"] = prov_slug
+        entry["prov"] = PROVINCES[prov_slug]
+        body = re.sub(bounded(entry["prov"]), "{{prov}}", body)
+        body = re.sub(bounded(prov_slug), "{{prov_slug}}", body)
+
+    body = replace_spellings(body, city, "city", entry)
+    body = re.sub(bounded(city_slug), "{{city_slug}}", body)
+    return body, entry
+
+
+def render_vakstad_content(entry: dict, body_tpl: str) -> str:
+    out = body_tpl
+    for key in ("city", "city_alt", "city_slug", "prov", "prov_slug"):
+        if key in entry:
+            out = out.replace("{{" + key + "}}", entry[key])
+    if "{{" in out:
+        raise ParseError(f"onvervulde placeholder in vakstad '{entry['city_slug']}'")
+    return out
+
+
 def render_city_content(entry: dict, body_tpl: str, card_shapes: dict) -> str:
     cards = []
     for c in entry["companies"]:
@@ -427,9 +479,18 @@ def extract_content(cluster: str):
     city_bodies, cities, card_shapes = {}, {}, {}
     bedrijf_bodies, bedrijven = {}, {}
     city_pages, bedrijf_pages = [], []
+    vakstad_bodies, vaksteden, vakstad_pages = {}, {}, []
+    vakstad_cfg = VAKSTAD_CLUSTERS.get(cluster)
     for page in pages:
         frag = ddir / "content" / f"{page['slug'].replace('/', '__')}.html"
         if page.get("content_kind") or not frag.exists():
+            continue
+        if vakstad_cfg and page["slug"].count("/") == 1:
+            body, entry = parse_vakstad_fragment(frag.read_text(), page["file"], page["slug"], vakstad_cfg["h1_city"])
+            vak = page["slug"].split("/")[0]
+            vakstad_bodies.setdefault(vak, {})[page["file"]] = {"_skeleton": body}
+            vaksteden[page["slug"]] = entry
+            vakstad_pages.append((page, frag, vak))
             continue
         if page["slug"].startswith("bedrijf/"):
             body, entry, rows = parse_bedrijf_fragment(frag.read_text(), page["file"], cluster)
@@ -447,9 +508,18 @@ def extract_content(cluster: str):
         cities[page["slug"]] = entry
         city_pages.append((page, frag, shapes))
 
-    if not city_pages and not bedrijf_pages:
+    if not city_pages and not bedrijf_pages and not vakstad_pages:
         print("extract-content: geen content-fragmenten gevonden om te migreren")
         return
+
+    vakstad_names = {}  # per vak: rel → templatenaam
+    vakstad_blobs = {}  # f"{vak}.{variant}" → blob
+    for vak, bodies in vakstad_bodies.items():
+        names, blobs = name_variants(bodies, "_skeleton", f"vakstad {vak}")
+        for rel, n in names.items():
+            vakstad_names[rel] = f"{vak}.{n}"
+        for n, blob in blobs.items():
+            vakstad_blobs[f"{vak}.{n}"] = blob
 
     city_body_names = city_body_blobs = shape_names = None
     if city_pages:
@@ -505,6 +575,22 @@ def extract_content(cluster: str):
         print(
             f"extract-content: {len(bedrijf_pages)} bedrijfspagina's → {len(bedrijf_body_blobs)} body-template(s), "
             f"rijvarianten: { {k: len(v[1]) for k, v in row_variants.items()} }"
+        )
+
+    if vakstad_pages:
+        for name, blob in vakstad_blobs.items():
+            (tdir / f"content.vakstad.{name}.html").write_text(blob)
+        for page, frag, vak in vakstad_pages:
+            vaksteden[page["slug"]]["template"] = vakstad_names[page["file"]]
+            page["content_kind"] = "vakstad"
+            frag.unlink()
+        (ddir / "vaksteden.json").write_text(json.dumps(vaksteden, ensure_ascii=False, indent=1) + "\n")
+        per_vak = {}
+        for name in vakstad_blobs:
+            per_vak[name.split(".")[0]] = per_vak.get(name.split(".")[0], 0) + 1
+        print(
+            f"extract-content: {len(vakstad_pages)} vak×stad-pagina's → {len(vakstad_blobs)} template(s) "
+            f"over {len(per_vak)} vakken (varianten per vak: {per_vak})"
         )
 
     (ddir / "pages.json").write_text(json.dumps(pages, ensure_ascii=False, indent=1) + "\n")
@@ -608,6 +694,8 @@ def build(cluster: str, check_only: bool) -> int:
     cities = json.loads(cities_file.read_text()) if cities_file.exists() else {}
     bedrijven_file = data_dir(cluster) / "bedrijven.json"
     bedrijven = json.loads(bedrijven_file.read_text()) if bedrijven_file.exists() else {}
+    vaksteden_file = data_dir(cluster) / "vaksteden.json"
+    vaksteden = json.loads(vaksteden_file.read_text()) if vaksteden_file.exists() else {}
     card_shapes = {name.split(".", 1)[1]: blob for name, blob in fragments.items() if name.startswith("card.")}
     mismatches = []
     for page in pages:
@@ -618,6 +706,9 @@ def build(cluster: str, check_only: bool) -> int:
         elif page.get("content_kind") == "bedrijf":
             entry = bedrijven[page["slug"]]
             content = render_bedrijf_content(entry, fragments[f"content.bedrijf.{entry['template']}"], fragments)
+        elif page.get("content_kind") == "vakstad":
+            entry = vaksteden[page["slug"]]
+            content = render_vakstad_content(entry, fragments[f"content.vakstad.{entry['template']}"])
         else:
             content = (data_dir(cluster) / "content" / f"{page['slug'].replace('/', '__')}.html").read_text()
         out = render_page(page, template, fragments, content)
