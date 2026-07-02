@@ -36,7 +36,11 @@ CLUSTERS = {
     name: sorted(
         p.relative_to(ROOT).as_posix() for p in (ROOT / name).rglob("index.html")
     )
-    for name in ("bouwvergunning", "gietvloer", "aannemer", "elektricien", "offerte-check", "aannemer-matching", "badkamer", "dakkapel")
+    for name in (
+        "bouwvergunning", "gietvloer", "aannemer", "elektricien", "offerte-check",
+        "aannemer-matching", "badkamer", "dakkapel", "schilder", "loodgieter",
+        "stukadoor", "renovatiekosten",
+    )
 }
 
 # Clusters met vak×stad-tekstpagina's (geen bedrijfskaarten): template per vak +
@@ -44,6 +48,9 @@ CLUSTERS = {
 VAKSTAD_CLUSTERS = {
     "offerte-check": {"h1_city": r" in (.*?) —"},
     "aannemer-matching": {"h1_city": r"<h1[^>]*>[A-Za-zëï-]+ (.*?) — "},
+    # Stad geanchord op het map-pin-icoon: de h1 bevat een dubbele "kosten"
+    # (bron-bug) waardoor een h1-patroon de stad niet betrouwbaar vangt.
+    "renovatiekosten": {"h1_city": r'ph-map-pin"></i> ([^<]+)<'},
 }
 
 PROVINCES = {
@@ -229,6 +236,8 @@ def card_slots(cluster: str):
         (r"Google &#9733; ([\d.]+) <span", "{{rating_disp}}", "rating_disp", False),
         (r'font-weight:400;">\((\d+)\)</span>', "{{reviews_disp}}", "reviews_disp", False),
         (r'href="(https://www\.google\.com/maps/search/[^"]*)"', "{{maps_href}}", "maps_href", False),
+        # Tweede Maps-linkvorm (loodgieter-kaarten): maps.google.com/?cid=…
+        (r'href="(https://maps\.google\.com/\?[^"]*)"', "{{maps_cid_href}}", "maps_cid_href", False),
         (r'href="(https://app\.bylder\.com/vakbedrijf/claim/[^"]*)"', "{{claim_href}}", "claim_href", True),
     ]
 
@@ -335,6 +344,7 @@ def parse_bedrijf_fragment(html: str, rel: str, cluster: str):
     body = mask(body, r'font-weight:400;">\((\d+)\)</span>', "{{reviews_disp}}", "reviews_disp", values, rel, required=False)
     body = mask(body, r'>(\d+) beoordelingen ', "{{reviews}}", "reviews", values, rel, required=False)
     body = mask(body, r'href="(https://www\.google\.com/maps/search/[^"]*)"', "{{maps_href}}", "maps_href", values, rel, required=False)
+    body = mask(body, r'href="(https://maps\.google\.com/\?[^"]*)"', "{{maps_cid_href}}", "maps_cid_href", values, rel, required=False)
     body = mask(body, r'<a href="([^"]+)" target="_blank" rel="nofollow noopener" style="font-weight:700;">Website', "{{website}}", "website", values, rel, required=False)
     body = mask(body, r'href="tel:([^"]+)"', "{{tel}}", "tel", values, rel, required=False)
     body = mask(body, r'href="tel:\{\{tel\}\}" style="font-weight:700;">(.*?)</a>', "{{tel_disp}}", "tel_disp", values, rel, required=False)
@@ -395,7 +405,7 @@ def render_bedrijf_content(entry: dict, body_tpl: str, fragments: dict) -> str:
             tiles.append(tile)
         out = out.replace("{{tiles}}", "".join(tiles))
     for key in ("name", "name_alt", "city", "city_alt", "city_slug", "rating_disp",
-                "reviews_disp", "reviews", "maps_href", "website", "tel", "tel_disp"):
+                "reviews_disp", "reviews", "maps_href", "maps_cid_href", "website", "tel", "tel_disp"):
         if key in entry:
             out = out.replace("{{" + key + "}}", entry[key])
     if "{{" in out:
@@ -526,6 +536,8 @@ def extract_content(cluster: str):
         city_body_names, city_body_blobs = name_variants(city_bodies, "_skeleton", "content-template stad")
         shape_names = {}
         for i, (shape, _) in enumerate(sorted(card_shapes.items(), key=lambda kv: -len(kv[1]))):
+            if i >= len(VARIANT_NAMES):
+                raise ParseError(f"kaartvormen: {i + 1}+ varianten — kaart-slots eerst uitbreiden")
             shape_names[shape] = ["rated", "unrated"][i] if i < 2 else VARIANT_NAMES[i]
 
     bedrijf_body_names = bedrijf_body_blobs = None
