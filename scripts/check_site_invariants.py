@@ -289,6 +289,10 @@ def main():
     }
 
     # ---- Check 3: canonical -------------------------------------------------
+    # Zelf-verwijzend is de norm; een alias-canonical naar een ÁNDERE bestaande
+    # www-pagina (bv. /voucher/ → /vouchers/) is bewust en dus geen overtreding.
+    # Fout is: verkeerde host (zonder www / extern) of niet-bestaand doel.
+    all_files = {r["path"].replace(os.sep, "/") for r in results}
     c3 = []
     with_canonical = 0
     for r in results:
@@ -299,8 +303,14 @@ def main():
         ok_paths = file_to_url_paths(r["path"])
         accepted = {HOST + p for p in ok_paths}
         accepted.add(HOST)  # https://www.bylder.com zonder slash voor root
-        if can.rstrip() not in accepted:
-            c3.append({"path": r["path"], "canonical": can})
+        if can.rstrip() in accepted:
+            continue
+        target = can.rstrip()
+        if target.startswith(HOST):
+            rel = target[len(HOST):].strip("/")
+            if (rel + "/index.html" if rel else "index.html") in all_files or rel + ".html" in all_files:
+                continue  # alias naar bestaande pagina — bewust
+        c3.append({"path": r["path"], "canonical": can})
     report["checks"]["3_canonical"] = {
         "pages_with_canonical": with_canonical,
         "violations": len(c3),
