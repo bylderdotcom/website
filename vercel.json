@@ -8,6 +8,11 @@
       "permanent": true
     },
     {
+      "source": "/nieuwbouw/nieuwbouw/:path*",
+      "destination": "/nieuwbouw/:path*",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "mijn.bylder.com" }],
       "destination": "https://www.bylder.com",
