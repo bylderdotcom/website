@@ -90,6 +90,28 @@ def add_dateline_vakstad(cluster: str) -> int:
     return changed
 
 
+def add_dateline_bedrijf(cluster: str) -> int:
+    """Bijgewerkt/bron-regel in het neutraliteits-blok van bedrijfsprofielen."""
+    regel = (
+        f' <span style="display:block;margin-top:8px;font-size:12px;'
+        f'color:rgba(61,46,30,0.45)" {MARKER}>Gegevens bijgewerkt: {DATUM} &middot; '
+        f'Bron: Google &amp; OpenStreetMap (&copy; OpenStreetMap-bijdragers).</span>'
+    )
+    changed = 0
+    for tpl in sorted((ROOT / "templates" / "clusters" / cluster).glob("content.bedrijf.*.html")):
+        html = tpl.read_text()
+        if MARKER in html:
+            continue
+        anchor = '<div class="highlight" style="margin-top:20px;">'
+        if anchor not in html:
+            raise SystemExit(f"{tpl}: neutraliteits-blok niet gevonden — anker checken")
+        i = html.index("</div>", html.index(anchor))
+        html = html[:i] + regel + html[i:]
+        tpl.write_text(html)
+        changed += 1
+    return changed
+
+
 def main():
     total = 0
     for c in CITY_CLUSTERS:
@@ -100,6 +122,10 @@ def main():
         n = add_dateline_vakstad(c)
         total += n
         print(f"{c}: {n} vakstad-templates bijgewerkt")
+    for c in CITY_CLUSTERS:
+        n = add_dateline_bedrijf(c)
+        total += n
+        print(f"{c}: {n} bedrijf-templates bijgewerkt")
     print(f"totaal: {total} templates — nu per cluster `generate_cluster.py build` draaien")
 
 
