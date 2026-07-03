@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03T09:47:41",
+  "generated": "2026-07-03T09:58:14",
   "root": "/Users/danielpaaij/Documents/GitHub/website",
   "checks": {
     "1_sitemap_files": {
@@ -90,5 +90,5 @@
       "examples": []
     }
   },
-  "runtime_seconds": 3.9
+  "runtime_seconds": 3.6
 }

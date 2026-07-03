@@ -340,7 +340,6 @@
   "website": "http://www.am-klussenbedrijf.nl/",
   "tel": "0652850915",
   "tel_disp": "06 52850915",
-  "name_alt": "A&M Klussenbedrijf🛠",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -376,7 +375,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/a-plus-geveltechniek-e3octs": {
   "name": "A plus geveltechniek",
@@ -408,11 +407,10 @@
   "website": "https://www.aenrallround.nl/",
   "tel": "0475593711",
   "tel_disp": "0475 593 711",
-  "name_alt": "A & R Allround",
   "city_slug": "haelen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/a-vriens-timmerwerken-0osqyw": {
   "name": "A. Vriens Timmerwerken",
@@ -689,7 +687,6 @@
   "website": "https://www.aannemersbouwbedrijfheemstede.nl/",
   "tel": "0640658048",
   "tel_disp": "06 40658048",
-  "name_alt": "Aannemers & Bouwbedrijf Heemstede",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -725,7 +722,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/aannemersbedijf-luttikhuis-b-v-pneieo": {
   "name": "Aannemersbedijf Luttikhuis b.v.",
@@ -2079,7 +2076,6 @@
   "website": "https://netherlandspot.org/details/adviesbureau-timmerbedrijf-dsa-ChIJIzH",
   "tel": "0513851201",
   "tel_disp": "0513 851 201",
-  "name_alt": "Adviesbureau & Timmerbedrijf DSA",
   "city_slug": "sint-nicolaasga",
   "siblings": [
    {
@@ -2089,7 +2085,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/aevum-b-v-enkwl8": {
   "name": "Aevum B.V.",
@@ -3006,7 +3002,6 @@
   "website": "http://www.almerekozijnen.nl/",
   "tel": "0367370454",
   "tel_disp": "036 737 0454",
-  "name_alt": "Almere Kozijnen & Gevelbekleding",
   "city_slug": "almere",
   "siblings": [
    {
@@ -3042,7 +3037,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/alpha-interiors-iglgdu": {
   "name": "Alpha interiors",
@@ -3099,7 +3094,6 @@
   "website": "http://www.ambiance-zonwering.nl/goes",
   "tel": "0113222231",
   "tel_disp": "0113 222 231",
-  "name_alt": "Ambiance Zonwering & Deurtotaal - Goes",
   "city_slug": "goes",
   "siblings": [
    {
@@ -3135,7 +3129,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/amersfoort-dakkapel-amersfoortdakkapel-6gcypq": {
   "name": "Amersfoort Dakkapel - amersfoortdakkapel",
@@ -3390,7 +3384,6 @@
   "website": "http://ardibm.nl/Impressum/gegevens/",
   "tel": "0628336288",
   "tel_disp": "06 28336288",
-  "name_alt": "ARDI Bouw & Materialen",
   "city_slug": "enkhuizen",
   "siblings": [
    {
@@ -3426,7 +3419,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/arjan-dekker-timmer-onderhoudsbedrijf-6aurbe": {
   "name": "Arjan Dekker Timmer &amp; Onderhoudsbedrijf",
@@ -3437,7 +3430,6 @@
   "website": "http://www.arjandekker.com/",
   "tel": "0612703096",
   "tel_disp": "06 12703096",
-  "name_alt": "Arjan Dekker Timmer & Onderhoudsbedrijf",
   "city_slug": "rheden",
   "siblings": [
    {
@@ -3463,7 +3455,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/arnhem-dakkapel-arnhemdakkapel-sxjzby": {
   "name": "Arnhem Dakkapel - arnhemdakkapel",
@@ -3582,7 +3574,6 @@
   "website": "http://www.arnosdakramen.nl/",
   "tel": "0648230616",
   "tel_disp": "06 48230616",
-  "name_alt": "Arno's Dakramen",
   "city_slug": "delfzijl",
   "siblings": [
    {
@@ -3612,7 +3603,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/arnold-schouwink-timmerwerken-h6orvu": {
   "name": "Arnold Schouwink Timmerwerken",
@@ -3950,7 +3941,6 @@
   "website": "http://www.bbkozijnen.nl/",
   "tel": "0599745618",
   "tel_disp": "0599 745 618",
-  "name_alt": "B&B Kozijnen B.V.",
   "city_slug": "borger",
   "siblings": [
    {
@@ -3966,7 +3956,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/b-f-groep-vf-_bw": {
   "name": "B&amp;F Groep",
@@ -3977,11 +3967,10 @@
   "website": "http://www.bf-groep.com/",
   "tel": "0614441307",
   "tel_disp": "06 14441307",
-  "name_alt": "B&F Groep",
   "city_slug": "midwolda",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/b-van-de-gevel-dakkapellen-specialist-exhfbi": {
   "name": "B. van de Gevel Dakkapellen-Specialist",
@@ -4457,7 +4446,6 @@
   "website": "https://bckkozijnenrolluiken.nl/?utm_source=Google+bedrijfsprofiel&amp;utm_medium=organic&amp;utm_campaign=Google+bedrijfsprofiel",
   "tel": "0643004033",
   "tel_disp": "06 43004033",
-  "name_alt": "BCK Kozijnen & Rolluiken",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -4493,7 +4481,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/beau-dak-en-timmerwerken-n8vvhw": {
   "name": "Beau Dak- en Timmerwerken",
@@ -4887,7 +4875,6 @@
   "website": "https://www.belisol.nl/showrooms/eindhoven",
   "tel": "0402005200",
   "tel_disp": "040 200 5200",
-  "name_alt": "Belisol Eindhoven - Kozijnen, Deuren & Schuifpuien",
   "city_slug": "eindhoven",
   "siblings": [
    {
@@ -4923,7 +4910,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/belisol-goes-kozijnen-deuren-en-schuifpuien-kkkmlc": {
   "name": "Belisol Goes Kozijnen, deuren en schuifpuien",
@@ -4980,7 +4967,6 @@
   "website": "https://www.belisol.nl/showrooms/gouda",
   "tel": "0182717760",
   "tel_disp": "0182 717 760",
-  "name_alt": "Belisol Gouda - Kozijnen, Deuren & Schuifpuien",
   "city_slug": "gouda",
   "siblings": [
    {
@@ -5016,7 +5002,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/belisol-leiden-kozijnen-deuren-schuifpuien-zr8roa": {
   "name": "Belisol Leiden - Kozijnen, Deuren &amp; Schuifpuien",
@@ -5027,7 +5013,6 @@
   "website": "https://www.belisol.nl/showrooms/leiden",
   "tel": "0715240970",
   "tel_disp": "071 524 0970",
-  "name_alt": "Belisol Leiden - Kozijnen, Deuren & Schuifpuien",
   "city_slug": "leiden",
   "siblings": [
    {
@@ -5063,7 +5048,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/belisol-steenwijk-kozijnen-deuren-schuifpuien-jgbdls": {
   "name": "Belisol Steenwijk - Kozijnen, Deuren &amp; Schuifpuien",
@@ -5074,7 +5059,6 @@
   "website": "https://www.belisol.nl/showrooms/steenwijk",
   "tel": "0521571015",
   "tel_disp": "0521 571 015",
-  "name_alt": "Belisol Steenwijk - Kozijnen, Deuren & Schuifpuien",
   "city_slug": "tuk",
   "siblings": [
    {
@@ -5085,7 +5069,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bema-prefab-rjliz4": {
   "name": "BEMA Prefab",
@@ -5626,11 +5610,10 @@
   "website": "https://www.bogaardbouw.nl/",
   "tel": "0657481584",
   "tel_disp": "06 57481584",
-  "name_alt": "Bogaard Bouw & Timmerwerken",
   "city_slug": "ankeveen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/bogers-kozijnen-deuren-dakkapellen-wjwhxo": {
   "name": "Bogers Kozijnen, Deuren &amp; Dakkapellen",
@@ -5641,11 +5624,10 @@
   "website": "http://www.bogers.nl/",
   "tel": "0246777277",
   "tel_disp": "024 677 7277",
-  "name_alt": "Bogers Kozijnen, Deuren & Dakkapellen",
   "city_slug": "beuningen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/bohre-bouw-lbqsw0": {
   "name": "Böhre bouw",
@@ -5819,11 +5801,10 @@
   "website": "http://www.borghuissoer.nl/",
   "tel": "0548361549",
   "tel_disp": "0548 361 549",
-  "name_alt": "Borghuis & Soer Dakdekkersbedrijf",
   "city_slug": "holten",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/borrenbergs-timmerwerken-kjq5cy": {
   "name": "Borrenbergs Timmerwerken",
@@ -5926,7 +5907,6 @@
   "website": "http://www.vandenhelderbv.nl/",
   "tel": "0627442780",
   "tel_disp": "06 27442780",
-  "name_alt": "Bouw- & aannemersbedrijf Van den Helder B.V.",
   "city_slug": "woerden",
   "siblings": [
    {
@@ -5947,7 +5927,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouw-aannemingsbedrijf-hooikaas-b-v-in3ups": {
   "name": "Bouw &amp; Aannemingsbedrijf Hooikaas B.V.",
@@ -5958,7 +5938,6 @@
   "website": "https://www.hooikaasbv.nl/",
   "tel": "0786159118",
   "tel_disp": "078 615 9118",
-  "name_alt": "Bouw & Aannemingsbedrijf Hooikaas B.V.",
   "city_slug": "papendrecht",
   "siblings": [
    {
@@ -5974,7 +5953,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouw-en-klussenbedrijf-cremer-gaee5c": {
   "name": "Bouw en Klussenbedrijf Cremer",
@@ -6214,7 +6193,6 @@
   "website": "http://www.nicobouwt.nl/",
   "tel": "0630725822",
   "tel_disp": "06 30725822",
-  "name_alt": "Bouw & Klusbedrijf Nico van Dijk",
   "city_slug": "bunschoten-spakenburg",
   "siblings": [
    {
@@ -6250,7 +6228,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouw-klussenbedrijf-a-r-allround-mnyxna": {
   "name": "Bouw &amp; Klussenbedrijf A R allround",
@@ -6261,7 +6239,6 @@
   "website": "http://www.arbouwenklussenbedrijf.nl/",
   "tel": "0630168673",
   "tel_disp": "06 30168673",
-  "name_alt": "Bouw & Klussenbedrijf A R allround",
   "city_slug": "almelo",
   "siblings": [
    {
@@ -6297,7 +6274,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouw-kozijnen-midden-nederland-1pjup8": {
   "name": "Bouw &amp; Kozijnen Midden Nederland",
@@ -6308,7 +6285,6 @@
   "website": "https://www.bekmn.nl/",
   "tel": "0302005033",
   "tel_disp": "030 200 5033",
-  "name_alt": "Bouw & Kozijnen Midden Nederland",
   "city_slug": "ijsselstein",
   "siblings": [
    {
@@ -6338,7 +6314,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouw-metsel-bedrijf-van-steenwijk-tynaarlo-regio-assen-drenthe-z6p8li": {
   "name": "Bouw &amp; Metsel bedrijf van Steenwijk Tynaarlo (Regio Assen - Drenthe)",
@@ -6349,7 +6325,6 @@
   "website": "http://www.bouwmetselbedrijfvansteenwijk.nl/",
   "tel": "0592544237",
   "tel_disp": "0592 544 237",
-  "name_alt": "Bouw & Metsel bedrijf van Steenwijk Tynaarlo (Regio Assen - Drenthe)",
   "city_slug": "tynaarlo",
   "siblings": [
    {
@@ -6380,7 +6355,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouw-timmer-en-onderhoudsbedrijf-paul-loef-bv-9qnagw": {
   "name": "Bouw-, Timmer- en Onderhoudsbedrijf Paul Loef bv",
@@ -6483,11 +6458,10 @@
   "website": "https://www.bouwbedrijftexel.nl/",
   "tel": "0222310620",
   "tel_disp": "0222 310 620",
-  "name_alt": "Bouw & Timmerbedrijf Texel",
   "city_slug": "de-waal",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/bouw-timmerbedrijf-van-hamersveld-b-v-cnogji": {
   "name": "Bouw &amp; Timmerbedrijf van Hamersveld B.V",
@@ -6498,7 +6472,6 @@
   "website": "http://bouwbedrijfvanhamersveld.nl/",
   "tel": "0646014860",
   "tel_disp": "06 46014860",
-  "name_alt": "Bouw & Timmerbedrijf van Hamersveld B.V",
   "city_slug": "almere",
   "siblings": [
    {
@@ -6534,7 +6507,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouwadvies-xxl-b-v-4xy23a": {
   "name": "BouwAdvies XXL B.V.",
@@ -7384,7 +7357,6 @@
   "reviews": "3",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwbedrijf%20J%26B%20Castricum&amp;query_place_id=ChIJTxxiwmD3xUcRcEXIEo3L2Yg",
   "website": "http://www.bouwbedrijfjenbcastricum.nl/",
-  "name_alt": "Bouwbedrijf J&B Castricum",
   "city_slug": "castricum",
   "siblings": [
    {
@@ -7414,7 +7386,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-jasper-van-dam-2yecpc": {
   "name": "Bouwbedrijf Jasper van Dam",
@@ -9408,7 +9380,6 @@
   "website": "https://breukerstimmerwerken.nl/",
   "tel": "0647961835",
   "tel_disp": "06 47961835",
-  "name_alt": "Breukers Bouw & Timmerwerken",
   "city_slug": "haaksbergen",
   "siblings": [
    {
@@ -9444,7 +9415,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/brezon-kunststof-kozijnen-zonwering-wto5i8": {
   "name": "Brezon | Kunststof kozijnen &amp; zonwering",
@@ -9455,7 +9426,6 @@
   "website": "https://www.brezon.nl/",
   "tel": "0113786160",
   "tel_disp": "0113 786 160",
-  "name_alt": "Brezon | Kunststof kozijnen & zonwering",
   "city_slug": "goes",
   "siblings": [
    {
@@ -9491,7 +9461,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/bricksdakwerk-tmj8ky": {
   "name": "Bricksdakwerk",
@@ -10136,7 +10106,6 @@
   "website": "https://celobaarn.nl/",
   "tel": "0355423193",
   "tel_disp": "035 542 3193",
-  "name_alt": "Celo Bouw & Installatiebedrijf",
   "city_slug": "baarn",
   "siblings": [
    {
@@ -10162,7 +10131,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/cequ-dakbedekkingen-v-o-f-phg4dq": {
   "name": "Cequ Dakbedekkingen V.O.F.",
@@ -10532,7 +10501,6 @@
   "website": "https://cor-van-esseveld.com/",
   "tel": "0317618087",
   "tel_disp": "0317 618 087",
-  "name_alt": "Cor van Esseveld Timmer & Onderhoud",
   "city_slug": "rhenen",
   "siblings": [
    {
@@ -10562,7 +10530,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/creon-kozijnen-jah8x0": {
   "name": "Creon Kozijnen",
@@ -10697,11 +10665,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=D%26J%20Dakkapellen&amp;query_place_id=ChIJbT2biOBxxkcRGJOQu2Pnkzo",
   "tel": "0850041042",
   "tel_disp": "085 004 1042",
-  "name_alt": "D&J Dakkapellen",
   "city_slug": "harmelen",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/d-j-r-allround-bouw-j4quoc": {
   "name": "D.J.R. Allround Bouw",
@@ -10748,7 +10715,6 @@
   "website": "http://dakreparatiebedrijf.nl/",
   "tel": "0263817903",
   "tel_disp": "026 381 7903",
-  "name_alt": "D&K Dakreparatie",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -10784,7 +10750,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/d-klander-dak-iwyh1u": {
   "name": "D. Klander DAK",
@@ -10836,7 +10802,6 @@
   "website": "http://www.dldaktechniek.com/",
   "tel": "0223785026",
   "tel_disp": "0223 785 026",
-  "name_alt": "D&L Daktechniek",
   "city_slug": "den-helder",
   "siblings": [
    {
@@ -10872,7 +10837,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/d-timmerman-lhizvq": {
   "name": "D Timmerman",
@@ -11439,7 +11404,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Dak%20%26%20Bouw%20-%20Erwin%20van%20der%20Pers&amp;query_place_id=ChIJexPZLLmiwEcRPDDIgMcihpg",
   "tel": "0652378875",
   "tel_disp": "06 52378875",
-  "name_alt": "Dak & Bouw - Erwin van der Pers",
   "city_slug": "kerkrade",
   "siblings": [
    {
@@ -11475,7 +11439,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/dak-centrale-holland-bv-l5pqe8": {
   "name": "Dak centrale Holland BV",
@@ -22368,7 +22332,6 @@
   "reviews": "7",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Dekozijnenexpert%20Almere%20-%20Kunststof%20Kozijnen%20%26%20Dakkapellen&amp;query_place_id=ChIJi7JdaldPbUsR5qDgDzgM-KY",
   "website": "https://dekozijnenexpert.nl/kunststof-kozijnen-almere/",
-  "name_alt": "Dekozijnenexpert Almere - Kunststof Kozijnen & Dakkapellen",
   "city_slug": "almere",
   "siblings": [
    {
@@ -22404,7 +22367,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/dekozijnenexpert-w4shl4": {
   "name": "Dekozijnenexpert",
@@ -23087,11 +23050,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Dirk%20van%20der%20Zanden%20Dak-%20%26%20Timmerwerken&amp;query_place_id=ChIJ35d8XRsjx0cRDxQfW-U5DHs",
   "tel": "0644696944",
   "tel_disp": "06 44696944",
-  "name_alt": "Dirk van der Zanden Dak- & Timmerwerken",
   "city_slug": "de-mortel",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/dirk-vd-einden-bouw-onderhoud-wqww1e": {
   "name": "Dirk vd Einden bouw &amp; onderhoud",
@@ -23102,7 +23064,6 @@
   "website": "http://www.dirkvdeinden.nl/",
   "tel": "0610859166",
   "tel_disp": "06 10859166",
-  "name_alt": "Dirk vd Einden bouw & onderhoud",
   "city_slug": "someren",
   "siblings": [
    {
@@ -23138,7 +23099,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/djale-dak-en-onderhoud-srva4e": {
   "name": "Djale dak en onderhoud",
@@ -23195,7 +23156,6 @@
   "website": "http://www.dkafbouw.nl/",
   "tel": "0655944174",
   "tel_disp": "06 55944174",
-  "name_alt": "DK Afbouw & Renovatie B.V.",
   "city_slug": "etten-leur",
   "siblings": [
    {
@@ -23230,7 +23190,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/dk-dakkapellen-tlftmq": {
   "name": "DK Dakkapellen",
@@ -23850,7 +23810,6 @@
   "website": "http://www.dumabouw.nl/",
   "tel": "0652686598",
   "tel_disp": "06 52686598",
-  "name_alt": "Duma Bouw & Installatie",
   "city_slug": "nuenen",
   "siblings": [
    {
@@ -23886,7 +23845,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/dumont-dakdekker-fooqc4": {
   "name": "Dumont Dakdekker",
@@ -24080,7 +24039,6 @@
   "website": "http://durandak.nl/",
   "tel": "0648799850",
   "tel_disp": "06 48799850",
-  "name_alt": "Duran dak renovatie & onderhoud",
   "city_slug": "venray",
   "siblings": [
    {
@@ -24106,7 +24064,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/duurzaam-plus-ecj9om": {
   "name": "Duurzaam Plus",
@@ -24671,11 +24629,10 @@
   "website": "http://www.emkubouw.nl/",
   "tel": "0850600148",
   "tel_disp": "085 060 0148",
-  "name_alt": "EMKU Bouw- & Kozijntechniek",
   "city_slug": "kilder",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/en-bouw-b-v-u3tx-o": {
   "name": "EN Bouw B.V.",
@@ -25466,7 +25423,6 @@
   "website": "http://fonbouw-services.nl/",
   "tel": "0624326489",
   "tel_disp": "06 24326489",
-  "name_alt": "FONBOUW&SERVICES",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -25502,7 +25458,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/fontaine-bouw-7kdy9e": {
   "name": "Fontaine bouw",
@@ -26374,7 +26330,6 @@
   "website": "http://www.gevelendak.nl/",
   "tel": "0738508447",
   "tel_disp": "073 850 8447",
-  "name_alt": "Gevel & Dak B.V.",
   "city_slug": "rosmalen",
   "siblings": [
    {
@@ -26410,7 +26365,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/geveldakkapellen-tjeu-van-de-gevel-nu1-qa": {
   "name": "Geveldakkapellen Tjeu Van De Gevel",
@@ -26558,7 +26513,6 @@
   "website": "https://gijsen-bt.nl/",
   "tel": "0623749202",
   "tel_disp": "06 23749202",
-  "name_alt": "Gijsen Bouw&Timmerwerken B.V.",
   "city_slug": "made",
   "siblings": [
    {
@@ -26579,7 +26533,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/gj-dakkapellen-veafa8": {
   "name": "GJ dakkapellen",
@@ -26611,7 +26565,6 @@
   "website": "http://www.gloudemansgevelprodukten.nl/",
   "tel": "0854866214",
   "tel_disp": "085 486 6214",
-  "name_alt": "Gloudemans Kozijnen & Zonwering",
   "city_slug": "breda",
   "siblings": [
    {
@@ -26637,7 +26590,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/gmr-bouwservice-8mi8wc": {
   "name": "GMR bouwservice",
@@ -26969,7 +26922,6 @@
   "website": "https://www.grooshunter.nl/",
   "tel": "0614599544",
   "tel_disp": "06 14599544",
-  "name_alt": "Groos & Hunter Bouw B.V.",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -27005,7 +26957,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/groot-kozijnen-zonwering-weru-q-lux-jbwytu": {
   "name": "GROOT kozijnen &amp; zonwering / WERU / Q-LUX",
@@ -27016,7 +26968,6 @@
   "website": "http://www.grootbarneveld.nl/",
   "tel": "0342490056",
   "tel_disp": "0342 490 056",
-  "name_alt": "GROOT kozijnen & zonwering / WERU / Q-LUX",
   "city_slug": "barneveld",
   "siblings": [
    {
@@ -27047,7 +26998,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/guan-timmerwerken-lwwkna": {
   "name": "Guan Timmerwerken",
@@ -27305,7 +27256,6 @@
   "website": "http://www.halderbergedeuren.nl/",
   "tel": "0165320065",
   "tel_disp": "0165 320 065",
-  "name_alt": "Halderberge Deuren & Kozijnen BV",
   "city_slug": "oud-gastel",
   "siblings": [
    {
@@ -27321,7 +27271,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/hammbouw-berekenjedakkapel-udlcpe": {
   "name": "HAMMBouw Berekenjedakkapel",
@@ -27897,7 +27847,6 @@
   "website": "https://hennystotaalbouw.nl/",
   "tel": "0592201176",
   "tel_disp": "0592 201 176",
-  "name_alt": "Henny's Totaalbouw",
   "city_slug": "assen",
   "siblings": [
    {
@@ -27933,7 +27882,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/henry-van-der-veen-service-sqjjtg": {
   "name": "Henry van der Veen Service",
@@ -28092,11 +28041,10 @@
   "website": "https://hetkozijnhuys.nl/?utm_source=gmb&amp;utm_medium=organic&amp;utm_campaign=kozijnhuys",
   "tel": "0113785998",
   "tel_disp": "0113 785 998",
-  "name_alt": "Het Kozijnhuys - Kunststof Kozijnen Zeeland & Kunststof dakkapellen Zeeland",
   "city_slug": "s-heer-arendskerke",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/het-kunststof-kozijn-16cu10": {
   "name": "Het Kunststof Kozijn",
@@ -28353,7 +28301,6 @@
   "website": "https://hk-vastgoedonderhoud.nl/",
   "tel": "0850600397",
   "tel_disp": "085 060 0397",
-  "name_alt": "HK vastgoed & Onderhoud | Amsterdam",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -28389,7 +28336,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/hk-vastgoed-onderhoud-haarlem-ybanvo": {
   "name": "HK vastgoed &amp; Onderhoud | Haarlem",
@@ -28400,7 +28347,6 @@
   "website": "https://hk-vastgoedonderhoud.nl/",
   "tel": "0850600397",
   "tel_disp": "085 060 0397",
-  "name_alt": "HK vastgoed & Onderhoud | Haarlem",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -28436,7 +28382,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/hl-bouw-en-montage-inq4gm": {
   "name": "HL Bouw en Montage",
@@ -29395,7 +29341,6 @@
   "website": "http://www.hummel-kozijnen.nl/",
   "tel": "0251234484",
   "tel_disp": "0251 234 484",
-  "name_alt": "Hummel Wooncomfort & kozijnen",
   "city_slug": "heemskerk",
   "siblings": [
    {
@@ -29426,7 +29371,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/hummelink-bouw-mga0am": {
   "name": "Hummelink Bouw",
@@ -30073,7 +30018,6 @@
   "website": "https://jjtimmerwerken.nl/",
   "tel": "0113745037",
   "tel_disp": "0113 745 037",
-  "name_alt": "J&J Timmerwerken",
   "city_slug": "goes",
   "siblings": [
    {
@@ -30109,7 +30053,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/j-k-dakwerken-itaodg": {
   "name": "J&amp;K Dakwerken",
@@ -30120,11 +30064,10 @@
   "website": "https://www.vanleeuwendakwerken.nl/",
   "tel": "0683619064",
   "tel_disp": "06 83619064",
-  "name_alt": "J&K Dakwerken",
   "city_slug": "buinerveen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/j-l-schone-ramen-weddp4": {
   "name": "J&amp;L Schone Ramen",
@@ -30135,7 +30078,6 @@
   "website": "https://www.jlschoneramen.nl/",
   "tel": "0682079750",
   "tel_disp": "06 82079750",
-  "name_alt": "J&L Schone Ramen",
   "city_slug": "horst",
   "siblings": [
    {
@@ -30146,7 +30088,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/j-m-van-der-sluis-pfl87q": {
   "name": "J.M. van der Sluis",
@@ -30433,11 +30375,10 @@
   "website": "https://www.jansmaburdaard.nl/?utm_source=Google&amp;utm_medium=Maps",
   "tel": "0519332553",
   "tel_disp": "0519 332 553",
-  "name_alt": "Jansma Burdaard B.V. - Kunststof Kozijnen & Dakkapellen",
   "city_slug": "burdaard",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/jarino-modulaire-bouwsystemen-vvffzi": {
   "name": "Jarino Modulaire Bouwsystemen",
@@ -30911,7 +30852,6 @@
   "website": "http://www.jonkentol.nl/",
   "tel": "0622414035",
   "tel_disp": "06 22414035",
-  "name_alt": "Jonk & Tol Timmerwerken",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -30926,7 +30866,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/jordens-kunststoffen-bv-gwpk_w": {
   "name": "Jordens Kunststoffen BV",
@@ -31106,7 +31046,6 @@
   "website": "https://www.jtbouwentimmerwerken.nl/",
   "tel": "0657013774",
   "tel_disp": "06 57013774",
-  "name_alt": "JT Bouw&timmerwerken",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -31142,7 +31081,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/jt-dak-zvrt0w": {
   "name": "JT Dak",
@@ -31257,11 +31196,10 @@
   "website": "http://jvwglazenwasserij.nl/",
   "tel": "0651253917",
   "tel_disp": "06 51253917",
-  "name_alt": "JvW Glazenwasserij & Schoonmaakbedrijf",
   "city_slug": "ottersum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/jwk-bouw-omafs4": {
   "name": "JWK Bouw",
@@ -31508,7 +31446,6 @@
   "website": "http://www.keemandakenzink.nl/",
   "tel": "0403041934",
   "tel_disp": "040 304 1934",
-  "name_alt": "Keeman dak & zink",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -31544,7 +31481,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/keeris-kunststoframen-7nuwqc": {
   "name": "Keeris Kunststoframen",
@@ -32442,7 +32379,6 @@
   "website": "http://www.knipping.nl/",
   "tel": "0229261295",
   "tel_disp": "0229 261 295",
-  "name_alt": "Knipping kozijnen, deuren & dakkapellen",
   "city_slug": "zwaagdijk-oost",
   "siblings": [
    {
@@ -32453,7 +32389,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/knipping-twente-ocdris": {
   "name": "Knipping Twente",
@@ -33253,7 +33189,6 @@
   "website": "https://kozion.nl/locatie/kozion-s-hertogenbosch/",
   "tel": "0736428686",
   "tel_disp": "073 642 8686",
-  "name_alt": "Kozion 's-Hertogenbosch",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -33289,7 +33224,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/kozion-tilburg-xtgmpm": {
   "name": "Kozion Tilburg",
@@ -34282,7 +34217,6 @@
   "website": "https://www.lekkageservice.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=GMB&amp;utm_content=website",
   "tel": "0402928170",
   "tel_disp": "040 292 8170",
-  "name_alt": "Lekdetectie & Lekkageservice van Gerven",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -34318,7 +34252,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/lekk-b-v-yvxjau": {
   "name": "LEKK B.V.",
@@ -34517,7 +34451,6 @@
   "website": "http://www.zinzen-dakwerken.eu/",
   "tel": "0623021000",
   "tel_disp": "06 23021000",
-  "name_alt": "Limburg – Dakdekker & Dakrenovatie",
   "city_slug": "heerlen",
   "siblings": [
    {
@@ -34553,7 +34486,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/linex-prefab-daksystemen-bv-zor7qc": {
   "name": "Linex Prefab Daksystemen BV",
@@ -35020,7 +34953,6 @@
   "website": "https://mjschilderwerken.com/",
   "tel": "0634344388",
   "tel_disp": "06 34344388",
-  "name_alt": "M.j. schilderwerken & onderhoud",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -35056,7 +34988,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/m-kaan-totaalbouw-b-v-cotmjm": {
   "name": "M KAAN Totaalbouw B.V.",
@@ -35127,7 +35059,6 @@
   "website": "http://www.timmerwerken.nl/",
   "tel": "0651784248",
   "tel_disp": "06 51784248",
-  "name_alt": "M & M Timmerwerken",
   "city_slug": "oss",
   "siblings": [
    {
@@ -35143,7 +35074,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/maat-bouwbedrijf-sehef8": {
   "name": "Maat Bouwbedrijf",
@@ -35224,7 +35155,6 @@
   "website": "http://www.maatgarant.nl/",
   "tel": "0186616633",
   "tel_disp": "0186 616 633",
-  "name_alt": "MaatGarant Keralit gevel- & dakrandbekleding",
   "city_slug": "oud-beijerland",
   "siblings": [
    {
@@ -35245,7 +35175,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/machinaal-timmerbedrijf-maas-adfyq8": {
   "name": "Machinaal Timmerbedrijf Maas",
@@ -35930,7 +35860,6 @@
   "reviews": "40",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MD%20dak%26klusbedrijf&amp;query_place_id=ChIJU0r-YY7vxkcRWcy6nhTB02M",
   "website": "http://www.dakklusbedrijf.nl/",
-  "name_alt": "MD dak&klusbedrijf",
   "city_slug": "sint-michielsgestel",
   "siblings": [
    {
@@ -35946,7 +35875,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/mdl-maatwerk-dak-en-timmerwerken-usc46a": {
   "name": "MDL maatwerk dak en timmerwerken",
@@ -36883,7 +36812,6 @@
   "website": "https://www.mulder-dakkapel.nl/",
   "tel": "0763035353",
   "tel_disp": "076 303 5353",
-  "name_alt": "Mulder & Mulder Dakkapellen B.V.",
   "city_slug": "breda",
   "siblings": [
    {
@@ -36909,7 +36837,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/mulderijbouw-f6vwoo": {
   "name": "Mulderijbouw",
@@ -37242,7 +37170,6 @@
   "website": "https://www.nhdakenlekkages.nl/",
   "tel": "0850602581",
   "tel_disp": "085 060 2581",
-  "name_alt": "NH Dak & Lekkages",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -37278,7 +37205,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/nieuwekozijnen-l-sgo0": {
   "name": "NieuweKozijnen",
@@ -37314,11 +37241,10 @@
   "website": "http://www.nieuwkoopdakbedekking.nl/",
   "tel": "0625139120",
   "tel_disp": "06 25139120",
-  "name_alt": "Nieuwkoop Timmerwerken & Dakbedekking",
   "city_slug": "wijk-en-aalburg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/nijdak-b-v-utelxe": {
   "name": "Nijdak B.V.",
@@ -37810,11 +37736,10 @@
   "website": "https://www.ozkozijn.nl/",
   "tel": "0598227172",
   "tel_disp": "0598 227 172",
-  "name_alt": "OZ Kunststof & Aluminium Kozijnen",
   "city_slug": "zuidbroek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/p-a-bouw-b-v-nvyhb8": {
   "name": "P.A.Bouw B.V.",
@@ -38189,7 +38114,6 @@
   "website": "http://www.penningsbouw.nl/",
   "tel": "0418840015",
   "tel_disp": "0418 840 015",
-  "name_alt": "Pennings Bouw & Ontwikkeling",
   "city_slug": "zaltbommel",
   "siblings": [
    {
@@ -38215,7 +38139,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/perbouw-kozijnen-en-dakkapelen-specialist-dkwoim": {
   "name": "Perbouw - Kozijnen en Dakkapelen specialist",
@@ -39403,7 +39327,6 @@
   "website": "https://profdaken-constructies.nl/",
   "tel": "0850805310",
   "tel_disp": "085 080 5310",
-  "name_alt": "Prof Daken & Constructies",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -39439,7 +39362,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/profidakkapellen-h-n-x4": {
   "name": "ProfiDakkapellen",
@@ -39509,7 +39432,6 @@
   "website": "http://www.pztimmerwerken.nl/",
   "tel": "0643092140",
   "tel_disp": "06 43092140",
-  "name_alt": "PZ Bouw & Timmerwerken",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -39545,7 +39467,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/quaedvlieg-timmerwerken-fzxhgg": {
   "name": "Quaedvlieg Timmerwerken",
@@ -39667,11 +39589,10 @@
   "website": "https://rmdakrenovaties.nl/",
   "tel": "0854011343",
   "tel_disp": "085 401 1343",
-  "name_alt": "R&M Dakrenovaties",
   "city_slug": "vught",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/r-t-kunststof-perpre": {
   "name": "R.T. Kunststof",
@@ -39846,7 +39767,6 @@
   "website": "https://ramen4u.nl/",
   "tel": "0617265065",
   "tel_disp": "06 17265065",
-  "name_alt": "RAMEN 4U B.V. - Verkoop & montage van raam-en deurkozijnen en dakkapellen",
   "city_slug": "sassenheim",
   "siblings": [
    {
@@ -39857,7 +39777,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/ramenfabriek-op-t-hoog-purmerend-ftzz6u": {
   "name": "Ramenfabriek Op &#x27;t Hoog Purmerend",
@@ -39868,7 +39788,6 @@
   "website": "http://www.ramenfabriek.nl//?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb",
   "tel": "08000047",
   "tel_disp": "0800 0047",
-  "name_alt": "Ramenfabriek Op 't Hoog Purmerend",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -39904,7 +39823,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/rams-metsel-en-tegelwerken-xw1az0": {
   "name": "Rams metsel en tegelwerken",
@@ -39959,7 +39878,6 @@
   "website": "https://www.rayentimmerwerken.nl/",
   "tel": "0653226650",
   "tel_disp": "06 53226650",
-  "name_alt": "Rayen Timmerwerken & Montage | Timmerman | Boekel | Noord-Brabant",
   "city_slug": "boekel",
   "siblings": [
    {
@@ -39978,7 +39896,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/rb-daktechniek-rxery4": {
   "name": "RB Daktechniek",
@@ -40122,7 +40040,6 @@
   "website": "http://www.reintjes-glasbewassing.nl/",
   "tel": "0630164718",
   "tel_disp": "06 30164718",
-  "name_alt": "Reintjes Glasbewassing & bedrijfsdiensten",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -40158,7 +40075,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/reja-bouw-timmerbedrijf--cnxp4": {
   "name": "REJA Bouw- &amp; Timmerbedrijf",
@@ -40169,7 +40086,6 @@
   "website": "http://www.reja-timmerbedrijf.nl/",
   "tel": "0629433774",
   "tel_disp": "06 29433774",
-  "name_alt": "REJA Bouw- & Timmerbedrijf",
   "city_slug": "roggel",
   "siblings": [
    {
@@ -40180,7 +40096,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/remco-roosendaal-timmerwerken-h5swts": {
   "name": "Remco Roosendaal Timmerwerken",
@@ -40611,7 +40527,6 @@
   "website": "https://www.rh-timmerwerken.nl/?utm_source=gmb&amp;utm_medium=gmb",
   "tel": "0643062879",
   "tel_disp": "06 43062879",
-  "name_alt": "RH Timmerwerken & Inbouwkasten | kast op maat laten maken & Dakkapel renovatie",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -40647,7 +40562,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/riant-kozijnen-nryvro": {
   "name": "Riant Kozijnen",
@@ -41444,7 +41359,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Roy%20Hartemink%20Bouw%20%26%20Montage&amp;query_place_id=ChIJ805vClqNx0cRcknfkAa6kE4",
   "tel": "0612216070",
   "tel_disp": "06 12216070",
-  "name_alt": "Roy Hartemink Bouw & Montage",
   "city_slug": "lochem",
   "siblings": [
    {
@@ -41455,7 +41369,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/royaal-kozijnen-qxznnc": {
   "name": "Royaal kozijnen",
@@ -41731,11 +41645,10 @@
   "website": "https://www.ruiterdakkapellen.nl/dakkapel-vestigingen/ursem-fabriek?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb",
   "tel": "0884321000",
   "tel_disp": "088 432 1000",
-  "name_alt": "Ruiter Dakkapellen - hoofdkantoor & fabriek",
   "city_slug": "ursem",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/ruiter-dakkapellen-vestiging-alkmaar-kz_ltq": {
   "name": "Ruiter Dakkapellen - vestiging Alkmaar",
@@ -41945,7 +41858,6 @@
   "reviews": "105",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RVK%20timmer%20%26%20bouwbedrijf%20B.V.&amp;query_place_id=ChIJV2ODmEfVxUcRcq3TR2ivsFw",
   "website": "http://www.rvktimmer.nl/",
-  "name_alt": "RVK timmer & bouwbedrijf B.V.",
   "city_slug": "gouda",
   "siblings": [
    {
@@ -41981,7 +41893,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/rvr-bouw-timmerwerken-oiq4sw": {
   "name": "RvR Bouw&amp;Timmerwerken",
@@ -41991,7 +41903,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RvR%20Bouw%26Timmerwerken&amp;query_place_id=ChIJe8UMV7chx0cRQEF9SOiq4sw",
   "tel": "0651633738",
   "tel_disp": "06 51633738",
-  "name_alt": "RvR Bouw&Timmerwerken",
   "city_slug": "beek-en-donk",
   "siblings": [
    {
@@ -42012,7 +41923,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/rvr-installatietechniek-gwxkwk": {
   "name": "RvR Installatietechniek",
@@ -42191,7 +42102,6 @@
   "website": "http://www.stamkozijnen.nl/",
   "tel": "0229311110",
   "tel_disp": "0229 311 110",
-  "name_alt": "S.T.A.M. Kozijnen | Kunstof Kozijnen, Horren & Rolluiken",
   "city_slug": "hoorn",
   "siblings": [
    {
@@ -42226,7 +42136,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/s-veenhuizen-dakwerken-awwm7o": {
   "name": "S. Veenhuizen Dakwerken",
@@ -42251,7 +42161,6 @@
   "website": "http://www.s-w.nl/",
   "tel": "0851308520",
   "tel_disp": "085 130 8520",
-  "name_alt": "S&W Bouwkundig Ingenieurs BV",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -42287,7 +42196,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/sabina-montage-onderhoud-wx_mmk": {
   "name": "Sabina Montage- &amp; Onderhoud",
@@ -42298,7 +42207,6 @@
   "website": "https://sabinamontageonderhoud.nl/",
   "tel": "0627094795",
   "tel_disp": "06 27094795",
-  "name_alt": "Sabina Montage- & Onderhoud",
   "city_slug": "wormerveer",
   "siblings": [
    {
@@ -42309,7 +42217,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/sake-bekkema-aftimmer-en-montagebedrijf-w78w7k": {
   "name": "Sake Bekkema Aftimmer- en Montagebedrijf",
@@ -42496,7 +42404,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Sander%20Damen%20Bouw%20%26%20Timmerwerken&amp;query_place_id=ChIJX_HXN7shx0cRbCDmOYvlNuY",
   "tel": "0634208891",
   "tel_disp": "06 34208891",
-  "name_alt": "Sander Damen Bouw & Timmerwerken",
   "city_slug": "beek-en-donk",
   "siblings": [
    {
@@ -42517,7 +42424,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/sanidrome-van-grinsven-ipjq1q": {
   "name": "Sanidrõme van Grinsven",
@@ -42691,7 +42598,6 @@
   "website": "https://www.sbe-multidiensten.nl/",
   "tel": "0618740669",
   "tel_disp": "06 18740669",
-  "name_alt": "SBE Multidiensten Schoonmaakbedrijf. &. Bouwbedrijf",
   "city_slug": "winterswijk",
   "siblings": [
    {
@@ -42721,7 +42627,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/schatsbergen-dakrenovatie-onderhoud-b-v-dakdekker-rosmalen-irzgvm": {
   "name": "Schatsbergen Dakrenovatie-Onderhoud B.V. | Dakdekker Rosmalen",
@@ -43637,7 +43543,6 @@
   "website": "http://www.skdkozijnen.nl/",
   "tel": "0135812658",
   "tel_disp": "013 581 2658",
-  "name_alt": "SKD Dakkapellen&Kozijnen",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -43673,7 +43578,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/sknn-kunststof-kozijnen-zyn-ro": {
   "name": "SKNN Kunststof Kozijnen",
@@ -43709,7 +43614,6 @@
   "website": "https://slagerdak.nl/",
   "tel": "0644311424",
   "tel_disp": "06 44311424",
-  "name_alt": "Slager Dak & Timmerwerken",
   "city_slug": "roden",
   "siblings": [
    {
@@ -43725,7 +43629,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/slappendel-bouw-0_bmu4": {
   "name": "Slappendel Bouw",
@@ -43782,7 +43686,6 @@
   "website": "https://www.smaakdakkapellen.nl/",
   "tel": "0619281105",
   "tel_disp": "06 19281105",
-  "name_alt": "Smaak dakkapellen&kozijnen",
   "city_slug": "elst",
   "siblings": [
    {
@@ -43798,7 +43701,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/smb-de-harde-k2_mjg": {
   "name": "SMB De Harde",
@@ -44968,7 +44871,6 @@
   "website": "https://www.sundermannveranda.nl/",
   "tel": "0181442249",
   "tel_disp": "0181 442 249",
-  "name_alt": "Sundermann Veranda's & Buitenverblijven",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -45004,7 +44906,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/super-kozijnen-tilburg-ejioz0": {
   "name": "Super Kozijnen Tilburg",
@@ -45097,7 +44999,6 @@
   "website": "https://swartonderhoud.nl/",
   "tel": "0615249909",
   "tel_disp": "06 15249909",
-  "name_alt": "Swart Timmerwerk & Onderhoud - Nigel Swart",
   "city_slug": "blaricum",
   "siblings": [
    {
@@ -45118,7 +45019,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/swiebel-bouwservice-b-v-aannemersbedrijf-ds9m6k": {
   "name": "Swiebel Bouwservice B.V. - Aannemersbedrijf",
@@ -45150,7 +45051,6 @@
   "website": "https://tetotaalbouw.nl/",
   "tel": "0684798640",
   "tel_disp": "06 84798640",
-  "name_alt": "T&E Totaalbouw",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -45186,7 +45086,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/t-hartemink-bouwservice-en-onderhoud-2e4iag": {
   "name": "T. Hartemink Bouwservice en Onderhoud",
@@ -48068,11 +47968,10 @@
   "website": "https://vanburkbouwentimmerwerken.nl/",
   "tel": "0621713715",
   "tel_disp": "06 21713715",
-  "name_alt": "Van Burk Bouw & Timmerwerken",
   "city_slug": "druten",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/van-bussel-totaalbouw-w0tp-y": {
   "name": "van Bussel Totaalbouw",
@@ -48411,7 +48310,6 @@
   "website": "https://www.vandennoortbouwenadvies.nl/",
   "tel": "0638362430",
   "tel_disp": "06 38362430",
-  "name_alt": "Van den Noort Bouw & Advies",
   "city_slug": "rijssen",
   "siblings": [
    {
@@ -48447,7 +48345,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/van-der-heijden-dak-en-renovatiebedrijf-82kx38": {
   "name": "Van der Heijden Dak en Renovatiebedrijf",
@@ -48666,7 +48564,6 @@
   "website": "https://vanderlindebouw.nl/",
   "tel": "0614590470",
   "tel_disp": "06 14590470",
-  "name_alt": "Van der Linde Bouw & Kozijnen",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -48697,7 +48594,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/van-der-linden-montage-gevelrenovatie-voegwerken-ehevne": {
   "name": "Van der Linden | Montage | Gevelrenovatie | Voegwerken",
@@ -49451,7 +49348,6 @@
   "website": "http://www.klusenverbouw.nl/",
   "tel": "0626715844",
   "tel_disp": "06 26715844",
-  "name_alt": "van Roomen & zn klus en verbouw.nl",
   "city_slug": "huizen",
   "siblings": [
    {
@@ -49482,7 +49378,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/van-uden-bouw-en-timmerwerken-4bias4": {
   "name": "Van Uden Bouw en Timmerwerken",
@@ -49614,11 +49510,10 @@
   "website": "https://www.vanweeszeist.nl/",
   "tel": "0303040017",
   "tel_disp": "030 304 0017",
-  "name_alt": "Van Wees Zeist - Kozijnen, Dakkapellen & Meer",
   "city_slug": "zeist",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/van-wette-dakkapellen-huvdeg": {
   "name": "Van Wette Dakkapellen",
@@ -49835,7 +49730,6 @@
   "website": "http://www.veenstra-stroeve.nl/",
   "tel": "0592309110",
   "tel_disp": "0592 309 110",
-  "name_alt": "Veenstra & Stroeve B.V. | Prefab dakelementen | wandelementen | dakkapellen",
   "city_slug": "assen",
   "siblings": [
    {
@@ -49871,7 +49765,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/veld-kozijntechniek-b-v-qn79hc": {
   "name": "Veld Kozijntechniek B.V.",
@@ -50232,7 +50126,6 @@
   "website": "http://www.vergunningendakkapel.nl/",
   "tel": "0852129311",
   "tel_disp": "085 212 9311",
-  "name_alt": "Vergunning & Dakkapel",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -50268,7 +50161,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/verhaar-bouw-ig3uw4": {
   "name": "Verhaar Bouw",
@@ -50325,11 +50218,10 @@
   "website": "http://www.verhagen-dak.nl/",
   "tel": "0614284045",
   "tel_disp": "06 14284045",
-  "name_alt": "Verhagen & Zn. Dak en Montagetechniek",
   "city_slug": "budel-schoot",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/verhees-en-van-dijk-installatietechniek-nt6jcw": {
   "name": "Verhees en van Dijk Installatietechniek",
@@ -50583,7 +50475,6 @@
   "website": "http://verobouw.nl/",
   "tel": "0628827826",
   "tel_disp": "06 28827826",
-  "name_alt": "Vero Bouw- & Interieurwerken",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -50619,7 +50510,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/vero-kunststof-kozijnen-7ig47s": {
   "name": "Vero kunststof kozijnen",
@@ -50831,7 +50722,6 @@
   "website": "http://www.douglashoutbouw-dakkapellen.nl/",
   "tel": "0621637733",
   "tel_disp": "06 21637733",
-  "name_alt": "Visser Douglashoutbouw & Dakkapellen",
   "city_slug": "nieuw-weerdinge",
   "siblings": [
    {
@@ -50847,7 +50737,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/vlaander-groep-yqqifi": {
   "name": "Vlaander Groep",
@@ -50938,7 +50828,6 @@
   "website": "http://www.vogelshoutbewerking.nl/",
   "tel": "0493688925",
   "tel_disp": "0493 688 925",
-  "name_alt": "Vogels Machinale houtbewerking & timmerwerk",
   "city_slug": "someren",
   "siblings": [
    {
@@ -50974,7 +50863,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/voku-amstelveen-weru-kvkk5a": {
   "name": "Voku Amstelveen Weru",
@@ -51254,7 +51143,6 @@
   "website": "https://www.wntotaalbouw.nl/",
   "tel": "0655337469",
   "tel_disp": "06 55337469",
-  "name_alt": "W&N Totaalbouw bv",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -51290,7 +51178,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/w-slappendel-vof-maatwerk-in-woningonderhoud-f3d3te": {
   "name": "W. Slappendel VOF Maatwerk in woningonderhoud",
@@ -51759,11 +51647,10 @@
   "website": "http://www.westschoonmaak.nl/",
   "tel": "0641501695",
   "tel_disp": "06 41501695",
-  "name_alt": "WEST Schoonmaak & Glasbewassing",
   "city_slug": "munnekezijl",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/westers-kunststofkozijnenfabriek-25wp-s": {
   "name": "Westers Kunststofkozijnenfabriek",
@@ -52425,11 +52312,10 @@
   "website": "http://www.dakramenzutphen.nl/",
   "tel": "0612850869",
   "tel_disp": "06 12850869",
-  "name_alt": "Wouter Pasman Timmer & Onderhoudsbedrijf",
   "city_slug": "brummen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/wtb-bouw-renovatie-ipkrgg": {
   "name": "WTB Bouw &amp; Renovatie",
@@ -52440,7 +52326,6 @@
   "website": "https://wtb-ede.nl/",
   "tel": "0628440191",
   "tel_disp": "06 28440191",
-  "name_alt": "WTB Bouw & Renovatie",
   "city_slug": "ede",
   "siblings": [
    {
@@ -52476,7 +52361,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/xlence-renovatie-rjoxp0": {
   "name": "Xlence Renovatie",
@@ -52720,11 +52605,10 @@
   "website": "http://www.zijmenblonk.nl/",
   "tel": "0222314576",
   "tel_disp": "0222 314 576",
-  "name_alt": "Zijm & Blonk",
   "city_slug": "den-burg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v2"
  },
  "bedrijf/zink-dakbedekking-rx99-y": {
   "name": "Zink Dakbedekking",
@@ -53041,7 +52925,6 @@
   "website": "http://www.zwartenkotbouw.nl/",
   "tel": "0592202525",
   "tel_disp": "0592 202 525",
-  "name_alt": "Zwartenkot bouw & onderhoud",
   "city_slug": "assen",
   "siblings": [
    {
@@ -53077,7 +52960,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "default"
  },
  "bedrijf/zwn-daktechniek-vmvknc": {
   "name": "ZWN Daktechniek",

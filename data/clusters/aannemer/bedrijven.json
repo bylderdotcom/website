@@ -288,7 +288,6 @@
   "website": "https://www.a-en-b.nl/?utm_source=Google&amp;utm_medium=Mijn+Bedrijf",
   "tel": "0402261605",
   "tel_disp": "040 226 1605",
-  "name_alt": "A&B Betonbouw",
   "city_slug": "heeze",
   "siblings": [
    {
@@ -324,7 +323,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/a-beverwijk-en-zonen-b-v-rog4rk": {
   "name": "A. Beverwijk en Zonen B.V.",
@@ -532,7 +531,6 @@
   "website": "https://ajrenovatiebedrijf.nl/",
   "tel": "0638098208",
   "tel_disp": "06 38098208",
-  "name_alt": "A&J Klusbedrijf🛠",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -568,7 +566,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/a-j-p-koot-tuinaanleg-renovatie-en-aannemersbedrijf-zhllue": {
   "name": "A.J.P. Koot Tuinaanleg/ Renovatie en Aannemersbedrijf",
@@ -803,7 +801,6 @@
   "website": "https://www.aenrallround.nl/",
   "tel": "0475593711",
   "tel_disp": "0475 593 711",
-  "name_alt": "A & R Allround",
   "city_slug": "haelen",
   "siblings": [
    {
@@ -824,7 +821,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/a-s-r-bouwbedrijf-bv-5cbwkk": {
   "name": "A.S.R. Bouwbedrijf BV",
@@ -895,7 +892,6 @@
   "rating_disp": "5,0",
   "reviews": "2",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=A%26t%20Totaalbouw&amp;query_place_id=ChIJTytp3JVpxkcRWKVo8fy32ms",
-  "name_alt": "A&t Totaalbouw",
   "city_slug": "zeist",
   "siblings": [
    {
@@ -1623,7 +1619,7 @@
   "tel_disp": "06 42125346",
   "city_slug": "middenmeer",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/aanemersbedrijf-van-der-burg-i2kzdu": {
   "name": "Aanemersbedrijf van der Burg",
@@ -1934,7 +1930,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/aannemer-a-koerntjes-g1p3w0": {
   "name": "Aannemer A.Koerntjes",
@@ -2390,7 +2386,6 @@
   "website": "http://www.haarlemse-timmerwerken.nl/",
   "tel": "0614428352",
   "tel_disp": "06 14428352",
-  "name_alt": "Aannemer & bouwbedrijf Haarlemse Timmerwerken",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -2426,7 +2421,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemer-bouwbedrijf-stoffelen-van-weert-qywj3w": {
   "name": "Aannemer Bouwbedrijf Stoffelen / Van Weert",
@@ -2667,11 +2662,10 @@
   "website": "http://www.bergerenzeldenrijk.nl/",
   "tel": "0346241630",
   "tel_disp": "0346 241 630",
-  "name_alt": "Aannemer en Bouwbedrijf Berger & Zeldenrijk BV",
   "city_slug": "kockengen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/aannemer-en-grondverzetbedrijf-van-wijk-bv-srieyi": {
   "name": "Aannemer- en Grondverzetbedrijf Van Wijk BV",
@@ -3165,7 +3159,6 @@
   "website": "http://www.aannemer-ms-bouwbedrijf.nl/",
   "tel": "0641617031",
   "tel_disp": "06 41617031",
-  "name_alt": "Aannemer M&S Bouwbedrijf",
   "city_slug": "dordrecht",
   "siblings": [
    {
@@ -3201,7 +3194,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemer-nijmegen-dgyzvs": {
   "name": "Aannemer Nijmegen",
@@ -3258,7 +3251,6 @@
   "website": "http://patricksuijker.nl/",
   "tel": "0615873109",
   "tel_disp": "06 15873109",
-  "name_alt": "Aannemer & Onderhoudsbedrijf Patrick Suijker",
   "city_slug": "berkel-en-rodenrijs",
   "siblings": [
    {
@@ -3289,7 +3281,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemer-rotterdam-5olyto": {
   "name": "Aannemer Rotterdam",
@@ -3676,7 +3668,6 @@
   "website": "https://www.aannemersbouwbedrijfheemstede.nl/",
   "tel": "0640658048",
   "tel_disp": "06 40658048",
-  "name_alt": "Aannemers & Bouwbedrijf Heemstede",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -3712,7 +3703,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemers-en-klusbedrijf-idema-puz4yg": {
   "name": "Aannemers-en Klusbedrijf Idema",
@@ -4003,7 +3994,6 @@
   "website": "http://www.breebouwasten.nl/",
   "tel": "0493694845",
   "tel_disp": "0493 694 845",
-  "name_alt": "Aannemers&Timmerbedrijf breebouwasten",
   "city_slug": "asten",
   "siblings": [
    {
@@ -4038,7 +4028,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/aannemersbdrijf-van-de-voort-13yqou": {
   "name": "Aannemersbdrijf van de Voort",
@@ -4290,7 +4280,6 @@
   "website": "http://www.aannemersbedrijf-hersmis.nl/",
   "tel": "0161240851",
   "tel_disp": "0161 240 851",
-  "name_alt": "Aannemersbedrijf A. & M. Hersmis B.V.",
   "city_slug": "rijen",
   "siblings": [
    {
@@ -4311,7 +4300,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-a-miggelenbrink-zn-dbwzfq": {
   "name": "Aannemersbedrijf A. Miggelenbrink &amp; Zn.",
@@ -4320,7 +4309,6 @@
   "website": "http://miggelenbrink.nl/",
   "tel": "0264954282",
   "tel_disp": "026 495 4282",
-  "name_alt": "Aannemersbedrijf A. Miggelenbrink & Zn.",
   "city_slug": "rheden",
   "siblings": [
    {
@@ -4355,7 +4343,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/aannemersbedrijf-a-s-m-npibog": {
   "name": "Aannemersbedrijf A.S.M.",
@@ -4514,7 +4502,6 @@
   "website": "http://www.van-ooijen.com/",
   "tel": "0348413104",
   "tel_disp": "0348 413 104",
-  "name_alt": "Aannemersbedrijf A. van Ooijen & Zn. B.V.",
   "city_slug": "woerden",
   "siblings": [
    {
@@ -4550,7 +4537,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-a-van-schie-b-v-6njfmg": {
   "name": "Aannemersbedrijf A. van Schie B.V.",
@@ -4766,7 +4753,6 @@
   "website": "http://www.beenhakker-traas.nl/",
   "tel": "0113561430",
   "tel_disp": "0113 561 430",
-  "name_alt": "Aannemersbedrijf & Adviesburo Beenhakker-Traas BV",
   "city_slug": "s-heer-arendskerke",
   "siblings": [
    {
@@ -4777,7 +4763,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-alles-onder-een-dakk-txzihg": {
   "name": "Aannemersbedrijf alles onder een dakk",
@@ -4833,7 +4819,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20Amptmeijer%20%26%20Zn&amp;query_place_id=ChIJA2QzetIzxkcRltqbt0Z8yZU",
   "tel": "0341423190",
   "tel_disp": "0341 423 190",
-  "name_alt": "Aannemersbedrijf Amptmeijer & Zn",
   "city_slug": "harderwijk",
   "siblings": [
    {
@@ -4869,7 +4854,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-asb-szrods": {
   "name": "Aannemersbedrijf ASB",
@@ -5042,7 +5027,6 @@
   "city": "Gorinchem",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20B%26G%20B.V.&amp;query_place_id=ChIJV3JKjOeHxkcRDkzQUWuoJbY",
   "website": "https://www.jouwaannemers.nl/",
-  "name_alt": "Aannemersbedrijf B&G B.V.",
   "city_slug": "gorinchem",
   "siblings": [
    {
@@ -5077,7 +5061,7 @@
    }
   ],
   "contact_row": "v3",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/aannemersbedrijf-bakker-v-o-f-am8dxi": {
   "name": "Aannemersbedrijf Bakker V.O.F.",
@@ -5496,11 +5480,10 @@
   "reviews": "4",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20Bongers%20%26%20van%20den%20Oever%20Bouw%20BV&amp;query_place_id=ChIJwekKMG0Xx0cRAELaPAov4So",
   "website": "http://www.bnobouw.nl/",
-  "name_alt": "Aannemersbedrijf Bongers & van den Oever Bouw BV",
   "city_slug": "beugen",
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/aannemersbedrijf-bos-en-vrijhof-b-v-j8b6j4": {
   "name": "Aannemersbedrijf Bos en Vrijhof B.V.",
@@ -5535,7 +5518,6 @@
   "website": "https://www.aannemerbos.nl/",
   "tel": "0302202647",
   "tel_disp": "030 220 2647",
-  "name_alt": "Aannemersbedrijf Bos & Zn.",
   "city_slug": "de-bilt",
   "siblings": [
    {
@@ -5570,7 +5552,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/aannemersbedrijf-bos-zn-vxicse": {
   "name": "Aannemersbedrijf Bos &amp; Zn.",
@@ -5581,7 +5563,6 @@
   "website": "https://www.aannemerbos.nl/",
   "tel": "0302202647",
   "tel_disp": "030 220 2647",
-  "name_alt": "Aannemersbedrijf Bos & Zn.",
   "city_slug": "bilthoven",
   "siblings": [
    {
@@ -5602,7 +5583,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-bosbouw-v-o-f-maasbree-u86j_s": {
   "name": "Aannemersbedrijf BosBouw V.o.f. Maasbree",
@@ -5636,7 +5617,6 @@
   "website": "http://www.aannemerbout.nl/",
   "tel": "0355252229",
   "tel_disp": "035 525 2229",
-  "name_alt": "Aannemersbedrijf Bout & Zonen BV",
   "city_slug": "huizen",
   "siblings": [
    {
@@ -5672,7 +5652,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-bouwbedrijf-wielink-wielink-houtbouw-gsxwva": {
   "name": "Aannemersbedrijf / Bouwbedrijf Wielink &amp; Wielink Houtbouw",
@@ -5683,7 +5663,6 @@
   "website": "http://www.aannemersbedrijfwielink.nl/",
   "tel": "0525690322",
   "tel_disp": "0525 690 322",
-  "name_alt": "Aannemersbedrijf / Bouwbedrijf Wielink & Wielink Houtbouw",
   "city_slug": "doornspijk",
   "siblings": [
    {
@@ -5694,7 +5673,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-bouwfactor-b-v-4xr-ea": {
   "name": "Aannemersbedrijf Bouwfactor B.V.",
@@ -7451,7 +7430,6 @@
   "website": "http://driessen-en-kooij.nl/",
   "tel": "0629561604",
   "tel_disp": "06 29561604",
-  "name_alt": "Aannemersbedrijf Driessen & Kooij B.V.",
   "city_slug": "beverwijk",
   "siblings": [
    {
@@ -7487,7 +7465,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-drijvers-tr3kzy": {
   "name": "Aannemersbedrijf Drijvers",
@@ -8141,7 +8119,6 @@
   "website": "https://www.aannemerbijl.nl/",
   "tel": "0104620280",
   "tel_disp": "010 462 0280",
-  "name_alt": "Aannemersbedrijf F. Bijl & Zonen B.V.",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -8177,7 +8154,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-f-h-van-keulen-tuc7hc": {
   "name": "Aannemersbedrijf F.H. van Keulen",
@@ -9011,7 +8988,7 @@
   "tel_disp": "0412 635 008",
   "city_slug": "lith",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/aannemersbedrijf-gebr-van-rijswijk-gou4km": {
   "name": "Aannemersbedrijf Gebr van Rijswijk",
@@ -9795,7 +9772,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/aannemersbedrijf-h-j-slokker-2l2vj4": {
   "name": "Aannemersbedrijf H.J. Slokker",
@@ -10531,7 +10508,6 @@
   "website": "http://www.aannemersbedrijf-hoek.nl/",
   "tel": "0546622182",
   "tel_disp": "0546 622 182",
-  "name_alt": "Aannemersbedrijf Hoek & Zonen B.V.",
   "city_slug": "tubbergen",
   "siblings": [
    {
@@ -10567,7 +10543,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-hoes-noord-b-v-vmknli": {
   "name": "Aannemersbedrijf Hoes Noord B.V.",
@@ -10919,7 +10895,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20J.A.%20den%20Hoed%20%26%20Zn&amp;query_place_id=ChIJZ99q38AuxEcRncpc_uU2bZI",
   "tel": "0786128684",
   "tel_disp": "078 612 8684",
-  "name_alt": "Aannemersbedrijf J.A. den Hoed & Zn",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -10955,7 +10930,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-j-a-timmermans-b-v-zl8iqa": {
   "name": "Aannemersbedrijf J.A. Timmermans B.V.",
@@ -11196,7 +11171,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20J.%20Hermans%20%26%20Zoon&amp;query_place_id=ChIJqwZkL1m9wEcRo3ODKPyX9q8",
   "tel": "0455417719",
   "tel_disp": "045 541 7719",
-  "name_alt": "Aannemersbedrijf J. Hermans & Zoon",
   "city_slug": "kerkrade",
   "siblings": [
    {
@@ -11232,7 +11206,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-j-hoonhout-b-v-7jzwtm": {
   "name": "Aannemersbedrijf J. Hoonhout B.V.",
@@ -12245,7 +12219,7 @@
   "tel_disp": "06 20621040",
   "city_slug": "nijeholtwolde",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/aannemersbedrijf-johan-visser-ujdavq": {
   "name": "Aannemersbedrijf Johan Visser",
@@ -12707,7 +12681,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/aannemersbedrijf-ketler-b-v-4zt-2s": {
   "name": "Aannemersbedrijf Ketler B.V.",
@@ -13436,7 +13410,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20List%20%26%20Zn&amp;query_place_id=ChIJS_uHGvwGxkcRNKVXOxVlvuE",
   "tel": "0615056013",
   "tel_disp": "06 15056013",
-  "name_alt": "Aannemersbedrijf List & Zn",
   "city_slug": "landsmeer",
   "siblings": [
    {
@@ -13472,7 +13445,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-littel-b-v-hisfdk": {
   "name": "Aannemersbedrijf Littel B.V.",
@@ -14226,7 +14199,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/aannemersbedrijf-mili-ak7ego": {
   "name": "Aannemersbedrijf Mili",
@@ -14447,7 +14420,6 @@
   "website": "http://www.nvanduin.nl/",
   "tel": "0713611400",
   "tel_disp": "071 361 1400",
-  "name_alt": "Aannemersbedrijf N. van Duin & Zn. B.V.",
   "city_slug": "noordwijk",
   "siblings": [
    {
@@ -14483,7 +14455,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-n-van-weert-binnen-buitenverbouw-x7wjcc": {
   "name": "Aannemersbedrijf N van Weert Binnen &amp; Buitenverbouw",
@@ -14491,7 +14463,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20N%20van%20Weert%20Binnen%20%26%20Buitenverbouw&amp;query_place_id=ChIJH5xt2lsnx0cRZ3To_x7Wjcc",
   "tel": "0639225340",
   "tel_disp": "06 39225340",
-  "name_alt": "Aannemersbedrijf N van Weert Binnen & Buitenverbouw",
   "city_slug": "geldrop",
   "siblings": [
    {
@@ -14526,7 +14497,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/aannemersbedrijf-niesink-mjc1pu": {
   "name": "Aannemersbedrijf Niesink",
@@ -15330,7 +15301,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/aannemersbedrijf-psbouw-f1xcqe": {
   "name": "Aannemersbedrijf PSBouw",
@@ -15479,7 +15450,6 @@
   "website": "http://www.rhbeers.nl/",
   "tel": "0725711254",
   "tel_disp": "072 571 1254",
-  "name_alt": "Aannemersbedrijf R&H Beers BV",
   "city_slug": "heerhugowaard",
   "siblings": [
    {
@@ -15515,7 +15485,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-r-kooijman-b-v-dum7om": {
   "name": "Aannemersbedrijf R. Kooijman B.V.",
@@ -15804,7 +15774,6 @@
   "website": "http://ruigrokenvanderpad.nl/",
   "tel": "0105216491",
   "tel_disp": "010 521 6491",
-  "name_alt": "Aannemersbedrijf Ruigrok & Van der Pad B.V.",
   "city_slug": "bergschenhoek",
   "siblings": [
    {
@@ -15840,7 +15809,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-ruiter-bv-y9muts": {
   "name": "Aannemersbedrijf Ruiter BV",
@@ -17115,7 +17084,6 @@
   "website": "http://www.vansteden.nl/",
   "tel": "0402622311",
   "tel_disp": "040 262 2311",
-  "name_alt": "Aannemersbedrijf Th. van Steden & Zn",
   "city_slug": "eindhoven",
   "siblings": [
    {
@@ -17151,7 +17119,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-theo-looman-nijmegen-xcx4ke": {
   "name": "Aannemersbedrijf Theo Looman Nijmegen",
@@ -19018,7 +18986,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20Van%20Stralen%20%26%20Gremm%C3%A9&amp;query_place_id=ChIJBzr1Z9NkxkcRPPpHBpO0wIo",
   "tel": "0306875530",
   "tel_disp": "030 687 5530",
-  "name_alt": "Aannemersbedrijf Van Stralen & Gremmé",
   "city_slug": "ijsselstein",
   "siblings": [
    {
@@ -19054,7 +19021,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-van-veen-bv-xy92cc": {
   "name": "Aannemersbedrijf van Veen BV",
@@ -19566,7 +19533,6 @@
   "website": "http://www.cfrederiks.nl/contact.html",
   "tel": "0229269024",
   "tel_disp": "0229 269 024",
-  "name_alt": "Aannemersbedrijf Vreeker & Frederiks",
   "city_slug": "hoorn",
   "siblings": [
    {
@@ -19602,7 +19568,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-w-a-van-engeland-en-zonen-b-v-d1cqdo": {
   "name": "Aannemersbedrijf W.A. van Engeland en Zonen B.V.",
@@ -19909,7 +19875,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemersbedrijf%20Weber%20%26%20De%20Groot&amp;query_place_id=ChIJozip-4v4xUcRUkMPvf-eKDc",
   "tel": "0725339840",
   "tel_disp": "072 533 9840",
-  "name_alt": "Aannemersbedrijf Weber & De Groot",
   "city_slug": "akersloot",
   "siblings": [
    {
@@ -19925,7 +19890,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemersbedrijf-west-friesland-ovkqvw": {
   "name": "Aannemersbedrijf West-Friesland",
@@ -20399,7 +20364,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/aannemersbedrijf-wvk-m31yyy": {
   "name": "Aannemersbedrijf WvK",
@@ -20423,7 +20388,7 @@
   "tel_disp": "043 451 1431",
   "city_slug": "wittem",
   "contact_row": "v2",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/aannemersbedrijf-zeeland-m-r-krzx6y": {
   "name": "Aannemersbedrijf Zeeland M.R.",
@@ -20511,7 +20476,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/aannemersbedrijfholland-wjc5om": {
   "name": "aannemersbedrijfholland",
@@ -20792,7 +20757,6 @@
   "website": "http://vanschaikbouw.nl/",
   "tel": "0243773125",
   "tel_disp": "024 377 3125",
-  "name_alt": "Aannemingsbedrijf A.G. van Schaik & Zn.B.V.",
   "city_slug": "nijmegen",
   "siblings": [
    {
@@ -20828,7 +20792,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-a-tuin-den-helder-b-v-__jqdu": {
   "name": "Aannemingsbedrijf A. Tuin Den Helder B.V.",
@@ -20885,7 +20849,6 @@
   "website": "http://www.van-engelenhoven.nl/",
   "tel": "0318622500",
   "tel_disp": "0318 622 500",
-  "name_alt": "Aannemingsbedrijf A. van Engelenhoven & Zn. B.V.",
   "city_slug": "ede",
   "siblings": [
    {
@@ -20921,7 +20884,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-amstel-delta-gccine": {
   "name": "Aannemingsbedrijf Amstel-Delta",
@@ -21644,7 +21607,6 @@
   "website": "http://csbouwenbeheer.nl/",
   "tel": "0640218617",
   "tel_disp": "06 40218617",
-  "name_alt": "Aannemingsbedrijf CS Bouw & Beheer",
   "city_slug": "roosendaal",
   "siblings": [
    {
@@ -21680,7 +21642,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-de-bokx-b-v-m47lme": {
   "name": "Aannemingsbedrijf De Bokx B.V.",
@@ -22708,7 +22670,6 @@
   "website": "http://www.harskampenbouwman.nl/",
   "tel": "0172493029",
   "tel_disp": "0172 493 029",
-  "name_alt": "Aannemingsbedrijf Harskamp & Bouwman",
   "city_slug": "alphen-aan-den-rijn",
   "siblings": [
    {
@@ -22744,7 +22705,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-harthoorn-r81e7i": {
   "name": "Aannemingsbedrijf Harthoorn",
@@ -23175,7 +23136,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/aannemingsbedrijf-j-l-rijsdijk-b-v-13bzd4": {
   "name": "Aannemingsbedrijf J.L. Rijsdijk B.V.",
@@ -23893,7 +23854,6 @@
   "website": "https://www.leenheerenvandrielen.nl/",
   "tel": "0184499839",
   "tel_disp": "0184 499 839",
-  "name_alt": "Aannemingsbedrijf Leenheer & Van Drielen",
   "city_slug": "sliedrecht",
   "siblings": [
    {
@@ -23929,7 +23889,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-letzer-b-v-9ijlee": {
   "name": "Aannemingsbedrijf Letzer B.V.",
@@ -24367,7 +24327,6 @@
   "website": "http://www.mussig.nl/",
   "tel": "0180434137",
   "tel_disp": "0180 434 137",
-  "name_alt": "Aannemingsbedrijf Müssig & Zn. B.V.",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -24403,7 +24362,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-n-f-h-5dwway": {
   "name": "Aannemingsbedrijf N.F.H.",
@@ -24477,7 +24436,6 @@
   "website": "http://www.hooghwerff.nl/",
   "tel": "0786741788",
   "tel_disp": "078 674 1788",
-  "name_alt": "Aannemingsbedrijf P.&G. Hooghwerff B.V.",
   "city_slug": "strijen",
   "siblings": [
    {
@@ -24493,7 +24451,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-p-h-van-der-velden-b-v-wij-zijn-bouwers-vcinyy": {
   "name": "Aannemingsbedrijf P.H. van der Velden B.V. | Wij zijn bouwers",
@@ -25634,7 +25592,6 @@
   "website": "http://www.elshoutendebont.nl/",
   "tel": "0416333501",
   "tel_disp": "0416 333 501",
-  "name_alt": "Aannemingsbedrijf van den Elshout & de Bont Waalwijk B.V.",
   "city_slug": "waalwijk",
   "siblings": [
    {
@@ -25670,7 +25627,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-van-der-cingel-ouzsaq": {
   "name": "Aannemingsbedrijf van der Cingel",
@@ -26317,7 +26274,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemingsbedrijf%20W.J.%20van%20Doorn%20%26%20Zonen&amp;query_place_id=ChIJWbURFoRJxEcRk9PUdA45_UM",
   "tel": "0181612137",
   "tel_disp": "0181 612 137",
-  "name_alt": "Aannemingsbedrijf W.J. van Doorn & Zonen",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -26353,7 +26309,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsbedrijf-w-janssen-vcs3cy": {
   "name": "Aannemingsbedrijf W. Janssen",
@@ -26544,11 +26500,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Aannemingsbedrijf%20Wout%20van%20%27t%20Veer&amp;query_place_id=ChIJhfKGz0jbxUcRtMsMDn1eBmI",
   "tel": "0653365986",
   "tel_disp": "06 53365986",
-  "name_alt": "Aannemingsbedrijf Wout van 't Veer",
   "city_slug": "woubrugge",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/aannemingsmaatschappij-daniel-pijnacker-b-v-ze8sn8": {
   "name": "Aannemingsmaatschappij Daniel Pijnacker B.V.",
@@ -26665,7 +26620,6 @@
   "website": "https://beukering-borsboom.nl/",
   "tel": "0703999655",
   "tel_disp": "070 399 9655",
-  "name_alt": "Aannemingsmaatschappij Van Beukering & Borsboom B.V.",
   "city_slug": "rijswijk",
   "siblings": [
    {
@@ -26701,7 +26655,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemingsmaatschappij-van-gelder-westervoort-rftlqw": {
   "name": "Aannemingsmaatschappij Van Gelder - Westervoort",
@@ -26741,7 +26695,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/aannemingsmij-zwaluwe-zwijndrecht-bv-pw3fiy": {
   "name": "Aannemingsmij Zwaluwe-zwijndrecht BV",
@@ -27235,7 +27189,6 @@
   "website": "https://adamshoutbouw.nl/",
   "tel": "0612635198",
   "tel_disp": "06 12635198",
-  "name_alt": "Adams Hout&bouw",
   "city_slug": "neer",
   "siblings": [
    {
@@ -27251,7 +27204,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/admiraal-bouw-b-v-2nsq8c": {
   "name": "Admiraal Bouw B.V.",
@@ -28320,7 +28273,6 @@
   "website": "http://www.albertmartinus.nl/",
   "tel": "0592345551",
   "tel_disp": "0592 345 551",
-  "name_alt": "Albert Martinus Bouwtechniek Burgerlijk & Utiliteitsbouw",
   "city_slug": "assen",
   "siblings": [
    {
@@ -28356,7 +28308,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aldenzee-verbaarschot-bouw-b-v-pssfqs": {
   "name": "Aldenzee Verbaarschot Bouw B.V.",
@@ -29190,11 +29142,10 @@
   "website": "http://www.lucassenbouw.nl/",
   "tel": "0640504297",
   "tel_disp": "06 40504297",
-  "name_alt": "Allround bouw & timmerbedrijf lucassen",
   "city_slug": "aalten",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/allround-bouwbedrijf-meeuwes-yntzes-nmjlts": {
   "name": "ALLROUND BOUWBEDRIJF MEEUWES YNTZES",
@@ -29937,7 +29888,6 @@
   "website": "http://www.knolbouwenadvies.nl/",
   "tel": "0630675721",
   "tel_disp": "06 30675721",
-  "name_alt": "André Knol Bouw & Advies",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -29973,7 +29923,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/andreas-klussen-en-bouwbedrijf-r8hmya": {
   "name": "Andreas Klussen en Bouwbedrijf",
@@ -30214,7 +30164,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/appel-bouw-ls7x48": {
   "name": "Appel bouw",
@@ -30371,11 +30321,10 @@
   "website": "https://ardbruin.nl/",
   "tel": "0725317592",
   "tel_disp": "072 531 7592",
-  "name_alt": "Ard Bruin Aannemers- & Timmerbedrijf",
   "city_slug": "heiloo",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/arendse-gevelwerken-fxxfy0": {
   "name": "Arendse Gevelwerken",
@@ -30492,7 +30441,6 @@
   "website": "http://www.arjandekker.com/",
   "tel": "0612703096",
   "tel_disp": "06 12703096",
-  "name_alt": "Arjan Dekker Timmer & Onderhoudsbedrijf",
   "city_slug": "rheden",
   "siblings": [
    {
@@ -30528,7 +30476,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/arjan-koerts-bouwbedrijf-rrngc4": {
   "name": "Arjan Koerts Bouwbedrijf",
@@ -31288,7 +31236,6 @@
   "website": "http://www.bouwenadvieshaaksbergen.nl/",
   "tel": "0638056848",
   "tel_disp": "06 38056848",
-  "name_alt": "B&A Haaksbergen",
   "city_slug": "haaksbergen",
   "siblings": [
    {
@@ -31324,7 +31271,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-b-bouw-b-v-id9v7e": {
   "name": "B&amp;B Bouw B.V.",
@@ -31335,7 +31282,6 @@
   "website": "https://www.benbbouw.nl/",
   "tel": "0464432645",
   "tel_disp": "046 443 2645",
-  "name_alt": "B&B Bouw B.V.",
   "city_slug": "schinnen",
   "siblings": [
    {
@@ -31364,7 +31310,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-c-t-aannemers-b-v-smhvey": {
   "name": "B.C.T. Aannemers B.V.",
@@ -31452,7 +31398,6 @@
   "website": "http://www.bouwbenk.nl/",
   "tel": "0546442512",
   "tel_disp": "0546 442 512",
-  "name_alt": "B & K Bouwbedrijf B.V.",
   "city_slug": "albergen",
   "siblings": [
    {
@@ -31468,7 +31413,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-mittendorff-unxn1m": {
   "name": "B. Mittendorff",
@@ -31570,7 +31515,6 @@
   "website": "https://bno-bouw.nl/",
   "tel": "0352200077",
   "tel_disp": "035 220 0077",
-  "name_alt": "B&O Bouw BV.",
   "city_slug": "soest",
   "siblings": [
    {
@@ -31606,7 +31550,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-o-totaalbouw-irbuoa": {
   "name": "B&amp;O Totaalbouw",
@@ -31617,7 +31561,6 @@
   "website": "http://www.bototaalbouw.nl/",
   "tel": "0762043119",
   "tel_disp": "076 204 3119",
-  "name_alt": "B&O Totaalbouw",
   "city_slug": "etten-leur",
   "siblings": [
    {
@@ -31653,7 +31596,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-r-bouw-b-v-50hzac": {
   "name": "B &amp; R Bouw B.V.",
@@ -31662,7 +31605,6 @@
   "website": "https://brbouwbv.nl/",
   "tel": "0651293451",
   "tel_disp": "06 51293451",
-  "name_alt": "B & R Bouw B.V.",
   "city_slug": "oosterhout",
   "siblings": [
    {
@@ -31697,7 +31639,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/b-v-aannemersbedrijf-b-van-hees-en-zonen--wf1-q": {
   "name": "B.V. Aannemersbedrijf B. van Hees en Zonen",
@@ -32103,7 +32045,6 @@
   "website": "http://www.raijmakers.nl/",
   "tel": "0493490152",
   "tel_disp": "0493 490 152",
-  "name_alt": "B.V. Hand.- & Aannemingsmij. Raijmakers-Leenen",
   "city_slug": "someren",
   "siblings": [
    {
@@ -32139,7 +32080,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-v-r-van-vliet-tqzokg": {
   "name": "B.V.R. van Vliet",
@@ -32226,7 +32167,6 @@
   "website": "http://www.bwvanvlietenzn.nl/",
   "tel": "0348420820",
   "tel_disp": "0348 420 820",
-  "name_alt": "B.W. van Vliet & ZN B.V.",
   "city_slug": "woerden",
   "siblings": [
    {
@@ -32262,7 +32202,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b2s-bouw-5y2pdm": {
   "name": "B2S Bouw",
@@ -32601,7 +32541,6 @@
   "website": "https://decranehoeve.nl/",
   "tel": "0174261161",
   "tel_disp": "0174 261 161",
-  "name_alt": "Badkamer Renovatie Westland ✅ Inloopdouche in 1 Dag - Bouw & Aannemersbedrijf De Cranehoeve",
   "city_slug": "s-gravenzande",
   "siblings": [
    {
@@ -32627,7 +32566,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/baens-afbouw-bv-s1hsei": {
   "name": "Baens Afbouw Bv",
@@ -33253,7 +33192,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/balta-aannemersbedrijf-kvmv2o": {
   "name": "Balta Aannemersbedrijf",
@@ -33517,7 +33456,6 @@
   "website": "http://www.barneveldbouw.nl/",
   "tel": "0352063001",
   "tel_disp": "035 206 3001",
-  "name_alt": "Barneveld Bouw & Onderhoud",
   "city_slug": "naarden",
   "siblings": [
    {
@@ -33553,7 +33491,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/barry-renovatie-en-klussenbedrijf-oxqv7k": {
   "name": "Barry renovatie en klussenbedrijf",
@@ -34019,7 +33957,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/bauunternehmen-b-s-bauservice-3ps1xo": {
   "name": "Bauunternehmen B&amp;S Bauservice",
@@ -34030,7 +33968,6 @@
   "website": "https://www.bauservice-niederrhein.de/",
   "tel": "015751163905",
   "tel_disp": "01575 1163905",
-  "name_alt": "Bauunternehmen B&S Bauservice",
   "city_slug": "duitsland",
   "siblings": [
    {
@@ -34066,7 +34003,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bauunternehmen-goris-ludwig-_m69j0": {
   "name": "Bauunternehmen Goris &amp; Ludwig",
@@ -34077,7 +34014,6 @@
   "website": "http://www.goris-ludwig.de/",
   "tel": "028217151127",
   "tel_disp": "02821 7151127",
-  "name_alt": "Bauunternehmen Goris & Ludwig",
   "city_slug": "duitsland",
   "siblings": [
    {
@@ -34113,7 +34049,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bb-havermans-svmkao": {
   "name": "BB Havermans",
@@ -35323,7 +35259,6 @@
   "reviews": "3",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Berends%20%26%20Van%20Houttum%20B.V.&amp;query_place_id=ChIJd0xtlq7Hx0cRRFVOrThWISc",
   "website": "http://www.berendsvanhouttum.nl/",
-  "name_alt": "Berends & Van Houttum B.V.",
   "city_slug": "apeldoorn",
   "siblings": [
    {
@@ -35359,7 +35294,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bergbouw-capelle-ox9br4": {
   "name": "Bergbouw Capelle",
@@ -35743,7 +35678,6 @@
   "website": "http://bkraaijvanger.nl/contact",
   "tel": "0623722843",
   "tel_disp": "06 23722843",
-  "name_alt": "Bernard Kraaijvanger Bouw- & Timmerwerken",
   "city_slug": "bladel",
   "siblings": [
    {
@@ -35779,7 +35713,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bert-van-dam-materieel-b-v-yhgzjy": {
   "name": "Bert van Dam Materieel B.V.",
@@ -35969,7 +35903,6 @@
   "website": "http://bestefix.nl/",
   "tel": "0684301010",
   "tel_disp": "06 84301010",
-  "name_alt": "Bestefix Bouw& Renovatie bedrijf",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -36005,7 +35938,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/betam-timmerwerk-aannemingsbedrijf-q4t_eu": {
   "name": "Betam timmerwerk/ aannemingsbedrijf",
@@ -36480,7 +36413,6 @@
   "website": "http://www.biesheuvelendebruin.nl/",
   "tel": "0184230026",
   "tel_disp": "0184 230 026",
-  "name_alt": "Biesheuvel & De Bruin B.V.",
   "city_slug": "hardinxveld-giessendam",
   "siblings": [
    {
@@ -36516,7 +36448,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bijlbouw-b-v-_swwmw": {
   "name": "Bijlbouw B.V.",
@@ -36617,7 +36549,6 @@
   "website": "https://www.bbklusbedrijf.nl/",
   "tel": "0626428228",
   "tel_disp": "06 26428228",
-  "name_alt": "Binnen&Buiten Klusbedrijf",
   "city_slug": "bergen",
   "siblings": [
    {
@@ -36636,7 +36567,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/bitraco-b-v-emey-i": {
   "name": "Bitraco B.V.",
@@ -37170,7 +37101,6 @@
   "website": "https://blombouwvastgoed.nl/",
   "tel": "0702230256",
   "tel_disp": "070 223 0256",
-  "name_alt": "Blom Bouw & Vastgoed",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -37206,7 +37136,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bluemoon-veranda-keuken-xu9bok": {
   "name": "Bluemoon veranda keuken",
@@ -37469,11 +37399,10 @@
   "website": "http://www.bobsservice.nl/",
   "tel": "0631916346",
   "tel_disp": "06 31916346",
-  "name_alt": "Bob's Service Bouw & Techniek",
   "city_slug": "dreischor",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/bobdebouwert-azbm4i": {
   "name": "BoBdeBouwerT",
@@ -37711,7 +37640,6 @@
   "website": "https://boezewinkelmulderbouw.nl/",
   "tel": "0575477111",
   "tel_disp": "0575 477 111",
-  "name_alt": "Boezewinkel & Mulder Bouw",
   "city_slug": "brummen",
   "siblings": [
    {
@@ -37747,7 +37675,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bof-bouw-b-v-5mninq": {
   "name": "BOF BOUW B.V.",
@@ -38170,7 +38098,7 @@
   "website": "http://www.borger-odoorn.nl/",
   "city_slug": "borger-odoorn",
   "contact_row": "v3",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/bormans-java-n23dfe": {
   "name": "Bormans JaVa",
@@ -38767,7 +38695,6 @@
   "website": "http://www.dirksenbouw.nl/",
   "tel": "0344654924",
   "tel_disp": "0344 654 924",
-  "name_alt": "Bouw- & Aannemersbedrijf Dirksen",
   "city_slug": "tiel",
   "siblings": [
    {
@@ -38802,7 +38729,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/bouw-aannemersbedrijf-dozeman-pg5ysq": {
   "name": "Bouw- &amp; aannemersbedrijf Dozeman",
@@ -38813,7 +38740,6 @@
   "website": "http://dozemanbouw.nl/",
   "tel": "0653588346",
   "tel_disp": "06 53588346",
-  "name_alt": "Bouw- & aannemersbedrijf Dozeman",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -38849,7 +38775,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-aannemersbedrijf-ligthart-sqyv6y": {
   "name": "Bouw aannemersbedrijf Ligthart",
@@ -38906,7 +38832,6 @@
   "website": "http://www.vandenhelderbv.nl/",
   "tel": "0627442780",
   "tel_disp": "06 27442780",
-  "name_alt": "Bouw- & aannemersbedrijf Van den Helder B.V.",
   "city_slug": "woerden",
   "siblings": [
    {
@@ -38942,7 +38867,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-aannemersbedrijf-widdershoven-omj8ak": {
   "name": "Bouw- &amp; Aannemersbedrijf Widdershoven",
@@ -38952,7 +38877,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouw-%20%26%20Aannemersbedrijf%20Widdershoven&amp;query_place_id=ChIJxf9XITjIwEcRCl8X3Omj8ak",
   "tel": "0464492759",
   "tel_disp": "046 449 2759",
-  "name_alt": "Bouw- & Aannemersbedrijf Widdershoven",
   "city_slug": "susteren",
   "siblings": [
    {
@@ -38988,7 +38912,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-aannemersbedrijf-wil-peters-bv-chfhhc": {
   "name": "Bouw-/aannemersbedrijf Wil Peters BV",
@@ -39045,7 +38969,6 @@
   "website": "https://www.hooikaasbv.nl/",
   "tel": "0786159118",
   "tel_disp": "078 615 9118",
-  "name_alt": "Bouw & Aannemingsbedrijf Hooikaas B.V.",
   "city_slug": "papendrecht",
   "siblings": [
    {
@@ -39081,7 +39004,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-adviesburo-r-bakker-b-v-memezm": {
   "name": "Bouw- &amp; Adviesburo R. Bakker B.V.",
@@ -39092,7 +39015,6 @@
   "website": "https://bakker-bouw.com/",
   "tel": "0181323740",
   "tel_disp": "0181 323 740",
-  "name_alt": "Bouw- & Adviesburo R. Bakker B.V.",
   "city_slug": "hellevoetsluis",
   "siblings": [
    {
@@ -39128,7 +39050,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-bad-d-4m3q": {
   "name": "Bouw &amp; Bad",
@@ -39139,7 +39061,6 @@
   "website": "https://www.bouwenbad.nl/",
   "tel": "0166224013",
   "tel_disp": "0166 224 013",
-  "name_alt": "Bouw & Bad",
   "city_slug": "tholen",
   "siblings": [
    {
@@ -39175,7 +39096,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-complete-qqzptk": {
   "name": "Bouw Complete",
@@ -39232,7 +39153,6 @@
   "website": "http://www.bouwmarktclaassen.nl/",
   "tel": "0495591869",
   "tel_disp": "0495 591 869",
-  "name_alt": "Bouw & Doe het Zelf Markt Claassen Huishoud & Kadoshop",
   "city_slug": "maarheeze",
   "siblings": [
    {
@@ -39265,7 +39185,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-en-aannemersbedrijf-adrie-spanjaards-b-v-b1jxka": {
   "name": "Bouw- en Aannemersbedrijf Adrie Spanjaards B.V.",
@@ -39504,7 +39424,6 @@
   "website": "https://www.hagemansderoder.nl/",
   "tel": "0621968505",
   "tel_disp": "06 21968505",
-  "name_alt": "bouw- en Aannemersbedrijf Hagemans & De Roder",
   "city_slug": "ijsselstein",
   "siblings": [
    {
@@ -39540,7 +39459,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-en-aannemersbedrijf-hoekstra-svkdz0": {
   "name": "Bouw- en Aannemersbedrijf Hoekstra",
@@ -39573,7 +39492,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/bouw-en-aannemersbedrijf-hofwerk-b-v-m_7_6c": {
   "name": "Bouw- en Aannemersbedrijf Hofwerk B.V.",
@@ -40142,11 +40061,10 @@
   "website": "http://www.bouwbedrijf-dehaan.nl/",
   "tel": "0511521287",
   "tel_disp": "0511 521 287",
-  "name_alt": "Bouw- en Aannemingsbedrijf G. de Haan & Zn B.V.",
   "city_slug": "garyp",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/bouw-en-aannemingsbedrijf-h-a-teeuwen-unyhci": {
   "name": "Bouw- en Aannemingsbedrijf H.A. Teeuwen",
@@ -40604,7 +40522,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouw-%20en%20Aannemingsbedrijf%20S.%20Klaver%20%26%20Zn.%20B.V.&amp;query_place_id=ChIJM1yIjhZbyEcRmgsa3DdaTVo",
   "tel": "0513463990",
   "tel_disp": "0513 463 990",
-  "name_alt": "Bouw- en Aannemingsbedrijf S. Klaver & Zn. B.V.",
   "city_slug": "gorredijk",
   "siblings": [
    {
@@ -40640,7 +40557,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-en-aannemingsbedrijf-v-h-gebr-de-pater-drivuq": {
   "name": "Bouw- en Aannemingsbedrijf v/h Gebr. De Pater",
@@ -40972,11 +40889,10 @@
   "website": "http://www.vanderbroekkoerts.nl/",
   "tel": "0527271639",
   "tel_disp": "0527 271 639",
-  "name_alt": "Bouw- en Handelsonderneming Van der Broek & Koerts",
   "city_slug": "espel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/bouw-en-installatiebedrijf-vogelzang-olst-3wb5ti": {
   "name": "Bouw en Installatiebedrijf Vogelzang Olst",
@@ -42385,7 +42301,6 @@
   "website": "http://www.bouweninfraservicebrabant.nl/",
   "tel": "0630555182",
   "tel_disp": "06 30555182",
-  "name_alt": "Bouw & Infra Service Brabant. (Sier)Bestrating-Riolering-Grondwerk",
   "city_slug": "eersel",
   "siblings": [
    {
@@ -42421,7 +42336,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-klusbedrijf-allround-2dxi_4": {
   "name": "Bouw &amp; Klusbedrijf Allround",
@@ -42432,7 +42347,6 @@
   "website": "https://bouwklusbedrijfallround.nl/contact/",
   "tel": "0633109299",
   "tel_disp": "06 33109299",
-  "name_alt": "Bouw & Klusbedrijf Allround",
   "city_slug": "stadskanaal",
   "siblings": [
    {
@@ -42468,7 +42382,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-klusbedrijf-nico-van-dijk-0ahe18": {
   "name": "Bouw &amp; Klusbedrijf Nico van Dijk",
@@ -42479,7 +42393,6 @@
   "website": "http://www.nicobouwt.nl/",
   "tel": "0630725822",
   "tel_disp": "06 30725822",
-  "name_alt": "Bouw & Klusbedrijf Nico van Dijk",
   "city_slug": "bunschoten-spakenburg",
   "siblings": [
    {
@@ -42515,7 +42428,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-klusbedrijf-wim-lob6o4": {
   "name": "Bouw &amp; klusbedrijf WIM",
@@ -42526,7 +42439,6 @@
   "website": "http://www.bouwklusbedrijfwim.nl/",
   "tel": "0620492538",
   "tel_disp": "06 20492538",
-  "name_alt": "Bouw & klusbedrijf WIM",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -42562,7 +42474,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-klussenbedrijf-a-r-allround-mnyxna": {
   "name": "Bouw &amp; Klussenbedrijf A R allround",
@@ -42573,7 +42485,6 @@
   "website": "http://www.arbouwenklussenbedrijf.nl/",
   "tel": "0630168673",
   "tel_disp": "06 30168673",
-  "name_alt": "Bouw & Klussenbedrijf A R allround",
   "city_slug": "almelo",
   "siblings": [
    {
@@ -42609,7 +42520,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-kozijnen-midden-nederland-1pjup8": {
   "name": "Bouw &amp; Kozijnen Midden Nederland",
@@ -42620,7 +42531,6 @@
   "website": "https://www.bekmn.nl/",
   "tel": "0302005033",
   "tel_disp": "030 200 5033",
-  "name_alt": "Bouw & Kozijnen Midden Nederland",
   "city_slug": "ijsselstein",
   "siblings": [
    {
@@ -42656,7 +42566,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-maas-b-v-xbjesu": {
   "name": "Bouw Maas B.V.",
@@ -42713,7 +42623,6 @@
   "website": "http://www.bouwmetselbedrijfvansteenwijk.nl/",
   "tel": "0592544237",
   "tel_disp": "0592 544 237",
-  "name_alt": "Bouw & Metsel bedrijf van Steenwijk Tynaarlo (Regio Assen - Drenthe)",
   "city_slug": "tynaarlo",
   "siblings": [
    {
@@ -42749,7 +42658,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-onderhoud-van-der-lee-5sunvg": {
   "name": "Bouw &amp; Onderhoud van der Lee",
@@ -42757,7 +42666,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouw%20%26%20Onderhoud%20van%20der%20Lee&amp;query_place_id=ChIJkayCNzqUxkcRHJ_O05suNVg",
   "tel": "0619999587",
   "tel_disp": "06 19999587",
-  "name_alt": "Bouw & Onderhoud van der Lee",
   "city_slug": "loon-op-zand",
   "siblings": [
    {
@@ -42791,7 +42699,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/bouw-onderhouds-en-aannemersbedrijf-willem-hoekstra-vuvgcy": {
   "name": "Bouw- Onderhouds- en Aannemersbedrijf Willem Hoekstra",
@@ -42838,7 +42746,6 @@
   "website": "https://bouwenonderhoudsbedrijfsnijder.nl/",
   "tel": "0643909181",
   "tel_disp": "06 43909181",
-  "name_alt": "Bouw- & Onderhoudsbedrijf Snijder",
   "city_slug": "zeewolde",
   "siblings": [
    {
@@ -42874,7 +42781,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-onderhoudsbedrijf-van-bavel-kunwgg": {
   "name": "Bouw&amp;Onderhoudsbedrijf van Bavel",
@@ -42885,7 +42792,6 @@
   "website": "http://www.bovb.nl/",
   "tel": "0648403891",
   "tel_disp": "06 48403891",
-  "name_alt": "Bouw&Onderhoudsbedrijf van Bavel",
   "city_slug": "roosendaal",
   "siblings": [
    {
@@ -42921,7 +42827,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-pro-t3ts20": {
   "name": "Bouw-Pro",
@@ -43135,11 +43041,10 @@
   "website": "https://www.bouwbedrijftexel.nl/",
   "tel": "0222310620",
   "tel_disp": "0222 310 620",
-  "name_alt": "Bouw & Timmerbedrijf Texel",
   "city_slug": "de-waal",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/bouw-timmerbedrijf-van-hamersveld-b-v-cnogji": {
   "name": "Bouw &amp; Timmerbedrijf van Hamersveld B.V",
@@ -43150,7 +43055,6 @@
   "website": "http://bouwbedrijfvanhamersveld.nl/",
   "tel": "0646014860",
   "tel_disp": "06 46014860",
-  "name_alt": "Bouw & Timmerbedrijf van Hamersveld B.V",
   "city_slug": "almere",
   "siblings": [
    {
@@ -43186,7 +43090,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-timmeronderneming-nollgen-lrdkq8": {
   "name": "Bouw &amp; Timmeronderneming Nöllgen",
@@ -43196,7 +43100,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouw%20%26%20Timmeronderneming%20N%C3%B6llgen&amp;query_place_id=ChIJj116pP2-wEcRbMf8QLrdkq8",
   "tel": "0455244565",
   "tel_disp": "045 524 4565",
-  "name_alt": "Bouw & Timmeronderneming Nöllgen",
   "city_slug": "nuth",
   "siblings": [
    {
@@ -43232,7 +43135,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-vitaal-b-v-udckry": {
   "name": "Bouw Vitaal B.V.",
@@ -43681,7 +43584,6 @@
   "website": "https://bouwbedrijfvanelk.nl/",
   "tel": "0646711896",
   "tel_disp": "06 46711896",
-  "name_alt": "Bouwbedrijf A&M van Elk",
   "city_slug": "hillegom",
   "siblings": [
    {
@@ -43692,7 +43594,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-a-methorst-iz9bfw": {
   "name": "Bouwbedrijf A. Methorst",
@@ -43929,7 +43831,6 @@
   "website": "http://www.acbouwbedrijf.nl/",
   "tel": "0571700515",
   "tel_disp": "0571 700 515",
-  "name_alt": "Bouwbedrijf Alberts & de Croon B.V.",
   "city_slug": "deventer",
   "siblings": [
    {
@@ -43965,7 +43866,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-amersfoort-b-v-rqrl5a": {
   "name": "Bouwbedrijf Amersfoort B.V.",
@@ -44264,7 +44165,7 @@
   "tel_disp": "06 11200370",
   "city_slug": "den-hoorn-texel",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/bouwbedrijf-assink-haaksbergen-b-v-ur1jye": {
   "name": "Bouwbedrijf Assink Haaksbergen B.V.",
@@ -44943,7 +44844,6 @@
   "website": "https://www.bouwbedrijfbeijert.nl/",
   "tel": "0624723593",
   "tel_disp": "06 24723593",
-  "name_alt": "Bouwbedrijf Beijert Bouw & Techniek",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -44979,7 +44879,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-bell-bv-84re28": {
   "name": "Bouwbedrijf Bell bv",
@@ -46011,7 +45911,7 @@
   "tel_disp": "06 51136205",
   "city_slug": "slochteren",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/bouwbedrijf-bosma-b-v-djpqsu": {
   "name": "Bouwbedrijf Bosma B.V.",
@@ -46411,7 +46311,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/bouwbedrijf-bronckhorst-ydx5gc": {
   "name": "Bouwbedrijf Bronckhorst",
@@ -47572,7 +47472,6 @@
   "website": "http://www.dedelta.nl/",
   "tel": "0118679000",
   "tel_disp": "0118 679 000",
-  "name_alt": "Bouwbedrijf \"De Delta\" B.V.",
   "city_slug": "middelburg",
   "siblings": [
    {
@@ -47608,7 +47507,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-de-driehoek-b-v-gzzduk": {
   "name": "Bouwbedrijf De Driehoek B.V.",
@@ -47727,11 +47626,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwbedrijf%20De%20Haan%20%26%20Bosma&amp;query_place_id=ChIJJYSQkmBQyEcRgta1PZ7WHzA",
   "tel": "0512383417",
   "tel_disp": "0512 383 417",
-  "name_alt": "Bouwbedrijf De Haan & Bosma",
   "city_slug": "boornbergum",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/bouwbedrijf-de-hoogh-vw4vjo": {
   "name": "Bouwbedrijf De Hoogh",
@@ -47817,7 +47715,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/bouwbedrijf-de-hoop-jir4gu": {
   "name": "Bouwbedrijf De Hoop",
@@ -48426,7 +48324,6 @@
   "website": "https://destaa.nl/",
   "tel": "0653194176",
   "tel_disp": "06 53194176",
-  "name_alt": "Bouwbedrijf \"De Staa\"",
   "city_slug": "nijverdal",
   "siblings": [
    {
@@ -48437,7 +48334,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-de-thuisfabriek-b-v-hlkt6g": {
   "name": "Bouwbedrijf De Thuisfabriek B.V.",
@@ -49751,11 +49648,10 @@
   "reviews": "5",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwbedrijf%20Engels%20%26%20Verbiest%20B.V.&amp;query_place_id=ChIJWdz7iirBxUcRAfpte9h5YqI",
   "website": "http://www.bouwbedrijfengels-verbiest.nl/",
-  "name_alt": "Bouwbedrijf Engels & Verbiest B.V.",
   "city_slug": "oegstgeest",
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/bouwbedrijf-eric-van-de-poll-bv-i0wpmq": {
   "name": "Bouwbedrijf Eric van de Poll BV",
@@ -50276,7 +50172,7 @@
   "tel_disp": "06 15606726",
   "city_slug": "opeinde",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/bouwbedrijf-g-a-v-d-beek-bv-bjsrk8": {
   "name": "Bouwbedrijf G. &amp; A. v.d. Beek BV",
@@ -50287,7 +50183,6 @@
   "website": "http://www.bouwbedrijfvandebeek.nl/",
   "tel": "0514857016",
   "tel_disp": "0514 857 016",
-  "name_alt": "Bouwbedrijf G. & A. v.d. Beek BV",
   "city_slug": "balk",
   "siblings": [
    {
@@ -50312,7 +50207,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-g-broos-v-o-f-3ovum8": {
   "name": "Bouwbedrijf G.Broos V.O.F.",
@@ -53668,7 +53563,6 @@
   "reviews": "3",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwbedrijf%20J%26B%20Castricum&amp;query_place_id=ChIJTxxiwmD3xUcRcEXIEo3L2Yg",
   "website": "http://www.bouwbedrijfjenbcastricum.nl/",
-  "name_alt": "Bouwbedrijf J&B Castricum",
   "city_slug": "castricum",
   "siblings": [
    {
@@ -53704,7 +53598,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-j-bolt-wers7u": {
   "name": "Bouwbedrijf J. Bolt",
@@ -54871,7 +54765,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwbedrijf%20K%20%26%20A%20Siemons%20V.O.F.&amp;query_place_id=ChIJ9_tYermZxkcRi1GRsReASLg",
   "tel": "0162313525",
   "tel_disp": "0162 313 525",
-  "name_alt": "Bouwbedrijf K & A Siemons V.O.F.",
   "city_slug": "dongen",
   "siblings": [
    {
@@ -54906,7 +54799,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/bouwbedrijf-kalco-b-v-edij0u": {
   "name": "Bouwbedrijf Kalco B.V.",
@@ -55075,7 +54968,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/bouwbedrijf-kimtim-b-v-0ppnwo": {
   "name": "Bouwbedrijf KimTim B.V.",
@@ -55333,7 +55226,6 @@
   "website": "http://www.kobesenzinger.nl/",
   "tel": "0611316368",
   "tel_disp": "06 11316368",
-  "name_alt": "Bouwbedrijf Kobes&Zinger",
   "city_slug": "peize",
   "siblings": [
    {
@@ -55349,7 +55241,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-koekoek-h2fkm4": {
   "name": "Bouwbedrijf Koekoek",
@@ -56513,7 +56405,6 @@
   "website": "http://www.lingers-vandepaal.nl/",
   "tel": "0652540612",
   "tel_disp": "06 52540612",
-  "name_alt": "Bouwbedrijf Lingers & Van de Paal BV",
   "city_slug": "geldrop",
   "siblings": [
    {
@@ -56549,7 +56440,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-lucas-hummel-f2l2ck": {
   "name": "Bouwbedrijf Lucas Hummel",
@@ -57400,7 +57291,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/bouwbedrijf-niessen-ix9oia": {
   "name": "Bouwbedrijf Niessen",
@@ -58540,7 +58431,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/bouwbedrijf-posthumus-gorredijk-bv-fwl10u": {
   "name": "Bouwbedrijf Posthumus Gorredijk BV",
@@ -59381,11 +59272,10 @@
   "website": "http://www.ritte-persoon.nl/",
   "tel": "0174281222",
   "tel_disp": "0174 281 222",
-  "name_alt": "Bouwbedrijf Ritte & Persoon B.V.",
   "city_slug": "wateringen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/bouwbedrijf-roelofs-b-v-bmju54": {
   "name": "Bouwbedrijf Roelofs B.V.",
@@ -60610,7 +60500,6 @@
   "website": "https://smits-oirschot.nl/",
   "tel": "0499375101",
   "tel_disp": "0499 375 101",
-  "name_alt": "Bouwbedrijf Smits & Znn",
   "city_slug": "oirschot",
   "siblings": [
    {
@@ -60646,7 +60535,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-spijkenisse-b-v-d1znwm": {
   "name": "Bouwbedrijf Spijkenisse B.V",
@@ -60830,7 +60719,7 @@
   "tel_disp": "06 57961248",
   "city_slug": "elsloo",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/bouwbedrijf-sterk-dzrmyo": {
   "name": "Bouwbedrijf Sterk",
@@ -60887,7 +60776,6 @@
   "website": "https://stobbesimon.nl/",
   "tel": "0650428459",
   "tel_disp": "06 50428459",
-  "name_alt": "Bouwbedrijf Stobbe & Simon",
   "city_slug": "putten",
   "siblings": [
    {
@@ -60923,7 +60811,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-stoffers-b-v-ztvupk": {
   "name": "Bouwbedrijf Stoffers B.V.",
@@ -61319,7 +61207,6 @@
   "website": "https://www.bouwbedrijfvanveen.nl/",
   "tel": "0642589884",
   "tel_disp": "06 42589884",
-  "name_alt": "Bouwbedrijf T van Veen & Zn",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -61355,7 +61242,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-t-van-vroenhoven-pczdqy": {
   "name": "Bouwbedrijf T. van Vroenhoven",
@@ -62650,7 +62537,6 @@
   "website": "http://vandepolvandersteen.nl/",
   "tel": "0413745018",
   "tel_disp": "0413 745 018",
-  "name_alt": "Bouwbedrijf Van De Pol & Van Der Steen",
   "city_slug": "sint-oedenrode",
   "siblings": [
    {
@@ -62686,7 +62572,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-van-de-ven-pck4dw": {
   "name": "Bouwbedrijf van de Ven",
@@ -62853,7 +62739,6 @@
   "website": "https://www.vandenbergvanerp.nl/",
   "tel": "0651134063",
   "tel_disp": "06 51134063",
-  "name_alt": "Bouwbedrijf van den Berg & van Erp B.V.",
   "city_slug": "berghem",
   "siblings": [
    {
@@ -62869,7 +62754,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-van-den-boom-3zdz1g": {
   "name": "Bouwbedrijf Van den Boom",
@@ -63965,7 +63850,6 @@
   "website": "http://www.vandriesschedekoster.nl/",
   "tel": "0114370137",
   "tel_disp": "0114 370 137",
-  "name_alt": "Bouwbedrijf van Driessche & de Koster B.V.",
   "city_slug": "hulst",
   "siblings": [
    {
@@ -63985,7 +63869,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-van-eijk-jqmc4c": {
   "name": "Bouwbedrijf van Eijk",
@@ -65228,7 +65112,6 @@
   "website": "http://www.bouwbedrijfvanrooij.nl/",
   "tel": "0402913355",
   "tel_disp": "040 291 3355",
-  "name_alt": "Bouwbedrijf Van Rooij & Zn. B.V.",
   "city_slug": "nuenen",
   "siblings": [
    {
@@ -65264,7 +65147,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-van-schaik-breukelen-b-v-eiwpmq": {
   "name": "Bouwbedrijf Van Schaik Breukelen B.V.",
@@ -65310,7 +65193,6 @@
   "website": "https://www.vanselmenmars.nl/",
   "tel": "0332025659",
   "tel_disp": "033 202 5659",
-  "name_alt": "Bouwbedrijf Van Selm & Mars",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -65346,7 +65228,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-van-soest-nzdrsm": {
   "name": "Bouwbedrijf van Soest",
@@ -65558,7 +65440,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwbedrijf%20van%20%27t%20Land&amp;query_place_id=ChIJSZ5M_ZEVxkcRkJvTgDHClhQ",
   "tel": "0624194887",
   "tel_disp": "06 24194887",
-  "name_alt": "Bouwbedrijf van 't Land",
   "city_slug": "huizen",
   "siblings": [
    {
@@ -65594,7 +65475,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-van-toor-hmwoou": {
   "name": "Bouwbedrijf van Toor",
@@ -66484,7 +66365,6 @@
   "website": "http://www.vk-bouw.nl/",
   "tel": "0650297343",
   "tel_disp": "06 50297343",
-  "name_alt": "Bouwbedrijf Vijverberg & v.d. Knaap B.V.",
   "city_slug": "poeldijk",
   "siblings": [
    {
@@ -66495,7 +66375,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-visser-en-bunschoten-b-v-z9yapm": {
   "name": "Bouwbedrijf Visser en Bunschoten B.V.",
@@ -70724,7 +70604,6 @@
   "name": "Bouwonderneming Bakker &amp; De Vries",
   "city": "Urk",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwonderneming%20Bakker%20%26%20De%20Vries&amp;query_place_id=ChIJoWq1QXiEyEcRXKE72K_q9OY",
-  "name_alt": "Bouwonderneming Bakker & De Vries",
   "city_slug": "urk",
   "siblings": [
    {
@@ -72261,7 +72140,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/bouwservice-hamers-lt_vpa": {
   "name": "Bouwservice Hamers",
@@ -72846,7 +72725,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwservice%20Loozen%20%26%20Schmeetz&amp;query_place_id=ChIJ8bcsc8WXwEcR9tZ5amvl4ew",
   "tel": "0658823196",
   "tel_disp": "06 58823196",
-  "name_alt": "Bouwservice Loozen & Schmeetz",
   "city_slug": "lemiers",
   "siblings": [
    {
@@ -72857,7 +72735,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwservice-m-vd-w-3_n0f0": {
   "name": "Bouwservice M.vd.W",
@@ -74556,7 +74434,6 @@
   "website": "https://bramerbv.nl/",
   "tel": "0546562555",
   "tel_disp": "0546 562 555",
-  "name_alt": "Bramer Bouw & Vastgoed B.V.",
   "city_slug": "vriezenveen",
   "siblings": [
    {
@@ -74587,7 +74464,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bramer-flevoland-gdyooa": {
   "name": "Bramer Flevoland",
@@ -75173,7 +75050,6 @@
   "website": "http://www.broerendasbouwbedrijf.nl/",
   "tel": "0402051073",
   "tel_disp": "040 205 1073",
-  "name_alt": "Broeren & Das Bouwbedrijf B.V.",
   "city_slug": "veldhoven",
   "siblings": [
    {
@@ -75209,7 +75085,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/broeren-van-osch-stukadoorsbedrijf-eteuaa": {
   "name": "Broeren van Osch Stukadoorsbedrijf",
@@ -76948,7 +76824,6 @@
   "website": "https://boostimizer.com/configurator/9da54696-9252-4f87-bf52-09e7f58bdc66",
   "tel": "0627656696",
   "tel_disp": "06 27656696",
-  "name_alt": "C&E Bouw Aannemingsbedrijf",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -76983,7 +76858,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/c-f-bouw-ezt8gi": {
   "name": "C &amp; F Bouw",
@@ -76993,7 +76868,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=C%20%26%20F%20Bouw&amp;query_place_id=ChIJQxMPylGUwEcRFeRkSEzt8gI",
   "tel": "0434501482",
   "tel_disp": "043 450 1482",
-  "name_alt": "C & F Bouw",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -77029,7 +76903,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/c-k-bouw-txsego": {
   "name": "C&amp;K bouw",
@@ -77040,7 +76914,6 @@
   "website": "http://www.ck-bouw.nl/",
   "tel": "0704062203",
   "tel_disp": "070 406 2203",
-  "name_alt": "C&K bouw",
   "city_slug": "rijswijk",
   "siblings": [
    {
@@ -77076,7 +76949,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/c-koppejan-bouw-timmerbedrijf-ily1tm": {
   "name": "C. Koppejan Bouw- &amp; Timmerbedrijf",
@@ -77087,11 +76960,10 @@
   "website": "http://www.koppejanbouw.nl/",
   "tel": "0611204460",
   "tel_disp": "06 11204460",
-  "name_alt": "C. Koppejan Bouw- & Timmerbedrijf",
   "city_slug": "serooskerke",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/c-onrust-bouwbedrijf-hj8dxe": {
   "name": "C. Onrust Bouwbedrijf",
@@ -77586,7 +77458,6 @@
   "website": "https://celobaarn.nl/",
   "tel": "0355423193",
   "tel_disp": "035 542 3193",
-  "name_alt": "Celo Bouw & Installatiebedrijf",
   "city_slug": "baarn",
   "siblings": [
    {
@@ -77622,7 +77493,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/cfk-bouw-fcjvwq": {
   "name": "Cfk Bouw",
@@ -78090,7 +77961,6 @@
   "website": "http://cmdbouw.nl/",
   "tel": "0641991084",
   "tel_disp": "06 41991084",
-  "name_alt": "CMD Bouw & Onderhoud",
   "city_slug": "naarden",
   "siblings": [
    {
@@ -78126,7 +77996,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/cmk-bouw-fqxb8w": {
   "name": "CMK Bouw",
@@ -78561,7 +78431,6 @@
   "website": "https://www.correctbouwroermond.nl/",
   "tel": "0475331197",
   "tel_disp": "0475 331 197",
-  "name_alt": "Correct Bouw & Afbouw BV",
   "city_slug": "roermond",
   "siblings": [
    {
@@ -78597,7 +78466,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/corstjens-aannemersbedrijf-vof-zbvsw4": {
   "name": "Corstjens Aannemersbedrijf VOF",
@@ -79081,11 +78950,10 @@
   "website": "https://dendbouw.nl/?y_source=1_NTgyODIzNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0629349510",
   "tel_disp": "06 29349510",
-  "name_alt": "D&D Bouw",
   "city_slug": "fochteloo",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/d-donker-verbouw-en-onderhoud-o0vpkm": {
   "name": "D. Donker Verbouw en Onderhoud",
@@ -79142,11 +79010,10 @@
   "website": "https://www.denfbouw.nl/",
   "tel": "0653319591",
   "tel_disp": "06 53319591",
-  "name_alt": "D&F Bouw- en Aannemersbedrijf B.V.",
   "city_slug": "velsen-zuid",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/d-j-r-allround-bouw-j4quoc": {
   "name": "D.J.R. Allround Bouw",
@@ -79340,7 +79207,6 @@
   "website": "https://www.dvanderhelm.nl/",
   "tel": "0172571726",
   "tel_disp": "0172 571 726",
-  "name_alt": "D.v.d. Helm & zn Aannemersbedrijf",
   "city_slug": "nieuwkoop",
   "siblings": [
    {
@@ -79376,7 +79242,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/daad-bouw-mtwr0i": {
   "name": "Daad Bouw",
@@ -80725,11 +80591,10 @@
   "website": "https://www.dakramen-montagehethogeland.nl/",
   "tel": "0623883514",
   "tel_disp": "06 23883514",
-  "name_alt": "Dakramen & Montage het Hogeland",
   "city_slug": "leens",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/dakspecialist-van-bergen-jydcx8": {
   "name": "Dakspecialist van Bergen",
@@ -81264,7 +81129,6 @@
   "website": "http://www.davegraus.nl/",
   "tel": "0622122031",
   "tel_disp": "06 22122031",
-  "name_alt": "Dave Graus Bouw & Timmerwerken",
   "city_slug": "echt",
   "siblings": [
    {
@@ -81299,7 +81163,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/davico-edplvg": {
   "name": "Davico",
@@ -81355,7 +81219,6 @@
   "website": "http://www.davincibouw.nl/",
   "tel": "0646332324",
   "tel_disp": "06 46332324",
-  "name_alt": "Davinci Bouw & Interieur",
   "city_slug": "noordwijkerhout",
   "siblings": [
    {
@@ -81391,7 +81254,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/db-bouw-b-v-uok-gq": {
   "name": "DB Bouw B.V.",
@@ -81766,7 +81629,6 @@
   "website": "http://www.dbbo.nl/",
   "tel": "0527205659",
   "tel_disp": "0527 205 659",
-  "name_alt": "De Boer Bouw & Ontwikkeling B.V.",
   "city_slug": "urk",
   "siblings": [
    {
@@ -81802,7 +81664,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-boer-klus-en-metselbedrijf-klusbedrijf-den-helder-bxy5so": {
   "name": "De Boer klus en metselbedrijf | Klusbedrijf Den Helder",
@@ -81905,7 +81767,6 @@
   "website": "https://www.doboko.nl/",
   "tel": "0725403594",
   "tel_disp": "072 540 3594",
-  "name_alt": "De Boorder & Koreman BV",
   "city_slug": "alkmaar",
   "siblings": [
    {
@@ -81941,7 +81802,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-bouw-baron-4acwkm": {
   "name": "De Bouw Baron",
@@ -82360,7 +82221,6 @@
   "website": "https://degooijerreno.nl/",
   "tel": "0307370843",
   "tel_disp": "030 737 0843",
-  "name_alt": "De Gooijer Renovatie & Onderhoudsbedrijf Houten",
   "city_slug": "houten",
   "siblings": [
    {
@@ -82396,7 +82256,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-graaf-s-totaalbouw-b-v-djbobc": {
   "name": "De Graaf&#x27;s Totaalbouw B.V.",
@@ -82406,7 +82266,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Graaf%27s%20Totaalbouw%20B.V.&amp;query_place_id=ChIJcZ1N1oI_xkcRka0MaDJbobc",
   "tel": "0621434391",
   "tel_disp": "06 21434391",
-  "name_alt": "De Graaf's Totaalbouw B.V.",
   "city_slug": "eemdijk",
   "siblings": [
    {
@@ -82416,7 +82275,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-groenfontein-uwfgv8": {
   "name": "de Groenfontein",
@@ -82600,7 +82459,6 @@
   "website": "http://www.degrootschagen.nl/",
   "tel": "0184416233",
   "tel_disp": "0184 416 233",
-  "name_alt": "De Groot & Schagen Aannemingsbedrijf B.V.",
   "city_slug": "sliedrecht",
   "siblings": [
    {
@@ -82636,7 +82494,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-haas-bouw-itfkme": {
   "name": "De Haas Bouw",
@@ -82692,7 +82550,6 @@
   "website": "http://www.dehaasheesterbeek.nl/",
   "tel": "0497514791",
   "tel_disp": "0497 514 791",
-  "name_alt": "De Haas & Heesterbeek BV",
   "city_slug": "eersel",
   "siblings": [
    {
@@ -82728,7 +82585,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-haay-bouwwerken-u_pcde": {
   "name": "De Haay Bouwwerken",
@@ -83139,7 +82996,6 @@
   "website": "http://dekeijzerbouw.nl/",
   "tel": "0629502337",
   "tel_disp": "06 29502337",
-  "name_alt": "de Keijzer Bouw - Nieuwbouw, verbouw, houtbouw & renovatie",
   "city_slug": "barneveld",
   "siblings": [
    {
@@ -83175,7 +83031,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-klusbemiddelaar-txruha": {
   "name": "De Klusbemiddelaar",
@@ -83369,7 +83225,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=De%20Kraker%20Bouw%20%26%20Timmerwerken&amp;query_place_id=ChIJNYTYq25jxEcRFa83SkPMQeQ",
   "tel": "0113344451",
   "tel_disp": "0113 344 451",
-  "name_alt": "De Kraker Bouw & Timmerwerken",
   "city_slug": "kapelle",
   "siblings": [
    {
@@ -83404,7 +83259,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-kuiper-infrabouw-w-ddow": {
   "name": "De Kuiper Infrabouw",
@@ -83911,7 +83766,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/de-rijk-b-v-aannemer-in-waterwerken-xljgce": {
   "name": "De Rijk B.V., aannemer in waterwerken",
@@ -83989,7 +83844,6 @@
   "website": "https://www.devisserbouwenonderhoud.eu/",
   "tel": "0736458745",
   "tel_disp": "073 645 8745",
-  "name_alt": "De Visser Bouw & onderhoud B.V.",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -84025,7 +83879,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-vos-bouw-1fr_vg": {
   "name": "De Vos Bouw",
@@ -84397,7 +84251,6 @@
   "website": "https://verbouweninstallatie.nl/",
   "tel": "0641465144",
   "tel_disp": "06 41465144",
-  "name_alt": "De Zeeuw | Verbouw- & Installatiebedrijf",
   "city_slug": "zoetermeer",
   "siblings": [
    {
@@ -84433,7 +84286,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-zeeuwse-huismeesters-bv-7fmyba": {
   "name": "De Zeeuwse Huismeesters Bv",
@@ -84490,7 +84343,6 @@
   "website": "http://www.deckersbouw.nl/",
   "tel": "0639880442",
   "tel_disp": "06 39880442",
-  "name_alt": "Deckers Bouw & Renovatie",
   "city_slug": "sint-joost",
   "siblings": [
    {
@@ -84501,7 +84353,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/deho-bouw-bv-uo9w2k": {
   "name": "Deho Bouw Bv",
@@ -84631,7 +84483,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/dekker-totaal-afbouw-os_u4q": {
   "name": "Dekker Totaal Afbouw",
@@ -85119,7 +84971,6 @@
   "website": "http://www.denys.com/",
   "tel": "92540111",
   "tel_disp": "92540111",
-  "name_alt": "Denys Engineers & Contractors",
   "city_slug": "moerdijk",
   "siblings": [
    {
@@ -85154,7 +85005,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/denz-bouwservice-o4thug": {
   "name": "Denz bouwservice",
@@ -85197,7 +85048,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/denzo-bouw-mwi0oa": {
   "name": "Denzo Bouw",
@@ -85895,7 +85746,6 @@
   "website": "https://www.dijkendambouw.nl/",
   "tel": "0180700262",
   "tel_disp": "0180 700 262",
-  "name_alt": "Dijk & Dam Bouw B.V.",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -85931,7 +85781,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dijkhuis-bouwbiologische-aannemer-e0mzsu": {
   "name": "Dijkhuis Bouwbiologische aannemer",
@@ -86147,11 +85997,10 @@
   "website": "https://dijkstrabouw.nl/",
   "tel": "0566622088",
   "tel_disp": "0566 622 088",
-  "name_alt": "Dijkstra's Bouw- en Aannemersbedrijf B.V.",
   "city_slug": "grou",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/dima-montage-q4iwnc": {
   "name": "DIMA Montage",
@@ -86445,7 +86294,6 @@
   "website": "http://www.dirkvdeinden.nl/",
   "tel": "0610859166",
   "tel_disp": "06 10859166",
-  "name_alt": "Dirk vd Einden bouw & onderhoud",
   "city_slug": "someren",
   "siblings": [
    {
@@ -86481,7 +86329,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dirks-bouw-b-v-s5_jqg": {
   "name": "Dirks bouw b.v.",
@@ -86583,7 +86431,6 @@
   "website": "http://www.disselbouw.nl/",
   "tel": "0182617395",
   "tel_disp": "0182 617 395",
-  "name_alt": "Dissel Bouw & Aannemingsbedrijf",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -86619,7 +86466,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/distabouw-bouwt-aan-uw-wensen-dy-gzu": {
   "name": "Distabouw &#x27;Bouwt aan uw Wensen&#x27;",
@@ -86628,7 +86475,6 @@
   "website": "http://www.distabouw.nl/",
   "tel": "0627585216",
   "tel_disp": "06 27585216",
-  "name_alt": "Distabouw 'Bouwt aan uw Wensen'",
   "city_slug": "sint-annaland",
   "contact_row": "default",
   "template": "v11"
@@ -86687,7 +86533,6 @@
   "website": "http://www.dkafbouw.nl/",
   "tel": "0655944174",
   "tel_disp": "06 55944174",
-  "name_alt": "DK Afbouw & Renovatie B.V.",
   "city_slug": "etten-leur",
   "siblings": [
    {
@@ -86723,7 +86568,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dl-bouw-midden-nederland-xytqfi": {
   "name": "DL Bouw Midden Nederland",
@@ -87030,7 +86875,6 @@
   "website": "https://dntbouwenklimaat.nl/",
   "tel": "0641896534",
   "tel_disp": "06 41896534",
-  "name_alt": "DNT Bouw & Klimaat",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -87066,7 +86910,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/doij-kozijnonderhoud-de-oude-ijssel-service-en-onderhoud-tggepi": {
   "name": "DOIJ kozijnonderhoud (De Oude IJssel Service en Onderhoud)",
@@ -87103,7 +86947,6 @@
   "website": "http://www.dompelingbouw.nl/",
   "tel": "0582672901",
   "tel_disp": "058 267 2901",
-  "name_alt": "Dompeling Bouwbedrijf & Montage",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -87139,7 +86982,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/domus-bouw-u9agjs": {
   "name": "Domus Bouw",
@@ -87353,7 +87196,6 @@
   "website": "https://www.dorestadbouw.nl/",
   "tel": "0624580459",
   "tel_disp": "06 24580459",
-  "name_alt": "Dorestad Bouw - aannemer Wijk Bij Duurstede, airco's, warmtepompen, zonnepanelen",
   "city_slug": "wijk-bij-duurstede",
   "siblings": [
    {
@@ -87389,7 +87231,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dorssers-verbouwingen-b-v-xbs6go": {
   "name": "Dorssers Verbouwingen B.V.",
@@ -87801,7 +87643,6 @@
   "website": "http://www.driessenbouwbedrijf.nl/",
   "tel": "0774621734",
   "tel_disp": "077 462 1734",
-  "name_alt": "Driessen Bouwbedrijf B.V. & Driessen Duurzaam B.V.",
   "city_slug": "kessel",
   "siblings": [
    {
@@ -87812,7 +87653,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/driessen-bv-bouw-en-timmerbedrijf-peter-q84q1u": {
   "name": "Driessen BV, Bouw- en timmerbedrijf Peter",
@@ -87986,7 +87827,6 @@
   "website": "http://www.duprie.nl/",
   "tel": "0715222919",
   "tel_disp": "071 522 2919",
-  "name_alt": "Du Prie bouw & ontwikkeling b.v.",
   "city_slug": "leiden",
   "siblings": [
    {
@@ -88022,7 +87862,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/duchowski-renovatie-verbouwing-duchowski-kozijnen-ssykli": {
   "name": "Duchowski Renovatie &amp; Verbouwing, Duchowski Kozijnen",
@@ -88033,7 +87873,6 @@
   "website": "http://www.duchowski.nl/",
   "tel": "0615293003",
   "tel_disp": "06 15293003",
-  "name_alt": "Duchowski Renovatie & Verbouwing, Duchowski Kozijnen",
   "city_slug": "katwijk-aan-zee",
   "siblings": [
    {
@@ -88069,7 +87908,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/duijfbouw-arlxyi": {
   "name": "Duijfbouw",
@@ -88700,7 +88539,6 @@
   "website": "https://em-totaalservice.nl/",
   "tel": "0629292090",
   "tel_disp": "06 29292090",
-  "name_alt": "E&M Totaalservice",
   "city_slug": "susteren",
   "siblings": [
    {
@@ -88736,7 +88574,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/e-s-bouw-en-renovatie-n5fc6s": {
   "name": "E&amp;S Bouw en Renovatie",
@@ -88746,7 +88584,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=E%26S%20Bouw%20en%20Renovatie&amp;query_place_id=ChIJ2z68sDMVxkcRoG-zDN5Fc6s",
   "tel": "0615967096",
   "tel_disp": "06 15967096",
-  "name_alt": "E&S Bouw en Renovatie",
   "city_slug": "laren",
   "siblings": [
    {
@@ -88782,7 +88619,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/e-t-bouwservice-tlit8m": {
   "name": "E.T. Bouwservice",
@@ -89034,7 +88871,6 @@
   "website": "http://www.edstimmerwerken.nl/",
   "tel": "0612901321",
   "tel_disp": "06 12901321",
-  "name_alt": "Ed's Timmerwerken",
   "city_slug": "boxtel",
   "siblings": [
    {
@@ -89070,7 +88906,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/edmar-s-klusbedrijf-ysxwgi": {
   "name": "Edmar&#x27;s Klusbedrijf",
@@ -89080,7 +88916,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Edmar%27s%20Klusbedrijf&amp;query_place_id=ChIJt-IuNdYnx0cR1y4m8YSxwgI",
   "tel": "0620327704",
   "tel_disp": "06 20327704",
-  "name_alt": "Edmar's Klusbedrijf",
   "city_slug": "heeze",
   "siblings": [
    {
@@ -89116,7 +88951,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/edo-brans-bouw-e-b-b-pwn8l4": {
   "name": "Edo Brans Bouw/E.B.B.",
@@ -89715,7 +89550,6 @@
   "website": "https://e-vhbouw.nl/",
   "tel": "0452301333",
   "tel_disp": "045 230 1333",
-  "name_alt": "Elibri - van Hoeij Aannemersbedrijf & Bouw advies bureau",
   "city_slug": "landgraaf",
   "siblings": [
    {
@@ -89751,7 +89585,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/elk-enschede-mxxlns": {
   "name": "elk® Enschede",
@@ -89854,7 +89688,6 @@
   "website": "http://www.timmerbedrijfellenbroek.nl/",
   "tel": "0649833129",
   "tel_disp": "06 49833129",
-  "name_alt": "Ellenbroek Montage & Timmerwerk",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -89890,7 +89723,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/elzakkers-bouw-onderhoud-k6ehag": {
   "name": "Elzakkers bouw &amp; Onderhoud",
@@ -89901,7 +89734,6 @@
   "website": "https://elzakkersbouw.nl/",
   "tel": "0622521170",
   "tel_disp": "06 22521170",
-  "name_alt": "Elzakkers bouw & Onderhoud",
   "city_slug": "kerkrade",
   "siblings": [
    {
@@ -89937,7 +89769,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/emc-a2yzju": {
   "name": "EMC",
@@ -90097,7 +89929,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/enad-projectbouw-pmcvm8": {
   "name": "Enad Projectbouw",
@@ -90802,7 +90634,6 @@
   "website": "http://www.evertsenbouw.nl/",
   "tel": "0384528444",
   "tel_disp": "038 452 8444",
-  "name_alt": "Evertsen Bouw & Ontwikkeling Zwolle",
   "city_slug": "zwolle",
   "siblings": [
    {
@@ -90838,7 +90669,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/evidentbouw-b-v-4ko1cg": {
   "name": "EvidentBouw B.V.",
@@ -91216,7 +91047,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Fa.%20Alb.%20Looman%20%26%20Zoon&amp;query_place_id=ChIJB0PDFK97xkcRY1-uCBEkx9E",
   "tel": "0348471477",
   "tel_disp": "0348 471 477",
-  "name_alt": "Fa. Alb. Looman & Zoon",
   "city_slug": "montfoort",
   "siblings": [
    {
@@ -91252,7 +91082,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/fa-bouwbedrijf-schouwenaars-adfvia": {
   "name": "Fa. Bouwbedrijf Schouwenaars",
@@ -91712,7 +91542,6 @@
   "website": "https://www.fidesbouw.nl/",
   "tel": "0611105076",
   "tel_disp": "06 11105076",
-  "name_alt": "Fides Bouw & Advies BV | Jarenlang een unieke aanpak van bouwactiviteiten",
   "city_slug": "heerlen",
   "siblings": [
    {
@@ -91748,7 +91577,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/fidesse-ryl5nu": {
   "name": "Fidesse",
@@ -91977,7 +91806,6 @@
   "website": "http://www.compieraannemers.nl/",
   "tel": "0204961371",
   "tel_disp": "020 496 1371",
-  "name_alt": "Firma H.P. Compier & Zonen",
   "city_slug": "amstelveen",
   "siblings": [
    {
@@ -92013,7 +91841,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/firma-r-van-geldere-en-zn-zkkkea": {
   "name": "Firma R. van Geldere en zn.",
@@ -92188,7 +92016,6 @@
   "website": "http://www.houtman1825.nl/",
   "tel": "0356850340",
   "tel_disp": "035 685 0340",
-  "name_alt": "Firma W. Houtman & Zn.",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -92224,7 +92051,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/firma-wilke-vbyyww": {
   "name": "Firma Wilke",
@@ -92281,7 +92108,6 @@
   "website": "https://fixandgoklusbedrijf.nl/",
   "tel": "0645882798",
   "tel_disp": "06 45882798",
-  "name_alt": "fix & Go klusbedrijf",
   "city_slug": "dronten",
   "siblings": [
    {
@@ -92317,7 +92143,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/fixenjoy-amsterdam-foajfe": {
   "name": "FixEnjoy Amsterdam",
@@ -92631,7 +92457,6 @@
   "website": "http://fonbouw-services.nl/",
   "tel": "0624326489",
   "tel_disp": "06 24326489",
-  "name_alt": "FONBOUW&SERVICES",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -92667,7 +92492,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/fontaine-bouw-7kdy9e": {
   "name": "Fontaine bouw",
@@ -92721,7 +92546,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Fraanje%20Bouw%20%26%20Projecten&amp;query_place_id=ChIJDxSA4LWNxEcRdUzPalydXww",
   "tel": "0681899930",
   "tel_disp": "06 81899930",
-  "name_alt": "Fraanje Bouw & Projecten",
   "city_slug": "geersdijk",
   "contact_row": "v2",
   "template": "v11"
@@ -93049,7 +92873,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=franken%20v.o.f%20kleinbouw%26onderhoudsbedrijf&amp;query_place_id=ChIJ0wkiJWkzxkcRDt5Vq7wJK58",
   "tel": "0623372823",
   "tel_disp": "06 23372823",
-  "name_alt": "franken v.o.f kleinbouw&onderhoudsbedrijf",
   "city_slug": "hierden",
   "siblings": [
    {
@@ -93065,7 +92888,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/frans-geraeds-timmer-klus-en-bouwbedrijf-lyv2ta": {
   "name": "Frans Geraeds Timmer, Klus en Bouwbedrijf",
@@ -93635,7 +93458,6 @@
   "website": "https://www.ggbouw.nl/",
   "tel": "0622407679",
   "tel_disp": "06 22407679",
-  "name_alt": "G & G Bouw- en Metselbedrijf",
   "city_slug": "nuenen",
   "siblings": [
    {
@@ -93671,7 +93493,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/g-koetse-renovatie-onderhoud-te5vow": {
   "name": "G. Koetse Renovatie &amp; Onderhoud",
@@ -93682,7 +93504,6 @@
   "website": "https://www.gkoetse-renovatie.nl/",
   "tel": "0622346687",
   "tel_disp": "06 22346687",
-  "name_alt": "G. Koetse Renovatie & Onderhoud",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -93718,7 +93539,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/g-o-f-bouw-advies-b-v-exgj9y": {
   "name": "G.O.F. bouw &amp; advies B.V.",
@@ -93729,7 +93550,6 @@
   "website": "https://gofbouwenadvies.nl/",
   "tel": "0850062060",
   "tel_disp": "085 006 2060",
-  "name_alt": "G.O.F. bouw & advies B.V.",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -93765,7 +93585,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/g-ooms-bouwbedrijf-ceu0gs": {
   "name": "G. Ooms Bouwbedrijf",
@@ -93868,7 +93688,6 @@
   "website": "http://www.theunsbouw.nl/",
   "tel": "0204921105",
   "tel_disp": "020 492 1105",
-  "name_alt": "G. Theuns & Zoon",
   "city_slug": "diemen",
   "siblings": [
    {
@@ -93904,7 +93723,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/g-van-dijk-bouwservice-qzzrzk": {
   "name": "G. van Dijk Bouwservice",
@@ -94926,7 +94745,6 @@
   "website": "https://www.gebroedersvanzetten.nl/",
   "tel": "0613454927",
   "tel_disp": "06 13454927",
-  "name_alt": "Gebroeders van Zetten Bouw &Installatie",
   "city_slug": "tiel",
   "siblings": [
    {
@@ -94961,7 +94779,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/gebrs-hooghwerff-b-v-de27di": {
   "name": "Gebrs. Hooghwerff B.V.",
@@ -95220,7 +95038,6 @@
   "website": "http://www.geluktotaalbouw.nl/",
   "tel": "0643289439",
   "tel_disp": "06 43289439",
-  "name_alt": "Geluk Afbouw & Montage",
   "city_slug": "tholen",
   "siblings": [
    {
@@ -95256,7 +95073,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/geluk-bouw-bv-c6lslc": {
   "name": "Geluk Bouw BV",
@@ -95554,7 +95371,6 @@
   "website": "http://www.gerrits-bouw.nl/",
   "tel": "0499234432",
   "tel_disp": "0499 234 432",
-  "name_alt": "Gerrits Bouw & Timmerwerken BV",
   "city_slug": "best",
   "siblings": [
    {
@@ -95590,7 +95406,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/gerritsen-bouw-deventer-0t-aoe": {
   "name": "Gerritsen Bouw Deventer",
@@ -95713,7 +95529,6 @@
   "website": "https://www.g-h.nl/",
   "tel": "0113333040",
   "tel_disp": "0113 333 040",
-  "name_alt": "GH Bouw & Interieurbouw",
   "city_slug": "kapelle",
   "siblings": [
    {
@@ -95748,7 +95563,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/gh-muijs-bouw-ewbdia": {
   "name": "GH-Muijs Bouw",
@@ -95940,7 +95755,6 @@
   "website": "https://www.gijsvancleef.nl/",
   "tel": "0356953477",
   "tel_disp": "035 695 3477",
-  "name_alt": "Gijs & Van Cleef",
   "city_slug": "naarden",
   "siblings": [
    {
@@ -95976,7 +95790,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/gijsberts-totaalbouw-9htrlk": {
   "name": "Gijsberts Totaalbouw",
@@ -96033,7 +95847,6 @@
   "website": "https://gijsen-bt.nl/",
   "tel": "0623749202",
   "tel_disp": "06 23749202",
-  "name_alt": "Gijsen Bouw&Timmerwerken B.V.",
   "city_slug": "made",
   "siblings": [
    {
@@ -96069,7 +95882,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/gils-bouwservice-en-onderhoud-b-v-kv7_v8": {
   "name": "Gils Bouwservice en Onderhoud B.V.",
@@ -96703,7 +96516,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/goldenhands-aannemersbedrijf-6chv6s": {
   "name": "Goldenhands Aannemersbedrijf",
@@ -96852,7 +96665,6 @@
   "website": "https://gooisbouwbedrijf.nl/",
   "tel": "0356953535",
   "tel_disp": "035 695 3535",
-  "name_alt": "Gooi's Bouwbedrijf G.B.B. B.V.",
   "city_slug": "naarden",
   "siblings": [
    {
@@ -96888,7 +96700,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/gooische-klus-aannemersbedrijf-gsxxiu": {
   "name": "Gooische Klus | Aannemersbedrijf",
@@ -97158,7 +96970,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/goudseprojecten-ulygsw": {
   "name": "Goudseprojecten",
@@ -97215,7 +97027,6 @@
   "website": "http://www.gpbouwonderhoud.nl/",
   "tel": "0612688821",
   "tel_disp": "06 12688821",
-  "name_alt": "GP Bouw & Onderhoud",
   "city_slug": "nunspeet",
   "siblings": [
    {
@@ -97251,7 +97062,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/graaf-bouw-zi70ju": {
   "name": "Graaf Bouw",
@@ -97766,7 +97577,6 @@
   "website": "http://www.groenen-bouw.nl/",
   "tel": "0402309911",
   "tel_disp": "040 230 9911",
-  "name_alt": "Groenen Bouw & Onderhoud",
   "city_slug": "veldhoven",
   "siblings": [
    {
@@ -97802,7 +97612,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/groenestein-b-v-mqnsnk": {
   "name": "Groenestein B.V.",
@@ -98342,7 +98152,6 @@
   "website": "http://www.hbbouw.nl/",
   "tel": "0252211382",
   "tel_disp": "0252 211 382",
-  "name_alt": "H&B Bouw",
   "city_slug": "voorhout",
   "siblings": [
    {
@@ -98363,7 +98172,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/h-baan-bouw-metselbedrijf-s_7hc8": {
   "name": "H. Baan Bouw &amp; Metselbedrijf",
@@ -98373,7 +98182,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=H.%20Baan%20Bouw%20%26%20Metselbedrijf&amp;query_place_id=ChIJJ6U8vyD3x0cR6xkcwS_7hC8",
   "tel": "0647672368",
   "tel_disp": "06 47672368",
-  "name_alt": "H. Baan Bouw & Metselbedrijf",
   "city_slug": "holten",
   "siblings": [
    {
@@ -98394,7 +98202,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/h-benschop-bouw-timmerwerken-4fbnru": {
   "name": "H. Benschop bouw &amp; timmerwerken",
@@ -98405,7 +98213,6 @@
   "website": "https://www.hbenschopbouwentimmerwerken.nl/",
   "tel": "0637175739",
   "tel_disp": "06 37175739",
-  "name_alt": "H. Benschop bouw & timmerwerken",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -98441,7 +98248,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/h-den-haan-winkelprojecten-aannemersbedrijf-b-v-695dhe": {
   "name": "H. den Haan Winkelprojecten-Aannemersbedrijf B.V.",
@@ -98544,7 +98351,6 @@
   "website": "http://www.henhaannemers.nl/",
   "tel": "0182601827",
   "tel_disp": "0182 601 827",
-  "name_alt": "H & H Timmer- en Aannemingsbedrijf B.V.",
   "city_slug": "stolwijk",
   "siblings": [
    {
@@ -98555,7 +98361,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/h-j-m-hoek-aannemers-en-timmerbedrijf-cwdn60": {
   "name": "H.J.M. Hoek Aannemers- en Timmerbedrijf",
@@ -98670,7 +98476,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=H%26L%20Bouwservice&amp;query_place_id=ChIJlRlleYgmyEcRUzR6oZzKUxM",
   "tel": "0621537499",
   "tel_disp": "06 21537499",
-  "name_alt": "H&L Bouwservice",
   "city_slug": "rolde",
   "siblings": [
    {
@@ -98681,7 +98486,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/h-leenders-bouwbedrijf-b-v-zzsaz0": {
   "name": "H. Leenders Bouwbedrijf B.V.",
@@ -98829,11 +98634,10 @@
   "website": "http://www.harryvandenberg.nl/",
   "tel": "0511402580",
   "tel_disp": "0511 402 580",
-  "name_alt": "H. van den Berg Timmer- & Montagebedrijf",
   "city_slug": "tytsjerk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/h-van-der-hulst-aannemersbedrijf-mz5qgs": {
   "name": "H. van der Hulst Aannemersbedrijf",
@@ -99485,7 +99289,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=HADRA%20B.V.%20Bouw%20%26%20Aannemersbedrijf&amp;query_place_id=ChIJe6DhgrbbxUcR9WJDDSNHlO8",
   "tel": "0685791152",
   "tel_disp": "06 85791152",
-  "name_alt": "HADRA B.V. Bouw & Aannemersbedrijf",
   "city_slug": "alphen-aan-den-rijn",
   "siblings": [
    {
@@ -99521,7 +99324,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hagemans-westervoort-_nomjy": {
   "name": "Hagemans Westervoort",
@@ -100006,7 +99809,6 @@
   "website": "http://www.hamer-montage.nl/",
   "tel": "0610611641",
   "tel_disp": "06 10611641",
-  "name_alt": "Hamer Montage & Klussenbedrijf",
   "city_slug": "brummen",
   "siblings": [
    {
@@ -100042,7 +99844,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hamersma-timmerwerken-deventer-lxukfg": {
   "name": "Hamersma Timmerwerken Deventer",
@@ -100581,7 +100383,6 @@
   "website": "http://harmsenaanenverbouw.nl/",
   "tel": "0641767448",
   "tel_disp": "06 41767448",
-  "name_alt": "Harmsen Aan & Verbouw",
   "city_slug": "apeldoorn",
   "siblings": [
    {
@@ -100617,7 +100418,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/haro-bouwt-b-v-zdwple": {
   "name": "HaRo Bouwt B.V.",
@@ -101171,7 +100972,6 @@
   "website": "https://www.hbsbouw.nl/",
   "tel": "0493242136",
   "tel_disp": "0493 242 136",
-  "name_alt": "HBS BOUW \"Uw schuttingspecialist\" - Schutting laten plaatsen!",
   "city_slug": "deurne",
   "siblings": [
    {
@@ -101207,7 +101007,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hc-kaatsheuvel-tcmzza": {
   "name": "HC Kaatsheuvel",
@@ -101413,7 +101213,6 @@
   "website": "http://www.heddes.nl/",
   "tel": "0229282400",
   "tel_disp": "0229 282 400",
-  "name_alt": "Heddes Bouw & Ontwikkeling",
   "city_slug": "hoorn",
   "siblings": [
    {
@@ -101449,7 +101248,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hedibouw-dite00": {
   "name": "HediBouw",
@@ -102646,7 +102445,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Hendrikx%20%26%20Spruit%2C%20Bouw-%20en%20Aannemersbedrijf%20B.V.&amp;query_place_id=ChIJo5tyKVZ6xkcRVjTAkkOwNuk",
   "tel": "0348471377",
   "tel_disp": "0348 471 377",
-  "name_alt": "Hendrikx & Spruit, Bouw- en Aannemersbedrijf B.V.",
   "city_slug": "montfoort",
   "siblings": [
    {
@@ -102682,7 +102480,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/henk-bennink-exclusieve-houtbouw-09e8ho": {
   "name": "Henk Bennink Exclusieve Houtbouw",
@@ -103415,7 +103213,6 @@
   "website": "https://www.himaverbouw.nl/",
   "tel": "0591239346",
   "tel_disp": "0591 239 346",
-  "name_alt": "Hima Verbouw & Renovatie",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -103451,7 +103248,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hirschel-verhage-bouw-aannemersbedrijf-4s6zbm": {
   "name": "Hirschel Verhage Bouw &amp; Aannemersbedrijf",
@@ -103462,7 +103259,6 @@
   "website": "https://www.hirschelverhage.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb",
   "tel": "0108400337",
   "tel_disp": "010 840 0337",
-  "name_alt": "Hirschel Verhage Bouw & Aannemersbedrijf",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -103498,7 +103294,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hissink-jqjwpo": {
   "name": "Hissink",
@@ -103555,7 +103351,6 @@
   "website": "https://www.hissinkbouw.nl/",
   "tel": "0573401572",
   "tel_disp": "0573 401 572",
-  "name_alt": "Hissink's Bouwbedrijf B.V.",
   "city_slug": "laren",
   "siblings": [
    {
@@ -103591,7 +103386,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hl-bouw-en-montage-inq4gm": {
   "name": "HL Bouw en Montage",
@@ -104382,7 +104177,6 @@
   "website": "https://www.gvdholstzn.nl/?y_source=1_MjExNDk5NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0705117928",
   "tel_disp": "070 511 7928",
-  "name_alt": "Holst & Zn BV Aannemers G vd",
   "city_slug": "wassenaar",
   "siblings": [
    {
@@ -104418,7 +104212,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/holtkamp-bouw-bv-eukzl8": {
   "name": "Holtkamp Bouw BV",
@@ -104521,7 +104315,6 @@
   "website": "http://www.holtslag-renovatie.nl/",
   "tel": "0646497225",
   "tel_disp": "06 46497225",
-  "name_alt": "Holtslag Gevelrenovatie & Gevelreiniging Doetinchem",
   "city_slug": "doetinchem",
   "siblings": [
    {
@@ -104557,7 +104350,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/home-restyle-7rfvz4": {
   "name": "Home Restyle",
@@ -104905,7 +104698,6 @@
   "website": "http://www.hopman-bouw.nl/",
   "tel": "0622379298",
   "tel_disp": "06 22379298",
-  "name_alt": "Hopman Bouw & Projectmanagement b.v.",
   "city_slug": "bunschoten-spakenburg",
   "siblings": [
    {
@@ -104941,7 +104733,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/horssen-bv-wegenbouw-van-rtjzqe": {
   "name": "Horssen BV Wegenbouw Van",
@@ -105167,7 +104959,6 @@
   "website": "https://nlmaplink.top/details/hrf-bouw-handelsonderneming-ChIJ_WQ",
   "tel": "0629554985",
   "tel_disp": "06 29554985",
-  "name_alt": "HRF Bouw & Handelsonderneming",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -105203,7 +104994,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hs-bouw-aannemingsbedrijf-ixeaq0": {
   "name": "HS-Bouw aannemingsbedrijf",
@@ -105660,7 +105451,6 @@
   "website": "https://www.huisenheek.nl/",
   "tel": "0655533342",
   "tel_disp": "06 55533342",
-  "name_alt": "Huis & Heek",
   "city_slug": "harderwijk",
   "siblings": [
    {
@@ -105696,7 +105486,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/huiskamp-bouwbedrijf-b-v-9kywrq": {
   "name": "Huiskamp Bouwbedrijf B.V.",
@@ -106601,7 +106391,6 @@
   "website": "http://www.iesbouwenadvies.nl/",
   "tel": "0181727222",
   "tel_disp": "0181 727 222",
-  "name_alt": "IES Bouw & Advies",
   "city_slug": "oostvoorne",
   "siblings": [
    {
@@ -106622,7 +106411,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ijsbrand-bouw-renovatie-2tug80": {
   "name": "IJsbrand Bouw &amp; Renovatie",
@@ -106633,7 +106422,6 @@
   "website": "https://www.ijsbrandbouwenrenovatie.nl/",
   "tel": "0712340979",
   "tel_disp": "071 234 0979",
-  "name_alt": "IJsbrand Bouw & Renovatie",
   "city_slug": "noordwijk",
   "siblings": [
    {
@@ -106669,7 +106457,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/illing-afbouw-en-montagebedrijf-sdql1i": {
   "name": "Illing Afbouw- en Montagebedrijf",
@@ -106770,7 +106558,6 @@
   "website": "https://www.intveldbouw.nl/",
   "tel": "0620908492",
   "tel_disp": "06 20908492",
-  "name_alt": "In 't Veld Bouw- & Klusbedrijf",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -106806,7 +106593,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/in-weelde-5nbbae": {
   "name": "In Weelde",
@@ -106995,7 +106782,6 @@
   "website": "https://www.inluxebouw.com/",
   "tel": "0657222109",
   "tel_disp": "06 57222109",
-  "name_alt": "Inluxe Renovatie & Onderhoud",
   "city_slug": "rockanje",
   "siblings": [
    {
@@ -107019,7 +106805,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/installatie-bouwbedrijf-de-bruijn-lb6lme": {
   "name": "Installatie &amp; Bouwbedrijf de Bruijn",
@@ -107030,7 +106816,6 @@
   "website": "https://installatieenbouwbedrijfdebruijn.nl/",
   "tel": "0640164132",
   "tel_disp": "06 40164132",
-  "name_alt": "Installatie & Bouwbedrijf de Bruijn",
   "city_slug": "delft",
   "siblings": [
    {
@@ -107066,7 +106851,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/installatietechniek-beekdaelen-jq7o5q": {
   "name": "Installatietechniek Beekdaelen",
@@ -108241,7 +108026,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=J%26P%20bouwservice&amp;query_place_id=ChIJKZTtyWEEx0cRIGUHhDBM9mY",
   "tel": "0629516128",
   "tel_disp": "06 29516128",
-  "name_alt": "J&P bouwservice",
   "city_slug": "grave",
   "siblings": [
    {
@@ -108277,7 +108061,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/j-r-bouw-dongen-b-v-fic01a": {
   "name": "J&amp;R Bouw Dongen B.V.",
@@ -108288,7 +108072,6 @@
   "website": "http://www.jrbouwdongen.nl/",
   "tel": "0162386921",
   "tel_disp": "0162 386 921",
-  "name_alt": "J&R Bouw Dongen B.V.",
   "city_slug": "dongen",
   "siblings": [
    {
@@ -108324,7 +108107,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/j-s-techniek-lrphbu": {
   "name": "J.S techniek",
@@ -108380,7 +108163,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=J.spang%20Infra%20%26%20Lijmwerken&amp;query_place_id=ChIJGevAabv9t0cRfYCy1HvpnAY",
   "tel": "0642622718",
   "tel_disp": "06 42622718",
-  "name_alt": "J.spang Infra & Lijmwerken",
   "city_slug": "coevorden",
   "siblings": [
    {
@@ -108416,7 +108198,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/j-van-de-beek-holding-b-v-n9ovfc": {
   "name": "J. van de Beek Holding B.V.",
@@ -108517,7 +108299,6 @@
   "website": "https://jvu.nl/",
   "tel": "0497360515",
   "tel_disp": "0497 360 515",
-  "name_alt": "J. van Uijthoven & Zn. B.V.",
   "city_slug": "eersel",
   "siblings": [
    {
@@ -108553,7 +108334,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/j-van-zundert-klusbedrijf-xjvlee": {
   "name": "J van Zundert Klusbedrijf",
@@ -108951,7 +108732,6 @@
   "website": "https://jadbouw.nl/",
   "tel": "0685423036",
   "tel_disp": "06 85423036",
-  "name_alt": "Jad bouw & renovatie",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -108987,7 +108767,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jago-apeldoorn-bouwbedrijf-apeldoorn--traxq": {
   "name": "Jago Apeldoorn-Bouwbedrijf Apeldoorn",
@@ -109181,7 +108961,6 @@
   "website": "http://jancodoorn.nl/",
   "tel": "0652638138",
   "tel_disp": "06 52638138",
-  "name_alt": "Janco Doorn Renovatiewerk & Nieuwbouw",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -109217,7 +108996,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jans-bouw-asu2ou": {
   "name": "Jans Bouw",
@@ -110351,7 +110130,6 @@
   "website": "http://www.jfebouw.nl/",
   "tel": "0642280109",
   "tel_disp": "06 42280109",
-  "name_alt": "JFE bouw & renovatie",
   "city_slug": "borne",
   "siblings": [
    {
@@ -110387,7 +110165,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jg-bouw-z2icjs": {
   "name": "JG Bouw",
@@ -110398,7 +110176,7 @@
   "tel_disp": "06 50445846",
   "city_slug": "overasselt",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/jg-meerburg-beheer-bv-dx8gmi": {
   "name": "JG Meerburg Beheer BV",
@@ -111184,11 +110962,10 @@
   "website": "https://johnkester.nl/",
   "tel": "0653672117",
   "tel_disp": "06 53672117",
-  "name_alt": "John Kester & Zn V.O.F.",
   "city_slug": "schipluiden",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/john-roefs-klusbedrijf-nr5hj0": {
   "name": "John Roefs Klusbedrijf",
@@ -111486,7 +111263,6 @@
   "website": "http://www.jonkentol.nl/",
   "tel": "0622414035",
   "tel_disp": "06 22414035",
-  "name_alt": "Jonk & Tol Timmerwerken",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -111522,7 +111298,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jonkheijm-en-van-hove-bouw-bv-lpxfgs": {
   "name": "Jonkheijm En Van Hove Bouw BV",
@@ -111681,7 +111457,6 @@
   "website": "http://www.jorritsmabouw.nl/",
   "tel": "0505201515",
   "tel_disp": "050 520 1515",
-  "name_alt": "Jorritsma Bouw B.V. | Aannemer & Bouwbedrijf",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -111717,7 +111492,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jos-habets-bouwservice-41toym": {
   "name": "Jos Habets Bouwservice",
@@ -112104,7 +111879,6 @@
   "website": "https://www.jtbouwentimmerwerken.nl/",
   "tel": "0657013774",
   "tel_disp": "06 57013774",
-  "name_alt": "JT Bouw&timmerwerken",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -112140,7 +111914,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jts-bouwtotaal-jscjuc": {
   "name": "JTS bouwtotaal",
@@ -112268,7 +112042,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/juya-bouw-b-v-i_tr70": {
   "name": "JuYa Bouw B.V.",
@@ -112568,7 +112342,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=K.H.%20Bilder%20%26%20Zn.%20Bouw-%20en%20Aannemingsbedrijf&amp;query_place_id=ChIJn0sTpe7xxUcRy0eGbmJmtyY",
   "tel": "0650244472",
   "tel_disp": "06 50244472",
-  "name_alt": "K.H. Bilder & Zn. Bouw- en Aannemingsbedrijf",
   "city_slug": "ijmuiden",
   "siblings": [
    {
@@ -112599,7 +112372,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/k-j-van-der-kooij-cnkuzw": {
   "name": "K.J. van der Kooij",
@@ -112655,7 +112428,6 @@
   "website": "http://kkprojects.nl/",
   "tel": "0613601421",
   "tel_disp": "06 13601421",
-  "name_alt": "K&K Projects",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -112691,7 +112463,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/k-s-aanneming-b-v-km9qpi": {
   "name": "K&amp;S Aanneming b.v.",
@@ -112702,7 +112474,6 @@
   "website": "http://kens-aanneming.nl/",
   "tel": "0683591863",
   "tel_disp": "06 83591863",
-  "name_alt": "K&S Aanneming b.v.",
   "city_slug": "dordrecht",
   "siblings": [
    {
@@ -112738,7 +112509,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/k-v-s-aannemersbedrijf-zipzny": {
   "name": "K.V.S. Aannemersbedrijf",
@@ -113439,7 +113210,6 @@
   "website": "http://www.klussenbedrijfkaygan.nl/",
   "tel": "0640564735",
   "tel_disp": "06 40564735",
-  "name_alt": "Kaygan - Aannemer Waddinxveen | Bouwbedrijf & Klussen",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -113475,7 +113245,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kb-bouw-en-renovatie-rjof18": {
   "name": "KB bouw en renovatie",
@@ -113578,7 +113348,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/kdj-bouw-b-v-j0t6ls": {
   "name": "KDJ Bouw B.V.",
@@ -113806,7 +113576,6 @@
   "website": "http://www.keizer-bouw.nl/",
   "tel": "0113376100",
   "tel_disp": "0113 376 100",
-  "name_alt": "Keizer Bouw & Schilders",
   "city_slug": "kamperland",
   "siblings": [
    {
@@ -113822,7 +113591,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kelderman-bouw-b-v-xlgbx4": {
   "name": "Kelderman Bouw B.V.",
@@ -113925,7 +113694,6 @@
   "website": "https://www.kempenaars-bv.nl/",
   "tel": "0165551129",
   "tel_disp": "0165 551 129",
-  "name_alt": "Kempenaars' Aannemersbedrijf B.V.",
   "city_slug": "roosendaal",
   "siblings": [
    {
@@ -113961,7 +113729,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kemperbouw-hrtrta": {
   "name": "Kemperbouw",
@@ -114064,7 +113832,6 @@
   "website": "http://www.kerbofdelfzijl.nl/",
   "tel": "0596614400",
   "tel_disp": "0596 614 400",
-  "name_alt": "Kerbof schilders BV & Kerbof kunststof kozijnen en zonwering BV",
   "city_slug": "delfzijl",
   "siblings": [
    {
@@ -114100,7 +113867,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kerklaan-de-groot-b-v-m23c1m": {
   "name": "Kerklaan &amp; De Groot B.V.",
@@ -114109,7 +113876,6 @@
   "reviews": "2",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Kerklaan%20%26%20De%20Groot%20B.V.&amp;query_place_id=ChIJJbwWR4BxxkcRNrp5Hm23C1M",
   "website": "http://www.kerklaanendegroot.nl/",
-  "name_alt": "Kerklaan & De Groot B.V.",
   "city_slug": "breukelen",
   "siblings": [
    {
@@ -114134,7 +113900,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kesselaar-zn-x7eg_o": {
   "name": "Kesselaar &amp; Zn",
@@ -114145,7 +113911,6 @@
   "website": "https://www.kesselaarenzn.nl/",
   "tel": "0725644446",
   "tel_disp": "072 564 4446",
-  "name_alt": "Kesselaar & Zn",
   "city_slug": "alkmaar",
   "siblings": [
    {
@@ -114181,7 +113946,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kessels-wegenbouw-en-bestratingen-bv-vkvleo": {
   "name": "Kessels Wegenbouw en Bestratingen BV",
@@ -114414,7 +114179,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Kiela%20Woning-%20%26%20Bedrijfsonderhoud&amp;query_place_id=ChIJnfIQo7kwxkcRRbXWiK6yJw4",
   "tel": "0365222028",
   "tel_disp": "036 522 2028",
-  "name_alt": "Kiela Woning- & Bedrijfsonderhoud",
   "city_slug": "zeewolde",
   "siblings": [
    {
@@ -114450,7 +114214,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kien-aannemers-gfrgzm": {
   "name": "Kien Aannemers",
@@ -114507,7 +114271,6 @@
   "website": "http://www.kievitbouwentimmerwerken.nl/",
   "tel": "0612302498",
   "tel_disp": "06 12302498",
-  "name_alt": "Kievit Bouw & Timmerwerken",
   "city_slug": "dronten",
   "siblings": [
    {
@@ -114543,7 +114306,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kimsma-bouwbedrijf-bv-xjxneq": {
   "name": "Kimsma Bouwbedrijf bv",
@@ -114691,7 +114454,6 @@
   "website": "http://kistersbouwservice.nl/",
   "tel": "0455324652",
   "tel_disp": "045 532 4652",
-  "name_alt": "Kisters Bouwservice & Techniek",
   "city_slug": "kerkrade",
   "siblings": [
    {
@@ -114727,7 +114489,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kjs-bouw-opgms4": {
   "name": "KJS Bouw",
@@ -114828,7 +114590,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=%22Klein%20Wicherink%22%20Bouwmontage%20Houtskeletbouw&amp;query_place_id=ChIJyWUa2mj4x0cRkF4Wbf2_YDA",
   "tel": "0630561856",
   "tel_disp": "06 30561856",
-  "name_alt": "\"Klein Wicherink\" Bouwmontage Houtskeletbouw",
   "city_slug": "wierden",
   "siblings": [
    {
@@ -114864,7 +114625,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kleindorp-bauunternehmung-gmbh-co-kg-bbstaa": {
   "name": "Kleindorp Bauunternehmung GmbH+Co. KG",
@@ -115013,7 +114774,6 @@
   "website": "http://www.kliesjozefbouw.nl/",
   "tel": "0299315325",
   "tel_disp": "0299 315 325",
-  "name_alt": "Klies & Jozef Bouw B.V.",
   "city_slug": "edam",
   "siblings": [
    {
@@ -115049,7 +114809,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klieverik-deurningen-oddgka": {
   "name": "Klieverik Deurningen",
@@ -115188,7 +114948,6 @@
   "reviews": "2",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Klus%20%26%20Bouwbedrijf%20P.%20Kater&amp;query_place_id=ChIJ34YPtLlRyEcROwdUzhlZIhE",
   "website": "https://nlmaporia.top/details/klus-bouwbedrijf-p-kater-ChIJ34Y",
-  "name_alt": "Klus & Bouwbedrijf P. Kater",
   "city_slug": "drachten",
   "siblings": [
    {
@@ -115224,7 +114983,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klus-en-bouwservice-r-braken-fgnuli": {
   "name": "Klus- en Bouwservice R. Braken",
@@ -115411,7 +115170,6 @@
   "website": "http://www.vanveghelbouwenonderhoud.nl/",
   "tel": "0493320123",
   "tel_disp": "0493 320 123",
-  "name_alt": "Klus & Montagebedrijf Van Veghel",
   "city_slug": "deurne",
   "siblings": [
    {
@@ -115447,7 +115205,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klus-onderhoudsbedrijf-t-loont-osaxwe": {
   "name": "Klus+Onderhoudsbedrijf &#x27;t Loont",
@@ -115458,7 +115216,6 @@
   "website": "https://nlmapview.top/details/klusonderhoudsbedrijf-t-loont-ChIJJz6",
   "tel": "0651575132",
   "tel_disp": "06 51575132",
-  "name_alt": "Klus+Onderhoudsbedrijf 't Loont",
   "city_slug": "waalre",
   "siblings": [
    {
@@ -115494,7 +115251,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klus2b-ijrsd8": {
   "name": "Klus2b",
@@ -115547,7 +115304,6 @@
   "website": "http://klusbedrijfactie.nl/",
   "tel": "0626603764",
   "tel_disp": "06 26603764",
-  "name_alt": "Klusbedrijf \"Actie\"🛠",
   "city_slug": "mook",
   "siblings": [
    {
@@ -115580,7 +115336,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-almere-midevo-jqaujg": {
   "name": "Klusbedrijf Almere - Midevo",
@@ -116423,7 +116179,6 @@
   "website": "http://www.klusbedrijfvangrieken.nl/",
   "tel": "0457519968",
   "tel_disp": "045 751 9968",
-  "name_alt": "Klusbedrijf Van Grieken - Bouw & Isolatie",
   "city_slug": "landgraaf",
   "siblings": [
    {
@@ -116459,7 +116214,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-vianen-b-v-ztdf30": {
   "name": "Klusbedrijf Vianen B.V.",
@@ -116555,7 +116310,6 @@
   "website": "http://www.heboklus.nl/",
   "tel": "0524517633",
   "tel_disp": "0524 517 633",
-  "name_alt": "Klussen- & Montagebedrijf Henk Bos",
   "city_slug": "coevorden",
   "siblings": [
    {
@@ -116591,7 +116345,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klussenbedr-en-handelsond-p-van-kemenade-fbhdto": {
   "name": "Klussenbedr. en Handelsond. P. van Kemenade",
@@ -118769,7 +118523,6 @@
   "website": "http://www.kvdbouw.nl/",
   "tel": "0630723313",
   "tel_disp": "06 30723313",
-  "name_alt": "Koelewijn & Van Diermen Bouw",
   "city_slug": "bunschoten-spakenburg",
   "siblings": [
    {
@@ -118805,7 +118558,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/koenen-bouw-finvws": {
   "name": "Koenen Bouw",
@@ -119850,7 +119603,6 @@
   "website": "https://www.kramersbouwbedrijf.nl/",
   "tel": "0513433200",
   "tel_disp": "0513 433 200",
-  "name_alt": "Kramer's Bouwbedrijf Friesland B.V",
   "city_slug": "sint-nicolaasga",
   "siblings": [
    {
@@ -119861,7 +119613,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kramer-s-houtconstructies-b-v-vx5g9q": {
   "name": "Kramer&#x27;s Houtconstructies B.V.",
@@ -119872,7 +119624,6 @@
   "website": "http://www.kramershoutconstructies.nl/",
   "tel": "0513434444",
   "tel_disp": "0513 434 444",
-  "name_alt": "Kramer's Houtconstructies B.V.",
   "city_slug": "sint-nicolaasga",
   "siblings": [
    {
@@ -119883,7 +119634,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/krechting-westervoort-rnedr8": {
   "name": "Krechting Westervoort",
@@ -120121,7 +119872,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/kroes-aannemingsbedrijf-b-v-jsxni0": {
   "name": "Kroes Aannemingsbedrijf B.V.",
@@ -120178,7 +119929,6 @@
   "website": "http://www.kroondekoning.nl/",
   "tel": "0786121511",
   "tel_disp": "078 612 1511",
-  "name_alt": "Kroon & De Koning B.V.",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -120214,7 +119964,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ks-bouw-b-v-6sopgs": {
   "name": "KS Bouw B.V.",
@@ -120624,7 +120374,6 @@
   "website": "https://www.lenlbouw.nl/",
   "tel": "0653869294",
   "tel_disp": "06 53869294",
-  "name_alt": "L & L Bouw B.V.",
   "city_slug": "voerendaal",
   "siblings": [
    {
@@ -120660,7 +120409,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/l-post-en-zn-bv-aannemersbedrijf-6t_ufk": {
   "name": "L Post en Zn. BV Aannemersbedrijf",
@@ -120868,7 +120617,6 @@
   "website": "http://www.lamersbouwenrenovatie.nl/",
   "tel": "0655523321",
   "tel_disp": "06 55523321",
-  "name_alt": "Lamers Bouw & Renovatie",
   "city_slug": "mook",
   "siblings": [
    {
@@ -120901,7 +120649,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/lammers-zonen-bouwbedrijf-w-j-s_bjds": {
   "name": "Lammers &amp; Zonen Bouwbedrijf W J",
@@ -120911,7 +120659,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Lammers%20%26%20Zonen%20Bouwbedrijf%20W%20J&amp;query_place_id=ChIJg8KinavoxkcRkyy49s_bJds",
   "tel": "0653734947",
   "tel_disp": "06 53734947",
-  "name_alt": "Lammers & Zonen Bouwbedrijf W J",
   "city_slug": "sint-michielsgestel",
   "siblings": [
    {
@@ -120947,7 +120694,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/landal-hoog-vaals-omllfw": {
   "name": "Landal Hoog Vaals",
@@ -121346,7 +121093,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/ldl-bouw-b-v-ffgrpu": {
   "name": "LDL Bouw B.V.",
@@ -121763,7 +121510,7 @@
   "tel_disp": "0299 651 301",
   "city_slug": "monnickendam",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/leijgraafbouw-wsffpu": {
   "name": "LeijgraafBouw",
@@ -123122,7 +122869,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/loonbedrijf-pijnenburg-vgw7wm": {
   "name": "Loonbedrijf Pijnenburg",
@@ -123953,7 +123700,6 @@
   "website": "https://mktimmerenklussenbedrijf.nl/",
   "tel": "0652593522",
   "tel_disp": "06 52593522",
-  "name_alt": "M.K. Timmer & Klussenbedrijf",
   "city_slug": "steenwijk",
   "siblings": [
    {
@@ -123989,7 +123735,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/m-kaan-totaalbouw-b-v-cotmjm": {
   "name": "M KAAN Totaalbouw B.V.",
@@ -124134,7 +123880,6 @@
   "website": "https://holbusidetails.org/details/mp-bouw-restauratie-ChIJn9O",
   "tel": "0657552754",
   "tel_disp": "06 57552754",
-  "name_alt": "M.P. Bouw & Restauratie.",
   "city_slug": "doetinchem",
   "siblings": [
    {
@@ -124170,7 +123915,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/m-v-bouwgroep-b-v-b01vkg": {
   "name": "M.V. Bouwgroep B.V.",
@@ -124313,7 +124058,6 @@
   "website": "https://mzbouw.nl/",
   "tel": "0786990027",
   "tel_disp": "078 699 0027",
-  "name_alt": "M&Z Bouw",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -124349,7 +124093,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/m2-bouw-x73upy": {
   "name": "M2 Bouw",
@@ -124374,7 +124118,6 @@
   "website": "http://www.maalderinksmits.nl/",
   "tel": "0624277076",
   "tel_disp": "06 24277076",
-  "name_alt": "Maalderink & Smits bouw- en timmerbedrijf",
   "city_slug": "brummen",
   "siblings": [
    {
@@ -124410,7 +124153,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/maas-afbouw-2z5ssm": {
   "name": "Maas Afbouw",
@@ -125852,7 +125595,7 @@
   "tel_disp": "535 644 336",
   "city_slug": "wijlre",
   "contact_row": "v2",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/massa-bouw-bv-aannemer-venlo-qrtzgq": {
   "name": "Massa Bouw BV | Aannemer Venlo",
@@ -126696,7 +126439,6 @@
   "reviews": "40",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MD%20dak%26klusbedrijf&amp;query_place_id=ChIJU0r-YY7vxkcRWcy6nhTB02M",
   "website": "http://www.dakklusbedrijf.nl/",
-  "name_alt": "MD dak&klusbedrijf",
   "city_slug": "sint-michielsgestel",
   "siblings": [
    {
@@ -126732,7 +126474,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/mdi-bouw-gevelrenovatie-iioobu": {
   "name": "Mdi Bouw &amp; Gevelrenovatie",
@@ -126740,7 +126482,6 @@
   "rating_disp": "4,2",
   "reviews": "5",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Mdi%20Bouw%20%26%20Gevelrenovatie&amp;query_place_id=ChIJx2RBzfhmxkcRno-LQIiOOBU",
-  "name_alt": "Mdi Bouw & Gevelrenovatie",
   "city_slug": "houten",
   "siblings": [
    {
@@ -126831,7 +126572,6 @@
   "website": "https://www.medemabouwenadvies.nl/",
   "tel": "0625102651",
   "tel_disp": "06 25102651",
-  "name_alt": "Medema Bouw & Advies",
   "city_slug": "tinallinge",
   "contact_row": "default",
   "template": "v11"
@@ -127287,11 +127027,10 @@
   "website": "https://www.bouwmetmeijerink.nl/",
   "tel": "0650456715",
   "tel_disp": "06 50456715",
-  "name_alt": "Meijerink Bouw & Timmerbedrijf",
   "city_slug": "oldeholtpade",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/meijro-aannemingsbedrijf-k0inty": {
   "name": "Meijro Aannemingsbedrijf",
@@ -127838,7 +127577,6 @@
   "website": "https://metsbouw.nl/",
   "tel": "0629054661",
   "tel_disp": "06 29054661",
-  "name_alt": "Mets Bouw & Stukadoorsbedrijf",
   "city_slug": "voerendaal",
   "siblings": [
    {
@@ -127874,7 +127612,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/metsel-en-aannemersbedrijf-rooijmans-bzwmge": {
   "name": "Metsel- en Aannemersbedrijf Rooijmans",
@@ -128495,7 +128233,6 @@
   "website": "https://www.michelsmitonderhoud.nl/",
   "tel": "0611101600",
   "tel_disp": "06 11101600",
-  "name_alt": "Michel Smit Timmer & Onderhoudsbedrijf",
   "city_slug": "wassenaar",
   "siblings": [
    {
@@ -128531,7 +128268,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/michielse-bouwbedrijf-b-v-iptxy8": {
   "name": "Michielse Bouwbedrijf B.V.",
@@ -128949,7 +128686,6 @@
   "website": "http://www.mariokoken.nl/?q=contact",
   "tel": "0646444951",
   "tel_disp": "06 46444951",
-  "name_alt": "MK Bouwrenovatie & Tuinvisie",
   "city_slug": "heerlen",
   "siblings": [
    {
@@ -128985,7 +128721,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/mkrenovatie-jmmwsw": {
   "name": "mkrenovatie",
@@ -129117,7 +128853,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=MN%20Klus%20%26%20Bouw%20%E2%80%93%20Loodgieter%20%26%20Radiator%20Specialist&amp;query_place_id=ChIJdwCI4FvZxUcRZI00yFROnwQ",
   "tel": "0686440172",
   "tel_disp": "06 86440172",
-  "name_alt": "MN Klus & Bouw – Loodgieter & Radiator Specialist",
   "city_slug": "nieuwkoop",
   "siblings": [
    {
@@ -129153,7 +128888,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/mob-shell-moerdijk-c3h_ji": {
   "name": "MOB Shell Moerdijk",
@@ -129193,7 +128928,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/modernia-72k86q": {
   "name": "Modernia",
@@ -129291,7 +129026,6 @@
   "website": "http://www.moeskops.nl/",
   "tel": "0497551551",
   "tel_disp": "0497 551 551",
-  "name_alt": "Moeskops' Bouwbedrijf B.V.",
   "city_slug": "bergeijk",
   "siblings": [
    {
@@ -129307,7 +129041,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/mol-bouwspecialisten-jgc-40": {
   "name": "Mol Bouwspecialisten",
@@ -129409,7 +129143,6 @@
   "website": "https://www.wiltjer.nl/",
   "tel": "0651326844",
   "tel_disp": "06 51326844",
-  "name_alt": "Montage- & Klusbedrijf Wiltjer",
   "city_slug": "leek",
   "siblings": [
    {
@@ -129425,7 +129158,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/montage-meerssen-jm2guc": {
   "name": "Montage Meerssen",
@@ -130665,11 +130398,10 @@
   "website": "http://www.mzconstructions.nl/",
   "tel": "0475573661",
   "tel_disp": "0475 573 661",
-  "name_alt": "MZ Constructions & Design B.V.",
   "city_slug": "wessem",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/mzh-bouwbedrijf-w3nn0k": {
   "name": "MZH Bouwbedrijf",
@@ -131154,7 +130886,6 @@
   "website": "https://neelisendelange.nl/",
   "tel": "0651031368",
   "tel_disp": "06 51031368",
-  "name_alt": "Neelis & De Lange",
   "city_slug": "westervoort",
   "siblings": [
    {
@@ -131190,7 +130921,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/newbouw-bv-l2p1hg": {
   "name": "Newbouw BV",
@@ -132469,7 +132200,6 @@
   "website": "https://www.noutbouw.nl/",
   "tel": "0645408094",
   "tel_disp": "06 45408094",
-  "name_alt": "Nout Bouw & Onderhoud",
   "city_slug": "heeswijk-dinther",
   "siblings": [
    {
@@ -132495,7 +132225,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/novo-bouw-n3qxam": {
   "name": "Novo Bouw",
@@ -133008,7 +132738,7 @@
   "tel_disp": "06 83568580",
   "city_slug": "oostwold-gem-leek",
   "contact_row": "default",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/om-bouwgroep-b-v--uv7ty": {
   "name": "OM Bouwgroep B.V.",
@@ -133626,7 +133356,6 @@
   "website": "https://www.onpointgulpen.nl/",
   "tel": "0681861777",
   "tel_disp": "06 81861777",
-  "name_alt": "OnPoint Schilder & Tegelwerk",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -133662,7 +133391,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/onstenk-bouw-onderhoud-jdw_qe": {
   "name": "Onstenk Bouw &amp; Onderhoud",
@@ -133673,7 +133402,6 @@
   "website": "http://www.onstenkbouw.nl/",
   "tel": "0630420446",
   "tel_disp": "06 30420446",
-  "name_alt": "Onstenk Bouw & Onderhoud",
   "city_slug": "nijmegen",
   "siblings": [
    {
@@ -133709,7 +133437,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ontstoppen-sittard-geleen-riool-afvoer-wc-gootsteen-ojrnyc": {
   "name": "Ontstoppen Sittard-Geleen Riool, Afvoer, Wc &amp; Gootsteen",
@@ -133718,7 +133446,6 @@
   "website": "https://ontstoppen-sittard-geleen.nl/",
   "tel": "0850194932",
   "tel_disp": "085 019 4932",
-  "name_alt": "Ontstoppen Sittard-Geleen Riool, Afvoer, Wc & Gootsteen",
   "city_slug": "sittard",
   "siblings": [
    {
@@ -133753,7 +133480,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/ontwerp-aannemersbedrijf-schriek-bwopbk": {
   "name": "Ontwerp &amp; Aannemersbedrijf Schriek",
@@ -133764,7 +133491,6 @@
   "website": "http://ontwerp-aannemersbedrijfschriek.nl/",
   "tel": "0683864985",
   "tel_disp": "06 83864985",
-  "name_alt": "Ontwerp & Aannemersbedrijf Schriek",
   "city_slug": "eemnes",
   "siblings": [
    {
@@ -133800,7 +133526,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/onze-aannemer-b-v-os3zo8": {
   "name": "Onze Aannemer B.V.",
@@ -134069,7 +133795,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/optimum-bouw-en-aannemersbedrijf-2_p6xm": {
   "name": "Optimum Bouw- en Aannemersbedrijf",
@@ -134559,7 +134285,6 @@
   "website": "https://ottovantrappen.nl/",
   "tel": "0114321272",
   "tel_disp": "0114 321 272",
-  "name_alt": "Otto & Van Trappen Aannemersbedrijf",
   "city_slug": "sint-jansteen",
   "siblings": [
    {
@@ -134570,7 +134295,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/oud-hollands-bouwbedrijf-van-enk-ohb-kevfhm": {
   "name": "Oud Hollands Bouwbedrijf Van Enk (OHB)",
@@ -134773,7 +134498,6 @@
   "website": "http://www.frijnsbestratingen.nl/",
   "tel": "0434093698",
   "tel_disp": "043 409 3698",
-  "name_alt": "P. Frijns & ZN Bestratingen",
   "city_slug": "eijsden",
   "siblings": [
    {
@@ -134803,7 +134527,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/p-kerkhof-cjipoe": {
   "name": "P. Kerkhof",
@@ -134859,7 +134583,6 @@
   "website": "http://www.plvo.nl/",
   "tel": "0786819334",
   "tel_disp": "078 681 9334",
-  "name_alt": "P&L Aannemingsbedrijf",
   "city_slug": "hendrik-ido-ambacht",
   "siblings": [
    {
@@ -134895,7 +134618,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/p-m-den-hartog-timmerwerken-2_bx20": {
   "name": "P.M. den Hartog Timmerwerken",
@@ -134952,7 +134675,6 @@
   "website": "https://www.pm-timmerwerken.nl/",
   "tel": "0651356314",
   "tel_disp": "06 51356314",
-  "name_alt": "P&M Timmerwerken",
   "city_slug": "hellendoorn",
   "siblings": [
    {
@@ -134988,7 +134710,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/p-pool-aannemersbedrijf-irp1go": {
   "name": "P. Pool Aannemersbedrijf",
@@ -136104,7 +135826,6 @@
   "website": "http://www.piels.info/",
   "tel": "0246452043",
   "tel_disp": "024 645 2043",
-  "name_alt": "Piels groen & infra B.V.",
   "city_slug": "wijchen",
   "siblings": [
    {
@@ -136140,7 +135861,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/piet-putter-aannemersbedrijf-jlziqo": {
   "name": "Piet Putter Aannemersbedrijf",
@@ -137338,7 +137059,6 @@
   "website": "https://prepandfix.nl/",
   "tel": "0623566999",
   "tel_disp": "06 23566999",
-  "name_alt": "Prep&Fix Bouw en Verbouw",
   "city_slug": "s-gravenzande",
   "siblings": [
    {
@@ -137364,7 +137084,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/priems-bouw-b-v-jiy62o": {
   "name": "Priems bouw b.v.",
@@ -137580,7 +137300,6 @@
   "website": "http://www.pro-one.nl/",
   "tel": "0546200211",
   "tel_disp": "0546 200 211",
-  "name_alt": "Pro One Totaalbouw B.V. - Pro One Schilderwerk & Onderhoud B.V.- Pro-One Hoscon",
   "city_slug": "almelo",
   "siblings": [
    {
@@ -137616,7 +137335,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/probouw-leiden-e4adrg": {
   "name": "Probouw Leiden",
@@ -138285,7 +138004,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=R%26%20D%20Bouw&amp;query_place_id=ChIJXdvb5JQayEcR9q4vdkINor4",
   "tel": "0628527802",
   "tel_disp": "06 28527802",
-  "name_alt": "R& D Bouw",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -138321,7 +138039,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/r-de-vries-bouw-b-v-bpfway": {
   "name": "R. De Vries Bouw B.V.",
@@ -138392,7 +138110,6 @@
   "website": "http://www.rjweenk.nl/",
   "tel": "0573257849",
   "tel_disp": "0573 257 849",
-  "name_alt": "R.J. Weenk Timmer & Metselwerken",
   "city_slug": "lochem",
   "siblings": [
    {
@@ -138428,7 +138145,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/r-janssen-bouw-en-timmerwerken-y93yl8": {
   "name": "R. Janssen Bouw en Timmerwerken",
@@ -138478,7 +138195,6 @@
   "website": "http://www.123voegwerken.nl/",
   "tel": "0641045060",
   "tel_disp": "06 41045060",
-  "name_alt": "R & M Voegwerken voegers bedrijf",
   "city_slug": "cuijk",
   "siblings": [
    {
@@ -138514,7 +138230,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/r-r-schravendijk-_zuh0s": {
   "name": "R.R. Schravendijk",
@@ -138629,7 +138345,6 @@
   "website": "https://rvanbergen.nl/",
   "tel": "0615263174",
   "tel_disp": "06 15263174",
-  "name_alt": "R van Bergen Bouw -& Timmerwerken",
   "city_slug": "nuland",
   "siblings": [
    {
@@ -138639,7 +138354,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/r-wijnands-bouwbedrijf-hk483e": {
   "name": "R. Wijnands Bouwbedrijf",
@@ -138979,7 +138694,6 @@
   "website": "https://www.bouweninstallaties.nl/",
   "tel": "0180880440",
   "tel_disp": "0180 880 440",
-  "name_alt": "RB Bouw & Installaties B.V.",
   "city_slug": "barendrecht",
   "siblings": [
    {
@@ -139015,7 +138729,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rb-timmer-en-bouwbedrijf-1f6cbq": {
   "name": "RB Timmer- en Bouwbedrijf",
@@ -139145,7 +138859,6 @@
   "website": "https://www.realvast.nl/",
   "tel": "0792340560",
   "tel_disp": "079 234 0560",
-  "name_alt": "RealVast - Aannemersbedrijf & Vastgoed ontwikkeling",
   "city_slug": "zoetermeer",
   "siblings": [
    {
@@ -139181,7 +138894,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/reba-aannemers-iyhits": {
   "name": "ReBa Aannemers",
@@ -139570,7 +139283,6 @@
   "website": "https://www.reinas-bv.nl/",
   "tel": "0612246431",
   "tel_disp": "06 12246431",
-  "name_alt": "Reina's B.V",
   "city_slug": "echt",
   "siblings": [
    {
@@ -139606,7 +139318,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/reinbouw-bouw-en-ontwikkeling-renovatie-transformatie-onderhoud-koffii": {
   "name": "Reinbouw | Bouw en Ontwikkeling | Renovatie | Transformatie | Onderhoud",
@@ -140620,7 +140332,6 @@
   "website": "http://www.reuversbouw.nl/",
   "tel": "0412630100",
   "tel_disp": "0412 630 100",
-  "name_alt": "Reuvers Ontwikkeling & Bouw",
   "city_slug": "oss",
   "siblings": [
    {
@@ -140656,7 +140367,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/reva-s-aannemersbedrijf-ujpxbe": {
   "name": "Reva&#x27;s Aannemersbedrijf",
@@ -140667,7 +140378,6 @@
   "website": "https://nlcompanies.org/details/revas-aannemersbedrijf-ChIJw27",
   "tel": "0645597914",
   "tel_disp": "06 45597914",
-  "name_alt": "Reva's Aannemersbedrijf",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -140703,7 +140413,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rfp-bouwservice-gbwmow": {
   "name": "RFP Bouwservice",
@@ -140944,7 +140654,6 @@
   "website": "https://www.ricobouwenrenovatie.nl/",
   "tel": "0624540294",
   "tel_disp": "06 24540294",
-  "name_alt": "Rico Bouw & Renovatie",
   "city_slug": "bunde",
   "siblings": [
    {
@@ -140960,7 +140669,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/riebo-bouw-onderhoud-5ai-hi": {
   "name": "Riebo bouw &amp; onderhoud",
@@ -140971,7 +140680,6 @@
   "website": "http://www.riebo.nl/",
   "tel": "0616472928",
   "tel_disp": "06 16472928",
-  "name_alt": "Riebo bouw & onderhoud",
   "city_slug": "wierden",
   "siblings": [
    {
@@ -141007,7 +140715,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rien-verhoeve-bouw-timmerbedrijf-k8cqdm": {
   "name": "Rien Verhoeve Bouw &amp; Timmerbedrijf",
@@ -141018,7 +140726,6 @@
   "website": "http://rienverhoeve.nl/",
   "tel": "0652451134",
   "tel_disp": "06 52451134",
-  "name_alt": "Rien Verhoeve Bouw & Timmerbedrijf",
   "city_slug": "s-gravenzande",
   "siblings": [
    {
@@ -141044,7 +140751,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rijk-groep-lv4jxa": {
   "name": "Rijk Groep",
@@ -141251,7 +140958,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Rijwiel%20reparatie%20%22De%20Geul%22&amp;query_place_id=ChIJ35166tXBwEcR_VTm33Wsfxk",
   "tel": "0436040607",
   "tel_disp": "043 604 0607",
-  "name_alt": "Rijwiel reparatie \"De Geul\"",
   "city_slug": "valkenburg",
   "siblings": [
    {
@@ -141287,7 +140993,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rioolrenovatie-nl-riool-kapot-riool-vervangen-riool-renoveren-gresbuis-vervangen-uz8cb8": {
   "name": "Rioolrenovatie.nl - Riool kapot? Riool vervangen, Riool renoveren, Gresbuis vervangen",
@@ -141404,7 +141110,6 @@
   "website": "https://rjbouw.nl/",
   "tel": "0403038476",
   "tel_disp": "040 303 8476",
-  "name_alt": "RJ Solvo Bouw & Management",
   "city_slug": "eindhoven",
   "siblings": [
    {
@@ -141440,14 +141145,13 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rjs-totaalbouw-renovatie-1dbegy": {
   "name": "RJS totaalbouw &amp; renovatie",
   "city": "Alblasserdam",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RJS%20totaalbouw%20%26%20renovatie&amp;query_place_id=ChIJlWBfpyYrxEcRSXvvd1dBeGY",
   "website": "https://www.rjstotaalbouw.nl/",
-  "name_alt": "RJS totaalbouw & renovatie",
   "city_slug": "alblasserdam",
   "siblings": [
    {
@@ -141482,7 +141186,7 @@
    }
   ],
   "contact_row": "v3",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/rkb-bouwservice-bv-cmk_64": {
   "name": "RKB Bouwservice BV",
@@ -142320,7 +142024,6 @@
   "website": "https://ronsallroundservice.nl/",
   "tel": "0652313251",
   "tel_disp": "06 52313251",
-  "name_alt": "Ron's All-Round Service",
   "city_slug": "schinveld",
   "siblings": [
    {
@@ -142341,7 +142044,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rona-bouw-en-onderhoud-zqgd24": {
   "name": "RONA Bouw en Onderhoud",
@@ -142536,7 +142239,6 @@
   "website": "https://www.aannemersbedrijfroos.nl/",
   "tel": "0642209770",
   "tel_disp": "06 42209770",
-  "name_alt": "Roos Timmer- & Onderhoudsbedrijf L A",
   "city_slug": "gouda",
   "siblings": [
    {
@@ -142572,7 +142274,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/roosdom-tijhuis-tom9qy": {
   "name": "Roosdom Tijhuis",
@@ -142721,7 +142423,6 @@
   "website": "http://www.rottinghuis.nl/",
   "tel": "0503185333",
   "tel_disp": "050 318 5333",
-  "name_alt": "Rottinghuis' Aannemingsbedrijf bv",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -142757,7 +142458,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rouwenhorst-bouw-t5nxay": {
   "name": "Rouwenhorst Bouw",
@@ -143159,7 +142860,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/rs-aannemersbedrijf-t0ippy": {
   "name": "RS aannemersbedrijf",
@@ -143541,7 +143242,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/rumat-bouw-b-v-uiftq4": {
   "name": "Rumat Bouw B.V.",
@@ -143596,7 +143297,6 @@
   "reviews": "105",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RVK%20timmer%20%26%20bouwbedrijf%20B.V.&amp;query_place_id=ChIJV2ODmEfVxUcRcq3TR2ivsFw",
   "website": "http://www.rvktimmer.nl/",
-  "name_alt": "RVK timmer & bouwbedrijf B.V.",
   "city_slug": "gouda",
   "siblings": [
    {
@@ -143632,7 +143332,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rz-nd-bouw-realisatie-ieocaa": {
   "name": "RZ&amp;ND Bouw &amp; Realisatie",
@@ -143641,7 +143341,6 @@
   "reviews": "1",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RZ%26ND%20Bouw%20%26%20Realisatie&amp;query_place_id=ChIJ__-_rlrDxUcR50YoMieocaA",
   "website": "https://razendbouw.nl/",
-  "name_alt": "RZ&ND Bouw & Realisatie",
   "city_slug": "roelofarendsveen",
   "siblings": [
    {
@@ -143677,7 +143376,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rztotaalbouw-kyki-i": {
   "name": "RZtotaalbouw",
@@ -143763,7 +143462,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/s-n-h-bouw-aannemersbedrijf-sgm7wc": {
   "name": "S.N.H. Bouw Aannemersbedrijf",
@@ -143850,7 +143549,6 @@
   "website": "https://www.sr-bouweninstallatie.nl/",
   "tel": "0616071376",
   "tel_disp": "06 16071376",
-  "name_alt": "S&R Bouw en Installatie",
   "city_slug": "oosterhout",
   "siblings": [
    {
@@ -143886,7 +143584,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/s-van-dommelen-bestrating-gentfm": {
   "name": "S. Van Dommelen Bestrating",
@@ -143929,7 +143627,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/saboro-bouwadvies-aaaqlo": {
   "name": "Saboro Bouwadvies",
@@ -144441,7 +144139,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/scheidingswandenbedrijf-j-m-tocino-tua110": {
   "name": "Scheidingswandenbedrijf J.M. Tocino",
@@ -145071,7 +144769,6 @@
   "website": "http://www.bouwbedrijfschoonewille.nl/",
   "tel": "0528236455",
   "tel_disp": "0528 236 455",
-  "name_alt": "Schoonewille Bouw & Restauratie",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -145107,7 +144804,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/schoots-totaalbouw-b-v-lh4xqy": {
   "name": "Schoots TotaalBouw B.V.",
@@ -145132,7 +144829,6 @@
   "website": "https://www.schottert.com/",
   "tel": "0524592929",
   "tel_disp": "0524 592 929",
-  "name_alt": "Schottert Bouw & Industrie Coevorden",
   "city_slug": "coevorden",
   "siblings": [
    {
@@ -145168,7 +144864,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/schout-bouw-b-v-qp4rj4": {
   "name": "Schout Bouw B.V.",
@@ -145333,7 +145029,6 @@
   "website": "https://www.schuttebouw.nl/",
   "tel": "0384274767",
   "tel_disp": "038 427 4767",
-  "name_alt": "Schutte bouw & ontwikkeling",
   "city_slug": "zwolle",
   "siblings": [
    {
@@ -145369,7 +145064,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/schuttingbouw-moerdijk-b-v-dcdasg": {
   "name": "Schuttingbouw Moerdijk B.V.",
@@ -145623,11 +145318,10 @@
   "website": "http://www.seerdenbouw.nl/",
   "tel": "0622515535",
   "tel_disp": "06 22515535",
-  "name_alt": "Seerden Bouw & Advies",
   "city_slug": "swalmen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/sefer-aannemersbedrijf-sjukn4": {
   "name": "Sefer Aannemersbedrijf",
@@ -146973,7 +146667,6 @@
   "website": "https://www.smalebouw.nl/",
   "tel": "0628465265",
   "tel_disp": "06 28465265",
-  "name_alt": "Smale Bouw & Timmerwerken",
   "city_slug": "deventer",
   "siblings": [
    {
@@ -147009,7 +146702,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/smallenbroek-bouw-bv-zo3dws": {
   "name": "Smallenbroek Bouw bv",
@@ -147187,7 +146880,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Smits%27%20Co.&amp;query_place_id=ChIJMVlDwaKiwEcRAasLQMmrzr0",
   "tel": "0455461056",
   "tel_disp": "045 546 1056",
-  "name_alt": "Smits' Co.",
   "city_slug": "kerkrade",
   "siblings": [
    {
@@ -147223,7 +146915,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/snellen-bouw-en-montage-yowm9u": {
   "name": "Snellen Bouw en Montage",
@@ -147326,7 +147018,6 @@
   "website": "https://snitselaar.nl/",
   "tel": "0342400170",
   "tel_disp": "0342 400 170",
-  "name_alt": "Snitselaar's Bouwbedrijf Barneveld B.V.",
   "city_slug": "barneveld",
   "siblings": [
    {
@@ -147362,7 +147053,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/snoeijen-elektrowerken-oance0": {
   "name": "Snoeijen Elektrowerken",
@@ -147505,7 +147196,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/spacht-v-o-f-z5flfg": {
   "name": "Spacht V.o.f.",
@@ -148375,7 +148066,6 @@
   "website": "https://www.steijlenbouwenafbouw.nl/",
   "tel": "0492234222",
   "tel_disp": "0492 234 222",
-  "name_alt": "Steijlen Bouw & Afbouw BV",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -148411,7 +148101,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/stema-bouwbedrijf-cet4vc": {
   "name": "Stema Bouwbedrijf",
@@ -148593,7 +148283,6 @@
   "website": "https://www.sterkensamenbouw.nl/",
   "tel": "0103031228",
   "tel_disp": "010 303 1228",
-  "name_alt": "Sterk & Samen Bouw B.V.",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -148628,7 +148317,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/stermon-timmer-en-aannemingsbedrijf-b-v-yv6nae": {
   "name": "Stermon timmer en aannemingsbedrijf B.V.",
@@ -149052,7 +148741,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/stinor-b-v-fvo7hs": {
   "name": "Stinor B.V.",
@@ -149325,7 +149014,6 @@
   "website": "http://www.straver-zn.nl/",
   "tel": "0306062004",
   "tel_disp": "030 606 2004",
-  "name_alt": "Straver & Zn. B.V.",
   "city_slug": "ijsselstein",
   "siblings": [
    {
@@ -149361,7 +149049,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/structure-bouwbedrijf-b-v-vyxilu": {
   "name": "STRUCTURE Bouwbedrijf B.V.",
@@ -149840,7 +149528,6 @@
   "website": "http://www.svmbouw.nl/",
   "tel": "0638908753",
   "tel_disp": "06 38908753",
-  "name_alt": "SVM bouw & renovatie",
   "city_slug": "kampen",
   "siblings": [
    {
@@ -149876,7 +149563,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/svn-totaal-bouw-mb8dzy": {
   "name": "SVN Totaal bouw",
@@ -150025,7 +149712,6 @@
   "website": "https://swartonderhoud.nl/",
   "tel": "0615249909",
   "tel_disp": "06 15249909",
-  "name_alt": "Swart Timmerwerk & Onderhoud - Nigel Swart",
   "city_slug": "blaricum",
   "siblings": [
    {
@@ -150061,7 +149747,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/swiebel-bouwservice-b-v-aannemersbedrijf-ds9m6k": {
   "name": "Swiebel Bouwservice B.V. - Aannemersbedrijf",
@@ -150267,7 +149953,6 @@
   "website": "https://tetotaalbouw.nl/",
   "tel": "0684798640",
   "tel_disp": "06 84798640",
-  "name_alt": "T&E Totaalbouw",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -150303,7 +149988,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/t-hartemink-bouwservice-en-onderhoud-2e4iag": {
   "name": "T. Hartemink Bouwservice en Onderhoud",
@@ -150485,7 +150170,6 @@
   "reviews": "51",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=T%26Z%20Bouwbedrijf%20B.V&amp;query_place_id=ChIJ234UQOeXx0cRy1Z7kP3kzQE",
   "website": "http://www.tzbouwbedrijf.nl/",
-  "name_alt": "T&Z Bouwbedrijf B.V",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -150521,7 +150205,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/talsma-en-zn-bv-bouwbedrijf-h-j-x7u2vu": {
   "name": "Talsma en Zn BV Bouwbedrijf H J",
@@ -150578,7 +150262,6 @@
   "website": "http://www.tandemvormgeving.nl/",
   "tel": "0596573101",
   "tel_disp": "0596 573 101",
-  "name_alt": "Tandem Vormgeving & Bouwadvies BV",
   "city_slug": "loppersum",
   "siblings": [
    {
@@ -150609,7 +150292,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tanis-goeree-bouw-bv-oegdgs": {
   "name": "Tanis Goeree Bouw BV",
@@ -151955,7 +151638,6 @@
   "website": "http://www.thuisinbouwen.nl/",
   "tel": "0355255788",
   "tel_disp": "035 525 5788",
-  "name_alt": "ThuisinBouwen – Bouwbedrijf Drent & Welling BV",
   "city_slug": "blaricum",
   "siblings": [
    {
@@ -151991,7 +151673,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/thuisinbouwen-bouwbedrijf-hmu-olsthoorn-bv-igjc7o": {
   "name": "ThuisinBouwen – Bouwbedrijf HMU &amp; Olsthoorn BV",
@@ -152002,7 +151684,6 @@
   "website": "http://www.thuisinbouwen.nl/",
   "tel": "0174624796",
   "tel_disp": "0174 624 796",
-  "name_alt": "ThuisinBouwen – Bouwbedrijf HMU & Olsthoorn BV",
   "city_slug": "de-lier",
   "siblings": [
    {
@@ -152023,7 +151704,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/thunnissen-groep-kgqsqs": {
   "name": "Thunnissen Groep",
@@ -152611,7 +152292,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/timmer-en-aannemersbedrijf-harleman-bfhlbk": {
   "name": "Timmer- en Aannemersbedrijf Harleman",
@@ -153393,7 +153074,6 @@
   "website": "https://www.wbrock.nl/",
   "tel": "0575541651",
   "tel_disp": "0575 541 651",
-  "name_alt": "Timmer- en bouwbedrijf W. Brock & Zn.",
   "city_slug": "zutphen",
   "siblings": [
    {
@@ -153429,7 +153109,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/timmer-en-klusbedrijf-van-luik-cnnima": {
   "name": "Timmer- en klusbedrijf Van Luik",
@@ -153890,7 +153570,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Timmer%20%26%20Onderhoudsbedrijf%20R.%20van%20Wensveen&amp;query_place_id=ChIJGTPimlnSxUcRmGaR6qs36BU",
   "tel": "0180313176",
   "tel_disp": "0180 313 176",
-  "name_alt": "Timmer & Onderhoudsbedrijf R. van Wensveen",
   "city_slug": "nieuwerkerk-aan-den-ijssel",
   "siblings": [
    {
@@ -153906,7 +153585,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/timmer-onderhoudsbedrijf-wim-woudstra-gtkmf4": {
   "name": "Timmer/Onderhoudsbedrijf Wim Woudstra",
@@ -154552,7 +154231,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/timmers-bouw-b-v-dqxuzs": {
   "name": "Timmers Bouw B.V.",
@@ -154577,7 +154256,6 @@
   "website": "https://timmers-ec.nl/",
   "tel": "0853036180",
   "tel_disp": "085 303 6180",
-  "name_alt": "Timmers Engineering & Consultancy B.V.",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -154613,7 +154291,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/timmerwerken-van-der-male-qcpimo": {
   "name": "Timmerwerken van der Male",
@@ -154714,7 +154392,6 @@
   "website": "https://www.tisaco.nl/",
   "tel": "0455242330",
   "tel_disp": "045 524 2330",
-  "name_alt": "Tisaco Bouwen & Wonen",
   "city_slug": "nuth",
   "siblings": [
    {
@@ -154749,7 +154426,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/tj-bouwbedrijf-yno1oi": {
   "name": "TJ bouwbedrijf",
@@ -154897,7 +154574,6 @@
   "website": "https://tobrescheilen.nl/",
   "tel": "0457111690",
   "tel_disp": "045 711 1690",
-  "name_alt": "Tobre & Scheilen Aannemersbedrijf",
   "city_slug": "hoensbroek",
   "siblings": [
    {
@@ -154933,7 +154609,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ton-v-d-leest-bouwservice-7uvr64": {
   "name": "Ton v.d. Leest Bouwservice",
@@ -155724,7 +155400,6 @@
   "website": "https://traasenovaa.nl/",
   "tel": "0113612322",
   "tel_disp": "0113 612 322",
-  "name_alt": "Traas & Ovaa",
   "city_slug": "heinkenszand",
   "siblings": [
    {
@@ -155735,7 +155410,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tre-houtbouw-9csxgg": {
   "name": "TRE Houtbouw",
@@ -155927,7 +155602,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/trienekens-bouwbedrijf-cf5g3e": {
   "name": "Trienekens Bouwbedrijf",
@@ -156076,11 +155751,10 @@
   "website": "http://www.trust-bouw.nl/",
   "tel": "0618695255",
   "tel_disp": "06 18695255",
-  "name_alt": "Trust Bouw & Renovatie",
   "city_slug": "honselersdijk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/tsa-bouwbedrijf-z1qhqi": {
   "name": "TSA Bouwbedrijf",
@@ -156168,7 +155842,7 @@
   "tel_disp": "0595 401 032",
   "city_slug": "kloosterburen",
   "contact_row": "v2",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/tvd-montage-bv-mjs3om": {
   "name": "tvd montage bv",
@@ -156779,7 +156453,6 @@
   "website": "http://timmerbedrijfboerma.nl/",
   "tel": "0613084530",
   "tel_disp": "06 13084530",
-  "name_alt": "V.O.F. Boerma & Zn. Timmer & Aannemersbedrijf",
   "city_slug": "farmsum",
   "siblings": [
    {
@@ -156800,7 +156473,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/v-o-f-bouwbedrijf-kees-pouw-gmyqxo": {
   "name": "V.O.F. Bouwbedrijf Kees Pouw",
@@ -156959,7 +156632,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=V.O.F.%20Tinus%20Remmers%20%26%20Zn.&amp;query_place_id=ChIJgWiTfkqUwEcRwvmRJWahMA0",
   "tel": "0434501098",
   "tel_disp": "043 450 1098",
-  "name_alt": "V.O.F. Tinus Remmers & Zn.",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -156994,14 +156666,13 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/v-w-bouw-9hvw1g": {
   "name": "V &amp; W Bouw",
   "city": "Borne",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=V%20%26%20W%20Bouw&amp;query_place_id=ChIJs6ti3rIPuEcRvySeC9hvW1g",
   "website": "http://www.venw-bouw.nl/",
-  "name_alt": "V & W Bouw",
   "city_slug": "borne",
   "siblings": [
    {
@@ -157036,7 +156707,7 @@
    }
   ],
   "contact_row": "v3",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/vaessen-algemeen-bouwbedrijf-bv-cxh8na": {
   "name": "Vaessen Algemeen Bouwbedrijf BV",
@@ -157191,7 +156862,6 @@
   "website": "http://www.vanaarlesbouw.nl/",
   "tel": "0413291921",
   "tel_disp": "0413 291 921",
-  "name_alt": "Van Aarle's Bouwbedrijf B.V.",
   "city_slug": "heeswijk-dinther",
   "siblings": [
    {
@@ -157217,7 +156887,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-aerdenhout-bouw-bv-akpzqc": {
   "name": "Van Aerdenhout Bouw Bv",
@@ -157295,7 +156965,6 @@
   "website": "https://www.van-amerongen-bouw.nl/",
   "tel": "0641349350",
   "tel_disp": "06 41349350",
-  "name_alt": "Van Amerongen Bouw & Timmerwerken",
   "city_slug": "rhenen",
   "siblings": [
    {
@@ -157331,7 +157000,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-appeldoorn-bouw-bouwbedrijf-veenendaal-t-sbys": {
   "name": "Van Appeldoorn Bouw | Bouwbedrijf Veenendaal",
@@ -157460,7 +157129,6 @@
   "website": "http://vanbeersbouw.nl/?pid=2",
   "tel": "0620004308",
   "tel_disp": "06 20004308",
-  "name_alt": "Van Beers Bouw & Metselwerken Roosendaal",
   "city_slug": "roosendaal",
   "siblings": [
    {
@@ -157496,7 +157164,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-benthem-s-aannemingsbedrijf-b-v-deurningen-oldenzaal-jhcmhk": {
   "name": "van Benthem&#x27;s Aannemingsbedrijf B.V. Deurningen - Oldenzaal",
@@ -157505,7 +157173,6 @@
   "reviews": "9",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=van%20Benthem%27s%20Aannemingsbedrijf%20B.V.%20Deurningen%20-%20Oldenzaal&amp;query_place_id=ChIJ2WdMrdoQuEcRGnka5JHcMHk",
   "website": "http://www.vanbenthems.nl/",
-  "name_alt": "van Benthem's Aannemingsbedrijf B.V. Deurningen - Oldenzaal",
   "city_slug": "deurningen",
   "siblings": [
    {
@@ -157521,7 +157188,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-bergen-betonbouw-b-v-o46h8a": {
   "name": "Van Bergen Betonbouw B.V.",
@@ -157582,7 +157249,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/van-bergen-bouw-u3gud4": {
   "name": "Van Bergen Bouw",
@@ -157677,7 +157344,6 @@
   "website": "http://www.vanboekel.com/",
   "tel": "0486459000",
   "tel_disp": "0486 459 000",
-  "name_alt": "Van Boekel Bouw & Infra B.V.",
   "city_slug": "uden",
   "siblings": [
    {
@@ -157703,7 +157369,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-bragt-bouw-en-aannem-bedr-b-v-qn0cci": {
   "name": "Van Bragt Bouw- en Aannem.bedr. B.V.",
@@ -158209,7 +157875,6 @@
   "website": "http://www.vandebrakebouw.nl/",
   "tel": "0613669998",
   "tel_disp": "06 13669998",
-  "name_alt": "Van de Brake Bouw & Onderhoud",
   "city_slug": "nunspeet",
   "siblings": [
    {
@@ -158245,7 +157910,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-de-brug-totaalbouw-97o9ai": {
   "name": "Van de Brug Totaalbouw",
@@ -159170,7 +158835,7 @@
   "tel_disp": "06 57319498",
   "city_slug": "woudrichem",
   "contact_row": "v2",
-  "template": "v9"
+  "template": "v11"
  },
  "bedrijf/van-den-hogen-bouwbedrijven-b-v-wsanco": {
   "name": "Van den Hogen Bouwbedrijven B.V.",
@@ -159524,7 +159189,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/van-der-heijden-bouw-en-ontwikkeling-schaijk-zcbb4w": {
   "name": "Van der Heijden bouw en ontwikkeling Schaijk",
@@ -159824,7 +159489,6 @@
   "website": "https://vanderlindebouw.nl/",
   "tel": "0614590470",
   "tel_disp": "06 14590470",
-  "name_alt": "Van der Linde Bouw & Kozijnen",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -159860,7 +159524,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-der-linden-bouw-en-timmerwerken-ev3eik": {
   "name": "Van der Linden bouw en timmerwerken",
@@ -160609,7 +160273,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/van-diermen-bouw-en-onderhoud-8jpdsu": {
   "name": "Van Diermen Bouw en Onderhoud",
@@ -160666,7 +160330,6 @@
   "website": "http://www.vandijk-bv.nl/",
   "tel": "0343457051",
   "tel_disp": "0343 457 051",
-  "name_alt": "VAN DIJK Bouw & Civiel BV",
   "city_slug": "amerongen",
   "siblings": [
    {
@@ -160682,7 +160345,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-dijk-lijmwerken-giessenburg-b-v-llar2m": {
   "name": "Van Dijk Lijmwerken Giessenburg B.V.",
@@ -160872,7 +160535,6 @@
   "reviews": "2",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Driel%20Bouw%20%26%20Installatie%20B.V.&amp;query_place_id=ChIJfZAEuKxixkcRvYU00kEFksM",
   "website": "https://www.bouwmetvandriel.nl/",
-  "name_alt": "Van Driel Bouw & Installatie B.V.",
   "city_slug": "papendrecht",
   "siblings": [
    {
@@ -160908,7 +160570,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-ee-bouw-en-timmerwerken-eic-t8": {
   "name": "Van Ee Bouw en Timmerwerken",
@@ -161469,11 +161131,10 @@
   "website": "https://vanheurkelpen.nl/",
   "tel": "0495651225",
   "tel_disp": "0495 651 225",
-  "name_alt": "Van Heur Bouw & Onderhoud - Kelpen-Oler",
   "city_slug": "kelpen-oler",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/van-hoek-bouw-b-v-am8gpw": {
   "name": "Van Hoek Bouw B.V.",
@@ -161805,7 +161466,6 @@
   "website": "https://vankoppenbouw.nl/",
   "tel": "0187682091",
   "tel_disp": "0187 682 091",
-  "name_alt": "Van Koppen - Aannemings- & Bouwbedrijf",
   "city_slug": "ouddorp",
   "siblings": [
    {
@@ -161816,7 +161476,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-laanen-zn-aannemersbedrijf-sxjndy": {
   "name": "Van laanen &amp; Zn Aannemersbedrijf",
@@ -161827,7 +161487,6 @@
   "website": "http://www.vanlaanen-dhz.nl/over-ons/",
   "tel": "0495631785",
   "tel_disp": "0495 631 785",
-  "name_alt": "Van laanen & Zn Aannemersbedrijf",
   "city_slug": "ospel",
   "siblings": [
    {
@@ -161838,7 +161497,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-lankveld-boekel-v-o-f-tmae7m": {
   "name": "Van Lankveld Boekel V.O.F.",
@@ -161894,7 +161553,6 @@
   "website": "http://www.vanlankveld-gww.nl/",
   "tel": "0485451037",
   "tel_disp": "0485 451 037",
-  "name_alt": "van Lankveld Grond, Weg & Waterbouw B.V.",
   "city_slug": "mill",
   "siblings": [
    {
@@ -161930,7 +161588,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-leeuwen-bouw-achterhoek-oaanyq": {
   "name": "Van Leeuwen Bouw Achterhoek",
@@ -162018,7 +161676,6 @@
   "website": "http://www.vanleeuwensbouwbedrijf.nl/",
   "tel": "0206413940",
   "tel_disp": "020 641 3940",
-  "name_alt": "Van Leeuwen's bouwbedrijf B.V.",
   "city_slug": "amstelveen",
   "siblings": [
    {
@@ -162054,7 +161711,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-lith-bouw-1hlwnc": {
   "name": "Van Lith Bouw",
@@ -162452,7 +162109,6 @@
   "website": "http://vanoortbouwenonderhoud.nl/",
   "tel": "0412795328",
   "tel_disp": "0412 795 328",
-  "name_alt": "Van Oort Bouw & Onderhoud B.V.",
   "city_slug": "berghem",
   "siblings": [
    {
@@ -162468,7 +162124,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-oosterhout-bouw-en-dienstverlening-v8iml8": {
   "name": "Van Oosterhout bouw en dienstverlening",
@@ -162502,7 +162158,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/van-oosterom-bouw-rgmz8w": {
   "name": "Van Oosterom Bouw",
@@ -162665,7 +162321,6 @@
   "website": "http://qualitabadkamers.nl/",
   "tel": "0650736485",
   "tel_disp": "06 50736485",
-  "name_alt": "van Pol Bouw & Onderhoud",
   "city_slug": "brunssum",
   "siblings": [
    {
@@ -162701,7 +162356,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-putten-bouw-hynnxm": {
   "name": "Van Putten Bouw",
@@ -162896,7 +162551,6 @@
   "website": "https://www.van-rennes.nl/",
   "tel": "0317422066",
   "tel_disp": "0317 422 066",
-  "name_alt": "Van Rennes Bouw & Schilderwerken",
   "city_slug": "heteren",
   "siblings": [
    {
@@ -162907,7 +162561,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-rhijn-bouw-v2pvgq": {
   "name": "Van Rhijn Bouw",
@@ -163270,7 +162924,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Schaik%20%E2%80%93%20Kleinbouw%20%26%20Onderhoud&amp;query_place_id=ChIJdTP6rHzqx0cRyWNgGqzNqZ0",
   "tel": "0648483924",
   "tel_disp": "06 48483924",
-  "name_alt": "Van Schaik – Kleinbouw & Onderhoud",
   "city_slug": "deventer",
   "siblings": [
    {
@@ -163306,7 +162959,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-soolingen-bouw-dshg5m": {
   "name": "Van Soolingen Bouw",
@@ -163628,7 +163281,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Vliet%20Bouw%20%26%20afbouw&amp;query_place_id=ChIJZ8bsDRv7x0cRS0K4BTFNeDA",
   "tel": "0644503194",
   "tel_disp": "06 44503194",
-  "name_alt": "Van Vliet Bouw & afbouw",
   "city_slug": "hellendoorn",
   "siblings": [
    {
@@ -163664,7 +163316,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-vliet-bouw-b-v-mnohwm": {
   "name": "Van Vliet Bouw B.V.",
@@ -163951,7 +163603,6 @@
   "website": "http://www.vanweeghel-interieur.nl/",
   "tel": "0653384897",
   "tel_disp": "06 53384897",
-  "name_alt": "Van Weeghel Interieur & Afbouw.",
   "city_slug": "meppel",
   "siblings": [
    {
@@ -163987,7 +163638,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-weenen-bouwbedrijf-8rjb_m": {
   "name": "Van Weenen Bouwbedrijf",
@@ -164780,7 +164431,6 @@
   "reviews": "40",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vasco%27s%20Vakwerk%20B.V.&amp;query_place_id=ChIJ4caB8j9jO4YRibH4-NLd8g8",
   "website": "https://www.v-vakwerk.nl/",
-  "name_alt": "Vasco's Vakwerk B.V.",
   "city_slug": "leiden",
   "siblings": [
    {
@@ -164816,7 +164466,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/vastadis-ayofpk": {
   "name": "Vastadis",
@@ -165365,7 +165015,6 @@
   "website": "https://www.vdnbouwenverbouw.nl/",
   "tel": "0640545063",
   "tel_disp": "06 40545063",
-  "name_alt": "VDN Bouw & Verbouw",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -165400,7 +165049,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v8"
+  "template": "v4"
  },
  "bedrijf/vdn-bouw-verbouw-tdaefq": {
   "name": "VDN Bouw &amp; Verbouw",
@@ -165411,7 +165060,6 @@
   "website": "https://www.vdnbouwenverbouw.nl/",
   "tel": "0640545063",
   "tel_disp": "06 40545063",
-  "name_alt": "VDN Bouw & Verbouw",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -165447,7 +165095,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/vdr-bouwgroep-bv-2uxtdk": {
   "name": "VDR Bouwgroep BV",
@@ -165549,7 +165197,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Veenstra%20Bouw%20%26%20Advies&amp;query_place_id=ChIJ5avm6xWkyEcRMDzKbwX3obE",
   "tel": "0654263350",
   "tel_disp": "06 54263350",
-  "name_alt": "Veenstra Bouw & Advies",
   "city_slug": "grootebroek",
   "siblings": [
    {
@@ -165579,7 +165226,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/veldhuisbouw-nl-sdvx-a": {
   "name": "Veldhuisbouw.nl",
@@ -165820,7 +165467,6 @@
   "website": "https://www.veneklaasbadkamers.nl/",
   "tel": "0548789854",
   "tel_disp": "0548 789 854",
-  "name_alt": "Veneklaas Bouw & Verbouw",
   "city_slug": "holten",
   "siblings": [
    {
@@ -165841,7 +165487,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/venrooijbouw-olx52k": {
   "name": "VenrooijBouw",
@@ -166629,11 +166275,10 @@
   "website": "http://www.verkeersregelaarshogeland.nl/",
   "tel": "0646694127",
   "tel_disp": "06 46694127",
-  "name_alt": "Verkeersgroep 't Hogeland",
   "city_slug": "spijk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/verkooijen-bouw-renovatie-6fn-xq": {
   "name": "Verkooijen Bouw &amp; Renovatie",
@@ -166644,7 +166289,6 @@
   "website": "https://verkooijenbouwenrenovatie.nl/",
   "tel": "0615333135",
   "tel_disp": "06 15333135",
-  "name_alt": "Verkooijen Bouw & Renovatie",
   "city_slug": "leiderdorp",
   "siblings": [
    {
@@ -166680,7 +166324,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/verlijsdonk-totaalbouw-j0vdky": {
   "name": "Verlijsdonk Totaalbouw",
@@ -166896,7 +166540,6 @@
   "website": "http://verobouw.nl/",
   "tel": "0628827826",
   "tel_disp": "06 28827826",
-  "name_alt": "Vero Bouw- & Interieurwerken",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -166932,7 +166575,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/verouden-bouwbedrijf-bv-va4l2u": {
   "name": "Verouden Bouwbedrijf BV",
@@ -166989,7 +166632,6 @@
   "website": "https://verplanckegroot.nl/",
   "tel": "0228319372",
   "tel_disp": "0228 319 372",
-  "name_alt": "Verplancke & Groot B.V.",
   "city_slug": "enkhuizen",
   "siblings": [
    {
@@ -167025,7 +166667,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/verseput-bouw-ad-yma": {
   "name": "Verseput Bouw",
@@ -167140,7 +166782,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/verwey-bouw-en-handelsbedrijf-aglxgm": {
   "name": "Verwey Bouw- en Handelsbedrijf",
@@ -167618,7 +167260,6 @@
   "website": "http://www.vinkbouwen.nl/",
   "tel": "0621476162",
   "tel_disp": "06 21476162",
-  "name_alt": "Vink Kleinbouw- & Timmerbedrijf",
   "city_slug": "kampen",
   "siblings": [
    {
@@ -167654,7 +167295,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/viridi-bouw-techniek-5atsic": {
   "name": "Viridi Bouw &amp; Techniek",
@@ -167665,7 +167306,6 @@
   "website": "https://www.viridibt.nl/",
   "tel": "0432041577",
   "tel_disp": "043 204 1577",
-  "name_alt": "Viridi Bouw & Techniek",
   "city_slug": "meerssen",
   "siblings": [
    {
@@ -167701,7 +167341,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/visbeen-grondverzet-odgtw4": {
   "name": "Visbeen Grondverzet",
@@ -167850,11 +167490,10 @@
   "website": "http://www.bouwbedrijfahvisser.nl/?y_source=1_Mjg5NTY2OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0514561464",
   "tel_disp": "0514 561 464",
-  "name_alt": "Visser & Zn Aannemersbedrijf A H",
   "city_slug": "lemmer",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/vissers-bouw-bv-cvn4os": {
   "name": "Vissers Bouw bv",
@@ -168477,7 +168116,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/volgzaam-aannemersbedrijf-ahp-p0": {
   "name": "Volgzaam Aannemersbedrijf",
@@ -168517,7 +168156,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v7"
+  "template": "v16"
  },
  "bedrijf/vollebregt-bouw-advies-b-v-qg62je": {
   "name": "Vollebregt Bouw &amp; Advies B.V.",
@@ -168528,7 +168167,6 @@
   "website": "https://www.vollebregtbouwenadvies.nl/",
   "tel": "0630993900",
   "tel_disp": "06 30993900",
-  "name_alt": "Vollebregt Bouw & Advies B.V.",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -168564,7 +168202,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/voncken-bouwservice-tegelwerken-djqthc": {
   "name": "Voncken Bouwservice Tegelwerken",
@@ -168596,7 +168234,6 @@
   "website": "http://www.voogtbouwenrenovatie.nl/",
   "tel": "0648965199",
   "tel_disp": "06 48965199",
-  "name_alt": "Voogt bouw & renovatie",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -168632,7 +168269,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/vos-bouwbedrijf-b-v-weert-98het0": {
   "name": "Vos Bouwbedrijf B.V. Weert",
@@ -168731,7 +168368,6 @@
   "rating_disp": "3,0",
   "reviews": "2",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vos%20%26%20Overkleeft%20Construction&amp;query_place_id=ChIJT6hrcQCzxUcRa74ZMlMzb28",
-  "name_alt": "Vos & Overkleeft Construction",
   "city_slug": "de-lier",
   "siblings": [
    {
@@ -168986,7 +168622,6 @@
   "website": "http://www.vreekerenfrederiks.nl/",
   "tel": "0229269024",
   "tel_disp": "0229 269 024",
-  "name_alt": "Vreeker & Frederiks",
   "city_slug": "hoorn",
   "siblings": [
    {
@@ -169022,7 +168657,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/vriesbouw-bdvhek": {
   "name": "Vriesbouw",
@@ -169225,7 +168860,6 @@
   "website": "http://www.vsgbouw.nl/",
   "tel": "0612178506",
   "tel_disp": "06 12178506",
-  "name_alt": "VSG Bouw & Renovatie",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -169261,7 +168895,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/vuykverbouw-b-v-tnpaje": {
   "name": "VUYKVERBOUW B.V.",
@@ -169424,7 +169058,6 @@
   "website": "http://www.wengbouw.nl/",
   "tel": "0497360843",
   "tel_disp": "0497 360 843",
-  "name_alt": "W & G Bouw BV",
   "city_slug": "bladel",
   "siblings": [
    {
@@ -169460,7 +169093,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/w-hoek-bouw-ah_igc": {
   "name": "W. Hoek Bouw",
@@ -169608,7 +169241,6 @@
   "website": "https://www.wntotaalbouw.nl/",
   "tel": "0655337469",
   "tel_disp": "06 55337469",
-  "name_alt": "W&N Totaalbouw bv",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -169644,7 +169276,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/w-tap-aannemingsbedrijf-v-o-f-joxcvg": {
   "name": "W. Tap Aannemingsbedrijf v.o.f.",
@@ -170099,7 +169731,6 @@
   "website": "http://www.wamenvanduren.nl/",
   "tel": "0543514652",
   "tel_disp": "0543 514 652",
-  "name_alt": "WAM&VanDuren Bouwgroep",
   "city_slug": "winterswijk",
   "siblings": [
    {
@@ -170135,7 +169766,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/warkor-bouw-08olqc": {
   "name": "Warkor Bouw",
@@ -170674,7 +170305,6 @@
   "website": "http://www.wenp.nl/",
   "tel": "0383332990",
   "tel_disp": "038 333 2990",
-  "name_alt": "Wensink & Prins B.V.",
   "city_slug": "kampen",
   "siblings": [
    {
@@ -170710,7 +170340,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/werkman-bouw-en-ontwikkeling-b-v-2fcvdo": {
   "name": "Werkman Bouw en Ontwikkeling B.V.",
@@ -171062,7 +170692,6 @@
   "website": "http://www.instalwest.nl/",
   "tel": "0646550672",
   "tel_disp": "06 46550672",
-  "name_alt": "Weststrate verbouw & installatie",
   "city_slug": "kortgene",
   "siblings": [
    {
@@ -171087,7 +170716,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/weterings-bouwbedrijf-b-v-yfnues": {
   "name": "Weterings Bouwbedrijf B.V.",
@@ -171144,7 +170773,6 @@
   "website": "https://www.wetzelsbouw.nl/",
   "tel": "0623850799",
   "tel_disp": "06 23850799",
-  "name_alt": "Wetzels Bouw- & Woning Service",
   "city_slug": "sittard",
   "siblings": [
    {
@@ -171180,7 +170808,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wg-bouwonderhoud-bv-mq-lie": {
   "name": "WG Bouwonderhoud BV",
@@ -171706,7 +171334,6 @@
   "website": "http://www.wijnkerott.nl/",
   "tel": "0224571444",
   "tel_disp": "0224 571 444",
-  "name_alt": "Wijnker & Ott Bouwbedrijf",
   "city_slug": "schagerbrug",
   "siblings": [
    {
@@ -171717,7 +171344,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/willems-bouwbedrijf-b-v-9yj7ss": {
   "name": "Willems Bouwbedrijf B.V.",
@@ -171910,11 +171537,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Wilson%20Service%20%26%20Onderhoud&amp;query_place_id=ChIJibL8vx65wEcRcw5QDMyZH7M",
   "tel": "0464425021",
   "tel_disp": "046 442 5021",
-  "name_alt": "Wilson Service & Onderhoud",
   "city_slug": "doenrade",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/wilting-groep-io_mjy": {
   "name": "Wilting Groep",
@@ -172060,7 +171686,6 @@
   "website": "https://www.wintersbouw.nl/",
   "tel": "0765653250",
   "tel_disp": "076 565 3250",
-  "name_alt": "Winters bouw & ontwikkeling B.V.",
   "city_slug": "breda",
   "siblings": [
    {
@@ -172096,7 +171721,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wisbouw-plp038": {
   "name": "Wisbouw",
@@ -172710,7 +172335,6 @@
   "website": "http://www.dakramenzutphen.nl/",
   "tel": "0612850869",
   "tel_disp": "06 12850869",
-  "name_alt": "Wouter Pasman Timmer & Onderhoudsbedrijf",
   "city_slug": "brummen",
   "siblings": [
    {
@@ -172746,7 +172370,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wtb-bouw-renovatie-ipkrgg": {
   "name": "WTB Bouw &amp; Renovatie",
@@ -172757,7 +172381,6 @@
   "website": "https://wtb-ede.nl/",
   "tel": "0628440191",
   "tel_disp": "06 28440191",
-  "name_alt": "WTB Bouw & Renovatie",
   "city_slug": "ede",
   "siblings": [
    {
@@ -172793,7 +172416,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wvg-bouw-ll1hp8": {
   "name": "WvG Bouw",
@@ -172951,7 +172574,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v10"
  },
  "bedrijf/ysf-bouw-b-v-construction-company-qaggoc": {
   "name": "YSF bouw b.v. / construction company",
@@ -173099,7 +172722,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Zana%20Allround%20Klussen%20%26%20Stukadoorsbedrijf&amp;query_place_id=ChIJ4e2odRC3wEcRVWshU87sJqU",
   "tel": "0642025437",
   "tel_disp": "06 42025437",
-  "name_alt": "Zana Allround Klussen & Stukadoorsbedrijf",
   "city_slug": "echt",
   "siblings": [
    {
@@ -173135,7 +172757,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/zas-aannemersbedrijf-500tsg": {
   "name": "ZAS Aannemersbedrijf",
@@ -173192,7 +172814,6 @@
   "website": "http://www.bouwbedrijf-zeelenberg.nl/",
   "tel": "0152121782",
   "tel_disp": "015 212 1782",
-  "name_alt": "Zeelenberg's Timmerwinkel B.V.",
   "city_slug": "delft",
   "siblings": [
    {
@@ -173228,7 +172849,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/zegers-bouw-b-v-lud4me": {
   "name": "Zegers Bouw B.V.",

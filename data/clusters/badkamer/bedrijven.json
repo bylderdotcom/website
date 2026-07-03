@@ -181,7 +181,6 @@
   "website": "https://www.maas-techniek.nl/",
   "tel": "0652866130",
   "tel_disp": "06 52866130",
-  "name_alt": "A. Maas Installatie & Badkamer Renovatie",
   "city_slug": "heerenveen",
   "siblings": [
    {
@@ -217,7 +216,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/a-schuiling-installatietechniek-yhd6se": {
   "name": "A.Schuiling installatietechniek",
@@ -453,7 +452,6 @@
   "website": "https://www.aannemersbouwbedrijfheemstede.nl/",
   "tel": "0640658048",
   "tel_disp": "06 40658048",
-  "name_alt": "Aannemers & Bouwbedrijf Heemstede",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -489,7 +487,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aannemers-en-klusbedrijf-idema-puz4yg": {
   "name": "Aannemers-en Klusbedrijf Idema",
@@ -891,7 +889,6 @@
   "website": "http://www.aartvandepol.nl/",
   "tel": "0570544441",
   "tel_disp": "0570 544 441",
-  "name_alt": "Aart van de Pol Keukens & Badkamers Deventer",
   "city_slug": "deventer",
   "siblings": [
    {
@@ -927,7 +924,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aart-van-de-pol-keukens-badkamers-hengelo-yvncpu": {
   "name": "Aart van de Pol Keukens &amp; Badkamers Hengelo",
@@ -938,7 +935,6 @@
   "website": "http://www.aartvandepol.nl/",
   "tel": "0742491044",
   "tel_disp": "074 249 1044",
-  "name_alt": "Aart van de Pol Keukens & Badkamers Hengelo",
   "city_slug": "hengelo",
   "siblings": [
    {
@@ -974,7 +970,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/abc-badkamers-m49z2e": {
   "name": "ABC Badkamers",
@@ -1385,7 +1381,6 @@
   "website": "https://akdeco.nl/",
   "tel": "0638620804",
   "tel_disp": "06 38620804",
-  "name_alt": "Akdeco Tegels & Meer",
   "city_slug": "veenendaal",
   "siblings": [
    {
@@ -1421,7 +1416,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/aksa-home-clgr5o": {
   "name": "AKSA Home",
@@ -1923,7 +1918,6 @@
   "website": "https://allroundbedrijfcr.nl/",
   "tel": "0651104964",
   "tel_disp": "06 51104964",
-  "name_alt": "Allroundbedrijf C&R",
   "city_slug": "grootebroek",
   "siblings": [
    {
@@ -1958,7 +1952,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/altena-waterflash-b-v-1cd7c4": {
   "name": "Altena Waterflash B.V.",
@@ -2016,11 +2010,10 @@
   "website": "http://www.altenazwembaden.nl/",
   "tel": "0416745161",
   "tel_disp": "0416 745 161",
-  "name_alt": "Altena Zwembaden - Luxe zwembaden, spa's en Wellness",
   "city_slug": "dussen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/altijd-douchen-phib-a": {
   "name": "Altijd Douchen",
@@ -2259,11 +2252,10 @@
   "website": "https://www.andeniva.nl/",
   "tel": "0640008243",
   "tel_disp": "06 40008243",
-  "name_alt": "Andeniva Klus, afbouw & montage",
   "city_slug": "schinveld",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/anytime-fitness-simpelveld-nebutq": {
   "name": "Anytime Fitness Simpelveld",
@@ -3080,11 +3072,10 @@
   "website": "https://www.assentib.nl/",
   "tel": "0591390620",
   "tel_disp": "0591 390 620",
-  "name_alt": "Assen Installatietechniek & Badkamers",
   "city_slug": "sleen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/asto-keukens-badkamers-sjmjq8": {
   "name": "ASTO Keukens &amp; Badkamers",
@@ -3095,7 +3086,6 @@
   "website": "http://www.asto.nl/",
   "tel": "0104430210",
   "tel_disp": "010 443 0210",
-  "name_alt": "ASTO Keukens & Badkamers",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -3131,7 +3121,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/atek-bv-tegels-keukens-badkamers-vloeren-haaksbergen-ywqr4m": {
   "name": "ATEK BV Tegels Keukens Badkamers Vloeren Haaksbergen",
@@ -3337,7 +3327,6 @@
   "website": "http://www.bedandbreakfast85.nl/",
   "tel": "0645200143",
   "tel_disp": "06 45200143",
-  "name_alt": "B&B 85",
   "city_slug": "voerendaal",
   "siblings": [
    {
@@ -3373,7 +3362,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-b-ma-retraite-winsum-cinayi": {
   "name": "B&amp;B Ma Retraite Winsum",
@@ -3383,7 +3372,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=B%26B%20Ma%20Retraite%20Winsum&amp;query_place_id=ChIJF_uL-bLPyUcRiVV2oCiNAYI",
   "tel": "0617820408",
   "tel_disp": "06 17820408",
-  "name_alt": "B&B Ma Retraite Winsum",
   "city_slug": "winsum",
   "siblings": [
    {
@@ -3419,7 +3407,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-b-waar-maas-en-waal-tesamen-stroomt-bx1r_8": {
   "name": "B&amp;B Waar Maas en Waal tesamen stroomt",
@@ -3430,7 +3418,6 @@
   "website": "https://www.bedandbreakfast.nl/nl/a/twz9MqEodZQv/waar-maas-en-waal-tesamen-stroomt",
   "tel": "0618338182",
   "tel_disp": "06 18338182",
-  "name_alt": "B&B Waar Maas en Waal tesamen stroomt",
   "city_slug": "woudrichem",
   "siblings": [
    {
@@ -3441,7 +3428,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/b-dutch-hyv9mk": {
   "name": "B DUTCH",
@@ -3557,7 +3544,6 @@
   "website": "https://nlmapzone.org/details/b-v-electronics-ChIJOWt",
   "tel": "0306993737",
   "tel_disp": "030 699 3737",
-  "name_alt": "B & V Electronics",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -3593,7 +3579,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ba-tegelzetterbedrijf-qbn9do": {
   "name": "BA Tegelzetterbedrijf",
@@ -3825,7 +3811,6 @@
   "website": "http://www.badenhome.nl/",
   "tel": "0591351048",
   "tel_disp": "0591 351 048",
-  "name_alt": "Bad & Home",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -3861,7 +3846,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bad-in-beeld-bodegraven-xmzvwi": {
   "name": "Bad in Beeld Bodegraven",
@@ -3918,7 +3903,6 @@
   "website": "http://www.badenkamers.nl/",
   "tel": "0348425393",
   "tel_disp": "0348 425 393",
-  "name_alt": "Bad & Kamers",
   "city_slug": "woerden",
   "siblings": [
    {
@@ -3954,7 +3938,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bad-line-i5ioty": {
   "name": "Bad-line",
@@ -4144,11 +4128,10 @@
   "website": "https://www.badenenzo.nl/",
   "tel": "0167531128",
   "tel_disp": "0167 531 128",
-  "name_alt": "Baden & Zo",
   "city_slug": "steenbergen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/badenwinkel-gibnha": {
   "name": "Badenwinkel",
@@ -5242,7 +5225,6 @@
   "website": "https://www.waterenvuurbadhuis.nl/",
   "tel": "0505280827",
   "tel_disp": "050 528 0827",
-  "name_alt": "Baderie Water en Vuur - Badkamers, Haarden, Woonvloeren, Sauna's - Groningen",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -5278,7 +5260,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/baderie-weert-snijders-installatiebedrijf-b-v-y-patu": {
   "name": "Baderie Weert - Snijders Installatiebedrijf B.V.",
@@ -5459,7 +5441,6 @@
   "website": "http://www.vanderklip.nl/",
   "tel": "0345632703",
   "tel_disp": "0345 632 703",
-  "name_alt": "Badkam.- & Woonstyling Van der Klip",
   "city_slug": "leerdam",
   "siblings": [
    {
@@ -5480,7 +5461,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/badkamer-almere-all4home-badkamers-y99chm": {
   "name": "Badkamer Almere | All4home badkamers",
@@ -5927,7 +5908,6 @@
   "website": "http://www.badkamerenkeukenmakelaar.nl/",
   "tel": "0854010330",
   "tel_disp": "085 401 0330",
-  "name_alt": "Badkamer & Keuken Makelaar",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -5963,7 +5943,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/badkamer-keuken-workshop-lwniyc": {
   "name": "Badkamer &amp; Keuken Workshop",
@@ -5972,7 +5952,6 @@
   "website": "https://www.badkamerenkeukencursus.nl/",
   "tel": "0642971036",
   "tel_disp": "06 42971036",
-  "name_alt": "Badkamer & Keuken Workshop",
   "city_slug": "heerhugowaard",
   "siblings": [
    {
@@ -6007,7 +5986,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/badkamer-kitten-voegen-alphen-aan-den-rijn-mb6mcy": {
   "name": "Badkamer Kitten &amp; Voegen Alphen aan den Rijn",
@@ -6018,7 +5997,6 @@
   "website": "http://www.badkamerkitvervangen.nl/",
   "tel": "0613833191",
   "tel_disp": "06 13833191",
-  "name_alt": "Badkamer Kitten & Voegen Alphen aan den Rijn",
   "city_slug": "alphen-aan-den-rijn",
   "siblings": [
    {
@@ -6054,7 +6032,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/badkamer-kitten-voegen-den-haag-6rs9to": {
   "name": "Badkamer Kitten &amp; Voegen Den Haag",
@@ -6065,7 +6043,6 @@
   "website": "http://badkamerkitvervangen.nl/",
   "tel": "0613833191",
   "tel_disp": "06 13833191",
-  "name_alt": "Badkamer Kitten & Voegen Den Haag",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -6101,7 +6078,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/badkamer-laten-slopen-3s0dgi": {
   "name": "Badkamer laten slopen",
@@ -7206,7 +7183,6 @@
   "website": "http://www.mb-bouwdesign.nl/",
   "tel": "0850805050",
   "tel_disp": "085 080 5050",
-  "name_alt": "Badkamer renovatie | MB Bouw & Design",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -7242,7 +7218,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/badkamer-renovatie-nbi-techniek-dew8d8": {
   "name": "Badkamer renovatie | NBI Techniek",
@@ -7564,7 +7540,6 @@
   "website": "https://decranehoeve.nl/",
   "tel": "0174261161",
   "tel_disp": "0174 261 161",
-  "name_alt": "Badkamer Renovatie Westland ✅ Inloopdouche in 1 Dag - Bouw & Aannemersbedrijf De Cranehoeve",
   "city_slug": "s-gravenzande",
   "siblings": [
    {
@@ -7585,7 +7560,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/badkamer-renovatie-zwolle-s0fily": {
   "name": "Badkamer Renovatie Zwolle",
@@ -8345,7 +8320,6 @@
   "website": "https://badkamerstegelsassen.nl/",
   "tel": "0613786385",
   "tel_disp": "06 13786385",
-  "name_alt": "Badkamers & Tegels Assen",
   "city_slug": "assen",
   "siblings": [
    {
@@ -8380,7 +8354,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/badkamers-verbouwingen-van-herp-afbouw-gsaso4": {
   "name": "Badkamers / Verbouwingen | Van Herp Afbouw",
@@ -9220,7 +9194,6 @@
   "reviews": "127",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Badkamerxxl%20badkamer%2C%20sanitair%20%26%20tegels%20showroom%20Buitenpost&amp;query_place_id=ChIJ5841QrUyyEcRwRh5j9CpV44",
   "website": "https://www.badkamerxxl.nl/showroom",
-  "name_alt": "Badkamerxxl badkamer, sanitair & tegels showroom Buitenpost",
   "city_slug": "buitenpost",
   "siblings": [
    {
@@ -9231,7 +9204,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/badkranenwinkel-pr1lq0": {
   "name": "Badkranenwinkel",
@@ -9626,7 +9599,6 @@
   "website": "https://bakker-postma.nl/?utm_source=organic&amp;utm_medium=gmb&amp;utm_id=gmb",
   "tel": "0582670440",
   "tel_disp": "058 267 0440",
-  "name_alt": "Bakker Postma | Tegels, Keukens & Badkamers Friesland",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -9662,7 +9634,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bakker-tegels-badkamers-hpslpy": {
   "name": "Bakker Tegels &amp; Badkamers",
@@ -9673,7 +9645,6 @@
   "website": "https://bakkervlaardingen.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp",
   "tel": "0104342058",
   "tel_disp": "010 434 2058",
-  "name_alt": "Bakker Tegels & Badkamers",
   "city_slug": "vlaardingen",
   "siblings": [
    {
@@ -9699,7 +9670,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bakkerbouw-b-v--karn4": {
   "name": "Bakkerbouw B.V.",
@@ -9754,7 +9725,6 @@
   "website": "http://www.bakro.nl/",
   "tel": "0251314750",
   "tel_disp": "0251 314 750",
-  "name_alt": "Bakkum & Krook Tegels en Sanitair",
   "city_slug": "uitgeest",
   "siblings": [
    {
@@ -9780,7 +9750,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/baldosas-tegels-p4hn0e": {
   "name": "Baldosas tegels",
@@ -9837,7 +9807,6 @@
   "website": "http://www.balotti.com/",
   "tel": "0553125862",
   "tel_disp": "055 312 5862",
-  "name_alt": "Balotti Sanitair & Tegels",
   "city_slug": "apeldoorn",
   "siblings": [
    {
@@ -9873,7 +9842,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bamonde-badkamers-keukens-en-tegels-81nlva": {
   "name": "Bamonde Badkamers / Keukens en Tegels",
@@ -10272,7 +10241,6 @@
   "website": "http://www.vloertegels.nl/",
   "tel": "0623796262",
   "tel_disp": "06 23796262",
-  "name_alt": "Baskon tegels&Top Vloerverwarming",
   "city_slug": "lelystad",
   "siblings": [
    {
@@ -10308,7 +10276,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/basten-onderhoud-w7agyi": {
   "name": "Basten onderhoud",
@@ -10699,7 +10667,6 @@
   "website": "http://www.benbleudal.nl/",
   "tel": "0475497750",
   "tel_disp": "0475 497 750",
-  "name_alt": "Bed & Breakfast Leudal",
   "city_slug": "haelen",
   "siblings": [
    {
@@ -10710,7 +10677,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bed-en-brood-veere-x9cj0o": {
   "name": "Bed en Brood - Veere",
@@ -10962,7 +10929,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Benes%20Sanitair%20%26%20Tegelwerken&amp;query_place_id=ChIJnY0wMNrot0cR_tUbmzS0LG8",
   "tel": "0651282450",
   "tel_disp": "06 51282450",
-  "name_alt": "Benes Sanitair & Tegelwerken",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -10998,7 +10964,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/berenpop-tegels-en-sanitair-bv-9pca68": {
   "name": "Berenpop tegels en sanitair BV",
@@ -11127,7 +11093,6 @@
   "website": "http://www.bergmanntegelwerken.nl/",
   "tel": "0630483846",
   "tel_disp": "06 30483846",
-  "name_alt": "Bergmann Tegelwerken & Projecten",
   "city_slug": "geldrop",
   "siblings": [
    {
@@ -11163,7 +11128,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/berkientotaalbouw-bh3oee": {
   "name": "Berkientotaalbouw",
@@ -11509,7 +11474,6 @@
   "website": "https://bewustsanitair.nl/",
   "tel": "0850607071",
   "tel_disp": "085 060 7071",
-  "name_alt": "Bewust Sanitair - Badkamer & Toilet Wandpanelen - Renovatie",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -11545,7 +11509,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bg-tegels-sanitair-pw4f2q": {
   "name": "BG Tegels &amp; Sanitair",
@@ -11556,7 +11520,6 @@
   "website": "https://www.blackgalaxy.nl/",
   "tel": "0297269951",
   "tel_disp": "0297 269 951",
-  "name_alt": "BG Tegels & Sanitair",
   "city_slug": "aalsmeer",
   "siblings": [
    {
@@ -11577,7 +11540,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/binnenvloeren-nl-7yd3i4": {
   "name": "Binnenvloeren.nl",
@@ -12684,7 +12647,6 @@
   "website": "https://www.bogaard-badkamers.nl/?utm_source=local&amp;utm_medium=organic&amp;utm_campaign=gmb",
   "tel": "0365314302",
   "tel_disp": "036 531 4302",
-  "name_alt": "Bogaard Keukens & Badkamers Almere",
   "city_slug": "almere",
   "siblings": [
    {
@@ -12720,7 +12682,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bogaard-tegels-en-sanitair-let-op-woensdag-zijn-wij-uitsluitend-open-op-afspraak-2rbslg": {
   "name": "Bogaard tegels en sanitair let op woensdag zijn wij uitsluitend open op afspraak!",
@@ -12794,7 +12756,6 @@
   "website": "https://www.mybomonti.nl/",
   "tel": "0707370333",
   "tel_disp": "070 737 0333",
-  "name_alt": "Bomonti Bad & Vloeren B.V.",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -12830,7 +12791,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bongers-bouw-alblasserdam-hk4dh8": {
   "name": "Bongers Bouw , Alblasserdam",
@@ -12954,7 +12915,6 @@
   "website": "http://www.borger.nl/",
   "tel": "0512361384",
   "tel_disp": "0512 361 384",
-  "name_alt": "Borger Tegels & Sanitair",
   "city_slug": "surhuisterveen",
   "siblings": [
    {
@@ -12965,7 +12925,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/borro-rental-mobiele-douche-verhuur-9ir3jm": {
   "name": "Borro-Rental | Mobiele Douche Verhuur",
@@ -13187,7 +13147,6 @@
   "website": "https://www.bouwenbad.nl/",
   "tel": "0166224013",
   "tel_disp": "0166 224 013",
-  "name_alt": "Bouw & Bad",
   "city_slug": "tholen",
   "siblings": [
    {
@@ -13217,7 +13176,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouw-en-installatiebedrijf-vogelzang-olst-3wb5ti": {
   "name": "Bouw en Installatiebedrijf Vogelzang Olst",
@@ -13259,7 +13218,6 @@
   "website": "http://www.bouwklusbedrijfwim.nl/",
   "tel": "0620492538",
   "tel_disp": "06 20492538",
-  "name_alt": "Bouw & klusbedrijf WIM",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -13295,7 +13253,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwbedrijf-avh-bouw-alxud0": {
   "name": "Bouwbedrijf AVH Bouw",
@@ -14503,7 +14461,6 @@
   "website": "https://www.rd-bouwgroep.nl/",
   "tel": "0630301276",
   "tel_disp": "06 30301276",
-  "name_alt": "Bouwgroep R&D",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -14539,7 +14496,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwhof-bezig-met-je-huis-ts59yc": {
   "name": "Bouwhof - Bezig met je huis.",
@@ -14636,7 +14593,6 @@
   "website": "http://www.bouwlijn.com/",
   "tel": "0624676841",
   "tel_disp": "06 24676841",
-  "name_alt": "🛠 Bouwlijn 💧 Badkamer renovatie & Loodgieter & Tegelzetter & Stukadoor & Badkamerspecialist",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -14672,7 +14628,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bouwmarkt-baarn-mlclnk": {
   "name": "Bouwmarkt Baarn",
@@ -15384,7 +15340,6 @@
   "website": "http://www.breedveld.nu/",
   "tel": "0528267061",
   "tel_disp": "0528 267 061",
-  "name_alt": "Breedveld Keukens & Badkamers",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -15420,7 +15375,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bridge-interiors-ljz_pk": {
   "name": "Bridge-Interiors",
@@ -15512,7 +15467,6 @@
   "website": "http://www.broekhuizenkeukensensanitair.nl/",
   "tel": "0383312831",
   "tel_disp": "038 331 2831",
-  "name_alt": "Broekhuizen Keukens & Sanitair",
   "city_slug": "ijsselmuiden",
   "siblings": [
    {
@@ -15523,7 +15477,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brouwer-keuken-bad-il1ei8": {
   "name": "Brouwer Keuken &amp; Bad",
@@ -15534,7 +15488,6 @@
   "website": "http://www.brouwerkeukenenbad.nl/",
   "tel": "0570622102",
   "tel_disp": "0570 622 102",
-  "name_alt": "Brouwer Keuken & Bad",
   "city_slug": "deventer",
   "siblings": [
    {
@@ -15570,7 +15523,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brouwer-technische-handelsonderneming-bv-48tgks": {
   "name": "Brouwer Technische Handelsonderneming BV",
@@ -15861,7 +15814,6 @@
   "website": "https://www.brugman.nl/vestigingen/almere/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0365328252",
   "tel_disp": "036 532 8252",
-  "name_alt": "Brugman keukens & badkamers Almere",
   "city_slug": "almere",
   "siblings": [
    {
@@ -15897,7 +15849,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-amersfoort-_rihus": {
   "name": "Brugman Keukens &amp; Badkamers Amersfoort",
@@ -15908,7 +15860,6 @@
   "website": "https://www.brugman.nl/vestigingen/amersfoort/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0334613448",
   "tel_disp": "033 461 3448",
-  "name_alt": "Brugman Keukens & Badkamers Amersfoort",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -15944,7 +15895,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-arena-fcu2-u": {
   "name": "Brugman Keukens &amp; Badkamers Arena",
@@ -15955,7 +15906,6 @@
   "website": "https://www.brugman.nl/vestigingen/amsterdam-johan-cruijff-arena/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0205673000",
   "tel_disp": "020 567 3000",
-  "name_alt": "Brugman Keukens & Badkamers Arena",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -15991,7 +15941,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-arnhem-uzbitc": {
   "name": "Brugman Keukens &amp; Badkamers Arnhem",
@@ -16002,7 +15952,6 @@
   "website": "https://www.brugman.nl/vestigingen/arnhem/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0263812112",
   "tel_disp": "026 381 2112",
-  "name_alt": "Brugman Keukens & Badkamers Arnhem",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -16038,7 +15987,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-assen-uc1fmc": {
   "name": "Brugman Keukens &amp; Badkamers Assen",
@@ -16049,7 +15998,6 @@
   "website": "https://www.brugman.nl/vestigingen/assen/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0592340822",
   "tel_disp": "0592 340 822",
-  "name_alt": "Brugman Keukens & Badkamers Assen",
   "city_slug": "assen",
   "siblings": [
    {
@@ -16085,7 +16033,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-barendrecht-zbbjak": {
   "name": "Brugman Keukens &amp; Badkamers Barendrecht",
@@ -16096,7 +16044,6 @@
   "website": "https://www.brugman.nl/vestigingen/barendrecht/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0102922011",
   "tel_disp": "010 292 2011",
-  "name_alt": "Brugman Keukens & Badkamers Barendrecht",
   "city_slug": "barendrecht",
   "siblings": [
    {
@@ -16132,7 +16079,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-breda-3xe0fu": {
   "name": "Brugman Keukens &amp; Badkamers Breda",
@@ -16143,7 +16090,6 @@
   "website": "https://www.brugman.nl/vestigingen/breda/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0765202058",
   "tel_disp": "076 520 2058",
-  "name_alt": "Brugman Keukens & Badkamers Breda",
   "city_slug": "breda",
   "siblings": [
    {
@@ -16179,7 +16125,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-capelle-nu6lqy": {
   "name": "Brugman Keukens &amp; Badkamers Capelle",
@@ -16190,7 +16136,6 @@
   "website": "https://www.brugman.nl/vestigingen/capelle/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0102587555",
   "tel_disp": "010 258 7555",
-  "name_alt": "Brugman Keukens & Badkamers Capelle",
   "city_slug": "capelle-aan-den-ijssel",
   "siblings": [
    {
@@ -16226,7 +16171,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-den-bosch-j6prjc": {
   "name": "Brugman Keukens &amp; Badkamers Den Bosch",
@@ -16237,7 +16182,6 @@
   "website": "https://www.brugman.nl/vestigingen/den-bosch/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0736411595",
   "tel_disp": "073 641 1595",
-  "name_alt": "Brugman Keukens & Badkamers Den Bosch",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -16273,7 +16217,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-den-haag-om4pfc": {
   "name": "Brugman Keukens &amp; Badkamers Den Haag",
@@ -16284,7 +16228,6 @@
   "website": "https://www.brugman.nl/vestigingen/den-haag/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0703477985",
   "tel_disp": "070 347 7985",
-  "name_alt": "Brugman Keukens & Badkamers Den Haag",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -16320,7 +16263,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-ede-pehe8u": {
   "name": "Brugman Keukens &amp; Badkamers Ede",
@@ -16331,7 +16274,6 @@
   "website": "https://www.brugman.nl/vestigingen/ede/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0318631855",
   "tel_disp": "0318 631 855",
-  "name_alt": "Brugman Keukens & Badkamers Ede",
   "city_slug": "ede",
   "siblings": [
    {
@@ -16367,7 +16309,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-goes-o8nyge": {
   "name": "Brugman Keukens &amp; Badkamers Goes",
@@ -16378,7 +16320,6 @@
   "website": "https://www.brugman.nl/vestigingen/goes/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0113246080",
   "tel_disp": "0113 246 080",
-  "name_alt": "Brugman Keukens & Badkamers Goes",
   "city_slug": "goes",
   "siblings": [
    {
@@ -16414,7 +16355,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-groningen-fzmppk": {
   "name": "Brugman Keukens &amp; Badkamers Groningen",
@@ -16425,7 +16366,6 @@
   "website": "https://www.brugman.nl/vestigingen/groningen/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0505250553",
   "tel_disp": "050 525 0553",
-  "name_alt": "Brugman Keukens & Badkamers Groningen",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -16461,7 +16401,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-heerlen-ru4qxe": {
   "name": "Brugman Keukens &amp; Badkamers Heerlen",
@@ -16472,7 +16412,6 @@
   "website": "https://www.brugman.nl/vestigingen/heerlen/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0455754240",
   "tel_disp": "045 575 4240",
-  "name_alt": "Brugman Keukens & Badkamers Heerlen",
   "city_slug": "heerlen",
   "siblings": [
    {
@@ -16508,7 +16447,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-hengelo-fvpj3m": {
   "name": "Brugman Keukens &amp; Badkamers Hengelo",
@@ -16519,7 +16458,6 @@
   "website": "https://www.brugman.nl/vestigingen/hengelo/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0742506366",
   "tel_disp": "074 250 6366",
-  "name_alt": "Brugman Keukens & Badkamers Hengelo",
   "city_slug": "hengelo",
   "siblings": [
    {
@@ -16555,7 +16493,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-roermond-lb5jqq": {
   "name": "Brugman Keukens &amp; Badkamers Roermond",
@@ -16566,7 +16504,6 @@
   "website": "https://www.brugman.nl/vestigingen/roermond/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0475311501",
   "tel_disp": "0475 311 501",
-  "name_alt": "Brugman Keukens & Badkamers Roermond",
   "city_slug": "roermond",
   "siblings": [
    {
@@ -16602,7 +16539,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-son-slwkse": {
   "name": "Brugman Keukens &amp; Badkamers Son",
@@ -16613,7 +16550,6 @@
   "website": "https://www.brugman.nl/vestigingen/son/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0499474481",
   "tel_disp": "0499 474 481",
-  "name_alt": "Brugman Keukens & Badkamers Son",
   "city_slug": "son",
   "siblings": [
    {
@@ -16649,7 +16585,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-tilburg-mw1km8": {
   "name": "Brugman Keukens &amp; Badkamers Tilburg",
@@ -16660,7 +16596,6 @@
   "website": "https://www.brugman.nl/vestigingen/tilburg/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0134609020",
   "tel_disp": "013 460 9020",
-  "name_alt": "Brugman Keukens & Badkamers Tilburg",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -16696,7 +16631,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-utrecht-orftmm": {
   "name": "Brugman Keukens &amp; Badkamers Utrecht",
@@ -16707,7 +16642,6 @@
   "website": "https://www.brugman.nl/vestigingen/utrecht/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0302888471",
   "tel_disp": "030 288 8471",
-  "name_alt": "Brugman Keukens & Badkamers Utrecht",
   "city_slug": "utrecht",
   "siblings": [
    {
@@ -16743,7 +16677,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-venlo-bkcqsg": {
   "name": "Brugman Keukens &amp; Badkamers Venlo",
@@ -16754,7 +16688,6 @@
   "website": "https://www.brugman.nl/vestigingen/venlo/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0773101262",
   "tel_disp": "077 310 1262",
-  "name_alt": "Brugman Keukens & Badkamers Venlo",
   "city_slug": "venlo",
   "siblings": [
    {
@@ -16790,7 +16723,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-waalwijk-pvrkio": {
   "name": "Brugman Keukens &amp; Badkamers Waalwijk",
@@ -16799,7 +16732,6 @@
   "website": "https://www.brugman.nl/vestigingen/waalwijk/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0416336300",
   "tel_disp": "0416 336 300",
-  "name_alt": "Brugman Keukens & Badkamers Waalwijk",
   "city_slug": "waalwijk",
   "siblings": [
    {
@@ -16834,7 +16766,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/brugman-keukens-badkamers-wateringen-g3gcry": {
   "name": "Brugman Keukens &amp; Badkamers Wateringen",
@@ -16845,7 +16777,6 @@
   "website": "https://www.brugman.nl/vestigingen/wateringen/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0174225850",
   "tel_disp": "0174 225 850",
-  "name_alt": "Brugman Keukens & Badkamers Wateringen",
   "city_slug": "wateringen",
   "siblings": [
    {
@@ -16871,7 +16802,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-zaandam-usafxq": {
   "name": "Brugman Keukens &amp; Badkamers Zaandam",
@@ -16882,7 +16813,6 @@
   "website": "https://www.brugman.nl/vestigingen/zaandam/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0756157867",
   "tel_disp": "075 615 7867",
-  "name_alt": "Brugman Keukens & Badkamers Zaandam",
   "city_slug": "zaandam",
   "siblings": [
    {
@@ -16918,7 +16848,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-badkamers-zwolle-jsqmyq": {
   "name": "Brugman Keukens &amp; Badkamers Zwolle",
@@ -16929,7 +16859,6 @@
   "website": "https://www.brugman.nl/vestigingen/zwolle/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0384601440",
   "tel_disp": "038 460 1440",
-  "name_alt": "Brugman Keukens & Badkamers Zwolle",
   "city_slug": "zwolle",
   "siblings": [
    {
@@ -16965,7 +16894,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/brugman-keukens-en-badkamers-alkmaar-mwinok": {
   "name": "Brugman keukens en badkamers Alkmaar",
@@ -17307,7 +17236,6 @@
   "website": "http://www.bruinssmeijers.nl/",
   "tel": "0548547760",
   "tel_disp": "0548 547 760",
-  "name_alt": "Bruins & Smeijers",
   "city_slug": "rijssen",
   "siblings": [
    {
@@ -17343,7 +17271,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/btk-binnendijk-tegel-kitwerk-s9jc24": {
   "name": "BTK Binnendijk Tegel &amp; Kitwerk",
@@ -17354,7 +17282,6 @@
   "website": "https://btk-tegelzetters.nl/",
   "tel": "0772340021",
   "tel_disp": "077 234 0021",
-  "name_alt": "BTK Binnendijk Tegel & Kitwerk",
   "city_slug": "venlo",
   "siblings": [
    {
@@ -17390,7 +17317,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bubbels-jets-badkamers-enter-7k80sq": {
   "name": "Bubbels &amp; Jets - badkamers enter",
@@ -17401,7 +17328,6 @@
   "website": "http://www.bubbelsenjets.nl/",
   "tel": "0547384000",
   "tel_disp": "0547 384 000",
-  "name_alt": "Bubbels & Jets - badkamers enter",
   "city_slug": "enter",
   "siblings": [
    {
@@ -17412,7 +17338,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/bubbelshop-wijchen-jfcm5o": {
   "name": "Bubbelshop Wijchen",
@@ -17644,11 +17570,10 @@
   "website": "http://www.c-g.nl/",
   "tel": "0497383304",
   "tel_disp": "0497 383 304",
-  "name_alt": "C & G Tegels en Sanitair",
   "city_slug": "bladel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/camperplaats-beesel-aan-de-maas-c7mkjk": {
   "name": "Camperplaats Beesel aan de Maas",
@@ -17685,7 +17610,6 @@
   "website": "http://eyveld.nl/",
   "tel": "0657576390",
   "tel_disp": "06 57576390",
-  "name_alt": "Camperplaats en Camping 'T Eyveld",
   "city_slug": "beesel",
   "siblings": [
    {
@@ -17701,7 +17625,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/camperplaats-leudal-aspergeboerderij-oppe-haes-u26m14": {
   "name": "Camperplaats Leudal/Aspergeboerderij Oppe Haes",
@@ -17769,11 +17693,10 @@
   "website": "https://caubo.net/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp",
   "tel": "0454041588",
   "tel_disp": "045 404 1588",
-  "name_alt": "Caubo Tegels & Sanitair",
   "city_slug": "schimmert",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/caza-tegels-natuursteen-sanitair-amf3uw": {
   "name": "Caza | Tegels, Natuursteen &amp; Sanitair",
@@ -17784,7 +17707,6 @@
   "website": "http://www.caza.nl/",
   "tel": "0548521151",
   "tel_disp": "0548 521 151",
-  "name_alt": "Caza | Tegels, Natuursteen & Sanitair",
   "city_slug": "rijssen",
   "siblings": [
    {
@@ -17820,7 +17742,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/cebasema-tegelwerken-tegels-zv6doo": {
   "name": "Cebasema Tegelwerken &amp; Tegels",
@@ -17831,7 +17753,6 @@
   "website": "http://www.cebasema-tegels.nl/",
   "tel": "0612421600",
   "tel_disp": "06 12421600",
-  "name_alt": "Cebasema Tegelwerken & Tegels",
   "city_slug": "enschede",
   "siblings": [
    {
@@ -17867,7 +17788,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/celo-bouw-installatiebedrijf-ybu3he": {
   "name": "Celo Bouw &amp; Installatiebedrijf",
@@ -17878,7 +17799,6 @@
   "website": "https://celobaarn.nl/",
   "tel": "0355423193",
   "tel_disp": "035 542 3193",
-  "name_alt": "Celo Bouw & Installatiebedrijf",
   "city_slug": "baarn",
   "siblings": [
    {
@@ -17914,7 +17834,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/cema-bv-een-plek-voor-keuken-badkamer-4gorni": {
   "name": "Cema BV - Een plek voor keuken &amp; badkamer!",
@@ -17925,7 +17845,6 @@
   "website": "http://www.cema.nl/",
   "tel": "0464747575",
   "tel_disp": "046 474 7575",
-  "name_alt": "Cema BV - Een plek voor keuken & badkamer!",
   "city_slug": "geleen",
   "siblings": [
    {
@@ -17936,7 +17855,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/cerados-jbq0js": {
   "name": "Cerados",
@@ -18213,7 +18132,6 @@
   "website": "http://www.concordiakeukenenbad.nl/",
   "tel": "0522276510",
   "tel_disp": "0522 276 510",
-  "name_alt": "Concordia Keuken & Bad Meppel",
   "city_slug": "meppel",
   "siblings": [
    {
@@ -18244,7 +18162,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/concordia-keuken-en-bad-heerenveen-gnxvhq": {
   "name": "Concordia Keuken en Bad Heerenveen",
@@ -18523,7 +18441,6 @@
   "website": "https://cvsanitairassen.nl/",
   "tel": "0619418405",
   "tel_disp": "06 19418405",
-  "name_alt": "CV & Sanitair Assen",
   "city_slug": "assen",
   "siblings": [
    {
@@ -18559,7 +18476,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/d-j-r-allround-bouw-j4quoc": {
   "name": "D.J.R. Allround Bouw",
@@ -18611,7 +18528,6 @@
   "website": "https://www.dsloodgieters.nl/",
   "tel": "0644661672",
   "tel_disp": "06 44661672",
-  "name_alt": "D&S Loodgieters",
   "city_slug": "blaricum",
   "siblings": [
    {
@@ -18632,7 +18548,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/d-sanitair-q7_qvw": {
   "name": "D-Sanitair",
@@ -18734,7 +18650,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Da%20Costa%20Stukadoor%20%26%20Onderhoud&amp;query_place_id=ChIJP33-KK5pxkcROuM-E9IcOvw",
   "tel": "0625088070",
   "tel_disp": "06 25088070",
-  "name_alt": "Da Costa Stukadoor & Onderhoud",
   "city_slug": "de-bilt",
   "siblings": [
    {
@@ -18760,7 +18675,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/daan-montage-en-renovatie-9ppgxa": {
   "name": "Daan Montage en Renovatie",
@@ -18969,7 +18884,6 @@
   "website": "http://www.dannenbergtegelwerken.nl/",
   "tel": "0548518503",
   "tel_disp": "0548 518 503",
-  "name_alt": "Dannenberg Tegels & Sanitair BV",
   "city_slug": "rijssen",
   "siblings": [
    {
@@ -19005,7 +18919,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dassie-radiatoren-8onimq": {
   "name": "Dassie Radiatoren",
@@ -19101,7 +19015,6 @@
   "website": "http://www.daton.nl/",
   "tel": "0162510299",
   "tel_disp": "0162 510 299",
-  "name_alt": "Daton Tegels & Sanitair",
   "city_slug": "raamsdonksveer",
   "siblings": [
    {
@@ -19127,7 +19040,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/db-adee-keukens-hcyujg": {
   "name": "DB Adee Keukens",
@@ -19825,7 +19738,6 @@
   "website": "http://www.debadzaak.nl/",
   "tel": "0341745790",
   "tel_disp": "0341 745 790",
-  "name_alt": "de Badzaak | Badkamers & Zo",
   "city_slug": "harderwijk",
   "siblings": [
    {
@@ -19861,7 +19773,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-boer-badkamer-en-tegels-b-v-hoaha0": {
   "name": "De Boer Badkamer en Tegels B.V.",
@@ -20046,7 +19958,6 @@
   "website": "http://www.dekeukenstudio.nl/",
   "tel": "0433434902",
   "tel_disp": "043 343 4902",
-  "name_alt": "De Keukenstudio & Bad",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -20082,7 +19993,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-klusmaster-sbxrvq": {
   "name": "de Klusmaster",
@@ -20206,7 +20117,6 @@
   "website": "https://www.deknikker.nl/",
   "tel": "0172469595",
   "tel_disp": "0172 469 595",
-  "name_alt": "De Knikker-Keukens, Sanitair & Tegels B.V.",
   "city_slug": "alphen-aan-den-rijn",
   "siblings": [
    {
@@ -20242,7 +20152,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-kroon-tegelwerken-cigooq": {
   "name": "De Kroon Tegelwerken",
@@ -20657,7 +20567,6 @@
   "website": "http://www.destudiokeukensenbad.nl/",
   "tel": "0704449697",
   "tel_disp": "070 444 9697",
-  "name_alt": "De studio keukens & bad",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -20693,7 +20602,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/de-tegel-expert-zwijndrecht-d4inrw": {
   "name": "De Tegel Expert | Zwijndrecht",
@@ -21201,7 +21110,6 @@
   "website": "https://verbouweninstallatie.nl/",
   "tel": "0641465144",
   "tel_disp": "06 41465144",
-  "name_alt": "De Zeeuw | Verbouw- & Installatiebedrijf",
   "city_slug": "zoetermeer",
   "siblings": [
    {
@@ -21237,7 +21145,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dealplein-lmhyr4": {
   "name": "Dealplein",
@@ -21504,7 +21412,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Deka%20Service%20%26%20Solutions&amp;query_place_id=ChIJfdrHKGSXxEcRYObcDpnSV6E",
   "tel": "0630301276",
   "tel_disp": "06 30301276",
-  "name_alt": "Deka Service & Solutions",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -21540,7 +21447,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/deko-interieurs-3_z0ba": {
   "name": "Deko Interieurs",
@@ -22038,7 +21945,6 @@
   "website": "http://www.diamondstone.nl/",
   "tel": "0356781880",
   "tel_disp": "035 678 1880",
-  "name_alt": "Diamond Stone B.V. Natuursteen en keramiek & Sanitair, tuin bestrating",
   "city_slug": "naarden",
   "siblings": [
    {
@@ -22064,7 +21970,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/diana-sanitair-verwarming-zuid-limburg-stsa40": {
   "name": "Diana Sanitair &amp; Verwarming Zuid Limburg",
@@ -22075,7 +21981,6 @@
   "website": "https://www.installatiebedrijf-diana.nl/",
   "tel": "0434506276",
   "tel_disp": "043 450 6276",
-  "name_alt": "Diana Sanitair & Verwarming Zuid Limburg",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -22111,7 +22016,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dicks-badkamers-haarlem-bv-uwuv-s": {
   "name": "Dicks Badkamers Haarlem BV",
@@ -22963,7 +22868,6 @@
   "website": "http://www.duchowski.nl/",
   "tel": "0615293003",
   "tel_disp": "06 15293003",
-  "name_alt": "Duchowski Renovatie & Verbouwing, Duchowski Kozijnen",
   "city_slug": "katwijk-aan-zee",
   "siblings": [
    {
@@ -22999,7 +22903,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/duovorm-e-tail-group-qmvacm": {
   "name": "Duovorm E-tail Group",
@@ -23093,7 +22997,6 @@
   "website": "http://www.dutchdesignkeukens.nl/",
   "tel": "0514534954",
   "tel_disp": "0514 534 954",
-  "name_alt": "Dutch Design Keukens & Badmeubels",
   "city_slug": "heerenveen",
   "siblings": [
    {
@@ -23129,7 +23032,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/dyndox-service-pwfwx8": {
   "name": "Dyndox Service",
@@ -23482,7 +23385,6 @@
   "website": "http://www.elcikeukens.nl/",
   "tel": "0570606768",
   "tel_disp": "0570 606 768",
-  "name_alt": "ELCI WONEN, KEUKENS & SANITAIR",
   "city_slug": "deventer",
   "siblings": [
    {
@@ -23518,7 +23420,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/elsinghorst-badkamers-en-keukens-m0al6i": {
   "name": "Elsinghorst badkamers en keukens",
@@ -23564,7 +23466,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=EM%20BADKAMERS%20%26%20VLOEREN&amp;query_place_id=ChIJGTcmZwnXxUcRPOdXlZ7RcLU",
   "tel": "0610806929",
   "tel_disp": "06 10806929",
-  "name_alt": "EM BADKAMERS & VLOEREN",
   "city_slug": "gouda",
   "siblings": [
    {
@@ -23600,7 +23501,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/enka-bouwmaterialen-s8i7di": {
   "name": "Enka Bouwmaterialen",
@@ -24358,7 +24259,6 @@
   "website": "https://www.vangalenkeukens.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb",
   "tel": "0384578524",
   "tel_disp": "038 457 8524",
-  "name_alt": "Exclusieve Keukens | Van Galen Keuken & Bad | Keukens Zwolle",
   "city_slug": "zwolle",
   "siblings": [
    {
@@ -24394,7 +24294,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/exclusive-goud-sanitair-tuwl_u": {
   "name": "Exclusive GOUD Sanitair",
@@ -24656,7 +24556,6 @@
   "website": "https://www.feelfitcenter.nl/leudal/",
   "tel": "0475494728",
   "tel_disp": "0475 494 728",
-  "name_alt": "Feel Fit Center Leudal — Zwembad & Fitness",
   "city_slug": "heythuysen",
   "siblings": [
    {
@@ -24667,7 +24566,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/feenstra-badkamers-lthmyg": {
   "name": "Feenstra badkamers",
@@ -24769,7 +24668,6 @@
   "website": "https://nlbusa.org/details/fijnheer-klus-loodgietersbedrijf-ChIJYeo",
   "tel": "0625552056",
   "tel_disp": "06 25552056",
-  "name_alt": "Fijnheer Klus & Loodgietersbedrijf",
   "city_slug": "velsen-noord",
   "siblings": [
    {
@@ -24805,7 +24703,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/firmoo-montage-en-klus-tejlpy": {
   "name": "Firmoo Montage en Klus",
@@ -25312,7 +25210,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Fransen%20Verbouw%20%26%20Onderhoud&amp;query_place_id=ChIJ23_NZDtAxkcRpyEVcEuUCvw",
   "tel": "0355424558",
   "tel_disp": "035 542 4558",
-  "name_alt": "Fransen Verbouw & Onderhoud",
   "city_slug": "eemnes",
   "siblings": [
    {
@@ -25347,7 +25244,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/fravo-tegels-glvrf0": {
   "name": "Fravo Tegels",
@@ -26238,7 +26135,6 @@
   "website": "https://www.gijsbertsbv.nl/",
   "tel": "0555219175",
   "tel_disp": "055 521 9175",
-  "name_alt": "Gijsberts Keukens, Tegels & Sanitair",
   "city_slug": "apeldoorn",
   "siblings": [
    {
@@ -26274,7 +26170,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/gitsels-badkamers-en-installateurs-badkamers-arnhem-yjbyg4": {
   "name": "Gitsels Badkamers en Installateurs | Badkamers Arnhem",
@@ -28150,7 +28046,6 @@
   "website": "http://www.grootintegels.nl/",
   "tel": "0412748009",
   "tel_disp": "0412 748 009",
-  "name_alt": "Groot in Tegels | Tegels & Sanitair",
   "city_slug": "oss",
   "siblings": [
    {
@@ -28186,7 +28081,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/groot-keuken-en-bad-ksnb34": {
   "name": "Groot Keuken en Bad",
@@ -28367,7 +28262,6 @@
   "website": "https://www.hbenschopbouwentimmerwerken.nl/",
   "tel": "0637175739",
   "tel_disp": "06 37175739",
-  "name_alt": "H. Benschop bouw & timmerwerken",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -28403,7 +28297,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/h-r-tegels-sanitair-vloeren-wwlk6w": {
   "name": "H&amp;R Tegels Sanitair Vloeren",
@@ -28414,7 +28308,6 @@
   "website": "https://www.henrtegels.nl/",
   "tel": "0235261426",
   "tel_disp": "023 526 1426",
-  "name_alt": "H&R Tegels Sanitair Vloeren",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -28450,7 +28343,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/h-stigter-bouw-supfoy": {
   "name": "H. Stigter Bouw",
@@ -28641,11 +28534,10 @@
   "website": "http://www.hamerbadkamers.nl/",
   "tel": "0575564012",
   "tel_disp": "0575 564 012",
-  "name_alt": "Hamer Badkamers | Badkamers, Sanitair, Wand- en Vloertegels | Brummen | Bad & Body",
   "city_slug": "brummen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/hans-jongbloed-9z2xqs": {
   "name": "Hans Jongbloed",
@@ -28871,7 +28763,6 @@
   "website": "http://harrysuiker.nl/",
   "tel": "0703672329",
   "tel_disp": "070 367 2329",
-  "name_alt": "\"Harry Suiker\" De tegel- & badkamerspecialist",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -28907,7 +28798,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/harry-van-der-velden--lmu3s": {
   "name": "Harry van der Velden",
@@ -28939,7 +28830,6 @@
   "website": "https://www.hartonderhoudenrenovatie.nl/",
   "tel": "0641493370",
   "tel_disp": "06 41493370",
-  "name_alt": "Hart Onderhoud & Renovatie",
   "city_slug": "zoetermeer",
   "siblings": [
    {
@@ -28975,7 +28865,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/harteveld-totaal-bouw-vy8sw0": {
   "name": "Harteveld Totaal Bouw",
@@ -29056,7 +28946,6 @@
   "website": "https://www.hasselbachbouw-dakservice.nl/",
   "tel": "0646795939",
   "tel_disp": "06 46795939",
-  "name_alt": "Hasselbach Bouw & Dakservice",
   "city_slug": "baarn",
   "siblings": [
    {
@@ -29092,7 +28981,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hasselbach-loodgieters-dakwerken-monk58": {
   "name": "Hasselbach Loodgieters &amp; Dakwerken",
@@ -29103,7 +28992,6 @@
   "website": "http://www.hasselbachloodgietersdakwerken.nl/",
   "tel": "0655756366",
   "tel_disp": "06 55756366",
-  "name_alt": "Hasselbach Loodgieters & Dakwerken",
   "city_slug": "baarn",
   "siblings": [
    {
@@ -29139,7 +29027,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/heat-save-5sj9wm": {
   "name": "Heat Save",
@@ -29242,7 +29130,6 @@
   "website": "https://www.hekbadkamers.nl/",
   "tel": "0332863002",
   "tel_disp": "033 286 3002",
-  "name_alt": "Hek Badkamers & Installateurs",
   "city_slug": "woudenberg",
   "siblings": [
    {
@@ -29263,7 +29150,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/henk-bovee-horst-bkerhw": {
   "name": "Henk Bovee Horst",
@@ -29554,7 +29441,6 @@
   "website": "https://www.heuveltegelwerken.nl/",
   "tel": "0644551099",
   "tel_disp": "06 44551099",
-  "name_alt": "Heuvel Tegelwerken & installatie",
   "city_slug": "oostzaan",
   "siblings": [
    {
@@ -29590,7 +29476,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hevu-tools-nje30e": {
   "name": "Hevu Tools",
@@ -30868,7 +30754,6 @@
   "website": "http://www.hotelspoorzichtspa.nl/",
   "tel": "0596571592",
   "tel_disp": "0596 571 592",
-  "name_alt": "Hotel Spoorzicht & SPA",
   "city_slug": "loppersum",
   "siblings": [
    {
@@ -30884,7 +30769,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hotel-veere-lmpleo": {
   "name": "Hotel Veere",
@@ -30961,7 +30846,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=HTN%20vloer%20%26%20tuin&amp;query_place_id=ChIJHTh4t5Ijx0cRlfVKa5qYmL4",
   "tel": "0492792499",
   "tel_disp": "0492 792 499",
-  "name_alt": "HTN vloer & tuin",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -30997,7 +30881,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/hubo-xl-bouwmarkt-beek-en-donk-vmhqt4": {
   "name": "Hubo XL bouwmarkt Beek en Donk",
@@ -31610,7 +31494,6 @@
   "website": "https://installatieenbouwbedrijfdebruijn.nl/",
   "tel": "0640164132",
   "tel_disp": "06 40164132",
-  "name_alt": "Installatie & Bouwbedrijf de Bruijn",
   "city_slug": "delft",
   "siblings": [
    {
@@ -31646,7 +31529,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/installatie-service-oosting-39b_-k": {
   "name": "Installatie service oosting",
@@ -32887,7 +32770,6 @@
   "website": "https://jklom.nl/",
   "tel": "0615455332",
   "tel_disp": "06 15455332",
-  "name_alt": "J. Klom badkamers, Toiletten & Tegelwerken",
   "city_slug": "alphen-aan-den-rijn",
   "siblings": [
    {
@@ -32923,7 +32805,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/j-schuit-tegelzetbedrijf-a6zy5g": {
   "name": "J Schuit Tegelzetbedrijf",
@@ -33212,11 +33094,10 @@
   "website": "https://www.janvanerp.nl/",
   "tel": "0735440022",
   "tel_disp": "073 544 0022",
-  "name_alt": "Jan van Erp Tegels & Badkamers",
   "city_slug": "schijndel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/jan-van-erp-tegels-badkamers-gl9ev4": {
   "name": "Jan van Erp Tegels &amp; Badkamers",
@@ -33227,7 +33108,6 @@
   "website": "https://www.janvanerp.nl/",
   "tel": "0735440022",
   "tel_disp": "073 544 0022",
-  "name_alt": "Jan van Erp Tegels & Badkamers",
   "city_slug": "son",
   "siblings": [
    {
@@ -33263,7 +33143,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jan-van-erp-tegels-badkamers-zd66zq": {
   "name": "Jan van Erp Tegels &amp; Badkamers",
@@ -33274,11 +33154,10 @@
   "website": "http://www.janvanerp.nl/",
   "tel": "0735440022",
   "tel_disp": "073 544 0022",
-  "name_alt": "Jan van Erp Tegels & Badkamers",
   "city_slug": "born",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/jan-van-erp-tegels-badkamers-zt0bqo": {
   "name": "Jan van Erp Tegels &amp; Badkamers",
@@ -33289,7 +33168,6 @@
   "website": "https://www.janvanerp.nl/",
   "tel": "0735440022",
   "tel_disp": "073 544 0022",
-  "name_alt": "Jan van Erp Tegels & Badkamers",
   "city_slug": "kaatsheuvel",
   "siblings": [
    {
@@ -33320,7 +33198,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jan-van-ijken-oude-bouwmaterialen-bv-urjali": {
   "name": "Jan van IJken Oude Bouwmaterialen BV",
@@ -33444,7 +33322,6 @@
   "website": "http://jansentegelsensanitair.nl/",
   "tel": "0548624681",
   "tel_disp": "0548 624 681",
-  "name_alt": "Jansen Tegels & Sanitair",
   "city_slug": "nijverdal",
   "siblings": [
    {
@@ -33465,7 +33342,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jansen-tegelwerken-dennis-hrno0a": {
   "name": "Jansen Tegelwerken Dennis",
@@ -33520,7 +33397,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=JDN%20Sanitair%20%26%20Tegels&amp;query_place_id=ChIJxT96edGZxkcRhqu8XAPt5DU",
   "tel": "0162315656",
   "tel_disp": "0162 315 656",
-  "name_alt": "JDN Sanitair & Tegels",
   "city_slug": "dongen",
   "siblings": [
    {
@@ -33545,7 +33421,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/jee-o-brandstore-nijmegen-pliony": {
   "name": "JEE-O brandstore Nijmegen",
@@ -33828,11 +33704,10 @@
   "website": "http://www.jontoebast.nl/",
   "tel": "0487592606",
   "tel_disp": "0487 592 606",
-  "name_alt": "Jon Toebast Tegels Sanitair & Bouwproducten",
   "city_slug": "boven-leeuwen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/jongsma-dkfhjw": {
   "name": "Jongsma",
@@ -34271,7 +34146,6 @@
   "website": "http://www.juulx.nl/",
   "tel": "0524700235",
   "tel_disp": "0524 700 235",
-  "name_alt": "Juulx Stijlvolle Keukens, Badkamers & Interieur",
   "city_slug": "dalen",
   "siblings": [
    {
@@ -34282,7 +34156,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/jvl-montage-mjumhg": {
   "name": "JVL Montage",
@@ -34518,7 +34392,6 @@
   "website": "https://kammeraadinterieur.nl/",
   "tel": "0652313342",
   "tel_disp": "06 52313342",
-  "name_alt": "Kammeraad Keukens & Interieur",
   "city_slug": "oude-tonge",
   "siblings": [
    {
@@ -34539,7 +34412,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/karakteristiek-huis-in-centrum-winsum-met-nieuwe-badkamer-two-bedroom-house-ad7hr4": {
   "name": "Karakteristiek huis in centrum Winsum met nieuwe badkamer - Two-Bedroom House",
@@ -34831,7 +34704,6 @@
   "website": "https://www.kaystegelwerken.nl/",
   "tel": "0683978229",
   "tel_disp": "06 83978229",
-  "name_alt": "Kay's Tegelwerken",
   "city_slug": "reusel",
   "siblings": [
    {
@@ -34856,7 +34728,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kaya-tegels-44shci": {
   "name": "Kaya Tegels",
@@ -34934,7 +34806,6 @@
   "website": "https://kbr-totaalrenovatie.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb_cta",
   "tel": "0492700241",
   "tel_disp": "0492 700 241",
-  "name_alt": "KBR Totaalrenovatie | Aannemer & Bouwbedrijf | Keukens, Badkamers, Aanbouw, Renovatie & Afbouw | Gemert, Noord-Brabant",
   "city_slug": "gemert",
   "siblings": [
    {
@@ -34970,7 +34841,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kelleners-glasdesign-bv-yonvcg": {
   "name": "Kelleners Glasdesign BV",
@@ -35094,7 +34965,6 @@
   "website": "http://www.kerstholttegelzetbedrijf.nl/",
   "tel": "0306991154",
   "tel_disp": "030 699 1154",
-  "name_alt": "Kerstholt Tegelzetbedrijf & Afbouw bv",
   "city_slug": "ijsselstein",
   "siblings": [
    {
@@ -35130,7 +35000,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kessels-tegelwerken-pjxt-4": {
   "name": "Kessels Tegelwerken",
@@ -35203,7 +35073,6 @@
   "website": "http://kbwijchen.nl/",
   "tel": "0246456336",
   "tel_disp": "024 645 6336",
-  "name_alt": "Keuken&Bad Wijchen",
   "city_slug": "wijchen",
   "siblings": [
    {
@@ -35239,7 +35108,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/keuken-badkamer-totaal-6uw3dq": {
   "name": "Keuken &amp; Badkamer Totaal",
@@ -35250,7 +35119,6 @@
   "website": "http://www.keukenenbadkamertotaal.com/",
   "tel": "0182582929",
   "tel_disp": "0182 582 929",
-  "name_alt": "Keuken & Badkamer Totaal",
   "city_slug": "gouda",
   "siblings": [
    {
@@ -35286,7 +35154,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/keuken-boetiek-weert-phepze": {
   "name": "Keuken Boetiek Weert",
@@ -36140,7 +36008,6 @@
   "website": "https://www.kalmeijerkeukens.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb",
   "tel": "0182605839",
   "tel_disp": "0182 605 839",
-  "name_alt": "Keukenzaak Gouda - Kalmeijer Keukens & Interieur",
   "city_slug": "gouda",
   "siblings": [
    {
@@ -36176,7 +36043,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kex-keukenexpert-volendam-b-v-es1vhu": {
   "name": "Kex Keukenexpert Volendam B.V.",
@@ -36727,7 +36594,6 @@
   "website": "https://www.kloostermankeukens.nl/",
   "tel": "0355240550",
   "tel_disp": "035 524 0550",
-  "name_alt": "Kloosterman Keukens & Badkamers B.V.",
   "city_slug": "huizen",
   "siblings": [
    {
@@ -36753,7 +36619,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klus-en-montagebedrijf-rob-van-der-waal-4rnq6w": {
   "name": "Klus-en Montagebedrijf Rob van der Waal",
@@ -36817,7 +36683,6 @@
   "website": "http://www.kmbk.nl/",
   "tel": "0651064473",
   "tel_disp": "06 51064473",
-  "name_alt": "Klus- & Montagebedrijf A. Kuijt",
   "city_slug": "katwijk-aan-zee",
   "siblings": [
    {
@@ -36853,7 +36718,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-abr-0o70sc": {
   "name": "Klusbedrijf ABR🛠",
@@ -36992,7 +36857,6 @@
   "website": "http://www.klusbedrijfdeclipers.nl/",
   "tel": "0687991115",
   "tel_disp": "06 87991115",
-  "name_alt": "Klusbedrijf de Clipers | Badkamer Renovatie & Bouwbedrijf Venray",
   "city_slug": "oostrum",
   "siblings": [
    {
@@ -37003,7 +36867,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-en-badkamers-frissen-design-trqseu": {
   "name": "Klusbedrijf en badkamers frissen design",
@@ -38289,7 +38153,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Km%20badkamers%20%26%20vloeren&amp;query_place_id=ChIJIxvBZdWVx6ER24EDDZF5W5c",
   "tel": "0636007448",
   "tel_disp": "06 36007448",
-  "name_alt": "Km badkamers & vloeren",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -38324,7 +38187,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/koehoorn-enkhuizer-toilet-en-badkamer-expert-me_u90": {
   "name": "Koehoorn Enkhuizer toilet- en badkamer expert",
@@ -38423,7 +38286,6 @@
   "website": "https://www.intercodam.com/kol-tegels-sanitair/",
   "tel": "0206225115",
   "tel_disp": "020 622 5115",
-  "name_alt": "Kol Tegels & Sanitair by Intercodam Haarlem",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -38459,7 +38321,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/koolschijn-siematic-huis-delft-w3zdme": {
   "name": "Koolschijn Siematic Huis Delft",
@@ -38576,7 +38438,6 @@
   "website": "http://www.badkamersenkeukens.nl/",
   "tel": "0599616016",
   "tel_disp": "0599 616 016",
-  "name_alt": "Kornelius Badkamers & Keukens",
   "city_slug": "stadskanaal",
   "siblings": [
    {
@@ -38612,7 +38473,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/korthout-sanitair-tegels-p-usty": {
   "name": "Korthout Sanitair &amp; Tegels",
@@ -38623,7 +38484,6 @@
   "website": "http://korthoutsanitair.nl/",
   "tel": "0411747075",
   "tel_disp": "0411 747 075",
-  "name_alt": "Korthout Sanitair & Tegels",
   "city_slug": "boxtel",
   "siblings": [
    {
@@ -38634,7 +38494,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/korver-holland-b-lyvs": {
   "name": "Korver Holland",
@@ -38737,7 +38597,6 @@
   "website": "https://www.krebber-russ.de/",
   "tel": "0282113710",
   "tel_disp": "02821 13710",
-  "name_alt": "Krebber & Russ GmbH",
   "city_slug": "duitsland",
   "siblings": [
    {
@@ -38766,7 +38625,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/kremer-keukens-tegels-sanitair-b-v-4fntyg": {
   "name": "Kremer Keukens Tegels Sanitair B.V.",
@@ -39786,7 +39645,6 @@
   "website": "http://www.kwartsenco.nl/",
   "tel": "0434506304",
   "tel_disp": "043 450 6304",
-  "name_alt": "Kwarts & Co",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -39822,7 +39680,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/l-a-van-de-bilt-tegelhandel-v5wx9o": {
   "name": "L.A. van de Bilt Tegelhandel",
@@ -40157,7 +40015,6 @@
   "website": "http://www.leenders-badkamers.nl/",
   "tel": "0464581051",
   "tel_disp": "046 458 1051",
-  "name_alt": "Leenders Badkamers & Tegels | Badkamers Sittard",
   "city_slug": "sittard",
   "siblings": [
    {
@@ -40183,7 +40040,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/lentjes-droomkeukens-lyzuue": {
   "name": "Lentjes Droomkeukens",
@@ -40347,7 +40204,6 @@
   "website": "https://livinstylekeukensenbadkamers.nl/",
   "tel": "0852731955",
   "tel_disp": "085 273 1955",
-  "name_alt": "Livinstyle Keukens & Badkamers",
   "city_slug": "middelburg",
   "siblings": [
    {
@@ -40383,7 +40239,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/lixer-wandpanelen-nko45i": {
   "name": "LIXER Wandpanelen",
@@ -40571,7 +40427,6 @@
   "website": "https://www.logtenbergkeukenenbad.nl/",
   "tel": "0523785468",
   "tel_disp": "0523 785 468",
-  "name_alt": "Logtenberg Keuken & Bad",
   "city_slug": "hardenberg",
   "siblings": [
    {
@@ -40602,7 +40457,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/logus-de-hoop-keukens-badkamers-tegels-vlissingen-n9xx3a": {
   "name": "Logus-De Hoop Keukens Badkamers Tegels Vlissingen",
@@ -41522,7 +41377,6 @@
   "website": "https://lt-tegelwerken.nl/",
   "tel": "0610708352",
   "tel_disp": "06 10708352",
-  "name_alt": "LT Tegels Badkamers & Sanitair",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -41558,7 +41412,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/luc-van-den-berg-keukens-badkamers-tegels-sf3ole": {
   "name": "Luc van den Berg | Keukens, Badkamers &amp; Tegels",
@@ -41569,7 +41423,6 @@
   "website": "http://www.lucvandenberg.nl/",
   "tel": "0715766995",
   "tel_disp": "071 576 6995",
-  "name_alt": "Luc van den Berg | Keukens, Badkamers & Tegels",
   "city_slug": "leiden",
   "siblings": [
    {
@@ -41605,7 +41458,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/luca-sanitair-paz8aq": {
   "name": "Luca Sanitair",
@@ -41865,7 +41718,6 @@
   "website": "http://mnkluskoning.nl/",
   "tel": "0616395448",
   "tel_disp": "06 16395448",
-  "name_alt": "M.N. Tegelvakman & Klussenbedrijf",
   "city_slug": "assen",
   "siblings": [
    {
@@ -41901,7 +41753,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/m-o-tegelzet-en-klusbedrijf-f8kwy0": {
   "name": "M &amp; O Tegelzet- en klusbedrijf",
@@ -41911,7 +41763,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=M%20%26%20O%20Tegelzet-%20en%20klusbedrijf&amp;query_place_id=ChIJSWeFC6XWt0cRFR4JLF8kWY0",
   "tel": "0625428569",
   "tel_disp": "06 25428569",
-  "name_alt": "M & O Tegelzet- en klusbedrijf",
   "city_slug": "veendam",
   "siblings": [
    {
@@ -41947,7 +41798,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/m-press-b-v-iirt_y": {
   "name": "M-press B.V.",
@@ -42421,7 +42272,6 @@
   "website": "http://www.marcelsbadkamers.nl/",
   "tel": "0118764008",
   "tel_disp": "0118 764 008",
-  "name_alt": "Marcels Badkamers & Tadelakt wandafwerking",
   "city_slug": "serooskerke",
   "siblings": [
    {
@@ -42432,7 +42282,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/marco-living-hvriza": {
   "name": "Marco Living",
@@ -43051,7 +42901,6 @@
   "website": "https://www.maxaro.nl/showrooms/eindhoven/?utm_source=google-places&amp;utm_medium=organic&amp;utm_campaign=mijnbedrijf_ein",
   "tel": "0882054700",
   "tel_disp": "088 205 4700",
-  "name_alt": "Maxaro Eindhoven (Son en Breugel) - Badkamers & Tegels",
   "city_slug": "son",
   "siblings": [
    {
@@ -43087,7 +42936,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/maxaro-heerlen-badkamer-tegels-xsfb1s": {
   "name": "Maxaro Heerlen - Badkamer &amp; Tegels",
@@ -43098,7 +42947,6 @@
   "website": "https://www.maxaro.nl/showrooms/",
   "tel": "0882054700",
   "tel_disp": "088 205 4700",
-  "name_alt": "Maxaro Heerlen - Badkamer & Tegels",
   "city_slug": "heerlen",
   "siblings": [
    {
@@ -43134,7 +42982,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/maxaro-hoofddorp-badkamers-tegels-aksebe": {
   "name": "Maxaro Hoofddorp - Badkamers &amp; Tegels",
@@ -43145,7 +42993,6 @@
   "website": "https://www.maxaro.nl/showrooms/hoofddorp/?utm_source=google-places&amp;utm_medium=organic&amp;utm_campaign=mijnbedrijf_hfd",
   "tel": "0882054700",
   "tel_disp": "088 205 4700",
-  "name_alt": "Maxaro Hoofddorp - Badkamers & Tegels",
   "city_slug": "hoofddorp",
   "siblings": [
    {
@@ -43156,7 +43003,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/maxaro-leeuwarden-badkamer-tegels-x2943g": {
   "name": "Maxaro Leeuwarden - Badkamer &amp; Tegels",
@@ -43167,7 +43014,6 @@
   "website": "https://www.maxaro.nl/",
   "tel": "0882054700",
   "tel_disp": "088 205 4700",
-  "name_alt": "Maxaro Leeuwarden - Badkamer & Tegels",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -43203,7 +43049,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/maxaro-rotterdam-badkamers-tegels-vll1t0": {
   "name": "Maxaro Rotterdam - Badkamers &amp; Tegels",
@@ -43214,7 +43060,6 @@
   "website": "https://www.maxaro.nl/showrooms/rotterdam/?utm_source=google-places&amp;utm_medium=organic&amp;utm_campaign=mijnbedrijf_rdam",
   "tel": "0882054700",
   "tel_disp": "088 205 4700",
-  "name_alt": "Maxaro Rotterdam - Badkamers & Tegels",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -43250,7 +43095,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/maxaro-syhbd4": {
   "name": "Maxaro",
@@ -43307,7 +43152,6 @@
   "website": "https://www.maxaro.nl/showrooms/utrecht/?utm_source=google-places&amp;utm_medium=organic&amp;utm_campaign=mijnbedrijf_utr",
   "tel": "0882054700",
   "tel_disp": "088 205 4700",
-  "name_alt": "Maxaro Utrecht The Wall - Badkamers & Tegels",
   "city_slug": "utrecht",
   "siblings": [
    {
@@ -43343,7 +43187,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/maxima-vloeren-en-raamdecoratie-wierden-wkwey4": {
   "name": "Maxima Vloeren en Raamdecoratie Wierden",
@@ -43754,7 +43598,6 @@
   "website": "https://metmega.nl/vestigingen/den-helder",
   "tel": "0223637262",
   "tel_disp": "0223 637 262",
-  "name_alt": "Mega Badkamers, Keukens, Tegels & meer | Den Helder",
   "city_slug": "den-helder",
   "siblings": [
    {
@@ -43780,7 +43623,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/mega-badkamers-keukens-vloeren-meer-heemskerk-ocsjgq": {
   "name": "Mega Badkamers, Keukens, Vloeren &amp; meer | Heemskerk",
@@ -43791,7 +43634,6 @@
   "website": "https://metmega.nl/vestigingen/heemskerk",
   "tel": "0850799790",
   "tel_disp": "085 079 9790",
-  "name_alt": "Mega Badkamers, Keukens, Vloeren & meer | Heemskerk",
   "city_slug": "heemskerk",
   "siblings": [
    {
@@ -43812,7 +43654,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/mega-badkamers-tegels-vloeren-en-meer-hoorn-zhfta4": {
   "name": "Mega Badkamers, Tegels, Vloeren en meer | Hoorn",
@@ -45125,7 +44967,6 @@
   "website": "https://www.wiltjer.nl/",
   "tel": "0651326844",
   "tel_disp": "06 51326844",
-  "name_alt": "Montage- & Klusbedrijf Wiltjer",
   "city_slug": "leek",
   "siblings": [
    {
@@ -45141,7 +44982,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/montagebedrijf-cappa-6k3fva": {
   "name": "Montagebedrijf Cappa",
@@ -45338,7 +45179,6 @@
   "website": "http://www.mooierwonenweert.nl/",
   "tel": "0495541126",
   "tel_disp": "0495 541 126",
-  "name_alt": "Mooier Wonen Weert Keukens & Badkamers",
   "city_slug": "weert",
   "siblings": [
    {
@@ -45374,7 +45214,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/mooiland-63wcci": {
   "name": "Mooiland",
@@ -45652,7 +45492,6 @@
   "website": "http://multikeukenenbad.nl/",
   "tel": "0105922411",
   "tel_disp": "010 592 2411",
-  "name_alt": "Multi Keuken & Bad",
   "city_slug": "maassluis",
   "siblings": [
    {
@@ -45663,7 +45502,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/munier-installatietechniek-uwlimc": {
   "name": "Munier Installatietechniek",
@@ -46041,7 +45880,6 @@
   "website": "http://www.nijland-natuursteen.nl/",
   "tel": "0314354085",
   "tel_disp": "0314 354 085",
-  "name_alt": "Nijland Tegels & Badkamers",
   "city_slug": "doetinchem",
   "siblings": [
    {
@@ -46067,7 +45905,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/nobel-bouwbedrijf-b-v-7y2cs0": {
   "name": "Nobel Bouwbedrijf B.V.",
@@ -46122,7 +45960,6 @@
   "website": "https://www.nobelkeukenenbad.nl/",
   "tel": "0885222555",
   "tel_disp": "088 522 2555",
-  "name_alt": "Nobel Keuken & Bad",
   "city_slug": "nieuwegein",
   "siblings": [
    {
@@ -46157,7 +45994,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/noordzij-brielle-b-v-v3peya": {
   "name": "Noordzij Brielle B.V.",
@@ -46208,7 +46045,6 @@
   "website": "https://www.nordkampsanitair.nl/",
   "tel": "0537852775",
   "tel_disp": "053 785 2775",
-  "name_alt": "Nordkamp Tegels & Sanitair",
   "city_slug": "losser",
   "siblings": [
    {
@@ -46219,7 +46055,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/nova-vloeren-tegels-mjelis": {
   "name": "Nova Vloeren &amp; Tegels",
@@ -46230,7 +46066,6 @@
   "website": "https://novavloeren-tegels.nl/",
   "tel": "0652151510",
   "tel_disp": "06 52151510",
-  "name_alt": "Nova Vloeren & Tegels",
   "city_slug": "wierden",
   "siblings": [
    {
@@ -46256,7 +46091,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/nuovo-antico-bv-9ic6uu": {
   "name": "Nuovo Antico BV",
@@ -46341,7 +46176,6 @@
   "website": "http://osklussenbedrijf.nl/",
   "tel": "0638116353",
   "tel_disp": "06 38116353",
-  "name_alt": "O&S Klussen",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -46377,7 +46211,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/o-seven-design-xgi5ic": {
   "name": "O-Seven Design",
@@ -46525,7 +46359,6 @@
   "website": "http://www.oddesign.nl/",
   "tel": "0625094518",
   "tel_disp": "06 25094518",
-  "name_alt": "OD Design Badkamers & Sanitair",
   "city_slug": "delft",
   "siblings": [
    {
@@ -46561,7 +46394,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/odomi-showroom-4bb354": {
   "name": "Odomi Showroom",
@@ -46818,7 +46651,6 @@
   "website": "https://www.onpointgulpen.nl/",
   "tel": "0681861777",
   "tel_disp": "06 81861777",
-  "name_alt": "OnPoint Schilder & Tegelwerk",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -46854,7 +46686,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ontwerp-aannemersbedrijf-schriek-bwopbk": {
   "name": "Ontwerp &amp; Aannemersbedrijf Schriek",
@@ -46865,7 +46697,6 @@
   "website": "http://ontwerp-aannemersbedrijfschriek.nl/",
   "tel": "0683864985",
   "tel_disp": "06 83864985",
-  "name_alt": "Ontwerp & Aannemersbedrijf Schriek",
   "city_slug": "eemnes",
   "siblings": [
    {
@@ -46901,7 +46732,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ooink-verbouw-hgph2c": {
   "name": "Ooink Verbouw",
@@ -47117,11 +46948,10 @@
   "website": "https://www.oudegeerdink-badkamers.nl/",
   "tel": "0546442095",
   "tel_disp": "0546 442 095",
-  "name_alt": "Oude Geerdink Tegels & Sanitair | Badkamers Albergen",
   "city_slug": "albergen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/outlet-nederland-b-v-pwkuc4": {
   "name": "Outlet Nederland b.v.",
@@ -47177,7 +47007,6 @@
   "website": "https://www.badentegel.nl/",
   "tel": "0715890425",
   "tel_disp": "071 589 0425",
-  "name_alt": "P. Meijer Bad & Tegel",
   "city_slug": "leiderdorp",
   "siblings": [
    {
@@ -47203,7 +47032,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/p-wildschut-sanitair-bg81ew": {
   "name": "P. Wildschut Sanitair",
@@ -47382,7 +47211,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Parkstad%20Installatie%20Techniek%20%26%20More&amp;query_place_id=ChIJ79g-rOqiwEcRAAodS32f9gU",
   "tel": "0629018765",
   "tel_disp": "06 29018765",
-  "name_alt": "Parkstad Installatie Techniek & More",
   "city_slug": "kerkrade",
   "siblings": [
    {
@@ -47418,7 +47246,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/particolare-ypwnh8": {
   "name": "Particolare",
@@ -47469,7 +47297,6 @@
   "website": "https://passier.nl/",
   "tel": "0703815923",
   "tel_disp": "070 381 5923",
-  "name_alt": "Passier Bathrooms & Wellness",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -47505,7 +47332,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/paul-aldenkamp-zoon-badkamers-cv-en-ventilatie-cyjku0": {
   "name": "Paul Aldenkamp &amp; Zoon - Badkamers, CV en Ventilatie",
@@ -47516,7 +47343,6 @@
   "website": "https://www.paulaldenkamp.nl/",
   "tel": "0334559481",
   "tel_disp": "033 455 9481",
-  "name_alt": "Paul Aldenkamp & Zoon - Badkamers, CV en Ventilatie",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -47552,7 +47378,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/paul-markwat-9eig9o": {
   "name": "Paul Markwat",
@@ -47849,7 +47675,6 @@
   "website": "https://pbsanitair.nl/",
   "tel": "0347785268",
   "tel_disp": "0347 785 268",
-  "name_alt": "Pellikaan & Bogaard Sanitair Lexmond",
   "city_slug": "lexmond",
   "siblings": [
    {
@@ -47860,7 +47685,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/pension-moerdijk-exsvmo": {
   "name": "Pension Moerdijk",
@@ -48012,7 +47837,6 @@
   "website": "https://pietboon.com/flagship-stores/bathroom/",
   "tel": "0202382579",
   "tel_disp": "020 238 2579",
-  "name_alt": "Piet Boon Bathroom & Salvatori Flagship Store",
   "city_slug": "oostzaan",
   "siblings": [
    {
@@ -48048,7 +47872,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/piet-boon-kitchen-flagship-store-g0kxby": {
   "name": "Piet Boon Kitchen Flagship Store",
@@ -48195,7 +48019,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Platinum%20Badkamers%20%26%20Tegelwerken&amp;query_place_id=ChIJ1YSLuX7nt0cRQdTOFu7whto",
   "tel": "0636056777",
   "tel_disp": "06 36056777",
-  "name_alt": "Platinum Badkamers & Tegelwerken",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -48231,7 +48054,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/plieger-alkmaar-showroom-fdltsm": {
   "name": "Plieger Alkmaar Showroom",
@@ -49902,7 +49725,6 @@
   "website": "https://www.prestigesanitair.nl/",
   "tel": "0302888191",
   "tel_disp": "030 288 8191",
-  "name_alt": "Prestige Sanitair & Tegels",
   "city_slug": "utrecht",
   "siblings": [
    {
@@ -49938,7 +49760,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/primabad-b-v-prz9z8": {
   "name": "Primabad B.V.",
@@ -50050,7 +49872,6 @@
   "website": "https://www.amsterdamgarden.com/privatesauna/algemeen",
   "tel": "0619117685",
   "tel_disp": "06 19117685",
-  "name_alt": "Private Sauna Laren - 't Gooi op Landgoed Nardinclant",
   "city_slug": "laren",
   "siblings": [
    {
@@ -50071,7 +49892,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/probadkamer-_y-734": {
   "name": "Probadkamer",
@@ -51621,7 +51442,6 @@
   "website": "http://www.ras-bv.nl/",
   "tel": "0527622070",
   "tel_disp": "0527 622 070",
-  "name_alt": "Ras Badkamers & Vloeren",
   "city_slug": "emmeloord",
   "siblings": [
    {
@@ -51657,7 +51477,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/rb-sanitair-tiel-outlet-f5zvau": {
   "name": "RB Sanitair Tiel Outlet",
@@ -51750,7 +51570,6 @@
   "website": "https://www.rcloodgieterseninstallatiewerk.nl/",
   "tel": "0650477152",
   "tel_disp": "06 50477152",
-  "name_alt": "RC Loodgieters & Installatiewerk",
   "city_slug": "bovenkarspel",
   "siblings": [
    {
@@ -51764,7 +51583,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/realeyz-interieurbouw-peg8ao": {
   "name": "Realeyz Interieurbouw",
@@ -51821,7 +51640,6 @@
   "website": "https://www.reddykeukens.nl/lelystad/",
   "tel": "0320419201",
   "tel_disp": "0320 419 201",
-  "name_alt": "REDDY Keukens & Badkamers Lelystad",
   "city_slug": "lelystad",
   "siblings": [
    {
@@ -51857,7 +51675,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/refracon-bouw-en-ovenbouw-axenho": {
   "name": "Refracon Bouw en Ovenbouw",
@@ -51940,7 +51758,6 @@
   "website": "https://www.regge-tegels.nl/",
   "tel": "0547385916",
   "tel_disp": "0547 385 916",
-  "name_alt": "Regge Tegels & Vloeren",
   "city_slug": "enter",
   "siblings": [
    {
@@ -51951,7 +51768,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/remon-waterontharders-matf0w": {
   "name": "Remon Waterontharders",
@@ -52480,11 +52297,10 @@
   "website": "http://www.rienk-sanitair.nl/",
   "tel": "0610466079",
   "tel_disp": "06 10466079",
-  "name_alt": "Rienk Sanitair & Tegels",
   "city_slug": "de-westereen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/rijnberg-afbouw-lvwlak": {
   "name": "Rijnberg Afbouw",
@@ -53146,11 +52962,10 @@
   "website": "http://www.rpkeukensensanitair.nl/",
   "tel": "0519235035",
   "tel_disp": "0519 235 035",
-  "name_alt": "RP Keukens & Sanitair BV",
   "city_slug": "dokkum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/rrsbouw-anacsy": {
   "name": "RRSbouw",
@@ -53299,7 +53114,6 @@
   "website": "http://www.rutters-smits.nl/",
   "tel": "0455426633",
   "tel_disp": "045 542 6633",
-  "name_alt": "Rutters & Smits Bouwmateriaal/ Tegelhandel BV",
   "city_slug": "heerlen",
   "siblings": [
    {
@@ -53335,7 +53149,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ruud-peeters-installaties-yfbhhm": {
   "name": "Ruud Peeters Installaties",
@@ -53437,7 +53251,6 @@
   "website": "http://www.kuipers-tegelwerk.nl",
   "tel": "0184622828",
   "tel_disp": "0184 622 828",
-  "name_alt": "S. Kuipers Tegelwerk & Badkamermontage",
   "city_slug": "hardinxveld-giessendam",
   "siblings": [
    {
@@ -53462,7 +53275,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/s-m-r-schouten-montage-ridderkerk-iwf9ys": {
   "name": "S.M.R. Schouten Montage Ridderkerk",
@@ -53554,7 +53367,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Sambor%20Afbouw%20%26%20Renovatie&amp;query_place_id=ChIJM-occf4ix0cR-o8nM-gjGdM",
   "tel": "0630602018",
   "tel_disp": "06 30602018",
-  "name_alt": "Sambor Afbouw & Renovatie",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -53590,7 +53402,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/samen-zorg-huis-leudal-ay-7ry": {
   "name": "Samen Zorg Huis Leudal",
@@ -58620,7 +58432,6 @@
   "website": "https://www.sanidump.nl/winkels/hoogeveen/",
   "tel": "0528202282",
   "tel_disp": "0528 202 282",
-  "name_alt": "Sanidump Hoogeveen Sanitair & Badkamers en Tegels",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -58656,7 +58467,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanidump-terneuzen-xz58ve": {
   "name": "Sanidump Terneuzen",
@@ -61939,11 +61750,10 @@
   "website": "https://www.sanitairtegelexpo.nl/",
   "tel": "0264721298",
   "tel_disp": "026 472 1298",
-  "name_alt": "Sanitair & Tegel Expo Heteren",
   "city_slug": "heteren",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/sanitair-tegel-expo-veenendaal--3codg": {
   "name": "Sanitair &amp; Tegel Expo Veenendaal",
@@ -61954,7 +61764,6 @@
   "website": "https://sanitairtegelexpo.nl/",
   "tel": "0318745791",
   "tel_disp": "0318 745 791",
-  "name_alt": "Sanitair & Tegel Expo Veenendaal",
   "city_slug": "veenendaal",
   "siblings": [
    {
@@ -61990,7 +61799,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitair-tegelcentrum-soesterberg-hz7law": {
   "name": "Sanitair &amp; Tegelcentrum Soesterberg",
@@ -62001,7 +61810,6 @@
   "website": "http://www.sanitair-tegels.nl/",
   "tel": "0346352194",
   "tel_disp": "0346 352 194",
-  "name_alt": "Sanitair & Tegelcentrum Soesterberg",
   "city_slug": "soesterberg",
   "siblings": [
    {
@@ -62012,7 +61820,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitair-tegelcentrum-weert-yubvs4": {
   "name": "Sanitair &amp; Tegelcentrum Weert",
@@ -62023,7 +61831,6 @@
   "website": "https://www.tegelcentrumweert.nl/",
   "tel": "0495633331",
   "tel_disp": "0495 633 331",
-  "name_alt": "Sanitair & Tegelcentrum Weert",
   "city_slug": "weert",
   "siblings": [
    {
@@ -62059,7 +61866,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitair-tegelhandel-bogerd-56-gt8": {
   "name": "Sanitair &amp; Tegelhandel Bogerd",
@@ -62070,7 +61877,6 @@
   "website": "http://www.tegelenbadkameratelier.nl/",
   "tel": "0646066063",
   "tel_disp": "06 46066063",
-  "name_alt": "Sanitair & Tegelhandel Bogerd",
   "city_slug": "oosterhout",
   "siblings": [
    {
@@ -62106,7 +61912,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitair-tegelhandel-van-den-hoek-zglmgm": {
   "name": "Sanitair&amp;Tegelhandel Van den Hoek",
@@ -62117,7 +61923,6 @@
   "website": "http://www.hoekbadkamers.nl/",
   "tel": "0334944929",
   "tel_disp": "033 494 4929",
-  "name_alt": "Sanitair&Tegelhandel Van den Hoek",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -62153,7 +61958,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitair-tegeloutlet-kaatsheuvel-ssm1ns": {
   "name": "Sanitair &amp; Tegeloutlet Kaatsheuvel",
@@ -62164,7 +61969,6 @@
   "website": "https://www.sanitairentegeloutlet.nl/",
   "tel": "0416785495",
   "tel_disp": "0416 785 495",
-  "name_alt": "Sanitair & Tegeloutlet Kaatsheuvel",
   "city_slug": "kaatsheuvel",
   "siblings": [
    {
@@ -62195,7 +61999,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitair-tegelspecialist-de-jong-5zjajk": {
   "name": "Sanitair &amp; Tegelspecialist De Jong",
@@ -62206,7 +62010,6 @@
   "website": "http://www.dejongsanitair.nl/",
   "tel": "0582332280",
   "tel_disp": "058 233 2280",
-  "name_alt": "Sanitair & Tegelspecialist De Jong",
   "city_slug": "gytsjerk",
   "siblings": [
    {
@@ -62217,7 +62020,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitair-van-der-veen-sanitairwinkel-friesland-nrbx4q": {
   "name": "Sanitair van der Veen - Sanitairwinkel Friesland",
@@ -62687,7 +62490,6 @@
   "website": "https://sanitairkamer.nl/showroom-den-bosch/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb-listing",
   "tel": "0737601122",
   "tel_disp": "073 760 1122",
-  "name_alt": "Sanitairkamer 's-Hertogenbosch - Den Bosch",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -62723,7 +62525,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanitairkamer-showroom-harderwijk-ige4gi": {
   "name": "Sanitairkamer showroom Harderwijk",
@@ -64005,7 +63807,6 @@
   "website": "https://www.saniworks.nl/",
   "tel": "0625292484",
   "tel_disp": "06 25292484",
-  "name_alt": "SaniWorks | Loodgieter, Badkamer & Toilet renovatie",
   "city_slug": "alphen-aan-den-rijn",
   "siblings": [
    {
@@ -64041,7 +63842,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sanohome-b-v-mdt0oc": {
   "name": "SanoHome B.V.",
@@ -64143,7 +63944,6 @@
   "website": "https://www.sarideco.nl/",
   "tel": "0702042166",
   "tel_disp": "070 204 2166",
-  "name_alt": "Sari Tegel & Raamdecoratie",
   "city_slug": "rijswijk",
   "siblings": [
    {
@@ -64179,7 +63979,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/saverne-tegels-en-sanitair-zoetermeer-cinh5g": {
   "name": "Saverne Tegels en Sanitair Zoetermeer",
@@ -64236,7 +64036,6 @@
   "website": "https://www.schalkkeuken-bad.nl/",
   "tel": "0499223000",
   "tel_disp": "0499 223 000",
-  "name_alt": "Schalk Keuken & Bad",
   "city_slug": "oirschot",
   "siblings": [
    {
@@ -64257,7 +64056,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/scheepstra-installatiebedrijf-wjrr7e": {
   "name": "Scheepstra Installatiebedrijf",
@@ -64438,7 +64237,6 @@
   "website": "https://www.schonkerenbv.nl/?y_source=1_MjIzOTY1Ni03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0495457111",
   "tel_disp": "0495 457 111",
-  "name_alt": "Schonkeren BV Sanitair & Centrale Verwarming",
   "city_slug": "weert",
   "siblings": [
    {
@@ -64474,7 +64272,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/schoute-bouwmaterialen-b-v-7m9uc4": {
   "name": "Schoute Bouwmaterialen B.V.",
@@ -64531,7 +64329,6 @@
   "website": "https://www.badinbeeld.nl/showrooms/schouten-tegels-sanitair/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp",
   "tel": "0180794065",
   "tel_disp": "0180 794 065",
-  "name_alt": "Schouten Tegels & Sanitair",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -64567,7 +64364,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/schram-sanitair-y6jofm": {
   "name": "Schram Sanitair",
@@ -65121,11 +64918,10 @@
   "website": "https://www.sigase.nl/?utm_source=google&amp;utm_medium=maps&amp;utm_campaign=My+business",
   "tel": "0629182406",
   "tel_disp": "06 29182406",
-  "name_alt": "Sigase B.V | Badkamer renovatie & verbouwing",
   "city_slug": "vlijmen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/simeth-installatietechniek-mmg2ye": {
   "name": "Simeth Installatietechniek",
@@ -65182,7 +64978,6 @@
   "website": "http://www.sixtyfruits.nl/",
   "tel": "0850608456",
   "tel_disp": "085 060 8456",
-  "name_alt": "Sixty Fruits Vintage Retro Dressoirs & Badkamermeubels",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -65218,7 +65013,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sj-bouwrenovatie-fnmcrc": {
   "name": "SJ bouwrenovatie",
@@ -65406,11 +65201,10 @@
   "website": "https://www.sluyk.nl/",
   "tel": "0180661672",
   "tel_disp": "0180 661 672",
-  "name_alt": "Sluyk keukens & Badkamers & Doe Het Zelf",
   "city_slug": "lekkerkerk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/smaragd-installatie-service-ibec2c": {
   "name": "Smaragd Installatie Service",
@@ -66438,7 +66232,6 @@
   "website": "http://www.stoneconcepts.nl/",
   "tel": "0174642270",
   "tel_disp": "0174 642 270",
-  "name_alt": "Stone Concepts B.V. - Tegels & Sanitair",
   "city_slug": "naaldwijk",
   "siblings": [
    {
@@ -66464,7 +66257,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/stoop-installatiewerken-bzd_uc": {
   "name": "Stoop installatiewerken",
@@ -66573,7 +66366,6 @@
   "website": "https://strousbadkamers.nl/",
   "tel": "0777810039",
   "tel_disp": "077 781 0039",
-  "name_alt": "Strous Badkamers & Tegels",
   "city_slug": "reuver",
   "siblings": [
    {
@@ -66584,7 +66376,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/sts-projects-yo9uew": {
   "name": "STS Projects",
@@ -66912,7 +66704,6 @@
   "website": "http://www.svmbouw.nl/",
   "tel": "0638908753",
   "tel_disp": "06 38908753",
-  "name_alt": "SVM bouw & renovatie",
   "city_slug": "kampen",
   "siblings": [
    {
@@ -66948,7 +66739,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/syro-stone-tegel-sanitair-emmeloord-cmera0": {
   "name": "Syro Stone - Tegel &amp; Sanitair Emmeloord",
@@ -66959,7 +66750,6 @@
   "website": "https://www.syrostone.nl/",
   "tel": "0527239068",
   "tel_disp": "0527 239 068",
-  "name_alt": "Syro Stone - Tegel & Sanitair Emmeloord",
   "city_slug": "emmeloord",
   "siblings": [
    {
@@ -66995,7 +66785,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/t-gooisch-vloerenhuys-eemnes-wj79fy": {
   "name": "&#x27;t Gooisch Vloerenhuys Eemnes",
@@ -67006,7 +66796,6 @@
   "website": "http://www.gooischevloerenhuys.nl/",
   "tel": "0355388081",
   "tel_disp": "035 538 8081",
-  "name_alt": "'t Gooisch Vloerenhuys Eemnes",
   "city_slug": "eemnes",
   "siblings": [
    {
@@ -67042,7 +66831,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/t-hartemink-bouwservice-en-onderhoud-2e4iag": {
   "name": "T. Hartemink Bouwservice en Onderhoud",
@@ -67073,7 +66862,6 @@
   "website": "http://www.thuys.design/",
   "tel": "0743030506",
   "tel_disp": "074 303 0506",
-  "name_alt": "'t Huys Design Hengelo",
   "city_slug": "hengelo",
   "siblings": [
    {
@@ -67109,7 +66897,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/t-j-w-allround-s-vgpc": {
   "name": "T.J.W Allround",
@@ -67166,7 +66954,6 @@
   "website": "http://www.pakhuysbadkamers.nl/",
   "tel": "0413369933",
   "tel_disp": "0413 369 933",
-  "name_alt": "'t Pakhuys Badkamers",
   "city_slug": "veghel",
   "siblings": [
    {
@@ -67197,7 +66984,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/t-waterhuys-kqdav8": {
   "name": "&#x27;t Waterhuys",
@@ -67208,7 +66995,6 @@
   "website": "https://www.waterhuys.nl/",
   "tel": "0513460960",
   "tel_disp": "0513 460 960",
-  "name_alt": "'t Waterhuys",
   "city_slug": "gorredijk",
   "siblings": [
    {
@@ -67219,7 +67005,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tanke-bouw-en-onderhoud-kckgpa": {
   "name": "Tanke Bouw en Onderhoud",
@@ -67366,7 +67152,6 @@
   "website": "https://www.tcs-sanitair.nl/",
   "tel": "0102108068",
   "tel_disp": "010 210 8068",
-  "name_alt": "TCS Tegelcentrum & Sanitair",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -67402,7 +67187,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/technisch-buro-sora-xqwy7m": {
   "name": "Technisch Buro Sora",
@@ -67635,7 +67420,6 @@
   "website": "http://www.toonlangeveld.nl/",
   "tel": "0546863599",
   "tel_disp": "0546 863 599",
-  "name_alt": "Teg.- & Sanitairh., Verb. en Timmerbedr. A.H.J. Langeveld",
   "city_slug": "almelo",
   "siblings": [
    {
@@ -67671,7 +67455,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegel-ambacht-harderwijk-h0idcs": {
   "name": "Tegel Ambacht Harderwijk",
@@ -67742,11 +67526,10 @@
   "website": "https://www.tenbstudio.nl/",
   "tel": "0495238210",
   "tel_disp": "0495 238 210",
-  "name_alt": "Tegel & BadkamerStudio Maarheeze",
   "city_slug": "maarheeze",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/tegel-en-meer-m4e6mm": {
   "name": "Tegel en meer",
@@ -67927,7 +67710,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Tegel%20%26%20metselbedrijf%20Barry%20Overbeek&amp;query_place_id=ChIJrQVUTmp_xkcRVkws5R6a61k",
   "tel": "0610568549",
   "tel_disp": "06 10568549",
-  "name_alt": "Tegel & metselbedrijf Barry Overbeek",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -67963,7 +67745,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegel-outlet-aalsmeer-b-v--gv4mi": {
   "name": "Tegel Outlet Aalsmeer B.V.",
@@ -68235,7 +68017,6 @@
   "website": "http://www.tegeldepot.nl/",
   "tel": "0368442222",
   "tel_disp": "036 844 2222",
-  "name_alt": "Tegel- & Sanitair Depot Zeewolde",
   "city_slug": "zeewolde",
   "siblings": [
    {
@@ -68271,7 +68052,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegel-sanitair-outlet-tienray-w7seso": {
   "name": "Tegel &amp; Sanitair Outlet Tienray",
@@ -68282,11 +68063,10 @@
   "website": "https://www.tegel-outlet.com/",
   "tel": "0478700520",
   "tel_disp": "0478 700 520",
-  "name_alt": "Tegel & Sanitair Outlet Tienray",
   "city_slug": "tienray",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/tegel-sanitair-specialist-renkum-xrpgg4": {
   "name": "Tegel &amp; Sanitair Specialist Renkum",
@@ -68297,11 +68077,10 @@
   "website": "http://www.tegelsanitairspecialist.nl/gelderland/",
   "tel": "0317311061",
   "tel_disp": "0317 311 061",
-  "name_alt": "Tegel & Sanitair Specialist Renkum",
   "city_slug": "heelsum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/tegel-sanitaircentrum-brinkman-stitselaar-awfi9u": {
   "name": "Tegel- &amp; Sanitaircentrum Brinkman Stitselaar",
@@ -68312,7 +68091,6 @@
   "website": "http://www.brinkmanstitselaar.nl/",
   "tel": "0341434320",
   "tel_disp": "0341 434 320",
-  "name_alt": "Tegel- & Sanitaircentrum Brinkman Stitselaar",
   "city_slug": "harderwijk",
   "siblings": [
    {
@@ -68348,7 +68126,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegel-sanitairhal-heesch-1ftija": {
   "name": "Tegel- &amp; Sanitairhal Heesch",
@@ -68359,7 +68137,6 @@
   "website": "http://www.tegelhalheesch.nl/",
   "tel": "0412459295",
   "tel_disp": "0412 459 295",
-  "name_alt": "Tegel- & Sanitairhal Heesch",
   "city_slug": "heesch",
   "siblings": [
    {
@@ -68370,7 +68147,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegel-sanitairmarkt-roeloffzen-8plp1m": {
   "name": "Tegel &amp; Sanitairmarkt Roeloffzen",
@@ -68381,7 +68158,6 @@
   "website": "https://www.tegelmarktalmelo.nl/",
   "tel": "0546810708",
   "tel_disp": "0546 810 708",
-  "name_alt": "Tegel & Sanitairmarkt Roeloffzen",
   "city_slug": "almelo",
   "siblings": [
    {
@@ -68417,7 +68193,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegel-showroom-brunssum-uv4f60": {
   "name": "Tegel Showroom Brunssum",
@@ -68846,7 +68622,6 @@
   "website": "http://www.tegelhalbrabant.nl/",
   "tel": "0497641490",
   "tel_disp": "0497 641 490",
-  "name_alt": "Tegelhal & Badkamers Brabant B.V.",
   "city_slug": "reusel",
   "siblings": [
    {
@@ -68871,7 +68646,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegelhal-zuid-tegelhal-outlet-tegelhuis-showroom-eigen-tegelzetters-vch6hg": {
   "name": "Tegelhal Zuid | Tegelhal Outlet | Tegelhuis Showroom | Eigen Tegelzetters",
@@ -69290,11 +69065,10 @@
   "website": "https://tegelhome.nl/",
   "tel": "0522445151",
   "tel_disp": "0522 445 151",
-  "name_alt": "Tegelhome & HV Wonen",
   "city_slug": "rogat",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/tegelhuis-badkamers-en-tegels-fozkkg": {
   "name": "Tegelhuis Badkamers en Tegels",
@@ -69443,7 +69217,6 @@
   "website": "https://www.tegelhuysarnhem.nl/",
   "tel": "0263617522",
   "tel_disp": "026 361 7522",
-  "name_alt": "Tegelhuys Arnhem Tegels, Sanitair & Aannemingsbedrijf",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -69479,7 +69252,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegelhuys-gieten-s2q3q8": {
   "name": "Tegelhuys Gieten",
@@ -69510,7 +69283,6 @@
   "website": "https://www.tegelhuystwenthe.nl/",
   "tel": "0620794630",
   "tel_disp": "06 20794630",
-  "name_alt": "Tegelhuys Twenthe - tegels & sanitair",
   "city_slug": "enschede",
   "siblings": [
    {
@@ -69546,7 +69318,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegelhuys-wijhe-3cvfmy": {
   "name": "Tegelhuys Wijhe",
@@ -70027,7 +69799,6 @@
   "website": "https://www.tegeloutletheerenveen.nl/",
   "tel": "0655173146",
   "tel_disp": "06 55173146",
-  "name_alt": "Tegels & Sanitair Heerenveen",
   "city_slug": "heerenveen",
   "siblings": [
    {
@@ -70063,7 +69834,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegels-sanitair-hoogeveen-tukg-a": {
   "name": "Tegels &amp; Sanitair Hoogeveen",
@@ -70074,7 +69845,6 @@
   "website": "http://www.tegelsensanitairhoogeveen-badkamers.nl/",
   "tel": "0528271120",
   "tel_disp": "0528 271 120",
-  "name_alt": "Tegels & Sanitair Hoogeveen",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -70110,7 +69880,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegels-sanitair-stienstra-b-v-w56f38": {
   "name": "Tegels &amp; Sanitair Stienstra B.V.",
@@ -70121,7 +69891,6 @@
   "website": "https://www.stienstrajoure.nl/",
   "tel": "0513414413",
   "tel_disp": "0513 414 413",
-  "name_alt": "Tegels & Sanitair Stienstra B.V.",
   "city_slug": "joure",
   "siblings": [
    {
@@ -70132,7 +69901,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegels-square-tegelwerk-vloer-en-wandtegels-qza0ew": {
   "name": "Tegels Square Tegelwerk Vloer- en wandtegels",
@@ -71113,7 +70882,6 @@
   "website": "http://www.dannystegelservice.nl/",
   "tel": "0653823116",
   "tel_disp": "06 53823116",
-  "name_alt": "Tegelzetbedrijf Danny's Tegelservice",
   "city_slug": "enkhuizen",
   "siblings": [
    {
@@ -71138,7 +70906,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegelzetbedrijf-frijsteen-jr-djfkss": {
   "name": "Tegelzetbedrijf Frijsteen JR",
@@ -71276,7 +71044,6 @@
   "website": "http://www.tegelzetbedrijfhoose.nl/",
   "tel": "0246794911",
   "tel_disp": "024 679 4911",
-  "name_alt": "Tegelzetbedrijf & Natuursteenwerken Hoose BV",
   "city_slug": "wijchen",
   "siblings": [
    {
@@ -71312,7 +71079,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegelzetbedrijf-van-woudenberg-b-v-hfbtco": {
   "name": "Tegelzetbedrijf Van Woudenberg B.V.",
@@ -71808,7 +71575,6 @@
   "website": "https://www.tegl.nl/?utm_source=gmb&amp;utm_medium=organic&amp;utm_campaign=gmb+",
   "tel": "0342221900",
   "tel_disp": "0342 221 900",
-  "name_alt": "TÉGL | Da's prettig kiezen",
   "city_slug": "barneveld",
   "siblings": [
    {
@@ -71837,7 +71603,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tegro-sanitair-verwarming-qkfvn8": {
   "name": "TEGRO Sanitair &amp; Verwarming",
@@ -71848,7 +71614,6 @@
   "website": "http://www.tegro.nl/?y_source=1_MjEwOTU3MC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0135434215",
   "tel_disp": "013 543 4215",
-  "name_alt": "TEGRO Sanitair & Verwarming",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -71884,7 +71649,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/temm-las-dxxyqg": {
   "name": "Temm-las",
@@ -72075,7 +71840,6 @@
   "website": "https://www.terraplumbing.nl/",
   "tel": "0633047093",
   "tel_disp": "06 33047093",
-  "name_alt": "Terra Plumbing & Renovation",
   "city_slug": "hellevoetsluis",
   "siblings": [
    {
@@ -72109,7 +71873,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/terrassencamping-osebos-b-v-xrlfcq": {
   "name": "Terrassencamping Osebos B.V.",
@@ -72166,7 +71930,6 @@
   "website": "http://www.teunissen-becking.nl/",
   "tel": "0546574080",
   "tel_disp": "0546 574 080",
-  "name_alt": "Teunissen & Becking | Keukens, Badkamers en Tegels",
   "city_slug": "almelo",
   "siblings": [
    {
@@ -72202,7 +71965,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tgs-huizen-3_upge": {
   "name": "TGS Huizen",
@@ -72590,7 +72353,6 @@
   "website": "http://www.timelessfloors.nl/",
   "tel": "0645590071",
   "tel_disp": "06 45590071",
-  "name_alt": "Timeless Floors vloeren & sanitair",
   "city_slug": "roelofarendsveen",
   "siblings": [
    {
@@ -72611,7 +72373,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/timmbouw-rifbja": {
   "name": "TIMMBOUW",
@@ -72713,7 +72475,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Timmer%20%26%20Interieurbouw%20Vuijk&amp;query_place_id=ChIJrxuG_vCRxEcRo6wMG6tOrh0",
   "tel": "0641890225",
   "tel_disp": "06 41890225",
-  "name_alt": "Timmer & Interieurbouw Vuijk",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -72749,7 +72510,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/timmer-onderhoudsbedrijf-r-van-wensveen-qs36bu": {
   "name": "Timmer &amp; Onderhoudsbedrijf R. van Wensveen",
@@ -72759,11 +72520,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Timmer%20%26%20Onderhoudsbedrijf%20R.%20van%20Wensveen&amp;query_place_id=ChIJGTPimlnSxUcRmGaR6qs36BU",
   "tel": "0180313176",
   "tel_disp": "0180 313 176",
-  "name_alt": "Timmer & Onderhoudsbedrijf R. van Wensveen",
   "city_slug": "nieuwerkerk-aan-den-ijssel",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/timmerbedrijf-bijlsma-crihla": {
   "name": "Timmerbedrijf Bijlsma",
@@ -72800,7 +72560,6 @@
   "website": "http://www.timmersbarlo.nl/",
   "tel": "0543539762",
   "tel_disp": "0543 539 762",
-  "name_alt": "Timmers Terrazzo & tegelwerken",
   "city_slug": "aalten",
   "siblings": [
    {
@@ -72835,7 +72594,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tisaco-bouwen-wonen-3q9_-8": {
   "name": "Tisaco Bouwen &amp; Wonen",
@@ -72844,7 +72603,6 @@
   "website": "https://www.tisaco.nl/",
   "tel": "0455242330",
   "tel_disp": "045 524 2330",
-  "name_alt": "Tisaco Bouwen & Wonen",
   "city_slug": "nuth",
   "siblings": [
    {
@@ -72878,7 +72636,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/tiz-design-b-v-xfeves": {
   "name": "TIZ Design b.v.",
@@ -73002,7 +72760,6 @@
   "website": "https://www.tolkampdesign.nl/",
   "tel": "0543515200",
   "tel_disp": "0543 515 200",
-  "name_alt": "Tolkamp Keukens & Badkamers",
   "city_slug": "winterswijk",
   "siblings": [
    {
@@ -73028,7 +72785,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tommy-tolkamp-grondwerken-rioolservice-t0botk": {
   "name": "Tommy Tolkamp grondwerken &amp; rioolservice",
@@ -73039,7 +72796,6 @@
   "website": "http://tommytolkamp.nl/",
   "tel": "0650986987",
   "tel_disp": "06 50986987",
-  "name_alt": "Tommy Tolkamp grondwerken & rioolservice",
   "city_slug": "aalten",
   "siblings": [
    {
@@ -73074,7 +72830,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/ton-mestrom-badkamerstyling-dxkd8i": {
   "name": "Ton Mestrom Badkamerstyling",
@@ -73564,7 +73320,6 @@
   "website": "http://www.troosttegels.nl/",
   "tel": "0756160187",
   "tel_disp": "075 616 0187",
-  "name_alt": "Troost Tegelzetters & Natuursteen",
   "city_slug": "oostzaan",
   "siblings": [
    {
@@ -73599,7 +73354,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v4"
  },
  "bedrijf/tuijp-keuken-badkamer-tegels-utzylu": {
   "name": "Tuijp Keuken, Badkamer &amp; Tegels",
@@ -73610,7 +73365,6 @@
   "website": "https://www.tuijpkeukenenbad.nl/",
   "tel": "0299366466",
   "tel_disp": "0299 366 466",
-  "name_alt": "Tuijp Keuken, Badkamer & Tegels",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -73626,7 +73380,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/tuinenhuis-nl-8d9c0s": {
   "name": "Tuinenhuis.nl",
@@ -73986,7 +73740,6 @@
   "website": "http://valsterafbouwenmontage.nl/",
   "tel": "0634410686",
   "tel_disp": "06 34410686",
-  "name_alt": "Valster Afbouw & Montage",
   "city_slug": "dordrecht",
   "siblings": [
    {
@@ -74022,7 +73775,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-ballegooijen-badkamers-laarng": {
   "name": "Van Ballegooijen Badkamers",
@@ -74166,7 +73919,6 @@
   "website": "https://vanboven.nl/",
   "tel": "0735941427",
   "tel_disp": "073 594 1427",
-  "name_alt": "Van Boven Luxe Keukens Badkamers & Tegels",
   "city_slug": "den-dungen",
   "siblings": [
    {
@@ -74182,7 +73934,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-daal-mqfjni": {
   "name": "Van Daal",
@@ -74239,7 +73991,6 @@
   "website": "https://vandebeekduursema.nl/",
   "tel": "0681015899",
   "tel_disp": "06 81015899",
-  "name_alt": "Van de Beek & Duursema",
   "city_slug": "nijkerk",
   "siblings": [
    {
@@ -74260,7 +74011,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-de-breevaart-afbouw-yaqevi": {
   "name": "Van de Breevaart Afbouw",
@@ -74479,7 +74230,6 @@
   "website": "http://www.vd-akker.nl/",
   "tel": "0413256200",
   "tel_disp": "0413 256 200",
-  "name_alt": "Van den Akker Tegels & Sanitair - Zeeland/Uden",
   "city_slug": "zeeland",
   "siblings": [
    {
@@ -74490,7 +74240,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-den-berg-lopik-b-v-k21adm": {
   "name": "Van den Berg Lopik B.V.",
@@ -74547,7 +74297,6 @@
   "website": "https://vdbergbadkamers.nl/",
   "tel": "0226313639",
   "tel_disp": "0226 313 639",
-  "name_alt": "Van den Berg Tegels & Badkamers Broek op Langedijk",
   "city_slug": "broek-op-langedijk",
   "siblings": [
    {
@@ -74558,7 +74307,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-den-berg-tegels-badkamers-schagen-ac2r2w": {
   "name": "Van den Berg Tegels &amp; Badkamers Schagen",
@@ -74569,7 +74318,6 @@
   "website": "https://vdbergbadkamers.nl/",
   "tel": "0224291203",
   "tel_disp": "0224 291 203",
-  "name_alt": "Van den Berg Tegels & Badkamers Schagen",
   "city_slug": "schagen",
   "siblings": [
    {
@@ -74605,7 +74353,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-den-boomen-badkamers-mtavsy": {
   "name": "Van den Boomen badkamers",
@@ -74747,7 +74495,6 @@
   "website": "https://www.vandenhazelkeukens.nl/?utm_source=local&amp;utm_medium=organic&amp;utm_campaign=gmb-website-ede",
   "tel": "0318240311",
   "tel_disp": "0318 240 311",
-  "name_alt": "Van den Hazel Keukens & Bad",
   "city_slug": "ede",
   "siblings": [
    {
@@ -74783,7 +74530,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-den-hazel-keukens-lelystad-vgnvcq": {
   "name": "Van Den Hazel Keukens Lelystad",
@@ -74914,7 +74661,6 @@
   "website": "http://www.vanderheijdentegels.nl/",
   "tel": "0712100107",
   "tel_disp": "071 210 0107",
-  "name_alt": "van der Heijden sanitair & tegels",
   "city_slug": "roelofarendsveen",
   "siblings": [
    {
@@ -74935,7 +74681,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-der-lee-onderhoud-en-renovatie-sxy3ca": {
   "name": "Van der Lee Onderhoud en Renovatie",
@@ -75026,7 +74772,6 @@
   "website": "http://www.vd-stad.nl/",
   "tel": "0243773942",
   "tel_disp": "024 377 3942",
-  "name_alt": "Van der Stad Keukens Tegels & Sanitair",
   "city_slug": "nijmegen",
   "siblings": [
    {
@@ -75062,7 +74807,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-der-stad-nijmegen-ijzerwaren-onderdeel-van-polvo-sj-msa": {
   "name": "Van der Stad Nijmegen (ijzerwaren) - onderdeel van Polvo",
@@ -75375,7 +75120,6 @@
   "website": "http://www.vanduijsen.nl/",
   "tel": "0582801182",
   "tel_disp": "058 280 1182",
-  "name_alt": "Van Duijsen Keukens Badkamers & Tegels",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -75411,7 +75155,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-elteren-badkamer-tegelwerken-vnr3-8": {
   "name": "Van Elteren Badkamer- &amp; Tegelwerken",
@@ -75421,7 +75165,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Elteren%20Badkamer-%20%26%20Tegelwerken&amp;query_place_id=ChIJd8F4T9gexEcReVa-pVnR3-8",
   "tel": "0622200482",
   "tel_disp": "06 22200482",
-  "name_alt": "Van Elteren Badkamer- & Tegelwerken",
   "city_slug": "etten-leur",
   "siblings": [
    {
@@ -75457,7 +75200,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-gemert-installatiegroep-bv-eai0tg": {
   "name": "Van Gemert Installatiegroep BV",
@@ -75808,11 +75551,10 @@
   "website": "https://vankoppenbouw.nl/",
   "tel": "0187682091",
   "tel_disp": "0187 682 091",
-  "name_alt": "Van Koppen - Aannemings- & Bouwbedrijf",
   "city_slug": "ouddorp",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/van-leeuwen-badkamers-totaalonderhoud-y9aeki": {
   "name": "van Leeuwen Badkamers &amp; Totaalonderhoud",
@@ -75823,7 +75565,6 @@
   "website": "https://www.vanleeuwentotaalonderhoud.nl/",
   "tel": "0625213888",
   "tel_disp": "06 25213888",
-  "name_alt": "van Leeuwen Badkamers & Totaalonderhoud",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -75854,7 +75595,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-leeuwen-keukens-b-v-poggenpohl-studio-wassenaar-ld_msu": {
   "name": "van Leeuwen Keukens B.V. &amp; PoggenPohl Studio Wassenaar",
@@ -75865,7 +75606,6 @@
   "website": "http://www.vanleeuwenkeukens.nl/",
   "tel": "0705112200",
   "tel_disp": "070 511 2200",
-  "name_alt": "van Leeuwen Keukens B.V. & PoggenPohl Studio Wassenaar",
   "city_slug": "wassenaar",
   "siblings": [
    {
@@ -75881,7 +75621,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-manen-woonthemacentrum-q9eqte": {
   "name": "Van Manen WoonThemaCentrum",
@@ -76200,7 +75940,6 @@
   "website": "http://qualitabadkamers.nl/",
   "tel": "0650736485",
   "tel_disp": "06 50736485",
-  "name_alt": "van Pol Bouw & Onderhoud",
   "city_slug": "brunssum",
   "siblings": [
    {
@@ -76236,7 +75975,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/van-rijn-products--ol0dm": {
   "name": "Van Rijn Products",
@@ -76836,11 +76575,10 @@
   "website": "https://www.veneklaasbadkamers.nl/",
   "tel": "0548789854",
   "tel_disp": "0548 789 854",
-  "name_alt": "Veneklaas Bouw & Verbouw",
   "city_slug": "holten",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/venoo-interieur-egaj20": {
   "name": "VeNoo Interieur",
@@ -77552,11 +77290,10 @@
   "website": "https://www.voortmanpesse.nl/",
   "tel": "0857605032",
   "tel_disp": "085 760 5032",
-  "name_alt": "Voortman Badkamers, Keukens & Tegels",
   "city_slug": "pesse",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/voortman-tegel-en-metselwerken-_qjmxu": {
   "name": "Voortman tegel- en metselwerken",
@@ -77880,7 +77617,6 @@
   "website": "https://www.wagemakermarmergraniet.nl/",
   "tel": "0187489088",
   "tel_disp": "0187 489 088",
-  "name_alt": "Wagemaker Marmer & Graniet Middelharnis",
   "city_slug": "middelharnis",
   "siblings": [
    {
@@ -77906,7 +77642,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wagemans-i56etg": {
   "name": "Wagemans",
@@ -78044,7 +77780,6 @@
   "website": "http://www.wvwijchen.nl/",
   "tel": "0248200926",
   "tel_disp": "024 820 0926",
-  "name_alt": "Wand&Vloertegels Wijchen",
   "city_slug": "wijchen",
   "siblings": [
    {
@@ -78080,7 +77815,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wanders-van-kessel-9vi1j8": {
   "name": "Wanders van Kessel",
@@ -79210,7 +78945,6 @@
   "website": "http://www.studio-wendy.nl/",
   "tel": "0610774442",
   "tel_disp": "06 10774442",
-  "name_alt": "WENDY. Interieur & Styling",
   "city_slug": "grave",
   "siblings": [
    {
@@ -79246,7 +78980,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wenters-keukens-sanitair-bpmo6i": {
   "name": "Wenters Keukens &amp; Sanitair",
@@ -79257,7 +78991,6 @@
   "website": "https://www.sanitairaanhuis.nl/",
   "tel": "0543200104",
   "tel_disp": "0543 200 104",
-  "name_alt": "Wenters Keukens & Sanitair",
   "city_slug": "winterswijk",
   "siblings": [
    {
@@ -79283,7 +79016,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wesley-keeris-installatietechniek-svhvsc": {
   "name": "Wesley Keeris Installatietechniek",
@@ -79384,7 +79117,6 @@
   "website": "https://www.westhage-it.nl/",
   "tel": "0857010460",
   "tel_disp": "085 701 0460",
-  "name_alt": "Westhage Loodgieters & Installatietechniek",
   "city_slug": "rijswijk",
   "siblings": [
    {
@@ -79420,7 +79152,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/westland-kittechniek-6q4j5m": {
   "name": "Westland kittechniek",
@@ -79461,11 +79193,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Wibegro%20Keukens%20%26%20Badkamers&amp;query_place_id=ChIJ64W-HeSjx0cR1GkFO0Z5SDs",
   "tel": "0263190350",
   "tel_disp": "026 319 0350",
-  "name_alt": "Wibegro Keukens & Badkamers",
   "city_slug": "westervoort",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/wierts-6sthgy": {
   "name": "Wierts",
@@ -79752,7 +79483,6 @@
   "website": "https://www.windsorbathrooms.nl/",
   "tel": "0582165070",
   "tel_disp": "058 216 5070",
-  "name_alt": "Windsor Bathrooms Showroom - \"The House of Windsor\"",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -79788,7 +79518,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/winter-badkamers-vv_izq": {
   "name": "Winter Badkamers",
@@ -79963,11 +79693,10 @@
   "website": "http://www.wolterskeukens.nl/",
   "tel": "0570656944",
   "tel_disp": "0570 656 944",
-  "name_alt": "Wolters Keuken & Bad",
   "city_slug": "colmschate",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v3"
  },
  "bedrijf/wonentegels-je6gwg": {
   "name": "wonentegels",
@@ -80262,7 +79991,6 @@
   "reviews": "3071",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Woonboulevard%20Middelburg%20%27de%20Mortiere%27&amp;query_place_id=ChIJ8zTlSOuQxEcRwwAwPjqZtU8",
   "website": "http://woonboulevarddemortiere.nl/",
-  "name_alt": "Woonboulevard Middelburg 'de Mortiere'",
   "city_slug": "middelburg",
   "siblings": [
    {
@@ -80298,7 +80026,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/woonboulevard-nijmegen-ofv5vc": {
   "name": "Woonboulevard Nijmegen",
@@ -80531,7 +80259,6 @@
   "website": "https://www.wooning.nl/vestigingen/bergschenhoek/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0105242300",
   "tel_disp": "010 524 2300",
-  "name_alt": "Wooning Keukens & Badkamers - Bergschenhoek",
   "city_slug": "bergschenhoek",
   "siblings": [
    {
@@ -80567,7 +80294,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wooning-keukens-badkamers-naaldwijk-ykrzkq": {
   "name": "Wooning Keukens &amp; Badkamers - Naaldwijk",
@@ -80578,7 +80305,6 @@
   "website": "https://www.wooning.nl/vestigingen/naaldwijk/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0174670822",
   "tel_disp": "0174 670 822",
-  "name_alt": "Wooning Keukens & Badkamers - Naaldwijk",
   "city_slug": "naaldwijk",
   "siblings": [
    {
@@ -80604,7 +80330,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wooning-keukens-badkamers-rotterdam-wa-vis": {
   "name": "Wooning Keukens &amp; Badkamers - Rotterdam",
@@ -80615,7 +80341,6 @@
   "website": "https://www.wooning.nl/vestigingen/rotterdam/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0104791944",
   "tel_disp": "010 479 1944",
-  "name_alt": "Wooning Keukens & Badkamers - Rotterdam",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -80651,7 +80376,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wooning-keukens-badkamers-spijkenisse-tolazo": {
   "name": "Wooning Keukens &amp; Badkamers - Spijkenisse",
@@ -80662,7 +80387,6 @@
   "website": "https://www.wooning.nl/vestigingen/spijkenisse/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0181283245",
   "tel_disp": "0181 283 245",
-  "name_alt": "Wooning Keukens & Badkamers - Spijkenisse",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -80698,7 +80422,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wooning-keukens-badkamers-vlaardingen-7nzlai": {
   "name": "Wooning Keukens &amp; Badkamers - Vlaardingen",
@@ -80709,7 +80433,6 @@
   "website": "https://www.wooning.nl/vestigingen/vlaardingen/?utm_source=GMB_listing&amp;utm_medium=organic",
   "tel": "0104600670",
   "tel_disp": "010 460 0670",
-  "name_alt": "Wooning Keukens & Badkamers - Vlaardingen",
   "city_slug": "vlaardingen",
   "siblings": [
    {
@@ -80735,7 +80458,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/woonwarenhuis-nijhof-g5jgyc": {
   "name": "Woonwarenhuis Nijhof",
@@ -80884,7 +80607,6 @@
   "website": "http://www.wout.nl/",
   "tel": "0206841155",
   "tel_disp": "020 684 1155",
-  "name_alt": "Wout's Tegelhandel B.V. - Showroom",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -80920,7 +80642,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/wouters-bouwmaterialen-ibkepa": {
   "name": "Wouters Bouwmaterialen",
@@ -81412,7 +81134,6 @@
   "website": "https://www.x2o.nl/showrooms/x2o-badkamers-den-bosch?utm_source=GMB&amp;utm_medium=organic&amp;utm_campaign=denbosch",
   "tel": "0737820154",
   "tel_disp": "073 782 0154",
-  "name_alt": "X2O Badkamers - 's Hertogenbosch",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -81448,7 +81169,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/x2o-badkamers-spijkenisse-ebz5ga": {
   "name": "X2O Badkamers - Spijkenisse",
@@ -81746,7 +81467,6 @@
   "website": "https://www.xaro.nl/",
   "tel": "0356945004",
   "tel_disp": "035 694 5004",
-  "name_alt": "XARO - Leven in Luxe & Comfort",
   "city_slug": "blaricum",
   "siblings": [
    {
@@ -81767,7 +81487,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/yanev-tegels-en-sanitair-vof-y5off4": {
   "name": "Yanev Tegels En Sanitair VOF",
@@ -81963,7 +81683,6 @@
   "website": "http://www.zoonbadkamers.nl/?UTM_source=GMB_listing&amp;UTM_medium=organic",
   "tel": "0251241140",
   "tel_disp": "0251 241 140",
-  "name_alt": "Zoon Tegels & Badkamers Heemskerk",
   "city_slug": "heemskerk",
   "siblings": [
    {
@@ -81984,7 +81703,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v2"
+  "template": "default"
  },
  "bedrijf/zout-en-zilt-living-and-fashion-4eijno": {
   "name": "Zout en Zilt - Living and Fashion",

@@ -210,7 +210,7 @@
   "tel_disp": "030 200 3148",
   "city_slug": "geldermalsen",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/amipox-bv-ym8uje": {
   "name": "Amipox BV",
@@ -354,7 +354,6 @@
   "website": "https://www.cjartcreations.nl/contact/",
   "tel": "0851300769",
   "tel_disp": "085 130 0769",
-  "name_alt": "Art & Creations",
   "city_slug": "heinkenszand",
   "siblings": [
    {
@@ -364,7 +363,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v3"
  },
  "bedrijf/art-designvloeren-vbjble": {
   "name": "Art Designvloeren",
@@ -687,7 +686,6 @@
   "website": "http://bartelsparket.nl/",
   "tel": "0402548694",
   "tel_disp": "040 254 8694",
-  "name_alt": "Bartels Parket & Wonen",
   "city_slug": "veldhoven",
   "siblings": [
    {
@@ -718,7 +716,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/base-vloer-wandafwerkingen-dwguse": {
   "name": "Base Vloer &amp; Wandafwerkingen",
@@ -729,7 +727,6 @@
   "website": "http://www.baseinterieur.nl/",
   "tel": "0103330458",
   "tel_disp": "010 333 0458",
-  "name_alt": "Base Vloer & Wandafwerkingen",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -765,7 +762,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/be-vloer-en-visie-bv-wkpcdq": {
   "name": "BE Vloer En Visie BV",
@@ -858,7 +855,6 @@
   "website": "https://bekkersvloeren.nl/",
   "tel": "0641345289",
   "tel_disp": "06 41345289",
-  "name_alt": "Bekkers vloeren | Cementdekvloeren & afwerking",
   "city_slug": "boekel",
   "siblings": [
    {
@@ -884,7 +880,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/berkers-vloeren-o_fvns": {
   "name": "Berkers Vloeren",
@@ -1047,7 +1043,7 @@
   "tel_disp": "06 24249150",
   "city_slug": "oost-souburg",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/betonpassie-lavastone-gietvloeren-beton-cire-microcement-badkamers-tam3ca": {
   "name": "BetonPassie lavastone / gietvloeren - beton cire - microcement - badkamers",
@@ -1148,7 +1144,6 @@
   "website": "http://www.blitzinterieur.nl/",
   "tel": "0652606239",
   "tel_disp": "06 52606239",
-  "name_alt": "Blitz Traprenovatie & Vloeren",
   "city_slug": "bunschoten-spakenburg",
   "siblings": [
    {
@@ -1164,7 +1159,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/blom-vloerdeco-o9na2i": {
   "name": "Blom Vloerdeco",
@@ -1246,7 +1241,7 @@
   "tel_disp": "06 31063574",
   "city_slug": "drunen",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/bofloor-aqrx8a": {
   "name": "BoFloor",
@@ -1390,11 +1385,10 @@
   "website": "https://bruizt.nl/?utm_source=google&amp;utm_medium=gmb&amp;utm_campaign=gmb&amp;utm_content=website",
   "tel": "0345201680",
   "tel_disp": "0345 201 680",
-  "name_alt": "Bruizt Culemborg - Gietvloeren, Beton ciré & Microcement",
   "city_slug": "culemborg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/bruizt-rijswijk-den-haag-gietvloeren-beton-cire-bsdsma": {
   "name": "Bruizt Rijswijk / Den Haag - Gietvloeren &amp; Beton ciré",
@@ -1405,7 +1399,6 @@
   "website": "https://bruizt.nl/?utm_source=google&amp;utm_medium=gmb&amp;utm_campaign=gmb&amp;utm_content=website",
   "tel": "0704090337",
   "tel_disp": "070 409 0337",
-  "name_alt": "Bruizt Rijswijk / Den Haag - Gietvloeren & Beton ciré",
   "city_slug": "rijswijk",
   "siblings": [
    {
@@ -1421,7 +1414,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bruizt-utrecht-gietvloeren-beton-cire-80bjpq": {
   "name": "Bruizt Utrecht - Gietvloeren &amp; Beton ciré",
@@ -1432,7 +1425,6 @@
   "website": "https://bruizt.nl/?utm_source=google&amp;utm_medium=gmb&amp;utm_campaign=gmb&amp;utm_content=website",
   "tel": "0302073088",
   "tel_disp": "030 207 3088",
-  "name_alt": "Bruizt Utrecht - Gietvloeren & Beton ciré",
   "city_slug": "maarssen",
   "siblings": [
    {
@@ -1442,7 +1434,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/budget-floorstore-diemen-familiebedrijf-in-vloeren-vldx_w": {
   "name": "Budget Floorstore Diemen - Familiebedrijf in vloeren",
@@ -1986,7 +1978,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Colors%20%26%20Coatings&amp;query_place_id=ChIJH7Fz4m8yx0cROuLkUOhCPY0",
   "tel": "0622886297",
   "tel_disp": "06 22886297",
-  "name_alt": "Colors & Coatings",
   "city_slug": "weert",
   "siblings": [
    {
@@ -1997,7 +1988,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/correctfloor-p9f5ti": {
   "name": "Correctfloor",
@@ -3653,7 +3644,6 @@
   "website": "https://www.fbwoningenprojectstoffering.nl/",
   "tel": "0612294404",
   "tel_disp": "06 12294404",
-  "name_alt": "FB Woning & Projectstoffering",
   "city_slug": "someren",
   "siblings": [
    {
@@ -3669,7 +3659,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/first-class-floors-k-u-ea": {
   "name": "First class floors",
@@ -3706,7 +3696,7 @@
   "tel_disp": "06 53300825",
   "city_slug": "urk",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/floor-en-more-jciw3y": {
   "name": "Floor en More",
@@ -4309,7 +4299,6 @@
   "website": "http://www.gertonsport.nl/",
   "tel": "0570606949",
   "tel_disp": "0570 606 949",
-  "name_alt": "Gerton Sport & Design",
   "city_slug": "deventer",
   "siblings": [
    {
@@ -4345,7 +4334,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/geurts-vloerenbedrijf-schaijk-mzj3zu": {
   "name": "Geurts Vloerenbedrijf Schaijk",
@@ -6009,7 +5998,7 @@
   "tel_disp": "020 370 9151",
   "city_slug": "duivendrecht",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/gietvloer-ridderkerk-nrspne": {
   "name": "Gietvloer Ridderkerk",
@@ -8052,7 +8041,6 @@
   "website": "http://www.interpleister.nl/",
   "tel": "0365374494",
   "tel_disp": "036 537 4494",
-  "name_alt": "InterPleister Stukadoor & Gietvloeren Almere Mét Showroom",
   "city_slug": "almere",
   "siblings": [
    {
@@ -8078,7 +8066,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/intro-vloerencentrum-9hzffy": {
   "name": "Intro Vloerencentrum",
@@ -8243,7 +8231,6 @@
   "website": "http://www.jenmvloeren.nl/",
   "tel": "0715815140",
   "tel_disp": "071 581 5140",
-  "name_alt": "J & M Vloeren",
   "city_slug": "leiderdorp",
   "siblings": [
    {
@@ -8254,7 +8241,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/j2-eflpns": {
   "name": "J2+",
@@ -8712,11 +8699,10 @@
   "website": "http://www.kwartsenco.nl/",
   "tel": "0434506304",
   "tel_disp": "043 450 6304",
-  "name_alt": "Kwarts & Co",
   "city_slug": "gulpen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/lab21-delft-wpsf0g": {
   "name": "LAB21 Delft",
@@ -8748,7 +8734,6 @@
   "website": "https://www.lab21.nl/showrooms/leeuwarden/?utm_source=googlebusinessprofile&amp;utm_campaign=gbp-lab21-leeuwarden&amp;utm_medium=organic",
   "tel": "0588080040",
   "tel_disp": "058 808 0040",
-  "name_alt": "LAB21 Leeuwarden | PVC vloeren, laminaat & parket",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -8769,7 +8754,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/laminaatenparket-nl-sliedrecht-pvc-visgraat-laminaat-en-houten-vloeren-qjwscy": {
   "name": "LaminaatenParket.nl Sliedrecht | PVC - Visgraat, laminaat en Houten Vloeren",
@@ -8811,7 +8796,7 @@
   "tel_disp": "020 370 9151",
   "city_slug": "vinkeveen",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/lemmen-vloeren-vu11h4": {
   "name": "Lemmen Vloeren",
@@ -8874,7 +8859,7 @@
   "tel_disp": "06 57804718",
   "city_slug": "vriezenveen",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/liva-floors-styglw": {
   "name": "Liva Floors",
@@ -9624,7 +9609,7 @@
   "tel_disp": "06 11481214",
   "city_slug": "driebruggen",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/my-design-floors-wxojgg": {
   "name": "MY design floors",
@@ -9691,11 +9676,10 @@
   "website": "http://www.horeca-industrievloer.nl/",
   "tel": "0634341600",
   "tel_disp": "06 34341600",
-  "name_alt": "N.Klumpers Klusbedrijf & Gietvloeren",
   "city_slug": "nederweert-eind",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/nb-vloeren-zj4aq4": {
   "name": "NB Vloeren",
@@ -9889,7 +9873,6 @@
   "website": "https://novavloeren-tegels.nl/",
   "tel": "0652151510",
   "tel_disp": "06 52151510",
-  "name_alt": "Nova Vloeren & Tegels",
   "city_slug": "wierden",
   "siblings": [
    {
@@ -9900,7 +9883,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/numan-vloeren-izjcqa": {
   "name": "Numan Vloeren",
@@ -10244,7 +10227,6 @@
   "website": "http://www.polsmultiservice.nl/",
   "tel": "0614183648",
   "tel_disp": "06 14183648",
-  "name_alt": "Pols Multiservice \"al 17 jaar uw gietvloerspecialist\"",
   "city_slug": "vierpolders",
   "siblings": [
    {
@@ -10255,7 +10237,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/porteners-vloerenbedrijf-cementdekvloeren--gtkee": {
   "name": "Porteners Vloerenbedrijf | Cementdekvloeren",
@@ -11262,7 +11244,6 @@
   "website": "https://sharpgietvloeren.nl/contact/",
   "tel": "0102613420",
   "tel_disp": "010 261 3420",
-  "name_alt": "Sharp Gietvloeren & Sharp Projects",
   "city_slug": "hendrik-ido-ambacht",
   "siblings": [
    {
@@ -11273,7 +11254,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/siergrindvloeren-moerdijk-wg2yle": {
   "name": "Siergrindvloeren Moerdijk",
@@ -11323,7 +11304,6 @@
   "website": "https://www.sinck-ko.nl/",
   "tel": "0208202230",
   "tel_disp": "020 820 2230",
-  "name_alt": "Sinck&Ko",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -11359,7 +11339,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/slabbers-gietvloeren-en-textuurwanden-ba6vck": {
   "name": "Slabbers Gietvloeren en Textuurwanden",
@@ -11586,11 +11566,10 @@
   "website": "http://smits-vloeregalisatie.nl/",
   "tel": "0332540200",
   "tel_disp": "033 254 0200",
-  "name_alt": "Smits Vloeregalisatie & Gietvloeren",
   "city_slug": "nijkerkerveen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/sohovloeren-by-vincent-stiekema-rp8ido": {
   "name": "SOHOvloeren by Vincent Stiekema",
@@ -11682,7 +11661,6 @@
   "website": "https://solidfloors.nl/",
   "tel": "0464378205",
   "tel_disp": "046 437 8205",
-  "name_alt": "Solid Floors | Cement- & Gietdekvloeren",
   "city_slug": "geleen",
   "siblings": [
    {
@@ -11698,7 +11676,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/solo-gietvloeren-7ny38y": {
   "name": "Solo Gietvloeren",
@@ -12209,7 +12187,6 @@
   "website": "https://www.thefloordesigncompany.nl/",
   "tel": "0722001317",
   "tel_disp": "072 200 1317",
-  "name_alt": "The Floor & Design company",
   "city_slug": "alkmaar",
   "siblings": [
    {
@@ -12245,7 +12222,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/the-liquid-collection-cementbase-floor-_zy_ce": {
   "name": "The Liquid Collection - Cementbase Floor",
@@ -12316,7 +12293,7 @@
   "tel_disp": "06 43237866",
   "city_slug": "kuinre",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/topvloeronderhoud-onderhoud-van-alle-vloeren-houten-vloer-schuren-tapijt-pvc-marmoleum-fps7-m": {
   "name": "TopVloeronderhoud | Onderhoud van alle vloeren | houten vloer schuren | tapijt | pvc |marmoleum|",
@@ -12673,7 +12650,7 @@
   "tel_disp": "0499 571 140",
   "city_slug": "oirschot",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/utrechtgietvloer-utrecht-gietvloer-wbnsh8": {
   "name": "utrechtgietvloer - Utrecht Gietvloer",
@@ -13172,11 +13149,10 @@
   "website": "http://www.vdavloeren.nl/",
   "tel": "0592762111",
   "tel_disp": "0592 762 111",
-  "name_alt": "VDA gietvloeren & coatings",
   "city_slug": "vries",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/vdv-betonrenovatie-kunststofvloeren-snuy8y": {
   "name": "VDV Betonrenovatie &amp; Kunststofvloeren",
@@ -13187,7 +13163,6 @@
   "website": "http://www.vdvbetonrenovatie.nl/",
   "tel": "0587074260",
   "tel_disp": "058 707 4260",
-  "name_alt": "VDV Betonrenovatie & Kunststofvloeren",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -13208,7 +13183,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vekavloeren-vb7peq": {
   "name": "Vekavloeren",
@@ -13382,7 +13357,7 @@
   "tel_disp": "06 51924512",
   "city_slug": "hellendoorn",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/vh-vloeren-9oqrdc": {
   "name": "VH-Vloeren",
@@ -13546,7 +13521,6 @@
   "website": "https://woonspecialist.nl/winkels/vloer-enzo-alkmaar/?utm_campaign=Vloer+%26+Zo&amp;utm_medium=organic&amp;utm_source=gmb",
   "tel": "0628033600",
   "tel_disp": "06 28033600",
-  "name_alt": "Vloer & Zo",
   "city_slug": "alkmaar",
   "siblings": [
    {
@@ -13582,7 +13556,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vloercorrect-natfea": {
   "name": "Vloercorrect",
@@ -13685,11 +13659,10 @@
   "website": "https://tol-beilen.nl/",
   "tel": "0613031441",
   "tel_disp": "06 13031441",
-  "name_alt": "Vloeren- & timmerbedrijf Tol",
   "city_slug": "beilen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/vloeren-van-bart-urvtji": {
   "name": "Vloeren van Bart",
@@ -13883,7 +13856,7 @@
   "tel_disp": "0485 210 145",
   "city_slug": "gennep",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/vloerenboulevard-limburg-ckprao": {
   "name": "Vloerenboulevard Limburg",
@@ -14539,7 +14512,6 @@
   "website": "https://www.wfsolutions.nl/",
   "tel": "0615692193",
   "tel_disp": "06 15692193",
-  "name_alt": "Wall & Floor Solutions",
   "city_slug": "dongen",
   "siblings": [
    {
@@ -14565,7 +14537,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wand-en-vloerbedrijf-rongen-vof-4-qvum": {
   "name": "Wand en vloerbedrijf Rongen Vof",
@@ -14611,7 +14583,6 @@
   "website": "http://www.wenterstegelsenvloeren.nl/",
   "tel": "0543216180",
   "tel_disp": "0543 216 180",
-  "name_alt": "Wenters Tegels & Vloeren",
   "city_slug": "winterswijk",
   "siblings": [
    {
@@ -14622,7 +14593,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wg-vloeren-den-haag-gietvloeren-egaliseren-meer-ufw-fs": {
   "name": "WG Vloeren Den Haag - Gietvloeren, Egaliseren &amp; meer",
@@ -14633,7 +14604,6 @@
   "website": "https://www.wgvloeren.nl/vloerenspecialist-den-haag/?utm_medium=Click&amp;utm_source=GMB",
   "tel": "0642980510",
   "tel_disp": "06 42980510",
-  "name_alt": "WG Vloeren Den Haag - Gietvloeren, Egaliseren & meer",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -14669,7 +14639,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wg-vloeren-gietvloeren-egaliseren-meer-scid64": {
   "name": "WG Vloeren | Gietvloeren, Egaliseren &amp; meer",
@@ -14680,7 +14650,6 @@
   "website": "http://www.wgvloeren.nl/?utm_medium=Click&amp;utm_source=GMB",
   "tel": "0642980510",
   "tel_disp": "06 42980510",
-  "name_alt": "WG Vloeren | Gietvloeren, Egaliseren & meer",
   "city_slug": "rosmalen",
   "siblings": [
    {
@@ -14701,7 +14670,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wg-vloeren-nijmegen-gietvloeren-egaliseren-meer-1ppy0k": {
   "name": "WG Vloeren Nijmegen | Gietvloeren, Egaliseren &amp; meer",
@@ -14712,7 +14681,6 @@
   "website": "https://www.wgvloeren.nl/vloerenspecialist-nijmegen/?utm_medium=Click&amp;utm_source=GMB",
   "tel": "0642980510",
   "tel_disp": "06 42980510",
-  "name_alt": "WG Vloeren Nijmegen | Gietvloeren, Egaliseren & meer",
   "city_slug": "nijmegen",
   "siblings": [
    {
@@ -14732,7 +14700,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wijnco-vloeren-qiooc4": {
   "name": "Wijnco Vloeren",
@@ -15070,7 +15038,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Zontrop%20Design%20vloeren%20%26%20Epoxy%20gietvloeren&amp;query_place_id=ChIJWU7sx9DKwEcRPYBOL6HYLCk",
   "tel": "0475453996",
   "tel_disp": "0475 453 996",
-  "name_alt": "Zontrop Design vloeren & Epoxy gietvloeren",
   "city_slug": "grathem",
   "contact_row": "v2",
   "template": "v10"

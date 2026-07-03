@@ -586,7 +586,6 @@
   "website": "http://www.aadelektrotechniek.nl/",
   "tel": "0180531995",
   "tel_disp": "0180 531 995",
-  "name_alt": "A A D Elektrotechniek & Onderhoudsbedrijf B.V.",
   "city_slug": "barendrecht",
   "siblings": [
    {
@@ -622,7 +621,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/a-balk-elektrotechniek-iohzia": {
   "name": "A.Balk Elektrotechniek",
@@ -1262,7 +1261,6 @@
   "website": "http://www.aadelektrotechniek.nl/",
   "tel": "+31180531995",
   "tel_disp": "+31 180 531 995",
-  "name_alt": "AAD Elektrotechniek & Onderhoudsbedrijf",
   "city_slug": "barendrecht",
   "siblings": [
    {
@@ -1297,7 +1295,7 @@
    }
   ],
   "contact_row": "v5",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/aalbers-elektro-techniek-lz71xy": {
   "name": "Aalbers Elektro Techniek",
@@ -1332,7 +1330,7 @@
   "city_slug": "lage-zwaluwe",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/aannemersbedrijf-chambon-bv-f0v7is": {
   "name": "Aannemersbedrijf Chambon BV",
@@ -1445,7 +1443,6 @@
   "website": "https://www.aaristos.nl/",
   "tel": "0411211410",
   "tel_disp": "0411 211 410",
-  "name_alt": "Aaristos Energieadvies & Installaties",
   "city_slug": "liempde",
   "siblings": [
    {
@@ -1456,7 +1453,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/aart-willemsen-installatieservice-3zorgg": {
   "name": "Aart Willemsen Installatieservice",
@@ -1790,7 +1787,7 @@
   "city_slug": "leunen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/abt-elektrotechniek-b-v-x8kumm": {
   "name": "ABT Elektrotechniek B.V.",
@@ -2048,7 +2045,7 @@
     "rating": "4,2"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/achterhoek-installaties-o1hx-c": {
   "name": "Achterhoek installaties",
@@ -2331,7 +2328,7 @@
   "tel_disp": "06 33633941",
   "city_slug": "vlijmen",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/admiraal-elektra-kfmrle": {
   "name": "Admiraal Elektra",
@@ -2479,7 +2476,7 @@
   "city_slug": "rockanje",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/adriaans-electro-lshuki": {
   "name": "Adriaans electro",
@@ -2853,7 +2850,7 @@
   "city_slug": "de-koog",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/aim-slurink-elektrotechniek-bv-pvfke4": {
   "name": "AiM Slurink Elektrotechniek BV",
@@ -2910,7 +2907,6 @@
   "website": "https://www.aircoenelektra.nl/",
   "tel": "0299322870",
   "tel_disp": "0299 322 870",
-  "name_alt": "Airco & Elektra B.V.",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -2946,7 +2942,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/airco-tuk-hux05k": {
   "name": "Airco Tuk",
@@ -4560,7 +4556,7 @@
   "city_slug": "zuidlaren",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/alteidfrenkenvof-x1bzzg": {
   "name": "ALTEIDFrenkenVOF",
@@ -4935,7 +4931,7 @@
   "city_slug": "doorn",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/andre-kok-elektrotechniek-rgkcro": {
   "name": "Andre kok elektrotechniek",
@@ -4949,7 +4945,7 @@
   "city_slug": "oude-pekela",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/andries-techniek-at_jh8": {
   "name": "Andries Techniek",
@@ -4963,7 +4959,7 @@
   "city_slug": "t-harde",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/anniek-francken-hnehpq": {
   "name": "Anniek Francken",
@@ -5244,7 +5240,6 @@
   "website": "http://www.armontage.nl/",
   "tel": "0186666887",
   "tel_disp": "0186 666 887",
-  "name_alt": "AR Montage & Services",
   "city_slug": "oud-beijerland",
   "siblings": [
    {
@@ -5270,7 +5265,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/arcy-elektro-egyztk": {
   "name": "Arcy Elektro",
@@ -5327,7 +5322,6 @@
   "website": "http://www.ardejo.nl/",
   "tel": "0183702640",
   "tel_disp": "0183 702 640",
-  "name_alt": "Ardejo Installatie's",
   "city_slug": "gorinchem",
   "siblings": [
    {
@@ -5363,7 +5357,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/arie-scholten-x2zjva": {
   "name": "Arie scholten",
@@ -5590,7 +5584,6 @@
   "website": "https://www.arzagroep.nl/",
   "tel": "0614809630",
   "tel_disp": "06 14809630",
-  "name_alt": "Arza Elektricien & loodgieters Hilversum",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -5626,7 +5619,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/as-marine-offshore-services-izmn2a": {
   "name": "AS Marine &amp; Offshore Services",
@@ -5635,7 +5628,6 @@
   "website": "http://www.asmarineoffshoreservices.com/",
   "tel": "0613533391",
   "tel_disp": "06 13533391",
-  "name_alt": "AS Marine & Offshore Services",
   "city_slug": "den-helder",
   "siblings": [
    {
@@ -5670,7 +5662,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/ask-installatiebedrijf-99wsnc": {
   "name": "Ask Installatiebedrijf",
@@ -5819,7 +5811,7 @@
     "name": "Beekman"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/asv-services-bv-dj5axy": {
   "name": "ASV-Services BV",
@@ -6121,7 +6113,7 @@
   "city_slug": "s-heer-arendskerke",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/awe-zqt02e": {
   "name": "AWE",
@@ -6244,7 +6236,6 @@
   "website": "http://www.adviesburobeat.nl/",
   "tel": "0627417883",
   "tel_disp": "06 27417883",
-  "name_alt": "B.E.A.T. Electrotechnisch Advies & Tekenburo",
   "city_slug": "beek-en-donk",
   "siblings": [
    {
@@ -6275,7 +6266,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-f-loodgietersbedrijf-doeoge": {
   "name": "B&amp;F Loodgietersbedrijf",
@@ -6286,7 +6277,6 @@
   "website": "http://www.benfloodgieters.nl/",
   "tel": "0650466225",
   "tel_disp": "06 50466225",
-  "name_alt": "B&F Loodgietersbedrijf",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -6322,7 +6312,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-j-minnema-zn-ugrbrq": {
   "name": "B.J. Minnema &amp; Zn",
@@ -6333,7 +6323,6 @@
   "website": "http://www.minnema.info/",
   "tel": "0513431620",
   "tel_disp": "0513 431 620",
-  "name_alt": "B.J. Minnema & Zn",
   "city_slug": "sint-nicolaasga",
   "siblings": [
    {
@@ -6344,7 +6333,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-j-zundert-p-lmpg": {
   "name": "B.J. Zundert",
@@ -6394,7 +6383,6 @@
   "website": "http://www.bknetwerken.nl/",
   "tel": "0599855275",
   "tel_disp": "0599 855 275",
-  "name_alt": "B&K Netwerken Installateurs",
   "city_slug": "stadskanaal",
   "siblings": [
    {
@@ -6429,7 +6417,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-m-service-b-v-uhjlsm": {
   "name": "B&amp;M Service B.V.",
@@ -6440,7 +6428,6 @@
   "website": "http://www.b-mservice.nl/",
   "tel": "0341355992",
   "tel_disp": "0341 355 992",
-  "name_alt": "B&M Service B.V.",
   "city_slug": "putten",
   "siblings": [
    {
@@ -6476,7 +6463,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-r-elektrotechniek-fdfslq": {
   "name": "B&amp;R Elektrotechniek",
@@ -6487,7 +6474,6 @@
   "website": "https://www.benr-elektrotechniek.nl/",
   "tel": "0611405004",
   "tel_disp": "06 11405004",
-  "name_alt": "B&R Elektrotechniek",
   "city_slug": "bladel",
   "siblings": [
    {
@@ -6523,7 +6509,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-s-installatiebedrijf-k_czzq": {
   "name": "B.S. Installatiebedrijf",
@@ -6716,7 +6702,6 @@
   "website": "http://www.benw-elektro.nl/",
   "tel": "0786821645",
   "tel_disp": "078 682 1645",
-  "name_alt": "B & W Elektro en Beveiliging B.V.",
   "city_slug": "hendrik-ido-ambacht",
   "siblings": [
    {
@@ -6752,7 +6737,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-w-techniek-bouwteam-walcheren-d8mhhu": {
   "name": "B.W. Techniek / Bouwteam Walcheren",
@@ -7082,7 +7067,7 @@
   "city_slug": "hooghalen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bakker-elektrotechniek-nqeqfa": {
   "name": "Bakker Elektrotechniek",
@@ -7137,7 +7122,6 @@
   "reviews": "12",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bakker%20Installatietechniek%20%26%20CV%20Installatie&amp;query_place_id=ChIJgbxxztqDxkcR_axIlhykkLU",
   "website": "https://nlmapnova.top/details/bakker-installatietechniek-cv-installatie-ChIJgbx",
-  "name_alt": "Bakker Installatietechniek & CV Installatie",
   "city_slug": "hardinxveld-giessendam",
   "siblings": [
    {
@@ -7173,7 +7157,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bakker-installatietechniek": {
   "name": "Bakker Installatietechniek",
@@ -7211,7 +7195,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/bakker-repair-services": {
   "name": "Bakker Repair + Services",
@@ -7477,7 +7461,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/barendrecht-elektra-bv-65snd8": {
   "name": "Barendrecht-Elektra bv",
@@ -7967,7 +7951,7 @@
   "city_slug": "wagenberg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bd-elektrotechniek-tjirte": {
   "name": "BD Elektrotechniek",
@@ -7981,7 +7965,7 @@
   "city_slug": "moerkapelle",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/beb-montage-b-v-x9jpvs": {
   "name": "Beb Montage B.V.",
@@ -8041,7 +8025,7 @@
   "city_slug": "nieuwe-pekela",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/beco-elektro-nl-ew_u2c": {
   "name": "Beco-elektro.nl",
@@ -8143,7 +8127,7 @@
   "city_slug": "wagenborgen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/beek-donk-elektro-service-_kzeba": {
   "name": "Beek &amp; Donk Elektro service",
@@ -8154,7 +8138,6 @@
   "website": "https://bdelektroservice.nl/",
   "tel": "0681467089",
   "tel_disp": "06 81467089",
-  "name_alt": "Beek & Donk Elektro service",
   "city_slug": "beek-en-donk",
   "siblings": [
    {
@@ -8185,7 +8168,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/beekitech-stzwfe": {
   "name": "BeekItech",
@@ -8196,7 +8179,7 @@
   "tel_disp": "0599 244 242",
   "city_slug": "gasselte",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/beekman-elektro-b-v-qkueg8": {
   "name": "Beekman Elektro B.V.",
@@ -8352,7 +8335,6 @@
   "website": "http://www.benderselektrotechniek.nl/",
   "tel": "0180599818",
   "tel_disp": "0180 599 818",
-  "name_alt": "Benders Elektrotechniek & Technisch Onderhoud",
   "city_slug": "krimpen-aan-den-ijssel",
   "siblings": [
    {
@@ -8388,7 +8370,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/benjamins-installatietechniek-v_ue-u": {
   "name": "Benjamins Installatietechniek",
@@ -8402,7 +8384,7 @@
   "city_slug": "elim",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bentechniek-ympeqg": {
   "name": "BenTechniek",
@@ -9883,7 +9865,7 @@
   "tel_disp": "06 45434255",
   "city_slug": "bleskensgraaf",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/bijlstra-installaties-fmpd8s": {
   "name": "Bijlstra Installaties",
@@ -10507,7 +10489,6 @@
   "website": "https://cblonk.nl/",
   "tel": "0655131573",
   "tel_disp": "06 55131573",
-  "name_alt": "Blonk | Installatie & onderhoudsbedrijf",
   "city_slug": "noordwijk",
   "siblings": [
    {
@@ -10543,7 +10524,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/blumink-elektrawerken-iv6g24": {
   "name": "Blumink Elektrawerken",
@@ -10893,7 +10874,7 @@
   "city_slug": "kelpen-oler",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bodudo-weert": {
   "name": "Bodudo Weert",
@@ -11313,7 +11294,7 @@
   "city_slug": "westerbork",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/boom-elektroservice-olstxy": {
   "name": "Boom elektroservice",
@@ -11810,7 +11791,6 @@
   "website": "http://www.bosma-bronkhorst.nl/",
   "tel": "0756531500",
   "tel_disp": "075 653 1500",
-  "name_alt": "Bosma & Bronkhorst B.V.",
   "city_slug": "zaandam",
   "siblings": [
    {
@@ -11846,7 +11826,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bosma-installatietechniek-bv-kbss4o": {
   "name": "Bosma Installatietechniek BV",
@@ -12058,7 +12038,6 @@
   "website": "http://www.boulkaservice-techniek.nl/",
   "tel": "0637310475",
   "tel_disp": "06 37310475",
-  "name_alt": "Boulka Service & Techniek",
   "city_slug": "nijmegen",
   "siblings": [
    {
@@ -12094,7 +12073,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bouma-elektrotechniek-7kug5u": {
   "name": "Bouma Elektrotechniek",
@@ -12414,7 +12393,7 @@
   "city_slug": "veere",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bouwens-3glreq": {
   "name": "Bouwens",
@@ -12810,7 +12789,6 @@
   "website": "https://www.brandstechniek.nl/",
   "tel": "0534619446",
   "tel_disp": "053 461 9446",
-  "name_alt": "Brands Techniek & Service B.V.",
   "city_slug": "enschede",
   "siblings": [
    {
@@ -12846,7 +12824,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/brandsen-installatietechniek": {
   "name": "Brandsen Installatietechniek",
@@ -13091,7 +13069,6 @@
   "website": "https://www.breure-elektra-installatie.nl/",
   "tel": "0650502179",
   "tel_disp": "06 50502179",
-  "name_alt": "Breure elektra & installatie",
   "city_slug": "zierikzee",
   "siblings": [
    {
@@ -13127,7 +13104,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/brink-electronics-van-den-roxmbw": {
   "name": "Brink Electronics Van den",
@@ -13267,7 +13244,7 @@
   "website": "https://goirlenet.nl/brock-elektro/",
   "city_slug": "goirle",
   "contact_row": "v6",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/broeders-elektrotechniek-b-v-d84lzq": {
   "name": "Broeders Elektrotechniek B.V.",
@@ -13324,7 +13301,6 @@
   "website": "http://www.broekenbosch.nl/",
   "tel": "0652505235",
   "tel_disp": "06 52505235",
-  "name_alt": "Broek & Bosch Elektrotechniek",
   "city_slug": "soest",
   "siblings": [
    {
@@ -13360,7 +13336,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/broeke-elektrotechniek-b-v-tdzeq8": {
   "name": "Broeke Elektrotechniek B.V.",
@@ -13416,7 +13392,6 @@
   "website": "https://installatiebedrijfhoogkerk.nl/",
   "tel": "0505792234",
   "tel_disp": "050 579 2234",
-  "name_alt": "Broekema & Luppen Installateurs B.V.",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -13452,7 +13427,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bron-elektro-dprsho": {
   "name": "BRON Elektro",
@@ -13512,7 +13487,7 @@
   "city_slug": "uddel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bros-elektrotechniek-bedrijf-oxg-my": {
   "name": "Bros Elektrotechniek Bedrijf",
@@ -13643,7 +13618,7 @@
   "city_slug": "ijlst",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/brusche-elektrotechniek-b6a05e": {
   "name": "Brusche Elektrotechniek",
@@ -13749,7 +13724,7 @@
   "city_slug": "silvolde",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bts-twente--ml9bo": {
   "name": "BTS Twente",
@@ -14124,7 +14099,7 @@
   "city_slug": "wehl",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/bunecro-electra-kzwuew": {
   "name": "Bunecro Electra",
@@ -14385,7 +14360,6 @@
   "website": "http://www.bvo-advies.nl/",
   "tel": "0639799231",
   "tel_disp": "06 39799231",
-  "name_alt": "BVo Advies Ontwerp & Installatie",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -14421,7 +14395,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bwe-bv-sla6hm": {
   "name": "BWE BV",
@@ -14435,7 +14409,7 @@
   "city_slug": "hoek-van-holland",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/c-schipper-installatietechniek-2huxuy": {
   "name": "C. Schipper Installatietechniek",
@@ -14728,9 +14702,8 @@
   "website": "https://canete-electromontage.nl/",
   "tel": "+31619908893",
   "tel_disp": "+31 6 19908893",
-  "name_alt": "Cañete Electro & Groene Energie",
   "contact_row": "v5",
-  "template": "v17"
+  "template": "v13"
  },
  "bedrijf/captijn-elektrotechniek-b-v-6voky4": {
   "name": "Captijn Elektrotechniek B.V.",
@@ -14836,7 +14809,7 @@
   "city_slug": "horn",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/carlitos-elektra-mcrqqy": {
   "name": "Carlito’s Elektra",
@@ -14896,7 +14869,7 @@
   "city_slug": "bocholtz",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/cb-installatiebedrijf-lemmer-ewcndu": {
   "name": "CB Installatiebedrijf Lemmer",
@@ -15559,7 +15532,7 @@
   "city_slug": "strijensas",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/collee-elektrotechniek-bv-hsjzra": {
   "name": "Collée Elektrotechniek BV",
@@ -15806,7 +15779,7 @@
     "rating": "4,5"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/compleet-duurzame-installaties-wjj0ug": {
   "name": "Compleet Duurzame Installaties",
@@ -16122,7 +16095,7 @@
   "city_slug": "esbeek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/contant-installatiebedrijf-gqfm2e": {
   "name": "Contant Installatiebedrijf",
@@ -16224,7 +16197,6 @@
   "website": "https://www.coolman.nl/",
   "tel": "0503016025",
   "tel_disp": "050 301 6025",
-  "name_alt": "Coolman Elektro & Techniek",
   "city_slug": "bedum",
   "siblings": [
    {
@@ -16240,7 +16212,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/cooltech-installatietechniek-ycm0ao": {
   "name": "CoolTech Installatietechniek",
@@ -16450,7 +16422,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Cornelissen%20Elektro%20%26%20Montage&amp;query_place_id=ChIJgVMd_eQPx0cRTyMv9BQpUqM",
   "tel": "0640612290",
   "tel_disp": "06 40612290",
-  "name_alt": "Cornelissen Elektro & Montage",
   "city_slug": "mook",
   "siblings": [
    {
@@ -16460,7 +16431,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/cornelissen-installaties-imiame": {
   "name": "Cornelissen installaties",
@@ -16563,7 +16534,6 @@
   "website": "http://www.cornellsys.nl/",
   "tel": "0486421096",
   "tel_disp": "0486 421 096",
-  "name_alt": "Cornellsys ICT & Electra",
   "city_slug": "grave",
   "siblings": [
    {
@@ -16583,7 +16553,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/cotin-de-waard-installaties-fzihnq": {
   "name": "Cotin &amp; De Waard Installaties",
@@ -16594,7 +16564,6 @@
   "website": "http://www.cotindewaard.nl/",
   "tel": "0629311376",
   "tel_disp": "06 29311376",
-  "name_alt": "Cotin & De Waard Installaties",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -16630,7 +16599,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/cottus-groningen-meg8rq": {
   "name": "Cottus Groningen",
@@ -16849,7 +16818,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/crafto-maritieme-elektra-3mvinm": {
   "name": "Crafto | Maritieme Elektra",
@@ -16937,7 +16906,6 @@
   "website": "https://www.croonwolterendros.nl/",
   "tel": "0889235600",
   "tel_disp": "088 923 5600",
-  "name_alt": "Croonwolter&dros",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -16973,7 +16941,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/croonwolter-dros-ilpstg": {
   "name": "Croonwolter&amp;dros",
@@ -16984,7 +16952,6 @@
   "website": "https://www.croonwolterendros.nl/",
   "tel": "0889233200",
   "tel_disp": "088 923 3200",
-  "name_alt": "Croonwolter&dros",
   "city_slug": "den-helder",
   "siblings": [
    {
@@ -17020,7 +16987,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/cs-elektrotechniek-whr_30": {
   "name": "CS Elektrotechniek",
@@ -17172,7 +17139,7 @@
   "city_slug": "zoelen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/cvk-installaties-b-v-l35qly": {
   "name": "CvK Installaties B.V.",
@@ -17222,7 +17189,6 @@
   "city": "Moerdijk",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=CW%26D-Heattracing%2C%20Shell%20Moerdijk&amp;query_place_id=ChIJjRMkCMklxEcRcDW0FzJziU0",
   "website": "https://www.croonwolterendros.nl/",
-  "name_alt": "CW&D-Heattracing, Shell Moerdijk",
   "city_slug": "moerdijk",
   "siblings": [
    {
@@ -17241,7 +17207,7 @@
    }
   ],
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/cymic-eti-popfmi": {
   "name": "Cymic ETI",
@@ -17290,7 +17256,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=D%26B%20Installatie%20VOF%20-%20Installatiebedrijf%20Hoensbroek&amp;query_place_id=ChIJW7dKGcPWII0R1bkpps5Gaes",
   "tel": "0639221849",
   "tel_disp": "06 39221849",
-  "name_alt": "D&B Installatie VOF - Installatiebedrijf Hoensbroek",
   "city_slug": "hoensbroek",
   "siblings": [
    {
@@ -17316,7 +17281,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/d-breuer-electrotechniek-fqjjyi": {
   "name": "D. Breuer Electrotechniek",
@@ -17419,7 +17384,6 @@
   "website": "https://vanlosser.nl/bedrijven/d-k-installaties/",
   "tel": "0317612365",
   "tel_disp": "0317 612 365",
-  "name_alt": "D&K Installaties | Van Losser Groep",
   "city_slug": "rhenen",
   "siblings": [
    {
@@ -17455,7 +17419,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/d-lectric-7uo7r4": {
   "name": "D-lectric",
@@ -17579,7 +17543,6 @@
   "website": "http://www.denwelektrotechniek.nl/",
   "tel": "0598666777",
   "tel_disp": "0598 666 777",
-  "name_alt": "D&W Elektrotechniek B.V. D en W Elektrotechniek",
   "city_slug": "veendam",
   "siblings": [
    {
@@ -17615,7 +17578,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/da-tech-mwewhw": {
   "name": "DA-tech",
@@ -17894,7 +17857,6 @@
   "website": "https://www.dakramen-montagehethogeland.nl/",
   "tel": "0623883514",
   "tel_disp": "06 23883514",
-  "name_alt": "Dakramen & Montage het Hogeland",
   "city_slug": "leens",
   "siblings": [
    {
@@ -17905,7 +17867,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/daman-installatietechniek-24-7-b555dc": {
   "name": "DAMAN installatietechniek 24/7",
@@ -17962,7 +17924,6 @@
   "website": "https://damanloodgieterelektricienrotterdam.nl/",
   "tel": "0103810527",
   "tel_disp": "010 381 0527",
-  "name_alt": "DAMAN | Loodgieter & Elektricien Rotterdam",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -17998,7 +17959,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dame-elektrotechniek--9xczk": {
   "name": "Dame Elektrotechniek",
@@ -18648,7 +18609,7 @@
   "city_slug": "kloosterzande",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/dc-elektro-service-sv2u1s": {
   "name": "DC Elektro Service",
@@ -18872,7 +18833,7 @@
   "city_slug": "wijnjewoude",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-bremberg-techniek-ycatw8": {
   "name": "De Bremberg Techniek",
@@ -18886,7 +18847,7 @@
   "city_slug": "geertruidenberg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-bruijn-elektro-totaal-argyoq": {
   "name": "de Bruijn Elektro Totaal",
@@ -18943,7 +18904,7 @@
   "tel_disp": "06 42493575",
   "city_slug": "kerkwerve",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/de-castricumse-elektricien-sdxgdw": {
   "name": "De Castricumse Elektricien",
@@ -19510,7 +19471,6 @@
   "website": "http://www.dehaanvanlaar.nl/",
   "tel": "0318637489",
   "tel_disp": "0318 637 489",
-  "name_alt": "De Haan & van Laar",
   "city_slug": "ede",
   "siblings": [
    {
@@ -19546,7 +19506,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/de-haas-electro-service-0xvjew": {
   "name": "De Haas Electro Service",
@@ -19560,7 +19520,7 @@
   "city_slug": "haps",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-haas-elektrotechniek-6jvj7e": {
   "name": "De Haas Elektrotechniek",
@@ -19642,7 +19602,6 @@
   "website": "https://www.dejonginstallatiewerken.nl/",
   "tel": "0612370780",
   "tel_disp": "06 12370780",
-  "name_alt": "De Jong Airco’s & Installatiewerken",
   "city_slug": "holten",
   "siblings": [
    {
@@ -19677,7 +19636,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/de-jong-ekw-b-v-a2km0w": {
   "name": "De Jong EKW b.v.",
@@ -20114,7 +20073,7 @@
   "city_slug": "nieuwendijk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-leeuw-elektro-a5x4au": {
   "name": "De Leeuw Elektro",
@@ -20414,7 +20373,7 @@
   "city_slug": "domburg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-ridder-technische-dienstverlening-zepmxq": {
   "name": "De Ridder Technische Dienstverlening",
@@ -20714,7 +20673,6 @@
   "website": "http://www.dewaaltechniek.nl/",
   "tel": "0242340999",
   "tel_disp": "024 234 0999",
-  "name_alt": "De Waal Airco & Elektrotechniek",
   "city_slug": "wijchen",
   "siblings": [
    {
@@ -20750,7 +20708,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/de-weert-elektrotechniek-qc6biy": {
   "name": "De Weert Elektrotechniek",
@@ -20810,7 +20768,7 @@
   "city_slug": "maasbommel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-winkel-totaal-techniek-uban74": {
   "name": "De Winkel Totaal Techniek",
@@ -20824,7 +20782,7 @@
   "city_slug": "berkhout",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-wit-elektrotechniek-b-v-r4kxwi": {
   "name": "De Wit Elektrotechniek B.V.",
@@ -20838,7 +20796,7 @@
   "city_slug": "drunen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-wit-installatietechniek-mp9r0k": {
   "name": "De Wit Installatietechniek",
@@ -20851,7 +20809,7 @@
   "city_slug": "den-hoorn-texel",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/de-wit-totaal-e-techniek-b-v-katwijk-zk_3tc": {
   "name": "De Wit Totaal-E-Techniek B.V. | Katwijk",
@@ -21040,7 +20998,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Deka%20Service%20%26%20Solutions&amp;query_place_id=ChIJfdrHKGSXxEcRYObcDpnSV6E",
   "tel": "0630301276",
   "tel_disp": "06 30301276",
-  "name_alt": "Deka Service & Solutions",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -21076,7 +21033,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dekker-elektro-bv-bj12gu": {
   "name": "Dekker Elektro BV",
@@ -21650,7 +21607,7 @@
   "city_slug": "wijlre",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/demeterkastman-nl-sy0-mk": {
   "name": "DeMeterkastMan.nl",
@@ -22335,7 +22292,6 @@
   "website": "http://www.des-elektrotechniek.nl/",
   "tel": "0648399394",
   "tel_disp": "06 48399394",
-  "name_alt": "DES elektrotechniek | Elektricien, Aardpen, Verlichting & Laadpalen",
   "city_slug": "born",
   "rating_row": "default",
   "contact_row": "default",
@@ -22444,7 +22400,7 @@
   "city_slug": "koog-aan-de-zaan",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/diana-sanitair-verwarming-zuid-limburg-stsa40": {
   "name": "Diana Sanitair &amp; Verwarming Zuid Limburg",
@@ -22455,7 +22411,6 @@
   "website": "https://www.installatiebedrijf-diana.nl/",
   "tel": "0434506276",
   "tel_disp": "043 450 6276",
-  "name_alt": "Diana Sanitair & Verwarming Zuid Limburg",
   "city_slug": "gulpen",
   "siblings": [
    {
@@ -22476,7 +22431,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dichtbijenergie-b-v-zonnepanelen-thuisbatterijen-meer-particulier-zakelijk--u_jf0": {
   "name": "DichtbijEnergie B.V. - Zonnepanelen, Thuisbatterijen &amp; meer | Particulier &amp; Zakelijk!",
@@ -22487,7 +22442,6 @@
   "website": "https://dichtbijenergie.nl/",
   "tel": "0850607998",
   "tel_disp": "085 060 7998",
-  "name_alt": "DichtbijEnergie B.V. - Zonnepanelen, Thuisbatterijen & meer | Particulier & Zakelijk!",
   "city_slug": "wolvega",
   "siblings": [
    {
@@ -22522,7 +22476,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/die-andere-elektrotechniek-gwmfns": {
   "name": "Die andere elektrotechniek",
@@ -22628,7 +22582,7 @@
   "city_slug": "beers",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/dijkerman-lammers-installatie-vqycw4": {
   "name": "Dijkerman &amp; Lammers Installatie",
@@ -22639,7 +22593,6 @@
   "website": "http://www.dijkerman-lammers.nl/",
   "tel": "0573251008",
   "tel_disp": "0573 251 008",
-  "name_alt": "Dijkerman & Lammers Installatie",
   "city_slug": "lochem",
   "siblings": [
    {
@@ -22675,13 +22628,12 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dijkerman-lammers-installatietechniek": {
   "name": "Dijkerman &amp; Lammers installatietechniek",
   "city": "Lochem",
   "website": "https://www.dijkerman-lammers.nl/",
-  "name_alt": "Dijkerman & Lammers installatietechniek",
   "city_slug": "lochem",
   "siblings": [
    {
@@ -22716,7 +22668,7 @@
    }
   ],
   "contact_row": "v6",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/dijkhof-technische-dienstverlening-ilmf6y": {
   "name": "Dijkhof Technische Dienstverlening",
@@ -22910,7 +22862,7 @@
   "city_slug": "stiens",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/dijkstra-installatietechniek-b-v-8uopzu": {
   "name": "Dijkstra Installatietechniek B.V.",
@@ -22967,7 +22919,6 @@
   "website": "https://prijzenloodgieter.nl/groningen/winsum/dijkstra-zn-loodgietersbedrijf/",
   "tel": "0595444586",
   "tel_disp": "0595 444 586",
-  "name_alt": "Dijkstra & Zn Loodgietersbedrijf",
   "city_slug": "winsum",
   "siblings": [
    {
@@ -23003,7 +22954,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dingjan-elektrotechniek-b-v-gydmsm": {
   "name": "Dingjan Elektrotechniek B.V.",
@@ -23854,7 +23805,7 @@
   "city_slug": "barchem",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/dobbelsteen-elektro-b-v-flumhw": {
   "name": "Dobbelsteen Elektro B.V.",
@@ -24334,7 +24285,6 @@
   "website": "https://www.dorestadbouw.nl/",
   "tel": "0624580459",
   "tel_disp": "06 24580459",
-  "name_alt": "Dorestad Bouw - aannemer Wijk Bij Duurstede, airco's, warmtepompen, zonnepanelen",
   "city_slug": "wijk-bij-duurstede",
   "siblings": [
    {
@@ -24370,7 +24320,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dos-techniek-b-v-qjz33g": {
   "name": "DOS Techniek B.V.",
@@ -24613,7 +24563,7 @@
   "city_slug": "noardburgum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/drummen-elektrotechniek-vmnozu": {
   "name": "Drummen Elektrotechniek",
@@ -24693,7 +24643,7 @@
   "city_slug": "dieren",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/dsr-elektro-ryj-ts": {
   "name": "DSR Elektro",
@@ -25582,7 +25532,6 @@
   "website": "http://dxdinstallatietechniek.nl/",
   "tel": "0636354476",
   "tel_disp": "06 36354476",
-  "name_alt": "DXD Infra & Glasvezeltechniek",
   "city_slug": "hellevoetsluis",
   "siblings": [
    {
@@ -25618,7 +25567,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dylan-s-elektra-service-78og4e": {
   "name": "Dylan&#x27;s Elektra Service",
@@ -25629,7 +25578,6 @@
   "website": "https://www.dylan-elektra-service.nl/",
   "tel": "0636392204",
   "tel_disp": "06 36392204",
-  "name_alt": "Dylan's Elektra Service",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -25665,7 +25613,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dz-elektrotechniek-tvi4kk": {
   "name": "DZ Elektrotechniek",
@@ -25679,7 +25627,7 @@
   "city_slug": "kwintsheul",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/e-b-d-techniek-purmerend-b-v-83l_ik": {
   "name": "E.B.D. Techniek Purmerend B.V.",
@@ -25736,7 +25684,6 @@
   "website": "http://www.ebtechniekgroep.nl/",
   "tel": "0134635000",
   "tel_disp": "013 463 5000",
-  "name_alt": "E & B Techniekgroep",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -25772,7 +25719,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/e-bauhuis-installatietechniek-kob-o4": {
   "name": "E. Bauhuis Installatietechniek",
@@ -25874,7 +25821,6 @@
   "website": "http://ecai.nl/",
   "tel": "0772223054",
   "tel_disp": "077 222 3054",
-  "name_alt": "E.C.A.I Installatie & elektrotechniek",
   "city_slug": "reuver",
   "rating_row": "default",
   "contact_row": "default",
@@ -26029,7 +25975,7 @@
   "city_slug": "terborg",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/e-j-van-der-meer-elektrotechniek-b-v-aswmnq": {
   "name": "E.J. van der Meer Elektrotechniek b.v.",
@@ -26059,7 +26005,6 @@
  "bedrijf/e-k-electronics": {
   "name": "E&amp;K Electronics",
   "city": "Yerseke",
-  "name_alt": "E&K Electronics",
   "city_slug": "yerseke",
   "siblings": [
    {
@@ -26355,7 +26300,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=%22E.S.B.%22%20Electro%20Sanit.%20Bedr.%20Valkenburg%20aan%20de%20Geul%20B.V.&amp;query_place_id=ChIJSYVVD6vqwEcRw39doQBrK6o",
   "tel": "0436010175",
   "tel_disp": "043 601 0175",
-  "name_alt": "\"E.S.B.\" Electro Sanit. Bedr. Valkenburg aan de Geul B.V.",
   "city_slug": "valkenburg",
   "siblings": [
    {
@@ -26390,7 +26334,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/e-s-i-installatietechniek-b-v-svdiui": {
   "name": "E S I - Installatietechniek B.V.",
@@ -26447,7 +26391,6 @@
   "website": "https://www.esinstallatietechniek.nl/",
   "tel": "0570244010",
   "tel_disp": "0570 244 010",
-  "name_alt": "E&S installatietechniek",
   "city_slug": "wesepe",
   "rating_row": "default",
   "contact_row": "default",
@@ -26635,7 +26578,6 @@
   "website": "https://www.technische-installaties.nl/",
   "tel": "0742672345",
   "tel_disp": "074 267 2345",
-  "name_alt": "E&T Technische Installaties",
   "city_slug": "borne",
   "siblings": [
    {
@@ -26671,7 +26613,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/e-technieknl-05tmdc": {
   "name": "E-techniekNL",
@@ -26798,7 +26740,6 @@
   "website": "https://www.ewinstallaties.nl/",
   "tel": "0492745220",
   "tel_disp": "0492 745 220",
-  "name_alt": "E&W Installaties Bakel B.V.",
   "city_slug": "bakel",
   "siblings": [
    {
@@ -26813,7 +26754,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/e-w-plus-uip7ps": {
   "name": "E &amp; W Plus",
@@ -26824,7 +26765,6 @@
   "website": "http://www.enwplus.nl/",
   "tel": "0251246911",
   "tel_disp": "0251 246 911",
-  "name_alt": "E & W Plus",
   "city_slug": "beverwijk",
   "siblings": [
    {
@@ -26860,7 +26800,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/easelektro-mx-hf4": {
   "name": "EasElektro",
@@ -26958,7 +26898,7 @@
   "city_slug": "sint-anthonis",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ebbers-elektrotechniek-b4zczu": {
   "name": "Ebbers Elektrotechniek",
@@ -27320,7 +27260,6 @@
   "website": "http://www.edselektra.nl/",
   "tel": "0651912957",
   "tel_disp": "06 51912957",
-  "name_alt": "Ed's Elektra",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -27356,7 +27295,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/edb-installatietechniek-tf5eak": {
   "name": "edb-installatietechniek",
@@ -27461,7 +27400,7 @@
   "city_slug": "erp",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ede-2ma0x4": {
   "name": "Ede",
@@ -27563,7 +27502,7 @@
   "city_slug": "udenhout",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/edg-elektro-d_ljis": {
   "name": "EdG elektro",
@@ -27744,7 +27683,7 @@
   "city_slug": "kraggenburg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/edomus-t6sx3g": {
   "name": "eDomus",
@@ -28043,7 +27982,7 @@
   "city_slug": "harkema",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ehbi-group-b-v-oa83sw": {
   "name": "EHBI Group B.V.",
@@ -28280,7 +28219,7 @@
   "city_slug": "gemonde",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/eim-technics-cggz3o": {
   "name": "EIM Technics",
@@ -28567,7 +28506,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=El.techn.%20Inst.bur.%20%26%20Handelsondernem.%20Heine%20B.V.&amp;query_place_id=ChIJI5UjWwvNx0cRjHZAlTI0D18",
   "tel": "0341260002",
   "tel_disp": "0341 260 002",
-  "name_alt": "El.techn. Inst.bur. & Handelsondernem. Heine B.V.",
   "city_slug": "nunspeet",
   "siblings": [
    {
@@ -28603,7 +28541,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/elab-electronic-systems": {
   "name": "ELAB Electronic Systems",
@@ -28641,7 +28579,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/elba-electro-wi05yy": {
   "name": "Elba Electro",
@@ -28805,7 +28743,7 @@
     "name": "smaling service monteur"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/eleccheck-01nx_q": {
   "name": "Eleccheck",
@@ -29091,7 +29029,6 @@
   "website": "http://www.electraenzo.nl/",
   "tel": "0243609393",
   "tel_disp": "024 360 9393",
-  "name_alt": "Electra & Zo E.T.I.B.",
   "city_slug": "nijmegen",
   "siblings": [
    {
@@ -29127,7 +29064,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/electracare-isew2w": {
   "name": "Electracare",
@@ -29365,7 +29302,7 @@
   "city_slug": "t-zand",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/electrisfy-elektricien-in-hilversum-en-t-gooi--5dwh4": {
   "name": "Electrisfy — Elektricien in Hilversum en ’t Gooi",
@@ -29650,7 +29587,6 @@
   "reviews": "5",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Electro%20Design%20Ro%20%26%20Ro&amp;query_place_id=ChIJH3RWMEj0w0cR4uwoIDQS8Do",
   "website": "http://www.ro-ro.be/",
-  "name_alt": "Electro Design Ro & Ro",
   "city_slug": "belgie",
   "siblings": [
    {
@@ -29686,7 +29622,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/electro-duijckers-b-v--bdqty": {
   "name": "Electro Duijckers B.V.",
@@ -29974,7 +29910,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/electro-nicks-oezek0": {
   "name": "Electro-Nicks",
@@ -30080,7 +30016,7 @@
   "city_slug": "nuth",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/electro-sieben-5tyqrq": {
   "name": "Electro Sieben",
@@ -30183,7 +30119,7 @@
   "city_slug": "woudrichem",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/electro-stiekema-mgpqkc": {
   "name": "Electro Stiekema",
@@ -30525,7 +30461,7 @@
   "city_slug": "haaften",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/electro-technisch-installatie-bedrijf-etib-segers-9txrr8": {
   "name": "Electro technisch installatie bedrijf (ETIB) Segers",
@@ -30582,7 +30518,6 @@
   "website": "http://www.l-ami.nl/",
   "tel": "0705116738",
   "tel_disp": "070 511 6738",
-  "name_alt": "Electro Technisch Installatie Bureau l'Ami B.V.",
   "city_slug": "wassenaar",
   "siblings": [
    {
@@ -30617,7 +30552,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/electro-technische-installaties-clots-n66lqk": {
   "name": "Electro Technische Installaties Clots",
@@ -30673,7 +30608,7 @@
   "city_slug": "wanssum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/electro-van-der-zanden-brc42w": {
   "name": "Electro van der Zanden",
@@ -32022,7 +31957,7 @@
   "city_slug": "andijk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/electrotechnisch-bureau-j-saasen-b-v-sc-n7e": {
   "name": "Electrotechnisch Bureau J. Saasen B.V.",
@@ -33273,7 +33208,7 @@
   "city_slug": "grashoek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektrando-elektricien-24-7-dodk9m": {
   "name": "Elektrando elektricien 24/7",
@@ -33425,7 +33360,7 @@
   "city_slug": "sint-willebrord",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektravolta-mhqvbe": {
   "name": "Elektravolta",
@@ -34288,7 +34223,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektricien-arnhem-026-djwdi4": {
   "name": "Elektricien Arnhem 026",
@@ -34532,7 +34467,7 @@
   "city_slug": "velsen-zuid",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektricien-den-bosch-tmruzc": {
   "name": "Elektricien Den Bosch",
@@ -37101,7 +37036,6 @@
   "website": "https://elektricien030.nl/",
   "tel": "0302272909",
   "tel_disp": "030 227 2909",
-  "name_alt": "Elektricien030.nl - Elektricien Utrecht & Omstreken - 24/7 Spoedservice",
   "city_slug": "utrecht",
   "siblings": [
    {
@@ -37137,7 +37071,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/elektricienprof-capelle-aan-den-ijssel-61osec": {
   "name": "ElektricienProf Capelle aan den IJssel",
@@ -37177,7 +37111,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektricienprof-enschede-6vvhrm": {
   "name": "elektricienprof-enschede",
@@ -37217,7 +37151,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektricienprof-hilversum-i_vo6m": {
   "name": "ElektricienProf Hilversum",
@@ -37257,7 +37191,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektricienprof-leeuwarden-btru3s": {
   "name": "ElektricienProf Leeuwarden",
@@ -37297,7 +37231,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektricienprof-purmerend-atkmqk": {
   "name": "ElektricienProf Purmerend",
@@ -37337,7 +37271,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektricienprof-spijkenisse-tlkjl8": {
   "name": "ElektricienProf Spijkenisse",
@@ -37377,7 +37311,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektriciens-den-haag-prof-24-7-mcnf68": {
   "name": "Elektriciens Den Haag Prof 24/7",
@@ -37669,7 +37603,7 @@
   "city_slug": "deest",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektricks-nko7p0": {
   "name": "Elektricks",
@@ -37772,7 +37706,6 @@
   "website": "http://www.elektriq.nl/",
   "tel": "0657247525",
   "tel_disp": "06 57247525",
-  "name_alt": "Elektriq Inspecties & Advies",
   "city_slug": "eersel",
   "siblings": [
    {
@@ -37808,7 +37741,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/elektrique-elektricien-en-nen-scope-inspecteur-ltng6a": {
   "name": "Elektrique - Elektricien en NEN Scope inspecteur",
@@ -38997,7 +38930,7 @@
   "city_slug": "vijlen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektro-megens-_oz4zk": {
   "name": "Elektro Megens",
@@ -39685,7 +39618,7 @@
   "city_slug": "monster",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektro-speciaal-sprengers-b-v-zodp4m": {
   "name": "Elektro Speciaal Sprengers B.V.",
@@ -39858,7 +39791,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/elektro-swinkels-x-akim": {
   "name": "Elektro Swinkels",
@@ -39964,7 +39897,7 @@
   "city_slug": "strijen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektro-techniek-bruinsma-ngvsbu": {
   "name": "Elektro Techniek Bruinsma",
@@ -39975,7 +39908,7 @@
   "tel_disp": "06 22537974",
   "city_slug": "appelscha",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/elektro-techniek-noellyn-id9pok": {
   "name": "Elektro Techniek Noellyn",
@@ -40739,7 +40672,7 @@
   "city_slug": "oudewater",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektromaani-ftw06o": {
   "name": "Elektromaani",
@@ -41493,7 +41426,6 @@
   "website": "http://engbertsenolthuis.nl/",
   "tel": "0546571565",
   "tel_disp": "0546 571 565",
-  "name_alt": "Elektrospeciaalzaak Engberts & Olthuis",
   "city_slug": "wierden",
   "siblings": [
    {
@@ -41529,7 +41461,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/elektrostoring-hjnzra": {
   "name": "Elektrostoring",
@@ -42017,7 +41949,7 @@
   "city_slug": "westendorp",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektrotechniek-hoogewerf-n_tkn8": {
   "name": "Elektrotechniek Hoogewerf",
@@ -42857,7 +42789,7 @@
   "city_slug": "goudriaan",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektrotechnisch-bedrijf-kuyvenhoven-b-v-nezwog": {
   "name": "Elektrotechnisch Bedrijf Kuyvenhoven B.V.",
@@ -43340,7 +43272,7 @@
   "city_slug": "haren",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektrotechnisch-installatiebedrijf-han-rlrvc8": {
   "name": "Elektrotechnisch Installatiebedrijf HAN",
@@ -43399,7 +43331,7 @@
   "city_slug": "simpelveld",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elektrotechnisch-installatiebedrijf-middel-ofgcgg": {
   "name": "Elektrotechnisch Installatiebedrijf Middel",
@@ -43452,7 +43384,6 @@
   "website": "https://www.vanwessel-dewit.nl/?y_source=1_NjEzNTI4OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0102341575",
   "tel_disp": "010 234 1575",
-  "name_alt": "Elektrotechnisch Installatiebureau Van Wessel & De Wit",
   "city_slug": "vlaardingen",
   "siblings": [
    {
@@ -43488,7 +43419,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/elektrotechnisch-installatieburo-schalkwijk-rtsiza": {
   "name": "Elektrotechnisch Installatieburo Schalkwijk",
@@ -43827,7 +43758,7 @@
   "city_slug": "steenbergen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/eli-volt-elektrotechniek-um3qru": {
   "name": "Eli Volt Elektrotechniek",
@@ -43887,7 +43818,7 @@
   "city_slug": "cadier-en-keer",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/elis-installatietechniek-6ib9hc": {
   "name": "Elis Installatietechniek",
@@ -44426,7 +44357,7 @@
   "city_slug": "dalfsen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/emco-installaties-9guxue": {
   "name": "EMCO Installaties",
@@ -44573,7 +44504,7 @@
   "city_slug": "heerde",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/emtech-solutions-izpqza": {
   "name": "Emtech Solutions",
@@ -44633,7 +44564,7 @@
   "city_slug": "eefde",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/enco-electro-services-comkg4": {
   "name": "Enco Electro Services",
@@ -44943,7 +44874,7 @@
   "city_slug": "sexbierum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/energie-techniek-zeist-jskaps": {
   "name": "Energie Techniek Zeist",
@@ -45355,7 +45286,7 @@
   "city_slug": "meterik",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/enery-shift": {
   "name": "Enery Shift",
@@ -45678,7 +45609,7 @@
   "city_slug": "vinkel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/enschede-elektricien-cxs_t4": {
   "name": "Enschede Elektricien",
@@ -45921,7 +45852,7 @@
   "city_slug": "eethen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ep-excellent-johyty": {
   "name": "EP:Excellent",
@@ -46069,7 +46000,6 @@
   "website": "https://www.epmolendijk.nl/?utm_source=google&amp;utm_medium=google_places",
   "tel": "0541354277",
   "tel_disp": "0541 354 277",
-  "name_alt": "EP:Molendijk Beeld & Geluid",
   "city_slug": "denekamp",
   "rating_row": "default",
   "contact_row": "default",
@@ -46268,7 +46198,7 @@
   "city_slug": "elsloo",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/eppink-elektrotechniek-uddmz8": {
   "name": "Eppink Elektrotechniek",
@@ -46282,7 +46212,7 @@
   "city_slug": "santpoort-noord",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/eppink-installatietechnieken-ipxm9a": {
   "name": "Eppink installatietechnieken",
@@ -46431,7 +46361,6 @@
   "website": "http://www.elektrokeur.nl/contact.html",
   "tel": "0598880280",
   "tel_disp": "0598 880 280",
-  "name_alt": "Eraslan Elektrokeur & Inspekties",
   "city_slug": "veendam",
   "siblings": [
    {
@@ -46467,7 +46396,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/erc-installatie-ez_ae4": {
   "name": "ERC Installatie",
@@ -46570,7 +46499,6 @@
   "website": "http://www.erem.nl/",
   "tel": "0783039000",
   "tel_disp": "078 303 9000",
-  "name_alt": "eReM Industrial Automation - P&V Group",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -46606,7 +46534,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/eric-meijer-electrotechniek-5loafq": {
   "name": "Eric Meijer Electrotechniek",
@@ -46709,7 +46637,6 @@
   "website": "http://www.eieo.nl/",
   "tel": "0367600494",
   "tel_disp": "036 760 0494",
-  "name_alt": "Eric's Installatie en Onderhoud",
   "city_slug": "almere",
   "siblings": [
    {
@@ -46745,7 +46672,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/eriklima-b-v-installatietechniek-s7etzq": {
   "name": "Eriklima B.V. Installatietechniek",
@@ -46896,7 +46823,7 @@
   "city_slug": "de-blesse",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/erra-electronics-domotica-24-7-depannage-q-bfq4": {
   "name": "ERRA electronics &amp; domotica | 24/7 depannage",
@@ -46907,7 +46834,6 @@
   "website": "https://www.erra-electronics-domotica.be/",
   "tel": "0489122201",
   "tel_disp": "0489 12 22 01",
-  "name_alt": "ERRA electronics & domotica | 24/7 depannage",
   "city_slug": "belgie",
   "siblings": [
    {
@@ -46943,7 +46869,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/erro-techniek-nip9du": {
   "name": "ERRO Techniek",
@@ -47046,7 +46972,6 @@
   "website": "http://www.eseni.nl/",
   "tel": "0402557558",
   "tel_disp": "040 255 7558",
-  "name_alt": "ES&I B.V.",
   "city_slug": "veldhoven",
   "siblings": [
    {
@@ -47082,7 +47007,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/esas-multidienst-c5wzge": {
   "name": "Esas Multidienst",
@@ -47569,7 +47494,6 @@
   "website": "http://www.etbmontys.com/",
   "tel": "0181404730",
   "tel_disp": "0181 404 730",
-  "name_alt": "ETB Monty's BV",
   "city_slug": "numansdorp",
   "rating_row": "default",
   "contact_row": "default",
@@ -47948,7 +47872,6 @@
   "website": "http://www.eurolektro.nl/",
   "tel": "0464105861",
   "tel_disp": "046 410 5861",
-  "name_alt": "EUROLEKTRO - SCIOS SCOPE 10 LIMBURG Elektro inspecties - CanalDigitaal & Astra Satelliet Service Antenne Dealer Limburg",
   "city_slug": "puth",
   "rating_row": "default",
   "contact_row": "default",
@@ -48289,7 +48212,7 @@
   "city_slug": "hoogkarspel",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/f-a-installatie-ku1mea": {
   "name": "F.A. Installatie",
@@ -48345,7 +48268,7 @@
   "tel_disp": "0117 420 334",
   "city_slug": "sluis",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/f-j-g-m-elektro-bouw-ibx92g": {
   "name": "F.J.G.M.Elektro &amp; Bouw",
@@ -48356,7 +48279,6 @@
   "website": "https://fjgmelektroenbouw.nl/",
   "tel": "0619773701",
   "tel_disp": "06 19773701",
-  "name_alt": "F.J.G.M.Elektro & Bouw",
   "city_slug": "dordrecht",
   "siblings": [
    {
@@ -48392,7 +48314,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/f-k-electronic-jh_dek": {
   "name": "F.K.Electronic",
@@ -49026,7 +48948,7 @@
   "city_slug": "sint-annaparochie",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/fdy-installaties-udybwe": {
   "name": "FDY Installaties",
@@ -49148,7 +49070,6 @@
   "website": "http://www.feenstraelektra.nl/",
   "tel": "0512516101",
   "tel_disp": "0512 516 101",
-  "name_alt": "Feenstra's Installatie Buro Drachten B.V.",
   "city_slug": "drachten",
   "siblings": [
    {
@@ -49179,7 +49100,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/feenstra-tiel-has524": {
   "name": "Feenstra Tiel",
@@ -49615,7 +49536,7 @@
   "city_slug": "erichem",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/fix-techniek-q01wrm": {
   "name": "Fix Techniek",
@@ -49942,7 +49863,7 @@
   "city_slug": "luttelgeest",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/flinter-c-s-b-v-x-xev0": {
   "name": "Flinter C&amp;S B.V.",
@@ -49953,7 +49874,6 @@
   "website": "http://flintercs.com/",
   "tel": "0854852426",
   "tel_disp": "085 485 2426",
-  "name_alt": "Flinter C&S B.V.",
   "city_slug": "haaksbergen",
   "siblings": [
    {
@@ -49989,7 +49909,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/flow-installatie-montage-_cslwa": {
   "name": "Flow installatie &amp; montage",
@@ -50000,7 +49920,6 @@
   "website": "https://www.flowinstallatiemontage.nl/",
   "tel": "0850605707",
   "tel_disp": "085 060 5707",
-  "name_alt": "Flow installatie & montage",
   "city_slug": "wijk-bij-duurstede",
   "siblings": [
    {
@@ -50036,7 +49955,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/flux-electro-bv-bzxsuq": {
   "name": "Flux Electro BV",
@@ -50091,7 +50010,6 @@
   "website": "http://www.fmj.nl/",
   "tel": "0118820390",
   "tel_disp": "0118 820 390",
-  "name_alt": "FMJ E&I Zeeland B.V.",
   "city_slug": "heinkenszand",
   "siblings": [
    {
@@ -50101,7 +50019,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/fmj-elektro-b-v-60akec": {
   "name": "FMJ Elektro B.V.",
@@ -50207,7 +50125,7 @@
   "city_slug": "vuren",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/fokke-elektro-mqtbc0": {
   "name": "Fokke elektro",
@@ -50221,7 +50139,7 @@
   "city_slug": "serooskerke",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/fontein-elektrotechniek-bv--rlxdm": {
   "name": "Fontein Elektrotechniek BV",
@@ -50257,7 +50175,6 @@
   "name": "Fontein elektrotechniek &amp; deuraandrijvingen",
   "city": "Leidschendam",
   "website": "https://www.fonteinelektrotechniek.nl/",
-  "name_alt": "Fontein elektrotechniek & deuraandrijvingen",
   "city_slug": "leidschendam",
   "siblings": [
    {
@@ -50277,7 +50194,7 @@
    }
   ],
   "contact_row": "v6",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/fore-installatie-adviseurs-b-v-qpsxfe": {
   "name": "Fore Installatie Adviseurs B.V.",
@@ -50419,7 +50336,7 @@
   "city_slug": "helden",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/franken-installatiebedrijf-vzgoby": {
   "name": "Franken Installatiebedrijf",
@@ -50649,7 +50566,7 @@
   "city_slug": "nij-altoenae",
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/fs-montage-53zo5g": {
   "name": "FS Montage",
@@ -51229,7 +51146,6 @@
   "website": "https://www.gl-elektrotechniek.nl/",
   "tel": "0735992761",
   "tel_disp": "073 599 2761",
-  "name_alt": "G&L Elektrotechniek B.V.",
   "city_slug": "hedel",
   "siblings": [
    {
@@ -51245,7 +51161,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/g-metselaar-b-v-ffmyam": {
   "name": "G. Metselaar B.V.",
@@ -51601,7 +51517,6 @@
   "website": "http://www.elektroenautomatisering.nl/",
   "tel": "0492323584",
   "tel_disp": "0492 323 584",
-  "name_alt": "Gebr. Kuijpers vof - elektro & automatisering",
   "city_slug": "boekel",
   "siblings": [
    {
@@ -51637,7 +51552,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/gebr-linssen-m_jm8c": {
   "name": "Gebr. Linssen",
@@ -51677,7 +51592,7 @@
   "city_slug": "alteveer",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/gebr-van-manen-elektrotechniek-jde1bo": {
   "name": "Gebr. van Manen Elektrotechniek",
@@ -51808,7 +51723,7 @@
   "city_slug": "assendelft",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/geerlofs-elektrotechniek-g1-muq": {
   "name": "Geerlofs Elektrotechniek",
@@ -52181,7 +52096,6 @@
   "website": "http://gerritstechniekenadvies.nl/",
   "tel": "0616712252",
   "tel_disp": "06 16712252",
-  "name_alt": "Gerrits Techniek & Advies",
   "city_slug": "emmeloord",
   "siblings": [
    {
@@ -52217,7 +52131,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/gerritsen-elektrotechniek-dbzrmu": {
   "name": "Gerritsen Elektrotechniek",
@@ -52414,7 +52328,7 @@
   "city_slug": "leerdam",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ghb-installatietechniek-5qlaac": {
   "name": "GHB Installatietechniek",
@@ -52632,7 +52546,7 @@
   "city_slug": "westmaas",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/giesen-elektro-dntuxs": {
   "name": "Giesen Elektro",
@@ -53083,7 +52997,7 @@
   "city_slug": "venhuizen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/goedkoopste-thuisbatterij-eon4wg": {
   "name": "Goedkoopste-Thuisbatterij",
@@ -53743,7 +53657,6 @@
   "website": "http://www.vpgtechniek.nl/groen-en-aldenkamp",
   "tel": "0348412480",
   "tel_disp": "0348 412 480",
-  "name_alt": "Groen & Aldenkamp Installatietechnieken - Installatiebedrijf Woerden",
   "city_slug": "woerden",
   "siblings": [
    {
@@ -53779,7 +53692,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/groen-en-de-jonge-tudhwa": {
   "name": "Groen en De Jonge",
@@ -53812,7 +53725,7 @@
   "city_slug": "aalsmeer",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/groene-kast-techniek-advies-6pj9-w": {
   "name": "Groene Kast Techniek &amp; Advies",
@@ -53821,7 +53734,6 @@
   "website": "http://www.groenekast.com/",
   "tel": "0611480232",
   "tel_disp": "06 11480232",
-  "name_alt": "Groene Kast Techniek & Advies",
   "city_slug": "mierlo",
   "siblings": [
    {
@@ -53844,7 +53756,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/groene-technische-service-bhfaik": {
   "name": "Groene Technische Service",
@@ -54138,7 +54050,7 @@
   "tel_disp": "+31 180 757 171",
   "city_slug": "nieuwerkerk-aan-den-ijssel",
   "contact_row": "v5",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/groepenkastfix-eindhoven-lqnbfy": {
   "name": "GroepenkastFix Eindhoven",
@@ -54505,7 +54417,7 @@
   "city_slug": "windraak",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/h-g-willemsen-tx8sjo": {
   "name": "H.G. Willemsen",
@@ -54519,7 +54431,7 @@
   "city_slug": "ijzendoorn",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/h-i-o-m-gjkwqc": {
   "name": "H.i.o.m.",
@@ -54530,7 +54442,7 @@
   "tel_disp": "06 53999031",
   "city_slug": "lobith",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/h-k-installatietechniek-dux1mo": {
   "name": "H|K installatietechniek",
@@ -54577,7 +54489,6 @@
   "website": "https://www.hstechniek.com/",
   "tel": "0636277154",
   "tel_disp": "06 36277154",
-  "name_alt": "H&S Elektrotechniek",
   "city_slug": "dongen",
   "siblings": [
    {
@@ -54613,7 +54524,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/h-sauer-elektrotechniek-jfspjo": {
   "name": "H. Sauer Elektrotechniek",
@@ -55194,7 +55105,7 @@
   "city_slug": "epen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hadeco-elektrotechniek-bv-totaaloplossingen-voor-ieder-project-v0aedi": {
   "name": "Hadeco Elektrotechniek BV - Totaaloplossingen voor ieder project",
@@ -55623,7 +55534,6 @@
   "website": "http://www.hammingatechniek.nl/",
   "tel": "0592544423",
   "tel_disp": "0592 544 423",
-  "name_alt": "Hamminga Installatie & Techniek",
   "city_slug": "tynaarlo",
   "siblings": [
    {
@@ -55659,7 +55569,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/hampsink-oimu3i": {
   "name": "Hampsink",
@@ -55719,7 +55629,7 @@
   "city_slug": "cruquius",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hansen-en-bok-elektrotechniek-ylphfw": {
   "name": "Hansen en Bok elektrotechniek",
@@ -55961,7 +55871,6 @@
   "website": "http://www.harensendelange.nl/",
   "tel": "0627446634",
   "tel_disp": "06 27446634",
-  "name_alt": "Harens Engineering &Consulting",
   "city_slug": "winsum",
   "siblings": [
    {
@@ -55997,7 +55906,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/hart-voor-elektra-_bij4k": {
   "name": "Hart voor Elektra",
@@ -56633,7 +56542,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Hedo-Beveiliging%20%26%20Besturing&amp;query_place_id=ChIJpyQF7Th9xkcRrB7Wr9mn-vA",
   "tel": "0348553677",
   "tel_disp": "0348 553 677",
-  "name_alt": "Hedo-Beveiliging & Besturing",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -56668,7 +56576,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/hedo-elektrotechniek-7jdmgu": {
   "name": "Hedo Elektrotechniek",
@@ -56728,7 +56636,7 @@
   "city_slug": "moordrecht",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hees-installaties-echt-qcka_w": {
   "name": "Hees Installaties Echt",
@@ -57591,7 +57499,6 @@
   "website": "http://www.servicehendriks.nl/",
   "tel": "0493494578",
   "tel_disp": "0493 494 578",
-  "name_alt": "Hendriks Installaties | W-installaties & Allround Service",
   "city_slug": "someren",
   "siblings": [
    {
@@ -57627,7 +57534,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/henk-rensing-installatietechniek-luxkv8": {
   "name": "Henk Rensing Installatietechniek",
@@ -57800,7 +57707,7 @@
   "city_slug": "heenvliet",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/het-huis-elektra-techniek-pmmehs": {
   "name": "HET Huis Elektra Techniek",
@@ -58505,7 +58412,7 @@
   "city_slug": "woudsend",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hoekstra-installatie-b-v-krt2k4": {
   "name": "Hoekstra Installatie B.V.",
@@ -58973,7 +58880,7 @@
   "city_slug": "lisse",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/honkoop-elektro-eijzao": {
   "name": "Honkoop Elektro",
@@ -58987,7 +58894,7 @@
   "city_slug": "nieuwolda",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hoogenboom-beveiliging-bv-q6lsji": {
   "name": "Hoogenboom Beveiliging BV",
@@ -59137,7 +59044,7 @@
   "city_slug": "hazerswoude-dorp",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hoogervorst-elektrotechniek-b-v-bovylo": {
   "name": "Hoogervorst Elektrotechniek B.V.",
@@ -59263,7 +59170,7 @@
   "city_slug": "spui",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hooymans-elektrotechniek-h5jcry": {
   "name": "Hooymans Elektrotechniek",
@@ -59760,7 +59667,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/horst-elektrotechniek-mj7gko": {
   "name": "Horst Elektrotechniek",
@@ -59774,7 +59681,7 @@
   "city_slug": "nieuw-roden",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/horsting-elektrotechniek-bv-cwohua": {
   "name": "Horsting Elektrotechniek BV",
@@ -59860,7 +59767,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/hos-elektrotechniek-kqagl8": {
   "name": "Hos Elektrotechniek",
@@ -60076,7 +59983,6 @@
   "website": "http://www.hs-projects.nl/",
   "tel": "0850703222",
   "tel_disp": "085 070 3222",
-  "name_alt": "HS-Projects B.V. Elektro- & Installatietechniek",
   "city_slug": "sittard",
   "siblings": [
    {
@@ -60112,7 +60018,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/hs-technieken-5q7qbo": {
   "name": "HS Technieken",
@@ -60353,7 +60259,7 @@
   "city_slug": "vroomshoop",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/huistech-mugjyu": {
   "name": "HuisTech",
@@ -60579,7 +60485,7 @@
   "city_slug": "ursem",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/huurman-techniek-waddinxveen-nnnmre": {
   "name": "Huurman Techniek Waddinxveen",
@@ -60639,7 +60545,7 @@
   "city_slug": "bilthoven",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hvhinstallatietechniek-elektricien-qen1gm": {
   "name": "hvhinstallatietechniek Elektricien",
@@ -60653,7 +60559,7 @@
   "city_slug": "zuidland",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/hvk-multidiensten-ersmne": {
   "name": "HvK Multidiensten",
@@ -60972,7 +60878,7 @@
   "city_slug": "woudenberg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ibb-installatietechniek": {
   "name": "IBB Installatietechniek",
@@ -61207,7 +61113,6 @@
   "website": "https://www.ijsbrandbouwenrenovatie.nl/",
   "tel": "0712340979",
   "tel_disp": "071 234 0979",
-  "name_alt": "IJsbrand Bouw & Renovatie",
   "city_slug": "noordwijk",
   "siblings": [
    {
@@ -61243,7 +61148,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ijssel-elektro-xexdai": {
   "name": "IJssel Elektro",
@@ -61324,7 +61229,7 @@
   "city_slug": "ouderkerk-aan-den-ijssel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ilektra-rw-geo": {
   "name": "Ilektra",
@@ -61603,7 +61508,7 @@
     "name": "Verhage Elektrotechniek"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/influence-green-energy-iwq35c": {
   "name": "Influence Green Energy",
@@ -61845,7 +61750,7 @@
   "city_slug": "oentsjerk",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/inst-bdr-hoekstra-heerenveen-b2okvc": {
   "name": "Inst.bdr. Hoekstra Heerenveen",
@@ -62118,7 +62023,7 @@
   "city_slug": "lottum",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatie-en-servicebedrijf-de-haan-b-v-u_jsgq": {
   "name": "Installatie- en Servicebedrijf De Haan B.V.",
@@ -62238,7 +62143,7 @@
   "city_slug": "alteveer-gem-noordenveld",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatie-techniek-hardinxveld-b-v-bq8gf4": {
   "name": "Installatie Techniek Hardinxveld B.V.",
@@ -62567,7 +62472,6 @@
   "website": "http://totaalinstallatie.com/",
   "tel": "0850605799",
   "tel_disp": "085 060 5799",
-  "name_alt": "Installatiebedrijf Amiro CV & Electra",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -62603,7 +62507,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/installatiebedrijf-aquarius--je0h8": {
   "name": "Installatiebedrijf Aquarius",
@@ -63284,7 +63188,7 @@
   "city_slug": "noordgouwe",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-driezen-wilzva": {
   "name": "Installatiebedrijf Driezen",
@@ -63297,7 +63201,7 @@
   "city_slug": "scheerwolde",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-e-muis-b-v-stqo6e": {
   "name": "Installatiebedrijf E. Muis B.V.",
@@ -63652,7 +63556,7 @@
   "city_slug": "epse",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-haerkens-b-v-qjkgno": {
   "name": "Installatiebedrijf Haerkens B.V.",
@@ -63789,7 +63693,7 @@
   "city_slug": "ruinerwold",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-heuvelland-uo35vy": {
   "name": "Installatiebedrijf Heuvelland",
@@ -64226,7 +64130,6 @@
   "website": "https://korsenkranendonk.nl/",
   "tel": "0858002380",
   "tel_disp": "085 800 2380",
-  "name_alt": "Installatiebedrijf Kors & Kranendonk",
   "city_slug": "steggerda",
   "rating_row": "default",
   "contact_row": "default",
@@ -64558,7 +64461,7 @@
   "city_slug": "elahuizen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-neleman-2rkmec": {
   "name": "Installatiebedrijf Neleman",
@@ -64664,7 +64567,7 @@
   "city_slug": "giessen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-oosterwolde-b-v-dkkdbm": {
   "name": "Installatiebedrijf Oosterwolde B.V.",
@@ -64715,7 +64618,6 @@
   "website": "http://www.installatiebedrijfopthoog.nl/",
   "tel": "0499574778",
   "tel_disp": "0499 574 778",
-  "name_alt": "Installatiebedrijf Op 't Hoog",
   "city_slug": "oirschot",
   "siblings": [
    {
@@ -64751,7 +64653,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/installatiebedrijf-philips-en-van-veen-vr25ic": {
   "name": "Installatiebedrijf Philips en van Veen",
@@ -64836,7 +64738,7 @@
   "city_slug": "ouddorp",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-steijns-bl6538": {
   "name": "Installatiebedrijf Steijns",
@@ -65533,7 +65435,7 @@
   "city_slug": "nieuw-dordrecht",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-welink-b-v-6csyjm": {
   "name": "Installatiebedrijf Welink B.V.",
@@ -65651,7 +65553,7 @@
     "name": "Installatietechniek Vlogman BV"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/installatiebedrijf-wim-bosman-1z6ir8": {
   "name": "Installatiebedrijf Wim Bosman",
@@ -65775,7 +65677,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/installatiebedrijf-zuid-b-v-muwgc8": {
   "name": "Installatiebedrijf Zuid B.V.",
@@ -65789,7 +65691,7 @@
   "city_slug": "kamperland",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatiebedrijf-zuid-holland-6qedsg": {
   "name": "Installatiebedrijf Zuid-Holland",
@@ -66302,7 +66204,7 @@
   "city_slug": "borssele",
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatietechniek-dijkstra": {
   "name": "Installatietechniek Dijkstra",
@@ -66622,7 +66524,7 @@
   "city_slug": "hengevelde",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatietechniek-ter-haar-oiol5w": {
   "name": "Installatietechniek ter Haar",
@@ -66636,7 +66538,7 @@
   "city_slug": "mander",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/installatietechniek-valentijn-dfczny": {
   "name": "Installatietechniek Valentijn ⚡",
@@ -67066,7 +66968,7 @@
   "city_slug": "goor",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/instant-elektra-y_z7kq": {
   "name": "Instant Elektra",
@@ -67695,7 +67597,7 @@
   "city_slug": "ritthem",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/itbb-heerenveen-orrcrw": {
   "name": "ITBB Heerenveen",
@@ -67864,7 +67766,7 @@
   "city_slug": "bennebroek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ivenko-klimaatbeheersing-en-koudetechniek-q6ccfm": {
   "name": "Ivenko Klimaatbeheersing en koudetechniek",
@@ -68049,7 +67951,7 @@
   "city_slug": "benschop",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/j-bos-electrotechniek-cpsi18": {
   "name": "J. Bos Electrotechniek",
@@ -68413,7 +68315,6 @@
   "website": "http://www.jenpelektro.nl/",
   "tel": "0499872407",
   "tel_disp": "0499 872 407",
-  "name_alt": "J&P Elektro",
   "city_slug": "oirschot",
   "siblings": [
    {
@@ -68449,7 +68350,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/j-projects-installations-kjh7d8": {
   "name": "J-Projects installations",
@@ -68508,7 +68409,7 @@
   "city_slug": "vries",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/j-s-a-elektrotechniek-xniula": {
   "name": "J.S.A. Elektrotechniek",
@@ -68565,7 +68466,6 @@
   "website": "http://www.jenselektrotechniek.nl/",
   "tel": "0485361217",
   "tel_disp": "0485 361 217",
-  "name_alt": "J&S Elektrotechniek B.V.",
   "city_slug": "oeffelt",
   "rating_row": "default",
   "contact_row": "default",
@@ -68827,7 +68727,6 @@
   "website": "http://www.jwinstallatie.nl/",
   "tel": "0634933993",
   "tel_disp": "06 34933993",
-  "name_alt": "J&W installatietechniek",
   "city_slug": "uithoorn",
   "rating_row": "default",
   "contact_row": "default",
@@ -69104,7 +69003,6 @@
   "website": "http://www.jelektrotechniek.nl/",
   "tel": "0262131730",
   "tel_disp": "026 213 1730",
-  "name_alt": "Jacobsen Elektro & Installatietechniek",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -69140,7 +69038,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/jade-installatie-bjf3ci": {
   "name": "JADE installatie",
@@ -69649,7 +69547,6 @@
   "website": "https://www.jansenbeveiligt.nl/",
   "tel": "0341550200",
   "tel_disp": "0341 550 200",
-  "name_alt": "Jansen Beveiliging & Elektro",
   "city_slug": "ermelo",
   "siblings": [
    {
@@ -69685,7 +69582,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/jansen-elektrotechniek-ohjuse": {
   "name": "Jansen Elektrotechniek",
@@ -69766,7 +69663,7 @@
   "city_slug": "ootmarsum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/jansen-installatiewerk-b-v-installatiebedrijf-veenendaal-ssvynm": {
   "name": "Jansen installatiewerk B.V. - Installatiebedrijf Veenendaal",
@@ -69820,7 +69717,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Jansen%20Smalspoor%20%26%20Elektra%20Service&amp;query_place_id=ChIJr0fLC9Y1xkcRQHTgk-jsbFk",
   "tel": "0615391659",
   "tel_disp": "06 15391659",
-  "name_alt": "Jansen Smalspoor & Elektra Service",
   "city_slug": "putten",
   "siblings": [
    {
@@ -69855,7 +69751,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/jansen-techniek-en-service-1fnj3i": {
   "name": "Jansen Techniek en Service",
@@ -69958,7 +69854,6 @@
   "website": "http://www.janssen-etb.com/",
   "tel": "0252377013",
   "tel_disp": "0252 377 013",
-  "name_alt": "Janssen Elektrotechniek & Beveiliging B.V.",
   "city_slug": "noordwijkerhout",
   "siblings": [
    {
@@ -69978,7 +69873,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/janssen-installatie-gennep-_dzhd4": {
   "name": "Janssen Installatie Gennep",
@@ -70135,7 +70030,7 @@
   "city_slug": "geesbrug",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/jb-projectservice-x08kiw": {
   "name": "JB Projectservice",
@@ -70396,7 +70291,7 @@
   "city_slug": "swalmen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/jeffrey-s-installatietechniek-v8lgcg": {
   "name": "jeffrey&#x27;s installatietechniek",
@@ -70407,7 +70302,6 @@
   "website": "http://www.jeffreysinstallatietechniek.nl/",
   "tel": "0641108983",
   "tel_disp": "06 41108983",
-  "name_alt": "jeffrey's installatietechniek",
   "city_slug": "meerssen",
   "siblings": [
    {
@@ -70443,7 +70337,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/jelier-elektro-g1gv6q": {
   "name": "Jelier Elektro",
@@ -70657,7 +70551,7 @@
   "tel_disp": "06 40477721",
   "city_slug": "nieuw-en-sint-joosland",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/jeurissen-elektrotechniek-b-v-xcuxuk": {
   "name": "Jeurissen Elektrotechniek B.V.",
@@ -70794,7 +70688,6 @@
   "website": "https://jh-elektra.nl/",
   "tel": "0640696212",
   "tel_disp": "06 40696212",
-  "name_alt": "JH Elektra & Installaties",
   "city_slug": "gieten",
   "siblings": [
    {
@@ -70820,7 +70713,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/jh-techniek-elektrotechniek-kmhcrm": {
   "name": "JH Techniek Elektrotechniek",
@@ -71204,7 +71097,7 @@
   "city_slug": "niekerk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/jonas-electro-xa-i24": {
   "name": "Jonas Electro",
@@ -71310,7 +71203,7 @@
   "city_slug": "goedereede",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/joosten-installatietechniek-xnaxoe": {
   "name": "JOOSTEN installatietechniek",
@@ -71699,7 +71592,7 @@
   "city_slug": "klundert",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/jso-elektrotechniek-f-f2zq": {
   "name": "JSO Elektrotechniek",
@@ -72715,7 +72608,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=K%26V%20Installatie%20Techniek&amp;query_place_id=ChIJo0_amuR_xkcRCTD_PuVtk-c",
   "tel": "0643127398",
   "tel_disp": "06 43127398",
-  "name_alt": "K&V Installatie Techniek",
   "city_slug": "ammerstol",
   "siblings": [
    {
@@ -72731,7 +72623,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/kaandorp-wijnker-b-v": {
   "name": "Kaandorp-Wijnker B.V.",
@@ -72924,7 +72816,7 @@
   "website": "http://www.kampsbv.nl/",
   "city_slug": "rolde",
   "contact_row": "v6",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/kanters-services-ovkdyc": {
   "name": "Kanters services",
@@ -73114,7 +73006,6 @@
   "website": "http://www.kastelijnenbijlsma.nl/",
   "tel": "0348411948",
   "tel_disp": "0348 411 948",
-  "name_alt": "Kastelijn & Bijlsma B.V.",
   "city_slug": "woerden",
   "siblings": [
    {
@@ -73149,7 +73040,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/kastveilig-c8hrhi": {
   "name": "Kastveilig",
@@ -73209,7 +73100,7 @@
   "city_slug": "sint-maartensbrug",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/kb-elektro-ze10yw": {
   "name": "KB-Elektro",
@@ -73452,7 +73343,7 @@
   "city_slug": "ysselsteyn",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/keijzer-techniek-eekwg4": {
   "name": "Keijzer Techniek",
@@ -74200,7 +74091,7 @@
   "city_slug": "vierhouten",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/klaver-installaties-en-installatiebedrijf-7ihbdg": {
   "name": "Klaver Installaties en Installatiebedrijf",
@@ -74928,7 +74819,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/klumpers-installatietechnieken-b-v-ws03qq": {
   "name": "Klumpers Installatietechnieken B.V.",
@@ -75056,7 +74947,6 @@
   "website": "http://www.klusbedrijfdeclipers.nl/",
   "tel": "0687991115",
   "tel_disp": "06 87991115",
-  "name_alt": "Klusbedrijf de Clipers | Badkamer Renovatie & Bouwbedrijf Venray",
   "city_slug": "oostrum",
   "siblings": [
    {
@@ -75072,7 +74962,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-de-klussenbox-loodgieter-elektricien-slotenmaker-4z4-bk": {
   "name": "Klusbedrijf De Klussenbox | Loodgieter, Elektricien &amp; Slotenmaker",
@@ -75083,7 +74973,6 @@
   "website": "https://www.deklussenbox.nl/",
   "tel": "0613883611",
   "tel_disp": "06 13883611",
-  "name_alt": "Klusbedrijf De Klussenbox | Loodgieter, Elektricien & Slotenmaker",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -75119,7 +75008,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-lami-wh1cwq": {
   "name": "Klusbedrijf LAMI",
@@ -75313,7 +75202,7 @@
   "city_slug": "de-bilt",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/klussenbedrijf-bosman-8iolpw": {
   "name": "Klussenbedrijf bosman",
@@ -75612,7 +75501,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/klussenpunt-2lqi7k": {
   "name": "Klussenpunt",
@@ -75667,7 +75556,6 @@
   "website": "https://kmelektraloodgieter.nl/",
   "tel": "0685199535",
   "tel_disp": "06 85199535",
-  "name_alt": "KM Elektra & loodgieter Installatie",
   "city_slug": "huizen",
   "siblings": [
    {
@@ -75703,7 +75591,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/km-elektrotechniek-_pcesa": {
   "name": "KM Elektrotechniek",
@@ -75849,7 +75737,6 @@
   "website": "https://www.knipmeijerenblok.nl/homepage",
   "tel": "0206686266",
   "tel_disp": "020 668 6266",
-  "name_alt": "Knipmeijer & Blok",
   "city_slug": "diemen",
   "siblings": [
    {
@@ -75885,7 +75772,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/knook-totaaltechniek-purmerend-0mkmji": {
   "name": "Knook Totaaltechniek Purmerend",
@@ -76074,7 +75961,6 @@
   "website": "http://koekman.nl/",
   "tel": "0341429577",
   "tel_disp": "0341 429 577",
-  "name_alt": "Koekman Telecom & Beveiliging",
   "city_slug": "harderwijk",
   "siblings": [
    {
@@ -76110,7 +75996,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/koelen-installatietechniek-9wu5dk": {
   "name": "Koelen installatietechniek",
@@ -76147,7 +76033,7 @@
   "tel_disp": "06 10853061",
   "city_slug": "sprundel",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/koesveld-techniek-nt5v0i": {
   "name": "Koesveld Techniek",
@@ -76615,7 +76501,6 @@
   "website": "http://www.koomenelektro.nl/",
   "tel": "0612438943",
   "tel_disp": "06 12438943",
-  "name_alt": "Koomen elektro & automation",
   "city_slug": "hoorn",
   "siblings": [
    {
@@ -76651,7 +76536,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/koomen-elektrotechniek--i1r8o": {
   "name": "Koomen Elektrotechniek",
@@ -77439,7 +77324,6 @@
   "website": "https://www.kragtenelektro.nl/",
   "tel": "0356833320",
   "tel_disp": "035 683 3320",
-  "name_alt": "Kragten Elektrotechniek & Beveiligingen",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -77474,7 +77358,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/kramer-besturingstechniek-esbu6k": {
   "name": "Kramer BesturingsTechniek",
@@ -77621,7 +77505,7 @@
   "tel_disp": "+31 578 571 258",
   "city_slug": "vaassen",
   "contact_row": "v5",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/krauth-b-v-5ggfsw": {
   "name": "Krauth B.V.",
@@ -77727,7 +77611,7 @@
   "city_slug": "mijnsheerenland",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/krimpenerwaard-elektrotechniek-pkw55m": {
   "name": "Krimpenerwaard elektrotechniek",
@@ -77737,7 +77621,7 @@
   "tel_disp": "06 83678129",
   "city_slug": "lekkerkerk",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/krins-elektro-aokrk8": {
   "name": "Krins Elektro",
@@ -78964,7 +78848,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/kw-elektrotechniek-hazn74": {
   "name": "KW Elektrotechniek",
@@ -79122,7 +79006,6 @@
   "website": "http://www.lichtenbedrading.nl/",
   "tel": "0654705313",
   "tel_disp": "06 54705313",
-  "name_alt": "L & B Electrotechniek B.V.",
   "city_slug": "wijk-bij-duurstede",
   "siblings": [
    {
@@ -79157,7 +79040,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/l-c-elektro-1o3ua8": {
   "name": "L&amp;C Elektro",
@@ -79168,7 +79051,6 @@
   "website": "http://lenc-vlissingen.nl/",
   "tel": "0118413049",
   "tel_disp": "0118 413 049",
-  "name_alt": "L&C Elektro",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -79204,7 +79086,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/l-p-technics-huplpo": {
   "name": "L.P. Technics",
@@ -79653,7 +79535,7 @@
   "tel_disp": "+31 43 608 0255",
   "city_slug": "berg-en-terblijt",
   "contact_row": "v5",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/lammers-toepoel-installatietechniek-b-v-6petn0": {
   "name": "Lammers Toepoel Installatietechniek B.V.",
@@ -79712,7 +79594,7 @@
   "city_slug": "oudehorne",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/lammertink-wierden-ctzegi": {
   "name": "Lammertink Wierden",
@@ -80150,7 +80032,6 @@
   "website": "http://www.lazeromstechniek.nl/",
   "tel": "0650298123",
   "tel_disp": "06 50298123",
-  "name_alt": "Lazeroms Bouw- & Installatietechniek",
   "city_slug": "roosendaal",
   "siblings": [
    {
@@ -80186,7 +80067,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/lb-elektrotechniek-iphiie": {
   "name": "LB Elektrotechniek",
@@ -80406,7 +80287,7 @@
   "website": "https://www.leerkes.nl/",
   "city_slug": "haarle",
   "contact_row": "v6",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/leertouwer-b-v-g6tvbu": {
   "name": "Leertouwer B.V.",
@@ -80875,7 +80756,7 @@
   "city_slug": "hooge-mierde",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/lg-totaal-installatie-elektricien-slotenmaker-montage-specialist-xaptnq": {
   "name": "LG Totaal installatie Elektricien Slotenmaker Montage specialist",
@@ -80977,7 +80858,7 @@
   "tel_disp": "0347 341 415",
   "city_slug": "lexmond",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/liefting-electrics-dqhwai": {
   "name": "Liefting Electrics",
@@ -81099,7 +80980,6 @@
   "website": "http://www.lights-interior.nl/",
   "tel": "0643789727",
   "tel_disp": "06 43789727",
-  "name_alt": "Lights & Interior - L&I",
   "city_slug": "dongen",
   "siblings": [
    {
@@ -81134,7 +81014,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/ligtvoet-elektrotechniek-b-v-zch-ak": {
   "name": "Ligtvoet Elektrotechniek B.V.",
@@ -81274,7 +81154,7 @@
   "city_slug": "klimmen",
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/litechniek-2sk1nq": {
   "name": "LITechniek",
@@ -82005,7 +81885,7 @@
   "city_slug": "fleringen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/loohuis-installatietechnieken-bv-neg3n4": {
   "name": "Loohuis Installatietechnieken BV",
@@ -82172,7 +82052,6 @@
   "website": "http://lpkelektra.nl/",
   "tel": "0640143811",
   "tel_disp": "06 40143811",
-  "name_alt": "LPK Elektra & Onderhoud",
   "city_slug": "eemnes",
   "siblings": [
    {
@@ -82202,7 +82081,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ls-electro-plus-xglag8": {
   "name": "LS Electro Plus",
@@ -82436,7 +82315,6 @@
   "name": "Luc&#x27;s New Solutions | Elektrisch installatiewerk",
   "city": "Roosendaal",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Luc%27s%20New%20Solutions%20%7C%20Elektrisch%20installatiewerk&amp;query_place_id=ChIJzYIr_r0XxEcReBydcIsKuf0",
-  "name_alt": "Luc's New Solutions | Elektrisch installatiewerk",
   "city_slug": "roosendaal",
   "siblings": [
    {
@@ -82573,7 +82451,7 @@
   "city_slug": "neer",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/luik-energie-techniek-pt3zoq": {
   "name": "Luik Energie Techniek",
@@ -83039,7 +82917,7 @@
   "city_slug": "nieuw-vennep",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/m-belektro-nzuxoi": {
   "name": "M-BELEKTRO",
@@ -83142,7 +83020,7 @@
   "city_slug": "berkel-en-rodenrijs",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/m-cox-elektro-installatie-dcsf_g": {
   "name": "M. Cox Elektro Installatie",
@@ -83291,7 +83169,7 @@
   "city_slug": "sint-jansteen",
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/m-j-installaties-jx4qnw": {
   "name": "M&amp;J Installaties",
@@ -83302,7 +83180,6 @@
   "website": "https://www.mj-installaties.nl/",
   "tel": "0613839125",
   "tel_disp": "06 13839125",
-  "name_alt": "M&J Installaties",
   "city_slug": "dordrecht",
   "siblings": [
    {
@@ -83338,7 +83215,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/m-jansen-elektrotechniek-zi7ewc": {
   "name": "M. Jansen Elektrotechniek",
@@ -83443,7 +83320,7 @@
   "city_slug": "bloemendaal",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/m-m-installatie-b-v-gil6co": {
   "name": "M&amp;M Installatie B.V.",
@@ -83454,7 +83331,6 @@
   "website": "https://www.mminstallatie.nl/",
   "tel": "0524700231",
   "tel_disp": "0524 700 231",
-  "name_alt": "M&M Installatie B.V.",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -83490,7 +83366,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/m-schuttevaar-installatiebedrijf-njg4wu": {
   "name": "M. Schuttevaar Installatiebedrijf",
@@ -83711,7 +83587,7 @@
   "city_slug": "julianadorp",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/maarten-de-kroon-installaties-gomvxa": {
   "name": "Maarten de Kroon Installaties",
@@ -84215,7 +84091,6 @@
   "website": "http://bosenbalder.nl/",
   "tel": "0621233390",
   "tel_disp": "06 21233390",
-  "name_alt": "Mail Bos & Balder Electrical Engineering",
   "city_slug": "bunschoten-spakenburg",
   "siblings": [
    {
@@ -84251,7 +84126,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/majoor-installateurs-rhgqmm": {
   "name": "Majoor Installateurs",
@@ -84506,7 +84381,6 @@
   "website": "https://www.marbleautomation.com/",
   "tel": "0527687953",
   "tel_disp": "0527 687 953",
-  "name_alt": "Marble Automation | Marine & Industry",
   "city_slug": "urk",
   "siblings": [
    {
@@ -84542,7 +84416,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/marc-duivenvoorden-elektrotechniek-nmfuqm": {
   "name": "Marc Duivenvoorden Elektrotechniek",
@@ -84822,7 +84696,7 @@
   "city_slug": "grijpskerke",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/marell-elektrotechniek-aegeti": {
   "name": "Marell elektrotechniek",
@@ -84836,7 +84710,7 @@
   "city_slug": "wijnandsrade",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mark-bosman-elektro-mbe-ge9ac8": {
   "name": "Mark Bosman Elektro (MBE)",
@@ -84925,7 +84799,7 @@
   "city_slug": "baarlo",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mark-molenaar-elektrotechniek-rzvvka": {
   "name": "Mark Molenaar Elektrotechniek",
@@ -85026,7 +84900,6 @@
   "website": "http://markkantadvies.nl/",
   "tel": "0629490443",
   "tel_disp": "06 29490443",
-  "name_alt": "MARKKANT ADVIES & PROJECTMANAGEMENT",
   "city_slug": "oirschot",
   "siblings": [
    {
@@ -85061,7 +84934,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/markkant-elektro-b-v-jczt3q": {
   "name": "Markkant Elektro B.V.",
@@ -85806,7 +85679,7 @@
   "city_slug": "sappemeer",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mav-solutions-elektro-techniek-domotica-specialist-5x2dsk": {
   "name": "Mav-solutions elektro techniek Domotica specialist",
@@ -85817,7 +85690,7 @@
   "tel_disp": "06 38030017",
   "city_slug": "biervliet",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/mawin-elektrotechniek-b-v-3ip2gw": {
   "name": "Mawin Elektrotechniek B.V.",
@@ -85877,7 +85750,7 @@
   "city_slug": "venhorst",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mazurel-installatietechniek": {
   "name": "Mazurel Installatietechniek",
@@ -86601,7 +86474,6 @@
   "website": "https://www.meertens-elektroservice.nl/",
   "tel": "0625326577",
   "tel_disp": "06 25326577",
-  "name_alt": "Meertens Verlichting & Elektroservice",
   "city_slug": "assen",
   "siblings": [
    {
@@ -86637,7 +86509,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/meesters-aobngc": {
   "name": "Meesters",
@@ -86736,7 +86608,6 @@
   "website": "http://www.meeuwiszrolluikenzonwering.nl/",
   "tel": "0646376507",
   "tel_disp": "06 46376507",
-  "name_alt": "Meeuwisz Rolluiken & Zonwering",
   "city_slug": "wageningen",
   "siblings": [
    {
@@ -86772,7 +86643,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/meeuwsse-b-v-badkamerinbouw-installatiebedrijf-aannemer-sanitair-renovatie-lochem-wlnphu": {
   "name": "Meeuwsse B.V. Badkamerinbouw Installatiebedrijf Aannemer Sanitair Renovatie Lochem",
@@ -86832,7 +86703,7 @@
   "city_slug": "milsbeek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/meierijstad-elektro-ofjafe": {
   "name": "Meierijstad-Elektro",
@@ -87061,7 +86932,6 @@
   "website": "https://meijersolar.nl/",
   "tel": "0881304304",
   "tel_disp": "088 130 4304",
-  "name_alt": "Meijer Solar & Installatietechniek",
   "city_slug": "heerenveen",
   "siblings": [
    {
@@ -87097,7 +86967,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/meijerink-installatiewerken-mtzkvk": {
   "name": "Meijerink Installatiewerken",
@@ -87588,7 +87458,6 @@
   "website": "https://www.mfelektra.nl/",
   "tel": "0613825981",
   "tel_disp": "06 13825981",
-  "name_alt": "MF Elektra & Services",
   "city_slug": "maarheeze",
   "siblings": [
    {
@@ -87624,7 +87493,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mg-beringen-vgrtja": {
   "name": "MG Beringen",
@@ -87776,7 +87645,7 @@
   "city_slug": "bathmen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mhur-verduurzamingstechniek-px8lzs": {
   "name": "MHUR verduurzamingstechniek",
@@ -88298,7 +88167,7 @@
   "tel_disp": "06 53517257",
   "city_slug": "renesse",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/mio-elektro-hmk5ng": {
   "name": "Mio Elektro",
@@ -89028,7 +88897,7 @@
   "city_slug": "siddeburen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mol-installatietechniek-b-v-ibdlge": {
   "name": "Mol Installatietechniek B.V.",
@@ -89223,7 +89092,6 @@
   "website": "http://www.molsier.nl/",
   "tel": "0299320987",
   "tel_disp": "0299 320 987",
-  "name_alt": "MolSier Electro- & beveiligingstechniek",
   "city_slug": "edam",
   "siblings": [
    {
@@ -89253,7 +89121,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/momza-loodgieter-almere-elektricien-bedrijf-almere-wglv8c": {
   "name": "Momza loodgieter Almere elektricien bedrijf Almere",
@@ -89375,7 +89243,7 @@
   "city_slug": "zeddam",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/moon-elektro-vi8j1o": {
   "name": "Moon Elektro",
@@ -89740,7 +89608,6 @@
   "website": "http://www.msf-elektro.nl/",
   "tel": "0782057007",
   "tel_disp": "078 205 7007",
-  "name_alt": "Msf Elektro & Beveiliging",
   "city_slug": "zwijndrecht",
   "siblings": [
    {
@@ -89776,7 +89643,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mt-elektro-elektricien-utrecht-qgawuw": {
   "name": "MT Elektro | Elektricien Utrecht",
@@ -89881,7 +89748,7 @@
   "city_slug": "hegelsom",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mulder-electro-zo-b1cmco": {
   "name": "Mulder Electro &amp; Zo",
@@ -89892,7 +89759,6 @@
   "website": "http://www.mulderelectroenzo.nl/",
   "tel": "0621469044",
   "tel_disp": "06 21469044",
-  "name_alt": "Mulder Electro & Zo",
   "city_slug": "meppel",
   "siblings": [
    {
@@ -89928,7 +89794,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mulder-installatietechniek-deventer-uilhta": {
   "name": "Mulder installatietechniek Deventer",
@@ -90169,7 +90035,6 @@
   "website": "https://www.murphyssolutions.nl/",
   "tel": "0684918589",
   "tel_disp": "06 84918589",
-  "name_alt": "Murphy's Solutions",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -90205,7 +90070,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mva-elektrotechniek-qogkta": {
   "name": "Mva Elektrotechniek",
@@ -90262,7 +90127,7 @@
   "city_slug": "west-en-middelbeers",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/mvd-elektrotechniek-rfgyme": {
   "name": "MvD-elektrotechniek",
@@ -90760,7 +90625,7 @@
   "city_slug": "hoogvliet-rotterdam",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/neerbos-installatietechniek-ilykqw": {
   "name": "Neerbos-installatietechniek",
@@ -90863,7 +90728,7 @@
   "city_slug": "duiven",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/netwerkje-b-v-npzxdk": {
   "name": "Netwerkje B.V.",
@@ -91148,7 +91013,7 @@
   "city_slug": "annen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/nico-meulensteen-electro-3jx95k": {
   "name": "Nico Meulensteen Electro",
@@ -91198,7 +91063,6 @@
   "website": "https://www.niehws.nl/",
   "tel": "0643701543",
   "tel_disp": "06 43701543",
-  "name_alt": "Niehws inspectie & herstelwerk",
   "city_slug": "losser",
   "siblings": [
    {
@@ -91233,7 +91097,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/nieles-electro-pz5uri": {
   "name": "Nieles Electro",
@@ -91428,7 +91292,7 @@
   "city_slug": "oostburg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/nieuwestoppenkast-nl-0fmpak": {
   "name": "Nieuwestoppenkast.NL",
@@ -91688,7 +91552,6 @@
   "website": "http://www.installatiebedrijfnijman.nl/",
   "tel": "0645868931",
   "tel_disp": "06 45868931",
-  "name_alt": "Nijman Installatie & Montage",
   "city_slug": "zutphen",
   "siblings": [
    {
@@ -91724,7 +91587,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/nijmegen-elektricien-ztdyna": {
   "name": "Nijmegen Elektricien",
@@ -92351,7 +92214,6 @@
   "website": "https://www.noviteck-etd.nl/",
   "tel": "0611360411",
   "tel_disp": "06 11360411",
-  "name_alt": "Noviteck Elektra & Zonnepanelen",
   "city_slug": "veenendaal",
   "siblings": [
    {
@@ -92387,7 +92249,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/noviz-elektrotechniek-jn7yyc": {
   "name": "Noviz elektrotechniek",
@@ -92401,7 +92263,7 @@
   "city_slug": "doesburg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/nusman-installatietechniek-b-v-mtjw3e": {
   "name": "Nusman Installatietechniek B.V.",
@@ -92796,7 +92658,6 @@
   "website": "https://www.ohmies.nl/",
   "tel": "0651612415",
   "tel_disp": "06 51612415",
-  "name_alt": "Ohmies Elektrotechniek - Elektricien Heerlen & Roermond",
   "city_slug": "heerlen",
   "siblings": [
    {
@@ -92832,7 +92693,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ok-e-elektro-kqgn3q": {
   "name": "OK-E Elektro",
@@ -93610,7 +93471,6 @@
   "website": "http://www.vanlosser.nl/",
   "tel": "0575461285",
   "tel_disp": "0575 461 285",
-  "name_alt": "Ordelman & Dijkman Installaties Hengelo B.V.",
   "city_slug": "hengelo",
   "siblings": [
    {
@@ -93646,7 +93506,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/os-installatietechniek-qg1y9s": {
   "name": "Os Installatietechniek",
@@ -93699,7 +93559,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/otg-energy-vama0e": {
   "name": "OTG.energy",
@@ -93851,7 +93711,7 @@
   "city_slug": "gramsbergen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/oude-geerdink-tegels-sanitair-badkamers-albergen-kksow8": {
   "name": "Oude Geerdink Tegels &amp; Sanitair | Badkamers Albergen",
@@ -93862,7 +93722,6 @@
   "website": "https://www.oudegeerdink-badkamers.nl/",
   "tel": "0546442095",
   "tel_disp": "0546 442 095",
-  "name_alt": "Oude Geerdink Tegels & Sanitair | Badkamers Albergen",
   "city_slug": "albergen",
   "siblings": [
    {
@@ -93878,7 +93737,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/oudes-laseur-electrotechniek-25jfaq": {
   "name": "Oudes &amp; Laseur Electrotechniek",
@@ -93889,7 +93748,6 @@
   "website": "https://oudesenlaseur.nl/",
   "tel": "0725814308",
   "tel_disp": "072 581 4308",
-  "name_alt": "Oudes & Laseur Electrotechniek",
   "city_slug": "bergen",
   "siblings": [
    {
@@ -93914,7 +93772,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/oudewaal-elektrotechniek-b-v-r7qesg": {
   "name": "Oudewaal Elektrotechniek B.V",
@@ -94129,7 +93987,6 @@
   "website": "http://www.penbelektrotechniek.nl/",
   "tel": "0495588002",
   "tel_disp": "0495 588 002",
-  "name_alt": "P & B Elektrotechniek",
   "city_slug": "maarheeze",
   "siblings": [
    {
@@ -94165,7 +94022,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/p-b-techniek-1aertk": {
   "name": "P&amp;B Techniek",
@@ -94176,7 +94033,6 @@
   "website": "http://www.penbtechniek.nl/",
   "tel": "0598434324",
   "tel_disp": "0598 434 324",
-  "name_alt": "P&B Techniek",
   "city_slug": "kolham",
   "rating_row": "default",
   "contact_row": "default",
@@ -95095,7 +94951,7 @@
   "city_slug": "s-heerenhoek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/pas-elektrotechniek-9i0rpm": {
   "name": "PAS Elektrotechniek",
@@ -95115,7 +94971,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/patrick-elektrick-6a3cbg": {
   "name": "Patrick ElektricK",
@@ -95435,7 +95291,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Peereboom%20Bouw-%20%26%20Inst.techn.%20Smallingerland%20B.V.&amp;query_place_id=ChIJp5C0xDRRyEcRu_ix0tVWnOo",
   "tel": "0512371249",
   "tel_disp": "0512 371 249",
-  "name_alt": "Peereboom Bouw- & Inst.techn. Smallingerland B.V.",
   "city_slug": "oudega-gem-smallingerlnd",
   "contact_row": "v2",
   "template": "v15"
@@ -95449,7 +95304,6 @@
   "website": "http://www.veiligvoorelkaar.nl/",
   "tel": "0620404838",
   "tel_disp": "06 20404838",
-  "name_alt": "Peereboom Electrotechniek & Beveiliging",
   "city_slug": "heemskerk",
   "siblings": [
    {
@@ -95475,7 +95329,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/peeters-elektrotechniek-eersel-2b8ksi": {
   "name": "Peeters Elektrotechniek Eersel",
@@ -95748,7 +95602,7 @@
   "city_slug": "schinveld",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/perlot-installatie-bv-a5bfmk": {
   "name": "Perlot Installatie BV",
@@ -95805,7 +95659,6 @@
   "website": "http://elektriciensdelft.nl/",
   "tel": "0152030017",
   "tel_disp": "015 203 0017",
-  "name_alt": "Perry's Elektrotechniek",
   "city_slug": "delft",
   "siblings": [
    {
@@ -95841,7 +95694,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/pesch-electrotechniek-b0m_8u": {
   "name": "Pesch Electrotechniek",
@@ -95855,7 +95708,7 @@
   "city_slug": "rozenburg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/peter-olsthoorn-elektrotechnisch-installatieb-ax3zto": {
   "name": "Peter Olsthoorn Elektrotechnisch Installatieb",
@@ -96922,7 +96775,7 @@
   "city_slug": "evertsoord",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/pola-installatietechniek-ht8qgk": {
   "name": "Pola Installatietechniek",
@@ -97021,7 +96874,6 @@
   "website": "https://poortingaelektroinstallatie.nl/",
   "tel": "0611667706",
   "tel_disp": "06 11667706",
-  "name_alt": "Poortinga Elektro & Installatie",
   "city_slug": "leek",
   "siblings": [
    {
@@ -97037,7 +96889,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/post-elektra-en-techniek-y-rtaq": {
   "name": "Post Elektra En Techniek",
@@ -97231,7 +97083,6 @@
   "website": "http://www.powerupinstallatie.nl/",
   "tel": "0636222561",
   "tel_disp": "06 36222561",
-  "name_alt": "Power Up Installatie & Renovatie",
   "city_slug": "nieuwegein",
   "siblings": [
    {
@@ -97267,7 +97118,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/poweriq--jo2bk": {
   "name": "PowerIQ",
@@ -97307,7 +97158,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/pp-service-inzicht-in-techniek-eeq7u0": {
   "name": "PP Service | inzicht in techniek",
@@ -97748,7 +97599,6 @@
   "website": "http://www.proworkz.nl/",
   "tel": "0165729161",
   "tel_disp": "0165 729 161",
-  "name_alt": "Pro Workz Elektrotechniek & beveiliging",
   "city_slug": "roosendaal",
   "siblings": [
    {
@@ -97784,7 +97634,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/procharge-9eoadu": {
   "name": "Procharge",
@@ -97883,7 +97733,6 @@
   "website": "https://www.proflexy.nl/",
   "tel": "0624670406",
   "tel_disp": "06 24670406",
-  "name_alt": "Proflexy elektro & montagetechniek",
   "city_slug": "nieuwediep",
   "rating_row": "default",
   "contact_row": "default",
@@ -98445,7 +98294,7 @@
   "city_slug": "muntendam",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/pulles-elektro-p7v82c": {
   "name": "Pulles Elektro",
@@ -98498,7 +98347,7 @@
   "city_slug": "heibloem",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/puts-elektro-b-v-zfzln0": {
   "name": "Puts Elektro B.V.",
@@ -98644,7 +98493,6 @@
   "website": "https://www.pvh-elektrotechniek.nl/",
   "tel": "0657334871",
   "tel_disp": "06 57334871",
-  "name_alt": "PVH Elektrotechniek | NEN 3140 & NTA8220 Brandrisico Inspecties",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -98680,7 +98528,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/pwe-elektrotechniek-i2w6y4": {
   "name": "PWE elektrotechniek",
@@ -98825,7 +98673,6 @@
   "website": "https://qtechelektrotechniek.nl/",
   "tel": "0687686609",
   "tel_disp": "06 87686609",
-  "name_alt": "Q-tech Elektrotechniek & installatie",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -98861,7 +98708,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/q-vianen-elektrotechniek-ih9ud4": {
   "name": "Q.Vianen Elektrotechniek",
@@ -98901,7 +98748,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/q-vianen-elektrotechniek-ncsne4": {
   "name": "Q.Vianen Elektrotechniek",
@@ -99270,7 +99117,6 @@
   "website": "http://www.re-installaties.nl/",
   "tel": "0591327010",
   "tel_disp": "0591 327 010",
-  "name_alt": "R&E Installaties",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -99306,7 +99152,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/r-fledderus-installatiebedrijf-etc4om": {
   "name": "R. Fledderus Installatiebedrijf",
@@ -99521,7 +99367,6 @@
   "website": "http://www.rj-installatie.nl/",
   "tel": "0402645980",
   "tel_disp": "040 264 5980",
-  "name_alt": "R&J Elektrotechniek B.V.",
   "city_slug": "son",
   "siblings": [
    {
@@ -99547,7 +99392,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/r-j-m-installatietechniek-tifmqw": {
   "name": "R.J.M. Installatietechniek",
@@ -99730,7 +99575,6 @@
   "website": "https://www.rolimburg.nl/",
   "tel": "0640814270",
   "tel_disp": "06 40814270",
-  "name_alt": "R&O Limburg Elektrotechniek",
   "city_slug": "panningen",
   "siblings": [
    {
@@ -99756,7 +99600,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/r-p-installatietechniek-amk720": {
   "name": "R&amp;P Installatietechniek",
@@ -99767,7 +99611,6 @@
   "website": "https://rp-techniek.nl/",
   "tel": "0382022605",
   "tel_disp": "038 202 2605",
-  "name_alt": "R&P Installatietechniek",
   "city_slug": "zwolle",
   "siblings": [
    {
@@ -99803,7 +99646,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/r-van-aarle-installatietechniek-onkoqq": {
   "name": "R. van Aarle Installatietechniek",
@@ -99905,7 +99748,6 @@
   "website": "http://www.rverf.nl/",
   "tel": "0652037617",
   "tel_disp": "06 52037617",
-  "name_alt": "R. Verf Elektra & Installatie",
   "city_slug": "warns",
   "rating_row": "default",
   "contact_row": "default",
@@ -100354,7 +100196,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/ralf-groenen-electrotechniek-kpfbk0": {
   "name": "Ralf Groenen Electrotechniek",
@@ -100611,7 +100453,7 @@
   "tel_disp": "06 55767894",
   "city_slug": "meteren",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/rap-elektrotechniek-rapstroom-nl-bdkiwg": {
   "name": "RAP Elektrotechniek | RAPstroom.nl",
@@ -100625,7 +100467,7 @@
   "city_slug": "noorden",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ravenshorst-installatietechniek-bv-uutgjq": {
   "name": "Ravenshorst Installatietechniek BV",
@@ -100749,7 +100591,6 @@
   "website": "https://www.rcloodgieterseninstallatiewerk.nl/",
   "tel": "0650477152",
   "tel_disp": "06 50477152",
-  "name_alt": "RC Loodgieters & Installatiewerk",
   "city_slug": "bovenkarspel",
   "siblings": [
    {
@@ -100780,7 +100621,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/rc-techniek-elektro-installatie-qejcmc": {
   "name": "RC Techniek Elektro-installatie",
@@ -100974,7 +100815,7 @@
   "city_slug": "tiendeveen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/redetta-elektrotechniek-8-izuu": {
   "name": "Redetta elektrotechniek",
@@ -101526,7 +101367,7 @@
   "city_slug": "dorst",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rgm-techniek-wmotmu": {
   "name": "RGM Techniek",
@@ -101647,7 +101488,6 @@
   "website": "http://www.rialinstallatietechniek.nl/",
   "tel": "0622282899",
   "tel_disp": "06 22282899",
-  "name_alt": "Rial Installatie- & Beveiliging Techniek",
   "city_slug": "doetinchem",
   "siblings": [
    {
@@ -101683,7 +101523,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/richard-kraneveld-elektrotechniek-t0ndas": {
   "name": "Richard Kraneveld Elektrotechniek",
@@ -101786,7 +101626,6 @@
   "website": "http://www.hilhorstelektro.nl/",
   "tel": "0654764310",
   "tel_disp": "06 54764310",
-  "name_alt": "Rico Hilhorst Elektro & Montage",
   "city_slug": "odiliapeel",
   "rating_row": "default",
   "contact_row": "default",
@@ -101848,7 +101687,7 @@
   "city_slug": "zoeterwoude",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rijnen-technisch-installatie-buro-bv-frans-ippqpi": {
   "name": "Rijnen Technisch Installatie Buro BV Frans",
@@ -102604,7 +102443,7 @@
   "city_slug": "marum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/roelofsen-elektro-techniek-jkibue": {
   "name": "Roelofsen Elektro Techniek",
@@ -102703,7 +102542,6 @@
   "website": "https://www.rogerslightning.nl/",
   "tel": "0638341416",
   "tel_disp": "06 38341416",
-  "name_alt": "Roger's Lightning",
   "city_slug": "ijsselstein",
   "siblings": [
    {
@@ -102739,7 +102577,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/rohn-elektra-gvyx-k": {
   "name": "Rohn Elektra",
@@ -103210,7 +103048,6 @@
   "website": "http://www.rorije-elektrotechniek.nl/",
   "tel": "0653239468",
   "tel_disp": "06 53239468",
-  "name_alt": "Rorije Elektrotechniek & Rorije Installatietechniek",
   "city_slug": "castricum",
   "siblings": [
    {
@@ -103246,7 +103083,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/rosch-elektro-uereai": {
   "name": "ROSCH Elektro",
@@ -103636,7 +103473,7 @@
   "city_slug": "appingedam",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rozendaal-elektrotechniek-00uilc": {
   "name": "Rozendaal Elektrotechniek",
@@ -103650,7 +103487,7 @@
   "city_slug": "polsbroek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rp-elektrotechniek-mw2zim": {
   "name": "Rp elektrotechniek",
@@ -104012,7 +103849,7 @@
   "city_slug": "peize",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rsk-elektrotechniek-ogmyiy": {
   "name": "RSK Elektrotechniek",
@@ -104147,7 +103984,7 @@
   "city_slug": "goutum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rtr-elektrotechniek-npkoz8": {
   "name": "RTR Elektrotechniek",
@@ -104197,7 +104034,7 @@
   "website": "http://www.rudifennema.nl",
   "city_slug": "friens",
   "contact_row": "v6",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/rufra": {
   "name": "Rufra",
@@ -104263,7 +104100,7 @@
   "city_slug": "ottersum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ruud-peeters-installaties-yfbhhm": {
   "name": "Ruud Peeters Installaties",
@@ -104380,7 +104217,7 @@
   "city_slug": "sas-van-gent",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rvd-elektrotechniek-ea4-sk": {
   "name": "RVD Elektrotechniek",
@@ -104532,7 +104369,7 @@
   "city_slug": "ankeveen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/rw-elektro-meliskerke-xlgeha": {
   "name": "Rw Elektro Meliskerke",
@@ -104609,7 +104446,6 @@
   "website": "http://www.rzinstallatie.nl/",
   "tel": "0113695299",
   "tel_disp": "0113 695 299",
-  "name_alt": "Rz installatie Service & Onderhoud",
   "city_slug": "colijnsplaat",
   "siblings": [
    {
@@ -104620,7 +104456,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/s-b-electronics-piv7ag": {
   "name": "S.B electronics",
@@ -104676,7 +104512,6 @@
   "website": "http://www.senelektro.nl/",
   "tel": "0643124725",
   "tel_disp": "06 43124725",
-  "name_alt": "S&Elektro",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -104712,7 +104547,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/s-k-elektrotechniek-nwkcas": {
   "name": "S&amp;K Elektrotechniek",
@@ -104723,7 +104558,6 @@
   "website": "https://www.sk-elektrotechniek.nl/",
   "tel": "0316234500",
   "tel_disp": "0316 234 500",
-  "name_alt": "S&K Elektrotechniek",
   "city_slug": "didam",
   "siblings": [
    {
@@ -104734,7 +104568,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/s-munter-elektrotechniek-bv-xrgsho": {
   "name": "S.Munter Elektrotechniek BV",
@@ -104832,7 +104666,6 @@
   "name": "S&amp;P Paneelbouw",
   "city": "Elst",
   "website": "https://sp-paneelbouw.nl/",
-  "name_alt": "S&P Paneelbouw",
   "city_slug": "elst",
   "siblings": [
    {
@@ -104847,7 +104680,7 @@
    }
   ],
   "contact_row": "v6",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/s-s-elektrotechniek-0gg1la": {
   "name": "S&amp;S Elektrotechniek",
@@ -104858,7 +104691,6 @@
   "website": "http://www.sens-elektro.nl/",
   "tel": "0725626980",
   "tel_disp": "072 562 6980",
-  "name_alt": "S&S Elektrotechniek",
   "city_slug": "alkmaar",
   "siblings": [
    {
@@ -104894,7 +104726,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/s-t-o-elektrotechniek-tylc6y": {
   "name": "S.T.O. elektrotechniek",
@@ -105260,7 +105092,7 @@
   "city_slug": "zaandijk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/safe-elektrotechniek-0q9xwu": {
   "name": "Safe-Elektrotechniek",
@@ -105535,7 +105367,7 @@
   "city_slug": "ulrum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/sardo-installatie-pcfwxy": {
   "name": "Sardo Installatie",
@@ -106074,7 +105906,6 @@
   "website": "https://sbinfratechniek.nl/",
   "tel": "0634202047",
   "tel_disp": "06 34202047",
-  "name_alt": "SB Installatietechniek & Infra",
   "city_slug": "landgraaf",
   "siblings": [
    {
@@ -106109,7 +105940,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/sb-roosendaal-jlerwu": {
   "name": "SB Roosendaal",
@@ -106413,7 +106244,6 @@
   "website": "http://www.scheepers-elektro.nl/",
   "tel": "0492517541",
   "tel_disp": "0492 517 541",
-  "name_alt": "Scheepers Elektro & Montage BV",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -106449,7 +106279,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/scheepstra-installatiebedrijf-wjrr7e": {
   "name": "Scheepstra Installatiebedrijf",
@@ -106768,7 +106598,6 @@
   "website": "https://www.schipperelectro.nl/",
   "tel": "0187651777",
   "tel_disp": "0187 651 777",
-  "name_alt": "Schipper & Zn Electrotechniek BV",
   "city_slug": "nieuwe-tonge",
   "siblings": [
    {
@@ -106778,7 +106607,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/schluter-electronics-ffnw-a": {
   "name": "Schlüter Electronics",
@@ -106871,7 +106700,6 @@
   "website": "http://www.schoenmakersdomotica.nl/",
   "tel": "0497721521",
   "tel_disp": "0497 721 521",
-  "name_alt": "Schoenmakers Domotica & Elektrotechniek",
   "city_slug": "bladel",
   "siblings": [
    {
@@ -106907,7 +106735,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/scholten-elektra-i5d0ns": {
   "name": "Scholten Elektra",
@@ -107598,7 +107426,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/securelektro-wesn1k": {
   "name": "Securelektro",
@@ -107920,7 +107748,7 @@
   "city_slug": "tuitjenhorn",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/sem-elektrotecniek-mcamc8": {
   "name": "SEM Elektrotecniek",
@@ -108011,7 +107839,7 @@
   "city_slug": "giesbeek",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/senselser-i1hkkc": {
   "name": "Senselser",
@@ -108138,7 +107966,7 @@
   "city_slug": "hoofdplaat",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/service-tuinier-b-v-wd8xfw": {
   "name": "Service Tuinier B.V.",
@@ -108336,7 +108164,7 @@
   "city_slug": "sint-joost",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/shant-elektrotechniek-py6xy8": {
   "name": "Shant Elektrotechniek",
@@ -108468,7 +108296,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Siemon%20Haring%20Installatie%20%26%20Montage&amp;query_place_id=ChIJkZDZ2XSjyEcRgrEiAqsdZPw",
   "tel": "0613844175",
   "tel_disp": "06 13844175",
-  "name_alt": "Siemon Haring Installatie & Montage",
   "city_slug": "enkhuizen",
   "siblings": [
    {
@@ -108504,7 +108331,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/signal-service-iiosrk": {
   "name": "Signal Service",
@@ -108607,7 +108434,6 @@
   "website": "http://www.sijbersinstallatie.nl/",
   "tel": "0651960902",
   "tel_disp": "06 51960902",
-  "name_alt": "Sijbers Installatie & Renovatie",
   "city_slug": "hengelo",
   "siblings": [
    {
@@ -108643,7 +108469,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/sijbers-support-elektrotechniek-b-v-xsaepo": {
   "name": "Sijbers-Support Elektrotechniek B.V.",
@@ -108657,7 +108483,7 @@
   "city_slug": "kronenberg",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/simco-ion-europe-rsz6fy": {
   "name": "Simco-Ion Europe",
@@ -108955,7 +108781,6 @@
   "website": "http://www.sjaakjonker.nl/",
   "tel": "0655102726",
   "tel_disp": "06 55102726",
-  "name_alt": "Sjaak Jonker Elektra & Installatiewerken",
   "city_slug": "uitgeest",
   "siblings": [
    {
@@ -108990,7 +108815,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/sjef-ubaghs-installatietechniek-bv-xw4eue": {
   "name": "Sjef Ubaghs Installatietechniek BV.",
@@ -109150,7 +108975,7 @@
   "city_slug": "bunde",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/slenders-electra-m2stme": {
   "name": "Slenders Electra",
@@ -109995,7 +109820,6 @@
   "website": "https://smienktechniek.nl/",
   "tel": "0643882166",
   "tel_disp": "06 43882166",
-  "name_alt": "Smienk Elektrotechniek & Installatietechniek",
   "city_slug": "apeldoorn",
   "siblings": [
    {
@@ -110031,7 +109855,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/smit-elektrotechniek-wmegdm": {
   "name": "Smit Elektrotechniek",
@@ -110177,7 +110001,7 @@
   "city_slug": "gassel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/snel-co-installatietechniek-pdz3h8": {
   "name": "Snel &amp; Co Installatietechniek",
@@ -110188,7 +110012,6 @@
   "website": "http://www.snelencomoerdijk.nl/?y_source=1_MzI3MzczNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0168412507",
   "tel_disp": "0168 412 507",
-  "name_alt": "Snel & Co Installatietechniek",
   "city_slug": "moerdijk",
   "siblings": [
    {
@@ -110207,7 +110030,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/snelvakman-srm5mm": {
   "name": "Snelvakman",
@@ -110480,7 +110303,6 @@
   "website": "http://www.swisselektro.nl/",
   "tel": "0621234854",
   "tel_disp": "06 21234854",
-  "name_alt": "Snoek & Pul elektrotechniek",
   "city_slug": "urk",
   "siblings": [
    {
@@ -110515,7 +110337,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/snoeren-technics-bv-lmlw-k": {
   "name": "Snoeren Technics BV",
@@ -110799,7 +110621,6 @@
   "website": "https://www.solarexperiencecenter.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=mijn-bedrijf",
   "tel": "0345228569",
   "tel_disp": "0345 228 569",
-  "name_alt": "Solar Experience Center & SEC Elektrotechniek",
   "city_slug": "culemborg",
   "siblings": [
    {
@@ -110810,7 +110631,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/solarama-b-v-wnul3y": {
   "name": "Solarama B.V.",
@@ -110863,7 +110684,7 @@
   "city_slug": "espel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/solinde-b-v-thuisbatterijen-zonnepanelen-laadpalen-particulier-zakelijk-bytrcg": {
   "name": "Solinde B.V. | Thuisbatterijen - Zonnepanelen - Laadpalen | Particulier &amp; Zakelijk",
@@ -110874,7 +110695,6 @@
   "website": "https://www.solinde.nl/",
   "tel": "0681288076",
   "tel_disp": "06 81288076",
-  "name_alt": "Solinde B.V. | Thuisbatterijen - Zonnepanelen - Laadpalen | Particulier & Zakelijk",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -110910,7 +110730,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/solve-techniek-szwnfi": {
   "name": "Solve Techniek",
@@ -110967,7 +110787,6 @@
   "website": "https://www.som-tech.nl/",
   "tel": "0613561820",
   "tel_disp": "06 13561820",
-  "name_alt": "Somtech montage & techniek",
   "city_slug": "gaanderen",
   "siblings": [
    {
@@ -110982,7 +110801,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/soof-totaal-techniek-luuvum": {
   "name": "Soof totaal techniek",
@@ -111155,7 +110974,7 @@
   "city_slug": "kapel-avezaath",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/spekschate-installatietechniek-b-v-g261vy": {
   "name": "Spekschate Installatietechniek B.V.",
@@ -111197,7 +111016,6 @@
   "website": "https://www.spetterelektro.nl/",
   "tel": "0653505125",
   "tel_disp": "06 53505125",
-  "name_alt": "Spetter Elektro & Bouwservice",
   "city_slug": "weert",
   "siblings": [
    {
@@ -111233,7 +111051,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/spie-heerenveen-rskxv4": {
   "name": "SPIE Heerenveen",
@@ -111273,7 +111091,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/spie-venray-kg-zwy": {
   "name": "SPIE Venray",
@@ -111596,7 +111414,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Spot%20On%20Elektro%20%26%20Beveiliging&amp;query_place_id=ChIJ5Yt8j2bzxkcR6SKN4UtegEw",
   "tel": "0636265622",
   "tel_disp": "06 36265622",
-  "name_alt": "Spot On Elektro & Beveiliging",
   "city_slug": "zaltbommel",
   "rating_row": "default",
   "contact_row": "v2",
@@ -112238,7 +112055,6 @@
   "website": "http://stebo-elektro.nl/",
   "tel": "0519222694",
   "tel_disp": "0519 222 694",
-  "name_alt": "Steenstra & Boersma Elektrotechniek",
   "city_slug": "dokkum",
   "siblings": [
    {
@@ -112274,7 +112090,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stege-techniek-hok6-4": {
   "name": "Stege Techniek",
@@ -112726,7 +112542,7 @@
   "city_slug": "tegelen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/stiehl-techniek-vu5zqk": {
   "name": "Stiehl Techniek",
@@ -112739,7 +112555,7 @@
   "city_slug": "de-waal",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/stient-electro-njbnza": {
   "name": "Stient Electro",
@@ -113409,7 +113225,7 @@
   "city_slug": "almkerk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/sts-elektra-b-v-_tjpzw": {
   "name": "STS Elektra B.V.",
@@ -113604,7 +113420,7 @@
   "city_slug": "hulsel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/sundermann-elektrotechniek-fzlfmm": {
   "name": "Sundermann Elektrotechniek",
@@ -114041,7 +113857,7 @@
   "city_slug": "koudekerke",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/sylvester-installatietechniek-2ocnvi": {
   "name": "Sylvester Installatietechniek",
@@ -114439,7 +114255,7 @@
   "city_slug": "walterswald",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/t-voorham-elektra-6xvaos": {
   "name": "T. Voorham Elektra",
@@ -114706,7 +114522,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/tbd-installatietechniek-7_yhdy": {
   "name": "TBD Installatietechniek",
@@ -114763,7 +114579,7 @@
   "city_slug": "frieschepalen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/tc-solarsystems-ta2aks": {
   "name": "TC solarsystems",
@@ -114983,7 +114799,7 @@
   "city_slug": "hoogland",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/tech-link-vg4h4e": {
   "name": "Tech-Link",
@@ -115347,7 +115163,6 @@
   "website": "http://tsblom.nl/",
   "tel": "0342781025",
   "tel_disp": "0342 781 025",
-  "name_alt": "Techniek & Service Blom",
   "city_slug": "barneveld",
   "siblings": [
    {
@@ -115383,7 +115198,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/techniekservice-hofman-6t11zw": {
   "name": "Techniekservice Hofman",
@@ -115440,7 +115255,7 @@
   "city_slug": "ekehaar",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/technisch-bedrijf-bokma-7tzdsm": {
   "name": "Technisch Bedrijf Bokma",
@@ -115454,7 +115269,7 @@
   "city_slug": "oudemirdum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/technisch-bedrijf-joustra-qqi7ii": {
   "name": "Technisch Bedrijf Joustra",
@@ -115468,7 +115283,7 @@
   "city_slug": "tytsjerk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/technisch-bedrijf-w-minnesma-b-v-avirh8": {
   "name": "Technisch bedrijf W. Minnesma B.V.",
@@ -115482,7 +115297,7 @@
   "city_slug": "oudehaske",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/technisch-bureau-cox-uoytkm": {
   "name": "Technisch Bureau Cox",
@@ -115854,7 +115669,7 @@
   "city_slug": "uithuizen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/technisch-ingenieursbureau-e-meurs-b-v-fxm-w0": {
   "name": "Technisch Ingenieursbureau E. Meurs B.V.",
@@ -115934,7 +115749,7 @@
   "city_slug": "sint-hubert",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/technisch-installatiebedrijf-boerma-hulsebos-b-v-5la-qm": {
   "name": "Technisch Installatiebedrijf Boerma-Hulsebos B.V.",
@@ -116117,7 +115932,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Technisch%20installatiebedrijf%20Leine%20%26%20Grootveld&amp;query_place_id=ChIJgdfU0ZcTxkcRrSGEORYftoI",
   "tel": "0653380365",
   "tel_disp": "06 53380365",
-  "name_alt": "Technisch installatiebedrijf Leine & Grootveld",
   "city_slug": "naarden",
   "siblings": [
    {
@@ -116132,7 +115946,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/technisch-installatiebureau-goeree-b-v-mn1pn8": {
   "name": "Technisch Installatiebureau Goeree B.V.",
@@ -116256,7 +116070,6 @@
   "website": "http://www.bijtvuur.net/",
   "tel": "0299371541",
   "tel_disp": "0299 371 541",
-  "name_alt": "Technisch Installatieburo T. bij 't Vuur",
   "city_slug": "edam",
   "siblings": [
    {
@@ -116286,7 +116099,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/technisch-installatieburo-woortman-woortman-zonne-energie-93x_se": {
   "name": "Technisch InstallatieBuro Woortman &amp; Woortman Zonne-energie",
@@ -116297,7 +116110,6 @@
   "website": "http://www.tibwoortman.nl/",
   "tel": "0592265888",
   "tel_disp": "0592 265 888",
-  "name_alt": "Technisch InstallatieBuro Woortman & Woortman Zonne-energie",
   "city_slug": "gieten",
   "siblings": [
    {
@@ -116323,7 +116135,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/technischburo-reerink-b-v-sq00-4": {
   "name": "Technischburo Reerink B.V.",
@@ -116586,7 +116398,7 @@
   "website": "https://www.installatiebedrijftesink.nl/",
   "city_slug": "oosterbeek",
   "contact_row": "v6",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/tekelenburg-elektrotechniek-bv-jjswqk": {
   "name": "Tekelenburg Elektrotechniek BV",
@@ -116985,7 +116797,7 @@
   "tel_disp": "06 25235653",
   "city_slug": "kesteren",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/tes-industrial-systems-machine-installaties": {
   "name": "TES Industrial Systems Machine Installaties",
@@ -117145,7 +116957,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/tesla-elektrotechniek-ky6lgm": {
   "name": "Tesla Elektrotechniek",
@@ -117525,7 +117337,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/thomson-duurzame-techniek-ox2tsq": {
   "name": "Thomson duurzame techniek",
@@ -117649,7 +117461,6 @@
   "website": "http://www.sinne-enerzjy.nl/",
   "tel": "0512358296",
   "tel_disp": "0512 358 296",
-  "name_alt": "Thuisbatterijen & Zonnepanelen Drachten | Sinne Enerzjy Fryslân B.V.",
   "city_slug": "drachten",
   "siblings": [
    {
@@ -117680,7 +117491,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/thysan-elektrotechniek-rzbatu": {
   "name": "Thysan Elektrotechniek",
@@ -117719,7 +117530,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Tieleman%20%26%20Co%20bv&amp;query_place_id=ChIJYa4hgGEtxEcRXxzCHX1w0dk",
   "tel": "0180513376",
   "tel_disp": "0180 513 376",
-  "name_alt": "Tieleman & Co bv",
   "city_slug": "krimpen-aan-den-ijssel",
   "siblings": [
    {
@@ -117754,7 +117564,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/tielen-elektra-ymyysg": {
   "name": "Tielen Elektra",
@@ -118305,7 +118115,7 @@
     "rating": "4,8"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/tlc-b-v-bliksembeveiliging-dugvtk": {
   "name": "TLC B.V. Bliksembeveiliging",
@@ -118975,7 +118785,6 @@
   "website": "http://www.sjabbens.com/",
   "tel": "0504091315",
   "tel_disp": "050 409 1315",
-  "name_alt": "Totaalinstallateur A. Sjabbens & Zn",
   "city_slug": "tynaarlo",
   "siblings": [
    {
@@ -119010,7 +118819,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v7"
+  "template": "v2"
  },
  "bedrijf/totec-installatietechniek-mslw3y": {
   "name": "ToTec Installatietechniek",
@@ -119093,7 +118902,6 @@
   "website": "http://www.trtechnischedienstverlening.nl/",
   "tel": "0850606608",
   "tel_disp": "085 060 6608",
-  "name_alt": "TR Technische Dienstverlening B.V. & Verduurzaam-Twente B.V.",
   "city_slug": "enschede",
   "siblings": [
    {
@@ -119129,7 +118937,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/traprenovatie-delfzijl-0qqqq0": {
   "name": "Traprenovatie Delfzijl",
@@ -120161,7 +119969,6 @@
   "website": "http://www.vdakker-installatie.nl/",
   "tel": "0653229732",
   "tel_disp": "06 53229732",
-  "name_alt": "v/d Akker Installatie Service & Onderhoud",
   "city_slug": "roden",
   "siblings": [
    {
@@ -120197,7 +120004,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/v-d-vleuten-elektrotechniek-beveiliging-xrflts": {
   "name": "v.d. Vleuten Elektrotechniek &amp; Beveiliging",
@@ -120208,7 +120015,6 @@
   "website": "https://vd-vleuten.nl/",
   "tel": "0413477337",
   "tel_disp": "0413 477 337",
-  "name_alt": "v.d. Vleuten Elektrotechniek & Beveiliging",
   "city_slug": "sint-oedenrode",
   "siblings": [
    {
@@ -120244,7 +120050,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/v-h-b-ybke_o": {
   "name": "V.H.B.",
@@ -120301,7 +120107,6 @@
   "website": "https://venh-installatietechniek.nl/",
   "tel": "0306049437",
   "tel_disp": "030 604 9437",
-  "name_alt": "V&H Installatie Techniek",
   "city_slug": "leersum",
   "siblings": [
    {
@@ -120311,7 +120116,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/v-h-j-a-knijnenburg-b-v-fwkeh0": {
   "name": "V/h J.A. Knijnenburg B.V.",
@@ -120325,7 +120130,7 @@
   "city_slug": "spaarndam",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/v-i-elektrotechniek-y70xte": {
   "name": "V &amp; I Elektrotechniek",
@@ -120334,7 +120139,6 @@
   "reviews": "17",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=V%20%26%20I%20Elektrotechniek&amp;query_place_id=ChIJh9qPLo8DxkcRSetLQy70xTE",
   "website": "https://v-en-i.nl/",
-  "name_alt": "V & I Elektrotechniek",
   "city_slug": "edam",
   "siblings": [
    {
@@ -120364,7 +120168,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/v-o-f-elektro-technisch-installatieburo-a-m-vogels-ph2z1s": {
   "name": "V.O.F. Elektro Technisch Installatieburo A.M. Vogels",
@@ -120468,7 +120272,7 @@
   "city_slug": "barger-compascuum",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/v-o-f-h-faber-install-techn-ajktaq": {
   "name": "V.O.F. H. Faber Install.techn.",
@@ -120482,7 +120286,7 @@
   "city_slug": "nijeveen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/v-o-f-meulenkamp-elektro-akopuu": {
   "name": "V.O.F. Meulenkamp Elektro",
@@ -120956,7 +120760,7 @@
   "city_slug": "galder",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-antwerpen-elektrotechniek": {
   "name": "van Antwerpen Elektrotechniek",
@@ -121234,7 +121038,7 @@
   "tel_disp": "06 52373645",
   "city_slug": "tienhoven",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/van-beek-elektrotechniek-lmo1bm": {
   "name": "Van Beek Elektrotechniek",
@@ -122099,7 +121903,6 @@
   "website": "http://www.elektroboekel.nl/",
   "tel": "0492700208",
   "tel_disp": "0492 700 208",
-  "name_alt": "van de Ven Elektro & Regeltechniek B.V.",
   "city_slug": "boekel",
   "siblings": [
    {
@@ -122135,7 +121938,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-de-vorst-elektrotechniek-_kztfc": {
   "name": "Van De Vorst Elektrotechniek",
@@ -122247,7 +122050,7 @@
   "city_slug": "wamel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-dekken-elektrotechniek-n0psla": {
   "name": "Van Dekken elektrotechniek",
@@ -123307,7 +123110,6 @@
   "website": "https://mvanderlinden.nl/",
   "tel": "0621546568",
   "tel_disp": "06 21546568",
-  "name_alt": "van der Linden elekro & audiovisueel ⚡",
   "city_slug": "kerkdriel",
   "siblings": [
    {
@@ -123328,7 +123130,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-der-linden-elektrotechniek-v6jndu": {
   "name": "Van Der Linden Elektrotechniek",
@@ -123538,7 +123340,6 @@
   "website": "https://vdsijs.nl/",
   "tel": "0343595090",
   "tel_disp": "0343 595 090",
-  "name_alt": "Van der Sijs Techniek & Automatisering",
   "city_slug": "wijk-bij-duurstede",
   "siblings": [
    {
@@ -123574,7 +123375,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-der-spek-service-b-v-pk1u8y": {
   "name": "Van der Spek Service B.V.",
@@ -124291,7 +124092,6 @@
   "website": "https://www.vanderwindt-elektro-montage.nl/",
   "tel": "0618274517",
   "tel_disp": "06 18274517",
-  "name_alt": "van der Windt Elektro & Montage B.V.",
   "city_slug": "oud-beijerland",
   "siblings": [
    {
@@ -124317,7 +124117,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-der-zanden-elektrotechniek-pl2ede": {
   "name": "van der Zanden Elektrotechniek",
@@ -125001,7 +124801,7 @@
   "city_slug": "soerendonk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-eijk-elektra-onderhoud-p-hhxs": {
   "name": "Van Eijk Elektra &amp; Onderhoud",
@@ -125012,7 +124812,6 @@
   "website": "https://www.vaneijkelektra.nl/",
   "tel": "0346241566",
   "tel_disp": "0346 241 566",
-  "name_alt": "Van Eijk Elektra & Onderhoud",
   "city_slug": "kockengen",
   "siblings": [
    {
@@ -125028,7 +124827,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-eijk-laseur-loodgieters-cyerky": {
   "name": "van Eijk &amp; Laseur Loodgieters",
@@ -125039,7 +124838,6 @@
   "website": "http://vaneijkenlaseur.nl/",
   "tel": "0725813207",
   "tel_disp": "072 581 3207",
-  "name_alt": "van Eijk & Laseur Loodgieters",
   "city_slug": "bergen",
   "siblings": [
    {
@@ -125064,7 +124862,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-elteren-services-b-v-e-mtse": {
   "name": "Van Elteren Services B.V.",
@@ -125374,7 +125172,7 @@
   "city_slug": "overloon",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-gemert-mill-96ly4o": {
   "name": "Van Gemert Mill",
@@ -125689,7 +125487,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/van-gooi-ezemow": {
   "name": "Van Gooi",
@@ -126069,7 +125867,7 @@
   "city_slug": "mariahout",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-hout-elektrotechniek-et_9d8": {
   "name": "van Hout Elektrotechniek",
@@ -126377,7 +126175,7 @@
   "city_slug": "ochten",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-laar-techniek-fujpuu": {
   "name": "Van Laar techniek",
@@ -126987,7 +126785,7 @@
   "city_slug": "rucphen",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-panhuis-hoogeveen-b-v-9yaops": {
   "name": "Van Panhuis Hoogeveen B.V.",
@@ -127041,7 +126839,6 @@
   "website": "https://www.vanrennes.nl/",
   "tel": "+31186572422",
   "tel_disp": "+31 186 572 422",
-  "name_alt": "Van Rennes Elektro- & Installatietechniek",
   "city_slug": "klaaswaal",
   "contact_row": "v5",
   "template": "v15"
@@ -127283,7 +127080,7 @@
   "city_slug": "harmelen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-schieveen-multimedia-woerden-2dcjek": {
   "name": "van Schieveen Multimedia Woerden",
@@ -127342,7 +127139,7 @@
   "city_slug": "groessen",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-steen-elektrotechniek-hycf4a": {
   "name": "Van Steen Elektrotechniek",
@@ -127399,7 +127196,6 @@
   "website": "https://www.vanstratenduurzaamentechniek.nl/",
   "tel": "0636121649",
   "tel_disp": "06 36121649",
-  "name_alt": "Van Straten Duurzaam & Techniek",
   "city_slug": "genderen",
   "siblings": [
    {
@@ -127410,7 +127206,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-stratum-techniek-b-v-aps7vg": {
   "name": "Van Stratum Techniek B.V.",
@@ -127496,7 +127292,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Swaaningen%20Installatie%20%26%20Onderhoud&amp;query_place_id=ChIJOYsSwVp8xkcRgYHoO-vJ_Ek",
   "tel": "0646086558",
   "tel_disp": "06 46086558",
-  "name_alt": "Van Swaaningen Installatie & Onderhoud",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -127532,7 +127327,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-t-hoff-elektrotechniek-bv-pbbzlk": {
   "name": "van &#x27;t Hoff Elektrotechniek BV",
@@ -127543,7 +127338,6 @@
   "website": "http://www.hoffelektro.nl/",
   "tel": "0246417943",
   "tel_disp": "024 641 7943",
-  "name_alt": "van 't Hoff Elektrotechniek BV",
   "city_slug": "wijchen",
   "siblings": [
    {
@@ -127579,7 +127373,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-t-veen-elektrotechniek-oii34w": {
   "name": "Van &#x27;t Veen Elektrotechniek",
@@ -127590,7 +127384,6 @@
   "website": "https://www.vantveen-elektrotechniek.nl/",
   "tel": "0648042609",
   "tel_disp": "06 48042609",
-  "name_alt": "Van 't Veen Elektrotechniek",
   "city_slug": "nieuwegein",
   "siblings": [
    {
@@ -127626,7 +127419,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-tol-installatiebedrijf-tqbl-s": {
   "name": "van Tol Installatiebedrijf",
@@ -127661,7 +127454,7 @@
   "city_slug": "sprang-capelle",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/van-veen-elektra-emwjju": {
   "name": "Van Veen Elektra",
@@ -127969,7 +127762,6 @@
   "website": "http://www.vanweeghel-interieur.nl/",
   "tel": "0653384897",
   "tel_disp": "06 53384897",
-  "name_alt": "Van Weeghel Interieur & Afbouw.",
   "city_slug": "meppel",
   "siblings": [
    {
@@ -128005,7 +127797,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-westerveld-elektrotechniek-iosp2c": {
   "name": "Van Westerveld Elektrotechniek",
@@ -128148,7 +127940,6 @@
   "website": "http://www.vanwinkoopelektrotechniek.nl/",
   "tel": "0611150616",
   "tel_disp": "06 11150616",
-  "name_alt": "Van Winkoop Elektro & Techniek",
   "city_slug": "barneveld",
   "siblings": [
    {
@@ -128184,7 +127975,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-woesik-elektro-b-v-0ket3m": {
   "name": "Van Woesik Elektro B.V.",
@@ -128419,7 +128210,7 @@
   "city_slug": "roosteren",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vb-elektrotechniek-t9eiwg": {
   "name": "VB Elektrotechniek",
@@ -128454,7 +128245,7 @@
   "city_slug": "volkel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vd-burgt-elektro-skscpe": {
   "name": "Vd Burgt Elektro",
@@ -128848,7 +128639,7 @@
   "city_slug": "aarle-rixtel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vdv-installatietechniek-hesz5g": {
   "name": "VDV-installatietechniek",
@@ -128905,7 +128696,7 @@
   "city_slug": "westerhoven",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vdz-elektrotechniek-0pnlnw": {
   "name": "VDZ Elektrotechniek",
@@ -128938,7 +128729,7 @@
   "city_slug": "nieuw-weerdinge",
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vegatech-nl-bv-iqkaxk": {
   "name": "VEGATECH.nl BV",
@@ -129125,7 +128916,7 @@
   "tel_disp": "+31 481 798515",
   "city_slug": "bemmel",
   "contact_row": "v5",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/veldhuizenenergie-nl-qanebc": {
   "name": "Veldhuizenenergie.nl",
@@ -129276,7 +129067,7 @@
   "city_slug": "warten",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/velthuis-elektrotechniek-dui3ew": {
   "name": "Velthuis Elektrotechniek",
@@ -129474,7 +129265,7 @@
   "city_slug": "weerselo",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/ventimon-qor8rk": {
   "name": "Ventimon",
@@ -129954,7 +129745,7 @@
   "city_slug": "oijen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/verhoef-elektrotechniek-g-yjy4": {
   "name": "Verhoef elektrotechniek",
@@ -130707,7 +130498,7 @@
   "city_slug": "eext",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vidacom-dennis-van-royen-erkend-elektrotechnisch-installateur-dphoq8": {
   "name": "Vidacom - Dennis van Royen | Erkend elektrotechnisch installateur",
@@ -130920,7 +130711,6 @@
   "website": "http://www.vinpro.nl/",
   "tel": "0683139165",
   "tel_disp": "06 83139165",
-  "name_alt": "Vinpro elektro- & installatietechniek",
   "city_slug": "driebergen-rijsenburg",
   "siblings": [
    {
@@ -130931,7 +130721,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vintech-installatietechniek-jv2nyg": {
   "name": "Vintech Installatietechniek",
@@ -131157,7 +130947,6 @@
   "website": "http://www.vissersenvandijk.nl/",
   "tel": "0475464667",
   "tel_disp": "0475 464 667",
-  "name_alt": "Vissers & van Dijk B.V.",
   "city_slug": "maasbracht",
   "siblings": [
    {
@@ -131173,7 +130962,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/viveen-elektro-bv-v-rare": {
   "name": "Viveen Elektro BV",
@@ -131278,7 +131067,7 @@
     "rating": "4,4"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/vlaanderen-van-der-willik-b-v-dod3sk": {
   "name": "Vlaanderen &amp; Van der Willik B.V.",
@@ -131289,7 +131078,6 @@
   "website": "https://www.vlaanderen-willik.nl/",
   "tel": "0355253473",
   "tel_disp": "035 525 3473",
-  "name_alt": "Vlaanderen & Van der Willik B.V.",
   "city_slug": "huizen",
   "siblings": [
    {
@@ -131325,7 +131113,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vlb-installatietechniek-vbrpba": {
   "name": "VLB Installatietechniek",
@@ -131538,7 +131326,7 @@
   "city_slug": "melissant",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/volt-de-elektricien-almere-ashnzu": {
   "name": "Volt - De Elektricien Almere",
@@ -132507,7 +132295,7 @@
   "city_slug": "nieuwer-ter-aa",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vonkstra-elektra-storingsdienst-24-7-groepenkasten-elektra-aanleggen-en-meer-pvjcty": {
   "name": "Vonkstra Elektra | Storingsdienst 24/7, groepenkasten, Elektra Aanleggen en meer",
@@ -133068,7 +132856,7 @@
   "city_slug": "santpoort-zuid",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/vrieswijk-installaties-w9mhe8": {
   "name": "vrieswijk installaties",
@@ -133099,7 +132887,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Vroomen%20Elektrotechniek%20%26%20Inspecties&amp;query_place_id=ChIJrT1zwPDZxkcR8HLAU71vzxs",
   "tel": "0402531610",
   "tel_disp": "040 253 1610",
-  "name_alt": "Vroomen Elektrotechniek & Inspecties",
   "city_slug": "waalre",
   "siblings": [
    {
@@ -133115,7 +132902,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vroomen-elektrotechniek-inspecties-gvm_ue": {
   "name": "Vroomen Elektrotechniek &amp; Inspecties",
@@ -133126,7 +132913,6 @@
   "website": "https://www.vroomenelektro.nl/",
   "tel": "0402531610",
   "tel_disp": "040 253 1610",
-  "name_alt": "Vroomen Elektrotechniek & Inspecties",
   "city_slug": "veldhoven",
   "siblings": [
    {
@@ -133162,7 +132948,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vrr-installaties-vq_emi": {
   "name": "VRR Installaties",
@@ -133457,7 +133243,6 @@
   "website": "https://www.broerenelektro.nl/",
   "tel": "0104263409",
   "tel_disp": "010 426 3409",
-  "name_alt": "W.Broeren&Zonen Elektrotechniek",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -133493,7 +133278,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/w-e-m-green-electrics-rd29ee": {
   "name": "W.E.M. Green Electrics",
@@ -133550,7 +133335,6 @@
   "website": "http://www.wf-elektra.nl/Contact/",
   "tel": "0332048028",
   "tel_disp": "033 204 8028",
-  "name_alt": "W&F Elektrotechniek en Beveiliging",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -133586,7 +133370,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/w-jansen-elektrotechniek-b-v-pvky2u": {
   "name": "W. Jansen Elektrotechniek B.V.",
@@ -133669,7 +133453,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/w-jochems-elektrotechniek-xng41u": {
   "name": "W Jochems Elektrotechniek",
@@ -133799,7 +133583,6 @@
   "website": "http://www.wwklimaat.nl/",
   "tel": "0546232012",
   "tel_disp": "0546 232 012",
-  "name_alt": "W&W Klimaattechniek B.V.",
   "city_slug": "albergen",
   "siblings": [
    {
@@ -133815,7 +133598,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/waasdorp-e-techniek-gy6qy8": {
   "name": "Waasdorp E-Techniek",
@@ -134077,7 +133860,7 @@
   "city_slug": "hoogblokland",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/walro-installatietechniek-hsme9a": {
   "name": "Walro Installatietechniek",
@@ -134421,7 +134204,7 @@
   "city_slug": "de-groeve",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wattgroen-b-v-duurzaam-met-z-n-allen-zhvp6k": {
   "name": "Wattgroen B.V. Duurzaam met z&#x27;n allen",
@@ -134432,7 +134215,6 @@
   "website": "http://www.wattgroen.nl/",
   "tel": "0682092694",
   "tel_disp": "06 82092694",
-  "name_alt": "Wattgroen B.V. Duurzaam met z'n allen",
   "city_slug": "leek",
   "siblings": [
    {
@@ -134448,7 +134230,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wattpiek-batterijen-zonnepanelen-laadpalen-y1lrsu": {
   "name": "Wattpiek | Batterijen, Zonnepanelen, Laadpalen",
@@ -134534,7 +134316,7 @@
   "city_slug": "warffum",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wb-elektrotechniek-vchniy": {
   "name": "WB Elektrotechniek",
@@ -134644,7 +134426,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/wda-group-b-v-rbdgx0": {
   "name": "WDA Group B.V.",
@@ -135186,7 +134968,7 @@
   "city_slug": "hattem",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wesselingh-elektrotechniek-5zh__o": {
   "name": "Wesselingh Elektrotechniek",
@@ -135200,7 +134982,7 @@
   "city_slug": "koudekerk-aan-den-rijn",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wesso-elektro-wijchen-b-v-lba9rm": {
   "name": "Wesso Elektro Wijchen B.V.",
@@ -135260,7 +135042,7 @@
   "city_slug": "westkapelle",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/westerdijk-b-v-xoijoi": {
   "name": "Westerdijk B.V.",
@@ -135360,7 +135142,7 @@
   "city_slug": "bergeijk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/weststrate-elektro-zwfgme": {
   "name": "Weststrate Elektro",
@@ -136012,7 +135794,7 @@
     "rating": "5,0"
    }
   ],
-  "template": "v8"
+  "template": "v18"
  },
  "bedrijf/wils-services-m7861q": {
   "name": "Wils Services",
@@ -136072,7 +135854,7 @@
   "city_slug": "oude-tonge",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wilting-technische-installaties-l25sa0": {
   "name": "Wilting Technische Installaties",
@@ -136086,7 +135868,7 @@
   "city_slug": "wintelre",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wiltink-installatietechniek-b-v-rngtqg": {
   "name": "Wiltink Installatietechniek B.V.",
@@ -136156,7 +135938,6 @@
   "website": "https://wimbreunesse.nl/",
   "tel": "0355429889",
   "tel_disp": "035 542 9889",
-  "name_alt": "Wim Breunesse – Elektrotechniek & Beveiliging",
   "city_slug": "baarn",
   "siblings": [
    {
@@ -136192,7 +135973,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wimelco-z6yk4y": {
   "name": "Wimelco",
@@ -136953,7 +136734,6 @@
   "website": "http://www.woldendorpta.nl/",
   "tel": "0646020372",
   "tel_disp": "06 46020372",
-  "name_alt": "Woldendorp Techniek & Advies",
   "city_slug": "leusden",
   "rating_row": "default",
   "contact_row": "default",
@@ -137314,7 +137094,7 @@
   "city_slug": "maartensdijk",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wouters-electrotechniek-bv-ypear4": {
   "name": "Wouters Electrotechniek BV",
@@ -137374,7 +137154,7 @@
   "city_slug": "hapert",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/wr-elektro-0rkcde": {
   "name": "WR Elektro",
@@ -137474,7 +137254,7 @@
   "website": "https://wsi-techniek.nl/",
   "city_slug": "lichtenvoorde",
   "contact_row": "v6",
-  "template": "v5"
+  "template": "v15"
  },
  "bedrijf/wst-bm9rtg": {
   "name": "Wst",
@@ -137999,7 +137779,7 @@
   "city_slug": "munstergeleen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/yigit-elektrotechniek--o1mja": {
   "name": "Yigit Elektrotechniek",
@@ -138355,7 +138135,7 @@
   "city_slug": "nieuw-amsterdam",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v3"
+  "template": "v10"
  },
  "bedrijf/zeeuwse-verwarmings-unie-b-v-vw9wto": {
   "name": "Zeeuwse Verwarmings Unie B.V.",
@@ -138550,7 +138330,6 @@
   "website": "http://www.zijmenblonk.nl/",
   "tel": "0222314576",
   "tel_disp": "0222 314 576",
-  "name_alt": "Zijm & Blonk",
   "city_slug": "den-burg",
   "siblings": [
    {
@@ -138571,7 +138350,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zijtveld-bv-elektrotechniek-beveiliging-van-fcee-k": {
   "name": "Zijtveld BV Elektrotechniek &amp; Beveiliging Van",
@@ -138582,7 +138361,6 @@
   "website": "https://www.vanzijtveldbv.nl/?y_source=1_NjA0NzA0MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0297593640",
   "tel_disp": "0297 593 640",
-  "name_alt": "Zijtveld BV Elektrotechniek & Beveiliging Van",
   "city_slug": "mijdrecht",
   "siblings": [
    {
@@ -138593,7 +138371,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zoetermeer-9ugf50": {
   "name": "Zoetermeer",
@@ -138827,7 +138605,6 @@
   "website": "http://www.zuijderduijnenvlieland.nl/",
   "tel": "0653907278",
   "tel_disp": "06 53907278",
-  "name_alt": "Zuijderduijn & Vlieland Installatietechniek",
   "city_slug": "katwijk-aan-zee",
   "siblings": [
    {
@@ -138863,7 +138640,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zwaan-installatietechniek-gorinchem-einznu": {
   "name": "Zwaan Installatietechniek Gorinchem",
@@ -139085,7 +138862,7 @@
    }
   ],
   "contact_row": "v4",
-  "template": "v6"
+  "template": "v25"
  },
  "bedrijf/zwolle-elektricien-b4lcok": {
   "name": "Zwolle Elektricien",

@@ -21868,8 +21868,7 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Gravendeel",
-  "template": "v3"
+  "template": "v2"
  },
  "s-heerenberg": {
   "city": "&#x27;s-Heerenberg",
@@ -21959,8 +21958,7 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Heerenberg",
-  "template": "v3"
+  "template": "v2"
  },
  "s-hertogenbosch": {
   "city": "&#x27;s-Hertogenbosch",
@@ -22360,9 +22358,8 @@
     "shape": "unrated"
    }
   ],
-  "city_alt": "'s-Hertogenbosch",
   "city_slug": "s-hertogenbosch",
-  "template": "v4"
+  "template": "default"
  },
  "sappemeer": {
   "city": "Sappemeer",

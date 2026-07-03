@@ -16011,8 +16011,7 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Gravenzande",
-  "template": "v3"
+  "template": "v2"
  },
  "s-hertogenbosch": {
   "city": "&#x27;s-Hertogenbosch",
@@ -16246,9 +16245,8 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Hertogenbosch",
   "city_slug": "s-hertogenbosch",
-  "template": "v4"
+  "template": "default"
  },
  "schagen": {
   "city": "Schagen",

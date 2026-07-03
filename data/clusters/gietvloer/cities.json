@@ -2857,9 +2857,8 @@
     "shape": "unrated"
    }
   ],
-  "city_alt": "'s-Hertogenbosch",
   "city_slug": "s-hertogenbosch",
-  "template": "v3"
+  "template": "default"
  },
  "schagen": {
   "city": "Schagen",

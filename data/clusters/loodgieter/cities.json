@@ -38554,8 +38554,7 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Gravendeel",
-  "template": "v3"
+  "template": "default"
  },
  "s-gravenhage": {
   "city": "&#x27;S-Gravenhage",
@@ -38615,8 +38614,7 @@
     "shape": "v3"
    }
   ],
-  "city_alt": "'S-Gravenhage",
-  "template": "v3"
+  "template": "default"
  },
  "s-gravenzande": {
   "city": "&#x27;s-Gravenzande",
@@ -38718,8 +38716,7 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Gravenzande",
-  "template": "v3"
+  "template": "default"
  },
  "s-heerenberg": {
   "city": "&#x27;s-Heerenberg",
@@ -38761,8 +38758,7 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Heerenberg",
-  "template": "v3"
+  "template": "default"
  },
  "s-hertogenbosch": {
   "city": "&#x27;s-Hertogenbosch",
@@ -39200,9 +39196,8 @@
     "shape": "unrated"
    }
   ],
-  "city_alt": "'s-Hertogenbosch",
   "city_slug": "s-hertogenbosch",
-  "template": "v4"
+  "template": "v2"
  },
  "sassenheim": {
   "city": "Sassenheim",

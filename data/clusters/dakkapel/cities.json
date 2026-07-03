@@ -11014,9 +11014,8 @@
     "shape": "rated"
    }
   ],
-  "city_alt": "'s-Hertogenbosch",
   "city_slug": "s-hertogenbosch",
-  "template": "v3"
+  "template": "default"
  },
  "schaijk": {
   "city": "Schaijk",

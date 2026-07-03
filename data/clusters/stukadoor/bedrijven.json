@@ -146,7 +146,6 @@
   "website": "http://www.123stucwerk.nl/",
   "tel": "0612921605",
   "tel_disp": "06 12921605",
-  "name_alt": "123stucwerk stukadoren & texspuiten eindhoven",
   "city_slug": "eindhoven",
   "siblings": [
    {
@@ -182,7 +181,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/123stucwerk-stukadoren-texspuiten-uden-da7a4u": {
   "name": "123stucwerk stukadoren &amp; texspuiten uden",
@@ -193,7 +192,6 @@
   "website": "http://www.123stucwerk.nl/",
   "tel": "0634551389",
   "tel_disp": "06 34551389",
-  "name_alt": "123stucwerk stukadoren & texspuiten uden",
   "city_slug": "uden",
   "siblings": [
    {
@@ -229,7 +227,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/a-a-b-stucadoors-lr69qw": {
   "name": "A.A.B. Stucadoors",
@@ -566,7 +564,6 @@
   "website": "http://www.akramer.nl/",
   "tel": "0511421243",
   "tel_disp": "0511 421 243",
-  "name_alt": "A. Kramer & Zn.",
   "city_slug": "damwald",
   "siblings": [
    {
@@ -576,7 +573,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/a-m-luschen-stukadoors-kfqu6i": {
   "name": "A.M. Lüschen stukadoors",
@@ -618,7 +615,6 @@
   "website": "http://www.aenmstucadoors.nl/",
   "tel": "0162459547",
   "tel_disp": "0162 459 547",
-  "name_alt": "A&Mstucadoors",
   "city_slug": "oosterhout",
   "siblings": [
    {
@@ -654,7 +650,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/a-p-stuc-rqgxm0": {
   "name": "A.p. Stuc",
@@ -740,7 +736,6 @@
   "website": "https://www.facebook.com/ASspuitwerken/",
   "tel": "0617600132",
   "tel_disp": "06 17600132",
-  "name_alt": "A&S Spuitwerken",
   "city_slug": "oirsbeek",
   "siblings": [
    {
@@ -751,7 +746,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/a-van-der-linden-stucadoor-sr_rkq": {
   "name": "A. van der Linden Stucadoor",
@@ -939,7 +934,6 @@
   "website": "http://www.a2jstucwerken.nl/",
   "tel": "0630218200",
   "tel_disp": "06 30218200",
-  "name_alt": "A2J Stucwerken & Design",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -975,7 +969,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/a6stukadoorsbedrijf-zvmxis": {
   "name": "A6Stukadoorsbedrijf",
@@ -1179,7 +1173,6 @@
   "website": "http://www.aandachtstuc.nl/",
   "tel": "0655111163",
   "tel_disp": "06 55111163",
-  "name_alt": "Aandacht Stukadoor & Badkamer verbouwen en renovatie",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -1215,7 +1208,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/aannemer-almere-tegels-almere-all4home-qo8a-u": {
   "name": "Aannemer Almere Tegels Almere All4home",
@@ -1272,7 +1265,6 @@
   "website": "http://www.aannemer-ms-bouwbedrijf.nl/",
   "tel": "0641617031",
   "tel_disp": "06 41617031",
-  "name_alt": "Aannemer M&S Bouwbedrijf",
   "city_slug": "dordrecht",
   "siblings": [
    {
@@ -1308,7 +1300,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/aannemer-utrecht-ambacht-totaalbouw-gsx1rc": {
   "name": "Aannemer Utrecht | Ambacht Totaalbouw",
@@ -1641,7 +1633,6 @@
   "website": "https://aardeklussenbedrijf.nl/",
   "tel": "0615216529",
   "tel_disp": "06 15216529",
-  "name_alt": "Aarde Stukadoor & Klussenbedrijf",
   "city_slug": "sappemeer",
   "siblings": [
    {
@@ -1657,7 +1648,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/aasman-stukadoors-en-afbouwbedrijf-gtdess": {
   "name": "Aasman Stukadoors- en afbouwbedrijf",
@@ -1921,7 +1912,6 @@
   "website": "http://www.actiefklusbedrijf.nl/",
   "tel": "0624540280",
   "tel_disp": "06 24540280",
-  "name_alt": "Actief Stukadoor&Schilderbedrijf rotterdam",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -1957,7 +1947,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ad-schaap-stukadoorsbedrijf-_-0jx4": {
   "name": "Ad Schaap Stukadoorsbedrijf",
@@ -2380,7 +2370,6 @@
   "website": "https://www.afbouwmegens.nl/?utm_source=organisch&amp;utm_medium=lokaal&amp;utm_campaign=gmb",
   "tel": "0403035176",
   "tel_disp": "040 303 5176",
-  "name_alt": "Afbouw Megens stukadoor, nieuwbouw & bestaande bouw",
   "city_slug": "eindhoven",
   "siblings": [
    {
@@ -2416,7 +2405,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/afbouw-perdok-b-v-cfgik0": {
   "name": "Afbouw Perdok B.V.",
@@ -2498,7 +2487,6 @@
   "website": "http://www.afbouw-slegers.nl/",
   "tel": "0403098101",
   "tel_disp": "040 309 8101",
-  "name_alt": "Afbouw Slegers | Stukadoors, Schilders & Vloeren | Stucwerk, Dunpleister, Spuitwerk, PVC & Lavasteen | Nieuwbouw & Renovatie",
   "city_slug": "best",
   "siblings": [
    {
@@ -2534,7 +2522,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/afbouw-stuc-totaal-lh_hly": {
   "name": "Afbouw &amp; Stuc Totaal.",
@@ -2543,7 +2531,6 @@
   "website": "http://www.afbouwenstuctotaal.nl/",
   "tel": "0615296176",
   "tel_disp": "06 15296176",
-  "name_alt": "Afbouw & Stuc Totaal.",
   "city_slug": "twijzelerheide",
   "siblings": [
    {
@@ -2553,7 +2540,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/afbouwbedrijf-b-van-weenen-dggbgs": {
   "name": "Afbouwbedrijf B. van Weenen",
@@ -2893,7 +2880,6 @@
   "website": "https://www.vaantjetotaalafbouw.nl/",
   "tel": "0735512840",
   "tel_disp": "073 551 2840",
-  "name_alt": "Afbouwbedrijf 't Vaantje B.V.",
   "city_slug": "sint-michielsgestel",
   "siblings": [
    {
@@ -2929,7 +2915,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/afbouwbedrijf-the-finishing-touch-9eh6pk": {
   "name": "Afbouwbedrijf The Finishing Touch",
@@ -3306,7 +3292,6 @@
   "website": "http://www.ahres.nl/",
   "tel": "0614110062",
   "tel_disp": "06 14110062",
-  "name_alt": "Ahres stucadoor & schilderbedrijf",
   "city_slug": "amstelveen",
   "siblings": [
    {
@@ -3342,7 +3327,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/aj-stucwerken-jsrg1s": {
   "name": "AJ Stucwerken",
@@ -3893,7 +3878,6 @@
   "website": "http://www.allinstukadoor.nl/",
   "tel": "0854005858",
   "tel_disp": "085 400 5858",
-  "name_alt": "All in Stukadoor & Afbouw B.V",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -3929,7 +3913,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/all-in-stukadoorsbedrijf-wftd1o": {
   "name": "All-in Stukadoorsbedrijf",
@@ -4448,7 +4432,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Andr%C3%A9%20Stukadoors-%20%26%20Onderhoudsbedrijf&amp;query_place_id=ChIJZXT8jpMtxEcRGk-nZyJgTJ8",
   "tel": "0180786288",
   "tel_disp": "0180 786 288",
-  "name_alt": "André Stukadoors- & Onderhoudsbedrijf",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -4483,7 +4466,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/andre-timmers-stucadoor-jymtz4": {
   "name": "Andre Timmers stucadoor",
@@ -5198,7 +5181,6 @@
   "website": "https://www.as-stucwerken.nl/",
   "tel": "0611364034",
   "tel_disp": "06 11364034",
-  "name_alt": "AS Stucwerken | Afbouw & Renovatie",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -5234,7 +5216,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/as-stukadoorsbedrijf-b-v-4dx-lc": {
   "name": "AS-Stukadoorsbedrijf b.v.",
@@ -5476,14 +5458,13 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/ave-stucadoors-afbouw": {
   "name": "Avé stucadoors &amp; afbouw",
   "city": "Waddinxveen",
   "tel": "+31653398530;+31657203492",
   "tel_disp": "+31 6 53398530;+31 6 57203492",
-  "name_alt": "Avé stucadoors & afbouw",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -5518,7 +5499,7 @@
    }
   ],
   "contact_row": "v7",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/ave-stucadoors-en-afbouw-b-v-qehpya": {
   "name": "Avé stucadoors en afbouw b.v.",
@@ -5828,7 +5809,6 @@
   "website": "http://www.bcstukadoors.com/",
   "tel": "0756318305",
   "tel_disp": "075 631 8305",
-  "name_alt": "B&C Stukadoorsbedrijf B.V.",
   "city_slug": "zaandam",
   "siblings": [
    {
@@ -5864,7 +5844,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-de-kort-stukadoorsbedrijf-b-v-9_urvy": {
   "name": "B. de Kort Stukadoorsbedrijf B.V.",
@@ -6071,7 +6051,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=B%20%26%20S%20Stukadoors&amp;query_place_id=ChIJeQygjn64xUcRUo-k-UlVCG4",
   "tel": "0705171737",
   "tel_disp": "070 517 1737",
-  "name_alt": "B & S Stukadoors",
   "city_slug": "wassenaar",
   "siblings": [
    {
@@ -6081,7 +6060,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/b-u-f-onderhoudsbedrijf-amsterdam-schilder-en-stukadoor-79w03s": {
   "name": "B.U.F Onderhoudsbedrijf Amsterdam Schilder en Stukadoor",
@@ -6760,7 +6739,6 @@
   "website": "http://www.basicstucenafbouw.nl/",
   "tel": "0172610021",
   "tel_disp": "0172 610 021",
-  "name_alt": "Basic Stuc & Afbouw B.V.",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -6796,7 +6774,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bastro-stukadoor-en-schilderbedrijf-njwshq": {
   "name": "Bastro stukadoor en schilderbedrijf",
@@ -7195,7 +7173,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Ben%27s%20Stucadoorsbedrijf&amp;query_place_id=ChIJR-kHIQSpyEcRY-E534pDEK8",
   "tel": "0654325212",
   "tel_disp": "06 54325212",
-  "name_alt": "Ben's Stucadoorsbedrijf",
   "city_slug": "hoorn",
   "siblings": [
    {
@@ -7231,7 +7208,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ben-sier-afbouw-volendam-b-v-t0mpw8": {
   "name": "Ben Sier Afbouw Volendam B.V.",
@@ -7938,7 +7915,6 @@
   "website": "http://www.beverspuitwerken.nl/",
   "tel": "0499234123",
   "tel_disp": "0499 234 123",
-  "name_alt": "Bever Spuitwerken - Nieuwbouw & Renovatie | Stukadoors, Schilders, Spack en Latexspuiters",
   "city_slug": "best",
   "siblings": [
    {
@@ -7974,7 +7950,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bezettingswerken-smets-frederik-mwixeu": {
   "name": "Bezettingswerken Smets Frederik",
@@ -8075,7 +8051,6 @@
   "website": "http://www.bgi.nl/",
   "tel": "0299351824",
   "tel_disp": "0299 351 824",
-  "name_alt": "BGI Afbouw & Stucadoorsbedrijf Volendam",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -8111,7 +8086,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bianco-stukadoors-5g3cjo": {
   "name": "Bianco Stukadoors",
@@ -8362,7 +8337,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/bijzonder-stucwerk-mbbmrg": {
   "name": "Bijzonder Stucwerk",
@@ -8882,7 +8857,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/bmm-afbouw-stukadoorbedrijf-_arct0": {
   "name": "Bmm afbouw stukadoorbedrijf",
@@ -8995,7 +8970,6 @@
   "website": "http://www.bobafbouwstuc.nl/",
   "tel": "097010288706",
   "tel_disp": "0970 102 88706",
-  "name_alt": "Bob Afbouw&Stuc",
   "city_slug": "maassluis",
   "siblings": [
    {
@@ -9021,7 +8995,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/boekhorst-klussenbedrijf-_h5nvc": {
   "name": "Boekhorst Klussenbedrijf",
@@ -9137,7 +9111,6 @@
   "website": "http://www.bomers-leenen.nl/",
   "tel": "0402189001",
   "tel_disp": "040 218 9001",
-  "name_alt": "Bömers & Leenen Afbouw B.V. | Stukadoors | Schilders | Vloeren",
   "city_slug": "best",
   "siblings": [
    {
@@ -9173,7 +9146,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bond-visser-stucwerken-ijh6ii": {
   "name": "Bond &amp; Visser Stucwerken",
@@ -9183,7 +9156,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bond%20%26%20Visser%20Stucwerken&amp;query_place_id=ChIJF5SOhIQExkcRKly9HIjh6iI",
   "tel": "0299320367",
   "tel_disp": "0299 320 367",
-  "name_alt": "Bond & Visser Stucwerken",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -9219,7 +9191,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/boo-kluswerken-je03z8": {
   "name": "Boo Kluswerken",
@@ -9296,7 +9268,6 @@
   "website": "http://boomstukadoors.nl/",
   "tel": "0613581736",
   "tel_disp": "06 13581736",
-  "name_alt": "Boom Stukadoors - Stukadoorsbedrijf Amsterdam & Amstelveen",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -9332,7 +9303,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/boomsma-stucadoorsbedrijf-wd_idy": {
   "name": "Boomsma Stucadoorsbedrijf",
@@ -9662,7 +9633,6 @@
   "website": "http://www.bouwlijn.com/",
   "tel": "0624676841",
   "tel_disp": "06 24676841",
-  "name_alt": "🛠 Bouwlijn 💧 Badkamer renovatie & Loodgieter & Tegelzetter & Stukadoor & Badkamerspecialist",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -9698,7 +9668,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/bouwmatrix-n8v__4": {
   "name": "Bouwmatrix",
@@ -10009,7 +9979,6 @@
   "website": "http://www.bozyel-stukadoors.nl/",
   "tel": "0618854462",
   "tel_disp": "06 18854462",
-  "name_alt": "Bozyel Stukadoors & Afbouw",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -10045,7 +10014,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/braaf-onderhoud-3oxgno": {
   "name": "Braaf onderhoud",
@@ -10809,7 +10778,6 @@
   "website": "http://www.buitengevelisolatie-stukadoorsbedrijf-staals.nl/",
   "tel": "0651704756",
   "tel_disp": "06 51704756",
-  "name_alt": "Buitengevelisolatie & Stukadoorsbedrijf FStaals",
   "city_slug": "valkenswaard",
   "siblings": [
    {
@@ -10845,7 +10813,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/butun-nl-professionele-stukadoors-bv-m3hz74": {
   "name": "Butun.nl - Professionele Stukadoors Bv",
@@ -11194,7 +11162,6 @@
   "website": "https://cencstucadoors.nl/",
   "tel": "0645008123",
   "tel_disp": "06 45008123",
-  "name_alt": "C&C Stucadoors en Schildersbedrijf",
   "city_slug": "sprundel",
   "siblings": [
    {
@@ -11204,7 +11171,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/c-k-stucadoors-qnnxpy": {
   "name": "C&amp;K Stucadoors",
@@ -11215,7 +11182,6 @@
   "website": "http://www.ckstucadoors.nl/",
   "tel": "0654743705",
   "tel_disp": "06 54743705",
-  "name_alt": "C&K Stucadoors",
   "city_slug": "geldrop",
   "siblings": [
    {
@@ -11251,7 +11217,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/c-mallmann-stukadoorsbedrijf-i6r9ko": {
   "name": "C. Mallmann Stukadoorsbedrijf.",
@@ -11353,7 +11319,6 @@
   "website": "http://cais-schilderwerken.nl/",
   "tel": "0614148319",
   "tel_disp": "06 14148319",
-  "name_alt": "Cai's Schilderwerken",
   "city_slug": "aarle-rixtel",
   "siblings": [
    {
@@ -11376,7 +11341,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/cam-stukadoor-8o9p7k": {
   "name": "CAM Stukadoor",
@@ -11789,7 +11754,6 @@
   "website": "http://www.christiaanoleksy.nl/",
   "tel": "0613421364",
   "tel_disp": "06 13421364",
-  "name_alt": "Christiaan Oleksy Schilder & Stukadoor",
   "city_slug": "winterswijk",
   "siblings": [
    {
@@ -11805,7 +11769,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/chs-stukadoors-l6rvsu": {
   "name": "CHS Stukadoors",
@@ -12121,7 +12085,6 @@
   "website": "http://www.color-stuc.nl/",
   "tel": "0402488222",
   "tel_disp": "040 248 8222",
-  "name_alt": "COLORSTUC stucadoren & texspuiten",
   "city_slug": "eindhoven",
   "siblings": [
    {
@@ -12157,7 +12120,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/combinatie-van-der-hout-jtrsik": {
   "name": "Combinatie van der Hout",
@@ -12352,7 +12315,6 @@
   "website": "https://www.correctbouwroermond.nl/",
   "tel": "0475331197",
   "tel_disp": "0475 331 197",
-  "name_alt": "Correct Bouw & Afbouw BV",
   "city_slug": "roermond",
   "siblings": [
    {
@@ -12388,7 +12350,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/cox-spuitwerken-sia1k4": {
   "name": "Cox Spuitwerken",
@@ -12757,7 +12719,6 @@
   "website": "http://www.cvdstukadoors.nl/",
   "tel": "0651635151",
   "tel_disp": "06 51635151",
-  "name_alt": "Cuijpers & van Dam Stukadoors",
   "city_slug": "vlierden",
   "siblings": [
    {
@@ -12767,7 +12728,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/cumen-pugyr8": {
   "name": "Cumen",
@@ -12823,7 +12784,7 @@
   "tel_disp": "06 31003174",
   "city_slug": "nieuw-roden",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/d-bannink-stukadoorsbedrijf-h83bko": {
   "name": "D. Bannink Stukadoorsbedrijf",
@@ -12879,7 +12840,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=D%26D%20Schilderwerken&amp;query_place_id=ChIJx3VT5Dohx0cRTn6mWDxMP38",
   "tel": "0642098231",
   "tel_disp": "06 42098231",
-  "name_alt": "D&D Schilderwerken",
   "city_slug": "beek-en-donk",
   "siblings": [
    {
@@ -12915,7 +12875,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/d-de-vries-stukadoorsbedrijf-t5rlrs": {
   "name": "D De Vries Stukadoorsbedrijf",
@@ -12970,7 +12930,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=d%27Eco%20Finish&amp;query_place_id=ChIJqb4JXXmVxkcRd7ScR_5_AsI",
   "tel": "0651118302",
   "tel_disp": "06 51118302",
-  "name_alt": "d'Eco Finish",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -13006,7 +12965,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/d-janssen-stucwerken-9btjmi": {
   "name": "D.Janssen stucwerken",
@@ -13227,7 +13186,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=D%26T%20stucadoors&amp;query_place_id=ChIJ5fY8z2T8xkcR5X-hR5ylzr4",
   "tel": "0648035463",
   "tel_disp": "06 48035463",
-  "name_alt": "D&T stucadoors",
   "city_slug": "oss",
   "siblings": [
    {
@@ -13262,7 +13220,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/d-timmers-schilderwerken-mcrm6q": {
   "name": "D. Timmers Schilderwerken",
@@ -13308,7 +13266,6 @@
   "website": "http://www.stucdv.nl/",
   "tel": "0624559978",
   "tel_disp": "06 24559978",
-  "name_alt": "D&V",
   "city_slug": "leiden",
   "siblings": [
    {
@@ -13344,7 +13301,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/d-van-de-kant-afbouw-ezkr0m": {
   "name": "D. van de Kant Afbouw",
@@ -13482,11 +13439,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Da%20Costa%20Stukadoor%20%26%20Onderhoud&amp;query_place_id=ChIJP33-KK5pxkcROuM-E9IcOvw",
   "tel": "0625088070",
   "tel_disp": "06 25088070",
-  "name_alt": "Da Costa Stukadoor & Onderhoud",
   "city_slug": "de-bilt",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/da-schilder-nmcnwo": {
   "name": "DA Schilder",
@@ -13999,7 +13955,6 @@
   "website": "https://dbstukadoorsbedrijf.nl/",
   "tel": "0648538905",
   "tel_disp": "06 48538905",
-  "name_alt": "DB Stukadoorsbedrijf - Stukadoor Lelystad / Almere & latex spuiten",
   "city_slug": "lelystad",
   "siblings": [
    {
@@ -14035,7 +13990,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dbs-afbouw-o4lefk": {
   "name": "DBS Afbouw",
@@ -14317,7 +14272,7 @@
   "tel_disp": "06 53231934",
   "city_slug": "lollum",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/de-bouwvrouw-stukadoor-vymreq": {
   "name": "De Bouwvrouw stukadoor",
@@ -14542,7 +14497,6 @@
   "website": "https://www.dehaagseafbouw.nl/",
   "tel": "0687343625",
   "tel_disp": "06 87343625",
-  "name_alt": "DE HAAGSE AFBOUW - STUKADOOR & SCHILDER BEDRIJF",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -14578,7 +14532,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/de-haan-onderhoud-asfvce": {
   "name": "De Haan Onderhoud",
@@ -14725,7 +14679,6 @@
   "website": "https://www.dehaasstucwerkenafbouw.nl/",
   "tel": "0627828816",
   "tel_disp": "06 27828816",
-  "name_alt": "De Haas Stucwerk & Afbouw",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -14760,7 +14713,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/de-latex-concurrent-nuyjoc": {
   "name": "De Latex Concurrent",
@@ -15785,11 +15738,10 @@
   "website": "https://www.deweerts.nl/",
   "tel": "0418551810",
   "tel_disp": "0418 551 810",
-  "name_alt": "De Weert's Stucadoors B.V.",
   "city_slug": "bern",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/de-wit-af2pag": {
   "name": "De Wit",
@@ -16064,7 +16016,6 @@
   "website": "http://denbstucwerk.nl/",
   "tel": "0613175780",
   "tel_disp": "06 13175780",
-  "name_alt": "DEE&BEE Stucwerk",
   "city_slug": "sprundel",
   "siblings": [
    {
@@ -16074,7 +16025,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/degro-stukadoors-gaozze": {
   "name": "Degro Stukadoors",
@@ -16568,7 +16519,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Denissen%20Afbouw%20%26%20Montage&amp;query_place_id=ChIJB5qa1hOVxkcRSOqRio1AyMU",
   "tel": "0640781871",
   "tel_disp": "06 40781871",
-  "name_alt": "Denissen Afbouw & Montage",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -16604,7 +16554,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/deniz-stukadoor-g4085e": {
   "name": "Deniz Stukadoor",
@@ -17249,11 +17199,10 @@
   "website": "http://www.diphoornstucenspack.nl/",
   "tel": "0611303858",
   "tel_disp": "06 11303858",
-  "name_alt": "Diphoorn Stuck & Spackbedrijf",
   "city_slug": "elim",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/directstucwerk-nbc6wo": {
   "name": "DirectStucwerk",
@@ -17505,7 +17454,6 @@
   "website": "http://www.dkafbouw.nl/",
   "tel": "0655944174",
   "tel_disp": "06 55944174",
-  "name_alt": "DK Afbouw & Renovatie B.V.",
   "city_slug": "etten-leur",
   "siblings": [
    {
@@ -17541,7 +17489,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/dlm-bouw-bouw-stukadoors-b-v-a460ky": {
   "name": "DLM Bouw | Bouw &amp; Stukadoors b.v.",
@@ -17552,11 +17500,10 @@
   "website": "https://www.dlmbouw.site/",
   "tel": "0617470092",
   "tel_disp": "06 17470092",
-  "name_alt": "DLM Bouw | Bouw & Stukadoors b.v.",
   "city_slug": "ter-aar",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/dnc-stukadoor-stm_ow": {
   "name": "DNC Stukadoor",
@@ -17830,7 +17777,6 @@
   "rating_disp": "5,0",
   "reviews": "10",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Ds%20Stucadoor%20%26%20Beton%20Cir%C3%A9&amp;query_place_id=ChIJl2jbX0fNxUcRNPUt_ue-U50",
-  "name_alt": "Ds Stucadoor & Beton Ciré",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -17987,7 +17933,6 @@
   "website": "http://www.dulax.nl/",
   "tel": "0683854860",
   "tel_disp": "06 83854860",
-  "name_alt": "Dulax Stucadoors & Tegelszetters Rotterdam",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -18023,7 +17968,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/duo-stukadoors-l6eurq": {
   "name": "Duo Stukadoors",
@@ -18221,11 +18166,10 @@
   "website": "http://www.dvkvloeren.nl/",
   "tel": "0683862890",
   "tel_disp": "06 83862890",
-  "name_alt": "DVK totaalbouw en Onderhoud & DVK Vloeren",
   "city_slug": "vierhuizen",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/dvo-stuc-en-renovatiewerk-ajolnq": {
   "name": "Dvo Stuc en Renovatiewerk",
@@ -18502,7 +18446,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=E%26W%20van%20de%20Kant%20B.V.&amp;query_place_id=ChIJQQsuzKBCxkcRYrfNjL1u_Hc",
   "tel": "0613804556",
   "tel_disp": "06 13804556",
-  "name_alt": "E&W van de Kant B.V.",
   "city_slug": "zeist",
   "siblings": [
    {
@@ -18538,7 +18481,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/easystuc-vizcu8": {
   "name": "EasyStuc",
@@ -18746,7 +18689,6 @@
   "website": "http://www.edinkenvermond.nl/",
   "tel": "0653482908",
   "tel_disp": "06 53482908",
-  "name_alt": "Edink & Vermond",
   "city_slug": "leiden",
   "siblings": [
    {
@@ -18782,7 +18724,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/edwin-veldt-stukadoorsbedrijf-kerfc8": {
   "name": "Edwin Veldt Stukadoorsbedrijf",
@@ -18839,7 +18781,6 @@
   "website": "https://eeftingstuc.nl/stukadoor-emmen-eefting-stuc-afbouw/",
   "tel": "0611200705",
   "tel_disp": "06 11200705",
-  "name_alt": "EEFTING stuc & totaal afbouw",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -18875,7 +18816,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/eektimmerman-stucadoorsbedrijf-mnuicu": {
   "name": "Eektimmerman Stucadoorsbedrijf",
@@ -19621,7 +19562,6 @@
   "website": "http://www.stucadoorsbedrijferwinahles.nl/",
   "tel": "0651752733",
   "tel_disp": "06 51752733",
-  "name_alt": "Erwin Ahles Stucwerken & Tegelwerken",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -19657,7 +19597,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/esn-klussen-stukadoor-en-schilder-in-groningen-50tgbm": {
   "name": "Esn-Klussen Stukadoor en Schilder in Groningen",
@@ -19953,7 +19893,6 @@
   "website": "http://www.frankblom.com/",
   "tel": "0653652741",
   "tel_disp": "06 53652741",
-  "name_alt": "F. Blom Afw.- & Stucad.bedr",
   "city_slug": "bussum",
   "siblings": [
    {
@@ -19982,7 +19921,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/f-w-van-haastert-ftrzxy": {
   "name": "F.W. van Haastert",
@@ -20399,7 +20338,6 @@
   "website": "http://www.ferbomontage.nl/contact/",
   "tel": "0626494907",
   "tel_disp": "06 26494907",
-  "name_alt": "Ferbo Montage- & Afwerkingsbedrijf",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -20435,7 +20373,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ferhat-stukadoorsbedrijf-ax2wxo": {
   "name": "Ferhat stukadoorsbedrijf",
@@ -21128,7 +21066,6 @@
   "website": "http://stukadoorharen.nl/",
   "tel": "0653773095",
   "tel_disp": "06 53773095",
-  "name_alt": "Frank's stuc- en afbouwbedrijf",
   "city_slug": "haren",
   "siblings": [
    {
@@ -21139,7 +21076,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/fred-stuc-stukadoorsbedrijf-oyfa8c": {
   "name": "Fred Stuc stukadoorsbedrijf",
@@ -21457,7 +21394,7 @@
   "tel_disp": "06 54950162",
   "city_slug": "den-hoorn",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/g-j-hulstein-stukadoorsbedrijf-bqfsmq": {
   "name": "G.J. Hulstein Stukadoorsbedrijf",
@@ -22470,11 +22407,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Gerco%27s%20Stucwerk&amp;query_place_id=ChIJNxhMWSP8x0cRC3o5zLGKqdM",
   "tel": "0546840246",
   "tel_disp": "0546 840 246",
-  "name_alt": "Gerco's Stucwerk",
   "city_slug": "den-ham",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/gergo-klussen-3e1ld8": {
   "name": "Gergo klussen",
@@ -22517,7 +22453,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/gerritsen-stucadoors-ka0ctg": {
   "name": "Gerritsen Stucadoors",
@@ -22621,7 +22557,6 @@
   "website": "http://www.gevelendak.nl/",
   "tel": "0738508447",
   "tel_disp": "073 850 8447",
-  "name_alt": "Gevel & Dak B.V.",
   "city_slug": "rosmalen",
   "siblings": [
    {
@@ -22657,7 +22592,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/gevelstuc-afbouw-bv-hrjijk": {
   "name": "Gevelstuc Afbouw BV",
@@ -22729,7 +22664,6 @@
   "website": "http://gtstukadoors.nl/",
   "tel": "0651717497",
   "tel_disp": "06 51717497",
-  "name_alt": "Gevers & Teeuwen Stukadoors B.V.",
   "city_slug": "rosmalen",
   "siblings": [
    {
@@ -22765,7 +22699,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/giedo-prins-stuc-en-afbouw-bedrijf-p3syaq": {
   "name": "Giedo Prins stuc- en afbouw bedrijf",
@@ -22822,7 +22756,6 @@
   "website": "http://www.gielingstucadoors.nl/",
   "tel": "0654771436",
   "tel_disp": "06 54771436",
-  "name_alt": "Gieling Stucadoors & Afwerkingsbedrijf",
   "city_slug": "oostzaan",
   "siblings": [
    {
@@ -22833,7 +22766,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/gietvloer-dordrecht-gieavw": {
   "name": "Gietvloer Dordrecht",
@@ -23009,7 +22942,6 @@
   "website": "http://www.gladstuc.nl/",
   "tel": "0647805858",
   "tel_disp": "06 47805858",
-  "name_alt": "Gladstuc & Schilder",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -23045,7 +22977,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/glasplaats-en-stucadoorsbedrijf-h-de-jong-xpenmw": {
   "name": "Glasplaats en Stucadoorsbedrijf H. de Jong",
@@ -23081,7 +23013,6 @@
   "website": "http://www.schildersenstucadoors.nl/",
   "tel": "0655324606",
   "tel_disp": "06 55324606",
-  "name_alt": "Grau Schilders & Stucadoors",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -23117,7 +23048,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/grego-stukadoor-hquxvc": {
   "name": "Grego Stukadoor",
@@ -23419,7 +23350,6 @@
   "website": "http://www.ha-stucadoors.nl/",
   "tel": "0615572248",
   "tel_disp": "06 15572248",
-  "name_alt": "H&A Stucadoors | Stukadoor Lelystad | Latex Spuit",
   "city_slug": "lelystad",
   "siblings": [
    {
@@ -23455,7 +23385,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/h-baron-stucadoorswerken-lsxdkw": {
   "name": "H.Baron. Stucadoorswerken.",
@@ -23580,7 +23510,6 @@
   "website": "http://www.henfstukadoors.nl/",
   "tel": "0653189311",
   "tel_disp": "06 53189311",
-  "name_alt": "H & F Stukadoorsbedrijf",
   "city_slug": "woudenberg",
   "siblings": [
    {
@@ -23613,7 +23542,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/h-j-vink-afbouw-n8ycoe": {
   "name": "H.J Vink Afbouw",
@@ -23669,7 +23598,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=H.L.%20Spakman%20%26%20Zoon%20B.V.&amp;query_place_id=ChIJVd1PiDlrxkcRqnHFWP9CO_A",
   "tel": "0356833360",
   "tel_disp": "035 683 3360",
-  "name_alt": "H.L. Spakman & Zoon B.V.",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -23705,7 +23633,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/h-o-f-stukadoorbedrijf-xwm5eq": {
   "name": "H.O.F.stukadoorbedrijf",
@@ -24055,7 +23983,6 @@
   "website": "http://www.hagened.nl/",
   "tel": "0614141997",
   "tel_disp": "06 14141997",
-  "name_alt": "Hagened Stuc & Tegelwerk",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -24091,7 +24018,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/hallak-stukadoor-aachug": {
   "name": "Hallak stukadoor",
@@ -24984,7 +24911,7 @@
   "tel_disp": "0546 726 174",
   "city_slug": "geesteren",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/hendrix-van-de-werf-stucadoorsbedrijf-lokbyi": {
   "name": "Hendrix- van de Werf Stucadoorsbedrijf",
@@ -25293,7 +25220,6 @@
   "website": "https://www.facebook.com/Heuvelland-Parkstad-Stucadoor-516668115150663/",
   "tel": "0642343193",
   "tel_disp": "06 42343193",
-  "name_alt": "Heuvelland&Parkstad Stucadoor",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -25329,7 +25255,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/heuvelrug-stucadoors-izl64m": {
   "name": "Heuvelrug Stucadoors",
@@ -25339,7 +25265,7 @@
   "tel_disp": "06 23900151",
   "city_slug": "leersum",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/heuverling-deuleu": {
   "name": "Heuverling",
@@ -25604,7 +25530,7 @@
   "tel_disp": "06 44614509",
   "city_slug": "wessem",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/hk-betonlook-p-s77y": {
   "name": "HK Betonlook",
@@ -26191,7 +26117,6 @@
   "website": "http://www.hpb-gevelisolatie.nl/",
   "tel": "0612531775",
   "tel_disp": "06 12531775",
-  "name_alt": "HPB Gevelisolatie & Stukadoorsbedrijf",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -26227,7 +26152,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/hsv-stucwerken-whzt5u": {
   "name": "HSV Stucwerken",
@@ -26568,7 +26493,6 @@
   "website": "http://www.ibostukadoorlatexspuiten.nl/",
   "tel": "0642114664",
   "tel_disp": "06 42114664",
-  "name_alt": "IboStukadoor&LatexSpuiten",
   "city_slug": "dordrecht",
   "siblings": [
    {
@@ -26604,7 +26528,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ibro-stukadoors-2-brtg": {
   "name": "IBRO Stukadoors",
@@ -26707,7 +26631,6 @@
   "website": "https://www.ilyasschilderwerk.nl/",
   "tel": "0648238125",
   "tel_disp": "06 48238125",
-  "name_alt": "Ilyas Schilderwerk & Totaalonderhoud",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -26743,7 +26666,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/imperium-stukadoor-en-afbouwbedrijf-whir3o": {
   "name": "Imperium Stukadoor- en Afbouwbedrijf",
@@ -26928,7 +26851,6 @@
   "website": "http://www.interpleister.nl/",
   "tel": "0365374494",
   "tel_disp": "036 537 4494",
-  "name_alt": "InterPleister Stukadoor & Gietvloeren Almere Mét Showroom",
   "city_slug": "almere",
   "siblings": [
    {
@@ -26964,7 +26886,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/interstuc-stukadoorsbedrijf-cgf5vk": {
   "name": "Interstuc stukadoorsbedrijf",
@@ -27136,7 +27058,6 @@
   "website": "https://jenastukadoorswerken.nl/",
   "tel": "0612998057",
   "tel_disp": "06 12998057",
-  "name_alt": "J&A Stukadoorswerken",
   "city_slug": "apeldoorn",
   "siblings": [
    {
@@ -27171,7 +27092,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/j-afbouw-b-v-eafus0": {
   "name": "J afbouw b.v.",
@@ -27216,7 +27137,6 @@
   "website": "http://www.jenbstukadoors.nl/",
   "tel": "0651377280",
   "tel_disp": "06 51377280",
-  "name_alt": "J & B Stukadoors B.V. Venhuizen",
   "city_slug": "venhuizen",
   "siblings": [
    {
@@ -27227,7 +27147,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/j-buitenhuis-beheer-b-v-2k1e50": {
   "name": "J. Buitenhuis Beheer B.V.",
@@ -27662,7 +27582,6 @@
   "website": "https://www.janssenstukadoorswerken.nl/",
   "tel": "0475505198",
   "tel_disp": "0475 505 198",
-  "name_alt": "J. Janssen Afbouwsystemen & stukadoorswerken",
   "city_slug": "swalmen",
   "siblings": [
    {
@@ -27678,7 +27597,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/j-keppel-wik2ge": {
   "name": "J. Keppel",
@@ -27876,7 +27795,6 @@
   "website": "https://www.jmstukadoorsbedrijf.nl/",
   "tel": "0618576998",
   "tel_disp": "06 18576998",
-  "name_alt": "J&M Stukadoorsbedrijf",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -27912,7 +27830,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/j-onink-stukadoorswerk-ao4hb0": {
   "name": "J. Onink Stukadoorswerk",
@@ -28072,7 +27990,6 @@
   "website": "http://www.vaneijndhovenstucwerken.nl/",
   "tel": "0655770105",
   "tel_disp": "06 55770105",
-  "name_alt": "J & R van Eijndhoven Stucwerken B.V.",
   "city_slug": "veldhoven",
   "siblings": [
    {
@@ -28108,7 +28025,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/j-s-afbouw-stukadoorsbedrijf-pk33ze": {
   "name": "j&amp;s afbouw stukadoorsbedrijf",
@@ -28117,7 +28034,6 @@
   "website": "https://www.jensafbouw.nl/contact/",
   "tel": "0653916022",
   "tel_disp": "06 53916022",
-  "name_alt": "j&s afbouw stukadoorsbedrijf",
   "city_slug": "numansdorp",
   "contact_row": "default",
   "template": "v10"
@@ -28645,7 +28561,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Janssen%20Stucadoor%20%26%20Spackspuitwerk&amp;query_place_id=ChIJUymSTvz2x0cREoPE1Dydw5A",
   "tel": "0650273971",
   "tel_disp": "06 50273971",
-  "name_alt": "Janssen Stucadoor & Spackspuitwerk",
   "city_slug": "rijssen",
   "siblings": [
    {
@@ -28681,7 +28596,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/janssen-stukadoors-b-v-qoixlq": {
   "name": "Janssen Stukadoors B.V.",
@@ -29218,7 +29133,7 @@
   "tel_disp": "06 39150170",
   "city_slug": "spankeren",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/jesko-stukadoor-kbj1sa": {
   "name": "Jesko Stukadoor",
@@ -29292,7 +29207,6 @@
   "website": "http://www.jfebouw.nl/",
   "tel": "0642280109",
   "tel_disp": "06 42280109",
-  "name_alt": "JFE bouw & renovatie",
   "city_slug": "borne",
   "siblings": [
    {
@@ -29313,7 +29227,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/jj-stucadoors-schilders-afbouwbedrijf-kelzbu": {
   "name": "JJ Stucadoors, Schilders &amp; Afbouwbedrijf",
@@ -29324,7 +29238,6 @@
   "website": "http://www.jj-stuc.nl/",
   "tel": "0767820942",
   "tel_disp": "076 782 0942",
-  "name_alt": "JJ Stucadoors, Schilders & Afbouwbedrijf",
   "city_slug": "breda",
   "siblings": [
    {
@@ -29360,7 +29273,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/jm-stucwerken-kh_ob0": {
   "name": "JM stucwerken",
@@ -29505,7 +29418,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Joeri%20Leijs%20stukadoors%20%26%20afbouwbedrijf&amp;query_place_id=ChIJF_1lBOkXxEcRAsuetqNrQMI",
   "tel": "0614816732",
   "tel_disp": "06 14816732",
-  "name_alt": "Joeri Leijs stukadoors & afbouwbedrijf",
   "city_slug": "oud-gastel",
   "siblings": [
    {
@@ -29520,7 +29432,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/joey-ligtvoet-stucadoorswerken-4qpt5k": {
   "name": "Joey Ligtvoet stucadoorswerken",
@@ -29818,7 +29730,6 @@
   "website": "https://www.jonkerschilderwerken.nl/",
   "tel": "0367852795",
   "tel_disp": "036 785 2795",
-  "name_alt": "Jonker Schilder- & Onderhoudsbedrijf",
   "city_slug": "zeewolde",
   "siblings": [
    {
@@ -29834,7 +29745,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/joop-van-zon-cegyk0": {
   "name": "Joop van Zon",
@@ -30273,7 +30184,6 @@
   "website": "https://www.jt-afbouw.nl/",
   "tel": "0649982391",
   "tel_disp": "06 49982391",
-  "name_alt": "JT Stukadoors & Afbouwbedrijf",
   "city_slug": "apeldoorn",
   "siblings": [
    {
@@ -30309,7 +30219,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/jt-stukadoors-hdqwj8": {
   "name": "JT Stukadoors",
@@ -30821,7 +30731,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=%22KAT%22%20Stucadoors-%20%26%20Onderh.bedr.&amp;query_place_id=ChIJg_YIqCI1xEcRGvW8CNY7hMM",
   "tel": "0622693700",
   "tel_disp": "06 22693700",
-  "name_alt": "\"KAT\" Stucadoors- & Onderh.bedr.",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -30857,7 +30766,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/kattevilder-interieur-montage-v-o-f-whvqm4": {
   "name": "Kattevilder Interieur-Montage V.O.F.",
@@ -30967,7 +30876,6 @@
   "website": "https://kayastukadoors.nl/",
   "tel": "0615682618",
   "tel_disp": "06 15682618",
-  "name_alt": "Kaya Stukadoor & Schilders",
   "city_slug": "almere",
   "siblings": [
    {
@@ -31003,7 +30911,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/kaygan-aannemer-waddinxveen-bouwbedrijf-klussen-wgko5k": {
   "name": "Kaygan - Aannemer Waddinxveen | Bouwbedrijf &amp; Klussen",
@@ -31014,7 +30922,6 @@
   "website": "http://www.klussenbedrijfkaygan.nl/",
   "tel": "0640564735",
   "tel_disp": "06 40564735",
-  "name_alt": "Kaygan - Aannemer Waddinxveen | Bouwbedrijf & Klussen",
   "city_slug": "waddinxveen",
   "siblings": [
    {
@@ -31050,7 +30957,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/kazkaz-stukadoor-yj6y6i": {
   "name": "Kazkaz Stukadoor",
@@ -31272,7 +31179,7 @@
   "tel_disp": "06 11126332",
   "city_slug": "giethmen",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/kempen-stuc-9ztvk0": {
   "name": "Kempen Stuc",
@@ -31600,7 +31507,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Kirilov%20Stucadoor%20%26%20Schilder&amp;query_place_id=ChIJ_xdPXCuJxEcRoSGgEupHFMw",
   "tel": "0643737210",
   "tel_disp": "06 43737210",
-  "name_alt": "Kirilov Stucadoor & Schilder",
   "city_slug": "oost-souburg",
   "siblings": [
    {
@@ -31620,7 +31526,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/klasse-stuc-qttmcg": {
   "name": "Klasse Stuc",
@@ -31680,7 +31586,7 @@
   "tel_disp": "06 22833510",
   "city_slug": "heukelum",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/klever-stukadoorsbedrijf-vct_5i": {
   "name": "Klever stukadoorsbedrijf",
@@ -31736,7 +31642,7 @@
   "tel_disp": "06 38097867",
   "city_slug": "ameide",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/kluft-stukadoors-8aubsc": {
   "name": "Kluft Stukadoors",
@@ -31903,7 +31809,6 @@
   "website": "http://www.klusbedrijfdeclipers.nl/",
   "tel": "0687991115",
   "tel_disp": "06 87991115",
-  "name_alt": "Klusbedrijf de Clipers | Badkamer Renovatie & Bouwbedrijf Venray",
   "city_slug": "oostrum",
   "siblings": [
    {
@@ -31914,7 +31819,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-eerlijkheid-nbnnkc": {
   "name": "Klusbedrijf Eerlijkheid",
@@ -32062,7 +31967,6 @@
   "website": "https://johnrietdijk.nl/",
   "tel": "0187493663",
   "tel_disp": "0187 493 663",
-  "name_alt": "Klusbedrijf JohnRietdijk.nl, Schilder- & Reparatie Timmerwerk.",
   "city_slug": "stellendam",
   "siblings": [
    {
@@ -32083,7 +31987,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/klusbedrijf-mozaiek-s9nj9e": {
   "name": "Klusbedrijf Mozaïek",
@@ -32406,7 +32310,6 @@
   "website": "http://arttopklus.nl/",
   "tel": "0684554911",
   "tel_disp": "06 84554911",
-  "name_alt": "Klusservice Arttopklus Renovatie & Bouwbedrijf",
   "city_slug": "venray",
   "siblings": [
    {
@@ -32442,7 +32345,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/koene-stukadoors-neq_0c": {
   "name": "Koene Stukadoors",
@@ -32727,7 +32630,6 @@
   "website": "http://www.kosafbouw.nl/",
   "tel": "0623350268",
   "tel_disp": "06 23350268",
-  "name_alt": "Kos Stukadoors- & Afbouwbedrijf",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -32763,7 +32665,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/kos-stukadoorsbedrijf-l484go": {
   "name": "Kos-stukadoorsbedrijf",
@@ -32774,7 +32676,7 @@
   "tel_disp": "06 51288335",
   "city_slug": "wijnandsrade",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/kraijenoord-stukadoorsbedrijf-khilxs": {
   "name": "Kraijenoord Stukadoorsbedrijf",
@@ -32798,7 +32700,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Kramer%20%26%20van%20Osch%20Stukadoorsbedrijf&amp;query_place_id=ChIJR05zuADxxkcR6OH3f-w-Tjw",
   "tel": "0646294124",
   "tel_disp": "06 46294124",
-  "name_alt": "Kramer & van Osch Stukadoorsbedrijf",
   "city_slug": "kerkdriel",
   "siblings": [
    {
@@ -32827,7 +32728,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/kramer-wandstyling-bhhese": {
   "name": "Kramer Wandstyling",
@@ -33254,7 +33155,6 @@
   "website": "https://www.lenltotaalafbouw.nl/",
   "tel": "0735518170",
   "tel_disp": "073 551 8170",
-  "name_alt": "L&L Totaal Afbouw",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -33290,7 +33190,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/lakenberg-stucwerken-sfen50": {
   "name": "Lakenberg Stucwerken",
@@ -33392,7 +33292,6 @@
   "website": "http://www.langenburg.nl/",
   "tel": "0648072788",
   "tel_disp": "06 48072788",
-  "name_alt": "Langenburg Stuc & Restauratie",
   "city_slug": "stadskanaal",
   "siblings": [
    {
@@ -33428,7 +33327,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/lars-kwast-rmlutw": {
   "name": "Lars Kwast",
@@ -33765,7 +33664,6 @@
   "website": "https://leeuwardenstukadoor.com/",
   "tel": "0583690218",
   "tel_disp": "058 369 0218",
-  "name_alt": "Leeuwarden Stukadoor | Wanden & plafonds sauzen",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -33801,7 +33699,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/lehman-stucadoors-jclvoe": {
   "name": "Lehman Stucadoors",
@@ -34516,7 +34414,7 @@
   "tel_disp": "06 13728458",
   "city_slug": "cadier-en-keer",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/louwerse-sierpleister-roxvam": {
   "name": "Louwerse Sierpleister",
@@ -34681,7 +34579,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/luckerhof-stukadoors-en-schilderwerken-nv47sq": {
   "name": "Luckerhof Stukadoors en Schilderwerken",
@@ -35317,7 +35215,6 @@
   "website": "http://www.mdstucadoors.nl/",
   "tel": "0620875826",
   "tel_disp": "06 20875826",
-  "name_alt": "M.D. stucadoors & afbouwbedrijf",
   "city_slug": "bilthoven",
   "siblings": [
    {
@@ -35327,7 +35224,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/m-de-jonge-stukadoors-ow14ji": {
   "name": "M. de Jonge Stukadoors",
@@ -35528,7 +35425,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/m-jansen-stukadoorsbedrijf-uppnya": {
   "name": "M.Jansen stukadoorsbedrijf",
@@ -35742,7 +35639,6 @@
   "website": "https://www.aloushstukadoor.nl/",
   "tel": "0628857774",
   "tel_disp": "06 28857774",
-  "name_alt": "M&O .Stukadoorbedrijf",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -35778,7 +35674,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/m-pals-stukadoors-bqjk20": {
   "name": "M. Pals Stukadoors",
@@ -35893,7 +35789,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=M.%20ter%20Wee%27s%20Stucadoorsbedrijf&amp;query_place_id=ChIJY9BKL6BnyEcRiS-49xh1Y_8",
   "tel": "0561617151",
   "tel_disp": "0561 617 151",
-  "name_alt": "M. ter Wee's Stucadoorsbedrijf",
   "city_slug": "wolvega",
   "siblings": [
    {
@@ -35913,7 +35808,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/m-thesing-stukadoorsbedrijf-o0_ckg": {
   "name": "M. Thesing Stukadoorsbedrijf",
@@ -36325,7 +36220,6 @@
   "website": "https://www.maltadarte.com/",
   "tel": "0413410222",
   "tel_disp": "0413 410 222",
-  "name_alt": "Malta D'arte",
   "city_slug": "odiliapeel",
   "siblings": [
    {
@@ -36336,7 +36230,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mangert-stucadoorbedrijf-m-vjgyy8": {
   "name": "Mangert Stucadoorbedrijf M",
@@ -36567,7 +36461,6 @@
   "website": "http://www.mijn-stucadoor.nl/",
   "tel": "0641756736",
   "tel_disp": "06 41756736",
-  "name_alt": "Marcial Tuller Wand- & Plafondafwerking",
   "city_slug": "hengelo",
   "siblings": [
    {
@@ -36597,7 +36490,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/marcin-denis-stucador-5pjkls": {
   "name": "Marcin Denis stucador",
@@ -36775,7 +36668,6 @@
   "website": "http://www.marinas-schilderwerken.nl/",
   "tel": "0636126963",
   "tel_disp": "06 36126963",
-  "name_alt": "Marina's Schilderwerken",
   "city_slug": "s-heerenberg",
   "siblings": [
    {
@@ -36811,7 +36703,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mario-aanemersbedrijf-djzkge": {
   "name": "Mario Aanemersbedrijf",
@@ -38106,7 +37998,6 @@
   "website": "https://metsbouw.nl/",
   "tel": "0629054661",
   "tel_disp": "06 29054661",
-  "name_alt": "Mets Bouw & Stukadoorsbedrijf",
   "city_slug": "voerendaal",
   "siblings": [
    {
@@ -38122,7 +38013,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/metselbedrijf-veerman-en-schilder-qrgfp0": {
   "name": "METSELBEDRIJF VEERMAN EN SCHILDER",
@@ -38396,7 +38287,6 @@
   "website": "http://www.mvgschilderwerken.nl/",
   "tel": "0610490905",
   "tel_disp": "06 10490905",
-  "name_alt": "Michael van Gemert Schilderwerken & Onderhoud B.V.",
   "city_slug": "lieshout",
   "siblings": [
    {
@@ -38422,7 +38312,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/michel-stevens-stuc-design-o17adk": {
   "name": "Michel Stevens Stuc &amp; Design",
@@ -38433,7 +38323,6 @@
   "website": "https://m.facebook.com/profile.php?id=100063570009461",
   "tel": "0648360737",
   "tel_disp": "06 48360737",
-  "name_alt": "Michel Stevens Stuc & Design",
   "city_slug": "veendam",
   "siblings": [
    {
@@ -38469,7 +38358,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/migchels-stucwerken-nqnqzm": {
   "name": "Migchels Stucwerken",
@@ -38827,7 +38716,6 @@
   "website": "http://mistermpainters.com/",
   "tel": "0687165639",
   "tel_disp": "06 87165639",
-  "name_alt": "Mister M Schilders & Stucadoors",
   "city_slug": "hoofddorp",
   "siblings": [
    {
@@ -38863,7 +38751,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mj-stucadoors-en-onderh-bedr-eqncrk": {
   "name": "MJ Stucadoors- en Onderh.bedr.",
@@ -39127,11 +39015,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Moerland%20Stuc%20%26%20Afbouw&amp;query_place_id=ChIJqWHXlM1dxEcRjI6slCByydc",
   "tel": "0653694079",
   "tel_disp": "06 53694079",
-  "name_alt": "Moerland Stuc & Afbouw",
   "city_slug": "oosterland",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/molenaar-stukadoorsbedrijf-4ibyau": {
   "name": "Molenaar Stukadoorsbedrijf",
@@ -39926,7 +39813,6 @@
   "website": "http://www.muurpro.nl/",
   "tel": "0624095973",
   "tel_disp": "06 24095973",
-  "name_alt": "MUURPRO Stukadoorsbedrijf & Vochtbestrijding",
   "city_slug": "maastricht",
   "siblings": [
    {
@@ -39961,7 +39847,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/muurvarken-nl-qpvhtk": {
   "name": "Muurvarken.nl",
@@ -40064,7 +39950,6 @@
   "website": "https://www.mvbafwerking.nl/",
   "tel": "0626691697",
   "tel_disp": "06 26691697",
-  "name_alt": "MvB Afwerking & Stukadoorsbedrijf",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -40100,7 +39985,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mve-schilderwerken-ix_h84": {
   "name": "MVE Schilderwerken",
@@ -40185,7 +40070,6 @@
   "website": "http://mvstuc.nl/",
   "tel": "0652474844",
   "tel_disp": "06 52474844",
-  "name_alt": "MVstuc Stucadoors & Schilders",
   "city_slug": "zandvoort",
   "siblings": [
    {
@@ -40206,7 +40090,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/mw-stukadoorsbedrijf-wr6k98": {
   "name": "MW Stukadoorsbedrijf",
@@ -40309,7 +40193,6 @@
   "website": "https://nastucadoor.com/",
   "tel": "0682288039",
   "tel_disp": "06 82288039",
-  "name_alt": "N&A Stucadoor",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -40345,7 +40228,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/n-de-smet-stukadoor-00rsg4": {
   "name": "N de Smet Stukadoor",
@@ -40472,7 +40355,6 @@
   "website": "http://nwgroep.nl/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp-listing",
   "tel": "0403039138",
   "tel_disp": "040 303 9138",
-  "name_alt": "N & W groep",
   "city_slug": "veldhoven",
   "siblings": [
    {
@@ -40508,7 +40390,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/nan-schilder-en-stukadoorswerk-y-hjgy": {
   "name": "Nan Schilder- en Stukadoorswerk",
@@ -41491,7 +41373,6 @@
   "website": "http://novabouwenstukadoors.nl/",
   "tel": "0614362386",
   "tel_disp": "06 14362386",
-  "name_alt": "Nova Bouw & Stukadoors",
   "city_slug": "s-heerenberg",
   "siblings": [
    {
@@ -41527,7 +41408,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/nvg-tegelzetters-en-stukadoors-enschede-g6k0o4": {
   "name": "NVG Tegelzetters en Stukadoors Enschede",
@@ -41827,7 +41708,7 @@
   "tel_disp": "06 30077024",
   "city_slug": "kamperland",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/onderhoudsbedrijf-cornel-de-koning-wxolb8": {
   "name": "Onderhoudsbedrijf Cornel de Koning",
@@ -42017,7 +41898,6 @@
   "website": "http://www.onkelstukadoors.nl/",
   "tel": "0637431439",
   "tel_disp": "06 37431439",
-  "name_alt": "Onkel Stuc & Afwerkingsbedrijf",
   "city_slug": "maarssen",
   "siblings": [
    {
@@ -42053,7 +41933,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/onur-afbouw-ftgicg": {
   "name": "Onur afbouw",
@@ -42589,7 +42469,6 @@
   "website": "https://www.overbeekvloerenwandstyling.nl/contact",
   "tel": "0642402402",
   "tel_disp": "06 42402402",
-  "name_alt": "Overbeek Stucadoor Vloer & Wandstyling",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -42624,7 +42503,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/ozer-tegelzetter-stukadoor-q3amoo": {
   "name": "Ozer Tegelzetter &amp; Stukadoor",
@@ -42634,7 +42513,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Ozer%20Tegelzetter%20%26%20Stukadoor&amp;query_place_id=ChIJVQGxqpHnx0cR17Rsiq3aMOo",
   "tel": "0645222182",
   "tel_disp": "06 45222182",
-  "name_alt": "Ozer Tegelzetter & Stukadoor",
   "city_slug": "raalte",
   "siblings": [
    {
@@ -42655,7 +42533,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/p-c-van-brussel-stukadoors-en-schildersbedrijf-lnt5eu": {
   "name": "P.C. van Brussel Stukadoors en Schildersbedrijf",
@@ -42964,7 +42842,7 @@
   "tel_disp": "06 26126507",
   "city_slug": "stiphout",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/p-schuurbiers-stukadoorswerken-on-dhy": {
   "name": "P. Schuurbiers Stukadoorswerken",
@@ -44729,7 +44607,6 @@
   "website": "https://www.porstukadoors.nl/",
   "tel": "0103105340",
   "tel_disp": "010 310 5340",
-  "name_alt": "Por Stukadoor & Spuitbedrijf",
   "city_slug": "berkel-en-rodenrijs",
   "siblings": [
    {
@@ -44760,7 +44637,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/pos-stukadoors-m2atky": {
   "name": "Pos Stukadoors",
@@ -44968,7 +44845,6 @@
   "website": "http://www.proplast.nl/",
   "tel": "0614940469",
   "tel_disp": "06 14940469",
-  "name_alt": "Pro-Plast Stukadoors & Schilders",
   "city_slug": "haarlem",
   "siblings": [
    {
@@ -45004,7 +44880,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/pro-stukadoor-service-zaandam-gxenyy": {
   "name": "Pro Stukadoor Service Zaandam",
@@ -45132,7 +45008,6 @@
   "website": "https://www.profi-xl.nl/",
   "tel": "0628954649",
   "tel_disp": "06 28954649",
-  "name_alt": "Profi XL | De airless spuiter van 't Zuiden",
   "city_slug": "kerkrade",
   "siblings": [
    {
@@ -45166,7 +45041,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/profshop-de-wit-gujoo8": {
   "name": "Profshop de Wit",
@@ -45297,7 +45172,6 @@
   "website": "https://puntnldecor.nl/",
   "tel": "0628315208",
   "tel_disp": "06 28315208",
-  "name_alt": "Puntnl stukadoors&schildersbedrijf",
   "city_slug": "nuenen",
   "siblings": [
    {
@@ -45323,7 +45197,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/puur-stuc-d3ccck": {
   "name": "Puur Stuc",
@@ -45705,7 +45579,6 @@
   "website": "http://www.rd-stucadoorsbedrijf.nl/",
   "tel": "0645081031",
   "tel_disp": "06 45081031",
-  "name_alt": "R & D Stucadoorsbedrijf",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -45741,7 +45614,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/r-de-bruijn-afbouw-pm4zrg": {
   "name": "R.de Bruijn Afbouw",
@@ -45751,7 +45624,7 @@
   "tel_disp": "06 51941868",
   "city_slug": "woudrichem",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/r-de-groot-stukadoor-shntjw": {
   "name": "R. de Groot Stukadoor",
@@ -46065,7 +45938,6 @@
   "website": "http://rnstukadoors.nl/",
   "tel": "0657123304",
   "tel_disp": "06 57123304",
-  "name_alt": "R&N Stukadoors",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -46101,7 +45973,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/r-r-stucadoors-wft6i4": {
   "name": "R&amp;R Stucadoors",
@@ -46112,7 +45984,6 @@
   "website": "https://www.rrstucadoors.nl/",
   "tel": "0622493683",
   "tel_disp": "06 22493683",
-  "name_alt": "R&R Stucadoors",
   "city_slug": "etten-leur",
   "siblings": [
    {
@@ -46148,7 +46019,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/r-ruitenbeek-stuc-en-tegelwerk-mba3um": {
   "name": "R. Ruitenbeek Stuc- En Tegelwerk",
@@ -46180,7 +46051,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/r-schrijver-wand-en-plafondafwerkingen-jkfnmu": {
   "name": "R. Schrijver Wand- en Plafondafwerkingen",
@@ -46404,11 +46275,10 @@
   "website": "http://www.stukadoorsbedrijfvanmidden.nl/",
   "tel": "0348567209",
   "tel_disp": "0348 567 209",
-  "name_alt": "R. van Midden Stuc- & Sierpleisterwerk",
   "city_slug": "snelrewaard",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/raaijmakers-stukadoren-nl79lg": {
   "name": "Raaijmakers Stukadoren",
@@ -46704,7 +46574,6 @@
   "website": "https://ramson.nl/",
   "tel": "0654248593",
   "tel_disp": "06 54248593",
-  "name_alt": "Ramson Stukadoor, Schilder & Afbouw",
   "city_slug": "almere",
   "siblings": [
    {
@@ -46740,7 +46609,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/randy-stucwerken-rutm9g": {
   "name": "Randy Stucwerken",
@@ -46797,7 +46666,6 @@
   "website": "https://www.rangelovonderhoudstukadoor.com/",
   "tel": "0648219911",
   "tel_disp": "06 48219911",
-  "name_alt": "Rangelov & onderhoudsbedrijf",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -46833,7 +46701,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/ray-stuc-e7vo7c": {
   "name": "Ray Stuc",
@@ -46979,7 +46847,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Reijinga%20Stukadoors%20en%20JJ%27s%20Hairstyle&amp;query_place_id=ChIJVQ9yX7EGxkcREwMQx6Pae0M",
   "tel": "0610090304",
   "tel_disp": "06 10090304",
-  "name_alt": "Reijinga Stukadoors en JJ's Hairstyle",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -47015,7 +46882,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/reinders-stuc-schilderwerk-b-v-b2dheu": {
   "name": "Reinders Stuc-schilderwerk B.V.",
@@ -47039,7 +46906,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Remon%27s%20Spackspuitbedrijf&amp;query_place_id=ChIJlUYTdHv1xEcRN8dNxg-01G4",
   "tel": "0642116931",
   "tel_disp": "06 42116931",
-  "name_alt": "Remon's Spackspuitbedrijf",
   "city_slug": "zierikzee",
   "siblings": [
    {
@@ -47054,7 +46920,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/rene-creugers-stucadoorsbedrijf-ci5dle": {
   "name": "Rene Creugers Stucadoorsbedrijf",
@@ -47518,7 +47384,6 @@
   "website": "http://www.stucadoor-alkmaar.nl/",
   "tel": "0651615150",
   "tel_disp": "06 51615150",
-  "name_alt": "Richard's Stucadoors",
   "city_slug": "alkmaar",
   "siblings": [
    {
@@ -47554,7 +47419,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/rick-balk-stucadoors-1lrmlu": {
   "name": "Rick Balk Stucadoors",
@@ -47637,7 +47502,6 @@
   "website": "http://www.rihobouw.nl/",
   "tel": "0636295727",
   "tel_disp": "06 36295727",
-  "name_alt": "RIHO BOUW - bouw & stucwerk",
   "city_slug": "zaandam",
   "siblings": [
    {
@@ -47673,7 +47537,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/rikkert-afbouwgroep-b-v-rykuue": {
   "name": "Rikkert Afbouwgroep B.V.",
@@ -47774,7 +47638,7 @@
   "tel_disp": "0485 350 113",
   "city_slug": "beers",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/rinus-stucadoor-b-v-r_dwee": {
   "name": "Rinus Stucadoor B.V.",
@@ -47940,11 +47804,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=RM%20Stuc%26Design&amp;query_place_id=ChIJ2Rz6u8vhlWgRxwzKnl69ges",
   "tel": "0618845902",
   "tel_disp": "06 18845902",
-  "name_alt": "RM Stuc&Design",
   "city_slug": "oosterhesselen",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/rnj-bouwmanagement-advies-jrujyq": {
   "name": "RNJ Bouwmanagement &amp; Advies",
@@ -47955,7 +47818,6 @@
   "website": "http://www.rnjbouwadvies.nl/",
   "tel": "0621555448",
   "tel_disp": "06 21555448",
-  "name_alt": "RNJ Bouwmanagement & Advies",
   "city_slug": "hellevoetsluis",
   "siblings": [
    {
@@ -47991,7 +47853,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/rob-bakker-p9o3am": {
   "name": "Rob Bakker",
@@ -48957,7 +48819,6 @@
   "website": "https://www.rougoormetselwerken.nl/",
   "tel": "0649307064",
   "tel_disp": "06 49307064",
-  "name_alt": "Rougoor metsel- & stucwerken",
   "city_slug": "brummen",
   "siblings": [
    {
@@ -48968,7 +48829,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/roukes-stucadoorsbedrijf-eo5izm": {
   "name": "Roukes Stucadoorsbedrijf",
@@ -49829,7 +49690,6 @@
   "website": "http://www.sbplafonds.nl/",
   "tel": "0172652259",
   "tel_disp": "0172 652 259",
-  "name_alt": "S&B Plafonds",
   "city_slug": "bodegraven",
   "siblings": [
    {
@@ -49864,7 +49724,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/s-g-bv-stukadoorsbedrijf-a9qpvc": {
   "name": "S &amp; G BV Stukadoorsbedrijf",
@@ -49875,7 +49735,6 @@
   "website": "http://www.sengstukadoors.nl/",
   "tel": "0653623901",
   "tel_disp": "06 53623901",
-  "name_alt": "S & G BV Stukadoorsbedrijf",
   "city_slug": "rosmalen",
   "siblings": [
    {
@@ -49911,7 +49770,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/s-j-j-multiworks-jevvhw": {
   "name": "S.J.J. Multiworks",
@@ -49965,7 +49824,7 @@
   "tel_disp": "06 13594622",
   "city_slug": "lochem",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/s-k-s-stukadoorsbedrijf-ex3jm4": {
   "name": "S.K.S. Stukadoorsbedrijf",
@@ -50132,7 +49991,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=S.Z%20Afbouw%20%26%20Renovatie&amp;query_place_id=ChIJIdXfosWZxEcRyt2-tfg08-Q",
   "tel": "0684902833",
   "tel_disp": "06 84902833",
-  "name_alt": "S.Z Afbouw & Renovatie",
   "city_slug": "vlissingen",
   "siblings": [
    {
@@ -50167,7 +50025,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/sa-stukadoor-en-afbouw-olie9q": {
   "name": "SA stukadoor en Afbouw",
@@ -50366,7 +50224,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Salverda%20Tegelwerken%20%26%20stukadoorswerken&amp;query_place_id=ChIJ1SI7RT7hyEcRKF6k_uz-D4Y",
   "tel": "0618827903",
   "tel_disp": "06 18827903",
-  "name_alt": "Salverda Tegelwerken & stukadoorswerken",
   "city_slug": "waadhoeke",
   "siblings": [
    {
@@ -50384,7 +50241,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/sam-de-groot-stukadoors-schildersbedrijf-1fpftu": {
   "name": "Sam de Groot Stukadoors &amp; Schildersbedrijf",
@@ -50395,7 +50252,6 @@
   "website": "http://www.samdegroot.info/",
   "tel": "0683893224",
   "tel_disp": "06 83893224",
-  "name_alt": "Sam de Groot Stukadoors & Schildersbedrijf",
   "city_slug": "delft",
   "siblings": [
    {
@@ -50431,7 +50287,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/sammie-vijzelman-stucadoor-en-afbouw-d93ox4": {
   "name": "Sammie Vijzelman Stucadoor en Afbouw",
@@ -50645,7 +50501,6 @@
   "website": "https://www.facebook.com/profile.php?id=100065530778180",
   "tel": "0629557258",
   "tel_disp": "06 29557258",
-  "name_alt": "SB Stuc & Design",
   "city_slug": "emmen",
   "siblings": [
    {
@@ -50681,7 +50536,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/sbd-stukadoorsbedrijf-ytoxhe": {
   "name": "Sbd stukadoorsbedrijf",
@@ -50864,7 +50719,7 @@
   "tel_disp": "0345 573 910",
   "city_slug": "tricht",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/schepers-jack-stukadoorsbedrijf-sbcx6m": {
   "name": "Schepers Jack Stukadoorsbedrijf",
@@ -51138,7 +50993,6 @@
   "website": "http://portiek.com/",
   "tel": "0629756853",
   "tel_disp": "06 29756853",
-  "name_alt": "Schilder & Stukadoor 's bedrijf Amsterdam PORTIEK",
   "city_slug": "zaandam",
   "siblings": [
    {
@@ -51174,7 +51028,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/schilder-tilburg-colorz-schilderwerken-totaalonderhoud-sg2k2m": {
   "name": "Schilder Tilburg | Colorz Schilderwerken &amp; Totaalonderhoud",
@@ -51185,7 +51039,6 @@
   "website": "https://colorzschilderwerken.nl/",
   "tel": "0132032424",
   "tel_disp": "013 203 2424",
-  "name_alt": "Schilder Tilburg | Colorz Schilderwerken & Totaalonderhoud",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -51221,7 +51074,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/schilder-valkenswaard-qjjwqs": {
   "name": "Schilder Valkenswaard",
@@ -51368,7 +51221,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Schilders%20%26%20behangers%20wittebroek%20%28%20renovlies%29&amp;query_place_id=ChIJH8wEVHjhyEcRiy0q2OSJD4w",
   "tel": "0681253741",
   "tel_disp": "06 81253741",
-  "name_alt": "Schilders & behangers wittebroek ( renovlies)",
   "city_slug": "waadhoeke",
   "siblings": [
    {
@@ -51386,7 +51238,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/schilders-en-afwerkingsbedrijf-jekras-b-v-nunzls": {
   "name": "Schilders- en Afwerkingsbedrijf Jekras B.V.",
@@ -53166,7 +53018,6 @@
   "website": "https://sinsschilderwerken.nl/",
   "tel": "0618685774",
   "tel_disp": "06 18685774",
-  "name_alt": "Sins Schilder- & Onderhoudswerken",
   "city_slug": "made",
   "siblings": [
    {
@@ -53177,7 +53028,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/skb-klusbedrijf-tq2eka": {
   "name": "SKB Klusbedrijf🛠",
@@ -53231,7 +53082,6 @@
   "website": "https://skrstukadoors.nl/",
   "tel": "0633181530",
   "tel_disp": "06 33181530",
-  "name_alt": "SKR Stukadoors & Afbouwen | Stukadoor Hilversum",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -53267,7 +53117,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/skv-stucadoorsbedrijf-b-v-y0x8_o": {
   "name": "SKV Stucadoorsbedrijf B.V.",
@@ -53530,7 +53380,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/snel-stukadoor-bouw-bv-79o9og": {
   "name": "Snel stukadoor &amp; bouw BV",
@@ -53541,7 +53391,6 @@
   "website": "https://www.snelstukadoor.nl/",
   "tel": "0622002682",
   "tel_disp": "06 22002682",
-  "name_alt": "Snel stukadoor & bouw BV",
   "city_slug": "sittard",
   "siblings": [
    {
@@ -53577,7 +53426,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/snelvakman-srm5mm": {
   "name": "Snelvakman",
@@ -53735,7 +53584,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Soner%20Stukadoors%26Onderhoudsbedrijf&amp;query_place_id=ChIJDQOboogzxEcRDV7eRO_f3e8",
   "tel": "0624273825",
   "tel_disp": "06 24273825",
-  "name_alt": "Soner Stukadoors&Onderhoudsbedrijf",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -53771,7 +53619,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/sonnemans-stucwerk-bv-thpi9u": {
   "name": "Sonnemans Stucwerk BV",
@@ -53782,7 +53630,7 @@
   "tel_disp": "06 15634726",
   "city_slug": "neerkant",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/soute-stucwerken-7xdyha": {
   "name": "Soute Stucwerken",
@@ -53938,7 +53786,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Spack%20%26%20Stukadoorsbedrijf%20K.%20de%20Jong&amp;query_place_id=ChIJLe7qTmNEyEcRlTqUD09EX8I",
   "tel": "0516461996",
   "tel_disp": "0516 461 996",
-  "name_alt": "Spack & Stukadoorsbedrijf K. de Jong",
   "city_slug": "jubbega",
   "siblings": [
    {
@@ -53948,7 +53795,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/spack-stukadoorsbedrijf-westra-jkduly": {
   "name": "Spack &amp; Stukadoorsbedrijf Westra",
@@ -53957,7 +53804,6 @@
   "website": "http://stukadoorsbedrijfwestra.nl/",
   "tel": "0611109199",
   "tel_disp": "06 11109199",
-  "name_alt": "Spack & Stukadoorsbedrijf Westra",
   "city_slug": "waadhoeke",
   "siblings": [
    {
@@ -53975,7 +53821,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/spackbedrijf-m-bargeman-_uma4a": {
   "name": "Spackbedrijf M. Bargeman",
@@ -54353,7 +54199,6 @@
   "website": "http://www.stucadoorsbedrijf-spanjersberg-en-zn.nl/",
   "tel": "0181698760",
   "tel_disp": "0181 698 760",
-  "name_alt": "Spanjersberg & Zoon",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -54388,7 +54233,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/special-finish-pikmx4": {
   "name": "SPECIAL FINISH",
@@ -54836,11 +54681,10 @@
   "website": "https://www.stucwerkbrabant.nl/",
   "tel": "0497684100",
   "tel_disp": "0497 684 100",
-  "name_alt": "SSB Spack & Stucwerken Brabant",
   "city_slug": "hapert",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/stadskanaal-dicmr4": {
   "name": "Stadskanaal",
@@ -54932,7 +54776,6 @@
   "website": "https://starkstuc.nl/",
   "tel": "0618635811",
   "tel_disp": "06 18635811",
-  "name_alt": "Stark Stuc - Stukadoor & Klussenbedrijf",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -54968,7 +54811,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/starman-docjeq": {
   "name": "Starman",
@@ -55925,7 +55768,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Strak%26Vlak%20Stucadoorbedrijf&amp;query_place_id=ChIJGbVmSHEfxEcRoozLT-EtC-w",
   "tel": "0634891982",
   "tel_disp": "06 34891982",
-  "name_alt": "Strak&Vlak Stucadoorbedrijf",
   "city_slug": "etten-leur",
   "siblings": [
    {
@@ -55960,7 +55802,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/strak-wand-stukadoors-7usgzq": {
   "name": "Strak Wand stukadoors",
@@ -56318,7 +56160,6 @@
   "website": "http://www.stucadoorsbedrijf-schenkel.nl/",
   "tel": "0654257206",
   "tel_disp": "06 54257206",
-  "name_alt": "Stuc- & Afwerkingsbedrijf Schenkel",
   "city_slug": "almere",
   "siblings": [
    {
@@ -56353,7 +56194,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stuc-art-gsmca8": {
   "name": "Stuc.-Art",
@@ -56579,11 +56420,10 @@
   "reviews": "76",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stuc%26Door&amp;query_place_id=ChIJy9gSgeYjx0cRPqbpZxPYqtc",
   "website": "https://www.stucendoor.nl/",
-  "name_alt": "Stuc&Door",
   "city_slug": "milheeze",
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/stuc-e-motion-c6m2q0": {
   "name": "Stuc E Motion",
@@ -57002,7 +56842,6 @@
   "website": "http://www.stucengo.nl/",
   "tel": "0629387104",
   "tel_disp": "06 29387104",
-  "name_alt": "Stuc & Go - voor al uw stucadoorswerk",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -57038,7 +56877,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stuc-hc-4hbhr8": {
   "name": "Stuc HC",
@@ -57094,7 +56933,7 @@
   "tel_disp": "06 47475997",
   "city_slug": "hardinxveld-giessendam",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stuc-it-jcmhce": {
   "name": "stuc-it",
@@ -57151,7 +56990,6 @@
   "website": "http://stucenklusbedrijfkj.nl/",
   "tel": "0614480814",
   "tel_disp": "06 14480814",
-  "name_alt": "Stuc&KlusBedrijf KJ",
   "city_slug": "warffum",
   "siblings": [
    {
@@ -57167,7 +57005,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stuc-mans-rta5fy": {
   "name": "Stuc-mans",
@@ -57291,7 +57129,6 @@
   "website": "https://www.stuc-pro.nl/",
   "tel": "0628803954",
   "tel_disp": "06 28803954",
-  "name_alt": "Stuc pro & Stukadoor Klusbedrijf Groningen",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -57327,7 +57164,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stuc-specialist-roemer-la-w8m": {
   "name": "Stuc Specialist Roemer",
@@ -57378,7 +57215,6 @@
   "website": "http://www.meijerstuc.nl/",
   "tel": "0299476615",
   "tel_disp": "0299 476 615",
-  "name_alt": "Stuc & Spuitbedrijf Mark Meijer",
   "city_slug": "purmerend",
   "siblings": [
    {
@@ -57414,7 +57250,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stuc-strak-stukadoor-xosmiq": {
   "name": "Stuc &amp; Strak Stukadoor",
@@ -57425,7 +57261,6 @@
   "website": "https://www.stucenstrak.nl/",
   "tel": "0687064089",
   "tel_disp": "06 87064089",
-  "name_alt": "Stuc & Strak Stukadoor",
   "city_slug": "enschede",
   "siblings": [
    {
@@ -57461,7 +57296,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stuc-techniek-stukadoor-lelystad-almere-latex-spuiten-27uxfi": {
   "name": "STUC TECHNIEK - Stukadoor Lelystad / Almere &amp; latex spuiten",
@@ -57472,7 +57307,6 @@
   "website": "https://www.stuc-techniek.nl/?utm_source=local&amp;utm_medium=organic&amp;utm_campaign=gmb-website",
   "tel": "0646108535",
   "tel_disp": "06 46108535",
-  "name_alt": "STUC TECHNIEK - Stukadoor Lelystad / Almere & latex spuiten",
   "city_slug": "lelystad",
   "siblings": [
    {
@@ -57508,7 +57342,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stuc-verf-specialist-1xclqa": {
   "name": "STUC &amp; VERF SPECIALIST",
@@ -57516,7 +57350,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=STUC%20%26%20VERF%20SPECIALIST&amp;query_place_id=ChIJWR58PIZGxkcREWBJE1XcLQA",
   "tel": "0683016270",
   "tel_disp": "06 83016270",
-  "name_alt": "STUC & VERF SPECIALIST",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -57551,7 +57384,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stuc-voordeel-upo2cs": {
   "name": "Stuc Voordeel",
@@ -57648,7 +57481,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stuc%20%26%20Zo%20Stucadoorswerkzaamheden&amp;query_place_id=ChIJPWkPUyruxkcRY4gxtIvNTnY",
   "tel": "0651799146",
   "tel_disp": "06 51799146",
-  "name_alt": "Stuc & Zo Stucadoorswerkzaamheden",
   "city_slug": "s-hertogenbosch",
   "siblings": [
    {
@@ -57683,7 +57515,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stuc4all-sg05aa": {
   "name": "Stuc4all",
@@ -57791,7 +57623,6 @@
   "website": "https://www.noordzijenhof.com/",
   "tel": "0620545945",
   "tel_disp": "06 20545945",
-  "name_alt": "Stucad.bedr. Noordzij & Hof",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -57826,7 +57657,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stucad-spackspuitbedr-knobbe-kjqrma": {
   "name": "Stucad./Spackspuitbedr. Knobbe",
@@ -58017,7 +57848,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stucadoor-%20%26%20Afbouwbedrijf%20Jansen&amp;query_place_id=ChIJTbIsaRpExkcR7azKi2rE5GQ",
   "tel": "0334632213",
   "tel_disp": "033 463 2213",
-  "name_alt": "Stucadoor- & Afbouwbedrijf Jansen",
   "city_slug": "amersfoort",
   "siblings": [
    {
@@ -58053,7 +57883,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoor-ali-zh1dme": {
   "name": "Stucadoor Ali",
@@ -58332,7 +58162,7 @@
   "website": "https://www.stucadoor-direct.nl/",
   "city_slug": "wolphaartsdijk",
   "contact_row": "v4",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucadoor-en-klusbedrijf-j-schaefer-3_v030": {
   "name": "Stucadoor en klusbedrijf J Schaefer",
@@ -58748,7 +58578,6 @@
   "website": "http://www.zardoni.nl/?utm_source=google&amp;utm_medium=wix_google_business_profile&amp;utm_campaign=3383285706668714759",
   "tel": "0653749424",
   "tel_disp": "06 53749424",
-  "name_alt": "Stucadoor & Restauratiebedrijf Zardoni",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -58784,7 +58613,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoor-schilderwerk-hasan-agn9vo": {
   "name": "Stucadoor Schilderwerk Hasan",
@@ -58838,7 +58667,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stucadoor%20%26%20timmerbedrijf%20Jack%20Visscher&amp;query_place_id=ChIJ7cBRczwFxkcRp-XG0rOMERA",
   "tel": "0612918370",
   "tel_disp": "06 12918370",
-  "name_alt": "Stucadoor & timmerbedrijf Jack Visscher",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -58873,7 +58701,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stucadoor-van-t-goor-vc7t7i": {
   "name": "Stucadoor Van &#x27;t Goor",
@@ -58882,7 +58710,6 @@
   "website": "http://www.betoncireveenendaal.nl/",
   "tel": "0650826709",
   "tel_disp": "06 50826709",
-  "name_alt": "Stucadoor Van 't Goor",
   "city_slug": "veenendaal",
   "siblings": [
    {
@@ -58917,7 +58744,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stucadoor-wijdemeren-fk3irs": {
   "name": "Stucadoor Wijdemeren",
@@ -59113,7 +58940,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stucadoors-%20%26%20Afbouwbedrijf%20DACO&amp;query_place_id=ChIJDw3C2oMExkcRc1sJgNLr1NY",
   "tel": "0299320674",
   "tel_disp": "0299 320 674",
-  "name_alt": "Stucadoors- & Afbouwbedrijf DACO",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -59148,7 +58974,7 @@
    }
   ],
   "contact_row": "v2",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stucadoors-afbouwbedrijf-rob-vermeulen-xjleng": {
   "name": "Stucadoors &amp; Afbouwbedrijf Rob Vermeulen",
@@ -59159,7 +58985,6 @@
   "website": "http://www.stucadoorrobvermeulen.nl/",
   "tel": "0610159369",
   "tel_disp": "06 10159369",
-  "name_alt": "Stucadoors & Afbouwbedrijf Rob Vermeulen",
   "city_slug": "odijk",
   "siblings": [
    {
@@ -59180,7 +59005,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoors-afwerkingsbedrijf-gebr-batouz-faci58": {
   "name": "Stucadoors &amp; Afwerkingsbedrijf Gebr. Batouz",
@@ -59191,7 +59016,6 @@
   "website": "http://batouz.nl/",
   "tel": "0681787756",
   "tel_disp": "06 81787756",
-  "name_alt": "Stucadoors & Afwerkingsbedrijf Gebr. Batouz",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -59227,7 +59051,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoors-afwerkingsbedrijf-marco-van-huizen-ouowqy": {
   "name": "Stucadoors &amp; Afwerkingsbedrijf Marco van Huizen",
@@ -59237,7 +59061,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stucadoors%20%26%20Afwerkingsbedrijf%20Marco%20van%20Huizen&amp;query_place_id=ChIJm7g9yjsWuEcRwcBEqoUoWqY",
   "tel": "0535388563",
   "tel_disp": "053 538 8563",
-  "name_alt": "Stucadoors & Afwerkingsbedrijf Marco van Huizen",
   "city_slug": "oldenzaal",
   "siblings": [
    {
@@ -59261,7 +59084,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoors-en-afbouwbedrijf-prins-v-o-f-u8yeuu": {
   "name": "Stucadoors- en Afbouwbedrijf Prins V.O.F.",
@@ -59616,11 +59439,10 @@
   "website": "https://spackbedrijf.com/?y_source=1_MjExOTYwOC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
   "tel": "0651234971",
   "tel_disp": "06 51234971",
-  "name_alt": "Stucadoors & Spackbedrijf 't Loug",
   "city_slug": "froombosch",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/stucadoors-spackspuitbedrijf-martijn-knobbe-442bou": {
   "name": "Stucadoors &amp; Spackspuitbedrijf Martijn Knobbe",
@@ -59631,7 +59453,6 @@
   "website": "http://www.stukadoorsoverzicht.nl/enschede/knobbe_stucadoors_amp_spackspuitbedrijf_martijn.html",
   "tel": "0534346464",
   "tel_disp": "053 434 6464",
-  "name_alt": "Stucadoors & Spackspuitbedrijf Martijn Knobbe",
   "city_slug": "enschede",
   "siblings": [
    {
@@ -59667,7 +59488,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoors-spuitbedrijf-steltenpool-03nb2i": {
   "name": "Stucadoors- &amp; Spuitbedrijf Steltenpool",
@@ -59678,11 +59499,10 @@
   "website": "http://www.steltenpoolstuc.nl/",
   "tel": "0622892390",
   "tel_disp": "06 22892390",
-  "name_alt": "Stucadoors- & Spuitbedrijf Steltenpool",
   "city_slug": "obdam",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/stucadoorsbedrijf-a-bolks-zn-gopa04": {
   "name": "Stucadoorsbedrijf A. Bolks&amp;zn",
@@ -59693,7 +59513,6 @@
   "website": "http://bolks-afbouw.nl/",
   "tel": "0546641859",
   "tel_disp": "0546 641 859",
-  "name_alt": "Stucadoorsbedrijf A. Bolks&zn",
   "city_slug": "vroomshoop",
   "siblings": [
    {
@@ -59714,7 +59533,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-a-j-mink-ug3xm4": {
   "name": "Stucadoorsbedrijf A.J. Mink",
@@ -60439,7 +60258,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stucadoorsbedrijf%20Berkers%20%26%20van%20Dijk%20V.O.F.&amp;query_place_id=ChIJy9x-Mk47x0cR2RUEGi1ezD8",
   "tel": "0493843010",
   "tel_disp": "0493 843 010",
-  "name_alt": "Stucadoorsbedrijf Berkers & van Dijk V.O.F.",
   "city_slug": "vlierden",
   "siblings": [
    {
@@ -60449,7 +60267,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-bevustuc-b-v-zzrpey": {
   "name": "Stucadoorsbedrijf Bevustuc B.V.",
@@ -61008,7 +60826,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stucadoorsbedrijf%20C%20%26%20M&amp;query_place_id=ChIJ0UMWdyBuxkcRqjM_uw3o2Jk",
   "tel": "0654636385",
   "tel_disp": "06 54636385",
-  "name_alt": "Stucadoorsbedrijf C & M",
   "city_slug": "maarssen",
   "siblings": [
    {
@@ -61044,7 +60861,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-c-van-os-3zsrws": {
   "name": "Stucadoorsbedrijf C.Van Os",
@@ -61751,7 +61568,7 @@
   "tel_disp": "06 21668793",
   "city_slug": "oostkapelle",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucadoorsbedrijf-de-vries-stukadoor-zoetermeer-zuid-holland-mwa5oq": {
   "name": "Stucadoorsbedrijf de Vries | Stukadoor Zoetermeer | Zuid-Holland",
@@ -62047,7 +61864,6 @@
   "website": "http://www.drentenderijk.nl/",
   "tel": "0623783388",
   "tel_disp": "06 23783388",
-  "name_alt": "Stucadoorsbedrijf Drent & De Rijk",
   "city_slug": "dronten",
   "siblings": [
    {
@@ -62073,7 +61889,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-drent-de-rijk-vctom0": {
   "name": "Stucadoorsbedrijf Drent &amp; de Rijk",
@@ -62084,7 +61900,6 @@
   "website": "https://www.drentenderijk.nl/",
   "tel": "0657319433",
   "tel_disp": "06 57319433",
-  "name_alt": "Stucadoorsbedrijf Drent & de Rijk",
   "city_slug": "lemmer",
   "siblings": [
    {
@@ -62120,7 +61935,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-e-de-blanken-qwyo_s": {
   "name": "Stucadoorsbedrijf E. de Blanken",
@@ -62385,7 +62200,7 @@
   "tel_disp": "077 307 6228",
   "city_slug": "koningslust",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucadoorsbedrijf-evert-weiland-ffqduq": {
   "name": "Stucadoorsbedrijf Evert Weiland",
@@ -62615,7 +62430,7 @@
   "tel_disp": "06 34707809",
   "city_slug": "akkrum",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucadoorsbedrijf-frans-veldt-4avuk4": {
   "name": "Stucadoorsbedrijf Frans Veldt",
@@ -62809,7 +62624,7 @@
   "tel_disp": "0493 694 714",
   "city_slug": "ommel",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucadoorsbedrijf-g-wijers-8p4sxy": {
   "name": "Stucadoorsbedrijf G. Wijers",
@@ -65412,7 +65227,6 @@
   "website": "http://www.kramerstucwerk.nl/",
   "tel": "0651400517",
   "tel_disp": "06 51400517",
-  "name_alt": "Stucadoorsbedrijf Kramer & Zn.",
   "city_slug": "den-helder",
   "siblings": [
    {
@@ -65448,7 +65262,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-kreemers-xfmxmq": {
   "name": "Stucadoorsbedrijf Kreemers",
@@ -65860,7 +65674,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stucadoorsbedrijf-m-c-beneker-oxkimo": {
   "name": "Stucadoorsbedrijf M C Beneker",
@@ -66083,7 +65897,7 @@
   "tel_disp": "0487 561 658",
   "city_slug": "maasbommel",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucadoorsbedrijf-marcel-pel-kromuo": {
   "name": "Stucadoorsbedrijf Marcel Pel",
@@ -66258,7 +66072,7 @@
   "tel_disp": "0519 571 512",
   "city_slug": "hantumhuzen",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucadoorsbedrijf-michael-vos-stukadoor-dussen-csim6c": {
   "name": "Stucadoorsbedrijf Michael Vos | Stukadoor Dussen",
@@ -66484,7 +66298,6 @@
   "website": "https://www.noordzijenhof.com/",
   "tel": "0653977211",
   "tel_disp": "06 53977211",
-  "name_alt": "Stucadoorsbedrijf Noordzij & Hof",
   "city_slug": "hoogeveen",
   "siblings": [
    {
@@ -66520,7 +66333,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-nuno-ferro-i9ddnu": {
   "name": "Stucadoorsbedrijf Nuno Ferro",
@@ -69870,7 +69683,6 @@
   "website": "https://www.vlakenstrakurk.nl/?utm_source=google&amp;utm_medium=wix_google_business_profile&amp;utm_campaign=14230162953260503019",
   "tel": "0527686194",
   "tel_disp": "0527 686 194",
-  "name_alt": "Stucadoorsbedrijf Vlak & Strak B.V.",
   "city_slug": "urk",
   "siblings": [
    {
@@ -69901,7 +69713,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorsbedrijf-voets-aarts-4vk4ce": {
   "name": "Stucadoorsbedrijf Voets-Aarts",
@@ -70551,7 +70363,6 @@
   "website": "https://stucadoorscombikz.nl/",
   "tel": "0616741737",
   "tel_disp": "06 16741737",
-  "name_alt": "Stucadoorscombi K&Z",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -70587,7 +70398,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucadoorvandersluis-nin8cu": {
   "name": "StucadoorVanderSluis",
@@ -71687,7 +71498,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stucologie-b-v-izj9zi": {
   "name": "Stucologie B.V",
@@ -72280,7 +72091,7 @@
   "tel_disp": "06 27312211",
   "city_slug": "coevorden",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stucwerk-groningen-hb-stucwerk-gxvaqk": {
   "name": "Stucwerk Groningen (HB stucwerk)",
@@ -72404,7 +72215,6 @@
   "website": "http://www.stucwerkrijnmond.nl/",
   "tel": "0655689612",
   "tel_disp": "06 55689612",
-  "name_alt": "Stucwerk Rijnmond & Onderhoud",
   "city_slug": "spijkenisse",
   "siblings": [
    {
@@ -72440,7 +72250,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stucwerk-van-koning-bcyp3g": {
   "name": "Stucwerk van Koning",
@@ -72700,11 +72510,10 @@
   "website": "http://www.stukadoorsbedrijfdenotter.nl/",
   "tel": "0643226943",
   "tel_disp": "06 43226943",
-  "name_alt": "Stuk. & Afbouwbedr. Den Otter",
   "city_slug": "sint-annaland",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/stuk-bedr-hans-van-baal-b-v-c91wk8": {
   "name": "Stuk.bedr. Hans van Baal B.V.",
@@ -72919,7 +72728,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stukadoor%20%26%20Afbouwbedrijf%20WJ%20Vlietland&amp;query_place_id=ChIJWVrLn7dXxEcR6TQUblbaeck",
   "tel": "0187493475",
   "tel_disp": "0187 493 475",
-  "name_alt": "Stukadoor & Afbouwbedrijf WJ Vlietland",
   "city_slug": "stellendam",
   "siblings": [
    {
@@ -72940,7 +72748,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoor-afwerkbedrijf-douma-cuwvv4": {
   "name": "Stukadoor &amp; Afwerkbedrijf Douma",
@@ -72949,7 +72757,6 @@
   "reviews": "36",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stukadoor%20%26%20Afwerkbedrijf%20Douma&amp;query_place_id=ChIJgQC219fNyUcRddoOVCuWVV4",
   "website": "http://stukadoordouma.nl/",
-  "name_alt": "Stukadoor & Afwerkbedrijf Douma",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -72985,7 +72792,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v4",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoor-alkmaar-iqclh4": {
   "name": "Stukadoor Alkmaar",
@@ -75298,7 +75105,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoor-enschede-fv2xu8": {
   "name": "Stukadoor Enschede",
@@ -77818,7 +77625,6 @@
   "website": "http://www.stukadoornederland.nl/",
   "tel": "0643032110",
   "tel_disp": "06 43032110",
-  "name_alt": "Stukadoor Nederland - Stukadoorsbedrijfs - Voordelige & vakkundige stukadoor",
   "city_slug": "venray",
   "siblings": [
    {
@@ -77853,7 +77659,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stukadoor-nicolae-wqh5ga": {
   "name": "Stukadoor Nicolae",
@@ -78500,7 +78306,6 @@
   "website": "https://restauratiehulp.nl/",
   "tel": "0610273840",
   "tel_disp": "06 10273840",
-  "name_alt": "Stukadoor & Restauratie hulp MichielvdSluis",
   "city_slug": "dokkum",
   "siblings": [
    {
@@ -78520,7 +78325,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoor-ridderkerk-eb7tvi": {
   "name": "Stukadoor Ridderkerk",
@@ -78987,7 +78792,6 @@
   "website": "http://stukadoorschilderimsan.nl/",
   "tel": "0614700660",
   "tel_disp": "06 14700660",
-  "name_alt": "Stukadoor & Schilder Imsan",
   "city_slug": "arnhem",
   "siblings": [
    {
@@ -79022,7 +78826,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stukadoor-schilder-marchev-azi28c": {
   "name": "Stukadoor &amp; Schilder Marchev",
@@ -79032,7 +78836,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stukadoor%20%26%20Schilder%20Marchev&amp;query_place_id=ChIJAZs9yLg1xEcRw6kJ8azI28c",
   "tel": "0623599799",
   "tel_disp": "06 23599799",
-  "name_alt": "Stukadoor & Schilder Marchev",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -79068,7 +78871,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoor-schilders-bedrijf-ttjdbc": {
   "name": "Stukadoor &amp; Schilders Bedrijf",
@@ -79079,7 +78882,6 @@
   "website": "http://www.emnafbouw.nl/",
   "tel": "0614334035",
   "tel_disp": "06 14334035",
-  "name_alt": "Stukadoor & Schilders Bedrijf",
   "city_slug": "culemborg",
   "siblings": [
    {
@@ -79105,7 +78907,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoor-secuur-fi6wh8": {
   "name": "Stukadoor secuur",
@@ -79310,7 +79112,6 @@
   "website": "https://stukadoorenspackleek.nl/",
   "tel": "0617447033",
   "tel_disp": "06 17447033",
-  "name_alt": "Stukadoor & Spack Leek",
   "city_slug": "leek",
   "siblings": [
    {
@@ -79331,7 +79132,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoor-spackspuiter-lansink-afbouw-er9m3y": {
   "name": "Stukadoor Spackspuiter Lansink Afbouw",
@@ -79427,7 +79228,6 @@
   "website": "http://dulax.nl/",
   "tel": "0641763333",
   "tel_disp": "06 41763333",
-  "name_alt": "Stukadoor & tegelzetter goed kop een kvalitet",
   "city_slug": "vlaardingen",
   "siblings": [
    {
@@ -79462,7 +79262,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stukadoor-terneuzen-oyqdv0": {
   "name": "Stukadoor Terneuzen",
@@ -80823,7 +80623,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoorbedrijf-alloman-uervgc": {
   "name": "Stukadoorbedrijf Alloman",
@@ -81072,7 +80872,6 @@
   "website": "http://www.dewitteparel.nl/",
   "tel": "0653279290",
   "tel_disp": "06 53279290",
-  "name_alt": "Stukadoors- & Afbouwbedrijf De Witte Parel",
   "city_slug": "volendam",
   "siblings": [
    {
@@ -81108,7 +80907,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoors-afbouwbedrijf-marcel-drenth-s-efzq": {
   "name": "Stukadoors-Afbouwbedrijf Marcel Drenth",
@@ -81165,7 +80964,6 @@
   "website": "http://poelstrastukadoor.nl/",
   "tel": "0629536980",
   "tel_disp": "06 29536980",
-  "name_alt": "Stukadoors- & Afwerkingsbedrijf A.Poelstra",
   "city_slug": "bolsward",
   "siblings": [
    {
@@ -81181,7 +80979,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoors-amedi-plj1ws": {
   "name": "Stukadoors Amedi",
@@ -82555,7 +82353,6 @@
   "website": "https://www.gordondejager.nl/",
   "tel": "0707856351",
   "tel_disp": "070 785 6351",
-  "name_alt": "Stukadoors & onderhoudsbedrijf De Jager B.V.",
   "city_slug": "den-haag",
   "siblings": [
    {
@@ -82591,7 +82388,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoors-oost-blw5r4": {
   "name": "Stukadoors Oost",
@@ -83858,7 +83655,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stukadoorsbedrijf%20B.%20Hienkens%20%26%20Co.&amp;query_place_id=ChIJZXDNNl7wxUcRqvnMopK-Myw",
   "tel": "0611317083",
   "tel_disp": "06 11317083",
-  "name_alt": "Stukadoorsbedrijf B. Hienkens & Co.",
   "city_slug": "beverwijk",
   "siblings": [
    {
@@ -83894,7 +83690,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoorsbedrijf-b-martens-0a_9wg": {
   "name": "Stukadoorsbedrijf B. Martens",
@@ -83904,7 +83700,7 @@
   "tel_disp": "0165 304 324",
   "city_slug": "wouw",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-b-stuc-noordwolde-h6mdde": {
   "name": "Stukadoorsbedrijf B-Stuc Noordwolde",
@@ -84684,7 +84480,7 @@
   "tel_disp": "06 20717597",
   "city_slug": "kollumersweach",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-bouwservice-odekerken-c9n9us": {
   "name": "Stukadoorsbedrijf Bouwservice Odekerken",
@@ -84694,7 +84490,7 @@
   "tel_disp": "06 28596908",
   "city_slug": "munstergeleen",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-briels-q1_5co": {
   "name": "Stukadoorsbedrijf Briels",
@@ -85309,7 +85105,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoorsbedrijf-cremers-mo8igu": {
   "name": "Stukadoorsbedrijf Cremers",
@@ -86030,7 +85826,7 @@
   "tel_disp": "06 50587196",
   "city_slug": "yerseke",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-de-nijs-gx3sva": {
   "name": "Stukadoorsbedrijf de Nijs",
@@ -88549,7 +88345,7 @@
   "tel_disp": "06 22912032",
   "city_slug": "santpoort-noord",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-hagtingius-nv7qxy": {
   "name": "Stukadoorsbedrijf Hagtingius",
@@ -88618,7 +88414,6 @@
   "website": "https://www.hanskepser.nl/",
   "tel": "0485442080",
   "tel_disp": "0485 442 080",
-  "name_alt": "Stukadoorsbedrijf Hans Kepser & Zn",
   "city_slug": "siebengewald",
   "siblings": [
    {
@@ -88628,7 +88423,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stukadoorsbedrijf-hans-knapen-b-v-dofyo8": {
   "name": "Stukadoorsbedrijf Hans Knapen B.V.",
@@ -89597,7 +89392,7 @@
   "tel_disp": "06 55393225",
   "city_slug": "de-westereen",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-j-gerritsen-fxkvpk": {
   "name": "Stukadoorsbedrijf J.Gerritsen",
@@ -90042,11 +89837,10 @@
   "website": "https://stukadoorjansdesign.com/",
   "tel": "0611942055",
   "tel_disp": "06 11942055",
-  "name_alt": "Stukadoorsbedrijf Jan's Design",
   "city_slug": "espel",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/stukadoorsbedrijf-jantje-bartels-1uzzie": {
   "name": "Stukadoorsbedrijf Jantje Bartels",
@@ -91127,7 +90921,7 @@
   "tel_disp": "06 52020953",
   "city_slug": "de-lier",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-langedijk-yq02zu": {
   "name": "Stukadoorsbedrijf Langedijk",
@@ -91229,7 +91023,7 @@
   "tel_disp": "043 306 2707",
   "city_slug": "vaals",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-leon-capitein-xrpvyg": {
   "name": "Stukadoorsbedrijf Leon Capitein",
@@ -91408,7 +91202,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoorsbedrijf-lowino-holzken-in-sittard-y-zszc": {
   "name": "stukadoorsbedrijf Lowino Holzken in sittard",
@@ -92455,7 +92249,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stukadoorsbedrijf%20Muis%20%26%20Zoon%20B.V.&amp;query_place_id=ChIJU3EypsTxxUcROJO3pqzD3Qo",
   "tel": "0627066859",
   "tel_disp": "06 27066859",
-  "name_alt": "Stukadoorsbedrijf Muis & Zoon B.V.",
   "city_slug": "driehuis",
   "contact_row": "v2",
   "template": "v10"
@@ -92559,7 +92352,6 @@
   "website": "http://www.h-vds.nl/",
   "tel": "0625482269",
   "tel_disp": "06 25482269",
-  "name_alt": "Stukadoorsbedrijf N Hak & W vd Schuur",
   "city_slug": "schagen",
   "siblings": [
    {
@@ -92572,7 +92364,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/stukadoorsbedrijf-n-nieuwenhuizen-zcgqg8": {
   "name": "Stukadoorsbedrijf N. Nieuwenhuizen",
@@ -93248,7 +93040,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoorsbedrijf-p-brouwer-yejvto": {
   "name": "Stukadoorsbedrijf P. Brouwer",
@@ -93810,7 +93602,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoorsbedrijf-pieter-van-spronsen-zkgyus": {
   "name": "Stukadoorsbedrijf Pieter van Spronsen",
@@ -94021,7 +93813,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoorsbedrijf-r-j-otterspoor-ba8uro": {
   "name": "Stukadoorsbedrijf R.J. Otterspoor",
@@ -94282,7 +94074,7 @@
   "tel_disp": "06 48338945",
   "city_slug": "egchel",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-r-van-velzen-hwj5cy": {
   "name": "Stukadoorsbedrijf R. van Velzen",
@@ -94491,7 +94283,7 @@
   "tel_disp": "076 597 3700",
   "city_slug": "zundert",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-renier-linden-5b5-3w": {
   "name": "Stukadoorsbedrijf Renier Linden",
@@ -95077,7 +94869,6 @@
   "website": "http://www.ruudvandergeer.nl/",
   "tel": "0356217896",
   "tel_disp": "035 621 7896",
-  "name_alt": "Stukadoorsbedrijf Ruud van der Geer & Zoon",
   "city_slug": "hilversum",
   "siblings": [
    {
@@ -95113,7 +94904,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoorsbedrijf-rw-spakman-u9f7t8": {
   "name": "Stukadoorsbedrijf RW Spakman",
@@ -95770,7 +95561,6 @@
   "website": "http://www.simon-meerman.nl/",
   "tel": "0646057722",
   "tel_disp": "06 46057722",
-  "name_alt": "Stukadoorsbedrijf Simon & Meerman",
   "city_slug": "barneveld",
   "siblings": [
    {
@@ -95805,7 +95595,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoorsbedrijf-sjaak-0wfkuw": {
   "name": "Stukadoorsbedrijf Sjaak",
@@ -96255,7 +96045,6 @@
   "website": "https://www.stukadoorstrakenglad.nl/",
   "tel": "0648221033",
   "tel_disp": "06 48221033",
-  "name_alt": "Stukadoorsbedrijf Strak&Glad",
   "city_slug": "berkel-en-rodenrijs",
   "siblings": [
    {
@@ -96286,7 +96075,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoorsbedrijf-strakhuijs-jmr4no": {
   "name": "Stukadoorsbedrijf StrakHuijs",
@@ -97186,7 +96975,7 @@
   "tel_disp": "06 15646463",
   "city_slug": "nuland",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-van-de-graaf-p9xef4": {
   "name": "Stukadoorsbedrijf van de Graaf",
@@ -97535,7 +97324,6 @@
   "website": "http://www.kruitstukadoors.nl/?utm_source=google&amp;utm_medium=local&amp;utm_campaign=kruitstukadoors",
   "tel": "0626134444",
   "tel_disp": "06 26134444",
-  "name_alt": "Stukadoorsbedrijf Van der Kruit & Zonen",
   "city_slug": "ridderkerk",
   "siblings": [
    {
@@ -97570,7 +97358,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoorsbedrijf-van-der-leeden-wrjlo8": {
   "name": "Stukadoorsbedrijf van der Leeden",
@@ -98314,7 +98102,7 @@
   "tel_disp": "06 20682369",
   "city_slug": "buren",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-van-klaveren-mc4r_m": {
   "name": "Stukadoorsbedrijf van Klaveren",
@@ -98829,7 +98617,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v3",
-  "template": "v7"
+  "template": "v11"
  },
  "bedrijf/stukadoorsbedrijf-verhulst-k5xf5w": {
   "name": "Stukadoorsbedrijf Verhulst",
@@ -99077,7 +98865,6 @@
   "website": "http://vlakenglad.nl/",
   "tel": "0628399198",
   "tel_disp": "06 28399198",
-  "name_alt": "Stukadoorsbedrijf Vlak & Glad",
   "city_slug": "doetinchem",
   "siblings": [
    {
@@ -99112,7 +98899,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoorsbedrijf-vlint-nk7xfg": {
   "name": "Stukadoorsbedrijf Vlint",
@@ -99165,7 +98952,7 @@
   "tel_disp": "06 39355164",
   "city_slug": "scherpenisse",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/stukadoorsbedrijf-w-borgonjen-xdze2i": {
   "name": "Stukadoorsbedrijf W. Borgonjen",
@@ -99411,7 +99198,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Stukadoorsbedrijf%20Wad%20%26%20Wouden&amp;query_place_id=ChIJiTeGJXKsyUcReUFnRS6lN_A",
   "tel": "0511421062",
   "tel_disp": "0511 421 062",
-  "name_alt": "Stukadoorsbedrijf Wad & Wouden",
   "city_slug": "driezum",
   "siblings": [
    {
@@ -99422,7 +99208,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukadoorsbedrijf-wassens-qum0qw": {
   "name": "Stukadoorsbedrijf Wassens",
@@ -100119,7 +99905,6 @@
   "website": "https://stukenexpert.nl/",
   "tel": "0657146000",
   "tel_disp": "06 57146000",
-  "name_alt": "Stuken Expert - Stukadoorsbedrijf & Badkamerrenovatie Rotterdam",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -100155,7 +99940,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/stukissimo-wqaeue": {
   "name": "Stukissimo",
@@ -100471,7 +100256,6 @@
   "rating_disp": "2,8",
   "reviews": "6",
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=%27T%20Huis%20B.v.&amp;query_place_id=ChIJ9Wb-ExE1xEcRZQ-k92PtGGU",
-  "name_alt": "'T Huis B.v.",
   "city_slug": "schiedam",
   "siblings": [
    {
@@ -100910,7 +100694,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Tegel%20%26%20metselbedrijf%20Barry%20Overbeek&amp;query_place_id=ChIJrQVUTmp_xkcRVkws5R6a61k",
   "tel": "0610568549",
   "tel_disp": "06 10568549",
-  "name_alt": "Tegel & metselbedrijf Barry Overbeek",
   "city_slug": "lopik",
   "siblings": [
    {
@@ -100926,7 +100709,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/temming-stukadoors-jzraig": {
   "name": "Temming Stukadoors",
@@ -102792,11 +102575,10 @@
   "website": "https://a-a-tucconistukadoorsbedrijf.nl/",
   "tel": "0651054402",
   "tel_disp": "06 51054402",
-  "name_alt": "Tucconi stukadoors&spuitbedrijf",
   "city_slug": "nieuwe-niedorp",
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/uniek-afbouw-kdm1pg": {
   "name": "Uniek Afbouw",
@@ -102940,7 +102722,6 @@
   "website": "http://venbafbouw.nl/",
   "tel": "0625580679",
   "tel_disp": "06 25580679",
-  "name_alt": "V&B Afbouw",
   "city_slug": "nistelrode",
   "contact_row": "default",
   "template": "v10"
@@ -102966,11 +102747,10 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=V.O.F.%20Blaakman%20%26%20Vermeulen&amp;query_place_id=ChIJgYep1aagxEcRMOKJ0XCRGCE",
   "tel": "0651609299",
   "tel_disp": "06 51609299",
-  "name_alt": "V.O.F. Blaakman & Vermeulen",
   "city_slug": "oostburg",
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v8"
+  "template": "v3"
  },
  "bedrijf/v-o-f-de-moes-stucadoorsbedrijf-b6fciw": {
   "name": "V.O.F. De Moes Stucadoorsbedrijf",
@@ -103340,7 +103120,7 @@
   "tel_disp": "06 52348604",
   "city_slug": "nes",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/van-bavel-stucadoorsbedijf-sneek-rx0ikc": {
   "name": "Van Bavel Stucadoorsbedijf Sneek",
@@ -103857,7 +103637,6 @@
   "website": "http://www.vdlooschuurmans.nl/",
   "tel": "0735516068",
   "tel_disp": "073 551 6068",
-  "name_alt": "Van de Loo & Schuurmans",
   "city_slug": "gemonde",
   "siblings": [
    {
@@ -103872,7 +103651,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/van-de-velden-stukadoorsbedrijf-aqy-5k": {
   "name": "Van de Velden Stukadoorsbedrijf",
@@ -104288,7 +104067,6 @@
   "website": "https://vdoetelaarstucenafbouw.nl/",
   "tel": "0622088784",
   "tel_disp": "06 22088784",
-  "name_alt": "Van Den Oetelaar Stukadoors & Afbouwbedrijf",
   "city_slug": "waalwijk",
   "siblings": [
    {
@@ -104324,7 +104102,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-den-oever-stucdesign-cbcfya": {
   "name": "Van den Oever Stucdesign",
@@ -104778,7 +104556,6 @@
   "website": "http://www.vandervenstucadoors.nl/",
   "tel": "0643011986",
   "tel_disp": "06 43011986",
-  "name_alt": "Van der Ven & Vermeulen Stucadoorsbedrijf",
   "city_slug": "someren",
   "siblings": [
    {
@@ -104788,7 +104565,7 @@
    }
   ],
   "contact_row": "default",
-  "template": "v6"
+  "template": "v2"
  },
  "bedrijf/van-der-ven-vermeulen-stucadoorsbedrijf-rya_hq": {
   "name": "Van der Ven &amp; Vermeulen Stucadoorsbedrijf",
@@ -104799,7 +104576,6 @@
   "website": "http://www.vandervenstucadoors.nl/",
   "tel": "0641159206",
   "tel_disp": "06 41159206",
-  "name_alt": "Van der Ven & Vermeulen Stucadoorsbedrijf",
   "city_slug": "helmond",
   "siblings": [
    {
@@ -104835,7 +104611,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-der-weiden-stucadoorsbedrijf-cfkmik": {
   "name": "Van der Weiden Stucadoorsbedrijf",
@@ -105554,7 +105330,6 @@
   "website": "https://vanklassestukadoors.nl/",
   "tel": "0103072627",
   "tel_disp": "010 307 2627",
-  "name_alt": "Van Klasse Stukadoors & Schilders Rotterdam",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -105590,7 +105365,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-klerksen-stukadoorswerken-njyl44": {
   "name": "Van Klerksen stukadoorswerken",
@@ -105772,7 +105547,6 @@
   "website": "http://www.jvanliemdelatexspuiten.nl/",
   "tel": "0651913363",
   "tel_disp": "06 51913363",
-  "name_alt": "van Liemde Afbouw & Spuitwerk",
   "city_slug": "tilburg",
   "siblings": [
    {
@@ -105808,7 +105582,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-lieshout-stucwerken-eji18y": {
   "name": "Van lieshout stucwerken",
@@ -105941,7 +105715,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Van%20Oosterom%20%26%20Wassenaar&amp;query_place_id=ChIJifeKuqu3xUcRm8icwEfjZmY",
   "tel": "0641285889",
   "tel_disp": "06 41285889",
-  "name_alt": "Van Oosterom & Wassenaar",
   "city_slug": "voorburg",
   "siblings": [
    {
@@ -105967,7 +105740,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-osch-stucadoorswerken-xv35yk": {
   "name": "van Osch Stucadoorswerken",
@@ -106210,7 +105983,6 @@
   "website": "http://vanstiphoutstucwerk.nl/",
   "tel": "0611396688",
   "tel_disp": "06 11396688",
-  "name_alt": "Van Stiphout Stucwerk & Restauratie",
   "city_slug": "breda",
   "siblings": [
    {
@@ -106246,7 +106018,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-stuivenberg-uzspfc": {
   "name": "Van Stuivenberg",
@@ -106349,7 +106121,6 @@
   "website": "http://www.vanweeghel-interieur.nl/",
   "tel": "0653384897",
   "tel_disp": "06 53384897",
-  "name_alt": "Van Weeghel Interieur & Afbouw.",
   "city_slug": "meppel",
   "siblings": [
    {
@@ -106374,7 +106145,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-weert-klusbedrijf-1n60iw": {
   "name": "Van Weert klusbedrijf",
@@ -106419,7 +106190,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=van%20Zanten%20stukadoren%20%26%20spack-spuiten&amp;query_place_id=ChIJ4e2K2w_5xkcRirGoT9ug-ZY",
   "tel": "0651210188",
   "tel_disp": "06 51210188",
-  "name_alt": "van Zanten stukadoren & spack-spuiten",
   "city_slug": "beneden-leeuwen",
   "siblings": [
    {
@@ -106434,7 +106204,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/van-zon-stuc-stukadoorsbedrijf-qlkhy0": {
   "name": "van Zon Stuc Stukadoorsbedrijf",
@@ -106723,7 +106493,6 @@
   "website": "https://www.vdmafbouwenonderhoud.nl/?utm_source=google&amp;utm_medium=business",
   "tel": "0402407025",
   "tel_disp": "040 240 7025",
-  "name_alt": "VDM Afbouw & Onderhoud | Nieuwbouw Stukadoors | Latex Spuiters | Schilders | Dunpleister Specialist",
   "city_slug": "eindhoven",
   "siblings": [
    {
@@ -106759,7 +106528,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vds-stukadoorsbedrijf-dqowsw": {
   "name": "VDS Stukadoorsbedrijf",
@@ -106770,7 +106539,7 @@
   "tel_disp": "0488 726 198",
   "city_slug": "zetten",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/vdstuc-stucadoorsbedrijf-tip5zo": {
   "name": "VDstuc stucadoorsbedrijf",
@@ -107127,7 +106896,6 @@
   "website": "http://www.verdonkstukadoor.nl/",
   "tel": "0653132089",
   "tel_disp": "06 53132089",
-  "name_alt": "Verdonk - Stukadoor & Schildersbedrijf",
   "city_slug": "leusden",
   "siblings": [
    {
@@ -107143,7 +106911,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/verduyn-stucadoorsbedrijf-v-o-f-_ohuji": {
   "name": "Verduyn Stucadoorsbedrijf V.O.F.",
@@ -107260,7 +107028,6 @@
   "website": "https://vermaatstucwerk.nl/",
   "tel": "0621277210",
   "tel_disp": "06 21277210",
-  "name_alt": "Vermaat stucwerk & afbouw",
   "city_slug": "hoogerheide",
   "siblings": [
    {
@@ -107276,7 +107043,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/vermaesen-stucadoors-biepgy": {
   "name": "Vermaesen stucadoors",
@@ -108244,7 +108011,7 @@
   "tel_disp": "0511 451 658",
   "city_slug": "aldwald",
   "contact_row": "default",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/vugts-stucwerken-stukadoor-kaatsheuvel-jclwmc": {
   "name": "Vugts Stucwerken Stukadoor Kaatsheuvel",
@@ -108369,7 +108136,6 @@
   "website": "https://www.wenbstukadoors.nl/",
   "tel": "0852463247",
   "tel_disp": "085 246 3247",
-  "name_alt": "W&B Stukadoors - Ervaren Stukadoors",
   "city_slug": "schijndel",
   "siblings": [
    {
@@ -108405,7 +108171,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/w-giesberts-spuitwerken-ap5yku": {
   "name": "W. Giesberts Spuitwerken",
@@ -108545,7 +108311,7 @@
   "tel_disp": "0315 840 172",
   "city_slug": "ulft",
   "contact_row": "v2",
-  "template": "v5"
+  "template": "v10"
  },
  "bedrijf/w-r-stucdesign-zmfnre": {
   "name": "W&amp;R Stucdesign",
@@ -108556,7 +108322,6 @@
   "website": "https://wrstucdesign.nl/",
   "tel": "0657587380",
   "tel_disp": "06 57587380",
-  "name_alt": "W&R Stucdesign",
   "city_slug": "nieuwegein",
   "siblings": [
    {
@@ -108592,7 +108357,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/w-s-b-wilms-hvsrho": {
   "name": "W.s.b. Wilms",
@@ -109313,7 +109078,6 @@
   "website": "http://www.welmersstukadoors.nl/",
   "tel": "0621829599",
   "tel_disp": "06 21829599",
-  "name_alt": "Welmers Stukadoors & Afbouwbedrijf",
   "city_slug": "groningen",
   "siblings": [
    {
@@ -109349,7 +109113,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wemer-stukadoorsbedrijf-7shvio": {
   "name": "Wemer stukadoorsbedrijf",
@@ -109599,7 +109363,6 @@
   "website": "http://www.wijstucenafbouw.nl/",
   "tel": "0633337990",
   "tel_disp": "06 33337990",
-  "name_alt": "WIJ Stuc & Afbouw",
   "city_slug": "roermond",
   "siblings": [
    {
@@ -109635,7 +109398,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/wijbo-b-v-bonf4e": {
   "name": "Wijbo B.V.",
@@ -109777,7 +109540,6 @@
   "website": "http://www.wilhelmbv.nl/",
   "tel": "0115431692",
   "tel_disp": "0115 431 692",
-  "name_alt": "Wilhelm B.V. Schilders & Stukadoors",
   "city_slug": "terneuzen",
   "siblings": [
    {
@@ -109803,7 +109565,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/willem-sprong-en-zonen-yzn4oa": {
   "name": "Willem Sprong en Zonen",
@@ -110100,7 +109862,6 @@
   "website": "http://www.witenzo.nu/",
   "tel": "0620705826",
   "tel_disp": "06 20705826",
-  "name_alt": "Wit&Zo",
   "city_slug": "alphen-aan-den-rijn",
   "siblings": [
    {
@@ -110136,7 +109897,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/witte-hand-stukadoors-dv3jyc": {
   "name": "witte hand stukadoors",
@@ -110607,7 +110368,6 @@
   "website": "https://www.yastukadoorsbedrijf.nl/",
   "tel": "0686271617",
   "tel_disp": "06 86271617",
-  "name_alt": "Y.A Stukadoors & schildersbedrijf",
   "city_slug": "rotterdam",
   "siblings": [
    {
@@ -110643,7 +110403,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/y-eser-stukadoorsbedrijf-schilder-r7rois": {
   "name": "Y. Eser - Stukadoorsbedrijf &amp; Schilder",
@@ -110654,7 +110414,6 @@
   "website": "https://yeser.nl/",
   "tel": "0643013271",
   "tel_disp": "06 43013271",
-  "name_alt": "Y. Eser - Stukadoorsbedrijf & Schilder",
   "city_slug": "amsterdam",
   "siblings": [
    {
@@ -110690,7 +110449,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/yakup-stukadoorsbedrijf-n63nxi": {
   "name": "Yakup Stukadoorsbedrijf",
@@ -111007,7 +110766,6 @@
   "website": "https://www.zaanstadstukadoor.nl/",
   "tel": "0681943289",
   "tel_disp": "06 81943289",
-  "name_alt": "Zaanstad Stukadoor & Schilder",
   "city_slug": "zaandam",
   "siblings": [
    {
@@ -111043,7 +110801,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zaanstuc-b-v-fxkb9k": {
   "name": "Zaanstuc B.V.",
@@ -111094,7 +110852,6 @@
   "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Zana%20Allround%20Klussen%20%26%20Stukadoorsbedrijf&amp;query_place_id=ChIJ4e2odRC3wEcRVWshU87sJqU",
   "tel": "0642025437",
   "tel_disp": "06 42025437",
-  "name_alt": "Zana Allround Klussen & Stukadoorsbedrijf",
   "city_slug": "echt",
   "siblings": [
    {
@@ -111125,7 +110882,7 @@
   ],
   "rating_row": "default",
   "contact_row": "v2",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zeebos-afbouw-phuqwo": {
   "name": "Zeebos Afbouw",
@@ -111182,7 +110939,6 @@
   "website": "https://sites.google.com/view/klusbedrijfzeer/home",
   "tel": "0618515679",
   "tel_disp": "06 18515679",
-  "name_alt": "ZEER klusbedrijf tegelzetter & stukadoor & schilder",
   "city_slug": "hengelo",
   "siblings": [
    {
@@ -111212,7 +110968,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zeister-afbouw-jxjtow": {
   "name": "Zeister Afbouw",
@@ -111314,7 +111070,6 @@
   "website": "http://www.zuidweststukadoren.nl/",
   "tel": "0684144402",
   "tel_disp": "06 84144402",
-  "name_alt": "Zuidwest stukadoren &klussen",
   "city_slug": "middelburg",
   "siblings": [
    {
@@ -111339,7 +111094,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zwanepol-stukadoorsbedrijf-g-m-g8dvzs": {
   "name": "Zwanepol Stukadoorsbedrijf G M",
@@ -111371,7 +111126,6 @@
   "website": "http://stucendesign.nl/",
   "tel": "0627298524",
   "tel_disp": "06 27298524",
-  "name_alt": "Zwarts Stuc & Design",
   "city_slug": "leeuwarden",
   "siblings": [
    {
@@ -111407,7 +111161,7 @@
   ],
   "rating_row": "default",
   "contact_row": "default",
-  "template": "v4"
+  "template": "default"
  },
  "bedrijf/zwerus-stukadoors-pgklww": {
   "name": "Zwerus Stukadoors",
