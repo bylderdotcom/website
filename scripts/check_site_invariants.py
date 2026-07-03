@@ -32,8 +32,11 @@ EXAMPLES_SHOWN = 20
 EXCLUDE_DIRS = {
     ".git", ".claude", ".github", ".vercel", "node_modules", "__pycache__",
     "output", "_audits", "_og-templates", "_scripts", "data", "scripts",
-    "reports", "api",
+    "reports", "api", "templates",
 }
+
+# Losse template-bestanden in de root (placeholders zoals [Canonical_URL]).
+EXCLUDE_FILES = {"template_v2.html"}
 
 RE_LOC = re.compile(r"<loc>\s*(.*?)\s*</loc>", re.I | re.S)
 RE_SITEMAP_TAG = re.compile(r"<sitemap>", re.I)
@@ -135,7 +138,7 @@ def collect_site_html():
         else:
             dirs[:] = [d for d in dirs if not d.startswith(".")]
         for f in fs:
-            if f.endswith(".html"):
+            if f.endswith(".html") and not (rel == "." and f in EXCLUDE_FILES):
                 p = os.path.join(dirpath, f)
                 files.append(os.path.relpath(p, ROOT))
     return files

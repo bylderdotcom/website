@@ -18,3 +18,10 @@ Sitemap: https://www.bylder.com/badkamer-sitemap.xml
 Sitemap: https://www.bylder.com/dakkapel-sitemap.xml
 Sitemap: https://www.bylder.com/gietvloer-sitemap.xml
 Sitemap: https://www.bylder.com/plattegrond-inrichten-sitemap.xml
+Sitemap: https://www.bylder.com/dakdekker-sitemap.xml
+Sitemap: https://www.bylder.com/energieadviseur-sitemap.xml
+Sitemap: https://www.bylder.com/isolatiebedrijf-sitemap.xml
+Sitemap: https://www.bylder.com/kozijnbedrijf-sitemap.xml
+Sitemap: https://www.bylder.com/timmerman-sitemap.xml
+Sitemap: https://www.bylder.com/ventilatiebedrijf-sitemap.xml
+Sitemap: https://www.bylder.com/warmtepompinstallateur-sitemap.xml

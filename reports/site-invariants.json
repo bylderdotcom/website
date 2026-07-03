@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-02T21:17:52",
+  "generated": "2026-07-03T08:44:03",
   "root": "/Users/danielpaaij/Documents/GitHub/website",
   "checks": {
     "1_sitemap_files": {
@@ -46,9 +46,7 @@
         "badkamer-sitemap.xml",
         "dakkapel-sitemap.xml",
         "gietvloer-sitemap.xml",
-        "plattegrond-inrichten-sitemap.xml"
-      ],
-      "sitemaps_on_disk_not_in_robots": [
+        "plattegrond-inrichten-sitemap.xml",
         "dakdekker-sitemap.xml",
         "energieadviseur-sitemap.xml",
         "isolatiebedrijf-sitemap.xml",
@@ -57,45 +55,22 @@
         "ventilatiebedrijf-sitemap.xml",
         "warmtepompinstallateur-sitemap.xml"
       ],
+      "sitemaps_on_disk_not_in_robots": [],
       "sitemap_files_missing": [],
-      "urls_checked": 56561,
+      "urls_checked": 56577,
       "violations": 0,
       "examples": []
     },
     "2_noindex_in_sitemap": {
-      "pages_scanned": 76817,
+      "pages_scanned": 75876,
       "noindex_pages": 18834,
       "violations": 0,
       "examples": []
     },
     "3_canonical": {
-      "pages_with_canonical": 75882,
-      "violations": 401,
+      "pages_with_canonical": 75871,
+      "violations": 369,
       "examples": [
-        {
-          "path": "template_v2.html",
-          "canonical": "[Canonical_URL]"
-        },
-        {
-          "path": "tools/index.html",
-          "canonical": "https://bylder.com/tools/"
-        },
-        {
-          "path": "tools/bouwkosten-per-m2/index.html",
-          "canonical": "https://bylder.com/tools/bouwkosten-per-m2/"
-        },
-        {
-          "path": "tools/opleveringschecklist-download/index.html",
-          "canonical": "https://bylder.com/tools/opleveringschecklist-download/"
-        },
-        {
-          "path": "tools/meerwerk-calculator/index.html",
-          "canonical": "https://bylder.com/tools/meerwerk-calculator/"
-        },
-        {
-          "path": "tools/5-procent-depot-calculator/index.html",
-          "canonical": "https://bylder.com/tools/5-procent-depot-calculator/"
-        },
         {
           "path": "nieuwbouw/nieuwbouw/index.html",
           "canonical": "https://www.bylder.com/nieuwbouw/"
@@ -1571,251 +1546,26 @@
         {
           "path": "voucher/index.html",
           "canonical": "https://www.bylder.com/vouchers/"
-        },
-        {
-          "path": "templates/clusters/renovatiekosten/template.v2.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/renovatiekosten/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/offerte-check/template.v2.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/offerte-check/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/elektricien/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/aannemer/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/dakkapel/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/gietvloer/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/bouwvergunning/template.v2.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/bouwvergunning/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/badkamer/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/project/template.v2.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/project/template.v3.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/project/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/aannemer-matching/template.v4.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/aannemer-matching/template.v2.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/aannemer-matching/template.v3.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/aannemer-matching/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/schilder/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/kopen/template.v4.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/kopen/template.v2.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/kopen/template.v3.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/kopen/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/kortingscode/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/stukadoor/template.default.html",
-          "canonical": "{{url}}"
-        },
-        {
-          "path": "templates/clusters/loodgieter/template.default.html",
-          "canonical": "{{url}}"
         }
       ]
     },
     "4_lang_attr": {
-      "pages_checked": 75887,
+      "pages_checked": 75876,
       "violations": 0,
       "examples": []
     },
     "5_jsonld": {
-      "blocks_checked": 173036,
+      "blocks_checked": 173066,
       "violations": 0,
       "examples": []
     },
     "6_internal_links": {
       "mode": "steekproef: homepage + index.html van elke top-level clustermap",
       "pages_sampled": 86,
-      "links_checked": 4000,
-      "violations": 30,
-      "examples": [
-        {
-          "page": "index.html",
-          "href": "/renovatiekosten/badkamer/"
-        },
-        {
-          "page": "index.html",
-          "href": "/renovatiekosten/gietvloer/"
-        },
-        {
-          "page": "index.html",
-          "href": "/renovatiekosten/dakkapel/"
-        },
-        {
-          "page": "index.html",
-          "href": "/offerte-check/schilder/"
-        },
-        {
-          "page": "index.html",
-          "href": "/offerte-check/gietvloer/"
-        },
-        {
-          "page": "index.html",
-          "href": "/offerte-check/badkamer/"
-        },
-        {
-          "page": "badkamer-renoveren/index.html",
-          "href": "/privacybeleid/"
-        },
-        {
-          "page": "badkamer-renoveren/index.html",
-          "href": "/contact/"
-        },
-        {
-          "page": "bouwkundige-keuring/index.html",
-          "href": "/offerte-check/aannemer/"
-        },
-        {
-          "page": "interieur-woning/index.html",
-          "href": "/offerte-check/schilder/"
-        },
-        {
-          "page": "interieur-woning/index.html",
-          "href": "/offerte-check/gietvloer/"
-        },
-        {
-          "page": "interieur-woning/index.html",
-          "href": "/offerte-check/badkamer/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/schilder/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/gietvloer/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/badkamer/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/aannemer/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/elektricien/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/loodgieter/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/stukadoor/"
-        },
-        {
-          "page": "offerte-check/index.html",
-          "href": "/offerte-check/dakkapel/"
-        },
-        {
-          "page": "oplevering-nieuwbouw/index.html",
-          "href": "/contact/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/badkamer/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/keuken/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/gietvloer/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/schilderwerk/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/dakkapel/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/aanbouw/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/zonnepanelen/"
-        },
-        {
-          "page": "renovatiekosten/index.html",
-          "href": "/renovatiekosten/warmtepomp/"
-        },
-        {
-          "page": "tuin-aanleggen/index.html",
-          "href": "/contact/"
-        }
-      ]
+      "links_checked": 3997,
+      "violations": 0,
+      "examples": []
     }
   },
-  "runtime_seconds": 4.7
+  "runtime_seconds": 4.3
 }
