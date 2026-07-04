@@ -13,12 +13,7 @@ export const metadata: Metadata = {
 
 export default function PrijzenPage() {
   return (
-    <main style={{ maxWidth: 760, margin: '0 auto', padding: '48px 24px', fontFamily: 'system-ui, sans-serif', color: '#1A1208' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 40 }}>
-        <span style={{ width: 36, height: 36, background: '#3D5A3E', borderRadius: 9, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#F5F0E8', fontWeight: 700 }}>B.</span>
-        <span style={{ fontWeight: 700, fontSize: 18 }}>Bylder<span style={{ color: '#3D5A3E' }}>.com</span></span>
-      </div>
-
+    <main style={{ maxWidth: 760, margin: '0 auto', padding: '48px 24px', color: '#1A1208' }}>
       <h1 style={{ fontSize: '2rem', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: 12 }}>Prijzen</h1>
       <p style={{ fontSize: 16, color: 'rgba(61,46,30,0.65)', lineHeight: 1.7, marginBottom: 28 }}>
         Bylder kost <strong>€99 eenmalig</strong> — geen abonnement, levenslang toegang voor jouw woning. Leden besparen gemiddeld <strong>€4.200</strong>.
