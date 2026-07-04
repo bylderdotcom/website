@@ -3,9 +3,13 @@
 Branch: `next-migration` · niet gepusht, niet gedeployed. Elke pagina is een
 aparte commit. Na elke pagina: `web/build.sh` + `python3 scripts/check_site_invariants.py web/out`
 → **0 overtredingen gehouden** op ~75,6k pagina's. Niet-gemigreerde pagina's
-(incl. de homepage) zijn geverifieerd **byte-identiek** gebleven.
+zijn geverifieerd **byte-identiek** gebleven.
 
-## Wat is geport (5 pagina's, klaar)
+**Status: alle 6 marketing-pagina's geport (incl. homepage).** Fonts + gtag +
+top-witruimte-tuning centraal geregeld. Alles interactief geverifieerd in de
+preview (desktop + mobiel). Zie onderaan wat nog rest richting deploy.
+
+## Wat is geport (6 pagina's, klaar)
 
 | Route | Bron | Bijzonderheden | Commit |
 |---|---|---|---|
@@ -14,6 +18,7 @@ aparte commit. Na elke pagina: `web/build.sh` + `python3 scripts/check_site_inva
 | `/vouchers/` | `vouchers/index.html` | 18 merk-tegels (3 secties), FAQ-accordion als `'use client'`, Phosphor-iconen, `/auping-popup.js`. | `70af264` |
 | `/functies/` | `functies/index.html` | Woningtype-toggle + `#hash`-preselectie in `FunctiesClient` (`'use client'`), 25 functie-kaarten. | `87d8210` |
 | `/kortingscode/` | `kortingscode/index.html` | Data-hub: 522 merk-tegels / 35 categorieën, byte-getrouw via `dangerouslySetInnerHTML` (`mainHtml.ts`). | `0b885cd` |
+| `/` (homepage) | `index.html` | Zwaarste: 2173 regels, 13 scripts. Body byte-getrouw via `dangerouslySetInnerHTML` (`homeHtml.ts`); inline scripts herbedraad in `HomeClient` useEffect (typewriter, woningtype-toggle, keuze-knoppen, hpCalc, auping-popup). Tailwind via Play-CDN + merk-config; FA + Phosphor icon-fonts; 3× JSON-LD; hreflang nl/en/x-default. | `e69ab77` |
 
 ### Aanpak-principes (consistent toegepast)
 - **Chrome uit de gedeelde layout.** De oude in-page nav én de pagina-eigen
@@ -34,55 +39,39 @@ aparte commit. Na elke pagina: `web/build.sh` + `python3 scripts/check_site_inva
   alleen eigen classes (`container`/`grid-cards`/`brandcard`) — géén Tailwind — dus
   de Tailwind-CDN uit de bron was niet nodig. Geen eigen JS op die hub.
 
-## Al opgelost ná de 5 ports (commit `0423f1b`)
+## Al opgelost ná de eerste 5 ports
 
-- **✅ Fonts (Plus Jakarta Sans + Space Mono) + `gtag` in de gedeelde layout.**
-  Fonts via Google Fonts (weight-superset van alle losse pagina's), `gtag` via
-  `next/script` (afterInteractive). Body-font is nu Plus Jakarta Sans i.p.v.
-  system-ui → alle 6 Next-routes hebben dezelfde typografie als de live-site en de
-  analytics valt niet meer weg. Geverifieerd in preview: beide webfonts laden echt,
-  `window.gtag` actief, invarianten 0, niet-gemigreerde pagina's byte-identiek.
+- **✅ Fonts (Plus Jakarta Sans + Space Mono) + `gtag` in de gedeelde layout**
+  (`0423f1b`). Body-font nu Plus Jakarta Sans i.p.v. system-ui → alle Next-routes
+  hebben dezelfde typografie als de live-site en de analytics valt niet meer weg.
+  Geverifieerd: webfonts laden echt, `window.gtag` actief.
+- **✅ Homepage (`/`) geport** (`e69ab77`) — zie tabel hierboven. Was eerder bewust
+  overgeslagen als té risicovol voor een *onbewaakte* sessie; met de gebruiker erbij
+  (expliciet groen licht) alsnog gedaan mét zware preview-verificatie als QA:
+  Tailwind stijlt (Play-CDN + merk-config, 14 kleuren), typewriter animeert + cycelt,
+  keuze-knoppen / woningtype-toggle / hpCalc-calculator (€400k → depot €20.000,
+  totaal €456.000) werken, auping-popup vuurt na 4s + sluit (backdrop + swipe), geen
+  console-errors. Aanpak = body byte-getrouw injecteren + inline scripts herbedraad in
+  één `HomeClient` useEffect (globale onclick-functies op `window`).
+- **✅ Top-witruimte bijgesteld** (`1098477`) — de bron rekende op een `position:fixed`
+  nav (~64px) en padde de top fors; de gedeelde Nav is `sticky` (neemt eigen ruimte).
+  Paddings met ~nav-hoogte verlaagd zodat de gap de live-site matcht: vouchers/functies
+  hero 120→56px, kortingscode-breadcrumb 72→8px. Gemeten in preview (gap nav→h1 nu 51–77px).
+- **✅ Desktop-klikronde** — op 1280px geverifieerd: nav-dropdown "Voor wie? ▾" opent
+  met 3 items, vouchers-FAQ toggelt, functies-woningtype-toggle wisselt.
 
-## Voor de ochtend visueel nakijken (functioneel groen, maar oog erop)
+## Nog voor later (bewust niet nu)
 
-1. **Top-witruimte (sticky vs. fixed nav).** De bronpagina's rekenden op een
-   `position:fixed` nav en compenseerden met veel `padding-top` (bv. hero
-   `120px`, kortingscode-breadcrumb `72px`). De gedeelde Nav is `sticky` (neemt
-   eigen ruimte). Getrouw overgenomen → iets extra witruimte bovenaan. Cosmetisch;
-   even bekijken of het strak genoeg oogt, evt. paddings licht bijstellen.
-2. **Icoon-strategie.** vouchers/functies laden de Phosphor-iconfonts van unpkg
-   (zoals de bron). Standing order wil op termijn lijn-iconen via een gedeelde
-   `icons`-component (Fase 4) i.p.v. externe iconfont — nu getrouw gelaten.
-3. **Snelle klik-ronde** op desktop-breedte (preview-viewport was smal, dus de Nav
-   toonde de mobiele burger): dropdown "Voor wie? ▾", vouchers-FAQ, functies-toggle.
-
-## Overgeslagen — bewust, met reden
-
-**HOMEPAGE (`/`) — NIET geport.** Conform de opdracht (homepage alleen als 1–5
-schoon zijn én getrouwe onbewaakte reproductie niet te risicovol is; anders
-overslaan i.p.v. half doen).
-
-Waarom te risicovol voor een onbewaakte sessie:
-- **2173 regels / 187 KB, 13 `<script>`-blokken** met custom **Typewriter**,
-  **modals**, **keuze-knoppen**, **2 marquees**, `localStorage`, dropdown — elk
-  moet naar zorgvuldige `'use client'`-logica. De `dangerouslySetInnerHTML`-truc
-  die `kortingscode` redde werkt hier niet: geïnjecteerde `<script>`s draaien niet
-  en de interactie moet echt herbedraad worden.
-- **Twee iconensets tegelijk** (Font Awesome **én** Phosphor) + **zware
-  Tailwind-CDN**-afhankelijkheid door de hele markup (niet nav-only zoals bij
-  kortingscode).
-- **Merk-kritische voordeur**, recent nog volop iteratief gewijzigd (storytelling
-  fase 1–3, klantcijfer-consistentie, 3D+vouchers-herordening). Subtiele breuk hier
-  = direct merkschade en niet vangbaar door de invarianten-checker (die controleert
-  geen animaties/interactie/visuele pariteit).
-
-Aanbevolen vervolg (bewaakte sessie, sterkste model + menselijke visuele QA):
-1. Homepage opdelen in secties; statische secties als server-component, elk
-   interactief blok als eigen `'use client'`-component (Typewriter, modals,
-   keuze-knoppen, marquees).
-2. Tailwind niet via runtime-CDN maar echte Tailwind in de build óf de utilities
-   naar inline/CSS omzetten; iconen consolideren.
-3. Naast invarianten: expliciete visuele diff + interactie-checklist vóór merge.
+- **Icoon-strategie.** vouchers/functies/homepage laden Phosphor (+ homepage ook
+  Font Awesome) van CDN, zoals de bron. Standing order wil op termijn lijn-iconen via
+  een gedeelde `icons`-component (Fase 4) i.p.v. externe iconfonts — nu getrouw gelaten.
+- **Tailwind runtime-CDN op de homepage.** De homepage-body leunt op de Tailwind
+  Play-CDN (runtime JIT), net als de bron. Werkt, maar geeft een korte FOUC vóór de
+  CDN geladen is en is niet ideaal voor productie. Fase 4: echte Tailwind in de build
+  (of utilities → CSS) zodat de styling in de statische output zit i.p.v. runtime.
+- **Homepage-min-h-screen hero.** De hero is een volle-hoogte, verticaal-gecentreerde
+  hero (`min-h-screen` + flex) — bewust byte-getrouw gelaten. Fijn-tunen van die
+  hoogte t.o.v. de sticky nav kan mee in de Fase-4 design-systeem-slag.
 
 ## Repo-status / losse eindjes
 - Werkboom-wijzigingen die **niet** van deze taak zijn (stonden al bij sessiestart):
