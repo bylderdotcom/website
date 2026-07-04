@@ -60,6 +60,42 @@ preview (desktop + mobiel). Zie onderaan wat nog rest richting deploy.
 - **✅ Desktop-klikronde** — op 1280px geverifieerd: nav-dropdown "Voor wie? ▾" opent
   met 3 items, vouchers-FAQ toggelt, functies-woningtype-toggle wisselt.
 
+## Fase 2 — data-gedreven clusters (gestart)
+
+**✅ `/bouwvergunning/` (25 pagina's) geport** (`96f84f7`) — eerste data-gedreven
+pagina-type. De renderlaag migreert, de datalaag blijft: `web/lib/bouwvergunning.ts`
+leest op build-time de canonieke bron (`data/clusters/bouwvergunning/pages.json` +
+content-fragmenten + gedeelde `templates/clusters/.../`-CSS + aside-varianten) en
+resolvet per pagina de `<main>` (content + `{{aside}}`) net als de Python
+`render_page`. Route = `page.tsx` (index) + `[slug]/page.tsx` (24,
+`generateStaticParams`). Metadata uit pages.json (entities gedecodeerd → geen
+dubbel-encoding), JSON-LD 1-op-1. Geverifieerd: 25/25 Next-gerenderd, aside
+project+thema resolven, geen console-errors, invarianten 0.
+
+> NB: bouwvergunning wordt nu Next-gerenderd i.p.v. `generate_cluster.py`; die
+> byte-pariteit-check is voor dít cluster niet meer representatief (Python-
+> renderlaag verdwijnt sowieso in Fase 3).
+
+### Cluster-landschap (roadmap voor de rest van Fase 2)
+Twee vormen — bouwvergunning was bewust de simpelste (1 fragment per pagina).
+De rest vraagt cluster-specifieke templating en dus **aparte, gerichte sessies**:
+
+| Cluster | Pagina's | Vorm |
+|---|---|---|
+| ✅ bouwvergunning | 25 | **simpel** — 1 content-fragment per pagina (gedaan) |
+| offerte-check / renovatiekosten | 2.257 elk | content-getemplated (9 fragmenten → veel pagina's) |
+| aannemer-matching | 2.821 | content-getemplated (11 fragmenten) |
+| project | 5.641 | content-getemplated (21 fragmenten) |
+| kopen | 33.014 | content-getemplated (137 fragmenten) — grootste |
+| gietvloer, dakkapel, badkamer, aannemer, elektricien, loodgieter, schilder, stukadoor | 657 – 5.761 | **city + bedrijf** (`cities.json` + `bedrijven.json` + card/row-fragmenten); zwaarste templating |
+
+Aanpak per volgende cluster: `web/lib/<cluster>.ts` volgens hetzelfde patroon,
+maar de city/bedrijf-clusters vereisen het porten van de stad-/bedrijf-render­logica
+uit `generate_cluster.py` (`render_city_content`, `render_bedrijf_content`,
+card_slots, contact/rating-rows). De `web/lib/bouwvergunning.ts` + `RenderCluster`
+zijn de blauwdruk voor de simpele laag; generaliseren naar één `cluster.ts`-fabriek
+loont zodra de tweede simpele/getemplate cluster erbij komt.
+
 ## Nog voor later (bewust niet nu)
 
 - **Icoon-strategie.** vouchers/functies/homepage laden Phosphor (+ homepage ook
