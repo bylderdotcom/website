@@ -18,7 +18,7 @@ const CSS = `
 .fn-root .btn{background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
 .fn-root .btn:hover{background:#4E7350}
 .fn-root .btn-ghost{background:#fff;color:var(--bark);border:1.5px solid rgba(61,46,30,.14)}
-.fn-root .hero{padding:120px 0 30px;text-align:center}
+.fn-root .hero{padding:56px 0 30px;text-align:center}
 .fn-root .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;color:var(--bark);letter-spacing:-.03em;line-height:1.1}
 .fn-root .hero h1 .it{color:var(--moss);font-style:italic;font-weight:300}
 .fn-root .hero p{font-size:16px;color:var(--bark-3);max-width:620px;margin:16px auto 0;line-height:1.6}

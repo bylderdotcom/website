@@ -129,7 +129,7 @@ const CSS = `
 .vc-main .s-label{font-size:11px;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.12em;color:var(--moss);font-weight:700;margin-bottom:10px}
 .vc-main .s-title{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:var(--bark);letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px}
 .vc-main .s-sub{font-size:17px;color:var(--bark-3);line-height:1.65;max-width:580px}
-.vc-main .hero{padding:120px 0 72px;text-align:center}
+.vc-main .hero{padding:56px 0 72px;text-align:center}
 .vc-main .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--gold);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:20px}
 .vc-main .hero h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:800;color:var(--bark);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px}
 .vc-main .hero h1 em{color:var(--moss);font-style:normal}
