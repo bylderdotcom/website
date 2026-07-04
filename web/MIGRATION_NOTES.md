@@ -34,28 +34,26 @@ aparte commit. Na elke pagina: `web/build.sh` + `python3 scripts/check_site_inva
   alleen eigen classes (`container`/`grid-cards`/`brandcard`) — géén Tailwind — dus
   de Tailwind-CDN uit de bron was niet nodig. Geen eigen JS op die hub.
 
+## Al opgelost ná de 5 ports (commit `0423f1b`)
+
+- **✅ Fonts (Plus Jakarta Sans + Space Mono) + `gtag` in de gedeelde layout.**
+  Fonts via Google Fonts (weight-superset van alle losse pagina's), `gtag` via
+  `next/script` (afterInteractive). Body-font is nu Plus Jakarta Sans i.p.v.
+  system-ui → alle 6 Next-routes hebben dezelfde typografie als de live-site en de
+  analytics valt niet meer weg. Geverifieerd in preview: beide webfonts laden echt,
+  `window.gtag` actief, invarianten 0, niet-gemigreerde pagina's byte-identiek.
+
 ## Voor de ochtend visueel nakijken (functioneel groen, maar oog erop)
 
-1. **Lettertype-verschil (alle 5).** De gedeelde layout gebruikt `system-ui`; de
-   bron gebruikt **Plus Jakarta Sans + Space Mono** (Google Fonts). Bewust niet in
-   de layout gezet — zelfde lijn als de al-gemigreerde `/prijzen/` (Fase 0). Visueel
-   iets ander lettertype dan de live-site. **Beslissing nodig:** fonts globaal in de
-   layout laden (verbetert álle gemigreerde pagina's ineen) vs. bewaren voor Fase 4
-   (design-systeem). Mijn advies: fonts + `gtag` in de layout is een losse, kleine
-   vervolgstap die de hele gemigreerde set in één klap getrouwer maakt.
-2. **`gtag` (Google Analytics) ontbreekt (alle 5).** Zit in elke bron-pagina, niet
-   in de gedeelde layout (net als `/prijzen/`). Op de niet-gedeployde branch geen
-   dataverlies, maar vóór livegang moet `gtag` in de layout — anders analytics-gat
-   op gemigreerde pagina's. Zie punt 1: samen oppakken.
-3. **Top-witruimte (sticky vs. fixed nav).** De bronpagina's rekenden op een
+1. **Top-witruimte (sticky vs. fixed nav).** De bronpagina's rekenden op een
    `position:fixed` nav en compenseerden met veel `padding-top` (bv. hero
    `120px`, kortingscode-breadcrumb `72px`). De gedeelde Nav is `sticky` (neemt
    eigen ruimte). Getrouw overgenomen → iets extra witruimte bovenaan. Cosmetisch;
    even bekijken of het strak genoeg oogt, evt. paddings licht bijstellen.
-4. **Icoon-strategie.** vouchers/functies laden de Phosphor-iconfonts van unpkg
+2. **Icoon-strategie.** vouchers/functies laden de Phosphor-iconfonts van unpkg
    (zoals de bron). Standing order wil op termijn lijn-iconen via een gedeelde
    `icons`-component (Fase 4) i.p.v. externe iconfont — nu getrouw gelaten.
-5. **Snelle klik-ronde** op desktop-breedte (preview-viewport was smal, dus de Nav
+3. **Snelle klik-ronde** op desktop-breedte (preview-viewport was smal, dus de Nav
    toonde de mobiele burger): dropdown "Voor wie? ▾", vouchers-FAQ, functies-toggle.
 
 ## Overgeslagen — bewust, met reden
