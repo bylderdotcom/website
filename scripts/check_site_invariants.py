@@ -23,9 +23,13 @@ import time
 from concurrent.futures import ProcessPoolExecutor
 from urllib.parse import unquote, urlsplit
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Optioneel eerste CLI-argument = de te checken map (bv. de Next-build-output `web/out`).
+# Zonder argument = de repo-root (standaardgedrag, ongewijzigd).
+_SCRIPT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else _SCRIPT_ROOT
 HOST = "https://www.bylder.com"
-REPORT_PATH = os.path.join(ROOT, "reports", "site-invariants.json")
+# Rapport landt altijd in de repo, ongeacht welke map we checken.
+REPORT_PATH = os.path.join(_SCRIPT_ROOT, "reports", "site-invariants.json")
 EXAMPLES_SHOWN = 20
 
 # Mappen die geen publieke site-content zijn.

@@ -18,3 +18,10 @@ __pycache__/
 
 # Gescrapete winkel-e-mails (persoonsgegevens) — niet in git
 data/winkels_*.json
+
+# Next.js (web/) — Fase 0 migratie
+web/node_modules/
+web/.next/
+web/out/
+web/next-env.d.ts
+web/tsconfig.tsbuildinfo
