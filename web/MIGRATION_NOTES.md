@@ -84,18 +84,30 @@ gedeelde `content.vakstad.<type>.<variant>.html`-templates en vult per pagina
 `render_vakstad_content`). Hubs laden hun self-contained fragment; per-pagina
 head-`<style>` via het shell-veld (default/v2/v3). Route = één optionele catch-all
 `[[...slug]]` voor index + hub + vakstad. Geverifieerd: 5.641/5.641 Next, 0 onvervulde
-placeholders, city+provincie correct, invarianten 0, build ~7s. **Dit patroon drijft
-ook `/kopen/` (33k) aan → dat is nu "meer van hetzelfde op schaal".**
+placeholders, city+provincie correct, invarianten 0, build ~7s. Dit patroon
+bleek direct herbruikbaar voor het grootste cluster:
+
+**✅ `/kopen/` (33.014 pagina's, grootste cluster van de site) geport** (`4141e09`)
+— directe clone van `web/lib/project.ts` naar `web/lib/kopen.ts`, met twee
+verschillen: slug is 3 niveaus diep (categorie/subcategorie/gemeente i.p.v.
+type/gemeente) en hub-content-fragmenten gebruiken `__` i.p.v. `/` in de
+bestandsnaam (`binnendeuren__glazen-binnendeur.html`). 4 shell-varianten
+(default/v2/v3/v4) i.p.v. 3. Route = dezelfde optionele-catch-all-vorm als
+project. Geverifieerd: 33.014/33.014 Next, 0 onvervulde placeholders (steekproef
+500), depth-3 breadcrumb + stad/provincie correct, alle hub-shell-varianten eigen
+CSS, invarianten 0. **Samen met bouwvergunning + project: 38.689 Next-pagina's,
+build ~2:51.**
 
 ### Cluster-landschap (roadmap voor de rest van Fase 2)
-Drie vormen. Klaar: bouwvergunning (simpel 1:1) + project (vakstad). Sortering op
-**geïndexeerde** pagina's (= live SEO-waarde), niet ruwe count:
+Drie vormen. **Vakstad-laag nu compleet** (bouwvergunning simpel 1:1 + project +
+kopen vakstad — samen alle grote geïndexeerde marketing/SEO-clusters buiten de
+lokale-acquisitie-laag). Sortering op **geïndexeerde** pagina's (= live SEO-waarde):
 
 | Cluster | Pagina's | Geïndexeerd | Vorm | Status |
 |---|---|---|---|---|
 | bouwvergunning | 25 | 25 | simpel (1 frag/pagina) | ✅ |
-| project | 5.641 | 5.641 | **vakstad** (type × gemeente) | ✅ |
-| **kopen** | 33.014 | 33.014 | **vakstad** (subcat × gemeente, depth 3) | ⭐ volgende — zelfde patroon als project |
+| project | 5.641 | 5.641 | vakstad (type × gemeente) | ✅ |
+| kopen | 33.014 | 33.014 | vakstad (cat × subcat × gemeente, depth 3) | ✅ |
 | loodgieter | 5.391 | 3.516 | city + bedrijf | open |
 | aannemer | 4.717 | 2.682 | city + bedrijf | open |
 | schilder | 5.761 | 2.553 | city + bedrijf | open |
@@ -107,16 +119,18 @@ Drie vormen. Klaar: bouwvergunning (simpel 1:1) + project (vakstad). Sortering o
 | kortingscode (subpagina's) | 523 | 523 | simpel 1:1 (hub al apart geport) | open |
 | offerte-check / renovatiekosten / aannemer-matching | ~2.257 / 2.821 | **~0% (noindex-gated)** | vakstad, dun | later (weinig SEO-waarde nu) |
 
-**Volgende:** `kopen` (grootste live-SEO-oppervlak, zelfde vakstad-mechanisme als
-project — `web/lib/kopen.ts` clonen; let op `depth:3` in `VAKSTAD_CLUSTERS`, dus
-slug = `subcat/subsub/stad`, en de eigen FOOTER_SLOTS/og-velden). Daarna de
-**city+bedrijf**-laag (lokale-acquisitie-monetisatie): begin met `gietvloer`
-(kleinste); dat vereist het porten van `render_city_content`/`render_bedrijf_content`
-+ card_slots + contact/rating-rows uit `generate_cluster.py`.
+**Volgende:** de **city+bedrijf**-laag (lokale-acquisitie-monetisatie, ~16k
+geïndexeerd samen). Begin met `gietvloer` (kleinste) — dit is een échte nieuwe
+render-vorm, geen clone: vereist het porten van
+`render_city_content`/`render_bedrijf_content` + card_slots + contact/rating-rows
+uit `generate_cluster.py` (bedrijfsprofielen + kaarten i.p.v. tekst-substitutie).
+Aanbevolen op het sterkste model (nieuw patroon), daarna de overige 7 clusters op
+Sonnet clonen — zelfde volgorde als vakstad (project op Opus-niveau uitgedacht,
+kopen daarna mechanisch op Sonnet).
 
-`web/lib/bouwvergunning.ts` (simpel) + `web/lib/project.ts` (vakstad) zijn de
-blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek loont zodra kopen +
-een eerste city/bedrijf-cluster er zijn (dan zijn alle drie de vormen bekend).
+`web/lib/bouwvergunning.ts` (simpel) + `web/lib/project.ts`/`kopen.ts` (vakstad)
+zijn de blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek loont zodra
+er een eerste city/bedrijf-cluster is (dan zijn alle drie de vormen bekend).
 
 ## Nog voor later (bewust niet nu)
 
