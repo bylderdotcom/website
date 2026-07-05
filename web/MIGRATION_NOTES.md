@@ -158,9 +158,9 @@ SEO-waarde):
 | project | 5.641 | 5.641 | vakstad (type × gemeente) | ✅ |
 | kopen | 33.014 | 33.014 | vakstad (cat × subcat × gemeente, depth 3) | ✅ |
 | gietvloer | 657 | 479 | city + bedrijf | ✅ |
-| loodgieter | 5.391 | 3.516 | **city + bedrijf** | ✅ |
-| aannemer | 4.717 | 2.682 | city + bedrijf | ⭐ volgende — clone van loodgieter/gietvloer |
-| schilder | 5.761 | 2.553 | city + bedrijf | open |
+| loodgieter | 5.391 | 3.516 | city + bedrijf | ✅ |
+| aannemer | 4.717 | 2.682 | **city + bedrijf** | ✅ |
+| schilder | 5.761 | 2.553 | city + bedrijf | ⭐ volgende — clone van gietvloer/loodgieter/aannemer |
 | elektricien | 3.886 | 2.428 | city + bedrijf | open |
 | badkamer | 2.359 | 1.978 | city + bedrijf | open |
 | stukadoor | 3.389 | 1.499 | city + bedrijf | open |
@@ -180,24 +180,38 @@ byte-identiek aan gietvloer en hergebruikt. Disclaimer-tekst aangepast per clust
 (steekproef 300), v4-kaart (rating+prijsniveau+maps_cid_href) correct, calculator
 correct bij laden én wijziging, invarianten 0.
 
-**Volgende:** de resterende 6 city+bedrijf-clusters (aannemer/schilder/elektricien/
-badkamer/stukadoor/dakkapel) zijn **mechanisch te clonen** van `gietvloer.ts` of
-`loodgieter.ts` — dezelfde soort overgang als project→kopen. Checklist per cluster
-(uit de gietvloer→loodgieter-ervaring): (1) `city_alt`/`name_alt` (alternatieve
-spelling) — nog geen van beide gezien, maar blijf checken (`replace_spellings` in
-`generate_cluster.py`); (2) `maps_href` vs `maps_cid_href` — verschilt per cluster,
-geef beide generiek door; (3) extra card-/tile-vormen naast rated/unrated (loodgieter
-had v3/v4) — `card.${shape}.html` leest ze automatisch, alleen typen als `string`
-i.p.v. vaste union; (4) de exacte inline-scripts (calculator-vorm + sorteer-dropdown)
-kunnen per cluster verschillen (gietvloer rekende per m², loodgieter per vaste klus)
-— altijd het content.city-fragment nalezen vóór je `InteractiveScripts` kopieert;
-(5) de exacte disclaimer-tekst per cluster-footer. Begin met `aannemer` (grootste
-geïndexeerd van de resterende 6, 2.682).
+**✅ `/aannemer/` (4.717 pagina's) geport** (`8c51f97`, **lokaal gecommit, nog niet
+gepusht/gedeployed**) — clone van `web/lib/gietvloer.ts`: gebruikt overal
+`{{maps_href}}` (zoals gietvloer), kaart-vormen alleen rated/unrated (geen v3/v4).
+Eén bedrijf-entry mist `city`/`city_slug` (Bouwbedrijf Van der Werff, contentvariant
+v15) — die variant bevat de placeholders dan ook niet, de generieke aanpak dekt dit
+zonder speciale code; de brontitel had zelf al een neutrale "in Nederland"-fallback.
+Calculator heeft de loodgieter-vorm (vaste prijs per project, geen m², berekent bij
+laden); sorteer-dropdown byte-identiek hergebruikt. Disclaimer aangepast ("geen
+aannemersbedrijf"). Geverifieerd: 4.717/4.717 Next, 0 placeholders (steekproef 300),
+stadspagina + city-loze bedrijfspagina beide correct (incl. 3-niveaus-breadcrumb
+zonder stad), calculator correct bij laden én wijziging, invarianten 0.
+
+**Volgende:** de resterende 5 city+bedrijf-clusters (schilder/elektricien/badkamer/
+stukadoor/dakkapel) zijn **mechanisch te clonen** van `gietvloer.ts`/`loodgieter.ts`/
+`aannemer.ts` — dezelfde soort overgang als project→kopen. Checklist per cluster (nu
+3× bevestigd bruikbaar): (1) `city_alt`/`name_alt` (alternatieve spelling) — nog geen
+van beide gezien, maar blijf checken (`replace_spellings` in `generate_cluster.py`);
+(2) `maps_href` vs `maps_cid_href` — verschilt per cluster, geef beide generiek door;
+(3) extra card-/tile-vormen naast rated/unrated (loodgieter had v3/v4) — `card.${shape}.html`
+leest ze automatisch, alleen typen als `string` i.p.v. vaste union; (4) de exacte
+inline-scripts (calculator-vorm + sorteer-dropdown) verschillen per cluster (gietvloer
+rekende per m², loodgieter/aannemer per vaste prijs+berekenen-bij-laden) — altijd het
+content.city-fragment nalezen vóór je `InteractiveScripts` kopieert; (5) de exacte
+disclaimer-tekst per cluster-footer; (6) check of een bedrijf-entry velden kan missen
+(zoals aannemer's city-loze entry) — de generieke fillPlaceholders-aanpak dekt dit al,
+gewoon even bevestigen. Begin met `schilder` (grootste geïndexeerd van de resterende
+5, 2.553).
 
 `web/lib/bouwvergunning.ts` (simpel), `web/lib/project.ts`/`kopen.ts` (vakstad),
-`web/lib/gietvloer.ts`/`loodgieter.ts` (city+bedrijf, 2 voorbeelden) zijn nu de
-blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek per vorm kan vanaf hier
-overwogen worden — na 2 city+bedrijf-clusters is het variatiepatroon (maps-veld,
+`web/lib/gietvloer.ts`/`loodgieter.ts`/`aannemer.ts` (city+bedrijf, 3 voorbeelden)
+zijn nu de blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek per vorm kan vanaf hier
+overwogen worden — na 3 city+bedrijf-clusters is het variatiepatroon (maps-veld,
 card-vormen, calculator-vorm) bekend genoeg om te weten wat generiek kan en wat
 per cluster blijft verschillen.
 
