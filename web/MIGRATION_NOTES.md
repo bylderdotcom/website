@@ -19,14 +19,15 @@ invarianten 0 overtredingen. Zie ook het geheugenbestand
 `bug-nextjs-static-export-rsc-txt-bloat.md` (Claude-geheugen, niet in deze
 repo) voor de bredere les over Vercel-build-images.
 
-**Nog steeds niet vanuit deze sessie te volgen/bevestigen** (geen Vercel-
-dashboardtoegang): of de HERSTELDE deploy nu wél slaagt. Controleer
-handmatig: Vercel-dashboard → Deployments (bouwt 'ie, en slaagt de build
-binnen de 45-min-limiet?) en spend/billing (status quo t.o.v. de eerder
-genoteerde spend-limit-waarschuwing). Bezoek ook een paar live pagina's
-(homepage, een `/kopen/.../` en `/loodgieter/.../`-pagina) om te bevestigen
-dat de nieuwe build daadwerkelijk live staat en dat de `/api/`-betaalroutes
-(Stripe/PayNL) nog werken.
+**✅ Tweede deploy-poging (na de rsync→cp-fix) is geslaagd — bevestigd door
+Daniel.** De volledige Fase 1B + Fase 2-migratie (homepage + 5 marketing-
+pagina's + 5 data-gedreven clusters, ~45k pagina's) staat live op
+bylder.com. `next-migration` is nu volledig verwerkt in `main`/`origin/main`.
+
+Nog niet apart geverifieerd (lage urgentie, geen aanwijzing voor problemen):
+een expliciete spot-check van de `/api/`-betaalroutes (Stripe/PayNL) op de
+live site — de deploy zelf is gelukt, dus dit is een "voor de zekerheid"-
+check, geen open risico.
 
 Vóór de merge: elke pagina/cluster was een aparte commit. Na elke stap:
 `web/build.sh` + `python3 scripts/check_site_invariants.py web/out` →
