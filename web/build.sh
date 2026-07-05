@@ -22,13 +22,18 @@ find ./out -name "*.txt" -delete
 echo "▸ 3/3  overlay bestaande statische site (Next-pagina's blijven behouden)"
 # --ignore-existing: bestanden die Next al genereerde worden NIET overschreven,
 # dus de door Next gerenderde /prijzen/ blijft staan; al het andere komt van de
-# bestaande site. Dev-/bron-mappen worden uitgesloten.
+# bestaande site. Dev-/bron-mappen worden uitgesloten. api/ NIET meekopiëren:
+# Vercel detecteert serverless functions altijd op basis van de repo-root
+# /api/-map, ongeacht outputDirectory — een statische kopie van die .js-bestanden
+# in web/out/api/ voegt niks toe, lekt broncode van de betaalroutes als platte
+# tekst, en kan de echte functie-routing in de weg zitten.
 rsync -a --ignore-existing \
   --exclude '.git' --exclude 'web' --exclude 'node_modules' \
   --exclude '__pycache__' --exclude 'data' --exclude 'scripts' \
   --exclude '_scripts' --exclude '_audits' --exclude 'reports' \
   --exclude '.claude' --exclude 'out' --exclude '.next' \
   --exclude '*.py' --exclude '*.pyc' \
+  --exclude 'api' --exclude '.vercel' --exclude 'supabase' \
   "$ROOT"/ ./out/
 
 echo "✓ klaar — web/out bevat de volledige site (Next + bestaand)"
