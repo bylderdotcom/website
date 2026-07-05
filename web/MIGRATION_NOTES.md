@@ -1,13 +1,31 @@
-# Migratie-notities — Fase 1 deel B (marketing-pagina's → Next-routes)
+# Migratie-notities — Fase 1 deel B + Fase 2 (marketing-pagina's + clusters → Next)
 
-Branch: `next-migration` · niet gepusht, niet gedeployed. Elke pagina is een
-aparte commit. Na elke pagina: `web/build.sh` + `python3 scripts/check_site_invariants.py web/out`
-→ **0 overtredingen gehouden** op ~75,6k pagina's. Niet-gemigreerde pagina's
-zijn geverifieerd **byte-identiek** gebleven.
+**✅ 2026-07-05: `next-migration` gemerged (fast-forward) naar `main` en
+gepusht naar `origin/main` (commit `34d087d795f`).** Vercel's git-integratie
+zou hierop automatisch een productie-build/-deploy moeten triggeren — **dit
+is niet vanuit deze sessie te volgen of te bevestigen** (geen Vercel-
+dashboardtoegang). Controleer handmatig: Vercel-dashboard → Deployments
+(bouwt 'ie, en slaagt de build binnen de 45-min-limiet?) en spend/billing
+(status quo t.o.v. de eerder genoteerde spend-limit-waarschuwing). Bezoek
+ook een paar live pagina's (homepage, een `/kopen/.../` en `/loodgieter/.../`
+pagina) om te bevestigen dat de nieuwe build daadwerkelijk live staat en dat
+de `/api/`-betaalroutes (Stripe/PayNL) nog werken.
 
-**Status: alle 6 marketing-pagina's geport (incl. homepage).** Fonts + gtag +
-top-witruimte-tuning centraal geregeld. Alles interactief geverifieerd in de
-preview (desktop + mobiel). Zie onderaan wat nog rest richting deploy.
+Vóór de merge: elke pagina/cluster was een aparte commit. Na elke stap:
+`web/build.sh` + `python3 scripts/check_site_invariants.py web/out` →
+**0 overtredingen** op de volledige site. Niet-gemigreerde pagina's zijn
+telkens geverifieerd **byte-identiek** gebleven.
+
+**Status vóór deploy: alle 6 marketing-pagina's (incl. homepage) + 5
+data-gedreven clusters (bouwvergunning/project/kopen/gietvloer/loodgieter,
+~45k pagina's) geport.** Fonts + gtag + top-witruimte centraal geregeld.
+Vercel-build-config (`vercel.json`) ingericht: `web/build.sh` als
+buildCommand, `web/out` als outputDirectory, bestaande 36 redirects/2
+rewrites/1 headers-blok behouden, `api/`-functiedetectie blijft
+root-gebaseerd (nu ook niet meer per ongeluk gedupliceerd als statisch
+bestand). Deploy-omvang geoptimaliseerd: 9,9GB → 4,0GB door Next's
+ongebruikte RSC-prefetch-`.txt`-bestanden op te ruimen (geen enkele geporte
+pagina gebruikt `next/link`, dus die bestanden werden nooit opgevraagd).
 
 ## Wat is geport (6 pagina's, klaar)
 
