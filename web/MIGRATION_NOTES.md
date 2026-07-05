@@ -98,39 +98,51 @@ project. Geverifieerd: 33.014/33.014 Next, 0 onvervulde placeholders (steekproef
 CSS, invarianten 0. **Samen met bouwvergunning + project: 38.689 Next-pagina's,
 build ~2:51.**
 
+**✅ `/gietvloer/` (657 pagina's) geport** (`eeb68d7`) — de **eerste city+bedrijf-
+cluster**, een nieuwe render-vorm t.o.v. vakstad. `web/lib/gietvloer.ts` leest
+`pages.json` (content_kind city/bedrijf/hub) + `cities.json` (per stad: bedrijvenlijst
++ card-vorm rated/unrated) + `bedrijven.json` (per bedrijf: naam/stad/rating/contact
++ siblings-tegels). Card/rij-templates (rating_row/contact_row, meerdere varianten)
+1-op-1 overgenomen; velden alleen ingevuld als de bron ze levert. Twee inline
+`<script>`-blokken (kostencalculator + sorteer-dropdown) herbedraad in
+`InteractiveScripts.tsx` (`'use client'`, één `useEffect`). De unieke E-E-A-T-
+disclaimer uit de oude cluster-footer is behouden als contentregel op city/bedrijf-
+pagina's. Geverifieerd: 657/657 Next, 0 placeholders, calculator rekent correct
+(30m² epoxy → €1.500–2.700), sorteer-dropdown werkt, bedrijfsprofiel + sibling-tegel
+correct, invarianten 0.
+
 ### Cluster-landschap (roadmap voor de rest van Fase 2)
-Drie vormen. **Vakstad-laag nu compleet** (bouwvergunning simpel 1:1 + project +
-kopen vakstad — samen alle grote geïndexeerde marketing/SEO-clusters buiten de
-lokale-acquisitie-laag). Sortering op **geïndexeerde** pagina's (= live SEO-waarde):
+Drie vormen, **alle drie nu bewezen**: simpel (bouwvergunning), vakstad (project,
+kopen), city+bedrijf (gietvloer). Sortering op **geïndexeerde** pagina's (= live
+SEO-waarde):
 
 | Cluster | Pagina's | Geïndexeerd | Vorm | Status |
 |---|---|---|---|---|
 | bouwvergunning | 25 | 25 | simpel (1 frag/pagina) | ✅ |
 | project | 5.641 | 5.641 | vakstad (type × gemeente) | ✅ |
 | kopen | 33.014 | 33.014 | vakstad (cat × subcat × gemeente, depth 3) | ✅ |
-| loodgieter | 5.391 | 3.516 | city + bedrijf | open |
+| gietvloer | 657 | 479 | **city + bedrijf** | ✅ |
+| loodgieter | 5.391 | 3.516 | city + bedrijf | ⭐ volgende — clone van gietvloer |
 | aannemer | 4.717 | 2.682 | city + bedrijf | open |
 | schilder | 5.761 | 2.553 | city + bedrijf | open |
 | elektricien | 3.886 | 2.428 | city + bedrijf | open |
 | badkamer | 2.359 | 1.978 | city + bedrijf | open |
 | stukadoor | 3.389 | 1.499 | city + bedrijf | open |
 | dakkapel | 1.700 | 1.214 | city + bedrijf | open |
-| gietvloer | 657 | 479 | city + bedrijf (kleinste = de-risk-ingang) | open |
 | kortingscode (subpagina's) | 523 | 523 | simpel 1:1 (hub al apart geport) | open |
 | offerte-check / renovatiekosten / aannemer-matching | ~2.257 / 2.821 | **~0% (noindex-gated)** | vakstad, dun | later (weinig SEO-waarde nu) |
 
-**Volgende:** de **city+bedrijf**-laag (lokale-acquisitie-monetisatie, ~16k
-geïndexeerd samen). Begin met `gietvloer` (kleinste) — dit is een échte nieuwe
-render-vorm, geen clone: vereist het porten van
-`render_city_content`/`render_bedrijf_content` + card_slots + contact/rating-rows
-uit `generate_cluster.py` (bedrijfsprofielen + kaarten i.p.v. tekst-substitutie).
-Aanbevolen op het sterkste model (nieuw patroon), daarna de overige 7 clusters op
-Sonnet clonen — zelfde volgorde als vakstad (project op Opus-niveau uitgedacht,
-kopen daarna mechanisch op Sonnet).
+**Volgende:** de resterende 7 city+bedrijf-clusters zijn nu **mechanisch te clonen**
+van `web/lib/gietvloer.ts` (zelfde overgang als project→kopen). Aandachtspunten per
+cluster: check of `city_alt`/`name_alt` (alternatieve spelling) voorkomen — bij
+gietvloer niet, bij andere clusters mogelijk wel (zie `replace_spellings` in
+`generate_cluster.py`); check `maps_cid_href` (tweede Maps-linkvorm, o.a.
+loodgieter-kaarten volgens een code-comment); check de exacte disclaimer-tekst per
+cluster-footer. Begin met `loodgieter` (grootste geïndexeerd, 3.516).
 
-`web/lib/bouwvergunning.ts` (simpel) + `web/lib/project.ts`/`kopen.ts` (vakstad)
-zijn de blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek loont zodra
-er een eerste city/bedrijf-cluster is (dan zijn alle drie de vormen bekend).
+`web/lib/bouwvergunning.ts` (simpel), `web/lib/project.ts`/`kopen.ts` (vakstad),
+`web/lib/gietvloer.ts` (city+bedrijf) zijn nu de drie blauwdrukken. Generaliseren
+naar één `cluster.ts`-fabriek per vorm kan vanaf hier overwogen worden.
 
 ## Nog voor later (bewust niet nu)
 
