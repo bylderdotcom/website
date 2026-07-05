@@ -121,9 +121,9 @@ SEO-waarde):
 | bouwvergunning | 25 | 25 | simpel (1 frag/pagina) | ✅ |
 | project | 5.641 | 5.641 | vakstad (type × gemeente) | ✅ |
 | kopen | 33.014 | 33.014 | vakstad (cat × subcat × gemeente, depth 3) | ✅ |
-| gietvloer | 657 | 479 | **city + bedrijf** | ✅ |
-| loodgieter | 5.391 | 3.516 | city + bedrijf | ⭐ volgende — clone van gietvloer |
-| aannemer | 4.717 | 2.682 | city + bedrijf | open |
+| gietvloer | 657 | 479 | city + bedrijf | ✅ |
+| loodgieter | 5.391 | 3.516 | **city + bedrijf** | ✅ |
+| aannemer | 4.717 | 2.682 | city + bedrijf | ⭐ volgende — clone van loodgieter/gietvloer |
 | schilder | 5.761 | 2.553 | city + bedrijf | open |
 | elektricien | 3.886 | 2.428 | city + bedrijf | open |
 | badkamer | 2.359 | 1.978 | city + bedrijf | open |
@@ -132,17 +132,38 @@ SEO-waarde):
 | kortingscode (subpagina's) | 523 | 523 | simpel 1:1 (hub al apart geport) | open |
 | offerte-check / renovatiekosten / aannemer-matching | ~2.257 / 2.821 | **~0% (noindex-gated)** | vakstad, dun | later (weinig SEO-waarde nu) |
 
-**Volgende:** de resterende 7 city+bedrijf-clusters zijn nu **mechanisch te clonen**
-van `web/lib/gietvloer.ts` (zelfde overgang als project→kopen). Aandachtspunten per
-cluster: check of `city_alt`/`name_alt` (alternatieve spelling) voorkomen — bij
-gietvloer niet, bij andere clusters mogelijk wel (zie `replace_spellings` in
-`generate_cluster.py`); check `maps_cid_href` (tweede Maps-linkvorm, o.a.
-loodgieter-kaarten volgens een code-comment); check de exacte disclaimer-tekst per
-cluster-footer. Begin met `loodgieter` (grootste geïndexeerd, 3.516).
+**✅ `/loodgieter/` (5.391 pagina's) geport** (`799ff1b`) — clone van
+`web/lib/gietvloer.ts`, twee bevestigde aandachtspunten: kaarten gebruiken overal
+`{{maps_cid_href}}` (maps.google.com/?cid=…) i.p.v. `{{maps_href}}`, en 2 extra
+card-vormen (v3 = geen Maps-link, v4 = met prijsniveau-badge "€€") — beide velden
+generiek doorgegeven, alleen ingevuld wat de bron levert. De prijsindicatie-
+calculator heeft een andere vorm (vaste prijs per klus, geen m²-invoer, berekent al
+bij laden) → aparte `InteractiveScripts.tsx`; de sorteer-dropdown-logica is
+byte-identiek aan gietvloer en hergebruikt. Disclaimer-tekst aangepast per cluster
+("geen loodgietersbedrijf"). Geverifieerd: 5.391/5.391 Next, 0 placeholders
+(steekproef 300), v4-kaart (rating+prijsniveau+maps_cid_href) correct, calculator
+correct bij laden én wijziging, invarianten 0.
+
+**Volgende:** de resterende 6 city+bedrijf-clusters (aannemer/schilder/elektricien/
+badkamer/stukadoor/dakkapel) zijn **mechanisch te clonen** van `gietvloer.ts` of
+`loodgieter.ts` — dezelfde soort overgang als project→kopen. Checklist per cluster
+(uit de gietvloer→loodgieter-ervaring): (1) `city_alt`/`name_alt` (alternatieve
+spelling) — nog geen van beide gezien, maar blijf checken (`replace_spellings` in
+`generate_cluster.py`); (2) `maps_href` vs `maps_cid_href` — verschilt per cluster,
+geef beide generiek door; (3) extra card-/tile-vormen naast rated/unrated (loodgieter
+had v3/v4) — `card.${shape}.html` leest ze automatisch, alleen typen als `string`
+i.p.v. vaste union; (4) de exacte inline-scripts (calculator-vorm + sorteer-dropdown)
+kunnen per cluster verschillen (gietvloer rekende per m², loodgieter per vaste klus)
+— altijd het content.city-fragment nalezen vóór je `InteractiveScripts` kopieert;
+(5) de exacte disclaimer-tekst per cluster-footer. Begin met `aannemer` (grootste
+geïndexeerd van de resterende 6, 2.682).
 
 `web/lib/bouwvergunning.ts` (simpel), `web/lib/project.ts`/`kopen.ts` (vakstad),
-`web/lib/gietvloer.ts` (city+bedrijf) zijn nu de drie blauwdrukken. Generaliseren
-naar één `cluster.ts`-fabriek per vorm kan vanaf hier overwogen worden.
+`web/lib/gietvloer.ts`/`loodgieter.ts` (city+bedrijf, 2 voorbeelden) zijn nu de
+blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek per vorm kan vanaf hier
+overwogen worden — na 2 city+bedrijf-clusters is het variatiepatroon (maps-veld,
+card-vormen, calculator-vorm) bekend genoeg om te weten wat generiek kan en wat
+per cluster blijft verschillen.
 
 ## Nog voor later (bewust niet nu)
 
