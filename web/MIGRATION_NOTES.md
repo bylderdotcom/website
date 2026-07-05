@@ -76,25 +76,47 @@ project+thema resolven, geen console-errors, invarianten 0.
 > byte-pariteit-check is voor dít cluster niet meer representatief (Python-
 > renderlaag verdwijnt sowieso in Fase 3).
 
+**✅ `/project/` (5.641 pagina's) geport** (`16fb9d6`) — grootste port tot nu toe
+en de eerste met **vakstad-templating** (projecttype × gemeente). `web/lib/project.ts`
+leest `pages.json` (metadata) + `vaksteden.json` (stad/provincie per pagina) + de
+gedeelde `content.vakstad.<type>.<variant>.html`-templates en vult per pagina
+`{{city}}/{{city_slug}}/{{prov}}/{{prov_slug}}` in (net als Python
+`render_vakstad_content`). Hubs laden hun self-contained fragment; per-pagina
+head-`<style>` via het shell-veld (default/v2/v3). Route = één optionele catch-all
+`[[...slug]]` voor index + hub + vakstad. Geverifieerd: 5.641/5.641 Next, 0 onvervulde
+placeholders, city+provincie correct, invarianten 0, build ~7s. **Dit patroon drijft
+ook `/kopen/` (33k) aan → dat is nu "meer van hetzelfde op schaal".**
+
 ### Cluster-landschap (roadmap voor de rest van Fase 2)
-Twee vormen — bouwvergunning was bewust de simpelste (1 fragment per pagina).
-De rest vraagt cluster-specifieke templating en dus **aparte, gerichte sessies**:
+Drie vormen. Klaar: bouwvergunning (simpel 1:1) + project (vakstad). Sortering op
+**geïndexeerde** pagina's (= live SEO-waarde), niet ruwe count:
 
-| Cluster | Pagina's | Vorm |
-|---|---|---|
-| ✅ bouwvergunning | 25 | **simpel** — 1 content-fragment per pagina (gedaan) |
-| offerte-check / renovatiekosten | 2.257 elk | content-getemplated (9 fragmenten → veel pagina's) |
-| aannemer-matching | 2.821 | content-getemplated (11 fragmenten) |
-| project | 5.641 | content-getemplated (21 fragmenten) |
-| kopen | 33.014 | content-getemplated (137 fragmenten) — grootste |
-| gietvloer, dakkapel, badkamer, aannemer, elektricien, loodgieter, schilder, stukadoor | 657 – 5.761 | **city + bedrijf** (`cities.json` + `bedrijven.json` + card/row-fragmenten); zwaarste templating |
+| Cluster | Pagina's | Geïndexeerd | Vorm | Status |
+|---|---|---|---|---|
+| bouwvergunning | 25 | 25 | simpel (1 frag/pagina) | ✅ |
+| project | 5.641 | 5.641 | **vakstad** (type × gemeente) | ✅ |
+| **kopen** | 33.014 | 33.014 | **vakstad** (subcat × gemeente, depth 3) | ⭐ volgende — zelfde patroon als project |
+| loodgieter | 5.391 | 3.516 | city + bedrijf | open |
+| aannemer | 4.717 | 2.682 | city + bedrijf | open |
+| schilder | 5.761 | 2.553 | city + bedrijf | open |
+| elektricien | 3.886 | 2.428 | city + bedrijf | open |
+| badkamer | 2.359 | 1.978 | city + bedrijf | open |
+| stukadoor | 3.389 | 1.499 | city + bedrijf | open |
+| dakkapel | 1.700 | 1.214 | city + bedrijf | open |
+| gietvloer | 657 | 479 | city + bedrijf (kleinste = de-risk-ingang) | open |
+| kortingscode (subpagina's) | 523 | 523 | simpel 1:1 (hub al apart geport) | open |
+| offerte-check / renovatiekosten / aannemer-matching | ~2.257 / 2.821 | **~0% (noindex-gated)** | vakstad, dun | later (weinig SEO-waarde nu) |
 
-Aanpak per volgende cluster: `web/lib/<cluster>.ts` volgens hetzelfde patroon,
-maar de city/bedrijf-clusters vereisen het porten van de stad-/bedrijf-render­logica
-uit `generate_cluster.py` (`render_city_content`, `render_bedrijf_content`,
-card_slots, contact/rating-rows). De `web/lib/bouwvergunning.ts` + `RenderCluster`
-zijn de blauwdruk voor de simpele laag; generaliseren naar één `cluster.ts`-fabriek
-loont zodra de tweede simpele/getemplate cluster erbij komt.
+**Volgende:** `kopen` (grootste live-SEO-oppervlak, zelfde vakstad-mechanisme als
+project — `web/lib/kopen.ts` clonen; let op `depth:3` in `VAKSTAD_CLUSTERS`, dus
+slug = `subcat/subsub/stad`, en de eigen FOOTER_SLOTS/og-velden). Daarna de
+**city+bedrijf**-laag (lokale-acquisitie-monetisatie): begin met `gietvloer`
+(kleinste); dat vereist het porten van `render_city_content`/`render_bedrijf_content`
++ card_slots + contact/rating-rows uit `generate_cluster.py`.
+
+`web/lib/bouwvergunning.ts` (simpel) + `web/lib/project.ts` (vakstad) zijn de
+blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek loont zodra kopen +
+een eerste city/bedrijf-cluster er zijn (dan zijn alle drie de vormen bekend).
 
 ## Nog voor later (bewust niet nu)
 
