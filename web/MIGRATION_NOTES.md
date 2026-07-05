@@ -24,10 +24,20 @@ Daniel.** De volledige Fase 1B + Fase 2-migratie (homepage + 5 marketing-
 pagina's + 5 data-gedreven clusters, ~45k pagina's) staat live op
 bylder.com. `next-migration` is nu volledig verwerkt in `main`/`origin/main`.
 
-Nog niet apart geverifieerd (lage urgentie, geen aanwijzing voor problemen):
-een expliciete spot-check van de `/api/`-betaalroutes (Stripe/PayNL) op de
-live site — de deploy zelf is gelukt, dus dit is een "voor de zekerheid"-
-check, geen open risico.
+**✅ Betaalroutes gespot-checkt op de live site (2026-07-05).**
+`/api/betaling-start` (PayNL, €99-lidmaatschap NL, de omzetkritische route):
+bewust onvolledige test-payload → correcte `400`-validatiefout, bevestigt dat
+de env-vars geconfigureerd zijn en de functie draait — geen echte transactie
+aangeraakt. `/api/create-checkout` (Stripe, $29 US-rapport): `503 "Payments
+not configured yet"` (`STRIPE_SECRET_KEY` ontbreekt) — **door Daniel
+bevestigd: bekend/verwacht**, dat bestand is niet door de migratie gewijzigd.
+
+**✅ Derde push (2026-07-05): `/aannemer/` (`8c51f97`) + `/schilder/`
+(`66bedd1`) gepusht naar `origin/main`.** Build-pipeline was al bewezen (na de
+rsync-fix), dus lager risico dan de eerste deploy — geen nieuwe infra-issues
+verwacht, maar nog niet apart door Daniel bevestigd of de Vercel-build hierop
+ook echt slaagt. Beide clusters lokaal grondig geverifieerd vóór de push (zie
+hun eigen commits/paragrafen hieronder).
 
 Vóór de merge: elke pagina/cluster was een aparte commit. Na elke stap:
 `web/build.sh` + `python3 scripts/check_site_invariants.py web/out` →
@@ -180,8 +190,8 @@ byte-identiek aan gietvloer en hergebruikt. Disclaimer-tekst aangepast per clust
 (steekproef 300), v4-kaart (rating+prijsniveau+maps_cid_href) correct, calculator
 correct bij laden én wijziging, invarianten 0.
 
-**✅ `/aannemer/` (4.717 pagina's) geport** (`8c51f97`, **lokaal gecommit, nog niet
-gepusht/gedeployed**) — clone van `web/lib/gietvloer.ts`: gebruikt overal
+**✅ `/aannemer/` (4.717 pagina's) geport** (`8c51f97`, gepusht naar `origin/main`)
+— clone van `web/lib/gietvloer.ts`: gebruikt overal
 `{{maps_href}}` (zoals gietvloer), kaart-vormen alleen rated/unrated (geen v3/v4).
 Eén bedrijf-entry mist `city`/`city_slug` (Bouwbedrijf Van der Werff, contentvariant
 v15) — die variant bevat de placeholders dan ook niet, de generieke aanpak dekt dit
@@ -192,8 +202,8 @@ aannemersbedrijf"). Geverifieerd: 4.717/4.717 Next, 0 placeholders (steekproef 3
 stadspagina + city-loze bedrijfspagina beide correct (incl. 3-niveaus-breadcrumb
 zonder stad), calculator correct bij laden én wijziging, invarianten 0.
 
-**✅ `/schilder/` (5.761 pagina's) geport** (`66bedd1`, **lokaal gecommit, nog niet
-gepusht/gedeployed**) — clone van `web/lib/gietvloer.ts`: gebruikt overal
+**✅ `/schilder/` (5.761 pagina's) geport** (`66bedd1`, gepusht naar `origin/main`)
+— clone van `web/lib/gietvloer.ts`: gebruikt overal
 `{{maps_href}}`, kaart-vormen alleen rated/unrated. 2 bedrijf-entries (Huting
 Schilderwerken, Jorek Klus- en Onderhoudsbedrijf) missen `city`/`city_slug`
 (contentvariant v12 bevat die placeholders dan ook niet). **Calculator heeft de
