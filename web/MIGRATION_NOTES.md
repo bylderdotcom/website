@@ -1,15 +1,32 @@
 # Migratie-notities — Fase 1 deel B + Fase 2 (marketing-pagina's + clusters → Next)
 
 **✅ 2026-07-05: `next-migration` gemerged (fast-forward) naar `main` en
-gepusht naar `origin/main` (commit `34d087d795f`).** Vercel's git-integratie
-zou hierop automatisch een productie-build/-deploy moeten triggeren — **dit
-is niet vanuit deze sessie te volgen of te bevestigen** (geen Vercel-
-dashboardtoegang). Controleer handmatig: Vercel-dashboard → Deployments
-(bouwt 'ie, en slaagt de build binnen de 45-min-limiet?) en spend/billing
-(status quo t.o.v. de eerder genoteerde spend-limit-waarschuwing). Bezoek
-ook een paar live pagina's (homepage, een `/kopen/.../` en `/loodgieter/.../`
-pagina) om te bevestigen dat de nieuwe build daadwerkelijk live staat en dat
-de `/api/`-betaalroutes (Stripe/PayNL) nog werken.
+gepusht naar `origin/main` (commit `34d087d795f`).**
+
+**⚠️ Eerste deploy-poging faalde: Vercel gaf `Command "bash web/build.sh" exited
+with 127`.** Oorzaak: `rsync` (gebruikt in de overlay-stap van `build.sh`) is
+niet gegarandeerd aanwezig in Vercel's build-containers — bevestigd bekend
+probleem, ontbrak hier ook. **Gefixt (commit `1500c8a8`):** rsync vervangen
+door `cp -a -n` (standaard coreutils, wel overal aanwezig) met een
+top-level-exclude-loop i.p.v. rsync's `--exclude`-patronen. Onderweg ook nog
+gevonden: `cp -n` geeft (anders dan rsync `--ignore-existing`) exit 1 zodra
+het een al-bestaand bestand overslaat — met `set -e` brak dat het script
+direct af; opgevangen met `|| true`. Geverifieerd lokaal met de exacte
+install/build-commando's zoals `vercel.json` ze aanroept: omvang ongewijzigd
+(4,0GB), `api/` correct afwezig, niet-geport cluster (schilder, 5761
+bestanden) correct overlaid, geporte clusters blijven Next-gerenderd,
+invarianten 0 overtredingen. Zie ook het geheugenbestand
+`bug-nextjs-static-export-rsc-txt-bloat.md` (Claude-geheugen, niet in deze
+repo) voor de bredere les over Vercel-build-images.
+
+**Nog steeds niet vanuit deze sessie te volgen/bevestigen** (geen Vercel-
+dashboardtoegang): of de HERSTELDE deploy nu wél slaagt. Controleer
+handmatig: Vercel-dashboard → Deployments (bouwt 'ie, en slaagt de build
+binnen de 45-min-limiet?) en spend/billing (status quo t.o.v. de eerder
+genoteerde spend-limit-waarschuwing). Bezoek ook een paar live pagina's
+(homepage, een `/kopen/.../` en `/loodgieter/.../`-pagina) om te bevestigen
+dat de nieuwe build daadwerkelijk live staat en dat de `/api/`-betaalroutes
+(Stripe/PayNL) nog werken.
 
 Vóór de merge: elke pagina/cluster was een aparte commit. Na elke stap:
 `web/build.sh` + `python3 scripts/check_site_invariants.py web/out` →
