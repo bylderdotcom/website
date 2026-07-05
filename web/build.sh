@@ -20,20 +20,40 @@ echo "▸ 2/3  RSC-prefetch-payloads opruimen (__next*.txt/index.txt per route)"
 find ./out -name "*.txt" -delete
 
 echo "▸ 3/3  overlay bestaande statische site (Next-pagina's blijven behouden)"
-# --ignore-existing: bestanden die Next al genereerde worden NIET overschreven,
-# dus de door Next gerenderde /prijzen/ blijft staan; al het andere komt van de
-# bestaande site. Dev-/bron-mappen worden uitgesloten. api/ NIET meekopiëren:
-# Vercel detecteert serverless functions altijd op basis van de repo-root
-# /api/-map, ongeacht outputDirectory — een statische kopie van die .js-bestanden
-# in web/out/api/ voegt niks toe, lekt broncode van de betaalroutes als platte
-# tekst, en kan de echte functie-routing in de weg zitten.
-rsync -a --ignore-existing \
-  --exclude '.git' --exclude 'web' --exclude 'node_modules' \
-  --exclude '__pycache__' --exclude 'data' --exclude 'scripts' \
-  --exclude '_scripts' --exclude '_audits' --exclude 'reports' \
-  --exclude '.claude' --exclude 'out' --exclude '.next' \
-  --exclude '*.py' --exclude '*.pyc' \
-  --exclude 'api' --exclude '.vercel' --exclude 'supabase' \
-  "$ROOT"/ ./out/
+# Bestanden die Next al genereerde worden NIET overschreven (cp -n), dus de
+# door Next gerenderde routes blijven staan; al het andere komt van de
+# bestaande site. Dev-/bron-mappen worden uitgesloten (top-level; geneste
+# data/scripts/*.py-varianten zitten uitsluitend onder .claude/, dat als
+# geheel al uitgesloten is). api/ NIET meekopiëren: Vercel detecteert
+# serverless functions altijd op basis van de repo-root /api/-map, ongeacht
+# outputDirectory — een statische kopie van die .js-bestanden in web/out/api/
+# voegt niks toe, lekt broncode van de betaalroutes als platte tekst, en kan
+# de echte functie-routing in de weg zitten.
+#
+# Geen rsync: niet gegarandeerd aanwezig in Vercel's build-image (faalde daar
+# met exit 127, "command not found" — rsync zit niet in het standaard build-
+# image). cp -a -n (archive + no-clobber, beide standaard-coreutils-vlaggen)
+# is het portable alternatief. Getest: volledige overlay van het grootste
+# geporte cluster (kopen, 33k pagina's, alles bestaat al) kost ~5s — ruim
+# snel genoeg t.o.v. de 45-min-buildlimiet van Vercel.
+EXCLUDE_TOP=(.git web node_modules __pycache__ data scripts _scripts _audits reports .claude out .next api .vercel supabase)
+for entry in "$ROOT"/*; do
+  name="$(basename "$entry")"
+  excluded=false
+  for ex in "${EXCLUDE_TOP[@]}"; do
+    if [ "$name" = "$ex" ]; then excluded=true; break; fi
+  done
+  $excluded && continue
+  case "$name" in *.py|*.pyc) continue ;; esac
+  # cp -n geeft (anders dan rsync --ignore-existing) exit 1 zodra het een
+  # bestaand bestand overslaat — bedoeld gedrag hier (Next-output blijft
+  # staan), dus expliciet opvangen zodat set -e het script niet afbreekt.
+  if [ -d "$entry" ]; then
+    mkdir -p "./out/$name"
+    cp -a -n "$entry"/. "./out/$name"/ || true
+  else
+    cp -n "$entry" "./out/$name" || true
+  fi
+done
 
 echo "✓ klaar — web/out bevat de volledige site (Next + bestaand)"
