@@ -192,7 +192,7 @@ SEO-waarde):
 | elektricien | 3.886 | 2.428 | city + bedrijf | ✅ |
 | badkamer | 2.359 | 1.978 | **city + bedrijf** | ✅ |
 | stukadoor | 3.389 | 1.499 | **city + bedrijf** | ✅ |
-| dakkapel | 1.700 | 1.214 | city + bedrijf | ⭐ volgende (LAATSTE city+bedrijf-cluster) — clone van gietvloer/loodgieter/aannemer/schilder/elektricien/badkamer/stukadoor |
+| dakkapel | 1.700 | 1.214 | **city + bedrijf** | ✅ **LAATSTE — city+bedrijf-laag compleet (8/8)** |
 | kortingscode (subpagina's) | 523 | 523 | simpel 1:1 (hub al apart geport) | open |
 | offerte-check / renovatiekosten / aannemer-matching | ~2.257 / 2.821 | **~0% (noindex-gated)** | vakstad, dun | later (weinig SEO-waarde nu) |
 
@@ -271,32 +271,52 @@ calculator start leeg en rekent correct bij invoer (25m² sierpleister →
 €1.000–2.375), v3-kaart (Indara: geen rating, geen Maps-link) rendert exact
 als bron, city-loze bedrijfspagina correct, invarianten 0.
 
-**Volgende (LAATSTE city+bedrijf-cluster): `dakkapel`.** Na dit cluster is de
-hele city+bedrijf-laag (8/8) klaar. Mechanisch te clonen van `gietvloer.ts`/
-`loodgieter.ts`/`aannemer.ts`/`schilder.ts`/`elektricien.ts`/`badkamer.ts`/
-`stukadoor.ts` — dezelfde soort overgang als project→kopen. Checklist per
-cluster (nu 7× bevestigd bruikbaar, incl. één concrete "calculator-vorm
-verschilt toch weer"-treffer bij schilder): (1) `city_alt`/`name_alt`
-(alternatieve spelling) — nog geen van beide gezien, maar blijf checken
-(`replace_spellings` in `generate_cluster.py`); (2) `maps_href` vs
-`maps_cid_href` — verschilt per cluster, geef beide generiek door; (3) extra
-card-/tile-vormen naast rated/unrated (loodgieter v3/v4, elektricien/stukadoor
-v3) — `card.${shape}.html` leest ze automatisch, alleen typen als `string`
-i.p.v. vaste union; (4) **de exacte inline-scripts (calculator-vorm +
-sorteer-dropdown) altijd opnieuw uit het `content.city`-fragment lezen** —
-verschilt per cluster (gietvloer/schilder/stukadoor: m², berekent bij
-wijziging; loodgieter/aannemer/elektricien/badkamer: vaste prijs, berekent bij
-laden) en is dus geen constante, ook al is de sorteer-dropdown dat tot nu toe
-wél steeds (byte-identiek in alle 7 geporte clusters); (5) de exacte
-disclaimer-tekst per cluster-footer; (6) check of een bedrijf-entry velden kan
-missen — de generieke fillPlaceholders-aanpak dekt dit al, gewoon even
-bevestigen.
+**✅ `/dakkapel/` (1.700 pagina's) geport** (`ce3cdb8`) — LAATSTE city+bedrijf-
+cluster, clone van `web/lib/gietvloer.ts`: simpelste vorm van de acht (zoals
+badkamer) — geen `city_alt`/`name_alt`, alle bedrijf-entries hebben
+`city`/`city_slug` + `maps_href`, alleen `rated`/`unrated` kaartvormen, geen
+extra card-/tile-varianten. **Calculator heeft de loodgieter/aannemer-vorm**
+(vaste prijs per klustype, geen m²-invoer, berekent al bij laden) —
+geverifieerd tegen het bron-fragment. Disclaimer aangepast ("geen
+dakkapelbedrijf"). Geverifieerd: 1.700/1.700 Next, 0 placeholders (steekproef
+300), stadspagina correct, calculator toont meteen een indicatie bij laden en
+herberekent bij wijziging, city-/bedrijfspagina's correct, invarianten 0.
+
+**Hiermee is de hele city+bedrijf-laag (8/8) klaar:** gietvloer, loodgieter,
+aannemer, schilder, elektricien, badkamer, stukadoor, dakkapel — samen goed
+voor ruim 20.000 pagina's, allemaal geport van statische Python-HTML naar
+Next.js met byte-voor-byte content-pariteit.
+
+**Wat samen met `bouwvergunning` (simpel) en `project`/`kopen` (vakstad) nu
+klaar is:** alle drie de geïdentificeerde render-vormen zijn bewezen en
+mechanisch herhaalbaar gebleken. Checklist per city+bedrijf-cluster (8×
+bevestigd bruikbaar, incl. concrete "calculator-vorm verschilt toch weer"-
+treffers bij schilder én dakkapel): (1) `city_alt`/`name_alt` (alternatieve
+spelling) — nooit gezien, maar altijd checken (`replace_spellings` in
+`generate_cluster.py`); (2) `maps_href` vs `maps_cid_href` — verschilt per
+cluster, geef beide generiek door; (3) extra card-/tile-vormen naast
+rated/unrated (loodgieter v3/v4, elektricien/stukadoor v3) — `card.${shape}.html`
+leest ze automatisch, alleen typen als `string` i.p.v. vaste union; (4) **de
+exacte inline-scripts (calculator-vorm + sorteer-dropdown) altijd opnieuw uit
+het `content.city`-fragment lezen** — verschilt per cluster (gietvloer/
+schilder/stukadoor: m², berekent bij wijziging; loodgieter/aannemer/
+elektricien/badkamer/dakkapel: vaste prijs, berekent bij laden) en is dus geen
+constante, ook al is de sorteer-dropdown dat wel steeds (byte-identiek in alle
+8 geporte clusters); (5) de exacte disclaimer-tekst per cluster-footer; (6)
+check of een bedrijf-entry velden kan missen — de generieke
+fillPlaceholders-aanpak dekt dit al, gewoon even bevestigen.
 
 `web/lib/bouwvergunning.ts` (simpel), `web/lib/project.ts`/`kopen.ts` (vakstad),
 `web/lib/gietvloer.ts`/`loodgieter.ts`/`aannemer.ts`/`schilder.ts`/
-`elektricien.ts`/`badkamer.ts`/`stukadoor.ts` (city+bedrijf, 7 voorbeelden) zijn nu de
-blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek per vorm kan vanaf
-hier overwogen worden.
+`elektricien.ts`/`badkamer.ts`/`stukadoor.ts`/`dakkapel.ts` (city+bedrijf, alle
+8) zijn nu de blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek per
+vorm kan vanaf hier overwogen worden.
+
+**Volgende (nog open in Fase 2, bewust achtergesteld):** de 523 individuele
+merk-subpagina's onder `kortingscode/` (alleen de hub is eerder geport) en de
+noindex-gestripte clusters `offerte-check/`, `renovatiekosten/`,
+`aannemer-matching/` (near-zero indexatie, eerder al gedeprioriteerd). Geen van
+beide is dringend — de city+bedrijf-laag was het grootste resterende blok.
 
 ## Nog voor later (bewust niet nu)
 
