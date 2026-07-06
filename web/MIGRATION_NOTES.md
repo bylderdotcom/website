@@ -170,9 +170,9 @@ SEO-waarde):
 | gietvloer | 657 | 479 | city + bedrijf | ✅ |
 | loodgieter | 5.391 | 3.516 | city + bedrijf | ✅ |
 | aannemer | 4.717 | 2.682 | city + bedrijf | ✅ |
-| schilder | 5.761 | 2.553 | **city + bedrijf** | ✅ |
-| elektricien | 3.886 | 2.428 | city + bedrijf | ⭐ volgende — clone van gietvloer/loodgieter/aannemer/schilder |
-| badkamer | 2.359 | 1.978 | city + bedrijf | open |
+| schilder | 5.761 | 2.553 | city + bedrijf | ✅ |
+| elektricien | 3.886 | 2.428 | **city + bedrijf** | ✅ |
+| badkamer | 2.359 | 1.978 | city + bedrijf | ⭐ volgende — clone van gietvloer/loodgieter/aannemer/schilder/elektricien |
 | stukadoor | 3.389 | 1.499 | city + bedrijf | open |
 | dakkapel | 1.700 | 1.214 | city + bedrijf | open |
 | kortingscode (subpagina's) | 523 | 523 | simpel 1:1 (hub al apart geport) | open |
@@ -217,30 +217,44 @@ schildersbedrijf"). Geverifieerd: 5.761/5.761 Next, 0 placeholders (steekproef
 rekent correct bij invoer (40m² buitenschilderwerk → €1.000–2.200), beide
 city-loze bedrijfspagina's correct, invarianten 0.
 
-**Volgende:** de resterende 4 city+bedrijf-clusters (elektricien/badkamer/
-stukadoor/dakkapel) zijn **mechanisch te clonen** van `gietvloer.ts`/
-`loodgieter.ts`/`aannemer.ts`/`schilder.ts` — dezelfde soort overgang als
-project→kopen. Checklist per cluster (nu 4× bevestigd bruikbaar, incl. één
+**✅ `/elektricien/` (3.886 pagina's) geport** (`1e9449b`) — clone van
+`web/lib/gietvloer.ts`: extra card-vorm `v3` (zoals loodgieter — geen Maps-link,
+alleen "Bekijk profiel"+"Claim"), 12 bedrijf-entries missen `city`/`city_slug`
+(templates v12/v13), veel entries missen `maps_href` zonder `maps_cid_href`-
+alternatief (contact_row-varianten zonder Maps-link) — allemaal gedekt door de
+generieke aanpak, geen speciale code. **Calculator heeft de loodgieter/
+aannemer-vorm** (vaste prijs, berekent bij laden) — dit keer wél gelijk aan de
+vorige twee, maar opnieuw expliciet bevestigd i.p.v. aangenomen. Disclaimer
+aangepast ("geen elektriciensbedrijf"). Geverifieerd: 3.886/3.886 Next, 0
+placeholders (steekproef 300), stadspagina (Almere, 21 bedrijven) correct,
+v3-kaart (CBM Techniek: geen rating, geen Maps-link) rendert exact als bron,
+city-loze bedrijfspagina correct, calculator correct bij laden én wijziging
+(volledig herbedraden → €1.500–6.000), invarianten 0.
+
+**Volgende:** de resterende 3 city+bedrijf-clusters (badkamer/stukadoor/
+dakkapel) zijn **mechanisch te clonen** van `gietvloer.ts`/`loodgieter.ts`/
+`aannemer.ts`/`schilder.ts`/`elektricien.ts` — dezelfde soort overgang als
+project→kopen. Checklist per cluster (nu 5× bevestigd bruikbaar, incl. één
 concrete "calculator-vorm verschilt toch weer"-treffer bij schilder): (1)
 `city_alt`/`name_alt` (alternatieve spelling) — nog geen van beide gezien, maar
 blijf checken (`replace_spellings` in `generate_cluster.py`); (2) `maps_href`
 vs `maps_cid_href` — verschilt per cluster, geef beide generiek door; (3) extra
-card-/tile-vormen naast rated/unrated (loodgieter had v3/v4) —
+card-/tile-vormen naast rated/unrated (loodgieter v3/v4, elektricien v3) —
 `card.${shape}.html` leest ze automatisch, alleen typen als `string` i.p.v.
 vaste union; (4) **de exacte inline-scripts (calculator-vorm + sorteer-
 dropdown) altijd opnieuw uit het `content.city`-fragment lezen** — verschilt
 per cluster (gietvloer/schilder: m², berekent bij wijziging; loodgieter/
-aannemer: vaste prijs, berekent bij laden) en is dus geen constante, ook al is
-de sorteer-dropdown dat tot nu toe wél steeds (byte-identiek in alle 4
-geporte clusters); (5) de exacte disclaimer-tekst per cluster-footer; (6)
-check of een bedrijf-entry velden kan missen — de generieke
-fillPlaceholders-aanpak dekt dit al, gewoon even bevestigen. Begin met
-`elektricien` (grootste geïndexeerd van de resterende 4, 2.428).
+aannemer/elektricien: vaste prijs, berekent bij laden) en is dus geen
+constante, ook al is de sorteer-dropdown dat tot nu toe wél steeds
+(byte-identiek in alle 5 geporte clusters); (5) de exacte disclaimer-tekst
+per cluster-footer; (6) check of een bedrijf-entry velden kan missen — de
+generieke fillPlaceholders-aanpak dekt dit al, gewoon even bevestigen. Begin
+met `badkamer` (grootste geïndexeerd van de resterende 3, 1.978).
 
 `web/lib/bouwvergunning.ts` (simpel), `web/lib/project.ts`/`kopen.ts` (vakstad),
-`web/lib/gietvloer.ts`/`loodgieter.ts`/`aannemer.ts`/`schilder.ts` (city+bedrijf,
-4 voorbeelden) zijn nu de blauwdrukken. Generaliseren naar één `cluster.ts`-
-fabriek per vorm kan vanaf hier overwogen worden.
+`web/lib/gietvloer.ts`/`loodgieter.ts`/`aannemer.ts`/`schilder.ts`/`elektricien.ts`
+(city+bedrijf, 5 voorbeelden) zijn nu de blauwdrukken. Generaliseren naar één
+`cluster.ts`-fabriek per vorm kan vanaf hier overwogen worden.
 
 ## Nog voor later (bewust niet nu)
 
