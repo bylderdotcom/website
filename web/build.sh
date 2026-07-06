@@ -36,7 +36,15 @@ echo "▸ 3/3  overlay bestaande statische site (Next-pagina's blijven behouden)
 # is het portable alternatief. Getest: volledige overlay van het grootste
 # geporte cluster (kopen, 33k pagina's, alles bestaat al) kost ~5s — ruim
 # snel genoeg t.o.v. de 45-min-buildlimiet van Vercel.
-EXCLUDE_TOP=(.git web node_modules __pycache__ data scripts _scripts _audits reports .claude out .next api .vercel supabase)
+#
+# output/ NIET meekopiëren: verweesd, verouderd tussenresultaat van
+# generate.py (dunnere kopie van nieuwbouw-gids/ en tools/, zonder de
+# FAQ/Breadcrumb/Article-schema die de echte root-pagina's wél hebben, en met
+# niet-www canonicals). Stond live zonder dat iets ernaar linkt of het in de
+# sitemap staat — gevonden via de wekelijkse audit van 2026-07-06, hier
+# opgelost door 'm niet langer te serveren i.p.v. de losse canonicals te
+# patchen (de map zelf blijft ongemoeid in de repo, alleen niet meer gedeployed).
+EXCLUDE_TOP=(.git web node_modules __pycache__ data scripts _scripts _audits reports .claude out .next api .vercel supabase output)
 for entry in "$ROOT"/*; do
   name="$(basename "$entry")"
   excluded=false
