@@ -312,11 +312,28 @@ fillPlaceholders-aanpak dekt dit al, gewoon even bevestigen.
 8) zijn nu de blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek per
 vorm kan vanaf hier overwogen worden.
 
-**Volgende (nog open in Fase 2, bewust achtergesteld):** de 523 individuele
-merk-subpagina's onder `kortingscode/` (alleen de hub is eerder geport) en de
-noindex-gestripte clusters `offerte-check/`, `renovatiekosten/`,
-`aannemer-matching/` (near-zero indexatie, eerder al gedeprioriteerd). Geen van
-beide is dringend — de city+bedrijf-laag was het grootste resterende blok.
+**✅ `/kortingscode/[slug]/` (522 merk-subpagina's) geport** (`b6c255a`) —
+vierde render-vorm naast simpel/vakstad/city+bedrijf: één content-fragment per
+merk, geen aside (altijd null), qua schaal identiek aan `bouwvergunning.ts`
+maar dan met 522 in plaats van 24 entries. Enige bijzonderheid: deze content
+komt uit de oudere Fase 1B-generator (vóór `generate_cluster.py`) en heeft de
+site-nav zelf ingebakken in het fragment (`<nav class="glass-nav">…</nav>`
+vóór `<main>`) — `getMainHtml` snijdt alles vóór `<main` weg zodat de
+gedeelde Nav niet dubbel gerenderd wordt (bevestigd: 2 `<nav>`-elementen op
+elke pagina, dat is precies goed — 1 site-nav uit de layout + 1
+breadcrumb-nav in de content, geen duplicaat). De index-hub blijft de
+bestaande hardcoded route uit Fase 1B; alleen de 522 merk-subpagina's zijn
+hier nieuw. Geverifieerd: 522/522 Next, 0 placeholders (steekproef 60), geen
+dubbele nav, actieve-code- én geen-code-varianten (bv. Auping 10% vs. 2tec2
+"nog geen actieve code") beide correct gerenderd incl. FAQ-accordion en
+vergelijkbare-merken-tegels, volledige `build.sh`-merge 0 invarianten
+(canonical/noindex/lang/json-ld/interne links, 75.579 pagina's gecheckt).
+
+**Volgende (nog open in Fase 2, bewust achtergesteld):** de noindex-gestripte
+clusters `offerte-check/`, `renovatiekosten/`, `aannemer-matching/`
+(near-zero indexatie, eerder al gedeprioriteerd) zijn het enige dat nu nog
+open staat. Met de city+bedrijf-laag (8/8) én de kortingscode-merksubpagina's
+geport, is Fase 2 op de gedeprioriteerde clusters na klaar.
 
 ## Nog voor later (bewust niet nu)
 
