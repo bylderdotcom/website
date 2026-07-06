@@ -171,9 +171,9 @@ SEO-waarde):
 | loodgieter | 5.391 | 3.516 | city + bedrijf | ✅ |
 | aannemer | 4.717 | 2.682 | city + bedrijf | ✅ |
 | schilder | 5.761 | 2.553 | city + bedrijf | ✅ |
-| elektricien | 3.886 | 2.428 | **city + bedrijf** | ✅ |
-| badkamer | 2.359 | 1.978 | city + bedrijf | ⭐ volgende — clone van gietvloer/loodgieter/aannemer/schilder/elektricien |
-| stukadoor | 3.389 | 1.499 | city + bedrijf | open |
+| elektricien | 3.886 | 2.428 | city + bedrijf | ✅ |
+| badkamer | 2.359 | 1.978 | **city + bedrijf** | ✅ |
+| stukadoor | 3.389 | 1.499 | city + bedrijf | ⭐ volgende — clone van gietvloer/loodgieter/aannemer/schilder/elektricien/badkamer |
 | dakkapel | 1.700 | 1.214 | city + bedrijf | open |
 | kortingscode (subpagina's) | 523 | 523 | simpel 1:1 (hub al apart geport) | open |
 | offerte-check / renovatiekosten / aannemer-matching | ~2.257 / 2.821 | **~0% (noindex-gated)** | vakstad, dun | later (weinig SEO-waarde nu) |
@@ -231,10 +231,20 @@ v3-kaart (CBM Techniek: geen rating, geen Maps-link) rendert exact als bron,
 city-loze bedrijfspagina correct, calculator correct bij laden én wijziging
 (volledig herbedraden → €1.500–6.000), invarianten 0.
 
-**Volgende:** de resterende 3 city+bedrijf-clusters (badkamer/stukadoor/
-dakkapel) zijn **mechanisch te clonen** van `gietvloer.ts`/`loodgieter.ts`/
-`aannemer.ts`/`schilder.ts`/`elektricien.ts` — dezelfde soort overgang als
-project→kopen. Checklist per cluster (nu 5× bevestigd bruikbaar, incl. één
+**✅ `/badkamer/` (2.359 pagina's) geport** (`aa6fa9e`) — clone van
+`web/lib/gietvloer.ts`. **Simpelste cluster tot nu toe:** geen city_alt/
+name_alt, alle 2145 bedrijf-entries hebben city + maps_href (geen
+maps_cid_href-alternatief nodig), kaart-vormen alleen rated/unrated. Calculator
+heeft de aannemer-vorm (vaste prijs per project, berekent bij laden) —
+expliciet bevestigd, niet aangenomen. Disclaimer aangepast ("geen
+badkamerbedrijf"). Geverifieerd: 2.359/2.359 Next, 0 placeholders (steekproef
+300), stadspagina (Middelharnis, 5 bedrijven) correct, calculator correct bij
+laden (€8.000–20.000) én wijziging (luxe badkamer €20.000–40.000), invarianten 0.
+
+**Volgende:** de resterende 2 city+bedrijf-clusters (stukadoor/dakkapel) zijn
+**mechanisch te clonen** van `gietvloer.ts`/`loodgieter.ts`/`aannemer.ts`/
+`schilder.ts`/`elektricien.ts`/`badkamer.ts` — dezelfde soort overgang als
+project→kopen. Checklist per cluster (nu 6× bevestigd bruikbaar, incl. één
 concrete "calculator-vorm verschilt toch weer"-treffer bij schilder): (1)
 `city_alt`/`name_alt` (alternatieve spelling) — nog geen van beide gezien, maar
 blijf checken (`replace_spellings` in `generate_cluster.py`); (2) `maps_href`
@@ -244,17 +254,18 @@ card-/tile-vormen naast rated/unrated (loodgieter v3/v4, elektricien v3) —
 vaste union; (4) **de exacte inline-scripts (calculator-vorm + sorteer-
 dropdown) altijd opnieuw uit het `content.city`-fragment lezen** — verschilt
 per cluster (gietvloer/schilder: m², berekent bij wijziging; loodgieter/
-aannemer/elektricien: vaste prijs, berekent bij laden) en is dus geen
+aannemer/elektricien/badkamer: vaste prijs, berekent bij laden) en is dus geen
 constante, ook al is de sorteer-dropdown dat tot nu toe wél steeds
-(byte-identiek in alle 5 geporte clusters); (5) de exacte disclaimer-tekst
+(byte-identiek in alle 6 geporte clusters); (5) de exacte disclaimer-tekst
 per cluster-footer; (6) check of een bedrijf-entry velden kan missen — de
 generieke fillPlaceholders-aanpak dekt dit al, gewoon even bevestigen. Begin
-met `badkamer` (grootste geïndexeerd van de resterende 3, 1.978).
+met `stukadoor` (grootste geïndexeerd van de resterende 2, 1.499).
 
 `web/lib/bouwvergunning.ts` (simpel), `web/lib/project.ts`/`kopen.ts` (vakstad),
-`web/lib/gietvloer.ts`/`loodgieter.ts`/`aannemer.ts`/`schilder.ts`/`elektricien.ts`
-(city+bedrijf, 5 voorbeelden) zijn nu de blauwdrukken. Generaliseren naar één
-`cluster.ts`-fabriek per vorm kan vanaf hier overwogen worden.
+`web/lib/gietvloer.ts`/`loodgieter.ts`/`aannemer.ts`/`schilder.ts`/
+`elektricien.ts`/`badkamer.ts` (city+bedrijf, 6 voorbeelden) zijn nu de
+blauwdrukken. Generaliseren naar één `cluster.ts`-fabriek per vorm kan vanaf
+hier overwogen worden.
 
 ## Nog voor later (bewust niet nu)
 
