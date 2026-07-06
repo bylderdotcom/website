@@ -1,5 +1,23 @@
 # Migratie-notities — Fase 1 deel B + Fase 2 (marketing-pagina's + clusters → Next)
 
+**✅ 2026-07-06: `output/` uitgesloten van de build** (`fb3cb1d`) — niet
+gerelateerd aan de migratie zelf, maar gevonden via de wekelijkse
+geautomatiseerde audit (`_audits/audit-2026-07-06.md`, gemerged in `main` via
+een divergentie-merge tijdens het pushen). Het rapport meldde 24 pagina's met
+niet-www canonical; onderzocht bleek dat te zitten in `output/` (root) — een
+verweesd, ouder tussenresultaat van `generate.py` (dunner dan de echte
+root-content, mist FAQ/Breadcrumb/Article-schema, had de oude canonical).
+Niets linkt er intern naar en het staat niet in de sitemap, maar was wél
+live bereikbaar (200 OK). Opgelost door `output/` uit te sluiten van
+`web/build.sh` (zelfde patroon als `api/`/`.vercel`/`supabase`) i.p.v. de
+canonicals te patchen in content die niet hoort te bestaan — de map zelf
+blijft ongemoeid in de repo. **Let op:** de rest van dat audit-rapport
+(voucher-logo, AI-model-versies, `supabase-schema.sql`) verwijst naar paden
+(`app/src/app/api/...`) die niet in déze repo bestaan — dat hoort bij de
+aparte app-repo (`~/Documents/GitHub/app`); het audit-script lijkt daar
+cross-repo bevindingen door elkaar te hebben gehaald. Niet actie op ondernomen
+vanuit deze sessie.
+
 **✅ 2026-07-05: `next-migration` gemerged (fast-forward) naar `main` en
 gepusht naar `origin/main` (commit `34d087d795f`).**
 
