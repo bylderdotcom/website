@@ -76,6 +76,20 @@ export function getClusterCss(): string {
   return _css
 }
 
+// Getrouwe robots-parse: merken zonder actieve code staan op "noindex, follow"
+// (dun/near-duplicate tot er een echte deal is — standing order), de rest op
+// "index, follow, max-snippet:-1, max-image-preview:large". follow moet dus
+// onafhankelijk van index uit de bron komen, niet eraan gekoppeld worden.
+function parseRobots(robots?: string) {
+  if (!robots) return { index: true, follow: true }
+  return {
+    index: !robots.includes('noindex'),
+    follow: !robots.includes('nofollow'),
+    ...(robots.includes('max-snippet:-1') ? { 'max-snippet': -1 } : {}),
+    ...(robots.includes('max-image-preview:large') ? { 'max-image-preview': 'large' as const } : {}),
+  }
+}
+
 export function toMetadata(page: KortingscodePage) {
   const url = SITE + page.path
   const title = decodeEntities(page.title)
@@ -84,7 +98,7 @@ export function toMetadata(page: KortingscodePage) {
     title,
     description,
     alternates: { canonical: url },
-    robots: page.robots?.includes('noindex') ? { index: false, follow: false } : { index: true, follow: true },
+    robots: parseRobots(page.robots),
     openGraph: {
       type: (page.og_type as any) || 'website',
       title,

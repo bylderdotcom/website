@@ -1,0 +1,43 @@
+{
+  "doel": "Proef-tranche verrijking kortingscode-merkpagina's: 30 no-code-pagina's omzetten van boilerplate naar uniek (merk-profiel + categorie-specifiek bespaarblok + prijsindicatie + alternatieven-met-reden + merk-FAQ + laatst-gecheckt-datum), daarna per pagina weer op index. Effect meten bij volgende GSC Coverage-export; werkt het → opschalen naar de resterende 438.",
+  "aanleiding": "GSC-export 6 jul 2026: indexatie 17 dagen bevroren op 4.487, 'gecrawld — niet geïndexeerd' 100→898, correleert met launch 522 merkpagina's (89% near-duplicate boilerplate). Alle 468 no-code-pagina's staan per 6 jul op noindex,follow tot verrijking.",
+  "selectiecriteria": [
+    "priority=P2 in Supabase brands-tabel (Daniels catalogus-prioriteit; geen P1's aanwezig, geen GSC-vertoningen per merk beschikbaar — sync nooit gedraaid en API-project verwijderd)",
+    "nieuwbouw-koopbeslissing-categorieën eerst: sanitair, keuken, schakelmateriaal, verwarming/ventilatie, vloeren, zonwering/raamdecoratie, deuren — daar zit Bylders doelgroep, eigen prijscontext en interne linkkracht vanuit de vak-clusters (badkamer/loodgieter/elektricien/gietvloer)",
+    "binnen categorie: grootste NL-merkbekendheid (proxy voor merkzoekvolume; geen keyword-data beschikbaar)"
+  ],
+  "geselecteerd_op": "2026-07-06",
+  "status": "wacht op verrijking (stap 2) — pagina's staan noindex tot die af is",
+  "merken": [
+    {"slug": "quooker", "name": "Quooker", "category": "Keuken & apparatuur"},
+    {"slug": "bora", "name": "Bora", "category": "Keuken & apparatuur"},
+    {"slug": "novy", "name": "Novy", "category": "Keuken & apparatuur"},
+    {"slug": "miele", "name": "Miele", "category": "Keuken & apparatuur"},
+    {"slug": "atag", "name": "ATAG", "category": "Keuken & apparatuur"},
+    {"slug": "grohe", "name": "Grohe", "category": "Sanitair & badkamer"},
+    {"slug": "hansgrohe", "name": "Hansgrohe", "category": "Sanitair & badkamer"},
+    {"slug": "geberit", "name": "Geberit", "category": "Sanitair & badkamer"},
+    {"slug": "duravit", "name": "Duravit", "category": "Sanitair & badkamer"},
+    {"slug": "villeroy-and-boch", "name": "Villeroy & Boch", "category": "Sanitair & badkamer"},
+    {"slug": "gira", "name": "Gira", "category": "Schakelmateriaal & smart"},
+    {"slug": "jung", "name": "Jung", "category": "Schakelmateriaal & smart"},
+    {"slug": "busch-jaeger", "name": "Busch-Jaeger", "category": "Schakelmateriaal & smart"},
+    {"slug": "niko-home-control", "name": "Niko Home Control", "category": "Schakelmateriaal & smart"},
+    {"slug": "quick-step", "name": "Quick-Step", "category": "Vloeren & kleden"},
+    {"slug": "moduleo", "name": "Moduleo", "category": "Vloeren & kleden"},
+    {"slug": "mosa", "name": "Mosa", "category": "Vloeren & kleden"},
+    {"slug": "forbo-marmoleum", "name": "Forbo Marmoleum", "category": "Vloeren & kleden"},
+    {"slug": "zehnder", "name": "Zehnder", "category": "Verwarming & haarden"},
+    {"slug": "daikin", "name": "Daikin", "category": "Verwarming & haarden"},
+    {"slug": "itho-daalderop", "name": "Itho Daalderop", "category": "Verwarming & haarden"},
+    {"slug": "luxaflex", "name": "Luxaflex", "category": "Raamdecoratie/zonwering"},
+    {"slug": "hunter-douglas", "name": "Hunter Douglas", "category": "Raamdecoratie/zonwering"},
+    {"slug": "renson", "name": "Renson", "category": "Raamdecoratie/zonwering"},
+    {"slug": "skantrae", "name": "Skantrae", "category": "Deuren, kozijnen & beslag"},
+    {"slug": "svedex", "name": "Svedex", "category": "Deuren, kozijnen & beslag"},
+    {"slug": "velux", "name": "Velux", "category": "Dakramen"},
+    {"slug": "swiss-sense", "name": "Swiss Sense", "category": "Slaapcomfort"},
+    {"slug": "hay", "name": "HAY", "category": "Meubels"},
+    {"slug": "in-lite", "name": "In-lite", "category": "Verlichting (buiten)"}
+  ]
+}
