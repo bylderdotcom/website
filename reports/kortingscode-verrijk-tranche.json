@@ -7,7 +7,7 @@
     "binnen categorie: grootste NL-merkbekendheid (proxy voor merkzoekvolume; geen keyword-data beschikbaar)"
   ],
   "geselecteerd_op": "2026-07-06",
-  "status": "wacht op verrijking (stap 2) — pagina's staan noindex tot die af is",
+  "status": "verrijkt op 2026-07-07 en weer op index (robots + sitemap); effect meten bij volgende GSC Coverage-export — werkt het, dan opschalen naar de resterende 438 no-code-pagina's",
   "merken": [
     {"slug": "quooker", "name": "Quooker", "category": "Keuken & apparatuur"},
     {"slug": "bora", "name": "Bora", "category": "Keuken & apparatuur"},

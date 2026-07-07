@@ -616,15 +616,15 @@
   "file": "kortingscode/atag/index.html",
   "path": "/kortingscode/atag/",
   "title": "ATAG kortingscode | Bylder",
-  "description": "ATAG kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "ATAG kortingscode? Bekijk de actuele status, indicatieve prijzen van ATAG inbouwapparatuur en hoe je via de keukenzaak bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"ATAG\", \"item\": \"https://www.bylder.com/kortingscode/atag/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een ATAG kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve ATAG-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij ATAG onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een ATAG-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij ATAG?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een ATAG kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve ATAG-code. ATAG verkoopt vrijwel alleen via keukenzaken, dus daar zit de onderhandelruimte. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat is het verschil tussen ATAG, Pelgrim en Etna?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het zijn zustermerken uit dezelfde stal. ATAG is het premium merk, Pelgrim het middensegment en Etna de instap. Ze delen deels techniek; het verschil zit in afwerking, functies en design.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost ATAG apparatuur ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: inductiekookplaten € 600 tot € 1.800 en combi-ovens € 800 tot € 2.200, afhankelijk van uitvoering. Prijspeil 2026, inclusief btw.\"}}, {\"@type\": \"Question\", \"name\": \"Zit ATAG standaard in nieuwbouwkeukens?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vaak wel, via de projectkeuken van de bouwer. Check in je meerwerklijst welke serie is opgenomen; het verschil tussen de projectuitvoering en een hogere serie is precies waar je over kunt onderhandelen.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -1480,15 +1480,15 @@
   "file": "kortingscode/bora/index.html",
   "path": "/kortingscode/bora/",
   "title": "Bora kortingscode | Bylder",
-  "description": "Bora kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Bora kortingscode? Bekijk de actuele status, indicatieve prijzen van Bora kookvelden met afzuiging en hoe je bij de keukendealer bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Bora\", \"item\": \"https://www.bylder.com/kortingscode/bora/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Bora kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Bora-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Bora onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Bora-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Bora?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Bora kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Bora-code. Bora verkoopt bovendien niet direct aan consumenten, dus kortingen lopen altijd via de keukendealer. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Waarom vind ik Bora nergens online met korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Bora levert exclusief via geselecteerde dealers en bewaakt zijn prijsbeleid streng. Webshops met flinke kortingen op Bora zijn geen officieel kanaal; let daar op in verband met garantie en installatie.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Bora kookveld ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: de S Pure vanaf circa € 2.000, de X Pure rond € 2.700 tot € 3.200 en de Professional-lijn vanaf € 4.000. Prijspeil 2026, inclusief btw, exclusief inbouw.\"}}, {\"@type\": \"Question\", \"name\": \"Is Bora duurder dan een aparte kookplaat met afzuigkap?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In aanschaf meestal wel. Daar staat tegenover dat een afzuigkap, koof en leidingwerk boven het eiland vervallen. Vergelijk de totaalprijs van beide opstellingen in je keukenofferte, niet alleen het toestel.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -1750,15 +1750,15 @@
   "file": "kortingscode/busch-jaeger/index.html",
   "path": "/kortingscode/busch-jaeger/",
   "title": "Busch-Jaeger kortingscode | Bylder",
-  "description": "Busch-Jaeger kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Busch-Jaeger kortingscode? Bekijk de actuele status, prijzen per schakelpunt en hoe je bij de nieuwbouw-standaard slim omgaat met meerwerk.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Busch-Jaeger\", \"item\": \"https://www.bylder.com/kortingscode/busch-jaeger/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Busch-Jaeger kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Busch-Jaeger-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Busch-Jaeger onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Busch-Jaeger-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Busch-Jaeger?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Busch-Jaeger kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Busch-Jaeger-code. Het merk loopt via de elektrotechnische groothandel. Voor nieuwbouwkopers zit de winst in het narekenen van meerwerkprijzen per schakelpunt. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Welk schakelmateriaal zit standaard in mijn nieuwbouwwoning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In de meeste Nederlandse projectbouw is dat de Busch-Jaeger balance SI in wit. Je vindt het terug in de technische omschrijving of meerwerklijst van je woning.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost upgraden naar een designserie?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 10 tot € 30 per punt aan materiaal, plus arbeid of meerwerkopslag. Een gemiddelde woning telt al snel 60 tot 100 punten; het totaalverschil loopt dus snel op. Vraag altijd de prijs per punt op.\"}}, {\"@type\": \"Question\", \"name\": \"Is Busch-Jaeger minder goed omdat het standaard is?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Het is de standaard juist doordat prijs, kwaliteit en leverbetrouwbaarheid kloppen. De designseries van hetzelfde merk bieden een andere uitstraling, geen andere degelijkheid.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -2362,15 +2362,15 @@
   "file": "kortingscode/daikin/index.html",
   "path": "/kortingscode/daikin/",
   "title": "Daikin kortingscode | Bylder",
-  "description": "Daikin kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Daikin kortingscode? Bekijk de actuele status, prijzen van warmtepompen en airco's, plus hoe ISDE-subsidie duizenden euro's scheelt.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Daikin\", \"item\": \"https://www.bylder.com/kortingscode/daikin/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Daikin kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Daikin-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Daikin onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Daikin-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Daikin?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Daikin kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Daikin-code. Bij warmtepompen en airco's zijn de subsidie en de installatie-offerte de plekken waar je duizenden euro's kunt schelen; een code zou daar weinig aan toevoegen. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Daikin warmtepomp ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 9.000 tot € 15.000 geïnstalleerd voor een Altherma lucht-water-systeem in een eengezinswoning, vóór aftrek van ISDE-subsidie. Prijspeil 2026; het exacte bedrag hangt af van vermogen en bestaande installatie.\"}}, {\"@type\": \"Question\", \"name\": \"Hoeveel ISDE-subsidie krijg ik op een Daikin warmtepomp?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat verschilt per type en verandert periodiek; het gaat bij lucht-water-warmtepompen doorgaans om duizenden euro's. Check de actuele bedragen op de ISDE-lijst van RVO voor het exacte typenummer uit je offerte.\"}}, {\"@type\": \"Question\", \"name\": \"Werkt een Daikin warmtepomp in een bestaande woning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vaak wel, mits de woning voldoende geïsoleerd is en de radiatoren of vloerverwarming op lagere temperatuur kunnen werken. Een goede installateur rekent dit door voordat hij offreert; wantrouw aanbiedingen zonder warmteverliesberekening.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -2938,15 +2938,15 @@
   "file": "kortingscode/duravit/index.html",
   "path": "/kortingscode/duravit/",
   "title": "Duravit kortingscode | Bylder",
-  "description": "Duravit kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Duravit kortingscode? Bekijk de actuele status, indicatieve prijzen van Duravit sanitair en hoe je bespaart via serie-keuze en offertes.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Duravit\", \"item\": \"https://www.bylder.com/kortingscode/duravit/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Duravit kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Duravit-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Duravit onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Duravit-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Duravit?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Duravit kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Duravit-code. Maak gratis een account en je krijgt bericht zodra er een deal is. De besparing zit nu vooral in serie-keuze en de badkamerofferte.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost Duravit sanitair ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: hangtoiletten € 250 tot € 700, wastafels € 150 tot € 600 en vrijstaande baden € 800 tot € 2.500, afhankelijk van serie. Prijspeil 2026, exclusief montage.\"}}, {\"@type\": \"Question\", \"name\": \"Waarin verschillen de Duravit-series?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vooral in ontwerp en afwerkingsdetails, vaak gekoppeld aan een ontwerper. De keramiekkwaliteit is over de hele linie hoog. Het prijsverschil tussen instap- en designserie kan per product honderden euro's zijn.\"}}, {\"@type\": \"Question\", \"name\": \"Past Duravit op een Geberit-inbouwreservoir?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja. Hangtoiletten van Duravit worden standaard gemonteerd op gangbare inbouwsystemen zoals die van Geberit. Je installateur controleert de combinatie bij bestelling.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -3568,15 +3568,15 @@
   "file": "kortingscode/forbo-marmoleum/index.html",
   "path": "/kortingscode/forbo-marmoleum/",
   "title": "Forbo Marmoleum kortingscode | Bylder",
-  "description": "Forbo Marmoleum kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Forbo Marmoleum kortingscode? Bekijk de actuele status, prijzen per m² voor marmoleum en Click en waar je op de totaalprijs bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Forbo Marmoleum\", \"item\": \"https://www.bylder.com/kortingscode/forbo-marmoleum/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Forbo Marmoleum kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Forbo Marmoleum-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Forbo Marmoleum onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Forbo Marmoleum-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Forbo Marmoleum?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Forbo Marmoleum kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Forbo-code. Maak gratis een account en je hoort het zodra er een deal is. Vergelijk tot die tijd gespecialiseerde stoffeerders; daar zit de grootste prijsspreiding.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost marmoleum ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 25 tot € 45 per m² materiaal voor baanmarmoleum plus € 15 tot € 30 per m² leggen, of € 45 tot € 70 per m² voor zelf te leggen Marmoleum Click. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Is marmoleum hetzelfde als pvc?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Marmoleum is linoleum: natuurlijke grondstoffen, biologisch afbreekbaar. Pvc is kunststof. Marmoleum is duurzamer en van nature antistatisch; pvc is waterbestendiger en vormvaster in natte ruimtes.\"}}, {\"@type\": \"Question\", \"name\": \"Kan marmoleum op vloerverwarming?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, zowel baan als Click zijn geschikt voor vloerverwarming. De warmteweerstand is laag; houd het legvoorschrift van Forbo aan voor lijm en aanvoertemperatuur.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -3820,15 +3820,15 @@
   "file": "kortingscode/geberit/index.html",
   "path": "/kortingscode/geberit/",
   "title": "Geberit kortingscode | Bylder",
-  "description": "Geberit kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Geberit kortingscode? Bekijk de actuele status, indicatieve prijzen van inbouwreservoirs en douchewc's en waar je als nieuwbouwkoper bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Geberit\", \"item\": \"https://www.bylder.com/kortingscode/geberit/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Geberit kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Geberit-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Geberit onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Geberit-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Geberit?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Geberit kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Geberit-code. Geberit verkoopt vooral via installateurs en de groothandel, dus consumentencodes zijn zeldzaam. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Geberit inbouwreservoir ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 250 tot € 600 aan materiaal, afhankelijk van type en bedieningsplaat. Inbouw en afwerking komen daar bij verbouw bovenop; bij nieuwbouw zit dit standaard in het sanitairpakket.\"}}, {\"@type\": \"Question\", \"name\": \"Is een douchewc de investering waard?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat is persoonlijk. De AquaClean-lijn begint indicatief rond € 1.400 en loopt op tot € 4.500. Wie eraan gewend is wil zelden terug; probeer er een uit in een showroom voordat je beslist.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik de bedieningsplaat later nog vervangen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja. De platen zijn los verkrijgbaar en passen op het bijbehorende reservoirtype. Dat maakt het een typische aankoop om buiten het meerwerk om te doen als de meerwerkprijs niet scherp is.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -3910,15 +3910,15 @@
   "file": "kortingscode/gira/index.html",
   "path": "/kortingscode/gira/",
   "title": "Gira kortingscode | Bylder",
-  "description": "Gira kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Gira kortingscode? Bekijk de actuele status, prijzen per schakelpunt en hoe je via je elektricien op Gira schakelmateriaal bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Gira\", \"item\": \"https://www.bylder.com/kortingscode/gira/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Gira kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Gira-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Gira onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Gira-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Gira?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Gira kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Gira-code. Gira verkoopt via de groothandel, dus consumentencodes zijn zeldzaam. De besparing zit in de materiaalregel van je installatie-offerte. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost Gira schakelmateriaal ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 10 tot € 25 per schakelpunt aan materiaal in de E2-serie, dimmers € 60 tot € 120. Designseries en kleuren buiten standaardwit liggen fors hoger. Prijspeil 2026, exclusief arbeid.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik zelf Gira kopen en de elektricien laten monteren?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dat kan en gebeurt vaak. Spreek het vooraf af: sommige installateurs rekenen dan iets meer arbeid, maar per saldo bespaar je meestal op de materiaalopslag. Let op dat serie en inbouwdozen op elkaar aansluiten.\"}}, {\"@type\": \"Question\", \"name\": \"Wat is het verschil tussen Gira, Jung en Busch-Jaeger?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Alle drie zijn Duitse kwaliteitsmerken die via dezelfde groothandels lopen. Verschillen zitten in design, series en smart-ecosysteem. Prijs per punt ontloopt elkaar in de standaardseries weinig; vergelijk vooral het design dat je mooi vindt.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -4000,15 +4000,15 @@
   "file": "kortingscode/grohe/index.html",
   "path": "/kortingscode/grohe/",
   "title": "Grohe kortingscode | Bylder",
-  "description": "Grohe kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Grohe kortingscode? Bekijk de actuele status, indicatieve prijzen van Grohe kranen en douchesystemen en hoe je via je installateur bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Grohe\", \"item\": \"https://www.bylder.com/kortingscode/grohe/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Grohe kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Grohe-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Grohe onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Grohe-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Grohe?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Grohe kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Grohe-code. Doordat Grohe via veel kanalen wordt verkocht, zit de besparing vooral in prijsvergelijking per typenummer. Maak gratis een account en je hoort het zodra er wel een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Is Grohe hetzelfde als Hansgrohe?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Grohe en Hansgrohe zijn twee losstaande Duitse bedrijven met een gedeelde familiehistorie. Beide maken kranen en douchesystemen in het premium segment; series en prijzen verschillen per product.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Grohe kraan ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: keukenkranen € 150 tot € 600, thermostaatkranen € 200 tot € 500 en complete regendouche-sets € 400 tot € 1.200. Prijspeil 2026, exclusief montage.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik Grohe veilig bij een webshop kopen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, mits het een officieel verkooppunt is. Bij niet-officiële kanalen of parallelimport kan de fabrieksgarantie beperkt zijn. Bewaar de factuur; die heb je nodig bij garantieclaims.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -4108,15 +4108,15 @@
   "file": "kortingscode/hansgrohe/index.html",
   "path": "/kortingscode/hansgrohe/",
   "title": "Hansgrohe kortingscode | Bylder",
-  "description": "Hansgrohe kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Hansgrohe kortingscode? Bekijk de actuele status, indicatieve prijzen van Hansgrohe kranen en douches en de beste route naar korting.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Hansgrohe\", \"item\": \"https://www.bylder.com/kortingscode/hansgrohe/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Hansgrohe kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Hansgrohe-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Hansgrohe onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Hansgrohe-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Hansgrohe?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Hansgrohe kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Hansgrohe-code. Maak gratis een account en je hoort het zodra er een deal is. Tot die tijd: vergelijk per typenummer en onderhandel via je badkamerofferte.\"}}, {\"@type\": \"Question\", \"name\": \"Wat is het verschil tussen Hansgrohe en Axor?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Axor is de designlijn van Hansgrohe, met samenwerkingen met bekende ontwerpers en een hoger prijspunt. De techniek onder de motorkap is verwant; je betaalt bij Axor voor ontwerp en exclusiviteit.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost Hansgrohe ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: wastafelkranen € 120 tot € 450, douchesets € 100 tot € 350 en complete regendouche-systemen € 350 tot € 900. Prijspeil 2026, exclusief montage.\"}}, {\"@type\": \"Question\", \"name\": \"Is Hansgrohe hetzelfde als Grohe?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee, het zijn twee aparte bedrijven. Beide zijn Duits en premium gepositioneerd. Vergelijk per product; de series overlappen niet een op een.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -4162,15 +4162,15 @@
   "file": "kortingscode/hay/index.html",
   "path": "/kortingscode/hay/",
   "title": "HAY kortingscode | Bylder",
-  "description": "HAY kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "HAY kortingscode? Bekijk de actuele status, prijzen van bekende HAY-ontwerpen en wanneer dealers sale draaien op dit Deense merk.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"HAY\", \"item\": \"https://www.bylder.com/kortingscode/hay/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een HAY kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve HAY-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij HAY onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een HAY-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij HAY?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een HAY kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve HAY-code. Designmerken als HAY geven zelden codes; de korting zit in de halfjaarlijkse sales bij dealers. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wanneer is HAY in de sale?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"De meeste designdealers draaien sale in januari en juli. Voorraadmodellen in standaarduitvoeringen maken dan de meeste kans op korting.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een HAY About A Chair ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 200 tot € 450 per stoel, afhankelijk van uitvoering (kuipmateriaal, onderstel, bekleding). Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Is HAY zijn prijs waard vergeleken met woonwinkelmeubels?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"HAY zit tussen de woonketens en het klassieke designsegment in. Je betaalt voor ontwerp en afwerking; de bekende modellen houden bovendien redelijk waarde bij tweedehands verkoop, wat bij woonketenmeubels zelden geldt.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -4396,15 +4396,15 @@
   "file": "kortingscode/hunter-douglas/index.html",
   "path": "/kortingscode/hunter-douglas/",
   "title": "Hunter Douglas kortingscode | Bylder",
-  "description": "Hunter Douglas kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Hunter Douglas kortingscode? Lees hoe het merk in Nederland via Luxaflex verkoopt en waar je als particulier de korting vindt.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Hunter Douglas\", \"item\": \"https://www.bylder.com/kortingscode/hunter-douglas/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Hunter Douglas kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Hunter Douglas-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Hunter Douglas onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Hunter Douglas-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Hunter Douglas?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Hunter Douglas kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee, en die zal er voor Nederlandse consumenten ook niet snel komen: Hunter Douglas verkoopt hier onder de merknaam Luxaflex. Kortingen en acties lopen via Luxaflex-dealers.\"}}, {\"@type\": \"Question\", \"name\": \"Wat is de relatie tussen Hunter Douglas en Luxaflex?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Hunter Douglas is het moederconcern; Luxaflex is zijn consumentenmerk in Nederland en grote delen van Europa. Zelfde fabriek, andere merknaam per doelgroep.\"}}, {\"@type\": \"Question\", \"name\": \"Waar koop ik Hunter Douglas producten in Nederland?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Bij Luxaflex-dealers: raamdecoratiespeciaalzaken en woonwinkels met een Luxaflex-studio. Voor zakelijke gevel- en projectproducten heeft het concern aparte projectkanalen.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost raambekleding van dit concern ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 150 tot € 600 per raam voor maatwerk zoals jaloezieën, duettes en rolgordijnen, afhankelijk van type en formaat. Prijspeil 2026, inclusief maatwerk, exclusief motorisatie.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -4450,15 +4450,15 @@
   "file": "kortingscode/in-lite/index.html",
   "path": "/kortingscode/in-lite/",
   "title": "In-lite kortingscode | Bylder",
-  "description": "In-lite kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "In-lite kortingscode? Bekijk de actuele status, prijzen van 12V-buitenverlichting en hoe je aanleg en uitbreiding slim opsplitst.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"In-lite\", \"item\": \"https://www.bylder.com/kortingscode/in-lite/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een In-lite kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve In-lite-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij In-lite onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een In-lite-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij In-lite?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een In-lite kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve In-lite-code. Maak gratis een account en je hoort het zodra er een deal is. Bespaar tot die tijd vooral op het aanlegmoment: kabelwerk mee met de bestrating.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost In-lite buitenverlichting ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 60 tot € 200 per armatuur en € 300 tot € 600 voor een startset. Een compleet aangelegd tuinplan komt op € 1.500 tot € 5.000, afhankelijk van tuingrootte en aantal lichtpunten. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik In-lite zelf installeren?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, dat is het punt van het 12V-systeem: laagspanning is veilig om zelf mee te werken. De trafo gaat in een buitenstopcontact, de kabel hoeft maar ondiep de grond in en armaturen klik je erop aan.\"}}, {\"@type\": \"Question\", \"name\": \"Waarom werken hoveniers vaak met In-lite?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het systeem is snel aan te leggen, degelijk en achteraf uit te breiden zonder de tuin open te breken. Voor jou als koper betekent dat: begin klein en groei mee met de tuin.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -4539,15 +4539,15 @@
   "file": "kortingscode/itho-daalderop/index.html",
   "path": "/kortingscode/itho-daalderop/",
   "title": "Itho Daalderop kortingscode | Bylder",
-  "description": "Itho Daalderop kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Itho Daalderop kortingscode? Bekijk de actuele status, prijzen van ventilatieboxen, WTW en warmtepompen en waar je bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Itho Daalderop\", \"item\": \"https://www.bylder.com/kortingscode/itho-daalderop/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Itho Daalderop kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Itho Daalderop-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Itho Daalderop onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Itho Daalderop-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Itho Daalderop?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Itho Daalderop kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Itho Daalderop-code. Het merk levert via installateurs; besparen doe je op meerwerk-keuzes, onderhoud en subsidie. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Itho Daalderop ventilatiesysteem ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: een ventilatiebox € 400 tot € 900, een compleet WTW-systeem € 2.000 tot € 3.500 inclusief montage. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe onderhoud ik mijn Itho Daalderop ventilatie zelf?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Filters vervangen volgens het schema van het toestel en ventielen periodiek schoonmaken kan zonder monteur. Het inregelen van luchthoeveelheden en kanaalreiniging is wel werk voor een specialist.\"}}, {\"@type\": \"Question\", \"name\": \"Zit Itho Daalderop standaard in mijn nieuwbouwwoning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het is een van de vaste merken in Nederlandse projectbouw voor ventilatie en warm water. In je technische omschrijving staat welk merk en type jouw woning krijgt.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -4701,15 +4701,15 @@
   "file": "kortingscode/jung/index.html",
   "path": "/kortingscode/jung/",
   "title": "Jung kortingscode | Bylder",
-  "description": "Jung kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Jung kortingscode? Bekijk de actuele status, prijzen van de LS 990-serie per schakelpunt en hoe je op Jung schakelmateriaal bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Jung\", \"item\": \"https://www.bylder.com/kortingscode/jung/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Jung kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Jung-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Jung onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Jung-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Jung?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Jung kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Jung-code. Jung loopt via de groothandel; korting haal je uit de materiaalregel van je offerte en de keuze tussen series en kleuren. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost de Jung LS 990 ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 15 tot € 40 per schakelpunt aan materiaal in standaardwit. De Les Couleurs Le Corbusier-uitvoeringen kosten per punt twee tot drie keer zoveel. Prijspeil 2026, exclusief arbeid.\"}}, {\"@type\": \"Question\", \"name\": \"Waarom is de LS 990 zo populair bij architecten?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het ontwerp stamt uit de jaren zestig en is nooit wezenlijk veranderd: vlak, smal randje, tijdloos. Daardoor past de serie in zowel klassieke als moderne interieurs en blijft een woning er lang actueel mee.\"}}, {\"@type\": \"Question\", \"name\": \"Is Jung duurder dan Gira of Busch-Jaeger?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In de designseries meestal iets, in de instapseries nauwelijks. De drie merken zijn kwalitatief vergelijkbaar; kies op design en, bij domotica, op het smart-ecosysteem dat je installateur goed kent.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -5421,15 +5421,15 @@
   "file": "kortingscode/luxaflex/index.html",
   "path": "/kortingscode/luxaflex/",
   "title": "Luxaflex kortingscode | Bylder",
-  "description": "Luxaflex kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Luxaflex kortingscode? Bekijk de actuele status, prijzen per raam voor jaloezieën en duettes, plus de terugkerende seizoensacties.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Luxaflex\", \"item\": \"https://www.bylder.com/kortingscode/luxaflex/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Luxaflex kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Luxaflex-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Luxaflex onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Luxaflex-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Luxaflex?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Luxaflex kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Luxaflex-code. Het merk werkt zelf met seizoensacties via dealers in plaats van codes. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wanneer heeft Luxaflex acties?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er lopen vrijwel elk jaar landelijke campagnes in het voorjaar en najaar, per keer op andere productgroepen. Vraag je dealer welke actie eraan komt voordat je bestelt.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost Luxaflex ongeveer per raam?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 150 tot € 400 voor een jaloezie op maat en € 200 tot € 600 voor duettes of silhouettes, inclusief maatwerk, exclusief motorisatie. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Is Luxaflex hetzelfde als Hunter Douglas?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Luxaflex is het consumentenmerk van Hunter Douglas. Je koopt als particulier dus altijd via Luxaflex-dealers; de naam Hunter Douglas kom je vooral tegen bij projecten en in het buitenland.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -5799,15 +5799,15 @@
   "file": "kortingscode/miele/index.html",
   "path": "/kortingscode/miele/",
   "title": "Miele kortingscode | Bylder",
-  "description": "Miele kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Miele kortingscode? Bekijk de actuele status, lopende cashback-acties, indicatieve prijzen en hoe je op Miele inbouwapparatuur bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Miele\", \"item\": \"https://www.bylder.com/kortingscode/miele/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Miele kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Miele-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Miele onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Miele-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Miele?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Miele kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Miele-code. Miele werkt zelf vooral met cashback-acties in plaats van kortingscodes. Maak gratis een Bylder-account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wanneer is Miele het goedkoopst?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Tijdens de landelijke cashback-periodes en rond modelwissels. De actiekalender verschilt per productgroep; hou de officiële verkooppunten in de gaten voordat je bestelt.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost Miele inbouwapparatuur ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: vaatwassers € 900 tot € 2.000, wasmachines € 1.100 tot € 2.500 en ovens € 1.200 tot € 3.500, afhankelijk van uitvoeringsniveau. Prijspeil 2026, inclusief btw.\"}}, {\"@type\": \"Question\", \"name\": \"Is Miele de meerprijs waard in nieuwbouw?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Miele-toestellen gaan in de praktijk lang mee en dat past bij een woning waar je jaren blijft. Reken zelf: verdeel de meerprijs over de verwachte levensduur en vergelijk dat met het goedkopere alternatief inclusief eerdere vervanging.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -5889,15 +5889,15 @@
   "file": "kortingscode/moduleo/index.html",
   "path": "/kortingscode/moduleo/",
   "title": "Moduleo kortingscode | Bylder",
-  "description": "Moduleo kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Moduleo kortingscode? Bekijk de actuele status, pvc-vloerprijzen per m² (klik en plak) en hoe je op de totaalprijs bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Moduleo\", \"item\": \"https://www.bylder.com/kortingscode/moduleo/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Moduleo kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Moduleo-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Moduleo onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Moduleo-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Moduleo?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Moduleo kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Moduleo-code. Maak gratis een account en je hoort het zodra er een deal is. De grootste spreiding zit nu in de totaalprijs inclusief egaliseren en leggen.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Moduleo vloer ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 35 tot € 65 per m² voor klik-pvc en € 25 tot € 45 per m² voor plak-pvc, exclusief leggen. Egaliseren en leggen komen daar met € 15 tot € 35 per m² bovenop. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Is Moduleo geschikt voor vloerverwarming?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, pvc heeft een lage warmteweerstand en werkt goed op vloerverwarming. Check per productlijn de opgegeven waarde en houd je aan het legvoorschrift voor de aanvoertemperatuur.\"}}, {\"@type\": \"Question\", \"name\": \"Moduleo of Quick-Step Alpha vinyl?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Beide zijn kwalitatief goede klik-pvc-lijnen uit België. Verschillen zitten in decors, plankformaat en de geïntegreerde ondervloer van LayRed. Vergelijk op totaalprijs per m² inclusief benodigde ondervloer.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -6015,15 +6015,15 @@
   "file": "kortingscode/mosa/index.html",
   "path": "/kortingscode/mosa/",
   "title": "Mosa kortingscode | Bylder",
-  "description": "Mosa kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Mosa kortingscode? Bekijk de actuele status, tegelprijzen per m² en hoe je via tegelzetter en restpartijen op Mosa bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Mosa\", \"item\": \"https://www.bylder.com/kortingscode/mosa/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Mosa kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Mosa-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Mosa onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Mosa-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Mosa?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Mosa kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Mosa-code. Mosa loopt vooral via vakhandel en projectkanalen; daar zit ook de scherpste prijs. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kosten Mosa tegels ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 40 tot € 90 per m² aan materiaal, afhankelijk van serie en formaat. Zetten kost daarnaast circa € 40 tot € 70 per m². Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Waarom kiezen architecten zo vaak voor Mosa?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Strakke maatvoering, doorlopende series die jaren later nog bij te bestellen zijn en duurzaamheidscertificering. Voor een woning betekent dat: bijkopen bij schade of verbouwing blijft mogelijk.\"}}, {\"@type\": \"Question\", \"name\": \"Is Mosa duurder dan Italiaanse of Spaanse tegels?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vaak wel per m². Daar staan maatvastheid (minder snijverlies), langdurige leverbaarheid en het duurzaamheidsprofiel tegenover. Reken het verschil door op de totale m² van je project en weeg dat zelf.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -6213,15 +6213,15 @@
   "file": "kortingscode/niko-home-control/index.html",
   "path": "/kortingscode/niko-home-control/",
   "title": "Niko Home Control kortingscode | Bylder",
-  "description": "Niko Home Control kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Niko Home Control kortingscode? Bekijk de actuele status, indicatieve pakketprijzen en waarom aanleggen tijdens de bouw duizenden euro's scheelt.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Niko Home Control\", \"item\": \"https://www.bylder.com/kortingscode/niko-home-control/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Niko Home Control kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Niko Home Control-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Niko Home Control onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Niko Home Control-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Niko Home Control?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Niko Home Control kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Niko-code. Het systeem wordt via installateurs geleverd; de besparing zit in het bouwmoment en het vergelijken van pakketoffertes. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost Niko Home Control ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 1.500 tot € 3.000 voor een basisinstallatie bij nieuwbouw en € 5.000 tot € 10.000 of meer voor een uitgebreid systeem met zonwering, verwarming en energiemonitoring. Prijspeil 2026, inclusief arbeid.\"}}, {\"@type\": \"Question\", \"name\": \"Kan Niko Home Control ook in een bestaande woning?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, met de draadloze variant. Die is flexibeler maar per functie iets duurder in componenten. Bij een grote verbouwing kan bedraad alsnog; combineer het dan met het geplande hak- en breekwerk.\"}}, {\"@type\": \"Question\", \"name\": \"Werkt Niko Home Control samen met andere smart home-platforms?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het systeem heeft koppelingen met gangbare platforms en spraakassistenten. Check bij je installateur welke integraties actueel zijn voor de functies die jij wilt koppelen.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -6375,15 +6375,15 @@
   "file": "kortingscode/novy/index.html",
   "path": "/kortingscode/novy/",
   "title": "Novy kortingscode | Bylder",
-  "description": "Novy kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Novy kortingscode? Bekijk de actuele status, indicatieve prijzen van Novy afzuigkappen en kookplaten met afzuiging, en waar je bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Novy\", \"item\": \"https://www.bylder.com/kortingscode/novy/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Novy kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Novy-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Novy onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Novy-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Novy?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Novy kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Novy-code. Maak gratis een account en je krijgt bericht zodra er een deal is. Tot die tijd is de keukenofferte de plek waar je op Novy bespaart.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Novy afzuigkap ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 600 tot € 2.500, afhankelijk van type (inbouw, wand of eiland) en designlijn. Een Panorama-kookveld met geïntegreerde afzuiging kost circa € 2.500 tot € 4.000. Prijspeil 2026, exclusief montage.\"}}, {\"@type\": \"Question\", \"name\": \"Is Novy een goed alternatief voor Bora?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Beide merken maken kookvelden met geïntegreerde afzuiging. Novy is er met de Panorama-lijn vaak iets scherper geprijsd mee dan Bora; vergelijk in de showroom vooral het geluidsniveau op de stand die je echt gebruikt.\"}}, {\"@type\": \"Question\", \"name\": \"Waar koop ik Novy het voordeligst?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Via de keukenzaak als onderdeel van je keukendeal, of bij apparatuurspecialisten die Novy voeren. Vraag in beide gevallen om de totaalprijs inclusief plaatsing en eventueel filterpakket.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -7149,15 +7149,15 @@
   "file": "kortingscode/quick-step/index.html",
   "path": "/kortingscode/quick-step/",
   "title": "Quick-Step kortingscode | Bylder",
-  "description": "Quick-Step kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Quick-Step kortingscode? Bekijk de actuele status, prijzen per m² voor laminaat, vinyl en parket en hoe je op vloer plus leggen bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Quick-Step\", \"item\": \"https://www.bylder.com/kortingscode/quick-step/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Quick-Step kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Quick-Step-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Quick-Step onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Quick-Step-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Quick-Step?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Quick-Step kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Quick-Step-code. Maak gratis een account en je hoort het zodra er een deal is. Vergelijk tot die tijd totaalprijzen inclusief leggen; daar zit de echte spreiding.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Quick-Step vloer ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief per m²: laminaat € 25 tot € 55, Alpha vinyl € 40 tot € 70 en parket € 60 tot € 110. Leggen kost € 10 tot € 25 per m² extra. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik Quick-Step zelf leggen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, het kliksysteem is daarvoor gemaakt en het scheelt € 10 tot € 25 per m². Zorg wel voor een vlakke, droge ondervloer en de juiste ondervloerfolie; daar staat of valt het resultaat mee.\"}}, {\"@type\": \"Question\", \"name\": \"Wat is het verschil tussen laminaat en Alpha vinyl?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Alpha vinyl is waterbestendig en stiller, en daarmee geschikt voor badkamer en keuken. Laminaat is goedkoper en krasvaster. Voor vloerverwarming zijn beide geschikt; check per decor de warmteweerstand.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -7185,15 +7185,15 @@
   "file": "kortingscode/quooker/index.html",
   "path": "/kortingscode/quooker/",
   "title": "Quooker kortingscode | Bylder",
-  "description": "Quooker kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Quooker kortingscode? Bekijk de actuele status, wat een Quooker kost (indicatie 2026) en hoe je via je keukenofferte honderden euro's bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Quooker\", \"item\": \"https://www.bylder.com/kortingscode/quooker/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Quooker kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Quooker-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Quooker onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Quooker-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Quooker?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Quooker kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Quooker-code. Maak gratis een account en je krijgt bericht zodra er een deal is. De grootste besparing zit nu in je keukenofferte: laat de Quooker meelopen in de onderhandeling over de totaalprijs.\"}}, {\"@type\": \"Question\", \"name\": \"Krijg ik korting op een Quooker via de keukenzaak?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Vaak wel. Quooker hanteert vaste adviesprijzen, maar de keukenzaak bepaalt zelf de pakketprijs van je keuken. Een Quooker als onderdeel van de totaaldeal wordt in de praktijk geregeld scherper geprijsd dan los.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Quooker ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Reken indicatief op € 1.100 tot € 2.100 voor een kraan met boiler, afhankelijk van model en afwerking. Met een CUBE erbij kom je op circa € 2.300 tot € 3.400. Prijspeil 2026, inclusief btw, exclusief montage.\"}}, {\"@type\": \"Question\", \"name\": \"Heeft Quooker uitverkoop of outlet?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Quooker verkoopt niet via een eigen outlet. Acties lopen via het merk zelf en via keukenzaken, meestal in de vorm van een gratis accessoire of CUBE-voordeel bij aankoop.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -7275,15 +7275,15 @@
   "file": "kortingscode/renson/index.html",
   "path": "/kortingscode/renson/",
   "title": "Renson kortingscode | Bylder",
-  "description": "Renson kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Renson kortingscode? Bekijk de actuele status, prijzen van screens en ventilatieroosters en hoe je bij nieuwbouw slim combineert.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Renson\", \"item\": \"https://www.bylder.com/kortingscode/renson/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Renson kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Renson-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Renson onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Renson-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Renson?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Renson kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Renson-code. Renson levert via dealers en kozijnfabrikanten; de besparing zit in het bouwmoment en het vergelijken van meerwerk met een eigen dealer. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Renson Fixscreen ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 500 tot € 900 per raam inclusief motor en montage, afhankelijk van formaat en inbouwsituatie. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Zijn screens de investering waard in nieuwbouw?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In goed geïsoleerde nieuwbouw is oververhitting in de zomer een reëel punt. Buitenzonwering zoals screens houdt warmte buiten vóór het glas en is daarmee effectiever dan binnenzonwering. Op de zonbelaste gevels verdient het zich in comfort terug.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik Renson screens later nog laten plaatsen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, als opbouwvariant. Inbouwscreens (weggewerkt in het kozijn of de gevel) kunnen alleen tijdens de bouw of kozijnvervanging. Wil je de strakke inbouwlook, beslis dan vóór de kozijnbestelling.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -7671,15 +7671,15 @@
   "file": "kortingscode/skantrae/index.html",
   "path": "/kortingscode/skantrae/",
   "title": "Skantrae kortingscode | Bylder",
-  "description": "Skantrae kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Skantrae kortingscode? Bekijk de actuele status, prijzen per binnendeur en hoe je met pakketprijzen en standaardmaten bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Skantrae\", \"item\": \"https://www.bylder.com/kortingscode/skantrae/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Skantrae kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Skantrae-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Skantrae onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Skantrae-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Skantrae?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Skantrae kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Skantrae-code. Maak gratis een account en je hoort het zodra er een deal is. Tot die tijd zijn pakketprijzen bij speciaalzaken de beste route.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Skantrae binnendeur ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 80 tot € 300 per deur, afhankelijk van model en glas. Afhangen kost € 100 tot € 150 per deur extra, beslag € 20 tot € 80. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Passen Skantrae deuren in mijn bestaande kozijnen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Meestal wel: de deuren volgen de Nederlandse standaardmaten. Meet hoogte, breedte en dikte van je huidige deuren op en check ook de draairichting voordat je bestelt.\"}}, {\"@type\": \"Question\", \"name\": \"Waar zit het prijsverschil tussen binnendeuren?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In materiaalopbouw (honingraat, spaanplaat of massief), afwerking en glas. Een stompe deur oogt strakker maar vraagt preciezer afhangwerk dan een opdekdeur; dat verschil zie je terug in de montageprijs.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -8175,15 +8175,15 @@
   "file": "kortingscode/svedex/index.html",
   "path": "/kortingscode/svedex/",
   "title": "Svedex kortingscode | Bylder",
-  "description": "Svedex kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Svedex kortingscode? Bekijk de actuele status, prijzen per binnendeur en hoe je bij nieuwbouw-meerwerk op deuren bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Svedex\", \"item\": \"https://www.bylder.com/kortingscode/svedex/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Svedex kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Svedex-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Svedex onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Svedex-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Svedex?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Svedex kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Svedex-code. Maak gratis een account en je hoort het zodra er een deal is. Nieuwbouwkopers besparen nu vooral door meerwerkprijzen te vergelijken met de speciaalzaak.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Svedex binnendeur ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 90 tot € 350 per deur, afhankelijk van lijn en uitvoering. Prijspeil 2026, exclusief afhangen en beslag.\"}}, {\"@type\": \"Question\", \"name\": \"Mijn nieuwbouwwoning krijgt standaard Svedex-deuren. Is dat goed?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"De projectdeuren zijn degelijke basiskwaliteit; ze doen hun werk prima. Het verschil met de duurdere lijnen zit in vlakheid, lakkwaliteit en detail. Wie eraan hecht kan gericht een paar zichtdeuren upgraden in plaats van allemaal.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik na oplevering alsnog andere deuren nemen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja. Binnendeuren vervangen is relatief eenvoudig; de kozijnen blijven staan. Daarom loont het om de meerwerkprijs van de bouwer altijd te vergelijken met vervangen na oplevering.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -8211,15 +8211,15 @@
   "file": "kortingscode/swiss-sense/index.html",
   "path": "/kortingscode/swiss-sense/",
   "title": "Swiss Sense kortingscode | Bylder",
-  "description": "Swiss Sense kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Swiss Sense kortingscode? Bekijk de actuele status, boxspring- en matrasprijzen en waarom de actieprijs bij dit merk het echte startpunt is.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Swiss Sense\", \"item\": \"https://www.bylder.com/kortingscode/swiss-sense/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Swiss Sense kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Swiss Sense-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Swiss Sense onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Swiss Sense-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Swiss Sense?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Swiss Sense kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Swiss Sense-code. Het merk werkt zelf doorlopend met acties; de winst zit in onderhandelen bovenop de actieprijs en in de configuratie. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Kan ik onderhandelen bij Swiss Sense?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In de winkel is er vaak ruimte, vooral op accessoires, bezorging en montage of bij aankoop van een compleet slaapsysteem. Vriendelijk vragen wat er mogelijk is kost niets en levert geregeld wat op.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Swiss Sense boxspring ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 1.000 tot € 3.500 voor een tweepersoons boxspring, afhankelijk van uitvoering en matrastype. Prijspeil 2026, actieprijzen meegerekend.\"}}, {\"@type\": \"Question\", \"name\": \"Wanneer is de beste tijd om een bed te kopen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Rond grote actieperiodes zoals de wintersale en Black Friday zijn de aanbiedingen het breedst. Wie net een woning oplevert kan de aankoop daar soms op plannen; een bed is geen dag-één-noodzaak zoals vloeren of gordijnen.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -8823,15 +8823,15 @@
   "file": "kortingscode/velux/index.html",
   "path": "/kortingscode/velux/",
   "title": "Velux kortingscode | Bylder",
-  "description": "Velux kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Velux kortingscode? Bekijk de actuele status, prijzen van dakramen inclusief plaatsen en hoe je op glas- en montagekeuzes bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Velux\", \"item\": \"https://www.bylder.com/kortingscode/velux/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Velux kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Velux-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Velux onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Velux-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Velux?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Velux kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Velux-code. Maak gratis een account en je hoort het zodra er een deal is. Combideals met zonwering en de montage-offerte zijn nu de beste bespaarplekken.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Velux dakraam inclusief plaatsen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 900 tot € 2.000 per raam inclusief montage en binnenafwerking, afhankelijk van maat, glassoort en dakconstructie. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Heb ik een vergunning nodig voor een dakraam?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Aan de achterzijde meestal niet, aan de voorzijde of bij een monument kan dat anders liggen. Check de regels voor jouw situatie voordat je bestelt.\"}}, {\"@type\": \"Question\", \"name\": \"Welk glas kies ik voor een Velux dakraam?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Standaard isolatieglas volstaat in de meeste gevallen; geluidsreducerend of extra isolerend glas loont boven een slaapkamer of aan een drukke weg. Het prijsverschil per raam is beperkt vergeleken met de totale klus.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -8931,15 +8931,15 @@
   "file": "kortingscode/villeroy-and-boch/index.html",
   "path": "/kortingscode/villeroy-and-boch/",
   "title": "Villeroy &amp; Boch kortingscode | Bylder",
-  "description": "Villeroy &amp; Boch kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Villeroy &amp; Boch kortingscode? Bekijk de actuele status, indicatieve prijzen van sanitair en servies en waar de korting bij dit merk zit.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Villeroy & Boch\", \"item\": \"https://www.bylder.com/kortingscode/villeroy-and-boch/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Villeroy & Boch kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Villeroy & Boch-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Villeroy & Boch onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Villeroy & Boch-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Villeroy & Boch?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Villeroy & Boch kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Villeroy & Boch-code. Voor servies zijn de merkoutlets structureel de goedkoopste route; voor sanitair de badkamerofferte. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost Villeroy & Boch sanitair ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief: hangtoiletten € 250 tot € 650 en wastafels € 200 tot € 700, afhankelijk van serie. Prijspeil 2026, exclusief montage.\"}}, {\"@type\": \"Question\", \"name\": \"Waar zit het prijsverschil tussen de sanitairseries?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In ontwerp, coating en formaat. Series met speciale coatings tegen aanslag of randloze spoeling zitten hoger in prijs; de basisseries delen dezelfde keramiekkwaliteit.\"}}, {\"@type\": \"Question\", \"name\": \"Heeft Villeroy & Boch outlets voor servies?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja, er zijn outletlocaties en outletverkoop via de eigen website met kortingen op uitlopende collecties. Voor sanitair geldt dat niet; dat loopt via de vakhandel.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
@@ -9363,15 +9363,15 @@
   "file": "kortingscode/zehnder/index.html",
   "path": "/kortingscode/zehnder/",
   "title": "Zehnder kortingscode | Bylder",
-  "description": "Zehnder kortingscode? Bekijk de actuele status, besparingstips en alternatieven voor je nieuwbouw of verbouwing bij Bylder.",
+  "description": "Zehnder kortingscode? Bekijk de actuele status, prijzen van WTW-units en designradiatoren en hoe je op je ventilatie-offerte bespaart.",
   "og_type": "website",
-  "robots": "noindex, follow",
+  "robots": "index, follow, max-snippet:-1, max-image-preview:large",
   "template": "default",
   "footer": "default",
   "aside": null,
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder\", \"item\": \"https://www.bylder.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kortingscodes\", \"item\": \"https://www.bylder.com/kortingscode/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zehnder\", \"item\": \"https://www.bylder.com/kortingscode/zehnder/\"}]}",
-   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Zehnder kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Zehnder-code. We werken samen met steeds meer woonmerken — maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Moet ik bij Zehnder onderhandelen over korting?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Onderhandelen levert bij merken met vaste prijzen meestal weinig op. Maak gratis een Bylder-account aan; zodra er een Zehnder-deal is, krijg je een vaste ledenkorting zonder afdingen.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe bespaar ik toch bij Zehnder?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Plan je aankopen rond merk-acties, vraag in de showroom naar een nieuwbouw- of projectkorting, en bekijk de alternatieven hieronder in dezelfde categorie.\"}}]}"
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is er een Zehnder kortingscode?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Op dit moment heeft Bylder geen actieve Zehnder-code. Zehnder loopt via installateurs; de besparing zit in de installatie-offerte en in de filterkosten daarna. Maak gratis een account en je hoort het zodra er een deal is.\"}}, {\"@type\": \"Question\", \"name\": \"Wat kost een Zehnder WTW-systeem ongeveer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Indicatief € 2.500 tot € 4.000 inclusief montage voor een gangbare eengezinswoning, afhankelijk van capaciteit en kanaalwerk. Prijspeil 2026.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe vaak moet ik de filters vervangen en wat kost dat?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Twee tot vier keer per jaar. Originele filtersets kosten indicatief € 40 tot € 100 per jaar; passende alternatieven van filterspecialisten zijn vaak de helft goedkoper bij gelijke filterklasse.\"}}, {\"@type\": \"Question\", \"name\": \"Zit Zehnder standaard in nieuwbouw?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Regelmatig, naast andere WTW-merken. Welk merk jouw woning krijgt staat in de technische omschrijving. Vraag bij twijfel de installateur om type, capaciteit en geluidsniveau in de aanbieding te zetten.\"}}]}"
   ],
   "ldjson_sep": "\n",
   "twitter_card": "summary_large_image"
