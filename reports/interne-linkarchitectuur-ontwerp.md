@@ -86,12 +86,36 @@ weeslijst verdwenen (was in totaal ~11.093 wezen incl. de 3 hele clusters uit fa
 linkstructuur van de overige 367 en-us-pagina's blijft een apart vraagstuk,
 buiten de "één bescheiden link"-scope van deze fase).
 
-### Fase 4 — Junk-cleanup (zelfde patroon als output/-exclude)
-`bylder-seo-v3/v4/v5`, `badkamer-renoveren`, `keuken-renoveren`, `tuin-aanleggen`,
-`vve-appartement`, `blog`, losse AI-landingspagina's, `voucher`, `cep-kaart`:
-per geval excluden uit de build (EXCLUDE_TOP in web/build.sh) of 301'en; blog +
-badkamer-renoveren + keuken-renoveren ook uit sitemap.xml. Dit ruimt tegelijk een
-deel van de 404/canonical-posten uit de GSC-export op.
+### Fase 4 — Junk-cleanup (UITGEVOERD, 8 jul, commit volgt) ✅
+Onderzoek wees uit dat het geen 76 junk-pagina's waren zoals aangenomen — net als
+bij de nieuwbouw-gemeenten in fase 3 klopte de "junk"-aanname maar voor een deel:
+
+**Echt junk (geëxcludeerd/opgeruimd):**
+- `bylder-seo-v3/v4/v5` (31 pag.) — bevestigd stale concept-snapshots, 1:1
+  identiek aan live pagina's, canonical wijst al terug. Toegevoegd aan
+  `EXCLUDE_TOP` in `web/build.sh` (zelfde behandeling als `output/`).
+- `voucher` (1, enkelvoud) — canonical wees al naar `/vouchers/`. Bestand
+  verwijderd + 301-redirect in `vercel.json` toegevoegd (zelfde patroon als de
+  al bestaande `/nieuwbouw/nieuwbouw/`-redirect).
+- Retroactief: ook 301-redirects toegevoegd voor de in fase 3 verwijderde
+  `nieuwbouw-gids/nieuwbouw-gids/`, `nordenveld` en `noord-holland/hillegom` —
+  ontbraken daar nog, volgens dezelfde conventie als `/nieuwbouw/nieuwbouw/`.
+
+**Bewust met rust gelaten:** `cep-kaart` (staat zelf al op `noindex,nofollow`),
+`404`/`_not-found` (technische Next.js-paginas, horen niet gelinkt).
+
+**Bleek écht, live content zonder één inkomende link (ontsloten, niet
+opgeruimd):** `badkamer-renoveren`, `keuken-renoveren`, `tuin-aanleggen` (3
+kaarten op `/renovatie/`), `vve-appartement` (link op `/bestaande-bouw/`),
+`blog` (footer-link "Blog"), en de 4 losse AI-tools `droomhuis-ontwerpen-met-ai`
+/ `verbouwing-visualiseren-met-ai` / `ai-tuinontwerp-gratis-planner` /
+`ai-muurkleur-testen-kleuradvies` (nieuwe "Meer AI-tools"-kaart op de 3
+AI-paginas die al de "Nieuwbouw gids"-sidebar hadden).
+
+**Resultaat:** BFS-bereikbaarheid 99,4% → **99,5%**. Alle behandelde content
+volledig van de weeslijst. Resterende wezen: `en-us` (367, apart vraagstuk),
+`vouchers`/`partners`/`betalen` (kleine restjes, niet onderzocht), `cep-kaart`/
+`404`/`_not-found` (bewust/technisch).
 
 ## Meetpunten
 1. Na elke fase: `python3 scripts/check_link_reachability.py` → bereikbaarheid moet

@@ -16,6 +16,26 @@
       "permanent": true
     },
     {
+      "source": "/nieuwbouw-gids/nieuwbouw-gids/:path*",
+      "destination": "/nieuwbouw-gids/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw/drenthe/nordenveld/",
+      "destination": "/nieuwbouw/drenthe/noordenveld/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw/noord-holland/hillegom/",
+      "destination": "/nieuwbouw/zuid-holland/hillegom/",
+      "permanent": true
+    },
+    {
+      "source": "/voucher/",
+      "destination": "/vouchers/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "mijn.bylder.com" }],
       "destination": "https://www.bylder.com",

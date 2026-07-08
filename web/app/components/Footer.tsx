@@ -14,6 +14,7 @@ const COLS: Col[] = [
     { href: '/bestaande-bouw/', label: 'Bestaande bouw' },
     { href: '/renovatie/', label: 'Renovatie' },
     { href: '/nieuwbouw-gids/', label: 'Gidsen' },
+    { href: '/blog/', label: 'Blog' },
     { href: '/bouwvergunning/', label: 'Bouwvergunning' },
     { href: '/eerlijke-prijzen/', label: 'Eerlijke prijzen' },
     { href: '/over-ons/', label: 'Over ons' },

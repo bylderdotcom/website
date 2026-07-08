@@ -44,7 +44,10 @@ echo "▸ 3/3  overlay bestaande statische site (Next-pagina's blijven behouden)
 # sitemap staat — gevonden via de wekelijkse audit van 2026-07-06, hier
 # opgelost door 'm niet langer te serveren i.p.v. de losse canonicals te
 # patchen (de map zelf blijft ongemoeid in de repo, alleen niet meer gedeployed).
-EXCLUDE_TOP=(.git web node_modules __pycache__ data scripts _scripts _audits reports .claude out .next api .vercel supabase output)
+# bylder-seo-v3/v4/v5 NIET meekopiëren: stale concept-snapshots (1:1 duplicaat
+# van live pagina's, canonical wijst er al naar terug — zelfde klasse als
+# output/, gevonden bij de Fase-4 interne-linkarchitectuur-opruiming 8 jul).
+EXCLUDE_TOP=(.git web node_modules __pycache__ data scripts _scripts _audits reports .claude out .next api .vercel supabase output bylder-seo-v3 bylder-seo-v4 bylder-seo-v5)
 for entry in "$ROOT"/*; do
   name="$(basename "$entry")"
   excluded=false
