@@ -35,15 +35,30 @@ diepte 2, bedrijven diepte 3 (was 5–6 of onbereikbaar). Ontsluit in één klap
 pagina's. Legacy-pagina's hebben oude ingebakken footers; die volgen vanzelf naarmate
 clusters porten — de homepage (Next) alleen al zet de hubs op diepte 1.
 
-### Fase 2 — Wees-bedrijven ontsluiten (datalaag + Next)
+### Fase 2 — Wees-bedrijven ontsluiten (UITGEVOERD, 8 jul, commit volgt) ✅
 Per city+bedrijf-cluster een "register"-laag: pagina's per beginletter
-(`/<cluster>/register/<a-z>/`) die álle bedrijfsprofielen linken, gelinkt vanaf de
-cluster-hub ("Alle bedrijven A–Z"). Op `noindex,follow`: het zijn crawlpaden, geen
-zoekresultaat-kandidaten — geen indexvervuiling, wel linkwaarde-doorgifte.
-Genereren in de datalaag (Python, uit bedrijven.json) + één generieke Next-route.
-Omvang: ~200 links per letterpagina bij het grootste cluster. Alternatief (goedkoper
-maar zwakker): wees-bedrijven opnemen in sibling-tegels van bereikbare bedrijven in
-de regio; voorkeur = register.
+(`/<cluster>/register/<a-z>/`, plus `/overig/` voor niet-alfabetische namen) die
+álle bedrijfsprofielen linken, gelinkt vanaf de cluster-hub ("Alle bedrijven A–Z").
+Op `noindex,follow`: crawlpad, geen zoekresultaat-kandidaat — geen indexvervuiling,
+wel linkwaarde-doorgifte.
+
+**Gebouwd als puur Next-side navigatieconstruct** (niet in de Python-datalaag/
+pages.json): elke `web/lib/<cluster>.ts` genereert de registerpagina's zelf uit
+`bedrijven.json` (`buildRegisterPages()`), toegevoegd aan `getPages()` — bestaat dus
+niet in de legacy site en heeft geen content-bron nodig. Consistent doorgevoerd op
+alle 8 clusters (gietvloer/loodgieter/aannemer/schilder/elektricien/badkamer/
+stukadoor/dakkapel), 25-27 letterpagina's per cluster.
+
+**Bijvangst-bugfix:** `parseRobots()` in alle 8 lib's liet `noindex` altijd ook
+`nofollow` meeslepen, ook als de bron alleen `noindex,follow` zei. Trof niet alleen
+de nieuwe registerpagina's maar **al 11.511 bestaande bedrijfsprofielen**
+(178–3.208 per cluster) die al op `noindex,follow` stonden in pages.json maar tot nu
+toe alsnog `nofollow` kregen — die pagina's gaven dus geen linkwaarde door aan hun
+sibling-tegels. Nu index/follow onafhankelijk uitgelezen (zoals `web/lib/
+kortingscode.ts` al deed).
+
+**Resultaat:** BFS-bereikbaarheid 93,8% → **99,2%**. Alle 8 clusters volledig van de
+weeslijst verdwenen (was in totaal ~11.093 wezen incl. de 3 hele clusters uit fase 1).
 
 ### Fase 3 — Kleine fixes
 - `nieuwbouw-gids`: hub/fase-pagina's laten linken naar alle 26 wees-artikelen.

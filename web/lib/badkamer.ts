@@ -23,7 +23,7 @@ export type BadkamerPage = {
   og_type?: string
   robots?: string
   ldjson: string[]
-  content_kind: 'city' | 'bedrijf' | null
+  content_kind: 'city' | 'bedrijf' | 'register' | null
 }
 
 type Company = {
@@ -96,7 +96,10 @@ function fillPlaceholders(tpl: string, fields: Record<string, string | undefined
 
 let _pages: BadkamerPage[] | null = null
 export function getPages(): BadkamerPage[] {
-  if (!_pages) _pages = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'pages.json'), 'utf8'))
+  if (!_pages) {
+    const real: BadkamerPage[] = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'pages.json'), 'utf8'))
+    _pages = [...real, ...buildRegisterPages()]
+  }
   return _pages!
 }
 export function getPage(slug: string): BadkamerPage | undefined {
@@ -112,6 +115,76 @@ let _bedrijven: Record<string, Bedrijf> | null = null
 function getBedrijven(): Record<string, Bedrijf> {
   if (!_bedrijven) _bedrijven = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'bedrijven.json'), 'utf8'))
   return _bedrijven!
+}
+
+// A-Z-registerlaag (Fase 2 interne-linkarchitectuur, reports/interne-linkarchitectuur-ontwerp.md):
+// ontsluit bedrijfsprofielen in plaatsen zonder eigen stadspagina (anders wees,
+// 0 inkomende links). Puur een Next-side navigatieconstruct uit bedrijven.json —
+// bestaat niet in de legacy site, dus geen pages.json/content-bron nodig.
+// noindex,follow: crawlpad, geen zoekresultaat-kandidaat.
+type RegisterEntry = { name: string; href: string }
+function registerLetter(name: string): string {
+  const first = name.trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase()
+  return /[A-Z]/.test(first) ? first : '#'
+}
+let _registerGroups: Record<string, RegisterEntry[]> | null = null
+function getRegisterGroups(): Record<string, RegisterEntry[]> {
+  if (!_registerGroups) {
+    const groups: Record<string, RegisterEntry[]> = {}
+    for (const [slug, b] of Object.entries(getBedrijven())) {
+      const letter = registerLetter(b.name)
+      ;(groups[letter] ??= []).push({ name: b.name, href: `/${CLUSTER}/${slug}/` })
+    }
+    for (const letter of Object.keys(groups)) groups[letter].sort((a, b) => a.name.localeCompare(b.name, 'nl'))
+    _registerGroups = groups
+  }
+  return _registerGroups!
+}
+function registerLetters(): string[] {
+  return Object.keys(getRegisterGroups()).sort((a, b) => (a === '#' ? 1 : b === '#' ? -1 : a.localeCompare(b)))
+}
+function registerSlugPart(letter: string): string {
+  return letter === '#' ? 'overig' : letter.toLowerCase()
+}
+function buildRegisterPages(): BadkamerPage[] {
+  return registerLetters().map(letter => {
+    const slug = `register/${registerSlugPart(letter)}`
+    return {
+      slug,
+      path: `/${CLUSTER}/${slug}/`,
+      title: `Alle ${CLUSTER}-bedrijven — ${letter} | Bylder`,
+      description: `Alfabetisch overzicht van alle ${CLUSTER}-bedrijven op Bylder (${letter}).`,
+      robots: 'noindex, follow',
+      ldjson: [],
+      content_kind: 'register',
+    }
+  })
+}
+function letterButton(letter: string, active: boolean): string {
+  const href = `/${CLUSTER}/register/${registerSlugPart(letter)}/`
+  const style = active
+    ? 'background:#3D5A3E;color:#F5F0E8;'
+    : 'background:#fff;border:1px solid rgba(61,46,30,0.1);color:#1A1208;'
+  return `<a href="${href}" style="display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:8px;font-size:12.5px;font-weight:700;text-decoration:none;${style}">${letter}</a>`
+}
+// Ingevoegd op de hub-pagina, vóór </main> (zelfde patroon als DISCLAIMER_HTML hieronder).
+function registerLinksHtml(): string {
+  const links = registerLetters().map(l => letterButton(l, false)).join('')
+  return `<section style="margin-top:40px;padding-top:24px;border-top:1px solid rgba(61,46,30,0.1);"><h2 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3D5A3E;margin-bottom:10px;">Alle bedrijven A&ndash;Z</h2><div style="display:flex;flex-wrap:wrap;gap:6px;">${links}</div></section>`
+}
+function getRegisterHtml(page: BadkamerPage): string {
+  const part = page.slug.split('/')[1]
+  const letter = part === 'overig' ? '#' : part.toUpperCase()
+  const groups = getRegisterGroups()
+  const companies = groups[letter] || []
+  const nav = registerLetters().map(l => letterButton(l, l === letter)).join('')
+  const tiles = companies.map(c => `<a href="${c.href}" class="tile">${c.name}</a>`).join('')
+  return `<main style="padding:48px 0 20px;"><div class="container" style="max-width:1000px;">
+  <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:18px;"><a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a> &rarr; <a href="/${CLUSTER}/" style="color:rgba(61,46,30,0.4);text-decoration:none;">${CLUSTER}</a> &rarr; <span style="color:rgba(61,46,30,0.6);">Alle bedrijven &mdash; ${letter}</span></p>
+  <h1 style="font-size:1.8rem;font-weight:800;line-height:1.15;margin-bottom:16px;">Alle bedrijven &mdash; ${letter}</h1>
+  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px;">${nav}</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">${tiles}</div>
+  </div></main>`
 }
 
 // Eén uniforme shell voor alle 2.359 pagina's (pages.json "template"-veld is
@@ -184,22 +257,30 @@ function getBedrijfHtml(page: BadkamerPage): string {
 
 const _hubCache: Record<string, string> = {}
 function readHub(slug: string): string {
-  if (!(slug in _hubCache)) _hubCache[slug] = fs.readFileSync(path.join(DATA_DIR, 'content', `${slug}.html`), 'utf8')
+  if (!(slug in _hubCache)) {
+    let body = fs.readFileSync(path.join(DATA_DIR, 'content', `${slug}.html`), 'utf8')
+    if (slug === 'index') body = body.replace('</main>', `${registerLinksHtml()}</main>`)
+    _hubCache[slug] = body
+  }
   return _hubCache[slug]
 }
 
-// De <main>-HTML voor elk van de 3 pagina-vormen: city (bedrijvengrid),
-// bedrijf (profiel) of hub (self-contained, alleen 'index' in dit cluster).
+// De <main>-HTML voor elk van de 4 pagina-vormen: city (bedrijvengrid), bedrijf
+// (profiel), register (A-Z-overzicht, Fase 2 link-architectuur) of hub
+// (self-contained, alleen 'index' in dit cluster).
 export function getMainHtml(page: BadkamerPage): string {
   if (page.content_kind === 'city') return getCityHtml(page)
   if (page.content_kind === 'bedrijf') return getBedrijfHtml(page)
+  if (page.content_kind === 'register') return getRegisterHtml(page)
   return readHub(page.slug)
 }
 
+// index/follow onafhankelijk uitlezen: de registerlaag (Fase 2 link-architectuur)
+// staat op "noindex, follow" — noindex mag follow niet meeslepen zoals de oude
+// versie hier deed (wél al zo in web/lib/kortingscode.ts).
 function parseRobots(robots?: string) {
   if (!robots) return { index: true, follow: true }
-  if (robots.includes('noindex')) return { index: false, follow: false }
-  return { index: true, follow: true }
+  return { index: !robots.includes('noindex'), follow: !robots.includes('nofollow') }
 }
 
 export function toMetadata(page: BadkamerPage): Metadata {
