@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T08:06:00",
+  "generated": "2026-07-08T13:34:21",
   "root": "/Users/danielpaaij/Documents/GitHub/website/web/out",
   "checks": {
     "1_sitemap_files": {
@@ -57,38 +57,38 @@
       ],
       "sitemaps_on_disk_not_in_robots": [],
       "sitemap_files_missing": [],
-      "urls_checked": 56139,
+      "urls_checked": 56137,
       "violations": 0,
       "examples": []
     },
     "2_noindex_in_sitemap": {
-      "pages_scanned": 75790,
+      "pages_scanned": 75769,
       "noindex_pages": 19486,
       "violations": 0,
       "examples": []
     },
     "3_canonical": {
-      "pages_with_canonical": 75782,
+      "pages_with_canonical": 75761,
       "violations": 0,
       "examples": []
     },
     "4_lang_attr": {
-      "pages_checked": 75790,
+      "pages_checked": 75769,
       "violations": 0,
       "examples": []
     },
     "5_jsonld": {
-      "blocks_checked": 172180,
+      "blocks_checked": 172125,
       "violations": 0,
       "examples": []
     },
     "6_internal_links": {
       "mode": "steekproef: homepage + index.html van elke top-level clustermap",
       "pages_sampled": 87,
-      "links_checked": 4848,
+      "links_checked": 4870,
       "violations": 0,
       "examples": []
     }
   },
-  "runtime_seconds": 6.2
+  "runtime_seconds": 6.7
 }

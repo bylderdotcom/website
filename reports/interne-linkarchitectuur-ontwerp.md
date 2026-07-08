@@ -60,11 +60,31 @@ kortingscode.ts` al deed).
 **Resultaat:** BFS-bereikbaarheid 93,8% → **99,2%**. Alle 8 clusters volledig van de
 weeslijst verdwenen (was in totaal ~11.093 wezen incl. de 3 hele clusters uit fase 1).
 
-### Fase 3 — Kleine fixes
-- `nieuwbouw-gids`: hub/fase-pagina's laten linken naar alle 26 wees-artikelen.
-- `nieuwbouw`: typo-duplicaat-gemeentes inventariseren → verwijderen uit build +
-  eventueel 301 naar de correcte slug (geen links toevoegen; het zijn duplicaten).
-- `en-us`: één bescheiden footer-link ("For US homebuyers") naar `/en-us/`.
+### Fase 3 — Kleine fixes (UITGEVOERD, 8 jul, commit volgt) ✅
+- **`nieuwbouw-gids`**: het duidelijkste geval was géén duplicaat maar een genest
+  duplicaat-subtree `nieuwbouw-gids/nieuwbouw-gids/` (19 pagina's, stale kopie van
+  ~mei, 1:1 correspondentie met de correcte, nieuwere bestanden erboven — zelfde
+  klasse als het eerder verwijderde `output/`) → verwijderd. De overige 7 wees-
+  artikelen zijn echt en missten simpelweg een link: 6 kaarten toegevoegd aan hun
+  fase-hub (fase-1: 1, fase-2: 4, fase-3: 1), en `raambekleding-gordijnen` als 5e
+  link in de gedeelde "Nieuwbouw gids"-sidebar op de 3 relevante AI-paginas.
+- **`nieuwbouw`**: bleek bij onderzoek GEEN 98 typo-duplicaten te zijn zoals
+  aangenomen — slechts 1 (`nordenveld`, typo van `noordenveld`, canonical wees al
+  correct) + 1 cross-provincie-duplicaat (`noord-holland/hillegom`, terwijl
+  Hillegom feitelijk in Zuid-Holland ligt) verwijderd. De overige **96 waren echte,
+  bestaande gemeenten** (o.a. Zaanstad, Aalsmeer, Heemskerk — geen kleine
+  plaatsen) die simpelweg nooit in hun provincie-hub's lijst stonden. Na overleg
+  met Daniel: alle 96 als eenvoudige tekstlink (bewust GEEN verzonnen project-/
+  besparingscijfers, om geen onjuiste claims te introduceren) toegevoegd in een
+  nieuwe "Overige gemeenten in [provincie]"-sectie op de 9 betrokken
+  provincie-hubs. Sitemap.xml meegeschoond (2 verwijderde duplicaten eruit).
+- **`en-us`**: bescheiden footer-link ("For US homebuyers" → `/en-us/`) toegevoegd
+  aan `Footer.tsx`, dus zichtbaar op alle Next-geporte pagina's.
+
+**Resultaat:** BFS-bereikbaarheid 99,2% → **99,4%**. `nieuwbouw-gids` en
+`nieuwbouw` volledig van de weeslijst. `en-us`-hub nu bereikbaar (interne
+linkstructuur van de overige 367 en-us-pagina's blijft een apart vraagstuk,
+buiten de "één bescheiden link"-scope van deze fase).
 
 ### Fase 4 — Junk-cleanup (zelfde patroon als output/-exclude)
 `bylder-seo-v3/v4/v5`, `badkamer-renoveren`, `keuken-renoveren`, `tuin-aanleggen`,
