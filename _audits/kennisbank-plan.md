@@ -77,6 +77,18 @@ kostendata + proces + tools).
 | 2 | 2026-07-21 | **Vloeren & afwerking + Installaties & duurzaam + BIM** + rest materialen |
 | 3 | 2026-07-28 | **Bouwproces & techniek + Geld & recht**, begrippenlijst → 50+, jaarlijks "Bylder Verbouwprijzen Rapport" als earned-media-anker (±84% van AI-citaties komt via earned media) |
 | 4 | 2026-08-04 | **Robots in de bouw** (cluster 10, ±13 art.). In het artikel over procesoptimalisatie & LEAN op de bouwplaats een redactionele link naar benned.com (zusterbedrijf; gewone follow-link, natuurlijk anker in lopende tekst — geen footer-/sitewide-link). Kruislinks met BIM-cluster beide richtingen |
+| 5 | 2026-08-11 | **Engelse robots-hub** onder `/en-us/knowledge-base/robots-in-construction/` (±13 art.). Géén letterlijke vertaling maar adaptatie: globale/VS-framing (US labor shortage, ICON/Austin 3D-printing, Built Robotics) náást de NL-cases (Monumental, Project Milestone — beide met internationale pers). Per artikelpaar hreflang nl-NL ↔ en-US. Zelfde benned.com-link in het LEAN-artikel. Opnemen in en-us-sitemap.xml, en-us guides-index en llms.txt |
+
+## Engelse site (/en-us/) — kwaliteitsbeeld (opgenomen 2026-07-11)
+
+380 pagina's, VS-markt (geen vertaling van de NL-site): quote-check-funnel + 12
+projecttypen × ±30 steden cost-pages + 6 guides + report-flow. **Technisch gezond**:
+correcte hreflang (nl-NL ↔ en-US ↔ x-default), canonicals, BreadcrumbList- en
+FAQPage-schema, eigen sitemap. **Inhoudelijk dun**: cost-pages ±410 woorden
+(programmatisch), guides ±700 woorden, geen naslag/kennisbank-laag, geen Article-schema.
+De Engelse robots-hub wordt daarmee het eerste autoriteitscontent-anker van de
+EN-site; bij de bouw meteen Article-schema-patroon neerzetten als voorbeeld voor
+latere EN-uitbreiding.
 
 Wekelijkse cadans is bewust: consistente publicatie weegt zwaarder dan volume
 (clusterpublicatie 12+ mnd volgehouden ≈ +40% organisch verkeer vs. piekpublicatie).
