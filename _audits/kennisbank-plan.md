@@ -107,6 +107,22 @@ indexeren; (2) géén extra massa-pSEO toevoegen in kennisbankfases; kwaliteit b
 volume; (3) het earned-media-anker (Verbouwprijzen Rapport, fase 3) is óók het
 middel om domeinautoriteit te verhogen zodat Google meer crawl-budget toekent.
 
+## Quick wins uit GSC Performance-export 2026-07-11 (meenemen in fase 1-2)
+
+- **Oplevering-cluster is het grootste zichtbare thema** (±1.800 vertoningen over
+  "oplevering nieuwbouw"-varianten, posities 16–34, vrijwel 0 kliks) en de content is
+  versnipperd over /nieuwbouw-gids/fase-3-oplevering/, /gids/checklist-oplevering- en
+  /oplevering-nieuwbouw/: consolideren (één canonieke checklist-pagina, rest ernaartoe
+  linken of redirecten) — grootste korte-termijn-klikwinst van de site.
+- **"Plintloos afwerken" rankte pos ±4 met 7 kliks** op een inmiddels verdwenen blog-URL
+  (nu 301 → /interieur-woning/vloer-kiezen/). In fase 2 (Vloeren & afwerking) een
+  volwaardig plintloos-afwerken-artikel maken en de redirect daarheen verleggen.
+- **Kortingscode-pagina's**: 96 query's, ±1.425 vertoningen, veel posities 5–10 —
+  CTR-optimalisatie van titles/descriptions (percentage + jaartal) is laaghangend fruit.
+- **/kopen**: 524 pagina's → 10.565 vertoningen maar 8 kliks (CTR 0,08%, posities 10–20)
+  — titles/intent verbeteren vóór er ooit meer volume bij komt.
+- 11 verdwenen rankende URL's op 2026-07-11 geredirect via vercel.json.
+
 ## KPI's
 
 AI-citaties (ChatGPT/Perplexity/AI Overviews), AI-referral-verkeer, organische posities

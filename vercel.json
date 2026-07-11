@@ -6,7 +6,12 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "bylder.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "bylder.com"
+        }
+      ],
       "destination": "https://www.bylder.com/:path*",
       "permanent": true
     },
@@ -37,55 +42,235 @@
     },
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "mijn.bylder.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "mijn.bylder.com"
+        }
+      ],
       "destination": "https://www.bylder.com",
       "permanent": true
     },
-
-    { "source": "/us",        "destination": "/en-us",        "permanent": true },
-    { "source": "/us/:path*", "destination": "/en-us/:path*", "permanent": true },
-
-    { "source": "/blog/checklist-bij-de-oplevering-van-je-nieuwbouwwoning-wat-moet-je-controleren-en-hoe-voorkom-je-opleveringsgebreken", "destination": "/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/", "permanent": true },
-
-    { "source": "/badkamer(.*)",              "destination": "/kopen/sanitair/",        "permanent": true },
-    { "source": "/badkamers(.*)",             "destination": "/kopen/sanitair/",        "permanent": true },
-
-    { "source": "/gereedschap(.*)",           "destination": "/kopen/",                 "permanent": true },
-    { "source": "/ijzerwaren(.*)",            "destination": "/kopen/",                 "permanent": true },
-    { "source": "/klussen(.*)",               "destination": "/kopen/",                 "permanent": true },
-    { "source": "/bouwmaterialen(.*)",        "destination": "/kopen/",                 "permanent": true },
-    { "source": "/bouwmarkt(.*)",             "destination": "/kopen/",                 "permanent": true },
-    { "source": "/doe-het-zelf(.*)",          "destination": "/kopen/",                 "permanent": true },
-
-    { "source": "/deuren-ramen-en-trappen(.*)", "destination": "/kopen/binnendeuren/",  "permanent": true },
-    { "source": "/deuren(.*)",                "destination": "/kopen/binnendeuren/",    "permanent": true },
-    { "source": "/kozijnen(.*)",              "destination": "/kopen/buitendeuren/",    "permanent": true },
-    { "source": "/ramen(.*)",                 "destination": "/kopen/buitendeuren/",    "permanent": true },
-    { "source": "/dakkapel(.*)",              "destination": "/kopen/dakkapellen/",     "permanent": true },
-
-    { "source": "/verf-en-behang(.*)",        "destination": "/kopen/verf/",            "permanent": true },
-    { "source": "/verf-behang(.*)",           "destination": "/kopen/verf/",            "permanent": true },
-    { "source": "/wanddecoratie(.*)",         "destination": "/kopen/wandafwerking/",   "permanent": true },
-
-    { "source": "/vloerbedekking(.*)",        "destination": "/kopen/vloeren/",         "permanent": true },
-
-    { "source": "/gordijnen(.*)",             "destination": "/kopen/raamdecoratie/",   "permanent": true },
-    { "source": "/zonwering(.*)",             "destination": "/kopen/raamdecoratie/",   "permanent": true },
-    { "source": "/raamdecoratie(.*)",         "destination": "/kopen/raamdecoratie/",   "permanent": true },
-
-    { "source": "/slaapkamer(.*)",            "destination": "/kopen/slaap-en-bedden/", "permanent": true },
-    { "source": "/bedden(.*)",                "destination": "/kopen/slaap-en-bedden/", "permanent": true },
-    { "source": "/matrassen(.*)",             "destination": "/kopen/slaap-en-bedden/", "permanent": true },
-
-    { "source": "/meubels(.*)",               "destination": "/kopen/zitmeubelen/",     "permanent": true },
-    { "source": "/meubelen(.*)",              "destination": "/kopen/zitmeubelen/",     "permanent": true },
-
-    { "source": "/tuin-en-buiten(.*)",        "destination": "/kopen/tuin/",            "permanent": true },
-    { "source": "/buitenleven(.*)",           "destination": "/kopen/tuin/",            "permanent": true },
-
-    { "source": "/elektra(.*)",               "destination": "/kopen/elektronica/",     "permanent": true },
-    { "source": "/elektronica(.*)",           "destination": "/kopen/elektronica/",     "permanent": true },
-    { "source": "/warmtepomp(.*)",            "destination": "/kopen/isolatie/",        "permanent": true }
+    {
+      "source": "/us",
+      "destination": "/en-us",
+      "permanent": true
+    },
+    {
+      "source": "/us/:path*",
+      "destination": "/en-us/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/blog/checklist-bij-de-oplevering-van-je-nieuwbouwwoning-wat-moet-je-controleren-en-hoe-voorkom-je-opleveringsgebreken",
+      "destination": "/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/",
+      "permanent": true
+    },
+    {
+      "source": "/badkamer(.*)",
+      "destination": "/kopen/sanitair/",
+      "permanent": true
+    },
+    {
+      "source": "/badkamers(.*)",
+      "destination": "/kopen/sanitair/",
+      "permanent": true
+    },
+    {
+      "source": "/gereedschap(.*)",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/ijzerwaren(.*)",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/klussen(.*)",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/bouwmaterialen(.*)",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/bouwmarkt(.*)",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/doe-het-zelf(.*)",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/deuren-ramen-en-trappen(.*)",
+      "destination": "/kopen/binnendeuren/",
+      "permanent": true
+    },
+    {
+      "source": "/deuren(.*)",
+      "destination": "/kopen/binnendeuren/",
+      "permanent": true
+    },
+    {
+      "source": "/kozijnen(.*)",
+      "destination": "/kopen/buitendeuren/",
+      "permanent": true
+    },
+    {
+      "source": "/ramen(.*)",
+      "destination": "/kopen/buitendeuren/",
+      "permanent": true
+    },
+    {
+      "source": "/dakkapel(.*)",
+      "destination": "/kopen/dakkapellen/",
+      "permanent": true
+    },
+    {
+      "source": "/verf-en-behang(.*)",
+      "destination": "/kopen/verf/",
+      "permanent": true
+    },
+    {
+      "source": "/verf-behang(.*)",
+      "destination": "/kopen/verf/",
+      "permanent": true
+    },
+    {
+      "source": "/wanddecoratie(.*)",
+      "destination": "/kopen/wandafwerking/",
+      "permanent": true
+    },
+    {
+      "source": "/vloerbedekking(.*)",
+      "destination": "/kopen/vloeren/",
+      "permanent": true
+    },
+    {
+      "source": "/gordijnen(.*)",
+      "destination": "/kopen/raamdecoratie/",
+      "permanent": true
+    },
+    {
+      "source": "/zonwering(.*)",
+      "destination": "/kopen/raamdecoratie/",
+      "permanent": true
+    },
+    {
+      "source": "/raamdecoratie(.*)",
+      "destination": "/kopen/raamdecoratie/",
+      "permanent": true
+    },
+    {
+      "source": "/slaapkamer(.*)",
+      "destination": "/kopen/slaap-en-bedden/",
+      "permanent": true
+    },
+    {
+      "source": "/bedden(.*)",
+      "destination": "/kopen/slaap-en-bedden/",
+      "permanent": true
+    },
+    {
+      "source": "/matrassen(.*)",
+      "destination": "/kopen/slaap-en-bedden/",
+      "permanent": true
+    },
+    {
+      "source": "/meubels(.*)",
+      "destination": "/kopen/zitmeubelen/",
+      "permanent": true
+    },
+    {
+      "source": "/meubelen(.*)",
+      "destination": "/kopen/zitmeubelen/",
+      "permanent": true
+    },
+    {
+      "source": "/tuin-en-buiten(.*)",
+      "destination": "/kopen/tuin/",
+      "permanent": true
+    },
+    {
+      "source": "/buitenleven(.*)",
+      "destination": "/kopen/tuin/",
+      "permanent": true
+    },
+    {
+      "source": "/elektra(.*)",
+      "destination": "/kopen/elektronica/",
+      "permanent": true
+    },
+    {
+      "source": "/elektronica(.*)",
+      "destination": "/kopen/elektronica/",
+      "permanent": true
+    },
+    {
+      "source": "/warmtepomp(.*)",
+      "destination": "/kopen/isolatie/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/plintloos-afwerken-de-strakke-en-moderne-look-voor-je-nieuwbouwwoning",
+      "destination": "/interieur-woning/vloer-kiezen/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/transformeer-je-standaardtrap-nieuwbouwtrap-met-luxe-en-betaalbare-overzettreden",
+      "destination": "/project/traprenovatie/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/over-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/voordelen-voor-woningeigenaren",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/onze-ambitie",
+      "destination": "/over-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/gratis-advies-nieuwbouw",
+      "destination": "/hoe-werkt-bylder-quickscan/",
+      "permanent": true
+    },
+    {
+      "source": "/affiliate",
+      "destination": "/voor-merken/",
+      "permanent": true
+    },
+    {
+      "source": "/Deelnemers",
+      "destination": "/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/voordelen-voor-bedrijven",
+      "destination": "/voor-vakbedrijven/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-tips",
+      "destination": "/nieuwbouw-gids/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-tips/vakman-vinden-en-bespaar-met-collectieve-kortingen-nieuwbouw",
+      "destination": "/nieuwbouw-korting/",
+      "permanent": true
+    }
   ],
   "rewrites": [
     {
@@ -101,9 +286,18 @@
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin",  "value": "https://www.bylder.com" },
-        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.bylder.com"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "POST, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type"
+        }
       ]
     }
   ]
