@@ -270,6 +270,36 @@
       "source": "/nieuwbouw-tips/vakman-vinden-en-bespaar-met-collectieve-kortingen-nieuwbouw",
       "destination": "/nieuwbouw-korting/",
       "permanent": true
+    },
+    {
+      "source": "/gids/checklist-oplevering-nieuwbouw",
+      "destination": "/oplevering-nieuwbouw/checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/gids/checklist-oplevering-nieuwbouw/",
+      "destination": "/oplevering-nieuwbouw/checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/gids/nieuwbouw-oplevering-gebreken",
+      "destination": "/oplevering-nieuwbouw/gebreken-melden/",
+      "permanent": true
+    },
+    {
+      "source": "/gids/nieuwbouw-oplevering-gebreken/",
+      "destination": "/oplevering-nieuwbouw/gebreken-melden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-gids/oplevering",
+      "destination": "/oplevering-nieuwbouw/checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-gids/oplevering/",
+      "destination": "/oplevering-nieuwbouw/checklist/",
+      "permanent": true
     }
   ],
   "rewrites": [

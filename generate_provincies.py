@@ -329,7 +329,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
         <div style="display:flex;flex-direction:column;gap:7px;">
           <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Wat is kopersbegeleiding?</a>
           <a href="/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Meerwerklijst controleren</a>
-          <a href="/nieuwbouw-gids/oplevering/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Checklist oplevering</a>
+          <a href="/oplevering-nieuwbouw/checklist/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Checklist oplevering</a>
           <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:12px;color:#3D5A3E;font-weight:600;margin-top:3px;">Alle begeleiding →</a>
         </div>
       </div>
