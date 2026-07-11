@@ -94,6 +94,19 @@ latere EN-uitbreiding.
 Wekelijkse cadans is bewust: consistente publicatie weegt zwaarder dan volume
 (clusterpublicatie 12+ mnd volgehouden ≈ +40% organisch verkeer vs. piekpublicatie).
 
+## Indexatie-context (GSC Coverage-export 2026-07-11 — geldt voor alle fases)
+
+Google indexeert momenteel maar ±4.500 van ±42.000 bekende pagina's (±11%);
+35.940 staan op "Gevonden – momenteel niet geïndexeerd" (crawl-budget/kwaliteits-
+throttle op de programmatische massa, vnl. /kopen/ ±33k) en 898 op "Gecrawld –
+niet geïndexeerd" (kwaliteitsafwijzing). Impressies groeien (±50/dag apr → ±630/dag
+jun) maar de long tail indexeert op dit tempo niet vanzelf. Consequenties voor de
+kennisbank-fases: (1) kennisbankpagina's blijven in de eigen kennisbank-sitemap
+en worden zwaar intern gelinkt vanaf al-geïndexeerde hubs — zij moeten wél snel
+indexeren; (2) géén extra massa-pSEO toevoegen in kennisbankfases; kwaliteit boven
+volume; (3) het earned-media-anker (Verbouwprijzen Rapport, fase 3) is óók het
+middel om domeinautoriteit te verhogen zodat Google meer crawl-budget toekent.
+
 ## KPI's
 
 AI-citaties (ChatGPT/Perplexity/AI Overviews), AI-referral-verkeer, organische posities
