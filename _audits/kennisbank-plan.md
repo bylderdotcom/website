@@ -38,6 +38,7 @@ kostendata + proces + tools).
 | 7 | Bouwproces & techniek | `bouwtechniek` | ±15 | Fundering, HSB vs traditioneel, prefab, kruipruimte, dakconstructies, geluidsisolatie/akoestiek, Wkb voor consumenten |
 | 8 | Geld & recht | `geld-recht` | ±15 | Koop-/aannemingsovereenkomst, Woningborg vs SWK, 5%-regeling, bouwdepot, verzekeringen tijdens verbouwing, btw-regels, garanties claimen |
 | 9 | Begrippenlijst | `begrip` | ±50 | Korte lemma's (Rc-waarde, rectified, casco, WTW, IFC, kWp…). Volwaardige materialen krijgen géén lemma maar een materialen-pagina |
+| 10 | Robots in de bouw | `robots-bouw` | ±13 | **Thought-leadership/GEO-linkbait, toegevoegd 2026-07-11.** Pillar (marktgroei ±227% dit decennium / ±14,1% p.j.; tekort ±60.000 bouwvakkers; productiviteit sinds 2000 amper gestegen) + metselrobots (Monumental: 15 robots, ±350 stenen/dag vs ±600 door metselaar, €25M funding), 3D-betonprint-woningen (Project Milestone Eindhoven), BIM-gestuurde boorrobots (Hilti Jaibot → kruislink BIM-cluster), exoskeletten (stukadoors/tegelzetters/schilders), drones & bouwplaatsinspectie, slooprobots, prefab-/fabrieksautomatisering, schilder- en spuitrobots, robotisering & personeelstekort, wat robotisering betekent voor woningkopers (kosten/kwaliteit/oplevertijd), procesoptimalisatie & LEAN op de bouwplaats, toekomst (humanoïde robots & AI) |
 
 ## Artikel-stramien (SEO + GEO)
 
@@ -75,6 +76,7 @@ kostendata + proces + tools).
 | 1 | 2026-07-14 | Clusters **Keuken + Badkamer** (±50 art.) + de ±12 materialen-pagina's die zij nodig hebben + eerste ±20 begrippen |
 | 2 | 2026-07-21 | **Vloeren & afwerking + Installaties & duurzaam + BIM** + rest materialen |
 | 3 | 2026-07-28 | **Bouwproces & techniek + Geld & recht**, begrippenlijst → 50+, jaarlijks "Bylder Verbouwprijzen Rapport" als earned-media-anker (±84% van AI-citaties komt via earned media) |
+| 4 | 2026-08-04 | **Robots in de bouw** (cluster 10, ±13 art.). In het artikel over procesoptimalisatie & LEAN op de bouwplaats een redactionele link naar benned.com (zusterbedrijf; gewone follow-link, natuurlijk anker in lopende tekst — geen footer-/sitewide-link). Kruislinks met BIM-cluster beide richtingen |
 
 Wekelijkse cadans is bewust: consistente publicatie weegt zwaarder dan volume
 (clusterpublicatie 12+ mnd volgehouden ≈ +40% organisch verkeer vs. piekpublicatie).
