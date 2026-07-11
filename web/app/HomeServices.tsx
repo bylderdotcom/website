@@ -63,6 +63,7 @@ export default function HomeServices() {
           .hsv-grid{grid-template-columns:1fr;gap:40px}
           .hsv-hub{position:static;transform:none;width:100%;height:auto;border-radius:18px;padding:20px;order:-1;border:none}
           .hsv-chip{display:none!important}
+          #pijler-advies{order:1}#pijler-ontwerpen{order:2}#pijler-shoppen{order:3}#pijler-aanbesteden{order:4}
         }
       `}</style>
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 5%' }}>
