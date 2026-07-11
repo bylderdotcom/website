@@ -10,9 +10,9 @@ const OG_DESC =
   'Advies, ontwerpen, shoppen en aanbesteden in één woningdossier. AI checkt de prijzen, echte vakmensen voeren uit. Leden besparen gemiddeld €4.200. Eenmalig €99.'
 
 export const metadata: Metadata = {
-  title: 'Bylder.com — Alles voor je (nieuwe) woning: offerte check, kopersbegeleiding & kortingen',
+  title: 'Alles voor je (nieuwe) woning — offerte check & kortingen | Bylder',
   description:
-    'Advies, ontwerpen, shoppen en aanbesteden in één woningdossier — voor nieuwbouw, bestaande bouw en renovatie. AI offerte-check, 61 woonmerken met korting. Gemiddeld €4.200 bespaard. Eenmalig €99.',
+    'Advies, ontwerpen, shoppen en aanbesteden in één woningdossier. AI offerte-check, 61 woonmerken met korting. Gemiddeld €4.200 bespaard. Eenmalig €99.',
   authors: [{ name: 'Bylder Nederland B.V.' }],
   keywords: [
     'kopersbegeleiding nieuwbouw', 'offerte check aannemer', 'meerwerk controleren',

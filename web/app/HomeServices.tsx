@@ -20,7 +20,7 @@ const VAKMANNEN: Vak[] = [
 
 const line = 'rgba(61,46,30,0.10)'
 const muted = 'rgba(61,46,30,0.72)'
-const faint = 'rgba(61,46,30,0.55)'
+const faint = 'rgba(61,46,30,0.7)'
 const mono = "'Space Mono',monospace"
 
 const pillar: React.CSSProperties = { background: '#fff', border: `1px solid ${line}`, borderRadius: 18, padding: '24px 24px 20px', position: 'relative', zIndex: 2, boxShadow: '0 14px 44px rgba(26,18,8,0.07)' }
