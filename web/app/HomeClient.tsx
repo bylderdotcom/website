@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import Script from 'next/script'
-import { HOME_HTML_TOP, HOME_HTML_BOTTOM, HOME_STYLE } from './homeHtml'
+import { HOME_HTML_TOP, HOME_HTML_MID, HOME_HTML_BOTTOM, HOME_STYLE } from './homeHtml'
 import HomeServices from './HomeServices'
 
 // Getrouwe port van de homepage-body. De secties + overlays worden byte-getrouw
@@ -142,6 +142,7 @@ export default function HomeClient() {
       <style dangerouslySetInnerHTML={{ __html: HOME_STYLE }} />
       <div dangerouslySetInnerHTML={{ __html: HOME_HTML_TOP }} />
       <HomeServices />
+      <div dangerouslySetInnerHTML={{ __html: HOME_HTML_MID }} />
       <div dangerouslySetInnerHTML={{ __html: HOME_HTML_BOTTOM }} />
 
       {/* Zelfstandig popup-script uit de bron; no-op op de homepage (detecteert #aupingPopup) */}
