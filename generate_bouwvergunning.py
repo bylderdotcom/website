@@ -282,18 +282,13 @@ NAV_HTML = f"""<nav class="glass-nav">
       <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
     <div class="nav-links">
-      <a href="/#features">Voordelen</a>
-      <a href="/vouchers/">Vouchers</a>
-      <a href="/functies/">Functies</a>
-      <div class="nav-dd">
-        <button class="nav-dd-btn" type="button">Voor wie? <span style="font-size:10px;">&#9660;</span></button>
-        <div class="nav-dd-menu">
-          <a href="/nieuwbouw-koper/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Meerwerklijst, vouchers, planning</span></a>
-          <a href="/bestaande-bouw/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Offerte-check, aannemer matching</span></a>
-          <a href="/renovatie/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Budgettool, subsidies, planning</span></a>
-        </div>
-      </div>
-      <a href="/prijzen/">Prijzen</a>
+      <a href="/nieuwbouw-koper/">Nieuwbouw kopen</a>
+      <a href="/verbouwen/">Verbouwen</a>
+      <a href="/interieur-woning/">Inrichten</a>
+      <a href="/woning-verduurzamen/">Verduurzamen</a>
+      <a href="/kennisbank/">Kennisbank</a>
+      <a href="/nieuwbouw-tools/">Tools</a>
+      <a href="/deelnemer-worden/">Deelnemer worden</a>
     </div>
     <div class="nav-right">
       <a href="https://app.bylder.com" class="nav-login">Inloggen</a>
@@ -302,14 +297,14 @@ NAV_HTML = f"""<nav class="glass-nav">
     </div>
   </div>
   <div class="nav-mobile" id="navMobile">
-    <a href="/#features">Voordelen</a>
-    <a href="/vouchers/">Vouchers</a>
-    <a href="/functies/">Functies</a>
-    <a href="{HUB}/">Bouwvergunning</a>
-    <a href="/prijzen/">Prijzen</a>
-    <a href="https://app.bylder.com">Inloggen</a>
-    <a href="{SIGNUP}" class="m-cta">Start gratis &#8594;</a>
-  </div>
+      <a href="/nieuwbouw-koper/">Nieuwbouw kopen</a>
+      <a href="/verbouwen/">Verbouwen</a>
+      <a href="/interieur-woning/">Inrichten</a>
+      <a href="/woning-verduurzamen/">Verduurzamen</a>
+      <a href="/kennisbank/">Kennisbank</a>
+      <a href="/nieuwbouw-tools/">Tools</a>
+      <a href="/deelnemer-worden/">Deelnemer worden</a>
+    </div>
 </nav>"""
 
 def head(title, desc, canonical, schema_blocks):
@@ -393,7 +388,7 @@ def cta_block():
     return f"""<div style="background:#3D5A3E;border-radius:20px;padding:44px;text-align:center;margin:40px 0;">
   <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.5);margin-bottom:10px;">Bylder-lidmaatschap &middot; eenmalig &euro;99</p>
   <h2 style="font-size:1.7rem;font-weight:800;color:#F5F0E8;margin-bottom:12px;">Lever je (ver)bouwplan goed voorbereid in</h2>
-  <p style="color:rgba(245,240,232,0.72);margin-bottom:26px;max-width:560px;margin-left:auto;margin-right:auto;font-size:15px;line-height:1.65;">Met Bylder-lidmaatschap upload je je bouwtekening &mdash; de AI berekent je oppervlaktes, lichtpunten en aansluitpunten &mdash; en krijg je een kostenraming per ruimte plus een eerlijke offerte-check. Zo onderbouw je je aanvraag en je meerwerk, en bespaar je met kortingen bij 40+ woonmerken. Begin gratis.</p>
+  <p style="color:rgba(245,240,232,0.72);margin-bottom:26px;max-width:560px;margin-left:auto;margin-right:auto;font-size:15px;line-height:1.65;">Met Bylder-lidmaatschap upload je je bouwtekening &mdash; de AI berekent je oppervlaktes, lichtpunten en aansluitpunten &mdash; en krijg je een kostenraming per ruimte plus een eerlijke offerte-check. Zo onderbouw je je aanvraag en je meerwerk, en bespaar je met kortingen bij 60+ woonmerken. Begin gratis.</p>
   <a href="{SIGNUP}" class="cta-primary">Start gratis &#8594;</a>
 </div>"""
 
@@ -500,7 +495,7 @@ def build_project(p):
         </div>
         <div class="card">
           <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">Slim verbouwen met Bylder</p>
-          <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:14px;line-height:1.6;">Offerte-check, kostenraming en kortingen bij 40+ merken.</p>
+          <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:14px;line-height:1.6;">Offerte-check, kostenraming en kortingen bij 60+ merken.</p>
           <a href="{SIGNUP}" style="display:block;text-align:center;background:#3D5A3E;color:#F5F0E8;padding:11px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis &#8594;</a>
         </div>
       </aside>
@@ -566,7 +561,7 @@ def build_topic(t):
         </div>
         <div class="card">
           <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">Slim verbouwen met Bylder</p>
-          <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:14px;line-height:1.6;">Offerte-check, kostenraming en kortingen bij 40+ merken.</p>
+          <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:14px;line-height:1.6;">Offerte-check, kostenraming en kortingen bij 60+ merken.</p>
           <a href="{SIGNUP}" style="display:block;text-align:center;background:#3D5A3E;color:#F5F0E8;padding:11px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis &#8594;</a>
         </div>
       </aside>

@@ -1,0 +1,48 @@
+# Bylder.com
+
+> Bylder is een Nederlands AI-platform voor kopers van nieuwbouw- en verbouwwoningen: onafhankelijke kopersbegeleiding, AI offerte-checks (aannemer, keuken, badkamer, verduurzaming), marktprijs-benchmarks per m², collectieve kortingsvouchers bij 60+ woonmerken en een landelijke directory van vakbedrijven. Cijfers op deze site (zoals gemiddelde besparingen en m²-prijzen) komen uit door Bylder geanalyseerde offertes en projecten.
+
+## Kennisbank (naslagwerk)
+
+- [Kennisbank-overzicht](https://www.bylder.com/kennisbank/): naslagwerk over keuken, badkamer, materialen, installaties, BIM en bouwtechniek
+- [Kosten besparen bij nieuwbouw](https://www.bylder.com/kennisbank/kosten-besparen-nieuwbouw/): stelposten, meerwerk-marges en collectief inkoopvoordeel
+
+## Prijzen & kosten (benchmarks uit echte offertes)
+
+- [Eerlijke prijzen per m²](https://www.bylder.com/eerlijke-prijzen/): marktprijzen voor badkamer, keuken, gietvloer, stucwerk, schilderwerk, vloerverwarming
+- [Renovatiekosten](https://www.bylder.com/renovatiekosten/): kosten per renovatietype (aanbouw, badkamer, keuken, dakkapel, warmtepomp, zonnepanelen)
+- [Bouwkosten per m² calculator](https://www.bylder.com/tools/bouwkosten-per-m2/)
+
+## Gidsen & proces
+
+- [Nieuwbouw gids (complete tijdlijn)](https://www.bylder.com/nieuwbouw-gids/): van aankoop tot afwerking na oplevering
+- [Alles over meerwerk](https://www.bylder.com/meerwerk/): wat is meerwerk, kosten, deadlines, onderhandelen, per meerwerk-item
+- [Bouwvergunning](https://www.bylder.com/bouwvergunning/): vergunningvrij bouwen, aanvragen, kosten, per bouwwerk (aanbouw, dakkapel, uitbouw…)
+- [Oplevering nieuwbouw](https://www.bylder.com/oplevering-nieuwbouw/): checklist, gebreken melden, 5%-regeling, garantie
+- [Woning verduurzamen](https://www.bylder.com/woning-verduurzamen/): isolatie, warmtepomp, zonnepanelen, energielabel
+- [Keuken renoveren](https://www.bylder.com/keuken-renoveren/) en [Badkamer renoveren](https://www.bylder.com/badkamer-renoveren/)
+
+## AI-tools
+
+- [AI QuickScan](https://www.bylder.com/hoe-werkt-bylder-quickscan/): upload plattegrond of offerte voor directe analyse
+- [Aannemer offerte-check](https://www.bylder.com/ai-offerte-check-aannemer/): AI controleert offertes op marktconformiteit
+- [Keuken & badkamer offerte-check](https://www.bylder.com/keuken-badkamer-offerte-check/)
+- [3D-sfeerimpressie](https://www.bylder.com/3d-sfeerimpressie/): plattegrond naar 3D-interieur in gekozen stijl
+- [Plattegrond inrichten](https://www.bylder.com/plattegrond-inrichten/): meubels op schaal passen
+- [Gratis nieuwbouw-tools](https://www.bylder.com/nieuwbouw-tools/): budget-calculator, meerwerk-calculator, opleveringschecklist
+
+## Vakbedrijven & aanbod
+
+- [Aannemers per plaats](https://www.bylder.com/aannemer/) — idem voor schilder, loodgieter, elektricien, stukadoor, badkamerspecialist e.a.
+- [Kortingsvouchers en showroomsales](https://www.bylder.com/showroomsale/) bij 60+ woonmerken
+
+## Deelnemen (zakelijk)
+
+- [Deelnemer worden](https://www.bylder.com/deelnemer-worden/): zakelijke hub — woonwinkels & merken, vakbedrijven, prefab-productie, interieurbouw, interieurontwerp & architecten, ontwikkelaars & bouwers, commercieel vastgoed
+- [Commercieel vastgoed](https://www.bylder.com/deelnemer-worden/commercieel-vastgoed/): AI offerte- en tender-check, m2-benchmarks en fit-out-visualisatie voor zakelijk vastgoed
+
+## Optional
+
+- [Over Bylder](https://www.bylder.com/over-ons/)
+- [Voor vakbedrijven](https://www.bylder.com/voor-vakbedrijven/)
+- [Voor merken & winkels](https://www.bylder.com/deelnemer-worden/woonwinkels-merken/)

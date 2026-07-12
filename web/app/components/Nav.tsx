@@ -1,40 +1,36 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 // Gedeelde site-navigatie — ÉÉN bron voor elke pagina.
-// Canonieke items (besloten 2026-07-04): Kortingscodes · Functies · Voor wie? ▾ · Prijzen.
-// 'Voordelen' (kapot #features-anker) en het dubbele 'Vouchers' zijn eruit; de
-// kortingen-ingang heet nu 'Kortingscodes' en wijst naar /kortingscode/.
+// Journey-nav (besloten 2026-07-11, zie _audits/deelnemer-structuur-plan.md):
+// Nieuwbouw kopen · Verbouwen · Inrichten · Verduurzamen · Kennisbank · Tools ·
+// Deelnemer worden. Het 'Voor wie?'-dropdown is vervangen door de journey-items;
+// Kortingscodes/Functies/Prijzen leven in de footer en de journey-hubs.
 
-const VOOR_WIE = [
-  { href: '/nieuwbouw-koper/', title: 'Nieuwbouwkoper', sub: 'Meerwerklijst, vouchers, planning' },
-  { href: '/bestaande-bouw/', title: 'Bestaande bouw koper', sub: 'Offerte-check, aannemer matching' },
-  { href: '/renovatie/', title: 'Renovatiewoning', sub: 'Budgettool, subsidies, planning' },
+const JOURNEY = [
+  { href: '/nieuwbouw-koper/', label: 'Nieuwbouw kopen' },
+  { href: '/verbouwen/', label: 'Verbouwen' },
+  { href: '/interieur-woning/', label: 'Inrichten' },
+  { href: '/woning-verduurzamen/', label: 'Verduurzamen' },
+  { href: '/kennisbank/', label: 'Kennisbank' },
+  { href: '/nieuwbouw-tools/', label: 'Tools' },
+  { href: '/deelnemer-worden/', label: 'Deelnemer worden' },
 ]
 
-const LINK: React.CSSProperties = { fontSize: '0.875rem', color: 'rgba(61,46,30,0.55)', textDecoration: 'none' }
+const LINK: React.CSSProperties = { fontSize: '0.875rem', color: 'rgba(61,46,30,0.55)', textDecoration: 'none', whiteSpace: 'nowrap' }
 
 export default function Nav() {
   const [isMobile, setIsMobile] = useState(false)
-  const [voorWieOpen, setVoorWieOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const wrapRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const mq = window.matchMedia('(max-width: 860px)')
+    const mq = window.matchMedia('(max-width: 1020px)')
     const update = () => setIsMobile(mq.matches)
     update()
     mq.addEventListener('change', update)
     return () => mq.removeEventListener('change', update)
   }, [])
-
-  useEffect(() => {
-    if (!voorWieOpen) return
-    const onClick = (e: MouseEvent) => { if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) setVoorWieOpen(false) }
-    document.addEventListener('mousedown', onClick)
-    return () => document.removeEventListener('mousedown', onClick)
-  }, [voorWieOpen])
 
   const logo = (
     <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', flexShrink: 0 }}>
@@ -53,25 +49,8 @@ export default function Nav() {
         {logo}
 
         {!isMobile && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
-            <a href="/kortingscode/" style={LINK}>Kortingscodes</a>
-            <a href="/functies/" style={LINK}>Functies</a>
-            <div ref={wrapRef} style={{ position: 'relative' }}>
-              <button onClick={() => setVoorWieOpen(o => !o)} style={{ ...LINK, background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: 0, display: 'flex', alignItems: 'center', gap: 4 }}>
-                Voor wie? <span style={{ fontSize: 10 }}>▼</span>
-              </button>
-              {voorWieOpen && (
-                <div style={{ position: 'absolute', top: 'calc(100% + 12px)', left: '50%', transform: 'translateX(-50%)', background: '#fff', border: '1px solid rgba(61,46,30,0.1)', borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8, minWidth: 260, zIndex: 200 }}>
-                  {VOOR_WIE.map(v => (
-                    <a key={v.href} href={v.href} style={{ display: 'block', padding: '10px 14px', borderRadius: 10, textDecoration: 'none' }}>
-                      <strong style={{ display: 'block', fontSize: 13, fontWeight: 700, color: '#1A1208' }}>{v.title}</strong>
-                      <span style={{ fontSize: 11, color: 'rgba(61,46,30,0.5)' }}>{v.sub}</span>
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-            <a href="/prijzen/" style={LINK}>Prijzen</a>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
+            {JOURNEY.map(j => <a key={j.href} href={j.href} style={LINK}>{j.label}</a>)}
           </div>
         )}
 
@@ -88,10 +67,7 @@ export default function Nav() {
 
       {isMobile && mobileOpen && (
         <div style={{ borderTop: '1px solid rgba(61,46,30,0.07)', background: '#F5F0E8', padding: '12px 24px', display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <a href="/kortingscode/" style={{ ...LINK, padding: '10px 0' }}>Kortingscodes</a>
-          <a href="/functies/" style={{ ...LINK, padding: '10px 0' }}>Functies</a>
-          {VOOR_WIE.map(v => <a key={v.href} href={v.href} style={{ ...LINK, padding: '10px 0' }}>{v.title}</a>)}
-          <a href="/prijzen/" style={{ ...LINK, padding: '10px 0' }}>Prijzen</a>
+          {JOURNEY.map(j => <a key={j.href} href={j.href} style={{ ...LINK, padding: '10px 0' }}>{j.label}</a>)}
           <a href="https://app.bylder.com" style={{ ...LINK, padding: '10px 0' }}>Inloggen</a>
         </div>
       )}
