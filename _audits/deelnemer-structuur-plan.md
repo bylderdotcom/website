@@ -51,13 +51,13 @@ segment een eigen pagina:
   voor toolplaatsing & data **[prijs TBD — beslissing Daniël]**.
 - Migratie: 301 van `/voor-merken/`.
 
-### 3.2 `/deelnemer-worden/vakbedrijven/`
+### 3.2 Vakbedrijven — blijft op `/voor-vakbedrijven/`
 - Doelgroep: stukadoors, schilders, installateurs, tegelzetters e.a.
 - Propositie: profiel in de directory (2.100+ plaatspagina's), gekoppeld aan kopers
   op het juiste moment; geen leadveiling.
 - Prijsmodel: **€79 eenmalig (bestaand, ongewijzigd)**.
 - Subsectie "Installatiepartner voor prefab" met kruislink naar 3.3.
-- Migratie: 301 van `/voor-vakbedrijven/`.
+- **Besluit uitvoering 2026-07-11**: URL blijft `/voor-vakbedrijven/` — 27.879 interne links (sitewide footer) verhuizen is onnodige churn; de hub linkt ernaar. Herstijlen naar segmenttemplate kan later in stap C.
 
 ### 3.3 `/deelnemer-worden/prefab-productie/`
 - Doelgroep: prefab-producenten (aanbouw, dakopbouw, bijgebouw).
@@ -109,7 +109,7 @@ vergoeding per activatie **[fee TBD]**. Vervangt de oude /affiliate-belofte.
 | Oud | Nieuw | Actie |
 |---|---|---|
 | /voor-merken/ | /deelnemer-worden/woonwinkels-merken/ | 301 + content herbruiken |
-| /voor-vakbedrijven/ | /deelnemer-worden/vakbedrijven/ | 301 + content herbruiken |
+| /voor-vakbedrijven/ | blijft (28k interne links) | hub linkt ernaar |
 | /partners/ | /deelnemer-worden/ | 301 (content verdelen over hub/3.6) |
 | /installatiepartner-worden/ | blijft, gelinkt vanuit 3.2/3.3 | canonical behouden |
 
@@ -144,3 +144,15 @@ oplevering-consolidatie: sed + generator-bronnen fixen).
 3. Commercieel vastgoed: direct met werkende diensten of eerst als
   lead-capture-pagina ("plan een gesprek") tot de zakelijke flow er is (advies:
   lead-capture eerst — geen beloftes op de site die het product nog niet waarmaakt).
+
+## Uitvoeringslog
+
+- 2026-07-11 — Besluiten gebruiker: commercieel vastgoed DIRECT VOLLEDIG,
+  naam "Deelnemer worden", segmentpagina's MET voorstel-prijzen.
+- 2026-07-11 — Stap A gebouwd: hub + 6 segmentpagina's via
+  `_scripts/generate_deelnemer.py` (bron van waarheid), redirects
+  /voor-merken/, /partners/ (+word-retailpartner), interne links omgelegd,
+  Footer.tsx (Next), sitemap.xml, llms.txt. Voorstel-prijzen: merken gratis +
+  Plus €149/mnd; prefab €149/match; interieurbouw & ontwerp €79 eenmalig;
+  ontwikkelaars vanaf €49/woning; commercieel vastgoed €299/dossier;
+  verwijzers €25/activatie.

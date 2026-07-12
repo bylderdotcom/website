@@ -9,7 +9,7 @@ const COLS: Col[] = [
     { href: '/kortingscode/', label: 'Kortingscodes' },
     { href: '/vouchers/', label: 'Vouchers' },
     { href: '/showroomsale/', label: 'Showroomsale' },
-    { href: '/voor-merken/', label: 'Voor merken' },
+    { href: '/deelnemer-worden/', label: 'Deelnemer worden' },
     { href: '/nieuwbouw-koper/', label: 'Nieuwbouwkoper' },
     { href: '/bestaande-bouw/', label: 'Bestaande bouw' },
     { href: '/renovatie/', label: 'Renovatie' },
@@ -58,7 +58,6 @@ const COLS: Col[] = [
     { href: '/privacy/', label: 'Privacybeleid' },
     { href: '/algemene-voorwaarden/', label: 'Voorwaarden' },
     { href: '/cookies/', label: 'Cookiebeleid' },
-    { href: '/partners/', label: 'Partners' },
     { href: 'mailto:info@bylder.com', label: 'Contact' },
   ] },
 ]

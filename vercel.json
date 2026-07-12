@@ -300,6 +300,36 @@
       "source": "/nieuwbouw-gids/oplevering/",
       "destination": "/oplevering-nieuwbouw/checklist/",
       "permanent": true
+    },
+    {
+      "source": "/voor-merken",
+      "destination": "/deelnemer-worden/woonwinkels-merken/",
+      "permanent": true
+    },
+    {
+      "source": "/voor-merken/",
+      "destination": "/deelnemer-worden/woonwinkels-merken/",
+      "permanent": true
+    },
+    {
+      "source": "/partners",
+      "destination": "/deelnemer-worden/",
+      "permanent": true
+    },
+    {
+      "source": "/partners/",
+      "destination": "/deelnemer-worden/",
+      "permanent": true
+    },
+    {
+      "source": "/partners/word-retailpartner",
+      "destination": "/deelnemer-worden/woonwinkels-merken/",
+      "permanent": true
+    },
+    {
+      "source": "/partners/word-retailpartner/",
+      "destination": "/deelnemer-worden/woonwinkels-merken/",
+      "permanent": true
     }
   ],
   "rewrites": [
