@@ -136,7 +136,7 @@ def build_json_ld(row: dict) -> str:
                     "@type": "Answer",
                     "text": (
                         f"Bylder kost €99 eenmalig. Dit geeft je toegang tot de AI Kopersbegeleider, "
-                        f"alle vouchers voor 40+ partnermerken, de AI QuickScan en de complete "
+                        f"alle vouchers voor 60+ partnermerken, de AI QuickScan en de complete "
                         f"nieuwbouwgids. Gezien de gemiddelde besparing van {row['gem_besparing']} "
                         f"in regio {gemeente} betaalt het lidmaatschap zich ruimschoots terug."
                     )

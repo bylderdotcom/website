@@ -121,7 +121,7 @@ gtag('config', 'G-LZYCRP1169');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title_txt}</title>
-<meta name="description" content="Nieuwbouw in {provincie}: {len(gemeenten)} gemeenten, {totaal_proj} actieve projecten. AI offerte check, gem. {gem_besp_fmt} bespaard en 10% korting bij 40+ merken via Bylder.">
+<meta name="description" content="Nieuwbouw in {provincie}: {len(gemeenten)} gemeenten, {totaal_proj} actieve projecten. AI offerte check, gem. {gem_besp_fmt} bespaard en 10% korting bij 60+ merken via Bylder.">
 <meta name="robots" content="index, follow">
 <meta name="last-modified" content="{TODAY}">
 <link rel="canonical" href="{url}">
@@ -279,7 +279,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
         Hoeveel bespaar ik als nieuwbouwkoper in {provincie}?
         <i class="ph-thin ph-caret-down faq-icon" style="color:#3D5A3E;font-size:12px;flex-shrink:0;"></i>
       </button></h3>
-      <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Kopers in {provincie} besparen gemiddeld <strong>{gem_besp_fmt}</strong> via Bylder. Dit is de gecombineerde besparing via AI-offerte controle, collectieve inkoopkorting bij 40+ merken en voucheractivaties. Per gemeente verschilt dit — klik op jouw gemeente voor de exacte cijfers.</div></div>
+      <div class="faq-body"><div style="padding:0 22px 18px;font-size:14px;line-height:1.75;color:rgba(61,46,30,0.7);">Kopers in {provincie} besparen gemiddeld <strong>{gem_besp_fmt}</strong> via Bylder. Dit is de gecombineerde besparing via AI-offerte controle, collectieve inkoopkorting bij 60+ merken en voucheractivaties. Per gemeente verschilt dit — klik op jouw gemeente voor de exacte cijfers.</div></div>
     </div>
 
     <div style="border:1px solid rgba(61,46,30,0.09);border-radius:14px;overflow:hidden;background:#fff;">
@@ -300,7 +300,7 @@ body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-seri
     <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:#F5F0E8;letter-spacing:-0.03em;margin-bottom:14px;line-height:1.1;">
       Klaar om slim te bouwen<br><span style="color:#8AAE8B;font-style:italic;font-weight:300;">in {provincie}?</span>
     </h2>
-    <p style="font-size:15px;color:rgba(245,240,232,0.5);max-width:440px;margin:0 auto 28px;line-height:1.7;">Gratis QuickScan · gem. {gem_besp_fmt} bespaard · 10% korting bij 40+ merken</p>
+    <p style="font-size:15px;color:rgba(245,240,232,0.5);max-width:440px;margin:0 auto 28px;line-height:1.7;">Gratis QuickScan · gem. {gem_besp_fmt} bespaard · 10% korting bij 60+ merken</p>
     <a href="https://mijn.bylder.com" class="cta-btn px-8 py-4 rounded-xl inline-flex items-center gap-2" style="font-size:14px;">
       <i class="ph-thin ph-magic-wand"></i> Start gratis QuickScan
     </a>

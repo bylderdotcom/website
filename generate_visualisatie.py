@@ -327,7 +327,7 @@ GIDSEN = [
      "intro": "Een professionele 3D-render laten maken kost al snel honderden euro's per beeld. Met Bylder zit het in je lidmaatschap, waarmee je tot tien impressies per maand maakt.",
      "punten": [("Losse render (markt)", "Vaak €150–€500+ per beeld bij een bureau."),
                 ("Bylder-lidmaatschap", "Eenmalig €99, tot 10 impressies per maand."),
-                ("Extra waarde", "Plus kortingen bij 40+ woonmerken.")],
+                ("Extra waarde", "Plus kortingen bij 60+ woonmerken.")],
      "tool_tie": "Voor de prijs van één marktrender maak je bij Bylder maandenlang impressies én bespaar je op je inrichting.",
      "qa": [("Zijn er kosten per impressie?", "Nee, binnen je lidmaatschap maak je tot tien impressies per maand zonder bijbetaling."),
             ("Is uploaden gratis?", "Ja, een account aanmaken en je plattegrond uploaden is gratis.")]},
@@ -447,7 +447,7 @@ def cta_block():
     return f"""<div style="background:#3D5A3E;border-radius:20px;padding:48px;text-align:center;margin:48px 0;">
   <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.5);margin-bottom:10px;">Gratis account · €99 ontgrendelt de tool</p>
   <h2 style="font-size:1.8rem;font-weight:800;color:#F5F0E8;margin-bottom:12px;">Zie je nieuwe woning vóór je een euro uitgeeft</h2>
-  <p style="color:rgba(245,240,232,0.7);margin-bottom:28px;max-width:520px;margin-left:auto;margin-right:auto;font-size:15px;">Maak gratis een account aan en upload je plattegrond. Met Bylder-lidmaatschap (eenmalig €99) genereer je tot {10} 3D-sfeerimpressies per maand in elke stijl — en activeer je kortingen bij 40+ woonmerken.</p>
+  <p style="color:rgba(245,240,232,0.7);margin-bottom:28px;max-width:520px;margin-left:auto;margin-right:auto;font-size:15px;">Maak gratis een account aan en upload je plattegrond. Met Bylder-lidmaatschap (eenmalig €99) genereer je tot {10} 3D-sfeerimpressies per maand in elke stijl — en activeer je kortingen bij 60+ woonmerken.</p>
   <a href="{SIGNUP}" class="cta-primary">Start gratis →</a>
 </div>"""
 
@@ -499,7 +499,7 @@ def build_hub():
     qa = [
         ("Wat is een 3D-sfeerimpressie?", "Een 3D-sfeerimpressie is een realistische weergave van hoe een ruimte eruit kan zien, gegenereerd uit je plattegrond. Het laat materialen, kleuren en sfeer zien, zodat je je nieuwe woning kunt ervaren vóór de afwerking en inrichting vaststaan."),
         ("Hoe maakt Bylder de impressie?", "Je uploadt je plattegrond of bouwtekening in je Bylder-dashboard en kiest een van de zes interieurstijlen. De AI genereert binnen enkele minuten een sfeerimpressie van je ruimte in die stijl."),
-        ("Is het gratis?", "Een account aanmaken en je plattegrond uploaden is gratis. Het genereren van 3D-sfeerimpressies zit in het Bylder-lidmaatschap (eenmalig €99), waarmee je tot tien impressies per maand maakt en kortingen bij 40+ woonmerken activeert."),
+        ("Is het gratis?", "Een account aanmaken en je plattegrond uploaden is gratis. Het genereren van 3D-sfeerimpressies zit in het Bylder-lidmaatschap (eenmalig €99), waarmee je tot tien impressies per maand maakt en kortingen bij 60+ woonmerken activeert."),
         ("Vervangt dit een interieurontwerper of bouwtekening?", "Nee. Een sfeerimpressie is bedoeld om snel te verkennen, keuzes te maken en te communiceren. Voor een definitief ontwerp of een bouwvergunning blijven een interieurontwerper en gecertificeerde tekeningen nodig."),
         ("Voor welke woningen werkt het?", "Voor nieuwbouw, bestaande bouw én renovatie. De tool is woningtype-bewust, zodat de impressie aansluit op jouw situatie."),
     ]
@@ -544,7 +544,7 @@ def build_hub():
           <li><strong>Betere keuzes.</strong> Zie het effect van een vloer, kleur of stijl vóórdat je tekent bij de leverancier.</li>
           <li><strong>Minder spijt en meerwerk.</strong> Twijfel je tussen opties? Visualiseer beide en kies bewust.</li>
           <li><strong>Makkelijker afstemmen.</strong> Eén beeld zegt meer dan tien gesprekken met je partner of aannemer.</li>
-          <li><strong>Direct gekoppeld aan voordeel.</strong> Vanuit je impressie activeer je kortingen bij 40+ woonmerken.</li>
+          <li><strong>Direct gekoppeld aan voordeel.</strong> Vanuit je impressie activeer je kortingen bij 60+ woonmerken.</li>
         </ul>
 
         <div class="highlight"><strong>Voor nieuwbouw, bestaande bouw én renovatie.</strong> De tool is woningtype-bewust: of je nu een nieuwbouwwoning afwerkt of een bestaande woning verbouwt, de impressie sluit aan op jouw situatie.</div>
@@ -571,7 +571,7 @@ def build_hub():
           <div style="display:flex;flex-direction:column;gap:8px;">{"".join(f'<a href="{HUB}/{s["key"]}/" style="font-size:13px;color:#3D5A3E;text-decoration:none;">{s["label"]} — {s["tagline"].lower()}</a>' for s in STYLES)}</div>
         </div>
         <div class="card">
-          <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">10% korting bij 40+ merken</p>
+          <p style="font-size:13px;font-weight:700;color:#1A1208;margin-bottom:8px;">10% korting bij 60+ merken</p>
           <p style="font-size:13px;color:rgba(61,46,30,0.55);margin-bottom:16px;line-height:1.6;">Auping, Goossens en meer — gekoppeld aan je woning.</p>
           <a href="/#vouchers" style="display:block;text-align:center;background:#F5F0E8;color:#3D5A3E;border:1.5px solid rgba(61,90,62,0.3);padding:11px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Vouchers bekijken →</a>
         </div>

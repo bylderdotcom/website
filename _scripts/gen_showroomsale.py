@@ -140,7 +140,7 @@ def store_page(brand, store, items, outroot):
 <h1>{brand} showroomsale — {store}</h1>
 <p>Echte showroommodellen van {brand} bij <strong>{store}</strong>{(' in '+city) if city else ''}, met flinke korting t.o.v. de adviesprijs. Op = op.</p>
 <div class="grid">{''.join(item_card(it) for it in items)}</div>
-<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 6px;">Interesse in een showroomstuk?</p><p style="margin:0;font-size:14px;">Reserveer 4 dagen om het in de winkel te bekijken, of leg het vast met een aanbetaling. <a href="/vouchers/">Word Bylder lid</a> voor exclusieve kortingen bij 40+ woonmerken.</p></div>"""
+<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 6px;">Interesse in een showroomstuk?</p><p style="margin:0;font-size:14px;">Reserveer 4 dagen om het in de winkel te bekijken, of leg het vast met een aanbetaling. <a href="/vouchers/">Word Bylder lid</a> voor exclusieve kortingen bij 60+ woonmerken.</p></div>"""
     write(f"{outroot}/showroomsale/{bslug}/{sslug}/index.html",
           HEAD.format(ga=GA, title=title, desc=desc, robots="index, follow", canonical=canonical, schema=schema) + body + FOOT)
     return canonical
@@ -172,7 +172,7 @@ FAQS = [
     ("Zijn showroommodellen nieuw?",
      "Showroommodellen zijn niet nieuw verpakt, maar hebben alleen als demonstratiemodel in de winkel gestaan en zijn vaak nauwelijks gebruikt. Je krijgt dus een A-merk in nette staat voor een fractie van de nieuwprijs."),
     ("Waarom showroommodellen kopen via Bylder?",
-     "Bylder bundelt showroomsales van geselecteerde woonwinkels op één plek, met eerlijke van/voor-prijzen. Als Bylder-lid krijg je daarnaast exclusieve kortingsvouchers bij 40+ woonmerken voor de rest van je inrichting."),
+     "Bylder bundelt showroomsales van geselecteerde woonwinkels op één plek, met eerlijke van/voor-prijzen. Als Bylder-lid krijg je daarnaast exclusieve kortingsvouchers bij 60+ woonmerken voor de rest van je inrichting."),
 ]
 
 def main_hub(brands, outroot):
@@ -187,7 +187,7 @@ def main_hub(brands, outroot):
         stores_section = ('<h2>Deelnemende winkels</h2>'
                           '<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 6px;">Binnenkort: showroommodellen bij geselecteerde winkels</p>'
                           '<p style="margin:0;font-size:14px;">We koppelen woonwinkels die hun showroommodellen met korting aanbieden. '
-                          '<a href="/vouchers/">Word Bylder-lid</a> om als eerste de showroomsales te zien — plus exclusieve kortingsvouchers bij 40+ woonmerken.</p></div>')
+                          '<a href="/vouchers/">Word Bylder-lid</a> om als eerste de showroomsales te zien — plus exclusieve kortingsvouchers bij 60+ woonmerken.</p></div>')
     faq_html = "".join('<details class="faq"><summary>%s</summary><p>%s</p></details>' % (q, a) for q, a in FAQS)
     faq_ld = ",".join('{"@type":"Question","name":"%s","acceptedAnswer":{"@type":"Answer","text":"%s"}}'
                       % (q.replace('"', "'"), a.replace('"', "'")) for q, a in FAQS)
@@ -219,7 +219,7 @@ def main_hub(brands, outroot):
 <h2>Veelgestelde vragen</h2>
 {faq_html}
 
-<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 6px;">Bespaar op je hele inrichting</p><p style="margin:0;font-size:14px;">Word Bylder-lid en krijg naast de showroomsales <strong>exclusieve kortingsvouchers bij 40+ woonmerken</strong> — gemiddeld €4.200 besparing. <a href="/vouchers/">Bekijk de vouchers →</a></p></div>"""
+<div class="cta"><p style="font-weight:700;color:#1A1208;margin:0 0 6px;">Bespaar op je hele inrichting</p><p style="margin:0;font-size:14px;">Word Bylder-lid en krijg naast de showroomsales <strong>exclusieve kortingsvouchers bij 60+ woonmerken</strong> — gemiddeld €4.200 besparing. <a href="/vouchers/">Bekijk de vouchers →</a></p></div>"""
     write(f"{outroot}/showroomsale/index.html",
           HEAD.format(ga=GA, title=title, desc=desc, robots="index, follow", canonical=canonical, schema=schema) + body + FOOT)
     return canonical

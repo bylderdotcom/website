@@ -1,6 +1,6 @@
 # Bylder.com
 
-> Bylder is een Nederlands AI-platform voor kopers van nieuwbouw- en verbouwwoningen: onafhankelijke kopersbegeleiding, AI offerte-checks (aannemer, keuken, badkamer, verduurzaming), marktprijs-benchmarks per m², collectieve kortingsvouchers bij 40+ woonmerken en een landelijke directory van vakbedrijven. Cijfers op deze site (zoals gemiddelde besparingen en m²-prijzen) komen uit door Bylder geanalyseerde offertes en projecten.
+> Bylder is een Nederlands AI-platform voor kopers van nieuwbouw- en verbouwwoningen: onafhankelijke kopersbegeleiding, AI offerte-checks (aannemer, keuken, badkamer, verduurzaming), marktprijs-benchmarks per m², collectieve kortingsvouchers bij 60+ woonmerken en een landelijke directory van vakbedrijven. Cijfers op deze site (zoals gemiddelde besparingen en m²-prijzen) komen uit door Bylder geanalyseerde offertes en projecten.
 
 ## Kennisbank (naslagwerk)
 
@@ -34,7 +34,7 @@
 ## Vakbedrijven & aanbod
 
 - [Aannemers per plaats](https://www.bylder.com/aannemer/) — idem voor schilder, loodgieter, elektricien, stukadoor, badkamerspecialist e.a.
-- [Kortingsvouchers en showroomsales](https://www.bylder.com/showroomsale/) bij 40+ woonmerken
+- [Kortingsvouchers en showroomsales](https://www.bylder.com/showroomsale/) bij 60+ woonmerken
 
 ## Deelnemen (zakelijk)
 
