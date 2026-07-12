@@ -66,7 +66,7 @@ NAV = """<nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px
       <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kennisbank</a>
       <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Tools</a>
       <a href="/deelnemer-worden/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Deelnemer worden</a>
-      <a href="https://mijn.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start Project →</a>
+      <a href="https://app.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start Project →</a>
     </div>
   </div>
 </nav>"""
@@ -155,7 +155,7 @@ SEGMENTS = [
          ('Showroomsale','Plan een exclusieve sale voor Bylder-leden en vul rustige showroomdagen.'),
          ('Koopmoment-data','Zie wat kopers zoeken en wanneer: inzichten per categorie en regio.')],
   price=('Gratis instap', 'Voucher- en Showroomsale-plaatsing kosten niets. Plus-plaatsing in de ontwerptools + koopmoment-data: €149 per maand, maandelijks opzegbaar.'),
-  cta=('Maak een merchant-account aan','https://mijn.bylder.com'),
+  cta=('Maak een merchant-account aan','https://app.bylder.com'),
   faq=[('Wat kost deelnemen als merk of winkel?','De basisplaatsing (kortingsvoucher, Showroomsale) is gratis. De Plus-laag — productplaatsing in de ontwerptools en koopmoment-data — kost €149 per maand en is maandelijks opzegbaar.'),
        ('Hoe komt mijn product in de ontwerptools terecht?','Je levert productdata (afbeeldingen, maten, prijzen) aan via je merchant-account. Wij plaatsen je producten in de 3D-sfeerimpressie en room planner waar ze passen bij stijl en ruimte.'),
        ('Voor wie is de showroom-propositie?','Keuken- en badkamerspeciaalzaken met een fysieke showroom of design center. Bylder stuurt kopers die hun casco-keuzes maken gericht jouw kant op.')],
