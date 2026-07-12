@@ -65,8 +65,8 @@ NAV = """<nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px
       <a href="/woning-verduurzamen/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Verduurzamen</a>
       <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kennisbank</a>
       <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Tools</a>
-      <a href="/deelnemer-worden/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Deelnemer worden</a>
-      <a href="https://app.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start Project →</a>
+      <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a>
+      <a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
     </div>
   </div>
 </nav>"""
@@ -91,9 +91,9 @@ FOOTER = """<footer style="background:#1A1208;padding:64px 0 40px;">
           </ul>
         </div>
         <div>
-          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Deelnemen</p>
+          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Zakelijk</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="/deelnemer-worden/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Deelnemer worden</a></li>
+            <li><a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a></li>
             <li><a href="/deelnemer-worden/woonwinkels-merken/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Woonwinkels &amp; merken</a></li>
             <li><a href="/voor-vakbedrijven/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Vakbedrijven</a></li>
             <li><a href="/deelnemer-worden/commercieel-vastgoed/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Commercieel vastgoed</a></li>
@@ -274,7 +274,7 @@ def render_segment(s):
     return (HEAD.format(title=s['title'],desc=s['desc'],url=url,css=CSS)
       + faq_ld + service_ld + bc + NAV
       + f'''<main style="padding:72px 0 80px;"><div class="container">
-<p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.4);">Bylder.com</a> → <a href="/deelnemer-worden/" style="color:rgba(61,46,30,0.4);">Deelnemer worden</a> → <span style="color:rgba(61,46,30,0.65);">{s['naam']}</span></p>
+<p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.4);">Bylder.com</a> → <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a> → <span style="color:rgba(61,46,30,0.65);">{s['naam']}</span></p>
 <div class="badge">Deelnemer worden</div>
 <h1 style="font-size:2.6rem;font-weight:800;margin-bottom:20px;line-height:1.1;max-width:820px;">{s['naam']}: sta waar de klant al is</h1>
 {intro}

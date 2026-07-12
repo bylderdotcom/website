@@ -165,3 +165,9 @@ oplevering-consolidatie: sed + generator-bronnen fixen).
   aannemer-matching/offerte-check/renovatiekosten (minimale conversie-nav met
   alleen logo+CTA — geen verouderde links). Eindaudit: 0 gedeployde pagina's
   met verouderd menu.
+- 2026-07-12 — Zakelijk-structuur (besluit Daniël): nav-item heet 'Zakelijk'
+  → /zakelijk/-landing met twee takken (Deelnemer worden = kopers bereiken;
+  Commercieel vastgoed = diensten afnemen). Nav.tsx: Zakelijk-dropdown desktop
+  + sectiekopje mobiel. Statische massa via _scripts/nav_zakelijk_pass.py:
+  'Deelnemer worden'-item → 'Zakelijk', kopje+2 links in nav-mobile-menu's,
+  CTA overal gelijkgetrokken naar 'Start gratis → app.bylder.com/registreer'.
