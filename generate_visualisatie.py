@@ -51,18 +51,13 @@ NAV_HTML = f"""<nav class="glass-nav">
       <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
     <div class="nav-links">
-      <a href="/#features">Voordelen</a>
-      <a href="/vouchers/">Vouchers</a>
-      <a href="/functies/">Functies</a>
-      <div class="nav-dd">
-        <button class="nav-dd-btn" type="button">Voor wie? <span style="font-size:10px;">&#9660;</span></button>
-        <div class="nav-dd-menu">
-          <a href="/nieuwbouw-koper/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Meerwerklijst, vouchers, planning</span></a>
-          <a href="/bestaande-bouw/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Offerte-check, aannemer matching</span></a>
-          <a href="/renovatie/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.5);">Budgettool, subsidies, planning</span></a>
-        </div>
-      </div>
-      <a href="/prijzen/">Prijzen</a>
+      <a href="/nieuwbouw-koper/">Nieuwbouw kopen</a>
+      <a href="/verbouwen/">Verbouwen</a>
+      <a href="/interieur-woning/">Inrichten</a>
+      <a href="/woning-verduurzamen/">Verduurzamen</a>
+      <a href="/kennisbank/">Kennisbank</a>
+      <a href="/nieuwbouw-tools/">Tools</a>
+      <a href="/deelnemer-worden/">Deelnemer worden</a>
     </div>
     <div class="nav-right">
       <a href="https://app.bylder.com" class="nav-login">Inloggen</a>
@@ -71,17 +66,14 @@ NAV_HTML = f"""<nav class="glass-nav">
     </div>
   </div>
   <div class="nav-mobile" id="navMobile">
-    <a href="/#features">Voordelen</a>
-    <a href="/vouchers/">Vouchers</a>
-    <a href="/functies/">Functies</a>
-    <a href="/3d-sfeerimpressie/">3D-sfeerimpressie</a>
-    <a href="/nieuwbouw-koper/">Nieuwbouwkoper</a>
-    <a href="/bestaande-bouw/">Bestaande bouw</a>
-    <a href="/renovatie/">Renovatie</a>
-    <a href="/prijzen/">Prijzen</a>
-    <a href="https://app.bylder.com">Inloggen</a>
-    <a href="{SIGNUP}" class="m-cta">Start gratis &#8594;</a>
-  </div>
+      <a href="/nieuwbouw-koper/">Nieuwbouw kopen</a>
+      <a href="/verbouwen/">Verbouwen</a>
+      <a href="/interieur-woning/">Inrichten</a>
+      <a href="/woning-verduurzamen/">Verduurzamen</a>
+      <a href="/kennisbank/">Kennisbank</a>
+      <a href="/nieuwbouw-tools/">Tools</a>
+      <a href="/deelnemer-worden/">Deelnemer worden</a>
+    </div>
 </nav>"""
 
 # ── De 6 stijlen (1-op-1 met app/src/lib/renderStyles.ts) ────────────────────

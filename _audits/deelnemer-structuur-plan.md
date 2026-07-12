@@ -156,3 +156,12 @@ oplevering-consolidatie: sed + generator-bronnen fixen).
   Plus €149/mnd; prefab €149/match; interieurbouw & ontwerp €79 eenmalig;
   ontwikkelaars vanaf €49/woning; commercieel vastgoed €299/dossier;
   verwijzers €25/activatie.
+- 2026-07-11 — Stap B+C uitgevoerd: journey-hub /verbouwen/ gebouwd; Nav.tsx
+  (canonieke nav voor alle Next-routes) omgezet naar journey-nav; sitewide
+  nav-pass via _scripts/nav_journey_pass.py over ±34.600 statische pagina's +
+  generator-bronnen (4 patronen: nav-links/nav-mobile-classes, inline-flex,
+  class-flex, attribuutvolgorde-tolerant met logo-guard). Bewust overgeslagen:
+  /kopen/ en /kortingscode/-statisch (geschaduwd door Next-routes),
+  aannemer-matching/offerte-check/renovatiekosten (minimale conversie-nav met
+  alleen logo+CTA — geen verouderde links). Eindaudit: 0 gedeployde pagina's
+  met verouderd menu.
