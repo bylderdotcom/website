@@ -6,10 +6,10 @@ type Col = { title: string; links: { href: string; label: string; accent?: boole
 const COLS: Col[] = [
   { title: 'Ontdek', links: [
     { href: '/prijzen/', label: 'Prijzen' },
+    { href: '/zakelijk/', label: 'Zakelijk' },
     { href: '/kortingscode/', label: 'Kortingscodes' },
     { href: '/vouchers/', label: 'Vouchers' },
     { href: '/showroomsale/', label: 'Showroomsale' },
-    { href: '/deelnemer-worden/', label: 'Deelnemer worden' },
     { href: '/nieuwbouw-koper/', label: 'Nieuwbouwkoper' },
     { href: '/bestaande-bouw/', label: 'Bestaande bouw' },
     { href: '/renovatie/', label: 'Renovatie' },

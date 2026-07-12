@@ -38,6 +38,7 @@
 
 ## Deelnemen (zakelijk)
 
+- [Bylder Zakelijk (overzicht)](https://www.bylder.com/zakelijk/): twee ingangen — deelnemer worden of diensten voor commercieel vastgoed
 - [Deelnemer worden](https://www.bylder.com/deelnemer-worden/): zakelijke hub — woonwinkels & merken, vakbedrijven, prefab-productie, interieurbouw, interieurontwerp & architecten, ontwikkelaars & bouwers, commercieel vastgoed
 - [Commercieel vastgoed](https://www.bylder.com/deelnemer-worden/commercieel-vastgoed/): AI offerte- en tender-check, m2-benchmarks en fit-out-visualisatie voor zakelijk vastgoed
 

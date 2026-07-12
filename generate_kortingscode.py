@@ -109,8 +109,8 @@ NAV = """<nav class="glass-nav fixed top-0 left-0 right-0 z-50" style="height:64
       <a href="/woning-verduurzamen/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Verduurzamen</a>
       <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kennisbank</a>
       <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Tools</a>
-      <a href="/deelnemer-worden/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Deelnemer worden</a>
-      <a href="https://app.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start Project →</a>
+      <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a>
+      <a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
     </div>
     <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
       <a href="/nieuwbouw-koper/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Nieuwbouw kopen</a>
@@ -119,8 +119,8 @@ NAV = """<nav class="glass-nav fixed top-0 left-0 right-0 z-50" style="height:64
       <a href="/woning-verduurzamen/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Verduurzamen</a>
       <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kennisbank</a>
       <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Tools</a>
-      <a href="/deelnemer-worden/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Deelnemer worden</a>
-      <a href="https://app.bylder.com" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start Project →</a>
+      <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a>
+      <a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>
     </div>
   </div>
 </nav>"""
