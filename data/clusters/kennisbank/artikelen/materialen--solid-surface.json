@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "solid-surface",
+  "titel": "Solid surface: eigenschappen, prijs en onderhoud",
+  "title_tag": "Solid surface: eigenschappen, prijs, onderhoud | Bylder",
+  "meta_description": "Solid surface is mineraal gevuld acrylaat (zoals Corian): naadloos, vormbaar en repareerbaar. Bekijk prijzen, toepassingen en alternatieven."
+,
+  "intro": [
+    "Solid surface is een massief kunststofmateriaal van acrylhars gevuld met minerale poeders (vooral aluminiumtrihydraat), door en door gekleurd. Bekende merknamen zijn Corian, HI-MACS en Krion. Omdat het materiaal thermisch vormbaar en onzichtbaar te verlijmen is, zijn volledig naadloze bladen, wastafels en zelfs gebogen vormen mogelijk.",
+    "Die naadloosheid is de grote troef: een werkblad met geïntegreerde spoelbak en opstaande achterwand zonder één kier is hygiënisch en strak. Solid surface voelt bovendien warmer en zachter aan dan steen."
+  ],
+  "stats": [
+    ["€400–€700", "per m¹ werkblad"],
+    ["20–30 jaar", "levensduur, opschuurbaar"],
+    ["100%", "repareerbaar: krassen zijn weg te polijsten"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is solid surface geschikt voor?",
+      "html": "<p>Solid surface wordt gebruikt voor keukenwerkbladen met naadloos geïntegreerde spoelbakken, wastafelbladen en -meubels, douchebakken, badombouwen en wandbekleding in natte ruimtes. Ook in zorg en horeca is het populair vanwege de naadloze, hygiënische afwerking. Voor vloeren is het ongeschikt (te zacht) en voor buiten beperkt geschikt (afhankelijk van merk en kleur kan uv-licht verkleuring geven).</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van solid surface?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Duur</td><td>€400–€700 per m¹ werkblad; maatwerk wastafels daarboven</td></tr><tr><td>Krasvastheid</td><td>Matig</td><td>Zachter dan steen; krassen ontstaan sneller maar zijn weg te polijsten</td></tr><tr><td>Hittebestendigheid</td><td>Matig</td><td>Acrylaat vervormt bij hitte; onderzetter verplicht</td></tr><tr><td>Vochtbestendigheid</td><td>Uitstekend</td><td>Niet poreus en naadloos: geen kieren waar vocht in trekt</td></tr><tr><td>Onderhoud</td><td>Zeer laag</td><td>Schoonmaken met mild middel; nooit impregneren</td></tr><tr><td>Levensduur</td><td>20–30 jaar</td><td>Meerdere keren volledig te renoveren door schuren en polijsten</td></tr><tr><td>Duurzaamheid</td><td>Gemiddeld</td><td>Kunststofbasis, maar repareerbaarheid verlengt de levensduur fors</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je solid surface?",
+      "html": "<p>Dagelijks onderhoud is minimaal: schoonmaken met water en een mild, licht schurend middel (op matte afwerking) of een zachte reiniger op gepolijste vlakken. Het unieke aan solid surface is het herstel: oppervlakkige krassen wrijf je zelf weg met een schuursponsje passend bij de afwerkingsgraad, en diepere schade, brandplekjes of zelfs een barst kan een verwerker wegschuren of met nieuw materiaal onzichtbaar repareren. Een blad van twintig jaar oud kan zo weer als nieuw worden opgeleverd.</p>"
+    },
+    {
+      "kop": "Voor wie is solid surface de juiste keuze?",
+      "html": "<p>Solid surface past bij wie een naadloos, hygiënisch en zacht aanvoelend oppervlak wil — vooral in de badkamer en bij designkeukens met geïntegreerde spoelbak. Vergelijk je met <a href=\"/kennisbank/materialen/kwartscomposiet/\">kwartscomposiet</a>: dat is krasvaster en goedkoper, maar kent zichtbare naden en lijmranden. Vergelijk je met <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a>: dat wint op hitte- en krasbestendigheid, maar is hard, koud en niet repareerbaar. Wie vooral snijdt en heet kookt, kiest steenachtig; wie strakke naadloosheid en repareerbaarheid zoekt, kiest solid surface.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Corian hetzelfde als solid surface?",
+      "a": "Corian is een merknaam van DuPont en tegelijk de bekendste solid surface. Solid surface is de materiaalcategorie; HI-MACS, Krion en Staron zijn vergelijkbare merken met elk eigen kleuren en garanties."
+    },
+    {
+      "q": "Krast solid surface snel?",
+      "a": "Sneller dan steen of keramiek, ja — het is een acrylaatmateriaal. Het verschil: krassen zijn geen definitieve schade. Lichte krassen poets je zelf weg, diepere laat je wegschuren. Matte, lichte kleuren tonen krassen het minst."
+    },
+    {
+      "q": "Wat kost een solid surface werkblad?",
+      "a": "Reken op €400–€700 per strekkende meter, inclusief verwerking. Naadloos ingelijmde spoelbakken en opstaande randen kosten extra, maar zijn juist de reden om voor dit materiaal te kiezen."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/showroomsale/", "Showroomsale"],
+    "zusters": ["composiet", "kwartscomposiet", "keramiek"]
+  }
+}

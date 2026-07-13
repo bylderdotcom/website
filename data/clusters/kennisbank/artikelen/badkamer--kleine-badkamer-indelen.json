@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "kleine-badkamer-indelen",
+  "titel": "Een kleine badkamer indelen (minder dan 5 m²)",
+  "title_tag": "Kleine badkamer indelen: tips voor <5 m² | Bylder",
+  "meta_description": "Een kleine badkamer onder 5 m² deel je in met een inloopdouche in de hoek, hangend sanitair en slim maatwerk. Praktische maten en tips.",
+  "intro": [
+    "Een kleine badkamer onder de 5 m² deel je in door de douche in een hoek of aan de kopse kant te plaatsen, te kiezen voor hangend en verkort sanitair, en looplijnen vrij te houden. Met de juiste maten past in 4 m² een volwaardige badkamer met douche, wastafel en toilet.",
+    "Kleine badkamers vragen om plannen op de centimeter: elke deur die draait, elke uitstekende rand telt. Het goede nieuws is dat fabrikanten hier volop op inspelen met compacte diepe wastafels, verkorte toiletten en douchewanden op maat. De indeling bepaal je één keer — leidingwerk verplaatsen achteraf is duur meerwerk."
+  ],
+  "stats": [
+    ["4 m²", "minimaal voor douche, wastafel en toilet"],
+    ["90x90 cm", "gangbaar minimum voor een comfortabele douche"],
+    ["55-60 cm", "vrije ruimte vóór toilet en wastafel"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke maten heb je minimaal nodig in een kleine badkamer?",
+      "html": "<p>Reken met deze praktische minimummaten en er ontstaat vanzelf een indeling die werkt:</p><table class=\"vgl\"><thead><tr><th>Onderdeel</th><th>Minimale maat</th><th>Comfortabel</th></tr></thead><tbody><tr><td>Douche</td><td>80x80 cm</td><td>90x90 cm of 120x90 cm</td></tr><tr><td>Wastafel</td><td>40-45 cm breed (fontein/compact)</td><td>60-80 cm breed</td></tr><tr><td>Toilet (verkort)</td><td>48-49 cm diep</td><td>53-54 cm diep (standaard)</td></tr><tr><td>Vrije ruimte vóór sanitair</td><td>55 cm</td><td>60-70 cm</td></tr><tr><td>Doorloop</td><td>60 cm</td><td>70-80 cm</td></tr></tbody></table><p>Tip: teken de indeling eerst uit op schaal, of gebruik een online badkamerplanner. Vrije ruimtes mogen elkaar deels overlappen — je staat nooit tegelijk voor het toilet én de wastafel.</p>"
+    },
+    {
+      "kop": "Waar plaats je de douche in een kleine badkamer?",
+      "html": "<p>De douche gaat bij voorkeur in de hoek die het verst van de deur ligt, of over de volledige kopse kant van de ruimte. Een inloopdouche met één vaste glaswand oogt het ruimst en is het makkelijkst schoon te houden; een cabine met schuifdeuren houdt spatwater beter binnen als de wastafel er direct naast staat. Vermijd draaideuren aan de douche — die vreten ruimte.</p><p>Een douche over de kopse kant (bijvoorbeeld 170 cm breed in een badkamer van 170x230 cm) heeft als voordeel dat je geen doucheprofiel in de looproute hebt en het afschot in één richting kan lopen.</p>"
+    },
+    {
+      "kop": "Welk ruimtebesparend sanitair bestaat er?",
+      "html": "<p>Er is meer keuze dan veel kopers denken. Hangend sanitair is de basis: een zwevend toilet met inbouwreservoir en een zwevend meubel houden de vloer vrij, wat de ruimte optisch vergroot en schoonmaken makkelijker maakt. Verder: verkorte toiletten (48-49 cm diep in plaats van 53-54 cm), compact-diepe wastafels van 35-40 cm diep, hoekwastafels en hoekmeubels, ondiepe spiegelkasten die opbergruimte toevoegen zonder vloeroppervlak te kosten, en nissen in de (voorzet)wand voor shampoo en opbergruimte.</p><p>Denk ook aan de deur: een schuifdeur of een deur die naar buiten draait, wint zomaar een halve vierkante meter bruikbare ruimte.</p>"
+    },
+    {
+      "kop": "Hoe laat je een kleine badkamer groter lijken?",
+      "html": "<p>Optisch valt er veel te winnen. Grote tegels met smalle voegen (of een naadloze wand zonder tegels) geven rust; doorlopend tegelwerk van vloer naar wand vergroot de ruimte. Licht kleurgebruik, een grote spiegel of spiegelkast boven de wastafel en een glazen douchewand in plaats van een gemetseld muurtje doen de rest. Verlichting op meerdere punten — spots plus spiegelverlichting — voorkomt donkere hoeken die de ruimte kleiner maken.</p><p>Wil je vooraf zien hoe je keuzes uitpakken? Maak een 3D-impressie van je indeling voordat je de offerte tekent.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Past een bad in een badkamer van 5 m²?",
+      "a": "Het kan, maar het kost vrijwel altijd de douche of de bewegingsruimte. Een compact bad is 160-170 cm lang; in een badkamer onder 5 m² is een ruime inloopdouche meestal de comfortabelere keuze. Een douchebad (bad met douchezone) is de tussenoplossing voor wie beide wil."
+    },
+    {
+      "q": "Is een inloopdouche verstandig in een kleine badkamer?",
+      "a": "Ja, mits de glaswand lang genoeg is (minimaal 90-100 cm) en het afschot goed wordt aangelegd, anders spat water de ruimte in. In zeer krappe badkamers waar de wastafel direct naast de douche staat, houdt een cabine met schuifdeuren het water beter binnen."
+    },
+    {
+      "q": "Wat kost het renoveren van een kleine badkamer?",
+      "a": "Een kleine badkamer is niet evenredig goedkoper: sloop, leidingwerk, waterdichting en installatie kosten bijna hetzelfde als bij een grote badkamer, alleen op tegels en sanitair bespaar je iets. Reken binnen de gangbare range van €7.500 tot €20.000 voor renovatie eerder op de onderkant, zelden daaronder."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Plan je kleine badkamer met de AI-planner"],
+    "commercieel": ["/kopen/sanitair/", "Compact sanitair met ledenkorting"],
+    "zusters": ["inloopdouche-of-cabine", "inbouwreservoir-kiezen", "badkamerverlichting"]
+  }
+}

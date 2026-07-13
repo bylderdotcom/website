@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "meerwerk",
+  "titel": "Meerwerk",
+  "title_tag": "Wat is meerwerk? Betekenis + uitleg | Bylder",
+  "meta_description": "Meerwerk is al het werk dat bovenop de afgesproken aanneemsom komt, zoals extra stopcontacten of een duurdere keuken. Lees hoe je te hoge meerwerkprijzen herkent.",
+  "intro": [
+    "Meerwerk is al het extra werk dat een aannemer uitvoert bovenop wat in het contract of de aanneemsom is afgesproken, zoals extra stopcontacten, een dakraam of een duurdere keuken dan de stelpost. Meerwerk wordt apart geoffreerd en afgerekend, meestal tegen de tarieven van de aannemer zelf.",
+    "Juist omdat je voor meerwerk niet kunt overstappen naar een andere aanbieder, liggen de prijzen vaak boven de marktprijs. Nieuwbouwkopers betalen gemiddeld €1.840 te veel aan meerwerk, en 96% van de kopers betaalt voor minstens één post te veel."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Hoe voorkom je te dure meerwerkposten?",
+      "html": "<p>Vraag altijd een gespecificeerde meerwerkofferte: per post materiaal, uren en tarief, niet één totaalbedrag. Vergelijk de belangrijkste posten met marktprijzen — vooral bij keuken, badkamer, tegelwerk en elektra lopen de verschillen op.</p><p>Beslis per post of je hem door de bouwer laat doen of na oplevering zelf regelt. Werk dat in de ruwbouw moet gebeuren (leidingen verleggen, sparingen, een extra groep in de meterkast) is via de bouwer logisch; afwerking en inrichting kun je vaak beter zelf inkopen. Laat de meerwerklijst controleren voordat je tekent — daar valt gemiddeld het meest te besparen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Ben ik verplicht meerwerk bij de aannemer af te nemen?",
+      "a": "Nee. Je kiest per post of je hem afneemt. Sommige zaken kunnen alleen tijdens de bouw (constructief werk, leidingwerk in de vloer), maar afwerking zoals keuken, badkamer of stucwerk kun je ook na oplevering door een andere partij laten doen."
+    },
+    {
+      "q": "Waarom is meerwerk vaak duurder dan de marktprijs?",
+      "a": "Omdat er geen concurrentie is: alleen jouw aannemer kan het werk tijdens de bouw uitvoeren. Daarnaast rekenen bouwers coördinatiekosten en opslagen door. Gemiddeld betalen kopers €1.840 te veel — vergelijken en controleren loont dus vrijwel altijd."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "Laat je meerwerklijst controleren"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["minderwerk", "stelpost"]
+  }
+}

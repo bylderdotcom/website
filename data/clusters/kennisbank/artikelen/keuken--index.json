@@ -1,0 +1,57 @@
+{
+  "cluster": "keuken",
+  "slug": "index",
+  "titel": "Keuken kiezen voor je woning",
+  "title_tag": "Keuken kiezen: budget, indeling & apparatuur | Bylder",
+  "meta_description": "Een keuken kiezen doe je in vaste stappen: budget, indeling, apparatuur en materialen. Dit overzicht leidt je langs alle keuzes, met eerlijke prijzen.",
+  "intro": [
+    "Een keuken kies je door eerst je budget en indeling vast te leggen, en pas daarna apparatuur, materialen en afwerking te selecteren. Wie in die volgorde werkt, voorkomt dat een mooie showroomopstelling het budget bepaalt in plaats van andersom.",
+    "Een complete keuken kost in Nederland gemiddeld €12.000, met een bandbreedte van €6.000 tot €20.000 voor het middensegment. Juist omdat de prijsopbouw van keukens ondoorzichtig is — vanafprijzen, kortingspercentages, stelposten — loont het om elke deelkeuze apart te begrijpen. Deze pagina is het startpunt: per onderwerp verwijzen we naar een verdiepend artikel."
+  ],
+  "stats": [
+    ["€12.000", "gemiddelde prijs complete keuken"],
+    ["€6.000–€20.000", "bandbreedte middensegment"],
+    ["96%", "van de kopers betaalt minstens één post te duur"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat kost een complete keuken?",
+      "html": "<p>Een complete keuken in het middensegment kost €6.000 tot €20.000, gemiddeld €12.000. In dat bedrag zitten kasten, werkblad, apparatuur, spoelbak, kraan en montage. De spreiding is groot omdat elke deelkeuze doortikt: een keramisch werkblad, een stoomoven of een kookeiland kunnen elk duizenden euro's schelen.</p><p>Let op de prijsopbouw in offertes: 96% van de kopers betaalt voor minstens één post te veel. Vergelijk daarom niet alleen totaalprijzen maar ook regelprijzen, en laat een offerte controleren voordat je tekent.</p>"
+    },
+    {
+      "kop": "Welke indeling past bij jouw ruimte?",
+      "html": "<p>De indeling bepaalt het dagelijkse gebruiksgemak meer dan welk apparaat dan ook. Het klassieke uitgangspunt is de <em>werkdriehoek</em> tussen koelkast, spoelbak en kooktoestel: korte, vrije looplijnen zonder obstakels. Lees meer in <strong>keukenindeling en werkdriehoek</strong>.</p><p>De grootste indelingsvraag bij nieuwbouw is: kookeiland of rechte keuken? Een eiland vraagt minimaal zo'n 1,2 meter vrije loopruimte rondom en dus een ruime keuken; een rechte of hoekopstelling is compacter en goedkoper. Het artikel <strong>kookeiland of rechte keuken</strong> zet de afwegingen op een rij.</p>"
+    },
+    {
+      "kop": "Welke apparatuur heb je nodig?",
+      "html": "<p>Apparatuur is vaak een derde tot de helft van de keukenprijs. De hoofdkeuzes:</p><table class=\"vgl\"><thead><tr><th>Keuze</th><th>Kernvraag</th><th>Verdieping</th></tr></thead><tbody><tr><td>Kooktoestel</td><td>Inductie of gas — en welke aansluiting (perilex)?</td><td>Inductie of gas</td></tr><tr><td>Oven</td><td>Solo, combi of stoom; nismaat 45 of 60 cm?</td><td>Oven kiezen</td></tr><tr><td>Vaatwasser</td><td>Volledig of half integreerbaar; 45 of 60 cm breed?</td><td>Vaatwasser kiezen</td></tr><tr><td>Afzuigkap</td><td>Afvoer naar buiten of recirculatie?</td><td>Afzuigkap kiezen</td></tr><tr><td>Kokendwaterkraan</td><td>Luxe of tijdwinst — en is het veilig?</td><td>Kokendwaterkraan</td></tr></tbody></table><p>Kies apparatuur op gebruik, niet op merkstatus: een gezin dat dagelijks kookt heeft meer aan een grote vaatwasser dan aan een tweede oven.</p>"
+    },
+    {
+      "kop": "Welke materialen bepalen de uitstraling?",
+      "html": "<p>Drie materiaalkeuzes bepalen samen het gezicht en de levensduur van je keuken. Het <strong>werkblad</strong> (kwartscomposiet, keramiek, graniet, hout of HPL) is de zwaarst gebruikte plek in huis. De <strong>kasten en fronten</strong> bepalen de uitstraling: kunststof, gelakt, fineer of massief hout, met of zonder grepen. En de <strong>spoelbak</strong> (RVS, composiet of keramiek) moet passen bij het werkblad én bij hoe je afwast.</p><p>Vuistregel: investeer in wat je dagelijks aanraakt (werkblad, beslag, kraan) en bespaar op wat je niet ziet (corpusmateriaal, binnenafwerking).</p>"
+    },
+    {
+      "kop": "Wat als je nieuwbouwwoning casco wordt opgeleverd?",
+      "html": "<p>Bij een casco keuken levert de aannemer alleen de aansluitpunten: water, afvoer, elektra en ventilatie. De keuken zelf koop en plaats je na de oplevering. Dat geeft vrijheid én prijsvoordeel — de stelpost die projectontwikkelaars voor een keuken opnemen is vaak bewust laag gehouden, waardoor de keuken via de bouwer al snel duurder uitpakt dan zelf kopen. Lees hoe je dit slim aanpakt in <strong>casco keuken bij nieuwbouw</strong>.</p><p>Bylder-leden kopen keukens en apparatuur met ledenprijzen bij 60+ deelnemende merken; de gemiddelde besparing is €4.200 op de totale afbouw.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "In welke volgorde kies ik mijn keuken?",
+      "a": "Begin met budget en indeling, kies daarna apparatuur en sluit af met materialen en afwerking. Zo bepaalt jouw budget de keuken in plaats van de showroom. Leg de indeling vast vóór je verliefd wordt op een opstelling."
+    },
+    {
+      "q": "Wat is een realistisch keukenbudget?",
+      "a": "Reken op €6.000 tot €20.000 voor een complete keuken in het middensegment, gemiddeld €12.000 inclusief apparatuur en montage. Onder de €6.000 kom je uit op standaardmaten en instapapparatuur; boven de €20.000 zit je in maatwerk en premium merken."
+    },
+    {
+      "q": "Kan ik beter een keuken via de aannemer of zelf kopen?",
+      "a": "Bij nieuwbouw is zelf kopen na casco-oplevering vaak voordeliger, omdat stelposten van de bouwer bewust laag zijn en het verschil bij hem als meerwerk wordt afgerekend. Vergelijk altijd de stelpost met een echte offerte voordat je beslist."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Ontwerp je keuken met de AI-planner"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": []
+  }
+}

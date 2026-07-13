@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "badkamerofferte-lezen",
+  "titel": "Een badkamerofferte lezen: posten en valkuilen",
+  "title_tag": "Badkamerofferte lezen: posten en valkuilen | Bylder",
+  "meta_description": "Een badkamerofferte bestaat uit sanitair, tegelwerk en installatie. Leer per post wat erin hoort, welke valkuilen er zijn en hoe je vergelijkt.",
+  "intro": [
+    "Een badkamerofferte lees je door hem op te splitsen in drie hoofdposten — sanitair en meubels, tegelwerk, en installatiewerk — en per post te controleren wat er wél en níét in zit. De grootste risico's zitten niet in wat er staat, maar in wat ontbreekt: stelposten, uitsluitingen en meerwerk dat later op de rekening verschijnt.",
+    "Een complete badkamer kost €7.000 tot €20.000, gemiddeld €12.000. Bij zulke bedragen loont kritisch lezen: 96% van de kopers betaalt minstens één post te duur, en aan meerwerk wordt gemiddeld €1.840 te veel betaald. Wie de opbouw van de offerte kent, ziet die risico's vooraf."
+  ],
+  "stats": [
+    ["€12.000", "gemiddelde complete badkamer"],
+    ["96%", "betaalt minstens één post te duur"],
+    ["€1.840", "gemiddeld te veel betaald aan meerwerk"]
+  ],
+  "secties": [
+    {
+      "kop": "Uit welke posten bestaat een badkamerofferte?",
+      "html": "<p>Een volledige badkamerofferte bevat drie hoofdgroepen, elk met eigen valkuilen:</p><table class=\"vgl\"><thead><tr><th>Post</th><th>Wat hoort erin</th><th>Veelgemaakte fout</th></tr></thead><tbody><tr><td>Sanitair &amp; meubels</td><td>Toilet, douche, kranen, meubel, spiegel — met merk, type en artikelnummer</td><td>Vage omschrijvingen (\"wastafelcombinatie\") zonder artikelnummer</td></tr><tr><td>Tegelwerk</td><td>Tegels per m², lijm, voegen, kitwerk, snijverlies, eventueel vloerverwarming</td><td>Te weinig m² gerekend of snijverlies niet meegenomen</td></tr><tr><td>Installatie</td><td>Sloop en afvoer, leidingwerk, elektra, montage sanitair, waterdichting</td><td>Waterdichting of verleggen van leidingen als \"meerwerk\" buiten de offerte</td></tr></tbody></table><p>Staat een van deze onderdelen niet in de offerte, vraag dan expliciet of het is inbegrepen — en laat het antwoord schriftelijk bevestigen.</p>"
+    },
+    {
+      "kop": "Wat zijn de grootste valkuilen in een badkamerofferte?",
+      "html": "<p><strong>Stelposten.</strong> Een stelpost (\"tegels: stelpost €40/m²\") is een aanname, geen prijs. Valt je keuze duurder uit, dan betaal je bij. Vraag stelposten zo veel mogelijk om te zetten in vaste prijzen op basis van je werkelijke keuzes.</p><p><strong>Uitsluitingen in de kleine lettertjes.</strong> Sloopwerk, afvoer van puin, bouwdroging, kitwerk en het aanpassen van leidingwerk staan geregeld als uitsluiting achterin. Juist die posten lopen op.</p><p><strong>Meerwerk zonder tarief.</strong> Als het uurtarief en de opslag voor meerwerk niet vooraf vastliggen, sta je tijdens de verbouwing met lege handen. Gemiddeld betalen kopers €1.840 te veel aan meerwerk.</p><p><strong>Vage merkomschrijvingen.</strong> \"Kwaliteitskraan\" zegt niets. Zonder merk en artikelnummer kan de installateur een goedkoper alternatief leveren zonder dat jij het merkt.</p>"
+    },
+    {
+      "kop": "Hoe vergelijk je twee badkameroffertes eerlijk?",
+      "html": "<p>Vergelijk nooit alleen de totaalprijs. Een lagere totaalprijs met veel stelposten en uitsluitingen is vaak duurder dan een hogere, complete prijs. Werk zo: zet beide offertes naast elkaar per hoofdpost, controleer of dezelfde producten (artikelnummers!) en dezelfde werkzaamheden zijn opgenomen, en maak ontbrekende posten expliciet. Vraag bij twijfel beide partijen om een aangepaste offerte op basis van exact dezelfde specificatie.</p><p>Let ook op de betalingsregeling: een aanbetaling is normaal, maar het grootste deel betaal je pas na (deel)oplevering. Wees terughoudend bij partijen die vrijwel alles vooraf willen ontvangen.</p>"
+    },
+    {
+      "kop": "Wat doe je bij twijfel over de prijs?",
+      "html": "<p>Laat de offerte objectief doorrekenen voordat je tekent. De offerte-check van Bylder vergelijkt elke post met marktconforme prijzen en laat zien waar je te veel betaalt — nuttig als onderhandelmateriaal én als geruststelling. Leden besparen gemiddeld €4.200 op hun keuken of badkamer.</p><p>Kom je er met de aanbieder niet uit op een specifieke post, overweeg dan die post los in te kopen: sanitair koop je bijvoorbeeld met ledenkorting bij 60+ deelnemende merken, terwijl de installateur alleen het werk levert.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is een stelpost in een badkamerofferte?",
+      "a": "Een stelpost is een geschat bedrag voor een onderdeel waarvan de definitieve keuze nog niet vaststaat, bijvoorbeeld tegels of kranen. Kies je duurder dan de stelpost, dan betaal je het verschil bij. Vraag stelposten om te zetten naar vaste prijzen zodra je keuzes definitief zijn."
+    },
+    {
+      "q": "Hoe lang is een badkamerofferte geldig?",
+      "a": "Meestal 30 dagen, soms langer; de geldigheidstermijn staat in de offerte zelf. Laat je niet opjagen door korte termijnen of \"alleen vandaag\"-kortingen — een serieuze aanbieder verlengt de termijn als je daarom vraagt."
+    },
+    {
+      "q": "Moet btw in de badkamerofferte staan?",
+      "a": "Ja. Voor consumenten horen prijzen inclusief btw te worden gepresenteerd, of minimaal met het btw-bedrag duidelijk vermeld. Op materialen geldt 21% btw; op arbeid bij woningen ouder dan twee jaar kan voor sommige werkzaamheden een verlaagd tarief gelden — vraag de aanbieder dit expliciet te specificeren."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Laat je badkamerofferte gratis doorrekenen"],
+    "commercieel": ["/eerlijke-prijzen/badkamer/", "Bekijk eerlijke badkamerprijzen"],
+    "zusters": ["badkamer-showroom-onderhandelen", "sanitair-merken-kiezen", "waterdichting-badkamer"]
+  }
+}

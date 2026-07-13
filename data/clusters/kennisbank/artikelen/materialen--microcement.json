@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "microcement",
+  "titel": "Microcement: eigenschappen, prijs en onderhoud",
+  "title_tag": "Microcement: eigenschappen, prijs, onderhoud | Bylder",
+  "meta_description": "Microcement is een dunne, naadloze cementcoating voor wanden en vloeren, ook in de badkamer. Bekijk prijzen per m², onderhoud en alternatieven."
+,
+  "intro": [
+    "Microcement (ook beton ciré genoemd) is een dunne, naadloze coating van cement, fijne minerale vulstoffen en kunsthars, die in lagen van in totaal twee tot drie millimeter op wanden, vloeren en meubels wordt aangebracht en afgewerkt met een beschermende sealer.",
+    "De kracht van microcement is dat het vrijwel overal overheen kan — bestaande tegels, dekvloeren, gips — zonder sloopwerk, en één doorlopend, betonachtig oppervlak zonder voegen oplevert. Dat maakt het populair in badkamers: geen voegen betekent geen schimmel in de voegen."
+  ],
+  "stats": [
+    ["€80–€150", "per m², aangebracht"],
+    ["10–20 jaar", "levensduur; sealer periodiek vernieuwen"],
+    ["2–3 mm", "totale laagdikte"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is microcement geschikt voor?",
+      "html": "<p>Microcement wordt toegepast op badkamerwanden en -vloeren (inclusief de inloopdouche), woonkamervloeren, keukenachterwanden, trappen en meubelombouwen. Omdat het maar enkele millimeters dik is, kan het over bestaande tegels heen — ideaal bij renovatie zonder hakwerk. Het werkt goed met vloerverwarming. Als keukenwerkblad is het mogelijk maar kwetsbaar: krassen en zuren tasten de sealer aan, dus daar zijn <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a> of composiet verstandiger.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van microcement?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse</td><td>€80–€150 per m² inclusief aanbrengen door een specialist</td></tr><tr><td>Krasvastheid</td><td>Matig</td><td>De sealer beschermt, maar scherp of schurend contact laat sporen na</td></tr><tr><td>Hittebestendigheid</td><td>Redelijk</td><td>Cement kan tegen warmte; de sealer niet tegen hete pannen</td></tr><tr><td>Vochtbestendigheid</td><td>Goed (met sealer)</td><td>Waterdicht mits de sealer intact is; geschikt voor douches</td></tr><tr><td>Onderhoud</td><td>Gemiddeld</td><td>pH-neutraal reinigen; sealer elke 5–10 jaar vernieuwen</td></tr><tr><td>Levensduur</td><td>10–20 jaar</td><td>Sterk afhankelijk van ondergrond en vakmanschap</td></tr><tr><td>Duurzaamheid</td><td>Redelijk</td><td>Dun materiaalgebruik en renovatie zonder sloop; cement blijft CO₂-intensief</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je microcement?",
+      "html": "<p>Reinig microcement met een pH-neutrale zeep en zachte doek of mop; agressieve middelen zoals chloor, ammoniak en kalkreiniger tasten de sealer aan. Trek in de douche het water na gebruik weg om kalkaanslag te beperken. De sealer is de levensverzekering van het materiaal: laat hem elke vijf tot tien jaar (in natte zones eerder) opnieuw aanbrengen. Beschadigingen zijn plaatselijk te herstellen, maar een reparatie blijft vaak licht zichtbaar — de charme van microcement zit in het geleefde, wolkige oppervlak.</p>"
+    },
+    {
+      "kop": "Voor wie is microcement de juiste keuze?",
+      "html": "<p>Microcement past bij wie een naadloze, betonachtige look wil en een renovatie zonder hak- en breekwerk — zeker in de badkamer. Vergelijk je met tegels of <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a>: die zijn slijtvaster en bewezen waterdicht, maar mét voegen en meestal mét sloopwerk. Vergelijk je met <a href=\"/kennisbank/materialen/terrazzo/\">terrazzo</a>: ook naadloos, veel slijtvaster en opnieuw te slijpen, maar twee tot vier keer zo duur en veel dikker. Cruciaal bij microcement: kies een ervaren applicateur, want de kwaliteit staat of valt met het vakmanschap.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is microcement hetzelfde als beton ciré?",
+      "a": "In de praktijk wel: beton ciré is oorspronkelijk een merknaam die in Nederland als soortnaam wordt gebruikt voor dunne, naadloze cementcoatings. Microcement is de generieke term; samenstelling en systemen verschillen per fabrikant."
+    },
+    {
+      "q": "Is microcement waterdicht genoeg voor de douche?",
+      "a": "Ja, mits het systeem compleet wordt aangebracht: een waterdichtend membraan op de ondergrond, de cementlagen en een goede sealer. De waterdichtheid zit in het systeem, niet in het cement zelf — daarom is een ervaren applicateur zo belangrijk."
+    },
+    {
+      "q": "Wat kost microcement per m²?",
+      "a": "Reken op €80–€150 per m² inclusief aanbrengen, afhankelijk van ondergrond, oppervlakte en afwerking. Kleine oppervlakken zijn per m² duurder door de vaste arbeidskosten van de meerdaagse opbouw in lagen."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/kopen/tegels/", "Tegels kopen"],
+    "zusters": ["terrazzo", "keramiek", "solid-surface"]
+  }
+}

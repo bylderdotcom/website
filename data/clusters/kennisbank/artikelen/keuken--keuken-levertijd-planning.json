@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "keuken-levertijd-planning",
+  "titel": "Levertijd en planning van je keuken: van bestelling tot montage",
+  "title_tag": "Keuken levertijd & planning: 6-14 weken | Bylder",
+  "meta_description": "De levertijd van een keuken is 6 tot 14 weken na het inmeten. Lees hoe je inmeten, vloer, stucwerk en montage in de juiste volgorde plant."
+  ,
+  "intro": [
+    "De levertijd van een keuken ligt tussen de 6 en 14 weken, gerekend vanaf het moment dat de maten definitief zijn — dus na het inmeten, niet na het tekenen van de offerte. Duitse en Nederlandse fabriekskeukens zitten meestal rond 6–10 weken; maatwerk en drukke periodes lopen op richting 14 weken.",
+    "De keuken is zelden het enige dat gebeurt: vloer, stucwerk, elektra en soms een verbouwing moeten in de juiste volgorde vallen. Wie de volgorde verkeerd plant, betaalt dubbel — bijvoorbeeld omdat de tegelzetter terug moet komen of de montage niet door kan."
+  ],
+  "stats": [
+    ["6–14 weken", "levertijd keuken na definitief inmeten"],
+    ["2–4 weken", "extra doorlooptijd werkblad en achterwand op maat"],
+    ["1–3 dagen", "montageduur van een gemiddelde keuken"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe lang duurt het van bestelling tot geplaatste keuken?",
+      "html": "<p>Reken van showroombezoek tot werkende keuken in totaal drie tot vijf maanden. Eerst kies en teken je (1–4 weken), dan volgt het technisch inmeten zodra de ruimte gereed is, daarna gaat de bestelling naar de fabriek (6–14 weken levertijd) en volgt de montage (1–3 dagen). Werkblad van steen of keramiek en een achterwand op maat worden pas ná de kastenmontage ingemeten en volgen 2–4 weken later — tot die tijd kook je op een tijdelijk blad of provisorisch.</p><table class=\"vgl\"><thead><tr><th>Fase</th><th>Doorlooptijd</th><th>Voorwaarde</th></tr></thead><tbody><tr><td>Ontwerp en offerte</td><td>1–4 weken</td><td>Definitieve indeling en apparatuurkeuze</td></tr><tr><td>Technisch inmeten</td><td>1 afspraak</td><td>Wanden, vloerhoogte en aansluitingen definitief</td></tr><tr><td>Productie en levering</td><td>6–14 weken</td><td>Getekende opdracht na inmeten</td></tr><tr><td>Montage kasten</td><td>1–3 dagen</td><td>Ruimte leeg, vloer en stucwerk gereed</td></tr><tr><td>Werkblad/achterwand op maat</td><td>+2–4 weken</td><td>Inmeten op de gemonteerde kasten</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wanneer wordt de keuken ingemeten en waarom is dat het ijkpunt?",
+      "html": "<p>Het technisch inmeten is het moment waarop de showroom de exacte maten, aansluitpunten en vloerhoogte vastlegt; pas daarna gaat de bestelling definitief naar de fabriek. Inmeten kan pas zinvol als de wanden gestuukt zijn (of de stucdikte exact bekend is) en de definitieve vloerhoogte vaststaat — een centimeter vloerverschil betekent klemmende plinten of een scheve lijn bovenkasten. In nieuwbouw plan je het inmeten direct na de oplevering; de levertijd van 6–14 weken begint dus pas te lopen als je de sleutel hebt, tenzij de bouwer eerder toegang geeft.</p>"
+    },
+    {
+      "kop": "In welke volgorde plan je vloer, stucwerk en keuken?",
+      "html": "<p>De gangbare volgorde: eerst leidingwerk en elektra verplaatsen, dan stucwerk, dan de vloer, dan de keukenmontage, en als laatste werkblad-op-maat, achterwand en schilderwerk. Leg de vloer bij voorkeur dóór onder de keuken: dat is iets duurder in materiaal, maar de keuken staat waterpas, plinten sluiten netjes aan en een toekomstige keuken met andere maten past zonder vloerreparatie. Alleen bij parket of gietvloeren wordt soms tot de plint gelegd — overleg dat vooraf met zowel vloerlegger als keukenmonteur.</p>"
+    },
+    {
+      "kop": "Hoe voorkom je vertraging en dubbele kosten?",
+      "html": "<p>Leg de montagedatum vast in de koopovereenkomst en spreek af wat er gebeurt bij latere levering. Controleer twee weken vóór montage of alles compleet geleverd wordt — nalevering van één front kan de afbouw weken ophouden. Zorg dat aansluitingen (water, afvoer, elektra, eventueel gas of perilex) op de juiste plek zitten volgens de installatietekening van de showroom; verplaatsen op de montagedag zelf kost spoedtarief. En plan zelf een marge van twee weken tussen geplande montage en momenten waarop de keuken echt af moet zijn.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wanneer moet ik mijn keuken bestellen voor een nieuwbouwwoning?",
+      "a": "Begin drie tot zes maanden vóór de verwachte oplevering met kiezen en offertes vergelijken, maar laat het technisch inmeten en de definitieve bestelling wachten tot de maten zeker zijn. Zo combineer je een rustige keuze met een montage kort na oplevering."
+    },
+    {
+      "q": "Kan de keuken geplaatst worden voordat de vloer ligt?",
+      "a": "Het kan, maar het is af te raden: de monteur moet dan stellen op een vloerhoogte die nog niet bestaat, en de vloerlegger werkt later om de kasten heen. Vloer eerst (doorgelegd onder de keuken) geeft het beste resultaat."
+    },
+    {
+      "q": "Wat als de keuken later geleverd wordt dan afgesproken?",
+      "a": "Spreek in de overeenkomst een leverweek af en wat er bij overschrijding gebeurt. Bij forse vertraging kun je de zaak schriftelijk in gebreke stellen en een redelijke termijn geven; documenteer alle toezeggingen per e-mail."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Plan je afbouw met de nieuwbouw-tools"],
+    "commercieel": ["/verbouwen/", "Vind vakmensen voor vloer en stucwerk"],
+    "zusters": ["casco-keuken-nieuwbouw", "keukenofferte-lezen", "stelpost-keuken-nieuwbouw"]
+  }
+}

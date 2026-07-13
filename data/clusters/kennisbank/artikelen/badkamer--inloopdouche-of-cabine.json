@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "inloopdouche-of-cabine",
+  "titel": "Inloopdouche of douchecabine: wat past bij jouw badkamer?",
+  "title_tag": "Inloopdouche of douchecabine kiezen | Bylder",
+  "meta_description": "Inloopdouche of douchecabine? Vergelijk prijs, onderhoud, ruimtegebruik en spatwater — en zie welke keuze bij jouw badkamer en budget past.",
+  "intro": [
+    "Een inloopdouche is de beste keuze als je waarde hecht aan een ruimtelijk, drempelloos ontwerp en makkelijk schoonmaken; een douchecabine wint als je spatwater volledig wilt insluiten of een kleine badkamer droog wilt houden. Beide opties zitten qua prijs dichter bij elkaar dan veel kopers denken.",
+    "De keuze bepaalt ook je tegel- en waterdichtingsplan: een inloopdouche vraagt afschot in de vloer en een goed waterdichte natte zone, terwijl een cabine op een douchebak staat en het water zelf opvangt."
+  ],
+  "stats": [
+    ["€700-€2.500", "inloopdouche incl. glaswand (excl. tegelwerk)"],
+    ["€500-€2.000", "complete douchecabine"],
+    ["90x120 cm", "comfortabele minimummaat inloopdouche"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen een inloopdouche en een douchecabine?",
+      "html": "<p>Een inloopdouche is een open, betegelde douchezone met één vaste glaswand en zonder drempel: het water loopt via afschot naar een draingoot of vloerputje. Een douchecabine is een gesloten unit met deuren en een douchebak, die het water volledig binnen houdt. De inloopdouche voelt ruimer en oogt strakker; de cabine is praktischer in kleine of gehorige badkamers.</p>"
+    },
+    {
+      "kop": "Inloopdouche of cabine: hoe vergelijken ze op prijs, onderhoud en ruimte?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Criterium</th><th>Inloopdouche</th><th>Douchecabine</th></tr></thead><tbody><tr><td>Prijs</td><td>€700-€2.500 voor glaswand en draingoot, plus tegelwerk en waterdichting</td><td>€500-€2.000 compleet, montage relatief eenvoudig</td></tr><tr><td>Onderhoud</td><td>Eén glaswand en tegels: snel schoon, wel voegen bijhouden</td><td>Meer profielen, rails en kitranden waar kalk en schimmel hechten</td></tr><tr><td>Ruimtegebruik</td><td>Open zone, oogt ruimer; comfortabel vanaf 90x120 cm</td><td>Compact vanaf 80x80 cm, maar sluit de ruimte visueel af</td></tr><tr><td>Spatwater</td><td>Beperkt spatwater buiten de zone; langere glaswand of zijpaneel helpt</td><td>Volledig ingesloten, rest van de badkamer blijft droog</td></tr><tr><td>Toegankelijkheid</td><td>Drempelloos, geschikt voor levensloopbestendig wonen</td><td>Instap met opstaande rand van de douchebak</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wanneer is een inloopdouche de betere keuze?",
+      "html": "<p>Kies een inloopdouche als je badkamer minimaal circa 6 m² is, je een strak en drempelloos ontwerp wilt, of je vooruitdenkt aan levensloopbestendig wonen. Houd rekening met extra kosten die niet in de sanitairprijs zitten: afschot in de dekvloer, waterdichting met kimband in de natte zone en tegelwerk. Een draingoot van een degelijk merk voorkomt de meest voorkomende klacht: traag weglopend water.</p>"
+    },
+    {
+      "kop": "Wanneer is een douchecabine slimmer?",
+      "html": "<p>Een cabine is slimmer in kleine badkamers waar spatwater direct op het toilet of wastafelmeubel zou komen, in badkamers zonder mogelijkheid voor afschot in de vloer (bijvoorbeeld bij houten verdiepingsvloeren) en als je snel en zonder groot tegelwerk wilt renoveren. Kies dan wel een model met zo min mogelijk profielen en een behandelde glascoating: dat scheelt jaren schoonmaakplezier.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een inloopdouche duurder dan een douchecabine?",
+      "a": "Het sanitair zelf ontloopt elkaar weinig: €700-€2.500 voor een inloopdouche-opstelling tegenover €500-€2.000 voor een cabine. Het verschil zit in de bijkomende kosten: een inloopdouche vraagt afschot, waterdichting en tegelwerk, wat honderden euro's arbeid toevoegt."
+    },
+    {
+      "q": "Hoe groot moet een inloopdouche minimaal zijn?",
+      "a": "Vanaf 90x120 cm doucht een volwassene comfortabel; 100x140 cm of groter voelt luxe. Kleiner dan 90 cm breed geeft veel spatwater buiten de zone. Een douchecabine kan compacter, vanaf 80x80 cm."
+    },
+    {
+      "q": "Blijft de rest van de badkamer droog bij een inloopdouche?",
+      "a": "Grotendeels wel, mits de glaswand lang genoeg is (minimaal 90-100 cm) en de douchekop van de opening af gericht staat. Volledig spatwatervrij wordt het nooit; een douchecabine sluit water wél volledig in."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Ontwerp je badkamerindeling met de planner"],
+    "commercieel": ["/kopen/sanitair/", "Bekijk inloopdouches en cabines"],
+    "zusters": ["regendouche", "bad-of-douche", "waterdichting-badkamer"]
+  }
+}

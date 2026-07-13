@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "keuken-showroom-onderhandelen",
+  "titel": "Onderhandelen in de keukenshowroom: zo werken de prijzen",
+  "title_tag": "Onderhandelen in de keukenshowroom | Bylder",
+  "meta_description": "Showroomprijzen voor keukens bevatten 20-40% onderhandelruimte. Lees hoe de prijsopbouw werkt, wanneer je het beste koopt en wat het alternatief is."
+  ,
+  "intro": [
+    "In een keukenshowroom is onderhandelen niet optioneel maar ingecalculeerd: de eerste prijs die je hoort bevat doorgaans 20 tot 40 procent ruimte. De \"vanaf-prijs\" en de \"actiekorting\" zijn onderdeel van het verkoopmodel, niet van jouw onderhandelresultaat.",
+    "Een complete keuken kost €6.000 tot €20.000, gemiddeld zo'n €12.000. Bij zulke bedragen betekent de onderhandelruimte al snel duizenden euro's verschil tussen een goed en een slecht geïnformeerde koper — terwijl de keuken zelf identiek is."
+  ],
+  "stats": [
+    ["20–40%", "gebruikelijke onderhandelruimte op showroomprijzen"],
+    ["€12.000", "gemiddelde prijs complete keuken"],
+    ["€4.200", "gemiddelde besparing van Bylder-leden"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe komen showroomprijzen tot stand?",
+      "html": "<p>Keukenshowrooms rekenen vanuit brutoprijslijsten van fabrikanten, met daarbovenop marges voor de zaak en de verkoper. De prijs op het eerste voorstel is bewust hoog gezet, zodat er ruimte is voor \"korting\" tijdens het gesprek. Klassieke technieken: een hoge startprijs die dezelfde dag met tientallen procenten zakt (\"alleen vandaag\"), gratis apparatuur die feitelijk in de kastenprijs is verwerkt, en een aanbetalingsdruk om je aan de zaak te binden. Niets daarvan zegt iets over de werkelijke inkoopwaarde van jouw keuken.</p>"
+    },
+    {
+      "kop": "Hoe onderhandel je effectief over een keuken?",
+      "html": "<p>Drie regels. Eén: teken nooit bij het eerste bezoek — elke \"alleen vandaag\"-korting bestaat volgende week ook. Twee: vraag een volledig gespecificeerde offerte mee (kasten, werkblad, apparatuur op typenummer, montage apart) en vergelijk die bij minstens één andere zaak; zonder specificatie valt er niets te vergelijken. Drie: onderhandel op het totaal, niet op losse posten, en gebruik de vergelijkende offerte als hefboom. Wie de apparatuur op typenummer online prijst, ziet direct waar de lucht zit.</p><table class=\"vgl\"><thead><tr><th>Verkooptechniek</th><th>Wat er werkelijk gebeurt</th><th>Jouw reactie</th></tr></thead><tbody><tr><td>\"Alleen vandaag geldig\"</td><td>Kunstmatige tijdsdruk; de prijs blijft</td><td>Bedenktijd nemen, offerte meevragen</td></tr><tr><td>\"Gratis apparatuurpakket\"</td><td>Verwerkt in de kastenprijs</td><td>Prijs zonder pakket opvragen</td></tr><tr><td>Ronde totaalprijs zonder specificatie</td><td>Posten onvergelijkbaar maken</td><td>Specificatie per post eisen</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wanneer koop je een keuken het voordeligst?",
+      "html": "<p>De grootste flexibiliteit vind je in rustige maanden (januari–februari, zomervakantie) en rond het einde van kwartaal of boekjaar, wanneer verkopers targets moeten halen. Showroommodellen en uitlopende series gaan met echte korting weg — daar is de marge al afgeschreven. Koop je voor een nieuwbouwwoning, begin dan ruim vóór de oplevering: met 6 tot 14 weken levertijd plus inmeten heb je die maanden nodig, en zonder tijdsdruk onderhandel je sterker.</p>"
+    },
+    {
+      "kop": "Wat is het alternatief voor onderhandelen?",
+      "html": "<p>Onderhandelen blijft een spel waarin de showroom dagelijks oefent en jij één keer meespeelt. Het alternatief is inkopen tegen vooraf vastgelegde ledenprijzen: via het Bylder-lidmaatschap (€99 eenmalig) koop je bij 60+ deelnemende merken tegen vaste, transparante prijzen zonder onderhandeltheater. Leden besparen gemiddeld €4.200 op hun afwerking. Vraag daarnaast altijd een onafhankelijke check op je offerte: 96% van de kopers betaalt minstens één post te duur, en dat zie je zelf zelden terug in een showroomofferte.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is de korting in de keukenshowroom echte korting?",
+      "a": "Meestal niet. De startprijs is bewust hoog gezet zodat er ruimte is om te zakken; 20 tot 40 procent \"korting\" brengt je vaak pas op een marktconforme prijs. Vergelijk daarom op gespecificeerde posten, niet op het kortingspercentage."
+    },
+    {
+      "q": "Moet ik ingaan op een 'alleen vandaag geldig'-aanbod?",
+      "a": "Nee. Kunstmatige tijdsdruk is een verkooptechniek; vrijwel elke zaak houdt het aanbod ook later gestand of doet een vergelijkbaar voorstel. Neem de offerte mee, vergelijk elders en kom eventueel terug — je positie wordt er alleen sterker van."
+    },
+    {
+      "q": "Hoeveel offertes moet ik aanvragen voor een keuken?",
+      "a": "Minimaal twee, liefst drie, met dezelfde indeling en apparatuur op typenummer zodat ze echt vergelijkbaar zijn. Laat de scherpste offerte daarna onafhankelijk checken op te dure posten en ontbrekende kosten zoals montage en inmeten."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Laat je keukenofferte onafhankelijk checken"],
+    "commercieel": ["/showroomsale/", "Bekijk de showroomsale met vaste ledenprijzen"],
+    "zusters": ["keukenofferte-lezen", "keuken-levertijd-planning", "keuken-op-maat-of-standaard"]
+  }
+}

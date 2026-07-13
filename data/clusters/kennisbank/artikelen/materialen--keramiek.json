@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "keramiek",
+  "titel": "Keramiek: eigenschappen, prijs en onderhoud",
+  "title_tag": "Keramiek: eigenschappen, prijs en onderhoud | Bylder",
+  "meta_description": "Keramiek is gebakken klei en mineralen: extreem hard, hittebestendig en onderhoudsarm. Bekijk prijzen, toepassingen en het verschil met composiet."
+,
+  "intro": [
+    "Keramiek is een materiaal van klei, veldspaat en andere mineralen dat onder hoge druk wordt geperst en bij ruim 1.200 °C wordt gebakken. Het resultaat is een extreem harde, dichte plaat of tegel die vrijwel niets opneemt en tegen hitte kan.",
+    "Keramiek is een van de veelzijdigste interieurmaterialen: hetzelfde basismateriaal vind je terug als vloertegel, wandtegel, keukenwerkblad en zelfs als dun front op kastdeuren. Moderne printtechniek maakt marmer-, beton- en houtlooks mogelijk die nauwelijks van echt te onderscheiden zijn."
+  ],
+  "stats": [
+    ["€350–€600", "per m¹ werkblad"],
+    ["€40–€100", "per m² tegels (materiaal)"],
+    ["30+ jaar", "levensduur"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is keramiek geschikt voor?",
+      "html": "<p>Keramiek kan vrijwel overal: als vloertegel (ook met vloerverwarming, want het geleidt warmte goed), als wandtegel in badkamer en keuken, als werkblad en als wastafelblad. Grootformaat platen tot 320 cm maken naadloze achterwanden en douchewanden mogelijk. Omdat keramiek uv-bestendig en vorstbestendig is, kan het bovendien buiten — als terrastegel of buitenkeukenblad. Weinig materialen zijn zó breed inzetbaar.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van keramiek?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse tot duur</td><td>Werkblad €350–€600 per m¹; tegels €40–€100 per m²</td></tr><tr><td>Krasvastheid</td><td>Uitstekend</td><td>Harder dan kwartscomposiet; snijden op het blad kan (bot wel je messen)</td></tr><tr><td>Hittebestendigheid</td><td>Uitstekend</td><td>Hete pannen kunnen direct op het blad</td></tr><tr><td>Vochtbestendigheid</td><td>Uitstekend</td><td>Vrijwel geen wateropname; vlekt niet</td></tr><tr><td>Onderhoud</td><td>Zeer laag</td><td>Alleen schoonmaken; nooit impregneren</td></tr><tr><td>Levensduur</td><td>30+ jaar</td><td>Verkleurt en slijt nauwelijks</td></tr><tr><td>Duurzaamheid</td><td>Gemiddeld</td><td>Energie-intensief bakproces; zeer lange levensduur compenseert</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je keramiek?",
+      "html": "<p>Keramiek is zo goed als onderhoudsvrij: regelmatig schoonmaken met warm water en een neutraal reinigingsmiddel is genoeg. Het hoeft nooit geïmpregneerd of behandeld te worden. Bij tegels vraagt vooral het voegwerk aandacht: voegen kunnen op den duur verkleuren en zijn gevoeliger voor vocht dan de tegel zelf. Let bij werkbladen op de randen: keramiek is oersterk op het vlak, maar een harde klap op een rand of hoek kan een chip veroorzaken — en die is lastig onzichtbaar te repareren.</p>"
+    },
+    {
+      "kop": "Voor wie is keramiek de juiste keuze?",
+      "html": "<p>Keramiek is de keuze voor wie maximale zorgeloosheid wil: hete pannen, snijden, vlekken — het blad trekt zich er niets van aan. Vergelijk je met <a href=\"/kennisbank/materialen/kwartscomposiet/\">kwartscomposiet</a>: dat is €100–€150 per meter goedkoper en minder stootgevoelig aan de randen, maar kan niet tegen hitte en uv-licht. Vergelijk je met <a href=\"/kennisbank/materialen/natuursteen/\">natuursteen</a>: die is authentiek en uniek, maar poreus en onderhoudsgevoeliger. Wie een strak, praktisch en langlevend oppervlak zoekt en het budget heeft, kiest keramiek.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen keramiek en kwartscomposiet?",
+      "a": "Keramiek is gebakken klei zonder hars en kan daardoor tegen hitte en uv-licht; kwartscomposiet bevat kunsthars en niet. Keramiek is harder maar stootgevoeliger aan randen, en gemiddeld €100–€150 per meter duurder."
+    },
+    {
+      "q": "Kun je snijden op een keramisch werkblad?",
+      "a": "Ja, keramiek is hard genoeg om messen te weerstaan. Praktisch is het niet: je messen worden er snel bot van. Een snijplank blijft dus aan te raden — voor je messen, niet voor het blad."
+    },
+    {
+      "q": "Wat kosten keramische tegels?",
+      "a": "Reken op €40–€100 per m² voor het materiaal, afhankelijk van formaat en afwerking; grootformaat en gerectificeerde tegels zitten aan de bovenkant. Leggen komt daar nog bij, zeker bij groot formaat is dat specialistenwerk."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/kopen/tegels/", "Tegels kopen"],
+    "zusters": ["kwartscomposiet", "natuursteen", "microcement"]
+  }
+}

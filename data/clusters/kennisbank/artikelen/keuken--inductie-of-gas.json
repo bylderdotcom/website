@@ -1,0 +1,53 @@
+{
+  "cluster": "keuken",
+  "slug": "inductie-of-gas",
+  "titel": "Inductie of gas: wat kies je?",
+  "title_tag": "Inductie of gas kiezen: vergelijking & kosten | Bylder",
+  "meta_description": "Inductie is voor vrijwel elke nieuwe keuken de logische keuze: sneller, veiliger en standaard in nieuwbouw. Vergelijk aansluiting, pannen en kosten.",
+  "intro": [
+    "Voor vrijwel elke nieuwe keuken is inductie de logische keuze: nieuwbouwwoningen worden sinds 2018 standaard zonder gasaansluiting opgeleverd, en inductie kookt sneller, veiliger en zuiniger dan gas. Alleen wie in een bestaande woning met gasaansluiting heel gehecht is aan koken op vuur, heeft nog een echte keuze.",
+    "De overstap naar inductie is meer dan een nieuwe kookplaat: je hebt een zwaardere elektrische aansluiting nodig (perilex of krachtstroom) en niet elke pan werkt op inductie. Wie dat vooraf regelt, voorkomt verrassingen op installatiedag."
+  ],
+  "stats": [
+    ["2018", "sindsdien nieuwbouw standaard gasloos"],
+    ["2× 16A", "gangbare perilex-aansluiting voor inductie"],
+    ["€300–€1.500", "prijsrange inductiekookplaat"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat zijn de verschillen in de praktijk?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Aspect</th><th>Inductie</th><th>Gas</th></tr></thead><tbody><tr><td>Snelheid</td><td>Zeer snel — water kookt in enkele minuten</td><td>Snel, maar minder efficiënt</td></tr><tr><td>Veiligheid</td><td>Geen open vuur; plaat wordt alleen warm van de pan</td><td>Open vlam, kans op gaslek</td></tr><tr><td>Schoonmaken</td><td>Vlak glas, doekje erover</td><td>Roosters en branders demonteren</td></tr><tr><td>Regelbaarheid</td><td>Zeer precies, per stand</td><td>Direct zichtbaar aan de vlam</td></tr><tr><td>Aansluiting</td><td>Perilex/krachtstroom nodig</td><td>Gasaansluiting nodig</td></tr><tr><td>Pannen</td><td>Alleen magnetische bodems</td><td>Alle pannen</td></tr><tr><td>Prijs kookplaat</td><td>€300–€1.500</td><td>€200–€800</td></tr></tbody></table><p>In energiekosten ontlopen beide elkaar per huishouden weinig; de doorslag geven veiligheid, gemak en de vraag of er überhaupt gas in de woning zit.</p>"
+    },
+    {
+      "kop": "Welke aansluiting heeft inductie nodig?",
+      "html": "<p>Een volwaardige inductiekookplaat trekt te veel vermogen voor een gewoon stopcontact. De standaardoplossing is een <strong>perilex-aansluiting</strong>: een vijfpolige wandcontactdoos op twee fasen (2× 16A), goed voor kookplaten tot zo'n 7,4 kW. Zeer krachtige platen of een fornuis met meerdere ovens vragen soms 3-fase krachtstroom.</p><p>Check drie dingen vóór aankoop: heeft de keuken al een perilex-doos, hoeveel fasen heeft je meterkast (nieuwbouw meestal 3×25A, prima), en welk aansluitvermogen vraagt de plaat volgens de specificaties. In nieuwbouw zit perilex vrijwel altijd standaard op de kookplaats; in een bestaande woning kost aanleg door een installateur doorgaans €150 tot €400, afhankelijk van de afstand tot de meterkast. Er bestaan ook 1-fase inductieplaten die op een gewone groep werken, maar die begrenzen het vermogen zodra je meerdere zones tegelijk gebruikt.</p>"
+    },
+    {
+      "kop": "Moet je nieuwe pannen kopen voor inductie?",
+      "html": "<p>Alleen pannen met een magnetische bodem werken op inductie. De test is simpel: blijft een magneet aan de onderkant plakken, dan werkt de pan. Gietijzer, plaatstaal en de meeste moderne RVS-pannen werken; aluminium en koperen pannen zonder speciale bodem niet.</p><p>Reken bij een volledige overstap op €100 tot €400 voor een nieuwe basisset. Koop pannen met een dikke, vlakke bodem: die verdelen de warmte beter en voorkomen het zoemende geluid dat dunne bodems op inductie kunnen maken.</p>"
+    },
+    {
+      "kop": "Wat kost de overstap van gas naar inductie?",
+      "html": "<p>De totale overstap bestaat uit de kookplaat (€300–€1.500), de perilex-aansluiting als die er nog niet is (€150–€400), eventueel nieuwe pannen (€100–€400) en het laten afdoppen van de gasleiding. Wie helemaal van het gas af gaat, kan de gasaansluiting laten verwijderen; informeer bij de netbeheerder naar de actuele voorwaarden en kosten.</p><p>Koop je de kookplaat via de keukenzaak of aannemer, vergelijk dan de regelprijs met de vrije verkoopprijs — apparatuur is een post waar veel marge op zit, en 96% van de kopers betaalt voor minstens één post te veel. Via Bylder koop je apparatuur met ledenprijzen bij 60+ merken.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan een inductiekookplaat op een gewoon stopcontact?",
+      "a": "Meestal niet: een volwaardige inductieplaat heeft een perilex-aansluiting op twee fasen nodig. Er bestaan 1-fase modellen voor een gewone groep, maar die begrenzen het vermogen zodra meerdere zones tegelijk aan staan."
+    },
+    {
+      "q": "Is koken op inductie duurder dan op gas?",
+      "a": "In aanschaf is inductie iets duurder, in gebruik ontlopen de energiekosten elkaar weinig omdat inductie veel efficiënter met energie omgaat. Wie helemaal van het gas af gaat, bespaart bovendien het vastrecht van de gasaansluiting."
+    },
+    {
+      "q": "Krijgt mijn nieuwbouwwoning nog een gasaansluiting?",
+      "a": "Nee. Sinds 1 juli 2018 worden nieuwbouwwoningen in Nederland standaard zonder gasaansluiting gebouwd. Koken op gas is in nieuwbouw daardoor praktisch geen optie meer; de kookplaats is voorbereid op inductie met een perilex-aansluiting."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check de apparatuurprijzen in je offerte"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["begrip:perilex", "oven-kiezen", "afzuigkap-kiezen"]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "composiet",
+  "titel": "Composiet: wat is het en welke typen zijn er?",
+  "title_tag": "Composiet: typen, eigenschappen en prijzen | Bylder",
+  "meta_description": "Composiet is een samengesteld materiaal van steengranulaat of mineralen met hars. Ontdek de typen, het verschil met kwartscomposiet en de prijzen."
+,
+  "intro": [
+    "Composiet is een verzamelnaam voor samengestelde materialen: fijngemalen steen of minerale vulstoffen worden met kunsthars tot platen geperst. In het interieur bedoelen we er meestal werkblad- en wastafelmaterialen mee, zoals kwartscomposiet, acryl-composiet (mineraal gebonden acrylaat) en granietcomposiet.",
+    "Het grote voordeel van composiet boven natuursteen is voorspelbaarheid: geen poriën, geen natuurlijke zwakke plekken en een egale kleur over de hele plaat. Welk type composiet je kiest, bepaalt vooral de balans tussen hardheid, reparatiegemak en prijs."
+  ],
+  "stats": [
+    ["€200–€500", "per m¹ werkblad"],
+    ["20–30 jaar", "levensduur, afhankelijk van type"],
+    ["3", "hoofdtypen: kwarts-, acryl- en granietcomposiet"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is composiet geschikt voor?",
+      "html": "<p>Composiet wordt vooral gebruikt voor keukenwerkbladen, spoelbakken en wastafels. Acryl-composiet (bekend van merken als Corian en HI-MACS, zie <a href=\"/kennisbank/materialen/solid-surface/\">solid surface</a>) is daarnaast populair voor naadloze wastafelmeubels en douchebakken, omdat het thermisch te vormen is. Granietcomposiet zie je veel als kant-en-klare spoelbak. Voor vloeren en wanden wordt composiet zelden toegepast; daar zijn tegels of <a href=\"/kennisbank/materialen/microcement/\">microcement</a> logischer.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van composiet?",
+      "html": "<p>De typen verschillen onderling, maar als groep scoort composiet zo.</p><table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse</td><td>€200–€500 per m¹; acryl-composiet zit aan de bovenkant</td></tr><tr><td>Krasvastheid</td><td>Goed tot zeer goed</td><td>Kwartscomposiet zeer krasvast; acryl-composiet zachter maar polijstbaar</td></tr><tr><td>Hittebestendigheid</td><td>Matig</td><td>De hars is de zwakke schakel; onderzetter blijft nodig</td></tr><tr><td>Vochtbestendigheid</td><td>Uitstekend</td><td>Niet poreus; ideaal rond spoelbak en wastafel</td></tr><tr><td>Onderhoud</td><td>Laag</td><td>Water en mild reinigingsmiddel; nooit impregneren</td></tr><tr><td>Levensduur</td><td>20–30 jaar</td><td>Acryl-composiet is bovendien onzichtbaar te repareren</td></tr><tr><td>Duurzaamheid</td><td>Gemiddeld</td><td>Kunsthars op fossiele basis; lange levensduur en repareerbaarheid helpen</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je composiet?",
+      "html": "<p>Alle composieten zijn onderhoudsarm: schoonmaken met warm water en een mild middel, klaar. Gebruik geen chloor, ontstopper of schuurmiddel en zet geen hete pannen direct op het blad. Acryl-composiet heeft een uniek voordeel: krassen en zelfs brandplekjes kunnen door een vakman worden weggeschuurd en gepolijst, waarna het blad weer als nieuw is. Bij kwarts- en granietcomposiet is schade meestal blijvend.</p>"
+    },
+    {
+      "kop": "Voor wie is composiet de juiste keuze?",
+      "html": "<p>Composiet past bij wie steenlook en gebruiksgemak wil zonder het onderhoud van echte steen. Kies <a href=\"/kennisbank/materialen/kwartscomposiet/\">kwartscomposiet</a> als krasvastheid vooropstaat, of acryl-composiet als je naadloze vormen en repareerbaarheid belangrijker vindt. Vergelijk je met <a href=\"/kennisbank/materialen/natuursteen/\">natuursteen</a>: die is authentieker en uniek van tekening, maar poreus en gevoeliger voor vlekken. Vergelijk je met <a href=\"/kennisbank/materialen/hpl-laminaat/\">hpl-laminaat</a>: dat is flink goedkoper, maar gaat korter mee en is niet te repareren.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen composiet en kwartscomposiet?",
+      "a": "Composiet is de verzamelnaam voor alle steen-hars-materialen; kwartscomposiet is het bekendste type, met circa 90% kwarts als vulstof. Andere typen zijn acryl-composiet (solid surface) en granietcomposiet. In de keukenwinkel worden de termen vaak door elkaar gebruikt — vraag altijd welk type bedoeld wordt."
+    },
+    {
+      "q": "Is acryl-composiet hetzelfde als solid surface?",
+      "a": "In de praktijk wel: solid surface is de internationale naam voor mineraal gevuld acrylaat, bekend van merken als Corian. Het is door en door gekleurd, naadloos te verlijmen en thermisch te vormen."
+    },
+    {
+      "q": "Wat kost een composiet werkblad?",
+      "a": "Reken op €200–€500 per strekkende meter, afhankelijk van type en dikte. Granietcomposiet spoelbakken zijn er al vanaf zo'n €150 als los element. Randafwerking en uitsparingen bepalen een groot deel van de eindprijs."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/showroomsale/", "Showroomsale"],
+    "zusters": ["kwartscomposiet", "solid-surface", "keramiek"]
+  }
+}

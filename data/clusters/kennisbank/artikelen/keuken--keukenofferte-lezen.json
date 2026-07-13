@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "keukenofferte-lezen",
+  "titel": "Keukenofferte lezen: posten begrijpen en valkuilen herkennen",
+  "title_tag": "Keukenofferte lezen: posten & valkuilen | Bylder",
+  "meta_description": "Een keukenofferte lees je per post: kasten, werkblad, apparatuur, montage. Leer de valkuilen kennen — van stelposten tot merk-substitutie — vóór je tekent."
+  ,
+  "intro": [
+    "Een keukenofferte lees je post voor post: kasten en fronten, werkblad, apparatuur (op typenummer), spoelbak en kraan, montage en inmeten. Elke post die alleen als totaalbedrag of \"inclusief\" vermeld staat, is een post die je niet kunt controleren of vergelijken.",
+    "Dat controleren loont: 96% van de kopers betaalt minstens één post te duur. Bij een gemiddelde keukenprijs van €12.000 zit het verschil tussen een scherpe en een dure offerte al snel in de duizenden euro's — zonder dat de keuken zelf anders wordt."
+  ],
+  "stats": [
+    ["96%", "van de kopers betaalt minstens één post te duur"],
+    ["€6.000–€20.000", "prijsrange complete keuken"],
+    ["6–10", "posten die een volledige offerte hoort te tonen"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke posten horen in een keukenofferte te staan?",
+      "html": "<p>Een controleerbare offerte specificeert minimaal: het kastenprogramma met frontkleur en greeploos of met grepen; het werkblad met materiaal, dikte en strekkende meters; alle apparatuur met merk én exact typenummer; spoelbak en kraan met type; de achterwand; montage inclusief aansluiten van apparatuur; en inmeten en levering. Staat er alleen \"complete keuken incl. apparatuur — €14.500\", vraag dan de uitsplitsing op. Een zaak die niet wil specificeren, wil niet vergeleken worden.</p>"
+    },
+    {
+      "kop": "Wat zijn de bekendste valkuilen in keukenoffertes?",
+      "html": "<p>Drie valkuilen keren steeds terug. <strong>Stelpost-verrekening</strong>: posten als achterwand, kraan of verlichting staan als stelpost (\"nader te bepalen\") en worden later tegen showroomtarief verrekend — de eindprijs ligt dan structureel hoger dan de offerte. <strong>Montage-mist</strong>: montage staat er \"vanaf\" of exclusief water-, afvoer- en elektra-aansluitingen; het verschil komt als meerwerk terug. <strong>Merk-substitutie</strong>: bij apparatuur staat \"of gelijkwaardig\", waarmee de zaak een goedkoper merk mag leveren tegen dezelfde prijs.</p><table class=\"vgl\"><thead><tr><th>Valkuil</th><th>Hoe je hem herkent</th><th>Wat je afspreekt</th></tr></thead><tbody><tr><td>Stelposten</td><td>\"Stelpost\", \"n.t.b.\", rond bedrag zonder specificatie</td><td>Vaste prijs per post vóór ondertekening</td></tr><tr><td>Onvolledige montage</td><td>\"Montage vanaf\", aansluitingen uitgesloten</td><td>All-in montageprijs incl. aansluiten</td></tr><tr><td>Merk-substitutie</td><td>\"Of gelijkwaardig\" bij apparatuur</td><td>Merk + typenummer vastgelegd, substitutie geschrapt</td></tr><tr><td>Prijsvoorbehoud</td><td>\"Prijswijzigingen voorbehouden\"</td><td>Vaste prijs met geldigheidsdatum</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe vergelijk je twee keukenoffertes eerlijk?",
+      "html": "<p>Vergelijk nooit op totaalprijs, maar per post. Zet apparatuur naast elkaar op typenummer en prijs die online; het verschil met de offerteprijs is je eerste onderhandelpunt. Controleer of beide offertes dezelfde kastenkwaliteit bieden (dikte korpus, ladegeleiders, scharnieren met demping) en of montage en inmeten in beide gevallen volledig zijn. Reken stelposten mee tegen een realistische marktprijs, niet tegen het optimistische offertebedrag.</p>"
+    },
+    {
+      "kop": "Wat doe je vóór je tekent?",
+      "html": "<p>Teken pas als elke post gespecificeerd en vast is, de levertijd met een concrete week staat vermeld en de aanbetaling redelijk is (liefst maximaal 15–25%, nooit het volledige bedrag vooruit). Laat de offerte vooraf onafhankelijk doorlichten — de gratis offerte-check van Bylder vergelijkt jouw posten met marktprijzen en signaleert de valkuilen hierboven. Dat kost een kwartier en voorkomt dat je bij de eindafrekening voor verrassingen staat.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat betekent 'stelpost' in een keukenofferte?",
+      "a": "Een stelpost is een geschat bedrag voor een onderdeel dat nog niet definitief gekozen is, zoals de achterwand of kraan. Het werkelijke bedrag wordt later verrekend — vaak tegen hogere showroomtarieven. Vraag daarom vaste prijzen vóór je tekent."
+    },
+    {
+      "q": "Waarom staat er 'of gelijkwaardig' bij de apparatuur?",
+      "a": "Die clausule geeft de keukenzaak het recht een ander merk of type te leveren dat zij als gelijkwaardig beschouwt, meestal goedkoper in inkoop. Laat de clausule schrappen en het exacte merk plus typenummer vastleggen als je zeker wilt zijn van je apparatuur."
+    },
+    {
+      "q": "Is een hoge aanbetaling bij een keuken normaal?",
+      "a": "Een aanbetaling van 15 tot 25 procent bij opdracht is gebruikelijk; sommige zaken vragen meer. Betaal nooit het volledige bedrag vóór levering en montage — je verliest dan elke drukmiddel bij problemen en loopt risico bij faillissement van de zaak."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Laat je keukenofferte gratis checken"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Vergelijk met eerlijke keukenprijzen"],
+    "zusters": ["keuken-showroom-onderhandelen", "stelpost-keuken-nieuwbouw", "koelkast-kiezen"]
+  }
+}

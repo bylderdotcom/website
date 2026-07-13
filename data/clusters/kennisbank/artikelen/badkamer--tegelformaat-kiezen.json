@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "tegelformaat-kiezen",
+  "titel": "Tegelformaat kiezen: groot of klein in de badkamer?",
+  "title_tag": "Tegelformaat kiezen: groot of klein | Bylder",
+  "meta_description": "Grootformaat tegels ogen ruimer en hebben minder voegen, kleine tegels volgen afschot beter. Zo kies je het juiste formaat, met uitleg over rectified.",
+  "intro": [
+    "Grootformaat tegels (60x60 cm en groter) zijn voor de meeste badkamers de beste keuze: minder voegen, een rustiger beeld en een ruimtelijk effect — mits de ondergrond vlak genoeg is en de tegelzetter ermee overweg kan. Kleine formaten en mozaïek blijven onmisbaar op plekken met afschot, zoals de douchevloer.",
+    "Formaat is niet alleen esthetiek: het bepaalt de legkosten, het aantal meters voeg dat je moet onderhouden en of de tegel het afschot naar de doucheput kan volgen."
+  ],
+  "stats": [
+    ["60x60 / 60x120 cm", "populairste badkamerformaten"],
+    ["2-3 mm", "voegbreedte bij rectified tegels"],
+    ["max 15x15 cm", "gangbaar formaat op douchevloer met puntafschot"]
+  ],
+  "secties": [
+    {
+      "kop": "Groot of klein tegelformaat: wat zijn de voor- en nadelen?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Criterium</th><th>Grootformaat (≥60x60)</th><th>Klein formaat / mozaïek</th></tr></thead><tbody><tr><td>Uitstraling</td><td>Rustig, ruimtelijk, minder lijnen</td><td>Levendig, klassiek of decoratief</td></tr><tr><td>Voegen</td><td>Weinig meters voeg, minder onderhoud</td><td>Veel voegen; meer schoonmaak, meer grip</td></tr><tr><td>Afschot volgen</td><td>Niet geschikt voor puntafschot</td><td>Volgt elk afschot, ideaal voor douchevloer</td></tr><tr><td>Ondergrond</td><td>Moet zeer vlak zijn; anders uitvlakken</td><td>Vergevingsgezind bij lichte oneffenheden</td></tr><tr><td>Legkosten per m²</td><td>Hoger per tegel (gewicht, lijmbed), maar snel per m²</td><td>Mozaïek en kleine formaten zijn arbeidsintensief</td></tr></tbody></table><p>Vuistregel: grootformaat op vloer en wanden, klein formaat of mozaïek alleen waar het functioneel is (douchevloer) of als bewust accent (achterwand, nis).</p>"
+    },
+    {
+      "kop": "Maakt een grote tegel een kleine badkamer kleiner?",
+      "html": "<p>Nee — het is een hardnekkige mythe dat kleine ruimtes kleine tegels vragen. Minder voeglijnen geven juist een rustiger en ruimer beeld, ook in een badkamer van 4 m². Waar je wel op let: kies een formaat waarbij je geen smalle sneden aan de randen krijgt (passtukken smaller dan een halve tegel ogen rommelig) en laat de tegelzetter het legplan vooraf uittekenen. Doorlopend hetzelfde formaat op vloer en wand versterkt het ruimtelijke effect nog eens.</p>"
+    },
+    {
+      "kop": "Wat betekent rectified en waarom geeft het smallere voegen?",
+      "html": "<p>Rectified (gerectificeerd) betekent dat de tegel na het bakken machinaal haaks en op exact gelijke maat is geslepen. Daardoor kun je met smalle voegen van 2-3 mm werken en ontstaat een strak, bijna naadloos vlak. Niet-gerectificeerde tegels verschillen onderling enkele millimeters en hebben bredere voegen van 3-5 mm nodig om dat op te vangen. Rectified is bij grootformaat vrijwel standaard en het overwegen waard: minder voeg is minder onderhoud. Let wel: smalle voegen stellen hogere eisen aan vlakheid van de ondergrond en vakmanschap van de tegelzetter.</p>"
+    },
+    {
+      "kop": "Welk formaat kies je voor de douchevloer?",
+      "html": "<p>De douchevloer moet afschot hebben naar de put of goot. Bij puntafschot (afschot vanuit vier richtingen naar een centrale put) kunnen grote tegels dat niet volgen: je gebruikt dan tegels tot circa 15x15 cm of mozaïek. Kies je een draingoot tegen de wand, dan loopt het afschot in één richting en kan de vloertegel — ook grootformaat, eventueel doorgezaagd — gewoon doorlopen. Dat is de reden dat lange douchegoten en grootformaat tegels zo vaak samen gekozen worden.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Zijn grootformaat tegels duurder om te laten zetten?",
+      "a": "Per tegel wel: ze zijn zwaar, vragen een vlakke ondergrond en een dubbele verlijming. Per vierkante meter valt het vaak mee omdat het werk sneller gaat dan bij kleine formaten. Mozaïek en visgraat zijn per m² het duurst in arbeid."
+    },
+    {
+      "q": "Wat is het verschil tussen rectified en niet-rectified tegels?",
+      "a": "Rectified tegels zijn na het bakken op exacte maat geslepen, waardoor voegen van 2-3 mm mogelijk zijn en het vlak strak oogt. Niet-gerectificeerde tegels verschillen enkele millimeters in maat en hebben voegen van 3-5 mm nodig."
+    },
+    {
+      "q": "Kan een grootformaat tegel op de douchevloer?",
+      "a": "Ja, mits je een draingoot gebruikt zodat het afschot in één richting loopt. Bij een centrale put met puntafschot moet de tegel het afschot in vier richtingen volgen; dan zijn kleine formaten tot circa 15x15 cm of mozaïek nodig."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Bekijk tegelformaten in de badkamerplanner"],
+    "commercieel": ["/kopen/tegels/", "Bekijk tegels in alle formaten"],
+    "zusters": ["badkamertegels-kiezen", "voegen-en-kitwerk", "begrip:rectified"]
+  }
+}

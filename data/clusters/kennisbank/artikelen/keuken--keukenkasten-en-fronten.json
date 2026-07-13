@@ -1,0 +1,53 @@
+{
+  "cluster": "keuken",
+  "slug": "keukenkasten-en-fronten",
+  "titel": "Keukenkasten en fronten: waar betaal je voor?",
+  "title_tag": "Keukenkasten & fronten: corpus, materialen, prijs | Bylder",
+  "meta_description": "Een keukenkast bestaat uit een corpus (de binnenkast) en een front (de deur). Het front bepaalt de uitstraling én het grootste deel van de prijs.",
+  "intro": [
+    "Een keukenkast bestaat uit twee delen: het corpus — de binnenkast van vrijwel altijd melamine spaanplaat — en het front, de deur of la-voorzijde die je ziet. Het front bepaalt de uitstraling en het grootste deel van het prijsverschil tussen keukens; corpussen verschillen tussen merken veel minder dan verkopers suggereren.",
+    "Wie begrijpt hoe kasten zijn opgebouwd, vergelijkt offertes scherper: een 'compleet andere keuken' is vaak hetzelfde corpus met een ander front en andere greep. Dat inzicht kan duizenden euro's schelen op een gemiddelde keukenprijs van €12.000."
+  ],
+  "stats": [
+    ["2 delen", "corpus (binnenkast) + front (zichtzijde)"],
+    ["±16–19 mm", "gangbare plaatdikte van een corpus"],
+    ["€12.000", "gemiddelde prijs complete keuken"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen corpus en front?",
+      "html": "<p>Het <strong>corpus</strong> is de kale kast: bodem, zijden, achterwand en planken, vrijwel altijd van spaanplaat met een melaminetoplaag van 16 tot 19 mm dik. Daarin zitten de scharnieren, ladegeleiders en stelpoten. Het <strong>front</strong> is de deur of ladevoorzijde die erop gemonteerd wordt — en dat is wat je ziet, aanraakt en afrekent.</p><p>Kwaliteitsverschillen in corpussen zitten in details: dikte van de achterwand, randafwerking (ABS-kanten), en vooral het beslag — soft-close scharnieren en volledig uittrekbare laden van een A-merk (zoals Blum of Hettich) gaan tientallen jaren mee. Vraag in de showroom dus niet alleen naar het front, maar ook naar het beslagmerk en het aantal verstelmogelijkheden.</p>"
+    },
+    {
+      "kop": "Welke frontmaterialen zijn er en wat kosten ze?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Frontmateriaal</th><th>Uitstraling</th><th>Sterkte</th><th>Prijsniveau</th></tr></thead><tbody><tr><td>Melamine/kunststof folie</td><td>Vlak, veel kleuren en prints</td><td>Redelijk; folie kan op termijn loslaten bij randen</td><td>€</td></tr><tr><td>HPL-laminaat</td><td>Als melamine, maar harder oppervlak</td><td>Zeer stoot- en krasvast</td><td>€€</td></tr><tr><td>Gelakt (mat of hoogglans)</td><td>Diepe, egale kleur, ook in profiel</td><td>Goed; krasjes bij te lakken</td><td>€€€</td></tr><tr><td>Fineer</td><td>Echte houtnerf op plaatmateriaal</td><td>Goed; gevoelig voor vocht en UV</td><td>€€€</td></tr><tr><td>Massief hout</td><td>Authentiek, elk front uniek</td><td>Sterk; werkt bij vocht- en temperatuurwisseling</td><td>€€€€</td></tr></tbody></table><p>Voor gezinnen met jonge kinderen is HPL de meest zorgeloze keuze; wie warmte zoekt zonder de prijs van massief hout, kiest fineer.</p>"
+    },
+    {
+      "kop": "Waar zit het prijsverschil tussen keukens echt?",
+      "html": "<p>Ruwweg: het corpus is een klein deel van de kastprijs, het front met beslag het grootste deel. Een keuken van melaminefronten kan met dezelfde indeling en apparatuur duizenden euro's goedkoper zijn dan dezelfde keuken met gelakte fronten. Dat betekent ook: wie moet kiezen, bespaart slimmer op frontmateriaal dan op beslag, laden of apparatuur — de dingen die het dagelijks gebruik bepalen.</p><p>Let bij offertes op de kastenopbouw: veel keukenzaken rekenen per kast, en extra's als een lade in plaats van een deur, hoge kasten of binnenlades tikken per stuk aan. Vergelijk offertes daarom per regel en niet op totaalprijs — 96% van de kopers betaalt voor minstens één post te veel.</p>"
+    },
+    {
+      "kop": "Hoe herken je kwaliteit in de showroom?",
+      "html": "<p>Vijf snelle checks: (1) open een la volledig — een kwaliteitslade komt helemaal uit de kast en hangt niet door; (2) kijk naar de randafwerking van het front — een dikke ABS-kant of doorlopende laklaag beschermt tegen vocht; (3) check de achterwand — een dun hardboard plaatje wijst op een budgetcorpus; (4) vraag het merk van scharnieren en geleiders; (5) vraag hoe lang fronten nabestelbaar zijn bij schade.</p><p>Twijfel je over de prijs-kwaliteitverhouding van een aanbieding, laat de offerte dan objectief doorrekenen voordat je tekent. Bylder-leden kopen bij 60+ deelnemende merken tegen ledenprijzen en besparen gemiddeld €4.200 op hun afbouw.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Zijn dure en goedkope keukencorpussen echt verschillend?",
+      "a": "Minder dan de prijsverschillen suggereren: vrijwel elk corpus is melamine spaanplaat van 16 tot 19 mm. De echte verschillen zitten in randafwerking, achterwanddikte en vooral het beslag — scharnieren en ladegeleiders van A-merken gaan het langst mee."
+    },
+    {
+      "q": "Welk frontmateriaal is het meest geschikt voor een gezin?",
+      "a": "HPL-laminaat: het is zeer stoot- en krasvast, ongevoelig voor vet en vocht en eenvoudig schoon te maken. Hoogglans gelakte fronten tonen krassen en vingerafdrukken het snelst."
+    },
+    {
+      "q": "Kan ik alleen de fronten van mijn keuken vervangen?",
+      "a": "Ja, als de corpussen nog goed zijn is 'wrappen' of fronten vervangen een veel goedkopere opknapbeurt dan een nieuwe keuken. Let wel op de boorgaten: nieuwe fronten moeten passen op de bestaande scharnierposities, of de kastenbouwer boort ze opnieuw."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Vergelijk je keukenofferte per regel"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["materialen:hpl-laminaat", "materialen:fineer", "materialen:massief-hout"]
+  }
+}

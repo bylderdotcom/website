@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "perilex",
+  "titel": "Perilex",
+  "title_tag": "Wat is perilex? Betekenis + uitleg | Bylder",
+  "meta_description": "Perilex is een krachtige stekkeraansluiting met vijf polen voor elektrisch koken op twee of drie fasen. Lees wanneer je hem nodig hebt voor inductie.",
+  "intro": [
+    "Perilex is een type stekker en wandcontactdoos met vijf polen, bedoeld voor apparaten die meer vermogen vragen dan een gewoon stopcontact aankan — in woningen vrijwel altijd de elektrische of inductiekookplaat. Een perilexaansluiting wordt gevoed door twee of drie fasen (2-fase 230V of 3-fase 400V) met eigen groepen in de meterkast.",
+    "Wie van gas naar inductie overstapt of een keuken in een casco woning plaatst, krijgt vrijwel zeker met perilex te maken: de meeste volwaardige inductiekookplaten hebben er een nodig."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wanneer heb je een perilexaansluiting nodig?",
+      "html": "<p>Een inductiekookplaat met vier of meer zones vraagt doorgaans een perilexaansluiting op twee of drie fasen; alleen kleine kookplaten (2 zones, of 1-fase aangesloten met beperkt vermogen) werken op een gewoon stopcontact. Check in de specificaties van de kookplaat het aansluitvermogen en het aansluitschema.</p><p>Let bij nieuwbouw op of de keukenaansluiting als perilex in de technische omschrijving staat en waar hij precies zit — verplaatsen is later meerwerk. Bij oudere woningen moet soms de meterkast worden uitgebreid van 1-fase naar 3-fase; reken daarvoor op werk door een erkend installateur en informeer bij de netbeheerder naar een eventuele aanpassing van de aansluiting.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik een inductiekookplaat op een gewoon stopcontact aansluiten?",
+      "a": "Alleen kleine of 1-fase aansluitbare modellen met beperkt vermogen. Volwaardige kookplaten hebben een perilexaansluiting op twee of drie fasen nodig; op een gewoon stopcontact overbelast je de groep. Laat het aansluiten over aan een installateur."
+    },
+    {
+      "q": "Wat kost het aanleggen van een perilexaansluiting?",
+      "a": "Dat hangt af van de situatie: zit er al 3-fase in de meterkast en is de afstand kort, dan blijft het beperkt tot enkele honderden euro's. Moet de netaansluiting verzwaard of de meterkast uitgebreid worden, dan loopt het op. Vraag altijd een gespecificeerde offerte."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check je keukenofferte inclusief installatiewerk"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["loze-leiding", "meerwerk"]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "kleine-keuken-indelen",
+  "titel": "Kleine keuken indelen: slimme keuzes onder de 8 m²",
+  "title_tag": "Kleine keuken indelen: tips onder 8 m² | Bylder",
+  "meta_description": "Een kleine keuken deel je in met hoge kasten, smalle apparatuur en een doordachte werkdriehoek. Praktische indelingstips voor keukens onder de 8 m²."
+  ,
+  "intro": [
+    "Een kleine keuken (onder de 8 m²) deel je in door de hoogte te benutten, apparatuur in smalle of combinatievarianten te kiezen en werkblad heilig te verklaren: elke centimeter tussen spoelbak en kookplaat telt. De opstelling — recht, parallel of in L-vorm — volgt uit de ruimte, niet andersom.",
+    "Klein hoeft niet behelpen te betekenen. Een goed ingedeelde keuken van 6 m² werkt prettiger dan een slecht ingedeelde van 12 m², en omdat je minder kasten en werkblad koopt, kun je per onderdeel juist een kwaliteitsslag maken binnen hetzelfde budget."
+  ],
+  "stats": [
+    ["≥90 cm", "aaneengesloten werkblad als praktisch minimum"],
+    ["45 cm", "breedte van compacte vaatwassers en ovens"],
+    ["120 cm", "vrije loopruimte voor een parallelle opstelling"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke opstelling past bij een kleine keuken?",
+      "html": "<p>Bij een smalle ruimte (tot circa 180 cm breed) is een rechte opstelling langs één wand de enige optie; vanaf 240 cm breedte kan een parallelle opstelling met 120 cm loopruimte ertussen — die levert verrassend veel werkblad en kastruimte op. Een L-vorm werkt goed in vierkantere ruimtes en houdt een hoek vrij voor een klein tafeltje. Vermijd een U-vorm onder de 8 m²: de hoeken vreten bruikbare ruimte en de keuken voelt dicht.</p><table class=\"vgl\"><thead><tr><th>Opstelling</th><th>Minimale ruimte</th><th>Sterk punt</th><th>Zwak punt</th></tr></thead><tbody><tr><td>Recht (1 wand)</td><td>vanaf ±180×240 cm</td><td>Goedkoopst, rustig beeld</td><td>Beperkt werkblad</td></tr><tr><td>Parallel (2 wanden)</td><td>vanaf ±240 cm breed</td><td>Veel werkblad en kasten</td><td>120 cm loopruimte nodig</td></tr><tr><td>L-vorm</td><td>vanaf ±200×200 cm</td><td>Compacte werkdriehoek</td><td>Hoekkast vraagt slim beslag</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe benut je de hoogte in een kleine keuken?",
+      "html": "<p>De grootste ruimtewinst zit boven ooghoogte. Kies bovenkasten van 90 cm hoog in plaats van de standaard 70 cm, of trek een kastenwand door tot het plafond — de bovenste planken zijn prima voor voorraad en apparaten die je zelden gebruikt. Eén hoge kastenwand (met inbouwkoelkast, oven en voorraadruimte) op de kopse kant houdt de rest van de keuken laag en open. Gebruik binnenin aanpassingen die de inhoud ontsluiten: uittrekbare apothekerskasten, carrousel- of LeMans-beslag in de hoek en lades in plaats van deuren onderin.</p>"
+    },
+    {
+      "kop": "Welke apparatuur kies je voor een kleine keuken?",
+      "html": "<p>Kies waar mogelijk combinatie- en smalle apparaten: een combi-oven (magnetron en oven in één nis van 45 cm hoog) in plaats van twee losse apparaten, een vaatwasser van 45 cm breed, een koelkast in nismaat 102 of 122 cm en een kookplaat met vier in plaats van vijf zones. Een werkbladafzuiging of plafond-unit spaart de plek van een schouwkap. Reken jezelf niet arm aan miniaturen: een 45 cm vaatwasser wast per beurt minder maar draait vaker — voor één- en tweepersoonshuishoudens is dat prima, voor gezinnen meestal niet.</p>"
+    },
+    {
+      "kop": "Waarop bespaar je niet in een kleine keuken?",
+      "html": "<p>Bezuinig niet op werkbladlengte, ladegeleiders en verlichting. Houd minimaal 90 cm aaneengesloten werkblad tussen kookplaat en spoelbak; korter werkt aantoonbaar onhandig. Volwaardige lades met volledig uittrekbare geleiders ontsluiten de diepte van elk kastje — juist in een kleine keuken het verschil tussen overzicht en stapelen. En omdat kleine keukens vaak minder daglicht hebben, is werkbladverlichting onder de kasten geen luxe maar noodzaak. Met een 3D-ontwerp zie je vooraf of de indeling echt werkt in jouw maten.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel kost een kleine keuken?",
+      "a": "Kleiner betekent goedkoper, maar niet evenredig: apparatuur en montage blijven vrijwel gelijk. Waar een complete keuken gemiddeld €12.000 kost, kom je bij een compacte opstelling vaak uit tussen €6.000 en €10.000, afhankelijk van apparatuur- en werkbladkeuze."
+    },
+    {
+      "q": "Zijn hoge kasten niet te dominant in een kleine ruimte?",
+      "a": "Eén doorlopende hoge kastenwand oogt juist rustiger dan losse kastjes op verschillende hoogtes. Kies fronten in de wandkleur of een lichte tint en greeploos, dan valt de wand weg en houd je de rest van de keuken open."
+    },
+    {
+      "q": "Kan een vaatwasser van 45 cm uit voor een gezin?",
+      "a": "Voor een gezin van vier is 45 cm krap: je draait dan bijna dagelijks. Overweeg in dat geval toch 60 cm en bespaar elders, bijvoorbeeld met een combi-oven in plaats van losse oven en magnetron."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Ontwerp je kleine keuken met de AI-planner"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["keukenapparatuur-inbouwmaten", "koelkast-kiezen", "keukenverlichting"]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cluster": "keuken",
+  "slug": "werkblad-kiezen",
+  "titel": "Welk keukenwerkblad kies je?",
+  "title_tag": "Keukenwerkblad kiezen: 5 materialen vergeleken | Bylder",
+  "meta_description": "Kwartscomposiet, keramiek, graniet, hout of HPL? Vergelijk keukenwerkbladen op prijs, krasvastheid, hittebestendigheid en onderhoud.",
+  "intro": [
+    "Het beste keukenwerkblad voor de meeste huishoudens is kwartscomposiet of keramiek: beide zijn krasvast en onderhoudsarm, waarbij keramiek ook hete pannen verdraagt. Wie een kleiner budget heeft kiest HPL, wie warmte en karakter zoekt kiest hout, en graniet blijft de klassieke natuursteenoptie.",
+    "Het werkblad is het zwaarst belaste onderdeel van je keuken: je snijdt, schuift, mors en zet er dagelijks van alles op. Het verschil in prijs tussen materialen loopt op tot honderden euro's per meter, dus deze keuze verdient meer aandacht dan een snelle showroombeslissing."
+  ],
+  "stats": [
+    ["5", "gangbare werkbladmaterialen"],
+    ["€50–€600", "indicatie per strekkende meter"],
+    ["15+ jaar", "levensduur bij goed onderhoud"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe verhouden de vijf materialen zich tot elkaar?",
+      "html": "<p>De tabel toont indicatieve prijzen per strekkende meter (exclusief montage en uitsparingen) en de belangrijkste gebruikseigenschappen.</p><table class=\"vgl\"><thead><tr><th>Materiaal</th><th>Prijs p/m (indicatie)</th><th>Krasvast</th><th>Hittebestendig</th><th>Onderhoud</th></tr></thead><tbody><tr><td>Kwartscomposiet</td><td>€250–€500</td><td>Zeer goed</td><td>Beperkt — geen hete pannen direct op het blad</td><td>Onderhoudsarm, niet poreus</td></tr><tr><td>Keramiek</td><td>€300–€600</td><td>Uitstekend</td><td>Uitstekend</td><td>Vrijwel onderhoudsvrij</td></tr><tr><td>Graniet</td><td>€250–€500</td><td>Goed</td><td>Goed</td><td>Periodiek impregneren</td></tr><tr><td>Massief hout</td><td>€100–€300</td><td>Matig — krast en deukt</td><td>Matig</td><td>Regelmatig oliën</td></tr><tr><td>HPL/laminaat</td><td>€50–€150</td><td>Redelijk</td><td>Matig</td><td>Onderhoudsarm, naden zijn kwetsbaar</td></tr></tbody></table><p>Prijzen verschillen sterk per dikte, kleur en afwerking; gebruik ze als ordegrootte, niet als offerte.</p>"
+    },
+    {
+      "kop": "Wanneer kies je kwartscomposiet of keramiek?",
+      "html": "<p>Kwartscomposiet (zo'n 90% gemalen kwarts met hars) is de populairste keuze: strak, in veel kleuren leverbaar en ongevoelig voor vlekken omdat het niet poreus is. De achilleshiel is hitte — de hars kan verkleuren onder een hete pan, dus een onderzetter blijft nodig.</p><p>Keramiek is gebakken bij hoge temperatuur en verdraagt daardoor wél hete pannen, krast vrijwel niet en is UV-bestendig. Het is dunner (vaak 12 mm) en iets duurder, en bij een harde klap op een rand kan het schilferen. Voor intensieve koks is keramiek de meest zorgeloze keuze.</p>"
+    },
+    {
+      "kop": "Is hout of graniet nog een goed idee?",
+      "html": "<p>Massief hout geeft warmte die geen ander materiaal evenaart en is relatief betaalbaar. Daar staat tegenover dat het leeft: het krast, deukt en heeft twee tot vier keer per jaar olie nodig. Rond de spoelbak is hout het kwetsbaarst — kies daar eventueel een ander materiaal in een combinatieblad.</p><p>Graniet is natuursteen en dus uniek per plaat, zeer duurzaam en goed hittebestendig. Omdat het licht poreus is moet je het periodiek impregneren tegen vet- en wijnvlekken. Wie van een natuurlijke, levendige tekening houdt, kiest graniet; wie een egaal en voorspelbaar oppervlak wil, zit beter bij composiet of keramiek.</p>"
+    },
+    {
+      "kop": "Waar bespaar je zonder spijt te krijgen?",
+      "html": "<p>HPL (kunststof op spaanplaat) kost een fractie van steen en is de laatste jaren sterk verbeterd: moderne prints imiteren beton, steen en hout overtuigend. Voor een starterswoning, verhuur of een keuken die je binnen tien jaar toch vervangt is HPL rationeel. Vermijd wel naden bij de spoelbak: daar dringt vocht in het spaanplaat.</p><p>Bespaar liever op kleur- en randafwerking dan op materiaal: een exclusieve kleur of verstek-rand kan het blad fors duurder maken zonder functioneel verschil. En vergelijk regelprijzen — werkbladen zijn een post waarop keukenzaken ruim marge rekenen, en 96% van de kopers betaalt voor minstens één post te veel.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het meest onderhoudsvriendelijke werkblad?",
+      "a": "Keramiek: het is niet poreus, krasvast, UV-bestendig en verdraagt hete pannen. Schoonmaken met een vochtige doek volstaat. Kwartscomposiet komt dichtbij, maar vraagt onderzetters voor heet kookgerei."
+    },
+    {
+      "q": "Kun je een hete pan op kwartscomposiet zetten?",
+      "a": "Nee, dat is af te raden. De kunsthars in kwartscomposiet kan bij hoge temperaturen verkleuren of barsten. Gebruik altijd een onderzetter, of kies keramiek of graniet als je vaak hete pannen neerzet."
+    },
+    {
+      "q": "Hoe dik moet een keukenwerkblad zijn?",
+      "a": "Gangbaar is 20 tot 40 mm voor composiet en graniet, en 12 mm voor keramiek (vaak verlijmd op een rand voor een dikker oog). Dikte is vooral een stijlkeuze; de sterkte is bij alle gangbare diktes ruim voldoende."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Laat je keukenofferte controleren"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["materialen:kwartscomposiet", "materialen:keramiek", "materialen:natuursteen"]
+  }
+}

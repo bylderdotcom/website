@@ -1,0 +1,53 @@
+{
+  "cluster": "keuken",
+  "slug": "kookeiland-of-rechte-keuken",
+  "titel": "Kookeiland of rechte keuken?",
+  "title_tag": "Kookeiland of rechte keuken: wat past bij jou? | Bylder",
+  "meta_description": "Een kookeiland vraagt minstens 3,5 à 4 meter ruimtebreedte en een groter budget; een rechte keuken is compact en voordelig. Zo kies je goed.",
+  "intro": [
+    "Een kookeiland is de juiste keuze als je woonkeuken breed genoeg is — reken op minimaal 3,5 tot 4 meter vrije breedte — en je budget ruimte biedt; in alle andere gevallen is een rechte of hoekopstelling de verstandigere keuze. Het eiland zelf is niet duurder per meter, maar de extra meters, het werkblad en de verplaatste aansluitingen tikken samen flink aan.",
+    "In nieuwbouwbrochures is het kookeiland bijna standaard, maar op de bouwtekening blijkt de ruimte vaak krapper dan de artist impression suggereert. Meet daarom eerst, en kies dan pas de vorm."
+  ],
+  "stats": [
+    ["1,2 m", "minimale vrije loopruimte rondom een eiland"],
+    ["3,5–4 m", "minimale ruimtebreedte voor een eiland"],
+    ["€12.000", "gemiddelde prijs complete keuken"]
+  ],
+  "secties": [
+    {
+      "kop": "Wanneer past een kookeiland in je ruimte?",
+      "html": "<p>Rondom een kookeiland heb je minimaal 1,2 meter vrije loopruimte nodig; aan de zijde waar kastdeuren, laden of een vaatwasserklep opengaan liever 1,3 tot 1,5 meter. Een gangbaar eiland is 90 tot 120 cm diep en minimaal 180 cm breed. Tel je dat op, dan heb je al snel een ruimte van 3,5 tot 4 meter breed nodig — puur voor het keukendeel.</p><p>Past het net niet? Overweeg een schiereiland (aan één kant vast aan de wand of kastenwand): dat geeft hetzelfde woonkeuken-gevoel met één loopzone minder.</p>"
+    },
+    {
+      "kop": "Wat zijn de afwegingen op een rij?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Aspect</th><th>Kookeiland</th><th>Rechte keuken</th></tr></thead><tbody><tr><td>Ruimtebehoefte</td><td>Groot — 1,2 m rondom vrijhouden</td><td>Compact, past in vrijwel elke ruimte</td></tr><tr><td>Budget</td><td>Hoger: meer meters kast en werkblad, verplaatste aansluitingen</td><td>Lager: kortste leidingwerk, minder meters</td></tr><tr><td>Sociaal koken</td><td>Je kookt met je gezicht naar de kamer</td><td>Je staat met je rug naar de ruimte</td></tr><tr><td>Werkdriehoek</td><td>Zeer kort als koken of spoelen op het eiland zit</td><td>Werklijn; goed bij spoelbak in het midden</td></tr><tr><td>Afzuiging</td><td>Eilandkap of afzuiging in de kookplaat nodig</td><td>Standaard wandkap volstaat</td></tr><tr><td>Installaties</td><td>Elektra, water en afvoer door de vloer</td><td>Alles langs één wand</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Waarom is een eiland duurder dan het lijkt?",
+      "html": "<p>Het eiland zelf bestaat uit extra kastmeters en een groot, vaak dik werkbladoppervlak — bij steen of keramiek al gauw het duurste onderdeel van de keuken. Daar komen verborgen kosten bij: leidingen en elektra moeten door de vloer, wat bij nieuwbouw als meerwerk vóór het storten van de vloer geregeld moet worden, en bij verbouw hak- en breekwerk betekent. Een eilandafzuigkap of een kookplaat met geïntegreerde afzuiging is bovendien duurder dan een wandmodel.</p><p>Bedenk dat een complete keuken gemiddeld €12.000 kost; een eilandopstelling zit meestal in de bovenste helft van de bandbreedte van €6.000 tot €20.000. Laat de offerte per regel controleren — 96% van de kopers betaalt voor minstens één post te veel.</p>"
+    },
+    {
+      "kop": "Hoe beslis je bij nieuwbouw op tijd?",
+      "html": "<p>Bij nieuwbouw moet de keuze eiland of geen eiland vroeg vallen: de loze leidingen en vloerdozen voor een eiland gaan mee in de ruwbouwfase. Wacht je tot na de oplevering, dan betekent een eiland alsnog vloer openmaken. Vraag de aannemer daarom om aansluitpunten op de eilandpositie als meerwerk, óók als je de keuken zelf pas later koopt — dat houdt beide opties open.</p><p>Twijfel je over de maatvoering? Plak het eiland op ware grootte af met tape (of teken het in een 3D-planner) en loop de dagelijkse routes: koelkast–eiland, eiland–eettafel, tuindeur–hal. Voelt één route krap, dan is een schiereiland of rechte keuken de betere keuze.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel ruimte moet er rondom een kookeiland vrij zijn?",
+      "a": "Minimaal 1,2 meter aan elke zijde waar je loopt of werkt; 1,3 tot 1,5 meter aan de kant waar de vaatwasser of grote laden opengaan. Minder dan 1 meter voelt in de praktijk als een obstakel."
+    },
+    {
+      "q": "Is een kookeiland veel duurder dan een rechte keuken?",
+      "a": "Meestal wel: je betaalt voor extra kastmeters, een groot werkblad, leidingwerk door de vloer en een duurdere afzuigoplossing. Reken globaal op enkele duizenden euro's verschil bij vergelijkbare afwerking."
+    },
+    {
+      "q": "Wat is een goed alternatief als een eiland net niet past?",
+      "a": "Een schiereiland: een keukenblok dat met één korte zijde aan de wand of kastenwand vastzit. Je houdt de bar- en werkfunctie en het open karakter, maar hebt één loopzone van 1,2 meter minder nodig."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "Zie je keuken eerst in 3D"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["keukenindeling-werkdriehoek", "afzuigkap-kiezen", "casco-keuken-nieuwbouw"]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "hangend-toilet-rimless",
+  "titel": "Hangend toilet met rimless spoeling: waarom is het de standaard?",
+  "title_tag": "Hangend rimless toilet kiezen | Bylder",
+  "meta_description": "Een hangend rimless toilet is makkelijk schoon en oogt strak. Zo kies je wandcloset, inbouwreservoir en zitting — inclusief prijzen en aandachtspunten.",
+  "intro": [
+    "Een hangend toilet met rimless spoeling is de standaardkeuze in nieuwe badkamers omdat het twee schoonmaakproblemen tegelijk oplost: de pot zweeft vrij van de vloer (dweilen eronder) en de spoelrand ontbreekt, zodat er geen verborgen rand is waar aanslag en bacteriën zich ophopen.",
+    "De keuze bestaat uit drie onderdelen: het wandcloset (de pot zelf), het inbouwreservoir in de wand en het bedieningspaneel. Samen bepalen ze prijs, spoelgedrag en hoe makkelijk onderhoud later is."
+  ],
+  "stats": [
+    ["€350-€1.200", "hangend rimless toilet compleet (excl. montage)"],
+    ["3/6 liter", "gangbare spaarspoeling per spoelbeurt"],
+    ["±400 kg", "draagvermogen van een degelijk inbouwframe"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is een wandcloset en waarom hangend?",
+      "html": "<p>Een wandcloset is een toiletpot die aan de wand hangt in plaats van op de vloer staat. Het gewicht wordt gedragen door een stalen inbouwframe in de wand, dat bij degelijke merken circa 400 kg draagt. De voordelen: de vloer blijft vrij (sneller schoon, strakker beeld), de hoogte is bij montage instelbaar en het spoelreservoir verdwijnt uit het zicht. Nadeel is dat leidingen en reservoir in een voorzetwand zitten — dat kost 15-20 cm ruimte en maakt de installatie bewerkelijker dan een staand toilet.</p>"
+    },
+    {
+      "kop": "Wat betekent rimless en is het echt hygiënischer?",
+      "html": "<p>Rimless (randloos) betekent dat de klassieke holle spoelrand aan de binnenkant van de pot ontbreekt. Het spoelwater wordt via een verdeler langs de open binnenwand geleid. Onder die oude spoelrand hoopten kalk en bacteriën zich op, onbereikbaar voor de borstel; bij rimless zie en bereik je het hele oppervlak. Dat maakt schoonmaken sneller en toiletblokjes en agressieve middelen minder nodig. Let bij goedkope rimless modellen op het spoelbeeld: een slecht ontworpen verdeler spoelt niet de hele pot of spat over de rand. Kies daarom een model met een beproefde spoeltechniek van een gevestigd merk.</p>"
+    },
+    {
+      "kop": "Welk inbouwreservoir kies je?",
+      "html": "<p>Het inbouwreservoir zit in het frame in de voorzetwand en gaat het langst van alle onderdelen mee — kies hier dus niet de goedkoopste optie.</p><table class=\"vgl\"><thead><tr><th>Onderdeel</th><th>Waar op letten</th><th>Prijsindicatie</th></tr></thead><tbody><tr><td>Inbouwframe + reservoir</td><td>A-merk met langjarig leverbare binnenwerk-onderdelen, service via drukplaatopening</td><td>€150-€400</td></tr><tr><td>Wandcloset rimless</td><td>Goed spoelbeeld, diepspoel, coating tegen aanslag</td><td>€150-€600</td></tr><tr><td>Zitting softclose/quick-release</td><td>Afneembaar voor schoonmaak</td><td>€40-€150</td></tr><tr><td>Bedieningsplaat</td><td>Tweeknops spaarspoeling (3/6 liter)</td><td>€30-€150</td></tr></tbody></table><p>Vrijwel alle reservoirs zijn via de opening achter de bedieningsplaat te repareren zonder de wand te openen — mits de onderdelen nog leverbaar zijn. Dat pleit voor een A-merk reservoir, ook onder een budgetpot.</p>"
+    },
+    {
+      "kop": "Waar let je op bij montage en hoogte?",
+      "html": "<p>De standaard zithoogte is 40-42 cm bovenkant pot; wie langer is of levensloopbestendig bouwt kiest 44-46 cm (comforthoogte). Het frame moet aan een dragende wand of stevige vloer verankerd worden, en de voorzetwand wordt daarna betegeld — de hoogte ligt dus definitief vast vóór het tegelwerk. Controleer bij de offerte of frame, isolatiemat (tegen condens en geluid), bedieningsplaat en afwerking van de voorzetwand allemaal in de prijs zitten; dit zijn klassieke posten waar meerwerk op ontstaat.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan een hangend toilet loskomen van de muur?",
+      "a": "Bij correcte montage niet: het stalen inbouwframe draagt circa 400 kg en wordt aan wand en vloer verankerd. Problemen ontstaan alleen bij ondeugdelijke frames of montage aan een te lichte wand zonder verankering aan de vloer."
+    },
+    {
+      "q": "Wat kost een hangend rimless toilet inclusief installatie?",
+      "a": "De materialen kosten €350-€1.200 (frame, pot, zitting en bedieningsplaat samen). Installatie inclusief voorzetwand en tegelwerk kost daarbovenop enkele honderden euro's, afhankelijk van of de voorzetwand er al zit."
+    },
+    {
+      "q": "Hoe repareer je een inbouwreservoir als het lekt of doorloopt?",
+      "a": "Vrijwel altijd via de opening achter de bedieningsplaat: het vlotter- en spoelmechanisme is daardoor bereikbaar en vervangbaar zonder breken. Kies daarom een A-merk reservoir waarvan binnenwerk-onderdelen ook na tien jaar nog leverbaar zijn."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check de toiletposten in je offerte"],
+    "commercieel": ["/kopen/sanitair/", "Bekijk hangende toiletten"],
+    "zusters": ["begrip:wandcloset", "begrip:inbouwreservoir", "begrip:rimless"]
+  }
+}

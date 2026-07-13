@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "keuken-op-maat-of-standaard",
+  "titel": "Keuken op maat of standaard: maatwerk, semi-maatwerk of systeem?",
+  "title_tag": "Keuken op maat of standaard systeem? | Bylder",
+  "meta_description": "Kies tussen systeemkeuken, semi-maatwerk uit de fabriek en volledig maatwerk van de meubelmaker. Vergelijk prijzen, levertijden en wanneer wat loont."
+  ,
+  "intro": [
+    "De keuze tussen een keuken op maat of standaard valt uiteen in drie niveaus: systeemkeukens met vaste modulematen (zoals de IKEA-klasse), semi-maatwerk uit de fabriek via showrooms, en volledig maatwerk van een interieurbouwer. Voor de meeste woningen is semi-maatwerk de logische middenweg; echt maatwerk loont vooral bij afwijkende ruimtes.",
+    "Het prijsverschil is fors: van een paar duizend euro voor een systeemkeuken tot het dubbele of driedubbele voor maatwerk bij vergelijkbare afmetingen. Wat je daarvoor terugkrijgt — millimeterwerk, vrije materiaalkeuze — is niet in elke ruimte de meerprijs waard."
+  ],
+  "stats": [
+    ["€6.000–€20.000", "prijsrange complete keuken (gem. €12.000)"],
+    ["10/15/20 cm", "stappen in standaard kastbreedtes"],
+    ["2–3×", "prijsfactor maatwerk t.o.v. systeemkeuken"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen systeem, semi-maatwerk en maatwerk?",
+      "html": "<p>Een systeemkeuken bestaat uit voorraadmodules in vaste breedtes (meestal stappen van 10, 15 of 20 cm) met een beperkt front- en kleurenprogramma; je vult restruimtes op met passtroken. Semi-maatwerk — het gros van de showroomkeukens — komt uit dezelfde soort fabrieken maar biedt veel meer front-, kleur- en hoogtevarianten en wordt per order geproduceerd. Volledig maatwerk maakt een interieurbouwer op de millimeter, in elk materiaal, inclusief oplossingen die fabrieken niet leveren (schuine wanden, doorlopend hout, geïntegreerde nissen).</p><table class=\"vgl\"><thead><tr><th>Type</th><th>Prijsindicatie (compleet)</th><th>Levertijd</th><th>Past bij</th></tr></thead><tbody><tr><td>Systeemkeuken</td><td>€4.000–€9.000</td><td>1–4 weken</td><td>Rechte ruimtes, budget, zelfbouwers</td></tr><tr><td>Semi-maatwerk</td><td>€8.000–€20.000</td><td>6–14 weken</td><td>De meeste woningen en nieuwbouw</td></tr><tr><td>Volledig maatwerk</td><td>€20.000–€50.000+</td><td>8–20 weken</td><td>Afwijkende ruimtes, specifieke materialen</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wanneer is een systeemkeuken slim en wanneer niet?",
+      "html": "<p>Een systeemkeuken is slim bij een rechte of L-vormige ruimte zonder gekke maten, een beperkt budget of een woning die je over enkele jaren weer verlaat. De kwaliteit van korpussen en beslag is bij de bekende systemen prima; het verschil met duurdere keukens zit vooral in frontkeuze, maatflexibiliteit en service (inmeten en montage regel je grotendeels zelf). Minder slim is een systeemkeuken bij schuine wanden, niet-standaard nishoogtes of als je apparatuur van buiten het systeem wilt inbouwen — de passtroken en compromissen stapelen zich dan op.</p>"
+    },
+    {
+      "kop": "Wat krijg je bij semi-maatwerk extra voor je geld?",
+      "html": "<p>Semi-maatwerk biedt kasten in meer hoogtes en dieptes, fronten in tientallen kleuren en materialen, en — belangrijk — een keten die inmeten, levering en montage als één verantwoordelijkheid draagt. Kastbreedtes blijven in vaste stappen, maar met plint-, hoogte- en dieptevariatie past de keuken vrijwel altijd zonder zichtbare passtukken. Let bij offertes wel op de bekende valkuilen: stelposten en apparatuur tegen adviesprijzen. De showroomprijs bevat onderhandelruimte; vergelijk gespecificeerde offertes of koop tegen vaste ledenprijzen.</p>"
+    },
+    {
+      "kop": "Wanneer loont volledig maatwerk?",
+      "html": "<p>Maatwerk loont als de ruimte er om vraagt (schuine kappen, nissen, monumentale details), als je materialen wilt die fabrieken niet voeren (massief hout, gespoten exotische kleuren, doorlopend fineer) of als de keuken deel is van een groter interieurontwerp. Reken op minimaal het dubbele van een vergelijkbare fabriekskeuken en een langere doorlooptijd. Een tussenvorm die vaak wordt vergeten: een fabriekskeuken als basis met maatwerkelementen eromheen (kastenwand, bar, nis) — je betaalt maatwerk alleen waar het zichtbaar verschil maakt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een dure keuken echt beter dan een systeemkeuken?",
+      "a": "Deels. Korpussen en beslag ontlopen elkaar minder dan de prijs suggereert; het verschil zit in maatflexibiliteit, frontkeuze, dikkere werkbladen en de service rond inmeten en montage. Wie een rechte ruimte en handige monteur heeft, koopt bij een systeemkeuken veel kwaliteit voor weinig."
+    },
+    {
+      "q": "Wat is semi-maatwerk precies?",
+      "a": "Een fabriekskeuken die per order geproduceerd wordt met keuze uit veel fronten, kleuren en kasthoogtes, maar binnen vaste breedtestappen. Vrijwel alle showroomkeukens in het middensegment zijn semi-maatwerk; de term 'op maat' in reclame betekent zelden millimeterwerk."
+    },
+    {
+      "q": "Kan ik maatwerk combineren met standaard kasten?",
+      "a": "Ja, en dat is vaak de beste prijs-kwaliteitroute: standaard of semi-maatwerk kasten als basis, met maatwerk voor de zichtbare bijzonderheden zoals een kastenwand tot het plafond of een bar. Je betaalt het maatwerktarief dan alleen waar het telt."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "Zie je keukenopties in een 3D-impressie"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["keuken-showroom-onderhandelen", "keukenofferte-lezen", "werkblad-kiezen"]
+  }
+}
