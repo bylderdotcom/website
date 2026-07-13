@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "rimless",
+  "titel": "Rimless",
+  "title_tag": "Wat is rimless? Betekenis + uitleg | Bylder",
+  "meta_description": "Rimless betekent spoelrandloos: een toilet zonder binnenrand, waardoor het veel makkelijker schoon te houden is. Lees de voordelen en aandachtspunten.",
+  "intro": [
+    "Rimless betekent spoelrandloos: een toiletpot zonder de omgeslagen binnenrand waar het spoelwater traditioneel onderdoor stroomt. Het water wordt in plaats daarvan via een geleider gericht langs de binnenzijde van de pot gestuurd.",
+    "Voor wie een toilet of badkamer vernieuwt is rimless inmiddels de logische standaard: onder de spoelrand van een klassiek closet hopen kalk en bacteriën zich op, precies waar de borstel niet komt. Zonder rand is de pot in één beweging schoon te maken."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij een rimless toilet?",
+      "html": "<p>De spoelkwaliteit verschilt per model: bij een goed ontworpen rimless closet blijft het water in de pot, bij een matig ontwerp kan het over de rand spatten. Kies daarom een gerenommeerd merk of vraag de showroom naar spoeltests. Vrijwel alle rimless closets zijn wandclosets die op een inbouwreservoir worden gemonteerd.</p><p>Rimless is er in elk prijssegment en het prijsverschil met een klassiek closet is klein — bij vervanging is er zelden een reden om nog een model mét spoelrand te kiezen. Combineer eventueel met een softclose- en quick-release-zitting: ook die maken schoonmaken makkelijker.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Spoelt een rimless toilet even goed als een gewoon toilet?",
+      "a": "Bij kwaliteitsmerken wel: de gerichte waterstroom spoelt de hele binnenzijde schoon, vaak met minder water. Goedkope modellen kunnen spatten of de pot onvolledig spoelen — kies dus op merk en reviews, niet alleen op prijs."
+    },
+    {
+      "q": "Is een rimless toilet duurder?",
+      "a": "Nauwelijks. Rimless zit inmiddels in alle prijsklassen, van instapmodellen tot design. Het grootste prijsverschil in een toiletcombinatie zit in het merk, het inbouwreservoir en de bedieningsplaat, niet in het randloze ontwerp zelf."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Ontwerp je badkamer met de AI-planner"],
+    "commercieel": ["/kopen/sanitair/", "Bekijk sanitair met ledenprijzen"],
+    "zusters": ["wandcloset", "inbouwreservoir"]
+  }
+}

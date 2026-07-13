@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "keuken-onderhoud",
+  "titel": "Keuken onderhouden: het juiste advies per materiaal",
+  "title_tag": "Keuken onderhouden per materiaal | Bylder",
+  "meta_description": "Keukenonderhoud verschilt per materiaal: kwartscomposiet en keramiek vragen weinig, hout en hoogglans meer. Per onderdeel het juiste schoonmaakadvies."
+  ,
+  "intro": [
+    "Keukenonderhoud is per materiaal verschillend: kwartscomposiet en keramiek volstaan met water en een mild schoonmaakmiddel, massief hout wil periodiek olie, en hoogglans fronten vragen zachte doeken zonder schurende middelen. Het verkeerde middel richt meer schade aan dan geen onderhoud.",
+    "Goed onderhoud is vooral wéten wat je materiaal is. Dezelfde groene schuurspons die een rvs-spoelbak mooi houdt, ruïneert een hoogglans front; de azijnreiniger die tegels laat glimmen, tast natuursteen aan. Bewaar daarom de materiaalspecificaties uit je keukenofferte."
+  ],
+  "stats": [
+    ["1–2× per jaar", "oliebeurt voor een massief houten werkblad"],
+    ["pH-neutraal", "veiligste reiniger voor vrijwel elk materiaal"],
+    ["15–25 jaar", "levensduur van een goed onderhouden keuken"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe onderhoud je het werkblad per materiaal?",
+      "html": "<p>Het werkblad vangt het meeste te verduren en is het materiaalgevoeligst. Kwartscomposiet is vlekbestendig maar niet hittevast: gebruik altijd een onderzetter en vermijd agressieve ontvetters die de hars dof maken. Keramiek kan vrijwel alles hebben — heet, zuur, schuren — en is daarmee het zorgeloost. Natuursteen (graniet, marmer) is poreus: direct opnemen van wijn, citroen en olie, en periodiek impregneren. Massief hout wil één à twee keer per jaar een oliebeurt en beloont dat met een blad dat je bij krassen gewoon opschuurt.</p><table class=\"vgl\"><thead><tr><th>Materiaal</th><th>Dagelijks</th><th>Periodiek</th><th>Nooit doen</th></tr></thead><tbody><tr><td>Kwartscomposiet</td><td>Water + mild middel</td><td>—</td><td>Hete pannen, agressieve ontvetters</td></tr><tr><td>Keramiek</td><td>Water + mild middel</td><td>—</td><td>Vrijwel niets; alleen vallende impact vermijden</td></tr><tr><td>Natuursteen</td><td>pH-neutrale reiniger</td><td>Impregneren (1–2× p.j.)</td><td>Azijn, citroen, ontkalker</td></tr><tr><td>Massief hout</td><td>Vochtig afnemen</td><td>Oliën (1–2× p.j.)</td><td>Langdurig water laten staan</td></tr><tr><td>Kunststof (HPL)</td><td>Allesreiniger</td><td>—</td><td>Schuursponzen, snijden op het blad</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe houd je fronten en grepen mooi?",
+      "html": "<p>Matte en melamine fronten kunnen tegen een gewone allesreiniger; veeg wel altijd na met een droge doek, want vocht dat in randen trekt is doodsoorzaak nummer één van folie- en MDF-fronten. Hoogglans (gelakt of acryl) reinig je uitsluitend met een zachte, schone microvezeldoek en water — elk korreltje in een vuile doek trekt krassen. Gelakte en houten fronten verdragen geen agressieve ontvetters; gebruik een pH-neutraal middel. Ontvet de zone rond grepen en boven de vaatwasser maandelijks: handvet en stoom tasten daar als eerste de laklaag aan.</p>"
+    },
+    {
+      "kop": "Wat vraagt de rest van de keuken aan onderhoud?",
+      "html": "<p>De rvs-spoelbak blijft mooi met een mild schuurmiddel of speciale rvs-reiniger, altijd poetsend in de slijprichting; granieten en composieten spoelbakken behandel je zoals het gelijknamige werkblad. Ontkalk de kraan met een mild middel — geen pure azijn op gekleurde of PVD-finishes. Maak de vetfilters van de afzuigkap elke één à twee maanden schoon (de meeste mogen in de vaatwasser) en vervang koolstoffilters van een recirculatiekap volgens voorschrift. Stel na het eerste jaar de scharnieren en lades één keer bij; daarna hoeft dat zelden nog.</p>"
+    },
+    {
+      "kop": "Welke schade voorkom je met kleine gewoontes?",
+      "html": "<p>Drie gewoontes verlengen de levensduur meetbaar. Zet de vaatwasser pas open als de stoom weg is, of trek hem direct na het programma even op een kier — condens tegen het aanrechtblad en de frontrand veroorzaakt de bekende bolle randen. Gebruik onderzetters op composiet en snijplanken op elk materiaal, ook op keramiek (dat blad wint het van je messen, niet andersom). En neem gemorst vocht bij naden, rond de spoelbak en bij de kraan direct op: vrijwel alle 'versleten' keukens zijn in werkelijkheid vochtschade.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik azijn gebruiken in de keuken?",
+      "a": "Op tegels en rvs kan verdunde azijn, maar op natuursteen, gekleurde kraanfinishes en voegen richt het schade aan, en op kwartscomposiet maakt het de toplaag dof. Een pH-neutrale reiniger is bijna altijd de veiligere keuze."
+    },
+    {
+      "q": "Hoe krijg ik een vlek uit mijn composiet werkblad?",
+      "a": "Begin met warm water en een mild schoonmaakmiddel op een niet-schurende spons. Hardnekkige vlekken kunnen met een speciale composietreiniger; gebruik nooit agressieve ontvetters of schuurmiddelen, die tasten de kunsthars aan en laten doffe plekken achter."
+    },
+    {
+      "q": "Hoe vaak moet een houten werkblad geolied worden?",
+      "a": "Eén à twee keer per jaar, en het eerste jaar wat vaker. Je ziet het aan het blad zelf: als water niet meer parelt maar intrekt, is het tijd. Licht opschuren en oliën herstelt ook krassen en vlekken — dat maakt hout het best repareerbare werkbladmateriaal."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check materialen en posten in je offerte"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["werkblad-kiezen", "materialen:kwartscomposiet", "materialen:keramiek"]
+  }
+}

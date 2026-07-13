@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "rvs",
+  "titel": "RVS: eigenschappen, prijs en onderhoud",
+  "title_tag": "RVS: eigenschappen, prijs en onderhoud | Bylder",
+  "meta_description": "RVS is roestvast staal: hygiënisch, hittebestendig en onverwoestbaar, wel krasgevoelig. Bekijk prijzen per meter en voor wie rvs de juiste keuze is."
+,
+  "intro": [
+    "RVS (roestvast staal) is een staallegering met minimaal 10,5% chroom, dat aan het oppervlak een onzichtbaar beschermlaagje vormt waardoor het niet roest. Voor keukens wordt meestal type AISI 304 gebruikt, hetzelfde staal als in professionele horecakeukens.",
+    "RVS is het enige gangbare werkbladmateriaal dat volledig ongevoelig is voor hitte, water én zuren tegelijk. Daar staat één zichtbaar nadeel tegenover: het krast makkelijk, en die krassen horen bij de look — wie een smetteloos oppervlak verwacht, moet dat vooraf weten."
+  ],
+  "stats": [
+    ["€300–€600", "per m¹ werkblad"],
+    ["30+ jaar", "levensduur"],
+    ["100%", "recyclebaar zonder kwaliteitsverlies"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is RVS geschikt voor?",
+      "html": "<p>RVS wordt gebruikt voor keukenwerkbladen (vaak met naadloos ingelaste spoelbak en opstaande achterrand), losse spoelbakken, afzuigkappen, keukenachterwanden en professionele werktafels. In de badkamer zie je het minder — het oogt daar snel klinisch — maar het kan prima als wastafel of accent. Ook voor buitenkeukens is rvs uitstekend geschikt: weerbestendig en hygiënisch. Voor vloeren en wanden buiten de spatzone is het geen logische keuze.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van RVS?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse tot duur</td><td>€300–€600 per m¹, afhankelijk van dikte en laswerk</td></tr><tr><td>Krasvastheid</td><td>Matig</td><td>Krast makkelijk; krassen vervagen tot een egale gebruiksglans</td></tr><tr><td>Hittebestendigheid</td><td>Uitstekend</td><td>Hete pannen kunnen direct op het blad</td></tr><tr><td>Vochtbestendigheid</td><td>Uitstekend</td><td>Volledig waterdicht en bestand tegen zuren en schoonmaakmiddelen</td></tr><tr><td>Onderhoud</td><td>Laag</td><td>Afnemen volstaat; vingerafdrukken zijn het meeste werk</td></tr><tr><td>Levensduur</td><td>30+ jaar</td><td>Praktisch onverwoestbaar bij normaal gebruik</td></tr><tr><td>Duurzaamheid</td><td>Goed</td><td>Volledig en eindeloos recyclebaar; energie-intensieve productie</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je RVS?",
+      "html": "<p>Dagelijks volstaat een doek met warm water en eventueel afwasmiddel; droog na met een zachte doek om kalkvlekken en strepen te voorkomen. Poets altijd mee met de slijprichting van het staal. Vingerafdrukken en vetvegen verwijder je met een rvs-reiniger of een druppel babyolie op een doek. Gebruik nooit chloor (dat tast de beschermlaag aan) en geen staalwol of schuurmiddel — die veroorzaken juist krassen. Diepe krassen kan een specialist wegpolijsten, maar de meeste rvs-eigenaren laten de gebruiksglans gewoon ontstaan.</p>"
+    },
+    {
+      "kop": "Voor wie is RVS de juiste keuze?",
+      "html": "<p>RVS past bij fanatieke koks en liefhebbers van een professionele of industriële look, die gebruikssporen als karakter zien. Vergelijk je met <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a>: dat is even hittebestendig én krasvast, maar harder, kouder en duurder in grote naadloze vormen. Vergelijk je met <a href=\"/kennisbank/materialen/kwartscomposiet/\">kwartscomposiet</a>: dat oogt huiselijker en krast niet, maar verdraagt geen hete pannen. Wie een smetteloos, krasvrij blad wil, moet rvs niet nemen; wie een werkpaard zoekt dat decennia meegaat wél.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Krast een rvs werkblad snel?",
+      "a": "Ja, rvs krast van alle werkbladmaterialen het snelst. De eerste krassen vallen op, maar na verloop van tijd vervagen ze tot een egale, matte gebruiksglans. Geborsteld rvs verbergt krassen beter dan glanzend."
+    },
+    {
+      "q": "Kan rvs roesten?",
+      "a": "Roestvast staal roest zelf niet, maar 'vliegroest' kan ontstaan door achtergebleven ijzerdeeltjes van bijvoorbeeld pannensponsjes of gietijzer. Dat is oppervlakkig en met rvs-reiniger te verwijderen. Chloor kan de beschermlaag aantasten en putcorrosie veroorzaken."
+    },
+    {
+      "q": "Wat kost een rvs werkblad?",
+      "a": "Reken op €300–€600 per strekkende meter voor maatwerk, afhankelijk van plaatdikte en het aantal ingelaste spoelbakken en randen. Losse rvs-spoelbakken zijn er al vanaf enkele tientjes."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/showroomsale/", "Showroomsale"],
+    "zusters": ["keramiek", "kwartscomposiet", "glas"]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "cluster": "badkamer",
+  "slug": "thermostaatkraan-kiezen",
+  "titel": "Thermostaatkraan kiezen voor de douche",
+  "title_tag": "Thermostaatkraan kiezen: inbouw of opbouw | Bylder",
+  "meta_description": "Een thermostaatkraan houdt de douchetemperatuur constant en veilig. Vergelijk thermostatisch met eengreeps en inbouw met opbouw, inclusief prijzen.",
+  "intro": [
+    "Een thermostaatkraan is voor de douche vrijwel altijd de beste keuze: hij houdt de watertemperatuur constant op de ingestelde stand, ook als elders in huis een kraan opengaat, en beschermt met een blokkering op 38°C tegen verbranding. Een eengreepsmengkraan is goedkoper, maar vraagt telkens opnieuw bijstellen.",
+    "Naast het type kraan kies je ook tussen opbouw (op de muur) en inbouw (weggewerkt in de wand). Die keuze bepaalt de uitstraling, de prijs én hoe ingrijpend een eventuele reparatie later is."
+  ],
+  "stats": [
+    ["38°C", "standaard veiligheidsblokkering thermostaatkraan"],
+    ["€80-€300", "opbouw-thermostaatkraan (kraan zelf)"],
+    ["€250-€700", "inbouwset incl. inbouwdeel"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen thermostatisch en eengreeps?",
+      "html": "<p>Een thermostaatkraan mengt warm en koud water automatisch naar de temperatuur die je op de greep instelt en houdt die vast, ongeacht drukschommelingen in de leiding. Een eengreepsmengkraan regel je handmatig: één hendel voor temperatuur en volume tegelijk. Dat werkt prima bij een wastafel, maar onder de douche merk je elke schommeling direct.</p><table class=\"vgl\"><thead><tr><th>Criterium</th><th>Thermostaatkraan</th><th>Eengreepskraan</th></tr></thead><tbody><tr><td>Temperatuur</td><td>Constant, vooraf instelbaar</td><td>Handmatig, schommelt mee met de druk</td></tr><tr><td>Veiligheid</td><td>Blokkering op 38°C, anti-verbranding</td><td>Geen standaardblokkering</td></tr><tr><td>Prijs</td><td>€80-€300 (opbouw)</td><td>€40-€150 (opbouw)</td></tr><tr><td>Comfort en waterbesparing</td><td>Direct op temperatuur, minder water weg laten lopen</td><td>Instellen kost tijd en water</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Kies je inbouw of opbouw?",
+      "html": "<p>Bij opbouw zit de kraan zichtbaar op de muur, aangesloten op twee uitlopen. Bij inbouw zit het mengdeel in de wand en zie je alleen de greep en een afdekplaat: strak, makkelijk schoon te maken en ruimtebesparend. Inbouw is wel duurder (€250-€700 voor de set plus extra arbeid en hak- en tegelwerk) en een reparatie aan het inbouwdeel betekent de wand in — al zijn de servicedelen van goede merken vanaf de voorzijde bereikbaar. Kies inbouw alleen bij een volledige renovatie of nieuwbouw, en kies dan een merk waarvan onderdelen langjarig leverbaar blijven.</p>"
+    },
+    {
+      "kop": "Waar let je op bij het kopen van een thermostaatkraan?",
+      "html": "<p>Let op vier punten. Eén: een koel blijvend kraanhuis (cool-touch), zodat kinderen zich niet branden aan de kraan zelf. Twee: keramische binnenwerken en messing kraanhuis voor levensduur. Drie: een spaarstop of eco-stand die het debiet begrenst. Vier: compatibiliteit met je watersysteem — bij een doorstroomtoestel of warmtepompboiler met lage aanvoertemperatuur moet de kraan daarop berekend zijn. Merkkranen kosten meer, maar onderdelen zijn na tien jaar nog leverbaar; bij budgetkranen vaak niet.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een thermostaatkraan de meerprijs waard?",
+      "a": "Voor de douche wel: constante temperatuur, verbrandingsbeveiliging op 38°C en minder water verspillen bij het instellen. Het prijsverschil met een eengreepskraan is €40-€150, dat verdien je terug in comfort en veiligheid. Bij een wastafel volstaat eengreeps."
+    },
+    {
+      "q": "Wat kost een inbouwthermostaat inclusief montage?",
+      "a": "Reken op €250-€700 voor de kraanset met inbouwdeel, plus arbeid voor inbouwen, leidingwerk en tegelwerk. Alles bij elkaar ligt inbouw al snel €300-€500 boven een vergelijkbare opbouwkraan. Inbouw loont daarom vooral bij een complete renovatie."
+    },
+    {
+      "q": "Kan een inbouwkraan gerepareerd worden zonder de muur open te breken?",
+      "a": "Bij kwaliteitsmerken meestal wel: het binnenwerk (cartouche en thermo-element) is via de afdekplaat aan de voorzijde te vervangen. Alleen bij lekkage van het inbouwhuis zelf moet de wand open. Kies daarom een merk met langjarig leverbare servicedelen."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check de kraanposten in je offerte"],
+    "commercieel": ["/kopen/sanitair/", "Bekijk thermostaatkranen"],
+    "zusters": ["regendouche", "inloopdouche-of-cabine"]
+  }
+}

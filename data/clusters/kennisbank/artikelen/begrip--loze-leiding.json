@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "loze-leiding",
+  "titel": "Loze leiding",
+  "title_tag": "Wat is een loze leiding? Betekenis + uitleg | Bylder",
+  "meta_description": "Een loze leiding is een lege buis van de meterkast naar een aansluitpunt, waar je later zelf een kabel doorheen trekt. Lees waar je ze plant en waarom.",
+  "intro": [
+    "Een loze leiding is een lege buis die in de wand of vloer loopt van de meterkast naar een aansluitpunt, zonder dat er al een kabel in zit. Je (of een installateur) trekt er later zelf bekabeling doorheen, bijvoorbeeld voor internet, tv of een netwerkaansluiting.",
+    "Bij nieuwbouw en verbouwing zijn loze leidingen een goedkope verzekering voor de toekomst: de buis aanleggen tijdens de bouw kost weinig, maar achteraf een kabel wegwerken betekent hakken, frezen en opnieuw afwerken."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar plan je loze leidingen in je woning?",
+      "html": "<p>Denk vanuit toekomstig gebruik: een loze leiding naar elke plek waar een tv, werkplek of accesspoint kan komen — woonkamer, alle slaapkamers en eventueel zolder. Ook handig: naar de voordeur (videodeurbel), de gevel (buitencamera of laadpunt-bekabeling) en het plafond (accesspoint of alarmsensor).</p><p>Loze leidingen staan als losse posten op de meerwerklijst van de bouwer. Controleer de prijs per stuk en of de buis daadwerkelijk vanaf de meterkast loopt en niet slechts naar een verdeeldoos — alleen dan kun je er later elk type kabel doorheen trekken. Bestel liever één of twee te veel dan te weinig: achteraf toevoegen is vele malen duurder.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen een loze leiding en een bedrade leiding?",
+      "a": "Een loze leiding is een lege buis; bij een bedrade leiding zit er al een kabel in (bijvoorbeeld utp voor internet). Bedraad is duurder maar direct bruikbaar. Een loze leiding is flexibeler: je kiest later zelf het kabeltype."
+    },
+    {
+      "q": "Kan ik zelf een kabel door een loze leiding trekken?",
+      "a": "Ja, dat is doe-het-zelf-werk: met een trekveer trek je de kabel van de meterkast naar het aansluitpunt. Het lukt alleen als de buis nergens onderbroken is en de bochten ruim genoeg zijn — controleer dat bij de oplevering."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Bekijk alle nieuwbouw-tools"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["sparing", "perilex"]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "badkamertegels-kiezen",
+  "titel": "Badkamertegels kiezen: keramiek, natuursteen of betonlook",
+  "title_tag": "Badkamertegels kiezen: materiaal en antislip | Bylder",
+  "meta_description": "Badkamertegels kies je op materiaal en antislip. Vergelijk keramiek, natuursteen en betonlook op prijs en onderhoud, en leer de R-waarden kennen.",
+  "intro": [
+    "Voor badkamertegels is keramiek (porcellanato) in de meeste gevallen de beste keuze: onderhoudsarm, waterdicht van zichzelf en verkrijgbaar in vrijwel elke look — inclusief overtuigende natuursteen- en betonimitaties. Echt natuursteen en cementgebonden betonlook zijn mooier in de details, maar vragen impregneren en meer onderhoud.",
+    "Naast het materiaal kies je voor de vloer een antislipklasse (R-waarde). Die bepaalt hoe stroef de tegel is als hij nat wordt — in een badkamer geen detail, maar een veiligheidskeuze."
+  ],
+  "stats": [
+    ["€20-€60/m²", "gangbare prijsrange keramische badkamertegels"],
+    ["R10-R11", "aanbevolen antislipklasse natte badkamervloer"],
+    ["€40-€120/m²", "natuursteen incl. hogere legkosten"]
+  ],
+  "secties": [
+    {
+      "kop": "Keramiek, natuursteen of betonlook: wat zijn de verschillen?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Criterium</th><th>Keramiek</th><th>Natuursteen</th><th>Betonlook (keramisch of cementgebonden)</th></tr></thead><tbody><tr><td>Prijs per m² (materiaal)</td><td>€20-€60</td><td>€40-€120</td><td>€25-€70 keramisch; gietvloer/microcement per m² duurder</td></tr><tr><td>Onderhoud</td><td>Vrijwel geen; alleen voegen</td><td>Periodiek impregneren, zuurgevoelig (marmer, travertin)</td><td>Keramisch: geen; microcement: coating bijhouden</td></tr><tr><td>Uitstraling</td><td>Elke look mogelijk, herhaling in dessin</td><td>Uniek, elke tegel anders</td><td>Strak, naadloos effect bij grootformaat</td></tr><tr><td>Waterbestendigheid</td><td>Zeer goed (porcellanato zuigt vrijwel niets op)</td><td>Poreus; afhankelijk van impregnatie</td><td>Keramisch zeer goed; cementgebonden vraagt topcoat</td></tr><tr><td>Legkosten</td><td>Standaard</td><td>Hoger (kalibreren, zagen, impregneren)</td><td>Standaard bij keramisch</td></tr></tbody></table><p>Praktische conclusie: kies keramische tegels met de look die je wilt, tenzij je bewust de levendigheid van echt natuursteen wilt en het onderhoud accepteert.</p>"
+    },
+    {
+      "kop": "Wat betekenen de antislipklassen (R-waarden)?",
+      "html": "<p>De R-waarde geeft de stroefheid van een tegel aan, gemeten op een hellend vlak: van R9 (licht antislip) tot R13 (zeer stroef). Voor woningen zijn R9 tot R11 relevant. R9 volstaat voor droge vloeren; voor de badkamervloer is R10 het gangbare advies en in de inloopdouche zelf R11 — of een tegel met aanvullende barefoot-classificatie (A/B/C) voor natte, blootsvoets belopen zones, waarbij klasse B past bij doucherondgangen. Let op: hoe stroever de tegel, hoe lastiger schoon te maken. R10 met een matte afwerking is voor de meeste badkamers de beste balans tussen veiligheid en onderhoud.</p>"
+    },
+    {
+      "kop": "Moeten wand- en vloertegels hetzelfde zijn?",
+      "html": "<p>Nee. Wandtegels hoeven niet antislip te zijn en mogen dus glanzend en gladder zijn; dat maakt schoonmaken makkelijker en reflecteert licht. Veel series bieden dezelfde kleur in een gladde wanduitvoering en een stroevere vloeruitvoering — zo krijg je één beeld met de juiste eigenschappen per vlak. Wie de vloertegel doortrekt op de wand voor een monolithisch effect, kan dat prima doen; andersom (gladde wandtegel op de vloer) is af te raden in natte zones.</p>"
+    },
+    {
+      "kop": "Wat kosten badkamertegels inclusief zetten?",
+      "html": "<p>Naast de materiaalprijs (€20-€60 per m² voor keramiek) betaal je tegelzetterskosten die per formaat en patroon verschillen: grootformaat, visgraat en mozaïek zijn duurder per m² dan een standaard 60x60-vloer. Natuursteen kost extra door kalibreren en impregneren. In een badkamerofferte zijn tegelwerk en arbeid samen vaak de grootste post — juist hier loont het om de m²-prijzen per regel te vergelijken, want dit is een klassieke plek voor te hoge stelposten.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Welke R-waarde moet een badkamervloertegel hebben?",
+      "a": "R10 is het gangbare advies voor de badkamervloer; in de inloopdouche kies je R11 of een tegel met barefoot-classificatie B. R9 is geschikt voor droge ruimtes. Hoger dan R11 is in een woning zelden nodig en maakt schoonmaken lastiger."
+    },
+    {
+      "q": "Is natuursteen geschikt voor de badkamer?",
+      "a": "Ja, mits je het periodiek impregneert en zuurhoudende schoonmaakmiddelen vermijdt — zeker bij marmer en travertin. Hardsteen en leisteen zijn robuuster. Wil je de look zonder het onderhoud, dan is keramische natuursteenimitatie het praktische alternatief."
+    },
+    {
+      "q": "Wat is het verschil tussen betonlook-tegels en een gietvloer?",
+      "a": "Betonlook-tegels zijn keramiek met een betonprint: onderhoudsarm en waterbestendig, maar met voegen. Microcement of een gietvloer is echt naadloos, maar vraagt een vakkundig aangebrachte waterdichte coating en meer onderhoud in natte zones."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check de tegelposten in je offerte"],
+    "commercieel": ["/kopen/tegels/", "Bekijk badkamertegels"],
+    "zusters": ["tegelformaat-kiezen", "materialen:keramiek", "materialen:natuursteen"]
+  }
+}

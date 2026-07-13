@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "koelkast-kiezen",
+  "titel": "Koelkast kiezen: inbouw of vrijstaand, nismaten en energielabel",
+  "title_tag": "Koelkast kiezen: inbouw, nismaat & label | Bylder",
+  "meta_description": "Een koelkast kies je op inbouw of vrijstaand, de juiste nismaat (102, 122 of 178 cm) en het energielabel. Zo voorkom je een kast die niet past of te veel verbruikt."
+  ,
+  "intro": [
+    "Een koelkast kies je op drie punten: inbouw of vrijstaand, de nismaat van je keuken (gangbaar 102, 122 of 178 cm) en het energielabel. Bij een inbouwkoelkast bepaalt de nis welke modellen überhaupt passen — meet die dus vóór je gaat vergelijken.",
+    "De koelkast staat dag en nacht aan en gaat tien tot vijftien jaar mee. Het verschil tussen een zuinig en een onzuinig model loopt over die levensduur op tot honderden euro's stroom, dus het energielabel weegt zwaarder dan bij vrijwel elk ander apparaat."
+  ],
+  "stats": [
+    ["102/122/178 cm", "gangbare nismaten voor inbouwkoelkasten"],
+    ["10–15 jaar", "gemiddelde levensduur van een koelkast"],
+    ["A–G", "energielabelschaal sinds 2021"]
+  ],
+  "secties": [
+    {
+      "kop": "Kies je inbouw of vrijstaand?",
+      "html": "<p>Een inbouwkoelkast verdwijnt achter een kastdeur en geeft een strak keukenbeeld; hij is gebonden aan de nismaat en per liter inhoud duurder. Een vrijstaand model biedt meer inhoud voor minder geld, is makkelijker te vervangen en verhuist mee, maar breekt het kastenfront. Amerikaanse side-by-side koelkasten zijn vrijstaand, vragen 90–120 cm breedte en vaak een wateraansluiting voor ijs en water. In een nieuwbouw- of showroomkeuken is inbouw de norm; bij een losse of tijdelijke keuken is vrijstaand meestal de slimmere koop.</p>"
+    },
+    {
+      "kop": "Welke nismaat heb je nodig?",
+      "html": "<p>De nismaat is de binnenhoogte van de kast waarin de koelkast komt. De drie gangbare maten bepalen grofweg de inhoud en of er een vriesvak bij past.</p><table class=\"vgl\"><thead><tr><th>Nismaat</th><th>Netto-inhoud (indicatie)</th><th>Typische configuratie</th><th>Geschikt voor</th></tr></thead><tbody><tr><td>102 cm</td><td>150–180 l</td><td>Onder- of bovenkast, met of zonder vriesvak</td><td>1–2 personen, kleine keuken</td></tr><tr><td>122 cm</td><td>180–220 l</td><td>Koeler met vriesvak</td><td>2–3 personen</td></tr><tr><td>178 cm</td><td>250–300 l</td><td>Koel-vriescombinatie of volle koeler</td><td>3+ personen, gezinnen</td></tr></tbody></table><p>Meet de nis zelf na (hoogte, breedte 56–57 cm, diepte minimaal 55 cm) en let op het deursysteem: sleepdeur (geleiders) of vaste deur (deur-op-deur). Vaste deuren sluiten beter en gaan langer mee; niet elk model ondersteunt beide.</p>"
+    },
+    {
+      "kop": "Hoe lees je het energielabel sinds 2021?",
+      "html": "<p>Sinds maart 2021 loopt het energielabel van A tot en met G, zonder plusjes. Een koelkast die vroeger A+++ heette, valt nu vaak in klasse C of D — het is dus geen achteruitgang, maar een strengere schaal. Voor een koel-vriescombinatie van 178 cm scheelt een C-label ten opzichte van een F-label globaal 50–100 kWh per jaar, oftewel enkele tientjes stroomkosten per jaar. Op het label staat ook het jaarverbruik in kWh en het geluidsniveau in dB — relevant in een open woonkeuken (onder de 38 dB hoor je hem nauwelijks).</p>"
+    },
+    {
+      "kop": "Waar zit de prijsruimte bij aankoop via de keukenzaak?",
+      "html": "<p>Inbouwapparatuur in een keukenofferte staat vaak per merk en type genoemd, maar tegen bruto adviesprijzen — terwijl hetzelfde apparaat online tientallen procenten goedkoper kan zijn. Controleer het exacte typenummer en vergelijk. Let ook op stilzwijgende merk-substitutie: \"of gelijkwaardig\" in de offerte geeft de showroom ruimte om een ander (goedkoper) merk te leveren. Een onafhankelijke check van de apparatuurposten voorkomt dat je hier de gemiddelde €1.840 aan te dure posten laat liggen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Past elke inbouwkoelkast in mijn keukenkast?",
+      "a": "Nee. De nismaat (102, 122 of 178 cm hoog) moet exact overeenkomen en ook het deursysteem — sleepdeur of vaste deur — moet passen bij je keukenkast. Meet de nis na en controleer het deursysteem in de specificaties voordat je bestelt."
+    },
+    {
+      "q": "Is een A-label koelkast de meerprijs waard?",
+      "a": "Meestal niet direct: A-labels zijn nog schaars en fors duurder. Een C- of D-label biedt op dit moment de beste verhouding tussen aanschafprijs en verbruik. Vergelijk het jaarverbruik in kWh op het label in plaats van alleen de letter."
+    },
+    {
+      "q": "Kan ik de koelkast uit de keukenofferte halen en zelf kopen?",
+      "a": "Ja, apparatuur is een van de makkelijkste posten om te laten vervallen. Vraag de showroom de post apart te specificeren en vergelijk met online prijzen op exact typenummer. Let wel op wie de inbouw dan verzorgt en of de kastmaten aansluiten."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check de apparatuurposten in je keukenofferte"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["keukenapparatuur-inbouwmaten", "keukenofferte-lezen", "duurzame-keuken"]
+  }
+}

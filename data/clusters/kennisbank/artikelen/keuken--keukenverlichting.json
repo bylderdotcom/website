@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "keukenverlichting",
+  "titel": "Keukenverlichting: werkbladverlichting, spots en lichtkleur",
+  "title_tag": "Keukenverlichting: spots & werkbladlicht | Bylder",
+  "meta_description": "Goede keukenverlichting combineert spots voor algemeen licht met werkbladverlichting onder de kasten, in een lichtkleur tussen 2700 en 4000K. Zo plan je het."
+  ,
+  "intro": [
+    "Goede keukenverlichting bestaat uit twee lagen: algemene verlichting (spots of pendels) voor de ruimte en werkbladverlichting onder de bovenkasten voor de plek waar je snijdt en kookt. Eén plafonnière in het midden is niet genoeg — je staat dan in je eigen schaduw te werken.",
+    "Verlichting plan je vóór de keukenmontage, want stroompunten voor onderbouwspots en ledstrips moeten in de wand of in de kasten zitten. Wie het pas bij de oplevering bedenkt, betaalt voor hak- en breekwerk of blijft op losse oplossingen aangewezen."
+  ],
+  "stats": [
+    ["2700–4000K", "bruikbare lichtkleur in de keuken"],
+    ["300–500 lux", "richtwaarde licht op het werkblad"],
+    ["±1,5 m", "gangbare afstand tussen plafondspots"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke lagen verlichting heeft een keuken nodig?",
+      "html": "<p>Denk in drie lagen. Laag één is het algemene licht: inbouwspots, opbouwspots of een railsysteem die de hele ruimte gelijkmatig verlichten. Laag twee is het werklicht: ledstrips of onderbouwspots aan de onderzijde van de bovenkasten, recht boven het werkblad. Laag drie is sfeerlicht: een pendel boven het kookeiland of de eettafel, eventueel ledverlichting in of onder de plint. Laag één en twee zijn functioneel noodzakelijk; laag drie maakt de keuken 's avonds leefbaar zonder vol werklicht.</p>"
+    },
+    {
+      "kop": "Welke lichtkleur (Kelvin) kies je in de keuken?",
+      "html": "<p>De lichtkleur kies je tussen 2700K en 4000K. Hoe lager het getal, hoe warmer (geler) het licht; hoe hoger, hoe koeler (witter). Voor werkbladverlichting is 3000–4000K prettig: je ziet kleuren van voedsel natuurgetrouw en werkt preciezer. Voor sfeer- en algemene verlichting in een open woonkeuken is 2700–3000K logischer, zodat de keuken 's avonds aansluit bij de woonkamer. Kies daarnaast een kleurweergave-index (CRI of Ra) van minimaal 90 boven het werkblad.</p><table class=\"vgl\"><thead><tr><th>Lichtkleur</th><th>Sfeer</th><th>Geschikt voor</th></tr></thead><tbody><tr><td>2700K</td><td>Warm wit</td><td>Eettafel, sfeerlicht, open woonkeuken</td></tr><tr><td>3000K</td><td>Warm-neutraal</td><td>Algemene spots, allround keuze</td></tr><tr><td>3500–4000K</td><td>Neutraal/koel wit</td><td>Werkbladverlichting, taakverlichting</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe regel je werkbladverlichting onder de bovenkasten?",
+      "html": "<p>Ledstrips in een aluminium profiel met diffuser geven de mooiste, egale lichtlijn zonder puntreflecties in het werkblad. Onderbouwspots zijn een alternatief, maar geven lichtcirkels. Monteer de strip aan de voorzijde van de kastonderkant, zodat het licht op de werkzone valt en niet alleen tegen de achterwand. De transformator verdwijnt bovenop of in een kast; laat de keukenzaak of elektricien hiervoor een stroompunt achter de kasten opnemen. Heb je geen bovenkasten, kies dan pendels of richtbare spots recht boven het werkblad.</p>"
+    },
+    {
+      "kop": "Wat plan je vóór de keukenmontage en wat kost het?",
+      "html": "<p>Vóór de montage moeten de stroompunten vaststaan: een aansluiting achter de bovenkasten voor werkbladverlichting, loze leidingen naar een eventueel eiland, en de posities van plafondspots afgestemd op de kastopstelling (spots recht vóór de kastenwand, niet erboven). Reken globaal op €30–€60 per m ledprofiel inclusief strip, €25–€75 per inbouwspot exclusief installatie, en €40–€80 per extra stroompunt door de elektricien. In nieuwbouw regel je extra stroompunten als meerwerk — vergelijk die meerwerkprijzen kritisch, want dit is een post waar kopers structureel te veel betalen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel spots heb ik nodig in de keuken?",
+      "a": "Als vuistregel één spot per 1 à 1,5 m², geplaatst op onderlinge afstand van ongeveer 1,5 meter en zo'n 60 cm uit de kastenwand. Bij een keuken van 10 m² kom je dan op zes tot acht spots, aangevuld met aparte werkbladverlichting."
+    },
+    {
+      "q": "Kan werkbladverlichting ook achteraf?",
+      "a": "Ja, met oplaadbare ledstrips of strips die via een zichtbaar snoertje naar een stopcontact lopen. Netjes weggewerkt met een eigen stroompunt achter de kast is het echter alleen vóór of tijdens de keukenmontage goed te regelen."
+    },
+    {
+      "q": "Is dimbare verlichting in de keuken de moeite waard?",
+      "a": "In een open woonkeuken wel: je schakelt dan van vol werklicht naar avondsfeer. Kies dimbare ledspots met een bijpassende (led)dimmer of smart lampen; niet elke ledlamp is dimbaar, dus controleer dit bij aankoop."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Plan je keukenindeling inclusief lichtpunten"],
+    "commercieel": ["/verbouwen/", "Vind een elektricien via Bylder"],
+    "zusters": ["kleine-keuken-indelen", "achterwand-keuken", "casco-keuken-nieuwbouw"]
+  }
+}

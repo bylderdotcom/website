@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "opdekdeur",
+  "titel": "Opdekdeur",
+  "title_tag": "Wat is een opdekdeur? Betekenis + uitleg | Bylder",
+  "meta_description": "Een opdekdeur valt met een randje óver het kozijn en is de standaard binnendeur in nieuwbouw. Lees het verschil met een stompe deur en waar je op let.",
+  "intro": [
+    "Een opdekdeur is een binnendeur met een overlappende rand (het opdek) die bij het sluiten óver de kozijnstijl valt in plaats van er vlak in. De deur hangt in speciale opdekscharnieren (paumelles) en dekt de kier tussen deur en kozijn af.",
+    "Vrijwel alle nieuwbouwwoningen worden standaard met opdekdeuren opgeleverd: ze zijn goedkoper en sneller af te hangen dan stompe deuren. Wie een strakker interieur wil, kiest als kopersoptie of bij renovatie vaak voor stompe deuren — een zichtbaar én voelbaar verschil in prijs."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen een opdekdeur en een stompe deur?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Kenmerk</th><th>Opdekdeur</th><th>Stompe deur</th></tr></thead><tbody><tr><td>Sluiting</td><td>Valt met rand óver het kozijn</td><td>Valt vlak ín het kozijn</td></tr><tr><td>Uitstraling</td><td>Zichtbare rand en scharnierknoppen</td><td>Strak, vlak geheel</td></tr><tr><td>Montage</td><td>Snel, standaard maatvoering</td><td>Nauwkeurig inpassen en scharnieren infrezen</td></tr><tr><td>Prijs</td><td>Voordeligst</td><td>Duurder in deur én arbeid</td></tr></tbody></table><p>Praktisch: opdekdeuren en stompe deuren zijn niet uitwisselbaar zonder aanpassing — het kozijn en de scharnieren verschillen. Wil je in een nieuwbouwwoning stompe deuren, regel dat dan als kopersoptie of vervang later deur én kozijn(voering). Standaard opdekmaten (zoals 83 x 211,5 cm) maken vervangen van alleen het deurblad wél eenvoudig.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik een opdekdeur vervangen door een stompe deur?",
+      "a": "Niet zomaar: een stomp deurblad past niet in een opdekkozijn. Je vervangt dan ook het kozijn of laat een vakman het kozijn ombouwen en nieuwe scharnieren en sluitplaat infrezen. Alleen het deurblad vervangen kan wel door een andere opdekdeur in dezelfde maat."
+    },
+    {
+      "q": "Waarom zitten er opdekdeuren in mijn nieuwbouwwoning?",
+      "a": "Omdat ze in standaardmaten geproduceerd en snel gemonteerd worden, wat de bouwkosten drukt. Veel bouwers bieden stompe deuren als meerwerkoptie aan; vergelijk die prijs met wat een deurenspeciaalzaak rekent voordat je tekent."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "Bekijk deurstijlen in een 3D-sfeerimpressie"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["dagmaat", "minderwerk"]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "schimmel-voorkomen",
+  "titel": "Schimmel in de badkamer voorkomen",
+  "title_tag": "Schimmel in de badkamer voorkomen | Bylder",
+  "meta_description": "Schimmel in de badkamer voorkom je met goede ventilatie, droge kitranden en simpele dagelijkse gewoontes. Lees wat werkt en wat niet.",
+  "intro": [
+    "Schimmel in de badkamer voorkom je door vocht snel af te voeren: ventileer tijdens en minstens 30 minuten na het douchen, trek wanden en vloer droog en houd kitranden schoon en intact. Schimmel heeft vocht, warmte en een voedingsbodem nodig — haal het vocht weg en het probleem verdwijnt grotendeels vanzelf.",
+    "Een badkamer produceert per douchebeurt al snel een halve liter waterdamp. Blijft die damp hangen, dan condenseert hij op koude plekken zoals kitranden, voegen en het plafond boven de douche. Juist in goed geïsoleerde nieuwbouw is mechanische ventilatie daarom geen luxe maar noodzaak."
+  ],
+  "stats": [
+    ["30 min", "naventileren na het douchen"],
+    ["50-60%", "gezonde luchtvochtigheid in huis"],
+    ["5-10 jaar", "levensduur van sanitairkit"]
+  ],
+  "secties": [
+    {
+      "kop": "Waardoor ontstaat schimmel in de badkamer?",
+      "html": "<p>Schimmel groeit waar drie dingen samenkomen: vocht, een temperatuur tussen ongeveer 15 en 30 graden, en organisch materiaal zoals zeepresten of huidschilfers. De badkamer levert alle drie. De meest voorkomende oorzaken zijn onvoldoende ventilatie, koudebruggen (koude buitenmuren waar damp op condenseert), poreuze of beschadigde kitranden en natte hoeken die nooit goed drogen.</p><p>Zwarte puntjes op kit of voegen zijn meestal oppervlakteschimmel en goed te verwijderen. Terugkerende schimmel op dezelfde plek wijst op een structureel probleem: te weinig luchtafvoer, lekkage achter de wand of kit die aan vervanging toe is.</p>"
+    },
+    {
+      "kop": "Hoe ventileer je een badkamer goed?",
+      "html": "<p>Vuistregel: ventileer tijdens het douchen en minimaal 30 minuten daarna. Hoe je dat doet, hangt af van je installatie.</p><table class=\"vgl\"><thead><tr><th>Situatie</th><th>Wat te doen</th><th>Aandachtspunt</th></tr></thead><tbody><tr><td>Mechanische ventilatie (nieuwbouw)</td><td>Zet de afzuiging tijdens het douchen op de hoogste stand</td><td>Ventielen jaarlijks schoonmaken, filters vervangen</td></tr><tr><td>Losse badkamerventilator</td><td>Kies er een met nalooptijd of vochtsensor</td><td>Capaciteit moet passen bij het volume van de ruimte</td></tr><tr><td>Alleen een raam</td><td>Zet het raam tijdens en na het douchen open</td><td>Houd de badkamerdeur dicht, anders trekt vocht het huis in</td></tr></tbody></table><p>Belangrijk: ventilatie werkt alleen als er ook lucht kán toestromen. Een spleet onder de badkamerdeur van ruim een centimeter is daarvoor bedoeld — dicht die nooit af.</p>"
+    },
+    {
+      "kop": "Waarom zijn kitranden zo schimmelgevoelig?",
+      "html": "<p>Kitranden zijn de zwakste plek van de badkamer: ze blijven lang nat, vangen zeepresten en verliezen na jaren hun schimmelwerende toevoeging. Sanitairkit gaat gemiddeld 5 tot 10 jaar mee. Zodra kit zwart blijft na schoonmaken, loslaat of scheurtjes vertoont, is vervangen de enige echte oplossing — overkitten werkt niet, omdat schimmel onder de oude laag doorgroeit.</p><p>Laat kitwerk bij een badkamerrenovatie altijd als aparte post benoemen in de offerte, inclusief het type kit. Goedkope acrylaatkit hoort niet in natte zones; daar gebruik je sanitairsiliconenkit.</p>"
+    },
+    {
+      "kop": "Welke dagelijkse gewoontes houden de badkamer schimmelvrij?",
+      "html": "<p>Grote renovaties zijn zelden nodig als je deze routine aanhoudt:</p><p>1. Trek na het douchen de wanden en glaswanden droog met een wisser — dat scheelt de helft van het vocht dat moet verdampen. 2. Laat de ventilatie of het raam minstens een half uur nadraaien. 3. Houd de badkamerdeur dicht tijdens het douchen, zodat vocht niet door het huis trekt. 4. Was douchegordijnen en antislipmatten regelmatig en laat ze drogen. 5. Maak kitranden en voegen wekelijks schoon met een mild schoonmaakmiddel; pak beginnende zwarte puntjes direct aan.</p><p>Zie je ondanks goede gewoontes toch steeds schimmel terugkomen, laat dan de ventilatiecapaciteit en de waterdichting van wanden en vloer controleren.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is schimmel in de badkamer schadelijk voor de gezondheid?",
+      "a": "Oppervlakteschimmel op kit of voegen is vooral onhygiënisch en lelijk, maar langdurige blootstelling aan schimmelsporen kan luchtwegklachten en allergieën verergeren. Vooral voor kinderen en mensen met astma is het verstandig schimmel snel te verwijderen en de oorzaak aan te pakken."
+    },
+    {
+      "q": "Helpt de verwarming aanzetten tegen schimmel?",
+      "a": "Ja, indirect. Warme lucht kan meer vocht bevatten en een warme badkamer droogt sneller. Maar zonder ventilatie blijft het vocht in de ruimte hangen en condenseert het alsnog op koude plekken. Verwarmen werkt dus alleen in combinatie met goed luchten of afzuigen."
+    },
+    {
+      "q": "Kan ik schimmel op voegen zelf verwijderen?",
+      "a": "Oppervlakteschimmel op cementvoegen kun je verwijderen met een schimmelreiniger op chloorbasis of met soda en een borstel. Werk met handschoenen en ventileer goed. Komt de schimmel binnen weken terug op dezelfde plek, dan zit het probleem dieper en is voegen of kit vervangen nodig."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Laat je badkamerofferte gratis checken"],
+    "commercieel": ["/kopen/sanitair/", "Sanitair met ledenkorting"],
+    "zusters": ["badkamer-onderhoud", "waterdichting-badkamer", "badkamerradiator"]
+  }
+}

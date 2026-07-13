@@ -1,0 +1,53 @@
+{
+  "cluster": "materialen",
+  "slug": "index",
+  "titel": "Materialen voor je interieur: het complete naslagwerk",
+  "title_tag": "Materialen voor je interieur: naslagwerk | Bylder",
+  "meta_description": "Vergelijk 12 interieurmaterialen op prijs, krasvastheid, onderhoud en levensduur. Van kwartscomposiet tot massief hout: kies met kennis van zaken.",
+  "intro": [
+    "Dit materialen-naslagwerk is de plek waar je alle gangbare interieurmaterialen naast elkaar legt: van kwartscomposiet en keramiek tot massief hout, hpl-laminaat en microcement. Per materiaal vind je een vaste eigenschappentabel met prijsindicatie, krasvastheid, hittebestendigheid, vochtbestendigheid, onderhoud, levensduur en duurzaamheid — zodat je appels met appels vergelijkt.",
+    "Materiaalkeuze bepaalt een groot deel van je budget én van je woonplezier. Een werkblad kost al snel €150 tot €900 per strekkende meter, afhankelijk van het materiaal. Wie eerst op eigenschappen kiest en pas daarna op uiterlijk, voorkomt dure teleurstellingen zoals vlekken in marmer of brandplekken in laminaat."
+  ],
+  "stats": [
+    ["12", "materialen in dit naslagwerk"],
+    ["7", "eigenschappen per materiaal vergeleken"],
+    ["€150–€900", "prijsrange werkblad per m¹"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke hoofdgroepen materialen zijn er?",
+      "html": "<p>Alle interieurmaterialen vallen grofweg in drie hoofdgroepen, elk met een eigen karakter en prijsklasse.</p><table class=\"vgl\"><thead><tr><th>Hoofdgroep</th><th>Materialen</th><th>Karakter</th></tr></thead><tbody><tr><td>Steen &amp; keramiek</td><td>Natuursteen, kwartscomposiet, keramiek, terrazzo, microcement</td><td>Hard, koel, slijtvast; middenklasse tot duur</td></tr><tr><td>Hout &amp; plaat</td><td>Massief hout, fineer, hpl-laminaat</td><td>Warm, natuurlijk of natuurlijk ogend; budget tot middenklasse</td></tr><tr><td>Kunststof &amp; composiet</td><td>Solid surface, composiet, rvs, glas</td><td>Strak, naadloos of industrieel; middenklasse tot duur</td></tr></tbody></table><p>Lees per materiaal de eigen pagina, bijvoorbeeld <a href=\"/kennisbank/materialen/kwartscomposiet/\">kwartscomposiet</a>, <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a> of <a href=\"/kennisbank/materialen/massief-hout/\">massief hout</a>.</p>"
+    },
+    {
+      "kop": "Hoe kies je een materiaal op eigenschappen?",
+      "html": "<p>Begin bij de plek en het gebruik, niet bij het uiterlijk. Voor een keukenwerkblad wegen krasvastheid en hittebestendigheid het zwaarst; voor een badkamer draait alles om vochtbestendigheid; voor een vloer om slijtvastheid en onderhoud. Stel jezelf drie vragen: hoe intensief gebruik ik het, hoeveel onderhoud wil ik doen, en hoe lang moet het meegaan?</p><p>Vergelijk daarna binnen je budget. Wil je de steenlook maar niet de zorg van natuursteen, kijk dan naar kwartscomposiet of keramiek. Wil je warmte maar geen olie-onderhoud, dan is fineer of hpl met houtprint een slim alternatief voor massief hout.</p>"
+    },
+    {
+      "kop": "Wat kosten de verschillende materialen?",
+      "html": "<p>Ter oriëntatie, prijsindicaties voor een keukenwerkblad per strekkende meter: hpl-laminaat €75–€200, massief hout €150–€400, kwartscomposiet €250–€450, keramiek €350–€600, natuursteen €250–€900 (afhankelijk van steensoort), solid surface €400–€700 en rvs €300–€600. Voor wanden en vloeren rekent microcement €80–€150 per m² en terrazzo €300–€700 per m².</p><p>Het zijn ranges, geen offertes: maatwerk, randafwerking en uitsparingen bepalen de eindprijs. Laat een offerte daarom altijd controleren — 96% van de kopers betaalt minstens één post te duur.</p>"
+    },
+    {
+      "kop": "Waarom loont vergelijken vóór je koopt?",
+      "html": "<p>Materialen worden vaak verkocht op uitstraling, terwijl de verschillen in onderhoud en levensduur pas jaren later voelbaar zijn. Een goedkoop werkblad dat na acht jaar vervangen moet, is duurder dan een middenklasser die dertig jaar meegaat. Gebruik de eigenschappentabellen in dit naslagwerk om totale kosten over de levensduur te vergelijken, en check de prijs in je offerte voordat je tekent.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Welk materiaal is het beste voor een keukenwerkblad?",
+      "a": "Er is geen beste materiaal, wel een beste match. Kwartscomposiet en keramiek scoren het meest gebalanceerd op krasvastheid, onderhoud en levensduur. Massief hout wint op warmte maar vraagt onderhoud; hpl-laminaat wint op prijs maar gaat korter mee."
+    },
+    {
+      "q": "Wat is het verschil tussen composiet en natuursteen?",
+      "a": "Natuursteen komt als plaat uit de groeve en is poreus en uniek van tekening. Composiet wordt in de fabriek gemaakt van steengranulaat en hars, waardoor het niet poreus is en egaler oogt. Composiet vraagt daardoor minder onderhoud."
+    },
+    {
+      "q": "Welke materialen zijn geschikt voor de badkamer?",
+      "a": "Keramiek, kwartscomposiet, solid surface, glas en microcement kunnen goed tegen vocht en zijn populair voor wastafels, wanden en douchevloeren. Massief hout en hpl kunnen ook, maar alleen met goede afwerking en ventilatie."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/showroomsale/", "Showroomsale"],
+    "zusters": ["kwartscomposiet", "keramiek", "massief-hout"]
+  }
+}

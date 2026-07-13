@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "natuursteen",
+  "titel": "Natuursteen: graniet, marmer en hardsteen vergeleken",
+  "title_tag": "Natuursteen: graniet, marmer, hardsteen | Bylder",
+  "meta_description": "Natuursteen is gesteente uit de groeve: graniet, marmer of hardsteen. Vergelijk de steensoorten op prijs, hardheid en onderhoud in één tabel."
+,
+  "intro": [
+    "Natuursteen is gesteente dat als blok uit een groeve wordt gezaagd en tot platen, tegels of werkbladen wordt verwerkt — zonder toevoegingen. De bekendste soorten voor het interieur zijn graniet (hard vulkanisch gesteente), marmer (omgezet kalksteen met adertekening) en Belgisch hardsteen (donker kalksteen met fossielen).",
+    "Elk stuk natuursteen is uniek: geen twee platen hebben dezelfde tekening. Die authenticiteit is de grote kracht, maar natuursteen is ook poreus en vraagt daardoor meer zorg dan fabrieksmaterialen als composiet of keramiek."
+  ],
+  "stats": [
+    ["€250–€900", "per m¹ werkblad, per steensoort"],
+    ["30–50+ jaar", "levensduur bij goed onderhoud"],
+    ["1–2× per jaar", "impregneren aanbevolen"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is natuursteen geschikt voor?",
+      "html": "<p>Graniet is de allrounder: geschikt als keukenwerkblad, vensterbank en vloer. Marmer is op zijn mooist als wandbekleding, wastafelblad, vensterbank en vloer in ruimtes zonder zwaar gebruik; als keukenwerkblad is het kwetsbaar voor zuren en krassen. Hardsteen past bij dorpels, vensterbanken, vloeren en landelijke aanrechtbladen, maar is zuurgevoelig. Voor douchevloeren is natuursteen mogelijk maar bewerkelijk — daar is <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a> vaak praktischer.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van natuursteen?",
+      "html": "<p>De soorten verschillen sterk; graniet is de maatstaf in de tabel, daarna volgen de verschillen per soort.</p><table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse tot duur</td><td>Graniet €250–€500, hardsteen €300–€500, marmer €400–€900 per m¹</td></tr><tr><td>Krasvastheid</td><td>Goed (graniet)</td><td>Graniet zeer krasvast; marmer en hardsteen zijn zachter</td></tr><tr><td>Hittebestendigheid</td><td>Goed</td><td>Steen kan tegen hitte; snelle temperatuurwissel kan spanning geven</td></tr><tr><td>Vochtbestendigheid</td><td>Redelijk</td><td>Poreus: zuigt vocht en vet op zonder impregnering</td></tr><tr><td>Onderhoud</td><td>Gemiddeld tot hoog</td><td>1–2× per jaar impregneren; zuren direct wegnemen</td></tr><tr><td>Levensduur</td><td>30–50+ jaar</td><td>Gaat generaties mee; krijgt patine</td></tr><tr><td>Duurzaamheid</td><td>Redelijk</td><td>Natuurproduct, maar winning en transport (vaak ver weg) wegen mee</td></tr></tbody></table><table class=\"vgl\"><thead><tr><th>Steensoort</th><th>Karakter</th><th>Let op</th></tr></thead><tbody><tr><td>Graniet</td><td>Hard, gespikkeld, zeer slijtvast</td><td>Minst gevoelig van de drie; wel impregneren</td></tr><tr><td>Marmer</td><td>Licht, geaderd, luxe uitstraling</td><td>Zacht en zuurgevoelig: citroen en wijn etsen doffe vlekken</td></tr><tr><td>Hardsteen</td><td>Donkergrijs tot zwart, met fossielen</td><td>Zuurgevoelig; verweert tot karakteristiek grijs patine</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je natuursteen?",
+      "html": "<p>Impregneer natuursteen bij plaatsing en daarna één tot twee keer per jaar: de impregnering vult de poriën en geeft je tijd om gemorst vocht op te nemen voordat het intrekt. Maak schoon met een pH-neutrale natuursteenzeep — nooit met azijn, chloor of kalkreiniger, want zuur tast marmer en hardsteen direct aan. Neem gemorste wijn, citroensap of olie meteen op. Doffe plekken en krassen kan een natuursteenbedrijf opnieuw polijsten of schuren; dat is het voordeel van massief steen.</p>"
+    },
+    {
+      "kop": "Voor wie is natuursteen de juiste keuze?",
+      "html": "<p>Natuursteen past bij wie authenticiteit en een unieke tekening belangrijker vindt dan zorgeloosheid, en bereid is jaarlijks te impregneren. Vergelijk je met <a href=\"/kennisbank/materialen/kwartscomposiet/\">kwartscomposiet</a>: dat biedt vergelijkbare steenlook zonder onderhoud, maar mist de natuurlijke diepte en is niet hittebestendig. Vergelijk je met <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a>: dat print tegenwoordig overtuigende marmerlooks en is volledig onderhoudsvrij, maar blijft een imitatie. Wie de echte steen wil en het onderhoud accepteert, kiest graniet voor de keuken en marmer voor de show.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen graniet, marmer en hardsteen?",
+      "a": "Graniet is hard vulkanisch gesteente en het meest geschikt voor intensief gebruik. Marmer is omgezet kalksteen: zachter, lichter van kleur en zuurgevoelig. Belgisch hardsteen is donker kalksteen met fossielen, ook zuurgevoelig maar zeer degelijk."
+    },
+    {
+      "q": "Is marmer geschikt als keukenwerkblad?",
+      "a": "Het kan, maar met beperkingen: marmer krast sneller dan graniet en zuren zoals citroen of wijn etsen doffe vlekken die impregneren niet voorkomt. Wie het accepteert als patine kan genieten van marmer; wie een smetteloos blad wil, kiest beter graniet of kwartscomposiet."
+    },
+    {
+      "q": "Wat kost een natuurstenen werkblad?",
+      "a": "Graniet kost circa €250–€500 per strekkende meter, hardsteen €300–€500 en marmer €400–€900, afhankelijk van soort, dikte en afwerking. Zeldzame soorten kunnen daar ruim boven zitten. Laat de offerte controleren op bewerkingskosten — daar zit vaak de verrassing."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/kopen/tegels/", "Tegels kopen"],
+    "zusters": ["kwartscomposiet", "keramiek", "terrazzo"]
+  }
+}

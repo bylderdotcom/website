@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "casco",
+  "titel": "Casco",
+  "title_tag": "Wat is casco? Betekenis + uitleg | Bylder",
+  "meta_description": "Casco betekent dat een woning of ruimte bouwkundig af is, maar zonder afwerking en inrichting wordt opgeleverd. Lees wat er wel en niet bij hoort.",
+  "intro": [
+    "Casco is de bouwkundige basis van een woning of ruimte: constructie, dak, gevels, vloeren en aansluitpunten zijn af, maar afwerking en inrichting ontbreken. Bij een casco keuken of badkamer levert de aannemer alleen de aansluitingen voor water, afvoer, elektra en ventilatie — de rest regel je zelf na de oplevering.",
+    "Voor nieuwbouwkopers is casco vaak een bewuste keuze: je vermijdt de lage stelpost van de projectontwikkelaar en koopt keuken of badkamer zelf, meestal goedkoper en precies naar wens. De totale afwerking van een casco nieuwbouwwoning kost gemiddeld €42.000 (€35.000–€65.000)."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij een casco oplevering?",
+      "html": "<p>Controleer vóór het tekenen precies wát casco betekent in jouw contract: het verschilt per project. Let vooral op de posities van aansluitpunten — een afvoer die 20 cm verkeerd zit, betekent later hak- en breekwerk. Vraag om een tekening met maatvoering van water, afvoer, elektra en ventilatie.</p><p>Reken ook de teruggave (het minderwerk) na: die is vaak lager dan de stelpost die voor keuken of badkamer stond. Vergelijk het verschil met een echte offerte voor zelf kopen en plaatsen. Bylder-leden besparen op de totale afbouw gemiddeld €4.200 via ledenprijzen bij 60+ merken.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is casco kopen goedkoper dan afgewerkt kopen?",
+      "a": "Meestal wel, mits je zelf scherp inkoopt. De stelposten van bouwers zijn vaak bewust laag, waardoor upgraden via de aannemer duur uitpakt. Zelf kopen na casco-oplevering geeft prijsvoordeel en keuzevrijheid, maar vraagt wel eigen regie over planning en installateurs."
+    },
+    {
+      "q": "Wat zit er wél bij een casco keuken of badkamer?",
+      "a": "De aansluitpunten: waterleiding, afvoer, elektra (inclusief eventueel perilex voor koken) en ventilatie, plus meestal een afgewerkte wand- en vloerbasis volgens de technische omschrijving. Tegels, sanitair, keukenmeubelen en apparatuur horen er niet bij."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Bekijk alle nieuwbouw-tools"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["stelpost", "keuken:casco-keuken-nieuwbouw"]
+  }
+}

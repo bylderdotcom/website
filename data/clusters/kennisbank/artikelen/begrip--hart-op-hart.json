@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "hart-op-hart",
+  "titel": "Hart-op-hart",
+  "title_tag": "Wat is hart-op-hart? Betekenis + uitleg | Bylder",
+  "meta_description": "Hart-op-hart (h.o.h.) is de afstand tussen de middens van twee elementen, zoals leidingen, balken of kraanaansluitingen. Lees waar de maat voor gebruikt wordt.",
+  "intro": [
+    "Hart-op-hart (afgekort h.o.h.) is de afstand tussen de middens (harten) van twee gelijke elementen, zoals balken, regels, aansluitpunten of bevestigingsgaten. Er wordt dus niet van rand tot rand gemeten, maar van middelpunt tot middelpunt.",
+    "De maat duikt overal op in bouw en sanitair: vloerbalken of regels liggen bijvoorbeeld h.o.h. 60 cm, een opbouwdouchekraan heeft aansluitingen op h.o.h. 15 cm en radiator- en wastafelkranen hebben elk hun eigen standaard. Wie dit verkeerd leest, bestelt of boort verkeerd."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar kom je hart-op-hart-maten tegen?",
+      "html": "<p>De bekendste voorbeelden voor verbouwers: de muuraansluiting van een opbouwkraan in douche of bad staat standaard op h.o.h. 15 cm — vrijwel elke kraan past daarop. In houtbouw en bij voorzetwanden staan regels en balken vaak op h.o.h. 40 of 60 cm; dat bepaalt waar je zwaar kunt ophangen en hoe plaatmateriaal uitkomt. Ook boutpatronen, hekwerken en zonnepaneelbevestigingen worden in h.o.h.-maten opgegeven.</p><p>Meet altijd van midden tot midden, niet van binnenkant tot binnenkant: bij een leidingpaar van 15 cm h.o.h. staat er tussen de leidingen zelf dus mínder dan 15 cm vrije ruimte. Bij twijfel over een bestaande situatie: meet van de linkerrand van het ene element naar de linkerrand van het volgende — dat is dezelfde maat als hart-op-hart.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Waarom wordt hart-op-hart gemeten en niet de tussenruimte?",
+      "a": "Omdat de maat dan onafhankelijk is van de dikte van de elementen: h.o.h. 60 cm blijft 60 cm, of de balk nu 5 of 7 cm breed is. Dat maakt tekeningen, bestellingen en standaarden eenduidig."
+    },
+    {
+      "q": "Welke hart-op-hart-maat hebben kraanaansluitingen?",
+      "a": "De standaard voor opbouwkranen in douche en bad is 15 cm hart-op-hart, meestal met instelbare S-koppelingen die een kleine afwijking opvangen. Controleer bij designkranen en inbouwkranen wel altijd de specificaties voordat de leidingen worden gezet."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check je installatiewerk in de offerte"],
+    "commercieel": ["/kopen/sanitair/", "Bekijk sanitair met ledenprijzen"],
+    "zusters": ["sparing", "dagmaat"]
+  }
+}

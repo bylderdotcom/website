@@ -1,0 +1,54 @@
+{
+  "cluster": "keuken",
+  "slug": "duurzame-keuken",
+  "titel": "Duurzame keuken: materialen, zuinige apparatuur en tweedehands",
+  "title_tag": "Duurzame keuken: materialen & apparatuur | Bylder",
+  "meta_description": "Een duurzame keuken begint bij lang meegaande materialen, energiezuinige apparatuur en de vraag of tweedehands of refurbished een optie is. Zo pak je het aan."
+  ,
+  "intro": [
+    "Een duurzame keuken bereik je langs drie routes: materialen die lang meegaan en verantwoord geproduceerd zijn, apparatuur met een zuinig energielabel, en hergebruik — van een refurbished showroomkeuken tot een tweedehands exemplaar uit een sloopwoning. De duurzaamste keuken is de keuken die twintig jaar meegaat.",
+    "Duurzaam en duur zijn niet hetzelfde. Een tijdloos ontwerp met degelijk beslag verslaat elke trendkeuken die na acht jaar gedateerd oogt, en zuinige apparatuur verdient zich via de energierekening deels terug."
+  ],
+  "stats": [
+    ["15–25 jaar", "levensduur van een degelijke keuken"],
+    ["A–G", "energielabelschaal apparatuur sinds 2021"],
+    ["30–70%", "prijsvoordeel tweedehands of ex-showroom"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke materialen maken een keuken duurzaam?",
+      "html": "<p>Kijk naar levensduur, herkomst en repareerbaarheid. Kasten zijn vrijwel altijd van spaanplaat of MDF — kies dan plaatmateriaal met een keurmerk voor verantwoord hout (FSC of PEFC) en lage formaldehyde-emissie (E1 of beter). Fronten van massief hout of met dikke HPL-toplaag zijn te schuren of opnieuw te spuiten; folie-fronten zijn dat niet en laten bovendien eerder los. Voor werkbladen geldt: keramiek, natuursteen en dik massief hout gaan decennia mee; hout is bovendien opschuurbaar. Kies beslag (scharnieren, geleiders) van A-merken met lange garantietermijnen — dat is wat het eerst slijt en het goedkoopst voorkomt dat de hele keuken 'op' is.</p>"
+    },
+    {
+      "kop": "Hoe kies je energiezuinige keukenapparatuur?",
+      "html": "<p>De koelkast en vaatwasser draaien het vaakst en verdienen de meeste aandacht; vergelijk op jaarverbruik in kWh, niet alleen op de labelletter. Een inductiekookplaat is zuiniger en preciezer dan gas en koken zonder gasaansluiting scheelt vastrecht. Voor de afzuigkap geldt: een recirculatiekap verbruikt geen verwarmde binnenlucht, een afvoerkap ventileert beter — in goed geïsoleerde nieuwbouw wint recirculatie of aansluiting op de WTW-balansventilatie het vaak.</p><table class=\"vgl\"><thead><tr><th>Apparaat</th><th>Waar het verbruik zit</th><th>Zuinige keuze</th></tr></thead><tbody><tr><td>Koelkast</td><td>24/7 aan, 10–15 jaar</td><td>Laag kWh/jaar, passende (niet te grote) inhoud</td></tr><tr><td>Vaatwasser</td><td>Water en verwarmen</td><td>Eco-programma, evt. warmwateraansluiting</td></tr><tr><td>Kookplaat</td><td>Rendement warmteoverdracht</td><td>Inductie i.p.v. gas of keramisch</td></tr><tr><td>Oven</td><td>Opwarmen grote ruimte</td><td>Hetelucht, A-label, combi voor kleine gerechten</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Is een tweedehands of refurbished keuken een goed idee?",
+      "html": "<p>Vaak wel, mits je kritisch keurt. Er zijn drie smaken: ex-showroommodellen (nieuw, nooit gebruikt, 30–50% onder de nieuwprijs, maar in de maten van de showroom), refurbished keukens van gespecialiseerde opkopers (gedemonteerd, nagekeken, met beperkte garantie) en particuliere tweedehands keukens uit verbouwingen. Controleer altijd de korpussen op vocht- en boorschade, tel de onderdelen na en reken de kosten van demontage, transport en aanpassing aan jouw maten mee — daar zit de verborgen prijs. Apparatuur van vijf jaar of ouder kun je beter vervangen door nieuw en zuinig; juist daar is de techniek vooruitgegaan.</p>"
+    },
+    {
+      "kop": "Hoe maak je je huidige keuken duurzamer zonder te vervangen?",
+      "html": "<p>De meest circulaire optie is niet kopen maar opknappen. Fronten laten spuiten of vervangen (wrapfolie is de budgetvariant), een nieuw werkblad op de bestaande kasten, nieuwe grepen en een frisse achterwand veranderen het beeld voor een fractie van een nieuwe keuken. Vervang alleen apparatuur die stuk of onzuinig is. Werkt de indeling fundamenteel niet, dan is vervangen alsnog logischer — maar laat de oude keuken dan demonteren voor hergebruik in plaats van hem in de container te zetten; opkopers halen courante keukens gratis op.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het duurzaamste werkbladmateriaal?",
+      "a": "Gerekend over de hele levensduur scoren keramiek en natuursteen sterk door hun extreme slijtvastheid, en massief hout doordat het lokaal beschikbaar, hernieuwbaar en opschuurbaar is. Kunststof postforming is het minst duurzaam: beschadigingen zijn niet te repareren."
+    },
+    {
+      "q": "Hoeveel bespaar ik met een ex-showroomkeuken?",
+      "a": "Reken op 30 tot 50 procent onder de oorspronkelijke prijs, soms meer bij uitlopende modellen. De keuken is nieuw en ongebruikt; het compromis is dat de maten en kleuren vastliggen en je jouw ruimte daaraan moet aanpassen."
+    },
+    {
+      "q": "Is inductie echt duurzamer dan koken op gas?",
+      "a": "Ja, op twee fronten: inductie draagt warmte efficiënter over aan de pan en gebruikt geen fossiel gas in huis. Zeker met (deels) zelf opgewekte of groene stroom is de klimaatwinst duidelijk, en je bespaart mogelijk het vastrecht van de gasaansluiting."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Plan je keuken met de AI-planner"],
+    "commercieel": ["/showroomsale/", "Bekijk showroommodellen met ledenkorting"],
+    "zusters": ["inductie-of-gas", "koelkast-kiezen", "werkblad-kiezen"]
+  }
+}

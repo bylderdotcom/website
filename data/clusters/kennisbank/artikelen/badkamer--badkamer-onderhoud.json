@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "badkamer-onderhoud",
+  "titel": "Badkamer onderhouden: per materiaal, kalk, voegen en kit",
+  "title_tag": "Badkamer onderhouden: kalk, voegen, kit | Bylder",
+  "meta_description": "Badkameronderhoud draait om drie dingen: kalk mild en vaak verwijderen, voegen schoonhouden en kitranden op tijd vervangen. Per materiaal uitgelegd.",
+  "intro": [
+    "Een badkamer onderhoud je met drie routines: kalk wekelijks mild verwijderen voordat hij zich opbouwt, voegen en kitranden schoonhouden, en versleten kit elke 5 tot 10 jaar laten vervangen. Welk middel je gebruikt, hangt af van het materiaal — wat chroom glanzend houdt, kan natuursteen of kit juist beschadigen.",
+    "Goed onderhoud is vooral licht en vaak in plaats van zwaar en zelden: wie na het douchen naspoelt en droogtrekt, heeft agressieve middelen bijna nooit nodig. Dat verlengt de levensduur van kranen, tegels en kit met jaren — en stelt de volgende renovatie van gemiddeld €12.000 flink uit."
+  ],
+  "stats": [
+    ["5-10 jaar", "levensduur sanitairkit"],
+    ["pH <7", "zure reinigers lossen kalk op"],
+    ["2 min", "droogtrekken scheelt het meeste werk"]
+  ],
+  "secties": [
+    {
+      "kop": "Welk schoonmaakmiddel past bij welk materiaal?",
+      "html": "<p>De hoofdregel: kalk los je op met zuur, vet en zeep met een alkalisch middel — maar niet elk oppervlak verdraagt zuur.</p><table class=\"vgl\"><thead><tr><th>Materiaal</th><th>Geschikt middel</th><th>Vermijd</th></tr></thead><tbody><tr><td>Keramische tegels</td><td>Mild allesreiniger; periodiek zure reiniger tegen kalk</td><td>Schuurmiddelen op glanzende tegels</td></tr><tr><td>Cementvoegen</td><td>Alkalische reiniger, zachte borstel</td><td>Sterke zuren — die tasten cement aan</td></tr><tr><td>Natuursteen (marmer e.d.)</td><td>Speciale natuursteenzeep, pH-neutraal</td><td>Elk zuur middel (azijn, ontkalker!)</td></tr><tr><td>Chromen kranen</td><td>Mild zuur (schoonmaakazijn verdund), goed naspoelen</td><td>Chloor, agressieve ontkalkers, schuursponsjes</td></tr><tr><td>Zwarte/gekleurde kranen</td><td>Water met wat afwasmiddel, zachte doek</td><td>Vrijwel alle zure en schurende middelen</td></tr><tr><td>Acryl (bad, douchebak)</td><td>Mild sopje of allesreiniger</td><td>Schuurmiddelen en oplosmiddelen</td></tr><tr><td>Kitranden</td><td>Mild sopje; bij schimmel chloorreiniger, kort inwerken</td><td>Langdurig chloorcontact en agressief boenen</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe houd je kalkaanslag onder controle?",
+      "html": "<p>Kalk ontstaat waar water opdroogt; voorkomen is dus simpel: trek glaswanden, tegels en kranen na het douchen droog. Doe dat consequent en de wekelijkse beurt met een mild middel volstaat. Bestaande aanslag verwijder je met een zuur middel — verdunde schoonmaakazijn of citroenzuur — dat je even laat inwerken en goed naspoelt.</p><p>Twee waarschuwingen. Laat zure middelen nooit drogen op kranen, kit of voegen: dat vreet aan chroomlagen en cement. En gebruik op natuursteen nooit zuur; kalksteen en marmer bestaan zelf uit kalk en worden dof of geëtst. Bij hardnekkige kalk op glas werkt een glasschraper of speciale glasreiniger beter dan steeds agressievere chemie.</p>"
+    },
+    {
+      "kop": "Hoe onderhoud je voegen en wanneer vervang je ze?",
+      "html": "<p>Cementvoegen zijn licht poreus en vangen zeep en vuil. Maandelijks borstelen met een alkalische reiniger (bijvoorbeeld soda-oplossing) houdt ze licht van kleur; een stoomreiniger werkt goed als periodieke opfrisser. Voegen impregneren na de renovatie of grondige reiniging maakt ze water- en vuilafstotend — een klein werkje dat jaren scheelt.</p><p>Vervangen is aan de orde als voegen scheuren, zanderig worden of lokaal loslaten: dan kan vocht achter het tegelwerk komen. Een tegelzetter freest de oude voeg uit en voegt opnieuw; dat is aanzienlijk goedkoper dan de waterschade die uitgestelde actie kan veroorzaken.</p>"
+    },
+    {
+      "kop": "Wanneer en hoe vervang je kitranden?",
+      "html": "<p>Sanitairkit gaat 5 tot 10 jaar mee. Vervang de kit als hij zwart blijft na schoonmaken, loslaat van tegel of bad, of scheurtjes vertoont — elk van die signalen betekent dat water erachter kan lopen. Overkitten (nieuwe kit over oude) is geen oplossing: het houdt geen stand en schimmel groeit onder de nieuwe laag door.</p><p>Goed kitwerk gaat zo: oude kit volledig uitsnijden, de naad reinigen en ontvetten, laten drogen en opnieuw afkitten met sanitairsiliconenkit. Het is voor een handige doe-het-zelver te doen; een kitter doet een complete badkamer in een paar uur strak. Bij de badrand hoort de kit aangebracht te worden terwijl het bad gevuld is, zodat de naad later niet uitscheurt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe vaak moet je een badkamer schoonmaken?",
+      "a": "Dagelijks kort (droogtrekken na het douchen), wekelijks een lichte beurt van sanitair, kranen en vloer, en maandelijks aandacht voor voegen, kitranden en de afvoer. Wie het dagelijkse droogtrekken volhoudt, merkt dat de wekelijkse beurt in een kwartier klaar is."
+    },
+    {
+      "q": "Is azijn geschikt voor de hele badkamer?",
+      "a": "Nee. Verdunde schoonmaakazijn werkt goed tegen kalk op tegels en glas, maar hoort niet op natuursteen, cementvoegen, kitranden en gekleurde of kwetsbare kraanafwerkingen. Spoel na gebruik altijd na met water. Gebruik voor die kwetsbare materialen een pH-neutraal middel."
+    },
+    {
+      "q": "Wat kost het om kitwerk professioneel te laten vervangen?",
+      "a": "Voor het volledig vernieuwen van de kitranden in een gemiddelde badkamer rekenen kitbedrijven doorgaans €150 tot €400, afhankelijk van het aantal strekkende meters en de staat van de oude kit. Dat is een kleine investering vergeleken met de waterschade die lekke kitranden kunnen veroorzaken."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Renovatie nodig? Check je offerte gratis"],
+    "commercieel": ["/kopen/sanitair/", "Sanitair met ledenkorting"],
+    "zusters": ["schimmel-voorkomen", "badkamer-zonder-tegels", "waterdichting-badkamer"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "sparing",
+  "titel": "Sparing",
+  "title_tag": "Wat is een sparing? Betekenis + uitleg | Bylder",
+  "meta_description": "Een sparing is een bewust opengelaten of gemaakte opening in een wand, vloer of plafond voor leidingen, kanalen of een trapgat. Lees waarom timing hier alles is.",
+  "intro": [
+    "Een sparing is een bewust opengelaten of naderhand gemaakte opening in een wand, vloer, plafond of ander constructiedeel, bedoeld voor bijvoorbeeld leidingen, ventilatiekanalen, een afzuigkapafvoer of een trapgat. Sparingen worden idealiter al in de ruwbouwfase meegenomen, zodat er later niet gehakt of geboord hoeft te worden.",
+    "Voor kopers en verbouwers is de sparing een klein woord met grote gevolgen: een vergeten sparing in een betonvloer of dragende wand betekent later duur boor- of freeswerk, en in constructieve delen mag dat alleen met toestemming van de constructeur."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij sparingen tijdens bouw of verbouwing?",
+      "html": "<p>Loop vóór het storten of sluiten van wanden en vloeren na welke doorvoeren je nodig hebt: afvoer en aansluitingen van keuken en badkamer, de afvoer van de afzuigkap naar buiten, ventilatiekanalen, en doorvoeren voor toekomstige installaties zoals airco of een laadpunt. Bij nieuwbouw staan extra sparingen als meerwerkpost op de kopersopties — tijdens de bouw zijn ze goedkoop, achteraf niet.</p><p>Laat sparingen in dragende wanden of constructieve vloeren nooit zelf maken: dat vereist een beoordeling door de constructeur. En check bij oplevering of brand- en geluidwerende doorvoeren netjes zijn afgedicht; een open sparing lekt geluid, tocht en lucht.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat kost het achteraf maken van een sparing?",
+      "a": "Dat hangt sterk af van het materiaal: een sparing in gipsplaat is eenvoudig, maar boren of frezen in beton vraagt specialistisch gereedschap en kost al snel honderden euro's per doorvoer, plus herstel van de afwerking. In constructieve delen komt daar een constructeursbeoordeling bij."
+    },
+    {
+      "q": "Is een sparing hetzelfde als een doorvoer?",
+      "a": "Bijna: de sparing is de opening zelf, de doorvoer is wat erdoorheen gaat (leiding, kanaal of kabel) inclusief de afdichting eromheen. In offertes worden beide termen door elkaar gebruikt; vraag bij twijfel wat er precies geleverd wordt, inclusief brandwerende afdichting."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Bekijk alle nieuwbouw-tools"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["dagmaat", "loze-leiding"]
+  }
+}

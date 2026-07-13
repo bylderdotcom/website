@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "vloerverwarming-badkamer",
+  "titel": "Vloerverwarming in de badkamer: elektrisch of watergedragen?",
+  "title_tag": "Vloerverwarming badkamer: elektrisch of water? | Bylder",
+  "meta_description": "Elektrische vloerverwarming is goedkoop in aanleg maar duurder in gebruik; watergedragen andersom. Vergelijk kosten, opwarmtijd en toepassing.",
+  "intro": [
+    "Voor een badkamer kies je elektrische vloerverwarming als snelle, goedkope oplossing bij renovatie, en watergedragen vloerverwarming als de badkamer toch al opengaat of bij nieuwbouw. Elektrisch is voordelig in aanleg maar duurder in gebruik; watergedragen vraagt een hogere investering maar verwarmt tegen lagere energiekosten.",
+    "In een badkamer telt comfort dubbel: niemand staat graag met blote voeten op koude tegels. Vloerverwarming is bovendien onzichtbaar, stofarm en droogt de vloer sneller — wat weer helpt tegen schimmel. De keuze tussen de twee systemen hangt vooral af van je situatie: renovatie of nieuwbouw, en hoofdverwarming of bijverwarming."
+  ],
+  "stats": [
+    ["€40-€90/m²", "elektrische vloerverwarming, aanleg"],
+    ["€70-€130/m²", "watergedragen, gefreesd of ingestort"],
+    ["30-60 min", "opwarmtijd elektrische matten"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen elektrische en watergedragen vloerverwarming?",
+      "html": "<p>Elektrische vloerverwarming bestaat uit dunne verwarmingsmatten of -kabels die direct onder de tegels liggen en op het lichtnet werken. Watergedragen vloerverwarming bestaat uit leidingen waar warm water uit de cv-ketel of warmtepomp doorheen stroomt, ingefreesd of ingestort in de dekvloer.</p><table class=\"vgl\"><thead><tr><th></th><th>Elektrisch</th><th>Watergedragen</th></tr></thead><tbody><tr><td>Aanlegkosten</td><td>€40-€90 per m²</td><td>€70-€130 per m²</td></tr><tr><td>Gebruikskosten</td><td>Hoger (stroom)</td><td>Lager (cv/warmtepomp)</td></tr><tr><td>Opwarmtijd</td><td>30-60 minuten</td><td>2-4 uur (dekvloer moet mee opwarmen)</td></tr><tr><td>Opbouwhoogte</td><td>Enkele millimeters</td><td>1,5-6 cm, afhankelijk van systeem</td></tr><tr><td>Geschikt als</td><td>Bijverwarming, comfort</td><td>Hoofd- of bijverwarming</td></tr><tr><td>Beste moment</td><td>Renovatie zonder vloer eruit</td><td>Nieuwbouw of complete renovatie</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe snel is de badkamervloer warm?",
+      "html": "<p>Elektrische matten liggen vlak onder de tegel en zijn binnen 30 tot 60 minuten voelbaar warm. Met een klokthermostaat programmeer je ze zo dat de vloer alleen warm is rond je douchemomenten — dat houdt de stroomkosten beheersbaar.</p><p>Watergedragen vloerverwarming moet eerst de hele dekvloer opwarmen en doet daar 2 tot 4 uur over. Het systeem is daardoor traag maar constant: je laat het in het stookseizoen doorlopen op een lage temperatuur. Voor een badkamer die als enige ruimte snel warm moet zijn, is dat een nadeel; als onderdeel van een woningbreed systeem juist niet.</p>"
+    },
+    {
+      "kop": "Wat kost vloerverwarming in een badkamer?",
+      "html": "<p>Voor een gemiddelde badkamer van 5 tot 8 m² kom je bij elektrische vloerverwarming inclusief thermostaat en aansluiten uit op zo'n €300 tot €700. Watergedragen kost bij infrezen in een bestaande dekvloer of ingieten bij renovatie al snel €500 tot €1.000 voor dezelfde oppervlakte, plus het aansluiten op de cv-groep of verdeler.</p><p>Let op de posten in je offerte: vloerverwarming zit vaak verstopt onder \"installatiewerk\" of komt later als meerwerk terug. Kopers betalen gemiddeld €1.840 te veel aan meerwerkposten — laat de offerte dus vooraf doorrekenen, inclusief de thermostaat en het elektra- of leidingwerk.</p>"
+    },
+    {
+      "kop": "Is vloerverwarming genoeg om de badkamer te verwarmen?",
+      "html": "<p>Meestal niet als enige warmtebron. Een badkamer wil je op 22 tot 24 graden kunnen krijgen, warmer dan de rest van het huis. Elektrische matten zijn vrijwel altijd bijverwarming; watergedragen vloerverwarming kan een goed geïsoleerde badkamer wel als hoofdverwarming aan, maar reageert traag. In de praktijk is de combinatie vloerverwarming plus een (handdoek)radiator de meest comfortabele oplossing: constante basiswarmte uit de vloer, snelle extra warmte en droge handdoeken uit de radiator.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan elektrische vloerverwarming onder elke badkamervloer?",
+      "a": "Onder tegels en de meeste steenachtige vloeren wel; dat is ook de beste combinatie omdat tegels warmte goed geleiden. Onder pvc of gietvloeren kan het vaak ook, mits de fabrikant het toestaat en de maximale vloertemperatuur wordt bewaakt met een vloersensor."
+    },
+    {
+      "q": "Wat kost elektrische vloerverwarming in de badkamer per maand?",
+      "a": "Dat hangt af van gebruiksduur en stroomprijs. Een mat van 6 m² die twee keer per dag een uur draait, verbruikt grofweg 1 tot 2 kWh per dag. Met een klokthermostaat die alleen rond douchetijden verwarmt, blijven de kosten meestal beperkt tot enkele tientjes per maand in het stookseizoen."
+    },
+    {
+      "q": "Kan ik vloerverwarming later nog toevoegen?",
+      "a": "Elektrische matten alleen als de vloer eruit gaat of bij een nieuwe vloerafwerking, want ze liggen direct onder de tegels. Watergedragen kan bij een bestaande dekvloer worden ingefreesd zonder de hele vloer te vervangen, maar in een betegelde badkamer betekent dat alsnog: tegels eraf. Meenemen tijdens de renovatie is dus vrijwel altijd goedkoper."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check je badkamerofferte op te dure posten"],
+    "commercieel": ["/eerlijke-prijzen/badkamer/", "Eerlijke badkamerprijzen"],
+    "zusters": ["badkamerradiator", "badkamerofferte-lezen", "casco-badkamer-nieuwbouw"]
+  }
+}

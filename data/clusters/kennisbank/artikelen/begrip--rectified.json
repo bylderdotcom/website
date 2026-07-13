@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "rectified",
+  "titel": "Rectified",
+  "title_tag": "Wat is rectified? Betekenis + uitleg | Bylder",
+  "meta_description": "Rectified (gerectificeerd) betekent dat tegels na het bakken strak op maat gezaagd zijn, zodat je met smalle voegen kunt tegelen. Lees de voor- en nadelen.",
+  "intro": [
+    "Rectified (gerectificeerd) betekent dat een tegel na het bakken machinaal op exact dezelfde maat is gezaagd of geslepen, met strakke haakse randen. Daardoor zijn alle tegels maatvast en kun je met heel smalle voegen tegelen, vanaf zo'n 2 millimeter.",
+    "Voor wie een badkamer of vloer laat betegelen is dit een begrip om te kennen: het bepaalt het eindbeeld (strak en rustig versus zichtbaar voegwerk) én de eisen aan de tegelzetter en de ondergrond."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij gerectificeerde tegels?",
+      "html": "<p>Smalle voegen vergeven niets: de ondergrond moet vlak zijn en de tegelzetter moet nauwkeurig werken, vaak met een levelingsysteem tegen hoogteverschillen tussen tegels. Reken daardoor op een iets hoger arbeidstarief dan bij standaardtegels.</p><p>Helemaal voegloos tegelen is af te raden — de voeg vangt werking van de ondergrond en spanning op. Houd binnen minimaal circa 2 mm voeg aan en volg het advies van de fabrikant. Niet-gerectificeerde (geperste) tegels hebben licht afgeronde randen en maatverschil per tegel; daar hoort een bredere voeg van zo'n 3 tot 5 mm bij. Check bij het bestellen ook het kaliber (maatklasse) en de tint (kleurbad), zodat alle dozen bij elkaar passen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Zijn gerectificeerde tegels duurder?",
+      "a": "De tegel zelf is vaak iets duurder door de extra bewerking, en ook het legwerk kost meer door de vereiste precisie. Daar staat een strakker, rustiger eindbeeld tegenover, zeker bij grote tegels en betonlook."
+    },
+    {
+      "q": "Kan elke tegelzetter gerectificeerde tegels leggen?",
+      "a": "In principe wel, maar het vraagt meer vakmanschap: een vlakke ondergrond, een levelingsysteem en zorgvuldig voegen. Vraag naar ervaring met smalle voegen en grote formaten, en leg de afgesproken voegbreedte vast in de offerte."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check je tegel- en badkamerofferte"],
+    "commercieel": ["/kopen/tegels/", "Bekijk tegels met ledenprijzen"],
+    "zusters": ["betonlook", "afschot"]
+  }
+}

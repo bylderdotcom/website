@@ -1,0 +1,53 @@
+{
+  "cluster": "keuken",
+  "slug": "keukenindeling-werkdriehoek",
+  "titel": "Keukenindeling: zo werkt de werkdriehoek",
+  "title_tag": "Keukenindeling & werkdriehoek: zo plan je slim | Bylder",
+  "meta_description": "De werkdriehoek tussen koelkast, spoelbak en kooktoestel bepaalt het gebruiksgemak van je keuken. Zo plan je loopafstanden en zones goed.",
+  "intro": [
+    "De werkdriehoek is de denkbeeldige driehoek tussen koelkast, spoelbak en kooktoestel — de drie plekken waar je tijdens het koken voortdurend tussen beweegt. Een goede keukenindeling houdt die driehoek compact en vrij van obstakels, zodat je niet onnodig heen en weer loopt.",
+    "Bij een nieuwbouw- of verbouwkeuken ligt de indeling vaak al vast voordat je over kleuren nadenkt. Juist dan loont het om de werkdriehoek te toetsen: een indeling die op tekening logisch oogt, kan in de praktijk betekenen dat je elke dag tientallen meters extra loopt of elkaar constant in de weg staat."
+  ],
+  "stats": [
+    ["3", "hoekpunten: koelen, spoelen, koken"],
+    ["4–8 m", "ideale totale omtrek van de driehoek"],
+    ["1,2 m", "minimale vrije loopruimte tussen opstellingen"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is de werkdriehoek precies?",
+      "html": "<p>De werkdriehoek verbindt de drie functies die je tijdens elke maaltijd gebruikt: de koelkast (voorraad), de spoelbak (wassen en schoonmaken) en het kooktoestel (bereiden). De klassieke vuistregel: elke zijde van de driehoek is 1,2 tot 2,7 meter, en de totale omtrek blijft tussen de 4 en 8 meter.</p><p>Korter dan 4 meter voelt krap — je hebt geen werkruimte tussen de functies. Langer dan 8 meter betekent veel loopwerk, zeker als je vaak kookt. Belangrijker nog dan de exacte maten: er mag geen obstakel dwars door de driehoek staan, zoals een kookeiland zonder functie of een eettafel.</p>"
+    },
+    {
+      "kop": "Hoe werkt de driehoek per keukenvorm?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Keukenvorm</th><th>Werkdriehoek</th><th>Aandachtspunt</th></tr></thead><tbody><tr><td>Rechte keuken (één wand)</td><td>Geen echte driehoek — alles op één lijn</td><td>Zet de spoelbak in het midden, tussen koelen en koken</td></tr><tr><td>Parallelkeuken (twee wanden)</td><td>Compact en efficiënt</td><td>Minimaal 1,2 m tussen de wanden</td></tr><tr><td>Hoekkeuken (L-vorm)</td><td>Natuurlijke driehoek</td><td>Benut de hoek met carrousel of hoeklade</td></tr><tr><td>U-keuken</td><td>Zeer korte lijnen</td><td>Pas op voor te krappe binnenruimte</td></tr><tr><td>Keuken met eiland</td><td>Eén functie verhuist naar het eiland</td><td>Rondom 1,2 m vrije loopruimte houden</td></tr></tbody></table><p>Bij een eilandkeuken verplaats je meestal het kooktoestel of de spoelbak naar het eiland; zet nooit twee van de drie functies met de rug naar elkaar.</p>"
+    },
+    {
+      "kop": "Waarom denken keukenontwerpers tegenwoordig in zones?",
+      "html": "<p>Moderne keukens zijn groter en worden door meerdere mensen tegelijk gebruikt. Daarom werken ontwerpers naast de driehoek met vijf zones: <strong>voorraad</strong> (koelkast, voorraadkast), <strong>bewaren</strong> (servies, bestek), <strong>spoelen</strong> (spoelbak, vaatwasser, afval), <strong>voorbereiden</strong> (het grootste stuk vrij werkblad) en <strong>koken</strong> (kooktoestel, oven, pannen).</p><p>De logische volgorde is die van het koken zelf: voorraad → spoelen → voorbereiden → koken. Plaats de zones in die volgorde, rechtshandigen meestal van links naar rechts. De voorbereidingszone verdient minimaal 80 tot 90 cm aaneengesloten werkblad, bij voorkeur tussen spoelbak en kooktoestel — dat is waar je het grootste deel van je keukentijd staat.</p>"
+    },
+    {
+      "kop": "Welke loopafstanden en vrije maten moet je aanhouden?",
+      "html": "<p>Reserveer minimaal 1,2 meter vrije ruimte tussen twee keukenopstellingen of tussen keuken en eiland; 1,3 tot 1,5 meter is comfortabeler als er twee mensen werken of laden en vaatwasser tegelijk open staan. Voor een looproute waar anderen doorheen moeten (bijvoorbeeld naar de tuindeur) geldt: leid die route om de werkdriehoek heen, niet er doorheen.</p><p>Controleer ook draaicirkels: een open vaatwasserklep steekt zo'n 60 cm uit, een koelkastdeur nog meer. Teken die open standen in op de plattegrond — of gebruik een 3D-planner — vóórdat je de indeling definitief maakt bij de keukenzaak of in de meerwerkopties van je aannemer.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe groot mag de werkdriehoek maximaal zijn?",
+      "a": "Houd de totale omtrek van de driehoek tussen de 4 en 8 meter, met zijden van 1,2 tot 2,7 meter. Groter betekent onnodig veel loopwerk; kleiner betekent te weinig werkruimte tussen de functies."
+    },
+    {
+      "q": "Werkt de werkdriehoek ook in een kleine rechte keuken?",
+      "a": "In een rechte keuken op één wand is er geen driehoek maar een werklijn. Het principe blijft: spoelbak in het midden, koelkast en kooktoestel aan de uiteinden, met werkblad ertussen. Zo behoud je dezelfde logische kookvolgorde."
+    },
+    {
+      "q": "Waar zet ik de vaatwasser in de indeling?",
+      "a": "Direct naast of maximaal één kastbreedte van de spoelbak, zodat aansluitingen kort blijven en je vieze vaat in één beweging kwijt kunt. Plaats hem bij voorkeur niet in een hoek, waar de open klep laden blokkeert."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Test je indeling in de AI-keukenplanner"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["kookeiland-of-rechte-keuken", "keukenkasten-en-fronten", "vaatwasser-kiezen"]
+  }
+}

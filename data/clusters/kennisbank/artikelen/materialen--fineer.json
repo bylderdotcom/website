@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "fineer",
+  "titel": "Fineer: eigenschappen, prijs en onderhoud",
+  "title_tag": "Fineer: eigenschappen, prijs en onderhoud | Bylder",
+  "meta_description": "Fineer is een dunne laag echt hout op een dragerplaat: echte houtlook voor minder geld. Bekijk eigenschappen, onderhoud en het verschil met massief."
+,
+  "intro": [
+    "Fineer is een dunne laag echt hout — meestal 0,6 tot 2,5 millimeter — die op een dragerplaat van mdf, spaanplaat of multiplex wordt gelijmd. Je krijgt dus de echte houttekening en het gevoel van hout, zonder de prijs en het werkende gedrag van massief hout.",
+    "Fineer is de standaard voor houtlook-keukenfronten, kasten en wandpanelen in het midden- en hogere segment. Omdat de dragerplaat stabiel is, trekt fineer niet krom en zijn strakke, grote vlakken mogelijk die met massief hout lastig te maken zijn."
+  ],
+  "stats": [
+    ["€50–€150", "per m² paneel"],
+    ["15–25 jaar", "levensduur bij normaal gebruik"],
+    ["0,6–2,5 mm", "dikte van de echte houtlaag"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is fineer geschikt voor?",
+      "html": "<p>Fineer wordt vooral toegepast op verticale en licht belaste vlakken: keukenfronten, kastdeuren, wandpanelen, deuren en meubels. Als werkblad is fineer af te raden — de dunne houtlaag is niet bestand tegen snijden, water en hete pannen. In de badkamer kan gefineerd meubelwerk mits de randen goed zijn afgedicht en de ruimte geventileerd wordt; voor natte zones kies je beter <a href=\"/kennisbank/materialen/hpl-laminaat/\">hpl</a> of watervast plaatmateriaal.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van fineer?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Budget tot middenklasse</td><td>€50–€150 per m² paneel; fors goedkoper dan massief</td></tr><tr><td>Krasvastheid</td><td>Matig</td><td>Laklaag beschermt, maar diepe krassen gaan door de houtlaag heen</td></tr><tr><td>Hittebestendigheid</td><td>Matig</td><td>Hitte beschadigt lak en lijmlaag</td></tr><tr><td>Vochtbestendigheid</td><td>Matig</td><td>Randen en dragerplaat zijn gevoelig voor indringend vocht</td></tr><tr><td>Onderhoud</td><td>Laag</td><td>Afnemen met licht vochtige doek; geen olie nodig bij gelakt fineer</td></tr><tr><td>Levensduur</td><td>15–25 jaar</td><td>Beperkt opschuurbaar door de dunne houtlaag</td></tr><tr><td>Duurzaamheid</td><td>Goed</td><td>Uit één stam komt veel meer fineer dan massief hout</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je fineer?",
+      "html": "<p>Gelakt fineer is onderhoudsarm: stof afnemen en af en toe reinigen met een licht vochtige doek en mild schoonmaakmiddel. Gebruik geen agressieve reinigers of schuursponsjes en laat geen water op randen en naden staan — daar zit de zwakke plek. Geolied fineer vraagt af en toe een dunne onderhoudslaag olie. Wees terughoudend met schuren bij schade: de houtlaag is dun, en wie er doorheen schuurt kijkt op de dragerplaat. Kleine beschadigingen kan een meubelrestaurateur vaak plaatselijk bijwerken.</p>"
+    },
+    {
+      "kop": "Voor wie is fineer de juiste keuze?",
+      "html": "<p>Fineer past bij wie echte houtuitstraling wil op fronten en wanden, tegen een lagere prijs en met minder onderhoud dan massief. Vergelijk je met <a href=\"/kennisbank/materialen/massief-hout/\">massief hout</a>: dat is robuuster en eindeloos opschuurbaar, maar duurder en gevoelig voor werken. Vergelijk je met <a href=\"/kennisbank/materialen/hpl-laminaat/\">hpl-laminaat</a> met houtprint: dat is nog goedkoper en veel beter bestand tegen krassen en vocht, maar het blijft een fotoprint — bij strijklicht en op randen zie je het verschil met echt hout.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen fineer en laminaat?",
+      "a": "Fineer is een dunne laag écht hout op een dragerplaat; laminaat is een fotoprint van hout onder een kunststof toplaag. Fineer oogt en voelt authentieker, laminaat is krasvaster, vochtbestendiger en goedkoper."
+    },
+    {
+      "q": "Is fineer minder duurzaam dan massief hout?",
+      "a": "Qua grondstofgebruik juist niet: uit één boomstam haal je tientallen keren meer oppervlak aan fineer dan aan massieve delen. Qua levensduur wint massief, omdat het vaker opgeschuurd en gerenoveerd kan worden."
+    },
+    {
+      "q": "Kun je fineer schuren en opnieuw afwerken?",
+      "a": "Heel beperkt. De houtlaag is vaak minder dan een millimeter dik, dus meer dan één keer licht opschuren is riskant. Kleine krassen zijn bij te werken; grote renovaties zoals bij massief hout zijn niet mogelijk."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/showroomsale/", "Showroomsale"],
+    "zusters": ["massief-hout", "hpl-laminaat", "solid-surface"]
+  }
+}

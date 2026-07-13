@@ -1,0 +1,53 @@
+{
+  "cluster": "materialen",
+  "slug": "kwartscomposiet",
+  "titel": "Kwartscomposiet: eigenschappen, prijs en onderhoud",
+  "title_tag": "Kwartscomposiet: eigenschappen, prijs, onderhoud | Bylder",
+  "meta_description": "Kwartscomposiet is een werkbladmateriaal van ±90% kwarts en hars. Bekijk prijs per meter, kras- en vochtbestendigheid, onderhoud en alternatieven.",
+  "intro": [
+    "Kwartscomposiet is een fabrieksmatig gemaakt plaatmateriaal dat voor circa 90% bestaat uit gemalen kwarts (natuurlijk mineraal), gebonden met kunsthars en pigmenten. Het combineert de harde, steenachtige uitstraling van natuursteen met de egale structuur en het gebruiksgemak van een industrieel product.",
+    "Kwartscomposiet is al jaren het populairste werkbladmateriaal in Nederlandse keukens. Het is niet poreus, verkleurt nauwelijks en is in tientallen kleuren en marmerlooks leverbaar — van strak effen tot dooraderd."
+  ],
+  "stats": [
+    ["€250–€450", "per m¹ werkblad"],
+    ["25–30 jaar", "levensduur bij normaal gebruik"],
+    ["0×", "impregneren nodig (niet poreus)"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is kwartscomposiet geschikt voor?",
+      "html": "<p>Kwartscomposiet wordt vooral toegepast als keukenwerkblad, inclusief spoelbakken uit hetzelfde materiaal en doorgezette achterwanden. In de badkamer zie je het als wastafelblad en als ombouw van meubels. Voor vloeren en douchewanden is het minder gangbaar: platen zijn zwaar en groot formaat verwerken is specialistenwerk — daar kiezen de meeste mensen <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a> of tegels.</p><p>Buiten is kwartscomposiet af te raden: de hars in het materiaal kan verkleuren door uv-licht.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van kwartscomposiet?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse</td><td>€250–€450 per strekkende meter werkblad, incl. bewerking</td></tr><tr><td>Krasvastheid</td><td>Zeer goed</td><td>Kwarts is hard; alleen keramiek scoort hoger</td></tr><tr><td>Hittebestendigheid</td><td>Matig</td><td>Hars kan beschadigen boven ±150 °C; gebruik altijd een onderzetter</td></tr><tr><td>Vochtbestendigheid</td><td>Uitstekend</td><td>Niet poreus, neemt geen vocht of vet op</td></tr><tr><td>Onderhoud</td><td>Zeer laag</td><td>Schoonmaken met water en mild reinigingsmiddel volstaat</td></tr><tr><td>Levensduur</td><td>25–30 jaar</td><td>Gaat bij normaal gebruik een keukenleven lang mee</td></tr><tr><td>Duurzaamheid</td><td>Gemiddeld</td><td>Energie-intensieve productie; lange levensduur compenseert deels</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je kwartscomposiet?",
+      "html": "<p>Dagelijks onderhoud is simpel: afnemen met warm water en eventueel een mild, niet-schurend schoonmaakmiddel. Omdat het materiaal niet poreus is, hoef je het nooit te impregneren of in de olie te zetten. Vermijd drie dingen: hete pannen direct op het blad (gebruik een onderzetter), agressieve middelen zoals chloor en ontstopper, en schuursponsjes op hoogglans-uitvoeringen. Hardnekkige vlekken verwijder je met een speciale composietreiniger.</p>"
+    },
+    {
+      "kop": "Voor wie is kwartscomposiet de juiste keuze?",
+      "html": "<p>Kwartscomposiet past bij wie een onderhoudsarm, krasvast werkblad wil met steenlook, voor een middenklasseprijs. Twijfel je met <a href=\"/kennisbank/materialen/keramiek/\">keramiek</a>? Keramiek is hittebestendiger en kan buiten, maar is duurder (€350–€600 per m¹) en gevoeliger voor stootranden. Twijfel je met <a href=\"/kennisbank/materialen/natuursteen/\">natuursteen</a>? Graniet is vergelijkbaar geprijsd en volledig natuurlijk, maar poreus en dus onderhoudsgevoeliger. Wie kookt zonder onderzetters te vergeten en geen zin heeft in impregneren, zit bij kwartscomposiet goed.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is kwartscomposiet hetzelfde als graniet?",
+      "a": "Nee. Graniet is natuursteen die als plaat uit de groeve komt; kwartscomposiet wordt in de fabriek samengesteld uit gemalen kwarts en hars. Kwartscomposiet is egaler van kleur en niet poreus, graniet is uniek van tekening maar vraagt impregneren."
+    },
+    {
+      "q": "Kan een hete pan op kwartscomposiet?",
+      "a": "Kort en incidenteel overleeft het blad meestal, maar veilig is het niet: de kunsthars kan boven circa 150 °C verkleuren of scheuren. Gebruik altijd een onderzetter; hitteschade valt buiten de meeste garanties."
+    },
+    {
+      "q": "Wat kost een kwartscomposiet werkblad?",
+      "a": "Reken op €250–€450 per strekkende meter, inclusief zagen en randafwerking. Uitsparingen voor spoelbak en kookplaat, verstek-randen en exclusieve kleuren drijven de prijs op. Laat de offerteregel controleren voordat je tekent."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/showroomsale/", "Showroomsale"],
+    "zusters": ["keramiek", "natuursteen", "composiet"]
+  }
+}

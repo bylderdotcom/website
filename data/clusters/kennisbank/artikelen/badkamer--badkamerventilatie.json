@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "badkamerventilatie",
+  "titel": "Badkamerventilatie: capaciteit, systemen en vochtsensor",
+  "title_tag": "Badkamerventilatie: capaciteit en vochtsensor | Bylder",
+  "meta_description": "Badkamerventilatie moet minimaal 50 m³ per uur afvoeren. Zo kies je tussen mechanische afzuiging, WTW en een ventilator met vochtsensor.",
+  "intro": [
+    "Een badkamer heeft mechanische afvoer nodig met een capaciteit van minimaal 14 liter per seconde, ofwel circa 50 m³ per uur — een raam openzetten telt in de bouwregelgeving niet als volwaardige badkamerventilatie. In de praktijk regel je dat met een aansluiting op de centrale mechanische ventilatie (met of zonder WTW) of een aparte badkamerventilator met afvoer naar buiten.",
+    "Goede ventilatie is de goedkoopste verzekering tegen schimmel, loslatend kitwerk en een muffe badkamer. Het vocht van één douchebeurt moet binnen een half uur tot een uur afgevoerd zijn, anders trekt het in voegen, kit en plafond."
+  ],
+  "stats": [
+    ["50 m³/uur", "minimale afvoercapaciteit badkamer (14 l/s)"],
+    ["30-60 min", "nalooptijd om douchevocht af te voeren"],
+    ["€25-€150", "badkamerventilator, met vochtsensor vanaf ±€60"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoeveel ventilatiecapaciteit heeft een badkamer nodig?",
+      "html": "<p>De bouwregelgeving eist voor een badruimte een afvoercapaciteit van minimaal 14 liter per seconde (circa 50 m³ per uur); is er ook een toilet in dezelfde ruimte, dan komt daar 7 l/s bij. Dat is een minimum: na een warme douche in een kleine badkamer mag het best meer zijn om condens snel weg te werken. Belangrijk is ook de toevoer: lucht die je afzuigt moet ergens vandaan komen, meestal via een spleet van ruim een centimeter onder de badkamerdeur of een rooster in de deur. Een kier die dichtgezet wordt door een nieuwe drempel of vloer is een klassieke oorzaak van plots schimmelende badkamers.</p>"
+    },
+    {
+      "kop": "Welke ventilatiesystemen zijn er voor de badkamer?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Systeem</th><th>Hoe het werkt</th><th>Voor wie</th></tr></thead><tbody><tr><td>Centrale mechanische afzuiging (MV)</td><td>Afzuigventiel in badkamerplafond op de centrale box; standenschakelaar in of bij de badkamer</td><td>Meeste bestaande woningen en nieuwbouw</td></tr><tr><td>Balansventilatie met WTW</td><td>Afvoer via de WTW-unit die warmte uit de badkamerlucht terugwint voor verse toevoerlucht</td><td>Nieuwbouw en goed geïsoleerde woningen</td></tr><tr><td>Losse badkamerventilator</td><td>Eigen ventilator met kanaal naar buiten, schakelt op licht, timer of sensor</td><td>Woningen zonder centraal systeem of als aanvulling</td></tr></tbody></table><p>Heb je al mechanische ventilatie of WTW, dan is een extra losse ventilator meestal onnodig en kan die het systeem zelfs uit balans brengen — laat dan liever het ventiel goed inregelen op de hoogstand.</p>"
+    },
+    {
+      "kop": "Is een vochtsensor de meerprijs waard?",
+      "html": "<p>Ja, voor de meeste huishoudens wel. Een vochtsensor (hygrostaat) meet de relatieve luchtvochtigheid en schakelt de ventilator of de hoogstand van het centrale systeem automatisch op zodra je doucht — en weer af als het vocht weg is. Dat lost het echte probleem op: mensen vergeten de hoogstand aan te zetten of zetten hem te vroeg uit. Een losse ventilator met vochtsensor kost vanaf circa €60; voor centrale systemen bestaan vochtgestuurde standenschakelaars en ventielen. De combinatie sensor plus nalooptijd van 30-60 minuten houdt de badkamer droog zonder dat je eraan hoeft te denken.</p>"
+    },
+    {
+      "kop": "Wat gebeurt er bij te weinig badkamerventilatie?",
+      "html": "<p>De gevolgen bouwen zich langzaam op: eerst beslagen spiegels die lang nat blijven en zwarte puntjes op kitranden, daarna schimmel op voegen en plafond, loslatend schilderwerk en een blijvende muffe geur. Vocht trekt bovendien door naar aangrenzende ruimtes en kan in de constructie condenseren. De oplossing is bijna altijd een combinatie van meer afvoercapaciteit, langere nalooptijd en een vrije toevoer onder de deur — en na het douchen de wanden even aftrekken met een wisser scheelt de ventilatie de helft van het werk.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een raam in de badkamer genoeg ventilatie?",
+      "a": "Nee. De bouwregelgeving eist mechanische afvoer van minimaal 14 l/s (circa 50 m³/uur); een raam telt daarvoor niet mee. Een raam is wel een nuttige aanvulling om na het douchen extra snel te spuien, behalve bij vorst."
+    },
+    {
+      "q": "Hoe lang moet de ventilatie na het douchen blijven draaien?",
+      "a": "Reken op 30 tot 60 minuten op de hoogste stand om het vocht van een douchebeurt af te voeren. Een timer of vochtsensor regelt dat automatisch; handmatig uitzetten direct na het douchen is de meest gemaakte fout."
+    },
+    {
+      "q": "Mag je een losse badkamerventilator aansluiten op mechanische ventilatie?",
+      "a": "Nee, sluit nooit een eigen ventilator aan op het kanaal van een centraal MV- of WTW-systeem: dat verstoort de balans van het hele systeem. Laat in plaats daarvan het afzuigventiel opnieuw inregelen of kies een vochtgestuurde regeling."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check de installatieposten in je offerte"],
+    "commercieel": ["/eerlijke-prijzen/badkamer/", "Bekijk eerlijke badkamerprijzen"],
+    "zusters": ["waterdichting-badkamer", "voegen-en-kitwerk", "begrip:wtw-ventilatie"]
+  }
+}

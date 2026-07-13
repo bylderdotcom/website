@@ -1,0 +1,53 @@
+{
+  "cluster": "badkamer",
+  "slug": "bad-of-douche",
+  "titel": "Bad of douche: wat kies je bij een nieuwe badkamer?",
+  "title_tag": "Bad of douche kiezen: ruimte, kosten, waarde | Bylder",
+  "meta_description": "Bad of douche? Vergelijk ruimtebeslag, waterverbruik, kosten en herverkoopwaarde — en bepaal wanneer een combinatie van beide de beste keuze is.",
+  "intro": [
+    "Kies een douche als je badkamer kleiner is dan circa 6 m² of je vooral praktisch en zuinig wilt wonen; kies (ook) een bad als je ruimte hebt, graag in bad gaat of jonge kinderen hebt. In badkamers vanaf 6-7 m² passen bad én douche meestal allebei.",
+    "De keuze werkt door in je hele indeling, je waterverbruik en zelfs de herverkoopwaarde van je woning. Daarom loont het om deze beslissing als eerste te nemen, vóór je sanitair en tegels kiest."
+  ],
+  "stats": [
+    ["100-150 liter", "waterverbruik per ligbad"],
+    ["±65 liter", "waterverbruik per gemiddelde douchebeurt"],
+    ["6-7 m²", "vanaf deze oppervlakte passen bad én douche"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoeveel ruimte vragen een bad en een douche?",
+      "html": "<p>Een standaard ligbad meet 170-180 cm bij 75-80 cm en heeft daarnaast in- en uitstapruimte nodig. Een inloopdouche is comfortabel vanaf 90x120 cm, een cabine vanaf 80x80 cm. In een badkamer onder de 6 m² gaat een bad vrijwel altijd ten koste van bergruimte of een tweede wastafel. Een bad-douchecombinatie (douchen in het bad met een scherm) is het compromis voor kleine badkamers, maar stapt minder comfortabel in en oogt gedateerder.</p>"
+    },
+    {
+      "kop": "Wat scheelt een douche in waterverbruik en energiekosten?",
+      "html": "<p>Een vol ligbad kost 100 tot 150 liter warm water; een gemiddelde douchebeurt van 8-9 minuten circa 65 liter. Wie dagelijks in bad zou gaan in plaats van douchen, verbruikt dus al snel het dubbele aan warm water — en dat zie je terug in je energierekening. Een waterbesparende douchekop drukt het doucheverbruik verder. Voor de meeste huishoudens is het bad in de praktijk een weekendluxe en de douche het dagelijkse gebruik; reken daarop bij je afweging.</p>"
+    },
+    {
+      "kop": "Bad of douche: hoe vergelijken kosten en gebruik?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Criterium</th><th>Douche</th><th>Bad</th></tr></thead><tbody><tr><td>Aanschaf + installatie</td><td>€700-€2.500 (inloopdouche-opstelling)</td><td>€500-€3.000 (standaard tot vrijstaand)</td></tr><tr><td>Ruimtebeslag</td><td>Vanaf 80x80 cm</td><td>Circa 170-180 x 75-80 cm plus instapruimte</td></tr><tr><td>Waterverbruik per beurt</td><td>±65 liter</td><td>100-150 liter</td></tr><tr><td>Dagelijks gebruiksgemak</td><td>Hoog</td><td>Lager; vooral ontspanning</td></tr><tr><td>Gezinnen met jonge kinderen</td><td>Kan, met babybadje</td><td>Groot praktisch voordeel</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wat doet een bad met de herverkoopwaarde?",
+      "html": "<p>Een bad is geen harde waardeverhoger, maar het ontbreken ervan kan kopers met jonge kinderen afschrikken — juist de doelgroep voor eengezinswoningen. In appartementen en starterswoningen weegt een ruime inloopdouche vaak zwaarder dan een bad. Vuistregel: heeft je woning drie of meer slaapkamers en ruimte voor beide, dan is bad plus douche de veiligste keuze voor de verkoopbaarheid. Moet je kiezen, laat dan de doelgroep van je woning meewegen in plaats van alleen je eigen voorkeur.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Verkoopt een huis zonder bad slechter?",
+      "a": "Niet per definitie, maar bij eengezinswoningen missen gezinnen met jonge kinderen een bad vaak wel. Bij appartementen en starterswoningen weegt een ruime inloopdouche meestal zwaarder. Heb je ruimte voor beide, dan is de combinatie de veiligste keuze."
+    },
+    {
+      "q": "Is douchen echt zuiniger dan een bad nemen?",
+      "a": "Ja. Een vol ligbad kost 100-150 liter warm water, een gemiddelde douchebeurt circa 65 liter. Alleen bij heel lange douchebeurten van een kwartier of meer komt het verbruik in de buurt van een bad."
+    },
+    {
+      "q": "Passen een bad en een douche samen in een kleine badkamer?",
+      "a": "Vanaf circa 6-7 m² passen beide, mits slim ingedeeld. Daaronder is een bad-douchecombinatie het compromis: je doucht in het bad achter een badwand. Dat bespaart ruimte, maar stapt minder makkelijk in en uit."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Test je indeling met de badkamerplanner"],
+    "commercieel": ["/kopen/sanitair/", "Bekijk baden en douches"],
+    "zusters": ["inloopdouche-of-cabine", "regendouche", "index"]
+  }
+}

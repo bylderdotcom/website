@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "afschot",
+  "titel": "Afschot",
+  "title_tag": "Wat is afschot? Betekenis + uitleg | Bylder",
+  "meta_description": "Afschot is de bewuste helling in een vloer of douchevloer richting de afvoer, zodat water wegloopt. Lees hoeveel afschot nodig is en hoe je het controleert.",
+  "intro": [
+    "Afschot is de bewuste, lichte helling in een vloer, douchevloer of goot richting het afvoerpunt, zodat water vanzelf wegloopt en niet blijft staan. In een inloopdouche is een afschot van ongeveer 1 tot 2 centimeter per meter (1–2%) richting de draingoot of putafvoer gebruikelijk.",
+    "Voor badkamerverbouwers is afschot een detail met grote gevolgen: te weinig afschot betekent plassen water en kalkranden, te veel of onregelmatig afschot oogt scheef en kan grote tegels laten 'kantelen' op de helling."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij afschot in de douche?",
+      "html": "<p>De richting en het aantal vlakken bepalen het tegelbeeld. Bij een langwerpige draingoot tegen de wand kan de vloer in één vlak op afschot liggen — mooi bij grote tegels. Bij een putje in het midden zijn vier hellingvlakken met knipwerk (envelop-verdeling) nodig, wat beter past bij kleinere tegels of mozaïek.</p><p>Controleer bij oplevering met een emmer water of alles daadwerkelijk naar de afvoer stroomt; blijvend staand water is een gebrek dat je direct moet melden. Let ook op de aansluiting op de rest van de badkamervloer: de doucheszone ligt idealiter iets verdiept of gescheiden door een lage drempel, zodat water niet de droge zone in loopt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel afschot moet een douchevloer hebben?",
+      "a": "Gangbaar is 1 tot 2 centimeter per meter richting de afvoer. Minder dan 1 cm/m geeft risico op staand water; veel meer wordt zichtbaar en onprettig lopen. Bij een badkamervloer buiten de douchezone is licht of geen afschot gebruikelijk."
+    },
+    {
+      "q": "Kan afschot achteraf nog gecorrigeerd worden?",
+      "a": "Beperkt. Kleine plassen zijn soms te verhelpen door de afvoer of enkele tegels opnieuw te zetten, maar structureel te weinig afschot betekent de douchevloer opnieuw opbouwen — inclusief waterdichting. Laat het daarom bij de bouw meteen goed doen en controleer vóór het voegen."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check je badkamerofferte op tegelwerk en afschot"],
+    "commercieel": ["/kopen/tegels/", "Bekijk tegels met ledenprijzen"],
+    "zusters": ["kimband", "badkamer:waterdichting-badkamer"]
+  }
+}

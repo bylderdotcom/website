@@ -1,0 +1,53 @@
+{
+  "cluster": "keuken",
+  "slug": "afzuigkap-kiezen",
+  "titel": "Welke afzuigkap kies je?",
+  "title_tag": "Afzuigkap kiezen: afvoer of recirculatie? | Bylder",
+  "meta_description": "Afvoer naar buiten zuigt het best, recirculatie is vaak verplicht in nieuwbouw. Bereken de capaciteit met de vuistregel keukeninhoud × 10.",
+  "intro": [
+    "Een afzuigkap met afvoer naar buiten werkt het best, maar in veel nieuwbouwwoningen is recirculatie de enige optie omdat een gat in de luchtdichte schil het ventilatiesysteem en de energieprestatie verstoort. Welke capaciteit je nodig hebt, bereken je met een simpele vuistregel: de inhoud van je keuken in kubieke meters maal 10.",
+    "De afzuigkap is bepalend voor het comfort van een open woonkeuken: een te lichte of verkeerd gekozen kap betekent kookluchtjes in de bank en aanslag op kasten. Kies de kap daarom op prestaties en situatie, niet alleen op uiterlijk."
+  ],
+  "stats": [
+    ["inhoud × 10", "vuistregel benodigde capaciteit (m³/uur)"],
+    ["€150–€1.500", "prijsrange afzuigkappen"],
+    ["±6 mnd", "vervangingsritme koolstoffilter bij recirculatie"]
+  ],
+  "secties": [
+    {
+      "kop": "Afvoer naar buiten of recirculatie: wat is beter?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Aspect</th><th>Afvoer naar buiten</th><th>Recirculatie</th></tr></thead><tbody><tr><td>Geur en vocht</td><td>Beide volledig afgevoerd</td><td>Geur grotendeels gefilterd, vocht blijft binnen</td></tr><tr><td>Effectiviteit</td><td>Hoogst</td><td>Goed, mits filters vers zijn</td></tr><tr><td>Onderhoud</td><td>Vetfilter reinigen</td><td>Vetfilter reinigen + koolstof-/plasmafilter vervangen</td></tr><tr><td>Energieverlies</td><td>Zuigt ook verwarmde lucht weg</td><td>Geen warmteverlies</td></tr><tr><td>Nieuwbouw</td><td>Vaak niet toegestaan of onpraktisch (luchtdichte schil, WTW)</td><td>Meestal de voorgeschreven oplossing</td></tr><tr><td>Kosten in gebruik</td><td>Laag</td><td>Filters: globaal €30–€100 per jaar</td></tr></tbody></table><p>Vuistregel: kan er zonder bezwaar een kanaal naar buiten, kies dan afvoer. In nieuwbouw met balansventilatie (WTW) is recirculatie vrijwel altijd het antwoord — sluit een afzuigkap nooit aan op het WTW-kanaal.</p>"
+    },
+    {
+      "kop": "Hoe bereken je de benodigde capaciteit?",
+      "html": "<p>De vuistregel: <strong>inhoud van de keuken × 10</strong>. Meet lengte × breedte × hoogte van de (open) keukenruimte en vermenigvuldig met 10 voor het aantal kubieke meters lucht dat de kap per uur moet verversen. Voorbeeld: een woonkeuken van 4 × 5 meter met een plafond van 2,6 meter heeft een inhoud van 52 m³ en vraagt dus een kap van circa 520 m³/uur.</p><p>Kies een kap die deze waarde in een middenstand haalt, niet pas in de hoogste (boost)stand — die stand is luid en bedoeld voor pieken. Bij een open keuken die overloopt in de woonkamer reken je alleen het keukengedeelte, maar neem dan wel wat marge omdat lucht vrij kan wegstromen.</p>"
+    },
+    {
+      "kop": "Welk type kap past bij je keukenopstelling?",
+      "html": "<p>Tegen de wand boven het kooktoestel is een <strong>wandschouwkap</strong> of een <strong>vlakke inbouwkap</strong> in een bovenkast de gangbare keuze (€150–€700). Boven een kookeiland kies je een <strong>eilandkap</strong> aan het plafond of een <strong>plafondunit</strong> die vlak wegwerkt (€500–€1.500). Steeds populairder bij eilanden is de <strong>kookplaat met geïntegreerde afzuiging</strong>: afzuiging naast de kookzones, geen kap in het zicht, wel een motor en filters in het onderkastje.</p><p>Houd de ophanghoogte aan die de fabrikant voorschrijft — meestal 65 cm boven inductie — en kies de kap minimaal zo breed als de kookplaat. Let bij een open keuken ook op het geluidsniveau: onder de 55 dB in de gebruiksstand is comfortabel.</p>"
+    },
+    {
+      "kop": "Waar let je op bij aankoop en onderhoud?",
+      "html": "<p>Bij recirculatie bepalen de filters de prestaties: reinig het metalen vetfilter maandelijks (mag in de vaatwasser) en vervang het koolstoffilter ongeveer elk half jaar. Regenereerbare of plasmafilters zijn duurder in aanschaf maar goedkoper over de jaren. Reken de filterkosten mee in de vergelijking tussen modellen.</p><p>Zit de afzuigkap in het apparatenpakket van je keukenofferte, vraag dan merk en typenummer op en vergelijk de regelprijs — 96% van de kopers betaalt voor minstens één post te veel. Via Bylder koop je apparatuur met ledenprijzen bij 60+ deelnemende merken.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel m³/uur moet mijn afzuigkap aankunnen?",
+      "a": "Gebruik de vuistregel keukeninhoud × 10: lengte × breedte × hoogte van de keuken in meters, maal 10. Een keuken van 20 m² met 2,6 m plafond vraagt dus circa 520 m³/uur, te halen in een middenstand van de kap."
+    },
+    {
+      "q": "Mag ik in nieuwbouw een afzuigkap met afvoer naar buiten plaatsen?",
+      "a": "Meestal niet zomaar: nieuwbouw heeft een luchtdichte schil en balansventilatie, en een extra gevel- of dakdoorvoer verstoort de energieprestatie. Recirculatie is daarom vrijwel altijd de voorgeschreven oplossing; sluit een kap nooit aan op het WTW-kanaal."
+    },
+    {
+      "q": "Hoe vaak moet ik de filters vervangen?",
+      "a": "Reinig het metalen vetfilter ongeveer maandelijks in de vaatwasser. Bij recirculatie vervang je het koolstoffilter elk half jaar, of regenereer je het volgens voorschrift als het een regenereerbaar filter is. Verzadigde filters zijn de meest voorkomende oorzaak van een 'slecht zuigende' kap."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Plan je keuken met de AI-planner"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["inductie-of-gas", "kookeiland-of-rechte-keuken", "keukenindeling-werkdriehoek"]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "cluster": "materialen",
+  "slug": "terrazzo",
+  "titel": "Terrazzo: eigenschappen, prijs en onderhoud",
+  "title_tag": "Terrazzo: eigenschappen, prijs en onderhoud | Bylder",
+  "meta_description": "Terrazzo is een gietvloer of blad van marmer- en steenkorrels in cement of hars. Bekijk prijzen per m², onderhoud en voor wie terrazzo past."
+,
+  "intro": [
+    "Terrazzo is een samengesteld materiaal waarbij korrels marmer, graniet of glas worden gemengd met een bindmiddel van cement of hars, waarna het oppervlak glad wordt geslepen. Het gespikkelde resultaat kent iedereen van granito aanrechtbladen en jaren-30-gangen — en is terug als designklassieker.",
+    "Terrazzo bestaat in twee vormen: ter plaatse gegoten (vloeren, doorlopend zonder naden) en prefab platen of tegels (werkbladen, wastafels, vloertegels). De gegoten variant is ambachtelijk werk en prijst zich daarnaar."
+  ],
+  "stats": [
+    ["€300–€700", "per m² gegoten vloer"],
+    ["50+ jaar", "levensduur, opnieuw te slijpen"],
+    ["1–2× per jaar", "impregneren aanbevolen (cementgebonden)"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar is terrazzo geschikt voor?",
+      "html": "<p>Gegoten terrazzo is vooral een vloermateriaal: naadloos door hal, keuken en woonkamer, goed te combineren met vloerverwarming. Prefab terrazzo wordt gebruikt voor werkbladen, wastafelbladen, vensterbanken en tegels voor wand en vloer. In de badkamer werkt terrazzo goed op de vloer en aan de wand, mits geïmpregneerd. Als keukenwerkblad is het te vergelijken met natuursteen: mooi en degelijk, maar poreus en zuurgevoelig (bij cementgebonden terrazzo).</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van terrazzo?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Duur</td><td>Gegoten vloer €300–€700 per m²; werkblad €400–€800 per m¹</td></tr><tr><td>Krasvastheid</td><td>Goed</td><td>Hard oppervlak; hardheid hangt af van het gebruikte granulaat</td></tr><tr><td>Hittebestendigheid</td><td>Goed (cement) / matig (hars)</td><td>Cementgebonden kan tegen warmte; harsgebonden niet</td></tr><tr><td>Vochtbestendigheid</td><td>Redelijk</td><td>Cementgebonden terrazzo is poreus en moet geïmpregneerd worden</td></tr><tr><td>Onderhoud</td><td>Gemiddeld</td><td>pH-neutrale zeep; periodiek impregneren; zuren vermijden</td></tr><tr><td>Levensduur</td><td>50+ jaar</td><td>Kan meerdere keren opnieuw geslepen worden</td></tr><tr><td>Duurzaamheid</td><td>Goed</td><td>Vaak restkorrels als grondstof; extreem lange levensduur</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe onderhoud je terrazzo?",
+      "html": "<p>Behandel cementgebonden terrazzo zoals natuursteen: schoonmaken met een pH-neutrale (natuur)steenzeep, nooit met azijn of chloor, en één tot twee keer per jaar impregneren tegen vlekken. Zeepresten van een vloerzeep met verzorgende bestanddelen bouwen juist een beschermend laagje op. Het grote voordeel van terrazzo: doffe plekken, krassen en zelfs decennia slijtage zijn te verhelpen door het oppervlak opnieuw te laten slijpen en polijsten — een oude granitovloer kan er weer als nieuw uitzien.</p>"
+    },
+    {
+      "kop": "Voor wie is terrazzo de juiste keuze?",
+      "html": "<p>Terrazzo past bij wie een karaktervolle, naadloze vloer of een ambachtelijk blad wil en bereid is te investeren: het is duurder dan tegels, maar gaat generaties mee. Vergelijk je met <a href=\"/kennisbank/materialen/natuursteen/\">natuursteen</a>: vergelijkbaar onderhoud, maar terrazzo is egaler te sturen in kleur en korrel. Vergelijk je met <a href=\"/kennisbank/materialen/microcement/\">microcement</a>: dat is ook naadloos maar dunner, sneller aangebracht en de helft goedkoper — alleen minder slijtvast en niet opnieuw te slijpen. Wie budget zoekt met terrazzo-look kiest prefab tegels in plaats van gietwerk.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen terrazzo en granito?",
+      "a": "Granito is de Nederlandse (jaren-30-)naam voor cementgebonden terrazzo; het is hetzelfde materiaal. De term terrazzo wordt tegenwoordig breder gebruikt, ook voor harsgebonden varianten en prefab platen."
+    },
+    {
+      "q": "Wat kost een terrazzovloer?",
+      "a": "Een ter plaatse gegoten terrazzovloer kost circa €300–€700 per m², inclusief slijpen en polijsten; de prijs hangt sterk af van oppervlakte en gewenste korrel. Terrazzo-tegels zijn goedkoper: reken op €50–€150 per m² materiaal."
+    },
+    {
+      "q": "Is terrazzo geschikt voor de badkamer?",
+      "a": "Ja, terrazzo is populair voor badkamervloeren en -wanden omdat het naadloos is. Cementgebonden terrazzo moet wel goed geïmpregneerd worden tegen vocht en zeep, en het oppervlak wordt bij voorkeur licht gehoond in plaats van glanzend gepolijst tegen uitglijden."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Offerte-check keuken & badkamer"],
+    "commercieel": ["/kopen/tegels/", "Tegels kopen"],
+    "zusters": ["natuursteen", "microcement", "keramiek"]
+  }
+}

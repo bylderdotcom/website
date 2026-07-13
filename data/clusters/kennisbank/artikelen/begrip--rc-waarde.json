@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "rc-waarde",
+  "titel": "Rc-waarde",
+  "title_tag": "Wat is Rc-waarde? Betekenis + uitleg | Bylder",
+  "meta_description": "De Rc-waarde geeft aan hoe goed een constructiedeel isoleert, in m²K/W. Hoe hoger, hoe beter. Lees welke eisen gelden voor vloer, gevel en dak.",
+  "intro": [
+    "De Rc-waarde is de warmteweerstand van een constructiedeel — vloer, gevel of dak — uitgedrukt in m²K/W. Hoe hoger de Rc-waarde, hoe beter het onderdeel isoleert en hoe minder warmte er verloren gaat.",
+    "Voor kopers en verbouwers is de Rc-waarde de snelste manier om isolatiekwaliteit te vergelijken: hij staat in de technische omschrijving van nieuwbouw en in offertes voor na-isolatie, en bepaalt direct je energieverbruik en wooncomfort."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Welke Rc-waarden gelden voor nieuwbouw?",
+      "html": "<p>De bouwregelgeving stelt minimumeisen per constructiedeel:</p><table class=\"vgl\"><thead><tr><th>Constructiedeel</th><th>Minimale Rc-waarde nieuwbouw</th></tr></thead><tbody><tr><td>Vloer</td><td>3,7 m²K/W</td></tr><tr><td>Gevel</td><td>4,7 m²K/W</td></tr><tr><td>Dak</td><td>6,3 m²K/W</td></tr></tbody></table><p>Bij bestaande bouw gelden lagere eisen bij verbouwing, maar loont hoger isoleren vrijwel altijd. Let op: de Rc-waarde geldt voor dichte delen; voor ramen en deuren kijk je naar de U-waarde (daar geldt: hoe lager, hoe beter). Controleer in de technische omschrijving of de beloofde Rc-waarden per onderdeel zijn vastgelegd — het is een van de punten die je bij de oplevering niet meer kunt zien.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen Rc-waarde en Rd-waarde?",
+      "a": "De Rd-waarde is de warmteweerstand van alleen het isolatiemateriaal; de Rc-waarde is die van de complete constructie inclusief steen, spouw en afwerking. Isolatieplaten worden verkocht op Rd-waarde, gebouwen beoordeeld op Rc-waarde."
+    },
+    {
+      "q": "Is een hogere Rc-waarde altijd de investering waard?",
+      "a": "Tot op zekere hoogte: elke stap extra isolatie bespaart minder dan de vorige. Bij nieuwbouw is iets boven de wettelijke eis vaak zinvol omdat het in de bouw goedkoop mee te nemen is; bij renovatie bepaalt de bestaande constructie wat haalbaar en rendabel is."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Bekijk alle nieuwbouw-tools"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["wtw-ventilatie", "casco"]
+  }
+}

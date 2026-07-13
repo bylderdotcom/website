@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "stelpost",
+  "titel": "Stelpost",
+  "title_tag": "Wat is een stelpost? Betekenis + uitleg | Bylder",
+  "meta_description": "Een stelpost is een geraamd bedrag in een offerte voor iets dat nog niet definitief gekozen is. Lees waarom stelposten vaak te laag zijn en hoe je ze controleert.",
+  "intro": [
+    "Een stelpost is een geschat bedrag dat een aannemer in de offerte of aanneemsom opneemt voor een onderdeel dat nog niet definitief gekozen is, zoals de keuken, het sanitair of de tegels. Kies je later iets duurders dan de stelpost, dan betaal je het verschil als meerwerk; kies je goedkoper, dan krijg je (een deel) terug als minderwerk.",
+    "Voor kopers is de stelpost een klassieke valkuil: bouwers houden hem vaak bewust laag, zodat de aanneemsom aantrekkelijk oogt. In de praktijk is vrijwel elke echte keuken of badkamer duurder dan de stelpost — en dat verschil rekent de bouwer tegen zijn eigen tarieven af."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Hoe controleer je of een stelpost realistisch is?",
+      "html": "<p>Vergelijk de stelpost met marktprijzen: een complete keuken kost gemiddeld €12.000 en een complete badkamer ook rond de €12.000. Staat er een stelpost van €4.000 voor de badkamer, dan weet je dat er vrijwel zeker fors meerwerk volgt.</p><p>Vraag daarnaast wat er precies onder de stelpost valt (alleen materiaal, of ook montage en installatiewerk?) en tegen welk tarief overschrijding wordt afgerekend. Overweeg bij een lage stelpost de post als minderwerk te laten vervallen en zelf te kopen na casco-oplevering — reken dat door voordat je tekent.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Krijg ik het volledige bedrag terug als ik een stelpost laat vervallen?",
+      "a": "Meestal niet. Aannemers houden vaak een deel in voor coördinatie, winst en risico, waardoor de teruggave lager is dan de stelpost zelf. Vraag de minderwerkprijs schriftelijk op en vergelijk die met wat zelf kopen je oplevert."
+    },
+    {
+      "q": "Is een stelpost inclusief btw en montage?",
+      "a": "Dat verschilt per offerte en staat lang niet altijd duidelijk vermeld. Vraag expliciet na of de stelpost inclusief btw, levering én montage is. Een stelpost die alleen materiaal dekt, pakt bij afrekening flink duurder uit dan hij lijkt."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "Check je offerte op te lage stelposten"],
+    "commercieel": ["/eerlijke-prijzen/badkamer/", "Bekijk eerlijke badkamerprijzen"],
+    "zusters": ["meerwerk", "keuken:casco-keuken-nieuwbouw"]
+  }
+}

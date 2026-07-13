@@ -1,0 +1,53 @@
+{
+  "cluster": "keuken",
+  "slug": "oven-kiezen",
+  "titel": "Welke oven kies je voor je keuken?",
+  "title_tag": "Oven kiezen: solo, combi of stoom + nismaten | Bylder",
+  "meta_description": "Solo-oven, combi-magnetron of stoomoven? Kies op kookgedrag en nismaat (45 of 60 cm). Zo vind je de oven die past bij keuken én budget.",
+  "intro": [
+    "Welke oven je kiest hangt af van twee dingen: hoe je kookt en welke nismaat je keuken heeft. Een solo-oven van 60 cm is de veilige allrounder; een combi-oven met magnetron van 45 cm bespaart een apparaat, en een stoomoven is de upgrade voor wie veel groente, vis en brood bereidt.",
+    "De nismaat — de hoogte van de uitsparing in de kastenwand — ligt vast zodra de keuken getekend is. Kies daarom eerst het type oven en laat de kast daarop tekenen, niet andersom. Een verkeerde nis achteraf aanpassen betekent een nieuwe kast."
+  ],
+  "stats": [
+    ["45 of 60 cm", "standaard nismaten (hoogte)"],
+    ["€300–€2.000", "prijsrange inbouwovens"],
+    ["1–2", "ovens die de meeste huishoudens echt gebruiken"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke oventypen zijn er en voor wie?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Type</th><th>Nismaat</th><th>Prijs (indicatie)</th><th>Voor wie</th></tr></thead><tbody><tr><td>Solo-oven</td><td>60 cm</td><td>€300–€900</td><td>Allrounder: bakken, braden, grillen; grootste inhoud</td></tr><tr><td>Combi-magnetron</td><td>45 cm</td><td>€500–€1.200</td><td>Wie oven én magnetron wil in één nis</td></tr><tr><td>Stoomoven (combi-stoom)</td><td>45 of 60 cm</td><td>€800–€2.000</td><td>Veel groente, vis, brood; gezond en precies</td></tr><tr><td>Solo-magnetron</td><td>38–45 cm</td><td>€200–€500</td><td>Alleen opwarmen en ontdooien</td></tr></tbody></table><p>Veel keukens combineren een solo-oven van 60 cm met een combi-magnetron van 45 cm boven elkaar in een hoge kast: samen 105 cm nis, en je kunt twee gerechten tegelijk bereiden.</p>"
+    },
+    {
+      "kop": "Hoe zit het met nismaten en inbouw?",
+      "html": "<p>De standaard breedte van inbouwovens is 60 cm; de nismaat gaat over de <strong>hoogte</strong> van de uitsparing. Een 60 cm-nis biedt de volwaardige oven met circa 70 liter inhoud. Een 45 cm-nis is het compacte formaat waarin combi-magnetrons en veel stoomovens vallen, met zo'n 40 tot 50 liter inhoud.</p><p>Plaats de oven op werkhoogte in een hoge kast in plaats van onder het werkblad: dat scheelt bukken met hete schalen en is veiliger met kinderen. Houd in de kastenwand ook rekening met de ventilatieruimte die de fabrikant voorschrijft en met een stopcontact achter of naast de nis — een oven hoort niet op dezelfde groep als de kookplaat.</p>"
+    },
+    {
+      "kop": "Is een stoomoven het geld waard?",
+      "html": "<p>Voor wie er echt mee kookt: ja. Stomen houdt vitamines, kleur en structuur beter vast dan koken, en een combi-stoomoven combineert hete lucht met stoom — waardoor brood een knapperige korst krijgt en kliekjes opwarmen zonder uit te drogen. De meerprijs ten opzichte van een solo-oven is globaal €400 tot €1.000.</p><p>Wees eerlijk over je kookgedrag: wie vooral pizza's en ovenschotels maakt, gebruikt de stoomfunctie zelden en betaalt voor niets. Een tussenoplossing is een oven met 'added steam' (stoomstoot uit een waterlade): een deel van het voordeel voor een kleinere meerprijs.</p>"
+    },
+    {
+      "kop": "Waar let je op bij de aankoop via keukenzaak of aannemer?",
+      "html": "<p>Apparatuur is de post waarop keukenoffertes het meest uiteenlopen. Dezelfde oven kan bij de keukenzaak honderden euro's duurder zijn dan in de vrije verkoop, verstopt in een pakketprijs. Vraag daarom altijd de exacte typenummers op en vergelijk die los — 96% van de kopers betaalt voor minstens één post te veel.</p><p>Let verder op: pyrolyse (zelfreiniging door verbranden van vet) is comfortabel maar verhoogt de prijs; een oventhermometer/kerntemperatuurmeter is nuttig voor vlees; en kies deurbeslag dat past bij de rest van je fronten. Via Bylder koop je apparatuur met ledenprijzen bij 60+ deelnemende merken.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen een nismaat van 45 en 60 cm?",
+      "a": "De nismaat is de hoogte van de uitsparing in de keukenkast. In een 60 cm-nis past een volwaardige solo-oven van circa 70 liter; in een 45 cm-nis passen compacte apparaten zoals combi-magnetrons en veel stoomovens van 40 tot 50 liter."
+    },
+    {
+      "q": "Heb ik naast een combi-magnetron nog een gewone oven nodig?",
+      "a": "Voor de meeste huishoudens niet: een goede combi-magnetron bakt en gratineert prima. Bak je vaak brood, taarten of grote braadstukken, dan is de grotere inhoud en gelijkmatigere hitte van een solo-oven van 60 cm wel merkbaar beter."
+    },
+    {
+      "q": "Kan een inbouwoven op een gewoon stopcontact?",
+      "a": "Ja, vrijwel alle inbouwovens werken op een gewone geaarde wandcontactdoos van 230V. Zet de oven wel op een eigen groep of in elk geval niet op dezelfde groep als de inductiekookplaat, die een perilex-aansluiting nodig heeft."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Vergelijk de apparatuurprijzen in je offerte"],
+    "commercieel": ["/eerlijke-prijzen/keuken/", "Bekijk eerlijke keukenprijzen"],
+    "zusters": ["inductie-of-gas", "vaatwasser-kiezen", "keukenkasten-en-fronten"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "inbouwreservoir",
+  "titel": "Inbouwreservoir",
+  "title_tag": "Wat is een inbouwreservoir? Betekenis + uitleg | Bylder",
+  "meta_description": "Een inbouwreservoir is het spoelreservoir plus draagframe van een hangend toilet, weggewerkt in een voorzetwand. Lees waar je op let bij keuze en onderhoud.",
+  "intro": [
+    "Een inbouwreservoir is de combinatie van spoelreservoir en stalen draagframe waaraan een wandcloset wordt opgehangen, volledig weggewerkt in een voorzetwand. Aan de buitenkant zie je alleen het hangende toilet en de bedieningsplaat waarmee je spoelt.",
+    "Wie een toilet of badkamer verbouwt, kiest het inbouwreservoir vóór de wand dichtgaat — en die keuze zit er decennia. Kwaliteit en beschikbaarheid van onderdelen zijn hier belangrijker dan een paar tientjes prijsverschil."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij de keuze van een inbouwreservoir?",
+      "html": "<p>Kies een gevestigd merk waarvan binnenwerk en onderdelen ook over vijftien jaar nog leverbaar zijn — onderhoud gebeurt via de opening van de bedieningsplaat, dus zolang er onderdelen zijn, hoeft de wand nooit open. Standaardframes zijn circa 112 cm hoog; er bestaan lage varianten voor onder een raam of schuin dak.</p><p>Let verder op: een spaarspoeling met twee knoppen (grote en kleine spoeling), de inbouwdiepte van de voorzetwand (meestal rond de 12 cm) en welke bedieningsplaten op het reservoir passen. Laat het frame stevig aan vloer en achterwand monteren en de voorzetwand met waterbestendige beplating afwerken vóór het betegelen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat als het inbouwreservoir gaat lekken of kapot gaat?",
+      "a": "Vrijwel alle reparaties kunnen via de serviceopening achter de bedieningsplaat: vlotter, afvoerklep en aansluitingen zijn daar bereikbaar. De wand hoeft alleen open bij schade aan het reservoir zelf, wat bij kwaliteitsmerken zeldzaam is."
+    },
+    {
+      "q": "Past elk wandcloset op elk inbouwreservoir?",
+      "a": "Meestal wel: de bevestigingspunten en afvoeraansluiting zijn grotendeels gestandaardiseerd. Uitzonderingen zijn douchewc's en enkele designmodellen die een specifiek frame of extra aansluitingen (stroom, water) vereisen — check dat vóór aankoop."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Check je badkamerofferte inclusief sanitair"],
+    "commercieel": ["/kopen/sanitair/", "Bekijk sanitair met ledenprijzen"],
+    "zusters": ["wandcloset", "rimless"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "betonlook",
+  "titel": "Betonlook",
+  "title_tag": "Wat is betonlook? Betekenis + uitleg | Bylder",
+  "meta_description": "Betonlook is de uitstraling van beton, gemaakt met microcement, gietvloeren, keramische tegels of stucwerk. Lees welke variant waar past en wat de verschillen zijn.",
+  "intro": [
+    "Betonlook is een afwerking die de uitstraling van glad beton nabootst zonder dat er echt constructief beton aan te pas komt. Gangbare varianten zijn keramische tegels met betonprint, microcement of beton ciré (dun gespatelde cementafwerking), betonlook-gietvloeren en betonlook-stucwerk of -verf.",
+    "Voor verbouwers is het onderscheid tussen die varianten belangrijk: ze verschillen sterk in prijs, onderhoud en geschiktheid per ruimte, terwijl showrooms alles onder dezelfde noemer 'betonlook' presenteren."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Welke betonlook-variant past waar?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Variant</th><th>Sterk in</th><th>Aandachtspunt</th></tr></thead><tbody><tr><td>Keramische tegel betonlook</td><td>Vloeren en (bad)kamerwanden; slijtvast, onderhoudsarm</td><td>Voegen blijven zichtbaar; kies groot formaat en rectified voor het strakste beeld</td></tr><tr><td>Microcement / beton ciré</td><td>Naadloze wanden, vloeren en zelfs douches</td><td>Vakwerk en goede sealing vereist; krasgevoeliger dan tegels</td></tr><tr><td>Betonlook-gietvloer</td><td>Naadloze woonvloeren met warme uitstraling</td><td>Prijzig; gevoelig voor krassen en verkleuring bij goedkope uitvoering</td></tr><tr><td>Betonlook-stucwerk of -verf</td><td>Wanden, budgetvriendelijk effect</td><td>Alleen decoratief; niet geschikt voor natte zones zonder extra bescherming</td></tr></tbody></table><p>Vuistregel: kies in natte en intensief gebruikte ruimtes voor keramiek, en gebruik microcement of stucvarianten waar naadloosheid en sfeer vooropstaan.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is betonlook geschikt voor de badkamer?",
+      "a": "Ja, mits je de juiste variant kiest. Keramische betonlook-tegels zijn de veiligste keuze; microcement kan ook in de douche, maar staat of valt met een waterdichte ondergrond en professionele sealing. Gewone betonlook-verf of -stuc hoort niet in de natte zone."
+    },
+    {
+      "q": "Wat kost een betonlook-vloer?",
+      "a": "Keramische betonlook-tegels zijn er al in het middensegment, inclusief legwerk vaak de voordeligste route. Microcement en gietvloeren zitten per vierkante meter duidelijk hoger door het arbeidsintensieve, naadloze aanbrengen in meerdere lagen. Vraag altijd een prijs inclusief ondergrondvoorbereiding."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "Bekijk betonlook in een 3D-sfeerimpressie"],
+    "commercieel": ["/kopen/tegels/", "Bekijk betonlook-tegels met ledenprijzen"],
+    "zusters": ["spachtelputz", "rectified"]
+  }
+}

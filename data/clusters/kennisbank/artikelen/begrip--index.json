@@ -1,0 +1,37 @@
+{
+  "cluster": "begrip",
+  "slug": "index",
+  "titel": "Bouwbegrippen uitgelegd",
+  "title_tag": "Bouwbegrippen uitgelegd: begrippenlijst | Bylder",
+  "meta_description": "Van casco tot stelpost en van kimband tot perilex: deze begrippenlijst legt bouwtermen uit in gewone taal, voor kopers en verbouwers.",
+  "intro": [
+    "Deze begrippenlijst legt de bouwtermen uit die je tegenkomt in offertes, meerwerklijsten en gesprekken met aannemers en kopersbegeleiders. Elk begrip krijgt een korte, zelfstandige uitleg: wat het betekent, waarom het ertoe doet en waar je op moet letten.",
+    "De lijst is geschreven voor woningkopers en verbouwers zonder bouwkundige achtergrond. Wie de taal van de bouwer spreekt, leest een offerte scherper — en dat loont: 96% van de kopers betaalt voor minstens één post te veel."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waarom loont het om bouwbegrippen te kennen?",
+      "html": "<p>Offertes en meerwerklijsten staan vol vaktermen: stelposten, sparingen, loze leidingen, hart-op-hart-maten. Wie niet precies weet wat er staat, kan niet controleren of de prijs klopt of wat er straks wél en níet geleverd wordt. Gemiddeld betalen nieuwbouwkopers €1.840 te veel aan meerwerk — vaak omdat posten vaag omschreven zijn.</p><p>Gebruik deze lijst als naslag: zoek de term op die je in je offerte of technische omschrijving tegenkomt, en lees in twee minuten wat hij betekent en welke vragen je erover kunt stellen.</p>"
+    },
+    {
+      "kop": "Voor wie is deze begrippenlijst bedoeld?",
+      "html": "<p>Voor iedereen die een nieuwbouwwoning koopt, een keuken of badkamer laat plaatsen of een verbouwing voorbereidt. De begrippen zijn gegroepeerd rond de momenten waarop je ze tegenkomt: het koperscontract (casco, stelpost, meerwerk, minderwerk), de installaties (loze leiding, perilex, WTW-ventilatie, Rc-waarde), de badkamer (kimband, afschot, rimless, wandcloset, inbouwreservoir) en de afwerking (spachtelputz, betonlook, dagmaat, sparing, hart-op-hart, opdekdeur).</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Moet ik alle bouwtermen kennen voordat ik een offerte teken?",
+      "a": "Nee, maar controleer wel elke term die je niet begrijpt vóór je tekent. Vage of onbekende posten zijn precies de plekken waar te veel betaald wordt. Zoek de term op of laat de offerte controleren voordat je akkoord geeft."
+    },
+    {
+      "q": "Waar kom ik deze begrippen tegen?",
+      "a": "Vooral in de technische omschrijving van een nieuwbouwwoning, in de meer- en minderwerklijst van de aannemer en in offertes voor keuken, badkamer of verbouwing. Ook kopersbegeleiders en showroomadviseurs gebruiken deze termen."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "Laat je offerte controleren met de AI-offertecheck"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["casco", "meerwerk"]
+  }
+}

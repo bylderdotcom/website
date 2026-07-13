@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "wtw-ventilatie",
+  "titel": "WTW-ventilatie",
+  "title_tag": "Wat is WTW-ventilatie? Betekenis + uitleg | Bylder",
+  "meta_description": "WTW-ventilatie is balansventilatie met warmteterugwinning: verse lucht wordt voorverwarmd door afgevoerde lucht. Lees hoe het werkt en wat onderhoud vraagt.",
+  "intro": [
+    "WTW-ventilatie (warmteterugwinning) is een balansventilatiesysteem dat mechanisch verse buitenlucht aanvoert en vervuilde binnenlucht afvoert, waarbij een warmtewisselaar de warmte uit de afgevoerde lucht overdraagt aan de binnenkomende lucht. Zo ventileer je zonder dat de warmte grotendeels verloren gaat — moderne units winnen het merendeel van de warmte terug.",
+    "In goed geïsoleerde nieuwbouw is WTW-ventilatie de standaard geworden: hoe luchtdichter de woning, hoe belangrijker gecontroleerde ventilatie voor een gezond binnenklimaat en een lage energierekening."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij een woning met WTW-ventilatie?",
+      "html": "<p>Het systeem werkt alleen goed bij onderhoud: vervang de filters in de unit ongeveer elke drie tot zes maanden en laat de kanalen en ventielen periodiek reinigen. Verstopte filters betekenen minder verse lucht en een hoger energieverbruik.</p><p>Belangrijk om te weten: bij balansventilatie horen ramen in principe dicht tijdens het stoken — het systeem regelt de luchtverversing. Zet ventielen niet zelf anders af; ze zijn bij oplevering ingeregeld. Controleer bij de oplevering of het inregelrapport aanwezig is en vraag waar de unit en de filters zitten. Wil je extra afzuiging in de keuken, kies dan een recirculatiekap: een afzuigkap met afvoer naar buiten verstoort de balans van het systeem.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik ramen openzetten bij WTW-ventilatie?",
+      "a": "Het mag, maar in het stookseizoen verlies je dan het voordeel van de warmteterugwinning. Het systeem ververst de lucht continu, ook met ramen dicht. In de zomer is een raam open juist prima, bijvoorbeeld voor nachtelijke koeling."
+    },
+    {
+      "q": "Wat kost het onderhoud van WTW-ventilatie?",
+      "a": "Filters kosten enkele tientjes per jaar en vervang je eenvoudig zelf. Laat daarnaast elke paar jaar de unit en kanalen professioneel reinigen en inregelen; reken daarvoor op een bedrag in de orde van één tot enkele honderden euro's per beurt."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Bekijk alle nieuwbouw-tools"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["rc-waarde", "loze-leiding"]
+  }
+}

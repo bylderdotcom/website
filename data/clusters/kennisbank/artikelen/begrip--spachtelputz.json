@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "spachtelputz",
+  "titel": "Spachtelputz",
+  "title_tag": "Wat is spachtelputz? Betekenis + uitleg | Bylder",
+  "meta_description": "Spachtelputz is een sierpleister met fijne korrelstructuur voor wanden en plafonds. Lees waar het geschikt is en hoe het zich verhoudt tot sausklaar stucwerk.",
+  "intro": [
+    "Spachtelputz is een sierpleister die met een spaan wordt aangebracht en uitgewreven, waardoor een fijne korrelstructuur ontstaat — meestal met een korrel van 1 tot 2 millimeter. Het is een afwerklaag: de wand is er direct mee af en kan daarna in elke kleur worden gesausd.",
+    "Bij nieuwbouw en renovatie is spachtelputz een veelgekozen wandafwerking omdat het kleine oneffenheden maskeert en tegen een stootje kan. Wie strak glad wil, kiest juist sausklaar stucwerk — een wezenlijk prijs- en beeldverschil."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij spachtelputz?",
+      "html": "<p>De keuze zit vooral in korrel en toepassing. Een fijne korrel (1 mm) oogt rustig en modern; een grovere korrel (2–3 mm) is robuuster maar dateert sneller. Op plafonds wordt vaak spuitwerk (spack) toegepast — dat is een dunnere, kwetsbaardere laag en niet hetzelfde als spachtelputz.</p><p>Praktisch om te weten: spachtelputz laat zich prima overschilderen, maar verwijderen of glad overstucen is bewerkelijk en dus prijzig — de structuur moet dan weggeschuurd of uitgevlakt worden. Twijfel je tussen glad en structuur, bedenk dan dat van glad naar spachtelputz altijd makkelijker is dan andersom. In vochtige ruimtes buiten de spatzone kan het, mits met geschikte (schimmelwerende) verf afgewerkt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen spachtelputz en sausklaar stucwerk?",
+      "a": "Sausklaar stucwerk is glad pleisterwerk dat je daarna schildert; spachtelputz is een structuurafwerking met korrel die de wand direct afwerkt. Spachtelputz verbergt kleine oneffenheden en is vaak goedkoper per vierkante meter dan strak glad stucwerk."
+    },
+    {
+      "q": "Kun je spachtelputz later glad maken?",
+      "a": "Ja, maar het is bewerkelijk: de korrelstructuur moet worden weggeschuurd of met meerdere lagen uitvlakmiddel worden dichtgezet voordat de wand glad gestuct kan worden. Reken op vergelijkbare of hogere kosten dan nieuw stucwerk."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "Bekijk wandafwerkingen in een 3D-sfeerimpressie"],
+    "commercieel": ["/verbouwen/", "Bekijk wat verbouwen echt kost"],
+    "zusters": ["betonlook", "casco"]
+  }
+}
