@@ -5,6 +5,10 @@
 ## Kennisbank (naslagwerk)
 
 - [Kennisbank-overzicht](https://www.bylder.com/kennisbank/): naslagwerk over keuken, badkamer, materialen, installaties, BIM en bouwtechniek
+- [Kennisbank: Keuken](https://www.bylder.com/kennisbank/keuken/): 26 artikelen — werkbladen, indeling, apparatuur, casco-keuken
+- [Kennisbank: Badkamer](https://www.bylder.com/kennisbank/badkamer/): 26 artikelen — sanitair, tegels, waterdichting, ventilatie
+- [Kennisbank: Materialen](https://www.bylder.com/kennisbank/materialen/): canonieke naslagpagina's per materiaal (kwartscomposiet, keramiek, natuursteen e.a.)
+- [Kennisbank: Begrippenlijst](https://www.bylder.com/kennisbank/begrip/): bouwbegrippen met citeerbare definities
 - [Kosten besparen bij nieuwbouw](https://www.bylder.com/kennisbank/kosten-besparen-nieuwbouw/): stelposten, meerwerk-marges en collectief inkoopvoordeel
 
 ## Prijzen & kosten (benchmarks uit echte offertes)
