@@ -245,6 +245,23 @@ SEGMENTS = [
        ('Wat krijg ik voor €299?','Een volledige AI-analyse van één offerte- of tenderdossier: postgewijze vergelijking met marktprijzen, risicosignalering en een benchmark-rapport dat je in onderhandeling kunt gebruiken.'),
        ('Werkt dit ook voor VvE\'s?','Ja — juist. VvE-beheerders gebruiken de check voor groot onderhoud en verduurzamingsoffertes; het rapport is direct bruikbaar richting de ledenvergadering.')],
   links=[('/vve-appartement/','VvE-kennis'),('/eerlijke-prijzen/','Marktprijzen per m²'),('/ai-offerte-check-aannemer/','AI offerte-check')]),
+
+ dict(slug='prefab-netwerk', naam='Prefab-netwerk: produceren, plaatsen of bestellen',
+  title='Prefab-netwerk voor producenten & vakbedrijven | Bylder',
+  desc='Sluit aan op de onafhankelijke prefab-configurator van Bylder: lever als producent, plaats als vakbedrijf, of bestel prefab-elementen voor je eigen klant tegen inkoopcondities.',
+  intro=["Het Bylder prefab-netwerk verbindt drie rollen rond \u00e9\u00e9n configurator: producenten die aanbouwen, dakopbouwen en dakkapellen leveren, vakbedrijven die plaatsen, en vakbedrijven die een prefab-element voor hun eigen klant bestellen \u2014 tegen inkoopcondities, met behoud van de klantrelatie.",
+   "Consumenten configureren op Bylder \u00e9\u00e9n keer en vragen prijzen aan; jij kiest de rol die bij je bedrijf past. Combineren mag: veel bouwbedrijven plaatsen \u00e9n bestellen."],
+  stats=[('3','rollen in \u00e9\u00e9n netwerk'), ('0','kosten voor bestellen als vakbedrijf'), ('\u20ac149','match-fee producent per opdracht')],
+  cards=[('Produceren','Lever je elementen via de configurator: gekwalificeerde aanvragen met complete configuratie, geen leadveiling. \u20ac149 per gerealiseerde match.'),
+         ('Plaatsen','Word installatiepartner en plaats prefab-elementen van aangesloten producenten bij jou in de regio.'),
+         ('Bestellen voor je klant','Bouw- en klusbedrijven configureren en bestellen rechtstreeks voor hun eigen klant \u2014 tegen inkoopcondities, jij houdt de marge op plaatsing en de klantrelatie.'),
+         ('E\u00e9n configuratie-standaard','Alle aanvragen komen binnen in hetzelfde formaat: maten, afwerking, opties en situatie \u2014 direct calculeerbaar.')],
+  price=('Gratis aanmelden', 'Bestellen als vakbedrijf is kosteloos. Producenten betalen \u20ac149 per gerealiseerde match \u2014 geen abonnement, geen kosten per lead.'),
+  cta=('Meld je bedrijf aan','mailto:partners@bylder.com?subject=Prefab-netwerk%20aanmelding'),
+  faq=[('Ik plaats zelf \u00e9n wil kunnen bestellen \u2014 kan dat?','Ja, dat is juist de bedoeling. Je meldt je \u00e9\u00e9n keer aan en geeft aan welke rollen je vervult: plaatsen, bestellen of allebei. Producenten zien alleen wat relevant is voor de opdracht.'),
+       ('Wat zijn de inkoopcondities voor vakbedrijven?','Je bestelt rechtstreeks bij de aangesloten producent tegen diens zakelijke staffel. Bylder rekent het vakbedrijf niets; de producent betaalt de match-fee.'),
+       ('Hoe komt mijn bedrijf aan aanvragen?','Consumenten configureren hun element op Bylder en vragen prijzen aan. Producenten ontvangen de aanvraag; plaatsende vakbedrijven worden per regio gekoppeld.')],
+  links=[('/tools/prefab-configurator/','Bekijk de configurator'),('/deelnemer-worden/prefab-productie/','Segment: prefab-productie'),('/installatiepartner-worden/','Installatiepartner worden')]),
 ]
 
 def ld(obj): return '<script type="application/ld+json">'+json.dumps(obj,ensure_ascii=False)+'</script>'
@@ -304,7 +321,8 @@ def render_hub():
           ("/deelnemer-worden/interieurbouw/","Interieurbouw","Maatwerk-opdrachten uit de op-maat-gids en de ontwerptools.","€79 eenmalig"),
           ("/deelnemer-worden/interieurontwerp-architecten/","Interieurontwerp & architecten","Warme aanvragen op het ontwerpmoment, met AI-schets als startpunt.","€79 eenmalig"),
           ("/deelnemer-worden/ontwikkelaars-bouwers/","Ontwikkelaars & bouwers","Bylder als kopersservice bij je project: begeleiding, meerwerk-flow, 3D/BIM.","vanaf €49 per woning"),
-          ("/deelnemer-worden/commercieel-vastgoed/","Commercieel vastgoed","Offerte- & tender-check, m²-benchmarks en fit-out-visualisatie, zakelijk.","€299 per dossier")]
+          ("/deelnemer-worden/commercieel-vastgoed/","Commercieel vastgoed","Offerte- & tender-check, m²-benchmarks en fit-out-visualisatie, zakelijk.","€299 per dossier"),
+          ("/deelnemer-worden/prefab-netwerk/","Prefab-netwerk","Produceren, plaatsen of bestellen voor je klant — rond één configurator.","gratis aanmelden")]
     cards=''.join(f'<a href="{h}" class="seg-card"><div class="seg-title">{t}</div><div class="seg-desc">{d}</div><div class="seg-price">{p}</div></a>' for h,t,d,p in segs)
     return (HEAD.format(title='Deelnemer worden — zakelijk aansluiten bij Bylder | Bylder.com',
       desc='Word deelnemer van Bylder: bereik kopers van nieuwbouw- en verbouwwoningen op het juiste koopmoment. Voor woonwinkels & merken, vakbedrijven, prefab, interieurbouw, ontwerpers, ontwikkelaars en commercieel vastgoed.',
