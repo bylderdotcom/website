@@ -176,7 +176,7 @@ SEGMENTS = [
   faq=[('Wat telt als een gerealiseerde match?','Een getekende opdracht tussen jou (of jouw installatiepartner) en een koper die via Bylder binnenkwam. Aanvragen en offertes zijn gratis.'),
        ('Hoe vind ik installatiepartners?','Bylder koppelt je aan aangesloten lokale bouwbedrijven die zich als installatiepartner hebben aangemeld. Jij bepaalt met wie je werkt.'),
        ('Kan mijn product in de 3D-tools?','Ja — lever maatvoering en beeldmateriaal aan, dan kunnen kopers jouw element op hun eigen woning visualiseren.')],
-  links=[('/aanbouw/','Aanbouw-hub'),('/dakopbouw/','Dakopbouw-hub'),('/installatiepartner-worden/','Installatiepartner worden')]),
+  links=[('/tools/prefab-configurator/','De prefab-configurator'),('/deelnemer-worden/prefab-netwerk/','Het prefab-netwerk'),('/aanbouw/','Aanbouw-hub'),('/installatiepartner-worden/','Installatiepartner worden')]),
 
  dict(slug='interieurbouw', naam='Interieurbouw',
   title='Interieurbouwers & maatwerk-meubelmakers — deelnemer worden | Bylder',
