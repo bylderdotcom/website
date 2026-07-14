@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Prefab-configurator — onafhankelijk prijzen vergelijken | Bylder.com</title>
+<meta name="description" content="Configureer je aanbouw, dakopbouw of dakkapel en zie direct de prijsindicatie, de marktbenchmark én of je een vergunning nodig hebt. Onafhankelijk, van Bylder.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://www.bylder.com/tools/prefab-configurator/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.7;}
+h1,h2,h3{letter-spacing:-0.02em;color:#1A1208;line-height:1.2;}
+a{color:#3D5A3E;text-decoration:none;}a:hover{text-decoration:underline;}
+.container{max-width:1180px;margin:0 auto;padding:0 40px;}
+@media(max-width:768px){.container{padding:0 18px;}}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:999px;background:rgba(61,90,62,0.1);border:1px solid rgba(61,90,62,0.2);color:#3D5A3E;font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:18px;}
+.layout{display:grid;grid-template-columns:1fr 340px;gap:36px;align-items:start;}
+@media(max-width:960px){.layout{grid-template-columns:1fr;}}
+.progress{display:flex;gap:6px;margin:26px 0 30px;}
+.progress span{flex:1;height:5px;border-radius:3px;background:rgba(61,46,30,0.12);}
+.progress span.done{background:#3D5A3E;}
+.stap{display:none;}
+.stap.actief{display:block;animation:fade .25s ease;}
+@keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+.stap h2{font-size:1.5rem;font-weight:800;margin-bottom:6px;}
+.stap .sub{font-size:14.5px;color:rgba(61,46,30,0.6);margin-bottom:22px;}
+.keuze-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-bottom:8px;}
+.keuze{background:#fff;border:2px solid rgba(61,46,30,0.1);border-radius:14px;padding:18px;cursor:pointer;transition:all .12s;text-align:left;font-family:inherit;font-size:inherit;}
+.keuze:hover{border-color:rgba(61,90,62,0.4);}
+.keuze.aan{border-color:#3D5A3E;background:rgba(61,90,62,0.05);}
+.keuze b{display:block;font-size:15px;color:#1A1208;margin-bottom:3px;}
+.keuze small{font-size:12.5px;color:rgba(61,46,30,0.55);line-height:1.5;display:block;}
+.keuze .prijsje{font-family:'Space Mono',monospace;font-size:11px;color:#3D5A3E;margin-top:6px;display:block;}
+.veld{margin-bottom:20px;}
+.veld label{display:block;font-size:14px;font-weight:700;color:#1A1208;margin-bottom:8px;}
+.veld input[type=range]{width:100%;accent-color:#3D5A3E;}
+.veld .waarde{font-family:'Space Mono',monospace;font-size:14px;color:#3D5A3E;font-weight:700;}
+.veld input[type=text]{width:100%;max-width:260px;padding:11px 14px;border:1.5px solid rgba(61,46,30,0.18);border-radius:10px;font-family:inherit;font-size:15px;background:#fff;}
+.knoppen{display:flex;gap:12px;margin-top:28px;}
+.btn{border:none;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:8px;background:#3D5A3E;color:#F5F0E8;padding:13px 26px;border-radius:10px;font-weight:800;font-size:15px;}
+.btn:hover{background:#4E7350;}
+.btn.ghost{background:transparent;color:rgba(61,46,30,0.6);border:1.5px solid rgba(61,46,30,0.2);font-weight:600;}
+.paneel{background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:18px;padding:26px;position:sticky;top:20px;}
+.paneel h3{font-size:13px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.07em;color:rgba(61,46,30,0.45);margin-bottom:14px;}
+.paneel .prijs{font-size:1.9rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.03em;line-height:1.1;}
+.paneel .prijs-sub{font-size:12px;color:rgba(61,46,30,0.5);margin:4px 0 16px;}
+.paneel ul{list-style:none;font-size:13.5px;color:rgba(61,46,30,0.7);display:flex;flex-direction:column;gap:7px;}
+.paneel li{display:flex;justify-content:space-between;gap:10px;}
+.paneel li span:last-child{font-family:'Space Mono',monospace;font-size:12px;color:#1A1208;white-space:nowrap;}
+.bench{margin-top:16px;padding:13px 15px;background:rgba(61,90,62,0.06);border-left:3px solid #3D5A3E;border-radius:0 10px 10px 0;font-size:13px;color:rgba(61,46,30,0.75);}
+.verg{margin-top:12px;padding:13px 15px;border-radius:0 10px 10px 0;font-size:13px;}
+.verg.groen{background:rgba(61,90,62,0.06);border-left:3px solid #3D5A3E;color:rgba(61,46,30,0.75);}
+.verg.oranje{background:rgba(184,92,56,0.07);border-left:3px solid #B85C38;color:rgba(61,46,30,0.78);}
+.resultaat-tabel{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:14px;margin:18px 0 24px;}
+.resultaat-tabel td{padding:11px 16px;border-top:1px solid rgba(61,46,30,0.07);}
+.resultaat-tabel tr:first-child td{border-top:none;}
+.resultaat-tabel td:last-child{text-align:right;font-family:'Space Mono',monospace;font-size:13px;}
+.disclaimer{font-size:12px;color:rgba(61,46,30,0.45);margin-top:20px;line-height:1.6;}
+.deel{margin-top:14px;font-size:12.5px;}
+</style>
+</head>
+<body>
+<nav style="background:rgba(245,240,232,0.95);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:14px 0;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
+      <span style="font-weight:700;font-size:18px;color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
+    </a>
+    <div style="display:flex;gap:20px;align-items:center;">
+      <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);">Alle tools</a>
+      <a href="/bouwvergunning/" style="font-size:14px;color:rgba(61,46,30,0.5);">Vergunningen</a>
+      <a href="/verbouwen/" style="font-size:14px;color:rgba(61,46,30,0.5);">Verbouwen</a>
+    </div>
+  </div>
+</nav>
+<main style="padding:52px 0 80px;">
+<div class="container">
+  <div class="badge">Nieuw · Onafhankelijke configurator</div>
+  <h1 style="font-size:2.3rem;font-weight:800;max-width:760px;margin-bottom:10px;">Configureer je prefab aanbouw, dakopbouw of dakkapel</h1>
+  <p style="font-size:1.05rem;color:rgba(61,46,30,0.65);max-width:720px;">Eén configuratie, prijzen van meerdere producenten, de marktbenchmark ernaast — en je ziet direct of je een vergunning nodig hebt. Bylder verkoopt zelf niets.</p>
+  <div class="progress" id="prg"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <div class="layout">
+    <div>
+      <!-- STAP 1 -->
+      <section class="stap actief" data-stap="1">
+        <h2>Wat wil je bouwen?</h2>
+        <p class="sub">Kies het type prefab-element.</p>
+        <div class="keuze-grid" id="producten"></div>
+        <div class="knoppen"><button class="btn" onclick="volgende()">Volgende →</button></div>
+      </section>
+      <!-- STAP 2 -->
+      <section class="stap" data-stap="2">
+        <h2>Welke maten?</h2>
+        <p class="sub">Sleep of typ — de prijsindicatie rechts rekent live mee.</p>
+        <div class="veld"><label>Breedte: <span class="waarde" id="breedteW">4,0 m</span></label>
+          <input type="range" id="breedte" min="2" max="12" step="0.5" value="4" oninput="update()"></div>
+        <div class="veld" id="diepteVeld"><label>Diepte: <span class="waarde" id="diepteW">3,0 m</span></label>
+          <input type="range" id="diepte" min="1.5" max="6" step="0.5" value="3" oninput="update()"></div>
+        <div class="knoppen"><button class="btn ghost" onclick="terug()">← Terug</button><button class="btn" onclick="volgende()">Volgende →</button></div>
+      </section>
+      <!-- STAP 3 -->
+      <section class="stap" data-stap="3">
+        <h2>Afwerking &amp; opties</h2>
+        <p class="sub">Elke keuze past de indicatie direct aan.</p>
+        <div class="veld"><label>Gevelafwerking</label><div class="keuze-grid" id="gevels"></div></div>
+        <div class="veld"><label>Kozijnen</label><div class="keuze-grid" id="kozijnen"></div></div>
+        <div class="veld"><label>Extra opties</label><div class="keuze-grid" id="opties"></div></div>
+        <div class="knoppen"><button class="btn ghost" onclick="terug()">← Terug</button><button class="btn" onclick="volgende()">Volgende →</button></div>
+      </section>
+      <!-- STAP 4 -->
+      <section class="stap" data-stap="4">
+        <h2>Jouw situatie</h2>
+        <p class="sub">Voor de vergunningsindicatie en transport.</p>
+        <div class="veld"><label>Postcode (optioneel)</label><input type="text" id="postcode" placeholder="1234 AB" oninput="update()"></div>
+        <div class="veld"><label>Waar komt het element?</label><div class="keuze-grid" id="zijden"></div></div>
+        <div class="verg" id="vergBox"></div>
+        <div class="knoppen"><button class="btn ghost" onclick="terug()">← Terug</button><button class="btn" onclick="volgende()">Bekijk resultaat →</button></div>
+      </section>
+      <!-- STAP 5 -->
+      <section class="stap" data-stap="5">
+        <h2>Jouw configuratie &amp; prijsindicatie</h2>
+        <p class="sub" id="resSamenvatting"></p>
+        <table class="resultaat-tabel" id="resTabel"></table>
+        <div class="bench" id="resBench"></div>
+        <div class="verg" id="resVerg" style="margin-top:12px;"></div>
+        <div class="knoppen" style="flex-wrap:wrap;">
+          <a class="btn" id="offerteBtn" href="#">Vraag prijzen aan bij producenten →</a>
+          <a class="btn ghost" href="/keuken-badkamer-offerte-check/">Al een offerte? Laat hem checken</a>
+          <a class="btn ghost" href="/deelnemer-worden/prefab-netwerk/">Vakbedrijf? Bestel voor je klant →</a>
+        </div>
+        <p class="deel">Deel of bewaar deze configuratie: <a href="#" id="deelLink" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓ gekopieerd';return false;">kopieer link</a></p>
+        <p class="disclaimer">Alle bedragen zijn indicaties op basis van marktprijzen uit door Bylder geanalyseerde offertes en publieke producentprijzen (incl. btw, excl. fundering/vergunningskosten). De vergunningsindicatie is geen juridisch advies — check de regels voor jouw situatie via de <a href="/bouwvergunning/">bouwvergunning-gids</a> of het Omgevingsloket.</p>
+        <div class="knoppen"><button class="btn ghost" onclick="terug()">← Aanpassen</button></div>
+      </section>
+    </div>
+
+    <!-- STICKY SAMENVATTING -->
+    <aside class="paneel">
+      <h3>Live indicatie</h3>
+      <div class="prijs" id="pPrijs">—</div>
+      <div class="prijs-sub">incl. btw en montage, excl. fundering</div>
+      <ul id="pRegels"></ul>
+      <div class="bench" id="pBench" style="display:none;"></div>
+    </aside>
+  </div>
+</div>
+</main>
+<footer style="background:#1A1208;padding:40px 0;margin-top:40px;">
+  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+    <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">© 2026 Bylder Nederland B.V.</p>
+    <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);"><a href="/nieuwbouw-tools/" style="color:rgba(245,240,232,0.25);">Tools</a> · <a href="/kennisbank/" style="color:rgba(245,240,232,0.25);">Kennisbank</a></p>
+  </div>
+</footer>
+<script>
+// ── data ──────────────────────────────────────────────────────────────
+const PRODUCTEN = {
+  aanbouw:   {naam:'Aanbouw / uitbouw', sub:'Leefruimte aan de gevel', m2:[1800,3500], diepte:true, lever:'6–10 wk'},
+  dakopbouw_plat:  {naam:'Dakopbouw — plat dak', sub:'Extra verdieping op plat dak', m2:[1900,2900], diepte:true, lever:'8–12 wk'},
+  dakopbouw_schuin:{naam:'Dakopbouw — schuin dak', sub:'Nok verhogen of kap vervangen', m2:[2100,3100], diepte:true, lever:'8–12 wk'},
+  dakkapel:  {naam:'Dakkapel', sub:'Meer ruimte en licht op zolder', vast:[7000,9000], perM:[900,1200], diepte:false, lever:'4–6 wk'},
+  bijgebouw: {naam:'Bijgebouw / tuinkamer', sub:'Vrijstaand in de tuin', m2:[900,1600], diepte:true, lever:'4–8 wk'},
+};
+const GEVELS = {stuc:{naam:'Stucwerk',f:1.0}, hout:{naam:'Houten delen',f:1.05}, steen:{naam:'Steenstrips',f:1.12}};
+const KOZIJNEN = {kunststof:{naam:'Kunststof',f:1.0}, hout:{naam:'Hout',f:1.08}, alu:{naam:'Aluminium',f:1.12}};
+const OPTIES = {deuren:{naam:'Openslaande deuren / pui', bedrag:3200}, licht:{naam:'Lichtkoepel of dakraam', bedrag:1600}, zon:{naam:'Zonwering', bedrag:1400}, groen:{naam:'Groen dak', bedrag:2100}, iso:{naam:'Isolatie-plus (Rc 6+)', bedrag:1900}};
+const ZIJDEN = {achter:{naam:'Achterzijde / achtererf'}, voor:{naam:'Voorzijde (naar openbare weg)'}, zij:{naam:'Zijkant'}};
+
+const s = {product:'aanbouw', gevel:'stuc', kozijn:'kunststof', opties:[], zijde:'achter', stap:1};
+
+// ── ui-opbouw ─────────────────────────────────────────────────────────
+function kaarten(el, data, key, multi){
+  const box=document.getElementById(el); box.innerHTML='';
+  for(const [id,d] of Object.entries(data)){
+    const b=document.createElement('button'); b.type='button'; b.className='keuze';
+    b.innerHTML=`<b>${d.naam}</b>${d.sub?`<small>${d.sub}</small>`:''}${d.bedrag?`<span class="prijsje">+ €${d.bedrag.toLocaleString('nl-NL')}</span>`:''}${d.m2?`<span class="prijsje">€${d.m2[0].toLocaleString('nl-NL')}–${d.m2[1].toLocaleString('nl-NL')} /m²</span>`:''}${d.vast?`<span class="prijsje">vanaf €${d.vast[0].toLocaleString('nl-NL')}</span>`:''}`;
+    b.onclick=()=>{ if(multi){ const i=s.opties.indexOf(id); i>=0?s.opties.splice(i,1):s.opties.push(id);} else s[key]=id; teken(); update(); };
+    b.dataset.id=id; box.appendChild(b);
+  }
+}
+function teken(){
+  document.querySelectorAll('#producten .keuze').forEach(b=>b.classList.toggle('aan',b.dataset.id===s.product));
+  document.querySelectorAll('#gevels .keuze').forEach(b=>b.classList.toggle('aan',b.dataset.id===s.gevel));
+  document.querySelectorAll('#kozijnen .keuze').forEach(b=>b.classList.toggle('aan',b.dataset.id===s.kozijn));
+  document.querySelectorAll('#opties .keuze').forEach(b=>b.classList.toggle('aan',s.opties.includes(b.dataset.id)));
+  document.querySelectorAll('#zijden .keuze').forEach(b=>b.classList.toggle('aan',b.dataset.id===s.zijde));
+  document.getElementById('diepteVeld').style.display = PRODUCTEN[s.product].diepte ? '' : 'none';
+}
+
+// ── rekenwerk ─────────────────────────────────────────────────────────
+function bereken(){
+  const p=PRODUCTEN[s.product];
+  const br=parseFloat(document.getElementById('breedte').value);
+  const di=parseFloat(document.getElementById('diepte').value);
+  const m2=p.diepte? br*di : null;
+  const f=GEVELS[s.gevel].f * KOZIJNEN[s.kozijn].f;
+  let lo,hi;
+  if(p.m2){ lo=p.m2[0]*m2*f; hi=p.m2[1]*m2*f; }
+  else { lo=p.vast[0]+Math.max(0,br-3)*p.perM[0]; hi=p.vast[1]+Math.max(0,br-3)*p.perM[1]; lo*=f; hi*=f; }
+  let opt=0; s.opties.forEach(o=>opt+=OPTIES[o].bedrag);
+  return {lo:lo+opt, hi:hi+opt, m2, br, di, opt, f};
+}
+function euro(n){ return '\u20ac'+(Math.round(n/100)*100).toLocaleString('nl-NL'); }
+function vergunning(){
+  const p=s.product, z=s.zijde;
+  if(p==='dakkapel') return z==='achter'
+    ? ['groen','Een dakkapel aan de achterzijde is binnen de standaardregels vaak <b>vergunningvrij</b>. Check de voorwaarden (afstand tot dakranden, hoogte).']
+    : ['oranje','Een dakkapel aan de voor- of zijkant is vrijwel altijd <b>vergunningplichtig</b>.'];
+  if(p==='aanbouw') { const di=parseFloat(document.getElementById('diepte').value);
+    return (z==='achter'&&di<=4) ? ['groen','Een aanbouw tot 4 m diep op het achtererf is vaak <b>vergunningvrij</b>. Check bestemmingsplan en erfgrens-regels.']
+      : ['oranje','Deze aanbouw is waarschijnlijk <b>vergunningplichtig</b> (voorzijde/zijkant of dieper dan 4 m).']; }
+  if(p.startsWith('dakopbouw')) return ['oranje','Een dakopbouw is vrijwel altijd <b>vergunningplichtig</b> — reken op 8 weken doorlooptijd bij de gemeente.'];
+  return ['groen','Een vrijstaand bijgebouw op het achtererf is binnen de oppervlakteregels vaak <b>vergunningvrij</b>.'];
+}
+
+// ── weergave ──────────────────────────────────────────────────────────
+function update(){
+  const r=bereken(); const p=PRODUCTEN[s.product];
+  document.getElementById('breedteW').textContent=r.br.toLocaleString('nl-NL',{minimumFractionDigits:1})+' m';
+  document.getElementById('diepteW').textContent=r.di.toLocaleString('nl-NL',{minimumFractionDigits:1})+' m';
+  document.getElementById('pPrijs').textContent=euro(r.lo)+' – '+euro(r.hi);
+  const regels=[[p.naam, r.m2? r.m2.toLocaleString('nl-NL',{maximumFractionDigits:1})+' m²' : r.br+' m breed'],
+    ['Gevel · kozijnen', GEVELS[s.gevel].naam+' · '+KOZIJNEN[s.kozijn].naam],
+    ...s.opties.map(o=>[OPTIES[o].naam,'+ '+euro(OPTIES[o].bedrag)]),
+    ['Levertijd-indicatie', p.lever]];
+  document.getElementById('pRegels').innerHTML=regels.map(([a,b])=>`<li><span>${a}</span><span>${b}</span></li>`).join('');
+  const bench=document.getElementById('pBench');
+  bench.style.display=''; bench.innerHTML=`<b>Bylder-marktbenchmark:</b> vergelijkbare projecten in onze offertedata vallen binnen deze range. Betaal je meer dan ${euro(r.hi*1.1)}? Laat de offerte checken.`;
+  const [kleur,tekst]=vergunning();
+  const vb=document.getElementById('vergBox'); vb.className='verg '+kleur; vb.innerHTML=tekst+' <a href="/bouwvergunning/">Lees de regels →</a>';
+  // resultaat-stap
+  document.getElementById('resSamenvatting').textContent=`${p.naam}, ${r.m2? r.m2.toLocaleString('nl-NL',{maximumFractionDigits:1})+' m²' : r.br+' m breed'}, ${GEVELS[s.gevel].naam.toLowerCase()} met ${KOZIJNEN[s.kozijn].naam.toLowerCase()} kozijnen.`;
+  const basisLo=r.lo-r.opt, basisHi=r.hi-r.opt;
+  document.getElementById('resTabel').innerHTML=`
+    <tr><td>Prefab-element incl. montage</td><td>${euro(basisLo*0.82)} – ${euro(basisHi*0.82)}</td></tr>
+    <tr><td>Transport &amp; kraan</td><td>${euro(basisLo*0.08)} – ${euro(basisHi*0.08)}</td></tr>
+    <tr><td>Afbouw &amp; aansluitingen</td><td>${euro(basisLo*0.10)} – ${euro(basisHi*0.10)}</td></tr>
+    ${s.opties.length?`<tr><td>Gekozen opties</td><td>+ ${euro(r.opt)}</td></tr>`:''}
+    <tr><td><b>Totaal (indicatie, incl. btw)</b></td><td><b>${euro(r.lo)} – ${euro(r.hi)}</b></td></tr>`;
+  document.getElementById('resBench').innerHTML=`<b>Marktbenchmark:</b> deze configuratie hoort tussen ${euro(r.lo)} en ${euro(r.hi)} te kosten. Offertes daarbóven verdienen een tweede blik — upload ze gratis in de offerte-check.`;
+  const rv=document.getElementById('resVerg'); rv.className='verg '+kleur; rv.innerHTML=tekst+' <a href="/bouwvergunning/">Naar de vergunning-gids →</a>';
+  const cfg=`${p.naam} | ${r.br}×${r.di}m | ${GEVELS[s.gevel].naam} | ${KOZIJNEN[s.kozijn].naam} | opties: ${s.opties.map(o=>OPTIES[o].naam).join(', ')||'geen'} | indicatie ${euro(r.lo)}–${euro(r.hi)} | postcode ${document.getElementById('postcode').value||'-'}`;
+  document.getElementById('offerteBtn').href='mailto:team@bylder.com?subject='+encodeURIComponent('Prefab-configuratie: prijsaanvraag')+'&body='+encodeURIComponent('Mijn configuratie:\n'+cfg+'\n\nGraag ontvang ik prijzen van aangesloten producenten.');
+  location.hash=btoa(JSON.stringify({...s, br:r.br, di:r.di})).replace(/=+$/,'');
+}
+function toon(){ document.querySelectorAll('.stap').forEach(x=>x.classList.toggle('actief',+x.dataset.stap===s.stap));
+  document.querySelectorAll('#prg span').forEach((x,i)=>x.classList.toggle('done',i<s.stap)); window.scrollTo({top:0,behavior:'smooth'}); }
+function volgende(){ if(s.stap<5){s.stap++; toon(); update();} }
+function terug(){ if(s.stap>1){s.stap--; toon();} }
+
+// init
+kaarten('producten',PRODUCTEN,'product'); kaarten('gevels',GEVELS,'gevel');
+kaarten('kozijnen',KOZIJNEN,'kozijn'); kaarten('opties',OPTIES,null,true); kaarten('zijden',ZIJDEN,'zijde');
+try{ if(location.hash.length>3){ const h=JSON.parse(atob(location.hash.slice(1))); Object.assign(s,{product:h.product||s.product,gevel:h.gevel||s.gevel,kozijn:h.kozijn||s.kozijn,opties:h.opties||[],zijde:h.zijde||s.zijde,stap:1});
+  if(h.br)document.getElementById('breedte').value=h.br; if(h.di)document.getElementById('diepte').value=h.di; } }catch(e){}
+teken(); toon(); update();
+</script>
+</body></html>

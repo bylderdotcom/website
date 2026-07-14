@@ -33,6 +33,7 @@
 - [Keuken & badkamer offerte-check](https://www.bylder.com/keuken-badkamer-offerte-check/)
 - [3D-sfeerimpressie](https://www.bylder.com/3d-sfeerimpressie/): plattegrond naar 3D-interieur in gekozen stijl
 - [Plattegrond inrichten](https://www.bylder.com/plattegrond-inrichten/): meubels op schaal passen
+- [Prefab-configurator](https://www.bylder.com/tools/prefab-configurator/): configureer een aanbouw, dakopbouw of dakkapel — onafhankelijke prijsindicatie, marktbenchmark en vergunningcheck
 - [Gratis nieuwbouw-tools](https://www.bylder.com/nieuwbouw-tools/): budget-calculator, meerwerk-calculator, opleveringschecklist
 
 ## Vakbedrijven & aanbod
@@ -44,6 +45,7 @@
 
 - [Bylder Zakelijk (overzicht)](https://www.bylder.com/zakelijk/): twee ingangen — deelnemer worden of diensten voor commercieel vastgoed
 - [Deelnemer worden](https://www.bylder.com/deelnemer-worden/): zakelijke hub — woonwinkels & merken, vakbedrijven, prefab-productie, interieurbouw, interieurontwerp & architecten, ontwikkelaars & bouwers, commercieel vastgoed
+- [Prefab-netwerk](https://www.bylder.com/deelnemer-worden/prefab-netwerk/): produceren, plaatsen of prefab bestellen voor je eigen klant
 - [Commercieel vastgoed](https://www.bylder.com/deelnemer-worden/commercieel-vastgoed/): AI offerte- en tender-check, m2-benchmarks en fit-out-visualisatie voor zakelijk vastgoed
 
 ## Optional
