@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "spouwmuurisolatie",
+  "titel": "Spouwmuurisolatie: je spouw na-isoleren in één dag",
+  "title_tag": "Spouwmuurisolatie: kosten, besparing en risico's | Bylder",
+  "meta_description": "Spouwmuurisolatie kost €20-35 per m² en is in één dag klaar. Lees welke inblaasmaterialen er zijn, wat je bespaart en wanneer je beter niet isoleert.",
+  "intro": [
+    "Spouwmuurisolatie is het na-isoleren van de luchtlaag (spouw) tussen je binnen- en buitenmuur: via kleine boorgaten in de voegen wordt isolatiemateriaal in de spouw geblazen, meestal EPS-parels, glaswolvlokken of PUR-schuim. Het werk is doorgaans in één dag klaar en kost indicatief €20–€35 per m² gevel.",
+    "Voor woningen van na ongeveer 1920 met een lege spouw is dit vrijwel altijd de verduurzamingsmaatregel met de beste prijs-prestatieverhouding: lage kosten, directe besparing en een warmere woning. Maar niet elke gevel is geschikt — een vooronderzoek hoort er standaard bij."
+  ],
+  "stats": [
+    ["€20–€35", "per m² gevel, inclusief aanbrengen (indicatie)"],
+    ["±1 dag", "doorlooptijd voor een gemiddelde woning"],
+    ["15–25%", "besparing op stookkosten (indicatie, afhankelijk van woning)"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe werkt het inblazen van een spouwmuur?",
+      "html": "<p>De installateur boort gaten van zo'n 1,5–2,5 cm in de voegen van de buitengevel, in een vast patroon. Via die gaten wordt het isolatiemateriaal onder druk in de spouw geblazen tot die overal gevuld is; met een endoscoop of warmtebeeld wordt de vulling gecontroleerd. Daarna worden de gaten afgewerkt met voegmortel in een passende kleur.</p><p>Vooraf hoort een spouwinspectie plaats te vinden: is de spouw breed genoeg (minimaal ±4–5 cm), schoon en droog, en zitten er geen obstakels zoals valspecie of puin in? Ook worden ventilatieopeningen (open stootvoegen onderin) en eventueel aanwezige vleermuizen gecheckt — daarvoor gelden wettelijke regels via de natuurvergunning of het soortenmanagementplan van de gemeente.</p>"
+    },
+    {
+      "kop": "Welk inblaasmateriaal kies je?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Materiaal</th><th>Lambda (indicatie)</th><th>Sterke punten</th><th>Aandachtspunten</th></tr></thead><tbody><tr><td>EPS-parels (met lijm)</td><td>0,033–0,035</td><td>Vochtongevoelig, vult goed, meest gekozen</td><td>Losse parels bij later boren in de muur</td></tr><tr><td>Glaswolvlokken</td><td>0,034–0,040</td><td>Onbrandbaar, dampopen, goedkoop</td><td>Vulling luistert nauw bij smalle spouwen</td></tr><tr><td>PUR-schuim</td><td>0,026–0,030</td><td>Hoogste isolatiewaarde, hecht en dicht kieren</td><td>Duurder, niet omkeerbaar, kwaliteit uitvoerder cruciaal</td></tr></tbody></table><p>In de praktijk zijn EPS-parels de standaardkeuze: goede isolatie, ongevoelig voor vocht en geschikt voor de meeste spouwen. Het verschil in eindresultaat zit vaker in de kwaliteit van de uitvoering (volledig gevulde spouw) dan in het materiaal.</p>"
+    },
+    {
+      "kop": "Wat kost het en wat bespaar je?",
+      "html": "<p>Reken indicatief op €20–€35 per m² gevel; voor een gemiddelde tussenwoning met zo'n 40–60 m² spouwgevel kom je op circa €1.000–€2.000. Een hoekwoning of vrijstaand huis heeft meer geveloppervlak en profiteert ook meer. Voor spouwmuurisolatie is doorgaans ISDE-subsidie beschikbaar, zeker in combinatie met een tweede isolatiemaatregel; check de actuele voorwaarden bij RVO.</p><p>De besparing op stookkosten ligt indicatief op 15–25%, afhankelijk van woningtype en stookgedrag. Daarmee is de terugverdientijd vaak maar enkele jaren — korter dan bij vrijwel elke andere maatregel. Minstens zo merkbaar: de binnenmuren voelen niet langer koud aan, waardoor het comfort direct toeneemt en de thermostaat vaak een graad lager kan.</p>"
+    },
+    {
+      "kop": "Wanneer kun je beter niet (of nog niet) isoleren?",
+      "html": "<p>Een goede uitvoerder wijst een ongeschikte gevel af. Wees alert in deze situaties:</p><ul><li><strong>Vochtproblemen:</strong> bij optrekkend vocht, doorslaande gevels of lekkages eerst de oorzaak verhelpen — isolatie kan vochtproblemen anders verergeren.</li><li><strong>Geverfde, geglazuurde of dicht geïmpregneerde buitengevel:</strong> de gevel kan vocht dan slecht naar buiten afgeven, met vorstschade of verfblaasjes als risico.</li><li><strong>Te smalle of vervuilde spouw:</strong> onder de ±4 cm of vol valspecie is goed vullen niet mogelijk.</li><li><strong>Slechte voegen of gescheurd metselwerk:</strong> eerst herstellen, anders jaagt wind door de isolatie.</li><li><strong>Beschermde gevels of bijzondere steensoorten:</strong> vraag advies bij monumenten of zachte handvormsteen.</li></ul><p>Twijfel? Laat twee onafhankelijke bedrijven de spouw inspecteren en vergelijk hun bevindingen.</p>"
+    },
+    {
+      "kop": "Waar let je op bij offerte en garantie?",
+      "html": "<p>Een serieuze offerte vermeldt het materiaal, de Rd-waarde na isolatie, de m²-prijs, de resultaten van het vooronderzoek en de afwerking van de boorgaten. Vraag naar certificering van het bedrijf, een gevuldheidscontrole na afloop en garantie op het werk (vaak 10 jaar via een waarborgregeling).</p><p>Let er ook op dat open stootvoegen voor spouwventilatie behouden blijven en dat de uitvoerder de natuurwetgeving rond vleermuizen aantoonbaar regelt. Vergelijk minimaal twee offertes op dezelfde Rd-waarde en laat ze bij twijfel controleren voordat je opdracht geeft.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is mijn woning geschikt voor spouwmuurisolatie?",
+      "a": "Woningen van na ±1920 hebben meestal een spouw; of die gevuld kan worden, blijkt uit een inspectie met boorgat en endoscoop. De spouw moet minimaal zo'n 4 cm breed, schoon en droog zijn, en de gevel vrij van vochtproblemen."
+    },
+    {
+      "q": "Veroorzaakt spouwmuurisolatie vochtproblemen?",
+      "a": "Bij een gezonde gevel en goede uitvoering niet: moderne inblaasmaterialen zijn waterafstotend. Risico ontstaat bij bestaande vochtproblemen, geverfde gevels of slecht voegwerk — precies daarom hoort een vooronderzoek bij elke serieuze offerte."
+    },
+    {
+      "q": "Hoe snel verdien ik spouwmuurisolatie terug?",
+      "a": "Vaak binnen enkele jaren. De investering is met circa €1.000–€2.000 voor een gemiddelde tussenwoning relatief laag, terwijl de besparing op stookkosten indicatief 15–25% bedraagt. ISDE-subsidie verkort de terugverdientijd verder."
+    },
+    {
+      "q": "Moet ik rekening houden met vleermuizen in de spouw?",
+      "a": "Ja. Vleermuizen zijn beschermd en verblijven soms in spouwen. Isolatiebedrijven moeten hier wettelijk op controleren, vaak via het soortenmanagementplan van de gemeente. Vraag hoe de uitvoerder dit regelt — het hoort in de offerte thuis."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": ["isolatiematerialen", "energielabel-woning", "begrip:rc-waarde"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cluster": "bim",
+  "slug": "van-bim-naar-interieurontwerp",
+  "titel": "Van bouwmodel naar interieurplan: zo gebruik je de maten van je woning",
+  "title_tag": "Van bouwmodel naar interieurplan | Bylder",
+  "meta_description": "Gebruik de maten uit het bouwmodel voor keuken, badkamer en meubels. Zo plan je je interieur in 3D en voorkom je dure koopfouten.",
+  "intro": [
+    "Van bouwmodel naar interieurplan gaan betekent: de maatvaste gegevens uit het BIM-model of de werktekeningen van je woning gebruiken om keuken, badkamer en meubels op de centimeter te plannen — voordat de woning er staat. Je werkt dan niet met \"circa\"-maten uit de brochure, maar met de maten waarmee de bouwer zelf bouwt.",
+    "Dat verschil klinkt klein, maar voorkomt de duurste interieurfouten: de bank die net niet past, de kast die voor een stopcontact staat, of een keuken die bij de inmeting ineens tien centimeter moet inleveren. Wie vanuit het model plant, koopt één keer goed."
+  ],
+  "stats": [
+    ["mm-precies", "het bouwmodel rekent in millimeters, de brochure in circa-maten"],
+    ["1-2 cm", "per wand kan er af gaan door stucwerk en afwerking"],
+    ["1x meten", "digitaal plannen voorkomt dubbel kopen en retourneren"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe gebruik je het bouwmodel voor je interieur?",
+      "html": "<p>De route in drie stappen:</p><ul><li><strong>Verzamel de bron.</strong> Vraag het 3D-model op als IFC-bestand, of anders de maatvaste werktekeningen op schaal 1:50. Hoe dichter bij de bouwbron, hoe betrouwbaarder je maten.</li><li><strong>Haal de kritieke maten eruit.</strong> Wandlengtes, nissen, dagmaten van deuren, raamposities, hoogtes van borstweringen, posities van wcd's, aansluitpunten en radiatoren.</li><li><strong>Plan digitaal op schaal.</strong> Zet je plattegrond in een indelingstool en plaats meubels op ware grootte. Zo zie je meteen looproutes, deurdraai en of alles écht past.</li></ul><p>Belangrijk: reken van ruwbouw- naar afgewerkte maten. Stucwerk, plinten en dekvloeren snoepen al snel één tot twee centimeter per vlak af — precies het verschil tussen passen en klemmen.</p>"
+    },
+    {
+      "kop": "Welke maten heb je nodig voor keuken en badkamer?",
+      "html": "<p>Keuken en badkamer zijn het meest maatkritisch, omdat er installaties aan vastzitten:</p><ul><li><strong>Keuken:</strong> exacte wandlengte, positie van afvoer, water, kookgroep (Perilex) en mv-afzuigpunt, plus de vrije hoogte voor kasten. Bestel je de keuken vóór de bouw, werk dan met de werktekening en laat de keukenleverancier ná de ruwbouw altijd inmeten.</li><li><strong>Badkamer:</strong> posities van afvoeren en watertoevoer, de draairichting van de deur, en de maat van nissen voor douche of bad. Tien centimeter verschil bepaalt of een inloopdouche van 120 cm past of niet.</li><li><strong>Wasmachine-opstelling:</strong> breedte, afvoer en of de deur van de ruimte nog open kan met de machine erin.</li></ul><p>Stelposten voor keuken en sanitair schat je met echte maten ook veel beter in: je weet precies hoeveel meter keuken of tegelwerk je werkelijk nodig hebt.</p>"
+    },
+    {
+      "kop": "Hoe maak je van je plattegrond een 3D-sfeerimpressie?",
+      "html": "<p>Maten vertellen of iets past; beelden vertellen of het mooi wordt. Met de 3D-sfeerimpressie van Bylder upload je je plattegrond en krijg je fotorealistische beelden van je toekomstige woonkamer, keuken of slaapkamer — in de stijl die jij kiest. Dat helpt bij drie beslissingen:</p><ul><li>Kleuren en materialen kiezen vóórdat je vloeren, wanden en keukenfronten bestelt.</li><li>Twijfels beslechten: eiland of rechte keuken, open of dichte trapkast — je ziet het in plaats van het te raden.</li><li>Afstemmen met je partner of huisgenoten op basis van hetzelfde beeld in plaats van twee verschillende fantasieën.</li></ul><p>Combineer het met Plattegrond inrichten: eerst op schaal puzzelen wat past, dan in 3D kijken hoe het voelt.</p>"
+    },
+    {
+      "kop": "Waarom voorkomt plannen vanuit het model koopfouten?",
+      "html": "<p>De klassiekers die je hiermee voorkomt:</p><ul><li><strong>De bank die niet past:</strong> op oog gekocht, maar de wand blijkt 20 cm korter door een koof of radiator.</li><li><strong>Meubels door de deur:</strong> de dagmaat van deur of trapgat bepaalt of dat XXL-matras of die kast überhaupt binnenkomt.</li><li><strong>Kast voor het stopcontact:</strong> elektra en meubelplan zijn nooit naast elkaar gelegd.</li><li><strong>Stelposten verkeerd ingeschat:</strong> zonder echte maten reken je met aannames en valt de eindafrekening van keuken of badkamer tegen.</li></ul><p>Elke fout in dit rijtje kost al snel honderden tot duizenden euro's. Digitaal plannen kost een avond.</p>"
+    },
+    {
+      "kop": "Wat is een slimme volgorde van beslissen?",
+      "html": "<p>Houd deze volgorde aan: eerst de bouwkundige keuzes (meerwerk zoals uitbouw, wanden, elektra — vóór de sluitingsdata), dan de installatiegebonden inrichting (keuken en badkamer op basis van werktekeningen plus inmeting), en pas daarna losse meubels en styling. Zo werkt elke beslissing met de juiste maten door in de volgende, en betaal je nergens dubbel omdat iets later toch anders moest.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik mijn keuken al kopen op basis van het bouwmodel?",
+      "a": "Je kunt uitstekend ontwerpen en offertes aanvragen op basis van het model of de 1:50-werktekening. Definitief bestellen doe je pas na de inmeting door de keukenleverancier ná de ruwbouw, want kleine bouwafwijkingen zijn normaal."
+    },
+    {
+      "q": "Hoeveel wijken echte maten af van het model?",
+      "a": "Het model is maatvast op ruwbouwniveau, maar afwerking (stucwerk, dekvloer, plinten) kost al snel een tot twee centimeter per vlak, en kleine bouwafwijkingen zijn contractueel toegestaan. Houd bij krappe passingen dus altijd een marge van enkele centimeters aan."
+    },
+    {
+      "q": "Wat heb ik minimaal nodig om mijn interieur digitaal te plannen?",
+      "a": "Een plattegrond op schaal met maatvoering is genoeg. Daarmee richt je in een tool als Plattegrond inrichten je woning op ware grootte in en maak je met de 3D-sfeerimpressie beelden van het resultaat. Een IFC-model is een plus, geen vereiste."
+    },
+    {
+      "q": "Helpt dit ook bij het inschatten van stelposten?",
+      "a": "Ja. Met echte maten weet je hoeveel meter keuken, tegelwerk of vloer je werkelijk nodig hebt, en kun je offertes daarop laten aansluiten. Zo zie je eerder of een stelpost realistisch is of dat er een naheffing dreigt."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je woning"],
+    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
+    "zusters": ["3d-model-woning-opvragen", "plattegrond-symbolen", "begrip:stelpost"]
+  }
+}
