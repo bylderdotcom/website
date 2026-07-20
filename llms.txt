@@ -7,7 +7,10 @@
 - [Kennisbank-overzicht](https://www.bylder.com/kennisbank/): naslagwerk over keuken, badkamer, materialen, installaties, BIM en bouwtechniek
 - [Kennisbank: Keuken](https://www.bylder.com/kennisbank/keuken/): 26 artikelen — werkbladen, indeling, apparatuur, casco-keuken
 - [Kennisbank: Badkamer](https://www.bylder.com/kennisbank/badkamer/): 26 artikelen — sanitair, tegels, waterdichting, ventilatie
-- [Kennisbank: Materialen](https://www.bylder.com/kennisbank/materialen/): canonieke naslagpagina's per materiaal (kwartscomposiet, keramiek, natuursteen e.a.)
+- [Kennisbank: Materialen](https://www.bylder.com/kennisbank/materialen/): canonieke naslagpagina's per materiaal (kwartscomposiet, keramiek, natuursteen, PVC, kalkverf e.a.)
+- [Kennisbank: Vloeren & afwerking](https://www.bylder.com/kennisbank/vloeren/): 20 artikelen — vloertypen vergeleken, vloerverwarming, plintloos afwerken, stucwerk
+- [Kennisbank: Installaties & duurzaam](https://www.bylder.com/kennisbank/installaties/): 20 artikelen — warmtepompen, ventilatie, zonnepanelen, isolatie
+- [Kennisbank: BIM & digitaal bouwen](https://www.bylder.com/kennisbank/bim/): 12 artikelen — BIM voor woningkopers, 3D-koopcontract, bouwtekening lezen, IFC en digital twins
 - [Kennisbank: Begrippenlijst](https://www.bylder.com/kennisbank/begrip/): bouwbegrippen met citeerbare definities
 - [Kosten besparen bij nieuwbouw](https://www.bylder.com/kennisbank/kosten-besparen-nieuwbouw/): stelposten, meerwerk-marges en collectief inkoopvoordeel
 
