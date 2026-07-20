@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "isolatiematerialen",
+  "titel": "Isolatiematerialen vergeleken: van glaswol tot houtvezel",
+  "title_tag": "Isolatiematerialen vergeleken: welke kies je? | Bylder",
+  "meta_description": "Glaswol, steenwol, PIR, EPS, cellulose of houtvezel? Vergelijk isolatiematerialen op lambda-waarde, toepassing en prijs en kies het juiste materiaal.",
+  "intro": [
+    "De belangrijkste isolatiematerialen zijn glaswol, steenwol, PIR/PUR, EPS, cellulose en houtvezel; ze verschillen vooral in isolatiewaarde (lambda), brandgedrag, vochtgedrag en prijs. Hoe lager de lambda-waarde (warmtegeleiding, λ in W/mK), hoe minder dikte je nodig hebt voor dezelfde Rc-waarde — de isolatieweerstand van de hele constructie.",
+    "Welk materiaal past, hangt af van de plek (dak, gevel, vloer), de beschikbare ruimte en je wensen rond duurzaamheid en geluid. Bij nieuwbouw schrijft de aannemer het pakket voor; bij verduurzaming van bestaande bouw kies je zelf — en dan loont het om verder te kijken dan de prijs per plaat."
+  ],
+  "stats": [
+    ["λ 0,022–0,045", "spreiding in warmtegeleiding tussen de gangbare materialen"],
+    ["Rc 6,3", "minimale isolatiewaarde van een nieuwbouwdak (m²K/W)"],
+    ["€5–€60/m²", "prijsindicatie materiaal, afhankelijk van type en dikte"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe vergelijk je isolatiematerialen eerlijk?",
+      "html": "<p>Vergelijk materialen altijd op twee waarden. De <strong>lambda-waarde (λ)</strong> zegt hoe goed het materiaal zelf isoleert: hoe lager, hoe beter. De <strong>Rc-waarde</strong> zegt hoe goed de complete constructie isoleert en volgt uit dikte gedeeld door lambda: 10 cm materiaal met λ 0,025 levert evenveel op als ruim 15 cm met λ 0,040.</p><p>Daarom is 'het beste materiaal' altijd situatie-afhankelijk: bij weinig ruimte (plat dak, dunne spouw) win je met een lage lambda, bij voldoende ruimte kan een goedkoper materiaal in grotere dikte dezelfde Rc halen voor minder geld. Nieuwbouw moet minimaal Rc 3,7 (vloer), 4,7 (gevel) en 6,3 (dak) halen; bij na-isolatie gelden lagere subsidiedrempels.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen per materiaal?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Materiaal</th><th>Lambda (W/mK, indicatie)</th><th>Sterke punten</th><th>Vooral toegepast in</th><th>Prijsindicatie per m²</th></tr></thead><tbody><tr><td>Glaswol</td><td>0,032–0,040</td><td>Goedkoop, onbrandbaar, geluiddempend</td><td>Hellend dak, binnenwanden, voorzetwanden</td><td>€5–€15</td></tr><tr><td>Steenwol</td><td>0,034–0,040</td><td>Onbrandbaar, zwaarder, goede akoestiek</td><td>Gevel, dak, brandwerende toepassingen</td><td>€8–€20</td></tr><tr><td>PIR/PUR</td><td>0,022–0,028</td><td>Beste isolatie per cm dikte</td><td>Plat dak, vloer, spouw (PUR-schuim)</td><td>€15–€35</td></tr><tr><td>EPS (piepschuim)</td><td>0,031–0,038</td><td>Licht, vochtbestendig, goedkoop</td><td>Vloer, funderingen, spouw (parels), gevel</td><td>€8–€20</td></tr><tr><td>Cellulose</td><td>0,038–0,040</td><td>Biobased, ingeblazen, vochtregulerend</td><td>Houtskeletbouw, hellend dak, verdiepingsvloeren</td><td>€10–€25</td></tr><tr><td>Houtvezel</td><td>0,038–0,045</td><td>Biobased, zomerse hittewering, akoestiek</td><td>Dak, gevel, binnenisolatie</td><td>€20–€60</td></tr></tbody></table><p>Alle prijzen zijn materiaalindicaties exclusief arbeid; ingeblazen of gespoten toepassingen worden per m² inclusief aanbrengen aangeboden.</p>"
+    },
+    {
+      "kop": "Welk materiaal past bij dak, gevel en vloer?",
+      "html": "<ul><li><strong>Hellend dak:</strong> glaswol of steenwol tussen de sporen is de klassieker; houtvezel scoort extra op zomercomfort onder pannendaken. Bij weinig hoogte: PIR-platen op of onder de sporen.</li><li><strong>Plat dak:</strong> vrijwel altijd PIR of EPS bovenop de constructie — druksterkte en lage lambda tellen hier.</li><li><strong>Gevel/spouw:</strong> bij na-isolatie worden EPS-parels, glaswolvlokken of PUR-schuim ingeblazen; bij nieuwbouw of buitengevelisolatie werken steenwol of EPS-platen.</li><li><strong>Vloer/bodem:</strong> EPS of PIR tegen de onderkant van de vloer, of bodemisolatie in de kruipruimte; vochtbestendigheid is hier doorslaggevend.</li></ul>"
+    },
+    {
+      "kop": "Hoe duurzaam zijn de materialen zelf?",
+      "html": "<p>Alle isolatie verdient zijn productie-energie ruimschoots terug, maar er zijn verschillen. Biobased materialen als cellulose (gerecycled papier) en houtvezel slaan CO2 op en reguleren vocht, wat ze populair maakt in houtskeletbouw en bij ecologisch bouwen. Minerale wol is goed recyclebaar en onbrandbaar. Kunststofschuimen (PIR, PUR, EPS) leveren de hoogste isolatie per centimeter, maar zijn fossiel van oorsprong en lastiger te recyclen.</p><p>Praktisch advies: laat brandveiligheid en vochtgedrag altijd meewegen naast lambda en prijs, zeker bij binnenisolatie en houten constructies. Voor veel isolatiemaatregelen in bestaande bouw is ISDE-subsidie beschikbaar, mits een minimale Rc-waarde en oppervlakte worden gehaald.</p>"
+    },
+    {
+      "kop": "Waar let je op bij offertes voor isolatiewerk?",
+      "html": "<p>Een goede isolatieofferte vermeldt het materiaal én de dikte én de te behalen Rc-waarde (of Rd-waarde bij na-isolatie) — alleen 'dak isoleren' zegt niets. Let verder op de afwerking van naden en aansluitingen (daar lekt de warmte weg), dampremmende lagen bij binnenisolatie, en of ventilatievoorzieningen behouden blijven.</p><p>Vergelijk minimaal twee offertes op dezelfde Rc-waarde, anders vergelijk je appels met peren. Twijfel je over de opbouw of de prijs per m², laat de offerte dan controleren voordat je opdracht geeft.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Welk isolatiemateriaal isoleert het best?",
+      "a": "PIR heeft met een lambda van 0,022–0,028 W/mK de laagste warmtegeleiding en isoleert dus het best per centimeter dikte. Of het ook de beste keuze is, hangt af van de plek, het budget en eisen aan brand- en vochtgedrag."
+    },
+    {
+      "q": "Wat is het verschil tussen lambda-waarde en Rc-waarde?",
+      "a": "De lambda-waarde is een materiaaleigenschap: hoe goed geleidt het materiaal warmte (lager is beter). De Rc-waarde geldt voor de hele constructie en volgt uit dikte gedeeld door lambda (hoger is beter). Vergelijk offertes daarom altijd op Rc."
+    },
+    {
+      "q": "Is duurder isolatiemateriaal de meerprijs waard?",
+      "a": "Alleen als ruimte schaars is of extra eigenschappen tellen. Bij voldoende ruimte haalt goedkope glaswol in grotere dikte dezelfde Rc als duur PIR. Betaal dus voor prestaties die je nodig hebt, niet voor het materiaal met de mooiste specificaties."
+    },
+    {
+      "q": "Krijg ik subsidie op isolatie?",
+      "a": "Voor veel isolatiemaatregelen in bestaande koopwoningen is ISDE-subsidie beschikbaar, mits je minimale Rc-waarden en oppervlaktes haalt en het werk door een bedrijf laat uitvoeren. Check de actuele voorwaarden bij RVO voordat je opdracht geeft."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": ["spouwmuurisolatie", "hr-glas-of-triple", "begrip:rc-waarde"]
+  }
+}

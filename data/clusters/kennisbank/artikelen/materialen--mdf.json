@@ -1,0 +1,61 @@
+{
+  "cluster": "materialen",
+  "slug": "mdf",
+  "titel": "MDF: eigenschappen, soorten en toepassingen",
+  "title_tag": "MDF: eigenschappen, soorten en toepassingen | Bylder",
+  "meta_description": "MDF is geperste houtvezelplaat: strak, betaalbaar en perfect te lakken. Bekijk soorten zoals vochtwerend en zwart MDF, toepassingen en het verschil met spaanplaat.",
+  "intro": [
+    "MDF (Medium Density Fibreboard) is een plaatmateriaal van fijngemalen houtvezels die met hars onder druk en warmte tot een homogene, dichte plaat worden geperst. Anders dan massief hout heeft MDF geen nerfrichting: de plaat is in alle richtingen even sterk, kaarsrecht en strak te frezen.",
+    "MDF is het werkpaard van de interieurbouw. Plinten, kastdeuren, wandpanelen, radiatorombouwen en vrijwel al het strakke lakwerk in moderne woningen zijn van MDF gemaakt — juist omdat het materiaal zich perfect glad laat afwerken tegen een lage prijs."
+  ],
+  "stats": [
+    ["€10–€30", "per m² plaat (18 mm)"],
+    ["±750 kg/m³", "dichtheid standaard MDF"],
+    ["E1", "gangbare formaldehyde-klasse"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke soorten MDF zijn er?",
+      "html": "<ul><li><strong>Standaard MDF</strong> — de allrounder voor droog binnenwerk: meubels, kasten, lakwerk</li><li><strong>Vochtwerend MDF (V313/MDF V-MR)</strong> — herkenbaar aan de groene kleur; verlijmd met vochtbestendige hars voor badkamermeubels, toiletruimtes en plinten in vochtige zones. Let op: vochtwérend, niet waterdicht</li><li><strong>Zwart doorgekleurd MDF</strong> — door en door zwart gepigmenteerd; randen en freeswerk blijven zwart zonder lak, populair voor meubels en interieurdetails</li><li><strong>Lightweight en HDF</strong> — lichtere platen voor grote deuren, en juist extra dichte hardboardachtige platen (HDF) voor dunne toepassingen</li><li><strong>Gefineerd of gemelamineerd MDF</strong> — fabrieksmatig afgewerkt met houtfineer of melamine, klaar voor gebruik</li></ul>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van MDF?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Voordelig</td><td>€10–€30 per m² voor 18 mm plaat, afhankelijk van soort (indicatie)</td></tr><tr><td>Krasvastheid</td><td>Afwerking-afhankelijk</td><td>De laklaag bepaalt de hardheid; kaal MDF deukt makkelijk</td></tr><tr><td>Vochtbestendigheid</td><td>Matig</td><td>Zwelt bij water; vochtwerend (groen) MDF presteert duidelijk beter</td></tr><tr><td>Onderhoud</td><td>Laag</td><td>Gelakt MDF afneembaar; beschadigingen zijn bij te werken</td></tr><tr><td>Levensduur</td><td>15–30 jaar</td><td>Binnen en droog vrijwel onbeperkt houdbaar</td></tr><tr><td>Duurzaamheid</td><td>Redelijk</td><td>Gemaakt van resthout; kies E1 (of beter) en FSC/PEFC</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Waar wordt MDF voor gebruikt?",
+      "html": "<p>Overal waar strak lakwerk of freeswerk gewenst is: plinten en architraven (zie ook <a href=\"/kennisbank/vloeren/plinten-kiezen/\">plinten kiezen</a>), kastenwanden en inloopkasten, keukenfronten, wandpanelen en lambrisering, deuren, radiatorombouwen en meubels. Omdat MDF geen nerf heeft, kun je er profielen in frezen die na het lakken ogen als massief paneelwerk — tegen een fractie van de prijs. Niet geschikt is MDF voor buiten, voor dragende constructies en voor plekken met direct watercontact; zelfs groen MDF zwelt bij langdurig water. Voor werkbladen en zwaar belaste bladen kies je <a href=\"/kennisbank/materialen/hpl-laminaat/\">HPL</a>, massief hout of steen.</p>"
+    },
+    {
+      "kop": "Hoe lak je MDF en wat is er speciaal aan?",
+      "html": "<p>MDF zuigt sterk, vooral op de gefreesde of gezaagde randen. Goed lakwerk begint daarom met de randen: die worden voorgestreken met sneldrogende grondlak of randenlak (soms meerdere keren), daarna volgt gronden, schuren en minimaal twee aflaklagen. Spuiten geeft het strakste, fabrieksmatige resultaat; rollen met schuimroller kan voor doe-het-zelvers prima. Sla je de randvoorbehandeling over, dan blijven de randen dof en ruw doorschijnen — het meest gemaakte beginnersfoutje met MDF.</p>"
+    },
+    {
+      "kop": "Hoe verhoudt MDF zich tot spaanplaat en multiplex?",
+      "html": "<p><strong>Spaanplaat</strong> is gemaakt van grovere houtspaanders: goedkoper, maar met een open randstructuur die zich niet laat frezen of strak aflakken — vandaar dat het vrijwel altijd met melamine bekleed wordt (kastromkes, meubelpanelen). <strong>Multiplex</strong> bestaat uit kruislings verlijmde houtfineerlagen: sterker, schroefvaster en beter tegen vocht, maar duurder en met zichtbare nerf. Vuistregel: spaanplaat voor bekleed plaatwerk uit het zicht, MDF voor alles wat gefreesd of gelakt wordt, multiplex waar sterkte of vochtbelasting telt. Over formaldehyde: gangbaar MDF valt in emissieklasse E1; wie strenger wil zitten kiest E1-plus-, CARB2- of zelfs formaldehydevrij verlijmde platen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is MDF slecht voor de gezondheid vanwege formaldehyde?",
+      "a": "Modern MDF in emissieklasse E1 voldoet aan de Europese normen en de emissie is na verwerking en aflakken zeer laag. Wie extra zekerheid wil, kiest platen met E1-plus-, CARB2- of formaldehydevrije verlijming. Vooral bij het zagen en frezen is stofafzuiging en een stofmasker belangrijk."
+    },
+    {
+      "q": "Kan MDF in de badkamer?",
+      "a": "Ja, mits je vochtwerend (groen) MDF gebruikt en alle zijden — ook zaagranden en boorgaten — goed aflakt. Voor badkamermeubels en aftimmerwerk buiten de directe natte zone werkt dat prima; direct watercontact blijft af te raden, want ook groen MDF is niet waterdicht."
+    },
+    {
+      "q": "Wat is het verschil tussen MDF en spaanplaat?",
+      "a": "MDF is geperst uit fijne houtvezels en daardoor homogeen, strak te frezen en te lakken. Spaanplaat bestaat uit grovere spaanders, is goedkoper maar heeft ruwe randen en laat zich niet mooi aflakken. Voor zichtwerk en lakwerk kies je MDF, voor bekleed plaatwerk volstaat spaanplaat."
+    },
+    {
+      "q": "Wat kost MDF?",
+      "a": "Een standaardplaat van 18 mm kost indicatief €10–€30 per m², afhankelijk van soort en afwerking; vochtwerend en zwart doorgekleurd MDF zitten aan de bovenkant. Op maat gezaagd, gefreesd en gespoten maatwerk — zoals kastfronten — wordt per project geprijsd, waarbij arbeid de grootste post is."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["hpl-laminaat", "massief-hout", "vloeren:plinten-kiezen"]
+  }
+}
