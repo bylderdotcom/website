@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "vloer-egaliseren",
+  "titel": "Wat is vloer egaliseren en wanneer is het nodig?",
+  "title_tag": "Vloer egaliseren: wanneer nodig & kosten | Bylder",
+  "meta_description": "Vloer egaliseren is het vlak maken van de ondergrond met egaline. Lees wanneer het nodig is per vloertype, wat het kost per m² en hoe lang het droogt.",
+  "intro": [
+    "Vloer egaliseren is het uitvlakken van een oneffen ondergrond met egaline: een dunne, zelfnivellerende mortel die over de dekvloer wordt uitgegoten en uithardt tot een strak, vlak oppervlak. Het is de onzichtbare basis onder vrijwel elke strakke vloerafwerking.",
+    "Bij nieuwbouw is de zandcement-dekvloer zelden vlak genoeg voor PVC of een gietvloer, en bij verbouwingen laten oude lijmresten en hoogteverschillen zich alleen met egaline wegwerken. Wie egaliseren overslaat, ziet elke bult later terug in de vloer."
+  ],
+  "stats": [
+    ["€10–20/m²", "indicatie voor egaliseren inclusief arbeid"],
+    ["2–10 mm", "gangbare laagdikte van egaline"],
+    ["24–48 uur", "droogtijd voordat de vloer erop kan"]
+  ],
+  "secties": [
+    {
+      "kop": "Wanneer moet je egaliseren per vloertype?",
+      "html": "<p>Hoe dunner en strakker de vloer, hoe vlakker de ondergrond moet zijn.</p><table class=\"vgl\"><thead><tr><th>Vloertype</th><th>Egaliseren nodig?</th><th>Toelichting</th></tr></thead><tbody><tr><td>Plak-PVC</td><td>Vrijwel altijd</td><td>Elke oneffenheid tekent door de dunne stroken heen</td></tr><tr><td>Gietvloer</td><td>Altijd</td><td>Vraagt een perfect vlakke, gesloten ondergrond</td></tr><tr><td>Klik-PVC en laminaat</td><td>Bij >2–3 mm verschil per meter</td><td>Kleine oneffenheden vangt de ondervloer op</td></tr><tr><td>Verlijmd parket</td><td>Meestal</td><td>Volledige verlijming vraagt vlakke, draagkrachtige basis</td></tr><tr><td>Tegels</td><td>Zelden</td><td>De tegellijm vlakt zelf kleine verschillen uit</td></tr><tr><td>Tapijt</td><td>Soms</td><td>Alleen bij duidelijk voelbare oneffenheden</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe dik moet de egalinelaag zijn?",
+      "html": "<p>Een standaard egalisatie is 2–5 mm dik; bij flinke hoogteverschillen of leidingsleuven kan dat oplopen tot 10 mm of meer, soms in twee lagen. Belangrijk bij vloerverwarming: de leidingen moeten minimaal enkele millimeters egaline boven zich hebben, en je gebruikt een egaline die daarvoor geschikt is. Meet vóór de offerte de hoogteverschillen met een rei of laat de vloerenlegger dat doen, want de laagdikte bepaalt direct de prijs.</p>"
+    },
+    {
+      "kop": "Wat kost vloer egaliseren?",
+      "html": "<p>Reken indicatief op €10–20 per m² inclusief arbeid en materiaal bij een gangbare laagdikte. Dikkere lagen, voorstrijken van een zuigende ondergrond en het verwijderen van oude lijmlagen komen daar bovenop. Egaliseren staat vaak als aparte post in de vloerofferte; controleer of de post niet dubbel is opgenomen bij zowel de vloerenlegger als de aannemer. De AI offerte-check van Bylder haalt zulke dubbelingen eruit.</p>"
+    },
+    {
+      "kop": "Zelf egaliseren of laten doen?",
+      "html": "<p>Zelf egaliseren kan bij kleine, eenvoudige ruimtes: egaline is als zak poeder verkrijgbaar en zelfnivellerend. Maar het werk is onvergeeflijk: te dik aangemaakt, te langzaam uitgegoten of niet ontlucht met een prikroller, en je giet de fouten letterlijk vast. Voor een woonverdieping, vloerverwarming of als er plak-PVC of een gietvloer op komt, is uitbesteden de verstandige keuze; de vloerenlegger geeft dan ook garantie op het geheel.</p>"
+    },
+    {
+      "kop": "Hoe lang moet egaline drogen?",
+      "html": "<p>De meeste egalines zijn na 24–48 uur beloopbaar en klaar voor vloerbedekking, afhankelijk van laagdikte, temperatuur en ventilatie. Let op het verschil met een verse dekvloer: die heeft circa één week droogtijd per centimeter dikte nodig voordat je überhaupt mag egaliseren. Laat bij twijfel een vochtmeting doen; te vroeg een dampdichte vloer leggen is de meest voorkomende oorzaak van loslatende PVC en bollend parket.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik egaliseren over oude tegels of lijmresten?",
+      "a": "Over goed vastzittende tegels kan het met een hechtprimer; losse lijmresten moeten eerst geschuurd of gefreesd worden. Een vakman beoordeelt de ondergrond en kiest de juiste voorbehandeling, wat de hechting van de hele vloer bepaalt."
+    },
+    {
+      "q": "Is egaliseren nodig bij vloerverwarming?",
+      "a": "Ja, vrijwel altijd. De egaline sluit de leidingen in, verbetert het warmtecontact en maakt de vloer vlak. Gebruik wel een egaline die geschikt is voor vloerverwarming en stook pas volgens het opstookprotocol nadat alles is uitgehard."
+    },
+    {
+      "q": "Hoeveel egaline heb ik nodig?",
+      "a": "Reken grofweg 1,6 kg poeder per m² per millimeter laagdikte. Voor 50 m² met een laag van 3 mm kom je dus op zo'n 240 kg, oftewel tien zakken van 25 kg. Bestel iets ruimer voor plaatselijk diepere plekken."
+    },
+    {
+      "q": "Zakt egaline in scheuren en gaten weg?",
+      "a": "Grote gaten en sleuven moet je vooraf vullen met reparatiemortel, anders zoekt de egaline het laagste punt en blijft het oppervlak golven. Ook randen en deuropeningen zet je af, zodat de vloeibare egaline niet wegloopt."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/eerlijke-prijzen/gietvloer/", "Eerlijke prijs voor een gietvloer"],
+    "zusters": ["ondervloer-kiezen", "pvc-vloer-kiezen", "vloer-in-nieuwbouw"]
+  }
+}

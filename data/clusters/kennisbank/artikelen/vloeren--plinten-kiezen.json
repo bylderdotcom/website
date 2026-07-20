@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "plinten-kiezen",
+  "titel": "Welke plinten kies je bij je vloer?",
+  "title_tag": "Welke plinten kies je? Typen, hoogte & kleur | Bylder",
+  "meta_description": "Welke plint past bij jouw vloer? Vergelijk MDF, hout en kunststof, kies de juiste hoogte en kleur, en zie wat plinten plaatsen kost per meter.",
+  "intro": [
+    "De meest gekozen plint is een witte MDF-plint van 7 tot 12 cm hoog: betaalbaar, strak af te lakken en geschikt bij vrijwel elke vloer. Wil je een luxere of juist onderhoudsarmere uitstraling, dan kies je massief hout of kunststof.",
+    "Plinten lijken een detail, maar ze bepalen de overgang tussen vloer en wand in elke ruimte van je huis. Bij nieuwbouw en verbouwing loont het om type, hoogte en kleur vroeg te kiezen: de plint moet passen bij het stucwerk, de vloerdikte en de deurkozijnen."
+  ],
+  "stats": [
+    ["€5–15/m¹", "indicatie voor plinten laten plaatsen"],
+    ["7–12 cm", "meest gekozen plinthoogte in woonruimtes"],
+    ["3 opties", "wit, vloerkleur of wandkleur als plintkleur"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke plinttypen zijn er?",
+      "html": "<p>De vier gangbare plinttypen verschillen vooral in prijs, afwerking en vochtbestendigheid.</p><table class=\"vgl\"><thead><tr><th>Type</th><th>Kenmerken</th><th>Geschikt voor</th></tr></thead><tbody><tr><td>MDF (voorgelakt)</td><td>Betaalbaar, strak, overschilderbaar</td><td>Woonruimtes, slaapkamers</td></tr><tr><td>Massief hout</td><td>Duurzaam, te schuren, warme uitstraling</td><td>Parket, klassieke interieurs</td></tr><tr><td>Kunststof</td><td>Vochtbestendig, onderhoudsvrij</td><td>Keuken, hal, vochtige ruimtes</td></tr><tr><td>Hoge plint (12–20 cm)</td><td>Statige uitstraling, beschermt de wand extra</td><td>Hoge plafonds, herenhuisstijl</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Welke plinthoogte past bij jouw huis?",
+      "html": "<p>De juiste hoogte hangt af van je plafondhoogte en stijl. Vuistregels:</p><ul><li><strong>4–6 cm:</strong> minimalistisch, past bij moderne nieuwbouw met lage plafonds.</li><li><strong>7–12 cm:</strong> de veilige middenmaat die in de meeste woningen klopt.</li><li><strong>12–20 cm:</strong> hoge plinten voor plafonds vanaf circa 2,80 m of een klassieke uitstraling.</li></ul><p>Let bij nieuwbouw op de deurkozijnen: een plint hoort netjes tegen het kozijn aan te lopen, dus kies de hoogte vóór de kozijnen worden afgelakt.</p>"
+    },
+    {
+      "kop": "Wit, vloerkleur of wandkleur: welke plintkleur kies je?",
+      "html": "<p>Wit is de standaardkeuze en geeft een frisse, duidelijke lijn tussen vloer en wand. Een plint in de vloerkleur laat de vloer optisch doorlopen en oogt rustig bij houtlook-vloeren. Een plint in de wandkleur laat de wand langer lijken en is populair in moderne interieurs met kleur op de muur. Twijfel je? Met een 3D-sfeerimpressie zie je vooraf hoe elke variant in jouw ruimte uitpakt.</p>"
+    },
+    {
+      "kop": "Wat kost plinten plaatsen?",
+      "html": "<p>Reken indicatief op €5–15 per strekkende meter voor het plaatsen, exclusief materiaal. Verlijmen is het meest gangbaar op strak stucwerk; schieten of schroeven met afgewerkte plamuurpunten kost iets meer. Materiaal varieert van enkele euro's per meter voor MDF tot ruim het dubbele voor massief hout. Check offertes op dubbeltellingen: plintwerk zit soms al in de vloerofferte én in die van de schilder.</p>"
+    },
+    {
+      "kop": "Kun je ook zonder plinten afwerken?",
+      "html": "<p>Ja, met een plintloze afwerking (schaduwvoeg) vervalt de plint helemaal en loopt het stucwerk strak tot net boven de vloer. Dat oogt minimalistisch, maar vraagt een andere volgorde in het bouwproces en een hoger budget. Lees ons artikel over plintloos afwerken voordat je stukadoor begint.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Plaats je plinten vóór of na het schilderen?",
+      "a": "Idealiter worden wanden eerst gesausd, daarna de plinten geplaatst en afgekit, en tot slot de plinten afgelakt of bijgewerkt. Zo krijg je de strakste naad tussen wand en plint."
+    },
+    {
+      "q": "Hoeveel plint moet ik bestellen?",
+      "a": "Meet de totale wandlengte van alle ruimtes en tel 10% snijverlies op voor hoeken en verstek. Bestel alles in één keer, zodat kleur en profiel uit dezelfde productieronde komen."
+    },
+    {
+      "q": "Zijn kunststof plinten lelijk?",
+      "a": "Moderne kunststof plinten zijn van MDF nauwelijks te onderscheiden en juist praktisch in keukens en hallen omdat ze tegen water en stootjes kunnen. Bij een luxe interieur met parket blijft hout of gelakt MDF wel de mooiere keuze."
+    },
+    {
+      "q": "Moet de plintkleur matchen met de deuren?",
+      "a": "Dat is de meest gekozen en veiligste combinatie: plinten, deuren en kozijnen in dezelfde (gebroken) witte lakkleur geven rust. Verplicht is het niet; een plint in wand- of vloerkleur kan net zo goed werken."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["plintloos-afwerken", "materialen:mdf", "materialen:massief-hout"]
+  }
+}

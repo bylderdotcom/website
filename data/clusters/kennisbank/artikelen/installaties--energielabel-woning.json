@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "energielabel-woning",
+  "titel": "Wat zegt het energielabel van een woning?",
+  "title_tag": "Energielabel woning: uitleg A++++ t/m G | Bylder",
+  "meta_description": "Wat zegt het energielabel van een woning? Zo werkt de schaal A++++ t/m G, de NTA 8800-berekening en zo verbeter je je label het snelst.",
+  "intro": [
+    "Het energielabel van een woning geeft op een schaal van A++++ (zeer zuinig) tot en met G (zeer onzuinig) aan hoeveel fossiele energie de woning per vierkante meter per jaar nodig heeft voor verwarming, warm water en ventilatie.",
+    "Bij verkoop en verhuur is een geldig label verplicht, en het weegt steeds zwaarder mee: in de waarde van de woning, in de maximale huurprijs en soms in de hypotheekrente. Nieuwbouw scoort door de huidige BENG-eisen vrijwel altijd A+++ of hoger; bij bestaande bouw is het label vooral een routekaart voor verduurzaming."
+  ],
+  "stats": [
+    ["A++++", "hoogste energielabel op de schaal"],
+    ["10 jaar", "geldigheid van een energielabel"],
+    ["A+++", "gangbaar label bij nieuwbouw"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe wordt het energielabel bepaald?",
+      "html": "<p>Sinds 2021 wordt het label berekend volgens de rekenmethode NTA 8800. Een gecertificeerd energieadviseur komt langs, meet de woning op en registreert onder meer isolatie van dak, gevel, vloer en glas, het type verwarming en warmwatertoestel, ventilatie en zonnepanelen. Daaruit rolt het primaire fossiele energiegebruik in kWh per m² per jaar, en dat getal bepaalt de labelklasse. Een label op basis van alleen een online vragenlijst bestaat niet meer; de opname aan huis is verplicht.</p>"
+    },
+    {
+      "kop": "Welke labelklassen zijn er?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Label</th><th>Typische woning</th></tr></thead><tbody><tr><td>A++++ t/m A+</td><td>nieuwbouw en volledig verduurzaamde woningen, vaak met warmtepomp en zonnepanelen</td></tr><tr><td>A / B</td><td>recente bouw (na ±2000) of goed nageïsoleerde woningen</td></tr><tr><td>C / D</td><td>woningen uit ±1975–2000 met deels verbeterde isolatie</td></tr><tr><td>E t/m G</td><td>oudere woningen met weinig isolatie en enkel of oud dubbel glas</td></tr></tbody></table><p>De indeling is indicatief: bouwjaar zegt veel, maar uitgevoerde maatregelen bepalen het werkelijke label.</p>"
+    },
+    {
+      "kop": "Waarom heeft nieuwbouw bijna altijd A+++ of hoger?",
+      "html": "<p>Nieuwbouwwoningen moeten voldoen aan de BENG-eisen: een beperkte energiebehoefte, weinig fossiel energiegebruik en een minimum aandeel hernieuwbare energie. In de praktijk betekent dat een gasloze woning met dikke isolatie, HR++ of triple glas, een warmtepomp, balansventilatie met warmteterugwinning en meestal zonnepanelen. Daarmee komt het berekende energiegebruik zo laag uit dat A+++ of A++++ de norm is. Als koper hoef je hier niets voor te doen; het label wordt bij oplevering geregistreerd.</p>"
+    },
+    {
+      "kop": "Wat verbetert je energielabel het meest?",
+      "html": "<p>Voor bestaande woningen tellen maatregelen die het fossiele energiegebruik direct verlagen het zwaarst:</p><ul><li><strong>Isoleren van de schil:</strong> spouwmuur-, dak- en vloerisolatie en beter glas leveren doorgaans de grootste labelsprongen per geïnvesteerde euro.</li><li><strong>Van gas naar (hybride) warmtepomp:</strong> een grote sprong, omdat fossiel gebruik zwaar meeweegt in NTA 8800.</li><li><strong>Zonnepanelen:</strong> tellen mee als hernieuwbare opwekking en tillen een woning vaak één of meer klassen omhoog.</li><li><strong>Ventilatie met warmteterugwinning:</strong> kleinere bijdrage, maar relevant in combinatie met goede kierdichting.</li></ul>"
+    },
+    {
+      "kop": "Hoe lang is een energielabel geldig?",
+      "html": "<p>Een geregistreerd energielabel is tien jaar geldig. Verduurzaam je tussentijds, dan mag je een nieuw label laten opstellen zodat de verbeteringen zichtbaar worden; dat is verstandig vóór verkoop of het aanvragen van een hypotheek met rentekorting. Een labelopname kost indicatief €200 tot €400, afhankelijk van woningtype en regio. Controleer je huidige label gratis via de officiële registratie op energielabel.nl.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een energielabel verplicht?",
+      "a": "Ja, bij verkoop, verhuur en oplevering van een woning is een geldig geregistreerd energielabel verplicht. Zonder label bij de transactie riskeert de verkoper een boete. Voor eigen bewoning zonder verkoopplannen is een label niet verplicht."
+    },
+    {
+      "q": "Wat kost een energielabel laten opstellen?",
+      "a": "Reken indicatief op €200 tot €400 voor een woningopname door een gecertificeerd adviseur. De prijs hangt af van de grootte van de woning, de regio en hoe snel je het label nodig hebt."
+    },
+    {
+      "q": "Kan mijn label lager uitvallen dan het oude label?",
+      "a": "Ja, dat kan. De NTA 8800-methode rekent anders dan de oude methodes, en een adviseur mag alleen meerekenen wat aantoonbaar aanwezig is. Bewaar daarom facturen en foto's van isolatiemaatregelen als bewijs."
+    },
+    {
+      "q": "Beïnvloedt het energielabel mijn hypotheek?",
+      "a": "Steeds vaker wel. Veel geldverstrekkers geven rentekorting bij een groen label, en voor zuinige woningen mag je extra lenen voor verduurzaming. Een beter label verhoogt bovendien doorgaans de verkoopwaarde."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": ["hr-glas-of-triple", "spouwmuurisolatie", "zonnepanelen-nieuwbouw"]
+  }
+}

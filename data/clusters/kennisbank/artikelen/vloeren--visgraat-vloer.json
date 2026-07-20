@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "visgraat-vloer",
+  "titel": "Visgraatvloer: in parket, PVC en laminaat — wat moet je weten?",
+  "title_tag": "Visgraatvloer: parket, PVC of laminaat? | Bylder",
+  "meta_description": "Een visgraatvloer kan in parket, PVC en laminaat. Bekijk het prijsverschil met recht leggen, de juiste legrichting en wanneer visgraat goed werkt.",
+  "intro": [
+    "Een visgraatvloer is een legpatroon waarbij korte planken in een hoek van 90 graden tegen elkaar liggen; bij hongaarse punt zijn de kopse kanten schuin afgezaagd (meestal 45 graden) zodat de rijen in een strakke punt samenkomen. Het patroon kan in parket, PVC én laminaat — met flinke verschillen in prijs en uitstraling.",
+    "Visgraat is al jaren dé interieurtrend in nieuwbouw en verbouw, maar het patroon kost meer dan recht leggen: meer legtijd, meer zaagverlies en speciale visgraat-planken. Wie de afwegingen kent, weet waar visgraat het geld waard is en waar een rechte plank verstandiger was geweest."
+  ],
+  "stats": [
+    ["+20–40%", "meerprijs t.o.v. recht leggen (indicatie)"],
+    ["90°", "hoek tussen de planken bij klassiek visgraat"],
+    ["3", "materialen: parket, PVC en laminaat"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen visgraat en hongaarse punt?",
+      "html": "<p>Bij klassiek visgraat liggen rechthoekige planken haaks op elkaar, waardoor een getrapt zigzagpatroon ontstaat. Bij hongaarse punt zijn de plankuiteinden onder een hoek (meestal 45 of 60 graden) afgezaagd, zodat de rijen naadloos in een punt samenkomen — een strakker, formeler beeld. Hongaarse punt is bewerkelijker en daardoor duurder, vooral in echt hout waar het zaagwerk op maat gebeurt.</p>"
+    },
+    {
+      "kop": "Visgraat in parket, PVC of laminaat: wat zijn de verschillen?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Parket visgraat</th><th>PVC visgraat</th><th>Laminaat visgraat</th></tr></thead><tbody><tr><td>Prijs per m² gelegd (indicatie)</td><td>€90–160</td><td>€55–100</td><td>€30–60</td></tr><tr><td>Uitstraling</td><td>Echt hout, veroudert mooi</td><td>Zeer overtuigend, egaler</td><td>Herkenbaar als print bij nader inzien</td></tr><tr><td>Vloerverwarming</td><td>Goed (meerlaags, verlijmd)</td><td>Zeer goed</td><td>Goed, let op ondervloer</td></tr><tr><td>Vochtruimtes</td><td>Nee</td><td>Ja</td><td>Beperkt</td></tr><tr><td>Herstelbaar</td><td>Opschuurbaar</td><td>Plank vervangbaar (dryback lastiger)</td><td>Plank vervangbaar</td></tr></tbody></table><p>De prijzen liggen per materiaal boven de rechte variant omdat visgraat aparte linker- en rechterplanken vraagt en het leggen langzamer gaat.</p>"
+    },
+    {
+      "kop": "Wat kost visgraat extra ten opzichte van recht leggen?",
+      "html": "<p>Reken indicatief op 20–40 procent meerprijs op de totale vloer. Dat zit in drie dingen: de planken zelf zijn duurder (aparte L- en R-planken, bij hout extra zaagwerk), het leggen kost meer uren (uitlijnen vanaf een middellijn, meer zaagsneden) en het zaagverlies is groter — bestel zo'n 7–10 procent extra materiaal in plaats van de gebruikelijke 5 procent.</p><p>Juist bij visgraat lonen meerdere offertes: het aantal uren dat leggers rekenen verschilt sterk. Laat de offerte checken op de post arbeid per m² voordat je tekent.</p>"
+    },
+    {
+      "kop": "Welke legrichting kies je bij visgraat?",
+      "html": "<p>De hoofdregel: leg de as van het patroon (de richting waarin de punten wijzen) in de lengterichting van de ruimte of richting het belangrijkste zichtpunt — meestal van de entree naar de tuingevel. Dat rekt de ruimte optisch op en laat het patroon het mooist binnenvallen bij daglicht. In brede, open ruimtes kan de as ook richting het raam.</p><p>Laat de legger het patroon vanaf een uitgelijnde middellijn opzetten en vooraf een proefuitleg doen bij deuropeningen en de keukenwand: een half patroon dat tegen een prominente wand doodloopt, blijft altijd zichtbaar.</p>"
+    },
+    {
+      "kop": "Wanneer werkt visgraat wél en wanneer niet?",
+      "html": "<ul><li><strong>Wél:</strong> in ruimtes vanaf zo'n 20 m², bij een rustige inrichting en effen wanden — het patroon is zelf al de blikvanger. Klassiek in combinatie met hoge plinten en stucwerk.</li><li><strong>Minder:</strong> in kleine of onregelmatige ruimtes met veel hoeken en deuren: het patroon wordt er onrustig van en het zaagverlies loopt op.</li><li><strong>Let op drukte:</strong> combineer visgraat liever niet met een sterk gemêleerde tegel of druk behang; kies één hoofdrolspeler.</li></ul><p>Twijfel je hoe het patroon in jouw plattegrond uitpakt? Een 3D-sfeerimpressie laat legrichting en plankmaat zien voordat je bestelt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel duurder is een visgraatvloer dan een rechte vloer?",
+      "a": "Indicatief 20–40 procent op de totale vloerprijs: duurdere planken, meer leguren en 7–10 procent zaagverlies in plaats van 5. Bij hongaarse punt in echt hout kan de meerprijs verder oplopen door het schuine zaagwerk."
+    },
+    {
+      "q": "Kan visgraat op vloerverwarming?",
+      "a": "Ja. PVC-visgraat en verlijmd meerlaags parket zijn prima geschikt; laminaat-visgraat ook, mits de warmteweerstand van vloer plus ondervloer onder circa 0,09 m²K/W blijft. Massief houten visgraat is op vloerverwarming af te raden."
+    },
+    {
+      "q": "Is visgraat geschikt voor een kleine ruimte?",
+      "a": "Het kan, maar het patroon komt het best tot zijn recht vanaf zo'n 20 m². Kies in kleinere ruimtes een kleinere plankmaat, anders passen er te weinig hele punten in het vloerveld en oogt het rommelig."
+    },
+    {
+      "q": "Welke kant moet visgraat op wijzen?",
+      "a": "Meestal met de punten in de lengterichting van de ruimte of richting de belangrijkste zichtlijn, bijvoorbeeld van de hal naar de tuindeuren. Dat rekt de ruimte optisch en laat het licht mooi over het patroon vallen."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
+    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
+    "zusters": ["parket-kiezen", "pvc-vloer-kiezen", "laminaat-kiezen"]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "cluster": "installaties",
+  "slug": "hr-glas-of-triple",
+  "titel": "HR++ of triple glas: wat is het verschil en wanneer loont triple?",
+  "title_tag": "HR++ of triple glas? Verschil, kosten, advies | Bylder",
+  "meta_description": "HR++ of triple glas kiezen? Vergelijk U-waarden, meerprijs, comfort en geluidsisolatie en zie wanneer triple glas echt loont.",
+  "intro": [
+    "Het verschil tussen HR++ en triple glas zit in het aantal glaslagen en de isolatiewaarde: HR++ heeft twee glasbladen en een U-waarde van circa 1,1 W/m²K, triple glas heeft drie glasbladen en isoleert met een U-waarde van circa 0,6 W/m²K bijna twee keer zo goed.",
+    "Bij nieuwbouw wordt triple glas steeds vaker standaard, omdat het goed past bij een gasloze woning met warmtepomp en lage-temperatuurverwarming. Bij verbouwing of vervanging is de keuze minder vanzelfsprekend: de meerprijs en de eisen aan het kozijn wegen dan zwaarder mee."
+  ],
+  "stats": [
+    ["±1,1", "U-waarde HR++ glas (W/m²K)"],
+    ["±0,6", "U-waarde triple glas (W/m²K)"],
+    ["€50–100", "indicatieve meerprijs triple per m² glas"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat betekent de U-waarde precies?",
+      "html": "<p>De U-waarde geeft aan hoeveel warmte er per vierkante meter glas verloren gaat: hoe lager, hoe beter de isolatie. Enkel glas zit rond de 5,8, oud dubbel glas rond de 2,8, HR++ rond de 1,1 en triple glas rond de 0,6 W/m²K. De stap van HR++ naar triple halveert het warmteverlies door het glas dus ongeveer. Let op: de U-waarde van het hele raam (glas plus kozijn) ligt meestal iets hoger dan die van het glas alleen.</p>"
+    },
+    {
+      "kop": "Hoe verschillen HR++ en triple glas in de praktijk?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Kenmerk</th><th>HR++</th><th>Triple glas</th></tr></thead><tbody><tr><td>U-waarde glas</td><td>±1,1 W/m²K</td><td>±0,6 W/m²K</td></tr><tr><td>Opbouw</td><td>2 glasbladen, 1 spouw</td><td>3 glasbladen, 2 spouwen</td></tr><tr><td>Gewicht</td><td>±20–25 kg/m²</td><td>±30–45 kg/m²</td></tr><tr><td>Meerprijs</td><td>referentie</td><td>±€50–100 per m² (indicatie)</td></tr><tr><td>Comfort bij het raam</td><td>goed</td><td>zeer goed, nauwelijks koudeval</td></tr><tr><td>Kozijn</td><td>past in de meeste kozijnen</td><td>vraagt diepere, sterkere kozijnen</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Waarom voelt triple glas comfortabeler aan?",
+      "html": "<p>Bij glas met een hogere U-waarde koelt de lucht langs het raam af en zakt die koude lucht naar beneden: koudeval. Dat voelt als tocht, ook als het raam dicht is. Triple glas heeft een binnenblad dat vrijwel op kamertemperatuur blijft, waardoor je zonder radiator onder het raam toch comfortabel aan tafel of op de bank zit. Juist in woningen met vloerverwarming op lage temperatuur is dat merkbaar: er is geen radiator meer die de koudeval compenseert.</p>"
+    },
+    {
+      "kop": "Isoleert triple glas ook beter tegen geluid?",
+      "html": "<p>Niet automatisch. Geluidsisolatie hangt vooral af van glasdikte, verschillende bladdiktes en een eventuele geluidsfolie, niet van het aantal lagen. Standaard triple glas presteert akoestisch vergelijkbaar met HR++. Woon je aan een drukke weg of onder een aanvliegroute, vraag dan expliciet om geluidwerend glas (bijvoorbeeld met asymmetrische opbouw of gelaagd glas); dat kan zowel in HR++ als in triple uitvoering.</p>"
+    },
+    {
+      "kop": "Wanneer loont triple glas wel en niet?",
+      "html": "<p>Triple glas loont vooral als de rest van de schil meedoet:</p><ul><li><strong>Nieuwbouw:</strong> vrijwel altijd zinvol; de woning is gasloos, goed geïsoleerd en het kozijn wordt er direct op ontworpen.</li><li><strong>Kozijnen vervangen bij renovatie:</strong> goed moment, want je kiest toch nieuwe kozijnen.</li><li><strong>Alleen glas vervangen in bestaande kozijnen:</strong> vaak niet mogelijk of niet rendabel; triple glas is dikker en zwaarder dan de sponning aankan. HR++ is dan meestal de logische keuze.</li></ul><p>Puur op energiebesparing is de terugverdientijd van triple ten opzichte van HR++ lang; het comfort en de toekomstwaarde geven vaak de doorslag.</p>"
+    },
+    {
+      "kop": "Welke eisen stelt triple glas aan het kozijn?",
+      "html": "<p>Triple glas is 36 tot 52 millimeter dik en fors zwaarder dan dubbel glas. Het kozijn moet een diepere sponning hebben en het hang- en sluitwerk moet het extra gewicht van draaiende delen aankunnen. Moderne kunststof, houten en aluminium kozijnen zijn hierop leverbaar; oude kozijnen meestal niet. Reken bij een offerte dus altijd kozijn en glas als één geheel door en laat de aannemer de U-waarde van het complete raam opgeven.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is triple glas verplicht bij nieuwbouw?",
+      "a": "Nee, triple glas is niet verplicht. De energieprestatie-eisen (BENG) gelden voor de woning als geheel. In de praktijk kiezen steeds meer ontwikkelaars standaard voor triple glas, omdat het de eisen makkelijker haalbaar maakt en het comfort verhoogt."
+    },
+    {
+      "q": "Kan ik triple glas in mijn bestaande kozijnen zetten?",
+      "a": "Meestal niet. Triple glas is dikker en zwaarder dan waar oude sponningen op berekend zijn. Vervang je de kozijnen toch, dan is triple een logische optie; houd je de kozijnen, dan is HR++ vrijwel altijd de beste keuze."
+    },
+    {
+      "q": "Hoeveel bespaar ik met triple glas ten opzichte van HR++?",
+      "a": "Het warmteverlies door het glas halveert ongeveer, maar glas is maar een deel van de schil. In een verder goed geïsoleerde woning gaat het om een beperkt bedrag per jaar. Het grootste voordeel zit in comfort en een lagere benodigde verwarmingscapaciteit."
+    },
+    {
+      "q": "Is triple glas beter tegen geluid?",
+      "a": "Standaard triple glas isoleert geluid ongeveer even goed als HR++. Voor merkbaar minder geluid heb je geluidwerend glas nodig met verschillende glasdiktes of een akoestische folie; dat kan in beide uitvoeringen."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": ["energielabel-woning", "isolatiematerialen", "begrip:rc-waarde"]
+  }
+}

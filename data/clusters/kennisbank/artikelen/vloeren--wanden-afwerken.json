@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "wanden-afwerken",
+  "titel": "Hoe kun je wanden afwerken?",
+  "title_tag": "Wanden afwerken: opties vergeleken | Bylder",
+  "meta_description": "Wanden afwerken kan met stucwerk, latex, kalkverf, behang, hout of akoestische panelen. Vergelijk uitstraling, prijs en onderhoud in één tabel.",
+  "intro": [
+    "Wanden afwerken kan op zes gangbare manieren: glad of structuurstucwerk als basis, daaroverheen latex of kalkverf, of een afwerking met behang, houten delen of akoestische panelen. Bijna altijd combineer je: eerst stucwerk, daarna de zichtbare afwerking.",
+    "Bij nieuwbouw worden wanden behangklaar opgeleverd en bij verbouwingen komen oude lagen eraf; in beide gevallen sta je dus voor dezelfde keuze. De afwerking bepaalt niet alleen de sfeer, maar ook onderhoud, akoestiek en wat je later nog makkelijk kunt veranderen."
+  ],
+  "stats": [
+    ["€10–25/m²", "indicatie glad stucwerk als basis"],
+    ["6 opties", "gangbare wandafwerkingen om uit te kiezen"],
+    ["€35.000–€65.000", "totale afwerking van een nieuwbouwwoning"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke wandafwerkingen zijn er?",
+      "html": "<p>Dit zijn de zes meest gekozen afwerkingen, van basis tot aankleding:</p><table class=\"vgl\"><thead><tr><th>Afwerking</th><th>Uitstraling</th><th>Sterk in</th><th>Let op</th></tr></thead><tbody><tr><td>Glad stucwerk + saus</td><td>Strak, modern</td><td>Elke ruimte, tijdloos</td><td>Toont oneffenheden bij strijklicht</td></tr><tr><td>Spachtelputz</td><td>Korrelige structuur</td><td>Gangen, trapgaten</td><td>Reparatie valt op</td></tr><tr><td>Latex muurverf</td><td>Mat, egaal</td><td>Betaalbaar, snel over te schilderen</td><td>Vraagt gladde ondergrond</td></tr><tr><td>Kalkverf</td><td>Wolkig, natuurlijk</td><td>Sfeer, vochtregulerend</td><td>Minder veegvast</td></tr><tr><td>Behang</td><td>Kleur en patroon</td><td>Accentwanden, verbergt kleine oneffenheden</td><td>Verwijderen is werk</td></tr><tr><td>Hout / akoestische panelen</td><td>Warm, gelaagd</td><td>Akoestiek, accentwand</td><td>Hogere prijs per m²</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wat is de juiste opbouw: eerst stucwerk, dan afwerking?",
+      "html": "<p>Vrijwel elke afwerking begint bij goed stucwerk. Voor latex en kalkverf is een sausklare, gladde wand nodig; voor behang volstaat behangklaar; houten delen en akoestische panelen kunnen op een minder perfecte wand omdat ze de ondergrond bedekken. De volgorde in het bouwproces: eerst stukadoor, dan schilder of behanger, daarna pas vloer en plinten. Wie die volgorde omdraait, betaalt dubbel aan aftape- en herstelwerk.</p>"
+    },
+    {
+      "kop": "Welke afwerking past bij welke ruimte?",
+      "html": "<ul><li><strong>Woonkamer:</strong> glad stucwerk met latex is de standaard; een accentwand met kalkverf, behang of panelen geeft karakter.</li><li><strong>Slaapkamer:</strong> kalkverf of behang voor sfeer; akoestische panelen dempen ook geluid.</li><li><strong>Hal en trapgat:</strong> spachtelputz of een stootvaste latex, want hier komen de meeste stootjes.</li><li><strong>Badkamer:</strong> tegels of speciaal vochtbestendig stucwerk; gewone latex laat hier snel los.</li><li><strong>Thuiswerkplek:</strong> akoestische panelen verbeteren de klank bij videobellen merkbaar.</li></ul><p>Op onze materiaalpagina's over latex, kalkverf, behang en akoestische panelen lees je per product de details.</p>"
+    },
+    {
+      "kop": "Wat kosten wandafwerkingen ongeveer?",
+      "html": "<p>Alle prijzen zijn indicaties per m², inclusief arbeid: glad stucwerk €10–25, spachtelputz €10–20, latex sausen €5–10, behangen €10–20 exclusief het behang zelf, en houten of akoestische wandpanelen vanaf enkele tientjes per m² afhankelijk van het product. De grootste kostenpost blijft de stucbasis; bespaar daar niet op, want elke afwerking erbovenop toont de kwaliteit van de ondergrond.</p>"
+    },
+    {
+      "kop": "Hoe houd je grip op de kosten?",
+      "html": "<p>Wand- en stucwerk zijn samen goed voor duizenden euro's in een afwerkbudget dat bij nieuwbouw totaal op €35.000–€65.000 uitkomt. Vraag prijzen per m² met afwerkingsklasse, vergelijk minimaal twee offertes en laat ze controleren met de AI offerte-check. Zo weet je zeker dat je marktconform betaalt; Bylder-leden besparen gemiddeld €4.200.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik direct latex aanbrengen op behangklare wanden?",
+      "a": "Het kan, maar het resultaat stelt meestal teleur: elke oneffenheid tekent zich af zodra er verf op zit. Laat de wanden eerst sausklaar stuken (indicatie €10–25 per m²) voor een strak eindresultaat."
+    },
+    {
+      "q": "Wat is het verschil tussen latex en kalkverf?",
+      "a": "Latex is een kunststofgebonden verf die egaal dekt en goed schoon te maken is. Kalkverf is mineraal, geeft een wolkig, mat effect en reguleert vocht, maar is minder veegvast. Latex is praktischer, kalkverf sfeervoller."
+    },
+    {
+      "q": "Zijn akoestische panelen meer dan een modegril?",
+      "a": "Ze hebben een meetbaar effect: de vilten achterwand absorbeert galm, wat vooral in ruimtes met harde vloeren en veel glas hoorbaar scheelt. Kies je ze puur om de looks, reken ze dan als accentwand en niet als akoestische oplossing voor de hele ruimte."
+    },
+    {
+      "q": "In welke volgorde werk ik wanden en vloer af?",
+      "a": "Eerst stucwerk, dan sausen of behangen, daarna de vloer leggen en als laatste plinten plaatsen en aflakken. Zo voorkom je verfspatten op de nieuwe vloer en beschadigingen aan vers stucwerk."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/eerlijke-prijzen/stucwerk/", "Eerlijke prijs voor stucwerk"],
+    "zusters": ["stucwerk-glad-of-structuur", "materialen:kalkverf", "materialen:akoestische-panelen"]
+  }
+}

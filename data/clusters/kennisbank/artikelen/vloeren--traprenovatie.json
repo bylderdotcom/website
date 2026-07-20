@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "traprenovatie",
+  "titel": "Wat kost een traprenovatie en welke opties heb je?",
+  "title_tag": "Traprenovatie: opties & kosten per trap | Bylder",
+  "meta_description": "Een traprenovatie kost indicatief €1.500–€4.500. Vergelijk trap bekleden met PVC, hout, laminaat of tapijt, en zie wanneer een nieuwe trap loont.",
+  "intro": [
+    "Een traprenovatie kost indicatief €1.500 tot €4.500 en houdt in dat je bestaande trap wordt bekleed met nieuwe treden van PVC, hout, laminaat of tapijt. Alleen bij een constructief versleten of onveilige trap is complete vervanging nodig, en die is fors duurder.",
+    "De trap is een van de intensiefst gebruikte plekken in huis en bepaalt mee hoe de hal en overloop ogen. Bij een verbouwing of na de aankoop van een bestaande woning is renoveren bijna altijd slimmer dan vervangen: sneller, goedkoper en zonder hak- en breekwerk."
+  ],
+  "stats": [
+    ["€1.500–€4.500", "indicatie complete traprenovatie"],
+    ["13 treden", "telt een gemiddelde Nederlandse trap"],
+    ["1–2 dagen", "doorlooptijd van een professionele renovatie"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke materialen kun je kiezen voor trapbekleding?",
+      "html": "<p>Elk materiaal heeft een eigen balans tussen prijs, slijtvastheid en geluid.</p><table class=\"vgl\"><thead><tr><th>Materiaal</th><th>Uitstraling</th><th>Sterk in</th><th>Let op</th></tr></thead><tbody><tr><td>PVC-treden</td><td>Houtlook, strak</td><td>Slijtvast, onderhoudsarm, antislip-toplaag</td><td>Klinkt harder dan tapijt</td></tr><tr><td>Hout (overzettreden)</td><td>Warm, luxe</td><td>Duurzaam, past bij parket</td><td>Hogere prijs, krasgevoeliger</td></tr><tr><td>Laminaat-treden</td><td>Houtlook</td><td>Budgetvriendelijk</td><td>Minder slijtvast op de trapneus</td></tr><tr><td>Tapijt</td><td>Zacht, klassiek</td><td>Stil en veilig, goedkoopst</td><td>Slijt en vervuilt sneller</td></tr></tbody></table><p>Wil je de trap laten aansluiten op je vloer, kies dan hetzelfde decor als je PVC- of parketvloer; veel merken leveren bijpassende trapprofielen.</p>"
+    },
+    {
+      "kop": "Renoveren of een nieuwe trap plaatsen?",
+      "html": "<p>Renoveren volstaat zolang de trapconstructie gezond is: geen doorgezakte treden, loszittende bomen of ernstig kraken dat op constructieve slijtage wijst. Een complete nieuwe trap inclusief plaatsen kost al snel een veelvoud van een renovatie en betekent stuc- en schilderherstel rondom. Kies alleen voor vervangen bij constructieve problemen, een gewenste andere traploop of bij een open trap die je fundamenteel anders wilt.</p>"
+    },
+    {
+      "kop": "Kun je een open trap dicht laten maken?",
+      "html": "<p>Ja, een open trap wordt dichtgemaakt door stootborden tussen de treden te plaatsen, meestal in dezelfde renovatie meegenomen. Dat oogt rustiger, stopt doorvallend licht en geluid naar beneden, en is veiliger voor kinderen. Reken indicatief op enkele honderden euro's extra bovenop de renovatieprijs, afhankelijk van het aantal treden en het materiaal.</p>"
+    },
+    {
+      "kop": "Hoe maak je een trap antislip?",
+      "html": "<ul><li><strong>Antislip-toplaag:</strong> PVC-treden hebben standaard een stroeve slijtlaag; vraag naar de antislipklasse (R-waarde).</li><li><strong>Antislipstrips of -profielen:</strong> op de trapneus, subtiel of juist contrasterend voor zichtbaarheid.</li><li><strong>Tapijt:</strong> van nature het meest slipvast en het stilst.</li><li><strong>Verlichting:</strong> ledspots of een sensorlamp bij de trap voorkomen misstappen in het donker.</li></ul>"
+    },
+    {
+      "kop": "Hoe voorkom je te veel betalen voor een traprenovatie?",
+      "html": "<p>Traprenovatiebedrijven werken vaak met pakketprijzen waarin marges flink verschillen; voor dezelfde trap zien we offertes van €1.800 en €4.200. Vraag een prijs per trede plus een aparte post voor stootborden, overloop en profielen, en vergelijk minstens twee aanbieders. Laat de offerte controleren met de AI offerte-check: 96% van kopers betaalt ergens te veel, en leden besparen gemiddeld €4.200 op hun totale afwerking.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik tijdens de traprenovatie de trap blijven gebruiken?",
+      "a": "Ja, bij de meeste systemen worden de treden een voor een bekleed en is de trap dezelfde avond weer beloopbaar. Alleen bij lakwerk of gietsystemen geldt een droogtijd van enkele uren tot een dag."
+    },
+    {
+      "q": "Is een traprenovatie ook iets om zelf te doen?",
+      "a": "Met een doe-het-zelfpakket kan het, maar het meetwerk is nauw: elke trede verschilt in nieuwbouw- en jaren-dertigtrappen net iets van maat. Een strakke trapneus en goed sluitende stootborden zijn precies het verschil tussen zelfbouw en vakwerk."
+    },
+    {
+      "q": "Wat doe ik met een trap die kraakt?",
+      "a": "Kraken komt meestal door speling tussen trede en stootbord of boom. Bij een renovatie worden treden verlijmd en aangeschroefd, wat het kraken meestal grotendeels verhelpt. Meld het vooraf, dan neemt de monteur het expliciet mee."
+    },
+    {
+      "q": "Welke kleur trap past bij mijn vloer?",
+      "a": "Dezelfde houtlook als de vloer geeft rust en laat hal en overloop doorlopen. Een contrasterende trap (donkere treden, witte stootborden) is klassieker en verbergt vuil op de treden beter. Met een 3D-sfeerimpressie zie je beide varianten vooraf."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["pvc-vloer-kiezen", "laminaat-kiezen", "zachte-vloeren-kiezen"]
+  }
+}

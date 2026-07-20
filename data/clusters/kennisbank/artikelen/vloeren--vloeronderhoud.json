@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "vloeronderhoud",
+  "titel": "Hoe onderhoud je elke vloersoort?",
+  "title_tag": "Vloeronderhoud per vloertype: zo doe je het | Bylder",
+  "meta_description": "Vloeronderhoud verschilt per type: parket oliën, gietvloer coaten, PVC en laminaat reinigen, voegen schoonhouden. Bekijk de onderhoudskalender.",
+  "intro": [
+    "Elke vloersoort vraagt eigen onderhoud: parket met olie moet je periodiek na-oliën, een gietvloer heeft elke paar jaar een nieuwe coating nodig, terwijl PVC en laminaat genoeg hebben aan stofzuigen en licht vochtig dweilen. Wie het juiste ritme aanhoudt, verlengt de levensduur van de vloer met jaren.",
+    "Juist bij een nieuwe vloer in een nieuwbouw- of verbouwde woning loont onderhoud vanaf dag één: de eerste beschadigingen ontstaan vaak in het bouwverkeer en de verhuisweken. Met een paar vaste gewoontes en een simpele kalender blijft de vloer eruitzien zoals bij oplevering."
+  ],
+  "stats": [
+    ["1–2× per jaar", "onderhoudsolie voor een geolied parket"],
+    ["5–10 jaar", "levensduur van een gietvloercoating"],
+    ["80%", "van het vuil komt binnen via de entree; een goede mat scheelt veel"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe onderhoud je parket?",
+      "html": "<p>Geolied parket vraagt het meeste ritueel: dagelijks stofzuigen met parketborstel, dweilen met speciale houtzeep en één tot twee keer per jaar een onderhoudsolie op de looproutes. Gelakt parket is makkelijker: schoonhouden volstaat, en eens per 10–15 jaar schuren en opnieuw lakken. Zet viltjes onder meubels, houd de luchtvochtigheid tussen 40–60% en neem gemorst water direct op; hout blijft werken, ook na jaren.</p>"
+    },
+    {
+      "kop": "Wanneer moet een gietvloer opnieuw gecoat worden?",
+      "html": "<p>Een gietvloer slijt niet in de gietlaag maar in de transparante topcoating. Die gaat afhankelijk van gebruik 5–10 jaar mee; doffe looppaden en fijne krasjes zijn het signaal om te laten hercoaten. Dat is een dag werk voor een specialist en aanzienlijk goedkoper dan een nieuwe vloer. Reinig tussentijds met een pH-neutrale zeep, nooit met schuurmiddel of agressieve ontvetters.</p>"
+    },
+    {
+      "kop": "Hoe reinig je PVC en laminaat?",
+      "html": "<ul><li><strong>PVC:</strong> stofzuigen of vegen en licht vochtig dweilen met PVC-reiniger; hardnekkige strepen verdwijnen met een niet-schurende pad. Eventueel eens per paar jaar een polish op mat geworden zones.</li><li><strong>Laminaat:</strong> zo droog mogelijk schoonmaken; een goed uitgewrongen dweil kan, plassen water niet, want vocht trekt in de naden en laat de toplaag bollen.</li><li><strong>Beide:</strong> geen stoomreiniger gebruiken en entreematten bij elke buitendeur leggen.</li></ul>"
+    },
+    {
+      "kop": "Hoe houd je tegels en voegen mooi?",
+      "html": "<p>Tegels zelf zijn vrijwel onderhoudsvrij; het werk zit in de voegen. Reinig met een pH-neutrale of licht alkalische reiniger en vermijd zure middelen op cementvoegen, die lossen de voeg langzaam op. Witte voegen in badkamer en keuken blijven het langst mooi met wekelijks naspoelen en goed ventileren; kitranden vervang je gemiddeld elke 5–8 jaar om schimmel voor te blijven.</p>"
+    },
+    {
+      "kop": "Welke onderhoudskalender kun je aanhouden?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Frequentie</th><th>Taak</th></tr></thead><tbody><tr><td>Wekelijks</td><td>Stofzuigen; keuken en hal licht vochtig dweilen</td></tr><tr><td>Maandelijks</td><td>Dweilen met vloerspecifieke reiniger; viltjes en matten checken</td></tr><tr><td>Halfjaarlijks</td><td>Geolied parket na-oliën op looproutes; voegen grondig reinigen</td></tr><tr><td>Jaarlijks</td><td>Vloer inspecteren op krassen en naden; kitranden controleren</td></tr><tr><td>Elke 5–10 jaar</td><td>Gietvloer hercoaten; gelakt parket beoordelen; kitranden vervangen</td></tr></tbody></table>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik een stoomreiniger gebruiken op mijn vloer?",
+      "a": "Alleen op tegels. Bij PVC, laminaat en parket drukt hete stoom vocht in naden en lijmlagen, waardoor de vloer kan loslaten of bollen en de garantie meestal vervalt."
+    },
+    {
+      "q": "Hoe verwijder ik krassen uit een PVC- of laminaatvloer?",
+      "a": "Oppervlakkige krassen in PVC vervagen met een reparatiepolish; bij laminaat bestaan wascrayons in de vloerkleur. Diepe schade herstel je door een plank of strook te vervangen; bewaar daarom altijd een restpakket van je vloer."
+    },
+    {
+      "q": "Waarom wordt mijn geoliede parketvloer dof?",
+      "a": "De olielaag slijt op looproutes en verliest zijn verzadiging. Dat is normaal: een onderhoudsolie aanbrengen (zelf te doen in een middag) haalt de kleur en bescherming terug. Wacht je te lang, dan trekt vuil in het hout en is schuren nodig."
+    },
+    {
+      "q": "Is een onderhoudscontract voor een gietvloer zinvol?",
+      "a": "Voor de meeste woningen niet nodig; een hercoating op het moment dat de vloer dof wordt volstaat. Vraag bij aanleg wel het gebruikte systeem en de kleurcode op, zodat elke specialist later exact kan matchen."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
+    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
+    "zusters": ["parket-kiezen", "gietvloer-kiezen", "tegelvloer-kiezen"]
+  }
+}

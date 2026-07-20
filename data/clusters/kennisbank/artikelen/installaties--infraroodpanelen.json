@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "infraroodpanelen",
+  "titel": "Infraroodpanelen: wanneer zijn ze zinvol als verwarming?",
+  "title_tag": "Infraroodpanelen: werking, verbruik, kosten | Bylder",
+  "meta_description": "Infraroodpanelen zijn zinvol als bijverwarming in badkamer of werkplek, maar duur als hoofdverwarming. Lees eerlijk over verbruik en kosten.",
+  "intro": [
+    "Infraroodpanelen zijn elektrische panelen die stralingswarmte afgeven: ze verwarmen niet de lucht, maar direct mensen, vloeren en wanden, vergelijkbaar met hoe de zon warmte geeft. Ze zijn vooral zinvol als bijverwarming op plekken waar je kort en gericht warmte wilt, zoals de badkamer of een thuiswerkplek.",
+    "In gasloze nieuwbouw duiken infraroodpanelen regelmatig op als aanvulling op de warmtepomp, en soms zelfs als volledig alternatief. Dat laatste verdient een eerlijke rekensom: elektrisch verwarmen zonder warmtepomp is per kilowattuur warmte twee tot vier keer zo duur."
+  ],
+  "stats": [
+    ["±600 W", "gangbaar vermogen per paneel"],
+    ["€0,30–0,40", "indicatieve stroomprijs per kWh"],
+    ["100%", "van de stroom wordt warmte, maar zonder rendementswinst"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe werkt stralingswarmte precies?",
+      "html": "<p>Een infraroodpaneel bevat een elektrisch verwarmingselement dat het oppervlak tot circa 80 à 100 graden opwarmt. Dat oppervlak zendt infraroodstraling uit die pas warmte wordt zodra hij een object of persoon raakt. Daardoor voel je vrijwel direct warmte, ook als de luchttemperatuur nog laag is. Het effect is wel lokaal: zit je buiten het stralingsbereik of achter een obstakel, dan merk je er weinig van. Panelen hangen daarom bij voorkeur aan het plafond of hoog aan de wand, gericht op de zitplek.</p>"
+    },
+    {
+      "kop": "Wat verbruikt een infraroodpaneel?",
+      "html": "<p>Een paneel zet stroom één-op-één om in warmte: 600 watt vermogen is 0,6 kWh per uur. Bij een stroomprijs van indicatief €0,30 tot €0,40 per kWh kost een uur gebruik dus zo'n €0,18 tot €0,24. Voor een half uurtje badkamercomfort per dag is dat prima te overzien. Als hoofdverwarming wordt het een ander verhaal: een gemiddelde woning vraagt duizenden kilowatturen warmte per jaar, en een warmtepomp maakt van elke kWh stroom drie tot vijf kWh warmte, waar een infraroodpaneel op één blijft steken. Dezelfde warmte kost met panelen dus al snel drie keer zoveel stroom.</p>"
+    },
+    {
+      "kop": "Wanneer zijn infraroodpanelen wél zinvol?",
+      "html": "<ul><li><strong>Badkamer:</strong> snel gevoelscomfort tijdens het douchen en aankleden, zonder de hele woning op te stoken.</li><li><strong>Thuiswerkplek:</strong> gericht één plek verwarmen terwijl de rest van het huis op een lagere temperatuur staat.</li><li><strong>Ruimtes die zelden gebruikt worden:</strong> logeerkamer of hobbyruimte, waar een vaste installatie niet loont.</li><li><strong>Aanvulling op een krap bemeten warmtepomp:</strong> voor de paar koudste dagen per jaar, in plaats van een zwaarder (en duurder) toestel.</li></ul><p>In goed geïsoleerde, kleine ruimtes met eigen zonnepanelen kan de rekensom gunstiger uitpakken, maar reken dat altijd zelf na.</p>"
+    },
+    {
+      "kop": "Wanneer zijn ze géén goed idee?",
+      "html": "<p>Als hoofdverwarming van een complete woning zijn infraroodpanelen zelden verstandig. De aanschaf is laag (indicatief €150 tot €500 per paneel), maar de stroomrekening structureel hoog, en je hebt al snel tien of meer panelen plus een verzwaarde elektrische installatie nodig. Ook voor slecht geïsoleerde ruimtes zijn ze ongeschikt: de warmte lekt sneller weg dan de panelen kunnen leveren. Wees kritisch op verkooppraatjes over \"rendementen boven de 100 procent\"; natuurkundig levert elke elektrische weerstandsverwarming exact één kWh warmte per kWh stroom.</p>"
+    },
+    {
+      "kop": "Wat kosten aanschaf en gebruik, indicatief?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Toepassing</th><th>Aanschaf (indicatie)</th><th>Gebruikskosten (indicatie)</th></tr></thead><tbody><tr><td>Badkamerpaneel 600 W, 0,5 uur/dag</td><td>€200–500 incl. montage</td><td>€30–45 per jaar</td></tr><tr><td>Werkplekpaneel 350 W, 4 uur/dag</td><td>€150–400</td><td>€120–200 per jaar</td></tr><tr><td>Hoofdverwarming hele woning</td><td>€3.000–8.000</td><td>vaak €1.500+ per jaar aan stroom</td></tr></tbody></table><p>Alle bedragen zijn marktindicaties; het werkelijke verbruik hangt af van isolatie, gebruiksduur en je stroomtarief.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Zijn infraroodpanelen zuinig?",
+      "a": "Per kWh stroom leveren ze exact 1 kWh warmte, niet meer. Ze zijn zuinig in gebruik doordat je gericht en kort verwarmt, maar als je er veel uren mee stookt zijn ze twee tot vier keer duurder dan een warmtepomp."
+    },
+    {
+      "q": "Kan ik mijn huis volledig verwarmen met infraroodpanelen?",
+      "a": "Technisch kan het in een zeer goed geïsoleerde woning, maar financieel is het zelden aantrekkelijk. De stroomkosten liggen structureel veel hoger dan bij een warmtepomp. Overweeg het hooguit voor zeer kleine, goed geïsoleerde woningen."
+    },
+    {
+      "q": "Waar hang ik een infraroodpaneel het beste op?",
+      "a": "Aan het plafond of hoog aan de wand, gericht op de plek waar je zit of staat, zonder obstakels ertussen. In de badkamer boven de wastafel of douchezone, op de werkplek boven het bureau."
+    },
+    {
+      "q": "Werken infraroodpanelen goed samen met zonnepanelen?",
+      "a": "Ja, zeker als je overdag verwarmt terwijl de zonnepanelen produceren. Houd er rekening mee dat de zon in de winter, wanneer je de meeste warmte nodig hebt, juist het minst oplevert; volledig gratis stoken lukt dus niet."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": ["warmtepomp-typen", "vloerverwarming-hoofdverwarming", "zonnepanelen-nieuwbouw"]
+  }
+}

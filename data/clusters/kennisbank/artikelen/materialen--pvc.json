@@ -1,0 +1,61 @@
+{
+  "cluster": "materialen",
+  "slug": "pvc",
+  "titel": "PVC: eigenschappen, prijs en toepassingen",
+  "title_tag": "PVC-vloer: eigenschappen, prijs en opbouw | Bylder",
+  "meta_description": "PVC is een kunststof vloermateriaal met slijtvaste toplaag: waterbestendig, stil en geschikt voor vloerverwarming. Bekijk prijzen, klik vs dryback en varianten.",
+  "intro": [
+    "PVC (polyvinylchloride) is een thermoplastische kunststof die in het interieur vooral wordt toegepast als vloerbedekking: een meerlaagse plank of tegel met een geprinte decorlaag en een transparante slijtlaag erbovenop. Door die opbouw combineert een PVC-vloer de uitstraling van hout of steen met de praktische eigenschappen van kunststof.",
+    "PVC-vloeren zijn de laatste tien jaar enorm populair geworden in nieuwbouw en renovatie. Ze zijn waterbestendig, warm aan de voeten, stil en vrijwel overal te leggen — ook op vloerverwarming. Daarmee zijn ze een direct alternatief voor laminaat, hout en gietvloeren."
+  ],
+  "stats": [
+    ["€45–€90", "per m² gelegd"],
+    ["0,30–0,70 mm", "slijtlaag (toplaag)"],
+    ["15–25 jaar", "levensduur"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe is een PVC-vloer opgebouwd?",
+      "html": "<p>Een PVC-vloer bestaat uit meerdere lagen: een stevige draaglaag (bij rigid core een stijve kern van steen-kunststofcomposiet, SPC), daarop een fotorealistische decorlaag en als afsluiting een transparante slijtlaag. Die slijtlaag bepaalt de kwaliteit: hoe dikker, hoe langer de vloer meegaat.</p><ul><li><strong>0,30 mm slijtlaag</strong> — geschikt voor normaal woongebruik</li><li><strong>0,55 mm slijtlaag</strong> — intensief woongebruik en licht projectgebruik</li><li><strong>0,70 mm slijtlaag</strong> — zwaar (project)gebruik, winkels en kantoren</li></ul><p>Voor een gezinswoning is 0,55 mm de veilige middenweg: nauwelijks duurder, merkbaar slijtvaster.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van PVC?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse</td><td>€45–€90 per m² inclusief leggen en egaliseren (indicatie)</td></tr><tr><td>Krasvastheid</td><td>Goed</td><td>Slijtlaag beschermt; scherp grit en meubelpoten blijven aandachtspunt</td></tr><tr><td>Vocht- en vlekbestendigheid</td><td>Uitstekend</td><td>Waterbestendig; ook geschikt voor badkamer en keuken</td></tr><tr><td>Onderhoud</td><td>Zeer laag</td><td>Stofzuigen en licht vochtig dweilen volstaat</td></tr><tr><td>Levensduur</td><td>15–25 jaar</td><td>Afhankelijk van slijtlaagdikte en gebruik</td></tr><tr><td>Duurzaamheid</td><td>Matig</td><td>Fossiele kunststof; moderne vloeren zijn weekmaker-arm en deels recyclebaar</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wat is het verschil tussen klik-PVC en dryback?",
+      "html": "<p>PVC komt in twee legmethodes. <strong>Dryback</strong> (plak-PVC) wordt volledig verlijmd op een strak geëgaliseerde ondervloer. Het resultaat is dun (circa 2,5 mm), muisstil en zeer stabiel — de mooiste en duurzaamste oplossing, maar de egalisatie maakt het arbeidsintensiever. <strong>Klik-PVC</strong> heeft een dikkere plank (4–6,5 mm) met kliksysteem en wordt zwevend gelegd, vaak op een dunne ondervloer. Dat is sneller, vergevingsgezinder bij een minder vlakke ondergrond en zelf te leggen. <strong>Rigid core (SPC)</strong> is de moderne klikvariant met een stijve kern: vormvaster bij temperatuurwisselingen en zonlicht, en daardoor de standaardkeuze bij grote oppervlakken en veel glas.</p>"
+    },
+    {
+      "kop": "Kan PVC op vloerverwarming?",
+      "html": "<p>Ja, PVC is een van de best presterende vloeren op vloerverwarming. De vloer is dun en heeft een lage warmteweerstand (doorgaans ruim onder de vereiste 0,09 m²K/W bij dryback), waardoor warmte snel doorkomt. Dryback presteert hier het best; bij klik-PVC telt de ondervloer mee in de totale warmteweerstand — kies dan een ondervloer die specifiek voor vloerverwarming is gemaakt. Ook vloerkoeling is meestal toegestaan, mits de fabrikant dat vrijgeeft.</p>"
+    },
+    {
+      "kop": "Hoe zit het met milieu en gezondheid?",
+      "html": "<p>PVC is een fossiele kunststof en scoort qua grondstof minder goed dan bijvoorbeeld <a href=\"/kennisbank/materialen/linoleum-marmoleum/\">linoleum</a> of <a href=\"/kennisbank/materialen/kurk/\">kurk</a>. De zorgen van vroeger over weekmakers zijn bij Europese A-merken grotendeels achterhaald: die gebruiken ftalaatvrije weekmakers en zijn emissie-gecertificeerd voor het binnenklimaat. Recycling verbetert, vooral van snijafval en dryback-vloeren, maar een volledig circulaire keten is er nog niet. Wie duurzaamheid zwaar laat wegen, kijkt naar linoleum; wie maximale waterbestendigheid en gebruiksgemak zoekt, zit bij PVC goed.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat kost een PVC-vloer per m²?",
+      "a": "Reken op €45–€90 per m² inclusief leggen, afhankelijk van kwaliteit, slijtlaagdikte en de benodigde egalisatie. Alleen materiaal kost grofweg €25–€60 per m². Dryback is per m² materiaal vaak goedkoper, maar de egalisatie maakt het totaal vergelijkbaar."
+    },
+    {
+      "q": "Is klik-PVC of plak-PVC (dryback) beter?",
+      "a": "Dryback ligt het stilst en stabielst en is de beste keuze bij vloerverwarming en grote oppervlakken, maar vereist een perfect geëgaliseerde ondervloer. Klik-PVC is sneller gelegd, zelf te doen en makkelijker te vervangen. Kwalitatief doen ze weinig voor elkaar onder."
+    },
+    {
+      "q": "Is een PVC-vloer geschikt voor de badkamer?",
+      "a": "Ja, PVC is waterbestendig en daarmee prima geschikt voor badkamers. Kies bij voorkeur dryback of rigid core en laat randen en doorvoeren netjes afkitten, zodat er geen water onder de vloer kan lopen."
+    },
+    {
+      "q": "Is PVC hetzelfde als vinyl of linoleum?",
+      "a": "PVC en vinyl zijn hetzelfde basismateriaal; vinyl wordt vaak gebruikt voor vloeren van de rol, PVC voor planken en tegels. Linoleum is iets heel anders: een natuurlijk materiaal van lijnzaadolie op jute. De materialen worden vaak verward, maar verschillen sterk in samenstelling en duurzaamheidsprofiel."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
+    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
+    "zusters": ["linoleum-marmoleum", "kurk", "vloeren:pvc-vloer-kiezen"]
+  }
+}

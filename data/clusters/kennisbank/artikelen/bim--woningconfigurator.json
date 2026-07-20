@@ -1,0 +1,61 @@
+{
+  "cluster": "bim",
+  "slug": "woningconfigurator",
+  "titel": "De woningconfigurator bij nieuwbouw: zo kies je slim je opties",
+  "title_tag": "Woningconfigurator nieuwbouw: zo werkt het | Bylder",
+  "meta_description": "Met een woningconfigurator kies je online je nieuwbouwopties. Lees hoe het werkt, hoe het aan BIM hangt en hoe je te dure meerwerkprijzen voorkomt.",
+  "intro": [
+    "Een woningconfigurator is een online kopersportaal waarin je de opties en het meerwerk voor je nieuwbouwwoning zelf samenstelt: van uitbouw en dakkapel tot extra wandcontactdozen en een andere keukenopstelling. Je klikt je keuzes aan, ziet direct de prijs en bevestigt vóór een sluitingsdatum.",
+    "Handig, want je kiest in je eigen tempo en ziet vaak meteen wat een optie met je plattegrond doet. Maar de configurator is óók een verkoopkanaal van de bouwer, met eenzijdig vastgestelde prijzen en harde deadlines. Wie slim klikt, bespaart al snel honderden tot duizenden euro's."
+  ],
+  "stats": [
+    ["96%", "van de kopers betaalt minstens één meerwerkpost te duur"],
+    ["€1.840", "gemiddeld te veel betaald aan meerwerk per koper"],
+    ["Hard", "sluitingsdata in de configurator zijn vrijwel nooit te verzetten"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe werkt een woningconfigurator?",
+      "html": "<p>Na de koop krijg je toegang tot een online omgeving (bekende systemen zijn onder meer kopersportalen van ontwikkelaars en platforms als Homestudios of vergelijkbare omgevingen). Daarin doorloop je meestal deze stappen:</p><ul><li><strong>Ruwbouwopties:</strong> uitbouw, dakkapel, extra verdieping, verplaatste wanden — de grote keuzes met vroege sluitingsdata.</li><li><strong>Installatieopties:</strong> extra elektra, loze leidingen, vloerverwarming, zonnepanelen.</li><li><strong>Afbouwopties:</strong> keuken, sanitair, tegelwerk, binnendeuren.</li></ul><p>Per optie zie je een omschrijving, vaak een beeld of aangepaste plattegrond, en een vaste prijs. Voor elke fase geldt een sluitingsdatum die gekoppeld is aan de bouwplanning.</p>"
+    },
+    {
+      "kop": "Hoe hangt de configurator aan het BIM-model?",
+      "html": "<p>Achter de schermen zijn de opties bij veel projecten voorbereid als varianten op het BIM-model van je woning. Kies jij de uitbouw van 2,4 meter, dan activeert de bouwer die variant: de constructie, installaties en tekeningen worden in het model aangepast en gecontroleerd, bijvoorbeeld met clash-detectie.</p><p>Daarom kun je in moderne configurators vaak direct een bijgewerkte plattegrond of zelfs een 3D-beeld van je keuze zien. En daarom zijn sluitingsdata zo hard: op een gegeven moment wordt jouw definitieve variant \"bevroren\" en gaat het model door naar werkvoorbereiding en inkoop. Later nog wijzigen is dan duur of onmogelijk.</p>"
+    },
+    {
+      "kop": "Waar moet je op letten voordat je klikt?",
+      "html": "<p>Drie zaken verdienen extra aandacht:</p><ul><li><strong>Sluitingsdata zijn heilig.</strong> Zet ze in je agenda zodra je toegang krijgt. Mis je een deadline, dan vervalt de optie of betaal je fors bij via een individuele wijziging.</li><li><strong>Vergelijk prijzen vóór je klikt.</strong> Een klik in de configurator is een bestelling. Uit de Bylder-praktijk blijkt dat zo'n 96% van de kopers minstens één post te duur betaalt, gemiddeld circa €1.840 te veel. Benchmark dus eerst, bestel daarna.</li><li><strong>Lees wat er precies bij een optie hoort.</strong> \"Uitbouw 2,4 m\" zegt niets over vloerverwarming, elektra of stucwerk in dat deel. De kleine lettertjes bepalen de echte waarde.</li></ul>"
+    },
+    {
+      "kop": "Welke valkuilen zitten er in de configurator?",
+      "html": "<p>De configurator voelt als webshoppen, maar er zijn belangrijke verschillen:</p><ul><li><strong>Geen concurrentie:</strong> er is maar één aanbieder, dus de prijs staat vast en onderhandelen kan meestal niet per optie.</li><li><strong>Psychologie van kleine bedragen:</strong> €395 voor een extra wandcontactdoos lijkt weinig naast een woning van vier ton, maar is een veelvoud van de kostprijs.</li><li><strong>Stelposten en \"prijs op aanvraag\":</strong> juist bij keuken en sanitair blijven bedragen vaag, waardoor vergelijken lastig wordt.</li><li><strong>Later-doen-fuik:</strong> sommige opties (zoals een loze leiding of extra groep) zijn na oplevering veel duurder of ingrijpender dan tijdens de bouw — maar andersom is een dure bouwer-optie soms juist ná oplevering goedkoper door een eigen installateur te doen.</li></ul><p>Twijfel je bij grote opties zoals een uitbouw of prefab-aanbouw? Reken alternatieven door met de Prefab-configurator van Bylder en leg de bouwerprijs ernaast.</p>"
+    },
+    {
+      "kop": "Hoe haal je het maximale uit je configurator?",
+      "html": "<p>Een simpele werkwijze die zich terugbetaalt: verzamel eerst al je gewenste opties in een lijst zonder te bevestigen. Laat die lijst vervolgens onafhankelijk benchmarken — bijvoorbeeld via de AI offerte-check van Bylder — zodat je per post weet of de prijs marktconform is. Bestel daarna in één keer wat de moeite waard is, en plan wat te duur is voor ná de oplevering met een eigen partij. Zo gebruik je de configurator waarvoor die goed is (overzicht en gemak) zonder de hoofdprijs te betalen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is een woningconfigurator?",
+      "a": "Een online kopersportaal waarin je de opties en het meerwerk voor je nieuwbouwwoning kiest, van uitbouw tot extra elektra. Je ziet per optie een vaste prijs en bevestigt je keuzes vóór een sluitingsdatum."
+    },
+    {
+      "q": "Kan ik onderhandelen over prijzen in de configurator?",
+      "a": "Meestal niet: de prijzen zijn eenzijdig door de bouwer vastgesteld. Je kunt wél per post beoordelen of de prijs marktconform is en te dure opties na de oplevering door een eigen partij laten uitvoeren."
+    },
+    {
+      "q": "Wat gebeurt er als ik een sluitingsdatum mis?",
+      "a": "Dan vervalt de optie meestal, of je kunt alleen nog via een individuele (duurdere) wijziging iets regelen. Sluitingsdata hangen aan de bouwplanning en het bevriezen van het model, dus ze zijn vrijwel nooit te verzetten."
+    },
+    {
+      "q": "Zijn de plaatjes in de configurator betrouwbaar?",
+      "a": "Ze komen vaak uit het BIM-model en geven een goede indruk van de indeling, maar het zijn geen contractstukken. Juridisch tellen de contracttekeningen en de technische omschrijving. Controleer maten en omschrijvingen dus altijd op de officiële stukken."
+    }
+  ],
+  "links": {
+    "tool": ["/tools/prefab-configurator/", "Prefab-configurator"],
+    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
+    "zusters": ["bim-en-meerwerk", "begrip:meerwerk", "begrip:stelpost"]
+  }
+}

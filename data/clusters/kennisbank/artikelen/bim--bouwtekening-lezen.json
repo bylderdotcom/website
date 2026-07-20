@@ -1,0 +1,61 @@
+{
+  "cluster": "bim",
+  "slug": "bouwtekening-lezen",
+  "titel": "Bouwtekening lezen: zo begrijp je de tekeningen van je woning",
+  "title_tag": "Bouwtekening lezen: zo doe je dat | Bylder",
+  "meta_description": "Bouwtekening lezen zonder bouwkennis: soorten tekeningen, schaal 1:100 en 1:50, maatvoering en wat je moet controleren vóór je tekent.",
+  "intro": [
+    "Een bouwtekening lezen doe je in drie stappen: bepaal eerst welk soort tekening je voor je hebt (situatie, plattegrond, gevel, doorsnede of detail), kijk dan naar de schaal (meestal 1:100 of 1:50) en volg daarna de maatvoeringslijnen om de echte afmetingen te vinden. Met die basis kun je vrijwel elke tekening van je nieuwbouwwoning ontcijferen.",
+    "Dat loont, want de contracttekeningen zijn juridisch bepalend voor wat je koopt — niet de sfeerimpressies uit de brochure. Wie zijn tekeningen begrijpt, ontdekt schuine kanten, koven en krappe maten vóór het tekenen in plaats van bij de oplevering."
+  ],
+  "stats": [
+    ["1:100", "gangbare schaal voor verkooptekeningen: 1 cm op papier is 1 meter echt"],
+    ["1:50", "gangbare schaal voor contract- en werktekeningen: 1 cm is 50 cm"],
+    ["5 soorten", "situatie, plattegrond, gevel, doorsnede en detail vertellen elk iets anders"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke soorten bouwtekeningen krijg je bij nieuwbouw?",
+      "html": "<p>Bij een nieuwbouwwoning horen meerdere tekeningen die samen het verhaal vertellen:</p><table class=\"vgl\"><thead><tr><th>Tekening</th><th>Wat zie je?</th><th>Waar let je op?</th></tr></thead><tbody><tr><td>Situatietekening</td><td>Je kavel in de omgeving, van bovenaf</td><td>Kavelgrenzen, oriëntatie (zon!), parkeren, afstand tot buren</td></tr><tr><td>Plattegrond</td><td>Horizontale doorsnede per verdieping</td><td>Indeling, maten, deuren, elektra, leidingschachten</td></tr><tr><td>Geveltekening</td><td>De buitenkant per gevel, recht van voren</td><td>Raamhoogtes, materialen, positie van kozijnen</td></tr><tr><td>Doorsnede</td><td>Verticale snede door de woning</td><td>Verdiepingshoogtes, schuine daken, borstweringen</td></tr><tr><td>Detailtekening</td><td>Uitvergroting van een aansluiting</td><td>Hoe kozijn, dak of vloer precies is opgebouwd</td></tr></tbody></table><p>Kijk nooit alleen naar de plattegrond: een slaapkamer kan er op de plattegrond prima uitzien, terwijl de doorsnede laat zien dat de helft onder een schuin dak ligt.</p>"
+    },
+    {
+      "kop": "Wat betekent de schaal 1:100 of 1:50?",
+      "html": "<p>De schaal vertelt hoeveel keer de werkelijkheid is verkleind. Bij 1:100 is elke centimeter op papier één meter in het echt; bij 1:50 is elke centimeter 50 centimeter. Verkooptekeningen zijn vaak 1:100, contract- en werktekeningen 1:50, en details 1:20, 1:10 of 1:5.</p><p>Twee waarschuwingen. Eén: meet nooit met een liniaal op een print of pdf — printers en pdf-viewers schalen ongemerkt bij, dus gebruik altijd de aangegeven maatvoering in millimeters. Twee: hoe kleiner het tweede getal, hoe gedetailleerder en betrouwbaarder de tekening. Vraag bij belangrijke beslissingen dus om de 1:50-versie.</p>"
+    },
+    {
+      "kop": "Hoe lees je de maatvoering?",
+      "html": "<p>Maten op bouwtekeningen staan in millimeters: 3600 betekent 3,60 meter. Ze staan op maatlijnen langs de tekening, vaak in meerdere rijen: de buitenste rij geeft de totaalmaat, de rijen daarbinnen de tussenmaten van muren en openingen.</p><p>Let op het verschil tussen soorten maten:</p><ul><li><strong>Ruwbouwmaten:</strong> gemeten tussen de kale (casco) wanden, vóór stucwerk en afwerking.</li><li><strong>Afgewerkte maten:</strong> de maat die je na afwerking overhoudt — meestal 1 à 2 cm kleiner per wand.</li><li><strong>Dagmaat:</strong> de vrije doorgang van een opening, bijvoorbeeld van een deurkozijn — dé maat die telt voor je bank of Amerikaanse koelkast.</li></ul><p>Verkooptekeningen vermelden vaak \"circa\"-maten. Voor keuken en badkamer wil je uiteindelijk maatvaste werktekeningen of een inmeting.</p>"
+    },
+    {
+      "kop": "Wat controleer je op de tekening vóór je tekent?",
+      "html": "<p>Loop deze punten na voordat je de koop-/aannemingsovereenkomst tekent:</p><ul><li><strong>Maten van de belangrijkste ruimtes:</strong> past je bed plus loopruimte in de slaapkamer, en je bank in de woonkamer?</li><li><strong>Draairichting van deuren:</strong> een verkeerd draaiende deur kost zomaar een halve meter wand.</li><li><strong>Elektra en loze leidingen:</strong> genoeg wandcontactdozen op logische plekken? Aansluitingen voor tv en internet waar jij ze wilt?</li><li><strong>Schuine kanten en koven:</strong> check de doorsnede voor sta-hoogte en verborgen leidingkokers.</li><li><strong>Raamhoogtes en borstweringen:</strong> bepaalt zicht, licht en waar meubels kunnen staan.</li><li><strong>Verschillen tussen tekeningen onderling:</strong> bij tegenstrijdigheden geldt een rangorde van documenten — vraag ernaar en leg afwijkingen schriftelijk vast.</li></ul><p>Wil je een tweede paar ogen? Upload je plattegrond bij de AI QuickScan van Bylder en krijg direct de aandachtspunten van jouw specifieke tekening.</p>"
+    },
+    {
+      "kop": "Wat als de gebouwde woning afwijkt van de tekening?",
+      "html": "<p>Kleine afwijkingen zijn bouwkundig normaal en contractueel vaak toegestaan (denk aan geringe maatafwijkingen). Grotere afwijkingen — een verplaatste leidingkoker, een ander kozijn — meld je bij de oplevering en laat je vastleggen in het proces-verbaal van oplevering. Juist daarom is het slim om je contracttekeningen goed te kennen: je kunt alleen claimen wat je kunt aanwijzen. Bewaar dus altijd de getekende versie van de tekeningen, niet alleen de verkoopbrochure.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "In welke eenheid staan maten op een bouwtekening?",
+      "a": "Vrijwel altijd in millimeters. Een maat van 5400 betekent dus 5,40 meter. Meet nooit zelf met een liniaal op een print of pdf, want die zijn vaak ongemerkt geschaald — gebruik de maatvoeringslijnen."
+    },
+    {
+      "q": "Wat is het verschil tussen een tekening op 1:100 en 1:50?",
+      "a": "Bij 1:100 is de werkelijkheid honderd keer verkleind, bij 1:50 vijftig keer. Een 1:50-tekening is dus twee keer zo gedetailleerd en bevat meestal meer maatvoering. Voor belangrijke beslissingen vraag je om de 1:50-contracttekeningen."
+    },
+    {
+      "q": "Welke tekening laat schuine daken en hoogtes zien?",
+      "a": "De doorsnedetekening. Die snijdt de woning verticaal door en toont verdiepingshoogtes, schuine kanten en borstweringen. Beoordeel een slaapkamer op zolder dus nooit alleen op de plattegrond."
+    },
+    {
+      "q": "Zijn de maten op de verkooptekening bindend?",
+      "a": "Verkooptekeningen werken vaak met circa-maten en kleine afwijkingen zijn contractueel meestal toegestaan. Bindend zijn de contracttekeningen en de technische omschrijving. Plan keuken en badkamer daarom op werktekeningen of een inmeting, niet op de brochure."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan van je plattegrond"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["plattegrond-symbolen", "begrip:dagmaat", "begrip:casco"]
+  }
+}

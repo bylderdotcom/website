@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "stucwerk-glad-of-structuur",
+  "titel": "Glad stucwerk of structuur: wat kies je?",
+  "title_tag": "Glad stucwerk of spachtelputz? Prijs & keuze | Bylder",
+  "meta_description": "Glad stucwerk of spachtelputz? Vergelijk prijs per m², uitstraling en reparatie, en lees wat behangklaar en sausklaar betekenen bij nieuwbouw.",
+  "intro": [
+    "Glad stucwerk is de beste keuze als je wanden wilt sausen of behangen in een moderne woning; spachtelputz (structuur) kies je als je een onderhoudsarme, stootvaste wand wilt die kleine oneffenheden verbergt. Beide zijn sierpleisters, maar het verschil in uitstraling en herstelgemak is groot.",
+    "Bij nieuwbouw worden wanden standaard behangklaar opgeleverd: te ruw om direct te sausen. Vrijwel iedereen laat dus nog stuken, en dan is dit dé keuze die je moet maken voordat de stukadoor offreert."
+  ],
+  "stats": [
+    ["€10–25/m²", "indicatie glad stucwerk (sausklaar)"],
+    ["€10–20/m²", "indicatie spachtelputz aanbrengen"],
+    ["96%", "van kopers betaalt minstens één post te duur"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen glad stucwerk en spachtelputz?",
+      "html": "<p>Glad stucwerk (pleisterwerk) is een dunne, strak geschuurde laag die na het sausen een egale, vlakke wand geeft. Spachtelputz is een sierpleister met korrel (meestal 1–2 mm) die in een cirkelende beweging wordt aangebracht en een licht korrelige structuur achterlaat. Glad oogt moderner en luxer; structuur is vergevingsgezinder en steviger in gebruik.</p><table class=\"vgl\"><thead><tr><th>Aspect</th><th>Glad stucwerk</th><th>Spachtelputz</th></tr></thead><tbody><tr><td>Indicatie per m²</td><td>€10–25</td><td>€10–20</td></tr><tr><td>Uitstraling</td><td>Strak, modern</td><td>Korrelig, klassieker</td></tr><tr><td>Verbergt oneffenheden</td><td>Nee, toont alles</td><td>Ja, goed</td></tr><tr><td>Reparatie</td><td>Plaatselijk lastig, vaak hele wand oversausen</td><td>Zichtbaar bij te zetten, moeilijk onzichtbaar</td></tr><tr><td>Overschilderbaar</td><td>Eenvoudig</td><td>Kost meer verf door de korrel</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wanneer kies je glad en wanneer structuur?",
+      "html": "<p>Kies glad stucwerk in woonruimtes waar je een strak, licht interieur wilt en bij strijklicht van grote raampartijen goed voorbereid wordt gewerkt. Kies spachtelputz in hallen, trapgaten en gangen die stootjes te verduren krijgen, of op wanden die niet perfect vlak zijn. Veel nieuwbouwkopers combineren: glad in woonkamer en slaapkamers, structuur in het trappenhuis.</p>"
+    },
+    {
+      "kop": "Wat betekenen behangklaar en sausklaar bij oplevering?",
+      "html": "<p>Behangklaar betekent dat de wand vlak genoeg is om te behangen, maar te ruw om direct te sausen: naden en gaatjes zijn gevuld, maar het oppervlak toont oneffenheden zodra er verf op komt. Sausklaar (ook wel klasse-B pleisterwerk) betekent dat de wand na licht schuren direct gesausd kan worden. Nieuwbouw wordt vrijwel altijd behangklaar opgeleverd; het verschil overbruggen kost indicatief €10–25 per m² aan stucwerk. Vraag bij de kopersbegeleiding na wat exact is afgesproken, want dit bepaalt je stucbudget voor de hele woning.</p>"
+    },
+    {
+      "kop": "Hoe zit het met reparatie en onderhoud?",
+      "html": "<p>Glad stucwerk is bij beschadiging plaatselijk bij te werken, maar de reparatie blijft vaak zichtbaar totdat de hele wand opnieuw gesausd is. Spachtelputz-reparaties vallen door de structuur juist méér op, omdat de korrelbeweging moeilijk na te bootsen is. In beide gevallen geldt: bewaar wat verf en vraag je stukadoor welk product is gebruikt, dan blijft bijwerken betaalbaar.</p>"
+    },
+    {
+      "kop": "Hoe voorkom je een te dure stucofferte?",
+      "html": "<p>Stucwerk is een van de posten waar prijzen het meest uiteenlopen: voor dezelfde woning zien we offertes die per m² meer dan het dubbele vragen. Vraag altijd een prijs per m² met vermelding van de afwerkingsklasse, en laat de offerte controleren met de AI offerte-check van Bylder. Leden besparen gemiddeld €4.200 op hun totale afwerking.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik spachtelputz later glad laten maken?",
+      "a": "Ja, maar het is bewerkelijk: de structuur moet worden uitgevlakt met meerdere lagen pleister of eerst (deels) verwijderd. Reken op vergelijkbare of hogere kosten dan nieuw glad stucwerk, indicatief vanaf €15–25 per m²."
+    },
+    {
+      "q": "Is glad stucwerk gevoelig voor scheurtjes in nieuwbouw?",
+      "a": "Nieuwbouw zet de eerste een tot twee jaar na oplevering, waardoor haarscheurtjes in glad stucwerk kunnen ontstaan. Dat is normaal en meestal eenvoudig bij te werken; sommige stukadoors raden aan de eerste winter af te wachten voordat je overal definitief saust."
+    },
+    {
+      "q": "Wat kost het stuken van een complete nieuwbouwwoning?",
+      "a": "Bij een gemiddelde eengezinswoning met 250–350 m² wand- en plafondoppervlak kom je indicatief op €3.000–€8.000 voor glad, sausklaar stucwerk. De totale afwerking van een nieuwbouwwoning ligt doorgaans tussen €35.000 en €65.000."
+    },
+    {
+      "q": "Moet het plafond dezelfde afwerking krijgen als de wanden?",
+      "a": "Dat hoeft niet. Veel woningen combineren gladde wanden met spuitwerk op het plafond, wat goedkoper is. Glad gestuukte plafonds ogen luxer maar zijn gevoeliger voor strijklicht en dus vakwerk."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/eerlijke-prijzen/stucwerk/", "Eerlijke prijs voor stucwerk"],
+    "zusters": ["wanden-afwerken", "begrip:spachtelputz", "materialen:stucsoorten"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "warmtepomp-geluid",
+  "titel": "Hoeveel geluid maakt een warmtepomp en wat zijn de regels?",
+  "title_tag": "Warmtepomp geluid: regels, dB en oplossingen | Bylder",
+  "meta_description": "Hoeveel geluid maakt een warmtepomp? Sinds 2021 geldt maximaal 40 dB 's nachts bij de buren. Lees de regels, slimme opstelplekken en oplossingen.",
+  "intro": [
+    "Een moderne warmtepomp-buitenunit produceert doorgaans 35 tot 55 dB(A) aan geluid, vergelijkbaar met zacht gepraat tot een rustige koelkast, en moet sinds april 2021 wettelijk voldoen aan maximaal 40 dB 's nachts op de erfgrens of bij het te openen raam van de buren.",
+    "Bij nieuwbouw is de warmtepomp de standaard verwarming, dus de opstelplek wordt al in het ontwerp meegenomen. Toch loont het om er als koper kritisch naar te kijken: een doordachte plek voorkomt gedoe met buren en scheelt de kosten van een geluidskap achteraf."
+  ],
+  "stats": [
+    ["40 dB", "maximum 's nachts (19.00–7.00 uur) bij de buren"],
+    ["45 dB", "maximum overdag bij de buren"],
+    ["2021", "geluidseis voor buitenunits in het Bouwbesluit"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke geluidseisen gelden voor een warmtepomp?",
+      "html": "<p>Sinds 1 april 2021 stelt de bouwregelgeving eisen aan buiten opgestelde warmtepompen en airco's: maximaal 45 dB overdag en 40 dB in de avond en nacht (19.00 tot 7.00 uur), gemeten op de erfgrens of bij een te openen raam of deur van de buren. De installateur moet dit bij plaatsing aantonen, meestal met een gestandaardiseerde rekentool op basis van het bronvermogen van het toestel en de afstand tot de buren. De eis geldt voor nieuwe installaties, zowel bij nieuwbouw als in bestaande bouw.</p>"
+    },
+    {
+      "kop": "Hoeveel geluid maakt een buitenunit in de praktijk?",
+      "html": "<p>Fabrikanten geven twee waarden op: het geluidsvermogen (bronsterkte, vaak 50 tot 65 dB) en het geluidsdrukniveau op afstand, bijvoorbeeld 35 tot 45 dB op drie meter. Vergelijk toestellen altijd op dezelfde grootheid. Het geluid is het hoogst bij vrieskou, als de ventilator hard draait en het toestel ontdooit. Stillere modellen hebben een lagere toerentalregeling en een nachtstand die het vermogen 's nachts begrenst. Elke 3 dB minder is een halvering van het geluidsvermogen; het verschil tussen een gemiddeld en een stil model is dus groter dan het lijkt.</p>"
+    },
+    {
+      "kop": "Wat is de beste opstelplek voor de buitenunit?",
+      "html": "<ul><li><strong>Afstand tot de buren:</strong> elke meter extra scheelt; midden op een plat dak of achter in de tuin is gunstiger dan pal op de erfgrens.</li><li><strong>Niet in een hoek:</strong> tussen twee muren weerkaatst het geluid en klinkt de unit luider.</li><li><strong>Niet onder een slaapkamerraam:</strong> ook niet dat van jezelf.</li><li><strong>Trillingsvrij monteren:</strong> op trillingsdempers, en liever op een bodemconsole of dak dan aan een lichte gevel of houten wand.</li><li><strong>Onderhoudsruimte:</strong> houd rondom ruimte vrij voor luchtstroming en service; een ingebouwde unit die zijn eigen koude lucht aanzuigt wordt luider en zuiniger nooit.</li></ul>"
+    },
+    {
+      "kop": "Wat doet een geluidskap en wanneer is die nodig?",
+      "html": "<p>Een geluidskap of geluiddempende omkasting reduceert het geluid met indicatief 5 tot 10 dB, mits goed ontworpen met geluidsabsorberend materiaal en voldoende luchtdoorlaat. Een dichte kist zonder ventilatieopeningen is funest voor het rendement. Reken indicatief op €500 tot €1.500 voor een kant-en-klare kap. Een kap is vooral zinvol als de unit dicht op de erfgrens moet staan of als de rekentool net niet aan de 40 dB-eis komt. Vaak is een stiller toestel of een betere plek de goedkopere oplossing.</p>"
+    },
+    {
+      "kop": "Maakt de binnenunit ook geluid, en scheelt split of monoblock?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Kenmerk</th><th>Split</th><th>Monoblock</th></tr></thead><tbody><tr><td>Compressor</td><td>in de buitenunit</td><td>volledig buiten (alles in één unit)</td></tr><tr><td>Geluid buiten</td><td>gemiddeld</td><td>iets hoger, want alle techniek zit buiten</td></tr><tr><td>Geluid binnen</td><td>binnenunit zoemt licht (pompen, kleppen)</td><td>vrijwel geen</td></tr><tr><td>Binnenopstelling</td><td>binnenunit ter grootte van een cv-ketel</td><td>alleen boilervat en leidingen</td></tr></tbody></table><p>De binnenunit van een splitsysteem maakt circa 30 tot 40 dB; zet die daarom niet tegen een slaapkamerwand maar in een technische ruimte of op zolder, trillingsvrij gemonteerd.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel dB mag een warmtepomp maken bij de buren?",
+      "a": "Sinds april 2021 maximaal 45 dB overdag en 40 dB tussen 19.00 en 7.00 uur, gemeten op de erfgrens of bij een te openen raam van de buren. De installateur toont dit aan met een gestandaardiseerde rekentool."
+    },
+    {
+      "q": "Is 40 dB veel geluid?",
+      "a": "Nee, 40 dB is vergelijkbaar met een rustige bibliotheek of zacht gezoem van een koelkast. Toch kan een constante bromtoon 's nachts storend zijn, zeker bij een open slaapkamerraam. Daarom is de opstelplek zo belangrijk."
+    },
+    {
+      "q": "Helpt een geluidskap echt?",
+      "a": "Een goed ontworpen geluidskap dempt indicatief 5 tot 10 dB. Kies een kap met absorberend materiaal en voldoende luchtdoorstroming, anders daalt het rendement van de warmtepomp. Vaak is een stillere unit of betere plek net zo effectief."
+    },
+    {
+      "q": "Kan ik bij nieuwbouw invloed uitleggen op de plek van de buitenunit?",
+      "a": "Vaak wel. Vraag de ontwikkelaar of aannemer om de geluidsberekening en de geplande opstelplek, en kaart een ongunstige plek (hoek, erfgrens, onder een slaapkamerraam) vroeg aan. Verplaatsen tijdens de bouw is veel goedkoper dan achteraf."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/renovatiekosten/warmtepomp/", "Kosten warmtepomp"],
+    "zusters": ["warmtepomp-typen", "hybride-warmtepomp", "vloerverwarming-hoofdverwarming"]
+  }
+}

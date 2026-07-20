@@ -1,0 +1,65 @@
+{
+  "cluster": "vloeren",
+  "slug": "pvc-vloer-kiezen",
+  "titel": "PVC-vloer kiezen: klik of dryback, en waar let je op?",
+  "title_tag": "PVC-vloer kiezen: klik of dryback (plak)? | Bylder",
+  "meta_description": "Een PVC-vloer kies je op legmethode (klik of dryback), toplaagdikte en ruimte. Bekijk prijzen, verschillen en de beste keuze voor vloerverwarming.",
+  "intro": [
+    "Een PVC-vloer kies je op drie punten: de legmethode (klik of dryback), de dikte van de toplaag en de ruimte waarin hij komt. Dryback — verlijmd op een geëgaliseerde ondervloer — is de beste keuze voor grote oppervlakken en vloerverwarming; klik-PVC is sneller gelegd en handiger in huurwoningen of op verdiepingen.",
+    "PVC is niet voor niets de populairste vloer in nieuwbouwwijken: waterbestendig, stil, warm aan de voeten en verkrijgbaar in hout-, steen- en betonlook. Deze keuzegids helpt je het juiste type kiezen; de eigenschappen van het materiaal zelf lees je op onze materiaalpagina over PVC."
+  ],
+  "stats": [
+    ["€45–90", "per m² gelegd (indicatie)"],
+    ["0,55 mm", "toplaag geschikt voor intensief woongebruik"],
+    ["15–25 jaar", "levensduur bij normale bewoning"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen klik-PVC en dryback (plak-PVC)?",
+      "html": "<p>Het verschil zit in de bevestiging, en dat werkt door in prijs, gevoel en toepassing:</p><table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Klik-PVC</th><th>Dryback (verlijmd)</th></tr></thead><tbody><tr><td>Leggen</td><td>Zwevend, ook zelf te doen</td><td>Verlijmd door vakman</td></tr><tr><td>Eisen aan ondervloer</td><td>Redelijk vlak</td><td>Strak geëgaliseerd</td></tr><tr><td>Geluid en gevoel</td><td>Iets holler</td><td>Massief, stil</td></tr><tr><td>Vloerverwarming</td><td>Goed</td><td>Best (direct contact)</td></tr><tr><td>Grote oppervlakken</td><td>Dilataties nodig</td><td>Naadloos door te leggen</td></tr><tr><td>Prijs totaal</td><td>Lager arbeidsloon</td><td>Hoger door egaliseren en lijmen</td></tr></tbody></table><p>Vuistregel: hele begane grond met vloerverwarming — dryback. Eén kamer, verdieping of tijdelijke situatie — klik.</p>"
+    },
+    {
+      "kop": "Hoe belangrijk is de toplaag (slijtlaag)?",
+      "html": "<p>De toplaag is de transparante slijtlaag bovenop het decor en bepaalt hoe lang de vloer mooi blijft. De gangbare diktes: 0,30 mm voor licht gebruik (slaapkamer), 0,55 mm voor intensief woongebruik (woonkamer, keuken, hal) en 0,70 mm voor project- en winkelgebruik. Voor een gezin met kinderen of huisdieren is 0,55 mm de veilige keuze.</p><p>Kijk daarnaast naar de embossing (structuur): een geregistreerde embossing die de houtnerf volgt, oogt aanzienlijk echter dan een gladde print.</p>"
+    },
+    {
+      "kop": "Welke PVC-vloer past bij welke ruimte?",
+      "html": "<ul><li><strong>Woonkamer en keuken:</strong> dryback met 0,55 mm toplaag; stil, strak en het best op vloerverwarming.</li><li><strong>Hal en entree:</strong> ook dryback, met donkerder of gemêleerd decor dat zand vergeeft.</li><li><strong>Slaapkamers en zolder:</strong> klik-PVC volstaat; sneller gelegd en 0,30–0,55 mm toplaag is genoeg.</li><li><strong>Badkamer:</strong> PVC kan hier, mits watervast verlijmd en met afgekitte randen; tegels blijven de meest zorgeloze keuze.</li><li><strong>Boven een kelder of bij optrekkend vocht:</strong> eerst het vochtprobleem oplossen; lijm en klikverbindingen houden niet van vocht van onderaf.</li></ul>"
+    },
+    {
+      "kop": "Kan PVC op vloerverwarming?",
+      "html": "<p>Ja, PVC hoort bij de beste vloeren voor vloerverwarming. De warmteweerstand van een verlijmde dryback-vloer ligt ver onder de vuistregel van maximaal 0,09 m²K/W, omdat de vloer maar enkele millimeters dik is en direct contact maakt met de dekvloer. Klik-PVC met een geïntegreerde of losse ondervloer presteert iets minder, maar blijft ruim geschikt — mits je een ondervloer kiest die voor vloerverwarming is bedoeld.</p><p>Let op de maximale vloertemperatuur die de fabrikant opgeeft (meestal 27–28 °C aan het oppervlak); bij normale woninginstallaties is dat geen probleem.</p>"
+    },
+    {
+      "kop": "Wat kost een PVC-vloer inclusief leggen?",
+      "html": "<p>Reken indicatief op €45–90 per m² gelegd. Klik-PVC zit meestal aan de onderkant van die range, dryback aan de bovenkant omdat egaliseren (indicatie €10–20 per m²) en verlijmen arbeidsintensiever zijn. Visgraat of andere legpatronen kosten extra door meer zaagverlies en legtijd.</p><p>Controleer in de offerte of egaliseren, primer, plinten en het verwijderen van de oude vloer zijn meegenomen — dit zijn de posten waarop aanbieders het vaakst uiteenlopen. Een offerte-check vooraf voorkomt dat je op deze details te veel betaalt; leden kopen de vloer zelf bovendien met korting bij aangesloten merken."
+    },
+    {
+      "kop": "Waarin verschilt deze keuzegids van de materiaalpagina over PVC?",
+      "html": "<p>Op de materiaalpagina lees je wat PVC precies is: de opbouw in lagen, milieuaspecten, weekmakers en hoe het zich verhoudt tot linoleum en laminaat als materiaal. Deze pagina is de keuzegids: welk type je koopt, welke toplaag, welke legmethode en wat een eerlijke prijs is. Twijfel je nog tussen PVC en een andere vloer, lees dan ook de directe vergelijking met de gietvloer.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is beter: klik-PVC of plak-PVC?",
+      "a": "Voor een hele begane grond met vloerverwarming is dryback (plak) beter: stiller, vlakker en zonder dilatatieprofielen. Klik-PVC wint als je snel, zelf of tijdelijk wilt leggen, bijvoorbeeld op een verdieping of in een huurwoning."
+    },
+    {
+      "q": "Welke toplaagdikte heb ik nodig?",
+      "a": "Voor woonkamer, keuken en hal is 0,55 mm de standaardkeuze; 0,30 mm volstaat in slaapkamers. 0,70 mm is bedoeld voor winkels en projecten en is thuis zelden nodig."
+    },
+    {
+      "q": "Moet de vloer geëgaliseerd worden voor PVC?",
+      "a": "Voor dryback vrijwel altijd: elke oneffenheid tekent door in de dunne planken. Voor klik-PVC volstaat een redelijk vlakke vloer met een geschikte ondervloer. Reken indicatief €10–20 per m² voor egaliseren."
+    },
+    {
+      "q": "Is een PVC-vloer geschikt voor de badkamer?",
+      "a": "Ja, mits watervast verlijmd en netjes afgekit langs de randen; het materiaal zelf is waterbestendig. Bij een inloopdouche zonder drempel blijven tegels met afschot de veiligste keuze."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
+    "zusters": ["gietvloer-of-pvc", "vloerverwarming-welke-vloer", "materialen:pvc"]
+  }
+}
