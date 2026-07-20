@@ -1,0 +1,61 @@
+{
+  "cluster": "bim",
+  "slug": "3d-model-woning-opvragen",
+  "titel": "Zo vraag je het 3D-model van je nieuwbouwwoning op",
+  "title_tag": "3D-model van je nieuwbouwwoning opvragen | Bylder",
+  "meta_description": "Het 3D-model van je nieuwbouwwoning opvragen: bij wie, in welk formaat (IFC), wanneer je het doet en wat je alternatieven zijn als je het niet krijgt.",
+  "intro": [
+    "Het 3D-model van je nieuwbouwwoning vraag je op bij je ontwikkelaar of aannemer, met een simpele vraag: \"Kan ik een export van het BIM-model van mijn woning krijgen als IFC-bestand?\" Vrijwel alle projectmatige nieuwbouw wordt in BIM ontworpen, dus het model bestaat — een export maken kost de bouwer enkele minuten.",
+    "Met dat model bekijk je je woning thuis in 3D, meet je maten na en plan je keuken, badkamer en interieur voordat de woning er staat. In dit artikel lees je bij wie je moet zijn, welk formaat je vraagt, wat het beste moment is en wat je doet als je nul op het rekest krijgt."
+  ],
+  "stats": [
+    ["IFC", "vraag altijd om dit open formaat (ISO 16739), niet om softwarebestanden"],
+    ["Vóór meerwerk", "het beste moment: voordat de sluitingsdata van je opties verstrijken"],
+    ["±5 min", "meer tijd kost een IFC-export de bouwer meestal niet"]
+  ],
+  "secties": [
+    {
+      "kop": "Bij wie vraag je het 3D-model op?",
+      "html": "<p>Volg deze volgorde:</p><ul><li><strong>De ontwikkelaar of verkopend makelaar</strong> is je eerste aanspreekpunt als koper; vaak loopt het via de kopersbegeleider.</li><li><strong>De aannemer</strong> beheert in de uitvoeringsfase meestal het meest actuele model, inclusief jouw gekozen opties.</li><li><strong>De architect</strong> is de maker van het ontwerpmodel; bij kleinere projecten (eigen kavel, zelfbouw) vraag je het rechtstreeks daar.</li></ul><p>Formuleer het concreet: \"Kunnen jullie mij een IFC-export sturen van het model van bouwnummer 24, inclusief de door mij gekozen opties?\" Hoe specifieker de vraag, hoe kleiner de kans op een standaard-afwijzing.</p>"
+    },
+    {
+      "kop": "In welk formaat vraag je het model aan?",
+      "html": "<p>Vraag om een <strong>IFC-bestand</strong>: het open uitwisselingsformaat volgens ISO 16739. Dat heeft twee grote voordelen. Ten eerste kun jij het openen met gratis viewers, zonder dure software. Ten tweede geeft de bouwer er geen bewerkbaar origineel mee weg, wat de drempel om te delen verlaagt — een IFC is te bekijken en te meten, maar niet zomaar te wijzigen in hun ontwerpbestand.</p><p>Krijg je in plaats daarvan een ander bestand aangeboden (bijvoorbeeld een link naar een online 3D-viewer van het project), dan is dat ook prima voor kijken en meten. Alleen een pdf met plaatjes is géén 3D-model; vraag dan door.</p>"
+    },
+    {
+      "kop": "Wanneer vraag je het model op?",
+      "html": "<p>Hoe eerder, hoe beter — en in elk geval vóór twee momenten:</p><ul><li><strong>Vóór de sluitingsdata van het meerwerk.</strong> Dan kun je opties (uitbouw, verplaatste wand, extra elektra) ruimtelijk beoordelen voordat je erop klikt en betaalt.</li><li><strong>Vóór de oplevering.</strong> Vraag dan om de as-built versie: het model zoals de woning werkelijk gebouwd is. Dat is waardevolle documentatie voor garantie, onderhoud en latere verbouwingen.</li></ul><p>Tussentijds wijzigt het model nog; vraag bij belangrijke beslissingen dus even om de actuele versie inclusief jouw opties.</p>"
+    },
+    {
+      "kop": "Wat als de bouwer het model niet wil geven?",
+      "html": "<p>Er bestaat geen wettelijke plicht om het model te delen; op het ontwerp rusten bovendien auteursrechten van de architect. Sommige bouwers weigeren daarom, of geven alleen beperkte exports. Wat je dan kunt doen:</p><ul><li>Vraag naar het <strong>waarom</strong> en stel een alternatief voor: een kijk-export (IFC zonder gevoelige details) of toegang tot een online viewer.</li><li>Vraag om <strong>maatvaste werktekeningen op schaal 1:50</strong> als pdf — daarmee kun je vrijwel alles wat je als koper nodig hebt.</li><li>Leg belangrijke maten (keukenwand, nissen, dagmaten) per e-mail vast, zodat je er later op terug kunt vallen.</li></ul><p>Blijf vriendelijk maar herhaal de vraag richting oplevering: de as-built documentatie hoort gewoon bij een nette overdracht.</p>"
+    },
+    {
+      "kop": "Welke alternatieven heb je zonder 3D-model?",
+      "html": "<p>Ook zonder IFC kun je digitaal aan de slag:</p><ul><li><strong>Digitaliseer je plattegrond.</strong> Een goede verkoop- of contracttekening is genoeg om je woning op schaal na te bouwen. Met Plattegrond inrichten van Bylder zet je er meubels op ware grootte in en zie je direct wat past.</li><li><strong>Maak er 3D-beelden van.</strong> De 3D-sfeerimpressie van Bylder tovert je plattegrond om tot fotorealistische beelden van je toekomstige interieur.</li><li><strong>Zelf inmeten.</strong> Bij bestaande bouw of na de ruwbouwfase kun je (laten) inmeten, eventueel met een laserafstandsmeter of een 3D-scan-app op je telefoon.</li></ul><p>Kortom: het model opvragen is de koninklijke weg, maar geen vereiste om digitaal grip op je woning te krijgen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is de bouwer verplicht om mij het 3D-model te geven?",
+      "a": "Nee, een wettelijke plicht is er niet en op het ontwerp rust auteursrecht van de architect. Veel bouwers delen wel een IFC-export of viewer-toegang als je er concreet om vraagt. Zo niet, vraag dan om maatvaste 1:50-tekeningen als alternatief."
+    },
+    {
+      "q": "Welk bestandsformaat moet ik vragen?",
+      "a": "Vraag om een IFC-bestand, het open formaat volgens ISO 16739. Dat open je thuis met gratis viewers en het is voor de bouwer laagdrempelig om te delen, omdat het geen bewerkbaar origineel is."
+    },
+    {
+      "q": "Wanneer kan ik het model het beste opvragen?",
+      "a": "Zo vroeg mogelijk, in elk geval vóór de sluitingsdata van het meerwerk, zodat je opties ruimtelijk kunt beoordelen. Vraag daarnaast vóór de oplevering om de as-built versie als blijvende documentatie van je woning."
+    },
+    {
+      "q": "Kost het opvragen van het model geld?",
+      "a": "Meestal niet: een IFC-export is voor de bouwer een kwestie van minuten. Sommige partijen rekenen administratiekosten of delen alleen via een online viewer. Een redelijke vraag op een rustig moment (via de kopersbegeleider) werkt het best."
+    }
+  ],
+  "links": {
+    "tool": ["/plattegrond-inrichten/", "Plattegrond inrichten op schaal"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["ifc-bestand", "van-bim-naar-interieurontwerp", "wat-is-bim"]
+  }
+}
