@@ -1,0 +1,61 @@
+{
+  "cluster": "vloeren",
+  "slug": "vloerverwarming-welke-vloer",
+  "titel": "Welke vloer werkt het best op vloerverwarming?",
+  "title_tag": "Beste vloer voor vloerverwarming: overzicht | Bylder",
+  "meta_description": "Tegels en gietvloeren geleiden het best op vloerverwarming. Bekijk de warmteweerstand per vloertype en de vuistregel van maximaal 0,09 m²K/W.",
+  "intro": [
+    "De beste vloeren op vloerverwarming zijn keramische tegels en gietvloeren: ze geleiden warmte vrijwel zonder weerstand. Direct daarna komen dryback-PVC en dunne meerlaagse parket- en laminaatvloeren. De vuistregel: de totale warmteweerstand van vloer plus ondervloer mag maximaal ongeveer 0,09 m²K/W zijn.",
+    "In vrijwel elke nieuwbouwwoning is vloerverwarming de enige warmtebron, gevoed door een warmtepomp op lage temperatuur. Juist dan telt elke honderdste warmteweerstand: een te isolerende vloer maakt het huis traag opwarmbaar en jaagt het stroomverbruik omhoog. De vloerkeuze is daarmee ook een energiekeuze."
+  ],
+  "stats": [
+    ["±0,09 m²K/W", "vuistregel maximale warmteweerstand"],
+    ["27–28 °C", "gangbare maximale oppervlaktetemperatuur"],
+    ["100%", "van moderne nieuwbouw heeft vloerverwarming"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is warmteweerstand en waarom is 0,09 m²K/W de grens?",
+      "html": "<p>De warmteweerstand (Rc-waarde, in m²K/W) geeft aan hoe sterk een materiaal warmtedoorgang tegenhoudt. Voor een vloer op vloerverwarming wil je die juist zo láág mogelijk: hoe lager, hoe sneller en zuiniger de warmte de kamer bereikt. De breed gehanteerde vuistregel is maximaal circa 0,09 m²K/W voor vloerbedekking én ondervloer samen; sommige fabrikanten staan tot 0,13 toe, maar bij een warmtepomp op lage temperatuur is streng zijn verstandig.</p><p>Belangrijk: tel altijd vloer plus ondervloer bij elkaar op. Een prima laminaatvloer wordt alsnog te isolerend met een dik schuim eronder.</p>"
+    },
+    {
+      "kop": "Hoe scoren de vloertypen op vloerverwarming?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Vloertype</th><th>Warmteweerstand (indicatie)</th><th>Oordeel</th></tr></thead><tbody><tr><td>Keramische tegels</td><td>±0,01–0,02</td><td>Beste geleiding, ideaal</td></tr><tr><td>Gietvloer (PU)</td><td>±0,01–0,02</td><td>Ideaal, snelle reactie</td></tr><tr><td>PVC dryback</td><td>±0,02–0,04</td><td>Zeer goed</td></tr><tr><td>PVC klik + ondervloer</td><td>±0,04–0,07</td><td>Goed, let op ondervloer</td></tr><tr><td>Laminaat + ondervloer</td><td>±0,06–0,10</td><td>Kan, dunne ondervloer kiezen</td></tr><tr><td>Meerlaags parket (verlijmd)</td><td>±0,05–0,09</td><td>Kan, dun en verlijmd</td></tr><tr><td>Marmoleum / kurk dun</td><td>±0,02–0,08</td><td>Kan, per product checken</td></tr><tr><td>Massief parket</td><td>±0,10–0,17</td><td>Af te raden</td></tr><tr><td>Tapijt + ondertapijt (dik)</td><td>±0,10–0,25</td><td>Alleen speciaal gelabelde kwaliteiten</td></tr></tbody></table><p>De exacte waarde verschilt per product en dikte; fabrikanten geven de Rc-waarde op — vraag ernaar bij de aankoop.</p>"
+    },
+    {
+      "kop": "Waarom reageren tegels en gietvloeren zo veel sneller?",
+      "html": "<p>Dunne, dichte materialen die direct contact maken met de dekvloer geven warmte vrijwel ongehinderd door. Een tegel- of gietvloer voelt daardoor snel warm aan en laat de installatie op een lage aanvoertemperatuur draaien — precies waar een warmtepomp het efficiëntst is. Zwevende vloeren met een luchtlaagje en ondervloer reageren trager: het huis wordt heus warm, maar de thermostaat moet eerder aan en het verbruik ligt hoger.</p><p>Vuistregel voor comfort én verbruik: hoe directer het contact met de dekvloer (verlijmd in plaats van zwevend), hoe beter.</p>"
+    },
+    {
+      "kop": "Waar let je per vloertype op bij de aanschaf?",
+      "html": "<ul><li><strong>Tegels:</strong> vrijwel altijd goed; laat de dekvloer opstoken vóór het tegelen om scheuren te voorkomen.</li><li><strong>Gietvloer:</strong> ideaal, mits opstookprotocol en vochtmeting zijn uitgevoerd vóór het gieten.</li><li><strong>PVC:</strong> kies dryback voor het beste resultaat; bij klik een ondervloer die specifiek voor vloerverwarming is bedoeld.</li><li><strong>Laminaat:</strong> reken laminaat plus ondervloer samen na; kies een dunne, geleidende ondervloer.</li><li><strong>Parket:</strong> alleen meerlaags, bij voorkeur eiken, dun en volledig verlijmd; houd de luchtvochtigheid tussen 40 en 60 procent.</li><li><strong>Tapijt:</strong> alleen kwaliteiten met een vloerverwarmingslabel en dun ondertapijt.</li></ul>"
+    },
+    {
+      "kop": "Wat betekent vloerverwarming voor je offerte en planning?",
+      "html": "<p>Twee dingen. Ten eerste het opstookprotocol: de dekvloer moet vóór het leggen van vrijwel elke vloer gecontroleerd opgestookt en op restvocht gemeten zijn — plan daar bij nieuwbouw weken voor in. Ten tweede de offerte zelf: leveranciers rekenen soms toeslagen voor 'vloerverwarming-geschikt leggen' of adviseren onnodig dure ondervloeren. Controleer of de opgegeven warmteweerstand klopt met je vloerkeuze en laat de offerte checken voordat je tekent; het is een van de posten waar kopers ongemerkt te veel betalen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Welke vloer is het zuinigst op vloerverwarming?",
+      "a": "Tegels en gietvloeren: hun warmteweerstand is verwaarloosbaar, waardoor de warmtepomp op de laagste aanvoertemperatuur kan draaien. Dryback-PVC zit er vlak achter. Hoe lager de weerstand, hoe lager het verbruik."
+    },
+    {
+      "q": "Kan laminaat echt op vloerverwarming?",
+      "a": "Ja, de meeste laminaatvloeren zijn geschikt, mits laminaat plus ondervloer samen onder circa 0,09 m²K/W blijven. Het venijn zit in de ondervloer: kies een dunne, voor vloerverwarming bedoelde variant in plaats van dik isolerend schuim."
+    },
+    {
+      "q": "Waarom mag massief parket niet op vloerverwarming?",
+      "a": "Massief hout isoleert relatief sterk en werkt bovendien flink bij temperatuur- en vochtwisselingen: kieren, schotelen en scheuren liggen op de loer. Meerlaags parket met stabiele drager, dun en verlijmd, is het geschikte alternatief."
+    },
+    {
+      "q": "Wat is het opstookprotocol en is het verplicht?",
+      "a": "Het gecontroleerd stapsgewijs opwarmen en afkoelen van een verse dekvloer vóór het leggen van de vloer. Vrijwel elke vloer- en gietvloerleverancier eist het voor garantie; zonder protocol riskeer je scheuren in dekvloer en vloerafwerking."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["tegelvloer-kiezen", "ondervloer-kiezen", "badkamer:vloerverwarming-badkamer"]
+  }
+}
