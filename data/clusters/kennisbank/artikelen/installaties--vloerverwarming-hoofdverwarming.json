@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "vloerverwarming-hoofdverwarming",
+  "titel": "Vloerverwarming als hoofdverwarming: zo werkt het",
+  "title_tag": "Vloerverwarming als hoofdverwarming: de gids | Bylder",
+  "meta_description": "Vloerverwarming als hoofdverwarming verwarmt je hele huis op lage temperatuur. Lees over opbouw of infrezen, warmtepomp-combinatie en vloerafwerking.",
+  "intro": [
+    "Vloerverwarming als hoofdverwarming betekent dat de vloer je enige warmteafgifte is: er liggen leidingen door de hele woning die met water van 35–45°C de ruimtes verwarmen, zonder radiatoren. Omdat het afgifteoppervlak groot is, volstaat die lage temperatuur — precies waar een warmtepomp het best op presteert.",
+    "In nieuwbouw is vloerverwarming als hoofdverwarming de standaard geworden. Bij bestaande woningen is het een logische stap tijdens een verbouwing of verduurzaming, mits de woning goed geïsoleerd is en de vloeropbouw het toelaat."
+  ],
+  "stats": [
+    ["35–45°C", "aanvoertemperatuur bij lage-temperatuurverwarming"],
+    ["±10 cm", "hart-op-hart afstand van de leidingen bij hoofdverwarming"],
+    ["1–2 dagen", "infrezen van een gemiddelde bestaande vloer"]
+  ],
+  "secties": [
+    {
+      "kop": "Waarom is vloerverwarming lage-temperatuurverwarming?",
+      "html": "<p>Een radiator moet klein oppervlak compenseren met hoge temperatuur (traditioneel 60–80°C aanvoer). Vloerverwarming draait dat om: het hele vloeroppervlak geeft warmte af, dus 35–45°C is genoeg om de ruimte comfortabel te krijgen. De warmte verdeelt zich gelijkmatig, zonder koude hoeken of opstijgende stofcirculatie.</p><p>Die lage temperatuur is de sleutel tot een zuinige installatie: hoe lager de aanvoertemperatuur, hoe hoger het rendement (COP) van een warmtepomp. Vloerverwarming en warmtepomp zijn daarom vrijwel altijd samen ontworpen — in nieuwbouw standaard, bij renovatie als bewuste combinatie.</p>"
+    },
+    {
+      "kop": "Opbouw of infrezen: wat past bij jouw situatie?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Methode</th><th>Hoe</th><th>Vloerverhoging</th><th>Wanneer</th></tr></thead><tbody><tr><td>Ingestort (nieuwbouw)</td><td>Leidingen in de afwerkvloer gestort</td><td>Geen (onderdeel vloerpakket)</td><td>Nieuwbouw en complete vloervernieuwing</td></tr><tr><td>Infrezen</td><td>Sleuven in bestaande dekvloer gefreesd, leidingen erin</td><td>±0 mm</td><td>Renovatie met goede bestaande dekvloer</td></tr><tr><td>Opbouwsysteem (droogbouw)</td><td>Platen met leidingen óp de vloer</td><td>±2–5 cm</td><td>Houten vloeren, verdiepingen, snelle renovatie</td></tr></tbody></table><p>Infrezen is bij renovatie meestal favoriet: snel (vaak één tot twee dagen), geen vloerverhoging en dus geen ingekorte deuren. Opbouwsystemen zijn licht en reageren sneller, maar vragen aandacht voor drempels en plinten.</p>"
+    },
+    {
+      "kop": "Hoe combineer je vloerverwarming met een warmtepomp?",
+      "html": "<p>Voor een goede combinatie tellen drie dingen. Ten eerste de legafstand: bij hoofdverwarming liggen de leidingen dichter op elkaar (±10 cm hart-op-hart) dan bij bijverwarming, zodat de vloer voldoende vermogen levert bij lage temperatuur. Ten tweede isolatie onder de vloer, zodat de warmte omhoog gaat en niet de kruipruimte in. Ten derde het inregelen: elke groep op de verdeler krijgt de juiste doorstroming, anders blijven ruimtes achter.</p><p>Houd er rekening mee dat vloerverwarming traag reageert: de vloer is een warmtebuffer. Met een warmtepomp stook je daarom niet 's nachts terug zoals met een cv-ketel, maar houd je de temperatuur vrijwel constant — dat is comfortabeler én zuiniger.</p>"
+    },
+    {
+      "kop": "Welke vloerafwerking werkt het best?",
+      "html": "<ul><li><strong>Tegels en gietvloeren:</strong> de beste warmtegeleiders; de vloer voelt snel warm en het systeem presteert optimaal.</li><li><strong>PVC en linoleum:</strong> dun en goed geleidend, prima geschikt.</li><li><strong>Laminaat en houten vloeren:</strong> geschikt mits de warmteweerstand laag genoeg is (vuistregel: Rc-waarde van de afwerking maximaal 0,09 m²K/W) en het hout geschikt is voor vloerverwarming.</li><li><strong>Tapijt:</strong> alleen dunne, geschikte kwaliteiten; dik hoogpolig tapijt isoleert te veel.</li></ul><p>Vraag bij de vloerleverancier altijd expliciet naar geschiktheid voor vloerverwarming als hoofdverwarming — de eisen zijn strenger dan bij bijverwarming.</p>"
+    },
+    {
+      "kop": "Wat zijn de aandachtspunten en kosten?",
+      "html": "<p>Reken bij renovatie indicatief op enkele tientallen euro's per m² voor infrezen inclusief leidingen, en meer voor opbouwsystemen of complete nieuwe dekvloeren; de verdeler, aansluiting en het inregelen komen daar bovenop. Bij nieuwbouw zit vloerverwarming in de basisprijs, maar controleer in de technische omschrijving of álle ruimtes zijn aangesloten — badkamer en zolder zijn soms meerwerk.</p><p>Laat je offertes voor vloerverwarming en warmtepomp altijd in samenhang beoordelen: legafstand, aanvoertemperatuur en vermogen moeten op elkaar aansluiten, en juist daar gaat het in losse offertes nogal eens mis.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is vloerverwarming als enige verwarming voldoende in de winter?",
+      "a": "Ja, mits de woning goed geïsoleerd is en het systeem als hoofdverwarming is ontworpen, met de juiste legafstand en vermogensberekening per ruimte. In nieuwbouw is dit de standaardoplossing."
+    },
+    {
+      "q": "Hoe lang duurt het voordat vloerverwarming warm is?",
+      "a": "Een ingestorte of ingefreesde vloer reageert traag: reken op enkele uren voordat je een temperatuurverandering voelt. Daarom houd je de temperatuur vrijwel constant in plaats van dag en nacht te schakelen."
+    },
+    {
+      "q": "Kan vloerverwarming ook op een houten verdiepingsvloer?",
+      "a": "Ja, met een licht droogbouw- of opbouwsysteem dat weinig gewicht toevoegt. Houd rekening met 2 tot 5 cm vloerverhoging en check de draagkracht en vlakheid van de bestaande vloer."
+    },
+    {
+      "q": "Kan ik met vloerverwarming ook koelen?",
+      "a": "Ja, in combinatie met een warmtepomp kun je in de zomer koel water door dezelfde leidingen laten stromen. Dat heet vloerkoeling en verlaagt de binnentemperatuur met zo'n 3 tot 5 graden."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["warmtepomp-typen", "vloerkoeling", "vloeren:vloerverwarming-welke-vloer"]
+  }
+}

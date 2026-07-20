@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "thuisbatterij",
+  "titel": "Thuisbatterij: wat doet hij en voor wie is hij zinvol?",
+  "title_tag": "Thuisbatterij: nut, capaciteit en kosten | Bylder",
+  "meta_description": "Een thuisbatterij slaat zonnestroom op voor later gebruik. Lees voor wie hij zinvol is, welke capaciteit past en wat een eerlijke terugverdientijd is.",
+  "intro": [
+    "Een thuisbatterij is een accu in of aan je woning die stroom opslaat — meestal zelf opgewekte zonnestroom overdag — zodat je die 's avonds en 's nachts kunt gebruiken in plaats van stroom van het net te kopen. Gangbare systemen hebben een capaciteit van 5 tot 15 kWh en kosten indicatief €4.000–€10.000 inclusief installatie.",
+    "De belangstelling groeit omdat de salderingsregeling in 2027 stopt: teruggeleverde zonnestroom levert daarna minder op, terwijl zelf verbruikte stroom de volle prijs bespaart. Toch is een batterij niet voor iedereen (nu al) een verstandige aankoop — een eerlijke rekensom hoort erbij."
+  ],
+  "stats": [
+    ["5–15 kWh", "gangbare capaciteit van een thuisbatterij"],
+    ["€4.000–€10.000", "aanschaf en installatie (indicatie)"],
+    ["2027", "einde saldering: opslag en eigen verbruik worden waardevoller"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat doet een thuisbatterij precies?",
+      "html": "<p>Overdag wekken je zonnepanelen vaak meer op dan je op dat moment verbruikt. Zonder batterij gaat dat overschot het net op; met batterij wordt het opgeslagen en gebruik je het later op de dag zelf. Een energiemanagementsysteem stuurt dit automatisch: laden bij overschot, ontladen bij vraag.</p><p>Daarnaast kan een batterij handelen op stroomprijzen: bij een dynamisch energiecontract laadt hij als stroom goedkoop (of negatief geprijsd) is en ontlaadt hij in dure uren. Sommige systemen bieden ook noodstroom bij uitval, al vraagt dat extra voorzieningen en is het in Nederland zelden de hoofdreden.</p>"
+    },
+    {
+      "kop": "Voor wie is een thuisbatterij zinvol?",
+      "html": "<p>Een batterij wordt interessanter naarmate je meer stroomoverschot hebt en flexibeler met prijzen kunt omgaan. De kansrijkste profielen:</p><ul><li><strong>Zonnepaneleneigenaren na 2027:</strong> zonder saldering wordt opgeslagen zonnestroom meer waard dan teruggeleverde.</li><li><strong>Huishoudens met een dynamisch contract:</strong> de batterij verzilvert prijsverschillen tussen goedkope en dure uren, ook zonder zonnepanelen.</li><li><strong>Grote verbruikers:</strong> met warmtepomp, elektrische auto of veel avondverbruik benut je de opgeslagen stroom sneller.</li></ul><p>Minder zinvol is een batterij zolang je nog volledig saldeert (tot en met 2026 is het net je gratis buffer), bij een klein stroomoverschot, of als het budget beter naar isolatie of panelen zelf kan.</p>"
+    },
+    {
+      "kop": "Welke capaciteit past bij jouw huishouden?",
+      "html": "<p>Vuistregel: kies een capaciteit die ongeveer je avond- en nachtverbruik dekt, want een batterij die dagen vol blijft staan verdient niets. Voor een gemiddeld huishouden komt dat neer op 5–10 kWh; met warmtepomp en elektrische auto kan 10–15 kWh passen.</p><table class=\"vgl\"><thead><tr><th>Situatie</th><th>Indicatieve capaciteit</th></tr></thead><tbody><tr><td>Klein huishouden, 6–8 panelen</td><td>5 kWh</td></tr><tr><td>Gezin met 10–14 panelen</td><td>7–10 kWh</td></tr><tr><td>Gezin met warmtepomp en/of EV, 14+ panelen</td><td>10–15 kWh</td></tr></tbody></table><p>Let naast capaciteit ook op het (ont)laadvermogen in kW: dat bepaalt of de batterij pieken zoals koken en wasmachine tegelijk aankan.</p>"
+    },
+    {
+      "kop": "Wat is een eerlijke terugverdientijd?",
+      "html": "<p>Hier past eerlijkheid: bij de huidige prijzen verdient een thuisbatterij zichzelf op alleen zonnestroom-opslag vaak pas in 10 tot 15 jaar terug — dicht bij of voorbij de verwachte levensduur van zo'n 10–15 jaar (duizenden laadcycli). Wie er actief mee handelt via een dynamisch contract kan dat flink verkorten, maar dat vraagt een geschikt contract en goede software, en de opbrengsten per jaar schommelen.</p><p>De businesscase kan verbeteren: batterijprijzen dalen, na 2027 stijgt de waarde van opslag en netbeheerders experimenteren met vergoedingen voor flexibiliteit. Ons advies: reken met je eigen verbruiksprofiel, tel geen gestapelde best-case-opbrengsten bij elkaar op en beschouw een aanschaf vóór 2027 vooral als keuze voor onafhankelijkheid, niet als gegarandeerd rendement.</p>"
+    },
+    {
+      "kop": "Waar let je op bij aanschaf en installatie?",
+      "html": "<ul><li><strong>Plaatsing:</strong> een droge, geventileerde ruimte; niet elke ruimte is geschikt en verzekeraars stellen soms eisen.</li><li><strong>Meterkast:</strong> check of je aansluiting (1- of 3-fase) en groepenkast het systeem aankunnen.</li><li><strong>Software:</strong> de meerwaarde zit in de aansturing — werkt het systeem met dynamische contracten en je omvormer samen?</li><li><strong>Garantie:</strong> let op garantiejaren én gegarandeerde restcapaciteit (bijvoorbeeld 70% na 10 jaar).</li><li><strong>Offerte:</strong> vraag totaalprijs inclusief installatie, bekabeling en configuratie, en vergelijk minimaal twee aanbieders.</li></ul>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Heeft een thuisbatterij zin zolang de saldering nog bestaat?",
+      "a": "Financieel meestal niet: tot en met 2026 fungeert het stroomnet als gratis buffer, want teruggeleverde stroom streep je weg tegen verbruik. Alleen wie via een dynamisch contract actief op prijzen handelt, kan er nu al aan verdienen."
+    },
+    {
+      "q": "Kan een thuisbatterij zonder zonnepanelen?",
+      "a": "Ja. Met een dynamisch energiecontract laadt de batterij in goedkope uren en ontlaadt hij in dure uren. De opbrengst hangt af van de prijsverschillen per dag en de kwaliteit van de aansturing."
+    },
+    {
+      "q": "Hoe lang gaat een thuisbatterij mee?",
+      "a": "Indicatief 10 tot 15 jaar, afhankelijk van het aantal laadcycli en de gebruiksomstandigheden. Fabrikanten garanderen vaak een restcapaciteit, bijvoorbeeld 70% na 10 jaar of een vast aantal cycli."
+    },
+    {
+      "q": "Is een thuisbatterij veilig in huis?",
+      "a": "Moderne systemen met een batterijmanagementsysteem zijn veilig, mits professioneel geïnstalleerd op een geschikte plek. Kies een gecertificeerde installateur, meld het systeem bij je verzekeraar en volg de plaatsingsvoorschriften van de fabrikant."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/renovatiekosten/zonnepanelen/", "Kosten zonnepanelen"],
+    "zusters": ["zonnepanelen-nieuwbouw", "groepenkast-en-3-fase", "laadpaal-thuis"]
+  }
+}

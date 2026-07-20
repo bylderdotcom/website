@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "boiler-of-doorstroomtoestel",
+  "titel": "Boiler of doorstroomtoestel: hoe maak je warm water zonder gas?",
+  "title_tag": "Warm water zonder gas: boiler of doorstroom? | Bylder",
+  "meta_description": "Warm water zonder gas? Vergelijk warmtepompboiler, elektrische boiler, doorstroomtoestel en zonneboiler op capaciteit, verbruik en kosten.",
+  "intro": [
+    "Warm water zonder gas maak je met een voorraadvat (warmtepompboiler, elektrische boiler of zonneboiler) of met een doorstroomtoestel dat water direct verwarmt op het moment dat je de kraan opendraait. Voor een gezin is een voorraad van 150 tot 300 liter gangbaar; het zuinigst is een warmtepompboiler of de geïntegreerde boiler van je warmtepomp.",
+    "Bij nieuwbouw is de warmwatervoorziening meestal onderdeel van de warmtepompinstallatie. Toch loont het om de capaciteit en het verbruik te controleren: warm water is in een goed geïsoleerde woning al snel een derde van het totale energiegebruik, en een te klein vat merk je elke ochtend onder de douche."
+  ],
+  "stats": [
+    ["150–300 l", "gangbare boilercapaciteit voor een gezin"],
+    ["±40 l", "warm water per douchebeurt"],
+    ["2,5–3", "COP van een warmtepompboiler"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke opties zijn er voor warm water zonder gas?",
+      "html": "<p>Er zijn vier gangbare routes. Een <strong>warmtepompboiler</strong> gebruikt een kleine warmtepomp om een voorraadvat te verwarmen en is daarmee twee tot drie keer zuiniger dan puur elektrisch. Een <strong>elektrische boiler</strong> verwarmt het vat met een simpel verwarmingselement: goedkoop in aanschaf, duur in gebruik. Een <strong>doorstroomtoestel</strong> verwarmt water direct zonder voorraad, maar vraagt een fors elektrisch vermogen. Een <strong>zonneboiler</strong> gebruikt zonnecollectoren op het dak en dekt op jaarbasis grofweg de helft van de warmwatervraag; er is altijd naverwarming nodig. Bij de meeste nieuwbouw levert de gewone warmtepomp het warme water via een geïntegreerd of los voorraadvat, wat feitelijk op een warmtepompboiler neerkomt.</p>"
+    },
+    {
+      "kop": "Hoe vergelijken de systemen zich?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Systeem</th><th>Aanschaf incl. installatie (indicatie)</th><th>Verbruik</th><th>Geschikt voor</th></tr></thead><tbody><tr><td>Warmtepompboiler</td><td>€2.000–3.500</td><td>laag (COP 2,5–3)</td><td>gezinnen, hoofdvoorziening</td></tr><tr><td>Elektrische boiler</td><td>€500–1.500</td><td>hoog (1 kWh stroom = 1 kWh warmte)</td><td>klein verbruik, keukenboiler</td></tr><tr><td>Doorstroomtoestel</td><td>€400–1.500</td><td>hoog, maar geen voorraadverlies</td><td>incidenteel tappunt, geen ruimte voor vat</td></tr><tr><td>Zonneboiler</td><td>€2.500–4.500</td><td>zeer laag, wel naverwarming nodig</td><td>aanvulling bij hoge warmwatervraag</td></tr></tbody></table><p>Alle bedragen zijn brede marktindicaties; merk, capaciteit en installatiesituatie bepalen de werkelijke prijs.</p>"
+    },
+    {
+      "kop": "Welke capaciteit heb je nodig?",
+      "html": "<p>Reken grofweg 40 liter warm water per douchebeurt en fors meer bij een ligbad of regendouche. Voor één à twee personen volstaat vaak 100 tot 150 liter, voor een gezin met kinderen is 200 tot 300 liter comfortabel. Een warmtepompboiler warmt langzaam op (enkele uren voor een vol vat), dus een krap vat betekent koud douchen voor de laatste in de rij. Kies liever één maat ruimer dan te krap; het extra stilstandsverlies van een groter vat is beperkt in een goed geïsoleerd toestel.</p>"
+    },
+    {
+      "kop": "Wanneer is een doorstroomtoestel handig?",
+      "html": "<p>Een elektrisch doorstroomtoestel is vooral praktisch voor een los tappunt ver van de boiler, zoals een keuken op afstand, een gastenverblijf of een kantoortje. Je verspilt geen energie aan een voorraad en wacht niet op opwarmen. Het nadeel: voor een volwaardige douche is 18 tot 27 kW nodig, en dat vraagt een 3-fase aansluiting en zware groepen. Als hoofdvoorziening voor een gezinswoning is het daarom zelden de beste keuze; als aanvulling op een boiler kan het juist slim zijn.</p>"
+    },
+    {
+      "kop": "Waar let je op bij nieuwbouw?",
+      "html": "<ul><li><strong>Capaciteit in het koperscontract:</strong> controleer hoeveel liter het vat heeft en of dat past bij je gezin; opschalen is vaak meerwerk.</li><li><strong>Legionella-instelling:</strong> het vat moet wekelijks naar minimaal 60 graden kunnen; dat kost extra stroom en zit in het verbruik verwerkt.</li><li><strong>Plek en leidinglengte:</strong> hoe korter de leiding naar badkamer en keuken, hoe minder wachttijd en waterverspilling.</li><li><strong>Zonneboiler of pv:</strong> in de praktijk kiezen de meeste kopers voor extra zonnepanelen in plaats van een zonneboiler; panelen zijn flexibeler inzetbaar.</li></ul>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het zuinigste systeem voor warm water zonder gas?",
+      "a": "Een warmtepompboiler of het boilervat van je warmtepomp: die leveren per kWh stroom 2,5 tot 3 kWh warmte. Een zonneboiler is per opgewekte kWh nog goedkoper, maar dekt de vraag nooit volledig en vraagt naverwarming."
+    },
+    {
+      "q": "Hoeveel liter boiler heeft een gezin nodig?",
+      "a": "Voor een gezin met kinderen is 200 tot 300 liter comfortabel; reken zo'n 40 liter warm water per douchebeurt. Met ligbad of regendouche kies je eerder de bovenkant van die range."
+    },
+    {
+      "q": "Kan ik douchen op een elektrisch doorstroomtoestel?",
+      "a": "Alleen met een zwaar toestel van 18 tot 27 kW op een 3-fase aansluiting. Voor een handenwasbakje of keukenkraan volstaat een klein toestel, maar als hoofdvoorziening voor de badkamer is een boiler meestal praktischer en zuiniger."
+    },
+    {
+      "q": "Is een zonneboiler nog interessant naast zonnepanelen?",
+      "a": "Soms, vooral bij een hoge warmwatervraag en beperkte dakruimte-eisen. In de praktijk kiezen de meeste woningeigenaren voor extra zonnepanelen: die stroom is ook bruikbaar voor warmtepomp, auto en huishouden."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/renovatiekosten/warmtepomp/", "Kosten warmtepomp"],
+    "zusters": ["warmtepomp-typen", "zonnepanelen-nieuwbouw", "groepenkast-en-3-fase"]
+  }
+}

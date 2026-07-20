@@ -1,0 +1,61 @@
+{
+  "cluster": "bim",
+  "slug": "vr-ar-woningkeuze",
+  "titel": "VR en AR bij je woningkeuze: virtueel kijken vóór je koopt",
+  "title_tag": "VR en AR bij je woningkeuze: wat kan er? | Bylder",
+  "meta_description": "Met VR loop je door je woning vóór de bouw, met AR pas je meubels in je echte kamer. Lees wat kan, wat het oplevert en waar je op moet letten.",
+  "intro": [
+    "VR (virtual reality) laat je met een bril of op een scherm virtueel door je toekomstige woning lopen voordat die gebouwd is; AR (augmented reality) projecteert digitale objecten — zoals een bank of kast — via je telefoon in je echte omgeving. Beide technieken halen het gokken uit je woningkeuze: je ervaart ruimtes en opties in plaats van ze van een platte tekening af te lezen.",
+    "Voor nieuwbouwkopers is dit meer dan speelgoed. Ruimtegevoel is op een 2D-plattegrond nauwelijks in te schatten, en juist daarop worden dure beslissingen genomen: wel of geen uitbouw, waar de keuken komt, welke wand eruit mag. Virtueel ervaren voorkomt spijt achteraf."
+  ],
+  "stats": [
+    ["Vóór de bouw", "met VR ervaar je je woning terwijl die alleen nog digitaal bestaat"],
+    ["1:1", "AR toont meubels op ware grootte in je echte kamer"],
+    ["2D → 3D", "ruimtegevoel is het lastigste om van een plattegrond af te lezen"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat kun je met VR bij de keuze van je nieuwbouwwoning?",
+      "html": "<p>Steeds meer ontwikkelaars bieden een virtuele rondleiding aan: het BIM-model van het project wordt omgezet naar een 3D-omgeving waarin je met een VR-bril of gewoon op je scherm rondloopt. Wat je daarmee kunt:</p><ul><li><strong>Ruimtegevoel checken:</strong> is 3,40 meter woonkamerbreedte ruim of krap? In VR voel je het meteen.</li><li><strong>Opties ervaren in plaats van gokken:</strong> loop door de variant mét en zónder uitbouw of dakkapel voordat je duizenden euro's aan meerwerk bevestigt.</li><li><strong>Zichtlijnen en licht beoordelen:</strong> wat zie je vanuit de keuken, waar valt de zon binnen?</li><li><strong>Details bekijken:</strong> raamhoogtes, borstweringen en schuine kanten die op tekening abstract blijven.</li></ul><p>Geen VR-aanbod bij jouw project? Vraag of er een 3D-viewer of interactief model beschikbaar is — dat is vaak al genoeg.</p>"
+    },
+    {
+      "kop": "Wat is het verschil tussen VR en AR?",
+      "html": "<p>De termen worden door elkaar gebruikt, maar het verschil is simpel:</p><table class=\"vgl\"><thead><tr><th>Kenmerk</th><th>VR (virtual reality)</th><th>AR (augmented reality)</th></tr></thead><tbody><tr><td>Wat zie je?</td><td>Een volledig digitale omgeving</td><td>Je echte omgeving mét digitale objecten erin</td></tr><tr><td>Apparaat</td><td>VR-bril of 3D-weergave op scherm</td><td>Smartphone of tablet met camera</td></tr><tr><td>Sterk in</td><td>Ruimtes ervaren die nog niet bestaan</td><td>Objecten passen in een ruimte die er al is</td></tr><tr><td>Typisch gebruik</td><td>Door je nieuwbouwwoning lopen vóór de bouw</td><td>Bank, kast of lamp virtueel in je kamer zetten</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Hoe helpt AR bij het passen van meubels?",
+      "html": "<p>Veel meubel- en woonwinkels hebben AR-functies in hun app: je richt je telefoon op de kamer en zet de bank op ware grootte op zijn plek. Dat werkt goed voor een eerste indruk van formaat en kleur. Twee kanttekeningen: AR werkt pas als de ruimte er is (na oplevering dus), en de nauwkeurigheid hangt af van hoe goed je telefoon de ruimte scant — houd bij krappe passingen enkele centimeters marge aan.</p><p>Wil je al vóór de oplevering passen en meten, gebruik dan de digitale route: zet je meubels op schaal in je plattegrond met Plattegrond inrichten van Bylder, en maak er met de 3D-sfeerimpressie fotorealistische beelden van. Zo combineer je de precisie van maten met het gevoel van beeld.</p>"
+    },
+    {
+      "kop": "Waar moet je op letten bij VR-beelden en renders?",
+      "html": "<p>Virtueel kijken is krachtig, maar geen garantie. Let hierop:</p><ul><li><strong>Renderkwaliteit is geen realiteit.</strong> Impressies zijn vaak gestyled met veel licht, dunne kozijnen en meubels op maat. De echte woning heeft radiatoren, ventielen, stopcontacten en buren.</li><li><strong>Check wat contractueel is.</strong> Aan impressies en VR-beelden kun je meestal geen rechten ontlenen; bindend zijn de contracttekeningen en technische omschrijving. Zie je in VR iets moois, controleer dan of het ook in de stukken staat.</li><li><strong>Let op de inrichting van de demo.</strong> Een showmodel bevat vaak opties (luxe keuken, openslaande deuren) die niet standaard zijn. Vraag expliciet wat bij de basiswoning hoort.</li><li><strong>Maten blijven leidend.</strong> VR geeft gevoel, geen millimeters. Beslissingen over keuken, badkamer en meubels neem je op maatvaste tekeningen of het model.</li></ul>"
+    },
+    {
+      "kop": "Wat als je project geen VR of AR aanbiedt?",
+      "html": "<p>Geen probleem: het gaat om het principe — eerst ervaren, dan beslissen — en dat kan ook zonder bril. Vraag het 3D-model of een online viewer op bij je bouwer, of werk vanuit je plattegrond: digitaal inrichten op schaal plus een 3D-sfeerimpressie geeft je hetzelfde soort houvast voor een fractie van de moeite. Ga daarnaast fysiek kijken bij een modelwoning of vergelijkbaar opgeleverd project; niets kalibreert je ruimtegevoel zo goed als één echt bezoek gecombineerd met digitale beelden van jouw eigen indeling.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik door mijn nieuwbouwwoning lopen voordat die gebouwd is?",
+      "a": "Bij steeds meer projecten wel: het BIM-model wordt omgezet naar een VR-rondleiding of online 3D-viewer. Vraag je ontwikkelaar of kopersbegeleider ernaar. Is er niets, dan kun je met je plattegrond zelf digitale beelden laten maken."
+    },
+    {
+      "q": "Hoe betrouwbaar zijn VR-beelden en artist impressions?",
+      "a": "Ze geven een goed ruimtegevoel, maar zijn juridisch vrijwel nooit bindend en vaak mooier gestyled dan de standaardwoning. Bindend zijn de contracttekeningen en de technische omschrijving; controleer dus altijd of wat je ziet ook in de stukken staat."
+    },
+    {
+      "q": "Is AR nauwkeurig genoeg om meubels op te kopen?",
+      "a": "Voor formaat, kleur en eerste indruk wel; voor krappe passingen niet helemaal. De nauwkeurigheid hangt af van de ruimtescan van je telefoon. Houd enkele centimeters marge aan of controleer de maat aanvullend op je plattegrond op schaal."
+    },
+    {
+      "q": "Heb ik een VR-bril nodig?",
+      "a": "Nee. De meeste 3D-rondleidingen werken ook gewoon in de browser op je computer of tablet. Een bril maakt de ervaring meeslepender, maar voor het beoordelen van indeling en ruimte is een scherm prima."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je woning"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["van-bim-naar-interieurontwerp", "woningconfigurator", "wat-is-bim"]
+  }
+}

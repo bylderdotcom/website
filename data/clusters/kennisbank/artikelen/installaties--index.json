@@ -1,0 +1,73 @@
+{
+  "cluster": "installaties",
+  "slug": "index",
+  "titel": "Installaties & duurzaam wonen: warmte, ventilatie en energie",
+  "title_tag": "Installaties & duurzaam wonen: de complete gids | Bylder",
+  "meta_description": "Zo werken warmtepomp, ventilatie, zonnepanelen en isolatie samen in een duurzaam huis. Praktische gids voor nieuwbouwkopers en verduurzamers.",
+  "intro": [
+    "Installaties en duurzaam wonen draaien om drie samenhangende systemen: verwarmen (meestal met een warmtepomp), ventileren (systeem C of D met warmteterugwinning) en zelf energie opwekken (zonnepanelen, eventueel met thuisbatterij) — met isolatie als fundament waar alles op rust. Wie die volgorde aanhoudt, kiest installaties die bij de woning passen in plaats van andersom.",
+    "Voor nieuwbouwkopers is dit sinds 2018 de standaard: nieuwbouw wordt aardgasvrij opgeleverd, dus zonder cv-ketel. Voor eigenaren van een bestaande woning is het een route: eerst de schil verbeteren, dan de installaties vervangen. In beide gevallen bepalen deze keuzes je maandlasten, je comfort en de waarde van je huis voor tientallen jaren."
+  ],
+  "stats": [
+    ["2018", "sinds dit jaar wordt nieuwbouw standaard aardgasvrij gebouwd"],
+    ["±60%", "van het energieverbruik in een gemiddeld huishouden gaat naar verwarming"],
+    ["COP 3–5", "een warmtepomp levert 3 tot 5 kWh warmte per kWh stroom"]
+  ],
+  "secties": [
+    {
+      "kop": "Waarom begint duurzaam wonen bij isolatie?",
+      "html": "<p>Elke kilowattuur warmte die je niet verliest, hoef je ook niet op te wekken. Daarom geldt de vaste volgorde: eerst isoleren, dan installaties. Een warmtepomp in een slecht geïsoleerd huis draait op hoge temperaturen, verbruikt veel stroom en haalt de beloofde besparing niet. Dezelfde warmtepomp in een goed geïsoleerd huis werkt op lage temperatuur en presteert uitstekend.</p><p>De isolatiewaarde van een constructie druk je uit in de Rc-waarde (m²K/W): hoe hoger, hoe beter. Nieuwbouw moet voldoen aan minimale Rc-waarden voor vloer, gevel en dak; bij bestaande bouw zijn spouwmuurisolatie, dak- en vloerisolatie en beter glas de logische eerste stappen. Pas als de warmtevraag omlaag is, wordt de keuze voor verwarmingsinstallaties echt interessant.</p>"
+    },
+    {
+      "kop": "Hoe verwarm je een woning zonder gas?",
+      "html": "<p>De warmtepomp is in vrijwel alle gevallen de opvolger van de cv-ketel. Hij haalt warmte uit de buitenlucht of de bodem en brengt die met een compressor op bruikbare temperatuur. Er zijn vier hoofdtypen:</p><table class=\"vgl\"><thead><tr><th>Type</th><th>Warmtebron</th><th>Prijsindicatie geïnstalleerd</th><th>Vooral geschikt voor</th></tr></thead><tbody><tr><td>Hybride (naast cv-ketel)</td><td>Buitenlucht</td><td>€4.000–€8.000</td><td>Bestaande bouw, tussenstap</td></tr><tr><td>All-electric lucht-water</td><td>Buitenlucht</td><td>€9.000–€19.000</td><td>Nieuwbouw en goed geïsoleerde bestaande bouw</td></tr><tr><td>Bodemwarmtepomp</td><td>Bodem (bron)</td><td>€15.000–€30.000</td><td>Nieuwbouw, hoogste rendement en vloerkoeling</td></tr><tr><td>Lucht-lucht (airco)</td><td>Buitenlucht</td><td>Vanaf enkele duizenden euro's</td><td>Bijverwarmen en koelen per ruimte</td></tr></tbody></table><p>Alle bedragen zijn indicaties; voor warmtepompen in bestaande bouw is vaak ISDE-subsidie beschikbaar. Een warmtepomp komt het best tot zijn recht met lage-temperatuurafgifte, zoals vloerverwarming als hoofdverwarming.</p>"
+    },
+    {
+      "kop": "Welk ventilatiesysteem hoort bij een goed geïsoleerd huis?",
+      "html": "<p>Hoe beter een huis is geïsoleerd en gekierd, hoe belangrijker de ventilatie. In de praktijk kies je tussen twee systemen:</p><ul><li><strong>Systeem C:</strong> verse lucht komt binnen via roosters in de kozijnen, een ventilatiebox zuigt vervuilde lucht af in keuken, badkamer en toilet. Eenvoudig en relatief goedkoop, maar de binnenkomende lucht is 's winters koud.</li><li><strong>Systeem D (balansventilatie met WTW):</strong> toevoer én afvoer zijn mechanisch, en een warmtewisselaar draagt 90–95% van de warmte uit de afgevoerde lucht over aan de verse lucht. Comfortabeler en energiezuiniger, maar met kanalen, filters en onderhoud.</li></ul><p>In nieuwbouw is systeem D met warmteterugwinning inmiddels gangbaar, vaak met CO2-sturing die het debiet automatisch aanpast aan het gebruik van de woning.</p>"
+    },
+    {
+      "kop": "Hoe wek je zelf energie op — en wat doe je ermee?",
+      "html": "<p>Zonnepanelen zijn de standaardmanier om zelf stroom op te wekken: reken indicatief op €350–€500 per paneel geïnstalleerd. Bij nieuwbouw liggen er vaak al panelen op het dak om aan de energieprestatie-eisen (BENG) te voldoen; uitbreiden kan als meerwerk of later.</p><p>Belangrijk om te weten: de salderingsregeling — waarbij je teruggeleverde stroom wegstreept tegen je verbruik — stopt in 2027. Daarna wordt het aantrekkelijker om je eigen zonnestroom direct te gebruiken of tijdelijk op te slaan. Een thuisbatterij (5–15 kWh, indicatief €4.000–€10.000) kan daarbij helpen, vooral in combinatie met een dynamisch energiecontract. Reken hier eerlijk aan: de terugverdientijd van een batterij is nu nog lang.</p>"
+    },
+    {
+      "kop": "Wat zegt het energielabel over je woning?",
+      "html": "<p>Het energielabel (G tot en met A++++) vat samen hoe energiezuinig een woning is, op basis van isolatie, installaties en opwekking. Nieuwbouw scoort standaard A of hoger; bestaande woningen verbeteren hun label met elke stap uit dit verhaal — van spouwmuurisolatie tot warmtepomp en zonnepanelen.</p><p>Het label is meer dan een sticker: het beïnvloedt de verkoopwaarde, de maximale hypotheek (voor zuinige woningen gelden ruimere leennormen) en het geeft kopers een snelle indruk van de te verwachten energielasten. Wie verduurzaamt, doet er goed aan het label na afloop opnieuw te laten vaststellen.</p>"
+    },
+    {
+      "kop": "Wat betekent dit bij nieuwbouw?",
+      "html": "<p>Bij nieuwbouw krijg je het complete pakket standaard: goede isolatie, een warmtepomp, vloerverwarming, een ventilatiesysteem en meestal zonnepanelen. Jouw keuzes zitten in de details, en die maak je grotendeels vóór de bouw via meer- en minderwerk:</p><ul><li>Extra zonnepanelen of een leeg dakvlak voorbereid voor uitbreiding;</li><li>Vloerkoeling via de warmtepomp voor koele zomers;</li><li>Een loze leiding of Perilex-aansluiting voor laadpaal, thuisbatterij of inductie;</li><li>CO2-gestuurde ventilatie of extra afzuigpunten.</li></ul><p>Let bij de aanbieding van de aannemer op wat er precies in de basisprijs zit: het aantal panelen, het type warmtepomp en het ventilatiesysteem verschillen per project. Laat meerwerkoffertes controleren voordat je tekent.</p>"
+    },
+    {
+      "kop": "Waar begin je bij het verduurzamen van een bestaande woning?",
+      "html": "<p>Bij bestaande bouw werk je dezelfde volgorde af, maar in stappen die je eigen tempo en budget volgen:</p><ul><li><strong>Stap 1 — schil:</strong> spouwmuur-, dak- en vloerisolatie plus HR++- of triple glas. Relatief lage kosten, direct effect.</li><li><strong>Stap 2 — installaties:</strong> een hybride warmtepomp als tussenstap, of all-electric als de woning er klaar voor is. Controleer of de radiatoren of vloerverwarming op lagere temperatuur kunnen verwarmen.</li><li><strong>Stap 3 — opwekking:</strong> zonnepanelen, en pas daarna eventueel een thuisbatterij.</li></ul><p>Voor veel maatregelen in bestaande bouw is ISDE-subsidie beschikbaar. Vraag altijd meerdere offertes op en vergelijk niet alleen de prijs, maar ook vermogens, merken en garanties — daar zitten de echte verschillen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Moet ik eerst isoleren of eerst een warmtepomp kopen?",
+      "a": "Eerst isoleren. Een warmtepomp presteert alleen goed in een woning met lage warmtevraag en lage-temperatuurafgifte. Isoleer je eerst, dan kun je bovendien een kleiner en goedkoper toestel kiezen."
+    },
+    {
+      "q": "Is nieuwbouw altijd gasloos?",
+      "a": "Ja, sinds 1 juli 2018 krijgt nieuwbouw in principe geen gasaansluiting meer. Verwarmen gebeurt met een warmtepomp of via een warmtenet, en koken gaat elektrisch."
+    },
+    {
+      "q": "Wat kost het om een bestaande woning volledig te verduurzamen?",
+      "a": "Dat hangt sterk af van de startsituatie. Als indicatie: isolatiemaatregelen kosten enkele duizenden euro's per maatregel, een hybride warmtepomp €4.000–€8.000 en all-electric €9.000–€19.000. ISDE-subsidie drukt de kosten van veel maatregelen."
+    },
+    {
+      "q": "Heb ik in een nieuwbouwwoning nog een cv-ketel?",
+      "a": "Nee. Nieuwbouw wordt aardgasvrij opgeleverd, dus zonder cv-ketel. De warmtepomp of het warmtenet verzorgt verwarming en warm tapwater, vaak met een boilervat voor de douche."
+    },
+    {
+      "q": "Zijn zonnepanelen na het einde van de saldering nog rendabel?",
+      "a": "Meestal wel, maar de terugverdientijd wordt langer en eigen verbruik wordt belangrijker. Stroom die je direct zelf gebruikt, bespaart de volle leveringsprijs; wat je teruglevert, levert minder op. Slim schakelen en eventueel opslag vergroten het voordeel."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": []
+  }
+}

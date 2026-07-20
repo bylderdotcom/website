@@ -16,6 +16,9 @@ CLUSTERS = {
     'keuken':    ('Keuken', '/kennisbank/keuken/'),
     'badkamer':  ('Badkamer', '/kennisbank/badkamer/'),
     'materialen':('Materialen interieur', '/kennisbank/materialen/'),
+    'vloeren':   ('Vloeren & afwerking', '/kennisbank/vloeren/'),
+    'installaties':('Installaties & duurzaam', '/kennisbank/installaties/'),
+    'bim':       ('BIM & digitaal bouwen', '/kennisbank/bim/'),
     'begrip':    ('Begrippenlijst', '/kennisbank/begrip/'),
 }
 

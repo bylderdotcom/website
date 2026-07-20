@@ -1,0 +1,61 @@
+{
+  "cluster": "bim",
+  "slug": "clash-detectie-faalkosten",
+  "titel": "Clash-detectie en faalkosten: hoe digitale controle jouw woning beter maakt",
+  "title_tag": "Clash-detectie en faalkosten uitgelegd | Bylder",
+  "meta_description": "Clash-detectie spoort botsingen zoals een leiding door een balk digitaal op vóór de bouw. Lees wat faalkosten zijn en wat jij ervan merkt.",
+  "intro": [
+    "Clash-detectie is de digitale controle waarmee botsingen in het ontwerp van je woning — zoals een leiding die door een draagbalk loopt of een ventilatiekanaal dat een kozijn kruist — automatisch worden opgespoord in het BIM-model, vóórdat er gebouwd wordt. De software legt de modellen van architect, constructeur en installateur over elkaar en meldt elke plek waar onderdelen elkaar in de weg zitten.",
+    "Voor jou als koper is dit onzichtbaar werk met zichtbaar resultaat. Fouten die pas op de bouwplaats worden ontdekt, heten faalkosten — en die worden geschat op zo'n 5 tot 10% van de bouwomzet. Elke clash die digitaal wordt opgelost, is een fout die niet in jouw woning, jouw planning of jouw prijs terechtkomt."
+  ],
+  "stats": [
+    ["±5-10%", "van de bouwomzet gaat naar schatting op aan faalkosten"],
+    ["Miljarden", "per jaar kosten bouwfouten de Nederlandse bouw naar schatting"],
+    ["Vóór de bouw", "clashes worden digitaal gevonden, niet op de steiger"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is clash-detectie precies?",
+      "html": "<p>Bij een nieuwbouwproject maken meerdere partijen elk hun eigen deelmodel: de architect het bouwkundige model, de constructeur de draagconstructie, de installateur de leidingen, kanalen en elektra. Clash-detectie-software (bekende voorbeelden zijn Navisworks en Solibri) combineert die modellen en controleert automatisch waar onderdelen botsen.</p><p>Er zijn grofweg twee soorten botsingen: <strong>harde clashes</strong>, waarbij twee objecten letterlijk dezelfde ruimte innemen (een afvoer dwars door een betonbalk), en <strong>zachte clashes</strong>, waarbij iets technisch wel past maar praktisch niet werkt — een ketel zonder onderhoudsruimte, een deur die tegen een radiator draait. Beide worden als melding aan het bouwteam voorgelegd en opgelost voordat de werktekeningen definitief worden.</p>"
+    },
+    {
+      "kop": "Wat zijn faalkosten in de bouw?",
+      "html": "<p>Faalkosten zijn alle kosten van dingen die niet in één keer goed gaan: sloop- en herstelwerk, opnieuw bestellen van materialen, stilstand van vaklieden, extra bouwtijd en administratie. Schattingen komen al jaren uit op zo'n 5 tot 10% van de bouwomzet — landelijk gaat het dan om miljarden euro's per jaar.</p><p>Typische voorbeelden op woningniveau: een sparing (opening) die op de verkeerde plek in de betonvloer is gestort, kozijnen die net niet in de gevelopening passen, of installaties die pas op de bouw blijken te kruisen. Zonder digitale controle worden zulke fouten pas ontdekt als het materiaal er al ligt — en dan is herstellen duur.</p>"
+    },
+    {
+      "kop": "Wat heeft clash-detectie met jouw prijs te maken?",
+      "html": "<p>Faalkosten verdwijnen niet in de boekhouding van de bouwer; ze zitten uiteindelijk in de prijzen die kopers betalen en in de risico-opslagen die bouwers rekenen. Een bouwer die zijn faalkosten structureel omlaag brengt, kan scherper aanbieden — of houdt meer marge, maar dan is er in elk geval minder gedoe op jouw project.</p><p>Direct merkbaar voor jou is vooral het risico dat je níet loopt: minder kans op vertraging door herstelwerk, minder kans op geïmproviseerde oplossingen (een koof die er ineens toch moet komen omdat een leiding niet paste) en minder kans dat jouw gekozen opties in de uitvoering sneuvelen. Kwaliteit die vooraf digitaal is afgedwongen, hoeft achteraf niet bevochten te worden.</p>"
+    },
+    {
+      "kop": "Wat merk je ervan bij de oplevering?",
+      "html": "<p>Projecten met een serieus BIM-proces laten in de praktijk vaak minder opleverpunten zien: de grote fouten zijn er digitaal al uitgehaald, dus blijven vooral afwerkingspunten over (krasjes, kitranden, stelwerk). Dat maakt jouw oplevering overzichtelijker en de kans op langslepend herstel kleiner.</p><p>Let wel: clash-detectie controleert het ontwerp, niet de handen op de bouwplaats. Uitvoeringsfouten blijven mogelijk. Ga dus altijd goed voorbereid naar je oplevering — met je contracttekeningen en optielijst — en leg elk gebrek vast in het proces-verbaal van oplevering.</p>"
+    },
+    {
+      "kop": "Wat mag je je bouwer hierover vragen?",
+      "html": "<p>Je hoeft geen technische termen te kennen om de juiste vragen te stellen:</p><ul><li>\"Wordt dit project in BIM uitgewerkt en worden de deelmodellen op botsingen gecontroleerd?\"</li><li>\"Worden mijn meerwerkopties in het model verwerkt en meegecontroleerd?\"</li><li>\"Krijg ik bij oplevering de definitieve (as-built) tekeningen of het model?\"</li></ul><p>Een professionele bouwer beantwoordt dit zonder moeite; een ontwijkend antwoord is op zichzelf informatie. En wil je vooraf zeker weten dat je tekeningen en offertes kloppen, laat ze dan door de AI QuickScan van Bylder controleren — digitale controle werkt namelijk twee kanten op: ook jij kunt je stukken laten checken vóórdat je tekent.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is een clash in de bouw?",
+      "a": "Een clash is een botsing tussen onderdelen in het ontwerp, bijvoorbeeld een leiding die door een draagbalk loopt of een ventilatiekanaal dat een kozijn kruist. Clash-detectie-software vindt die botsingen digitaal in het BIM-model, voordat er gebouwd wordt."
+    },
+    {
+      "q": "Hoe hoog zijn de faalkosten in de bouw?",
+      "a": "Schattingen komen al jaren uit op zo'n 5 tot 10% van de bouwomzet, wat landelijk neerkomt op miljarden euro's per jaar. Het gaat om alle kosten van fouten en herstelwerk: sloopwerk, opnieuw bestellen, stilstand en vertraging."
+    },
+    {
+      "q": "Betekent clash-detectie dat mijn woning foutloos wordt?",
+      "a": "Nee. Clash-detectie haalt ontwerpfouten eruit, maar uitvoeringsfouten op de bouwplaats blijven mogelijk. De kans op grote problemen en opleverpunten wordt kleiner, maar een goede voorbereiding van je oplevering blijft belangrijk."
+    },
+    {
+      "q": "Profiteer ik financieel van lagere faalkosten?",
+      "a": "Indirect. Faalkosten zitten verwerkt in bouwprijzen en risico-opslagen, dus efficiëntere bouwers kunnen scherper aanbieden. Direct merkbaar is vooral minder risico voor jou: minder vertraging, minder geïmproviseerde oplossingen en minder opleverdiscussies."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan van je plattegrond"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["wat-is-bim", "bim-legal-3d-koopcontract", "bim-en-meerwerk"]
+  }
+}

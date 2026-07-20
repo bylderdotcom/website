@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "wtw-ventilatie-woning",
+  "titel": "WTW-ventilatie in je woning: zo werkt balansventilatie",
+  "title_tag": "WTW-ventilatie: werking, filters en onderhoud | Bylder",
+  "meta_description": "WTW-ventilatie ververst de lucht in je woning en wint 90-95% van de warmte terug. Lees hoe het werkt, wat filters en onderhoud vragen en hoe de bypass koelt.",
+  "intro": [
+    "WTW-ventilatie (warmteterugwinning), ook wel balansventilatie of systeem D, is een ventilatiesysteem dat verse buitenlucht inblaast en vervuilde binnenlucht afvoert, waarbij een warmtewisselaar 90–95% van de warmte uit de afgevoerde lucht overdraagt aan de binnenkomende lucht. Je ventileert dus continu zonder de warmte weg te gooien.",
+    "In nieuwbouw is WTW de gangbare oplossing: een goed geïsoleerd, kierdicht huis heeft mechanische toevoer én afvoer nodig voor gezonde lucht. Wie het systeem begrijpt — filters, geluid, bypass — haalt er jarenlang comfort uit; wie het negeert, klaagt over muffe lucht of lawaai."
+  ],
+  "stats": [
+    ["90–95%", "warmteterugwinning uit de afgevoerde lucht"],
+    ["2–4x per jaar", "filters vervangen of reinigen"],
+    ["€2.000–€4.500", "WTW-unit vervangen (indicatie)"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe werkt warmteterugwinning precies?",
+      "html": "<p>De WTW-unit — meestal op zolder of in de techniekruimte — bevat twee ventilatoren en een warmtewisselaar. De ene ventilator zuigt vervuilde, vochtige lucht af uit keuken, badkamer en toilet; de andere blaast verse buitenlucht in de woonkamer en slaapkamers. In de wisselaar kruisen beide luchtstromen elkaar zonder te mengen, gescheiden door dunne platen waardoor de warmte overspringt.</p><p>Het resultaat: buitenlucht van 5°C komt als lucht van zo'n 18–19°C de kamers binnen. Dat rendement van 90–95% scheelt fors op de stookkosten vergeleken met ventileren via roosters, waar de koude lucht ongetemperd binnenkomt.</p>"
+    },
+    {
+      "kop": "Hoe vaak moet je de filters vervangen?",
+      "html": "<p>De unit bevat twee filters: één voor de binnenkomende buitenlucht (houdt stof en pollen tegen) en één voor de afgevoerde binnenlucht (beschermt de wisselaar). Vuile filters zijn de nummer één oorzaak van klachten: minder luchtdebiet, meer geluid, hoger stroomverbruik en muffe lucht.</p><ul><li>Vervang of reinig de filters 2 tot 4 keer per jaar; de meeste units geven een filtermelding.</li><li>Originele of gelijkwaardige filters kosten indicatief €10–€30 per set.</li><li>Laat elke twee jaar de kanalen en de wisselaar controleren; laat het systeem periodiek opnieuw inregelen als er klachten zijn.</li></ul><p>Woon je aan een drukke weg of heb je hooikoorts, overweeg dan fijnstof- of pollenfilters voor de toevoerlucht.</p>"
+    },
+    {
+      "kop": "Wat doe je tegen geluid van WTW-ventilatie?",
+      "html": "<p>Een goed ontworpen WTW-systeem hoor je in de woonkamer en slaapkamers nauwelijks. Geluidsklachten ontstaan vooral door te krappe kanalen, ontbrekende geluiddempers of een unit die structureel op een te hoge stand moet draaien omdat het systeem slecht is ingeregeld.</p><p>Waar je op let: een unit met ruime capaciteit (die dus zacht kan draaien), geluiddempers in de hoofdkanalen, geen toevoerventiel recht boven het bed en een ophanging die trillingen niet doorgeeft aan de constructie. Bij nieuwbouw gelden eisen aan het installatiegeluid in verblijfsruimten; vraag de aannemer hoe daaraan wordt voldaan.</p>"
+    },
+    {
+      "kop": "Wat is de bypass en wat heb je er in de zomer aan?",
+      "html": "<p>In de zomer wil je warmte juist níet terugwinnen. Daarvoor heeft vrijwel elke moderne WTW-unit een (automatische) bypass: een klep die de warmtewisselaar omzeilt, zodat koele buitenlucht — vooral 's nachts — rechtstreeks de woning in komt terwijl warme binnenlucht wordt afgevoerd.</p><p>Zo koel je de woning passief na een warme dag. De bypass werkt automatisch op basis van binnen- en buitentemperatuur; je hoeft er niets voor te doen. Het is geen airco: het effect is enkele graden, vergelijkbaar met slim 's nachts luchten, maar dan zonder open ramen en zonder inbraakrisico.</p>"
+    },
+    {
+      "kop": "Wat kost WTW-ventilatie in aanschaf en gebruik?",
+      "html": "<p>Bij nieuwbouw zit het systeem in de koopsom. Gaat na 12–15 jaar de unit stuk, reken dan indicatief op €2.000–€4.500 voor vervanging inclusief montage; de kanalen blijven gewoon liggen. Het stroomverbruik van moderne gelijkstroomventilatoren is bescheiden, indicatief 200–400 kWh per jaar afhankelijk van de stand.</p><p>Daar staat de warmtewinst tegenover: de teruggewonnen warmte hoeft je warmtepomp niet te leveren. Per saldo is WTW in een goed geïsoleerd huis vrijwel altijd zuiniger dan ventileren met roosters. Laat bij vervanging meerdere offertes maken en let op capaciteit (m³/h), geluidsniveau en of inregelen is inbegrepen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mogen ramen open bij WTW-ventilatie?",
+      "a": "Ja, dat mag gewoon. Het systeem blijft werken; je verliest alleen tijdelijk het warmteterugwin-voordeel. In de zomer is een open raam prima, in de winter kost het extra stookenergie."
+    },
+    {
+      "q": "Wat gebeurt er als ik de filters niet vervang?",
+      "a": "Het luchtdebiet daalt, de ventilatoren gaan harder werken (meer geluid en stroomverbruik) en de luchtkwaliteit verslechtert. Op termijn vervuilen ook de wisselaar en kanalen, wat een dure reiniging betekent."
+    },
+    {
+      "q": "Hoe lang gaat een WTW-unit mee?",
+      "a": "Indicatief 12 tot 15 jaar; ventilatoren en printplaten zijn vaak los te vervangen, wat goedkoper is dan een hele unit. De kanalen gaan de levensduur van de woning mee mits ze schoon blijven."
+    },
+    {
+      "q": "Kan WTW-ventilatie ook koelen?",
+      "a": "Beperkt. De zomerbypass laat 's nachts koele buitenlucht binnen zonder warmteterugwinning, wat de woning enkele graden verlicht. Voor echte koeling heb je vloerkoeling of een airco nodig."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": ["ventilatiesysteem-c-of-d", "binnenklimaat-luchtvochtigheid", "begrip:wtw-ventilatie"]
+  }
+}

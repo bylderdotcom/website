@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "groepenkast-en-3-fase",
+  "titel": "Groepenkast en 3-fase: wat heeft een nieuwbouwwoning nodig?",
+  "title_tag": "Groepenkast en 3-fase bij nieuwbouw: de basis | Bylder",
+  "meta_description": "Hoeveel groepen heeft een nieuwbouwwoning nodig en wanneer is 3-fase verplicht? Over Perilex, krachtstroom en waarom later uitbreiden duurder is.",
+  "intro": [
+    "Een moderne nieuwbouwwoning heeft doorgaans een groepenkast met 8 tot 12 eindgroepen en steeds vaker een 3-fase aansluiting (3×25 A), omdat warmtepomp, inductiekookplaat en laadpaal samen meer vermogen vragen dan een klassieke 1-fase aansluiting aankan.",
+    "De groepenkast is een van de goedkoopste dingen om tijdens de bouw goed te regelen en een van de duurste om achteraf om te bouwen. Loop de meterkasttekening in je meer- en minderwerklijst daarom kritisch na voordat je tekent."
+  ],
+  "stats": [
+    ["8–12", "eindgroepen in een moderne nieuwbouwwoning"],
+    ["3×25 A", "gangbare 3-fase aansluiting"],
+    ["±17 kW", "vermogen van 3×25 A, tegen ±5,7 kW bij 1-fase"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoeveel groepen heeft een woning nodig?",
+      "html": "<p>Elke groep is een eigen zekering voor een deel van de installatie. Standaard zijn er algemene groepen voor stopcontacten en licht (per verdieping of zone), plus verplichte of sterk aanbevolen aparte groepen voor wasmachine, droger, vaatwasser, oven en kookplaat. Daar komen bij all-electric wonen nog groepen bij voor warmtepomp, boiler, ventilatie, laadpaal en eventueel zonnepanelen en thuisbatterij. Zo kom je al snel op 10 tot 14 groepen. Vraag daarnaast om reserveruimte in de kast: twee tot vier lege plekken kosten bij de bouw bijna niets.</p>"
+    },
+    {
+      "kop": "Wanneer heb je 3-fase nodig?",
+      "html": "<p>Een 1-fase aansluiting van 1×35 A of 1×40 A levert maximaal circa 8 tot 9 kW; de klassieke 1×25 A zelfs maar 5,7 kW. Dat wordt krap zodra grootverbruikers samenvallen. Vuistregel: bij twee of meer van de volgende is 3-fase verstandig, bij alle drie vrijwel onmisbaar:</p><ul><li>warmtepomp (piek 2 tot 4 kW, met elektrisch bijstookelement meer);</li><li>laadpaal (3,7 tot 11 kW);</li><li>inductiekookplaat (piek 4 tot 7 kW).</li></ul><p>Bij nieuwbouw wordt 3×25 A daarom steeds vaker standaard aangelegd. Staat er in jouw project 1-fase in de basis, dan is opwaarderen als meerwerk vrijwel altijd de moeite waard.</p>"
+    },
+    {
+      "kop": "Wat is krachtstroom en wat is een Perilex-aansluiting?",
+      "html": "<p>Krachtstroom is de informele naam voor 3-fase stroom (400 V tussen de fasen). Een Perilex-stopcontact is de stekkeraansluiting waarmee zware apparaten, in de praktijk vrijwel altijd de kookplaat, op twee fasen of 3-fase worden aangesloten. Een inductiekookplaat met volledig vermogen vraagt een Perilex op 2×16 A of een vaste 3-fase aansluiting; op één gewone groep kan alleen een vermogensbegrensde kookplaat. Controleer dus of de keukenaansluiting in de meterkasttekening past bij de kookplaat die je bij de keukenleverancier uitzoekt.</p>"
+    },
+    {
+      "kop": "1-fase of 3-fase: de verschillen op een rij",
+      "html": "<table class=\"vgl\"><thead><tr><th>Kenmerk</th><th>1-fase (1×35 A)</th><th>3-fase (3×25 A)</th></tr></thead><tbody><tr><td>Maximaal vermogen</td><td>±8 kW</td><td>±17 kW</td></tr><tr><td>Laadpaal</td><td>tot 3,7 kW</td><td>tot 11 kW</td></tr><tr><td>Warmtepomp + koken + laden tegelijk</td><td>krap, load balancing nodig</td><td>ruim voldoende</td></tr><tr><td>Vaste netbeheerkosten</td><td>laagst</td><td>iets hoger per jaar</td></tr><tr><td>Later omzetten</td><td>—</td><td>meterkastwerk + netbeheerder, honderden euro's tot meer</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Waarom is later uitbreiden duurder?",
+      "html": "<p>Tijdens de bouw is een extra groep of een zwaardere aansluiting een kwestie van andere componenten en een dikkere kabel: het meerwerk blijft doorgaans beperkt tot tientallen tot enkele honderden euro's per onderdeel. Achteraf betaal je een installateur voor een nieuwe of omgebouwde groepenkast (indicatief €500 tot €1.500), plus de netbeheerder voor het verzwaren van de aansluiting, en moet er soms opnieuw kabel getrokken worden door afgewerkte wanden. Houd er ook rekening mee dat netbeheerders in sommige regio's wachttijden hebben voor verzwaringen. Eén keer ruim aanleggen is dus goedkoper dan twee keer verbouwen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel groepen moet ik bij nieuwbouw laten aanleggen?",
+      "a": "Reken op 10 tot 14 groepen bij een all-electric woning: algemene groepen per zone plus aparte groepen voor witgoed, koken, warmtepomp, ventilatie en laadpaal. Vraag daarnaast om twee tot vier reserveplekken in de kast."
+    },
+    {
+      "q": "Is 3-fase verplicht bij een warmtepomp?",
+      "a": "Nee, veel warmtepompen draaien prima op 1-fase. Het knelpunt is de optelsom: warmtepomp plus laadpaal plus inductie overschrijdt de capaciteit van een 1-fase aansluiting al snel. Daarom is 3-fase bij all-electric nieuwbouw de verstandige standaard."
+    },
+    {
+      "q": "Wat kost verzwaren van 1-fase naar 3-fase?",
+      "a": "Bij de netbeheerder kost het omzetten indicatief enkele honderden euro's; daar komt het aanpassen van de groepenkast door een installateur bij, indicatief €500 tot €1.500. Tijdens de bouw meebestellen is vrijwel altijd goedkoper."
+    },
+    {
+      "q": "Wat is het verschil tussen Perilex en krachtstroom?",
+      "a": "Krachtstroom is de 3-fase voeding zelf; Perilex is het type stopcontact waarmee je een zwaar apparaat, meestal de kookplaat, daarop aansluit. Een Perilex kan op twee fasen (2×16 A) of op volledige 3-fase bedraad zijn."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
+    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
+    "zusters": ["laadpaal-thuis", "begrip:perilex", "keuken:inductie-of-gas"]
+  }
+}

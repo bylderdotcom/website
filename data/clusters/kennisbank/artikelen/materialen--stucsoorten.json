@@ -1,0 +1,61 @@
+{
+  "cluster": "materialen",
+  "slug": "stucsoorten",
+  "titel": "Stucwerk: soorten, eigenschappen en prijzen",
+  "title_tag": "Stucwerk-soorten: overzicht en prijzen per m² | Bylder",
+  "meta_description": "Stucwerk is een pleisterlaag op wand of plafond: van behangklaar tot glad sausklaar, spachtelputz, kalkstuc en betonlook. Bekijk alle soorten met prijzen per m².",
+  "intro": [
+    "Stucwerk is een pleisterlaag van gips, kalk, leem of cementgebonden mortel die op wanden en plafonds wordt aangebracht om ze vlak, strak of juist decoratief af te werken. De stucsoort bepaalt hoe de wand eruitziet, hoe hij aanvoelt én wat je er daarna nog mee moet.",
+    "Bij nieuwbouw en verbouwing is stucwerk een van de grootste afwerkposten, en de termen op offertes zorgen geregeld voor verwarring: behangklaar is niet hetzelfde als sausklaar, en spachtelputz is iets anders dan glad pleisterwerk. Dit overzicht zet de soorten en prijzen op een rij."
+  ],
+  "stats": [
+    ["€10–€25", "per m² glad stucwerk"],
+    ["€10–€20", "per m² spachtelputz"],
+    ["Groep 3–4", "oplevergraad voor sauswerk"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen behangklaar en sausklaar?",
+      "html": "<p>Dit is de meest gemaakte verwarring bij nieuwbouw. <strong>Behangklaar</strong> (oplevergroep 2–3) betekent: vlak genoeg om te behangen, maar met kleine oneffenheden en plamuurplekken die onder verf direct zichtbaar zijn. <strong>Sausklaar</strong> (oplevergroep 3–4) is een gradatie strakker: geschikt om direct te sausen met matte muurverf. Wil je zijdeglans of strijklicht langs de wand, dan is zelfs groep 4 met extra plamuurwerk nodig. Wordt een woning 'behangklaar' opgeleverd en wil je sausen, reken dan op meerwerk van indicatief €5–€10 per m² om de wanden sausklaar te maken. Controleer dit altijd in je offerte of technische omschrijving.</p>"
+    },
+    {
+      "kop": "Welke stucsoorten zijn er?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Soort</th><th>Prijs per m² (indicatie)</th><th>Kenmerk</th></tr></thead><tbody><tr><td>Glad pleisterwerk (gips)</td><td>€10–€25</td><td>Strakke basis voor saus- of behangwerk</td></tr><tr><td>Behangklaar maken</td><td>€8–€15</td><td>Vlak, kleine oneffenheden toegestaan</td></tr><tr><td>Spachtelputz / sierpleister</td><td>€10–€20</td><td>Korrelstructuur, verbergt oneffenheden</td></tr><tr><td>Kalkstuc</td><td>€25–€45</td><td>Dampopen, mat-mineraal, vochtregulerend</td></tr><tr><td>Leemstuc</td><td>€30–€55</td><td>Dampopen, warme natuurlijke uitstraling</td></tr><tr><td>Betonlook / beton ciré-achtig</td><td>€60–€120</td><td>Decoratieve doorleefde eindafwerking</td></tr></tbody></table><p>Alle bedragen zijn brede marktranges inclusief arbeid, exclusief voorwerk zoals uithakken of voorstrijken.</p>"
+    },
+    {
+      "kop": "Wanneer kies je spachtelputz of sierpleister?",
+      "html": "<p>Spachtelputz is een sierpleister met een fijne korrel (meestal 1–2 mm) die met een spaan wordt aangebracht en gestructureerd. De structuur verbergt kleine oneffenheden en scheurtjes, is stootvaster dan glad stucwerk en direct af — sausen kan, maar hoeft niet. Daarom is het populair in trappenhuizen, hallen en op renovatiewanden die niet perfect vlak zijn. Nadeel: de korrel vangt stof en is lastig strak te herstellen na bijvoorbeeld leidingwerk, en weer glad maken betekent de wand opnieuw uitvlakken. Lees ook de uitleg bij het begrip <a href=\"/kennisbank/begrip/spachtelputz/\">spachtelputz</a>.</p>"
+    },
+    {
+      "kop": "Wat zijn kalkstuc en leemstuc?",
+      "html": "<p>Kalkstuc en leemstuc zijn minerale, dampopen pleisters. Ze nemen vocht op als de luchtvochtigheid hoog is en geven het weer af als de lucht droog is — een natuurlijke vochtregulatie die het binnenklimaat merkbaar verbetert. Kalkstuc is bovendien alkalisch en daardoor schimmelwerend, wat het geschikt maakt voor badkamers (buiten de spatzone). Leemstuc heeft een warme, aardse uitstraling en is er in vele natuurtinten, waardoor sausen vaak niet meer nodig is. Beide vragen vakmanschap en een dampopen afwerking: latex eroverheen sausen tenietdoet het ademende effect — gebruik <a href=\"/kennisbank/materialen/kalkverf/\">kalkverf</a> of leemverf.</p>"
+    },
+    {
+      "kop": "Wat zijn betonlook-afwerkingen?",
+      "html": "<p>Beton ciré-achtige pleisters zijn dunne, decoratieve eindlagen op cement- of kalkbasis die in meerdere lagen worden gespaand en afgewerkt met een sealer. Het resultaat is een doorleefd, gevlamd betonuiterlijk op wanden, in douches en zelfs op meubels. Ze zijn duidelijk duurder dan gewoon stucwerk (indicatief €60–€120 per m²) omdat het puur handwerk in meerdere lagen is. Verwant is <a href=\"/kennisbank/materialen/microcement/\">microcement</a>, dat ook op vloeren kan. Het eindresultaat hangt hier sterk af van de vakman — vraag altijd proefstalen en referenties.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat kost stucwerk per m²?",
+      "a": "Glad pleisterwerk kost indicatief €10–€25 per m² inclusief arbeid, spachtelputz €10–€20, kalk- en leemstuc €25–€55 en betonlook-afwerkingen €60–€120. Plafonds zijn per m² duurder dan wanden, en klein oppervlak kent vaak een minimumtarief."
+    },
+    {
+      "q": "Is behangklaar goed genoeg om te sausen?",
+      "a": "Nee, meestal niet. Behangklaar stucwerk mag kleine oneffenheden en plamuurplekken bevatten die onder verf zichtbaar worden, zeker bij strijklicht. Voor sauswerk heb je sausklaar stucwerk (oplevergroep 3 of 4) nodig; het verschil kost indicatief €5–€10 per m² extra."
+    },
+    {
+      "q": "Kun je spachtelputz overschilderen of verwijderen?",
+      "a": "Overschilderen kan prima met latex en een roller met lange pool. Verwijderen is bewerkelijker: de structuur moet worden afgestoken of overgeplamuurd en de wand opnieuw glad gezet, wat qua kosten in de buurt komt van nieuw stucwerk."
+    },
+    {
+      "q": "Welke stucsoort is het beste voor de badkamer?",
+      "a": "Buiten de directe spatzone werken kalkstuc en speciale badkamerpleisters goed: ze zijn dampopen en schimmelwerend. In de douche zelf kies je tegels of een waterdicht systeem zoals beton ciré met sealer, mits vakkundig aangebracht op een waterdichte ondergrond."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/eerlijke-prijzen/stucwerk/", "Eerlijke prijs voor stucwerk"],
+    "zusters": ["microcement", "kalkverf", "vloeren:stucwerk-glad-of-structuur"]
+  }
+}

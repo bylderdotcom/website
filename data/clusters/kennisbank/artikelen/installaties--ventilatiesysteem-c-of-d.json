@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "ventilatiesysteem-c-of-d",
+  "titel": "Ventilatiesysteem C of D: welk systeem past bij jouw huis?",
+  "title_tag": "Ventilatiesysteem C of D: de verschillen | Bylder",
+  "meta_description": "Systeem C ventileert met roosters en mechanische afvoer, systeem D met balansventilatie en warmteterugwinning. Vergelijk kosten, comfort en verbruik.",
+  "intro": [
+    "Het verschil tussen ventilatiesysteem C en D zit in de toevoer van verse lucht: bij systeem C komt die op natuurlijke wijze binnen via roosters in de kozijnen en zuigt een ventilatiebox de lucht mechanisch af; bij systeem D zijn toevoer én afvoer mechanisch (balansventilatie) en wint een warmtewisselaar 90–95% van de warmte terug.",
+    "Bij nieuwbouw ligt de keuze meestal al vast in de technische omschrijving, maar het loont om te weten wat je krijgt — het bepaalt je comfort, je energierekening en je onderhoud voor decennia. Bij renovatie kies je zelf, en dan is de afweging tussen eenvoud (C) en rendement (D) actueler dan ooit."
+  ],
+  "stats": [
+    ["90–95%", "warmteterugwinning bij systeem D; bij systeem C is dat 0%"],
+    ["1 vs 2", "kanalensystemen: alleen afvoer (C) of toevoer én afvoer (D)"],
+    ["2–4x per jaar", "filteronderhoud bij systeem D; systeem C heeft geen filters"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe werken systeem C en systeem D?",
+      "html": "<p><strong>Systeem C</strong> is het eenvoudigste mechanische systeem: verse lucht stroomt binnen via zelfregelende roosters boven de ramen in woonkamer en slaapkamers, en een centrale ventilatiebox zuigt continu lucht af in keuken, badkamer en toilet. De onderdruk trekt de verse lucht door het huis.</p><p><strong>Systeem D</strong> (balansventilatie met WTW) blaast verse lucht mechanisch in en zuigt tegelijk evenveel lucht af. Beide stromen passeren een warmtewisselaar die de warmte van de afgevoerde lucht overdraagt aan de toevoerlucht. Er zijn dus twee kanalenstelsels en geen roosters in de kozijnen nodig.</p>"
+    },
+    {
+      "kop": "Wat zijn de verschillen op een rij?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Aspect</th><th>Systeem C</th><th>Systeem D (WTW)</th></tr></thead><tbody><tr><td>Toevoer verse lucht</td><td>Roosters in kozijnen (natuurlijk)</td><td>Mechanisch, gefilterd</td></tr><tr><td>Warmteterugwinning</td><td>Geen</td><td>90–95%</td></tr><tr><td>Energieverbruik</td><td>Lager ventilatorverbruik, hoger warmteverlies</td><td>Iets hoger ventilatorverbruik, veel lager warmteverlies</td></tr><tr><td>Comfort winter</td><td>Koude lucht bij de roosters, tocht mogelijk</td><td>Voorverwarmde lucht, geen tocht</td></tr><tr><td>Filters buitenlucht</td><td>Nee (wel roosters schoonmaken)</td><td>Ja, houdt stof en pollen tegen</td></tr><tr><td>Onderhoud</td><td>Beperkt: box en roosters</td><td>Filters 2–4x per jaar, kanalen periodiek</td></tr><tr><td>Aanschaf (indicatie)</td><td>Lager</td><td>Hoger, door unit en dubbel kanaalwerk</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Welk systeem is energiezuiniger?",
+      "html": "<p>Systeem D wint op energiegebied duidelijk in een goed geïsoleerde woning. Bij systeem C komt buitenlucht ongetemperd binnen: elke kuub koude lucht moet je verwarming opwarmen. Systeem D geeft die warmte grotendeels terug, waardoor de warmtevraag merkbaar daalt — precies waarom nieuwbouw met warmtepomp vrijwel altijd systeem D krijgt.</p><p>De ventilatoren van systeem D verbruiken iets meer stroom dan de enkele afvoerventilator van systeem C, maar dat verschil is klein tegenover de bespaarde warmte. In een matig geïsoleerd huis is het voordeel van WTW kleiner en kan een goed uitgevoerd systeem C met CO2-sturing een prima prijs-prestatieverhouding bieden.</p>"
+    },
+    {
+      "kop": "Wat merk je van het verschil in comfort?",
+      "html": "<p>Het grootste comfortverschil zit bij de toevoer. Bij systeem C voel je op koude, winderige dagen koude lucht langs de roosters komen; veel bewoners zetten ze dan dicht — waarmee de ventilatie stilvalt en vocht en CO2 zich ophopen. Bij systeem D komt de lucht voorverwarmd en gefilterd binnen, zonder tocht en zonder pollen of fijnstof van buiten.</p><p>Daar staat tegenover dat systeem D valt of staat met onderhoud en inregelen: vuile filters of slecht ingeregelde ventielen geven muffe lucht en geluid. Systeem C is robuuster en vergeeft verwaarlozing beter. Kort gezegd: D biedt het hoogste comfortplafond, C de laagste onderhoudsdrempel.</p>"
+    },
+    {
+      "kop": "Wat voegt CO2-sturing toe?",
+      "html": "<p>CO2-sturing meet de luchtkwaliteit en past het ventilatiedebiet automatisch aan: zijn er veel mensen thuis, dan ventileert het systeem harder; is het huis leeg, dan zachter. Dat bespaart energie en houdt de lucht fris zonder dat je zelf standen hoeft te kiezen.</p><ul><li>Bij <strong>systeem C</strong> heet dit vaak C+ of vraaggestuurde ventilatie, soms per zone geregeld — een flinke verbetering van het basisscenario.</li><li>Bij <strong>systeem D</strong> stuurt CO2-meting de unit of kleppen per zone aan.</li></ul><p>Bij nieuwbouw is CO2-sturing regelmatig een meerwerkoptie die zichzelf in comfort dubbel en dwars bewijst; check in de technische omschrijving wat standaard is en laat het meerwerk zo nodig beoordelen voordat je tekent.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Welk systeem krijg ik bij nieuwbouw?",
+      "a": "Dat staat in de technische omschrijving. Systeem D met warmteterugwinning is bij nieuwbouw met warmtepomp het meest gangbaar, maar systeem C+ met CO2-sturing komt ook voor. Vraag het na vóór je tekent, want naderhand wisselen is kostbaar."
+    },
+    {
+      "q": "Kan ik systeem C later upgraden naar systeem D?",
+      "a": "Dat is ingrijpend: systeem D vraagt een tweede kanalenstelsel voor de toevoer, en dat is in een bestaande woning lastig weg te werken. Een realistischer upgrade is vraaggestuurde afvoer (C+) met CO2-sensoren, of een decentrale WTW-unit per ruimte."
+    },
+    {
+      "q": "Is systeem D niet ongezond omdat ramen dicht blijven?",
+      "a": "Nee, het is eerder andersom: systeem D ververst continu en gecontroleerd, met gefilterde buitenlucht. Ramen openzetten mag altijd. Voorwaarde is wel dat filters en kanalen worden onderhouden — een verwaarloosd systeem presteert slecht."
+    },
+    {
+      "q": "Wat kost het verschil tussen C en D?",
+      "a": "Systeem D is in aanschaf duidelijk duurder door de unit en het dubbele kanaalwerk; bij nieuwbouw zit het verschil in de projectprijs verwerkt. Daar staat een structureel lagere warmtevraag tegenover. Vraag bij renovatie offertes voor beide varianten aan om het verschil concreet te maken."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
+    "zusters": ["wtw-ventilatie-woning", "badkamer:badkamerventilatie", "begrip:wtw-ventilatie"]
+  }
+}

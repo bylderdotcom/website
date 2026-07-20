@@ -1,0 +1,61 @@
+{
+  "cluster": "installaties",
+  "slug": "laadpaal-thuis",
+  "titel": "Laadpaal thuis: wat heb je nodig bij nieuwbouw?",
+  "title_tag": "Laadpaal thuis bij nieuwbouw: kosten en keuzes | Bylder",
+  "meta_description": "Een laadpaal thuis kost indicatief €1.000-2.500 incl. installatie. Lees over 1-fase vs 3-fase, voorbereiding als meerwerk en slim laden.",
+  "intro": [
+    "Voor een laadpaal thuis heb je een eigen oprit of parkeerplek nodig, een geschikte elektrische aansluiting en een laadpunt van 3,7 tot 11 kW; compleet geïnstalleerd kost dat indicatief €1.000 tot €2.500.",
+    "Bij nieuwbouw is het slim om de laadpaal of minimaal de voorbereiding (loze leiding en gereserveerde groep) direct in de bouw mee te nemen als meerwerk. Achteraf een sleuf door je bestrating frezen en de groepenkast aanpassen is vrijwel altijd duurder en rommeliger."
+  ],
+  "stats": [
+    ["3,7–11 kW", "gangbaar laadvermogen thuis"],
+    ["€1.000–2.500", "indicatie laadpaal incl. installatie"],
+    ["3-fase", "aansluiting nodig voor 11 kW laden"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen 1-fase en 3-fase laden?",
+      "html": "<p>Op een 1-fase aansluiting laad je met maximaal 3,7 kW (16 A) en dat betekent grofweg 15 tot 20 kilometer rijbereik per uur laden. Met 3-fase haal je 11 kW en laad je een gemiddelde EV in een nacht helemaal vol. Sneller dan 11 kW laden thuis heeft zelden zin: de meeste auto's accepteren aan wisselstroom niet meer, en een nacht is bijna altijd lang genoeg. Voor wie weinig rijdt volstaat 3,7 kW prima; wie een grote accu heeft of de auto zakelijk veel gebruikt, kiest 3-fase.</p>"
+    },
+    {
+      "kop": "Hoe vergelijk je de opties?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Kenmerk</th><th>1-fase (3,7 kW)</th><th>3-fase (11 kW)</th></tr></thead><tbody><tr><td>Rijbereik per uur laden</td><td>±15–20 km</td><td>±50–60 km</td></tr><tr><td>Volle accu (60 kWh)</td><td>±16 uur</td><td>±5,5 uur</td></tr><tr><td>Vereiste aansluiting</td><td>standaard 1-fase volstaat vaak</td><td>3-fase aansluiting (3×25 A)</td></tr><tr><td>Meerkosten</td><td>laagst</td><td>hoger: 3-fase groep, soms verzwaring aansluiting</td></tr></tbody></table><p>Twijfel je, laat dan in elk geval de bekabeling op 3-fase voorbereiden; de laadpaal zelf kun je later altijd omzetten.</p>"
+    },
+    {
+      "kop": "Wat regel je bij nieuwbouw als meerwerk?",
+      "html": "<p>De meeste ontwikkelaars bieden een laadpaal-voorbereiding aan in de meerwerklijst. Let op wat er precies in zit:</p><ul><li><strong>Loze leiding</strong> van de meterkast naar de parkeerplek: het minimum, indicatief €150 tot €400.</li><li><strong>Voorbereide groep of complete kabel</strong> (bijvoorbeeld 5-aderig voor 3-fase) plus vrije ruimte in de groepenkast.</li><li><strong>Complete laadpaal</strong> inclusief montage en aanmelding.</li></ul><p>Controleer of de kabeldikte past bij 11 kW en of er een aparte groep met eigen aardlekbeveiliging is voorzien. Voor appartementen met een gedeelde parkeergarage loopt dit via de VvE-regels; vraag daar vroeg naar, want collectieve laadinfrastructuur regel je niet in je eentje.</p>"
+    },
+    {
+      "kop": "Wat is slim laden en wat levert het op?",
+      "html": "<p>Slim laden betekent dat de laadpaal het laadmoment en -vermogen automatisch aanpast. Dat kent drie smaken: laden wanneer stroom goedkoop is (met een dynamisch energiecontract kan het tariefverschil per kWh fors zijn), laden op eigen zonnestroom zodra de panelen overschot leveren, en <em>load balancing</em>, waarbij de paal terugschakelt als het fornuis en de warmtepomp veel vragen, zodat je hoofdaansluiting niet overbelast raakt. Zeker in een all-electric nieuwbouwwoning is load balancing geen luxe maar praktisch noodzakelijk.</p>"
+    },
+    {
+      "kop": "Wat kost een laadpaal thuis?",
+      "html": "<p>Reken indicatief op €1.000 tot €2.500 voor een kwaliteitslaadpaal inclusief installatie. De bandbreedte wordt bepaald door het merk en de functies (slim laden, load balancing, toegangspasjes), de afstand van meterkast tot parkeerplek, graafwerk door bestrating en eventuele aanpassingen aan de groepenkast. Een verzwaring van 1-fase naar 3-fase bij de netbeheerder komt daar los bij (indicatief enkele honderden euro's). Rijd je zakelijk, check dan of je werkgever meebetaalt; dat komt veel voor.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Heb ik 3-fase nodig voor een laadpaal?",
+      "a": "Niet per se: op 1-fase laad je met 3,7 kW, genoeg voor wie gemiddeld rijdt en 's nachts laadt. Voor 11 kW laden is 3-fase nodig. In een nieuwbouwwoning met warmtepomp en inductie is 3-fase sowieso vaak al aanwezig."
+    },
+    {
+      "q": "Wat kost een laadpaal inclusief installatie?",
+      "a": "Indicatief €1.000 tot €2.500, afhankelijk van merk, functies en de afstand tussen meterkast en parkeerplek. Alleen een voorbereiding (loze leiding en gereserveerde groep) bij nieuwbouw kost indicatief €150 tot €400."
+    },
+    {
+      "q": "Kan ik laden op mijn zonnepanelen?",
+      "a": "Ja, een slimme laadpaal kan het laadvermogen afstemmen op het overschot van je zonnepanelen. Dat is vooral interessant nu terugleveren steeds minder oplevert; je eigen zonnestroom direct in de auto stoppen is dan het voordeligst."
+    },
+    {
+      "q": "Is een laadpaal-voorbereiding bij nieuwbouw de moeite waard?",
+      "a": "Vrijwel altijd. Een loze leiding en gereserveerde groep kosten tijdens de bouw weinig, terwijl achteraf graven, boren en de groepenkast aanpassen al snel honderden euro's extra kost. Ook als je nog geen EV rijdt is de voorbereiding verstandig."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
+    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
+    "zusters": ["groepenkast-en-3-fase", "thuisbatterij", "begrip:loze-leiding"]
+  }
+}

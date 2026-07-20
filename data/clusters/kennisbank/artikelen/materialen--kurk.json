@@ -1,0 +1,61 @@
+{
+  "cluster": "materialen",
+  "slug": "kurk",
+  "titel": "Kurk: eigenschappen, prijs en toepassingen",
+  "title_tag": "Kurk: eigenschappen, prijs en toepassingen | Bylder",
+  "meta_description": "Kurk is de schors van de kurkeik: warm, veerkrachtig en geluiddempend als vloer en wandbekleding. Bekijk prijzen, klik vs plak en het duurzaamheidsprofiel.",
+  "intro": [
+    "Kurk is de schors van de kurkeik, die elke negen tot twaalf jaar wordt geoogst zonder dat de boom wordt gekapt. Het materiaal bestaat uit miljoenen luchtgevulde cellen per kubieke centimeter, wat kurk zijn kenmerkende combinatie geeft: licht, veerkrachtig, warm en geluiddempend.",
+    "In het interieur kom je kurk vooral tegen als vloer — klikpanelen of verlijmde tegels — en als akoestische wandbekleding. Na jaren van vergetelheid is kurk terug, gedragen door de vraag naar natuurlijke, comfortabele materialen en moderne dessins die weinig meer weghebben van de kurkvloer uit de jaren tachtig."
+  ],
+  "stats": [
+    ["€40–€80", "per m² gelegd"],
+    ["9–12 jaar", "tussen twee schorsoogsten"],
+    ["20+ jaar", "levensduur bij goed onderhoud"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat maakt kurk zo comfortabel?",
+      "html": "<p>De celstructuur van kurk werkt als een natuurlijke demper. Een kurkvloer veert licht mee bij elke stap, wat merkbaar prettiger loopt en staat dan een harde vloer — gewrichtsvriendelijk, en gevallen servies overleeft het vaker. Diezelfde structuur isoleert: kurk voelt direct warm aan blote voeten en dempt contactgeluid uitstekend, zowel in de ruimte zelf als naar de verdieping eronder. Daarom wordt kurk ook als ondervloer en als wandbekleding tegen galm toegepast. Bijkomend voordeel: kurk is antistatisch en van nature ongevoelig voor huisstofmijt.</p>"
+    },
+    {
+      "kop": "Wat zijn de eigenschappen van kurk?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Eigenschap</th><th>Beoordeling</th><th>Toelichting</th></tr></thead><tbody><tr><td>Prijsindicatie</td><td>Middenklasse</td><td>€40–€80 per m² gelegd, afhankelijk van type en afwerking (indicatie)</td></tr><tr><td>Krasvastheid</td><td>Redelijk</td><td>Veerkrachtig bij stoten; scherpe voorwerpen en naaldhakken laten sporen na</td></tr><tr><td>Vocht- en vlekbestendigheid</td><td>Redelijk tot goed</td><td>Goed gelakt kurk kan tegen spatwater; staand water vermijden</td></tr><tr><td>Onderhoud</td><td>Laag</td><td>Stofzuigen en licht vochtig dweilen; periodiek nieuwe laklaag</td></tr><tr><td>Levensduur</td><td>20+ jaar</td><td>Opnieuw lakken of oliën verlengt de levensduur aanzienlijk</td></tr><tr><td>Duurzaamheid</td><td>Uitstekend</td><td>Hernieuwbare schorsoogst, CO₂-opslag, hergroei zonder kap</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Kies je klik-kurk of plak-kurk?",
+      "html": "<p><strong>Klik-kurk</strong> bestaat uit panelen met een HDF-kern en kurk als top- en onderlaag, zwevend gelegd zoals laminaat — snel, zelf te doen en geschikt op een redelijk vlakke ondervloer. De houtkern maakt deze variant wel gevoeliger voor vocht. <strong>Plak-kurk</strong> (massieve kurktegels, verlijmd op een geëgaliseerde ondervloer) is dunner, stabieler en de betere keuze in vochtiger ruimtes en op vloerverwarming; na het leggen wordt de vloer in het werk afgelakt, wat naden verzegelt. Voor wanden bestaan dunne kurkpanelen en -tegels die vooral om hun warme uitstraling en galmdemping worden gekozen.</p>"
+    },
+    {
+      "kop": "Kan kurk op vloerverwarming?",
+      "html": "<p>Beperkt, en dat verdient eerlijke uitleg. Dezelfde luchtcellen die kurk warm en comfortabel maken, isoleren ook — de warmteweerstand van kurk is relatief hoog, waardoor vloerverwarming trager en minder efficiënt doorwerkt dan onder tegels of PVC. Verlijmde, dunne plak-kurk (tot circa 4–6 mm) blijft doorgaans binnen de gangbare grens van 0,09 m²K/W en is door de meeste fabrikanten vrijgegeven; dikke klik-kurk met HDF-kern zit daar al snel boven. Check dus altijd de opgave van de fabrikant en houd er rekening mee dat kurk zonder vloerverwarming al warm aanvoelt — dat compenseert veel.</p>"
+    },
+    {
+      "kop": "Hoe werk je kurk af en onderhoud je het?",
+      "html": "<p>Kurk wordt afgewerkt met lak of olie(-was). Lak — tegenwoordig meestal watergedragen PU, vaak al fabrieksmatig aangebracht — geeft de beste bescherming tegen vocht en vlekken en is het praktischst in keukens en hallen. Olie dringt in het materiaal, geeft een mattere, natuurlijker uitstraling en is plaatselijk bij te werken, maar vraagt vaker onderhoud. Dagelijks onderhoud is simpel: stofzuigen en licht vochtig dweilen met een pH-neutraal middel. Na jaren intensief gebruik kan een gelakte kurkvloer licht worden opgeschuurd en opnieuw gelakt, waarmee hij er weer jaren tegen kan. Zet viltjes onder meubels en leg een mat bij de buitendeur — grit is de grootste slijtagebron.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat kost een kurkvloer?",
+      "a": "Reken op €40–€80 per m² inclusief leggen en afwerken. Klik-kurk zit onderin die range en is zelf te leggen; verlijmde plak-kurk met aflakken in het werk zit bovenin. Wandkurk kost indicatief €20–€50 per m² aan materiaal."
+    },
+    {
+      "q": "Is kurk geschikt voor de badkamer?",
+      "a": "Verlijmde plak-kurk die in het werk volledig is afgelakt kan in een goed geventileerde badkamer, buiten de directe douchezone. Klik-kurk met HDF-kern is er ongeschikt: via de naden bereikt vocht de houtkern. Voor natte zones blijven tegels of PVC de veiligere keuze."
+    },
+    {
+      "q": "Hoe duurzaam is kurk werkelijk?",
+      "a": "Zeer duurzaam: de schors wordt geoogst zonder de boom te kappen en groeit in negen tot twaalf jaar terug, terwijl kurkeikenbossen CO₂ vastleggen en biodiversiteit ondersteunen. Ook het productieproces is relatief energie-arm en snijresten worden vrijwel volledig hergebruikt."
+    },
+    {
+      "q": "Verkleurt kurk in de zon?",
+      "a": "Ja, kurk kan onder direct zonlicht licht verkleuren of vergelen, net als hout. Een laklaag met uv-filter remt dit af, maar bij grote raampartijen blijft enige verkleuring op termijn zichtbaar. Schuif meubels en kleden af en toe een stukje op om aftekening te voorkomen."
+    }
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
+    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
+    "zusters": ["bamboe", "linoleum-marmoleum", "vloeren:zachte-vloeren-kiezen"]
+  }
+}
