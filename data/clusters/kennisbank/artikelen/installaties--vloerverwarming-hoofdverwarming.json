@@ -9,9 +9,18 @@
     "In nieuwbouw is vloerverwarming als hoofdverwarming de standaard geworden. Bij bestaande woningen is het een logische stap tijdens een verbouwing of verduurzaming, mits de woning goed geïsoleerd is en de vloeropbouw het toelaat."
   ],
   "stats": [
-    ["35–45°C", "aanvoertemperatuur bij lage-temperatuurverwarming"],
-    ["±10 cm", "hart-op-hart afstand van de leidingen bij hoofdverwarming"],
-    ["1–2 dagen", "infrezen van een gemiddelde bestaande vloer"]
+    [
+      "35–45°C",
+      "aanvoertemperatuur bij lage-temperatuurverwarming"
+    ],
+    [
+      "±10 cm",
+      "hart-op-hart afstand van de leidingen bij hoofdverwarming"
+    ],
+    [
+      "1–2 dagen",
+      "infrezen van een gemiddelde bestaande vloer"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
-    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
-    "zusters": ["warmtepomp-typen", "vloerkoeling", "vloeren:vloerverwarming-welke-vloer"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je installatie-offerte"
+    ],
+    "commercieel": [
+      "/verbouwen/",
+      "Verbouwen met Bylder"
+    ],
+    "zusters": [
+      "warmtepomp-typen",
+      "vloerkoeling",
+      "vloeren:vloerverwarming-welke-vloer"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

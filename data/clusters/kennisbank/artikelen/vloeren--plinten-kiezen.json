@@ -9,9 +9,18 @@
     "Plinten lijken een detail, maar ze bepalen de overgang tussen vloer en wand in elke ruimte van je huis. Bij nieuwbouw en verbouwing loont het om type, hoogte en kleur vroeg te kiezen: de plint moet passen bij het stucwerk, de vloerdikte en de deurkozijnen."
   ],
   "stats": [
-    ["€5–15/m¹", "indicatie voor plinten laten plaatsen"],
-    ["7–12 cm", "meest gekozen plinthoogte in woonruimtes"],
-    ["3 opties", "wit, vloerkleur of wandkleur als plintkleur"]
+    [
+      "€5–15/m¹",
+      "indicatie voor plinten laten plaatsen"
+    ],
+    [
+      "7–12 cm",
+      "meest gekozen plinthoogte in woonruimtes"
+    ],
+    [
+      "3 opties",
+      "wit, vloerkleur of wandkleur als plintkleur"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
-    "zusters": ["plintloos-afwerken", "materialen:mdf", "materialen:massief-hout"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/verbouwen/",
+      "Verbouwen met Bylder"
+    ],
+    "zusters": [
+      "plintloos-afwerken",
+      "materialen:mdf",
+      "materialen:massief-hout"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

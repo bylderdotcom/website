@@ -9,9 +9,18 @@
     "In een nieuwbouwwoning is het binnenklimaat de eerste een tot twee jaar juist vaak te vochtig door bouwvocht in beton, cement en stucwerk. Goed ventileren is dan geen luxe maar noodzaak: het voorkomt schimmel, kromtrekkende vloeren en scheurtjes in stucwerk."
   ],
   "stats": [
-    ["40–60%", "ideale relatieve luchtvochtigheid"],
-    ["<1.200 ppm", "richtwaarde CO2 in woonruimtes"],
-    ["1–2 jaar", "droogtijd bouwvocht in nieuwbouw"]
+    [
+      "40–60%",
+      "ideale relatieve luchtvochtigheid"
+    ],
+    [
+      "<1.200 ppm",
+      "richtwaarde CO2 in woonruimtes"
+    ],
+    [
+      "1–2 jaar",
+      "droogtijd bouwvocht in nieuwbouw"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
-    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
-    "zusters": ["wtw-ventilatie-woning", "ventilatiesysteem-c-of-d", "badkamer:badkamerventilatie"]
-  }
+    "tool": [
+      "/nieuwbouw-tools/",
+      "Gratis nieuwbouw-tools"
+    ],
+    "commercieel": [
+      "/woning-verduurzamen/",
+      "Woning verduurzamen met Bylder"
+    ],
+    "zusters": [
+      "wtw-ventilatie-woning",
+      "ventilatiesysteem-c-of-d",
+      "badkamer:badkamerventilatie"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

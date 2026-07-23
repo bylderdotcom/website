@@ -9,9 +9,18 @@
     "Formaat is niet alleen esthetiek: het bepaalt de legkosten, het aantal meters voeg dat je moet onderhouden en of de tegel het afschot naar de doucheput kan volgen."
   ],
   "stats": [
-    ["60x60 / 60x120 cm", "populairste badkamerformaten"],
-    ["2-3 mm", "voegbreedte bij rectified tegels"],
-    ["max 15x15 cm", "gangbaar formaat op douchevloer met puntafschot"]
+    [
+      "60x60 / 60x120 cm",
+      "populairste badkamerformaten"
+    ],
+    [
+      "2-3 mm",
+      "voegbreedte bij rectified tegels"
+    ],
+    [
+      "max 15x15 cm",
+      "gangbaar formaat op douchevloer met puntafschot"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Bekijk tegelformaten in de badkamerplanner"],
-    "commercieel": ["/kopen/tegels/", "Bekijk tegels in alle formaten"],
-    "zusters": ["badkamertegels-kiezen", "voegen-en-kitwerk", "begrip:rectified"]
-  }
+    "tool": [
+      "/ai-keuken-ontwerpen-badkamerplanner/",
+      "Bekijk tegelformaten in de badkamerplanner"
+    ],
+    "commercieel": [
+      "/kopen/tegels/",
+      "Bekijk tegels in alle formaten"
+    ],
+    "zusters": [
+      "badkamertegels-kiezen",
+      "voegen-en-kitwerk",
+      "begrip:rectified"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }

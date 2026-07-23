@@ -9,9 +9,18 @@
     "De groepenkast is een van de goedkoopste dingen om tijdens de bouw goed te regelen en een van de duurste om achteraf om te bouwen. Loop de meterkasttekening in je meer- en minderwerklijst daarom kritisch na voordat je tekent."
   ],
   "stats": [
-    ["8–12", "eindgroepen in een moderne nieuwbouwwoning"],
-    ["3×25 A", "gangbare 3-fase aansluiting"],
-    ["±17 kW", "vermogen van 3×25 A, tegen ±5,7 kW bij 1-fase"]
+    [
+      "8–12",
+      "eindgroepen in een moderne nieuwbouwwoning"
+    ],
+    [
+      "3×25 A",
+      "gangbare 3-fase aansluiting"
+    ],
+    [
+      "±17 kW",
+      "vermogen van 3×25 A, tegen ±5,7 kW bij 1-fase"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
-    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
-    "zusters": ["laadpaal-thuis", "begrip:perilex", "keuken:inductie-of-gas"]
-  }
+    "tool": [
+      "/nieuwbouw-tools/",
+      "Gratis nieuwbouw-tools"
+    ],
+    "commercieel": [
+      "/meerwerk/",
+      "Alles over meerwerk"
+    ],
+    "zusters": [
+      "laadpaal-thuis",
+      "begrip:perilex",
+      "keuken:inductie-of-gas"
+    ]
+  },
+  "affiliate_categorie": "elektra"
 }

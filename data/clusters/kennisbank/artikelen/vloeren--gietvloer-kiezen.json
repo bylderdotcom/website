@@ -9,9 +9,18 @@
     "In nieuwbouw is de gietvloer al jaren een van de populairste keuzes voor de begane grond: naadloos, goed op vloerverwarming en in vrijwel elke kleur leverbaar. Maar het is ook een van de duurdere opties, en de prijsverschillen tussen offertes zijn groot. Reden genoeg om scherp te kiezen."
   ],
   "stats": [
-    ["€80–150", "per m² gelegd (indicatie PU-gietvloer)"],
-    ["2–4 mm", "gangbare laagdikte woon-gietvloer"],
-    ["15–25 jaar", "levensduur bij goed onderhoud"]
+    [
+      "€80–150",
+      "per m² gelegd (indicatie PU-gietvloer)"
+    ],
+    [
+      "2–4 mm",
+      "gangbare laagdikte woon-gietvloer"
+    ],
+    [
+      "15–25 jaar",
+      "levensduur bij goed onderhoud"
+    ]
   ],
   "secties": [
     {
@@ -58,8 +67,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/eerlijke-prijzen/gietvloer/", "Eerlijke prijs voor een gietvloer"],
-    "zusters": ["gietvloer-of-pvc", "betonlook-vloer", "vloerverwarming-welke-vloer"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/eerlijke-prijzen/gietvloer/",
+      "Eerlijke prijs voor een gietvloer"
+    ],
+    "zusters": [
+      "gietvloer-of-pvc",
+      "betonlook-vloer",
+      "vloerverwarming-welke-vloer"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }

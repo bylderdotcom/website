@@ -9,9 +9,18 @@
     "Naast het materiaal kies je voor de vloer een antislipklasse (R-waarde). Die bepaalt hoe stroef de tegel is als hij nat wordt — in een badkamer geen detail, maar een veiligheidskeuze."
   ],
   "stats": [
-    ["€20-€60/m²", "gangbare prijsrange keramische badkamertegels"],
-    ["R10-R11", "aanbevolen antislipklasse natte badkamervloer"],
-    ["€40-€120/m²", "natuursteen incl. hogere legkosten"]
+    [
+      "€20-€60/m²",
+      "gangbare prijsrange keramische badkamertegels"
+    ],
+    [
+      "R10-R11",
+      "aanbevolen antislipklasse natte badkamervloer"
+    ],
+    [
+      "€40-€120/m²",
+      "natuursteen incl. hogere legkosten"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/keuken-badkamer-offerte-check/", "Check de tegelposten in je offerte"],
-    "commercieel": ["/kopen/tegels/", "Bekijk badkamertegels"],
-    "zusters": ["tegelformaat-kiezen", "materialen:keramiek", "materialen:natuursteen"]
-  }
+    "tool": [
+      "/keuken-badkamer-offerte-check/",
+      "Check de tegelposten in je offerte"
+    ],
+    "commercieel": [
+      "/kopen/tegels/",
+      "Bekijk badkamertegels"
+    ],
+    "zusters": [
+      "tegelformaat-kiezen",
+      "materialen:keramiek",
+      "materialen:natuursteen"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }

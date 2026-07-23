@@ -1965,6 +1965,21 @@
     "ldjson_sep": "\n"
   },
   {
+    "slug": "vloeren/beste-vloeronderhoud",
+    "file": "kennisbank/vloeren/beste-vloeronderhoud/index.html",
+    "path": "/kennisbank/vloeren/beste-vloeronderhoud/",
+    "title": "Beste vloeronderhoud per vloertype (2026) | Bylder",
+    "description": "De beste producten om je vloer te onderhouden: olie voor geolied parket, reiniger voor PVC en laminaat, en de juiste mop. Onafhankelijk gekozen per vloertype.",
+    "og_type": "article",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "ldjson": [
+      "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"De beste vloeronderhoud-producten per vloertype\", \"description\": \"De beste producten om je vloer te onderhouden: olie voor geolied parket, reiniger voor PVC en laminaat, en de juiste mop. Onafhankelijk gekozen per vloertype.\", \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://www.bylder.com/kennisbank/vloeren/beste-vloeronderhoud/\"}, \"inLanguage\": \"nl-NL\", \"datePublished\": \"2026-07-23\", \"dateModified\": \"2026-07-23\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder Redactie\", \"url\": \"https://www.bylder.com/over-ons/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\", \"url\": \"https://www.bylder.com/\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://www.bylder.com/android-chrome-512x512.png\"}}}",
+      "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Mag ik een stoomreiniger op elke vloer gebruiken?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Stoom is prima voor tegels en natuursteen, maar bij hout, laminaat en PVC drukt de hete stoom vocht in naden en lijmlagen, waardoor de vloer kan opbollen of loslaten en de garantie meestal vervalt.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe vaak moet ik een geolied parket na-oliën?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Meestal 1 tot 2 keer per jaar op looproutes, en verder wanneer het hout dof wordt of water niet meer afparelt. Wekelijks onderhoud met natuurzeep verlengt de tijd tussen oliebeurten.\"}}, {\"@type\": \"Question\", \"name\": \"Waarom geen gewone allesreiniger op mijn vloer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Veel allesreinigers zijn te alkalisch of laten een film achter die de beschermlaag aantast of de vloer plakkerig maakt. Een reiniger die is afgestemd op je vloertype reinigt zonder die schade.\"}}, {\"@type\": \"Question\", \"name\": \"Beïnvloeden deze aanbevelingen jullie prijsadvies?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nee. Dit zijn onafhankelijke productkeuzes; als Amazon-partner verdient Bylder aan kwalificerende aankopen, maar dat staat volledig los van onze marktprijs-analyses en offertechecks.\"}}]}",
+      "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Kennisbank\", \"item\": \"https://www.bylder.com/kennisbank/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Vloeren & afwerking\", \"item\": \"https://www.bylder.com/kennisbank/vloeren/\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"De beste vloeronderhoud-producten per vloertype\", \"item\": \"https://www.bylder.com/kennisbank/vloeren/beste-vloeronderhoud/\"}]}"
+    ],
+    "ldjson_sep": "\n"
+  },
+  {
     "slug": "vloeren/betonlook-vloer",
     "file": "kennisbank/vloeren/betonlook-vloer/index.html",
     "path": "/kennisbank/vloeren/betonlook-vloer/",

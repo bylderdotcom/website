@@ -9,9 +9,18 @@
     "Visgraat is al jaren dé interieurtrend in nieuwbouw en verbouw, maar het patroon kost meer dan recht leggen: meer legtijd, meer zaagverlies en speciale visgraat-planken. Wie de afwegingen kent, weet waar visgraat het geld waard is en waar een rechte plank verstandiger was geweest."
   ],
   "stats": [
-    ["+20–40%", "meerprijs t.o.v. recht leggen (indicatie)"],
-    ["90°", "hoek tussen de planken bij klassiek visgraat"],
-    ["3", "materialen: parket, PVC en laminaat"]
+    [
+      "+20–40%",
+      "meerprijs t.o.v. recht leggen (indicatie)"
+    ],
+    [
+      "90°",
+      "hoek tussen de planken bij klassiek visgraat"
+    ],
+    [
+      "3",
+      "materialen: parket, PVC en laminaat"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
-    "zusters": ["parket-kiezen", "pvc-vloer-kiezen", "laminaat-kiezen"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/showroomsale/",
+      "Showroomsales bij 60+ merken"
+    ],
+    "zusters": [
+      "parket-kiezen",
+      "pvc-vloer-kiezen",
+      "laminaat-kiezen"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }

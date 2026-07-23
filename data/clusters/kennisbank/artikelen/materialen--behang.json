@@ -9,9 +9,18 @@
     "Behang is terug van weggeweest: niet alleen als dessin of fotobehang op een accentwand, maar ook functioneel. Renovlies camoufleert scheurtjes en oneffenheden waar verf machteloos staat, en glasvezelbehang maakt wanden stootvast in hallen en trapgaten."
   ],
   "stats": [
-    ["€15–€60", "per rol vliesbehang"],
-    ["±5 m²", "wandoppervlak per rol"],
-    ["10–15 jaar", "levensduur"]
+    [
+      "€15–€60",
+      "per rol vliesbehang"
+    ],
+    [
+      "±5 m²",
+      "wandoppervlak per rol"
+    ],
+    [
+      "10–15 jaar",
+      "levensduur"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
-    "zusters": ["latex-muurverf", "stucsoorten", "vloeren:wanden-afwerken"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/verbouwen/",
+      "Verbouwen met Bylder"
+    ],
+    "zusters": [
+      "latex-muurverf",
+      "stucsoorten",
+      "vloeren:wanden-afwerken"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

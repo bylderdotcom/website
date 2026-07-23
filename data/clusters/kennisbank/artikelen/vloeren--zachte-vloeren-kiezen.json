@@ -9,9 +9,18 @@
     "In nieuwbouwplannen sneuvelen deze vloeren nogal eens omdat alle aandacht (en budget) naar de begane grond gaat. Zonde: een verdieping met tapijt of kurk scheelt merkbaar in geluid tussen verdiepingen — en de prijs per m² ligt flink lager dan die van parket of een gietvloer."
   ],
   "stats": [
-    ["€25–60", "per m² gelegd (indicatie)"],
-    ["±25–30 dB", "contactgeluiddemping van tapijt op de trap"],
-    ["10–20 jaar", "levensduur bij normaal gebruik"]
+    [
+      "€25–60",
+      "per m² gelegd (indicatie)"
+    ],
+    [
+      "±25–30 dB",
+      "contactgeluiddemping van tapijt op de trap"
+    ],
+    [
+      "10–20 jaar",
+      "levensduur bij normaal gebruik"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
-    "zusters": ["welke-vloer-per-ruimte", "materialen:tapijt", "materialen:kurk"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/showroomsale/",
+      "Showroomsales bij 60+ merken"
+    ],
+    "zusters": [
+      "welke-vloer-per-ruimte",
+      "materialen:tapijt",
+      "materialen:kurk"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }

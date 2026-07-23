@@ -9,9 +9,18 @@
     "Casco kiezen geeft vrijheid in merken, showrooms en prijs, en levert vaak duizenden euro's voordeel op ten opzichte van de projectshowroom. Daar staat tegenover dat je zelf moet plannen, de aansluitpunten vooraf goed moet vastleggen en de garantie op de badkamer bij jouw eigen installateur komt te liggen."
   ],
   "stats": [
-    ["€7.000-€20.000", "complete badkamer, gemiddeld €12.000"],
-    ["96%", "van kopers betaalt minstens één post te duur"],
-    ["€1.840", "gemiddeld te veel betaald aan meerwerk"]
+    [
+      "€7.000-€20.000",
+      "complete badkamer, gemiddeld €12.000"
+    ],
+    [
+      "96%",
+      "van kopers betaalt minstens één post te duur"
+    ],
+    [
+      "€1.840",
+      "gemiddeld te veel betaald aan meerwerk"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/keuken-badkamer-offerte-check/", "Vergelijk de stelpost met een eigen offerte"],
-    "commercieel": ["/eerlijke-prijzen/badkamer/", "Bekijk eerlijke badkamerprijzen"],
-    "zusters": ["index", "begrip:casco", "begrip:stelpost"]
-  }
+    "tool": [
+      "/keuken-badkamer-offerte-check/",
+      "Vergelijk de stelpost met een eigen offerte"
+    ],
+    "commercieel": [
+      "/eerlijke-prijzen/badkamer/",
+      "Bekijk eerlijke badkamerprijzen"
+    ],
+    "zusters": [
+      "index",
+      "begrip:casco",
+      "begrip:stelpost"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }

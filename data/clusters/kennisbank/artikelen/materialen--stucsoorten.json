@@ -9,9 +9,18 @@
     "Bij nieuwbouw en verbouwing is stucwerk een van de grootste afwerkposten, en de termen op offertes zorgen geregeld voor verwarring: behangklaar is niet hetzelfde als sausklaar, en spachtelputz is iets anders dan glad pleisterwerk. Dit overzicht zet de soorten en prijzen op een rij."
   ],
   "stats": [
-    ["€10–€25", "per m² glad stucwerk"],
-    ["€10–€20", "per m² spachtelputz"],
-    ["Groep 3–4", "oplevergraad voor sauswerk"]
+    [
+      "€10–€25",
+      "per m² glad stucwerk"
+    ],
+    [
+      "€10–€20",
+      "per m² spachtelputz"
+    ],
+    [
+      "Groep 3–4",
+      "oplevergraad voor sauswerk"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/eerlijke-prijzen/stucwerk/", "Eerlijke prijs voor stucwerk"],
-    "zusters": ["microcement", "kalkverf", "vloeren:stucwerk-glad-of-structuur"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/eerlijke-prijzen/stucwerk/",
+      "Eerlijke prijs voor stucwerk"
+    ],
+    "zusters": [
+      "microcement",
+      "kalkverf",
+      "vloeren:stucwerk-glad-of-structuur"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

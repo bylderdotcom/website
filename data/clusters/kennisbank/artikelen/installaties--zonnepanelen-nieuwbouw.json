@@ -9,9 +9,18 @@
     "Juist bij nieuwbouw loont het om hier vroeg over na te denken: het dak ligt nog open, de steiger staat er al en de omvormerkeuze bepaalt hoe makkelijk je later uitbreidt. Tegelijk verandert de businesscase, want de salderingsregeling stopt in 2027."
   ],
   "stats": [
-    ["2027", "einde van de salderingsregeling voor teruggeleverde stroom"],
-    ["€350–€500", "per paneel geïnstalleerd (indicatie)"],
-    ["±7–10 jaar", "indicatieve terugverdientijd, afhankelijk van eigen verbruik"]
+    [
+      "2027",
+      "einde van de salderingsregeling voor teruggeleverde stroom"
+    ],
+    [
+      "€350–€500",
+      "per paneel geïnstalleerd (indicatie)"
+    ],
+    [
+      "±7–10 jaar",
+      "indicatieve terugverdientijd, afhankelijk van eigen verbruik"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
-    "commercieel": ["/renovatiekosten/zonnepanelen/", "Kosten zonnepanelen"],
-    "zusters": ["thuisbatterij", "energielabel-woning", "laadpaal-thuis"]
-  }
+    "tool": [
+      "/nieuwbouw-tools/",
+      "Gratis nieuwbouw-tools"
+    ],
+    "commercieel": [
+      "/renovatiekosten/zonnepanelen/",
+      "Kosten zonnepanelen"
+    ],
+    "zusters": [
+      "thuisbatterij",
+      "energielabel-woning",
+      "laadpaal-thuis"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

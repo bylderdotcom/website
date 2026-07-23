@@ -9,9 +9,18 @@
     "De trap is een van de intensiefst gebruikte plekken in huis en bepaalt mee hoe de hal en overloop ogen. Bij een verbouwing of na de aankoop van een bestaande woning is renoveren bijna altijd slimmer dan vervangen: sneller, goedkoper en zonder hak- en breekwerk."
   ],
   "stats": [
-    ["€1.500–€4.500", "indicatie complete traprenovatie"],
-    ["13 treden", "telt een gemiddelde Nederlandse trap"],
-    ["1–2 dagen", "doorlooptijd van een professionele renovatie"]
+    [
+      "€1.500–€4.500",
+      "indicatie complete traprenovatie"
+    ],
+    [
+      "13 treden",
+      "telt een gemiddelde Nederlandse trap"
+    ],
+    [
+      "1–2 dagen",
+      "doorlooptijd van een professionele renovatie"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
-    "zusters": ["pvc-vloer-kiezen", "laminaat-kiezen", "zachte-vloeren-kiezen"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/verbouwen/",
+      "Verbouwen met Bylder"
+    ],
+    "zusters": [
+      "pvc-vloer-kiezen",
+      "laminaat-kiezen",
+      "zachte-vloeren-kiezen"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

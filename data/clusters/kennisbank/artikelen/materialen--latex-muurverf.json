@@ -9,9 +9,18 @@
     "Latex is verreweg de meest gebruikte wandafwerking in Nederlandse woningen: betaalbaar, reukarm, snel droog en in elke kleur leverbaar. Vrijwel elke nieuwbouwwoning en gerenoveerde wand wordt ermee gesausd, van plafond tot woonkamerwand."
   ],
   "stats": [
-    ["€2–€6", "per m² materiaal (2 lagen)"],
-    ["Klasse 1–2", "afwasbaarheid (ISO 11998)"],
-    ["±6–8 m²", "dekking per liter per laag"]
+    [
+      "€2–€6",
+      "per m² materiaal (2 lagen)"
+    ],
+    [
+      "Klasse 1–2",
+      "afwasbaarheid (ISO 11998)"
+    ],
+    [
+      "±6–8 m²",
+      "dekking per liter per laag"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
-    "zusters": ["kalkverf", "behang", "vloeren:wanden-afwerken"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/verbouwen/",
+      "Verbouwen met Bylder"
+    ],
+    "zusters": [
+      "kalkverf",
+      "behang",
+      "vloeren:wanden-afwerken"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

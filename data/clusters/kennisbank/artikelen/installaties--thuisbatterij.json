@@ -9,9 +9,18 @@
     "De belangstelling groeit omdat de salderingsregeling in 2027 stopt: teruggeleverde zonnestroom levert daarna minder op, terwijl zelf verbruikte stroom de volle prijs bespaart. Toch is een batterij niet voor iedereen (nu al) een verstandige aankoop — een eerlijke rekensom hoort erbij."
   ],
   "stats": [
-    ["5–15 kWh", "gangbare capaciteit van een thuisbatterij"],
-    ["€4.000–€10.000", "aanschaf en installatie (indicatie)"],
-    ["2027", "einde saldering: opslag en eigen verbruik worden waardevoller"]
+    [
+      "5–15 kWh",
+      "gangbare capaciteit van een thuisbatterij"
+    ],
+    [
+      "€4.000–€10.000",
+      "aanschaf en installatie (indicatie)"
+    ],
+    [
+      "2027",
+      "einde saldering: opslag en eigen verbruik worden waardevoller"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
-    "commercieel": ["/renovatiekosten/zonnepanelen/", "Kosten zonnepanelen"],
-    "zusters": ["zonnepanelen-nieuwbouw", "groepenkast-en-3-fase", "laadpaal-thuis"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je installatie-offerte"
+    ],
+    "commercieel": [
+      "/renovatiekosten/zonnepanelen/",
+      "Kosten zonnepanelen"
+    ],
+    "zusters": [
+      "zonnepanelen-nieuwbouw",
+      "groepenkast-en-3-fase",
+      "laadpaal-thuis"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }
