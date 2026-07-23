@@ -1,0 +1,27 @@
+[
+  {
+    "_schema": "Amazon-affiliate productbibliotheek. Voeg per product een object toe met: asin (de 10 tekens uit de Amazon-URL, bv. /dp/B08XXXXXXX/), titel (jouw eigen omschrijving, geen Amazon-titel kopieren), omschrijving (1 zin waarom aanbevolen) en categorie (koppelsleutel). Alleen items met een geldige 10-teken asin worden getoond; lege/voorbeeld-items blijven onzichtbaar. Tip: run _scripts/amazon_producten.py om van geplakte Amazon-URL's meteen deze entries te maken.",
+    "asin": "",
+    "titel": "",
+    "omschrijving": "",
+    "categorie": ""
+  },
+  {
+    "asin": "",
+    "titel": "Voorbeeld — kitpistool voor sanitairkit",
+    "omschrijving": "Stevig kitpistool voor strakke kitranden rond bad en douche. Vul de asin in om deze kaart live te zetten.",
+    "categorie": "badkameronderhoud"
+  },
+  {
+    "asin": "",
+    "titel": "Voorbeeld — onderhoudsolie voor houten vloer",
+    "omschrijving": "Voedt en beschermt een geoliede parket- of houten vloer. Vul de asin in om deze kaart live te zetten.",
+    "categorie": "vloeronderhoud"
+  },
+  {
+    "asin": "",
+    "titel": "Voorbeeld — slimme thermostaat",
+    "omschrijving": "Bespaart op stookkosten en werkt met de meeste cv-ketels en warmtepompen. Vul de asin in om deze kaart live te zetten.",
+    "categorie": "smarthome"
+  }
+]

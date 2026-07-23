@@ -9,9 +9,18 @@
     "Goed onderhoud is vooral licht en vaak in plaats van zwaar en zelden: wie na het douchen naspoelt en droogtrekt, heeft agressieve middelen bijna nooit nodig. Dat verlengt de levensduur van kranen, tegels en kit met jaren — en stelt de volgende renovatie van gemiddeld €12.000 flink uit."
   ],
   "stats": [
-    ["5-10 jaar", "levensduur sanitairkit"],
-    ["pH <7", "zure reinigers lossen kalk op"],
-    ["2 min", "droogtrekken scheelt het meeste werk"]
+    [
+      "5-10 jaar",
+      "levensduur sanitairkit"
+    ],
+    [
+      "pH <7",
+      "zure reinigers lossen kalk op"
+    ],
+    [
+      "2 min",
+      "droogtrekken scheelt het meeste werk"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/keuken-badkamer-offerte-check/", "Renovatie nodig? Check je offerte gratis"],
-    "commercieel": ["/kopen/sanitair/", "Sanitair met ledenkorting"],
-    "zusters": ["schimmel-voorkomen", "badkamer-zonder-tegels", "waterdichting-badkamer"]
-  }
+    "tool": [
+      "/keuken-badkamer-offerte-check/",
+      "Renovatie nodig? Check je offerte gratis"
+    ],
+    "commercieel": [
+      "/kopen/sanitair/",
+      "Sanitair met ledenkorting"
+    ],
+    "zusters": [
+      "schimmel-voorkomen",
+      "badkamer-zonder-tegels",
+      "waterdichting-badkamer"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }

@@ -9,9 +9,18 @@
     "Bij nieuwbouw is het moment om na te denken over domotica vóór de afbouw: loze leidingen en extra aansluitpunten kosten tijdens de bouw weinig, terwijl je de slimme apparaten zelf beter later en stap voor stap kunt aanschaffen."
   ],
   "stats": [
-    ["5–15%", "indicatieve besparing met een slimme thermostaat"],
-    ["P1-poort", "geeft live energie-inzicht via de slimme meter"],
-    ["Matter", "dé merkoverstijgende smart home-standaard"]
+    [
+      "5–15%",
+      "indicatieve besparing met een slimme thermostaat"
+    ],
+    [
+      "P1-poort",
+      "geeft live energie-inzicht via de slimme meter"
+    ],
+    [
+      "Matter",
+      "dé merkoverstijgende smart home-standaard"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
-    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
-    "zusters": ["laadpaal-thuis", "thuisbatterij", "begrip:loze-leiding"]
-  }
+    "tool": [
+      "/nieuwbouw-tools/",
+      "Gratis nieuwbouw-tools"
+    ],
+    "commercieel": [
+      "/meerwerk/",
+      "Alles over meerwerk"
+    ],
+    "zusters": [
+      "laadpaal-thuis",
+      "thuisbatterij",
+      "begrip:loze-leiding"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

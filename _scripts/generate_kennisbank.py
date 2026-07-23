@@ -12,6 +12,44 @@ SITE = 'https://www.bylder.com'
 SRC = os.path.join(ROOT, 'data', 'clusters', 'kennisbank')
 VANDAAG = datetime.date.today().isoformat()
 
+# ── Amazon-affiliate (bulk) ─────────────────────────────────────────────
+# Één store-ID voor alle links. Wijzig hier = sitewide door.
+AMAZON_TAG = 'bylder05-21'
+AMAZON_DOM = 'www.amazon.nl'
+ASIN_RE = re.compile(r'^[A-Z0-9]{10}$')
+
+def laad_producten():
+    """Leest producten.json. Alleen items met een geldige 10-teken ASIN
+    worden meegenomen — zo gaat er nooit een kapotte/lege link live."""
+    p = os.path.join(SRC, 'producten.json')
+    if not os.path.exists(p):
+        return []
+    try:
+        items = json.load(open(p, encoding='utf-8'))
+    except Exception:
+        return []
+    out = []
+    for x in items:
+        if isinstance(x, dict) and ASIN_RE.match((x.get('asin') or '').strip().upper()):
+            x['asin'] = x['asin'].strip().upper()
+            out.append(x)
+    return out
+
+def amazon_link(asin):
+    return f'https://{AMAZON_DOM}/dp/{asin}/?tag={AMAZON_TAG}'
+
+def aff_producten_voor(a, producten):
+    """Kies producten voor een artikel: expliciete ASIN-lijst (a['affiliate'])
+    wint; anders alle producten met a['affiliate_categorie']. Max 6."""
+    by = {p['asin']: p for p in producten}
+    asins = [x.strip().upper() for x in (a.get('affiliate') or [])]
+    if asins:
+        sel = [by[x] for x in asins if x in by]
+    else:
+        cat = a.get('affiliate_categorie')
+        sel = [p for p in producten if cat and p.get('categorie') == cat] if cat else []
+    return sel[:6]
+
 CLUSTERS = {
     'keuken':    ('Keuken', '/kennisbank/keuken/'),
     'badkamer':  ('Badkamer', '/kennisbank/badkamer/'),
@@ -61,7 +99,16 @@ table.vgl td{padding:11px 14px;border-top:1px solid rgba(61,46,30,0.07);color:rg
 .art-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:14px;padding:18px 22px;text-decoration:none;display:block;}
 .art-card:hover{border-color:rgba(61,90,62,0.35);text-decoration:none;}
 .art-card b{display:block;font-size:15px;color:#1A1208;margin-bottom:4px;}
-.art-card span{font-size:13px;color:rgba(61,46,30,0.55);line-height:1.55;}"""
+.art-card span{font-size:13px;color:rgba(61,46,30,0.55);line-height:1.55;}
+.aff-disclosure{font-size:12px;color:rgba(61,46,30,0.5);line-height:1.55;margin:6px 0 14px;font-style:italic;}
+.aff-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:0 0 8px;}
+@media(max-width:768px){.aff-grid{grid-template-columns:1fr;}}
+.aff-card{background:#fff;border:1px solid rgba(61,46,30,0.10);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;}
+.aff-body{flex:1;}
+.aff-titel{font-size:15px;font-weight:800;color:#1A1208;margin-bottom:6px;letter-spacing:-0.01em;}
+.aff-desc{font-size:13.5px;color:rgba(61,46,30,0.65);line-height:1.6;}
+.aff-btn{align-self:flex-start;background:#3D5A3E;color:#F5F0E8;padding:9px 17px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;}
+.aff-btn:hover{background:#4E7350;text-decoration:none;}"""
 
 NAV = """<nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:16px 0;">
   <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;">
@@ -135,7 +182,7 @@ def resolve_zuster(z,cluster):
         c,s=cluster,z
     return c,s
 
-def render(a,arts):
+def render(a,arts,producten=()):
     cluster, slug = a['cluster'], a['slug']
     cnaam, cbase = CLUSTERS[cluster]
     url = SITE+pad(cluster,slug)
@@ -177,6 +224,19 @@ def render(a,arts):
         cards=''.join(f'<a href="{pad(cluster,s)}" class="art-card"><b>{art["titel"]}</b><span>{art["meta_description"][:110]}…</span></a>'
                       for (c,s),art in sorted(arts.items()) if c==cluster and s!='index')
         grid=f'<div class="divider"></div><h2>Alle artikelen in dit cluster</h2><div class="art-grid">{cards}</div>'
+    # affiliate-blok (alleen als er geldige producten aan het artikel hangen)
+    aff=aff_producten_voor(a,producten)
+    affblok=''
+    if aff:
+        cards_aff=''.join(
+            f'<div class="aff-card"><div class="aff-body"><div class="aff-titel">{p["titel"]}</div>'
+            f'<div class="aff-desc">{p.get("omschrijving","")}</div></div>'
+            f'<a class="aff-btn" href="{amazon_link(p["asin"])}" target="_blank" rel="sponsored nofollow noopener">Bekijk op Amazon →</a></div>'
+            for p in aff)
+        affblok=('<div class="divider"></div><h2>Aanbevolen producten</h2>'
+            '<p class="aff-disclosure">Als Amazon-partner verdient Bylder aan kwalificerende aankopen. '
+            'Deze aanbevelingen staan los van — en be&iuml;nvloeden niet — onze onafhankelijke prijsanalyses.</p>'
+            f'<div class="aff-grid">{cards_aff}</div>')
     crumb_html=' → '.join(f'<a href="{u.replace(SITE,"")}" style="color:rgba(61,46,30,0.4);">{n}</a>' for n,u in crumbs[:-1]) + f' → <span style="color:rgba(61,46,30,0.65);">{crumbs[-1][0]}</span>'
     body=f"""{''.join(blocks)}{NAV}
 <main style="padding:64px 0 72px;"><div class="container">
@@ -189,6 +249,7 @@ def render(a,arts):
 <div class="eeat"><span style="width:34px;height:34px;background:#3D5A3E;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;color:#F5F0E8;font-weight:800;font-family:'Space Mono',monospace;font-size:12px;flex-shrink:0;">B.</span><span>Door <b>Bylder Redactie</b> · Laatst bijgewerkt: {VANDAAG} · Onderbouwd met marktprijzen uit door Bylder geanalyseerde offertes.</span></div>
 {secties}
 {grid}
+{affblok}
 <div class="internal-links"><div class="il-title">Verder lezen &amp; tools</div><div class="il-links">{il_html}</div></div>
 {faqblok}
 <div class="cta-block"><h2>Weet wat een eerlijke prijs is</h2><p>Upload je offerte voor een gratis AI-check, of word lid voor €99 en bespaar gemiddeld €4.200 met kortingen bij 60+ merken.</p><a href="/#scan" class="cta-btn">Start gratis QuickScan →</a></div>
@@ -200,6 +261,7 @@ def render(a,arts):
 
 def main():
     arts=laad()
+    producten=laad_producten()
     if not arts:
         print('geen artikelen gevonden'); sys.exit(1)
     problemen=[]
@@ -210,7 +272,7 @@ def main():
         for z in (a.get('links',{}).get('zusters') or []):
             c,s=resolve_zuster(z,cluster)
             if (c,s) not in arts: problemen.append(f'{cluster}--{slug}: zuster {z} bestaat niet')
-        html=render(a,arts)
+        html=render(a,arts,producten)
         p=pad(cluster,slug)
         d=os.path.join(ROOT,p.strip('/'))
         os.makedirs(d,exist_ok=True)
