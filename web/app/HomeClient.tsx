@@ -59,6 +59,62 @@ export default function HomeClient() {
     }
     w.sluitPopup = function () { const p = document.getElementById('aupingPopup'); if (p) p.style.display = 'none' }
 
+    // ── goedkeur-demo (#probeer): 3 voorstel-kaarten, jij keurt goed ──
+    const pdStappen = [
+      { chip: 'Vakbedrijf', titel: 'Dakkapel plaatsen — 3 bedrijven vergeleken', waarom: 'Bouwgroep Deltij staat bovenaan: 4,8★, 6 km bij je vandaan, kan in september.', prijs: 'vanaf €6.200', garantie: '10 jaar garantie', fair: 'Volgorde puur op geschiktheid — elk bedrijf betaalt ons hetzelfde.',
+        variant: { titel: 'Dakkapel in kunststof — zelfde 3 bedrijven', waarom: 'Kunststof scheelt €800 en is onderhoudsarm. Plaatsing kan in oktober.', prijs: 'vanaf €5.400' },
+        na: 'De dakkapel staat klaar. Dan je meerwerklijst — daar zag ik iets.' },
+      { chip: 'Meerwerk', titel: 'Vloerverwarming: via de bouwer doen', waarom: 'Moet vóór de dekvloer — achteraf is het 3× duurder. De prijs van je bouwer is marktconform.', prijs: '€3.400', garantie: 'in de bouwgarantie', fair: 'Gecheckt tegen echte marktprijzen uit offertes van bewoners.',
+        variant: { titel: 'Vloerverwarming: alleen begane grond', waarom: 'Scheelt €1.450; de zolder kan later nog via een eigen installateur.', prijs: '€1.950' },
+        na: 'Slim geregeld. Nog één: de vloer voor je woonkamer.' },
+      { chip: 'Product', titel: 'Eiken vloer voor de woonkamer', waarom: 'Past bij je stijl. Met je Bylder-voucher krijg je 10% korting bij Parketgigant.', prijs: '€1.536 na korting', garantie: '25 jaar garantie', fair: 'Aanbeveling op geschiktheid — elk merk betaalt ons hetzelfde.',
+        variant: { titel: 'Donker geolied eiken — zelfde leverancier', waarom: 'Donkerder, zelfde prijsklasse, ook met 10% voucher.', prijs: '€1.590 na korting' },
+        na: '' },
+    ]
+    let pdI = 0, pdBezig = false
+    const pdEl = (id: string) => document.getElementById(id)
+    const pdToon = (st: typeof pdStappen[0], metVariant: boolean) => {
+      const set = (id: string, txt: string) => { const e = pdEl(id); if (e) e.textContent = txt }
+      set('pd-chip', st.chip)
+      set('pd-titel', metVariant && st.variant ? st.variant.titel : st.titel)
+      set('pd-waarom', metVariant && st.variant ? st.variant.waarom : st.waarom)
+      set('pd-prijs', metVariant && st.variant ? st.variant.prijs : st.prijs)
+      set('pd-garantie', st.garantie)
+      set('pd-fair', st.fair)
+      set('pd-teller', 'Voorstel ' + (pdI + 1) + ' van ' + pdStappen.length)
+      const a = pdEl('pd-acties'); if (a) a.style.display = 'flex'
+      const st2 = pdEl('pd-status'); if (st2) st2.style.display = 'none'
+    }
+    const pdVolgende = (statusTekst: string) => {
+      if (pdBezig) return
+      pdBezig = true
+      const a = pdEl('pd-acties'); if (a) a.style.display = 'none'
+      const stt = pdEl('pd-status-tekst'); if (stt) stt.textContent = statusTekst
+      const st2 = pdEl('pd-status'); if (st2) st2.style.display = 'flex'
+      const prog = pdEl('pd-prog'); if (prog) prog.style.width = Math.round(((pdI + 1) / pdStappen.length) * 100) + '%'
+      const na = pdStappen[pdI].na
+      timers.push(setTimeout(() => {
+        pdI++
+        if (pdI >= pdStappen.length) {
+          const k = pdEl('pd-kaart'); if (k) k.style.display = 'none'
+          const t = pdEl('pd-teller'); if (t) t.textContent = 'Alles geregeld'
+          const kl = pdEl('pd-klaar'); if (kl) kl.style.display = 'block'
+          const m = pdEl('pd-msg'); if (m) m.textContent = 'Dat was alles. In je echte woningdossier houd ik dit bij van koopakte tot laatste lamp.'
+        } else {
+          if (na) { const m = pdEl('pd-msg'); if (m) m.textContent = na }
+          const k = pdEl('pd-kaart'); if (k) k.style.opacity = '0'
+          timers.push(setTimeout(() => { pdToon(pdStappen[pdI], false); if (k) k.style.opacity = '1'; pdBezig = false }, 200))
+        }
+      }, 900))
+    }
+    w.pdGoed = () => pdVolgende('Geregeld — Bylder gaat ermee aan de slag')
+    w.pdWeg = () => pdVolgende('Weg — Bylder zoekt een alternatief')
+    w.pdVariant = () => {
+      if (pdBezig) return
+      pdToon(pdStappen[pdI], true)
+      const m = pdEl('pd-msg'); if (m) m.textContent = 'Aangepast. Beter zo? Keur goed, of pas nog eens aan.'
+    }
+
     // ── woningtype-toggle (index.html @DOMContentLoaded) ──
     const wtBtns = Array.from(document.querySelectorAll<HTMLElement>('#wt-toggle .wt-btn'))
     const wtGrids = Array.from(document.querySelectorAll<HTMLElement>('.wt-grid'))
@@ -79,10 +135,10 @@ export default function HomeClient() {
 
     // ── typewriter (index.html) ──
     const phrases = [
-      'Slimme AI-begeleiding bij elke stap.',
-      'Gemiddeld €4.200 bespaard per project.',
-      'Gecertificeerde aannemers in jouw regio.',
-      'Vouchers automatisch gekoppeld aan jouw plan.',
+      'Meerwerklijst gecheckt: 3 posten te duur — keur de besparing goed.',
+      'Dakkapel: 3 vakbedrijven vergeleken — keur je favoriet goed.',
+      'Eiken vloer met 10% voucher gevonden — keur goed en klaar.',
+      'Vergunning uitgezocht: niet nodig — al afgevinkt.',
     ]
     let pi = 0, ci = 0, del = false
     const type = () => {
