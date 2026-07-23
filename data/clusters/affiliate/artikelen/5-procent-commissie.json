@@ -1,0 +1,52 @@
+{
+  "slug": "5-procent-commissie",
+  "is_pillar": false,
+  "titel": "5% commissie: waarom Bylder het goedkoopste woon-affiliatenetwerk is",
+  "title_tag": "5% commissie op alle verkopen | Bylder",
+  "meta_description": "Bylder rekent een vlakke 5% commissie zonder override. Lees wat je ervoor krijgt, een rekenvoorbeeld en de vergelijking met de ~30% override.",
+  "intro": [
+    "Bylder rekent een vlakke commissie van 5% op alle verkopen die via het platform tot stand komen. Geen staffels, geen instapkosten, geen override die er bovenop komt. Het is waarschijnlijk het laagste tarief van alle affiliate-netwerken en dat is geen toeval, maar een bewuste keuze voor de woon- en bouwmarkt.",
+    "Een laag tarief roept terecht de vraag op: wat krijg ik daar dan voor? Dit artikel legt uit hoe het tarief werkt, wat er in zit, en hoe het zich verhoudt tot de override van zo'n 30% die bij de grote netwerken boven op de commissie komt. Zodat je zelf kunt narekenen wat het voor jouw marge betekent."
+  ],
+  "secties": [
+    {
+      "kop": "Wat houdt de 5% precies in?",
+      "html": "<p>Je betaalt 5% over de waarde van een verkoop die via Bylder tot stand komt. Dat percentage is vlak: het geldt voor alle verkopen, ongeacht productgroep of volume. Er is geen apart plaatsingsgeld en geen budget dat je vooraf uitgeeft. Komt er geen verkoop, dan betaal je niets. Dat is de kern van no cure, no pay: het risico ligt bij het netwerk, niet bij jou.</p>"
+    },
+    {
+      "kop": "Wat je ervoor krijgt",
+      "html": "<p>De 5% is geen kaal doorlinktarief. In de deelname zitten de plaatsing, de koppeling van je feed en de matching op ruimte, stijl en koopmoment. Concreet:</p><ul><li>Aansluiting en plaatsing op het platform, zonder budget vooraf</li><li>Automatische invoer van je hele catalogus via je Google Shopping- of CSV-feed</li><li>AI-matching die jouw producten koppelt aan het juiste koopmoment</li><li>Toegang tot koopklare kopers met budget, context en koopreden</li><li>Inzet van kortingsvouchers voor zowel je webshop als je fysieke winkel</li></ul><p>Je betaalt dus niet alleen voor een klik, maar voor plaatsing bij de juiste koper op het juiste moment, en alleen als het tot een verkoop leidt.</p>"
+    },
+    {
+      "kop": "Rekenvoorbeeld (indicatief)",
+      "html": "<p>Een voorbeeld om het tastbaar te maken. De getallen zijn indicatief en dienen alleen ter illustratie; jouw werkelijke cijfers hangen af van je assortiment en marges.</p><p>Stel, een koper bestelt via Bylder een woonproduct van €500. Je commissie is dan 5%, oftewel €25. Er komt niets bovenop: geen override, geen extra netwerkfee. Bij een netwerk waar een override van zo'n 30% boven op de afgedragen commissie komt, betaal je aan diezelfde verkoop naar verhouding meer, terwijl de verkoop zelf identiek is. Over een reeks verkopen tikt dat verschil aan in je marge.</p><table class=\"vgl\"><thead><tr><th>Verkoop van €500</th><th>Bylder</th><th>Netwerk met override (indicatief)</th></tr></thead><tbody><tr><td>Basiscommissie</td><td>5% = €25</td><td>Commissie naar keuze</td></tr><tr><td>Override netwerk</td><td>€0</td><td>~30% bovenop de commissie</td></tr><tr><td>Je betaalt bij geen verkoop</td><td>€0</td><td>€0</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Vergelijking met de override bij grote netwerken",
+      "html": "<p>Het grootste kostenverschil zit niet in de commissie zelf, maar in de override. Bij netwerken als Awin en Daisycon betaal je doorgaans een commissie aan de affiliate én daar bovenop een override van rond de 30% aan het netwerk. Die override is de opslag waarmee het netwerk verdient, en die komt boven op wat je toch al afdraagt. Bij Bylder is die opslag er niet. Het vlakke tarief van 5% is wat je betaalt, en meer niet. Voor de woonmarkt, met vaak stevige inkoop en beperkte marges, maakt dat een reëel verschil.</p>"
+    },
+    {
+      "kop": "Waarom Bylder dit tarief kan bieden",
+      "html": "<p>Het lage tarief kan omdat Bylder één markt bedient en efficiënt werkt. De feedkoppeling en de matching zijn geautomatiseerd, dus er is weinig handmatig beheer per merchant. En doordat kopers op hun koopmoment binnenkomen, is de verhouding tussen vertoningen en verkopen gunstiger, wat het model gezond houdt zonder dat er een dikke override nodig is. Inmiddels doen 60+ merken mee en ligt de gemiddelde besparing voor een koper op zo'n €4.200 per traject. Wil je zelf aansluiten, maak dan een merchant-account aan op <a href=\"https://app.bylder.com\">app.bylder.com</a> of lees meer op <a href=\"/deelnemer-worden/woonwinkels-merken/\">deelnemer worden voor woonwinkels en merken</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is de 5% echt het totale tarief?",
+      "a": "Ja. Je betaalt een vlakke 5% over verkopen via het platform, zonder override, instapkosten of budget vooraf. Geen verkoop betekent geen kosten."
+    },
+    {
+      "q": "Zijn er verborgen kosten of instaptarieven?",
+      "a": "Nee. Aansluiten en plaatsing zitten in de deelname. Er is geen apart plaatsingsgeld en geen vast maandbedrag; je rekent alleen de 5% af over daadwerkelijke verkopen."
+    },
+    {
+      "q": "Geldt de 5% voor alle producten en productgroepen?",
+      "a": "Ja, het tarief is vlak en geldt voor alle verkopen, ongeacht productgroep of volume. Zo weet je vooraf precies waar je aan toe bent."
+    },
+    {
+      "q": "Hoe kan Bylder goedkoper zijn dan de grote netwerken?",
+      "a": "Doordat Bylder één markt bedient, de feedkoppeling en matching automatiseert en kopers op hun koopmoment bereikt, is er geen override van zo'n 30% nodig die bij grote netwerken boven op de commissie komt."
+    }
+  ],
+  "cta": ["Word deelnemer", "https://app.bylder.com"]
+}
