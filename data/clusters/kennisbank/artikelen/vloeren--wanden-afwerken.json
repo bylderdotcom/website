@@ -9,9 +9,18 @@
     "Bij nieuwbouw worden wanden behangklaar opgeleverd en bij verbouwingen komen oude lagen eraf; in beide gevallen sta je dus voor dezelfde keuze. De afwerking bepaalt niet alleen de sfeer, maar ook onderhoud, akoestiek en wat je later nog makkelijk kunt veranderen."
   ],
   "stats": [
-    ["€10–25/m²", "indicatie glad stucwerk als basis"],
-    ["6 opties", "gangbare wandafwerkingen om uit te kiezen"],
-    ["€35.000–€65.000", "totale afwerking van een nieuwbouwwoning"]
+    [
+      "€10–25/m²",
+      "indicatie glad stucwerk als basis"
+    ],
+    [
+      "6 opties",
+      "gangbare wandafwerkingen om uit te kiezen"
+    ],
+    [
+      "€35.000–€65.000",
+      "totale afwerking van een nieuwbouwwoning"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/eerlijke-prijzen/stucwerk/", "Eerlijke prijs voor stucwerk"],
-    "zusters": ["stucwerk-glad-of-structuur", "materialen:kalkverf", "materialen:akoestische-panelen"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/eerlijke-prijzen/stucwerk/",
+      "Eerlijke prijs voor stucwerk"
+    ],
+    "zusters": [
+      "stucwerk-glad-of-structuur",
+      "materialen:kalkverf",
+      "materialen:akoestische-panelen"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

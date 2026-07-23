@@ -9,9 +9,18 @@
     "Goed voeg- en kitwerk is onzichtbaar vakwerk — je merkt het pas als het fout zit, in de vorm van scheurtjes, schimmelranden of lekkage naar de verdieping eronder. Met de juiste voegsoort en simpel onderhoud gaat het jaren langer mee."
   ],
   "stats": [
-    ["5-10 jaar", "levensduur van een sanitaire kitrand"],
-    ["2-5 mm", "gangbare voegbreedte wand- en vloertegels"],
-    ["24-48 uur", "droogtijd voegwerk voor eerste gebruik douche"]
+    [
+      "5-10 jaar",
+      "levensduur van een sanitaire kitrand"
+    ],
+    [
+      "2-5 mm",
+      "gangbare voegbreedte wand- en vloertegels"
+    ],
+    [
+      "24-48 uur",
+      "droogtijd voegwerk voor eerste gebruik douche"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/keuken-badkamer-offerte-check/", "Check het tegelwerk in je offerte"],
-    "commercieel": ["/kopen/tegels/", "Bekijk tegels en toebehoren"],
-    "zusters": ["waterdichting-badkamer", "tegelformaat-kiezen", "begrip:kimband"]
-  }
+    "tool": [
+      "/keuken-badkamer-offerte-check/",
+      "Check het tegelwerk in je offerte"
+    ],
+    "commercieel": [
+      "/kopen/tegels/",
+      "Bekijk tegels en toebehoren"
+    ],
+    "zusters": [
+      "waterdichting-badkamer",
+      "tegelformaat-kiezen",
+      "begrip:kimband"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }

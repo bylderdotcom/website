@@ -9,9 +9,18 @@
     "Bij nieuwbouw is het slim om de laadpaal of minimaal de voorbereiding (loze leiding en gereserveerde groep) direct in de bouw mee te nemen als meerwerk. Achteraf een sleuf door je bestrating frezen en de groepenkast aanpassen is vrijwel altijd duurder en rommeliger."
   ],
   "stats": [
-    ["3,7–11 kW", "gangbaar laadvermogen thuis"],
-    ["€1.000–2.500", "indicatie laadpaal incl. installatie"],
-    ["3-fase", "aansluiting nodig voor 11 kW laden"]
+    [
+      "3,7–11 kW",
+      "gangbaar laadvermogen thuis"
+    ],
+    [
+      "€1.000–2.500",
+      "indicatie laadpaal incl. installatie"
+    ],
+    [
+      "3-fase",
+      "aansluiting nodig voor 11 kW laden"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
-    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
-    "zusters": ["groepenkast-en-3-fase", "thuisbatterij", "begrip:loze-leiding"]
-  }
+    "tool": [
+      "/nieuwbouw-tools/",
+      "Gratis nieuwbouw-tools"
+    ],
+    "commercieel": [
+      "/meerwerk/",
+      "Alles over meerwerk"
+    ],
+    "zusters": [
+      "groepenkast-en-3-fase",
+      "thuisbatterij",
+      "begrip:loze-leiding"
+    ]
+  },
+  "affiliate_categorie": "elektra"
 }

@@ -9,9 +9,18 @@
     "Een badkamer produceert per douchebeurt al snel een halve liter waterdamp. Blijft die damp hangen, dan condenseert hij op koude plekken zoals kitranden, voegen en het plafond boven de douche. Juist in goed geïsoleerde nieuwbouw is mechanische ventilatie daarom geen luxe maar noodzaak."
   ],
   "stats": [
-    ["30 min", "naventileren na het douchen"],
-    ["50-60%", "gezonde luchtvochtigheid in huis"],
-    ["5-10 jaar", "levensduur van sanitairkit"]
+    [
+      "30 min",
+      "naventileren na het douchen"
+    ],
+    [
+      "50-60%",
+      "gezonde luchtvochtigheid in huis"
+    ],
+    [
+      "5-10 jaar",
+      "levensduur van sanitairkit"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/keuken-badkamer-offerte-check/", "Laat je badkamerofferte gratis checken"],
-    "commercieel": ["/kopen/sanitair/", "Sanitair met ledenkorting"],
-    "zusters": ["badkamer-onderhoud", "waterdichting-badkamer", "badkamerradiator"]
-  }
+    "tool": [
+      "/keuken-badkamer-offerte-check/",
+      "Laat je badkamerofferte gratis checken"
+    ],
+    "commercieel": [
+      "/kopen/sanitair/",
+      "Sanitair met ledenkorting"
+    ],
+    "zusters": [
+      "badkamer-onderhoud",
+      "waterdichting-badkamer",
+      "badkamerradiator"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }
