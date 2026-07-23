@@ -1,0 +1,290 @@
+[
+  {
+    "_schema": "Amazon-affiliate productbibliotheek. Vul per product 'asin' in (10 tekens uit de Amazon.nl-URL /dp/XXXXXXXXXX/) om de kaart live te zetten. titel/omschrijving/categorie zijn ingevuld; 'zoekterm' helpt je het product op Amazon.nl te vinden. Alleen items met geldige asin worden getoond. Bulk toevoegen: _scripts/amazon_producten.py.",
+    "asin": "",
+    "titel": "",
+    "omschrijving": "",
+    "categorie": "",
+    "zoekterm": ""
+  },
+  {
+    "asin": "",
+    "titel": "Bosch diamant-tegelboren set (4-10 mm)",
+    "omschrijving": "Boort zonder wegglijden door harde wandtegels en gres; let op dat de set diameters bevat die passen bij je pluggen (meestal 6 en 8 mm).",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "Bosch Expert HardCeramic tegelboor set"
+  },
+  {
+    "asin": "",
+    "titel": "Profkwaliteit kitpistool met anti-nadruppel",
+    "omschrijving": "Een stevig pistool met terugtrekmechanisme voorkomt doorlopen van de kit en een strakke naad; kies een model dat 310 ml kokers aankan.",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "Cox kitpistool 310 ml professioneel"
+  },
+  {
+    "asin": "",
+    "titel": "Schimmelwerende sanitairkit voor natte ruimtes",
+    "omschrijving": "Zuurvrije siliconenkit die blijvend hecht en schimmel weert rond bad, douche en wastafel; let op de juiste kleur (wit, transparant of grijs) bij je tegels.",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "Bison siliconenkit sanitair schimmelwerend"
+  },
+  {
+    "asin": "",
+    "titel": "Siliconenkit-verwijderaar met mes en spatel",
+    "omschrijving": "Weekt oude, aangekoekte kit los zodat je hem in stukken van de tegel trekt in plaats van eraf schraapt; handig als er meteen mesje en spatel bij zitten.",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "HG siliconenkitverwijderaar"
+  },
+  {
+    "asin": "",
+    "titel": "Schimmelreiniger schuimspray voor voegen",
+    "omschrijving": "Schuimspray blijft op verticale voegen zitten en pakt zwarte schimmel zonder schrobben aan; werk in met open raam en spoel na met water.",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "HG schimmelreiniger schuimspray 500 ml"
+  },
+  {
+    "asin": "",
+    "titel": "Tegel-nivelleersysteem startset (clips en wiggen)",
+    "omschrijving": "Voorkomt hoogteverschil tussen tegels voor een strak, vlak vlak; let op de dikte van je tegel en kies clips die daarbij passen (2-12 mm).",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "Fix Plus tegel levelling systeem startset"
+  },
+  {
+    "asin": "",
+    "titel": "Hydro voegenspons voor tegels schoonmaken",
+    "omschrijving": "Neemt cement- en voegresten op zonder krassen, zodat je tegels na het voegen streeploos schoon krijgt; een ingesneden hydrospons spoelt makkelijker uit.",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "Rubi hydro voegspons tegelspons"
+  },
+  {
+    "asin": "",
+    "titel": "Tegeltang papegaaienbek voor uitsparingen",
+    "omschrijving": "Knabbelt ronde en gebogen uitsparingen rond leidingen en afvoeren waar een tegelsnijder niet bij kan; vraagt wat oefening voor een nette rand.",
+    "categorie": "badkameronderhoud",
+    "zoekterm": "Knipex tegeltang papegaaienbek"
+  },
+  {
+    "asin": "",
+    "titel": "Woca Onderhoudsolie Naturel",
+    "omschrijving": "Vloeibare onderhoudsolie die de beschermlaag van een geolied houten vloer voedt en herstelt. Trekt in het hout, laat de nerf en kleurnuances mooi uitkomen en gaat slijtage en droogte tegen. Een liter is genoeg voor een flink oppervlak.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "Woca onderhoudsolie naturel geolied parket"
+  },
+  {
+    "asin": "",
+    "titel": "Woca Natuurzeep",
+    "omschrijving": "Reinigende zeep op basis van soja- en kokosvetten voor het wekelijkse onderhoud van geoliede en gezeepte houten vloeren. Maakt schoon en laat tegelijk een dun beschermend laagje in de poriën achter, zodat het hout gevoed blijft.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "Woca natuurzeep geolied houten vloer"
+  },
+  {
+    "asin": "",
+    "titel": "HG Laminaat, Vinyl en PVC Reiniger",
+    "omschrijving": "Geconcentreerd dweilmiddel speciaal voor laminaat-, vinyl- en PVC-vloeren. Reinigt streeploos zonder een plakkerige film achter te laten en tast de toplaag niet aan. Eén liter is goed voor zo'n twintig dweilbeurten.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "HG laminaat vinyl PVC reiniger"
+  },
+  {
+    "asin": "",
+    "titel": "Vileda microvezel vlakmop set",
+    "omschrijving": "Platte mop met verwisselbare microvezelhoes en scharnierende steel die overal bij komt, ook in hoeken en onder meubels. De hoes neemt vuil en vocht effectief op en is tot honderden keren machinewasbaar.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "Vileda microvezel vlakmop platte mop"
+  },
+  {
+    "asin": "",
+    "titel": "Zelfklevende meubelviltjes set",
+    "omschrijving": "Assortiment zelfklevende viltglijders in verschillende maten voor onder stoel-, tafel- en kastpoten. Voorkomt krassen bij het verschuiven van meubels en dempt bovendien geluid. Aanbrengen op een schone, vetvrije poot voor de beste hechting.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "zelfklevende viltglijders meubelviltjes set"
+  },
+  {
+    "asin": "",
+    "titel": "Reparatieset hardwaxstaven voor laminaat en hout",
+    "omschrijving": "Set met gekleurde hardwaxstaven, een smeltmes en een schraper om krassen, deuken en beschadigingen in laminaat en houten vloeren op te vullen. Meng de kleuren tot de tint van je vloer en werk de beschadiging vlak en onzichtbaar bij.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "laminaat reparatieset hardwax staven krassen"
+  },
+  {
+    "asin": "",
+    "titel": "Wasbare droogloopmat voor binnen",
+    "omschrijving": "Absorberende schoonloopmat met antislip onderkant voor achter de voordeur. Vangt vocht, zand en straatvuil op zodat het niet je woning in wordt gelopen. Machinewasbaar zodat de mat fris blijft en zijn opnamevermogen behoudt.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "wasbare droogloopmat binnen antislip"
+  },
+  {
+    "asin": "",
+    "titel": "Kärcher SC 3 EasyFix stoomreiniger",
+    "omschrijving": "Stoomreiniger die met hete stoom en de meegeleverde vloerdoek tegels en steen zonder chemie hygiënisch schoonmaakt. Warmt snel op en verwijdert ingedroogd vuil en vet. Let op: alleen geschikt voor waterbestendige harde vloeren, dus niet voor hout, laminaat, PVC of gietvloer.",
+    "categorie": "vloeronderhoud",
+    "zoekterm": "Kärcher SC 3 EasyFix stoomreiniger vloer"
+  },
+  {
+    "asin": "",
+    "titel": "Tado Slimme Thermostaat X (bedraad, startpakket)",
+    "omschrijving": "De opvolger van de bekende Tado V3+ en al jaren de referentie in slimme verwarming. Regelt je huis op kamertemperatuur, kent geofencing (warmte uit zodra iedereen weg is) en open-raamdetectie, en bedien je met de app, Google Home, Alexa of Apple HomeKit. Werkt met aan/uit- én modulerende (OpenTherm) cv-ketels, hybride en volwaardige warmtepompen, radiatoren en watergedragen vloerverwarming.",
+    "categorie": "smarthome",
+    "zoekterm": "Tado Slimme Thermostaat X bedraad startpakket"
+  },
+  {
+    "asin": "",
+    "titel": "Tado Slimme Radiatorknop X (uitbreiding)",
+    "omschrijving": "Slimme thermostaatknop die je per kamer of zelfs per radiator laat regelen, zodat je alleen stookt waar en wanneer het nodig is. Kwam als beste uit de Consumentenbond-test van 2025. Bijzonder: een oplaadbare USB-C-accu in plaats van wegwerpbatterijen, plus Matter-ondersteuning en 10 jaar garantie.",
+    "categorie": "smarthome",
+    "zoekterm": "Tado Slimme Radiatorknop X uitbreiding"
+  },
+  {
+    "asin": "",
+    "titel": "TP-Link Tapo P115 slimme stekker met energiemeting",
+    "omschrijving": "Compacte wifi-stekker die realtime laat zien wat een apparaat verbruikt in watt, kWh en euro's per maand. Schakelt op tijd of op afstand via app, Google Home of Alexa, geschikt tot 16A / 3680W. Het mini-formaat blokkeert het tweede stopcontact van een dubbele wandcontactdoos nauwelijks.",
+    "categorie": "smarthome",
+    "zoekterm": "TP-Link Tapo P115 slimme stekker energiemeter"
+  },
+  {
+    "asin": "",
+    "titel": "HomeWizard Wi-Fi P1 Meter",
+    "omschrijving": "Klik dit kastje op de P1-poort van je slimme meter en je ziet in de Nederlandse HomeWizard Energy-app live je totale stroomverbruik, teruglevering van zonnepanelen en gasverbruik. Installatie is letterlijk een kwestie van insteken, geen configuratie nodig. Data blijft lokaal en is te koppelen met o.a. Home Assistant.",
+    "categorie": "smarthome",
+    "zoekterm": "HomeWizard Wi-Fi P1 Meter slimme meter uitlezer"
+  },
+  {
+    "asin": "",
+    "titel": "Google Nest Protect (2e generatie) rook- en koolmonoxidemelder",
+    "omschrijving": "Combimelder die zowel snelle vlammen, smeulend vuur als koolmonoxide detecteert en je een gesproken waarschuwing én een pushbericht op je telefoon stuurt, ook als je niet thuis bent. Meerdere melders praten met elkaar: gaat er één af, dan waarschuwen ze allemaal. Sensoren gaan tot zo'n tien jaar mee.",
+    "categorie": "smarthome",
+    "zoekterm": "Google Nest Protect 2e generatie rookmelder koolmonoxidemelder"
+  },
+  {
+    "asin": "",
+    "titel": "GROHE Vitalio waterbesparende handdouche met EcoJoy",
+    "omschrijving": "Comfortabele handdouche die door de EcoJoy-doorstroombegrenzer het waterverbruik terugbrengt naar circa 6 liter per minuut, tegenover 15 tot 20 liter bij een gewone douchekop, zonder dat de straal slap aanvoelt. Past op vrijwel elke standaard doucheslang.",
+    "categorie": "smarthome",
+    "zoekterm": "GROHE Vitalio waterbesparende douchekop EcoJoy"
+  },
+  {
+    "asin": "",
+    "titel": "Eufy Video Doorbell (abonnementsloos, met lokale opslag)",
+    "omschrijving": "Slimme videodeurbel met scherp beeld, bewegingsdetectie en tweewegcommunicatie, die beelden lokaal opslaat op een meegeleverde geheugenkaart of thuisbasis. Kwam in Nederlandse tests als winnaar naar voren, mede omdat er geen verplicht maandabonnement is. Leverbaar in een bedrade en een accu-uitvoering.",
+    "categorie": "smarthome",
+    "zoekterm": "Eufy Video Doorbell abonnementsloos lokale opslag"
+  },
+  {
+    "asin": "",
+    "titel": "Radiatorfolie / radiatorreflectiefolie (zelfklevend, per rol)",
+    "omschrijving": "Dunne reflecterende folie die je achter je radiator op de buitenmuur plakt. De warmte die anders in de koude muur verdwijnt, wordt teruggekaatst de kamer in. Simpel op maat te knippen en zelfklevend, geen gereedschap nodig. Vooral effectief bij radiatoren tegen een matig geïsoleerde buitenmuur.",
+    "categorie": "smarthome",
+    "zoekterm": "radiatorfolie radiator reflectiefolie zelfklevend"
+  },
+  {
+    "asin": "",
+    "titel": "Bosch Professional GSR 18V-55 accuschroef-/boormachine",
+    "omschrijving": "Compacte 18V accuboormachine met borstelloze motor en 55 Nm koppel. Levert genoeg kracht voor schroeven in hout en boren in de meeste materialen, terwijl hij licht genoeg blijft om een middag lang mee te werken. Accu's en lader passen op tientallen andere machines uit de Bosch 18V-lijn.",
+    "categorie": "klussen",
+    "zoekterm": "Bosch Professional GSR 18V-55 accuboormachine"
+  },
+  {
+    "asin": "",
+    "titel": "Bosch Professional GLL 2-15 G groene kruislijnlaser",
+    "omschrijving": "Zelfnivellerende kruislijnlaser met goed zichtbaar groen laserlicht, projecteert een horizontale en verticale lijn tot 15 meter. Vlakt zichzelf automatisch af tot ongeveer 4 graden scheefstand en wordt geleverd met richtbord en opbergtas.",
+    "categorie": "klussen",
+    "zoekterm": "Bosch GLL 2-15 G groene kruislijnlaser"
+  },
+  {
+    "asin": "",
+    "titel": "Kärcher WD 6 P S nat-/droogzuiger",
+    "omschrijving": "Krachtige nat- en droogzuiger met 30-liter RVS-ketel en een filter dat je met een druk op de knop schoontikt, zodat de zuigkracht op peil blijft. Zuigt zowel bouwstof en gruis als gemorst water op zonder dat je filters hoeft te wisselen.",
+    "categorie": "klussen",
+    "zoekterm": "Karcher WD 6 P nat droogzuiger bouwstof"
+  },
+  {
+    "asin": "",
+    "titel": "Makita B-53811 boor- en bitset 100-delig",
+    "omschrijving": "Complete set met houtboren, metaalboren en steenboren plus een ruime voorraad schroefbits en bithouders, opgeborgen in een overzichtelijke koffer. Dekt de gangbare maten die je thuis tegenkomt.",
+    "categorie": "klussen",
+    "zoekterm": "Makita B-53811 boor bitset 100-delig"
+  },
+  {
+    "asin": "",
+    "titel": "Anza verfroller- en kwastenset",
+    "omschrijving": "Set van het Scandinavische merk Anza met een goede muurroller plus een aantal kwasten voor randen en hoeken. De vachten nemen veel verf op en laten weinig pluis of strepen achter, zodat je in minder lagen een egaal resultaat krijgt.",
+    "categorie": "klussen",
+    "zoekterm": "Anza verfroller kwasten set"
+  },
+  {
+    "asin": "",
+    "titel": "FrogTape schilderstape",
+    "omschrijving": "Afplaktape van schildersklasse met PaintBlock-technologie: de rand zet uit bij contact met waterbasisverf en sluit zo af, waardoor verf er niet onderdoor kruipt. Laat scherpe, kaarsrechte verfranden achter en komt schoon los zonder resten.",
+    "categorie": "klussen",
+    "zoekterm": "FrogTape schilderstape afplaktape"
+  },
+  {
+    "asin": "",
+    "titel": "Oplaadbare LED-bouwlamp op accu",
+    "omschrijving": "Draadloze LED-werklamp met stevige, spat- en stofbestendige behuizing, een ingebouwde magneet en meerdere lichtstanden. De accu gaat afhankelijk van de stand meerdere uren mee en je laadt hem op via USB, zodat je geen verlengsnoer nodig hebt.",
+    "categorie": "klussen",
+    "zoekterm": "oplaadbare LED bouwlamp werklamp op accu"
+  },
+  {
+    "asin": "",
+    "titel": "Altrex huishoudtrap met platform",
+    "omschrijving": "Stabiele aluminium huishoudtrap met brede treden, een handbeugel en een ruim sta-platform waarop je comfortabel en veilig kunt werken. Licht van gewicht om te verplaatsen, maar stevig genoeg voor dagelijks gebruik.",
+    "categorie": "klussen",
+    "zoekterm": "Altrex huishoudtrap platform aluminium"
+  },
+  {
+    "asin": "",
+    "titel": "Philips Hue White & Color Ambiance E27 (slimme dimbare ledlamp)",
+    "omschrijving": "Slimme E27-lamp die je traploos dimt via app, schakelaar of stem, met warmwit tot koelwit en 16 miljoen kleuren. Dimt tot heel laag zonder te knipperen, wat veel goedkope smart-lampen niet lukt. Combineer met een Hue Bridge voor het meeste gemak; los werkt hij via Bluetooth in een enkele ruimte.",
+    "categorie": "elektra",
+    "zoekterm": "Philips Hue White and Color Ambiance E27 slimme lamp"
+  },
+  {
+    "asin": "",
+    "titel": "Philips Hue GU10 slimme spot (White & Color / Essential)",
+    "omschrijving": "Dimbare slimme GU10-spot voor je bestaande inbouwarmaturen of spotrails. Vervangt een halogeenspot een-op-een en geeft instelbaar wit plus kleur. De nieuwste generatie verbruikt fors minder stroom dan de oude Hue-spots.",
+    "categorie": "elektra",
+    "zoekterm": "Philips Hue GU10 slimme spot dimbaar"
+  },
+  {
+    "asin": "",
+    "titel": "Onderbouw-ledstrip voor keukenkastjes (Philips Hue LightStrip / Ledvance)",
+    "omschrijving": "Zelfklevende ledstrip die je onder de bovenkastjes plakt om het hele werkblad gelijkmatig te verlichten. Dimbaar: fel tijdens het koken, sfeervol laag als de keuken klaar is. Op maat te knippen en om hoeken te leggen.",
+    "categorie": "elektra",
+    "zoekterm": "onderbouw ledstrip keuken kastverlichting dimbaar"
+  },
+  {
+    "asin": "",
+    "titel": "EcoDim universele LED-inbouwdimmer (fase-afsnijding / trailing edge)",
+    "omschrijving": "Inbouwdimmer die je achter een bestaande wandschakelaar plaatst, met trailing-edge techniek speciaal voor dimbare LED. Past onder afdekmateriaal van vrijwel alle merken (Busch-Jaeger, Gira, JUNG, Niko), zodat je je eigen knop kunt houden. Bereik loopt van 1 lampje tot honderden watts.",
+    "categorie": "elektra",
+    "zoekterm": "EcoDim LED inbouwdimmer trailing edge universeel"
+  },
+  {
+    "asin": "",
+    "titel": "Trekveer / kabelvis voor loze leidingen (metaal of nylon)",
+    "omschrijving": "Flexibele veer waarmee je kabels door loze leidingen in wanden en plafonds trekt. Metalen uitvoeringen zijn er vanaf zo'n 10 tot 20 meter; nylon versies glijden soepeler door bochten. Onmisbaar om achteraf een netwerk-, speaker- of extra stroomkabel bij te trekken.",
+    "categorie": "elektra",
+    "zoekterm": "trekveer kabelvis loze leiding metaal nylon"
+  },
+  {
+    "asin": "",
+    "titel": "Digitale multimeter met doorbelfunctie",
+    "omschrijving": "Meet spanning, weerstand en continuiteit, zodat je kunt controleren of een groep spanningsloos is, of een kabel doorloopt en welke ader waar uitkomt. Modellen met meetsnoeren en doorbelpieper zijn er al betaalbaar en scoren rond de 4+ sterren.",
+    "categorie": "elektra",
+    "zoekterm": "digitale multimeter doorbelfunctie spanning meten"
+  },
+  {
+    "asin": "",
+    "titel": "Brennenstuhl stekkerdoos met overspanningsbeveiliging",
+    "omschrijving": "Robuuste 6-voudige stekkerdoos met echte overspanningsbeveiliging (Premium-Line beschermt tot 30.000 A) en een stevige, veilige behuizing. Vangt spanningspieken op die anders je tv, router of computer kunnen beschadigen.",
+    "categorie": "elektra",
+    "zoekterm": "Brennenstuhl stekkerdoos overspanningsbeveiliging 6-voudig"
+  },
+  {
+    "asin": "",
+    "titel": "Steinel LED-buitenlamp met bewegingssensor (IP44)",
+    "omschrijving": "Buiten-wandlamp die automatisch aangaat bij beweging, met instelbare detectiehoek en nabrandtijd, en spatwaterdichte IP44-behuizing voor gevel, garage of achterdeur. Steinel is specialist in sensortechniek, waardoor de detectie betrouwbaar en fijn afstelbaar is.",
+    "categorie": "elektra",
+    "zoekterm": "Steinel LED buitenlamp bewegingssensor IP44"
+  }
+]

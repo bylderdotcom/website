@@ -9,9 +9,18 @@
     "Juist bij een nieuwe vloer in een nieuwbouw- of verbouwde woning loont onderhoud vanaf dag één: de eerste beschadigingen ontstaan vaak in het bouwverkeer en de verhuisweken. Met een paar vaste gewoontes en een simpele kalender blijft de vloer eruitzien zoals bij oplevering."
   ],
   "stats": [
-    ["1–2× per jaar", "onderhoudsolie voor een geolied parket"],
-    ["5–10 jaar", "levensduur van een gietvloercoating"],
-    ["80%", "van het vuil komt binnen via de entree; een goede mat scheelt veel"]
+    [
+      "1–2× per jaar",
+      "onderhoudsolie voor een geolied parket"
+    ],
+    [
+      "5–10 jaar",
+      "levensduur van een gietvloercoating"
+    ],
+    [
+      "80%",
+      "van het vuil komt binnen via de entree; een goede mat scheelt veel"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
-    "zusters": ["parket-kiezen", "gietvloer-kiezen", "tegelvloer-kiezen"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/showroomsale/",
+      "Showroomsales bij 60+ merken"
+    ],
+    "zusters": [
+      "parket-kiezen",
+      "gietvloer-kiezen",
+      "tegelvloer-kiezen"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }
