@@ -9,9 +9,18 @@
     "Bij verkoop en verhuur is een geldig label verplicht, en het weegt steeds zwaarder mee: in de waarde van de woning, in de maximale huurprijs en soms in de hypotheekrente. Nieuwbouw scoort door de huidige BENG-eisen vrijwel altijd A+++ of hoger; bij bestaande bouw is het label vooral een routekaart voor verduurzaming."
   ],
   "stats": [
-    ["A++++", "hoogste energielabel op de schaal"],
-    ["10 jaar", "geldigheid van een energielabel"],
-    ["A+++", "gangbaar label bij nieuwbouw"]
+    [
+      "A++++",
+      "hoogste energielabel op de schaal"
+    ],
+    [
+      "10 jaar",
+      "geldigheid van een energielabel"
+    ],
+    [
+      "A+++",
+      "gangbaar label bij nieuwbouw"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
-    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
-    "zusters": ["hr-glas-of-triple", "spouwmuurisolatie", "zonnepanelen-nieuwbouw"]
-  }
+    "tool": [
+      "/nieuwbouw-tools/",
+      "Gratis nieuwbouw-tools"
+    ],
+    "commercieel": [
+      "/woning-verduurzamen/",
+      "Woning verduurzamen met Bylder"
+    ],
+    "zusters": [
+      "hr-glas-of-triple",
+      "spouwmuurisolatie",
+      "zonnepanelen-nieuwbouw"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

@@ -9,9 +9,18 @@
     "Een houten vloer is de enige vloer die je meerdere keren kunt opschuren en die daardoor decennia meegaat. Daar staat een hogere aanschafprijs en wat meer onderhoud tegenover. Wie de afwegingen kent — opbouw, afwerking, legmethode — koopt een vloer die met het huis mee veroudert in plaats van erop slijt."
   ],
   "stats": [
-    ["€60–130", "per m² gelegd (indicatie)"],
-    ["2–4×", "opschuurbaar bij meerlaags met 3–4 mm toplaag"],
-    ["30+ jaar", "levensduur bij goed onderhoud"]
+    [
+      "€60–130",
+      "per m² gelegd (indicatie)"
+    ],
+    [
+      "2–4×",
+      "opschuurbaar bij meerlaags met 3–4 mm toplaag"
+    ],
+    [
+      "30+ jaar",
+      "levensduur bij goed onderhoud"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
-    "zusters": ["visgraat-vloer", "vloerverwarming-welke-vloer", "materialen:massief-hout"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/showroomsale/",
+      "Showroomsales bij 60+ merken"
+    ],
+    "zusters": [
+      "visgraat-vloer",
+      "vloerverwarming-welke-vloer",
+      "materialen:massief-hout"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }
