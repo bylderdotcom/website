@@ -1,0 +1,43 @@
+{
+  "cluster": "installaties",
+  "slug": "beste-verlichting",
+  "type": "roundup",
+  "titel": "De beste slimme verlichting en elektra-hulpmiddelen voor je woning",
+  "title_tag": "Beste slimme verlichting & elektra thuis | Bylder",
+  "meta_description": "De beste slimme verlichting en handige elektra-hulpmiddelen per ruimte: dimbare lampen, trailing-edge dimmers, ledstrips en gereedschap. Onafhankelijk gekozen.",
+  "intro": [
+    "Slimme verlichting en elektra thuis goed inrichten betekent dat je per ruimte kiest wat je écht wilt sturen: sfeer dimmen in de woonkamer, feller werklicht boven het aanrecht en veilige buitenverlichting met beweging. Slim wil zeggen dat je licht per app, schakelaar of tijd regelt zónder overal nieuwe bekabeling te trekken, en dat je dimmer, lamp en driver op elkaar zijn afgestemd. Kies je die combinatie verkeerd, dan gaan lampen knipperen of dimmen ze maar half.",
+    "Wij zetten de oplossingen op een rij die hun werk echt doen, gekozen op basis van gebruikservaringen en wat per ruimte nodig is, niet op wie het meeste betaalt. Zo weet je in één oogopslag welke lamp, dimmer of hulpmiddel bij jouw klus past en waar je een erkend installateur inschakelt."
+  ],
+  "stats": [
+    ["3", "lagen licht: sfeer, werk en accent"],
+    ["trailing edge", "de juiste dimtechniek voor moderne led"],
+    ["€4.200", "gem. besparing van Bylder-leden"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke verlichting past bij welke ruimte?",
+      "html": "<p>Elke ruimte vraagt om een ander type licht en een andere manier van sturen. Gebruik deze tabel als vertrekpunt; de bijpassende producten worden hieronder getoond, met per stuk waar je op moet letten.</p><table class=\"vgl\"><thead><tr><th>Ruimte/doel</th><th>Oplossing</th><th>Let op</th></tr></thead><tbody><tr><td>Woonkamer sfeer</td><td>Slimme lamp met warm dimlicht op app of schakelaar</td><td>Combineer met een trailing-edge dimmer, geen oude fase-aansnijding</td></tr><tr><td>Werkblad keuken</td><td>Onderbouw-ledstrip onder de bovenkasten</td><td>Kies neutraal wit licht en let op de lengte per kastrij</td></tr><tr><td>Plafondspots</td><td>Dimbare led-spots in bestaande inbouwgaten</td><td>Controleer inbouwmaat en of de driver dimbaar is</td></tr><tr><td>Bestaande dimmer</td><td>Universele led-inbouwdimmer (trailing edge)</td><td>Vaste 230V-aansluiting hoort bij een erkend installateur</td></tr><tr><td>Entree en oprit</td><td>Buitenlamp met bewegingssensor</td><td>Let op spatwaterklasse (IP) en instelbare schemertijd</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wat is onze keuze?",
+      "html": "<p><strong>Sfeer sturen:</strong> een slimme lamp met warm, dimbaar licht is het makkelijkste startpunt. Je regelt de lamp via app of schakelaar en breidt later uit zonder nieuwe bekabeling. Voor plafondspots kies je dezelfde techniek in een dimbare spot die in je bestaande inbouwgaten past.</p><p><strong>Werklicht:</strong> boven het aanrecht geeft een onderbouw-ledstrip schaduwvrij licht precies waar je snijdt en kookt. Voor bestaande wandschakelaars vervang je de oude dimmer door een universele led-inbouwdimmer met trailing-edge techniek, zodat moderne led vloeiend en zonder knipperen dimt.</p><p><strong>Buiten:</strong> een buitenlamp met bewegingssensor schakelt alleen aan wanneer nodig, wat handig en zuinig is bij de voordeur en oprit.</p><p><strong>Gereedschap:</strong> wil je zelf lampen en dimmers monteren, dan helpt een trekveer of kabelvis om nieuwe draad door loze leidingen te trekken, en controleer je met een digitale multimeter of een aansluiting spanningsvrij is. Een stekkerdoos met overspanningsbeveiliging beschermt je slimme apparatuur tegen pieken op het net. De concrete producten staan hieronder.</p><p>Let wel: het aanpassen van vaste 230V-bedrading, een nieuwe groep in de meterkast of het verplaatsen van aansluitpunten hoort bij een erkend installateur. Slimme lampen indraaien, een stekkerdoos plaatsen of een ledstrip op een adapter aansluiten kun je prima zelf.</p>"
+    },
+    {
+      "kop": "Waar let je op bij het kiezen?",
+      "html": "<ul><li><strong>Dimbaarheid</strong> — koop expliciet dimbare lampen en spots; niet elke led-lamp is dimbaar.</li><li><strong>Trailing edge</strong> — moderne led vraagt een trailing-edge (fase-afsnijding) dimmer; een oude dimmer laat led knipperen of brommen.</li><li><strong>Minimale en maximale belasting</strong> — controleer of het totale wattage van je lampen binnen het bereik van de dimmer valt, anders start of dimt hij niet goed.</li><li><strong>Lichtkleur</strong> — warm wit voor sfeer, neutraal wit voor werkplekken zoals de keuken.</li><li><strong>Loze leidingen</strong> — zitten er lege buizen in de muur, dan trek je met een kabelvis nieuwe draad door zonder te hakken.</li><li><strong>Veiligheid</strong> — meet spanningsvrij met een multimeter en laat vast 230V-werk door een erkend installateur doen.</li><li><strong>IP-klasse buiten</strong> — kies buitenverlichting met een spatwaterdichte behuizing en instelbare sensor.</li></ul>"
+    }
+  ],
+  "faq": [
+    {"q": "Waarom knippert mijn led-lamp op de dimmer?", "a": "Meestal omdat je dimmer nog van het oude, fase-aansnijdende type is. Moderne led dimt vloeiend op een trailing-edge dimmer (fase-afsnijding). Controleer daarnaast of de lamp echt dimbaar is en of het totale wattage binnen het bereik van de dimmer valt."},
+    {"q": "Kan ik slimme verlichting zelf aanleggen?", "a": "Slimme lampen indraaien, een ledstrip op een adapter aansluiten of een stekkerdoos plaatsen kun je zelf. Het vervangen van een inbouwdimmer of het aanpassen van vaste 230V-bedrading raakt de vaste installatie; laat dat door een erkend installateur doen, zeker als er een nieuwe groep of aansluitpunt bij komt."},
+    {"q": "Heb ik een hub of gateway nodig voor slimme lampen?", "a": "Dat hangt van het systeem af. Sommige slimme lampen werken direct via wifi of bluetooth, andere vragen een aparte gateway voor een stabieler netwerk en meer schakelopties. Wil je later uitbreiden met sensoren en schakelaars, dan is een systeem met gateway vaak toekomstvaster."},
+    {"q": "Beïnvloeden deze aanbevelingen jullie prijsadvies?", "a": "Nee. Onafhankelijke keuzes; als Amazon-partner verdient Bylder aan kwalificerende aankopen, los van onze marktprijs-analyses en offertechecks."}
+  ],
+  "links": {
+    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["laadpaal-thuis", "groepenkast-en-3-fase", "domotica-slim-huis"]
+  },
+  "affiliate_categorie": "elektra"
+}
