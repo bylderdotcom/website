@@ -9,9 +9,18 @@
     "Waterschade door ontbrekende of slordige waterdichting is een van de duurste verbouwfouten: het lekt naar de constructie of de verdieping eronder en herstel betekent de badkamer opnieuw open. Controleer dit onderdeel dus expliciet in de offerte en tijdens de bouw."
   ],
   "stats": [
-    ["2 lagen", "smeerbare waterdichting, kruiselings aangebracht"],
-    ["±180 cm", "hoogte waterdichting rond de douchezone (minimaal tot boven de douchekop is beter)"],
-    ["€300-€800", "waterdichting complete badkamer (materiaal + arbeid)"]
+    [
+      "2 lagen",
+      "smeerbare waterdichting, kruiselings aangebracht"
+    ],
+    [
+      "±180 cm",
+      "hoogte waterdichting rond de douchezone (minimaal tot boven de douchekop is beter)"
+    ],
+    [
+      "€300-€800",
+      "waterdichting complete badkamer (materiaal + arbeid)"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/keuken-badkamer-offerte-check/", "Check of waterdichting goed in je offerte staat"],
-    "commercieel": ["/eerlijke-prijzen/badkamer/", "Bekijk eerlijke badkamerprijzen"],
-    "zusters": ["voegen-en-kitwerk", "begrip:kimband", "begrip:afschot"]
-  }
+    "tool": [
+      "/keuken-badkamer-offerte-check/",
+      "Check of waterdichting goed in je offerte staat"
+    ],
+    "commercieel": [
+      "/eerlijke-prijzen/badkamer/",
+      "Bekijk eerlijke badkamerprijzen"
+    ],
+    "zusters": [
+      "voegen-en-kitwerk",
+      "begrip:kimband",
+      "begrip:afschot"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }

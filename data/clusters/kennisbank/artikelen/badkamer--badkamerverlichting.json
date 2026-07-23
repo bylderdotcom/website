@@ -9,9 +9,18 @@
     "Verlichting is in veel badkamerplannen een sluitpost, terwijl juist hier veiligheid en regelgeving (NEN 1010) meespelen. Wie de zone-indeling kent, voorkomt dat de installateur armaturen afkeurt of dat er meerwerk ontstaat omdat bedrading moet worden verlegd."
   ],
   "stats": [
-    ["IP65", "minimaal in de douchezone"],
-    ["IP44", "minimaal binnen 60 cm rond bad/douche"],
-    ["2700-3000K", "warmwit licht voor sfeer"]
+    [
+      "IP65",
+      "minimaal in de douchezone"
+    ],
+    [
+      "IP44",
+      "minimaal binnen 60 cm rond bad/douche"
+    ],
+    [
+      "2700-3000K",
+      "warmwit licht voor sfeer"
+    ]
   ],
   "secties": [
     {
@@ -46,8 +55,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-keuken-ontwerpen-badkamerplanner/", "Ontwerp je badkamer met de AI-planner"],
-    "commercieel": ["/kopen/sanitair/", "Sanitair met ledenkorting"],
-    "zusters": ["kleine-badkamer-indelen", "badkamerofferte-lezen", "inloopdouche-of-cabine"]
-  }
+    "tool": [
+      "/ai-keuken-ontwerpen-badkamerplanner/",
+      "Ontwerp je badkamer met de AI-planner"
+    ],
+    "commercieel": [
+      "/kopen/sanitair/",
+      "Sanitair met ledenkorting"
+    ],
+    "zusters": [
+      "kleine-badkamer-indelen",
+      "badkamerofferte-lezen",
+      "inloopdouche-of-cabine"
+    ]
+  },
+  "affiliate_categorie": "elektra"
 }

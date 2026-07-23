@@ -9,9 +9,18 @@
     "Voor eigenaren van bestaande woningen is de hybride vaak de eerste realistische stap richting aardgasvrij wonen. Nieuwbouw heeft sinds 2018 geen gasaansluiting meer en werkt dus all-electric; de hybride is nadrukkelijk een oplossing voor bestaande bouw."
   ],
   "stats": [
-    ["60–70%", "minder gasverbruik na installatie (indicatie)"],
-    ["€4.000–€8.000", "aanschaf en installatie (indicatie, vóór subsidie)"],
-    ["±3,5–4,5", "COP: geleverde warmte per kWh stroom"]
+    [
+      "60–70%",
+      "minder gasverbruik na installatie (indicatie)"
+    ],
+    [
+      "€4.000–€8.000",
+      "aanschaf en installatie (indicatie, vóór subsidie)"
+    ],
+    [
+      "±3,5–4,5",
+      "COP: geleverde warmte per kWh stroom"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
-    "commercieel": ["/renovatiekosten/warmtepomp/", "Kosten warmtepomp"],
-    "zusters": ["warmtepomp-typen", "warmtepomp-geluid", "energielabel-woning"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je installatie-offerte"
+    ],
+    "commercieel": [
+      "/renovatiekosten/warmtepomp/",
+      "Kosten warmtepomp"
+    ],
+    "zusters": [
+      "warmtepomp-typen",
+      "warmtepomp-geluid",
+      "energielabel-woning"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

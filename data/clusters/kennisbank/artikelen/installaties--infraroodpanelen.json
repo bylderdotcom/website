@@ -9,9 +9,18 @@
     "In gasloze nieuwbouw duiken infraroodpanelen regelmatig op als aanvulling op de warmtepomp, en soms zelfs als volledig alternatief. Dat laatste verdient een eerlijke rekensom: elektrisch verwarmen zonder warmtepomp is per kilowattuur warmte twee tot vier keer zo duur."
   ],
   "stats": [
-    ["±600 W", "gangbaar vermogen per paneel"],
-    ["€0,30–0,40", "indicatieve stroomprijs per kWh"],
-    ["100%", "van de stroom wordt warmte, maar zonder rendementswinst"]
+    [
+      "±600 W",
+      "gangbaar vermogen per paneel"
+    ],
+    [
+      "€0,30–0,40",
+      "indicatieve stroomprijs per kWh"
+    ],
+    [
+      "100%",
+      "van de stroom wordt warmte, maar zonder rendementswinst"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
-    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
-    "zusters": ["warmtepomp-typen", "vloerverwarming-hoofdverwarming", "zonnepanelen-nieuwbouw"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je installatie-offerte"
+    ],
+    "commercieel": [
+      "/woning-verduurzamen/",
+      "Woning verduurzamen met Bylder"
+    ],
+    "zusters": [
+      "warmtepomp-typen",
+      "vloerverwarming-hoofdverwarming",
+      "zonnepanelen-nieuwbouw"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

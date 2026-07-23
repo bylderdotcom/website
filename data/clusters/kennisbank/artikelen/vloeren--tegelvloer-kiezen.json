@@ -9,9 +9,18 @@
     "In nieuwbouw zijn tegels de logische keuze voor hal, badkamer en toilet, en steeds vaker ook voor de hele begane grond: op vloerverwarming is geen enkele vloer efficiënter. De aanschaf lijkt duur, maar over de levensduur gerekend is een tegelvloer vaak juist de voordeligste optie."
   ],
   "stats": [
-    ["€60–120", "per m² incl. leggen (indicatie)"],
-    ["60×60 cm", "meest gekozen formaat woonruimtes"],
-    ["30+ jaar", "levensduur zonder noemenswaardige slijtage"]
+    [
+      "€60–120",
+      "per m² incl. leggen (indicatie)"
+    ],
+    [
+      "60×60 cm",
+      "meest gekozen formaat woonruimtes"
+    ],
+    [
+      "30+ jaar",
+      "levensduur zonder noemenswaardige slijtage"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/kopen/tegels/", "Tegels met ledenkorting"],
-    "zusters": ["vloerverwarming-welke-vloer", "begrip:rectified", "badkamer:badkamertegels-kiezen"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/kopen/tegels/",
+      "Tegels met ledenkorting"
+    ],
+    "zusters": [
+      "vloerverwarming-welke-vloer",
+      "begrip:rectified",
+      "badkamer:badkamertegels-kiezen"
+    ]
+  },
+  "affiliate_categorie": "badkameronderhoud"
 }

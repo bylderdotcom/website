@@ -9,9 +9,18 @@
     "Laminaat is de voordeligste harde vloer en daarmee voor veel nieuwbouwkopers de manier om binnen budget toch een houtlook te leggen. De kwaliteitsverschillen zijn wel groot — en juist bij de goedkoopste aanbiedingen zit het verschil in de kern en de klikverbinding, niet in het decor dat je in de showroom ziet."
   ],
   "stats": [
-    ["€20–50", "per m² gelegd (indicatie)"],
-    ["AC4", "gangbare klasse voor woonkamers"],
-    ["10–20 jaar", "levensduur afhankelijk van klasse en gebruik"]
+    [
+      "€20–50",
+      "per m² gelegd (indicatie)"
+    ],
+    [
+      "AC4",
+      "gangbare klasse voor woonkamers"
+    ],
+    [
+      "10–20 jaar",
+      "levensduur afhankelijk van klasse en gebruik"
+    ]
   ],
   "secties": [
     {
@@ -58,8 +67,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
-    "zusters": ["pvc-vloer-kiezen", "vloerverwarming-welke-vloer", "ondervloer-kiezen"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/showroomsale/",
+      "Showroomsales bij 60+ merken"
+    ],
+    "zusters": [
+      "pvc-vloer-kiezen",
+      "vloerverwarming-welke-vloer",
+      "ondervloer-kiezen"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }

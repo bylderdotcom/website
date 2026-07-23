@@ -9,9 +9,18 @@
     "Bij nieuwbouw worden wanden standaard behangklaar opgeleverd: te ruw om direct te sausen. Vrijwel iedereen laat dus nog stuken, en dan is dit dé keuze die je moet maken voordat de stukadoor offreert."
   ],
   "stats": [
-    ["€10–25/m²", "indicatie glad stucwerk (sausklaar)"],
-    ["€10–20/m²", "indicatie spachtelputz aanbrengen"],
-    ["96%", "van kopers betaalt minstens één post te duur"]
+    [
+      "€10–25/m²",
+      "indicatie glad stucwerk (sausklaar)"
+    ],
+    [
+      "€10–20/m²",
+      "indicatie spachtelputz aanbrengen"
+    ],
+    [
+      "96%",
+      "van kopers betaalt minstens één post te duur"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/eerlijke-prijzen/stucwerk/", "Eerlijke prijs voor stucwerk"],
-    "zusters": ["wanden-afwerken", "begrip:spachtelputz", "materialen:stucsoorten"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/eerlijke-prijzen/stucwerk/",
+      "Eerlijke prijs voor stucwerk"
+    ],
+    "zusters": [
+      "wanden-afwerken",
+      "begrip:spachtelputz",
+      "materialen:stucsoorten"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

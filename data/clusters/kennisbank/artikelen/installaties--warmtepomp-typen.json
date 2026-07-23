@@ -9,9 +9,18 @@
     "Bij nieuwbouw is de keuze meestal al gemaakt door de ontwikkelaar — vaak lucht-water of bodem — maar bij verduurzaming van een bestaande woning kies je zelf. Dan telt vooral hoe goed je huis geïsoleerd is en of je afgiftesysteem op lage temperatuur kan werken."
   ],
   "stats": [
-    ["COP 3–5", "een warmtepomp maakt van 1 kWh stroom 3 tot 5 kWh warmte"],
-    ["€9.000–€19.000", "all-electric lucht-waterwarmtepomp geïnstalleerd (indicatie)"],
-    ["€15.000–€30.000", "bodemwarmtepomp inclusief bron (indicatie)"]
+    [
+      "COP 3–5",
+      "een warmtepomp maakt van 1 kWh stroom 3 tot 5 kWh warmte"
+    ],
+    [
+      "€9.000–€19.000",
+      "all-electric lucht-waterwarmtepomp geïnstalleerd (indicatie)"
+    ],
+    [
+      "€15.000–€30.000",
+      "bodemwarmtepomp inclusief bron (indicatie)"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je installatie-offerte"],
-    "commercieel": ["/renovatiekosten/warmtepomp/", "Kosten warmtepomp"],
-    "zusters": ["hybride-warmtepomp", "vloerverwarming-hoofdverwarming", "warmtepomp-geluid"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je installatie-offerte"
+    ],
+    "commercieel": [
+      "/renovatiekosten/warmtepomp/",
+      "Kosten warmtepomp"
+    ],
+    "zusters": [
+      "hybride-warmtepomp",
+      "vloerverwarming-hoofdverwarming",
+      "warmtepomp-geluid"
+    ]
+  },
+  "affiliate_categorie": "smarthome"
 }

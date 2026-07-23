@@ -48,7 +48,7 @@ def aff_producten_voor(a, producten):
     else:
         cat = a.get('affiliate_categorie')
         sel = [p for p in producten if cat and p.get('categorie') == cat] if cat else []
-    return sel[:6]
+    return sel[:12 if a.get('type') == 'roundup' else 6]
 
 CLUSTERS = {
     'keuken':    ('Keuken', '/kennisbank/keuken/'),

@@ -9,9 +9,18 @@
     "Bij nieuwbouw is de zandcement-dekvloer zelden vlak genoeg voor PVC of een gietvloer, en bij verbouwingen laten oude lijmresten en hoogteverschillen zich alleen met egaline wegwerken. Wie egaliseren overslaat, ziet elke bult later terug in de vloer."
   ],
   "stats": [
-    ["€10–20/m²", "indicatie voor egaliseren inclusief arbeid"],
-    ["2–10 mm", "gangbare laagdikte van egaline"],
-    ["24–48 uur", "droogtijd voordat de vloer erop kan"]
+    [
+      "€10–20/m²",
+      "indicatie voor egaliseren inclusief arbeid"
+    ],
+    [
+      "2–10 mm",
+      "gangbare laagdikte van egaline"
+    ],
+    [
+      "24–48 uur",
+      "droogtijd voordat de vloer erop kan"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/eerlijke-prijzen/gietvloer/", "Eerlijke prijs voor een gietvloer"],
-    "zusters": ["ondervloer-kiezen", "pvc-vloer-kiezen", "vloer-in-nieuwbouw"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/eerlijke-prijzen/gietvloer/",
+      "Eerlijke prijs voor een gietvloer"
+    ],
+    "zusters": [
+      "ondervloer-kiezen",
+      "pvc-vloer-kiezen",
+      "vloer-in-nieuwbouw"
+    ]
+  },
+  "affiliate_categorie": "klussen"
 }

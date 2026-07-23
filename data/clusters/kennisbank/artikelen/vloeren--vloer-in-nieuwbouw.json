@@ -9,9 +9,18 @@
     "Nieuwbouwwoningen worden kaal opgeleverd: een zwevende dekvloer, behangklare wanden en geen vloerafwerking. Je kunt de vloer als meerwerk door de aannemer laten leggen of na oplevering zelf regelen. Dat verschil bepaalt je planning, je prijs en wie er verantwoordelijk is als er iets misgaat."
   ],
   "stats": [
-    ["±1 week/cm", "droogtijd van de dekvloer per centimeter dikte"],
-    ["€35.000–€65.000", "totale afwerkingskosten van een nieuwbouwwoning"],
-    ["€4.200", "gemiddelde besparing van Bylder-leden"]
+    [
+      "±1 week/cm",
+      "droogtijd van de dekvloer per centimeter dikte"
+    ],
+    [
+      "€35.000–€65.000",
+      "totale afwerkingskosten van een nieuwbouwwoning"
+    ],
+    [
+      "€4.200",
+      "gemiddelde besparing van Bylder-leden"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
-    "zusters": ["vloer-egaliseren", "plintloos-afwerken", "begrip:meerwerk"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/showroomsale/",
+      "Showroomsales bij 60+ merken"
+    ],
+    "zusters": [
+      "vloer-egaliseren",
+      "plintloos-afwerken",
+      "begrip:meerwerk"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }

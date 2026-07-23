@@ -9,9 +9,18 @@
     "PVC is niet voor niets de populairste vloer in nieuwbouwwijken: waterbestendig, stil, warm aan de voeten en verkrijgbaar in hout-, steen- en betonlook. Deze keuzegids helpt je het juiste type kiezen; de eigenschappen van het materiaal zelf lees je op onze materiaalpagina over PVC."
   ],
   "stats": [
-    ["€45–90", "per m² gelegd (indicatie)"],
-    ["0,55 mm", "toplaag geschikt voor intensief woongebruik"],
-    ["15–25 jaar", "levensduur bij normale bewoning"]
+    [
+      "€45–90",
+      "per m² gelegd (indicatie)"
+    ],
+    [
+      "0,55 mm",
+      "toplaag geschikt voor intensief woongebruik"
+    ],
+    [
+      "15–25 jaar",
+      "levensduur bij normale bewoning"
+    ]
   ],
   "secties": [
     {
@@ -58,8 +67,19 @@
     }
   ],
   "links": {
-    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
-    "commercieel": ["/showroomsale/", "Showroomsales bij 60+ merken"],
-    "zusters": ["gietvloer-of-pvc", "vloerverwarming-welke-vloer", "materialen:pvc"]
-  }
+    "tool": [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check voor je aannemer"
+    ],
+    "commercieel": [
+      "/showroomsale/",
+      "Showroomsales bij 60+ merken"
+    ],
+    "zusters": [
+      "gietvloer-of-pvc",
+      "vloerverwarming-welke-vloer",
+      "materialen:pvc"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }

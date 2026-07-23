@@ -9,9 +9,18 @@
     "Bij nieuwbouw en verbouwing kiezen veel kopers één vloer voor de hele verdieping vanwege het doorlopende beeld. Dat kan prima, maar dan moet die vloer wel de zwaarste omstandigheden aankunnen die ergens in de looproute voorkomen. Denk dus eerst per ruimte na en beslis daarna of één vloer overal volstaat."
   ],
   "stats": [
-    ["3 factoren", "vocht, slijtage en akoestiek bepalen de keuze"],
-    ["10 dB", "geluidsreductie-eis voor vloeren in appartementen"],
-    ["€4.200", "gemiddelde besparing van Bylder-leden op de afwerking"]
+    [
+      "3 factoren",
+      "vocht, slijtage en akoestiek bepalen de keuze"
+    ],
+    [
+      "10 dB",
+      "geluidsreductie-eis voor vloeren in appartementen"
+    ],
+    [
+      "€4.200",
+      "gemiddelde besparing van Bylder-leden op de afwerking"
+    ]
   ],
   "secties": [
     {
@@ -54,8 +63,19 @@
     }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/kopen/tegels/", "Tegels met ledenkorting"],
-    "zusters": ["gietvloer-of-pvc", "vloerverwarming-welke-vloer", "begrip:afschot"]
-  }
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/kopen/tegels/",
+      "Tegels met ledenkorting"
+    ],
+    "zusters": [
+      "gietvloer-of-pvc",
+      "vloerverwarming-welke-vloer",
+      "begrip:afschot"
+    ]
+  },
+  "affiliate_categorie": "vloeronderhoud"
 }
