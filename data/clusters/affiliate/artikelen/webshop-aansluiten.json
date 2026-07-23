@@ -1,0 +1,52 @@
+{
+  "slug": "webshop-aansluiten",
+  "is_pillar": false,
+  "titel": "Je webshop aansluiten op Bylder in 3 stappen",
+  "title_tag": "Webshop aansluiten in 3 stappen | Bylder",
+  "meta_description": "Je webshop aansluiten op Bylder betekent: merchant-account aanmaken, je productfeed koppelen en live gaan. In 3 stappen uitgelegd, technisch en praktisch.",
+  "intro": [
+    "Je webshop aansluiten op Bylder betekent dat je je hele productcatalogus koppelt aan een affiliate-netwerk voor wonen, bouw, interieur en renovatie, zodat je producten verschijnen bij kopers op hun koopmoment. Aansluiten gaat in drie stappen: een merchant-account, je productfeed koppelen, en live gaan.",
+    "Je hoeft geen producten handmatig in te voeren en geen techniek zelf te bouwen. Je koppelt de feed die je webshop al genereert; de AI van Bylder tagt en normaliseert je catalogus en plaatst producten op het juiste moment. Je betaalt alleen bij verkoop: een vlakke 5% commissie, no cure, no pay. Aansluiten en plaatsing zitten bij de deelname inbegrepen."
+  ],
+  "secties": [
+    {
+      "kop": "Wat betekent aansluiten op Bylder precies?",
+      "html": "<p>Aansluiten wil zeggen dat je webshop-feed in het platform komt te staan, waarna kopers je producten tegenkomen op het moment dat ze daadwerkelijk iets nodig hebben: bij een oplevering, een verbouwing of een nieuwe inrichting. De AI matcht producten op ruimte, stijl en koopmoment, zodat je aanbod aansluit bij wat de koper op dat moment zoekt.</p><p>Je verkoopt op eigen webshop, tegen je eigen prijzen en voorwaarden. Bylder brengt de koopklare bezoeker; de bestelling en levering blijven volledig bij jou. Je betaalt uitsluitend een vlakke 5% commissie over gerealiseerde verkopen. Als er niets verkoopt, betaal je niets. Er is geen apart bedrag voor aansluiting of plaatsing; dat zit in de deelname.</p>"
+    },
+    {
+      "kop": "Stap 1: maak je merchant-account aan",
+      "html": "<ol><li>Ga naar <a href=\"https://app.bylder.com\">app.bylder.com</a> en maak een merchant-account aan voor je webshop of merk.</li><li>Vul je bedrijfsgegevens en webshop-URL in.</li><li>Bevestig je account. Vanaf hier kun je in het dashboard je feed koppelen en je plaatsing volgen.</li></ol><p>Het account is de plek waar je later je resultaten ziet: welke producten verkopen, op welk koopmoment en wat de bijbehorende commissie is. Je hebt hiervoor geen technische kennis nodig; de koppeling in stap 2 doet het meeste werk.</p>"
+    },
+    {
+      "kop": "Stap 2: koppel je productfeed",
+      "html": "<p>Je koppelt Bylder aan de productfeed die je webshop al exporteert. Dat kan een Google Shopping-XML zijn of een CSV-bestand. De meeste gangbare platforms genereren zo'n feed standaard of met een gratis app:</p><table class=\"vgl\"><thead><tr><th>Platform</th><th>Feed-formaat</th><th>Hoe</th></tr></thead><tbody><tr><td>Shopify</td><td>Google Shopping-XML</td><td>Via het Google &amp; YouTube-kanaal of een feed-app</td></tr><tr><td>WooCommerce</td><td>XML of CSV</td><td>Via een product feed-plugin</td></tr><tr><td>Lightspeed</td><td>XML of CSV</td><td>Via de ingebouwde export of een feed-koppeling</td></tr><tr><td>CCV Shop</td><td>XML of CSV</td><td>Via de standaard productexport</td></tr></tbody></table><p>Je plakt de feed-URL (of upload je bestand) in je merchant-dashboard. Vanaf dat moment leest Bylder je hele catalogus automatisch in en houdt die actueel: prijs, voorraad en nieuwe producten lopen mee met je feed. De AI tagt en normaliseert de producten, zodat ze op de juiste ruimte, stijl en koopmoment te matchen zijn. Je hoeft dus niets handmatig te categoriseren.</p>"
+    },
+    {
+      "kop": "Stap 3: ga live",
+      "html": "<p>Zodra je feed is ingelezen en verwerkt, ga je live. De AI plaatst je producten op het juiste koopmoment naast het aanbod van 60+ merken die al zijn aangesloten. Je aanbod is zowel online zichtbaar als lokaal: heb je een fysieke winkel, dan kun je vouchers inzetten die zowel in de winkel als in de webshop geldig zijn, waardoor je lokaal zichtbaar staat naast de grote e-commerce.</p><p>Na livegang volg je in je dashboard welke producten worden verkocht en op welk koopmoment. Omdat je op basis van gerealiseerde verkoop betaalt (5%, no cure, no pay), loopt je kostenpost altijd mee met je omzet en niet ervoor uit.</p>"
+    },
+    {
+      "kop": "Wat heb je nodig voordat je begint?",
+      "html": "<p>De koppeling is bewust laagdrempelig. In de praktijk heb je drie dingen nodig:</p><ol><li>Een werkende webshop met een productfeed (Google Shopping-XML of CSV) die je platform kan exporteren.</li><li>Een merchant-account op <a href=\"https://app.bylder.com\">app.bylder.com</a>.</li><li>De feed-URL of het feed-bestand om te koppelen.</li></ol><p>Meer is het niet. Heb je nog geen feed ingesteld, dan is dat op de genoemde platforms met een standaardexport of een gratis app in orde te maken. Meer achtergrond over deelname vind je op <a href=\"/deelnemer-worden/woonwinkels-merken/\">/deelnemer-worden/woonwinkels-merken/</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Welk feed-formaat heb ik nodig?",
+      "a": "Een Google Shopping-XML of een CSV-bestand. Beide worden ondersteund. De meeste webshop-platforms (Shopify, WooCommerce, Lightspeed, CCV Shop) exporteren zo'n feed standaard of via een gratis app. Je koppelt de feed-URL of uploadt het bestand in je merchant-dashboard."
+    },
+    {
+      "q": "Wat kost het om aan te sluiten?",
+      "a": "Aansluiten en plaatsing zitten inbegrepen in de deelname. Je betaalt uitsluitend een vlakke 5% commissie over gerealiseerde verkopen, performance-based en no cure, no pay. Verkoopt er niets, dan betaal je niets."
+    },
+    {
+      "q": "Moet ik mijn producten handmatig invoeren of categoriseren?",
+      "a": "Nee. Zodra je feed is gekoppeld, leest Bylder je hele catalogus automatisch in. De AI tagt en normaliseert je producten en houdt prijs, voorraad en nieuwe artikelen actueel via je feed. Handmatig werk is niet nodig."
+    },
+    {
+      "q": "Hoe snel sta ik live?",
+      "a": "Nadat je merchant-account is aangemaakt en je feed is gekoppeld, wordt je catalogus ingelezen en verwerkt. Zodra dat klaar is, plaatst de AI je producten op het juiste koopmoment. Je volgt de status en je resultaten in je dashboard."
+    }
+  ],
+  "cta": ["Word deelnemer", "https://app.bylder.com"]
+}

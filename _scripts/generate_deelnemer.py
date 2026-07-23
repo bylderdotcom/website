@@ -163,7 +163,7 @@ SEGMENTS = [
        ('Hoe komt mijn product in de ontwerptools terecht?','Je levert productdata (afbeeldingen, maten, prijzen) aan via je merchant-account. Wij plaatsen je producten in de 3D-sfeerimpressie en room planner waar ze passen bij stijl en ruimte.'),
        ('Voor wie is de showroom-propositie?','Keuken- en badkamerspeciaalzaken met een fysieke showroom of design center. Bylder stuurt kopers die hun casco-keuzes maken gericht jouw kant op.'),
        ('Hoe krijg ik mijn hele assortiment in Bylder?','Je koppelt eenvoudig je webshop-productfeed (bijvoorbeeld je Google Shopping-feed) of uploadt een productbestand. Onze AI leest, normaliseert en tagt elk product automatisch op ruimte, stijl en categorie, zodat het op het juiste koopmoment wordt aanbevolen. Het aansluiten en de plaatsing zitten bij je deelname inbegrepen; je betaalt alleen 5% commissie op wat we daadwerkelijk voor je verkopen — vermoedelijk het laagste tarief van alle affiliate-netwerken.')],
-  links=[('/showroomsale/','Showroomsale'),('/3d-sfeerimpressie/','3D-ontwerptool'),('/kennisbank/','Kennisbank')]),
+  links=[('/affiliate/','Ons affiliate-netwerk'),('/showroomsale/','Showroomsale'),('/3d-sfeerimpressie/','3D-ontwerptool'),('/kennisbank/','Kennisbank')]),
 
  dict(slug='prefab-productie', naam='Prefab-productiebedrijven',
   title='Prefab-productiebedrijven — deelnemer worden | Bylder',

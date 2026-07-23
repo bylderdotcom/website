@@ -28,6 +28,7 @@ Allow: /
 
 Sitemap: https://www.bylder.com/sitemap.xml
 Sitemap: https://www.bylder.com/kennisbank-sitemap.xml
+Sitemap: https://www.bylder.com/affiliate-sitemap.xml
 Sitemap: https://www.bylder.com/en-us-sitemap.xml
 Sitemap: https://www.bylder.com/showroomsale-sitemap.xml
 Sitemap: https://www.bylder.com/kortingscode-sitemap.xml
