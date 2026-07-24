@@ -13,7 +13,7 @@ import os, html, json, re, unicodedata, sys, urllib.parse
 BASE = "https://www.bylder.com"
 SIGNUP = "https://app.bylder.com/registreer"
 VOORDELEN = "/voor-vakbedrijven"
-INTAKE = "mailto:partners@bylder.com?subject=Mijn%20bedrijf%20aanmelden%20op%20Bylder&body=Bedrijfsnaam%3A%0APlaats%3A%0AGoogle-%2FWerkspot-%2Fwebsite-link%3A%0A"
+INTAKE = "mailto:info@bylder.com?subject=Mijn%20bedrijf%20aanmelden%20op%20Bylder&body=Bedrijfsnaam%3A%0APlaats%3A%0AGoogle-%2FWerkspot-%2Fwebsite-link%3A%0A"
 OFFERTE_HUB = "/offerte-check"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 MIN_PER_STAD = 3
@@ -1151,7 +1151,7 @@ def build_voor_vakbedrijven(totaal, plaatsen):
   <div class="divider"></div>
   {faq_html({"plur": "vakbedrijven"}, qa)}
   <div class="divider"></div>
-  <p style="font-size:14px;color:rgba(61,46,30,0.6);">Bekijk een voorbeeld: <a href="/stukadoor/">stukadoors</a> &middot; <a href="/schilder/">schilders</a>. Vragen? <a href="mailto:partners@bylder.com">partners@bylder.com</a></p>
+  <p style="font-size:14px;color:rgba(61,46,30,0.6);">Bekijk een voorbeeld: <a href="/stukadoor/">stukadoors</a> &middot; <a href="/schilder/">schilders</a>. Vragen? <a href="mailto:info@bylder.com">info@bylder.com</a></p>
   </div></main>"""
     return head(title, desc, canonical, schema) + body + FOOTER(vak)
 
