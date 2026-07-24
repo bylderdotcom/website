@@ -59,60 +59,126 @@ export default function HomeClient() {
     }
     w.sluitPopup = function () { const p = document.getElementById('aupingPopup'); if (p) p.style.display = 'none' }
 
-    // ── goedkeur-demo (#probeer): 3 voorstel-kaarten, jij keurt goed ──
-    const pdStappen = [
-      { chip: 'Vakbedrijf', titel: 'Dakkapel plaatsen — 3 bedrijven vergeleken', waarom: 'Bouwgroep Deltij staat bovenaan: 4,8★, 6 km bij je vandaan, kan in september.', prijs: 'vanaf €6.200', garantie: '10 jaar garantie', fair: 'Volgorde puur op geschiktheid — elk bedrijf betaalt ons hetzelfde.',
-        variant: { titel: 'Dakkapel in kunststof — zelfde 3 bedrijven', waarom: 'Kunststof scheelt €800 en is onderhoudsarm. Plaatsing kan in oktober.', prijs: 'vanaf €5.400' },
-        na: 'De dakkapel staat klaar. Dan je meerwerklijst — daar zag ik iets.' },
-      { chip: 'Meerwerk', titel: 'Vloerverwarming: via de bouwer doen', waarom: 'Moet vóór de dekvloer — achteraf is het 3× duurder. De prijs van je bouwer is marktconform.', prijs: '€3.400', garantie: 'in de bouwgarantie', fair: 'Gecheckt tegen echte marktprijzen uit offertes van bewoners.',
-        variant: { titel: 'Vloerverwarming: alleen begane grond', waarom: 'Scheelt €1.450; de zolder kan later nog via een eigen installateur.', prijs: '€1.950' },
-        na: 'Slim geregeld. Nog één: de vloer voor je woonkamer.' },
-      { chip: 'Product', titel: 'Eiken vloer voor de woonkamer', waarom: 'Past bij je stijl. Met je Bylder-voucher krijg je 10% korting bij Parketgigant.', prijs: '€1.536 na korting', garantie: '25 jaar garantie', fair: 'Aanbeveling op geschiktheid — elk merk betaalt ons hetzelfde.',
-        variant: { titel: 'Donker geolied eiken — zelfde leverancier', waarom: 'Donkerder, zelfde prijsklasse, ook met 10% voucher.', prijs: '€1.590 na korting' },
-        na: '' },
-    ]
-    let pdI = 0, pdBezig = false
-    const pdEl = (id: string) => document.getElementById(id)
-    const pdToon = (st: typeof pdStappen[0], metVariant: boolean) => {
-      const set = (id: string, txt: string) => { const e = pdEl(id); if (e) e.textContent = txt }
-      set('pd-chip', st.chip)
-      set('pd-titel', metVariant && st.variant ? st.variant.titel : st.titel)
-      set('pd-waarom', metVariant && st.variant ? st.variant.waarom : st.waarom)
-      set('pd-prijs', metVariant && st.variant ? st.variant.prijs : st.prijs)
-      set('pd-garantie', st.garantie)
-      set('pd-fair', st.fair)
-      set('pd-teller', 'Voorstel ' + (pdI + 1) + ' van ' + pdStappen.length)
-      const a = pdEl('pd-acties'); if (a) a.style.display = 'flex'
-      const st2 = pdEl('pd-status'); if (st2) st2.style.display = 'none'
-    }
-    const pdVolgende = (statusTekst: string) => {
-      if (pdBezig) return
-      pdBezig = true
-      const a = pdEl('pd-acties'); if (a) a.style.display = 'none'
-      const stt = pdEl('pd-status-tekst'); if (stt) stt.textContent = statusTekst
-      const st2 = pdEl('pd-status'); if (st2) st2.style.display = 'flex'
-      const prog = pdEl('pd-prog'); if (prog) prog.style.width = Math.round(((pdI + 1) / pdStappen.length) * 100) + '%'
-      const na = pdStappen[pdI].na
-      timers.push(setTimeout(() => {
-        pdI++
-        if (pdI >= pdStappen.length) {
-          const k = pdEl('pd-kaart'); if (k) k.style.display = 'none'
-          const t = pdEl('pd-teller'); if (t) t.textContent = 'Alles geregeld'
-          const kl = pdEl('pd-klaar'); if (kl) kl.style.display = 'block'
-          const m = pdEl('pd-msg'); if (m) m.textContent = 'Dat was alles. In je echte woningdossier houd ik dit bij van koopakte tot laatste lamp.'
-        } else {
-          if (na) { const m = pdEl('pd-msg'); if (m) m.textContent = na }
-          const k = pdEl('pd-kaart'); if (k) k.style.opacity = '0'
-          timers.push(setTimeout(() => { pdToon(pdStappen[pdI], false); if (k) k.style.opacity = '1'; pdBezig = false }, 200))
+    // ── levende blauwdruk: woning tekent zichzelf + goedkeur-demo (#probeer) ──
+    const houseSvg = document.querySelector<SVGSVGElement>('.house-svg')
+    const demoCards = Array.from(document.querySelectorAll<HTMLElement>('#probeer .card'))
+    const donePanel = document.getElementById('donePanel')
+    if (houseSvg && demoCards.length) {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      houseSvg.querySelectorAll<SVGGeometryElement>('.iso-draw').forEach((el, i) => {
+        if (reduce) return
+        let len = 0
+        try { len = el.getTotalLength() } catch { len = 0 }
+        if (!len) return
+        el.style.strokeDasharray = String(len)
+        el.style.strokeDashoffset = String(len)
+        requestAnimationFrame(() => { requestAnimationFrame(() => {
+          el.style.transition = 'stroke-dashoffset 1.1s ease ' + (i * 0.09) + 's'
+          el.style.strokeDashoffset = '0'
+        }) })
+      })
+      houseSvg.querySelectorAll('.pin').forEach((p, i) => {
+        if (reduce) { p.classList.add('show'); return }
+        timers.push(setTimeout(() => p.classList.add('show'), 1400 + i * 220))
+      })
+
+      const decided: Record<number, boolean> = {}
+      let decidedCount = 0
+      let demoInteracted = false
+      let autoplayTimer: ReturnType<typeof setTimeout> | null = null
+      let autoplayStarted = false
+      const ghostFor = (i: number) => houseSvg.querySelector('.ghost-' + i)
+      const pinFor = (i: number) => houseSvg.querySelector('.pin-' + i)
+      const cardFor = (i: number) => demoCards.find(c => +(c.dataset.index || 0) === i)
+      const checkAll = () => { if (decidedCount === demoCards.length && donePanel) donePanel.hidden = false }
+      const approveDemo = (i: number) => {
+        if (decided[i]) return
+        decided[i] = true; decidedCount++
+        const card = cardFor(i); if (!card) return
+        card.classList.add('approved')
+        card.querySelectorAll('button').forEach(b => { b.disabled = true })
+        const g = ghostFor(i); if (g) g.classList.add('solid')
+        const p = pinFor(i); if (p) p.classList.add('done')
+        checkAll()
+      }
+      const rejectDemo = (i: number) => {
+        if (decided[i]) return
+        decided[i] = true; decidedCount++
+        const card = cardFor(i); if (!card) return
+        card.classList.add('rejected')
+        card.querySelectorAll('button').forEach(b => { b.disabled = true })
+        const p = pinFor(i); if (p) p.classList.add('gone')
+        checkAll()
+      }
+      const cancelAutoplay = () => {
+        demoInteracted = true
+        if (autoplayTimer) { clearTimeout(autoplayTimer); autoplayTimer = null }
+      }
+      demoCards.forEach(card => {
+        const i = +(card.dataset.index || 0)
+        card.querySelector('.approve')?.addEventListener('click', () => { cancelAutoplay(); approveDemo(i) })
+        card.querySelector('.reject')?.addEventListener('click', () => { cancelAutoplay(); rejectDemo(i) })
+      })
+
+      // Bekijk opties (dakkapel): varianten live op de woning
+      const card1 = cardFor(1)
+      const vPanel = card1 ? card1.querySelector<HTMLElement>('.variants') : null
+      if (card1 && vPanel) {
+        const vTitel = card1.querySelector('h3') as HTMLElement
+        const vPrijs = card1.querySelector('.price') as HTMLElement
+        const VAR: Record<string, { titel: string; prijs: string }> = {
+          a: { titel: 'Dakkapel in hout — 3 bedrijven vergeleken', prijs: 'vanaf €6.200' },
+          b: { titel: 'Dakkapel in kunststof — 3 bedrijven vergeleken', prijs: 'vanaf €5.400' },
         }
-      }, 900))
-    }
-    w.pdGoed = () => pdVolgende('Geregeld — Bylder gaat ermee aan de slag')
-    w.pdWeg = () => pdVolgende('Weg — Bylder zoekt een alternatief')
-    w.pdVariant = () => {
-      if (pdBezig) return
-      pdToon(pdStappen[pdI], true)
-      const m = pdEl('pd-msg'); if (m) m.textContent = 'Aangepast. Beter zo? Keur goed, of pas nog eens aan.'
+        const toonVariant = (v: string) => {
+          const ga = houseSvg.querySelector<SVGGElement>('.g1v-a')
+          const gb = houseSvg.querySelector<SVGGElement>('.g1v-b')
+          if (ga) ga.style.display = v === 'a' ? '' : 'none'
+          if (gb) gb.style.display = v === 'b' ? '' : 'none'
+          vPanel.querySelectorAll<HTMLElement>('.variant').forEach(r => r.classList.toggle('selected', r.dataset.variant === v))
+          vTitel.textContent = VAR[v].titel
+          vPrijs.textContent = VAR[v].prijs
+        }
+        card1.querySelector('.inspect')?.addEventListener('click', () => { cancelAutoplay(); vPanel.hidden = !vPanel.hidden })
+        vPanel.querySelectorAll<HTMLElement>('.variant').forEach(row => {
+          row.addEventListener('click', () => { cancelAutoplay(); toonVariant(row.dataset.variant || 'a') })
+          row.querySelector('.choose')?.addEventListener('click', (e) => {
+            e.stopPropagation()
+            cancelAutoplay()
+            toonVariant(row.dataset.variant || 'a')
+            vPanel.hidden = true
+            approveDemo(1)
+          })
+        })
+      }
+
+      // autoplay: pas wanneer de kaarten in beeld zijn, en nooit na interactie
+      const startAutoplay = () => {
+        if (demoInteracted || autoplayStarted) return
+        autoplayStarted = true
+        const volgende = () => {
+          if (demoInteracted) return
+          const open = [1, 2, 3].find(i => !decided[i])
+          if (open == null) return
+          approveDemo(open)
+          autoplayTimer = setTimeout(volgende, 2500)
+          timers.push(autoplayTimer)
+        }
+        autoplayTimer = setTimeout(volgende, 800)
+        timers.push(autoplayTimer)
+      }
+      const cardsWrap = document.querySelector('#probeer .cards')
+      if ('IntersectionObserver' in window && cardsWrap) {
+        const io = new IntersectionObserver(entries => {
+          if (entries[0].isIntersecting) {
+            io.disconnect()
+            timers.push(setTimeout(() => { if (!demoInteracted) startAutoplay() }, 4000))
+          }
+        }, { threshold: 0.4 })
+        io.observe(cardsWrap)
+      }
+      ;['pointerdown', 'keydown', 'touchstart'].forEach(evt =>
+        document.addEventListener(evt, () => { demoInteracted = true }, { passive: true, once: true }))
     }
 
     // ── woningtype-toggle (index.html @DOMContentLoaded) ──
