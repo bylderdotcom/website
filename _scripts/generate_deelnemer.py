@@ -7,7 +7,7 @@ import json, os, html
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 SITE = 'https://www.bylder.com'
-MAIL = 'partners@bylder.com'
+MAIL = 'info@bylder.com'
 
 CSS = """*{box-sizing:border-box;margin:0;padding:0;}
 body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.75;}
@@ -176,7 +176,7 @@ SEGMENTS = [
          ('Offerte-flow','Kopers vragen via Bylder een prijs op; jij ontvangt gekwalificeerde aanvragen, geen leadveiling.'),
          ('Visualisatie','Kopers zien jouw aanbouw of dakopbouw in 3D op hun eigen woning vóór ze beslissen.')],
   price=('Gratis aanmelden', 'Je betaalt €149 per gerealiseerde match (getekende opdracht via Bylder). Geen abonnement, geen kosten per lead.'),
-  cta=('Meld je productiebedrijf aan','mailto:partners@bylder.com?subject=Deelnemen%20prefab-productie'),
+  cta=('Meld je productiebedrijf aan','mailto:info@bylder.com?subject=Deelnemen%20prefab-productie'),
   faq=[('Wat telt als een gerealiseerde match?','Een getekende opdracht tussen jou (of jouw installatiepartner) en een koper die via Bylder binnenkwam. Aanvragen en offertes zijn gratis.'),
        ('Hoe vind ik installatiepartners?','Bylder koppelt je aan aangesloten lokale bouwbedrijven die zich als installatiepartner hebben aangemeld. Jij bepaalt met wie je werkt.'),
        ('Kan mijn product in de 3D-tools?','Ja — lever maatvoering en beeldmateriaal aan, dan kunnen kopers jouw element op hun eigen woning visualiseren.')],
@@ -193,7 +193,7 @@ SEGMENTS = [
          ('Portfolio-profiel','Laat je mooiste projecten zien; kopers kiezen op stijl en specialisatie.'),
          ('Geen leadveiling','Aanvragen komen rechtstreeks bij jou — je concurreert op werk, niet op reactiesnelheid.')],
   price=('€79 eenmalig', 'Activeer je profiel eenmalig. Geen abonnement, geen kosten per aanvraag — hetzelfde model als voor vakbedrijven.'),
-  cta=('Activeer je profiel','mailto:partners@bylder.com?subject=Deelnemen%20interieurbouw'),
+  cta=('Activeer je profiel','mailto:info@bylder.com?subject=Deelnemen%20interieurbouw'),
   faq=[('Wat krijg ik voor €79?','Een permanent profiel in de op-maat-gids met portfolio, specialisaties en contactmogelijkheid, plus doorverwijzingen vanuit de ontwerptools. Eenmalig, geen verlengingskosten.'),
        ('Hoe komen aanvragen binnen?','Rechtstreeks per e-mail of telefoon — Bylder zit er niet tussen en rekent geen commissie per opdracht.'),
        ('Voor wie is dit segment?','Interieurbouwers, maatwerk-meubelmakers en gespecialiseerde timmerbedrijven die voor particulieren werken.')],
@@ -210,7 +210,7 @@ SEGMENTS = [
          ('Verbouw & aanbouw','Architect-profielen worden gekoppeld aan de bouwvergunning- en aanbouw-hubs.'),
          ('Warme aanvragen','De koper komt met schets, wensen en budget — geen koude intake.')],
   price=('€79 eenmalig', 'Activeer je profiel eenmalig. Geen abonnement, geen commissie over je honorarium.'),
-  cta=('Activeer je profiel','mailto:partners@bylder.com?subject=Deelnemen%20interieurontwerp%20of%20architectuur'),
+  cta=('Activeer je profiel','mailto:info@bylder.com?subject=Deelnemen%20interieurontwerp%20of%20architectuur'),
   faq=[('Voor wie is dit segment?','Interieurontwerpers, interieurarchitecten en (verbouw)architecten die voor particulieren werken.'),
        ('Hoe werkt de koppeling met de AI-tools?','Kopers maken in de tools een eerste schets. Bij het resultaat tonen we ontwerpers die bij hun stijl en regio passen, met de schets als bijlage bij de aanvraag.'),
        ('Rekent Bylder commissie?','Nee. Je betaalt eenmalig €79 voor je profiel; wat je met de klant afspreekt is aan jou.')],
@@ -227,7 +227,7 @@ SEGMENTS = [
          ('Opleverondersteuning','Voorschouw- en opleverchecklists verlagen het aantal opleverpunten en nazorgtickets.'),
          ('3D/BIM-koppeling','Sluit aan op je BIM-model of configurator; kopers zien hun woning en keuzes in 3D.')],
   price=('Vanaf €49 per woning', 'Per project, afhankelijk van omvang en gewenste modules. Pilotproject? Plan een gesprek — het eerste project doen we tegen instaptarief.'),
-  cta=('Plan een projectgesprek','mailto:partners@bylder.com?subject=Bylder%20als%20kopersservice%20-%20projectgesprek'),
+  cta=('Plan een projectgesprek','mailto:info@bylder.com?subject=Bylder%20als%20kopersservice%20-%20projectgesprek'),
   faq=[('Wat kost Bylder als kopersservice?','Vanaf €49 per woning per project, afhankelijk van omvang en modules (begeleiding, meerwerk-flow, oplevering, BIM-koppeling). Voor een pilotproject geldt een instaptarief.'),
        ('Vervangt dit onze eigen kopersbegeleiding?','Nee, het ontlast haar. Bylder vangt de standaardvragen en keuzestress af; jouw team houdt de projectspecifieke begeleiding.'),
        ('Voor wie is dit?','Projectontwikkelaars, bouwbedrijven met eigen projecten en woningcorporaties met koop- of renovatieprogramma\'s.')],
@@ -244,7 +244,7 @@ SEGMENTS = [
          ('Fit-out-visualisatie','Zie de inrichting van winkel, kantoor of horecazaak in 3D voordat de aannemer start.'),
          ('Uitvoerende partijen','Toegang tot gekwalificeerde vakbedrijven en interieurbouwers uit het Bylder-netwerk.')],
   price=('€299 per dossier', 'Eén prijs per offerte-/tender-dossier inclusief benchmark-rapport. Portefeuille of doorlopende samenwerking? Enterprise op aanvraag.'),
-  cta=('Start een zakelijk dossier','mailto:partners@bylder.com?subject=Bylder%20Zakelijk%20-%20commercieel%20vastgoed'),
+  cta=('Start een zakelijk dossier','mailto:info@bylder.com?subject=Bylder%20Zakelijk%20-%20commercieel%20vastgoed'),
   faq=[('Voor wie is Bylder Zakelijk?','Vastgoedbeleggers en -eigenaren, VvE-beheerders, retail- en horecaketens en partijen die kantoren of hospitality inrichten. Alles waar een offerte, tender of verbouwing aan te pas komt.'),
        ('Wat krijg ik voor €299?','Een volledige AI-analyse van één offerte- of tenderdossier: postgewijze vergelijking met marktprijzen, risicosignalering en een benchmark-rapport dat je in onderhandeling kunt gebruiken.'),
        ('Werkt dit ook voor VvE\'s?','Ja — juist. VvE-beheerders gebruiken de check voor groot onderhoud en verduurzamingsoffertes; het rapport is direct bruikbaar richting de ledenvergadering.')],
@@ -261,7 +261,7 @@ SEGMENTS = [
          ('Bestellen voor je klant','Bouw- en klusbedrijven configureren en bestellen rechtstreeks voor hun eigen klant \u2014 tegen inkoopcondities, jij houdt de marge op plaatsing en de klantrelatie.'),
          ('E\u00e9n configuratie-standaard','Alle aanvragen komen binnen in hetzelfde formaat: maten, afwerking, opties en situatie \u2014 direct calculeerbaar.')],
   price=('Gratis aanmelden', 'Bestellen als vakbedrijf is kosteloos. Producenten betalen \u20ac149 per gerealiseerde match \u2014 geen abonnement, geen kosten per lead.'),
-  cta=('Meld je bedrijf aan','mailto:partners@bylder.com?subject=Prefab-netwerk%20aanmelding'),
+  cta=('Meld je bedrijf aan','mailto:info@bylder.com?subject=Prefab-netwerk%20aanmelding'),
   faq=[('Ik plaats zelf \u00e9n wil kunnen bestellen \u2014 kan dat?','Ja, dat is juist de bedoeling. Je meldt je \u00e9\u00e9n keer aan en geeft aan welke rollen je vervult: plaatsen, bestellen of allebei. Producenten zien alleen wat relevant is voor de opdracht.'),
        ('Wat zijn de inkoopcondities voor vakbedrijven?','Je bestelt rechtstreeks bij de aangesloten producent tegen diens zakelijke staffel. Bylder rekent het vakbedrijf niets; de producent betaalt de match-fee.'),
        ('Hoe komt mijn bedrijf aan aanvragen?','Consumenten configureren hun element op Bylder en vragen prijzen aan. Producenten ontvangen de aanvraag; plaatsende vakbedrijven worden per regio gekoppeld.')],
@@ -344,9 +344,9 @@ def render_hub():
 <div class="card" style="margin:40px 0;padding:32px;">
 <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:10px;">Verwijzers: makelaars &amp; hypotheekadviseurs</h2>
 <p style="font-size:15px;color:rgba(61,46,30,0.65);line-height:1.75;margin-bottom:16px;">Jij spreekt kopers op hét moment. Verwijs ze naar Bylder en ontvang €25 per geactiveerde koper — je klant bespaart gemiddeld €4.200, jij verdient aan advies dat je toch al gaf.</p>
-<a href="mailto:partners@bylder.com?subject=Verwijzer%20worden" class="il-link">→ Word verwijzer</a></div>
+<a href="mailto:info@bylder.com?subject=Verwijzer%20worden" class="il-link">→ Word verwijzer</a></div>
 <div class="cta-block"><h2>Twijfel je welk segment past?</h2><p>Mail ons kort wat je doet; we denken mee over de beste plek op het platform.</p>
-<a href="mailto:partners@bylder.com?subject=Deelnemer%20worden" class="cta-btn">Mail partners@bylder.com →</a></div>
+<a href="mailto:info@bylder.com?subject=Deelnemer%20worden" class="cta-btn">Mail info@bylder.com →</a></div>
 </div></main>''' + FOOTER + '\n</body></html>\n')
 
 os.makedirs(os.path.join(ROOT,'deelnemer-worden'),exist_ok=True)
