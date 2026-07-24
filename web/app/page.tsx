@@ -7,12 +7,12 @@ import { HOME_JSONLD } from './homeHtml'
 
 const OG_TITLE = 'Alles voor je (nieuwe) woning. Met eerlijke prijzen als fundament.'
 const OG_DESC =
-  'Bylder regelt je woning en jij keurt goed: advies, ontwerpen, shoppen en aanbesteden in één woningdossier. Gratis voor bewoners — gemiddeld €4.200 bespaard.'
+  'Bylder regelt je woning en helpt je de beste keus te maken: advies, ontwerpen, shoppen en aanbesteden in één woningdossier. Gratis voor bewoners — gemiddeld €4.200 bespaard.'
 
 export const metadata: Metadata = {
   title: 'Alles voor je (nieuwe) woning — offerte check & kortingen | Bylder',
   description:
-    'Bylder regelt je (nieuwe) woning — jij keurt goed. AI offerte-check, 61 woonmerken met korting. Gemiddeld €4.200 bespaard. Gratis voor bewoners.',
+    'Bylder regelt je (nieuwe) woning en helpt je de beste keus te maken. AI offerte-check, 61 woonmerken met korting. Gemiddeld €4.200 bespaard. Gratis voor bewoners.',
   authors: [{ name: 'Bylder Nederland B.V.' }],
   keywords: [
     'kopersbegeleiding nieuwbouw', 'offerte check aannemer', 'meerwerk controleren',
