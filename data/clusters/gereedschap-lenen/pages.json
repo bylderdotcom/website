@@ -1,0 +1,109 @@
+[
+  {
+    "slug": "index",
+    "path": "/gereedschap-lenen/",
+    "title": "Gratis gereedschap lenen &mdash; waar en hoe | Bylder.com",
+    "description": "Waar kun je in Nederland gratis gereedschap lenen? Van je buren en Peerby tot de gereedschapsbibliotheek en je woningcorporatie &mdash; plus per klus wat je nodig hebt.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Gratis gereedschap lenen\",\"description\":\"Waar kun je in Nederland gratis gereedschap lenen? Van je buren en Peerby tot de gereedschapsbibliotheek en je woningcorporatie — plus per klus wat je nodig hebt.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Waar kan ik gratis gereedschap lenen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Bij je buren (rechtstreeks of via Peerby), bij een lokale gereedschaps- of spullenbibliotheek, en soms bij je woningcorporatie als je huurt. Voor reparaties kun je terecht bij een Repair Café.\"}},{\"@type\":\"Question\",\"name\":\"Is Peerby echt gratis?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor de lener is Peerby gratis: je betaalt niets voor de spullen die je leent. Het werkt het best in wijken met genoeg aanbod.\"}},{\"@type\":\"Question\",\"name\":\"Wat kost gereedschap huren bij de bouwmarkt?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Dat verschilt per stuk en per dag. Voor eenmalig gebruik is huren prima; ga je iets vaker gebruiken, reken dan uit of kopen niet goedkoper is.\"}},{\"@type\":\"Question\",\"name\":\"Welke plug heb ik nodig in een nieuwbouwwoning?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Dat hangt af van de wand. Nieuwbouw heeft vaak wanden van gipsplaat of metal-stud; daar heb je een hollewandplug nodig. Klop op de wand: klinkt het hol, dan is het waarschijnlijk gipsplaat.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"}]}"
+    ]
+  },
+  {
+    "slug": "spiegel-ophangen",
+    "path": "/gereedschap-lenen/spiegel-ophangen/",
+    "title": "Spiegel ophangen: welke plug in welke wand? | Bylder.com",
+    "description": "Een spiegel of schilderij recht ophangen dat blijft hangen. Welke plug in welke wand &mdash; gipsplaat, gasbeton, steen of beton &mdash; en welk gereedschap je leent.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Spiegel of schilderij ophangen\",\"description\":\"Een spiegel of schilderij recht ophangen dat blijft hangen. Welke plug in welke wand — gipsplaat, gasbeton, steen of beton — en welk gereedschap je leent.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/spiegel-ophangen/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"Spiegel ophangen\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Bepaal de hoogte: midden op ongeveer 160 cm voor een spiegel.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Teken de gaten af met een waterpas of kruislijnlaser.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Klop op de wand en bepaal het wandtype.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Boor het gat met de juiste boor en diameter.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Plug erin, schroef erin, spiegel ophangen en controleren met de waterpas.\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Welke plug voor een spiegel in gipsplaat?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een hollewandplug: een tuimelplug of, voor zwaardere spiegels, een paraplubout. Een gewone bruine plug houdt niet in gipsplaat. Klop op de wand: klinkt het hol, dan is het gipsplaat.\"}},{\"@type\":\"Question\",\"name\":\"Hoe hang ik een spiegel recht op?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Teken de gaten af met een waterpas of kruislijnlaser voordat je boort. Bij twee ophangpunten moeten die exact op gelijke hoogte zitten.\"}},{\"@type\":\"Question\",\"name\":\"Op welke hoogte hang je een spiegel?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor een spiegel doorgaans met het midden op ongeveer 160 cm (ooghoogte). Voor een schilderij het midden op ~145-150 cm.\"}},{\"@type\":\"Question\",\"name\":\"Kan ik gereedschap lenen om een spiegel op te hangen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Een boormachine en waterpas leen je bij een buur, via Peerby, een gereedschapsbibliotheek of een gedeelde kluskist. Alleen de plug en schroef koop je zelf.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Spiegel of schilderij ophangen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/spiegel-ophangen/\"}]}"
+    ]
+  },
+  {
+    "slug": "tv-ophangen",
+    "path": "/gereedschap-lenen/tv-ophangen/",
+    "title": "Tv aan de muur hangen &mdash; ook op gipsplaat | Bylder.com",
+    "description": "Een tv veilig aan de muur hangen, ook op een gipswand. Welke bevestiging bij welk wandtype, welk gereedschap je leent en waar je op let bij nieuwbouw.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Tv aan de muur hangen\",\"description\":\"Een tv veilig aan de muur hangen, ook op een gipswand. Welke bevestiging bij welk wandtype, welk gereedschap je leent en waar je op let bij nieuwbouw.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/tv-ophangen/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Kan ik een tv aan een gipswand hangen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, maar niet met gewone pluggen. Bevestig de beugel bij voorkeur aan het regelwerk achter de plaat. Kan dat niet, gebruik dan zware hollewandpluggen (paraplubouten).\"}},{\"@type\":\"Question\",\"name\":\"Hoe weet ik of er een leiding achter de muur zit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Gebruik een leidingdetector voordat je boort. Bij een tv boor je dieper dan bij een lijstje, dus het risico is groter.\"}},{\"@type\":\"Question\",\"name\":\"Welke pluggen voor een tv van 20 kilo?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Dat hangt van de wand af. In steen: nylonpluggen. In gipsplaat: het regelwerk opzoeken, of zware paraplubouten verdeeld over meerdere punten.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Tv aan de muur hangen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/tv-ophangen/\"}]}"
+    ]
+  },
+  {
+    "slug": "gordijnrails-ophangen",
+    "path": "/gereedschap-lenen/gordijnrails-ophangen/",
+    "title": "Gordijnrails ophangen: plafond of wand | Bylder.com",
+    "description": "Gordijnrails ophangen in het plafond of aan de wand. Welke plug bij beton, gipsplaat of een verlaagd plafond &mdash; en welk gereedschap je ervoor leent.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Gordijnrails ophangen\",\"description\":\"Gordijnrails ophangen in het plafond of aan de wand. Welke plug bij beton, gipsplaat of een verlaagd plafond — en welk gereedschap je ervoor leent.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/gordijnrails-ophangen/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Gordijnrail aan het plafond of aan de wand?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Aan het plafond hangen gordijnen strak en recht; aan de wand is soms makkelijker als het plafond lastig is. Kies op basis van je plafondtype.\"}},{\"@type\":\"Question\",\"name\":\"Hoe bevestig ik een rail aan een betonplafond?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Met nylonpluggen en een boorhamer. Beton is de sterkste ondergrond; je hebt wel klopboren nodig.\"}},{\"@type\":\"Question\",\"name\":\"Kan ik gereedschap lenen voor gordijnrails?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Een boormachine, laser en trapje leen je bij een buur, via Peerby, een gereedschapsbibliotheek of een kluskist.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Gordijnrails ophangen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/gordijnrails-ophangen/\"}]}"
+    ]
+  },
+  {
+    "slug": "lamp-ophangen",
+    "path": "/gereedschap-lenen/lamp-ophangen/",
+    "title": "Lamp ophangen &mdash; veilig zelf aansluiten | Bylder.com",
+    "description": "Een lamp veilig aansluiten op een bestaand plafondpunt: stroom eraf, draden koppelen met Wago-klemmen, ophangen. Plus wanneer je een installateur inschakelt.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Lamp ophangen\",\"description\":\"Een lamp veilig aansluiten op een bestaand plafondpunt: stroom eraf, draden koppelen met Wago-klemmen, ophangen. Plus wanneer je een installateur inschakelt.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/lamp-ophangen/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"Lamp ophangen\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Zet de juiste groep uit in de meterkast.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Controleer met een spanningszoeker dat er geen spanning op de draden staat.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Koppel de draden: fase aan fase, nul aan nul, aarde aan aarde, met Wago-klemmen.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Hang de lamp op aan de haak of schroef het plafondplaatje vast.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Zet de groep weer aan en test.\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Mag ik zelf een lamp ophangen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een lamp aansluiten op een bestaand plafondpunt met de stroom eraf mag je zelf. Nieuwe bedrading trekken of een punt verplaatsen is elektrawerk; laat dat aan een erkend installateur over.\"}},{\"@type\":\"Question\",\"name\":\"Wat zijn Wago-klemmen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Steeklasklemmen waarmee je elektradraden snel en veilig koppelt, als vervanging van kroonstenen. Ze kosten een paar cent per stuk.\"}},{\"@type\":\"Question\",\"name\":\"Hoe weet ik zeker dat de stroom eraf is?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zet de juiste groep uit in de meterkast en controleer met een spanningszoeker op de draden. Vertrouw niet op alleen de lichtschakelaar.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lamp ophangen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/lamp-ophangen/\"}]}"
+    ]
+  },
+  {
+    "slug": "meubels-monteren",
+    "path": "/gereedschap-lenen/meubels-monteren/",
+    "title": "Meubels monteren &mdash; welk gereedschap lenen | Bylder.com",
+    "description": "Meubels sneller in elkaar zetten met de juiste tools. Waarom een accuschroevendraaier het verschil maakt, en welk gereedschap je leent in plaats van koopt.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Meubels monteren\",\"description\":\"Meubels sneller in elkaar zetten met de juiste tools. Waarom een accuschroevendraaier het verschil maakt, en welk gereedschap je leent in plaats van koopt.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/meubels-monteren/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Heb ik een accuschroevendraaier nodig voor meubels?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nodig niet, maar het scheelt enorm. Zet de machine op een laag koppel zodat je niets doldraait in het spaanplaat.\"}},{\"@type\":\"Question\",\"name\":\"Hoe voorkom ik krassen op mijn nieuwe vloer?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Plak viltglijders onder de poten en monteer zware kasten op een deken of karton. Schuif nooit een kaal meubel over een gietvloer of laminaat.\"}},{\"@type\":\"Question\",\"name\":\"Kan ik gereedschap lenen om meubels te monteren?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Een accuschroevendraaier, rubberen hamer en inbusset leen je bij een buur, via Peerby, een gereedschapsbibliotheek of een kluskist.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Meubels monteren\",\"item\":\"https://www.bylder.com/gereedschap-lenen/meubels-monteren/\"}]}"
+    ]
+  },
+  {
+    "slug": "verhuizen",
+    "path": "/gereedschap-lenen/verhuizen/",
+    "title": "Verhuizen: welk gereedschap lenen | Bylder.com",
+    "description": "Het gereedschap dat een verhuizing licht maakt: steekwagen, verhuisbanden, schijven en dekens. Vrijwel alles te lenen &mdash; en hoe je je nieuwe vloer beschermt.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Verhuizen\",\"description\":\"Het gereedschap dat een verhuizing licht maakt: steekwagen, verhuisbanden, schijven en dekens. Vrijwel alles te lenen — en hoe je je nieuwe vloer beschermt.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/verhuizen/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Welk gereedschap heb ik nodig om te verhuizen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een steekwagen voor dozen en apparaten, verhuisbanden om zwaar te tillen, verhuisdekens ter bescherming en verhuisschijven om kasten te verplaatsen. Vrijwel alles is te lenen.\"}},{\"@type\":\"Question\",\"name\":\"Hoe verplaats ik een zware kast zonder mijn vloer te beschadigen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zet verhuisschijven onder de poten en schuif de kast. Op een nieuwe gietvloer of laminaat is dit essentieel; een kale kast krast direct.\"}},{\"@type\":\"Question\",\"name\":\"Kan ik verhuismateriaal lenen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Steekwagen, banden, schijven en dekens leen je bij buren, via Peerby, een gereedschapsbibliotheek of een kluskist in je wijk.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Verhuizen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/verhuizen/\"}]}"
+    ]
+  },
+  {
+    "slug": "kluskist",
+    "path": "/gereedschap-lenen/kluskist/",
+    "title": "De Kluskist &mdash; gratis gedeeld gereedschap in je wijk | Bylder.com",
+    "description": "Eén kist met gereedschap en verbruiksmateriaal bij een bewoner thuis, die de hele nieuwbouwwijk gratis mag lenen. Wat erin zit en hoe je er een aanvraagt.",
+    "og_type": "article",
+    "robots": "index,follow",
+    "ldjson": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"De Kluskist\",\"description\":\"Eén kist met gereedschap en verbruiksmateriaal bij een bewoner thuis, die de hele nieuwbouwwijk gratis mag lenen. Wat erin zit en hoe je er een aanvraagt.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/gereedschap-lenen/kluskist/\",\"dateModified\":\"2026-07-24\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Wat kost het om een Kluskist te lenen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Niets. Lenen uit de Kluskist is gratis, en verbruiksmateriaal zoals schroeven en tape mag je houden. Er is geen abonnement en niemand verdient aan wat je leent.\"}},{\"@type\":\"Question\",\"name\":\"Hoe vraag ik een Kluskist aan?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Via je gratis Bylder-account in de app. Staat er nog geen kist bij jou in de buurt, dan vraag je er een aan; die komt bij jou thuis te staan, met een bordje voor het raam.\"}},{\"@type\":\"Question\",\"name\":\"Wat zit er in de Kluskist?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Gereedschap voor de klussen na een oplevering: accuboormachine, kruislijnlaser, waterpas, trapje, schroevendraaiers en meer. Plus verbruiksmateriaal: schroeven, pluggen, tape en ophangmateriaal.\"}},{\"@type\":\"Question\",\"name\":\"Moet ik de kist beheren als ik hem aanvraag?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De kist komt bij jou te staan en je buren lenen eruit. Je plakt het bordje voor het raam en bent bereid je buren te helpen. Je bepaalt zelf wanneer dat uitkomt.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gereedschap lenen\",\"item\":\"https://www.bylder.com/gereedschap-lenen/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"De Kluskist\",\"item\":\"https://www.bylder.com/gereedschap-lenen/kluskist/\"}]}"
+    ],
+    "og_image": "https://www.bylder.com/img/kluskist-open.webp"
+  }
+]
