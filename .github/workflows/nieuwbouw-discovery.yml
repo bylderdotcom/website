@@ -1,0 +1,73 @@
+name: Nieuwe nieuwbouwprojecten ontdekken (wekelijks)
+
+# Vindt elke week de nieuw op de markt gekomen nieuwbouwprojecten, verrijkt
+# alleen die nieuwe (beleefd: ~2s tussen requests) en scoort ze op
+# pagina-waardigheid. Opent een issue met de kandidaten.
+#
+# Standing order (CLAUDE.md): read-only, reviewbare output, geen auto-publish.
+# Deze loop genereert dus GEEN projectpagina's. Waarom niet: 995 bijna-identieke
+# pagina's is de dunne-content-val die de kortingscode-pagina's op noindex
+# bracht — en die sinds Helpful Content het hele domein meesleept. Een mens
+# kiest uit de kandidatenlijst welke projecten een volwaardige pagina krijgen.
+
+on:
+  schedule:
+    - cron: "0 7 * * 5"   # vrijdag 07:00 UTC, ná de vers-heid-check
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: "Aantal lijstpagina's om te scannen"
+        default: "60"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan en scoor nieuwe projecten
+        run: python3 scripts/nieuwbouw_scraper.py discover "${{ github.event.inputs.max_pages || '60' }}"
+
+      - name: Bouw kandidatentabel
+        id: tabel
+        run: |
+          python3 scripts/report_nieuwe_projecten.py > /tmp/tabel.md
+          echo "nieuw=$(python3 -c "import json;print(json.load(open('reports/nieuwe-projecten.json'))['nieuw'])")" >> "$GITHUB_OUTPUT"
+          cat /tmp/tabel.md
+
+      - name: Open issue met kandidaten
+        if: steps.tabel.outputs.nieuw != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "De wekelijkse scan vond **${{ steps.tabel.outputs.nieuw }}** nieuwe projecten."
+            echo
+            echo "## Kandidaten (score >= 60)"
+            echo
+            cat /tmp/tabel.md
+            echo
+            echo "**Volgende stap:** kies welke projecten een eigen pagina onder \`/nieuwbouw-project/\` verdienen."
+            echo "Een pagina is alleen zinvol als laag A volledig gevuld kan worden (fase-advies + lokale koppelingen)."
+            echo "Voeg gekozen projecten toe aan \`data/clusters/nieuwbouw-project/bronnen.json\` zodat de vers-heid-loop ze meeneemt."
+            echo
+            echo "Volledig rapport: \`reports/nieuwe-projecten.json\` (artifact van deze run)."
+          } > /tmp/body.md
+          gh issue create \
+            --title "Nieuwe nieuwbouwprojecten: ${{ steps.tabel.outputs.nieuw }} gevonden ($(date +%F))" \
+            --body-file /tmp/body.md \
+            --label "content-kandidaten" \
+          || gh issue create \
+            --title "Nieuwe nieuwbouwprojecten ($(date +%F))" \
+            --body-file /tmp/body.md
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nieuwe-projecten
+          path: reports/nieuwe-projecten.json
+          if-no-files-found: ignore
