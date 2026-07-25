@@ -1,0 +1,45 @@
+name: Projectpagina vers-heid (wekelijks)
+
+# Eerste loop van deze repo. Standing order (CLAUDE.md): loops draaien
+# read-only en leveren reviewbare output — geen auto-publish. Deze check
+# vergelijkt de bron-sites van elke projectpagina met de vastgelegde baseline
+# en opent bij drift een issue met wat er veranderde. Content aanpassen blijft
+# mensenwerk; na de review leg je een nieuwe baseline vast met
+#   python3 scripts/check_project_freshness.py snapshot
+
+on:
+  schedule:
+    - cron: "0 6 * * 5"   # vrijdag 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vergelijk bronnen met baseline
+        id: check
+        run: |
+          set +e
+          python3 scripts/check_project_freshness.py check | tee /tmp/rapport.txt
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+      - name: Open issue bij drift
+        if: steps.check.outputs.exit == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITEL="Projectpagina-drift gedetecteerd ($(date +%F))"
+          gh issue create --title "$TITEL" \
+            --body "$(printf 'De wekelijkse vers-heid-check vond wijzigingen bij de bronnen van een of meer projectpagina'\''s.\n\n```\n%s\n```\n\nActie: pagina reviewen/bijwerken, daarna baseline verversen met `python3 scripts/check_project_freshness.py snapshot`.\nRapport: reports/project-freshness.json (artifact van deze run).' "$(cat /tmp/rapport.txt)")" \
+            --label "content-drift" || gh issue create --title "$TITEL" --body "Zie workflow-log."
+      - name: Upload rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-freshness-rapport
+          path: reports/project-freshness.json
+          if-no-files-found: ignore

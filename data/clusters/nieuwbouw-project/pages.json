@@ -16,7 +16,7 @@
     "title": "De Suikerzijde (Groningen) — gekocht? Fases, meerwerk & oplevering | Bylder.com",
     "description": "Koop of woon je in De Suikerzijde in Groningen? Per fase wat je nu regelt: inschrijving en KoopGarant, meerwerk en warmtenet, oplevering eind 2026 en de afwerking.",
     "og_type": "article",
-    "robots": "noindex,follow",
+    "robots": "index,follow",
     "ldjson": [
       "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"De Suikerzijde, Groningen — voor kopers en bewoners\",\"description\":\"Per fase wat je in De Suikerzijde regelt: inschrijving en KoopGarant, meerwerk en warmtenet, oplevering eind 2026 en de afwerking.\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Bylder.com\"},\"mainEntityOfPage\":\"https://www.bylder.com/nieuwbouw-project/de-suikerzijde-groningen/\",\"dateModified\":\"2026-07-25\"}",
       "{\"@context\": \"https://schema.org\", \"@type\": \"Place\", \"name\": \"De Suikerzijde\", \"description\": \"Nieuw stadsdeel in west-Groningen van circa 5.000 woningen op het voormalige suikerfabriek-terrein. Fase 1 in aanbouw (oplevering verwacht vanaf eind 2026), fase 2 in verkoop sinds januari 2026.\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}, \"url\": \"https://www.bylder.com/nieuwbouw-project/de-suikerzijde-groningen/\"}",

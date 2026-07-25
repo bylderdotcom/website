@@ -1,0 +1,10 @@
+{
+  "de-suikerzijde-groningen": {
+    "pagina": "/nieuwbouw-project/de-suikerzijde-groningen/",
+    "bronnen": [
+      { "label": "Gemeente (desuikerzijde.nl)", "url": "https://desuikerzijde.nl/" },
+      { "label": "Dura Vermeer", "url": "https://www.duravermeer.nl/projecten/suikerzijde-in-groningen" },
+      { "label": "Nijestee", "url": "https://www.nijestee.nl/projecten/desuikerzijde" }
+    ]
+  }
+}
