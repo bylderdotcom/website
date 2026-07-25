@@ -81,6 +81,11 @@ bestemming.
 
 Eén propositie, per type een andere reden. Nooit een algemene tekst.
 
+**Wat wij als enige kunnen geven:** het opleverkalender-overzicht van hun eigen
+regio. Een vakbedrijf weet niet dat er 8 km verderop 115 woningen worden
+opgeleverd in Q4 2027. Wij weten dat wél, wekelijks bijgewerkt. Dat weggeven kost
+niets en maakt het eerste contact nuttig in plaats van vragend.
+
 **Alle segmenten delen deze twee feiten:**
 - Bylder-kopers zijn koopkrachtig en op een beslismoment: ze hebben net een
   woning gekocht en moeten binnen maanden tienduizenden euro's uitgeven.
@@ -118,10 +123,54 @@ vraag. Nederlands, u-vorm bij bedrijven.
 
 ## 3. De mailflow — 20 per dag
 
-**Bericht 1 (de vermelding).** Subject in de geest van: *"Uw profiel op Bylder —
-[stad]"*. Inhoud: uw bedrijf staat vermeld, dit is de pagina, deze maand X keer
-bekeken, dit zoeken kopers in [project]. Eén call to action: **claim uw
-profiel**. Nog geen prijs, nog geen verkoop.
+**Bericht 1 — geef eerst iets, vraag daarna.**
+
+Het probleem met "uw profiel is X keer bekeken": bij een nieuw profiel is X nul.
+Dan sta je met een lege hand, en een stukadoor geeft ook niks om drie
+paginaweergaven. Wat hij niet weet en wél wil weten: **welke woningen er bij hem
+in de buurt worden opgeleverd, en wanneer.**
+
+Die data hebben wij, en niemand anders geeft die weg. De discovery-loop levert per
+project: naam, aantal woningen, fase, opleverjaar en coördinaten. Daarmee maak je
+per bedrijf een mini-marktbericht dat vanaf dag één klopt, ook zonder één
+bezoeker:
+
+> In uw regio komen de komende twee jaar drie nieuwbouwprojecten op:
+> - Volharding, Marum — 115 woningen, oplevering Q4 2027, 8 km
+> - [project] — [aantal] woningen, oplevering [jaar], [afstand] km
+>
+> Dat zijn [totaal] huishoudens die binnen enkele maanden na oplevering een
+> stukadoor nodig hebben. Uw bedrijf staat al op Bylder — dit is uw profiel.
+> Controleer of de gegevens kloppen en claim het.
+
+Drie redenen waarom dit sterker is dan een pitch:
+1. **Het is nuttig los van ons.** Ook wie niet claimt, heeft iets gehad. Dat is
+   het verschil tussen acquisitie en spam, ook in de beleving van de ontvanger.
+2. **Het werkt vanaf nul.** Geen views nodig, geen kip-en-ei.
+3. **Het is verifieerbaar.** Ze kunnen de projecten zelf opzoeken. Dat maakt het
+   vertrouwenwekkend in plaats van verkooppraat.
+
+Weergavecijfers komen erbij zodra ze bestaan, als extra bewijs — nooit als
+hoofdargument.
+
+### De omzet wacht niet op bericht 2
+
+Kip-en-ei én omzet vragen dat er snel geld binnenkomt. Daarom staat het
+**€79-voorstel op de claim-pagina zelf**, niet in een tweede mail. Wie doorklikt
+is al betrokken; daar verkopen mag en werkt. De volgorde wordt dus:
+
+mail (nuttig marktbericht + claim) → claim-pagina (gegevens kloppen? + brede
+toestemmingsvraag + €79-aanbod met het segment-argument) → betaald lid.
+
+Dat maakt de funnel één stap korter en haalt de omzet naar voren, zonder dat de
+eerste mail een verkoopmail wordt.
+
+### Schaarste als argument, eerlijk gebruikt
+
+Per vak per plaats is er een beperkt aantal plekken in de lokale aanbeveling.
+Dat is waar — en het is een legitieme reden om nú te claimen in plaats van later.
+Gebruik het alleen als het feitelijk klopt voor dat vak in die plaats; verzin geen
+schaarste die er niet is.
 
 **De claim-pagina is het opt-in-moment.** Daar staat:
 
