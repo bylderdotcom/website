@@ -2,9 +2,52 @@
   "de-suikerzijde-groningen": {
     "pagina": "/nieuwbouw-project/de-suikerzijde-groningen/",
     "bronnen": [
-      { "label": "Gemeente (desuikerzijde.nl)", "url": "https://desuikerzijde.nl/" },
-      { "label": "Dura Vermeer", "url": "https://www.duravermeer.nl/projecten/suikerzijde-in-groningen" },
-      { "label": "Nijestee", "url": "https://www.nijestee.nl/projecten/desuikerzijde" }
+      {
+        "label": "Gemeente (desuikerzijde.nl)",
+        "url": "https://desuikerzijde.nl/"
+      },
+      {
+        "label": "Dura Vermeer",
+        "url": "https://www.duravermeer.nl/projecten/suikerzijde-in-groningen"
+      },
+      {
+        "label": "Nijestee",
+        "url": "https://www.nijestee.nl/projecten/desuikerzijde"
+      }
+    ]
+  },
+  "volharding-marum": {
+    "pagina": "/nieuwbouw-project/volharding-marum/",
+    "bronnen": [
+      {
+        "label": "Projectsite volhardingmarum.nl",
+        "url": "https://www.volhardingmarum.nl/"
+      },
+      {
+        "label": "Van Wijnen projectpagina",
+        "url": "https://www.vanwijnen.nl/projecten/volharding-groene-en-diverse-nieuwbouwwijk-in-marum"
+      },
+      {
+        "label": "Gemeente Westerkwartier — starterslening",
+        "url": "https://www.westerkwartier.nl/starterslening"
+      }
+    ]
+  },
+  "condorpark-apeldoorn": {
+    "pagina": "/nieuwbouw-project/condorpark-apeldoorn/",
+    "bronnen": [
+      {
+        "label": "Projectsite condorpark.nl",
+        "url": "https://www.condorpark.nl/"
+      },
+      {
+        "label": "Projectsite — veelgestelde vragen",
+        "url": "https://www.condorpark.nl/veelgestelde-vragen"
+      },
+      {
+        "label": "Gemeente Apeldoorn — Kayersmolen-Noord",
+        "url": "https://www.apeldoorn.nl/nieuwbouw-en-ontwikkeling/zuidwest-apeldoorn/kayersmolen-noord"
+      }
     ]
   }
 }
