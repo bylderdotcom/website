@@ -77,7 +77,12 @@
       "permanent": true
     },
     {
-      "source": "/gereedschap(.*)",
+      "source": "/gereedschap",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/gereedschap/:path*",
       "destination": "/kopen/",
       "permanent": true
     },
