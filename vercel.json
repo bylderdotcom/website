@@ -6,6 +6,26 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/deelnemer-worden/woonwinkels/:path*",
+      "destination": "/deelnemer-worden/winkels-webshops/",
+      "permanent": true
+    },
+    {
+      "source": "/deelnemer-worden/woonwinkels",
+      "destination": "/deelnemer-worden/winkels-webshops/",
+      "permanent": true
+    },
+    {
+      "source": "/deelnemer-worden/woonwinkels-merken",
+      "destination": "/deelnemer-worden/winkels-webshops/",
+      "permanent": true
+    },
+    {
+      "source": "/deelnemer-worden/woonwinkels-merken/:path*",
+      "destination": "/deelnemer-worden/winkels-webshops/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
