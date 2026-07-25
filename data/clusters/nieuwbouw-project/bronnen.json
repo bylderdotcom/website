@@ -49,5 +49,26 @@
         "url": "https://www.apeldoorn.nl/nieuwbouw-en-ontwikkeling/zuidwest-apeldoorn/kayersmolen-noord"
       }
     ]
+  },
+  "haarlemszicht-haarlem": {
+    "pagina": "/nieuwbouw-project/haarlemszicht-haarlem/",
+    "bronnen": [
+      {
+        "label": "Projectsite haarlemszicht.nl",
+        "url": "https://haarlemszicht.nl/"
+      },
+      {
+        "label": "Projectsite — planning",
+        "url": "https://haarlemszicht.nl/planning-2/"
+      },
+      {
+        "label": "Mooijekind Vleut — projectpagina",
+        "url": "https://mooijekindvleut.nl/nieuwbouw/projecten/haarlem-haarlemszicht/"
+      },
+      {
+        "label": "Gemeente Haarlem — herontwikkeling De Koepel",
+        "url": "https://haarlem.nl/herontwikkeling-de-koepel"
+      }
+    ]
   }
 }
