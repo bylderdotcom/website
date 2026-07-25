@@ -149,6 +149,18 @@ def mode_enrich(gemeente):
 # (en die sinds Helpful Content het hele domein raakt). Een projectpagina verdient
 # alleen te bestaan als er genoeg eigen substantie is. Deze score rangschikt
 # kandidaten; een mens kiest.
+
+# ── Prioriteitsregio ─────────────────────────────────────────────────────────
+# Bylder heeft vier Auping-winkels in Rotterdam, Den Haag, Zoetermeer en
+# Leidschendam. In die regio is er dus een extra geldstroom (voucher + leenbed +
+# hotelovernachting) en een fysieke plek om kopers naartoe te verleiden. Een
+# project daar is voor ons meer waard dan een groter project elders.
+KERN = {"rotterdam", "s-gravenhage", "zoetermeer", "leidschendam-voorburg"}
+RING = {"schiedam", "vlaardingen", "capelle-aan-den-ijssel", "rijswijk-zh", "delft",
+        "pijnacker-nootdorp", "barendrecht", "ridderkerk", "lansingerland",
+        "albrandswaard", "krimpen-aan-den-ijssel", "maassluis", "westland",
+        "midden-delfland", "nissewaard", "voorschoten", "wassenaar", "zwijndrecht"}
+
 def score_project(x):
     """0-100 pagina-waardigheid + de redenen erachter."""
     score, redenen = 0, []
@@ -179,6 +191,12 @@ def score_project(x):
         redenen.append("opleverjaar onbekend")
 
     if x.get("lat"):  score += 10; redenen.append("locatie bekend (geo-schema mogelijk)")
+
+    pl = (x.get("plaats") or "").lower()
+    if pl in KERN:
+        score += 20; redenen.append("PRIORITEITSREGIO — Auping-winkel in deze gemeente")
+    elif pl in RING:
+        score += 12; redenen.append("prioriteitsregio (nabij een Auping-winkel)")
 
     # Naam-kwaliteit is geen bonus maar een voorwaarde: de hele funnel hangt aan
     # de naam-zoekvraag ("Landgoed Coudewater"), dus een project dat alleen
@@ -243,6 +261,11 @@ def mode_discover(max_pages):
 
     print(f"\nRapport: {rap}")
     if kandidaten:
+        regio = [k for k in kandidaten if (k.get("plaats") or "").lower() in (KERN | RING)]
+        if regio:
+            print("\nPRIORITEITSREGIO (Rotterdam / Den Haag / Zoetermeer / Leidschendam e.o.):")
+            for k in regio[:10]:
+                print(f"  [{k['score']:3}] {k['naam']} ({k['plaats']}) — {k.get('status')}, {k.get('woningen') or '?'} won.")
         print("\nTop-kandidaten voor een eigen projectpagina:")
         for k in kandidaten[:10]:
             print(f"  [{k['score']:3}] {k['naam']} ({k['plaats']}) — {'; '.join(k['redenen'][:3])}")
