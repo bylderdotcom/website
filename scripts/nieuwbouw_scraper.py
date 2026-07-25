@@ -102,12 +102,27 @@ def parse_detail(html, naam=""):
     status = None
     for s in ("In verkoop", "In aanbouw", "Toekomstig", "Verkocht"):
         if s.lower() in html.lower(): status = s; break
-    # actualiteit: kwartaal-jaren, anders bare jaar nabij oplevering/verwacht/medio/eind
+    # Jaartallen zijn verraderlijk: een portaal noemt vaak hetzelfde jaar voor
+    # start verkoop, start bouw én oplevering. Bij Dok District (Almere) stond
+    # "2026" voor de verkoopstart terwijl de oplevering Q1 2029 is — de score
+    # dacht daardoor dat het klusvenster nabij was. Daarom: leg vast op WELK
+    # trefwoord een jaar werd gevonden, en geef voorrang aan oplever-woorden.
     jaren = sorted({int(y) for y in re.findall(r"Q[1-4]\s*(20[0-9]{2})", html)})
+    treffers = [(kw.lower(), int(jr)) for kw, jr in re.findall(
+        r"(oplevering|sleuteloverdracht|opgeleverd|start\s+bouw|start\s+verkoop|verwacht|medio|eind|begin)"
+        r"[^<]{0,24}?(20[2-9][0-9])", html, re.I)]
+    hard = [jr for kw, jr in treffers if kw in ("oplevering", "sleuteloverdracht", "opgeleverd")]
+    if hard:
+        oplevering, oplevering_bron = max(hard), "oplevertrefwoord"
+    elif jaren:
+        oplevering, oplevering_bron = max(jaren), "kwartaalnotatie (onzeker)"
+    elif treffers:
+        oplevering, oplevering_bron = max(jr for _, jr in treffers), "zwak trefwoord (ONBETROUWBAAR)"
+    else:
+        oplevering, oplevering_bron = None, None
     if not jaren:
-        jaren = sorted({int(y) for y in re.findall(r"(?:oplevering|verwacht|medio|eind|begin)[^<]{0,20}?(20[2-9][0-9])", html, re.I)})
-    oplevering = max(jaren) if jaren else None
-    return woningen, lat, lng, status, jaren, oplevering
+        jaren = sorted({jr for _, jr in treffers})
+    return woningen, lat, lng, status, jaren, oplevering, oplevering_bron
 
 
 def mode_enrich(gemeente):
@@ -118,8 +133,9 @@ def mode_enrich(gemeente):
     print(f"{len(doel)} projecten in {gemeente} verrijken…")
     for x in doel:
         html = fetch(x["url"])
-        w, lat, lng, status, jaren, oplevering = parse_detail(html, x.get("naam", ""))
-        x.update(woningen=w, lat=lat, lng=lng, status=status, jaren=jaren, oplevering=oplevering)
+        w, lat, lng, status, jaren, oplevering, opl_bron = parse_detail(html, x.get("naam", ""))
+        x.update(woningen=w, lat=lat, lng=lng, status=status, jaren=jaren,
+                 oplevering=oplevering, oplevering_bron=opl_bron)
         print(f"  {x['naam']}: {w} woningen, {status}, oplevering≈{oplevering}, ({lat},{lng})")
         time.sleep(DELAY)
     save(data)
@@ -150,11 +166,15 @@ def score_project(x):
     elif "verkocht" in st: score += 3;  redenen.append("verkocht — alleen afwerkingsfase resteert")
 
     op = x.get("oplevering")
-    if op:
+    zwak = x.get("oplevering_bron") == "zwak trefwoord (ONBETROUWBAAR)"
+    if op and not zwak:
         from datetime import date
         d = op - date.today().year
         if 0 <= d <= 2: score += 25; redenen.append(f"oplevering ~{op} — klusvenster binnen bereik")
         elif d > 2:     score += 12; redenen.append(f"oplevering ~{op} — lange aanloop")
+    elif op and zwak:
+        score += 5
+        redenen.append(f"jaartal {op} gevonden, maar niet als oplevering — VERIFIEER bij de bron")
     else:
         redenen.append("opleverjaar onbekend")
 
@@ -202,8 +222,9 @@ def mode_discover(max_pages):
     for u in nieuw:
         rec = {"url": u, "plaats": plaats_uit_url(u.replace(BASE, "")), "naam": naam_uit_slug(u)}
         html = fetch(u)
-        w, lat, lng, status, jaren, oplevering = parse_detail(html, rec["naam"])
-        rec.update(woningen=w, lat=lat, lng=lng, status=status, jaren=jaren, oplevering=oplevering)
+        w, lat, lng, status, jaren, oplevering, opl_bron = parse_detail(html, rec["naam"])
+        rec.update(woningen=w, lat=lat, lng=lng, status=status, jaren=jaren,
+                   oplevering=oplevering, oplevering_bron=opl_bron)
         rec["score"], rec["redenen"] = score_project(rec)
         kandidaten.append(rec)
         data["projecten"].append(rec)
@@ -227,6 +248,10 @@ def mode_discover(max_pages):
             print(f"  [{k['score']:3}] {k['naam']} ({k['plaats']}) — {'; '.join(k['redenen'][:3])}")
         print("\nDrempel-advies: score >= 60 = kandidaat voor een volwaardige pagina.")
         print("Onder de 60: te weinig eigen substantie — niet genereren (dunne content).")
+        print("\nLET OP: de score is een SHORTLIST, geen groen licht. Portaaldata bleek bij")
+        print("Dok District (Almere) fout: 'in verkoop, 2026' terwijl de verkoop pas Q3 2026")
+        print("start en de oplevering Q1 2029 is. Verifieer status en planning altijd eerst")
+        print("bij primaire bronnen (ontwikkelaar, gemeente) voordat je een pagina bouwt.")
     return kandidaten
 
 
