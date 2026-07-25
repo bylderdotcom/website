@@ -159,6 +159,15 @@ def score_project(x):
         redenen.append("opleverjaar onbekend")
 
     if x.get("lat"):  score += 10; redenen.append("locatie bekend (geo-schema mogelijk)")
+
+    # Naam-kwaliteit is geen bonus maar een voorwaarde: de hele funnel hangt aan
+    # de naam-zoekvraag ("Landgoed Coudewater"), dus een project dat alleen
+    # "Fase 1b" of "Deelplan 3" heet is onvindbaar en verdient geen eigen pagina.
+    kern = re.sub(r"\b(fase|deelplan|blok|veld|type|bouwnummer|fase)\s*[0-9a-z]*\b", "",
+                  x.get("naam", ""), flags=re.I).strip(" -–—")
+    if len(kern) < 5:
+        score = min(score, 35)
+        redenen.append("GEEN eigen zoekbare naam — niemand zoekt hierop; geen pagina")
     return min(score, 100), redenen
 
 
