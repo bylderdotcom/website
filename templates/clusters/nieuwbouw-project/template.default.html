@@ -10,9 +10,9 @@ a{color:#3D5A3E;}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .highlight{background:rgba(61,90,62,0.06);border-left:3px solid #3D5A3E;padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:14px;color:rgba(61,46,30,0.75);line-height:1.7;}
-.check-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
-.check-list li{display:flex;align-items:start;gap:10px;font-size:15px;line-height:1.55;}
-.check-list li::before{content:'✓';color:#3D5A3E;font-weight:700;flex-shrink:0;margin-top:2px;}
+.check-list{list-style:none;display:flex;flex-direction:column;gap:10px;padding:0;}
+.check-list li{position:relative;padding-left:26px;font-size:15px;line-height:1.6;}
+.check-list li::before{content:'¹3';color:#3D5A3E;font-weight:700;position:absolute;left:0;top:0;}
 .x-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
 .x-list li{display:flex;align-items:start;gap:10px;font-size:15px;line-height:1.55;}
 .x-list li::before{content:'!';color:#B85C38;font-weight:800;flex-shrink:0;width:18px;height:18px;border-radius:50%;background:rgba(184,92,56,0.12);text-align:center;font-size:12px;line-height:18px;margin-top:1px;}
@@ -31,7 +31,7 @@ a{color:#3D5A3E;}
 .tool-row:last-child{border-bottom:none;}
 .pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.05em;}
 .pill-lenen{background:rgba(61,90,62,0.12);color:#3D5A3E;}
-.pill-kopen{background:rgba(184,92,56,0.12);color:#B85C38;}
+.pill-kopen{background:rgba(184,92,56,0.12);color:#8F4527;}
 @media(max-width:768px){.container{padding:0 20px;}.grid-3,.grid-2{grid-template-columns:1fr;}.wand-tabel{font-size:13px;}.wand-tabel th,.wand-tabel td{padding:9px 10px;}}
 /* projectpagina: vork, feitentabel, laag-B */
 .vork{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0;}
@@ -46,6 +46,11 @@ a{color:#3D5A3E;}
 .laagb{background:rgba(61,90,62,0.05);border:1px dashed rgba(61,90,62,0.35);border-radius:14px;padding:18px 20px;margin:14px 0;}
 .laagb .lb-kop{font-weight:800;font-size:14px;color:#3D5A3E;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
 .laagb p{font-size:13.5px;color:rgba(61,46,30,0.62);line-height:1.65;margin:0;}
-.fase-pill{display:inline-block;font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.05em;background:rgba(184,92,56,0.12);color:#B85C38;}
+.fase-pill{display:inline-block;font-size:11.5px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.05em;background:rgba(184,92,56,0.12);color:#8F4527;}
 @media(max-width:640px){.vork{grid-template-columns:1fr;}}
+/* advieskaarten: kop op eigen regel, vinkje als chip */
+.advies{list-style:none;display:flex;flex-direction:column;gap:12px;margin:18px 0;padding:0;}
+.advies li{background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;padding:16px 18px 16px 48px;position:relative;font-size:14.5px;line-height:1.65;color:rgba(61,46,30,0.75);}
+.advies li::before{content:'\2713';position:absolute;left:16px;top:17px;width:21px;height:21px;border-radius:50%;background:rgba(61,90,62,0.12);color:#3D5A3E;font-weight:800;font-size:12px;text-align:center;line-height:21px;}
+.advies li strong{display:block;color:#1A1208;font-size:15px;margin-bottom:3px;}
 </style>
