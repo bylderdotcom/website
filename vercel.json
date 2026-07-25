@@ -6,6 +6,36 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/deelnemer-worden/woonwinkels/",
+      "destination": "/deelnemer-worden/winkels-webshops/",
+      "permanent": true
+    },
+    {
+      "source": "/deelnemer-worden/woonwinkels-merken/",
+      "destination": "/deelnemer-worden/winkels-webshops/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw/nieuwbouw/",
+      "destination": "/nieuwbouw/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-gids/nieuwbouw-gids/",
+      "destination": "/nieuwbouw-gids/",
+      "permanent": true
+    },
+    {
+      "source": "/us/",
+      "destination": "/en-us/",
+      "permanent": true
+    },
+    {
+      "source": "/gereedschap/",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
       "source": "/deelnemer-worden/woonwinkels/:path*",
       "destination": "/deelnemer-worden/winkels-webshops/",
       "permanent": true
