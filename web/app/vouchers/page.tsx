@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kortingsvouchers wonen — Auping, Goossens, DRT & 40+ merken | Bylder',
-    description: 'Exclusieve kortingen voor nieuwbouw- en renovatiekopers. Gemiddeld €2.549 bespaard. Eenmalig €99.',
+    description: 'Exclusieve kortingen voor nieuwbouw- en renovatiekopers. Gemiddeld €2.549 bespaard. Gratis voor bewoners.',
   },
 }
 
@@ -44,7 +44,7 @@ const JSONLD_FAQ = {
   '@type': 'FAQPage',
   mainEntity: [
     { '@type': 'Question', name: 'Welke kortingen krijg ik als Bylder-lid bij Auping?', acceptedAnswer: { '@type': 'Answer', text: 'Bylder-leden ontvangen 10% korting bij Auping Rotterdam Centrum, Den Haag Centrum en Zoetermeer. Exclusief inbegrepen: gratis leenbed tijdens de levertijd van je bestelling. De korting is geldig op het volledige assortiment boxsprings, matrassen en bedframes.' } },
-    { '@type': 'Question', name: 'Zijn de Bylder vouchers ook geldig voor bestaande bouw en renovatie?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Alle Bylder kortingsvouchers zijn geldig voor zowel nieuwbouwkopers als kopers van bestaande woningen en renovatieprojecten. Met één lidmaatschap van €99 activeer je alle vouchers.' } },
+    { '@type': 'Question', name: 'Zijn de Bylder vouchers ook geldig voor bestaande bouw en renovatie?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Alle Bylder kortingsvouchers zijn geldig voor zowel nieuwbouwkopers als kopers van bestaande woningen en renovatieprojecten. Met één gratis Bylder-account activeer je alle vouchers.' } },
     { '@type': 'Question', name: 'Wat is de gemiddelde besparing via Bylder vouchers?', acceptedAnswer: { '@type': 'Answer', text: 'Bylder-leden besparen gemiddeld €2.549 via kortingsvouchers bij 40+ partnermerken. De grootste besparingen komen van Parketgigant (25% op parket/laminaat), Lampenlicht (20% op verlichting), De Bossche Tapijtschuur (15% op raamdecoratie) en Auping (10% op bedden).' } },
   ],
 }
@@ -108,7 +108,7 @@ function VoucherCard({ v }: { v: Voucher }) {
       <div className="voucher-desc">{v.desc}</div>
       <div className="voucher-footer">
         <span className="voucher-validity">t/m 31 dec 2026</span>
-        <a href="/betalen/" className="voucher-btn">Activeren</a>
+        <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=vouchers-kaart" className="voucher-btn">Activeren</a>
       </div>
     </div>
   )
@@ -184,13 +184,13 @@ export default function VouchersPage() {
         <div className="container">
           <div className="hero-badge"><i className="ph-thin ph-tag"></i> Exclusieve kortingen</div>
           <h1>Bespaar <em>gemiddeld €4.200</em><br />op je inrichting &amp; verbouwing</h1>
-          <p className="hero-sub">Exclusieve kortingsvouchers bij 40+ woonmerken — direct actief na je Bylder lidmaatschap. Eenmalig €99.</p>
-          <a href="/betalen/" className="btn-primary" style={{ margin: '0 auto 40px', display: 'inline-flex' }}>Vouchers activeren voor €99 →</a>
+          <p className="hero-sub">Exclusieve kortingsvouchers bij 40+ woonmerken — direct actief zodra je een gratis Bylder-account hebt.</p>
+          <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=vouchers-hero" className="btn-primary" style={{ margin: '0 auto 40px', display: 'inline-flex' }}>Vouchers activeren — gratis →</a>
           <div className="hero-stats">
             <div><div className="stat-val">€4.200</div><div className="stat-lbl">Gem. besparing per lid</div></div>
             <div><div className="stat-val">40+</div><div className="stat-lbl">Partnermerken</div></div>
             <div><div className="stat-val">12.400+</div><div className="stat-lbl">Actieve leden</div></div>
-            <div><div className="stat-val">€99</div><div className="stat-lbl">Eenmalig lidmaatschap</div></div>
+            <div><div className="stat-val">€0</div><div className="stat-lbl">Gratis voor bewoners</div></div>
           </div>
         </div>
       </section>
@@ -226,7 +226,7 @@ export default function VouchersPage() {
             <h2 className="s-title" style={{ textAlign: 'center', maxWidth: '100%' }}>Vouchers activeren in 3 stappen</h2>
           </div>
           <div className="how-grid">
-            <div className="how-card"><div className="how-num">1</div><div className="how-title">Word Bylder lid</div><div className="how-desc">Betaal eenmalig €99. Geen abonnement, geen automatische verlengingen. Direct toegang tot alle vouchers.</div></div>
+            <div className="how-card"><div className="how-num">1</div><div className="how-title">Maak een gratis account</div><div className="how-desc">Gratis voor bewoners. Geen abonnement, geen creditcard. Direct toegang tot alle vouchers.</div></div>
             <div className="how-card"><div className="how-num">2</div><div className="how-title">Activeer je voucher</div><div className="how-desc">Log in op app.bylder.com, kies het gewenste merk en klik activeren. Je kortingscode arriveert direct per e-mail.</div></div>
             <div className="how-card"><div className="how-num">3</div><div className="how-title">Bespaar direct</div><div className="how-desc">Gebruik de code online of laat hem zien in de winkel. De korting wordt direct verwerkt bij het afrekenen.</div></div>
           </div>
@@ -243,8 +243,8 @@ export default function VouchersPage() {
       <section className="cta-section">
         <div className="container">
           <h2>Activeer alle 40+ vouchers</h2>
-          <p>Eenmalig €99. Direct toegang tot alle kortingsvouchers én de AI-kopersbegeleider.</p>
-          <a href="/betalen/" className="btn-primary">Activeer mijn vouchers →</a>
+          <p>Gratis voor bewoners. Direct toegang tot alle kortingsvouchers én de AI-kopersbegeleider.</p>
+          <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=vouchers-slot" className="btn-primary">Activeer mijn vouchers →</a>
           <div style={{ marginTop: 16, fontSize: 13, color: 'rgba(245,240,232,0.35)', fontFamily: "'Space Mono',monospace" }}><i className="ph-thin ph-star"></i> 4.8/5 · 12.400+ leden · 14 dagen geld-terug garantie</div>
         </div>
       </section>

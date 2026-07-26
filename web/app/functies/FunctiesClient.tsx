@@ -61,7 +61,7 @@ function Card({ icoR, icon, title, tag, children }: { icoR?: boolean; icon: stri
 const FREE_PROBEREN = { cls: 'free', label: 'GRATIS TE PROBEREN' }
 const FREE_STARTEN = { cls: 'free', label: 'GRATIS starten' }
 const FREE = { cls: 'free', label: 'GRATIS' }
-const LID = { cls: 'lid', label: 'LID €99' }
+const LID = { cls: 'lid', label: 'ZAKELIJK' }
 const SOON = { cls: 'soon', label: 'BINNENKORT' }
 
 const InrichtenBody = ({ mid }: { mid: React.ReactNode }) => (
@@ -148,7 +148,7 @@ export default function FunctiesClient() {
           <a href="https://app.bylder.com/registreer" className="btn">Start gratis →</a>
           <a href="/prijzen/" className="btn btn-ghost">Bekijk de prijzen</a>
         </div>
-        <p>Start gratis · onbeperkt vanaf €99 eenmalig · geen abonnement</p>
+        <p>Gratis voor bewoners · geen abonnement · tot tien 3D-impressies per maand</p>
       </div></section>
     </div>
   )

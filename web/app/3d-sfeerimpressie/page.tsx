@@ -53,7 +53,7 @@ const JSONLD_FAQ = {
   mainEntity: [
     { '@type': 'Question', name: 'Wat is een 3D-sfeerimpressie?', acceptedAnswer: { '@type': 'Answer', text: 'Een 3D-sfeerimpressie is een realistische weergave van hoe een ruimte eruit kan zien, gegenereerd uit je plattegrond. Het laat materialen, kleuren en sfeer zien, zodat je je nieuwe woning kunt ervaren vóór de afwerking en inrichting vaststaan.' } },
     { '@type': 'Question', name: 'Hoe maakt Bylder de impressie?', acceptedAnswer: { '@type': 'Answer', text: 'Je uploadt je plattegrond of bouwtekening in je Bylder-dashboard en kiest een van de zes interieurstijlen. De AI genereert binnen enkele minuten een sfeerimpressie van je ruimte in die stijl.' } },
-    { '@type': 'Question', name: 'Is het gratis?', acceptedAnswer: { '@type': 'Answer', text: 'Een account aanmaken en je plattegrond uploaden is gratis. Het genereren van 3D-sfeerimpressies zit in het Bylder-lidmaatschap (eenmalig €99), waarmee je tot tien impressies per maand maakt en kortingen bij 40+ woonmerken activeert.' } },
+    { '@type': 'Question', name: 'Is het gratis?', acceptedAnswer: { '@type': 'Answer', text: 'Een account aanmaken, je plattegrond uploaden en 3D-sfeerimpressies genereren is gratis voor bewoners: je maakt tot tien impressies per maand, plus kortingen bij 40+ woonmerken activeert.' } },
     { '@type': 'Question', name: 'Vervangt dit een interieurontwerper of bouwtekening?', acceptedAnswer: { '@type': 'Answer', text: 'Nee. Een sfeerimpressie is bedoeld om snel te verkennen, keuzes te maken en te communiceren. Voor een definitief ontwerp of een bouwvergunning blijven een interieurontwerper en gecertificeerde tekeningen nodig.' } },
     { '@type': 'Question', name: 'Voor welke woningen werkt het?', acceptedAnswer: { '@type': 'Answer', text: 'Voor nieuwbouw, bestaande bouw én renovatie. De tool is woningtype-bewust, zodat de impressie aansluit op jouw situatie.' } },
   ],
@@ -110,7 +110,7 @@ const GIDSEN = [
 const FAQ = [
   ['Wat is een 3D-sfeerimpressie?', 'Een 3D-sfeerimpressie is een realistische weergave van hoe een ruimte eruit kan zien, gegenereerd uit je plattegrond. Het laat materialen, kleuren en sfeer zien, zodat je je nieuwe woning kunt ervaren vóór de afwerking en inrichting vaststaan.'],
   ['Hoe maakt Bylder de impressie?', 'Je uploadt je plattegrond of bouwtekening in je Bylder-dashboard en kiest een van de zes interieurstijlen. De AI genereert binnen enkele minuten een sfeerimpressie van je ruimte in die stijl.'],
-  ['Is het gratis?', 'Een account aanmaken en je plattegrond uploaden is gratis. Het genereren van 3D-sfeerimpressies zit in het Bylder-lidmaatschap (eenmalig €99), waarmee je tot tien impressies per maand maakt en kortingen bij 40+ woonmerken activeert.'],
+  ['Is het gratis?', 'Een account aanmaken, je plattegrond uploaden en 3D-sfeerimpressies genereren is gratis voor bewoners: je maakt tot tien impressies per maand, plus kortingen bij 40+ woonmerken activeert.'],
   ['Vervangt dit een interieurontwerper of bouwtekening?', 'Nee. Een sfeerimpressie is bedoeld om snel te verkennen, keuzes te maken en te communiceren. Voor een definitief ontwerp of een bouwvergunning blijven een interieurontwerper en gecertificeerde tekeningen nodig.'],
   ['Voor welke woningen werkt het?', 'Voor nieuwbouw, bestaande bouw én renovatie. De tool is woningtype-bewust, zodat de impressie aansluit op jouw situatie.'],
 ]
@@ -208,9 +208,9 @@ export default function SfeerimpressiePage() {
             <div className="highlight"><strong>Voor nieuwbouw, bestaande bouw én renovatie.</strong> De tool is woningtype-bewust: of je nu een nieuwbouwwoning afwerkt of een bestaande woning verbouwt, de impressie sluit aan op jouw situatie.</div>
 
             <div style={{ background: '#3D5A3E', borderRadius: 20, padding: 48, textAlign: 'center', margin: '48px 0' }}>
-              <p style={{ fontSize: 11, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(245,240,232,0.5)', marginBottom: 10 }}>Gratis account · €99 ontgrendelt de tool</p>
+              <p style={{ fontSize: 11, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(245,240,232,0.5)', marginBottom: 10 }}>Gratis voor bewoners · tot tien impressies per maand</p>
               <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#F5F0E8', marginBottom: 12 }}>Zie je nieuwe woning vóór je een euro uitgeeft</h2>
-              <p style={{ color: 'rgba(245,240,232,0.7)', marginBottom: 28, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto', fontSize: 15 }}>Maak gratis een account aan en upload je plattegrond. Met Bylder-lidmaatschap (eenmalig €99) genereer je tot 10 3D-sfeerimpressies per maand in elke stijl — en activeer je kortingen bij 40+ woonmerken.</p>
+              <p style={{ color: 'rgba(245,240,232,0.7)', marginBottom: 28, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto', fontSize: 15 }}>Maak gratis een account aan en upload je plattegrond. Je genereert tot 10 3D-sfeerimpressies per maand in elke stijl — en activeer je kortingen bij 40+ woonmerken.</p>
               <a href="https://app.bylder.com/registreer" className="cta-primary">Start gratis →</a>
             </div>
 
