@@ -240,6 +240,63 @@ function getCityHtml(page: GietvloerPage): string {
 // werkt, maar niets op deze 25.707 pagina's wees ernaartoe (gemeten 27 jul 2026)
 // — vandaar 1 claim op het hele bestand. Staat onderaan, na de inhoud: de koper
 // die vergelijkt heeft er niets aan, de eigenaar die zichzelf opzoekt wel.
+// Lokale marktcijfers per plaats (data/plaats-gemeente.json). Gekoppeld op de
+// mediane positie van de bedrijven in die plaats naar de dichtstbijzijnde
+// gemeentecentroide, zodat Hoofddorp bij Haarlemmermeer uitkomt en niet bij zichzelf.
+type PlaatsCijfers = {
+  gemeente: string; slug: string
+  prijs?: number | null; prijs_vs_nl?: number | null
+  gereed?: number | null; gereed_jaar?: string | null
+  vergund?: number | null; verhuizingen?: number | null
+  doorstroom?: number | null; projecten?: number | null
+}
+let _plaatsen: Record<string, PlaatsCijfers> | null = null
+function plaatsCijfers(citySlug?: string): PlaatsCijfers | null {
+  if (!citySlug) return null
+  if (!_plaatsen) {
+    try {
+      _plaatsen = JSON.parse(fs.readFileSync(
+        path.join(REPO, 'data', 'plaats-gemeente.json'), 'utf8')).plaatsen
+    } catch { _plaatsen = {} }
+  }
+  return _plaatsen![citySlug] ?? null
+}
+
+const nl = (n: number) => n.toLocaleString('nl-NL')
+
+// De markt waarin dit bedrijf werkt. Alleen tonen als er genoeg cijfers zijn om
+// een zin van te maken -- een blok met drie streepjes helpt niemand.
+function marktHtml(city?: string, citySlug?: string): string {
+  const c = plaatsCijfers(citySlug)
+  if (!c || !city) return ''
+  const feiten: string[] = []
+  if (c.gereed != null && c.gereed_jaar) {
+    feiten.push(`kwamen er in ${c.gereed_jaar} <strong>${nl(c.gereed)} nieuwbouwwoningen</strong> gereed`)
+  }
+  if (c.vergund != null && c.vergund > 0) {
+    feiten.push(`zijn er vergunningen verleend voor <strong>${nl(c.vergund)} woningen</strong>`)
+  }
+  if (c.verhuizingen != null) {
+    feiten.push(`verhuisden <strong>${nl(c.verhuizingen)} mensen</strong> binnen de gemeente`)
+  }
+  if (feiten.length < 2) return ''
+  // Nette Nederlandse opsomming: komma's, en 'en' voor het laatste deel.
+  const reeks = feiten.length > 1
+    ? feiten.slice(0, -1).join(', ') + ' en ' + feiten[feiten.length - 1]
+    : feiten[0]
+  const prijs = c.prijs
+    ? ` Een bestaande koopwoning kost er gemiddeld &euro;${nl(Math.round(c.prijs))}.`
+    : ''
+  return '<div class="divider"></div>'
+    + `<h2>De markt rond ${city}</h2>`
+    + `<p>Wie een vakman zoekt, doet dat zelden zonder aanleiding. In de gemeente `
+    + `${c.gemeente} ${reeks}.${prijs} Dat zijn allemaal huishoudens `
+    + `die op enig moment een offerte opvragen.</p>`
+    + `<p style="font-size:14px;"><a href="/wonen-in/${c.slug}/">Alle cijfers over `
+    + `wonen in ${c.gemeente}</a> &#8212; nieuwbouw, koopprijzen en verhuizingen, `
+    + `met bron en jaartal.</p>`
+}
+
 function claimHtml(pageSlug: string, naam: string): string {
   const slug = pageSlug.replace(/^bedrijf\//, '')
   return '<div class="divider"></div>'
@@ -278,8 +335,9 @@ function getBedrijfHtml(page: GietvloerPage): string {
     body = body.replace('{{tiles}}', b.siblings.map(renderTile).join(''))
   }
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
+  const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
-  return body.replace('</main>', `${claim}${DISCLAIMER_HTML}</main>`)
+  return body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`)
 }
 
 const _hubCache: Record<string, string> = {}
