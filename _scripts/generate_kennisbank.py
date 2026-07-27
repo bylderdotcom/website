@@ -253,7 +253,7 @@ def render(a,arts,producten=()):
 {affblok}
 <div class="internal-links"><div class="il-title">Verder lezen &amp; tools</div><div class="il-links">{il_html}</div></div>
 {faqblok}
-<div class="cta-block"><h2>Weet wat een eerlijke prijs is</h2><p>Upload je offerte voor een gratis AI-check, of word lid voor €99 en bespaar gemiddeld €4.200 met kortingen bij 60+ merken.</p><a href="/#scan" class="cta-btn">Start gratis QuickScan →</a></div>
+<div class="cta-block"><h2>Weet wat een eerlijke prijs is</h2><p>Upload je offerte voor een gratis AI-check, of maak een gratis account en bespaar gemiddeld €4.200 met kortingen bij 60+ merken.</p><a href="/#scan" class="cta-btn">Start gratis QuickScan →</a></div>
 </article>
 </div></main>{FOOTER}
 </body></html>
