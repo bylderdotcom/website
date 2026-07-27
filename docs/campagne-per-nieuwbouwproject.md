@@ -1,12 +1,205 @@
 # Campagnedraaiboek per nieuwbouwproject
 
-Status: plan, klaar voor uitvoering vanaf **september 2026**.
-Eigenaar: Daniel. Laatst bijgewerkt: 25 juli 2026.
+Status: **de hele keten bestaat al in onderdelen.** Blokkades: adressen voor
+het vakbedrijven-segment en de landingspagina. Zie §0-ter voor de meting en
+§0-quinquies voor de bouwvolgorde.
+Eigenaar: Daniel. Laatst bijgewerkt: 27 juli 2026.
 
 Doel: per nieuwbouwproject twee kanten tegelijk aanzetten — de **B2B-kant**
 (vakbedrijven en adviseurs die €79 lokaal betalen om aanbevolen te worden) en de
 **consumentenkant** (kopers/bewoners die zich registreren, met de gratis Kluskist
 als opvallende hook). Plus een **doorverwijs-kant** (makelaars en verhuizers).
+
+---
+
+## 0-bis. De stelling: een oplevering is een gesynchroniseerd vraagmoment
+
+Waarom dit per project gaat en niet landelijk: bij een oplevering komen honderden
+huishoudens op hetzelfde moment, op dezelfde plek, in dezelfde fase. Ze zoeken
+allemaal binnen een paar maanden een stukadoor, een vloer, een schutting, een bed.
+
+Landelijk uitgesmeerd is dat dunne vraag waar geen aanbieder op afkomt. Per project
+geconcentreerd is het een markt. Daarom moeten beide kanten op hetzélfde moment
+aangezet worden: de bedrijven vlak vóór de oplevering, de bewoners eromheen. Dat is
+niet twee campagnes naast elkaar — het is één beweging met twee kanten, en de
+opleverdatum is de klok. Zo komen alle soorten gebruikers op het juiste moment in
+het platform bij elkaar.
+
+---
+
+## 0-ter. De trechter, en wat er per schakel al staat
+
+Gemeten 27 juli 2026. De volledige keten bestaat al in onderdelen. Het werk is niet
+bouwen maar **verbinden en locatie-gestuurd maken**.
+
+| # | Stap | Wat er is | Staat |
+|---|---|---|---|
+| 1 | Maps-scrape: relevante bedrijven per locatie | `scripts/vakbedrijven_pipeline.py`, 25.707 bedrijven | ✅ |
+| 2 | Openbare e-mailadressen zoeken | `scripts/winkels_mvp.py scrape-emails` | ⚠️ bestaat, nooit op vakbedrijven gezet |
+| 3 | Gepersonaliseerde mail namens Daniel | `/admin/outreach` + `src/lib/gmail.ts` | ✅ |
+| 4 | Overzicht nieuwbouwprojecten in de mail | vakbedrijf-route koppelt al aan `nieuwbouwprojecten` | ⚠️ op plaatsnaam, niet op radius |
+| 5 | Landingspagina met de voordelen | `/voor-vakbedrijven/` | ⚠️ 595 woorden, geen €995, geen claim-flow |
+| 6 | Account activeren | `app.bylder.com/registreer` | ✅ |
+| 7 | Betalen | Pay.nl | ✅ |
+
+### De verzendmachine — niet opnieuw bouwen
+
+In `~/Documents/GitHub/app`:
+
+- `src/lib/gmail.ts` verstuurt via de Gmail API, dus de mail komt persoonlijk van
+  `daniel@bylder.com` en niet van een mailplatform. Dat is wat het onderscheidt van
+  bulk, technisch en in de beleving van de ontvanger.
+- `src/lib/outreach.ts` stelt onderwerp en proza per ontvanger samen. Er zit al
+  **moment-logica** in: `CATEGORY_MOMENT` mapt een categorie op de fase waarin de
+  koper zit ("hun keuken samenstellen", "hun tuin aanleggen"). Dat is het principe
+  van §0-bis, al in code.
+- De vakbedrijf-route haalt de drie grootste projecten in de plaats erbij als
+  aanleiding.
+- `outreach_sent_at` en `status` voorkomen dubbele verzending.
+- De admin bewerkt onderwerp en tekst; de CTA-knoppen komen server-side, zodat de
+  activatielink altijd klopt.
+
+### Adresdekking in de database
+
+| Tabel | Records | Met e-mail | Gemaild |
+|---|---|---|---|
+| `outreach_winkels` | 77 | 77 (100%) | 58 |
+| `brands` | 522 | 363 (70%) | — |
+| `vakbedrijven` | 25.707 | **42 (0,16%)** | 0 |
+| `nieuwbouwprojecten` | 18 | — | — |
+
+Winkels hebben 100% dekking omdat `winkels_mvp.py` een `scrape-emails`-commando
+heeft dat elke site bezoekt en het adres uit mailto-links en contactpagina's haalt,
+met een junk-filter en voorkeur voor rolgebaseerde adressen (`info@`, `contact@`,
+`verkoop@`). `vakbedrijven_pipeline.py` pakt `email` uitsluitend uit OSM-tags —
+vandaar 42 op 25.707.
+
+**21.317 van de 25.707 vakbedrijven hebben een website.** Dat is de voorraad waar
+de adressen uit moeten komen, met een scraper die al bewezen is op een ander
+segment.
+
+---
+
+## 0-quater. Eén wetswijziging die het telefoonspoor sluit
+
+Per **1 juli 2026** geldt de opt-in-eis voor telemarketing ook voor kleine
+ondernemers. De ACM: *"Consumenten en kleine ondernemers (zzp'ers en vof's) krijgen
+vanaf 1 juli meer bescherming tegen ongewenste telemarketing."* Alleen goede doelen,
+goededoelenloterijen en uitgevers van dag- en weekbladen zijn uitgezonderd; zelfs
+bestaande klanten mogen niet meer ongevraagd gebeld worden.
+
+Het oude compliance-onderzoek wees telefoon aan als legale eerste touch. Dat advies
+is vervallen voor zzp'ers en vof's, en dat is het grootste deel van dit bestand.
+**Geen telefoon in deze flow.** Voor bv's en nv's is de positie mogelijk anders,
+maar dat staat niet als uitzondering in de ACM-publicatie en `vakbedrijven` heeft
+geen rechtsvormveld — niet op te lossen zonder KvK-verrijking én een juridische
+toets. Buiten scope.
+
+---
+
+## 0-quinquies. Wat te bouwen, in volgorde
+
+Doel: jij kiest een locatie, ziet alle zakelijke deelnemers in de omgeving
+gegroepeerd per type, controleert de batch, verstuurt met één goedkeuring, en zet
+daarna de Instagram-advertentie op dezelfde locatie aan.
+
+### 1. Adressen — blokkeert al het andere
+
+Port de scraper uit `winkels_mvp.py` naar de vakbedrijven-pipeline. Zelfde
+junk-filter, zelfde voorkeursorde, zelfde beleefde tempo.
+
+Bouw hem **locatie-eerst, niet landelijk**: scrape alleen de bedrijven binnen de
+radius van het eerstvolgende project. Dan heb je binnen een dag een werkbare batch
+in plaats van na een week 21.317 sites.
+
+Meet de hitrate op de eerste 200 sites voordat je doorgaat. Bij winkels was die
+hoog, maar dat was een kleine gecureerde set; bij Places-data uit heel Nederland is
+dat een aanname.
+
+### 2. Radiusselectie op projectanker
+
+De routes matchen op exacte plaatsnaam (`.eq('plaats', plaatsKey)`). Dat mist
+iedereen in de omliggende gemeenten, terwijl juist die binnen 15 km zitten.
+
+Alle 25.707 records hebben `lat`/`lng`, dus een radiusquery kan direct. Neem het
+project als anker, niet de plaats: `nieuwbouwprojecten` heeft coördinaten en
+opleverdatum. Eén invoer — het project — bepaalt dan zowel wie je mailt als de
+aanleiding in de tekst.
+
+### 3. Eén scherm voor alle deelnemerstypen
+
+Nu drie losse clients. Vervang door één locatie-eerst-scherm:
+
+1. Kies een project (of plaats + radius).
+2. Zie de deelnemers gegroepeerd per type: vakbedrijven per vak, winkels, merken,
+   en de segmenten uit `/deelnemer-worden/` die nog geen tabel hebben.
+3. Per groep: aantal, hoeveel met adres, hoeveel al gemaild.
+4. Bekijk en bewerk de voorgestelde tekst per type.
+5. Eén goedkeuring verstuurt de batch.
+
+De drie bestaande routes blijven eronder werken; het nieuwe scherm orkestreert ze.
+
+### 4. De aanleiding uit het project, niet uit een verzonnen cijfer
+
+`outreach.ts` leunt op `gsc_impressions` als tractiebewijs. Voor vakbedrijven staat
+dat veld **op nul voor alle 25.707 records** — de GSC-sync heeft nooit gelopen.
+Gebruik "jullie pagina werd X keer getoond" dus niet zolang dat niet waar is.
+
+Wat wél waar en verifieerbaar is: het project. Naam, aantal woningen, opleverdatum,
+afstand tot het bedrijf. Een concrete aanleiding die geen enkele concurrent-mail
+heeft, en per definitie relevant voor een bedrijf op 8 km van 240 nieuwe woningen.
+
+Maak de GSC-sync alsnog af — niet om te kunnen mailen, maar om te weten of de
+pull-kant bereik heeft. Losstaand nuttig.
+
+### 5. De landingspagina repareren — de zwakste schakel
+
+`/voor-vakbedrijven/` is 595 woorden, noemt €79 veertien keer en €995 geen enkele
+keer, en heeft één generieke registreerlink. De acht segmentpagina's onder
+`/deelnemer-worden/` zijn op 27 juli naar ~1.000 woorden met zeven h2's gebracht;
+deze pagina is achtergebleven.
+
+Twee dingen moeten erin voordat er één mail uitgaat:
+
+- **De landelijke tier.** €995 staat er niet, terwijl dat de hoogste
+  opbrengst per deal is.
+- **Claim-je-profiel in plaats van registreer.** Als de mail zegt "jullie profiel
+  staat er al", moet de link naar dát profiel gaan met een claim-actie, niet naar
+  een leeg registratieformulier. Dat is het verschil tussen "wat moet ik hier" en
+  "dit is mijn bedrijf".
+
+Zonder deze stap stuurt de campagne verkeer naar een pagina die niet afmaakt.
+
+### 6. Instagram parallel, zelfde anker
+
+Zelfde locatie, andere doelgroep: geadverteerd op de postcodes rond het project, op
+bewoners in plaats van bedrijven. Eén post over de gratis Kluskist; het raambord
+doet daarna het werk in de wijk.
+
+Dit spoor raakt de juridische afweging van §0 niet — advertenties zijn geen
+ongevraagde communicatie — en kan dus vooruit terwijl stap 1 loopt.
+
+### Kritieke pad
+
+Stap 1 en 5 blokkeren de verzending: zonder adressen geen batch, zonder werkende
+landing geen conversie. Stap 6 kan parallel. Stap 2 en 3 maken het herhaalbaar per
+project. Stap 4 maakt de tekst waar.
+
+---
+
+## 0-sexies. De grenzen die in de machine horen, niet in goede bedoelingen
+
+De zeven waarborgen uit §0 blijven ongewijzigd gelden: één doel per mail, lage
+volumes, harde afmeldlink met permanente registratie, volledige
+afzenderidentificatie, geen misleidende onderwerpregels, een logboek per bericht, en
+verzenden altijd na een menselijke goedkeuring.
+
+Eén punt blijft juridisch open en is bewust jouw afweging: een gescrapet
+`info@`-adres is bekendgemaakt voor klantvragen, en art. 11.7 lid 3 Tw eist gebruik
+*overeenkomstig dat doel*. Je hebt eerder gemaild en dat werkte; die ervaring is de
+onderbouwing van je keuze en staat hier vastgelegd. De waarborgen hierboven zijn wat
+het onderscheid maakt met bulk — daarom moeten ze in de code zitten, niet in de
+intentie.
 
 ---
 
@@ -121,7 +314,7 @@ vraag. Nederlands, u-vorm bij bedrijven.
 
 ---
 
-## 3. De mailflow — 20 per dag
+## 3. De mailflow — 20 per dag  (achtergrond; uitvoering in §0-quinquies)
 
 **Bericht 1 — geef eerst iets, vraag daarna.**
 
@@ -266,32 +459,17 @@ Leidschendam oplevert, gaat het blok mee in die pagina.
 
 ## 7. Volgorde van uitvoering
 
-**Augustus (voorbereiding)**
-1. Scrape-uitbreiding: woon-/interieurwinkels, hypotheek- en financieel
-   adviseurs, makelaars, verhuisbedrijven — per gemeente, met bron en datum.
-2. Claim-flow bouwen met de brede toestemmingsvraag + permanente
-   afmeldadministratie.
-3. Mailtemplates per segment, met de argumenten uit §2.
-4. Batch-generator: 20 per dag, gepersonaliseerd, klaar voor één goedkeuring.
-5. Logboek per verzonden bericht.
-
-**September (start)**
-6. Eerste project in de prioriteitsregio kiezen uit de discovery-loop.
-7. Projectpagina bouwen (mét Auping-blok).
-8. B2B-flow starten: 20/dag, beginnend bij de bedrijven binnen 15 km.
-9. Instagram-campagne op de host-vraag.
-10. Makelaars en verhuizers in dezelfde regio benaderen.
-
-**Doorlopend**
-11. Wekelijkse discovery-loop levert nieuwe projecten (vrijdag 07:00).
-12. Vers-heid-loop meldt verouderde projectfeiten (vrijdag 06:00).
-13. Meten per project: registraties, claims, conversie naar €79.
+Vervangen door §0-quinquies, die uitgaat van wat er op 27 juli werkelijk staat.
 
 ---
 
 ## 8. Wat we niet doen
 
 - Geen fysieke post als hoofdkanaal (te duur bij dit volume).
+- Geen telefoon: sinds 1 juli 2026 opt-in vereist bij zzp'ers en vof's (§0-quater).
+- Geen tractiecijfers in de tekst zolang `gsc_impressions` op nul staat.
+- Geen mail versturen voordat de landingspagina de landelijke tier en een
+  claim-flow heeft (§0-quinquies stap 5).
 - Geen derde mail naar wie nooit reageerde.
 - Geen aankoop van verhuisdata bij databrokers.
 - Geen onbeheerd verzenden: elke batch krijgt een menselijke goedkeuring.
