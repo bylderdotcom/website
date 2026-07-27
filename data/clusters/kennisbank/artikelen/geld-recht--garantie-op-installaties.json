@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "garantie-op-installaties",
+  "titel": "Garantie op installaties: cv, warmtepomp en zonnepanelen",
+  "title_tag": "Garantie op installaties: zo zit het | Bylder",
+  "meta_description": "Fabrieksgarantie vs installatiegarantie op cv, warmtepomp en zonnepanelen. Plus: onderhoudsplicht en wat er geldt als de installateur failliet gaat.",
+  "intro": [
+    "Garantie op installaties bestaat uit twee lagen: de fabrieksgarantie van de producent op het apparaat zelf, en de installatiegarantie van de installateur op de montage en werking van het geheel. Bij een cv-ketel, warmtepomp of zonnepanelensysteem heb je met beide te maken — en ze dekken verschillende dingen.",
+    "Daarnaast heb je als consument altijd je wettelijke rechten: een product en een geleverd werk moeten deugdelijk zijn, los van wat er aan garantie op papier staat. Garantievoorwaarden kunnen je rechten aanvullen, maar nooit wettelijke bescherming afnemen."
+  ],
+  "stats": [
+    ["2", "lagen garantie: fabriek én installateur"],
+    ["10-25 jaar", "gangbare fabrieksgaranties op zonnepanelen (product/vermogen)"],
+    ["1x per jaar", "onderhoud is bij veel garanties een voorwaarde"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen fabrieks- en installatiegarantie?",
+      "html": "<p>De <strong>fabrieksgarantie</strong> dekt gebreken aan het product zelf: een lekkende warmtewisselaar, een defecte omvormer, een paneel dat te snel degradeert. De duur verschilt sterk per merk en onderdeel — van enkele jaren op een cv-ketel tot tien jaar of meer op warmtepompen (soms tegen bijbetaling verlengd) en lange product- en vermogensgaranties op zonnepanelen.</p><p>De <strong>installatiegarantie</strong> dekt het werk van de installateur: aansluitingen, leidingwerk, inregeling, dakdoorvoeren, montage. Een verkeerd ingeregelde warmtepomp of een lekkende dakdoorvoer valt onder de installateur, niet onder de fabriek. Bij problemen is je eerste aanspreekpunt vrijwel altijd de installateur die het geheel heeft geleverd en gemonteerd.</p>"
+    },
+    {
+      "kop": "Welke garantievoorwaarden moet je checken?",
+      "html": "<ul><li><strong>Duur per onderdeel:</strong> op een warmtepomp geldt soms een andere termijn voor de compressor dan voor de rest; bij zonnepanelen verschillen productgarantie, vermogensgarantie en omvormergarantie.</li><li><strong>Registratie:</strong> sommige fabrieksgaranties gelden alleen na registratie van het product, soms binnen een bepaalde termijn na installatie.</li><li><strong>Erkende installatie:</strong> fabrieksgarantie vereist vaak montage door een erkend of gecertificeerd installateur.</li><li><strong>Wat wordt vergoed:</strong> alleen onderdelen, of ook arbeidsloon en voorrijkosten? Juist die laatste twee maken een reparatie duur.</li></ul><p>Vraag de garantievoorwaarden vóór de opdracht op en bewaar facturen, opleverdocumenten en registratiebewijzen bij elkaar.</p>"
+    },
+    {
+      "kop": "Hoe zit het met de onderhoudsplicht?",
+      "html": "<p>Veel garanties stellen <strong>periodiek onderhoud door een erkend bedrijf</strong> als voorwaarde — bij cv-ketels en warmtepompen is jaarlijks of tweejaarlijks onderhoud gebruikelijk. Sla je dat over, dan kan de fabrikant of installateur een garantieclaim afwijzen, zeker als het gebrek met gebrekkig onderhoud samenhangt.</p><p>Praktisch: sluit een onderhoudscontract af of plan het onderhoud zelf in, en bewaar de onderhoudsrapporten. Die rapporten zijn bij een claim je bewijs dat jij aan je verplichtingen hebt voldaan — en ze signaleren problemen vaak voordat ze schade veroorzaken.</p>"
+    },
+    {
+      "kop": "Wat gebeurt er met je garantie als de installateur failliet gaat?",
+      "html": "<p>De <strong>installatiegarantie</strong> is een verplichting van het bedrijf zelf: gaat dat failliet, dan is die garantie in de praktijk meestal weinig meer waard. Je kunt je vordering indienen bij de curator, maar reken daar niet op. De <strong>fabrieksgarantie</strong> blijft wél bestaan — die loopt via de fabrikant of importeur, en een ander erkend bedrijf kan de afhandeling doen (al betaal je dan mogelijk arbeidsloon).</p><p>Je kunt dit risico vooraf beperken: kies een installateur die is aangesloten bij een branchevereniging met een garantiefonds of geschillenregeling, en check of de fabrikant een omgeleide garantieafhandeling kent. Bij nieuwbouw met waarborgcertificaat vallen installaties die de bouwer leverde bovendien onder de garantieregeling van Woningborg of SWK.</p>"
+    },
+    {
+      "kop": "Wat doe je als een garantieclaim wordt afgewezen?",
+      "html": "<p>Vraag altijd een schriftelijke motivering. Toets die aan de garantievoorwaarden én aan je wettelijke rechten: ook buiten de garantietermijn kan een product of installatie non-conform zijn als hij niet de levensduur haalt die je redelijkerwijs mocht verwachten. Leg je klacht schriftelijk vast, stel een redelijke hersteltermijn en escaleer zo nodig naar de geschillencommissie waarbij de installateur is aangesloten. Dit artikel is voorlichting, geen juridisch advies; bij grote bedragen loont een jurist of je rechtsbijstandverzekering.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wie bel ik bij een storing: de fabrikant of de installateur?",
+      "a": "In beginsel de installateur die het systeem heeft geleverd en gemonteerd: hij is je contractspartij en beoordeelt of het een montage- of productprobleem is. Bij een productdefect handelt hij de fabrieksgarantie meestal voor je af."
+    },
+    {
+      "q": "Vervalt mijn garantie als een ander bedrijf onderhoud doet?",
+      "a": "Meestal niet, zolang het onderhoud door een erkend bedrijf volgens de voorschriften gebeurt en je dat kunt aantonen. Eisen dat uitsluitend het eigen bedrijf mag onderhouden op straffe van garantieverlies is richting consumenten al snel een onredelijk beding — check je voorwaarden en vraag bij twijfel advies."
+    },
+    {
+      "q": "Wat is een vermogensgarantie bij zonnepanelen?",
+      "a": "De fabrikant garandeert dat de panelen na een bepaald aantal jaren nog een minimumpercentage van hun oorspronkelijke vermogen leveren, vaak volgens een aflopende staffel over 25 jaar of langer. Dat staat los van de productgarantie op materiaal- en fabricagefouten, die korter is."
+    },
+    {
+      "q": "Valt de installatie in mijn nieuwbouwwoning onder Woningborg of SWK?",
+      "a": "Installaties die door de bouwer zijn geleverd en aangebracht vallen onder de garantieregeling, met eigen (vaak kortere) termijnen per onderdeel. Heb je een installatie zelf laten plaatsen door een derde, dan val je terug op de garantie van die installateur en de fabrikant."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["woningborg-swk", "verborgen-gebreken", "geschil-met-aannemer"]
+  }
+}

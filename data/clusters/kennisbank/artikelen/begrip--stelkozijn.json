@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "stelkozijn",
+  "titel": "Stelkozijn",
+  "title_tag": "Wat is een stelkozijn? Betekenis + uitleg | Bylder",
+  "meta_description": "Een stelkozijn is een hulpkozijn dat tijdens de ruwbouw wordt ingemetseld, waarin later het definitieve kozijn wordt gemonteerd. Lees waarom dat handig is.",
+  "intro": [
+    "Een stelkozijn is een hulpkozijn van hout, kunststof of plaatmateriaal dat tijdens de ruwbouw in de muuropening wordt geplaatst en meegemetseld. Het definitieve raam- of deurkozijn wordt er later, in de afbouwfase, in of tegen gemonteerd.",
+    "Het voordeel: het kwetsbare en dure definitieve kozijn staat niet maandenlang in weer, wind en bouwverkeer, en de maatvoering van de opening ligt strak vast. Voor verbouwers is het stelkozijn ook relevant bij binnendeuren: een stelkozijn in een metalstud- of gemetselde wand bepaalt de latere deurmaat."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waarom werken bouwers met stelkozijnen?",
+      "html": "<p>Metselwerk en stelwerk luisteren nauw: een kozijn dat scheef of op de verkeerde maat is ingemetseld, is nauwelijks te corrigeren. Met een stelkozijn wordt de opening maatvast en haaks voorbereid, terwijl het definitieve kozijn — vaak aluminium, kunststof of afgelakt hout — pas komt als het dak erop zit en het grove werk klaar is. Dat beperkt beschadigingen en maakt latere vervanging van kozijnen eenvoudiger. Aandachtspunt is de aansluiting: de naad tussen stelkozijn, definitief kozijn en muur moet luchtdicht worden afgewerkt met folie, compriband of kit, anders ontstaat daar een verborgen tocht- en vochtlek dat je bij oplevering niet ziet.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een stelkozijn verplicht?",
+      "a": "Nee, het is een uitvoeringskeuze. Kozijnen kunnen ook direct worden meegemetseld of achteraf gemonteerd met ankers. Bij prefab bouwmethodes en kunststof of aluminium kozijnen is werken met stelkozijnen wel de gangbare praktijk."
+    },
+    {
+      "q": "Bepaalt het stelkozijn mijn deur- of raammaat?",
+      "a": "Ja: het stelkozijn legt de dagmaat van de opening vast. Wil je een bredere deur of ander kozijntype, dan moet dat besluit vallen vóór de ruwbouw — daarna betekent het hak- en breekwerk."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["dagmaat", "sparing", "opdekdeur"]
+  }
+}

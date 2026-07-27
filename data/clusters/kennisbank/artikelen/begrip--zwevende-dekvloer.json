@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "zwevende-dekvloer",
+  "titel": "Zwevende dekvloer",
+  "title_tag": "Wat is een zwevende dekvloer? Uitleg | Bylder",
+  "meta_description": "Een zwevende dekvloer ligt los van constructievloer en wanden op een isolatielaag, voor minder contactgeluid en warmteverlies. Lees hoe het werkt.",
+  "intro": [
+    "Een zwevende dekvloer is een dekvloer die volledig los ligt van de constructievloer en de wanden: hij rust op een laag isolatiemateriaal en is langs alle randen met randstroken (kimband) gescheiden van de muren. Er is dus nergens hard contact tussen dekvloer en constructie.",
+    "Het doel is tweeledig: contactgeluid — loopgeluid naar de buren of de verdieping eronder — wordt sterk gedempt, en bij vloerverwarming gaat de warmte omhoog de kamer in in plaats van weg in de betonvloer. In appartementen is een zwevende afwerkvloer vaak zelfs verplicht via het reglement van de VvE."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar gaat het in de praktijk mis?",
+      "html": "<p>Een zwevende vloer werkt alleen als hij écht nergens contact maakt. De klassieke fouten: randstroken die te vroeg zijn afgesneden waarna de plint of tegelvoeg de vloer alsnog aan de wand koppelt, leidingdoorvoeren zonder flexibele omhulling, en mortelresten die onder de isolatie een geluidsbrug vormen. Eén hard contactpunt kan de geluidsisolatie grotendeels tenietdoen. Let bij de uitvoering ook op de dikte: een zwevende dekvloer moet iets dikker zijn dan een hechtende (vaak minimaal zo'n 5 tot 7 cm, met wapeningsnet of vezels) omdat hij vrijdragend op de isolatie ligt. Snij randstroken pas af ná het leggen van de vloerafwerking en werk de plint met een kiertje of kitvoeg af.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een zwevende dekvloer verplicht in een appartement?",
+      "a": "Veel splitsingsaktes en huishoudelijke reglementen eisen een minimale contactgeluidsisolatie bij harde vloerafwerking; een zwevende dekvloer of ondervloer is dan de gangbare manier om daaraan te voldoen. Check het VvE-reglement vóór je een vloer legt."
+    },
+    {
+      "q": "Kan vloerverwarming in een zwevende dekvloer?",
+      "a": "Ja, dat is zelfs de standaardcombinatie in nieuwbouw: isolatie onderop, daarop de vloerverwarmingsleidingen, en daaroverheen de dekvloer. De isolatielaag zorgt dat de warmte vrijwel volledig naar boven gaat."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["dekvloer", "kimband", "afschot"]
+  }
+}

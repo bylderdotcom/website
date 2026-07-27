@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "dragende-muur-herkennen",
+  "titel": "Hoe herken je een dragende muur en wanneer heb je een constructeur nodig?",
+  "title_tag": "Dragende muur herkennen: zo check je het | Bylder",
+  "meta_description": "Een dragende muur herken je aan dikte, klank en positie. Lees hoe je het checkt, wanneer een constructeur verplicht is en wat een doorbraak kost.",
+  "intro": [
+    "Een dragende muur herken je aan drie signalen: hij is dik (meestal 10 cm steen of meer), klinkt massief als je erop klopt, en er rusten vloerbalken, een verdieping of het dak op. Niet-dragende scheidingswanden zijn dunner (7 cm of minder), klinken hol en kun je in principe verwijderen zonder constructieve gevolgen.",
+    "Voor verbouwers is dit dé vraag vóór elke doorbraak: een dragende muur weghalen zonder berekening en juiste balk kan tot scheuren, doorbuigende vloeren en in het ergste geval instorting leiden. Zelf herkennen is een goede eerste check — maar nooit het definitieve antwoord."
+  ],
+  "stats": [
+    ["≥ 10 cm", "steenachtige muurdikte wijst meestal op dragend"],
+    ["€500-€1.500", "kosten constructeur met berekening en tekening"],
+    ["€2.500-€7.500", "indicatie doorbraak dragende muur incl. balk"]
+  ],
+  "secties": [
+    {
+      "kop": "Aan welke kenmerken herken je een dragende muur?",
+      "html": "<ul><li><strong>Dikte:</strong> meet bij een deuropening. Steenachtige muren vanaf circa 10 cm (plus stucwerk) zijn vrijwel altijd dragend; wandjes van 7 cm gips- of gasbeton meestal niet.</li><li><strong>Klank:</strong> kloppen op kalkzandsteen of beton klinkt dof en massief; gipsblokken en metal-stud wanden klinken hol. Let op: ook niet-dragende muren kunnen van steen zijn.</li><li><strong>Positie:</strong> muren waar vloerbalken of kanaalplaten op rusten (haaks op de vloeroverspanning), muren die op elke verdieping op dezelfde plek terugkomen, en bouwmuren tussen woningen zijn dragend.</li><li><strong>Fundering:</strong> dragende muren staan door op de fundering; op een plattegrond van de begane grond zie je ze terug in het funderingsplan.</li></ul><p>De enige zekere bron zijn de <strong>constructietekeningen</strong>: bij nieuwbouw in je (oplever)dossier, bij bestaande bouw op te vragen in het bouwarchief van de gemeente.</p>"
+    },
+    {
+      "kop": "Wanneer heb je een constructeur nodig?",
+      "html": "<p>Altijd zodra je een dragende muur (deels) wilt verwijderen, een opening wilt vergroten of een nieuwe opening wilt maken — ook voor 'maar een deurtje'. De constructeur berekent de belasting, bepaalt de benodigde balk (staalprofiel of beton), de oplegpunten en de tijdelijke ondersteuning (stempels) tijdens het werk. Kosten: indicatief €500 tot €1.500 voor berekening en tekening.</p><p>Ook verstandig bij twijfelgevallen: stabiliteitswanden zien er soms uit als gewone binnenwanden maar houden de woning in verband tegen windbelasting. Juist bij nieuwere woningen (kalkzandsteen casco's) komt dit veel voor — dik of dun zegt daar niet alles.</p>"
+    },
+    {
+      "kop": "Heb je een vergunning nodig voor een doorbraak?",
+      "html": "<p>Voor een interne constructieve wijziging is meestal geen omgevingsvergunning nodig, zolang de draagconstructie niet wijzigt op een manier die vergunningplichtig is en het geen monument betreft — maar dit luistert nauw en verschilt per situatie. Check het via het Omgevingsloket of onze <a href=\"/bouwvergunning/\">bouwvergunning-check</a>. Woon je in een appartement, dan heb je vrijwel altijd óók toestemming van de VvE nodig voor het wijzigen van (gemeenschappelijke) dragende constructies.</p><p>Bewaar berekening en tekening: bij verkoop of schade vraagt de verzekeraar of koper ernaar.</p>"
+    },
+    {
+      "kop": "Wat kost een doorbraak van een dragende muur?",
+      "html": "<p>Indicatieve marktranges voor een doorbraak inclusief stalen balk, stempelen, breken, afvoer en herstel (exclusief afwerking als stucwerk en vloer):</p><table class=\"vgl\"><thead><tr><th>Situatie</th><th>Indicatie</th></tr></thead><tbody><tr><td>Opening ±1 m (deur) in dragende binnenmuur</td><td>€1.500-€3.000</td></tr><tr><td>Doorbraak 2-3 m (kamer en suite, keuken)</td><td>€2.500-€5.500</td></tr><tr><td>Grote overspanning 4-6 m (open leefruimte)</td><td>€5.000-€10.000+</td></tr></tbody></table><p>De prijs hangt sterk af van de belasting (hoeveel verdiepingen erboven), bereikbaarheid en of leidingen omgelegd moeten worden. Vraag minimaal twee offertes op en let op wat wél en niet is inbegrepen — juist bij doorbraken verschillen aannemers fors in wat ze onder 'herstel' verstaan. De <a href=\"/ai-offerte-check-aannemer/\">AI offerte-check</a> zet de posten voor je naast marktprijzen.</p>"
+    },
+    {
+      "kop": "Welke signalen wijzen op een fout uitgevoerde doorbraak?",
+      "html": "<p>Bij een eerder verbouwde woning (bijvoorbeeld bij aankoop) letten op:</p><ul><li>Scheuren boven de opening of schuin weglopend vanuit de hoeken;</li><li>Doorbuigende vloer of klemmende deuren op de verdieping erboven;</li><li>Een houten balk waar gezien de overspanning staal logisch was;</li><li>Geen papierwerk: vraag altijd naar de constructieberekening van eerdere doorbraken.</li></ul><p>Zie ook <a href=\"/kennisbank/bouwtechniek/scheuren-in-muren/\">scheuren in muren</a> voor het verschil tussen onschuldige krimpscheuren en constructieve scheuren.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik met kloppen zeker weten of een muur dragend is?",
+      "a": "Nee. Kloppen sluit alleen holle, lichte wanden uit. Een massieve klank bewijst niet dat de muur draagt, en stabiliteitswanden herken je er al helemaal niet mee. Alleen constructietekeningen of een constructeur geven zekerheid."
+    },
+    {
+      "q": "Mag een aannemer zonder constructeur een dragende muur doorbreken?",
+      "a": "Een goede aannemer doet dat niet: hij wil een berekening als basis voor balkkeuze en stempeling, en jij wilt die voor verzekering en verkoop. Biedt een aannemer aan het 'op ervaring' te doen, zie dat als een rode vlag."
+    },
+    {
+      "q": "Is de muur tussen woonkamer en keuken meestal dragend?",
+      "a": "In rijwoningen van vóór circa 1990 vaak wel: de tussenmuur draagt de verdiepingsvloer. In nieuwere woningen met brede overspanningen (kanaalplaatvloeren van gevel tot bouwmuur) zijn binnenwanden vaker niet-dragend. Het verschilt dus echt per woning."
+    },
+    {
+      "q": "Hoe lang duurt een doorbraak?",
+      "a": "Het sloop- en balkwerk zelf duurt meestal 2 tot 5 werkdagen, inclusief stempelen en herstel. Reken met voorbereiding (constructeur, eventueel vergunning, offertes) op een doorlooptijd van 6 tot 12 weken van plan tot resultaat."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["scheuren-in-muren", "index", "begrip:casco"]
+  }
+}

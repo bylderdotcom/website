@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "fundering-typen",
+  "titel": "Welke funderingstypen zijn er en wanneer wordt wat gebruikt?",
+  "title_tag": "Funderingstypen: heipalen of op staal? | Bylder",
+  "meta_description": "Heipalen of fundering op staal? Ontdek welk funderingstype wanneer wordt gebruikt, wat een sondering doet en hoe je funderingsproblemen herkent.",
+  "intro": [
+    "Er zijn twee hoofdtypen fundering: een paalfundering (heipalen of boorpalen die de woning op een diepe, draagkrachtige zandlaag zetten) en een fundering op staal (een brede betonstrook die het gewicht direct op ondiepe, stevige grond afdraagt). Welk type nodig is, bepaalt de bodem — niet de aannemer of jouw voorkeur.",
+    "Voor kopers is de fundering het minst zichtbare maar meest kritische deel van de woning. Funderingsproblemen zijn de duurste gebreken die een huis kan hebben, en bij bestaande bouw een belangrijk aandachtspunt bij de aankoop. Goed om te weten wat er onder je vloer zit."
+  ],
+  "stats": [
+    ["10-25 m", "gangbare heipaallengte in West-Nederland"],
+    ["€50.000+", "kosten volledig funderingsherstel bestaande woning"],
+    ["±1 sondering", "per 300-600 m² bouwgrond als bodemonderzoek"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen heipalen en fundering op staal?",
+      "html": "<p>Bij een paalfundering worden betonnen palen de grond in geheid of geboord tot ze op een draagkrachtige zandlaag staan. Daarop komt een betonnen funderingsbalk of -plaat waarop de woning rust. Bij een fundering op staal (er komt geen staal aan te pas — 'staal' is een oud woord voor de ondergrond) wordt een brede betonstrook direct op stevige grond gestort, meestal 60 tot 100 cm onder maaiveld, vorstvrij.</p><table class=\"vgl\"><thead><tr><th>Aspect</th><th>Paalfundering</th><th>Op staal</th></tr></thead><tbody><tr><td>Wanneer</td><td>Slappe klei- of veengrond</td><td>Draagkrachtig zand dicht onder maaiveld</td></tr><tr><td>Waar in NL</td><td>West- en Noord-Nederland, rivierengebied</td><td>Oost- en Zuid-Nederland, hoge zandgronden</td></tr><tr><td>Diepte</td><td>Vaak 10-25 meter</td><td>0,6-1 meter</td></tr><tr><td>Kosten</td><td>Hoger</td><td>Lager</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wat is een sondering en waarom wordt die gedaan?",
+      "html": "<p>Een sondering is een bodemonderzoek waarbij een conus de grond in wordt gedrukt en de weerstand per diepte wordt gemeten. Daaruit blijkt hoe diep de draagkrachtige zandlaag zit en hoeveel gewicht de bodem kan dragen. De constructeur bepaalt op basis van de sondering het funderingstype, de paallengte en het aantal palen.</p><p>Als koper hoef je dit niet zelf te regelen — bij projectnieuwbouw doet de ontwikkelaar het, bij zelfbouw hoort het bij de constructieberekening voor de omgevingsvergunning. Wel goed om te weten: zonder sondering mag er niet zomaar gebouwd worden, en de sonderingsrapporten horen in je bouwdossier te zitten.</p>"
+    },
+    {
+      "kop": "Welke paaltypen worden bij nieuwbouw gebruikt?",
+      "html": "<p>Naast de klassieke geheide betonpaal zijn er varianten die minder trillingen en geluid geven:</p><ul><li><strong>Prefab betonpalen (geheid):</strong> goedkoop en betrouwbaar, maar trillingen kunnen belendende panden beschadigen.</li><li><strong>Boorpalen / schroefpalen:</strong> trillingsvrij, gebruikt in binnensteden en dicht bij bestaande bebouwing.</li><li><strong>Mortelschroefpalen:</strong> trillingsarm alternatief dat ter plekke wordt gevormd met beton.</li></ul><p>Bij nieuwbouw naast bestaande woningen is vaak een bouwkundige vooropname van de buurpanden verstandig — zo is later aantoonbaar of scheuren door het heiwerk komen.</p>"
+    },
+    {
+      "kop": "Hoe herken je funderingsproblemen?",
+      "html": "<p>Funderingsproblemen ontstaan door verzakking, paalrot (bij oude houten palen die droog komen te staan) of ongelijke zetting. Signalen om serieus te nemen:</p><ul><li>Scheefstaande vloeren, klemmende deuren en ramen;</li><li>Diagonale <a href=\"/kennisbank/bouwtechniek/scheuren-in-muren/\">scheuren in muren</a>, vooral boven kozijnen en doorlopend door meerdere stenen;</li><li>Scheuren die blijven groeien of terugkomen na herstel;</li><li>Hoogteverschil met de buren bij een gedeelde gevel.</li></ul><p>Bij twijfel laat je funderingsonderzoek doen door een gespecialiseerd bureau. Volledig funderingsherstel kost al snel €50.000 tot €100.000 — bij aankoop van een oudere woning in West-Nederland is dit dus een terechte vraag aan de verkoper en bouwkundig keurder.</p>"
+    },
+    {
+      "kop": "Wat kun je als koper controleren?",
+      "html": "<p>Bij nieuwbouw: vraag of sonderingsrapport en paalplan in het (opleverings)dossier zitten en of er heiregistraties zijn — sinds de Wkb controleert de <a href=\"/kennisbank/bouwtechniek/wkb-kwaliteitsborging/\">kwaliteitsborger</a> hierop. Kijk bij een schouwmoment of de <a href=\"/kennisbank/bouwtechniek/kruipruimte/\">kruipruimte</a> schoon en toegankelijk is. Bij bestaande bouw: check het bouwjaar en funderingstype (via gemeente of funderingsloket), en laat bij twijfel een keuring uitvoeren vóór je koopt. Krijg je een offerte voor funderingsherstel of aanbouw met nieuwe fundering? Laat die dan doorrekenen voordat je tekent — de prijsverschillen tussen aannemers zijn juist bij funderingswerk groot.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe weet ik welk funderingstype mijn woning heeft?",
+      "a": "Bij nieuwbouw staat het in de constructietekeningen en het opleverdossier. Bij bestaande bouw kun je het bouwarchief van de gemeente raadplegen; vuistregel is dat woningen op slappe grond (West-Nederland) op palen staan en woningen op zandgrond vaak op staal."
+    },
+    {
+      "q": "Zijn houten heipalen een probleem?",
+      "a": "Houten palen zijn tot circa 1970 veel gebruikt en gaan prima zolang ze onder water staan. Daalt het grondwater, dan kan paalrot ontstaan. Bij aankoop van een vooroorlogse woning op houten palen is funderingsonderzoek verstandig."
+    },
+    {
+      "q": "Kan een nieuwbouwwoning verzakken?",
+      "a": "De woning zelf vrijwel niet: die staat op palen of op berekend draagkrachtige grond. Wel zakt in slappe gebieden de grond róndom de woning, waardoor tuinen, terrassen en aansluitpaden na enkele jaren opgehoogd moeten worden."
+    },
+    {
+      "q": "Wat kost een fundering bij nieuwbouw?",
+      "a": "Indicatief kost een paalfundering voor een eengezinswoning €15.000 tot €35.000 en een fundering op staal €10.000 tot €20.000, afhankelijk van bodem, paallengte en woninggrootte. Bij projectnieuwbouw zit dit in de aanneemsom."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["index", "kruipruimte", "scheuren-in-muren"]
+  }
+}

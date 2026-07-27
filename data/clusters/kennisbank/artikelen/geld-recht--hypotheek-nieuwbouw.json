@@ -1,0 +1,57 @@
+{
+  "cluster": "geld-recht",
+  "slug": "hypotheek-nieuwbouw",
+  "titel": "Hypotheek bij nieuwbouw: depot, dubbele lasten en rente-aanbod",
+  "title_tag": "Hypotheek nieuwbouw: waar je op let | Bylder",
+  "meta_description": "Hypotheek voor nieuwbouw: hoe het bouwdepot werkt, wat dubbele lasten betekenen en waarom de geldigheid van je rente-aanbod cruciaal is.",
+  "intro": [
+    "Een nieuwbouwhypotheek is een gewone hypotheek met een paar bijzonderheden: het geld voor de bouw gaat in een bouwdepot, je hebt tijdens de bouw vaak dubbele lasten, en de geldigheidsduur van je rente-aanbod moet passen bij een bouwtraject dat maanden tot jaren duurt.",
+    "Dit artikel zet de aandachtspunten kort op een rij, zodat je het gesprek met je hypotheekadviseur goed voorbereid ingaat. Het is nadrukkelijk voorlichting, geen financieel advies — voor jouw situatie is een adviseur de aangewezen route."
+  ],
+  "stats": [
+    ["1-2 jaar", "gebruikelijke looptijd van een bouwdepot"],
+    ["2x", "lasten: huidige woonlasten plus de nieuwe hypotheek"],
+    ["60+", "merken en regelingen vergelijkt Bylder voor kopers"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe is de hypotheek gekoppeld aan het bouwdepot?",
+      "html": "<p>Bij het passeren van de akte betaal je de grond en eventueel al vervallen bouwtermijnen; de rest van de hypotheek gaat in een <strong>bouwdepot</strong>. Daaruit betaalt de bank de resterende bouwtermijnen en (als je dat hebt meegefinancierd) het meerwerk. Je betaalt hypotheekrente over het hele bedrag en ontvangt doorgaans een rentevergoeding over het depotsaldo, zodat je nettolasten meegroeien met de bouw.</p><p>Praktisch: geef verwacht meerwerk al bij de aanvraag op, zodat het depot ruim genoeg is. Achteraf verhogen betekent een nieuwe aanvraag en vaak een nieuwe taxatie.</p>"
+    },
+    {
+      "kop": "Wat betekenen dubbele lasten tijdens de bouw?",
+      "html": "<p>Zolang je nieuwe woning in aanbouw is, woon je nog ergens anders — met huur of een lopende hypotheek. Daarnaast betaal je de rente over je nieuwe hypotheek (deels gecompenseerd door depotrente). Die periode van <strong>dubbele lasten</strong> duurt van de aktedatum tot de oplevering en kan bij vertraging langer worden dan gepland.</p><ul><li>Reken vooraf uit wat je maximale maandlast wordt in de duurste maand.</li><li>Houd rekening met uitloop van de bouwtijd; werkbare werkdagen zijn geen kalenderdagen.</li><li>Sommige geldverstrekkers toetsen op dubbele lasten of vragen een buffer — je adviseur weet wat jouw bank eist.</li></ul>"
+    },
+    {
+      "kop": "Waarom is de geldigheid van het rente-aanbod zo belangrijk?",
+      "html": "<p>Tussen het tekenen van de koop-/aannemingsovereenkomst en de oplevering zit bij nieuwbouw veel tijd. Je rente-aanbod (en daarna de offerte) heeft een <strong>beperkte geldigheidsduur</strong>, vaak enkele maanden, soms verlengbaar tegen kosten. Twee dingen om te checken:</p><ul><li><strong>Haal je de aktedatum</strong> binnen de geldigheid van het aanbod? Bij projectbouw met opschortende voorwaarden (zoals 70% verkocht) kan het passeren maanden op zich laten wachten.</li><li><strong>Wat kost verlengen</strong> en geldt er een dagrente- of bereidstellingsregeling? Die voorwaarden verschillen sterk per geldverstrekker.</li></ul><p>Vraag je adviseur expliciet naar deze termijnen voordat je tekent; een verlopen aanbod in een gestegen rentemarkt kan duur uitpakken.</p>"
+    },
+    {
+      "kop": "Welke documenten heb je nodig voor de aanvraag?",
+      "html": "<p>Naast de gebruikelijke inkomensstukken vraagt de bank bij nieuwbouw meestal om: de koop- en aannemingsovereenkomst, de technische omschrijving, de meer- en minderwerklijst en het bewijs van een waarborgcertificaat (Woningborg of SWK) — veel geldverstrekkers stellen zo'n certificaat als voorwaarde. Bij zelfbouw of een casco-woning gelden aanvullende eisen, zoals een gespecificeerde begroting.</p><p>Controleer je meerwerklijst kritisch voordat je hem laat meefinancieren: elke te dure post financier je tientallen jaren mee, met rente.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik mijn hypotheek meenemen naar de nieuwbouwwoning?",
+      "a": "Veel geldverstrekkers kennen een verhuis- of meeneemregeling waarmee je je huidige rente (deels) meeneemt. De voorwaarden en termijnen verschillen per bank en luisteren nauw bij nieuwbouw, omdat er tijd zit tussen verkoop en oplevering. Laat je adviseur dit vroeg uitzoeken."
+    },
+    {
+      "q": "Wordt meerwerk meegenomen in de hypotheek?",
+      "a": "Ja, mits je het opgeeft bij de aanvraag en de totale financiering past binnen de waarde van de woning na afbouw en je inkomen. De taxatie of validatie gaat dan uit van de woning inclusief meerwerk."
+    },
+    {
+      "q": "Wat gebeurt er als de bouw vertraagt en mijn offerte verloopt?",
+      "a": "Dan moet je de offerte verlengen (soms tegen bereidstellingsprovisie) of opnieuw aanvragen tegen de dan geldende rente. Check bij het afsluiten hoe lang je offerte geldig is en wat verlenging kost, en plan ruim voor vertraging."
+    },
+    {
+      "q": "Heb ik Nationale Hypotheek Garantie nodig bij nieuwbouw?",
+      "a": "NHG is niet verplicht maar kan rentekorting en een vangnet opleveren, mits de totale kosten binnen de actuele NHG-grens vallen. Bij nieuwbouw gelden specifieke voorwaarden, bijvoorbeeld rond waarborgcertificaten. Je adviseur kan toetsen of het in jouw geval kan en loont."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["bouwdepot", "bouwrente", "index"]
+  }
+}

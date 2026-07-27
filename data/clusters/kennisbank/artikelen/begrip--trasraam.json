@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "trasraam",
+  "titel": "Trasraam",
+  "title_tag": "Wat is een trasraam? Betekenis + uitleg | Bylder",
+  "meta_description": "Het trasraam is het onderste, vochtbestendige deel van een gevel of muur, gemetseld met dichte steen en sterke mortel tegen optrekkend vocht. Lees hoe het werkt.",
+  "intro": [
+    "Het trasraam is het onderste deel van een gemetselde muur, vanaf de fundering tot iets boven het maaiveld, dat is uitgevoerd in vochtbestendige steen en sterke, dichte mortel. Het beschermt de muur tegen optrekkend vocht en opspattend regenwater.",
+    "De naam komt van tras, een vulkanisch gesteentemeel dat vroeger door de metselmortel werd gemengd om hem waterdicht te maken. Bij veel woningen herken je het trasraam aan een afwijkende, donkerder of hardere steensoort in de onderste lagen van de gevel."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waarom is het trasraam belangrijk bij vochtproblemen?",
+      "html": "<p>Baksteen en gewone mortel zuigen water op als een spons; grondvocht zou zonder maatregelen via de fundering omhoog trekken de muur in. Het trasraam vormt samen met een waterkerende laag (vroeger lood of bitumen, nu vaak dpc-folie) de barrière daartegen. Bij oudere woningen met optrekkend vocht is die barrière vaak verzwakt of nooit goed aangelegd; herstel gebeurt dan met injecteren van de muur of het inbrengen van een nieuwe waterkering. Let ook op het maaiveld: een terras of tuinophoging die tot boven het trasraam reikt, brengt vocht in het 'gewone' metselwerk — een veel voorkomende, zelfgemaakte vochtbron.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe hoog hoort een trasraam te zijn?",
+      "a": "Gebruikelijk is van de fundering tot enkele lagen boven het maaiveld, zodat opspattend regenwater en sneeuw het gewone metselwerk niet bereiken. De exacte hoogte verschilt per ontwerp en staat op de geveltekening."
+    },
+    {
+      "q": "Bestaat het trasraam nog bij nieuwbouw?",
+      "a": "Het principe wel: nieuwbouw krijgt waterkerende lagen (dpc-folie) en vochtbestendige detaillering onderin de gevel. De term trasraam hoor je vooral nog bij bestaande bouw en renovatie."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["kimband", "bouwtechniek:spouwmuur-opbouw", "bouwtechniek:bouwvocht"]
+  }
+}

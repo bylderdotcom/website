@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "ruwbouw",
+  "titel": "Ruwbouw",
+  "title_tag": "Wat is ruwbouw? Betekenis + uitleg | Bylder",
+  "meta_description": "Ruwbouw is de constructieve fase van de bouw: fundering, vloeren, muren en dak. Lees wat erbij hoort en waarom deze fase je latere keuzes bepaalt.",
+  "intro": [
+    "Ruwbouw is de eerste, constructieve fase van een bouwproject: fundering, dragende muren, vloeren, trappen en de dakconstructie. Als de ruwbouw klaar is, staat het skelet van de woning — wind- en waterdicht maken en afbouwen komen daarna.",
+    "Voor nieuwbouwkopers is de ruwbouwfase het moment waarop wijzigingen nog relatief goedkoop zijn: een extra wandcontactdoos, verplaatste wand of dakraam is tijdens de ruwbouw een kleine ingreep en na oplevering een verbouwing. De sluitingsdata voor ruwbouw-meerwerk komen dus eerder dan je denkt."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat hoort bij ruwbouw en wat bij afbouw?",
+      "html": "<p>Tot de ruwbouw horen grondwerk, fundering, begane grondvloer, dragende wanden (vaak kalkzandsteen of beton), verdiepingsvloeren zoals kanaalplaat of breedplaat, en de constructie van het dak. De afbouw omvat alles daarna: gevelmetselwerk wordt soms tot de ruwbouw gerekend, kozijnen en dakbedekking maken het geheel wind- en waterdicht, en vervolgens komen installaties, dekvloeren, stucwerk en aftimmering. De grens is ook financieel relevant: bouwtermijnen in de aannemingsovereenkomst zijn gekoppeld aan mijlpalen als 'ruwe begane grondvloer gereed'. Wie casco koopt, krijgt grofweg de ruwbouw plus een waterdichte schil en doet de afbouw zelf.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe lang duurt de ruwbouwfase?",
+      "a": "Bij een projectmatige rijwoning met prefab onderdelen gaat de ruwbouw vaak verrassend snel — weken in plaats van maanden. De afbouw duurt doorgaans langer dan de ruwbouw, wat kopers die de bouw volgen nogal eens verrast."
+    },
+    {
+      "q": "Kan ik tijdens de ruwbouw nog wijzigingen doorgeven?",
+      "a": "Alleen tot de sluitingsdata die de aannemer per onderdeel hanteert. Constructieve wijzigingen moeten vaak al voor de start van de bouw vastliggen; installatiewijzigingen kunnen soms langer. Check de kopersinformatie voor de deadlines."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["casco", "kalkzandsteen", "kanaalplaatvloer"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "kruipruimte",
+  "titel": "Waar is de kruipruimte voor en wanneer moet je je zorgen maken?",
+  "title_tag": "Kruipruimte: functie, vocht en isolatie | Bylder",
+  "meta_description": "De kruipruimte geeft toegang tot leidingen onder je vloer. Lees waarom ventilatie belangrijk is, wat bodemisolatie doet en wanneer vocht een probleem is.",
+  "intro": [
+    "De kruipruimte is de lage ruimte (meestal 50 tot 80 cm hoog) tussen de onderkant van je begane-grondvloer en de bodem, bedoeld om leidingen voor water, riolering, elektra en soms verwarming bereikbaar te houden. Je komt er via het kruipluik, meestal bij de voordeur of in de gang.",
+    "Voor huiseigenaren is de kruipruimte vooral relevant als bron van problemen die je bóven de vloer merkt: vocht, muffe lucht, koude vloeren en schimmel beginnen vaak beneden. Een half uurtje met een zaklamp door het kruipluik zegt veel over de gezondheid van je woning — ook bij aankoop."
+  ],
+  "stats": [
+    ["50-80 cm", "gangbare hoogte van een kruipruimte"],
+    ["±10%", "van je warmteverlies gaat via een ongeïsoleerde vloer"],
+    ["24 uur", "na hevige regen mag tijdelijk water zichtbaar zijn"]
+  ],
+  "secties": [
+    {
+      "kop": "Waarom heeft een woning een kruipruimte?",
+      "html": "<p>Drie redenen: <strong>bereikbaarheid</strong> van leidingen en riolering voor onderhoud en reparaties, <strong>drooghouden</strong> van de vloerconstructie (de vloer ligt vrij van de vochtige bodem) en het <strong>opvangen van bodemongelijkheid</strong> — zeker bij paalfunderingen zakt de grond rond de woning, terwijl de vloer op hoogte blijft. Zie ook <a href=\"/kennisbank/bouwtechniek/fundering-typen/\">funderingstypen</a>.</p><p>Sommige nieuwbouwwoningen worden bewust zónder kruipruimte gebouwd (vloer direct op zandbed of geïsoleerde plaat); leidingen liggen dan in de vloer of in leidingkokers. Dat is geen gebrek, wel iets om te weten voor toekomstige verbouwingen.</p>"
+    },
+    {
+      "kop": "Is water of vocht in de kruipruimte normaal?",
+      "html": "<p>Een beetje: de bodem van een kruipruimte is vrijwel nooit kurkdroog en na langdurige regen of bij hoge grondwaterstand kan er tijdelijk water staan. Dat hoeft geen probleem te zijn, zolang het water weer wegzakt en de ruimte goed ventileert.</p><p>Wél een probleem:</p><ul><li>Permanent staand water of water tegen de onderkant van de vloer;</li><li>Muffe geur in huis, schimmel in het kruipluik of op de vloerranden;</li><li>Houten vloerdelen of balken die zacht of donker verkleurd zijn (houtrot);</li><li>Wit uitgeslagen of doorvochte funderingsmuren;</li><li>Condens tegen de onderzijde van de vloer.</li></ul><p>Vocht uit de kruipruimte trekt met luchtstromen mee omhoog de woning in — tot 70% van de lucht in huis kan via kieren uit de kruipruimte komen bij een slecht afgedichte vloer.</p>"
+    },
+    {
+      "kop": "Hoe hoort een kruipruimte te ventileren?",
+      "html": "<p>Via ventilatieroosters (muisroosters) onderin de gevel, aan minimaal twee tegenover elkaar liggende zijden, zodat buitenlucht dwars onder de woning door kan strijken en vocht afvoert. Controleer of de roosters:</p><ul><li>niet dichtgesmeerd, geverfd of door beplanting/bestrating geblokkeerd zijn;</li><li>ook ná het ophogen van de tuin nog boven het maaiveld liggen — een klassieke fout bij oudere woningen in zettingsgevoelige gebieden.</li></ul><p>Bij nieuwbouw: kijk vóór de vloer erop gaat (of via foto's) of er geen bouwafval in de kruipruimte ligt. Puin en houtresten houden vocht vast en zijn na oplevering lastig te verwijderen — een terecht opleverpunt.</p>"
+    },
+    {
+      "kop": "Wat is bodemisolatie en wanneer is het zinvol?",
+      "html": "<p>Er zijn twee manieren om via de kruipruimte energie te besparen: <strong>vloerisolatie</strong> (isolatiemateriaal tegen de onderkant van de vloer, zoals PIR-platen of gespoten schuim) en <strong>bodemisolatie</strong> (een laag EPS-chips of isolerende folie óp de bodem, die tegelijk vocht uit de bodem afremt). Vloerisolatie levert thermisch het meest op; bodemisolatie is de oplossing bij lage of natte kruipruimtes waar je niet bij de vloer kunt.</p><p>Indicatief kost vloer- of bodemisolatie €25 tot €55 per m², vaak binnen 4 tot 7 jaar terugverdiend via een warmere vloer en lagere stookkosten. Vergelijk offertes op m²-prijs én methode — en let op of vochtaanpak (folie, ventilatie) is meegenomen.</p>"
+    },
+    {
+      "kop": "Wanneer schakel je een specialist in?",
+      "html": "<p>Bij permanent water, houtrot, of schimmel- en gezondheidsklachten in huis. Oplossingen lopen van beter ventileren (extra roosters, mechanische kruipruimteventilatie) via bodemfolie tot drainage of een waterdichte kruipruimtebodem. Prijzen verschillen enorm per aanpak — van enkele honderden euro's voor roosters tot vele duizenden voor drainage. Laat een vochtofferte daarom altijd doorrekenen voordat je tekent; vochtbestrijding is een markt met grote prijsverschillen en overbodige verkooppakketten.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik mijn kruipruimte helemaal vol laten schuimen of storten?",
+      "a": "Alleen als er geen leidingen bereikbaar hoeven te blijven en de vochtsituatie het toelaat — meestal wordt daarom gekozen voor EPS-chips die je nog kunt wegscheppen. Volledig dichtzetten van een natte kruipruimte zonder vochtaanpak kan problemen verplaatsen naar de muren."
+    },
+    {
+      "q": "Ik ruik een muffe geur in huis. Komt dat uit de kruipruimte?",
+      "a": "Vaak wel. Controleer met een zaklamp op vocht en schimmel, check of de gevelroosters open zijn en dicht het kruipluik en leidingdoorvoeren luchtdicht af. Blijft de geur, laat dan een vochtmeting doen."
+    },
+    {
+      "q": "Heeft elke nieuwbouwwoning een kruipruimte?",
+      "a": "Nee. Steeds meer nieuwbouw wordt kruipruimteloos gebouwd met een geïsoleerde vloer direct op het zandbed. Leidingen zitten dan in de vloer of in een leidingkoker. Vraag het na bij je bouwer — het bepaalt hoe bereikbaar je leidingen later zijn."
+    },
+    {
+      "q": "Is water in de kruipruimte een verborgen gebrek bij aankoop?",
+      "a": "Tijdelijk water bij hoge grondwaterstand meestal niet — dat geldt als normaal. Structureel water met schade (houtrot, schimmel) kan wel een gebrek zijn. Laat de kruipruimte daarom standaard meenemen bij een bouwkundige keuring vóór aankoop."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["fundering-typen", "bouwvocht", "installaties:binnenklimaat-luchtvochtigheid"]
+  }
+}

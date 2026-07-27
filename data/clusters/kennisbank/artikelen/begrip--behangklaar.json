@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "behangklaar",
+  "titel": "Behangklaar",
+  "title_tag": "Wat is behangklaar? Betekenis + uitleg | Bylder",
+  "meta_description": "Behangklaar betekent dat een wand vlak genoeg is om te behangen, maar niet strak genoeg om direct te sausen. Lees het verschil met sausklaar.",
+  "intro": [
+    "Behangklaar betekent dat een wand voldoende vlak en dicht is afgewerkt om er direct behang op aan te brengen, maar niet glad genoeg om te schilderen. Kleine oneffenheden, spaanplekken en lichte structuurverschillen zijn bij behangklaar toegestaan.",
+    "Nieuwbouwwoningen worden standaard behangklaar opgeleverd, en dat verrast veel kopers: wie strakke gesausde wanden wil, moet de wanden eerst laten uitvlakken (sausklaar maken) en dat kost per woning al snel een serieus bedrag. Check daarom vooraf in de technische omschrijving welk afwerkingsniveau is afgesproken."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen behangklaar en sausklaar?",
+      "html": "<p>Behangklaar is oppervlaktegroep 3 of 4 in stukadoorstermen: vlak, maar met zichtbare kleine oneffenheden die onder behang of glasvlies wegvallen. Sausklaar (oppervlaktegroep 1 of 2) is een gladde, strak geplamuurde of gestucte wand waarop je direct latex kunt aanbrengen. Het verschil zit in arbeidsuren: sausklaar maken betekent de hele wand voorzien van een dunne pleisterlaag of volledig plamuren en schuren. Wil je sausklare wanden in nieuwbouw, vraag dit dan als meerwerk aan of laat een stukadoor na oplevering offreren — en vergelijk die offertes goed op oppervlaktegroep.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik een behangklare wand toch direct sausen?",
+      "a": "Het kan, maar het resultaat valt vrijwel altijd tegen: elke oneffenheid tekent zich af in strijklicht. Renovlies of glasvlies plakken en dat oversausen is een veelgebruikte tussenoplossing die goedkoper is dan volledig gladstucen."
+    },
+    {
+      "q": "Wat kost het om wanden sausklaar te laten maken?",
+      "a": "Dat hangt af van de staat van de wanden en de gekozen methode (gladpleister of plamuren). Vraag altijd meerdere offertes en let erop dat de stukadoor het afwerkingsniveau (oppervlaktegroep) benoemt, anders vergelijk je appels met peren."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["spachtelputz", "meerwerk"]
+  }
+}

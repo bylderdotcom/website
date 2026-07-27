@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "meerwerk-rechten",
+  "titel": "Meerwerk en je rechten: prijsafspraken, waarschuwingsplicht en weigeren",
+  "title_tag": "Meerwerk: jouw rechten juridisch uitgelegd | Bylder",
+  "meta_description": "Welke rechten heb je bij meerwerk? Prijsafspraken vooraf, de waarschuwingsplicht van de aannemer en wanneer je meerwerk mag weigeren of schrappen.",
+  "intro": [
+    "Meerwerk is werk dat buiten de oorspronkelijke opdracht valt en waarvoor de aannemer extra betaling vraagt — van een extra wandcontactdoos tot een complete uitbouwvariant. Juridisch is het een wijziging van de aannemingsovereenkomst, en juist daarom gelden er duidelijke spelregels over prijs en instemming.",
+    "In de praktijk is meerwerk dé plek waar bouwbudgetten ontsporen: 96% van de kopers betaalt minstens één post te duur, gemiddeld €1.840 te veel aan meerwerk. Wie zijn rechten kent, betaalt alleen wat is afgesproken."
+  ],
+  "stats": [
+    ["€1.840", "gemiddeld te veel betaald aan meerwerk"],
+    ["96%", "van kopers betaalt minstens één post te duur"],
+    ["7:755 BW", "regelt de waarschuwingsplicht bij prijsverhoging"]
+  ],
+  "secties": [
+    {
+      "kop": "Wanneer mag de aannemer extra geld vragen?",
+      "html": "<p>De hoofdregel staat in artikel 7:755 BW: bij door jou gewenste toevoegingen of veranderingen kan de aannemer alleen een prijsverhoging vragen als hij je <strong>tijdig heeft gewezen op de noodzaak van die verhoging</strong> — tenzij je die noodzaak zelf al had moeten begrijpen. Vraag je bijvoorbeeld om een groter raam, dan snap je dat dat geld kost; maar de aannemer moet wel duidelijk maken dát en globaal hoevéél er bijkomt voordat het werk wordt uitgevoerd.</p><p>Verzuimt de aannemer die waarschuwing, dan kan zijn aanspraak op bijbetaling geheel of gedeeltelijk vervallen. Achteraf een factuur sturen voor 'meerwerk' waar je nooit mee hebt ingestemd, is dus juridisch aanvechtbaar.</p>"
+    },
+    {
+      "kop": "Waarom wil je altijd een prijs vooraf?",
+      "html": "<p>Spreek voor elk meerwerk vooraf en schriftelijk af: wat er precies wordt gedaan, wat het kost (vaste prijs of duidelijk uurtarief plus materiaal), en wat het betekent voor de bouwtijd. Zonder prijsafspraak mag de aannemer een <strong>redelijke prijs</strong> rekenen — en over wat redelijk is, verschillen partijen achteraf steevast van mening.</p><p>Een e-mail of app-bericht met 'akkoord op offerte X van datum Y' is al voldoende vastlegging. Mondelinge akkoorden op de bouwplaats zijn de klassieke bron van conflicten: niemand kan later bewijzen wat er is afgesproken.</p>"
+    },
+    {
+      "kop": "Mag je meerwerk weigeren of laten vervallen?",
+      "html": "<p>Ja. Meerwerk is een wijziging van de overeenkomst en vergt jouw instemming; je bent nooit verplicht een meerwerkofferte te accepteren. Vind je de prijs te hoog, dan kun je onderhandelen, het werk schrappen of het (na oplevering) door een ander laten doen — al kan dat gevolgen hebben voor garantie op dat onderdeel.</p><p>Omgekeerd kan de aannemer noodzakelijk werk niet zomaar als meerwerk presenteren: wat redelijkerwijs bij de overeengekomen opdracht hoort (of wat een gevolg is van zijn eigen fout of een onvolledige offerte), is geen meerwerk. Vergelijk elke meerwerkpost met de technische omschrijving voordat je tekent.</p>"
+    },
+    {
+      "kop": "Wanneer moet je meerwerk betalen?",
+      "html": "<p>Kijk eerst in je contract: model-overeenkomsten regelen vaak dat meerwerk (grotendeels) pas verschuldigd is bij of na uitvoering, soms met een beperkte aanbetaling bij opdracht. Volledige vooruitbetaling van meerwerk is ongebruikelijk en onverstandig — je verliest elk drukmiddel en loopt risico bij faillissement.</p><ul><li>Betaal in termijnen die de voortgang volgen, net als de bouwtermijnen.</li><li>Controleer meerwerkfacturen tegen de afgesproken prijzen én tegen wat daadwerkelijk is uitgevoerd.</li><li>Verreken minderwerk (vervallen onderdelen) schriftelijk; ook dat is een wijziging van de overeenkomst.</li></ul>"
+    },
+    {
+      "kop": "Wat doe je bij een meerwerkfactuur waar je het niet mee eens bent?",
+      "html": "<p>Betaal niet klakkeloos en teken schriftelijk en gemotiveerd bezwaar aan: verwijs naar het contract, de technische omschrijving en het ontbreken van een prijsafspraak of waarschuwing. Betaal het onbetwiste deel wel — zo kom je zelf niet in verzuim. Komen jullie er niet uit, dan is de geschillencommissie uit je contract of garantieregeling, of uiteindelijk de rechter, de aangewezen route. Dit artikel is voorlichting, geen juridisch advies; bij grote bedragen loont een bouwrechtjurist.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een mondeling akkoord op meerwerk geldig?",
+      "a": "Ja, mondelinge afspraken zijn juridisch geldig — maar vrijwel onbewijsbaar. Bevestig elk akkoord daarom direct per e-mail of app, met prijs en omschrijving. Zonder bewijs van instemming en waarschuwing staat de aannemer bij een geschil zwak, maar jij ook."
+    },
+    {
+      "q": "Mag de aannemer de bouw stilleggen als ik meerwerk weiger?",
+      "a": "Nee, het weigeren van meerwerk geeft geen recht om het overeengekomen werk op te schorten. De oorspronkelijke opdracht moet gewoon worden uitgevoerd. Dreigt een aannemer hiermee, leg dat dan schriftelijk vast en vraag advies."
+    },
+    {
+      "q": "Wat als meerwerk nodig is door een fout in de offerte?",
+      "a": "Werk dat nodig is omdat de aannemer iets vergeten is of verkeerd heeft ingeschat, komt in beginsel voor zijn rekening: hij moet opleveren wat is overeengekomen. Anders ligt het bij onvoorziene omstandigheden buiten zijn schuld — dan gelden de regels over kostenverhogende omstandigheden en is overleg nodig."
+    },
+    {
+      "q": "Telt meerwerk mee voor de 5%-regeling?",
+      "a": "De wettelijke 5%-regeling gaat over de aanneemsom; hoe meerwerk daarin meeloopt, hangt af van je contract. Praktisch belangrijker: neem niet-opgeleverd of gebrekkig meerwerk gewoon op in het proces-verbaal van oplevering, dan valt het onder je opschortingsmogelijkheden."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
+    "zusters": ["begrip:meerwerk", "begrip:minderwerk", "offerte-rechtsgeldig"]
+  }
+}

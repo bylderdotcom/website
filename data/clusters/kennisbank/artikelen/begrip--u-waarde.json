@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "u-waarde",
+  "titel": "U-waarde",
+  "title_tag": "Wat is U-waarde? Verschil met Rc-waarde | Bylder",
+  "meta_description": "De U-waarde geeft aan hoeveel warmte er door ramen en deuren verloren gaat, in W/m²K. Hoe lager, hoe beter. Lees het verschil met de Rc-waarde.",
+  "intro": [
+    "De U-waarde is de warmtedoorgangscoëfficiënt van een bouwdeel — vooral gebruikt voor ramen, deuren en kozijnen — uitgedrukt in W/m²K. Hij geeft aan hoeveel warmte er per vierkante meter en per graad temperatuurverschil doorheen lekt: hoe lager de U-waarde, hoe beter de isolatie.",
+    "Voor kopers en verduurzamers is de U-waarde het getal om glasoffertes mee te vergelijken: HR++-glas en triple glas verschillen vooral in U-waarde. Let op de aanduiding: Ug geldt voor alleen het glas, Uw voor het complete raam inclusief kozijn — en die laatste bepaalt je werkelijke warmteverlies."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen U-waarde en Rc-waarde?",
+      "html": "<p>Het zijn elkaars spiegelbeeld: de Rc-waarde is een warmteweerstand (hoe hoger, hoe beter) en wordt gebruikt voor dichte constructiedelen als vloer, gevel en dak; de U-waarde is een warmtedoorgang (hoe lager, hoe beter) en wordt gebruikt voor ramen, deuren en kozijnen. Grofweg geldt U ≈ 1/R. Ter oriëntatie: enkel glas zit rond U = 5,8 W/m²K, ouder dubbel glas rond 2,8, HR++ rond 1,1 en triple glas rond 0,7 of lager. Voor nieuwbouw geldt een wettelijke maximale gemiddelde U-waarde voor ramen en deuren. Vergelijk offertes dus nooit op 'dubbel glas' als omschrijving, maar op de opgegeven Ug- en Uw-waarde.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is triple glas altijd de beste keuze?",
+      "a": "Thermisch wel, maar het is zwaarder en duurder en vraagt vaak aangepaste kozijnen. In een verder matig geïsoleerd huis levert HR++ meestal de beste prijs-prestatie; bij nieuwbouw en zeer energiezuinige renovatie is triple de logische standaard."
+    },
+    {
+      "q": "Waarom staat er een U-waarde op mijn kozijnofferte en een Rc-waarde in mijn isolatie-offerte?",
+      "a": "Omdat het om verschillende bouwdelen gaat: transparante delen (glas, deuren) rekenen in U-waarde, dichte delen (muur, dak, vloer) in Rc-waarde. Beide beschrijven hetzelfde fenomeen — warmteverlies — vanuit een andere kant."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["rc-waarde", "koudebrug", "installaties:isolatiematerialen"]
+  }
+}

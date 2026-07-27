@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "bouwdepot",
+  "titel": "Bouwdepot: hoe werkt het en hoe declareer je slim?",
+  "title_tag": "Bouwdepot: werking, declareren & rente | Bylder",
+  "meta_description": "Hoe werkt een bouwdepot? Declareren, rentevergoeding en wat er met het restant gebeurt — praktisch uitgelegd voor nieuwbouw en verbouwing.",
+  "intro": [
+    "Een bouwdepot is een geblokkeerd deel van je hypotheek waaruit de bank de bouw- of verbouwingskosten betaalt. Je krijgt het geld niet in één keer op je rekening: je declareert facturen en de bank betaalt uit, zodat het geld aantoonbaar in de woning wordt gestoken.",
+    "Bij nieuwbouw wordt het depot gebruikt voor de bouwtermijnen en het meerwerk; bij een verbouwing voor de verbouwingskosten die je in het taxatierapport of verbouwingsplan hebt opgevoerd. De spelregels verschillen per geldverstrekker, dus check altijd de voorwaarden van jouw hypotheek."
+  ],
+  "stats": [
+    ["1-2 jaar", "gebruikelijke looptijd van een bouwdepot"],
+    ["€1.840", "gemiddeld te veel betaald aan meerwerk"],
+    ["100%", "van de declaraties moet bouwgerelateerd zijn"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe werkt een bouwdepot precies?",
+      "html": "<p>Bij het afsluiten van de hypotheek wordt het bedrag voor de bouw of verbouwing in depot gezet. Bij nieuwbouw betaalt de bank daaruit de bouwtermijnen van de aannemer, meestal rechtstreeks. Bij een verbouwing dien je zelf facturen of betaalbewijzen in, waarna de bank uitbetaalt aan jou of aan de aannemer.</p><p>Het depot heeft een looptijd — vaak een tot twee jaar, soms verlengbaar. Binnen die periode moet de bouw of verbouwing zijn afgerond en gedeclareerd. Wat je declareert moet passen bij het doel: bouwkosten, meerwerk, en afhankelijk van de voorwaarden ook zaken als een keuken of badkamer. Losse inrichting valt er doorgaans buiten.</p>"
+    },
+    {
+      "kop": "Hoe zit het met rente over het bouwdepot?",
+      "html": "<p>Je betaalt vanaf de start hypotheekrente over het volledige geleende bedrag, dus ook over het deel dat nog in depot staat. Daar staat tegenover dat de meeste geldverstrekkers een <strong>rentevergoeding</strong> geven over het depotsaldo, vaak (ongeveer) gelijk aan je hypotheekrente. Per saldo betaal je dan vooral rente over het opgenomen deel; naarmate het depot leegloopt, stijgen je netto maandlasten.</p><p>Let op: sommige geldverstrekkers vergoeden een lagere rente dan je betaalt, of stoppen de vergoeding na verloop van tijd. Dat renteverschil is een echte kostenpost — reken het mee als je de looptijd van de bouw inschat.</p>"
+    },
+    {
+      "kop": "Hoe declareer je zonder gedoe?",
+      "html": "<p>Een paar praktische regels voorkomen vertraging:</p><ul><li>Dien <strong>originele facturen</strong> in die op jouw naam en bouwadres staan, met duidelijke omschrijving van het werk.</li><li>Declareer <strong>tijdig</strong>: verzamel bonnen niet maandenlang, want bij vragen van de bank zit je anders met je cashflow klem.</li><li>Controleer facturen vóór je declareert: kloppen hoeveelheden, meerwerkprijzen en btw-tarief? Een te hoge factuur die je declareert, betaal je uiteindelijk zelf via je hypotheek — met rente.</li><li>Bewaar kopieën van alles; bij einde depot wil de bank soms een eindafrekening zien.</li></ul><p>Laat grote facturen en meerwerknota's eerst controleren voordat je ze indient — gemiddeld betalen kopers €1.840 te veel aan meerwerk.</p>"
+    },
+    {
+      "kop": "Wat gebeurt er met het restant in het depot?",
+      "html": "<p>Houd je geld over, dan wordt het restant vrijwel altijd gebruikt om je hypotheek <strong>af te lossen</strong>: het depot wordt in mindering gebracht op de schuld. Uitbetalen op je eigen rekening kan meestal niet, omdat het geleende geld aan de woning gebonden is. Aflossen verlaagt je schuld en daarmee je maandlasten.</p><p>Kom je juist geld tekort, dan moet je het meerdere zelf bijleggen of — als je inkomen en de woningwaarde het toelaten — de hypotheek verhogen. Dat laatste betekent opnieuw naar de geldverstrekker en vaak opnieuw taxeren, dus bewaak je budget tijdens de bouw actief.</p>"
+    },
+    {
+      "kop": "Waar let je op bij de combinatie met bouwtermijnen?",
+      "html": "<p>Betaal alleen termijnen voor werk dat daadwerkelijk is uitgevoerd; bij nieuwbouw onder een model-overeenkomst lopen de termijnen mee met de bouwvoortgang. Controleer termijnfacturen voordat je ze doorstuurt naar de bank, en gebruik bij oplevering je recht om de laatste 5% van de aanneemsom in depot bij de notaris te laten storten in plaats van uit te betalen. Zo houd je druk op herstel van opleverpunten, terwijl je bouwdepot gewoon kan worden afgewikkeld.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is de rente over een bouwdepot aftrekbaar?",
+      "a": "De betaalde hypotheekrente kan aftrekbaar zijn voor zover de lening is gebruikt voor aankoop, bouw of verbetering van je eigen woning; de ontvangen depotrente wordt daar fiscaal mee verrekend. De regels luisteren nauw en kennen termijnen — controleer je situatie bij de Belastingdienst of je adviseur."
+    },
+    {
+      "q": "Kan ik meerwerk uit het bouwdepot betalen?",
+      "a": "Ja, meestal wel, zolang het meerwerk bouwgerelateerd is en binnen het depotbedrag past. Reken je bij het afsluiten van de hypotheek al op meerwerk, geef dat dan direct op zodat het depot ruim genoeg is."
+    },
+    {
+      "q": "Wat als de bouw langer duurt dan de depotlooptijd?",
+      "a": "Vraag tijdig verlenging aan bij je geldverstrekker; veel banken verlengen tegen voorwaarden. Doe je niets, dan kan de bank het restant aflossen op je hypotheek terwijl je nog facturen moet betalen."
+    },
+    {
+      "q": "Krijg ik geld uit het depot als ik zelf klus?",
+      "a": "Materiaalkosten kun je meestal declareren met bonnen; je eigen arbeidsuren niet. Sommige geldverstrekkers hanteren aanvullende eisen bij zelfwerkzaamheid, bijvoorbeeld een lager te financieren bedrag. Check de voorwaarden vooraf."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/meerwerk/", "Alles over meerwerk"],
+    "zusters": ["hypotheek-nieuwbouw", "bouwrente", "vijf-procent-regeling"]
+  }
+}

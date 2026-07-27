@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "dilatatievoeg",
+  "titel": "Dilatatievoeg",
+  "title_tag": "Wat is een dilatatievoeg? Betekenis + uitleg | Bylder",
+  "meta_description": "Een dilatatievoeg is een bewust aangebrachte voeg die uitzetting en krimp van bouwmaterialen opvangt en zo scheuren voorkomt. Lees waar hij nodig is.",
+  "intro": [
+    "Een dilatatievoeg is een bewust aangebrachte, doorlopende voeg in een vloer, wand of gevel die de beweging van bouwmaterialen door temperatuur en vocht opvangt. Zonder dilatatievoegen zou het materiaal op onvoorspelbare plekken scheuren.",
+    "Je komt dilatatievoegen tegen in metselwerk (verticale open voegen in de gevel), in dekvloeren en in grote betegelde vloeren. Voor verbouwers is de praktische regel: een dilatatie in de ondervloer moet je in de tegelvloer erboven doorzetten, anders trekt de scheur er dwars doorheen."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar zijn dilatatievoegen nodig?",
+      "html": "<p>In gevels schrijft de baksteenleverancier dilataties voor op basis van gevellengte, steensoort en kleur — donkere gevels zetten meer uit en vragen kortere afstanden. In dekvloeren zijn dilataties nodig bij grote oppervlakken, deurdoorgangen en vloerverwarming met meerdere groepen. Bij vloerverwarming worden vaak verdeeld verwarmde velden apart gedilateerd. In tegelwerk wordt de voeg afgewerkt met een flexibel profiel of kitvoeg. Let bij de oplevering op ontbrekende of doorgezette dilataties: een gevel zonder dilataties of een tegelvloer die over een dilatatie heen is gelijmd, is een gebrek dat zich pas na maanden als scheurvorming toont.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen een dilatatievoeg en een krimpscheur?",
+      "a": "Een dilatatievoeg is gepland en netjes afgewerkt; een krimpscheur is ongeplande scheurvorming doordat het materiaal bij het drogen krimpt. Goede dilataties beperken krimpscheuren, maar voorkomen ze niet volledig."
+    },
+    {
+      "q": "Mag ik een dilatatievoeg dichtkitten of dichtvoegen?",
+      "a": "Dichtkitten met blijvend elastische kit mag; star dichtvoegen met mortel niet, want dan kan de voeg zijn werk niet doen en verplaatst de spanning zich naar het materiaal ernaast."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["krimpscheur", "dekvloer"]
+  }
+}

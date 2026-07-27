@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "spouwanker",
+  "titel": "Spouwanker",
+  "title_tag": "Wat is een spouwanker? Betekenis + uitleg | Bylder",
+  "meta_description": "Een spouwanker is een metalen koppeling tussen binnen- en buitenblad van een spouwmuur die de gevel stabiel houdt. Lees waarom roestende ankers een risico zijn.",
+  "intro": [
+    "Een spouwanker is een metalen anker dat het binnenblad en het buitenblad van een spouwmuur met elkaar verbindt. De ankers geven het relatief slanke buitenblad zijn stabiliteit: zonder spouwankers zou de gevel bij windbelasting kunnen uitbuiken of omvallen.",
+    "Bij nieuwbouw worden roestvaststalen ankers in vaste aantallen per vierkante meter meegemetseld en houden ze vaak ook de isolatieplaten op hun plek. Bij oudere woningen zijn verzinkte ankers gebruikt die na decennia kunnen doorroesten — een serieus maar goed herstelbaar gebrek."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Hoe herken je problemen met spouwankers?",
+      "html": "<p>Doorgeroeste spouwankers verraden zich op twee manieren. Roestend staal zet uit en kan horizontale scheurtjes in de voegen ter hoogte van de ankers veroorzaken. Ernstiger is het sluipende scenario: de ankers verliezen hun verbinding zonder zichtbare schade, en het buitenblad gaat pas bij harde wind of trillingen bol staan. Bij twijfel — bijvoorbeeld bij een vooroorlogse woning of een gevel die uit het lood staat — kan een endoscopisch onderzoek in de spouw uitsluitsel geven. Herstel gebeurt met renovatiespouwankers: rvs ankers die door het buitenblad in het binnenblad worden geboord of gelijmd, zonder de gevel te slopen. Neem dit mee vóór het na-isoleren van de spouw, want daarna is inspectie lastiger.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel spouwankers horen er in een gevel?",
+      "a": "Als vuistregel enkele ankers per vierkante meter, met extra ankers langs randen, dilataties en openingen. Het exacte aantal volgt uit de constructieve eisen en staat in de verwerkingsvoorschriften van het gevelsysteem."
+    },
+    {
+      "q": "Kan spouwmuurisolatie kwaad voor de spouwankers?",
+      "a": "Het inblazen zelf niet, maar na-isolatie maakt latere inspectie van de ankers moeilijker en kan bij gebrekkige ankers vocht anders laten lopen. Laat bij een oude gevel de staat van de ankers beoordelen voordat de spouw wordt gevuld."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["koudebrug", "bouwtechniek:spouwmuur-opbouw"]
+  }
+}

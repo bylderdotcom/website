@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "waterslag",
+  "titel": "Waterslag",
+  "title_tag": "Wat is een waterslag? Betekenis + uitleg | Bylder",
+  "meta_description": "Een waterslag is de hellende dorpel onder een raamkozijn die regenwater van de gevel af leidt. Lees waarom afschot en overstek bepalend zijn.",
+  "intro": [
+    "Een waterslag is de aflopende dorpel onder een raamkozijn, van aluminium, natuursteen, beton of keramiek, die regenwater opvangt en vóór de gevel langs naar beneden leidt. Zo blijft het metselwerk onder het kozijn droog en schoon.",
+    "Een goede waterslag heeft afschot naar voren, steekt een paar centimeter buiten de gevel uit en heeft aan de onderzijde een druiprand of -groef. Voor kopers en verbouwers is het een klein detail met grote gevolgen: gebrekkige waterslagen zijn een klassieke oorzaak van vochtplekken en vervuilingsstrepen op de gevel."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij waterslagen?",
+      "html": "<p>Drie dingen bepalen of een waterslag zijn werk doet: voldoende afschot zodat water naar voren loopt, voldoende overstek zodat het water vrij van de gevel valt, en dichte aansluitingen bij de kopse kanten — daar hoort een opstand of eindstuk te zitten, anders loopt water zijdelings de spouw of het metselwerk in. Bij na-isolatie van de gevel aan de buitenkant moeten waterslagen dieper worden vervangen, anders eindigt het overstek op de nieuwe gevellijn. Vergelijkbare waterkerende dorpels zitten ook onder deurkozijnen (onderdorpels) en op borstweringen en tuinmuren (muurafdekkers). Loop ze bij een opleverkeuring na op afschot, eindstukken en kitwerk.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Waarom zitten er witte of groene strepen onder mijn ramen?",
+      "a": "Dat is vrijwel altijd afstromend water dat niet vrij van de gevel valt: te weinig overstek, verstopte druipgroef of een lekkende kopse aansluiting. De streep is cosmetisch, maar het achterliggende vocht kan op termijn voegwerk en steen aantasten."
+    },
+    {
+      "q": "Is een waterslag hetzelfde als een lekdorpel?",
+      "a": "In de praktijk worden de termen door elkaar gebruikt; beide leiden water van de gevel af. 'Raamdorpel' hoor je vaak bij steenachtige uitvoeringen, 'waterslag' vooral bij aluminium exemplaren."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["hemelwaterafvoer", "afschot"]
+  }
+}

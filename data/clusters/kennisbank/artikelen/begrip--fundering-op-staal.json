@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "fundering-op-staal",
+  "titel": "Fundering op staal",
+  "title_tag": "Wat is fundering op staal? Uitleg | Bylder",
+  "meta_description": "Fundering op staal is funderen direct op draagkrachtige grond, zonder heipalen. Het 'staal' is de vaste zandlaag. Lees wanneer dit kan en wat de risico's zijn.",
+  "intro": [
+    "Fundering op staal is een fundering die direct op de draagkrachtige grondlaag rust, zonder heipalen. Het woord 'staal' verwijst niet naar metaal, maar is een oud bouwwoord voor de vaste ondergrond waarop gefundeerd wordt.",
+    "Deze funderingsvorm kom je vooral tegen op zandgronden in Oost- en Zuid-Nederland en bij oudere woningen. Voor kopers is het relevante punt: een fundering op staal is gevoeliger voor verzakking bij wisselende grondwaterstanden of droogte dan een paalfundering — vraag bij aankoop van een ouder huis dus naar scheurvorming en eerdere funderingsonderzoeken."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wanneer kan een fundering op staal?",
+      "html": "<p>Een fundering op staal kan als de draagkrachtige laag ondiep zit, meestal binnen ongeveer een meter onder maaiveld, en de grondwaterstand stabiel is. De constructeur bepaalt dat op basis van een sondering. De fundering bestaat dan uit gemetselde of betonnen stroken (strokenfundering) onder de dragende muren, aangelegd op vorstvrije diepte. Zit de vaste laag dieper of is de grond slap — zoals in grote delen van West-Nederland — dan is een paalfundering nodig. Bij aanbouwen is dit een klassiek aandachtspunt: een aanbouw op staal naast een bestaand huis op palen kan ongelijk zakken, met scheuren op de aansluiting als gevolg.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe weet ik of mijn huis op staal of op palen is gefundeerd?",
+      "a": "Kijk in het bouwarchief van de gemeente naar de oorspronkelijke bouwtekeningen, of laat een funderingsonderzoek doen. Bouwjaar en locatie geven een eerste indicatie: vooroorlogse huizen op zandgrond staan vaak op staal."
+    },
+    {
+      "q": "Is fundering op staal slechter dan heien?",
+      "a": "Nee, op geschikte grond is het een prima en goedkopere oplossing. Het risico zit in veranderende omstandigheden: langdurige droogte, bemaling of zwaarder belasten kunnen zettingen veroorzaken die bij palen minder spelen."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["heipaal", "sondering", "bouwtechniek:fundering-typen"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "pir-isolatie",
+  "titel": "PIR-isolatie",
+  "title_tag": "Wat is PIR-isolatie? Betekenis + uitleg | Bylder",
+  "meta_description": "PIR is een hardschuim isolatiemateriaal met hoge isolatiewaarde per centimeter, veel gebruikt in daken en vloeren. Lees de voor- en nadelen.",
+  "intro": [
+    "PIR-isolatie (polyisocyanuraat) is een hardschuim isolatiemateriaal dat als platen wordt geleverd, vaak met aluminium cachering. PIR isoleert per centimeter dikte beter dan de meeste alternatieven, waardoor je met een dun pakket een hoge isolatiewaarde haalt.",
+    "Dat maakt PIR populair op plekken waar ruimte schaars is: platte daken, hellende daken, vloeren boven kruipruimtes en aanbouwen. Voor wie offertes vergelijkt: let niet op de dikte maar op de opgegeven Rd-waarde van de plaat, want die bepaalt de prestatie."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat zijn de voor- en nadelen van PIR?",
+      "html": "<p>Voordelen: een hoge isolatiewaarde per centimeter, licht van gewicht, drukvast (goed beloopbaar op platte daken), vochtongevoelig en maatvast. Nadelen: PIR is duurder per vierkante meter dan bijvoorbeeld glaswol of EPS, luchtdicht aansluiten vraagt zorgvuldig tapen van de naden, en het materiaal dempt geluid nauwelijks — voor geluidsisolatie kies je minerale wol. Bij brand verkoolt PIR aan het oppervlak maar komt er wel rook vrij; in de meeste woningtoepassingen wordt het achter een afwerkingslaag zoals gips toegepast. In de praktijk zie je PIR vaak in combinatie: PIR waar ruimte en vocht tellen, wol waar geluid en betaalbaarheid tellen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen PIR en PUR?",
+      "a": "Chemisch zijn het verwanten, maar PIR is de doorontwikkeling: beter brandgedrag en iets hogere isolatiewaarde. PUR ken je vooral als gespoten schuim (bijvoorbeeld onder vloeren), PIR vrijwel altijd als plaat."
+    },
+    {
+      "q": "Welke dikte PIR heb ik nodig?",
+      "a": "Dat hangt af van de gewenste Rc-waarde van de hele constructie. De leverancier geeft per plaatdikte een Rd-waarde op; je aannemer of adviseur rekent daarmee uit welke dikte nodig is voor het doel — bijvoorbeeld de nieuwbouweis voor het dak."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["rc-waarde", "u-waarde", "installaties:isolatiematerialen"]
+  }
+}

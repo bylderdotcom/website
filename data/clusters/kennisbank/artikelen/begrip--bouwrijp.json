@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "bouwrijp",
+  "titel": "Bouwrijp",
+  "title_tag": "Wat is bouwrijp? Betekenis + uitleg | Bylder",
+  "meta_description": "Bouwrijp betekent dat een kavel klaar is om op te bouwen: obstakels verwijderd, grond op hoogte en nutsvoorzieningen tot aan de kavelgrens. Lees wat erbij hoort.",
+  "intro": [
+    "Bouwrijp betekent dat een stuk grond gereed is gemaakt om op te bouwen: obstakels en begroeiing zijn verwijderd, de grond is op hoogte gebracht en voorbelast waar nodig, en riolering en nutsvoorzieningen liggen tot aan de kavelgrens.",
+    "Wie een kavel of nieuwbouwwoning koopt, ziet de term vaak in de koop- of aannemingsovereenkomst: de gemeente of ontwikkelaar levert bouwrijpe grond, daarna begint de aannemer. Wat precies onder 'bouwrijp' valt verschilt per project — controleer dus wat is inbegrepen voordat je tekent."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen bouwrijp en woonrijp?",
+      "html": "<p>Bouwrijp maken gebeurt vóór de bouw: slopen, egaliseren, eventueel voorbelasten van slappe grond, en het aanleggen van bouwwegen, riolering en kabels en leidingen tot de kavel. Woonrijp maken gebeurt ná de bouw: definitieve bestrating, openbare verlichting, groen en de inrichting van de openbare ruimte. Tussen die twee fases kan flink wat tijd zitten — houd er rekening mee dat je straat bij oplevering van de woning vaak nog niet af is. Voor de kavel zelf geldt: bouwrijp zegt niets over de draagkracht van de grond; daarvoor is een sondering nodig die het funderingsadvies bepaalt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Betekent bouwrijp dat de grond schoon is?",
+      "a": "Niet automatisch. Bij projectmatige uitgifte hoort meestal een bodemonderzoek waaruit blijkt dat de grond geschikt is voor wonen, maar vraag bij een losse kavel altijd naar het bodemrapport voordat je koopt."
+    },
+    {
+      "q": "Wie betaalt het bouwrijp maken?",
+      "a": "Bij projectbouw zit het in de grondprijs. Koop je een eigen kavel die nog niet bouwrijp is, dan komen sloop, egaliseren en aansluitingen voor jouw rekening — kosten die per locatie sterk verschillen."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["sondering", "heipaal", "bouwtechniek:fundering-typen"]
+  }
+}

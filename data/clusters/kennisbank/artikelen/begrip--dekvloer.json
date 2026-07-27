@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "dekvloer",
+  "titel": "Dekvloer",
+  "title_tag": "Wat is een dekvloer? Betekenis + uitleg | Bylder",
+  "meta_description": "Een dekvloer is de afwerklaag van zand-cement of anhydriet op de constructieve vloer, waarop de vloerafwerking komt. Lees soorten, dikte en droogtijd.",
+  "intro": [
+    "Een dekvloer is de laag zand-cement of anhydriet (gietvloer) die op de constructieve vloer wordt aangebracht om een vlakke ondergrond te maken voor de vloerafwerking. In de dekvloer liggen meestal ook de leidingen van de vloerverwarming.",
+    "Voor kopers en verbouwers is de dekvloer belangrijker dan hij lijkt: de vlakheid bepaalt of je pvc of grote tegels strak krijgt, en de droogtijd bepaalt wanneer je vloer erin mag. Te vroeg afwerken is een klassieke oorzaak van loszittende vloeren en schimmel."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Welke soorten dekvloer zijn er?",
+      "html": "<p>De twee gangbare soorten zijn de traditionele zandcementdekvloer, die wordt gesmeerd en aangetrild, en de anhydrietgietvloer, die vloeibaar wordt gestort en zichzelf vlak trekt. Anhydriet is vlakker en geleidt warmte van vloerverwarming beter, maar is gevoelig voor vocht en vraagt vaak schuren en primeren voor het tegelen. Een dekvloer kan hechtend op de constructievloer liggen, of los daarvan als zwevende dekvloer op isolatie — die laatste variant is standaard in nieuwbouw vanwege geluid en warmte. Controleer voor het leggen van de afwerkvloer altijd het restvochtpercentage; per centimeter dikte geldt grofweg een week droogtijd voor zandcement.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe dik is een dekvloer?",
+      "a": "Meestal 5 tot 8 cm, afhankelijk van vloerverwarming en of de vloer zwevend is uitgevoerd. In de technische omschrijving van nieuwbouw staat de dikte vermeld; die heb je nodig als je later iets in de vloer wilt frezen of boren."
+    },
+    {
+      "q": "Mag ik in een dekvloer boren?",
+      "a": "Voorzichtig: in de dekvloer liggen vaak vloerverwarmingsleidingen en soms elektraleidingen. Vraag het leidingplan of de foto's van voor het storten op, of laat de leidingen detecteren voordat je boort."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["zwevende-dekvloer", "krimpscheur", "afschot"]
+  }
+}

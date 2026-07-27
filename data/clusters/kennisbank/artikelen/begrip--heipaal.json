@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "heipaal",
+  "titel": "Heipaal",
+  "title_tag": "Wat is een heipaal? Betekenis + uitleg | Bylder",
+  "meta_description": "Een heipaal is een betonnen of houten paal die de belasting van een gebouw overdraagt naar een diepe draagkrachtige grondlaag. Lees soorten en aandachtspunten.",
+  "intro": [
+    "Een heipaal is een lange betonnen (vroeger houten) paal die in de grond wordt geheid of geschroefd om het gewicht van een gebouw over te dragen naar een diepgelegen draagkrachtige zandlaag. Heipalen zijn nodig waar de bovenste grondlagen te slap zijn om op te funderen.",
+    "In grote delen van West- en Noord-Nederland staat vrijwel elke woning op palen. Voor nieuwbouwkopers is het heien een mijlpaal in de bouw; voor verbouwers met een aanbouwplan bepalen de paallengtes uit de sondering een flink deel van het funderingsbudget."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Welke soorten heipalen zijn er?",
+      "html": "<p>De klassieke variant is de prefab betonpaal die met een heiblok de grond in wordt geslagen — snel en goedkoop, maar met trillingen en geluid. In bebouwde omgeving worden daarom vaak trillingsvrije alternatieven gebruikt: schroefpalen, boorpalen of in de grond gevormde palen. De constructeur kiest het paaltype en de lengte op basis van de sondering; paallengtes van 10 tot 20 meter zijn in laag Nederland normaal. Bij een aanbouw naast een bestaande woning is trillingsarm werken vrijwel altijd het advies, om schade aan de bestaande fundering en die van de buren te voorkomen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Waarom rotten oude houten heipalen?",
+      "a": "Houten palen blijven goed zolang ze volledig onder water staan. Daalt de grondwaterstand, dan komt de paalkop droog te staan en gaat het hout schimmelen (paalrot). Dit speelt vooral bij vooroorlogse woningen in veen- en kleigebieden."
+    },
+    {
+      "q": "Hoeveel palen heeft een woning nodig?",
+      "a": "Dat rekent de constructeur uit op basis van het gewicht van de woning en de draagkracht per paal uit de sondering. Voor een rijwoning gaat het vaak om een tiental palen, voor een vrijstaand huis meer."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["fundering-op-staal", "sondering", "bouwtechniek:fundering-typen"]
+  }
+}

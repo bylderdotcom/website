@@ -7,7 +7,7 @@ De generator (`_scripts/generate_kennisbank.py`) rendert hieruit de pagina's.
 
 ```json
 {
-  "cluster": "keuken | badkamer | materialen | vloeren | installaties | bim | begrip",
+  "cluster": "keuken | badkamer | materialen | vloeren | installaties | bim | bouwtechniek | geld-recht | begrip",
   "slug": "url-slug",
   "titel": "H1 zonder merknaam",
   "title_tag": "SEO-title ≤60 tekens, eindigend op ' | Bylder'",
@@ -42,7 +42,7 @@ Begrippen (`cluster: "begrip"`): zelfde schema maar compacter — intro[0] = de 
 
 - Complete keuken: €6.000–€20.000, gemiddeld €12.000 (middensegment).
 - Complete badkamer: €7.000–€20.000, gemiddeld €12.000; renovatie €7.500–€20.000.
-- Bylder-lidmaatschap: €99 eenmalig; gemiddelde besparing €4.200; 61 deelnemende merken (schrijf "60+").
+- Bylder-account: gratis voor bewoners; gemiddelde besparing €4.200; 61 deelnemende merken (schrijf "60+").
 - 96% van de kopers betaalt minstens één post te duur; gemiddeld €1.840 te veel aan meerwerk.
 - Nieuwbouw-afwerking totaal: €35.000–€65.000 (gemiddeld €42.000).
 

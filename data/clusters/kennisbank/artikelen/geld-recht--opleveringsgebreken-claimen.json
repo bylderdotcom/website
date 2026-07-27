@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "opleveringsgebreken-claimen",
+  "titel": "Opleveringsgebreken claimen: van proces-verbaal tot herstel",
+  "title_tag": "Opleveringsgebreken claimen: zo doe je dat | Bylder",
+  "meta_description": "Opleverpunten laten herstellen? Zo gebruik je het proces-verbaal van oplevering, de redelijke hersteltermijn en het 5%-depot als drukmiddel.",
+  "intro": [
+    "Opleveringsgebreken zijn de tekortkomingen die je bij de oplevering van je woning of verbouwing constateert: van krassen op het glas tot een niet-werkende vloerverwarming. Alles wat je op dat moment vastlegt, moet de aannemer nog herstellen — de oplevering is dus geen formaliteit maar een juridisch ijkpunt.",
+    "Wat je bij oplevering niet noteert, geldt al snel als geaccepteerd (behalve verborgen gebreken). Een zorgvuldige oplevering met een compleet proces-verbaal is daarom de basis van elke latere claim."
+  ],
+  "stats": [
+    ["1", "proces-verbaal bepaalt wat de aannemer moet herstellen"],
+    ["5%", "van de aanneemsom als drukmiddel in notarisdepot"],
+    ["3 maanden", "blijft dat depot na oplevering in beginsel staan"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het proces-verbaal van oplevering?",
+      "html": "<p>Het proces-verbaal van oplevering is het document dat jij en de aannemer bij de oplevering samen opmaken en ondertekenen. Erin staan alle geconstateerde gebreken en onvolkomenheden, vaak met een afgesproken hersteltermijn. Het markeert ook juridisch de oplevering: vanaf dat moment gaat het risico over op jou en beginnen garantie- en verjaringstermijnen te lopen.</p><p>Praktische tips: loop de woning systematisch door (per ruimte, inclusief buiten en installaties), test wat je testen kunt, en neem eventueel een <strong>bouwkundig keurder</strong> mee — die ziet gebreken die jij mist. Teken alleen voor wat er daadwerkelijk op papier staat en vraag direct een kopie.</p>"
+    },
+    {
+      "kop": "Binnen welke termijn moet de aannemer herstellen?",
+      "html": "<p>De aannemer moet opleverpunten binnen een <strong>redelijke termijn</strong> herstellen. Wat redelijk is, hangt af van de aard van het gebrek en bijvoorbeeld levertijden van materialen; garantieregelingen en model-overeenkomsten noemen vaak concrete termijnen van enkele weken tot circa drie maanden. Controleer wat jouw contract of regeling zegt en leg afwijkende afspraken schriftelijk vast.</p><p>Blijft herstel uit, stuur dan een schriftelijke herinnering met een duidelijke termijn en daarna een formele <strong>ingebrekestelling</strong>. Pas als de aannemer in verzuim is, kun je vervolgstappen zetten zoals herstel door een derde op zijn kosten — sla die stap niet over.</p>"
+    },
+    {
+      "kop": "Hoe zet je het 5%-depot in als drukmiddel?",
+      "html": "<p>Bij nieuwbouw mag je de laatste 5% van de aanneemsom in depot bij de notaris storten (artikel 7:768 BW). Dat depot blijft in beginsel drie maanden na oplevering staan. Zijn er dan nog niet-herstelde opleverpunten, meld de notaris dan <strong>vóór het einde van die termijn schriftelijk</strong> dat je je opschortingsrecht inroept, met de openstaande punten uit het proces-verbaal en een redelijke inschatting van de herstelkosten.</p><p>Houd het proportioneel: het bedrag dat je vasthoudt moet in redelijke verhouding staan tot de gebreken. Geef delen vrij naarmate punten worden opgelost — dat houdt de druk zuiver en de relatie werkbaar.</p>"
+    },
+    {
+      "kop": "Wat als je een gebrek pas na de oplevering ziet?",
+      "html": "<p>Gebreken die bij oplevering redelijkerwijs niet te ontdekken waren, gelden als <strong>verborgen gebreken</strong>: daarvoor blijft de aannemer ook na oplevering aansprakelijk. Meld zo'n gebrek na ontdekking binnen bekwame tijd schriftelijk. Voor woningen onder een garantieregeling (Woningborg/SWK) kun je daarnaast een beroep doen op de garantietermijnen per onderdeel.</p><p>Let daarbij op de <strong>verjaring</strong>: na je schriftelijke protest gaat een verjaringstermijn van in beginsel twee jaar lopen voor je rechtsvordering. Die termijn kun je stuiten met een schriftelijke aanmaning waarin je je ondubbelzinnig je rechten voorbehoudt. Bij twijfel over termijnen: vraag tijdig juridisch advies — dit is voorlichting, geen juridisch advies.</p>"
+    },
+    {
+      "kop": "Hoe bouw je een sterk dossier op?",
+      "html": "<ul><li><strong>Foto's en video's</strong> van elk gebrek, met datum.</li><li><strong>Het ondertekende proces-verbaal</strong> plus eventuele keuringsrapporten.</li><li><strong>Alle correspondentie</strong> over herstel: herinneringen, toezeggingen, ingebrekestellingen.</li><li><strong>Offertes van derden</strong> voor herstelkosten, ter onderbouwing van het bedrag dat je opschort.</li></ul><p>Met zo'n dossier sta je sterk bij de geschillencommissie uit je contract of garantieregeling, of bij de rechter als het zover komt. In de praktijk lost een compleet dossier veel geschillen al op vóór die stap nodig is.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Moet ik tekenen bij de oplevering als er veel gebreken zijn?",
+      "a": "Je kunt gewoon opleveren mét een lange gebrekenlijst: tekenen van het proces-verbaal betekent niet dat je de gebreken accepteert, juist dat ze zijn vastgelegd. Bij zeer ernstige gebreken kun je de oplevering ook weigeren; overleg dan direct met een jurist of je waarborginstelling."
+    },
+    {
+      "q": "Mag ik een gebrek zelf (laten) herstellen en de rekening sturen?",
+      "a": "Pas nadat de aannemer in verzuim is: eerst schriftelijk aanmanen en in gebreke stellen met een redelijke termijn. Herstel je eerder zelf, dan riskeer je dat je de kosten niet vergoed krijgt en bewijs verloren gaat. Documenteer het gebrek in elk geval grondig vóór herstel."
+    },
+    {
+      "q": "Wat is het verschil met de onderhoudstermijn uit de garantieregeling?",
+      "a": "Garantieregelingen kennen na oplevering een onderhoudsperiode van enkele maanden waarin je ook nieuwe punten kunt melden die feitelijk opleverpunten zijn. Daarna val je terug op de garantietermijnen per onderdeel en op de wettelijke regels over verborgen gebreken."
+    },
+    {
+      "q": "Heeft een opleverkeuring juridische waarde?",
+      "a": "Ja, een rapport van een onafhankelijke bouwkundige is sterk bewijs van de staat van de woning op de opleverdatum. Zorg wel dat de gebreken uit het rapport ook in het proces-verbaal terechtkomen of er als bijlage aan worden gehecht."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["vijf-procent-regeling", "verborgen-gebreken", "geschil-met-aannemer"]
+  }
+}

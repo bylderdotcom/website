@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "kierdichting",
+  "titel": "Kierdichting",
+  "title_tag": "Wat is kierdichting? Betekenis + uitleg | Bylder",
+  "meta_description": "Kierdichting is het afdichten van naden en kieren in de gebouwschil tegen tocht en warmteverlies. Lees waarom het cruciaal is voor comfort en energierekening.",
+  "intro": [
+    "Kierdichting is het afdichten van naden en kieren in de schil van een woning — rond kozijnen, deuren, dakaansluitingen en doorvoeren — zodat er geen ongecontroleerde luchtstroom van binnen naar buiten ontstaat. Het gebeurt met tochtstrips, compriband, kit, tape en folies.",
+    "Voor bewoners is kierdichting een van de goedkoopste verduurzamingsmaatregelen: tocht wegnemen verhoogt direct het comfort en verlaagt het stookverbruik. Bij nieuwbouw is kierdichting onderdeel van luchtdicht bouwen en wordt de kwaliteit soms gemeten met een blowerdoortest."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar zitten de belangrijkste kieren in een woning?",
+      "html": "<p>De grootste lekken zitten zelden waar je ze voelt: aansluitingen van dak op muur, de zolderluik- of vlizotraphatch, leidingdoorvoeren, de brievenbus, kruipluik en de naden rond kozijnen. Bij oudere woningen loont een systematische ronde met tochtstrips en kit; bij grondige renovatie werk je met luchtdichtingsfolies en tapes die in de constructie worden opgenomen. Belangrijk: kierdichting is iets anders dan ventilatie dichtzetten. Roosters en ventilatievoorzieningen moeten juist openblijven — het doel is 'luchtdicht bouwen, gecontroleerd ventileren'. Wie kieren dicht zonder goede ventilatie riskeert vocht- en schimmelproblemen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen kierdichting en isolatie?",
+      "a": "Isolatie remt warmtetransport door het materiaal heen; kierdichting stopt warmteverlies via luchtstroming door naden. Ze vullen elkaar aan: dik isoleren met grote kieren is dweilen met de kraan open."
+    },
+    {
+      "q": "Kan kierdichting kwaad voor mijn woning?",
+      "a": "Alleen als je ook de ventilatie dichtzet. Zorg dat roosters, mechanische ventilatie of wtw goed blijven werken; dan is betere kierdichting louter winst voor comfort en energieverbruik."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["winddicht", "koudebrug", "bouwtechniek:luchtdicht-bouwen"]
+  }
+}

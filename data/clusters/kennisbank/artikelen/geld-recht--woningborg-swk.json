@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "woningborg-swk",
+  "titel": "Waarborgcertificaat van Woningborg of SWK: wat dekt het?",
+  "title_tag": "Woningborg & SWK waarborgcertificaat uitgelegd | Bylder",
+  "meta_description": "Wat dekt een waarborgcertificaat van Woningborg of SWK? Insolventie- en gebrekengarantie uitgelegd, plus hoe je jouw certificaat controleert.",
+  "intro": [
+    "Een waarborgcertificaat is een garantiebewijs dat een waarborginstelling — in Nederland vooral Woningborg en SWK — afgeeft bij een nieuwbouwwoning. Het beschermt je tegen twee grote risico's: het faillissement van je bouwer tijdens de bouw en gebreken aan de woning na oplevering.",
+    "Het certificaat hoort bij de garantie- en waarborgregeling die in je aannemingsovereenkomst is opgenomen. Veel hypotheekverstrekkers eisen zo'n certificaat bij nieuwbouw. Maar een belofte in de brochure is niet genoeg: het certificaat moet daadwerkelijk voor jouw woning zijn afgegeven."
+  ],
+  "stats": [
+    ["2", "hoofddekkingen: insolventie én gebreken"],
+    ["10 jaar", "geldt doorgaans voor ernstige constructieve gebreken"],
+    ["1", "certificaat per woning, op naam en bouwnummer"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is een waarborgcertificaat precies?",
+      "html": "<p>Bouwers die zijn aangesloten bij Woningborg of SWK bouwen onder een garantie- en waarborgregeling. Bij elke verkochte woning geeft de waarborginstelling een certificaat af aan de koper. Dat certificaat bevestigt dat jouw woning onder de regeling valt en geeft je rechtstreeks aanspraken tegenover de waarborginstelling — dus ook als de bouwer zelf niet meer bestaat.</p><p>De regelingen van Woningborg en SWK lijken sterk op elkaar; welke geldt, hangt af van waar jouw bouwer is aangesloten. De exacte voorwaarden en termijnen staan in de versie van de regeling die op jouw contract van toepassing is.</p>"
+    },
+    {
+      "kop": "Wat houdt de insolventiewaarborg in?",
+      "html": "<p>Gaat je bouwer failliet tijdens de bouw, dan zorgt de waarborginstelling — binnen de grenzen van de regeling — voor een oplossing: de woning wordt afgebouwd door een andere aannemer, of je krijgt een schadevergoeding. De regeling kent daarbij maxima, bijvoorbeeld een plafond op de extra afbouwkosten die worden vergoed. Zonder certificaat zou je bij een faillissement achteraan aansluiten bij de schuldeisers en waarschijnlijk je aanbetaalde termijnen grotendeels kwijt zijn.</p><p>Dit is de belangrijkste reden waarom je nooit zou moeten tekenen voor een nieuwbouwwoning zonder te weten hoe de insolventiedekking is geregeld.</p>"
+    },
+    {
+      "kop": "Wat dekt de gebrekengarantie na oplevering?",
+      "html": "<p>Na oplevering garandeert de regeling dat je woning voldoet aan bepaalde kwaliteitsnormen. In grote lijnen:</p><ul><li><strong>Onderhoudstermijn:</strong> de eerste maanden na oplevering meld je gebreken die alsnog onder de opleververplichting vallen.</li><li><strong>Algemene garantie:</strong> voor de meeste onderdelen geldt een garantietermijn van enkele jaren.</li><li><strong>Constructieve gebreken:</strong> voor ernstige gebreken aan de constructie geldt een aanzienlijk langere termijn, doorgaans tot tien jaar.</li><li><strong>Kortere termijnen:</strong> voor sommige onderdelen (zoals schilderwerk of kitvoegen) gelden juist kortere termijnen.</li></ul><p>Komt de bouwer zijn garantieverplichting niet na — ook bij faillissement — dan kun je terugvallen op de waarborginstelling. Controleer de exacte termijnen in jouw garantieregeling; die verschillen per onderdeel en per versie van de regeling.</p>"
+    },
+    {
+      "kop": "Hoe controleer je of jouw certificaat klopt?",
+      "html": "<p>Doe deze checks vóór en kort na het tekenen:</p><ul><li>Controleer of de bouwer daadwerkelijk is <strong>aangesloten</strong> bij Woningborg of SWK — dat kan via de registers van de instellingen zelf.</li><li>Kijk of de aannemingsovereenkomst het <strong>officiële model</strong> van de regeling volgt en de garantieregeling als bijlage bevat.</li><li>Wacht op het <strong>certificaat op jouw naam en bouwnummer</strong>; meestal ontvang je dit kort na het tekenen. Zonder certificaat geen dekking.</li><li>Bewaar het certificaat goed: bij verkoop gaat de resterende garantie over op de volgende eigenaar.</li></ul><p>Ontbreekt het certificaat weken na ondertekening nog, trek dan aan de bel bij de bouwer én de waarborginstelling voordat je verdere termijnen betaalt.</p>"
+    },
+    {
+      "kop": "Wat valt er niet onder de waarborg?",
+      "html": "<p>De regeling dekt niet alles. Buiten de dekking vallen doorgaans: zelf aangebracht of door derden uitgevoerd werk (zoals een keuken die je los hebt gekocht), normale verkleuring en krimpscheurtjes binnen de norm, gebreken door achterstallig onderhoud of eigen gebruik, en onderdelen die expliciet zijn uitgesloten (soms geldt een beperkte dekking voor casco-onderdelen of zelfwerkzaamheid). Ook een geschil over meerwerkprijzen is geen garantiekwestie.</p><p>Bij twijfel over dekking: dien de klacht gewoon in bij de waarborginstelling en laat hen beoordelen. Bij een afwijzing waar je het niet mee eens bent, kan de geschillenregeling of een bouwrechtjurist uitkomst bieden — dit artikel is voorlichting, geen juridisch advies.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Woningborg of SWK beter?",
+      "a": "De regelingen zijn inhoudelijk sterk vergelijkbaar en beide worden breed geaccepteerd door hypotheekverstrekkers. Je kiest in de praktijk ook niet zelf: de bouwer is bij één van beide aangesloten. Belangrijker is dát er een certificaat komt en dat je de bijbehorende regeling leest."
+    },
+    {
+      "q": "Wat kost een waarborgcertificaat?",
+      "a": "De kosten zitten verwerkt in de aanneemsom; je betaalt er niet apart voor als koper. De bouwer draagt de aansluit- en certificaatkosten af aan de waarborginstelling."
+    },
+    {
+      "q": "Geldt de garantie ook voor meerwerk?",
+      "a": "Meerwerk dat door de bouwer zelf is uitgevoerd valt doorgaans onder de regeling; werk dat je door derden laat doen niet. Laat je iets vervallen (minderwerk) en regel je het zelf, dan vervalt op dat onderdeel meestal ook de garantie. Check dit vóór je kiest voor casco-opties."
+    },
+    {
+      "q": "Wat doe ik als de bouwer een garantieklacht afwijst?",
+      "a": "Leg de klacht schriftelijk vast en dien hem in bij de waarborginstelling; die kent een eigen klachten- en geschillenprocedure. Blijf je het oneens, dan kun je het geschil laten beslechten via de in de regeling aangewezen geschilleninstantie of arbitrage."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["aannemingsovereenkomst", "verborgen-gebreken", "aansprakelijkheid-aannemer"]
+  }
+}
