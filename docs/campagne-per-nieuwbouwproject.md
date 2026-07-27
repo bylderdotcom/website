@@ -187,6 +187,86 @@ project. Stap 4 maakt de tekst waar.
 
 ---
 
+---
+
+## 0-septies. De locatielijst is de motor — twee voedingen, twee mechanieken
+
+De scrape begint niet bij bedrijven maar bij **locaties**. Die lijst moet
+voortdurend actualiseren, anders loopt de campagne achter de markt aan. Er zijn
+twee voedingen, en ze verschillen fundamenteel van karakter.
+
+### Voeding 1 — nieuwbouw: een moment
+
+De wekelijkse discovery-loop (`nieuwbouw-discovery.yml`, vrijdag 07:00) vult de
+lijst al continu. Stand 27 juli: **995 projecten gevonden**, met naam, plaats en
+url.
+
+Maar in de database staan **18 projecten**. Die 995 hebben alleen die drie velden;
+alleen 18 zijn verrijkt met woningaantal, opleverdatum en coördinaten — precies de
+velden die een campagne nodig heeft. Zonder opleverdatum is er geen klok, zonder
+coördinaten geen radius, zonder woningaantal geen argument.
+
+**De bottleneck is dus niet het vinden van projecten maar het verrijken ervan.**
+995 gevonden, 1,8% bruikbaar. Dat is het eerste dat moet worden opgelost aan de
+locatiekant, en het is een andere klus dan de scraper porten.
+
+Let op: het bestaande verificatiebewijs blijft gelden — twee van drie
+topkandidaten hadden portaaldata die systematisch verkeerd was, want grote
+projecten staan jaren te vroeg als "in verkoop". De discovery-score is een
+shortlist, geen waarheid; de opleverdatum moet uit een primaire bron komen.
+
+### Voeding 2 — bestaande bouw: een stroom
+
+**Niet vergeten, en groter dan nieuwbouw.** Wie net verhuisd is naar een bestaande
+woning gaat verbouwen, stucen, vloeren leggen en inrichten — vaak méér dan een
+nieuwbouwkoper, want er staat al iets dat weg moet.
+
+Hier is geen opleverdatum en geen cohort. In plaats van één moment is er een
+continue stroom transacties. Dat vraagt een andere mechaniek: niet getimed op een
+datum maar **altijd aan**, gerangschikt op transactievolume per regio.
+
+Bron: **CBS-tabel `85792NED`** — "Bestaande koopwoningen; verkoopprijzen,
+prijsindex 2020=100, regio". Gratis, CC-BY, per kwartaal, laatst bijgewerkt
+22 juli 2026, en bevat de variabele *Verkochte woningen*: het aantal geregistreerde
+transacties bij het Kadaster. Op te halen via de OData-API
+(`opendata.cbs.nl/ODataApi/OData/85792NED`). Verifieer bij het bouwen welke
+regioniveaus in de `RegioS`-dimensie zitten; `85819NED` is de COROP-variant.
+
+De eerdere per-gemeente-tabel `70128ned` is stopgezet — niet gebruiken.
+Kadaster verkoopt transacties per postcode via Mijn Kadaster voor €3,70 per
+postcode; dat is fijnmaziger en nog steeds geaggregeerd, dus bruikbaar als de
+gemeente te grof blijkt. Alleen inzetten als de gratis bron niet volstaat.
+
+### Waarom de twee mechanieken verschillen
+
+| | Nieuwbouw | Bestaande bouw |
+|---|---|---|
+| Aard | Eén moment, gesynchroniseerd cohort | Continue stroom, geen cohort |
+| Klok | Opleverdatum | Geen; volume per kwartaal |
+| Campagnevorm | Getimed, één ronde per project | Altijd aan, gerangschikt op volume |
+| Argument aan bedrijven | "240 woningen opgeleverd in november, 8 km van je vestiging" | "In jouw gemeente wisselden X woningen van eigenaar het afgelopen kwartaal" |
+| Instagram-targeting | Postcodes rond het project | Gemeente, doorlopend |
+| Volume | Beperkt, scherp | Groot, diffuus |
+
+Beide voedingen leveren hetzelfde eindresultaat aan de trechter van §0-ter: een
+locatie met coördinaten en een aanleiding. Daarna is de rest van de keten identiek
+— zelfde scraper, zelfde radius, zelfde verzendscherm, zelfde landingspagina.
+
+### De AVG-grens blijft waar hij stond
+
+Geaggregeerde cijfers per regio zijn statistiek en vrij te gebruiken. Wie wanneer
+naar welk adres verhuisd is, is een persoonsgegeven. Dat kopen we niet, ook niet
+als een databroker het aanbiedt — dat staat al in §8 en blijft staan. De campagne
+richt zich op gebieden, niet op huishoudens.
+
+### Contentkant staat er al
+
+`/bestaande-bouw/` bestaat als cluster, net als `/nieuwbouw-vs-bestaand/`. De
+landingspagina's voor dit spoor hoeven dus niet van nul; ze moeten alleen de
+bestaande-bouw-variant van het argument krijgen als de bedrijfsmail daarnaar wijst.
+
+---
+
 ## 0-sexies. De grenzen die in de machine horen, niet in goede bedoelingen
 
 De zeven waarborgen uit §0 blijven ongewijzigd gelden: één doel per mail, lage
@@ -471,7 +551,7 @@ Vervangen door §0-quinquies, die uitgaat van wat er op 27 juli werkelijk staat.
 - Geen mail versturen voordat de landingspagina de landelijke tier en een
   claim-flow heeft (§0-quinquies stap 5).
 - Geen derde mail naar wie nooit reageerde.
-- Geen aankoop van verhuisdata bij databrokers.
+- Geen aankoop van verhuisdata bij databrokers; geaggregeerde regiocijfers wél (§0-septies).
 - Geen onbeheerd verzenden: elke batch krijgt een menselijke goedkeuring.
 - Geen ranking die te koop is — dat is de kern van de propositie en het argument
   waarmee we bedrijven binnenhalen.
