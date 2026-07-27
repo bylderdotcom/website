@@ -79,12 +79,31 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5HBPJZ1TGSD1ZXKPGWKRT6-timber",
    "plaats": "rotterdam",
-   "naam": "Timber"
+   "naam": "Timber",
+   "woningen": 38,
+   "lat": 51.886834,
+   "lng": 4.497806,
+   "status": "In verkoop",
+   "jaren": [
+    2027
+   ],
+   "oplevering": 2027,
+   "oplevering_bron": "oplevertrefwoord"
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KTXGYJV3CH373DQ8J9MNK9PP-riva",
    "plaats": "rotterdam",
-   "naam": "Riva"
+   "naam": "Riva",
+   "woningen": 48,
+   "lat": 51.91649915,
+   "lng": 4.48794353,
+   "status": "In verkoop",
+   "jaren": [
+    2026,
+    2027
+   ],
+   "oplevering": 2027,
+   "oplevering_bron": "kwartaalnotatie (onzeker)"
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01KVSQ14WGVWTG1N0WZF8GEVJ3-nieuw-harculo-zwolle-parkvillas",
@@ -145,7 +164,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01KTC0FCXBK27HAQFHPQCG523P-de-pauwentuin",
    "plaats": "leidschendam-voorburg",
-   "naam": "De Pauwentuin"
+   "naam": "De Pauwentuin",
+   "woningen": 22,
+   "lat": 52.08,
+   "lng": 4.4,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/maassluis/01KTTVZF6DPVNQDWWQ87THVYCE-de-oevers-maassluis",
@@ -250,7 +276,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JNGMQ8D3ECME3N3SCKHE0TVZ-rotterdam-tree-house-koopappartementen",
    "plaats": "rotterdam",
-   "naam": "Rotterdam Tree House Koopappartementen"
+   "naam": "Rotterdam Tree House Koopappartementen",
+   "woningen": 127,
+   "lat": 51.92461492,
+   "lng": 4.47111636,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/teylingen/01HQX314BKGG93GH8ZGYC2TNQE-nieuw-boekhorst",
@@ -315,12 +348,26 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JXHD9HWE9G2R8MGRC9663XRK-park-overdeschie-appartementen",
    "plaats": "rotterdam",
-   "naam": "Park Overdeschie Appartementen"
+   "naam": "Park Overdeschie Appartementen",
+   "woningen": null,
+   "lat": 51.93557547,
+   "lng": 4.42109952,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JXHD9J01CP2Y3RG98MXJVZ85-park-overdeschie-woningen",
    "plaats": "rotterdam",
-   "naam": "Park Overdeschie Woningen"
+   "naam": "Park Overdeschie Woningen",
+   "woningen": 16,
+   "lat": 51.93523149,
+   "lng": 4.42114244,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/scherpenzeel/01KS7Q8BW3ER8DPDADCA4CV5B8-de-nieuwe-koepel-fase-2b",
@@ -722,7 +769,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVTC759FY8EV7TY925MGTXJ-piekstraat",
    "plaats": "rotterdam",
-   "naam": "Piekstraat"
+   "naam": "Piekstraat",
+   "woningen": null,
+   "lat": 51.90614627,
+   "lng": 4.51353064,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/waadhoeke/01KP2ZCH4C2GSNBY7YPFZTZ3G6-mooi-st-anne",
@@ -812,12 +866,26 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS7BXY4D7479GWCG16XMXDB-nieuw-kralingen-in-de-lanen-i",
    "plaats": "rotterdam",
-   "naam": "Nieuw Kralingen In De Lanen I"
+   "naam": "Nieuw Kralingen In De Lanen I",
+   "woningen": 39,
+   "lat": 51.93943018,
+   "lng": 4.49706445,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVMXEAVV4BKPYPD64ZQKKA1-de-scharnier",
    "plaats": "rotterdam",
-   "naam": "De Scharnier"
+   "naam": "De Scharnier",
+   "woningen": 118,
+   "lat": 51.897725,
+   "lng": 4.476519,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/stichtse-vecht/01KNV6FDTVAE6ZEETMCA33AKY2-hof-van-clarenborg-fase-2",
@@ -882,7 +950,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNP2GX5SB2CP2EPJDHDD9G39-atlas-1",
    "plaats": "rotterdam",
-   "naam": "Atlas 1"
+   "naam": "Atlas 1",
+   "woningen": null,
+   "lat": 51.899657,
+   "lng": 4.512058,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/schagen/01KMZHJ551BNQNGRAFM1ZK1D6C-sinmareveld",
@@ -1062,7 +1137,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KHBHG69DRKV348T20DWD4ZRA-het-hoofdkwartier",
    "plaats": "rotterdam",
-   "naam": "Het Hoofdkwartier"
+   "naam": "Het Hoofdkwartier",
+   "woningen": null,
+   "lat": 51.94859432,
+   "lng": 4.55115907,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/steenwijkerland/01KJ7MWPM0DX84G5CDRQZ10H0J-kornputkwartier-nxt-fase-1b",
@@ -1162,7 +1244,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01KH93XKDT1AXVJNMC311AXBTV-boogiewood",
    "plaats": "s-gravenhage",
-   "naam": "Boogiewood"
+   "naam": "Boogiewood",
+   "woningen": null,
+   "lat": 52.06980763,
+   "lng": 4.33526625,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/schouwen-duiveland/01KH95EN8MZ2M1NQHQM77WGAPE-riekusweel",
@@ -1269,7 +1358,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JJ740EFAJR12J5198S1ZCVTK-atlas",
    "plaats": "rotterdam",
-   "naam": "Atlas"
+   "naam": "Atlas",
+   "woningen": null,
+   "lat": 51.899591,
+   "lng": 4.512205,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/wijchen/01JFA0YVGCT7TMME00E38SN4RC-tussen-kasteel-en-wijchens-meer",
@@ -1362,12 +1458,26 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HDR2ZX5ZMDKMKG416BTT78YZ-kj-den-haag",
    "plaats": "s-gravenhage",
-   "naam": "Kj Den Haag"
+   "naam": "Kj Den Haag",
+   "woningen": null,
+   "lat": 52.082,
+   "lng": 4.3232,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HZ5NB4V49WF2TP9FQBCKJBM1-de-helden-van-vroondaal",
    "plaats": "s-gravenhage",
-   "naam": "De Helden Van Vroondaal"
+   "naam": "De Helden Van Vroondaal",
+   "woningen": null,
+   "lat": 52.0348,
+   "lng": 4.2205,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01JKZW8REQS78KH9AJ636PN2QH-prelude",
@@ -1452,7 +1562,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01K6MEGHSY7CZFWK2BFEG7ERTT-de-meesters-van-vroondaal",
    "plaats": "s-gravenhage",
-   "naam": "De Meesters Van Vroondaal"
+   "naam": "De Meesters Van Vroondaal",
+   "woningen": 130,
+   "lat": 52.036,
+   "lng": 4.225,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01K749HWMCZD2R303R13N88K3W-joy-merwede",
@@ -1552,7 +1669,16 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01KABRH4MWEKYB1H245Y2HKJMY-monchy-den-haag",
    "plaats": "s-gravenhage",
-   "naam": "Monchy Den Haag"
+   "naam": "Monchy Den Haag",
+   "woningen": 43,
+   "lat": 52.08941973,
+   "lng": 4.30104824,
+   "status": "In verkoop",
+   "jaren": [
+    2027
+   ],
+   "oplevering": 2027,
+   "oplevering_bron": "kwartaalnotatie (onzeker)"
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/west-betuwe/01K7PGTSFGEWSTAFNAC0W0WW4F-hartje-haaften-fase-1",
@@ -1632,7 +1758,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HYN4ZDX3W8BEE93ZEW7T1MBM-duinhil",
    "plaats": "s-gravenhage",
-   "naam": "Duinhil"
+   "naam": "Duinhil",
+   "woningen": 40,
+   "lat": 52.06993414,
+   "lng": 4.22217578,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/staphorst/01KA1GNKM0KWA6FDC0XWA79DP2-dunninkserf",
@@ -1712,17 +1845,41 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6S4RN6BCE8B5PZX8HDF-mix-a-b",
    "plaats": "rotterdam",
-   "naam": "Mix A B"
+   "naam": "Mix A B",
+   "woningen": null,
+   "lat": 51.94036871,
+   "lng": 4.54522848,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01K6FBPPAQBAXB6EX949J1GEF6-het-heij",
    "plaats": "rotterdam",
-   "naam": "Het Heij"
+   "naam": "Het Heij",
+   "woningen": null,
+   "lat": 51.89183123,
+   "lng": 4.41758708,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01K7RR2EDQ2ATQYY3AH4G3T37C-lake-estate",
    "plaats": "rotterdam",
-   "naam": "Lake Estate"
+   "naam": "Lake Estate",
+   "woningen": null,
+   "lat": 51.95124869,
+   "lng": 4.47805311,
+   "status": "In verkoop",
+   "jaren": [
+    2026,
+    2027
+   ],
+   "oplevering": 2027,
+   "oplevering_bron": "kwartaalnotatie (onzeker)"
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01K7P4T8D1BSRGEYYT6946Z2ED-blok-5-stadswoningen",
@@ -2102,7 +2259,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5H2G80ZBHSCAREBN3VPD0S-koer-stadsvilla-karakter",
    "plaats": "rotterdam",
-   "naam": "Koer Stadsvilla Karakter"
+   "naam": "Koer Stadsvilla Karakter",
+   "woningen": null,
+   "lat": 51.901019,
+   "lng": 4.508659,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/tilburg/01JZHAGD6RRC3BFCE79JP72D97-smariuskade-fase-desem",
@@ -2203,7 +2367,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JWQVCF4HNX5R2N3SEA0XS6AK-new-maas",
    "plaats": "rotterdam",
-   "naam": "New Maas"
+   "naam": "New Maas",
+   "woningen": 176,
+   "lat": 51.90262613,
+   "lng": 4.54820292,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/valkenswaard/01J9XY9AB1BAS45XR0RNAXP6B8-valkenswaard-mariakerk",
@@ -2348,22 +2519,52 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JR09HGSAJMES98D26E2Y3WNW-nieuw-kralingen",
    "plaats": "rotterdam",
-   "naam": "Nieuw Kralingen"
+   "naam": "Nieuw Kralingen",
+   "woningen": null,
+   "lat": 51.94032547,
+   "lng": 4.49917669,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JRYV0RX2SMRT0Z3EHBR65K6Y-carnisse-eiland",
    "plaats": "rotterdam",
-   "naam": "Carnisse Eiland"
+   "naam": "Carnisse Eiland",
+   "woningen": null,
+   "lat": 51.88452052,
+   "lng": 4.47703086,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JSPHCMW8C9EN4PDHGHGE5BSJ-weder",
    "plaats": "rotterdam",
-   "naam": "Weder"
+   "naam": "Weder",
+   "woningen": 57,
+   "lat": 51.92370265,
+   "lng": 4.49560306,
+   "status": "In verkoop",
+   "jaren": [
+    2027
+   ],
+   "oplevering": 2027,
+   "oplevering_bron": "kwartaalnotatie (onzeker)"
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JRYVHZM1KZV19X63QR5761Q7-opdreef",
    "plaats": "s-gravenhage",
-   "naam": "Opdreef"
+   "naam": "Opdreef",
+   "woningen": 71,
+   "lat": 52.03362907,
+   "lng": 4.25989069,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/schagen/01JRZ42ZQWZEHSPC700YJGMHK4-dijkzicht",
@@ -2448,7 +2649,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01H9GN7P44YGJTYAFFWBG9MK32-eve-nieuwbouw",
    "plaats": "leidschendam-voorburg",
-   "naam": "Eve Nieuwbouw"
+   "naam": "Eve Nieuwbouw",
+   "woningen": 64,
+   "lat": 52.10049146,
+   "lng": 4.41805959,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/lochem/01HSGWPRA3PZEWMR3ZE5MQQSM2-opgelder",
@@ -2468,7 +2676,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JPSWSPAHN5XQ95KQA2FDTNKV-the-caland",
    "plaats": "rotterdam",
-   "naam": "The Caland"
+   "naam": "The Caland",
+   "woningen": null,
+   "lat": 51.90657221,
+   "lng": 4.47470908,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/schouwen-duiveland/01JN68J00N3WE77F6W62TH7HN4-hofstee-ii",
@@ -2648,12 +2863,26 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HSDTVM298367FN1V8NYT3A8J-corner-lofts",
    "plaats": "s-gravenhage",
-   "naam": "Corner Lofts"
+   "naam": "Corner Lofts",
+   "woningen": 265,
+   "lat": 52.07070926,
+   "lng": 4.32226462,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JJ4QQ7VPAEXYR06BYMT0HRAX-orion",
    "plaats": "s-gravenhage",
-   "naam": "Orion"
+   "naam": "Orion",
+   "woningen": null,
+   "lat": 52.06941,
+   "lng": 4.340345,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01HD3C418G9SX0BF59MQAE32PD-park-vijfsluizen",
@@ -2758,7 +2987,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01JDW68FM3GJ54JS8EQAPHCMAT-edisonpark",
    "plaats": "zoetermeer",
-   "naam": "Edisonpark"
+   "naam": "Edisonpark",
+   "woningen": 550,
+   "lat": 52.0616,
+   "lng": 4.518,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/zwolle/01JDQ4R6GDRNT066ZVQZYP7PFC-nieuwstad-zwolle",
@@ -2931,7 +3167,16 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HV9HEHBA0P2S3A17NF2G94BD-mares",
    "plaats": "s-gravenhage",
-   "naam": "Mares"
+   "naam": "Mares",
+   "woningen": null,
+   "lat": 52.09725776,
+   "lng": 4.25865657,
+   "status": "In verkoop",
+   "jaren": [
+    2028
+   ],
+   "oplevering": 2028,
+   "oplevering_bron": "kwartaalnotatie (onzeker)"
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/utrecht/01HSV4AA1YG26Z0VN60JANS4NA-wonderwoods",
@@ -3091,12 +3336,26 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01H963AVMW1M8SXF12YZX22PYT-populus",
    "plaats": "rotterdam",
-   "naam": "Populus"
+   "naam": "Populus",
+   "woningen": 200,
+   "lat": 51.96143658,
+   "lng": 4.54322261,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HJ6FZ8M6QXWASQE84M5PNQ73-maestro",
    "plaats": "s-gravenhage",
-   "naam": "Maestro"
+   "naam": "Maestro",
+   "woningen": 122,
+   "lat": 52.03910497,
+   "lng": 4.25127983,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/sluis/01HHKSC8GS2YDKY1EX42T8T6X9-beaufort-fase-mistral-b-en-p",
@@ -3400,7 +3659,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5H98RS391XD3CCQ5BWYH2K-de-kaai",
    "plaats": "rotterdam",
-   "naam": "De Kaai"
+   "naam": "De Kaai",
+   "woningen": null,
+   "lat": 51.91479072,
+   "lng": 4.503995,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/schiedam/01H963AK00PQNGH9CQQF7PE931-houthaven",
@@ -3485,7 +3751,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS9H0DG7XDE03ZSSP0AB8G6-nieuw-kralingen-aan-de-boezem-ii",
    "plaats": "rotterdam",
-   "naam": "Nieuw Kralingen Aan De Boezem Ii"
+   "naam": "Nieuw Kralingen Aan De Boezem Ii",
+   "woningen": 36,
+   "lat": 51.93943018,
+   "lng": 4.49706445,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H906KZXNTMNX0ZT6VFY26MS4-brabantbad",
@@ -4321,7 +4594,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BH0SXMTSV91GG1857PW1K-koer-parkwoningen",
    "plaats": "rotterdam",
-   "naam": "Koer Parkwoningen"
+   "naam": "Koer Parkwoningen",
+   "woningen": null,
+   "lat": 51.9015342,
+   "lng": 4.5084452,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/steenbergen/01HT4XKZZR84VKE77BHCCK7YCZ-hof-van-beemden",
@@ -4406,7 +4686,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JC0KT64VFMX12YF3VBXGYKWS-het-zuider-carre",
    "plaats": "rotterdam",
-   "naam": "Het Zuider Carre"
+   "naam": "Het Zuider Carre",
+   "woningen": 72,
+   "lat": 51.8850486,
+   "lng": 4.50310975,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/valkenburg-aan-de-geul/01HJ8GVHHJQZ8ECT3XX5B3SRZM-berg-en-terblijt-bergervliet-fase-1",
@@ -4571,12 +4858,26 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5GZED0T0036FD8YQ4Q7QWE-de-hofrij",
    "plaats": "rotterdam",
-   "naam": "De Hofrij"
+   "naam": "De Hofrij",
+   "woningen": null,
+   "lat": 51.949829,
+   "lng": 4.453994,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6QKKB5Z7NT764HS98DWBKZ-vlietpark-fase-2",
    "plaats": "rotterdam",
-   "naam": "Vlietpark Fase 2"
+   "naam": "Vlietpark Fase 2",
+   "woningen": 26,
+   "lat": 51.8602028,
+   "lng": 4.3565922,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01HJ8GWV22HGAWTTHDR4972JW1-ekp-fase-1",
@@ -4757,22 +5058,50 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6VJGDKJGXGBX2ZA0AKZ-mix-b",
    "plaats": "rotterdam",
-   "naam": "Mix B"
+   "naam": "Mix B",
+   "woningen": 265,
+   "lat": 51.94036871,
+   "lng": 4.54529285,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HJ6FZ8PZR4DG8ZNDKTF6R6FS-moodz",
    "plaats": "rotterdam",
-   "naam": "Moodz"
+   "naam": "Moodz",
+   "woningen": null,
+   "lat": 51.92931214,
+   "lng": 4.48020101,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BFP53RY8NNBA5B65NGWT8-koer-appartementen",
    "plaats": "rotterdam",
-   "naam": "Koer Appartementen"
+   "naam": "Koer Appartementen",
+   "woningen": null,
+   "lat": 51.9015342,
+   "lng": 4.5084452,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BGBGPRNFS0DACQ2V9HZ46-koer-herenhuizen",
    "plaats": "rotterdam",
-   "naam": "Koer Herenhuizen"
+   "naam": "Koer Herenhuizen",
+   "woningen": null,
+   "lat": 51.9015342,
+   "lng": 4.5084452,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/westland/01HDP3NRWG5D0285JZ37HY84PB-de-harmonie",
@@ -4958,7 +5287,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HDR0MVEAKMXE028EBRYJGM7Q-flair10",
    "plaats": "s-gravenhage",
-   "naam": "Flair10"
+   "naam": "Flair10",
+   "woningen": null,
+   "lat": 52.0399,
+   "lng": 4.2337,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H963ASGDJ8JR79ZEHEF8X41V-tuinenrijk-veld-2",
@@ -5048,7 +5384,14 @@
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01HE2ZXNZ7PW9WKKR0AW4NADV3-soeterdael",
    "plaats": "zoetermeer",
-   "naam": "Soeterdael"
+   "naam": "Soeterdael",
+   "woningen": 29,
+   "lat": 52.0564,
+   "lng": 4.4911,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null
   },
   {
    "url": "https://nieuwbouw.nl/aanbod/koop/zuidplas/01H963ARBABYBBJZ02D7RDBKGG-koningskwartier-fase-8",
