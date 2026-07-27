@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "dakisolatie-methoden",
+  "titel": "Welke dakisolatie-methoden zijn er en wat past bij jouw dak?",
+  "title_tag": "Dakisolatie: methoden, Rc-eisen en kosten | Bylder",
+  "meta_description": "Dakisolatie kan aan de binnen- of buitenzijde. Vergelijk de methoden, Rc-eisen voor nieuwbouw en de opties voor het na-isoleren van je zolder.",
+  "intro": [
+    "Dakisolatie kan op twee plekken: aan de buitenzijde van de constructie (op of boven de sporen, het 'warme dak') of aan de binnenzijde (tussen of onder de sporen). Buitenisolatie is technisch de beste oplossing maar vraagt het openleggen van het dak; binnenisolatie is de praktische keuze bij na-isolatie van een bestaande zolder.",
+    "Voor huiseigenaren is het dak de plek waar isoleren het meest oplevert: warme lucht stijgt, dus een slecht geïsoleerd dak lekt continu warmte. Bij nieuwbouw is dikke dakisolatie verplicht; bij bestaande bouw is de zolder vaak de eerste en meest rendabele na-isolatieklus."
+  ],
+  "stats": [
+    ["Rc ≥ 6,3", "wettelijke minimumeis voor een nieuwbouwdak"],
+    ["±30%", "van het warmteverlies van een ongeïsoleerde woning gaat via het dak"],
+    ["€40-€90/m²", "indicatie na-isolatie schuin dak aan de binnenzijde"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen isoleren aan de binnen- en buitenzijde?",
+      "html": "<p>Bij <strong>buitenisolatie</strong> (warm dak) ligt de isolatie boven op het dakbeschot of bestaan de dakplaten zelf uit geïsoleerde sandwichelementen. De hele constructie blijft warm en droog, koudebruggen ontbreken en de zolder houdt zijn volledige hoogte. Dit is de standaard bij nieuwbouw en de beste keuze wanneer de dakpannen toch vervangen worden.</p><p>Bij <strong>binnenisolatie</strong> komt het isolatiemateriaal tussen of onder de sporen, afgewerkt met een dampremmende folie en beplating. Goedkoper en zonder gevelsteiger uit te voeren, maar de details luisteren nauw: de dampremmende laag moet volledig gesloten zijn, anders condenseert binnenlucht in de koude constructie met houtrot als risico.</p><table class=\"vgl\"><thead><tr><th>Aspect</th><th>Buitenzijde</th><th>Binnenzijde</th></tr></thead><tbody><tr><td>Kwaliteit/risico</td><td>Beste opbouw, geen koudebruggen</td><td>Condensrisico bij slechte dampremming</td></tr><tr><td>Ingreep</td><td>Dak open, steiger nodig</td><td>Vanaf de zolder uit te voeren</td></tr><tr><td>Indicatie kosten</td><td>€100-€180/m² (incl. nieuw dakwerk)</td><td>€40-€90/m²</td></tr><tr><td>Wanneer logisch</td><td>Nieuwbouw, renovatie dakbedekking</td><td>Na-isolatie bewoonde woning</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Welke Rc-eisen gelden voor nieuwbouw?",
+      "html": "<p>Voor nieuwbouwdaken eist het Besluit bouwwerken leefomgeving (Bbl) een <a href=\"/kennisbank/begrip/rc-waarde/\">Rc-waarde</a> van minimaal 6,3 m²K/W — de zwaarste eis van de hele schil (gevel 4,7; vloer 3,7), juist omdat het dak het meeste verliest. In de praktijk komt dat neer op circa 16 tot 25 cm isolatie, afhankelijk van het materiaal. Veel energiezuinige concepten gaan verder, tot Rc 8 of hoger.</p><p>Als koper hoef je dit niet na te rekenen, maar wel te controleren dat het klopt: de toegepaste Rc-waarden staan in je technische omschrijving en (sinds de Wkb) in het opleverdossier. Wijkt de uitvoering af — dunnere platen, naden tussen elementen — dan is dat een serieus opleverpunt.</p>"
+    },
+    {
+      "kop": "Welke isolatiematerialen worden voor daken gebruikt?",
+      "html": "<ul><li><strong>PIR/PUR-platen:</strong> hoogste isolatiewaarde per cm, standaard in prefab dakelementen en buitenisolatie;</li><li><strong>Minerale wol (glas-/steenwol):</strong> voordelig, flexibel tussen de sporen te klemmen, isoleert ook geluid;</li><li><strong>Houtvezel en cellulose:</strong> natuurlijke materialen die vocht bufferen en zomerhitte beter buiten houden;</li><li><strong>EPS/Resol:</strong> bij platte daken en dakrenovatiepakketten.</li></ul><p>Per centimeter isoleert PIR het best en wol het minst — maar wol vergeeft kleine uitvoeringsfouten beter en dempt geluid van regen. Zie voor een volledige vergelijking <a href=\"/kennisbank/installaties/isolatiematerialen/\">isolatiematerialen</a>.</p>"
+    },
+    {
+      "kop": "Hoe pak je na-isolatie van een zolder aan?",
+      "html": "<p>Drie routes, oplopend in kosten en effect:</p><ul><li><strong>Zoldervloer isoleren:</strong> gebruik je de zolder niet als leefruimte, isoleer dan de vloer (wol of platen tussen/op de balken). Goedkoopste optie — je verwarmt de zolder simpelweg niet meer mee.</li><li><strong>Schuin dak van binnen:</strong> isolatie tussen/onder de sporen met dampremmende folie en afwerking. Let op ventilatie van de pannenruimte (blijft er lucht stromen tussen isolatie en dakbeschot bij een koud dak) en werk kieren bij nok, dakvoet en dakramen zorgvuldig af.</li><li><strong>Dak van buiten:</strong> bij vervanging van de dakbedekking meteen isoleren met sandwichelementen — duurder, maar definitief goed.</li></ul><p>Vraag bij offertes altijd naar de te behalen Rc-waarde, het dampremmende systeem en de afwerking van aansluitingen — en vergelijk minimaal twee partijen. Isolatieoffertes verschillen sterk in wat er wel en niet in zit; de <a href=\"/ai-offerte-check-aannemer/\">AI offerte-check</a> haalt die verschillen eruit.</p>"
+    },
+    {
+      "kop": "Wat controleer je bij oplevering of na afloop van de klus?",
+      "html": "<ul><li>Naden tussen dakelementen en bij nok, dakvoet en dakkapellen afgetapet of afgeschuimd (geen daglicht, geen tocht);</li><li>Dampremmende folie onbeschadigd en afgeplakt rond dakramen, leidingen en spotjes;</li><li>Geen samengedrukte of ontbrekende isolatie bij lastige hoeken;</li><li>Rapport of foto's van de toegepaste dikte en Rc-waarde voor je dossier;</li><li>Bij twijfel: een warmtebeeldopname in het stookseizoen maakt gaten in de isolatie direct zichtbaar.</li></ul><p>Zie ook <a href=\"/kennisbank/bouwtechniek/dakconstructies/\">dakconstructies</a> en <a href=\"/kennisbank/bouwtechniek/luchtdicht-bouwen/\">luchtdicht bouwen</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat levert dakisolatie op aan besparing?",
+      "a": "Bij een voorheen ongeïsoleerd schuin dak bespaar je indicatief €500 tot €900 per jaar aan energie (tussenwoning, gemiddeld verbruik). De investering van binnenisolatie verdient zich daarmee meestal in 5 tot 10 jaar terug, sneller bij hoge energieprijzen."
+    },
+    {
+      "q": "Moet ik mijn hele dak isoleren of alleen de zoldervloer?",
+      "a": "Gebruik je de zolder alleen als opslag, dan is zoldervloerisolatie goedkoper en effectiever: je verkleint het verwarmde volume. Wordt de zolder een slaap- of werkkamer, dan isoleer je het schuine dak."
+    },
+    {
+      "q": "Kan ik mijn dak zelf isoleren?",
+      "a": "Tussen de sporen isoleren met wol en folie is voor een handige doe-het-zelver haalbaar, maar de dampremmende laag en de aansluitingen bepalen het resultaat. Fouten daarin zie je pas jaren later als condens en houtrot. Twijfel je, besteed dan minimaal de folielaag uit."
+    },
+    {
+      "q": "Is er subsidie voor dakisolatie?",
+      "a": "Voor bestaande koopwoningen bestaat landelijke isolatiesubsidie (ISDE) wanneer je voldoende oppervlak laat isoleren door een bedrijf, vaak zo'n 15 tot 30% van de kosten; bij twee maatregelen tegelijk is het bedrag hoger. Bedragen en voorwaarden wijzigen periodiek — check de actuele regeling vóór opdracht."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["dakconstructies", "luchtdicht-bouwen", "installaties:isolatiematerialen"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "kozijnen-plaatsing",
+  "titel": "Hoe worden kozijnen geplaatst en wat controleer je bij oplevering?",
+  "title_tag": "Kozijnen plaatsen: stelkozijn tot oplevering | Bylder",
+  "meta_description": "Van stelkozijn tot waterslag: lees hoe kozijnen worden geplaatst, hoe de aansluiting kierdicht wordt en welke punten je bij oplevering checkt.",
+  "intro": [
+    "Kozijnen worden geplaatst in twee stappen: eerst wordt (bij traditionele bouw) een stelkozijn of stelframe in de ruwbouw gezet dat de maat en positie vastlegt, daarna wordt het definitieve kozijn gemonteerd, waterdicht aangesloten op de gevel en kierdicht afgewerkt. De aansluiting rondom — niet het kozijn zelf — bepaalt of het later tocht of lekt.",
+    "Voor kopers zijn kozijnen een van de meest voorkomende bronnen van opleverpunten: krassen op glas en profielen, slecht sluitende ramen en tochtende aansluitingen. Weten waar je op moet letten scheelt discussies achteraf, want beschadigingen die niet op het proces-verbaal staan, worden zelden nog erkend."
+  ],
+  "stats": [
+    ["±25%", "van de opleverpunten betreft kozijnen, ramen en deuren"],
+    ["5 mm", "minimaal afschot per 100 mm bij een waterslag"],
+    ["10-15%", "van het gevelverlies loopt via kozijnaansluitingen bij slechte kierdichting"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is een stelkozijn en waarom wordt het gebruikt?",
+      "html": "<p>Een stelkozijn is een hulpframe (hout of kunststof) dat tijdens de ruwbouw in de gevelopening wordt gesteld: exact waterpas, te lood en op maat. De metselaar metselt eromheen, waardoor de opening precies klopt. Later wordt het definitieve kozijn erin of ertegen gemonteerd. Voordelen: strakke maatvoering en het dure kozijn loopt geen bouwschade op.</p><p>Bij prefab en <a href=\"/kennisbank/bouwtechniek/houtskeletbouw/\">houtskeletbouw</a> zit het kozijn vaak al in de fabriek in het gevelelement — millimeterprecies, maar controleer bij oplevering wel de naden tussen element en kozijn. Moderne kunststof en aluminium kozijnen worden ook vaak zonder stelkozijn direct met stelankers in de spouw gemonteerd.</p>"
+    },
+    {
+      "kop": "Waar is een waterslag voor?",
+      "html": "<p>De waterslag is de schuine dorpel onder het kozijn — van aluminium, natuursteen of beton — die regenwater van de gevel af leidt. Zonder goede waterslag loopt water langs de gevel of, erger, via de onderaansluiting de <a href=\"/kennisbank/bouwtechniek/spouwmuur-opbouw/\">spouw</a> of binnenwand in. Waar je op let:</p><ul><li><strong>Afschot:</strong> de waterslag helt zichtbaar van het kozijn af (minimaal circa 5 graden);</li><li><strong>Overstek en waterhol:</strong> hij steekt enkele centimeters voor de gevel uit, met een gleuf of omgezette rand aan de onderzijde zodat water afdruppelt in plaats van terugloopt;</li><li><strong>Opstaande kopschotjes:</strong> aan de zijkanten, zodat water niet zijdelings de gevel in loopt;</li><li><strong>Naden:</strong> aansluiting op het kozijn dicht (kit of klemprofiel), zonder scheuren.</li></ul>"
+    },
+    {
+      "kop": "Hoe wordt de aansluiting tussen kozijn en muur dicht gemaakt?",
+      "html": "<p>De naad tussen kozijn en gevel moet drie dingen tegelijk: water buiten houden, luchtdicht zijn aan de binnenzijde en kunnen bewegen (hout en kunststof werken). Daarvoor wordt gewerkt met lagen:</p><ul><li><strong>Buitenzijde:</strong> elastische beglazingskit of compriband (zwellend schuimband) — waterkerend maar dampopen;</li><li><strong>Midden:</strong> isolatie in de stelruimte, meestal PUR-schuim of minerale wol;</li><li><strong>Binnenzijde:</strong> luchtdichte afwerking met kit, folie of tape — dit is de belangrijkste laag tegen tocht en vochttransport de constructie in.</li></ul><p>Alleen een prop PUR is dus niet genoeg: zonder luchtdichte binnenafdichting blijft het een tochtnaad. Zie ook <a href=\"/kennisbank/bouwtechniek/luchtdicht-bouwen/\">luchtdicht bouwen</a>.</p>"
+    },
+    {
+      "kop": "Wat controleer je bij de oplevering aan kozijnen?",
+      "html": "<ul><li><strong>Glas en profielen:</strong> bekijk elk raam bij strijklicht op krassen, putjes en beschadigingen — dit is het meest gemiste opleverpunt en achteraf niet meer claimbaar;</li><li><strong>Sluiten en bedienen:</strong> open en sluit élk raam en élke deur; ze moeten soepel sluiten zonder klemmen of forceren, meerpuntssluitingen grijpen overal;</li><li><strong>Hang- en sluitwerk:</strong> compleet, sleutels aanwezig, kierstandhouders en ventilatiestanden werken;</li><li><strong>Kit- en voegwerk:</strong> rondom strak, zonder gaten of vervuiling; binnen geen open naden bij vensterbanken en aftimmering;</li><li><strong>Waterslagen:</strong> op afschot, onbeschadigd, kopschotjes aanwezig;</li><li><strong>Tocht:</strong> voel op een winderige dag langs de aanslagen en naden;</li><li><strong>Condens tussen dubbel glas:</strong> wijst op een lekke beglazingsunit — direct noteren.</li></ul><p>Noteer alles op het proces-verbaal van oplevering, met foto's. Meer weten over het hele opleverproces? Zie <a href=\"/oplevering-nieuwbouw/\">oplevering nieuwbouw</a>.</p>"
+    },
+    {
+      "kop": "Hout, kunststof of aluminium: maakt dat uit voor de plaatsing?",
+      "html": "<p>Voor de aansluitprincipes niet — waterkering buiten, luchtdichting binnen geldt altijd. Wel verschillen de aandachtspunten: houten kozijnen hebben rondom schilderwerk nodig, ook op de (vaak vergeten) onderkanten; kunststof werkt meer bij temperatuurverschillen, dus de kit- en klemaansluitingen moeten die beweging aankunnen; aluminium heeft thermische onderbrekingen in het profiel die condens voorkomen. Vervang je kozijnen bij een verbouwing? Vergelijk offertes dan niet alleen op kozijnprijs maar ook op de afwerking van de aansluitingen (vensterbanken, waterslagen, binnenafwerking) — daar zitten de verborgen prijsverschillen. De <a href=\"/ai-offerte-check-aannemer/\">AI offerte-check</a> legt die posten voor je naast marktdata.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mijn nieuwe ramen klemmen een beetje. Is dat normaal?",
+      "a": "Licht aanlopen kort na plaatsing kan door zetting en vocht, en is met stellen van het hang- en sluitwerk te verhelpen — een normale servicebeurt in het eerste jaar. Noteer het wel bij oplevering, dan is het herstel afdwingbaar."
+    },
+    {
+      "q": "Er zit condens aan de binnenkant van mijn ramen. Is het kozijn lek?",
+      "a": "Condens óp het glas aan de kamerzijde is een ventilatie- of bouwvochtkwestie, geen kozijnprobleem. Condens tússen de glasbladen betekent een lekke isolatieglasunit: dat is een gebrek dat onder garantie vervangen moet worden."
+    },
+    {
+      "q": "Hoe controleer ik of een kozijn goed luchtdicht is afgewerkt?",
+      "a": "Voel op een koude of winderige dag met je hand (of een rooksticks/kaarsvlam) langs de binnenaansluiting van kozijn, vensterbank en aftimmering. Trek of koude luchtstroom wijst op een ontbrekende binnenafdichting — een terecht opleverpunt of garantiepunt."
+    },
+    {
+      "q": "Wat kosten nieuwe kozijnen bij een verbouwing?",
+      "a": "Indicatief €500 tot €1.200 per m² kozijn inclusief HR++-glas, montage en afwerking, afhankelijk van materiaal (kunststof doorgaans het voordeligst, hout en aluminium duurder) en het aantal draaiende delen. Vraag altijd meerdere offertes op — prijsverschillen van tientallen procenten zijn normaal."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["spouwmuur-opbouw", "luchtdicht-bouwen", "index"]
+  }
+}

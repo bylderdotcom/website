@@ -1,0 +1,65 @@
+{
+  "cluster": "geld-recht",
+  "slug": "geschil-met-aannemer",
+  "titel": "Geschil met je aannemer: stappenplan van aanmaning tot uitspraak",
+  "title_tag": "Geschil met aannemer: stappenplan & kosten | Bylder",
+  "meta_description": "Conflict met je aannemer? Stappenplan: schriftelijk aanmanen, geschillencommissie of rechter, kosten en hoe je een sterk bewijsdossier opbouwt.",
+  "intro": [
+    "Een geschil met je aannemer is elk conflict dat jullie er samen niet uitkomen: over gebreken, meerwerkfacturen, vertraging of de eindafrekening. De route naar een oplossing verloopt in vaste stappen — en wie die stappen in de juiste volgorde zet, staat juridisch én praktisch veel sterker.",
+    "De meeste geschillen worden opgelost vóórdat er een rechter of arbiter aan te pas komt: een goed dossier en een formele aanmaning doen vaak al het werk. Dit stappenplan is voorlichting, geen juridisch advies; bij grote belangen is een bouwrechtjurist het overwegen waard."
+  ],
+  "stats": [
+    ["3", "stappen vóór escalatie: klacht, aanmaning, ingebrekestelling"],
+    ["2", "hoofdroutes: geschillencommissie/arbiter of de rechter"],
+    ["1", "compleet bewijsdossier beslist de meeste zaken"]
+  ],
+  "secties": [
+    {
+      "kop": "Stap 1: hoe maan je de aannemer schriftelijk aan?",
+      "html": "<p>Begin met een <strong>schriftelijke klacht</strong>: beschrijf concreet wat er mis is, verwijs naar contract of proces-verbaal, en vraag om herstel of een oplossing binnen een redelijke termijn. Blijft reactie of actie uit, stuur dan een <strong>ingebrekestelling</strong>: een aangetekende brief (of e-mail met ontvangstbevestiging) waarin je een laatste redelijke termijn stelt en aankondigt dat de aannemer daarna in verzuim is.</p><p>Die ingebrekestelling is juridisch cruciaal: pas na verzuim kun je in de regel schadevergoeding vorderen, herstel door een derde op zijn kosten laten uitvoeren of ontbinden. Sla deze stap dus nooit over, ook niet als de verhouding al verzuurd is.</p>"
+    },
+    {
+      "kop": "Stap 2: geschillencommissie, arbiter of rechter?",
+      "html": "<p>Welke route openstaat, bepaalt je <strong>contract</strong>. Veel aannemingsovereenkomsten en garantieregelingen wijzen een geschilleninstantie aan: bij Woningborg- en SWK-woningen een eigen geschillenregeling of arbitrage (zoals via de Raad van Arbitrage in bouwgeschillen), bij aangesloten verbouwers vaak een geschillencommissie van de branche. Staat er niets, dan is de gewone rechter bevoegd — bij kleinere vorderingen de kantonrechter.</p><table class=\"vgl\"><tr><th>Aspect</th><th>Geschillencommissie/arbiter</th><th>Rechter</th></tr><tr><td>Expertise</td><td>Gespecialiseerd in bouw</td><td>Algemeen, soms met deskundige</td></tr><tr><td>Kosten</td><td>Vast(er) tarief, vaak lager</td><td>Griffierecht plus eventueel advocaat</td></tr><tr><td>Doorlooptijd</td><td>Meestal korter</td><td>Vaak langer</td></tr><tr><td>Advocaat verplicht</td><td>Nee</td><td>Alleen boven de kantongrens</td></tr></table><p>Let op: een geldig arbitraal beding sluit de gang naar de rechter voor de inhoud meestal uit — controleer dus eerst wat je hebt afgesproken.</p>"
+    },
+    {
+      "kop": "Wat kost een procedure en wie betaalt?",
+      "html": "<p>Reken bij een geschillencommissie of arbitrage op klachtengeld of een waarborgsom en eventueel kosten van een deskundigenonderzoek; bij de rechter op griffierecht en — boven de kantongrens of bij complexe zaken — advocaatkosten. De verliezende partij wordt vaak (deels) in de kosten veroordeeld, maar volledige vergoeding van je werkelijke kosten is uitzondering.</p><p>Check daarom eerst je <strong>rechtsbijstandverzekering</strong>: bouwgeschillen vallen vaak onder de dekking, mits het geschil ná de ingangsdatum is ontstaan. En weeg kosten tegen belang: voor een geschil van enkele honderden euro's is procederen zelden rationeel — onderhandelen of de post slikken kan dan verstandiger zijn.</p>"
+    },
+    {
+      "kop": "Hoe bouw je een sterk bewijsdossier op?",
+      "html": "<ul><li><strong>Contractstukken:</strong> offerte, aannemingsovereenkomst, technische omschrijving, meer-/minderwerklijsten en algemene voorwaarden.</li><li><strong>Correspondentie:</strong> alle e-mails en appjes, chronologisch geordend — ook je eigen berichten.</li><li><strong>Beeldmateriaal:</strong> foto's en video's met datum, van gebreken én van de voortgang.</li><li><strong>Officiële documenten:</strong> proces-verbaal van oplevering, keuringsrapporten, ingebrekestellingen met verzendbewijs.</li><li><strong>Deskundigenrapport:</strong> bij technische discussies is een onafhankelijk bouwkundig rapport vaak doorslaggevend.</li><li><strong>Financieel overzicht:</strong> wat is betaald, wat is betwist, offertes van derden voor herstelkosten.</li></ul><p>Begin met dit dossier op dag één van het conflict — niet pas als je gaat procederen.</p>"
+    },
+    {
+      "kop": "Wat kun je ondertussen wel en niet doen?",
+      "html": "<p>Wél: betaling opschorten in redelijke verhouding tot het gebrek (leg schriftelijk vast waarom en hoeveel), het onbetwiste deel gewoon betalen, en blijven communiceren — een schikking is vrijwel altijd sneller en goedkoper dan een uitspraak. Niet: de hele factuur onbetaald laten zonder motivering, zelf laten herstellen vóórdat de aannemer in verzuim is, of bewijs laten verdwijnen door alvast te (laten) repareren zonder vastlegging.</p><p>Bewaak ook de <strong>verjaring</strong>: na je klacht loopt in beginsel een termijn van twee jaar, die je stuit met een schriftelijke aanmaning waarin je je rechten ondubbelzinnig voorbehoudt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik de laatste factuur inhouden zolang het geschil loopt?",
+      "a": "Je mag opschorten voor zover het ingehouden bedrag in redelijke verhouding staat tot je vordering, en je dit schriftelijk motiveert. Het volledige bedrag inhouden bij een beperkt gebrek kan je zelf in verzuim brengen. Bij nieuwbouw is het 5%-notarisdepot de veiligste vorm van druk."
+    },
+    {
+      "q": "Heb ik een advocaat nodig?",
+      "a": "Bij een geschillencommissie of arbitrage niet, en bij de kantonrechter evenmin. Toch kan juridische hulp lonen zodra de tegenpartij professioneel verweer voert of het belang groot is. Een rechtsbijstandverzekering of een eerste adviesgesprek met een bouwrechtjurist is dan een logische start."
+    },
+    {
+      "q": "Hoe lang duurt een procedure?",
+      "a": "Een geschillencommissie of arbitraal traject duurt vaak enkele maanden tot ruim een half jaar, inclusief deskundigenonderzoek. Een rechtszaak kan langer duren, zeker met bewijsopdrachten of hoger beroep. Een schikking tussentijds blijft altijd mogelijk — en komt veel voor."
+    },
+    {
+      "q": "Wat als de aannemer tijdens het geschil failliet gaat?",
+      "a": "Dan meld je je vordering bij de curator; de kans op volledige betaling is helaas klein. Bij nieuwbouw met waarborgcertificaat kun je voor afbouw en garantiegebreken terecht bij Woningborg of SWK. Dit risico is precies waarom je nooit ver vooruit wilt betalen."
+    },
+    {
+      "q": "Kan ik het contract ontbinden?",
+      "a": "Ontbinding kan bij een voldoende ernstige tekortkoming nadat de aannemer in verzuim is, maar heeft grote gevolgen voor afrekening en garanties. Laat je vóór een ontbindingsverklaring altijd juridisch adviseren — een onterechte ontbinding kan jou schadeplichtig maken."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["opleveringsgebreken-claimen", "vijf-procent-regeling", "aansprakelijkheid-aannemer"]
+  }
+}
