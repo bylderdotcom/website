@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T20:06:23",
+  "generated": "2026-07-27T20:41:13",
   "root": "/private/tmp/hp-reorder/web/out",
   "checks": {
     "1_sitemap_files": {
@@ -95,7 +95,7 @@
     "6_internal_links": {
       "mode": "steekproef: homepage + index.html van elke top-level clustermap",
       "pages_sampled": 96,
-      "links_checked": 6486,
+      "links_checked": 6487,
       "violations": 0,
       "examples": []
     },
@@ -110,5 +110,5 @@
       "examples": []
     }
   },
-  "runtime_seconds": 9.5
+  "runtime_seconds": 10.5
 }

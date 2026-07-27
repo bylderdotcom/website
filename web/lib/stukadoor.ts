@@ -233,6 +233,29 @@ function getCityHtml(page: StukadoorPage): string {
   return body.replace('</main>', `${DISCLAIMER_HTML}</main>`)
 }
 
+// Oproep aan de eigenaar om zijn profiel op te eisen. De claim-flow bestaat en
+// werkt, maar niets op deze 25.707 pagina's wees ernaartoe (gemeten 27 jul 2026)
+// — vandaar 1 claim op het hele bestand. Staat onderaan, na de inhoud: de koper
+// die vergelijkt heeft er niets aan, de eigenaar die zichzelf opzoekt wel.
+function claimHtml(pageSlug: string, naam: string): string {
+  const slug = pageSlug.replace(/^bedrijf\//, '')
+  return '<div class="divider"></div>'
+    + '<div style="background:#fff;border:1px solid rgba(61,46,30,0.12);border-radius:14px;'
+    + 'padding:20px 22px;margin:20px 0;">'
+    + '<h2 style="font-size:1.05rem;font-weight:800;color:#1A1208;margin:0 0 6px;">'
+    + 'Is dit jouw bedrijf?</h2>'
+    + '<p style="font-size:14px;color:rgba(61,46,30,0.72);line-height:1.65;margin:0 0 12px;">'
+    + 'Dit profiel is samengesteld uit openbare bronnen. Eis het op om je gegevens, '
+    + 'diensten en foto\'s zelf te beheren. Vermelding blijft gratis; activeren kost '
+    + '&euro;79 per jaar voor je eigen plaats.</p>'
+    + '<a href="https://app.bylder.com/vakbedrijf/claim/' + encodeURIComponent(slug)
+    + '?utm_source=bylder-site&amp;utm_campaign=profiel-claim" '
+    + 'style="background:#3D5A3E;color:#F5F0E8;padding:11px 22px;border-radius:10px;'
+    + 'font-weight:800;font-size:14px;text-decoration:none;display:inline-flex;">'
+    + 'Profiel opeisen &#8594;</a>'
+    + '</div>'
+}
+
 function getBedrijfHtml(page: StukadoorPage): string {
   const b = getBedrijven()[page.slug]
   let body = readTpl(`content.bedrijf.${b.template}.html`)
@@ -252,7 +275,8 @@ function getBedrijfHtml(page: StukadoorPage): string {
     body = body.replace('{{tiles}}', b.siblings.map(renderTile).join(''))
   }
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
-  return body.replace('</main>', `${DISCLAIMER_HTML}</main>`)
+  const claim = claimHtml(page.slug, b.name)
+  return body.replace('</main>', `${claim}${DISCLAIMER_HTML}</main>`)
 }
 
 const _hubCache: Record<string, string> = {}
