@@ -141,7 +141,7 @@ export default function EerlijkePrijzenPage() {
         <div style={{ background: '#3D5A3E', borderRadius: 20, padding: 44, textAlign: 'center', margin: '40px 0' }}>
           <p style={{ fontSize: 11, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(245,240,232,0.5)', marginBottom: 10 }}>Bylder Prijs-benchmark</p>
           <h2 style={{ fontSize: '1.7rem', fontWeight: 800, color: '#F5F0E8', marginBottom: 12 }}>Betaal jij een eerlijke prijs?</h2>
-          <p style={{ color: 'rgba(245,240,232,0.72)', marginBottom: 26, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto', fontSize: 15, lineHeight: 1.65 }}>Vul je geoffreerde prijs in en zie direct of die marktconform is. Met lidmaatschap benchmarkt Bylder je hele offerte of meerwerklijst automatisch — gemiddeld €1.840 bespaard.</p>
+          <p style={{ color: 'rgba(245,240,232,0.72)', marginBottom: 26, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto', fontSize: 15, lineHeight: 1.65 }}>Vul je geoffreerde prijs in en zie direct of die marktconform is. Met gratis account benchmarkt Bylder je hele offerte of meerwerklijst automatisch — gemiddeld €1.840 bespaard.</p>
           <a href="https://app.bylder.com/registreer" className="cta-primary">Check je prijs gratis →</a>
         </div>
 

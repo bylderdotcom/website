@@ -42,7 +42,7 @@ const JSONLD_SOFTWARE = {
   name: 'Bylder 3D-sfeerimpressie',
   applicationCategory: 'DesignApplication',
   operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '99', priceCurrency: 'EUR', description: 'Eenmalig Bylder-lidmaatschap' },
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', description: 'Gratis voor bewoners' },
   description:
     "Upload je plattegrond en zie je nieuwe woning in 3D, in 6 interieurstijlen. Zo kies je vol vertrouwen je afwerking en inrichting — vóór je duizenden euro's uitgeeft.",
 }
@@ -229,7 +229,7 @@ export default function SfeerimpressiePage() {
           <aside style={{ position: 'sticky', top: 100 }}>
             <div className="card" style={{ marginBottom: 20 }}>
               <p style={{ fontSize: 13, fontWeight: 700, color: '#1A1208', marginBottom: 8 }}>Probeer de tool</p>
-              <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.55)', marginBottom: 16, lineHeight: 1.6 }}>Maak gratis een account en upload je plattegrond. Met lidmaatschap genereer je tot 10 impressies per maand.</p>
+              <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.55)', marginBottom: 16, lineHeight: 1.6 }}>Maak gratis een account en upload je plattegrond. Gratis voor bewoners: tot 10 impressies per maand.</p>
               <a href="https://app.bylder.com/registreer" style={{ display: 'block', textAlign: 'center', background: '#3D5A3E', color: '#F5F0E8', padding: 11, borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Start gratis →</a>
             </div>
             <div className="card" style={{ marginBottom: 20 }}>

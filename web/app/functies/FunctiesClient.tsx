@@ -68,7 +68,7 @@ const InrichtenBody = ({ mid }: { mid: React.ReactNode }) => (
   <>Pas je meubels, kasten en keuken <strong>op schaal</strong> in op je plattegrond — zo zie je meteen wat past (gratis). {mid} <a href="/plattegrond-inrichten/" style={inlineLink}>Meer over inrichten →</a></>
 )
 const BouwvergunningBody = () => (
-  <>Check <strong>gratis</strong> of je een vergunning nodig hebt, en bereid met lidmaatschap je aanvraag voor: documenten-checklist + begeleide intake → concept-dossier, voorgevuld met de maten uit je tekening. <a href="/bouwvergunning/" style={inlineLink}>Meer over bouwvergunningen →</a></>
+  <>Check <strong>gratis</strong> of je een vergunning nodig hebt, en bereid je aanvraag voor: documenten-checklist + begeleide intake → concept-dossier, voorgevuld met de maten uit je tekening. <a href="/bouwvergunning/" style={inlineLink}>Meer over bouwvergunningen →</a></>
 )
 
 export default function FunctiesClient() {
@@ -91,7 +91,7 @@ export default function FunctiesClient() {
 
       <section className="hero"><div className="container">
         <h1>Alle functies,<br /><span className="it">per woningtype</span></h1>
-        <p>Bylder begeleidt je door je hele kopersreis. Hieronder zie je per woningtype welke functies je helpen — en wat <strong>gratis</strong> is versus <strong>met lidmaatschap</strong>.</p>
+        <p>Bylder begeleidt je door je hele kopersreis. Hieronder zie je per woningtype welke functies je helpen — en wat je krijgt — <strong>gratis voor bewoners</strong>.</p>
         <div className="wt-toggle"><div className="wrap">
           <button type="button" className={wt === 'nieuwbouw' ? 'wt-btn on' : 'wt-btn'} onClick={() => setWt('nieuwbouw')}><i className="ph-thin ph-buildings"></i> Nieuwbouw</button>
           <button type="button" className={wt === 'bestaand' ? 'wt-btn on' : 'wt-btn'} onClick={() => setWt('bestaand')}><i className="ph-thin ph-house"></i> Bestaande bouw</button>
@@ -106,12 +106,12 @@ export default function FunctiesClient() {
 
         {/* NIEUWBOUW */}
         <div className="grid wt-grid" style={grid('nieuwbouw')}>
-          <Card icon="ph-thin ph-robot" title="AI-Kopersbegeleider" tag={FREE_PROBEREN}>Stel je vraag of laat je offerte checken: direct inzicht in marktprijzen, risico's, meerwerk en faseadvies. 5 berichten gratis, onbeperkt met lidmaatschap.</Card>
-          <Card icoR icon="ph-thin ph-magnifying-glass" title={<>Woning- &amp; offerte-analyse</>} tag={FREE_PROBEREN}>Upload je plattegrond of offerte → AI berekent oppervlakte en kosten per ruimte. Verandert je tekening door meerwerk? Upload elke versie — Bylder bewaart ze en laat per ronde zien <strong>wat er wijzigt</strong> (extra stopcontacten, lichtpunten, m²). 1 analyse gratis, onbeperkt met lidmaatschap.</Card>
+          <Card icon="ph-thin ph-robot" title="AI-Kopersbegeleider" tag={FREE_PROBEREN}>Stel je vraag of laat je offerte checken: direct inzicht in marktprijzen, risico's, meerwerk en faseadvies. Onbeperkt, gratis voor bewoners.</Card>
+          <Card icoR icon="ph-thin ph-magnifying-glass" title={<>Woning- &amp; offerte-analyse</>} tag={FREE_PROBEREN}>Upload je plattegrond of offerte → AI berekent oppervlakte en kosten per ruimte. Verandert je tekening door meerwerk? Upload elke versie — Bylder bewaart ze en laat per ronde zien <strong>wat er wijzigt</strong> (extra stopcontacten, lichtpunten, m²). Onbeperkt, gratis voor bewoners.</Card>
           <Card icon="ph-thin ph-stack" title="Meerwerk-tracker" tag={LID}>Meerwerk verandert je technische tekening — soms wel 4 rondes. De tracker bewaart elke versie en toont per ronde precies <strong>wat er wijzigt</strong> (extra stopcontacten, lichtpunten, m²). Zo houd je grip op je keuzes én je budget, en controleer je of je krijgt waarvoor je betaalt. <a href="/meerwerk/" style={inlineLink}>Meer over meerwerk →</a></Card>
           <Card icon="ph-thin ph-cube" title={<>Inrichten &amp; 3D-impressie</>} tag={FREE_STARTEN}><InrichtenBody mid={<>Upload je bouwtekening → Bylder maakt er een 3D-impressie van in jouw stijl (Scandinavisch, Japandi, industrieel…). Zie je afgewerkte woning vóór je keuzes maakt.</>} /></Card>
           <Card icon="ph-thin ph-clipboard-text" title="Bouwvergunning-hulp" tag={LID}><BouwvergunningBody /></Card>
-          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 61 woonmerken zoals Auping, Goossens en DRT. Gemiddeld €4.200 besparing — codes actief met lidmaatschap.</Card>
+          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 61 woonmerken zoals Auping, Goossens en DRT. Gemiddeld €4.200 besparing — codes direct actief, gratis voor bewoners.</Card>
           <Card icon="ph-thin ph-calendar-blank" title={<>Planning, budget &amp; kosten</>} tag={FREE}>Projectplanning over alle 11 fasen, opleverdatum-countdown, all-in kostenoverzicht en de 36-punts opleverchecklist — gratis te gebruiken.</Card>
           <Card icoR icon="ph-thin ph-folders" title="AI document-kluis" tag={LID}>Bewaar offertes &amp; contracten; de AI checkt ze op te dure posten, risico-clausules en garantie-registratie.</Card>
           <Card icon="ph-thin ph-shield-check" title={<>Garantie &amp; oplevergebreken</>} tag={LID}>Houd garanties bij én log bouwgebreken na oplevering — van melding tot erkenning tot afhandeling. Mis nooit een garantietermijn.</Card>
@@ -119,11 +119,11 @@ export default function FunctiesClient() {
 
         {/* BESTAANDE BOUW */}
         <div className="grid wt-grid" style={grid('bestaand')}>
-          <Card icon="ph-thin ph-robot" title="AI-Kopersbegeleider" tag={FREE_PROBEREN}>Vragen over de aankoop, een eerlijk bod en de kosten van een bestaande woning — direct antwoord. 5 berichten gratis, onbeperkt met lidmaatschap.</Card>
+          <Card icon="ph-thin ph-robot" title="AI-Kopersbegeleider" tag={FREE_PROBEREN}>Vragen over de aankoop, een eerlijk bod en de kosten van een bestaande woning — direct antwoord. Onbeperkt, gratis voor bewoners.</Card>
           <Card icoR icon="ph-thin ph-magnifying-glass" title="Bouwkundige-keuring-analyse" tag={FREE_PROBEREN}>Upload je keuringsrapport → de AI groepeert gebreken op urgentie, schat herstelkosten en je onderhandelingsruimte op de koopprijs.</Card>
           <Card icon="ph-thin ph-cube" title={<>Inrichten &amp; 3D-impressie</>} tag={FREE_STARTEN}><InrichtenBody mid={<>Upload de plattegrond → een 3D-impressie van je heringerichte woning in jouw stijl (Scandinavisch, Japandi, industrieel…). Zie het resultaat vóór je begint.</>} /></Card>
           <Card icon="ph-thin ph-clipboard-text" title="Bouwvergunning-hulp" tag={LID}><BouwvergunningBody /></Card>
-          <Card icon="ph-thin ph-handshake" title={<>Bod- &amp; overdracht-begeleiding</>} tag={FREE_PROBEREN}>AI-bodadvies om je bod te bepalen (met lidmaatschap) + een gratis overdracht- &amp; intrek-checklist, van notaris tot meterstanden.</Card>
+          <Card icon="ph-thin ph-handshake" title={<>Bod- &amp; overdracht-begeleiding</>} tag={FREE_PROBEREN}>AI-bodadvies om je bod te bepalen + een gratis overdracht- &amp; intrek-checklist, van notaris tot meterstanden.</Card>
           <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 61 woonmerken voor je inrichting en verbouwing. Gemiddeld €4.200 besparing.</Card>
           <Card icoR icon="ph-thin ph-folders" title="AI document-kluis" tag={LID}>Bewaar koopakte, keuringsrapport en offertes; de AI checkt ze op risico's, te dure posten en garantie.</Card>
           <Card icon="ph-thin ph-shield-check" title={<>Garantie &amp; oplevergebreken</>} tag={LID}>Houd garanties bij én log bouwgebreken na oplevering — van melding tot erkenning tot afhandeling. Mis nooit een garantietermijn.</Card>

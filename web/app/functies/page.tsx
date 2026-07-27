@@ -6,7 +6,7 @@ import FunctiesClient from './FunctiesClient'
 
 const OG_TITLE = 'Functies — wat Bylder voor je doet, per woningtype | Bylder'
 const DESC =
-  'Alle Bylder-functies op een rij, uitgesplitst per woningtype: nieuwbouw, bestaande bouw en renovatie. Zie per functie wat gratis is en wat met lidmaatschap.'
+  'Alle Bylder-functies op een rij, uitgesplitst per woningtype: nieuwbouw, bestaande bouw en renovatie. Zie per functie wat gratis is en wat gratis voor bewoners.'
 
 export const metadata: Metadata = {
   title: OG_TITLE,
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Functies — wat Bylder voor je doet, per woningtype',
     description:
-      'Alle functies per woningtype: nieuwbouw, bestaande bouw en renovatie. Zie wat gratis is en wat met lidmaatschap.',
+      'Alle functies per woningtype: nieuwbouw, bestaande bouw en renovatie. Zie wat gratis is en wat gratis voor bewoners.',
     url: 'https://www.bylder.com/functies/',
     images: [{ url: 'https://www.bylder.com/og-image.jpg?v=2' }],
   },
