@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T18:43:27",
+  "generated": "2026-07-27T19:13:22",
   "root": "/private/tmp/hp-reorder/web/out",
   "checks": {
     "1_sitemap_files": {
@@ -103,7 +103,12 @@
       "files_scanned": 76465,
       "violations": 0,
       "examples": []
+    },
+    "8_focusindicator": {
+      "pages_checked": 76332,
+      "violations": 0,
+      "examples": []
     }
   },
-  "runtime_seconds": 11.9
+  "runtime_seconds": 12.6
 }

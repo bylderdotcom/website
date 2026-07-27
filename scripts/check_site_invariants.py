@@ -13,6 +13,7 @@ Checks:
   7. geen_broncode      — geen bron- of interne bestanden in de deploy (templates/, docs/,
                           vercel.json, *.py, ongerenderde {{placeholders}}).
                           Draai deze op web/out, niet op de repo-root.
+  8. focusindicator     — elke zelfstandige pagina draagt :focus-visible (WCAG 2.4.7).
 
 Alleen stdlib. Exit-code 1 bij overtredingen in check 1, 2 of 5 (harde invarianten).
 Volledig rapport: reports/site-invariants.json
@@ -414,6 +415,53 @@ def main():
         "examples": c7[:EXAMPLES_SHOWN],
     }
 
+    # ---- Check 8: elke pagina heeft een zichtbare focusindicator ---------
+    # Aanleiding (2026-07-27): het nieuwe cluster /wonen-in/ ging live met 343
+    # pagina's zonder :focus-visible, omdat de cluster-CSS vers geschreven was
+    # en de a11y-sweep van diezelfde ochtend alleen bestaande bestanden raakte.
+    # Toetsenbordgebruikers zagen daar dus niet waar ze stonden. Deze check
+    # vangt precies dat: een nieuw cluster dat de regel niet meeneemt.
+    c8, n8 = [], 0
+    for relpath in all_files:
+        if relpath in EXCLUDE_FILES:
+            continue
+        n8 += 1
+        try:
+            with open(os.path.join(ROOT, relpath), encoding="utf-8",
+                      errors="replace") as fh:
+                txt = fh.read()
+        except OSError:
+            continue
+        if "<html" not in txt[:4000].lower():
+            continue  # fragment, geen zelfstandige pagina
+        if "a11y-focus" in txt or ":focus-visible" in txt:
+            continue
+        # De regel mag ook in een gelinkte lokale stylesheet staan (en-us/guides
+        # gebruikt guides.css). Zonder deze stap keurt de check die pagina's
+        # onterecht af, en een check die vals alarm geeft wordt genegeerd.
+        gevonden = False
+        for m in re.finditer(
+                r'<link[^>]+rel\s*=\s*["\']stylesheet["\'][^>]*>', txt, re.I):
+            h = RE_HREF_ATTR.search(m.group(0))
+            if not h or h.group(1).startswith(("http://", "https://", "//")):
+                continue
+            css = os.path.normpath(os.path.join(
+                os.path.dirname(os.path.join(ROOT, relpath)), h.group(1)))
+            try:
+                with open(css, encoding="utf-8", errors="replace") as cf:
+                    if ":focus-visible" in cf.read():
+                        gevonden = True
+                        break
+            except OSError:
+                pass
+        if not gevonden:
+            c8.append({"path": relpath})
+    report["checks"]["8_focusindicator"] = {
+        "pages_checked": n8,
+        "violations": len(c8),
+        "examples": c8[:EXAMPLES_SHOWN],
+    }
+
     report["runtime_seconds"] = round(time.time() - t0, 1)
 
     # ---- Rapport wegschrijven + samenvatting ----------------------------------
@@ -430,6 +478,7 @@ def main():
         "5_jsonld": ("JSON-LD parsebaar", "blocks_checked", True),
         "6_internal_links": ("Interne links", "links_checked", False),
         "7_geen_broncode": ("Geen bron in deploy", "files_scanned", True),
+        "8_focusindicator": ("Focusindicator aanwezig", "pages_checked", True),
     }
     print("=" * 72)
     print("SITE-INVARIANTEN  (%s)" % ROOT)
