@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "mv-box",
+  "titel": "MV-box (mechanische ventilatiebox)",
+  "title_tag": "Wat is een MV-box? Betekenis + uitleg | Bylder",
+  "meta_description": "Een MV-box is de ventilator-unit van een mechanisch afzuigsysteem die lucht uit keuken, badkamer en toilet afvoert. Lees hoe hij werkt en wat onderhoud vraagt.",
+  "intro": [
+    "Een MV-box (mechanische ventilatiebox) is de centrale ventilator-unit van een mechanisch afzuigsysteem: hij zuigt continu vervuilde en vochtige lucht af uit keuken, badkamer en toilet en blaast die via een dakdoorvoer naar buiten. Verse lucht komt binnen via roosters in gevel of kozijnen.",
+    "De MV-box hangt meestal op zolder of in een techniekkast en wordt bediend met een standenschakelaar of vochtsensor. Voor bewoners is het een apparaat om niet te vergeten: een vervuilde of versleten box ventileert slecht, maakt lawaai en verbruikt onnodig stroom."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen een MV-box en wtw-ventilatie?",
+      "html": "<p>Een MV-box zuigt alleen af (systeem C): de aanvoer van verse lucht gaat passief via roosters, en de warmte van de afgevoerde lucht gaat verloren. Een wtw-unit (systeem D) voert mechanisch af én aan, en wint daarbij warmte terug uit de afgevoerde lucht. MV met natuurlijke toevoer is eenvoudiger en goedkoper; wtw is energiezuiniger en comfortabeler, maar vraagt kanalen door de hele woning. Bij vervanging van een oude MV-box loont een gelijkstroomventilator (dc-motor): stiller en fors zuiniger dan de oude wisselstroomboxen. Laat bij klachten over vocht of geluid ook de kanalen en ventielen reinigen en het systeem opnieuw inregelen — dat is minstens zo belangrijk als de box zelf.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik de MV-box 's nachts uitzetten?",
+      "a": "Liever niet: het systeem is ontworpen om continu te draaien, juist ook 's nachts als je slaapt en vocht produceert. Uitzetten leidt tot vochtophoping, muffe lucht en op termijn schimmel."
+    },
+    {
+      "q": "Hoe vaak moet een MV-box onderhouden worden?",
+      "a": "Maak de ventielen enkele keren per jaar schoon en laat de box en kanalen ongeveer elke paar jaar reinigen. Een box die merkbaar meer herrie maakt dan vroeger is meestal vervuild of aan vervanging toe."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["wtw-ventilatie", "ventilatierooster", "installaties:wtw-ventilatie-woning"]
+  }
+}

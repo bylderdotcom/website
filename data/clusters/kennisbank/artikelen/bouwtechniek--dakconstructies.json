@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "dakconstructies",
+  "titel": "Welke dakconstructies zijn er en wat check je bij oplevering?",
+  "title_tag": "Dakconstructies: plat, hellend en oplevering | Bylder",
+  "meta_description": "Plat of hellend dak, sporenkap of gordingenkap? Lees hoe dakconstructies werken en welke punten je bij de oplevering van je dak controleert.",
+  "intro": [
+    "Een dakconstructie is het dragende geraamte van je dak: bij hellende daken een sporenkap, gordingenkap of prefab dakelementen, bij platte daken balklagen of betonvloeren met een waterdichte laag erop. De constructie draagt dakbedekking, isolatie, sneeuw- en windlast en steeds vaker ook zonnepanelen.",
+    "Voor kopers is het dak dubbel belangrijk: het is de zwaarst belaste schil van de woning én de plek waar lekkages en tocht het vaakst ontstaan. Wie snapt hoe zijn dak in elkaar zit, weet precies wat hij bij de oplevering en de jaarlijkse controle moet nakijken."
+  ],
+  "stats": [
+    ["Rc ≥ 6,3", "wettelijke minimumisolatie nieuwbouwdak"],
+    ["1 dag", "montagetijd prefab kap op een rijwoning"],
+    ["20-30 jaar", "levensduur bitumen dakbedekking plat dak"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen een plat en een hellend dak?",
+      "html": "<p>Een hellend dak (vanaf circa 15 graden) voert regenwater af via pannen of ander schubvormig materiaal naar de goot; de constructie eronder mag dus 'waterafvoerend' zijn in plaats van waterdicht. Een plat dak heeft altijd een volledig waterdichte laag (bitumen, EPDM of PVC) op licht afschot naar de hemelwaterafvoeren.</p><table class=\"vgl\"><thead><tr><th>Aspect</th><th>Hellend dak</th><th>Plat dak</th></tr></thead><tbody><tr><td>Waterdichting</td><td>Dakpannen + folie</td><td>Bitumen, EPDM of PVC</td></tr><tr><td>Levensduur toplaag</td><td>Pannen 50+ jaar</td><td>20-40 jaar</td></tr><tr><td>Onderhoud</td><td>Weinig; pannen en goten checken</td><td>Jaarlijks afvoeren en naden checken</td></tr><tr><td>Extra ruimte</td><td>Zolder/kap</td><td>Dakterras of groen dak mogelijk</td></tr></tbody></table>"
+    },
+    {
+      "kop": "Wat is een sporenkap en wat is een gordingenkap?",
+      "html": "<p>Bij een <strong>sporenkap</strong> lopen de dragende balken (sporen) van de goot naar de nok, dicht naast elkaar. De nok is vaak niet dragend; de sporen leunen tegen elkaar. Kenmerkend voor oudere woningen en moderne prefab dakelementen — die zijn in feite geïsoleerde sporenkappen uit de fabriek.</p><p>Bij een <strong>gordingenkap</strong> lopen zware horizontale balken (gordingen) van bouwmuur naar bouwmuur, met daaroverheen het dakbeschot. Je herkent hem aan de dikke horizontale balken op zolder. Beide systemen zijn constructief prima; het verschil merk je vooral bij een verbouwing: bij een dakkapel of dakraam bepaalt het kaptype wat er zomaar weggezaagd mag worden en waarvoor een constructeur nodig is.</p>"
+    },
+    {
+      "kop": "Wat is dakbeschot en waarom is het belangrijk?",
+      "html": "<p>Dakbeschot is de plaatlaag op de constructie waarop de panlatten en dakpannen rusten — vroeger houten delen, nu meestal geïsoleerde sandwichelementen of dakplaten met ingebouwde isolatie. Bij nieuwbouw is het dakbeschot dus meteen de isolatielaag, met aan de binnenzijde een dampremmende laag en aan de buitenzijde een waterkerende folie.</p><p>Belangrijk voor jou: de naden tussen dakelementen en de aansluitingen op bouwmuren, nok en goot moeten luchtdicht zijn afgetapet of afgeschuimd. Slordige naden zijn een klassieke bron van tocht, warmteverlies en zelfs condensdruppels op zolder. Zie ook <a href=\"/kennisbank/bouwtechniek/luchtdicht-bouwen/\">luchtdicht bouwen</a> en <a href=\"/kennisbank/bouwtechniek/dakisolatie-methoden/\">dakisolatie-methoden</a>.</p>"
+    },
+    {
+      "kop": "Wat controleer je bij de oplevering van je dak?",
+      "html": "<p>Neem bij de oplevering (of laat je opleverkeurder meenemen) deze punten door:</p><ul><li><strong>Binnenzijde kap:</strong> naden tussen dakelementen netjes afgewerkt, geen daglicht zichtbaar bij nok, goot of bouwmuur;</li><li><strong>Aansluitingen:</strong> lood- en kitwerk bij schoorstenen, dakramen en dakdoorvoeren strak en volledig;</li><li><strong>Pannen:</strong> geen gebroken, verschoven of ontbrekende pannen; vorstpannen en gevelpannen goed bevestigd;</li><li><strong>Plat dak:</strong> afschot naar de afvoeren (geen grote plassen na regen), naden en randafwerking dicht, ballast of bevestiging in orde;</li><li><strong>Goten en HWA's:</strong> op afschot, schoon en zonder bouwafval;</li><li><strong>Ventilatie:</strong> doorvoeren van mechanische ventilatie en riolering compleet en afgedopt waar nodig.</li></ul><p>Fotografeer afwijkingen en zet ze op het proces-verbaal van oplevering — daklekkages die later opduiken zijn dan makkelijker te claimen.</p>"
+    },
+    {
+      "kop": "Kun je zonnepanelen op elke dakconstructie leggen?",
+      "html": "<p>Bijna altijd, maar de constructie moet het extra gewicht (circa 15-20 kg/m² bij schuine daken, met ballast op platte daken al snel 50-100 kg/m²) kunnen dragen. Nieuwbouwdaken zijn hierop berekend of worden dat op verzoek — geef bij de koperskeuzes door dat je panelen wilt, dan houdt de constructeur er rekening mee. Bij oudere daken of grote installaties op plat dak is een constructieve check verstandig. Vraag ook naar de garantievoorwaarden: panelen laten plaatsen door derden kan de dakgarantie van de bouwer raken.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe lang gaat een dak mee?",
+      "a": "Dakpannen gaan 50 tot 75 jaar mee, de houten constructie bij droge omstandigheden nog langer. Platte daken moeten eerder vervangen worden: bitumen na 20-30 jaar, EPDM kan 40 jaar of langer mee."
+    },
+    {
+      "q": "Mag ik mijn zolder zomaar verbouwen tot slaapkamer?",
+      "a": "Bouwkundig meestal wel, zolang je geen sporen of gordingen doorzaagt zonder constructeur. Let op daglicht- en vluchteisen (dakraam), en check of de zoldervloer als verblijfsvloer is berekend. Een dakkapel is vaak vergunningsvrij aan de achterzijde, maar niet altijd."
+    },
+    {
+      "q": "Wat is een koud dak en een warm dak?",
+      "a": "Bij een warm dak ligt de isolatie boven op de constructie, die daardoor warm en droog blijft — de standaard bij nieuwbouw. Bij een koud dak zit de isolatie eronder of ertussen, waardoor de constructie koud blijft en condensrisico ontstaat als de dampremming niet klopt."
+    },
+    {
+      "q": "Er ligt na regen water op mijn platte dak — is dat een gebrek?",
+      "a": "Kleine plassen die binnen 48 uur verdampen zijn acceptabel. Blijvende grote plassen wijzen op onvoldoende afschot of verstopte afvoeren; meld dit bij de bouwer, want langdurig staand water verkort de levensduur van de dakbedekking."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["dakisolatie-methoden", "luchtdicht-bouwen", "ruwbouw-afbouw"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "prefab-bouwen",
+  "titel": "Wat is prefab bouwen en is het net zo goed als bouwen op locatie?",
+  "title_tag": "Prefab bouwen: kwaliteit, snelheid en kosten | Bylder",
+  "meta_description": "Prefab bouwen betekent bouwdelen uit de fabriek monteren op de bouwplaats. Lees hoe het werkt, wat de kwaliteit is en waar je als koper op let.",
+  "intro": [
+    "Prefab bouwen betekent dat bouwdelen — wanden, vloeren, daken of complete woningmodules — in een fabriek worden geproduceerd en op de bouwplaats alleen nog worden gemonteerd. Het tegenovergestelde van traditioneel bouwen, waarbij alles steen voor steen op locatie ontstaat.",
+    "Steeds meer nieuwbouwwoningen zijn deels of volledig prefab, vaak zonder dat kopers het weten: ook 'gewone' projectwoningen krijgen tegenwoordig prefab casco's, dakelementen en badkamers. Voor jou als koper is vooral relevant wat dat betekent voor kwaliteit, bouwtijd en het moment waarop jouw keuzes definitief moeten zijn."
+  ],
+  "stats": [
+    ["30-50%", "kortere bouwtijd ten opzichte van traditioneel"],
+    ["1 dag", "montagetijd van een compleet prefab dak"],
+    ["±80%", "van nieuwbouwwoningen bevat prefab-onderdelen"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke vormen van prefab bouwen zijn er?",
+      "html": "<p>Prefab is een verzamelnaam met oplopende gradaties:</p><ul><li><strong>Prefab elementen:</strong> losse onderdelen zoals betonnen systeemvloeren, kant-en-klare dakelementen, <a href=\"/kennisbank/bouwtechniek/houtskeletbouw/\">HSB-gevels</a> of complete prefab badkamers. Vrijwel elke nieuwbouwwoning heeft ze.</li><li><strong>Prefab casco:</strong> alle dragende wanden en vloeren komen uit de fabriek en worden in dagen gemonteerd; afbouw gebeurt op locatie.</li><li><strong>Modulair / volledig prefab:</strong> complete woningmodules inclusief installaties, keuken en badkamer rollen uit de fabriek en worden op de fundering gestapeld en gekoppeld.</li></ul><p>Hoe hoger de prefab-graad, hoe sneller de bouw — en hoe eerder je keuzes vast moeten liggen.</p>"
+    },
+    {
+      "kop": "Is de kwaliteit van prefab beter of slechter dan op de bouwplaats?",
+      "html": "<p>Gemiddeld beter, om een simpele reden: fabrieksomstandigheden. Binnen wordt gewerkt zonder regen en vorst, met vaste maatvoering, machinale precisie en kwaliteitscontrole per element. Op de bouwplaats hangt de kwaliteit sterker af van de vakman van dienst en het weer.</p><table class=\"vgl\"><thead><tr><th>Aspect</th><th>Prefab (fabriek)</th><th>Traditioneel (bouwplaats)</th></tr></thead><tbody><tr><td>Maatvoering</td><td>Millimeterprecies, machinaal</td><td>Afhankelijk van vakmanschap</td></tr><tr><td>Weersinvloed</td><td>Geen tijdens productie</td><td>Vertraging en vochtrisico</td></tr><tr><td>Controle</td><td>Per element in de fabriek</td><td>Steekproef op locatie</td></tr><tr><td>Kwetsbaar punt</td><td>Montage en naden op locatie</td><td>Hele proces</td></tr></tbody></table><p>Let wel: de zwakke plek van prefab zit in de <strong>aansluitingen</strong> op de bouwplaats — daar komen elementen samen en daar ontstaan eventuele kieren of lekkages. Precies daar kijk je bij oplevering dus extra goed.</p>"
+    },
+    {
+      "kop": "Hoeveel sneller is prefab bouwen?",
+      "html": "<p>De totale bouwtijd is doorgaans 30 tot 50% korter. Een prefab casco van een rijwoning staat in één tot enkele dagen, een compleet dakelement ligt er in één dag op. Daarnaast droogt de woning veel sneller: prefab beton en hout brengen nauwelijks <a href=\"/kennisbank/bouwtechniek/bouwvocht/\">bouwvocht</a> mee, waardoor de afbouw eerder kan starten en jij eerder kunt schilderen en behangen.</p><p>De keerzijde: het zwaartepunt van het werk verschuift naar vóór de bouw. Het ontwerp, inclusief leidingtracés en sparingen, moet volledig uitgewerkt zijn voordat de fabriek gaat produceren. Wijzigingen daarna zijn duur of onmogelijk — je keuzemomenten vallen dus vroeger dan bij traditionele bouw. Zie ook <a href=\"/kennisbank/bouwtechniek/ruwbouw-afbouw/\">ruwbouw versus afbouw</a>.</p>"
+    },
+    {
+      "kop": "Wat betekent prefab voor jou als koper?",
+      "html": "<ul><li><strong>Vroege keuzes:</strong> lever wijzigingen (extra stopcontacten, verplaatste wanden, dakramen) ruim vóór de sluitingsdatum aan — daarna geldt 'gaat niet meer' of een fors meerwerktarief.</li><li><strong>Vaste prijzen:</strong> fabrieksproductie maakt prijzen voorspelbaarder; grote onvoorziene posten horen er niet in te zitten.</li><li><strong>Check de naden:</strong> controleer bij oplevering kozijnaansluitingen, elementnaden en doorvoeren op kieren en afwerking.</li><li><strong>Vraag naar certificering:</strong> serieuze prefab-fabrikanten werken met KOMO- of gelijkwaardige attesten per element.</li></ul><p>Wil je zelf verkennen wat prefab voor jouw situatie kan betekenen — bijvoorbeeld een prefab aanbouw, dakopbouw of complete woning? Gebruik dan de <a href=\"/tools/prefab-configurator/\">Prefab-configurator</a> van Bylder: die vertaalt je wensen naar realistische varianten en prijsindicaties.</p>"
+    },
+    {
+      "kop": "Wordt prefab ook met BIM ontworpen?",
+      "html": "<p>Ja, vrijwel altijd. Prefab vereist dat elk element millimeterprecies past, en dat lukt alleen met een volledig digitaal 3D-model (<a href=\"/kennisbank/bim/wat-is-bim/\">BIM</a>) waarin constructie, installaties en sparingen samenkomen. De fabriek produceert rechtstreeks vanuit dat model. Voor jou als koper is dat goed nieuws: ontwerpfouten worden digitaal opgespoord vóórdat er iets gebouwd is, wat faalkosten en opleverpunten scheelt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een prefab woning goedkoper?",
+      "a": "Niet automatisch. De productiekosten zijn vergelijkbaar met traditioneel, maar je bespaart op bouwtijd, bouwrente en faalkosten. Bij seriematige prefab-concepten kan het prijsvoordeel oplopen; bij unieke ontwerpen valt het vaak weg."
+    },
+    {
+      "q": "Zie je aan een woning dat hij prefab is?",
+      "a": "Meestal niet. Prefab casco's krijgen gewoon een gemetselde gevel, stucwerk of andere afwerking naar keuze. Alleen volledig modulaire woningen hebben soms een herkenbaar stramien."
+    },
+    {
+      "q": "Kan ik nog wijzigingen doorgeven als mijn woning prefab wordt gebouwd?",
+      "a": "Ja, maar alleen tot de ontwerpbevriezing — het moment waarop de fabriek de productie voorbereidt. Die deadline ligt weken tot maanden vóór de bouw. Daarna zijn wijzigingen duur of onmogelijk, dus reageer op tijd op keuzelijsten."
+    },
+    {
+      "q": "Gaat een prefab woning net zo lang mee?",
+      "a": "Ja. Prefab beton, kalkzandsteen en HSB voldoen aan dezelfde bouwregelgeving en levensduureisen als traditionele bouw. De fabrieksmatige kwaliteitscontrole maakt de kans op verborgen gebreken eerder kleiner dan groter."
+    }
+  ],
+  "links": {
+    "tool": ["/tools/prefab-configurator/", "Prefab-configurator"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["houtskeletbouw", "ruwbouw-afbouw", "bim:wat-is-bim"]
+  }
+}

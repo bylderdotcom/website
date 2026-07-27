@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "ventilatierooster",
+  "titel": "Ventilatierooster",
+  "title_tag": "Wat is een ventilatierooster? Uitleg | Bylder",
+  "meta_description": "Een ventilatierooster is een regelbare opening in kozijn of gevel die verse buitenlucht toelaat. Lees waarom je roosters niet moet dichtzetten.",
+  "intro": [
+    "Een ventilatierooster is een regelbare opening in een kozijn of gevel die continu verse buitenlucht de woning in laat. In woningen met mechanische afzuiging (een MV-box) zijn de roosters de toevoerkant van het ventilatiesysteem: afzuiging in keuken en badkamer, toevoer via de roosters in de woon- en slaapkamers.",
+    "Voor bewoners is de belangrijkste boodschap simpel: roosters zijn geen tochtgat maar een ontworpen deel van het systeem. Wie ze permanent dichtzet, zet feitelijk de luchttoevoer van het huis uit — met vocht, CO2-ophoping en schimmel als voorspelbaar gevolg."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Welke soorten roosters zijn er en waar let je op?",
+      "html": "<p>De standaard is het klepraam- of kozijnrooster boven het glas, handmatig regelbaar. Comfortabeler zijn zelfregelende roosters, die bij harde wind automatisch knijpen zodat het niet tocht, en winddrukgestuurde of vraaggestuurde varianten die op vocht of CO2 reageren. Bij drukke wegen bestaan suskasten: roosters met geluiddemping. In woningen met wtw-ventilatie (balansventilatie) horen juist géén open gevelroosters — daar komt de verse lucht via het wtw-kanaal binnen, en zou een rooster het systeem ontregelen. Maak roosters een paar keer per jaar schoon; een vervuild rooster laat merkbaar minder lucht door en gaat ruisen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik ventilatieroosters in de winter dichtdoen?",
+      "a": "Tijdelijk knijpen bij extreme kou kan, helemaal sluiten is onverstandig: de vochtproductie van bewoners gaat gewoon door. Zelfregelende roosters nemen dit dilemma weg — ze beperken tocht zonder de toevoer af te sluiten."
+    },
+    {
+      "q": "Het tocht bij mijn rooster, wat nu?",
+      "a": "Check eerst of het rooster op de laagste stand nog voldoende ventileert en of de mechanische afzuiging niet te hard staat ingeregeld. Vervanging door een zelfregelend of geluiddempend rooster lost de meeste klachten op zonder aan ventilatie in te leveren."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["mv-box", "wtw-ventilatie", "installaties:wtw-ventilatie-woning"]
+  }
+}

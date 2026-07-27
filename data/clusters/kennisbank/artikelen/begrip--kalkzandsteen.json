@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "kalkzandsteen",
+  "titel": "Kalkzandsteen",
+  "title_tag": "Wat is kalkzandsteen? Betekenis + uitleg | Bylder",
+  "meta_description": "Kalkzandsteen is een witte bouwsteen van zand, kalk en water, veel gebruikt voor dragende binnenmuren. Lees de eigenschappen en aandachtspunten bij verbouwen.",
+  "intro": [
+    "Kalkzandsteen is een witte tot lichtgrijze bouwsteen die wordt geperst uit zand, kalk en water en vervolgens onder stoomdruk verhardt. Het is in Nederland het meest gebruikte materiaal voor dragende binnenmuren en het binnenblad van gevels.",
+    "Voor bewoners is kalkzandsteen vooral merkbaar in massa: de muren zijn zwaar, wat gunstig is voor geluidsisolatie en het bufferen van warmte. Voor verbouwers betekent het: boren gaat prima, maar sleuven frezen en sparingen maken in dragende kalkzandsteenwanden vraagt altijd een constructieve check."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waarom wordt kalkzandsteen zoveel gebruikt?",
+      "html": "<p>Kalkzandsteen is sterk, maatvast en relatief goedkoop, en wordt geleverd als blokken of als grote elementen die met een kraantje worden gesteld — daardoor gaat de ruwbouw snel. De hoge massa geeft goede geluidwering tussen woningen en kamers. Nadelen zijn er ook: kalkzandsteen neemt veel bouwvocht op en moet drogen voordat je strak kunt afwerken, en het materiaal is niet vorstbestendig, dus ongeschikt als buitenblad. In de praktijk zie je daarom de combinatie kalkzandsteen binnenblad, isolatie in de spouw en metselwerk als buitenblad. Krimpscheurtjes op de blokkenvoegen in de eerste jaren zijn normaal en meestal cosmetisch.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kan ik een sparing maken in een kalkzandsteenwand?",
+      "a": "In een niet-dragende wand meestal wel; in een dragende wand alleen met een latei en een berekening van de constructeur. Twijfel je of een wand draagt, kijk dan op de constructietekening of laat het beoordelen voordat je zaagt."
+    },
+    {
+      "q": "Hoe hang ik iets zwaars op aan kalkzandsteen?",
+      "a": "Kalkzandsteen houdt pluggen goed vast: gewone nylon pluggen volstaan voor de meeste lasten, voor zware kasten of boilers gebruik je langere pluggen of chemische ankers. Boor met een klopboor, niet met zware hamerstand."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["ruwbouw", "bouwtechniek:spouwmuur-opbouw", "bouwtechniek:bouwvocht"]
+  }
+}

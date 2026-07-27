@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "nul-op-de-meter",
+  "titel": "Nul-op-de-meter",
+  "title_tag": "Wat is nul-op-de-meter? Uitleg | Bylder",
+  "meta_description": "Een nul-op-de-meter-woning wekt op jaarbasis evenveel energie op als bewoners en woning verbruiken. Lees wat erbij komt kijken en waar je op let.",
+  "intro": [
+    "Nul-op-de-meter (NOM) betekent dat een woning op jaarbasis evenveel energie opwekt als er wordt verbruikt voor de woning én het huishoudelijk gebruik, uitgaand van gemiddeld bewonersgedrag. De energiemeter staat aan het eind van het jaar per saldo op nul.",
+    "NOM-woningen combineren zeer goede isolatie, luchtdicht bouwen, een warmtepomp, wtw-ventilatie en een flink dak vol zonnepanelen. Voor kopers is het belangrijk te weten dat 'nul op de meter' een rekenkundig gemiddelde is: jouw werkelijke verbruik en de afbouw van de salderingsregeling bepalen wat je maandlasten echt doen."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is het verschil met energieneutraal en BENG?",
+      "html": "<p>BENG is de wettelijke ondergrens voor alle nieuwbouw: bijna energieneutraal. Energieneutraal betekent dat het gebouwgebonden verbruik (verwarming, warm water, ventilatie) wordt gecompenseerd door eigen opwek. Nul-op-de-meter gaat nog een stap verder en telt ook het huishoudelijke verbruik mee — koken, wassen, apparaten. Bij NOM-renovaties van huurwoningen werken corporaties vaak met een energieprestatievergoeding, waarbij de verhuurder de prestatie garandeert. Koop je een NOM-woning, vraag dan naar de uitgangspunten van de berekening: aantal bewoners, verbruiksprofiel en wat er gebeurt als de opbrengst van de panelen tegenvalt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Betaal ik in een nul-op-de-meter-woning echt niets aan energie?",
+      "a": "Meestal niet letterlijk nul: vastrecht en netbeheerkosten blijven, je verbruik kan afwijken van het gemiddelde, en teruglevering wordt door de afbouw van salderen minder waard. De rekening is wel structureel veel lager dan bij een gewone woning."
+    },
+    {
+      "q": "Is een nul-op-de-meter-woning duurder in aanschaf?",
+      "a": "De bouwkosten liggen hoger door de extra installaties en isolatie, maar daar staan lagere maandlasten tegenover. Sommige hypotheekverstrekkers bieden extra leenruimte voor NOM- en energiezuinige woningen."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["beng", "rc-waarde", "wtw-ventilatie"]
+  }
+}

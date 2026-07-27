@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "koudebrug",
+  "titel": "Koudebrug",
+  "title_tag": "Wat is een koudebrug? Betekenis + uitleg | Bylder",
+  "meta_description": "Een koudebrug is een plek in de constructie waar warmte makkelijk naar buiten lekt, met koude vlekken, condens en schimmel als gevolg. Lees hoe je hem herkent.",
+  "intro": [
+    "Een koudebrug (officieel: thermische brug) is een plek in de gebouwschil waar de isolatie wordt onderbroken en warmte makkelijker naar buiten stroomt dan in de omliggende constructie. Denk aan een doorlopende betonvloer bij een balkon, een stalen latei of een niet-geïsoleerde spouwlat.",
+    "Bewoners merken een koudebrug aan koude plekken op muren, condens en op den duur zwarte schimmelvlekken — vaak in hoeken, achter kasten of rond kozijnen. Bij nieuwbouw horen koudebruggen door detaillering voorkomen te worden; bij renovatie zijn ze een klassiek aandachtspunt bij het na-isoleren."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Hoe herken en verhelp je een koudebrug?",
+      "html": "<p>Een koudebrug verraadt zich in de winter: het oppervlak is daar merkbaar kouder, en op koude vlakken condenseert vocht uit de binnenlucht. Met een infraroodcamera zijn koudebruggen direct zichtbaar als koude lijnen of vlekken. Verhelpen betekent de isolatielijn herstellen: het detail alsnog isoleren, een geïsoleerd verbindingselement toepassen (bij balkons) of aan de binnenzijde isoleren als buitenom niet kan. Half werk is riskant: wie een woning goed kierdicht en isoleert maar koudebruggen laat zitten, concentreert al het condensvocht op die resterende koude plekken — de schimmel wordt daar dan juist erger.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is schimmel in een hoek altijd een koudebrug?",
+      "a": "Vaak wel, maar niet altijd: ook slechte ventilatie, lekkage of optrekkend vocht geven schimmel. Meet of het oppervlak lokaal kouder is en check het ventilatiegedrag voordat je de oorzaak vaststelt."
+    },
+    {
+      "q": "Zijn koudebruggen bij nieuwbouw toegestaan?",
+      "a": "De regelgeving stelt eisen aan de detaillering zodat grote koudebruggen niet voorkomen; ontwerpers gebruiken daarvoor gestandaardiseerde details. Zie je bij oplevering condens of koude vlekken, meld het dan als opleverpunt."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen"],
+    "zusters": ["rc-waarde", "kierdichting", "bouwtechniek:spouwmuur-opbouw"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "luchtdicht-bouwen",
+  "titel": "Wat is luchtdicht bouwen en waarom is het zo belangrijk?",
+  "title_tag": "Luchtdicht bouwen: energie, comfort en test | Bylder",
+  "meta_description": "Luchtdicht bouwen voorkomt warmteverlies en tocht via kieren. Lees hoe kierdichting werkt, wat een blowerdoortest meet en de link met ventilatie.",
+  "intro": [
+    "Luchtdicht bouwen betekent dat de schil van de woning — gevel, dak, vloer en alle aansluitingen — zo min mogelijk ongecontroleerde kieren en naden heeft waardoor lucht naar binnen of buiten lekt. Het gaat dus niet om isolatiedikte, maar om het dichten van de lekken eromheen.",
+    "Voor kopers is dit een onzichtbaar maar voelbaar kwaliteitskenmerk: een lek gebouwde woning verliest warmte, tocht bij de plinten en haalt haar energielabel in de praktijk niet. Bij goed geïsoleerde nieuwbouw kan tot 20% van het warmteverlies door kieren gaan — en juist dat is na oplevering lastig te herstellen."
+  ],
+  "stats": [
+    ["tot 20%", "van het warmteverlies loopt via kieren en naden"],
+    ["qv10 ≤ 0,4", "gangbare luchtdichtheidseis bij energiezuinige nieuwbouw"],
+    ["±€400-€800", "kosten van een blowerdoortest met lekopsporing"]
+  ],
+  "secties": [
+    {
+      "kop": "Waarom is luchtdicht bouwen belangrijk voor energie en comfort?",
+      "html": "<p>Elke kier is een klein open raam dat permanent openstaat. De gevolgen:</p><ul><li><strong>Energieverlies:</strong> warme lucht lekt weg, koude lucht komt binnen; je warmtepomp of cv draait harder dan berekend.</li><li><strong>Tocht en koude voeten:</strong> luchtstromingen langs plinten, stopcontacten en kozijnen voelen als tocht, zelfs bij een hoge <a href=\"/kennisbank/begrip/rc-waarde/\">Rc-waarde</a>.</li><li><strong>Vochtschade:</strong> warme binnenlucht die door kieren de constructie in trekt, condenseert daar en kan houtrot en schimmel veroorzaken — vooral in daken.</li><li><strong>Geluid:</strong> kieren laten ook buitengeluid door; zie <a href=\"/kennisbank/bouwtechniek/geluidsisolatie-woning/\">geluidsisolatie</a>.</li></ul><p>Isolatie zonder luchtdichting is als een wollen trui in de wind: pas met een windjack (de luchtdichte laag) werkt de trui.</p>"
+    },
+    {
+      "kop": "Waar zitten de kieren en hoe worden ze gedicht?",
+      "html": "<p>De klassieke lekplekken zijn overgangen tussen bouwdelen: kozijn-op-muur, dak-op-gevel, naden tussen dakelementen, de aansluiting van de begane-grondvloer op de gevel, en alle doorvoeren (riool, ventilatie, elektra, wtw). Kierdichting gebeurt met:</p><ul><li><strong>Tapes en folies:</strong> luchtdichte tapes over naden van dakelementen en rond kozijnen;</li><li><strong>Compriband en kit:</strong> zwellend band en elastische kit bij kozijnaansluitingen (zie <a href=\"/kennisbank/bouwtechniek/kozijnen-plaatsing/\">kozijnen plaatsen</a>);</li><li><strong>Manchetten:</strong> rubberen doorvoermanchetten om leidingen en kanalen;</li><li><strong>Luchtdichte dozen:</strong> speciale elektradozen in buitenwanden en hellende daken.</li></ul><p>Belangrijk om te weten: dit werk zit ná de afbouw onbereikbaar weggewerkt. Kwaliteit controleer je dus tijdens de bouw of met een meting — niet met het blote oog bij oplevering.</p>"
+    },
+    {
+      "kop": "Wat is een blowerdoortest?",
+      "html": "<p>Een blowerdoortest meet de luchtdichtheid van de hele woning. Een ventilator in een afgeplakte deuropening zet de woning op over- en onderdruk (50 Pa); uit de benodigde luchtstroom volgt de lekwaarde, uitgedrukt als qv10-waarde (dm³/s per m² vloeroppervlak). Hoe lager, hoe dichter: standaard nieuwbouw zit vaak rond 0,6, energiezuinige concepten eisen 0,3-0,4 en passiefbouw nog minder.</p><p>Met rooktest of warmtebeeldcamera worden tijdens de test de lekken zichtbaar gemaakt en direct aangewezen. Vraag je bouwer of er een blowerdoortest wordt gedaan en of je het rapport krijgt — bij energiezuinige concepten en veel Wkb-borgingsplannen is dit al standaard. Zie ook <a href=\"/kennisbank/bouwtechniek/wkb-kwaliteitsborging/\">Wkb-kwaliteitsborging</a>.</p>"
+    },
+    {
+      "kop": "Hoe verhoudt luchtdicht bouwen zich tot ventilatie?",
+      "html": "<p>'Een huis moet toch kunnen ademen?' is het grootste misverstand. Het antwoord: bouw luchtdicht, ventileer bewust. Verse lucht hoort binnen te komen via het ventilatiesysteem — roosters, mechanische afzuiging of <a href=\"/kennisbank/begrip/wtw-ventilatie/\">wtw-ventilatie</a> — en niet via toevallige kieren. Juist bij wtw is luchtdichtheid essentieel: lucht die door kieren binnenkomt, passeert de warmtewisselaar niet en ondermijnt het rendement.</p><p>Een luchtdichte woning zonder goed werkende ventilatie wordt daarentegen snel vochtig en bedompt. De twee horen dus onlosmakelijk bij elkaar: hoe dichter de schil, hoe belangrijker dat het ventilatiesysteem goed is ingeregeld — een terecht punt om bij oplevering aan te kaarten.</p>"
+    },
+    {
+      "kop": "Wat kun je als koper controleren of afspreken?",
+      "html": "<ul><li>Vraag vóór aankoop naar de <strong>ontwerp-qv10-waarde</strong> en of die gemeten wordt;</li><li>Kijk tijdens kijkmomenten of naden en doorvoeren <strong>afgetapet</strong> zijn (foto's maken);</li><li>Voel bij oplevering langs plinten, kozijnen en het dakraam op een winderige dag — tocht is een opleverpunt;</li><li>Overweeg bij twijfel zelf een <strong>blowerdoortest met lekopsporing</strong> (indicatief €400-€800) vóór het einde van de garantietermijn.</li></ul>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Moet een huis niet gewoon kunnen ademen?",
+      "a": "Nee — dat idee stamt uit de tijd van tochtige woningen. Vocht en vervuilde lucht horen via het ventilatiesysteem afgevoerd te worden, niet via kieren. Luchtdicht bouwen plus goede ventilatie geeft een gezonder binnenklimaat dan een lekke schil."
+    },
+    {
+      "q": "Is mijn nieuwbouwwoning verplicht luchtdicht?",
+      "a": "Er geldt een wettelijke basiseis, maar die is mild. De strengere waarden (qv10 van 0,3-0,4) komen uit de energieberekening (BENG) van je woning: haalt de bouwer die waarde niet, dan klopt de beloofde energieprestatie niet. Daarom is meten relevant."
+    },
+    {
+      "q": "Kan ik kieren later nog dichten?",
+      "a": "Zichtbare kieren bij plinten, kozijnen en luiken wel, met kit, compriband of tochtstrips. De grote lekken zitten echter vaak verstopt achter de afwerking (dakvoet, vloeraansluiting) en zijn achteraf alleen met breekwerk bereikbaar. Vandaar: tijdens de bouw controleren."
+    },
+    {
+      "q": "Merk ik het verschil tussen qv10 0,6 en 0,3 echt?",
+      "a": "Ja, op de energierekening (enkele procenten tot ruim tien procent van het verwarmingsverbruik) en vooral in comfort: minder tocht en een gelijkmatiger temperatuur. Bij een warmtepomp met lage-temperatuurverwarming telt elke lek extra zwaar."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["kozijnen-plaatsing", "dakisolatie-methoden", "begrip:wtw-ventilatie"]
+  }
+}

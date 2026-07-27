@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "verborgen-gebreken",
+  "titel": "Verborgen gebreken na oplevering: melden, garantie en bewijslast",
+  "title_tag": "Verborgen gebreken na oplevering: je rechten | Bylder",
+  "meta_description": "Verborgen gebrek ontdekt na oplevering? Zo werkt de meldplicht, welke garantietermijnen gelden en hoe de bewijslast ligt. Praktisch stappenplan.",
+  "intro": [
+    "Een verborgen gebrek is een tekortkoming aan je woning die je bij de oplevering redelijkerwijs niet kon ontdekken — denk aan lekkage in een dak, gebrekkige isolatie of scheurvorming die pas na maanden zichtbaar wordt. Voor zulke gebreken blijft de aannemer ook na de oplevering aansprakelijk.",
+    "Het verschil met gewone opleverpunten is cruciaal: wat je bij oplevering had kunnen zien maar niet hebt genoteerd, geldt in beginsel als geaccepteerd. Wat verborgen was, kun je later alsnog claimen — mits je op tijd meldt en je dossier op orde is."
+  ],
+  "stats": [
+    ["2 jaar", "verjaringstermijn na je schriftelijke klacht (stuiten kan)"],
+    ["10 jaar", "geldt in garantieregelingen doorgaans voor constructieve gebreken"],
+    ["1", "schriftelijke melding start al je termijnen — bewaar hem goed"]
+  ],
+  "secties": [
+    {
+      "kop": "Wanneer is een gebrek 'verborgen'?",
+      "html": "<p>Een gebrek is verborgen als je het bij de oplevering <strong>redelijkerwijs niet had kunnen ontdekken</strong>, ook niet met de aandacht die van een normale koper (of zijn bouwkundig keurder) verwacht mag worden. Een kras op het aanrechtblad is zichtbaar en had je moeten noteren; een verkeerd aangesloten ventilatiesysteem of een lekkende dakaansluiting is dat meestal niet.</p><p>Sinds de Wet kwaliteitsborging voor het bouwen is de positie van de opdrachtgever versterkt: bij nieuwere aannemingsovereenkomsten blijft de aannemer na oplevering aansprakelijk voor gebreken die bij de oplevering niet zijn ontdekt, tenzij die niet aan hem zijn toe te rekenen. Welke regels precies gelden, hangt af van de datum en tekst van jouw contract.</p>"
+    },
+    {
+      "kop": "Hoe en wanneer moet je een verborgen gebrek melden?",
+      "html": "<p>Meld een ontdekt gebrek <strong>binnen bekwame tijd</strong> na ontdekking, schriftelijk en aan de juiste partij: de aannemer, en bij een garantiewoning ook de waarborginstelling (Woningborg of SWK) volgens hun procedure. Wacht je te lang met klagen, dan kun je je rechten verspelen.</p><ul><li>Omschrijf het gebrek concreet, met foto's en de datum van ontdekking.</li><li>Vraag om herstel binnen een redelijke termijn.</li><li>Verstuur per e-mail met ontvangstbevestiging of aangetekend, en bewaar alles.</li></ul><p>Na je melding gaat bovendien een verjaringstermijn lopen — in beginsel twee jaar voor je rechtsvordering. Die kun je <strong>stuiten</strong> met een schriftelijke aanmaning waarin je je ondubbelzinnig je recht op nakoming voorbehoudt. Zet die termijn in je agenda.</p>"
+    },
+    {
+      "kop": "Welke garantietermijnen gelden er?",
+      "html": "<p>Bij een woning met waarborgcertificaat kun je twee sporen bewandelen: de wettelijke aansprakelijkheid van de aannemer én de <strong>garantieregeling</strong>. Die regeling kent termijnen per onderdeel: een algemene garantie van enkele jaren voor de meeste bouwdelen, langere termijnen (doorgaans tot tien jaar) voor ernstige constructieve gebreken, en kortere termijnen voor bijvoorbeeld schilderwerk of kitvoegen. De exacte termijnen staan in de versie van de regeling die bij jouw contract hoort — controleer die, want ze verschillen per onderdeel.</p><p>Het garantiespoor heeft een groot voordeel: bij een geschil of faillissement van de bouwer kun je terugvallen op de waarborginstelling en haar geschillenprocedure.</p>"
+    },
+    {
+      "kop": "Hoe ligt de bewijslast?",
+      "html": "<p>Als opdrachtgever moet jij in beginsel aantonen dát er een gebrek is en dat het aan de aannemer toerekenbaar is — bijvoorbeeld dat het om een uitvoerings- of ontwerpfout gaat en niet om slijtage, eigen gebruik of achterstallig onderhoud. Onder garantieregelingen en onder nieuwere (Wkb-)contracten ligt de lat voor de consument gunstiger, maar documentatie blijft beslissend.</p><p>Een rapport van een onafhankelijke <strong>bouwkundig expert</strong> is vaak het verschil tussen welles-nietes en een toegewezen claim: het legt oorzaak, omvang en herstelkosten vast. Laat bij serieuze gebreken zo'n rapport opstellen vóórdat er hersteld wordt.</p>"
+    },
+    {
+      "kop": "Wat als de aannemer niet thuis geeft?",
+      "html": "<p>Stuur na een afwijzing of stilzwijgen een formele ingebrekestelling met een laatste redelijke termijn. Daarna staan open: de geschillenprocedure van je garantieregeling, de in je contract aangewezen geschillencommissie of arbiter, of de rechter. Bij een failliete aannemer met garantiewoning klop je rechtstreeks aan bij de waarborginstelling. Dit artikel is voorlichting, geen juridisch advies — bij grote schade of discussie over toerekenbaarheid is een bouwrechtjurist een verstandige investering.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Geldt er één vaste termijn voor verborgen gebreken?",
+      "a": "Nee. Er zijn meerdere termijnen naast elkaar: klagen binnen bekwame tijd na ontdekking, een verjaringstermijn van in beginsel twee jaar na je klacht (te stuiten), wettelijke maximumtermijnen na oplevering en de garantietermijnen per onderdeel uit je regeling. Check ze alle vier voor jouw situatie."
+    },
+    {
+      "q": "Mag ik het gebrek laten herstellen door een ander bedrijf?",
+      "a": "In beginsel moet je de aannemer eerst de kans geven zelf te herstellen; pas na verzuim (na ingebrekestelling) kun je de kosten van een derde op hem verhalen. Herstel door een ander zonder die stap kan je claim en garantie op dat onderdeel kosten."
+    },
+    {
+      "q": "Is scheurvorming altijd een verborgen gebrek?",
+      "a": "Nee. Kleine krimpscheuren horen bij het drogen en zetten van een nieuwbouwwoning en vallen binnen de norm. Doorgaande, groter wordende of constructieve scheuren kunnen wél een gebrek zijn. Laat twijfelgevallen beoordelen door een bouwkundige en meld ze in elk geval schriftelijk."
+    },
+    {
+      "q": "Wat als ik het gebrek pas na jaren ontdek?",
+      "a": "Melden kan zolang de wettelijke of garantietermijnen nog lopen — voor constructieve gebreken is dat vaak tot tien jaar na oplevering. Meld direct na ontdekking; hoe langer je wacht, hoe zwakker je positie qua bewijslast en 'bekwame tijd'."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["opleveringsgebreken-claimen", "aansprakelijkheid-aannemer", "bouwtechniek:scheuren-in-muren"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "winddicht",
+  "titel": "Winddicht",
+  "title_tag": "Wat is winddicht? Verschil met luchtdicht | Bylder",
+  "meta_description": "Winddicht betekent dat de buitenschil wind en regen buiten houdt; luchtdicht gaat over lekken van binnenuit. Lees het verschil en waarom beide nodig zijn.",
+  "intro": [
+    "Winddicht betekent dat de buitenzijde van de gebouwschil zo is afgewerkt dat wind en slagregen niet in de constructie kunnen dringen — meestal met een dampopen folie of plaat aan de koude kant van de isolatie. In de bouwplanning markeert 'wind- en waterdicht' bovendien de mijlpaal waarop de afbouw binnen kan beginnen.",
+    "Winddicht wordt vaak verward met luchtdicht, maar het zijn twee verschillende lagen met verschillende taken: winddichting zit buiten en beschermt de isolatie, luchtdichting zit binnen en houdt warme, vochtige binnenlucht uit de constructie."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is het verschil tussen winddicht en luchtdicht?",
+      "html": "<p>De winddichte laag (buiten, dampopen) voorkomt dat koude buitenlucht door of langs de isolatie spoelt — wind door minerale wol kan de isolatiewaarde flink verlagen — en houdt regen buiten, terwijl bouwvocht wel naar buiten kan ontsnappen. De luchtdichte laag (binnen, meestal een dampremmende folie of het stucwerk zelf) voorkomt dat warme binnenlucht met waterdamp de constructie in lekt, waar de damp op koude vlakken zou condenseren. Een goed dak of een goede houtskeletwand heeft dus beide lagen, elk zorgvuldig getaped en aangesloten. In de praktijk: de winddichting beschermt je isolatie, de luchtdichting beschermt je constructie én je energierekening.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wanneer is een nieuwbouwwoning wind- en waterdicht?",
+      "a": "Zodra dak, gevels, kozijnen en beglazing erin zitten en neerslag buiten blijft. Vanaf dat moment kunnen installaties, dekvloeren en stucwerk starten; in de aannemingsovereenkomst is het vaak een betalingsmijlpaal."
+    },
+    {
+      "q": "Moet een winddichte folie dampopen zijn?",
+      "a": "Aan de buitenzijde vrijwel altijd: de folie moet wind en water keren maar waterdamp uit de constructie laten ontsnappen. Een dampdichte folie aan de koude kant sluit vocht op en veroorzaakt condens- en rotproblemen."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["kierdichting", "bouwtechniek:luchtdicht-bouwen"]
+  }
+}

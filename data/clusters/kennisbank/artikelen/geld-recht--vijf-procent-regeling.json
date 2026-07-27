@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "vijf-procent-regeling",
+  "titel": "De 5%-regeling: jouw drukmiddel bij de oplevering",
+  "title_tag": "5%-regeling bij oplevering: zo werkt het | Bylder",
+  "meta_description": "De 5%-regeling geeft je druk bij oplevering: 5% van de aanneemsom in depot bij de notaris. Zo gebruik je je opschortingsrecht (art. 7:768 BW) goed.",
+  "intro": [
+    "De 5%-regeling is een wettelijk recht (artikel 7:768 BW) van consumenten die een woning laten bouwen: je mag de laatste 5% van de aanneemsom niet aan de aannemer betalen, maar in depot storten bij de notaris. Dat geld blijft daar staan als zekerheid dat opleveringsgebreken echt worden hersteld.",
+    "Het is misschien wel je sterkste drukmiddel in het hele bouwproces. Zolang het depot bij de notaris staat, heeft de aannemer een direct financieel belang bij het afwerken van je opleverpunten. Maar de regeling werkt alleen als je haar actief en op tijd gebruikt."
+  ],
+  "stats": [
+    ["5%", "van de aanneemsom mag in depot bij de notaris"],
+    ["3 maanden", "blijft het depot na oplevering in beginsel staan"],
+    ["7:768 BW", "het wetsartikel dat dit recht regelt"]
+  ],
+  "secties": [
+    {
+      "kop": "Hoe werkt de 5%-regeling volgens de wet?",
+      "html": "<p>Bij aanneming van een nieuwbouwwoning voor een consument mag je de laatste 5% van de aanneemsom inhouden op de laatste termijn(en) en in depot storten bij de notaris. De notaris houdt het bedrag in beginsel tot <strong>drie maanden na oplevering</strong> vast. Daarna keert hij uit aan de aannemer — tenzij jij vóór het einde van die termijn schriftelijk laat weten dat je het depot (deels) wilt aanhouden omdat gebreken niet zijn hersteld.</p><p>De aannemer kan het depot vervangen door een <strong>bankgarantie</strong> van gelijke waarde; je zekerheid blijft dan hetzelfde. In model-overeenkomsten van Woningborg en SWK is deze regeling standaard verwerkt.</p>"
+    },
+    {
+      "kop": "Wat is het opschortingsrecht en hoe roep je het in?",
+      "html": "<p>Na de drie maanden mag je het depot alleen aanhouden voor zover je een beroep doet op je <strong>opschortingsrecht</strong>: er zijn gebreken die de aannemer moet herstellen, en het bedrag dat je vasthoudt staat in redelijke verhouding tot de kosten van dat herstel. Je hoeft dus niet het hele depot vrij te geven als er nog serieuze punten openstaan, maar je mag ook niet €15.000 vasthouden voor een krasje op een kozijn.</p><p>Belangrijk: informeer de <strong>notaris én de aannemer schriftelijk en tijdig</strong>, met een lijst van de openstaande gebreken (verwijs naar het proces-verbaal van oplevering). Doe je niets, dan keert de notaris na drie maanden gewoon uit.</p>"
+    },
+    {
+      "kop": "Welke praktijkstappen zet je rond de oplevering?",
+      "html": "<p>Zo gebruik je de regeling optimaal:</p><ul><li><strong>Vóór de laatste termijn:</strong> kondig schriftelijk aan dat je de 5% in depot stort bij de notaris (of controleer dat het contract dit al regelt) en betaal die 5% niet aan de aannemer.</li><li><strong>Bij oplevering:</strong> leg alle gebreken vast in het proces-verbaal; neem eventueel een bouwkundig keurder mee.</li><li><strong>Na oplevering:</strong> bewaak de hersteltermijnen. Herinner de aannemer schriftelijk aan openstaande punten.</li><li><strong>Vóór het einde van de drie maanden:</strong> zijn er nog gebreken, meld de notaris dan schriftelijk dat je opschort, met de gebrekenlijst en een redelijke inschatting van de herstelkosten.</li><li><strong>Na herstel:</strong> geef het depot (deels) vrij zodra punten zijn opgelost — dat houdt de verhoudingen werkbaar.</li></ul>"
+    },
+    {
+      "kop": "Welke fouten worden vaak gemaakt?",
+      "html": "<p>De meest voorkomende missers: de laatste termijn tóch volledig aan de aannemer betalen (dan is je drukmiddel weg), de driemaandstermijn laten verlopen zonder de notaris te informeren, en een bedrag vasthouden dat niet in verhouding staat tot de gebreken — dat kan je rente of schadeplicht opleveren. Ook wordt de regeling soms verward met simpelweg 'de laatste factuur niet betalen'; dat is juridisch iets anders en riskanter.</p><p>Twijfel je hoeveel je redelijkerwijs mag aanhouden, laat dan de herstelkosten inschatten door een bouwkundige of vraag juridisch advies. Dit artikel is voorlichting, geen juridisch advies.</p>"
+    },
+    {
+      "kop": "Geldt de 5%-regeling ook bij verbouwingen?",
+      "html": "<p>De wettelijke regeling van artikel 7:768 BW geldt voor de bouw van een woning in opdracht van een consument; bij een gewone verbouwing is er geen automatisch notarisdepot. Wel kun je bij een verbouwing contractueel iets vergelijkbaars afspreken, bijvoorbeeld dat de laatste termijn pas vervalt na herstel van opleverpunten. Ook zonder depot houd je bij gebreken een algemeen opschortingsrecht: je mag betaling opschorten in redelijke verhouding tot wat er mis is. Leg zulke afspraken en opschortingen altijd schriftelijk vast."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Moet ik de 5%-regeling zelf aanvragen?",
+      "a": "In model-overeenkomsten is de regeling standaard opgenomen en verloopt de storting via de notaris. Controleer wel of het echt gebeurt: kondig bij de laatste termijn schriftelijk aan dat je 5% inhoudt en vraag de notaris om bevestiging van het depot."
+    },
+    {
+      "q": "Wat als de aannemer een bankgarantie stelt?",
+      "a": "Dan wordt het depot bij de notaris vrijgegeven en vervangt de bankgarantie je zekerheid. Dat is wettelijk toegestaan en voor jou gelijkwaardig: bij niet-herstelde gebreken kun je onder de garantie claimen. Bewaar het garantiedocument goed."
+    },
+    {
+      "q": "Loopt er rente over het depot en voor wie is die?",
+      "a": "Over een notarisdepot wordt doorgaans rente vergoed volgens de voorwaarden van de notaris. Als je het depot terecht aanhoudt op grond van je opschortingsrecht, komt de rente over het uitgekeerde deel in de regel toe aan degene die het bedrag uiteindelijk ontvangt. Vraag de notaris hoe dit in jouw geval is geregeld."
+    },
+    {
+      "q": "Kan ik het depot gebruiken om herstel door een ander te betalen?",
+      "a": "Niet rechtstreeks: het depot is zekerheid, geen vrij besteedbaar potje. Herstelt de aannemer ondanks aanmaning en ingebrekestelling niet, dan kun je na verzuim de herstelkosten op hem verhalen en verrekening met het depot afdwingen — vaak via de geschillencommissie of rechter. Laat je hierbij juridisch adviseren."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["opleveringsgebreken-claimen", "aannemingsovereenkomst", "geschil-met-aannemer"]
+  }
+}

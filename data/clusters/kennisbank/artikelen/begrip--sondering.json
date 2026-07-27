@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "sondering",
+  "titel": "Sondering",
+  "title_tag": "Wat is een sondering? Betekenis + uitleg | Bylder",
+  "meta_description": "Een sondering is een grondonderzoek waarbij een conus de bodem in wordt gedrukt om de draagkracht per diepte te meten. De basis voor elk funderingsadvies.",
+  "intro": [
+    "Een sondering is een grondonderzoek waarbij een sondeerwagen een conus met constante snelheid de bodem in drukt en per diepte de weerstand meet. Het resultaat — de sondeergrafiek — laat zien waar draagkrachtige zandlagen zitten en hoe slap de lagen daarboven zijn.",
+    "De sondering is de basis onder elk funderingsontwerp: de constructeur bepaalt ermee of fundering op staal kan of dat er palen nodig zijn, en zo ja, van welke lengte. Wie een kavel koopt of een aanbouw plant, laat dus eerst sonderen voordat er een funderingsprijs op papier komt."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wanneer heb je een sondering nodig en wat kost het?",
+      "html": "<p>Bij nieuwbouw, een aanbouw met fundering en soms bij funderingsherstel is een sondering vereist voor de constructieberekening en de vergunning. Meestal worden per bouwwerk meerdere sondeerpunten gezet, zodat verschillen in de bodemopbouw zichtbaar worden. De kosten hangen af van het aantal punten en de bereikbaarheid van het terrein; voor een aanbouw bij een bestaande woning wordt vaak een compacte rupssondeerwagen ingezet die door een tuinpad kan. Let bij offertes van aannemers op de post fundering: staat daar een stelpost omdat de sondering nog ontbreekt, dan is dat een van de grootste onzekerheden in de prijs.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen een sondering en een boring?",
+      "a": "Een sondering meet weerstand en zegt vooral iets over draagkracht; een grondboring haalt materiaal naar boven voor bepaling van de grondsoort of milieukundig onderzoek. Voor funderingsadvies is de sondering het standaardinstrument."
+    },
+    {
+      "q": "Kan ik sonderingen van de buren gebruiken?",
+      "a": "Als indicatie wel — via openbare databanken zijn veel sonderingen in te zien. Voor de constructieberekening eist de constructeur meestal sonderingen op de bouwlocatie zelf, omdat de bodem lokaal flink kan verschillen."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["heipaal", "fundering-op-staal", "bouwtechniek:fundering-typen"]
+  }
+}

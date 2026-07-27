@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "aansprakelijkheid-aannemer",
+  "titel": "Aansprakelijkheid van de aannemer: voor en na de oplevering",
+  "title_tag": "Aansprakelijkheid aannemer & Wkb uitgelegd | Bylder",
+  "meta_description": "Wanneer is de aannemer aansprakelijk? Voor en na oplevering, de Wkb-verschuiving en wat vrijtekening in het contract betekent voor jouw rechten.",
+  "intro": [
+    "Aansprakelijkheid van de aannemer betekent dat hij moet opdraaien voor gebreken en schade die aan hem zijn toe te rekenen — door herstel, vervanging of schadevergoeding. Het scharnierpunt is de oplevering: die bepaalt wie welk risico draagt en welke gebreken je nog kunt claimen.",
+    "Sinds de Wet kwaliteitsborging voor het bouwen (Wkb) is de balans verschoven in het voordeel van de opdrachtgever: de aannemer blijft ook na oplevering aansprakelijk voor gebreken die toen niet zijn ontdekt. Wat er precies geldt, hangt af van je contractsdatum en de tekst van je overeenkomst."
+  ],
+  "stats": [
+    ["1", "moment — de oplevering — bepaalt de risicoverdeling"],
+    ["2024", "sinds dat jaar geldt de Wkb voor veel nieuwe contracten"],
+    ["2 jaar", "verjaringstermijn na schriftelijk protest (te stuiten)"]
+  ],
+  "secties": [
+    {
+      "kop": "Wie draagt het risico vóór de oplevering?",
+      "html": "<p>Tot de oplevering is het werk voor <strong>risico van de aannemer</strong>. Gaat er iets mis — storm blaast een muur om, materiaal wordt gestolen, een onderaannemer maakt fouten — dan moet de aannemer in beginsel op eigen kosten zorgen dat het overeengekomen werk er alsnog komt. Ook fouten van door hem ingeschakelde hulppersonen en gebreken in door hem geleverd materiaal komen voor zijn rekening.</p><p>Uitzonderingen bestaan, bijvoorbeeld bij gebreken die voortkomen uit door jou voorgeschreven constructies, materialen of instructies; dan kan de verantwoordelijkheid (deels) bij jou liggen. Wel geldt ook daar een waarschuwingsplicht: een deskundige aannemer moet je wijzen op fouten in jouw plannen die hij kende of behoorde te kennen.</p>"
+    },
+    {
+      "kop": "Wat verandert er bij de oplevering?",
+      "html": "<p>Met de oplevering aanvaard je het werk: het risico gaat over op jou en de aannemer is <strong>ontslagen van aansprakelijkheid voor gebreken die je bij de oplevering redelijkerwijs had moeten ontdekken</strong> maar niet hebt gemeld. Daarom is het proces-verbaal van oplevering zo belangrijk: alles wat erin staat, moet nog worden hersteld; wat zichtbaar was maar er niet in staat, ben je in beginsel kwijt.</p><p>Voor gebreken die verborgen waren, blijft de aannemer ook na oplevering aansprakelijk — binnen de geldende klacht-, verjarings- en vervaltermijnen.</p>"
+    },
+    {
+      "kop": "Wat heeft de Wkb veranderd?",
+      "html": "<p>De Wet kwaliteitsborging voor het bouwen heeft de aansprakelijkheidsregel voor nieuwere contracten aangescherpt: de aannemer is na oplevering aansprakelijk voor <strong>alle gebreken die bij de oplevering niet zijn ontdekt</strong>, tenzij die gebreken niet aan hem zijn toe te rekenen. De discussie of jij een gebrek 'had moeten zien' verschuift daarmee grotendeels naar de aannemer: hij moet aantonen dat het gebrek hem niet toerekenbaar is.</p><p>Daarnaast bracht de Wkb informatieplichten (zoals het consumentendossier bij oplevering en informatie over zekerheden) en de onafhankelijke kwaliteitsborger tijdens de bouw. Voor consumenten is van deze regels bovendien niet zomaar af te wijken. Controleer wel altijd welke versie van de wet op jouw contract van toepassing is — het overgangsrecht kijkt naar de datum van de overeenkomst.</p>"
+    },
+    {
+      "kop": "Wat betekent vrijtekening in het contract?",
+      "html": "<p>Vrijtekening (exoneratie) is een contractuele beperking of uitsluiting van aansprakelijkheid — bijvoorbeeld een maximumbedrag, uitsluiting van gevolgschade of korte vervaltermijnen. Bij zakelijke contracten komt dit veel voor; tegenover consumenten zijn de grenzen strakker: onredelijk bezwarende bedingen in algemene voorwaarden kunnen vernietigbaar zijn, en van bepaalde wettelijke beschermingsregels (zoals de Wkb-aansprakelijkheidsregel en de 5%-regeling) kan ten nadele van de consument niet worden afgeweken.</p><p>Zie je in een offerte of voorwaarden een vergaande uitsluiting staan, laat die dan beoordelen vóór je tekent. Dit artikel is voorlichting, geen juridisch advies; bij twijfel over een beding is een jurist de aangewezen route.</p>"
+    },
+    {
+      "kop": "Hoe stel je de aannemer aansprakelijk?",
+      "html": "<ul><li><strong>Meld het gebrek schriftelijk</strong> binnen bekwame tijd na ontdekking, met foto's en omschrijving.</li><li><strong>Vraag herstel</strong> binnen een redelijke termijn; stuur bij uitblijven een formele ingebrekestelling.</li><li><strong>Bewaak de verjaring:</strong> na je protest loopt in beginsel een termijn van twee jaar, te stuiten met een schriftelijke aanmaning.</li><li><strong>Onderbouw je schade</strong> met een expertiserapport en offertes voor herstel.</li><li><strong>Escaleer</strong> zo nodig naar de geschillencommissie of arbiter uit je contract of garantieregeling, of naar de rechter.</li></ul><p>Bij een garantiewoning loopt er parallel altijd het spoor via Woningborg of SWK — vaak de snelste route bij duidelijke gebreken.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is de aannemer aansprakelijk voor fouten van onderaannemers?",
+      "a": "Ja, tegenover jou is je contractspartij — de hoofdaannemer — verantwoordelijk voor het hele werk, inclusief fouten van door hem ingeschakelde onderaannemers en leveranciers. Hoe hij dat intern verrekent, is niet jouw probleem."
+    },
+    {
+      "q": "Geldt de Wkb-aansprakelijkheid ook voor mijn oude contract?",
+      "a": "De aangescherpte regel geldt voor overeenkomsten die na de inwerkingtreding zijn gesloten; voor oudere contracten geldt het oude regime, waarin de aannemer na oplevering vooral voor verborgen gebreken aansprakelijk is. Kijk dus naar de datum van jouw overeenkomst en vraag bij twijfel advies."
+    },
+    {
+      "q": "Kan de aannemer aansprakelijkheid voor gevolgschade uitsluiten?",
+      "a": "Contracten proberen dat vaak. Tegenover consumenten kan zo'n beding onredelijk bezwarend en daarmee vernietigbaar zijn, maar dat is geen automatisme. Laat een concreet beding juridisch toetsen voordat je een claim op gevolgschade opgeeft of accepteert."
+    },
+    {
+      "q": "Wat als de aannemer failliet is?",
+      "a": "Met een waarborgcertificaat van Woningborg of SWK kun je voor afbouw en garantiegebreken terecht bij de waarborginstelling. Zonder certificaat rest indienen van je vordering bij de curator, met doorgaans weinig kans op volledige vergoeding. Controleer daarom vóór het tekenen of er een certificaat komt."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["bouwtechniek:wkb-kwaliteitsborging", "verborgen-gebreken", "woningborg-swk"]
+  }
+}

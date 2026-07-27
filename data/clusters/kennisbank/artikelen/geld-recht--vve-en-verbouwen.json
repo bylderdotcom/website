@@ -1,0 +1,61 @@
+{
+  "cluster": "geld-recht",
+  "slug": "vve-en-verbouwen",
+  "titel": "VvE en verbouwen: wanneer heb je toestemming nodig?",
+  "title_tag": "VvE-toestemming bij verbouwen appartement | Bylder",
+  "meta_description": "Verbouwen in een appartement? Zo bepaal je of je VvE-toestemming nodig hebt, wat de splitsingsakte zegt en hoe de procedure werkt.",
+  "intro": [
+    "Wie een appartement verbouwt, heeft niet alleen met de aannemer en de gemeente te maken, maar ook met de Vereniging van Eigenaars (VvE). Als appartementseigenaar bezit je een exclusief gebruiksrecht op je privégedeelte, maar het gebouw als geheel is gezamenlijk eigendom — en daar gaat de VvE over.",
+    "Of je toestemming nodig hebt, hangt af van wat je wilt verbouwen en wat de splitsingsakte en het huishoudelijk reglement bepalen. Verbouwen zonder vereiste toestemming kan betekenen dat je alles moet terugdraaien, dus zoek dit uit vóórdat de aannemer begint."
+  ],
+  "stats": [
+    ["1", "splitsingsakte bepaalt wat privé is en wat gemeenschappelijk"],
+    ["2", "documenten checken: splitsingsakte én huishoudelijk reglement"],
+    ["100%", "terugdraaien kan het gevolg zijn van verbouwen zonder toestemming"]
+  ],
+  "secties": [
+    {
+      "kop": "Wanneer heb je toestemming van de VvE nodig?",
+      "html": "<p>De hoofdregel: raakt je verbouwing <strong>gemeenschappelijke delen</strong> of de constructie, dan heb je toestemming van de VvE nodig. Daaronder vallen doorgaans: dragende muren en vloeren, de gevel (inclusief kozijnen en buitenzijde), het dak, gemeenschappelijke leidingen en schachten, en vaak ook zaken als een airco-unit of zonwering aan de buitenkant.</p><p>Puur binnen je eigen appartement — een nieuwe keuken, badkamer of niet-dragende binnenwand — mag meestal zonder VvE-toestemming, al kunnen reglementen eisen stellen aan bijvoorbeeld geluidwerende vloerbedekking of werktijden. En let op: voor constructieve ingrepen kan daarnaast een omgevingsvergunning of constructeursberekening nodig zijn.</p>"
+    },
+    {
+      "kop": "Wat staat er in de splitsingsakte en het reglement?",
+      "html": "<p>De <strong>splitsingsakte</strong> (met splitsingstekening) verdeelt het gebouw juridisch in privégedeelten en gemeenschappelijke delen en verklaart een <strong>splitsingsreglement</strong> van toepassing — vaak een standaard modelreglement. Daarin staat welke wijzigingen toestemming vergen en met welke meerderheid de vergadering beslist. Het <strong>huishoudelijk reglement</strong> vult dat aan met praktische regels.</p><p>Vraag de akte op bij het Kadaster of bij het VvE-bestuur en lees specifiek: de definitie van gemeenschappelijke delen, bepalingen over veranderingen aan het gebouw, en regels over vloeren en geluid. Welk modelreglement geldt (er zijn meerdere versies), bepaalt de precieze spelregels voor jouw gebouw.</p>"
+    },
+    {
+      "kop": "Hoe verloopt de toestemmingsprocedure?",
+      "html": "<ul><li><strong>Stap 1 — Vooroverleg:</strong> bespreek je plan informeel met het bestuur; zij kennen het reglement en de gevoeligheden.</li><li><strong>Stap 2 — Agenderen:</strong> dien je verzoek schriftelijk in voor de vergadering van eigenaars, met tekeningen en zo nodig een constructeursrapport.</li><li><strong>Stap 3 — Besluit:</strong> de vergadering stemt; welke meerderheid nodig is, staat in het reglement. Sommige reglementen delegeren kleinere zaken aan het bestuur.</li><li><strong>Stap 4 — Vastlegging:</strong> zorg dat de toestemming met eventuele voorwaarden (uitvoeringseisen, aansprakelijkheid, onderhoudsplicht) in de notulen staat en bewaar die.</li></ul><p>Reken op doorlooptijd: veel VvE's vergaderen maar één of twee keer per jaar, al kan een extra vergadering worden uitgeschreven.</p>"
+    },
+    {
+      "kop": "Wat als de VvE weigert of niet reageert?",
+      "html": "<p>Bij een weigering kun je eerst kijken of aanpassing van je plan bezwaren wegneemt. Blijft de VvE weigeren terwijl je meent dat dit onredelijk is, dan kent het appartementsrecht de mogelijkheid om de kantonrechter om een <strong>vervangende machtiging</strong> te vragen. Ook een besluit dat in strijd is met de regels of de redelijkheid kan binnen korte termijn ter vernietiging aan de rechter worden voorgelegd — de termijnen daarvoor zijn kort, dus wacht niet.</p><p>Dit is bij uitstek terrein waar een in appartementsrecht gespecialiseerde jurist waarde toevoegt; dit artikel is voorlichting, geen juridisch advies.</p>"
+    },
+    {
+      "kop": "Waar let je op richting je aannemer?",
+      "html": "<p>Neem in de afspraken met je aannemer op dat de start afhankelijk is van VvE-toestemming (en eventuele vergunningen), zodat je niet vastzit aan een planning of kosten als de toestemming uitblijft. Leg ook de voorwaarden uit het VvE-besluit — werktijden, bescherming van gemeenschappelijke ruimten, afvoer van puin — expliciet vast in de opdracht. Schade aan gemeenschappelijke delen tijdens jouw verbouwing komt anders al snel voor jouw rekening.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik een dragende muur in mijn appartement doorbreken?",
+      "a": "Dragende constructies zijn vrijwel altijd gemeenschappelijk, ook als ze binnen je appartement staan. Je hebt dan VvE-toestemming nodig plus een constructeursberekening, en vaak ook een omgevingsvergunning. Begin nooit zonder beide."
+    },
+    {
+      "q": "Heb ik toestemming nodig voor een nieuwe vloer?",
+      "a": "Voor de vloerafwerking zelf meestal niet, maar vrijwel elk reglement stelt geluidseisen (zoals een minimale contactgeluidsisolatie) aan harde vloeren. Check het huishoudelijk reglement voordat je een pvc- of houten vloer laat leggen."
+    },
+    {
+      "q": "Kan de VvE mijn verbouwing laten terugdraaien?",
+      "a": "Ja. Verbouw je gemeenschappelijke delen zonder vereiste toestemming, dan kan de VvE herstel in oude staat vorderen, zo nodig via de rechter — ook jaren later. Alsnog toestemming vragen (legaliseren) kan soms, maar je onderhandelingspositie is dan zwak."
+    },
+    {
+      "q": "Geldt dit ook bij een nieuwbouwappartement?",
+      "a": "Ja, ook dan is er een splitsingsakte en (vaak nog een jonge) VvE. Wil je bij de afbouw of kort na oplevering iets wijzigen aan gevel, buitenruimte of installaties op gemeenschappelijke delen, dan gelden dezelfde regels. Kopersopties via de ontwikkelaar zijn meestal al binnen de splitsing geregeld."
+    }
+  ],
+  "links": {
+    "tool": ["/keuken-badkamer-offerte-check/", "Keuken & badkamer offerte-check"],
+    "commercieel": ["/vve-appartement/", "VvE & appartement"],
+    "zusters": ["index", "aannemingsovereenkomst", "geschil-met-aannemer"]
+  }
+}

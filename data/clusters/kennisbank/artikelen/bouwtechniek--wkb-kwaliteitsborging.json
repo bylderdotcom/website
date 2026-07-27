@@ -1,0 +1,65 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "wkb-kwaliteitsborging",
+  "titel": "Wat betekent de Wet kwaliteitsborging (Wkb) voor jou als koper?",
+  "title_tag": "Wkb: kwaliteitsborging bij nieuwbouw | Bylder",
+  "meta_description": "Sinds 2024 controleert een onafhankelijke kwaliteitsborger je nieuwbouw. Lees wat de Wkb regelt, wat het opleverdossier is en wat jouw rechten zijn.",
+  "intro": [
+    "De Wet kwaliteitsborging voor het bouwen (Wkb) regelt sinds 1 januari 2024 dat niet de gemeente maar een onafhankelijke, gecertificeerde kwaliteitsborger controleert of een nieuwbouwwoning aan de bouwtechnische regels voldoet — niet alleen op tekening, maar ook tijdens de bouw op de bouwplaats. Daarnaast is de aansprakelijkheid van aannemers flink aangescherpt.",
+    "Voor jou als koper is de Wkb goed nieuws: er kijkt structureel iemand mee die niet door de tijdsdruk van de bouwer wordt gestuurd, je krijgt bij oplevering een compleet dossier over je woning, en gebreken die ná oplevering opduiken blijven de verantwoordelijkheid van de aannemer."
+  ],
+  "stats": [
+    ["1-1-2024", "invoering Wkb voor nieuwbouw gevolgklasse 1"],
+    ["5%", "van de aanneemsom mag je als depot achterhouden bij de notaris"],
+    ["100%", "van de gebreken na oplevering: aannemer moet aantonen dat het niet zijn schuld is"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is er sinds 2024 veranderd?",
+      "html": "<p>Vóór de Wkb toetste de gemeente je bouwplan vooraf op papier en kwam er hooguit incidenteel een inspecteur langs. Onder de Wkb werkt het anders:</p><ul><li>Een <strong>kwaliteitsborger</strong> — een onafhankelijk, toegelaten bureau — stelt vooraf een borgingsplan op met risico's en controlemomenten;</li><li>Tijdens de bouw controleert hij op de bouwplaats: fundering, constructie, isolatie, luchtdichtheid, installaties, brandveiligheid;</li><li>Bij gereedmelding verklaart hij dat er een <strong>gerechtvaardigd vertrouwen</strong> is dat de woning aan de regels voldoet — zonder die verklaring mag de woning formeel niet in gebruik;</li><li>De <strong>aansprakelijkheid</strong> van de aannemer voor gebreken is aangescherpt (ook voor verbouwingen).</li></ul><p>De Wkb geldt nu voor 'gevolgklasse 1': onder meer eengezinswoningen en eenvoudige bedrijfsgebouwen. Appartementen volgen later.</p>"
+    },
+    {
+      "kop": "Wat doet een kwaliteitsborger precies?",
+      "html": "<p>De kwaliteitsborger is geen opzichter die jij aanstuurt, maar een wettelijk verplichte controleur die de bouwer (of ontwikkelaar) inschakelt en betaalt. Hij werkt met een toegelaten instrument (controlemethodiek), beoordeelt risico's vooraf — bijvoorbeeld de <a href=\"/kennisbank/bouwtechniek/fundering-typen/\">fundering</a>, kritische aansluitingen en <a href=\"/kennisbank/bouwtechniek/luchtdicht-bouwen/\">luchtdichtheid</a> — en legt controles vast met foto's en meetrapporten. Constateert hij een afwijking, dan moet de bouwer herstellen voordat de gereedmelding kan plaatsvinden.</p><p>Let wel: de kwaliteitsborger toetst aan het wettelijke minimum (Bbl), niet aan je contract. Dat je duurdere tegels of een extra stopcontact hebt afgesproken, valt buiten zijn werk — daarvoor blijven je eigen opleverkeuring en contractcontrole nodig.</p>"
+    },
+    {
+      "kop": "Wat is het opleverdossier (consumentendossier)?",
+      "html": "<p>Bij oplevering moet de aannemer je een dossier overhandigen dat laat zien wat er is gebouwd en dat het aan de afspraken voldoet. Daarin horen onder meer:</p><ul><li>Revisietekeningen en berekeningen (constructie, installaties);</li><li>Gebruikte materialen en toegepaste isolatiewaarden;</li><li>Gegevens en handleidingen van installaties (ventilatie, warmtepomp, vloerverwarming);</li><li>Onderhouds- en gebruiksinstructies;</li><li>Garantiebewijzen en keuringsrapporten.</li></ul><p>Bewaar dit dossier goed: het is je bewijs bij garantieclaims, onmisbaar bij latere verbouwingen (waar zitten leidingen, welke muur is dragend) en waardevol bij verkoop.</p>"
+    },
+    {
+      "kop": "Hoe versterkt de Wkb je positie bij gebreken?",
+      "html": "<p>Twee civielrechtelijke wijzigingen gelden voor alle aannemingsovereenkomsten (dus ook verbouwingen):</p><ul><li><strong>Aansprakelijkheid na oplevering:</strong> vroeger was de aannemer na oplevering alleen aansprakelijk voor verborgen gebreken; nu is hij aansprakelijk voor álle gebreken die aan hem toe te rekenen zijn — ook als je ze bij oplevering had kunnen zien. De bewijslast ligt bij hem.</li><li><strong>5%-depot:</strong> je mag 5% van de aanneemsom bij de notaris in depot houden. Nieuw is dat de aannemer je actief moet informeren en vragen of je het depot wilt vrijgeven; zwijg je, dan blijft het geld nog drie maanden staan als drukmiddel voor herstel van opleverpunten.</li></ul><p>Combineer dit met een scherpe opleverkeuring: elk gebrek op het proces-verbaal, foto's erbij, en het depot pas vrijgeven als alles hersteld is.</p>"
+    },
+    {
+      "kop": "Wat betekent de Wkb praktisch voor jouw bouwproces?",
+      "html": "<p>Je merkt de Wkb vooral indirect: iets meer papierwerk vooraf, controlemomenten tijdens de bouw en een dossier bij oplevering. De kosten (indicatief €3.000-€6.000 voor een woning) zitten in de bouwsom. Wat je zelf kunt doen:</p><ul><li>Vraag wie de kwaliteitsborger is en of je (samengevatte) rapportages kunt inzien;</li><li>Vraag bij de gereedmelding naar de verklaring van de kwaliteitsborger;</li><li>Controleer het opleverdossier op volledigheid vóór je tekent;</li><li>Blijf zelf (of met een keurder) de contractuele afspraken controleren — dat dekt de Wkb niet. De <a href=\"/hoe-werkt-bylder-quickscan/\">AI QuickScan</a> helpt je opleverpunten en meerwerk snel te beoordelen.</li></ul>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Geldt de Wkb ook voor mijn verbouwing?",
+      "a": "De verplichte kwaliteitsborger geldt nog niet voor de meeste verbouwingen aan bestaande woningen. De aangescherpte aansprakelijkheid van de aannemer en de nieuwe 5%-depotregels gelden wél voor alle aannemingsovereenkomsten, dus ook bij verbouwingen."
+    },
+    {
+      "q": "Kost de Wkb mij als koper extra geld?",
+      "a": "De kwaliteitsborger kost indicatief enkele duizenden euro's per woning en is verwerkt in de koop-/aanneemsom. Daar staat tegenover dat gebreken eerder worden gevonden en hersteld — faalkosten die anders vaak bij de koper terechtkwamen."
+    },
+    {
+      "q": "Vervangt de kwaliteitsborger mijn eigen opleverkeuring?",
+      "a": "Nee. De kwaliteitsborger toetst aan de wettelijke bouwregels, niet aan je contract of aan cosmetische kwaliteit. Krassen, beschadigingen en afwijkingen van je koperskeuzes vang je alleen met je eigen (deskundige) opleverkeuring."
+    },
+    {
+      "q": "Wat als de kwaliteitsborger geen verklaring afgeeft?",
+      "a": "Dan mag de woning formeel niet in gebruik worden genomen en moet de bouwer de geconstateerde afwijkingen herstellen. Voor jou is dat een sterk drukmiddel: de bouwer kan niet gereedmelden zolang de borger niet akkoord is."
+    },
+    {
+      "q": "Krijg ik het borgingsplan en de rapportages te zien?",
+      "a": "Niet automatisch — ze zijn gericht aan de bouwer en het bevoegd gezag. Vraag er bij je kopersbegeleider naar; veel bouwers delen samenvattingen. Het opleverdossier krijg je bij oplevering wél standaard."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["index", "scheuren-in-muren", "ruwbouw-afbouw"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "stucstopprofiel",
+  "titel": "Stucstopprofiel",
+  "title_tag": "Wat is een stucstopprofiel? Uitleg | Bylder",
+  "meta_description": "Een stucstopprofiel is een profiel dat stucwerk strak laat eindigen tegen kozijnen, plafonds of ander materiaal. Lees waar het zit en waarom het scheuren voorkomt.",
+  "intro": [
+    "Een stucstopprofiel is een metalen of kunststof profiel dat de rand van stucwerk strak en op gelijke dikte laat eindigen — bijvoorbeeld tegen een kozijn, bij een plafondaansluiting of waar stucwerk overgaat in een ander materiaal.",
+    "Voor de bewoner is het profiel vooral zichtbaar als een strakke, rechte beëindiging zonder brokkelige rand. Voor de stukadoor is het een hulpmiddel én een kwaliteitskenmerk: goed geplaatste stopprofielen voorkomen scheurtjes op de overgang tussen materialen die verschillend werken."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar worden stucstopprofielen toegepast?",
+      "html": "<p>Typische plekken zijn de aansluiting van stucwerk op kozijnen en deurlijsten, de onderrand van gestucte wanden boven plinten of tegelwerk, en de overgang van wand naar plafond bij verschillende materialen. Sommige profielen hebben een flexibele lip of voorziene kitvoeg, zodat de beweging tussen kozijn en muur niet als scheur door het stucwerk trekt. Verwante profielen zijn het hoekprofiel (voor strakke, stootvaste buitenhoeken) en het dilatatieprofiel (voor bewegingsvoegen midden in een vlak). In een goede stukadoorsofferte staan de profielen benoemd; ontbreken ze, vraag dan hoe randen en hoeken worden afgewerkt — dat verschil zie je jaren later terug.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoort er kit tussen stucwerk en kozijn?",
+      "a": "Ja, meestal wel: kozijn en muur bewegen ten opzichte van elkaar, en een blijvend elastische kitvoeg — vaak in combinatie met een stopprofiel — vangt dat op. Een starre stucrand strak tegen het kozijn scheurt vrijwel altijd in."
+    },
+    {
+      "q": "Zie je een stucstopprofiel na afwerking nog?",
+      "a": "Bij een net gezette rand zie je alleen een strakke lijn; het profiel zelf zit onder het stucwerk. Er bestaan ook zichtprofielen die bewust als strakke schaduwvoeg of afwerkrand in het zicht blijven."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["spachtelputz", "behangklaar", "krimpscheur"]
+  }
+}

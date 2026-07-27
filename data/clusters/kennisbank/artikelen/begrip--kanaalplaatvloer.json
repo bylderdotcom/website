@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "kanaalplaatvloer",
+  "titel": "Kanaalplaatvloer",
+  "title_tag": "Wat is een kanaalplaatvloer? Uitleg | Bylder",
+  "meta_description": "Een kanaalplaatvloer is een prefab betonvloer met holle kanalen in de lengte: licht, sterk en snel te leggen. Lees waar je op let bij boren en sparingen.",
+  "intro": [
+    "Een kanaalplaatvloer is een prefab betonnen vloerplaat met holle kanalen in de lengterichting. Door die kanalen is de vloer lichter dan massief beton bij gelijke sterkte, waardoor grote overspanningen mogelijk zijn zonder tussensteunpunten.",
+    "Kanaalplaatvloeren worden veel toegepast als verdiepingsvloer in nieuwbouw en appartementen. Voor bewoners is het praktisch om te weten waar de kanalen lopen: dat bepaalt waar je veilig kunt boren en of je later leidingen of een trapgat kunt toevoegen."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Waar let je op bij een kanaalplaatvloer?",
+      "html": "<p>De platen worden op de bouw gelegd, aan elkaar gestort in de voegen en meestal afgewerkt met een dekvloer waarin leidingen en vloerverwarming liggen. Sparingen voor trapgat, schacht of rookgasafvoer worden in de fabriek voorgeboord of gezaagd; achteraf een sparing maken kan alleen na berekening door de constructeur, omdat je voorspankabels kunt raken. Datzelfde geldt voor zwaar bevestigen aan de onderzijde: boor nooit blind diep in een kanaalplaat, en hang zware lasten aan de dammen tussen de kanalen. Bij plat dak-toepassing is nog een aandachtspunt: in de kanalen kan bouwvocht of lekwater blijven staan, wat zich soms als druppende plafonds toont — daarvoor worden afwateringsgaatjes geboord.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik in een kanaalplaatvloer boren voor lampen of rails?",
+      "a": "Ondiep boren voor pluggen kan meestal, maar blijf uit de buurt van de voorspanstrengen die onderin de plaat liggen. Voor zware bevestigingen of doorboringen geldt: eerst de leverancierstekening raadplegen of een constructeur laten meekijken."
+    },
+    {
+      "q": "Wat is het verschil met een breedplaatvloer?",
+      "a": "Een breedplaatvloer is een dunne prefab schil die op de bouw wordt afgestort met beton en wapening; een kanaalplaatvloer komt vrijwel compleet uit de fabriek. Breedplaat is flexibeler voor leidingen in de vloer, kanaalplaat is sneller en overspant verder."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["ruwbouw", "dekvloer", "sparing"]
+  }
+}

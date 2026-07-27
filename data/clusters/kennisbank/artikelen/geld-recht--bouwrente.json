@@ -1,0 +1,57 @@
+{
+  "cluster": "geld-recht",
+  "slug": "bouwrente",
+  "titel": "Bouwrente bij nieuwbouw: wat is het en waar let je op?",
+  "title_tag": "Bouwrente nieuwbouw: uitleg & aandachtspunten | Bylder",
+  "meta_description": "Wat is bouwrente bij nieuwbouw? Grond- en bouwrente uitgelegd, wat er (algemeen) aftrekbaar is en waar je op let in koopcontract en afrekening.",
+  "intro": [
+    "Bouwrente is de rente die je bij nieuwbouw betaalt over bedragen die de bouwer of grondeigenaar al heeft voorgefinancierd voordat jij bij de notaris bent geweest. Denk aan rente over de grondprijs en over bouwtermijnen die al vervallen zijn vóór het passeren van de akte.",
+    "Bouwrente is geen hypotheekrente en geen extra winst die je zomaar moet accepteren: het is een contractuele post die in je koop- en aannemingsovereenkomst staat. Wie begrijpt hoe hij is opgebouwd, kan de afrekening controleren en fiscaal niets laten liggen."
+  ],
+  "stats": [
+    ["2", "componenten: grondrente en rente over vervallen termijnen"],
+    ["1", "moment — de aktedatum — knipt de rente in twee delen"],
+    ["96%", "van kopers betaalt minstens één post te duur"]
+  ],
+  "secties": [
+    {
+      "kop": "Wat is bouwrente precies?",
+      "html": "<p>Bij nieuwbouw zit er tijd tussen het tekenen van de koop-/aannemingsovereenkomst en het passeren van de akte bij de notaris. In die periode heeft de ontwikkelaar de grond al gekocht en is de bouw soms al gestart. Over die voorfinanciering rekent hij rente door aan jou:</p><ul><li><strong>Grondrente:</strong> rente over de grondprijs vanaf een in het contract genoemde datum tot de aktedatum.</li><li><strong>Rente over vervallen bouwtermijnen:</strong> rente over termijnen die al opeisbaar waren vóór het passeren van de akte.</li></ul><p>Het percentage en de startdatum staan in je overeenkomst. Na het passeren van de akte betaal je geen bouwrente meer aan de bouwer, maar gewone hypotheekrente aan je geldverstrekker (deels uit je bouwdepot).</p>"
+    },
+    {
+      "kop": "Is bouwrente fiscaal aftrekbaar?",
+      "html": "<p>In grote lijnen geldt: bouwrente over de periode <strong>vóór het sluiten van de koop-/aannemingsovereenkomst</strong> hoort bij de koopsom en is niet aftrekbaar. Rente die je verschuldigd wordt over de periode <strong>ná het sluiten van de overeenkomst</strong> tot het passeren van de akte kan onder voorwaarden aftrekbaar zijn, net als de hypotheekrente daarna (verrekend met de rentevergoeding over je bouwdepot).</p><p>De precieze uitwerking hangt af van jouw situatie en de actuele regels; hanteer geen vuistregels uit oude fora maar controleer het bij de Belastingdienst of laat je aangifte door een adviseur doen. De notarisafrekening en de renteoverzichten van de bouwer heb je daarbij nodig — bewaar ze.</p>"
+    },
+    {
+      "kop": "Waar let je op in contract en afrekening?",
+      "html": "<ul><li><strong>Percentage:</strong> welk rentepercentage rekent de bouwer, en is dat marktconform? Bouwrentepercentages liggen soms opvallend hoger dan hypotheekrentes.</li><li><strong>Startdatum:</strong> vanaf wanneer loopt de grondrente? Een vroege startdatum kan honderden euro's per maand schelen.</li><li><strong>Vervallen termijnen:</strong> kloppen de termijnen die als 'vervallen' worden gerekend met de werkelijke bouwvoortgang?</li><li><strong>Notarisafrekening:</strong> controleer of de bouwrente op de afrekening aansluit op het contract — reken het na of laat het narekenen.</li></ul><p>Snel passeren scheelt bouwrente: hoe eerder de akte, hoe korter de periode waarover de bouwer rente rekent. Reken wel je dubbele lasten mee als je je huidige woning nog hebt.</p>"
+    },
+    {
+      "kop": "Kun je over bouwrente onderhandelen?",
+      "html": "<p>Bij projectnieuwbouw liggen percentage en systematiek meestal vast in de model-overeenkomst en is onderhandelen beperkt mogelijk. Waar je wél invloed hebt: de snelheid waarmee jij je financiering rondmaakt en de akte passeert, en het controleren van de berekening. Fouten in renteafrekeningen komen voor — een verkeerde startdatum of een termijn die te vroeg als vervallen is geboekt.</p><p>Vind je een post onverklaarbaar, vraag dan een specificatie op. De bouwer moet kunnen onderbouwen waarover en vanaf wanneer hij rente rekent. Kom je er niet uit, dan kan je notaris of een jurist meekijken; dit artikel is voorlichting, geen fiscaal of juridisch advies.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is bouwrente hetzelfde als de rente over mijn bouwdepot?",
+      "a": "Nee. Bouwrente betaal je aan de bouwer over voorgefinancierde bedragen vóór de aktedatum. Daarna betaal je hypotheekrente aan de bank en ontvang je een rentevergoeding over het nog niet opgenomen bouwdepot. Het zijn drie verschillende geldstromen."
+    },
+    {
+      "q": "Kan ik bouwrente meefinancieren in de hypotheek?",
+      "a": "Vaak wel: de verschuldigde bouwrente tot de aktedatum wordt dan meegenomen in de hypotheeksom en verrekend via de notaris. Of en hoeveel er meegefinancierd kan worden, hangt af van je geldverstrekker en de waarde van de woning — bespreek dit met je hypotheekadviseur."
+    },
+    {
+      "q": "Waarom is het bouwrentepercentage hoger dan mijn hypotheekrente?",
+      "a": "De bouwer financiert de grond en bouw voor met projectfinanciering en rekent daar zijn tarief plus opslag voor door; dat staat los van de hypotheekmarkt. Het contractuele percentage geldt — daarom loont het om vóór het tekenen te kijken welk percentage er wordt gehanteerd."
+    },
+    {
+      "q": "Betaal ik bouwrente bij een verbouwing?",
+      "a": "Nee, bouwrente is typisch iets voor nieuwbouwkoop van een projectontwikkelaar. Bij een verbouwing heb je hooguit te maken met hypotheekrente, depotrente en eventuele betalingsafspraken met je aannemer."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["hypotheek-nieuwbouw", "bouwdepot", "aannemingsovereenkomst"]
+  }
+}

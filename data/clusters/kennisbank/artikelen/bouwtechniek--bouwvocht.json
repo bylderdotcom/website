@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "bouwvocht",
+  "titel": "Hoeveel bouwvocht zit er in een nieuwbouwwoning en hoe stook je het eruit?",
+  "title_tag": "Bouwvocht in nieuwbouw: droogtijd en tips | Bylder",
+  "meta_description": "Een nieuwbouwwoning bevat duizenden liters bouwvocht. Lees hoe lang drogen duurt, hoe je stookt en ventileert en welke schade je zo voorkomt.",
+  "intro": [
+    "Bouwvocht is het water dat tijdens de bouw in beton, metselwerk, stuc- en dekvloeren terechtkomt: in een gemiddelde nieuwbouwwoning zo'n 3.000 tot 5.000 liter. Dat vocht moet er na oplevering geleidelijk uit — en dat duurt ongeveer een jaar.",
+    "Voor kopers is dit het eerste 'onderhoudsklusje' van hun nieuwe huis, en meteen het belangrijkste: wie te snel dicht afwerkt of te weinig ventileert, krijgt schimmel, loslatend behang, kromtrekkende deuren en scheurtjes. De meeste schade in het eerste bewoningsjaar is vochtschade — en die valt buiten de garantie als je de droogadviezen negeert."
+  ],
+  "stats": [
+    ["3.000-5.000 l", "bouwvocht in een gemiddelde nieuwbouwwoning"],
+    ["±1 jaar", "droogtijd voordat de woning in evenwicht is"],
+    ["4-6 weken", "minimale wachttijd vóór schilderen en behangen"]
+  ],
+  "secties": [
+    {
+      "kop": "Waar zit al dat bouwvocht in?",
+      "html": "<p>Vooral in de natte bouwmaterialen: beton (vloeren, wanden), cementdekvloeren, metselmortel en stucwerk worden allemaal met water aangemaakt, en maar een deel daarvan bindt chemisch. De rest moet verdampen. Ook regen tijdens de ruwbouwfase trekt in de constructie.</p><p>Vuistregel per onderdeel: een cementdekvloer van 7 cm bevat per m² zo'n 10 liter verdampbaar water, stucwerk enkele liters per m². Prefab en <a href=\"/kennisbank/bouwtechniek/houtskeletbouw/\">houtskeletbouw</a> brengen veel minder vocht mee — die woningen zijn na oplevering vrijwel meteen droog.</p>"
+    },
+    {
+      "kop": "Hoe lang duurt het drogen van een nieuwbouwwoning?",
+      "html": "<p>Reken op 9 tot 18 maanden, gemiddeld een jaar, voordat de constructie in evenwicht is met een normaal binnenklimaat. Het eerste half jaar verdampt het meeste vocht; je merkt het aan beslagen ramen in de ochtend, een klamme lucht en een luchtvochtigheid boven de 70%.</p><p>De droogsnelheid hangt af van seizoen (winteroplevering droogt trager), materiaalkeuze en vooral van jouw stook- en ventilatiegedrag. Een hygrometer van een paar euro is de beste investering van je eerste woonjaar: streef naar 50-60% relatieve luchtvochtigheid. Zie ook <a href=\"/kennisbank/installaties/binnenklimaat-luchtvochtigheid/\">binnenklimaat en luchtvochtigheid</a>.</p>"
+    },
+    {
+      "kop": "Hoe stook en ventileer je bouwvocht weg?",
+      "html": "<ul><li><strong>Verwarm gelijkmatig:</strong> houd alle ruimtes op 15 à 20 °C, ook kamers die je niet gebruikt. Warme lucht neemt vocht op; koude kamers worden condensplekken.</li><li><strong>Ventileer continu:</strong> zet het ventilatiesysteem nooit uit en gebruik in de eerste maanden een hogere stand; zet aanvullend roosters of ramen op een kier.</li><li><strong>Niet forceren:</strong> ga niet vol stoken op 25 °C — te snel drogen veroorzaakt juist krimpscheuren in stucwerk en dekvloeren.</li><li><strong>Vloerverwarming rustig opstoken:</strong> volg het opstookprotocol van de bouwer (per dag 1 à 2 graden watertemperatuur) om scheuren in de dekvloer te voorkomen.</li><li><strong>Meubels vrij van koude buitenmuren:</strong> houd de eerste maanden 5-10 cm afstand zodat lucht kan circuleren.</li></ul>"
+    },
+    {
+      "kop": "Waarom moet je wachten met afwerken?",
+      "html": "<p>Dampdichte afwerking sluit het vocht op in de constructie, met loslatende afwerking en schimmel als gevolg. Houd deze wachttijden aan (indicatief, meet bij twijfel het vochtpercentage):</p><table class=\"vgl\"><thead><tr><th>Afwerking</th><th>Wachttijd na oplevering</th><th>Risico bij te vroeg</th></tr></thead><tbody><tr><td>Latex/muurverf (dampopen)</td><td>4-6 weken</td><td>Kleurverschil, bladderen</td></tr><tr><td>Behang (papier, dampopen)</td><td>2-3 maanden</td><td>Loslaten, schimmel achter behang</td></tr><tr><td>Vinylbehang, glasvlies + latex</td><td>6-12 maanden</td><td>Vocht opgesloten, schimmel</td></tr><tr><td>PVC-vloer, gietvloer, parket</td><td>Pas bij dekvloer &lt; 2-2,5% vocht</td><td>Bol staan, delaminatie, schimmel</td></tr></tbody></table><p>Vloerleggers horen altijd een vochtmeting van de dekvloer te doen — vraag om het meetrapport. Een spuitpleister als <a href=\"/kennisbank/begrip/spachtelputz/\">spachtelputz</a> is relatief dampopen en kan meestal eerder dan behang.</p>"
+    },
+    {
+      "kop": "Welke schade door bouwvocht valt onder garantie?",
+      "html": "<p>Krimpscheurtjes in stucwerk en kleine kieren bij plinten en kozijnen gelden als normale droogverschijnselen en vallen buiten de garantie — net als schimmel die ontstaat door onvoldoende stoken en ventileren. Constructieve gebreken, lekkages en scheuren buiten de norm vallen er wél onder. Documenteer daarom je stook- en ventilatiegedrag niet, maar wel opvallende schade: foto's met datum, en meld tijdig schriftelijk bij de bouwer. Twijfel je of iets 'normaal krimpen' is? Zie <a href=\"/kennisbank/bouwtechniek/scheuren-in-muren/\">scheuren in muren</a> of laat het beoordelen via de Bylder QuickScan.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mijn ramen beslaan elke ochtend. Is dat erg?",
+      "a": "In het eerste jaar is dat normaal: het bouwvocht verdampt en condenseert 's nachts op het koudste vlak, het glas. Wrijf het weg, ventileer extra en houd de verwarming gelijkmatig aan. Blijft het na een jaar, dan ventileer je structureel te weinig."
+    },
+    {
+      "q": "Kan ik een bouwdroger gebruiken?",
+      "a": "Het kan, maar met mate. Een condensdroger versnelt het drogen van een dekvloer, maar te agressief drogen veroorzaakt krimpscheuren. Gebruik hem gericht (bijvoorbeeld vóór het leggen van een vloer) en niet wekenlang op volle kracht in een verse woning."
+    },
+    {
+      "q": "Wanneer mag ik parket of PVC leggen in nieuwbouw?",
+      "a": "Pas als de cementdekvloer droog genoeg is: onder circa 2,5% vocht voor PVC en 2% voor parket (bij vloerverwarming strenger). Dat duurt vaak 3 tot 6 maanden of langer. Laat de legger meten en bewaar het meetrapport voor de garantie."
+    },
+    {
+      "q": "Kost het bouwvocht wegdrogen extra energie?",
+      "a": "Ja, houd in het eerste jaar rekening met een merkbaar hogere energierekening: verdampen kost warmte en je ventileert meer dan normaal. Dat is geen gebrek van de woning — na het droogjaar zakt het verbruik naar het normale niveau."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["scheuren-in-muren", "kruipruimte", "installaties:binnenklimaat-luchtvochtigheid"]
+  }
+}

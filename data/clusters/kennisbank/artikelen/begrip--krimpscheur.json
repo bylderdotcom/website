@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "krimpscheur",
+  "titel": "Krimpscheur",
+  "title_tag": "Wat is een krimpscheur? Betekenis + uitleg | Bylder",
+  "meta_description": "Een krimpscheur is een fijne scheur die ontstaat doordat beton, stuc of metselwerk krimpt bij het drogen. Meestal onschuldig — lees wanneer je moet opletten.",
+  "intro": [
+    "Een krimpscheur is een fijne scheur in beton, dekvloer, stucwerk of metselwerk die ontstaat doordat het materiaal bij het uitdrogen krimpt. Krimpscheuren zijn meestal haarfijn, oppervlakkig en constructief onschuldig.",
+    "Vrijwel elke nieuwbouwwoning krijgt in de eerste een à twee jaar krimpscheurtjes: er zit veel bouwvocht in de constructie en dat trekt er langzaam uit. Voor kopers is de vraag dus zelden óf er scheurtjes komen, maar hoe je ze beoordeelt en wie ze herstelt."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wanneer is een scheur onschuldig en wanneer niet?",
+      "html": "<p>Vuistregels: haarscheuren die grillig over stucwerk of langs blokkenvoegen lopen en niet breder worden, zijn vrijwel altijd krimp. Oppassen geblazen bij scheuren die duidelijk breder zijn dan een millimeter of twee, diagonaal vanuit hoeken van kozijnen lopen, aan beide zijden van de muur zichtbaar zijn, of blijven groeien — dat kan op zetting of een constructief probleem wijzen. Maak bij twijfel een foto met datum en meetlat en volg de scheur enkele maanden. Bij nieuwbouw geldt: krimpscheuren vallen doorgaans onder normale eigenschappen van de gebruikte materialen, maar buitensporige scheurvorming kun je binnen de garantietermijn melden bij de aannemer.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wanneer kan ik krimpscheuren het best repareren?",
+      "a": "Wacht bij nieuwbouw liefst tot de woning een stookseizoen droog is; eerder dichtzetten betekent vaak opnieuw beginnen. Vul haarscheuren met overschilderbare acrylaatkit of vlies en werk daarna af."
+    },
+    {
+      "q": "Valt scheurvorming onder de nieuwbouwgarantie?",
+      "a": "Normale krimpscheuren gelden meestal als eigenschap van het materiaal en vallen buiten herstel. Scheuren door constructiefouten of buitensporige scheurvorming vallen wel onder de garantieregeling — meld ze schriftelijk en met foto's."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["dilatatievoeg", "bouwtechniek:bouwvocht"]
+  }
+}

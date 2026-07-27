@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "spouwmuur-opbouw",
+  "titel": "Hoe is een spouwmuur opgebouwd en waarom werkt het zo?",
+  "title_tag": "Spouwmuur: opbouw en werking uitgelegd | Bylder",
+  "meta_description": "Een spouwmuur bestaat uit binnenblad, isolatie, luchtspouw en buitenblad. Lees hoe die opbouw werkt en waarom hij je woning droog en warm houdt.",
+  "intro": [
+    "Een spouwmuur is een buitengevel die uit twee muren bestaat: een dragend binnenblad en een buitenblad van metselwerk, met daartussen een ruimte (de spouw) waarin isolatie zit en een smalle luchtlaag. Vrijwel elke Nederlandse woning van na 1930 heeft spouwmuren.",
+    "Voor kopers en verbouwers is de spouwmuur relevanter dan hij lijkt: hij bepaalt hoe warm en droog je woning is, of na-isolatie mogelijk is, en waar je bij oplevering of verbouwing op moet letten — van spouwankers tot open stootvoegen die je vooral niet moet dichtkitten."
+  ],
+  "stats": [
+    ["Rc ≥ 4,7", "wettelijke minimumisolatie nieuwbouwgevel"],
+    ["±4 per m²", "aantal spouwankers in een gevel"],
+    ["1930", "vanaf dit bouwjaar zijn spouwmuren gangbaar"]
+  ],
+  "secties": [
+    {
+      "kop": "Uit welke lagen bestaat een spouwmuur?",
+      "html": "<p>Van binnen naar buiten:</p><ul><li><strong>Binnenblad:</strong> het dragende deel, bij nieuwbouw meestal kalkzandsteen of beton. Dit draagt de vloeren en het dak en zorgt voor massa (geluid, warmtebuffering).</li><li><strong>Isolatielaag:</strong> platen of dekens (PIR, steenwol, glaswol) tegen het binnenblad. Bij nieuwbouw 12 tot 20 cm dik om aan <a href=\"/kennisbank/begrip/rc-waarde/\">Rc</a> ≥ 4,7 te voldoen.</li><li><strong>Luchtspouw:</strong> een vrije ruimte van enkele centimeters die doorgeslagen regenwater afvoert en de constructie laat drogen.</li><li><strong>Buitenblad:</strong> een halfsteens muur van baksteen (of ander gevelmateriaal) die regen, wind en stoten opvangt. Het buitenblad draagt niets — het is de regenjas van de woning.</li></ul><p>Spouwankers — rvs draden, circa vier per vierkante meter — koppelen het buitenblad aan het binnenblad zodat de gevel niet kan uitknikken.</p>"
+    },
+    {
+      "kop": "Waarom bouwen we met een spouw?",
+      "html": "<p>Baksteen is niet waterdicht: bij slagregen trekt vocht door het buitenblad heen. De spouw onderbreekt die weg. Doorgeslagen water loopt langs de binnenkant van het buitenblad naar beneden en verlaat de gevel via open stootvoegen (verticale voegen zonder mortel) onderin het metselwerk. Het binnenblad — en dus je woonkamer — blijft droog.</p><p>Daarnaast scheidt de spouw twee klimaten: het natte, koude buitenblad en het warme, droge binnenblad. De isolatie kan daardoor droog blijven werken. Dit is ook waarom je open stootvoegen nooit mag dichtkitten en waarom de spouw bovenin moet kunnen ventileren.</p>"
+    },
+    {
+      "kop": "Wat zijn kwetsbare punten in een spouwmuur?",
+      "html": "<ul><li><strong>Valspecie:</strong> mortelresten die tijdens het metselen op de isolatie of onderin de spouw vallen kunnen vochtbruggen vormen. Een nette metselaar houdt de spouw schoon.</li><li><strong>Koudebruggen:</strong> plekken waar de isolatie onderbroken wordt, zoals bij lateien (draagbalken boven kozijnen) en kozijnaansluitingen. Daar kan binnen condens en schimmel ontstaan.</li><li><strong>Loodslabben en waterkeringen:</strong> boven kozijnen en bij funderingsaansluitingen moet folie of lood het spouwwater naar buiten leiden.</li><li><strong>Roestende spouwankers</strong> bij oudere woningen (vóór rvs standaard was): kan scheuren en bollend metselwerk geven.</li></ul><p>Zie je bij een nieuwbouwschouw isolatieplaten met open naden of gevulde stootvoegen? Meld het — na het metselen is het niet meer te herstellen zonder breekwerk.</p>"
+    },
+    {
+      "kop": "Kun je een bestaande spouwmuur na-isoleren?",
+      "html": "<p>Ja, als de spouw leeg en schoon is. Woningen van circa 1930 tot 1975 hebben meestal een ongeïsoleerde spouw van 5 à 6 cm die zich goed laat vullen met inblaasisolatie (EPS-parels, glaswol of PUR-schuim). Het is een van de goedkoopste energiemaatregelen, vaak binnen enkele jaren terugverdiend. Een specialist inspecteert eerst met een endoscoop of de spouw geschikt is.</p><p>Lees meer over materialen en kosten bij <a href=\"/kennisbank/installaties/spouwmuurisolatie/\">spouwmuurisolatie</a>.</p>"
+    },
+    {
+      "kop": "Wat controleer je als koper bij gevel en spouw?",
+      "html": "<ul><li>Bij nieuwbouw tijdens de bouw: aansluitende isolatieplaten zonder kieren, schone spouw, open stootvoegen onderin en boven kozijnen;</li><li>Bij oplevering: strak voegwerk, geen witte uitslag of doorslaand vocht, <a href=\"/kennisbank/bouwtechniek/kozijnen-plaatsing/\">waterslagen</a> op afschot;</li><li>Bij bestaande bouw: vraag of en waarmee de spouw is na-geïsoleerd, en let op vochtplekken op noordwest-gevels;</li><li>Bij een offerte voor gevelwerk of na-isolatie: laat de posten en m²-prijzen controleren voordat je tekent.</li></ul>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe dik is een spouwmuur?",
+      "a": "Een moderne nieuwbouwgevel is totaal circa 35 tot 45 cm: 10-15 cm binnenblad, 12-20 cm isolatie, 2-4 cm luchtspouw en 10 cm buitenblad. Oudere spouwmuren zonder isolatie zijn ongeveer 22 tot 25 cm dik."
+    },
+    {
+      "q": "Waar zijn die open verticale voegen onderin mijn gevel voor?",
+      "a": "Dat zijn open stootvoegen: ze voeren doorgeslagen regenwater uit de spouw af en ventileren de spouw. Laat ze altijd open — dichtkitten veroorzaakt vochtproblemen. Tegen muizen bestaan speciale stootvoegroosters."
+    },
+    {
+      "q": "Heeft mijn woning een spouwmuur?",
+      "a": "Woningen van na circa 1930 vrijwel altijd; van vóór 1920 meestal niet (massieve muren). Meet de muurdikte bij een raam of deur: rond 22 cm of meer wijst op een spouw, rond 11 cm op massief halfsteens werk. Een isolatiebedrijf kan het met een boorinspectie bevestigen."
+    },
+    {
+      "q": "Is een gevel zonder spouw slechter?",
+      "a": "Niet per se: er bestaan goede alternatieven zoals houtskeletgevels en buitengevelisolatie met stucwerk. Het principe blijft hetzelfde — een waterkerende buitenlaag, een drogende luchtlaag of dampopen opbouw, en isolatie — alleen anders uitgevoerd."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/oplevering-nieuwbouw/", "Oplevering nieuwbouw"],
+    "zusters": ["kozijnen-plaatsing", "installaties:spouwmuurisolatie", "begrip:rc-waarde"]
+  }
+}

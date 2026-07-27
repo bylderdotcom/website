@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "latei",
+  "titel": "Latei",
+  "title_tag": "Wat is een latei? Betekenis + uitleg | Bylder",
+  "meta_description": "Een latei is een balk van beton of staal boven een raam, deur of doorbraak die het metselwerk erboven draagt. Lees wanneer je er een nodig hebt.",
+  "intro": [
+    "Een latei is een dragende balk van beton, staal of steenachtig materiaal die boven een opening in een muur wordt geplaatst — een raam, deur of doorbraak — om het gewicht van het muurwerk erboven op te vangen en af te dragen naar de zijkanten.",
+    "Voor verbouwers is de latei hét kernwoord bij muurdoorbraken: wie een kamer en suite maakt, een keukenmuur opent of een groter kozijn plaatst, heeft vrijwel altijd een latei nodig — met bijbehorende berekening van de constructeur en vaak stempels tijdens het werk."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wanneer heb je een latei nodig en wie bepaalt de maat?",
+      "html": "<p>Elke opening in een dragende muur vraagt een latei; bij niet-dragende wanden kan een lichte latei of geveldrager nodig zijn zodra er metselwerk boven de opening zit. De maat bepaal je niet op gevoel: de constructeur rekent uit welke belasting op de latei komt (vloeren, verdiepingen, dak) en hoe ver de oplegging aan weerszijden moet zijn — meestal minimaal 10 tot 15 centimeter per kant. In gevels zie je vaak stalen lateien boven kozijnen; die zijn een bekend onderhoudspunt, want roestende gevellateien drukken het metselwerk kapot. Bij een verbouwing hoort de lateiberekening bij de vergunningstukken of de opdracht aan de aannemer — vraag ernaar als hij ontbreekt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mag ik zelf een doorbraak maken met een latei?",
+      "a": "Handige doe-het-zelvers kunnen veel, maar de berekening van latei en oplegging is constructeurswerk, en bij dragende muren kan een vergunning of melding nodig zijn. Fouten zie je pas maanden later als scheuren of doorbuiging."
+    },
+    {
+      "q": "Wat kost een latei plaatsen?",
+      "a": "De latei zelf is meestal het goedkoopste deel; de kosten zitten in stempelen, slopen, herstellen en de constructieberekening. Vraag een gespecificeerde offerte waarin berekening, stempelwerk en afwerking apart benoemd zijn."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check"],
+    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
+    "zusters": ["sparing", "ruwbouw"]
+  }
+}
