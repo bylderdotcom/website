@@ -1,0 +1,79 @@
+name: CBS-cijfers vers-heid (maandelijks)
+
+# De 343 gemeentepagina's onder /wonen-in/ leunen op vier CBS-tabellen. Die
+# ververst het CBS op eigen tempo — vergunningen per kwartaal, de rest per jaar.
+# Zonder deze check verouderen die pagina's stil, mét een bijgewerkt-datum
+# eronder die dat niet verraadt.
+#
+# Standing order (CLAUDE.md): loops draaien read-only en leveren reviewbare
+# output. Deze check verandert dus niets; hij opent een issue zodra het CBS
+# nieuwere cijfers heeft. Het bijwerken zelf blijft mensenwerk, omdat een nieuwe
+# jaargang een trendzin op de pagina onwaar kan maken.
+#
+# Maandelijks in plaats van wekelijks: de snelste bron ververst per kwartaal,
+# dus vaker kijken levert alleen ruis op.
+
+on:
+  schedule:
+    - cron: "0 8 1 * *"   # de eerste van de maand, 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  versheid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Certifi installeren
+        run: pip install --quiet certifi
+
+      - name: CBS-versheid checken
+        id: check
+        continue-on-error: true
+        run: |
+          set +e
+          python3 scripts/check_cbs_freshness.py | tee /tmp/versheid.txt
+          echo "drift=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Issue openen bij nieuwe cijfers
+        if: steps.check.outputs.drift == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs')
+            const rapport = fs.readFileSync('/tmp/versheid.txt', 'utf8')
+            const titel = 'CBS heeft nieuwere cijfers voor /wonen-in/'
+            const bestaand = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'cbs-versheid',
+            })
+            const body = [
+              'De gemeentepagina\'s tonen cijfers die inmiddels een oudere jaargang zijn.',
+              '',
+              '```',
+              rapport.trim(),
+              '```',
+              '',
+              '**Bijwerken:** de ophaal-scripts opnieuw draaien, het cluster',
+              'hergenereren en de bijgewerkt-datum ophogen. Lees daarbij de',
+              'trendzinnen na — die kunnen door een nieuwe jaargang omslaan.',
+            ].join('\n')
+            if (bestaand.data.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: bestaand.data[0].number, body,
+              })
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: titel, body, labels: ['cbs-versheid'],
+              })
+            }

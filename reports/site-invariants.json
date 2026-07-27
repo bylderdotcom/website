@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T19:53:16",
+  "generated": "2026-07-27T20:06:23",
   "root": "/private/tmp/hp-reorder/web/out",
   "checks": {
     "1_sitemap_files": {
@@ -110,5 +110,5 @@
       "examples": []
     }
   },
-  "runtime_seconds": 27.5
+  "runtime_seconds": 9.5
 }
