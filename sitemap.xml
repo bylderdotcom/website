@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://www.bylder.com/voor-merken/</loc><priority>0.7</priority></url>
 <url><loc>https://www.bylder.com/functies/</loc><priority>0.9</priority></url>
 <url><loc>https://www.bylder.com/installatiepartner-worden/</loc><priority>0.7</priority></url>
 <url><loc>https://www.bylder.com/voor-vakbedrijven/</loc><priority>0.7</priority></url>
@@ -17,12 +16,6 @@
   </url>
   <url>
     <loc>https://www.bylder.com/prijzen/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bylder.com/betalen/</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -98,24 +91,6 @@
     <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.bylder.com/partners/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.bylder.com/partners/word-retailpartner/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.bylder.com/partners/word-vakpartner/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.bylder.com/blog/</loc>

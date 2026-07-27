@@ -47,15 +47,30 @@ echo "▸ 3/3  overlay bestaande statische site (Next-pagina's blijven behouden)
 # bylder-seo-v3/v4/v5 NIET meekopiëren: stale concept-snapshots (1:1 duplicaat
 # van live pagina's, canonical wijst er al naar terug — zelfde klasse als
 # output/, gevonden bij de Fase-4 interne-linkarchitectuur-opruiming 8 jul).
-EXCLUDE_TOP=(.git web node_modules __pycache__ data scripts _scripts _audits reports .claude out .next api .vercel supabase output bylder-seo-v3 bylder-seo-v4 bylder-seo-v5)
+# templates/ NIET meekopiëren: dit zijn de bronbestanden met {{city}}-
+# placeholders waaruit de clusterpagina's worden gerenderd. Ze stonden live
+# (902 bestanden, HTTP 200, niet in robots.txt) en zijn bijna-duplicaat van
+# elke echte clusterpagina — precies het soort dunne, crawlbare kopie waar
+# de indexatie last van heeft. Gemeten 2026-07-27.
+# docs/ NIET meekopiëren: interne strategiestukken (prijsmodel, concurrentie-
+# analyse, B2B-acquisitieplan) stonden publiek leesbaar. Dezelfde meting.
+# _og-templates/ NIET meekopiëren: HTML/SVG-bron waaruit og/*.jpg wordt
+# gegenereerd; de gegenereerde jpg's in og/ blijven wél staan.
+EXCLUDE_TOP=(.git web node_modules __pycache__ data scripts _scripts _audits reports .claude out .next api .vercel supabase output bylder-seo-v3 bylder-seo-v4 bylder-seo-v5 templates docs _og-templates)
+# Losse bestanden in de repo-root die geen publieke functie hebben. vercel.json
+# lekt de volledige redirect- en headerconfiguratie; package.json de exacte
+# dependency-versies. De rest is bron of intern. Alles wat hier NIET staat
+# blijft gewoon publiek: robots.txt, llms.txt, de sitemaps, favicons,
+# site.webmanifest, og-image.jpg, auping-popup.js en scan.js.
+EXCLUDE_FILE=(package.json package-lock.json vercel.json RECOVERY.md CLAUDE.md gemeenten_data_v2.csv template_v2.html)
 for entry in "$ROOT"/*; do
   name="$(basename "$entry")"
   excluded=false
-  for ex in "${EXCLUDE_TOP[@]}"; do
+  for ex in "${EXCLUDE_TOP[@]}" "${EXCLUDE_FILE[@]}"; do
     if [ "$name" = "$ex" ]; then excluded=true; break; fi
   done
   $excluded && continue
-  case "$name" in *.py|*.pyc) continue ;; esac
+  case "$name" in *.py|*.pyc|*.log) continue ;; esac
   # cp -n geeft (anders dan rsync --ignore-existing) exit 1 zodra het een
   # bestaand bestand overslaat — bedoeld gedrag hier (Next-output blijft
   # staan), dus expliciet opvangen zodat set -e het script niet afbreekt.

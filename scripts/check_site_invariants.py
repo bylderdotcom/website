@@ -10,6 +10,9 @@ Checks:
   5. jsonld             — elk application/ld+json-blok is geldige JSON.
   6. internal_links     — interne hrefs wijzen naar bestaande bestanden
                           (steekproef: homepage + index.html van elke top-level clustermap).
+  7. geen_broncode      — geen bron- of interne bestanden in de deploy (templates/, docs/,
+                          vercel.json, *.py, ongerenderde {{placeholders}}).
+                          Draai deze op web/out, niet op de repo-root.
 
 Alleen stdlib. Exit-code 1 bij overtredingen in check 1, 2 of 5 (harde invarianten).
 Volledig rapport: reports/site-invariants.json
@@ -373,6 +376,44 @@ def main():
         "examples": c6,
     }
 
+    # ---- Check 7: geen bron- of interne bestanden in de deploy ------------
+    # Aanleiding (2026-07-27): templates/ stond met 902 bestanden publiek op
+    # bylder.com, inclusief {{city}}-placeholders, en docs/ serveerde interne
+    # strategiestukken. Niets hield dat tegen. Deze check draait op web/out en
+    # slaat alarm zodra er weer bron of intern materiaal in de deploy belandt.
+    VERBODEN_MAPPEN = ("templates/", "docs/", "_scripts/", "scripts/", "data/",
+                       "_og-templates/", "reports/", "_audits/", "supabase/")
+    VERBODEN_BESTANDEN = ("vercel.json", "package.json", "package-lock.json",
+                          "RECOVERY.md", "CLAUDE.md", "template_v2.html")
+    VERBODEN_EXT = (".py", ".pyc", ".log", ".csv", ".yml", ".yaml", ".sh", ".env")
+    c7, n7 = [], 0
+    for dirpath, _, files in os.walk(ROOT):
+        for fn in files:
+            rel = os.path.relpath(os.path.join(dirpath, fn), ROOT)
+            n7 += 1
+            reden = None
+            if rel.startswith(VERBODEN_MAPPEN):
+                reden = "bronmap"
+            elif rel in VERBODEN_BESTANDEN:
+                reden = "intern bestand"
+            elif rel.endswith(VERBODEN_EXT):
+                reden = "bron-extensie"
+            elif fn.endswith(".html") and rel.count("/") < 4:
+                try:
+                    with open(os.path.join(dirpath, fn), encoding="utf-8",
+                              errors="ignore") as fh:
+                        if "{{" in fh.read(4000):
+                            reden = "ongerenderde placeholder"
+                except OSError:
+                    pass
+            if reden:
+                c7.append({"pad": rel, "reden": reden})
+    report["checks"]["7_geen_broncode"] = {
+        "files_scanned": n7,
+        "violations": len(c7),
+        "examples": c7[:EXAMPLES_SHOWN],
+    }
+
     report["runtime_seconds"] = round(time.time() - t0, 1)
 
     # ---- Rapport wegschrijven + samenvatting ----------------------------------
@@ -388,6 +429,7 @@ def main():
         "4_lang_attr": ("Lang-attribuut", "pages_checked", False),
         "5_jsonld": ("JSON-LD parsebaar", "blocks_checked", True),
         "6_internal_links": ("Interne links", "links_checked", False),
+        "7_geen_broncode": ("Geen bron in deploy", "files_scanned", True),
     }
     print("=" * 72)
     print("SITE-INVARIANTEN  (%s)" % ROOT)

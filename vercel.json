@@ -386,6 +386,16 @@
       "source": "/partners/word-retailpartner/",
       "destination": "/deelnemer-worden/woonwinkels-merken/",
       "permanent": true
+    },
+    {
+      "source": "/partners/word-vakpartner",
+      "destination": "/voor-vakbedrijven/",
+      "permanent": true
+    },
+    {
+      "source": "/partners/word-vakpartner/",
+      "destination": "/voor-vakbedrijven/",
+      "permanent": true
     }
   ],
   "rewrites": [

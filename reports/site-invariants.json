@@ -1,15 +1,19 @@
 {
-  "generated": "2026-07-08T14:28:48",
-  "root": "/Users/danielpaaij/Documents/GitHub/website/web/out",
+  "generated": "2026-07-27T15:27:29",
+  "root": "/private/tmp/hp-reorder/web/out",
   "checks": {
     "1_sitemap_files": {
       "sitemaps": [
         "sitemap.xml",
+        "kennisbank-sitemap.xml",
+        "affiliate-sitemap.xml",
         "en-us-sitemap.xml",
         "showroomsale-sitemap.xml",
         "kortingscode-sitemap.xml",
         "3d-sfeerimpressie-sitemap.xml",
         "bouwvergunning-sitemap.xml",
+        "gereedschap-lenen-sitemap.xml",
+        "nieuwbouw-project-sitemap.xml",
         "meerwerk-sitemap.xml",
         "eerlijke-prijzen-sitemap.xml",
         "stukadoor-sitemap.xml",
@@ -31,11 +35,15 @@
       ],
       "sitemaps_in_robots": [
         "sitemap.xml",
+        "kennisbank-sitemap.xml",
+        "affiliate-sitemap.xml",
         "en-us-sitemap.xml",
         "showroomsale-sitemap.xml",
         "kortingscode-sitemap.xml",
         "3d-sfeerimpressie-sitemap.xml",
         "bouwvergunning-sitemap.xml",
+        "gereedschap-lenen-sitemap.xml",
+        "nieuwbouw-project-sitemap.xml",
         "meerwerk-sitemap.xml",
         "eerlijke-prijzen-sitemap.xml",
         "stukadoor-sitemap.xml",
@@ -57,38 +65,43 @@
       ],
       "sitemaps_on_disk_not_in_robots": [],
       "sitemap_files_missing": [],
-      "urls_checked": 56137,
+      "urls_checked": 56392,
       "violations": 0,
       "examples": []
     },
     "2_noindex_in_sitemap": {
-      "pages_scanned": 75737,
-      "noindex_pages": 19486,
+      "pages_scanned": 75989,
+      "noindex_pages": 19488,
       "violations": 0,
       "examples": []
     },
     "3_canonical": {
-      "pages_with_canonical": 75729,
+      "pages_with_canonical": 75983,
       "violations": 0,
       "examples": []
     },
     "4_lang_attr": {
-      "pages_checked": 75737,
+      "pages_checked": 75989,
       "violations": 0,
       "examples": []
     },
     "5_jsonld": {
-      "blocks_checked": 172104,
+      "blocks_checked": 172880,
       "violations": 0,
       "examples": []
     },
     "6_internal_links": {
       "mode": "steekproef: homepage + index.html van elke top-level clustermap",
-      "pages_sampled": 86,
-      "links_checked": 4894,
+      "pages_sampled": 95,
+      "links_checked": 6095,
+      "violations": 0,
+      "examples": []
+    },
+    "7_geen_broncode": {
+      "files_scanned": 76121,
       "violations": 0,
       "examples": []
     }
   },
-  "runtime_seconds": 5.7
+  "runtime_seconds": 13.5
 }
