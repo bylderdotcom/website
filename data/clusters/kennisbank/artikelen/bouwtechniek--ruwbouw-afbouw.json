@@ -1,0 +1,61 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "ruwbouw-afbouw",
+  "titel": "Wat hoort bij ruwbouw en wat bij afbouw — en wanneer kies jij?",
+  "title_tag": "Ruwbouw vs afbouw: volgorde en keuzemomenten | Bylder",
+  "meta_description": "Ruwbouw is het casco, afbouw alles daarna. Lees welke werkzaamheden wanneer gebeuren en welke keuzemomenten jij als koper per fase hebt.",
+  "intro": [
+    "Ruwbouw is het dragende skelet van de woning: fundering, dragende muren, vloeren, dak en gevel. Afbouw is alles wat daarna komt: installaties, binnenwanden, stucwerk, dekvloeren, tegelwerk, keuken, badkamer en schilderwerk. De grens ligt grofweg bij het moment dat de woning wind- en waterdicht is.",
+    "Voor kopers is dit onderscheid vooral een agenda: elk deel van de bouw kent een deadline waarna jouw wensen niet meer (of alleen tegen hoge meerkosten) kunnen. Wie weet welke keuze bij welke fase hoort, levert op tijd aan en voorkomt de duurste woorden in de bouw: 'dat had u eerder moeten zeggen'."
+  ],
+  "stats": [
+    ["±60/40", "globale kostenverhouding ruwbouw/afbouw bij nieuwbouw"],
+    ["4-8 weken", "vóór de bouwfase sluiten de meeste keuzelijsten"],
+    ["€1.840", "gemiddeld te veel betaald aan meerwerkposten"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke werkzaamheden horen bij de ruwbouw?",
+      "html": "<p>De ruwbouw maakt de woning constructief compleet en dicht:</p><ul><li>Grondwerk en <a href=\"/kennisbank/bouwtechniek/fundering-typen/\">fundering</a> (heien, funderingsbalken, begane-grondvloer);</li><li>Dragende wanden en bouwmuren (kalkzandsteen, beton of <a href=\"/kennisbank/bouwtechniek/houtskeletbouw/\">HSB-elementen</a>);</li><li>Verdiepingsvloeren (kanaalplaat of breedplaat);</li><li><a href=\"/kennisbank/bouwtechniek/dakconstructies/\">Dakconstructie</a> en dakbedekking;</li><li>Gevelmetselwerk met isolatie en kozijnen (glas erin = wind- en waterdicht).</li></ul><p>Een woning die tot hier af is, heet <a href=\"/kennisbank/begrip/casco/\">casco</a>. Bij zelfbouw kun je casco laten opleveren en de afbouw zelf (laten) doen; bij projectnieuwbouw doet de bouwer beide.</p>"
+    },
+    {
+      "kop": "Welke werkzaamheden horen bij de afbouw?",
+      "html": "<p>Na wind- en waterdicht start de afbouw, in grote lijnen in deze volgorde:</p><ul><li><strong>Installaties ruwwerk:</strong> riolering, waterleidingen, elektra-buizen en dozen, ventilatiekanalen, vloerverwarmingsslangen;</li><li><strong>Binnenwanden:</strong> niet-dragende scheidingswanden (gipsblokken, metal stud);</li><li><strong>Dekvloeren:</strong> cementdekvloer over de leidingen;</li><li><strong>Stuc- en spuitwerk:</strong> wanden en plafonds;</li><li><strong>Tegelwerk en sanitair:</strong> badkamer en toilet;</li><li><strong>Aftimmerwerk:</strong> binnendeuren, plinten, trapafwerking, vensterbanken;</li><li><strong>Installaties afmontage:</strong> schakelaars, groepenkast, warmtepomp/cv, ventilatie-unit inregelen;</li><li><strong>Keuken en schilderwerk</strong> als sluitstuk.</li></ul><p>De volgorde is dwingend: leidingen moeten vóór de dekvloer, stucwerk vóór de keuken. Eén vertraagde schakel schuift alles erachter op.</p>"
+    },
+    {
+      "kop": "Welke keuzemomenten vallen in welke fase?",
+      "html": "<table class=\"vgl\"><thead><tr><th>Keuze</th><th>Deadline (indicatief)</th><th>Waarom dan</th></tr></thead><tbody><tr><td>Uitbouw, dakkapel, indelingswijziging</td><td>Vóór contract / ontwerpfase</td><td>Constructie en vergunning</td></tr><tr><td>Extra ramen, dakraam, positie wanden</td><td>Vóór start ruwbouw</td><td>Zit in tekening en prefab-productie</td></tr><tr><td>Elektra (stopcontacten, loze leidingen), lichtpunten</td><td>Vóór installatieruwwerk</td><td>Buizen gaan in wand en vloer</td></tr><tr><td>Vloerverwarming, ventilatie-opties</td><td>Vóór dekvloer</td><td>Slangen liggen in de dekvloer</td></tr><tr><td>Badkamer en toilet (sanitair, tegels)</td><td>Vóór leidingwerk badkamer</td><td>Leidingposities volgen het ontwerp</td></tr><tr><td>Keukenaansluitingen</td><td>Vóór installatieruwwerk</td><td>Water/elektra op juiste plek</td></tr><tr><td>Binnendeuren, afwerking, kleuren</td><td>Tijdens afbouw</td><td>Laatste bestelmomenten</td></tr></tbody></table><p>Bij <a href=\"/kennisbank/bouwtechniek/prefab-bouwen/\">prefab bouwen</a> schuiven al deze deadlines naar voren: de fabriek produceert pas als álles vastligt.</p>"
+    },
+    {
+      "kop": "Waarom is meerwerk in de afbouwfase zo duur?",
+      "html": "<p>Alles wat je ná de deadline wijzigt, verstoort een geplande keten: tekeningen aanpassen, materiaal herbestellen, soms sloopwerk van net gemaakt werk. Bouwers rekenen daarvoor stevige meerwerktarieven — en juist hier betalen kopers structureel te veel: gemiddeld €1.840 per woning aan te dure meerwerkposten.</p><p>Twee verdedigingslinies: lever keuzes ruim vóór de sluitingsdata aan (zet de data uit je koperskeuzelijst in je agenda), en laat elke meerwerkofferte controleren vóór je tekent. De <a href=\"/ai-offerte-check-aannemer/\">AI offerte-check</a> vergelijkt meerwerkprijzen met marktdata van 60+ merken en laat zien welke posten uit de pas lopen.</p>"
+    },
+    {
+      "kop": "Wat kun je per fase controleren als koper?",
+      "html": "<ul><li><strong>Einde ruwbouw:</strong> loop (op een kijkmoment) de posities van wanden en sparingen na met de tekening;</li><li><strong>Installatieruwwerk:</strong> hét fotomoment — fotografeer alle leidingen en elektradozen vóór de dekvloer en het stucwerk ze verbergen;</li><li><strong>Vóór stucwerk:</strong> check stopcontact- en schakelaarposities tegen je meer-/minderwerklijst;</li><li><strong>Afbouw:</strong> controleer geleverde opties (sanitair, tegels, deuren) op merk en type zodra ze zichtbaar zijn;</li><li><strong>Oplevering:</strong> volledige keuring met checklist en proces-verbaal — zie <a href=\"/oplevering-nieuwbouw/\">oplevering nieuwbouw</a>.</li></ul>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe lang duren ruwbouw en afbouw?",
+      "a": "Bij een traditionele rijwoning duurt de ruwbouw circa 4 tot 6 maanden en de afbouw 4 tot 6 maanden. Prefab verkort vooral de ruwbouw, soms tot enkele weken. Weer, materiaallevering en personeel zorgen voor de meeste uitloop."
+    },
+    {
+      "q": "Wat betekent 'wind- en waterdicht' precies?",
+      "a": "Dat dak, gevel, kozijnen en beglazing dicht zijn, zodat regen en wind buiten blijven. Vanaf dit moment kan het vochtgevoelige binnenwerk starten en is de woning meestal ook verzekeringstechnisch een fase verder. Het is hét mijlpaalmoment in elke bouwplanning."
+    },
+    {
+      "q": "Kan ik werkzaamheden uit de afbouw zelf doen om te besparen?",
+      "a": "Bij projectnieuwbouw beperkt: schilderwerk, vloeren en soms de keuken kun je buiten de aannemer houden. Bij casco- of zelfbouw kun je de hele afbouw zelf regelen. Let op garantievoorwaarden: werk van derden valt buiten de garantie van de bouwer."
+    },
+    {
+      "q": "Wat is het verschil tussen oplevering en 'sleutelklaar'?",
+      "a": "Oplevering is het formele moment waarop de aannemer het afgesproken werk overdraagt — wat 'af' is hangt van je contract af. Sleutelklaar betekent dat de woning direct bewoonbaar is inclusief afwerking; casco-oplevering betekent dat jij de afbouw nog moet doen."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["index", "prefab-bouwen", "begrip:casco"]
+  }
+}

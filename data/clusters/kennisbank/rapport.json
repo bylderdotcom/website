@@ -7,9 +7,18 @@
     "Bylder werkt met prijsranges in plaats van één prijs, omdat één getal schijnprecisie suggereert die de markt niet kent: materiaalkeuze, regio, bereikbaarheid en de staat van de woning verklaren het verschil tussen de onderkant en de bovenkant van elke range. Alle bedragen zijn inclusief arbeid en indicatief; ze zijn bedoeld als toetssteen naast een concrete offerte, niet als vervanging ervan."
   ],
   "kernstats": [
-    ["96%", "van kopers betaalt minstens één post te duur"],
-    ["€1.840", "gemiddeld te veel betaald aan meerwerk"],
-    ["€42.000", "gemiddelde totale nieuwbouw-afwerking"]
+    [
+      "96%",
+      "van kopers betaalt minstens één post te duur"
+    ],
+    [
+      "€1.840",
+      "gemiddeld te veel betaald aan meerwerk"
+    ],
+    [
+      "€42.000",
+      "gemiddelde totale nieuwbouw-afwerking"
+    ]
   ],
   "secties": [
     {
@@ -35,26 +44,38 @@
   ],
   "faq": [
     {
-      "vraag": "Wat kost een badkamer in 2026?",
-      "antwoord": "Een complete badkamer kost in 2026 tussen €7.000 en €20.000, met een mediaan van €12.000. Een badkamerrenovatie kost €7.500 tot €20.000 of meer, afhankelijk van omvang, sanitairkeuze en de staat van leidingwerk en ondergrond. Bedragen zijn inclusief arbeid en indicatief."
+      "q": "Wat kost een badkamer in 2026?",
+      "a": "Een complete badkamer kost in 2026 tussen €7.000 en €20.000, met een mediaan van €12.000. Een badkamerrenovatie kost €7.500 tot €20.000 of meer, afhankelijk van omvang, sanitairkeuze en de staat van leidingwerk en ondergrond. Bedragen zijn inclusief arbeid en indicatief."
     },
     {
-      "vraag": "Waarom werken jullie met prijsranges?",
-      "antwoord": "Omdat één prijs schijnprecisie suggereert. Dezelfde klus verschilt in prijs door regio, materiaalkeuze, bereikbaarheid en de staat van de woning. Een range met een onder- en bovenkant geeft weer wat de markt daadwerkelijk vraagt; een offerte die boven de bovenkant valt, is een reden om door te vragen."
+      "q": "Waarom werken jullie met prijsranges?",
+      "a": "Omdat één prijs schijnprecisie suggereert. Dezelfde klus verschilt in prijs door regio, materiaalkeuze, bereikbaarheid en de staat van de woning. Een range met een onder- en bovenkant geeft weer wat de markt daadwerkelijk vraagt; een offerte die boven de bovenkant valt, is een reden om door te vragen."
     },
     {
-      "vraag": "Mag ik deze cijfers overnemen?",
-      "antwoord": "Ja. Cijfers uit dit rapport mogen worden overgenomen met bronvermelding \"Bylder Verbouwprijzen Rapport 2026, bylder.com\" en een link naar deze pagina. Voor persvragen of toelichting op de methodiek kun je mailen naar info@bylder.com."
+      "q": "Mag ik deze cijfers overnemen?",
+      "a": "Ja. Cijfers uit dit rapport mogen worden overgenomen met bronvermelding \"Bylder Verbouwprijzen Rapport 2026, bylder.com\" en een link naar deze pagina. Voor persvragen of toelichting op de methodiek kun je mailen naar info@bylder.com."
     },
     {
-      "vraag": "Hoe betrouwbaar zijn deze prijzen?",
-      "antwoord": "De ranges komen uit door Bylder geanalyseerde offertes en projecten, genormaliseerd per m², klus en regio. AI leest de offertes, de redactie controleert de uitkomsten. De bedragen zijn inclusief arbeid maar indicatief: ze zijn bedoeld als toetssteen naast een concrete offerte, niet als vaste prijsopgave."
+      "q": "Hoe betrouwbaar zijn deze prijzen?",
+      "a": "De ranges komen uit door Bylder geanalyseerde offertes en projecten, genormaliseerd per m², klus en regio. AI leest de offertes, de redactie controleert de uitkomsten. De bedragen zijn inclusief arbeid maar indicatief: ze zijn bedoeld als toetssteen naast een concrete offerte, niet als vaste prijsopgave."
     }
   ],
   "links": [
-    ["/eerlijke-prijzen/", "Alle marktprijzen per m²"],
-    ["/renovatiekosten/", "Renovatiekosten per klus"],
-    ["/ai-offerte-check-aannemer/", "AI offerte-check"],
-    ["/kennisbank/", "Kennisbank"]
+    [
+      "/eerlijke-prijzen/",
+      "Alle marktprijzen per m²"
+    ],
+    [
+      "/renovatiekosten/",
+      "Renovatiekosten per klus"
+    ],
+    [
+      "/ai-offerte-check-aannemer/",
+      "AI offerte-check"
+    ],
+    [
+      "/kennisbank/",
+      "Kennisbank"
+    ]
   ]
 }

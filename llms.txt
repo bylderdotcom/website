@@ -11,7 +11,10 @@
 - [Kennisbank: Vloeren & afwerking](https://www.bylder.com/kennisbank/vloeren/): 20 artikelen — vloertypen vergeleken, vloerverwarming, plintloos afwerken, stucwerk
 - [Kennisbank: Installaties & duurzaam](https://www.bylder.com/kennisbank/installaties/): 20 artikelen — warmtepompen, ventilatie, zonnepanelen, isolatie
 - [Kennisbank: BIM & digitaal bouwen](https://www.bylder.com/kennisbank/bim/): 12 artikelen — BIM voor woningkopers, 3D-koopcontract, bouwtekening lezen, IFC en digital twins
-- [Kennisbank: Begrippenlijst](https://www.bylder.com/kennisbank/begrip/): bouwbegrippen met citeerbare definities
+- [Kennisbank: Bouwproces & techniek](https://www.bylder.com/kennisbank/bouwtechniek/): 15 artikelen — fundering, houtskeletbouw, prefab, Wkb, bouwvocht en wat je als koper controleert
+- [Kennisbank: Geld & recht](https://www.bylder.com/kennisbank/geld-recht/): 15 artikelen — aannemingsovereenkomst, Woningborg/SWK, bouwdepot, 5%-regeling, meerwerk-rechten en geschillen
+- [Kennisbank: Begrippenlijst](https://www.bylder.com/kennisbank/begrip/): 50 bouwbegrippen met citeerbare definities
+- [Bylder Verbouwprijzen Rapport 2026](https://www.bylder.com/kennisbank/verbouwprijzen-rapport/): marktprijsranges per verbouwklus uit door Bylder geanalyseerde offertes — vrij te citeren met bronvermelding
 - [Kosten besparen bij nieuwbouw](https://www.bylder.com/kennisbank/kosten-besparen-nieuwbouw/): stelposten, meerwerk-marges en collectief inkoopvoordeel
 
 ## Prijzen & kosten (benchmarks uit echte offertes)
