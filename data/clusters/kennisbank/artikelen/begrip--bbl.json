@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "bbl",
+  "titel": "Bbl (Besluit bouwwerken leefomgeving)",
+  "title_tag": "Wat is het Bbl? Betekenis + uitleg | Bylder",
+  "meta_description": "Het Bbl (Besluit bouwwerken leefomgeving) is de opvolger van het Bouwbesluit: de landelijke regels waaraan elk bouwwerk moet voldoen. Lees wat dit voor jou betekent.",
+  "intro": [
+    "Het Bbl, voluit Besluit bouwwerken leefomgeving, is de landelijke regelgeving die sinds 2024 vastlegt aan welke technische eisen bouwwerken in Nederland moeten voldoen. Het is de opvolger van het Bouwbesluit 2012 en hoort bij de Omgevingswet.",
+    "Voor kopers en verbouwers is het Bbl het toetsingskader achter vrijwel elke bouwkundige eis: isolatiewaarden, ventilatie, daglicht, brandveiligheid en trapafmetingen komen er allemaal uit. Als een aannemer of technische omschrijving 'voldoet aan het Bouwbesluit' belooft, wordt tegenwoordig dus het Bbl bedoeld."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat is er veranderd ten opzichte van het Bouwbesluit?",
+      "html": "<p>Inhoudelijk zijn de meeste technische eisen overgenomen, maar de structuur en nummering zijn nieuw en enkele eisen zijn aangescherpt of verplaatst naar gemeentelijk niveau. Belangrijk verschil in de praktijk: onder de Omgevingswet geldt voor veel nieuwbouw ook de Wet kwaliteitsborging (Wkb), waarbij een onafhankelijke kwaliteitsborger tijdens de bouw controleert of aan het Bbl wordt voldaan. Check bij offertes en technische omschrijvingen of er nog naar het oude Bouwbesluit wordt verwezen — dat is een teken dat het document niet is bijgewerkt.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Geldt het Bbl ook bij verbouwen?",
+      "a": "Ja, maar vaak met lichtere eisen: voor verbouw geldt meestal het 'rechtens verkregen niveau' of een specifiek verbouwniveau in plaats van de volledige nieuwbouweisen. Bij een vergunningplichtige verbouwing toetst de gemeente of kwaliteitsborger hieraan."
+    },
+    {
+      "q": "Waar vind ik de eisen uit het Bbl?",
+      "a": "Het Bbl is openbaar te raadplegen via de website van de Rijksoverheid en het Digitaal Stelsel Omgevingswet. Voor de praktijk is de technische omschrijving van je woning leidend: daarin hoort te staan hoe aan de eisen wordt voldaan."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["beng", "rc-waarde"]
+  }
+}

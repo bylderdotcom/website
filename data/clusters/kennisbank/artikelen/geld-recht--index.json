@@ -1,0 +1,73 @@
+{
+  "cluster": "geld-recht",
+  "slug": "index",
+  "titel": "Geld & recht bij (ver)bouwen: contracten, garanties en je rechten",
+  "title_tag": "Geld & recht bij (ver)bouwen: jouw rechten | Bylder",
+  "meta_description": "Alles over geld en recht bij nieuwbouw en verbouwen: contracten, waarborg, bouwdepot, 5%-regeling, meerwerk en gebreken claimen. Ken je rechten.",
+  "intro": [
+    "Geld en recht bij (ver)bouwen draait om één vraag: hoe zorg je dat je krijgt waarvoor je betaalt, en wat kun je doen als dat misgaat? Van de koop- of aannemingsovereenkomst tot de laatste 5% bij de notaris — elke fase van een bouwproject kent eigen regels, garanties en drukmiddelen die jou als koper beschermen.",
+    "Wie die regels kent, staat sterker. Uit onze data blijkt dat 96% van de kopers minstens één post te duur betaalt, gemiddeld €1.840 te veel aan meerwerk alleen. Dit overzicht loodst je langs de belangrijkste juridische en financiële onderwerpen, met per thema een verdiepend artikel. Let op: dit is voorlichting, geen juridisch advies — bij een concreet conflict is een jurist of geschillencommissie de juiste route."
+  ],
+  "stats": [
+    ["96%", "van kopers betaalt minstens één post te duur"],
+    ["€1.840", "gemiddeld te veel betaald aan meerwerk"],
+    ["5%", "van de aanneemsom mag in depot bij de notaris"]
+  ],
+  "secties": [
+    {
+      "kop": "Welke contracten teken je bij nieuwbouw of verbouwing?",
+      "html": "<p>Bij nieuwbouw teken je meestal twee documenten: de <strong>koopovereenkomst</strong> voor de grond en de <strong>aannemingsovereenkomst</strong> voor de bouw. Bij een verbouwing volstaat een aannemingsovereenkomst met je aannemer. In dat contract staan de aanneemsom, de bouwtijd (vaak in werkbare werkdagen), betaaltermijnen en opschortende voorwaarden zoals financiering. Voor nieuwbouw bestaan model-overeenkomsten van Woningborg en SWK die kopersvriendelijke bepalingen bevatten, waaronder een wettelijke bedenktijd na ondertekening.</p><p>Lees vóór het tekenen ook wat er <em>niet</em> in staat: stelposten, verrekenbare hoeveelheden en de omschrijving van casco-onderdelen bepalen later of iets meerwerk is of gewoon bij de prijs hoorde. Twijfel je over een bepaling, laat het contract dan toetsen voordat je tekent — achteraf onderhandelen is vrijwel altijd lastiger.</p>"
+    },
+    {
+      "kop": "Wat is een waarborgcertificaat en waarom wil je er een?",
+      "html": "<p>Een waarborgcertificaat van <strong>Woningborg</strong> of <strong>SWK</strong> beschermt je tegen de twee grootste risico's bij nieuwbouw: faillissement van de bouwer en gebreken na oplevering. Gaat de aannemer failliet tijdens de bouw, dan wordt je woning afgebouwd of krijg je een schadevergoeding volgens de geldende regeling. Na oplevering geldt een gebrekengarantie: standaard enkele jaren voor de meeste onderdelen en langer voor constructieve delen — controleer de exacte termijnen in jouw garantieregeling.</p><p>Controleer altijd of het certificaat daadwerkelijk op jouw naam en jouw bouwnummer is afgegeven, niet alleen beloofd in de brochure. Zonder geldig certificaat loop je bij een faillissement het risico je aanbetalingen kwijt te zijn.</p>"
+    },
+    {
+      "kop": "Hoe werken bouwdepot en bouwrente?",
+      "html": "<p>Bij nieuwbouw of een grote verbouwing zet de hypotheekverstrekker het bouwbudget in een <strong>bouwdepot</strong>. Bouwtermijnen en meerwerknota's declareer je bij het depot; de bank betaalt uit aan de aannemer of aan jou. Over het depotsaldo ontvang je meestal een rentevergoeding, terwijl je over de opgenomen hypotheek rente betaalt — per saldo lopen je lasten op naarmate de bouw vordert.</p><p>Daarnaast betaal je bij nieuwbouw vaak <strong>bouwrente</strong>: rente over grond en vervallen termijnen uit de periode vóór het passeren van de akte. Een deel daarvan kan fiscaal aftrekbaar zijn; de regels luisteren nauw, dus controleer je situatie of vraag het je adviseur.</p>"
+    },
+    {
+      "kop": "Wat is de 5%-regeling en hoe gebruik je die?",
+      "html": "<p>De 5%-regeling (artikel 7:768 BW) is je sterkste drukmiddel bij oplevering. Je mag de laatste 5% van de aanneemsom in depot storten bij de notaris in plaats van aan de aannemer te betalen. Dat bedrag blijft daar in beginsel drie maanden na oplevering staan. Zijn er opleveringsgebreken die niet worden hersteld, dan kun je het depot — voor het deel dat in redelijke verhouding staat tot de gebreken — langer aanhouden door je opschortingsrecht in te roepen.</p><p>De regeling werkt alleen als je haar actief gebruikt: meld de notaris tijdig en schriftelijk dat je opschort, met verwijzing naar het proces-verbaal van oplevering. De aannemer kan het depot ook vervangen door een bankgarantie; je zekerheid blijft dan gelijk.</p>"
+    },
+    {
+      "kop": "Welke rechten heb je bij meerwerk?",
+      "html": "<p>Meerwerk is werk buiten de overeengekomen opdracht, en juist daar gaat het financieel vaak mis. De wet beschermt je: de aannemer moet je <strong>tijdig waarschuwen</strong> voor een prijsverhoging door toevoegingen of wijzigingen, tenzij je die noodzaak zelf had moeten begrijpen. Zonder waarschuwing kan zijn recht op bijbetaling vervallen. Spreek prijzen daarom altijd vooraf en schriftelijk af, en vraag bij elke wijziging wat het kost én wat het met de planning doet.</p><p>Je mag meerwerk ook gewoon weigeren of laten vervallen zolang je nog niet akkoord bent. Laat elke offerte voor meerwerk controleren — gemiddeld betalen kopers hier €1.840 te veel.</p>"
+    },
+    {
+      "kop": "Hoe claim je gebreken bij en na oplevering?",
+      "html": "<p>Bij oplevering leg je alle zichtbare gebreken vast in het <strong>proces-verbaal van oplevering</strong>. De aannemer moet die punten binnen een redelijke termijn herstellen; het 5%-depot geeft je daarbij financiële druk. Gebreken die je pas later ontdekt — <strong>verborgen gebreken</strong> — moet je na ontdekking binnen bekwame tijd schriftelijk melden. Sinds de Wet kwaliteitsborging voor het bouwen (Wkb) blijft de aannemer bij nieuwere contracten ook na oplevering aansprakelijk voor gebreken die bij oplevering niet zijn opgemerkt, tenzij ze hem niet zijn toe te rekenen.</p><p>Let op verjaring: na je schriftelijke klacht loopt een verjaringstermijn die je met een schriftelijke aanmaning kunt stuiten. Documenteer alles met foto's en data.</p>"
+    },
+    {
+      "kop": "Wat doe je bij een geschil met je aannemer?",
+      "html": "<p>Escaleer stapsgewijs. Begin met een schriftelijke klacht en een redelijke hersteltermijn, gevolgd door een formele ingebrekestelling als reactie uitblijft. Daarna heb je twee routes: de <strong>geschillencommissie</strong> die in je contract of garantieregeling is aangewezen (zoals de arbitrage- of geschillenregeling van Woningborg of SWK), of de gewone rechter. Een geschillencommissie is doorgaans goedkoper en meer gespecialiseerd in bouwzaken; welke route openstaat, hangt af van je contract.</p><p>Bouw ondertussen een dossier op: contract, offertes, foto's, correspondentie en eventueel een rapport van een bouwkundig expert. Bij grotere belangen is een gespecialiseerde bouwrechtjurist het overwegen waard — de kosten wegen vaak op tegen wat er op het spel staat.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen de koopovereenkomst en de aannemingsovereenkomst?",
+      "a": "De koopovereenkomst regelt de aankoop van de grond (en soms bestaande opstallen), de aannemingsovereenkomst de bouw van de woning. Bij nieuwbouw zijn ze meestal onlosmakelijk gekoppeld: ontbind je de één, dan vervalt ook de ander. Controleer of die koppeling expliciet in je contract staat."
+    },
+    {
+      "q": "Is een waarborgcertificaat verplicht?",
+      "a": "Nee, wettelijk verplicht is het niet, maar veel hypotheekverstrekkers eisen het bij nieuwbouw en het beschermt je tegen faillissement van de bouwer. Koop je zonder certificaat, dan draag je dat risico grotendeels zelf. Controleer altijd of het certificaat echt is afgegeven voor jouw bouwnummer."
+    },
+    {
+      "q": "Kan ik de laatste termijn gewoon niet betalen als er gebreken zijn?",
+      "a": "Niet zomaar: volledig betalen weigeren kan je in verzuim brengen. Gebruik in plaats daarvan de 5%-regeling of schort een bedrag op dat in redelijke verhouding staat tot de gebreken, en leg dat schriftelijk vast. Twijfel je over de verhouding, vraag dan advies voordat je inhoudt."
+    },
+    {
+      "q": "Hoe lang heeft de aannemer om opleverpunten te herstellen?",
+      "a": "De wet en de meeste garantieregelingen spreken van herstel binnen een redelijke termijn; in de praktijk hanteren regelingen vaak enkele weken tot circa drie maanden. Kijk wat jouw contract of garantieregeling zegt en leg afgesproken termijnen schriftelijk vast."
+    },
+    {
+      "q": "Wanneer schakel ik een jurist in?",
+      "a": "Zodra de aannemer na een formele ingebrekestelling niet beweegt, bij grote financiële belangen, of als de aannemer zelf juridische stappen aankondigt. Veel rechtsbijstandverzekeringen dekken bouwgeschillen; check je polis voordat je zelf kosten maakt."
+    }
+  ],
+  "links": {
+    "tool": ["/ai-offerte-check-aannemer/", "AI offerte-check voor je aannemer"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": []
+  }
+}

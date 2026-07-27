@@ -1,0 +1,33 @@
+{
+  "cluster": "begrip",
+  "slug": "beng",
+  "titel": "BENG-eisen",
+  "title_tag": "Wat zijn BENG-eisen? Betekenis + uitleg | Bylder",
+  "meta_description": "BENG staat voor Bijna EnergieNeutrale Gebouwen: drie wettelijke eisen aan energiebehoefte, fossiel verbruik en duurzame opwekking van nieuwbouw.",
+  "intro": [
+    "BENG staat voor Bijna EnergieNeutrale Gebouwen: het pakket wettelijke energieprestatie-eisen waaraan alle nieuwbouw in Nederland moet voldoen. De eisen bestaan uit drie indicatoren: BENG 1 (maximale energiebehoefte), BENG 2 (maximaal fossiel energieverbruik) en BENG 3 (minimaal aandeel hernieuwbare energie).",
+    "Voor kopers van nieuwbouw betekent BENG in de praktijk: goede isolatie, geen gasaansluiting, een warmtepomp of warmtenet, en meestal zonnepanelen. De BENG-berekening van jouw woning zit bij de verkoopstukken en bepaalt mede het energielabel."
+  ],
+  "stats": [],
+  "secties": [
+    {
+      "kop": "Wat betekenen de drie BENG-eisen concreet?",
+      "html": "<p>BENG 1 gaat over de schil: hoe minder warmte de woning verliest via gevel, dak, vloer en ramen, hoe lager de energiebehoefte per m². BENG 2 gaat over de installaties: hoeveel fossiele energie is er nodig voor verwarming, warm water en ventilatie. BENG 3 eist dat een minimumaandeel van de gebruikte energie duurzaam wordt opgewekt, bijvoorbeeld met zonnepanelen of een warmtepomp die omgevingswarmte benut. De drie eisen hangen samen: een slecht geïsoleerde woning compenseren met extra panelen mag niet zomaar — daarom is BENG 1 een aparte eis.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is een BENG-woning hetzelfde als energieneutraal?",
+      "a": "Nee. 'Bijna energieneutraal' betekent een lage, maar niet per se nul energierekening. Een echt energieneutrale of nul-op-de-meter-woning wekt gemiddeld evenveel op als ze verbruikt en gaat dus verder dan de wettelijke BENG-eisen."
+    },
+    {
+      "q": "Gelden BENG-eisen ook bij verbouwing?",
+      "a": "Nee, BENG geldt alleen voor nieuwbouw en voor zeer ingrijpende renovaties die als nieuwbouw worden beschouwd. Bij gewone verbouwingen gelden wel isolatie-eisen uit het Bbl voor de onderdelen die je aanpakt."
+    }
+  ],
+  "links": {
+    "tool": ["/hoe-werkt-bylder-quickscan/", "AI QuickScan"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": ["bbl", "nul-op-de-meter", "rc-waarde"]
+  }
+}

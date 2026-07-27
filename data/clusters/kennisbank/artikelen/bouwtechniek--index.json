@@ -1,0 +1,73 @@
+{
+  "cluster": "bouwtechniek",
+  "slug": "index",
+  "titel": "Bouwproces & techniek: begrijp hoe je woning gebouwd wordt",
+  "title_tag": "Bouwproces & techniek: zo wordt je woning gebouwd | Bylder",
+  "meta_description": "Van fundering tot dak: begrijp hoe je woning gebouwd wordt, wat je per bouwfase kunt controleren en hoe de Wkb je als koper beschermt.",
+  "intro": [
+    "Een woning wordt gebouwd in een vaste volgorde: eerst de fundering, dan de ruwbouw (muren, vloeren, dak), vervolgens de installaties en tot slot de afbouw en afwerking. Wie die volgorde begrijpt, weet precies wanneer welke keuze valt, wat er op de bouwplaats gebeurt en waar het mis kan gaan.",
+    "Voor jou als koper of verbouwer is dat geen theoretische kennis. Elke fase kent eigen controlemomenten, en fouten die vroeg in het proces ontstaan — een natte kruipruimte, slechte kierdichting, verkeerd gestelde kozijnen — zijn later duur of niet meer te herstellen. Deze pillarpagina neemt je mee van fundering tot dak en linkt per onderwerp door naar een verdiepend artikel."
+  ],
+  "stats": [
+    ["±4.000 liter", "bouwvocht in een gemiddelde nieuwbouwwoning"],
+    ["21", "gebreken gemiddeld bij oplevering van nieuwbouw"],
+    ["2024", "invoering Wet kwaliteitsborging (Wkb)"]
+  ],
+  "secties": [
+    {
+      "kop": "In welke volgorde wordt een woning gebouwd?",
+      "html": "<p>Vrijwel elke woning doorloopt dezelfde hoofdfasen. Eerst het grondwerk en de <a href=\"/kennisbank/bouwtechniek/fundering-typen/\">fundering</a>: afhankelijk van de bodem heipalen of een fundering op staal. Daarna volgt de ruwbouw: begane-grondvloer, dragende muren of houtskeletelementen, verdiepingsvloeren en de <a href=\"/kennisbank/bouwtechniek/dakconstructies/\">dakconstructie</a>. Zodra het dak dicht is en de <a href=\"/kennisbank/bouwtechniek/kozijnen-plaatsing/\">kozijnen</a> met glas erin zitten, is de woning wind- en waterdicht.</p><p>Vanaf dat moment start het binnenwerk: leidingen, elektra, ventilatie, isolatie en dekvloeren. Tot slot de afbouw: stucwerk, tegelwerk, keuken, badkamer en schilderwerk. Het verschil tussen <a href=\"/kennisbank/bouwtechniek/ruwbouw-afbouw/\">ruwbouw en afbouw</a> bepaalt ook wanneer jouw keuzemomenten vallen: constructieve wijzigingen moeten vroeg, afwerkingskeuzes kunnen later.</p>"
+    },
+    {
+      "kop": "Wat kun je als koper per bouwfase controleren?",
+      "html": "<p>Je hoeft geen bouwkundige te zijn om zinvol mee te kijken. Per fase zijn er punten die je zelf kunt checken, bijvoorbeeld tijdens kijkdagen of via foto's van de aannemer:</p><ul><li><strong>Fundering en kruipruimte:</strong> ligt er geen bouwafval in de <a href=\"/kennisbank/bouwtechniek/kruipruimte/\">kruipruimte</a>, zijn ventilatieroosters vrijgehouden?</li><li><strong>Ruwbouw:</strong> staan muren te lood, zijn <a href=\"/kennisbank/bouwtechniek/scheuren-in-muren/\">scheuren</a> gemeld en beoordeeld, kloppen sparingen voor leidingen met de tekening?</li><li><strong>Wind- en waterdicht:</strong> zijn kozijnaansluitingen afgedicht, liggen waterslagen op afschot?</li><li><strong>Installaties:</strong> zitten leidingen en elektradozen op de afgesproken plekken (fotografeer alles vóór het dichtzetten van wanden)?</li><li><strong>Afbouw en oplevering:</strong> loop met een checklist en noteer elk gebrek in het proces-verbaal van oplevering.</li></ul><p>Gemiddeld worden bij een nieuwbouwoplevering zo'n 21 gebreken genoteerd. Wie tussentijds meekijkt, vangt een deel daarvan eerder af.</p>"
+    },
+    {
+      "kop": "Prefab of traditioneel bouwen: wat is het verschil?",
+      "html": "<p>Bij traditionele bouw wordt de woning steen voor steen op de bouwplaats gemetseld of gestort. Bij <a href=\"/kennisbank/bouwtechniek/prefab-bouwen/\">prefab bouwen</a> worden complete wanden, vloeren of zelfs hele modules in de fabriek gemaakt en op de bouwplaats gemonteerd. <a href=\"/kennisbank/bouwtechniek/houtskeletbouw/\">Houtskeletbouw</a> is de bekendste prefab-variant en wordt bij nieuwbouw steeds vaker toegepast.</p><table class=\"vgl\"><thead><tr><th>Aspect</th><th>Traditioneel</th><th>Prefab</th></tr></thead><tbody><tr><td>Bouwtijd ruwbouw</td><td>Maanden</td><td>Dagen tot weken</td></tr><tr><td>Kwaliteit</td><td>Afhankelijk van vakman en weer</td><td>Geconditioneerd in de fabriek</td></tr><tr><td>Bouwvocht</td><td>Veel (metselwerk, beton)</td><td>Weinig, woning droogt sneller</td></tr><tr><td>Wijzigingen tijdens de bouw</td><td>Relatief flexibel</td><td>Beperkt: ontwerp ligt vroeg vast</td></tr></tbody></table><p>Geen van beide is per definitie beter — maar bij prefab moet je keuzes wel eerder definitief maken.</p>"
+    },
+    {
+      "kop": "Hoe zit de schil van je woning in elkaar?",
+      "html": "<p>De schil — gevel, dak, vloer en kozijnen — bepaalt comfort en energieverbruik. Een gemetselde buitengevel is vrijwel altijd een <a href=\"/kennisbank/bouwtechniek/spouwmuur-opbouw/\">spouwmuur</a>: een dragend binnenblad, isolatie, een luchtspouw en een buitenblad van metselwerk. Het dak krijgt bij nieuwbouw dikke isolatiepakketten; welke <a href=\"/kennisbank/bouwtechniek/dakisolatie-methoden/\">dakisolatiemethode</a> wordt toegepast hangt af van het daktype.</p><p>Minstens zo belangrijk als isolatie is <a href=\"/kennisbank/bouwtechniek/luchtdicht-bouwen/\">luchtdicht bouwen</a>: kieren en naden laten warmte weglekken en veroorzaken tocht, ook in een dik geïsoleerde woning. En binnen de woning bepaalt de constructie hoeveel je van de buren hoort — lees daarover meer bij <a href=\"/kennisbank/bouwtechniek/geluidsisolatie-woning/\">geluidsisolatie</a>.</p>"
+    },
+    {
+      "kop": "Wat is kwaliteitsborging (Wkb) en wat heb jij eraan?",
+      "html": "<p>Sinds 1 januari 2024 geldt voor nieuwbouwwoningen de <a href=\"/kennisbank/bouwtechniek/wkb-kwaliteitsborging/\">Wet kwaliteitsborging voor het bouwen (Wkb)</a>. Een onafhankelijke kwaliteitsborger controleert tijdens de bouw of het werk aan de bouwregels voldoet — niet alleen op papier, maar ook op de bouwplaats. Bij oplevering krijg je een opleverdossier met tekeningen, gebruikte materialen en installatiegegevens.</p><p>Daarnaast is de aansprakelijkheid van de aannemer aangescherpt: hij blijft ook ná oplevering aansprakelijk voor gebreken die aan hem toe te rekenen zijn, tenzij hij kan aantonen dat het gebrek niet zijn schuld is. Voor jou als koper betekent dat: meer controle tijdens de bouw en een sterkere positie bij gebreken achteraf.</p>"
+    },
+    {
+      "kop": "Welke gebreken komen het vaakst voor?",
+      "html": "<p>De meeste opleverpunten zijn cosmetisch: beschadigd schilderwerk, krassen op glas of kozijnen, slordig kitwerk. Maar let vooral op de gebreken die later geld kosten:</p><ul><li><strong>Krimpscheuren en zettingsscheuren</strong> in wanden en plafonds — meestal onschuldig, soms niet.</li><li><strong>Vocht:</strong> een nieuwbouwwoning bevat duizenden liters <a href=\"/kennisbank/bouwtechniek/bouwvocht/\">bouwvocht</a> dat er in het eerste jaar uit moet. Te snel dicht afwerken geeft schimmel en loslatende afwerking.</li><li><strong>Kieren en tocht</strong> bij kozijnen, dakaansluitingen en doorvoeren.</li><li><strong>Installaties</strong> die niet goed zijn ingeregeld: ventilatie te laag, vloerverwarming onbalans.</li></ul><p>Noteer alles bij oplevering, ook kleine punten — wat niet op het proces-verbaal staat, is later lastiger te claimen.</p>"
+    },
+    {
+      "kop": "Hoe helpt Bylder je tijdens de bouw?",
+      "html": "<p>Bouwtechniek begrijpen is stap één; je aannemer scherp houden is stap twee. Met een gratis Bylder-account laat je offertes en meerwerkposten controleren door AI die met prijsdata van 60+ merken vergelijkt — gebruikers besparen gemiddeld €4.200. Wil je verbouwen en twijfel je of een muur dragend is, of wat een doorbraak kost? Begin dan bij <a href=\"/kennisbank/bouwtechniek/dragende-muur-herkennen/\">dragende muur herkennen</a> en laat de offerte daarna doorrekenen.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hoe lang duurt de bouw van een nieuwbouwwoning?",
+      "a": "Reken vanaf de start van de bouw op circa 9 tot 14 maanden voor een traditioneel gebouwde rijwoning; vrijstaande woningen duren vaak langer. Prefab en houtskeletbouw verkorten de ruwbouwfase aanzienlijk, soms tot enkele weken."
+    },
+    {
+      "q": "Mag ik tijdens de bouw op de bouwplaats kijken?",
+      "a": "Niet zomaar: de bouwplaats is terrein van de aannemer en er gelden veiligheidsregels. De meeste bouwers organiseren kijkmomenten of delen foto's via een bouwapp. Vraag er actief om — tussentijds meekijken voorkomt discussies bij oplevering."
+    },
+    {
+      "q": "Wat is het verschil tussen ruwbouw en afbouw?",
+      "a": "Ruwbouw is het casco: fundering, dragende muren, vloeren en dak. Afbouw is alles daarna: installaties, stucwerk, tegelwerk, keuken en badkamer. Constructieve keuzes vallen in de ruwbouwfase, afwerkingskeuzes in de afbouwfase."
+    },
+    {
+      "q": "Wat moet ik doen als ik tijdens de bouw een fout zie?",
+      "a": "Meld het direct schriftelijk bij de aannemer of kopersbegeleider, met foto's en datum. Wacht niet tot de oplevering: fouten in ruwbouw of installaties zijn vóór het dichtzetten van wanden veel goedkoper te herstellen."
+    },
+    {
+      "q": "Geldt de Wkb ook voor verbouwingen?",
+      "a": "De Wkb geldt sinds 2024 voor nieuwbouw in gevolgklasse 1, waaronder eengezinswoningen. Voor de meeste verbouwingen aan bestaande woningen geldt de verplichte kwaliteitsborger nog niet, maar de aangescherpte aansprakelijkheid van de aannemer geldt wel voor alle aannemingsovereenkomsten."
+    }
+  ],
+  "links": {
+    "tool": ["/nieuwbouw-tools/", "Alle tools & functies"],
+    "commercieel": ["/nieuwbouw-gids/", "De complete nieuwbouw-gids"],
+    "zusters": []
+  }
+}

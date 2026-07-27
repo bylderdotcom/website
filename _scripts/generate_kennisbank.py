@@ -57,6 +57,8 @@ CLUSTERS = {
     'vloeren':   ('Vloeren & afwerking', '/kennisbank/vloeren/'),
     'installaties':('Installaties & duurzaam', '/kennisbank/installaties/'),
     'bim':       ('BIM & digitaal bouwen', '/kennisbank/bim/'),
+    'bouwtechniek': ('Bouwproces & techniek', '/kennisbank/bouwtechniek/'),
+    'geld-recht': ('Geld & recht', '/kennisbank/geld-recht/'),
     'begrip':    ('Begrippenlijst', '/kennisbank/begrip/'),
 }
 
@@ -260,6 +262,60 @@ def render(a,arts,producten=()):
 """
     return head(a['title_tag'],a['meta_description'],url)+body
 
+def render_rapport(r):
+    """Rendert het Verbouwprijzen Rapport (earned-media-anker) met
+    Report+Dataset-schema naar /kennisbank/verbouwprijzen-rapport/."""
+    url = SITE + '/kennisbank/verbouwprijzen-rapport/'
+    jaar = VANDAAG[:4]
+    blocks = [
+        ld({"@context":"https://schema.org","@type":"Report","headline":r['titel'],
+            "description":r['meta_description'],"mainEntityOfPage":{"@type":"WebPage","@id":url},
+            "inLanguage":"nl-NL","datePublished":VANDAAG,"dateModified":VANDAAG,
+            "author":{"@type":"Organization","name":"Bylder","url":SITE+"/over-ons/"},
+            "publisher":{"@type":"Organization","name":"Bylder Nederland B.V.","url":SITE+"/","logo":{"@type":"ImageObject","url":SITE+"/android-chrome-512x512.png"}}}),
+        ld({"@context":"https://schema.org","@type":"Dataset","name":f"Bylder Verbouwprijzen {jaar}",
+            "description":"Marktprijsranges per verbouwklus in Nederland, gebaseerd op door Bylder geanalyseerde offertes en projecten, genormaliseerd per m2, klus en regio.",
+            "url":url,"creator":{"@type":"Organization","name":"Bylder","url":SITE+"/"},
+            "temporalCoverage":jaar,"spatialCoverage":{"@type":"Country","name":"Nederland"},
+            "license":"https://creativecommons.org/licenses/by/4.0/",
+            "isAccessibleForFree":True}),
+        ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+            {"@type":"Question","name":f['q'],"acceptedAnswer":{"@type":"Answer","text":f['a']}} for f in r.get('faq',[])]}),
+        ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+            {"@type":"ListItem","position":1,"name":"Bylder.com","item":SITE+"/"},
+            {"@type":"ListItem","position":2,"name":"Kennisbank","item":SITE+"/kennisbank/"},
+            {"@type":"ListItem","position":3,"name":r['titel'],"item":url}]}),
+    ]
+    stats=''.join(f'<div class="stat-card"><div class="stat-val">{v}</div><div class="stat-lbl">{l}</div></div>' for v,l in r.get('kernstats',[]))
+    secties=''.join(f'<h2>{s["kop"]}</h2>\n<div class="vgl-wrap">{s["html"]}</div>' for s in r.get('secties',[]))
+    faq=''.join(f'<div class="faq-item"><div class="faq-q">{f["q"]}</div><div class="faq-a">{f["a"]}</div></div>' for f in r.get('faq',[]))
+    intro=''.join(f'<p style="font-size:1.08rem;">{p}</p>' for p in r['intro'])
+    il=''.join(f'<a href="{h}" class="il-link">→ {t}</a>' for h,t in r.get('links',[]))
+    body=f"""{''.join(blocks)}{NAV}
+<main style="padding:64px 0 72px;"><div class="container">
+<p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:28px;"><a href="/" style="color:rgba(61,46,30,0.4);">Bylder.com</a> → <a href="/kennisbank/" style="color:rgba(61,46,30,0.4);">Kennisbank</a> → <span style="color:rgba(61,46,30,0.65);">{r['titel']}</span></p>
+<article>
+<div class="badge">Rapport · {jaar}</div>
+<h1 style="font-size:2.4rem;font-weight:800;margin-bottom:18px;line-height:1.12;">{r['titel']}</h1>
+{intro}
+<div class="stat-row">{stats}</div>
+<div class="eeat"><span style="width:34px;height:34px;background:#3D5A3E;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;color:#F5F0E8;font-weight:800;font-family:'Space Mono',monospace;font-size:12px;flex-shrink:0;">B.</span><span>Door <b>Bylder</b> · Publicatie: {VANDAAG} · Bron: door Bylder geanalyseerde offertes en projecten. Overname toegestaan met bronvermelding.</span></div>
+{secties}
+<div class="internal-links"><div class="il-title">Bron- en verdiepingspagina's</div><div class="il-links">{il}</div></div>
+<div class="divider"></div><h2>Veelgestelde vragen</h2>{faq}
+<div class="cta-block"><h2>Check je eigen offerte tegen deze cijfers</h2><p>Upload je offerte voor een gratis AI-check, of maak een gratis account en bespaar gemiddeld €4.200 met kortingen bij 60+ merken.</p><a href="/#scan" class="cta-btn">Start gratis QuickScan →</a></div>
+</article>
+</div></main>{FOOTER}
+</body></html>
+"""
+    html=head(r['title_tag'],r['meta_description'],url)+body
+    d=os.path.join(ROOT,'kennisbank','verbouwprijzen-rapport')
+    os.makedirs(d,exist_ok=True)
+    open(os.path.join(d,'index.html'),'w',encoding='utf-8').write(html)
+    m=re.search(r'<main.*?</main>',html,re.S)
+    if m: open(os.path.join(SRC,'content','verbouwprijzen-rapport.html'),'w',encoding='utf-8').write(m.group(0))
+    return True
+
 def main():
     arts=laad()
     producten=laad_producten()
@@ -286,8 +342,17 @@ def main():
             "title":a['title_tag'],"description":a['meta_description'],"og_type":"article",
             "robots":"index, follow, max-snippet:-1, max-image-preview:large","ldjson":ldjson,"ldjson_sep":"\n"})
     json.dump(pages_meta,open(os.path.join(SRC,'pages.json'),'w',encoding='utf-8'),indent=2,ensure_ascii=False)
+    # rapport (indien aanwezig)
+    rapport_url=[]
+    rp=os.path.join(SRC,'rapport.json')
+    if os.path.exists(rp):
+        try:
+            render_rapport(json.load(open(rp,encoding='utf-8')))
+            rapport_url=[SITE+'/kennisbank/verbouwprijzen-rapport/']
+        except Exception as e:
+            print('rapport overgeslagen:',e)
     # sitemap volledig hergenereren
-    urls=[SITE+'/kennisbank/',SITE+'/kennisbank/kosten-besparen-nieuwbouw/']+[SITE+p['path'] for p in pages_meta]
+    urls=[SITE+'/kennisbank/',SITE+'/kennisbank/kosten-besparen-nieuwbouw/']+rapport_url+[SITE+p['path'] for p in pages_meta]
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm+=''.join(f'<url><loc>{u}</loc><lastmod>{VANDAAG}</lastmod><priority>0.8</priority></url>\n' for u in urls)
     sm+='</urlset>\n'

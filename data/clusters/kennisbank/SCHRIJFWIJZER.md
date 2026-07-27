@@ -7,7 +7,7 @@ De generator (`_scripts/generate_kennisbank.py`) rendert hieruit de pagina's.
 
 ```json
 {
-  "cluster": "keuken | badkamer | materialen | vloeren | installaties | bim | begrip",
+  "cluster": "keuken | badkamer | materialen | vloeren | installaties | bim | bouwtechniek | geld-recht | begrip",
   "slug": "url-slug",
   "titel": "H1 zonder merknaam",
   "title_tag": "SEO-title ≤60 tekens, eindigend op ' | Bylder'",
