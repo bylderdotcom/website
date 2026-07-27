@@ -62,7 +62,7 @@ const COLS: Col[] = [
   ] },
 ]
 
-const eyebrow: React.CSSProperties = { fontSize: 11, fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(245,240,232,.25)', fontWeight: 700, marginBottom: 16 }
+const eyebrow: React.CSSProperties = { fontSize: 11, fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(245,240,232,0.55)', fontWeight: 700, marginBottom: 16 }
 
 export default function Footer() {
   return (
@@ -74,8 +74,8 @@ export default function Footer() {
               <span style={{ width: 32, height: 32, borderRadius: 8, background: '#3D5A3E', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#F5F0E8', fontSize: 13, fontWeight: 800, fontFamily: 'monospace' }}>B.</span>
               <span style={{ fontWeight: 800, fontSize: 17, letterSpacing: '-0.02em', color: '#F5F0E8' }}>Bylder<span style={{ color: '#3D5A3E' }}>.com</span></span>
             </div>
-            <p style={{ fontSize: 13, color: 'rgba(245,240,232,.4)', lineHeight: 1.7, maxWidth: 200 }}>AI-platform voor kopers van nieuwbouw, bestaande bouw en renovatiewoningen.</p>
-            <div style={{ marginTop: 16, fontSize: 11, color: 'rgba(245,240,232,.25)', fontFamily: 'monospace' }}>Bylder Nederland B.V.<br />KvK 65020006</div>
+            <p style={{ fontSize: 13, color: 'rgba(245,240,232,0.55)', lineHeight: 1.7, maxWidth: 200 }}>AI-platform voor kopers van nieuwbouw, bestaande bouw en renovatiewoningen.</p>
+            <div style={{ marginTop: 16, fontSize: 11, color: 'rgba(245,240,232,0.55)', fontFamily: 'monospace' }}>Bylder Nederland B.V.<br />KvK 65020006</div>
           </div>
 
           {COLS.map(col => (
@@ -93,8 +93,8 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(245,240,232,.08)', paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
-          <p style={{ fontSize: 12, fontFamily: 'monospace', color: 'rgba(245,240,232,.25)', margin: 0 }}>© 2026 Bylder Nederland B.V. — KvK 65020006</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, fontFamily: 'monospace', color: 'rgba(245,240,232,.25)' }}>
+          <p style={{ fontSize: 12, fontFamily: 'monospace', color: 'rgba(245,240,232,0.55)', margin: 0 }}>© 2026 Bylder Nederland B.V. — KvK 65020006</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, fontFamily: 'monospace', color: 'rgba(245,240,232,0.55)' }}>
             <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#3D5A3E', display: 'inline-block' }} />
             Alle systemen operationeel
           </div>

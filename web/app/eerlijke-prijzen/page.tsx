@@ -116,17 +116,17 @@ export default function EerlijkePrijzenPage() {
         <div style={{ maxWidth: 760 }}>
           <div className="badge">Eerlijke prijzen</div>
           <h1 style={{ fontSize: '2.6rem', fontWeight: 800, lineHeight: 1.14, marginBottom: 14 }}>Betaal je een eerlijke prijs voor je verbouwing?</h1>
-          <p style={{ fontSize: '1.12rem', color: 'rgba(61,46,30,0.65)', lineHeight: 1.7, marginBottom: 18 }}>Offerteprijzen lopen sterk uiteen. <strong>96% van de kopers betaalt minstens één post te duur.</strong> Bekijk hieronder de actuele marktbandbreedtes per categorie — en check gratis of jouw prijs marktconform is.</p>
+          <p style={{ fontSize: '1.12rem', color: 'rgba(61,46,30,0.72)', lineHeight: 1.7, marginBottom: 18 }}>Offerteprijzen lopen sterk uiteen. <strong>96% van de kopers betaalt minstens één post te duur.</strong> Bekijk hieronder de actuele marktbandbreedtes per categorie — en check gratis of jouw prijs marktconform is.</p>
           <a href="https://app.bylder.com/registreer" style={{ display: 'inline-block', background: '#3D5A3E', color: '#F5F0E8', padding: '14px 28px', borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: 'none' }}>Check je prijs gratis →</a>
         </div>
 
         <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: '44px 0 8px' }}>Marktprijzen per categorie</h2>
-        <p style={{ fontSize: 15, color: 'rgba(61,46,30,0.6)', marginBottom: 16 }}>Indicatieve bandbreedtes (laag–hoog), NL 2026.</p>
+        <p style={{ fontSize: 15, color: 'rgba(61,46,30,0.72)', marginBottom: 16 }}>Indicatieve bandbreedtes (laag–hoog), NL 2026.</p>
         <div className="grid-3">
           {TILES.map(t => (
             <a key={t.href} href={t.href} className="tile">
               <div style={{ fontWeight: 700, fontSize: 15, color: '#1A1208' }}>{t.title}</div>
-              <div style={{ fontSize: 12.5, color: 'rgba(61,46,30,0.55)', marginTop: 2 }}>{t.range}</div>
+              <div style={{ fontSize: 12.5, color: 'rgba(61,46,30,0.72)', marginTop: 2 }}>{t.range}</div>
             </a>
           ))}
         </div>
@@ -151,9 +151,9 @@ export default function EerlijkePrijzenPage() {
         <div className="faq-item"><h3>Zijn deze prijzen exact?</h3><p>Nee, het zijn indicatieve marktbandbreedtes (NL 2026). Ze verschillen per project, regio en afwerking — gebruik ze als ijkpunt, niet als offerte.</p></div>
 
         <div className="divider"></div>
-        <p style={{ fontSize: 14, color: 'rgba(61,46,30,0.6)' }}>Verder: <a href="/meerwerk/">meerwerk bij nieuwbouw</a> · <a href="/nieuwbouw-koper/">nieuwbouw kopen</a> · <a href="/functies/">alle functies</a></p>
+        <p style={{ fontSize: 14, color: 'rgba(61,46,30,0.72)' }}>Verder: <a href="/meerwerk/">meerwerk bij nieuwbouw</a> · <a href="/nieuwbouw-koper/">nieuwbouw kopen</a> · <a href="/functies/">alle functies</a></p>
 
-        <p style={{ fontSize: 12, color: 'rgba(61,46,30,0.5)', maxWidth: 560, lineHeight: 1.6, marginTop: 32 }}>Prijzen zijn indicatieve marktbandbreedtes en verschillen per project, regio en afwerking. Bylder vergelijkt jouw offerte met de markt voor een eerlijke check per post.</p>
+        <p style={{ fontSize: 12, color: 'rgba(61,46,30,0.72)', maxWidth: 560, lineHeight: 1.6, marginTop: 32 }}>Prijzen zijn indicatieve marktbandbreedtes en verschillen per project, regio en afwerking. Bylder vergelijkt jouw offerte met de markt voor een eerlijke check per post.</p>
       </div>
     </main>
   )
