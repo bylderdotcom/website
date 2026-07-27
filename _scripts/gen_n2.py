@@ -259,6 +259,7 @@ gtag('config', 'G-LZYCRP1169');
 {CTA_SECTION}
 {FOOTER}
 <script src="/auping-popup.js"></script>
+<script src="/mis-je-iets.js" defer></script>
 </body></html>"""
 
     write_page(f"{BASE}/{slug}/index.html", html)

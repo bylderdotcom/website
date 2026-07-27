@@ -406,6 +406,10 @@
     {
       "source": "/api/paynl-exchange",
       "destination": "/api/paynl-exchange.js"
+    },
+    {
+      "source": "/api/feature-request",
+      "destination": "/api/feature-request.js"
     }
   ],
   "headers": [
