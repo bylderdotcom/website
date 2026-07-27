@@ -77,8 +77,10 @@
     '<label for="bmji-website">Laat dit veld leeg</label>',
     '<input type="text" id="bmji-website" tabindex="-1" autocomplete="off"></div>',
     '<div class="bmji-mail">',
-    '<input type="email" id="bmji-mail" placeholder="E-mail (optioneel — alleen om je te laten weten als het er is)" ',
-    'aria-label="E-mailadres, optioneel"></div>',
+    // Kort houden: op 390px loopt een lange placeholder buiten beeld.
+    '<input type="email" id="bmji-mail" placeholder="E-mail (optioneel)" ',
+    'aria-label="E-mailadres, optioneel — alleen om je te laten weten als het er is"></div>',
+    '<p class="bmji-hint" style="margin:6px 0 0">Alleen om je te laten weten als het er is.</p>',
     '<div class="bmji-rij">',
     '<button type="button" class="bmji-stuur">Versturen</button>',
     '<button type="button" class="bmji-annuleer">Laat maar</button></div>',
