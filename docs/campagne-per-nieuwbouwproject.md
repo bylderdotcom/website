@@ -267,6 +267,95 @@ bestaande-bouw-variant van het argument krijgen als de bedrijfsmail daarnaar wij
 
 ---
 
+---
+
+## 0-octies. Architectuurkeuze: de gemeente is de eenheid, het project de staart
+
+De vraag was: projectpagina met bestaande-bouw-info erin, of een aparte
+gemeentepagina. Gemeten op 27 juli beslist de datadichtheid dat.
+
+### Wat elke eenheid werkelijk draagt
+
+**Per project, over alle 995:**
+
+| Veld | Dekking |
+|---|---|
+| naam | 100% |
+| plaats | 100% |
+| coordinaten | 7% |
+| woningaantal | 3% |
+| opleverdatum | 1% (betrouwbaar: 1 van 995) |
+
+Een projectpagina draagt dus in de praktijk een naam. De rest zou boilerplate zijn.
+
+**Per gemeente, voorbeeld Rotterdam:**
+
+- 31 nieuwbouwprojecten, waarvan 13 met woningaantal, samen 1.218 woningen
+- 1.663 vakbedrijven binnen 15 km, uitgesplitst per vak: 352 schilders,
+  351 loodgieters, 268 aannemers, 232 elektriciens, 177 stukadoors,
+  159 badkamerspecialisten, 89 dakkapelbouwers, 35 gietvloerleggers
+- CBS `85792NED`: verkochte woningen per kwartaal en gemiddelde verkoopprijs —
+  gratis, ververst elk kwartaal
+- Bestaat al: de vak-stadpagina's (`/aannemer/rotterdam/` en soortgenoten)
+
+Den Haag: 12 projecten, 671 woningen, 1.102 vakbedrijven.
+
+### De keuze
+
+**De gemeentepagina wordt de primaire eenheid.** Vijf redenen, alle gemeten:
+
+1. **Datadichtheid.** Vijf soorten verifieerbare cijfers tegenover één naam. En de
+   CBS-cijfers verversen zichzelf, dus de pagina veroudert niet.
+2. **Beide markten op één pagina.** Nieuwbouw én bestaande bouw horen bij elkaar in
+   de gemeente: iemand die verhuist binnen Rotterdam kiest tussen die twee. Dat is
+   precies de vraag die dit oplost.
+3. **Zoekvraag.** "Nieuwbouw rotterdam" en "verhuizen rotterdam" hebben volume;
+   projectnamen hebben dat zelden, en de discovery-scorer straft namen zonder eigen
+   kern al af omdat niemand op "Fase 1a" zoekt.
+4. **De dunne-content-val.** 228 rijke gemeentepagina's is het tegenovergestelde van
+   868 bijna-identieke projectpagina's — de fout die de kortingscode-pagina's op
+   noindex bracht, en die de code zelf al benoemt.
+5. **Het is al de operationele eenheid.** `mode_enrich` neemt een gemeente, de
+   mailradius vertrekt vanuit een gemeentecentrum, en de vak-stadpagina's bestaan
+   al op dat niveau. De campagne en de content vallen dan samen.
+
+**Projectpagina's blijven, als lange staart.** Ze vangen zoekvraag op de
+projectnaam — laag volume, maar hoge intentie: wie "Haarlemszicht oplevering" zoekt
+heeft net gekocht. Ze bestaan alleen wanneer er echte substantie is, wat de
+discovery-score al bepaalt: de score rangschikt, een mens kiest. De vier bestaande
+pagina's zijn daarvan het bewijs; ze zijn goed *omdat* ze met de hand tegen primaire
+bronnen zijn gebouwd, en daarom zijn het er vier.
+
+Elke projectpagina linkt omhoog naar zijn gemeentepagina, elke gemeentepagina omlaag
+naar zijn projecten en naar de vak-stadpagina's. Hub en spaken.
+
+### Wat de gemeentepagina moet bevatten
+
+Per gemeente, alles verifieerbaar en met bron en datum:
+
+- Hoeveel nieuwbouwprojecten er lopen, met namen en woningaantallen waar bekend
+- Hoeveel bestaande woningen er per kwartaal van eigenaar wisselen, met de
+  gemiddelde prijs — CBS, met kwartaalvermelding
+- Hoeveel vakbedrijven er per discipline in de omgeving zijn, doorlinkend naar de
+  bestaande vak-stadpagina's
+- Het onderscheid dat de bezoeker zoekt: nieuwbouw betekent een blanco woning en
+  meerwerk-beslissingen; bestaande bouw betekent iets slopen voordat je iets nieuws
+  neerzet. Dat is een echt verschil en het is de reden dat één pagina beide kanten
+  moet benoemen.
+- De Kluskist, want die werkt in beide gevallen.
+
+### Wat dit betekent voor de blokkade van §0-septies
+
+De ontbrekende opleverdata blokkeren de gemeentepagina niet. Die pagina leunt op
+aantallen en transacties, niet op datums. De opleverdatum blijft alleen nodig voor
+de *timing* van de campagne, en daarvoor is één betrouwbare datum per gemeente
+genoeg in plaats van 995 landelijk.
+
+Dat verandert de prioriteit: niet eerst 995 projecten verrijken, maar eerst 228
+gemeentepagina's vullen met data die er al is.
+
+---
+
 ## 0-sexies. De grenzen die in de machine horen, niet in goede bedoelingen
 
 De zeven waarborgen uit §0 blijven ongewijzigd gelden: één doel per mail, lage
