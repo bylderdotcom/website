@@ -4,7 +4,7 @@ import os
 BASE = "/Users/danielpaaij/Documents/GitHub/website/op-maat"
 SITE = "https://www.bylder.com"
 
-NAV = """<nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(245,240,232,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);padding:14px 0;">
+NAV = """<nav aria-label="Hoofdnavigatie" style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(245,240,232,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);padding:14px 0;">
   <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <div style="width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:flex;align-items:center;justify-content:center;"><span style="color:#F5F0E8;font-size:13px;font-weight:800;font-family:'Space Mono',monospace;">B.</span></div>
@@ -37,7 +37,7 @@ HEAD_COMMON = """<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
-<style>*{box-sizing:border-box;margin:0;padding:0}body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.6}.container{max-width:1280px;margin:0 auto;padding:0 48px}@media(max-width:768px){.container{padding:0 20px}.sidebar{display:none}}.warm-divider{background:linear-gradient(90deg,transparent,rgba(200,184,154,0.5),transparent);height:1px}.fb.o{max-height:600px!important}</style>"""
+<style>*{box-sizing:border-box;margin:0;padding:0}body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.6}.container{max-width:1280px;margin:0 auto;padding:0 48px}@media(max-width:768px){.container{padding:0 20px}.sidebar{display:none}}.warm-divider{background:linear-gradient(90deg,transparent,rgba(200,184,154,0.5),transparent);height:1px}.fb.o{max-height:600px!important}/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>"""
 
 CTA_SECTION = """<section style="padding:48px 0;background:#1A1208;text-align:center;">
   <div class="container">
@@ -69,7 +69,7 @@ def breadcrumb_html(crumbs):
             parts.append(f'<a href="{url}" style="color:rgba(61,46,30,0.72);text-decoration:none;">{name}</a> ›')
         else:
             parts.append(f'<span style="color:#5C4433;font-weight:600;">{name}</span>')
-    return '<nav style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(61,46,30,0.72);flex-wrap:wrap;">' + ' '.join(parts) + '</nav>'
+    return '<nav aria-label="Kruimelpad" style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(61,46,30,0.72);flex-wrap:wrap;">' + ' '.join(parts) + '</nav>'
 
 def breadcrumb_ld(crumbs):
     items = []

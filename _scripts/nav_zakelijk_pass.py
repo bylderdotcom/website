@@ -61,7 +61,7 @@ def transform(h):
         return DESK_FLAT
     nh = DW.sub(desk, h)
     if nh != h: h, changed = nh, True
-    # 3. CTA gelijktrekken (alleen binnen <nav>)
+    # 3. CTA gelijktrekken (alleen binnen <nav aria-label="Hoofdnavigatie">)
     for nav in list(re.finditer(r'<nav\b', h)):
         navend = h.find('</nav>', nav.start())
         if navend < 0: continue

@@ -76,7 +76,7 @@ def build_fragment(cluster: str, vak: str, label: str, hv: dict, cities: list, f
         for q, a in faq
     )
     return f"""
-<nav><div class="ni">
+<nav aria-label="Hoofdnavigatie"><div class="ni">
   <a href="/" class="nl"><div class="nli">B.</div><span class="nls">Bylder<span class="dot">.com</span></span></a>
   <a href="https://app.bylder.com/registreer?utm_source=bylder-site&amp;utm_campaign={cluster}" class="bp">Start gratis →</a>
 </div></nav>

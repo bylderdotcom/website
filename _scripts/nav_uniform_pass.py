@@ -19,7 +19,7 @@ DD_ITEM = 'display:block;padding:10px 14px;border-radius:10px;text-decoration:no
 
 DROPDOWN = (
  '<div class="byl-zk" style="position:relative;display:inline-block;">'
- '<style>.byl-zk-menu{display:none;}.byl-zk:hover .byl-zk-menu{display:block;}.byl-zk-menu a:hover{background:rgba(61,90,62,0.07);text-decoration:none;}</style>'
+ '<style>.byl-zk-menu{display:none;}.byl-zk:hover .byl-zk-menu{display:block;}.byl-zk-menu a:hover{background:rgba(61,90,62,0.07);text-decoration:none;}/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>'
  f'<a href="/zakelijk/" style="{LINKSTIJL}display:inline-flex;align-items:center;gap:4px;">Zakelijk <span style="font-size:9px;">▼</span></a>'
  '<div class="byl-zk-menu" style="position:absolute;top:100%;left:-14px;padding-top:12px;z-index:70;">'
  '<div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 18px 40px rgba(26,18,8,0.14);padding:8px;min-width:230px;">'

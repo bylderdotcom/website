@@ -97,11 +97,11 @@ ul{{margin:10px 0 10px 22px;color:rgba(61,46,30,.8)}} li{{margin:6px 0}}
 .faq{{background:#fff;border:1px solid rgba(61,46,30,.08);border-radius:12px;padding:2px 16px;margin:8px 0}}
 .faq summary{{font-weight:700;color:#1A1208;cursor:pointer;padding:12px 0;font-size:15px}}
 .faq p{{padding-bottom:12px;margin:0}}
-</style>
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 {schema}
 </head>
 <body>
-<nav class="nav"><div class="nav-in"><a href="/" class="logo"><i>B.</i>Bylder<span style="color:#3D5A3E">.com</span></a><a href="/vouchers/" class="btn">Kortingsvouchers</a></div></nav>
+<nav aria-label="Hoofdnavigatie" class="nav"><div class="nav-in"><a href="/" class="logo"><i>B.</i>Bylder<span style="color:#3D5A3E">.com</span></a><a href="/vouchers/" class="btn">Kortingsvouchers</a></div></nav>
 <div class="container">
 """
 FOOT = """</div>

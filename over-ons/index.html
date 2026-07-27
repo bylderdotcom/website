@@ -232,7 +232,7 @@ footer { background: var(--bark); padding: 64px 0; color: rgba(245,240,232,0.8);
 <body>
 
 <!-- NAV -->
-<nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:100;padding:16px 0;">
+<nav aria-label="Hoofdnavigatie" style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:100;padding:16px 0;">
   <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
@@ -595,7 +595,7 @@ function bToggle(){
 
 <style>
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-</style>
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 
 <script src="/auping-popup.js"></script>
 </body>

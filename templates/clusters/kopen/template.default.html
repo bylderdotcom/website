@@ -73,9 +73,9 @@ h1{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1A1208;letter-spa
 footer{background:#1A1208;border-top:1px solid rgba(245,240,232,0.06);padding:28px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(245,240,232,0.55)}
 footer a{color:rgba(245,240,232,0.55);text-decoration:none}
 @media(max-width:768px){.nv{display:none}}
-</style>
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>{{main}}{{footer}}
-<script>function tf(b){b.closest('.fi').classList.toggle('fo')}</script>
+<script>function tf(b){b.setAttribute('aria-expanded',b.closest('.fi').classList.toggle('fo'))}</script>
 <script src="/auping-popup.js"></script>
 </body></html>

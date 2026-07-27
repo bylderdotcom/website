@@ -19,7 +19,7 @@ BASE = "https://www.bylder.com"
 
 # ---------------------------------------------------------------- shared shell
 
-NAV = '''<nav class="glass-nav">
+NAV = '''<nav aria-label="Hoofdnavigatie" class="glass-nav">
   <div class="nav-inner">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
@@ -111,7 +111,7 @@ a{color:#3D5A3E;}
 .nav-dd-menu a{display:block;padding:10px 14px;border-radius:10px;color:#3D2E1E;text-decoration:none;}
 .nav-dd-menu a:hover{background:#F5F0E8;}
 @media(max-width:860px){.nav-links,.nav-login{display:none;}.nav-burger{display:flex;}.nav-inner{padding:14px 20px;}}
-</style>'''
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>'''
 
 FOOTER = '''<footer style="background:#1A1208;padding:56px 0;">
   <div style="max-width:1180px;margin:0 auto;padding:0 48px;">

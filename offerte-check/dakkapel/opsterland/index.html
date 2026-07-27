@@ -54,10 +54,10 @@ nav{background:rgba(245,240,232,0.93);backdrop-filter:blur(20px);border-bottom:1
 .fo .fa{display:block}
 footer{background:#1A1208;border-top:1px solid rgba(245,240,232,0.06);padding:28px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(245,240,232,0.55)}
 footer a{color:rgba(245,240,232,0.55);text-decoration:none}
-</style>
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>
-<nav><div class="ni">
+<nav aria-label="Hoofdnavigatie"><div class="ni">
   <a href="/" class="nl"><div class="nli">B.</div><span class="nls">Bylder<span class="dot">.com</span></span></a>
   <a href="https://app.bylder.com/registreer?utm_source=bylder-site&amp;utm_campaign=offerte-check" class="bp">Start gratis →</a>
 </div></nav>
@@ -85,8 +85,8 @@ footer a{color:rgba(245,240,232,0.55);text-decoration:none}
     </div>
 
     <div style="margin-bottom:40px">
-      <div class="fi"><button class="fq" onclick="this.closest('.fi').classList.toggle('fo')">Hoe controleer ik mijn dakkapel offerte in Opsterland?<span style="font-size:18px;flex-shrink:0">+</span></button><div class="fa">Upload je dakkapel offerte als PDF in je Bylder account. De AI analyseert elke post op basis van actuele marktdata voor Opsterland en Friesland. Je ontvangt per post groen, oranje of rood — met concrete onderhandelingstips. Gratis voor bewoners.</div></div>
-      <div class="fi"><button class="fq" onclick="this.closest('.fi').classList.toggle('fo')">Wat is een eerlijke dakkapel offerte in Opsterland in 2026?<span style="font-size:18px;flex-shrink:0">+</span></button><div class="fa">Een eerlijke prijs voor dakkapel plaatsen aan voor- of achterkant in Opsterland bedraagt in 2026 €7.500–€22.000+. Dakkapel kosten variëren sterk per type en materiaal. Bylder vergelijkt je offerte direct met actuele marktdata voor Opsterland.</div></div>
+      <div class="fi"><button class="fq" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.closest('.fi').classList.toggle('fo'))">Hoe controleer ik mijn dakkapel offerte in Opsterland?<span style="font-size:18px;flex-shrink:0">+</span></button><div class="fa">Upload je dakkapel offerte als PDF in je Bylder account. De AI analyseert elke post op basis van actuele marktdata voor Opsterland en Friesland. Je ontvangt per post groen, oranje of rood — met concrete onderhandelingstips. Gratis voor bewoners.</div></div>
+      <div class="fi"><button class="fq" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.closest('.fi').classList.toggle('fo'))">Wat is een eerlijke dakkapel offerte in Opsterland in 2026?<span style="font-size:18px;flex-shrink:0">+</span></button><div class="fa">Een eerlijke prijs voor dakkapel plaatsen aan voor- of achterkant in Opsterland bedraagt in 2026 €7.500–€22.000+. Dakkapel kosten variëren sterk per type en materiaal. Bylder vergelijkt je offerte direct met actuele marktdata voor Opsterland.</div></div>
     </div>
 
     <a href="/betalen/" style="background:#3D5A3E;color:#F5F0E8;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;display:inline-flex">Upload mijn offerte →</a>
