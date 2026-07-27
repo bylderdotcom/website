@@ -54,3 +54,4 @@ Sitemap: https://www.bylder.com/kozijnbedrijf-sitemap.xml
 Sitemap: https://www.bylder.com/timmerman-sitemap.xml
 Sitemap: https://www.bylder.com/ventilatiebedrijf-sitemap.xml
 Sitemap: https://www.bylder.com/warmtepompinstallateur-sitemap.xml
+Sitemap: https://www.bylder.com/wonen-in-sitemap.xml

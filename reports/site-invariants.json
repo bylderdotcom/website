@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T15:27:29",
+  "generated": "2026-07-27T18:23:16",
   "root": "/private/tmp/hp-reorder/web/out",
   "checks": {
     "1_sitemap_files": {
@@ -31,7 +31,8 @@
         "kozijnbedrijf-sitemap.xml",
         "timmerman-sitemap.xml",
         "ventilatiebedrijf-sitemap.xml",
-        "warmtepompinstallateur-sitemap.xml"
+        "warmtepompinstallateur-sitemap.xml",
+        "wonen-in-sitemap.xml"
       ],
       "sitemaps_in_robots": [
         "sitemap.xml",
@@ -61,47 +62,48 @@
         "kozijnbedrijf-sitemap.xml",
         "timmerman-sitemap.xml",
         "ventilatiebedrijf-sitemap.xml",
-        "warmtepompinstallateur-sitemap.xml"
+        "warmtepompinstallateur-sitemap.xml",
+        "wonen-in-sitemap.xml"
       ],
       "sitemaps_on_disk_not_in_robots": [],
       "sitemap_files_missing": [],
-      "urls_checked": 56392,
+      "urls_checked": 56618,
       "violations": 0,
       "examples": []
     },
     "2_noindex_in_sitemap": {
-      "pages_scanned": 75989,
-      "noindex_pages": 19488,
+      "pages_scanned": 76332,
+      "noindex_pages": 19605,
       "violations": 0,
       "examples": []
     },
     "3_canonical": {
-      "pages_with_canonical": 75983,
+      "pages_with_canonical": 76326,
       "violations": 0,
       "examples": []
     },
     "4_lang_attr": {
-      "pages_checked": 75989,
+      "pages_checked": 76332,
       "violations": 0,
       "examples": []
     },
     "5_jsonld": {
-      "blocks_checked": 172880,
+      "blocks_checked": 173907,
       "violations": 0,
       "examples": []
     },
     "6_internal_links": {
       "mode": "steekproef: homepage + index.html van elke top-level clustermap",
-      "pages_sampled": 95,
-      "links_checked": 6095,
+      "pages_sampled": 96,
+      "links_checked": 6486,
       "violations": 0,
       "examples": []
     },
     "7_geen_broncode": {
-      "files_scanned": 76121,
+      "files_scanned": 76465,
       "violations": 0,
       "examples": []
     }
   },
-  "runtime_seconds": 13.5
+  "runtime_seconds": 11.0
 }
