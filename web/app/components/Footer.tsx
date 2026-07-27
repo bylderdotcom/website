@@ -84,7 +84,7 @@ export default function Footer() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8, padding: 0, margin: 0 }}>
                 {col.links.map(l => (
                   <li key={l.href + l.label}>
-                    <a href={l.href} style={{ fontSize: 13, color: l.accent ? '#3D5A3E' : 'rgba(245,240,232,.45)', fontWeight: l.accent ? 600 : 400, textDecoration: 'none' }}>{l.label}</a>
+                    <a href={l.href} style={{ fontSize: 13, color: l.accent ? '#659567' : 'rgba(245,240,232,0.55)', fontWeight: l.accent ? 600 : 400, textDecoration: 'none' }}>{l.label}</a>
                   </li>
                 ))}
               </ul>
