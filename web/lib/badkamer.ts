@@ -69,10 +69,10 @@ type Bedrijf = {
 // met de oude footer → hier als contentregel behouden i.p.v. stilzwijgend laten vallen.
 const DISCLAIMER =
   'Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is een onafhankelijk platform en geen badkamerbedrijf.'
-const DISCLAIMER_HTML = `<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:24px;max-width:680px;">${DISCLAIMER}</p>`
+const DISCLAIMER_HTML = `<p style="font-size:11px;color:rgba(61,46,30,0.72);margin-top:24px;max-width:680px;">${DISCLAIMER}</p>`
 
 const TILE_SHAPES = {
-  rated: '<a href="{{href}}" class="tile">{{name}} <span style="color:rgba(61,46,30,0.4);font-weight:400;">&#9733; {{rating}}</span></a>',
+  rated: '<a href="{{href}}" class="tile">{{name}} <span style="color:rgba(61,46,30,0.72);font-weight:400;">&#9733; {{rating}}</span></a>',
   unrated: '<a href="{{href}}" class="tile">{{name}}</a>',
 }
 
@@ -180,7 +180,7 @@ function getRegisterHtml(page: BadkamerPage): string {
   const nav = registerLetters().map(l => letterButton(l, l === letter)).join('')
   const tiles = companies.map(c => `<a href="${c.href}" class="tile">${c.name}</a>`).join('')
   return `<main style="padding:48px 0 20px;"><div class="container" style="max-width:1000px;">
-  <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:18px;"><a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a> &rarr; <a href="/${CLUSTER}/" style="color:rgba(61,46,30,0.4);text-decoration:none;">${CLUSTER}</a> &rarr; <span style="color:rgba(61,46,30,0.6);">Alle bedrijven &mdash; ${letter}</span></p>
+  <p style="font-size:13px;color:rgba(61,46,30,0.72);margin-bottom:18px;"><a href="/" style="color:rgba(61,46,30,0.72);text-decoration:none;">Bylder.com</a> &rarr; <a href="/${CLUSTER}/" style="color:rgba(61,46,30,0.72);text-decoration:none;">${CLUSTER}</a> &rarr; <span style="color:rgba(61,46,30,0.72);">Alle bedrijven &mdash; ${letter}</span></p>
   <h1 style="font-size:1.8rem;font-weight:800;line-height:1.15;margin-bottom:16px;">Alle bedrijven &mdash; ${letter}</h1>
   <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px;">${nav}</div>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">${tiles}</div>

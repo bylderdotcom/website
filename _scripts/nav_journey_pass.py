@@ -19,7 +19,7 @@ JOURNEY = [('/nieuwbouw-koper/','Nieuwbouw kopen'),('/verbouwen/','Verbouwen'),
            ('/deelnemer-worden/','Deelnemer worden')]
 
 FLAT = '\n      ' + '\n      '.join(f'<a href="{h}">{t}</a>' for h,t in JOURNEY) + '\n    '
-INLINE = ''.join(f'<a href="{h}" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">{t}</a>\n      ' for h,t in JOURNEY)
+INLINE = ''.join(f'<a href="{h}" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">{t}</a>\n      ' for h,t in JOURNEY)
 DEFAULT_CTA = '<a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>'
 
 def find_div_span(h, start):
@@ -48,7 +48,7 @@ def transform(h):
             pos = oe + len(repl)
             changed = True
     # patroon 4: class-based flex container (homepage-stijl: "hidden md:flex items-center gap-6")
-    CLSLNK = ''.join(f'<a href="{h2}" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">{t}</a>\n      ' for h2,t in JOURNEY)
+    CLSLNK = ''.join(f'<a href="{h2}" class="text-sm" style="color:rgba(61,46,30,0.72);text-decoration:none;">{t}</a>\n      ' for h2,t in JOURNEY)
     for nav in list(re.finditer(r'<nav\b', h)):
         navend = h.find('</nav>', nav.start())
         if navend < 0: continue

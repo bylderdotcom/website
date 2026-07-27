@@ -28,7 +28,7 @@ export default function InteractiveScripts() {
         const w = W[Number(s.value)]
         const a = parseFloat((m.value || '').replace(',', '.'))
         if (!w || !(a > 0)) { o.innerHTML = ''; return }
-        o.innerHTML = `Indicatie voor jouw klus: <strong>€${fmt(Math.round(w.low * a))} – €${fmt(Math.round(w.high * a))}</strong> <span style="color:rgba(61,46,30,0.5);font-size:13px;">(${w.low}–${w.high} €/m², indicatief)</span>`
+        o.innerHTML = `Indicatie voor jouw klus: <strong>€${fmt(Math.round(w.low * a))} – €${fmt(Math.round(w.high * a))}</strong> <span style="color:rgba(61,46,30,0.72);font-size:13px;">(${w.low}–${w.high} €/m², indicatief)</span>`
       }
       s.addEventListener('change', calc)
       m.addEventListener('input', calc)

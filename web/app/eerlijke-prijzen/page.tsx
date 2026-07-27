@@ -94,7 +94,7 @@ const CSS = `
 .ep-main .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
 .ep-main .faq-item{border-bottom:1px solid rgba(61,46,30,0.08);padding:18px 0;}
 .ep-main .faq-item h3{font-size:16px;font-weight:700;margin-bottom:8px;color:#1A1208;}
-.ep-main .faq-item p{font-size:14px;color:rgba(61,46,30,0.65);line-height:1.7;}
+.ep-main .faq-item p{font-size:14px;color:rgba(61,46,30,0.72);line-height:1.7;}
 .ep-main .check-list{list-style:none;display:flex;flex-direction:column;gap:10px;padding:0;margin:0;}
 .ep-main .check-list li{display:flex;align-items:start;gap:10px;font-size:15px;line-height:1.55;}
 .ep-main .check-list li::before{content:'✓';color:#3D5A3E;font-weight:700;flex-shrink:0;margin-top:2px;}

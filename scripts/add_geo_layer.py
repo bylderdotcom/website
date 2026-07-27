@@ -31,7 +31,7 @@ VAKSTAD_CLUSTERS = ["kopen", "project"]
 
 BRON_REGEL = (
     f' <span style="display:block;margin-top:8px;font-size:12px;'
-    f'color:rgba(61,46,30,0.45)" {MARKER}>Bijgewerkt: {DATUM} &middot; '
+    f'color:rgba(61,46,30,0.72)" {MARKER}>Bijgewerkt: {DATUM} &middot; '
     f'Bron: Bylder-marktdata op basis van geanalyseerde offertes van leden.</span>'
 )
 
@@ -67,7 +67,7 @@ def upgrade_city_templates(cluster: str) -> int:
 def add_dateline_vakstad(cluster: str) -> int:
     """Bijgewerkt/bron-regel direct onder de intro-alinea van elk vak-template."""
     regel = (
-        f'\n    <p style="font-size:12.5px;color:rgba(61,46,30,0.45);'
+        f'\n    <p style="font-size:12.5px;color:rgba(61,46,30,0.72);'
         f'margin:-16px 0 28px" {MARKER}>Bijgewerkt: {DATUM} &middot; '
         f'Prijspeil: Nederland 2026 &middot; Bron: Bylder-marktdata</p>'
     )
@@ -94,7 +94,7 @@ def add_dateline_bedrijf(cluster: str) -> int:
     """Bijgewerkt/bron-regel in het neutraliteits-blok van bedrijfsprofielen."""
     regel = (
         f' <span style="display:block;margin-top:8px;font-size:12px;'
-        f'color:rgba(61,46,30,0.45)" {MARKER}>Gegevens bijgewerkt: {DATUM} &middot; '
+        f'color:rgba(61,46,30,0.72)" {MARKER}>Gegevens bijgewerkt: {DATUM} &middot; '
         f'Bron: Google &amp; OpenStreetMap (&copy; OpenStreetMap-bijdragers).</span>'
     )
     changed = 0

@@ -14,7 +14,7 @@ import os, re
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/')
 
-LINKSTIJL = 'font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;'
+LINKSTIJL = 'font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;'
 DD_ITEM = 'display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;'
 
 DROPDOWN = (

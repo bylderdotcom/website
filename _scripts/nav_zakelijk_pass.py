@@ -11,12 +11,12 @@ EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.
 
 # desktop: plat 'Zakelijk'-item
 DESK_FLAT = '<a href="/zakelijk/">Zakelijk</a>'
-DESK_INLINE = '<a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a>'
-DESK_CLS = '<a href="/zakelijk/" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a>'
+DESK_INLINE = '<a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Zakelijk</a>'
+DESK_CLS = '<a href="/zakelijk/" class="text-sm" style="color:rgba(61,46,30,0.72);text-decoration:none;">Zakelijk</a>'
 
 # mobiel: kopje + 2 links (flat-stijl voor nav-mobile blokken)
 MOB_BLOCK = ('<span style="display:block;font-size:11px;font-family:\'Space Mono\',monospace;'
-             'text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);'
+             'text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.72);'
              'font-weight:700;padding:12px 0 2px;">Zakelijk</span>\n      '
              '<a class="zm" href="/deelnemer-worden/">Deelnemer worden</a>\n      '
              '<a class="zm" href="/deelnemer-worden/commercieel-vastgoed/">Commercieel vastgoed</a>')

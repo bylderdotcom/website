@@ -469,7 +469,7 @@ PAGES = [
 ]
 
 for (cat_slug, cat_label, prod_slug, prod_title, h1, meta_desc, intro, price, leadtime, faqs, related) in PAGES:
-    related_links = "".join([f'<a href="{r[0]}" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">{r[1]}</a>' for r in related])
+    related_links = "".join([f'<a href="{r[0]}" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">{r[1]}</a>' for r in related])
     faq_blocks = "".join([faq_block(q, a) for q, a in faqs])
     faq_schema = faq_ld(faqs)
     bc_html = breadcrumb_html([("Bylder", "/"), ("Op maat", "/op-maat/"), (cat_label, f"/op-maat/{cat_slug}/"), (prod_title, f"/op-maat/{cat_slug}/{prod_slug}/")])
@@ -504,10 +504,10 @@ gtag('config', 'G-LZYCRP1169');
   <div class="container" style="max-width:800px;">
     <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(61,46,30,0.08);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;color:#5C4433;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.08em;">Op maat · {cat_label}</div>
     <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px;">{h1}</h1>
-    <p style="font-size:17px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:24px;">{intro}</p>
+    <p style="font-size:17px;color:rgba(61,46,30,0.72);line-height:1.8;margin-bottom:24px;">{intro}</p>
     <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:8px;">
-      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.4);text-transform:uppercase;margin-bottom:4px;">Prijs</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{price}</div></div>
-      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.4);text-transform:uppercase;margin-bottom:4px;">Levertijd</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{leadtime}</div></div>
+      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);text-transform:uppercase;margin-bottom:4px;">Prijs</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{price}</div></div>
+      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);text-transform:uppercase;margin-bottom:4px;">Levertijd</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{leadtime}</div></div>
     </div>
   </div>
 </section>
@@ -525,9 +525,9 @@ gtag('config', 'G-LZYCRP1169');
     <aside class="sidebar" style="position:sticky;top:80px;">
       {SIDEBAR_CTA}
       <div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.35);margin-bottom:10px;">Navigatie</div>
+        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.72);margin-bottom:10px;">Navigatie</div>
         <div style="display:flex;flex-direction:column;gap:7px;">
-          <a href="/op-maat/{cat_slug}/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">← {cat_label} overzicht</a>
+          <a href="/op-maat/{cat_slug}/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">← {cat_label} overzicht</a>
           <a href="/op-maat/" style="font-size:13px;color:#3D5A3E;font-weight:700;margin-top:4px;">← Alle categorieën</a>
         </div>
       </div>

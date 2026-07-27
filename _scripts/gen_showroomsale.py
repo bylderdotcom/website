@@ -70,7 +70,7 @@ a{{color:#3D5A3E}}
 .logo{{display:flex;align-items:center;gap:9px;font-weight:800;color:#1A1208;text-decoration:none;letter-spacing:-.02em}}
 .logo i{{width:30px;height:30px;border-radius:8px;background:#3D5A3E;color:#F5F0E8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px}}
 .btn{{display:inline-flex;align-items:center;gap:7px;background:#3D5A3E;color:#F5F0E8;text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:700;font-size:14px}}
-.crumb{{font-size:12px;color:rgba(61,46,30,.5);padding:16px 0 0}}
+.crumb{{font-size:12px;color:rgba(61,46,30,0.72);padding:16px 0 0}}
 .crumb a{{text-decoration:none}}
 h1{{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800;color:#1A1208;letter-spacing:-.02em;line-height:1.12;margin:10px 0 6px}}
 h2{{font-size:1.25rem;font-weight:800;color:#1A1208;margin:30px 0 10px}}
@@ -82,15 +82,15 @@ p{{margin:10px 0;color:rgba(61,46,30,.8)}}
 .card img{{width:100%;height:150px;object-fit:cover;display:block}}
 .card .b{{padding:14px 16px}}
 .card h3{{font-size:15px;font-weight:800;color:#1A1208;margin-bottom:4px}}
-.card .cat{{font-size:12px;color:rgba(61,46,30,.45);margin-bottom:8px}}
+.card .cat{{font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:8px}}
 .prices{{display:flex;align-items:baseline;gap:8px}}
 .sale{{font-size:1.3rem;font-weight:800;color:#3D5A3E;letter-spacing:-.02em}}
-.adv{{font-size:13px;color:rgba(61,46,30,.4);text-decoration:line-through}}
+.adv{{font-size:13px;color:rgba(61,46,30,0.72);text-decoration:line-through}}
 .tag{{display:inline-block;font-size:11px;font-weight:700;color:#B85C38;background:rgba(184,92,56,.1);padding:3px 9px;border-radius:999px;margin-top:8px}}
 .links{{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}}
 .links a{{background:#fff;border:1px solid rgba(61,46,30,.12);border-radius:999px;padding:8px 14px;font-size:13px;text-decoration:none;color:#3D2E1E;font-weight:600}}
 .cta{{background:rgba(61,90,62,.07);border:1px solid rgba(61,90,62,.22);border-radius:16px;padding:20px;margin:24px 0}}
-footer{{padding:34px 0;color:rgba(61,46,30,.45);font-size:13px;text-align:center;border-top:1px solid rgba(61,46,30,.08);margin-top:30px}}
+footer{{padding:34px 0;color:rgba(61,46,30,0.72);font-size:13px;text-align:center;border-top:1px solid rgba(61,46,30,.08);margin-top:30px}}
 .answer{{background:#fff;border:1px solid rgba(61,90,62,.25);border-left:4px solid #3D5A3E;border-radius:12px;padding:16px 18px;margin:16px 0;font-size:16px}}
 .answer strong{{color:#1A1208}}
 ul{{margin:10px 0 10px 22px;color:rgba(61,46,30,.8)}} li{{margin:6px 0}}

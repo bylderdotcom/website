@@ -11,9 +11,9 @@ NAV = """<nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:r
       <span style="font-weight:700;font-size:18px;letter-spacing:-0.02em;color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
     <div style="display:flex;align-items:center;gap:24px;">
-      <a href="/nieuwbouw-gids/" style="font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;font-weight:600;">Gidsen</a>
-      <a href="/nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Gemeenten</a>
-      <a href="/op-maat/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Op maat</a>
+      <a href="/nieuwbouw-gids/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;font-weight:600;">Gidsen</a>
+      <a href="/nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Gemeenten</a>
+      <a href="/op-maat/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Op maat</a>
     </div>
     <a href="/login.html" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis</a>
   </div>
@@ -23,12 +23,12 @@ FOOTER = """<footer style="padding:40px 0 24px;background:#1A1208;">
   <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
     <span style="font-weight:700;color:#F5F0E8;font-size:17px;">Bylder<span style="color:#8AAE8B;">.com</span></span>
     <div style="display:flex;gap:20px;flex-wrap:wrap;">
-      <a href="/nieuwbouw-gids/" style="font-size:13px;color:rgba(245,240,232,0.4);text-decoration:none;">Gidsen</a>
-      <a href="/op-maat/" style="font-size:13px;color:rgba(245,240,232,0.4);text-decoration:none;">Op maat</a>
-      <a href="/nieuwbouw/" style="font-size:13px;color:rgba(245,240,232,0.4);text-decoration:none;">Gemeenten</a>
-      <a href="/privacy/" style="font-size:13px;color:rgba(245,240,232,0.4);text-decoration:none;">Privacy</a>
+      <a href="/nieuwbouw-gids/" style="font-size:13px;color:rgba(245,240,232,0.55);text-decoration:none;">Gidsen</a>
+      <a href="/op-maat/" style="font-size:13px;color:rgba(245,240,232,0.55);text-decoration:none;">Op maat</a>
+      <a href="/nieuwbouw/" style="font-size:13px;color:rgba(245,240,232,0.55);text-decoration:none;">Gemeenten</a>
+      <a href="/privacy/" style="font-size:13px;color:rgba(245,240,232,0.55);text-decoration:none;">Privacy</a>
     </div>
-    <p style="font-size:12px;color:rgba(245,240,232,0.2);font-family:'Space Mono',monospace;">© 2025 Bylder Nederland B.V.</p>
+    <p style="font-size:12px;color:rgba(245,240,232,0.55);font-family:'Space Mono',monospace;">© 2025 Bylder Nederland B.V.</p>
   </div>
 </footer>"""
 
@@ -66,10 +66,10 @@ def breadcrumb_html(crumbs):
     parts = []
     for i, (name, url) in enumerate(crumbs):
         if i < len(crumbs) - 1:
-            parts.append(f'<a href="{url}" style="color:rgba(61,46,30,0.4);text-decoration:none;">{name}</a> ›')
+            parts.append(f'<a href="{url}" style="color:rgba(61,46,30,0.72);text-decoration:none;">{name}</a> ›')
         else:
             parts.append(f'<span style="color:#5C4433;font-weight:600;">{name}</span>')
-    return '<nav style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(61,46,30,0.4);flex-wrap:wrap;">' + ' '.join(parts) + '</nav>'
+    return '<nav style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(61,46,30,0.72);flex-wrap:wrap;">' + ' '.join(parts) + '</nav>'
 
 def breadcrumb_ld(crumbs):
     items = []
@@ -162,11 +162,11 @@ CATEGORIES = [
 # Build niveau-1 page
 cat_cards = ""
 for slug, title, icon, desc, products in CATEGORIES:
-    prod_links = "".join([f'<a href="/op-maat/{slug}/{p[1]}/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;padding:4px 0;border-bottom:1px solid rgba(61,46,30,0.06);">{p[0]}</a>' for p in products])
+    prod_links = "".join([f'<a href="/op-maat/{slug}/{p[1]}/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;padding:4px 0;border-bottom:1px solid rgba(61,46,30,0.06);">{p[0]}</a>' for p in products])
     cat_cards += f"""<div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px;">
   <div style="font-size:2rem;">{icon}</div>
   <a href="/op-maat/{slug}/" style="font-size:1.1rem;font-weight:800;color:#1A1208;text-decoration:none;letter-spacing:-0.02em;">{title}</a>
-  <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.6;margin:0;">{desc}</p>
+  <p style="font-size:13px;color:rgba(61,46,30,0.72);line-height:1.6;margin:0;">{desc}</p>
   <div style="display:flex;flex-direction:column;gap:0;">{prod_links}</div>
   <a href="/op-maat/{slug}/" style="font-size:13px;color:#3D5A3E;font-weight:700;margin-top:4px;">Bekijk alle →</a>
 </div>"""
@@ -204,7 +204,7 @@ gtag('config', 'G-LZYCRP1169');
   <div class="container" style="max-width:800px;">
     <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(61,46,30,0.08);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;color:#5C4433;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.08em;">Maatwerk voor nieuwbouw</div>
     <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px;">Op maat laten maken voor je nieuwbouwwoning</h1>
-    <p style="font-size:17px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:24px;">Een nieuwbouwwoning biedt de perfecte gelegenheid om alles op maat te laten maken — van de keuken tot de raamdecoratie. Hier vind je per categorie wat het kost, hoe je een goede leverancier kiest en welke keuzes je het beste vroeg maakt.</p>
+    <p style="font-size:17px;color:rgba(61,46,30,0.72);line-height:1.8;margin-bottom:24px;">Een nieuwbouwwoning biedt de perfecte gelegenheid om alles op maat te laten maken — van de keuken tot de raamdecoratie. Hier vind je per categorie wat het kost, hoe je een goede leverancier kiest en welke keuzes je het beste vroeg maakt.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
       <a href="/login.html" style="background:#3D5A3E;color:#F5F0E8;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;"><i class="ph-thin ph-magic-wand"></i> AI-advies voor mijn woning</a>
       <a href="/nieuwbouw-gids/" style="border:1.5px solid rgba(61,46,30,0.15);color:#3D2E1E;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;background:rgba(255,255,255,0.8);">Alle gidsen</a>
@@ -215,7 +215,7 @@ gtag('config', 'G-LZYCRP1169');
 <section style="padding:48px 0;">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#1A1208;letter-spacing:-0.02em;margin-bottom:8px;">Alle categorieën</h2>
-    <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:32px;">Kies een categorie om prijzen, tips en productpagina's te bekijken.</p>
+    <p style="font-size:15px;color:rgba(61,46,30,0.72);margin-bottom:32px;">Kies een categorie om prijzen, tips en productpagina's te bekijken.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;">
       {cat_cards}
     </div>

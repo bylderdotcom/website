@@ -130,7 +130,7 @@ const CSS = `
 .sf-main .check-list li::before{content:'✓';color:#3D5A3E;font-weight:700;flex-shrink:0;margin-top:2px;}
 .sf-main .faq-item{border-bottom:1px solid rgba(61,46,30,0.08);padding:20px 0;}
 .sf-main .faq-item h3{font-size:16px;font-weight:700;margin-bottom:8px;color:#1A1208;}
-.sf-main .faq-item p{font-size:14px;color:rgba(61,46,30,0.65);line-height:1.7;}
+.sf-main .faq-item p{font-size:14px;color:rgba(61,46,30,0.72);line-height:1.7;}
 .sf-main .swatches{display:flex;gap:0;border-radius:10px;overflow:hidden;height:64px;margin-bottom:16px;border:1px solid rgba(61,46,30,0.1);}
 .sf-main .swatches span{flex:1;}
 .sf-main .style-tile{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:16px;padding:18px;transition:border-color .15s;}

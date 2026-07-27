@@ -28,7 +28,7 @@ export default function InteractiveScripts() {
       const calc = () => {
         const w = W[Number(s.value)]
         if (!w) { o.innerHTML = ''; return }
-        o.innerHTML = `Indicatie: <strong>€${fmt(w.low)} – €${fmt(w.high)}</strong> <span style="color:rgba(61,46,30,0.5);font-size:13px;">(indicatief, per project, excl. btw)</span>`
+        o.innerHTML = `Indicatie: <strong>€${fmt(w.low)} – €${fmt(w.high)}</strong> <span style="color:rgba(61,46,30,0.72);font-size:13px;">(indicatief, per project, excl. btw)</span>`
       }
       s.addEventListener('change', calc)
       calc() // de bron berekent ook direct bij laden (eerste optie)
