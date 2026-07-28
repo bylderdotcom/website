@@ -171,16 +171,17 @@ def email_uit(rauw, tekst):
 
 
 def kvk_uit(tekst):
-    m = KVK_RE.search(tekst or "")
+    m = KVK_RE.search((tekst or "").lower())
     return (m.group(1) or m.group(2)) if m else None
 
 
 def keurmerken_uit(tekst):
-    return [naam for naam, patroon in KEURMERKEN.items() if re.search(patroon, tekst or "")]
+    tekst = (tekst or "").lower()
+    return [naam for naam, patroon in KEURMERKEN.items() if re.search(patroon, tekst)]
 
 
 def opgericht_uit(tekst):
-    m = JAAR_RE.search(tekst or "")
+    m = JAAR_RE.search((tekst or "").lower())
     if not m:
         return None
     jaar = int(m.group(1))
@@ -188,20 +189,28 @@ def opgericht_uit(tekst):
 
 
 def werkgebied_uit(tekst, plaatsen):
-    """Plaatsen binnen een werkgebied-zin, op hele woorden.
+    """Plaatsen binnen een werkgebied-zin: hele woorden én met een hoofdletter.
 
-    Zonder woordgrenzen levert dit onzin op en dat is niet theoretisch: de eerste
-    run zette bij een stukadoor in Alkmaar 'rheden' (uit "waarheden") en 'echt'
-    (uit "slecht", "recht") als werkgebied. Een verkeerd werkgebied is erger dan
-    een leeg werkgebied — daar gaat de aanbevelingslaag straks op af.
+    Twee fouten uit twee eerdere runs, allebei echt weggeschreven:
+      1. zonder woordgrenzen kreeg een stukadoor in Alkmaar 'rheden' (uit
+         "waarheden") en 'echt' (uit "slecht");
+      2. mét woordgrenzen maar zonder hoofdletters bleef 'heel' en 'echt'
+         doorkomen — dat zijn gemeenten in Limburg én gewone woorden.
+
+    Een plaatsnaam krijgt in lopende tekst een hoofdletter, het bijwoord niet.
+    Dat onderscheid is het enige dat hier werkt. Bergen, Best en Laren blijven
+    daardoor gewoon vindbaar wanneer ze als plaats bedoeld zijn.
     """
     gebied = []
     for zin in WERKGEBIED_RE.findall(tekst or "")[:6]:
         for p in plaatsen:
-            if len(p) < 4 or p in gebied:
+            if len(p) < 4 or p.lower() in gebied:
                 continue
-            if re.search(rf"(?<![a-z]){re.escape(p)}(?![a-z])", zin):
-                gebied.append(p)
+            for m in re.finditer(rf"(?<![A-Za-z]){re.escape(p)}(?![a-z])", zin, re.IGNORECASE):
+                eerste = next((c for c in m.group(0) if c.isalpha()), "")
+                if eerste.isupper():
+                    gebied.append(p.lower())
+                    break
     return gebied[:12]
 
 
@@ -243,13 +252,20 @@ def haal(url):
 
 
 def tekst_uit(h):
+    """Platte tekst mét oorspronkelijke hoofdletters.
+
+    Die hoofdletters zijn geen detail: ze zijn het enige verschil tussen de
+    gemeente Heel en het woord "heel", en tussen Echt en "echt". Alles wat niet
+    op plaatsnamen matcht, kleinlettert zelf.
+    """
     h = re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", h or "")
     h = re.sub(r"(?s)<[^>]+>", " ", h)
     h = re.sub(r"&[a-z]+;|&#\d+;", " ", h)
-    return re.sub(r"\s+", " ", h).lower()
+    return re.sub(r"\s+", " ", h)
 
 
 def diensten_uit(tekst):
+    tekst = (tekst or "").lower()
     gevonden = []
     for dienst, termen in VOCAB[VAK].items():
         if any(t in tekst for t in termen):
