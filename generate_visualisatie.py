@@ -432,6 +432,7 @@ FOOTER = """<footer style="background:#1A1208;padding:64px 0;">
     <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">© 2025 Bylder Nederland B.V. — KvK 65020006</p>
   </div>
 </footer><script src="/auping-popup.js"></script>
+<script src="/mis-je-iets.js" defer></script>
 </body></html>"""
 
 def footer():

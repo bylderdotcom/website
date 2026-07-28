@@ -25,3 +25,9 @@ web/.next/
 web/out/
 web/next-env.d.ts
 web/tsconfig.tsbuildinfo
+
+# Claude Code — persoonlijk/lokaal. .claude/settings.json blijft WEL in git,
+# want die reist mee naar cloud-sessies (claude.ai/code, telefoon).
+.claude/settings.local.json
+.claude/settings.local.json.bak-*
+.claude/worktrees/
