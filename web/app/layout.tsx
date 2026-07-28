@@ -42,8 +42,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="gtag-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
         }} />
+        {/* Meldkanaal. Op de 8.714 losse pagina's staat dit script per pagina
+            in de HTML; de 26 pagina's die hier doorheen komen — homepage
+            voorop — hadden het niet. Eén keer centraal in plaats van 26 keer
+            los. lazyOnload: het is een strook onder aan de pagina, die hoeft
+            niet mee te vechten om de eerste render. */}
+        <Script src="/mis-je-iets.js" strategy="lazyOnload" />
         <Nav />
-        {children}
+        {/* <main> is hier geen opsmuk. Twee redenen: schermlezers en
+            toetsenbordgebruikers gebruiken het om de navigatie over te slaan,
+            en mis-je-iets.js hangt zichzelf onder in dit blok. Zonder <main>
+            valt de widget terug op <body> en belandt hij ónder de voettekst,
+            na de copyrightregel — waar hij op een fout lijkt. */}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
