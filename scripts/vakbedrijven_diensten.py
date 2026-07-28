@@ -36,6 +36,7 @@ Gebruik
              badkamer | dakkapel | gietvloer
   --limit N  aantal bedrijven (standaard 150) — begin klein en meet de score
   --sync     schrijft naar Supabase. Zonder deze vlag: droogdraai, schrijft niets.
+  --hersync  schrijf weg uit reports/diensten-<vak>.json zonder opnieuw op te halen
 
 Velden: diensten, email, kvk, keurmerken, opgericht, werkgebied. De laatste vier
 hebben kolommen nodig die er nog niet zijn — zie
@@ -187,10 +188,19 @@ def opgericht_uit(tekst):
 
 
 def werkgebied_uit(tekst, plaatsen):
+    """Plaatsen binnen een werkgebied-zin, op hele woorden.
+
+    Zonder woordgrenzen levert dit onzin op en dat is niet theoretisch: de eerste
+    run zette bij een stukadoor in Alkmaar 'rheden' (uit "waarheden") en 'echt'
+    (uit "slecht", "recht") als werkgebied. Een verkeerd werkgebied is erger dan
+    een leeg werkgebied — daar gaat de aanbevelingslaag straks op af.
+    """
     gebied = []
     for zin in WERKGEBIED_RE.findall(tekst or "")[:6]:
         for p in plaatsen:
-            if len(p) >= 4 and p in zin and p not in gebied:
+            if len(p) < 4 or p in gebied:
+                continue
+            if re.search(rf"(?<![a-z]){re.escape(p)}(?![a-z])", zin):
                 gebied.append(p)
     return gebied[:12]
 
@@ -198,6 +208,9 @@ def werkgebied_uit(tekst, plaatsen):
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 FLAGS = [a for a in sys.argv[1:] if a.startswith("--")]
 SYNC = "--sync" in FLAGS
+HERSYNC = "--hersync" in FLAGS          # sla het ophalen over, gebruik het vorige rapport
+if HERSYNC:
+    SYNC = True
 LIMIET = 150
 for f in FLAGS:
     if f.startswith("--limit"):
@@ -297,12 +310,27 @@ print(f"{VAK}: {len(kandidaten)} bedrijven met website, nog zonder diensten.")
 print(f"Woordenlijst: {len(VOCAB[VAK])} diensten. "
       f"{'SCHRIJFT NAAR SUPABASE' if SYNC else 'Droogdraai — schrijft niets.'}\n")
 
-resultaten = []
-with ThreadPoolExecutor(max_workers=WERKERS) as pool:
-    for i, r in enumerate(pool.map(verwerk, kandidaten), 1):
-        resultaten.append(r)
-        if i % 25 == 0:
-            print(f"  … {i}/{len(kandidaten)}", end="\r")
+# Ophalen is het dure deel: 200 bedrijven kosten een kwartier, 21.317 een nacht.
+# De vondst gaat daarom altijd naar schijf vóór het wegschrijven begint. Mislukt
+# dat laatste — en dat gebeurde: 159 SSL-fouten op de eerste run — dan hoef je met
+# --hersync alleen de database-kant over te doen.
+RAPPORT = os.path.join(ROOT, "reports", f"diensten-{VAK}.json")
+
+if HERSYNC:
+    if not os.path.exists(RAPPORT):
+        sys.exit(f"⚠ --hersync: {RAPPORT} bestaat nog niet. Draai eerst zonder die vlag.")
+    resultaten = json.load(open(RAPPORT, encoding="utf-8"))["resultaten"]
+    print(f"Uit rapport gelezen: {len(resultaten)} bedrijven (niets opnieuw opgehaald).\n")
+else:
+    resultaten = []
+    with ThreadPoolExecutor(max_workers=WERKERS) as pool:
+        for i, r in enumerate(pool.map(verwerk, kandidaten), 1):
+            resultaten.append(r)
+            if i % 25 == 0:
+                print(f"  … {i}/{len(kandidaten)}", end="\r")
+    os.makedirs(os.path.dirname(RAPPORT), exist_ok=True)
+    json.dump({"vak": VAK, "aantal": len(resultaten), "resultaten": resultaten},
+              open(RAPPORT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 print(" " * 60, end="\r")
 bereikbaar = [r for r in resultaten if r["bereikbaar"]]
@@ -345,7 +373,19 @@ if not SYNC:
     sys.exit(0)
 
 # ── Wegschrijven ────────────────────────────────────────────────────────────
+import ssl
 import urllib.request
+
+# Zonder expliciete CA-bundel geeft urllib hier CERTIFICATE_VERIFY_FAILED op élk
+# verzoek aan Supabase. Dat kostte een hele run: 159 fouten, 0 weggeschreven — en
+# omdat de kolomcontrole via dezelfde weg loopt, meldde hij ook nog eens ten
+# onrechte dat de kolommen ontbraken. De scrape zelf gaat via curl en had er
+# geen last van, wat het verwarrend maakte.
+try:
+    import certifi
+    CTX = ssl.create_default_context(cafile=certifi.where())
+except ImportError:
+    CTX = ssl.create_default_context()
 
 sb_url, sb_key = env("NEXT_PUBLIC_SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY")
 if not sb_url or not sb_key:
@@ -357,9 +397,10 @@ KOP = {"apikey": sb_key, "Authorization": f"Bearer {sb_key}"}
 def kolom_bestaat(kolom):
     req = urllib.request.Request(f"{sb_url}/rest/v1/vakbedrijven?select={kolom}&limit=1", headers=KOP)
     try:
-        urllib.request.urlopen(req).read()
+        urllib.request.urlopen(req, context=CTX).read()
         return True
-    except Exception:
+    except Exception as e:
+        print(f"  ! kolomcontrole {kolom} mislukt: {e}")
         return False
 
 
@@ -388,7 +429,7 @@ for r in resultaten:
         data=json.dumps(payload).encode(), method="PATCH",
         headers={**KOP, "Content-Type": "application/json", "Prefer": "return=minimal"})
     try:
-        urllib.request.urlopen(req).read()
+        urllib.request.urlopen(req, context=CTX).read()
         ok += 1
     except Exception as e:
         fout += 1
