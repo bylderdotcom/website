@@ -78,7 +78,8 @@ VOCAB = {
     },
     "schilder": {
         "Binnenschilderwerk": ["binnenschilderwerk", "binnenwerk schilder", "schilderen binnen"],
-        "Buitenschilderwerk": ["buitenschilderwerk", "buitenwerk", "kozijnen schilderen"],
+        "Buitenschilderwerk": ["buitenschilderwerk", "kozijnen schilderen", "gevelschilder"],
+        "Glaszetten of beglazing": ["glaszet", "beglazing", "dubbel glas"],
         "Behangen": ["behangen", "behangwerk", "glasvlies"],
         "Houtrot herstellen": ["houtrot", "houtherstel"],
         "Spuitwerk": ["spuitwerk", "lakspuiten", "spuiten van kozijnen"],
@@ -91,41 +92,60 @@ VOCAB = {
         "Cv-ketel vervangen": ["cv-ketel", "cv ketel", "ketelvervanging", "hr-ketel"],
         "Afvoer of riool ontstoppen": ["ontstopp", "riool", "verstopping", "afvoer verstopt"],
     },
+    # "Storing" (64%) was te breed — elke elektricien noemt het woord. Nu alleen
+    # als hij er een dienst van maakt: een storingsdienst, spoed, 24 uur.
     "elektricien": {
-        "Stopcontact of schakelaar bijplaatsen": ["stopcontact", "schakelaar", "wandcontactdoos"],
-        "Verlichting of inbouwspots": ["inbouwspot", "verlichting aanleggen", "lichtplan", "spots"],
-        "Storing of aardlekschakelaar": ["storing", "aardlek", "kortsluiting"],
+        "Stopcontact of schakelaar bijplaatsen": ["stopcontact", "wandcontactdoos", "schakelmateriaal"],
+        "Verlichting en spots": ["verlichting", "inbouwspot", "lichtplan"],
+        "Storingsdienst of spoed": ["storingsdienst", "spoedservice", "24/7", "24 uur per dag", "spoeddienst"],
         "Laadpaal installeren": ["laadpaal", "thuislader", "laadstation"],
         "Groepenkast vervangen": ["groepenkast", "meterkast uitbreiden", "verdeelkast"],
         "Woning herbedraden": ["herbedrad", "nieuwe bedrading", "installatie vernieuwen"],
+        "Zonnepanelen": ["zonnepanelen", "omvormer", "pv-installatie"],
+        "Domotica en slimme installatie": ["domotica", "knx", "slimme verlichting", "smart home"],
     },
+    # "Verbouwing" stond hier en scoorde 91%: elke aannemer noemt verbouwen, dus
+    # het onderscheidde niemand van niemand. Vervangen door wat een aannemer wél
+    # apart maakt — welk soort werk hij aanneemt.
     "aannemer": {
-        "Aanbouw of uitbouw": ["aanbouw", "uitbouw", "serre"],
-        "Verbouwing": ["verbouw", "renovatie", "totaalrenovatie"],
-        "Dakopbouw": ["dakopbouw", "opbouw op", "extra verdieping"],
+        "Aanbouw of uitbouw": ["aanbouw", "uitbouw", "serre", "erker"],
+        "Dakopbouw of extra verdieping": ["dakopbouw", "extra verdieping", "optopp", "nokverhoging"],
+        "Keuken plaatsen": ["keuken plaats", "keukenmontage", "keuken vervang"],
+        "Badkamer verbouwen": ["badkamer verbouw", "badkamerrenovatie", "badkamer renovatie"],
+        "Kelder of souterrain": ["kelder", "souterrain"],
+        "Funderingsherstel": ["funderingsherstel", "fundering herstel"],
         "Casco en ruwbouw": ["casco", "ruwbouw", "metselwerk"],
-        "Constructief werk": ["draagmuur", "constructief", "staalconstructie", "stalen balk"],
+        "Constructief werk": ["draagmuur", "muurdoorbraak", "staalconstructie", "stalen balk", "constructieberekening"],
     },
+    # "sanitair" alleen was te breed (64%); nu de concrete handeling.
     "badkamer": {
         "Complete badkamer": ["complete badkamer", "badkamer renovatie", "badkamerrenovatie", "totale badkamer"],
         "Tegelwerk": ["tegelwerk", "tegelzetter", "tegels zetten"],
         "Inloopdouche": ["inloopdouche", "walk-in"],
-        "Sanitair plaatsen": ["sanitair", "wastafel", "toiletruimte"],
+        "Sanitair plaatsen": ["sanitair plaats", "wastafel", "toiletruimte", "sanitair monter"],
+        "Toilet renoveren": ["toiletrenovatie", "toilet renov", "gastentoilet"],
         "Vloerverwarming": ["vloerverwarming"],
+        "Seniorenbadkamer": ["seniorenbadkamer", "levensloopbestendig", "drempelloos", "mindervalide"],
     },
+    # "Dakkapel plaatsen" (65%) en "op maat" (56%) eruit: het eerste is de
+    # categorie zelf, het tweede marketingtaal. Wat overblijft gaat over hóé.
     "dakkapel": {
-        "Dakkapel plaatsen": ["dakkapel"],
-        "Prefab dakkapel": ["prefab", "kant-en-klaar"],
-        "Dakkapel op maat": ["op maat", "maatwerk"],
-        "Vergunning regelen": ["vergunning", "omgevingsvergunning"],
-        "Isolatie en afwerking": ["isolatie", "afwerking binnenzijde"],
+        "Prefab, in één dag geplaatst": ["prefab", "geprefabriceerd", "in een dag", "in één dag", "binnen een dag"],
+        "Vergunning regelen": ["omgevingsvergunning", "vergunningaanvraag", "vergunningvrij", "vergunning verzorg"],
+        "Isolatie en binnenafwerking": ["isolatie", "binnenafwerking", "afwerking binnenzijde", "gestucte"],
+        "Dakkapel vervangen of renoveren": ["dakkapel vervang", "dakkapel renov", "bestaande dakkapel"],
+        "Kunststof afwerking": ["kunststof", "trespa", "keralit", "onderhoudsvrij"],
+        "Nokverhoging": ["nokverhoging", "kap verhogen"],
     },
+    # "Gietvloer woonhuis" (74%) eruit — dat is de categorie, niet een keuze.
     "gietvloer": {
-        "Gietvloer woonhuis": ["gietvloer", "giet vloer"],
-        "Betonlook vloer": ["betonlook", "beton cire", "beton-cire"],
-        "PU of epoxy": ["polyurethaan", " pu-", "epoxy"],
-        "Vloerverwarming geschikt": ["vloerverwarming"],
-        "Egaliseren en voorbereiding": ["egalis", "ondervloer", "zandcement"],
+        "Betonlook of beton ciré": ["betonlook", "beton cire", "beton-cire", "microcement"],
+        "PU of epoxy": ["polyurethaan", " pu-gietvloer", "epoxy"],
+        "Geschikt voor vloerverwarming": ["vloerverwarming"],
+        "Egaliseren en ondervloer": ["egalis", "ondervloer", "zandcement", "dekvloer"],
+        "Badkamer of natte ruimte": ["badkamer", "natte ruimte", "douchevloer"],
+        "Bedrijfs- of industrievloer": ["bedrijfsvloer", "industrievloer", "magazijnvloer"],
+        "Terrazzo": ["terrazzo"],
     },
 }
 
