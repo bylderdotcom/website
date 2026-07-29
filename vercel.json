@@ -223,11 +223,6 @@
       "permanent": true
     },
     {
-      "source": "/slaapkamer(.*)",
-      "destination": "/kopen/slaap-en-bedden/",
-      "permanent": true
-    },
-    {
       "source": "/bedden(.*)",
       "destination": "/kopen/slaap-en-bedden/",
       "permanent": true
