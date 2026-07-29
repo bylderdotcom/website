@@ -89,7 +89,7 @@
           <div class="auping-perk-num">3</div>
           <div><div class="auping-perk-t">&#127976; Gratis Hotel Haverkist</div><div class="auping-perk-d">Overnachting + ontbijt voor 2 in Den Bosch, t.w.v. &#8364;199. <strong>Vanaf &#8364;6.500 besteding.</strong></div></div>
         </div>
-        <div class="auping-loc">ALLEEN IN DE WINKEL TE VERZILVEREN &mdash; TOON JE KORTINGSCODE UIT JE BYLDER-ACCOUNT &middot; UITSLUITEND BIJ AUPING ROTTERDAM CENTRUM, DEN HAAG CENTRUM, ZOETERMEER &amp; LEIDSCHENDAM</div>
+        <div class="auping-loc">ALLEEN IN DE WINKEL TE VERZILVEREN &mdash; TOON JE PERSOONLIJKE CODE UIT JE BYLDER-ACCOUNT &middot; UITSLUITEND BIJ AUPING ROTTERDAM CENTRUM, DEN HAAG CENTRUM, ZOETERMEER &amp; LEIDSCHENDAM</div>
         <a class="auping-cta" href="/vouchers/auping/" onclick="window._sluitAupingPopup()">Bekijk alle Auping voordelen &#8594;</a>
         <button class="auping-dismiss" onclick="window._sluitAupingPopup();localStorage.setItem('aupingPopupDismissed','1')">Niet meer tonen</button>
       </div>
