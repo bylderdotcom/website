@@ -21,24 +21,40 @@ Daniel leest geen code. Een diff, een terminal-log of een bestandsnaam is voor h
 geen oplevering. Zijn oordeel gaat over wat een bezoeker ziet. Elke wijziging aan een
 publieke pagina is daarom pas "klaar" als hij hem kan bekíjken.
 
+**Previews staan standaard uit (besluit Daniel, 29-07-2026).** Elke wijziging bouwde twee
+keer — preview bij de PR, productie na de merge — en één build duurt een kwartier. Bij een
+reeks wijzigingen op een dag loopt productie daardoor uren achter. `scripts/vercel-ignore.sh`
+slaat preview-builds nu over.
+
+**Ontsnappingsluik:** een branch die met `preview/` begint bouwt wél een preview. Gebruik dat
+voor wijzigingen die Daniel eerst wil zíén — een nieuwe pagina, een andere sectievolgorde, een
+ander ontwerp. Voor tekstcorrecties, datawijzigingen en scripts is het overbodig.
+
 **Vaste volgorde bij elke inhoudelijke wijziging:**
-1. **Werk op een branch, nooit direct op `main`.** Rechtstreeks committen naar main
-   deployt naar productie zonder dat iemand het gezien heeft.
-2. **Push en open een PR.** Vercel bouwt automatisch een preview en zet de link in de PR.
-3. **Lever op met de preview-URL bovenaan**, niet met een lijst gewijzigde bestanden.
+1. **Werk op een branch, nooit direct op `main`.** De PR is het reviewmoment en de
+   ongedaan-maak-knop, ook zonder preview.
+2. **Weegt het visueel?** Dan `preview/<naam>` als branchnaam, en opleveren met de
+   preview-URL vóór de merge. Zo niet: gewone branchnaam, mergen, en daarna op
+   **productie** controleren.
+3. **Lever op met een URL bovenaan** — preview of productie — nooit met een lijst
+   gewijzigde bestanden.
 4. **Voeg screenshots toe** van de gewijzigde pagina's, twee formaten:
    - mobiel (390px breed) — dit is het doelapparaat voor het grootste deel van het verkeer
    - desktop (1440px breed) — hier zie je de koppenstructuur, tabellen en interne links
    Gebruik de browser-tools (`preview_start` → `navigate` → `resize_window` → `screenshot`).
 5. **Beschrijf in gewone taal wat er veranderd is** aan wat de bezoeker ziet. Geen
    bestandsnamen, geen functienamen, geen regelnummers.
-6. **Mergen pas na akkoord van Daniel.**
+6. **Mergen pas na akkoord van Daniel.** Dat geldt nog steeds — zonder preview des te meer,
+   want na de merge staat het live.
 
-**Let op de build-gate.** `scripts/vercel-ignore.sh` slaat de build over als er in de
-laatste commit alleen `*.md`, `*.py`, `scripts/`, `_scripts/`, `reports/`, `_audits/`
-of `.claude/` wijzigde. Dan is er géén preview. Meld dat expliciet in plaats van een
-link te beloven die niet bestaat — en commit gegenereerde HTML in dezelfde commit als
-het script dat hem maakte, anders bouwt Vercel niet.
+**Let op de build-gate.** Hetzelfde script slaat de build óók over als er in de laatste commit
+alleen `*.md`, `*.py`, `scripts/`, `_scripts/`, `reports/`, `_audits/` of `.claude/` wijzigde.
+Meld dat expliciet in plaats van een link te beloven die niet bestaat — en commit gegenereerde
+HTML in dezelfde commit als het script dat hem maakte, anders bouwt Vercel niet.
+
+**Builds staan in de rij.** Vercel bouwt er één tegelijk en één build duurt een kwartier. Merge
+je drie dingen achter elkaar, dan staat het derde er pas na drie kwartier op. Beloof geen "over
+een kwartier live" zonder `vercel ls website` te checken.
 
 ## Compliance (hard)
 - **Geen mass cold-email** om bedrijven te werven. Spamverbod (Tw 11.7) geldt B2B; ACM-boetes tot €900k. Wél: gratis listing → claim (pull), eerste touch via post/telefoon, e-mail pas ná opt-in.
