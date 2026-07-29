@@ -64,7 +64,9 @@ UA = "BylderBot/1.0 (+https://www.bylder.com/voor-vakbedrijven/)"
 SUBPAGINAS = ("/diensten", "/werkzaamheden", "/wat-wij-doen", "/over-ons", "/services")
 MAX_DIENSTEN = 6
 MIN_TEKST = 300          # minder tekst = parkeerpagina of JS-only site
-WERKERS = 8              # tegelijk, niet meer — dit zijn kleine servers
+WERKERS = 16             # tegelijk. Allemaal verschillende hosts, dus geen enkele
+                         # server krijgt meer dan één verzoek tegelijk; bij 8 duurt
+                         # de volledige sweep twintig uur, bij 16 ongeveer tien.
 
 # Per werksoort de termen die er letterlijk op een site staan. Bewust krap: liever
 # een dienst missen dan er een verzinnen. Alles kleingeletterd, accenten weg.
@@ -358,15 +360,24 @@ if HERSYNC:
     resultaten = json.load(open(RAPPORT, encoding="utf-8"))["resultaten"]
     print(f"Uit rapport gelezen: {len(resultaten)} bedrijven (niets opnieuw opgehaald).\n")
 else:
+    os.makedirs(os.path.dirname(RAPPORT), exist_ok=True)
+
+    def bewaar(rs):
+        # Tussentijds wegschrijven. Eerst gebeurde dat pas ná het hele vak: bij
+        # 2.897 stukadoors is dat twee uur werk dat verdampt als de machine in
+        # slaap valt. Nu verlies je hooguit de laatste 250.
+        json.dump({"vak": VAK, "aantal": len(rs), "resultaten": rs},
+                  open(RAPPORT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
     resultaten = []
     with ThreadPoolExecutor(max_workers=WERKERS) as pool:
         for i, r in enumerate(pool.map(verwerk, kandidaten), 1):
             resultaten.append(r)
+            if i % 250 == 0:
+                bewaar(resultaten)
             if i % 25 == 0:
                 print(f"  … {i}/{len(kandidaten)}", end="\r")
-    os.makedirs(os.path.dirname(RAPPORT), exist_ok=True)
-    json.dump({"vak": VAK, "aantal": len(resultaten), "resultaten": resultaten},
-              open(RAPPORT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    bewaar(resultaten)
 
 print(" " * 60, end="\r")
 bereikbaar = [r for r in resultaten if r["bereikbaar"]]
