@@ -4,32 +4,182 @@
     {
       "name": "evtrader",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "/Users/danielpaaij/Documents/GitHub/evtrader", "run", "dev", "--", "-p", "3000"],
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/danielpaaij/Documents/GitHub/evtrader",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3000"
+      ],
       "port": 3000
     },
     {
       "name": "doc-preview",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4666", "--directory", "/Users/danielpaaij/Downloads"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4666",
+        "--directory",
+        "/Users/danielpaaij/Downloads"
+      ],
       "port": 4666
+    },
+    {
+      "name": "investmemo",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4790",
+        "--directory",
+        "/Users/danielpaaij/Downloads/evtrader-investering"
+      ],
+      "port": 4790
+    },
+    {
+      "name": "memo-story",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4791",
+        "--directory",
+        "/Users/danielpaaij/Documents/GitHub/evtrader/public/investors/memo"
+      ],
+      "port": 4791
     },
     {
       "name": "og-templates",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4444"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4444"
+      ],
       "port": 4444
     },
     {
       "name": "website",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4555", "--directory", "/Users/danielpaaij/Documents/GitHub/website"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4555",
+        "--directory",
+        "/Users/danielpaaij/Documents/GitHub/website"
+      ],
       "port": 4555
     },
     {
       "name": "benned-next",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "/Users/danielpaaij/Documents/GitHub/benned", "run", "dev", "--", "-p", "3300"],
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/danielpaaij/Documents/GitHub/benned",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3300"
+      ],
       "port": 3300
+    },
+    {
+      "name": "eenmanszaak-ai",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/danielpaaij/Documents/GitHub/eenmanszaak-ai",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "4321"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "aupingstores",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/danielpaaij/Documents/GitHub/aupingstores",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3200"
+      ],
+      "port": 3200
+    },
+    {
+      "name": "bylder-app",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/danielpaaij/Documents/GitHub/app",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3100"
+      ],
+      "port": 3100
+    },
+    {
+      "name": "next-out",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4560",
+        "--directory",
+        "/Users/danielpaaij/Documents/GitHub/website/web/out"
+      ],
+      "port": 4560
+    },
+    {
+      "name": "mockup-scratchpad",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4667",
+        "--directory",
+        "/private/tmp/claude-501/-Users-danielpaaij-Documents-GitHub-website/23169fc1-b30b-424a-87a2-672a678d7727/scratchpad"
+      ],
+      "port": 4667
+    },
+    {
+      "name": "ev-rally",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/danielpaaij/Documents/GitHub/ev-rally",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3105"
+      ],
+      "port": 3105
+    },
+    {
+      "name": "bylder-web-next",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/danielpaaij/Documents/GitHub/website/web",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3450"
+      ],
+      "port": 3450
     }
   ]
 }
