@@ -118,16 +118,6 @@
       "permanent": true
     },
     {
-      "source": "/badkamer(.*)",
-      "destination": "/kopen/sanitair/",
-      "permanent": true
-    },
-    {
-      "source": "/badkamers(.*)",
-      "destination": "/kopen/sanitair/",
-      "permanent": true
-    },
-    {
       "source": "/gereedschap",
       "destination": "/kopen/",
       "permanent": true
@@ -180,11 +170,6 @@
     {
       "source": "/ramen(.*)",
       "destination": "/kopen/buitendeuren/",
-      "permanent": true
-    },
-    {
-      "source": "/dakkapel(.*)",
-      "destination": "/kopen/dakkapellen/",
       "permanent": true
     },
     {
