@@ -7,7 +7,7 @@
     "autobox"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "Zelden gebruikt om een auto in te zetten, bijna altijd als werkplaats en opslag — en de logische plek voor de laadpaal.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -53,5 +53,83 @@
   },
   "fouten": [
     "Laadpaal plannen zonder te controleren of de meterkast en de aansluiting het aankunnen."
+  ],
+  "pagina_pad": "/ruimtes/garage/",
+  "intro": "De garage waar een auto in staat is zeldzaam geworden. In de praktijk is het een werkplaats, een fietsenstalling en een opslagruimte — en sinds kort de logischste plek voor een laadpaal. Dat laatste is precies waar de meeste mensen tegen een grens aanlopen die niet in de garage zit maar in de meterkast.",
+  "secties": [
+    {
+      "kop": "De laadpaal is een meterkastvraag",
+      "alineas": [
+        "Een laadpunt vraagt een eigen groep en voldoende capaciteit op je aansluiting. Bij een standaard aansluiting van drie keer vijfentwintig ampère kan het krap worden zodra je ook inductie kookt en een warmtepomp hebt draaien.",
+        "Er zijn twee uitwegen. Load balancing laat de laadpaal terugregelen als de rest van het huis stroom vraagt; dat werkt goed en kost weinig. Verzwaren van de aansluiting is de andere route, maar dat vraagt een aanvraag bij de netbeheerder en die hebben op dit moment forse wachttijden.",
+        "Kijk dus eerst in de meterkast, dan pas naar laadpalen. Wie het andersom doet, heeft een paal aan de muur en geen groep om hem op aan te sluiten."
+      ]
+    },
+    {
+      "kop": "Ombouwen tot woonruimte raakt meer dan je denkt",
+      "alineas": [
+        "Een garage ombouwen tot kamer of kantoor is technisch overzichtelijk: isoleren, een vloer, een raam en verwarming. Juridisch is het minder overzichtelijk.",
+        "Bij veel woningen is de garage meegeteld als parkeerplaats in de parkeernorm van het bestemmingsplan. Verdwijnt die functie, dan verdwijnt de parkeerplaats, en dat kan een vergunningplichtige functiewijziging zijn. Gemeenten handhaven hier wisselend, maar het speelt zeker bij verkoop.",
+        "Praktisch punt: een garagevloer ligt vaak lager dan de rest van de woning en heeft geen vloerisolatie. Dat is de grootste kostenpost van de ombouw en de reden dat het duurder uitvalt dan mensen inschatten."
+      ]
+    },
+    {
+      "kop": "Als werkplaats: stroom, licht en de deur",
+      "alineas": [
+        "Voor gebruik als werkplaats zijn drie dingen bepalend en geen daarvan is de ruimte zelf. Voldoende stopcontacten op werkhoogte, licht dat van boven én van opzij komt, en een deur die je snel open hebt.",
+        "Een elektrische garagedeur is een luxe totdat je hem twintig keer per dag gebruikt. Reken bij vervanging op een eigen groep en op ruimte boven de deur voor de motor.",
+        "Ten slotte de brandveiligheid. Accu's van e-bikes en gereedschap horen niet in een woning te laden maar ook niet vlak naast brandbare opslag. Een vaste, vrijstaande laadplek in de garage is een kleine ingreep met een groot verschil."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Kan ik zomaar een laadpaal in mijn garage laten plaatsen?",
+      "a": "Technisch bijna altijd, maar het hangt af van je meterkast en je aansluiting. Een laadpunt heeft een eigen groep nodig, en samen met inductie en een warmtepomp kan een standaardaansluiting te krap worden. Load balancing lost dat vaak op; verzwaren van de aansluiting kan ook, maar heeft bij netbeheerders forse wachttijden. Laat eerst de meterkast beoordelen."
+    },
+    {
+      "v": "Mag ik mijn garage ombouwen tot kamer?",
+      "a": "Vaak wel, maar het is niet automatisch vergunningvrij. Als de garage in het bestemmingsplan meetelt als parkeerplaats, is het opheffen van die functie een wijziging waarvoor toestemming nodig kan zijn. Check dit bij de gemeente, ook omdat het bij verkoop terugkomt."
+    },
+    {
+      "v": "Wat kost het ombouwen van een garage?",
+      "a": "Het bedrag verschilt te sterk om te noemen, maar de kostenverdeling is voorspelbaar: de vloer is de grootste post. Een garagevloer ligt meestal lager en is niet geïsoleerd, dus er moet isolatie en een nieuwe vloeropbouw in. Daarna volgen isolatie van wanden en dak, en pas als laatste de afwerking."
+    },
+    {
+      "v": "Is een e-bike-accu laden in de garage veilig?",
+      "a": "Veiliger dan binnen, mits je het goed doet. Laad op een vaste plek, niet op een brandbare ondergrond, niet vlak naast opslag van brandbare spullen, en bij voorkeur niet 's nachts onbeheerd. Een eigen stopcontact op die plek in plaats van een verlengsnoer is de belangrijkste maatregel."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Laadpunt voor elektrische auto",
+      "waarom": "Vraagt een eigen groep; de meterkast bepaalt of het kan."
+    },
+    {
+      "type": "Elektrische garagedeur",
+      "waarom": "Eigen groep en ruimte boven de deur voor de motor."
+    },
+    {
+      "type": "Vloerisolatie",
+      "waarom": "De grootste kostenpost bij ombouwen tot verblijfsruimte."
+    },
+    {
+      "type": "Werkbankverlichting",
+      "waarom": "Licht van boven én opzij; één plafondlamp geeft schaduw op je werk."
+    },
+    {
+      "type": "Stellingkasten",
+      "waarom": "Verticaal opbergen is de enige manier om een garage bruikbaar te houden."
+    },
+    {
+      "type": "Vaste laadplek voor accu's",
+      "waarom": "Brandveiliger dan een verlengsnoer tussen de spullen."
+    }
+  ],
+  "meerwerk": [
+    "krachtstroom",
+    "stopcontacten",
+    "lichtpunten",
+    "loze-leidingen"
   ]
 }

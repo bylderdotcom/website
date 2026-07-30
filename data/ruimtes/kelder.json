@@ -7,7 +7,7 @@
     "wijnkelder"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "Zeldzaam in Nederlandse nieuwbouw en duur om achteraf te maken, maar de enige manier om vierkante meters toe te voegen zonder tuin of hoogte op te offeren.",
   "momenten": [
     "verbouwing"
@@ -48,5 +48,77 @@
   ],
   "fouten": [
     "Beginnen zonder grondwaterstand en bodemonderzoek."
+  ],
+  "pagina_pad": "/ruimtes/kelder/",
+  "intro": "Een kelder is de enige manier om vierkante meters toe te voegen zonder tuin of hoogte op te offeren. Het is ook de duurste en meest onvergeeflijke ingreep aan een woning: alles wat je aan waterdichting fout doet, komt jaren later terug en is dan nauwelijks nog te herstellen.",
+  "secties": [
+    {
+      "kop": "Waterdicht bouwen is een vak apart",
+      "alineas": [
+        "Er is een wezenlijk verschil tussen een droge kelder en een waterdichte kelder. Boven de grondwaterstand volstaat vaak een vochtwerende constructie met goede drainage. Onder de grondwaterstand bouw je in feite een betonnen bak die permanent onder druk staat.",
+        "Die tweede categorie vraagt een andere constructie, andere detaillering bij elke doorvoer, en een uitvoerder die dit vaker heeft gedaan. Een enkele slecht afgewerkte leidingdoorvoer is genoeg om het geheel te laten falen.",
+        "Begin daarom altijd met een bodemonderzoek en de actuele grondwaterstand. Dat bepaalt welke van de twee je bouwt, en dus het hele budget."
+      ]
+    },
+    {
+      "kop": "Zonder daglicht en ventilatie blijft het opslag",
+      "alineas": [
+        "Een kelder mag pas verblijfsruimte heten als er daglicht en ventilatie zijn. Dat is niet alleen een regel maar ook een praktische waarheid: een ruimte zonder daglicht wordt niet gebruikt, hoe mooi hij ook is afgewerkt.",
+        "De oplossingen zijn een lichtkoker, een lichtstraat in het maaiveld, of een verdiepte patio waardoor je een echt raam kunt plaatsen. Dat laatste is het duurst en werkt het best.",
+        "Ventilatie is de andere helft. Een kelder is koud, en koude lucht neemt minder vocht op — zonder mechanische afvoer sla je vocht op in de ruimte die je net droog hebt gemaakt."
+      ]
+    },
+    {
+      "kop": "Wanneer het de moeite waard is",
+      "alineas": [
+        "Onderkelderen loont vooral waar grond schaars en duur is en uitbreiden naar boven of opzij niet mag. In een rijtjeswoning met een kleine tuin in een dure stad kan het uit; in een ruime kavel waar een uitbouw mogelijk is bijna nooit.",
+        "Reken ook mee dat een kelder de verkoopwaarde minder verhoogt dan hetzelfde oppervlak op de begane grond. Kopers waarderen ondergrondse meters lager, zeker zonder daglicht.",
+        "En houd rekening met de overlast: onderkelderen van een bestaande woning betekent maandenlang graven en afvoeren, vaak met beperkte bereikbaarheid."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Heb ik een vergunning nodig voor een kelder?",
+      "a": "Vrijwel altijd. Onderkelderen is een constructieve ingreep die de fundering en soms die van de buren raakt. Er komt een constructeur aan te pas, meestal een bodemonderzoek, en bij een rijtjeswoning ook afstemming met de belendende panden."
+    },
+    {
+      "v": "Wat kost het verschil tussen een droge en een waterdichte kelder?",
+      "a": "Het verschil is groot genoeg om het hele project te bepalen, en het hangt volledig af van de grondwaterstand. Boven het grondwater volstaat vaak een vochtwerende opbouw met drainage; eronder bouw je een waterdichte betonnen constructie waarbij elke doorvoer een risicopunt is. Laat daarom eerst de grondwaterstand bepalen, vóór je een offerte aanvraagt."
+    },
+    {
+      "v": "Telt een kelder mee als woonoppervlak?",
+      "a": "Volgens de meetinstructie die makelaars gebruiken telt een kelder alleen mee als gebruiksoppervlakte wonen wanneer hij aan de eisen voor een verblijfsruimte voldoet — met daglicht, ventilatie en voldoende hoogte. Anders wordt hij als overige inpandige ruimte gerekend, en dat weegt bij taxatie aanzienlijk minder mee."
+    },
+    {
+      "v": "Kan ik een bestaande kruipruimte tot kelder verdiepen?",
+      "a": "Technisch kan het, maar het is een van de ingrijpendste verbouwingen die er zijn: de fundering moet worden onderheid of verdiept terwijl het huis erop staat. Dat is specialistisch werk met bijbehorende kosten en risico's, en het vraagt altijd een constructeur."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Waterdichte betonconstructie",
+      "waarom": "Onder de grondwaterstand geen keuze maar een noodzaak."
+    },
+    {
+      "type": "Drainage en pompput",
+      "waarom": "De tweede verdedigingslinie; ook een waterdichte kelder heeft er baat bij."
+    },
+    {
+      "type": "Lichtkoker of lichtstraat",
+      "waarom": "Zonder daglicht blijft het opslag, ongeacht de afwerking."
+    },
+    {
+      "type": "Mechanische ventilatie",
+      "waarom": "Koude lucht draagt weinig vocht af; natuurlijke ventilatie volstaat hier niet."
+    },
+    {
+      "type": "Vochtwerende afwerking",
+      "waarom": "Alleen zinvol als het water er niet in kán; anders verplaats je het probleem."
+    },
+    {
+      "type": "Trap naar de kelder",
+      "waarom": "Kost ruimte op de begane grond — dezelfde afweging als bij een zoldertrap."
+    }
   ]
 }
