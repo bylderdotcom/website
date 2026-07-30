@@ -1,0 +1,52 @@
+{
+  "slug": "berging",
+  "naam": "Berging",
+  "synoniemen": [
+    "schuur binnen",
+    "bergruimte",
+    "inpandige berging"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "In nieuwbouw vaak de ruimte waar de installatie staat én waar de fietsen heen moeten. Die twee gaan slecht samen.",
+  "momenten": [
+    "nieuwbouw-oplevering"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Fietsen of installatie — of allebei?",
+      "waarom": "Een inpandige berging met warmtepomp, wasmachine en twee fietsen is in de praktijk te klein. Kies wat er echt in moet vóór de oplevering.",
+      "opties": [
+        "Fietsen naar buitenberging",
+        "Installatie naar technische ruimte",
+        "Beide accepteren en compact inrichten"
+      ]
+    },
+    {
+      "vraag": "Stroom en verlichting",
+      "waarom": "Een berging zonder stopcontact betekent geen e-bike laden en geen vriezer.",
+      "opties": [
+        "Extra groep voor vriezer of e-bike",
+        "Bewegingsmelder-verlichting",
+        "Standaard laten"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "timmerman"
+  ],
+  "productcategorieen": [
+    "Kasten",
+    "Verlichting"
+  ],
+  "verwante_ruimtes": [
+    "bijkeuken",
+    "schuur",
+    "technische-ruimte",
+    "garage"
+  ],
+  "fouten": [
+    "Geen stopcontact voor het laden van een e-bike-accu — brandveilig laden vraagt een vaste plek."
+  ]
+}

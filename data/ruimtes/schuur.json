@@ -1,0 +1,57 @@
+{
+  "slug": "schuur",
+  "naam": "Schuur",
+  "synoniemen": [
+    "tuinhuis",
+    "buitenberging",
+    "blokhut"
+  ],
+  "type": "buiten",
+  "status": "node",
+  "kern": "Het bouwwerk waar de meeste mensen zonder nadenken aan beginnen, en waar de vergunningregels het strengst zijn ten opzichte van de erfgrens.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Vergunningvrij of niet?",
+      "waarom": "Oppervlakte, hoogte en de ligging in het achtererfgebied bepalen het. Bij twijfel is een vooroverleg met de gemeente goedkoper dan afbreken.",
+      "opties": [
+        "Binnen de vergunningvrije maten",
+        "Vergunning aanvragen",
+        "Verplaatsbaar model zonder fundering"
+      ]
+    },
+    {
+      "vraag": "Stroom naartoe of niet?",
+      "waarom": "Een schuur zonder stroom is opslag; met stroom is het een werkplaats en een plek om accu's te laden. De sleuf graven kost meer dan de kabel.",
+      "opties": [
+        "Aparte groep met grondkabel",
+        "Zonnepaneel met accu",
+        "Geen stroom"
+      ]
+    }
+  ],
+  "vakken": [
+    "aannemer",
+    "elektricien",
+    "dakdekker"
+  ],
+  "vergunning": {
+    "nodig": "soms",
+    "toelichting": "Een bijgebouw in het achtererfgebied is binnen bepaalde maten vergunningvrij; daarbuiten niet. Het bestemmingsplan kan aanvullende eisen stellen.",
+    "pad": "/bouwvergunning/"
+  },
+  "paden": [
+    "/bijgebouw/"
+  ],
+  "verwante_ruimtes": [
+    "tuin",
+    "berging",
+    "garage"
+  ],
+  "fouten": [
+    "Bouwen tot op de erfgrens zonder de regels of de buren te raadplegen."
+  ]
+}

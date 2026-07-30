@@ -1,0 +1,56 @@
+{
+  "slug": "dakterras",
+  "naam": "Dakterras",
+  "synoniemen": [
+    "daktuin",
+    "terras op het dak"
+  ],
+  "type": "buiten",
+  "status": "node",
+  "kern": "Vierkante meters buitenruimte op een plek die er al is, maar constructief en juridisch het meest veeleisende dat je aan een woning kunt toevoegen.",
+  "momenten": [
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Draagt het dak het?",
+      "waarom": "Een plat dak is berekend op sneeuw en onderhoud, niet op mensen, meubels en bakken. Dit is altijd een constructieve vraag.",
+      "opties": [
+        "Constructieve berekening laten maken",
+        "Lichte inrichting",
+        "Dakconstructie verzwaren"
+      ]
+    },
+    {
+      "vraag": "Hoe blijft het waterdicht met een terras erop?",
+      "waarom": "Elke bevestiging door de dakbedekking is een potentieel lek. Ballastsystemen en tegeldragers zijn er juist om dat te voorkomen.",
+      "opties": [
+        "Tegeldragers op de bestaande bedekking",
+        "Nieuwe dakbedekking met terraslaag",
+        "Losliggende houten vlonder"
+      ]
+    }
+  ],
+  "vakken": [
+    "dakdekker",
+    "aannemer",
+    "isolatiebedrijf"
+  ],
+  "vergunning": {
+    "nodig": "ja",
+    "toelichting": "Een dakterras is vrijwel altijd vergunningplichtig vanwege constructie, veiligheid en het uitzicht op buren. Bij een VvE is bovendien toestemming nodig.",
+    "pad": "/bouwvergunning/"
+  },
+  "productcategorieen": [
+    "Tuinmeubelen",
+    "Groen dak"
+  ],
+  "verwante_ruimtes": [
+    "balkon",
+    "zolder"
+  ],
+  "fouten": [
+    "Beginnen zonder constructieve berekening.",
+    "Bij een VvE beginnen zonder toestemming."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "meterkast",
+  "naam": "Meterkast",
+  "synoniemen": [
+    "groepenkast",
+    "verdeelkast",
+    "elektrakast"
+  ],
+  "type": "technisch",
+  "status": "node",
+  "kern": "Twintig jaar geleden een kastje met zes groepen; nu het knelpunt van elke verduurzaming. Laadpaal, zonnepanelen, warmtepomp en inductie vragen allemaal ruimte en capaciteit die er vaak niet is.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verduurzaming"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Hoeveel groepen zijn er vrij?",
+      "waarom": "Elke grote toevoeging vraagt een eigen groep. Zit de kast vol, dan is uitbreiden of vervangen de eerste kostenpost van elk verduurzamingsplan.",
+      "opties": [
+        "Groepenkast uitbreiden",
+        "Vervangen door een grotere",
+        "Verzwaring van de aansluiting aanvragen"
+      ]
+    },
+    {
+      "vraag": "Is de aansluitwaarde toereikend?",
+      "waarom": "Inductie, warmtepomp en een laadpaal tegelijk kunnen de standaard aansluiting overschrijden. Verzwaren vraagt een aanvraag bij de netbeheerder en heeft levertijd.",
+      "opties": [
+        "Aansluiting verzwaren",
+        "Load balancing op de laadpaal",
+        "Gebruik spreiden"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien"
+  ],
+  "verwante_ruimtes": [
+    "hal",
+    "technische-ruimte",
+    "garage"
+  ],
+  "fouten": [
+    "Een laadpaal bestellen voordat iemand naar de meterkast heeft gekeken.",
+    "Vergeten dat verzwaren van de aansluiting maanden levertijd kan hebben."
+  ]
+}

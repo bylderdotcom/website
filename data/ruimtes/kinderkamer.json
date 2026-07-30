@@ -1,0 +1,50 @@
+{
+  "slug": "kinderkamer",
+  "naam": "Kinderkamer",
+  "synoniemen": [
+    "babykamer",
+    "kinderslaapkamer"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "Een slaapkamer met andere eisen: veiligheid, verduistering en een indeling die drie keer verandert voordat het kind achttien is.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Hoe lang moet deze inrichting mee?",
+      "waarom": "Een babykamer en een tienerkamer vragen tegengestelde dingen. Kies waar je op inricht, of kies bewust voor wat meegroeit.",
+      "opties": [
+        "Inrichten op nu",
+        "Meegroeimeubels",
+        "Casco houden en later invullen"
+      ]
+    },
+    {
+      "vraag": "Verduistering?",
+      "waarom": "Kleine kinderen slapen slechter bij licht; in de zomer is het hier het langst licht. Dit is de meest gemaakte aanpassing ná de oplevering.",
+      "opties": [
+        "Verduisterend rolgordijn",
+        "Cassette-rolgordijn tegen lichtranden",
+        "Buitenzonwering"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "Raamdecoratie",
+    "Meubelen"
+  ],
+  "verwante_ruimtes": [
+    "slaapkamer"
+  ],
+  "fouten": [
+    "Stopcontacten op kindhoogte zonder kinderbeveiliging.",
+    "Verduistering met lichtranden langs de zijkanten — dan werkt het niet."
+  ]
+}

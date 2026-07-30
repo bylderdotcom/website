@@ -1,0 +1,52 @@
+{
+  "slug": "technische-ruimte",
+  "naam": "Technische ruimte",
+  "synoniemen": [
+    "installatieruimte",
+    "cv-ruimte",
+    "warmtepompruimte"
+  ],
+  "type": "technisch",
+  "status": "node",
+  "kern": "In gasloze nieuwbouw de nieuwe hoeksteen van het huis: warmtepomp, boilervat, ventilatie-unit en omvormer staan hier bij elkaar. Weinig mensen weten dat deze ruimte bestaat tot er iets piept.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verduurzaming"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Staat alles bij elkaar, en kan een monteur erbij?",
+      "waarom": "Fabrikanten schrijven vrije ruimte rondom apparatuur voor. Een dichtgebouwde installatie is niet te onderhouden en dat merk je pas bij de eerste storing.",
+      "opties": [
+        "Vrije servicezone aanhouden",
+        "Afneembare panelen",
+        "Installatie verplaatsen naar zolder"
+      ]
+    },
+    {
+      "vraag": "Hoeveel geluid geeft het, en waar grenst het aan?",
+      "waarom": "Een warmtepomp-binnenunit maakt continu geluid. Grenst deze ruimte aan een slaapkamer, dan is geluidsisolatie geen luxe.",
+      "opties": [
+        "Geluidsisolerende wandopbouw",
+        "Andere plek kiezen",
+        "Accepteren"
+      ]
+    }
+  ],
+  "vakken": [
+    "warmtepompinstallateur",
+    "ventilatiebedrijf",
+    "elektricien",
+    "loodgieter"
+  ],
+  "verwante_ruimtes": [
+    "bijkeuken",
+    "berging",
+    "zolder",
+    "meterkast"
+  ],
+  "fouten": [
+    "De installatie dichttimmeren met kasten waardoor onderhoud onmogelijk wordt.",
+    "Grenzend aan een slaapkamer plaatsen zonder geluidsmaatregelen."
+  ]
+}

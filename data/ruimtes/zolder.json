@@ -1,0 +1,71 @@
+{
+  "slug": "zolder",
+  "naam": "Zolder",
+  "synoniemen": ["vliering", "zolderverdieping", "zolderkamer", "attic", "bovenverdieping"],
+  "type": "binnen",
+  "status": "pagina",
+  "kern": "De goedkoopste vierkante meters die je al bezit. Een zolder verbouwen tot slaap- of werkkamer kost een fractie van aanbouwen, maar staat of valt bij drie dingen die je niet ziet: vloerbelasting, trap en daglicht.",
+  "momenten": ["nieuwbouw-oplevering", "verbouwing", "verduurzaming"],
+  "beslissingen": [
+    {
+      "vraag": "Wordt het opslag of een verblijfsruimte?",
+      "waarom": "Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.",
+      "opties": ["Bergzolder houden", "Slaapkamer", "Werkkamer of hobbyruimte", "Complete extra woonlaag met badkamer"]
+    },
+    {
+      "vraag": "Draagt de vloer wat je erop wilt zetten?",
+      "waarom": "Een zoldervloer in nieuwbouw is vaak berekend op opslag, niet op een bed met twee mensen, een kast en een bureau. Dat verschil is constructief en niet met een dikkere vloerplaat op te lossen.",
+      "opties": ["Constructeur laten rekenen vóór ontwerp", "Belasting spreiden met een verdeelvloer", "Balklaag verzwaren"]
+    },
+    {
+      "vraag": "Hoe kom je er straks?",
+      "waarom": "Een vlizotrap is geen trap voor een verblijfsruimte. Een vaste trap kost ruimte op de verdieping eronder — meestal een stuk van een slaapkamer of de overloop. Dat is de verborgen prijs van een zolderkamer.",
+      "opties": ["Vaste trap in de overloop", "Vaste trap ten koste van een slaapkamer", "Vlizotrap houden (dan blijft het opslag)"]
+    },
+    {
+      "vraag": "Waar komt het daglicht vandaan?",
+      "waarom": "Een verblijfsruimte heeft daglicht en ventilatie nodig. Een dakraam is het goedkoopst, een dakkapel geeft naast licht ook stahoogte en vloeroppervlak — dat verschil is groter dan de prijs suggereert.",
+      "opties": ["Dakraam", "Dakkapel", "Gevelkozijn in de kopgevel", "Nokverhoging"]
+    },
+    {
+      "vraag": "Isoleer je nu of later?",
+      "waarom": "Onder een dak is het in de zomer het warmst en in de winter het koudst van het hele huis. Isoleren tijdens de verbouwing kost een fractie van isoleren daarna, omdat de afwerking er dan al zit.",
+      "opties": ["Dakisolatie aan de binnenzijde", "Isoleren bij dakvervanging aan de buitenzijde", "Alleen vloerisolatie tegen geluid"]
+    }
+  ],
+  "vakken": ["dakkapel", "timmerman", "isolatiebedrijf", "elektricien", "stukadoor", "aannemer"],
+  "vergunning": {
+    "nodig": "soms",
+    "toelichting": "Binnen de bestaande omhulling verbouwen is meestal vergunningvrij. Zodra je het dakvlak doorbreekt verandert dat: een dakkapel aan de achterkant is vaak vergunningvrij binnen strikte maatvoering, aan de voorkant vrijwel nooit. Nokverhoging is een wijziging van het bouwvolume en is dat dus wel. Controleer altijd het bestemmingsplan, want gemeenten verschillen.",
+    "pad": "/bouwvergunning/"
+  },
+  "kosten_paden": ["/renovatiekosten/dakkapel/"],
+  "productcategorieen": ["PVC vloer", "Verlichting", "Kasten", "Raamdecoratie"],
+  "fouten": [
+    "De vloerbelasting pas laten narekenen als het ontwerp al klaar is. Dan blijkt de trap ergens anders te moeten en verandert de hele indeling.",
+    "Een dakkapel plaatsen zonder de ventilatie mee te nemen. Een geïsoleerde zolder zonder afvoer van vocht levert condens tegen de dakplaten op, en dat zie je pas als de schimmel er staat.",
+    "Vergeten dat een vaste trap ruimte kost op de verdieping eronder. Zolderkamer erbij, slaapkamer kleiner.",
+    "Stopcontacten en datapunten te laat bedenken. Op een zolder loopt alles in het zicht als de afwerking er al zit.",
+    "Denken dat een vlizotrap volstaat voor een slaapkamer. Voor een verblijfsruimte gelden eisen aan de trap en aan de vluchtroute."
+  ],
+  "vragen": [
+    {
+      "v": "Mag ik mijn zolder zomaar tot slaapkamer verbouwen?",
+      "a": "Binnen de bestaande omhulling meestal wel zonder vergunning, maar een slaapkamer is een verblijfsruimte en die moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en een veilige vluchtroute. Breek je het dak open voor een dakkapel of nokverhoging, dan komt daar een vergunningvraag bij. Controleer ook het bestemmingsplan: gemeenten verschillen sterk."
+    },
+    {
+      "v": "Is mijn zoldervloer sterk genoeg voor een slaapkamer?",
+      "a": "Dat kun je niet aannemen. Veel zoldervloeren zijn berekend op opslag en niet op de permanente belasting van een bed, kasten en mensen. Laat het narekenen door een constructeur vóórdat je het ontwerp maakt — het antwoord bepaalt of de balklaag verzwaard moet worden, en dat verandert de hele planning."
+    },
+    {
+      "v": "Dakraam of dakkapel — wat is verstandiger?",
+      "a": "Een dakraam is goedkoper en geeft licht. Een dakkapel geeft licht én stahoogte én bruikbaar vloeroppervlak, want onder een schuin dak is de ruimte langs de randen praktisch onbruikbaar. Als je de zolder als verblijfsruimte gaat gebruiken, is dat verschil in bruikbare meters vaak doorslaggevend."
+    },
+    {
+      "v": "Hoeveel stahoogte heb ik minimaal nodig?",
+      "a": "Voor een verblijfsruimte gelden minimumeisen aan de vrije hoogte boven een deel van het vloeroppervlak. Onder een schuine kap telt alleen het deel mee waar je rechtop kunt staan. Meet dat oppervlak vóór je plannen maakt — het is bijna altijd kleiner dan de plattegrond doet vermoeden."
+    }
+  ],
+  "verwante_ruimtes": ["overloop", "slaapkamer", "technische-ruimte"],
+  "paden": ["/dakkapel/", "/bouwvergunning/"]
+}

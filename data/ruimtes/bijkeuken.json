@@ -1,0 +1,71 @@
+{
+  "slug": "bijkeuken",
+  "naam": "Bijkeuken",
+  "synoniemen": ["washok", "wasruimte", "corridor", "achterkeuken", "utility", "bijkeuken/berging"],
+  "type": "binnen",
+  "status": "pagina",
+  "kern": "De ruimte waar alles heen gaat wat je niet wilt zien: wasmachine, droger, technische installatie, boodschappen. In nieuwbouw is het vaak de laatste ruimte waar over nagedacht wordt, en de eerste waar het misgaat — omdat afvoer, ventilatie en stroom er alle drie samenkomen.",
+  "momenten": ["nieuwbouw-oplevering", "verbouwing"],
+  "beslissingen": [
+    {
+      "vraag": "Komt de wasmachine hier of in de badkamer?",
+      "waarom": "Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.",
+      "opties": ["Bijkeuken", "Badkamer", "Zolder (let op vloerbelasting en trillingen)", "Kelder"]
+    },
+    {
+      "vraag": "Waar staat de warmtepomp of de technische installatie?",
+      "waarom": "In nieuwbouw staat de binnenunit vaak in de bijkeuken. Die maakt geluid, heeft vrije ruimte rondom nodig voor onderhoud en warmt de ruimte op. Zet je er ook de droger naast, dan wordt het een warme, vochtige ruimte — precies wat je niet wilt.",
+      "opties": ["Aparte technische ruimte", "In de bijkeuken met extra ventilatie", "Op zolder"]
+    },
+    {
+      "vraag": "Condensdroger of warmtepompdroger?",
+      "waarom": "Een condensdroger voert warmte en vocht af aan de ruimte zelf. In een kleine bijkeuken zonder goede ventilatie leidt dat tot condens op koude oppervlakken. Een warmtepompdroger is zuiniger en geeft minder warmte af, maar droogt langzamer.",
+      "opties": ["Warmtepompdroger", "Condensdroger met mechanische afzuiging", "Afvoerdroger met gevelrooster"]
+    },
+    {
+      "vraag": "Hoeveel kastruimte, en hoe diep?",
+      "waarom": "Een bijkeuken van vier vierkante meter met kasten aan twee wanden is onbruikbaar: je kunt de deuren niet open. Bepaal eerst de looproute, dan de kasten.",
+      "opties": ["Eén wand hoge kasten", "Open stellingen", "Wasmachinekast met werkblad erover", "Inbouw rondom de installatie"]
+    },
+    {
+      "vraag": "Welke vloer?",
+      "waarom": "Hier komt water, modder en zwaar transport. Een vloer die in de woonkamer prachtig is, is hier een verkeerde keuze. Let op de overgang naar de aangrenzende ruimte en op een waterbestendige plint.",
+      "opties": ["Tegels", "PVC", "Gietvloer", "Beton met coating"]
+    }
+  ],
+  "vakken": ["loodgieter", "elektricien", "ventilatiebedrijf", "warmtepompinstallateur", "gietvloer", "stukadoor"],
+  "vergunning": {
+    "nodig": "nee",
+    "toelichting": "Inrichten en installeren binnen een bestaande ruimte is vergunningvrij. Alleen als je de bijkeuken maakt door aan te bouwen of een dragende muur weg te halen, komt er een vergunningvraag bij.",
+    "pad": "/bouwvergunning/"
+  },
+  "kosten_paden": ["/renovatiekosten/keuken/"],
+  "productcategorieen": ["Kasten", "PVC vloer", "Verlichting", "Deuren"],
+  "fouten": [
+    "Eén enkele groep voor wasmachine en droger. Twee apparaten met een verwarmingselement op één groep is vragen om een uitgeschakelde aardlekschakelaar op zondagochtend.",
+    "Geen afvoer in de vloer. Een lekkende wasmachine in een ruimte zonder vloerput betekent water in de aangrenzende woonkamer.",
+    "De ventilatie vergeten. Was drogen en een condensdroger produceren liters vocht per week; zonder afvoer belandt dat in de wanden.",
+    "De deur naar binnen laten draaien in een kleine ruimte. Dat kost precies de meter die je nodig hebt om een wasmand neer te zetten.",
+    "Vergeten dat de binnenunit van de warmtepomp vrije ruimte nodig heeft voor onderhoud. Een monteur die er niet bij kan, kan er ook niet aan werken."
+  ],
+  "vragen": [
+    {
+      "v": "Wat heb ik nodig in een bijkeuken met wasmachine en droger?",
+      "a": "Een koudwateraansluiting, een afvoer op de juiste hoogte, bij voorkeur een vloerput of waterdichte vloerafwerking, mechanische ventilatie of een te openen raam, en genoeg geaarde groepen. Reken erop dat wasmachine en droger niet op dezelfde groep horen: beide trekken bij het verwarmen veel stroom tegelijk."
+    },
+    {
+      "v": "Mag de wasmachine in de badkamer?",
+      "a": "Dat mag, maar er gelden regels voor welke elektrische aansluitingen op welke afstand van bad en douche zijn toegestaan. Praktisch bezwaar: een badkamer is al een vochtige ruimte, en een wasopstelling voegt daar flink aan toe. Als er een bijkeuken is, is dat vrijwel altijd de betere plek."
+    },
+    {
+      "v": "Kan de warmtepomp-binnenunit in de bijkeuken?",
+      "a": "Meestal wel, en in nieuwbouw is dat de standaardplek. Houd rekening met drie dingen: hij maakt hoorbaar geluid, hij heeft vrije ruimte rondom nodig voor service, en hij geeft warmte af. Combineer je hem met een condensdroger in een kleine ruimte zonder ventilatie, dan wordt het er warm en vochtig."
+    },
+    {
+      "v": "Welke vloer is het handigst in een bijkeuken?",
+      "a": "Een vloer die tegen water kan en zwaar transport verdraagt: tegels, PVC of een gietvloer. Belangrijker dan het materiaal is de detaillering — een waterbestendige plint en een doordachte overgang naar de aangrenzende ruimte voorkomen dat een lekkage zich verspreidt."
+    }
+  ],
+  "verwante_ruimtes": ["keuken", "technische-ruimte", "berging"],
+  "paden": ["/bouwvergunning/"]
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "overloop",
+  "naam": "Overloop",
+  "synoniemen": [
+    "gang boven",
+    "portaal boven",
+    "trapportaal"
+  ],
+  "type": "verkeersruimte",
+  "status": "node",
+  "kern": "Verloren vierkante meters die zelden benut worden, terwijl hier vaak de meest praktische opbergruimte of werkplek van de woning past.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Kan hier een kast of werkplek?",
+      "waarom": "Een overloop van vier vierkante meter is vaak breed genoeg voor een ondiepe kastenwand zonder dat de doorloop in het gedrang komt.",
+      "opties": [
+        "Ondiepe kastenwand",
+        "Werkplek onder het raam",
+        "Open laten"
+      ]
+    },
+    {
+      "vraag": "Waar komt de trap naar zolder?",
+      "waarom": "Een vaste zoldertrap kost hier de meeste ruimte, en die keuze bepaalt of de overloop nog bruikbaar blijft.",
+      "opties": [
+        "Vaste trap op de overloop",
+        "Trap in een slaapkamer",
+        "Vlizotrap houden"
+      ]
+    }
+  ],
+  "vakken": [
+    "timmerman",
+    "elektricien",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "Kasten",
+    "Verlichting",
+    "Trapbekleding"
+  ],
+  "verwante_ruimtes": [
+    "zolder",
+    "slaapkamer",
+    "hal"
+  ],
+  "fouten": [
+    "Vergeten dat een zoldertrap ruimte kost die van de overloop of een slaapkamer afgaat."
+  ]
+}

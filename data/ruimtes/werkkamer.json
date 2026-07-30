@@ -1,0 +1,64 @@
+{
+  "slug": "werkkamer",
+  "naam": "Werkkamer",
+  "synoniemen": [
+    "thuiskantoor",
+    "studeerkamer",
+    "kantoor aan huis"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "Sinds thuiswerken normaal werd de meest gevraagde extra ruimte, en de eenvoudigste om verkeerd in te richten: te weinig daglicht, verkeerde geluidsisolatie en een videobeeld met een raam pal achter je.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waar staat het bureau ten opzichte van het raam?",
+      "waarom": "Een raam achter je maakt elk videogesprek een silhouet; een raam recht voor je geeft schittering. Haaks op het raam is bijna altijd het antwoord.",
+      "opties": [
+        "Bureau haaks op het raam",
+        "Verlichting bijplaatsen",
+        "Verduistering"
+      ]
+    },
+    {
+      "vraag": "Hoeveel geluidsisolatie is nodig?",
+      "waarom": "Bellen in een kamer naast de woonkamer of slaapkamer vraagt meer dan een gewone binnendeur. Dit is met een zwaardere deur en naaddichting eenvoudig op te lossen — maar niet achteraf.",
+      "opties": [
+        "Zwaardere deur met dichting",
+        "Isolatie in de scheidingswand",
+        "Andere ruimte kiezen"
+      ]
+    },
+    {
+      "vraag": "Netwerk: wifi of kabel?",
+      "waarom": "Een loze leiding naar de werkkamer is bij de oplevering een kleinigheid en later een kabel langs de plint.",
+      "opties": [
+        "Bekabeld netwerkpunt",
+        "Loze leiding voor later",
+        "Wifi"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "stukadoor",
+    "timmerman"
+  ],
+  "productcategorieen": [
+    "Verlichting",
+    "Kasten",
+    "Raamdecoratie"
+  ],
+  "verwante_ruimtes": [
+    "bijkamer",
+    "zolder",
+    "overloop"
+  ],
+  "fouten": [
+    "Videobellen met het raam in de rug.",
+    "Geen bekabeld netwerkpunt in de kamer waar je elke dag werkt."
+  ]
+}

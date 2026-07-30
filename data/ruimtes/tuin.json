@@ -1,0 +1,67 @@
+{
+  "slug": "tuin",
+  "naam": "Tuin",
+  "synoniemen": [
+    "achtertuin",
+    "voortuin",
+    "buitenruimte"
+  ],
+  "type": "buiten",
+  "status": "node",
+  "kern": "Bij nieuwbouw meestal een zandvlakte met een schutting, en de enige ruimte waar de eerste beslissing — bestrating, grondverbetering en afwatering — bepaalt wat er de komende twintig jaar mogelijk is.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waar gaat het regenwater heen?",
+      "waarom": "Nieuwbouwgrond is vaak verdicht door bouwverkeer. Zonder afwatering en grondverbetering blijft water staan, ongeacht wat je erop legt.",
+      "opties": [
+        "Grondverbetering vóór aanleg",
+        "Infiltratiekratten",
+        "Afschot naar een lager punt"
+      ]
+    },
+    {
+      "vraag": "Hoeveel verharding, en waarmee?",
+      "waarom": "Verharding bepaalt onderhoud, hittestress en waterafvoer. Gemeenten stellen hier steeds vaker eisen aan.",
+      "opties": [
+        "Terras met halfverharding",
+        "Volledig bestraat",
+        "Zo veel mogelijk groen"
+      ]
+    },
+    {
+      "vraag": "Buitenkraan, stroom en verlichting?",
+      "waarom": "Deze drie zijn bij de oplevering een kleinigheid en achteraf graafwerk door je nieuwe tuin.",
+      "opties": [
+        "Buitenkraan als meerwerk",
+        "Buitenstopcontact en loze leiding",
+        "Niets"
+      ]
+    }
+  ],
+  "vakken": [
+    "aannemer",
+    "elektricien",
+    "loodgieter"
+  ],
+  "productcategorieen": [
+    "Tuinmeubelen",
+    "Groen dak",
+    "Verlichting"
+  ],
+  "verwante_ruimtes": [
+    "schuur",
+    "balkon",
+    "uitbouw"
+  ],
+  "paden": [
+    "/tuin-aanleggen/"
+  ],
+  "fouten": [
+    "Bestraten op verdichte bouwgrond zonder grondverbetering — dan verzakt het binnen twee jaar.",
+    "Geen loze leiding voor tuinverlichting terwijl de tuin nog open ligt."
+  ]
+}
