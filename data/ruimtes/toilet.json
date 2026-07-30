@@ -1,0 +1,55 @@
+{
+  "slug": "toilet",
+  "naam": "Toilet",
+  "synoniemen": [
+    "wc",
+    "gastentoilet",
+    "benedentoilet"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "De kleinste ruimte met de meeste bezoekers. In nieuwbouw standaard uitgevoerd, en de goedkoopste plek om een woning duurder te laten aanvoelen.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Hangend of staand toilet?",
+      "waarom": "Hangend oogt rustiger en maakt schoonmaken eenvoudiger, maar vraagt een inbouwreservoir in een voorzetwand — dat kost centimeters die je in een klein toilet niet hebt.",
+      "opties": [
+        "Hangend met inbouwreservoir",
+        "Staand toilet",
+        "Verhoogd toilet"
+      ]
+    },
+    {
+      "vraag": "Ventilatie en geluid",
+      "waarom": "Een toilet aan de woonkamer vraagt aandacht voor geluid door de wand en voor afzuiging die niet naar de hal blaast.",
+      "opties": [
+        "Extra afzuigpunt",
+        "Geluidsisolerende wandopbouw",
+        "Deur met dichte aansluiting"
+      ]
+    }
+  ],
+  "vakken": [
+    "loodgieter",
+    "badkamer",
+    "ventilatiebedrijf",
+    "stukadoor"
+  ],
+  "productcategorieen": [
+    "Sanitair",
+    "Wandtegels"
+  ],
+  "verwante_ruimtes": [
+    "badkamer",
+    "tweede-badkamer",
+    "hal"
+  ],
+  "fouten": [
+    "Fonteintje kiezen dat de deur blokkeert.",
+    "Geen afzuiging in een toilet zonder raam."
+  ]
+}

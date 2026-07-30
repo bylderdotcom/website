@@ -1,0 +1,72 @@
+{
+  "slug": "keuken",
+  "naam": "Keuken",
+  "synoniemen": [
+    "kookruimte",
+    "open keuken",
+    "keukenblok"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "De duurste ruimte per vierkante meter en de meest ondoorzichtige prijsvorming van het hele huis. Showroomkortingen zijn geen kortingen maar een prijsstrategie.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Casco opleveren of via de aannemer?",
+      "waarom": "Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.",
+      "opties": [
+        "Casco met eigen keukenleverancier",
+        "Standaardkeuken via de aannemer",
+        "Meerwerk-keuken van de projectleverancier"
+      ]
+    },
+    {
+      "vraag": "Waar liggen de aansluitpunten?",
+      "waarom": "Water, afvoer, elektra en de afzuigkap bepalen de indeling meer dan de plattegrond. Verschuiven na oplevering betekent hakken in de dekvloer.",
+      "opties": [
+        "Indeling vóór oplevering vastleggen",
+        "Aansluitpunten ruim aanleggen als meerwerk",
+        "Kookeiland met vloerdoorvoer"
+      ]
+    },
+    {
+      "vraag": "Afzuiging: recirculatie of naar buiten?",
+      "waarom": "Afvoer naar buiten werkt beter maar vraagt een gevel- of dakdoorvoer, en dat botst met een gebalanceerd ventilatiesysteem in nieuwbouw.",
+      "opties": [
+        "Recirculatie met koolstoffilter",
+        "Afvoer naar buiten",
+        "Plafondunit"
+      ]
+    }
+  ],
+  "vakken": [
+    "loodgieter",
+    "elektricien",
+    "stukadoor",
+    "ventilatiebedrijf",
+    "aannemer"
+  ],
+  "productcategorieen": [
+    "Kasten",
+    "Sanitair",
+    "Verlichting"
+  ],
+  "kosten_paden": [
+    "/renovatiekosten/keuken/"
+  ],
+  "paden": [
+    "/keuken-renoveren/"
+  ],
+  "verwante_ruimtes": [
+    "bijkeuken",
+    "woonkamer"
+  ],
+  "fouten": [
+    "De afzuigkap pas bedenken als de keuken al getekend is.",
+    "Stopcontacten tellen op de tekening in plaats van op het werkblad.",
+    "Vergeten dat een kookeiland een vloerdoorvoer nodig heeft die vóór het storten van de vloer bekend moet zijn."
+  ]
+}

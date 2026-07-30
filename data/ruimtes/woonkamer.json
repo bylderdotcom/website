@@ -1,0 +1,56 @@
+{
+  "slug": "woonkamer",
+  "naam": "Woonkamer",
+  "synoniemen": [
+    "living",
+    "huiskamer",
+    "zitkamer"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "Te breed om één contenthub te zijn en te belangrijk om over te slaan: dit is een verzamelplek die doorverwijst naar vloer, verlichting, raamdecoratie en meubels.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waar komt de tv, en waar de bank?",
+      "waarom": "Dit bepaalt de stopcontacten, de bekabeling en of je een loze leiding nodig hebt. Achteraf oplossen betekent kabelgoten.",
+      "opties": [
+        "Loze leidingen als meerwerk",
+        "Wandcontactdozen op tv-hoogte",
+        "Vloercontactdoos bij een zwevende opstelling"
+      ]
+    },
+    {
+      "vraag": "Welke vloer, en in welke ruimtes doorlopend?",
+      "waarom": "Een doorlopende vloer maakt een woning optisch groter maar vraagt dat aangrenzende ruimtes dezelfde eisen aankunnen.",
+      "opties": [
+        "Doorlopend tot in de keuken",
+        "Overgang met profiel",
+        "Per ruimte een eigen vloer"
+      ]
+    }
+  ],
+  "vakken": [
+    "gietvloer",
+    "elektricien",
+    "stukadoor",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "PVC vloer",
+    "Meubelen",
+    "Verlichting",
+    "Raamdecoratie"
+  ],
+  "verwante_ruimtes": [
+    "keuken",
+    "hal"
+  ],
+  "fouten": [
+    "Verlichting plannen zonder te weten waar de meubels staan.",
+    "Vergeten dat vloerverwarming de keuze van de vloerafwerking beperkt."
+  ]
+}

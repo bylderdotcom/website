@@ -1,0 +1,50 @@
+{
+  "slug": "balkon",
+  "naam": "Balkon",
+  "synoniemen": [
+    "loggia",
+    "frans balkon"
+  ],
+  "type": "buiten",
+  "status": "node",
+  "kern": "De enige buitenruimte van veel appartementen, en constructief het gevoeligste onderdeel: alles wat je erop zet telt mee in de belasting, en alles wat lekt komt bij de buren terecht.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Hoeveel gewicht mag erop?",
+      "waarom": "Plantenbakken, een jacuzzi of een zware vloerafwerking tellen mee in de constructieve belasting. Bij appartementen ligt dit vast in de splitsingsakte of de bouwtekening.",
+      "opties": [
+        "Belasting opvragen vóór aankoop van zwaar meubilair",
+        "Lichte vloerafwerking",
+        "Verzwaring laten berekenen"
+      ]
+    },
+    {
+      "vraag": "Wat mag je aan de gevel bevestigen?",
+      "waarom": "Bij een VvE is de gevel meestal gemeenschappelijk. Boren in de gevel of een zonnescherm bevestigen vraagt toestemming.",
+      "opties": [
+        "Toestemming VvE vragen",
+        "Vrijstaande oplossingen",
+        "Niets bevestigen"
+      ]
+    }
+  ],
+  "vakken": [
+    "dakdekker",
+    "aannemer"
+  ],
+  "productcategorieen": [
+    "Tuinmeubelen",
+    "Zonwering"
+  ],
+  "verwante_ruimtes": [
+    "dakterras",
+    "tuin"
+  ],
+  "fouten": [
+    "Vloerafwerking leggen die de afwatering blokkeert — dan staat het water tegen de pui."
+  ]
+}

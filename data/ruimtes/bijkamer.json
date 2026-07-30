@@ -1,0 +1,55 @@
+{
+  "slug": "bijkamer",
+  "naam": "Bijkamer",
+  "synoniemen": [
+    "logeerkamer",
+    "hobbykamer",
+    "flexkamer",
+    "extra kamer"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "De kamer zonder vaste bestemming: vandaag logeerkamer, over twee jaar kinderkamer of kantoor. Juist daarom loont het om hem neutraal en flexibel op te leveren.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waarvoor richt je hem nu in?",
+      "waarom": "Een kamer die alles moet kunnen wordt zelden goed in iets. Kies een hoofdgebruik en houd de rest mogelijk.",
+      "opties": [
+        "Logeerkamer met opklapbed",
+        "Werkkamer die kan omklappen",
+        "Leeg laten tot de behoefte duidelijk is"
+      ]
+    },
+    {
+      "vraag": "Voorzieningen nu of later?",
+      "waarom": "Netwerkpunt, extra groepen en een tweede lichtpunt zijn bij oplevering goedkoop. Ze aanleggen als je nog niet weet wat de kamer wordt, houdt alle opties open.",
+      "opties": [
+        "Ruim voorzien bij oplevering",
+        "Loze leidingen",
+        "Standaard laten"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "stukadoor",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "Meubelen",
+    "Kasten",
+    "Raamdecoratie"
+  ],
+  "verwante_ruimtes": [
+    "werkkamer",
+    "kinderkamer",
+    "slaapkamer"
+  ],
+  "fouten": [
+    "Inrichten op een gebruik dat over een jaar verandert, met vaste kasten en al."
+  ]
+}

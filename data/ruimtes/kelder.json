@@ -1,0 +1,52 @@
+{
+  "slug": "kelder",
+  "naam": "Kelder",
+  "synoniemen": [
+    "souterrain",
+    "onderkeldering",
+    "wijnkelder"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "Zeldzaam in Nederlandse nieuwbouw en duur om achteraf te maken, maar de enige manier om vierkante meters toe te voegen zonder tuin of hoogte op te offeren.",
+  "momenten": [
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waterdicht of alleen vochtwerend?",
+      "waarom": "Onder het grondwaterpeil bouwen is een andere discipline dan een droge kruipruimte vergroten. Dit bepaalt de constructie en het budget.",
+      "opties": [
+        "Waterdichte betonbak",
+        "Vochtwerende afwerking",
+        "Alleen als bergruimte uitvoeren"
+      ]
+    },
+    {
+      "vraag": "Hoe krijg je er daglicht en ventilatie?",
+      "waarom": "Zonder daglicht en ventilatie is het geen verblijfsruimte maar opslag, ongeacht hoe mooi het afgewerkt is.",
+      "opties": [
+        "Lichtkoker of lichtstraat",
+        "Verdiepte patio",
+        "Mechanische ventilatie"
+      ]
+    }
+  ],
+  "vakken": [
+    "aannemer",
+    "isolatiebedrijf",
+    "ventilatiebedrijf"
+  ],
+  "vergunning": {
+    "nodig": "ja",
+    "toelichting": "Onderkelderen is een constructieve ingreep en vrijwel altijd vergunningplichtig; er komt een constructeur en meestal een bodemonderzoek aan te pas.",
+    "pad": "/bouwvergunning/"
+  },
+  "verwante_ruimtes": [
+    "kruipruimte",
+    "technische-ruimte"
+  ],
+  "fouten": [
+    "Beginnen zonder grondwaterstand en bodemonderzoek."
+  ]
+}

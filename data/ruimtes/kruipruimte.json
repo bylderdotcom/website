@@ -1,0 +1,52 @@
+{
+  "slug": "kruipruimte",
+  "naam": "Kruipruimte",
+  "synoniemen": [
+    "kruipkelder",
+    "onderslag",
+    "ruimte onder de vloer"
+  ],
+  "type": "technisch",
+  "status": "node",
+  "kern": "De ruimte waar niemand komt en waar de helft van de vochtproblemen in Nederlandse woningen begint. Ook de goedkoopste plek om te isoleren.",
+  "momenten": [
+    "verduurzaming",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Is er vocht, en waar komt het vandaan?",
+      "waarom": "Een natte kruipruimte trekt vocht door de vloer naar de woning. De oorzaak — grondwater, lekkage of onvoldoende ventilatie — bepaalt de oplossing volledig.",
+      "opties": [
+        "Bodemafsluiting aanbrengen",
+        "Ventilatieroosters vrijmaken of bijplaatsen",
+        "Drainage of pomp"
+      ]
+    },
+    {
+      "vraag": "Isoleren, en waarmee?",
+      "waarom": "Vloerisolatie vanuit de kruipruimte is een van de snelst terugverdiende maatregelen, maar niet elk materiaal verdraagt een vochtige omgeving.",
+      "opties": [
+        "Isolatieplaten tegen de vloer",
+        "Bodemisolatie",
+        "Eerst vocht oplossen, dan isoleren"
+      ]
+    }
+  ],
+  "vakken": [
+    "isolatiebedrijf",
+    "loodgieter",
+    "energieadviseur"
+  ],
+  "verwante_ruimtes": [
+    "kelder",
+    "technische-ruimte"
+  ],
+  "paden": [
+    "/woning-verduurzamen/"
+  ],
+  "fouten": [
+    "Isoleren zonder het vochtprobleem eerst op te lossen — dan sluit je het vocht in.",
+    "Ventilatieroosters dichtmaken tegen de tocht; dat is precies wat de kruipruimte nat maakt."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "trapkast",
+  "naam": "Trapkast",
+  "synoniemen": [
+    "kast onder de trap",
+    "bergkast",
+    "meterkastruimte"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "De enige ruimte in een doorsnee woning die vrijwel altijd verkeerd wordt gebruikt: als rommelhok, terwijl er met maatwerk drie keer zoveel in past.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Maatwerk of één deur en een donker gat?",
+      "waarom": "De schuine achterwand maakt standaardkasten onbruikbaar. Uittrekbare elementen benutten de diepte die je anders nooit bereikt.",
+      "opties": [
+        "Uittrekbare lades op maat",
+        "Planken op hoogte",
+        "Open laten als bergruimte"
+      ]
+    },
+    {
+      "vraag": "Komt hier de wasmachine of de stofzuiger-oplaadpunt?",
+      "waarom": "Een stopcontact in de trapkast is bij de oplevering een kleinigheid en achteraf een kabel door de hal.",
+      "opties": [
+        "Stopcontact laten aanleggen",
+        "Verlichting met deurcontact",
+        "Niets"
+      ]
+    }
+  ],
+  "vakken": [
+    "timmerman",
+    "elektricien"
+  ],
+  "productcategorieen": [
+    "Kasten"
+  ],
+  "verwante_ruimtes": [
+    "hal",
+    "meterkast"
+  ],
+  "fouten": [
+    "Geen licht en geen stopcontact — dan wordt het per definitie een rommelhok."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "hal",
+  "naam": "Hal en entree",
+  "synoniemen": [
+    "gang",
+    "entree",
+    "vestibule",
+    "portaal"
+  ],
+  "type": "verkeersruimte",
+  "status": "node",
+  "kern": "De eerste en laatste ruimte die iedereen ziet, en de enige waar in nieuwbouw standaard te weinig licht, te weinig stopcontacten en geen enkele opbergruimte zit.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waar laat je jassen, schoenen en post?",
+      "waarom": "Zonder plan wordt de trapkast een rommelhok en staan de schoenen in de weg. Dit is de goedkoopst op te lossen ergernis van het hele huis.",
+      "opties": [
+        "Inbouwkast onder de trap",
+        "Garderobewand op maat",
+        "Losse meubels"
+      ]
+    },
+    {
+      "vraag": "Welke vloer bij de voordeur?",
+      "waarom": "Hier komt water, zand en strooizout binnen. Een schoonloopmat in de vloer verwerkt scheelt de rest van de woning.",
+      "opties": [
+        "Verzonken schoonloopmat",
+        "Tegels bij de entree",
+        "Doorlopende vloer met losse mat"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "gietvloer",
+    "timmerman",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "Verlichting",
+    "Kasten",
+    "Deuren",
+    "Trapbekleding"
+  ],
+  "verwante_ruimtes": [
+    "trapkast",
+    "overloop",
+    "toilet",
+    "meterkast"
+  ],
+  "fouten": [
+    "Eén lichtpunt in het midden en geen schakelaar bij de trap.",
+    "Geen stopcontact in de hal — waar laad je dan de stofzuiger of de e-bike-accu?"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "uitbouw",
+  "naam": "Uitbouw",
+  "synoniemen": [
+    "aanbouw",
+    "serre",
+    "erker",
+    "uitbreiding"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "De meest gekozen manier om een woning te vergroten, en de plek waar het verschil tussen vergunningvrij en vergunningplichtig in centimeters wordt gemeten.",
+  "momenten": [
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Blijf je binnen de vergunningvrije maten?",
+      "waarom": "Diepte, hoogte en de afstand tot de erfgrens bepalen of je een vergunning nodig hebt. Een paar centimeter verschil verandert het hele traject.",
+      "opties": [
+        "Binnen de vergunningvrije maten blijven",
+        "Vergunning aanvragen voor een grotere uitbouw",
+        "Erfgrens-afspraak met de buren vastleggen"
+      ]
+    },
+    {
+      "vraag": "Hoe sluit de nieuwe vloer aan op de bestaande?",
+      "waarom": "Een uitbouw met vloerverwarming aansluiten op een bestaande installatie vraagt een aparte groep en soms een grotere pomp. Een hoogteverschil in de vloer is later niet meer te herstellen.",
+      "opties": [
+        "Doorlopende vloer op één niveau",
+        "Eigen verwarmingsgroep",
+        "Drempel accepteren"
+      ]
+    }
+  ],
+  "vakken": [
+    "aannemer",
+    "timmerman",
+    "isolatiebedrijf",
+    "elektricien"
+  ],
+  "vergunning": {
+    "nodig": "soms",
+    "toelichting": "Aan de achterkant is een uitbouw binnen strikte maten vaak vergunningvrij; daarbuiten niet. De maatvoering en de regels voor het achtererfgebied zijn bepalend, en het bestemmingsplan kan strenger zijn.",
+    "pad": "/bouwvergunning/"
+  },
+  "kosten_paden": [
+    "/renovatiekosten/aanbouw/"
+  ],
+  "paden": [
+    "/aanbouw/",
+    "/bouwvergunning/"
+  ],
+  "verwante_ruimtes": [
+    "woonkamer",
+    "keuken",
+    "tuin"
+  ],
+  "fouten": [
+    "De fundering van de bestaande woning niet laten beoordelen bij aansluiting.",
+    "Vergeten dat een uitbouw daglicht wegneemt uit de bestaande kamer erachter."
+  ]
+}

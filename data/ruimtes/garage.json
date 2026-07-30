@@ -1,0 +1,57 @@
+{
+  "slug": "garage",
+  "naam": "Garage",
+  "synoniemen": [
+    "inpandige garage",
+    "carport",
+    "autobox"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "Zelden gebruikt om een auto in te zetten, bijna altijd als werkplaats en opslag — en de logische plek voor de laadpaal.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verduurzaming"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Komt hier de laadpaal?",
+      "waarom": "Een laadpunt vraagt een eigen groep en voldoende capaciteit in de meterkast. Bij de oplevering is dat leidingwerk; achteraf is het hak- en breekwerk of een kabelgoot.",
+      "opties": [
+        "Laadpunt als meerwerk",
+        "Loze leiding aanleggen voor later",
+        "Niets"
+      ]
+    },
+    {
+      "vraag": "Wordt het opslag of verblijfsruimte?",
+      "waarom": "Een garage ombouwen tot kamer raakt isolatie, ventilatie en soms het bestemmingsplan — en het kost je de parkeerplaats die bij de woning is gerekend.",
+      "opties": [
+        "Garage houden",
+        "Ombouwen tot werk- of hobbyruimte",
+        "Half: geïsoleerd maar onverwarmd"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "isolatiebedrijf",
+    "aannemer"
+  ],
+  "productcategorieen": [
+    "Verlichting",
+    "Deuren"
+  ],
+  "verwante_ruimtes": [
+    "berging",
+    "technische-ruimte"
+  ],
+  "vergunning": {
+    "nodig": "soms",
+    "toelichting": "Een garage ombouwen tot verblijfsruimte kan een functiewijziging zijn en raakt vaak de parkeernorm uit het bestemmingsplan. Controleer dit vóór je begint.",
+    "pad": "/bouwvergunning/"
+  },
+  "fouten": [
+    "Laadpaal plannen zonder te controleren of de meterkast en de aansluiting het aankunnen."
+  ]
+}
