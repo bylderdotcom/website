@@ -8,7 +8,7 @@
     "portaal"
   ],
   "type": "verkeersruimte",
-  "status": "node",
+  "status": "pagina",
   "kern": "De eerste en laatste ruimte die iedereen ziet, en de enige waar in nieuwbouw standaard te weinig licht, te weinig stopcontacten en geen enkele opbergruimte zit.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -55,5 +55,81 @@
   "fouten": [
     "Eén lichtpunt in het midden en geen schakelaar bij de trap.",
     "Geen stopcontact in de hal — waar laad je dan de stofzuiger of de e-bike-accu?"
+  ],
+  "pagina_pad": "/ruimtes/hal/",
+  "intro": "De hal is de eerste en laatste ruimte die iedereen ziet, en in nieuwbouw standaard het slechtst uitgerust: één lichtpunt, meestal geen stopcontact, en nergens plek voor jassen of schoenen. Het is ook de goedkoopst op te lossen ergernis van het hele huis, mits je het doet voordat de vloer erin ligt.",
+  "secties": [
+    {
+      "kop": "Waar laat je jassen, schoenen en post?",
+      "alineas": [
+        "Een hal wordt zelden ontworpen op wat er dagelijks gebeurt: vier jassen, acht paar schoenen, een tas, post en sleutels. Zonder vaste plek verspreidt dat zich door de woonkamer.",
+        "De ruimte onder de trap is bijna altijd de beste oplossing, en bijna altijd verkeerd benut. Een open gat wordt een rommelhok; uittrekbare elementen op maat halen er drie keer zoveel uit omdat je bij de diepte kunt.",
+        "Meet voordat je iets koopt hoe breed de doorloop moet blijven. Een garderobewand van veertig centimeter diep in een hal van honderdveertig laat een meter over, en dat is precies genoeg — twintig centimeter minder is het niet."
+      ]
+    },
+    {
+      "kop": "Bij de voordeur begint het vuil",
+      "alineas": [
+        "Water, zand en in de winter strooizout komen hier binnen en gaan mee de rest van de woning in. Een verzonken schoonloopmat in de vloer bij de entree vangt het grootste deel af, en dat scheelt zichtbaar in onderhoud van je woonkamervloer.",
+        "Verzonken betekent wel dat het bij de vloeropbouw moet worden meegenomen: er komt een uitsparing in de dekvloer. Achteraf blijft alleen een losse mat over, en die schuift en ligt scheef.",
+        "Kies daarnaast een vloerafwerking bij de entree die tegen vocht kan. Een doorlopende houten vloer tot aan de deur is mooi op de foto en kwetsbaar in november."
+      ]
+    },
+    {
+      "kop": "Licht en stroom: twee kleine ingrepen, veel verschil",
+      "alineas": [
+        "Standaard krijg je één lichtpunt in het midden en een schakelaar bij de deur. Wat ontbreekt is een schakelaar bij de trap — je wilt het licht uit kunnen doen als je naar boven gaat, niet erna terug naar beneden.",
+        "Een wisselschakeling is bij oplevering meerwerk van weinig geld en achteraf een kabel door een afgewerkte wand.",
+        "En een stopcontact. In de meeste nieuwbouwhallen zit er geen enkele, terwijl je er de stofzuiger, een accu of een kerstboom kwijt wilt. Eén contactdoos op een logische plek lost dat voor twintig jaar op."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Wat is de beste vloer voor een hal?",
+      "a": "Een vloer die tegen water en zand kan: tegels, een kwalitatieve PVC-vloer of een gietvloer. Belangrijker dan het materiaal is een verzonken schoonloopmat bij de voordeur — die vangt het meeste vuil af voordat het de rest van de woning bereikt. Die uitsparing moet wel bij de vloeropbouw worden meegenomen."
+    },
+    {
+      "v": "Hoe benut ik de ruimte onder de trap?",
+      "a": "Met uittrekbare elementen in plaats van een deur en een donker gat. De schuine achterwand maakt standaardkasten onbruikbaar en zorgt ervoor dat je nooit bij de achterste helft komt. Uittrekbare lades of een kastwand op maat benutten juist die diepte. Zorg voor licht en een stopcontact, anders wordt het hoe dan ook een rommelhok."
+    },
+    {
+      "v": "Heb ik een wisselschakeling nodig in de hal?",
+      "a": "Als er een trap in de hal zit: ja. Zonder wisselschakeling loop je in het donker naar boven of loop je terug om het licht uit te doen. Bij oplevering is dit meerwerk van beperkte omvang; achteraf betekent het een kabel door een afgewerkte wand."
+    },
+    {
+      "v": "Hoe breed moet een hal minimaal blijven?",
+      "a": "Reken op minstens een meter vrije doorloop nadat je garderobe of kasten hebt geplaatst — met een kinderwagen, een wasmand of een verhuisdoos is dat het verschil tussen bruikbaar en irritant. Meet dus eerst de doorloop en bepaal daarna de diepte van je kasten, niet andersom."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Garderobewand of kastwand op maat",
+      "waarom": "De schuine wand onder de trap maakt standaardmeubels onbruikbaar."
+    },
+    {
+      "type": "Verzonken schoonloopmat",
+      "waarom": "Moet bij de vloeropbouw; achteraf blijft alleen een losse mat over."
+    },
+    {
+      "type": "Wisselschakeling bij de trap",
+      "waarom": "Bij oplevering een kleinigheid, later een kabel door de wand."
+    },
+    {
+      "type": "Stopcontact in de hal",
+      "waarom": "Standaard zit er geen; je wilt er stofzuiger en accu's kwijt."
+    },
+    {
+      "type": "Trapbekleding",
+      "waarom": "Bepaalt het geluid in de hele woning meer dan de vloer beneden."
+    },
+    {
+      "type": "Spiegel met verlichting",
+      "waarom": "De hal is de enige plek waar je jezelf nog even ziet voor je de deur uitgaat."
+    }
+  ],
+  "meerwerk": [
+    "lichtpunten",
+    "stopcontacten"
   ]
 }
