@@ -15,6 +15,7 @@ Gecontroleerd wordt:
   4. redirects   — geen pad wordt geschaduwd door een redirect in vercel.json
   5. verwijzingen — verwante_ruimtes bestaan als bestand
   6. categorieën — alleen als --online: productcategorieën bestaan in merchant_vouchers
+  7. meerwerk    — alleen als --online: meerwerk-slugs bestaan in meerwerk_opties
 
 Gebruik: python3 scripts/check_ruimtes.py [--online]
 Exit 1 bij fouten, zodat een loop of build erop kan afgaan.
@@ -170,11 +171,20 @@ if ONLINE:
     with urllib.request.urlopen(req, context=CTX) as r:
         rows = json.load(r)
     bekend = {c.strip() for row in rows for c in (row["category"] or "").split(",") if c.strip()}
+
+    req = urllib.request.Request(f"{u}/rest/v1/meerwerk_opties?select=slug",
+                                 headers={"apikey": key, "Authorization": f"Bearer {key}"})
+    with urllib.request.urlopen(req, context=CTX) as r:
+        meerwerk_slugs = {x["slug"] for x in json.load(r)}
+
     for naam in bestanden:
         d = json.load(open(os.path.join(RUIMTE_DIR, naam), encoding="utf-8"))
         for c in d.get("productcategorieen", []):
             if c not in bekend:
                 waarschuwingen.append(f"{naam}: productcategorie zonder deelnemer: {c}")
+        for m in d.get("meerwerk", []):
+            if m not in meerwerk_slugs:
+                fouten.append(f"{naam}: meerwerk-slug bestaat niet in meerwerk_opties: {m}")
 
 pagina = sum(1 for f in bestanden if json.load(open(os.path.join(RUIMTE_DIR, f), encoding="utf-8"))["status"] == "pagina")
 print(f"{len(bestanden)} ruimtes · {pagina} met status 'pagina' · {len(bestanden) - pagina} als node")
