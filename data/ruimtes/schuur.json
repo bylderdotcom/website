@@ -7,7 +7,7 @@
     "blokhut"
   ],
   "type": "buiten",
-  "status": "node",
+  "status": "pagina",
   "kern": "Het bouwwerk waar de meeste mensen zonder nadenken aan beginnen, en waar de vergunningregels het strengst zijn ten opzichte van de erfgrens.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -53,5 +53,77 @@
   ],
   "fouten": [
     "Bouwen tot op de erfgrens zonder de regels of de buren te raadplegen."
+  ],
+  "pagina_pad": "/ruimtes/schuur/",
+  "intro": "Een tuinhuis of schuur is het bouwwerk waar de meeste mensen zonder nadenken aan beginnen, en waar de regels het strengst zijn ten opzichte van de erfgrens. Een schuur die een halve meter te dicht bij de buren staat, is een schuur die je kunt moeten afbreken.",
+  "secties": [
+    {
+      "kop": "De erfgrens is het hele verhaal",
+      "alineas": [
+        "Voor bijgebouwen in het achtererfgebied gelden landelijke regels over oppervlakte, hoogte en de positie ten opzichte van de erfgrens en het openbaar gebied. Binnen die maten mag je zonder vergunning bouwen.",
+        "Het bestemmingsplan kan strenger zijn, en in een beschermd stadsgezicht gelden de vrijstellingen niet. Bovendien geldt er een maximum aan het totale oppervlak aan bijgebouwen op je perceel — een schuur plús een overkapping plús een berging telt bij elkaar op.",
+        "Praat met je buren voordat je begint, ook als het vergunningvrij is. Een schuur pal tegen de erfgrens is juridisch misschien toegestaan en sociaal zelden een succes."
+      ]
+    },
+    {
+      "kop": "Fundering bepaalt of hij over tien jaar nog recht staat",
+      "alineas": [
+        "Een schuur op losse tegels op nieuwbouwgrond gaat zakken. De grond is verdicht door bouwverkeer en klinkt daarna ongelijk in, en dat zie je terug in deuren die klemmen.",
+        "Betonnen poeren of een strokenfundering zijn de gebruikelijke oplossingen en kosten weinig ten opzichte van de schuur zelf. Bij een verplaatsbaar model kun je met stelpoeren werken.",
+        "Denk ook aan de afwatering van het dak. Een schuur zonder goot loost al het regenwater op één plek, meestal tegen de erfgrens aan."
+      ]
+    },
+    {
+      "kop": "Stroom maakt het verschil tussen opslag en werkplaats",
+      "alineas": [
+        "Een schuur zonder stroom is een plek waar spullen staan. Met stroom is het een werkplaats, een laadplek voor accu's en een plek waar een vriezer kan staan.",
+        "De kabel kost weinig; de sleuf kost het meeste. Leg hem daarom terwijl de tuin nog open ligt, in een beschermbuis en op voldoende diepte, met een aparte groep in de meterkast.",
+        "Voor wie het niet nodig heeft: een klein zonnepaneel met accu volstaat voor verlichting en het laden van gereedschap, en vraagt geen graafwerk."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Mag ik zomaar een schuur in mijn tuin bouwen?",
+      "a": "Binnen het achtererfgebied vaak wel, mits je binnen de landelijke maten blijft voor oppervlakte en hoogte en het totale oppervlak aan bijgebouwen op je perceel niet overschrijdt. Het bestemmingsplan kan strenger zijn en in beschermde gebieden gelden de vrijstellingen niet. Controleer beide voordat je bestelt."
+    },
+    {
+      "v": "Hoe dicht mag een schuur bij de erfgrens staan?",
+      "a": "Dat hangt af van de hoogte en van het bestemmingsplan; bij een lage schuur in het achtererfgebied mag doorgaans meer dan de meeste mensen denken. Belangrijker dan wat mag: de afwatering. Een dak zonder goot loost al het regenwater op de perceelsgrens, en dat is de meest voorkomende bron van burenruzie."
+    },
+    {
+      "v": "Welke fundering heeft een tuinhuis nodig?",
+      "a": "Op nieuwbouwgrond zeker meer dan losse tegels. De grond is verdicht door bouwverkeer en zakt daarna ongelijk in. Betonnen poeren of een strokenfundering kosten weinig ten opzichte van de schuur en voorkomen klemmende deuren over een paar jaar."
+    },
+    {
+      "v": "Kan ik stroom naar mijn schuur laten aanleggen?",
+      "a": "Ja, met een grondkabel in een beschermbuis op voldoende diepte en een eigen groep in de meterkast. Het graafwerk is duurder dan de kabel, dus leg hem terwijl de tuin nog open ligt. Voor alleen verlichting en gereedschap laden volstaat vaak een klein zonnepaneel met accu."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Fundering met betonpoeren",
+      "waarom": "Op verdichte nieuwbouwgrond geen luxe maar noodzaak."
+    },
+    {
+      "type": "Grondkabel met eigen groep",
+      "waarom": "De sleuf kost meer dan de kabel; leg hem als de tuin open ligt."
+    },
+    {
+      "type": "Dakgoot en afvoer",
+      "waarom": "Zonder goot loost het dak op de erfgrens — bron nummer één van burenruzie."
+    },
+    {
+      "type": "Fietsophangsysteem",
+      "waarom": "Een schuur is voor de meeste mensen vooral een fietsenstalling."
+    },
+    {
+      "type": "Hang- en sluitwerk met keurmerk",
+      "waarom": "Een schuur is de makkelijkste ingang van een perceel."
+    },
+    {
+      "type": "Zonnepaneel met accu",
+      "waarom": "Verlichting en gereedschap laden zonder graafwerk."
+    }
   ]
 }

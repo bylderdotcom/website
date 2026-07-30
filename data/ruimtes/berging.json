@@ -7,7 +7,7 @@
     "inpandige berging"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "In nieuwbouw vaak de ruimte waar de installatie staat én waar de fietsen heen moeten. Die twee gaan slecht samen.",
   "momenten": [
     "nieuwbouw-oplevering"
@@ -48,5 +48,82 @@
   ],
   "fouten": [
     "Geen stopcontact voor het laden van een e-bike-accu — brandveilig laden vraagt een vaste plek."
+  ],
+  "pagina_pad": "/ruimtes/berging/",
+  "intro": "In nieuwbouw is de inpandige berging vaak twee dingen tegelijk: de plek waar de technische installatie staat en de plek waar de fietsen heen moeten. Die twee gaan slecht samen, en dat merk je pas als je met een natte fiets langs de warmtepomp moet.",
+  "secties": [
+    {
+      "kop": "Tel eerst wat erin moet",
+      "alineas": [
+        "Een berging van vier vierkante meter met een warmtepomp, een wasmachine, een vriezer en twee fietsen bestaat alleen op papier. Maak daarom eerst een lijst van wat er echt in moet, met de maten erbij, inclusief de vrije ruimte die apparaten nodig hebben voor onderhoud.",
+        "Wat er dan overblijft, is je werkelijke bergruimte. Vaak is de uitkomst dat de fietsen naar een buitenberging moeten of dat de installatie ergens anders hoort.",
+        "Dat is geen tegenvaller maar een beslissing die je liever nu neemt dan nadat de vloer erin ligt."
+      ]
+    },
+    {
+      "kop": "Stroom is hier belangrijker dan je denkt",
+      "alineas": [
+        "Een berging zonder stopcontact is opslag; met stopcontacten is het bruikbare ruimte. Een vriezer heeft een eigen aansluiting nodig, een e-bike-accu wil je op een vaste plek laden en niet aan een verlengsnoer tussen de spullen, en gereedschap laadt ook ergens.",
+        "Bij oplevering is een extra groep en twee contactdozen meerwerk van beperkte omvang. Achteraf is het een kabel vanuit de meterkast.",
+        "Denk ook aan verlichting die aangaat als je binnenkomt. Je komt hier altijd met je handen vol; een bewegingsmelder is hier geen luxe maar de logische keuze."
+      ]
+    },
+    {
+      "kop": "Verticaal opbergen is de enige manier",
+      "alineas": [
+        "Bergruimte gaat niet over vloeroppervlak maar over hoogte. Stellingen tot aan het plafond verdubbelen wat erin past, mits je een trapje hebt en de zwaarste dingen onderin zet.",
+        "Houd de vloer vrij. Alles wat op de grond staat, staat in de weg en wordt nooit meer verplaatst.",
+        "En laat een strook vrij bij de installatie. Een monteur die er niet bij kan, kan er ook niet aan werken — en dat merk je op het moment dat je verwarming uitvalt."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Hoeveel bergruimte heb ik nodig bij nieuwbouw?",
+      "a": "Meer dan er standaard is. Reken uit wat er echt in moet — fietsen, tuingereedschap, koffers, seizoensspullen, vriezer — inclusief de vrije servicezones van installaties. In veel nieuwbouwwoningen blijkt dan dat de fietsen naar buiten moeten. Dat is een beslissing die je beter nu neemt dan achteraf."
+    },
+    {
+      "v": "Kan de wasmachine in de berging?",
+      "a": "Ja, mits er een wateraansluiting, een afvoer en een geaarde groep zijn. Let op vocht: een wasmachine in een ruimte zonder ventilatie samen met opslag levert muffe spullen op. En reken erop dat wasmachine en droger niet op dezelfde groep horen."
+    },
+    {
+      "v": "Waar laad ik veilig een e-bike-accu?",
+      "a": "Op een vaste plek met een eigen stopcontact, niet op een brandbare ondergrond en niet vlak naast opslag van brandbare spullen. Een verlengsnoer tussen de dozen is de meest gemaakte fout. In een berging is dit goed te organiseren; in een woonkamer of hal is het onverstandig."
+    },
+    {
+      "v": "Heeft een berging ventilatie nodig?",
+      "a": "Als er alleen droge spullen staan niet per se, maar zodra er een wasmachine, natte fietsen of tuingereedschap in komt wel. Vocht dat nergens heen kan slaat neer op koude wanden en in je opslag. Een rooster of een klein afzuigpunt volstaat meestal."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Stellingkasten tot plafondhoogte",
+      "waarom": "Bergruimte is hoogte, geen vloeroppervlak."
+    },
+    {
+      "type": "Vaste laadplek voor accu's",
+      "waarom": "Brandveiliger dan een verlengsnoer tussen de spullen."
+    },
+    {
+      "type": "Extra groep voor vriezer",
+      "waarom": "Een vriezer op een gedeelde groep is een risico dat je pas merkt bij ontdooien."
+    },
+    {
+      "type": "Bewegingsmelder-verlichting",
+      "waarom": "Je komt hier altijd met je handen vol binnen."
+    },
+    {
+      "type": "Fietsophangsysteem",
+      "waarom": "Verticaal ophangen wint de meeste vloeroppervlak."
+    },
+    {
+      "type": "Ventilatierooster",
+      "waarom": "Natte fietsen en wasgoed maken van een berging anders een vochtkast."
+    }
+  ],
+  "meerwerk": [
+    "stopcontacten",
+    "krachtstroom",
+    "ventilatie"
   ]
 }

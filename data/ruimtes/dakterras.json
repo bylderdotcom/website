@@ -6,7 +6,7 @@
     "terras op het dak"
   ],
   "type": "buiten",
-  "status": "node",
+  "status": "pagina",
   "kern": "Vierkante meters buitenruimte op een plek die er al is, maar constructief en juridisch het meest veeleisende dat je aan een woning kunt toevoegen.",
   "momenten": [
     "verbouwing"
@@ -52,5 +52,77 @@
   "fouten": [
     "Beginnen zonder constructieve berekening.",
     "Bij een VvE beginnen zonder toestemming."
+  ],
+  "pagina_pad": "/ruimtes/dakterras/",
+  "intro": "Vierkante meters buitenruimte op een plek die er al is — en het meest veeleisende dat je aan een woning kunt toevoegen. Constructief, juridisch en waterdicht moet alles kloppen, want een dakterras zit per definitie boven iets dat droog moet blijven.",
+  "secties": [
+    {
+      "kop": "Het dak is niet berekend op mensen",
+      "alineas": [
+        "Een plat dak is gedimensioneerd op sneeuwbelasting en incidenteel onderhoud. Een terras betekent permanente belasting van vloerafwerking, meubels, plantenbakken en mensen — vaak een veelvoud.",
+        "Dat is een constructieve berekening, geen inschatting. Bij een houten dakconstructie is verzwaring vrijwel altijd nodig; bij beton hangt het af van de oorspronkelijke opzet.",
+        "Deze vraag komt vóór alle andere. Een prachtig ontwerp op een dak dat het niet draagt, is geen ontwerp."
+      ]
+    },
+    {
+      "kop": "Elke bevestiging is een potentieel lek",
+      "alineas": [
+        "De dakbedekking is één doorlopende waterdichte laag. Alles wat je erdoorheen schroeft — voor een balustrade, een pergola, een windscherm — is een doorbreking die perfect afgewerkt moet worden en die de rest van de levensduur een risicopunt blijft.",
+        "Daarom werken dakterrassen met ballast: tegeldragers en losliggende vlonders die op de bedekking rusten zonder erdoorheen te gaan. Balustrades worden waar mogelijk aan de opstand of de gevel bevestigd, niet aan het dakvlak.",
+        "Reken erop dat de dakbedekking bij het aanleggen van een terras vaak vervangen moet worden — je wilt geen terras leggen op een laag die over vijf jaar aan vervanging toe is."
+      ]
+    },
+    {
+      "kop": "De vergunning gaat over uitzicht, niet over techniek",
+      "alineas": [
+        "Een dakterras is vrijwel altijd vergunningplichtig, en de discussie gaat zelden over constructie. Het gaat over privacy: vanaf een dakterras kijk je in de tuinen en ramen van de buren.",
+        "Gemeenten toetsen daarop, en buren dienen er zienswijzen over in. Een privacyscherm aan de zijkanten is vaak de voorwaarde waaronder het wel mag.",
+        "Bij een appartement komt daar de VvE bij. Het dak is gemeenschappelijk eigendom en een terras erop vraagt een besluit van de vergadering, meestal met een gekwalificeerde meerderheid."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Heb ik een vergunning nodig voor een dakterras?",
+      "a": "Vrijwel altijd. Het gaat daarbij minder om de constructie dan om privacy: vanaf een dakterras kijk je bij de buren naar binnen, en daar toetsen gemeenten op. Een privacyscherm is vaak de voorwaarde. Bij een appartement heb je bovendien een besluit van de VvE nodig, omdat het dak gemeenschappelijk eigendom is."
+    },
+    {
+      "v": "Kan mijn dak een terras dragen?",
+      "a": "Dat moet een constructeur berekenen. Een plat dak is ontworpen op sneeuw en incidenteel onderhoud, niet op permanente belasting door vloer, meubels, plantenbakken en mensen. Bij een houten dakconstructie is verzwaring vrijwel altijd nodig; bij beton hangt het af van de oorspronkelijke opzet."
+    },
+    {
+      "v": "Hoe blijft een dakterras waterdicht?",
+      "a": "Door niets door de dakbedekking heen te schroeven. Tegeldragers en losliggende vlonders rusten op de bedekking zonder hem te doorbreken; balustrades bevestig je bij voorkeur aan de opstand of de gevel. Reken er ook op dat de bedekking vaak vervangen wordt bij de aanleg — een nieuw terras op een oude laag is geld weggooien."
+    },
+    {
+      "v": "Wat kost het onderhoud van een dakterras?",
+      "a": "Het terras zelf weinig, de dakbedekking eronder wel aandacht. Je kunt er niet meer zomaar bij, dus inspectie betekent vlonders optillen. Reken op periodieke controle van de afvoeren en op het feit dat een lekkage lastiger te lokaliseren is dan bij een kaal dak."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Tegeldragers of losliggende vlonders",
+      "waarom": "Rusten op de bedekking zonder hem te doorbreken."
+    },
+    {
+      "type": "Nieuwe dakbedekking",
+      "waarom": "Een terras op een oude laag betekent er over vijf jaar weer af."
+    },
+    {
+      "type": "Balustrade",
+      "waarom": "Bevestig aan opstand of gevel, niet aan het dakvlak."
+    },
+    {
+      "type": "Privacyscherm",
+      "waarom": "Vaak de voorwaarde waaronder de vergunning wordt verleend."
+    },
+    {
+      "type": "Lichte plantenbakken",
+      "waarom": "Elke kilo telt mee in de constructieve berekening."
+    },
+    {
+      "type": "Bereikbare dakafvoeren",
+      "waarom": "Onder een terras zijn ze lastiger te controleren; houd ze bereikbaar."
+    }
   ]
 }

@@ -7,7 +7,7 @@
     "benedentoilet"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "De kleinste ruimte met de meeste bezoekers. In nieuwbouw standaard uitgevoerd, en de goedkoopste plek om een woning duurder te laten aanvoelen.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -51,5 +51,81 @@
   "fouten": [
     "Fonteintje kiezen dat de deur blokkeert.",
     "Geen afzuiging in een toilet zonder raam."
+  ],
+  "pagina_pad": "/ruimtes/toilet/",
+  "intro": "De kleinste ruimte met de meeste bezoekers, en in nieuwbouw standaard uitgevoerd met het goedkoopste dat aan de eisen voldoet. Het is daarmee de goedkoopste plek om een woning duurder te laten aanvoelen — en de plek waar een verkeerde maatvoering je twintig jaar lang elke dag opvalt.",
+  "secties": [
+    {
+      "kop": "Hangend of staand, en wat dat kost aan ruimte",
+      "alineas": [
+        "Een hangend toilet oogt rustiger en maakt schoonmaken eenvoudiger, want er staat niets op de vloer. Het vraagt wel een inbouwreservoir in een voorzetwand, en die neemt zo'n vijftien centimeter diepte in beslag.",
+        "In een toilet van honderdtwintig bij tachtig is dat het verschil tussen comfortabel en klem zitten. Meet dus eerst de vrije ruimte vóór de pot — daar zit het comfort, niet in het model.",
+        "Een staand toilet is goedkoper en neemt geen wanddiepte in, maar de aansluiting op de vloer is lastiger schoon te houden en het geheel oogt voller."
+      ]
+    },
+    {
+      "kop": "Het fonteintje is waar het misgaat",
+      "alineas": [
+        "De meest gemaakte fout in een klein toilet is een fonteintje dat de deur blokkeert of dat zo diep is dat je er langs moet schuiven. Fonteintjes bestaan in dieptes van achttien tot veertig centimeter, en dat verschil bepaalt of de ruimte werkt.",
+        "Kies de plek van het fonteintje op basis van de draairichting van de deur, niet andersom. En bedenk dat de wateraansluiting bij oplevering vastligt: verplaatsen betekent hakken.",
+        "Overweeg bij een echt klein toilet een fonteintje in de hoek of een variant die in de voorzetwand is geïntegreerd."
+      ]
+    },
+    {
+      "kop": "Geluid en ventilatie zijn hier één probleem",
+      "alineas": [
+        "Een toilet dat aan de woonkamer grenst, geeft twee ongemakken: geluid door de wand, en lucht die bij het openen van de deur de woonkamer in gaat. Beide zijn bij de bouw eenvoudig op te lossen en daarna nauwelijks.",
+        "Voor geluid helpt een zwaardere wandopbouw of isolatie in de spouw van de binnenwand, plus een deur die goed aansluit. Voor lucht is een eigen afzuigpunt de oplossing — en dat moet dan wel voldoende capaciteit hebben.",
+        "In een toilet zonder raam is mechanische afzuiging niet optioneel maar noodzakelijk. Controleer bij oplevering of hij daadwerkelijk zuigt; een velletje toiletpapier tegen het rooster laat het zien."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Hangend of staand toilet — wat is beter?",
+      "a": "Hangend is makkelijker schoon te houden en oogt rustiger, maar het inbouwreservoir kost ongeveer vijftien centimeter wanddiepte. In een klein toilet is dat precies de ruimte die je nodig hebt om comfortabel te zitten. Meet de vrije ruimte vóór de pot en laat die maat de keuze bepalen."
+    },
+    {
+      "v": "Welk fonteintje past in een klein toilet?",
+      "a": "Kijk naar de diepte en naar de draairichting van de deur. Fonteintjes lopen van ongeveer achttien tot veertig centimeter diep; in een smal toilet is een ondiep model of een hoekfontein vaak de enige die niet in de weg zit. Kies de plek op basis van de deur, want de wateraansluiting ligt bij oplevering vast."
+    },
+    {
+      "v": "Moet er ventilatie in een toilet zonder raam?",
+      "a": "Ja, en dat is geen kwestie van comfort maar van eisen. Zonder mechanische afzuiging blijft vocht en lucht hangen. Controleer bij de oplevering of het rooster echt zuigt — houd er een velletje toiletpapier tegenaan; blijft dat niet hangen, dan werkt het niet zoals het hoort."
+    },
+    {
+      "v": "Hoe voorkom ik geluidsoverlast van een toilet naast de woonkamer?",
+      "a": "Bij de bouw: isolatie in de binnenwand en een deur die goed aansluit. Achteraf is dat lastig, maar een zwaardere deur met naaddichting geeft dan nog de meeste winst per euro. Een eigen afzuigpunt met voldoende capaciteit lost het luchtprobleem op."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Hangend toilet met inbouwreservoir",
+      "waarom": "Vraagt vijftien centimeter voorzetwand; bepaalt de vrije ruimte."
+    },
+    {
+      "type": "Fonteintje",
+      "waarom": "De diepte en de deurdraai bepalen samen of de ruimte werkt."
+    },
+    {
+      "type": "Wand- en vloertegels",
+      "waarom": "Een klein oppervlak, dus een dure tegel kost hier weinig."
+    },
+    {
+      "type": "Afzuigpunt",
+      "waarom": "In een toilet zonder raam geen keuze."
+    },
+    {
+      "type": "Toiletdeur met naaddichting",
+      "waarom": "Lost geluid en luchtverplaatsing tegelijk op."
+    },
+    {
+      "type": "Verlichting met bewegingsmelder",
+      "waarom": "Handen vrij, en het licht blijft nooit branden."
+    }
+  ],
+  "meerwerk": [
+    "ventilatie",
+    "lichtpunten"
   ]
 }
