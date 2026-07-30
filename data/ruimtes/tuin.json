@@ -7,7 +7,7 @@
     "buitenruimte"
   ],
   "type": "buiten",
-  "status": "node",
+  "status": "pagina",
   "kern": "Bij nieuwbouw meestal een zandvlakte met een schutting, en de enige ruimte waar de eerste beslissing — bestrating, grondverbetering en afwatering — bepaalt wat er de komende twintig jaar mogelijk is.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -63,5 +63,82 @@
   "fouten": [
     "Bestraten op verdichte bouwgrond zonder grondverbetering — dan verzakt het binnen twee jaar.",
     "Geen loze leiding voor tuinverlichting terwijl de tuin nog open ligt."
+  ],
+  "pagina_pad": "/ruimtes/tuin/",
+  "intro": "Bij nieuwbouw krijg je een zandvlakte met een schutting. Wat je daar in het eerste jaar mee doet, bepaalt twintig jaar lang wat er mogelijk is — want de grond onder je terras kun je later niet meer verbeteren zonder alles eruit te halen. Begin daarom onderaan.",
+  "secties": [
+    {
+      "kop": "De grond is verdicht, en dat los je nu op of nooit",
+      "alineas": [
+        "Tijdens de bouw rijdt er zwaar materieel over wat later je tuin wordt. Het gevolg is verdichte grond waar water niet doorheen zakt en wortels niet in groeien. Leg je daar bestrating op, dan verzakt die binnen twee jaar; plant je er een haag, dan blijft die kwakkelen.",
+        "Grondverbetering betekent de bovenlaag losmaken en verrijken, en waar nodig de verdichte laag doorbreken. Dat is vies, eenmalig werk dat je doet als de tuin toch nog leeg is.",
+        "Dit is de meest overgeslagen stap bij nieuwbouwtuinen, en de duurste om over te doen."
+      ]
+    },
+    {
+      "kop": "Water moet ergens heen",
+      "alineas": [
+        "Nieuwbouwwijken hebben steeds vaker een verplichting om regenwater op eigen terrein te verwerken in plaats van op het riool te lozen. Ook zonder verplichting is het verstandig: een tuin die na elke bui blank staat is geen tuin.",
+        "De oplossingen lopen uiteen van simpel — afschot naar een lager punt, een grindstrook langs het terras — tot infiltratiekratten onder de bestrating. Wat past hangt af van de grondsoort en de grondwaterstand, en dat verschilt per wijk.",
+        "Combineer dit met de keuze voor verharding. Elke vierkante meter tegels is een vierkante meter die geen water opneemt, en gemeenten stellen daar in toenemende mate eisen aan."
+      ]
+    },
+    {
+      "kop": "Leg de leidingen terwijl de tuin nog open ligt",
+      "alineas": [
+        "Een buitenkraan, een stroompunt bij de schuur, verlichting langs het pad en eventueel een aansluiting voor een laadpaal of jacuzzi: al die dingen vragen een sleuf. Die sleuf graaf je nu, door zand, of later, door je nieuwe beplanting en bestrating heen.",
+        "Zelfs als je nog niet weet of je ze gaat gebruiken, is een loze leiding op de belangrijkste punten een kleine investering met een groot verschil in wat later mogelijk is.",
+        "Datzelfde geldt voor een eventuele beregening. De leiding leggen kost bijna niets zolang de grond open ligt."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Waarom verzakt mijn nieuwe terras?",
+      "a": "Vrijwel altijd omdat het op verdichte bouwgrond ligt die niet is verbeterd. Zwaar materieel tijdens de bouw perst de grond samen; daaronder zit geen stabiele opbouw en het water kan er niet weg. Bestrating op zo'n ondergrond zakt binnen een paar jaar ongelijk. De oplossing is vooraf: de grond losmaken en een goede fundering van zand of split aanbrengen."
+    },
+    {
+      "v": "Moet ik regenwater op eigen terrein verwerken?",
+      "a": "In steeds meer gemeenten geldt die verplichting bij nieuwbouw, en anders is het alsnog verstandig. Wat je nodig hebt hangt af van grondsoort en grondwaterstand: soms volstaat afschot en een grindstrook, soms zijn infiltratiekratten nodig. Vraag bij de gemeente wat er voor jouw wijk geldt."
+    },
+    {
+      "v": "Wanneer leg ik het beste tuinverlichting aan?",
+      "a": "Terwijl de tuin nog leeg is. De kabel is goedkoop, de sleuf niet — zeker niet als die door een net aangelegd terras of een borderrand moet. Zelfs als je nog niet weet waar de lampen komen, is een loze leiding naar de achterkant van de tuin een verstandige investering."
+    },
+    {
+      "v": "Hoeveel van mijn tuin mag ik bestraten?",
+      "a": "Landelijk is er geen vast maximum, maar gemeenten stellen in bestemmingsplannen en hemelwaterverordeningen steeds vaker eisen aan het percentage verharding. Los daarvan speelt het praktische punt: hoe meer verharding, hoe meer water je zelf moet bergen en hoe warmer je tuin in de zomer wordt."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Grondverbetering",
+      "waarom": "De onzichtbare basis; hierop verzakt of gedijt alles wat erna komt."
+    },
+    {
+      "type": "Bestrating en fundering",
+      "waarom": "De fundering eronder bepaalt de levensduur meer dan de tegel zelf."
+    },
+    {
+      "type": "Infiltratievoorziening",
+      "waarom": "Vaak verplicht en anders verstandig; hoort onder de bestrating."
+    },
+    {
+      "type": "Buitenkraan en buitenstopcontact",
+      "waarom": "Bij oplevering meerwerk, later graafwerk."
+    },
+    {
+      "type": "Tuinverlichting met loze leiding",
+      "waarom": "Leg de leiding nu; de lampen kies je later."
+    },
+    {
+      "type": "Schutting of haag",
+      "waarom": "Een haag heeft goede grond nodig — nog een reden om onderaan te beginnen."
+    }
+  ],
+  "meerwerk": [
+    "buitenkraan",
+    "stopcontacten",
+    "loze-leidingen"
   ]
 }

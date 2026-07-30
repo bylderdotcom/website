@@ -7,7 +7,7 @@
     "keukenblok"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "De duurste ruimte per vierkante meter en de meest ondoorzichtige prijsvorming van het hele huis. Showroomkortingen zijn geen kortingen maar een prijsstrategie.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -68,5 +68,84 @@
     "De afzuigkap pas bedenken als de keuken al getekend is.",
     "Stopcontacten tellen op de tekening in plaats van op het werkblad.",
     "Vergeten dat een kookeiland een vloerdoorvoer nodig heeft die vóór het storten van de vloer bekend moet zijn."
+  ],
+  "pagina_pad": "/ruimtes/keuken/",
+  "intro": "De keuken is de duurste ruimte per vierkante meter en de enige waar de prijsvorming systematisch ondoorzichtig is. Een showroomkorting van veertig procent is geen korting maar een prijsstrategie. Wat de keuken werkelijk kost hangt af van drie dingen die los staan van het merk op de kastdeurtjes: waar de aansluitingen liggen, wie de montage doet, en of je casco koopt.",
+  "secties": [
+    {
+      "kop": "Casco kopen is meestal goedkoper, maar niet altijd verstandiger",
+      "alineas": [
+        "Bij nieuwbouw kun je de standaardkeuken laten vervallen en casco opgeleverd krijgen. Je krijgt dan een bedrag terug en koopt zelf. Dat is bijna altijd goedkoper, en het is bijna altijd meer werk dan mensen verwachten.",
+        "Want je regelt dan zelf de afstemming: de keukenleverancier levert op een datum, de loodgieter moet vóór die datum de aansluitpunten hebben verplaatst, en de elektricien daarna. Loopt één schakel uit, dan staat je keuken in dozen in de woonkamer.",
+        "De aansluitpunten liggen bovendien al vast bij oplevering. Wil je een kookeiland waar geen doorvoer zit, dan is dat meerwerk dat vóór het storten van de vloer bekend moet zijn — niet iets wat je later met je keukenleverancier oplost."
+      ]
+    },
+    {
+      "kop": "De korting die geen korting is",
+      "alineas": [
+        "Keukenshowrooms werken met adviesprijzen die zelden iemand betaalt. Een korting van dertig tot vijftig procent op die adviesprijs is de normale gang van zaken, geen uitzondering. Dat maakt het percentage betekenisloos als vergelijkingsmaat.",
+        "Wat wel vergelijkbaar is: de eindprijs voor een gespecificeerde configuratie. Vraag daarom altijd om een offerte met per post de hoeveelheid, het merk en het type — kastenwand, werkblad, apparatuur, montage, aansluitkosten — en vergelijk die posten tussen aanbieders.",
+        "Let vooral op wat níét in de prijs zit. Aansluiten van gas, water en elektra, het afvoeren van de oude keuken en eventueel tegelwerk staan regelmatig buiten de offerte."
+      ]
+    },
+    {
+      "kop": "Waar het budget echt heen gaat",
+      "alineas": [
+        "De verhouding is voor de meeste keukens vergelijkbaar: apparatuur en werkblad zijn samen vaak de helft van het bedrag, de kasten een derde, en montage plus aansluitingen de rest.",
+        "Dat betekent dat bezuinigen op kastdeurtjes weinig oplevert en bezuinigen op apparatuur veel. Het betekent ook dat een duur werkblad — natuursteen of composiet — het snelst het budget verschuift.",
+        "De post die het vaakst wordt onderschat is de afzuiging. Een afvoer naar buiten werkt beter dan recirculatie, maar vraagt een doorvoer in gevel of dak, en dat botst met het gebalanceerde ventilatiesysteem in nieuwbouw. Die vraag hoort aan het begin van het gesprek, niet aan het eind."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Is een casco keuken goedkoper?",
+      "a": "Meestal wel: je krijgt bij nieuwbouw een bedrag terug voor de standaardkeuken en koopt zelf in, vaak tegen betere voorwaarden. Daar staat tegenover dat je zelf de planning tussen keukenleverancier, loodgieter en elektricien regelt, en dat de aansluitpunten al vastliggen. Reken op meer coördinatie dan je verwacht."
+    },
+    {
+      "v": "Wat betekent veertig procent korting bij een keukenzaak?",
+      "a": "Meestal niet veel. De adviesprijs waarop die korting wordt gegeven, wordt zelden door iemand betaald; hoge kortingen zijn in deze branche de norm. Vergelijk daarom niet de percentages maar de eindprijs voor een identieke configuratie, met per post de hoeveelheid en het type erbij."
+    },
+    {
+      "v": "Wat zit er meestal níét in een keukenofferte?",
+      "a": "Het aansluiten van water, afvoer en elektra, het verwijderen en afvoeren van de oude keuken, tegelwerk of een achterwand, en soms de montage zelf. Vraag expliciet welke van deze posten inbegrepen zijn — dit is waar offertes die op het eerste gezicht ver uiteenlopen alsnog gelijk blijken."
+    },
+    {
+      "v": "Recirculatie of afzuiging naar buiten?",
+      "a": "Afvoer naar buiten verwijdert vocht en geur echt; recirculatie filtert alleen vet en geur en laat het vocht in huis. In nieuwbouw met gebalanceerde ventilatie is een gevel- of dakdoorvoer echter niet zomaar te maken, omdat die het systeem verstoort. Vraag dit uit vóór je de keuken bestelt, niet erna."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Keukenkasten en fronten",
+      "waarom": "Een derde van het budget; de fronten bepalen het beeld maar niet de levensduur."
+    },
+    {
+      "type": "Werkblad",
+      "waarom": "Samen met de apparatuur de grootste post. Natuursteen en composiet verschuiven het budget het snelst."
+    },
+    {
+      "type": "Inbouwapparatuur",
+      "waarom": "De helft van het budget zit hier vaak; ook de post waarop het meest te besparen valt."
+    },
+    {
+      "type": "Afzuigkap of plafondunit",
+      "waarom": "Bepaalt of je een doorvoer nodig hebt, en dat raakt het ventilatiesysteem van de hele woning."
+    },
+    {
+      "type": "Kraan en spoelbak",
+      "waarom": "Een kokendwaterkraan vraagt een eigen aansluiting en ruimte in de onderkast."
+    },
+    {
+      "type": "Achterwand",
+      "waarom": "Staat regelmatig buiten de offerte terwijl hij wel nodig is."
+    }
+  ],
+  "meerwerk": [
+    "stopcontacten",
+    "lichtpunten",
+    "krachtstroom",
+    "ventilatie",
+    "loze-leidingen"
   ]
 }

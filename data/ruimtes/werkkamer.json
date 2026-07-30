@@ -7,7 +7,7 @@
     "kantoor aan huis"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "Sinds thuiswerken normaal werd de meest gevraagde extra ruimte, en de eenvoudigste om verkeerd in te richten: te weinig daglicht, verkeerde geluidsisolatie en een videobeeld met een raam pal achter je.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -60,5 +60,82 @@
   "fouten": [
     "Videobellen met het raam in de rug.",
     "Geen bekabeld netwerkpunt in de kamer waar je elke dag werkt."
+  ],
+  "pagina_pad": "/ruimtes/werkkamer/",
+  "intro": "Sinds thuiswerken normaal werd, is dit de meest gevraagde extra ruimte in Nederland. Het is ook de ruimte die het vaakst verkeerd wordt ingericht, en de fouten zijn opvallend consistent: een raam op de verkeerde plek, geen bekabeling, en te weinig geluidsisolatie naar de kamer waar de rest van het gezin zit.",
+  "secties": [
+    {
+      "kop": "De plek van het bureau is een lichtkwestie",
+      "alineas": [
+        "Zet je bureau met het raam in je rug, dan ben je in elk videogesprek een silhouet. Zet je het met het raam recht voor je, dan kijk je de hele dag tegen tegenlicht aan en zie je je eigen scherm slecht.",
+        "Haaks op het raam is bijna altijd het antwoord: daglicht van opzij, geen tegenlicht, en een camerabeeld dat klopt. Dat lijkt een detail totdat je bedenkt hoeveel uur per week je in beeld bent.",
+        "Vul aan met kunstlicht dat van voren komt in plaats van van boven. Een plafondlamp achter je maakt schaduwen op je gezicht die geen enkele camera goedmaakt."
+      ]
+    },
+    {
+      "kop": "Geluid gaat twee kanten op",
+      "alineas": [
+        "Een werkkamer naast de woonkamer betekent dat jouw gesprekken daar te horen zijn, en dat de televisie in jouw gesprek te horen is. Een standaard binnendeur houdt vrijwel niets tegen.",
+        "De goedkoopste verbetering is een zwaardere deur met een goede naaddichting rondom, inclusief de kier onderaan. Dat is verrassend effectief en kost een fractie van een wandaanpassing.",
+        "Zit de werkkamer boven een woonkamer, dan is contactgeluid het probleem: een bureaustoel op een harde vloer draagt elke beweging over. Een goede ondervloer of een vloerkleed onder de stoel lost dat op."
+      ]
+    },
+    {
+      "kop": "Bekabeling is het verschil tussen werken en klooien",
+      "alineas": [
+        "Wifi is prima tot het moment dat het niet meer prima is — precies tijdens de vergadering die ertoe doet. Een bekabeld netwerkpunt in de kamer waar je elke dag werkt, is de goedkoopste betrouwbaarheidsmaatregel die er is.",
+        "Bij nieuwbouw is een loze leiding naar de werkkamer meerwerk van tientallen euro's. Achteraf is het een kabel langs de plint of een dure powerline-oplossing.",
+        "Denk ook aan het aantal stopcontacten. Twee schermen, een laptopdock, een lamp, een telefoonlader en eventueel een printer: dat zijn zes aansluitingen op een plek waar er standaard twee zitten."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Waar zet ik mijn bureau in een werkkamer?",
+      "a": "Haaks op het raam. Met het raam in je rug word je in videogesprekken een silhouet; met het raam recht voor je kijk je tegen tegenlicht aan. Haaks krijg je daglicht van opzij zonder beide problemen. Vul aan met licht dat van voren komt, niet van boven-achter."
+    },
+    {
+      "v": "Hoe voorkom ik dat mijn gesprekken door het hele huis te horen zijn?",
+      "a": "Begin bij de deur: een zwaardere binnendeur met naaddichting rondom, inclusief de onderkant, houdt aanzienlijk meer tegen dan een standaard holle deur. Dat is de goedkoopste maatregel met het grootste effect. Pas als dat niet volstaat is een aanpassing van de wandopbouw zinvol."
+    },
+    {
+      "v": "Heb ik een bekabeld netwerkpunt nodig?",
+      "a": "Als je er elke dag werkt: ja. Wifi valt weg op het slechtste moment en is gevoelig voor buren, muren en apparatuur. Bij nieuwbouw is een loze leiding naar de werkkamer meerwerk van weinig geld; achteraf loopt de kabel langs de plint of betaal je voor een tweederangs oplossing."
+    },
+    {
+      "v": "Mag ik een bedrijf inschrijven op mijn woonadres?",
+      "a": "Meestal wel voor kantooractiviteiten aan huis, mits het woonkarakter overheerst en er geen overlast of klantverkeer van betekenis is. Het bestemmingsplan van je gemeente bepaalt de grenzen, en bij een huurwoning of VvE gelden vaak aanvullende voorwaarden."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Bureau en bureaustoel",
+      "waarom": "De stoel is de investering; het bureau is een blad."
+    },
+    {
+      "type": "Bekabeld netwerkpunt",
+      "waarom": "De goedkoopste betrouwbaarheidsmaatregel die er is."
+    },
+    {
+      "type": "Verlichting van voren",
+      "waarom": "Bepaalt hoe je in beeld komt, meer dan je camera."
+    },
+    {
+      "type": "Zwaardere deur met naaddichting",
+      "waarom": "Grootste geluidswinst per euro."
+    },
+    {
+      "type": "Verduistering of zonwering",
+      "waarom": "Tegen schittering op het scherm in de zomer."
+    },
+    {
+      "type": "Extra stopcontacten",
+      "waarom": "Zes aansluitingen op een plek waar er standaard twee zitten."
+    }
+  ],
+  "meerwerk": [
+    "stopcontacten",
+    "loze-leidingen",
+    "lichtpunten"
   ]
 }

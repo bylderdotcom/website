@@ -8,7 +8,7 @@
     "uitbreiding"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "De meest gekozen manier om een woning te vergroten, en de plek waar het verschil tussen vergunningvrij en vergunningplichtig in centimeters wordt gemeten.",
   "momenten": [
     "verbouwing"
@@ -59,5 +59,84 @@
   "fouten": [
     "De fundering van de bestaande woning niet laten beoordelen bij aansluiting.",
     "Vergeten dat een uitbouw daglicht wegneemt uit de bestaande kamer erachter."
+  ],
+  "pagina_pad": "/ruimtes/uitbouw/",
+  "intro": "Een uitbouw is de meest gekozen manier om een woning te vergroten, en de plek waar het verschil tussen vergunningvrij en vergunningplichtig letterlijk in centimeters wordt gemeten. Wie de maatvoering en het achtererfgebied begrijpt, bespaart maanden. Wie ermee gokt, staat stil.",
+  "secties": [
+    {
+      "kop": "De maatvoering bepaalt het hele traject",
+      "alineas": [
+        "Voor bijbehorende bouwwerken in het achtererfgebied gelden landelijke regels over diepte, hoogte en de afstand tot het openbaar gebied. Blijf je binnen die maten, dan is een uitbouw vergunningvrij; ga je erover, dan volgt een aanvraag met tekeningen, een constructieberekening en een doorlooptijd van weken tot maanden.",
+        "Het addertje: het bestemmingsplan kan strenger zijn dan de landelijke regels, en bij een beschermd stadsgezicht of een vergunningplichtig monument gelden ze niet. Controleer dus altijd allebei.",
+        "Kosteloos vooroverleg met de gemeente is bijna altijd mogelijk en bijna altijd de moeite waard. Een uur wachten aan een balie is goedkoper dan een handhavingsbrief."
+      ]
+    },
+    {
+      "kop": "De aansluiting op de bestaande woning is het echte werk",
+      "alineas": [
+        "Een uitbouw is constructief niet moeilijk; de aansluiting wel. De bestaande fundering moet de nieuwe belasting kunnen opnemen, of er komt een eigen fundering die anders zet dan het bestaande huis. Dat verschil in zetting is waar scheuren ontstaan.",
+        "Ook de vloer vraagt aandacht. Wil je één doorlopend niveau, dan moet de nieuwe vloeropbouw exact aansluiten op de bestaande — inclusief isolatie en eventuele vloerverwarming. Een drempel van drie centimeter is een detail dat je twintig jaar ziet.",
+        "En de verwarming: een uitbouw met vloerverwarming die je aansluit op de bestaande installatie vraagt een eigen groep en soms een zwaardere pomp. Dat is een installatievraag, geen bouwvraag, en hij wordt daarom regelmatig door beide partijen overgeslagen."
+      ]
+    },
+    {
+      "kop": "Wat je wint, en wat je verliest",
+      "alineas": [
+        "Vierkante meters winnen is de reden dat je begint. Wat je verliest is daglicht in de kamer erachter — de bestaande achtergevel wordt een binnenmuur, en het raam dat daar zat verdwijnt of komt in een donkere zone terecht.",
+        "Dat is oplosbaar met een lichtstraat in het dak van de uitbouw, of door de opening tussen oud en nieuw fors te maken. Beide kosten geld en beide moeten in het ontwerp zitten, niet erna.",
+        "Tel ook je tuin mee. Een uitbouw van vier meter diep in een tuin van acht meter halveert je buitenruimte. Dat is geen bezwaar, maar het is wel een afweging die pas voelbaar wordt als het staat."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Is een uitbouw vergunningvrij?",
+      "a": "Binnen het achtererfgebied vaak wel, mits je binnen de landelijke maten voor diepte en hoogte blijft. Maar het bestemmingsplan kan strenger zijn, en bij een monument of beschermd stadsgezicht gelden de vrijstellingen niet. Controleer beide vóór je begint, en vraag zo nodig kosteloos vooroverleg aan bij de gemeente."
+    },
+    {
+      "v": "Kan mijn fundering een uitbouw dragen?",
+      "a": "Dat is een vraag voor een constructeur, niet voor de aannemer alleen. De uitbouw krijgt meestal een eigen fundering, en het risico zit in het verschil in zetting tussen oud en nieuw. Bij oudere woningen met een ondiepe of houten fundering is dit de belangrijkste kostenpost en soms de reden om af te zien van het plan."
+    },
+    {
+      "v": "Wordt mijn woonkamer donker van een uitbouw?",
+      "a": "Ja, tenzij je daar in het ontwerp iets tegen doet. De bestaande achtergevel wordt een binnenmuur en het daglicht moet verder reizen. Een lichtstraat in het dak van de uitbouw of een ruime opening tussen oud en nieuw lost dat op; beide moeten vanaf het begin in het plan zitten."
+    },
+    {
+      "v": "Verhoogt een uitbouw de waarde van mijn huis?",
+      "a": "Meestal wel, maar zelden met het volledige bedrag van de investering, en het hangt sterk af van de verhouding tussen woonoppervlak en tuin. In een wijk waar tuinen klein zijn, kan het wegnemen van buitenruimte de waarde juist drukken."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Kozijnpui of schuifpui",
+      "waarom": "Bepaalt hoeveel daglicht er terugkomt en is de grootste post in de gevel."
+    },
+    {
+      "type": "Lichtstraat of dakraam",
+      "waarom": "De enige manier om de kamer erachter licht te houden."
+    },
+    {
+      "type": "Vloerisolatie en dekvloer",
+      "waarom": "Moet exact aansluiten op de bestaande opbouw, anders krijg je een drempel."
+    },
+    {
+      "type": "Vloerverwarmingsgroep",
+      "waarom": "Een uitbouw op de bestaande installatie vraagt een eigen groep."
+    },
+    {
+      "type": "Isolatie dak en wanden",
+      "waarom": "Een slecht geïsoleerde uitbouw is de koudste kamer van het huis."
+    },
+    {
+      "type": "Buitenkraan en buitenstopcontact",
+      "waarom": "De tuin verandert; de aansluitingen die er zaten zitten nu binnen."
+    }
+  ],
+  "meerwerk": [
+    "uitbouw",
+    "schuifpui",
+    "vloerverwarming",
+    "stopcontacten",
+    "buitenkraan"
   ]
 }
