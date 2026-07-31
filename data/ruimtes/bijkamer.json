@@ -8,7 +8,7 @@
     "extra kamer"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "De kamer zonder vaste bestemming: vandaag logeerkamer, over twee jaar kinderkamer of kantoor. Juist daarom loont het om hem neutraal en flexibel op te leveren.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -51,5 +51,82 @@
   ],
   "fouten": [
     "Inrichten op een gebruik dat over een jaar verandert, met vaste kasten en al."
+  ],
+  "pagina_pad": "/ruimtes/bijkamer/",
+  "intro": "De kamer zonder vaste bestemming: vandaag logeerkamer, over twee jaar kinderkamer of kantoor. Juist dat maakt hem lastig — een kamer die alles moet kunnen, wordt zelden ergens goed in. De oplossing is niet flexibel inrichten maar flexibel vóórbereiden.",
+  "secties": [
+    {
+      "kop": "Kies één hoofdgebruik, houd de rest mogelijk",
+      "alineas": [
+        "Een kamer die tegelijk logeerkamer, kantoor en opbergruimte is, functioneert in geen van die rollen. Kies daarom wat het nú is, en richt daarop in.",
+        "Wat je wél flexibel houdt, zijn de voorzieningen. Stopcontacten aan meerdere wanden, een dataleiding, en verlichting die je kunt dimmen: die drie maken elke toekomstige invulling mogelijk zonder dat je iets hoeft te verbouwen.",
+        "Vaste inbouwkasten zijn hier juist onverstandig. Ze zijn ontworpen op het huidige gebruik en staan de volgende invulling in de weg."
+      ]
+    },
+    {
+      "kop": "De logeerkamer die niemand gebruikt",
+      "alineas": [
+        "Een kamer die het grootste deel van het jaar leegstaat voor gasten die drie keer per jaar komen, is dure vierkante meters. Een opklapbed of een goede slaapbank maakt van dezelfde ruimte een werkkamer of hobbykamer die je wél dagelijks gebruikt.",
+        "Bedenk daarbij dat een opklapbed diepte nodig heeft en dat de wand waar hij aan hangt draagkracht moet hebben. Dat is bij een lichte binnenwand niet vanzelfsprekend.",
+        "En dat een gast meer nodig heeft dan een bed: een plek voor een koffer, een stopcontact bij het bed, en verduistering."
+      ]
+    },
+    {
+      "kop": "Geluid bepaalt of hij bruikbaar is",
+      "alineas": [
+        "Een bijkamer grenst vaak aan een slaapkamer of ligt boven de woonkamer. Wordt het een werkkamer of hobbyruimte, dan is geluid de eerste beperking waar je tegenaan loopt.",
+        "Een zwaardere binnendeur met naaddichting is ook hier de goedkoopste winst. Voor contactgeluid van boven naar beneden helpt een goede ondervloer meer dan wat dan ook.",
+        "Weet je al dat er muziek gemaakt of vergaderd gaat worden, neem dan isolatie in de scheidingswand mee bij de bouw. Achteraf is dat een verbouwing."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Wat doe ik met een extra kamer die ik nog niet nodig heb?",
+      "a": "Voorzie hem ruim en richt hem sober in. Stopcontacten aan meerdere wanden, een dataleiding en dimbare verlichting maken elke toekomstige invulling mogelijk. Vaste inbouwkasten zijn juist onhandig: die zijn ontworpen op het gebruik van nu en staan de volgende invulling in de weg."
+    },
+    {
+      "v": "Is een opklapbed een goed idee in een logeerkamer?",
+      "a": "Vaak wel, want het maakt van een kamer die drie keer per jaar wordt gebruikt een ruimte die je dagelijks kunt gebruiken. Let op twee dingen: een opklapbed heeft aanzienlijke diepte nodig, en de wand waar hij aan hangt moet het gewicht kunnen dragen. Bij een lichte binnenwand is dat niet vanzelfsprekend."
+    },
+    {
+      "v": "Hoe maak ik een bijkamer geschikt om in te werken?",
+      "a": "Begin bij geluid en licht, niet bij het meubilair. Een zwaardere deur met naaddichting geeft de meeste geluidswinst per euro. Zet het bureau haaks op het raam voor bruikbaar daglicht zonder tegenlicht, en zorg voor een bekabeld netwerkpunt als je er echt gaat werken."
+    },
+    {
+      "v": "Telt een bijkamer mee als slaapkamer bij verkoop?",
+      "a": "Als hij aan de eisen voor een verblijfsruimte voldoet — voldoende oppervlak, daglicht en ventilatie — wordt hij doorgaans als kamer meegeteld. Een kamer zonder raam telt niet mee, hoe bruikbaar hij verder ook is. Dat verschil kan bij verkoop aanzienlijk uitmaken."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Opklapbed of goede slaapbank",
+      "waarom": "Maakt van een kamer voor drie nachten per jaar een ruimte voor elke dag."
+    },
+    {
+      "type": "Zwaardere deur met naaddichting",
+      "waarom": "De grootste geluidswinst per euro."
+    },
+    {
+      "type": "Losse kasten in plaats van inbouw",
+      "waarom": "De invulling verandert; de kast hoeft niet mee te verhuizen."
+    },
+    {
+      "type": "Dataleiding of loze leiding",
+      "waarom": "Bij oplevering weinig geld, later een kabel langs de plint."
+    },
+    {
+      "type": "Verduistering",
+      "waarom": "Een gast slaapt slecht in een kamer waar het om vijf uur licht is."
+    },
+    {
+      "type": "Dimbare verlichting",
+      "waarom": "Werken vraagt ander licht dan logeren."
+    }
+  ],
+  "meerwerk": [
+    "stopcontacten",
+    "loze-leidingen",
+    "lichtpunten"
   ]
 }

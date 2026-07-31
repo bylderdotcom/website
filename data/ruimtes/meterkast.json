@@ -7,7 +7,7 @@
     "elektrakast"
   ],
   "type": "technisch",
-  "status": "node",
+  "status": "pagina",
   "kern": "Twintig jaar geleden een kastje met zes groepen; nu het knelpunt van elke verduurzaming. Laadpaal, zonnepanelen, warmtepomp en inductie vragen allemaal ruimte en capaciteit die er vaak niet is.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -44,5 +44,81 @@
   "fouten": [
     "Een laadpaal bestellen voordat iemand naar de meterkast heeft gekeken.",
     "Vergeten dat verzwaren van de aansluiting maanden levertijd kan hebben."
+  ],
+  "pagina_pad": "/ruimtes/meterkast/",
+  "intro": "Twintig jaar geleden een kastje met zes groepen. Nu het knelpunt van vrijwel elke verduurzaming: laadpaal, warmtepomp, inductie en zonnepanelen vragen allemaal ruimte en capaciteit die er in de meeste woningen niet is. Wie een laadpaal bestelt zonder eerst hier te kijken, koopt een paal en geen oplossing.",
+  "secties": [
+    {
+      "kop": "Groepen en capaciteit zijn twee verschillende dingen",
+      "alineas": [
+        "Er zijn twee grenzen, en mensen halen ze door elkaar. De eerste is fysiek: hoeveel groepen passen er nog in de kast. De tweede is de aansluiting: hoeveel stroom mag er in totaal doorheen, uitgedrukt in ampère per fase.",
+        "Een volle groepenkast los je op met een grotere kast of een onderverdeler — vervelend maar overzichtelijk. Een te krappe aansluiting los je alleen op door verzwaren, en dat vraagt een aanvraag bij de netbeheerder.",
+        "Kijk daarom eerst welke van de twee je tegenkomt. Op het typeplaatje van de hoofdzekering staat de aansluitwaarde; de meest voorkomende is drie keer vijfentwintig ampère."
+      ]
+    },
+    {
+      "kop": "Waarom verzwaren tegenwoordig het probleem is",
+      "alineas": [
+        "Netbeheerders hebben te maken met netcongestie: op veel plekken zit het net vol. Een verzwaringsaanvraag die vroeger weken duurde, kan nu maanden tot langer duren, en in sommige gebieden wordt hij geweigerd.",
+        "Dat betekent dat verzwaren geen vanzelfsprekende uitweg meer is. Vraag het aan zodra je vermoedt dat je het nodig hebt, niet als je de laadpaal al besteld hebt.",
+        "De praktische tussenoplossing is load balancing: een systeem dat de laadpaal terugregelt zodra de rest van het huis stroom vraagt. Je auto laadt dan iets langzamer, maar de hoofdzekering slaat niet af. Voor de meeste huishoudens is dat ruim voldoende."
+      ]
+    },
+    {
+      "kop": "De volgorde waarin je dit aanpakt",
+      "alineas": [
+        "Begin bij de inventarisatie: wat is je aansluitwaarde, hoeveel groepen zijn vrij, en wat is er al aangesloten. Een elektricien doet dit in een half uur en het voorkomt alle verrassingen die daarna komen.",
+        "Bepaal dan de volgorde van je plannen. Inductie, warmtepomp, laadpaal en zonnepanelen tellen allemaal mee, maar niet allemaal tegelijk: zonnepanelen leveren juist terug, en een warmtepomp draait vooral als je niet laadt.",
+        "En vergeet de dataruimte niet. In veel nieuwbouw zit de meterkast ook vol met de aansluiting voor internet en soms de modem. Een meterkast die dichtgebouwd is met een groepenkast plus netwerkapparatuur wordt warm, en warmte is niet goed voor beide."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Hoeveel groepen heb ik nodig voor een laadpaal?",
+      "a": "Eén eigen groep, met de juiste beveiliging. Belangrijker dan het aantal groepen is of je aansluiting het aankan: bij drie keer vijfentwintig ampère samen met inductie en een warmtepomp kan het krap worden. Laat een elektricien de aansluitwaarde en de bestaande belasting beoordelen voordat je bestelt."
+    },
+    {
+      "v": "Wat kost het verzwaren van mijn aansluiting?",
+      "a": "Het bedrag verschilt per netbeheerder en situatie, maar de doorlooptijd is op dit moment het grotere probleem: door netcongestie kan een aanvraag maanden duren en in sommige gebieden wordt hij geweigerd. Vraag daarom vroeg aan, en overweeg load balancing als tussenoplossing — dat werkt vaak goed genoeg."
+    },
+    {
+      "v": "Wat is load balancing bij een laadpaal?",
+      "a": "Een systeem dat meet hoeveel stroom de rest van het huis gebruikt en de laadpaal automatisch terugregelt als het totaal tegen de grens van je aansluiting loopt. Je auto laadt dan tijdelijk langzamer in plaats van dat de hoofdzekering eruit vliegt. Voor vrijwel elk huishouden is dat een prima oplossing en aanzienlijk sneller geregeld dan verzwaren."
+    },
+    {
+      "v": "Mag ik zelf iets in de meterkast aanpassen?",
+      "a": "Aan de installatie achter de meter mag je in Nederland zelf werken, maar het moet voldoen aan de normen en bij fouten ligt de aansprakelijkheid bij jou. Aan de meter en de hoofdaansluiting zelf mag alleen de netbeheerder of een erkend installateur komen. Voor een laadpaal of een nieuwe groepenkast is een elektricien hoe dan ook verstandiger — ook omdat verzekeraars ernaar kunnen vragen."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Groepenkast of onderverdeler",
+      "waarom": "Een volle kast is een ander probleem dan een te krappe aansluiting."
+    },
+    {
+      "type": "Load balancing voor de laadpaal",
+      "waarom": "Sneller en goedkoper geregeld dan verzwaren van de aansluiting."
+    },
+    {
+      "type": "Aardlekschakelaars per groep",
+      "waarom": "Eén aardlek voor het hele huis betekent dat alles uitvalt bij één fout."
+    },
+    {
+      "type": "Overspanningsbeveiliging",
+      "waarom": "Beschermt warmtepomp, omvormer en apparatuur bij blikseminslag in de buurt."
+    },
+    {
+      "type": "Netwerkpatchkast",
+      "waarom": "In nieuwbouw komt de internetaansluiting hier binnen; warmte is de vijand."
+    },
+    {
+      "type": "Verlichting in de meterkast",
+      "waarom": "Je kijkt hier altijd op het slechtst denkbare moment."
+    }
+  ],
+  "meerwerk": [
+    "krachtstroom",
+    "loze-leidingen"
   ]
 }

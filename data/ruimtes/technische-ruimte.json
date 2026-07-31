@@ -7,7 +7,7 @@
     "warmtepompruimte"
   ],
   "type": "technisch",
-  "status": "node",
+  "status": "pagina",
   "kern": "In gasloze nieuwbouw de nieuwe hoeksteen van het huis: warmtepomp, boilervat, ventilatie-unit en omvormer staan hier bij elkaar. Weinig mensen weten dat deze ruimte bestaat tot er iets piept.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -48,5 +48,81 @@
   "fouten": [
     "De installatie dichttimmeren met kasten waardoor onderhoud onmogelijk wordt.",
     "Grenzend aan een slaapkamer plaatsen zonder geluidsmaatregelen."
+  ],
+  "pagina_pad": "/ruimtes/technische-ruimte/",
+  "intro": "In gasloze nieuwbouw is dit de nieuwe hoeksteen van de woning: warmtepomp, boilervat, ventilatie-unit en omvormer staan hier bij elkaar. De meeste bewoners weten niet dat de ruimte bestaat tot er iets piept — en dan blijkt dat er een kast voor staat.",
+  "secties": [
+    {
+      "kop": "Vier apparaten die elkaar in de weg zitten",
+      "alineas": [
+        "De binnenunit van de warmtepomp, het boilervat, de ventilatie-unit met warmteterugwinning en de omvormer van de zonnepanelen: samen zijn dat vier apparaten met elk hun eigen eisen aan vrije ruimte, geluid en warmteafgifte.",
+        "Fabrikanten schrijven servicezones voor: hoeveel vrije ruimte er rond en boven een apparaat moet blijven om onderhoud mogelijk te maken. Die zones staan in de handleiding en worden bij het inrichten stelselmatig genegeerd.",
+        "Het gevolg merk je pas jaren later, bij de eerste storing: een monteur die er niet bij kan, kan er ook niet aan werken. Dan moet de kast eruit die je er zelf omheen hebt gebouwd."
+      ]
+    },
+    {
+      "kop": "Geluid is de onderschatte factor",
+      "alineas": [
+        "Een warmtepomp-binnenunit maakt continu geluid: een lage bromtoon met soms een tik als hij schakelt. Overdag hoor je het niet, 's nachts wel — zeker als de technische ruimte aan een slaapkamer grenst.",
+        "Bij nieuwbouw is de plek van deze ruimte bepaald door de installateur, niet door een akoestisch adviseur. Grenst hij aan een slaapkamer, dan is geluidsisolatie in de scheidingswand een meerwerkpost die je vóór de bouw moet aanvragen.",
+        "Ook trillingen tellen mee: een unit die direct op een houten vloer staat, brengt trilling over op de constructie. Trillingsdempers onder het toestel zijn een kleine ingreep met een groot effect."
+      ]
+    },
+    {
+      "kop": "Onderhoud dat niemand inplant",
+      "alineas": [
+        "Een warmtepomp en een ventilatie-unit hebben periodiek onderhoud nodig, en de filters van een WTW-unit moeten een paar keer per jaar worden vervangen of schoongemaakt. Gebeurt dat niet, dan daalt het rendement en gaat de ventilatie slechter werken.",
+        "Dat is geen groot werk, maar het vraagt wel dat je erbij kunt en dat je weet dat het moet. Bij oplevering zit er meestal een map bij met de handleidingen; die verdwijnt vaak ongelezen in een la.",
+        "Leg de filtermaten en de onderhoudsintervallen ergens vast waar je ze terugvindt. Dat is de goedkoopste manier om het rendement van een dure installatie op peil te houden."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Waar staat de warmtepomp in een nieuwbouwwoning?",
+      "a": "Meestal in een aparte technische ruimte of in de bijkeuken, samen met het boilervat en de ventilatie-unit. Belangrijk zijn drie dingen: vrije ruimte rondom voor onderhoud, geluid richting aangrenzende ruimtes, en warmteafgifte in een kleine ruimte. Grenst de ruimte aan een slaapkamer, vraag dan om geluidsisolatie in de scheidingswand."
+    },
+    {
+      "v": "Hoeveel ruimte moet er rond een warmtepomp vrij blijven?",
+      "a": "Dat schrijft de fabrikant voor in de handleiding, en het verschilt per model. Houd die servicezone echt vrij: een monteur die niet bij het toestel kan, kan er ook niet aan werken. Kasten of een ombouw die je er zelf omheen bouwt, moeten in dat geval weer weg."
+    },
+    {
+      "v": "Hoe vaak moet ik de filters van de ventilatie-unit vervangen?",
+      "a": "Meestal een paar keer per jaar, afhankelijk van het model en de omgeving. Vuile filters verlagen het rendement en verslechteren de luchtkwaliteit merkbaar. Noteer de filtermaten en het interval ergens waar je ze terugvindt; de handleidingenmap uit de oplevering raakt bij vrijwel iedereen kwijt."
+    },
+    {
+      "v": "Mijn warmtepomp maakt geluid — is dat normaal?",
+      "a": "Een lage bromtoon en af en toe een schakeltik horen erbij. Storend wordt het meestal door trillingsoverdracht: staat het toestel direct op een houten vloer of tegen een lichte wand, dan versterkt de constructie het geluid. Trillingsdempers onder het toestel en isolatie in de scheidingswand lossen dat meestal op."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Trillingsdempers onder de unit",
+      "waarom": "Trillingsoverdracht op de constructie is vaker het probleem dan het toestel zelf."
+    },
+    {
+      "type": "Geluidsisolerende wandopbouw",
+      "waarom": "Vooral als de ruimte aan een slaapkamer grenst."
+    },
+    {
+      "type": "Reservefilters voor de WTW-unit",
+      "waarom": "Een paar keer per jaar nodig; zonder voorraad wordt het uitgesteld."
+    },
+    {
+      "type": "Afneembare ombouwpanelen",
+      "waarom": "Netjes wegwerken zonder de servicezone te blokkeren."
+    },
+    {
+      "type": "Waterslot en lekbak",
+      "waarom": "Een lekkend boilervat in een dichte ruimte vind je pas als het door de vloer komt."
+    },
+    {
+      "type": "Slimme energiemeter",
+      "waarom": "Zonder meting weet je niet wat je installatie werkelijk verbruikt."
+    }
+  ],
+  "meerwerk": [
+    "ventilatie",
+    "krachtstroom"
   ]
 }

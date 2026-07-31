@@ -58,5 +58,7 @@
     "Kit als waterdichting beschouwen.",
     "Ventilatie te licht kiezen voor een ruimte zonder raam.",
     "Elektra plaatsen zonder de zone-indeling van natte ruimtes aan te houden."
-  ]
+  ],
+  "verwijs_pad": "/badkamer/",
+  "verwijs_reden": "Deze ruimte heeft al een eigen laag op Bylder: de badkamer-vakpillar met marktprijzen en bedrijven per gemeente. Een tweede pagina over hetzelfde onderwerp zou daarmee concurreren."
 }

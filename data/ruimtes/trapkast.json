@@ -7,7 +7,7 @@
     "meterkastruimte"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "De enige ruimte in een doorsnee woning die vrijwel altijd verkeerd wordt gebruikt: als rommelhok, terwijl er met maatwerk drie keer zoveel in past.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -46,5 +46,81 @@
   ],
   "fouten": [
     "Geen licht en geen stopcontact — dan wordt het per definitie een rommelhok."
+  ],
+  "pagina_pad": "/ruimtes/trapkast/",
+  "intro": "De enige ruimte in een doorsnee woning die vrijwel altijd verkeerd wordt gebruikt. Een deur en een donker gat worden binnen een maand een rommelhok, terwijl er met maatwerk drie keer zoveel in past. Het verschil zit in twee dingen die niets met opbergen te maken hebben: licht en een stopcontact.",
+  "secties": [
+    {
+      "kop": "De schuine achterwand is het hele probleem",
+      "alineas": [
+        "Een trapkast heeft een aflopend plafond en een diepte die je met een gewone kast nooit bereikt. Zet je er planken in, dan gebruik je de voorste vijftig centimeter en verdwijnt de rest in het donker.",
+        "Uittrekbare elementen lossen dat op: laden of een uitrijdbare kastwand die de volledige diepte naar je toe brengt. Dat is maatwerk en het kost meer dan een deur met planken, maar het verschil in bruikbaarheid is een factor, geen percentage.",
+        "Meet vóór je iets bestelt de hoogte aan de voorkant, de hoogte achterin, en de diepte. Die drie maten bepalen welk systeem past."
+      ]
+    },
+    {
+      "kop": "Licht en stroom maken het verschil",
+      "alineas": [
+        "Een trapkast zonder licht wordt een plek waar je met je telefoon in de hand naar iets zoekt. Een simpele lamp met een deurcontactschakelaar — aan als de deur opengaat — is een ingreep van weinig geld die het gebruik volledig verandert.",
+        "Een stopcontact is de tweede. De stofzuiger staat hier, en die wil je kunnen opladen. Hetzelfde geldt voor een robotstofzuiger, die een vaste plek met stroom nodig heeft en die nergens beter staat dan hier.",
+        "Beide zijn bij oplevering meerwerk van beperkte omvang en achteraf een kabel door de halwand."
+      ]
+    },
+    {
+      "kop": "Soms is het de beste plek voor iets anders",
+      "alineas": [
+        "In sommige woningen is de trapkast groot genoeg voor meer dan opslag. Een wasmachine past er soms in, mits er een afvoer bij kan. Een thuiswerkplek voor incidenteel gebruik ook, mits er licht en lucht is.",
+        "Denk ook aan de meterkast: in veel nieuwbouw grenst die aan of ligt hij in dezelfde zone. Combineren scheelt ruimte elders in de hal.",
+        "Wat je hier niet moet doen: brandbare spullen opslaan pal naast de meterkast, of accu's laden in een afgesloten ruimte zonder ventilatie."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Wat past er in een trapkast?",
+      "a": "Meer dan de meeste mensen erin krijgen. Met planken gebruik je de voorste vijftig centimeter; met uittrekbare laden of een uitrijdbare kastwand benut je de volledige diepte. Meet de hoogte vooraan, de hoogte achterin en de diepte — die drie maten bepalen welk systeem past."
+    },
+    {
+      "v": "Hoe krijg ik licht in mijn trapkast?",
+      "a": "Met een lamp op een deurcontactschakelaar: aan zodra de deur opengaat, uit als hij dichtgaat. Bij oplevering is dat meerwerk van beperkte omvang. Zonder licht wordt een trapkast onvermijdelijk een plek waar je met je telefoon in de hand naar dingen zoekt."
+    },
+    {
+      "v": "Kan er een wasmachine in de trapkast?",
+      "a": "Soms, mits er een wateraansluiting, een afvoer en een geaarde groep bij kunnen, en mits de ruimte hoog genoeg is. Let op ventilatie: een wasmachine in een afgesloten kast zonder luchtafvoer levert vocht op dat nergens heen kan. Een bijkeuken is bijna altijd de betere plek."
+    },
+    {
+      "v": "Mag ik accu's laden in een trapkast?",
+      "a": "Liever niet. Een afgesloten ruimte zonder ventilatie, vaak grenzend aan de meterkast en vol met spullen, is de slechtst denkbare plek om een e-bike-accu te laden. Doe dat op een vaste plek in een berging of garage, op een onbrandbare ondergrond."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Uittrekbare laden op maat",
+      "waarom": "Benutten de diepte die je met planken nooit bereikt."
+    },
+    {
+      "type": "Lamp met deurcontactschakelaar",
+      "waarom": "Verandert het gebruik van de kast volledig."
+    },
+    {
+      "type": "Stopcontact voor stofzuiger of robot",
+      "waarom": "De logische thuisbasis, mits er stroom is."
+    },
+    {
+      "type": "Ondiepe planken vooraan",
+      "waarom": "Voor wat je dagelijks pakt, zonder de diepte te blokkeren."
+    },
+    {
+      "type": "Deur met greep in plaats van knop",
+      "waarom": "Je opent hem met je handen vol."
+    },
+    {
+      "type": "Vlakke plint bij de drempel",
+      "waarom": "Een robotstofzuiger komt anders zijn eigen kast niet uit."
+    }
+  ],
+  "meerwerk": [
+    "lichtpunten",
+    "stopcontacten"
   ]
 }

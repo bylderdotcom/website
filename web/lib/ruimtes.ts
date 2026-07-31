@@ -37,6 +37,8 @@ export type Ruimte = {
   verwante_ruimtes?: string[]
   paden?: string[]
   pagina_pad?: string
+  verwijs_pad?: string
+  verwijs_reden?: string
   intro?: string
   secties?: Sectie[]
 }
@@ -167,7 +169,7 @@ export function renderRuimte(r: Ruimte): string {
   if (verwant.length) {
     d.push('<div class="divider"></div><h2>Grenst aan</h2><div class="grid-3">')
     for (const v of verwant) {
-      const href = v.status === 'pagina' ? (v.pagina_pad ?? `/ruimtes/${v.slug}/`) : null
+      const href = v.status === 'pagina' ? (v.pagina_pad ?? `/ruimtes/${v.slug}/`) : (v.verwijs_pad ?? null)
       const inner = `<div class="tile-t">${esc(v.naam)}</div><div class="tile-d">${esc(v.kern.split('.')[0])}.</div>`
       d.push(href ? `<a href="${href}" class="tile">${inner}</a>` : `<div class="tile tile-uit">${inner}</div>`)
     }
@@ -203,11 +205,16 @@ export function renderIndex(): string {
     if (!rs?.length) continue
     d.push(`<h2>${kop}</h2><div class="grid-3">`)
     for (const r of rs) {
-      const href = r.status === 'pagina' ? (r.pagina_pad ?? `/ruimtes/${r.slug}/`) : null
+      // Drie soorten tegels: een eigen ruimtepagina, een verwijzing naar bestaande
+      // content elders op de site (badkamer, slaapkamer), of alleen een node.
+      const href = r.status === 'pagina' ? (r.pagina_pad ?? `/ruimtes/${r.slug}/`) : (r.verwijs_pad ?? null)
       const n = r.beslissingen.length
+      const label = r.status === 'pagina'
+        ? `${n} beslissing${n === 1 ? '' : 'en'}`
+        : r.verwijs_pad ? 'eigen hub op Bylder' : `${n} beslissing${n === 1 ? '' : 'en'} &middot; nog geen pagina`
       const inner = `<div class="tile-t">${esc(r.naam)}</div>
         <div class="tile-d">${esc(r.kern.split('.')[0])}.</div>
-        <div class="tile-m">${n} beslissing${n === 1 ? '' : 'en'}${href ? '' : ' &middot; nog geen pagina'}</div>`
+        <div class="tile-m">${label}</div>`
       d.push(href ? `<a href="${href}" class="tile">${inner}</a>` : `<div class="tile tile-uit">${inner}</div>`)
     }
     d.push('</div>')

@@ -7,7 +7,7 @@
     "zitkamer"
   ],
   "type": "binnen",
-  "status": "node",
+  "status": "pagina",
   "kern": "Te breed om één contenthub te zijn en te belangrijk om over te slaan: dit is een verzamelplek die doorverwijst naar vloer, verlichting, raamdecoratie en meubels.",
   "momenten": [
     "nieuwbouw-oplevering",
@@ -52,5 +52,83 @@
   "fouten": [
     "Verlichting plannen zonder te weten waar de meubels staan.",
     "Vergeten dat vloerverwarming de keuze van de vloerafwerking beperkt."
+  ],
+  "pagina_pad": "/ruimtes/woonkamer/",
+  "intro": "De woonkamer is te breed om één onderwerp te zijn: hij gaat over vloeren, licht, akoestiek, raamdecoratie en meubels tegelijk. Wat hem wél tot één beslissing maakt, is de volgorde — want twee keuzes die je bij de oplevering maakt, bepalen daarna twintig jaar wat er nog kan.",
+  "secties": [
+    {
+      "kop": "De twee beslissingen die vastliggen na oplevering",
+      "alineas": [
+        "De eerste is de plek van de aansluitingen. Waar de tv komt en waar de bank staat, bepaalt waar je stopcontacten en data nodig hebt. Standaard nieuwbouw levert twee tot drie punten per wand, zelden op de plek waar je ze wilt.",
+        "De tweede is de vloer, en dan vooral de vraag of hij doorloopt naar de keuken en de hal. Een doorlopende vloer maakt een woning optisch groter en is achteraf niet meer te maken zonder alles eruit te halen.",
+        "Beide zijn bij oplevering meerwerk van overzichtelijke omvang. Beide zijn daarna een kabelgoot of een verbouwing."
+      ]
+    },
+    {
+      "kop": "Vloerverwarming beperkt je vloerkeuze",
+      "alineas": [
+        "In vrijwel alle nieuwbouw ligt vloerverwarming, en dat is de belangrijkste beperking bij het kiezen van een vloerafwerking. Niet elk materiaal en niet elke opbouw geleidt warmte goed genoeg door, en een te isolerende vloer maakt de verwarming traag en duur.",
+        "Let op de warmteweerstand van de totale opbouw, inclusief ondervloer en eventuele geluidsisolatie. Die twee samen bepalen het, niet de vloer alleen.",
+        "En houd rekening met de opstooktijd: vloerverwarming reageert traag. Een vloer die goed geleidt maakt dat verschil merkbaar kleiner."
+      ]
+    },
+    {
+      "kop": "Akoestiek is het onderschatte deel",
+      "alineas": [
+        "Nieuwbouw is hard: gladde wanden, een harde vloer, grote raampartijen en weinig textiel. Het gevolg is galm, en dat merk je pas als je er woont — gesprekken worden vermoeiend en de televisie moet harder.",
+        "De oplossingen zijn niet technisch: een groot vloerkleed, gordijnen van voldoende gewicht in plaats van dunne panelen, en een boekenkast doen samen meer dan welk akoestisch paneel ook.",
+        "Reken er bij je budget op. Gordijnen op maat voor een grote pui zijn een serieuze post die in de verhuisbegroting vaak ontbreekt."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Waar moeten stopcontacten in een woonkamer?",
+      "a": "Op de plekken die je meubelopstelling bepaalt, niet op de plekken die de standaardtekening bepaalt. Bepaal dus eerst waar de tv en de bank komen. Reken bij de tv op minstens vier aansluitingen plus een dataleiding, en zorg voor een punt bij de plek waar je zit — voor een schemerlamp en om je telefoon te laden."
+    },
+    {
+      "v": "Welke vloer kan op vloerverwarming?",
+      "a": "Materialen die warmte goed doorgeven: tegels, gietvloeren en de meeste PVC-vloeren zijn geschikt. Hout en laminaat kunnen ook, mits de totale opbouw inclusief ondervloer een lage warmteweerstand heeft. Kijk dus naar de hele opbouw en niet naar de vloer alleen — de ondervloer maakt hier het verschil."
+    },
+    {
+      "v": "Waarom galmt mijn nieuwbouwwoonkamer?",
+      "a": "Omdat er niets is dat geluid absorbeert: gladde wanden, een harde vloer, grote ramen en weinig textiel. Dat is normaal en goed op te lossen zonder technische maatregelen — een groot vloerkleed, zware gordijnen en een gevulde boekenkast doen samen het meeste werk."
+    },
+    {
+      "v": "Moet mijn vloer doorlopen naar de keuken?",
+      "a": "Het maakt een woning optisch groter en voorkomt een profiel op een plek waar je dagelijks overheen loopt. Voorwaarde is dat de vloer tegen de omstandigheden in de keuken kan — water, vet en zwaardere belasting. Kies je een materiaal dat dat niet aankan, dan is een bewuste overgang beter dan een compromis."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Vloerafwerking geschikt voor vloerverwarming",
+      "waarom": "De totale opbouw telt, niet de vloer alleen."
+    },
+    {
+      "type": "Zware gordijnen of raamdecoratie",
+      "waarom": "Doet meer tegen galm dan welk akoestisch paneel ook."
+    },
+    {
+      "type": "Groot vloerkleed",
+      "waarom": "De goedkoopste akoestische maatregel die er is."
+    },
+    {
+      "type": "Data- en tv-aansluiting op meubelhoogte",
+      "waarom": "Bepaal eerst de opstelling, dan pas de punten."
+    },
+    {
+      "type": "Dimbare verlichting in zones",
+      "waarom": "Eén plafondpunt maakt van elke avond dezelfde avond."
+    },
+    {
+      "type": "Vloercontactdoos",
+      "waarom": "Nodig zodra de bank of het tv-meubel los van de wand staat."
+    }
+  ],
+  "meerwerk": [
+    "stopcontacten",
+    "lichtpunten",
+    "loze-leidingen",
+    "vloerverwarming"
   ]
 }
