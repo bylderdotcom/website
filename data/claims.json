@@ -1,0 +1,58 @@
+{
+  "_doc": "Regelboek voor scripts/check_claims.py. Elke fout die we ooit gemaakt hebben wordt hier een regel, anders maken we hem volgend jaar opnieuw. Patronen zijn Python-regex, hoofdletterongevoelig.",
+  "gekoppelde_claims": [
+    {
+      "naam": "auping-voorwaarde",
+      "wanneer": "10\\s?% korting",
+      "alleen_als": "Auping",
+      "dan_ook": "lopende actie|niet in combinatie|niet bovenop",
+      "waar": "zelfde_zone",
+      "hard": true,
+      "toelichting": "De Auping-korting geldt niet bovenop een lopende actie of sale. Stond de belofte er zonder die voorwaarde, dan beloven we iets wat de winkel niet honoreert. Op 29 juli 2026 gebeurde dat drie rondes achter elkaar, de laatste keer in de meta description en het schema van 562 pagina's."
+    },
+    {
+      "naam": "leenbed-drempel",
+      "wanneer": "gratis leenbed",
+      "dan_ook": "5\\.000",
+      "waar": "zelfde_zone",
+      "hard": true,
+      "toelichting": "Het leenbed is gratis vanaf een bepaald aankoopbedrag. Zonder die drempel is het een onvoorwaardelijke belofte."
+    },
+    {
+      "naam": "hotelovernachting-drempel",
+      "wanneer": "Hotel Haverkist|hotelovernachting",
+      "dan_ook": "6\\.500",
+      "waar": "zelfde_zone",
+      "hard": true,
+      "toelichting": "Zelfde als het leenbed: geldt pas boven een aankoopbedrag."
+    }
+  ],
+  "verboden_claims": [
+    {
+      "naam": "oud-lidmaatschap",
+      "patroon": "word lid|lid worden van Bylder|\\u20ac\\s?99 per jaar|betaald lidmaatschap",
+      "hard": true,
+      "toelichting": "Het lidmaatschap is afgeschaft; de CONSUMER_FREE-vlag en alle paywall-code zijn op 29 juli 2026 verwijderd. Duikt deze taal weer op, dan staat er een prijs op iets wat gratis is."
+    }
+  ],
+  "verzonnen_vestigingen": {
+    "merken": [
+      "Parketgigant",
+      "Topdeuren",
+      "Lampenlicht",
+      "YorFloor",
+      "Adviba",
+      "Ree Zonwering",
+      "Tegeldepot"
+    ],
+    "hard": true,
+    "toelichting": "Deze merken hebben geen vestigingslijst. Staat de merknaam pal voor de stad van de pagina zelf, dan verzint een sjabloon een filiaal dat niet bestaat. Een vaste vermelding als 'Adviba Nijmegen' op elke pagina is juist wél goed."
+  },
+  "lengtes": {
+    "title_min": 25,
+    "title_max": 80,
+    "description_min": 90,
+    "description_max": 180
+  },
+  "_lengtes_toelichting": "Drempels bewust ruim: ze vangen uitschieters, niet de sitebrede titelconventie. Zie de notitie bij de bouw op 31 juli 2026."
+}
