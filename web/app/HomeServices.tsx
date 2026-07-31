@@ -2,7 +2,7 @@
 // 10 jul 2026): vier pijlers (Advies/Ontwerpen/Shoppen/Aanbesteden) rond één kern,
 // het woningdossier. Vervangt de donkere "Bylder diensten"-sectie; de 8 city+bedrijf-
 // hub-links + eerlijke-prijzen (linkarchitectuur-fase) blijven volledig behouden en
-// zijn uitgebreid met de overige hubs. Oude versie: HomeServicesLegacy.tsx.
+// zijn uitgebreid met de overige hubs.
 // Server-component, geen client-JS; de animatie in de Ontwerpen-glimpse is puur CSS.
 
 type Vak = { href: string; label: string }

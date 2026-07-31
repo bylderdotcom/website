@@ -27,6 +27,7 @@ Exit-code 1 zodra een harde regel wordt overtreden. Rapport: reports/claims.json
 """
 
 import argparse
+import html
 import json
 import os
 import random
@@ -77,19 +78,11 @@ MAANDEN = {m: i for i, m in enumerate(
     ["januari", "februari", "maart", "april", "mei", "juni", "juli",
      "augustus", "september", "oktober", "november", "december"], 1)}
 
-_ENTITIES = {"&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"',
-             "&#39;": "'", "&nbsp;": " ", "&mdash;": "—", "&middot;": "·",
-             "&euro;": "€", "&hellip;": "…"}
-
-
 def ontescape(s):
-    for k, v in _ENTITIES.items():
-        s = s.replace(k, v)
-    # Ook de hexadecimale vorm. Zonder deze regel meldde de bewaker 39.676
-    # 'afwijkingen' die alleen bestonden uit &#x27; tegenover een gewone
-    # apostrof — vals alarm op een schaal die het echte werk onvindbaar maakt.
-    s = re.sub(r"&#x([0-9a-fA-F]+);", lambda m: chr(int(m.group(1), 16)), s)
-    return re.sub(r"&#(\d+);", lambda m: chr(int(m.group(1))), s)
+    # Met een eigen tabel miste ik eerst &#x27; (39.676 valse afwijkingen) en
+    # daarna &sup2; en &euro; (nog eens duizenden). De stdlib kent ze allemaal;
+    # een handgeschreven lijst is hier per definitie incompleet.
+    return html.unescape(s)
 
 
 def normaliseer(s):

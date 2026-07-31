@@ -3,12 +3,11 @@
   "gekoppelde_claims": [
     {
       "naam": "auping-voorwaarde",
-      "wanneer": "10\\s?% korting",
-      "alleen_als": "Auping",
-      "dan_ook": "lopende actie|niet in combinatie|niet bovenop",
+      "wanneer": "Auping[^.<>]{0,30}?\\d{1,2}\\s?%|\\d{1,2}\\s?%\\s*(?:korting\\s*)?(?:op\\s+\\S+\\s+)?(?:bij\\s+)?Auping\\b",
+      "dan_ook": "lopende actie|showroomsale|in de sale|niet in combinatie|(?:niet|nooit) bovenop|geldt die prijs",
       "waar": "zelfde_zone",
       "hard": true,
-      "toelichting": "De Auping-korting geldt niet bovenop een lopende actie of sale. Stond de belofte er zonder die voorwaarde, dan beloven we iets wat de winkel niet honoreert. Op 29 juli 2026 gebeurde dat drie rondes achter elkaar, de laatste keer in de meta description en het schema van 562 pagina's."
+      "toelichting": "De Auping-korting geldt niet bovenop een lopende actie of sale. De regel eist dat het percentage en de merknaam echt bij elkaar horen: een zijbalk '10% korting bij 60+ merken' met Auping in een merkenlijst eronder is geen belofte over Auping, en dat 430 keer melden maakt de regel waardeloos."
     },
     {
       "naam": "leenbed-drempel",
