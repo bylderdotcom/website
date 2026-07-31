@@ -1,0 +1,69 @@
+{
+  "gemeten_op": "2026-07-31T09:10:20.678762+00:00",
+  "property": "sc-domain:bylder.com",
+  "periode": {
+    "start": "2026-07-01",
+    "eind": "2026-07-29",
+    "dagen": 28
+  },
+  "totaal": {
+    "profielen_met_vertoningen": 5,
+    "impressies": 8,
+    "klikken": 0,
+    "profielen_met_klik": 0
+  },
+  "per_vak": {
+    "aannemer": {
+      "paginas": 2,
+      "impressies": 5,
+      "klikken": 0
+    },
+    "loodgieter": {
+      "paginas": 3,
+      "impressies": 3,
+      "klikken": 0
+    }
+  },
+  "top": [
+    {
+      "url": "https://www.bylder.com/aannemer/bedrijf/firma-elderman-ue9n6k/",
+      "vak": "aannemer",
+      "profiel": "firma-elderman-ue9n6k",
+      "impressions": 3,
+      "clicks": 0,
+      "position": 4.333333333333334
+    },
+    {
+      "url": "https://www.bylder.com/aannemer/bedrijf/cammeraat-bouw-amkpx8/",
+      "vak": "aannemer",
+      "profiel": "cammeraat-bouw-amkpx8",
+      "impressions": 2,
+      "clicks": 0,
+      "position": 5
+    },
+    {
+      "url": "https://www.bylder.com/loodgieter/bedrijf/filippo-ontstoppingsbedrijf-cees-tfmsyy/",
+      "vak": "loodgieter",
+      "profiel": "filippo-ontstoppingsbedrijf-cees-tfmsyy",
+      "impressions": 1,
+      "clicks": 0,
+      "position": 8
+    },
+    {
+      "url": "https://www.bylder.com/loodgieter/bedrijf/joop-kuipers-rioolontstoppingsbedrijf-tefrec/",
+      "vak": "loodgieter",
+      "profiel": "joop-kuipers-rioolontstoppingsbedrijf-tefrec",
+      "impressions": 1,
+      "clicks": 0,
+      "position": 9
+    },
+    {
+      "url": "https://www.bylder.com/loodgieter/bedrijf/lekdetectie-lekkageservice-van-gerven-avgziy/",
+      "vak": "loodgieter",
+      "profiel": "lekdetectie-lekkageservice-van-gerven-avgziy",
+      "impressions": 1,
+      "clicks": 0,
+      "position": 10
+    }
+  ]
+}

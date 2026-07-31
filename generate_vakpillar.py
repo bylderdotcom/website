@@ -1174,8 +1174,24 @@ def assign_profiel_slugs(vak_slug, bedrijven):
 
 
 def profiel_indexeerbaar(b):
-    """Index alleen profielen met écht signaal — voorkomt dunne pagina's in de index."""
-    return bool((b.get("google_rating") and (b.get("google_reviews") or 0) >= 5) or b.get("status") == "lid")
+    """Alleen geclaimde profielen de index in.
+
+    De poort stond op 'rating + >=5 reviews' (14.191 pagina's). Gemeten 31 jul 2026:
+    daarvan stond 7,5% werkelijk in de index, samen goed voor 8 impressies en 0 klikken
+    in een maand. Oorzaak is niet techniek maar duplicatie — ~527 woorden per profiel
+    waarvan 67-70% letterlijk gelijk is aan een ander profiel in hetzelfde vak. Google
+    ontdekte de meeste URL's daardoor niet eens ("URL is onbekend bij Google": 55% van
+    een steekproef van 40). Die 14.191 near-duplicates kostten crawl-budget dat de rest
+    van de site nodig heeft; het domein staat op gemiddelde positie 29,6.
+
+    Een geclaimd profiel is wél de index waard: het bedrijf heeft er zelf inhoud aan
+    toegevoegd en ervoor betaald. Dat maakt indexatie meteen een eerlijk verkoopargument
+    in plaats van een belofte die de crawler toch niet inlost.
+
+    De pagina's blijven bestaan en bereikbaar — ze werken als landingspagina achter een
+    outreach-link, waarvoor geen indexatie nodig is.
+    """
+    return b.get("status") == "lid"
 
 
 def build_profile(vak, vak_slug, b, buren):
