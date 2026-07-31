@@ -31,6 +31,36 @@
         "Bodemisolatie",
         "Eerst vocht oplossen, dan isoleren"
       ]
+    },
+    {
+      "vraag": "Hoe kom je erin, en kan een monteur erbij?",
+      "waarom": "Een kruipluik onder de trap of achter een kast is een luik dat nooit opengaat. Terwijl hier de leidingen liggen die ooit lekken en de bodem ligt die je wilt kunnen zien. De plek van dat luik bepaalt of de ruimte inspecteerbaar blijft.",
+      "opties": [
+        "Luik in de hal of berging",
+        "Tweede luik aan de andere kant van de woning",
+        "Buitentoegang via de kruipruimte-opening",
+        "Vaste ladder of trapje"
+      ]
+    },
+    {
+      "vraag": "Wat ligt er, en hoe vind je het terug?",
+      "waarom": "Water, riool, elektra en soms de vloerverwarmingsverdeler liggen hier. Wie na oplevering foto's maakt van de leidingloop, weet vijftien jaar later waar geboord mag worden. Zonder die foto's is elke vloerdoorboring een gok.",
+      "opties": [
+        "Foto's maken bij oplevering",
+        "Revisietekening opvragen bij de aannemer",
+        "Leidingen labelen",
+        "Niets vastleggen"
+      ]
+    },
+    {
+      "vraag": "Bodemafsluiting of niet?",
+      "waarom": "Bij een natte bodem verdampt er permanent water de kruipruimte in. Een afsluitende laag — folie, schelpen of een schuimlaag — stopt die stroom bij de bron. Zonder die laag blijf je ventileren tegen een kraan die openstaat.",
+      "opties": [
+        "Bodemfolie",
+        "Schelpenlaag",
+        "Isolerende schuimlaag op de bodem",
+        "Alleen ventileren"
+      ]
     }
   ],
   "vakken": [
@@ -47,7 +77,10 @@
   ],
   "fouten": [
     "Isoleren zonder het vochtprobleem eerst op te lossen — dan sluit je het vocht in.",
-    "Ventilatieroosters dichtmaken tegen de tocht; dat is precies wat de kruipruimte nat maakt."
+    "Ventilatieroosters dichtmaken tegen de tocht; dat is precies wat de kruipruimte nat maakt.",
+    "Denken dat een droge kruipruimte in juli ook in februari droog is. De grondwaterstand beweegt met het seizoen.",
+    "Isolatieplaten tegen de vloer schroeven dwars door een leiding heen. Waar de leidingen liggen, weet je alleen als je gekeken hebt.",
+    "Aannemen dat nieuwbouw geen kruipruimteprobleem heeft. Bouwvocht en een hoge grondwaterstand zijn juist in de eerste jaren het sterkst."
   ],
   "pagina_pad": "/ruimtes/kruipruimte/",
   "intro": "De ruimte waar niemand komt en waar een groot deel van de vochtproblemen in Nederlandse woningen begint. Het is tegelijk de goedkoopste plek om te isoleren, met de kortste terugverdientijd van alle maatregelen. Maar in die volgorde: eerst het vocht, dan pas de isolatie.",

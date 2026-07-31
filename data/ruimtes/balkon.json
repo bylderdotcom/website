@@ -30,6 +30,36 @@
         "Vrijstaande oplossingen",
         "Niets bevestigen"
       ]
+    },
+    {
+      "vraag": "Wat komt er op de vloer?",
+      "waarom": "Een balkonvloer moet water doorlaten of afvoeren, en het gewicht van de afwerking telt mee in de belasting die de constructie aankan. Tegels op tegeldragers verhogen de vloer, en die hoogte gaat af van de drempel naar binnen. Wordt die drempel te laag, dan waait regen bij storm naar binnen.",
+      "opties": [
+        "Tegels op tegeldragers",
+        "Houten vlonderdelen",
+        "Kunststof roosters",
+        "De ruwe betonvloer laten"
+      ]
+    },
+    {
+      "vraag": "Hoe scherm je af zonder de wind te vangen?",
+      "waarom": "Een dicht windscherm op een balkon werkt als een zeil: het vangt kracht die via de bevestiging op de gevel of de balustrade komt. Balustrades zijn berekend op leunende mensen, niet op windbelasting. Wie afschermt, moet weten waar die kracht heen gaat.",
+      "opties": [
+        "Doorlaatbaar doek of gaas",
+        "Glazen scherm op een eigen constructie",
+        "Beplanting als filter",
+        "Niet afschermen"
+      ]
+    },
+    {
+      "vraag": "Buitenkraan en buitenstopcontact: nu of nooit?",
+      "waarom": "Beide vragen een doorvoer door de gevel. Bij oplevering is dat een leiding in een muur die nog niet af is; achteraf is het boren door isolatie en dampremmende folie — precies de laag die je intact wilt houden. Bij een appartement komt daar de toestemming van de VvE bij.",
+      "opties": [
+        "Allebei als meerwerk",
+        "Alleen een stopcontact",
+        "Verlengsnoer via een raam (tijdelijk)",
+        "Niets"
+      ]
     }
   ],
   "vakken": [
@@ -45,7 +75,11 @@
     "tuin"
   ],
   "fouten": [
-    "Vloerafwerking leggen die de afwatering blokkeert — dan staat het water tegen de pui."
+    "Vloerafwerking leggen die de afwatering blokkeert — dan staat het water tegen de pui.",
+    "Een plantenbak of jacuzzi neerzetten zonder de puntbelasting te kennen. Een balkon is berekend op verdeeld gewicht, niet op alles op één plek.",
+    "Boren in de betonvloer om iets vast te zetten. Daar zit wapening in, en in een uitkragend balkon zit die precies waar de kracht loopt.",
+    "De afvoer of het spuwertje laten dichtslibben. Twee jaar blad in de goot en het water zoekt de weg naar binnen.",
+    "Bij een appartement vergeten dat het balkon vaak gemeenschappelijk eigendom is. Wat je eraan vastmaakt, is dan niet alleen jouw beslissing."
   ],
   "pagina_pad": "/ruimtes/balkon/",
   "intro": "Voor veel appartementen de enige buitenruimte, en constructief het gevoeligste onderdeel van het gebouw. Alles wat je erop zet telt mee in de belasting, en alles wat er lekt komt bij de buren beneden terecht. Bij een VvE is het bovendien zelden helemaal van jou.",

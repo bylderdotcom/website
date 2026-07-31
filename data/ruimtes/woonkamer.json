@@ -31,6 +31,36 @@
         "Overgang met profiel",
         "Per ruimte een eigen vloer"
       ]
+    },
+    {
+      "vraag": "Waar komen de stopcontacten, en hoeveel?",
+      "waarom": "De woonkamer krijgt in nieuwbouw een standaardaantal punten, verdeeld over de wanden alsof de meubels er nog niet staan. Het gevolg is een stekkerdoos achter de bank en een verlengsnoer naar de tv-wand. Dit is de goedkoopste meerwerkpost met het grootste dagelijkse effect.",
+      "opties": [
+        "Cluster bij de tv-wand",
+        "Vloerdoos bij een zwevende bank",
+        "Dubbele punten op elke wand",
+        "Geschakelde punten voor schemerlampen"
+      ]
+    },
+    {
+      "vraag": "Hoe deel je een lange doorzonkamer op?",
+      "waarom": "Veel nieuwbouwwoonkamers zijn diep en smal, met de keuken aan één kant. Zonder indeling wordt het een gang met meubels langs de wanden. Een kast als scheiding, een verschil in vloer of een verlaagd plafond geeft de ruimte twee zones — en dat verandert hoe hij gebruikt wordt.",
+      "opties": [
+        "Kast of open element als scheiding",
+        "Vloerverschil of tapijt als zonering",
+        "Plafondverlaging boven de eethoek",
+        "Meubels los van de wanden"
+      ]
+    },
+    {
+      "vraag": "Wat doe je aan galm in een open ruimte?",
+      "waarom": "Een open woonkamer met een harde vloer, een glazen pui en weinig textiel klinkt hol. Dat merk je vooral bij televisie kijken en bij gesprekken met meerdere mensen. Gordijnen en een vloerkleed doen hier meer dan welk akoestisch paneel dan ook, maar een verlaagd plafonddeel is een keuze bij de bouw.",
+      "opties": [
+        "Zware gordijnen over de volle wand",
+        "Vloerkleed onder de zithoek",
+        "Akoestisch plafonddeel",
+        "Boekenwand als absorptie"
+      ]
     }
   ],
   "vakken": [
@@ -51,7 +81,10 @@
   ],
   "fouten": [
     "Verlichting plannen zonder te weten waar de meubels staan.",
-    "Vergeten dat vloerverwarming de keuze van de vloerafwerking beperkt."
+    "Vergeten dat vloerverwarming de keuze van de vloerafwerking beperkt.",
+    "De tv-plek bepalen na de oplevering. De aansluitingen zitten dan al ergens anders, en een kabelgoot over een nieuwe wand is zonde.",
+    "Een zwevende kast of tv-meubel plannen zonder te weten wat de wand houdt. Metalstud-wanden hebben een houtblokkering nodig, en die zit er alleen als hij is aangevraagd.",
+    "Vergeten dat de thermostaat in de hal hangt terwijl de woonkamer de ruimte is die op temperatuur moet komen."
   ],
   "pagina_pad": "/ruimtes/woonkamer/",
   "intro": "De woonkamer is te breed om één onderwerp te zijn: hij gaat over vloeren, licht, akoestiek, raamdecoratie en meubels tegelijk. Wat hem wél tot één beslissing maakt, is de volgorde — want twee keuzes die je bij de oplevering maakt, bepalen daarna twintig jaar wat er nog kan.",

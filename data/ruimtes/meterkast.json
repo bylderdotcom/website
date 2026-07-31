@@ -31,6 +31,36 @@
         "Load balancing op de laadpaal",
         "Gebruik spreiden"
       ]
+    },
+    {
+      "vraag": "Waar komen de nieuwe apparaten, en past dat nog?",
+      "waarom": "Een omvormer, een laadpaalmodule, een slimme meter, een router en straks een thuisbatterij willen allemaal een plek in of naast de meterkast. De standaardkast in nieuwbouw is daar niet op gedimensioneerd. Wie dit vooraf uitzoekt, voorkomt een kast met apparaten aan de buitenkant geschroefd.",
+      "opties": [
+        "Bredere meterkast als meerwerk",
+        "Tweede kast of paneel ernaast",
+        "Omvormer elders plaatsen",
+        "Bekabeling voorbereiden voor later"
+      ]
+    },
+    {
+      "vraag": "Hoe blijft de kast koel en bereikbaar?",
+      "waarom": "Een omvormer en een laadpaalmodule geven warmte af. Een dichte kast zonder ventilatierooster wordt warm, en warme elektronica gaat eerder stuk of schakelt terug in vermogen. Daar komt bij dat de kast bij een storing in het donker en met natte handen open moet kunnen.",
+      "opties": [
+        "Ventilatierooster in de deur houden",
+        "Kast niet inbouwen achter een kastenwand",
+        "Verlichting in de kast",
+        "Vrije werkruimte voor de deur"
+      ]
+    },
+    {
+      "vraag": "Waar komen data en glasvezel binnen?",
+      "waarom": "Het aansluitpunt voor glasvezel en coax zit in de meterkast, en daar hangt de router. Vanuit een kast onder een trap in een hoek van het huis haalt wifi zelden de rest van de woning. Een netwerkkabel vanuit de meterkast naar een centraal punt is bij oplevering een loze leiding en achteraf een kabelgoot.",
+      "opties": [
+        "Loze leidingen naar meerdere kamers",
+        "Bekabeld punt naar een centraal wifi-punt",
+        "Patchpaneel in de meterkast",
+        "Alles op wifi houden"
+      ]
     }
   ],
   "vakken": [
@@ -43,7 +73,10 @@
   ],
   "fouten": [
     "Een laadpaal bestellen voordat iemand naar de meterkast heeft gekeken.",
-    "Vergeten dat verzwaren van de aansluiting maanden levertijd kan hebben."
+    "Vergeten dat verzwaren van de aansluiting maanden levertijd kan hebben.",
+    "Een kastenwand of garderobe strak tegen de meterkastdeur bouwen. Bij de eerste storing of monteur is dat een probleem.",
+    "De omvormer op zolder plaatsen omdat het dichter bij de panelen is. Daar is het in de zomer het warmst en daalt het rendement.",
+    "Aannemen dat er groepen vrij zijn omdat er lege plekken op de rail zitten. Vrije ruimte is niet hetzelfde als beschikbaar vermogen."
   ],
   "pagina_pad": "/ruimtes/meterkast/",
   "intro": "Twintig jaar geleden een kastje met zes groepen. Nu het knelpunt van vrijwel elke verduurzaming: laadpaal, warmtepomp, inductie en zonnepanelen vragen allemaal ruimte en capaciteit die er in de meeste woningen niet is. Wie een laadpaal bestelt zonder eerst hier te kijken, koopt een paal en geen oplossing.",

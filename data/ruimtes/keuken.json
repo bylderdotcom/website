@@ -40,6 +40,36 @@
         "Afvoer naar buiten",
         "Plafondunit"
       ]
+    },
+    {
+      "vraag": "Hoe zwaar wordt de elektrische installatie?",
+      "waarom": "Gasloos koken verandert de keuken elektrisch ingrijpend. Inductie vraagt een eigen krachtgroep, en oven, vaatwasser en koelkast horen niet met de kookplaat op één groep. Dit bepaalt hoeveel groepen er in de meterkast overblijven voor de rest van het huis.",
+      "opties": [
+        "Krachtstroom voor inductie",
+        "Twee losse groepen naar de keuken",
+        "Extra groepen in de meterkast reserveren",
+        "Loze leidingen voor later"
+      ]
+    },
+    {
+      "vraag": "Waar komt de vaatwasser ten opzichte van de spoelbak?",
+      "waarom": "De vaatwasser deelt de watertoevoer en de afvoer met de spoelbak. Staan ze ver uit elkaar, dan loopt er een leiding door de plint of achter de kasten langs, en gaat er kastruimte af. Bovendien loop je bij het uitruimen elke keer heen en weer.",
+      "opties": [
+        "Direct naast de spoelbak",
+        "Verhoogd inbouwen",
+        "In het eiland bij de spoelbak",
+        "Losse leidingloop accepteren"
+      ]
+    },
+    {
+      "vraag": "Wat doe je met het geluid van de keuken in een open woonkamer?",
+      "waarom": "Een open keuken betekent dat de afzuigkap, de vaatwasser en de koelkast in de woonkamer staan. Het geluidsniveau dat in een dichte keuken niemand opvalt, is naast de bank storend. Bij een recirculatiekap staat de motor bovendien in de ruimte zelf.",
+      "opties": [
+        "Externe motor voor de afzuiging",
+        "Stille apparatuur kiezen op decibel",
+        "Vaatwasser in een dichte kastwand",
+        "Keuken deels afscheiden"
+      ]
     }
   ],
   "vakken": [
@@ -67,7 +97,10 @@
   "fouten": [
     "De afzuigkap pas bedenken als de keuken al getekend is.",
     "Stopcontacten tellen op de tekening in plaats van op het werkblad.",
-    "Vergeten dat een kookeiland een vloerdoorvoer nodig heeft die vóór het storten van de vloer bekend moet zijn."
+    "Vergeten dat een kookeiland een vloerdoorvoer nodig heeft die vóór het storten van de vloer bekend moet zijn.",
+    "De keuken laten tekenen voordat de plek van de aansluitpunten vaststaat. Dan bepaalt de leidingloop het ontwerp in plaats van andersom.",
+    "Een kookeiland tekenen zonder de vloerdoorvoer voor water, afvoer en stroom. Die moet erin vóór de vloer gestort wordt.",
+    "Rekenen op de standaardkeuken van de aannemer en pas bij de showroom ontdekken wat er niet in zit."
   ],
   "pagina_pad": "/ruimtes/keuken/",
   "intro": "De keuken is de duurste ruimte per vierkante meter en de enige waar de prijsvorming systematisch ondoorzichtig is. Een showroomkorting van veertig procent is geen korting maar een prijsstrategie. Wat de keuken werkelijk kost hangt af van drie dingen die los staan van het merk op de kastdeurtjes: waar de aansluitingen liggen, wie de montage doet, en of je casco koopt.",

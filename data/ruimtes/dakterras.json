@@ -29,6 +29,36 @@
         "Nieuwe dakbedekking met terraslaag",
         "Losliggende houten vlonder"
       ]
+    },
+    {
+      "vraag": "Hoe kom je er en hoe ver reikt de balustrade?",
+      "waarom": "De toegang bepaalt of het terras gebruikt wordt. Een dakluik met een vlizotrap is iets anders dan een deur vanaf de overloop. En zodra er een terras op ligt, gelden er eisen aan de hoogte van de afscheiding: die zijn er niet voor een dak, wel voor een verblijfsplek.",
+      "opties": [
+        "Deur vanaf een verdieping",
+        "Dakopbouw met toegang",
+        "Dakluik met vaste trap",
+        "Bestaand kozijn vergroten"
+      ]
+    },
+    {
+      "vraag": "Waar loopt het water naartoe als het terras er ligt?",
+      "waarom": "Een plat dak heeft afschot naar een afvoerpunt. Leg je daar tegels op dragers overheen, dan blijft dat punt bestaan maar zie je het niet meer. Slibt het dicht onder de vloer, dan staat er water op het dakleer zonder dat iemand het merkt — tot het binnen zichtbaar wordt.",
+      "opties": [
+        "Tegeldragers met bereikbare afvoerpunten",
+        "Vlonders met losneembare delen",
+        "Extra noodoverloop in de dakrand",
+        "Inspectieluik bij het afvoerpunt"
+      ]
+    },
+    {
+      "vraag": "Wat mag er van de buren en het bestemmingsplan?",
+      "waarom": "Een dakterras kijkt uit over andermans tuin. Er gelden regels over uitzicht op naburig erf, en losse schermen lossen dat niet altijd op. Dit is de vraag die achteraf het duurst is, want een terras dat er ligt maar niet mag, moet eraf.",
+      "opties": [
+        "Vooraf toetsen bij de gemeente",
+        "Privacyscherm binnen de regels",
+        "Terras terugleggen van de erfgrens",
+        "Overleg met de buren vastleggen"
+      ]
     }
   ],
   "vakken": [
@@ -51,7 +81,10 @@
   ],
   "fouten": [
     "Beginnen zonder constructieve berekening.",
-    "Bij een VvE beginnen zonder toestemming."
+    "Bij een VvE beginnen zonder toestemming.",
+    "Het dakleer belopen zonder beschermlaag. Één tegel die schuift over een naad en de waterdichting is weg.",
+    "Zwaardere bakken of een tuinhuisje op een dak zetten dat berekend is op sneeuw en niets meer.",
+    "Geen inspectieluik maken. Een lekkage onder een volledig betegeld terras vinden betekent alles eraf."
   ],
   "pagina_pad": "/ruimtes/dakterras/",
   "intro": "Vierkante meters buitenruimte op een plek die er al is — en het meest veeleisende dat je aan een woning kunt toevoegen. Constructief, juridisch en waterdicht moet alles kloppen, want een dakterras zit per definitie boven iets dat droog moet blijven.",

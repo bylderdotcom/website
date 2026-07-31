@@ -31,6 +31,36 @@
         "Verlichting met deurcontact",
         "Niets"
       ]
+    },
+    {
+      "vraag": "Wordt het een kast of een ruimte?",
+      "waarom": "Onder een trap loopt de hoogte van staand naar niets. Wie er een kast van maakt, gebruikt het hoge deel en verliest de rest. Wie er laden of uittrekelementen in bouwt, gebruikt ook de lage helft — dat is meestal de helft van de bruikbare inhoud.",
+      "opties": [
+        "Eén deur en open ruimte",
+        "Uittrekbare kastelementen op maat",
+        "Laden in het lage deel",
+        "Toiletruimte of garderobe"
+      ]
+    },
+    {
+      "vraag": "Wat mag hier staan?",
+      "waarom": "De trapkast grenst aan de vluchtroute van de woning. Wat je hier opslaat, staat naast de trap die je bij brand nodig hebt: verf, spuitbussen en accu's horen daar niet. Bovendien is een trapkast vaak niet geventileerd.",
+      "opties": [
+        "Alleen niet-brandbare spullen",
+        "Brandwerende deur",
+        "Ventilatie of rooster",
+        "Accu's en brandbare stoffen elders"
+      ]
+    },
+    {
+      "vraag": "Wat betekent de meterkast ernaast?",
+      "waarom": "In veel woningen zitten trapkast en meterkast tegen elkaar. Een netwerkkabel of een extra groep is dan een gat in één wand. Wie op dat moment ook een aansluitpunt in de trapkast laat maken, heeft daar later een werkplek, een serverhoekje of een oplaadpunt.",
+      "opties": [
+        "Aansluitpunt vanuit de meterkast",
+        "Netwerkkabel doorvoeren",
+        "Extra groep reserveren",
+        "Niets voorbereiden"
+      ]
     }
   ],
   "vakken": [
@@ -45,7 +75,10 @@
     "meterkast"
   ],
   "fouten": [
-    "Geen licht en geen stopcontact — dan wordt het per definitie een rommelhok."
+    "Geen licht en geen stopcontact — dan wordt het per definitie een rommelhok.",
+    "De ruimte volstapelen tot achterin. Wat achter de eerste laag staat, zie je nooit meer terug.",
+    "Een deur kiezen die maar half zo breed is als de opening. Alles wat groter is dan de deur, past er niet in.",
+    "Vergeten dat de onderkant van een trap tikt en kraakt. Een kast eronder versterkt dat geluid in plaats van het te dempen."
   ],
   "pagina_pad": "/ruimtes/trapkast/",
   "intro": "De enige ruimte in een doorsnee woning die vrijwel altijd verkeerd wordt gebruikt. Een deur en een donker gat worden binnen een maand een rommelhok, terwijl er met maatwerk drie keer zoveel in past. Het verschil zit in twee dingen die niets met opbergen te maken hebben: licht en een stopcontact.",

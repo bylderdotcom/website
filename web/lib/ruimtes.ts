@@ -13,6 +13,12 @@ const SITE = 'https://www.bylder.com'
 const REPO = path.join(process.cwd(), '..')
 const DIR = path.join(REPO, 'data', 'ruimtes')
 
+// Eén plek voor de datum die de pagina toont én die in het schema als dateModified
+// staat. Stonden die uit elkaar, dan beweert de pagina iets anders dan de metadata —
+// precies het patroon dat de claim-bewaker moet vangen. Bijwerken zodra de inhoud
+// van data/ruimtes/*.json verandert.
+const BIJGEWERKT = { tekst: '31 juli 2026', iso: '2026-07-31' }
+
 export type Beslissing = { vraag: string; waarom: string; opties: string[] }
 export type Sectie = { kop: string; alineas: string[] }
 export type Producttype = { type: string; waarom: string }
@@ -89,7 +95,7 @@ export function renderRuimte(r: Ruimte): string {
     <div class="badge">${esc(r.type === 'buiten' ? 'Buitenruimte' : r.type === 'technisch' ? 'Technische ruimte' : 'Woonruimte')}</div>
     <h1>${esc(r.naam)}: wat je hier beslist, en in welke volgorde</h1>
     <p class="lead">${esc(r.intro ?? r.kern)}</p>
-    <p class="meta">Laatst bijgewerkt: 30 juli 2026${r.synoniemen.length ? ` &middot; ook wel: ${r.synoniemen.map(esc).join(', ')}` : ''}</p>
+    <p class="meta">Laatst bijgewerkt: ${BIJGEWERKT.tekst}${r.synoniemen.length ? ` &middot; ook wel: ${r.synoniemen.map(esc).join(', ')}` : ''}</p>
   </div>`)
 
   d.push(`<div class="highlight" style="max-width:760px;"><strong>Kort:</strong> ${esc(r.kern)} Speelt ${r.momenten.map(m => MOMENT_LABEL[m] ?? m).join(', ')}.</div>`)
@@ -196,7 +202,7 @@ export function renderIndex(): string {
     <div class="badge">Ruimte voor ruimte</div>
     <h1>Elke ruimte in huis, en wat je er beslist</h1>
     <p class="lead">Een woning is geen plattegrond maar een reeks beslissingen, en die vallen per ruimte. Wat je op zolder kiest bepaalt wat er op de overloop nog kan; wat je in de bijkeuken plaatst bepaalt of je meterkast het aankan. Hieronder alle ${alle.length} ruimtes die we in kaart hebben, met per ruimte de keuzes, de veelgemaakte fouten en wie het werk doet.</p>
-    <p class="meta">Laatst bijgewerkt: 30 juli 2026</p>
+    <p class="meta">Laatst bijgewerkt: ${BIJGEWERKT.tekst}</p>
   </div>`)
   d.push(`<div class="highlight" style="max-width:760px;"><strong>Bylder verkoopt niets van dit alles.</strong> We brengen in kaart wat er per ruimte te beslissen valt en wie het uitvoert. Waar een merk een aanbieding via Bylder heeft, staat dat er zichtbaar bij.</div>`)
 
@@ -229,8 +235,13 @@ export function renderIndex(): string {
 
 export function metadataVoor(r: Ruimte) {
   const url = SITE + (r.pagina_pad ?? `/ruimtes/${r.slug}/`)
-  const title = `${r.naam}: beslissingen, kosten en veelgemaakte fouten | Bylder`
-  const description = r.kern.length > 155 ? r.kern.slice(0, 152).trimEnd() + '…' : r.kern
+  const title = `${r.naam}: keuzes, fouten en vakmensen | Bylder`
+  // Korte kern-teksten leverden een description van 113 tekens op — te dun om als
+  // snippet te dienen. Aanvullen met wat er feitelijk op de pagina staat.
+  const kort = (t: string, max: number) =>
+    t.length <= max ? t : t.slice(0, t.lastIndexOf(' ', max - 1)).trimEnd() + '…'
+  const staart = `${r.beslissingen.length} keuzes, de fouten die het vaakst voorkomen en wie het werk doet.`
+  const description = r.kern.length < 120 ? kort(`${r.kern} ${staart}`, 158) : kort(r.kern, 158)
   return {
     title, description,
     alternates: { canonical: url },
@@ -261,6 +272,19 @@ export function ldjsonVoor(r: Ruimte): string[] {
     name: r.naam, description: r.kern, url,
     ...(r.synoniemen.length ? { alternateName: r.synoniemen } : {}),
     inDefinedTermSet: { '@type': 'DefinedTermSet', name: 'Woonruimtes', url: SITE + '/ruimtes/' },
+  })
+
+  blokken.push({
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: `${r.naam}: keuzes, fouten en vakmensen`,
+    description: r.kern,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    dateModified: BIJGEWERKT.iso,
+    inLanguage: 'nl-NL',
+    author: { '@type': 'Organization', name: 'Bylder', url: SITE },
+    publisher: { '@type': 'Organization', name: 'Bylder', url: SITE },
+    about: { '@type': 'DefinedTerm', name: r.naam, url },
+    isPartOf: { '@type': 'CollectionPage', name: 'Woonruimtes', url: SITE + '/ruimtes/' },
   })
 
   blokken.push({

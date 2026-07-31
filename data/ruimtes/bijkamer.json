@@ -32,6 +32,36 @@
         "Loze leidingen",
         "Standaard laten"
       ]
+    },
+    {
+      "vraag": "Waar staat het bed als het een logeerkamer wordt?",
+      "waarom": "Een logeerbed dat er permanent staat, kost de kamer zijn tweede functie. Een bedbank of een opklapbed geeft die terug, maar vraagt wel de vrije muur ervoor en een vloer die het gewicht van het mechaniek aankan. Bepaal dit vóór de kasten, niet erna.",
+      "opties": [
+        "Vast logeerbed",
+        "Bedbank",
+        "Opklapbed in een kastwand",
+        "Geen bed, luchtbed als het nodig is"
+      ]
+    },
+    {
+      "vraag": "Hoeveel stopcontacten en op welke wanden?",
+      "waarom": "Een kamer die drie keer van functie verandert, heeft in elke opstelling andere punten nodig. Standaard krijgt zo'n kamer er twee, meestal op de verkeerde wand. Extra punten bij oplevering zijn een kleine post; achteraf is het een kabel door een afgewerkte wand of een verlengsnoer over de vloer.",
+      "opties": [
+        "Op elke wand een dubbel punt",
+        "Twee wanden zwaarder uitvoeren",
+        "Vloerdoos midden in de kamer",
+        "Loze leidingen voor later"
+      ]
+    },
+    {
+      "vraag": "Verwarm en ventileer je hem ook als hij leegstaat?",
+      "waarom": "Een kamer die maandenlang dicht en koud blijft, koelt af tot onder de rest van het huis. Vocht uit de aangrenzende ruimtes slaat dan neer op de koudste wand, meestal achter een kast tegen de buitengevel. De ventilatie in nieuwbouw is berekend op een kamer die gebruikt wordt.",
+      "opties": [
+        "Radiator op een lage basisstand",
+        "Ventilatie op de laagste stand aan laten",
+        "Deur openhouden",
+        "Losse hygrometer om het te volgen"
+      ]
     }
   ],
   "vakken": [
@@ -50,7 +80,10 @@
     "slaapkamer"
   ],
   "fouten": [
-    "Inrichten op een gebruik dat over een jaar verandert, met vaste kasten en al."
+    "Inrichten op een gebruik dat over een jaar verandert, met vaste kasten en al.",
+    "De kamer meteen dichtzetten met vaste kasten. Dat maakt de enige flexibele ruimte in huis net zo vast als de rest.",
+    "Verduistering pas regelen als er iemand komt logeren. Een raam zonder gordijnrail betekent een rail boren in een afgewerkte wand.",
+    "Vergeten dat een werkkamer een netwerkaansluiting wil. Wifi door twee betonvloeren haalt zelden wat een kabel haalt."
   ],
   "pagina_pad": "/ruimtes/bijkamer/",
   "intro": "De kamer zonder vaste bestemming: vandaag logeerkamer, over twee jaar kinderkamer of kantoor. Juist dat maakt hem lastig — een kamer die alles moet kunnen, wordt zelden ergens goed in. De oplossing is niet flexibel inrichten maar flexibel vóórbereiden.",

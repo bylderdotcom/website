@@ -32,6 +32,36 @@
         "Tegels bij de entree",
         "Doorlopende vloer met losse mat"
       ]
+    },
+    {
+      "vraag": "Waar hangt de thermostaat, en hangt hij goed?",
+      "waarom": "In nieuwbouw hangt de thermostaat standaard in de hal. Dat is de koudste plek van het huis, met een voordeur die opengaat. Het gevolg is een woonkamer die te warm wordt omdat de hal het signaal geeft. Bij vloerverwarming, die traag reageert, telt dat dubbel.",
+      "opties": [
+        "Thermostaat verplaatsen naar de woonkamer",
+        "Losse ruimtesensor bijplaatsen",
+        "Per ruimte regelen met slimme kranen",
+        "Laten hangen en compenseren"
+      ]
+    },
+    {
+      "vraag": "Meterkast in de hal: hoe bereikbaar houd je hem?",
+      "waarom": "De meterkast zit bijna altijd in de hal en gaat de komende jaren vaker open dan vroeger: laadpaal, zonnepanelen, thuisbatterij, glasvezel. Een kastenwand die er strak overheen loopt, ziet er goed uit tot een monteur erbij moet.",
+      "opties": [
+        "Vrije ruimte voor de deur houden",
+        "Kastdeur die volledig opent",
+        "Ventilatie in de kastdeur houden",
+        "Meterkast verplaatsen (ingrijpend)"
+      ]
+    },
+    {
+      "vraag": "Wat doe je aan geluid?",
+      "waarom": "Een hal met een harde vloer, een trap en kale wanden kaatst alles terug — en het is de ruimte waar de hele woning op uitkomt. Dat hoor je vooral 's avonds, als iemand naar boven gaat. Een lopertje op de trap en een zacht element aan de wand doen meer dan de vloerkeuze.",
+      "opties": [
+        "Traploper",
+        "Akoestisch paneel of textiel aan de wand",
+        "Zachtsluitende deuren",
+        "Deurdrangers of tochtstrips"
+      ]
     }
   ],
   "vakken": [
@@ -54,7 +84,10 @@
   ],
   "fouten": [
     "Eén lichtpunt in het midden en geen schakelaar bij de trap.",
-    "Geen stopcontact in de hal — waar laad je dan de stofzuiger of de e-bike-accu?"
+    "Geen stopcontact in de hal — waar laad je dan de stofzuiger of de e-bike-accu?",
+    "Kiezen voor een deur die naar binnen draait in een smalle hal. Dat kost precies de plek waar de jassen zouden hangen.",
+    "Het lichtpunt boven de trap vergeten en één schakelaar beneden plaatsen. Dan sta je boven in het donker.",
+    "Een vloer doortrekken vanuit de woonkamer die niet tegen natte schoenen kan."
   ],
   "pagina_pad": "/ruimtes/hal/",
   "intro": "De hal is de eerste en laatste ruimte die iedereen ziet, en in nieuwbouw standaard het slechtst uitgerust: één lichtpunt, meestal geen stopcontact, en nergens plek voor jassen of schoenen. Het is ook de goedkoopst op te lossen ergernis van het hele huis, mits je het doet voordat de vloer erin ligt.",

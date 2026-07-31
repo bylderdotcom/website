@@ -30,6 +30,36 @@
         "Bewegingsmelder-verlichting",
         "Standaard laten"
       ]
+    },
+    {
+      "vraag": "Binnen- of buitenberging?",
+      "waarom": "Een inpandige berging is droog en verwarmd, maar kost woonoppervlak. Een losstaande berging is koud en vochtig: wat je erin zet moet daartegen kunnen, en gereedschap dat er een winter staat, roest. Waar de fietsen komen bepaalt bovendien of je met een natte fiets door de woonkamer moet.",
+      "opties": [
+        "Inpandig",
+        "Aangebouwd",
+        "Losstaand in de tuin",
+        "Gedeelde fietsenberging in het complex"
+      ]
+    },
+    {
+      "vraag": "Hoe kom je er met een fiets in?",
+      "waarom": "Deurbreedte en drempel bepalen of een bakfiets of een fiets met tassen erin past. Een deur van standaardbreedte met een drempel ervoor betekent tillen, elke dag. Draait de deur naar buiten, dan heb je ook nog ruimte voor die draai nodig.",
+      "opties": [
+        "Bredere deur als meerwerk",
+        "Dubbele deuren",
+        "Oprijgoot over de drempel",
+        "Buitenberging met een pad ernaartoe"
+      ]
+    },
+    {
+      "vraag": "Wat hangt er aan de wand en wat staat op de vloer?",
+      "waarom": "Een berging vol op de vloer is een berging waar je niet in kunt. Fietsen aan de wand of het plafond scheelt de meeste ruimte, maar dat vraagt een wand die het houdt. Bij nieuwbouw is dat vaak een lichte scheidingswand waar een beugel met een fiets eraan niet zomaar in blijft zitten.",
+      "opties": [
+        "Fietsophangbeugels",
+        "Wandrails met haken",
+        "Stellingkast",
+        "Plafondlift voor de zomerfiets"
+      ]
     }
   ],
   "vakken": [
@@ -47,7 +77,10 @@
     "garage"
   ],
   "fouten": [
-    "Geen stopcontact voor het laden van een e-bike-accu — brandveilig laden vraagt een vaste plek."
+    "Geen stopcontact voor het laden van een e-bike-accu — brandveilig laden vraagt een vaste plek.",
+    "Rookmelder en ventilatie overslaan omdat het 'maar een berging' is. Hier staan juist accu's, verf en spuitbussen.",
+    "Een houten vloer of vloerbedekking in een onverwarmde berging. Vocht trekt van onderen op en je merkt het pas als het gaat ruiken.",
+    "De wasmachine in een onverwarmde berging zetten. Bij vorst bevriest de watertoevoer, en een gesprongen leiding merk je bij de dooi."
   ],
   "pagina_pad": "/ruimtes/berging/",
   "intro": "In nieuwbouw is de inpandige berging vaak twee dingen tegelijk: de plek waar de technische installatie staat en de plek waar de fietsen heen moeten. Die twee gaan slecht samen, en dat merk je pas als je met een natte fiets langs de warmtepomp moet.",
