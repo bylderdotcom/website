@@ -1,0 +1,551 @@
+{
+  "bron": "/Users/danielpaaij/Documents/GitHub/website/web/out (67672 pagina's)",
+  "gecontroleerd": 67672,
+  "bevindingen": 107260,
+  "seconden": 26.6,
+  "per_regel": {
+    "auping-voorwaarde": {
+      "aantal": 9,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/3d-sfeerimpressie/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'zichtbaar'"
+        },
+        {
+          "pagina": "/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'zichtbaar'"
+        },
+        {
+          "pagina": "/kopen/slaap-en-bedden/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'zichtbaar'"
+        },
+        {
+          "pagina": "/kortingscode/auping/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'titel'"
+        },
+        {
+          "pagina": "/kortingscode/auping/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'description'"
+        },
+        {
+          "pagina": "/kortingscode/auping/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'zichtbaar'"
+        },
+        {
+          "pagina": "/vouchers/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'description'"
+        },
+        {
+          "pagina": "/vouchers/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'schema'"
+        },
+        {
+          "pagina": "/vouchers/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'zichtbaar'"
+        }
+      ]
+    },
+    "titel-lengte": {
+      "aantal": 48876,
+      "hard": false,
+      "voorbeelden": [
+        {
+          "pagina": "/aannemer/alphen-aan-den-rijn/",
+          "soort": "metadata",
+          "detail": "86 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/3b-bouw-en-onderhoud-7coiba/",
+          "soort": "metadata",
+          "detail": "92 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/4samen-wij-samen-1stg7o/",
+          "soort": "metadata",
+          "detail": "84 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-a-a-a-voeg-en-renovatiebedrijf-bv-vvg00k/",
+          "soort": "metadata",
+          "detail": "111 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-a-b-s-bouw-en-timmerbedrijf-jdt0aa/",
+          "soort": "metadata",
+          "detail": "98 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-beverwijk-en-zonen-b-v-rog4rk/",
+          "soort": "metadata",
+          "detail": "93 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-de-reus-aannemersbedrijf-b-v-ebdgaa/",
+          "soort": "metadata",
+          "detail": "102 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-den-haan-contractors-b-v-aftmmc/",
+          "soort": "metadata",
+          "detail": "97 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-haitsma-loon-en-aannemingsbedrijf-purmerend-landsmeer-zemb_q/",
+          "soort": "metadata",
+          "detail": "124 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-hermenet-timmerbedrijf-ianapi/",
+          "soort": "metadata",
+          "detail": "104 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-klusbedrijf-da10u4/",
+          "soort": "metadata",
+          "detail": "82 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-p-koot-tuinaanleg-renovatie-en-aannemersbedrijf-zhllue/",
+          "soort": "metadata",
+          "detail": "123 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-van-den-dool-aannemingsbedrijf-b-v-oplmso/",
+          "soort": "metadata",
+          "detail": "111 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-van-hilst-bv-tdfgbg/",
+          "soort": "metadata",
+          "detail": "84 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-jonkers-bouwbedrijf-b-v-axwx54/",
+          "soort": "metadata",
+          "detail": "95 tekens"
+        }
+      ]
+    },
+    "description-lengte": {
+      "aantal": 19685,
+      "hard": false,
+      "voorbeelden": [
+        {
+          "pagina": "/aannemer/bedrijf/3b-bouw-en-onderhoud-7coiba/",
+          "soort": "metadata",
+          "detail": "194 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/4samen-wij-samen-1stg7o/",
+          "soort": "metadata",
+          "detail": "186 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/8-bouwbedrijf-2_fums/",
+          "soort": "metadata",
+          "detail": "181 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-a-a-a-voeg-en-renovatiebedrijf-bv-vvg00k/",
+          "soort": "metadata",
+          "detail": "213 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-a-b-s-bouw-en-timmerbedrijf-jdt0aa/",
+          "soort": "metadata",
+          "detail": "201 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-beverwijk-en-zonen-b-v-rog4rk/",
+          "soort": "metadata",
+          "detail": "196 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-bouw-utrecht-_oqgdo/",
+          "soort": "metadata",
+          "detail": "183 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-de-reus-aannemersbedrijf-b-v-ebdgaa/",
+          "soort": "metadata",
+          "detail": "204 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-den-haan-contractors-b-v-aftmmc/",
+          "soort": "metadata",
+          "detail": "200 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-haitsma-loon-en-aannemingsbedrijf-purmerend-landsmeer-zemb_q/",
+          "soort": "metadata",
+          "detail": "227 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-hermenet-timmerbedrijf-ianapi/",
+          "soort": "metadata",
+          "detail": "206 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-klusbedrijf-da10u4/",
+          "soort": "metadata",
+          "detail": "186 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-p-koot-tuinaanleg-renovatie-en-aannemersbedrijf-zhllue/",
+          "soort": "metadata",
+          "detail": "225 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-van-den-dool-aannemingsbedrijf-b-v-oplmso/",
+          "soort": "metadata",
+          "detail": "213 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-van-hilst-bv-tdfgbg/",
+          "soort": "metadata",
+          "detail": "186 tekens"
+        }
+      ]
+    },
+    "dubbele-escape": {
+      "aantal": 13,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/aannemer/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/badkamer/bedrijf/baderie-nuenen-35-pwm/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;amp;"
+        },
+        {
+          "pagina": "/badkamer/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/dakkapel/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/elektricien/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/gordijnrails-ophangen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/spiegel-ophangen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/verhuizen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gietvloer/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/loodgieter/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/schilder/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/stukadoor/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        }
+      ]
+    },
+    "verzonnen-vestiging": {
+      "aantal": 39,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/badkamer/meppel/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Tegeldepot Meppel"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/opdekdeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/schuifdeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stalen-binnendeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stompe-deur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/raamdecoratie/shutters/nijmegen/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Adviba Nijmegen"
+        },
+        {
+          "pagina": "/kopen/raamdecoratie/zonwering-screen/amsterdam/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Ree Zonwering Amsterdam"
+        },
+        {
+          "pagina": "/kopen/raamdecoratie/zonwering-screen/nijmegen/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Adviba Nijmegen"
+        },
+        {
+          "pagina": "/kopen/verlichting/buitenverlichting/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/hanglamp-eettafel/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/inbouwspot/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/plafondlamp/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/railspot/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/vloerlamp/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        }
+      ]
+    },
+    "faq-onzichtbaar": {
+      "aantal": 137,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/bouwvergunning/check/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/opdekdeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/schuifdeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stalen-binnendeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stompe-deur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/kozijn-hr/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/schuifpui/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/smart-lock/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/voordeur-kunststof/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/voordeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/dakkapellen/dakkapel-hout/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/dakkapellen/dakkapel-kunststof/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        }
+      ]
+    },
+    "faq-pariteit": {
+      "aantal": 38499,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/aa-en-hunze/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/aalten/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/alblasserdam/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/alkmaar/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/almelo/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/almere/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/alphen-aan-den-rijn/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/altena/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/amersfoort/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/amstelveen/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/amsterdam/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/apeldoorn/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/arnhem/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/assen/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/asten/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        }
+      ]
+    },
+    "leenbed-drempel": {
+      "aantal": 2,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/vouchers/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'schema'"
+        },
+        {
+          "pagina": "/vouchers/",
+          "soort": "claim zonder voorwaarde",
+          "detail": "in zone 'zichtbaar'"
+        }
+      ]
+    }
+  }
+}

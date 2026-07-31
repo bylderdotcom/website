@@ -1,0 +1,85 @@
+name: Claim-bewaker (tweewekelijks, op productie)
+
+# Standing order (CLAUDE.md): loops draaien read-only en leveren reviewbare
+# output — geen auto-publish, en de bewaker repareert nooit zelf.
+#
+# Waarom op productie en niet op de build: een deel van de fouten is alleen
+# daar zichtbaar. Een redirect die een heel cluster wegstuurt, een pagina die
+# 404 geeft, een voucher-tekst die uit de database komt in plaats van uit de
+# code — daar ziet een build-output niets van. Op 29 juli 2026 waren dat
+# precies de twee dingen die misgingen.
+#
+# Productie verandert ook zonder deploy (databasevelden, vouchers), dus niet
+# alleen bij een merge. Dagelijks bleek te veel ruis; de 1e en de 15e van de
+# maand houdt het leesbaar zonder dat een fout een maand blijft staan.
+
+on:
+  schedule:
+    - cron: "0 5 1,15 * *"   # 1e en 15e van de maand, 05:00 UTC
+  workflow_dispatch:
+    inputs:
+      aantal:
+        description: "Aantal productie-URL's om te controleren"
+        default: "300"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  bewaken:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Controleer claims op productie
+        id: check
+        continue-on-error: true
+        run: |
+          python3 scripts/check_claims.py --live "${{ github.event.inputs.aantal || 300 }}" \
+            | tee bewaker.log
+
+      - name: Open een issue bij een harde overtreding
+        if: steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs')
+            const log = fs.readFileSync('bewaker.log', 'utf8')
+            const vandaag = new Date().toISOString().slice(0, 10)
+            const titel = `Claim-bewaker: afwijking op productie (${vandaag})`
+
+            // Eén open issue tegelijk. Een bewaker die elke ochtend een nieuw
+            // issue opent, wordt binnen een week weggeklikt.
+            const bestaand = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'claim-bewaker',
+            })
+            const body = [
+              'De claim-bewaker vond een verschil tussen wat een pagina toont en wat',
+              'zijn metadata of schema beweert. Dat is wat Google laat zien en wat',
+              'AI-zoekmachines citeren, dus het weegt zwaarder dan het lijkt.',
+              '', '```', log.slice(0, 55000), '```', '',
+              'Regelboek: `data/claims.json` — elke nieuwe fout hoort daar een regel te worden.',
+              'Lokaal narekenen: `python3 scripts/check_claims.py web/out` na een build.',
+            ].join('\n')
+
+            if (bestaand.data.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: bestaand.data[0].number, body,
+              })
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: titel, body, labels: ['claim-bewaker'],
+              })
+            }
+
+      - name: Bewaar het rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: claims-rapport
+          path: reports/claims.json
+          if-no-files-found: ignore
