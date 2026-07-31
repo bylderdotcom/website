@@ -31,6 +31,36 @@
         "Ombouwen tot werk- of hobbyruimte",
         "Half: geïsoleerd maar onverwarmd"
       ]
+    },
+    {
+      "vraag": "Blijft er een auto in passen?",
+      "waarom": "Nederlandse nieuwbouwgarages zijn krap voor de auto's die er tegenwoordig zijn. Zet je er een werkbank of stellingen langs een wand, dan past de auto er wel in maar kunnen de deuren niet meer open. Meet de auto met de spiegels uit, niet de folder.",
+      "opties": [
+        "Auto binnen, opslag aan één wand",
+        "Auto buiten, garage als ruimte",
+        "Verdiepte werkkuil of hefplateau",
+        "Kantelpoort vervangen door een sectionaaldeur (scheelt zwenkruimte)"
+      ]
+    },
+    {
+      "vraag": "Isoleren en verwarmen, of koud laten?",
+      "waarom": "Een garage aan de woning is een koudebrug: de wand ertussen scheidt warm van koud. Wordt het een werkplaats of sportruimte, dan moet de isolatie en de ventilatie mee. Onverwarmd condenseert vocht op de koudste plek, en dat is meestal de auto zelf.",
+      "opties": [
+        "Koud laten en alleen ventileren",
+        "De scheidingswand extra isoleren",
+        "Volledig isoleren en verwarmen",
+        "Alleen het plafond isoleren als er een kamer boven zit"
+      ]
+    },
+    {
+      "vraag": "Wat is de vloer en kan hij tegen olie en zout?",
+      "waarom": "In de winter komt hier pekelwater van de auto af. Beton zonder afwerking zuigt dat op en gaat op termijn stuiven. Een coating lost dat op, maar hecht alleen op beton dat droog en schoon genoeg is — en dat is bij oplevering makkelijker dan later.",
+      "opties": [
+        "Coating of gietvloer",
+        "Tegels",
+        "Beton laten en impregneren",
+        "Vloerput met slibvanger"
+      ]
     }
   ],
   "vakken": [
@@ -52,7 +82,10 @@
     "pad": "/bouwvergunning/"
   },
   "fouten": [
-    "Laadpaal plannen zonder te controleren of de meterkast en de aansluiting het aankunnen."
+    "Laadpaal plannen zonder te controleren of de meterkast en de aansluiting het aankunnen.",
+    "Isoleren zonder ventileren. Een dichte, koude garage met een natte auto erin wordt een vochtruimte.",
+    "De garage bij het woonoppervlak rekenen. Voor de waardebepaling telt hij anders mee dan een verwarmde kamer.",
+    "Vergeten dat de deur naar de woning brandwerend moet zijn. In een garage staat precies wat je niet in huis wilt hebben branden."
   ],
   "pagina_pad": "/ruimtes/garage/",
   "intro": "De garage waar een auto in staat is zeldzaam geworden. In de praktijk is het een werkplaats, een fietsenstalling en een opslagruimte — en sinds kort de logischste plek voor een laadpaal. Dat laatste is precies waar de meeste mensen tegen een grens aanlopen die niet in de garage zit maar in de meterkast.",

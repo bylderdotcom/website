@@ -129,7 +129,7 @@ for naam in bestanden:
         if r not in slugs:
             fout(f"verwante ruimte bestaat niet: {r}")
 
-    for p in d.get("paden", []) + d.get("kosten_paden", []):
+    for p in d.get("paden", []) + d.get("kosten_paden", []) + ([d["verwijs_pad"]] if d.get("verwijs_pad") else []):
         if not pad_bestaat(p):
             fout(f"pad bestaat niet: {p}")
         schaduw = geschaduwd_door_redirect(p)

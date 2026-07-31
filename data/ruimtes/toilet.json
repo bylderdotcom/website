@@ -31,6 +31,36 @@
         "Geluidsisolerende wandopbouw",
         "Deur met dichte aansluiting"
       ]
+    },
+    {
+      "vraag": "Wat kies je voor de wanden?",
+      "waarom": "Een toilet is een kleine ruimte waar alles van dichtbij te zien is. Tegels tot plafond zijn onderhoudsarm maar maken het hard en gehorig; stucwerk met een waterbestendige verf is zachter maar kwetsbaarder achter de pot. De keuze bepaalt ook of je later de kleur kunt veranderen.",
+      "opties": [
+        "Volledig betegeld",
+        "Halfhoog tegelwerk met stucwerk erboven",
+        "Stucwerk met vochtbestendige verf",
+        "Wandpanelen"
+      ]
+    },
+    {
+      "vraag": "Komt er warm water bij het fonteintje?",
+      "waarom": "Standaard krijgt een toiletfonteintje alleen koud water. Een warmwaterleiding erheen is bij ruwbouw een korte leiding, achteraf een hakwerk of een doorstroomtoestel onder de fontein. Ligt het toilet ver van de installatie, dan duurt het bovendien lang voordat er warm water komt.",
+      "opties": [
+        "Warmwaterleiding meenemen",
+        "Kleine boiler onder de fontein",
+        "Koud water accepteren",
+        "Fonteintje weglaten"
+      ]
+    },
+    {
+      "vraag": "Hoe zit het met de deur en de vrije ruimte?",
+      "waarom": "Een toiletdeur die naar binnen draait, kan bij een ongeval niet open als iemand ervoor ligt. Naar buiten draaien of een schuifdeur lost dat op. Daarnaast bepaalt de vrije ruimte voor de pot of het toilet ook op latere leeftijd bruikbaar blijft.",
+      "opties": [
+        "Deur naar buiten draaiend",
+        "Schuifdeur",
+        "Bredere doorgang voor toegankelijkheid",
+        "Standaard laten"
+      ]
     }
   ],
   "vakken": [
@@ -50,7 +80,10 @@
   ],
   "fouten": [
     "Fonteintje kiezen dat de deur blokkeert.",
-    "Geen afzuiging in een toilet zonder raam."
+    "Geen afzuiging in een toilet zonder raam.",
+    "Het toilet strak in de hoek plaatsen. Een pot met te weinig ruimte aan één kant is onprettig en slecht schoon te maken.",
+    "Een inbouwreservoir kiezen zonder aan de inspectieluikjes te denken. Een lekkende spoelunit achter een dichte tegelwand betekent tegels eraf.",
+    "De afzuiging op dezelfde schakelaar als het licht zetten zonder nadraaitijd. Dan stopt de afzuiging precies op het moment dat hij nodig is."
   ],
   "pagina_pad": "/ruimtes/toilet/",
   "intro": "De kleinste ruimte met de meeste bezoekers, en in nieuwbouw standaard uitgevoerd met het goedkoopste dat aan de eisen voldoet. Het is daarmee de goedkoopste plek om een woning duurder te laten aanvoelen — en de plek waar een verkeerde maatvoering je twintig jaar lang elke dag opvalt.",

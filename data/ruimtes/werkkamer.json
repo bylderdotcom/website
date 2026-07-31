@@ -40,6 +40,36 @@
         "Loze leiding voor later",
         "Wifi"
       ]
+    },
+    {
+      "vraag": "Waar staan de stopcontacten en zijn het er genoeg?",
+      "waarom": "Een werkplek is tegenwoordig een monitor, een laptopvoeding, een dockingstation, een lamp, een telefoonlader en soms een printer. Twee stopcontacten in een kamer betekent een stekkerdoos over de vloer. Een dubbel punt bij het bureau en een op de tegenoverliggende wand is de kleinste zinvolle uitvoering.",
+      "opties": [
+        "Dubbel punt bij het bureau",
+        "Vloerdoos onder het bureau",
+        "Extra punt op de tegenoverliggende wand",
+        "Geschakelde punten voor verlichting"
+      ]
+    },
+    {
+      "vraag": "Hoe voorkom je oververhitting in de zomer?",
+      "waarom": "Een kleine kamer met apparatuur, één persoon en een raam op het zuiden loopt 's middags op. Het ventilatiesysteem van nieuwbouw is berekend op een slaapkamer, niet op een kamer waar acht uur per dag iemand zit te werken met een computer aan.",
+      "opties": [
+        "Buitenzonwering",
+        "Ventilatiestand verhogen voor deze kamer",
+        "Te openen raam of een raam met nachtventilatie",
+        "Airco of losse koeling voorbereiden"
+      ]
+    },
+    {
+      "vraag": "Blijft dit een werkkamer?",
+      "waarom": "Een werkkamer is vaak dezelfde kamer die later een kinderkamer of logeerkamer wordt. Wie hem inricht met een vaste bureauwand, maakt die omschakeling duur. Voorzieningen die beide functies dienen — een netwerkpunt, genoeg stopcontacten, een dimbaar lichtpunt — houden de kamer bruikbaar.",
+      "opties": [
+        "Losse meubels in plaats van inbouw",
+        "Voorzieningen voor beide functies",
+        "Volledig inbouwen",
+        "Kastwand die later bed verbergt"
+      ]
     }
   ],
   "vakken": [
@@ -59,7 +89,10 @@
   ],
   "fouten": [
     "Videobellen met het raam in de rug.",
-    "Geen bekabeld netwerkpunt in de kamer waar je elke dag werkt."
+    "Geen bekabeld netwerkpunt in de kamer waar je elke dag werkt.",
+    "De kamer alleen op oppervlakte beoordelen. Een bureau van anderhalve meter plus een stoel die naar achteren moet, vraagt meer diepte dan de meeste nieuwbouwkamers hebben.",
+    "Geen aandacht besteden aan wat er achter je in beeld staat. Bij videobellen is dat de achtergrond die iedereen ziet.",
+    "Alleen plafondverlichting plaatsen. Dat geeft schittering op het scherm en schaduw op het toetsenbord."
   ],
   "pagina_pad": "/ruimtes/werkkamer/",
   "intro": "Sinds thuiswerken normaal werd, is dit de meest gevraagde extra ruimte in Nederland. Het is ook de ruimte die het vaakst verkeerd wordt ingericht, en de fouten zijn opvallend consistent: een raam op de verkeerde plek, geen bekabeling, en te weinig geluidsisolatie naar de kamer waar de rest van het gezin zit.",

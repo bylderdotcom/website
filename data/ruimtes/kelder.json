@@ -30,6 +30,36 @@
         "Verdiepte patio",
         "Mechanische ventilatie"
       ]
+    },
+    {
+      "vraag": "Hoe ventileer je een ruimte onder het maaiveld?",
+      "waarom": "Een kelder is koud. Warme zomerlucht die je erin laat, condenseert op de koude wanden — juist in de zomer luchten maakt het dus natter, niet droger. Mechanische ventilatie met een vochtsensor keert dat om, maar vraagt een doorvoer naar buiten die vóór het storten bekend moet zijn.",
+      "opties": [
+        "Mechanische afzuiging met vochtsensor",
+        "Natuurlijke ventilatie via een koekoek",
+        "Aangesloten op het woninginstallatiesysteem",
+        "Ontvochtiger met vaste afvoer"
+      ]
+    },
+    {
+      "vraag": "Wat gaat erin, en verdraagt dat de omstandigheden?",
+      "waarom": "Een kelder is koel en stabiel: goed voor wijn, voorraad en installatie, slecht voor papier, elektronica en alles van hout of karton. Wordt het een verblijfsruimte, dan gelden er eisen aan daglicht, plafondhoogte en een tweede vluchtweg.",
+      "opties": [
+        "Opslag en installatie",
+        "Wijn- of voorraadkelder",
+        "Werkruimte of hobbyruimte",
+        "Volwaardige verblijfsruimte"
+      ]
+    },
+    {
+      "vraag": "Hoe kom je erin, en past er straks nog iets doorheen?",
+      "waarom": "Een steile keldertrap of een luik bepaalt wat er ooit naar beneden kan. Een cv-ketel of boilervat dat er niet doorheen past, is een probleem dat pas over vijftien jaar opduikt — bij de vervanging.",
+      "opties": [
+        "Vaste trap met normale steek",
+        "Ruim luik met een vloerdeel dat eruit kan",
+        "Buitentoegang via een koekoek",
+        "Materiaalluik naast de trap"
+      ]
     }
   ],
   "vakken": [
@@ -47,7 +77,10 @@
     "technische-ruimte"
   ],
   "fouten": [
-    "Beginnen zonder grondwaterstand en bodemonderzoek."
+    "Beginnen zonder grondwaterstand en bodemonderzoek.",
+    "Isoleren aan de binnenzijde zonder een dampremmende laag. Dan condenseert het vocht áchter de isolatie, waar je het niet ziet.",
+    "De elektragroepen en de wasmachine in de kelder zetten zonder terugslagklep op de riolering. Bij wateroverlast staat je installatie in het water.",
+    "Rekenen op de kelder als woonoppervlak. Zonder daglicht en plafondhoogte telt hij daar niet voor mee."
   ],
   "pagina_pad": "/ruimtes/kelder/",
   "intro": "Een kelder is de enige manier om vierkante meters toe te voegen zonder tuin of hoogte op te offeren. Het is ook de duurste en meest onvergeeflijke ingreep aan een woning: alles wat je aan waterdichting fout doet, komt jaren later terug en is dan nauwelijks nog te herstellen.",

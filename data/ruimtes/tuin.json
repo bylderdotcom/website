@@ -40,6 +40,36 @@
         "Buitenstopcontact en loze leiding",
         "Niets"
       ]
+    },
+    {
+      "vraag": "Wat staat er over vijf jaar, en wat betekent dat nu?",
+      "waarom": "Een schuur, een veranda, een trampoline of een vijver bepalen waar leidingen, verharding en beplanting komen. Wie de tuin eerst aanlegt en dan bedenkt wat erin komt, graaft het jaar erna alles weer open. Dit is de goedkoopste beslissing van de hele tuin en de vaakst overgeslagen.",
+      "opties": [
+        "Ontwerp op papier vóór de aanleg",
+        "Alleen de basis aanleggen en gefaseerd afbouwen",
+        "Loze leidingen naar alle hoeken",
+        "Direct volledig aanleggen"
+      ]
+    },
+    {
+      "vraag": "Hoe hou je de grens met de buren praktisch?",
+      "waarom": "Bij nieuwbouw staat er vaak nog niets tussen de percelen. Wie als eerste een schutting zet, bepaalt de plek — en betaalt hem meestal alleen. Overleg vooraf scheelt geld, en een erfafscheiding precies op de grens is gedeeld eigendom met gedeeld onderhoud.",
+      "opties": [
+        "Samen op de erfgrens",
+        "Op eigen grond, net binnen de grens",
+        "Haag in plaats van schutting",
+        "Gemeentelijke of VvE-regels volgen"
+      ]
+    },
+    {
+      "vraag": "Waar komt de zon, en wanneer?",
+      "waarom": "De oriëntatie van de tuin bepaalt waar een terras zinvol is. Een zuidtuin is 's middags heet en heeft schaduw nodig; een noordtuin heeft juist een plek nodig waar 's avonds de laatste zon nog komt. Beplanting die de zon niet krijgt die hij vraagt, blijft achter.",
+      "opties": [
+        "Terras op de avondzon",
+        "Overkapping of pergola tegen de middagzon",
+        "Beplanting kiezen op standplaats",
+        "Meerdere zitplekken"
+      ]
     }
   ],
   "vakken": [
@@ -62,7 +92,10 @@
   ],
   "fouten": [
     "Bestraten op verdichte bouwgrond zonder grondverbetering — dan verzakt het binnen twee jaar.",
-    "Geen loze leiding voor tuinverlichting terwijl de tuin nog open ligt."
+    "Geen loze leiding voor tuinverlichting terwijl de tuin nog open ligt.",
+    "De bouwgrond laten liggen zoals hij is. Onder nieuwbouwtuinen zit vaak puin en verdicht zand, en daar groeit weinig in.",
+    "De hoogte van de tuin gelijk maken aan de vloer binnen. Grond moet onder de isolatielaag en de gevelbekleding blijven, anders trekt vocht de muur in.",
+    "Bomen te dicht op de woning of de erfgrens planten. Voor de afstand tot de grens gelden regels, en wortels bij de fundering zijn een probleem dat pas jaren later zichtbaar wordt."
   ],
   "pagina_pad": "/ruimtes/tuin/",
   "intro": "Bij nieuwbouw krijg je een zandvlakte met een schutting. Wat je daar in het eerste jaar mee doet, bepaalt twintig jaar lang wat er mogelijk is — want de grond onder je terras kun je later niet meer verbeteren zonder alles eruit te halen. Begin daarom onderaan.",

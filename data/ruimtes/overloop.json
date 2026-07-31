@@ -31,6 +31,36 @@
         "Trap in een slaapkamer",
         "Vlizotrap houden"
       ]
+    },
+    {
+      "vraag": "Hoe voorkom je dat de overloop een geluidsknooppunt wordt?",
+      "waarom": "Alle slaapkamerdeuren komen hier uit, en de trap ook. Een harde vloer op de overloop draagt elke voetstap door naar de kamers eronder en ernaast. Dit is de plek waar contactgeluid ontstaat, niet in de kamers zelf.",
+      "opties": [
+        "Zachte vloerafwerking of ondervloer",
+        "Traploper doortrekken over de overloop",
+        "Kierdichting onder de slaapkamerdeuren",
+        "Zwevende dekvloer bij ruwbouw"
+      ]
+    },
+    {
+      "vraag": "Waar komt licht vandaan als er geen raam is?",
+      "waarom": "Veel overlopen hebben geen daglicht. Eén plafondpunt geeft dan 's nachts te veel licht en overdag te weinig gevoel van ruimte. Een lichtstraat of een bovenlicht in een slaapkamerdeur verandert dat, en dat is een keuze bij ruwbouw.",
+      "opties": [
+        "Dakraam of lichtkoepel",
+        "Bovenlicht in een deur",
+        "Dimbaar plafondpunt",
+        "Nachtverlichting laag bij de trap"
+      ]
+    },
+    {
+      "vraag": "Hoe ver kan de wasmachine of de installatie hierheen?",
+      "waarom": "In woningen zonder bijkeuken belandt de wasopstelling vaak op de overloop of in een kast daar. Dat vraagt water, afvoer en een eigen groep op een verdieping — en trillingen op een houten of lichte betonvloer draag je door de hele woning.",
+      "opties": [
+        "Wasopstelling in een kast op de overloop",
+        "Trillingsdempers en een stevige ondervloer",
+        "Naar beneden verplaatsen",
+        "Alleen aansluitingen voorbereiden"
+      ]
     }
   ],
   "vakken": [
@@ -49,7 +79,10 @@
     "hal"
   ],
   "fouten": [
-    "Vergeten dat een zoldertrap ruimte kost die van de overloop of een slaapkamer afgaat."
+    "Vergeten dat een zoldertrap ruimte kost die van de overloop of een slaapkamer afgaat.",
+    "De overloop als restruimte behandelen en er geen stopcontact plaatsen. Stofzuigen op de verdieping wordt dan een verlengsnoer over de trap.",
+    "Een kast plaatsen die de vluchtroute versmalt. Bij brand is de overloop de enige weg naar buiten.",
+    "Vergeten dat de rookmelder hier hoort en niet in een slaapkamer. De overloop is het punt waar rook zich als eerste verzamelt."
   ],
   "pagina_pad": "/ruimtes/overloop/",
   "intro": "De overloop is verloren ruimte in de meeste woningen: je loopt erdoorheen en verder gebeurt er niets. Terwijl hier vaak de meest praktische kastruimte of werkplek van de hele woning past, juist omdat hij centraal ligt en niemand hem claimt.",

@@ -31,6 +31,36 @@
         "Eigen verwarmingsgroep",
         "Drempel accepteren"
       ]
+    },
+    {
+      "vraag": "Hoe verwarm en ventileer je het nieuwe deel?",
+      "waarom": "Een uitbouw is meestal beter geïsoleerd dan de woning waaraan hij vastzit, met veel meer glas. Dat betekent 's zomers warmte en 's winters een radiator die er niet is. De bestaande cv-installatie of warmtepomp is berekend op de oude plattegrond, en het ventilatiesysteem ook.",
+      "opties": [
+        "Vloerverwarming in het nieuwe deel",
+        "Radiator bijplaatsen en capaciteit narekenen",
+        "Extra ventilatiepunt",
+        "Aparte regeling voor de uitbouw"
+      ]
+    },
+    {
+      "vraag": "Hoeveel glas, en met welke zonwering?",
+      "waarom": "Een uitbouw met een glazen achterpui en een lichtstraat wordt in de zomer een kas. Buitenzonwering is veel effectiever dan binnenzonwering, maar vraagt een bevestiging en soms stroom die je bij de bouw meeneemt — daarna wordt het een boring in een nieuwe gevel.",
+      "opties": [
+        "Zonwerend glas",
+        "Buitenscreens met voorbereiding in de bouw",
+        "Overstek of luifel",
+        "Lichtstraat kleiner uitvoeren"
+      ]
+    },
+    {
+      "vraag": "Wat gebeurt er met het regenwater van het nieuwe dak?",
+      "waarom": "Een uitbouw voegt dakoppervlak toe waar het water vandaan komt. Dat water moet ergens heen, en de bestaande afvoer of het riool is daar niet op berekend. In steeds meer gemeenten mag hemelwater bovendien niet zomaar op het vuilwaterriool.",
+      "opties": [
+        "Infiltratiekrat in de tuin",
+        "Regenton met overloop",
+        "Aansluiten op bestaande hemelwaterafvoer",
+        "Afschot naar een grindstrook"
+      ]
     }
   ],
   "vakken": [
@@ -58,7 +88,10 @@
   ],
   "fouten": [
     "De fundering van de bestaande woning niet laten beoordelen bij aansluiting.",
-    "Vergeten dat een uitbouw daglicht wegneemt uit de bestaande kamer erachter."
+    "Vergeten dat een uitbouw daglicht wegneemt uit de bestaande kamer erachter.",
+    "Aannemen dat vergunningvrij ook constructievrij is. Zonder vergunning gelden de bouwtechnische eisen onverkort.",
+    "De aansluiting tussen oud en nieuw niet detailleren. Daar ontstaat later de scheur, omdat oud en nieuw verschillend zetten.",
+    "Vergeten dat het nieuwe deel andere isolatiewaarden heeft dan de rest. Bij verkoop en bij het energielabel telt dat mee."
   ],
   "pagina_pad": "/ruimtes/uitbouw/",
   "intro": "Een uitbouw is de meest gekozen manier om een woning te vergroten, en de plek waar het verschil tussen vergunningvrij en vergunningplichtig letterlijk in centimeters wordt gemeten. Wie de maatvoering en het achtererfgebied begrijpt, bespaart maanden. Wie ermee gokt, staat stil.",

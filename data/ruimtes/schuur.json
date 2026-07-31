@@ -31,6 +31,36 @@
         "Zonnepaneel met accu",
         "Geen stroom"
       ]
+    },
+    {
+      "vraag": "Fundering: op poeren, op een plaat, of los op tegels?",
+      "waarom": "Een schuur zonder fundering zakt scheef zodra de grond zet — en bij nieuwbouw zet de tuin nog jaren. De deur klemt dan als eerste. Welke fundering nodig is, hangt af van het gewicht en of er iets in staat wat waterpas moet blijven.",
+      "opties": [
+        "Betonpoeren",
+        "Betonplaat",
+        "Losse tegels met stelzand",
+        "Schroefpalen"
+      ]
+    },
+    {
+      "vraag": "Hoe blijft het droog van binnen?",
+      "waarom": "Een onverwarmde schuur met een dicht dak krijgt condens: warme lucht slaat neer op koud metaal of hout. Gereedschap roest daardoor sneller dan in de buitenlucht. Ventilatieopeningen laag en hoog lossen dat op, isoleren zonder ventileren maakt het erger.",
+      "opties": [
+        "Ventilatieroosters laag en hoog",
+        "Dampopen dakbedekking",
+        "Isoleren mét ventilatie",
+        "Vloer op afstand van de grond"
+      ]
+    },
+    {
+      "vraag": "Wat sla je op, en wat betekent dat voor de brandveiligheid?",
+      "waarom": "Accu's van een e-bike of tuingereedschap, jerrycans, verf en spuitbussen belanden vrijwel altijd in de schuur. Een accu laden in een houten schuur tegen de gevel van de woning is een risico dat een rookmelder daar niet dekt.",
+      "opties": [
+        "Vaste laadplek met stopcontact op afstand van de gevel",
+        "Metalen kast voor brandbare stoffen",
+        "Rookmelder ook in de schuur",
+        "Schuur losstaand van de woning plaatsen"
+      ]
     }
   ],
   "vakken": [
@@ -52,7 +82,10 @@
     "garage"
   ],
   "fouten": [
-    "Bouwen tot op de erfgrens zonder de regels of de buren te raadplegen."
+    "Bouwen tot op de erfgrens zonder de regels of de buren te raadplegen.",
+    "Een schuur pal tegen de erfgrens én tegen de woning zetten. Voor allebei gelden regels, en samen zijn ze strenger.",
+    "Regenwater van het schuurdak op het buurperceel laten lopen. Dat is de meest voorkomende burenruzie over een schuur.",
+    "Een stroomkabel ondergronds leggen zonder beschermbuis en zonder de ligging vast te leggen. Bij de eerste schep in de tuin is dat een probleem."
   ],
   "pagina_pad": "/ruimtes/schuur/",
   "intro": "Een tuinhuis of schuur is het bouwwerk waar de meeste mensen zonder nadenken aan beginnen, en waar de regels het strengst zijn ten opzichte van de erfgrens. Een schuur die een halve meter te dicht bij de buren staat, is een schuur die je kunt moeten afbreken.",
