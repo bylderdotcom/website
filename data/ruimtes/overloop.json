@@ -1,0 +1,163 @@
+{
+  "slug": "overloop",
+  "naam": "Overloop",
+  "synoniemen": [
+    "gang boven",
+    "portaal boven",
+    "trapportaal"
+  ],
+  "type": "verkeersruimte",
+  "status": "pagina",
+  "kern": "Verloren vierkante meters die zelden benut worden, terwijl hier vaak de meest praktische opbergruimte of werkplek van de woning past.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Kan hier een kast of werkplek?",
+      "waarom": "Een overloop van vier vierkante meter is vaak breed genoeg voor een ondiepe kastenwand zonder dat de doorloop in het gedrang komt.",
+      "opties": [
+        "Ondiepe kastenwand",
+        "Werkplek onder het raam",
+        "Open laten"
+      ]
+    },
+    {
+      "vraag": "Waar komt de trap naar zolder?",
+      "waarom": "Een vaste zoldertrap kost hier de meeste ruimte, en die keuze bepaalt of de overloop nog bruikbaar blijft.",
+      "opties": [
+        "Vaste trap op de overloop",
+        "Trap in een slaapkamer",
+        "Vlizotrap houden"
+      ]
+    },
+    {
+      "vraag": "Hoe voorkom je dat de overloop een geluidsknooppunt wordt?",
+      "waarom": "Alle slaapkamerdeuren komen hier uit, en de trap ook. Een harde vloer op de overloop draagt elke voetstap door naar de kamers eronder en ernaast. Dit is de plek waar contactgeluid ontstaat, niet in de kamers zelf.",
+      "opties": [
+        "Zachte vloerafwerking of ondervloer",
+        "Traploper doortrekken over de overloop",
+        "Kierdichting onder de slaapkamerdeuren",
+        "Zwevende dekvloer bij ruwbouw"
+      ]
+    },
+    {
+      "vraag": "Waar komt licht vandaan als er geen raam is?",
+      "waarom": "Veel overlopen hebben geen daglicht. Eén plafondpunt geeft dan 's nachts te veel licht en overdag te weinig gevoel van ruimte. Een lichtstraat of een bovenlicht in een slaapkamerdeur verandert dat, en dat is een keuze bij ruwbouw.",
+      "opties": [
+        "Dakraam of lichtkoepel",
+        "Bovenlicht in een deur",
+        "Dimbaar plafondpunt",
+        "Nachtverlichting laag bij de trap"
+      ]
+    },
+    {
+      "vraag": "Hoe ver kan de wasmachine of de installatie hierheen?",
+      "waarom": "In woningen zonder bijkeuken belandt de wasopstelling vaak op de overloop of in een kast daar. Dat vraagt water, afvoer en een eigen groep op een verdieping — en trillingen op een houten of lichte betonvloer draag je door de hele woning.",
+      "opties": [
+        "Wasopstelling in een kast op de overloop",
+        "Trillingsdempers en een stevige ondervloer",
+        "Naar beneden verplaatsen",
+        "Alleen aansluitingen voorbereiden"
+      ]
+    }
+  ],
+  "vakken": [
+    "timmerman",
+    "elektricien",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "Kasten",
+    "Verlichting",
+    "Trapbekleding"
+  ],
+  "verwante_ruimtes": [
+    "zolder",
+    "slaapkamer",
+    "hal"
+  ],
+  "fouten": [
+    "Vergeten dat een zoldertrap ruimte kost die van de overloop of een slaapkamer afgaat.",
+    "De overloop als restruimte behandelen en er geen stopcontact plaatsen. Stofzuigen op de verdieping wordt dan een verlengsnoer over de trap.",
+    "Een kast plaatsen die de vluchtroute versmalt. Bij brand is de overloop de enige weg naar buiten.",
+    "Vergeten dat de rookmelder hier hoort en niet in een slaapkamer. De overloop is het punt waar rook zich als eerste verzamelt."
+  ],
+  "pagina_pad": "/ruimtes/overloop/",
+  "intro": "De overloop is verloren ruimte in de meeste woningen: je loopt erdoorheen en verder gebeurt er niets. Terwijl hier vaak de meest praktische kastruimte of werkplek van de hele woning past, juist omdat hij centraal ligt en niemand hem claimt.",
+  "secties": [
+    {
+      "kop": "Meet de doorloop, dan pas de kast",
+      "alineas": [
+        "Een overloop van vier vierkante meter voelt te klein voor iets. Dat is hij meestal niet: een kastenwand van vijfendertig tot veertig centimeter diep laat in de meeste woningen genoeg doorloop over, en biedt precies genoeg voor beddengoed, handdoeken en seizoenskleding.",
+        "De maat die telt is wat er overblijft. Reken op minstens tachtig centimeter vrije doorloop, en meer waar deuren naar binnen draaien of waar je met een wasmand langs moet.",
+        "Ondiepe kasten zijn hier bovendien praktischer dan diepe: je ziet alles in één oogopslag en er verdwijnt niets achterin."
+      ]
+    },
+    {
+      "kop": "De zoldertrap eist zijn plek op",
+      "alineas": [
+        "Wie de zolder tot verblijfsruimte maakt, heeft een vaste trap nodig, en de overloop is meestal de enige plek waar die kan landen. Dat is de belangrijkste reden om de indeling van de overloop pas te bepalen nadat je weet wat je met de zolder doet.",
+        "Een vaste trap neemt al snel twee tot drie vierkante meter in beslag, inclusief de vrije ruimte die je nodig hebt om er comfortabel op te stappen.",
+        "Bedenk dus eerst of de zolder ooit bewoond wordt. Zo ja, houd de plek vrij. Zo nee, dan is de overloop beschikbaar."
+      ]
+    },
+    {
+      "kop": "Licht en geluid van een ruimte waar je 's nachts loopt",
+      "alineas": [
+        "Op de overloop kom je vooral 's nachts en 's ochtends vroeg. Een fel plafondlicht is dan precies verkeerd; een dimmer of een laag geplaatst oriëntatielicht werkt beter en wekt de rest van het huis niet.",
+        "Geluid is de andere kant. Een harde vloer op de overloop draagt elke voetstap door naar de slaapkamers eronder en ernaast. Een zachte vloerafwerking of een goede ondervloer lost dat op.",
+        "Een schakelaar boven én beneden aan de trap is hier geen luxe; zonder wisselschakeling loop je in het donker of laat je het licht branden."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Past er een kast op mijn overloop?",
+      "a": "Vaker wel dan mensen denken. Een kastenwand van vijfendertig tot veertig centimeter diep laat in de meeste woningen voldoende doorloop over — reken op minstens tachtig centimeter vrij. Ondiepe kasten zijn hier bovendien praktischer: je ziet alles in één oogopslag en er verdwijnt niets achterin."
+    },
+    {
+      "v": "Waar komt de trap naar zolder?",
+      "a": "Meestal op de overloop, want dat is vaak de enige plek waar hij kan landen. Een vaste trap neemt inclusief opstapruimte al snel twee tot drie vierkante meter. Bepaal daarom eerst of de zolder ooit verblijfsruimte wordt, en pas daarna hoe je de overloop inricht."
+    },
+    {
+      "v": "Welke vloer is het beste op een overloop?",
+      "a": "Een die geluid dempt. Je loopt hier 's nachts, en boven of naast slaapkamers draagt een harde vloer elke voetstap over. Een zachte afwerking of een goede ondervloer onder een harde vloer maakt hier meer verschil dan waar ook in huis."
+    },
+    {
+      "v": "Heb ik een wisselschakeling nodig bij de trap?",
+      "a": "Praktisch wel. Zonder schakelaar boven én beneden loop je in het donker naar boven of laat je het licht branden. Bij nieuwbouw is dit meerwerk van beperkte omvang; achteraf betekent het een kabel door een afgewerkte wand."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Ondiepe kastenwand op maat",
+      "waarom": "Vijfendertig centimeter diep laat genoeg doorloop over."
+    },
+    {
+      "type": "Wisselschakeling boven en beneden",
+      "waarom": "Anders loop je in het donker of laat je het licht aan."
+    },
+    {
+      "type": "Geluiddempende vloerafwerking",
+      "waarom": "Je loopt hier 's nachts, boven de slaapkamers."
+    },
+    {
+      "type": "Oriëntatieverlichting laag bij de grond",
+      "waarom": "Wekt niemand en is genoeg om de trap te vinden."
+    },
+    {
+      "type": "Trapbekleding",
+      "waarom": "Bepaalt hoeveel je de trap hoort in de rest van de woning."
+    },
+    {
+      "type": "Wasmand-inbouw",
+      "waarom": "De overloop ligt centraal tussen slaapkamers en badkamer."
+    }
+  ],
+  "meerwerk": [
+    "lichtpunten",
+    "stopcontacten"
+  ]
+}

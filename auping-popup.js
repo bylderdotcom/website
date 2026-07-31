@@ -73,13 +73,13 @@
           <span style="color:rgba(255,255,255,.35);font-size:13px;">&#215;</span>
           <span class="auping-bylder">Bylder.com</span>
         </div>
-        <div class="auping-label">Exclusief voor Bylder-leden</div>
+        <div class="auping-label">Exclusief voor Bylder-gebruikers</div>
         <div class="auping-title">Drie voordelen bij<br>4 Auping Stores</div>
       </div>
       <div class="auping-body">
         <div class="auping-perk">
           <div class="auping-perk-num">1</div>
-          <div><div class="auping-perk-t">10% korting op alles</div><div class="auping-perk-d">Op het volledige assortiment — boxsprings, matrassen en bedframes. Geen minimumbesteding.</div></div>
+          <div><div class="auping-perk-t">10% korting op het reguliere assortiment</div><div class="auping-perk-d">Boxsprings, matrassen en bedframes. Geen minimumbesteding. Niet te combineren met een lopende actie, sale of showroomsale.</div></div>
         </div>
         <div class="auping-perk">
           <div class="auping-perk-num">2</div>
@@ -89,7 +89,7 @@
           <div class="auping-perk-num">3</div>
           <div><div class="auping-perk-t">&#127976; Gratis Hotel Haverkist</div><div class="auping-perk-d">Overnachting + ontbijt voor 2 in Den Bosch, t.w.v. &#8364;199. <strong>Vanaf &#8364;6.500 besteding.</strong></div></div>
         </div>
-        <div class="auping-loc">UITSLUITEND GELDIG BIJ AUPING STORE DEN HAAG CENTRUM, ROTTERDAM CENTRUM, ROTTERDAM &amp; LEIDSCHENDAM</div>
+        <div class="auping-loc">ALLEEN IN DE WINKEL TE VERZILVEREN &mdash; TOON JE PERSOONLIJKE CODE UIT JE BYLDER-ACCOUNT &middot; UITSLUITEND BIJ AUPING ROTTERDAM CENTRUM, DEN HAAG CENTRUM, ZOETERMEER &amp; LEIDSCHENDAM</div>
         <a class="auping-cta" href="/vouchers/auping/" onclick="window._sluitAupingPopup()">Bekijk alle Auping voordelen &#8594;</a>
         <button class="auping-dismiss" onclick="window._sluitAupingPopup();localStorage.setItem('aupingPopupDismissed','1')">Niet meer tonen</button>
       </div>

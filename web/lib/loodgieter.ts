@@ -74,10 +74,10 @@ type Bedrijf = {
 // met de oude footer → hier als contentregel behouden i.p.v. stilzwijgend laten vallen.
 const DISCLAIMER =
   'Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is een onafhankelijk platform en geen loodgietersbedrijf.'
-const DISCLAIMER_HTML = `<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:24px;max-width:680px;">${DISCLAIMER}</p>`
+const DISCLAIMER_HTML = `<p style="font-size:11px;color:rgba(61,46,30,0.72);margin-top:24px;max-width:680px;">${DISCLAIMER}</p>`
 
 const TILE_SHAPES = {
-  rated: '<a href="{{href}}" class="tile">{{name}} <span style="color:rgba(61,46,30,0.4);font-weight:400;">&#9733; {{rating}}</span></a>',
+  rated: '<a href="{{href}}" class="tile">{{name}} <span style="color:rgba(61,46,30,0.72);font-weight:400;">&#9733; {{rating}}</span></a>',
   unrated: '<a href="{{href}}" class="tile">{{name}}</a>',
 }
 
@@ -185,7 +185,7 @@ function getRegisterHtml(page: LoodgieterPage): string {
   const nav = registerLetters().map(l => letterButton(l, l === letter)).join('')
   const tiles = companies.map(c => `<a href="${c.href}" class="tile">${c.name}</a>`).join('')
   return `<main style="padding:48px 0 20px;"><div class="container" style="max-width:1000px;">
-  <p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:18px;"><a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder.com</a> &rarr; <a href="/${CLUSTER}/" style="color:rgba(61,46,30,0.4);text-decoration:none;">${CLUSTER}</a> &rarr; <span style="color:rgba(61,46,30,0.6);">Alle bedrijven &mdash; ${letter}</span></p>
+  <p style="font-size:13px;color:rgba(61,46,30,0.72);margin-bottom:18px;"><a href="/" style="color:rgba(61,46,30,0.72);text-decoration:none;">Bylder.com</a> &rarr; <a href="/${CLUSTER}/" style="color:rgba(61,46,30,0.72);text-decoration:none;">${CLUSTER}</a> &rarr; <span style="color:rgba(61,46,30,0.72);">Alle bedrijven &mdash; ${letter}</span></p>
   <h1 style="font-size:1.8rem;font-weight:800;line-height:1.15;margin-bottom:16px;">Alle bedrijven &mdash; ${letter}</h1>
   <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px;">${nav}</div>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">${tiles}</div>
@@ -239,6 +239,86 @@ function getCityHtml(page: LoodgieterPage): string {
   return body.replace('</main>', `${DISCLAIMER_HTML}</main>`)
 }
 
+// Oproep aan de eigenaar om zijn profiel op te eisen. De claim-flow bestaat en
+// werkt, maar niets op deze 25.707 pagina's wees ernaartoe (gemeten 27 jul 2026)
+// — vandaar 1 claim op het hele bestand. Staat onderaan, na de inhoud: de koper
+// die vergelijkt heeft er niets aan, de eigenaar die zichzelf opzoekt wel.
+// Lokale marktcijfers per plaats (data/plaats-gemeente.json). Gekoppeld op de
+// mediane positie van de bedrijven in die plaats naar de dichtstbijzijnde
+// gemeentecentroide, zodat Hoofddorp bij Haarlemmermeer uitkomt en niet bij zichzelf.
+type PlaatsCijfers = {
+  gemeente: string; slug: string
+  prijs?: number | null; prijs_vs_nl?: number | null
+  gereed?: number | null; gereed_jaar?: string | null
+  vergund?: number | null; verhuizingen?: number | null
+  doorstroom?: number | null; projecten?: number | null
+}
+let _plaatsen: Record<string, PlaatsCijfers> | null = null
+function plaatsCijfers(citySlug?: string): PlaatsCijfers | null {
+  if (!citySlug) return null
+  if (!_plaatsen) {
+    try {
+      _plaatsen = JSON.parse(fs.readFileSync(
+        path.join(REPO, 'data', 'plaats-gemeente.json'), 'utf8')).plaatsen
+    } catch { _plaatsen = {} }
+  }
+  return _plaatsen![citySlug] ?? null
+}
+
+const nl = (n: number) => n.toLocaleString('nl-NL')
+
+// De markt waarin dit bedrijf werkt. Alleen tonen als er genoeg cijfers zijn om
+// een zin van te maken -- een blok met drie streepjes helpt niemand.
+function marktHtml(city?: string, citySlug?: string): string {
+  const c = plaatsCijfers(citySlug)
+  if (!c || !city) return ''
+  const feiten: string[] = []
+  if (c.gereed != null && c.gereed_jaar) {
+    feiten.push(`kwamen er in ${c.gereed_jaar} <strong>${nl(c.gereed)} nieuwbouwwoningen</strong> gereed`)
+  }
+  if (c.vergund != null && c.vergund > 0) {
+    feiten.push(`zijn er vergunningen verleend voor <strong>${nl(c.vergund)} woningen</strong>`)
+  }
+  if (c.verhuizingen != null) {
+    feiten.push(`verhuisden <strong>${nl(c.verhuizingen)} mensen</strong> binnen de gemeente`)
+  }
+  if (feiten.length < 2) return ''
+  // Nette Nederlandse opsomming: komma's, en 'en' voor het laatste deel.
+  const reeks = feiten.length > 1
+    ? feiten.slice(0, -1).join(', ') + ' en ' + feiten[feiten.length - 1]
+    : feiten[0]
+  const prijs = c.prijs
+    ? ` Een bestaande koopwoning kost er gemiddeld &euro;${nl(Math.round(c.prijs))}.`
+    : ''
+  return '<div class="divider"></div>'
+    + `<h2>De markt rond ${city}</h2>`
+    + `<p>Wie een vakman zoekt, doet dat zelden zonder aanleiding. In de gemeente `
+    + `${c.gemeente} ${reeks}.${prijs} Dat zijn allemaal huishoudens `
+    + `die op enig moment een offerte opvragen.</p>`
+    + `<p style="font-size:14px;"><a href="/wonen-in/${c.slug}/">Alle cijfers over `
+    + `wonen in ${c.gemeente}</a> &#8212; nieuwbouw, koopprijzen en verhuizingen, `
+    + `met bron en jaartal.</p>`
+}
+
+function claimHtml(pageSlug: string, naam: string): string {
+  const slug = pageSlug.replace(/^bedrijf\//, '')
+  return '<div class="divider"></div>'
+    + '<div style="background:#fff;border:1px solid rgba(61,46,30,0.12);border-radius:14px;'
+    + 'padding:20px 22px;margin:20px 0;">'
+    + '<h2 style="font-size:1.05rem;font-weight:800;color:#1A1208;margin:0 0 6px;">'
+    + 'Is dit jouw bedrijf?</h2>'
+    + '<p style="font-size:14px;color:rgba(61,46,30,0.72);line-height:1.65;margin:0 0 12px;">'
+    + 'Dit profiel is samengesteld uit openbare bronnen. Eis het op om je gegevens, '
+    + 'diensten en foto\'s zelf te beheren. Vermelding blijft gratis; activeren kost '
+    + '&euro;79 per jaar voor je eigen plaats.</p>'
+    + '<a href="https://app.bylder.com/vakbedrijf/claim/' + encodeURIComponent(slug)
+    + '?utm_source=bylder-site&amp;utm_campaign=profiel-claim" '
+    + 'style="background:#3D5A3E;color:#F5F0E8;padding:11px 22px;border-radius:10px;'
+    + 'font-weight:800;font-size:14px;text-decoration:none;display:inline-flex;">'
+    + 'Profiel opeisen &#8594;</a>'
+    + '</div>'
+}
+
 function getBedrijfHtml(page: LoodgieterPage): string {
   const b = getBedrijven()[page.slug]
   let body = readTpl(`content.bedrijf.${b.template}.html`)
@@ -258,7 +338,9 @@ function getBedrijfHtml(page: LoodgieterPage): string {
     body = body.replace('{{tiles}}', b.siblings.map(renderTile).join(''))
   }
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
-  return body.replace('</main>', `${DISCLAIMER_HTML}</main>`)
+  const markt = marktHtml(b.city, b.city_slug)
+  const claim = claimHtml(page.slug, b.name)
+  return body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`)
 }
 
 const _hubCache: Record<string, string> = {}

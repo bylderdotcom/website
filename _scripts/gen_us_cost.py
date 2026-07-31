@@ -98,14 +98,14 @@ a{{color:#3D5A3E}}
 .logo{{display:flex;align-items:center;gap:9px;font-weight:800;color:#1A1208;text-decoration:none;letter-spacing:-.02em}}
 .logo i{{width:30px;height:30px;border-radius:8px;background:#3D5A3E;color:#F5F0E8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px}}
 .btn{{display:inline-flex;align-items:center;gap:7px;background:#3D5A3E;color:#F5F0E8;text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:700;font-size:14px}}
-.crumb{{font-size:12px;color:rgba(61,46,30,.5);padding:16px 0 0}}
+.crumb{{font-size:12px;color:rgba(61,46,30,0.72);padding:16px 0 0}}
 .crumb a{{text-decoration:none}}
 h1{{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800;color:#1A1208;letter-spacing:-.02em;line-height:1.12;margin:10px 0 6px}}
 h2{{font-size:1.25rem;font-weight:800;color:#1A1208;margin:30px 0 10px;letter-spacing:-.01em}}
 p{{margin:10px 0;color:rgba(61,46,30,.8)}}
 .range{{background:#fff;border:1px solid rgba(61,90,62,.25);border-radius:16px;padding:22px;margin:18px 0;text-align:center}}
 .range .big{{font-size:2.2rem;font-weight:800;color:#3D5A3E;letter-spacing:-.03em}}
-.range .sm{{font-size:13px;color:rgba(61,46,30,.55)}}
+.range .sm{{font-size:13px;color:rgba(61,46,30,0.72)}}
 table{{width:100%;border-collapse:collapse;margin:12px 0;background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:12px;overflow:hidden}}
 th,td{{text-align:left;padding:11px 14px;font-size:14px;border-bottom:1px solid rgba(61,46,30,.07)}}
 th{{background:rgba(61,46,30,.04);font-weight:700;color:#1A1208}}
@@ -116,13 +116,13 @@ td.r{{text-align:right;font-weight:700;color:#1A1208;white-space:nowrap}}
 .faq p{{padding-bottom:12px;margin:0}}
 .links{{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}}
 .links a{{background:#fff;border:1px solid rgba(61,46,30,.12);border-radius:999px;padding:6px 13px;font-size:13px;text-decoration:none;color:#3D2E1E}}
-footer{{padding:34px 0;color:rgba(61,46,30,.45);font-size:13px;text-align:center;border-top:1px solid rgba(61,46,30,.08);margin-top:30px}}
-.disc{{font-size:12px;color:rgba(61,46,30,.4);margin-top:8px}}
-</style>
+footer{{padding:34px 0;color:rgba(61,46,30,0.72);font-size:13px;text-align:center;border-top:1px solid rgba(61,46,30,.08);margin-top:30px}}
+.disc{{font-size:12px;color:rgba(61,46,30,0.72);margin-top:8px}}
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 {schema}
 </head>
 <body>
-<nav class="nav"><div class="nav-in"><a href="/en-us/" class="logo"><i>B.</i>Bylder</a><a href="/en-us/" class="btn">Check a quote — free</a></div></nav>
+<nav aria-label="Hoofdnavigatie" class="nav"><div class="nav-in"><a href="/en-us/" class="logo"><i>B.</i>Bylder</a><a href="/en-us/" class="btn">Check a quote — free</a></div></nav>
 <div class="container">
 """
 

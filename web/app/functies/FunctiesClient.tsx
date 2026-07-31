@@ -24,7 +24,7 @@ const CSS = `
 .fn-root .hero p{font-size:16px;color:var(--bark-3);max-width:620px;margin:16px auto 0;line-height:1.6}
 .fn-root .wt-toggle{display:flex;justify-content:center;margin:28px 0 8px}
 .fn-root .wt-toggle .wrap{display:inline-flex;background:#fff;border:1px solid rgba(61,46,30,.12);border-radius:999px;padding:4px;gap:4px;flex-wrap:wrap;justify-content:center}
-.fn-root .wt-btn{border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;padding:9px 18px;border-radius:999px;background:transparent;color:rgba(61,46,30,.6);transition:all .2s}
+.fn-root .wt-btn{border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;padding:9px 18px;border-radius:999px;background:transparent;color:rgba(61,46,30,0.72);transition:all .2s}
 .fn-root .wt-btn.on{background:#3D5A3E;color:#F5F0E8}
 .fn-root .section{padding:24px 0 40px}
 .fn-root .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -38,7 +38,7 @@ const CSS = `
 .fn-root .tag{font-size:10px;font-weight:700;font-family:'Space Mono',monospace;letter-spacing:.04em;padding:2px 8px;border-radius:999px;white-space:nowrap}
 .fn-root .tag.free{background:rgba(61,90,62,.12);color:#3D5A3E}
 .fn-root .tag.lid{background:rgba(184,92,56,.12);color:#B85C38}
-.fn-root .tag.soon{background:rgba(61,46,30,.08);color:rgba(61,46,30,.5)}
+.fn-root .tag.soon{background:rgba(61,46,30,.08);color:rgba(61,46,30,0.72)}
 .fn-root .card p{font-size:13.5px;color:var(--bark-3);line-height:1.6}
 .fn-root .cta{text-align:center;padding:20px 0 80px}
 .fn-root .cta .row{display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center}

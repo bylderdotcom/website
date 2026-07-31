@@ -19,7 +19,7 @@ BASE = "https://www.bylder.com"
 
 # ---------------------------------------------------------------- shared shell
 
-NAV = '''<nav class="glass-nav">
+NAV = '''<nav aria-label="Hoofdnavigatie" class="glass-nav">
   <div class="nav-inner">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
@@ -32,10 +32,10 @@ NAV = '''<nav class="glass-nav">
       <div class="nav-dd">
         <button class="nav-dd-btn" type="button">Voor wie? <span style="font-size:10px;">&#9660;</span></button>
         <div class="nav-dd-menu">
-          <a href="/nieuwbouw-koper/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.6);">Meerwerklijst, vouchers, planning</span></a>
-          <a href="/bestaande-bouw/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.6);">Offerte-check, aannemer matching</span></a>
-          <a href="/renovatie/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.6);">Budgettool, subsidies, planning</span></a>
-          <a href="/voor-vakbedrijven/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Vakbedrijf</strong><span style="font-size:11px;color:rgba(61,46,30,0.6);">Profiel activeren, leads via kopers</span></a>
+          <a href="/nieuwbouw-koper/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Nieuwbouwkoper</strong><span style="font-size:11px;color:rgba(61,46,30,0.72);">Meerwerklijst, vouchers, planning</span></a>
+          <a href="/bestaande-bouw/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Bestaande bouw koper</strong><span style="font-size:11px;color:rgba(61,46,30,0.72);">Offerte-check, aannemer matching</span></a>
+          <a href="/renovatie/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Renovatiewoning</strong><span style="font-size:11px;color:rgba(61,46,30,0.72);">Budgettool, subsidies, planning</span></a>
+          <a href="/voor-vakbedrijven/"><strong style="display:block;font-size:13px;font-weight:700;color:#1A1208;">Vakbedrijf</strong><span style="font-size:11px;color:rgba(61,46,30,0.72);">Profiel activeren, leads via kopers</span></a>
         </div>
       </div>
       <a href="/prijzen/">Prijzen</a>
@@ -86,17 +86,17 @@ a{color:#3D5A3E;}
 .ptable td.price{font-weight:800;color:#1A1208;white-space:nowrap;}
 .tile{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:12px;padding:14px 16px;transition:border-color .15s;font-size:14px;font-weight:600;}
 .tile:hover{border-color:rgba(61,90,62,0.4);}
-.tile small{display:block;font-weight:400;color:rgba(61,46,30,0.6);margin-top:3px;font-size:12.5px;}
+.tile small{display:block;font-weight:400;color:rgba(61,46,30,0.72);margin-top:3px;font-size:12.5px;}
 .cta-primary{display:inline-block;background:#F5F0E8;color:#3D5A3E;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;}
 @media(max-width:768px){.container{padding:0 20px;}.grid-2,.grid-3{grid-template-columns:1fr;}}
 
 .glass-nav{background:rgba(245,240,232,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;}
 .nav-inner{max-width:1280px;margin:0 auto;padding:14px 48px;display:flex;align-items:center;justify-content:space-between;}
 .nav-links{display:flex;align-items:center;gap:24px;}
-.nav-links>a{font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;}
+.nav-links>a{font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;}
 .nav-links>a:hover{color:#1A1208;}
 .nav-right{display:flex;align-items:center;gap:16px;}
-.nav-login{font-size:14px;color:rgba(61,46,30,0.6);text-decoration:none;}
+.nav-login{font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;}
 .nav-cta{background:#3D5A3E;color:#F5F0E8;font-weight:700;font-size:14px;padding:10px 20px;border-radius:8px;text-decoration:none;white-space:nowrap;}
 .nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
 .nav-burger span{width:22px;height:2px;background:#1A1208;border-radius:2px;display:block;}
@@ -105,13 +105,13 @@ a{color:#3D5A3E;}
 .nav-mobile a{padding:11px 10px;color:rgba(61,46,30,0.75);text-decoration:none;font-size:15px;border-radius:8px;}
 .nav-mobile .m-cta{background:#3D5A3E;color:#F5F0E8;font-weight:700;text-align:center;margin-top:8px;}
 .nav-dd{position:relative;}
-.nav-dd-btn{background:none;border:none;cursor:pointer;font-size:14px;color:rgba(61,46,30,0.6);font-family:inherit;padding:0;display:flex;align-items:center;gap:4px;}
+.nav-dd-btn{background:none;border:none;cursor:pointer;font-size:14px;color:rgba(61,46,30,0.72);font-family:inherit;padding:0;display:flex;align-items:center;gap:4px;}
 .nav-dd-menu{display:none;position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 12px 40px rgba(61,46,30,0.12);padding:8px;min-width:248px;z-index:200;}
 .nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:block;}
 .nav-dd-menu a{display:block;padding:10px 14px;border-radius:10px;color:#3D2E1E;text-decoration:none;}
 .nav-dd-menu a:hover{background:#F5F0E8;}
 @media(max-width:860px){.nav-links,.nav-login{display:none;}.nav-burger{display:flex;}.nav-inner{padding:14px 20px;}}
-</style>'''
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>'''
 
 FOOTER = '''<footer style="background:#1A1208;padding:56px 0;">
   <div style="max-width:1180px;margin:0 auto;padding:0 48px;">
@@ -120,7 +120,7 @@ FOOTER = '''<footer style="background:#1A1208;padding:56px 0;">
       <span style="font-weight:700;font-size:16px;color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
     </div>
     <p style="font-size:12px;color:rgba(245,240,232,0.5);max-width:640px;line-height:1.6;">Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, afmeting, constructie, regio en afwerking &mdash; geen offerte. Vergunningregels vatten de landelijke hoofdlijn samen; je gemeente en omgevingsplan zijn leidend. Bylder is een onafhankelijk platform en zelf geen prefab-fabrikant of bouwbedrijf.</p>
-    <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.3);margin-top:18px;">© 2025 Bylder Nederland B.V. — KvK 65020006</p>
+    <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.55);margin-top:18px;">© 2025 Bylder Nederland B.V. — KvK 65020006</p>
   </div>
 </footer>'''
 
@@ -187,7 +187,7 @@ def render(cfg):
 {STYLE}</head>
 <body>{NAV}<main style="padding:56px 0 20px;"><div class="container" style="max-width:1000px;">
   <div style="max-width:820px;">
-    <nav aria-label="Kruimelpad" style="font-size:13px;color:rgba(61,46,30,0.6);margin-bottom:14px;"><a href="/">Bylder.com</a> &rarr; {esc(cfg["crumb"])}</nav>
+    <nav aria-label="Kruimelpad" style="font-size:13px;color:rgba(61,46,30,0.72);margin-bottom:14px;"><a href="/">Bylder.com</a> &rarr; {esc(cfg["crumb"])}</nav>
     <div class="badge">{esc(cfg["badge"])}</div>
     <h1 style="font-size:2.5rem;font-weight:800;line-height:1.14;margin-bottom:16px;">{cfg["h1"]}</h1>
     <p style="font-size:1.12rem;color:#1A1208;line-height:1.6;margin-bottom:14px;font-weight:600;">{cfg["tldr"]}</p>
@@ -223,7 +223,7 @@ def render(cfg):
   <div class="divider"></div>
   <h2 style="font-size:1.3rem;font-weight:800;margin:8px 0 14px;">Verder lezen</h2>
   <div class="grid-3">{tiles}</div>
-  <p style="font-size:12px;color:rgba(61,46,30,0.6);margin-top:22px;">Bijgewerkt: juli 2026 &middot; Bylder Nederland B.V. &middot; Vragen? <a href="mailto:hallo@bylder.com">hallo@bylder.com</a></p>
+  <p style="font-size:12px;color:rgba(61,46,30,0.72);margin-top:22px;">Bijgewerkt: juli 2026 &middot; Bylder Nederland B.V. &middot; Vragen? <a href="mailto:hallo@bylder.com">hallo@bylder.com</a></p>
   </div></main>{FOOTER}</body></html>'''
     return doc
 

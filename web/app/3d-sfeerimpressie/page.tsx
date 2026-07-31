@@ -130,7 +130,7 @@ const CSS = `
 .sf-main .check-list li::before{content:'✓';color:#3D5A3E;font-weight:700;flex-shrink:0;margin-top:2px;}
 .sf-main .faq-item{border-bottom:1px solid rgba(61,46,30,0.08);padding:20px 0;}
 .sf-main .faq-item h3{font-size:16px;font-weight:700;margin-bottom:8px;color:#1A1208;}
-.sf-main .faq-item p{font-size:14px;color:rgba(61,46,30,0.65);line-height:1.7;}
+.sf-main .faq-item p{font-size:14px;color:rgba(61,46,30,0.72);line-height:1.7;}
 .sf-main .swatches{display:flex;gap:0;border-radius:10px;overflow:hidden;height:64px;margin-bottom:16px;border:1px solid rgba(61,46,30,0.1);}
 .sf-main .swatches span{flex:1;}
 .sf-main .style-tile{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:16px;padding:18px;transition:border-color .15s;}
@@ -143,7 +143,7 @@ function Tile({ href, name, sub }: { href: string; name: string; sub: string }) 
   return (
     <a href={href} className="style-tile">
       <div style={{ fontWeight: 700, fontSize: 15, color: '#1A1208', marginBottom: 2 }}>{name}</div>
-      <div style={{ fontSize: 13, color: 'rgba(61,46,30,0.55)' }}>{sub}</div>
+      <div style={{ fontSize: 13, color: 'rgba(61,46,30,0.72)' }}>{sub}</div>
     </a>
   )
 }
@@ -160,22 +160,22 @@ export default function SfeerimpressiePage() {
       <div className="container">
         <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 64, alignItems: 'start' }}>
           <article>
-            <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.4)', marginBottom: 32 }}><a href="/" style={{ color: 'rgba(61,46,30,0.4)', textDecoration: 'none' }}>Bylder.com</a> → <span style={{ color: 'rgba(61,46,30,0.6)' }}>3D-sfeerimpressie</span></p>
+            <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.72)', marginBottom: 32 }}><a href="/" style={{ color: 'rgba(61,46,30,0.72)', textDecoration: 'none' }}>Bylder.com</a> → <span style={{ color: 'rgba(61,46,30,0.72)' }}>3D-sfeerimpressie</span></p>
             <div className="badge">AI-visualisatie</div>
             <h1 style={{ fontSize: '2.6rem', fontWeight: 800, marginBottom: 8, lineHeight: 1.15 }}>3D-sfeerimpressie van je plattegrond</h1>
-            <p style={{ fontSize: '1.05rem', color: 'rgba(61,46,30,0.5)', marginBottom: 8, fontStyle: 'italic' }}>Zie hoe je nieuwe woning wordt — vóór je kiest, koopt en afwerkt</p>
+            <p style={{ fontSize: '1.05rem', color: 'rgba(61,46,30,0.72)', marginBottom: 8, fontStyle: 'italic' }}>Zie hoe je nieuwe woning wordt — vóór je kiest, koopt en afwerkt</p>
             <div className="divider"></div>
             <p style={{ fontSize: '1.05rem', color: 'rgba(61,46,30,0.7)', marginBottom: 16, lineHeight: 1.8 }}>Een nieuwbouw- of verbouwwoning koop je op basis van een plattegrond — een platte tekening waarop moeilijk te zien is hoe het écht wordt. Toch maak je juist dán keuzes van tienduizenden euro's: vloeren, keuken, kleuren, inrichting. Bylder zet je plattegrond om in een realistische <strong>3D-sfeerimpressie</strong>, zodat je je woning kunt ervaren en met vertrouwen beslist.</p>
             <p style={{ fontSize: '1.05rem', color: 'rgba(61,46,30,0.7)', marginBottom: 8, lineHeight: 1.8 }}>Je kiest uit zes interieurstijlen en ziet binnen enkele minuten hoe je ruimte eruit kan zien. Vergelijk stijlen naast elkaar, ontdek wat bij je past en gebruik de beelden om af te stemmen met je partner, aannemer of leverancier.</p>
 
             <h2 style={{ fontSize: '1.4rem', fontWeight: 700, margin: '40px 0 14px' }}>Kies je stijl</h2>
-            <p style={{ fontSize: 15, color: 'rgba(61,46,30,0.65)', marginBottom: 18 }}>Elke stijl heeft een eigen materiaal- en kleurenpalet. Bekijk per stijl hoe je woonkamer, keuken en slaapkamer eruit kunnen zien.</p>
+            <p style={{ fontSize: 15, color: 'rgba(61,46,30,0.72)', marginBottom: 18 }}>Elke stijl heeft een eigen materiaal- en kleurenpalet. Bekijk per stijl hoe je woonkamer, keuken en slaapkamer eruit kunnen zien.</p>
             <div className="grid-3" style={{ marginBottom: 8 }}>
               {STYLES.map(s => (
                 <a key={s.href} href={s.href} className="style-tile">
                   <div className="swatches" aria-hidden="true">{s.sw.map((c, i) => <span key={i} style={{ background: c }}></span>)}</div>
                   <div style={{ fontWeight: 700, fontSize: 16, color: '#1A1208', marginBottom: 2 }}>{s.name}</div>
-                  <div style={{ fontSize: 13, color: 'rgba(61,46,30,0.55)' }}>{s.sub}</div>
+                  <div style={{ fontSize: 13, color: 'rgba(61,46,30,0.72)' }}>{s.sub}</div>
                 </a>
               ))}
             </div>
@@ -223,13 +223,13 @@ export default function SfeerimpressiePage() {
             ))}
 
             <div className="divider"></div>
-            <p style={{ fontSize: 14, color: 'rgba(61,46,30,0.6)' }}>Verder lezen: <a href="/ai-plattegrond-maken-3d/">plattegrond maken (2D naar 3D)</a> · <a href="/nieuwbouw-tools/">gratis nieuwbouw-tools</a> · <a href="/functies/">alle functies van Bylder</a></p>
+            <p style={{ fontSize: 14, color: 'rgba(61,46,30,0.72)' }}>Verder lezen: <a href="/ai-plattegrond-maken-3d/">plattegrond maken (2D naar 3D)</a> · <a href="/nieuwbouw-tools/">gratis nieuwbouw-tools</a> · <a href="/functies/">alle functies van Bylder</a></p>
           </article>
 
           <aside style={{ position: 'sticky', top: 100 }}>
             <div className="card" style={{ marginBottom: 20 }}>
               <p style={{ fontSize: 13, fontWeight: 700, color: '#1A1208', marginBottom: 8 }}>Probeer de tool</p>
-              <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.55)', marginBottom: 16, lineHeight: 1.6 }}>Maak gratis een account en upload je plattegrond. Gratis voor bewoners: tot 10 impressies per maand.</p>
+              <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.72)', marginBottom: 16, lineHeight: 1.6 }}>Maak gratis een account en upload je plattegrond. Gratis voor bewoners: tot 10 impressies per maand.</p>
               <a href="https://app.bylder.com/registreer" style={{ display: 'block', textAlign: 'center', background: '#3D5A3E', color: '#F5F0E8', padding: 11, borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Start gratis →</a>
             </div>
             <div className="card" style={{ marginBottom: 20 }}>
@@ -245,7 +245,7 @@ export default function SfeerimpressiePage() {
             </div>
             <div className="card">
               <p style={{ fontSize: 13, fontWeight: 700, color: '#1A1208', marginBottom: 8 }}>10% korting bij 40+ merken</p>
-              <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.55)', marginBottom: 16, lineHeight: 1.6 }}>Auping, Goossens en meer — gekoppeld aan je woning.</p>
+              <p style={{ fontSize: 13, color: 'rgba(61,46,30,0.72)', marginBottom: 16, lineHeight: 1.6 }}>Auping, Goossens en meer — gekoppeld aan je woning.</p>
               <a href="/#vouchers" style={{ display: 'block', textAlign: 'center', background: '#F5F0E8', color: '#3D5A3E', border: '1.5px solid rgba(61,90,62,0.3)', padding: 11, borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Vouchers bekijken →</a>
             </div>
           </aside>

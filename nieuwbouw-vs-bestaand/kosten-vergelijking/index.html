@@ -135,14 +135,14 @@
 
     a { color: #3D5A3E; }
     a:hover { text-decoration: underline; }
-  .nav-links a{font-size:14px;color:rgba(61,46,30,0.55);text-decoration:none;transition:color .2s;}
+  .nav-links a{font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;transition:color .2s;}
 .nav-links a:hover{color:#1A1208;text-decoration:none;}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav style="background:rgba(245,240,232,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:0 5%;">
+<nav aria-label="Hoofdnavigatie" style="background:rgba(245,240,232,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:0 5%;">
   <div style="max-width:1100px;margin:0 auto;height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
     <a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
       <div style="width:32px;height:32px;background:#3D5A3E;border-radius:7px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:12px;flex-shrink:0;">B.</div>
@@ -155,16 +155,16 @@
       <a href="/woning-verduurzamen/">Verduurzamen</a>
       <a href="/kennisbank/">Kennisbank</a>
       <a href="/nieuwbouw-tools/">Tools</a>
-      <div class="byl-zk" style="position:relative;display:inline-block;"><style>.byl-zk-menu{display:none;}.byl-zk:hover .byl-zk-menu{display:block;}.byl-zk-menu a:hover{background:rgba(61,90,62,0.07);text-decoration:none;}</style><a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Zakelijk <span style="font-size:9px;">▼</span></a><div class="byl-zk-menu" style="position:absolute;top:100%;left:-14px;padding-top:12px;z-index:70;"><div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 18px 40px rgba(26,18,8,0.14);padding:8px;min-width:230px;"><a href="/deelnemer-worden/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Deelnemer worden</a><a href="/deelnemer-worden/merken/">Merken (DHZ, wonen &amp; tuin)</a><a href="/deelnemer-worden/winkels-webshops/">Winkels &amp; webshops</a><a href="/voor-vakbedrijven/">Vakbedrijven</a><a href="/deelnemer-worden/interieurbouw/">Interieurbouw</a><a href="/deelnemer-worden/interieurontwerp-architecten/">Interieurontwerp &amp; architecten</a><a href="/deelnemer-worden/ontwikkelaars-bouwers/">Ontwikkelaars &amp; bouwers</a><a href="/deelnemer-worden/prefab-netwerk/">Prefab-netwerk</a><a href="/deelnemer-worden/commercieel-vastgoed/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Commercieel vastgoed</a><a href="/zakelijk/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:700;color:#3D5A3E;border-top:1px solid rgba(61,46,30,0.07);white-space:nowrap;">Alles over Bylder Zakelijk →</a></div></div></div>
+      <div class="byl-zk" style="position:relative;display:inline-block;"><style>.byl-zk-menu{display:none;}.byl-zk:hover .byl-zk-menu{display:block;}.byl-zk-menu a:hover{background:rgba(61,90,62,0.07);text-decoration:none;}/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style><a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Zakelijk <span style="font-size:9px;">▼</span></a><div class="byl-zk-menu" style="position:absolute;top:100%;left:-14px;padding-top:12px;z-index:70;"><div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 18px 40px rgba(26,18,8,0.14);padding:8px;min-width:230px;"><a href="/deelnemer-worden/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Deelnemer worden</a><a href="/deelnemer-worden/merken/">Merken (DHZ, wonen &amp; tuin)</a><a href="/deelnemer-worden/winkels-webshops/">Winkels &amp; webshops</a><a href="/voor-vakbedrijven/">Vakbedrijven</a><a href="/deelnemer-worden/interieurbouw/">Interieurbouw</a><a href="/deelnemer-worden/interieurontwerp-architecten/">Interieurontwerp &amp; architecten</a><a href="/deelnemer-worden/ontwikkelaars-bouwers/">Ontwikkelaars &amp; bouwers</a><a href="/deelnemer-worden/prefab-netwerk/">Prefab-netwerk</a><a href="/deelnemer-worden/commercieel-vastgoed/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Commercieel vastgoed</a><a href="/zakelijk/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:700;color:#3D5A3E;border-top:1px solid rgba(61,46,30,0.07);white-space:nowrap;">Alles over Bylder Zakelijk →</a></div></div></div>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <a href="/nieuwbouw-koper/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Nieuwbouw kopen</a>
-      <a href="/verbouwen/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Verbouwen</a>
-      <a href="/interieur-woning/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Inrichten</a>
-      <a href="/woning-verduurzamen/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Verduurzamen</a>
-      <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kennisbank</a>
-      <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Tools</a>
-      <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a>
+      <a href="/nieuwbouw-koper/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Nieuwbouw kopen</a>
+      <a href="/verbouwen/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Verbouwen</a>
+      <a href="/interieur-woning/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Inrichten</a>
+      <a href="/woning-verduurzamen/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Verduurzamen</a>
+      <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Kennisbank</a>
+      <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Tools</a>
+      <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Zakelijk</a>
       <a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;font-size:13px;font-weight:700;text-decoration:none;padding:10px 18px;border-radius:8px;">Start gratis →</a>
     </div>
   </div>
@@ -178,16 +178,16 @@
 
     <!-- Kruimelpad -->
     <nav aria-label="Kruimelpad" style="margin-bottom:16px;">
-      <ol style="list-style:none;display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:13px;color:rgba(61,46,30,0.55);">
-        <li><a href="/" style="color:rgba(61,46,30,0.55);text-decoration:none;">Bylder.com</a></li>
+      <ol style="list-style:none;display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:13px;color:rgba(61,46,30,0.72);">
+        <li><a href="/" style="color:rgba(61,46,30,0.72);text-decoration:none;">Bylder.com</a></li>
         <li style="padding:0 4px;" aria-hidden="true">/</li>
-        <li><a href="/nieuwbouw-vs-bestaand/" style="color:rgba(61,46,30,0.55);text-decoration:none;">Nieuwbouw vs bestaand</a></li>
+        <li><a href="/nieuwbouw-vs-bestaand/" style="color:rgba(61,46,30,0.72);text-decoration:none;">Nieuwbouw vs bestaand</a></li>
         <li style="padding:0 4px;" aria-hidden="true">/</li>
         <li style="color:#3D2E1E;font-weight:600;" aria-current="page">Kosten vergelijking</li>
       </ol>
     </nav>
 
-    <p style="font-size:12px;color:rgba(61,46,30,0.45);margin-bottom:24px;">Laatst bijgewerkt: 1 juli 2026</p>
+    <p style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:24px;">Laatst bijgewerkt: 1 juli 2026</p>
 
     <!-- Badge + H1 -->
     <div style="display:inline-block;background:rgba(61,90,62,0.1);color:#3D5A3E;font-size:12px;font-weight:700;font-family:'Space Mono',monospace;letter-spacing:0.06em;padding:5px 12px;border-radius:20px;margin-bottom:18px;text-transform:uppercase;">Kosten · vergelijking</div>
@@ -200,11 +200,11 @@
     <div class="kv-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:48px;">
       <div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:12px;padding:24px;">
         <p style="font-size:12px;font-weight:700;color:#3D5A3E;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">Nieuwbouw (v.o.n.)</p>
-        <p style="font-size:28px;font-weight:800;color:#1A1208;font-family:'Space Mono',monospace;">€4.200–€5.500<span style="font-size:16px;font-weight:400;color:rgba(61,46,30,0.5);">/m²</span></p>
+        <p style="font-size:28px;font-weight:800;color:#1A1208;font-family:'Space Mono',monospace;">€4.200–€5.500<span style="font-size:16px;font-weight:400;color:rgba(61,46,30,0.72);">/m²</span></p>
       </div>
       <div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:12px;padding:24px;">
         <p style="font-size:12px;font-weight:700;color:#B85C38;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">Bestaand (k.k.)</p>
-        <p style="font-size:28px;font-weight:800;color:#1A1208;font-family:'Space Mono',monospace;">€3.600–€4.800<span style="font-size:16px;font-weight:400;color:rgba(61,46,30,0.5);">/m²</span></p>
+        <p style="font-size:28px;font-weight:800;color:#1A1208;font-family:'Space Mono',monospace;">€3.600–€4.800<span style="font-size:16px;font-weight:400;color:rgba(61,46,30,0.72);">/m²</span></p>
       </div>
     </div>
   </section>
@@ -212,7 +212,7 @@
   <!-- KOSTENTABELLEN -->
   <section style="max-width:1100px;margin:0 auto;padding:0 5% 48px;">
     <h2 style="font-size:22px;font-weight:800;color:#1A1208;margin-bottom:8px;">Totale kosten naast elkaar</h2>
-    <p style="font-size:15px;color:rgba(61,46,30,0.65);margin-bottom:28px;">Basis: tussenwoning 100–120 m², regioafhankelijk.</p>
+    <p style="font-size:15px;color:rgba(61,46,30,0.72);margin-bottom:28px;">Basis: tussenwoning 100–120 m², regioafhankelijk.</p>
 
     <div class="cards-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:20px;">
 
@@ -230,20 +230,20 @@
                 <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;font-weight:700;color:#1A1208;">€350.000–€550.000</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
-                <td style="padding:10px 0;color:#3D2E1E;">+ Meerwerk <span style="font-size:12px;color:rgba(61,46,30,0.5);">gem. 10%</span></td>
+                <td style="padding:10px 0;color:#3D2E1E;">+ Meerwerk <span style="font-size:12px;color:rgba(61,46,30,0.72);">gem. 10%</span></td>
                 <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:#B85C38;">+€35.000–€55.000</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
-                <td style="padding:10px 0;color:#3D2E1E;">+ Notariskosten <span style="font-size:12px;color:rgba(61,46,30,0.5);">alleen overdracht</span></td>
-                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.65);">+€800–€1.500</td>
+                <td style="padding:10px 0;color:#3D2E1E;">+ Notariskosten <span style="font-size:12px;color:rgba(61,46,30,0.72);">alleen overdracht</span></td>
+                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);">+€800–€1.500</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
-                <td style="padding:10px 0;color:#3D2E1E;">+ Makelaar <span style="font-size:12px;color:rgba(61,46,30,0.5);">facultatief</span></td>
-                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.65);">+€0–€3.000</td>
+                <td style="padding:10px 0;color:#3D2E1E;">+ Makelaar <span style="font-size:12px;color:rgba(61,46,30,0.72);">facultatief</span></td>
+                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);">+€0–€3.000</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
                 <td style="padding:10px 0;color:#3D2E1E;">+ Inrichting &amp; afwerking</td>
-                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.65);">+€20.000–€60.000</td>
+                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);">+€20.000–€60.000</td>
               </tr>
               <tr style="background:rgba(61,90,62,0.06);border-radius:8px;">
                 <td style="padding:14px 8px;font-weight:700;color:#1A1208;border-radius:6px 0 0 6px;">Totaal indicatief</td>
@@ -268,27 +268,27 @@
                 <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;font-weight:700;color:#1A1208;">€350.000–€500.000</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
-                <td style="padding:10px 0;color:#3D2E1E;">+ Overdrachtsbelasting <span style="font-size:12px;color:rgba(61,46,30,0.5);">2%</span></td>
+                <td style="padding:10px 0;color:#3D2E1E;">+ Overdrachtsbelasting <span style="font-size:12px;color:rgba(61,46,30,0.72);">2%</span></td>
                 <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:#B85C38;">+€7.000–€10.000</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
-                <td style="padding:10px 0;color:#3D2E1E;">+ Notaris <span style="font-size:12px;color:rgba(61,46,30,0.5);">overdracht + hypotheek</span></td>
-                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.65);">+€2.000–€3.500</td>
+                <td style="padding:10px 0;color:#3D2E1E;">+ Notaris <span style="font-size:12px;color:rgba(61,46,30,0.72);">overdracht + hypotheek</span></td>
+                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);">+€2.000–€3.500</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
                 <td style="padding:10px 0;color:#3D2E1E;">+ Taxatie</td>
-                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.65);">+€600–€900</td>
+                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);">+€600–€900</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
-                <td style="padding:10px 0;color:#3D2E1E;">+ Makelaar <span style="font-size:12px;color:rgba(61,46,30,0.5);">koper</span></td>
-                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.65);">+€0–€3.500</td>
+                <td style="padding:10px 0;color:#3D2E1E;">+ Makelaar <span style="font-size:12px;color:rgba(61,46,30,0.72);">koper</span></td>
+                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);">+€0–€3.500</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
                 <td style="padding:10px 0;color:#3D2E1E;">+ Bouwkundige keuring</td>
-                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.65);">+€300–€500</td>
+                <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);">+€300–€500</td>
               </tr>
               <tr style="border-bottom:1px solid rgba(61,46,30,0.08);">
-                <td style="padding:10px 0;color:#3D2E1E;">+ Renovatie <span style="font-size:12px;color:rgba(61,46,30,0.5);">indicatief</span></td>
+                <td style="padding:10px 0;color:#3D2E1E;">+ Renovatie <span style="font-size:12px;color:rgba(61,46,30,0.72);">indicatief</span></td>
                 <td style="padding:10px 0;text-align:right;font-family:'Space Mono',monospace;color:#B85C38;">+€15.000–€80.000</td>
               </tr>
               <tr style="background:rgba(184,92,56,0.06);">
@@ -303,7 +303,7 @@
 
     <!-- YMYL disclaimer -->
     <div style="background:rgba(61,46,30,0.04);border-left:3px solid rgba(61,46,30,0.2);border-radius:0 8px 8px 0;padding:14px 18px;margin-bottom:48px;">
-      <p style="font-size:13px;color:rgba(61,46,30,0.6);line-height:1.55;">Deze bedragen zijn indicatieve bandbreedtes. Vraag een hypotheekadviseur voor een persoonlijk beeld.</p>
+      <p style="font-size:13px;color:rgba(61,46,30,0.72);line-height:1.55;">Deze bedragen zijn indicatieve bandbreedtes. Vraag een hypotheekadviseur voor een persoonlijk beeld.</p>
     </div>
   </section>
 
@@ -311,7 +311,7 @@
   <section style="background:#fff;border-top:1px solid rgba(61,46,30,0.08);border-bottom:1px solid rgba(61,46,30,0.08);padding:56px 5%;">
     <div style="max-width:1100px;margin:0 auto;">
       <h2 style="font-size:22px;font-weight:800;color:#1A1208;margin-bottom:8px;">Energielasten over 10 jaar</h2>
-      <p style="font-size:15px;color:rgba(61,46,30,0.65);margin-bottom:32px;">Het grootste verschil zit niet in de aankoopprijs — het zit in wat je maandelijks kwijt bent aan energie.</p>
+      <p style="font-size:15px;color:rgba(61,46,30,0.72);margin-bottom:32px;">Het grootste verschil zit niet in de aankoopprijs — het zit in wat je maandelijks kwijt bent aan energie.</p>
 
       <div class="energy-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px;">
 
@@ -373,7 +373,7 @@
         <div style="flex:1;min-width:200px;">
           <p style="font-size:13px;font-weight:700;color:#3D5A3E;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;">Verschil over 10 jaar</p>
           <p style="font-size:32px;font-weight:800;color:#3D5A3E;font-family:'Space Mono',monospace;">~€19.000</p>
-          <p style="font-size:13px;color:rgba(61,46,30,0.65);margin-top:4px;">energievoordeel nieuwbouw ten opzichte van label D</p>
+          <p style="font-size:13px;color:rgba(61,46,30,0.72);margin-top:4px;">energievoordeel nieuwbouw ten opzichte van label D</p>
         </div>
         <div style="flex:2;min-width:240px;">
           <p style="font-size:14px;color:#3D2E1E;line-height:1.6;">Verschil per jaar: €1.900. Over 10 jaar loopt dat op tot bijna €19.000 — en dat is zonder rekening te houden met stijgende energieprijzen. Nieuwbouw verbruikt bovendien geen gas, wat je beschermt tegen gasprijs-volatiliteit.</p>
@@ -468,7 +468,7 @@
       </div>
       <div style="display:flex;gap:40px;flex-wrap:wrap;">
         <div>
-          <p style="font-size:12px;font-weight:700;color:rgba(245,240,232,0.4);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">Navigatie</p>
+          <p style="font-size:12px;font-weight:700;color:rgba(245,240,232,0.55);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">Navigatie</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
             <li><a href="/nieuwbouw-vs-bestaand/" style="font-size:13px;color:rgba(245,240,232,0.6);text-decoration:none;">Nieuwbouw vs bestaand</a></li>
             <li><a href="/offerte-check/" style="font-size:13px;color:rgba(245,240,232,0.6);text-decoration:none;">Offerte check</a></li>
@@ -478,7 +478,7 @@
           </ul>
         </div>
         <div>
-          <p style="font-size:12px;font-weight:700;color:rgba(245,240,232,0.4);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">Bedrijf</p>
+          <p style="font-size:12px;font-weight:700;color:rgba(245,240,232,0.55);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">Bedrijf</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
             <li><a href="/over/" style="font-size:13px;color:rgba(245,240,232,0.6);text-decoration:none;">Over Bylder</a></li>
             <li><a href="/privacy/" style="font-size:13px;color:rgba(245,240,232,0.6);text-decoration:none;">Privacybeleid</a></li>
@@ -488,11 +488,12 @@
       </div>
     </div>
     <div style="border-top:1px solid rgba(245,240,232,0.08);padding-top:24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;">
-      <p style="font-size:12px;color:rgba(245,240,232,0.35);">© 2026 Bylder B.V. · KvK 65020006</p>
-      <p style="font-size:12px;color:rgba(245,240,232,0.35);max-width:480px;">Informatief overzicht. Prijzen zijn indicatieve marktbandbreedtes voor NL 2026.</p>
+      <p style="font-size:12px;color:rgba(245,240,232,0.55);">© 2026 Bylder B.V. · KvK 65020006</p>
+      <p style="font-size:12px;color:rgba(245,240,232,0.55);max-width:480px;">Informatief overzicht. Prijzen zijn indicatieve marktbandbreedtes voor NL 2026.</p>
     </div>
   </div>
 </footer>
 
+  <script src="/mis-je-iets.js" defer></script>
 </body>
 </html>

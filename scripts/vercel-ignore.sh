@@ -18,6 +18,21 @@ EXCL=(
   ':(exclude)*.md'         ':(exclude)*.py'
 )
 
+# Preview-builds standaard overslaan (besluit 29-07-2026). Elke wijziging bouwde
+# twee keer — eerst een preview bij de PR, daarna productie na de merge — en één
+# build van deze site duurt een kwartier. Bij een reeks wijzigingen op een dag
+# staan er zo drie builds in de rij en loopt productie ver achter.
+#
+# Ontsnappingsluik: een branch die met `preview/` begint bouwt wél. Gebruik dat
+# voor wijzigingen die je eerst wilt zíén — een nieuwe pagina, een andere
+# volgorde, een ander ontwerp. Voor tekstcorrecties en data is het overbodig.
+if [ "${VERCEL_ENV:-}" = "preview" ]; then
+  case "${VERCEL_GIT_COMMIT_REF:-}" in
+    preview/*) echo "Preview-branch — bouwen." ;;
+    *) echo "Preview overgeslagen (branch begint niet met preview/)." ; exit 0 ;;
+  esac
+fi
+
 # Geen parent (eerste commit / shallow clone): altijd bouwen.
 git rev-parse --verify HEAD^ >/dev/null 2>&1 || exit 1
 

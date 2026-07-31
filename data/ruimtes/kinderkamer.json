@@ -1,0 +1,160 @@
+{
+  "slug": "kinderkamer",
+  "naam": "Kinderkamer",
+  "synoniemen": [
+    "babykamer",
+    "kinderslaapkamer"
+  ],
+  "type": "binnen",
+  "status": "pagina",
+  "kern": "Een slaapkamer met andere eisen: veiligheid, verduistering en een indeling die drie keer verandert voordat het kind achttien is.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Hoe lang moet deze inrichting mee?",
+      "waarom": "Een babykamer en een tienerkamer vragen tegengestelde dingen. Kies waar je op inricht, of kies bewust voor wat meegroeit.",
+      "opties": [
+        "Inrichten op nu",
+        "Meegroeimeubels",
+        "Casco houden en later invullen"
+      ]
+    },
+    {
+      "vraag": "Verduistering?",
+      "waarom": "Kleine kinderen slapen slechter bij licht; in de zomer is het hier het langst licht. Dit is de meest gemaakte aanpassing ná de oplevering.",
+      "opties": [
+        "Verduisterend rolgordijn",
+        "Cassette-rolgordijn tegen lichtranden",
+        "Buitenzonwering"
+      ]
+    },
+    {
+      "vraag": "Waar staat het bed, en waar de deur en het raam?",
+      "waarom": "In een standaard nieuwbouwkinderkamer van rond de negen vierkante meter is er meestal maar één plek waar een bed past zonder de deur of het raam te blokkeren. Dat bepaalt vervolgens waar het lichtpunt en de stopcontacten hadden moeten zitten. Deze volgorde omdraaien is de meest gemaakte fout.",
+      "opties": [
+        "Bed tegen de binnenmuur",
+        "Bed onder het raam met tochtcheck",
+        "Hoogslaper om vloer te winnen",
+        "Twee bedden in een L-opstelling"
+      ]
+    },
+    {
+      "vraag": "Hoe hou je geluid tussen de kinderkamers uit elkaar?",
+      "waarom": "Nieuwbouw-binnenwanden tussen slaapkamers zijn licht: een metalstud-wand met gipsplaten laat gesprekken door. Bij twee kinderen die op andere tijden slapen merk je dat elke avond. Een tweede plaatlaag of isolatie in de wand is bij ruwbouw een kleine ingreep en achteraf een verbouwing.",
+      "opties": [
+        "Extra plaatlaag bij ruwbouw",
+        "Isolatie in de spouw van de binnenwand",
+        "Kasten als geluidsbuffer tegen de deelwand",
+        "Zwaardere deur met kierdichting"
+      ]
+    },
+    {
+      "vraag": "Hoeveel licht, en op welke schakeling?",
+      "waarom": "Een kinderkamer heeft drie lichtstanden nodig die niets met elkaar te maken hebben: fel om op te ruimen, warm om voor te lezen en heel zwak om 's nachts te controleren. Eén lichtpunt in het midden dekt daar één van. Dimbaar plus een apart nachtlampje op een schakelaar bij de deur lost het op.",
+      "opties": [
+        "Dimbaar plafondpunt",
+        "Extra wandpunt bij het bed",
+        "Nachtverlichting op een aparte schakelaar",
+        "Losse lampen op geschakelde stopcontacten"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "Raamdecoratie",
+    "Meubelen"
+  ],
+  "verwante_ruimtes": [
+    "slaapkamer"
+  ],
+  "fouten": [
+    "Stopcontacten op kindhoogte zonder kinderbeveiliging.",
+    "Verduistering met lichtranden langs de zijkanten — dan werkt het niet.",
+    "Uitgaan van de kamerafmeting op de verkooptekening. Daar staat de maat tussen de ruwbouw; na stucwerk en plinten houd je minder over.",
+    "Een hoogslaper plannen zonder de vrije hoogte te meten. Onder een schuin dak of met een verlaagd plafond past hij net niet.",
+    "Het radiatorplekje volzetten met een kast. Warmte die niet de kamer in kan, verwarmt de kastachterwand."
+  ],
+  "pagina_pad": "/ruimtes/kinderkamer/",
+  "intro": "Een kinderkamer is een slaapkamer met andere eisen en een veel kortere houdbaarheid. De inrichting die perfect is voor een baby, is over vier jaar onbruikbaar en over tien jaar gênant. Dat pleit ervoor om te investeren in wat blijft — licht, verduistering, bekabeling — en niet in wat meegroeit met een smaak die verandert.",
+  "secties": [
+    {
+      "kop": "Verduistering is de belangrijkste aankoop",
+      "alineas": [
+        "Kleine kinderen slapen slechter bij licht, en in Nederland is het in juni om half vijf 's ochtends licht. Verduistering is daarmee niet decoratie maar functie, en het is de meest gedane aanpassing ná de oplevering.",
+        "Let op de lichtranden. Een verduisterend rolgordijn dat vrij in de dagkant hangt, laat aan drie kanten licht door en dat is precies genoeg om een kind wakker te maken. Een cassettesysteem met zijgeleiding sluit wel af.",
+        "Bij een dakraam is de standaardoplossing van de fabrikant meestal de enige die echt verduistert, omdat hij in het kozijn valt."
+      ]
+    },
+    {
+      "kop": "Veiligheid zit in details die je nu regelt",
+      "alineas": [
+        "Stopcontacten op kindhoogte horen kinderbeveiliging te hebben; in nieuwbouw is dat tegenwoordig standaard, maar controleer het. Belangrijker zijn de dingen die niet standaard zijn: een raam dat verder opengaat dan een kind aankan, en hoge meubels die niet aan de wand zijn bevestigd.",
+        "Kantelbeveiliging voor kasten is een beugel van een paar euro en de meest onderschatte veiligheidsmaatregel in een kinderkamer.",
+        "En koorden: van rolgordijnen en jaloezieën. Kies koordloze systemen of gebruik de meegeleverde wandclip, want dit is een bekend en reëel risico bij jonge kinderen."
+      ]
+    },
+    {
+      "kop": "Inrichten op wat verandert",
+      "alineas": [
+        "Een babykamer heeft een commode nodig, een tienerkamer een bureau. De ruimte ertussen duurt ongeveer vier jaar en gaat daarna nog twee keer om.",
+        "Dat pleit voor meegroeimeubels waar het kan en voor losse meubels waar het moet — een vaste inbouwkast die op de maat van een peuterbed is ontworpen, staat er over tien jaar nog steeds.",
+        "Wat wél de moeite waard is om vast te leggen: genoeg stopcontacten, een dataleiding voor later, en verlichting die je kunt dimmen. Die drie blijven relevant, ongeacht hoe de kamer eruitziet."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Hoe verduister ik een kinderkamer echt?",
+      "a": "Met een systeem dat aan de zijkanten afsluit. Een verduisterend rolgordijn dat vrij in de dagkant hangt laat aan drie kanten licht door, en dat is genoeg om een kind te wekken. Kies een cassettesysteem met zijgeleiding, of bij een dakraam de verduistering van de raamfabrikant zelf, omdat die in het kozijn valt."
+    },
+    {
+      "v": "Wat is de belangrijkste veiligheidsmaatregel in een kinderkamer?",
+      "a": "Kantelbeveiliging op hoge meubels. Een beugel van een paar euro die de kast aan de wand vastzet, voorkomt het ongeval dat het vaakst ernstig afloopt. Daarna: koordloze raamdecoratie of de wandclip gebruiken, en controleren dat het raam niet verder opengaat dan een kind aankan."
+    },
+    {
+      "v": "Moet ik een kinderkamer op de toekomst inrichten?",
+      "a": "Op de dingen die blijven wel: stopcontacten, een dataleiding, dimbare verlichting en verduistering. Op de meubels niet — een vaste inbouwkast op de maat van een peuterbed staat er over tien jaar nog. Losse of meegroeiende meubels zijn hier verstandiger dan maatwerk."
+    },
+    {
+      "v": "Hoeveel stopcontacten heeft een kinderkamer nodig?",
+      "a": "Meer dan de twee die er standaard zitten, en op andere plekken. Reken op een punt bij het bed, een bij het bureau dat er later komt, en een vrij punt voor een lamp of luchtreiniger. Bij oplevering is dat meerwerk van weinig geld."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Verduistering met zijgeleiding",
+      "waarom": "Zonder afsluiting aan de zijkanten werkt verduistering niet."
+    },
+    {
+      "type": "Kantelbeveiliging voor kasten",
+      "waarom": "De meest onderschatte veiligheidsmaatregel, en hij kost bijna niets."
+    },
+    {
+      "type": "Koordloze raamdecoratie",
+      "waarom": "Koorden van rolgordijnen zijn een bekend risico bij jonge kinderen."
+    },
+    {
+      "type": "Meegroeibed of -bureau",
+      "waarom": "De inrichting verandert drie keer; de meubels hoeven dat niet."
+    },
+    {
+      "type": "Dimbare verlichting",
+      "waarom": "Een kinderkamer is 's avonds een andere ruimte dan overdag."
+    },
+    {
+      "type": "Extra stopcontacten bij bed en bureau",
+      "waarom": "Standaard zitten er twee, en zelden op de goede plek."
+    }
+  ],
+  "meerwerk": [
+    "stopcontacten",
+    "lichtpunten",
+    "loze-leidingen"
+  ]
+}

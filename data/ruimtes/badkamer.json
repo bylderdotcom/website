@@ -1,0 +1,64 @@
+{
+  "slug": "badkamer",
+  "naam": "Badkamer",
+  "synoniemen": [
+    "natte cel",
+    "doucheruimte",
+    "sanitaire ruimte"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "Na de keuken de duurste ruimte, en de enige waar een fout in de waterdichting jaren later pas zichtbaar wordt — dan in het plafond eronder.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Inloopdouche of douchebak?",
+      "waarom": "Een inloopdouche vraagt afschot in de vloer en een waterdichte afwerking over een groter oppervlak. Mooier en toegankelijker, maar minder vergevingsgezind voor uitvoeringsfouten.",
+      "opties": [
+        "Inloopdouche met vloerput",
+        "Douchebak",
+        "Bad met douche"
+      ]
+    },
+    {
+      "vraag": "Wat doe je met de waterdichting?",
+      "waarom": "Dit is het onzichtbare werk waar het misgaat. Kitranden zijn geen waterdichting; de laag eronder is dat.",
+      "opties": [
+        "Volledige waterdichte laag onder de tegels",
+        "Kant-en-klaar douchesysteem",
+        "Prefab badkamercel (nieuwbouw)"
+      ]
+    }
+  ],
+  "vakken": [
+    "badkamer",
+    "loodgieter",
+    "elektricien",
+    "ventilatiebedrijf"
+  ],
+  "productcategorieen": [
+    "Sanitair",
+    "Wandtegels"
+  ],
+  "kosten_paden": [
+    "/renovatiekosten/badkamer/"
+  ],
+  "paden": [
+    "/badkamer/",
+    "/badkamer-renoveren/"
+  ],
+  "verwante_ruimtes": [
+    "tweede-badkamer",
+    "toilet"
+  ],
+  "fouten": [
+    "Kit als waterdichting beschouwen.",
+    "Ventilatie te licht kiezen voor een ruimte zonder raam.",
+    "Elektra plaatsen zonder de zone-indeling van natte ruimtes aan te houden."
+  ],
+  "verwijs_pad": "/badkamer/",
+  "verwijs_reden": "Deze ruimte heeft al een eigen laag op Bylder: de badkamer-vakpillar met marktprijzen en bedrijven per gemeente. Een tweede pagina over hetzelfde onderwerp zou daarmee concurreren."
+}

@@ -1,0 +1,165 @@
+{
+  "slug": "bijkamer",
+  "naam": "Bijkamer",
+  "synoniemen": [
+    "logeerkamer",
+    "hobbykamer",
+    "flexkamer",
+    "extra kamer"
+  ],
+  "type": "binnen",
+  "status": "pagina",
+  "kern": "De kamer zonder vaste bestemming: vandaag logeerkamer, over twee jaar kinderkamer of kantoor. Juist daarom loont het om hem neutraal en flexibel op te leveren.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waarvoor richt je hem nu in?",
+      "waarom": "Een kamer die alles moet kunnen wordt zelden goed in iets. Kies een hoofdgebruik en houd de rest mogelijk.",
+      "opties": [
+        "Logeerkamer met opklapbed",
+        "Werkkamer die kan omklappen",
+        "Leeg laten tot de behoefte duidelijk is"
+      ]
+    },
+    {
+      "vraag": "Voorzieningen nu of later?",
+      "waarom": "Netwerkpunt, extra groepen en een tweede lichtpunt zijn bij oplevering goedkoop. Ze aanleggen als je nog niet weet wat de kamer wordt, houdt alle opties open.",
+      "opties": [
+        "Ruim voorzien bij oplevering",
+        "Loze leidingen",
+        "Standaard laten"
+      ]
+    },
+    {
+      "vraag": "Waar staat het bed als het een logeerkamer wordt?",
+      "waarom": "Een logeerbed dat er permanent staat, kost de kamer zijn tweede functie. Een bedbank of een opklapbed geeft die terug, maar vraagt wel de vrije muur ervoor en een vloer die het gewicht van het mechaniek aankan. Bepaal dit vóór de kasten, niet erna.",
+      "opties": [
+        "Vast logeerbed",
+        "Bedbank",
+        "Opklapbed in een kastwand",
+        "Geen bed, luchtbed als het nodig is"
+      ]
+    },
+    {
+      "vraag": "Hoeveel stopcontacten en op welke wanden?",
+      "waarom": "Een kamer die drie keer van functie verandert, heeft in elke opstelling andere punten nodig. Standaard krijgt zo'n kamer er twee, meestal op de verkeerde wand. Extra punten bij oplevering zijn een kleine post; achteraf is het een kabel door een afgewerkte wand of een verlengsnoer over de vloer.",
+      "opties": [
+        "Op elke wand een dubbel punt",
+        "Twee wanden zwaarder uitvoeren",
+        "Vloerdoos midden in de kamer",
+        "Loze leidingen voor later"
+      ]
+    },
+    {
+      "vraag": "Verwarm en ventileer je hem ook als hij leegstaat?",
+      "waarom": "Een kamer die maandenlang dicht en koud blijft, koelt af tot onder de rest van het huis. Vocht uit de aangrenzende ruimtes slaat dan neer op de koudste wand, meestal achter een kast tegen de buitengevel. De ventilatie in nieuwbouw is berekend op een kamer die gebruikt wordt.",
+      "opties": [
+        "Radiator op een lage basisstand",
+        "Ventilatie op de laagste stand aan laten",
+        "Deur openhouden",
+        "Losse hygrometer om het te volgen"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "stukadoor",
+    "schilder"
+  ],
+  "productcategorieen": [
+    "Meubelen",
+    "Kasten",
+    "Raamdecoratie"
+  ],
+  "verwante_ruimtes": [
+    "werkkamer",
+    "kinderkamer",
+    "slaapkamer"
+  ],
+  "fouten": [
+    "Inrichten op een gebruik dat over een jaar verandert, met vaste kasten en al.",
+    "De kamer meteen dichtzetten met vaste kasten. Dat maakt de enige flexibele ruimte in huis net zo vast als de rest.",
+    "Verduistering pas regelen als er iemand komt logeren. Een raam zonder gordijnrail betekent een rail boren in een afgewerkte wand.",
+    "Vergeten dat een werkkamer een netwerkaansluiting wil. Wifi door twee betonvloeren haalt zelden wat een kabel haalt."
+  ],
+  "pagina_pad": "/ruimtes/bijkamer/",
+  "intro": "De kamer zonder vaste bestemming: vandaag logeerkamer, over twee jaar kinderkamer of kantoor. Juist dat maakt hem lastig — een kamer die alles moet kunnen, wordt zelden ergens goed in. De oplossing is niet flexibel inrichten maar flexibel vóórbereiden.",
+  "secties": [
+    {
+      "kop": "Kies één hoofdgebruik, houd de rest mogelijk",
+      "alineas": [
+        "Een kamer die tegelijk logeerkamer, kantoor en opbergruimte is, functioneert in geen van die rollen. Kies daarom wat het nú is, en richt daarop in.",
+        "Wat je wél flexibel houdt, zijn de voorzieningen. Stopcontacten aan meerdere wanden, een dataleiding, en verlichting die je kunt dimmen: die drie maken elke toekomstige invulling mogelijk zonder dat je iets hoeft te verbouwen.",
+        "Vaste inbouwkasten zijn hier juist onverstandig. Ze zijn ontworpen op het huidige gebruik en staan de volgende invulling in de weg."
+      ]
+    },
+    {
+      "kop": "De logeerkamer die niemand gebruikt",
+      "alineas": [
+        "Een kamer die het grootste deel van het jaar leegstaat voor gasten die drie keer per jaar komen, is dure vierkante meters. Een opklapbed of een goede slaapbank maakt van dezelfde ruimte een werkkamer of hobbykamer die je wél dagelijks gebruikt.",
+        "Bedenk daarbij dat een opklapbed diepte nodig heeft en dat de wand waar hij aan hangt draagkracht moet hebben. Dat is bij een lichte binnenwand niet vanzelfsprekend.",
+        "En dat een gast meer nodig heeft dan een bed: een plek voor een koffer, een stopcontact bij het bed, en verduistering."
+      ]
+    },
+    {
+      "kop": "Geluid bepaalt of hij bruikbaar is",
+      "alineas": [
+        "Een bijkamer grenst vaak aan een slaapkamer of ligt boven de woonkamer. Wordt het een werkkamer of hobbyruimte, dan is geluid de eerste beperking waar je tegenaan loopt.",
+        "Een zwaardere binnendeur met naaddichting is ook hier de goedkoopste winst. Voor contactgeluid van boven naar beneden helpt een goede ondervloer meer dan wat dan ook.",
+        "Weet je al dat er muziek gemaakt of vergaderd gaat worden, neem dan isolatie in de scheidingswand mee bij de bouw. Achteraf is dat een verbouwing."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Wat doe ik met een extra kamer die ik nog niet nodig heb?",
+      "a": "Voorzie hem ruim en richt hem sober in. Stopcontacten aan meerdere wanden, een dataleiding en dimbare verlichting maken elke toekomstige invulling mogelijk. Vaste inbouwkasten zijn juist onhandig: die zijn ontworpen op het gebruik van nu en staan de volgende invulling in de weg."
+    },
+    {
+      "v": "Is een opklapbed een goed idee in een logeerkamer?",
+      "a": "Vaak wel, want het maakt van een kamer die drie keer per jaar wordt gebruikt een ruimte die je dagelijks kunt gebruiken. Let op twee dingen: een opklapbed heeft aanzienlijke diepte nodig, en de wand waar hij aan hangt moet het gewicht kunnen dragen. Bij een lichte binnenwand is dat niet vanzelfsprekend."
+    },
+    {
+      "v": "Hoe maak ik een bijkamer geschikt om in te werken?",
+      "a": "Begin bij geluid en licht, niet bij het meubilair. Een zwaardere deur met naaddichting geeft de meeste geluidswinst per euro. Zet het bureau haaks op het raam voor bruikbaar daglicht zonder tegenlicht, en zorg voor een bekabeld netwerkpunt als je er echt gaat werken."
+    },
+    {
+      "v": "Telt een bijkamer mee als slaapkamer bij verkoop?",
+      "a": "Als hij aan de eisen voor een verblijfsruimte voldoet — voldoende oppervlak, daglicht en ventilatie — wordt hij doorgaans als kamer meegeteld. Een kamer zonder raam telt niet mee, hoe bruikbaar hij verder ook is. Dat verschil kan bij verkoop aanzienlijk uitmaken."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Opklapbed of goede slaapbank",
+      "waarom": "Maakt van een kamer voor drie nachten per jaar een ruimte voor elke dag."
+    },
+    {
+      "type": "Zwaardere deur met naaddichting",
+      "waarom": "De grootste geluidswinst per euro."
+    },
+    {
+      "type": "Losse kasten in plaats van inbouw",
+      "waarom": "De invulling verandert; de kast hoeft niet mee te verhuizen."
+    },
+    {
+      "type": "Dataleiding of loze leiding",
+      "waarom": "Bij oplevering weinig geld, later een kabel langs de plint."
+    },
+    {
+      "type": "Verduistering",
+      "waarom": "Een gast slaapt slecht in een kamer waar het om vijf uur licht is."
+    },
+    {
+      "type": "Dimbare verlichting",
+      "waarom": "Werken vraagt ander licht dan logeren."
+    }
+  ],
+  "meerwerk": [
+    "stopcontacten",
+    "loze-leidingen",
+    "lichtpunten"
+  ]
+}

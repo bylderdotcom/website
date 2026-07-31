@@ -40,7 +40,7 @@ def fetch(url):
 
 def signaal_zinnen(html):
     # HTML -> platte tekst -> genormaliseerde zinnen met een signaal erin.
-    txt = re.sub(r"<script[\s\S]*?</script>|<style[\s\S]*?</style>", " ", html)
+    txt = re.sub(r"<script[\s\S]*?</script>|<style[\s\S]*?/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>", " ", html)
     txt = re.sub(r"<[^>]+>", " ", txt)
     txt = unicodedata.normalize("NFKC", txt)
     txt = re.sub(r"\s+", " ", txt)

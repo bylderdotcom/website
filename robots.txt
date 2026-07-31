@@ -26,31 +26,6 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+# Eén index die naar alle losse sitemaps wijst. Losse regels per sitemap
+# werkten niet: Google pikte er 6 van de 29 op (gemeten 28 jul 2026).
 Sitemap: https://www.bylder.com/sitemap.xml
-Sitemap: https://www.bylder.com/kennisbank-sitemap.xml
-Sitemap: https://www.bylder.com/affiliate-sitemap.xml
-Sitemap: https://www.bylder.com/en-us-sitemap.xml
-Sitemap: https://www.bylder.com/showroomsale-sitemap.xml
-Sitemap: https://www.bylder.com/kortingscode-sitemap.xml
-Sitemap: https://www.bylder.com/3d-sfeerimpressie-sitemap.xml
-Sitemap: https://www.bylder.com/bouwvergunning-sitemap.xml
-Sitemap: https://www.bylder.com/gereedschap-lenen-sitemap.xml
-Sitemap: https://www.bylder.com/nieuwbouw-project-sitemap.xml
-Sitemap: https://www.bylder.com/meerwerk-sitemap.xml
-Sitemap: https://www.bylder.com/eerlijke-prijzen-sitemap.xml
-Sitemap: https://www.bylder.com/stukadoor-sitemap.xml
-Sitemap: https://www.bylder.com/schilder-sitemap.xml
-Sitemap: https://www.bylder.com/loodgieter-sitemap.xml
-Sitemap: https://www.bylder.com/elektricien-sitemap.xml
-Sitemap: https://www.bylder.com/aannemer-sitemap.xml
-Sitemap: https://www.bylder.com/badkamer-sitemap.xml
-Sitemap: https://www.bylder.com/dakkapel-sitemap.xml
-Sitemap: https://www.bylder.com/gietvloer-sitemap.xml
-Sitemap: https://www.bylder.com/plattegrond-inrichten-sitemap.xml
-Sitemap: https://www.bylder.com/dakdekker-sitemap.xml
-Sitemap: https://www.bylder.com/energieadviseur-sitemap.xml
-Sitemap: https://www.bylder.com/isolatiebedrijf-sitemap.xml
-Sitemap: https://www.bylder.com/kozijnbedrijf-sitemap.xml
-Sitemap: https://www.bylder.com/timmerman-sitemap.xml
-Sitemap: https://www.bylder.com/ventilatiebedrijf-sitemap.xml
-Sitemap: https://www.bylder.com/warmtepompinstallateur-sitemap.xml

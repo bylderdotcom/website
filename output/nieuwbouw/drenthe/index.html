@@ -98,14 +98,14 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
 .faq-body.open{max-height:400px}
 .faq-icon{transition:transform 0.3s}
 .faq-trigger.active .faq-icon{transform:rotate(180deg)}
-</style>
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>
 
 <a href="#main-content" style="position:absolute;left:-9999px;" onfocus="this.style.cssText='position:fixed;top:0;left:0;z-index:9999;padding:12px 20px;background:#3D5A3E;color:#F5F0E8;font-weight:700;font-size:14px;'">Ga naar hoofdinhoud</a>
 
 <!-- NAV -->
-<nav class="glass-nav fixed top-0 left-0 right-0 z-50 py-4">
+<nav aria-label="Hoofdnavigatie" class="glass-nav fixed top-0 left-0 right-0 z-50 py-4">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <div style="width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:flex;align-items:center;justify-content:center;">
@@ -114,9 +114,9 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
       <span style="font-weight:700;font-size:18px;letter-spacing:-0.02em;color:#1A1208;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
     <div style="display:flex;align-items:center;gap:24px;">
-      <a href="/nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Alle gemeenten</a>
-      <a href="/#vouchers" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Vouchers</a>
-      <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Begeleiding</a>
+      <a href="/nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Alle gemeenten</a>
+      <a href="/#vouchers" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Vouchers</a>
+      <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Begeleiding</a>
     </div>
     <a href="https://mijn.bylder.com" class="cta-btn px-5 py-2.5 rounded-lg text-sm inline-block">Start gratis <i class="ph-thin ph-arrow-right ml-1 text-xs"></i></a>
   </div>
@@ -125,9 +125,9 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
 <!-- BREADCRUMB -->
 <div style="padding-top:72px;">
   <div class="container" style="padding-top:10px;padding-bottom:10px;">
-    <nav style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(61,46,30,0.4);flex-wrap:wrap;">
-      <a href="/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Bylder</a> ›
-      <a href="/nieuwbouw/" style="color:rgba(61,46,30,0.4);text-decoration:none;">Nieuwbouw</a> ›
+    <nav aria-label="Kruimelpad" style="display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(61,46,30,0.72);flex-wrap:wrap;">
+      <a href="/" style="color:rgba(61,46,30,0.72);text-decoration:none;">Bylder</a> ›
+      <a href="/nieuwbouw/" style="color:rgba(61,46,30,0.72);text-decoration:none;">Nieuwbouw</a> ›
       <span style="color:#3D5A3E;font-weight:600;">Drenthe</span>
     </nav>
   </div>
@@ -147,7 +147,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
       Nieuwbouw in Drenthe:<br>
       <span style="color:#3D5A3E;font-style:italic;font-weight:300;">alle gemeenten & projecten</span>
     </h1>
-    <p style="font-size:16px;color:rgba(61,46,30,0.65);line-height:1.8;max-width:620px;margin-bottom:32px;">
+    <p style="font-size:16px;color:rgba(61,46,30,0.72);line-height:1.8;max-width:620px;margin-bottom:32px;">
       In Drenthe ondersteunt Bylder <strong style="color:#1A1208;">43 actieve nieuwbouwprojecten</strong> in <strong style="color:#1A1208;">12 gemeenten</strong>. Kopers in deze provincie besparen gemiddeld <strong style="color:#3D5A3E;">€3.008</strong> op afwerking en inrichting via AI offerte check en collectieve korting.
     </p>
 
@@ -155,19 +155,19 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:700px;">
       <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:12px;padding:16px;text-align:center;">
         <div style="font-size:1.6rem;font-weight:800;color:#1A1208;letter-spacing:-0.04em;">12</div>
-        <div style="font-size:11px;color:rgba(61,46,30,0.45);font-family:'Space Mono',monospace;margin-top:3px;">gemeenten</div>
+        <div style="font-size:11px;color:rgba(61,46,30,0.72);font-family:'Space Mono',monospace;margin-top:3px;">gemeenten</div>
       </div>
       <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:12px;padding:16px;text-align:center;">
         <div style="font-size:1.6rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;">43</div>
-        <div style="font-size:11px;color:rgba(61,46,30,0.45);font-family:'Space Mono',monospace;margin-top:3px;">projecten</div>
+        <div style="font-size:11px;color:rgba(61,46,30,0.72);font-family:'Space Mono',monospace;margin-top:3px;">projecten</div>
       </div>
       <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:12px;padding:16px;text-align:center;">
         <div style="font-size:1.6rem;font-weight:800;color:#B85C38;letter-spacing:-0.04em;">€3.008</div>
-        <div style="font-size:11px;color:rgba(61,46,30,0.45);font-family:'Space Mono',monospace;margin-top:3px;">gem. bespaard</div>
+        <div style="font-size:11px;color:rgba(61,46,30,0.72);font-family:'Space Mono',monospace;margin-top:3px;">gem. bespaard</div>
       </div>
       <div style="background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:12px;padding:16px;text-align:center;">
         <div style="font-size:1.6rem;font-weight:800;color:#1A1208;letter-spacing:-0.04em;">10%</div>
-        <div style="font-size:11px;color:rgba(61,46,30,0.45);font-family:'Space Mono',monospace;margin-top:3px;">korting merken</div>
+        <div style="font-size:11px;color:rgba(61,46,30,0.72);font-family:'Space Mono',monospace;margin-top:3px;">korting merken</div>
       </div>
     </div>
   </div>
@@ -183,7 +183,7 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
         <h2 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;">
           Alle gemeenten in Drenthe
         </h2>
-        <p style="font-size:14px;color:rgba(61,46,30,0.5);margin-top:6px;">Klik op een gemeente voor lokale marktdata, projecten en de 5% depot calculator</p>
+        <p style="font-size:14px;color:rgba(61,46,30,0.72);margin-top:6px;">Klik op een gemeente voor lokale marktdata, projecten en de 5% depot calculator</p>
       </div>
       <a href="https://mijn.bylder.com" class="cta-btn px-6 py-3 rounded-xl inline-flex items-center gap-2" style="font-size:13px;">
         Start QuickScan <i class="ph-thin ph-arrow-right text-xs"></i>
@@ -194,74 +194,74 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
       
         <a href="/nieuwbouw/drenthe/emmen/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Emmen</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">7 projecten · €3.200 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Emmerhout, Bargeres, Delftlanden, Kloosters</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">7 projecten · €3.200 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Emmerhout, Bargeres, Delftlanden, Kloosters</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/assen/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Assen</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">6 projecten · €3.300 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Kloosterveen, Pittelo, Baggelhuizen</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">6 projecten · €3.300 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Kloosterveen, Pittelo, Baggelhuizen</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/meppel/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Meppel</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">4 projecten · €3.100 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Haveltermade, Oosterboer, De Wijk</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">4 projecten · €3.100 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Haveltermade, Oosterboer, De Wijk</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/hoogeveen/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Hoogeveen</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">4 projecten · €3.100 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Wolfsbos, De Weide, Elim</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">4 projecten · €3.100 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Wolfsbos, De Weide, Elim</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/tynaarlo/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Tynaarlo</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">4 projecten · €3.100 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Vries, Eelde, Zuidlaren</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">4 projecten · €3.100 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Vries, Eelde, Zuidlaren</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/coevorden/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Coevorden</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">3 projecten · €2.900 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Sleen, Dalen, De Krim</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">3 projecten · €2.900 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Sleen, Dalen, De Krim</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/noordenveld/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Noordenveld</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">3 projecten · €3.000 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Roden, Norg, Peize</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">3 projecten · €3.000 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Roden, Norg, Peize</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/de-wolden/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">De Wolden</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">3 projecten · €2.900 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Ruinen, Zuidwolde, Koekange</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">3 projecten · €2.900 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Ruinen, Zuidwolde, Koekange</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/midden-drenthe/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Midden-Drenthe</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">3 projecten · €3.000 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Beilen, Westerbork, Wijster</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">3 projecten · €3.000 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Beilen, Westerbork, Wijster</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/borger-odoorn/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Borger-Odoorn</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">2 projecten · €2.800 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Borger, Odoorn, Exloo</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">2 projecten · €2.800 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Borger, Odoorn, Exloo</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/aa-en-hunze/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Aa en Hunze</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">2 projecten · €2.800 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Gieten, Anloo, Rolde</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">2 projecten · €2.800 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Gieten, Anloo, Rolde</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
         <a href="/nieuwbouw/drenthe/westerveld/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(61,46,30,0.08)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:15px;font-weight:700;color:#1A1208;margin-bottom:4px;">Westerveld</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.5);margin-bottom:10px;">2 projecten · €2.900 bespaard</div>
-          <div style="font-size:12px;color:rgba(61,46,30,0.4);line-height:1.5;margin-bottom:10px;">Diever, Havelte, Dwingeloo</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);margin-bottom:10px;">2 projecten · €2.900 bespaard</div>
+          <div style="font-size:12px;color:rgba(61,46,30,0.72);line-height:1.5;margin-bottom:10px;">Diever, Havelte, Dwingeloo</div>
           <div style="font-size:12px;font-weight:700;color:#3D5A3E;display:flex;align-items:center;gap:5px;">Bekijk pagina <i class="ph-thin ph-arrow-right" style="font-size:10px;"></i></div>
         </a>
     </div>
@@ -324,37 +324,37 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
   <div class="container">
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
       <div>
-        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:12px;">Andere provincies</p>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.72);margin-bottom:12px;">Andere provincies</p>
         <div style="display:flex;flex-direction:column;gap:7px;">
-          <a href="/nieuwbouw/noord-holland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Noord-Holland</a>
-          <a href="/nieuwbouw/zuid-holland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Zuid-Holland</a>
-          <a href="/nieuwbouw/utrecht/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Utrecht</a>
-          <a href="/nieuwbouw/noord-brabant/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Noord-Brabant</a>
-          <a href="/nieuwbouw/gelderland/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Gelderland</a>
+          <a href="/nieuwbouw/noord-holland/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Noord-Holland</a>
+          <a href="/nieuwbouw/zuid-holland/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Zuid-Holland</a>
+          <a href="/nieuwbouw/utrecht/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Utrecht</a>
+          <a href="/nieuwbouw/noord-brabant/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Noord-Brabant</a>
+          <a href="/nieuwbouw/gelderland/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Gelderland</a>
           <a href="/nieuwbouw/" style="font-size:12px;color:#3D5A3E;font-weight:600;margin-top:3px;">Alle provincies →</a>
         </div>
       </div>
       <div>
-        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:12px;">Populaire gemeenten</p>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.72);margin-bottom:12px;">Populaire gemeenten</p>
         <div style="display:flex;flex-direction:column;gap:7px;">
-          <a href="/nieuwbouw/drenthe/emmen/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Emmen</a><a href="/nieuwbouw/drenthe/assen/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Assen</a><a href="/nieuwbouw/drenthe/meppel/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Meppel</a><a href="/nieuwbouw/drenthe/hoogeveen/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Hoogeveen</a><a href="/nieuwbouw/drenthe/tynaarlo/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Tynaarlo</a><a href="/nieuwbouw/drenthe/coevorden/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Coevorden</a>
+          <a href="/nieuwbouw/drenthe/emmen/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Emmen</a><a href="/nieuwbouw/drenthe/assen/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Assen</a><a href="/nieuwbouw/drenthe/meppel/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Meppel</a><a href="/nieuwbouw/drenthe/hoogeveen/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Hoogeveen</a><a href="/nieuwbouw/drenthe/tynaarlo/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Tynaarlo</a><a href="/nieuwbouw/drenthe/coevorden/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Coevorden</a>
         </div>
       </div>
       <div>
-        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:12px;">Kopersbegeleiding</p>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.72);margin-bottom:12px;">Kopersbegeleiding</p>
         <div style="display:flex;flex-direction:column;gap:7px;">
-          <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Wat is kopersbegeleiding?</a>
-          <a href="/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Meerwerklijst controleren</a>
-          <a href="/oplevering-nieuwbouw/checklist/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Checklist oplevering</a>
+          <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Wat is kopersbegeleiding?</a>
+          <a href="/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Meerwerklijst controleren</a>
+          <a href="/oplevering-nieuwbouw/checklist/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Checklist oplevering</a>
           <a href="/kopersbegeleiding-nieuwbouw/" style="font-size:12px;color:#3D5A3E;font-weight:600;margin-top:3px;">Alle begeleiding →</a>
         </div>
       </div>
       <div>
-        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.35);margin-bottom:12px;">Tools</p>
+        <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(61,46,30,0.72);margin-bottom:12px;">Tools</p>
         <div style="display:flex;flex-direction:column;gap:7px;">
-          <a href="/ai-offerte-check-aannemer/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Aannemer offerte check</a>
-          <a href="/online-budget-tracker-verbouwing/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Budget tracker</a>
-          <a href="/nieuwbouw-gids/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">Nieuwbouw gidsen</a>
+          <a href="/ai-offerte-check-aannemer/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Aannemer offerte check</a>
+          <a href="/online-budget-tracker-verbouwing/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Budget tracker</a>
+          <a href="/nieuwbouw-gids/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">Nieuwbouw gidsen</a>
           <a href="/#vouchers" style="font-size:12px;color:#3D5A3E;font-weight:600;margin-top:3px;">Alle vouchers →</a>
         </div>
       </div>
@@ -374,13 +374,13 @@ body{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif
       </div>
       <span style="font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
     </div>
-    <p style="font-size:13px;color:rgba(245,240,232,0.3);max-width:300px;line-height:1.6;margin-bottom:20px;">AI-platform voor nieuwbouwkopers. Actief in alle gemeenten van Drenthe en heel Nederland.</p>
+    <p style="font-size:13px;color:rgba(245,240,232,0.55);max-width:300px;line-height:1.6;margin-bottom:20px;">AI-platform voor nieuwbouwkopers. Actief in alle gemeenten van Drenthe en heel Nederland.</p>
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:16px;border-top:1px solid rgba(245,240,232,0.08);">
-      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">© 2025 Bylder Nederland B.V. · KvK 65020006</p>
+      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.55);">© 2025 Bylder Nederland B.V. · KvK 65020006</p>
       <div style="display:flex;gap:16px;">
-        <a href="/privacy/" style="font-size:12px;color:rgba(245,240,232,0.25);text-decoration:none;">Privacy</a>
-        <a href="/algemene-voorwaarden/" style="font-size:12px;color:rgba(245,240,232,0.25);text-decoration:none;">Voorwaarden</a>
-        <a href="/sitemap.xml" style="font-size:12px;color:rgba(245,240,232,0.25);text-decoration:none;">Sitemap</a>
+        <a href="/privacy/" style="font-size:12px;color:rgba(245,240,232,0.55);text-decoration:none;">Privacy</a>
+        <a href="/algemene-voorwaarden/" style="font-size:12px;color:rgba(245,240,232,0.55);text-decoration:none;">Voorwaarden</a>
+        <a href="/sitemap.xml" style="font-size:12px;color:rgba(245,240,232,0.55);text-decoration:none;">Sitemap</a>
       </div>
     </div>
   </div>

@@ -22,8 +22,8 @@ const ZAKELIJK = [
   { href: '/deelnemer-worden/commercieel-vastgoed/', title: 'Commercieel vastgoed', sub: 'Offerte-check, m²-benchmarks & fit-out' },
 ]
 
-const LINK: React.CSSProperties = { fontSize: '0.875rem', color: 'rgba(61,46,30,0.55)', textDecoration: 'none', whiteSpace: 'nowrap' }
-const KOPJE: React.CSSProperties = { fontSize: 11, fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'rgba(61,46,30,0.4)', fontWeight: 700, padding: '14px 0 4px' }
+const LINK: React.CSSProperties = { fontSize: '0.875rem', color: 'rgba(61,46,30,0.72)', textDecoration: 'none', whiteSpace: 'nowrap' }
+const KOPJE: React.CSSProperties = { fontSize: 11, fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'rgba(61,46,30,0.72)', fontWeight: 700, padding: '14px 0 4px' }
 
 export default function Nav() {
   const [isMobile, setIsMobile] = useState(false)
@@ -74,7 +74,7 @@ export default function Nav() {
                   {ZAKELIJK.map(z => (
                     <a key={z.href} href={z.href} style={{ display: 'block', padding: '10px 14px', borderRadius: 10, textDecoration: 'none' }}>
                       <strong style={{ display: 'block', fontSize: 13, fontWeight: 700, color: '#1A1208' }}>{z.title}</strong>
-                      <span style={{ fontSize: 11, color: 'rgba(61,46,30,0.5)' }}>{z.sub}</span>
+                      <span style={{ fontSize: 11, color: 'rgba(61,46,30,0.72)' }}>{z.sub}</span>
                     </a>
                   ))}
                   <a href="/zakelijk/" style={{ display: 'block', padding: '10px 14px', borderRadius: 10, textDecoration: 'none', fontSize: 12, fontWeight: 700, color: '#3D5A3E', borderTop: '1px solid rgba(61,46,30,0.07)' }}>Alles over Bylder Zakelijk →</a>

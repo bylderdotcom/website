@@ -1,0 +1,190 @@
+{
+  "slug": "tweede-badkamer",
+  "naam": "Tweede badkamer",
+  "synoniemen": [
+    "extra badkamer",
+    "ensuite",
+    "badkamer boven",
+    "doucheruimte",
+    "gastenbadkamer"
+  ],
+  "type": "binnen",
+  "status": "pagina",
+  "kern": "De meerwerkpost waarvan kopers het vaakst spijt krijgen dat ze hem níét namen — en waarvan de prijs bij de aannemer en achteraf het verst uiteenloopt. Achteraf aanleggen betekent leidingen door een afgewerkte vloer en een tweede afvoerpunt dat er niet is.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Nu bij de aannemer, of later zelf?",
+      "waarom": "Dit is de kernvraag van deze ruimte. Bij oplevering liggen de leidingen open en is een tweede afvoerpunt een aanpassing op tekening. Achteraf betekent het hakken in een afgewerkte vloer, een verhoging bouwen of een vermaler plaatsen. De prijzen liggen ver uiteen, en het verschil zit in werk dat je later niet meer kunt vermijden.",
+      "opties": [
+        "Volledig als meerwerk",
+        "Alleen leidingwerk en afvoer als meerwerk, afbouw zelf",
+        "Volledig achteraf"
+      ]
+    },
+    {
+      "vraag": "Waar komt de afvoer?",
+      "waarom": "Water loopt met verval. Een tweede badkamer ver van de bestaande standleiding vraagt een lange afvoer met voldoende afschot, en dat kost hoogte. Zit die hoogte er niet, dan volgt een verhoogde vloer of een vermaler — en een vermaler is een apparaat dat kan stukgaan.",
+      "opties": [
+        "Aansluiten op de bestaande standleiding",
+        "Verhoogde vloer met afschot",
+        "Vermaler of opvoerpomp"
+      ]
+    },
+    {
+      "vraag": "Douche, bad, of alleen toilet en fontein?",
+      "waarom": "Elk niveau verandert wat er aan installatie en ruimte nodig is. Een tweede douche vraagt een tweede warmwaterpunt dat op piekmomenten tegelijk met de eerste wordt gebruikt — dat bepaalt of je installatie het aankan.",
+      "opties": [
+        "Alleen toilet en fontein",
+        "Douche en toilet",
+        "Volledige badkamer met bad",
+        "Ensuite bij de ouderslaapkamer"
+      ]
+    },
+    {
+      "vraag": "Levert de warmwaterinstallatie genoeg?",
+      "waarom": "Twee douches tegelijk is een andere vraag dan twee douches na elkaar. Bij een warmtepomp met boiler bepaalt de inhoud van dat vat hoeveel warm water er tegelijk beschikbaar is; dat is niet oneindig en niet snel bij te vullen.",
+      "opties": [
+        "Groter boilervat bij de installatie kiezen",
+        "Doorstroomtoestel bijplaatsen",
+        "Accepteren dat niet tegelijk gedoucht wordt"
+      ]
+    },
+    {
+      "vraag": "Hoe ventileer je de tweede natte ruimte?",
+      "waarom": "Nieuwbouw heeft een gebalanceerd ventilatiesysteem met een vast aantal afzuigpunten. Een extra natte ruimte vraagt een extra punt, en dat moet in de capaciteit van de unit passen. Dit wordt bij meerwerk regelmatig vergeten.",
+      "opties": [
+        "Extra afzuigpunt op het bestaande systeem",
+        "Zwaardere ventilatie-unit",
+        "Losse mechanische afzuiging"
+      ]
+    }
+  ],
+  "vakken": [
+    "badkamer",
+    "loodgieter",
+    "elektricien",
+    "ventilatiebedrijf",
+    "stukadoor"
+  ],
+  "vergunning": {
+    "nodig": "nee",
+    "toelichting": "Een extra badkamer binnen de bestaande woning is vergunningvrij, zolang je geen dragende constructie wijzigt en de gevel niet aanpast. Wel gelden er installatie-eisen: de afvoer moet op de riolering worden aangesloten en er gelden regels voor elektra in natte ruimtes.",
+    "pad": "/bouwvergunning/"
+  },
+  "kosten_paden": [
+    "/renovatiekosten/badkamer/"
+  ],
+  "productcategorieen": [
+    "Sanitair",
+    "Wandtegels",
+    "Verlichting"
+  ],
+  "fouten": [
+    "Alleen de afbouw als meerwerk nemen en de afvoer vergeten. Zonder afvoerpunt op de juiste plek is de rest van de offerte theorie.",
+    "Geen rekening houden met de warmwatercapaciteit. Twee douches op één boiler die tegelijk draaien is koud water in de tweede.",
+    "Het extra ventilatiepunt vergeten. Een natte ruimte zonder afzuiging levert binnen een jaar schimmel op de kitranden.",
+    "Denken dat je de plek later nog kunt verschuiven. Een halve meter opschuiven betekent na oplevering hakken in de dekvloer, met vloerverwarming eronder.",
+    "Elektra plannen zonder de zone-indeling van natte ruimtes. Niet elk stopcontact mag overal."
+  ],
+  "vragen": [
+    {
+      "v": "Is een tweede badkamer als meerwerk de moeite waard?",
+      "a": "Het verschil zit niet in de afbouw maar in het leidingwerk. Bij oplevering ligt de vloer nog open en is een tweede afvoerpunt een aanpassing op tekening; achteraf betekent het hakken in een afgewerkte vloer met vloerverwarming, of een verhoogde vloer bouwen. Zelfs als je de afbouw later zelf doet, is het bijna altijd verstandig om de aansluitingen wél als meerwerk te laten aanleggen."
+    },
+    {
+      "v": "Kan een tweede badkamer overal in huis?",
+      "a": "Technisch bijna overal, praktisch niet. Water moet met voldoende afschot naar de standleiding lopen. Hoe verder van die leiding, hoe meer hoogte je nodig hebt voor de afvoer — en die hoogte gaat af van je plafond of komt bovenop je vloer. Zit dat er niet in, dan blijft alleen een vermaler over, en dat is een apparaat dat onderhoud vraagt en kan uitvallen."
+    },
+    {
+      "v": "Kunnen we tegelijk douchen met twee badkamers?",
+      "a": "Dat hangt van de warmwaterinstallatie af, niet van de badkamers. Bij een warmtepomp met boilervat bepaalt de inhoud van dat vat hoeveel warm water er tegelijk beschikbaar is, en opwarmen gaat langzamer dan bij een cv-ketel. Vraag dit uit vóór je het meerwerk tekent — een groter vat kiezen kan dan nog, later niet meer."
+    },
+    {
+      "v": "Heb ik een vergunning nodig voor een extra badkamer?",
+      "a": "Nee, niet als je binnen de bestaande woning blijft en geen dragende constructie of gevel wijzigt. Er gelden wel installatie-eisen: aansluiting op de riolering, en regels voor welke elektrische voorzieningen op welke afstand van douche en bad mogen zitten."
+    }
+  ],
+  "verwante_ruimtes": [
+    "badkamer",
+    "slaapkamer",
+    "toilet",
+    "overloop"
+  ],
+  "paden": [
+    "/badkamer/",
+    "/bouwvergunning/",
+    "/renovatiekosten/badkamer/"
+  ],
+  "pagina_pad": "/ruimtes/tweede-badkamer/",
+  "intro": "Van alle meerwerkposten is dit degene waarvan kopers het vaakst zeggen dat ze hem hadden moeten nemen. Niet omdat een tweede badkamer zo duur is, maar omdat het verschil tussen nu en later grotendeels in werk zit dat je achteraf niet meer kunt vermijden: leidingen door een afgewerkte vloer, en een afvoerpunt dat er niet is. Hieronder waar dat verschil precies zit.",
+  "secties": [
+    {
+      "kop": "Het verschil zit in de afvoer, niet in de tegels",
+      "alineas": [
+        "De afbouw van een tweede badkamer — tegels, sanitair, kraanwerk — kun je later doen. Daar zit het prijsverschil niet. Het verschil zit in het leidingwerk, en dan vooral in de afvoer.",
+        "Water loopt met verval. Een afvoer heeft afschot nodig richting de standleiding, en dat afschot kost hoogte. Bij oplevering ligt die leiding in de vloeropbouw en is het een aanpassing op tekening. Achteraf moet je hakken in een dekvloer waar vloerverwarming in ligt, of een verhoogde vloer bouwen, of een vermaler plaatsen.",
+        "Die laatste optie klinkt eenvoudig maar is het niet: een vermaler is een apparaat dat geluid maakt, onderhoud vraagt en kan uitvallen — met een badkamer die dan onbruikbaar is. Wie de keuze heeft, kiest voor zwaartekracht."
+      ]
+    },
+    {
+      "kop": "De tussenweg die weinig mensen kennen",
+      "alineas": [
+        "Je hoeft niet te kiezen tussen alles nu of alles later. De verstandigste route voor wie het budget bij oplevering krap heeft, is om alléén het leidingwerk als meerwerk te laten aanleggen: water, afvoer, elektra en een ventilatiepunt op de juiste plek, afgedopt achter de wand.",
+        "Dat is een fractie van de volledige meerwerkprijs en het neemt precies het deel weg dat achteraf onbetaalbaar wordt. De afbouw doe je dan wanneer het uitkomt, met een leverancier die je zelf kiest.",
+        "Vraag hier expliciet naar. Aannemers bieden dit zelden uit zichzelf aan, omdat de marge in de afbouw zit."
+      ]
+    },
+    {
+      "kop": "Warm water is een systeemvraag, geen badkamervraag",
+      "alineas": [
+        "Twee badkamers betekent niet automatisch dat er twee keer gedoucht kan worden. Bij een warmtepomp met boilervat bepaalt de inhoud van dat vat hoeveel warm water er tegelijk beschikbaar is, en het opwarmen gaat trager dan bij een cv-ketel.",
+        "Dat is geen probleem als jullie na elkaar douchen. Het is wel een probleem in een gezin dat 's ochtends tegelijk de deur uit moet — precies de situatie waarvoor je die tweede badkamer wilde.",
+        "Deze vraag hoort thuis in het gesprek over het meerwerk, niet erna. Een groter boilervat kiezen kan op dat moment nog; achteraf is het een vervanging."
+      ]
+    },
+    {
+      "kop": "Ventilatie wordt bij meerwerk het vaakst vergeten",
+      "alineas": [
+        "Nieuwbouw heeft een gebalanceerd ventilatiesysteem met een vast aantal afzuigpunten, afgestemd op de oorspronkelijke plattegrond. Een extra natte ruimte betekent een extra afzuigpunt, en dat moet passen binnen de capaciteit van de unit.",
+        "Wordt dat vergeten, dan heb je een badkamer waar de damp blijft hangen. Het gevolg zie je binnen een jaar aan de kitranden en op het plafond.",
+        "Vraag bij de meerwerkofferte expliciet of het ventilatiepunt erin zit en of de unit de extra capaciteit aankan. Het antwoord is niet altijd ja."
+      ]
+    }
+  ],
+  "meerwerk": [
+    "ventilatie",
+    "vloerverwarming",
+    "stopcontacten",
+    "lichtpunten"
+  ],
+  "producttypen": [
+    {
+      "type": "Inloopdouche of douchebak",
+      "waarom": "Bepaalt of je afschot in de vloer nodig hebt en hoeveel waterdichting."
+    },
+    {
+      "type": "Hangend toilet met inbouwreservoir",
+      "waarom": "Vraagt een voorzetwand; in een kleine tweede badkamer kost dat centimeters die je nodig hebt."
+    },
+    {
+      "type": "Wandtegels en vloertegels",
+      "waarom": "De waterdichte laag eronder is belangrijker dan de tegel erop."
+    },
+    {
+      "type": "Ventilatie-afzuigpunt",
+      "waarom": "Een natte ruimte zonder afzuiging levert binnen een jaar schimmel op."
+    },
+    {
+      "type": "Spiegelkast met verlichting",
+      "waarom": "Combineert opbergruimte en licht op de enige plek waar beide passen."
+    },
+    {
+      "type": "Thermostaatkraan",
+      "waarom": "Bij twee badkamers op één boiler voorkomt dit temperatuurschommelingen als er elders getapt wordt."
+    }
+  ]
+}

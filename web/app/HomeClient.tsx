@@ -188,7 +188,7 @@ export default function HomeClient() {
       wtBtns.forEach(x => {
         const on = x.dataset.wt === wname
         x.style.background = on ? '#3D5A3E' : 'transparent'
-        x.style.color = on ? '#F5F0E8' : 'rgba(61,46,30,.6)'
+        x.style.color = on ? '#F5F0E8' : 'rgba(61,46,30,0.72)'
       })
       wtGrids.forEach(x => { x.style.display = x.dataset.wt === wname ? 'grid' : 'none' })
     }

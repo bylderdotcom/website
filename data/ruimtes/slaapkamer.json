@@ -1,0 +1,61 @@
+{
+  "slug": "slaapkamer",
+  "naam": "Slaapkamer",
+  "synoniemen": [
+    "ouderslaapkamer",
+    "master bedroom",
+    "logeerkamer"
+  ],
+  "type": "binnen",
+  "status": "node",
+  "kern": "De ruimte waar de meeste uren van je leven doorgebracht worden en waar in nieuwbouw het minst over nagedacht wordt: vaak één lichtpunt, twee stopcontacten en een raam op de verkeerde plek.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Waar staat het bed, en wat betekent dat voor de stopcontacten?",
+      "waarom": "De bedpositie bepaalt waar je nachtlampjes, telefoonladers en eventueel een tv nodig hebt. Standaard nieuwbouw levert zelden genoeg punten op de juiste plek.",
+      "opties": [
+        "Stopcontacten als meerwerk verplaatsen",
+        "Bedwandverlichting op schakelaar",
+        "Accepteren en verlengsnoeren wegwerken"
+      ]
+    },
+    {
+      "vraag": "Inbouwkast of losse kast?",
+      "waarom": "Een inbouwkast wint ruimte maar legt de indeling vast. Bij een schuine wand of dakkapel scheelt maatwerk aanzienlijk in bruikbare meters.",
+      "opties": [
+        "Kastenwand op maat",
+        "Losse kasten",
+        "Inloopkast ten koste van vloeroppervlak"
+      ]
+    }
+  ],
+  "vakken": [
+    "elektricien",
+    "stukadoor",
+    "timmerman"
+  ],
+  "productcategorieen": [
+    "Meubelen",
+    "Raamdecoratie",
+    "Kasten"
+  ],
+  "paden": [
+    "/slaapkamer/"
+  ],
+  "verwante_ruimtes": [
+    "tweede-badkamer",
+    "zolder",
+    "overloop",
+    "kinderkamer"
+  ],
+  "fouten": [
+    "Verduistering pas bij de oplevering bedenken; raamdecoratie op maat heeft levertijd.",
+    "Eén lichtpunt in het midden accepteren als enige verlichting."
+  ],
+  "verwijs_pad": "/slaapkamer/",
+  "verwijs_reden": "Deze ruimte heeft al een eigen laag op Bylder: de slaapkamer-hub over matrassen en bedden. Een tweede pagina over hetzelfde onderwerp zou daarmee concurreren."
+}

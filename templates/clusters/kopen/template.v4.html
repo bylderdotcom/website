@@ -84,7 +84,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
 }
 .nav-link {
   font-size: 14px; font-weight: 400;
-  color: rgba(61,46,30,0.5);
+  color: rgba(61,46,30,0.72);
   text-decoration: none; padding: 0;
   transition: color 0.15s;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -135,7 +135,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
   color: #1A1208; margin-bottom: 1px;
 }
 .nav-dropdown-item span {
-  display: block; font-size: 11px; color: rgba(61,46,30,0.5);
+  display: block; font-size: 11px; color: rgba(61,46,30,0.72);
 }
 
 /* CTA GROEP */
@@ -144,7 +144,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
 }
 .nav-login {
   font-size: 14px; font-weight: 500;
-  color: rgba(61,46,30,0.5); text-decoration: none;
+  color: rgba(61,46,30,0.72); text-decoration: none;
   padding: 8px 12px; border-radius: 8px;
   transition: color 0.15s;
 }
@@ -197,7 +197,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
 .mobile-nav a:last-child { border-bottom: none; }
 .mobile-nav a:hover { color: #3D5A3E; }
 .mobile-nav .mobile-login {
-  color: rgba(61,46,30,0.5); font-size: 14px;
+  color: rgba(61,46,30,0.72); font-size: 14px;
 }
 .mobile-nav .mobile-cta {
   margin-top: 8px; background: #3D5A3E; color: #F5F0E8 !important;
@@ -244,13 +244,13 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:va
 .cta-section p{font-size:16px;color:rgba(245,240,232,0.55);max-width:480px;margin:0 auto 32px;line-height:1.65}
 .btn-primary{background:var(--moss);color:var(--cream);padding:14px 32px;border-radius:12px;font-size:16px;font-weight:800;font-family:"Plus Jakarta Sans",sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;border:none;cursor:pointer}
 .btn-primary:hover{background:var(--moss-2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(61,90,62,0.3)}
-footer{background:var(--bark);border-top:1px solid rgba(245,240,232,0.06);padding:32px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(245,240,232,0.35)}
-footer a{color:rgba(245,240,232,0.4);text-decoration:none}
+footer{background:var(--bark);border-top:1px solid rgba(245,240,232,0.06);padding:32px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(245,240,232,0.55)}
+footer a{color:rgba(245,240,232,0.55);text-decoration:none}
 footer a:hover{color:rgba(245,240,232,0.8)}
 @media(max-width:1024px){.cats-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:768px){.cats-grid{grid-template-columns:repeat(2,1fr)}.stats{gap:24px}}
 @media(max-width:480px){.cats-grid{grid-template-columns:1fr}}
-</style>
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>{{main}}{{footer}}
 
@@ -272,5 +272,6 @@ function zoekProduct(){
 }
 </script>
 <script src="/auping-popup.js"></script>
+<script src="/mis-je-iets.js" defer></script>
 </body>
 </html>

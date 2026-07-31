@@ -22,26 +22,26 @@ a{color:#3D5A3E;text-decoration:none;}a:hover{text-decoration:underline;}
 @media(max-width:768px){.stat-row{grid-template-columns:1fr;}}
 .stat-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:16px;padding:24px;text-align:center;}
 .stat-val{font-size:2.2rem;font-weight:800;letter-spacing:-0.04em;color:#3D5A3E;}
-.stat-lbl{font-size:12px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;color:rgba(61,46,30,0.45);margin-top:4px;}
+.stat-lbl{font-size:12px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;color:rgba(61,46,30,0.72);margin-top:4px;}
 .step-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:24px 0;}
 @media(max-width:768px){.step-grid{grid-template-columns:1fr;}}
 .step-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:16px;padding:24px;}
 .step-title{font-size:16px;font-weight:700;color:#1A1208;margin-bottom:8px;}
-.step-desc{font-size:14px;color:rgba(61,46,30,0.6);line-height:1.65;}
+.step-desc{font-size:14px;color:rgba(61,46,30,0.72);line-height:1.65;}
 .price-block{background:#fff;border:2px solid rgba(61,90,62,0.25);border-radius:20px;padding:36px;margin:40px 0;text-align:center;}
 .price-val{font-size:2.6rem;font-weight:800;color:#3D5A3E;letter-spacing:-0.04em;}
-.price-note{font-size:13px;color:rgba(61,46,30,0.5);margin-top:6px;}
+.price-note{font-size:13px;color:rgba(61,46,30,0.72);margin-top:6px;}
 .faq-item{border-bottom:1px solid rgba(61,46,30,0.08);padding:22px 0;}
 .faq-item:last-child{border-bottom:none;}
 .faq-q{font-size:16px;font-weight:700;color:#1A1208;margin-bottom:10px;}
-.faq-a{font-size:14px;color:rgba(61,46,30,0.65);line-height:1.75;}
+.faq-a{font-size:14px;color:rgba(61,46,30,0.72);line-height:1.75;}
 .cta-block{background:linear-gradient(135deg,#3D5A3E 0%,#4E7350 100%);border-radius:24px;padding:56px 48px;text-align:center;margin:48px 0;}
 .cta-block h2{font-size:2rem;font-weight:800;color:#F5F0E8;margin-bottom:14px;}
 .cta-block p{color:rgba(245,240,232,0.7);font-size:16px;max-width:520px;margin:0 auto 32px;}
 .cta-btn{display:inline-flex;align-items:center;gap:8px;background:#F5F0E8;color:#3D5A3E;padding:16px 32px;border-radius:10px;font-weight:800;font-size:15px;text-decoration:none;}
 .cta-btn:hover{background:#EDE6D8;}
 .internal-links{background:rgba(61,46,30,0.03);border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:20px 24px;margin:32px 0;}
-.il-title{font-size:12px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.4);margin-bottom:12px;}
+.il-title{font-size:12px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.72);margin-bottom:12px;}
 .il-links{display:flex;flex-wrap:wrap;gap:10px;}
 .il-link{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:#fff;border:1px solid rgba(61,90,62,0.2);border-radius:999px;font-size:13px;color:#3D5A3E;text-decoration:none;font-weight:600;}
 .seg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:32px 0;}
@@ -49,24 +49,24 @@ a{color:#3D5A3E;text-decoration:none;}a:hover{text-decoration:underline;}
 .seg-card{background:#fff;border:1px solid rgba(61,46,30,0.09);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px;text-decoration:none;transition:all .15s;}
 .seg-card:hover{border-color:rgba(61,90,62,0.35);text-decoration:none;transform:translateY(-1px);}
 .seg-title{font-size:17px;font-weight:800;color:#1A1208;}
-.seg-desc{font-size:14px;color:rgba(61,46,30,0.6);line-height:1.65;flex:1;}
+.seg-desc{font-size:14px;color:rgba(61,46,30,0.72);line-height:1.65;flex:1;}
 .seg-price{font-size:12px;font-family:'Space Mono',monospace;color:#3D5A3E;}"""
 
-NAV = """<nav style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:16px 0;">
+NAV = """<nav aria-label="Hoofdnavigatie" style="background:rgba(245,240,232,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(61,46,30,0.08);position:sticky;top:0;z-index:50;padding:16px 0;">
   <div style="max-width:1280px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
       <span style="font-weight:700;font-size:18px;color:#1A1208;letter-spacing:-0.02em;">Bylder<span style="color:#3D5A3E;">.com</span></span>
     </a>
     <div style="display:flex;align-items:center;gap:22px;flex-wrap:wrap;">
-      <a href="/nieuwbouw-koper/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Nieuwbouw kopen</a>
-      <a href="/verbouwen/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Verbouwen</a>
-      <a href="/interieur-woning/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Inrichten</a>
-      <a href="/woning-verduurzamen/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Verduurzamen</a>
-      <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Kennisbank</a>
-      <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Tools</a>
-      <div class="byl-zk" style="position:relative;display:inline-block;"><style>.byl-zk-menu{display:none;}.byl-zk:hover .byl-zk-menu{display:block;}.byl-zk-menu a:hover{background:rgba(61,90,62,0.07);text-decoration:none;}</style><a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Zakelijk <span style="font-size:9px;">▼</span></a><div class="byl-zk-menu" style="position:absolute;top:100%;left:-14px;padding-top:12px;z-index:70;"><div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 18px 40px rgba(26,18,8,0.14);padding:8px;min-width:230px;"><a href="/deelnemer-worden/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Deelnemer worden</a><a href="/deelnemer-worden/commercieel-vastgoed/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Commercieel vastgoed</a><a href="/zakelijk/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:700;color:#3D5A3E;border-top:1px solid rgba(61,46,30,0.07);white-space:nowrap;">Alles over Bylder Zakelijk →</a></div></div></div>
-      <a href="https://app.bylder.com" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Inloggen</a>
+      <a href="/nieuwbouw-koper/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Nieuwbouw kopen</a>
+      <a href="/verbouwen/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Verbouwen</a>
+      <a href="/interieur-woning/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Inrichten</a>
+      <a href="/woning-verduurzamen/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Verduurzamen</a>
+      <a href="/kennisbank/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Kennisbank</a>
+      <a href="/nieuwbouw-tools/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Tools</a>
+      <div class="byl-zk" style="position:relative;display:inline-block;"><style>.byl-zk-menu{display:none;}.byl-zk:hover .byl-zk-menu{display:block;}.byl-zk-menu a:hover{background:rgba(61,90,62,0.07);text-decoration:none;}</style><a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Zakelijk <span style="font-size:9px;">▼</span></a><div class="byl-zk-menu" style="position:absolute;top:100%;left:-14px;padding-top:12px;z-index:70;"><div style="background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;box-shadow:0 18px 40px rgba(26,18,8,0.14);padding:8px;min-width:230px;"><a href="/deelnemer-worden/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Deelnemer worden</a><a href="/deelnemer-worden/commercieel-vastgoed/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:600;color:#1A1208;white-space:nowrap;">Commercieel vastgoed</a><a href="/zakelijk/" style="display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:700;color:#3D5A3E;border-top:1px solid rgba(61,46,30,0.07);white-space:nowrap;">Alles over Bylder Zakelijk →</a></div></div></div>
+      <a href="https://app.bylder.com" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Inloggen</a>
       <a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap;">Start gratis →</a>
     </div>
   </div>
@@ -80,39 +80,39 @@ FOOTER = """<footer style="background:#1A1208;padding:64px 0 40px;">
           <div style="width:32px;height:32px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:13px;">B.</div>
           <span style="font-weight:700;font-size:17px;color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
         </div>
-        <p style="font-size:13px;color:rgba(245,240,232,0.4);line-height:1.7;">AI-gestuurd platform voor nieuwbouwkopers en verbouwers in Nederland.</p>
+        <p style="font-size:13px;color:rgba(245,240,232,0.55);line-height:1.7;">AI-gestuurd platform voor nieuwbouwkopers en verbouwers in Nederland.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(3,160px);gap:40px;">
         <div>
-          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Diensten</p>
+          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.55);margin-bottom:14px;">Diensten</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="/#scan" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">AI QuickScan</a></li>
-            <li><a href="/ai-offerte-check-aannemer/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Offerte check</a></li>
-            <li><a href="/#vouchers" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Vouchers</a></li>
+            <li><a href="/#scan" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">AI QuickScan</a></li>
+            <li><a href="/ai-offerte-check-aannemer/" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Offerte check</a></li>
+            <li><a href="/#vouchers" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Vouchers</a></li>
           </ul>
         </div>
         <div>
-          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Zakelijk</p>
+          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.55);margin-bottom:14px;">Zakelijk</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a></li>
-            <li><a href="/deelnemer-worden/woonwinkels-merken/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Woonwinkels &amp; merken</a></li>
-            <li><a href="/voor-vakbedrijven/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Vakbedrijven</a></li>
-            <li><a href="/deelnemer-worden/commercieel-vastgoed/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Commercieel vastgoed</a></li>
+            <li><a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Zakelijk</a></li>
+            <li><a href="/deelnemer-worden/woonwinkels-merken/" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Woonwinkels &amp; merken</a></li>
+            <li><a href="/voor-vakbedrijven/" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Vakbedrijven</a></li>
+            <li><a href="/deelnemer-worden/commercieel-vastgoed/" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Commercieel vastgoed</a></li>
           </ul>
         </div>
         <div>
-          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.25);margin-bottom:14px;">Bedrijf</p>
+          <p style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.55);margin-bottom:14px;">Bedrijf</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="/over-ons/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Over ons</a></li>
-            <li><a href="/kennisbank/" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Kennisbank</a></li>
-            <li><a href="mailto:team@bylder.com" style="font-size:14px;color:rgba(245,240,232,0.45);text-decoration:none;">Werken bij</a></li>
+            <li><a href="/over-ons/" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Over ons</a></li>
+            <li><a href="/kennisbank/" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Kennisbank</a></li>
+            <li><a href="mailto:team@bylder.com" style="font-size:14px;color:rgba(245,240,232,0.55);text-decoration:none;">Werken bij</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div style="border-top:1px solid rgba(245,240,232,0.08);padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;">
-      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">© 2026 Bylder Nederland B.V. — KvK 65020006</p>
-      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.25);">Privacy · Voorwaarden · Cookies</p>
+      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.55);">© 2026 Bylder Nederland B.V. — KvK 65020006</p>
+      <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.55);">Privacy · Voorwaarden · Cookies</p>
     </div>
   </div>
 </footer>"""
@@ -140,7 +140,7 @@ HEAD = """<!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
-<style>{css}</style>
+<style>{css}/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>"""
 
@@ -296,7 +296,7 @@ def render_segment(s):
     return (HEAD.format(title=s['title'],desc=s['desc'],url=url,css=CSS)
       + faq_ld + service_ld + bc + NAV
       + f'''<main style="padding:72px 0 80px;"><div class="container">
-<p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.4);">Bylder.com</a> → <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">Zakelijk</a> → <span style="color:rgba(61,46,30,0.65);">{s['naam']}</span></p>
+<p style="font-size:13px;color:rgba(61,46,30,0.72);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.72);">Bylder.com</a> → <a href="/zakelijk/" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">Zakelijk</a> → <span style="color:rgba(61,46,30,0.72);">{s['naam']}</span></p>
 <div class="badge">Deelnemer worden</div>
 <h1 style="font-size:2.6rem;font-weight:800;margin-bottom:20px;line-height:1.1;max-width:820px;">{s['naam']}: sta waar de klant al is</h1>
 {intro}
@@ -333,18 +333,18 @@ def render_hub():
       desc='Word deelnemer van Bylder: bereik kopers van nieuwbouw- en verbouwwoningen op het juiste koopmoment. Voor woonwinkels & merken, vakbedrijven, prefab, interieurbouw, ontwerpers, ontwikkelaars en commercieel vastgoed.',
       url=url,css=CSS) + coll + bc + NAV
       + f'''<main style="padding:72px 0 80px;"><div class="container">
-<p style="font-size:13px;color:rgba(61,46,30,0.4);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.4);">Bylder.com</a> → <span style="color:rgba(61,46,30,0.65);">Deelnemer worden</span></p>
+<p style="font-size:13px;color:rgba(61,46,30,0.72);margin-bottom:32px;"><a href="/" style="color:rgba(61,46,30,0.72);">Bylder.com</a> → <span style="color:rgba(61,46,30,0.72);">Deelnemer worden</span></p>
 <div class="badge">Deelnemer worden</div>
 <h1 style="font-size:2.8rem;font-weight:800;margin-bottom:20px;line-height:1.1;max-width:820px;">Sta waar kopers van nieuwbouw- en verbouwwoningen hun keuzes maken</h1>
 <p style="font-size:1.1rem;color:rgba(61,46,30,0.7);line-height:1.85;margin-bottom:16px;max-width:760px;">Bylder begeleidt kopers van contract tot inrichting — en op elk beslismoment in die reis is er ruimte voor de juiste deelnemer: een merk, een vakbedrijf, een ontwerper of een producent. Kies hieronder je segment.</p>
-<p style="font-size:15px;color:rgba(61,46,30,0.6);line-height:1.8;margin-bottom:16px;max-width:760px;">Waarom dit werkt: Bylder is een <strong style="color:#1A1208;">verticaal geïntegreerd platform</strong>. Advies, ontwerp, inkoop en uitvoering zitten in één woningdossier in plaats van verdeeld over losse portalen en leadveilingen. Jij komt daardoor niet binnen als koude lead, maar op het exacte moment dat de koper in jouw stap van het dossier zit — met budget, context en koopreden al aanwezig.</p>
+<p style="font-size:15px;color:rgba(61,46,30,0.72);line-height:1.8;margin-bottom:16px;max-width:760px;">Waarom dit werkt: Bylder is een <strong style="color:#1A1208;">verticaal geïntegreerd platform</strong>. Advies, ontwerp, inkoop en uitvoering zitten in één woningdossier in plaats van verdeeld over losse portalen en leadveilingen. Jij komt daardoor niet binnen als koude lead, maar op het exacte moment dat de koper in jouw stap van het dossier zit — met budget, context en koopreden al aanwezig.</p>
 <div class="stat-row"><div class="stat-card"><div class="stat-val">61</div><div class="stat-lbl">deelnemende merken</div></div><div class="stat-card"><div class="stat-val">2.100+</div><div class="stat-lbl">vakbedrijf-plaatspagina's</div></div><div class="stat-card"><div class="stat-val">€4.200</div><div class="stat-lbl">gem. besparing per koper</div></div></div>
 <div class="divider"></div>
 <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 24px;">Kies je segment</h2>
 <div class="seg-grid">{cards}</div>
 <div class="card" style="margin:40px 0;padding:32px;">
 <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:10px;">Verwijzers: makelaars &amp; hypotheekadviseurs</h2>
-<p style="font-size:15px;color:rgba(61,46,30,0.65);line-height:1.75;margin-bottom:16px;">Jij spreekt kopers op hét moment. Verwijs ze naar Bylder en ontvang €25 per geactiveerde koper — je klant bespaart gemiddeld €4.200, jij verdient aan advies dat je toch al gaf.</p>
+<p style="font-size:15px;color:rgba(61,46,30,0.72);line-height:1.75;margin-bottom:16px;">Jij spreekt kopers op hét moment. Verwijs ze naar Bylder en ontvang €25 per geactiveerde koper — je klant bespaart gemiddeld €4.200, jij verdient aan advies dat je toch al gaf.</p>
 <a href="mailto:info@bylder.com?subject=Verwijzer%20worden" class="il-link">→ Word verwijzer</a></div>
 <div class="cta-block"><h2>Twijfel je welk segment past?</h2><p>Mail ons kort wat je doet; we denken mee over de beste plek op het platform.</p>
 <a href="mailto:info@bylder.com?subject=Deelnemer%20worden" class="cta-btn">Mail info@bylder.com →</a></div>

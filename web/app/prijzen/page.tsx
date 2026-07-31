@@ -16,7 +16,7 @@ const CARD: React.CSSProperties = {
   padding: 28, marginBottom: 18,
 }
 const PRIJS: React.CSSProperties = { fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: 1.1 }
-const SUB: React.CSSProperties = { fontSize: 14, color: 'rgba(61,46,30,0.5)', marginBottom: 14 }
+const SUB: React.CSSProperties = { fontSize: 14, color: 'rgba(61,46,30,0.72)', marginBottom: 14 }
 const LI: React.CSSProperties = { fontSize: 15, lineHeight: 1.7, color: 'rgba(61,46,30,0.75)' }
 const H2: React.CSSProperties = { fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', margin: '38px 0 14px' }
 
@@ -31,7 +31,7 @@ export default function PrijzenPage() {
         bewoners, dan betaal je daarvoor — en elk bedrijf betaalt hetzelfde, zodat de volgorde in onze
         aanbevelingen nooit te koop is.
       </p>
-      <p style={{ fontSize: 12.5, color: 'rgba(61,46,30,0.45)', marginBottom: 24 }}>Laatst bijgewerkt: 26 juli 2026</p>
+      <p style={{ fontSize: 12.5, color: 'rgba(61,46,30,0.72)', marginBottom: 24 }}>Laatst bijgewerkt: 26 juli 2026</p>
 
       <h2 style={H2}>Voor bewoners</h2>
       <div style={{ ...CARD, borderColor: 'rgba(61,90,62,0.35)' }}>
@@ -68,7 +68,7 @@ export default function PrijzenPage() {
           </ul>
         </div>
       </div>
-      <p style={{ fontSize: 13.5, color: 'rgba(61,46,30,0.6)', margin: '10px 0 0' }}>
+      <p style={{ fontSize: 13.5, color: 'rgba(61,46,30,0.72)', margin: '10px 0 0' }}>
         Je deelname loopt per jaar; vóór de verlenging ontvang je een betaalverzoek en opzeggen kan per jaar.
       </p>
 

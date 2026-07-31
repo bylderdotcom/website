@@ -118,16 +118,6 @@
       "permanent": true
     },
     {
-      "source": "/badkamer(.*)",
-      "destination": "/kopen/sanitair/",
-      "permanent": true
-    },
-    {
-      "source": "/badkamers(.*)",
-      "destination": "/kopen/sanitair/",
-      "permanent": true
-    },
-    {
       "source": "/gereedschap",
       "destination": "/kopen/",
       "permanent": true
@@ -183,11 +173,6 @@
       "permanent": true
     },
     {
-      "source": "/dakkapel(.*)",
-      "destination": "/kopen/dakkapellen/",
-      "permanent": true
-    },
-    {
       "source": "/verf-en-behang(.*)",
       "destination": "/kopen/verf/",
       "permanent": true
@@ -220,11 +205,6 @@
     {
       "source": "/raamdecoratie(.*)",
       "destination": "/kopen/raamdecoratie/",
-      "permanent": true
-    },
-    {
-      "source": "/slaapkamer(.*)",
-      "destination": "/kopen/slaap-en-bedden/",
       "permanent": true
     },
     {
@@ -386,6 +366,16 @@
       "source": "/partners/word-retailpartner/",
       "destination": "/deelnemer-worden/woonwinkels-merken/",
       "permanent": true
+    },
+    {
+      "source": "/partners/word-vakpartner",
+      "destination": "/voor-vakbedrijven/",
+      "permanent": true
+    },
+    {
+      "source": "/partners/word-vakpartner/",
+      "destination": "/voor-vakbedrijven/",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -396,6 +386,10 @@
     {
       "source": "/api/paynl-exchange",
       "destination": "/api/paynl-exchange.js"
+    },
+    {
+      "source": "/api/feature-request",
+      "destination": "/api/feature-request.js"
     }
   ],
   "headers": [

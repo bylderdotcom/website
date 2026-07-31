@@ -7,7 +7,7 @@
 #   1. <div class="nav-links">…</div>   → flatte journey-links (dropdown vervalt)
 #   2. <div class="nav-mobile"…>…</div> → zelfde links (mobiel menu)
 #   3. inline-stijl container <div style="display:flex;align-items:center;gap:NNpx;">
-#      binnen <nav> → journey-links + behoud van de bestaande CTA-knop
+#      binnen <nav aria-label="Hoofdnavigatie"> → journey-links + behoud van de bestaande CTA-knop
 import os, re, sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
@@ -19,7 +19,7 @@ JOURNEY = [('/nieuwbouw-koper/','Nieuwbouw kopen'),('/verbouwen/','Verbouwen'),
            ('/deelnemer-worden/','Deelnemer worden')]
 
 FLAT = '\n      ' + '\n      '.join(f'<a href="{h}">{t}</a>' for h,t in JOURNEY) + '\n    '
-INLINE = ''.join(f'<a href="{h}" style="font-size:14px;color:rgba(61,46,30,0.5);text-decoration:none;">{t}</a>\n      ' for h,t in JOURNEY)
+INLINE = ''.join(f'<a href="{h}" style="font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;">{t}</a>\n      ' for h,t in JOURNEY)
 DEFAULT_CTA = '<a href="https://app.bylder.com/registreer" style="background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;">Start gratis →</a>'
 
 def find_div_span(h, start):
@@ -48,7 +48,7 @@ def transform(h):
             pos = oe + len(repl)
             changed = True
     # patroon 4: class-based flex container (homepage-stijl: "hidden md:flex items-center gap-6")
-    CLSLNK = ''.join(f'<a href="{h2}" class="text-sm" style="color:rgba(61,46,30,0.5);text-decoration:none;">{t}</a>\n      ' for h2,t in JOURNEY)
+    CLSLNK = ''.join(f'<a href="{h2}" class="text-sm" style="color:rgba(61,46,30,0.72);text-decoration:none;">{t}</a>\n      ' for h2,t in JOURNEY)
     for nav in list(re.finditer(r'<nav\b', h)):
         navend = h.find('</nav>', nav.start())
         if navend < 0: continue
@@ -64,7 +64,7 @@ def transform(h):
             if 'background:#3D5A3E' in a.group(0) or 'btn' in a.group(0)[:120]: cta = a.group(0)
         h = h[:oe] + '\n      ' + CLSLNK + (cta or '') + '\n    ' + h[cs:]
         changed = True
-    # patroon 3: inline container binnen <nav>
+    # patroon 3: inline container binnen <nav aria-label="Hoofdnavigatie">
     for nav in list(re.finditer(r'<nav\b', h)):
         navend = h.find('</nav>', nav.start())
         if navend < 0: continue

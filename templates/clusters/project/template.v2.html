@@ -30,7 +30,7 @@ nav{background:rgba(245,240,232,0.93);backdrop-filter:blur(20px);border-bottom:1
 .nav-logo span{font-weight:800;font-size:17px;letter-spacing:-0.02em;color:#1A1208}
 .nav-logo .dot{color:#3D5A3E}
 .nav-links{display:flex;align-items:center;gap:4px}
-.nav-link{font-size:14px;color:rgba(61,46,30,0.55);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500}
+.nav-link{font-size:14px;color:rgba(61,46,30,0.72);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500}
 .nav-link:hover{color:#1A1208;background:rgba(61,46,30,0.05)}
 .btn-primary{background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap}
 .btn-primary:hover{background:#4E7350}
@@ -44,10 +44,10 @@ h1{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:var(--bark);letter
 .search-row{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap}
 .search-input{padding:11px 16px;border:1.5px solid rgba(61,46,30,0.12);border-radius:10px;font-size:15px;font-family:inherit;color:var(--bark-2);background:#fff;outline:none;min-width:220px;transition:border-color 0.2s}
 .search-input:focus{border-color:var(--moss)}
-footer{background:#1A1208;border-top:1px solid rgba(245,240,232,0.06);padding:28px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(245,240,232,0.3)}
-footer a{color:rgba(245,240,232,0.4);text-decoration:none}
+footer{background:#1A1208;border-top:1px solid rgba(245,240,232,0.06);padding:28px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(245,240,232,0.55)}
+footer a{color:rgba(245,240,232,0.55);text-decoration:none}
 @media(max-width:768px){.nav-links{display:none}}
-</style>
+/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>{{main}}{{footer}}
 
@@ -66,5 +66,6 @@ function filterSteden(q) {
 }
 </script>
 <script src="/auping-popup.js"></script>
+<script src="/mis-je-iets.js" defer></script>
 </body>
 </html>

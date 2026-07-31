@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+
+  "permissions": {
+    "defaultMode": "auto",
+
+    "allow": [
+      "Bash(curl -s*)",
+      "Bash(curl -I*)",
+      "Bash(dig +short*)",
+      "Bash(host *)",
+
+      "Bash(grep *)",
+      "Bash(/usr/bin/grep *)",
+      "Bash(rg *)",
+      "Bash(sed -n*)",
+      "Bash(awk *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(sort *)",
+      "Bash(uniq *)",
+      "Bash(cut *)",
+      "Bash(xargs *)",
+      "Bash(basename *)",
+      "Bash(dirname *)",
+      "Bash(jq *)",
+      "Bash(pdftotext *)",
+      "Bash(mkdir -p*)",
+
+      "Bash(python3 scripts/*)",
+      "Bash(python3 _scripts/*)",
+      "Bash(python3 -c*)",
+      "Bash(python3 -m json*)",
+      "Bash(node -e*)",
+      "Bash(npm run *)",
+
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git branch*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git -C *)",
+      "Bash(gh api *)",
+      "Bash(gh repo view*)",
+      "Bash(gh pr view*)",
+
+      "WebSearch",
+      "WebFetch(domain:www.bylder.com)",
+      "WebFetch(domain:bylder.com)",
+      "WebFetch(domain:app.bylder.com)",
+      "WebFetch(domain:*.vercel.app)",
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:code.claude.com)",
+
+      "mcp__Claude_Browser__preview_start",
+      "mcp__Claude_Browser__preview_logs",
+      "mcp__Claude_Browser__navigate",
+      "mcp__Claude_Browser__read_page",
+      "mcp__Claude_Browser__get_page_text",
+      "mcp__Claude_Browser__computer",
+      "mcp__Claude_Browser__resize_window",
+      "mcp__Claude_Browser__read_console_messages",
+      "mcp__Claude_Browser__read_network_requests",
+      "mcp__claude-in-chrome__read_page",
+      "mcp__claude-in-chrome__get_page_text",
+      "mcp__claude-in-chrome__navigate",
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget"
+    ],
+
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*credentials*.json)",
+      "Read(~/.ssh/**)",
+
+      "Bash(vercel --prod*)",
+      "Bash(vercel deploy --prod*)",
+      "Bash(vercel deploy --prebuilt --prod*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git push origin --force*)",
+      "Bash(git reset --hard*)",
+      "Bash(rm -rf*)",
+      "Bash(rm -fr*)",
+      "Bash(sudo rm -rf*)"
+    ],
+
+    "ask": [
+      "Bash(git push*)"
+    ]
+  }
+}

@@ -183,10 +183,10 @@ for cat in N2:
         f'<a href="/op-maat/{slug}/{p[1]}/" style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:10px;text-decoration:none;color:#1A1208;font-weight:600;font-size:14px;"><span>{p[0]}</span><span style="color:#3D5A3E;">→</span></a>'
         for p in cat["products"]
     ])
-    related_links = "".join([f'<a href="{r[0]}" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">{r[1]}</a>' for r in cat["related"]])
+    related_links = "".join([f'<a href="{r[0]}" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">{r[1]}</a>' for r in cat["related"]])
 
     sidebar_nav = "".join([
-        f'<a href="/op-maat/{slug}/{p[1]}/" style="font-size:13px;color:rgba(61,46,30,0.6);text-decoration:none;">{p[0]}</a>'
+        f'<a href="/op-maat/{slug}/{p[1]}/" style="font-size:13px;color:rgba(61,46,30,0.72);text-decoration:none;">{p[0]}</a>'
         for p in cat["products"]
     ])
 
@@ -224,10 +224,10 @@ gtag('config', 'G-LZYCRP1169');
   <div class="container" style="max-width:800px;">
     <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(61,46,30,0.08);border-radius:999px;font-size:11px;font-family:'Space Mono',monospace;font-weight:700;color:#5C4433;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.08em;">Op maat · {cat["label"]}</div>
     <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px;">{cat["title"]}</h1>
-    <p style="font-size:17px;color:rgba(61,46,30,0.65);line-height:1.8;margin-bottom:24px;">{cat["intro"]}</p>
+    <p style="font-size:17px;color:rgba(61,46,30,0.72);line-height:1.8;margin-bottom:24px;">{cat["intro"]}</p>
     <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:8px;">
-      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.4);text-transform:uppercase;margin-bottom:4px;">Prijs</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{cat["price"]}</div></div>
-      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.4);text-transform:uppercase;margin-bottom:4px;">Levertijd</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{cat["leadtime"]}</div></div>
+      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);text-transform:uppercase;margin-bottom:4px;">Prijs</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{cat["price"]}</div></div>
+      <div style="background:rgba(61,46,30,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:11px;font-family:'Space Mono',monospace;color:rgba(61,46,30,0.72);text-transform:uppercase;margin-bottom:4px;">Levertijd</div><div style="font-weight:700;color:#1A1208;font-size:14px;">{cat["leadtime"]}</div></div>
     </div>
   </div>
 </section>
@@ -247,7 +247,7 @@ gtag('config', 'G-LZYCRP1169');
     <aside class="sidebar" style="position:sticky;top:80px;">
       {SIDEBAR_CTA}
       <div style="background:#fff;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:18px;">
-        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.35);margin-bottom:10px;">In deze categorie</div>
+        <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;color:rgba(61,46,30,0.72);margin-bottom:10px;">In deze categorie</div>
         <div style="display:flex;flex-direction:column;gap:7px;">{sidebar_nav}
           <a href="/op-maat/" style="font-size:13px;color:#3D5A3E;font-weight:700;margin-top:4px;">← Alle categorieën</a>
         </div>
@@ -259,6 +259,7 @@ gtag('config', 'G-LZYCRP1169');
 {CTA_SECTION}
 {FOOTER}
 <script src="/auping-popup.js"></script>
+<script src="/mis-je-iets.js" defer></script>
 </body></html>"""
 
     write_page(f"{BASE}/{slug}/index.html", html)

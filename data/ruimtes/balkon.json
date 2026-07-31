@@ -1,0 +1,156 @@
+{
+  "slug": "balkon",
+  "naam": "Balkon",
+  "synoniemen": [
+    "loggia",
+    "frans balkon"
+  ],
+  "type": "buiten",
+  "status": "pagina",
+  "kern": "De enige buitenruimte van veel appartementen, en constructief het gevoeligste onderdeel: alles wat je erop zet telt mee in de belasting, en alles wat lekt komt bij de buren terecht.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verhuizing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Hoeveel gewicht mag erop?",
+      "waarom": "Plantenbakken, een jacuzzi of een zware vloerafwerking tellen mee in de constructieve belasting. Bij appartementen ligt dit vast in de splitsingsakte of de bouwtekening.",
+      "opties": [
+        "Belasting opvragen vóór aankoop van zwaar meubilair",
+        "Lichte vloerafwerking",
+        "Verzwaring laten berekenen"
+      ]
+    },
+    {
+      "vraag": "Wat mag je aan de gevel bevestigen?",
+      "waarom": "Bij een VvE is de gevel meestal gemeenschappelijk. Boren in de gevel of een zonnescherm bevestigen vraagt toestemming.",
+      "opties": [
+        "Toestemming VvE vragen",
+        "Vrijstaande oplossingen",
+        "Niets bevestigen"
+      ]
+    },
+    {
+      "vraag": "Wat komt er op de vloer?",
+      "waarom": "Een balkonvloer moet water doorlaten of afvoeren, en het gewicht van de afwerking telt mee in de belasting die de constructie aankan. Tegels op tegeldragers verhogen de vloer, en die hoogte gaat af van de drempel naar binnen. Wordt die drempel te laag, dan waait regen bij storm naar binnen.",
+      "opties": [
+        "Tegels op tegeldragers",
+        "Houten vlonderdelen",
+        "Kunststof roosters",
+        "De ruwe betonvloer laten"
+      ]
+    },
+    {
+      "vraag": "Hoe scherm je af zonder de wind te vangen?",
+      "waarom": "Een dicht windscherm op een balkon werkt als een zeil: het vangt kracht die via de bevestiging op de gevel of de balustrade komt. Balustrades zijn berekend op leunende mensen, niet op windbelasting. Wie afschermt, moet weten waar die kracht heen gaat.",
+      "opties": [
+        "Doorlaatbaar doek of gaas",
+        "Glazen scherm op een eigen constructie",
+        "Beplanting als filter",
+        "Niet afschermen"
+      ]
+    },
+    {
+      "vraag": "Buitenkraan en buitenstopcontact: nu of nooit?",
+      "waarom": "Beide vragen een doorvoer door de gevel. Bij oplevering is dat een leiding in een muur die nog niet af is; achteraf is het boren door isolatie en dampremmende folie — precies de laag die je intact wilt houden. Bij een appartement komt daar de toestemming van de VvE bij.",
+      "opties": [
+        "Allebei als meerwerk",
+        "Alleen een stopcontact",
+        "Verlengsnoer via een raam (tijdelijk)",
+        "Niets"
+      ]
+    }
+  ],
+  "vakken": [
+    "dakdekker",
+    "aannemer"
+  ],
+  "productcategorieen": [
+    "Tuinmeubelen",
+    "Zonwering"
+  ],
+  "verwante_ruimtes": [
+    "dakterras",
+    "tuin"
+  ],
+  "fouten": [
+    "Vloerafwerking leggen die de afwatering blokkeert — dan staat het water tegen de pui.",
+    "Een plantenbak of jacuzzi neerzetten zonder de puntbelasting te kennen. Een balkon is berekend op verdeeld gewicht, niet op alles op één plek.",
+    "Boren in de betonvloer om iets vast te zetten. Daar zit wapening in, en in een uitkragend balkon zit die precies waar de kracht loopt.",
+    "De afvoer of het spuwertje laten dichtslibben. Twee jaar blad in de goot en het water zoekt de weg naar binnen.",
+    "Bij een appartement vergeten dat het balkon vaak gemeenschappelijk eigendom is. Wat je eraan vastmaakt, is dan niet alleen jouw beslissing."
+  ],
+  "pagina_pad": "/ruimtes/balkon/",
+  "intro": "Voor veel appartementen de enige buitenruimte, en constructief het gevoeligste onderdeel van het gebouw. Alles wat je erop zet telt mee in de belasting, en alles wat er lekt komt bij de buren beneden terecht. Bij een VvE is het bovendien zelden helemaal van jou.",
+  "secties": [
+    {
+      "kop": "Van wie is je balkon eigenlijk?",
+      "alineas": [
+        "Bij een appartement is het balkon vaak gemeenschappelijk eigendom met een exclusief gebruiksrecht voor jou. Dat betekent dat je het mag gebruiken, maar niet zomaar mag veranderen.",
+        "Boren in de gevel of de balkonvloer, een zonnescherm bevestigen, of de balustrade aanpassen raakt in de meeste splitsingsaktes de gemeenschappelijke delen. Daar heb je toestemming van de VvE voor nodig, en soms een besluit van de vergadering.",
+        "Kijk in de splitsingsakte en het huishoudelijk reglement voordat je iets bevestigt. Achteraf terugdraaien op eigen kosten is de standaardsanctie."
+      ]
+    },
+    {
+      "kop": "Gewicht is een echt probleem, geen formaliteit",
+      "alineas": [
+        "Een balkon is gedimensioneerd op een bepaalde belasting per vierkante meter. Plantenbakken met natte aarde wegen meer dan mensen denken, een jacuzzi is uitgesloten, en een dikke vloerafwerking over het hele oppervlak telt ook mee.",
+        "Bij oudere gebouwen komt daar bij dat de wapening in uitkragende betonnen balkons kan zijn aangetast. Dat is een bekend probleem waar VvE's periodiek onderzoek naar laten doen.",
+        "Vraag de toegestane belasting op voordat je zwaar meubilair of een grote plantenbak koopt. Die informatie hoort bij de VvE-stukken."
+      ]
+    },
+    {
+      "kop": "Afwatering bepaalt of het droog blijft binnen",
+      "alineas": [
+        "De vloerafwerking die je legt mag de afwatering niet blokkeren. Vlonderdelen of tegeldragers zijn hiervoor gemaakt: het water loopt eronderdoor naar de afvoer.",
+        "Leg je een dichte laag of stapel je tegels direct op de vloer, dan stijgt het waterniveau bij een fikse bui tot boven de dorpel van je pui. Dat is de meest voorkomende oorzaak van waterschade op balkons.",
+        "Houd het afvoerputje vrij en controleer het een paar keer per jaar. Bladeren en mos vullen het sneller dan je denkt."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Mag ik boren in mijn balkon of gevel?",
+      "a": "Bij een appartement meestal niet zonder toestemming: balkonvloer, balustrade en gevel zijn vaak gemeenschappelijk eigendom, ook als je exclusief gebruiksrecht hebt. Kijk in de splitsingsakte en het huishoudelijk reglement, en vraag zo nodig de VvE. Zonder toestemming aangebrachte bevestigingen moet je op eigen kosten verwijderen."
+    },
+    {
+      "v": "Hoeveel gewicht mag er op een balkon?",
+      "a": "Dat verschilt per gebouw en staat in de bouwkundige gegevens; vraag het op bij de VvE of de beheerder. Plantenbakken met natte aarde en een dikke vloerafwerking tellen zwaarder dan mensen inschatten. Bij oudere uitkragende betonnen balkons speelt daarnaast de staat van de wapening — daar laten VvE's periodiek onderzoek naar doen."
+    },
+    {
+      "v": "Welke vloer kan ik op een balkon leggen?",
+      "a": "Een afwerking die het water eronderdoor laat lopen: houten vlonderdelen of tegels op tegeldragers. Een dichte laag of tegels direct op de vloer blokkeert de afwatering, en dan stijgt het water bij een flinke bui tot boven de dorpel van je pui."
+    },
+    {
+      "v": "Mag ik een zonnescherm aan mijn balkon hangen?",
+      "a": "Meestal alleen met toestemming van de VvE, en vaak alleen in een kleur en uitvoering die voor het hele gebouw is vastgesteld. Los daarvan kan er een vergunningvraag spelen bij een monument of beschermd stadsgezicht."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Vlonderdelen of tegeldragers",
+      "waarom": "Water moet eronderdoor kunnen; dit is geen esthetische keuze."
+    },
+    {
+      "type": "Lichte plantenbakken",
+      "waarom": "Natte aarde weegt fors; het gewicht telt mee in de constructie."
+    },
+    {
+      "type": "Balkonscherm of windscherm",
+      "waarom": "Vraagt vrijwel altijd toestemming van de VvE."
+    },
+    {
+      "type": "Zonwering",
+      "waarom": "Kleur en uitvoering liggen bij een VvE meestal voor het hele gebouw vast."
+    },
+    {
+      "type": "Buitenstopcontact",
+      "waarom": "Bij appartementen zelden aanwezig en niet altijd toegestaan."
+    },
+    {
+      "type": "Bladvanger op de afvoer",
+      "waarom": "Een verstopt putje is de meest voorkomende oorzaak van waterschade."
+    }
+  ]
+}

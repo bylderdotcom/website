@@ -1188,8 +1188,14 @@ def build_profile(vak, vak_slug, b, buren):
     has_stad = bool(b.get("stad"))
 
     title = f"{b['naam']} — {s} in {stad} | reviews, prijzen & offerte-check | Bylder"
+    diensten = [str(x) for x in (b.get("diensten") or [])]
+    keurmerken = [str(x) for x in (b.get("keurmerken") or [])]
+    werkgebied = [str(x) for x in (b.get("werkgebied") or [])]
+    opgericht = b.get("opgericht")
+
     desc = (f"{b['naam']}, {s} in {stad}. "
             + (f"Beoordeling {str(rating).replace('.', ',')}★ ({reviews} reviews). " if rating else "")
+            + (f"Doet o.a. {' en '.join(d.lower().split(' / ')[0] for d in diensten[:2])}. " if diensten else "")
             + f"Bekijk gegevens en gebundelde reviews, en check gratis of je {vak['werk']}-offerte een eerlijke prijs heeft.")
 
     # LocalBusiness ZONDER aggregateRating: Google's structured-data-beleid staat geen
@@ -1198,6 +1204,10 @@ def build_profile(vak, vak_slug, b, buren):
           "address": {"@type": "PostalAddress", "addressLocality": stad, "addressCountry": "NL"}, "areaServed": stad}
     if site: lb["url"] = site
     if tel: lb["telephone"] = tel
+    # Zelfgerapporteerd (eigen website van het bedrijf) — feitelijke velden, geen oordeel.
+    if diensten: lb["knowsAbout"] = diensten
+    if opgericht: lb["foundingDate"] = str(opgericht)
+    if werkgebied: lb["areaServed"] = sorted({stad} | {w.title() for w in werkgebied})
     band = vak["prijs_band"].split(":", 1)[-1].strip() if ":" in vak["prijs_band"] else vak["prijs_band"]
     qa = [
         (f"Wat kost {b['naam']}?",
@@ -1226,6 +1236,27 @@ def build_profile(vak, vak_slug, b, buren):
     prijs_chip = f'<span style="font-size:12px;font-weight:700;color:rgba(61,46,30,0.6);background:#F5F0E8;padding:3px 10px;border-radius:6px;">Prijsniveau {prijs}</span>' if prijs else ""
     summary_html = (f'<p style="font-size:14px;color:rgba(61,46,30,0.7);line-height:1.65;margin-top:12px;max-width:640px;">'
                     f'{html.escape(summary[:180])} <span style="font-size:11px;color:rgba(61,46,30,0.4);">&mdash; bron: Google</span></p>') if summary else ""
+    # ── eigen inhoud, van de eigen site van het bedrijf ──
+    # Bewust met bronvermelding "volgens de eigen website": dit is wat het bedrijf
+    # over zichzelf zegt, geen oordeel van Bylder. E-mail wordt hier NOOIT getoond
+    # — die is voor de claim-flow, niet voor oogst door spammers.
+    vr = []
+    if diensten:
+        chips = "".join(f'<span style="font-size:12px;font-weight:600;color:#3D5A3E;background:rgba(61,90,62,0.08);padding:4px 12px;border-radius:999px;">{html.escape(d)}</span>' for d in diensten[:6])
+        vr.append(f'<div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:14px;">{chips}</div>')
+    detail = []
+    if keurmerken:
+        detail.append("Vermeldt " + " en ".join(html.escape(k) for k in keurmerken[:3]))
+    if opgericht:
+        detail.append(f"actief sinds {opgericht}")
+    if werkgebied:
+        wg = ", ".join(html.escape(w.title()) for w in werkgebied[:6])
+        detail.append(f"werkzaam in o.a. {wg}")
+    if detail:
+        zin = detail[0][0].upper() + detail[0][1:] + ("" if len(detail) == 1 else " &middot; " + " &middot; ".join(detail[1:]))
+        vr.append(f'<p style="font-size:13px;color:rgba(61,46,30,0.6);margin-top:10px;">{zin} <span style="font-size:11px;color:rgba(61,46,30,0.4);">&mdash; volgens de eigen website</span></p>')
+    verrijking_html = "".join(vr)
+
     contact = []
     if site: contact.append(f'<a href="{html.escape(site)}" target="_blank" rel="nofollow noopener" style="font-weight:700;">Website &#8594;</a>')
     if tel: contact.append(f'<a href="tel:{html.escape(re.sub(chr(92)+"s+", "", tel))}" style="font-weight:700;">{html.escape(tel)}</a>')
@@ -1260,6 +1291,7 @@ def build_profile(vak, vak_slug, b, buren):
     {rating_row}
     <div style="margin-top:10px;">{prijs_chip}</div>
     {summary_html}
+    {verrijking_html}
     {contact_html}
   </div>
 

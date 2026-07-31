@@ -23,7 +23,7 @@ CLUSTERS = {
         "faq": lambda vak, prijs, n: [
             (f"Hoe werkt de {vak.lower()}-offerte-check?",
              "Upload je offerte als PDF in je Bylder-account. De AI vergelijkt elke post met actuele marktdata "
-             "voor jouw gemeente en geeft per post groen, oranje of rood — met concrete onderhandelingstips. Eenmalig €99."),
+             "voor jouw gemeente en geeft per post groen, oranje of rood — met concrete onderhandelingstips. Gratis voor bewoners."),
             ("Voor welke gemeenten werkt de check?",
              f"Voor alle {n} gemeenten hieronder. De marktdata wordt per gemeente en provincie bepaald, "
              "zodat de beoordeling past bij jouw regio."),
@@ -37,7 +37,7 @@ CLUSTERS = {
              + "Kies hieronder je gemeente voor de lokale marktprijs."),
             ("Hoe weet ik of mijn offerte eerlijk is?",
              "Upload je offerte in je Bylder-account; de AI vergelijkt elke post met de marktprijs "
-             "voor jouw gemeente en geeft per post groen, oranje of rood. Eenmalig €99."),
+             "voor jouw gemeente en geeft per post groen, oranje of rood. Gratis voor bewoners."),
         ],
     },
 }
@@ -76,18 +76,18 @@ def build_fragment(cluster: str, vak: str, label: str, hv: dict, cities: list, f
         for q, a in faq
     )
     return f"""
-<nav><div class="ni">
+<nav aria-label="Hoofdnavigatie"><div class="ni">
   <a href="/" class="nl"><div class="nli">B.</div><span class="nls">Bylder<span class="dot">.com</span></span></a>
-  <a href="/betalen/" class="bp">Start gratis →</a>
+  <a href="https://app.bylder.com/registreer?utm_source=bylder-site&amp;utm_campaign={cluster}" class="bp">Start gratis →</a>
 </div></nav>
 <div style="padding-top:88px"></div>
 <section style="padding:32px 0 56px">
   <div class="c">
-    <div style="font-size:13px;color:rgba(61,46,30,0.5);margin-bottom:20px"><a href="/" style="color:#3D5A3E;text-decoration:none">Bylder.com</a> › <a href="/{cluster}/" style="color:#3D5A3E;text-decoration:none">{crumb}</a> › {label}</div>
+    <div style="font-size:13px;color:rgba(61,46,30,0.72);margin-bottom:20px"><a href="/" style="color:#3D5A3E;text-decoration:none">Bylder.com</a> › <a href="/{cluster}/" style="color:#3D5A3E;text-decoration:none">{crumb}</a> › {label}</div>
     <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:#3D5A3E;font-weight:700;margin-bottom:10px"><i class="ph-thin {hv['icon']}"></i> {crumb} · {label}</div>
     <h1 style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1A1208;letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px">{hv['h1']}</h1>
-    <p style="font-size:16px;color:rgba(61,46,30,0.5);max-width:640px;line-height:1.65;margin-bottom:28px">{hv['intro']}</p>
-    <a href="/betalen/" style="background:#3D5A3E;color:#F5F0E8;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;display:inline-flex;margin-bottom:40px">Upload mijn offerte →</a>
+    <p style="font-size:16px;color:rgba(61,46,30,0.72);max-width:640px;line-height:1.65;margin-bottom:28px">{hv['intro']}</p>
+    <a href="https://app.bylder.com/registreer?utm_source=bylder-site&amp;utm_campaign={cluster}" style="background:#3D5A3E;color:#F5F0E8;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;display:inline-flex;margin-bottom:40px">Upload mijn offerte →</a>
 
     <div style="font-size:11px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:0.12em;color:#3D5A3E;font-weight:700;margin:24px 0 16px">Kies je gemeente ({len(cities)})</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;margin-bottom:40px">
@@ -101,8 +101,8 @@ def build_fragment(cluster: str, vak: str, label: str, hv: dict, cities: list, f
 <section style="background:#1A1208;padding:64px 0;text-align:center">
   <div class="c">
     <h2 style="font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:800;color:#F5F0E8;letter-spacing:-0.03em;margin-bottom:12px">{hv['h1'].split(' — ')[0]}</h2>
-    <p style="font-size:15px;color:rgba(245,240,232,0.5);max-width:440px;margin:0 auto 28px">Upload je offerte en ontvang direct groen/oranje/rood. Eenmalig €99.</p>
-    <a href="/betalen/" class="bp" style="font-size:15px;padding:14px 32px;display:inline-flex">Start gratis →</a>
+    <p style="font-size:15px;color:rgba(245,240,232,0.5);max-width:440px;margin:0 auto 28px">Upload je offerte en ontvang direct groen/oranje/rood. Gratis voor bewoners.</p>
+    <a href="https://app.bylder.com/registreer?utm_source=bylder-site&amp;utm_campaign={cluster}" class="bp" style="font-size:15px;padding:14px 32px;display:inline-flex">Start gratis →</a>
   </div>
 </section>
 """

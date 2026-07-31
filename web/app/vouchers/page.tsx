@@ -245,7 +245,7 @@ export default function VouchersPage() {
           <h2>Activeer alle 40+ vouchers</h2>
           <p>Gratis voor bewoners. Direct toegang tot alle kortingsvouchers én de AI-kopersbegeleider.</p>
           <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=vouchers-slot" className="btn-primary">Activeer mijn vouchers →</a>
-          <div style={{ marginTop: 16, fontSize: 13, color: 'rgba(245,240,232,0.35)', fontFamily: "'Space Mono',monospace" }}><i className="ph-thin ph-star"></i> 4.8/5 · 12.400+ leden · 14 dagen geld-terug garantie</div>
+          <div style={{ marginTop: 16, fontSize: 13, color: 'rgba(245,240,232,0.55)', fontFamily: "'Space Mono',monospace" }}><i className="ph-thin ph-star"></i> 4.8/5 · 12.400+ leden · 14 dagen geld-terug garantie</div>
         </div>
       </section>
 

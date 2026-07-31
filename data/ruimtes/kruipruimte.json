@@ -1,0 +1,160 @@
+{
+  "slug": "kruipruimte",
+  "naam": "Kruipruimte",
+  "synoniemen": [
+    "kruipkelder",
+    "onderslag",
+    "ruimte onder de vloer"
+  ],
+  "type": "technisch",
+  "status": "pagina",
+  "kern": "De ruimte waar niemand komt en waar de helft van de vochtproblemen in Nederlandse woningen begint. Ook de goedkoopste plek om te isoleren.",
+  "momenten": [
+    "verduurzaming",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Is er vocht, en waar komt het vandaan?",
+      "waarom": "Een natte kruipruimte trekt vocht door de vloer naar de woning. De oorzaak — grondwater, lekkage of onvoldoende ventilatie — bepaalt de oplossing volledig.",
+      "opties": [
+        "Bodemafsluiting aanbrengen",
+        "Ventilatieroosters vrijmaken of bijplaatsen",
+        "Drainage of pomp"
+      ]
+    },
+    {
+      "vraag": "Isoleren, en waarmee?",
+      "waarom": "Vloerisolatie vanuit de kruipruimte is een van de snelst terugverdiende maatregelen, maar niet elk materiaal verdraagt een vochtige omgeving.",
+      "opties": [
+        "Isolatieplaten tegen de vloer",
+        "Bodemisolatie",
+        "Eerst vocht oplossen, dan isoleren"
+      ]
+    },
+    {
+      "vraag": "Hoe kom je erin, en kan een monteur erbij?",
+      "waarom": "Een kruipluik onder de trap of achter een kast is een luik dat nooit opengaat. Terwijl hier de leidingen liggen die ooit lekken en de bodem ligt die je wilt kunnen zien. De plek van dat luik bepaalt of de ruimte inspecteerbaar blijft.",
+      "opties": [
+        "Luik in de hal of berging",
+        "Tweede luik aan de andere kant van de woning",
+        "Buitentoegang via de kruipruimte-opening",
+        "Vaste ladder of trapje"
+      ]
+    },
+    {
+      "vraag": "Wat ligt er, en hoe vind je het terug?",
+      "waarom": "Water, riool, elektra en soms de vloerverwarmingsverdeler liggen hier. Wie na oplevering foto's maakt van de leidingloop, weet vijftien jaar later waar geboord mag worden. Zonder die foto's is elke vloerdoorboring een gok.",
+      "opties": [
+        "Foto's maken bij oplevering",
+        "Revisietekening opvragen bij de aannemer",
+        "Leidingen labelen",
+        "Niets vastleggen"
+      ]
+    },
+    {
+      "vraag": "Bodemafsluiting of niet?",
+      "waarom": "Bij een natte bodem verdampt er permanent water de kruipruimte in. Een afsluitende laag — folie, schelpen of een schuimlaag — stopt die stroom bij de bron. Zonder die laag blijf je ventileren tegen een kraan die openstaat.",
+      "opties": [
+        "Bodemfolie",
+        "Schelpenlaag",
+        "Isolerende schuimlaag op de bodem",
+        "Alleen ventileren"
+      ]
+    }
+  ],
+  "vakken": [
+    "isolatiebedrijf",
+    "loodgieter",
+    "energieadviseur"
+  ],
+  "verwante_ruimtes": [
+    "kelder",
+    "technische-ruimte"
+  ],
+  "paden": [
+    "/woning-verduurzamen/"
+  ],
+  "fouten": [
+    "Isoleren zonder het vochtprobleem eerst op te lossen — dan sluit je het vocht in.",
+    "Ventilatieroosters dichtmaken tegen de tocht; dat is precies wat de kruipruimte nat maakt.",
+    "Denken dat een droge kruipruimte in juli ook in februari droog is. De grondwaterstand beweegt met het seizoen.",
+    "Isolatieplaten tegen de vloer schroeven dwars door een leiding heen. Waar de leidingen liggen, weet je alleen als je gekeken hebt.",
+    "Aannemen dat nieuwbouw geen kruipruimteprobleem heeft. Bouwvocht en een hoge grondwaterstand zijn juist in de eerste jaren het sterkst."
+  ],
+  "pagina_pad": "/ruimtes/kruipruimte/",
+  "intro": "De ruimte waar niemand komt en waar een groot deel van de vochtproblemen in Nederlandse woningen begint. Het is tegelijk de goedkoopste plek om te isoleren, met de kortste terugverdientijd van alle maatregelen. Maar in die volgorde: eerst het vocht, dan pas de isolatie.",
+  "secties": [
+    {
+      "kop": "Waarom een natte kruipruimte de hele woning raakt",
+      "alineas": [
+        "Vocht dat in de kruipruimte staat, verdampt en stijgt door de vloer naar de woning. Dat merk je aan een klamme onderste verdieping, aan een muffe geur, en op termijn aan houten vloerdelen en balken die aangetast raken.",
+        "De oorzaken lopen uiteen: een hoge grondwaterstand, een lekkende leiding, hemelwater dat naar binnen loopt, of simpelweg onvoldoende ventilatie. Elke oorzaak vraagt een andere oplossing, en dat is precies waarom een standaardaanpak zelden werkt.",
+        "Kijk zelf eerst even: is de bodem nat, staat er water, of is hij alleen vochtig? Ruikt het muf? Zitten de ventilatieroosters in de gevel dicht? Dat zijn drie waarnemingen die een specialist een heel eind op weg helpen."
+      ]
+    },
+    {
+      "kop": "Isoleren zonder eerst het vocht op te lossen is contraproductief",
+      "alineas": [
+        "Vloerisolatie vanuit de kruipruimte is een van de snelst terugverdiende maatregelen die er zijn: je vloer wordt merkbaar warmer en je stookt minder. Het is ook een van de weinige maatregelen die je zonder overlast in de woning kunt laten uitvoeren.",
+        "Maar isoleer je een vochtige kruipruimte, dan sluit je het vocht in. Het materiaal wordt nat, verliest zijn isolerende werking, en het probleem is daarna onzichtbaar geworden.",
+        "De volgorde is dus: vocht vaststellen, oorzaak wegnemen, eventueel een bodemafsluiting aanbrengen, en pas dan isoleren. Een bedrijf dat die volgorde overslaat om snel te kunnen offreren, is het verkeerde bedrijf."
+      ]
+    },
+    {
+      "kop": "De roosters die iedereen dichtmaakt",
+      "alineas": [
+        "In de gevel zitten ventilatieroosters die de kruipruimte doorspoelen met buitenlucht. Ze zorgen ervoor dat vocht wegtrekt in plaats van blijft hangen.",
+        "Ze zitten ook vaak dicht: geplamuurd bij een schilderbeurt, afgesloten tegen de tocht, of dichtgegroeid door beplanting. Dat is een veelvoorkomende en makkelijk te herstellen oorzaak van een vochtige kruipruimte.",
+        "Loop dus een keer om je huis heen en tel de roosters. Zitten ze open, en zijn het er genoeg gezien de omtrek van je woning? Dat is de goedkoopste controle die er is."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Hoe weet ik of mijn kruipruimte te vochtig is?",
+      "a": "Kijk en ruik. Staat er water of is de bodem duidelijk nat, dan is er een probleem. Een muffe geur in de woonkamer of een klamme vloer wijzen in dezelfde richting. Controleer daarnaast of de ventilatieroosters in de gevel open zijn — dichtgeschilderde of dichtgegroeide roosters zijn een veelvoorkomende en eenvoudig te verhelpen oorzaak."
+    },
+    {
+      "v": "Kan ik een vochtige kruipruimte isoleren?",
+      "a": "Niet voordat het vocht is opgelost. Isolatiemateriaal in een vochtige ruimte wordt nat, verliest zijn werking en maakt het probleem onzichtbaar in plaats van kleiner. De juiste volgorde is: oorzaak vaststellen, wegnemen, zo nodig een bodemafsluiting aanbrengen, en daarna pas isoleren."
+    },
+    {
+      "v": "Wat is een bodemafsluiting?",
+      "a": "Een waterdichte laag over de bodem van de kruipruimte — meestal folie of een schelpenlaag met folie — die voorkomt dat vocht uit de grond verdampt en naar de woning stijgt. Het is een gangbare oplossing bij een hoge grondwaterstand, waar je het water zelf niet kunt wegnemen."
+    },
+    {
+      "v": "Verdient vloerisolatie zich terug?",
+      "a": "Van de gangbare isolatiemaatregelen heeft vloerisolatie doorgaans de kortste terugverdientijd, en het effect merk je direct aan een minder koude vloer. Voorwaarde is wel dat de kruipruimte droog is en droog blijft; anders investeer je in materiaal dat zijn werking verliest."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Bodemafsluiting met folie",
+      "waarom": "Houdt grondvocht tegen waar je het water zelf niet kunt wegnemen."
+    },
+    {
+      "type": "Vloerisolatieplaten of -chips",
+      "waarom": "Kortste terugverdientijd van de gangbare maatregelen."
+    },
+    {
+      "type": "Ventilatieroosters in de gevel",
+      "waarom": "Vaak dichtgeschilderd; heropenen is de goedkoopste maatregel."
+    },
+    {
+      "type": "Kruipluik met isolatie",
+      "waarom": "Een ongeïsoleerd luik is een gat in je vloerisolatie."
+    },
+    {
+      "type": "Vochtmeter of sensor",
+      "waarom": "Meten voorkomt dat je pas ingrijpt als het te ruiken is."
+    },
+    {
+      "type": "Leidingisolatie",
+      "waarom": "Waterleidingen in een koude kruipruimte kunnen bevriezen."
+    }
+  ],
+  "meerwerk": [
+    "ventilatie"
+  ]
+}

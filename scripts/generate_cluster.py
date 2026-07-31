@@ -450,7 +450,7 @@ def render_bedrijf_content(entry: dict, body_tpl: str, fragments: dict) -> str:
 
 
 TILE_SHAPES = {
-    "rated": '<a href="{{href}}" class="tile">{{name}} <span style="color:rgba(61,46,30,0.4);font-weight:400;">&#9733; {{rating}}</span></a>',
+    "rated": '<a href="{{href}}" class="tile">{{name}} <span style="color:rgba(61,46,30,0.72);font-weight:400;">&#9733; {{rating}}</span></a>',
     "unrated": '<a href="{{href}}" class="tile">{{name}}</a>',
 }
 

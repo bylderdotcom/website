@@ -11,7 +11,7 @@
   "stats": [
     ["€12.000", "gemiddelde prijs complete keuken"],
     ["€1.840", "gemiddeld te veel betaald aan meerwerk"],
-    ["€4.200", "gemiddelde besparing van Bylder-leden"]
+    ["€4.200", "gemiddelde besparing van Bylder-gebruikers"]
   ],
   "secties": [
     {
@@ -28,7 +28,7 @@
     },
     {
       "kop": "Hoe koop je na de oplevering slim een keuken?",
-      "html": "<p>Start het keukentraject twee tot vier maanden vóór de verwachte oplevering: dan kun je direct na de sleuteloverdracht laten inmeten en bestellen, en beperk je de keukenloze periode tot de levertijd. Vraag minimaal twee offertes op met identieke apparatuurtypenummers, zodat je echt kunt vergelijken, en laat de offerte per regel controleren — 96% van de kopers betaalt voor minstens één post te veel.</p><p>Bylder-leden kopen hun keuken en apparatuur met ledenprijzen bij 60+ deelnemende merken; de gemiddelde besparing op de totale afbouw is €4.200, terwijl je Bylder-account gratis is. Zet in de tussentijd een campingkeukentje op de casco-aansluitpunten: kraan en afvoer werken immers al.</p>"
+      "html": "<p>Start het keukentraject twee tot vier maanden vóór de verwachte oplevering: dan kun je direct na de sleuteloverdracht laten inmeten en bestellen, en beperk je de keukenloze periode tot de levertijd. Vraag minimaal twee offertes op met identieke apparatuurtypenummers, zodat je echt kunt vergelijken, en laat de offerte per regel controleren — 96% van de kopers betaalt voor minstens één post te veel.</p><p>Bylder-gebruikers kopen hun keuken en apparatuur met ledenprijzen bij 60+ deelnemende merken; de gemiddelde besparing op de totale afbouw is €4.200, terwijl je Bylder-account gratis is. Zet in de tussentijd een campingkeukentje op de casco-aansluitpunten: kraan en afvoer werken immers al.</p>"
     }
   ],
   "faq": [

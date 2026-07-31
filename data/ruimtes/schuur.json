@@ -1,0 +1,162 @@
+{
+  "slug": "schuur",
+  "naam": "Schuur",
+  "synoniemen": [
+    "tuinhuis",
+    "buitenberging",
+    "blokhut"
+  ],
+  "type": "buiten",
+  "status": "pagina",
+  "kern": "Het bouwwerk waar de meeste mensen zonder nadenken aan beginnen, en waar de vergunningregels het strengst zijn ten opzichte van de erfgrens.",
+  "momenten": [
+    "nieuwbouw-oplevering",
+    "verbouwing"
+  ],
+  "beslissingen": [
+    {
+      "vraag": "Vergunningvrij of niet?",
+      "waarom": "Oppervlakte, hoogte en de ligging in het achtererfgebied bepalen het. Bij twijfel is een vooroverleg met de gemeente goedkoper dan afbreken.",
+      "opties": [
+        "Binnen de vergunningvrije maten",
+        "Vergunning aanvragen",
+        "Verplaatsbaar model zonder fundering"
+      ]
+    },
+    {
+      "vraag": "Stroom naartoe of niet?",
+      "waarom": "Een schuur zonder stroom is opslag; met stroom is het een werkplaats en een plek om accu's te laden. De sleuf graven kost meer dan de kabel.",
+      "opties": [
+        "Aparte groep met grondkabel",
+        "Zonnepaneel met accu",
+        "Geen stroom"
+      ]
+    },
+    {
+      "vraag": "Fundering: op poeren, op een plaat, of los op tegels?",
+      "waarom": "Een schuur zonder fundering zakt scheef zodra de grond zet — en bij nieuwbouw zet de tuin nog jaren. De deur klemt dan als eerste. Welke fundering nodig is, hangt af van het gewicht en of er iets in staat wat waterpas moet blijven.",
+      "opties": [
+        "Betonpoeren",
+        "Betonplaat",
+        "Losse tegels met stelzand",
+        "Schroefpalen"
+      ]
+    },
+    {
+      "vraag": "Hoe blijft het droog van binnen?",
+      "waarom": "Een onverwarmde schuur met een dicht dak krijgt condens: warme lucht slaat neer op koud metaal of hout. Gereedschap roest daardoor sneller dan in de buitenlucht. Ventilatieopeningen laag en hoog lossen dat op, isoleren zonder ventileren maakt het erger.",
+      "opties": [
+        "Ventilatieroosters laag en hoog",
+        "Dampopen dakbedekking",
+        "Isoleren mét ventilatie",
+        "Vloer op afstand van de grond"
+      ]
+    },
+    {
+      "vraag": "Wat sla je op, en wat betekent dat voor de brandveiligheid?",
+      "waarom": "Accu's van een e-bike of tuingereedschap, jerrycans, verf en spuitbussen belanden vrijwel altijd in de schuur. Een accu laden in een houten schuur tegen de gevel van de woning is een risico dat een rookmelder daar niet dekt.",
+      "opties": [
+        "Vaste laadplek met stopcontact op afstand van de gevel",
+        "Metalen kast voor brandbare stoffen",
+        "Rookmelder ook in de schuur",
+        "Schuur losstaand van de woning plaatsen"
+      ]
+    }
+  ],
+  "vakken": [
+    "aannemer",
+    "elektricien",
+    "dakdekker"
+  ],
+  "vergunning": {
+    "nodig": "soms",
+    "toelichting": "Een bijgebouw in het achtererfgebied is binnen bepaalde maten vergunningvrij; daarbuiten niet. Het bestemmingsplan kan aanvullende eisen stellen.",
+    "pad": "/bouwvergunning/"
+  },
+  "paden": [
+    "/bijgebouw/"
+  ],
+  "verwante_ruimtes": [
+    "tuin",
+    "berging",
+    "garage"
+  ],
+  "fouten": [
+    "Bouwen tot op de erfgrens zonder de regels of de buren te raadplegen.",
+    "Een schuur pal tegen de erfgrens én tegen de woning zetten. Voor allebei gelden regels, en samen zijn ze strenger.",
+    "Regenwater van het schuurdak op het buurperceel laten lopen. Dat is de meest voorkomende burenruzie over een schuur.",
+    "Een stroomkabel ondergronds leggen zonder beschermbuis en zonder de ligging vast te leggen. Bij de eerste schep in de tuin is dat een probleem."
+  ],
+  "pagina_pad": "/ruimtes/schuur/",
+  "intro": "Een tuinhuis of schuur is het bouwwerk waar de meeste mensen zonder nadenken aan beginnen, en waar de regels het strengst zijn ten opzichte van de erfgrens. Een schuur die een halve meter te dicht bij de buren staat, is een schuur die je kunt moeten afbreken.",
+  "secties": [
+    {
+      "kop": "De erfgrens is het hele verhaal",
+      "alineas": [
+        "Voor bijgebouwen in het achtererfgebied gelden landelijke regels over oppervlakte, hoogte en de positie ten opzichte van de erfgrens en het openbaar gebied. Binnen die maten mag je zonder vergunning bouwen.",
+        "Het bestemmingsplan kan strenger zijn, en in een beschermd stadsgezicht gelden de vrijstellingen niet. Bovendien geldt er een maximum aan het totale oppervlak aan bijgebouwen op je perceel — een schuur plús een overkapping plús een berging telt bij elkaar op.",
+        "Praat met je buren voordat je begint, ook als het vergunningvrij is. Een schuur pal tegen de erfgrens is juridisch misschien toegestaan en sociaal zelden een succes."
+      ]
+    },
+    {
+      "kop": "Fundering bepaalt of hij over tien jaar nog recht staat",
+      "alineas": [
+        "Een schuur op losse tegels op nieuwbouwgrond gaat zakken. De grond is verdicht door bouwverkeer en klinkt daarna ongelijk in, en dat zie je terug in deuren die klemmen.",
+        "Betonnen poeren of een strokenfundering zijn de gebruikelijke oplossingen en kosten weinig ten opzichte van de schuur zelf. Bij een verplaatsbaar model kun je met stelpoeren werken.",
+        "Denk ook aan de afwatering van het dak. Een schuur zonder goot loost al het regenwater op één plek, meestal tegen de erfgrens aan."
+      ]
+    },
+    {
+      "kop": "Stroom maakt het verschil tussen opslag en werkplaats",
+      "alineas": [
+        "Een schuur zonder stroom is een plek waar spullen staan. Met stroom is het een werkplaats, een laadplek voor accu's en een plek waar een vriezer kan staan.",
+        "De kabel kost weinig; de sleuf kost het meeste. Leg hem daarom terwijl de tuin nog open ligt, in een beschermbuis en op voldoende diepte, met een aparte groep in de meterkast.",
+        "Voor wie het niet nodig heeft: een klein zonnepaneel met accu volstaat voor verlichting en het laden van gereedschap, en vraagt geen graafwerk."
+      ]
+    }
+  ],
+  "vragen": [
+    {
+      "v": "Mag ik zomaar een schuur in mijn tuin bouwen?",
+      "a": "Binnen het achtererfgebied vaak wel, mits je binnen de landelijke maten blijft voor oppervlakte en hoogte en het totale oppervlak aan bijgebouwen op je perceel niet overschrijdt. Het bestemmingsplan kan strenger zijn en in beschermde gebieden gelden de vrijstellingen niet. Controleer beide voordat je bestelt."
+    },
+    {
+      "v": "Hoe dicht mag een schuur bij de erfgrens staan?",
+      "a": "Dat hangt af van de hoogte en van het bestemmingsplan; bij een lage schuur in het achtererfgebied mag doorgaans meer dan de meeste mensen denken. Belangrijker dan wat mag: de afwatering. Een dak zonder goot loost al het regenwater op de perceelsgrens, en dat is de meest voorkomende bron van burenruzie."
+    },
+    {
+      "v": "Welke fundering heeft een tuinhuis nodig?",
+      "a": "Op nieuwbouwgrond zeker meer dan losse tegels. De grond is verdicht door bouwverkeer en zakt daarna ongelijk in. Betonnen poeren of een strokenfundering kosten weinig ten opzichte van de schuur en voorkomen klemmende deuren over een paar jaar."
+    },
+    {
+      "v": "Kan ik stroom naar mijn schuur laten aanleggen?",
+      "a": "Ja, met een grondkabel in een beschermbuis op voldoende diepte en een eigen groep in de meterkast. Het graafwerk is duurder dan de kabel, dus leg hem terwijl de tuin nog open ligt. Voor alleen verlichting en gereedschap laden volstaat vaak een klein zonnepaneel met accu."
+    }
+  ],
+  "producttypen": [
+    {
+      "type": "Fundering met betonpoeren",
+      "waarom": "Op verdichte nieuwbouwgrond geen luxe maar noodzaak."
+    },
+    {
+      "type": "Grondkabel met eigen groep",
+      "waarom": "De sleuf kost meer dan de kabel; leg hem als de tuin open ligt."
+    },
+    {
+      "type": "Dakgoot en afvoer",
+      "waarom": "Zonder goot loost het dak op de erfgrens — bron nummer één van burenruzie."
+    },
+    {
+      "type": "Fietsophangsysteem",
+      "waarom": "Een schuur is voor de meeste mensen vooral een fietsenstalling."
+    },
+    {
+      "type": "Hang- en sluitwerk met keurmerk",
+      "waarom": "Een schuur is de makkelijkste ingang van een perceel."
+    },
+    {
+      "type": "Zonnepaneel met accu",
+      "waarom": "Verlichting en gereedschap laden zonder graafwerk."
+    }
+  ]
+}
