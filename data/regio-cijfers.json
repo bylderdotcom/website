@@ -1,0 +1,1514 @@
+{
+ "gemeten_op": "2026-08-01",
+ "regios": {
+  "drenthe": {
+   "niveau": "provincie",
+   "projecten": 10,
+   "woningen": 113,
+   "bekend": 5
+  },
+  "flevoland": {
+   "niveau": "provincie",
+   "projecten": 29,
+   "woningen": 441,
+   "bekend": 16
+  },
+  "friesland": {
+   "niveau": "provincie",
+   "projecten": 26,
+   "woningen": 615,
+   "bekend": 21
+  },
+  "gelderland": {
+   "niveau": "provincie",
+   "projecten": 121,
+   "woningen": 5157,
+   "bekend": 51
+  },
+  "groningen": {
+   "niveau": "gemeente",
+   "provincie": "groningen",
+   "projecten": 14,
+   "woningen": 136,
+   "bekend": 4
+  },
+  "limburg": {
+   "niveau": "provincie",
+   "projecten": 26,
+   "woningen": 773,
+   "bekend": 14
+  },
+  "noord-brabant": {
+   "niveau": "provincie",
+   "projecten": 136,
+   "woningen": 8910,
+   "bekend": 79
+  },
+  "noord-holland": {
+   "niveau": "provincie",
+   "projecten": 167,
+   "woningen": 8758,
+   "bekend": 82
+  },
+  "overijssel": {
+   "niveau": "provincie",
+   "projecten": 98,
+   "woningen": 1635,
+   "bekend": 32
+  },
+  "utrecht": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 26,
+   "woningen": 1067,
+   "bekend": 10
+  },
+  "zeeland": {
+   "niveau": "provincie",
+   "projecten": 29,
+   "woningen": 218,
+   "bekend": 8
+  },
+  "zuid-holland": {
+   "niveau": "provincie",
+   "projecten": 205,
+   "woningen": 7689,
+   "bekend": 113
+  },
+  "emmen": {
+   "niveau": "gemeente",
+   "provincie": "groningen",
+   "projecten": 4,
+   "woningen": 40,
+   "bekend": 2
+  },
+  "meppel": {
+   "niveau": "gemeente",
+   "provincie": "drenthe",
+   "projecten": 2,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "noordenveld": {
+   "niveau": "gemeente",
+   "provincie": "drenthe",
+   "projecten": 4,
+   "woningen": 73,
+   "bekend": 3
+  },
+  "almere": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 16,
+   "woningen": 145,
+   "bekend": 4
+  },
+  "dronten": {
+   "niveau": "gemeente",
+   "provincie": "flevoland",
+   "projecten": 11,
+   "woningen": 287,
+   "bekend": 11
+  },
+  "lelystad": {
+   "niveau": "gemeente",
+   "provincie": "flevoland",
+   "projecten": 2,
+   "woningen": 9,
+   "bekend": 1
+  },
+  "de-fryske-marren": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 4,
+   "woningen": 18,
+   "bekend": 1
+  },
+  "harlingen": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 1,
+   "woningen": 32,
+   "bekend": 1
+  },
+  "leeuwarden": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 14,
+   "woningen": 459,
+   "bekend": 14
+  },
+  "opsterland": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 1,
+   "woningen": 28,
+   "bekend": 1
+  },
+  "smallingerland": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 3,
+   "woningen": 15,
+   "bekend": 1
+  },
+  "tytsjerksteradiel": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 1,
+   "woningen": 32,
+   "bekend": 1
+  },
+  "waadhoeke": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 1,
+   "woningen": 26,
+   "bekend": 1
+  },
+  "weststellingwerf": {
+   "niveau": "gemeente",
+   "provincie": "friesland",
+   "projecten": 1,
+   "woningen": 5,
+   "bekend": 1
+  },
+  "apeldoorn": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 10,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "arnhem": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 9,
+   "woningen": 231,
+   "bekend": 5
+  },
+  "barneveld": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "bronckhorst": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 6,
+   "woningen": 47,
+   "bekend": 4
+  },
+  "buren": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "culemborg": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 6,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "doesburg": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "doetinchem": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 5,
+   "woningen": 139,
+   "bekend": 5
+  },
+  "druten": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 40,
+   "bekend": 1
+  },
+  "duiven": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 50,
+   "bekend": 1
+  },
+  "ede": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 5,
+   "woningen": 314,
+   "bekend": 5
+  },
+  "harderwijk": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 6,
+   "woningen": 162,
+   "bekend": 2
+  },
+  "lingewaard": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 10,
+   "bekend": 1
+  },
+  "lochem": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 4,
+   "woningen": 3,
+   "bekend": 1
+  },
+  "neder-betuwe": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "nijkerk": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 6,
+   "woningen": 751,
+   "bekend": 3
+  },
+  "nijmegen": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 16,
+   "woningen": 1865,
+   "bekend": 7
+  },
+  "nunspeet": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "oldebroek": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "oost-gelre": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "overbetuwe": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 38,
+   "bekend": 1
+  },
+  "putten": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 200,
+   "bekend": 1
+  },
+  "renkum": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 108,
+   "bekend": 2
+  },
+  "rheden": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 5,
+   "bekend": 1
+  },
+  "scherpenzeel": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 450,
+   "bekend": 1
+  },
+  "veenendaal": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 8,
+   "woningen": 37,
+   "bekend": 2
+  },
+  "wageningen": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 520,
+   "bekend": 2
+  },
+  "west-betuwe": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 3,
+   "woningen": 64,
+   "bekend": 3
+  },
+  "wijchen": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 27,
+   "bekend": 1
+  },
+  "winterswijk": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 3,
+   "woningen": 22,
+   "bekend": 1
+  },
+  "zaltbommel": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "zevenaar": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 5,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "zutphen": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 74,
+   "bekend": 1
+  },
+  "het-hogeland": {
+   "niveau": "gemeente",
+   "provincie": "groningen",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "midden-groningen": {
+   "niveau": "gemeente",
+   "provincie": "groningen",
+   "projecten": 2,
+   "woningen": 99,
+   "bekend": 2
+  },
+  "westerkwartier": {
+   "niveau": "gemeente",
+   "provincie": "groningen",
+   "projecten": 5,
+   "woningen": 74,
+   "bekend": 2
+  },
+  "brunssum": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 1,
+   "woningen": 4,
+   "bekend": 1
+  },
+  "echt-susteren": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 3,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "gennep": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 4,
+   "bekend": 1
+  },
+  "horst-aan-de-maas": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 1,
+   "woningen": 150,
+   "bekend": 1
+  },
+  "landgraaf": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 2,
+   "woningen": 34,
+   "bekend": 1
+  },
+  "maastricht": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 4,
+   "woningen": 176,
+   "bekend": 4
+  },
+  "mook-en-middelaar": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 250,
+   "bekend": 1
+  },
+  "roermond": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 6,
+   "woningen": 100,
+   "bekend": 1
+  },
+  "valkenburg-aan-de-geul": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 3,
+   "woningen": 22,
+   "bekend": 2
+  },
+  "venlo": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "venray": {
+   "niveau": "gemeente",
+   "provincie": "limburg",
+   "projecten": 1,
+   "woningen": 12,
+   "bekend": 1
+  },
+  "weert": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 21,
+   "bekend": 1
+  },
+  "altena": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "bergen-op-zoom": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 84,
+   "bekend": 1
+  },
+  "best": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 6,
+   "woningen": 1810,
+   "bekend": 4
+  },
+  "boxtel": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 44,
+   "bekend": 1
+  },
+  "breda": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 14,
+   "woningen": 1448,
+   "bekend": 5
+  },
+  "deurne": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 4,
+   "woningen": 140,
+   "bekend": 4
+  },
+  "dongen": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 440,
+   "bekend": 2
+  },
+  "drimmelen": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 180,
+   "bekend": 1
+  },
+  "eindhoven": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 9,
+   "woningen": 633,
+   "bekend": 7
+  },
+  "etten-leur": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 23,
+   "bekend": 1
+  },
+  "geldrop-mierlo": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 52,
+   "bekend": 1
+  },
+  "gemert-bakel": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 6,
+   "woningen": 250,
+   "bekend": 1
+  },
+  "gilze-en-rijen": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 82,
+   "bekend": 1
+  },
+  "goirle": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 5,
+   "woningen": 101,
+   "bekend": 2
+  },
+  "halderberge": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 6,
+   "woningen": 70,
+   "bekend": 2
+  },
+  "heeze-leende": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "helmond": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "heusden": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 4,
+   "woningen": 41,
+   "bekend": 1
+  },
+  "hilvarenbeek": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "laarbeek": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 3,
+   "woningen": 104,
+   "bekend": 3
+  },
+  "land-van-cuijk": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 5,
+   "woningen": 19,
+   "bekend": 1
+  },
+  "loon-op-zand": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "meierijstad": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 3,
+   "woningen": 59,
+   "bekend": 2
+  },
+  "moerdijk": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 3,
+   "woningen": 360,
+   "bekend": 2
+  },
+  "oirschot": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 22,
+   "bekend": 1
+  },
+  "oosterhout": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 22,
+   "bekend": 1
+  },
+  "oss": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 6,
+   "woningen": 564,
+   "bekend": 5
+  },
+  "roosendaal": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 69,
+   "bekend": 1
+  },
+  "rucphen": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "s-hertogenbosch": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 11,
+   "woningen": 1090,
+   "bekend": 7
+  },
+  "steenbergen": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 33,
+   "bekend": 1
+  },
+  "tholen": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 1,
+   "woningen": 28,
+   "bekend": 1
+  },
+  "tilburg": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 11,
+   "woningen": 490,
+   "bekend": 6
+  },
+  "valkenswaard": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 47,
+   "bekend": 2
+  },
+  "veldhoven": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 76,
+   "bekend": 2
+  },
+  "vijfheerenlanden": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 5,
+   "woningen": 96,
+   "bekend": 3
+  },
+  "vught": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 88,
+   "bekend": 2
+  },
+  "waalwijk": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 2,
+   "woningen": 70,
+   "bekend": 2
+  },
+  "aalsmeer": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 5,
+   "woningen": 1828,
+   "bekend": 4
+  },
+  "alkmaar": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 3,
+   "woningen": 134,
+   "bekend": 3
+  },
+  "amstelveen": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 4,
+   "woningen": 340,
+   "bekend": 2
+  },
+  "amsterdam": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 44,
+   "woningen": 1699,
+   "bekend": 23
+  },
+  "bloemendaal": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "castricum": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "diemen": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 4,
+   "woningen": 10,
+   "bekend": 1
+  },
+  "drechterland": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 250,
+   "bekend": 1
+  },
+  "gooise-meren": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 105,
+   "bekend": 1
+  },
+  "haarlem": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 11,
+   "woningen": 95,
+   "bekend": 3
+  },
+  "haarlemmermeer": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 24,
+   "woningen": 1196,
+   "bekend": 12
+  },
+  "heemskerk": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 100,
+   "bekend": 1
+  },
+  "heiloo": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 2,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "hilversum": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 4,
+   "woningen": 32,
+   "bekend": 1
+  },
+  "hollands-kroon": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "hoorn": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 8,
+   "woningen": 850,
+   "bekend": 6
+  },
+  "koggenland": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 51,
+   "bekend": 1
+  },
+  "medemblik": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 4,
+   "woningen": 315,
+   "bekend": 3
+  },
+  "noordwijk": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 5,
+   "woningen": 521,
+   "bekend": 5
+  },
+  "oostzaan": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 4,
+   "bekend": 1
+  },
+  "opmeer": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "purmerend": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 5,
+   "woningen": 48,
+   "bekend": 1
+  },
+  "schagen": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 2,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "velsen": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "wormerland": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 1,
+   "woningen": 67,
+   "bekend": 1
+  },
+  "zaanstad": {
+   "niveau": "gemeente",
+   "provincie": "noord-holland",
+   "projecten": 15,
+   "woningen": 968,
+   "bekend": 8
+  },
+  "almelo": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 13,
+   "woningen": 389,
+   "bekend": 6
+  },
+  "borne": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 12,
+   "woningen": 112,
+   "bekend": 5
+  },
+  "dalfsen": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 49,
+   "bekend": 1
+  },
+  "deventer": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 5,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "dinkelland": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "enschede": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 16,
+   "woningen": 175,
+   "bekend": 2
+  },
+  "haaksbergen": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 8,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "hardenberg": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 3,
+   "woningen": 23,
+   "bekend": 1
+  },
+  "hellendoorn": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 2,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "kampen": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 27,
+   "bekend": 1
+  },
+  "losser": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "oldenzaal": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "ommen": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 49,
+   "bekend": 1
+  },
+  "raalte": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 20,
+   "bekend": 1
+  },
+  "rijssen-holten": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 20,
+   "bekend": 1
+  },
+  "staphorst": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 1,
+   "woningen": 49,
+   "bekend": 1
+  },
+  "steenwijkerland": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 3,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "twenterand": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 5,
+   "woningen": 30,
+   "bekend": 5
+  },
+  "wierden": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 4,
+   "woningen": 218,
+   "bekend": 2
+  },
+  "zwolle": {
+   "niveau": "gemeente",
+   "provincie": "overijssel",
+   "projecten": 18,
+   "woningen": 474,
+   "bekend": 5
+  },
+  "amersfoort": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 4,
+   "woningen": 440,
+   "bekend": 1
+  },
+  "de-bilt": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 1,
+   "woningen": 16,
+   "bekend": 1
+  },
+  "de-ronde-venen": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 6,
+   "woningen": 255,
+   "bekend": 4
+  },
+  "eemnes": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 2,
+   "woningen": 20,
+   "bekend": 1
+  },
+  "ijsselstein": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "leusden": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 3,
+   "woningen": 9,
+   "bekend": 1
+  },
+  "nieuwegein": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 8,
+   "woningen": 265,
+   "bekend": 5
+  },
+  "oudewater": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 3,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "stichtse-vecht": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 4,
+   "woningen": 312,
+   "bekend": 1
+  },
+  "woerden": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 3,
+   "woningen": 147,
+   "bekend": 3
+  },
+  "zeist": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 2,
+   "woningen": 65,
+   "bekend": 2
+  },
+  "goes": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 2,
+   "woningen": 56,
+   "bekend": 2
+  },
+  "kapelle": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "schouwen-duiveland": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 5,
+   "woningen": 46,
+   "bekend": 1
+  },
+  "sluis": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 4,
+   "woningen": 46,
+   "bekend": 1
+  },
+  "terneuzen": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 14,
+   "woningen": 42,
+   "bekend": 3
+  },
+  "veere": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "vlissingen": {
+   "niveau": "gemeente",
+   "provincie": "zeeland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "alblasserdam": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 3,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "alphen-aan-den-rijn": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 9,
+   "woningen": 945,
+   "bekend": 6
+  },
+  "barendrecht": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 1,
+   "woningen": 14,
+   "bekend": 1
+  },
+  "bodegraven-reeuwijk": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 43,
+   "bekend": 2
+  },
+  "capelle-aan-den-ijssel": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 1,
+   "woningen": 180,
+   "bekend": 1
+  },
+  "delft": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 10,
+   "bekend": 1
+  },
+  "dordrecht": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 20,
+   "woningen": 448,
+   "bekend": 9
+  },
+  "goeree-overflakkee": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 6,
+   "woningen": 81,
+   "bekend": 3
+  },
+  "gorinchem": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 5,
+   "woningen": 146,
+   "bekend": 5
+  },
+  "gouda": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 5,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "hardinxveld-giessendam": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 68,
+   "bekend": 2
+  },
+  "hendrik-ido-ambacht": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 3,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "hillegom": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 4,
+   "woningen": 32,
+   "bekend": 1
+  },
+  "hoeksche-waard": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 6,
+   "woningen": 217,
+   "bekend": 3
+  },
+  "kaag-en-braassem": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 37,
+   "bekend": 2
+  },
+  "katwijk": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 45,
+   "bekend": 2
+  },
+  "krimpen-aan-den-ijssel": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "krimpenerwaard": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 57,
+   "bekend": 1
+  },
+  "lansingerland": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 28,
+   "bekend": 1
+  },
+  "leiden": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 3,
+   "woningen": 10,
+   "bekend": 1
+  },
+  "leidschendam-voorburg": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 86,
+   "bekend": 2
+  },
+  "maassluis": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 6,
+   "woningen": 81,
+   "bekend": 3
+  },
+  "molenlanden": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 3,
+   "woningen": 267,
+   "bekend": 2
+  },
+  "nieuwkoop": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 4,
+   "woningen": 164,
+   "bekend": 1
+  },
+  "nissewaard": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 3,
+   "woningen": 169,
+   "bekend": 2
+  },
+  "oegstgeest": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 48,
+   "bekend": 2
+  },
+  "papendrecht": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 87,
+   "bekend": 1
+  },
+  "pijnacker-nootdorp": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 4,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "ridderkerk": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "rotterdam": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 31,
+   "woningen": 1218,
+   "bekend": 13
+  },
+  "schiedam": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 7,
+   "woningen": 123,
+   "bekend": 4
+  },
+  "sliedrecht": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "teylingen": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 5,
+   "woningen": 116,
+   "bekend": 5
+  },
+  "vlaardingen": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 8,
+   "woningen": 838,
+   "bekend": 7
+  },
+  "voorne-aan-zee": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 4,
+   "woningen": 59,
+   "bekend": 3
+  },
+  "voorschoten": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 48,
+   "bekend": 2
+  },
+  "waddinxveen": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
+  "westland": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 15,
+   "woningen": 460,
+   "bekend": 10
+  },
+  "zoetermeer": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 2,
+   "woningen": 579,
+   "bekend": 2
+  },
+  "zuidplas": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 7,
+   "woningen": 332,
+   "bekend": 6
+  },
+  "zwijndrecht": {
+   "niveau": "gemeente",
+   "provincie": "zuid-holland",
+   "projecten": 9,
+   "woningen": 132,
+   "bekend": 2
+  }
+ }
+}
