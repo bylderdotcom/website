@@ -97,7 +97,7 @@ export default function PrijzenPage() {
       <div style={CARD}>
         <ul style={{ margin: 0, paddingLeft: 20 }}>
           <li style={LI}><strong>Ontwikkelaars en bouwers</strong> — Bylder als kopersservice bij je project, vanaf €49 per woning</li>
-          <li style={LI}><strong>Prefab-productie en -netwerk</strong> — €149 per gerealiseerde match, geen kosten per lead</li>
+          <li style={LI}><strong>Prefab-productie en -netwerk</strong> — €99 per gerealiseerde match, geen kosten per lead</li>
           <li style={LI}><strong>Commercieel vastgoed</strong> — offerte- en tender-check, €299 per dossier</li>
         </ul>
       </div>
