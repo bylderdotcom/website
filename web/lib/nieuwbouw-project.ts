@@ -7,6 +7,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import { metKennisbank } from './kennisbank-links'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'nieuwbouw-project'
@@ -46,7 +47,7 @@ export function getPage(slug: string): ClusterPage | undefined {
   return getPages().find(p => p.slug === slug)
 }
 
-export function getMainHtml(page: ClusterPage): string {
+function getMainHtmlRaw(page: ClusterPage): string {
   return fs.readFileSync(path.join(DATA_DIR, 'content', `${page.slug}.html`), 'utf8')
 }
 
@@ -79,4 +80,9 @@ export function toMetadata(page: ClusterPage) {
     ...(page.twitter_card ? { twitter: { card: page.twitter_card } } : {}),
   }
   return meta
+}
+
+// Kennisbank-links erbij (zie kennisbank-links.ts voor de aanleiding).
+export function getMainHtml(page: ClusterPage): string {
+  return metKennisbank(getMainHtmlRaw(page), 'nieuwbouwProject')
 }

@@ -8,6 +8,7 @@
 import type { Metadata } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
+import { metKennisbank } from './kennisbank-links'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'kopen'
@@ -86,7 +87,7 @@ function readHub(slug: string): string {
 
 // De <main>-HTML: vakstad → content-template met stad/provincie ingevuld;
 // hub (content_kind null) → self-contained content-fragment.
-export function getMainHtml(page: KopenPage): string {
+function getMainHtmlRaw(page: KopenPage): string {
   if (page.content_kind === 'vakstad') {
     const v = getVaksteden()[page.slug]
     let body = readTpl(`content.vakstad.${v.template}.html`)
@@ -136,4 +137,9 @@ export function slugToSegments(slug: string): string[] {
 }
 export function segmentsToSlug(segments?: string[]): string {
   return segments && segments.length ? segments.join('/') : 'index'
+}
+
+// Kennisbank-links erbij (zie kennisbank-links.ts voor de aanleiding).
+export function getMainHtml(page: KopenPage): string {
+  return metKennisbank(getMainHtmlRaw(page), 'kopen')
 }

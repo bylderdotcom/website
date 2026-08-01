@@ -14,6 +14,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import { metKennisbank } from './kennisbank-links'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'kortingscode'
@@ -60,7 +61,7 @@ export function getPage(slug: string): KortingscodePage | undefined {
 // Fase 1B-generator; die vervalt (Nav komt uit de gedeelde layout). Elk
 // fragment heeft precies één <main>...</main> gevolgd door een cosmetische
 // warm-divider — die blijft staan, exact zoals de bron.
-export function getMainHtml(page: KortingscodePage): string {
+function getMainHtmlRaw(page: KortingscodePage): string {
   const raw = fs.readFileSync(path.join(DATA_DIR, 'content', `${page.slug}.html`), 'utf8')
   const idx = raw.indexOf('<main')
   return idx === -1 ? raw : raw.slice(idx)
@@ -108,4 +109,9 @@ export function toMetadata(page: KortingscodePage) {
     ...(page.twitter_card ? { twitter: { card: page.twitter_card } } : {}),
   }
   return meta
+}
+
+// Kennisbank-links erbij (zie kennisbank-links.ts voor de aanleiding).
+export function getMainHtml(page: KortingscodePage): string {
+  return metKennisbank(getMainHtmlRaw(page), 'kortingscode')
 }
