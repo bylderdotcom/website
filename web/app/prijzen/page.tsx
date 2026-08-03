@@ -72,6 +72,34 @@ export default function PrijzenPage() {
         Je deelname loopt per jaar; vóór de verlenging ontvang je een betaalverzoek en opzeggen kan per jaar.
       </p>
 
+      <h2 style={H2}>En daarnaast: betalen als het werkt</h2>
+      <p style={{ fontSize: 15, color: 'rgba(61,46,30,0.7)', lineHeight: 1.7, margin: '0 0 14px' }}>
+        Het jaarbedrag koopt je plek in de matching. Wat je daarna betaalt hangt af van of het
+        werkt: één vast bedrag per <strong>getekende opdracht</strong> die via Bylder binnenkwam.
+        Geen kosten per lead, geen veiling, geen percentage over je factuur — een bedrag per
+        klusomvang, zodat je vooraf weet waar je aan toe bent.
+      </p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(190px,1fr))', gap: 18 }}>
+        <div style={CARD}>
+          <div style={PRIJS}>€99</div>
+          <div style={SUB}>opdracht tot €2.500</div>
+        </div>
+        <div style={CARD}>
+          <div style={PRIJS}>€299</div>
+          <div style={SUB}>€2.500 tot €15.000</div>
+        </div>
+        <div style={CARD}>
+          <div style={PRIJS}>€599</div>
+          <div style={SUB}>boven €15.000</div>
+        </div>
+      </div>
+      <p style={{ fontSize: 13.5, color: 'rgba(61,46,30,0.72)', margin: '10px 0 0' }}>
+        Geen opdracht betekent geen kosten. Je jaarlijkse totaal aan opdrachtbedragen is
+        gemaximeerd, dus je weet wat het maximaal kan worden. Dit vervangt op termijn het
+        jaarbedrag: hoe beter wij zien welk werk er daadwerkelijk uit een match volgt, hoe meer
+        het model op resultaat gaat rusten en hoe minder op deelname.
+      </p>
+
       <h2 style={H2}>Producten laten aanbevelen</h2>
       <div style={CARD}>
         <div style={PRIJS}>vanaf €149</div>
