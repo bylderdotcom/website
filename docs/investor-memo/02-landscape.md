@@ -38,8 +38,8 @@ Bylder starts where Angi is painfully trying to arrive.
 | Company | Market | Scale | Note |
 |---|---|---|---|
 | Angi Inc | US | $246M Q1'25 revenue, −19% | Parent of Instapro |
-| Instapro Group | NL, UK, DE, AT, FR, IT | MyHammer GmbH ~$11.9M revenue | The European incumbent we displace |
-| Thumbtack | US | $400M ARR (2024), $3.2B valuation, $772M raised | Best-funded pure-play |
+| Instapro Group | NL, UK, DE, AT, FR, IT | Privately held — not disclosed | The European incumbent we displace |
+| Thumbtack | US | $772M raised (PitchBook) | Best-funded pure-play |
 | Bark | UK | not disclosed | Same model, broader service categories |
 | Checkatrade | UK | not disclosed | Subscription + reviews; directory logic |
 | Homedeal | NL | not disclosed | Quote requests, Dutch market |
@@ -48,7 +48,7 @@ Bylder starts where Angi is painfully trying to arrive.
 
 | Company | Scale | Note |
 |---|---|---|
-| Houzz | $614M raised; last disclosed valuation $4B (2017 — stale) | Design inspiration, product marketplace, pro software. Rich on taste, absent on sequence: it knows what a kitchen should look like, not when your kitchen choice closes. |
+| Houzz | $614M raised (Tracxn) | Design inspiration, product marketplace, pro software. Rich on taste, absent on sequence: it knows what a kitchen should look like, not when your kitchen choice closes. |
 
 **Vertical installers — sell the outcome, but own the execution**
 
@@ -135,16 +135,17 @@ That is the asset. Everything else in this memo is how we get there.
 |---|---|---|
 | Angi revenue, shareholder return, lead volumes, homeowner choice | Angi IR Q1 2025, Q3 2025, Q1 2026 | High — company filings |
 | Instapro Group structure and markets | Tracxn company profile | High |
-| MyHammer GmbH revenue ~$11.9M | RocketReach | **Low — verify before use** |
-| Thumbtack $400M ARR, $3.2B valuation, $772M raised | Latka, Tracxn, PitchBook | Medium |
-| Houzz $614M raised, $4B valuation | Tracxn | Valuation is 2017 — **flag as stale or drop** |
+| Thumbtack $772M raised | PitchBook | Medium |
+| Houzz $614M raised | Tracxn | Medium — 2017 valuation dropped as stale |
 | Enpal €810M 2025, €2.4bn valuation | Tech.eu, Enpal press release, TFN | High |
 | 1Komma5° €430M+, €150M pre-IPO | Sifted | Medium |
 | Aira €150M equity, €200M debt, €145M equity | BeBeez, Sifted | Medium |
-| Checkatrade, Bark, Homedeal | none found | **Not disclosed — do not invent** |
+| Checkatrade, Bark, Homedeal | none found | Shown as "not disclosed" |
 | NL renovation market €22bn | EIB | Medium — 2023 figure, refresh if possible |
 | 200k+ home transactions/year NL | CBS | High |
 
-**Before this goes out:** the three "low/not disclosed" rows either get a verified figure or
-come out of the chart. An analyst at a fund with Procore and Cemex as LPs will check the ones
-that look convenient.
+**Settled 3 August 2026.** Unverifiable figures removed rather than estimated. Angi's numbers
+come from its own filings, installer funding from trade press, Thumbtack and Houzz from
+PitchBook and Tracxn with attribution. Privately held marketplaces say "not disclosed", and the
+chapter carries a note explaining where each class of number comes from. That note is worth more
+than the missing revenue lines: it shows we know which of our own numbers are soft.

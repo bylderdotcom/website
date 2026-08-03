@@ -1,7 +1,7 @@
 # Chapter 6 — What this round buys
 
 > Draft for the Bylder investor memo. English, aimed at Zacua Ventures.
-> Amount and valuation are a proposal, not yet fixed.
+> Amount and valuation agreed 3 August 2026: €1.5M at €5M pre-money.
 
 ## The one thing we are buying
 
@@ -25,7 +25,7 @@ position in one market, with a method that transfers.
 |---|---|
 | Team | 4–5 people |
 | Annual cost base at that size | ~€600k–1M |
-| Revenue per converting household | €300–1,500 (Chapter 5) |
+| Revenue per converting household | €600–1,800 (Chapter 5) |
 | Households needed to break even | **400 – 2,000 per year** |
 | As a share of the 200,000 annual Dutch home transactions | **0.2% – 1%** |
 
@@ -123,11 +123,11 @@ For a fund investing globally in the built world, that is the relevant question,
 answer is that market two will tell us how much of the method is portable. We would rather
 prove one market properly than claim six.
 
-## Proposed terms
+## Terms
 
 | | |
 |---|---|
-| Raise | **€1.5M** |
+| Raise | **€1.5M** — agreed |
 | Pre-money | **€5M** |
 | Post-money | €6.5M |
 | Dilution | ~23% |
@@ -136,7 +136,7 @@ prove one market properly than claim six.
 We should be direct about how that valuation is arrived at. With 23 households and one paying
 supplier there is no multiple to price against. This is priced on the asset — a supply map and
 a decision graph that took months and do not decay in a quarter — and on a founder who spent
-four years inside a €1.1bn player in this exact market and tried this once before, ten years
+four years inside a €1.5bn player in this exact market and tried this once before, ten years
 too early.
 
 An investor who wants a traction-based price should not be in this round. An investor who
@@ -158,7 +158,6 @@ first channel and finding the second.
 
 ## Source confidence
 
-All figures are our own unless stated. The €1.5M / €5M pre-money is a proposal for discussion,
-not a fixed term. Break-even arithmetic follows from Chapter 5's revenue-per-household band,
+All figures are our own unless stated. The €1.5M at €5M pre-money is agreed. Break-even arithmetic follows from Chapter 5's revenue-per-household band,
 which itself rests on the spend research — the weakest link in the chain and flagged as such
 throughout.

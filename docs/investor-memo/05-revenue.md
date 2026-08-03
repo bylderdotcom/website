@@ -116,6 +116,26 @@ sequence and no proof to point at.
 We are not presenting that as traction. We are presenting it as the only conversion data we
 have, and it was gathered before we had anything to show a supplier.
 
+## The one line that looks like a contradiction
+
+Our price page also carries brand placement, from €295 per month per category, and this chapter
+says ranking is not for sale. Both are true, and the distinction is worth stating before it is
+spotted.
+
+**Ranking is who we recommend. Brand placement is who is visible.** A manufacturer that sells
+through dealers and stores cannot be recommended to a household in the first place — it does not
+sell to them. There is no match to make, so there is no ranking to buy. What such a brand can do
+is be present where the household is orienting itself, as it advertises anywhere else.
+
+The constraint that makes this hold is testable, and we hold ourselves to it: **brand placement
+never appears inside the advice flow, and never changes which supplier or product is recommended
+to a household.** It sits alongside the recommendation, never in it. The same boundary governs
+display advertising on our sister platform in electric mobility, where the independence charter
+is published.
+
+If we ever cannot draw that line cleanly for a given placement, the placement does not happen.
+That is a real constraint on our own revenue, and it is the reason the line can exist at all.
+
 ## The sequence, and where it ends
 
 The annual fee carries revenue while attribution fills. As we see more of what actually follows
@@ -147,7 +167,8 @@ Chapter 6.
 | 976 projects / 38,957 homes | Our monitor, published | High |
 | €50k–100k household spend | See 01a-spend-research.md — built from published cost components, cross-checked against lender co-financing limits | Medium |
 
-**Settled 3 August 2026.** Presented as a decision, not a direction. The three bands are live
-on bylder.com/prijzen beside the annual fee, so the claim is checkable. Remaining question for
-the room: brand placement at €295/month sits on the same price page while this chapter says
-ranking is not for sale. Defend it explicitly as outside the advice flow, or drop the line.
+**Settled 3 August 2026.** Presented as a decision, not a direction; the three bands are live on
+bylder.com/prijzen beside the annual fee, so the claim is checkable. Brand placement stays, with
+the ranking-versus-visibility distinction written out above — Daniel's reasoning: brands that
+sell only through dealers cannot be recommended in the first place, so there is no ranking for
+them to buy.

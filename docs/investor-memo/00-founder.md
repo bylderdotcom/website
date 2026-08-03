@@ -3,9 +3,9 @@
 > Draft for the Bylder investor memo. English, first person, aimed at Zacua Ventures.
 > Kept deliberately short: a foreword earns the right to the rest, it does not pre-empt it.
 
-I spent four years, from 2012 to 2016, inside **De Mandemakers Groep** — at the time a
-€1.1 billion kitchen, bathroom and furniture group with around 5,500 people and more than two
-hundred stores. That is where I learned how this money actually moves. Not from a market
+I spent four years, from 2012 to 2016, inside **De Mandemakers Groep** —
+the Dutch kitchen, bathroom and furniture group that today turns over **€1.5 billion** across
+more than two hundred stores. That is where I learned how this money actually moves. Not from a market
 report: from the inside of the largest player in it.
 
 What I saw was that the spending is enormous and the buyer is alone. A household walks into a
@@ -16,9 +16,9 @@ Nobody sees the programme.
 ## The first attempt, in 2016
 
 So in 2016 I tried to build what I would now call a solution marketplace. Two of us put in
-**€150,000**. The pitch video from that year still exists, and it describes more or less what
-this memo describes: bring the household the whole set of choices, and connect it to the people
-who can deliver them.
+**€150,000**. [The pitch video from that year still exists](https://drive.google.com/file/d/1TDl4so8W7bnd8W8-1sg9twLNtrb94eeU/view?usp=sharing) — and it describes, ten years
+early, more or less what this memo describes: bring the household the whole set of choices, and
+connect it to the people who can deliver them.
 
 It did not work, and the reasons were not subtle. Building it meant people — editors,
 advisors, coordinators — and that made it capital intensive from day one. We stayed too small
@@ -34,7 +34,8 @@ you know they exist, the money that goes out in eighteen months.
 
 While doing it, I used Bylder for something small. I collected discount vouchers at furniture
 and interior stores — for myself and for my neighbours in the same project — and I asked each
-store a fixed fee to take part. It generated real revenue.
+store a fixed fee to take part. Stores paid. I did not keep proper books on it, so I will not
+put a number on it here.
 
 That is a modest anecdote and I am not going to inflate it. But look at what it was: **a group
 of households in one project, all buying at the same time, and suppliers paying to reach
@@ -84,12 +85,11 @@ I would rather you read that from me than find it.
 
 | Claim | Source | Confidence |
 |---|---|---|
-| De Mandemakers Groep ~€1.1bn revenue, ~5,500 staff during 2012–2016 | Wikipedia / trade press (2013 figure) | Medium — **confirm the year you want to cite** |
-| DMG today ~€1.5bn, 200+ stores, 6,000+ staff | Trade press 2025 | Medium |
+| DMG turns over ~€1.5bn across 200+ stores | Trade press 2025 | Medium — cited as today's figure, tenure stated separately |
 | €150,000 own capital in the 2016 attempt | Founder | High — ours |
-| 2016 pitch video exists | Founder | **Find it — this is evidence, not colour.** A dated video showing the same idea ten years early is the single cheapest piece of credibility in this memo. |
-| Voucher revenue from own new-build project | Founder | High — **quantify it.** Number of stores, fee per store, number of households reached. Even small numbers are stronger than "some revenue". |
+| 2016 pitch video | [Linked](https://drive.google.com/file/d/1TDl4so8W7bnd8W8-1sg9twLNtrb94eeU/view?usp=sharing) | High — **check the Drive sharing setting is "anyone with the link"** |
+| Voucher revenue from own new-build project | Founder | Qualitative — no books were kept, and the memo says so |
 
-**Two things to get before Thursday.** The 2016 pitch video, and the actual numbers from the
-voucher episode. Both convert a good story into evidence, and an analyst treats those very
-differently.
+**Settled 3 August 2026.** Video linked. Mandemakers cited at €1.5bn, phrased as what the group
+turns over today with the 2012–2016 tenure stated separately, so both halves are true. The
+voucher episode stays qualitative because the books were never kept — and the memo says so.
