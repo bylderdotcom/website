@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Bylder — Investor Memo</title>
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Confidential.">
+<style>
+  :root{
+    --paper:#F5F0E8; --ink:#1A1208; --body:#3D2E1E;
+    --muted:rgba(61,46,30,0.60); --faint:rgba(61,46,30,0.42);
+    --green:#3D5A3E; --green-soft:rgba(61,90,62,0.09);
+    --rule:rgba(61,46,30,0.13); --card:#FFFDF9;
+    --flag:#7A5C2E; --flag-bg:rgba(196,150,60,0.13); --flag-rule:rgba(122,92,46,0.28);
+    --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Source Serif 4",serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#17130E; --ink:#F2EBDF; --body:#DCD3C4;
+      --muted:rgba(220,211,196,0.60); --faint:rgba(220,211,196,0.40);
+      --green:#8FB58F; --green-soft:rgba(143,181,143,0.11);
+      --rule:rgba(220,211,196,0.15); --card:#1E1913;
+      --flag:#D9B877; --flag-bg:rgba(217,184,119,0.10); --flag-rule:rgba(217,184,119,0.30);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#17130E; --ink:#F2EBDF; --body:#DCD3C4;
+    --muted:rgba(220,211,196,0.60); --faint:rgba(220,211,196,0.40);
+    --green:#8FB58F; --green-soft:rgba(143,181,143,0.11);
+    --rule:rgba(220,211,196,0.15); --card:#1E1913;
+    --flag:#D9B877; --flag-bg:rgba(217,184,119,0.10); --flag-rule:rgba(217,184,119,0.30);
+  }
+  :root[data-theme="light"]{
+    --paper:#F5F0E8; --ink:#1A1208; --body:#3D2E1E;
+    --muted:rgba(61,46,30,0.60); --faint:rgba(61,46,30,0.42);
+    --green:#3D5A3E; --green-soft:rgba(61,90,62,0.09);
+    --rule:rgba(61,46,30,0.13); --card:#FFFDF9;
+    --flag:#7A5C2E; --flag-bg:rgba(196,150,60,0.13); --flag-rule:rgba(122,92,46,0.28);
+  }
+
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--body);font-family:var(--serif);
+       line-height:1.68;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px 96px}
+  @media(max-width:600px){body{font-size:16px}.wrap{padding:0 18px 64px}}
+
+  h1,h2,h3,.label,.toc,.masthead,table,.stat{font-family:var(--sans)}
+  h1{font-size:clamp(2rem,5vw,2.9rem);line-height:1.1;letter-spacing:-0.025em;
+     color:var(--ink);font-weight:800;text-wrap:balance;margin:0 0 14px}
+  h2{font-size:clamp(1.3rem,3vw,1.6rem);line-height:1.22;letter-spacing:-0.018em;
+     color:var(--ink);font-weight:800;text-wrap:balance;margin:0}
+  h3{font-size:1.02rem;color:var(--ink);font-weight:700;letter-spacing:-0.008em;margin:0}
+  p{margin:0}
+  strong{color:var(--ink);font-weight:600}
+  a{color:var(--green)}
+
+  .label{font-family:var(--mono);font-size:11px;letter-spacing:.13em;
+         text-transform:uppercase;color:var(--green);font-weight:500}
+
+  header.masthead{padding:64px 0 30px;border-bottom:1px solid var(--rule);
+                  display:flex;flex-direction:column;gap:16px}
+  .conf{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;
+        font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+        color:var(--flag);background:var(--flag-bg);border:1px solid var(--flag-rule);
+        padding:6px 12px;border-radius:999px}
+  .dek{font-size:1.08rem;color:var(--muted);max-width:60ch;margin:0}
+  .meta{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.02em}
+
+  nav.toc{margin:36px 0 0;padding:20px 0;border-bottom:1px solid var(--rule);
+          display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:2px 26px}
+  nav.toc a{display:flex;gap:12px;padding:6px 0;text-decoration:none;color:var(--body);
+            font-size:14px;line-height:1.4;border-radius:4px}
+  nav.toc a:hover{color:var(--green)}
+  nav.toc a:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+  nav.toc .n{color:var(--green);display:flex;align-items:center;padding-top:1px}
+  nav.toc .n svg.ic{width:16px;height:16px}
+
+  section.ch{padding:56px 0 0;display:flex;flex-direction:column;gap:22px}
+  section.ch + section.ch{border-top:1px solid var(--rule);margin-top:44px}
+  .chhead{display:flex;flex-direction:column;gap:9px}
+
+  ul,ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:9px}
+  li{padding-left:2px}
+
+  blockquote{margin:0;padding:18px 22px;background:var(--green-soft);
+             border-left:3px solid var(--green);border-radius:0 8px 8px 0;
+             font-size:1.05rem;color:var(--ink)}
+  blockquote p + p{margin-top:10px}
+
+  .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;
+      border:1px solid var(--rule);border-radius:11px;background:var(--card)}
+  table{width:100%;border-collapse:collapse;font-size:14px;
+        font-variant-numeric:tabular-nums;min-width:min(100%,420px)}
+  th,td{text-align:left;padding:9px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font-weight:700;color:var(--ink);font-size:12px;letter-spacing:.03em;
+     text-transform:uppercase;white-space:nowrap}
+  tbody tr:last-child td{border-bottom:none}
+  td.num,th.num{text-align:right;white-space:nowrap}
+  tfoot td{font-weight:700;color:var(--ink);border-top:2px solid var(--rule)}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+         background:var(--rule);border:1px solid var(--rule);border-radius:11px;overflow:hidden}
+  .stat{background:var(--card);padding:16px 18px;display:flex;flex-direction:column;gap:3px}
+  .stat b{font-size:1.55rem;font-weight:800;color:var(--ink);letter-spacing:-0.02em;
+          font-variant-numeric:tabular-nums;line-height:1.1}
+  .stat span{font-size:12px;color:var(--muted);line-height:1.35}
+
+  .internal{border:1px dashed var(--flag-rule);background:var(--flag-bg);
+            border-radius:11px;padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+  .internal .label{color:var(--flag)}
+  .internal, .internal p, .internal li, .internal td{font-size:14px;color:var(--flag)}
+  .internal strong{color:var(--flag)}
+  .internal table{font-size:12.5px}
+  .internal .tw{border-color:var(--flag-rule);background:transparent}
+  .internal th{color:var(--flag);border-color:var(--flag-rule)}
+  .internal td{border-color:var(--flag-rule)}
+
+  .axes{font-family:var(--mono);font-size:11.5px;line-height:1.75;color:var(--body);
+        background:var(--card);border:1px solid var(--rule);border-radius:11px;
+        padding:18px;overflow-x:auto;white-space:pre}
+
+  footer{margin-top:64px;padding-top:26px;border-top:1px solid var(--rule);
+         font-family:var(--mono);font-size:11.5px;color:var(--faint);line-height:1.7}
+
+  svg.ic{width:1em;height:1em;flex:none;stroke:currentColor;fill:none;
+         stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .chhead .label{display:inline-flex;align-items:center;gap:8px}
+  .chhead .label svg.ic{width:15px;height:15px;stroke-width:1.7}
+  .iconlist{list-style:none;padding:0;display:flex;flex-direction:column;gap:14px}
+  .iconlist li{display:flex;gap:13px;padding:0;align-items:flex-start}
+  .iconlist svg.ic{width:19px;height:19px;color:var(--green);margin-top:4px}
+  .iconlist .t{display:flex;flex-direction:column;gap:2px}
+  .internal .label{display:inline-flex;align-items:center;gap:7px}
+  .internal .label svg.ic{width:14px;height:14px}
+  .stat .sh{display:flex;align-items:center;gap:6px;color:var(--green)}
+  .stat .sh svg.ic{width:14px;height:14px}
+
+  .summary{margin:34px 0 0;padding:26px 0 0;border-top:1px solid var(--rule);
+           display:flex;flex-direction:column;gap:20px}
+  .summary .one{font-size:1.14rem;color:var(--ink);line-height:1.55;max-width:62ch}
+  .figgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:1px;
+           background:var(--rule);border:1px solid var(--rule);border-radius:11px;overflow:hidden}
+  .fig{background:var(--card);padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+  .fig b{font-size:1.32rem;font-weight:800;color:var(--ink);letter-spacing:-0.02em;
+         font-variant-numeric:tabular-nums;line-height:1.1;font-family:var(--sans)}
+  .fig span{font-size:11.5px;color:var(--muted);line-height:1.35;font-family:var(--sans)}
+  .fig.thin b{color:var(--flag)}
+  .points{list-style:none;padding:0;display:flex;flex-direction:column;gap:11px}
+  .points li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.55}
+  .points svg.ic{width:17px;height:17px;color:var(--green);margin-top:4px;flex:none}
+  .points li.warn svg.ic{color:var(--flag)}
+  .ask{background:var(--green-soft);border:1px solid var(--rule);border-radius:11px;
+       padding:16px 20px;display:flex;flex-wrap:wrap;gap:8px 28px;align-items:baseline}
+  .ask .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+          color:var(--green);display:block;margin-bottom:2px}
+  .ask .v{font-family:var(--sans);font-size:1.02rem;font-weight:800;color:var(--ink);
+          font-variant-numeric:tabular-nums}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+<symbol id="ic-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M9 15l2 2 4-4"/></symbol>
+<symbol id="ic-map" viewBox="0 0 24 24"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 7 9 4v13"/></symbol>
+<symbol id="ic-layers" viewBox="0 0 24 24"><path d="M12 3 3 7.5l9 4.5 9-4.5L12 3Z"/><path d="m3 12.5 9 4.5 9-4.5M3 17l9 4.5 9-4.5"/></symbol>
+<symbol id="ic-graph" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M6.6 7.6 10.6 16M17.4 7.6 13.4 16M7.2 6h9.6"/></symbol>
+<symbol id="ic-euro" viewBox="0 0 24 24"><path d="M17 6.5A6.5 6.5 0 0 0 7.5 12 6.5 6.5 0 0 0 17 17.5M4 10.5h8M4 13.5h8"/></symbol>
+<symbol id="ic-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="ic-trend" viewBox="0 0 24 24"><path d="M3 19h18M6 15l4-5 3.5 3L20 6"/><path d="M20 10V6h-4"/></symbol>
+<symbol id="ic-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 3.5L16 11H5"/></symbol>
+<symbol id="ic-home" viewBox="0 0 24 24"><path d="M4 11.5 12 4l8 7.5"/><path d="M6.5 10.2V20h11v-9.8"/></symbol>
+<symbol id="ic-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a3.9 3.9 0 0 0 5 5l-8 8a2.5 2.5 0 0 1-3.5-3.5l8-8a3.9 3.9 0 0 0-1.5-1.5Z"/></symbol>
+<symbol id="ic-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+<symbol id="ic-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m6.5 6.5 11 11"/></symbol>
+<symbol id="ic-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 16.5h4"/></symbol>
+</defs></svg>
+
+<div class="wrap">
+
+<header class="masthead">
+  <span class="conf">Confidential · not for distribution</span>
+  <h1>The moment a household starts spending — and nobody is there.</h1>
+  <p class="dek">Bylder structures the €50,000–100,000 programme that follows buying a home, and delivers it to the market as specified demand rather than as leads.</p>
+  <p class="meta">Investor memo · Netherlands · draft of 2 August 2026 · prepared for Zacua Ventures</p>
+</header>
+
+<section class="summary" aria-label="Summary">
+  <p class="one">Roughly 200,000 Dutch households a year buy a home and then spend <strong>€50,000–100,000</strong> over the following eighteen months. Bylder structures that programme into dated, priced decisions — and delivers them to suppliers as <strong>specified demand rather than leads</strong>.</p>
+
+  <div class="figgrid">
+    <div class="fig"><b>200k</b><span>Households entering this moment each year</span></div>
+    <div class="fig"><b>976</b><span>New-build projects tracked, 38,957 homes</span></div>
+    <div class="fig"><b>25,697</b><span>Trade companies mapped and structured</span></div>
+    <div class="fig"><b>122</b><span>Decisions modelled across 25 rooms</span></div>
+    <div class="fig thin"><b>23</b><span>Households registered today</span></div>
+    <div class="fig thin"><b>1</b><span>Paying supplier today</span></div>
+  </div>
+
+  <ul class="points">
+    <li><svg class="ic"><use href="#ic-cal"/></svg><span><strong>The moment is knowable.</strong> Completion and transfer dates are published or contractual — this demand does not have to be found, it can be met.</span></li>
+    <li><svg class="ic"><use href="#ic-graph"/></svg><span><strong>We trade in decisions, not leads.</strong> A lead is a name and a phone number. A decision is a specification with a date, a budget and a deadline that expires.</span></li>
+    <li><svg class="ic"><use href="#ic-trend"/></svg><span><strong>The incumbent is dismantling its own model.</strong> Angi, parent of Werkspot, deliberately cut its lead volume 81% in 2025 to stop selling requests to whoever paid. We start where they are trying to arrive.</span></li>
+    <li class="warn"><svg class="ic"><use href="#ic-layers"/></svg><span><strong>The supply side is built; the demand side is not.</strong> Twenty-three households and one paying supplier, three months in. That asymmetry was deliberate — supply takes years to assemble, demand arrives on a schedule — and it is exactly what this round fixes.</span></li>
+    <li class="warn"><svg class="ic"><use href="#ic-flag"/></svg><span><strong>One assumption carries everything:</strong> reaching households at the moment of purchase at an acceptable cost. We cannot do that today — 108 organic clicks a month is the proof. Three candidate channels, no evidence yet for any of them.</span></li>
+  </ul>
+
+  <div class="ask">
+    <span><span class="k">Raise</span><span class="v">€1.5M</span></span>
+    <span><span class="k">Pre-money</span><span class="v">€5M</span></span>
+    <span><span class="k">Stage</span><span class="v">Pre-seed</span></span>
+    <span><span class="k">Break-even</span><span class="v">Year 3, at 2% of the market</span></span>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Chapters">
+  <a href="#f"><span class="n"><svg class="ic"><use href="#ic-clock"/></svg></span><span>Foreword: ten years, one idea</span></a>
+  <a href="#c1"><span class="n"><svg class="ic"><use href="#ic-cal"/></svg></span><span>The moment</span></a>
+  <a href="#c2"><span class="n"><svg class="ic"><use href="#ic-map"/></svg></span><span>The landscape</span></a>
+  <a href="#c3"><span class="n"><svg class="ic"><use href="#ic-layers"/></svg></span><span>What exists, and what does not</span></a>
+  <a href="#c4"><span class="n"><svg class="ic"><use href="#ic-graph"/></svg></span><span>How demand is formed</span></a>
+  <a href="#c5"><span class="n"><svg class="ic"><use href="#ic-euro"/></svg></span><span>How this makes money</span></a>
+  <a href="#c6"><span class="n"><svg class="ic"><use href="#ic-target"/></svg></span><span>What this round buys</span></a>
+  <a href="#c7"><span class="n"><svg class="ic"><use href="#ic-trend"/></svg></span><span>The five-year model</span></a>
+</nav>
+
+<!-- ══════ FOREWORD ══════ -->
+<section class="ch" id="f">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-clock"/></svg>Foreword</span>
+    <h2>Ten years, one idea, and a cost curve that finally moved</h2>
+  </div>
+
+  <p>I spent four years, from 2012 to 2016, inside <strong>De Mandemakers Groep</strong> — at the time a €1.1 billion kitchen, bathroom and furniture group with around 5,500 people and more than two hundred stores. That is where I learned how this money actually moves. Not from a market report: from inside the largest player in it.</p>
+
+  <p>What I saw was that the spending is enormous and the buyer is alone. A household walks into a kitchen showroom having already made six decisions it did not know it was making, and will make twenty more without anyone holding the sequence. Every party in that chain sees one slice. Nobody sees the programme.</p>
+
+  <h3>The first attempt, in 2016</h3>
+  <p>So in 2016 I tried to build what I would now call a solution marketplace. Two of us put in <strong>€150,000</strong>. The pitch video from that year still exists, and it describes more or less what this memo describes.</p>
+
+  <p>It did not work, and the reasons were not subtle. Building it meant people — editors, advisors, coordinators — and that made it capital intensive from day one. We stayed too small to grow organically, and we did not raise. The company stopped.</p>
+
+  <p>I kept the domain. For ten years.</p>
+
+  <h3>What changed, and how I found out</h3>
+  <p>In mid-2024 I bought a new-build home. It was handed over at the end of 2025, and I went through the entire programme myself: the extra-work deadlines, the choices that close before you know they exist, the money that goes out over eighteen months.</p>
+
+  <p>While doing it, I used Bylder for something small. I collected discount vouchers at furniture and interior stores — for myself and for my neighbours in the same project — and asked each store a fixed fee to take part. It generated real revenue.</p>
+
+  <blockquote><p>A modest anecdote, and I will not inflate it. But look at what it was: <strong>a group of households in one project, all buying at the same time, and suppliers paying to reach them.</strong> That is the entire thesis of this memo, executed by one person with a spreadsheet.</p></blockquote>
+
+  <h3>May 2026</h3>
+  <p>The plan arrived when I built the platform, in May 2026, with AI doing the work that used to require the team I could not afford in 2016.</p>
+
+  <p>The realisation was not that AI is useful. It was narrower: <strong>what I wanted to build ten years ago is now buildable at a fraction of the cost — and the same shift makes the incumbents attackable for the first time.</strong> In 2016 the legacy marketplaces were unassailable: they had the traffic, the sales forces and the balance sheets, and the only route in was to outspend them. That route is gone, and so is their protection.</p>
+
+  <p>The idea did not change. The cost of building it did, and so did the position of the people already there.</p>
+
+</section>
+
+<!-- ══════ 01 ══════ -->
+<section class="ch" id="c1">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-cal"/></svg>Chapter 01</span>
+    <h2>The moment</h2>
+  </div>
+
+  <p>Roughly <strong>200,000 homes change hands in the Netherlands each year</strong>. In the first two months of 2025 alone, 34,263 were sold — 21% more than a year earlier. On top of that, <strong>69,000 new-build homes</strong> were completed in 2025.</p>
+
+  <p>Almost none of those households stop at the purchase. What follows is a fourteen-to-twenty-four month programme of decisions: flooring, kitchen, bathroom, window treatment, insulation, heating, electrics, garden. Individually mundane. Together, for most households, the second-largest financial commitment of their lives after the mortgage itself.</p>
+
+  <div class="stats">
+    <div class="stat"><b>€22bn</b><span>Dutch renovation and home-improvement market, per year</span></div>
+    <div class="stat"><b>€12.1bn</b><span>Housing-association improvement spend, 2024</span></div>
+    <div class="stat"><b>€97bn</b><span>Total construction output, rising to €107bn by 2029</span></div>
+  </div>
+
+  <p>We are not claiming all of that flows through us, and an honest reading of the arithmetic matters more here than a large number. What we claim is narrower and firmer:</p>
+
+  <blockquote><p>A defined group of roughly 200,000 households per year enters a spending programme of <strong>€50,000 to €100,000</strong> at a moment that is knowable in advance — rising well beyond that where a full renovation or extension is involved.</p></blockquote>
+
+  <h3>The moment is knowable — that is the unusual part</h3>
+  <p>Most consumer demand is invisible until someone searches. This demand is not. A new-build project has a completion date. A purchase has a transfer date. Both are published or contractually fixed. We currently track <strong>976 active new-build projects covering at least 38,957 homes</strong>, with location, size and — where disclosed — expected completion. That is not a forecast. It is a schedule.</p>
+
+  <p>Knowing <em>when</em> a household will need to decide is worth more than knowing <em>that</em> it might. It is the difference between advertising and arriving.</p>
+
+  <h3>Today the household is its own general contractor</h3>
+  <p>It does not know which decisions are coming, in what order, or which ones have deadlines that cannot be reopened. Extra-work options in a new-build contract close weeks before most buyers realise. Bathroom layout is fixed before the tiles are chosen. Conduit for future wiring costs almost nothing during construction and thousands afterwards.</p>
+
+  <p>So the household improvises: a search here, three quotes there, a neighbour's recommendation, a showroom on Saturday. Every supplier it meets sees one slice and sells into it. The existing marketplaces do not solve this because they are built to be <em>found</em>, not to <em>arrive</em>. They wait for a household that already knows it needs a plasterer. By then the sequence is set and the expensive mistakes are made.</p>
+
+  <h3>Why this is possible now</h3>
+  <p><strong>AI collapsed the cost of structuring a decision.</strong> Turning a specific home — its drawings, its contract, its extra-work list — into a dated, priced sequence used to require a person. That is what makes serving this moment economically possible at all.</p>
+
+  <p><strong>Policy has put hard dates on the calendar.</strong> The Dutch net-metering scheme for solar does not taper — it <strong>ends outright on 1 January 2027</strong>, replaced by a feed-in tariff of at least 50% of the standard rate until 2030. Every household with panels, or considering them, now faces a dated decision with a calculable consequence.</p>
+
+  <p>Deadlines create decisions. Decisions are what we structure.</p>
+
+  <h3>Where this fits Zacua's thesis</h3>
+  <ul class="iconlist">
+    <li><svg class="ic"><use href="#ic-map"/></svg><span class="t"><strong>Urbanization</strong><span>976 tracked projects, 38,957 homes, mapped by municipality and completion year, published as a public counting.</span></span></li>
+    <li><svg class="ic"><use href="#ic-clock"/></svg><span class="t"><strong>Sustainability</strong><span>The net-metering cliff, heat pumps and insulation are exactly the decisions households postpone because nobody tells them when the deadline is.</span></span></li>
+    <li><svg class="ic"><use href="#ic-tool"/></svg><span class="t"><strong>Productivity</strong><span>A trade that receives a specification with a room, a spec, a budget and a date does not quote blind.</span></span></li>
+  </ul>
+
+  <h3>What we are not claiming</h3>
+  <p>That we have this demand today. We do not. Chapter 3 sets out exactly what exists — a mapped supply side and a demand side of 23 accounts — and why we built it in that order.</p>
+
+</section>
+
+<!-- ══════ 02 ══════ -->
+<section class="ch" id="c2">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-map"/></svg>Chapter 02</span>
+    <h2>The landscape</h2>
+  </div>
+
+  <p>Angi Inc (Nasdaq) is the global leader in home-services lead generation and the parent of <strong>Instapro Group</strong> — Amsterdam-headquartered, founded 2021, operating Werkspot (NL), MyBuilder (UK), MyHammer (DE/AT), Travaux (FR) and Instapro (IT). One model across six European markets: the tradesperson pays per lead.</p>
+
+  <p>That model is being repriced in public.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Angi Inc</th><th class="num">Figure</th></tr></thead>
+    <tbody>
+      <tr><td>Q1 2025 revenue</td><td class="num">$246M — down 19% YoY</td></tr>
+      <tr><td>Total shareholder return, 3 years</td><td class="num">−78%</td></tr>
+      <tr><td>Network Service Requests after its own policy change</td><td class="num">−67%</td></tr>
+      <tr><td>Leads</td><td class="num">−81%</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>The decline is not an accident. In January 2025 Angi moved to <em>homeowner choice</em>: it stopped selling a request to whichever pro paid, and let the homeowner pick instead. Lead volume fell 81%. In the same period homeowner NPS rose by more than 30 points, churn fell by over 30%, and repeat rates turned positive for the first time.</p>
+
+  <blockquote><p>The category leader has concluded that selling leads destroys the marketplace, and is absorbing an 81% volume loss to get out of it. <strong>Bylder starts where Angi is painfully trying to arrive.</strong></p></blockquote>
+
+  <h3>Who is in this market</h3>
+  <p><strong>Lead-generation marketplaces</strong> — sell access to a request.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Company</th><th>Market</th><th>Scale</th></tr></thead>
+    <tbody>
+      <tr><td>Angi Inc</td><td>US</td><td>$246M Q1'25 revenue, −19%</td></tr>
+      <tr><td>Instapro Group</td><td>NL, UK, DE, AT, FR, IT</td><td>The European incumbent we displace</td></tr>
+      <tr><td>Thumbtack</td><td>US</td><td>$400M ARR, $3.2B valuation, $772M raised</td></tr>
+      <tr><td>Bark · Checkatrade · Homedeal</td><td>UK, NL</td><td>Not disclosed</td></tr>
+    </tbody>
+  </table></div>
+
+  <p><strong>Inspiration and product</strong> — sell attention. Houzz has raised $614M. Rich on taste, absent on sequence: it knows what a kitchen should look like, not when your kitchen choice closes.</p>
+
+  <p><strong>Vertical installers</strong> — sell the outcome, but own the execution.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Company</th><th>Market</th><th>Capital raised</th></tr></thead>
+    <tbody>
+      <tr><td>Enpal</td><td>DE</td><td>€810M in 2025 alone; €2.4bn valuation</td></tr>
+      <tr><td>1Komma5°</td><td>DE + 10 markets</td><td>€430M+, plus €150M pre-IPO</td></tr>
+      <tr><td>Aira</td><td>SE</td><td>€150M equity + €200M debt + €145M equity</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>These three prove both the appetite and the cost: together, well over €1.5bn to own installation in <strong>one or two product categories</strong>.</p>
+
+  <h3>The two axes that matter</h3>
+  <p><strong>When do you arrive?</strong> Late, when the household has already formulated a request. Or early, at purchase — before the question exists. <strong>What do you sell?</strong> Access to a request, or the resolved outcome.</p>
+
+  <div class="axes">                    SELLS THE OUTCOME
+                            ▲
+   Enpal · 1Komma5° · Aira  │        ← the open seat
+   (one category,           │           (Bylder)
+    €1.5bn+ of capital)     │
+  ──────────────────────────┼──────────────────────────▶
+  ARRIVES LATE              │             ARRIVES EARLY
+  (request already formed)  │      (at purchase, before
+                            │       the question exists)
+   Angi · Instapro          │        Houzz
+   Thumbtack · Bark         │        (inspiration only —
+   Checkatrade · Homedeal   │         no decision structure)
+                            ▼
+                 SELLS ACCESS TO A REQUEST</div>
+
+  <p>The upper-right quadrant is empty in Europe. Not because nobody thought of it, but because it requires two things at once: a structured model of what a home needs, and presence at the moment of purchase. The vertical installers have the outcome but bought it with capital, in one category. The marketplaces have the breadth but arrive after the decision is made.</p>
+
+  <h3>What we do differently</h3>
+  <ul class="iconlist">
+    <li><svg class="ic"><use href="#ic-cal"/></svg><span class="t"><strong>We arrive before the question exists.</strong><span>Handover and completion dates are knowable — we track 976 projects covering 38,957 homes.</span></span></li>
+    <li><svg class="ic"><use href="#ic-graph"/></svg><span class="t"><strong>We trade in decisions, not leads.</strong><span>A lead is a name and a phone number. A decision is a specification with a date and a budget.</span></span></li>
+    <li><svg class="ic"><use href="#ic-ban"/></svg><span class="t"><strong>We do not sell position.</strong><span>Ranking is not for sale, at any price. Revenue comes from the transaction, not the listing — which is what survives both ranking-transparency regulation and AI assistants that route around paid placement.</span></span></li>
+    <li><svg class="ic"><use href="#ic-tool"/></svg><span class="t"><strong>We install nothing.</strong><span>No crews, no vans, no inventory.</span></span></li>
+  </ul>
+
+  <h3>The long-term claim</h3>
+  <p>As households increasingly ask an AI assistant rather than a search box, the party holding a structured, current model of what a home needs — and what those decisions cost and when they close — becomes the layer the assistant queries. Directories are summarised away. A decision graph is not: it is the answer.</p>
+
+</section>
+
+<!-- ══════ 03 ══════ -->
+<section class="ch" id="c3">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-layers"/></svg>Chapter 03</span>
+    <h2>What exists, and what does not</h2>
+  </div>
+
+  <p>Bylder started in <strong>May 2026</strong>. Three months. This chapter states precisely what that bought, and precisely what it did not — because the asymmetry is the point, not something to work around.</p>
+
+  <h3>The supply side is mapped</h3>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>Trade companies, structured, across 8 trades</td><td class="num"><strong>25,697</strong></td></tr>
+      <tr><td>Retail, interior and design businesses, Rotterdam region</td><td class="num"><strong>1,718</strong> (1,226 with contact address)</td></tr>
+      <tr><td>Active new-build projects tracked</td><td class="num"><strong>976</strong></td></tr>
+      <tr><td>Homes covered by those projects</td><td class="num"><strong>38,957</strong></td></tr>
+      <tr><td>Residential spaces modelled, with decisions and costs</td><td class="num"><strong>25</strong></td></tr>
+      <tr><td>Knowledge base — 221 articles, 888 words average</td><td class="num"><strong>91% unique</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>The demand side is not</h3>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>Registered households</td><td class="num"><strong>23</strong></td></tr>
+      <tr><td>Of which linked to a specific new-build project</td><td class="num">11</td></tr>
+      <tr><td>Tenders placed</td><td class="num"><strong>0</strong></td></tr>
+      <tr><td>Paying consumer accounts</td><td class="num">0 — free by design</td></tr>
+      <tr><td>Paying business participants</td><td class="num"><strong>1</strong></td></tr>
+      <tr><td>Organic search clicks per month, whole site</td><td class="num"><strong>108</strong>, average position 29.6</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>One paying customer. Twenty-three households. We are not going to dress that up.</p>
+
+  <h3>Why we built it in this order</h3>
+  <p>Two-sided markets fail on whichever side is harder to assemble. For us that is supply: 25,697 trade companies with structured service data, coverage areas and ratings is not something you buy, and not something a competitor assembles in a quarter. Demand, by contrast, arrives at a predictable moment — 200,000 households a year, on dates we can already see.</p>
+
+  <p>So we built the side that takes years, first. What this round buys is the side that takes months.</p>
+
+  <h3>What we got wrong, and what we did about it</h3>
+  <p>The original distribution thesis was volume: publish a page for every trade company in every town, and let search do the rest. By July we had <strong>56,649 URLs</strong>. In July we measured it properly for the first time, across a sample of the 14,191 indexable company profiles:</p>
+
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>Unknown to Google</td><td class="num"><strong>55%</strong></td></tr>
+      <tr><td>Discovered, never crawled</td><td class="num"><strong>37.5%</strong></td></tr>
+      <tr><td>Actually indexed</td><td class="num"><strong>7.5%</strong></td></tr>
+      <tr><td>Impressions in a month, all 14,191 pages</td><td class="num"><strong>8</strong></td></tr>
+      <tr><td>Clicks</td><td class="num"><strong>0</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <p>Then we measured why. Each profile carried roughly 527 visible words, of which <strong>67–70% was identical</strong> to another profile in the same trade. The knowledge base ran at 91% unique — and was three times better indexed despite being weeks old rather than months.</p>
+
+  <blockquote><p>On 31 July we removed all 25,697 company profiles from the index and emptied them from every sitemap. A quarter of the site's URLs, switched off in one commit, because the data said they were consuming crawl budget the rest of the site needed.</p></blockquote>
+
+  <p>Two things follow. <strong>First, the asset was never the pages.</strong> It is the structured data underneath them — the trades, the services, the coverage areas, the 25 modelled rooms with their decisions and deadlines. The decision graph survives the pages being wrong.</p>
+
+  <p><strong>Second, we can tell.</strong> We built the measurement apparatus before we needed it, and when it returned an inconvenient answer we followed it within a day. A company that publishes 56,649 pages and never measures them is a different risk than one that measures and cuts.</p>
+
+  <h3>What is built beyond content</h3>
+  <ul>
+    <li><strong>The home file</strong> — drawings read automatically into surfaces and quantities, extra-work lists, permit dossiers, warranty items.</li>
+    <li><strong>The tender loop</strong> — a request pre-filled from the household's own file; matching trades respond with a proposal benchmarked against our price data.</li>
+    <li><strong>The participant layer</strong> — self-service onboarding, vouchers, payment, moderation.</li>
+    <li><strong>The measurement layer</strong> — Search Console integration, a claim checker verifying page, metadata and structured data assert the same thing, and 21 scheduled processes keeping catalogue and pricing current.</li>
+    <li><strong>The public counting</strong> — our new-build completion monitor, published openly with its method.</li>
+  </ul>
+</section>
+
+<!-- ══════ 04 ══════ -->
+<section class="ch" id="c4">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-graph"/></svg>Chapter 04</span>
+    <h2>How demand is formed before it reaches the market</h2>
+  </div>
+
+  <p>Every marketplace in Chapter 2 trades in the same unit: a <strong>lead</strong>. A household that has already worked out what it wants, raising its hand. We trade in a different unit: a <strong>decision</strong>. A specific question, attached to a specific room, in a specific home, closing on a specific date, worth a specific range.</p>
+
+  <p>A lead is what remains after the household has done the hard part alone. A decision is the hard part, captured while it is still open.</p>
+
+  <h3>One decision, worked through</h3>
+  <p>A real entry from our ontology — the utility room, and the first decision in it:</p>
+
+  <blockquote><p><strong>"Does the washing machine go here, or in the bathroom?"</strong></p><p>This is the decision everything else hangs on. A washing set-up needs water, a drain, an earthed circuit and ventilation. Moving it after handover means opening walls.</p></blockquote>
+
+  <p>What that single question triggers in our model:</p>
+
+  <div class="tw"><table>
+    <tbody>
+      <tr><td><strong>Trades</strong></td><td>plumber, electrician, ventilation specialist, heat-pump installer, resin flooring, plasterer</td></tr>
+      <tr><td><strong>Extra-work items</strong> that expire at the contractual deadline</td><td>sockets, three-phase power, ventilation, outdoor tap, spare conduit</td></tr>
+      <tr><td><strong>Product categories</strong></td><td>cabinets, vinyl flooring, lighting, doors</td></tr>
+      <tr><td><strong>Dependency</strong></td><td>the heat pump's indoor unit usually sits in the same room — clearance, noise, heat</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>One question. Six trades, five extra-work items that expire, four product categories, and a physical dependency on the heating system. The household does not know any of this. It finds out when the wall is already closed.</p>
+
+  <h3>The graph</h3>
+  <p>The model currently holds <strong>25 residential spaces and 122 decisions</strong>, each carrying the same structure: phase, trades, expiring extra-work, product categories, typical cost, common mistakes. It is not content — content is what we render from it. The graph feeds the pages, the AI assistant, the tools and the matching from a single source.</p>
+
+  <h3>Where the inputs come from</h3>
+  <ul>
+    <li><strong>The date</strong> — 976 tracked projects with location, size and expected completion.</li>
+    <li><strong>The home</strong> — drawings read into surfaces and quantities; extra-work list and permit dossier alongside.</li>
+    <li><strong>The household's own correction</strong> — we publish an estimate and invite correction from the contract. That correction is the reason to create an account, and it improves the model for everyone else in the same project.</li>
+  </ul>
+
+  <h3>What comes out</h3>
+  <p>The household receives a counting-down list: <em>in the next fourteen months, 23 decisions; four close before handover; here is what each is likely to cost.</em></p>
+
+  <p>The supply side receives something no lead-generation platform can produce:</p>
+
+  <blockquote><p>Washing-machine connection, utility room, requires earthed circuit and mechanical ventilation, decision closes 14 March, budget €800–1,400, postcode 3012 — <strong>and 81 other households in this project face the same decision this quarter.</strong></p></blockquote>
+
+  <p>That final clause changes the economics. A trade company is not being sold a lead; it is being shown a <strong>dated, specified, aggregated demand</strong> in a defined radius. Different conversation, different price, different close rate — and only possible because the project layer sits underneath.</p>
+
+  <h3>Why this is what steering actually means</h3>
+  <p>We do not decide who wins. What we decide is <strong>what the question is</strong> — which decisions surface, in what order, with what deadline and what budget band. By the time demand reaches the market it is already formed. Suppliers compete on fit against a specification we produced, rather than on who bought the lead fastest.</p>
+
+  <p>That is more influence over where €50,000 to €100,000 goes than any advertising position could buy, and it requires nobody to pay for placement.</p>
+
+  <h3>What it would take to copy</h3>
+  <p>The graph is domain work — written and maintained, not scraped. The project layer is national coverage kept current. The supply map took months and decays without continuous work. An incumbent could build all three — but an incumbent whose revenue comes from selling leads would be building the thing that makes its own product unnecessary. Which is exactly the position Angi is in, and why it took an 81% volume loss to start moving.</p>
+
+</section>
+
+<!-- ══════ 05 ══════ -->
+<section class="ch" id="c5">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-euro"/></svg>Chapter 05</span>
+    <h2>How this makes money</h2>
+  </div>
+
+  <p>An account is free, and stays free. That is structural, not a growth tactic to be reversed. The household is the inventory; charging it would suppress exactly what the supply side is paying to reach, and would put a price on advice that has to be seen as independent. Everything below is paid by the supply side.</p>
+
+  <h3>The model: annual participation plus a banded success fee</h3>
+  <p><strong>An annual participation fee</strong> keeps the supplier in the network — this is what a cold supplier will buy today, and one already has. <strong>A success fee per confirmed job</strong>, banded by size rather than taken as a percentage:</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Job size</th><th class="num">Success fee</th></tr></thead>
+    <tbody>
+      <tr><td>Under €2,500</td><td class="num">€99</td></tr>
+      <tr><td>€2,500 – €15,000</td><td class="num">€299</td></tr>
+      <tr><td>Above €15,000</td><td class="num">€599</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>We band rather than percentage for a specific reason: a percentage requires knowing the exact invoice amount, which we cannot verify and which the supplier has every incentive to understate. A band requires only knowing roughly how large the job was. More robust, easier to agree, and continuous with the €99 per realised match already charged in our prefab line. The supplier's annual total is capped, so exposure is predictable.</p>
+
+  <h3>How attribution works — we do not police it, we buy it</h3>
+  <p>This is the reason the whole category sells leads. Leads are trivially billable; outcomes are not. Our answer is that the household hands us the numbers because it gets something it wants in return.</p>
+
+  <p>It uploads the <strong>quote</strong> to have it checked against our price benchmark — <em>is this a reasonable price?</em> — a product that already exists. It uploads the <strong>invoice</strong> because that starts warranty tracking and completes the home file, which already links documents to warranty items and purchase dates. Attribution is a by-product of two services the household would want even if we charged nothing.</p>
+
+  <blockquote><p>Every confirmed job with an amount improves the price benchmark. A better benchmark makes the next household's quote-check more useful, which makes it more likely to upload, which improves the benchmark again. <strong>Attribution is not an invoicing mechanism — it is how the outcome data compounds.</strong></p></blockquote>
+
+  <h3>The arithmetic</h3>
+  <p>A household faces roughly 23 decisions. Assume we convert only a small minority into a confirmed job — two at the low end, five at the high end.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th></th><th class="num">Conservative</th><th class="num">Upper</th></tr></thead>
+    <tbody>
+      <tr><td>Confirmed jobs per household</td><td class="num">2</td><td class="num">5</td></tr>
+      <tr><td>Revenue per household</td><td class="num"><strong>€600</strong></td><td class="num"><strong>€1,800</strong></td></tr>
+      <tr><td>Take rate against €50,000–100,000 spend</td><td class="num"><strong>0.8%</strong></td><td class="num"><strong>2.4%</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <p>Low enough that no supplier disputes it and that it cannot distort our independence — but not trivial. Reaching a few percent of Dutch households that buy a home is the whole company; a smaller share than the incumbent already holds in its own category.</p>
+
+  <h3>Where we actually are</h3>
+  <p>One paying business participant. €79. Acquired from 58 outbound emails in a single city, six days after the first message — a 1.7% conversion on a cold approach with no follow-up and nothing to show. We present that not as traction but as the only conversion data we have, gathered before we had anything to point at.</p>
+
+  <p>The question this round answers is not whether suppliers will pay. One already did, on the weakest possible proposition. The question is whether the demand side fills.</p>
+
+</section>
+
+<!-- ══════ 06 ══════ -->
+<section class="ch" id="c6">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-target"/></svg>Chapter 06</span>
+    <h2>What this round buys</h2>
+  </div>
+
+  <p>The supply side is mapped. The decision graph is built. The software works on both sides. What does not exist is a demand channel — 108 organic clicks a month across the whole site, at average position 29.6. We published 56,649 pages to get there, and switched a quarter of them off because they were not working.</p>
+
+  <blockquote><p><strong>This round buys the demand side. Not more building.</strong></p></blockquote>
+
+  <h3>What "healthy in the Netherlands" means</h3>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>Team</td><td class="num">4–5 people</td></tr>
+      <tr><td>Annual cost base at that size</td><td class="num">~€600k–1M</td></tr>
+      <tr><td>Revenue per converting household</td><td class="num">€600–1,800</td></tr>
+      <tr><td>Households needed to break even</td><td class="num"><strong>400 – 2,000 per year</strong></td></tr>
+      <tr><td>As a share of 200,000 annual transactions</td><td class="num"><strong>0.2% – 1%</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Use of funds — €1.5M over 24 months</h3>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>Team — 4–5 FTE</td><td class="num">€900k</td></tr>
+      <tr><td>Demand acquisition — finding and scaling the channel</td><td class="num">€400k</td></tr>
+      <tr><td>Data, platform, infrastructure</td><td class="num">€150k</td></tr>
+      <tr><td>Buffer</td><td class="num">€150k</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>No inventory, no installation crews, no vans. The three European vertical installers in Chapter 2 raised over €1.5bn between them to own execution in one or two categories. We map execution across twenty-five rooms and never carry it.</p>
+
+  <h3>The gates before we scale</h3>
+  <p>Year one is a validation year. These are the conditions we hold ourselves to, and we would rather be held to them by an investor:</p>
+  <ul class="iconlist">
+    <li><svg class="ic"><use href="#ic-euro"/></svg><span class="t"><strong>Cost per acquired household below revenue per household</strong><span>Measured over a full quarter and split by channel. This is the assumption everything rests on.</span></span></li>
+    <li><svg class="ic"><use href="#ic-home"/></svg><span class="t"><strong>Households completing the decision list</strong><span>Not merely registering.</span></span></li>
+    <li><svg class="ic"><use href="#ic-check"/></svg><span class="t"><strong>Suppliers confirming outcomes</strong><span>If attribution does not work in practice, we learn it in month four rather than year three.</span></span></li>
+    <li><svg class="ic"><use href="#ic-tool"/></svg><span class="t"><strong>Supply-side retention after six months</strong><span>Not signatures.</span></span></li>
+    <li><svg class="ic"><use href="#ic-doc"/></svg><span class="t"><strong>The first paid transactions</strong><span>Through the tender loop.</span></span></li>
+  </ul>
+  <p>If these gates do not close, the correct move is to fix the funnel, not to open more markets.</p>
+
+  <h3>Why the Netherlands first, and why it transfers</h3>
+  <p>The Netherlands is where the data already is, and it is unusually suitable: new-build contracts have contractual extra-work deadlines, completion dates are published, and a hard national sustainability deadline arrives on 1 January 2027.</p>
+
+  <p>What transfers is not the data but the method. The decision graph is a model of a home, not a Dutch home: a utility room needs water, a drain, an earthed circuit and ventilation in any country. We would rather prove one market properly than claim six.</p>
+
+  <h3>Proposed terms</h3>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>Raise</td><td class="num"><strong>€1.5M</strong></td></tr>
+      <tr><td>Pre-money</td><td class="num"><strong>€5M</strong></td></tr>
+      <tr><td>Post-money</td><td class="num">€6.5M</td></tr>
+      <tr><td>Dilution</td><td class="num">~23%</td></tr>
+      <tr><td>Stage</td><td class="num">Pre-seed</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>We should be direct about how that valuation is arrived at. With 23 households and one paying supplier there is no multiple to price against. This is priced on the asset — a supply map and a decision graph that took months and do not decay in a quarter — and on a founder who spent four years inside a €1.1bn player in this exact market and tried this once before, ten years too early.</p>
+
+  <h3>What we depend on</h3>
+  <p><strong>One assumption carries everything: that we can reach households at the moment of purchase at an acceptable cost.</strong> Our current channel does not do this — 108 clicks a month is the proof. We have three candidate channels and no proof yet for any of them: the project layer as an entry point, direct partnerships with developers who already own the buyer relationship, and presence in AI answers rather than search results.</p>
+
+  <p>We would rather write that down than let it be discovered. It is why the first gate is a cost per acquired household, and why the round is sized to survive being wrong about the first channel and finding the second.</p>
+</section>
+
+<!-- ══════ 07 ══════ -->
+<section class="ch" id="c7">
+  <div class="chhead">
+    <span class="label"><svg class="ic"><use href="#ic-trend"/></svg>Chapter 07</span>
+    <h2>The five-year model</h2>
+  </div>
+
+  <p>Founder-built, internally consistent, not audited. Year 1 is the first full year after investment. Netherlands only — no second market is assumed anywhere in this model.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th></th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th class="num">Y4</th><th class="num">Y5</th></tr></thead>
+    <tbody>
+      <tr><td>Households acquired</td><td class="num">400</td><td class="num">1,500</td><td class="num">4,000</td><td class="num">7,500</td><td class="num">12,000</td></tr>
+      <tr><td>— share of the 200k market</td><td class="num">0.2%</td><td class="num">0.75%</td><td class="num">2.0%</td><td class="num">3.75%</td><td class="num">6.0%</td></tr>
+      <tr><td>Revenue per household</td><td class="num">€150</td><td class="num">€300</td><td class="num">€450</td><td class="num">€600</td><td class="num">€750</td></tr>
+      <tr><td>Household revenue</td><td class="num">€60k</td><td class="num">€450k</td><td class="num">€1.80M</td><td class="num">€4.50M</td><td class="num">€9.00M</td></tr>
+      <tr><td>Supplier revenue</td><td class="num">€18k</td><td class="num">€72k</td><td class="num">€150k</td><td class="num">€260k</td><td class="num">€390k</td></tr>
+      <tr><td>Developer revenue</td><td class="num">€20k</td><td class="num">€59k</td><td class="num">€118k</td><td class="num">€196k</td><td class="num">€294k</td></tr>
+      <tr><td><strong>Total revenue</strong></td><td class="num"><strong>€98k</strong></td><td class="num"><strong>€581k</strong></td><td class="num"><strong>€2.07M</strong></td><td class="num"><strong>€4.96M</strong></td><td class="num"><strong>€9.68M</strong></td></tr>
+      <tr><td>Team (FTE)</td><td class="num">4</td><td class="num">5</td><td class="num">8</td><td class="num">12</td><td class="num">18</td></tr>
+      <tr><td><strong>Total cost</strong></td><td class="num"><strong>€700k</strong></td><td class="num"><strong>€930k</strong></td><td class="num"><strong>€1.51M</strong></td><td class="num"><strong>€2.90M</strong></td><td class="num"><strong>€5.20M</strong></td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td>Result</td><td class="num">−€602k</td><td class="num">−€349k</td><td class="num">+€560k</td><td class="num">+€2.06M</td><td class="num">+€4.48M</td></tr>
+      <tr><td>Operating margin</td><td class="num">—</td><td class="num">—</td><td class="num">27%</td><td class="num">41%</td><td class="num">46%</td></tr>
+    </tfoot>
+  </table></div>
+
+  <div class="stats">
+    <div class="stat"><b>~€950k</b><span>Peak cumulative funding requirement, reached in year 2</span></div>
+    <div class="stat"><b>Year 3</b><span>Break-even, at 2% of the annual Dutch market</span></div>
+    <div class="stat"><b>€550k</b><span>Headroom in the round — the money that lets us be wrong about the first channel</span></div>
+  </div>
+
+  <h3>What the model deliberately does not contain</h3>
+  <p>No second market. No product-feed revenue, brand placement or commercial-property line, all of which exist on the price list today. No financing or insurance commission, the obvious adjacency. Adding any of them improves the picture; we would rather show a base case that stands without them.</p>
+
+  <p>It also assumes we never sell ranking. That is worth stating in a financial chapter, because it is a real cost: presence-based advertising against 12,000 households a year would be a meaningful revenue line, and we have foregone it by published constraint.</p>
+
+  <h3>The three numbers to attack</h3>
+  <p><strong>Revenue per household.</strong> The whole model turns on it. If attribution stays weak and it is €300 rather than €750, year 5 revenue falls from €9.68M to roughly €4.4M — still break-even, but a different company.</p>
+
+  <p><strong>Cost per acquired household.</strong> Not a line above, because we do not know it. Year 2 spends €200k to acquire 1,500 households — €133 each — against €300 of revenue. That ratio has to hold, and today we have no evidence either way. It is the assumption the entire round exists to test.</p>
+
+  <p><strong>The 6% share by year 5.</strong> Twelve thousand of 200,000 households, through a demand channel that currently does not exist. We would rather be judged on whether the channel appears in year 1 than on whether the year-5 number is right.</p>
+
+  <h3>What the category costs, for comparison</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Company</th><th>Capital raised</th><th>Model</th></tr></thead>
+    <tbody>
+      <tr><td>Enpal</td><td>€810M in 2025 alone</td><td>Owns installation, one category</td></tr>
+      <tr><td>1Komma5°</td><td>€430M+</td><td>Acquires installers</td></tr>
+      <tr><td>Aira</td><td>€150M equity + €200M debt</td><td>Owns installation</td></tr>
+      <tr><td>heycar</td><td>€300M — ceased 2025</td><td>Bought traffic to fight incumbents</td></tr>
+      <tr><td><strong>Bylder</strong></td><td><strong>€1.5M proposed</strong></td><td>Owns neither inventory nor installation</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>heycar is in this table for a reason: €300M spent buying the same traffic the incumbents already owned, and it closed. We are not proposing to repeat that.</p>
+</section>
+
+<footer>
+  Bylder — confidential investor document · working draft, 2 August 2026 · not for distribution<br>
+  Figures marked as ours are reproducible from our systems. External figures carry sources in the working files.
+</footer>
+
+</div>
+</body>
+</html>
