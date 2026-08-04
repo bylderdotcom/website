@@ -1,0 +1,555 @@
+{
+ "bijgewerkt": "2026-08-04",
+ "deelnemers": [
+  {
+   "naam": "Den Ouden Wonen",
+   "plaats": null,
+   "aanbod": "5%",
+   "cat": "Wandtegels",
+   "website": "https://denoudenwonen.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Groot in Vloeren",
+   "plaats": "Meppel",
+   "aanbod": "5%",
+   "cat": "PVC vloer",
+   "website": "https://www.grootinvloeren.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Tegeldepot Meppel",
+   "plaats": "Meppel",
+   "aanbod": "5%",
+   "cat": "Sanitair",
+   "website": "https://www.tegeldepot.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Van Ree Zonwering",
+   "plaats": "Amsterdam",
+   "aanbod": "5%",
+   "cat": "Zonwering",
+   "website": "https://www.vanreezonwering.com",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "HomingXL",
+   "plaats": null,
+   "aanbod": "5%",
+   "cat": "Meubelen",
+   "website": "https://homingxl.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "DDO Raamdecoratie",
+   "plaats": null,
+   "aanbod": "Korting",
+   "cat": "Raamdecoratie",
+   "website": "https://ddoraamdecoratie.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Jouwvloerenspecialist",
+   "plaats": "Harderwijk",
+   "aanbod": "10%",
+   "cat": "PVC vloer",
+   "website": "https://www.jouwvloerenspecialist.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "De Wehlse",
+   "plaats": "Arnhem",
+   "aanbod": "Korting",
+   "cat": "Meubelen",
+   "website": "https://dewehlse.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Laminaatpaleis",
+   "plaats": "Ede",
+   "aanbod": "Gratis service",
+   "cat": "PVC vloer",
+   "website": "https://www.laminaatpaleis.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Parketgigant",
+   "plaats": "Zaandam",
+   "aanbod": "25%",
+   "cat": "PVC vloer",
+   "website": "https://www.parketgigant.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Lameko Zonwering",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Zonwering",
+   "website": "https://lameko.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Floor-You PVC Vloeren",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "PVC vloer",
+   "website": "https://www.floor-you.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Adviba",
+   "plaats": "Nijmegen",
+   "aanbod": "10%",
+   "cat": "Zonwering",
+   "website": "https://www.adviba.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Berg & Berg Den Haag",
+   "plaats": "Den Haag",
+   "aanbod": "10%",
+   "cat": "Raamdecoratie",
+   "website": "https://www.bergenberg-denhaag.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Vloerenspecialist Tilburg",
+   "plaats": "Tilburg",
+   "aanbod": "10%",
+   "cat": "PVC vloer",
+   "website": "https://vloerenspecialist-tilburg.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "YorFloor",
+   "plaats": "Nijmegen",
+   "aanbod": "10%",
+   "cat": "PVC vloer",
+   "website": "https://www.yorfloor.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Wijnhuis Rosmalen",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "20%",
+   "cat": "Verhuiskado",
+   "website": "https://wijnhuisrosmalen.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Tylko",
+   "plaats": null,
+   "aanbod": "€250",
+   "cat": "Kasten",
+   "website": "https://tylko.com/en-nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Cavetown",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Meubelen",
+   "website": "https://cavetown.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Droomhout",
+   "plaats": "Utrecht",
+   "aanbod": "10%",
+   "cat": "Meubelen",
+   "website": "https://www.droomhout.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Zoofy",
+   "plaats": null,
+   "aanbod": "€15",
+   "cat": "Vakman",
+   "website": "https://zoofy.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Het Groene Loket",
+   "plaats": null,
+   "aanbod": "15%",
+   "cat": "Groen dak",
+   "website": "https://hetgroeneloket.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Wasmachinekast",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Kasten",
+   "website": "https://wasmachinekast.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Kave Home",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Meubelen",
+   "website": "https://kavehome.com/nl/nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Voordeligsanitair",
+   "plaats": "Eindhoven",
+   "aanbod": "€25",
+   "cat": "Sanitair",
+   "website": "https://voordeligsanitair.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Trapleuningfabriek",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Trapbekleding",
+   "website": "https://www.trapleuningfabriek.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Lamp en Licht",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "20%",
+   "cat": "Verlichting",
+   "website": "https://www.lampenlicht.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Bold Smart Lock",
+   "plaats": null,
+   "aanbod": "15%",
+   "cat": "Smart home",
+   "website": "https://boldsmartlock.com/nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Van Zweden Wonen",
+   "plaats": "Den Haag",
+   "aanbod": "10%",
+   "cat": "Meubelen",
+   "website": "https://vanzwedenwonen.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Tables by Tim",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "€125",
+   "cat": "Meubelen",
+   "website": "https://tablesbytim.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Natuzzi Italia Store",
+   "plaats": "Eindhoven",
+   "aanbod": "15%",
+   "cat": "Meubelen",
+   "website": "https://donjon.nl/natuzzi-italia",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "HelloChair",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Meubelen",
+   "website": "https://hellochair.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Solza",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "10%",
+   "cat": "Vloertegels",
+   "website": "https://www.solza.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Graham & Brown",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Behang",
+   "website": "https://www.grahambrown.com/nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Outdoorinstyle",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "5%",
+   "cat": "Tuinmeubelen",
+   "website": "https://lounge-set-kopen.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Swanenberg",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "5%",
+   "cat": "Sanitair",
+   "website": "https://swanenberg.nu/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Eduard Strang Verhuizingen",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "Gratis dozen",
+   "cat": "Verhuisbedrijf",
+   "website": "https://www.strang.nl/offerte",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "De Bossche Tapijtschuur",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "15%",
+   "cat": "Raamdecoratie",
+   "website": "https://www.mrwoon-raamdecoratie.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Life Outdoor Living",
+   "plaats": null,
+   "aanbod": "10%",
+   "cat": "Tuinmeubelen",
+   "website": "https://www.lifeoutdoorliving.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Topdeuren",
+   "plaats": "Eindhoven",
+   "aanbod": "10%",
+   "cat": "Deuren",
+   "website": "https://topdeuren.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Whoon",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "5%",
+   "cat": "Meubelen",
+   "website": "https://www.whoon.com/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Markant",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "10%",
+   "cat": "Zonwering",
+   "website": "https://www.markantzonweringen.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Goossens",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "10%",
+   "cat": "Meubelen",
+   "website": "https://www.goossenswonen.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Hamers@Home",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "5%",
+   "cat": "Deuren",
+   "website": "https://www.hamerstilburg.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Groenrijk",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "10%",
+   "cat": "Tuin",
+   "website": "https://www.groenrijkdenbosch.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Pand16",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "5%",
+   "cat": "Sanitair",
+   "website": "https://www.pand16.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Sanitairwinkel.nl",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "5%",
+   "cat": "Sanitair",
+   "website": "https://www.sanitairwinkel.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Alphenberg",
+   "plaats": null,
+   "aanbod": "5%",
+   "cat": "Trapbekleding",
+   "website": "https://alphenberg.com/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Enzo Pellini",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "5%",
+   "cat": "Muurbekleding",
+   "website": "https://enzopellini.com/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Falain",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "10%",
+   "cat": "Tuinmeubelen",
+   "website": "https://www.falain.eu/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Super-stuc.nl",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "€1/m²",
+   "cat": "Stucwerk",
+   "website": "https://www.super-stuc.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Debouwmarktshop.nl",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "3%",
+   "cat": "Bouwmaterialen",
+   "website": "https://www.debouwmarktshop.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "DRT Contemporary Flooring",
+   "plaats": "'s-Hertogenbosch",
+   "aanbod": "10%",
+   "cat": "Gietvloer",
+   "website": "https://drtgietvloeren.nl/",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Van Eigen Hand",
+   "plaats": "ZWOLLE",
+   "aanbod": "€750 korting",
+   "cat": "Kitchen",
+   "website": "www.vaneigenhand.nl",
+   "lat": 52.484166,
+   "lng": 6.132498,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Auping",
+   "plaats": "Rotterdam",
+   "aanbod": "10%",
+   "cat": "Meubelen",
+   "website": "https://www.auping.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  }
+ ]
+}

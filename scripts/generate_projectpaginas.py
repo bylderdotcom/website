@@ -136,6 +136,39 @@ def _laad_taxonomie():
 
 
 TAXONOMIE = _laad_taxonomie()
+
+
+def _laad_deelnemers():
+    """Wie meedoet, uit de app. Sluit de lus: een winkel die betaalt ziet zichzelf
+    terug op de projectpagina's, en de koper die om die winkel vroeg ziet zijn
+    korting verschijnen. Zonder die bevestiging blijft de funnel een reeks losse
+    stappen."""
+    f = os.path.join(ROOT, "data", "deelnemers.json")
+    if not os.path.exists(f):
+        return {}
+    d = json.load(open(f, encoding="utf8"))
+    uit = {}
+    for x in (d.get("deelnemers") or d):
+        n = re.sub(r"[^a-z0-9]", "", (x.get("naam") or "").lower())
+        if len(n) >= 4:
+            uit[n] = x
+    return uit
+
+
+DEELNEMERS = _laad_deelnemers()
+
+
+def deelnemer(naam):
+    n = re.sub(r"[^a-z0-9]", "", (naam or "").lower())
+    if not n:
+        return None
+    if n in DEELNEMERS:
+        return DEELNEMERS[n]
+    # merknaam als deel van de winkelnaam ("Auping Store Zoetermeer" ↔ "Auping")
+    for k, v in DEELNEMERS.items():
+        if len(k) >= 6 and (k in n or n in k):
+            return v
+    return None
 WINKELTYPES = {"hardware_store", "home_improvement_store", "home_goods_store",
                "furniture_store", "garden_center", "wholesaler", "paint_store",
                "building_materials_store", "bed_shop", "mattress_store",
@@ -522,10 +555,18 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     wnk = lokale_winkels(wk, p)
     wnk_html = ""
     if wnk:
-        li = "".join(f"<li><strong>{E(w['naam'])}</strong> &mdash; {E(w.get('cat') or 'wonen')}, "
-                     f"{d:.0f} km"
-                     + (f", &#9733;{w['rating']} uit {w['reviews']} beoordelingen" if w.get("rating") else "")
-                     + "</li>" for d, w in wnk)
+        # Deelnemers eerst: dat is wat de bezoeker hier komt halen, en het is de
+        # zichtbare beloning voor de winkel die betaalde.
+        wnk = sorted(wnk, key=lambda t: (deelnemer(t[1]["naam"]) is None, t[0]))
+        li = ""
+        for d, w in wnk:
+            dl = deelnemer(w["naam"])
+            merk = (f' <span class="deelnemer">Bylder-korting'
+                    + (f": {E(dl['aanbod'])}" if dl.get("aanbod") else "") + "</span>") if dl else ""
+            li += (f"<li><strong>{E(w['naam'])}</strong>{merk} &mdash; {E(w.get('cat') or 'wonen')}, "
+                   f"{d:.0f} km"
+                   + (f", &#9733;{w['rating']} uit {w['reviews']} beoordelingen" if w.get("rating") else "")
+                   + "</li>")
         vraag = (f'<div class="card"><h3>Nog geen Bylder-korting bij een van deze winkels?</h3>'
                  f"<p>Bylder-leden krijgen ledenkorting bij aangesloten winkels en merken. Wil "
                  f"jij korting bij een winkel die nog niet meedoet? Maak een gratis account "
