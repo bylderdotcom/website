@@ -121,7 +121,41 @@ GEEN_VAKBEDRIJF = ("hornbach", "praxis", "gamma", "karwei", "bouwmaat", "hubo",
 # vakbedrijven-data dat keten van vakbedrijf onderscheidt.
 
 
-def geweerd(naam):
+# De zwarte lijst hierboven is de pleister. De taxonomie is de oplossing: per
+# bedrijf wat Google zegt dat het is. Waar die er is, wint hij — dan hoeft er geen
+# keten meer met de hand op een lijstje.
+def _laad_taxonomie():
+    p = os.path.join(ROOT, "data", "plaatsen", "taxonomie.json")
+    if not os.path.exists(p):
+        return {}
+    uit = {}
+    for v in json.load(open(p, encoding="utf8")).values():
+        if v.get("id"):
+            uit[v["id"]] = v
+    return uit
+
+
+TAXONOMIE = _laad_taxonomie()
+WINKELTYPES = {"hardware_store", "home_improvement_store", "home_goods_store",
+               "furniture_store", "garden_center", "wholesaler", "paint_store",
+               "building_materials_store", "bed_shop", "mattress_store",
+               "lighting_store", "kitchen_furniture_store", "flooring_store"}
+NOOIT_TYPE = {"supermarket", "grocery_store", "convenience_store", "gas_station",
+              "restaurant", "cafe", "bar", "lodging", "car_dealer", "pharmacy",
+              "bank", "shopping_mall"}
+
+
+def geweerd(naam, place_id=None, vakbedrijf=True):
+    v = TAXONOMIE.get(place_id) if place_id else None
+    if v:
+        if v.get("status") and v["status"] != "OPERATIONAL":
+            return True
+        if set(v.get("types") or []) & NOOIT_TYPE:
+            return True
+        if vakbedrijf and v.get("primair") in WINKELTYPES:
+            return True
+        return False
+    # Geen taxonomie voor dit bedrijf (buiten de vier steden): terugvallen op de lijst.
     n = (naam or "").lower()
     return any(x in n for x in GEEN_VAKBEDRIJF)
 
@@ -139,7 +173,7 @@ def lokale_vakbedrijven(vb, p, straal=12, n=6):
             continue
         if (d <= straal and (b.get("google_reviews") or 0) >= 20
                 and float(b.get("google_rating") or 0) >= 4.0
-                and not geweerd(b.get("naam"))):
+                and not geweerd(b.get("naam"), b.get("google_place_id"), True)):
             uit.append((d, b))
     uit.sort(key=lambda t: (-(t[1].get("google_reviews") or 0), t[0]))
     gezien, res = set(), []
@@ -235,7 +269,7 @@ def lokale_winkels(wk, p, straal=15, n=6):
         g = w.get("groep") or w.get("cat")
         if g not in goed and (w.get("cat") not in ("keuken", "vloeren", "sanitair", "meubelwinkel")):
             continue
-        if geweerd(w.get("naam")):
+        if geweerd(w.get("naam"), None, False):
             continue
         if float(w.get("rating") or 0) < 4.0:
             continue

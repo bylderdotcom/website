@@ -82,11 +82,37 @@ PAST_BIJ = {
     "bedden":        {"bed_shop", "mattress_store", "furniture_store"},
     "sanitair":      {"plumbing_supply_store", "bathroom_remodeler", "plumber"},
 }
-# Types die nooit als vakbedrijf of woonwinkel mogen gelden, ongeacht ons label.
-NOOIT = {"supermarket", "grocery_store", "convenience_store", "hardware_store",
-         "home_improvement_store", "department_store", "discount_store",
-         "party_store", "gift_shop", "garden_center", "wholesaler",
-         "shopping_mall", "gas_station", "restaurant", "cafe"}
+# De regel moet per soort verschillen. HORNBACH is een home_goods_store: fout als
+# badkamerspecialist, maar datzelfde type is voor een meubelwinkel juist correct.
+# Een vakbedrijf levert een dienst en hoort dus nooit een winkeltype te hebben.
+NOOIT_ALTIJD = {"supermarket", "grocery_store", "convenience_store", "gas_station",
+                "restaurant", "cafe", "bar", "lodging", "car_dealer", "pharmacy",
+                "bank", "shopping_mall"}
+# Twijfelgevallen: alleen fout als het het hóófdtype is. HAY Rotterdam draagt
+# gift_shop als bijtype maar is een echte designmeubelzaak; een winkelcentrum
+# draagt shopping_mall als hoofdtype en is geen winkel.
+NOOIT_ALS_HOOFDTYPE = {"gift_shop", "department_store", "discount_store",
+                       "party_store", "variety_store", "book_store"}
+# Alleen voor vakbedrijven: een dienstverlener met een winkeltype als hoofdtype is
+# een keten die per ongeluk in de vakbedrijvenlijst zit.
+WINKELTYPES = {"hardware_store", "home_improvement_store", "home_goods_store",
+               "furniture_store", "garden_center", "wholesaler", "paint_store",
+               "building_materials_store", "bed_shop", "mattress_store",
+               "lighting_store", "kitchen_furniture_store", "flooring_store"}
+
+
+def deugt(v, soort):
+    """Of dit bedrijf mag meedoen. Geeft (ja/nee, reden) terug."""
+    t = set(v.get("types") or [])
+    if v.get("status") and v["status"] != "OPERATIONAL":
+        return False, f"status {v['status']}"
+    if t & NOOIT_ALTIJD:
+        return False, "type " + ", ".join(sorted(t & NOOIT_ALTIJD))
+    if v.get("primair") in NOOIT_ALS_HOOFDTYPE:
+        return False, f"hoofdtype {v['primair']}"
+    if soort == "vakbedrijf" and (v.get("primair") in WINKELTYPES):
+        return False, f"winkeltype {v['primair']} bij een vakbedrijf"
+    return True, ""
 
 
 def km(a, b, c, d):
@@ -190,7 +216,7 @@ def haal(soort):
             tax[eigen] = {"id": d["id"], "naam": (d.get("displayName") or {}).get("text"),
                           "types": d.get("types") or [], "primair": d.get("primaryType"),
                           "status": d.get("businessStatus"),
-                          "ons_label": b.get("vak") or b.get("cat")}
+                          "ons_label": b.get("vak") or b.get("cat"), "soort": "vakbedrijf" if soort == "vakbedrijven" else "winkel"}
             nieuw += 1
         if i % 25 == 0:
             bewaar(tax)
@@ -209,8 +235,9 @@ def rapport(tax=None):
             continue
         t = set(v.get("types") or [])
         label = v.get("ons_label")
-        if t & NOOIT:
-            verboden.append((v["naam"], label, sorted(t & NOOIT)))
+        ok, reden = deugt(v, v.get("soort") or "winkel")
+        if not ok:
+            verboden.append((v["naam"], label, [reden]))
         elif label in PAST_BIJ and not (t & PAST_BIJ[label]):
             mis[label] += 1
     print(f"\n{len(verboden)} bedrijven met een type dat hier nooit hoort:")
@@ -226,7 +253,7 @@ def verbind():
     """Projecten aan bedrijven knopen, één keer, na te kijken. Geen API-verkeer."""
     tax = json.load(open(TAX, encoding="utf8"))
     goed = {v["id"]: v for v in tax.values()
-            if v.get("id") and not (set(v.get("types") or []) & NOOIT)}
+            if v.get("id") and deugt(v, "vakbedrijf")[0]}
     prj = json.load(open(os.path.join(ROOT, "data", "nieuwbouwprojecten.json"),
                          encoding="utf8"))["projecten"]
     vb = {b.get("google_place_id"): b for b in laad_vakbedrijven()}
