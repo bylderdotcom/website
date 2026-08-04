@@ -31,3 +31,4 @@ web/tsconfig.tsbuildinfo
 .claude/settings.local.json
 .claude/settings.local.json.bak-*
 .claude/worktrees/
+data/nieuwbouw-snapshots/
