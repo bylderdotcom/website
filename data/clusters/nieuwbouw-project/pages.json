@@ -3,9 +3,9 @@
   "slug": "index",
   "path": "/nieuwbouw-project/",
   "title": "Nieuwbouwprojecten: advies per project | Bylder.com",
-  "description": "Per nieuwbouwproject wat je als koper of bewoner moet regelen: inschrijving, koopakte, meerwerk, oplevering en afwerking — afgestemd op de fase.",
+  "description": "Wij volgen 976 nieuwbouwprojecten in Nederland. Voor 28 staat uitgewerkt welke keuzes een koper na het tekenen maakt, wanneer ze sluiten en wat ze kosten.",
   "og_type": "website",
-  "robots": "noindex,follow",
+  "robots": "index,follow",
   "ldjson": [
    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Nieuwbouwprojecten\",\"item\":\"https://www.bylder.com/nieuwbouw-project/\"}]}"
   ]

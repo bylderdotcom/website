@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """Genereert nieuwbouwproject-pagina's uit de projectdata plus de ruimte-ontologie.
 
-WAAROM DEZE PAGINA'S STANDAARD OP NOINDEX STAAN
------------------------------------------------
+WAAROM DEZE PAGINA'S INDEXEERBAAR ZIJN, EN WAT DAT EIST
+-------------------------------------------------------
 Per project verschillen naam, plaats, aantal woningen, de geschatte opleverdatum
 en de lokale vakbedrijven. De beslislijst komt uit dezelfde ontologie en is op
-elke pagina gelijk. Dat levert naar schatting 25-35% unieke tekst — dezelfde
-klasse als de 25.697 vakbedrijf-profielen die op 31 juli uit de index gingen
-omdat ze 8 impressies en 0 klikken opleverden.
+elke pagina gelijk. De eerste generatie mat daardoor 43,7% unieke tekst — te dicht
+bij de 35% van de 25.697 vakbedrijf-profielen die op 31 juli uit de index gingen
+na 8 impressies en 0 klikken.
 
-Daarom: `--index <slug>` zet één project bewust in de index, en dat verdient een
-project pas als er echt onderzoek in zit (zoals de handgeschreven De Suikerzijde,
-1.177 woorden met warmtenet, KoopGarant en fase-indeling). De rest bestaat wél —
-als landingspagina achter een outreach-link en als ingang naar het account — maar
-vraagt geen crawl-budget.
+Daarop is de generieke FAQ en het meerwerk-uitlegblok geschrapt (die uitleg hoort
+één keer in de kennisbank, niet 28 keer hier) en vervangen door blokken die met de
+projectdata rekenen. Nu 53,9%. Dat is nog niet de 91% van de kennisbank; de weg
+daarheen is verkoopdata per project, niet slimmer sjabloneren. Meet opnieuw voordat
+je deze generator op alle 181 kandidaten loslaat.
 
 DE GESCHATTE OPLEVERDATUM
 -------------------------
@@ -59,6 +59,10 @@ E = html.escape
 def slugify(naam, plaats):
     s = re.sub(r"[^a-z0-9]+", "-", f"{naam} {plaats}".lower()).strip("-")
     return re.sub(r"-{2,}", "-", s)
+
+
+def netjes_naam(p):
+    return p.get("naam") or "dit project"
 
 
 def netjes(s):
@@ -399,6 +403,47 @@ Meer over de gemeente: <a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)
     return slug, body, rij
 
 
+def bouw_hub(rijen, kandidaten, totaal_projecten):
+    """De hub. Was een stub van 137 woorden op noindex; hij staat nu boven pagina's
+    die we w&eacute;l willen laten indexeren, en een noindex-ouder boven indexeerbare
+    kinderen is een structuurfout. Inhoud is de telling zelf — dat is data die
+    nergens anders zo staat."""
+    per = collections.defaultdict(list)
+    for r in rijen:
+        per[r["_plaats"]].append(r)
+    won_tot = sum(k.get("woningen") or 0 for k in kandidaten)
+    blokken = []
+    for plaats in sorted(per):
+        li = "".join(
+            f'<li><a href="{E(r["path"])}">{E(r["_naam"])}</a> &mdash; '
+            f'{r["_won"]} woningen{", oplevering " + E(r["_opl"]) if r.get("_opl") else ""}</li>'
+            for r in sorted(per[plaats], key=lambda x: -x["_won"]))
+        blokken.append(f"<h3>{E(plaats)}</h3><ul>{li}</ul>")
+    return f"""<main>
+<nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:14px;">
+<a href="/" style="color:inherit;">Bylder.com</a> &rsaquo; Nieuwbouwprojecten</nav>
+<h1>Nieuwbouwprojecten &mdash; wat er n&aacute; de handtekening komt</h1>
+<p>Wij volgen <strong>{totaal_projecten} nieuwbouwprojecten</strong> in Nederland. Voor
+{len(rijen)} daarvan staat hier uitgewerkt wat een koper na het tekenen te wachten staat:
+welke keuzes er zijn, wanneer ze dichtgaan, wat het kost en welke bedrijven in de buurt het
+werk doen. Wij verkopen geen woningen en worden niet betaald door de ontwikkelaar.</p>
+<p>Deze {len(rijen)} projecten samen zijn goed voor <strong>{won_tot:,} woningen</strong>.
+De landelijke telling &mdash; alle {totaal_projecten} projecten, met opleverjaar &mdash; staat in de
+<a href="/nieuwbouw-project/oplevermonitor/">oplevermonitor</a>.</p>
+<h2>Waarom per project, en niet &eacute;&eacute;n algemene gids</h2>
+<p>Een oplevering in 2027 vraagt andere dingen dan een oplevering volgend voorjaar. Meerwerk
+sluit maanden voor de sleutel; vloeren en keukens hebben levertijden die per regio verschillen;
+en in een gemeente waar vier projecten tegelijk opleveren is een goede stukadoor schaarser dan
+in een gemeente met &eacute;&eacute;n. Daarom rekenen wij per project terug vanaf de opleverdatum.</p>
+<h2>Projecten per plaats</h2>
+{"".join(blokken)}
+<div class="card"><h2>Staat jouw project er niet bij?</h2>
+<p>Zet je opleverdatum in je dossier, dan rekenen wij de keuzemomenten terug naar jouw
+bouwnummer &mdash; ook als er nog geen pagina is. Gratis.</p>
+<p><a class="cta-primary" href="https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site&amp;utm_campaign=nieuwbouw-project-hub">Maak een gratis account</a></p></div>
+</main>""".replace("{won_tot:,}".format(won_tot=won_tot), f"{won_tot:,}".replace(",", "."))
+
+
 def main():
     projecten = [p for p in json.load(open(PROJECTEN, encoding="utf8"))["projecten"] if p.get("status")]
     vbd = json.load(open(VAKBEDRIJVEN, encoding="utf8"))
@@ -429,12 +474,16 @@ def main():
           f"{sum(len(r['beslissingen']) for r in ruimtes)} beslissingen\n")
 
     nieuw = herzien = 0
+    hub_rijen = []
     for p in kandidaten:
         buren = [q for q in kandidaten if q["plaats"] == p["plaats"] and q["url"] != p["url"]]
         buren.sort(key=lambda q: -(q.get("woningen") or 0))
         slug, body, rij = bouw_pagina(p, ruimtes, vb, wk, buren, gem_tel[p["plaats"]], indexeerbaar=True)
         if slug in handgeschreven:
             continue                      # nooit over handwerk heen schrijven
+        hub_rijen.append({"path": rij["path"], "_naam": netjes_naam(p),
+                          "_plaats": netjes(p["plaats"]), "_won": p.get("woningen") or 0,
+                          "_opl": oplever_schatting(p)[0]})
         if not DRY:
             os.makedirs(os.path.join(CLUSTER, "content"), exist_ok=True)
             open(os.path.join(CLUSTER, "content", f"{slug}.html"), "w", encoding="utf8").write(body)
@@ -442,6 +491,16 @@ def main():
             pages = [x for x in pages if x["slug"] != slug] + [rij]
             nieuw += 0 if bestond else 1
             herzien += 1 if bestond else 0
+
+    if not DRY and hub_rijen:
+        open(os.path.join(CLUSTER, "content", "index.html"), "w", encoding="utf8").write(
+            bouw_hub(hub_rijen, kandidaten, len(projecten)))
+        for x in pages:
+            if x["slug"] == "index":
+                x["robots"] = "index,follow"
+                x["description"] = (f"Wij volgen {len(projecten)} nieuwbouwprojecten in Nederland. "
+                    f"Voor {len(hub_rijen)} staat uitgewerkt welke keuzes een koper na het tekenen "
+                    f"maakt, wanneer ze sluiten en wat ze kosten.")[:158]
 
     if not DRY:
         vast = [x for x in pages if x["slug"] in ("index", "oplevermonitor")]
