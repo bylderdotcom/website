@@ -692,6 +692,48 @@ bouwnummer &mdash; ook als er nog geen pagina is. Gratis.</p>
 </main>""".replace("{won_tot:,}".format(won_tot=won_tot), f"{won_tot:,}".replace(",", "."))
 
 
+# De handgeschreven pagina's blijven handwerk — maar de meetlaag (verkoopstand,
+# Kadaster, Auping-blok) hoort ook daar te staan en vers te blijven. Daarom een
+# gemarkeerd blok dat elke run wordt ververst zonder de tekst eromheen te raken.
+# Bijvangst: het eerder los aangeplakte Auping-blok stond buiten de content-
+# kolom en rendeerde over de volle breedte; dat ruimt dit meteen op.
+HANDWERK_INFO = {
+    "de-suikerzijde-groningen": {"plaats": "groningen", "naam": "De Suikerzijde", "zoek": "suikerzijde"},
+    "volharding-marum": {"plaats": "marum", "naam": "Volharding", "zoek": "volharding"},
+    "condorpark-apeldoorn": {"plaats": "apeldoorn", "naam": "CondorPark", "zoek": "condor"},
+    "haarlemszicht-haarlem": {"plaats": "haarlem", "naam": "Haarlemszicht", "zoek": "haarlemszicht"},
+}
+MARK_A, MARK_B = "<!--bylder:meetlaag-->", "<!--/bylder:meetlaag-->"
+
+
+def verrijk_handwerk(projecten):
+    for slug, info in HANDWERK_INFO.items():
+        f = os.path.join(CLUSTER, "content", f"{slug}.html")
+        if not os.path.exists(f):
+            continue
+        h = open(f, encoding="utf8").read()
+        # oude losse aanplak weghalen (stond buiten de kolom)
+        i = h.find("<h2>Korting op je bed")
+        if i >= 0 and MARK_A not in h[:i]:
+            j = h.find("</main>", i)
+            h = h[:i] + (h[j:] if j >= 0 else "")
+        # bestaand gemarkeerd blok weghalen (idempotent)
+        if MARK_A in h and MARK_B in h:
+            h = h[:h.index(MARK_A)] + h[h.index(MARK_B) + len(MARK_B):]
+        prj = next((q for q in projecten
+                    if info["zoek"] in (q.get("naam") or "").lower()
+                    and q["plaats"] == info["plaats"]), None)
+        feiten = log = ""
+        if prj:
+            feiten, log = verkoop_blok(prj, E(info["naam"]))
+        aup = auping_blok({"plaats": info["plaats"]}, E(info["naam"]), slug)
+        blok = (f'{MARK_A}<div style="max-width:820px;margin:0 auto;">'
+                f"{feiten}{log}{aup}</div>{MARK_B}\n")
+        h = h.replace("</main>", blok + "</main>", 1) if "</main>" in h else h + blok
+        open(f, "w", encoding="utf8").write(h)
+        print(f"handwerk verrijkt: {slug}" + (" (met verkoopdata)" if feiten else " (alleen Auping)"))
+
+
 def main():
     projecten = [p for p in json.load(open(PROJECTEN, encoding="utf8"))["projecten"] if p.get("status")]
     vbd = json.load(open(VAKBEDRIJVEN, encoding="utf8"))
@@ -823,6 +865,9 @@ def main():
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + rows + "</urlset>\n")
         print(f"sitemap: {len(idx)} URL's weggeschreven (stond op 4)")
+
+    if not DRY:
+        verrijk_handwerk(projecten)
 
     print(f"{'DROOGDRAAI — ' if DRY else ''}{nieuw} nieuwe pagina's, {herzien} herzien, "
           f"{len(handgeschreven)} handgeschreven ongemoeid gelaten.")
