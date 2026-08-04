@@ -136,6 +136,13 @@ def _laad_taxonomie():
 
 
 TAXONOMIE = _laad_taxonomie()
+WINKELTYPES = {"hardware_store", "home_improvement_store", "home_goods_store",
+               "furniture_store", "garden_center", "wholesaler", "paint_store",
+               "building_materials_store", "bed_shop", "mattress_store",
+               "lighting_store", "kitchen_furniture_store", "flooring_store"}
+NOOIT_TYPE = {"supermarket", "grocery_store", "convenience_store", "gas_station",
+              "restaurant", "cafe", "bar", "lodging", "car_dealer", "pharmacy",
+              "bank", "shopping_mall"}
 
 
 def _laad_snapshots():
@@ -179,7 +186,7 @@ def verkoop_blok(p, naam):
 <tr><th>Gemeten door</th><td>Bylder, op de beschikbaarheid per fase zoals
 <a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a> die publiceert</td></tr>
 </tbody></table>
-<p>{verkoop_duiding(v['verkocht_pct'], v['beschikbaar'], E(naam))}</p>"""
+"""
 
     regels = []
     for i, (dt, m) in enumerate(reversed(metingen)):
@@ -199,33 +206,6 @@ verloop.</p>
 <ul>{''.join(regels)}</ul>
 {'<p class="noot">Dit is de eerste meting. Vanaf de volgende ronde staat hier wat er tussen twee metingen veranderde &mdash; hoe snel dit project werkelijk verkoopt.</p>' if len(metingen) == 1 else ''}"""
     return feiten, log
-
-
-def verkoop_duiding(pct, besch, naam):
-    """Wat het cijfer betekent voor déze lezer. Per bandbreedte een ander verhaal,
-    want 96% verkocht en 12% verkocht zijn twee verschillende situaties."""
-    if pct >= 90:
-        return (f"{naam} is vrijwel uitverkocht. Dat betekent dat vrijwel alle kopers al "
-                f"getekend hebben en dat de meerwerkkeuzes nu lopen &mdash; niet straks. "
-                f"Er zijn nog {besch} woningen beschikbaar.")
-    if pct >= 60:
-        return (f"Het grootste deel is verkocht. De kopers van de eerste fases zijn hun "
-                f"keuzetraject al ingegaan; wie nu instapt loopt achter op buren die "
-                f"dezelfde vakbedrijven nodig hebben. Nog {besch} beschikbaar.")
-    if pct >= 25:
-        return (f"Ruim een kwart is verkocht en er staan er nog {besch} open. Het project "
-                f"loopt, maar de oplevering ligt verder weg dan bij een project dat al vol "
-                f"zit &mdash; je keuzemomenten schuiven daarmee mee.")
-    return (f"Nog maar {pct}% verkocht: {besch} van de {besch + 0} woningen zijn nog te koop. "
-            f"Dit project staat aan het begin. Er is nog geen groep kopers die tegelijk "
-            f"aan het klussen slaat, en de opleverdatum is navenant onzeker.")
-WINKELTYPES = {"hardware_store", "home_improvement_store", "home_goods_store",
-               "furniture_store", "garden_center", "wholesaler", "paint_store",
-               "building_materials_store", "bed_shop", "mattress_store",
-               "lighting_store", "kitchen_furniture_store", "flooring_store"}
-NOOIT_TYPE = {"supermarket", "grocery_store", "convenience_store", "gas_station",
-              "restaurant", "cafe", "bar", "lodging", "car_dealer", "pharmacy",
-              "bank", "shopping_mall"}
 
 
 def geweerd(naam, place_id=None, vakbedrijf=True):
@@ -363,33 +343,6 @@ def lokale_winkels(wk, p, straal=15, n=6):
     return res
 
 
-def omvang_alinea(won, naam, plaats):
-    """Een project van 550 woningen is een ander verhaal dan een van 62. Deze
-    alinea's zijn niet dezelfde zin met een ander getal — ze beschrijven een
-    andere situatie, want dat is het ook."""
-    if won >= 400:
-        return (f"Met {won} woningen is {naam} geen straat maar een stadsdeel in aanbouw. "
-                f"Zulke projecten worden in fases opgeleverd, vaak jaren uit elkaar, en de "
-                f"buren van fase 1 wonen er al terwijl fase 4 nog in de steigers staat. Dat "
-                f"heeft twee gevolgen die je merkt: de aannemer werkt met bouwverkeer en "
-                f"bouwhekken op de plek waar jouw tuin komt, en voorzieningen als school, "
-                f"winkels en openbaar vervoer volgen meestal ná de eerste bewoners. Voor je "
-                f"keuzes betekent het dat je meerwerkvenster per fase verschilt: wat voor jouw "
-                f"bouwnummer sluit, staat voor een later bouwnummer nog open.")
-    if won >= 150:
-        return (f"{naam} telt {won} woningen. Dat is groot genoeg voor gefaseerde oplevering "
-                f"en voor een eigen dynamiek in de wijk: de eerste bewoners trekken erin "
-                f"terwijl er verderop nog gebouwd wordt. Praktisch betekent dat bouwverkeer, "
-                f"een tuin die pas ná de laatste oplevering fatsoenlijk aan te leggen is, en "
-                f"buren die dezelfde keuzes maken in hetzelfde kwartaal — wat de aanleg van "
-                f"vloeren, keukens en tuinen in {plaats} tijdelijk schaars maakt.")
-    return (f"{naam} omvat {won} woningen. Dat is een overzichtelijk project: doorgaans één "
-            f"opleverperiode, één aannemer en een beperkt aantal woningtypes. Het voordeel is "
-            f"dat je keuzemomenten voor iedereen ongeveer gelijk lopen. Het nadeel is dat je "
-            f"met minder buren de kosten deelt — voor een gezamenlijke tuinaanleg of een "
-            f"collectieve inkoop van vloeren heb je elkaar eerder nodig.")
-
-
 def deadlines(lo, hi):
     """Afgeleide keuzemomenten. Per project andere jaartallen, dus andere tekst."""
     return [
@@ -500,10 +453,9 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                      f"{d:.0f} km"
                      + (f", &#9733;{w['rating']} uit {w['reviews']} beoordelingen" if w.get("rating") else "")
                      + "</li>" for d, w in wnk)
-        wnk_html = (f"<h2>Woonwinkels in de buurt van {E(naam)}</h2><p>Waar de bewoners van "
-                    f"{E(naam)} straks hun vloer, keuken en meubels uitzoeken. Binnen vijftien "
-                    f"kilometer, met minstens twintig beoordelingen, gespreid over de "
-                    f"categorie&euml;n. Deze lijst is niet te koop.</p><ul>{li}</ul>")
+        wnk_html = (f"<h2>Woonwinkels binnen 15 km</h2><ul>{li}</ul>"
+                    f'<p class="noot">Gespreid over categorie&euml;n, minstens twintig '
+                    f"beoordelingen, minimaal vier sterren. Deze lijst is niet te koop.</p>")
 
     # --- buurprojecten: per gemeente andere namen ---
     buur_html = ""
@@ -512,17 +464,11 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                      f'{E(b["naam"])}</a>'
                      + (f" &mdash; {b['woningen']} woningen" if b.get('woningen') else "") + "</li>"
                      for b in buren[:5])
-        buur_html = (f"<h2>Andere nieuwbouw in {E(plaats)}</h2>"
-                     f"<p>In {E(plaats)} lopen op dit moment {gem_totaal} nieuwbouwprojecten. "
-                     f"Dat is relevant voor je planning: als er in dezelfde periode veel wordt "
-                     f"opgeleverd, wordt het druk bij lokale vloerenleggers, keukenmonteurs en "
-                     f"hoveniers &mdash; en zijn dat juist de partijen die je een paar maanden "
-                     f"vooraf moet vastleggen.</p><ul>{bl}</ul>")
+        buur_html = (f"<h2>Andere nieuwbouw in {E(plaats)} ({gem_totaal} projecten)</h2>"
+                     f"<ul>{bl}</ul>")
     elif gem_totaal <= 1:
-        buur_html = (f"<h2>Nieuwbouw in {E(plaats)}</h2><p>{E(naam)} is op dit moment het enige "
-                     f"nieuwbouwproject dat wij in {E(plaats)} volgen. Voor jou betekent dat "
-                     f"minder concurrentie om lokale vakbedrijven dan in gemeenten waar meerdere "
-                     f"projecten tegelijk opleveren.</p>")
+        buur_html = (f'<p class="noot">{E(naam)} is het enige nieuwbouwproject dat wij in '
+                     f"{E(plaats)} volgen.</p>")
 
     aant = f"{won} woningen" if won else "meerdere woningen"
     body = f"""<main>
@@ -532,55 +478,39 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
 <span class="badge">Nieuwbouwproject &middot; {E(plaats)}</span>
 <h1>{E(naam)}, {E(plaats)} &mdash; wat er n&aacute; de handtekening komt</h1>
-<p>Laatst bijgewerkt: {VANDAAG.day} {NL_MAAND[VANDAAG.month-1]} {VANDAAG.year} &middot;
-samengesteld door Bylder &mdash; onafhankelijk, wij verkopen hier geen woningen.</p>
 
 {feiten_html}
 
-<h2>Wat voor project dit is</h2>
-<p>{omvang_alinea(won, E(naam), E(plaats))}</p>
+{log_html}
 
-<h2>Wanneer wordt er opgeleverd?</h2>
-{opl_blok}
-<p class="noot">Een opleverdatum in nieuwbouw staat zelden vast. De bouwtijd staat in je
-koop-/aannemingsovereenkomst in <a href="/kennisbank/bouwtechniek/">werkbare werkdagen</a>: een
-dag telt als onwerkbaar zodra er minstens vijf uur niet gewerkt kan worden door vorst, wind of
-regen. Je eigen koperscommunicatie is altijd leidend.</p>
-
-<h2>Jouw keuzemomenten, teruggerekend</h2>
-<p>Richtdata voor {E(naam)}, teruggerekend vanuit een oplevering {opl_tekst}. Geen contractdata
-&mdash; die staan in jouw overeenkomst. De volgorde klopt wel.</p>
+<h2>Keuzemomenten voor {E(naam)}</h2>
 <table class="feit-tabel">
 <thead><tr><th>Wanneer</th><th>Wat sluit</th><th>Waarom het uitmaakt</th></tr></thead>
 <tbody>{dl}</tbody></table>
+<p class="noot">Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Richtdata &mdash;
+je eigen <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is leidend.</p>
 <div class="card">
-<p><strong>Klopt onze schatting niet?</strong> In jouw koop-/aannemingsovereenkomst staat het
-aantal werkbare werkdagen en daarmee je eigen venster. Zet die datum in je dossier, dan rekenen
-wij deze momenten terug naar jouw bouwnummer &mdash; en klopt deze pagina ook voor je buren.</p>
+<p>Zet je opleverdatum in je dossier, dan rekenen wij deze momenten terug naar jouw bouwnummer.</p>
 <p><a class="cta-primary" href="{app}">Zet je opleverdatum erin</a></p></div>
 
-<h2>Wat {E(naam)} aan meerwerk kost</h2>
-{geld_html}
-
-{log_html}
-
-{buur_html}
 {lok_html}
 {wnk_html}
+{buur_html}
 {aup_html}
 
 {kluskist_html}
 
 <div class="card">
 <h2>Koop of woon je in {E(naam)}?</h2>
-<p>Bylder houdt je keuzes, deadlines en documenten op &eacute;&eacute;n plek bij: bouwtekening,
-meerwerklijst, offertes getoetst aan marktprijzen, en je garanties. Gratis.</p>
+<p>Bylder houdt je keuzes, deadlines en documenten op &eacute;&eacute;n plek: bouwtekening,
+meerwerklijst, offertes getoetst aan marktprijzen, garanties. Gratis.</p>
 <p><a class="cta-primary" href="{app}">Maak een gratis account</a></p></div>
 
-<p style="font-size:13px;color:rgba(61,46,30,0.72);">Projectgegevens van
-<a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a>; Bylder telt op en
-bewerkt. Landelijke telling in de <a href="/nieuwbouw-project/oplevermonitor/">oplevermonitor</a>.
-Meer over de gemeente: <a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)}</a>.</p>
+<p style="font-size:13px;color:rgba(61,46,30,0.72);">Verkoopstand gemeten door Bylder op
+<a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a>. Landelijke
+telling in de <a href="/nieuwbouw-project/oplevermonitor/">oplevermonitor</a>. Algemene uitleg
+over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer over de gemeente:
+<a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)}</a>.</p>
 </main>"""
 
     titel = f"{naam} ({plaats}), {aant} — keuzes, meerwerk en oplevering | Bylder.com"
