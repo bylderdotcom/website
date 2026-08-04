@@ -105,6 +105,27 @@ def oplever_schatting(p):
             "dit project publiceert zelf geen datum")
 
 
+# Ketens die als vakbedrijf of woonwinkel in de data staan maar het niet zijn.
+# HORNBACH stond als badkamerspecialist op de pagina, een PLUS-supermarkt als
+# verlichtingszaak en een feestwinkel als woonwinkel — direct onder de zin dat
+# wij op passendheid rangschikken.
+GEEN_VAKBEDRIJF = ("hornbach", "praxis", "gamma", "karwei", "bouwmaat", "hubo",
+                   "plus ", "albert heijn", "jumbo", "lidl", "aldi", "action",
+                   "kruidvat", "feestwinkel", "solow", "so low", "blokker",
+                   "xenos", "big bazar", "tuincentrum", "welkoop", "intratuin",
+                   "ikea", "leen bakker", "kwantum", "bauhaus", "formido",
+                   "multimate", "toolstation", "bouwcenter", "raab karcher",
+                   "stiho", "brico", "makro", "sligro")
+# Dit is een pleister, geen oplossing: elke keten die ontbreekt glipt erdoor —
+# HORNBACH weggehaald leverde BAUHAUS op. De echte fix is een veld in de
+# vakbedrijven-data dat keten van vakbedrijf onderscheidt.
+
+
+def geweerd(naam):
+    n = (naam or "").lower()
+    return any(x in n for x in GEEN_VAKBEDRIJF)
+
+
 def lokale_vakbedrijven(vb, p, straal=12, n=6):
     if not (p.get("lat") and p.get("lng")):
         return []
@@ -116,7 +137,9 @@ def lokale_vakbedrijven(vb, p, straal=12, n=6):
             d = km(float(p["lat"]), float(p["lng"]), float(b["lat"]), float(b["lng"]))
         except (TypeError, ValueError):
             continue
-        if d <= straal and (b.get("google_reviews") or 0) >= 20:
+        if (d <= straal and (b.get("google_reviews") or 0) >= 20
+                and float(b.get("google_rating") or 0) >= 4.0
+                and not geweerd(b.get("naam"))):
             uit.append((d, b))
     uit.sort(key=lambda t: (-(t[1].get("google_reviews") or 0), t[0]))
     gezien, res = set(), []
@@ -211,6 +234,10 @@ def lokale_winkels(wk, p, straal=15, n=6):
     for w in wk:
         g = w.get("groep") or w.get("cat")
         if g not in goed and (w.get("cat") not in ("keuken", "vloeren", "sanitair", "meubelwinkel")):
+            continue
+        if geweerd(w.get("naam")):
+            continue
+        if float(w.get("rating") or 0) < 4.0:
             continue
         if not (w.get("lat") and w.get("lng")):
             continue
@@ -333,16 +360,21 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     koopsom = 285000 if won >= 400 else (340000 if won >= 150 else 395000)
     mw_laag, mw_hoog = int(koopsom * 0.05 / 1000) * 1000, int(koopsom * 0.15 / 1000) * 1000
     fin_max = int(koopsom * 0.25 / 1000) * 1000
+    def eur(n):
+        # duizendtallen met een punt, zonder de rest van de zin te raken — de
+        # vorige versie draaide .replace(",", ".") over de hele f-string en at
+        # daarmee ook de komma van ", te betalen" op
+        return "&euro;" + f"{n:,}".replace(",", ".")
+
     geld_html = (
         f"<p>Kopers in projecten van deze omvang zitten doorgaans rond een koop-/aanneemsom van "
-        f"<strong>&euro;{koopsom:,}</strong>".replace(",", ".") +
-        f". Vijf tot vijftien procent daarvan gaat op aan meerwerk: voor {E(naam)} is dat ruwweg "
-        f"<strong>&euro;{mw_laag:,} tot &euro;{mw_hoog:,}</strong>".replace(",", ".") +
-        f", te betalen in termijnen terwijl je hypotheek al vaststaat.</p>"
+        f"<strong>{eur(koopsom)}</strong>. Vijf tot vijftien procent daarvan gaat op aan meerwerk: "
+        f"voor {E(naam)} is dat ruwweg <strong>{eur(mw_laag)} tot {eur(mw_hoog)}</strong>, te "
+        f"betalen in termijnen terwijl je hypotheek al vaststaat.</p>"
         f"<p>Geldverstrekkers laten je meerwerk meefinancieren tot ongeveer een kwart van de som "
-        f"&mdash; hier dus tot circa <strong>&euro;{fin_max:,}</strong>".replace(",", ".") +
-        f". Het venster is kort: geregeld v&oacute;&oacute;r de meerwerkdeadline hierboven, niet "
-        f"erna. Reken eerst uit wat je w&iacute;lt, leg daarna vast wat je k&uacute;nt.</p>")
+        f"&mdash; hier dus tot circa <strong>{eur(fin_max)}</strong>. Het venster is kort: geregeld "
+        f"v&oacute;&oacute;r de meerwerkdeadline hierboven, niet erna. Reken eerst uit wat je "
+        f"w&iacute;lt, leg daarna vast wat je k&uacute;nt.</p>")
 
     aup_html = auping_blok(p, E(naam), slug)
     wnk = lokale_winkels(wk, p)
@@ -360,7 +392,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # --- buurprojecten: per gemeente andere namen ---
     buur_html = ""
     if buren:
-        bl = "".join(f"<li>{E(b['naam'])}"
+        bl = "".join(f'<li><a href="/nieuwbouw-project/{slugify(b["naam"], b["plaats"])}/">'
+                     f'{E(b["naam"])}</a>'
                      + (f" &mdash; {b['woningen']} woningen" if b.get('woningen') else "") + "</li>"
                      for b in buren[:5])
         buur_html = (f"<h2>Andere nieuwbouw in {E(plaats)}</h2>"
@@ -450,15 +483,17 @@ Meer over de gemeente: <a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)
     art = {"@context": "https://schema.org", "@type": "Article",
            "headline": f"{naam}, {plaats} — wat er ná de handtekening komt",
            "description": desc, "dateModified": VANDAAG.isoformat(),
-           "author": {"@type": "Organization", "name": "Bylder"},
-           "publisher": {"@type": "Organization", "name": "Bylder Nederland B.V."},
+           "author": {"@type": "Organization", "name": "Bylder.com"},
+           "publisher": {"@type": "Organization", "name": "Bylder.com",
+                         "url": "https://www.bylder.com/"},
+           "isBasedOn": p.get("url"),
            "about": {"@type": "Residence", "name": naam,
                      "address": {"@type": "PostalAddress", "addressLocality": plaats,
-                                 "addressCountry": "NL"}}}
-    faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-        {"@type": "Question", "name": b["vraag"],
-         "acceptedAnswer": {"@type": "Answer", "text": (b.get("waarom") or "")[:340]}}
-        for _, b in eerste]}
+                                 "addressCountry": "NL"},
+                     **({"geo": {"@type": "GeoCoordinates", "latitude": p["lat"],
+                                 "longitude": p["lng"]}} if p.get("lat") and p.get("lng") else {}),
+                     **({"numberOfAccommodationUnits": {"@type": "QuantitativeValue",
+                          "value": won}} if won else {})}}
     brood = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Bylder.com", "item": "https://www.bylder.com/"},
         {"@type": "ListItem", "position": 2, "name": "Nieuwbouwprojecten",
@@ -469,7 +504,7 @@ Meer over de gemeente: <a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)
     rij = {"slug": slug, "path": f"/nieuwbouw-project/{slug}/", "title": titel,
            "description": desc, "og_type": "article",
            "robots": "index,follow" if indexeerbaar else "noindex,follow",
-           "ldjson": [json.dumps(x, ensure_ascii=False) for x in (art, faq, brood)],
+           "ldjson": [json.dumps(x, ensure_ascii=False) for x in (art, brood)],
            "content_kind": None}
     return slug, body, rij
 
@@ -584,6 +619,18 @@ def main():
                       key=lambda x: x["slug"])
         json.dump(vast + rest, open(pj, "w", encoding="utf8"), ensure_ascii=False, indent=1)
         open(pj, "a").write("\n")
+
+    if not DRY:
+        sm = os.path.join(ROOT, "nieuwbouw-project-sitemap.xml")
+        idx = [x for x in pages if "noindex" not in (x.get("robots") or "")]
+        rows = "".join(
+            f"  <url><loc>https://www.bylder.com{x['path']}</loc>"
+            f"<lastmod>{VANDAAG.isoformat()}</lastmod></url>\n" for x in idx)
+        open(sm, "w", encoding="utf8").write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + rows + "</urlset>\n")
+        print(f"sitemap: {len(idx)} URL's weggeschreven (stond op 4)")
 
     print(f"{'DROOGDRAAI — ' if DRY else ''}{nieuw} nieuwe pagina's, {herzien} herzien, "
           f"{len(handgeschreven)} handgeschreven ongemoeid gelaten.")
