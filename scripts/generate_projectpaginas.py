@@ -161,6 +161,22 @@ def _laad_snapshots():
 SNAPSHOTS = _laad_snapshots()
 
 
+def _laad_bag():
+    """Laatste Kadaster-meting per project-URL: panden met recent bouwjaar in de
+    directe omgeving. Bewust 'omgeving' — een bbox vangt ook de buren, en zo
+    formuleren we het ook op de pagina."""
+    uit = {}
+    for f in sorted(glob.glob(os.path.join(ROOT, "data", "bag-snapshots", "*.json"))):
+        datum = os.path.basename(f)[:-5]
+        for url, v in json.load(open(f, encoding="utf8")).items():
+            if v.get("panden"):
+                uit[url] = (datum, v)
+    return uit
+
+
+BAG = _laad_bag()
+
+
 def nl_datum(iso):
     j, m, dg = iso.split("-")
     return f"{int(dg)} {NL_MAAND[int(m) - 1]} {j}"
@@ -170,26 +186,61 @@ def verkoop_blok(p, naam):
     """Het feitenblok en het logboek. Dit is het enige op de pagina dat nergens
     anders staat: nieuwbouw.nl toont de stand, niet het verloop, en de ontwikkelaar
     heeft geen belang bij een publieke tijdlijn."""
-    metingen = SNAPSHOTS.get(p.get("url")) or []
-    if not metingen:
+    fases = p.get("_fases") or [(None, p.get("url"))]
+    per_fase = [(fn, SNAPSHOTS.get(u) or []) for fn, u in fases]
+    per_fase = [(fn, m) for fn, m in per_fase if m]
+    if not per_fase:
         return "", ""
-    datum, v = metingen[-1]
+    # gecombineerde laatste stand over alle fases
+    datum = max(m[-1][0] for _, m in per_fase)
+    v = {"eenheden": sum(m[-1][1]["eenheden"] for _, m in per_fase),
+         "beschikbaar": sum(m[-1][1]["beschikbaar"] for _, m in per_fase),
+         "fases": sum(m[-1][1].get("fases") or 1 for _, m in per_fase)}
+    v["verkocht_pct"] = round(100 * (v["eenheden"] - v["beschikbaar"]) / max(1, v["eenheden"]))
+    metingen = per_fase[0][1]
     verkocht = v["eenheden"] - v["beschikbaar"]
-    feiten = f"""<h2>{E(naam)} in cijfers</h2>
+    bag = BAG.get(p.get("url"))
+    bag_rij = ""
+    if bag:
+        bd, bv = bag
+        bag_rij = (f"<tr><th>Omgeving (Kadaster)</th><td>{bv['in_aanbouw']} panden in aanbouw, "
+                   f"{bv['opgeleverd']} recent opgeleverd &mdash; peildatum {nl_datum(bd)}</td></tr>")
+    n_fases = len(per_fase) if len(per_fase) > 1 else v.get("fases", 0)
+    fases_zin = f", verdeeld over {n_fases} fases" if n_fases > 1 else ""
+    if bag:
+        bd, bv = bag
+        bag_zin = (f" In de directe omgeving registreert het Kadaster {bv['in_aanbouw']} panden "
+                   f"in aanbouw en {bv['opgeleverd']} recent opgeleverde (nieuwste bouwjaar "
+                   f"{bv['nieuwste_bouwjaar']}).")
+    else:
+        bag_zin = ""
+    antwoord = (f'<p class="antwoord"><strong>Stand van {nl_datum(datum)}.</strong> {E(naam)} is '
+                f"voor <strong>{v['verkocht_pct']}%</strong> verkocht: {verkocht} van de "
+                f"{v['eenheden']} aangeboden woningen{fases_zin}.{bag_zin} Wij meten dit elke "
+                f"twee weken opnieuw.</p>")
+    feiten = antwoord + f"""<h2>{E(naam)} in cijfers</h2>
 <table class="feit-tabel">
 <tbody>
 <tr><th>Project telt</th><td>{p.get('woningen') or v['eenheden']} woningen</td></tr>
 <tr><th>Nu in de verkoop</th><td>{v['eenheden']}{f" woningen, verdeeld over {v['fases']} fases" if v.get('fases', 0) > 1 else " woningen"}{" &mdash; de rest is nog niet aangeboden of al buiten de verkoop" if (p.get('woningen') or 0) > v['eenheden'] else ""}</td></tr>
 <tr><th>Nog beschikbaar</th><td>{v['beschikbaar']}</td></tr>
 <tr><th>Verkocht</th><td><strong>{verkocht} ({v['verkocht_pct']}%)</strong></td></tr>
+{"".join(f"<tr><th>&nbsp;&nbsp;{E(fn)}</th><td>{m[-1][1]['eenheden'] - m[-1][1]['beschikbaar']} van {m[-1][1]['eenheden']} verkocht ({m[-1][1]['verkocht_pct']}%)</td></tr>" for fn, m in per_fase if fn)}
 <tr><th>Stand van</th><td>{nl_datum(datum)}</td></tr>
+{bag_rij}
 <tr><th>Gemeten door</th><td>Bylder, op de beschikbaarheid per fase zoals
 <a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a> die publiceert</td></tr>
 </tbody></table>
 """
 
     regels = []
-    for i, (dt, m) in enumerate(reversed(metingen)):
+    if len(per_fase) > 1:
+        for fn, m in per_fase:
+            dt, mm = m[-1]
+            regels.append(f"<li><strong>{nl_datum(dt)}</strong> &middot; {E(fn)}: nog "
+                          f"{mm['beschikbaar']} van de {mm['eenheden']} beschikbaar "
+                          f"({mm['verkocht_pct']}% verkocht)</li>")
+    for i, (dt, m) in enumerate(reversed(metingen if len(per_fase) == 1 else [])):
         vorig = metingen[len(metingen) - i - 2][1] if len(metingen) - i - 2 >= 0 else None
         verschil = ""
         if vorig and vorig["beschikbaar"] != m["beschikbaar"]:
@@ -362,6 +413,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     won = p.get("woningen") or 0
     slug = slugify(naam, p["plaats"])
     opl_tekst, lo, hi, grondslag = oplever_schatting(p)
+    plaats_ruw = p["plaats"]
     hard = p.get("oplevering_bron") == "oplevertrefwoord"
     reg = f"?utm_source=bylder-site&amp;utm_campaign=project-{slug}"
     app = "https://app.bylder.com/registreer" + reg
@@ -445,6 +497,27 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             f"plaatst dan een Kluskist in de wijk: gereedschap, schroeven, pluggen en tape, "
             f"gratis te leen bij een bewoner. Wil jij de kist in huis nemen?</p>"
             f'<p><a class="cta-primary" href="{app}-kluskist">Vraag de Kluskist aan</a></p>')
+    # Vraag-antwoord: zichtbaar op de pagina, en het schema zegt hetzelfde —
+    # de vorige versie had een FAQ-schema over tekst die nergens stond.
+    metingen_faq = SNAPSHOTS.get(p.get("url")) or []
+    faq_items = []
+    if p.get("oplevering") and p.get("oplevering_bron") == "oplevertrefwoord":
+        faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
+            f"Het project noemt zelf {p['oplevering']} als opleverjaar. Wij meten elke twee "
+            f"weken de verkoopstand en de bouwstatus in het Kadaster."))
+    else:
+        faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
+            f"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering "
+            f"{opl_tekst}, op basis van {grondslag}. Wij meten elke twee weken de bouwstatus."))
+    if metingen_faq:
+        fd, fv = metingen_faq[-1]
+        faq_items.append((f"Hoeveel woningen zijn er nog beschikbaar in {naam}?",
+            f"Stand {nl_datum(fd)}: nog {fv['beschikbaar']} van de {fv['eenheden']} aangeboden "
+            f"woningen beschikbaar ({fv['verkocht_pct']}% verkocht). Gemeten door Bylder op de "
+            f"beschikbaarheid per fase."))
+    faq_html = "<h2>Veelgestelde vragen over " + E(naam) + "</h2>" + "".join(
+        f"<h3>{E(q)}</h3><p>{E(ant)}</p>" for q, ant in faq_items)
+
     aup_html = auping_blok(p, E(naam), slug)
     wnk = lokale_winkels(wk, p)
     wnk_html = ""
@@ -483,6 +556,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
 {log_html}
 
+{faq_html}
+
 <h2>Keuzemomenten voor {E(naam)}</h2>
 <table class="feit-tabel">
 <thead><tr><th>Wanneer</th><th>Wat sluit</th><th>Waarom het uitmaakt</th></tr></thead>
@@ -501,10 +576,11 @@ je eigen <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is
 {kluskist_html}
 
 <div class="card">
-<h2>Koop of woon je in {E(naam)}?</h2>
-<p>Bylder houdt je keuzes, deadlines en documenten op &eacute;&eacute;n plek: bouwtekening,
-meerwerklijst, offertes getoetst aan marktprijzen, garanties. Gratis.</p>
-<p><a class="cta-primary" href="{app}">Maak een gratis account</a></p></div>
+<h2>Woning gekocht in {E(naam)}?</h2>
+<p>Wij volgen de bouw en je deadlines, en je bespaart bij de afwerking en inrichting:
+ledenkortingen, offertes getoetst aan marktprijzen, garanties op &eacute;&eacute;n plek.
+Elke nieuwe meting van {E(naam)} zie je terug in je dossier. Gratis.</p>
+<p><a class="cta-primary" href="{app}">Volg {E(naam)} gratis</a></p></div>
 
 <p style="font-size:13px;color:rgba(61,46,30,0.72);">Verkoopstand gemeten door Bylder op
 <a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a>. Landelijke
@@ -513,9 +589,31 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
 <a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)}</a>.</p>
 </main>"""
 
-    titel = f"{naam} ({plaats}), {aant} — keuzes, meerwerk en oplevering | Bylder.com"
-    desc = (f"{naam} in {plaats}: {aant}, oplevering {opl_tekst}. Welke keuzes wanneer sluiten, "
-            f"welk meerwerk verloopt v\u00f3\u00f3r de sleutel, en welke vakbedrijven in de buurt zitten.")
+    # De titel doet rankingwerk en wint vertrouwen; de description is advertentie-
+    # ruimte en praat tegen de koper (Daniels leestest: wie is ingeloot klikt op
+    # korting bij winkels in de buurt, niet op het ambtelijke resultaat). Waar het
+    # project grotendeels verkocht is, is de zoeker vrijwel zeker een koper en
+    # krijgt ook de titel de belofte. GSC beslecht per pagina wie gelijk had.
+    pct_nu = (SNAPSHOTS.get(p.get("url")) or [(None, None)])[-1][1]
+    pct_nu = pct_nu.get("verkocht_pct") if pct_nu else None
+    winkel_dichtbij = plaats_ruw in AUPING or plaats_ruw in AUPING_NAAST
+    if pct_nu is not None and pct_nu >= 85:
+        if winkel_dichtbij:
+            titel = f"Gekocht in {naam} ({plaats})? Korting bij woonwinkels in de buurt | Bylder"
+        else:
+            titel = f"Gekocht in {naam} ({plaats})? Bespaar op afwerking en inrichting | Bylder"
+        desc = (f"Woning gekocht in {naam}? Wij volgen de bouw voor je \u00e9n je bespaart op "
+                f"afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. "
+                f"Gratis.")
+    elif pct_nu is not None:
+        titel = f"{naam}, {plaats}: {pct_nu}% verkocht — oplevering en bouwstatus | Bylder"
+        desc = (f"{naam} kopen of al gekocht? Wij meten de verkoopstand elke twee weken "
+                f"({pct_nu}% verkocht) en helpen kopers besparen op afwerking en inrichting. "
+                f"Onafhankelijk, gratis.")
+    else:
+        titel = f"{naam} ({plaats}), {aant} — oplevering en bouwstatus | Bylder.com"
+        desc = (f"{naam} in {plaats}: {aant}, oplevering {opl_tekst}. Wij volgen de bouwstatus "
+                f"en helpen kopers besparen op afwerking en inrichting. Gratis.")
     art = {"@context": "https://schema.org", "@type": "Article",
            "headline": f"{naam}, {plaats} — wat er ná de handtekening komt",
            "description": desc, "dateModified": VANDAAG.isoformat(),
@@ -530,6 +628,9 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
                                  "longitude": p["lng"]}} if p.get("lat") and p.get("lng") else {}),
                      **({"numberOfAccommodationUnits": {"@type": "QuantitativeValue",
                           "value": won}} if won else {})}}
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q,
+         "acceptedAnswer": {"@type": "Answer", "text": ant}} for q, ant in faq_items]}
     brood = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Bylder.com", "item": "https://www.bylder.com/"},
         {"@type": "ListItem", "position": 2, "name": "Nieuwbouwprojecten",
@@ -540,7 +641,7 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
     rij = {"slug": slug, "path": f"/nieuwbouw-project/{slug}/", "title": titel,
            "description": desc, "og_type": "article",
            "robots": "index,follow" if indexeerbaar else "noindex,follow",
-           "ldjson": [json.dumps(x, ensure_ascii=False) for x in (art, brood)],
+           "ldjson": [json.dumps(x, ensure_ascii=False) for x in (art, faq_schema, brood)],
            "content_kind": None}
     return slug, body, rij
 
@@ -614,6 +715,34 @@ def main():
                   if (p.get("woningen") or 0) >= poort(p)
                   and (not ALLEEN_REGIO or p["plaats"] in prio)]
 
+    # Niemand zoekt "zwanenpark fase 2" — men zoekt "zwanenpark vlaardingen".
+    # Drie bijna-identieke fase-URL's verdringen elkaar; één pagina met de fases
+    # als rijen wint. De oude fase-adressen krijgen een 301 in vercel.json.
+    def fasebasis(n):
+        b = re.sub(r"\s*[-–]?\s*fase\s*\d+\w*\s*$", "", n, flags=re.I).strip()
+        return b if len(b) > 3 else n
+
+    groepen = collections.defaultdict(list)
+    for q in kandidaten:
+        groepen[(fasebasis(q["naam"]).lower(), q["plaats"])].append(q)
+    samengevoegd, oude_slugs = [], {}
+    for (bnaam, pl), leden in groepen.items():
+        if len(leden) == 1:
+            samengevoegd.append(leden[0]); continue
+        leden.sort(key=lambda q: q["naam"])
+        hoofd = max(leden, key=lambda q: q.get("woningen") or 0)
+        f = dict(hoofd)
+        f["naam"] = fasebasis(hoofd["naam"])
+        f["woningen"] = sum(q.get("woningen") or 0 for q in leden) or None
+        f["_fases"] = [(q["naam"], q["url"]) for q in leden]
+        nieuw_slug = slugify(f["naam"], pl)
+        for q in leden:
+            oud = slugify(q["naam"], q["plaats"])
+            if oud != nieuw_slug:
+                oude_slugs[oud] = nieuw_slug
+        samengevoegd.append(f)
+    kandidaten = samengevoegd
+
     print(f"{len(projecten)} projecten · poort >= {MIN_WONINGEN} woningen"
           f"{' · alleen Rotterdamse straal' if ALLEEN_REGIO else ''} → {len(kandidaten)} kandidaten")
     gem_tel = collections.Counter(q["plaats"] for q in kandidaten)
@@ -638,6 +767,28 @@ def main():
             pages = [x for x in pages if x["slug"] != slug] + [rij]
             nieuw += 0 if bestond else 1
             herzien += 1 if bestond else 0
+
+    if not DRY and oude_slugs:
+        pages = [x for x in pages if x["slug"] not in oude_slugs]
+        for oud in oude_slugs:
+            f = os.path.join(CLUSTER, "content", f"{oud}.html")
+            if os.path.exists(f):
+                os.remove(f)
+        vj = os.path.join(ROOT, "vercel.json")
+        vd = json.load(open(vj, encoding="utf8"))
+        bestaand = {r["source"] for r in vd.get("redirects", [])}
+        toegevoegd = 0
+        for oud, doel in oude_slugs.items():
+            src = f"/nieuwbouw-project/{oud}/"
+            if src not in bestaand:
+                vd.setdefault("redirects", []).append(
+                    {"source": src, "destination": f"/nieuwbouw-project/{doel}/",
+                     "permanent": True})
+                toegevoegd += 1
+        if toegevoegd:
+            json.dump(vd, open(vj, "w", encoding="utf8"), ensure_ascii=False, indent=2)
+            open(vj, "a").write("\n")
+        print(f"fases samengevoegd: {len(oude_slugs)} oude adressen → 301 ({toegevoegd} nieuw in vercel.json)")
 
     if not DRY and hub_rijen:
         open(os.path.join(CLUSTER, "content", "index.html"), "w", encoding="utf8").write(

@@ -376,6 +376,41 @@
       "source": "/partners/word-vakpartner/",
       "destination": "/voor-vakbedrijven/",
       "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/boomgaerde-fase-2-westland/",
+      "destination": "/nieuwbouw-project/boomgaerde-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/boomgaerde-fase-3-westland/",
+      "destination": "/nieuwbouw-project/boomgaerde-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zwanenpark-fase-1-vlaardingen/",
+      "destination": "/nieuwbouw-project/zwanenpark-vlaardingen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zwanenpark-fase-2-vlaardingen/",
+      "destination": "/nieuwbouw-project/zwanenpark-vlaardingen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zwanenpark-fase-3-vlaardingen/",
+      "destination": "/nieuwbouw-project/zwanenpark-vlaardingen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-bostuinen-fase-1-zwijndrecht/",
+      "destination": "/nieuwbouw-project/de-bostuinen-zwijndrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-bostuinen-fase-2-zwijndrecht/",
+      "destination": "/nieuwbouw-project/de-bostuinen-zwijndrecht/",
+      "permanent": true
     }
   ],
   "rewrites": [
