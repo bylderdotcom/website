@@ -526,9 +526,18 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                      f"{d:.0f} km"
                      + (f", &#9733;{w['rating']} uit {w['reviews']} beoordelingen" if w.get("rating") else "")
                      + "</li>" for d, w in wnk)
+        vraag = (f'<div class="card"><h3>Nog geen Bylder-korting bij een van deze winkels?</h3>'
+                 f"<p>Bylder-leden krijgen ledenkorting bij aangesloten winkels en merken. Wil "
+                 f"jij korting bij een winkel die nog niet meedoet? Maak een gratis account "
+                 f"&mdash; wij vragen je bij welke winkels jij korting wilt, bundelen die vraag "
+                 f"met je buren uit {E(naam)} en nodigen de winkel uit. Hoe meer kopers "
+                 f"meedoen, hoe sterker de uitnodiging.</p>"
+                 f'<p><a class="cta-primary" href="{app}-winkelwens">Vraag korting aan bij '
+                 f"winkels in de buurt</a></p></div>")
         wnk_html = (f"<h2>Woonwinkels binnen 15 km</h2><ul>{li}</ul>"
                     f'<p class="noot">Gespreid over categorie&euml;n, minstens twintig '
-                    f"beoordelingen, minimaal vier sterren. Deze lijst is niet te koop.</p>")
+                    f"beoordelingen, minimaal vier sterren. Deze lijst is niet te koop.</p>"
+                    + vraag)
 
     # --- buurprojecten: per gemeente andere namen ---
     buur_html = ""
@@ -596,12 +605,8 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
     # krijgt ook de titel de belofte. GSC beslecht per pagina wie gelijk had.
     pct_nu = (SNAPSHOTS.get(p.get("url")) or [(None, None)])[-1][1]
     pct_nu = pct_nu.get("verkocht_pct") if pct_nu else None
-    winkel_dichtbij = plaats_ruw in AUPING or plaats_ruw in AUPING_NAAST
     if pct_nu is not None and pct_nu >= 85:
-        if winkel_dichtbij:
-            titel = f"Gekocht in {naam} ({plaats})? Korting bij woonwinkels in de buurt | Bylder"
-        else:
-            titel = f"Gekocht in {naam} ({plaats})? Bespaar op afwerking en inrichting | Bylder"
+        titel = f"Gekocht in {naam} ({plaats})? Korting bij woonwinkels in de buurt | Bylder"
         desc = (f"Woning gekocht in {naam}? Wij volgen de bouw voor je \u00e9n je bespaart op "
                 f"afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. "
                 f"Gratis.")
