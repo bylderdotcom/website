@@ -391,7 +391,7 @@ samengesteld door Bylder &mdash; onafhankelijk, wij verkopen hier geen woningen.
 
 <h2>Wanneer wordt er opgeleverd?</h2>
 {opl_blok}
-<p class="advies">Een opleverdatum in nieuwbouw staat zelden vast. De bouwtijd staat in je
+<p class="noot">Een opleverdatum in nieuwbouw staat zelden vast. De bouwtijd staat in je
 koop-/aannemingsovereenkomst in <a href="/kennisbank/bouwtechniek/">werkbare werkdagen</a>: een
 dag telt als onwerkbaar zodra er minstens vijf uur niet gewerkt kan worden door vorst, wind of
 regen. Je eigen koperscommunicatie is altijd leidend.</p>
@@ -415,7 +415,7 @@ definitief: meerwerk moet besteld zijn v&oacute;&oacute;r de contractuele datum.
 <table class="feit-tabel">
 <thead><tr><th>Ruimte</th><th>Keuzes</th><th>Meerwerk dat verloopt</th></tr></thead>
 <tbody>{rijen}</tbody></table>
-<p class="advies">Vaak vergeten: {E(', '.join(mw[:9]))}. Loze leidingen kosten tijdens de bouw
+<p class="noot">Vaak vergeten: {E(', '.join(mw[:9]))}. Loze leidingen kosten tijdens de bouw
 bijna niets en achteraf duizenden.</p>
 
 <h2>Wat {E(naam)} aan meerwerk kost</h2>
