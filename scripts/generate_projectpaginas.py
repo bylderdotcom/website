@@ -158,18 +158,27 @@ def auping_blok(p, naam_project, slug):
     meetpunt, niet de klik."""
     plaats = p["plaats"]
     winkelplaats = plaats if plaats in AUPING else AUPING_NAAST.get(plaats)
-    if not winkelplaats:
-        return ""
-    winkel = AUPING[winkelplaats]
-    eigen = plaats in AUPING
-    hoe = ("in " + netjes(plaats)) if eigen else (
-        "in " + netjes(winkelplaats) + ", de dichtstbijzijnde vestiging")
+    alle = ", ".join(list(AUPING.values())[:-1]) + " en " + list(AUPING.values())[-1]
+    if winkelplaats:
+        winkel = AUPING[winkelplaats]
+        hoe = ("in " + netjes(plaats)) if plaats in AUPING else (
+            "in " + netjes(winkelplaats) + ", de dichtstbijzijnde vestiging")
+        waar = (f"Kopers in {E(naam_project)} kunnen bij {E(winkel)} {hoe} terecht met de "
+                f"Bylder-korting. De actie geldt bij vier winkels: {E(alle)}.")
+        kop = f"Korting op je bed &mdash; {E(winkel)}"
+        knop = f"Toon je code voor {E(winkel)}"
+    else:
+        winkel = "de vier Auping Stores"
+        waar = (f"De korting is te verzilveren bij vier winkels: {E(alle)}. Voor {E(naam_project)} "
+                f"is dat een rit, geen ommetje &mdash; reken daarop als je gaat passen, want een "
+                f"bed koop je niet zonder erop te liggen.")
+        kop = "Korting op je bed &mdash; bij vier Auping Stores"
+        knop = "Toon je code"
     link = (f"https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site"
             f"&amp;utm_campaign=auping&amp;utm_content=project-{slug}")
-    return f"""<h2>Korting op je bed &mdash; {E(winkel)}</h2>
+    return f"""<h2>{kop}</h2>
 <p>Een bed is bij oplevering vaak de eerste grote aankoop, en het is er &eacute;&eacute;n
-die je niet kunt uitstellen: je moet ergens slapen. Kopers in {E(naam_project)} kunnen bij
-{E(winkel)} {hoe} terecht met de Bylder-korting.</p>
+die je niet kunt uitstellen: je moet ergens slapen. {waar}</p>
 <ul>
 <li><strong>10% korting</strong> op het hele assortiment &mdash; boxsprings, matrassen,
 bedframes. Geen minimumbesteding.</li>
@@ -181,7 +190,7 @@ vanaf &euro;6.500 besteding.</li>
 <p>De korting geldt op het reguliere assortiment en stapelt niet op een lopende Auping-actie
 of sale &mdash; dan geldt die prijs. Je verzilvert hem in de winkel door je persoonlijke code
 op je telefoon te tonen.</p>
-<p><a class="cta-primary" href="{link}">Toon je code voor {E(winkel)}</a></p>
+<p><a class="cta-primary" href="{link}">{knop}</a></p>
 <p style="font-size:13px;color:rgba(61,46,30,0.72);"><strong>Wat je moet weten:</strong> deze
 vier Auping Stores zijn eigendom van de oprichter van Bylder. Wij vermelden dat, omdat op deze
 site geldt dat plaatsing niet te koop is &mdash; en die regel is alleen wat waard als hij ook
