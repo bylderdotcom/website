@@ -129,6 +129,66 @@ def lokale_vakbedrijven(vb, p, straal=12, n=6):
     return res
 
 
+# De vier Auping Stores zijn eigendom van Bylder-oprichter Daniel Paaij. Daarom
+# staan ze hier mét die vermelding erbij: op elke andere plek op deze site geldt
+# dat plaatsing niet te koop is, en die claim houdt alleen stand als we het
+# zeggen wanneer het ons eigen belang raakt.
+AUPING = {
+    "s-gravenhage":         "Auping Store Den Haag Centrum",
+    "rotterdam":            "Auping Store Rotterdam Centrum",
+    "leidschendam-voorburg": "Auping Store Leidschendam",
+    "zoetermeer":           "Auping Store Zoetermeer",
+}
+# Gemeenten zonder eigen winkel, met de winkel waar ze op uitkomen.
+AUPING_NAAST = {
+    "rijswijk-zh": "s-gravenhage", "wassenaar": "s-gravenhage",
+    "voorschoten": "leidschendam-voorburg", "pijnacker-nootdorp": "zoetermeer",
+    "delft": "s-gravenhage", "westland": "s-gravenhage",
+    "midden-delfland": "s-gravenhage", "lansingerland": "zoetermeer",
+    "schiedam": "rotterdam", "vlaardingen": "rotterdam", "capelle-aan-den-ijssel": "rotterdam",
+    "barendrecht": "rotterdam", "ridderkerk": "rotterdam", "albrandswaard": "rotterdam",
+    "krimpen-aan-den-ijssel": "rotterdam", "maassluis": "rotterdam",
+}
+
+
+def auping_blok(p, naam_project, slug):
+    """De actie staat alleen op pagina's waar een koper de winkel ook echt kan
+    bereiken. De link draagt het project mee, zodat in de winkel te zien is welk
+    project een bezoeker stuurde — de code die de verkoper invoert is het
+    meetpunt, niet de klik."""
+    plaats = p["plaats"]
+    winkelplaats = plaats if plaats in AUPING else AUPING_NAAST.get(plaats)
+    if not winkelplaats:
+        return ""
+    winkel = AUPING[winkelplaats]
+    eigen = plaats in AUPING
+    hoe = ("in " + netjes(plaats)) if eigen else (
+        "in " + netjes(winkelplaats) + ", de dichtstbijzijnde vestiging")
+    link = (f"https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site"
+            f"&amp;utm_campaign=auping&amp;utm_content=project-{slug}")
+    return f"""<h2>Korting op je bed &mdash; {E(winkel)}</h2>
+<p>Een bed is bij oplevering vaak de eerste grote aankoop, en het is er &eacute;&eacute;n
+die je niet kunt uitstellen: je moet ergens slapen. Kopers in {E(naam_project)} kunnen bij
+{E(winkel)} {hoe} terecht met de Bylder-korting.</p>
+<ul>
+<li><strong>10% korting</strong> op het hele assortiment &mdash; boxsprings, matrassen,
+bedframes. Geen minimumbesteding.</li>
+<li><strong>Gratis leenbed</strong> tijdens de levertijd vanaf &euro;5.000. Handig als je
+oplevering opschuift en je oude bed al weg is.</li>
+<li><strong>Overnachting met ontbijt voor twee</strong> bij Hotel Haverkist in Den Bosch,
+vanaf &euro;6.500 besteding.</li>
+</ul>
+<p>De korting geldt op het reguliere assortiment en stapelt niet op een lopende Auping-actie
+of sale &mdash; dan geldt die prijs. Je verzilvert hem in de winkel door je persoonlijke code
+op je telefoon te tonen.</p>
+<p><a class="cta-primary" href="{link}">Toon je code voor {E(winkel)}</a></p>
+<p style="font-size:13px;color:rgba(61,46,30,0.72);"><strong>Wat je moet weten:</strong> deze
+vier Auping Stores zijn eigendom van de oprichter van Bylder. Wij vermelden dat, omdat op deze
+site geldt dat plaatsing niet te koop is &mdash; en die regel is alleen wat waard als hij ook
+opgaat wanneer het ons eigen belang raakt. De korting hierboven telt niet mee in welke winkels
+wij verderop op deze pagina noemen; die lijst komt uit afstand en beoordelingen.</p>"""
+
+
 def lokale_winkels(wk, p, straal=15, n=6):
     """Woonwinkels en interieurzaken in de buurt. Bewust GEEN prefab of
     hypotheekadvies: prefab hoort bij verbouwen (dakkapel, aanbouw) en niet bij
@@ -275,6 +335,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         f". Het venster is kort: geregeld v&oacute;&oacute;r de meerwerkdeadline hierboven, niet "
         f"erna. Reken eerst uit wat je w&iacute;lt, leg daarna vast wat je k&uacute;nt.</p>")
 
+    aup_html = auping_blok(p, E(naam), slug)
     wnk = lokale_winkels(wk, p)
     wnk_html = ""
     if wnk:
@@ -354,6 +415,7 @@ bijna niets en achteraf duizenden.</p>
 {buur_html}
 {lok_html}
 {wnk_html}
+{aup_html}
 
 <h2>De Kluskist &middot; komt bij oplevering</h2>
 <p>Als de eerste woningen in {E(naam)} worden opgeleverd, klust iedereen tegelijk. Bylder plaatst
@@ -463,8 +525,13 @@ def main():
         json.dump(sorted(handgeschreven), open(HANDWERK, "w", encoding="utf8"), indent=1)
 
     prio = ns.KERN | ns.RING
+    def poort(p):
+        # Waar een Auping Store staat willen we hoe dan ook gevonden worden, dus
+        # daar mag een kleiner project ook een pagina krijgen.
+        return 25 if p["plaats"] in AUPING else MIN_WONINGEN
+
     kandidaten = [p for p in projecten
-                  if (p.get("woningen") or 0) >= MIN_WONINGEN
+                  if (p.get("woningen") or 0) >= poort(p)
                   and (not ALLEEN_REGIO or p["plaats"] in prio)]
 
     print(f"{len(projecten)} projecten · poort >= {MIN_WONINGEN} woningen"

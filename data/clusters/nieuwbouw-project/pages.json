@@ -3,7 +3,7 @@
   "slug": "index",
   "path": "/nieuwbouw-project/",
   "title": "Nieuwbouwprojecten: advies per project | Bylder.com",
-  "description": "Wij volgen 976 nieuwbouwprojecten in Nederland. Voor 28 staat uitgewerkt welke keuzes een koper na het tekenen maakt, wanneer ze sluiten en wat ze kosten.",
+  "description": "Wij volgen 976 nieuwbouwprojecten in Nederland. Voor 36 staat uitgewerkt welke keuzes een koper na het tekenen maakt, wanneer ze sluiten en wat ze kosten.",
   "og_type": "website",
   "robots": "index,follow",
   "ldjson": [
@@ -164,6 +164,20 @@
   ]
  },
  {
+  "slug": "duinhil-s-gravenhage",
+  "path": "/nieuwbouw-project/duinhil-s-gravenhage/",
+  "title": "Duinhil (Den Haag), 40 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Duinhil in Den Haag: 40 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Duinhil, Den Haag — wat er ná de handtekening komt\", \"description\": \"Duinhil in Den Haag: 40 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Duinhil\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Duinhil\", \"item\": \"https://www.bylder.com/nieuwbouw-project/duinhil-s-gravenhage/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
   "slug": "edisonpark-zoetermeer",
   "path": "/nieuwbouw-project/edisonpark-zoetermeer/",
   "title": "Edisonpark (Zoetermeer), 550 woningen — keuzes, meerwerk en oplevering | Bylder.com",
@@ -290,6 +304,20 @@
   "content_kind": null
  },
  {
+  "slug": "monchy-den-haag-s-gravenhage",
+  "path": "/nieuwbouw-project/monchy-den-haag-s-gravenhage/",
+  "title": "Monchy Den Haag (Den Haag), 43 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Monchy Den Haag in Den Haag: 43 woningen, oplevering rond 2027. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Monchy Den Haag, Den Haag — wat er ná de handtekening komt\", \"description\": \"Monchy Den Haag in Den Haag: 43 woningen, oplevering rond 2027. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Monchy Den Haag\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Monchy Den Haag\", \"item\": \"https://www.bylder.com/nieuwbouw-project/monchy-den-haag-s-gravenhage/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
   "slug": "new-maas-rotterdam",
   "path": "/nieuwbouw-project/new-maas-rotterdam/",
   "title": "New Maas (Rotterdam), 176 woningen — keuzes, meerwerk en oplevering | Bylder.com",
@@ -300,6 +328,34 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"New Maas, Rotterdam — wat er ná de handtekening komt\", \"description\": \"New Maas in Rotterdam: 176 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"New Maas\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"New Maas\", \"item\": \"https://www.bylder.com/nieuwbouw-project/new-maas-rotterdam/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "nieuw-kralingen-aan-de-boezem-ii-rotterdam",
+  "path": "/nieuwbouw-project/nieuw-kralingen-aan-de-boezem-ii-rotterdam/",
+  "title": "Nieuw Kralingen Aan De Boezem Ii (Rotterdam), 36 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Nieuw Kralingen Aan De Boezem Ii in Rotterdam: 36 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Nieuw Kralingen Aan De Boezem Ii, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Nieuw Kralingen Aan De Boezem Ii in Rotterdam: 36 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Nieuw Kralingen Aan De Boezem Ii\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Nieuw Kralingen Aan De Boezem Ii\", \"item\": \"https://www.bylder.com/nieuwbouw-project/nieuw-kralingen-aan-de-boezem-ii-rotterdam/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "nieuw-kralingen-in-de-lanen-i-rotterdam",
+  "path": "/nieuwbouw-project/nieuw-kralingen-in-de-lanen-i-rotterdam/",
+  "title": "Nieuw Kralingen In De Lanen I (Rotterdam), 39 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Nieuw Kralingen In De Lanen I in Rotterdam: 39 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Nieuw Kralingen In De Lanen I, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Nieuw Kralingen In De Lanen I in Rotterdam: 39 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Nieuw Kralingen In De Lanen I\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Nieuw Kralingen In De Lanen I\", \"item\": \"https://www.bylder.com/nieuwbouw-project/nieuw-kralingen-in-de-lanen-i-rotterdam/\"}]}"
   ],
   "content_kind": null
  },
@@ -332,6 +388,20 @@
   "content_kind": null
  },
  {
+  "slug": "riva-rotterdam",
+  "path": "/nieuwbouw-project/riva-rotterdam/",
+  "title": "Riva (Rotterdam), 48 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Riva in Rotterdam: 48 woningen, oplevering tussen 2026 en 2027. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Riva, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Riva in Rotterdam: 48 woningen, oplevering tussen 2026 en 2027. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Riva\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Riva\", \"item\": \"https://www.bylder.com/nieuwbouw-project/riva-rotterdam/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
   "slug": "rotterdam-tree-house-koopappartementen-rotterdam",
   "path": "/nieuwbouw-project/rotterdam-tree-house-koopappartementen-rotterdam/",
   "title": "Rotterdam Tree House Koopappartementen (Rotterdam), 127 woningen — keuzes, meerwerk en oplevering | Bylder.com",
@@ -342,6 +412,20 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Rotterdam Tree House Koopappartementen, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Rotterdam Tree House Koopappartementen in Rotterdam: 127 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Rotterdam Tree House Koopappartementen\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Rotterdam Tree House Koopappartementen\", \"item\": \"https://www.bylder.com/nieuwbouw-project/rotterdam-tree-house-koopappartementen-rotterdam/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "soeterdael-zoetermeer",
+  "path": "/nieuwbouw-project/soeterdael-zoetermeer/",
+  "title": "Soeterdael (Zoetermeer), 29 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Soeterdael in Zoetermeer: 29 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Soeterdael, Zoetermeer — wat er ná de handtekening komt\", \"description\": \"Soeterdael in Zoetermeer: 29 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Soeterdael\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zoetermeer\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Soeterdael\", \"item\": \"https://www.bylder.com/nieuwbouw-project/soeterdael-zoetermeer/\"}]}"
   ],
   "content_kind": null
  },
@@ -370,6 +454,34 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Terrazza, Westland — wat er ná de handtekening komt\", \"description\": \"Terrazza in Westland: 68 woningen, oplevering rond 2027. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Terrazza\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Westland\", \"addressCountry\": \"NL\"}}}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Terrazza\", \"item\": \"https://www.bylder.com/nieuwbouw-project/terrazza-westland/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "timber-rotterdam",
+  "path": "/nieuwbouw-project/timber-rotterdam/",
+  "title": "Timber (Rotterdam), 38 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Timber in Rotterdam: 38 woningen, oplevering in 2027. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Timber, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Timber in Rotterdam: 38 woningen, oplevering in 2027. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Timber\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Timber\", \"item\": \"https://www.bylder.com/nieuwbouw-project/timber-rotterdam/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "vlietpark-fase-2-rotterdam",
+  "path": "/nieuwbouw-project/vlietpark-fase-2-rotterdam/",
+  "title": "Vlietpark Fase 2 (Rotterdam), 26 woningen — keuzes, meerwerk en oplevering | Bylder.com",
+  "description": "Vlietpark Fase 2 in Rotterdam: 26 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Vlietpark Fase 2, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Vlietpark Fase 2 in Rotterdam: 26 woningen, oplevering tussen 2027 en 2028. Welke keuzes wanneer sluiten, welk meerwerk verloopt vóór de sleutel, en welke vakbedrijven in de buurt zitten.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\"}, \"about\": {\"@type\": \"Residence\", \"name\": \"Vlietpark Fase 2\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Casco opleveren of via de aannemer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Casco kopen geeft vrijheid en meestal een lagere prijs, maar je regelt zelf de afstemming tussen keukenleverancier, loodgieter en elektricien — en de aansluitpunten liggen dan al vast.\"}}, {\"@type\": \"Question\", \"name\": \"Komt de wasmachine hier of in de badkamer?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit is de beslissing waar alle andere aan hangen. Een wasopstelling vraagt water, een afvoer, een geaarde groep en ventilatie. Verplaatsen ná de oplevering betekent leidingwerk door een afgewerkte vloer.\"}}, {\"@type\": \"Question\", \"name\": \"Wordt het opslag of een verblijfsruimte?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Dit bepaalt alle eisen die daarna volgen. Een verblijfsruimte moet voldoen aan eisen voor plafondhoogte, daglicht, ventilatie en vluchtroute; een bergzolder niet. Wie halverwege van gedachten verandert, betaalt twee keer.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Vlietpark Fase 2\", \"item\": \"https://www.bylder.com/nieuwbouw-project/vlietpark-fase-2-rotterdam/\"}]}"
   ],
   "content_kind": null
  },
