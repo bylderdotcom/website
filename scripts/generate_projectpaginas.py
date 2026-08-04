@@ -452,9 +452,9 @@ def main():
 
     print(f"{'DROOGDRAAI — ' if DRY else ''}{nieuw} nieuwe pagina's, {herzien} herzien, "
           f"{len(handgeschreven)} handgeschreven ongemoeid gelaten.")
-    print("Pagina's staan op index,follow. Gemeten tekstuniciteit: 54% (kennisbank 91%,
-"
-          "de uit de index gehaalde profielen 35%). Verkoopdata per project tilt dit hoger.")
+    print("Pagina's staan op index,follow. Gemeten tekstuniciteit: 54% "
+          "(kennisbank 91%, de uit de index gehaalde profielen 35%). "
+          "Verkoopdata per project tilt dit hoger.")
     per = collections.Counter(netjes(p["plaats"]) for p in kandidaten)
     print("\ntop-plaatsen:", ", ".join(f"{g} ({n})" for g, n in per.most_common(8)))
 
