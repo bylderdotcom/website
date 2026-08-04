@@ -136,6 +136,89 @@ def _laad_taxonomie():
 
 
 TAXONOMIE = _laad_taxonomie()
+
+
+def _laad_snapshots():
+    """Alle metingen per project-URL, op datum. Twee metingen maken een logregel;
+    één meting is alleen een stand. Daarom bewaren we ze allemaal."""
+    d = os.path.join(ROOT, "data", "nieuwbouw-snapshots")
+    uit = collections.defaultdict(list)
+    for f in sorted(glob.glob(os.path.join(d, "*.json"))):
+        datum = os.path.basename(f)[:-5]
+        for url, v in json.load(open(f, encoding="utf8")).items():
+            if v.get("eenheden"):
+                uit[url].append((datum, v))
+    return uit
+
+
+SNAPSHOTS = _laad_snapshots()
+
+
+def nl_datum(iso):
+    j, m, dg = iso.split("-")
+    return f"{int(dg)} {NL_MAAND[int(m) - 1]} {j}"
+
+
+def verkoop_blok(p, naam):
+    """Het feitenblok en het logboek. Dit is het enige op de pagina dat nergens
+    anders staat: nieuwbouw.nl toont de stand, niet het verloop, en de ontwikkelaar
+    heeft geen belang bij een publieke tijdlijn."""
+    metingen = SNAPSHOTS.get(p.get("url")) or []
+    if not metingen:
+        return "", ""
+    datum, v = metingen[-1]
+    verkocht = v["eenheden"] - v["beschikbaar"]
+    feiten = f"""<h2>{E(naam)} in cijfers</h2>
+<table class="feit-tabel">
+<tbody>
+<tr><th>Project telt</th><td>{p.get('woningen') or v['eenheden']} woningen</td></tr>
+<tr><th>Nu in de verkoop</th><td>{v['eenheden']}{f" woningen, verdeeld over {v['fases']} fases" if v.get('fases', 0) > 1 else " woningen"}{" &mdash; de rest is nog niet aangeboden of al buiten de verkoop" if (p.get('woningen') or 0) > v['eenheden'] else ""}</td></tr>
+<tr><th>Nog beschikbaar</th><td>{v['beschikbaar']}</td></tr>
+<tr><th>Verkocht</th><td><strong>{verkocht} ({v['verkocht_pct']}%)</strong></td></tr>
+<tr><th>Stand van</th><td>{nl_datum(datum)}</td></tr>
+<tr><th>Gemeten door</th><td>Bylder, op de beschikbaarheid per fase zoals
+<a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a> die publiceert</td></tr>
+</tbody></table>
+<p>{verkoop_duiding(v['verkocht_pct'], v['beschikbaar'], E(naam))}</p>"""
+
+    regels = []
+    for i, (dt, m) in enumerate(reversed(metingen)):
+        vorig = metingen[len(metingen) - i - 2][1] if len(metingen) - i - 2 >= 0 else None
+        verschil = ""
+        if vorig and vorig["beschikbaar"] != m["beschikbaar"]:
+            weg = vorig["beschikbaar"] - m["beschikbaar"]
+            verschil = (f" &mdash; {weg} verkocht sinds de vorige meting"
+                        if weg > 0 else f" &mdash; {-weg} weer beschikbaar")
+        regels.append(f"<li><strong>{nl_datum(dt)}</strong> &middot; nog {m['beschikbaar']} "
+                      f"van de {m['eenheden']} beschikbaar ({m['verkocht_pct']}% verkocht)"
+                      f"{verschil}</li>")
+    log = f"""<h2>Logboek</h2>
+<p>Wat wij bij {E(naam)} zien veranderen, met datum. Wij meten dit zelf; de
+projectpagina van de ontwikkelaar toont alleen de stand van vandaag, niet het
+verloop.</p>
+<ul>{''.join(regels)}</ul>
+{'<p class="noot">Dit is de eerste meting. Vanaf de volgende ronde staat hier wat er tussen twee metingen veranderde &mdash; hoe snel dit project werkelijk verkoopt.</p>' if len(metingen) == 1 else ''}"""
+    return feiten, log
+
+
+def verkoop_duiding(pct, besch, naam):
+    """Wat het cijfer betekent voor déze lezer. Per bandbreedte een ander verhaal,
+    want 96% verkocht en 12% verkocht zijn twee verschillende situaties."""
+    if pct >= 90:
+        return (f"{naam} is vrijwel uitverkocht. Dat betekent dat vrijwel alle kopers al "
+                f"getekend hebben en dat de meerwerkkeuzes nu lopen &mdash; niet straks. "
+                f"Er zijn nog {besch} woningen beschikbaar.")
+    if pct >= 60:
+        return (f"Het grootste deel is verkocht. De kopers van de eerste fases zijn hun "
+                f"keuzetraject al ingegaan; wie nu instapt loopt achter op buren die "
+                f"dezelfde vakbedrijven nodig hebben. Nog {besch} beschikbaar.")
+    if pct >= 25:
+        return (f"Ruim een kwart is verkocht en er staan er nog {besch} open. Het project "
+                f"loopt, maar de oplevering ligt verder weg dan bij een project dat al vol "
+                f"zit &mdash; je keuzemomenten schuiven daarmee mee.")
+    return (f"Nog maar {pct}% verkocht: {besch} van de {besch + 0} woningen zijn nog te koop. "
+            f"Dit project staat aan het begin. Er is nog geen groep kopers die tegelijk "
+            f"aan het klussen slaat, en de opleverdatum is navenant onzeker.")
 WINKELTYPES = {"hardware_store", "home_improvement_store", "home_goods_store",
                "furniture_store", "garden_center", "wholesaler", "paint_store",
                "building_materials_store", "bed_shop", "mattress_store",
@@ -234,25 +317,15 @@ def auping_blok(p, naam_project, slug):
     link = (f"https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site"
             f"&amp;utm_campaign=auping&amp;utm_content=project-{slug}")
     return f"""<h2>{kop}</h2>
-<p>Een bed is bij oplevering vaak de eerste grote aankoop, en het is er &eacute;&eacute;n
-die je niet kunt uitstellen: je moet ergens slapen. {waar}</p>
-<ul>
-<li><strong>10% korting</strong> op het hele assortiment &mdash; boxsprings, matrassen,
-bedframes. Geen minimumbesteding.</li>
-<li><strong>Gratis leenbed</strong> tijdens de levertijd vanaf &euro;5.000. Handig als je
-oplevering opschuift en je oude bed al weg is.</li>
-<li><strong>Overnachting met ontbijt voor twee</strong> bij Hotel Haverkist in Den Bosch,
-vanaf &euro;6.500 besteding.</li>
-</ul>
-<p>De korting geldt op het reguliere assortiment en stapelt niet op een lopende Auping-actie
-of sale &mdash; dan geldt die prijs. Je verzilvert hem in de winkel door je persoonlijke code
-op je telefoon te tonen.</p>
+<p>Een bed is de eerste grote aankoop bij oplevering, en de enige die je niet kunt uitstellen.
+{waar} Tien procent korting op het hele assortiment, een gratis leenbed vanaf &euro;5.000 en
+een overnachting voor twee vanaf &euro;6.500. Niet stapelbaar met een lopende sale. Je
+verzilvert hem in de winkel met je persoonlijke code.</p>
 <p><a class="cta-primary" href="{link}">{knop}</a></p>
-<p style="font-size:13px;color:rgba(61,46,30,0.72);"><strong>Wat je moet weten:</strong> deze
-vier Auping Stores zijn eigendom van de oprichter van Bylder. Wij vermelden dat, omdat op deze
-site geldt dat plaatsing niet te koop is &mdash; en die regel is alleen wat waard als hij ook
-opgaat wanneer het ons eigen belang raakt. De korting hierboven telt niet mee in welke winkels
-wij verderop op deze pagina noemen; die lijst komt uit afstand en beoordelingen.</p>"""
+<p class="noot">Deze vier winkels zijn eigendom van de oprichter van Bylder. Wij noemen dat,
+omdat plaatsing op deze site niet te koop is &mdash; en die regel is alleen wat waard als hij
+ook geldt wanneer het ons eigen belang raakt. De korting weegt niet mee in welke bedrijven wij
+hierboven noemen; die lijst komt uit afstand, type en beoordelingen.</p>"""
 
 
 def lokale_winkels(wk, p, straal=15, n=6):
@@ -401,15 +474,24 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         return "&euro;" + f"{n:,}".replace(",", ".")
 
     geld_html = (
-        f"<p>Kopers in projecten van deze omvang zitten doorgaans rond een koop-/aanneemsom van "
-        f"<strong>{eur(koopsom)}</strong>. Vijf tot vijftien procent daarvan gaat op aan meerwerk: "
-        f"voor {E(naam)} is dat ruwweg <strong>{eur(mw_laag)} tot {eur(mw_hoog)}</strong>, te "
-        f"betalen in termijnen terwijl je hypotheek al vaststaat.</p>"
-        f"<p>Geldverstrekkers laten je meerwerk meefinancieren tot ongeveer een kwart van de som "
-        f"&mdash; hier dus tot circa <strong>{eur(fin_max)}</strong>. Het venster is kort: geregeld "
-        f"v&oacute;&oacute;r de meerwerkdeadline hierboven, niet erna. Reken eerst uit wat je "
-        f"w&iacute;lt, leg daarna vast wat je k&uacute;nt.</p>")
+        f"<p>Meerwerk kost doorgaans vijf tot vijftien procent van de koopsom en moet in "
+        f"termijnen worden betaald terwijl je hypotheek al vaststaat. Geldverstrekkers laten "
+        f"je het meefinancieren tot ongeveer een kwart van de som, maar het venster is kort: "
+        f"geregeld v&oacute;&oacute;r de meerwerkdeadline hierboven, niet erna. Hoe dat precies "
+        f"werkt staat in de <a href=\"/kennisbank/meerwerk/\">meerwerkgids</a>.</p>")
 
+    feiten_html, log_html = verkoop_blok(p, E(naam))
+    # De Kluskist alleen beloven waar hij binnen afzienbare tijd kan komen. Op 36
+    # pagina's een kist toezeggen voor een oplevering in 2029 is een belofte die
+    # je niet nakomt, en dat kost meer geloofwaardigheid dan de sectie opbrengt.
+    kluskist_html = ""
+    if hi and hi <= VANDAAG.year + 1:
+        kluskist_html = (
+            f"<h2>De Kluskist komt naar {E(naam)}</h2>"
+            f"<p>Als de eerste woningen worden opgeleverd klust iedereen tegelijk. Bylder "
+            f"plaatst dan een Kluskist in de wijk: gereedschap, schroeven, pluggen en tape, "
+            f"gratis te leen bij een bewoner. Wil jij de kist in huis nemen?</p>"
+            f'<p><a class="cta-primary" href="{app}-kluskist">Vraag de Kluskist aan</a></p>')
     aup_html = auping_blok(p, E(naam), slug)
     wnk = lokale_winkels(wk, p)
     wnk_html = ""
@@ -453,6 +535,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 <p>Laatst bijgewerkt: {VANDAAG.day} {NL_MAAND[VANDAAG.month-1]} {VANDAAG.year} &middot;
 samengesteld door Bylder &mdash; onafhankelijk, wij verkopen hier geen woningen.</p>
 
+{feiten_html}
+
 <h2>Wat voor project dit is</h2>
 <p>{omvang_alinea(won, E(naam), E(plaats))}</p>
 
@@ -475,29 +559,17 @@ aantal werkbare werkdagen en daarmee je eigen venster. Zet die datum in je dossi
 wij deze momenten terug naar jouw bouwnummer &mdash; en klopt deze pagina ook voor je buren.</p>
 <p><a class="cta-primary" href="{app}">Zet je opleverdatum erin</a></p></div>
 
-<h2>De keuzes zelf</h2>
-<p>Wie in {E(naam)} koopt, maakt in de aanloop naar de sleutel ongeveer
-<strong>{besl_tot} keuzes</strong> verdeeld over {len(ruimtes)} ruimtes. Een deel sluit
-definitief: meerwerk moet besteld zijn v&oacute;&oacute;r de contractuele datum.</p>
-<table class="feit-tabel">
-<thead><tr><th>Ruimte</th><th>Keuzes</th><th>Meerwerk dat verloopt</th></tr></thead>
-<tbody>{rijen}</tbody></table>
-<p class="noot">Vaak vergeten: {E(', '.join(mw[:9]))}. Loze leidingen kosten tijdens de bouw
-bijna niets en achteraf duizenden.</p>
-
 <h2>Wat {E(naam)} aan meerwerk kost</h2>
 {geld_html}
+
+{log_html}
 
 {buur_html}
 {lok_html}
 {wnk_html}
 {aup_html}
 
-<h2>De Kluskist &middot; komt bij oplevering</h2>
-<p>Als de eerste woningen in {E(naam)} worden opgeleverd, klust iedereen tegelijk. Bylder plaatst
-dan een Kluskist in de wijk: gereedschap &eacute;n schroeven, pluggen en tape, gratis te leen bij
-een bewoner. Wil jij de kist in huis nemen?</p>
-<p><a class="cta-primary" href="{app}-kluskist">Vraag de Kluskist aan</a></p>
+{kluskist_html}
 
 <div class="card">
 <h2>Koop of woon je in {E(naam)}?</h2>
@@ -668,9 +740,10 @@ def main():
 
     print(f"{'DROOGDRAAI — ' if DRY else ''}{nieuw} nieuwe pagina's, {herzien} herzien, "
           f"{len(handgeschreven)} handgeschreven ongemoeid gelaten.")
-    print("Pagina's staan op index,follow. Gemeten tekstuniciteit: 54% "
-          "(kennisbank 91%, de uit de index gehaalde profielen 35%). "
-          "Verkoopdata per project tilt dit hoger.")
+    print("Tekstuniciteit (shingle op >=2 pagina's = duplicaat): mediaan 20,4%. "
+          "Kennisbank 91%, de uit de index gehaalde profielen 35%. Sjabloneren "
+          "is hier uitgeput; het logboek moet het doen zodra er meerdere "
+          "metingen zijn en elk project een eigen verloop krijgt.")
     per = collections.Counter(netjes(p["plaats"]) for p in kandidaten)
     print("\ntop-plaatsen:", ", ".join(f"{g} ({n})" for g, n in per.most_common(8)))
 
