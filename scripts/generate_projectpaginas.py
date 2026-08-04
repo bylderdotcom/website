@@ -532,8 +532,9 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                  f"&mdash; wij vragen je bij welke winkels jij korting wilt, bundelen die vraag "
                  f"met je buren uit {E(naam)} en nodigen de winkel uit. Hoe meer kopers "
                  f"meedoen, hoe sterker de uitnodiging.</p>"
-                 f'<p><a class="cta-primary" href="{app}-winkelwens">Vraag korting aan bij '
-                 f"winkels in de buurt</a></p></div>")
+                 f'<p><a class="cta-primary" href="https://app.bylder.com/winkelwens?project={slug}'
+                 f'&amp;utm_source=bylder-site&amp;utm_campaign=project-{slug}-winkelwens">'
+                 f"Vraag korting aan bij winkels in de buurt</a></p></div>")
         wnk_html = (f"<h2>Woonwinkels binnen 15 km</h2><ul>{li}</ul>"
                     f'<p class="noot">Gespreid over categorie&euml;n, minstens twintig '
                     f"beoordelingen, minimaal vier sterren. Deze lijst is niet te koop.</p>"
