@@ -236,15 +236,27 @@ def verkoop_blok(p, naam):
     bag_rij = ""
     if bag:
         bd, bv = bag
-        bag_rij = (f"<tr><th>Omgeving (Kadaster)</th><td>{bv['in_aanbouw']} panden in aanbouw, "
-                   f"{bv['opgeleverd']} recent opgeleverd &mdash; peildatum {nl_datum(bd)}</td></tr>")
+        rij_delen = []
+        if bv["in_aanbouw"]:
+            rij_delen.append(f"{bv['in_aanbouw']} panden in aanbouw")
+        if bv["opgeleverd"]:
+            rij_delen.append(f"{bv['opgeleverd']} recent opgeleverd")
+        bag_rij = (f"<tr><th>Omgeving (Kadaster)</th><td>{', '.join(rij_delen)} &mdash; "
+                   f"peildatum {nl_datum(bd)}</td></tr>") if rij_delen else ""
     n_fases = len(per_fase) if len(per_fase) > 1 else v.get("fases", 0)
     fases_zin = f", verdeeld over {n_fases} fases" if n_fases > 1 else ""
     if bag:
         bd, bv = bag
-        bag_zin = (f" In de directe omgeving registreert het Kadaster {bv['in_aanbouw']} panden "
-                   f"in aanbouw en {bv['opgeleverd']} recent opgeleverde (nieuwste bouwjaar "
-                   f"{bv['nieuwste_bouwjaar']}).")
+        # Nul noemen leest als een storing ("het Kadaster registreert 0 panden in
+        # aanbouw"). Alleen zeggen wat er wél staat.
+        delen = []
+        if bv["in_aanbouw"]:
+            delen.append(f"{bv['in_aanbouw']} panden in aanbouw")
+        if bv["opgeleverd"]:
+            delen.append(f"{bv['opgeleverd']} recent opgeleverde")
+        bag_zin = (f" In de directe omgeving registreert het Kadaster "
+                   + " en ".join(delen)
+                   + f" (nieuwste bouwjaar {bv['nieuwste_bouwjaar']})." ) if delen else ""
     else:
         bag_zin = ""
     antwoord = (f'<p class="antwoord"><strong>Stand van {nl_datum(datum)}.</strong> {E(naam)} is '
