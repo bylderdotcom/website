@@ -67,6 +67,10 @@ def netjes_naam(p):
 
 def netjes(s):
     vast = {"s-gravenhage": "Den Haag", "rijswijk-zh": "Rijswijk", "beek-l": "Beek",
+            "leidschendam-voorburg": "Leidschendam-Voorburg",
+            "nissewaard": "Nissewaard", "capelle-aan-den-ijssel": "Capelle aan den IJssel",
+            "krimpen-aan-den-ijssel": "Krimpen aan den IJssel",
+            "alphen-aan-den-rijn": "Alphen aan den Rijn",
             "hengelo-o": "Hengelo", "laren-nh": "Laren", "middelburg-z": "Middelburg",
             "s-hertogenbosch": "'s-Hertogenbosch"}
     return vast.get(s, " ".join(w.capitalize() if len(w) > 3 else w for w in (s or "").split("-")))
@@ -809,8 +813,11 @@ def main():
     prio = ns.KERN | ns.RING
     def poort(p):
         # Waar een Auping Store staat willen we hoe dan ook gevonden worden, dus
-        # daar mag een kleiner project ook een pagina krijgen.
-        return 25 if p["plaats"] in AUPING else MIN_WONINGEN
+        # daar mag een kleiner project ook een pagina krijgen. Op 4 aug van 50 naar
+        # 25; op 5 aug naar 10, omdat Leidschendam met één project te dun was —
+        # De Pauwentuin (22 woningen) hoort er gewoon bij. Onder de 10 wordt het
+        # een pagina zonder publiek.
+        return 10 if p["plaats"] in AUPING else MIN_WONINGEN
 
     kandidaten = [p for p in projecten
                   if (p.get("woningen") or 0) >= poort(p)
