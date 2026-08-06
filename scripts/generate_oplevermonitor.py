@@ -96,6 +96,7 @@ def main():
         f"<td>{dz(p['woningen'])}</td></tr>" for p in grootste)
 
     body = f"""<main>
+<div class="container"><div class="kolom">
 <nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:14px;">
 <a href="/" style="color:inherit;">Bylder.com</a> &rsaquo; <a href="/nieuwbouw-project/" style="color:inherit;">Nieuwbouwprojecten</a> &rsaquo; Oplevermonitor</nav>
 
@@ -167,6 +168,7 @@ deadlines, oplevering en inrichten. Een account is gratis.</p>
 <p><a class="cta-primary" href="https://app.bylder.com/registreer?utm_source=bylder-site&amp;utm_campaign=oplevermonitor">Maak een gratis account</a>
 <a class="cta-primary" style="background:transparent;border:1px solid rgba(245,240,232,0.4);color:#F5F0E8;margin-left:8px;" href="/nieuwbouw-project/">Bekijk de projectpagina&rsquo;s</a></p>
 </div>
+</div></div>
 </main>"""
 
     os.makedirs(os.path.join(CLUSTER, "content"), exist_ok=True)

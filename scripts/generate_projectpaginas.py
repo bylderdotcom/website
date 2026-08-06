@@ -219,13 +219,35 @@ def nl_datum(iso):
     return f"{int(dg)} {NL_MAAND[int(m) - 1]} {j}"
 
 
+def betrouwbaar(p, meting):
+    """Of de verkoopmeting bij dít project hoort.
+
+    De bronpagina van Corner Lofts (265 woningen) bevat negen beschikbaarheids-
+    regels, waaronder "11 van 483" — dat is een ander project. Onze telling pakte
+    alles op de pagina op, waardoor het verkooppercentage een mengsel werd van
+    projecten die niets met elkaar te maken hebben. Bij 343 van de 923 gemeten
+    projecten telt de meting meer eenheden dan het project woningen heeft.
+
+    Tot de oogst per fase is afgebakend tonen we het cijfer alleen waar het
+    aannemelijk is. Liever geen getal dan een verkeerd getal — dit is precies het
+    cijfer waarop deze pagina's moeten worden geloofd.
+    """
+    won = p.get("woningen") or 0
+    eh = meting.get("eenheden") or 0
+    if not eh:
+        return False
+    if won and eh > won * 1.15:
+        return False
+    return True
+
+
 def verkoop_blok(p, naam):
     """Het feitenblok en het logboek. Dit is het enige op de pagina dat nergens
     anders staat: nieuwbouw.nl toont de stand, niet het verloop, en de ontwikkelaar
     heeft geen belang bij een publieke tijdlijn."""
     fases = p.get("_fases") or [(None, p.get("url"))]
     per_fase = [(fn, SNAPSHOTS.get(u) or []) for fn, u in fases]
-    per_fase = [(fn, m) for fn, m in per_fase if m]
+    per_fase = [(fn, m) for fn, m in per_fase if m and betrouwbaar(p, m[-1][1])]
     if not per_fase:
         return "", ""
     # gecombineerde laatste stand over alle fases
@@ -738,6 +760,7 @@ def bouw_hub(rijen, kandidaten, totaal_projecten):
             for r in sorted(per[plaats], key=lambda x: -x["_won"]))
         blokken.append(f"<h3>{E(plaats)}</h3><ul class='bedrijven'>{li}</ul>")
     return f"""<main>
+<div class="container"><div class="kolom">
 <nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:14px;">
 <a href="/" style="color:inherit;">Bylder.com</a> &rsaquo; Nieuwbouwprojecten</nav>
 <h1>Nieuwbouwprojecten &mdash; wat er n&aacute; de handtekening komt</h1>
