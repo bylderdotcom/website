@@ -232,13 +232,17 @@ def betrouwbaar(p, meting):
     aannemelijk is. Liever geen getal dan een verkeerd getal — dit is precies het
     cijfer waarop deze pagina's moeten worden geloofd.
     """
-    won = p.get("woningen") or 0
-    eh = meting.get("eenheden") or 0
-    if not eh:
-        return False
-    if won and eh > won * 1.15:
-        return False
-    return True
+    # 5 aug 2026: ONGELDIG VERKLAARD. Edisonpark en Soeterdael — twee verschillende
+    # projecten — leveren exact dezelfde vijf regels op (4 van 22, 1 van 32,
+    # 3 van 32, 21 van 53, 1 van 117). Die komen uit een gedeeld blok met andere
+    # projecten op de bronpagina, niet van het project zelf. Elke treffer heeft
+    # bovendien een prijskaart met woningtypes ervoor staan: de opmaak van een
+    # projectkaartje in een lijst.
+    #
+    # De plausibiliteitspoort van een uur geleden ving alleen de uitschieters en
+    # liet zeven pagina's staan die net zo fout waren. Daarom nu alles dicht tot
+    # de oogst per project is afgebakend en opnieuw gemeten.
+    return False
 
 
 def verkoop_blok(p, naam):
@@ -580,7 +584,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             f'<p><a class="cta-primary" href="{app}-kluskist">Vraag de Kluskist aan</a></p>')
     # Vraag-antwoord: zichtbaar op de pagina, en het schema zegt hetzelfde —
     # de vorige versie had een FAQ-schema over tekst die nergens stond.
-    metingen_faq = SNAPSHOTS.get(p.get("url")) or []
+    metingen_faq = [m for m in (SNAPSHOTS.get(p.get("url")) or []) if betrouwbaar(p, m[1])]
     faq_items = []
     if p.get("oplevering") and p.get("oplevering_bron") == "oplevertrefwoord":
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
@@ -695,9 +699,9 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
     # korting bij winkels in de buurt, niet op het ambtelijke resultaat). Waar het
     # project grotendeels verkocht is, is de zoeker vrijwel zeker een koper en
     # krijgt ook de titel de belofte. GSC beslecht per pagina wie gelijk had.
-    pct_nu = (SNAPSHOTS.get(p.get("url")) or [(None, None)])[-1][1]
-    pct_nu = pct_nu.get("verkocht_pct") if pct_nu else None
-    if pct_nu is not None and pct_nu >= 85:
+    _m = [m for m in (SNAPSHOTS.get(p.get("url")) or []) if betrouwbaar(p, m[1])]
+    pct_nu = _m[-1][1].get("verkocht_pct") if _m else None
+    if pct_nu is None or pct_nu >= 85:
         titel = f"Gekocht in {naam} ({plaats})? Korting bij woonwinkels in de buurt | Bylder"
         desc = (f"Woning gekocht in {naam}? Wij volgen de bouw voor je \u00e9n je bespaart op "
                 f"afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. "
