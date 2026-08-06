@@ -219,6 +219,55 @@ def nl_datum(iso):
     return f"{int(dg)} {NL_MAAND[int(m) - 1]} {j}"
 
 
+def bag_blok(p, naam):
+    """De bouwstatus uit het Kadaster, als eigen blok.
+
+    Zat eerst in verkoop_blok() en verdween daardoor toen de verkoopdata ongeldig
+    bleek. Dat was onterecht: de BAG-meting gaat via een bbox op de coordinaten van
+    het project en raakt de bronpagina van nieuwbouw.nl niet aan. Het is nu het
+    enige gedateerde feit op deze pagina, en daarmee het enige dat een AI-antwoord
+    kan citeren.
+
+    Eerlijk geformuleerd als 'omgeving': een bbox vangt ook de buren.
+    """
+    bag = BAG.get(p.get("url"))
+    if not bag:
+        return "", ""
+    bd, bv = bag
+    delen = []
+    if bv.get("in_aanbouw"):
+        delen.append(f"<strong>{bv['in_aanbouw']} panden in aanbouw</strong>")
+    if bv.get("opgeleverd"):
+        delen.append(f"<strong>{bv['opgeleverd']} recent opgeleverd</strong>")
+    if not delen:
+        return "", ""
+    antwoord = (f'<p class="antwoord"><strong>Bouwstatus, peildatum {nl_datum(bd)}.</strong> '
+                f"In de directe omgeving van {E(naam)} registreert het Kadaster "
+                + " en ".join(delen)
+                + f", met {bv['nieuwste_bouwjaar']} als nieuwste bouwjaar. Wij meten dit elke "
+                  f"twee weken opnieuw.</p>")
+
+    rijen = "".join(
+        f"<tr><th>{lbl}</th><td>{val}</td></tr>" for lbl, val in [
+            ("Panden in aanbouw", bv.get("in_aanbouw") or "&mdash;"),
+            ("Recent opgeleverd", bv.get("opgeleverd") or "&mdash;"),
+            ("Nieuwste bouwjaar", bv.get("nieuwste_bouwjaar") or "&mdash;"),
+            ("Peildatum", nl_datum(bd)),
+            ("Bron", 'Basisregistratie Adressen en Gebouwen (Kadaster), gemeten door Bylder '
+                     'binnen ongeveer 650 meter van het project'),
+        ])
+    tabel = (f"<h2>Bouwstatus rond {E(naam)}</h2><table class=\"feit-tabel\"><tbody>{rijen}</tbody></table>"
+             f'<p class="noot">Een zoekvierkant vangt ook de directe buren, dus dit is de stand '
+             f"van de omgeving en niet uitsluitend van dit project. Het komt wel uit de officiele "
+             f"registratie, niet uit een verkoopsite.</p>")
+    log = (f"<h2>Logboek</h2><ul class='log'>"
+           f"<li><strong>{nl_datum(bd)}</strong> &middot; {bv.get('in_aanbouw') or 0} panden in "
+           f"aanbouw, {bv.get('opgeleverd') or 0} opgeleverd (Kadaster)</li></ul>"
+           f'<p class="noot">Dit is de eerste meting. Vanaf de volgende ronde staat hier wat er '
+           f"tussen twee metingen veranderde &mdash; wanneer de bouw werkelijk vordert.</p>")
+    return antwoord + tabel, log
+
+
 def betrouwbaar(p, meting):
     """Of de verkoopmeting bij dít project hoort.
 
@@ -480,8 +529,14 @@ def lokale_winkels(wk, p, straal=15, n=6):
 
 
 def deadlines(lo, hi):
-    """Afgeleide keuzemomenten. Per project andere jaartallen, dus andere tekst."""
-    return [
+    """Afgeleide keuzemomenten, met verstreken data eruit.
+
+    Een deadlinetabel die opent met "medio 2026" terwijl het augustus 2026 is,
+    vertelt de koper dat hij te laat is. Momenten die al voorbij zijn worden
+    daarom niet meer getoond; blijft er niets over, dan valt de tabel weg en
+    zegt de pagina dat de keuzemomenten voor dit project al lopen.
+    """
+    ruw = [
         (f"medio {lo-1}", "meerwerk elektra en loze leidingen",
          "wat hier niet in zit, betekent later muren openen"),
         (f"eind {lo-1}", "sanitair en tegelwerk",
@@ -491,6 +546,21 @@ def deadlines(lo, hi):
         (f"kort voor oplevering {lo}" + (f"-{hi}" if hi > lo else ""), "vloer, wandafwerking en raamdecoratie",
          "dit kan ná de sleutel, maar dan woon je in een bouwplaats"),
     ]
+    # jaartal uit het label halen en vergelijken met vandaag
+    def nog_actueel(label):
+        jaren = [int(x) for x in re.findall(r"20\d\d", label)]
+        if not jaren:
+            return True
+        jaar = max(jaren)
+        if jaar > VANDAAG.year:
+            return True
+        if jaar < VANDAAG.year:
+            return False
+        # zelfde jaar: "medio" is juli, "eind" december, "begin" maart
+        maand = 7 if label.startswith("medio") else (12 if label.startswith("eind") else
+                 (3 if label.startswith("begin") else 12))
+        return maand >= VANDAAG.month
+    return [r for r in ruw if nog_actueel(r[0])]
 
 
 def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
@@ -570,7 +640,17 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         f"geregeld v&oacute;&oacute;r de meerwerkdeadline hierboven, niet erna. Hoe dat precies "
         f"werkt staat in de <a href=\"/kennisbank/meerwerk/\">meerwerkgids</a>.</p>")
 
+    keuze_html = (f"<h2>Keuzemomenten voor {E(naam)}</h2>"
+                  f'<table class="feit-tabel"><thead><tr><th>Wanneer</th><th>Wat sluit</th>'
+                  f"<th>Waarom het uitmaakt</th></tr></thead><tbody>{dl}</tbody></table>"
+                  ) if dl else (
+                  f"<h2>Keuzemomenten voor {E(naam)}</h2>"
+                  f"<p>De belangrijkste keuzemomenten voor {E(naam)} liggen al achter ons of "
+                  f"lopen nu. Wat er in jouw geval nog open staat, hangt af van je bouwnummer "
+                  f"en je eigen koop-/aannemingsovereenkomst.</p>")
     feiten_html, log_html = verkoop_blok(p, E(naam))
+    if not feiten_html:
+        feiten_html, log_html = bag_blok(p, E(naam))
     # De Kluskist alleen beloven waar hij binnen afzienbare tijd kan komen. Op 36
     # pagina's een kist toezeggen voor een oplevering in 2029 is een belofte die
     # je niet nakomt, en dat kost meer geloofwaardigheid dan de sectie opbrengt.
@@ -662,10 +742,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
 {faq_html}
 
-<h2>Keuzemomenten voor {E(naam)}</h2>
-<table class="feit-tabel">
-<thead><tr><th>Wanneer</th><th>Wat sluit</th><th>Waarom het uitmaakt</th></tr></thead>
-<tbody>{dl}</tbody></table>
+{keuze_html}
 <p class="noot">Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Richtdata &mdash;
 je eigen <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is leidend.</p>
 <div class="card">
@@ -717,7 +794,10 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
                 f"en helpen kopers besparen op afwerking en inrichting. Gratis.")
     art = {"@context": "https://schema.org", "@type": "Article",
            "headline": f"{naam}, {plaats} — wat er ná de handtekening komt",
-           "description": desc, "dateModified": VANDAAG.isoformat(),
+           "description": desc,
+           # Niet vandaag: dat is een vers-stempel zonder inhoud. De datum van de
+           # laatste waarneming die op deze pagina staat.
+           "dateModified": (BAG.get(p.get("url")) or [VANDAAG.isoformat()])[0],
            "author": {"@type": "Organization", "name": "Bylder.com"},
            "publisher": {"@type": "Organization", "name": "Bylder.com",
                          "url": "https://www.bylder.com/"},
@@ -939,6 +1019,16 @@ def main():
         print(f"fases samengevoegd: {len(oude_slugs)} oude adressen → 301 ({toegevoegd} nieuw in vercel.json)")
 
     if not DRY and hub_rijen:
+        # De handgeschreven pagina's (De Suikerzijde, CondorPark, ...) stonden niet
+        # in de hub terwijl het de beste van het cluster zijn; ze hingen alleen aan
+        # de sitemap. Hier alsnog erbij, met hun eigen plaats.
+        for x in pages:
+            if x["slug"] in handgeschreven and "noindex" not in (x.get("robots") or ""):
+                pl = x.get("title", "").split("(")[-1].split(")")[0] if "(" in x.get("title", "") else ""
+                hub_rijen.append({"path": x["path"],
+                                  "_naam": x["title"].split(",")[0].split("(")[0].strip(),
+                                  "_plaats": pl or "Elders in Nederland",
+                                  "_won": 0, "_opl": ""})
         open(os.path.join(CLUSTER, "content", "index.html"), "w", encoding="utf8").write(
             bouw_hub(hub_rijen, kandidaten, len(projecten)))
         for x in pages:

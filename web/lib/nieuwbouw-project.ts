@@ -69,7 +69,13 @@ export function toMetadata(page: ClusterPage) {
     title,
     description,
     alternates: { canonical: url },
-    robots: page.robots?.includes('noindex') ? { index: false, follow: false } : { index: true, follow: true },
+    // 'noindex,follow' werd hier stilzwijgend 'noindex,nofollow': de follow-intentie
+    // ging verloren. Dat maakt uit zodra we een pagina tijdelijk uit de index halen
+    // maar zijn links wel willen laten doorwerken.
+    robots: {
+      index: !page.robots?.includes('noindex'),
+      follow: !page.robots?.includes('nofollow'),
+    },
     openGraph: {
       type: (page.og_type as any) || 'article',
       title,
