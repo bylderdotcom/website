@@ -139,6 +139,24 @@ def main():
             json.dump(uit, open(pad, "w", encoding="utf8"), ensure_ascii=False, indent=1)
         time.sleep(DELAY)
 
+    # Poort vóór het wegschrijven: deugt deze oogst? Op 5 aug bleek een hele laag
+    # ongeldig doordat de bron gedeeld was in plaats van projectspecifiek, en dat
+    # stond toen al op 34 live pagina's. Deze controle had dat gevangen.
+    sys.path.insert(0, os.path.join(ROOT, "scripts"))
+    from oogst_controle import oordeel
+    coord = {p["url"]: p for p in projecten}
+    for u, v in uit.items():
+        q = coord.get(u) or {}
+        v.setdefault("lat", q.get("lat")); v.setdefault("lng", q.get("lng"))
+    ok, melding = oordeel(uit, sleutels=("in_aanbouw", "opgeleverd", "nieuwste_bouwjaar"),
+                          positie=lambda v: (v.get("lat"), v.get("lng")))
+    print(f"\nCONTROLE: {melding}")
+    if not ok:
+        noodpad = pad.replace(".json", ".AFGEKEURD.json")
+        json.dump(uit, open(noodpad, "w", encoding="utf8"), ensure_ascii=False, indent=1)
+        sys.exit(f"Oogst niet weggeschreven — bewijs staat in {os.path.basename(noodpad)}. "
+                 f"Onderzoek eerst waar de gedeelde bron zit.")
+
     json.dump(uit, open(pad, "w", encoding="utf8"), ensure_ascii=False, indent=1)
     met = [d for d in uit.values() if d.get("panden")]
     bouw = [d for d in met if d.get("in_aanbouw")]
