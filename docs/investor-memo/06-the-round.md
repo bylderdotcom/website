@@ -6,6 +6,8 @@
 ## The one thing we are buying
 
 The supply side is mapped. The decision graph is built. The software works on both sides.
+What does not exist yet is a demand channel at scale — and that is the one thing this round
+buys.
 
 What does not exist is a demand channel. Our own measurement says so plainly: 108 organic
 clicks a month across the whole site, at average position 29.6. We published 56,649 pages to
