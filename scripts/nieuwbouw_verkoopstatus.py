@@ -1,5 +1,24 @@
 #!/usr/bin/env python3
-"""Oogst de verkoopvoortgang per nieuwbouwproject, en bewaart elke run apart.
+"""BUITEN GEBRUIK — dit signaal bestaat niet op nieuwbouw.nl.
+
+Vastgesteld op 5 aug 2026. De "X van Y beschikbaar"-regels op een projectpagina
+horen bij ANDERE projecten: ze komen uit een aanbevelingsblok. Edisonpark en
+Soeterdael — twee verschillende projecten — gaven exact dezelfde vijf regels, en
+op de Edisonpark-pagina wordt de eerste treffer voorafgegaan door "In verkoop —
+De Pauwentuin Leidschendam".
+
+Afbakenen helpt niet: van de 445.000 tekens op zo'n pagina gaat 17.800 over het
+project zelf, en daarin staat geen beschikbaarheid, geen fases en geen oplevering.
+De JSON-LD bevat alleen naam, omschrijving en locatie.
+
+Dit script draaide 995 projecten en die cijfers stonden op 34 live pagina's.
+Allemaal ongeldig, inmiddels verwijderd. Gebruik scripts/bag_bouwstatus.py, dat
+op coordinaten meet in plaats van op paginatekst.
+
+De oorspronkelijke toelichting hieronder is bewaard omdat de redenering over
+momentopnamen wel klopt — alleen de bron deugde niet.
+
+Oogst de verkoopvoortgang per nieuwbouwproject, en bewaart elke run apart.
 
 WAAROM MOMENTOPNAMEN EN NIET ÉÉN BESTAND
 ----------------------------------------
@@ -96,6 +115,11 @@ def toon_delta():
 
 
 def main():
+    if "--toch" not in sys.argv:
+        sys.exit("Dit script is buiten gebruik: het signaal bestaat niet op nieuwbouw.nl.\n"
+                 "Zie de toelichting bovenaan. Gebruik scripts/bag_bouwstatus.py.\n"
+                 "Draai met --toch als je het bewijs zelf wilt reproduceren.")
+
     if "--delta" in sys.argv:
         return toon_delta()
     cap = 10 ** 9
