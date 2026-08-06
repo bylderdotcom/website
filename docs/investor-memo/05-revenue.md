@@ -109,8 +109,9 @@ process rather than to a one-van plumber.
 
 ## Where we actually are, and what we are asking you to underwrite
 
-One paying business participant. €79. Acquired from 58 outbound emails in a single city, six
-days after the first message. That is a 1.7% conversion on a cold approach with no follow-up
+The self-service flow — sign up, pay, publish your offer — has produced one participant since it
+went live: €79, acquired from 58 outbound emails in a single city, six days after the first
+message. The other fifty-five were signed by hand during the MVP phase, before that flow existed. That is a 1.7% conversion on a cold approach with no follow-up
 sequence and no proof to point at.
 
 We are not presenting that as traction. We are presenting it as the only conversion data we
@@ -161,7 +162,7 @@ Chapter 6.
 | Claim | Source | Confidence |
 |---|---|---|
 | Full price list | bylder.com/prijzen, live | High — ours |
-| 1 paying participant, €79, from 58 emails, 6-day close | Our database and outreach log | High — ours, verifiable |
+| 55 brands with a live offer; 1 through the self-service flow, €79, from 58 emails, 6-day close | Our database and outreach log | High — ours, verifiable |
 | 23 decisions per household | Our ontology (122 decisions across 25 spaces; 23 is the typical new-build subset) | Medium — **document the derivation before use** |
 | €800–1,400 utility room, €10,000–25,000 kitchen | Our renovation cost models | Medium — **cite the source page** |
 | 976 projects / 38,957 homes | Our monitor, published | High |

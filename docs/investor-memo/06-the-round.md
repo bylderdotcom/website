@@ -133,8 +133,8 @@ prove one market properly than claim six.
 | Dilution | ~23% |
 | Stage | Pre-seed |
 
-We should be direct about how that valuation is arrived at. With 23 households and one paying
-supplier there is no multiple to price against. This is priced on the asset — a supply map and
+We should be direct about how that valuation is arrived at. With 23 households, and a supply side that was
+signed largely by hand, there is no multiple to price against. This is priced on the asset — a supply map and
 a decision graph that took months and do not decay in a quarter — and on a founder who spent
 four years inside a €1.5bn player in this exact market and tried this once before, ten years
 too early.
@@ -144,8 +144,9 @@ believes the moment is real and that the hard side is already built, should.
 
 ## What we depend on
 
-**One assumption carries everything: that we can reach households at the moment of purchase at
-an acceptable cost.** Our current channel does not do this — 108 clicks a month is the proof.
+**One variable decides the outcome: the cost of reaching a household at the moment of purchase.**
+Everything upstream of it is built and paid for — the decision graph, the supply map, the software
+on both sides. Our current channel does not do this — 108 clicks a month is the proof.
 We have three candidate channels and no proof yet for any of them: the project layer as an
 entry point, direct partnerships with developers who already have the buyer relationship, and
 presence in AI answers rather than search results.

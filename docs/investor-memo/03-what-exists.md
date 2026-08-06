@@ -31,7 +31,9 @@ That last number matters more than it looks, and we will come back to it.
 | Paying business participants | **1** |
 | Organic search clicks, per month, whole site | **108**, at average position 29.6 |
 
-One paying customer. Twenty-three households. We are not going to dress that up.
+Fifty-five brands and retailers with a live offer. Twenty-three households. One supplier signed
+through the new self-service flow. We are not going to dress that up: the supply side carries this
+platform today and the demand side does not.
 
 ## Why we built it in this order
 
