@@ -249,6 +249,17 @@ def verkoop_blok(p, naam):
                    f"peildatum {nl_datum(bd)}</td></tr>") if rij_delen else ""
     n_fases = len(per_fase) if len(per_fase) > 1 else v.get("fases", 0)
     fases_zin = f", verdeeld over {n_fases} fases" if n_fases > 1 else ""
+    # Het `woningen`-veld uit de scrape is onbetrouwbaar: het is soms het aantal
+    # van één fase terwijl de meting alle fases telt. Alleen tonen als het groter
+    # is dan wat we werkelijk in de verkoop zien — anders liegt de tabel.
+    won_bron = p.get("woningen") or 0
+    fase_txt = f", verdeeld over {v['fases']} fases" if v.get("fases", 0) > 1 else ""
+    if won_bron > v["eenheden"]:
+        omvang_rijen = (f"<tr><th>Project telt</th><td>{won_bron} woningen</td></tr>"
+                        f"<tr><th>Nu in de verkoop</th><td>{v['eenheden']} woningen{fase_txt} "
+                        f"&mdash; de rest is nog niet aangeboden of al buiten de verkoop</td></tr>")
+    else:
+        omvang_rijen = f"<tr><th>In de verkoop</th><td>{v['eenheden']} woningen{fase_txt}</td></tr>"
     if bag:
         bd, bv = bag
         # Nul noemen leest als een storing ("het Kadaster registreert 0 panden in
@@ -270,8 +281,7 @@ def verkoop_blok(p, naam):
     feiten = antwoord + f"""<h2>{E(naam)} in cijfers</h2>
 <table class="feit-tabel">
 <tbody>
-<tr><th>Project telt</th><td>{p.get('woningen') or v['eenheden']} woningen</td></tr>
-<tr><th>Nu in de verkoop</th><td>{v['eenheden']}{f" woningen, verdeeld over {v['fases']} fases" if v.get('fases', 0) > 1 else " woningen"}{" &mdash; de rest is nog niet aangeboden of al buiten de verkoop" if (p.get('woningen') or 0) > v['eenheden'] else ""}</td></tr>
+{omvang_rijen}
 <tr><th>Nog beschikbaar</th><td>{v['beschikbaar']}</td></tr>
 <tr><th>Verkocht</th><td><strong>{verkocht} ({v['verkocht_pct']}%)</strong></td></tr>
 {"".join(f"<tr><th>&nbsp;&nbsp;{E(fn)}</th><td>{m[-1][1]['eenheden'] - m[-1][1]['beschikbaar']} van {m[-1][1]['eenheden']} verkocht ({m[-1][1]['verkocht_pct']}%)</td></tr>" for fn, m in per_fase if fn)}
@@ -303,7 +313,7 @@ def verkoop_blok(p, naam):
 <p>Wat wij bij {E(naam)} zien veranderen, met datum. Wij meten dit zelf; de
 projectpagina van de ontwikkelaar toont alleen de stand van vandaag, niet het
 verloop.</p>
-<ul>{''.join(regels)}</ul>
+<ul class='log'>{''.join(regels)}</ul>
 {'<p class="noot">Dit is de eerste meting. Vanaf de volgende ronde staat hier wat er tussen twee metingen veranderde &mdash; hoe snel dit project werkelijk verkoopt.</p>' if len(metingen) == 1 else ''}"""
     return feiten, log
 
@@ -514,7 +524,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         lok_html = (f"<h2>Vakbedrijven rond {E(naam)}</h2><p>Bedrijven binnen twaalf kilometer "
                     f"met minstens twintig beoordelingen, gespreid over de vakken die bij een "
                     f"oplevering langskomen. Wij rangschikken op passendheid en afstand; een "
-                    f"positie is bij ons niet te koop.</p><ul>{li}</ul>")
+                    f"positie is bij ons niet te koop.</p><ul class='bedrijven'>{li}</ul>")
 
     # Meerwerkbedragen schalen mee met het woningtype dat in dit project overheerst;
     # de percentages zijn generiek, de uitkomst per project niet.
@@ -592,7 +602,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                  f'<p><a class="cta-primary" href="https://app.bylder.com/winkelwens?project={slug}'
                  f'&amp;utm_source=bylder-site&amp;utm_campaign=project-{slug}-winkelwens">'
                  f"Vraag korting aan bij winkels in de buurt</a></p></div>")
-        wnk_html = (f"<h2>Woonwinkels binnen 15 km</h2><ul>{li}</ul>"
+        wnk_html = (f"<h2>Woonwinkels binnen 15 km</h2><ul class='bedrijven'>{li}</ul>"
                     f'<p class="noot">Gespreid over categorie&euml;n, minstens twintig '
                     f"beoordelingen, minimaal vier sterren. Deze lijst is niet te koop.</p>"
                     + vraag)
@@ -605,13 +615,14 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                      + (f" &mdash; {b['woningen']} woningen" if b.get('woningen') else "") + "</li>"
                      for b in buren[:5])
         buur_html = (f"<h2>Andere nieuwbouw in {E(plaats)} ({gem_totaal} projecten)</h2>"
-                     f"<ul>{bl}</ul>")
+                     f"<ul class='bedrijven'>{bl}</ul>")
     elif gem_totaal <= 1:
         buur_html = (f'<p class="noot">{E(naam)} is het enige nieuwbouwproject dat wij in '
                      f"{E(plaats)} volgen.</p>")
 
     aant = f"{won} woningen" if won else "meerdere woningen"
     body = f"""<main>
+<div class="container"><div class="kolom">
 <nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:14px;">
 <a href="/" style="color:inherit;">Bylder.com</a> &rsaquo;
 <a href="/nieuwbouw-project/" style="color:inherit;">Nieuwbouwprojecten</a> &rsaquo; {E(naam)}</nav>
@@ -654,6 +665,7 @@ Elke nieuwe meting van {E(naam)} zie je terug in je dossier. Gratis.</p>
 telling in de <a href="/nieuwbouw-project/oplevermonitor/">oplevermonitor</a>. Algemene uitleg
 over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer over de gemeente:
 <a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)}</a>.</p>
+</div></div>
 </main>"""
 
     # De titel doet rankingwerk en wint vertrouwen; de description is advertentie-
@@ -724,7 +736,7 @@ def bouw_hub(rijen, kandidaten, totaal_projecten):
             f'<li><a href="{E(r["path"])}">{E(r["_naam"])}</a> &mdash; '
             f'{r["_won"]} woningen{", oplevering " + E(r["_opl"]) if r.get("_opl") else ""}</li>'
             for r in sorted(per[plaats], key=lambda x: -x["_won"]))
-        blokken.append(f"<h3>{E(plaats)}</h3><ul>{li}</ul>")
+        blokken.append(f"<h3>{E(plaats)}</h3><ul class='bedrijven'>{li}</ul>")
     return f"""<main>
 <nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:14px;">
 <a href="/" style="color:inherit;">Bylder.com</a> &rsaquo; Nieuwbouwprojecten</nav>
@@ -747,6 +759,7 @@ in een gemeente met &eacute;&eacute;n. Daarom rekenen wij per project terug vana
 <p>Zet je opleverdatum in je dossier, dan rekenen wij de keuzemomenten terug naar jouw
 bouwnummer &mdash; ook als er nog geen pagina is. Gratis.</p>
 <p><a class="cta-primary" href="https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site&amp;utm_campaign=nieuwbouw-project-hub">Maak een gratis account</a></p></div>
+</div></div>
 </main>""".replace("{won_tot:,}".format(won_tot=won_tot), f"{won_tot:,}".replace(",", "."))
 
 
