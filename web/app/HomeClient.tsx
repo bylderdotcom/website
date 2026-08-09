@@ -262,11 +262,22 @@ export default function HomeClient() {
       // toetsaanslag en vraagt een sleutel of proxy; die houden we voor de
       // bedrijfstypen, waar hij onmisbaar is.
       const viaPlaatsnaam = async (q: string): Promise<string | null> => {
+        // Postcodes moeten schoongemaakt en apart gefilterd worden. "2716 AB" met
+        // spatie kwam anders uit in Steenwijkerland in plaats van Zoetermeer,
+        // omdat de dienst dan een woonplaats gaat gokken op de cijfers. Een fout
+        // antwoord is erger dan geen antwoord.
+        const ruw = q.trim()
+        const pc = ruw.match(/^(\d{4})\s*([a-zA-Z]{2})$/)
+        const term = pc ? `${pc[1]}${pc[2].toUpperCase()}` : ruw
+        const alleenCijfers = /^\d{4}$/.test(term)
+        const fq = (pc || alleenCijfers)
+          ? 'type:postcode'
+          : 'type:(woonplaats OR gemeente OR adres)'
         try {
           const u = 'https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?rows=1'
-            + '&fq=' + encodeURIComponent('type:(woonplaats OR gemeente)')
+            + '&fq=' + encodeURIComponent(fq)
             + '&fl=' + encodeURIComponent('gemeentenaam,woonplaatsnaam')
-            + '&q=' + encodeURIComponent(q)
+            + '&q=' + encodeURIComponent(term)
           const r = await fetch(u)
           const d = await r.json()
           const g = d?.response?.docs?.[0]?.gemeentenaam
