@@ -265,7 +265,7 @@ def bag_blok(p, naam):
            f"aanbouw, {bv.get('opgeleverd') or 0} opgeleverd (Kadaster)</li></ul>"
            f'<p class="noot">Dit is de eerste meting. Vanaf de volgende ronde staat hier wat er '
            f"tussen twee metingen veranderde &mdash; wanneer de bouw werkelijk vordert.</p>")
-    return antwoord + tabel, log
+    return antwoord, tabel, log
 
 
 def betrouwbaar(p, meting):
@@ -640,6 +640,18 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         f"geregeld v&oacute;&oacute;r de meerwerkdeadline hierboven, niet erna. Hoe dat precies "
         f"werkt staat in de <a href=\"/kennisbank/meerwerk/\">meerwerkgids</a>.</p>")
 
+    # Eén handeling direct onder het antwoord. Stond eerst op 1933 px, ver onder de
+    # vouw: de bezoeker las wat wij weten en kon er niets mee. Les van Solvari, waar
+    # de enige handeling op 441 px staat.
+    start_html = (
+        f'<div class="startblok">'
+        f"<p><strong>Woning gekocht in {E(naam)}?</strong> Wij volgen de bouw voor je en rekenen "
+        f"elke deadline terug naar jouw bouwnummer. Je bespaart bij de afwerking en inrichting, "
+        f"en je garanties staan straks op &eacute;&eacute;n plek.</p>"
+        f'<p><a class="cta-primary" href="{app}">Volg {E(naam)} gratis</a></p>'
+        f'<p class="klein">Gratis account &middot; geen betaling nodig &middot; opzeggen wanneer je wilt</p>'
+        f"</div>")
+
     keuze_html = (f"<h2>Keuzemomenten voor {E(naam)}</h2>"
                   f'<table class="feit-tabel"><thead><tr><th>Wanneer</th><th>Wat sluit</th>'
                   f"<th>Waarom het uitmaakt</th></tr></thead><tbody>{dl}</tbody></table>"
@@ -649,8 +661,9 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                   f"lopen nu. Wat er in jouw geval nog open staat, hangt af van je bouwnummer "
                   f"en je eigen koop-/aannemingsovereenkomst.</p>")
     feiten_html, log_html = verkoop_blok(p, E(naam))
+    tabel_html = ""
     if not feiten_html:
-        feiten_html, log_html = bag_blok(p, E(naam))
+        feiten_html, tabel_html, log_html = bag_blok(p, E(naam))
     # De Kluskist alleen beloven waar hij binnen afzienbare tijd kan komen. Op 36
     # pagina's een kist toezeggen voor een oplevering in 2029 is een belofte die
     # je niet nakomt, en dat kost meer geloofwaardigheid dan de sectie opbrengt.
@@ -737,6 +750,10 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 <h1>{E(naam)}, {E(plaats)} &mdash; wat er n&aacute; de handtekening komt</h1>
 
 {feiten_html}
+
+{start_html}
+
+{tabel_html}
 
 {log_html}
 
