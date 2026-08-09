@@ -222,10 +222,57 @@ export default function HomeClient() {
     }
     timers.push(setTimeout(type, 1200))
 
-    // ── auping-popup (index.html inline) ──
-    if (!localStorage.getItem('aupingPopupDismissed')) {
-      timers.push(setTimeout(() => { const p = document.getElementById('aupingPopup'); if (p) p.style.display = 'flex' }, 4000))
+    // ── woningzoek: één handeling boven de vouw ──
+    // Naar Solvari's model: de bezoeker typt zijn project of gemeente en gaat er
+    // direct heen. Geen zoekmachine nodig — we hebben de lijst al (38 projecten,
+    // 383 gemeenten), dus het is een datalist plus een opzoeking. Werkt zonder JS
+    // ook nog als gewone tekstinvoer; dan valt hij terug op de projecthub.
+    let zoekOpruimen: (() => void) | null = null
+    const veld = document.getElementById('woningzoekVeld') as HTMLInputElement | null
+    const form = document.getElementById('woningzoek') as HTMLFormElement | null
+    if (veld && form) {
+      type Ingang = { n: string; p: string; u: string }
+      let index: Ingang[] = []
+      fetch('/zoek-index.json').then((r) => r.json()).then((d: Ingang[]) => {
+        index = d
+        const dl = document.getElementById('woningzoekLijst')
+        if (!dl) return
+        dl.innerHTML = d.map((x) =>
+          `<option value="${x.n}${x.p && x.p !== 'gemeente' ? ' — ' + x.p : ''}"></option>`).join('')
+      }).catch(() => {})
+
+      const zoek = (q: string): Ingang | null => {
+        const t = q.toLowerCase().split('—')[0].trim()
+        if (!t) return null
+        return index.find((x) => x.n.toLowerCase() === t)
+            || index.find((x) => x.n.toLowerCase().startsWith(t))
+            || index.find((x) => x.n.toLowerCase().includes(t))
+            || null
+      }
+      const onSubmit = (e: Event) => {
+        e.preventDefault()
+        const treffer = zoek(veld.value)
+        const hint = document.getElementById('woningzoekHint')
+        if (treffer) { window.location.href = treffer.u; return }
+        if (veld.value.trim() && hint) {
+          hint.innerHTML = 'Dat project kennen we nog niet. '
+            + '<a href="/nieuwbouw-project/" style="color:#3D5A3E;font-weight:700;">'
+            + 'Bekijk alle projecten</a> of maak een gratis account &mdash; dan volgen wij het voor je.'
+        } else {
+          window.location.href = '/nieuwbouw-project/'
+        }
+      }
+      form.addEventListener('submit', onSubmit)
+      zoekOpruimen = () => form.removeEventListener('submit', onSubmit)
     }
+
+    // ── auping-popup: UIT op de homepage (besluit Daniel, 6 aug 2026) ──
+    // Hij verscheen schermvullend na 4 seconden, vóór de bezoeker wist wat Bylder
+    // is, en toonde een beddenkorting. Google straft zulke tussenschermen op
+    // mobiel af, en het kost de eerste indruk. De actie blijft bestaan op
+    // /vouchers/auping/ en op de nieuwbouwprojectpagina's, waar hij bij het
+    // moment past. De opruimlogica hieronder blijft staan zodat een popup die
+    // ooit wél getoond wordt nog netjes sluit.
     const pop = document.getElementById('aupingPopup')
     const onPopClick = function (this: HTMLElement, e: MouseEvent) { if (e.target === this) w.sluitPopup() }
     if (pop) pop.addEventListener('click', onPopClick as EventListener)
@@ -239,6 +286,7 @@ export default function HomeClient() {
     }
 
     return () => {
+      if (zoekOpruimen) zoekOpruimen()
       timers.forEach(clearTimeout)
       wtHandlers.forEach(([el, h]) => el.removeEventListener('click', h))
       if (pop) pop.removeEventListener('click', onPopClick as EventListener)
