@@ -233,11 +233,14 @@ export default function HomeClient() {
     if (veld && form) {
       type Ingang = { n: string; p: string; u: string }
       let index: Ingang[] = []
-      fetch('/zoek-index.json').then((r) => r.json()).then((d: Ingang[]) => {
+      let gemeenten: Record<string, string> = {}
+      fetch('/zoek-index.json').then((r) => r.json()).then((j) => {
+        const d: Ingang[] = j.ingangen ?? j
         index = d
+        gemeenten = j.gemeenten ?? {}
         const dl = document.getElementById('woningzoekLijst')
         if (!dl) return
-        dl.innerHTML = d.map((x) =>
+        dl.innerHTML = d.map((x: Ingang) =>
           `<option value="${x.n}${x.p && x.p !== 'gemeente' ? ' — ' + x.p : ''}"></option>`).join('')
       }).catch(() => {})
 
@@ -249,21 +252,47 @@ export default function HomeClient() {
             || index.find((x) => x.n.toLowerCase().includes(t))
             || null
       }
-      const onSubmit = (e: Event) => {
+      const norm = (t: string) =>
+        t.toLowerCase().replace(/['`]/g, '').replace(/[^a-z0-9]/g, '')
+
+      // Wie in een dorp woont typt zijn dorp, niet zijn gemeente. Onze lijst kent
+      // alleen gemeenten, dus wat die niet herkent gaat naar de PDOK
+      // Locatieserver: officieel, gratis, geen sleutel in de browser, en hij geeft
+      // de gemeentenaam direct terug. Google Places kan dit ook maar kost per
+      // toetsaanslag en vraagt een sleutel of proxy; die houden we voor de
+      // bedrijfstypen, waar hij onmisbaar is.
+      const viaPlaatsnaam = async (q: string): Promise<string | null> => {
+        try {
+          const u = 'https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?rows=1'
+            + '&fq=' + encodeURIComponent('type:(woonplaats OR gemeente)')
+            + '&fl=' + encodeURIComponent('gemeentenaam,woonplaatsnaam')
+            + '&q=' + encodeURIComponent(q)
+          const r = await fetch(u)
+          const d = await r.json()
+          const g = d?.response?.docs?.[0]?.gemeentenaam
+          return g ? (gemeenten[norm(g)] ?? null) : null
+        } catch { return null }
+      }
+
+      const onSubmit = async (e: Event) => {
         e.preventDefault()
-        const treffer = zoek(veld.value)
         const hint = document.getElementById('woningzoekHint')
+        const treffer = zoek(veld.value)
         if (treffer) { window.location.href = treffer.u; return }
-        if (veld.value.trim() && hint) {
-          hint.innerHTML = 'Dat project kennen we nog niet. '
+        if (!veld.value.trim()) { window.location.href = '/nieuwbouw-project/'; return }
+
+        if (hint) hint.textContent = 'Even zoeken…'
+        const viaPlaats = await viaPlaatsnaam(veld.value)
+        if (viaPlaats) { window.location.href = viaPlaats; return }
+        if (hint) {
+          hint.innerHTML = 'Die plaats kennen we nog niet. '
             + '<a href="/nieuwbouw-project/" style="color:#3D5A3E;font-weight:700;">'
-            + 'Bekijk alle projecten</a> of maak een gratis account &mdash; dan volgen wij het voor je.'
-        } else {
-          window.location.href = '/nieuwbouw-project/'
+            + 'Bekijk alle projecten</a> of maak een gratis account &mdash; dan volgen wij '
+            + 'jouw woning voor je.'
         }
       }
-      form.addEventListener('submit', onSubmit)
-      zoekOpruimen = () => form.removeEventListener('submit', onSubmit)
+      form.addEventListener('submit', onSubmit as EventListener)
+      zoekOpruimen = () => form.removeEventListener('submit', onSubmit as EventListener)
     }
 
     // ── auping-popup: UIT op de homepage (besluit Daniel, 6 aug 2026) ──
