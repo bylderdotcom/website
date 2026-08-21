@@ -1213,16 +1213,41 @@ def build_profile(vak, vak_slug, b, buren):
     prijs = b.get("price_level"); summary = (b.get("google_summary") or "").strip(); lid = b.get("status") == "lid"
     has_stad = bool(b.get("stad"))
 
-    title = f"{b['naam']} — {s} in {stad} | reviews, prijzen & offerte-check | Bylder"
+    # TITEL, herzien 21 aug 2026. De oude was 88 tekens — Google kapt af rond de
+    # zestig, dus een zoeker zag "Warmteservice Arnhem — loodgieter in Arnhem |
+    # reviews, pr…". De plaatsnaam twee keer, en het enige wat wij hebben en het
+    # bedrijf zelf niet toont — de beoordeling — viel juist weg.
+    #
+    # Gemeten aanleiding: 22 zoekopdracht-paginacombinaties met samen 9.631
+    # vertoningen op positie 4-20 en vrijwel nul klikken, bijna allemaal iemand die
+    # een bedrijf bij naam zoekt ("warmteservice arnhem": 941 vertoningen, 0 klikken).
+    # Op plek 10 sta je onder de officiële site; dan moet de titel een reden geven
+    # om jou te kiezen. Het cijfer is die reden.
+    if rating and reviews:
+        _r = str(rating).replace('.', ',')
+        _staart = f" · {_r}★ uit {reviews} reviews | Bylder"
+        # De beoordeling moet overleven, ook bij een lange bedrijfsnaam. Anders kapt
+        # Google precies het stuk weg waarvoor de titel is herschreven. Liever zelf
+        # bepalen waar hij afbreekt dan dat de zoekmachine het doet.
+        _ruimte = 60 - len(_staart)
+        _naam = b['naam'] if len(b['naam']) <= _ruimte else b['naam'][:max(12, _ruimte - 1)].rstrip(" ,-–—") + "…"
+        title = f"{_naam}{_staart}"
+    elif has_stad:
+        title = f"{b['naam']} — {s} in {stad} | Bylder"
+    else:
+        title = f"{b['naam']} — {s} | Bylder"
     diensten = [str(x) for x in (b.get("diensten") or [])]
     keurmerken = [str(x) for x in (b.get("keurmerken") or [])]
     werkgebied = [str(x) for x in (b.get("werkgebied") or [])]
     opgericht = b.get("opgericht")
 
-    desc = (f"{b['naam']}, {s} in {stad}. "
-            + (f"Beoordeling {str(rating).replace('.', ',')}★ ({reviews} reviews). " if rating else "")
+    # Omschrijving: eerst het cijfer, dan wat ze doen, dan pas wat wij bieden. Wie
+    # een bedrijf bij naam zoekt wil weten of het deugt, niet wat ons platform kan.
+    desc = ((f"{str(rating).replace('.', ',')}★ uit {reviews} beoordelingen. " if rating and reviews else "")
+            + f"{b['naam']}, {s}" + (f" in {stad}" if has_stad else "") + ". "
             + (f"Doet o.a. {' en '.join(d.lower().split(' / ')[0] for d in diensten[:2])}. " if diensten else "")
-            + f"Bekijk gegevens en gebundelde reviews, en check gratis of je {vak['werk']}-offerte een eerlijke prijs heeft.")
+            + "Contactgegevens, werkgebied en gebundelde beoordelingen op één plek &mdash; "
+            + f"plus een gratis check of je {vak['werk']}-offerte een eerlijke prijs heeft.")
 
     # LocalBusiness ZONDER aggregateRating: Google's structured-data-beleid staat geen
     # geaggregeerde reviewscores van een ánder platform toe als eigen rich-result.
