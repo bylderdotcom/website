@@ -1343,9 +1343,15 @@ def build_profile(vak, vak_slug, b, buren):
 
 
 def build_sitemap(vak_slug, steden_idx, include_voorvak=False, profiel_urls=None):
+    # lastmod ontbrak volledig. Google gebruikt dat veld om te bepalen wat opnieuw
+    # opgehaald moet worden, en dat is precies wat we nodig hebben nadat de
+    # robots-tag op 14.191 profielen is omgezet. Zonder lastmod moet de crawler
+    # zelf raden wanneer hij terugkomt.
+    from datetime import date as _d
+    vandaag = _d.today().isoformat()
     urls = [f"{BASE}/{vak_slug}/"] + ([f"{BASE}{VOORDELEN}/"] if include_voorvak else []) + [f"{BASE}/{vak_slug}/{_slug(s)}/" for s, _ in steden_idx]
-    items = "".join(f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>\n" for u in urls)
-    items += "".join(f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>\n" for u in (profiel_urls or []))
+    items = "".join(f"  <url><loc>{u}</loc><lastmod>{vandaag}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n" for u in urls)
+    items += "".join(f"  <url><loc>{u}</loc><lastmod>{vandaag}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>\n" for u in (profiel_urls or []))
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}</urlset>\n'
 
 
