@@ -12,6 +12,11 @@ onderwerp ging:
   3. De verkoopstand per project kwam uit een aanbevelingsblok met ANDERE
      projecten. Edisonpark en Soeterdael leverden exact dezelfde vijf regels op.
      Dat stond op 34 live pagina's.
+  4. Een GSC-meting rapporteerde "8 impressies, 0 klikken" voor 25.698
+     bedrijfsprofielen, waarop ze op noindex gingen. Het script had niets
+     opgehaald: nul records kregen een cijfer. In werkelijkheid waren die
+     pagina's 43% van al het siteverkeer — 402 klikken en 91.462 impressies.
+     Een lege uitvoer is geen leeg resultaat.
 
 Alle drie waren te vangen met een controle vóór publicatie. De derde zelfs met
 één regel: twee verschillende onderwerpen die identieke cijfers opleveren, is per
@@ -120,6 +125,32 @@ def geen_variatie(data, veld, drempel=0.98):
     return []
 
 
+def heeft_gemeten(data, sleutels, min_gevuld=0.05):
+    """Bewijst deze oogst dat hij gemeten heeft?
+
+    Op 31 juli 2026 verwierp ik 14.191 profielpagina's omdat mijn meetscript "8
+    impressies, 0 klikken" rapporteerde. In werkelijkheid schreef het script nul
+    van de 25.698 bedrijven een cijfer toe: het had niets opgehaald. Ik las een
+    lege uitvoer als een leeg resultaat, en haalde daarmee 43% van het siteverkeer
+    uit de index.
+
+    Een script dat duizenden records verwerkt en er vrijwel geen een waarde geeft,
+    heeft een storing — geen bevinding. Dat onderscheid is niet uit de uitkomst af
+    te leiden, alleen uit de vulgraad.
+    """
+    n = sum(1 for v in data.values() if isinstance(v, dict))
+    if n < 20:
+        return []
+    gevuld = sum(1 for v in data.values()
+                 if isinstance(v, dict) and any(v.get(k) not in (None, 0, "") for k in sleutels))
+    aandeel = gevuld / n
+    if aandeel < min_gevuld:
+        return [("FOUT", f"slechts {gevuld} van de {n} records ({aandeel*100:.1f}%) heeft een "
+                         f"waarde op {sleutels}. Dat is een storing in de oogst, geen bevinding "
+                         f"— trek er geen conclusie uit voordat je weet waarom hij leeg is.")]
+    return []
+
+
 def besmet_aandeel(data, sleutels, positie=None, drempel=ZELFDE_BUURT_KM):
     """Welk deel van de records deelt zijn cijfers met een ver verwijderd ander
     record. Dit is de maat die toeval van systematiek scheidt.
@@ -170,6 +201,10 @@ def controleer(data, sleutels, positie=None, deel=None, geheel=None, velden=(),
                alleen_fouten=True):
     """Geeft een lijst (ernst, melding). Met alleen_fouten=True blijven de losse
     toevalstreffers weg en houd je over wat op een gedeelde bron wijst."""
+    uit = heeft_gemeten(data, sleutels)
+    if uit:
+        # Bij een lege oogst zeggen de andere controles niets zinnigs meer.
+        return uit if alleen_fouten else uit
     uit = identieke_uitkomsten(data, sleutels, positie)
     if deel and geheel:
         uit += onmogelijke_verhouding(data, deel, geheel)
