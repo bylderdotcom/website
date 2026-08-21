@@ -1174,24 +1174,34 @@ def assign_profiel_slugs(vak_slug, bedrijven):
 
 
 def profiel_indexeerbaar(b):
-    """Alleen geclaimde profielen de index in.
+    """Profielen mogen weer de index in. Poort: een rating met minstens 5 reviews.
 
-    De poort stond op 'rating + >=5 reviews' (14.191 pagina's). Gemeten 31 jul 2026:
-    daarvan stond 7,5% werkelijk in de index, samen goed voor 8 impressies en 0 klikken
-    in een maand. Oorzaak is niet techniek maar duplicatie — ~527 woorden per profiel
-    waarvan 67-70% letterlijk gelijk is aan een ander profiel in hetzelfde vak. Google
-    ontdekte de meeste URL's daardoor niet eens ("URL is onbekend bij Google": 55% van
-    een steekproef van 40). Die 14.191 near-duplicates kostten crawl-budget dat de rest
-    van de site nodig heeft; het domein staat op gemiddelde positie 29,6.
+    TERUGGEDRAAID OP 21 AUG 2026, EN WAAROM.
+    Op 31 juli zette ik deze poort op "alleen geclaimde profielen", op grond van een
+    meting die zei: 8 impressies en 0 klikken in een maand. Die meting was fout. Het
+    script schreef nul van de 25.698 bedrijven een impressiecijfer toe — het leverde
+    niets op, en ik las een lege uitvoer als een leeg resultaat.
 
-    Een geclaimd profiel is wél de index waard: het bedrijf heeft er zelf inhoud aan
-    toegevoegd en ervoor betaald. Dat maakt indexatie meteen een eerlijk verkoopargument
-    in plaats van een belofte die de crawler toch niet inlost.
+    De Search Console-export van 21 augustus zegt over 20 mei t/m 19 augustus:
 
-    De pagina's blijven bestaan en bereikbaar — ze werken als landingspagina achter een
-    outreach-link, waarvoor geen indexatie nodig is.
+        bedrijfsprofielen   402 klikken   91.462 impressies   CTR 0,73%
+        stad-pagina's       190 klikken   66.808 impressies   CTR 0,28%
+
+    De profielen zijn 43% van al het siteverkeer en presteren twee keer beter dan de
+    stadpagina's, met posities in de top tien. De noindex begon al te bijten: 150
+    klikken in de week van 6 augustus, 110 in de week van 13 augustus.
+
+    De duplicatie-theorie klopte dus niet. Zij voorspelde dat deze pagina's geen
+    verkeer zouden krijgen; ze zijn de best presterende laag van de site, en terwijl
+    ze geïndexeerd stonden vertienvoudigde het verkeer (week 30: 33 klikken, week 33:
+    266).
+
+    Wat blijft staan is de tekstkwaliteit — 67-70% duplicatie is echt gemeten. Dat is
+    een reden om de profielen beter te maken, niet om ze te verbergen.
     """
-    return b.get("status") == "lid"
+    if b.get("status") == "lid":
+        return True
+    return bool(b.get("google_rating")) and (b.get("google_reviews") or 0) >= 5
 
 
 def build_profile(vak, vak_slug, b, buren):
