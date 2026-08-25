@@ -295,11 +295,15 @@ export default function HomeClient() {
         if (hint) hint.textContent = 'Even zoeken…'
         const viaPlaats = await viaPlaatsnaam(veld.value)
         if (viaPlaats) { window.location.href = viaPlaats; return }
+        // Geen treffer in onze eigen lijst betekende tot nu toe een doodlopende weg.
+        // Sinds de woningscan is dat niet meer waar: die leest het Kadaster en werkt
+        // dus op élk Nederlands adres, ook waar wij nog geen projectpagina hebben.
         if (hint) {
-          hint.innerHTML = 'Die plaats kennen we nog niet. '
-            + '<a href="/nieuwbouw-project/" style="color:#3D5A3E;font-weight:700;">'
-            + 'Bekijk alle projecten</a> of maak een gratis account &mdash; dan volgen wij '
-            + 'jouw woning voor je.'
+          const q = encodeURIComponent(veld.value.trim())
+          hint.innerHTML = 'Daar hebben wij nog geen projectpagina van. '
+            + `<a href="https://app.bylder.com/woningscan?q=${q}" `
+            + 'style="color:#3D5A3E;font-weight:700;">Doe de woningscan</a> &mdash; die '
+            + 'kijkt bij het Kadaster mee en werkt op elk adres in Nederland.'
         }
       }
       form.addEventListener('submit', onSubmit as EventListener)
