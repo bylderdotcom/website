@@ -53,7 +53,7 @@ const STAPPEN = [
     tekst: 'Vul je adres in. Wij kijken bij het Kadaster hoe ver de bouw in je buurt is, welk '
       + 'nieuwbouwproject er ligt en welke woonwinkels er in de buurt zijn. Weet je je adres nog '
       + 'niet — bij een woning die nog verkocht moet worden — dan volstaat je plaats, en vul je het later aan.',
-    link: { href: 'https://app.bylder.com/woningscan', tekst: 'Doe de woningscan' },
+    link: { href: 'https://app.bylder.com/woningscan', tekst: 'Bekijk wat we al weten' },
   },
   {
     n: '2', titel: 'Wat ga je kopen?',
@@ -258,7 +258,7 @@ export default function HoeHetWerktPage() {
         <a href="https://app.bylder.com/woningscan" style={{
           display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 11,
           padding: '14px 24px', fontWeight: 800, fontSize: 15, textDecoration: 'none',
-        }}>Doe de woningscan</a>
+        }}>Bekijk wat we al weten over jouw woning</a>
       </div>
 
       <script type="application/ld+json"

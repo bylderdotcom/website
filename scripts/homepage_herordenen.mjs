@@ -1,6 +1,45 @@
 import fs from 'node:fs'
-const SCRATCH = '/private/tmp/claude-501/-Users-danielpaaij-Documents-GitHub-website--claude-worktrees-recursing-dubinsky-e64b21/92f00c4e-48d2-4e99-bf93-16ccfa0d7ad5/scratchpad'
-const S = JSON.parse(fs.readFileSync(`${SCRATCH}/secties.json`, 'utf8'))
+
+/**
+ * Herordent de homepage: leest web/app/homeHtml.ts, knipt hem op zijn <section>-
+ * grenzen en schrijft web/app/homeSections.ts in de volgorde van de funnel.
+ *
+ * Het knippen zat eerst in een tweede script dat een tussenbestand achterliet.
+ * Eén keer vergeten dat script te draaien en de generator bouwde stilzwijgend op
+ * verouderde inhoud — een merkkaart die ik net had vervangen stond nog gewoon op
+ * de pagina. Daarom doet dit script het knippen nu zelf: er is geen tussenbestand
+ * meer dat achter kan lopen.
+ */
+const BRON = 'web/app/homeHtml.ts'
+
+/** Haalt één JS-stringliteral op zonder hem als code te interpreteren. */
+function literal(src, naam) {
+  const kop = `export const ${naam} = "`
+  const start = src.indexOf(kop)
+  if (start < 0) return null
+  const open = src.indexOf('"', start + kop.length - 1)
+  let i = open + 1
+  while (i < src.length) {
+    if (src[i] === '\\') { i += 2; continue }
+    if (src[i] === '"') break
+    i++
+  }
+  return JSON.parse(src.slice(open, i + 1))
+}
+
+function knip() {
+  const src = fs.readFileSync(BRON, 'utf8')
+  const html = ['HOME_HTML_TOP', 'HOME_HTML_MID', 'HOME_HTML_BOTTOM']
+    .map(n => literal(src, n)).filter(Boolean).join('\n')
+  const pos = [...html.matchAll(/<section\b/g)].map(m => m.index)
+  pos.push(html.length)
+  const uit = []
+  for (let i = 0; i < pos.length - 1; i++) uit.push({ i, blok: html.slice(pos[i], pos[i + 1]) })
+  if (pos[0] > 0) uit[0].blok = html.slice(0, pos[0]) + uit[0].blok
+  return uit
+}
+
+const S = knip()
 const bij = (i) => S.find(s => s.i === i).blok
 
 // Volgorde volgt de funnel: welke woning → wat koop je → hulp bij keuzes.

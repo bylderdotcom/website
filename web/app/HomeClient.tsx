@@ -356,7 +356,7 @@ export default function HomeClient() {
           const q = encodeURIComponent(veld.value.trim())
           hint.innerHTML = 'Daar hebben wij nog geen projectpagina van. '
             + `<a href="https://app.bylder.com/woningscan?q=${q}" `
-            + 'style="color:#3D5A3E;font-weight:700;">Doe de woningscan</a> &mdash; die '
+            + 'style="color:#3D5A3E;font-weight:700;">Bekijk wat we al weten</a> &mdash; dat '
             + 'kijkt bij het Kadaster mee en werkt op elk adres in Nederland.'
         }
       }

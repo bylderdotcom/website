@@ -27,7 +27,7 @@ const MENUS: Menu[] = [
   {
     label: 'Je woning',
     items: [
-      { href: 'https://app.bylder.com/woningscan', title: 'Doe de woningscan', sub: 'Je adres is genoeg — wij zoeken de rest op' },
+      { href: 'https://app.bylder.com/woningscan', title: 'Wat weten we over jouw woning?', sub: 'Je adres is genoeg — wij zoeken de rest op' },
       { href: '/nieuwbouw-project/', title: 'Nieuwbouwprojecten', sub: 'Wat er gebouwd wordt, en hoe ver het is' },
       { href: '/nieuwbouw-koper/', title: 'Nieuwbouw kopen', sub: 'Van bezichtiging tot sleutel' },
       { href: '/wonen-in/', title: 'Wonen in jouw gemeente', sub: 'Prijzen en aanbod per plaats' },
@@ -158,7 +158,7 @@ export default function Nav() {
               klikt weet nu wat er gebeurt, en het is dezelfde handeling als het
               zoekveld op de homepage. */}
           <a href="https://app.bylder.com/woningscan" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-            Doe de woningscan
+            Bekijk wat we al weten
           </a>
           {isMobile && (
             <button onClick={() => setMobileOpen((o) => !o)} aria-label="Menu" aria-expanded={mobileOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
