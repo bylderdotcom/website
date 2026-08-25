@@ -7,6 +7,7 @@ import type { Metadata } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
 import { metKennisbank } from './kennisbank-links'
+import { zonderOudKopstuk } from './oud-kopstuk'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'project'
@@ -77,7 +78,8 @@ function readTpl(rel: string): string {
 }
 const _hubCache: Record<string, string> = {}
 function readHub(slug: string): string {
-  if (!(slug in _hubCache)) _hubCache[slug] = fs.readFileSync(path.join(DATA_DIR, 'content', `${slug}.html`), 'utf8')
+  if (!(slug in _hubCache)) _hubCache[slug] = zonderOudKopstuk(
+    fs.readFileSync(path.join(DATA_DIR, 'content', `${slug}.html`), 'utf8'))
   return _hubCache[slug]
 }
 

@@ -9,6 +9,7 @@ import type { Metadata } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
 import { metKennisbank, metWijzer } from './kennisbank-links'
+import { zonderOudKopstuk } from './oud-kopstuk'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'kopen'
@@ -81,7 +82,8 @@ function readHub(slug: string): string {
   // Hub-fragmentbestanden gebruiken "__" i.p.v. "/" tussen categorie en subcategorie
   // (bv. slug "binnendeuren/glazen-binnendeur" → content/binnendeuren__glazen-binnendeur.html).
   const file = slug.replace(/\//g, '__')
-  if (!(file in _hubCache)) _hubCache[file] = fs.readFileSync(path.join(DATA_DIR, 'content', `${file}.html`), 'utf8')
+  if (!(file in _hubCache)) _hubCache[file] = zonderOudKopstuk(
+    fs.readFileSync(path.join(DATA_DIR, 'content', `${file}.html`), 'utf8'))
   return _hubCache[file]
 }
 
