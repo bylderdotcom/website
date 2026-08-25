@@ -6,8 +6,10 @@ import { HOME_STYLE } from './homeHtml'
 import { HOME_DELEN } from './homeSections'
 import HomeServices from './HomeServices'
 
-// Index van het deel waarná de vier pijlers komen: 2 = de nieuwe stappen-sectie.
-const PIJLERS_NA = 2
+// Index van het deel waarná de vier pijlers komen. De pijlers openen het
+// gereedschapsblok: eerst het tastbare (merken, korting, keuzes), daarna pas wat
+// de software voor je doet.
+const PIJLERS_NA = 7
 
 // Getrouwe port van de homepage-body. De secties + overlays worden byte-getrouw
 // via dangerouslySetInnerHTML gerenderd (behoudt exact alle markup, ids, Tailwind-

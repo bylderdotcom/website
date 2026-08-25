@@ -70,7 +70,7 @@ export default function HomeServices() {
         <div style={{ textAlign: 'center', maxWidth: 660, margin: '0 auto 48px' }}>
           <div style={{ fontSize: 11.5, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#B85C38', fontWeight: 700, marginBottom: 12, fontFamily: mono }}>Eén dossier, vier pijlers</div>
           <h2 style={{ fontSize: 'clamp(1.7rem,3.4vw,2.4rem)', fontWeight: 800, color: '#1A1208', letterSpacing: '-0.025em', lineHeight: 1.15, marginBottom: 12 }}>
-            Upload één keer je tekening.<br />Alles werkt ermee.
+            Vier dingen die Bylder<br />voor je uitzoekt.
           </h2>
           <p style={{ color: muted, fontSize: '1.02rem', lineHeight: 1.65 }}>
             Geen losse tools, maar één verweven geheel: wat je in de ene stap doet, maakt de volgende slimmer.

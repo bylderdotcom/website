@@ -10,14 +10,19 @@ const VOLGORDE = [
   ['hero',            0],
   ['merken',          1],
   ['stappen',      null],   // nieuw
+  // Eerst het tastbare: welke merken meedoen, welke korting je krijgt, welke
+  // keuzes er echt op je afkomen. Dat is te controleren en het bestaat vandaag.
+  // Software die iets belooft komt daarna — anders vraag je vertrouwen vóór je
+  // iets hebt laten zien.
+  ['vouchers',        7],
+  ['producten',       6],
+  ['kopen',           16],
+  ['opmaat',          17],
+  ['eerlijkeprijzen', 11],
+  // Vanaf hier de gereedschappen.
   ['depotcalculator', 12],
   ['demo',            2],
   ['visualisatie',    5],
-  ['kopen',           16],
-  ['producten',       6],
-  ['vouchers',        7],
-  ['opmaat',          17],
-  ['eerlijkeprijzen', 11],
   ['begeleider',      10],
   ['functies',        9],
   ['projecten',       18],
