@@ -50,10 +50,18 @@ const MENUS: Menu[] = [
     items: [
       { href: '/ruimtes/', title: 'Per ruimte', sub: 'Van keuken tot zolder, alle keuzes' },
       { href: '/kopen/', title: 'Alle productgidsen', sub: '19 categorieën met marktprijzen' },
-      { href: '/vouchers/', title: 'Korting bij 61 merken', sub: 'Auping, Goossens, DRT en meer' },
-      { href: '/kortingscode/', title: 'Kortingscodes', sub: 'Actuele codes per merk' },
-      { href: '/showroomsale/', title: 'Showroomsale', sub: 'Showroommodellen met korting' },
+      { href: '/slaapkamer/', title: 'Slaapkamer', sub: 'Bed, matras en de keuzes die ertoe doen' },
       { href: '/interieur-woning/', title: 'Alle inrichtingsgidsen' },
+    ],
+  },
+  {
+    // Eigen hoofdingang op verzoek van Daniel (26 aug): de kortingen zijn het
+    // tastbaarste bewijs dat Bylder echt iets oplevert — geloofwaardigheid eerst.
+    label: 'Kortingen',
+    items: [
+      { href: '/vouchers/', title: 'Ledenkorting bij 61 merken', sub: 'Auping, Goossens, DRT en meer — met een gratis account' },
+      { href: '/kortingscode/', title: 'Kortingscodes', sub: 'Actuele codes per merk' },
+      { href: '/showroomsale/', title: 'Showroomsale', sub: 'Showroommodellen met korting, op = op' },
     ],
   },
   { label: 'Assortiment', href: '/assortiment/' },
@@ -157,7 +165,7 @@ export default function Nav() {
               klikt weet nu wat er gebeurt, en het is dezelfde handeling als het
               zoekveld op de homepage. */}
           <a href="https://app.bylder.com/woningscan" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-            Bekijk wat we al weten
+            Maak je stappenplan
           </a>
           {isMobile && (
             <button onClick={() => setMobileOpen((o) => !o)} aria-label="Menu" aria-expanded={mobileOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
