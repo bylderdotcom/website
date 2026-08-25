@@ -91,8 +91,8 @@ const SOORTEN = [
       + 'met verdekte scharnieren en een magneetslot zodat er geen beslag zichtbaar is. Wandddikte vanaf '
       + 'ongeveer 100 mm, afhankelijk van het profiel.' },
   { titel: 'Schuivend, in de wand', tekst: 'De deur verdwijnt in een cassette in de wand. Vraagt om een '
-      + 'dubbele wand op die plek en dus om een besluit vóórdat de wanden staan. Wint ruimte in een gang '
-      + 'of een kleine badkamer.' },
+      + 'dubbele wand op die plek en dus om een besluit vóórdat de wanden staan. Moderne railsystemen '
+      + 'hebben soft-close en dragen tot 100 kg; de rail blijft bereikbaar voor onderhoud.' },
   { titel: 'Taatsdeur', tekst: 'Draait om een punt in de vloer en het plafond in plaats van om scharnieren '
       + 'aan de zijkant. Kan zonder kozijn worden uitgevoerd, maar sluit minder goed af — let op tocht en '
       + 'geluid tussen ruimtes.' },
@@ -103,8 +103,10 @@ const MERKEN = [
       + 'systeem in Nederland en België; veel dealers, dus makkelijk aan te komen.' },
   { naam: 'ECLISSE', land: 'Italië', wat: 'Sterk in schuifdeurcassettes (Syntesis) en kozijnloze draaideuren. '
       + 'Ruime keuze in wanddiktes.' },
-  { naam: 'CNX Doorframes', land: 'Uden, NL', wat: 'Instuckozijn met magneetslot en scharnieren als complete '
-      + 'combinatie, uit eigen werkplaats. Levert rechtstreeks, gericht op architecten en ontwikkelaars.' },
+  { naam: 'CNX Doorframes / Dutch Doors Company', land: 'Uden, NL',
+    wat: 'Complete kozijn-en-deurcombinatie met magneetslot en Basys-scharnieren, uit eigen werkplaats. '
+      + 'Deuren tot kamerhoog (2.700 mm), standaard 50 mm dik, elke RAL-kleur, ook als frameloos '
+      + 'schuifdeursysteem. Levert door heel Nederland en biedt meet- en montageservice op locatie.' },
 ]
 
 const VRAGEN = [
@@ -128,6 +130,13 @@ const VRAGEN = [
     a: 'Vóór de ruwbouw, niet erna. Het frame moet in de wand staan voordat er gestuukt wordt, en een '
       + 'schuifdeurcassette vraagt zelfs om een dubbele wand op die plek. Bij nieuwbouw betekent dat: bij de '
       + 'meerwerklijst, niet bij het inrichten. Wie het later bedenkt, betaalt sloop- en stucwerk erbij.',
+  },
+  {
+    v: 'Kan een kozijnloze deur kamerhoog?',
+    a: 'Ja — dat is zelfs waar het systeem het sterkst oogt, omdat deur en wand dan één vlak vormen '
+      + 'zonder bovenlicht. Fabrikanten leveren deurhoogtes tot 2.700 mm en breedtes tot 1.050 mm; '
+      + 'standaard is het blad 50 mm dik en in grondlak, af te lakken in elke RAL-kleur. Reken bij '
+      + 'kamerhoog wel op maatwerk en een langere levertijd.',
   },
   {
     v: 'Kan het ook in een bestaande woning?',
