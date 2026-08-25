@@ -47,7 +47,9 @@ const bij = (i) => S.find(s => s.i === i).blok
 // /hoe-het-werkt/. 4 was een tweede exemplaar van dezelfde merkenstrook.
 const VOLGORDE = [
   ['hero',            0],
-  ['merken',          1],
+  // De merkenstrook (sectie 1) is er 26 aug uitgehaald op verzoek van Daniel:
+  // direct eronder begint de vouchersectie al met dezelfde merken — het was
+  // twee keer hetzelfde bericht boven elkaar.
   ['stappen',      null],   // nieuw
   // Eerst het tastbare: welke merken meedoen, welke korting je krijgt, welke
   // keuzes er echt op je afkomen. Dat is te controleren en het bestaat vandaag.
