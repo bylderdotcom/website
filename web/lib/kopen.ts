@@ -8,7 +8,7 @@
 import type { Metadata } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
-import { metKennisbank } from './kennisbank-links'
+import { metKennisbank, metWijzer } from './kennisbank-links'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'kopen'
@@ -141,5 +141,5 @@ export function segmentsToSlug(segments?: string[]): string {
 
 // Kennisbank-links erbij (zie kennisbank-links.ts voor de aanleiding).
 export function getMainHtml(page: KopenPage): string {
-  return metKennisbank(getMainHtmlRaw(page), 'kopen')
+  return metWijzer(metKennisbank(getMainHtmlRaw(page), 'kopen'), page.slug)
 }

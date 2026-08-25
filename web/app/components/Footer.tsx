@@ -31,6 +31,7 @@ const COLS: Col[] = [
   { title: 'Kopen', links: [
     { href: '/kopen/vloeren/', label: 'Vloeren' },
     { href: '/kopen/sanitair/', label: 'Sanitair' },
+    { href: '/kozijnloze-deuren/', label: 'Kozijnloze deuren' },
     { href: '/kopen/verlichting/', label: 'Verlichting' },
     { href: '/kopen/laadpalen/', label: 'Laadpalen' },
     { href: '/kopen/zonnepanelen/', label: 'Zonnepanelen' },

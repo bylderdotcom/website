@@ -71,3 +71,40 @@ export function metKennisbank(html: string, setKey: string): string {
   const b = blok(keys)
   return html.includes('</main>') ? html.replace('</main>', `${b}</main>`) : html + b
 }
+
+/**
+ * Eén gerichte verwijzing, gekoppeld aan de slug van de pagina.
+ *
+ * Waarom niet in de footer-template: die is gedeeld met twaalf andere categorieën,
+ * dus een deurlink zou ook op zonnepanelen- en tuinpagina's belanden. En niet in de
+ * content-templates: dan moet je 25 bestanden bijhouden voor één link.
+ *
+ * Hier staat per regel welke pagina's hem krijgen. Nu alleen de deurpagina's, die
+ * naar de kozijnloze deuren wijzen — 2.822 pagina's die op positie 40 staan en één
+ * klik per kwartaal opleveren, met een link naar de pagina die het onderwerp echt
+ * uitlegt.
+ */
+type Wijzer = { past: (slug: string) => boolean; href: string; kop: string; tekst: string; label: string }
+
+const WIJZERS: Wijzer[] = [
+  {
+    past: (s) => s.startsWith('binnendeuren') || s.startsWith('buitendeuren'),
+    href: '/kozijnloze-deuren/',
+    kop: 'Ook een optie',
+    tekst: 'Een kozijnloze deur verdwijnt in de wand: geen kozijn, geen architraaf, alleen een '
+      + 'schaduwvoeg. Let op — dit ligt vast vóór de stukadoor komt, dus het is meerwerk en geen inrichting.',
+    label: 'Kozijnloze deuren: prijzen en wanneer je kiest',
+  },
+]
+
+export function metWijzer(html: string, slug: string): string {
+  const w = WIJZERS.find((x) => x.past(slug))
+  if (!w) return html
+  const b =
+    `<section style="margin-top:32px;padding:20px 22px;border:1px solid rgba(61,90,62,0.3);border-radius:14px;background:#fff;">` +
+    `<h2 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3D5A3E;margin:0 0 8px;">${w.kop}</h2>` +
+    `<p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,0.78);margin:0 0 12px;max-width:70ch;">${w.tekst}</p>` +
+    `<a href="${w.href}" style="font-size:14px;font-weight:700;color:#3D5A3E;text-decoration:none;">${w.label} &rarr;</a>` +
+    `</section>`
+  return html.includes('</main>') ? html.replace('</main>', `${b}</main>`) : html + b
+}

@@ -58,6 +58,49 @@ function Card({ icoR, icon, title, tag, children }: { icoR?: boolean; icon: stri
   )
 }
 
+// Overgenomen van de homepage, ongewijzigd: vier fases met de gidsen die erbij
+// horen. Dit blok droeg veertien interne links naar /nieuwbouw-gids/, en die
+// moesten ergens blijven staan.
+const FASES = [
+  {
+    n: 1, titel: 'Koop & financiering',
+    tekst: 'Koopakte, hypotheekdeadline en bod-advies op orde.',
+    links: [
+      { href: '/nieuwbouw-gids/fase-1-orientatie/koopakte-nieuwbouw-controleren/', label: 'Koopakte controleren' },
+      { href: '/nieuwbouw-gids/fase-1-orientatie/bouwdepot-wat-is-het/', label: 'Bouwdepot uitgelegd' },
+      { href: '/nieuwbouw-gids/fase-1-orientatie/hypotheek-nieuwbouw-tips/', label: 'Hypotheek tips' },
+    ],
+  },
+  {
+    n: 2, titel: 'Keuzes & meerwerk',
+    tekst: 'Offerte-check en meerwerk tegen échte marktprijzen.',
+    links: [
+      { href: '/nieuwbouw-gids/fase-2-bouwfase/meerwerk-nieuwbouw/', label: 'Meerwerk controleren' },
+      { href: '/nieuwbouw-gids/fase-2-bouwfase/lichtplan-nieuwbouw/', label: 'Lichtplan tips' },
+      { href: '/nieuwbouw-gids/fase-2-bouwfase/keuken-casco-opgeleverd/', label: 'Keuken casco uitgelegd' },
+    ],
+  },
+  {
+    n: 3, titel: 'Bouw & oplevering',
+    tekst: 'Planning, opleverchecklist en garantie bijgehouden.',
+    links: [
+      { href: '/nieuwbouw-gids/fase-3-oplevering/voorschouw-checklist-nieuwbouw/', label: 'Voorschouw checklist' },
+      { href: '/nieuwbouw-gids/fase-3-oplevering/opleveringskeuring-nieuwbouw/', label: 'Opleveringskeuring gids' },
+      { href: '/nieuwbouw-gids/fase-3-oplevering/5-procent-depot-regeling/', label: '5%-regeling uitgelegd' },
+      { href: '/nieuwbouw-gids/fase-3-oplevering/gebreken-melden-aannemer/', label: 'Gebreken melden' },
+    ],
+  },
+  {
+    n: 4, titel: 'Inrichten & wonen',
+    tekst: '61 woonmerken met korting voor je afwerking.',
+    links: [
+      { href: '/vouchers/', label: 'Alle 61 woonmerken' },
+      { href: '/kopen/', label: 'Koopgidsen per categorie' },
+      { href: '/gereedschap-lenen/', label: 'Gereedschap lenen in de buurt' },
+    ],
+  },
+]
+
 const FREE_PROBEREN = { cls: 'free', label: 'GRATIS TE PROBEREN' }
 const FREE_STARTEN = { cls: 'free', label: 'GRATIS starten' }
 const FREE = { cls: 'free', label: 'GRATIS' }
@@ -141,6 +184,35 @@ export default function FunctiesClient() {
           <Card icon="ph-thin ph-toolbox" title={<>Verbouwplanning &amp; aannemer-matching</>} tag={SOON}>Planning van je verbouwing en matching met gecertificeerde aannemers op project, budget en locatie.</Card>
         </div>
 
+      </div></section>
+
+      {/* De fase-strip stond op de homepage, waar hij het grootste blok van de
+          pagina was (1.874px) zonder dat hij daar iets besliste. Hier hoort hij:
+          wie op de functiepagina komt wil weten wanneer hij wat nodig heeft. */}
+      <section className="section"><div className="container">
+        <h2 style={{ fontSize: 'clamp(1.5rem,3vw,2rem)', fontWeight: 800, letterSpacing: '-0.02em', color: '#1A1208', margin: '0 0 8px', textWrap: 'balance' }}>
+          Wanneer heb je wat nodig?
+        </h2>
+        <p style={{ fontSize: 15.5, lineHeight: 1.7, color: 'rgba(61,46,30,0.72)', margin: '0 0 22px', maxWidth: '60ch' }}>
+          Een woning kopen is geen moment maar een traject van maanden. Bij elke fase hoort een
+          andere vraag &mdash; en een andere gids.
+        </p>
+        <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))' }}>
+          {FASES.map((f) => (
+            <div key={f.n} style={{ background: '#fff', border: '1px solid rgba(61,46,30,0.1)', borderRadius: 16, padding: 20 }}>
+              <div style={{ fontFamily: "'Space Mono',monospace", fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(61,46,30,0.55)', fontWeight: 700 }}>Fase {f.n}</div>
+              <h3 style={{ fontSize: '1.02rem', fontWeight: 800, color: '#1A1208', margin: '4px 0 5px' }}>{f.titel}</h3>
+              <p style={{ fontSize: 13.5, lineHeight: 1.65, color: 'rgba(61,46,30,0.72)', margin: '0 0 12px' }}>{f.tekst}</p>
+              <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 6 }}>
+                {f.links.map((l) => (
+                  <li key={l.href}>
+                    <a href={l.href} style={{ fontSize: 13.5, color: '#3D5A3E', fontWeight: 600, textDecoration: 'none' }}>{l.label} &rarr;</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div></section>
 
       <section className="cta"><div className="container">
