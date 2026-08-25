@@ -53,7 +53,7 @@ const STAPPEN = [
     tekst: 'Vul je adres in. Wij kijken bij het Kadaster hoe ver de bouw in je buurt is, welk '
       + 'nieuwbouwproject er ligt en welke woonwinkels er in de buurt zijn. Weet je je adres nog '
       + 'niet — bij een woning die nog verkocht moet worden — dan volstaat je plaats, en vul je het later aan.',
-    link: { href: 'https://app.bylder.com/woningscan', tekst: 'Bekijk wat we al weten' },
+    link: { href: 'https://app.bylder.com/woningscan', tekst: 'Maak je stappenplan' },
   },
   {
     n: '2', titel: 'Wat ga je kopen?',
@@ -96,15 +96,15 @@ const VRAGEN = [
     v: 'Wat kost kopersbegeleiding in Nederland?',
     a: 'Kopersbegeleiding via een aankoopmakelaar of bouwkundig adviseur kost €1.500 tot €5.000 per '
       + 'traject. Bylder is gratis voor bewoners — inclusief meerwerkanalyse, offerte-check, '
-      + 'projectplanning en kortingsvouchers. Bylder verdient aan de aanbodkant: vakbedrijven en merken '
-      + 'betalen een vaste vergoeding om vindbaar te zijn, allemaal hetzelfde bedrag.',
+      + 'projectplanning en kortingsvouchers. Bylder verdient aan deelnemers en aan het eigen assortiment; '
+      + 'daarom blijft het advies voor bewoners gratis.',
   },
   {
     v: 'Waarom is Bylder gratis voor bewoners?',
-    a: 'Omdat de andere kant betaalt. Vakbedrijven en merken betalen een vaste vergoeding om vindbaar '
-      + 'te zijn — lokaal of landelijk, iedereen hetzelfde. Er is geen veiling en geen betaalde positie, '
-      + 'dus een aanbeveling staat op geschiktheid en niet op wie het meeste betaalt. Dat kan een '
-      + 'platform dat per lead of per klik verkoopt niet zeggen.',
+    a: 'Omdat de andere kant betaalt: deelnemers betalen om vindbaar te zijn, en op het eigen '
+      + 'assortiment zit marge. Advies en verkoop houden we gescheiden — de offerte-check vergelijkt '
+      + 'op marktprijs, ook als dat tegen ons eigen aanbod ingaat, en bij elk aanbod staat wie het '
+      + 'levert.',
   },
   {
     v: 'Wat kost Bylder?',
@@ -199,10 +199,10 @@ export default function HoeHetWerktPage() {
 
       <h2 style={H2}>Wat is Bylder?</h2>
       <p style={P}>
-        Bylder is een onafhankelijk platform voor iedereen die in Nederland een nieuwbouwwoning,
-        bestaande woning of verbouwing heeft. Geen aannemer, geen ontwikkelaar, geen makelaar. Wij
-        checken je offerte en meerwerk tegen marktdata, bevelen producten en vakbedrijven aan, plannen
-        je traject en ontgrendelen korting bij 61 woonmerken. Wij leggen de keuzes voor; jij kiest.
+        Bylder regelt verbouwing, afwerking en inrichting — deels met eigen assortiment, deels met
+        partners die wij selecteren, en bij elk aanbod staat wie het levert. Wij checken je offerte en
+        meerwerk tegen marktdata, regelen korting bij 61 woonmerken en brengen je in contact met
+        vakbedrijven uit jouw regio. Wij leggen de keuzes voor; jij kiest.
       </p>
       <p style={P}>
         <strong>Waarom dat nodig is:</strong> 96% van de kopers betaalt minstens één post te duur,
@@ -231,10 +231,11 @@ export default function HoeHetWerktPage() {
       <h2 style={H2}>Waarom Bylder gratis is voor bewoners</h2>
       <div style={{ ...KAART, borderColor: 'rgba(61,90,62,0.35)' }}>
         <p style={{ ...P, margin: 0 }}>
-          Bylder verdient aan de aanbodkant: vakbedrijven en merken betalen een vaste vergoeding om
-          vindbaar te zijn — lokaal of landelijk, en iedereen betaalt hetzelfde. Er is geen veiling en
-          geen betaalde positie, dus een aanbeveling staat op geschiktheid en nooit op wie het meeste
-          betaalt. Dat kan geen platform zeggen dat per lead of per klik verkoopt.
+          Bylder verdient aan twee kanten: deelnemers betalen om vindbaar te zijn, en op ons eigen
+          assortiment zit marge. Daarom houden we advies en verkoop strikt gescheiden. Onze gidsen en
+          de offerte-check vergelijken op marktprijs — ook als dat tegen ons eigen aanbod ingaat — en
+          bij elk aanbod staat wie het levert. Uitvoering doen wij nooit met eigen mensen; die gaat
+          altijd naar een deelnemer.
         </p>
         <p style={{ marginTop: 14, marginBottom: 0 }}>
           <a href="/prijzen/" style={{ fontWeight: 700, color: GROEN, fontSize: 14.5 }}>
@@ -258,7 +259,7 @@ export default function HoeHetWerktPage() {
         <a href="https://app.bylder.com/woningscan" style={{
           display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 11,
           padding: '14px 24px', fontWeight: 800, fontSize: 15, textDecoration: 'none',
-        }}>Bekijk wat we al weten over jouw woning</a>
+        }}>Maak je stappenplan</a>
       </div>
 
       <script type="application/ld+json"

@@ -75,37 +75,18 @@ const VOLGORDE = [
 
 const STAPPEN = `<section style="padding:56px 24px;background:#F5F0E8;">
   <div style="max-width:1100px;margin:0 auto;">
-    <p style="font-family:monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(61,46,30,.55);font-weight:700;margin:0 0 10px;">Zo werkt het</p>
-    <h2 style="font-size:1.9rem;font-weight:800;letter-spacing:-.025em;margin:0 0 8px;text-wrap:balance;color:#1A1208;">Drie stappen, in deze volgorde</h2>
-    <p style="font-size:16px;line-height:1.7;color:rgba(61,46,30,.72);margin:0 0 28px;max-width:60ch;">Alles op Bylder hangt aan je woning. Daarom begint het daar, en niet bij een productcatalogus.</p>
-    <ol style="list-style:none;margin:0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
-      <li style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:16px;padding:24px;">
-        <span aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#EBF0E8;color:#3D5A3E;font-weight:800;font-family:monospace;margin-bottom:14px;">1</span>
-        <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;color:#1A1208;">Welke woning ga je inrichten?</h3>
-        <p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,.75);margin:0 0 12px;">Je adres is genoeg. Wij zoeken op hoe ver de bouw in je buurt is, welk project er ligt en welke winkels in de buurt zitten. Adres nog onbekend? Dan volstaat je plaats.</p>
-        <a href="https://app.bylder.com/woningscan" style="font-weight:700;color:#3D5A3E;font-size:14px;text-decoration:none;">Doe de woningscan &rarr;</a>
-      </li>
-      <li style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:16px;padding:24px;">
-        <span aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#EBF0E8;color:#3D5A3E;font-weight:800;font-family:monospace;margin-bottom:14px;">2</span>
-        <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;color:#1A1208;">Wat ga je kopen?</h3>
-        <p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,.75);margin:0 0 12px;">Vloer, raamdecoratie, verlichting, keuken, sanitair, tuin. Per categorie de eerlijke prijs in jouw gemeente, de winkels in de buurt en waar ledenkorting geldt.</p>
-        <a href="/kopen/" style="font-weight:700;color:#3D5A3E;font-size:14px;text-decoration:none;">Alles wat je koopt &rarr;</a>
-      </li>
-      <li style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:16px;padding:24px;">
-        <span aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#EBF0E8;color:#3D5A3E;font-weight:800;font-family:monospace;margin-bottom:14px;">3</span>
-        <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;color:#1A1208;">Hulp bij de keuzes</h3>
-        <p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,.75);margin:0 0 12px;">Meerwerk en offertes tegen marktprijzen gecheckt &mdash; en daarna de aankoopkeuzes zelf: welke vloer bij vloerverwarming, welke raamdecoratie bij een hoge pui, wat je beter vooraf vastlegt.</p>
-        <a href="/nieuwbouw-tools/" style="font-weight:700;color:#3D5A3E;font-size:14px;text-decoration:none;">Alle tools &rarr;</a>
-      </li>
-    </ol>
+    <p style="font-family:monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(61,46,30,.55);font-weight:700;margin:0 0 10px;">In drie stappen</p>
+    <h2 style="font-size:1.9rem;font-weight:800;letter-spacing:-.025em;margin:0 0 8px;text-wrap:balance;color:#1A1208;">Zo regelt Bylder het</h2>
+    <p style="font-size:16px;line-height:1.7;color:rgba(61,46,30,.72);margin:0 0 28px;max-width:60ch;">Verbouwing, afwerking of inrichting &mdash; de volgorde is altijd dezelfde.</p>
+    <ol style="list-style:none;margin:0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));"><li style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:16px;padding:24px;"><span aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#EBF0E8;color:#3D5A3E;font-weight:800;font-family:monospace;margin-bottom:14px;">1</span><h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;color:#1A1208;">Vul je adres in</h3><p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,.75);margin:0 0 12px;">Wij zien wat er rond jouw woning speelt en welke keuzes eraan komen &mdash; rechtstreeks uit het Kadaster. Adres nog onbekend? Je plaats is genoeg.</p><a href="https://app.bylder.com/woningscan" style="font-weight:700;color:#3D5A3E;font-size:14px;text-decoration:none;">Maak je stappenplan &rarr;</a></li><li style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:16px;padding:24px;"><span aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#EBF0E8;color:#3D5A3E;font-weight:800;font-family:monospace;margin-bottom:14px;">2</span><h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;color:#1A1208;">Kies je producten</h3><p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,.75);margin:0 0 12px;">Eerlijke marktprijzen per categorie, korting bij 61 woonmerken, en winkels bij jou in de buurt die meedoen.</p><a href="/assortiment/" style="font-weight:700;color:#3D5A3E;font-size:14px;text-decoration:none;">Bekijk het assortiment &rarr;</a></li><li style="background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:16px;padding:24px;"><span aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#EBF0E8;color:#3D5A3E;font-weight:800;font-family:monospace;margin-bottom:14px;">3</span><h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;color:#1A1208;">Vind de handen</h3><p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,.75);margin:0 0 12px;">Vakbedrijven uit jouw regio met beoordelingen &mdash; en een offerte-check die zegt of de prijs klopt v&oacute;&oacute;r je tekent.</p><a href="/offerte-check/" style="font-weight:700;color:#3D5A3E;font-size:14px;text-decoration:none;">Check je offerte &rarr;</a></li></ol>
   </div>
 </section>`
 
 const KORT = `<section style="padding:56px 24px;background:#EDE6D8;">
   <div style="max-width:760px;margin:0 auto;">
     <h2 style="font-size:1.6rem;font-weight:800;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance;color:#1A1208;">Wat is Bylder?</h2>
-    <p style="font-size:16.5px;line-height:1.75;color:rgba(61,46,30,.78);margin:0 0 14px;">Een onafhankelijk platform voor iedereen die in Nederland een nieuwbouwwoning, bestaande woning of verbouwing heeft. Geen aannemer, geen ontwikkelaar, geen makelaar. Wij checken je offerte en meerwerk tegen marktdata, bevelen producten en vakbedrijven aan, plannen je traject en ontgrendelen korting bij 61 woonmerken.</p>
-    <p style="font-size:16.5px;line-height:1.75;color:rgba(61,46,30,.78);margin:0 0 18px;">Gratis voor bewoners, omdat de aanbodkant betaalt &mdash; iedereen hetzelfde bedrag, zodat een aanbeveling op geschiktheid staat en niet op wie het meeste betaalt.</p>
+    <p style="font-size:16.5px;line-height:1.75;color:rgba(61,46,30,.78);margin:0 0 14px;">Bylder regelt verbouwing, afwerking en inrichting. Deels met eigen assortiment, deels met partners die wij selecteren &mdash; en bij elk aanbod staat wie het levert.</p>
+    <p style="font-size:16.5px;line-height:1.75;color:rgba(61,46,30,.78);margin:0 0 18px;">Aan de basis ligt een slimme tool die jouw woning kent: hij ziet welke keuzes eraan komen, checkt offertes tegen marktprijzen en regelt korting bij winkels in de buurt. Gratis voor bewoners.</p>
     <a href="/hoe-het-werkt/" style="font-weight:700;color:#3D5A3E;font-size:15px;text-decoration:none;">Hoe Bylder werkt, in het lang &rarr;</a>
   </div>
 </section>`

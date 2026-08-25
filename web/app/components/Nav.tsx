@@ -5,67 +5,85 @@ import { useState, useEffect, useRef } from 'react'
 /**
  * Gedeelde site-navigatie — ÉÉN bron voor elke pagina.
  *
- * WAAROM DEZE VORM
- * De oude nav was een vlakke rij van zes onderwerpen (Nieuwbouw kopen, Verbouwen,
- * Inrichten, Verduurzamen, Kennisbank, Tools). Zes gelijkwaardige items dwingen de
- * bezoeker te kiezen zonder dat iets hem vertelt waar hij is in zijn eigen traject.
+ * OPBOUW (ontwerp Daniel, 26 aug 2026, naar het EVTrader-model)
+ * Twee lagen. Een smalle bovenbalk voor de secundaire wereld: soort woning
+ * (nieuwbouw / bestaande bouw / renovatie), kennisbank en zakelijk. Daaronder de
+ * hoofdnav met de pijlers van het bedrijf: Assortiment, Diensten en
+ * Kortingsvouchers, met de Stappenplan-knop als vierde pijler — dat is de
+ * primaire handeling, dus hij is een knop en geen menu-item. Ernaast een
+ * subtiele verwijzing naar Functies.
  *
- * De funnel heeft drie stappen: welke woning, wat koop je, welke hulp bij je keuzes.
- * De nav volgt die nu, met drie ingangen plus de kennisbank en het zakelijke deel.
+ * In elke dropdown is er visueel onderscheid tussen het primaire onderwerp
+ * (kaartje met achtergrond) en de secundaire onderwerpen (compacte lijst achter
+ * een scheidingslijn) — verzoek Daniel, zodat het overzichtelijk blijft.
  *
- * GEEN INTERNE LINK IS VERDWENEN. Alle zes oude hubs staan nog steeds in de nav,
- * alleen een niveau dieper. Dat is bewust: die links stonden op elke pagina van de
- * site en dragen hun deel van de interne linkstructuur. Ze uit het menu halen zou
- * bij 56.000 URL's de doorstroming raken — precies het risico waar de site op dit
- * moment niet tegen kan.
+ * GEEN INTERNE LINK VERDWIJNT VAN DE SITE. Wat uit het menu ging staat in de
+ * voettekst; de linkpoort in scripts/homepage_herordenen.mjs bewaakt dat.
  */
 
-type Item = { href: string; title: string; sub?: string }
-type Menu = { label: string; href?: string; items?: Item[] }
+type Item = { href: string; title: string; sub?: string; primair?: boolean }
+type Menu = { label: string; items: Item[]; breed?: boolean }
+
+// Smalle bovenbalk: waar je woning in zit + de leeswereld + zakelijk.
+const BOVENBALK: { href: string; label: string }[] = [
+  { href: '/nieuwbouw-koper/', label: 'Nieuwbouw' },
+  { href: '/bestaande-bouw/', label: 'Bestaande bouw' },
+  { href: '/renovatie/', label: 'Renovatie' },
+  { href: '/kennisbank/', label: 'Kennisbank' },
+  { href: '/zakelijk/', label: 'Zakelijk' },
+]
 
 const MENUS: Menu[] = [
   {
-    label: 'Je woning',
+    label: 'Assortiment',
+    breed: true,
     items: [
-      { href: 'https://app.bylder.com/woningscan', title: 'Wat weten we over jouw woning?', sub: 'Je adres is genoeg — wij zoeken de rest op' },
-      { href: '/nieuwbouw-project/', title: 'Nieuwbouwprojecten', sub: 'Wat er gebouwd wordt, en hoe ver het is' },
-      { href: '/nieuwbouw-koper/', title: 'Nieuwbouw kopen', sub: 'Van bezichtiging tot sleutel' },
-      { href: '/wonen-in/', title: 'Wonen in jouw gemeente', sub: 'Prijzen en aanbod per plaats' },
-      { href: '/bouwvergunning/', title: 'Bouwvergunning', sub: 'Wat mag wel en wat niet' },
+      { href: '/assortiment/', title: 'Zo werkt ons assortiment',
+        sub: 'Deels eigen aanbod, deels partners — bij elk aanbod staat wie levert', primair: true },
+      { href: '/kopen/vloeren/', title: 'Vloeren' },
+      { href: '/kopen/tegels/', title: 'Tegels' },
+      { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren' },
+      { href: '/kopen/binnendeuren/', title: 'Binnendeuren' },
+      { href: '/kopen/buitendeuren/', title: 'Buitendeuren' },
+      { href: '/kopen/keuken/', title: 'Keukens' },
+      { href: '/kopen/sanitair/', title: 'Badkamer & sanitair' },
+      { href: '/kopen/slaap-en-bedden/', title: 'Bedden & matrassen' },
+      { href: '/kopen/zitmeubelen/', title: 'Banken & stoelen' },
+      { href: '/kopen/kasten/', title: 'Kasten' },
+      { href: '/kopen/raamdecoratie/', title: 'Raamdecoratie' },
+      { href: '/kopen/verlichting/', title: 'Verlichting' },
+      { href: '/kopen/elektronica/', title: 'Elektronica' },
+      { href: '/kopen/verf/', title: 'Verf' },
+      { href: '/kopen/wandafwerking/', title: 'Wandafwerking' },
+      { href: '/kopen/tuin/', title: 'Tuin' },
+      { href: '/kopen/dakkapellen/', title: 'Dakkapellen' },
+      { href: '/kopen/zonnepanelen/', title: 'Zonnepanelen' },
+      { href: '/kopen/isolatie/', title: 'Isolatie' },
+      { href: '/kopen/laadpalen/', title: 'Laadpalen' },
     ],
   },
   {
-    label: 'Kopen',
+    label: 'Diensten',
     items: [
-      { href: '/kopen/', title: 'Alles wat je koopt', sub: 'Van gietvloer tot laadpaal' },
-      { href: '/ruimtes/', title: 'Per ruimte', sub: 'Keuken, badkamer, zolder, tuin' },
-      { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren', sub: 'Onzichtbaar kozijn — kies vóór de ruwbouw' },
-      { href: '/kortingscode/', title: 'Kortingscodes', sub: 'Actuele codes per merk' },
-      { href: '/vouchers/', title: 'Ledenkorting', sub: 'Korting bij winkels in de buurt' },
-      { href: '/interieur-woning/', title: 'Inrichten' },
-      { href: '/verbouwen/', title: 'Verbouwen' },
-      { href: '/woning-verduurzamen/', title: 'Verduurzamen' },
+      { href: '/offerte-check/', title: 'Offerte-check',
+        sub: 'Betaal je een eerlijke prijs? Gratis gecheckt', primair: true },
+      { href: '/aannemer/', title: 'Vind een vakbedrijf',
+        sub: 'Aannemer, loodgieter, elektricien — met beoordelingen', primair: true },
+      { href: '/meerwerk/', title: 'Meerwerk controleren',
+        sub: 'Vóór je tekent, tegen marktprijzen', primair: true },
+      { href: '/eerlijke-prijzen/', title: 'Eerlijke prijzen per klus' },
+      { href: '/bouwvergunning/', title: 'Bouwvergunning' },
+      { href: '/oplevering-nieuwbouw/', title: 'Oplevering & 5%-regeling' },
+      { href: '/ruimtes/', title: 'Keuzes per ruimte' },
     ],
   },
   {
-    label: 'Hulp bij keuzes',
+    label: 'Kortingsvouchers',
     items: [
-      { href: '/nieuwbouw-tools/', title: 'Alle tools', sub: 'Rekenen, vergelijken, plannen' },
-      { href: '/offerte-check/', title: 'Offerte-check', sub: 'Betaal je een eerlijke prijs?' },
-      { href: '/eerlijke-prijzen/', title: 'Eerlijke prijzen', sub: 'Wat kost het echt, per post' },
-      { href: '/functies/', title: 'Alle functies', sub: 'Per woningtype: nieuwbouw, bestaand, renovatie' },
-      { href: '/3d-sfeerimpressie/', title: '3D-sfeerimpressie', sub: 'Zie je woning af voordat je kiest' },
-      { href: '/hoe-het-werkt/', title: 'Hoe Bylder werkt', sub: 'Wat wij doen en wat het kost' },
-      { href: '/prijzen/', title: 'Wat kost Bylder' },
-    ],
-  },
-  { label: 'Kennisbank', href: '/kennisbank/' },
-  {
-    label: 'Zakelijk',
-    items: [
-      { href: '/deelnemer-worden/', title: 'Deelnemer worden', sub: 'Bereik kopers op het juiste koopmoment' },
-      { href: '/deelnemer-worden/commercieel-vastgoed/', title: 'Commercieel vastgoed', sub: 'Offerte-check, m²-benchmarks & fit-out' },
-      { href: '/zakelijk/', title: 'Alles over Bylder Zakelijk' },
+      { href: '/vouchers/', title: 'Ledenkorting bij 61 merken',
+        sub: 'Auping, Goossens, DRT en meer — met een gratis account', primair: true },
+      { href: '/kortingscode/', title: 'Kortingscodes per merk' },
+      { href: '/showroomsale/', title: 'Showroomsale' },
     ],
   },
 ]
@@ -98,8 +116,6 @@ export default function Nav() {
     const buiten = (e: MouseEvent) => {
       if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) setOpen(null)
     }
-    // Escape sluit het menu en houdt de focus waar hij was — anders zit een
-    // toetsenbordgebruiker vast in een uitgeklapt paneel.
     const toets = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(null) }
     document.addEventListener('mousedown', buiten)
     document.addEventListener('keydown', toets)
@@ -116,21 +132,48 @@ export default function Nav() {
     </a>
   )
 
+  const dropdownItem = (it: Item, breed?: boolean) => it.primair ? (
+    <a key={it.href} href={it.href} style={{
+      display: 'block', padding: '12px 14px', borderRadius: 10, textDecoration: 'none',
+      background: '#EBF0E8', marginBottom: 4,
+    }}>
+      <strong style={{ display: 'block', fontSize: 13.5, fontWeight: 800, color: '#1A1208' }}>{it.title}</strong>
+      {it.sub && <span style={{ fontSize: 11.5, color: `${INKT}0.72)` }}>{it.sub}</span>}
+    </a>
+  ) : (
+    <a key={it.href} href={it.href} style={{
+      display: 'block', padding: '8px 14px', borderRadius: 8, textDecoration: 'none',
+      fontSize: 13, fontWeight: 600, color: `${INKT}0.82)`,
+    }}>{it.title}</a>
+  )
+
   return (
-    <nav style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(245,240,232,0.85)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '14px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
+    <nav style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(245,240,232,0.92)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
+      {/* Bovenbalk — de secundaire wereld, klein en rustig (EVTrader-model). */}
+      {!isMobile && (
+        <div style={{ borderBottom: `1px solid ${INKT}0.06)`, background: '#EDE6D8' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '7px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
+            <span style={{ fontSize: 12, color: `${INKT}0.6)` }}>Gratis voor bewoners</span>
+            <div style={{ display: 'flex', gap: 18 }}>
+              {BOVENBALK.map((t) => (
+                <a key={t.href} href={t.href} style={{ fontSize: 12.5, color: `${INKT}0.66)`, textDecoration: 'none', whiteSpace: 'nowrap' }}>{t.label}</a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '13px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
         {logo}
 
         {!isMobile && (
-          <div ref={wrapRef} style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            {MENUS.map((m) => m.href ? (
-              <a key={m.label} href={m.href} style={LINK}>{m.label}</a>
-            ) : (
+          <div ref={wrapRef} style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+            {MENUS.map((m) => (
               <div key={m.label} style={{ position: 'relative' }}>
                 <button
                   onClick={() => setOpen((o) => (o === m.label ? null : m.label))}
                   aria-expanded={open === m.label}
-                  style={{ ...LINK, background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: 0, display: 'flex', alignItems: 'center', gap: 5 }}
+                  style={{ ...LINK, fontWeight: 600, color: `${INKT}0.8)`, background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: 0, display: 'flex', alignItems: 'center', gap: 5 }}
                 >
                   {m.label}
                   <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true"
@@ -139,13 +182,19 @@ export default function Nav() {
                   </svg>
                 </button>
                 {open === m.label && (
-                  <div style={{ position: 'absolute', top: 'calc(100% + 14px)', left: 0, background: '#fff', border: `1px solid ${INKT}0.1)`, borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8, minWidth: 296, zIndex: 200 }}>
-                    {m.items!.map((it) => (
-                      <a key={it.href} href={it.href} style={{ display: 'block', padding: '10px 14px', borderRadius: 10, textDecoration: 'none' }}>
-                        <strong style={{ display: 'block', fontSize: 13, fontWeight: 700, color: '#1A1208' }}>{it.title}</strong>
-                        {it.sub && <span style={{ fontSize: 11, color: `${INKT}0.72)` }}>{it.sub}</span>}
-                      </a>
-                    ))}
+                  <div style={{
+                    position: 'absolute', top: 'calc(100% + 14px)', left: m.breed ? 'auto' : 0,
+                    right: m.breed ? -160 : 'auto', background: '#fff', border: `1px solid ${INKT}0.1)`,
+                    borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8,
+                    minWidth: m.breed ? 520 : 300, zIndex: 200,
+                  }}>
+                    {m.items.filter((i) => i.primair).map((i) => dropdownItem(i, m.breed))}
+                    {m.items.some((i) => i.primair) && m.items.some((i) => !i.primair) && (
+                      <div style={{ height: 1, background: `${INKT}0.08)`, margin: '6px 8px' }} />
+                    )}
+                    <div style={m.breed ? { display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 4 } : undefined}>
+                      {m.items.filter((i) => !i.primair).map((i) => dropdownItem(i, m.breed))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -153,13 +202,12 @@ export default function Nav() {
           </div>
         )}
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+          {/* De subtiele hint naar de functies, naast de pijler-knop. */}
+          {!isMobile && <a href="/functies/" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>}
           {!isMobile && <a href="https://app.bylder.com" style={LINK}>Inloggen</a>}
-          {/* De knop noemt de eerste stap in plaats van "Start gratis". Wie hier
-              klikt weet nu wat er gebeurt, en het is dezelfde handeling als het
-              zoekveld op de homepage. */}
           <a href="https://app.bylder.com/woningscan" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-            Bekijk wat we al weten
+            Maak je stappenplan
           </a>
           {isMobile && (
             <button onClick={() => setMobileOpen((o) => !o)} aria-label="Menu" aria-expanded={mobileOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
@@ -171,17 +219,20 @@ export default function Nav() {
 
       {isMobile && mobileOpen && (
         <div style={{ borderTop: `1px solid ${INKT}0.07)`, background: '#F5F0E8', padding: '12px 24px 20px', display: 'flex', flexDirection: 'column', gap: 2, maxHeight: '78vh', overflowY: 'auto' }}>
-          {MENUS.map((m) => m.href ? (
-            <a key={m.label} href={m.href} style={{ ...LINK, padding: '10px 0', fontWeight: 600 }}>{m.label}</a>
-          ) : (
+          {MENUS.map((m) => (
             <div key={m.label}>
               <div style={KOPJE}>{m.label}</div>
-              {m.items!.map((it) => (
-                <a key={it.href} href={it.href} style={{ ...LINK, display: 'block', padding: '9px 0' }}>{it.title}</a>
+              {m.items.map((it) => (
+                <a key={it.href} href={it.href} style={{ ...LINK, display: 'block', padding: '8px 0', fontWeight: it.primair ? 700 : 400, color: it.primair ? '#1A1208' : `${INKT}0.72)` }}>{it.title}</a>
               ))}
             </div>
           ))}
-          <a href="https://app.bylder.com" style={{ ...LINK, padding: '14px 0 0' }}>Inloggen</a>
+          <div style={KOPJE}>Meer</div>
+          {BOVENBALK.map((t) => (
+            <a key={t.href} href={t.href} style={{ ...LINK, display: 'block', padding: '8px 0' }}>{t.label}</a>
+          ))}
+          <a href="/functies/" style={{ ...LINK, display: 'block', padding: '8px 0' }}>Functies</a>
+          <a href="https://app.bylder.com" style={{ ...LINK, display: 'block', padding: '14px 0 0' }}>Inloggen</a>
         </div>
       )}
     </nav>

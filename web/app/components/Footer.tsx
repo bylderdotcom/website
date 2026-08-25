@@ -4,7 +4,28 @@
 type Col = { title: string; links: { href: string; label: string; accent?: boolean }[] }
 
 const COLS: Col[] = [
+  // Deze kolom vangt ook wat op 26 aug uit het hoofdmenu ging (tools, functies,
+  // 3D, hoe-het-werkt, wonen-in): de voettekst staat op elke pagina, dus de
+  // interne linkstructuur verliest niets. De linkpoort in
+  // scripts/homepage_herordenen.mjs controleert dat bij elke herbouw.
   { title: 'Ontdek', links: [
+    { href: '/hoe-het-werkt/', label: 'Hoe Bylder werkt' },
+    { href: '/slaapkamer/', label: 'Slaapkamer' },
+    { href: '/deelnemer-worden/', label: 'Deelnemer worden' },
+    { href: '/deelnemer-worden/commercieel-vastgoed/', label: 'Commercieel vastgoed' },
+    { href: '/assortiment/', label: 'Assortiment' },
+    { href: '/nieuwbouw-tools/', label: 'Alle tools' },
+    { href: '/functies/', label: 'Alle functies' },
+    { href: '/3d-sfeerimpressie/', label: '3D-sfeerimpressie' },
+    { href: '/ruimtes/', label: 'Per ruimte' },
+    { href: '/meerwerk/', label: 'Meerwerk' },
+    { href: '/offerte-check/', label: 'Offerte-check' },
+    { href: '/nieuwbouw-project/', label: 'Nieuwbouwprojecten' },
+    { href: '/wonen-in/', label: 'Wonen in jouw gemeente' },
+    { href: '/verbouwen/', label: 'Verbouwen' },
+    { href: '/woning-verduurzamen/', label: 'Verduurzamen' },
+    { href: '/interieur-woning/', label: 'Inrichten' },
+    { href: '/oplevering-nieuwbouw/', label: 'Oplevering' },
     { href: '/prijzen/', label: 'Prijzen' },
     { href: '/zakelijk/', label: 'Zakelijk' },
     { href: '/kortingscode/', label: 'Kortingscodes' },
