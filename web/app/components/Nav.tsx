@@ -5,19 +5,18 @@ import { useState, useEffect, useRef } from 'react'
 /**
  * Gedeelde site-navigatie — ÉÉN bron voor elke pagina.
  *
- * WAAROM DEZE VORM
- * De oude nav was een vlakke rij van zes onderwerpen (Nieuwbouw kopen, Verbouwen,
- * Inrichten, Verduurzamen, Kennisbank, Tools). Zes gelijkwaardige items dwingen de
- * bezoeker te kiezen zonder dat iets hem vertelt waar hij is in zijn eigen traject.
+ * WAAROM DEZE INDELING (herzien 26 aug 2026, op aanwijzing van Daniel)
+ * De vorige nav volgde de funnel: "Je woning", "Kopen", "Hulp bij keuzes". Dat is
+ * onze interne logica, niet de taal van de bezoeker — Daniel noemde hem terecht
+ * wollig. Menu-items horen te benoemen wat iemand komt doen, in de woorden van de
+ * propositie: verbouwen, afwerken, inrichten. Plus het assortiment als eigen
+ * ingang, want dat ís het aanbod.
  *
- * De funnel heeft drie stappen: welke woning, wat koop je, welke hulp bij je keuzes.
- * De nav volgt die nu, met drie ingangen plus de kennisbank en het zakelijke deel.
+ * Elke sub-regel is een belofte of een feit, geen categorie-omschrijving.
  *
- * GEEN INTERNE LINK IS VERDWENEN. Alle zes oude hubs staan nog steeds in de nav,
- * alleen een niveau dieper. Dat is bewust: die links stonden op elke pagina van de
- * site en dragen hun deel van de interne linkstructuur. Ze uit het menu halen zou
- * bij 56.000 URL's de doorstroming raken — precies het risico waar de site op dit
- * moment niet tegen kan.
+ * GEEN INTERNE LINK VERDWIJNT VAN DE SITE. Wat uit het menu ging (tools, functies,
+ * 3D, hoe-het-werkt, wonen-in) staat in de voettekst — die staat op elke pagina.
+ * De linkpoort in scripts/homepage_herordenen.mjs bewaakt dat.
  */
 
 type Item = { href: string; title: string; sub?: string }
@@ -25,45 +24,44 @@ type Menu = { label: string; href?: string; items?: Item[] }
 
 const MENUS: Menu[] = [
   {
-    label: 'Je woning',
+    label: 'Verbouwen',
     items: [
-      { href: 'https://app.bylder.com/woningscan', title: 'Wat weten we over jouw woning?', sub: 'Je adres is genoeg — wij zoeken de rest op' },
-      { href: '/nieuwbouw-project/', title: 'Nieuwbouwprojecten', sub: 'Wat er gebouwd wordt, en hoe ver het is' },
-      { href: '/nieuwbouw-koper/', title: 'Nieuwbouw kopen', sub: 'Van bezichtiging tot sleutel' },
-      { href: '/wonen-in/', title: 'Wonen in jouw gemeente', sub: 'Prijzen en aanbod per plaats' },
-      { href: '/bouwvergunning/', title: 'Bouwvergunning', sub: 'Wat mag wel en wat niet' },
+      { href: '/aannemer/', title: 'Vind een vakbedrijf', sub: 'Aannemer, loodgieter, elektricien — met beoordelingen' },
+      { href: '/offerte-check/', title: 'Offerte-check', sub: 'Betaal je een eerlijke prijs? Gratis gecheckt' },
+      { href: '/eerlijke-prijzen/', title: 'Wat kost het echt', sub: 'Marktprijzen per klus, per gemeente' },
+      { href: '/bouwvergunning/', title: 'Bouwvergunning', sub: 'Wat mag zonder vergunning en wat niet' },
+      { href: '/woning-verduurzamen/', title: 'Verduurzamen', sub: 'Isolatie, zonnepanelen en de subsidies' },
+      { href: '/verbouwen/', title: 'Alle verbouwgidsen' },
     ],
   },
   {
-    label: 'Kopen',
+    label: 'Afwerken',
     items: [
-      { href: '/kopen/', title: 'Alles wat je koopt', sub: 'Van gietvloer tot laadpaal' },
-      { href: '/ruimtes/', title: 'Per ruimte', sub: 'Keuken, badkamer, zolder, tuin' },
-      { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren', sub: 'Onzichtbaar kozijn — kies vóór de ruwbouw' },
+      { href: '/meerwerk/', title: 'Meerwerk controleren', sub: 'Vóór je tekent, tegen marktprijzen' },
+      { href: '/nieuwbouw-koper/', title: 'Nieuwbouw kopen', sub: 'Van koopakte tot sleutel' },
+      { href: '/nieuwbouw-project/', title: 'Nieuwbouwprojecten', sub: 'Wat er gebouwd wordt en hoe ver het is' },
+      { href: '/oplevering-nieuwbouw/', title: 'Oplevering & 5%-regeling', sub: 'De checklist en je rechten' },
+      { href: '/kopen/vloeren/', title: 'Vloeren', sub: 'Gietvloer, pvc, parket — met prijzen' },
+      { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren', sub: 'Kies vóór de stukadoor komt' },
+    ],
+  },
+  {
+    label: 'Inrichten',
+    items: [
+      { href: '/ruimtes/', title: 'Per ruimte', sub: 'Van keuken tot zolder, alle keuzes' },
+      { href: '/kopen/', title: 'Alle productgidsen', sub: '19 categorieën met marktprijzen' },
+      { href: '/vouchers/', title: 'Korting bij 61 merken', sub: 'Auping, Goossens, DRT en meer' },
       { href: '/kortingscode/', title: 'Kortingscodes', sub: 'Actuele codes per merk' },
-      { href: '/vouchers/', title: 'Ledenkorting', sub: 'Korting bij winkels in de buurt' },
-      { href: '/interieur-woning/', title: 'Inrichten' },
-      { href: '/verbouwen/', title: 'Verbouwen' },
-      { href: '/woning-verduurzamen/', title: 'Verduurzamen' },
+      { href: '/showroomsale/', title: 'Showroomsale', sub: 'Showroommodellen met korting' },
+      { href: '/interieur-woning/', title: 'Alle inrichtingsgidsen' },
     ],
   },
-  {
-    label: 'Hulp bij keuzes',
-    items: [
-      { href: '/nieuwbouw-tools/', title: 'Alle tools', sub: 'Rekenen, vergelijken, plannen' },
-      { href: '/offerte-check/', title: 'Offerte-check', sub: 'Betaal je een eerlijke prijs?' },
-      { href: '/eerlijke-prijzen/', title: 'Eerlijke prijzen', sub: 'Wat kost het echt, per post' },
-      { href: '/functies/', title: 'Alle functies', sub: 'Per woningtype: nieuwbouw, bestaand, renovatie' },
-      { href: '/3d-sfeerimpressie/', title: '3D-sfeerimpressie', sub: 'Zie je woning af voordat je kiest' },
-      { href: '/hoe-het-werkt/', title: 'Hoe Bylder werkt', sub: 'Wat wij doen en wat het kost' },
-      { href: '/prijzen/', title: 'Wat kost Bylder' },
-    ],
-  },
+  { label: 'Assortiment', href: '/assortiment/' },
   { label: 'Kennisbank', href: '/kennisbank/' },
   {
     label: 'Zakelijk',
     items: [
-      { href: '/deelnemer-worden/', title: 'Deelnemer worden', sub: 'Bereik kopers op het juiste koopmoment' },
+      { href: '/deelnemer-worden/', title: 'Deelnemer worden', sub: 'Op uitnodiging — een handvol bedrijven per vak per regio' },
       { href: '/deelnemer-worden/commercieel-vastgoed/', title: 'Commercieel vastgoed', sub: 'Offerte-check, m²-benchmarks & fit-out' },
       { href: '/zakelijk/', title: 'Alles over Bylder Zakelijk' },
     ],
