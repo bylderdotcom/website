@@ -6,10 +6,12 @@ import { HOME_STYLE } from './homeHtml'
 import { HOME_DELEN } from './homeSections'
 import HomeServices from './HomeServices'
 
-// Index van het deel waarná de vier pijlers komen. De pijlers openen het
-// gereedschapsblok: eerst het tastbare (merken, korting, keuzes), daarna pas wat
-// de software voor je doet.
-const PIJLERS_NA = 7
+// De vier pijlers (HomeServices) staan niet meer op de homepage. Ze waren 1.383
+// pixels en zeiden op een abstract niveau hetzelfde als de drie stappen erboven.
+// Hun veertien interne links staan allemaal al in de voettekst of de navigatie —
+// dat is gecontroleerd, niet aangenomen. De component blijft bestaan voor andere
+// pagina's.
+const PIJLERS_NA = -1
 
 // Getrouwe port van de homepage-body. De secties + overlays worden byte-getrouw
 // via dangerouslySetInnerHTML gerenderd (behoudt exact alle markup, ids, Tailwind-

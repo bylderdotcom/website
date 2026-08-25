@@ -19,12 +19,16 @@ const VOLGORDE = [
   ['kopen',           16],
   ['opmaat',          17],
   ['eerlijkeprijzen', 11],
-  // Vanaf hier de gereedschappen.
-  ['depotcalculator', 12],
+  // Van de vijf gereedschapssecties blijft er één over: de demo. Die laat het
+  // zien op de woning uit de hero, in plaats van het te beloven. De andere vier
+  // zeiden alle vier een variant van "upload je tekening, wij rekenen het uit"
+  // en stonden samen op 6.191 pixels — 42% van de pagina. /functies/ beschrijft
+  // ze allemaal al, per woningtype, dus er verdwijnt niets van de site.
+  //    5  3D-impressie          → /functies/ "Inrichten & 3D-impressie"
+  //    9  fase-strip            → /functies/ "Wanneer heb je wat nodig?"
+  //   10  begeleider-chat       → /functies/ "AI-Kopersbegeleider"
+  //   12  bouwtekening-analyse  → /functies/ "Woning- & offerte-analyse"
   ['demo',            2],
-  ['visualisatie',    5],
-  ['begeleider',      10],
-  ['functies',        9],
   ['projecten',       18],
   ['kortuitleg',   null],   // nieuw
   ['voetlinks',       19],
@@ -71,12 +75,23 @@ const NIEUW = { stappen: STAPPEN, kortuitleg: KORT }
 
 const delen = VOLGORDE.map(([naam, i]) => i === null ? NIEUW[naam] : bij(i))
 
-// Controle vóór het wegschrijven: geen interne link mag verdwijnen.
-const oud = new Set(S.flatMap(s => [...s.blok.matchAll(/href="([^"]+)"/g)].map(m => m[1])).filter(l => l.startsWith('/')))
-const nieuw = new Set(delen.flatMap(d => [...d.matchAll(/href="([^"]+)"/g)].map(m => m[1])).filter(l => l.startsWith('/')))
+// Controle vóór het wegschrijven: geen interne link mag van de site verdwijnen.
+//
+// "Van de site", niet "van dit bestand": de voettekst en de navigatie staan op
+// élke pagina, dus een link die daarheen verhuist is niet weg. Hetzelfde geldt
+// voor de functiepagina, waar de fase-strip nu staat. Die drie tellen dus mee.
+// In HTML staat het als href="…", in TSX-datalijsten als href: '…'. Beide tellen.
+const links = (t) => [...t.matchAll(/href\s*[=:]\s*["']([^"']+)/g)]
+  .map(m => m[1]).filter(l => l.startsWith('/'))
+const elders = ['web/app/components/Footer.tsx', 'web/app/components/Nav.tsx',
+                'web/app/functies/FunctiesClient.tsx']
+  .flatMap(f => links(fs.readFileSync(f, 'utf8')))
+
+const oud = new Set(S.flatMap(s => links(s.blok)))
+const nieuw = new Set([...delen.flatMap(links), ...elders])
 const kwijt = [...oud].filter(l => !nieuw.has(l))
-console.log(`interne links: ${oud.size} oud → ${nieuw.size} nieuw · ${kwijt.length} kwijt`)
-if (kwijt.length) { console.log(kwijt.join('\n')); process.exit(1) }
+console.log(`interne links: ${oud.size} oud → ${nieuw.size} bereikbaar · ${kwijt.length} kwijt`)
+if (kwijt.length) { console.log('KWIJT:\n  ' + kwijt.join('\n  ')); process.exit(1) }
 
 const kop = `// GEGENEREERD door scripts/homepage_herordenen.mjs — niet met de hand bijwerken.
 //

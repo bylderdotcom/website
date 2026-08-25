@@ -52,6 +52,8 @@ const MENUS: Menu[] = [
       { href: '/nieuwbouw-tools/', title: 'Alle tools', sub: 'Rekenen, vergelijken, plannen' },
       { href: '/offerte-check/', title: 'Offerte-check', sub: 'Betaal je een eerlijke prijs?' },
       { href: '/eerlijke-prijzen/', title: 'Eerlijke prijzen', sub: 'Wat kost het echt, per post' },
+      { href: '/functies/', title: 'Alle functies', sub: 'Per woningtype: nieuwbouw, bestaand, renovatie' },
+      { href: '/3d-sfeerimpressie/', title: '3D-sfeerimpressie', sub: 'Zie je woning af voordat je kiest' },
       { href: '/hoe-het-werkt/', title: 'Hoe Bylder werkt', sub: 'Wat wij doen en wat het kost' },
       { href: '/prijzen/', title: 'Wat kost Bylder' },
     ],
