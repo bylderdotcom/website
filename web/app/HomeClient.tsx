@@ -2,8 +2,12 @@
 
 import { useEffect } from 'react'
 import Script from 'next/script'
-import { HOME_HTML_TOP, HOME_HTML_MID, HOME_HTML_BOTTOM, HOME_STYLE } from './homeHtml'
+import { HOME_STYLE } from './homeHtml'
+import { HOME_DELEN } from './homeSections'
 import HomeServices from './HomeServices'
+
+// Index van het deel waarná de vier pijlers komen: 2 = de nieuwe stappen-sectie.
+const PIJLERS_NA = 2
 
 // Getrouwe port van de homepage-body. De secties + overlays worden byte-getrouw
 // via dangerouslySetInnerHTML gerenderd (behoudt exact alle markup, ids, Tailwind-
@@ -316,9 +320,27 @@ export default function HomeClient() {
       const onSubmit = async (e: Event) => {
         e.preventDefault()
         const hint = document.getElementById('woningzoekHint')
-        const treffer = zoek(veld.value)
+        const ingevuld = veld.value.trim()
+        if (!ingevuld) { window.location.href = '/nieuwbouw-project/'; return }
+
+        // Een huisnummer betekent dat de bezoeker een concreet adres heeft, en dan
+        // is de woningscan het betere antwoord dan een projectpagina: die leest het
+        // Kadaster en gaat over zíjn woning in plaats van over het project.
+        //
+        // Het nummer mag overal in de zin staan, niet alleen aan het eind:
+        // "Waterland 1 Zoetermeer" kwam anders uit in de gemeente Waterland in
+        // Noord-Holland, want Waterland is óók een gemeente. Een losse postcode
+        // telt niet mee — daar is de plaats het antwoord.
+        const huisnummer = /(^|\s)\d{1,5}[a-zA-Z]?(\s|,|$)/.test(ingevuld)
+          && !/^\d{4}\s*[a-zA-Z]{2}$/.test(ingevuld)
+          && /[a-zA-Z]{3}/.test(ingevuld)
+        if (huisnummer) {
+          window.location.href = 'https://app.bylder.com/woningscan?q=' + encodeURIComponent(ingevuld)
+          return
+        }
+
+        const treffer = zoek(ingevuld)
         if (treffer) { window.location.href = treffer.u; return }
-        if (!veld.value.trim()) { window.location.href = '/nieuwbouw-project/'; return }
 
         if (hint) hint.textContent = 'Even zoeken…'
         const viaPlaats = await viaPlaatsnaam(veld.value)
@@ -382,10 +404,15 @@ export default function HomeClient() {
       />
 
       <style dangerouslySetInnerHTML={{ __html: HOME_STYLE }} />
-      <div dangerouslySetInnerHTML={{ __html: HOME_HTML_TOP }} />
-      <HomeServices />
-      <div dangerouslySetInnerHTML={{ __html: HOME_HTML_MID }} />
-      <div dangerouslySetInnerHTML={{ __html: HOME_HTML_BOTTOM }} />
+      {/* De delen staan in HOME_DELEN in de volgorde van de funnel. De vier
+          pijlers (HomeServices) komen na de drie stappen: de stappen zeggen wat
+          er gebeurt, de pijlers wat je krijgt. */}
+      {HOME_DELEN.map((deel, i) => (
+        <div key={i}>
+          <div dangerouslySetInnerHTML={{ __html: deel }} />
+          {i === PIJLERS_NA && <HomeServices />}
+        </div>
+      ))}
 
       {/* Zelfstandig popup-script uit de bron; no-op op de homepage (detecteert #aupingPopup) */}
       <Script src="/auping-popup.js" strategy="afterInteractive" />

@@ -107,6 +107,23 @@ const VRAGEN = [
       + 'platform dat per lead of per klik verkoopt niet zeggen.',
   },
   {
+    v: 'Wat kost Bylder?',
+    a: 'Bylder is gratis voor bewoners. Je maakt een account aan en gebruikt alles — offerte-check, '
+      + 'meerwerkanalyse, aanbevolen producten en vakbedrijven, planning en kortingsvouchers — zonder '
+      + 'kosten en zonder abonnement.',
+  },
+  {
+    v: 'Wat is de gemiddelde besparing via Bylder?',
+    a: 'Bewoners besparen gemiddeld €4.200: €1.840 via meerwerkanalyse, €2.549 via kortingsvouchers '
+      + 'en €1.640 via offerte-check. Niet elke bewoner benut alle drie, daarom is het gemiddelde '
+      + 'lager dan de som.',
+  },
+  {
+    v: 'Voor wie is Bylder geschikt?',
+    a: 'Voor kopers van een nieuwbouwwoning, bewoners van een bestaande woning en mensen die gaan '
+      + 'renoveren. Eén account geeft toegang tot alle trajecten.',
+  },
+  {
     v: 'Werkt Bylder ook zonder dat ik mijn adres weet?',
     a: 'Ja. Wie nog aan het oriënteren is vult zijn plaats in in plaats van een adres. Je krijgt dan '
       + 'wat er over die plaats bekend is — projecten in de buurt, winkels, de keuzes die je te wachten '
@@ -114,6 +131,28 @@ const VRAGEN = [
       + 'weet vul je het aan.',
   },
 ]
+
+// De HowTo stond op de homepage terwijl de uitleg over de meerwerklijst hier
+// staat. Schema hoort bij de pagina die de vraag beantwoordt, niet bij de pagina
+// die er het meeste verkeer op hoopt.
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Hoe controleer je een meerwerklijst nieuwbouw?',
+  description: 'Stap-voor-stap uitleg over het controleren van een meerwerklijst bij nieuwbouw via Bylder.',
+  totalTime: 'PT10M',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'EUR', value: '0' },
+  step: [
+    { '@type': 'HowToStep', name: 'Gratis account aanmaken',
+      text: 'Maak een gratis Bylder-account aan. Alles is gratis voor bewoners — geen abonnement, geen verborgen kosten.' },
+    { '@type': 'HowToStep', name: 'Meerwerklijst uploaden',
+      text: 'Upload je meerwerklijst als PDF in je dashboard.' },
+    { '@type': 'HowToStep', name: 'Analyse ontvangen',
+      text: 'Elke post wordt vergeleken met marktdata en krijgt groen (marktconform), oranje (check) of rood (te hoog).' },
+    { '@type': 'HowToStep', name: 'Onderhandelen',
+      text: 'Gebruik de onderhandelingstips om overbetaling te voorkomen. Gemiddelde besparing: €1.840.' },
+  ],
+}
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -224,6 +263,8 @@ export default function HoeHetWerktPage() {
 
       <script type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     </main>
   )
 }
