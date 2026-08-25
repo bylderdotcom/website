@@ -1,0 +1,56 @@
+{
+  "_toelichting": [
+    "Klussen die Bylder zelf heeft uitgevoerd of begeleid, per nieuwbouwproject.",
+    "",
+    "WAAROM DIT BESTAND BESTAAT",
+    "aanhuis.nl heeft 722 pagina's en is de autoriteit in deze categorie; Bylder heeft er",
+    "56.649 en is dat niet. Het verschil: hun pagina's beschrijven werk dat zij hebben",
+    "gedaan, de onze beschrijven wat anderen misschien gaan doen. Eén afgeronde klus met",
+    "adres, product, kosten en foto's is meer waard dan duizend gemeente-varianten, want",
+    "niemand anders kan hem schrijven.",
+    "",
+    "REGELS",
+    "1. Alleen echt uitgevoerd werk. Geen voorbeelden, geen 'zo zou het kunnen'. Een",
+    "   verzonnen klus is erger dan een lege lijst — dat is precies de fout die op 5",
+    "   augustus 34 projectpagina's haalde.",
+    "2. Een huisnummer van een particuliere woning is een persoonsgegeven. Laat 'adres'",
+    "   leeg of noem alleen straat en plaats, tenzij de bewoner schriftelijk akkoord is.",
+    "3. 'wat_we_leerden' is geen marketing maar de reden dat iemand dit leest. Zet erin",
+    "   wat tegenviel, wat je anders zou doen, waar de prijs vandaan kwam.",
+    "4. Bedragen zijn wat er werkelijk betaald is, niet wat het 'ongeveer' kost.",
+    "",
+    "Zolang deze lijst leeg is, verschijnt er niets op de projectpagina's. Dat is de",
+    "bedoeling: liever geen blok dan een blok dat iets belooft wat er niet is."
+  ],
+  "_voorbeeldrecord": {
+    "project_slug": "de-slug-zoals-in-data/clusters/nieuwbouw-project/pages.json",
+    "plaats": "Zoetermeer",
+    "adres": "optioneel — alleen met toestemming van de bewoner",
+    "datum": "2026-09-14",
+    "wat": "Eén zin: wat er gedaan is.",
+    "producten": [
+      {
+        "merk": "CNX Doorframes",
+        "product": "Instuckozijn met magneetslot",
+        "url": "/kozijnloze-deuren/"
+      }
+    ],
+    "uitvoering": [
+      {
+        "rol": "Timmerwerk",
+        "bedrijf": "Naam BV",
+        "profiel": "/aannemer/bedrijf/slug/"
+      }
+    ],
+    "kosten": "€1.480 per deur, inclusief montage",
+    "doorlooptijd": "3 dagen",
+    "fotos": [
+      {
+        "src": "/img/klussen/bestand.webp",
+        "alt": "Beschrijving van wat je ziet"
+      }
+    ],
+    "wat_we_leerden": "Wat tegenviel of anders liep dan verwacht."
+  },
+  "klussen": []
+}

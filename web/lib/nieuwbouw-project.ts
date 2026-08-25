@@ -8,6 +8,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { metKennisbank } from './kennisbank-links'
+import { metKlussen } from './uitgevoerde-klussen'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'nieuwbouw-project'
@@ -90,5 +91,7 @@ export function toMetadata(page: ClusterPage) {
 
 // Kennisbank-links erbij (zie kennisbank-links.ts voor de aanleiding).
 export function getMainHtml(page: ClusterPage): string {
-  return metKennisbank(getMainHtmlRaw(page), 'nieuwbouwProject')
+  // Uitgevoerde klussen vóór de kennisbank-links: eerst het eigen bewijs, dan pas
+  // het vervolg elders. Zonder klussen bij dit project verandert er niets.
+  return metKennisbank(metKlussen(getMainHtmlRaw(page), page.slug), 'nieuwbouwProject')
 }
