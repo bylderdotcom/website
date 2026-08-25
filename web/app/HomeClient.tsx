@@ -255,6 +255,25 @@ export default function HomeClient() {
       const norm = (t: string) =>
         t.toLowerCase().replace(/['`]/g, '').replace(/[^a-z0-9]/g, '')
 
+      // Tussenwoorden dragen geen betekenis en zijn juist waarop een foute treffer
+      // ontstaat: "aan de" komt in tientallen plaatsnamen voor.
+      const KOPPELS = new Set(['aan', 'de', 'den', 'der', 'het', 'op', 'in', 'bij',
+                               'over', 'van', 'ter', 'te', 'sint', 'aan-de'])
+      // Twee steden hebben een officiële naam die vrijwel niemand intypt.
+      const BIJNAMEN: Record<string, string> = {
+        denhaag: 'sgravenhage', denbosch: 'shertogenbosch',
+      }
+      /** Slaat het gevonden antwoord werkelijk op de getypte vraag? */
+      const past = (getypt: string, gevonden: string): boolean => {
+        const doel = norm(gevonden)
+        const bijnaam = BIJNAMEN[norm(getypt)]
+        if (bijnaam && doel.includes(bijnaam)) return true
+        return getypt.toLowerCase().split(/[^a-z0-9']+/i)
+          .filter((w) => w.length > 2 && !KOPPELS.has(w))
+          .map(norm)
+          .some((w) => w.length > 2 && doel.includes(w))
+      }
+
       // Wie in een dorp woont typt zijn dorp, niet zijn gemeente. Onze lijst kent
       // alleen gemeenten, dus wat die niet herkent gaat naar de PDOK
       // Locatieserver: officieel, gratis, geen sleutel in de browser, en hij geeft
@@ -276,12 +295,21 @@ export default function HomeClient() {
         try {
           const u = 'https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?rows=1'
             + '&fq=' + encodeURIComponent(fq)
-            + '&fl=' + encodeURIComponent('gemeentenaam,woonplaatsnaam')
+            + '&fl=' + encodeURIComponent('gemeentenaam,woonplaatsnaam,weergavenaam')
             + '&q=' + encodeURIComponent(term)
           const r = await fetch(u)
           const d = await r.json()
-          const g = d?.response?.docs?.[0]?.gemeentenaam
-          return g ? (gemeenten[norm(g)] ?? null) : null
+          const doc = d?.response?.docs?.[0]
+          const g = doc?.gemeentenaam
+          if (!g) return null
+          // PDOK geeft bijna altijd íéts terug, ook op onzin. "Kwakkelhoek aan de
+          // Zork" kwam uit op Alphen aan den Rijn, via de tussenwoorden "aan de".
+          // De score helpt niet: die onzin scoorde hoger dan Zoetermeer. Dus
+          // controleren we het antwoord op de vraag in plaats van erop te
+          // vertrouwen. Alleen voor postcodes niet — een postcode staat per
+          // definitie niet in een plaatsnaam.
+          if (!pc && !alleenCijfers && !past(term, `${doc.weergavenaam ?? ''} ${g}`)) return null
+          return gemeenten[norm(g)] ?? null
         } catch { return null }
       }
 
