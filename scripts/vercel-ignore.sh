@@ -36,6 +36,21 @@ fi
 # Geen parent (eerste commit / shallow clone): altijd bouwen.
 git rev-parse --verify HEAD^ >/dev/null 2>&1 || exit 1
 
+# Merge-commit: altijd bouwen.
+#
+# Deze poort kijkt alleen naar HEAD^..HEAD. Bij een merge is dat de merge-commit
+# zelf, en die bevat vaak alleen wat er van de andere kant bij kwam. Op 21 en 25
+# augustus slikte dat twee keer een wijziging van 25.697 bestanden: de push
+# eindigde met een merge die alleen een auditrapport binnenhaalde, dus de poort
+# zag "alleen docs" en sloeg de build over. De site stond daardoor vier dagen op
+# een versie die niemand had bedoeld.
+#
+# Een merge kan van alles meebrengen, dus hier niet gokken maar bouwen.
+if [ -n "$(git rev-parse HEAD^2 2>/dev/null)" ]; then
+  echo "Merge-commit — bouwen (de diff met HEAD^ zegt hier niets)."
+  exit 1
+fi
+
 if git diff --quiet HEAD^ HEAD -- . "${EXCL[@]}"; then
   echo "Alleen docs/scripts/reports gewijzigd — build overgeslagen."
   exit 0
