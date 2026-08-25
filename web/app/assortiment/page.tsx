@@ -74,6 +74,45 @@ const AANBOD = [
   },
 ]
 
+// De volledige categoriestructuur — ingedeeld naar hoe je een woning afwerkt
+// (aanhuis-model), niet naar magazijnindeling. Elke categorie heeft al een
+// gids met marktprijzen in /kopen/; het partneraanbod wordt er per categorie
+// aan toegevoegd. Zichtbaar maken dwingt tot vullen — dat is de bedoeling.
+const GROEPEN: { kop: string; items: { naam: string; href: string }[] }[] = [
+  { kop: 'Vloeren & wanden', items: [
+    { naam: 'Vloeren', href: '/kopen/vloeren/' },
+    { naam: 'Tegels', href: '/kopen/tegels/' },
+    { naam: 'Wandafwerking', href: '/kopen/wandafwerking/' },
+    { naam: 'Verf', href: '/kopen/verf/' },
+  ] },
+  { kop: 'Deuren & kozijnen', items: [
+    { naam: 'Kozijnloze deuren', href: '/kozijnloze-deuren/' },
+    { naam: 'Binnendeuren', href: '/kopen/binnendeuren/' },
+    { naam: 'Buitendeuren', href: '/kopen/buitendeuren/' },
+  ] },
+  { kop: 'Keuken & sanitair', items: [
+    { naam: 'Keukens', href: '/kopen/keuken/' },
+    { naam: 'Badkamer & sanitair', href: '/kopen/sanitair/' },
+  ] },
+  { kop: 'Slapen & meubels', items: [
+    { naam: 'Bedden & matrassen', href: '/kopen/slaap-en-bedden/' },
+    { naam: 'Banken & stoelen', href: '/kopen/zitmeubelen/' },
+    { naam: 'Kasten', href: '/kopen/kasten/' },
+  ] },
+  { kop: 'Raamdecoratie & licht', items: [
+    { naam: 'Raamdecoratie', href: '/kopen/raamdecoratie/' },
+    { naam: 'Verlichting', href: '/kopen/verlichting/' },
+    { naam: 'Elektronica', href: '/kopen/elektronica/' },
+  ] },
+  { kop: 'Buiten & energie', items: [
+    { naam: 'Tuin', href: '/kopen/tuin/' },
+    { naam: 'Dakkapellen', href: '/kopen/dakkapellen/' },
+    { naam: 'Zonnepanelen', href: '/kopen/zonnepanelen/' },
+    { naam: 'Isolatie', href: '/kopen/isolatie/' },
+    { naam: 'Laadpalen', href: '/kopen/laadpalen/' },
+  ] },
+]
+
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -131,6 +170,29 @@ export default function AssortimentPage() {
               ))}
             </p>
           </article>
+        ))}
+      </div>
+
+      <h2 style={H2}>Alle categorie&euml;n</h2>
+      <p style={P}>
+        Dit is de volledige structuur van het assortiment &mdash; ingedeeld zoals je een woning afwerkt,
+        niet zoals een magazijn is ingericht. Per categorie staat de gids met marktprijzen al klaar;
+        het partneraanbod vullen we categorie voor categorie, op uitnodiging.
+      </p>
+      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))' }}>
+        {GROEPEN.map((g) => (
+          <div key={g.kop} style={{ ...KAART, padding: '18px 20px' }}>
+            <p style={{ ...LABEL, marginBottom: 10 }}>{g.kop}</p>
+            <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 7 }}>
+              {g.items.map((c) => (
+                <li key={c.href}>
+                  <a href={c.href} style={{ fontSize: 14.5, fontWeight: 600, color: GROEN, textDecoration: 'none' }}>
+                    {c.naam}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
 

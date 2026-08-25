@@ -20,7 +20,7 @@ import { useState, useEffect, useRef } from 'react'
  */
 
 type Item = { href: string; title: string; sub?: string }
-type Menu = { label: string; href?: string; items?: Item[] }
+type Menu = { label: string; href?: string; items?: Item[]; breed?: boolean }
 
 const MENUS: Menu[] = [
   {
@@ -64,7 +64,36 @@ const MENUS: Menu[] = [
       { href: '/showroomsale/', title: 'Showroomsale', sub: 'Showroommodellen met korting, op = op' },
     ],
   },
-  { label: 'Assortiment', href: '/assortiment/' },
+  {
+    // Alle 19 productcategorieën die we ooit gedefinieerd hebben (verzoek Daniel,
+    // 26 aug): het volledige assortiment zichtbaar dwingt tot het vinden van
+    // partners per categorie. Breed paneel in twee kolommen.
+    label: 'Assortiment',
+    breed: true,
+    items: [
+      { href: '/assortiment/', title: 'Overzicht: zo werkt ons assortiment' },
+      { href: '/kopen/vloeren/', title: 'Vloeren' },
+      { href: '/kopen/tegels/', title: 'Tegels' },
+      { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren' },
+      { href: '/kopen/binnendeuren/', title: 'Binnendeuren' },
+      { href: '/kopen/buitendeuren/', title: 'Buitendeuren' },
+      { href: '/kopen/keuken/', title: 'Keukens' },
+      { href: '/kopen/sanitair/', title: 'Badkamer & sanitair' },
+      { href: '/kopen/slaap-en-bedden/', title: 'Bedden & matrassen' },
+      { href: '/kopen/zitmeubelen/', title: 'Banken & stoelen' },
+      { href: '/kopen/kasten/', title: 'Kasten' },
+      { href: '/kopen/raamdecoratie/', title: 'Raamdecoratie' },
+      { href: '/kopen/verlichting/', title: 'Verlichting' },
+      { href: '/kopen/elektronica/', title: 'Elektronica' },
+      { href: '/kopen/verf/', title: 'Verf' },
+      { href: '/kopen/wandafwerking/', title: 'Wandafwerking' },
+      { href: '/kopen/tuin/', title: 'Tuin' },
+      { href: '/kopen/dakkapellen/', title: 'Dakkapellen' },
+      { href: '/kopen/zonnepanelen/', title: 'Zonnepanelen' },
+      { href: '/kopen/isolatie/', title: 'Isolatie' },
+      { href: '/kopen/laadpalen/', title: 'Laadpalen' },
+    ],
+  },
   { label: 'Kennisbank', href: '/kennisbank/' },
   {
     label: 'Zakelijk',
@@ -145,7 +174,7 @@ export default function Nav() {
                   </svg>
                 </button>
                 {open === m.label && (
-                  <div style={{ position: 'absolute', top: 'calc(100% + 14px)', left: 0, background: '#fff', border: `1px solid ${INKT}0.1)`, borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8, minWidth: 296, zIndex: 200 }}>
+                  <div style={{ position: 'absolute', top: 'calc(100% + 14px)', left: m.breed ? 'auto' : 0, right: m.breed ? -80 : 'auto', background: '#fff', border: `1px solid ${INKT}0.1)`, borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8, minWidth: m.breed ? 540 : 296, zIndex: 200, display: m.breed ? 'grid' : 'block', gridTemplateColumns: m.breed ? '1fr 1fr' : undefined, columnGap: m.breed ? 4 : undefined }}>
                     {m.items!.map((it) => (
                       <a key={it.href} href={it.href} style={{ display: 'block', padding: '10px 14px', borderRadius: 10, textDecoration: 'none' }}>
                         <strong style={{ display: 'block', fontSize: 13, fontWeight: 700, color: '#1A1208' }}>{it.title}</strong>
