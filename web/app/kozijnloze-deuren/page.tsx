@@ -20,11 +20,11 @@ import type { Metadata } from 'next'
  */
 
 export const metadata: Metadata = {
-  title: 'Onzichtbaar kozijn & kozijnloze deuren — wat het kost en wanneer je kiest | Bylder',
+  title: 'Kozijnloze deuren & onzichtbaar kozijn — wat het kost en wanneer je kiest | Bylder',
   description:
-    'Een onzichtbaar kozijn laat de deur in de wand verdwijnen. Wat het kost, hoe het technisch werkt, '
-    + 'welke merken er zijn — en waarom je deze keuze vóór de ruwbouw moet maken, niet erna.',
-  alternates: { canonical: 'https://www.bylder.com/onzichtbaar-kozijn/' },
+    'Een kozijnloze deur hangt in een onzichtbaar kozijn: de deur verdwijnt in de wand. Wat het kost, '
+    + 'hoe het technisch werkt, welke merken er zijn — en waarom je deze keuze vóór de ruwbouw maakt.',
+  alternates: { canonical: 'https://www.bylder.com/kozijnloze-deuren/' },
 }
 
 const INKT = 'rgba(61,46,30,'
@@ -157,7 +157,7 @@ export default function OnzichtbaarKozijnPage() {
     <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
       <p style={LABEL}>Keuze vóór de ruwbouw</p>
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
-        Onzichtbaar kozijn: de deur verdwijnt in de wand
+        Kozijnloze deuren: de deur verdwijnt in de wand
       </h1>
       <p style={{ ...P, fontSize: 17.5, maxWidth: '62ch' }}>
         Geen kozijn, geen architraaf, geen zichtbaar beslag — alleen een deurblad en een smalle schaduwvoeg.
