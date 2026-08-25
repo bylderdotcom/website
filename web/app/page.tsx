@@ -5,14 +5,14 @@ import { HOME_JSONLD } from './homeHtml'
 // Getrouwe port van de homepage index.html (Fase 1B). Metadata + JSON-LD hier
 // (server-component); de interactieve body zit in HomeClient ('use client').
 
-const OG_TITLE = 'Alles voor je (nieuwe) woning. Met eerlijke prijzen als fundament.'
+const OG_TITLE = 'Verbouwing, afwerking en inrichting — Bylder regelt het.'
 const OG_DESC =
-  'Bylder regelt je woning en helpt je de beste keus te maken: advies, ontwerpen, shoppen en aanbesteden in één woningdossier. Gratis voor bewoners — gemiddeld €4.200 bespaard.'
+  'Vul je adres in en Bylder regelt de rest: keuzes op het juiste moment, offertes gecheckt tegen marktprijzen en korting bij 61 woonmerken. Gratis voor bewoners.'
 
 export const metadata: Metadata = {
-  title: 'Alles voor je (nieuwe) woning — offerte check & kortingen | Bylder',
+  title: 'Verbouwing, afwerking en inrichting | Bylder',
   description:
-    'Bylder regelt je (nieuwe) woning en helpt je de beste keus te maken. AI offerte-check, 61 woonmerken met korting. Gemiddeld €4.200 bespaard. Gratis voor bewoners.',
+    'Bylder regelt verbouwing, afwerking en inrichting — begin met je adres. Offertes gecheckt tegen marktprijzen, korting bij 61 woonmerken. Gratis voor bewoners.',
   authors: [{ name: 'Bylder Nederland B.V.' }],
   keywords: [
     'kopersbegeleiding nieuwbouw', 'offerte check aannemer', 'meerwerk controleren',
