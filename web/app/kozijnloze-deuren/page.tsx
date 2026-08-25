@@ -20,10 +20,10 @@ import type { Metadata } from 'next'
  */
 
 export const metadata: Metadata = {
-  title: 'Kozijnloze deuren & onzichtbaar kozijn — wat het kost en wanneer je kiest | Bylder',
+  title: 'Kozijnloze deuren: prijzen & wanneer je kiest | Bylder',
   description:
-    'Een kozijnloze deur hangt in een onzichtbaar kozijn: de deur verdwijnt in de wand. Wat het kost, '
-    + 'hoe het technisch werkt, welke merken er zijn — en waarom je deze keuze vóór de ruwbouw maakt.',
+    'Een kozijnloze deur hangt in een onzichtbaar kozijn: de deur verdwijnt in de wand. '
+    + 'Prijzen, merken, en waarom je dit vóór de ruwbouw beslist.',
   alternates: { canonical: 'https://www.bylder.com/kozijnloze-deuren/' },
 }
 
@@ -143,6 +143,8 @@ const VRAGEN = [
   },
 ]
 
+const URL = 'https://www.bylder.com/kozijnloze-deuren/'
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -152,9 +154,53 @@ const faqSchema = {
   })),
 }
 
+/**
+ * Kruimelpad en pagina-identiteit. Zonder BreadcrumbList weet een zoekmachine
+ * niet waar deze pagina in de site hangt; zonder een expliciete datum weet hij
+ * niet hoe vers de prijzen zijn — en prijzen zijn de helft van deze pagina.
+ */
+const paginaSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Bylder', item: 'https://www.bylder.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Wat je koopt', item: 'https://www.bylder.com/kopen/' },
+        { '@type': 'ListItem', position: 3, name: 'Binnendeuren', item: 'https://www.bylder.com/kopen/binnendeuren/' },
+        { '@type': 'ListItem', position: 4, name: 'Kozijnloze deuren', item: URL },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': URL,
+      url: URL,
+      name: 'Kozijnloze deuren: de deur verdwijnt in de wand',
+      inLanguage: 'nl-NL',
+      dateModified: '2026-08-25',
+      about: [
+        { '@type': 'Thing', name: 'Kozijnloze deur' },
+        { '@type': 'Thing', name: 'Onzichtbaar kozijn' },
+        { '@type': 'Thing', name: 'Instuckozijn' },
+      ],
+      isPartOf: { '@type': 'WebSite', name: 'Bylder', url: 'https://www.bylder.com/' },
+      publisher: { '@type': 'Organization', name: 'Bylder Nederland B.V.', url: 'https://www.bylder.com/' },
+    },
+  ],
+}
+
 export default function OnzichtbaarKozijnPage() {
   return (
     <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+      <nav aria-label="Kruimelpad" style={{ ...LABEL, marginBottom: 10 }}>
+        <a href="/" style={{ color: `${INKT}0.55)`, textDecoration: 'none' }}>Bylder</a>
+        {' / '}
+        <a href="/kopen/" style={{ color: `${INKT}0.55)`, textDecoration: 'none' }}>Wat je koopt</a>
+        {' / '}
+        <a href="/kopen/binnendeuren/" style={{ color: `${INKT}0.55)`, textDecoration: 'none' }}>Binnendeuren</a>
+        {' / '}
+        <span style={{ color: `${INKT}0.8)` }}>Kozijnloze deuren</span>
+      </nav>
       <p style={LABEL}>Keuze vóór de ruwbouw</p>
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Kozijnloze deuren: de deur verdwijnt in de wand
@@ -166,10 +212,25 @@ export default function OnzichtbaarKozijnPage() {
         waarom het moment waarop je kiest belangrijker is dan het merk dat je kiest.
       </p>
 
-      <div style={{ ...KAART, display: 'flex', gap: 26, alignItems: 'center', flexWrap: 'wrap', marginTop: 26 }}>
+      {/* De eerste H2 moet het antwoord zijn, niet een bijschrift. Dit is de
+          alinea die een AI-antwoord letterlijk kan overnemen, dus hij staat
+          bovenaan en beantwoordt de vraag in twee zinnen. */}
+      <h2 style={{ ...H2, marginTop: 40 }}>Wat is een kozijnloze deur?</h2>
+      <p style={P}>
+        Een kozijnloze deur is een binnendeur die in een <strong>onzichtbaar kozijn</strong> hangt: een
+        aluminium of stalen frame dat in de ruwbouw wordt gezet en daarna wordt meegestuukt. Na afwerking
+        zie je geen kozijn en geen architraaf meer — alleen het deurblad en een schaduwvoeg van een paar
+        millimeter. Het frame heet ook wel een instuckozijn.
+      </p>
+      <p style={P}>
+        Omdat het frame in de wand zit en niet eromheen, is dit geen inrichtingskeuze maar een bouwkeuze.
+        Dat bepaalt wanneer je hem moet maken, en dat is de kern van deze pagina.
+      </p>
+
+      <div style={{ ...KAART, display: 'flex', gap: 26, alignItems: 'center', flexWrap: 'wrap', marginTop: 22 }}>
         <div style={{ flex: '1 1 300px', minWidth: 260 }}><Doorsnede /></div>
         <div style={{ flex: '1 1 240px' }}>
-          <h2 style={{ ...H3, marginBottom: 10 }}>Wat je op de doorsnede ziet</h2>
+          <h3 style={{ ...H3, marginBottom: 10 }}>Wat je op de doorsnede ziet</h3>
           <p style={{ ...P, fontSize: 14.5, margin: 0 }}>
             Het frame zit ín de wand in plaats van eromheen. Het stucwerk loopt er tot tegenaan, zodat er
             na afwerking alleen een voeg van een paar millimeter overblijft. Daar zit de hele techniek in:
@@ -263,6 +324,13 @@ export default function OnzichtbaarKozijnPage() {
         <a href="/aannemer/" style={{ color: GROEN, fontWeight: 700 }}>Aannemers</a>
         {' · '}
         <a href="/kopen/binnendeuren/" style={{ color: GROEN, fontWeight: 700 }}>Alle binnendeuren</a>
+        {' · '}
+        <a href="/timmerman/" style={{ color: GROEN, fontWeight: 700 }}>Timmerlieden</a>
+      </p>
+      <p style={{ ...P, fontSize: 13, color: `${INKT}0.55)`, marginTop: 28 }}>
+        Laatst bijgewerkt: 25 augustus 2026. Prijzen zijn de bedragen die leveranciers op dat moment zelf
+        publiceerden; wij verkopen deze kozijnen niet zelf en krijgen geen vergoeding per doorverwijzing
+        naar een van de genoemde systemen.
       </p>
 
       <h2 style={H2}>Veelgestelde vragen</h2>
@@ -289,6 +357,8 @@ export default function OnzichtbaarKozijnPage() {
 
       <script type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(paginaSchema) }} />
     </main>
   )
 }

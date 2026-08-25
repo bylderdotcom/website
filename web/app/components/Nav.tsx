@@ -39,6 +39,7 @@ const MENUS: Menu[] = [
     items: [
       { href: '/kopen/', title: 'Alles wat je koopt', sub: 'Van gietvloer tot laadpaal' },
       { href: '/ruimtes/', title: 'Per ruimte', sub: 'Keuken, badkamer, zolder, tuin' },
+      { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren', sub: 'Onzichtbaar kozijn — kies vóór de ruwbouw' },
       { href: '/kortingscode/', title: 'Kortingscodes', sub: 'Actuele codes per merk' },
       { href: '/vouchers/', title: 'Ledenkorting', sub: 'Korting bij winkels in de buurt' },
       { href: '/interieur-woning/', title: 'Inrichten' },
