@@ -10,6 +10,9 @@ const COLS: Col[] = [
   // scripts/homepage_herordenen.mjs controleert dat bij elke herbouw.
   { title: 'Ontdek', links: [
     { href: '/hoe-het-werkt/', label: 'Hoe Bylder werkt' },
+    { href: '/slaapkamer/', label: 'Slaapkamer' },
+    { href: '/deelnemer-worden/', label: 'Deelnemer worden' },
+    { href: '/deelnemer-worden/commercieel-vastgoed/', label: 'Commercieel vastgoed' },
     { href: '/assortiment/', label: 'Assortiment' },
     { href: '/nieuwbouw-tools/', label: 'Alle tools' },
     { href: '/functies/', label: 'Alle functies' },
