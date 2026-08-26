@@ -99,18 +99,13 @@ const KOPJE: React.CSSProperties = {
 }
 
 export default function Nav() {
-  const [isMobile, setIsMobile] = useState(false)
-  const [mobileOpen, setMobileOpen] = useState(false)
+  // Alleen nog interactie-state. Of je mobiel bent beslist CSS, niet JavaScript:
+  // de oude isMobile-useState begon op false, waardoor elke mobiele bezoeker
+  // eerst een flits van het desktopmenu zag totdat de JS geladen was.
   const [open, setOpen] = useState<string | null>(null)
+  const [mobielOpen, setMobielOpen] = useState(false)
+  const [mobielSectie, setMobielSectie] = useState<string | null>(null)
   const wrapRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const mq = window.matchMedia('(max-width: 1020px)')
-    const update = () => setIsMobile(mq.matches)
-    update()
-    mq.addEventListener('change', update)
-    return () => mq.removeEventListener('change', update)
-  }, [])
 
   useEffect(() => {
     if (!open) return
@@ -133,7 +128,14 @@ export default function Nav() {
     </a>
   )
 
-  const dropdownItem = (it: Item, breed?: boolean) => it.primair ? (
+  const pijl = (om: boolean) => (
+    <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"
+         style={{ transition: 'transform .15s', transform: om ? 'rotate(180deg)' : 'none', flex: 'none' }}>
+      <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  )
+
+  const dropdownItem = (it: Item) => it.primair ? (
     <a key={it.href} href={it.href} style={{
       display: 'block', padding: '12px 14px', borderRadius: 10, textDecoration: 'none',
       background: '#EBF0E8', marginBottom: 4,
@@ -150,89 +152,113 @@ export default function Nav() {
 
   return (
     <nav style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(245,240,232,0.92)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
-      {/* Bovenbalk — de secundaire wereld, klein en rustig (EVTrader-model). */}
-      {!isMobile && (
-        <div style={{ borderBottom: `1px solid ${INKT}0.06)`, background: '#EDE6D8' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '7px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
-            <span style={{ fontSize: 12, color: `${INKT}0.6)` }}>Gratis voor bewoners</span>
-            <div style={{ display: 'flex', gap: 18 }}>
-              {BOVENBALK.map((t) => (
-                <a key={t.href} href={t.href} style={{ fontSize: 12.5, color: `${INKT}0.66)`, textDecoration: 'none', whiteSpace: 'nowrap' }}>{t.label}</a>
-              ))}
-            </div>
+      {/* Zichtbaarheid per schermbreedte in CSS, zodat de eerste render meteen
+          klopt — geen desktopmenu-flits meer op mobiel. */}
+      <style dangerouslySetInnerHTML={{ __html:
+        '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:24px}'
+        + '.bv-deskl{display:inline}.bv-burger{display:none}'
+        + '@media(max-width:1020px){.bv-top{display:none}.bv-desk{display:none}'
+        + '.bv-deskl{display:none}.bv-burger{display:flex}}'
+        + '@media(min-width:1021px){.bv-sheet{display:none}}' }} />
+
+      <div className="bv-top" style={{ borderBottom: `1px solid ${INKT}0.06)`, background: '#EDE6D8' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '7px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
+          <span style={{ fontSize: 12, color: `${INKT}0.6)` }}>Gratis voor bewoners</span>
+          <div style={{ display: 'flex', gap: 18 }}>
+            {BOVENBALK.map((t) => (
+              <a key={t.href} href={t.href} style={{ fontSize: 12.5, color: `${INKT}0.66)`, textDecoration: 'none', whiteSpace: 'nowrap' }}>{t.label}</a>
+            ))}
           </div>
         </div>
-      )}
+      </div>
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '13px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
         {logo}
 
-        {!isMobile && (
-          <div ref={wrapRef} style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
-            {MENUS.map((m) => (
-              <div key={m.label} style={{ position: 'relative' }}>
-                <button
-                  onClick={() => setOpen((o) => (o === m.label ? null : m.label))}
-                  aria-expanded={open === m.label}
-                  style={{ ...LINK, fontWeight: 600, color: `${INKT}0.8)`, background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: 0, display: 'flex', alignItems: 'center', gap: 5 }}
-                >
-                  {m.label}
-                  <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true"
-                       style={{ transition: 'transform .15s', transform: open === m.label ? 'rotate(180deg)' : 'none' }}>
-                    <path d="M1 1l3.5 3.5L8 1" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-                  </svg>
-                </button>
-                {open === m.label && (
-                  <div style={{
-                    position: 'absolute', top: 'calc(100% + 14px)', left: m.breed ? 'auto' : 0,
-                    right: m.breed ? -160 : 'auto', background: '#fff', border: `1px solid ${INKT}0.1)`,
-                    borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8,
-                    minWidth: m.breed ? 520 : 300, zIndex: 200,
-                  }}>
-                    {m.items.filter((i) => i.primair).map((i) => dropdownItem(i, m.breed))}
-                    {m.items.some((i) => i.primair) && m.items.some((i) => !i.primair) && (
-                      <div style={{ height: 1, background: `${INKT}0.08)`, margin: '6px 8px' }} />
-                    )}
-                    <div style={m.breed ? { display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 4 } : undefined}>
-                      {m.items.filter((i) => !i.primair).map((i) => dropdownItem(i, m.breed))}
-                    </div>
+        <div className="bv-desk" ref={wrapRef}>
+          {MENUS.map((m) => (
+            <div key={m.label} style={{ position: 'relative' }}>
+              <button
+                onClick={() => setOpen((o) => (o === m.label ? null : m.label))}
+                aria-expanded={open === m.label}
+                style={{ ...LINK, fontWeight: 600, color: `${INKT}0.8)`, background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: 0, display: 'flex', alignItems: 'center', gap: 5 }}
+              >
+                {m.label}
+                {pijl(open === m.label)}
+              </button>
+              {open === m.label && (
+                <div style={{
+                  position: 'absolute', top: 'calc(100% + 14px)', left: m.breed ? 'auto' : 0,
+                  right: m.breed ? -160 : 'auto', background: '#fff', border: `1px solid ${INKT}0.1)`,
+                  borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8,
+                  minWidth: m.breed ? 520 : 300, zIndex: 200,
+                }}>
+                  {m.items.filter((i) => i.primair).map(dropdownItem)}
+                  {m.items.some((i) => i.primair) && m.items.some((i) => !i.primair) && (
+                    <div style={{ height: 1, background: `${INKT}0.08)`, margin: '6px 8px' }} />
+                  )}
+                  <div style={m.breed ? { display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 4 } : undefined}>
+                    {m.items.filter((i) => !i.primair).map(dropdownItem)}
                   </div>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          {/* De subtiele hint naar de functies, naast de pijler-knop. */}
-          {!isMobile && <a href="/functies/" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>}
-          {!isMobile && <a href="https://app.bylder.com" style={LINK}>Inloggen</a>}
+          <a href="/functies/" className="bv-deskl" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
+          <a href="https://app.bylder.com" className="bv-deskl" style={LINK}>Inloggen</a>
           <a href="https://app.bylder.com/woningscan" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
             Maak je stappenplan
           </a>
-          {isMobile && (
-            <button onClick={() => setMobileOpen((o) => !o)} aria-label="Menu" aria-expanded={mobileOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
-              {[0, 1, 2].map((i) => <span key={i} style={{ width: 20, height: 2, background: '#1A1208', borderRadius: 2, display: 'block' }} />)}
-            </button>
-          )}
+          <button className="bv-burger" onClick={() => setMobielOpen((o) => !o)} aria-label="Menu" aria-expanded={mobielOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, flexDirection: 'column', gap: 4 }}>
+            {[0, 1, 2].map((i) => <span key={i} style={{ width: 20, height: 2, background: '#1A1208', borderRadius: 2, display: 'block' }} />)}
+          </button>
         </div>
       </div>
 
-      {isMobile && mobileOpen && (
-        <div style={{ borderTop: `1px solid ${INKT}0.07)`, background: '#F5F0E8', padding: '12px 24px 20px', display: 'flex', flexDirection: 'column', gap: 2, maxHeight: '78vh', overflowY: 'auto' }}>
+      {mobielOpen && (
+        <div className="bv-sheet" style={{ borderTop: `1px solid ${INKT}0.07)`, background: '#F5F0E8', padding: '4px 24px 20px', flexDirection: 'column', maxHeight: '78vh', overflowY: 'auto', display: 'flex' }}>
+          {/* Accordeon: alles dicht tot je een sectie aanraakt — verzoek Daniel,
+              de platte lijst met 30+ regels was onbruikbaar. */}
           {MENUS.map((m) => (
-            <div key={m.label}>
-              <div style={KOPJE}>{m.label}</div>
-              {m.items.map((it) => (
-                <a key={it.href} href={it.href} style={{ ...LINK, display: 'block', padding: '8px 0', fontWeight: it.primair ? 700 : 400, color: it.primair ? '#1A1208' : `${INKT}0.72)` }}>{it.title}</a>
-              ))}
+            <div key={m.label} style={{ borderBottom: `1px solid ${INKT}0.08)` }}>
+              <button
+                onClick={() => setMobielSectie((x) => (x === m.label ? null : m.label))}
+                aria-expanded={mobielSectie === m.label}
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: '14px 0', fontSize: 15, fontWeight: 700, color: '#1A1208' }}
+              >
+                {m.label}
+                {pijl(mobielSectie === m.label)}
+              </button>
+              {mobielSectie === m.label && (
+                <div style={{ paddingBottom: 10 }}>
+                  {m.items.map((it) => (
+                    <a key={it.href} href={it.href} style={{ display: 'block', padding: '8px 0 8px 8px', fontSize: 14, textDecoration: 'none', fontWeight: it.primair ? 700 : 400, color: it.primair ? '#3D5A3E' : `${INKT}0.75)` }}>{it.title}</a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
-          <div style={KOPJE}>Meer</div>
-          {BOVENBALK.map((t) => (
-            <a key={t.href} href={t.href} style={{ ...LINK, display: 'block', padding: '8px 0' }}>{t.label}</a>
-          ))}
-          <a href="/functies/" style={{ ...LINK, display: 'block', padding: '8px 0' }}>Functies</a>
+          <div style={{ borderBottom: `1px solid ${INKT}0.08)` }}>
+            <button
+              onClick={() => setMobielSectie((x) => (x === 'meer' ? null : 'meer'))}
+              aria-expanded={mobielSectie === 'meer'}
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: '14px 0', fontSize: 15, fontWeight: 700, color: '#1A1208' }}
+            >
+              Meer
+              {pijl(mobielSectie === 'meer')}
+            </button>
+            {mobielSectie === 'meer' && (
+              <div style={{ paddingBottom: 10 }}>
+                {BOVENBALK.map((t) => (
+                  <a key={t.href} href={t.href} style={{ display: 'block', padding: '8px 0 8px 8px', fontSize: 14, textDecoration: 'none', color: `${INKT}0.75)` }}>{t.label}</a>
+                ))}
+                <a href="/functies/" style={{ display: 'block', padding: '8px 0 8px 8px', fontSize: 14, textDecoration: 'none', color: `${INKT}0.75)` }}>Functies</a>
+              </div>
+            )}
+          </div>
           <a href="https://app.bylder.com" style={{ ...LINK, display: 'block', padding: '14px 0 0' }}>Inloggen</a>
         </div>
       )}
