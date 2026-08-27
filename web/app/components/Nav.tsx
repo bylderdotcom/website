@@ -30,7 +30,6 @@ const BOVENBALK: { href: string; label: string }[] = [
   { href: '/bestaande-bouw/', label: 'Bestaande bouw' },
   { href: '/renovatie/', label: 'Renovatie' },
   { href: '/kennisbank/', label: 'Kennisbank' },
-  { href: '/zakelijk/', label: 'Zakelijk' },
 ]
 
 const MENUS: Menu[] = [
@@ -85,6 +84,18 @@ const MENUS: Menu[] = [
       { href: '/vouchers/auping/', title: 'Auping: 10% + gratis leenbed' },
       { href: '/kortingscode/', title: 'Kortingscodes per merk' },
       { href: '/showroomsale/', title: 'Showroomsale' },
+    ],
+  },
+  {
+    label: 'Zakelijk',
+    items: [
+      { href: '/inkoopvoordeel/', title: 'Inkoopvoordeel voor vakbedrijven',
+        sub: 'Word verkooppunt van het gecureerde assortiment — op uitnodiging', primair: true },
+      { href: '/deelnemer-worden/', title: 'Deelnemer worden',
+        sub: 'Bereik kopers op het juiste koopmoment', primair: true },
+      { href: '/deelnemer-worden/commercieel-vastgoed/', title: 'Commercieel vastgoed' },
+      { href: '/voor-vakbedrijven/', title: 'Voor vakbedrijven' },
+      { href: '/zakelijk/', title: 'Alles over Bylder Zakelijk' },
     ],
   },
 ]
