@@ -97,6 +97,12 @@ def dd_item(href, title, sub, primair):
 
 def build_nav():
     style = (
+        # De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte af
+        # van of de pagina toevallig een globale reset meelevert. Op content-box
+        # telt de 24px padding bij de max-width op en wordt de balk 1248 in
+        # plaats van 1200 breed — zichtbaar als een menu dat per pagina 24px
+        # dichter op de schermrand staat.
+        f'.{MARKER},.{MARKER} *,.{MARKER} *::before,.{MARKER} *::after{{box-sizing:border-box}}'
         f'.{MARKER}-top{{display:block}}.{MARKER}-desk{{display:flex;align-items:center;gap:24px}}'
         f'.{MARKER}-deskl{{display:inline}}.{MARKER}-burger{{display:none}}'
         f'@media(max-width:1020px){{.{MARKER}-top{{display:none}}.{MARKER}-desk{{display:none}}'
@@ -206,9 +212,15 @@ CANON_NAV = build_nav()
 
 
 def transform(h):
+    """Synchroniseer elke hoofdnav met de canonieke versie.
+
+    Ook een nav die deze pass eerder al schreef (marker-klasse) wordt opnieuw
+    opgebouwd — anders blijven 36k pagina's op een oude versie staan zodra de
+    canonieke nav verandert. 'changed' komt uit een vergelijking met de invoer,
+    dus een tweede run over ongewijzigde bestanden meldt nog steeds niets.
+    """
     out = []
     pos = 0
-    changed = False
     while True:
         i = h.find('<nav', pos)
         if i < 0:
@@ -216,24 +228,19 @@ def transform(h):
             break
         tag_end = h.find('>', i)
         opening = h[i:tag_end + 1]
-        if MARKER in opening:
-            out.append(h[pos:tag_end + 1])
-            pos = tag_end + 1
-            continue
-        if 'glass-nav' not in opening and 'Hoofdnavigatie' not in opening:
-            out.append(h[pos:tag_end + 1])
-            pos = tag_end + 1
-            continue
-        close = h.find('</nav>', tag_end)
-        if close < 0:
+        is_hoofdnav = (MARKER in opening
+                       or 'glass-nav' in opening
+                       or 'Hoofdnavigatie' in opening)
+        close = h.find('</nav>', tag_end) if is_hoofdnav else -1
+        if not is_hoofdnav or close < 0:
             out.append(h[pos:tag_end + 1])
             pos = tag_end + 1
             continue
         out.append(h[pos:i])
         out.append(CANON_NAV)
         pos = close + len('</nav>')
-        changed = True
-    return ''.join(out), changed
+    nh = ''.join(out)
+    return nh, nh != h
 
 
 def run():
