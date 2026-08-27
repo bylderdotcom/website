@@ -1,21 +1,29 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { NAV_CSS } from './navCss'
 
 /**
- * Gedeelde site-navigatie — ÉÉN bron voor elke pagina.
+ * Gedeelde site-navigatie — ÉÉN bron voor elke Next-route.
  *
  * OPBOUW (ontwerp Daniel, 26 aug 2026, naar het EVTrader-model)
  * Twee lagen. Een smalle bovenbalk voor de secundaire wereld: soort woning
- * (nieuwbouw / bestaande bouw / renovatie), kennisbank en zakelijk. Daaronder de
- * hoofdnav met de pijlers van het bedrijf: Assortiment, Diensten en
- * Kortingsvouchers, met de Stappenplan-knop als vierde pijler — dat is de
- * primaire handeling, dus hij is een knop en geen menu-item. Ernaast een
- * subtiele verwijzing naar Functies.
+ * (nieuwbouw / bestaande bouw / renovatie) en kennisbank. Daaronder de hoofdnav
+ * met de pijlers van het bedrijf: Assortiment, Diensten, Kortingsvouchers en
+ * Zakelijk, met de Stappenplan-knop als primaire handeling — die is een knop en
+ * geen menu-item. Ernaast een subtiele verwijzing naar Functies.
  *
  * In elke dropdown is er visueel onderscheid tussen het primaire onderwerp
  * (kaartje met achtergrond) en de secundaire onderwerpen (compacte lijst achter
  * een scheidingslijn) — verzoek Daniel, zodat het overzichtelijk blijft.
+ *
+ * VORMGEVING ZIT IN KLASSEN, NIET INLINE (27-08-2026). Deze nav stond met 153
+ * inline style=""-attributen op ~104.000 pagina's (36k statische + 67.710
+ * Next-routes). Dat was 24 kB per pagina — 57% van een gemiddelde pagina — en
+ * liet de Vercel-build op schijfruimte stuklopen (ENOSPC, 6.304 MB output).
+ * De CSS komt uit navCss.ts, gegenereerd uit _scripts/nav_pijlers_pass.py,
+ * zodat de Next-routes en de statische pagina's letterlijk dezelfde
+ * vormgeving hebben en niet uit elkaar kunnen lopen.
  *
  * GEEN INTERNE LINK VERDWIJNT VAN DE SITE. Wat uit het menu ging staat in de
  * voettekst; de linkpoort in scripts/homepage_herordenen.mjs bewaakt dat.
@@ -24,7 +32,7 @@ import { useState, useEffect, useRef } from 'react'
 type Item = { href: string; title: string; sub?: string; primair?: boolean }
 type Menu = { label: string; items: Item[]; breed?: boolean }
 
-// Smalle bovenbalk: waar je woning in zit + de leeswereld + zakelijk.
+// Smalle bovenbalk: waar je woning in zit + de leeswereld.
 const BOVENBALK: { href: string; label: string }[] = [
   { href: '/nieuwbouw-koper/', label: 'Nieuwbouw' },
   { href: '/bestaande-bouw/', label: 'Bestaande bouw' },
@@ -100,14 +108,7 @@ const MENUS: Menu[] = [
   },
 ]
 
-const INKT = 'rgba(61,46,30,'
-const LINK: React.CSSProperties = {
-  fontSize: '0.875rem', color: `${INKT}0.72)`, textDecoration: 'none', whiteSpace: 'nowrap',
-}
-const KOPJE: React.CSSProperties = {
-  fontSize: 11, fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.08em',
-  color: `${INKT}0.72)`, fontWeight: 700, padding: '14px 0 4px',
-}
+const P = 'bn2'
 
 export default function Nav() {
   // Alleen nog interactie-state. Of je mobiel bent beslist CSS, niet JavaScript:
@@ -132,152 +133,123 @@ export default function Nav() {
     }
   }, [open])
 
-  const logo = (
-    <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', flexShrink: 0 }}>
-      <span style={{ width: 32, height: 32, borderRadius: 8, background: '#3D5A3E', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#F5F0E8', fontSize: 13, fontWeight: 800, fontFamily: 'monospace' }}>B.</span>
-      <span style={{ fontWeight: 700, fontSize: 18, letterSpacing: '-0.02em', color: '#1A1208' }}>Bylder<span style={{ color: '#3D5A3E' }}>.com</span></span>
-    </a>
-  )
-
   const pijl = (om: boolean) => (
     <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"
-         style={{ transition: 'transform .15s', transform: om ? 'rotate(180deg)' : 'none', flex: 'none' }}>
+         style={om ? { transform: 'rotate(180deg)' } : undefined}>
       <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   )
 
   const dropdownItem = (it: Item) => it.primair ? (
-    <a key={it.href} href={it.href} style={{
-      display: 'block', padding: '12px 14px', borderRadius: 10, textDecoration: 'none',
-      background: '#EBF0E8', marginBottom: 4,
-    }}>
-      <strong style={{ display: 'block', fontSize: 13.5, fontWeight: 800, color: '#1A1208' }}>{it.title}</strong>
-      {it.sub && <span style={{ fontSize: 11.5, color: `${INKT}0.72)` }}>{it.sub}</span>}
+    <a key={it.href} href={it.href} className={`${P}-p`}>
+      <strong>{it.title}</strong>{it.sub && <span>{it.sub}</span>}
     </a>
   ) : (
-    <a key={it.href} href={it.href} style={{
-      display: 'block', padding: '8px 14px', borderRadius: 8, textDecoration: 'none',
-      fontSize: 13, fontWeight: 600, color: `${INKT}0.82)`,
-    }}>{it.title}</a>
+    <a key={it.href} href={it.href} className={`${P}-s`}>{it.title}</a>
   )
 
   return (
-    <nav className="bv-nav" aria-label="Hoofdnavigatie" style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(245,240,232,0.92)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
-      {/* Zichtbaarheid per schermbreedte in CSS, zodat de eerste render meteen
-          klopt — geen desktopmenu-flits meer op mobiel. */}
-      <style dangerouslySetInnerHTML={{ __html:
-        // De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte
-        // af van of de pagina toevallig een globale reset meelevert: de
-        // homepage doet dat (HOME_STYLE), de overige Next-routes niet. Op
-        // content-box telt de 24px padding bij de max-width op en werd de balk
-        // 1248 in plaats van 1200 breed — zichtbaar als een menu dat per
-        // pagina 24px dichter op de schermrand staat.
-        '.bv-nav,.bv-nav *,.bv-nav *::before,.bv-nav *::after{box-sizing:border-box}'
-        + '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:24px}'
-        + '.bv-deskl{display:inline}.bv-burger{display:none}'
-        + '@media(max-width:1020px){.bv-top{display:none}.bv-desk{display:none}'
-        + '.bv-deskl{display:none}.bv-burger{display:flex}}'
-        + '@media(min-width:1021px){.bv-sheet{display:none}}' }} />
+    <nav className="byl-nav2026" aria-label="Hoofdnavigatie">
+      <style dangerouslySetInnerHTML={{ __html: NAV_CSS }} />
 
-      <div className="bv-top" style={{ borderBottom: `1px solid ${INKT}0.06)`, background: '#EDE6D8' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '7px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
-          <span style={{ fontSize: 12, color: `${INKT}0.6)` }}>Gratis voor bewoners</span>
-          <div style={{ display: 'flex', gap: 18 }}>
+      <div className={`${P}-top`}>
+        <div className={`${P}-w ${P}-tw`}>
+          <span className={`${P}-free`}>Gratis voor bewoners</span>
+          <div className={`${P}-tls`}>
             {BOVENBALK.map((t) => (
-              <a key={t.href} href={t.href} style={{ fontSize: 12.5, color: `${INKT}0.66)`, textDecoration: 'none', whiteSpace: 'nowrap' }}>{t.label}</a>
+              <a key={t.href} href={t.href} className={`${P}-tl`}>{t.label}</a>
             ))}
           </div>
         </div>
       </div>
 
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '13px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
-        {logo}
+      <div className={`${P}-w ${P}-mw`}>
+        <a href="/" className={`${P}-logo`}>
+          <span className={`${P}-lm`}>B.</span>
+          <span className={`${P}-lt`}>Bylder<span className={`${P}-lg`}>.com</span></span>
+        </a>
 
-        <div className="bv-desk" ref={wrapRef}>
+        <div className={`${P}-desk`} ref={wrapRef}>
           {MENUS.map((m) => (
-            <div key={m.label} style={{ position: 'relative' }}>
+            <div key={m.label} className={`${P}-m`}>
               <button
+                type="button"
+                className={`${P}-btn`}
                 onClick={() => setOpen((o) => (o === m.label ? null : m.label))}
                 aria-expanded={open === m.label}
-                style={{ ...LINK, fontWeight: 600, color: `${INKT}0.8)`, background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: 0, display: 'flex', alignItems: 'center', gap: 5 }}
               >
                 {m.label}
                 {pijl(open === m.label)}
               </button>
-              {open === m.label && (
-                <div style={{
-                  position: 'absolute', top: 'calc(100% + 14px)', left: m.breed ? 'auto' : 0,
-                  right: m.breed ? -160 : 'auto', background: '#fff', border: `1px solid ${INKT}0.1)`,
-                  borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8,
-                  minWidth: m.breed ? 520 : 300, zIndex: 200,
-                }}>
-                  {m.items.filter((i) => i.primair).map(dropdownItem)}
-                  {m.items.some((i) => i.primair) && m.items.some((i) => !i.primair) && (
-                    <div style={{ height: 1, background: `${INKT}0.08)`, margin: '6px 8px' }} />
-                  )}
-                  <div style={m.breed ? { display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 4 } : undefined}>
-                    {m.items.filter((i) => !i.primair).map(dropdownItem)}
-                  </div>
-                </div>
-              )}
+              {/* Klikken opent hier expliciet; de :hover-regel in de CSS doet de
+                  rest. Beide wegen tonen dezelfde dropdown. */}
+              <div className={`${P}-dd${m.breed ? ' w' : ''}`}
+                   style={open === m.label ? { display: 'block' } : undefined}>
+                {m.items.filter((i) => i.primair).map(dropdownItem)}
+                {m.items.some((i) => i.primair) && m.items.some((i) => !i.primair) && (
+                  <div className={`${P}-sep`} />
+                )}
+                {m.breed
+                  ? <div className={`${P}-g`}>{m.items.filter((i) => !i.primair).map(dropdownItem)}</div>
+                  : m.items.filter((i) => !i.primair).map(dropdownItem)}
+              </div>
             </div>
           ))}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <a href="/functies/" className="bv-deskl" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
-          <a href="https://app.bylder.com" className="bv-deskl" style={LINK}>Inloggen</a>
-          <a href="https://app.bylder.com/woningscan" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-            Maak je stappenplan
-          </a>
-          <button className="bv-burger" onClick={() => setMobielOpen((o) => !o)} aria-label="Menu" aria-expanded={mobielOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, flexDirection: 'column', gap: 4 }}>
-            {[0, 1, 2].map((i) => <span key={i} style={{ width: 20, height: 2, background: '#1A1208', borderRadius: 2, display: 'block' }} />)}
+        <div className={`${P}-r`}>
+          <a href="/functies/" className={`${P}-lnk sm`}>Functies</a>
+          <a href="https://app.bylder.com" className={`${P}-lnk`}>Inloggen</a>
+          <a href="https://app.bylder.com/woningscan" className={`${P}-cta`}>Maak je stappenplan</a>
+          <button className={`${P}-bg`} onClick={() => setMobielOpen((o) => !o)}
+                  aria-label="Menu" aria-expanded={mobielOpen}>
+            <i /><i /><i />
           </button>
         </div>
       </div>
 
       {mobielOpen && (
-        <div className="bv-sheet" style={{ borderTop: `1px solid ${INKT}0.07)`, background: '#F5F0E8', padding: '4px 24px 20px', flexDirection: 'column', maxHeight: '78vh', overflowY: 'auto', display: 'flex' }}>
+        <div className={`${P}-sheet o`}>
           {/* Accordeon: alles dicht tot je een sectie aanraakt — verzoek Daniel,
               de platte lijst met 30+ regels was onbruikbaar. */}
           {MENUS.map((m) => (
-            <div key={m.label} style={{ borderBottom: `1px solid ${INKT}0.08)` }}>
+            <div key={m.label} className={`${P}-det`}>
               <button
+                className={`${P}-sumb`}
                 onClick={() => setMobielSectie((x) => (x === m.label ? null : m.label))}
                 aria-expanded={mobielSectie === m.label}
-                style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: '14px 0', fontSize: 15, fontWeight: 700, color: '#1A1208' }}
               >
                 {m.label}
                 {pijl(mobielSectie === m.label)}
               </button>
               {mobielSectie === m.label && (
-                <div style={{ paddingBottom: 10 }}>
+                <div>
                   {m.items.map((it) => (
-                    <a key={it.href} href={it.href} style={{ display: 'block', padding: '8px 0 8px 8px', fontSize: 14, textDecoration: 'none', fontWeight: it.primair ? 700 : 400, color: it.primair ? '#3D5A3E' : `${INKT}0.75)` }}>{it.title}</a>
+                    <a key={it.href} href={it.href} className={`${P}-mi${it.primair ? ' p' : ''}`}>{it.title}</a>
                   ))}
                 </div>
               )}
             </div>
           ))}
-          <div style={{ borderBottom: `1px solid ${INKT}0.08)` }}>
+          <div className={`${P}-det`}>
             <button
+              className={`${P}-sumb`}
               onClick={() => setMobielSectie((x) => (x === 'meer' ? null : 'meer'))}
               aria-expanded={mobielSectie === 'meer'}
-              style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: '14px 0', fontSize: 15, fontWeight: 700, color: '#1A1208' }}
             >
               Meer
               {pijl(mobielSectie === 'meer')}
             </button>
             {mobielSectie === 'meer' && (
-              <div style={{ paddingBottom: 10 }}>
+              <div>
                 {BOVENBALK.map((t) => (
-                  <a key={t.href} href={t.href} style={{ display: 'block', padding: '8px 0 8px 8px', fontSize: 14, textDecoration: 'none', color: `${INKT}0.75)` }}>{t.label}</a>
+                  <a key={t.href} href={t.href} className={`${P}-mi`}>{t.label}</a>
                 ))}
-                <a href="/functies/" style={{ display: 'block', padding: '8px 0 8px 8px', fontSize: 14, textDecoration: 'none', color: `${INKT}0.75)` }}>Functies</a>
+                <a href="/functies/" className={`${P}-mi`}>Functies</a>
               </div>
             )}
           </div>
-          <a href="https://app.bylder.com" style={{ ...LINK, display: 'block', padding: '14px 0 0' }}>Inloggen</a>
+          <a href="https://app.bylder.com" className={`${P}-ml`}>Inloggen</a>
         </div>
       )}
     </nav>

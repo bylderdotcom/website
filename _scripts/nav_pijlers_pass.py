@@ -20,6 +20,7 @@
 #
 # Idempotent via de marker-klasse "byl-nav2026" op de nieuwe <nav>-tag.
 import os
+import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/')
@@ -85,127 +86,158 @@ MENUS = [
 SLUGS = ['as', 'di', 'kv', 'zk']
 
 
+
+# Korte klasse-prefix voor alles binnen de nav. De marker-klasse zelf blijft
+# 'byl-nav2026' (daar herkent transform() de nav aan); de kinderen krijgen 'bn2',
+# want elk bespaard teken telt 104.000 keer mee.
+P = 'bn2'
+
+
 def dd_item(href, title, sub, primair):
     if primair:
-        subhtml = f'<span style="font-size:11.5px;color:{INKT}0.72)">{sub}</span>' if sub else ''
-        return (f'<a href="{href}" style="display:block;padding:12px 14px;border-radius:10px;'
-                f'text-decoration:none;background:#EBF0E8;margin-bottom:4px;">'
-                f'<strong style="display:block;font-size:13.5px;font-weight:800;color:#1A1208;">{title}</strong>{subhtml}</a>')
-    return (f'<a href="{href}" style="display:block;padding:8px 14px;border-radius:8px;'
-            f'text-decoration:none;font-size:13px;font-weight:600;color:{INKT}0.82)">{title}</a>')
+        subhtml = f'<span>{sub}</span>' if sub else ''
+        return f'<a href="{href}" class="{P}-p"><strong>{title}</strong>{subhtml}</a>'
+    return f'<a href="{href}" class="{P}-s">{title}</a>'
+
+
+# Alle vormgeving één keer, als klassen. Stond tot 27-08-2026 als 153 losse
+# inline style=""-attributen in de nav, en die nav staat op ~104.000 pagina's
+# (36k statisch + 67.710 Next-routes). Dat was 24 kB per pagina — 57% van een
+# gemiddelde pagina — en liet de Vercel-build op schijfruimte stuklopen
+# (ENOSPC, 6.304 MB output). Als klassen is dezelfde nav ~4 kB.
+CSS = (
+    # De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte af van
+    # of de pagina toevallig een globale reset meelevert; op content-box telt de
+    # 24px padding bij de max-width op en wordt de balk 1248 in plaats van 1200
+    # breed — zichtbaar als een menu dat per pagina 24px dichter op de rand staat.
+    f'.{MARKER},.{MARKER} *,.{MARKER} *::before,.{MARKER} *::after{{box-sizing:border-box}}'
+    # display/height/padding/overflow expliciet: veel pSEO-templates hebben een
+    # eigen kale tag-selector nav{display:flex;height:64px;position:fixed} voor
+    # hun oude nav, die anders doorlekt.
+    f'.{MARKER}{{display:block;position:sticky;top:0;z-index:50;height:auto;min-height:0;'
+    f'margin:0;padding:0;overflow:visible;background:rgba(245,240,232,0.92);'
+    f'backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);'
+    f'border-bottom:1px solid {INKT}0.07)}}'
+    f'.{P}-top{{display:block;border-bottom:1px solid {INKT}0.06);background:#EDE6D8}}'
+    f'.{P}-w{{max-width:1200px;margin:0 auto;display:flex;align-items:center;'
+    f'justify-content:space-between;gap:16px}}'
+    f'.{P}-tw{{padding:7px 24px}}.{P}-mw{{padding:13px 24px}}'
+    f'.{P}-free{{font-size:12px;color:{INKT}0.6)}}'
+    f'.{P}-tls{{display:flex;gap:18px}}'
+    f'.{P}-tl{{font-size:12.5px;color:{INKT}0.66);text-decoration:none;white-space:nowrap}}'
+    f'.{P}-logo{{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}}'
+    f'.{P}-lm{{width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:inline-flex;'
+    f'align-items:center;justify-content:center;color:#F5F0E8;font-size:13px;font-weight:800;'
+    f'font-family:monospace}}'
+    f'.{P}-lt{{font-weight:700;font-size:18px;letter-spacing:-0.02em;color:#1A1208}}'
+    f'.{P}-lg{{color:#3D5A3E}}'
+    f'.{P}-desk{{display:flex;align-items:center;gap:24px}}'
+    f'.{P}-m{{position:relative}}'
+    f'.{P}-btn{{font-size:0.875rem;font-weight:600;color:{INKT}0.8);background:none;border:none;'
+    f'cursor:pointer;font-family:inherit;padding:0;display:inline-flex;align-items:center;gap:5px}}'
+    f'.{P}-dd{{display:none;position:absolute;top:calc(100% + 14px);left:0;background:#fff;'
+    f'border:1px solid {INKT}0.1);border-radius:14px;box-shadow:0 12px 40px rgba(61,46,30,0.12);'
+    f'padding:8px;min-width:300px;z-index:200}}'
+    f'.{P}-dd.w{{left:auto;right:-160px;min-width:520px}}'
+    # Hogere specificiteit dan de display:none hierboven, dus geen !important nodig.
+    f'.{P}-m:hover .{P}-dd{{display:block}}'
+    f'.{P}-dd a:hover{{background:rgba(61,90,62,0.06)}}'
+    f'.{P}-p{{display:block;padding:12px 14px;border-radius:10px;text-decoration:none;'
+    f'background:#EBF0E8;margin-bottom:4px}}'
+    f'.{P}-p strong{{display:block;font-size:13.5px;font-weight:800;color:#1A1208}}'
+    f'.{P}-p span{{font-size:11.5px;color:{INKT}0.72)}}'
+    f'.{P}-s{{display:block;padding:8px 14px;border-radius:8px;text-decoration:none;'
+    f'font-size:13px;font-weight:600;color:{INKT}0.82)}}'
+    f'.{P}-sep{{height:1px;background:{INKT}0.08);margin:6px 8px}}'
+    f'.{P}-g{{display:grid;grid-template-columns:1fr 1fr;column-gap:4px}}'
+    f'.{P}-r{{display:flex;align-items:center;gap:14px}}'
+    f'.{P}-lnk{{font-size:0.875rem;color:{INKT}0.72);text-decoration:none}}'
+    f'.{P}-lnk.sm{{font-size:0.8rem}}'
+    f'.{P}-cta{{background:#3D5A3E;color:#F5F0E8;font-size:0.875rem;font-weight:700;'
+    f'padding:9px 18px;border-radius:9px;text-decoration:none;white-space:nowrap}}'
+    f'.{P}-bg{{display:none;cursor:pointer;padding:6px;flex-direction:column;gap:4px}}'
+    f'.{P}-bg i{{width:20px;height:2px;background:#1A1208;border-radius:2px;display:block}}'
+    f'.{P}-cb{{position:absolute;opacity:0;pointer-events:none}}'
+    f'.{P}-sheet{{display:none;border-top:1px solid {INKT}0.07);background:#F5F0E8;'
+    f'padding:4px 24px 20px;flex-direction:column;max-height:78vh;overflow-y:auto}}'
+    f'.{P}-det{{border-bottom:1px solid {INKT}0.08)}}'
+    f'.{P}-sum{{padding:14px 0;font-size:15px;font-weight:700;color:#1A1208;cursor:pointer}}'
+    # Knop-variant van hetzelfde kopje, voor de React-nav (daar is het een
+    # <button> in plaats van een <summary>).
+    f'.{P}-sumb{{display:flex;align-items:center;justify-content:space-between;width:100%;'
+    f'background:none;border:none;font-family:inherit;text-align:left;'
+    f'padding:14px 0;font-size:15px;font-weight:700;color:#1A1208;cursor:pointer}}'
+    f'.{P}-mi{{display:block;padding:8px 0 8px 8px;font-size:14px;text-decoration:none;'
+    f'font-weight:400;color:{INKT}0.75)}}'
+    f'.{P}-mi.p{{font-weight:700;color:#3D5A3E}}'
+    f'.{P}-ml{{display:block;padding:14px 0 0;font-size:0.875rem;color:{INKT}0.72);'
+    f'text-decoration:none}}'
+    # Mobiel: bovenbalk en desktopmenu weg, burger erbij. Het paneel opent via de
+    # verborgen checkbox — geen JavaScript. De checked-regel staat binnen deze
+    # media query, dus op desktop blijft het paneel dicht.
+    f'@media(max-width:1020px){{.{P}-top{{display:none}}.{P}-desk{{display:none}}'
+    f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}'
+    # .o is de React-variant (state), :checked de CSS-only variant. Beide staan
+    # binnen deze media query, dus op desktop blijft het paneel altijd dicht.
+    f'.{P}-cb:checked~.{P}-sheet,.{P}-sheet.o{{display:flex}}}}'
+    f'/*a11y-focus*/:focus-visible{{outline:3px solid #3D5A3E!important;outline-offset:2px;'
+    f'box-shadow:0 0 0 8px rgba(245,240,232,.85)}}'
+    f'@media (prefers-reduced-motion:reduce){{*{{animation-duration:.01ms!important;'
+    f'transition-duration:.01ms!important;scroll-behavior:auto!important}}}}'
+)
+
+PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'
+        '<path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" '
+        'stroke-linecap="round"/></svg>')
 
 
 def build_nav():
-    style = (
-        # De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte af
-        # van of de pagina toevallig een globale reset meelevert. Op content-box
-        # telt de 24px padding bij de max-width op en wordt de balk 1248 in
-        # plaats van 1200 breed — zichtbaar als een menu dat per pagina 24px
-        # dichter op de schermrand staat.
-        f'.{MARKER},.{MARKER} *,.{MARKER} *::before,.{MARKER} *::after{{box-sizing:border-box}}'
-        f'.{MARKER}-top{{display:block}}.{MARKER}-desk{{display:flex;align-items:center;gap:24px}}'
-        f'.{MARKER}-deskl{{display:inline}}.{MARKER}-burger{{display:none}}'
-        f'@media(max-width:1020px){{.{MARKER}-top{{display:none}}.{MARKER}-desk{{display:none}}'
-        f'.{MARKER}-deskl{{display:none}}.{MARKER}-burger{{display:flex}}}}'
-        f'@media(min-width:1021px){{.{MARKER}-sheet{{display:none!important}}}}'
-        + ''.join(f'.{MARKER}-m{slug}:hover .{MARKER}-dd{slug}{{display:block!important}}' for slug in SLUGS)
-        + f'.{MARKER}-dd a:hover{{background:rgba(61,90,62,0.06)}}'
-        f'.{MARKER}-cb{{position:absolute;opacity:0;pointer-events:none}}'
-        f'@media(max-width:1020px){{.{MARKER}-cb:checked~.{MARKER}-sheet{{display:flex!important}}}}'
-        f'/*a11y-focus*/:focus-visible{{outline:3px solid #3D5A3E!important;outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}}'
-        f'@media (prefers-reduced-motion:reduce){{*{{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}}}'
-    )
+    bovenbalk_html = ''.join(f'<a href="{h}" class="{P}-tl">{t}</a>' for h, t in BOVENBALK)
 
-    bovenbalk_html = ''.join(
-        f'<a href="{h}" style="font-size:12.5px;color:{INKT}0.66);text-decoration:none;white-space:nowrap;">{t}</a>'
-        for h, t in BOVENBALK)
-
-    logo = ('<a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;">'
-            '<span style="width:32px;height:32px;border-radius:8px;background:#3D5A3E;display:inline-flex;'
-            'align-items:center;justify-content:center;color:#F5F0E8;font-size:13px;font-weight:800;'
-            'font-family:monospace;">B.</span>'
-            '<span style="font-weight:700;font-size:18px;letter-spacing:-0.02em;color:#1A1208;">'
-            'Bylder<span style="color:#3D5A3E;">.com</span></span></a>')
+    logo = (f'<a href="/" class="{P}-logo"><span class="{P}-lm">B.</span>'
+            f'<span class="{P}-lt">Bylder<span class="{P}-lg">.com</span></span></a>')
 
     desk_menus = []
-    for (label, breed, items), slug in zip(MENUS, SLUGS):
-        primair_items = ''.join(dd_item(*i) for i in items if i[3])
-        secundair_items = [i for i in items if not i[3]]
-        sep = f'<div style="height:1px;background:{INKT}0.08);margin:6px 8px;"></div>' if primair_items and secundair_items else ''
-        sec_wrap_open = f'<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:4px;">' if breed else ''
-        sec_wrap_close = '</div>' if breed else ''
-        sec_html = ''.join(dd_item(*i) for i in secundair_items)
-        dd_width = 520 if breed else 300
-        dd_pos = 'right:-160px;left:auto;' if breed else 'left:0;'
+    for label, breed, items in MENUS:
+        primair = ''.join(dd_item(*i) for i in items if i[3])
+        secundair = [i for i in items if not i[3]]
+        sep = f'<div class="{P}-sep"></div>' if primair and secundair else ''
+        sec = ''.join(dd_item(*i) for i in secundair)
+        if breed:
+            sec = f'<div class="{P}-g">{sec}</div>'
         desk_menus.append(
-            f'<div class="{MARKER}-m{slug}" style="position:relative;">'
-            f'<button type="button" style="font-size:0.875rem;font-weight:600;color:{INKT}0.8);background:none;'
-            f'border:none;cursor:pointer;font-family:inherit;padding:0;display:inline-flex;align-items:center;gap:5px;">'
-            f'{label}<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true" style="flex:none;">'
-            f'<path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>'
-            f'<div class="{MARKER}-dd{slug}" style="display:none;position:absolute;top:calc(100% + 14px);{dd_pos}'
-            f'background:#fff;border:1px solid {INKT}0.1);border-radius:14px;box-shadow:0 12px 40px rgba(61,46,30,0.12);'
-            f'padding:8px;min-width:{dd_width}px;z-index:200;">'
-            f'{primair_items}{sep}{sec_wrap_open}{sec_html}{sec_wrap_close}</div></div>'
-        )
+            f'<div class="{P}-m"><button type="button" class="{P}-btn">{label}{PIJL}</button>'
+            f'<div class="{P}-dd{" w" if breed else ""}">{primair}{sep}{sec}</div></div>')
 
-    mobile_sections = []
+    mobiel = []
     for label, breed, items in MENUS:
         rows = ''.join(
-            f'<a href="{h}" style="display:block;padding:8px 0 8px 8px;font-size:14px;text-decoration:none;'
-            f'font-weight:{"700" if primair else "400"};color:{"#3D5A3E" if primair else INKT + "0.75)"};">{t}</a>'
-            for h, t, sub, primair in items
-        )
-        mobile_sections.append(
-            f'<details style="border-bottom:1px solid {INKT}0.08);"><summary style="padding:14px 0;'
-            f'font-size:15px;font-weight:700;color:#1A1208;cursor:pointer;">{label}</summary>'
-            f'<div style="padding-bottom:10px;">{rows}</div></details>'
-        )
-    meer_rows = ''.join(
-        f'<a href="{h}" style="display:block;padding:8px 0 8px 8px;font-size:14px;text-decoration:none;color:{INKT}0.75);">{t}</a>'
-        for h, t in BOVENBALK
-    ) + f'<a href="/functies/" style="display:block;padding:8px 0 8px 8px;font-size:14px;text-decoration:none;color:{INKT}0.75);">Functies</a>'
-    mobile_sections.append(
-        f'<details style="border-bottom:1px solid {INKT}0.08);"><summary style="padding:14px 0;'
-        f'font-size:15px;font-weight:700;color:#1A1208;cursor:pointer;">Meer</summary>'
-        f'<div style="padding-bottom:10px;">{meer_rows}</div></details>'
-    )
+            f'<a href="{h}" class="{P}-mi{" p" if pr else ""}">{t}</a>'
+            for h, t, sub, pr in items)
+        mobiel.append(f'<details class="{P}-det"><summary class="{P}-sum">{label}</summary>'
+                      f'<div>{rows}</div></details>')
+    meer = ''.join(f'<a href="{h}" class="{P}-mi">{t}</a>' for h, t in BOVENBALK)
+    meer += f'<a href="/functies/" class="{P}-mi">Functies</a>'
+    mobiel.append(f'<details class="{P}-det"><summary class="{P}-sum">Meer</summary>'
+                  f'<div>{meer}</div></details>')
 
-    # Veel pSEO-templates hebben een eigen kale tag-selector "nav{display:flex;
-    # height:64px;position:fixed;...}" voor hun ÉÉN-laags oude nav. Zo'n regel
-    # lekt door op alles wat wij hier niet zelf inline dichtzetten (inline
-    # wint per eigenschap van elke los-staande selector, ook zonder
-    # !important — maar alleen voor eigenschappen die we ook echt zetten).
-    # Vandaar expliciet display/height/padding/overflow/margin hieronder,
-    # ook al zijn dat voor een normale <nav> de brower-default-waarden.
-    nav = (
-        f'<nav aria-label="Hoofdnavigatie" class="{MARKER}" style="display:block;position:sticky;'
-        f'top:0;z-index:50;height:auto;min-height:0;margin:0;padding:0;overflow:visible;'
-        f'background:rgba(245,240,232,0.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);'
-        f'border-bottom:1px solid {INKT}0.07);"><style>{style}</style>'
-        f'<input type="checkbox" id="{MARKER}-cb" class="{MARKER}-cb">'
-        f'<div class="{MARKER}-top" style="border-bottom:1px solid {INKT}0.06);background:#EDE6D8;">'
-        f'<div style="max-width:1200px;margin:0 auto;padding:7px 24px;display:flex;align-items:center;'
-        f'justify-content:space-between;gap:16px;"><span style="font-size:12px;color:{INKT}0.6)">Gratis voor bewoners</span>'
-        f'<div style="display:flex;gap:18px;">{bovenbalk_html}</div></div></div>'
-        f'<div style="max-width:1200px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;'
-        f'justify-content:space-between;gap:16px;">{logo}'
-        f'<div class="{MARKER}-desk">{"".join(desk_menus)}</div>'
-        f'<div style="display:flex;align-items:center;gap:14px;">'
-        f'<a href="/functies/" class="{MARKER}-deskl" style="font-size:0.8rem;color:{INKT}0.72);text-decoration:none;">Functies</a>'
-        f'<a href="https://app.bylder.com" class="{MARKER}-deskl" style="font-size:0.875rem;color:{INKT}0.72);text-decoration:none;">Inloggen</a>'
-        f'<a href="https://app.bylder.com/woningscan" style="background:#3D5A3E;color:#F5F0E8;font-size:0.875rem;'
-        f'font-weight:700;padding:9px 18px;border-radius:9px;text-decoration:none;white-space:nowrap;">Maak je stappenplan</a>'
-        f'<label for="{MARKER}-cb" class="{MARKER}-burger" style="cursor:pointer;padding:6px;flex-direction:column;gap:4px;">'
-        + ''.join('<span style="width:20px;height:2px;background:#1A1208;border-radius:2px;display:block;"></span>' for _ in range(3))
-        + '</label></div></div>'
-        f'<div class="{MARKER}-sheet" style="display:none;border-top:1px solid {INKT}0.07);background:#F5F0E8;'
-        f'padding:4px 24px 20px;flex-direction:column;max-height:78vh;overflow-y:auto;">'
-        f'{"".join(mobile_sections)}'
-        f'<a href="https://app.bylder.com" style="display:block;padding:14px 0 0;font-size:0.875rem;color:{INKT}0.72);text-decoration:none;">Inloggen</a>'
-        f'</div></nav>'
+    return (
+        f'<nav aria-label="Hoofdnavigatie" class="{MARKER}"><style>{CSS}</style>'
+        f'<input type="checkbox" id="{P}-cb" class="{P}-cb">'
+        f'<div class="{P}-top"><div class="{P}-w {P}-tw">'
+        f'<span class="{P}-free">Gratis voor bewoners</span>'
+        f'<div class="{P}-tls">{bovenbalk_html}</div></div></div>'
+        f'<div class="{P}-w {P}-mw">{logo}'
+        f'<div class="{P}-desk">{"".join(desk_menus)}</div>'
+        f'<div class="{P}-r">'
+        f'<a href="/functies/" class="{P}-lnk sm">Functies</a>'
+        f'<a href="https://app.bylder.com" class="{P}-lnk">Inloggen</a>'
+        f'<a href="https://app.bylder.com/woningscan" class="{P}-cta">Maak je stappenplan</a>'
+        f'<label for="{P}-cb" class="{P}-bg" aria-label="Menu"><i></i><i></i><i></i></label>'
+        f'</div></div>'
+        f'<div class="{P}-sheet">{"".join(mobiel)}'
+        f'<a href="https://app.bylder.com" class="{P}-ml">Inloggen</a></div></nav>'
     )
-    return nav
 
 
 CANON_NAV = build_nav()
@@ -269,4 +301,17 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    # --emit-css: schrijft de CSS als TS-constante naar stdout, zodat Nav.tsx
+    # (de Next-routes) exact dezelfde vormgeving gebruikt als de statische
+    # pagina's. Zie web/app/components/navCss.ts.
+    if '--emit-css' in sys.argv:
+        import json
+        print("// GEGENEREERD uit _scripts/nav_pijlers_pass.py (CSS-constante) — niet met de hand")
+        print("// bijwerken. De statische pagina's en de Next-routes moeten letterlijk dezelfde")
+        print("// nav-vormgeving hebben; één bron voorkomt dat ze uit elkaar lopen.")
+        print("//")
+        print("// Regenereren:")
+        print("//   python3 _scripts/nav_pijlers_pass.py --emit-css > web/app/components/navCss.ts")
+        print('export const NAV_CSS = ' + json.dumps(CSS))
+    else:
+        run()
