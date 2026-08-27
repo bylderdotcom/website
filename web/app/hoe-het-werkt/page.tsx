@@ -231,8 +231,9 @@ export default function HoeHetWerktPage() {
       <h2 style={H2}>Waarom Bylder gratis is voor bewoners</h2>
       <div style={{ ...KAART, borderColor: 'rgba(61,90,62,0.35)' }}>
         <p style={{ ...P, margin: 0 }}>
-          Bylder verdient aan twee kanten: deelnemers betalen om vindbaar te zijn, en op ons eigen
-          assortiment zit marge. Daarom houden we advies en verkoop strikt gescheiden. Onze gidsen en
+          Bylder verdient aan drie kanten: deelnemers betalen om vindbaar te zijn, op ons eigen
+          assortiment zit marge, en bij de merken in het inkoopprogramma voor vakbedrijven verdienen
+          wij een volumebonus. Daarom houden we advies en verkoop strikt gescheiden. Onze gidsen en
           de offerte-check vergelijken op marktprijs — ook als dat tegen ons eigen aanbod ingaat — en
           bij elk aanbod staat wie het levert. Uitvoering doen wij nooit met eigen mensen; die gaat
           altijd naar een deelnemer.
