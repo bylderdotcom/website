@@ -85,7 +85,7 @@ const MAIL = 'mailto:info@bylder.com?subject=' + encodeURIComponent('Inkoopvoord
 
 export default function InkoopvoordeelPage() {
   return (
-    <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+    <main style={{ maxWidth: 1100, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
       <p style={LABEL}>Zakelijk &middot; op uitnodiging</p>
       <h1 style={{ fontSize: '2.15rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Verdien aan de afwerking, niet alleen aan je uren

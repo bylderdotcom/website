@@ -2,6 +2,10 @@
 
 import { useEffect } from 'react'
 import Script from 'next/script'
+// Tailwind gecompileerd bij de build. Stond tot 27-08-2026 als Play-CDN-script
+// in deze component, met strategy="afterInteractive" — de pagina rendeerde dan
+// eerst zonder Tailwind en sprong op zijn plek zodra de CDN binnen was.
+import './tailwind.css'
 import { HOME_STYLE } from './homeHtml'
 import { HOME_DELEN } from './homeSections'
 import HomeServices from './HomeServices'
@@ -18,27 +22,8 @@ const PIJLERS_NA = -1
 // classes en inline `onclick=/oninput=`-attributen). De inline <script>-blokken uit
 // de bron zijn hier als één useEffect herbedraad: globale functies (selectChoice,
 // hpCalc, sluitPopup, claimVoucher) op window + init (woningtype-toggle, typewriter,
-// auping-popup). Tailwind draait via de Play-CDN met de merk-kleur-config, net als
-// in de bron. Nav + Footer komen uit de gedeelde layout.
-
-// Tailwind Play-CDN config (merk-kleuren + fonts), 1-op-1 uit index.html.
-const TW_CONFIG = {
-  theme: {
-    extend: {
-      colors: {
-        cream: '#F5F0E8', 'cream-2': '#EDE6D8', 'cream-3': '#E4DBC8',
-        sand: '#C8B89A', 'sand-dark': '#9A866A',
-        bark: '#3D2E1E', 'bark-2': '#5C4433', 'bark-3': '#8A7060',
-        moss: '#3D5A3E', 'moss-light': '#4E7350', 'moss-bg': '#EBF0E8',
-        rust: '#B85C38', 'rust-bg': '#F5EBE5', charcoal: '#1A1208',
-      },
-      fontFamily: {
-        sans: ['Plus Jakarta Sans', 'sans-serif'],
-        mono: ['Space Mono', 'monospace'],
-      },
-    },
-  },
-}
+// auping-popup). Tailwind wordt bij de build gecompileerd (tailwind.config.js);
+// de merk-kleuren staan daar. Nav + Footer komen uit de gedeelde layout.
 
 export default function HomeClient() {
   useEffect(() => {
@@ -398,14 +383,6 @@ export default function HomeClient() {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
       <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css" />
       <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css" />
-
-      {/* Tailwind Play-CDN + merk-config (config zetten ná load triggert reprocess) */}
-      <Script
-        id="tailwind-cdn"
-        src="https://cdn.tailwindcss.com"
-        strategy="afterInteractive"
-        onLoad={() => { (window as any).tailwind.config = TW_CONFIG }}
-      />
 
       <style dangerouslySetInnerHTML={{ __html: HOME_STYLE }} />
       {/* De delen staan in HOME_DELEN in de volgorde van de funnel. De vier

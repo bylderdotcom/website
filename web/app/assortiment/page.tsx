@@ -126,7 +126,7 @@ const itemListSchema = {
 
 export default function AssortimentPage() {
   return (
-    <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+    <main style={{ maxWidth: 1100, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
       <p style={LABEL}>Assortiment</p>
       <h1 style={{ fontSize: '2.1rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Wat Bylder en partners leveren

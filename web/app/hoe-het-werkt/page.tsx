@@ -166,7 +166,7 @@ const faqSchema = {
 
 export default function HoeHetWerktPage() {
   return (
-    <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+    <main style={{ maxWidth: 1100, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.028em', marginBottom: 14, textWrap: 'balance' }}>
         Hoe Bylder werkt
       </h1>

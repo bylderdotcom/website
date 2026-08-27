@@ -1,0 +1,8 @@
+/* Wordt alleen door HomeClient geïmporteerd, dus alleen op de homepage geladen —
+   net als de Play-CDN die hij vervangt. Zou dit in layout.tsx staan, dan kreeg
+   elke Next-route Tailwinds preflight (de base-reset) erbij en zouden pagina's
+   als /inkoopvoordeel/ en /assortiment/ er anders uit gaan zien. Dit moet een
+   verplaatsing zijn van runtime naar buildtime, geen herontwerp. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
