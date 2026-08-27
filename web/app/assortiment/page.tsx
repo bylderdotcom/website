@@ -207,6 +207,10 @@ export default function AssortimentPage() {
           display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 11,
           padding: '13px 22px', fontWeight: 800, fontSize: 15, textDecoration: 'none',
         }}>Meld je aan voor een uitnodiging</a>
+        <p style={{ ...P, margin: '14px 0 0', fontSize: 14 }}>
+          Vakbedrijf? Bekijk het <a href="/inkoopvoordeel/" style={{ color: GROEN, fontWeight: 700 }}>inkoopvoordeel</a> &mdash;
+          word verkooppunt van dit assortiment.
+        </p>
       </div>
 
       <script type="application/ld+json"

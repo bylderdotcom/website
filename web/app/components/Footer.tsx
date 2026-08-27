@@ -12,6 +12,7 @@ const COLS: Col[] = [
     { href: '/hoe-het-werkt/', label: 'Hoe Bylder werkt' },
     { href: '/slaapkamer/', label: 'Slaapkamer' },
     { href: '/deelnemer-worden/', label: 'Deelnemer worden' },
+    { href: '/inkoopvoordeel/', label: 'Inkoopvoordeel vakbedrijven' },
     { href: '/deelnemer-worden/commercieel-vastgoed/', label: 'Commercieel vastgoed' },
     { href: '/assortiment/', label: 'Assortiment' },
     { href: '/nieuwbouw-tools/', label: 'Alle tools' },
