@@ -22,6 +22,9 @@ const PIJLERS_NA = -1
 // in de bron. Nav + Footer komen uit de gedeelde layout.
 
 // Tailwind Play-CDN config (merk-kleuren + fonts), 1-op-1 uit index.html.
+// Merkconfiguratie. Wordt niet meer op de client gezet: hij is invoer voor
+// de generatie van /home.css (zie het kopje in dat bestand). Hier laten staan
+// zodat kleuren en fonts op één plek gedocumenteerd blijven.
 const TW_CONFIG = {
   theme: {
     extend: {
@@ -399,13 +402,15 @@ export default function HomeClient() {
       <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css" />
       <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css" />
 
-      {/* Tailwind Play-CDN + merk-config (config zetten ná load triggert reprocess) */}
-      <Script
-        id="tailwind-cdn"
-        src="https://cdn.tailwindcss.com"
-        strategy="afterInteractive"
-        onLoad={() => { (window as any).tailwind.config = TW_CONFIG }}
-      />
+      {/* Tailwind als gewoon stylesheet, niet meer via de Play-CDN.
+          De CDN laadde met strategy="afterInteractive": de pagina werd dus
+          eerst zonder enige Tailwind-opmaak getekend en sprong daarna in vorm
+          zodra het script klaar was. Zichtbaar als verspringen van de hele
+          hero (melding Daniel, 27-08-2026).
+          /home.css is één keer gegenereerd uit de klassen die deze pagina
+          echt gebruikt (10,6 kB). Regenereren na het toevoegen van nieuwe
+          Tailwind-klassen — zie het kopje in home.css zelf. */}
+      <link rel="stylesheet" href="/home.css" />
 
       <style dangerouslySetInnerHTML={{ __html: HOME_STYLE }} />
       {/* De delen staan in HOME_DELEN in de volgorde van de funnel. De vier
