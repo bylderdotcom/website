@@ -162,18 +162,11 @@ export default function Nav() {
   )
 
   return (
-    <nav className="bv-nav" aria-label="Hoofdnavigatie" style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(245,240,232,0.92)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
+    <nav style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(245,240,232,0.92)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
       {/* Zichtbaarheid per schermbreedte in CSS, zodat de eerste render meteen
           klopt — geen desktopmenu-flits meer op mobiel. */}
       <style dangerouslySetInnerHTML={{ __html:
-        // De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte
-        // af van of de pagina toevallig een globale reset meelevert: de
-        // homepage doet dat (HOME_STYLE), de overige Next-routes niet. Op
-        // content-box telt de 24px padding bij de max-width op en werd de balk
-        // 1248 in plaats van 1200 breed — zichtbaar als een menu dat per
-        // pagina 24px dichter op de schermrand staat.
-        '.bv-nav,.bv-nav *,.bv-nav *::before,.bv-nav *::after{box-sizing:border-box}'
-        + '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:24px}'
+        '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:24px}'
         + '.bv-deskl{display:inline}.bv-burger{display:none}'
         + '@media(max-width:1020px){.bv-top{display:none}.bv-desk{display:none}'
         + '.bv-deskl{display:none}.bv-burger{display:flex}}'
