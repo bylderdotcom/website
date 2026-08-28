@@ -24,6 +24,23 @@ import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/')
+
+# Mappen waarvan Next de pagina's genereert. web/build.sh kopieert de statische
+# site met `cp -a -n`, dus waar Next al een bestand schreef wint Next en wordt
+# het statische bestand nooit uitgeleverd. 27.900 van de 36.554 statische
+# pagina's vallen hieronder — die herschrijven kost schijfruimte in de bouw
+# zonder dat een bezoeker het ooit ziet. Dat was een groot deel van waarom de
+# vorige veegronde de build op ENOSPC liet stuklopen (27-08-2026).
+#
+# Bijwerken zodra er een route naar web/app/ verhuist: de lijst komt uit de
+# "Route (app)"-tabel onderaan de Vercel-bouwlog.
+NEXT_ROUTES = (
+    '3d-sfeerimpressie', 'aannemer', 'assortiment', 'badkamer', 'bouwvergunning',
+    'dakkapel', 'eerlijke-prijzen', 'elektricien', 'functies', 'gereedschap-lenen',
+    'gietvloer', 'hoe-het-werkt', 'inkoopvoordeel', 'kopen', 'kortingscode',
+    'kozijnloze-deuren', 'loodgieter', 'nieuwbouw-project', 'prijzen', 'project',
+    'ruimtes', 'schilder', 'slaapkamer', 'stukadoor', 'vouchers', 'wonen-in',
+)
 MARKER = 'byl-nav2026'
 
 INKT = 'rgba(61,46,30,'
@@ -295,6 +312,10 @@ def run(scope=None):
     for dp, dns, fns in os.walk(root):
         rel = dp.replace(ROOT, '') + '/'
         if any(x in rel for x in EXCLUDE):
+            dns[:] = []
+            continue
+        top = rel.strip('/').split('/')[0]
+        if top in NEXT_ROUTES:
             dns[:] = []
             continue
         for fn in fns:
