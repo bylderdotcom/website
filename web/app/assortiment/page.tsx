@@ -33,7 +33,7 @@ const H2: React.CSSProperties = {
   textWrap: 'balance', color: '#1A1208',
 }
 const H3: React.CSSProperties = { fontSize: '1.05rem', fontWeight: 800, margin: '0 0 6px', color: '#1A1208' }
-const P: React.CSSProperties = { fontSize: 15.5, lineHeight: 1.75, color: `${INKT}0.78)`, margin: '0 0 12px' }
+const P: React.CSSProperties = { fontSize: 15.5, maxWidth: '70ch', lineHeight: 1.75, color: `${INKT}0.78)`, margin: '0 0 12px' }
 const LABEL: React.CSSProperties = {
   fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase',
   letterSpacing: '0.08em', color: `${INKT}0.55)`, fontWeight: 700,
@@ -126,7 +126,7 @@ const itemListSchema = {
 
 export default function AssortimentPage() {
   return (
-    <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+    <main style={{ maxWidth: 1200, boxSizing: 'border-box', margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
       <p style={LABEL}>Assortiment</p>
       <h1 style={{ fontSize: '2.1rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Wat Bylder en partners leveren

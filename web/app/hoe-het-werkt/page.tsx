@@ -36,7 +36,7 @@ const H2: React.CSSProperties = {
   textWrap: 'balance',
 }
 const H3: React.CSSProperties = { fontSize: '1.05rem', fontWeight: 800, margin: '0 0 8px' }
-const P: React.CSSProperties = { fontSize: 16, lineHeight: 1.75, color: `${INKT}0.78)`, margin: '0 0 14px' }
+const P: React.CSSProperties = { fontSize: 16, maxWidth: '70ch', lineHeight: 1.75, color: `${INKT}0.78)`, margin: '0 0 14px' }
 const CIJFER: React.CSSProperties = {
   fontSize: '2.1rem', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: 1.1,
   fontVariantNumeric: 'tabular-nums', color: '#1A1208',
@@ -166,7 +166,7 @@ const faqSchema = {
 
 export default function HoeHetWerktPage() {
   return (
-    <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+    <main style={{ maxWidth: 1200, boxSizing: 'border-box', margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.028em', marginBottom: 14, textWrap: 'balance' }}>
         Hoe Bylder werkt
       </h1>
