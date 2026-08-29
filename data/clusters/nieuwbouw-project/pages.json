@@ -2,33 +2,39 @@
  {
   "slug": "index",
   "path": "/nieuwbouw-project/",
-  "title": "Nieuwbouwprojecten: advies per project | Bylder.com",
+  "title": "Nieuwbouwprojecten: advies per project | Bylder",
   "description": "Wij volgen 976 nieuwbouwprojecten in Nederland. Voor 38 staat uitgewerkt welke keuzes een koper na het tekenen maakt, wanneer ze sluiten en wat ze kosten.",
   "og_type": "website",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Nieuwbouwprojecten\",\"item\":\"https://www.bylder.com/nieuwbouw-project/\"}]}"
-  ]
+  ],
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image"
  },
  {
   "slug": "oplevermonitor",
   "path": "/nieuwbouw-project/oplevermonitor/",
-  "title": "Nieuwbouw-oplevermonitor — 976 projecten, minstens 38.957 woningen | Bylder.com",
-  "description": "Hoeveel nieuwbouwwoningen staan er in Nederland in verkoop? Bylder volgt 976 projecten, samen minstens 38.957 woningen. Per gemeente, per opleverjaar, met de telmethode erbij.",
+  "title": "Nieuwbouw-oplevermonitor",
+  "description": "Hoeveel nieuwbouwwoningen staan er in Nederland in verkoop? Bylder volgt 976 projecten, samen minstens 38.957 woningen.",
   "og_type": "article",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Dataset\", \"name\": \"Nieuwbouw-oplevermonitor Nederland\", \"description\": \"Hoeveel nieuwbouwwoningen staan er in Nederland in verkoop? Bylder volgt 976 projecten, samen minstens 38.957 woningen. Per gemeente, per opleverjaar, met de telmethode erbij.\", \"url\": \"https://www.bylder.com/nieuwbouw-project/oplevermonitor/\", \"dateModified\": \"2026-08-06\", \"temporalCoverage\": \"2026/..\", \"spatialCoverage\": {\"@type\": \"Country\", \"name\": \"Nederland\"}, \"creator\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\", \"url\": \"https://www.bylder.com/\"}, \"variableMeasured\": [{\"@type\": \"PropertyValue\", \"name\": \"Projecten in verkoop\", \"value\": 976}, {\"@type\": \"PropertyValue\", \"name\": \"Woningen (ondergrens)\", \"value\": 38957}], \"isBasedOn\": \"https://nieuwbouw.nl/\", \"license\": \"https://www.bylder.com/algemene-voorwaarden/\"}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Oplevermonitor\", \"item\": \"https://www.bylder.com/nieuwbouw-project/oplevermonitor/\"}]}"
   ],
-  "content_kind": null
+  "content_kind": null,
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image"
  },
  {
   "slug": "blinq-capelle-aan-den-ijssel",
   "path": "/nieuwbouw-project/blinq-capelle-aan-den-ijssel/",
-  "title": "Gekocht in Blinq (Capelle aan den IJssel)? Korting bij woonwinkels in de buurt | Bylder",
+  "title": "Blinq, Capelle aan den IJssel — korting bij woonwinkels",
   "description": "Woning gekocht in Blinq? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Blinq, Capelle aan den IJssel — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Blinq? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/capelle-aan-den-ijssel/01H963APYVS6ZVN6FDJKJAM8F6-blinq\", \"about\": {\"@type\": \"Residence\", \"name\": \"Blinq\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Capelle aan den IJssel\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.9225434, \"longitude\": 4.5742038}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 180}}}",
@@ -40,9 +46,11 @@
  {
   "slug": "boomgaerde-westland",
   "path": "/nieuwbouw-project/boomgaerde-westland/",
-  "title": "Gekocht in Boomgaerde (Westland)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Boomgaerde? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Boomgaerde, Westland — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Boomgaerde? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Boomgaerde, Westland — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Boomgaerde? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/westland/01HSBJRKJ5KE5Y189VETQ419MJ-boomgaerde-fase-2\", \"about\": {\"@type\": \"Residence\", \"name\": \"Boomgaerde\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Westland\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.03832211, \"longitude\": 4.20466804}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 238}}}",
@@ -55,7 +63,7 @@
   "slug": "condorpark-apeldoorn",
   "path": "/nieuwbouw-project/condorpark-apeldoorn/",
   "title": "CondorPark Apeldoorn — wat je nu moet uitzoeken | Bylder.com",
-  "description": "CondorPark in Apeldoorn: verkoop start Q4 2026. Vier vragen die niet in de brochure staan — parkeren zonder eigen plek, bodemsanering, spoortrillingen en de onbekende warmtebron.",
+  "description": "CondorPark in Apeldoorn: verkoop start Q4 2026. Vier vragen die niet in de brochure staan — parkeren zonder eigen plek, bodemsanering, spoortrillingen en…",
   "og_type": "article",
   "robots": "index,follow",
   "ldjson": [
@@ -63,14 +71,18 @@
    "{\"@context\":\"https://schema.org\",\"@type\":\"Place\",\"name\":\"CondorPark Apeldoorn\",\"description\":\"Nieuwbouwontwikkeling van circa 470 woningen (bouwblok A en B) in het gebied Kayersmolen-Noord in Apeldoorn-Zuid, op een voormalig bedrijventerrein bij het Apeldoorns Kanaal. Ontwikkeld door een combinatie van Nijhuis Bouw, Explorius, Ter Steege en Van der Laan Holding.\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Apeldoorn\",\"addressCountry\":\"NL\"},\"url\":\"https://www.bylder.com/nieuwbouw-project/condorpark-apeldoorn/\"}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Is CondorPark in Apeldoorn al in verkoop?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. Per juli 2026 loopt de verkoopvoorbereiding; de verkoop start in het vierde kwartaal van 2026. Aanmelden voor de nieuwsbrief is nog geen inschrijving op een woning.\"}},{\"@type\":\"Question\",\"name\":\"Wanneer worden de woningen in CondorPark opgeleverd?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Er is geen opleverdatum gepubliceerd. De bouw begint in de tweede helft van 2027, afhankelijk van verkoop en vergunningen. Bij een gebruikelijke bouwtijd komt de eerste oplevering rond 2029 uit — dat is een schatting.\"}},{\"@type\":\"Question\",\"name\":\"Hoe zit het met parkeren bij CondorPark?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Er komt geen parkeerplaats op eigen terrein; parkeren gaat in twee bovengrondse parkeergebouwen. De parkeerhub start volgens de ontwikkelaar in Q3 2028 met de bouw, dus ná de start van de woningbouw. Vraag of de garage klaar is bij oplevering en of afname verplicht is.\"}},{\"@type\":\"Question\",\"name\":\"Wat kost een woning in CondorPark?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De prijzen zijn nog niet bekend; ze komen bij de start van de verkoop in Q4 2026. Het programma bestaat voor 25% uit duurdere koop en 40% voor middeninkomens.\"}},{\"@type\":\"Question\",\"name\":\"Krijgt CondorPark een warmtenet of een warmtepomp?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Dat is niet gepubliceerd. Gasloos bouwen staat vast en is wettelijk verplicht, maar geen bron noemt de warmtebron. Stel deze vraag bij de pre-sale — het raakt je maandlasten en je vloerkeuze.\"}},{\"@type\":\"Question\",\"name\":\"Wat stond er eerder op deze plek?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een verouderd bedrijventerrein met onder meer een verffabriek en een ijzer- en staalgieterij. Het bestemmingsplan vermeldt ernstige bodemverontreiniging met een raamsaneringsplan.\"}}]}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Nieuwbouwprojecten\",\"item\":\"https://www.bylder.com/nieuwbouw-project/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"CondorPark (Apeldoorn)\",\"item\":\"https://www.bylder.com/nieuwbouw-project/condorpark-apeldoorn/\"}]}"
-  ]
+  ],
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image"
  },
  {
   "slug": "corner-lofts-s-gravenhage",
   "path": "/nieuwbouw-project/corner-lofts-s-gravenhage/",
-  "title": "Gekocht in Corner Lofts (Den Haag)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Corner Lofts? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Corner Lofts, Den Haag — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Corner Lofts? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Corner Lofts, Den Haag — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Corner Lofts? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HSDTVM298367FN1V8NYT3A8J-corner-lofts\", \"about\": {\"@type\": \"Residence\", \"name\": \"Corner Lofts\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.07070926, \"longitude\": 4.32226462}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 265}}}",
@@ -82,9 +94,11 @@
  {
   "slug": "de-bostuinen-zwijndrecht",
   "path": "/nieuwbouw-project/de-bostuinen-zwijndrecht/",
-  "title": "Gekocht in De Bostuinen (Zwijndrecht)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in De Bostuinen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "De Bostuinen, Zwijndrecht — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in De Bostuinen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"De Bostuinen, Zwijndrecht — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in De Bostuinen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01J8SPFTYZF5XSRRGYEKXYWR07-de-bostuinen-fase-1\", \"about\": {\"@type\": \"Residence\", \"name\": \"De Bostuinen\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zwijndrecht\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.81274442, \"longitude\": 4.63582374}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 132}}}",
@@ -96,9 +110,11 @@
  {
   "slug": "de-meesters-van-vroondaal-s-gravenhage",
   "path": "/nieuwbouw-project/de-meesters-van-vroondaal-s-gravenhage/",
-  "title": "Gekocht in De Meesters Van Vroondaal (Den Haag)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in De Meesters Van Vroondaal? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "De Meesters Van Vroondaal, Den Haag",
+  "description": "Woning gekocht in De Meesters Van Vroondaal? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"De Meesters Van Vroondaal, Den Haag — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in De Meesters Van Vroondaal? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01K6MEGHSY7CZFWK2BFEG7ERTT-de-meesters-van-vroondaal\", \"about\": {\"@type\": \"Residence\", \"name\": \"De Meesters Van Vroondaal\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.036, \"longitude\": 4.225}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 130}}}",
@@ -110,9 +126,11 @@
  {
   "slug": "de-pauwentuin-leidschendam-voorburg",
   "path": "/nieuwbouw-project/de-pauwentuin-leidschendam-voorburg/",
-  "title": "Gekocht in De Pauwentuin (Leidschendam-Voorburg)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in De Pauwentuin? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "De Pauwentuin, Leidschendam-Voorburg",
+  "description": "Woning gekocht in De Pauwentuin? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"De Pauwentuin, Leidschendam-Voorburg — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in De Pauwentuin? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01KTC0FCXBK27HAQFHPQCG523P-de-pauwentuin\", \"about\": {\"@type\": \"Residence\", \"name\": \"De Pauwentuin\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leidschendam-Voorburg\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.08, \"longitude\": 4.4}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 22}}}",
@@ -124,9 +142,11 @@
  {
   "slug": "de-scharnier-rotterdam",
   "path": "/nieuwbouw-project/de-scharnier-rotterdam/",
-  "title": "Gekocht in De Scharnier (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in De Scharnier? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "De Scharnier, Rotterdam — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in De Scharnier? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"De Scharnier, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in De Scharnier? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVMXEAVV4BKPYPD64ZQKKA1-de-scharnier\", \"about\": {\"@type\": \"Residence\", \"name\": \"De Scharnier\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.897725, \"longitude\": 4.476519}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 118}}}",
@@ -138,8 +158,8 @@
  {
   "slug": "de-suikerzijde-groningen",
   "path": "/nieuwbouw-project/de-suikerzijde-groningen/",
-  "title": "De Suikerzijde (Groningen) — gekocht? Fases, meerwerk & oplevering | Bylder.com",
-  "description": "Koop of woon je in De Suikerzijde in Groningen? Per fase wat je nu regelt: inschrijving en KoopGarant, meerwerk en warmtenet, oplevering eind 2026 en de afwerking.",
+  "title": "De Suikerzijde (Groningen)",
+  "description": "Koop of woon je in De Suikerzijde in Groningen? Per fase wat je nu regelt: inschrijving en KoopGarant, meerwerk en warmtenet, oplevering eind 2026 en de…",
   "og_type": "article",
   "robots": "index,follow",
   "ldjson": [
@@ -147,14 +167,18 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"Place\", \"name\": \"De Suikerzijde\", \"description\": \"Nieuw stadsdeel in west-Groningen van circa 5.000 woningen op het voormalige suikerfabriek-terrein. Fase 1 in aanbouw (oplevering verwacht vanaf eind 2026), fase 2 in verkoop sinds januari 2026.\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Groningen\", \"addressCountry\": \"NL\"}, \"url\": \"https://www.bylder.com/nieuwbouw-project/de-suikerzijde-groningen/\"}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Wanneer worden de eerste woningen in De Suikerzijde opgeleverd?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De eerste koopwoningen van fase 1 worden eind 2026 verwacht; de eerste huurblokken begin 2027. Data verschuiven in nieuwbouw geregeld — je eigen koperscommunicatie is leidend.\"}},{\"@type\":\"Question\",\"name\":\"Is er nog aanbod in De Suikerzijde?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Fase 2 (48 koopwoningen, deels KoopGarant) is begin 2026 in verkoop gegaan. Voor actueel aanbod kijk je bij de ontwikkelaar; het hele stadsdeel telt zo'n 5.000 woningen.\"}},{\"@type\":\"Question\",\"name\":\"Heeft De Suikerzijde gasaansluiting?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. De wijk wordt aangesloten op het warmtenet van WarmteStad: koken op inductie, warmte via vastrecht en warmtetarieven in plaats van een eigen ketel.\"}},{\"@type\":\"Question\",\"name\":\"Wat is KoopGarant?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een koopvorm waarbij je met korting koopt, maar bij verkoop de waardeontwikkeling deelt en terugverkoopt aan de corporatie. Reken het scenario door voordat je inschrijft.\"}}]}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Nieuwbouwprojecten\",\"item\":\"https://www.bylder.com/nieuwbouw-project/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"De Suikerzijde (Groningen)\",\"item\":\"https://www.bylder.com/nieuwbouw-project/de-suikerzijde-groningen/\"}]}"
-  ]
+  ],
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image"
  },
  {
   "slug": "duinhil-s-gravenhage",
   "path": "/nieuwbouw-project/duinhil-s-gravenhage/",
-  "title": "Gekocht in Duinhil (Den Haag)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Duinhil? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Duinhil, Den Haag — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Duinhil? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Duinhil, Den Haag — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Duinhil? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HYN4ZDX3W8BEE93ZEW7T1MBM-duinhil\", \"about\": {\"@type\": \"Residence\", \"name\": \"Duinhil\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.06993414, \"longitude\": 4.22217578}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 40}}}",
@@ -166,9 +190,11 @@
  {
   "slug": "edisonpark-zoetermeer",
   "path": "/nieuwbouw-project/edisonpark-zoetermeer/",
-  "title": "Gekocht in Edisonpark (Zoetermeer)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Edisonpark? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Edisonpark, Zoetermeer — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Edisonpark? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Edisonpark, Zoetermeer — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Edisonpark? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/zoetermeer/01JDW68FM3GJ54JS8EQAPHCMAT-edisonpark\", \"about\": {\"@type\": \"Residence\", \"name\": \"Edisonpark\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zoetermeer\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.0616, \"longitude\": 4.518}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 550}}}",
@@ -180,9 +206,11 @@
  {
   "slug": "eve-nieuwbouw-leidschendam-voorburg",
   "path": "/nieuwbouw-project/eve-nieuwbouw-leidschendam-voorburg/",
-  "title": "Gekocht in Eve Nieuwbouw (Leidschendam-Voorburg)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Eve Nieuwbouw? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Eve Nieuwbouw, Leidschendam-Voorburg",
+  "description": "Woning gekocht in Eve Nieuwbouw? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Eve Nieuwbouw, Leidschendam-Voorburg — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Eve Nieuwbouw? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01H9GN7P44YGJTYAFFWBG9MK32-eve-nieuwbouw\", \"about\": {\"@type\": \"Residence\", \"name\": \"Eve Nieuwbouw\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Leidschendam-Voorburg\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.10049146, \"longitude\": 4.41805959}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 64}}}",
@@ -194,9 +222,11 @@
  {
   "slug": "fortunapark-vlaardingen-vlaardingen",
   "path": "/nieuwbouw-project/fortunapark-vlaardingen-vlaardingen/",
-  "title": "Gekocht in Fortunapark Vlaardingen (Vlaardingen)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Fortunapark Vlaardingen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Fortunapark Vlaardingen, Vlaardingen",
+  "description": "Woning gekocht in Fortunapark Vlaardingen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Fortunapark Vlaardingen, Vlaardingen — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Fortunapark Vlaardingen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/vlaardingen/01H963ARJBZMZX9TW974D72EP2-fortunapark-vlaardingen\", \"about\": {\"@type\": \"Residence\", \"name\": \"Fortunapark Vlaardingen\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Vlaardingen\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.91559876, \"longitude\": 4.32826996}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 235}}}",
@@ -208,8 +238,8 @@
  {
   "slug": "haarlemszicht-haarlem",
   "path": "/nieuwbouw-project/haarlemszicht-haarlem/",
-  "title": "Haarlemszicht Haarlem — 28 appartementen, oplevering 2028 | Bylder.com",
-  "description": "Haarlemszicht aan de Papentorenvest in Haarlem: 28 koopappartementen, oplevering medio 2028. Wat je moet uitzoeken over parkeren, de VvE en de bouw van De Koepel naast de deur.",
+  "title": "Haarlemszicht Haarlem — 28 appartementen, oplevering 2028",
+  "description": "Haarlemszicht aan de Papentorenvest in Haarlem: 28 koopappartementen, oplevering medio 2028. Wat je moet uitzoeken over parkeren, de VvE en de bouw van De…",
   "og_type": "article",
   "robots": "index,follow",
   "ldjson": [
@@ -217,14 +247,18 @@
    "{\"@context\":\"https://schema.org\",\"@type\":\"Place\",\"name\":\"Haarlemszicht\",\"description\":\"Nieuwbouwproject van 28 koopappartementen in drie panden aan de Papentorenvest in de Haarlemse Oude Stad, tegenover de voormalige Koepelgevangenis. Individuele lucht-water warmtepomp per woning, oplevering medio 2028.\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Papentorenvest\",\"addressLocality\":\"Haarlem\",\"addressCountry\":\"NL\"},\"url\":\"https://www.bylder.com/nieuwbouw-project/haarlemszicht-haarlem/\"}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Wanneer wordt Haarlemszicht opgeleverd?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De projectsite noemt medio 2028, onder voorbehoud. De sloop staat gepland vanaf september 2026 en de start bouw op november 2026. Woningsites die 2026 als opleverjaar noemen, verwarren dat met het jaar waarin de verkoop start.\"}},{\"@type\":\"Question\",\"name\":\"Hoeveel appartementen heeft Haarlemszicht?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"28 in totaal, verdeeld over drie panden: Papentorenzicht met 8, Koepelzicht met 8 en Molenzicht met 12. In de pre-sale gaat het om de acht woningen van fase 1.\"}},{\"@type\":\"Question\",\"name\":\"Wat kost een appartement in Haarlemszicht?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De indicatieve prijsklasse is €250.000 tot €450.000 vrij op naam. Een prijslijst per bouwnummer is niet openbaar. De oppervlaktes lopen van circa 26 tot 53 m² gebruiksoppervlak.\"}},{\"@type\":\"Question\",\"name\":\"Hoe zit het met parkeren bij Haarlemszicht?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Daarover is niets gepubliceerd; er is wel een gemeenschappelijke fietsenberging. Het is een binnenstadslocatie met betaald parkeren en een parkeerverbodzone in de buurt Burgwal. Vraag expliciet of er parkeerplaatsen bij horen en of je in aanmerking komt voor een parkeervergunning.\"}},{\"@type\":\"Question\",\"name\":\"Heeft Haarlemszicht gasaansluiting?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. Elk appartement krijgt een individuele lucht-water warmtepomp met vloerverwarming en koeling, en je kookt elektrisch op drie fasen.\"}},{\"@type\":\"Question\",\"name\":\"Wordt er in de buurt nog meer gebouwd?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Tegenover het project loopt de herontwikkeling van De Koepel: een parkeergarage vanaf eind 2025, woningbouw vanaf oktober 2027 en de buitenruimte vanaf maart 2029. De oplevering medio 2028 valt midden in die periode.\"}}]}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Nieuwbouwprojecten\",\"item\":\"https://www.bylder.com/nieuwbouw-project/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Haarlemszicht (Haarlem)\",\"item\":\"https://www.bylder.com/nieuwbouw-project/haarlemszicht-haarlem/\"}]}"
-  ]
+  ],
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image"
  },
  {
   "slug": "havenmeester-rijswijk-zh",
   "path": "/nieuwbouw-project/havenmeester-rijswijk-zh/",
-  "title": "Gekocht in Havenmeester (Rijswijk)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Havenmeester? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Havenmeester, Rijswijk — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Havenmeester? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Havenmeester, Rijswijk — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Havenmeester? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K71CFQ1QH04K61C8S87VMSYW-havenmeester\", \"about\": {\"@type\": \"Residence\", \"name\": \"Havenmeester\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijswijk\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.04390219, \"longitude\": 4.33786514}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 53}}}",
@@ -236,9 +270,11 @@
  {
   "slug": "het-zuider-carre-rotterdam",
   "path": "/nieuwbouw-project/het-zuider-carre-rotterdam/",
-  "title": "Gekocht in Het Zuider Carre (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Het Zuider Carre? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Het Zuider Carre, Rotterdam — korting bij woonwinkels",
+  "description": "Woning gekocht in Het Zuider Carre? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Het Zuider Carre, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Het Zuider Carre? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01JC0KT64VFMX12YF3VBXGYKWS-het-zuider-carre\", \"about\": {\"@type\": \"Residence\", \"name\": \"Het Zuider Carre\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.8850486, \"longitude\": 4.50310975}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 72}}}",
@@ -250,9 +286,11 @@
  {
   "slug": "hof-van-rijswijk-de-prins-rijswijk-zh",
   "path": "/nieuwbouw-project/hof-van-rijswijk-de-prins-rijswijk-zh/",
-  "title": "Gekocht in Hof Van Rijswijk De Prins (Rijswijk)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Hof Van Rijswijk De Prins? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Hof Van Rijswijk De Prins, Rijswijk",
+  "description": "Woning gekocht in Hof Van Rijswijk De Prins? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Hof Van Rijswijk De Prins, Rijswijk — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Hof Van Rijswijk De Prins? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K5RFJATC5D9QCDQ5VATMDX2K-hof-van-rijswijk-de-prins\", \"about\": {\"@type\": \"Residence\", \"name\": \"Hof Van Rijswijk De Prins\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijswijk\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.03811828, \"longitude\": 4.31424739}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 298}}}",
@@ -264,9 +302,11 @@
  {
   "slug": "maestro-s-gravenhage",
   "path": "/nieuwbouw-project/maestro-s-gravenhage/",
-  "title": "Gekocht in Maestro (Den Haag)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Maestro? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Maestro, Den Haag — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Maestro? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Maestro, Den Haag — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Maestro? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HJ6FZ8M6QXWASQE84M5PNQ73-maestro\", \"about\": {\"@type\": \"Residence\", \"name\": \"Maestro\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.03910497, \"longitude\": 4.25127983}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 122}}}",
@@ -278,9 +318,11 @@
  {
   "slug": "mix-b-rotterdam",
   "path": "/nieuwbouw-project/mix-b-rotterdam/",
-  "title": "Gekocht in Mix B (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
+  "title": "Mix B, Rotterdam — korting bij woonwinkels | Bylder",
   "description": "Woning gekocht in Mix B? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Mix B, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Mix B? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6VJGDKJGXGBX2ZA0AKZ-mix-b\", \"about\": {\"@type\": \"Residence\", \"name\": \"Mix B\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.94036871, \"longitude\": 4.54529285}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 265}}}",
@@ -292,9 +334,11 @@
  {
   "slug": "monchy-den-haag-s-gravenhage",
   "path": "/nieuwbouw-project/monchy-den-haag-s-gravenhage/",
-  "title": "Gekocht in Monchy Den Haag (Den Haag)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Monchy Den Haag? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Monchy Den Haag, Den Haag — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Monchy Den Haag? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Monchy Den Haag, Den Haag — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Monchy Den Haag? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01KABRH4MWEKYB1H245Y2HKJMY-monchy-den-haag\", \"about\": {\"@type\": \"Residence\", \"name\": \"Monchy Den Haag\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.08941973, \"longitude\": 4.30104824}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 43}}}",
@@ -306,9 +350,11 @@
  {
   "slug": "new-maas-rotterdam",
   "path": "/nieuwbouw-project/new-maas-rotterdam/",
-  "title": "Gekocht in New Maas (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in New Maas? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "New Maas, Rotterdam — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in New Maas? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"New Maas, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in New Maas? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01JWQVCF4HNX5R2N3SEA0XS6AK-new-maas\", \"about\": {\"@type\": \"Residence\", \"name\": \"New Maas\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.90262613, \"longitude\": 4.54820292}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 176}}}",
@@ -320,9 +366,11 @@
  {
   "slug": "nieuw-kralingen-aan-de-boezem-ii-rotterdam",
   "path": "/nieuwbouw-project/nieuw-kralingen-aan-de-boezem-ii-rotterdam/",
-  "title": "Gekocht in Nieuw Kralingen Aan De Boezem Ii (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Nieuw Kralingen Aan De Boezem Ii? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Nieuw Kralingen Aan De Boezem Ii, Rotterdam",
+  "description": "Woning gekocht in Nieuw Kralingen Aan De Boezem Ii? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Nieuw Kralingen Aan De Boezem Ii, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Nieuw Kralingen Aan De Boezem Ii? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS9H0DG7XDE03ZSSP0AB8G6-nieuw-kralingen-aan-de-boezem-ii\", \"about\": {\"@type\": \"Residence\", \"name\": \"Nieuw Kralingen Aan De Boezem Ii\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.93943018, \"longitude\": 4.49706445}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 36}}}",
@@ -334,9 +382,11 @@
  {
   "slug": "nieuw-kralingen-in-de-lanen-i-rotterdam",
   "path": "/nieuwbouw-project/nieuw-kralingen-in-de-lanen-i-rotterdam/",
-  "title": "Gekocht in Nieuw Kralingen In De Lanen I (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Nieuw Kralingen In De Lanen I? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Nieuw Kralingen In De Lanen I, Rotterdam",
+  "description": "Woning gekocht in Nieuw Kralingen In De Lanen I? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Nieuw Kralingen In De Lanen I, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Nieuw Kralingen In De Lanen I? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS7BXY4D7479GWCG16XMXDB-nieuw-kralingen-in-de-lanen-i\", \"about\": {\"@type\": \"Residence\", \"name\": \"Nieuw Kralingen In De Lanen I\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.93943018, \"longitude\": 4.49706445}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 39}}}",
@@ -348,9 +398,11 @@
  {
   "slug": "opdreef-s-gravenhage",
   "path": "/nieuwbouw-project/opdreef-s-gravenhage/",
-  "title": "Gekocht in Opdreef (Den Haag)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Opdreef? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Opdreef, Den Haag — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Opdreef? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Opdreef, Den Haag — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Opdreef? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JRYVHZM1KZV19X63QR5761Q7-opdreef\", \"about\": {\"@type\": \"Residence\", \"name\": \"Opdreef\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Den Haag\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.03362907, \"longitude\": 4.25989069}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 71}}}",
@@ -362,9 +414,11 @@
  {
   "slug": "park-overdeschie-woningen-rotterdam",
   "path": "/nieuwbouw-project/park-overdeschie-woningen-rotterdam/",
-  "title": "Gekocht in Park Overdeschie Woningen (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Park Overdeschie Woningen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Park Overdeschie Woningen, Rotterdam",
+  "description": "Woning gekocht in Park Overdeschie Woningen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Park Overdeschie Woningen, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Park Overdeschie Woningen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01JXHD9J01CP2Y3RG98MXJVZ85-park-overdeschie-woningen\", \"about\": {\"@type\": \"Residence\", \"name\": \"Park Overdeschie Woningen\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.93523149, \"longitude\": 4.42114244}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 16}}}",
@@ -376,9 +430,11 @@
  {
   "slug": "populus-rotterdam",
   "path": "/nieuwbouw-project/populus-rotterdam/",
-  "title": "Gekocht in Populus (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Populus? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Populus, Rotterdam — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Populus? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Populus, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Populus? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01H963AVMW1M8SXF12YZX22PYT-populus\", \"about\": {\"@type\": \"Residence\", \"name\": \"Populus\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.96143658, \"longitude\": 4.54322261}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 200}}}",
@@ -390,9 +446,11 @@
  {
   "slug": "riva-rotterdam",
   "path": "/nieuwbouw-project/riva-rotterdam/",
-  "title": "Gekocht in Riva (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
+  "title": "Riva, Rotterdam — korting bij woonwinkels | Bylder",
   "description": "Woning gekocht in Riva? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Riva, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Riva? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01KTXGYJV3CH373DQ8J9MNK9PP-riva\", \"about\": {\"@type\": \"Residence\", \"name\": \"Riva\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.91649915, \"longitude\": 4.48794353}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 48}}}",
@@ -404,9 +462,11 @@
  {
   "slug": "rotterdam-tree-house-koopappartementen-rotterdam",
   "path": "/nieuwbouw-project/rotterdam-tree-house-koopappartementen-rotterdam/",
-  "title": "Gekocht in Rotterdam Tree House Koopappartementen (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Rotterdam Tree House Koopappartementen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Rotterdam Tree House Koopappartementen, Rotterdam",
+  "description": "Woning gekocht in Rotterdam Tree House Koopappartementen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Rotterdam Tree House Koopappartementen, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Rotterdam Tree House Koopappartementen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01JNGMQ8D3ECME3N3SCKHE0TVZ-rotterdam-tree-house-koopappartementen\", \"about\": {\"@type\": \"Residence\", \"name\": \"Rotterdam Tree House Koopappartementen\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.92461492, \"longitude\": 4.47111636}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 127}}}",
@@ -418,9 +478,11 @@
  {
   "slug": "soeterdael-zoetermeer",
   "path": "/nieuwbouw-project/soeterdael-zoetermeer/",
-  "title": "Gekocht in Soeterdael (Zoetermeer)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Soeterdael? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Soeterdael, Zoetermeer — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Soeterdael? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Soeterdael, Zoetermeer — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Soeterdael? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/zoetermeer/01HE2ZXNZ7PW9WKKR0AW4NADV3-soeterdael\", \"about\": {\"@type\": \"Residence\", \"name\": \"Soeterdael\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zoetermeer\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.0564, \"longitude\": 4.4911}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 29}}}",
@@ -432,9 +494,11 @@
  {
   "slug": "stockholm-nissewaard",
   "path": "/nieuwbouw-project/stockholm-nissewaard/",
-  "title": "Gekocht in Stockholm (Nissewaard)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Stockholm? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Stockholm, Nissewaard — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Stockholm? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Stockholm, Nissewaard — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Stockholm? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/nissewaard/01KCS197QDBTVJKCMGWQFZVZHA-stockholm\", \"about\": {\"@type\": \"Residence\", \"name\": \"Stockholm\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Nissewaard\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.85023849, \"longitude\": 4.34579851}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 155}}}",
@@ -446,9 +510,11 @@
  {
   "slug": "terrazza-westland",
   "path": "/nieuwbouw-project/terrazza-westland/",
-  "title": "Gekocht in Terrazza (Westland)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Terrazza? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Terrazza, Westland — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Terrazza? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Terrazza, Westland — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Terrazza? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/westland/01KQSRXA8DTN37Z4F6D5ERK9XC-terrazza\", \"about\": {\"@type\": \"Residence\", \"name\": \"Terrazza\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Westland\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.99808551, \"longitude\": 4.18381263}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 68}}}",
@@ -460,9 +526,11 @@
  {
   "slug": "timber-rotterdam",
   "path": "/nieuwbouw-project/timber-rotterdam/",
-  "title": "Gekocht in Timber (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
+  "title": "Timber, Rotterdam — korting bij woonwinkels | Bylder",
   "description": "Woning gekocht in Timber? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Timber, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Timber? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5HBPJZ1TGSD1ZXKPGWKRT6-timber\", \"about\": {\"@type\": \"Residence\", \"name\": \"Timber\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.886834, \"longitude\": 4.497806}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 38}}}",
@@ -474,9 +542,11 @@
  {
   "slug": "vlietpark-fase-2-rotterdam",
   "path": "/nieuwbouw-project/vlietpark-fase-2-rotterdam/",
-  "title": "Gekocht in Vlietpark Fase 2 (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Vlietpark Fase 2? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Vlietpark Fase 2, Rotterdam — korting bij woonwinkels",
+  "description": "Woning gekocht in Vlietpark Fase 2? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Vlietpark Fase 2, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Vlietpark Fase 2? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6QKKB5Z7NT764HS98DWBKZ-vlietpark-fase-2\", \"about\": {\"@type\": \"Residence\", \"name\": \"Vlietpark Fase 2\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.8602028, \"longitude\": 4.3565922}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 26}}}",
@@ -488,8 +558,8 @@
  {
   "slug": "volharding-marum",
   "path": "/nieuwbouw-project/volharding-marum/",
-  "title": "Volharding Marum — gekocht? Fases, meerwerk & oplevering | Bylder.com",
-  "description": "Koop of woon je in Volharding in Marum? Fase 2 in pre-sale, de starterslening-grens van €355.000 inclusief meerwerk, betonnen binnenwanden en oplevering Q4 2027.",
+  "title": "Volharding Marum — gekocht? Fases, meerwerk & oplevering",
+  "description": "Koop of woon je in Volharding in Marum? Fase 2 in pre-sale, de starterslening-grens van €355.000 inclusief meerwerk, betonnen binnenwanden en oplevering…",
   "og_type": "article",
   "robots": "index,follow",
   "ldjson": [
@@ -497,14 +567,18 @@
    "{\"@context\":\"https://schema.org\",\"@type\":\"Place\",\"name\":\"Volharding Marum\",\"description\":\"Nieuwbouwplan van 115 koopwoningen in Marum (gemeente Westerkwartier) op de voormalige timmerfabriek- en Synwood-locatie aan de Kruisweg. Ontwikkeld en gebouwd door Van Wijnen. Gasloos en all-electric met warmtepomp.\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Marum\",\"addressCountry\":\"NL\"},\"url\":\"https://www.bylder.com/nieuwbouw-project/volharding-marum/\"}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Wanneer worden de woningen in Volharding Marum opgeleverd?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor fase 1 staat de start bouw op Q2 2027 en de oplevering op Q4 2027, volgens opgave van de verkopend makelaar. De bouw begint pas als de opschortende voorwaarden vervallen, waaronder 70% verkocht en bouwrijpe grond.\"}},{\"@type\":\"Question\",\"name\":\"Is er nog aanbod in Volharding?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Fase 1 (31 woningen) is sinds de verkoopstart op 27 mei 2026 grotendeels toegewezen. Fase 2 met veertien levensloopbestendige woningen zit in de pre-sale: prijzen worden op 13 augustus 2026 bekendgemaakt.\"}},{\"@type\":\"Question\",\"name\":\"Wat kost een woning in Volharding Marum?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"In fase 1 lagen de prijzen tussen €309.500 voor een rijwoning van 87 m² en €449.500 voor een twee-onder-een-kap van 122 m², vrij op naam. Keuken, tuinaanleg en bestrating zitten daar niet in.\"}},{\"@type\":\"Question\",\"name\":\"Heeft Volharding Marum gasaansluiting?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. De woningen zijn volledig gasloos en all-electric: warmtepomp met vloerverwarming op de begane grond en de verdieping, en een voorlopig energielabel A+++.\"}},{\"@type\":\"Question\",\"name\":\"Kom ik in aanmerking voor de starterslening in Westerkwartier?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De gemeente biedt maximaal €35.000 bij een koopprijs tot €355.000 inclusief meerwerk. In fase 1 vielen alleen de kleinste rijwoningen onder die grens, met beperkte ruimte voor opties.\"}},{\"@type\":\"Question\",\"name\":\"Wat stond er eerder op deze plek?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Timmerfabriek Volharding, in 1918 opgericht en later voortgezet als houtbedrijf Synwood. Het bestemmingsplan vermeldt ernstige bodemverontreiniging; er is een saneringsplan opgesteld.\"}}]}",
    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Bylder.com\",\"item\":\"https://www.bylder.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Nieuwbouwprojecten\",\"item\":\"https://www.bylder.com/nieuwbouw-project/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Volharding (Marum)\",\"item\":\"https://www.bylder.com/nieuwbouw-project/volharding-marum/\"}]}"
-  ]
+  ],
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image"
  },
  {
   "slug": "waelhoven-fase-1-westland",
   "path": "/nieuwbouw-project/waelhoven-fase-1-westland/",
-  "title": "Gekocht in Waelhoven Fase 1 (Westland)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Waelhoven Fase 1? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Waelhoven Fase 1, Westland — korting bij woonwinkels",
+  "description": "Woning gekocht in Waelhoven Fase 1? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan…",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Waelhoven Fase 1, Westland — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Waelhoven Fase 1? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/westland/01JSPFNR7QYRN6AMD580ZM0ZA5-waelhoven-fase-1\", \"about\": {\"@type\": \"Residence\", \"name\": \"Waelhoven Fase 1\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Westland\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.00017976, \"longitude\": 4.18076269}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 55}}}",
@@ -516,9 +590,11 @@
  {
   "slug": "weder-rotterdam",
   "path": "/nieuwbouw-project/weder-rotterdam/",
-  "title": "Gekocht in Weder (Rotterdam)? Korting bij woonwinkels in de buurt | Bylder",
+  "title": "Weder, Rotterdam — korting bij woonwinkels | Bylder",
   "description": "Woning gekocht in Weder? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Weder, Rotterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Weder? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rotterdam/01JSPHCMW8C9EN4PDHGHGE5BSJ-weder\", \"about\": {\"@type\": \"Residence\", \"name\": \"Weder\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rotterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.92370265, \"longitude\": 4.49560306}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 57}}}",
@@ -530,9 +606,11 @@
  {
   "slug": "west-vlaardingen",
   "path": "/nieuwbouw-project/west-vlaardingen/",
-  "title": "Gekocht in West (Vlaardingen)? Korting bij woonwinkels in de buurt | Bylder",
+  "title": "West, Vlaardingen — korting bij woonwinkels | Bylder",
   "description": "Woning gekocht in West? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"West, Vlaardingen — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in West? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/vlaardingen/01K83007FZXMWT8FQTGNSAX8WM-west\", \"about\": {\"@type\": \"Residence\", \"name\": \"West\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Vlaardingen\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.91062145, \"longitude\": 4.31571464}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 70}}}",
@@ -544,9 +622,11 @@
  {
   "slug": "zwanenpark-vlaardingen",
   "path": "/nieuwbouw-project/zwanenpark-vlaardingen/",
-  "title": "Gekocht in Zwanenpark (Vlaardingen)? Korting bij woonwinkels in de buurt | Bylder",
-  "description": "Woning gekocht in Zwanenpark? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "title": "Zwanenpark, Vlaardingen — korting bij woonwinkels | Bylder",
+  "description": "Woning gekocht in Zwanenpark? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen.",
   "og_type": "article",
+  "og_image": "https://www.bylder.com/og/nieuwbouw-gemeente.jpg",
+  "twitter_card": "summary_large_image",
   "robots": "index,follow",
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Zwanenpark, Vlaardingen — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Zwanenpark? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/vlaardingen/01JXF3FG3448DHSBTGMGV1C2G7-zwanenpark-fase-1\", \"about\": {\"@type\": \"Residence\", \"name\": \"Zwanenpark\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Vlaardingen\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.9258216, \"longitude\": 4.35689526}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 450}}}",
