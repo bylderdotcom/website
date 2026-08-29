@@ -87,6 +87,22 @@ const MENUS: Menu[] = [
     ],
   },
   {
+    label: 'Advies',
+    items: [
+      { href: '/kopersbegeleiding-nieuwbouw/', title: 'Woningregisseur',
+        sub: 'Eén plan voor verbouwen, afwerken en inrichten — gratis', primair: true },
+      { href: '/kopersbegeleiding-nieuwbouw/#ai-kopersbegeleider', title: 'AI Kopersbegeleider',
+        sub: 'Direct antwoord op je meerwerk- en keuzevragen, 24/7', primair: true },
+      { href: '/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/', title: 'Meerwerklijst controleren' },
+      { href: '/kopersbegeleiding/sluitingsdata-meerwerk-deadlines/', title: 'Sluitingsdata & deadlines' },
+      { href: '/kopersbegeleiding/bouwkundig-meerwerk-indeling/', title: 'Bouwkundig & indeling' },
+      { href: '/kopersbegeleiding/elektra-lichtplan-nieuwbouw/', title: 'Elektra & lichtplan' },
+      { href: '/kopersbegeleiding/keuken-badkamer-casco-opleveren/', title: 'Keuken & badkamer casco' },
+      { href: '/kopersbegeleiding/klimaat-vloerkoeling-nieuwbouw/', title: 'Klimaat & vloerkoeling' },
+      { href: '/kopersbegeleiding/onafhankelijke-kopersbegeleider-bouwkundig/', title: 'Onafhankelijke kopersbegeleider' },
+    ],
+  },
+  {
     label: 'Zakelijk',
     items: [
       { href: '/inkoopvoordeel/', title: 'Inkoopvoordeel voor vakbedrijven',
