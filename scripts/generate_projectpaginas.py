@@ -27,6 +27,7 @@ hetzelfde project.
 Gebruik:
     python3 scripts/generate_projectpaginas.py            # alle projecten die de poort halen
     python3 scripts/generate_projectpaginas.py --regio    # alleen de Rotterdamse straal
+    python3 scripts/generate_projectpaginas.py --pilot    # alleen de pilotring (golf B)
     python3 scripts/generate_projectpaginas.py --min 100  # andere ondergrens
     python3 scripts/generate_projectpaginas.py --dry      # niets wegschrijven
 """
@@ -48,6 +49,9 @@ NL_MAAND = ("januari februari maart april mei juni juli augustus september oktob
 
 DRY = "--dry" in sys.argv
 ALLEEN_REGIO = "--regio" in sys.argv
+# Golf B van het marktplein-model: alleen de pilotring rond Baarn, waar de
+# woningregisseur fysiek langs kan (zie PILOT verderop).
+ALLEEN_PILOT = "--pilot" in sys.argv
 MIN_WONINGEN = 50
 for i, a in enumerate(sys.argv):
     if a == "--min" and i + 1 < len(sys.argv):
@@ -487,10 +491,75 @@ def auping_blok(p, naam_project, slug):
 een overnachting voor twee vanaf &euro;6.500. Niet stapelbaar met een lopende sale. Je
 verzilvert hem in de winkel met je persoonlijke code.</p>
 <p><a class="cta-primary" href="{link}">{knop}</a></p>
-<p class="noot">Deze vier winkels zijn eigendom van de oprichter van Bylder. Wij noemen dat,
-omdat plaatsing op deze site niet te koop is &mdash; en die regel is alleen wat waard als hij
-ook geldt wanneer het ons eigen belang raakt. De korting weegt niet mee in welke bedrijven wij
-hierboven noemen; die lijst komt uit afstand, type en beoordelingen.</p>"""
+<p class="noot">Auping is aangesloten partner van Bylder. De korting weegt niet mee in welke
+bedrijven wij hierboven noemen; die lijst komt uit afstand, type en beoordelingen.</p>"""
+
+
+# --- de woningregisseur -----------------------------------------------------
+# Golf B van het marktplein-model: op een afgebakende ring rond Baarn staat een
+# mens op de pagina in plaats van alleen een formulier. Eén persoon die meerwerk,
+# afwerking en inrichting in samenhang regelt — de rol die kopers nu bij drie
+# partijen los moeten inkopen.
+#
+# WAAROM MAAR EEN HANDVOL PLAATSEN. Dit blok belooft dat iemand langskomt. Die
+# belofte is alleen waar binnen rijafstand, en een pagina die iets toezegt wat
+# niet gebeurt kost meer vertrouwen dan de sectie oplevert — dezelfde afweging
+# als bij de Kluskist hierboven. Uitbreiden = deze set uitbreiden, verder niets.
+#
+# WAAROM "WONINGREGISSEUR" EN GEEN BESTAANDE TITEL. "Interieurarchitect" is een
+# beschermde titel (Wet op de architectentitel, architectenregister) en mag hier
+# dus niet staan. "Kopersbegeleider" is de term van de bouwer zelf, en juist
+# daarvan is dit de onafhankelijke tegenhanger. "Binnenhuisarchitect" dekt alleen
+# het inrichten. Regie over alle drie de fases is wat er feitelijk gebeurt.
+PILOT = {
+    "amsterdam": "Amsterdam", "aalsmeer": "Aalsmeer", "zaanstad": "Zaanstad",
+    "haarlemmermeer": "Haarlemmermeer", "utrecht": "Utrecht", "zeist": "Zeist",
+}
+# Waar het blok verschijnt is iets anders dan welke projecten een pagina krijgen.
+# PILOT bepaalt de selectie van --pilot; REGISSEUR_GEBIED bepaalt of het blok op
+# een pagina komt. Die twee gelijkstellen zou in Rotterdam en Den Haag tientallen
+# nieuwe pagina's opleveren die niemand vroeg — daar staan de pagina's al.
+REGISSEUR_GEBIED = set(PILOT) | ns.KERN | ns.RING
+# Ondergrens binnen de pilotring: lager dan de landelijke poort, want hier telt
+# rijafstand zwaarder dan cohortgrootte. Eikenstein Zeist (36) hoort erbij.
+PILOT_POORT = 25
+
+
+def regisseur_blok(p, naam_project, slug, opl_tekst):
+    """Daniel als woningregisseur op de pilotpagina's. Bewust één naam en geen
+    'ons team': het is één persoon, en dat is precies het aanbod. De koper die
+    hierop reageert levert het marktonderzoek waar de rest van het model op
+    wacht — welke keuzes lopen echt vast, en waar loopt een koper klem.
+
+    Het traject is gratis (besluit 29 aug). Dat verplaatst de disclosure: bij een
+    betaald advies is 'wij verdienen niet aan je aankoop' het argument, bij een
+    gratis advies is het omgekeerde waar en moet de pagina zeggen dat Bylder aan
+    de aangesloten bedrijven verdient. Gratis advies dat dat verzwijgt is verkapte
+    verkoop; met het belang erbij is het een aanbod dat de koper kan wegen."""
+    plaats = netjes(p["plaats"])
+    link = (f"https://app.bylder.com/registreer?utm_source=bylder-site"
+            f"&amp;utm_medium=projectpagina&amp;utm_campaign=woningregisseur"
+            f"&amp;utm_content=project-{slug}")
+    return f"""<h2>Een woningregisseur voor {E(naam_project)}</h2>
+<p>Na het tekenen loopt alles door elkaar: de meerwerklijst sluit terwijl je nog aan het
+rekenen bent, de aannemer wil een keuze die pas over een jaar zichtbaar wordt, en de
+inrichting koop je op een moment dat de maten nog niet vaststaan. Wie dat los inkoopt komt
+uit bij drie partijen die elkaars werk niet zien.</p>
+<p>Een woningregisseur doet die drie in samenhang: <strong>verbouwen, afwerken,
+inrichten</strong> &mdash; welk meerwerk je laat staan omdat het later goedkoper kan, welke
+afwerking v&oacute;&oacute;r oplevering moet, en welke aankopen kunnen wachten tot de maten
+kloppen. In &eacute;&eacute;n plan, met &eacute;&eacute;n aanspreekpunt.</p>
+<p>Voor kopers in {E(naam_project)} doet <strong>Daniel Paaij</strong> dit zelf, aan de
+keukentafel in {E(plaats)}. Hij is de oprichter van Bylder en houdt deze gesprekken bewust
+zelf: de koper krijgt er een plan uit, en wij zien waar het in de praktijk vastloopt. Met een
+oplevering {E(opl_tekst)} vallen de keuzes nu.</p>
+<p>Het gesprek en het plan zijn <strong>gratis</strong>. Geen uurtarief, geen offerte achteraf.</p>
+<p><a class="cta-primary" href="{link}">Plan een gesprek over {E(naam_project)}</a></p>
+<p class="noot">Waarom dit gratis kan: Bylder verdient aan de bedrijven en winkels die zich bij
+ons aansluiten, niet aan jou. Dat is ook meteen het belang dat je moet kennen &mdash; wij hebben
+er baat bij als je bij een aangesloten partij koopt. Daarom staat op deze pagina wie dat zijn,
+en daarom komt het advies met de vraag erbij of het ook zonder ons goedkoper kan. Je zit
+nergens aan vast: geen contract, geen verplichte offerte, en je dossier blijft van jou.</p>"""
 
 
 def lokale_winkels(wk, p, straal=15, n=6):
@@ -696,6 +765,11 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     faq_html = "<h2>Veelgestelde vragen over " + E(naam) + "</h2>" + "".join(
         f"<h3>{E(q)}</h3><p>{E(ant)}</p>" for q, ant in faq_items)
 
+    # Direct na de keuzemomenten: daar staat wát er beslist moet worden, hier
+    # staat wie het samen met je doet. Vóór de bedrijvenlijsten, want dit is de
+    # regie over die lijsten en niet nog een aanbieder erin.
+    reg_html = regisseur_blok(p, E(naam), slug, opl_tekst) if plaats_ruw in REGISSEUR_GEBIED else ""
+
     aup_html = auping_blok(p, E(naam), slug)
     wnk = lokale_winkels(wk, p)
     wnk_html = ""
@@ -765,6 +839,8 @@ je eigen <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is
 <div class="card">
 <p>Zet je opleverdatum in je dossier, dan rekenen wij deze momenten terug naar jouw bouwnummer.</p>
 <p><a class="cta-primary" href="{app}">Zet je opleverdatum erin</a></p></div>
+
+{reg_html}
 
 {lok_html}
 {wnk_html}
@@ -948,23 +1024,56 @@ def main():
         json.dump(sorted(handgeschreven), open(HANDWERK, "w", encoding="utf8"), indent=1)
 
     prio = ns.KERN | ns.RING
+    if ALLEEN_PILOT:
+        prio = set(PILOT)
     def poort(p):
         # Waar een Auping Store staat willen we hoe dan ook gevonden worden, dus
         # daar mag een kleiner project ook een pagina krijgen. Op 4 aug van 50 naar
         # 25; op 5 aug naar 10, omdat Leidschendam met één project te dun was —
         # De Pauwentuin (22 woningen) hoort er gewoon bij. Onder de 10 wordt het
         # een pagina zonder publiek.
-        return 10 if p["plaats"] in AUPING else MIN_WONINGEN
+        if p["plaats"] in AUPING:
+            return 10
+        # Binnen de pilotring telt rijafstand zwaarder dan cohortgrootte: daar is
+        # een kleiner project juist bruikbaar, want de regisseur kan er langs.
+        if p["plaats"] in PILOT:
+            return PILOT_POORT
+        return MIN_WONINGEN
 
     kandidaten = [p for p in projecten
                   if (p.get("woningen") or 0) >= poort(p)
-                  and (not ALLEEN_REGIO or p["plaats"] in prio)]
+                  and (not (ALLEEN_REGIO or ALLEEN_PILOT) or p["plaats"] in prio)]
+
+    # In de pilotring telt bovendien het moment. Het regisseur-blok zegt "de keuzes
+    # vallen nu"; op een project dat in 2029 oplevert is dat niet waar, en 42
+    # pagina's in zes plaatsen delen bovendien zo veel tekst dat de uniciteit onder
+    # de 35% zakt waarop de vakbedrijf-profielen op 31 juli uit de index gingen.
+    # Vandaar: alleen projecten met een eigen opgegeven opleverjaar binnen twee
+    # jaar. Dat is een selectie op wat we wéten, niet op wat we schatten.
+    #
+    # 'zwak trefwoord (ONBETROUWBAAR)' en projecten zonder enige datum vallen af:
+    # daar weten we het moment niet en kan het blok zijn belofte niet waarmaken.
+    # De kwartaalnotatie is onzeker maar wél een uitspraak van het project zelf,
+    # en de pagina zegt er in het opleverblok bij dat het een bandbreedte is.
+    if ALLEEN_PILOT:
+        BRON_OK = {"oplevertrefwoord", "kwartaalnotatie (onzeker)"}
+        kandidaten = [p for p in kandidaten
+                      if p.get("oplevering_bron") in BRON_OK
+                      and str(p.get("oplevering", ""))[:4].isdigit()
+                      and VANDAAG.year <= int(str(p["oplevering"])[:4]) <= VANDAAG.year + 1]
 
     # Niemand zoekt "zwanenpark fase 2" — men zoekt "zwanenpark vlaardingen".
     # Drie bijna-identieke fase-URL's verdringen elkaar; één pagina met de fases
     # als rijen wint. De oude fase-adressen krijgen een 301 in vercel.json.
     def fasebasis(n):
-        b = re.sub(r"\s*[-–]?\s*fase\s*\d+\w*\s*$", "", n, flags=re.I).strip()
+        # Sommige projectnamen dragen achter het fasenummer nog een telling mee
+        # ("Eikenstein Fase 3 36 Woningen", "Eikenstein Fase 2 29 Appartementen
+        # Bosvilla"). Die staarten verschillen per fase, dus zonder ze eerst weg
+        # te halen groepeert de fase-regex hieronder niets en krijgt hetzelfde
+        # project twee bijna-identieke pagina's in dezelfde plaats — precies het
+        # onderlinge verdringen dat deze samenvoeging moet voorkomen.
+        b = re.sub(r"\s+\d+\s+(woning|appartement|huis|huizen|kavel)\w*\b.*$", "", n, flags=re.I)
+        b = re.sub(r"\s*[-–]?\s*fase\s*\d+\w*\s*$", "", b, flags=re.I).strip()
         return b if len(b) > 3 else n
 
     groepen = collections.defaultdict(list)
@@ -989,7 +1098,8 @@ def main():
     kandidaten = samengevoegd
 
     print(f"{len(projecten)} projecten · poort >= {MIN_WONINGEN} woningen"
-          f"{' · alleen Rotterdamse straal' if ALLEEN_REGIO else ''} → {len(kandidaten)} kandidaten")
+          f"{' · alleen Rotterdamse straal' if ALLEEN_REGIO else ''}"
+          f"{' · alleen pilotring (golf B)' if ALLEEN_PILOT else ''} → {len(kandidaten)} kandidaten")
     gem_tel = collections.Counter(q["plaats"] for q in kandidaten)
     print(f"ontologie: {len(ruimtes)} ruimtes, "
           f"{sum(len(r['beslissingen']) for r in ruimtes)} beslissingen\n")
@@ -1039,8 +1149,16 @@ def main():
         # De handgeschreven pagina's (De Suikerzijde, CondorPark, ...) stonden niet
         # in de hub terwijl het de beste van het cluster zijn; ze hingen alleen aan
         # de sitemap. Hier alsnog erbij, met hun eigen plaats.
+        # ...en bij een deelronde (--regio, --pilot) ook de pagina's die deze ronde
+        # niet aanraakte. Zonder dit schrijft een pilotronde een hub met alleen de
+        # tien nieuwe projecten erin en verdwijnen de 34 bestaande uit de enige
+        # plek die naar ze linkt. Een volle ronde merkt hier niets van: die heeft
+        # elke gegenereerde pagina al in hub_rijen staan.
+        al_in_hub = {r["path"] for r in hub_rijen}
         for x in pages:
-            if x["slug"] in handgeschreven and "noindex" not in (x.get("robots") or ""):
+            if (x["slug"] not in ("index", "oplevermonitor")
+                    and x["path"] not in al_in_hub
+                    and "noindex" not in (x.get("robots") or "")):
                 pl = x.get("title", "").split("(")[-1].split(")")[0] if "(" in x.get("title", "") else ""
                 hub_rijen.append({"path": x["path"],
                                   "_naam": x["title"].split(",")[0].split("(")[0].strip(),

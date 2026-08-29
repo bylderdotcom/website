@@ -3,7 +3,7 @@
   "slug": "index",
   "path": "/nieuwbouw-project/",
   "title": "Nieuwbouwprojecten: advies per project | Bylder.com",
-  "description": "Wij volgen 976 nieuwbouwprojecten in Nederland. Voor 38 staat uitgewerkt welke keuzes een koper na het tekenen maakt, wanneer ze sluiten en wat ze kosten.",
+  "description": "Wij volgen 976 nieuwbouwprojecten in Nederland. Voor 48 staat uitgewerkt welke keuzes een koper na het tekenen maakt, wanneer ze sluiten en wat ze kosten.",
   "og_type": "website",
   "robots": "index,follow",
   "ldjson": [
@@ -20,6 +20,20 @@
   "ldjson": [
    "{\"@context\": \"https://schema.org\", \"@type\": \"Dataset\", \"name\": \"Nieuwbouw-oplevermonitor Nederland\", \"description\": \"Hoeveel nieuwbouwwoningen staan er in Nederland in verkoop? Bylder volgt 976 projecten, samen minstens 38.957 woningen. Per gemeente, per opleverjaar, met de telmethode erbij.\", \"url\": \"https://www.bylder.com/nieuwbouw-project/oplevermonitor/\", \"dateModified\": \"2026-08-06\", \"temporalCoverage\": \"2026/..\", \"spatialCoverage\": {\"@type\": \"Country\", \"name\": \"Nederland\"}, \"creator\": {\"@type\": \"Organization\", \"name\": \"Bylder Nederland B.V.\", \"url\": \"https://www.bylder.com/\"}, \"variableMeasured\": [{\"@type\": \"PropertyValue\", \"name\": \"Projecten in verkoop\", \"value\": 976}, {\"@type\": \"PropertyValue\", \"name\": \"Woningen (ondergrens)\", \"value\": 38957}], \"isBasedOn\": \"https://nieuwbouw.nl/\", \"license\": \"https://www.bylder.com/algemene-voorwaarden/\"}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Oplevermonitor\", \"item\": \"https://www.bylder.com/nieuwbouw-project/oplevermonitor/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "bajeskwartier-the-martin-amsterdam",
+  "path": "/nieuwbouw-project/bajeskwartier-the-martin-amsterdam/",
+  "title": "Gekocht in Bajeskwartier The Martin (Amsterdam)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Bajeskwartier The Martin? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Bajeskwartier The Martin, Amsterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Bajeskwartier The Martin? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963AQXG8E2PEC5KWJ87KNCJ-bajeskwartier-the-martin\", \"about\": {\"@type\": \"Residence\", \"name\": \"Bajeskwartier The Martin\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.3387192, \"longitude\": 4.92460323}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 103}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Bajeskwartier The Martin opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2026, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Bajeskwartier The Martin\", \"item\": \"https://www.bylder.com/nieuwbouw-project/bajeskwartier-the-martin-amsterdam/\"}]}"
   ],
   "content_kind": null
  },
@@ -178,6 +192,34 @@
   "content_kind": null
  },
  {
+  "slug": "eikenstein-zeist",
+  "path": "/nieuwbouw-project/eikenstein-zeist/",
+  "title": "Gekocht in Eikenstein (Zeist)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Eikenstein? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Eikenstein, Zeist — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Eikenstein? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/zeist/01K10PD7S895CE8M6N5CCA1Z3S-eikenstein-fase-3-36-woningen\", \"about\": {\"@type\": \"Residence\", \"name\": \"Eikenstein\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zeist\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.09591277, \"longitude\": 5.22047057}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 65}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Eikenstein opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2026, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Eikenstein\", \"item\": \"https://www.bylder.com/nieuwbouw-project/eikenstein-zeist/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "eilanden-van-hain-zaanstad",
+  "path": "/nieuwbouw-project/eilanden-van-hain-zaanstad/",
+  "title": "Gekocht in Eilanden Van Hain (Zaanstad)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Eilanden Van Hain? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Eilanden Van Hain, Zaanstad — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Eilanden Van Hain? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/zaanstad/01H963AFWG3VTM4F77GYHMYZGF-eilanden-van-hain\", \"about\": {\"@type\": \"Residence\", \"name\": \"Eilanden Van Hain\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zaanstad\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.5040308, \"longitude\": 4.74685052}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 235}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Eilanden Van Hain opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2027, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Eilanden Van Hain\", \"item\": \"https://www.bylder.com/nieuwbouw-project/eilanden-van-hain-zaanstad/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
   "slug": "eve-nieuwbouw-leidschendam-voorburg",
   "path": "/nieuwbouw-project/eve-nieuwbouw-leidschendam-voorburg/",
   "title": "Gekocht in Eve Nieuwbouw (Leidschendam-Voorburg)? Korting bij woonwinkels in de buurt | Bylder",
@@ -248,6 +290,20 @@
   "content_kind": null
  },
  {
+  "slug": "hoeksenes-amsterdam",
+  "path": "/nieuwbouw-project/hoeksenes-amsterdam/",
+  "title": "Gekocht in Hoeksenes (Amsterdam)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Hoeksenes? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Hoeksenes, Amsterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Hoeksenes? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/amsterdam/01KPDE48RKC9ER2MGEGFE5V50C-hoeksenes\", \"about\": {\"@type\": \"Residence\", \"name\": \"Hoeksenes\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.35973556, \"longitude\": 4.79857074}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 50}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Hoeksenes opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2026, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Hoeksenes\", \"item\": \"https://www.bylder.com/nieuwbouw-project/hoeksenes-amsterdam/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
   "slug": "hof-van-rijswijk-de-prins-rijswijk-zh",
   "path": "/nieuwbouw-project/hof-van-rijswijk-de-prins-rijswijk-zh/",
   "title": "Gekocht in Hof Van Rijswijk De Prins (Rijswijk)? Korting bij woonwinkels in de buurt | Bylder",
@@ -258,6 +314,34 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Hof Van Rijswijk De Prins, Rijswijk — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Hof Van Rijswijk De Prins? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K5RFJATC5D9QCDQ5VATMDX2K-hof-van-rijswijk-de-prins\", \"about\": {\"@type\": \"Residence\", \"name\": \"Hof Van Rijswijk De Prins\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Rijswijk\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.03811828, \"longitude\": 4.31424739}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 298}}}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Hof Van Rijswijk De Prins opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2027, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Hof Van Rijswijk De Prins\", \"item\": \"https://www.bylder.com/nieuwbouw-project/hof-van-rijswijk-de-prins-rijswijk-zh/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "le-jardin-hoofddorp-haarlemmermeer",
+  "path": "/nieuwbouw-project/le-jardin-hoofddorp-haarlemmermeer/",
+  "title": "Gekocht in Le Jardin Hoofddorp (Haarlemmermeer)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Le Jardin Hoofddorp? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Le Jardin Hoofddorp, Haarlemmermeer — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Le Jardin Hoofddorp? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AH9GV6ENFN790269R4FB-le-jardin-hoofddorp\", \"about\": {\"@type\": \"Residence\", \"name\": \"Le Jardin Hoofddorp\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Haarlemmermeer\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.30038625, \"longitude\": 4.70428348}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 57}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Le Jardin Hoofddorp opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2026, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Le Jardin Hoofddorp\", \"item\": \"https://www.bylder.com/nieuwbouw-project/le-jardin-hoofddorp-haarlemmermeer/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "leeuwepoort-herenhuizen-en-stadswoningen-utrecht",
+  "path": "/nieuwbouw-project/leeuwepoort-herenhuizen-en-stadswoningen-utrecht/",
+  "title": "Gekocht in Leeuwepoort Herenhuizen En Stadswoningen (Utrecht)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Leeuwepoort Herenhuizen En Stadswoningen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Leeuwepoort Herenhuizen En Stadswoningen, Utrecht — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Leeuwepoort Herenhuizen En Stadswoningen? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/utrecht/01KNKDJAT4JV1DJHBJN6HCFDAG-leeuwepoort-herenhuizen-en-stadswoningen\", \"about\": {\"@type\": \"Residence\", \"name\": \"Leeuwepoort Herenhuizen En Stadswoningen\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Utrecht\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.0930068, \"longitude\": 5.07432427}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 58}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Leeuwepoort Herenhuizen En Stadswoningen opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2026, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Leeuwepoort Herenhuizen En Stadswoningen\", \"item\": \"https://www.bylder.com/nieuwbouw-project/leeuwepoort-herenhuizen-en-stadswoningen-utrecht/\"}]}"
   ],
   "content_kind": null
  },
@@ -538,6 +622,62 @@
    "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"West, Vlaardingen — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in West? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-06\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/vlaardingen/01K83007FZXMWT8FQTGNSAX8WM-west\", \"about\": {\"@type\": \"Residence\", \"name\": \"West\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Vlaardingen\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 51.91062145, \"longitude\": 4.31571464}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 70}}}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt West opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering tussen 2027 en 2029, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
    "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"West\", \"item\": \"https://www.bylder.com/nieuwbouw-project/west-vlaardingen/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "westeinderhage-fase-1-aalsmeer",
+  "path": "/nieuwbouw-project/westeinderhage-fase-1-aalsmeer/",
+  "title": "Gekocht in Westeinderhage Fase 1 (Aalsmeer)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Westeinderhage Fase 1? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Westeinderhage Fase 1, Aalsmeer — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Westeinderhage Fase 1? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/aalsmeer/01KMMN3112FDVFDXDA4R25K71P-westeinderhage-fase-1\", \"about\": {\"@type\": \"Residence\", \"name\": \"Westeinderhage Fase 1\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Aalsmeer\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.23363146, \"longitude\": 4.74373369}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 104}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Westeinderhage Fase 1 opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2026, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Westeinderhage Fase 1\", \"item\": \"https://www.bylder.com/nieuwbouw-project/westeinderhage-fase-1-aalsmeer/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "willow-amsterdam",
+  "path": "/nieuwbouw-project/willow-amsterdam/",
+  "title": "Gekocht in Willow (Amsterdam)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Willow? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Willow, Amsterdam — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Willow? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/amsterdam/01KM35FAF1YQ64MJ1XY8E15R44-willow\", \"about\": {\"@type\": \"Residence\", \"name\": \"Willow\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Amsterdam\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.35690039, \"longitude\": 4.80692973}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 45}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Willow opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het project noemt zelf 2026 als opleverjaar. Wij meten elke twee weken de verkoopstand en de bouwstatus in het Kadaster.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Willow\", \"item\": \"https://www.bylder.com/nieuwbouw-project/willow-amsterdam/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "wonen-in-hilko-zaandam-zaanstad",
+  "path": "/nieuwbouw-project/wonen-in-hilko-zaandam-zaanstad/",
+  "title": "Gekocht in Wonen In Hilko Zaandam (Zaanstad)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Wonen In Hilko Zaandam? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Wonen In Hilko Zaandam, Zaanstad — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Wonen In Hilko Zaandam? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/zaanstad/01H963AME4K7KNP3MYTCRG8CFK-wonen-in-hilko-zaandam\", \"about\": {\"@type\": \"Residence\", \"name\": \"Wonen In Hilko Zaandam\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zaanstad\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.45890774, \"longitude\": 4.81423616}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 100}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Wonen In Hilko Zaandam opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering rond 2026, op basis van kwartaalnotaties op de projectpagina — die kunnen ook over de verkoopstart gaan. Wij meten elke twee weken de bouwstatus.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Wonen In Hilko Zaandam\", \"item\": \"https://www.bylder.com/nieuwbouw-project/wonen-in-hilko-zaandam-zaanstad/\"}]}"
+  ],
+  "content_kind": null
+ },
+ {
+  "slug": "zaam-zaandam-zaanstad",
+  "path": "/nieuwbouw-project/zaam-zaandam-zaanstad/",
+  "title": "Gekocht in Zaam Zaandam (Zaanstad)? Korting bij woonwinkels in de buurt | Bylder",
+  "description": "Woning gekocht in Zaam Zaandam? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.",
+  "og_type": "article",
+  "robots": "index,follow",
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Zaam Zaandam, Zaanstad — wat er ná de handtekening komt\", \"description\": \"Woning gekocht in Zaam Zaandam? Wij volgen de bouw voor je én je bespaart op afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. Gratis.\", \"dateModified\": \"2026-08-04\", \"author\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"Bylder.com\", \"url\": \"https://www.bylder.com/\"}, \"isBasedOn\": \"https://nieuwbouw.nl/aanbod/koop/zaanstad/01J8J5F6KGWZH9DDHQFRYJWW9C-zaam-zaandam\", \"about\": {\"@type\": \"Residence\", \"name\": \"Zaam Zaandam\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Zaanstad\", \"addressCountry\": \"NL\"}, \"geo\": {\"@type\": \"GeoCoordinates\", \"latitude\": 52.44444629, \"longitude\": 4.81216618}, \"numberOfAccommodationUnits\": {\"@type\": \"QuantitativeValue\", \"value\": 89}}}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer wordt Zaam Zaandam opgeleverd?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Het project noemt zelf 2026 als opleverjaar. Wij meten elke twee weken de verkoopstand en de bouwstatus in het Kadaster.\"}}]}",
+   "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Bylder.com\", \"item\": \"https://www.bylder.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Nieuwbouwprojecten\", \"item\": \"https://www.bylder.com/nieuwbouw-project/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zaam Zaandam\", \"item\": \"https://www.bylder.com/nieuwbouw-project/zaam-zaandam-zaanstad/\"}]}"
   ],
   "content_kind": null
  },
