@@ -632,6 +632,78 @@ def deadlines(lo, hi):
     return [r for r in ruw if nog_actueel(r[0])]
 
 
+# --- trede 4: opgezocht handwerk -------------------------------------------
+# Feiten die niet uit onze data komen: wat er eerder op deze plek stond, de
+# starterslening van deze gemeente, de ontwikkelaar, het bestemmingsplan, de
+# voorzieningen in de wijk. Ze worden opgezocht en vastgelegd in
+# handwerk-feiten.json, met bron en controledatum.
+#
+# DE BRONPLICHT IS HIER DE HELE POINT. Een feit zonder vindplaats komt niet op
+# de pagina — niet met een slag om de arm, niet met "waarschijnlijk", helemaal
+# niet. Dit is precies de vraagsoort waarbij een taalmodel iets plausibels
+# verzint, en één verzonnen zin op een projectpagina kost meer dan de hele
+# sectie oplevert. Vandaag stonden er nog drie pagina's op de site met bedrijven
+# die niet bestaan; dezelfde fout, ander jasje.
+#
+# Feiten verouderen ook. Een controledatum ouder dan een jaar telt niet meer:
+# een starterslening kan zijn afgeschaft en een ontwikkelaar failliet.
+FEITEN_PAD = os.path.join(CLUSTER, "handwerk-feiten.json")
+FEIT_HOUDBAAR_DAGEN = 400
+_FEITEN = None
+
+FEIT_KOPPEN = {
+    "historie": "Wat hier eerder stond",
+    "starterslening": "Koopregelingen in deze gemeente",
+    "ontwikkelaar": "Wie het bouwt",
+    "bestemming": "Bestemmingsplan en welstand",
+    "voorzieningen": "Voorzieningen in de wijk",
+}
+
+
+def _feiten():
+    global _FEITEN
+    if _FEITEN is None:
+        try:
+            _FEITEN = json.load(open(FEITEN_PAD, encoding="utf8"))
+        except (OSError, json.JSONDecodeError):
+            _FEITEN = {}
+    return _FEITEN
+
+
+def handwerk_blok(slug, naam):
+    """Toont alleen feiten met een waarde, een bron en een verse controledatum."""
+    vak = _feiten().get(slug) or {}
+    bruikbaar = []
+    for sleutel, kop in FEIT_KOPPEN.items():
+        f = vak.get(sleutel) or {}
+        waarde, bron, datum = (f.get("waarde") or "").strip(), (f.get("bron") or "").strip(), \
+                              (f.get("gecontroleerd_op") or "").strip()
+        if not (waarde and bron and datum):
+            continue
+        try:
+            gecontroleerd = date.fromisoformat(datum)
+        except ValueError:
+            continue
+        if (VANDAAG - gecontroleerd).days > FEIT_HOUDBAAR_DAGEN:
+            continue
+        bruikbaar.append((kop, waarde, bron, gecontroleerd))
+
+    if not bruikbaar:
+        return ""
+
+    stukken = []
+    for kop, waarde, bron, gecontroleerd in bruikbaar:
+        link = (f'<a href="{E(bron)}" rel="nofollow noopener" target="_blank">bron</a>'
+                if bron.startswith("http") else E(bron))
+        stukken.append(f"<h3>{E(kop)}</h3><p>{E(waarde)} "
+                       f'<span class="noot">({link}, gecontroleerd {nl_datum(gecontroleerd.isoformat())})</span></p>')
+
+    return (f"<h2>Over de plek van {E(naam)}</h2>"
+            f"<p>Wat we hierover opzochten, met de vindplaats erbij. Klopt er iets niet? "
+            f"Laat het weten &mdash; wij passen het aan en noteren wanneer.</p>"
+            + "".join(stukken))
+
+
 # --- trede 3: vragen die per project verschillen ---------------------------
 # De gegenereerde pagina's hadden twee vraag-antwoordblokken, de handgeschreven
 # zes. Dat verschil bleek bij nameten de kern van hun voorsprong: koppen die
@@ -983,6 +1055,10 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # wie het kan uitvoeren.
     gem_html = gemeente_blok(p, E(naam), E(plaats))
 
+    # Opgezocht handwerk. Leeg zolang er niets met bron is vastgelegd — dat is
+    # de bedoeling en geen gebrek.
+    hand_html = handwerk_blok(slug, E(naam))
+
     # Direct na de keuzemomenten: daar staat wát er beslist moet worden, hier
     # staat wie het samen met je doet. Vóór de bedrijvenlijsten, want dit is de
     # regie over die lijsten en niet nog een aanbieder erin.
@@ -1059,6 +1135,8 @@ je eigen <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is
 <p><a class="cta-primary" href="{app}">Zet je opleverdatum erin</a></p></div>
 
 {gem_html}
+
+{hand_html}
 
 {reg_html}
 
