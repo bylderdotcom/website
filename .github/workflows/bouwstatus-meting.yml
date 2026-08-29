@@ -1,0 +1,94 @@
+name: Bouwstatus meten (elke twee weken)
+
+# De motor onder de projectpagina's. Elke projectpagina zegt dat we de bouwstatus
+# elke twee weken meten; op 29 augustus bleek de laatste meting van 6 augustus te
+# zijn, en die dekte 116 van de 976 projecten. Drie weken lang beloofde de site
+# iets wat niet gebeurde.
+#
+# Waarom dit de belangrijkste loop van de repo is: metingen over tijd zijn het
+# enige bezit op deze pagina's dat niemand kan kopiëren. Eén meting is een
+# momentopname, drie metingen zijn een logboek — en dat logboek is wat een
+# projectpagina onderscheidt van de site van de ontwikkelaar.
+#
+# Deze loop wijkt bewust af van de standing order "geen auto-publish": hij commit
+# zijn eigen uitvoer. Dat mag omdat hij geen tekst schrijft maar meetdata
+# vastlegt — een snapshot van wat het Kadaster op die dag zei. De interpretatie
+# ervan (het logboek op de pagina) blijft een aparte, reviewbare stap.
+
+on:
+  schedule:
+    - cron: "0 4 */14 * *"   # elke veertien dagen, 04:00 UTC
+  workflow_dispatch:
+    inputs:
+      regio:
+        description: "Alleen de Rotterdamse straal (sneller, voor een test)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: bouwstatus-meting
+  cancel-in-progress: false
+
+jobs:
+  meet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Bouwstatus ophalen uit de BAG
+        id: meet
+        run: |
+          set +e
+          python3 scripts/bag_bouwstatus.py ${{ github.event.inputs.regio == 'true' && '--regio' || '' }} | tee /tmp/meting.txt
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+
+      # Een ronde die maar een fractie van de projecten haalt is geen meting maar
+      # een gat in de reeks. Beter een zichtbare mislukking dan een snapshot die
+      # later voor volledig wordt aangezien — dat is precies hoe de meting van
+      # 6 augustus (116 van 976) in de data belandde.
+      - name: Dekking controleren
+        id: dekking
+        run: |
+          python3 - <<'PY' | tee -a "$GITHUB_OUTPUT"
+          import json, glob, os
+          from datetime import date
+          totaal = len([p for p in json.load(open("data/nieuwbouwprojecten.json"))["projecten"]
+                        if p.get("lat") and p.get("lng")])
+          pad = f"data/bag-snapshots/{date.today()}.json"
+          gemeten = len(json.load(open(pad))) if os.path.exists(pad) else 0
+          pct = round(100 * gemeten / max(totaal, 1))
+          print(f"gemeten={gemeten}")
+          print(f"totaal={totaal}")
+          print(f"pct={pct}")
+          PY
+
+      - name: Snapshot vastleggen
+        if: steps.dekking.outputs.pct != '0'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/bag-snapshots/
+          git diff --staged --quiet || git commit -m "bouwstatus gemeten: ${{ steps.dekking.outputs.gemeten }} van ${{ steps.dekking.outputs.totaal }} projecten"
+          git push
+
+      - name: Alarm bij een halve ronde
+        if: steps.dekking.outputs.pct < 80
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Bouwstatus-meting incompleet ($(date +%F)): ${{ steps.dekking.outputs.pct }}%" \
+            --body "$(printf 'De tweewekelijkse meting haalde %s van de %s projecten (%s%%).\n\nEen onvolledige ronde is geen meting maar een gat in de reeks, en het logboek op de projectpagina'"'"'s leunt erop. Waarschijnlijke oorzaken: PDOK traag of uit de lucht, of de limiet van duizend panden per bbox.\n\n```\n%s\n```\n' "${{ steps.dekking.outputs.gemeten }}" "${{ steps.dekking.outputs.totaal }}" "${{ steps.dekking.outputs.pct }}" "$(tail -30 /tmp/meting.txt)")" \
+            --label "meting" || true
+
+      - name: Rapport bewaren
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bouwstatus-meting
+          path: /tmp/meting.txt
