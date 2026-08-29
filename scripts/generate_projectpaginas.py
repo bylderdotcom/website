@@ -515,6 +515,11 @@ PILOT = {
     "amsterdam": "Amsterdam", "aalsmeer": "Aalsmeer", "zaanstad": "Zaanstad",
     "haarlemmermeer": "Haarlemmermeer", "utrecht": "Utrecht", "zeist": "Zeist",
 }
+# Waar het blok verschijnt is iets anders dan welke projecten een pagina krijgen.
+# PILOT bepaalt de selectie van --pilot; REGISSEUR_GEBIED bepaalt of het blok op
+# een pagina komt. Die twee gelijkstellen zou in Rotterdam en Den Haag tientallen
+# nieuwe pagina's opleveren die niemand vroeg — daar staan de pagina's al.
+REGISSEUR_GEBIED = set(PILOT) | ns.KERN | ns.RING
 # Ondergrens binnen de pilotring: lager dan de landelijke poort, want hier telt
 # rijafstand zwaarder dan cohortgrootte. Eikenstein Zeist (36) hoort erbij.
 PILOT_POORT = 25
@@ -763,7 +768,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # Direct na de keuzemomenten: daar staat wát er beslist moet worden, hier
     # staat wie het samen met je doet. Vóór de bedrijvenlijsten, want dit is de
     # regie over die lijsten en niet nog een aanbieder erin.
-    reg_html = regisseur_blok(p, E(naam), slug, opl_tekst) if plaats_ruw in PILOT else ""
+    reg_html = regisseur_blok(p, E(naam), slug, opl_tekst) if plaats_ruw in REGISSEUR_GEBIED else ""
 
     aup_html = auping_blok(p, E(naam), slug)
     wnk = lokale_winkels(wk, p)
