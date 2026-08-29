@@ -1,255 +1,480 @@
 {
-  "bron": "productie (30 URL's)",
-  "gecontroleerd": 30,
-  "bevindingen": 43,
-  "seconden": 8.2,
+  "bron": "/Users/danielpaaij/Documents/GitHub/website/web/out (67707 pagina's)",
+  "gecontroleerd": 67707,
+  "bevindingen": 88819,
+  "seconden": 27.2,
   "per_regel": {
     "titel-lengte": {
-      "aantal": 13,
+      "aantal": 25164,
       "hard": false,
       "voorbeelden": [
         {
-          "pagina": "https://www.bylder.com/meerwerk/meerwerklijst/",
-          "soort": "metadata",
-          "detail": "85 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/energieadviseur/",
-          "soort": "metadata",
-          "detail": "82 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/badkamer/bedrijf/badkamer-renovatie-mb-bouw-design-zdkwes/",
-          "soort": "metadata",
-          "detail": "115 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/aannemer/bedrijf/klussenbedrijf-van-odeh-hjqqm8/",
-          "soort": "metadata",
-          "detail": "88 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/stukadoor/bedrijf/bas-van-der-vliet-stukadoors-sczfmu/",
-          "soort": "metadata",
-          "detail": "91 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/elektricien/bedrijf/koomen-elektro-automation-trz68k/",
-          "soort": "metadata",
-          "detail": "94 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/gietvloer/alkmaar/",
-          "soort": "metadata",
-          "detail": "85 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/dakkapel/bedrijf/tvdg-bouw-txyiju/",
+          "pagina": "/aannemer/alphen-aan-den-rijn/",
           "soort": "metadata",
           "detail": "86 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/loodgieter/bedrijf/sanitair-service-bubbels-dxztu4/",
+          "pagina": "/aannemer/beek-gem-montferland/",
           "soort": "metadata",
-          "detail": "96 tekens"
+          "detail": "86 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/schilder/bedrijf/de-binnenstad-schilder-os-u2e/",
-          "soort": "metadata",
-          "detail": "90 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/ventilatiebedrijf/",
-          "soort": "metadata",
-          "detail": "84 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/kopen/dakkapellen/prefab-dakkapel/moerdijk/",
+          "pagina": "/aannemer/bergen-op-zoom/",
           "soort": "metadata",
           "detail": "81 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/isolatiebedrijf/",
+          "pagina": "/aannemer/berkel-en-rodenrijs/",
+          "soort": "metadata",
+          "detail": "85 tekens"
+        },
+        {
+          "pagina": "/aannemer/bunschoten-spakenburg/",
+          "soort": "metadata",
+          "detail": "88 tekens"
+        },
+        {
+          "pagina": "/aannemer/capelle-aan-den-ijssel/",
+          "soort": "metadata",
+          "detail": "89 tekens"
+        },
+        {
+          "pagina": "/aannemer/geertruidenberg/",
+          "soort": "metadata",
+          "detail": "81 tekens"
+        },
+        {
+          "pagina": "/aannemer/hardinxveld-giessendam/",
+          "soort": "metadata",
+          "detail": "89 tekens"
+        },
+        {
+          "pagina": "/aannemer/heeswijk-dinther/",
           "soort": "metadata",
           "detail": "82 tekens"
-        }
-      ]
-    },
-    "faq-pariteit": {
-      "aantal": 7,
-      "hard": true,
-      "voorbeelden": [
-        {
-          "pagina": "https://www.bylder.com/energieadviseur/",
-          "soort": "pagina wijkt af van schema",
-          "detail": "vraag 5: 'Ik ben EPA-adviseur &mdash; wat kost een profiel o' vs 'Ik ben EPA-adviseur — wat kost een profiel op Byld'"
         },
         {
-          "pagina": "https://www.bylder.com/dakdekker/",
-          "soort": "pagina wijkt af van schema",
-          "detail": "vraag 5: 'Ik ben dakdekker &mdash; wat kost een profiel op B' vs 'Ik ben dakdekker — wat kost een profiel op Bylder?'"
+          "pagina": "/aannemer/hellevoetsluis/",
+          "soort": "metadata",
+          "detail": "81 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/ventilatiebedrijf/",
-          "soort": "pagina wijkt af van schema",
-          "detail": "vraag 5: 'Ik ben ventilatiebedrijf &mdash; wat kost een prof' vs 'Ik ben ventilatiebedrijf — wat kost een profiel op'"
+          "pagina": "/aannemer/hendrik-ido-ambacht/",
+          "soort": "metadata",
+          "detail": "86 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/kopen/dakkapellen/prefab-dakkapel/moerdijk/",
-          "soort": "pagina wijkt af van schema",
-          "detail": "4 zichtbaar, 3 in schema"
+          "pagina": "/aannemer/katwijk-aan-zee/",
+          "soort": "metadata",
+          "detail": "82 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/isolatiebedrijf/",
-          "soort": "pagina wijkt af van schema",
-          "detail": "vraag 5: 'Ik ben isolatiebedrijf &mdash; wat kost een profie' vs 'Ik ben isolatiebedrijf — wat kost een profiel op B'"
+          "pagina": "/aannemer/krimpen-aan-den-ijssel/",
+          "soort": "metadata",
+          "detail": "89 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/kozijnbedrijf/",
-          "soort": "pagina wijkt af van schema",
-          "detail": "vraag 5: 'Ik ben kozijnbedrijf &mdash; wat kost een profiel ' vs 'Ik ben kozijnbedrijf — wat kost een profiel op Byl'"
+          "pagina": "/aannemer/nieuwerkerk-aan-den-ijssel/",
+          "soort": "metadata",
+          "detail": "92 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/timmerman/",
-          "soort": "pagina wijkt af van schema",
-          "detail": "vraag 5: 'Ik ben timmerman &mdash; wat kost een profiel op B' vs 'Ik ben timmerman — wat kost een profiel op Bylder?'"
-        }
-      ]
-    },
-    "dubbele-escape": {
-      "aantal": 6,
-      "hard": true,
-      "voorbeelden": [
-        {
-          "pagina": "https://www.bylder.com/energieadviseur/",
-          "soort": "onleesbare tekens",
-          "detail": "&amp;mdash;"
-        },
-        {
-          "pagina": "https://www.bylder.com/dakdekker/",
-          "soort": "onleesbare tekens",
-          "detail": "&amp;mdash;"
-        },
-        {
-          "pagina": "https://www.bylder.com/ventilatiebedrijf/",
-          "soort": "onleesbare tekens",
-          "detail": "&amp;mdash;"
-        },
-        {
-          "pagina": "https://www.bylder.com/isolatiebedrijf/",
-          "soort": "onleesbare tekens",
-          "detail": "&amp;mdash;"
-        },
-        {
-          "pagina": "https://www.bylder.com/kozijnbedrijf/",
-          "soort": "onleesbare tekens",
-          "detail": "&amp;mdash;"
-        },
-        {
-          "pagina": "https://www.bylder.com/timmerman/",
-          "soort": "onleesbare tekens",
-          "detail": "&amp;mdash;"
+          "pagina": "/aannemer/noordwijkerhout/",
+          "soort": "metadata",
+          "detail": "81 tekens"
         }
       ]
     },
     "description-lengte": {
-      "aantal": 14,
+      "aantal": 24925,
       "hard": false,
       "voorbeelden": [
         {
-          "pagina": "https://www.bylder.com/energieadviseur/",
-          "soort": "metadata",
-          "detail": "194 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/badkamer/bedrijf/badkamer-renovatie-mb-bouw-design-zdkwes/",
-          "soort": "metadata",
-          "detail": "215 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/aannemer/bedrijf/klussenbedrijf-van-odeh-hjqqm8/",
-          "soort": "metadata",
-          "detail": "191 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/stukadoor/bedrijf/bas-van-der-vliet-stukadoors-sczfmu/",
-          "soort": "metadata",
-          "detail": "182 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/elektricien/bedrijf/koomen-elektro-automation-trz68k/",
-          "soort": "metadata",
-          "detail": "188 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/en-us/cost/countertop-installation/tampa-fl/",
-          "soort": "metadata",
-          "detail": "182 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/loodgieter/bedrijf/sanitair-service-bubbels-dxztu4/",
-          "soort": "metadata",
-          "detail": "194 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/schilder/bedrijf/de-binnenstad-schilder-os-u2e/",
-          "soort": "metadata",
-          "detail": "184 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/dakdekker/",
-          "soort": "metadata",
-          "detail": "182 tekens"
-        },
-        {
-          "pagina": "https://www.bylder.com/bouwvergunning/check/",
+          "pagina": "/aannemer/bedrijf/040-groep-5lgliy/",
           "soort": "metadata",
           "detail": "192 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/ventilatiebedrijf/",
+          "pagina": "/aannemer/bedrijf/3b-bouw-en-onderhoud-7coiba/",
           "soort": "metadata",
-          "detail": "199 tekens"
+          "detail": "206 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/isolatiebedrijf/",
+          "pagina": "/aannemer/bedrijf/4-bouw-b-v-hgzevu/",
+          "soort": "metadata",
+          "detail": "190 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/4samen-wij-samen-1stg7o/",
+          "soort": "metadata",
+          "detail": "198 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/8-bouwbedrijf-2_fums/",
+          "soort": "metadata",
+          "detail": "193 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-a-a-a-voeg-en-renovatiebedrijf-bv-vvg00k/",
+          "soort": "metadata",
+          "detail": "225 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-a-b-s-bouw-en-timmerbedrijf-jdt0aa/",
+          "soort": "metadata",
+          "detail": "213 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-b-betonbouw-ya93yo/",
+          "soort": "metadata",
+          "detail": "192 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-beverwijk-en-zonen-b-v-rog4rk/",
+          "soort": "metadata",
+          "detail": "208 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-bouw-utrecht-_oqgdo/",
           "soort": "metadata",
           "detail": "195 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/kozijnbedrijf/",
+          "pagina": "/aannemer/bedrijf/a-de-reus-aannemersbedrijf-b-v-ebdgaa/",
           "soort": "metadata",
-          "detail": "191 tekens"
+          "detail": "216 tekens"
         },
         {
-          "pagina": "https://www.bylder.com/timmerman/",
+          "pagina": "/aannemer/bedrijf/a-den-haan-contractors-b-v-aftmmc/",
           "soort": "metadata",
-          "detail": "184 tekens"
+          "detail": "212 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-haitsma-loon-en-aannemingsbedrijf-purmerend-landsmeer-zemb_q/",
+          "soort": "metadata",
+          "detail": "239 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-hermenet-timmerbedrijf-ianapi/",
+          "soort": "metadata",
+          "detail": "218 tekens"
+        },
+        {
+          "pagina": "/aannemer/bedrijf/a-j-klusbedrijf-da10u4/",
+          "soort": "metadata",
+          "detail": "198 tekens"
         }
       ]
     },
-    "faq-zonder-schema": {
-      "aantal": 2,
-      "hard": false,
+    "faq-pariteit": {
+      "aantal": 38507,
+      "hard": true,
       "voorbeelden": [
         {
-          "pagina": "https://www.bylder.com/en-us/cost/countertop-installation/tampa-fl/",
-          "soort": "gemiste kans",
-          "detail": "3 vragen zichtbaar, geen FAQPage"
+          "pagina": "/aannemer/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "vraag 5: 'Ik ben aannemer &mdash; wat kost een profiel op By' vs 'Ik ben aannemer — wat kost een profiel op Bylder?'"
         },
         {
-          "pagina": "https://www.bylder.com/showroomsale/",
-          "soort": "gemiste kans",
-          "detail": "5 vragen zichtbaar, geen FAQPage"
+          "pagina": "/badkamer/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "vraag 5: 'Ik ben badkamerspecialist &mdash; wat kost een pro' vs 'Ik ben badkamerspecialist — wat kost een profiel o'"
+        },
+        {
+          "pagina": "/dakkapel/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "vraag 5: 'Ik ben dakkapelspecialist &mdash; wat kost een pro' vs 'Ik ben dakkapelspecialist — wat kost een profiel o'"
+        },
+        {
+          "pagina": "/elektricien/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "vraag 5: 'Ik ben elektricien &mdash; wat kost een profiel op' vs 'Ik ben elektricien — wat kost een profiel op Bylde'"
+        },
+        {
+          "pagina": "/gietvloer/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "vraag 5: 'Ik ben gietvloer-specialist &mdash; wat kost een p' vs 'Ik ben gietvloer-specialist — wat kost een profiel'"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/aa-en-hunze/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/aalten/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/alblasserdam/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/alkmaar/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/almelo/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/almere/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/alphen-aan-den-rijn/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/altena/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/amersfoort/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/amstelveen/",
+          "soort": "pagina wijkt af van schema",
+          "detail": "4 zichtbaar, 3 in schema"
+        }
+      ]
+    },
+    "dubbele-escape": {
+      "aantal": 13,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/aannemer/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/badkamer/bedrijf/baderie-nuenen-35-pwm/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;amp;"
+        },
+        {
+          "pagina": "/badkamer/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/dakkapel/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/elektricien/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/gordijnrails-ophangen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/spiegel-ophangen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gereedschap-lenen/verhuizen/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/gietvloer/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/loodgieter/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/schilder/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        },
+        {
+          "pagina": "/stukadoor/",
+          "soort": "onleesbare tekens",
+          "detail": "&amp;mdash;"
+        }
+      ]
+    },
+    "verzonnen-vestiging": {
+      "aantal": 39,
+      "hard": true,
+      "voorbeelden": [
+        {
+          "pagina": "/badkamer/meppel/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Tegeldepot Meppel"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/opdekdeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/schuifdeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stalen-binnendeur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stompe-deur/veldhoven/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Topdeuren Veldhoven"
+        },
+        {
+          "pagina": "/kopen/raamdecoratie/shutters/nijmegen/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Adviba Nijmegen"
+        },
+        {
+          "pagina": "/kopen/raamdecoratie/zonwering-screen/amsterdam/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Ree Zonwering Amsterdam"
+        },
+        {
+          "pagina": "/kopen/raamdecoratie/zonwering-screen/nijmegen/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Adviba Nijmegen"
+        },
+        {
+          "pagina": "/kopen/verlichting/buitenverlichting/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/hanglamp-eettafel/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/inbouwspot/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/plafondlamp/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/railspot/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
+        },
+        {
+          "pagina": "/kopen/verlichting/vloerlamp/breda/",
+          "soort": "filiaal dat niet bestaat",
+          "detail": "Lampenlicht Breda"
         }
       ]
     },
     "faq-onzichtbaar": {
-      "aantal": 1,
+      "aantal": 171,
       "hard": true,
       "voorbeelden": [
         {
-          "pagina": "https://www.bylder.com/bouwvergunning/check/",
+          "pagina": "/bouwvergunning/check/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/glazen-binnendeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/opdekdeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/schuifdeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stalen-binnendeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/binnendeuren/stompe-deur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/kozijn-hr/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/schuifpui/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/smart-lock/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/voordeur-kunststof/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/buitendeuren/voordeur/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/dakkapellen/dakkapel-hout/",
+          "soort": "schema zonder zichtbare tekst",
+          "detail": "2 vragen alleen in het schema"
+        },
+        {
+          "pagina": "/kopen/dakkapellen/dakkapel-kunststof/",
           "soort": "schema zonder zichtbare tekst",
           "detail": "2 vragen alleen in het schema"
         }
