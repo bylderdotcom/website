@@ -15,7 +15,8 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
 CATS = {"meubelwinkel": "meubelwinkel", "woonwinkel": "woonwinkel woonaccessoires",
         "vloeren": "vloerenwinkel parket laminaat", "verf": "verfwinkel", "raamdecoratie": "raamdecoratie gordijnen",
         "keuken": "keukenspeciaalzaak", "sanitair": "sanitair badkamer showroom", "verlichting": "verlichtingswinkel",
-        "tegel": "tegelwinkel", "bedden": "beddenwinkel matrassen"}
+        "tegel": "tegelwinkel", "bedden": "beddenwinkel matrassen",
+        "zonwering": "zonwering rolluiken screens"}
 
 # Landelijke ketens / niet-lokale-ondernemer → uit de MVP (nemen geen €79-listing).
 KETENS = ("hornbach", "gamma", "praxis", "karwei", "kwantum", "ikea", "leen bakker", "jysk", "beter bed",
