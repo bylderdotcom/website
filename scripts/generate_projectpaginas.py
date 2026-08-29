@@ -632,6 +632,52 @@ def deadlines(lo, hi):
     return [r for r in ruw if nog_actueel(r[0])]
 
 
+# --- zoekresultaat en deelkaart -------------------------------------------
+# Gemeten 29 augustus: 38 van de 40 projectpagina's had een titel boven de 60
+# tekens en 26 een description boven de 158 — allebei worden ze in Google
+# afgekapt, precies op de plek waar de belofte staat. En geen enkele pagina had
+# een og:image, dus elke deling in WhatsApp of Slack toonde een blinde kaart.
+#
+# Deze pagina's staan op positie 4 tot 7 als iemand de projectnaam zoekt. Dat is
+# goed genoeg om gezien te worden; wat ontbreekt is de reden om te klikken.
+OG_BEELD = "https://www.bylder.com/og/nieuwbouw-gemeente.jpg"
+TITEL_MAX = 60
+DESC_MAX = 155
+
+
+def kort_titel(kern, staart=" | Bylder"):
+    """Houdt de titel onder de afkapgrens, en gooit weg wat het minst mist.
+
+    Volgorde: eerst het merkachtervoegsel (dat staat toch al in het domein onder
+    het resultaat), dan de toelichting achter het gedachtestreepje, dan pas de
+    naam zelf. Zo overleeft altijd waar de zoeker op zocht — de projectnaam —
+    in plaats van dat die er als eerste afvalt.
+    """
+    if len(kern + staart) <= TITEL_MAX:
+        return kern + staart
+    if len(kern) <= TITEL_MAX:
+        return kern
+    for scheider in (" \u2014 ", ": ", ", "):
+        if scheider in kern:
+            voor = kern.split(scheider)[0]
+            if len(voor) <= TITEL_MAX:
+                return voor
+    return kern[:TITEL_MAX - 1].rstrip(" ,;-") + "\u2026"
+
+
+def kort_desc(tekst):
+    """Kapt af op een zinsgrens in plaats van midden in een woord."""
+    tekst = " ".join(tekst.split())
+    if len(tekst) <= DESC_MAX:
+        return tekst
+    knip = tekst[:DESC_MAX]
+    for teken in (". ", "? ", "! "):
+        i = knip.rfind(teken)
+        if i > DESC_MAX * 0.6:
+            return knip[:i + 1].strip()
+    return knip[:knip.rfind(" ")].rstrip(" ,;-") + "\u2026"
+
+
 def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     naam, plaats = p["naam"], netjes(p["plaats"])
     won = p.get("woningen") or 0
@@ -872,17 +918,17 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
     _m = [m for m in (SNAPSHOTS.get(p.get("url")) or []) if betrouwbaar(p, m[1])]
     pct_nu = _m[-1][1].get("verkocht_pct") if _m else None
     if pct_nu is None or pct_nu >= 85:
-        titel = f"Gekocht in {naam} ({plaats})? Korting bij woonwinkels in de buurt | Bylder"
+        titel = f"{naam}, {plaats} \u2014 korting bij woonwinkels"
         desc = (f"Woning gekocht in {naam}? Wij volgen de bouw voor je \u00e9n je bespaart op "
                 f"afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. "
                 f"Gratis.")
     elif pct_nu is not None:
-        titel = f"{naam}, {plaats}: {pct_nu}% verkocht — oplevering en bouwstatus | Bylder"
+        titel = f"{naam}, {plaats}: {pct_nu}% verkocht \u2014 oplevering"
         desc = (f"{naam} kopen of al gekocht? Wij meten de verkoopstand elke twee weken "
                 f"({pct_nu}% verkocht) en helpen kopers besparen op afwerking en inrichting. "
                 f"Onafhankelijk, gratis.")
     else:
-        titel = f"{naam} ({plaats}), {aant} — oplevering en bouwstatus | Bylder.com"
+        titel = f"{naam}, {plaats} \u2014 oplevering en bouwstatus"
         desc = (f"{naam} in {plaats}: {aant}, oplevering {opl_tekst}. Wij volgen de bouwstatus "
                 f"en helpen kopers besparen op afwerking en inrichting. Gratis.")
     art = {"@context": "https://schema.org", "@type": "Article",
@@ -912,8 +958,10 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
         {"@type": "ListItem", "position": 3, "name": naam,
          "item": f"https://www.bylder.com/nieuwbouw-project/{slug}/"}]}
 
-    rij = {"slug": slug, "path": f"/nieuwbouw-project/{slug}/", "title": titel,
-           "description": desc, "og_type": "article",
+    rij = {"slug": slug, "path": f"/nieuwbouw-project/{slug}/",
+           "title": kort_titel(titel.replace(" | Bylder", "").replace(" | Bylder.com", "")),
+           "description": kort_desc(desc), "og_type": "article",
+           "og_image": OG_BEELD, "twitter_card": "summary_large_image",
            "robots": "index,follow" if indexeerbaar else "noindex,follow",
            "ldjson": [json.dumps(x, ensure_ascii=False) for x in (art, faq_schema, brood)],
            "content_kind": None}
@@ -1169,11 +1217,28 @@ def main():
         for x in pages:
             if x["slug"] == "index":
                 x["robots"] = "index,follow"
-                x["description"] = (f"Wij volgen {len(projecten)} nieuwbouwprojecten in Nederland. "
-                    f"Voor {len(hub_rijen)} staat uitgewerkt welke keuzes een koper na het tekenen "
-                    f"maakt, wanneer ze sluiten en wat ze kosten.")[:158]
+                x["og_image"] = OG_BEELD
+                x["twitter_card"] = "summary_large_image"
+                x["title"] = kort_titel("Nieuwbouwprojecten: advies per project")
+                x["description"] = kort_desc(
+                    f"Wij volgen {len(projecten)} nieuwbouwprojecten in Nederland. Voor "
+                    f"{len(hub_rijen)} staat uitgewerkt welke keuzes een koper na het tekenen "
+                    f"maakt, wanneer ze sluiten en wat ze kosten.")
 
     if not DRY:
+        # De handgeschreven pagina's worden nooit door de generator herschreven,
+        # maar zijn wél de best presterende van het cluster (91 van de 103
+        # vertoningen in drie maanden). Juist zij hadden geen deelkaart. Alleen
+        # de velden zetten die ontbreken; aan hun tekst raken we niet.
+        for x in pages:
+            x.setdefault("og_image", OG_BEELD)
+            x.setdefault("twitter_card", "summary_large_image")
+            if len(x.get("title", "")) > TITEL_MAX:
+                x["title"] = kort_titel(x["title"].replace(" | Bylder.com", "")
+                                                  .replace(" | Bylder", ""))
+            if len(x.get("description", "")) > DESC_MAX:
+                x["description"] = kort_desc(x["description"])
+
         vast = [x for x in pages if x["slug"] in ("index", "oplevermonitor")]
         rest = sorted([x for x in pages if x["slug"] not in ("index", "oplevermonitor")],
                       key=lambda x: x["slug"])
