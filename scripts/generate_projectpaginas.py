@@ -632,6 +632,71 @@ def deadlines(lo, hi):
     return [r for r in ruw if nog_actueel(r[0])]
 
 
+# --- trede 3: vragen die per project verschillen ---------------------------
+# De gegenereerde pagina's hadden twee vraag-antwoordblokken, de handgeschreven
+# zes. Dat verschil bleek bij nameten de kern van hun voorsprong: koppen die
+# alleen over dát project gaan in plaats van "[iets] rond [projectnaam]".
+#
+# Alles hieronder is AFGELEID uit wat we al weten — opleverjaar, aantal
+# woningen, de gemeentecijfers, de buurprojecten. Niets is opgezocht en niets
+# is geschat. Waar een gegeven ontbreekt, valt de vraag weg in plaats van dat er
+# een slag om de arm wordt gehouden; een pagina met "waarschijnlijk" erin is
+# minder waard dan een pagina zonder die vraag.
+
+def afgeleide_vragen(p, naam, plaats, lo, hi, won, buren, gem):
+    """Vraag-antwoordparen die per project anders uitvallen."""
+    uit = []
+
+    # 1. Gasaansluiting. Sinds 1 juli 2018 mogen nieuwe woningen niet meer op
+    #    aardgas worden aangesloten (Wet VET). Dat is geen schatting maar wet,
+    #    en het is een van de meestgestelde vragen van een nieuwbouwkoper.
+    if lo and lo >= 2020:
+        uit.append((f"Heeft {naam} een gasaansluiting?",
+            f"Nee. Sinds 1 juli 2018 mogen nieuwbouwwoningen niet meer op aardgas worden "
+            f"aangesloten. {naam} wordt dus gasloos opgeleverd: koken doe je elektrisch en "
+            f"verwarmen gaat via een warmtepomp of stadsverwarming. Reken bij je meerwerk op "
+            f"een inductiekookplaat en een zwaardere groepenkast."))
+
+    # 2. Wat sluit er nú. Dezelfde bron als de deadlinetabel, maar dan als
+    #    antwoord op de vraag die een koper in augustus stelt.
+    dl = deadlines(lo, hi) if lo else []
+    if dl:
+        eerste = dl[0]
+        uit.append((f"Wat moet ik nu al beslissen voor {naam}?",
+            f"Het eerstvolgende moment is {eerste[0]}: {eerste[1]}. {eerste[2].capitalize()}. "
+            f"Daarna volgen nog {len(dl) - 1} keuzemomenten. Deze data zijn teruggerekend vanuit "
+            f"de verwachte oplevering; je eigen koop-/aannemingsovereenkomst is leidend."
+            if len(dl) > 1 else
+            f"Het eerstvolgende moment is {eerste[0]}: {eerste[1]}. {eerste[2].capitalize()}. "
+            f"Dit is teruggerekend vanuit de verwachte oplevering; je eigen koop-/aannemings"
+            f"overeenkomst is leidend."))
+
+    # 3. Hoe groot is dit project in zijn gemeente. Zegt iets over hoe druk het
+    #    straks is met vakmensen en levertijden — en dat is precies waar een
+    #    koper na de sleutel tegenaan loopt.
+    if won and gem and gem.get("nieuwbouw_gem5"):
+        gem5 = gem["nieuwbouw_gem5"]
+        aandeel = round(100 * won / gem5) if gem5 else 0
+        if aandeel >= 5:
+            uit.append((f"Hoe groot is {naam} voor {plaats}?",
+                f"{won} woningen, tegenover gemiddeld {gem5} nieuwbouwwoningen per jaar in de "
+                f"hele gemeente. Dit project is daarmee goed voor ongeveer {aandeel}% van een "
+                f"gemiddeld bouwjaar. Dat merk je aan de vraag naar vakmensen rond de "
+                f"oplevering: iedereen zoekt tegelijk een stukadoor en een vloerenlegger."))
+
+    # 4. De buren. Alleen als er meerdere projecten in dezelfde plaats zijn,
+    #    want anders is het antwoord "geen" en dat is geen antwoord.
+    if buren:
+        namen = ", ".join(netjes_naam(q) for q in buren[:3])
+        uit.append((f"Wordt er nog meer gebouwd in {plaats}?",
+            f"Ja. Wij volgen daar {len(buren) + 1} projecten, waaronder {namen}"
+            f"{' en meer' if len(buren) > 3 else ''}. Dat is relevant voor je planning: "
+            f"projecten die tegelijk opleveren trekken dezelfde vakbedrijven en dezelfde "
+            f"levertijden leeg."))
+
+    return uit
+
+
 # --- trede 1: de gemeente in cijfers ---------------------------------------
 # data/gemeenten.json draagt 21 velden per gemeente en dekt alle 332 projecten
 # die groot genoeg zijn voor een eigen publiek. Geen enkele projectpagina
@@ -907,6 +972,9 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             f"Stand {nl_datum(fd)}: nog {fv['beschikbaar']} van de {fv['eenheden']} aangeboden "
             f"woningen beschikbaar ({fv['verkocht_pct']}% verkocht). Gemeten door Bylder op de "
             f"beschikbaarheid per fase."))
+    faq_items += afgeleide_vragen(p, naam, plaats, lo, hi, won, buren,
+                                  _gemeenten()["per_slug"].get(p["plaats"]))
+
     faq_html = "<h2>Veelgestelde vragen over " + E(naam) + "</h2>" + "".join(
         f"<h3>{E(q)}</h3><p>{E(ant)}</p>" for q, ant in faq_items)
 
