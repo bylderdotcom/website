@@ -526,7 +526,13 @@ def regisseur_blok(p, naam_project, slug, opl_tekst):
     """Daniel als woningregisseur op de pilotpagina's. Bewust één naam en geen
     'ons team': het is één persoon, en dat is precies het aanbod. De koper die
     hierop reageert levert het marktonderzoek waar de rest van het model op
-    wacht — welke keuzes lopen echt vast, en waar zit betalingsbereidheid."""
+    wacht — welke keuzes lopen echt vast, en waar loopt een koper klem.
+
+    Het traject is gratis (besluit 29 aug). Dat verplaatst de disclosure: bij een
+    betaald advies is 'wij verdienen niet aan je aankoop' het argument, bij een
+    gratis advies is het omgekeerde waar en moet de pagina zeggen dat Bylder aan
+    de aangesloten bedrijven verdient. Gratis advies dat dat verzwijgt is verkapte
+    verkoop; met het belang erbij is het een aanbod dat de koper kan wegen."""
     plaats = netjes(p["plaats"])
     link = (f"https://app.bylder.com/registreer?utm_source=bylder-site"
             f"&amp;utm_medium=projectpagina&amp;utm_campaign=woningregisseur"
@@ -544,10 +550,13 @@ kloppen. In &eacute;&eacute;n plan, met &eacute;&eacute;n aanspreekpunt.</p>
 keukentafel in {E(plaats)}. Hij is de oprichter van Bylder en houdt deze gesprekken bewust
 zelf: de koper krijgt er een plan uit, en wij zien waar het in de praktijk vastloopt. Met een
 oplevering {E(opl_tekst)} vallen de keuzes nu.</p>
+<p>Het gesprek en het plan zijn <strong>gratis</strong>. Geen uurtarief, geen offerte achteraf.</p>
 <p><a class="cta-primary" href="{link}">Plan een gesprek over {E(naam_project)}</a></p>
-<p class="noot">Een adviestraject is betaald werk en staat los van je Bylder-account: het
-dossier, de meerwerkanalyse en de kortingen blijven gratis, ook als je hier niets mee doet.
-Wij noemen dat, omdat het advies anders niet onafhankelijk is van wat wij verkopen.</p>"""
+<p class="noot">Waarom dit gratis kan: Bylder verdient aan de bedrijven en winkels die zich bij
+ons aansluiten, niet aan jou. Dat is ook meteen het belang dat je moet kennen &mdash; wij hebben
+er baat bij als je bij een aangesloten partij koopt. Daarom staat op deze pagina wie dat zijn,
+en daarom komt het advies met de vraag erbij of het ook zonder ons goedkoper kan. Je zit
+nergens aan vast: geen contract, geen verplichte offerte, en je dossier blijft van jou.</p>"""
 
 
 def lokale_winkels(wk, p, straal=15, n=6):
