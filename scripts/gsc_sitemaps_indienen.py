@@ -20,10 +20,12 @@ contraproductief: je vraagt de crawler langs te komen om te lezen dat hij weg mo
 blijven.
 
 Gebruik:
-    python3 scripts/gsc_sitemaps_indienen.py --controleer   # alleen kijken
-    python3 scripts/gsc_sitemaps_indienen.py
+    python3 scripts/gsc_sitemaps_indienen.py --controleer          # alleen kijken
+    python3 scripts/gsc_sitemaps_indienen.py                      # de acht vak-sitemaps
+    python3 scripts/gsc_sitemaps_indienen.py --alles              # elke sitemap apart
+    python3 scripts/gsc_sitemaps_indienen.py --alles --controleer
 """
-import json, os, ssl, subprocess, sys, urllib.parse, urllib.request
+import glob, json, os, ssl, subprocess, sys, urllib.parse, urllib.request
 
 try:
     import certifi
@@ -40,6 +42,25 @@ SITE = "sc-domain:bylder.com"
 BASE = "https://www.bylder.com"
 VAKKEN = ["loodgieter", "aannemer", "schilder", "elektricien",
           "stukadoor", "badkamer", "dakkapel", "gietvloer"]
+
+
+def alle_sitemaps():
+    """Elke losse sitemap in de repo-root, grootste eerst.
+
+    Waarom niet alleen de vak-sitemaps (--alles, 29 augustus): Search Console
+    geeft per aangemelde sitemap een eigen dekkingsrapport. Zolang alles onder
+    één index hangt, zie je één hoop van 56.688 URL's en niet welke laag de
+    35.011 niet-opgehaalde adressen vult. Dat onderscheid bepaalt of we in
+    /kopen/ moeten snoeien of ergens anders — en zonder losse aanmelding is het
+    niet te meten.
+    """
+    uit = []
+    for pad in sorted(glob.glob(os.path.join(ROOT, "*-sitemap.xml"))):
+        naam = os.path.basename(pad)
+        n = open(pad, encoding="utf8").read().count("<url>")
+        if n:
+            uit.append((naam, n))
+    return sorted(uit, key=lambda x: -x[1])
 PROEF = "/loodgieter/bedrijf/duron-dt15fq/"   # een profiel dat weer geïndexeerd hoort te zijn
 
 
@@ -73,6 +94,9 @@ def productie_staat_op_index():
     return False, "geen robots-tag gevonden"
 
 
+ALLES = "--alles" in sys.argv
+
+
 def main():
     alleen_kijken = "--controleer" in sys.argv
     ok, wat = productie_staat_op_index()
@@ -86,10 +110,16 @@ def main():
     bestaand = {s.get("path", "").split("/")[-1]
                 for s in api("sitemaps", tok).get("sitemap", [])}
 
-    for vak in VAKKEN:
-        naam = f"{vak}-sitemap.xml"
-        pad = os.path.join(ROOT, naam)
-        n = open(pad, encoding="utf8").read().count("<url>") if os.path.exists(pad) else 0
+    if ALLES:
+        lijst = alle_sitemaps()
+    else:
+        lijst = [(f"{v}-sitemap.xml",
+                  open(os.path.join(ROOT, f"{v}-sitemap.xml"), encoding="utf8").read().count("<url>")
+                  if os.path.exists(os.path.join(ROOT, f"{v}-sitemap.xml")) else 0)
+                 for v in VAKKEN]
+    print(f"\n{len(lijst)} sitemaps, samen {sum(n for _, n in lijst)} URL's\n")
+
+    for naam, n in lijst:
         status = "al aangemeld" if naam in bestaand else "nieuw"
         if alleen_kijken:
             print(f"  {naam:<26} {n:>6} URL's  ({status})")

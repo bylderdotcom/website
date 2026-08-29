@@ -1,0 +1,12 @@
+{
+ "bekeken": 56688,
+ "verwijderd": 1,
+ "per_sitemap": {
+  "affiliate-sitemap.xml": {
+   "omleiding": [
+    "/affiliate/"
+   ],
+   "doodloper": []
+  }
+ }
+}
