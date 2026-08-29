@@ -150,7 +150,7 @@ In {stad_l} worden meerdere nieuwbouwprojecten gebouwd — waaronder {projzin}.
 Honderden nieuwe bewoners gaan binnenkort hun woning inrichten.
 
 Via Bylder.com brengen wij die kopers in contact met lokale winkels. Vanaf
-eenmalig €79 (excl. btw) staat u erbij als aanbevolen lokale winkel en kunt u
+€79 per jaar (excl. btw) staat u erbij als aanbevolen lokale winkel en kunt u
 hen een nieuwbouwkorting bieden — geen abonnement. Uw korting blijft een jaar
 geldig na activatie.
 

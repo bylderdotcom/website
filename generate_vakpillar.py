@@ -61,7 +61,7 @@ VAKKEN = {
             ("Hoe weet ik of mijn stukadoor-offerte eerlijk is?", "Vergelijk de prijs per m&sup2; per werksoort met de marktbandbreedte. Bylder controleert je offerte per post met actuele marktdata en zegt of die marktconform (groen), twijfelachtig (oranje) of te hoog (rood) is &mdash; met een concreet onderhandelpunt."),
             ("Wat is het verschil tussen spuitwerk en glad pleisteren?", "Spuitwerk (spackspuiten) wordt machinaal aangebracht en is sneller en goedkoper, met een licht korrelige sausklare afwerking. Glad pleisteren is handwerk dat een volledig vlakke, direct schilderbare wand oplevert &mdash; arbeidsintensiever en duurder per m&sup2;."),
             ("Is Bylder een stukadoorsbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen stucwerk en zijn geen leadverkoper. We tonen stukadoors neutraal &mdash; met beoordelingsscores van verschillende externe bronnen naast elkaar."),
-            ("Ik ben stukadoor &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben stukadoor &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "schilder": {
@@ -98,7 +98,7 @@ VAKKEN = {
             ("Hoe weet ik of mijn schilder-offerte eerlijk is?", "Vergelijk de prijs per m&sup2; per werksoort met de marktbandbreedte. Bylder controleert je offerte per post met actuele marktdata en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Wat bepaalt de prijs van schilderwerk?", "Het voorwerk (schuren, plamuren, gronden), het aantal lagen en de verfkwaliteit, en of het wanden of houtwerk/kozijnen betreft. Houtwerk en buitenwerk zijn arbeidsintensiever."),
             ("Is Bylder een schildersbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen schilderwerk en zijn geen leadverkoper &mdash; we tonen schilders neutraal en helpen je een eerlijke prijs te betalen."),
-            ("Ik ben schilder &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben schilder &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "loodgieter": {
@@ -136,7 +136,7 @@ VAKKEN = {
             ("Wat kost het vervangen van een cv-ketel?", "Een nieuwe hr-combiketel inclusief installatie kost indicatief &euro;1.800&ndash;&euro;3.500, afhankelijk van merk, vermogen en aansluitwerk."),
             ("Hoe weet ik of mijn loodgieter-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, voorrijkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Is Bylder een loodgietersbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen loodgieterswerk en zijn geen leadverkoper &mdash; we tonen loodgieters neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
-            ("Ik ben loodgieter &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben loodgieter &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "elektricien": {
@@ -174,7 +174,7 @@ VAKKEN = {
             ("Wat kost het vervangen van de groepenkast of een laadpaal?", "Een groepenkast vervangen of uitbreiden kost indicatief &euro;600&ndash;&euro;1.500; een thuislaadpaal installeren &euro;500&ndash;&euro;1.500, afhankelijk van het aantal groepen en de afstand tot de meterkast."),
             ("Hoe weet ik of mijn elektricien-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, voorrijkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Is Bylder een elektricien of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen elektrawerk en zijn geen leadverkoper &mdash; we tonen elektriciens neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
-            ("Ik ben elektricien &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben elektricien &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "aannemer": {
@@ -211,7 +211,7 @@ VAKKEN = {
             ("Wat kost een verbouwing?", "Van &euro;10.000 voor een enkele kamer tot &euro;80.000+ voor een complete woning &mdash; het hangt af van omvang, constructief werk en afwerkingsniveau."),
             ("Hoe weet ik of mijn aannemer-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, onderaanneming, staartkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Is Bylder een aannemer of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij voeren zelf geen bouwwerk uit en zijn geen leadverkoper &mdash; we tonen aannemers neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
-            ("Ik ben aannemer &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben aannemer &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "badkamer": {
@@ -249,7 +249,7 @@ VAKKEN = {
             ("Wat bepaalt de prijs van een badkamerrenovatie?", "Vooral de afmeting, de sanitair- en tegelkeuze en of er leidingwerk verlegd moet worden. Vloerverwarming, ventilatie en maatwerk verhogen de prijs verder."),
             ("Hoe weet ik of mijn badkamer-offerte eerlijk is?", "Vergelijk per post (tegelwerk, sanitair, installatie, arbeid) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Is Bylder een badkamerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen badkamers en zijn geen leadverkoper &mdash; we tonen badkamerspecialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
-            ("Ik ben badkamerspecialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben badkamerspecialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "dakkapel": {
@@ -287,7 +287,7 @@ VAKKEN = {
             ("Heb ik een vergunning nodig voor een dakkapel?", "Voor een dakkapel aan de achterkant is vaak geen vergunning nodig (vergunningsvrij), aan de voorkant meestal wel. Een goede specialist regelt of controleert dit voor je."),
             ("Hoe weet ik of mijn dakkapel-offerte eerlijk is?", "Vergelijk per post (element, plaatsing, afwerking, kraan/steiger) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Is Bylder een dakkapelbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij plaatsen zelf geen dakkapellen en zijn geen leadverkoper &mdash; we tonen dakkapelspecialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
-            ("Ik ben dakkapelspecialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben dakkapelspecialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "gietvloer": {
@@ -325,7 +325,7 @@ VAKKEN = {
             ("Wat is het verschil tussen een PU- en een epoxy-gietvloer?", "Een PU-gietvloer is flexibeler, warmer en comfortabeler &mdash; ideaal voor woonhuizen. Epoxy is harder en slijtvaster, maar koeler en gevoeliger voor scheurvorming; vaker in garages en bedrijfsruimtes."),
             ("Hoe weet ik of mijn gietvloer-offerte eerlijk is?", "Vergelijk de prijs per m&sup2; per vloersoort met de marktbandbreedte, inclusief egaliseren en voorwerk. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Is Bylder een gietvloerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij leggen zelf geen gietvloeren en zijn geen leadverkoper &mdash; we tonen gietvloer-specialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
-            ("Ik ben gietvloer-specialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost eenmalig &euro;79 (geen abonnement). Geen terugkerende leadkosten."),
+            ("Ik ben gietvloer-specialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
     "isolatiebedrijf": {
@@ -363,7 +363,7 @@ VAKKEN = {
             ("Moet het een erkend isolatiebedrijf zijn voor ISDE?", "Ja. Voor ISDE-subsidie moet het werk worden uitgevoerd door een erkend bedrijf met BRL-certificering (bv. BRL 1303, 1304 of 2010). Vraag altijd om het certificaat v&oacute;&oacute;r ondertekening."),
             ("Hoe weet ik of mijn isolatie-offerte eerlijk is?", "Vergelijk de prijs per m&sup2; per maatregel met de marktbandbreedte. Bylder controleert je offerte per post en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Verdubbelt de ISDE-subsidie bij meerdere maatregelen?", "Ja. Bij twee of meer isolatiemaatregelen binnen 24 maanden verdubbelt het ISDE-bedrag per m&sup2; voor de isolatieposten. Check actuele bedragen en voorwaarden bij RVO.nl."),
-            ("Ik ben isolatiebedrijf &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan woningkopers die isoleren &mdash; kost eenmalig &euro;79 (geen abonnement)."),
+            ("Ik ben isolatiebedrijf &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan woningkopers die isoleren &mdash; kost &euro;79 per jaar."),
         ],
     },
     "kozijnbedrijf": {
@@ -401,7 +401,7 @@ VAKKEN = {
             ("Wanneer moet ik kozijnen vervangen in plaats van alleen het glas?", "Vervang kozijnen als ze rottend, krom of slecht isolerend zijn (enkelvoudig kozijnprofiel), als de afdichting faalt of als je wilt upgraden naar triple glas &mdash; dat vereist diepere sponningmaten dan HR++."),
             ("Wat is het ISDE-subsidiebedrag voor glas?", "HR++-glas in bestaande kozijnen: ISDE &euro;25/m&sup2;. Triple of vacuu&uuml;mglas in nieuwe kozijnen: ISDE &euro;111/m&sup2;. Bedragen veranderen &mdash; check de actuele stand bij RVO.nl."),
             ("Hoe weet ik of mijn kozijnen-offerte eerlijk is?", "Vergelijk de prijs per kozijn of per m&sup2; glas met de marktbandbreedte per glassoort en materiaal. Bylder controleert je offerte per post en signaleert te hoge of ontbrekende posten."),
-            ("Ik ben kozijnbedrijf &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan woningkopers die verduurzamen &mdash; kost eenmalig &euro;79 (geen abonnement)."),
+            ("Ik ben kozijnbedrijf &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan woningkopers die verduurzamen &mdash; kost &euro;79 per jaar."),
         ],
     },
     "warmtepompinstallateur": {
@@ -439,7 +439,7 @@ VAKKEN = {
             ("Heb ik een erkend installateur nodig voor ISDE?", "Ja. Voor ISDE-subsidie moet de installateur F-gassen-gecertificeerd zijn en werken met erkende apparatuur. Vraag altijd het certificaat en de productlijst op v&oacute;&oacute;r opdracht."),
             ("Moet ik eerst isoleren voordat ik een warmtepomp neem?", "Sterk aanbevolen. Een warmtepomp is het meest effici&euml;nt in een goed ge&iuml;soleerde woning met laagtemperatuurafgifte (vloerverwarming of grote radiatoren). Isoleer eerst; dan volstaat een kleinere, goedkopere pomp."),
             ("Hoe weet ik of mijn warmtepomp-offerte eerlijk is?", "Een warmtepomp-offerte telt veel posten: apparaat, boiler, installatiearbeid, elektra, leidingwerk en evt. vloerverwarming. Bylder controleert elke post afzonderlijk op marktconformiteit."),
-            ("Ik ben warmtepompinstallateur &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan woningkopers die verduurzamen &mdash; kost eenmalig &euro;79 (geen abonnement)."),
+            ("Ik ben warmtepompinstallateur &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan woningkopers die verduurzamen &mdash; kost &euro;79 per jaar."),
         ],
     },
     "dakdekker": {
@@ -477,7 +477,7 @@ VAKKEN = {
             ("Kan ik bij het vervangen van mijn dak meteen isoleren?", "Ja, en dat loont: dakisolatie meenemen bij een toch al geplande dakvervanging is goedkoper dan later een aparte ingreep. Je kunt ook ISDE-subsidie aanvragen als de isolatiewaarde voldoet aan de eisen."),
             ("Hoe weet ik of mijn dakdekker-offerte eerlijk is?", "Controleer de prijs per m&sup2; per type werk, materiaalkosten en arbeid afzonderlijk. Bylder controleert je offerte per post en signaleert te hoge of ontbrekende posten."),
             ("Is Bylder een dakdekkerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij werken niet op commissie van dakdekkers en zijn geen leadverkoper."),
-            ("Ik ben dakdekker &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd en beter vindbaar bij woningkopers &mdash; kost eenmalig &euro;79 (geen abonnement)."),
+            ("Ik ben dakdekker &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd en beter vindbaar bij woningkopers &mdash; kost &euro;79 per jaar."),
         ],
     },
     "ventilatiebedrijf": {
@@ -514,7 +514,7 @@ VAKKEN = {
             ("Wanneer heb ik een ventilatiebedrijf nodig?", "Na het isoleren van je woning: een luchtdichtere woning heeft meer gecontroleerde ventilatie nodig. Ook bij vochtige ruimtes, CO2-problemen of als je overschakelt op een warmtepomp."),
             ("Wat is het verschil tussen systeem C en systeem D?", "Systeem C (mechanische afzuiging) zuigt vochtige lucht af; verse lucht komt passief via roosters binnen. Systeem D (WTW) gebalanceerde ventilatie brengt verse lucht actief in en wint warmte terug uit afvoerlucht."),
             ("Hoe weet ik of mijn ventilatie-offerte eerlijk is?", "Een ventilatie-offerte omvat unit, leidingwerk, roosters en arbeid. Bylder controleert je offerte per post en signaleert te hoge posten of ontbrekende componenten."),
-            ("Ik ben ventilatiebedrijf &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren kost eenmalig &euro;79 (geen abonnement)."),
+            ("Ik ben ventilatiebedrijf &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren kost &euro;79 per jaar."),
         ],
     },
     "timmerman": {
@@ -552,7 +552,7 @@ VAKKEN = {
             ("Wat is het verschil tussen een timmerman en een kozijnbedrijf?", "Een kozijnbedrijf levert en plaatst kozijnen inclusief glas; een timmerman plaatst de kozijnen maar levert het kozijn niet altijd zelf. Bij kozijnvervanging kun je beide inschakelen."),
             ("Hoe weet ik of mijn timmerwerk-offerte eerlijk is?", "Controleer het uurtarief, de geschatte uren en materiaalkosten afzonderlijk. Bylder controleert je offerte per post en signaleert te hoge posten."),
             ("Is Bylder een timmerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform &mdash; geen timmerbedrijf en geen leadverkoper. We tonen timmerlieden neutraal, met beoordelingen uit meerdere bronnen."),
-            ("Ik ben timmerman &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren kost eenmalig &euro;79 (geen abonnement). Beter vindbaar bij woningkopers die verbouwen of verduurzamen."),
+            ("Ik ben timmerman &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren kost &euro;79 per jaar. Beter vindbaar bij woningkopers die verbouwen of verduurzamen."),
         ],
     },
     "energieadviseur": {
@@ -589,7 +589,7 @@ VAKKEN = {
             ("Is een energielabel verplicht bij de verkoop van mijn woning?", "Ja. Bij verkoop of nieuwe verhuur van een bestaande woning is een geldig energielabel wettelijk verplicht. Ontbreekt het bij verkoop, dan is er een boete van &euro;515. Het label is 10 jaar geldig."),
             ("Wat is een EPA-maatwerkadvies?", "Een persoonlijk rapport van een gecertificeerde adviseur met een overzicht van welke verduurzamingsmaatregelen jouw woning het meest opleveren, in welke volgorde, wat ze kosten en welke subsidies er gelden."),
             ("Hoe weet ik of mijn energieadvies-offerte eerlijk is?", "Vergelijk de prijs voor label-opname en maatwerkadvies met de marktbandbreedte. Let op: een adviseur die te lage aanbiedingen doet, kan aangestuurd zijn op snelle doorverwijzing naar installateurs."),
-            ("Ik ben EPA-adviseur &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren kost eenmalig &euro;79 (geen abonnement)."),
+            ("Ik ben EPA-adviseur &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren kost &euro;79 per jaar."),
         ],
     },
 }
@@ -899,7 +899,7 @@ def claim_cta(vak, stad_label=None):
     waar = f" in {html.escape(stad_label)}" if stad_label else ""
     return (f'<div style="background:rgba(184,92,56,0.06);border:1px solid rgba(184,92,56,0.2);border-radius:14px;padding:18px 20px;margin:22px 0;">'
             f'<div style="font-weight:700;color:#1A1208;font-size:15px;margin-bottom:4px;">Ben jij {html.escape(vak["sing"])}{waar}? Sta erbij.</div>'
-            f'<div style="font-size:13.5px;color:rgba(61,46,30,0.7);line-height:1.6;margin-bottom:12px;">Vermelding is gratis. Activeer je profiel eenmalig voor &euro;79 en word gekoppeld aan nieuwbouw- en verbouwkopers die n&uacute; een {html.escape(vak["sing"])} zoeken &mdash; geen terugkerende leadkosten.</div>'
+            f'<div style="font-size:13.5px;color:rgba(61,46,30,0.7);line-height:1.6;margin-bottom:12px;">Vermelding is gratis. Activeer je profiel voor &euro;79 per jaar en word gekoppeld aan nieuwbouw- en verbouwkopers die n&uacute; een {html.escape(vak["sing"])} zoeken &mdash; geen terugkerende leadkosten.</div>'
             f'<a href="{VOORDELEN}/" style="display:inline-block;background:#B85C38;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Bekijk de voordelen &amp; meld je aan &#8594;</a></div>'
             f'<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:8px;">Bedrijfsgegevens via Google &amp; OpenStreetMap (&copy; OpenStreetMap-bijdragers, ODbL). Reviewscores afkomstig van de genoemde bronnen. Klopt iets niet? Laat het ons weten.</p>')
 
@@ -1089,11 +1089,11 @@ def build_pillar(vak, vak_slug, bedrijven, steden_idx):
 def build_voor_vakbedrijven(totaal, plaatsen):
     vak = {"sing": "vakbedrijf"}  # alleen voor FOOTER-tekst
     canonical = f"{BASE}{VOORDELEN}/"
-    title = "Voor vakbedrijven: sta waar kopers je zoeken — eenmalig €79 | Bylder"
-    desc = ("Stukadoors, schilders, installateurs en andere vakbedrijven: activeer je Bylder-profiel voor eenmalig €79. "
+    title = "Voor vakbedrijven: sta waar kopers je zoeken — €79 per jaar | Bylder"
+    desc = ("Stukadoors, schilders, installateurs en andere vakbedrijven: activeer je Bylder-profiel voor €79 per jaar. "
             "Geen abonnement, geen leadveiling. Gekoppeld aan nieuwbouw- en verbouwkopers op het juiste moment.")
     qa = [
-        ("Wat kost een profiel op Bylder?", "Vermelding is gratis &mdash; veel bedrijven staan er al in. Je profiel <strong>activeren</strong> kost eenmalig &euro;79. Geen abonnement en geen terugkerende leadkosten."),
+        ("Wat kost een profiel op Bylder?", "Vermelding is gratis &mdash; veel bedrijven staan er al in. Je profiel <strong>activeren</strong> kost &euro;79 per jaar. Geen leadkosten en geen veiling."),
         ("Wat is het verschil met Werkspot of een leadplatform?", "Bij leadplatforms betaal je per lead of per maand en bied je mee op dezelfde aanvraag. Bij Bylder betaal je &eacute;&eacute;n keer &euro;79 voor een geactiveerd profiel &mdash; en wij tonen je neutraal, met je beoordelingen uit meerdere bronnen naast elkaar."),
         ("Hoe meld ik mijn bedrijf aan?", "Je deelt je Google-, Werkspot- of websitelink en wij stellen je profiel samen &mdash; geen formulieren. Daarna activeer je het en ben je vindbaar voor kopers in jouw plaats."),
         ("Voor welke vakbedrijven is dit?", "We starten met stukadoors en schilders en breiden uit naar tegelzetters, installateurs, dakdekkers en alle andere bouw- en afbouwvakken."),
@@ -1102,28 +1102,28 @@ def build_voor_vakbedrijven(totaal, plaatsen):
     schema = [faq_schema(qa), breadcrumb([("Bylder.com", BASE + "/"), ("Voor vakbedrijven", canonical)]),
               {"@context": "https://schema.org", "@type": "Service", "serviceType": "Vakbedrijf-profiel en leadkoppeling",
                "areaServed": {"@type": "Country", "name": "Nederland"}, "provider": {"@type": "Organization", "name": "Bylder.com", "url": BASE + "/"},
-               "offers": {"@type": "Offer", "price": "79", "priceCurrency": "EUR", "description": "Eenmalige activering van een vakbedrijf-profiel, geen abonnement."}}]
+               "offers": {"@type": "Offer", "price": "79", "priceCurrency": "EUR", "description": "Jaarlijkse activering van een vakbedrijf-profiel."}}]
     voordelen = [
         ("Geverifieerd profiel + badge", "Een geclaimd, geverifieerd profiel valt op en wekt vertrouwen bij kopers."),
         ("Hoger in je plaats", "Geactiveerde bedrijven staan bovenaan op de stad-pagina van jouw plaats."),
         ("Beheer je eigen profiel", "Pas je gegevens, diensten en foto's zelf aan &mdash; altijd actueel."),
         ("Reviews gebundeld", "Je scores van Google, Werkspot en Trustpilot naast elkaar &mdash; eerlijk en compleet."),
         ("Gekoppeld aan kopers-projecten", "Word getoond aan kopers in jouw regio op het moment dat zij jouw vak plannen."),
-        ("Geen terugkerende leadkosten", "Eenmalig &euro;79. Geen abonnement, geen veiling, geen kosten per lead."),
+        ("Geen terugkerende leadkosten", "&euro;79 per jaar. Geen veiling, geen kosten per lead."),
     ]
     vgrid = "".join(f'<div class="card"><div style="width:28px;height:4px;border-radius:2px;background:#3D5A3E;margin-bottom:12px;"></div>'
         f'<div style="font-weight:700;font-size:15px;color:#1A1208;margin-bottom:4px;">{t}</div>'
         f'<div style="font-size:13.5px;color:rgba(61,46,30,0.66);line-height:1.6;">{d}</div></div>' for t, d in voordelen)
     stappen = [("1", "Deel je link", "Stuur je Google-, Werkspot- of websitelink &mdash; geen formulieren."),
                ("2", "Wij vullen je profiel", "Bylder stelt je profiel samen met je gegevens en gebundelde reviews."),
-               ("3", "Activeer voor &euro;79", "Eenmalig betalen en je bent live, hoger vindbaar en gekoppeld aan kopers.")]
+               ("3", "Activeer voor &euro;79", "Eén bedrag per jaar en je bent live, hoger vindbaar en gekoppeld aan kopers.")]
     sgrid = "".join(f'<div style="flex:1;min-width:220px;"><div style="width:38px;height:38px;border-radius:10px;background:#3D5A3E;color:#F5F0E8;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:\'Space Mono\',monospace;">{n}</div>'
         f'<div style="font-weight:700;font-size:15px;color:#1A1208;margin:12px 0 4px;">{t}</div>'
         f'<div style="font-size:13.5px;color:rgba(61,46,30,0.66);line-height:1.6;">{d}</div></div>' for n, t, d in stappen)
     body = f"""<main style="padding:56px 0 20px;"><div class="container" style="max-width:1000px;">
   <div style="max-width:760px;">
     <div class="badge">Voor vakbedrijven</div>
-    <h1 style="font-size:2.6rem;font-weight:800;line-height:1.12;margin-bottom:14px;">Sta waar kopers je zoeken &mdash; voor eenmalig &euro;79</h1>
+    <h1 style="font-size:2.6rem;font-weight:800;line-height:1.12;margin-bottom:14px;">Sta waar kopers je zoeken &mdash; voor &euro;79 per jaar</h1>
     <p style="font-size:1.15rem;color:rgba(61,46,30,0.7);line-height:1.7;margin-bottom:14px;">Bylder helpt nieuwbouw- en verbouwkopers een eerlijke prijs te betalen &mdash; en koppelt ze aan vakbedrijven in hun plaats. Je staat er waarschijnlijk al tussen: <strong>{format(totaal, ",d").replace(",", ".")} vakbedrijven over {plaatsen} plaatsen</strong>. Activeer je profiel en word geverifieerd, beter vindbaar en gekoppeld aan kopers.</p>
     <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;">
       <a href="{INTAKE}" style="background:#B85C38;color:#F5F0E8;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;">Meld je bedrijf aan &#8594;</a>
@@ -1132,20 +1132,20 @@ def build_voor_vakbedrijven(totaal, plaatsen):
   </div>
   <div class="divider"></div>
   <h2 style="font-size:1.6rem;font-weight:800;margin-bottom:6px;">Wat je krijgt voor &euro;79</h2>
-  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;">Eenmalig. Geen abonnement, geen leadkosten.</p>
+  <p style="font-size:15px;color:rgba(61,46,30,0.6);margin-bottom:18px;">Per jaar. Geen leadkosten, geen veiling.</p>
   <div class="grid-3">{vgrid}</div>
   <h2 id="hoe" style="font-size:1.6rem;font-weight:800;margin:48px 0 18px;">Zo werkt het</h2>
   <div style="display:flex;flex-wrap:wrap;gap:28px;">{sgrid}</div>
   <div style="background:rgba(61,90,62,0.06);border:1px solid rgba(61,90,62,0.18);border-radius:16px;padding:26px;margin:44px 0;">
     <h2 style="font-size:1.4rem;font-weight:800;margin-bottom:14px;">Bylder vs. een leadplatform</h2>
     <div class="grid-2" style="gap:16px;">
-      <div><div style="font-weight:700;color:#3D5A3E;margin-bottom:6px;">Bylder</div><ul class="check-list"><li>Eenmalig &euro;79 &mdash; geen abonnement</li><li>Geen kosten per lead, geen veiling</li><li>Neutraal getoond, reviews uit meerdere bronnen</li><li>Gekoppeld aan het project van de koper</li></ul></div>
+      <div><div style="font-weight:700;color:#3D5A3E;margin-bottom:6px;">Bylder</div><ul class="check-list"><li>&euro;79 per jaar</li><li>Geen kosten per lead, geen veiling</li><li>Neutraal getoond, reviews uit meerdere bronnen</li><li>Gekoppeld aan het project van de koper</li></ul></div>
       <div><div style="font-weight:700;color:rgba(61,46,30,0.5);margin-bottom:6px;">Leadplatform</div><ul style="list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;color:rgba(61,46,30,0.6);"><li>&times; Maandlasten of kosten per lead</li><li>&times; Meebieden op dezelfde aanvraag</li><li>&times; Alleen hun eigen reviews</li><li>&times; Koude leads</li></ul></div>
     </div>
   </div>
   <div style="background:#3D5A3E;border-radius:20px;padding:42px;text-align:center;margin:40px 0;">
     <h2 style="font-size:1.7rem;font-weight:800;color:#F5F0E8;margin-bottom:10px;">Klaar om erbij te staan?</h2>
-    <p style="color:rgba(245,240,232,0.72);margin-bottom:24px;max-width:520px;margin-left:auto;margin-right:auto;font-size:15px;line-height:1.6;">Deel je Google-, Werkspot- of websitelink. Wij stellen je profiel samen en je activeert het voor eenmalig &euro;79.</p>
+    <p style="color:rgba(245,240,232,0.72);margin-bottom:24px;max-width:520px;margin-left:auto;margin-right:auto;font-size:15px;line-height:1.6;">Deel je Google-, Werkspot- of websitelink. Wij stellen je profiel samen en je activeert het voor &euro;79 per jaar.</p>
     <a href="{INTAKE}" class="cta-primary">Meld je bedrijf aan &#8594;</a>
   </div>
   <div class="divider"></div>
