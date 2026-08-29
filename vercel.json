@@ -411,6 +411,16 @@
       "source": "/nieuwbouw-project/de-bostuinen-fase-2-zwijndrecht/",
       "destination": "/nieuwbouw-project/de-bostuinen-zwijndrecht/",
       "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/eikenstein-fase-2-29-appartementen-bosvilla-zeist/",
+      "destination": "/nieuwbouw-project/eikenstein-zeist/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/eikenstein-fase-3-36-woningen-zeist/",
+      "destination": "/nieuwbouw-project/eikenstein-zeist/",
+      "permanent": true
     }
   ],
   "rewrites": [
