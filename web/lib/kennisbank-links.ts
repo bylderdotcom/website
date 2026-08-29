@@ -42,6 +42,11 @@ export const KENNISBANK_SETS: Record<string, string[]> = {
   nieuwbouwProject: ['bouwtechniek', 'geldRecht', 'besparen', 'begrip'],
 }
 
+// Het blok wordt ná </div></div> vóór </main> ingevoegd en staat dus BUITEN de
+// container van het cluster. Zonder eigen max-width en marges liep het over de
+// volle schermbreedte en begon de tekst tegen de linkerrand — op een scherm van
+// 1440px zag dat eruit als afgesneden tekst. Zelfde breedte als de kolom
+// erboven, zodat het uitlijnt met de rest van de pagina.
 function blok(keys: string[]): string {
   const links = keys
     .map(k => SECTIES[k])
@@ -52,7 +57,7 @@ function blok(keys: string[]): string {
     )
     .join('')
   return (
-    `<section style="margin-top:40px;padding-top:24px;border-top:1px solid rgba(61,46,30,0.1);">` +
+    `<section style="max-width:820px;margin:40px auto 0;padding:24px 24px 0;border-top:1px solid rgba(61,46,30,0.1);">` +
     `<h2 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3D5A3E;margin-bottom:6px;">Verder lezen</h2>` +
     `<p style="font-size:13px;color:rgba(61,46,30,0.72);margin:0 0 12px;max-width:680px;">Achtergrond en uitleg in de <a href="/kennisbank/" style="color:#3D5A3E;font-weight:600;">Bylder Kennisbank</a>.</p>` +
     `<div style="display:flex;flex-wrap:wrap;gap:8px;">${links}</div>` +
