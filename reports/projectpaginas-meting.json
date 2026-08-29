@@ -1,0 +1,428 @@
+{
+ "metingen": [
+  {
+   "datum": "2026-08-29",
+   "bron": "bylder.com-Performance-on-Search-2026-08-29.zip",
+   "per_soort": {
+    "handwerk": {
+     "paginas": 4,
+     "klikken": 4,
+     "vertoningen": 91,
+     "vertoningen_per_pagina": 22.8,
+     "stil": 1
+    },
+    "gegenereerd": {
+     "paginas": 34,
+     "klikken": 0,
+     "vertoningen": 12,
+     "vertoningen_per_pagina": 0.4,
+     "stil": 31
+    }
+   },
+   "dekking": [
+    {
+     "cohort": "100+ woningen",
+     "projecten": 97,
+     "met_pagina": 13
+    },
+    {
+     "cohort": "50-99",
+     "projecten": 84,
+     "met_pagina": 8
+    },
+    {
+     "cohort": "25-49",
+     "projecten": 151,
+     "met_pagina": 8
+    },
+    {
+     "cohort": "<25",
+     "projecten": 663,
+     "met_pagina": 2
+    }
+   ],
+   "paginas": [
+    {
+     "slug": "volharding-marum",
+     "pad": "/nieuwbouw-project/volharding-marum/",
+     "soort": "handwerk",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 4,
+     "vertoningen": 82,
+     "positie": 7.43
+    },
+    {
+     "slug": "park-overdeschie-woningen-rotterdam",
+     "pad": "/nieuwbouw-project/park-overdeschie-woningen-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 9,
+     "positie": 12.33
+    },
+    {
+     "slug": "condorpark-apeldoorn",
+     "pad": "/nieuwbouw-project/condorpark-apeldoorn/",
+     "soort": "handwerk",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 5,
+     "positie": 7.4
+    },
+    {
+     "slug": "haarlemszicht-haarlem",
+     "pad": "/nieuwbouw-project/haarlemszicht-haarlem/",
+     "soort": "handwerk",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 4,
+     "positie": 4.0
+    },
+    {
+     "slug": "boomgaerde-westland",
+     "pad": "/nieuwbouw-project/boomgaerde-westland/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 2,
+     "positie": 14.0
+    },
+    {
+     "slug": "populus-rotterdam",
+     "pad": "/nieuwbouw-project/populus-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 1,
+     "positie": 6.0
+    },
+    {
+     "slug": "blinq-capelle-aan-den-ijssel",
+     "pad": "/nieuwbouw-project/blinq-capelle-aan-den-ijssel/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "corner-lofts-s-gravenhage",
+     "pad": "/nieuwbouw-project/corner-lofts-s-gravenhage/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "de-bostuinen-zwijndrecht",
+     "pad": "/nieuwbouw-project/de-bostuinen-zwijndrecht/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "de-meesters-van-vroondaal-s-gravenhage",
+     "pad": "/nieuwbouw-project/de-meesters-van-vroondaal-s-gravenhage/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "de-pauwentuin-leidschendam-voorburg",
+     "pad": "/nieuwbouw-project/de-pauwentuin-leidschendam-voorburg/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "de-scharnier-rotterdam",
+     "pad": "/nieuwbouw-project/de-scharnier-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "de-suikerzijde-groningen",
+     "pad": "/nieuwbouw-project/de-suikerzijde-groningen/",
+     "soort": "handwerk",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "duinhil-s-gravenhage",
+     "pad": "/nieuwbouw-project/duinhil-s-gravenhage/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "edisonpark-zoetermeer",
+     "pad": "/nieuwbouw-project/edisonpark-zoetermeer/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "eve-nieuwbouw-leidschendam-voorburg",
+     "pad": "/nieuwbouw-project/eve-nieuwbouw-leidschendam-voorburg/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "fortunapark-vlaardingen-vlaardingen",
+     "pad": "/nieuwbouw-project/fortunapark-vlaardingen-vlaardingen/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "havenmeester-rijswijk-zh",
+     "pad": "/nieuwbouw-project/havenmeester-rijswijk-zh/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "het-zuider-carre-rotterdam",
+     "pad": "/nieuwbouw-project/het-zuider-carre-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "hof-van-rijswijk-de-prins-rijswijk-zh",
+     "pad": "/nieuwbouw-project/hof-van-rijswijk-de-prins-rijswijk-zh/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "maestro-s-gravenhage",
+     "pad": "/nieuwbouw-project/maestro-s-gravenhage/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "mix-b-rotterdam",
+     "pad": "/nieuwbouw-project/mix-b-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "monchy-den-haag-s-gravenhage",
+     "pad": "/nieuwbouw-project/monchy-den-haag-s-gravenhage/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "new-maas-rotterdam",
+     "pad": "/nieuwbouw-project/new-maas-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "nieuw-kralingen-aan-de-boezem-ii-rotterdam",
+     "pad": "/nieuwbouw-project/nieuw-kralingen-aan-de-boezem-ii-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "nieuw-kralingen-in-de-lanen-i-rotterdam",
+     "pad": "/nieuwbouw-project/nieuw-kralingen-in-de-lanen-i-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "opdreef-s-gravenhage",
+     "pad": "/nieuwbouw-project/opdreef-s-gravenhage/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "riva-rotterdam",
+     "pad": "/nieuwbouw-project/riva-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "rotterdam-tree-house-koopappartementen-rotterdam",
+     "pad": "/nieuwbouw-project/rotterdam-tree-house-koopappartementen-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "soeterdael-zoetermeer",
+     "pad": "/nieuwbouw-project/soeterdael-zoetermeer/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "stockholm-nissewaard",
+     "pad": "/nieuwbouw-project/stockholm-nissewaard/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "terrazza-westland",
+     "pad": "/nieuwbouw-project/terrazza-westland/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "timber-rotterdam",
+     "pad": "/nieuwbouw-project/timber-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "vlietpark-fase-2-rotterdam",
+     "pad": "/nieuwbouw-project/vlietpark-fase-2-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "waelhoven-fase-1-westland",
+     "pad": "/nieuwbouw-project/waelhoven-fase-1-westland/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "weder-rotterdam",
+     "pad": "/nieuwbouw-project/weder-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "west-vlaardingen",
+     "pad": "/nieuwbouw-project/west-vlaardingen/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "zwanenpark-vlaardingen",
+     "pad": "/nieuwbouw-project/zwanenpark-vlaardingen/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    }
+   ]
+  }
+ ]
+}
