@@ -9,17 +9,31 @@ import type { Metadata } from 'next'
  * daar valt niets te winnen. Wél de afwerking en inrichting die de klant nu zelf
  * bij een winkel koopt, waar de vakman niets aan verdient.
  *
- * Waarheidsgrens: dit is werving ("op uitnodiging"), geen claim. Er staan geen
- * kortingspercentages of deelnemersaantallen op die niet bestaan. Wat er wél
- * staat is echt: het assortiment is live, CNX/DDC is de eerste leverancier, en
- * de vraagkant (woningscan, Kadaster) draait.
+ * Besluit Daniel, 29 aug 2026: de deur gaat open. "Op uitnodiging" was een
+ * drempel die we zelf opwierpen; elk vakbedrijf kan meedoen voor EUR 79 per jaar.
+ * En het programma is niet één maar twee dingen — dat tweede is het overtuigende
+ * deel en stond er helemaal niet op:
+ *
+ *   1. inkoopkorting op wat het bedrijf zelf verwerkt;
+ *   2. vanaf 1% van de aankoopwaarde als de KLANT via de code van het
+ *      vakbedrijf koopt — een categorie waar dit bedrijf nooit iets verdiende,
+ *      zonder inkopen, voorraad of montage.
+ *
+ * Waarheidsgrens: "vanaf 1%" en niet één hard getal, want het verschilt per merk.
+ * Eén percentage op de pagina wordt een belofte die bij het eerste afwijkende
+ * merk niet klopt. Wat er verder staat is echt: het assortiment is live, CNX/DDC
+ * is de eerste leverancier, en de vraagkant (woningscan, Kadaster) draait.
+ *
+ * Uitbetalen kan pas als elke aankoop herleidbaar is tot een persoonlijke code.
+ * Zolang die er niet is, is dit een propositie en geen werkend systeem — houd
+ * die volgorde in de gaten voordat dit breed wordt uitgezet.
  */
 
 export const metadata: Metadata = {
-  title: 'Inkoopvoordeel voor vakbedrijven | Bylder',
+  title: 'Inkoopvoordeel voor vakbedrijven — €79 per jaar | Bylder',
   description:
-    'Verdien aan de afwerking, niet alleen aan je uren. Word verkooppunt van het gecureerde '
-    + 'Bylder-assortiment voor afwerking en inrichting — op uitnodiging, een handvol bedrijven per vak per regio.',
+    'Verdien aan de afwerking, niet alleen aan je uren. Inkoopkorting op het Bylder-assortiment '
+    + 'én vanaf 1% van de aankoopwaarde als je klant via jouw code koopt. €79 per jaar, open voor elk vakbedrijf.',
   alternates: { canonical: 'https://www.bylder.com/inkoopvoordeel/' },
 }
 
@@ -41,13 +55,16 @@ const LABEL: React.CSSProperties = {
 }
 
 const STAPPEN = [
-  { n: '1', kop: 'Meld je aan', tekst: 'Vertel wat je vak is en in welke regio je werkt. Deelname is op '
-    + 'uitnodiging: een handvol bedrijven per vak per regio, zodat het voor iedereen die meedoet iets oplevert.' },
+  { n: '1', kop: 'Meld je aan', tekst: 'Vertel wat je vak is en in welke regio je werkt. Elk vakbedrijf kan '
+    + 'meedoen; deelname kost €79 per jaar. Je krijgt je eigen code en je profiel op Bylder.' },
   { n: '2', kop: 'Kies je categorieën', tekst: 'Per productcategorie maken we afspraken. We beginnen met '
     + 'kozijnloze deuren en breiden categorie voor categorie uit — vloeren, raamdecoratie, verlichting.' },
   { n: '3', kop: 'Verkoop en plaats', tekst: 'Jij adviseert en plaatst bij de klant; het merk levert '
     + 'rechtstreeks aan jou en factureert jou rechtstreeks. Geen tussenvoorraad, geen gedoe.' },
-  { n: '4', kop: 'Wij leveren de vraag erbij', tekst: 'Bylder ziet via het Kadaster welke woningen in '
+  { n: '4', kop: 'Of laat je klant zelf kopen', tekst: 'Wil je klant iets uit het assortiment dat je niet '
+    + 'zelf levert — een bed, een bank, verlichting? Geef hem je code. Hij krijgt korting, jij krijgt vanaf '
+    + '1% van de aankoopwaarde. Geen inkoop, geen voorraad, geen montage.' },
+  { n: '5', kop: 'Wij leveren de vraag erbij', tekst: 'Bylder ziet via het Kadaster welke woningen in '
     + 'jouw regio voor een keuze staan. Die vraag sturen we naar aangesloten verkooppunten — en jouw '
     + 'uitgevoerde werk komt als portfolio op je Bylder-profiel.' },
 ]
@@ -55,8 +72,20 @@ const STAPPEN = [
 const VRAGEN = [
   {
     v: 'Wat kost deelname?',
-    a: 'Niets vooraf. Bylder verdient een volumebonus bij de merken over wat er via het programma loopt — '
-      + 'niet aan jou. Hoe meer verkooppunten er verkopen, hoe beter de condities voor iedereen worden.',
+    a: '€79 per jaar. Dat is het enige wat je betaalt: geen opstartkosten, geen commissie over je eigen '
+      + 'werk. Met twee klanten die via jouw code iets kopen heb je het er doorgaans al uit — bij een '
+      + 'aankoop van €4.000 is 1% al €40.',
+  },
+  {
+    v: 'Hoe verdien ik aan iets dat ik niet zelf lever?',
+    a: 'Je klant koopt tóch. Als hij dat via jouw persoonlijke code doet, krijgt hij korting op het '
+      + 'Bylder-assortiment en ontvang jij vanaf 1% van de aankoopwaarde. Je koopt niets in, houdt niets '
+      + 'op voorraad en monteert niets. Het enige wat je doet is de code geven.',
+  },
+  {
+    v: 'Is dat percentage voor elk merk hetzelfde?',
+    a: 'Nee. Het begint bij 1% en ligt bij sommige merken hoger; het hangt af van de afspraak met dat merk. '
+      + 'Wat je per merk krijgt staat in je eigen omgeving, zodat je het van tevoren weet.',
   },
   {
     v: 'Waarom geen ruwbouwmaterialen?',
@@ -66,9 +95,9 @@ const VRAGEN = [
   },
   {
     v: 'Wie kan meedoen?',
-    a: 'Een handvol bedrijven per vak per regio, op uitnodiging. We beginnen in de regio Rotterdam, '
-      + 'Den Haag, Zoetermeer en Leidschendam en breiden van daaruit uit. Aanmelden kan uit heel Nederland; '
-      + 'je hoort van ons zodra jouw vak en regio opengaan.',
+    a: 'Elk vakbedrijf in Nederland, ongeacht vak of regio. Er is geen uitnodiging nodig en geen maximum '
+      + 'per gebied. Het assortiment groeit per categorie, dus wat je kunt aanbieden hangt af van welke '
+      + 'categorieën al open staan — dat zie je in je eigen omgeving.',
   },
 ]
 
@@ -81,26 +110,36 @@ const faqSchema = {
   })),
 }
 
-const MAIL = 'mailto:info@bylder.com?subject=' + encodeURIComponent('Inkoopvoordeel — aanmelding verkooppunt')
+const MAIL = 'mailto:info@bylder.com?subject=' + encodeURIComponent('Inkoopvoordeel — aanmelding vakbedrijf')
 
 export default function InkoopvoordeelPage() {
   return (
     <main style={{ maxWidth: 1200, boxSizing: 'border-box', margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
-      <p style={LABEL}>Zakelijk &middot; op uitnodiging</p>
+      <p style={LABEL}>Zakelijk &middot; &euro;79 per jaar</p>
       <h1 style={{ fontSize: '2.15rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Verdien aan de afwerking, niet alleen aan je uren
       </h1>
       <p style={{ ...P, fontSize: 17, maxWidth: '64ch' }}>
         Jij plaatst de deur, de vloer of de raamdecoratie — maar gekocht wordt hij bij een winkel, en dat
-        geld loopt aan je voorbij. Bylder maakt van aangesloten vakbedrijven het verkooppunt van een
-        gecureerd assortiment voor afwerking en inrichting. Jij verkoopt en plaatst; het merk levert
-        rechtstreeks; wij bundelen het volume en sturen de vraag jouw kant op.
+        geld loopt aan je voorbij. Bij Bylder verdien je er op twee manieren aan: <strong>inkoopkorting</strong> op
+        wat je zelf verwerkt, en <strong>vanaf 1% van de aankoopwaarde</strong> als je klant via jouw code koopt.
+        Ook aan spullen die je niet zelf levert.
       </p>
+
+      <div style={{ ...KAART, marginTop: 20, background: '#EBF0E8', borderColor: 'rgba(61,90,62,0.3)', maxWidth: '64ch' }}>
+        <h2 style={{ ...H2, margin: '0 0 8px', fontSize: '1.18rem' }}>Het rekensommetje</h2>
+        <p style={{ ...P, margin: 0, fontSize: 15 }}>
+          Een klant van jou koopt een bed. Jij zegt één zin: <em>koop &rsquo;m via deze code, dan krijg je
+          korting.</em> De klant betaalt minder, jij ontvangt vanaf 1% van de aankoopwaarde — bij
+          &euro;4.000 is dat &euro;40. Twee van die zinnen en je jaarbijdrage van &euro;79 is eruit;
+          alles daarna is winst. Je koopt niets in, houdt niets op voorraad en monteert niets.
+        </p>
+      </div>
       <p style={{ margin: '18px 0 0' }}>
         <a href={MAIL} style={{
           display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 11,
           padding: '14px 24px', fontWeight: 800, fontSize: 15, textDecoration: 'none',
-        }}>Meld je aan voor een uitnodiging</a>
+        }}>Meld je aan &mdash; &euro;79 per jaar</a>
       </p>
 
       <h2 style={H2}>Waarom dit iets anders is dan je groothandel</h2>
@@ -157,18 +196,20 @@ export default function InkoopvoordeelPage() {
         <p style={{ ...P, marginBottom: 14 }}>
           Eén regel om te onthouden: wij nemen nooit zelf werk aan. Het werk — verkopen, plaatsen,
           de klantrelatie — is en blijft van het vakbedrijf. Wij leveren het assortiment, het volume
-          en het moment.
+          en het moment. En als jouw klant iets koopt dat jij niet levert, verdien jij eraan mee in
+          plaats van dat het aan je voorbijgaat.
         </p>
         <a href={MAIL} style={{
           display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 11,
           padding: '13px 22px', fontWeight: 800, fontSize: 15, textDecoration: 'none',
-        }}>Meld je aan voor een uitnodiging</a>
+        }}>Meld je aan &mdash; &euro;79 per jaar</a>
       </div>
 
       <p style={{ ...P, fontSize: 13, color: `${INKT}0.55)`, marginTop: 26 }}>
-        Bylder verdient in dit programma een volumebonus bij de merken. Ons advies aan bewoners blijft
-        daarvan gescheiden: de offerte-check vergelijkt op marktprijs, ook als dat tegen ons eigen
-        aanbod of dat van aangesloten verkooppunten ingaat.
+        Bylder verdient aan de jaarbijdrage en aan een volumebonus bij de merken. Ons advies aan bewoners
+        blijft daarvan gescheiden: de offerte-check vergelijkt op marktprijs, ook als dat tegen ons eigen
+        aanbod of dat van aangesloten vakbedrijven ingaat. Vergoedingen worden uitgekeerd op basis van
+        aankopen die via een persoonlijke code herleidbaar zijn.
       </p>
 
       <script type="application/ld+json"
