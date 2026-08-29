@@ -205,6 +205,77 @@ def lees_dekking(map_of_zip):
     return uit or None
 
 
+VAKKEN = ("aannemer", "loodgieter", "elektricien", "schilder", "stukadoor", "badkamer",
+          "dakkapel", "gietvloer", "dakdekker", "timmerman", "kozijnbedrijf",
+          "isolatiebedrijf", "ventilatiebedrijf", "energieadviseur", "warmtepompinstallateur")
+
+
+def _laag(pad):
+    seg = pad.strip("/").split("/")
+    top = seg[0] if seg and seg[0] else ""
+    if top in VAKKEN:
+        return "vakbedrijf-profielen" if len(seg) > 1 and seg[1] == "bedrijf" else "vak-stadpagina's"
+    if top == "kopen":
+        return "/kopen/ (assortiment per stad)"
+    if top == "nieuwbouw-project":
+        return "projectpagina's"
+    if not top:
+        return "homepage"
+    return f"overig: /{top}/"
+
+
+def clusterverkeer(per_pagina, dagreeks_totaal=None):
+    """Rekent klikken en vertoningen toe aan de laag waar een pagina in zit.
+
+    Waarom dit erbij hoort: op 31 juli ging een hele laag op noindex op grond van
+    een aanname over welke pagina's niets opleveren. Dat kostte drie weken van de
+    best presterende laag van de site. Sindsdien geldt: geen laag kleiner maken
+    voordat dit overzicht op tafel ligt.
+
+    Let op de afkapping. Search Console exporteert maximaal 1.000 pagina's. Voor
+    klikken maakt dat niets uit — die duizend bevatten ze vrijwel allemaal, en een
+    pagina die er niet in staat heeft er dus geen. Voor vertoningen wel: de staart
+    daarbuiten is groot. Snoeibesluiten mogen daarom op klikken, niet op
+    vertoningen.
+    """
+    if not per_pagina:
+        return None
+    agg = collections.defaultdict(lambda: {"klikken": 0, "vertoningen": 0, "paginas": 0})
+    for pad, m in per_pagina.items():
+        a = agg[_laag(pad)]
+        a["klikken"] += m["klikken"]
+        a["vertoningen"] += m["vertoningen"]
+        a["paginas"] += 1
+    lagen = [{"laag": n, **v} for n, v in agg.items()]
+    lagen.sort(key=lambda x: -x["klikken"])
+    uit = {"lagen": lagen, "paginas_in_export": len(per_pagina),
+           "afgekapt": len(per_pagina) >= 1000}
+    if dagreeks_totaal:
+        uit["site_totaal"] = dagreeks_totaal
+        uit["klik_dekking"] = round(100 * sum(l["klikken"] for l in lagen)
+                                    / max(dagreeks_totaal["klikken"], 1))
+        uit["vertoning_dekking"] = round(100 * sum(l["vertoningen"] for l in lagen)
+                                         / max(dagreeks_totaal["vertoningen"], 1))
+    return uit
+
+
+def lees_dagreeks(map_of_zip):
+    """Het echte sitetotaal over de periode, uit de dagreeks van dezelfde export."""
+    if not map_of_zip:
+        return None
+    map_ = map_of_zip
+    if map_.lower().endswith(".zip"):
+        map_ = tempfile.mkdtemp(prefix="gsc-reeks-")
+        with zipfile.ZipFile(map_of_zip) as z:
+            z.extractall(map_)
+    _, d = _vind_csv(map_, "datum", "date")
+    if not d:
+        return None
+    k = list(d[0].keys())
+    return {"klikken": sum(_getal(r[k[1]]) for r in d),
+            "vertoningen": sum(_getal(r[k[2]]) for r in d)}
+
+
 def sitemap_omvang():
     """Hoeveel URL's bieden we Google aan, en welk deel daarvan is een project?"""
     totaal = project = 0
@@ -296,10 +367,11 @@ def main():
 
     site = lees_dekking(dekking_bron)
     sitemaps = sitemap_omvang()
+    clusters = clusterverkeer(gsc, lees_dagreeks(args[0] if not args[0].startswith("-") else None))
 
     meting = {"datum": VANDAAG, "bron": bron, "per_soort": per_soort,
               "site_indexatie": site, "sitemaps": sitemaps,
-              "dekking": dekking, "paginas": rijen}
+              "clusterverkeer": clusters, "dekking": dekking, "paginas": rijen}
 
     # --- historie: elke ronde erbij, zodat "te jong" van "onvindbaar" te scheiden is ---
     os.makedirs(os.path.dirname(RAPPORT), exist_ok=True)
@@ -345,6 +417,20 @@ def main():
     print("Let op: dat betekent ongezien, niet ongeïndexeerd — Search Console noemt")
     print("alleen pagina's mét vertoningen. Exporteer ook Pagina-indexering en zet die")
     print("CSV in dezelfde map, dan vult deze meting de echte indexstatus in.")
+    if clusters and len(clusters["lagen"]) > 1:
+        print("\nVERKEER PER LAAG")
+        print(f"  {'laag':<30}{'klik':>7}{'vert':>9}{'pag.':>7}")
+        for l in clusters["lagen"][:10]:
+            print(f"  {l['laag'][:28]:<30}{l['klikken']:>7}{l['vertoningen']:>9}{l['paginas']:>7}")
+        if clusters.get("site_totaal"):
+            t = clusters["site_totaal"]
+            print(f"  site-totaal uit de dagreeks: {t['klikken']} klikken, {t['vertoningen']} vertoningen")
+            print(f"  deze export dekt {clusters['klik_dekking']}% van de klikken en "
+                  f"{clusters['vertoning_dekking']}% van de vertoningen")
+        if clusters["afgekapt"]:
+            print("  LET OP: Search Console kapt af op 1.000 pagina's. Klikken zijn vrijwel")
+            print("  volledig gedekt, vertoningen niet — snoei dus op klikken, niet op vertoningen.")
+
     if site:
         print("\nINDEXATIE VAN DE HELE SITE  (peildatum %s)" % site.get("peildatum", "?"))
         print(f"  {site['geindexeerd']:>6} geïndexeerd van {site['bekend_totaal']:>6} bekende URL's"

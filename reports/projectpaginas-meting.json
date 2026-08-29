@@ -2,21 +2,21 @@
  "metingen": [
   {
    "datum": "2026-08-29",
-   "bron": "bylder.com-Performance-on-Search-2026-08-29.zip",
+   "bron": "bylder.com-Performance-on-Search-2026-08-29 (1).zip",
    "per_soort": {
     "handwerk": {
      "paginas": 4,
      "klikken": 4,
-     "vertoningen": 91,
-     "vertoningen_per_pagina": 22.8,
-     "stil": 1
+     "vertoningen": 82,
+     "vertoningen_per_pagina": 20.5,
+     "stil": 3
     },
     "gegenereerd": {
      "paginas": 34,
      "klikken": 0,
-     "vertoningen": 12,
-     "vertoningen_per_pagina": 0.4,
-     "stil": 31
+     "vertoningen": 0,
+     "vertoningen_per_pagina": 0.0,
+     "stil": 34
     }
    },
    "site_indexatie": {
@@ -61,6 +61,270 @@
     "urls_in_sitemaps": 56688,
     "waarvan_projectpaginas": 40
    },
+   "clusterverkeer": {
+    "lagen": [
+     {
+      "laag": "vakbedrijf-profielen",
+      "klikken": 663,
+      "vertoningen": 49389,
+      "paginas": 545
+     },
+     {
+      "laag": "vak-stadpagina's",
+      "klikken": 237,
+      "vertoningen": 50853,
+      "paginas": 207
+     },
+     {
+      "laag": "overig: /kortingscode/",
+      "klikken": 93,
+      "vertoningen": 5429,
+      "paginas": 50
+     },
+     {
+      "laag": "/kopen/ (assortiment per stad)",
+      "klikken": 67,
+      "vertoningen": 5891,
+      "paginas": 72
+     },
+     {
+      "laag": "overig: /en-us/",
+      "klikken": 34,
+      "vertoningen": 5326,
+      "paginas": 25
+     },
+     {
+      "laag": "overig: /kennisbank/",
+      "klikken": 24,
+      "vertoningen": 13468,
+      "paginas": 20
+     },
+     {
+      "laag": "overig: /ai-verbouwingskosten-berekenen/",
+      "klikken": 12,
+      "vertoningen": 76,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /ruimtes/",
+      "klikken": 12,
+      "vertoningen": 1432,
+      "paginas": 9
+     },
+     {
+      "laag": "overig: /nieuwbouw-gids/",
+      "klikken": 11,
+      "vertoningen": 633,
+      "paginas": 4
+     },
+     {
+      "laag": "overig: /wonen-in/",
+      "klikken": 11,
+      "vertoningen": 372,
+      "paginas": 9
+     },
+     {
+      "laag": "overig: /blog/",
+      "klikken": 10,
+      "vertoningen": 4183,
+      "paginas": 3
+     },
+     {
+      "laag": "overig: /vouchers/",
+      "klikken": 9,
+      "vertoningen": 628,
+      "paginas": 4
+     },
+     {
+      "laag": "overig: /nieuwbouw/",
+      "klikken": 9,
+      "vertoningen": 1729,
+      "paginas": 8
+     },
+     {
+      "laag": "overig: /verbouwing-visualiseren-met-ai/",
+      "klikken": 5,
+      "vertoningen": 537,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /meerwerk/",
+      "klikken": 5,
+      "vertoningen": 278,
+      "paginas": 4
+     },
+     {
+      "laag": "projectpagina's",
+      "klikken": 4,
+      "vertoningen": 82,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /online-budget-tracker-verbouwing/",
+      "klikken": 4,
+      "vertoningen": 15,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /vve-appartement/",
+      "klikken": 3,
+      "vertoningen": 393,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /over-ons/",
+      "klikken": 3,
+      "vertoningen": 77,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /op-maat/",
+      "klikken": 3,
+      "vertoningen": 900,
+      "paginas": 4
+     },
+     {
+      "laag": "overig: /auping-korting-nieuwbouw-verhuizen/",
+      "klikken": 2,
+      "vertoningen": 216,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /ai-verhuisassistent-slimme-planner/",
+      "klikken": 2,
+      "vertoningen": 55,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /bouwvergunning/",
+      "klikken": 2,
+      "vertoningen": 1365,
+      "paginas": 3
+     },
+     {
+      "laag": "overig: /kopersbegeleiding/",
+      "klikken": 2,
+      "vertoningen": 37,
+      "paginas": 2
+     },
+     {
+      "laag": "overig: /nieuwbouw-tools/",
+      "klikken": 2,
+      "vertoningen": 38,
+      "paginas": 2
+     },
+     {
+      "laag": "overig: /aannemer-matching/",
+      "klikken": 2,
+      "vertoningen": 4,
+      "paginas": 2
+     },
+     {
+      "laag": "homepage",
+      "klikken": 1,
+      "vertoningen": 98,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /showroomsale/",
+      "klikken": 1,
+      "vertoningen": 726,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /bouwkundige-keuring/",
+      "klikken": 1,
+      "vertoningen": 179,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /verhuizen-nieuwbouw/",
+      "klikken": 1,
+      "vertoningen": 176,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /invoice/",
+      "klikken": 1,
+      "vertoningen": 78,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /brand/",
+      "klikken": 1,
+      "vertoningen": 70,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /oplevering-nieuwbouw/",
+      "klikken": 1,
+      "vertoningen": 69,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /renovatie/",
+      "klikken": 1,
+      "vertoningen": 64,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /3d-sfeerimpressie/",
+      "klikken": 1,
+      "vertoningen": 56,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /ai-muurkleur-testen-kleuradvies/",
+      "klikken": 1,
+      "vertoningen": 22,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /offerte-analyseren-verduurzaming/",
+      "klikken": 1,
+      "vertoningen": 19,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /voordelen-voor-bedrijven/",
+      "klikken": 1,
+      "vertoningen": 10,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /ai-energieadvies-woning-verduurzamen/",
+      "klikken": 1,
+      "vertoningen": 5,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /project/",
+      "klikken": 1,
+      "vertoningen": 889,
+      "paginas": 2
+     },
+     {
+      "laag": "overig: /voor-vakbedrijven/",
+      "klikken": 1,
+      "vertoningen": 2,
+      "paginas": 1
+     },
+     {
+      "laag": "overig: /renovatiekosten/",
+      "klikken": 1,
+      "vertoningen": 1,
+      "paginas": 1
+     }
+    ],
+    "paginas_in_export": 998,
+    "afgekapt": false,
+    "site_totaal": {
+     "klikken": 1287,
+     "vertoningen": 345915
+    },
+    "klik_dekking": 97,
+    "vertoning_dekking": 42
+   },
    "dekking": [
     {
      "cohort": "100+ woningen",
@@ -95,34 +359,14 @@
      "positie": 7.43
     },
     {
-     "slug": "park-overdeschie-woningen-rotterdam",
-     "pad": "/nieuwbouw-project/park-overdeschie-woningen-rotterdam/",
+     "slug": "blinq-capelle-aan-den-ijssel",
+     "pad": "/nieuwbouw-project/blinq-capelle-aan-den-ijssel/",
      "soort": "gegenereerd",
      "regisseur": false,
      "geindexeerd": null,
      "klikken": 0,
-     "vertoningen": 9,
-     "positie": 12.33
-    },
-    {
-     "slug": "condorpark-apeldoorn",
-     "pad": "/nieuwbouw-project/condorpark-apeldoorn/",
-     "soort": "handwerk",
-     "regisseur": false,
-     "geindexeerd": null,
-     "klikken": 0,
-     "vertoningen": 5,
-     "positie": 7.4
-    },
-    {
-     "slug": "haarlemszicht-haarlem",
-     "pad": "/nieuwbouw-project/haarlemszicht-haarlem/",
-     "soort": "handwerk",
-     "regisseur": false,
-     "geindexeerd": null,
-     "klikken": 0,
-     "vertoningen": 4,
-     "positie": 4.0
+     "vertoningen": 0,
+     "positie": 0
     },
     {
      "slug": "boomgaerde-westland",
@@ -131,23 +375,13 @@
      "regisseur": false,
      "geindexeerd": null,
      "klikken": 0,
-     "vertoningen": 2,
-     "positie": 14.0
+     "vertoningen": 0,
+     "positie": 0
     },
     {
-     "slug": "populus-rotterdam",
-     "pad": "/nieuwbouw-project/populus-rotterdam/",
-     "soort": "gegenereerd",
-     "regisseur": false,
-     "geindexeerd": null,
-     "klikken": 0,
-     "vertoningen": 1,
-     "positie": 6.0
-    },
-    {
-     "slug": "blinq-capelle-aan-den-ijssel",
-     "pad": "/nieuwbouw-project/blinq-capelle-aan-den-ijssel/",
-     "soort": "gegenereerd",
+     "slug": "condorpark-apeldoorn",
+     "pad": "/nieuwbouw-project/condorpark-apeldoorn/",
+     "soort": "handwerk",
      "regisseur": false,
      "geindexeerd": null,
      "klikken": 0,
@@ -255,6 +489,16 @@
      "positie": 0
     },
     {
+     "slug": "haarlemszicht-haarlem",
+     "pad": "/nieuwbouw-project/haarlemszicht-haarlem/",
+     "soort": "handwerk",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
      "slug": "havenmeester-rijswijk-zh",
      "pad": "/nieuwbouw-project/havenmeester-rijswijk-zh/",
      "soort": "gegenereerd",
@@ -347,6 +591,26 @@
     {
      "slug": "opdreef-s-gravenhage",
      "pad": "/nieuwbouw-project/opdreef-s-gravenhage/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "park-overdeschie-woningen-rotterdam",
+     "pad": "/nieuwbouw-project/park-overdeschie-woningen-rotterdam/",
+     "soort": "gegenereerd",
+     "regisseur": false,
+     "geindexeerd": null,
+     "klikken": 0,
+     "vertoningen": 0,
+     "positie": 0
+    },
+    {
+     "slug": "populus-rotterdam",
+     "pad": "/nieuwbouw-project/populus-rotterdam/",
      "soort": "gegenereerd",
      "regisseur": false,
      "geindexeerd": null,
