@@ -632,6 +632,105 @@ def deadlines(lo, hi):
     return [r for r in ruw if nog_actueel(r[0])]
 
 
+# --- trede 1: de gemeente in cijfers ---------------------------------------
+# data/gemeenten.json draagt 21 velden per gemeente en dekt alle 332 projecten
+# die groot genoeg zijn voor een eigen publiek. Geen enkele projectpagina
+# gebruikte er iets van, terwijl dit precies het soort inhoud is dat de vier
+# handgeschreven pagina's onderscheidt: cijfers die per project verschillen
+# omdat elke gemeente anders is.
+#
+# Alles hier komt uit CBS en het Kadaster, met het jaar erbij. Geen schattingen,
+# geen vergelijkingen die we niet kunnen onderbouwen.
+GEMEENTEN_PAD = os.path.join(ROOT, "data", "gemeenten.json")
+_GEM = None
+
+
+def _gemeenten():
+    global _GEM
+    if _GEM is None:
+        d = json.load(open(GEMEENTEN_PAD, encoding="utf8"))
+        _GEM = {"landelijk": d, "per_slug": {g["slug"]: g for g in d["gemeenten"]}}
+    return _GEM
+
+
+def eur_duizend(n):
+    """450123 -> '450.000'. Afgerond op duizendtallen, want de bron is een
+    jaargemiddelde en een exacte euro suggereert een precisie die er niet is.
+    Heet niet eur(): bouw_pagina heeft een eigen, andere eur()."""
+    return f"{round(n / 1000):,}".replace(",", ".") + ".000"
+
+
+def gemeente_blok(p, naam, plaats):
+    """Cijfers over de gemeente waar dit project staat.
+
+    Waarom dit op een projectpagina hoort: wie net een woning kocht wil weten of
+    hij duur of goedkoop zat, hoeveel er in zijn gemeente gebouwd wordt en hoe
+    druk het straks is met vakmensen. Dat is precies de context die de site van
+    de ontwikkelaar niet geeft.
+    """
+    G = _gemeenten()
+    g = G["per_slug"].get(p["plaats"])
+    if not g or not g.get("prijs"):
+        return ""
+    land = G["landelijk"]
+    rijen = []
+
+    verschil = g.get("prijs_vs_nl")
+    if verschil is not None:
+        richting = ("hoger dan" if verschil > 0 else "lager dan") if verschil else "gelijk aan"
+        rijen.append((f"Gemiddelde woningprijs ({land.get('jaar_prijs', '')[:4]})",
+                      f"&euro;{eur_duizend(g['prijs'])}",
+                      f"{abs(verschil)}% {richting} het landelijk gemiddelde"
+                      if verschil else "gelijk aan het landelijk gemiddelde"))
+
+    reeks = g.get("nieuwbouw_gereed") or {}
+    if reeks:
+        jaren = sorted(reeks)
+        laatste_jaar = jaren[-1]
+        rijen.append((f"Nieuwbouw opgeleverd in {laatste_jaar}",
+                      f"{reeks[laatste_jaar]:,}".replace(",", "."),
+                      f"gemiddeld {g.get('nieuwbouw_gem5', 0):,}".replace(",", ".")
+                      + f" per jaar over {jaren[0]}&ndash;{laatste_jaar}"))
+
+    if g.get("vergund"):
+        rijen.append(("Vergunningen verleend",
+                      f"{g['vergund']:,}".replace(",", "."),
+                      f"periode {E(land.get('vergund_periode', ''))} &mdash; dit komt er nog aan"))
+
+    if g.get("doorstroom_pct"):
+        # Nederlandse notatie: 22,9% en niet 22.9%.
+        rijen.append(("Verhuisbewegingen per jaar",
+                      f"{g['doorstroom_pct']}".replace(".", ",") + "%",
+                      "van de woningvoorraad wisselt van bewoner"))
+
+    if g.get("vakbedrijven_n"):
+        rijen.append(("Vakbedrijven in beeld", f"{g['vakbedrijven_n']:,}".replace(",", "."),
+                      f"aannemers, loodgieters, elektriciens en meer in {E(plaats)}"))
+
+    if len(rijen) < 3:
+        return ""
+
+    tabel = "".join(f"<tr><td>{k}</td><td><strong>{v}</strong></td>"
+                    f"<td style=\"color:rgba(61,46,30,0.7);\">{t}</td></tr>"
+                    for k, v, t in rijen)
+
+    duiding = ""
+    if verschil is not None and abs(verschil) >= 8:
+        duiding = (f"<p>Wonen in {E(plaats)} is {abs(verschil)}% "
+                   f"{'duurder' if verschil > 0 else 'goedkoper'} dan gemiddeld in Nederland. "
+                   f"Dat werkt door in je meerwerkbudget: aannemers rekenen met lokale "
+                   f"tarieven, en die volgen het prijspeil van de regio.</p>")
+
+    return (f"<h2>{E(plaats)} in cijfers</h2>"
+            f"<p>Waar je koopt bepaalt meer dan de woning zelf. Dit is de gemeente waarin "
+            f"{E(naam)} wordt gebouwd, in cijfers van het CBS en het Kadaster.</p>"
+            f'<table class="feit-tabel"><tbody>{tabel}</tbody></table>'
+            f"{duiding}"
+            f'<p class="noot">Bron: CBS (woningprijzen, voorraad, verhuizingen, '
+            f'opgeleverde nieuwbouw en verleende vergunningen) en de bedrijvenregistratie '
+            f'van Bylder. Prijspeil {E(land.get("jaar_prijs", "")[:4])}.</p>')
+
+
 # --- zoekresultaat en deelkaart -------------------------------------------
 # Gemeten 29 augustus: 38 van de 40 projectpagina's had een titel boven de 60
 # tekens en 26 een description boven de 158 — allebei worden ze in Google
@@ -811,6 +910,11 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     faq_html = "<h2>Veelgestelde vragen over " + E(naam) + "</h2>" + "".join(
         f"<h3>{E(q)}</h3><p>{E(ant)}</p>" for q, ant in faq_items)
 
+    # De gemeente in cijfers. Staat vóór de bedrijvenlijsten en ná de
+    # keuzemomenten: eerst wat er speelt in dit project, dan waar het staat, dan
+    # wie het kan uitvoeren.
+    gem_html = gemeente_blok(p, E(naam), E(plaats))
+
     # Direct na de keuzemomenten: daar staat wát er beslist moet worden, hier
     # staat wie het samen met je doet. Vóór de bedrijvenlijsten, want dit is de
     # regie over die lijsten en niet nog een aanbieder erin.
@@ -885,6 +989,8 @@ je eigen <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is
 <div class="card">
 <p>Zet je opleverdatum in je dossier, dan rekenen wij deze momenten terug naar jouw bouwnummer.</p>
 <p><a class="cta-primary" href="{app}">Zet je opleverdatum erin</a></p></div>
+
+{gem_html}
 
 {reg_html}
 
