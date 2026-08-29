@@ -19,6 +19,48 @@
      "stil": 31
     }
    },
+   "site_indexatie": {
+    "peildatum": "2026-08-21",
+    "geindexeerd": 9948,
+    "niet_geindexeerd": 39523,
+    "bekend_totaal": 49471,
+    "geindexeerd_begin": 2589,
+    "vanaf": "2026-06-01",
+    "piek": {
+     "datum": "2026-08-06",
+     "geindexeerd": 10223
+    },
+    "redenen": [
+     {
+      "reden": "Gevonden - momenteel niet geïndexeerd",
+      "paginas": 35011
+     },
+     {
+      "reden": "Uitgesloten door tag noindex",
+      "paginas": 2134
+     },
+     {
+      "reden": "Gecrawld - momenteel niet geïndexeerd",
+      "paginas": 934
+     },
+     {
+      "reden": "Pagina met omleiding",
+      "paginas": 652
+     },
+     {
+      "reden": "Alternatieve pagina met correcte canonieke tag",
+      "paginas": 430
+     },
+     {
+      "reden": "Niet gevonden (404)",
+      "paginas": 362
+     }
+    ]
+   },
+   "sitemaps": {
+    "urls_in_sitemaps": 56688,
+    "waarvan_projectpaginas": 40
+   },
    "dekking": [
     {
      "cohort": "100+ woningen",
