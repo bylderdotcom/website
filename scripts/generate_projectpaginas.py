@@ -796,6 +796,140 @@ def gemeente_blok(p, naam, plaats):
             f'van Bylder. Prijspeil {E(land.get("jaar_prijs", "")[:4])}.</p>')
 
 
+
+# --- ontwerpronde 29 augustus ----------------------------------------------
+# Daniel: "wat zijn die pagina's lelijk en niet overtuigend opgemaakt" en "ik zie
+# geen enkele opvallende call to action". Dat laatste bleek letterlijk waar: de
+# knopkleur was gelijk aan de achtergrondkleur van de pagina.
+#
+# Wat hier verandert is de volgorde en het ritme, niet de inhoud. De kop gaat
+# over de koper in plaats van over ons, ons bewijs uit het Kadaster staat als
+# cijferstrook terzijde in plaats van als eerste alinea, de keuzemomenten zijn
+# een tijdlijn waarin het eerstvolgende oplicht, en er is één hoofdactie in
+# plaats van zeven die even zwaar wegen.
+
+def hero_tekening(naam):
+    """Eén schets voor alle projecten, met de projectnaam in het stempel.
+
+    Bewust geen tekening pér project: die data hebben we niet, en een
+    gefantaseerde plattegrond is precies het soort verzinsel dat hier nergens
+    thuishoort. Dit is een schema, en het stempel zegt dat er ook bij.
+    """
+    return f"""<div class="pk-tekening">
+<svg viewBox="0 0 380 312" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Schematische tekening van een woning met drie keuzemomenten">
+<defs><pattern id="pkr" width="20" height="20" patternUnits="userSpaceOnUse">
+<path d="M20 0 L0 0 0 20" fill="none" stroke="#3D5A3E" stroke-width=".5" opacity=".18"/></pattern></defs>
+<rect width="380" height="312" fill="url(#pkr)"/>
+<path d="M60 200 L190 130 L320 200 L190 270 Z" fill="none" stroke="#6B5B48" stroke-width="1" stroke-dasharray="5 5" opacity=".55"/>
+<path d="M110 175 L190 130 L270 175 L270 232 L190 277 L110 232 Z" fill="#FFFDF9" stroke="#3D5A3E" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M110 175 L190 220 L270 175" fill="none" stroke="#3D5A3E" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M190 220 L190 277" fill="none" stroke="#3D5A3E" stroke-width="2.4"/>
+<path d="M190 130 L190 90 L240 118 L240 158" fill="none" stroke="#3D5A3E" stroke-width="2" stroke-linejoin="round"/>
+<path d="M190 90 L240 118" fill="none" stroke="#3D5A3E" stroke-width="2"/>
+<rect x="132" y="196" width="20" height="26" fill="none" stroke="#3D5A3E" stroke-width="1.4"/>
+<rect x="228" y="196" width="20" height="26" fill="none" stroke="#3D5A3E" stroke-width="1.4"/>
+<circle cx="215" cy="112" r="13" fill="#C2410C"/><text x="215" y="117" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="700">1</text>
+<circle cx="163" cy="243" r="13" fill="#C2410C"/><text x="163" y="248" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="700">2</text>
+<circle cx="285" cy="188" r="13" fill="#C2410C"/><text x="285" y="193" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="700">3</text>
+<text x="215" y="86" text-anchor="middle" fill="#6B5B48" font-family="monospace" font-size="9" letter-spacing="1">DAKKAPEL</text>
+<text x="163" y="306" text-anchor="middle" fill="#6B5B48" font-family="monospace" font-size="9" letter-spacing="1">VLOER</text>
+<text x="300" y="192" text-anchor="start" fill="#6B5B48" font-family="monospace" font-size="9" letter-spacing="1">MEERWERK</text>
+</svg>
+<div class="pk-stempel">{naam} &middot; schema, geen plattegrond</div>
+</div>"""
+
+
+def cijferstrook(paren):
+    """Vier getallen naast elkaar. Lege waarden vallen weg."""
+    rijen = [f"<div><b>{w}</b><span>{t}</span></div>" for w, t in paren if w]
+    return f'<div class="pk-strook">{"".join(rijen)}</div>' if rijen else ""
+
+
+def _moment_actueel(label):
+    jaren = [int(x) for x in re.findall(r"20\d\d", label)]
+    if not jaren:
+        return True                       # "kort voor oplevering" telt altijd mee
+    jaar = max(jaren)
+    if jaar != VANDAAG.year:
+        return jaar > VANDAAG.year
+    maand = 7 if label.startswith("medio") else (12 if label.startswith("eind") else 3)
+    return maand >= VANDAAG.month
+
+
+def tijdlijn(lo):
+    """Alle keuzemomenten, verstreken erbij maar grijs.
+
+    De oude tabel liet verstreken momenten weg. Dat is netjes bedoeld, maar het
+    haalt de spanning eruit: een koper wil juist zien dat er al twee voorbij zijn
+    en welke er nu speelt. Vandaar alles tonen, met een merkteken op het
+    eerstvolgende.
+    """
+    if not lo:
+        return ""
+    ruw = [
+        (f"medio {lo-1}", "Elektra en loze leidingen",
+         "Wat hier niet in zit, betekent later muren openen."),
+        (f"eind {lo-1}", "Sanitair en tegelwerk",
+         "De badkamerindeling ligt hiermee vast."),
+        (f"begin {lo}", "Keukenopstelling en aansluitpunten",
+         "De keuken zelf kan later, de leidingen niet."),
+        ("kort voor oplevering", "Vloer, wandafwerking en raamdecoratie",
+         "Dit kan n&aacute; de sleutel, maar dan woon je in een bouwplaats."),
+    ]
+    open_i = [i for i, r in enumerate(ruw) if _moment_actueel(r[0])]
+    eerste = open_i[0] if open_i else None
+    uit = []
+    for i, (wanneer, kop, uitleg) in enumerate(ruw):
+        klasse = "pk-moment"
+        chip = ""
+        if i == eerste:
+            klasse += " nu"
+            chip = '<span class="pk-nu-chip">sluit als eerste</span>'
+        elif i not in open_i:
+            klasse += " klaar"
+        uit.append(f'<div class="{klasse}"><div class="wanneer">{wanneer}</div>'
+                   f"<div><h3>{kop}{chip}</h3><p>{uitleg}</p></div></div>")
+    return f'<div class="pk-tijdlijn">{"".join(uit)}</div>'
+
+
+def prijsvergelijking(g, land, plaats):
+    """Twee balken: deze gemeente naast het landelijk gemiddelde."""
+    if not (g and g.get("prijs") and land.get("nl_prijs")):
+        return ""
+    hier, nl = g["prijs"], land["nl_prijs"]
+    top = max(hier, nl)
+    return (f'<div class="pk-verg">'
+            f'<div class="rij"><div class="naam">{plaats}</div>'
+            f'<div class="baan"><i class="hier" style="width:{round(100*hier/top)}%"></i></div>'
+            f'<div class="cijfer">&euro;{eur_duizend(hier)}</div></div>'
+            f'<div class="rij"><div class="naam">Nederland</div>'
+            f'<div class="baan"><i class="nl" style="width:{round(100*nl/top)}%"></i></div>'
+            f'<div class="cijfer">&euro;{eur_duizend(nl)}</div></div></div>')
+
+
+def regisseur_kaart(naam_project, plaats, slug, opl_tekst):
+    """De woningregisseur in een donker vlak, zonder portret.
+
+    Er komt geen foto (besluit Daniel, 29 aug). Een monogram is eerlijker dan een
+    lege plek of een stockfoto van iemand die hier niet werkt.
+    """
+    link = (f"https://app.bylder.com/registreer?utm_source=bylder-site"
+            f"&amp;utm_medium=projectpagina&amp;utm_campaign=woningregisseur"
+            f"&amp;utm_content=project-{slug}")
+    return f"""<div class="pk-mens">
+<div class="kop"><div class="pk-monogram" aria-hidden="true">DP</div>
+<div><h3>Dani&euml;l Paaij</h3><div class="rol">Woningregisseur &middot; oprichter van Bylder</div></div></div>
+<p>Meerwerk, afwerking en inrichting in &eacute;&eacute;n plan, aan je eigen keukentafel in {plaats}.
+Ongeveer anderhalf uur. Je krijgt een overzicht van wat je via de aannemer doet, wat je na
+oplevering zelf regelt, en in welke volgorde. Met een oplevering {opl_tekst} vallen die keuzes nu.</p>
+<p><strong>Het gesprek en het plan zijn gratis.</strong> Geen uurtarief, geen offerte achteraf.</p>
+<p><a class="cta-primary" href="{link}">Plan een gesprek over {naam_project}</a></p>
+<p class="fijn">Waarom dit gratis kan: Bylder verdient aan de bedrijven en winkels die zich bij ons
+aansluiten, niet aan jou. Daarom komt het advies met de vraag erbij of het ook zonder ons
+goedkoper kan. Je zit nergens aan vast.</p></div>"""
+
+
 # --- zoekresultaat en deelkaart -------------------------------------------
 # Gemeten 29 augustus: 38 van de 40 projectpagina's had een titel boven de 60
 # tekens en 26 een description boven de 158 — allebei worden ze in Google
@@ -986,7 +1120,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # Direct na de keuzemomenten: daar staat wát er beslist moet worden, hier
     # staat wie het samen met je doet. Vóór de bedrijvenlijsten, want dit is de
     # regie over die lijsten en niet nog een aanbieder erin.
-    reg_html = regisseur_blok(p, E(naam), slug, opl_tekst) if plaats_ruw in REGISSEUR_GEBIED else ""
+    reg_html = (regisseur_kaart(E(naam), E(plaats), slug, opl_tekst)
+                if plaats_ruw in REGISSEUR_GEBIED else "")
 
     aup_html = auping_blok(p, E(naam), slug)
     wnk = lokale_winkels(wk, p)
@@ -1032,51 +1167,100 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                      f"{E(plaats)} volgen.</p>")
 
     aant = f"{won} woningen" if won else "meerdere woningen"
+
+    # --- de pagina, in de volgorde van de koper -----------------------------
+    # 1 hero met één hoofdactie, 2 ons bewijs als cijferstrook, 3 zijn agenda,
+    # 4 waar hij koopt, 5 de mens, 6 wie het werk kan doen, 7 korting,
+    # 8 vragen, 9 één slotactie. De oude volgorde begon met ons bewijs.
+    G = _gemeenten()
+    g_hier = G["per_slug"].get(p["plaats"])
+    meting = [m for m in (SNAPSHOTS.get(p.get("url")) or []) if betrouwbaar(p, m[1])]
+    bag = BAG.get(p.get("url"))
+
+    # BAG.get() geeft (datum, meting) terug; de cijfers zitten in de meting.
+    strook = []
+    if bag:
+        _b = bag[1]
+        if _b.get("in_aanbouw"):
+            strook.append((str(_b["in_aanbouw"]), "panden in aanbouw"))
+        if _b.get("opgeleverd"):
+            strook.append((str(_b["opgeleverd"]), "recent opgeleverd"))
+    if won:
+        strook.append((str(won), "woningen in dit project"))
+    if meting:
+        strook.append((f"{meting[-1][1]['verkocht_pct']}%", "verkocht"))
+    # Een volledige datum als groot cijfer breekt de strook; kort houden.
+    if bag:
+        _d = date.fromisoformat(bag[0])
+        strook.append((f"{_d.day} {NL_MAAND[_d.month - 1][:3]}", "laatste meting"))
+    else:
+        strook.append((opl_tekst, "verwachte oplevering"))
+
+    vragen_html = "".join(
+        f'<details class="pk-vraag"{" open" if n == 0 else ""}>'
+        f"<summary>{E(q)}</summary><p>{E(a)}</p></details>"
+        for n, (q, a) in enumerate(faq_items))
+
     body = f"""<main>
 <div class="container"><div class="kolom">
-<nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:14px;">
+<nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:18px;">
 <a href="/" style="color:inherit;">Bylder.com</a> &rsaquo;
 <a href="/nieuwbouw-project/" style="color:inherit;">Nieuwbouwprojecten</a> &rsaquo; {E(naam)}</nav>
 
-<span class="badge">Nieuwbouwproject &middot; {E(plaats)}</span>
-<h1>{E(naam)}, {E(plaats)} &mdash; wat er n&aacute; de handtekening komt</h1>
+<div class="pk-hero">
+<div>
+<div class="pk-etiket">{E(plaats)} &middot; {aant} &middot; oplevering {E(opl_tekst)}</div>
+<h1>Je tekende voor {E(naam)}.<br>Nu begint het pas.</h1>
+<p class="intro">Wij volgen de bouw, bewaken je keuzemomenten en zorgen dat je bij de
+afwerking en inrichting niet te veel betaalt.</p>
+<div class="pk-acties">
+<a class="cta-primary" href="{app}">Volg dit project &rarr;</a>
+<a class="cta-stil" href="{app}-regisseur">Praat met een woningregisseur</a>
+</div>
+<p class="pk-onder">Gratis account &middot; geen betaling nodig &middot; opzeggen wanneer je wilt</p>
+</div>
+{hero_tekening(E(naam))}
+</div>
 
-{feiten_html}
+{cijferstrook(strook)}
 
-{start_html}
-
-{tabel_html}
-
-{log_html}
-
-{faq_html}
-
-{keuze_html}
-<p class="noot">Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Richtdata &mdash;
-je eigen <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is leidend.</p>
-<div class="card">
-<p>Zet je opleverdatum in je dossier, dan rekenen wij deze momenten terug naar jouw bouwnummer.</p>
-<p><a class="cta-primary" href="{app}">Zet je opleverdatum erin</a></p></div>
+<h2>Wat er nu op je afkomt</h2>
+<p>Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Je eigen
+<a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is leidend.</p>
+{tijdlijn(lo)}
+<p style="margin-top:20px;"><a class="cta-stil" href="{app}">Zet je opleverdatum in je dossier</a></p>
 
 {gem_html}
+{prijsvergelijking(g_hier, G["landelijk"], E(plaats))}
 
+
+<h2>Iemand die het met je doorloopt</h2>
 {reg_html}
 
 {lok_html}
 {wnk_html}
-{buur_html}
 {aup_html}
 
+{tabel_html}
+{log_html}
+
+<h2>Wat kopers ons vragen over {E(naam)}</h2>
+{vragen_html}
+
+{buur_html}
 {kluskist_html}
 
-<div class="card">
-<h2>Woning gekocht in {E(naam)}?</h2>
-<p>Wij volgen de bouw en je deadlines, en je bespaart bij de afwerking en inrichting:
-ledenkortingen, offertes getoetst aan marktprijzen, garanties op &eacute;&eacute;n plek.
-Elke nieuwe meting van {E(naam)} zie je terug in je dossier. Gratis.</p>
-<p><a class="cta-primary" href="{app}">Volg {E(naam)} gratis</a></p></div>
+<div class="pk-slot">
+<div class="pk-etiket">E&eacute;n handeling</div>
+<h2>Volg {E(naam)}</h2>
+<p>Wij meten de bouw elke twee weken, rekenen je deadlines terug naar jouw bouwnummer en
+zetten je kortingen klaar bij 61 merken. Elke nieuwe meting zie je terug in je dossier.</p>
+<p><a class="cta-primary" href="{app}">Maak een gratis account &rarr;</a></p>
+<p class="fijn">Geen betaling nodig &middot; opzeggen wanneer je wilt</p>
+</div>
 
-<p style="font-size:13px;color:rgba(61,46,30,0.72);">Verkoopstand gemeten door Bylder op
+<p style="font-size:13px;color:rgba(61,46,30,0.72);margin-top:28px;">Bouwstatus gemeten door
+Bylder in de BAG van het Kadaster. Verkoopstand van
 <a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a>. Landelijke
 telling in de <a href="/nieuwbouw-project/oplevermonitor/">oplevermonitor</a>. Algemene uitleg
 over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer over de gemeente:
