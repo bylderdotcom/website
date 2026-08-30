@@ -106,7 +106,9 @@ const MENUS: Menu[] = [
     label: 'Zakelijk',
     items: [
       { href: '/inkoopvoordeel/', title: 'Inkoopvoordeel voor vakbedrijven',
-        sub: 'Word verkooppunt van het gecureerde assortiment — op uitnodiging', primair: true },
+        sub: 'Inkoopkorting én verdienen aan wat je klant koopt — €79 per jaar', primair: true },
+      { href: '/zakelijk/hoe-een-order-verloopt/', title: 'Hoe een order verloopt',
+        sub: 'Van doorverwijzing tot uitbetaling, in gewone taal', primair: true },
       { href: '/deelnemer-worden/', title: 'Deelnemer worden',
         sub: 'Bereik kopers op het juiste koopmoment', primair: true },
       { href: '/deelnemer-worden/commercieel-vastgoed/', title: 'Commercieel vastgoed' },
