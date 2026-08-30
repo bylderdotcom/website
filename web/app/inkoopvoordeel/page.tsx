@@ -134,6 +134,15 @@ export default function InkoopvoordeelPage() {
           &euro;4.000 is dat &euro;40. Twee van die zinnen en je jaarbijdrage van &euro;79 is eruit;
           alles daarna is winst. Je koopt niets in, houdt niets op voorraad en monteert niets.
         </p>
+        <p style={{ ...P, margin: '12px 0 0', fontSize: 14.5, paddingTop: 12,
+                    borderTop: '1px solid rgba(61,90,62,0.25)' }}>
+          <strong style={{ color: '#1A1208' }}>Inkopen en doorverwijzen lopen niet door elkaar.</strong>{' '}
+          Het tarief volgt de betaler: koop je zelf in op bedrijfsnaam, dan geldt je inkooptarief en
+          is er geen verwijsvergoeding &mdash; je verwijst niet naar jezelf. Koopt je klant, dan krijgt
+          hij de korting en ontvang jij de vergoeding. Nooit allebei op &eacute;&eacute;n factuur.{' '}
+          <a href="/zakelijk/hoe-een-order-verloopt/#vakbedrijven"
+             style={{ color: GROEN, fontWeight: 700 }}>Van doorverwijzing tot uitbetaling &rarr;</a>
+        </p>
       </div>
       <p style={{ margin: '18px 0 0' }}>
         <a href={MAIL} style={{
