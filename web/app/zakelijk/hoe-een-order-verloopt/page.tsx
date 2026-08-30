@@ -19,6 +19,11 @@ import type { Metadata } from 'next'
  *   winkel de code van de klant nakijkt (app.bylder.com/voucher-check, live).
  *   Aanmelden vooraf bij maatwerk en achteraf gebundeld matchen staan in de
  *   plannen maar draaien niet, dus staan ze hier niet.
+ * - Geen "zie het doorlopend in je account": het vakbedrijf-portaal toont nog
+ *   geen geregistreerde verkopen of opgebouwde vergoedingen (gecontroleerd
+ *   30 aug). De belofte is nu een overzicht bíj de uitbetaling — dat kunnen we
+ *   waarmaken op de dag dat er uitbetaald wordt. Zodra het portaal een
+ *   verdiensten-overzicht heeft, mag de sterkere formulering terug.
  *
  * INDEXATIE
  * Voorlopig noindex. De pagina beschrijft hoe een vakbedrijf wordt uitbetaald;
@@ -94,7 +99,8 @@ const VRAGEN = [
     v: 'Wanneer krijg ik uitbetaald?',
     a: 'Per kwartaal, en pas nadat de retourtermijn van de order voorbij is. Bij een webshop is dat '
       + 'veertien dagen; bij maatwerk zoals een keuken of raamdecoratie langer, omdat de opdracht dan '
-      + 'pas definitief is. Wat er voor je klaarstaat zie je doorlopend in je account.',
+      + 'pas definitief is. Bij de uitbetaling krijg je een overzicht van de verkopen waarover je '
+      + 'vergoeding ontvangt.',
   },
   {
     v: 'Hoe weet ik dat een verkoop van mijn klant ook echt aan mij wordt toegerekend?',
@@ -262,8 +268,8 @@ export default function HoeEenOrderVerlooptPage() {
           factureren.
         </li>
         <li>
-          <strong>Waar:</strong> in je account zie je doorlopend welke verkopen zijn geregistreerd en
-          wat er voor je klaarstaat.
+          <strong>Waarover:</strong> bij elke uitbetaling zit een overzicht van de verkopen waarover
+          je vergoeding ontvangt, zodat je het kunt narekenen.
         </li>
       </ul>
       <p style={{ marginTop: 18 }}>
