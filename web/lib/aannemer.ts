@@ -235,6 +235,13 @@ function getCityHtml(page: AannemerPage): string {
   return body.replace('</main>', `${DISCLAIMER_HTML}</main>`)
 }
 
+// Bedrijfsnamen komen uit scrapedata en kunnen & of < bevatten; die gaan hier de
+// HTML in, dus ontsnappen. Zonder dit breekt één naam met een ampersand de opmaak
+// van de hele kaart.
+function esc(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
 // Oproep aan de eigenaar om zijn profiel op te eisen. De claim-flow bestaat en
 // werkt, maar niets op deze 25.707 pagina's wees ernaartoe (gemeten 27 jul 2026)
 // — vandaar 1 claim op het hele bestand. Staat onderaan, na de inhoud: de koper
@@ -296,22 +303,42 @@ function marktHtml(city?: string, citySlug?: string): string {
     + `met bron en jaartal.</p>`
 }
 
+// Oproep aan de eigenaar om zijn profiel op te eisen — en sinds 30 aug ook een
+// reden om dat te doen. Het blok noemde alleen wat het kost; nu staat er wat het
+// oplevert: vanaf 1% van wat de klant koopt, plus inkoopvoordeel. Dat is het
+// verschil tussen een administratieve handeling en een aanbod.
+//
+// Deze pagina's zijn het grootste oppervlak dat we hebben — 99.355 vertoningen
+// in drie maanden, en een deel daarvan is het bedrijf dat zijn eigen naam
+// googelt. Geen vast percentage: "vanaf 1%", want het verschilt per merk.
 function claimHtml(pageSlug: string, naam: string): string {
   const slug = pageSlug.replace(/^bedrijf\//, '')
   return '<div class="divider"></div>'
     + '<div style="background:#fff;border:1px solid rgba(61,46,30,0.12);border-radius:14px;'
     + 'padding:20px 22px;margin:20px 0;">'
-    + '<h2 style="font-size:1.05rem;font-weight:800;color:#1A1208;margin:0 0 6px;">'
-    + 'Is dit jouw bedrijf?</h2>'
-    + '<p style="font-size:14px;color:rgba(61,46,30,0.72);line-height:1.65;margin:0 0 12px;">'
-    + 'Dit profiel is samengesteld uit openbare bronnen. Eis het op om je gegevens, '
-    + 'diensten en foto\'s zelf te beheren. Vermelding blijft gratis; activeren kost '
-    + '&euro;79 per jaar voor je eigen plaats.</p>'
+    + '<div style="font-family:\'Space Mono\',monospace;font-size:11px;letter-spacing:.09em;'
+    + 'text-transform:uppercase;color:#B85C38;font-weight:700;margin-bottom:6px;">Voor '
+    + esc(naam) + '</div>'
+    + '<h2 style="font-size:1.12rem;font-weight:800;color:#1A1208;margin:0 0 8px;">'
+    + 'Dit is jouw bedrijf? Verdien aan wat je klanten kopen.</h2>'
+    + '<p style="font-size:14px;color:rgba(61,46,30,0.74);line-height:1.7;margin:0 0 10px;">'
+    + 'Koopt je klant een vloer, een bed of verlichting via jouw persoonlijke code, dan '
+    + 'krijgt hij korting en ontvang jij <strong>vanaf 1% van de aankoopwaarde</strong> '
+    + '&mdash; ook op spullen die je zelf niet levert. Daarnaast krijg je inkoopvoordeel '
+    + 'op het assortiment dat je w&eacute;l verwerkt.</p>'
+    + '<p style="font-size:14px;color:rgba(61,46,30,0.74);line-height:1.7;margin:0 0 12px;">'
+    + 'Dit profiel is samengesteld uit openbare bronnen; vermelding blijft gratis. '
+    + 'Activeren kost <strong>&euro;79 per jaar</strong> &mdash; bij een aankoop van '
+    + '&euro;4.000 is 1% al &euro;40.</p>'
     + '<a href="https://app.bylder.com/vakbedrijf/claim/' + encodeURIComponent(slug)
     + '?utm_source=bylder-site&amp;utm_campaign=profiel-claim" '
     + 'style="background:#3D5A3E;color:#F5F0E8;padding:11px 22px;border-radius:10px;'
     + 'font-weight:800;font-size:14px;text-decoration:none;display:inline-flex;">'
-    + 'Profiel opeisen &#8594;</a>'
+    + 'Claim dit profiel &#8594;</a>'
+    + '<p style="font-size:12.5px;color:rgba(61,46,30,0.55);margin:12px 0 0;">'
+    + '<a href="/zakelijk/hoe-een-order-verloopt/#vakbedrijven" style="color:#3D5A3E;">'
+    + 'Van doorverwijzing tot uitbetaling</a> &middot; '
+    + '<a href="/voor-vakbedrijven/" style="color:#3D5A3E;">wat je verder krijgt</a></p>'
     + '</div>'
 }
 
