@@ -1030,10 +1030,36 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                      f"{E(b.get('stad') or plaats)}, {d:.0f} km van {E(naam)}"
                      + (f", &#9733;{b['google_rating']} uit {b['google_reviews']} beoordelingen"
                         if b.get('google_rating') else "") + "</li>" for d, b in lok)
+        # Twee publieken op één blok. De koper zoekt hier een vakman; het vakbedrijf
+        # dat naar dit project kijkt — omdat het in zijn werkgebied ligt — herkent
+        # zichzelf en leest wat er voor hem in zit. Eén regel, onder de lijst: de
+        # pagina blijft van de koper.
+        #
+        # Hier is dat scherper dan op een profielpagina, want hier staat een cohort
+        # dat op hetzelfde moment gaat inrichten.
+        #
+        # Het klusregister (uitgevoerde klussen per project) landt later als eigen
+        # sectie vlak vóór de kennisbank-links — eerst het eigen bewijs, dan het
+        # vervolg elders. Bewust géén aankondiging hier dat het komt: een pagina
+        # die belooft wat er nog niet is, is precies wat we op deze site niet doen.
+        cohort = (f"de {won} huishoudens die hier gaan wonen" if won
+                  else "de kopers van dit project")
+        voor_vakman = (
+            f'<div style="background:rgba(184,92,56,0.06);border-left:3px solid #B85C38;'
+            f'border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0 0;">'
+            f'<p style="font-size:14.5px;line-height:1.7;color:rgba(61,46,30,0.78);margin:0;">'
+            f'<strong>Werk jij aan {E(naam)}?</strong> Verdien aan wat de kopers hier inrichten: '
+            f'koopt een klant via jouw persoonlijke code, dan krijgt hij korting en ontvang jij '
+            f'vanaf 1% van de aankoopwaarde. '
+            f'<a href="/zakelijk/hoe-een-order-verloopt/#vakbedrijven" '
+            f'style="color:#3D5A3E;font-weight:700;">Zo werkt dat</a> &middot; '
+            f'<a href="/voor-vakbedrijven/" style="color:#3D5A3E;font-weight:700;">aansluiten</a>'
+            f'</p></div>')
         lok_html = (f"<h2>Vakbedrijven rond {E(naam)}</h2><p>Bedrijven binnen twaalf kilometer "
                     f"met minstens twintig beoordelingen, gespreid over de vakken die bij een "
                     f"oplevering langskomen. Wij rangschikken op passendheid en afstand; een "
-                    f"positie is bij ons niet te koop.</p><ul class='bedrijven'>{li}</ul>")
+                    f"positie is bij ons niet te koop.</p>"
+                    f"<ul class='bedrijven'>{li}</ul>{voor_vakman}")
 
     # Meerwerkbedragen schalen mee met het woningtype dat in dit project overheerst;
     # de percentages zijn generiek, de uitkomst per project niet.
