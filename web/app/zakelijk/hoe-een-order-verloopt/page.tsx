@@ -19,11 +19,11 @@ import type { Metadata } from 'next'
  *   winkel de code van de klant nakijkt (app.bylder.com/voucher-check, live).
  *   Aanmelden vooraf bij maatwerk en achteraf gebundeld matchen staan in de
  *   plannen maar draaien niet, dus staan ze hier niet.
- * - Geen "zie het doorlopend in je account": het vakbedrijf-portaal toont nog
- *   geen geregistreerde verkopen of opgebouwde vergoedingen (gecontroleerd
- *   30 aug). De belofte is nu een overzicht bíj de uitbetaling — dat kunnen we
- *   waarmaken op de dag dat er uitbetaald wordt. Zodra het portaal een
- *   verdiensten-overzicht heeft, mag de sterkere formulering terug.
+ * - Wat hier op 30 augustus nog niet mocht staan, mag nu wel: "zie doorlopend in
+ *   je account wat er klaarstaat". Het portaal toonde toen geen verdiensten; sinds
+ *   31 augustus staat "Voor jou klaar: €…" bovenaan het vakbedrijf-dashboard,
+ *   gerekend over verzilverde aankopen van klanten die dit bedrijf doorverwees.
+ *   De toerekening loopt via aangebracht_door op voucher_activations.
  *
  * INDEXATIE
  * Voorlopig noindex. De pagina beschrijft hoe een vakbedrijf wordt uitbetaald;
@@ -99,8 +99,8 @@ const VRAGEN = [
     v: 'Wanneer krijg ik uitbetaald?',
     a: 'Per kwartaal, en pas nadat de retourtermijn van de order voorbij is. Bij een webshop is dat '
       + 'veertien dagen; bij maatwerk zoals een keuken of raamdecoratie langer, omdat de opdracht dan '
-      + 'pas definitief is. Bij de uitbetaling krijg je een overzicht van de verkopen waarover je '
-      + 'vergoeding ontvangt.',
+      + 'pas definitief is. In je account zie je doorlopend wat er voor je klaarstaat, en bij de '
+      + 'uitbetaling krijg je een overzicht van de verkopen waarover je vergoeding ontvangt.',
   },
   {
     v: 'Hoe weet ik dat een verkoop van mijn klant ook echt aan mij wordt toegerekend?',
@@ -268,8 +268,9 @@ export default function HoeEenOrderVerlooptPage() {
           factureren.
         </li>
         <li>
-          <strong>Waarover:</strong> bij elke uitbetaling zit een overzicht van de verkopen waarover
-          je vergoeding ontvangt, zodat je het kunt narekenen.
+          <strong>Waar:</strong> in je account staat bovenaan wat er voor je klaarstaat, bijgewerkt
+          zodra een winkel een aankoop registreert. Bij elke uitbetaling zit een overzicht van de
+          verkopen waarover je vergoeding ontvangt, zodat je het kunt narekenen.
         </li>
       </ul>
       <p style={{ marginTop: 18 }}>
