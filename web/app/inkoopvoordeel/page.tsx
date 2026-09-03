@@ -21,7 +21,7 @@ import type { Metadata } from 'next'
  *
  * Waarheidsgrens: "vanaf 1%" en niet één hard getal, want het verschilt per merk.
  * Eén percentage op de pagina wordt een belofte die bij het eerste afwijkende
- * merk niet klopt. Wat er verder staat is echt: het assortiment is live, CNX/DDC
+ * merk niet klopt. Wat er verder staat is echt: het assortiment is live, Classic Next
  * is de eerste leverancier, en de vraagkant (woningscan, Kadaster) draait.
  *
  * Uitbetalen kan pas als elke aankoop herleidbaar is tot een persoonlijke code.
@@ -162,8 +162,7 @@ export default function InkoopvoordeelPage() {
         <div style={KAART}>
           <h3 style={H3}>Gecureerd, niet alles</h3>
           <p style={{ ...P, margin: 0, fontSize: 14.5 }}>Per categorie een klein aantal merken dat wij
-          zelf zouden kiezen — te beginnen met de kozijnloze deuren van CNX Doorframes (Dutch Doors
-          Company, Uden), die nu al in <a href="/assortiment/" style={{ color: GROEN, fontWeight: 700 }}>ons
+          zelf zouden kiezen — te beginnen met de kozijnloze deuren van Classic Next uit Uden, die nu al in <a href="/assortiment/" style={{ color: GROEN, fontWeight: 700 }}>ons
           assortiment</a> staan.</p>
         </div>
         <div style={KAART}>

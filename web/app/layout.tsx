@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import Aankondiging from './components/Aankondiging'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             los. lazyOnload: het is een strook onder aan de pagina, die hoeft
             niet mee te vechten om de eerste render. */}
         <Script src="/mis-je-iets.js" strategy="lazyOnload" />
+        <Aankondiging />
         <Nav />
         {/* <main> is hier geen opsmuk. Twee redenen: schermlezers en
             toetsenbordgebruikers gebruiken het om de navigatie over te slaan,
