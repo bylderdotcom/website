@@ -298,6 +298,8 @@ export default function Freesdeuren() {
               Next: wat het merk levert</a></li>
             <li><a href="/timmerman/" style={{ color: ROEST, fontWeight: 700 }}>Een timmerman
               vinden</a> &mdash; want iemand moet het kozijn stellen.</li>
+            <li><a href="/kozijnloze-deuren/classic-next/voor-vakbedrijven/" style={{ color: GROEN, fontWeight: 700 }}>Ben
+              je zelf vakman?</a> &mdash; wat monteren oplevert, en wat je verdient aan wat je klant koopt.</li>
           </ul>
         </section>
       </div>

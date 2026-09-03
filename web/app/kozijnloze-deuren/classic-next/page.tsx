@@ -277,6 +277,9 @@ export default function ClassicNext() {
               andere leveranciers ernaast.</li>
             <li><a href="/kozijnloze-deuren/freesdeuren/" style={{ color: GROEN, fontWeight: 700 }}>De
               dertien freesdeuren</a> &mdash; elk ontwerp met foto, en waar het op zijn plek valt.</li>
+            <li><a href="/kozijnloze-deuren/classic-next/voor-vakbedrijven/" style={{ color: GROEN, fontWeight: 700 }}>Voor
+              vakbedrijven: monteren en eraan verdienen</a> &mdash; het montagewerk, de gratis training
+              en de commissie op wat je klant koopt.</li>
             <li><a href="/nieuwbouw-gids/" style={{ color: ROEST, fontWeight: 700 }}>De meerwerklijst
               en wanneer die sluit</a> &mdash; want dit is een keuze met een deadline.</li>
           </ul>

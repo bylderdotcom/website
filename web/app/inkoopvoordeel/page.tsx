@@ -163,7 +163,8 @@ export default function InkoopvoordeelPage() {
           <h3 style={H3}>Gecureerd, niet alles</h3>
           <p style={{ ...P, margin: 0, fontSize: 14.5 }}>Per categorie een klein aantal merken dat wij
           zelf zouden kiezen — te beginnen met de kozijnloze deuren van Classic Next uit Uden, die nu al in <a href="/assortiment/" style={{ color: GROEN, fontWeight: 700 }}>ons
-          assortiment</a> staan.</p>
+          assortiment</a> staan. Monteer je die zelf? Dan is er <a href="/kozijnloze-deuren/classic-next/voor-vakbedrijven/" style={{ color: GROEN, fontWeight: 700 }}>een
+          gratis montagetraining</a> bij, naast de commissie.</p>
         </div>
         <div style={KAART}>
           <h3 style={H3}>De vraag komt erbij</h3>
