@@ -79,7 +79,7 @@ const MENUS: Menu[] = [
   {
     label: 'Kortingsvouchers',
     items: [
-      { href: '/vouchers/', title: 'Ledenkorting bij 61 merken',
+      { href: '/vouchers/', title: 'Ledenkorting bij 56 merken',
         sub: 'Auping, Goossens, DRT en meer — met een gratis account', primair: true },
       { href: '/vouchers/auping/', title: 'Auping: 10% + gratis leenbed' },
       { href: '/kortingscode/', title: 'Kortingscodes per merk' },

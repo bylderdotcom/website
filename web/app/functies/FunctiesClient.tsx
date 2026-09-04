@@ -92,9 +92,9 @@ const FASES = [
   },
   {
     n: 4, titel: 'Inrichten & wonen',
-    tekst: '61 woonmerken met korting voor je afwerking.',
+    tekst: '56 woonmerken met korting voor je afwerking.',
     links: [
-      { href: '/vouchers/', label: 'Alle 61 woonmerken' },
+      { href: '/vouchers/', label: 'Alle 56 woonmerken' },
       { href: '/kopen/', label: 'Koopgidsen per categorie' },
       { href: '/gereedschap-lenen/', label: 'Gereedschap lenen in de buurt' },
     ],
@@ -154,7 +154,7 @@ export default function FunctiesClient() {
           <Card icon="ph-thin ph-stack" title="Meerwerk-tracker" tag={LID}>Meerwerk verandert je technische tekening — soms wel 4 rondes. De tracker bewaart elke versie en toont per ronde precies <strong>wat er wijzigt</strong> (extra stopcontacten, lichtpunten, m²). Zo houd je grip op je keuzes én je budget, en controleer je of je krijgt waarvoor je betaalt. <a href="/meerwerk/" style={inlineLink}>Meer over meerwerk →</a></Card>
           <Card icon="ph-thin ph-cube" title={<>Inrichten &amp; 3D-impressie</>} tag={FREE_STARTEN}><InrichtenBody mid={<>Upload je bouwtekening → Bylder maakt er een 3D-impressie van in jouw stijl (Scandinavisch, Japandi, industrieel…). Zie je afgewerkte woning vóór je keuzes maakt.</>} /></Card>
           <Card icon="ph-thin ph-clipboard-text" title="Bouwvergunning-hulp" tag={LID}><BouwvergunningBody /></Card>
-          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 61 woonmerken zoals Auping, Goossens en DRT. Gemiddeld €4.200 besparing — codes direct actief, gratis voor bewoners.</Card>
+          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 56 woonmerken zoals Auping, Goossens en DRT. Gemiddeld €4.200 besparing — codes direct actief, gratis voor bewoners.</Card>
           <Card icon="ph-thin ph-calendar-blank" title={<>Planning, budget &amp; kosten</>} tag={FREE}>Projectplanning over alle 11 fasen, opleverdatum-countdown, all-in kostenoverzicht en de 36-punts opleverchecklist — gratis te gebruiken.</Card>
           <Card icoR icon="ph-thin ph-folders" title="AI document-kluis" tag={LID}>Bewaar offertes &amp; contracten; de AI checkt ze op te dure posten, risico-clausules en garantie-registratie.</Card>
           <Card icon="ph-thin ph-shield-check" title={<>Garantie &amp; oplevergebreken</>} tag={LID}>Houd garanties bij én log bouwgebreken na oplevering — van melding tot erkenning tot afhandeling. Mis nooit een garantietermijn.</Card>
@@ -167,7 +167,7 @@ export default function FunctiesClient() {
           <Card icon="ph-thin ph-cube" title={<>Inrichten &amp; 3D-impressie</>} tag={FREE_STARTEN}><InrichtenBody mid={<>Upload de plattegrond → een 3D-impressie van je heringerichte woning in jouw stijl (Scandinavisch, Japandi, industrieel…). Zie het resultaat vóór je begint.</>} /></Card>
           <Card icon="ph-thin ph-clipboard-text" title="Bouwvergunning-hulp" tag={LID}><BouwvergunningBody /></Card>
           <Card icon="ph-thin ph-handshake" title={<>Bod- &amp; overdracht-begeleiding</>} tag={FREE_PROBEREN}>AI-bodadvies om je bod te bepalen + een gratis overdracht- &amp; intrek-checklist, van notaris tot meterstanden.</Card>
-          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 61 woonmerken voor je inrichting en verbouwing. Gemiddeld €4.200 besparing.</Card>
+          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 56 woonmerken voor je inrichting en verbouwing. Gemiddeld €4.200 besparing.</Card>
           <Card icoR icon="ph-thin ph-folders" title="AI document-kluis" tag={LID}>Bewaar koopakte, keuringsrapport en offertes; de AI checkt ze op risico's, te dure posten en garantie.</Card>
           <Card icon="ph-thin ph-shield-check" title={<>Garantie &amp; oplevergebreken</>} tag={LID}>Houd garanties bij én log bouwgebreken na oplevering — van melding tot erkenning tot afhandeling. Mis nooit een garantietermijn.</Card>
         </div>
@@ -178,7 +178,7 @@ export default function FunctiesClient() {
           <Card icoR icon="ph-thin ph-magnifying-glass" title={<>Offerte- &amp; kostenanalyse</>} tag={FREE_PROBEREN}>Upload je verbouwofferte → AI vergelijkt met marktprijzen en geeft aan waar je kunt onderhandelen.</Card>
           <Card icon="ph-thin ph-cube" title={<>Inrichten &amp; 3D-impressie</>} tag={FREE_STARTEN}><InrichtenBody mid={<>Upload je (verbouw)tekening → een 3D-impressie van het eindresultaat in jouw stijl (Scandinavisch, Japandi, industrieel…). Zie hoe je woning wordt vóór de verbouwing.</>} /></Card>
           <Card icon="ph-thin ph-clipboard-text" title="Bouwvergunning-hulp" tag={LID}><BouwvergunningBody /></Card>
-          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 61 woonmerken voor je verbouwing en inrichting. Gemiddeld €4.200 besparing.</Card>
+          <Card icoR icon="ph-thin ph-tag" title="Kortingsvouchers" tag={LID}>Exclusieve kortingen bij 56 woonmerken voor je verbouwing en inrichting. Gemiddeld €4.200 besparing.</Card>
           <Card icon="ph-thin ph-chart-bar" title={<>Verbouwbudget &amp; tracker</>} tag={FREE}>Houd je verbouwbudget bij, upload facturen en verdien Bylder Points. Budget calculator inbegrepen.</Card>
           <Card icoR icon="ph-thin ph-folders" title="AI document-kluis" tag={LID}>Bewaar offertes &amp; contracten; de AI checkt ze op te dure posten, risico's en garantie-registratie.</Card>
           <Card icon="ph-thin ph-toolbox" title={<>Verbouwplanning &amp; aannemer-matching</>} tag={SOON}>Planning van je verbouwing en matching met gecertificeerde aannemers op project, budget en locatie.</Card>

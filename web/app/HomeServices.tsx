@@ -153,7 +153,7 @@ export default function HomeServices() {
             <div style={pillar} id="pijler-shoppen">
               <div style={num}>Pijler 3</div>
               <h3 style={h3s}>Shoppen</h3>
-              <div style={belofte}>Shop producten én kortingen bij 61 merken.</div>
+              <div style={belofte}>Shop producten én kortingen bij 56 merken.</div>
               <div style={shot}>
                 <Bar label="jouw vouchers" />
                 <div style={{ padding: '10px 10px 0', background: '#fff' }}>

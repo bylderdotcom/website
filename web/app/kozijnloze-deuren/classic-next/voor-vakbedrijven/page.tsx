@@ -71,9 +71,9 @@ function Knop({ children, href = AANMELDEN }: { children: React.ReactNode; href?
 // van de pillar over kozijnloze deuren; de vanafprijs van het product van de
 // leverancier zelf.
 const REKENING: [string, string, string][] = [
-  ['Product: 8 kozijnen met deur', 'vanaf €759 per stuk, excl. btw', '± €6.100'],
+  ['Product: 8 kozijnen met deur', 'marktprijs €700 – €1.500 per stuk', '€5.600 – €12.000'],
   ['Jouw montage: 8 deuren', '€250 – €600 per deur', '€2.000 – €4.800'],
-  ['Jouw commissie op het product', 'vanaf 1% van de aankoopwaarde', 'vanaf ± €61'],
+  ['Jouw commissie op het product', 'vanaf 1% van de aankoopwaarde', 'vanaf €56 – €120'],
   ['Jaarbedrag Bylder', 'eenmaal per jaar, ongeacht het aantal klussen', '−€79'],
 ]
 
@@ -209,7 +209,7 @@ export default function VoorVakbedrijven() {
             </tbody>
           </table>
           <p style={{ fontSize: 13, color: `${INKT}0.5)`, margin: '10px 0 0' }}>
-            Productprijs volgens de leverancier (vanafprijs, excl. btw). Montagetarieven zijn de
+            Productprijzen zijn de marktbandbreedte uit onze gids, geen offerte. Montagetarieven zijn de
             bandbreedte uit onze{' '}
             <a href="/kozijnloze-deuren/" style={{ color: GROEN, fontWeight: 700 }}>gids over kozijnloze
             deuren</a>. Commissie is een ondergrens: het percentage verschilt per merk.
