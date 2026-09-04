@@ -26,13 +26,15 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Gratis kaarten Beurs Eigen Huis 2026 | Bylder',
   description:
-    'Bylder heeft 25 gratis kaarten voor de Beurs Eigen Huis, 9 t/m 11 oktober 2026 in de '
-    + 'Jaarbeurs Utrecht. Vraag er maximaal twee aan; ze gaan per post. Aanvragen tot 5 oktober.',
+    'Classic Next stelt via Bylder 25 gratis kaarten beschikbaar voor de Beurs Eigen Huis, '
+    + '9 t/m 11 oktober 2026 in de Jaarbeurs Utrecht. Maximaal twee per persoon, per post. '
+    + 'Aanvragen tot 5 oktober.',
   alternates: { canonical: 'https://www.bylder.com/beurs-eigen-huis/' },
   openGraph: {
     title: 'Gratis kaarten voor de Beurs Eigen Huis 2026',
     description:
-      '25 kaarten, maximaal twee per persoon, per post thuisbezorgd. Aanvragen tot 5 oktober.',
+      'Aangeboden door Classic Next. Maximaal twee per persoon, per post thuisbezorgd. '
+      + 'Aanvragen tot 5 oktober.',
     url: 'https://www.bylder.com/beurs-eigen-huis/',
     type: 'website',
   },
@@ -86,14 +88,20 @@ const VRAGEN = [
     a: 'Nee. Een gratis Bylder-account is genoeg. Het lidmaatschap van €79 per jaar is iets aparts en '
       + 'niet nodig voor de kaarten.' },
   { v: 'Wat kost een kaart normaal?',
-    a: 'De beurs verkoopt zelf kaarten via beurseigenhuis.nl. Wat wij weggeven zijn kaarten die wij '
-      + 'beschikbaar hebben; wat ze aan de kassa kosten bepaalt de organisatie, niet wij.' },
+    a: 'De beurs verkoopt zelf kaarten via beurseigenhuis.nl. Wat hier weggegeven wordt zijn de '
+      + 'kaarten die Classic Next beschikbaar stelt; wat een kaart aan de kassa kost bepaalt de '
+      + 'organisatie van de beurs.' },
   { v: 'Wanneer en waar is de beurs?',
     a: 'Vrijdag 9, zaterdag 10 en zondag 11 oktober 2026, in de Jaarbeurs in Utrecht.' },
-  { v: 'Waarom geeft Bylder kaarten weg?',
-    a: 'Omdat onze bezoekers en de bezoekers van die beurs dezelfde mensen zijn: mensen die net een '
-      + 'huis hebben gekocht en honderd keuzes voor de boeg hebben. Wij helpen bij die keuzes, en '
-      + 'op een beurs zie je ze in het echt.' },
+  { v: 'Wie geeft deze kaarten weg?',
+    a: 'Classic Next, de fabrikant van onzichtbare kozijnen uit Uden. Zij stellen de kaarten '
+      + 'beschikbaar voor lezers van Bylder; wij regelen de aanvraag en de verzending. Je hoeft niets '
+      + 'bij Classic Next te kopen of aan te vragen om een kaart te krijgen.' },
+  { v: 'Waarom doen zij dat?',
+    a: 'Omdat de bezoekers van die beurs precies de mensen zijn die zij willen bereiken: mensen die '
+      + 'net een huis hebben gekocht en honderd keuzes voor de boeg hebben, waaronder de binnendeuren. '
+      + 'Een kozijnloze deur moet je vóór de ruwbouw kiezen, en op een beurs zie je zo\'n deur in het '
+      + 'echt in plaats van op een foto.' },
 ]
 
 export default function BeursEigenHuis() {
@@ -137,7 +145,7 @@ export default function BeursEigenHuis() {
 
         {/* Hero — één belofte, één knop, en meteen de grenzen erbij */}
         <section style={{ padding: '48px 0 8px', maxWidth: '68ch' }}>
-          <div style={LABEL}>9, 10 en 11 oktober 2026 &middot; Jaarbeurs Utrecht</div>
+          <div style={LABEL}>Aangeboden door Classic Next &middot; 9, 10 en 11 oktober 2026 &middot; Jaarbeurs Utrecht</div>
           <h1 style={{
             fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 800, letterSpacing: '-0.03em',
             color: '#1A1208', margin: '10px 0 16px', textWrap: 'balance', lineHeight: 1.1,
@@ -146,14 +154,38 @@ export default function BeursEigenHuis() {
             Eigen Huis</span>
           </h1>
           <p style={{ ...P, fontSize: 17.5 }}>
-            Wij hebben 25 kaarten en sturen ze per post op. Vraag er &eacute;&eacute;n of twee aan met
-            een gratis Bylder-account. Aanvragen kan tot en met <strong>5 oktober</strong>{' '}&mdash;
-            daarna krijgen we ze niet meer op tijd bij je.
+            <a href="/kozijnloze-deuren/classic-next/" style={{ color: GROEN, fontWeight: 700 }}>Classic
+            Next</a> stelt 25 kaarten beschikbaar voor lezers van Bylder. Wij sturen ze per post op.
+            Vraag er &eacute;&eacute;n of twee aan met een gratis Bylder-account. Aanvragen kan tot en
+            met <strong>5 oktober</strong>{' '}&mdash; daarna krijgen we ze niet meer op tijd bij je.
           </p>
           <div style={{ margin: '22px 0 8px' }}><Knop>Vraag je kaarten aan</Knop></div>
           <p style={{ fontSize: 13.5, color: `${INKT}0.55)`, margin: 0 }}>
             Gratis account. Geen lidmaatschap nodig. Op is op.
           </p>
+        </section>
+
+
+        {/* Wie de kaarten geeft, met logo. Staat direct onder de eerste knop en
+            niet ergens onderaan: een bezoeker die dit leest wil weten wie hem
+            iets geeft, en Classic Next hoort de naamsbekendheid te krijgen die
+            zij hiervoor betalen. */}
+        <section>
+          <div style={{ ...KAART, display: 'flex', gap: 22, alignItems: 'center',
+            flexWrap: 'wrap', marginTop: 34 }}>
+            <img src="/img/voucher-logos/cnx-doorframes-com.png"
+              alt="Classic Next" width={472} height={89} loading="lazy" decoding="async"
+              style={{ width: 190, height: 'auto', flexShrink: 0 }} />
+            <div style={{ flex: 1, minWidth: 240 }}>
+              <div style={{ ...LABEL, color: GROEN, marginBottom: 6 }}>Aangeboden door</div>
+              <p style={{ ...P, margin: 0, fontSize: 15 }}>
+                <a href="/kozijnloze-deuren/classic-next/" style={{ color: '#1A1208', fontWeight: 800 }}>Classic
+                Next</a> maakt onzichtbare kozijnen en binnendeuren in eigen werkplaats in Uden. Zij
+                stellen deze kaarten beschikbaar; wij regelen de aanvraag en de verzending. Je hoeft
+                niets bij hen te kopen om een kaart te krijgen.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Hoe het werkt */}
