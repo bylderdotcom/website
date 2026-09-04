@@ -61,6 +61,7 @@ type Voucher = {
 }
 
 const SECTIE_1: Voucher[] = [
+  { brand: 'Classic Next', cat: 'Kozijnloze deuren', discount: '5%', desc: 'Op onzichtbare kozijnen en binnendeuren als één systeem, met magneetslot en verdekte scharnieren. Uit eigen werkplaats in Uden, levering door heel Nederland.', logo: '/img/voucher-logos/cnx-doorframes-com.png', alt: 'Classic Next logo' },
   { brand: 'Auping', cat: 'Slaapkamer & matrassen', discount: '10%', desc: 'Geldig bij Auping Rotterdam Centrum, Den Haag Centrum, Zoetermeer en Leidschendam, op het reguliere assortiment. Niet bovenop een lopende actie of sale. Gratis leenbed vanaf €5.000 besteding.', logo: '/img/voucher-logos/auping-nl.png', alt: 'Auping logo' },
   { brand: 'Goossens Den Bosch', cat: 'Meubelen & wonen', discount: '10%', desc: 'Winkelkorting + gratis 2D woonadviesdienst. Op alle banken, tafels, kasten en woonaccessoires.', logo: '/img/voucher-logos/goossenswonen-nl.svg', alt: 'Goossens Den Bosch logo' },
   { brand: 'Tylko', cat: 'Maatwerk kasten', discount: '€250', desc: '€250 korting bij besteding vanaf €800. Op maatwerk kasten, wandmeubels en boekenkasten.', icon: 'ph-thin ph-armchair' },
