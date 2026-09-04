@@ -104,9 +104,9 @@ const VRAGEN = [
       + 'of geplakt. De groef zit dus in het materiaal en wordt meegelakt. Dat is het verschil met een '
       + 'paneeldeur, waar losse profiellijsten op het blad zitten die na jaren kunnen loslaten.' },
   { v: 'Wat kost een freesdeur?',
-    a: 'Classic Next levert kozijn en deur samen vanaf €759 exclusief btw. Het gefreesde patroon zelf '
-      + 'is geen dure ingreep — het is een bewerking op een blad dat er toch al is. Wat de prijs bepaalt '
-      + 'is de maat: kamerhoge deuren en extra breedtes kosten meer dan standaardmaten.' },
+    a: 'Het gefreesde patroon zelf is geen dure ingreep — het is een bewerking op een deurblad dat er '
+      + 'toch al is. Wat de prijs bepaalt is de maat: kamerhoge deuren en extra breedtes kosten meer '
+      + 'dan standaardmaten. Kozijn en deur worden samen geoffreerd, dus vraag ze in één keer op.' },
   { v: 'Kan ik elke kleur krijgen?',
     a: 'De deuren worden in elke RAL-kleur geleverd. Let wel op: hoe donkerder de lak, hoe sterker de '
       + 'groef opvalt, want een groef is in de kern een schaduw. Een patroon dat in wit subtiel is, '
@@ -138,16 +138,12 @@ export default function Freesdeuren() {
             description:
               'Binnendeuren met een in het deurblad gefreesd patroon, in dertien ontwerpen, '
               + 'leverbaar in elke RAL-kleur en te combineren met een onzichtbaar kozijn.',
-            brand: { '@type': 'Brand', name: 'Classic Next', alternateName: 'CNX Doorframes' },
+            brand: { '@type': 'Brand', name: 'Classic Next' },
             category: 'Binnendeuren',
-            offers: {
-              '@type': 'AggregateOffer',
-              priceCurrency: 'EUR',
-              lowPrice: 759,
-              valueAddedTaxIncluded: false,
-              availability: 'https://schema.org/InStock',
-              areaServed: { '@type': 'Country', name: 'Nederland' },
-            },
+            // Geen offers-blok: zonder prijs op de pagina mag het schema er ook
+            // geen beweren. Schema dat meer zegt dan de pagina is precies wat
+            // een handmatige maatregel oplevert.
+            areaServed: { '@type': 'Country', name: 'Nederland' },
             ...(rs ?? {}),
           },
           {

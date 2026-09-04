@@ -7,12 +7,12 @@ import { HOME_JSONLD } from './homeHtml'
 
 const OG_TITLE = 'Verbouwing, afwerking en inrichting — Bylder regelt het.'
 const OG_DESC =
-  'Vul je adres in en Bylder regelt de rest: keuzes op het juiste moment, offertes gecheckt tegen marktprijzen en korting bij 61 woonmerken. Gratis voor bewoners.'
+  'Vul je adres in en Bylder regelt de rest: keuzes op het juiste moment, offertes gecheckt tegen marktprijzen en korting bij 56 woonmerken. Gratis voor bewoners.'
 
 export const metadata: Metadata = {
   title: 'Verbouwing, afwerking en inrichting | Bylder',
   description:
-    'Bylder regelt verbouwing, afwerking en inrichting — begin met je adres. Offertes gecheckt tegen marktprijzen, korting bij 61 woonmerken. Gratis voor bewoners.',
+    'Bylder regelt verbouwing, afwerking en inrichting — begin met je adres. Offertes gecheckt tegen marktprijzen, korting bij 56 woonmerken. Gratis voor bewoners.',
   authors: [{ name: 'Bylder Nederland B.V.' }],
   keywords: [
     'kopersbegeleiding nieuwbouw', 'offerte check aannemer', 'meerwerk controleren',

@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-08-04",
+ "bijgewerkt": "2026-09-04",
  "deelnemers": [
   {
    "naam": "Den Ouden Wonen",
@@ -547,6 +547,16 @@
    "aanbod": "10%",
    "cat": "Meubelen",
    "website": "https://www.auping.nl",
+   "lat": null,
+   "lng": null,
+   "bron": "voucher"
+  },
+  {
+   "naam": "Classic Next",
+   "plaats": "Uden",
+   "aanbod": "5%",
+   "cat": "Deuren",
+   "website": "https://cnx-doorframes.com/",
    "lat": null,
    "lng": null,
    "bron": "voucher"

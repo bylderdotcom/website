@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import VakmanReviews, { reviewSchema } from '../../components/VakmanReviews'
 
 /**
- * Merkpagina voor Classic Next (voorheen CNX Doorframes), Uden.
+ * Merkpagina voor Classic Next, Uden.
  *
  * WAAROM ONDER /kozijnloze-deuren/ EN NIET OP EEN EIGEN /merken/-tak
  * De pillar over kozijnloze deuren is het onderwerp waar deze pagina bij hoort.
@@ -10,17 +10,19 @@ import VakmanReviews, { reviewSchema } from '../../components/VakmanReviews'
  * bezoeker als zoekmachine leesbaar: onderwerp → merk → product. Een losse
  * /merken/-tak zou een tweede, lege boom optuigen.
  *
- * WAAROM "VOORHEEN CNX DOORFRAMES" ER LETTERLIJK STAAT
- * Hun eigen site heet op dit moment nog CNX Doorframes. Wie hier doorklikt komt
- * dus op een pagina met een andere naam; zonder die zin lijkt dat een fout. Het
- * lost bovendien twee dingen tegelijk op: de zoekvraag op de oude naam blijft
- * binnenkomen, en zoekmachines en taalmodellen kunnen de twee namen aan elkaar
- * knopen in plaats van er twee bedrijven van te maken.
+ * GEEN VERWIJZING NAAR DE OUDE NAAM (besluit Daniel, 4 september 2026). Die had
+ * geen historie en geen naamsbekendheid, dus er valt geen zoekvraag mee te
+ * vangen — en hem noemen maakt een merk dat net begint alleen maar ouder en
+ * onduidelijker dan het is.
+ *
+ * GEEN PRIJZEN. Een vanafprijs op een merkpagina veroudert stil: de pagina blijft
+ * hem beweren lang nadat de leverancier hem heeft bijgesteld, en dan klopt de
+ * offerte niet met wat wij zeggen.
  *
  * WAT ER BEWUST NIET OP STAAT
- * Geen ledenkorting. Die is pas waar zodra de voucher in de app bestaat; tot dan
- * zou het een belofte zijn die bij de kassa niet klopt. Zie KORTING hieronder:
- * één regel invullen en het blok verschijnt.
+ * De ledenkorting staat er sinds 4 september 2026, en pas sinds die dag: de
+ * voucher stond tot dan op 'pending' en een korting beloven die niet te claimen
+ * is, is een belofte die bij de kassa niet klopt.
  * Geen sterren of aantallen bij de beoordelingen, en dus ook geen
  * aggregateRating in de structured data, zolang er geen echte beoordeling is.
  *
@@ -28,17 +30,22 @@ import VakmanReviews, { reviewSchema } from '../../components/VakmanReviews'
  */
 
 export const metadata: Metadata = {
-  title: 'Classic Next (CNX Doorframes): onzichtbare kozijnen uit Uden | Bylder',
+  title: 'Classic Next: onzichtbare kozijnen en deuren uit Uden | Bylder',
   description:
     'Classic Next maakt instuckozijnen en deuren als één systeem, met magneetslot en verdekte '
-    + 'scharnieren. Vanaf €759 excl. btw. Wat het merk levert, wat het kost en wanneer je kiest.',
+    + 'scharnieren. Wat het merk levert, hoe het monteert en wanneer je deze keuze maakt.',
   alternates: { canonical: 'https://www.bylder.com/kozijnloze-deuren/classic-next/' },
 }
 
-// Vul dit zodra de voucher in de app staat; dan verschijnt het kortingsblok.
-// Null laten staan is geen vergetelheid maar de enige eerlijke stand zolang er
-// niets te verzilveren valt.
-const KORTING: { label: string; url: string } | null = null
+// Aan sinds de voucher in de app op 'approved' staat. Zet dit terug op null als
+// de voucher ooit wordt ingetrokken — een kortingsblok zonder claimbare code
+// stuurt mensen naar een lege hand.
+const KORTING: { label: string; url: string } | null = {
+  label: 'Leden van Bylder krijgen 5% korting op het assortiment van Classic Next. '
+    + 'Je claimt de code met een gratis account en laat hem zien bij je bestelling.',
+  url: 'https://app.bylder.com/dashboard/vouchers?utm_source=bylder-site'
+    + '&utm_campaign=classic-next-korting',
+}
 
 const BRON = 'cnx-doorframes.com, geraadpleegd 3 september 2026'
 const INKT = 'rgba(61,46,30,'
@@ -53,6 +60,10 @@ const H2: React.CSSProperties = {
 const H3: React.CSSProperties = { fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }
 const KAART: React.CSSProperties = {
   background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, padding: 24,
+}
+const LABEL: React.CSSProperties = {
+  fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase',
+  letterSpacing: '0.08em', fontWeight: 700,
 }
 const CEL: React.CSSProperties = {
   padding: '11px 14px', fontSize: 14.5, borderBottom: `1px solid ${INKT}0.08)`,
@@ -81,22 +92,16 @@ const FEITEN: [string, string][] = [
   ['Wat', 'Onzichtbare kozijnen (instuckozijnen) en deuren als één systeem'],
   ['Waar', 'Eigen werkplaats in Uden, Noord-Brabant'],
   ['Levering', 'Heel Nederland, rechtstreeks uit de werkplaats'],
-  ['Vanafprijs', '€759 excl. btw voor kozijn en deur samen'],
   ['Standaard inbegrepen', 'Magneetslot, verdekte scharnieren, stucgaas'],
   ['Deurdikte schuifsysteem', '40 – 44 mm'],
   ['Maatwerk', 'Alle maten en afwerkingen op aanvraag'],
-  ['Eerdere naam', 'CNX Doorframes'],
 ]
 
 const VRAGEN = [
-  { v: 'Is Classic Next hetzelfde bedrijf als CNX Doorframes?',
-    a: 'Ja. Het bedrijf uit Uden heette CNX Doorframes en gaat verder onder de naam Classic Next. '
-      + 'Zelfde werkplaats, zelfde systemen. Op het moment van schrijven staat op hun eigen website '
-      + 'nog de oude naam.' },
   { v: 'Wat kost een kozijn van Classic Next?',
-    a: 'Vanaf €759 exclusief btw voor de combinatie van kozijn en deur. Dat is een vanafprijs: hoogte, '
-      + 'breedte, wanddikte en afwerking bepalen wat het bij jou wordt. Montage komt er nog bij — reken '
-      + 'op €250 tot €600 per deur, afhankelijk van de wand.' },
+    a: 'Dat hangt af van hoogte, breedte, wanddikte en afwerking, en het is dus een offerte en geen '
+      + 'schapprijs. Kamerhoge deuren en extra breedtes kosten meer dan standaardmaten. Montage komt '
+      + 'er nog bij: reken op €250 tot €600 per deur, afhankelijk van de wand.' },
   { v: 'Kan ik er als particulier terecht?',
     a: 'Het bedrijf richt zich op de professionele markt: architecten, interieurontwerpers en '
       + 'projectontwikkelaars. Voor een nieuwbouwkoper betekent dat in de praktijk dat je aannemer of '
@@ -126,7 +131,6 @@ export default function ClassicNext() {
           {
             '@type': 'Brand',
             name: 'Classic Next',
-            alternateName: 'CNX Doorframes',
             url: 'https://cnx-doorframes.com/',
             description:
               'Fabrikant van onzichtbare kozijnen (instuckozijnen) en deuren als één systeem, '
@@ -175,8 +179,8 @@ export default function ClassicNext() {
           <p style={{ ...P, fontSize: 17.5 }}>
             Classic Next maakt instuckozijnen en deuren als &eacute;&eacute;n geheel: het kozijn gaat
             de wand in en wordt meegestuukt, de deur hangt erin met een magneetslot en verdekte
-            scharnieren. Wat overblijft is een schaduwvoeg. Het bedrijf heette tot voor kort{' '}
-            <strong>CNX Doorframes</strong> en maakt alles in eigen werkplaats in Uden.
+            scharnieren. Wat overblijft is een schaduwvoeg. Alles wordt gemaakt in hun eigen
+            werkplaats in Uden.
           </p>
           <p style={P}>
             Dit is geen inrichtingskeuze maar een bouwkeuze. Het frame moet in de wand v&oacute;&oacute;r
@@ -184,16 +188,61 @@ export default function ClassicNext() {
             verlanglijst. Wie het later bedenkt betaalt sloop- en stucwerk erbij.
           </p>
 
-          {KORTING && (
-            <div style={{ ...KAART, borderColor: `${GROEN}44`, margin: '20px 0' }}>
-              <h2 style={{ ...H3, margin: '0 0 6px' }}>Ledenvoordeel</h2>
-              <p style={{ ...P, margin: '0 0 12px', fontSize: 15 }}>{KORTING.label}</p>
-              <a href={KORTING.url} style={{
-                display: 'inline-block', background: GROEN, color: '#F5F0E8', fontWeight: 800,
-                fontSize: 15, padding: '12px 22px', borderRadius: 11, textDecoration: 'none',
-              }}>Bekijk je korting</a>
+        </section>
+
+        {/* Twee publieken, twee acties, en ze mogen elkaar niet in de weg zitten.
+            De koper wil korting; de vakman wil weten of hij eraan verdient. Eén
+            gedeelde knop zou voor allebei het verkeerde beloven, dus staan ze
+            naast elkaar met een eigen kop, en is meteen zichtbaar welke van de
+            twee jij bent. */}
+        <section>
+          <div style={{ display: 'grid', gap: 16, marginTop: 34,
+            gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))' }}>
+
+            {KORTING && (
+              <div style={{ ...KAART, borderColor: `${GROEN}55`, display: 'flex',
+                flexDirection: 'column' }}>
+                <div style={{ ...LABEL, color: GROEN, marginBottom: 8 }}>Koop je een woning?</div>
+                <h2 style={{ ...H3, fontSize: '1.12rem', margin: '0 0 8px' }}>
+                  5% korting met een gratis account
+                </h2>
+                <p style={{ ...P, margin: '0 0 8px', fontSize: 14.5 }}>{KORTING.label}</p>
+                <p style={{ ...P, margin: '0 0 16px', fontSize: 14.5 }}>
+                  Bij acht binnendeuren scheelt dat al gauw een paar honderd euro &mdash; en het
+                  account kost niets. Je claimt de code &eacute;&eacute;n keer en laat hem zien
+                  bij je bestelling.
+                </p>
+                <a href={KORTING.url} style={{
+                  marginTop: 'auto', display: 'inline-block', background: GROEN, color: '#F5F0E8',
+                  fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11,
+                  textDecoration: 'none', textAlign: 'center',
+                }}>Claim je kortingscode</a>
+              </div>
+            )}
+
+            <div style={{ ...KAART, background: '#1A1208', border: 'none', display: 'flex',
+              flexDirection: 'column' }}>
+              <div style={{ ...LABEL, color: '#E8A87C', marginBottom: 8 }}>Ben je vakman?</div>
+              <h2 style={{ ...H3, fontSize: '1.12rem', margin: '0 0 8px', color: '#F5F0E8' }}>
+                Verdien aan deze deuren, ook zonder ze te monteren
+              </h2>
+              <p style={{ fontSize: 14.5, lineHeight: 1.7, color: 'rgba(245,240,232,0.74)',
+                margin: '0 0 8px' }}>
+                Via ons partnerprogramma krijg je vanaf 1% van de aankoopwaarde als jouw klant
+                via jouw code bestelt. Monteer je ze zelf, dan komt het montagewerk daar bovenop
+                &mdash; en de montagetraining van Classic Next is gratis.
+              </p>
+              <p style={{ fontSize: 14.5, lineHeight: 1.7, color: 'rgba(245,240,232,0.74)',
+                margin: '0 0 16px' }}>
+                Open voor elk vakbedrijf, &euro;79 per jaar. Geen uitnodiging, geen omzeteis.
+              </p>
+              <a href="/kozijnloze-deuren/classic-next/voor-vakbedrijven/" style={{
+                marginTop: 'auto', display: 'inline-block', background: '#F5F0E8', color: '#1A1208',
+                fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11,
+                textDecoration: 'none', textAlign: 'center',
+              }}>Zo werkt het partnerprogramma</a>
             </div>
-          )}
+          </div>
         </section>
 
         <section>

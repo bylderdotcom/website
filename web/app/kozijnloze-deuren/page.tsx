@@ -120,8 +120,7 @@ const VRAGEN = [
   {
     v: 'Wat kost een onzichtbaar kozijn?',
     a: 'Leveranciers noemen in augustus 2026 tussen de €700 en €1.500 per kozijn exclusief montage, en rond '
-      + '€1.300 voor een compleet systeem inclusief deur. Classic Next uit Uden begint bij €759 exclusief '
-      + 'btw voor de combinatie van kozijn en deur. Montage komt daar bovenop: reken op €250 tot €600 per '
+      + '€1.300 voor een compleet systeem inclusief deur. Montage komt daar bovenop: reken op €250 tot €600 per '
       + 'deur, afhankelijk van de wand en de afwerking. Prefab-maten zijn 10 tot 20 procent goedkoper dan '
       + 'volledig maatwerk.',
   },

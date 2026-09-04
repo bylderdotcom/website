@@ -47,7 +47,7 @@ const AANBOD = [
     kop: 'Kozijnloze deuren',
     levering: 'Geleverd door Classic Next (Uden) · meten en montage door de leverancier of een vakbedrijf uit jouw regio',
     tekst: 'Complete combinatie van onzichtbaar kozijn en deur, met magneetslot en verdekte scharnieren. '
-      + 'Vanaf €759 exclusief btw. Let op: het frame moet in de wand vóórdat de stukadoor komt — '
+      + 'Let op: het frame moet in de wand vóórdat de stukadoor komt — '
       + 'bij nieuwbouw is dit meerwerk, geen inrichting.',
     links: [
       { href: '/kozijnloze-deuren/', tekst: 'Prijzen en wanneer je kiest' },

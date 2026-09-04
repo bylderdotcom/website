@@ -42,7 +42,7 @@ export default function PrijzenPage() {
           <li style={LI}>AI-begeleiding met onbeperkt vragen over jouw woning</li>
           <li style={LI}>Onbeperkt offertes en meerwerklijsten laten checken tegen marktprijzen</li>
           <li style={LI}>Tot tien 3D-sfeerimpressies per maand</li>
-          <li style={LI}>Kortingsvouchers bij 61 woonmerken — gemiddeld €4.200 besparing</li>
+          <li style={LI}>Kortingsvouchers bij 56 woonmerken — gemiddeld €4.200 besparing</li>
         </ul>
       </div>
 
