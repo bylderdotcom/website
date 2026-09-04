@@ -5,10 +5,10 @@ set -euo pipefail
 cd "$(dirname "$0")"          # web/
 ROOT="$(cd .. && pwd)"        # repo-root (de bestaande statische site)
 
-echo "▸ 1/3  next build (statische export → web/out)"
+echo "▸ 1/4  next build (statische export → web/out)"
 npx --no-install next build
 
-echo "▸ 2/3  RSC-prefetch-payloads opruimen (__next*.txt/index.txt per route)"
+echo "▸ 2/4  RSC-prefetch-payloads opruimen (__next*.txt/index.txt per route)"
 # App Router-static-export genereert per route ook RSC-prefetch-.txt-bestanden
 # voor client-side <Link>-navigatie. Geen enkele geporte pagina gebruikt next/link
 # (alle interne links zijn platte <a href> in dangerouslySetInnerHTML-content) —
@@ -19,7 +19,7 @@ echo "▸ 2/3  RSC-prefetch-payloads opruimen (__next*.txt/index.txt per route)"
 # (bv. robots.txt) nooit raken.
 find ./out -name "*.txt" -delete
 
-echo "▸ 3/3  overlay bestaande statische site (Next-pagina's blijven behouden)"
+echo "▸ 3/4  overlay bestaande statische site (Next-pagina's blijven behouden)"
 # Bestanden die Next al genereerde worden NIET overschreven (cp -n), dus de
 # door Next gerenderde routes blijven staan; al het andere komt van de
 # bestaande site. Dev-/bron-mappen worden uitgesloten (top-level; geneste
@@ -81,5 +81,14 @@ for entry in "$ROOT"/*; do
     cp -n "$entry" "./out/$name" || true
   fi
 done
+
+echo "▸ 4/4  merkentelling gelijktrekken met data/deelnemers.json"
+# De 8.669 statische pagina's dragen het aantal deelnemende merken in hun
+# navigatie. Dat getal stond met de hand ingetypt op 61 — het aantal vouchers
+# uit de legacy-import, niet het aantal merken — en werd bij elke nieuwe
+# deelnemer schever. Hier gelijktrekken in plaats van in de repo scheelt bij
+# elke deelnemer een commit van duizenden bestanden voor één cijfer, en dat is
+# precies het soort sweep waarin per ongeluk iets anders meelift.
+python3 "$ROOT/_scripts/merkentelling_pass.py" --dir ./out
 
 echo "✓ klaar — web/out bevat de volledige site (Next + bestaand)"

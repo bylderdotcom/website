@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import Aankondiging from './components/Aankondiging'
 import Nav from './components/Nav'
+import { aantalMerken } from '@/lib/merken'
 import Footer from './components/Footer'
 
 export const metadata: Metadata = {
@@ -50,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             niet mee te vechten om de eerste render. */}
         <Script src="/mis-je-iets.js" strategy="lazyOnload" />
         <Aankondiging />
-        <Nav />
+        <Nav merken={aantalMerken()} />
         {/* <main> is hier geen opsmuk. Twee redenen: schermlezers en
             toetsenbordgebruikers gebruiken het om de navigatie over te slaan,
             en mis-je-iets.js hangt zichzelf onder in dit blok. Zonder <main>
