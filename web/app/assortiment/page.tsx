@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { aantalMerken } from '@/lib/merken'
 
 /**
  * Het assortiment — de verkoopkant van Bylder, openlijk gescheiden van het advies.
@@ -17,8 +18,8 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Assortiment — wat Bylder en partners leveren | Bylder',
   description:
-    'Het assortiment van Bylder: kozijnloze deuren, korting bij 61 woonmerken en de showroomsale. '
-    + 'Deels eigen aanbod, deels partners — bij elk aanbod staat wie het levert.',
+    `Het assortiment van Bylder: kozijnloze deuren, korting bij ${aantalMerken()} woonmerken `
+    + 'en de showroomsale. Deels eigen aanbod, deels partners — bij elk aanbod staat wie het levert.',
   alternates: { canonical: 'https://www.bylder.com/assortiment/' },
 }
 
@@ -54,12 +55,12 @@ const AANBOD = [
     ],
   },
   {
-    kop: 'Korting bij 61 woonmerken',
+    kop: `Korting bij ${aantalMerken()} woonmerken`,
     levering: 'Geleverd door de merken en hun winkels · korting via je gratis Bylder-account',
     tekst: 'Auping, Goossens, DRT Contemporary, Tables by Tim, Whoon en meer — voor bed, bank, vloer, '
       + 'gordijnen, verlichting en tuin. De korting verzilver je bij de winkel of webshop van het merk zelf.',
     links: [
-      { href: '/vouchers/', tekst: 'Alle 61 merken en kortingen' },
+      { href: '/vouchers/', tekst: `Alle ${aantalMerken()} merken en kortingen` },
       { href: '/kortingscode/', tekst: 'Actuele kortingscodes per merk' },
     ],
   },
