@@ -32,7 +32,7 @@ const BOVENBALK: { href: string; label: string }[] = [
   { href: '/kennisbank/', label: 'Kennisbank' },
 ]
 
-const MENUS: Menu[] = [
+const menus = (MERKEN: number): Menu[] => [
   {
     label: 'Assortiment',
     breed: true,
@@ -79,7 +79,7 @@ const MENUS: Menu[] = [
   {
     label: 'Kortingsvouchers',
     items: [
-      { href: '/vouchers/', title: 'Ledenkorting bij 56 merken',
+      { href: '/vouchers/', title: `Ledenkorting bij ${MERKEN} merken`,
         sub: 'Auping, Goossens, DRT en meer — met een gratis account', primair: true },
       { href: '/vouchers/auping/', title: 'Auping: 10% + gratis leenbed' },
       { href: '/kortingscode/', title: 'Kortingscodes per merk' },
@@ -127,7 +127,11 @@ const KOPJE: React.CSSProperties = {
   color: `${INKT}0.72)`, fontWeight: 700, padding: '14px 0 4px',
 }
 
-export default function Nav() {
+export default function Nav({ merken }: { merken: number }) {
+  // Het aantal merken komt uit data/deelnemers.json en wordt door de layout
+  // doorgegeven: deze component draait in de browser en kan zelf geen bestand
+  // lezen.
+  const MENUS = menus(merken)
   // Alleen nog interactie-state. Of je mobiel bent beslist CSS, niet JavaScript:
   // de oude isMobile-useState begon op false, waardoor elke mobiele bezoeker
   // eerst een flits van het desktopmenu zag totdat de JS geladen was.
