@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { aantalMerken } from '@/lib/merken'
 
 /**
  * De uitlegpagina — en de reden dat de homepage lichter kan worden.
@@ -77,7 +78,7 @@ const BRONNEN = [
   { bedrag: '€1.840', titel: 'Meerwerkanalyse',
     tekst: 'Gemiddelde overbetaling op de meerwerklijst die de analyse eruit haalt.' },
   { bedrag: '€2.549', titel: 'Kortingsvouchers',
-    tekst: 'Korting bij 61 woonmerken voor je inrichting en afwerking.' },
+    tekst: `Korting bij ${aantalMerken()} woonmerken voor je inrichting en afwerking.` },
   { bedrag: '€1.640', titel: 'Offerte-check',
     tekst: 'Verschil met de marktprijs op offertes van aannemer en leveranciers.' },
 ]
@@ -201,7 +202,7 @@ export default function HoeHetWerktPage() {
       <p style={P}>
         Bylder regelt verbouwing, afwerking en inrichting — deels met eigen assortiment, deels met
         partners die wij selecteren, en bij elk aanbod staat wie het levert. Wij checken je offerte en
-        meerwerk tegen marktdata, regelen korting bij 61 woonmerken en brengen je in contact met
+        meerwerk tegen marktdata, regelen korting bij {aantalMerken()} woonmerken en brengen je in contact met
         vakbedrijven uit jouw regio. Wij leggen de keuzes voor; jij kiest.
       </p>
       <p style={P}>
