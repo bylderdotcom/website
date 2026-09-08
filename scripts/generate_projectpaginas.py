@@ -236,7 +236,11 @@ def bag_blok(p, naam):
     """
     bag = BAG.get(p.get("url"))
     if not bag:
-        return "", ""
+        # Drie lege waarden, niet twee. De aanroeper pakt feiten, tabel én log
+        # uit; met twee klapte de landelijke run eruit zodra hij het eerste
+        # project zonder Kadaster-meting tegenkwam. Binnen de pilotring viel dat
+        # niet op, want daar heeft elk project een meting.
+        return "", "", ""
     bd, bv = bag
     delen = []
     if bv.get("in_aanbouw"):
@@ -244,7 +248,7 @@ def bag_blok(p, naam):
     if bv.get("opgeleverd"):
         delen.append(f"<strong>{bv['opgeleverd']} recent opgeleverd</strong>")
     if not delen:
-        return "", ""
+        return "", "", ""
     antwoord = (f'<p class="antwoord"><strong>Bouwstatus, peildatum {nl_datum(bd)}.</strong> '
                 f"In de directe omgeving van {E(naam)} registreert het Kadaster "
                 + " en ".join(delen)
@@ -1586,6 +1590,19 @@ def main():
         b = re.sub(r"\s*[-–]?\s*fase\s*\d+\w*\s*$", "", b, flags=re.I).strip()
         return b if len(b) > 3 else n
 
+    # Een pagina die "Je tekende voor Fase 7b" als kop draagt, hoort niet te
+    # bestaan. Dat gebeurt wanneer de projectnaam in de bron alleen een
+    # faseaanduiding is: de fase-samenvoeging hieronder haalt er dan niets
+    # zinnigs uit en er blijft een nummer over. Niemand zoekt daarop, en het is
+    # het soort pagina waar een bezoeker aan twijfelt of hij goed zit.
+    ZWAKKE_NAAM = re.compile(r"^(fase|deelplan|blok|veld|kavel|type|woningtype|"
+                             r"bouwnummer|nr|deel)\b[\s\-]*\d", re.I)
+    voor = len(kandidaten)
+    kandidaten = [q for q in kandidaten if not ZWAKKE_NAAM.match(fasebasis(q["naam"]))]
+    if voor != len(kandidaten):
+        print(f"overgeslagen: {voor - len(kandidaten)} project(en) zonder eigen naam "
+              f"(alleen een faseaanduiding)")
+
     groepen = collections.defaultdict(list)
     for q in kandidaten:
         groepen[(fasebasis(q["naam"]).lower(), q["plaats"])].append(q)
@@ -1625,13 +1642,17 @@ def main():
         hub_rijen.append({"path": rij["path"], "_naam": netjes_naam(p),
                           "_plaats": netjes(p["plaats"]), "_won": p.get("woningen") or 0,
                           "_opl": oplever_schatting(p)[0]})
+        # Tellen gebeurt altijd, ook bij een droogdraai. Toen de tellers binnen
+        # `if not DRY` stonden meldde --dry stelselmatig "0 nieuwe pagina's",
+        # ongeacht wat een echte run zou doen. Een droogdraai die niets zegt is
+        # erger dan geen droogdraai: hij wekt vertrouwen dat er niets gebeurt.
+        bestond = any(x["slug"] == slug for x in pages)
+        nieuw += 0 if bestond else 1
         if not DRY:
             os.makedirs(os.path.join(CLUSTER, "content"), exist_ok=True)
             open(os.path.join(CLUSTER, "content", f"{slug}.html"), "w", encoding="utf8").write(body)
-            bestond = any(x["slug"] == slug for x in pages)
             pages = [x for x in pages if x["slug"] != slug] + [rij]
-            nieuw += 0 if bestond else 1
-            herzien += 1 if bestond else 0
+        herzien += 1 if bestond else 0
 
     if not DRY and oude_slugs:
         pages = [x for x in pages if x["slug"] not in oude_slugs]
