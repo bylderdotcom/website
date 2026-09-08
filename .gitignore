@@ -33,4 +33,9 @@ web/tsconfig.tsbuildinfo
 .claude/worktrees/
 data/nieuwbouw-snapshots/
 data/plaatsen/
-data/bag-snapshots/
+# data/bag-snapshots/ stond hier, en dat brak de tweewekelijkse meting: de
+# Action doet `git add data/bag-snapshots/` op een genegeerde map, voegt dus stil
+# niets toe, en committeert niets. De meting draaide en verdween. Zonder bewaarde
+# metingen komt het logboek er nooit — en dat logboek is het enige op een
+# projectpagina dat de ontwikkelaar niet kan kopiëren.
+# Een landelijke meting is ~490 kB; elke twee weken is ~13 MB per jaar.
