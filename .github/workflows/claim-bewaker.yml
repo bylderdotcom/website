@@ -39,8 +39,21 @@ jobs:
           python3 scripts/check_claims.py --live "${{ github.event.inputs.aantal || 300 }}" \
             | tee bewaker.log
 
+      # Het aantal deelnemende merken staat op 8.700 pagina's met de hand in de
+      # navigatie. Dat getal stond maanden op 61 terwijl het er 56 waren, en
+      # geen enkele controle kon dat zien: alle vier de zones van een pagina
+      # beweerden hetzelfde, en het was samen fout.
+      #
+      # Deze controle hoort hier en niet in de deploy. In de build kostte hij
+      # vier minuten op elke merge, voor een correctie die alleen nodig is als
+      # er een deelnemer bij komt. Op de repo duurt hij vijftien seconden.
+      - name: Klopt de merkentelling nog?
+        id: merken
+        continue-on-error: true
+        run: python3 _scripts/merkentelling_pass.py | tee -a bewaker.log
+
       - name: Open een issue bij een harde overtreding
-        if: steps.check.outcome == 'failure'
+        if: steps.check.outcome == 'failure' || steps.merken.outcome == 'failure'
         uses: actions/github-script@v7
         with:
           script: |
