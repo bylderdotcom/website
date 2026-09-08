@@ -1,0 +1,2489 @@
+{
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5HBPJZ1TGSD1ZXKPGWKRT6-timber": {
+  "panden": 62,
+  "verblijfsobjecten": 217,
+  "in_aanbouw": 27,
+  "opgeleverd": 35,
+  "status": {
+   "Pand in gebruik": 35,
+   "Bouwvergunning verleend": 26,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 7,
+   "2025": 31,
+   "2026": 24
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Timber",
+  "plaats": "rotterdam",
+  "woningen": 38,
+  "lat": 51.886834,
+  "lng": 4.497806
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KTXGYJV3CH373DQ8J9MNK9PP-riva": {
+  "panden": 4,
+  "verblijfsobjecten": 678,
+  "in_aanbouw": 1,
+  "opgeleverd": 3,
+  "status": {
+   "Pand in gebruik": 3,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 1,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Riva",
+  "plaats": "rotterdam",
+  "woningen": 48,
+  "lat": 51.91649915,
+  "lng": 4.48794353
+ },
+ "https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01KTC0FCXBK27HAQFHPQCG523P-de-pauwentuin": {
+  "panden": 60,
+  "verblijfsobjecten": 389,
+  "in_aanbouw": 2,
+  "opgeleverd": 58,
+  "status": {
+   "Pand in gebruik": 58,
+   "Bouwvergunning verleend": 1,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 18,
+   "2025": 18,
+   "2026": 24
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Pauwentuin",
+  "plaats": "leidschendam-voorburg",
+  "woningen": 22,
+  "lat": 52.08,
+  "lng": 4.4
+ },
+ "https://nieuwbouw.nl/aanbod/koop/maassluis/01KTTVZF6DPVNQDWWQ87THVYCE-de-oevers-maassluis": {
+  "panden": 466,
+  "verblijfsobjecten": 384,
+  "in_aanbouw": 330,
+  "opgeleverd": 136,
+  "status": {
+   "Pand in gebruik": 136,
+   "Bouw gestart": 163,
+   "Bouwvergunning verleend": 167
+  },
+  "bouwjaren": {
+   "2024": 128,
+   "2025": 81,
+   "2027": 257
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "De Oevers Maassluis",
+  "plaats": "maassluis",
+  "woningen": null,
+  "lat": 51.94207224,
+  "lng": 4.23712867
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JNGMQ8D3ECME3N3SCKHE0TVZ-rotterdam-tree-house-koopappartementen": {
+  "panden": 12,
+  "verblijfsobjecten": 1195,
+  "in_aanbouw": 4,
+  "opgeleverd": 8,
+  "status": {
+   "Pand in gebruik": 7,
+   "Bouwvergunning verleend": 3,
+   "Bouw gestart": 1,
+   "Pand in gebruik (niet ingemeten)": 1
+  },
+  "bouwjaren": {
+   "2024": 4,
+   "2025": 6,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Rotterdam Tree House Koopappartementen",
+  "plaats": "rotterdam",
+  "woningen": 127,
+  "lat": 51.92461492,
+  "lng": 4.47111636
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KQCSFTRTGP7JVDN08EJJZ1FX-zwanenpark-fase-4": {
+  "panden": 329,
+  "verblijfsobjecten": 189,
+  "in_aanbouw": 253,
+  "opgeleverd": 76,
+  "status": {
+   "Bouw gestart": 253,
+   "Pand in gebruik": 76
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 76,
+   "2026": 252
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Zwanenpark Fase 4",
+  "plaats": "vlaardingen",
+  "woningen": 38,
+  "lat": 51.92606669,
+  "lng": 4.35779572
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JXHD9HWE9G2R8MGRC9663XRK-park-overdeschie-appartementen": {
+  "panden": 102,
+  "verblijfsobjecten": 150,
+  "in_aanbouw": 65,
+  "opgeleverd": 37,
+  "status": {
+   "Pand in gebruik": 37,
+   "Bouwvergunning verleend": 65
+  },
+  "bouwjaren": {
+   "2024": 21,
+   "2025": 16,
+   "2026": 65
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Park Overdeschie Appartementen",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.93557547,
+  "lng": 4.42109952
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JXHD9J01CP2Y3RG98MXJVZ85-park-overdeschie-woningen": {
+  "panden": 100,
+  "verblijfsobjecten": 146,
+  "in_aanbouw": 65,
+  "opgeleverd": 35,
+  "status": {
+   "Pand in gebruik": 35,
+   "Bouwvergunning verleend": 65
+  },
+  "bouwjaren": {
+   "2024": 20,
+   "2025": 15,
+   "2026": 65
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Park Overdeschie Woningen",
+  "plaats": "rotterdam",
+  "woningen": 16,
+  "lat": 51.93523149,
+  "lng": 4.42114244
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01KS7DSYA72AEVKERNQTG0W5DE-maasterras-fase-3a": {
+  "panden": 500,
+  "verblijfsobjecten": 423,
+  "in_aanbouw": 473,
+  "opgeleverd": 27,
+  "status": {
+   "Pand in gebruik": 27,
+   "Bouw gestart": 245,
+   "Bouwvergunning verleend": 228
+  },
+  "bouwjaren": {
+   "2024": 32,
+   "2025": 118,
+   "2026": 350
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Maasterras Fase 3a",
+  "plaats": "zwijndrecht",
+  "woningen": null,
+  "lat": 51.81382864,
+  "lng": 4.6375735
+ },
+ "https://nieuwbouw.nl/aanbod/koop/lansingerland/01KRBA85H3A8J195MQEWP9SEJB-spetterend-wonen-de-zoom": {
+  "panden": 37,
+  "verblijfsobjecten": 98,
+  "in_aanbouw": 21,
+  "opgeleverd": 16,
+  "status": {
+   "Pand in gebruik": 16,
+   "Bouwvergunning verleend": 20,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 13,
+   "2026": 22
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Spetterend Wonen De Zoom",
+  "plaats": "lansingerland",
+  "woningen": 28,
+  "lat": 51.98233911,
+  "lng": 4.51536782
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01HYDJ2K989QM3S6VPDJ5GPDAV-wonen-aan-de-gantel": {
+  "panden": 20,
+  "verblijfsobjecten": 4,
+  "in_aanbouw": 2,
+  "opgeleverd": 18,
+  "status": {
+   "Pand in gebruik": 18,
+   "Bouwvergunning verleend": 2
+  },
+  "bouwjaren": {
+   "2024": 8,
+   "2025": 11,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Wonen Aan De Gantel",
+  "plaats": "westland",
+  "woningen": null,
+  "lat": 52.01076666,
+  "lng": 4.18833495
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01KK8RWYE21E3WTG059C76W4M3-boomgaerde-fase-3": {
+  "panden": 500,
+  "verblijfsobjecten": 261,
+  "in_aanbouw": 89,
+  "opgeleverd": 411,
+  "status": {
+   "Pand in gebruik": 411,
+   "Bouwvergunning verleend": 89
+  },
+  "bouwjaren": {
+   "2024": 147,
+   "2025": 353
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Boomgaerde Fase 3",
+  "plaats": "westland",
+  "woningen": 54,
+  "lat": 52.0389947,
+  "lng": 4.20266018
+ },
+ "https://nieuwbouw.nl/aanbod/koop/schiedam/01JXHWQYE4PRSFE5MS8MAFQQ4F-de-glasfabriek-kaft-fase-2": {
+  "panden": 86,
+  "verblijfsobjecten": 417,
+  "in_aanbouw": 55,
+  "opgeleverd": 31,
+  "status": {
+   "Bouw gestart": 43,
+   "Pand in gebruik": 31,
+   "Bouwvergunning verleend": 12
+  },
+  "bouwjaren": {
+   "2024": 5,
+   "2025": 32,
+   "2026": 49
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Glasfabriek Kaft Fase 2",
+  "plaats": "schiedam",
+  "woningen": 42,
+  "lat": 51.91404137,
+  "lng": 4.40528121
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01KQSRXA8DTN37Z4F6D5ERK9XC-terrazza": {
+  "panden": 500,
+  "verblijfsobjecten": 461,
+  "in_aanbouw": 137,
+  "opgeleverd": 363,
+  "status": {
+   "Pand in gebruik": 363,
+   "Bouwvergunning verleend": 137
+  },
+  "bouwjaren": {
+   "2024": 291,
+   "2025": 187,
+   "2026": 22
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Terrazza",
+  "plaats": "westland",
+  "woningen": 68,
+  "lat": 51.99808551,
+  "lng": 4.18381263
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVTC759FY8EV7TY925MGTXJ-piekstraat": {
+  "panden": 32,
+  "verblijfsobjecten": 1301,
+  "in_aanbouw": 1,
+  "opgeleverd": 31,
+  "status": {
+   "Pand in gebruik": 31,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 29,
+   "2025": 1,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Piekstraat",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.90614627,
+  "lng": 4.51353064
+ },
+ "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01KNVAK09JYDCNRDPJNZT8BVDP-zuijd-blok-2": {
+  "panden": 122,
+  "verblijfsobjecten": 564,
+  "in_aanbouw": 100,
+  "opgeleverd": 22,
+  "status": {
+   "Pand in gebruik": 22,
+   "Bouw gestart": 64,
+   "Bouwvergunning verleend": 36
+  },
+  "bouwjaren": {
+   "2024": 16,
+   "2025": 7,
+   "2026": 29,
+   "2027": 70
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Zuijd Blok 2",
+  "plaats": "pijnacker-nootdorp",
+  "woningen": null,
+  "lat": 52.002602,
+  "lng": 4.447466
+ },
+ "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01KNVAQD284HHGXKFT5S8CQTRB-zuijd-blok-4": {
+  "panden": 122,
+  "verblijfsobjecten": 564,
+  "in_aanbouw": 100,
+  "opgeleverd": 22,
+  "status": {
+   "Pand in gebruik": 22,
+   "Bouw gestart": 64,
+   "Bouwvergunning verleend": 36
+  },
+  "bouwjaren": {
+   "2024": 16,
+   "2025": 7,
+   "2026": 29,
+   "2027": 70
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Zuijd Blok 4",
+  "plaats": "pijnacker-nootdorp",
+  "woningen": null,
+  "lat": 52.002602,
+  "lng": 4.447466
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS7BXY4D7479GWCG16XMXDB-nieuw-kralingen-in-de-lanen-i": {
+  "panden": 500,
+  "verblijfsobjecten": 341,
+  "in_aanbouw": 212,
+  "opgeleverd": 288,
+  "status": {
+   "Pand in gebruik": 288,
+   "Bouw gestart": 52,
+   "Bouwvergunning verleend": 160
+  },
+  "bouwjaren": {
+   "2024": 176,
+   "2025": 246,
+   "2026": 78
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Nieuw Kralingen In De Lanen I",
+  "plaats": "rotterdam",
+  "woningen": 39,
+  "lat": 51.93943018,
+  "lng": 4.49706445
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVMXEAVV4BKPYPD64ZQKKA1-de-scharnier": {
+  "panden": 3,
+  "verblijfsobjecten": 125,
+  "in_aanbouw": 1,
+  "opgeleverd": 2,
+  "status": {
+   "Pand in gebruik": 2,
+   "Bouwvergunning verleend": 1
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 1
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "De Scharnier",
+  "plaats": "rotterdam",
+  "woningen": 118,
+  "lat": 51.897725,
+  "lng": 4.476519
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNP2GX5SB2CP2EPJDHDD9G39-atlas-1": {
+  "panden": 103,
+  "verblijfsobjecten": 1252,
+  "in_aanbouw": 73,
+  "opgeleverd": 30,
+  "status": {
+   "Pand in gebruik": 30,
+   "Bouwvergunning verleend": 72,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 29,
+   "2025": 72,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Atlas 1",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.899657,
+  "lng": 4.512058
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01H9QJ6NFGS0BZ3FH8QQ7Z53X1-heemtuinen-vlaardingen-fase-3-woodstock": {
+  "panden": 81,
+  "verblijfsobjecten": 183,
+  "in_aanbouw": 38,
+  "opgeleverd": 43,
+  "status": {
+   "Bouw gestart": 37,
+   "Pand in gebruik": 43,
+   "Bouwvergunning verleend": 1
+  },
+  "bouwjaren": {
+   "2025": 37,
+   "2026": 44
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Heemtuinen Vlaardingen Fase 3 Woodstock",
+  "plaats": "vlaardingen",
+  "woningen": 45,
+  "lat": 51.91228838,
+  "lng": 4.31681693
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KHBHG69DRKV348T20DWD4ZRA-het-hoofdkwartier": {
+  "panden": 15,
+  "verblijfsobjecten": 492,
+  "in_aanbouw": 4,
+  "opgeleverd": 11,
+  "status": {
+   "Pand in gebruik": 11,
+   "Bouw gestart": 4
+  },
+  "bouwjaren": {
+   "2024": 9,
+   "2025": 6
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Het Hoofdkwartier",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.94859432,
+  "lng": 4.55115907
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KG777RQV5EX0SZD194TPXSF3-zwanenpark-fase-3": {
+  "panden": 329,
+  "verblijfsobjecten": 189,
+  "in_aanbouw": 253,
+  "opgeleverd": 76,
+  "status": {
+   "Bouw gestart": 253,
+   "Pand in gebruik": 76
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 76,
+   "2026": 252
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Zwanenpark Fase 3",
+  "plaats": "vlaardingen",
+  "woningen": 150,
+  "lat": 51.92616585,
+  "lng": 4.35908394
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K71CFQ1QH04K61C8S87VMSYW-havenmeester": {
+  "panden": 58,
+  "verblijfsobjecten": 688,
+  "in_aanbouw": 52,
+  "opgeleverd": 6,
+  "status": {
+   "Pand in gebruik": 6,
+   "Bouwvergunning verleend": 51,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 6,
+   "2025": 1,
+   "2026": 51
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Havenmeester",
+  "plaats": "rijswijk-zh",
+  "woningen": 53,
+  "lat": 52.04390219,
+  "lng": 4.33786514
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01KH93XKDT1AXVJNMC311AXBTV-boogiewood": {
+  "panden": 19,
+  "verblijfsobjecten": 2317,
+  "in_aanbouw": 11,
+  "opgeleverd": 8,
+  "status": {
+   "Bouwvergunning verleend": 7,
+   "Pand in gebruik": 8,
+   "Bouw gestart": 4
+  },
+  "bouwjaren": {
+   "2024": 7,
+   "2025": 7,
+   "2026": 5
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Boogiewood",
+  "plaats": "s-gravenhage",
+  "woningen": null,
+  "lat": 52.06980763,
+  "lng": 4.33526625
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JJ740EFAJR12J5198S1ZCVTK-atlas": {
+  "panden": 93,
+  "verblijfsobjecten": 1222,
+  "in_aanbouw": 63,
+  "opgeleverd": 30,
+  "status": {
+   "Pand in gebruik": 30,
+   "Bouwvergunning verleend": 62,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 29,
+   "2025": 63,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Atlas",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.899591,
+  "lng": 4.512205
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01KBMP9ZZZZFPX0T5K22FA6CJT-maasterras-fase-2b": {
+  "panden": 500,
+  "verblijfsobjecten": 424,
+  "in_aanbouw": 474,
+  "opgeleverd": 26,
+  "status": {
+   "Pand in gebruik": 26,
+   "Bouw gestart": 246,
+   "Bouwvergunning verleend": 228
+  },
+  "bouwjaren": {
+   "2024": 30,
+   "2025": 119,
+   "2026": 351
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Maasterras Fase 2b",
+  "plaats": "zwijndrecht",
+  "woningen": null,
+  "lat": 51.81389641,
+  "lng": 4.63872364
+ },
+ "https://nieuwbouw.nl/aanbod/koop/nissewaard/01JFA0YVM0HYN106GN7VT2P62Z-vredehof-fase-1": {
+  "panden": 415,
+  "verblijfsobjecten": 377,
+  "in_aanbouw": 324,
+  "opgeleverd": 91,
+  "status": {
+   "Pand in gebruik": 90,
+   "Bouw gestart": 255,
+   "Bouwvergunning verleend": 69,
+   "Pand in gebruik (niet ingemeten)": 1
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 146,
+   "2026": 267
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Vredehof Fase 1",
+  "plaats": "nissewaard",
+  "woningen": 14,
+  "lat": 51.84810774,
+  "lng": 4.32423116
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HDR2ZX5ZMDKMKG416BTT78YZ-kj-den-haag": {
+  "panden": 21,
+  "verblijfsobjecten": 5,
+  "in_aanbouw": 20,
+  "opgeleverd": 1,
+  "status": {
+   "Bouwvergunning verleend": 20,
+   "Pand in gebruik": 1
+  },
+  "bouwjaren": {
+   "2024": 18,
+   "2025": 2,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Kj Den Haag",
+  "plaats": "s-gravenhage",
+  "woningen": null,
+  "lat": 52.082,
+  "lng": 4.3232
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HZ5NB4V49WF2TP9FQBCKJBM1-de-helden-van-vroondaal": {
+  "panden": 500,
+  "verblijfsobjecten": 317,
+  "in_aanbouw": 7,
+  "opgeleverd": 493,
+  "status": {
+   "Pand in gebruik": 493,
+   "Bouwvergunning verleend": 7
+  },
+  "bouwjaren": {
+   "2024": 484,
+   "2025": 16
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "De Helden Van Vroondaal",
+  "plaats": "s-gravenhage",
+  "woningen": null,
+  "lat": 52.0348,
+  "lng": 4.2205
+ },
+ "https://nieuwbouw.nl/aanbod/koop/schiedam/01JKZW8REQS78KH9AJ636PN2QH-prelude": {
+  "panden": 39,
+  "verblijfsobjecten": 819,
+  "in_aanbouw": 33,
+  "opgeleverd": 6,
+  "status": {
+   "Bouwvergunning verleend": 29,
+   "Bouw gestart": 4,
+   "Pand in gebruik": 6
+  },
+  "bouwjaren": {
+   "2024": 3,
+   "2025": 14,
+   "2026": 22
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Prelude",
+  "plaats": "schiedam",
+  "woningen": 20,
+  "lat": 51.9234,
+  "lng": 4.4082
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01KEC4EF1WCNKKYC28PCT1RHQ1-waelhoven-fase-2": {
+  "panden": 456,
+  "verblijfsobjecten": 559,
+  "in_aanbouw": 139,
+  "opgeleverd": 317,
+  "status": {
+   "Pand in gebruik": 317,
+   "Bouwvergunning verleend": 139
+  },
+  "bouwjaren": {
+   "2024": 253,
+   "2025": 176,
+   "2026": 27
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Waelhoven Fase 2",
+  "plaats": "westland",
+  "woningen": 17,
+  "lat": 51.99865764,
+  "lng": 4.18201794
+ },
+ "https://nieuwbouw.nl/aanbod/koop/nissewaard/01KCS197QDBTVJKCMGWQFZVZHA-stockholm": {
+  "panden": 7,
+  "verblijfsobjecten": 509,
+  "in_aanbouw": 6,
+  "opgeleverd": 1,
+  "status": {
+   "Bouwvergunning verleend": 3,
+   "Bouw gestart": 3,
+   "Pand in gebruik (niet ingemeten)": 1
+  },
+  "bouwjaren": {
+   "2025": 1,
+   "2026": 6
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Stockholm",
+  "plaats": "nissewaard",
+  "woningen": 155,
+  "lat": 51.85023849,
+  "lng": 4.34579851
+ },
+ "https://nieuwbouw.nl/aanbod/koop/ridderkerk/01K0S6Y9EZ161726E50M0SE81X-het-donckse-hof": {
+  "panden": 24,
+  "verblijfsobjecten": 36,
+  "in_aanbouw": 23,
+  "opgeleverd": 1,
+  "status": {
+   "Bouwvergunning verleend": 23,
+   "Pand in gebruik": 1
+  },
+  "bouwjaren": {
+   "2026": 24
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Het Donckse Hof",
+  "plaats": "ridderkerk",
+  "woningen": null,
+  "lat": 51.8861531,
+  "lng": 4.58353389
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01K6MEGHSY7CZFWK2BFEG7ERTT-de-meesters-van-vroondaal": {
+  "panden": 432,
+  "verblijfsobjecten": 291,
+  "in_aanbouw": 249,
+  "opgeleverd": 183,
+  "status": {
+   "Pand in gebruik": 182,
+   "Bouwvergunning verleend": 248,
+   "Bouw gestart": 1,
+   "Pand in gebruik (niet ingemeten)": 1
+  },
+  "bouwjaren": {
+   "2024": 40,
+   "2025": 182,
+   "2026": 210
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Meesters Van Vroondaal",
+  "plaats": "s-gravenhage",
+  "woningen": 130,
+  "lat": 52.036,
+  "lng": 4.225
+ },
+ "https://nieuwbouw.nl/aanbod/koop/voorschoten/01KC901KZ204QSWJNB5ZC28MHD-starrenburg-fase-1": {
+  "panden": 102,
+  "verblijfsobjecten": 155,
+  "in_aanbouw": 99,
+  "opgeleverd": 3,
+  "status": {
+   "Pand in gebruik": 3,
+   "Bouwvergunning verleend": 99
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 1,
+   "2026": 99
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Starrenburg Fase 1",
+  "plaats": "voorschoten",
+  "woningen": 24,
+  "lat": 52.11283989,
+  "lng": 4.44309174
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01K4T4TG1CSWVT7YP6S2KDFDF4-maasterras-fase-2a": {
+  "panden": 500,
+  "verblijfsobjecten": 481,
+  "in_aanbouw": 475,
+  "opgeleverd": 25,
+  "status": {
+   "Pand in gebruik": 25,
+   "Bouw gestart": 246,
+   "Bouwvergunning verleend": 229
+  },
+  "bouwjaren": {
+   "2024": 31,
+   "2025": 118,
+   "2026": 351
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Maasterras Fase 2a",
+  "plaats": "zwijndrecht",
+  "woningen": null,
+  "lat": 51.81399006,
+  "lng": 4.63829978
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01KA8QHGSD0KFPGQ9W2W56SDP9-hof-van-rijswijk-hofwoningen": {
+  "panden": 30,
+  "verblijfsobjecten": 914,
+  "in_aanbouw": 24,
+  "opgeleverd": 6,
+  "status": {
+   "Bouw gestart": 2,
+   "Pand in gebruik": 6,
+   "Bouwvergunning verleend": 22
+  },
+  "bouwjaren": {
+   "2024": 6,
+   "2025": 2,
+   "2027": 22
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Hof Van Rijswijk Hofwoningen",
+  "plaats": "rijswijk-zh",
+  "woningen": null,
+  "lat": 52.03833244,
+  "lng": 4.31347579
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01KAZVEWYQ5Z3RK0Q09MRGG25Z-buitenhof": {
+  "panden": 219,
+  "verblijfsobjecten": 401,
+  "in_aanbouw": 86,
+  "opgeleverd": 133,
+  "status": {
+   "Pand in gebruik": 133,
+   "Bouw gestart": 1,
+   "Bouwvergunning verleend": 85
+  },
+  "bouwjaren": {
+   "2024": 84,
+   "2025": 45,
+   "2026": 90
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Buitenhof",
+  "plaats": "rijswijk-zh",
+  "woningen": 42,
+  "lat": 52.02528742,
+  "lng": 4.3412688
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01KABRH4MWEKYB1H245Y2HKJMY-monchy-den-haag": {
+  "panden": 3,
+  "verblijfsobjecten": 1,
+  "in_aanbouw": 0,
+  "opgeleverd": 3,
+  "status": {
+   "Pand in gebruik": 3
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 2
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Monchy Den Haag",
+  "plaats": "s-gravenhage",
+  "woningen": 43,
+  "lat": 52.08941973,
+  "lng": 4.30104824
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01KB4XM2G2DAF07MKWVYKTV0N2-waelrijk-fase-3": {
+  "panden": 131,
+  "verblijfsobjecten": 48,
+  "in_aanbouw": 15,
+  "opgeleverd": 116,
+  "status": {
+   "Pand in gebruik": 116,
+   "Bouwvergunning verleend": 15
+  },
+  "bouwjaren": {
+   "2024": 67,
+   "2025": 57,
+   "2026": 7
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Waelrijk Fase 3",
+  "plaats": "westland",
+  "woningen": 10,
+  "lat": 52.00643836,
+  "lng": 4.17600767
+ },
+ "https://nieuwbouw.nl/aanbod/koop/krimpen-aan-den-ijssel/01K58RKC3A0XE3CDWE7EWR79HM-hof-driekamp": {
+  "panden": 139,
+  "verblijfsobjecten": 41,
+  "in_aanbouw": 43,
+  "opgeleverd": 96,
+  "status": {
+   "Bouwvergunning verleend": 2,
+   "Pand in gebruik": 96,
+   "Bouw gestart": 41
+  },
+  "bouwjaren": {
+   "2024": 5,
+   "2025": 93,
+   "2027": 41
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Hof Driekamp",
+  "plaats": "krimpen-aan-den-ijssel",
+  "woningen": null,
+  "lat": 51.92231014,
+  "lng": 4.60015912
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HYN4ZDX3W8BEE93ZEW7T1MBM-duinhil": {
+  "panden": 6,
+  "verblijfsobjecten": 13,
+  "in_aanbouw": 4,
+  "opgeleverd": 2,
+  "status": {
+   "Bouwvergunning verleend": 4,
+   "Pand in gebruik": 2
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 2,
+   "2026": 3
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Duinhil",
+  "plaats": "s-gravenhage",
+  "woningen": 40,
+  "lat": 52.06993414,
+  "lng": 4.22217578
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01HTHJEGZMCRQGEGKNTZVKW40D-hof-van-wael-verandawoningen-fase-2": {
+  "panden": 424,
+  "verblijfsobjecten": 530,
+  "in_aanbouw": 125,
+  "opgeleverd": 299,
+  "status": {
+   "Pand in gebruik": 299,
+   "Bouwvergunning verleend": 125
+  },
+  "bouwjaren": {
+   "2024": 228,
+   "2025": 177,
+   "2026": 19
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Hof Van Wael Verandawoningen Fase 2",
+  "plaats": "westland",
+  "woningen": 12,
+  "lat": 51.99420182,
+  "lng": 4.18523312
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K5RFN1JJ8QQY0NDH5B3AJA9S-hof-van-rijswijk-de-prinses": {
+  "panden": 29,
+  "verblijfsobjecten": 914,
+  "in_aanbouw": 24,
+  "opgeleverd": 5,
+  "status": {
+   "Bouw gestart": 2,
+   "Pand in gebruik": 5,
+   "Bouwvergunning verleend": 22
+  },
+  "bouwjaren": {
+   "2024": 5,
+   "2025": 2,
+   "2027": 22
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Hof Van Rijswijk De Prinses",
+  "plaats": "rijswijk-zh",
+  "woningen": 16,
+  "lat": 52.03804777,
+  "lng": 4.31303914
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6S4RN6BCE8B5PZX8HDF-mix-a-b": {
+  "panden": 9,
+  "verblijfsobjecten": 545,
+  "in_aanbouw": 4,
+  "opgeleverd": 5,
+  "status": {
+   "Pand in gebruik": 4,
+   "Bouwvergunning verleend": 2,
+   "Bouw gestart": 2,
+   "Pand in gebruik (niet ingemeten)": 1
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 6,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Mix A B",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.94036871,
+  "lng": 4.54522848
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01K6FBPPAQBAXB6EX949J1GEF6-het-heij": {
+  "panden": 57,
+  "verblijfsobjecten": 36,
+  "in_aanbouw": 36,
+  "opgeleverd": 21,
+  "status": {
+   "Pand in gebruik": 21,
+   "Bouwvergunning verleend": 36
+  },
+  "bouwjaren": {
+   "2024": 20,
+   "2025": 36,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Het Heij",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.89183123,
+  "lng": 4.41758708
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01K7RR2EDQ2ATQYY3AH4G3T37C-lake-estate": {
+  "panden": 6,
+  "verblijfsobjecten": 32,
+  "in_aanbouw": 1,
+  "opgeleverd": 5,
+  "status": {
+   "Pand in gebruik": 5,
+   "Bouwvergunning verleend": 1
+  },
+  "bouwjaren": {
+   "2024": 3,
+   "2025": 2,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Lake Estate",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.95124869,
+  "lng": 4.47805311
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01K83007FZXMWT8FQTGNSAX8WM-west": {
+  "panden": 81,
+  "verblijfsobjecten": 183,
+  "in_aanbouw": 38,
+  "opgeleverd": 43,
+  "status": {
+   "Bouw gestart": 37,
+   "Pand in gebruik": 43,
+   "Bouwvergunning verleend": 1
+  },
+  "bouwjaren": {
+   "2025": 37,
+   "2026": 44
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "West",
+  "plaats": "vlaardingen",
+  "woningen": 70,
+  "lat": 51.91062145,
+  "lng": 4.31571464
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K5RFJATC5D9QCDQ5VATMDX2K-hof-van-rijswijk-de-prins": {
+  "panden": 29,
+  "verblijfsobjecten": 914,
+  "in_aanbouw": 24,
+  "opgeleverd": 5,
+  "status": {
+   "Bouw gestart": 2,
+   "Pand in gebruik": 5,
+   "Bouwvergunning verleend": 22
+  },
+  "bouwjaren": {
+   "2024": 5,
+   "2025": 2,
+   "2027": 22
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Hof Van Rijswijk De Prins",
+  "plaats": "rijswijk-zh",
+  "woningen": 298,
+  "lat": 52.03811828,
+  "lng": 4.31424739
+ },
+ "https://nieuwbouw.nl/aanbod/koop/schiedam/01JZTBZ95418GR302TAH8QQR0Q-dirkzwager-fase-3": {
+  "panden": 168,
+  "verblijfsobjecten": 239,
+  "in_aanbouw": 95,
+  "opgeleverd": 73,
+  "status": {
+   "Pand in gebruik": 73,
+   "Bouwvergunning verleend": 43,
+   "Bouw gestart": 52
+  },
+  "bouwjaren": {
+   "2024": 15,
+   "2025": 48,
+   "2026": 105
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Dirkzwager Fase 3",
+  "plaats": "schiedam",
+  "woningen": 38,
+  "lat": 51.92044334,
+  "lng": 4.39959067
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01JZ2M5ZTNP08R8PT3B6G3ZV23-pasgeld": {
+  "panden": 12,
+  "verblijfsobjecten": 100,
+  "in_aanbouw": 9,
+  "opgeleverd": 3,
+  "status": {
+   "Bouw gestart": 1,
+   "Pand in gebruik": 3,
+   "Bouwvergunning verleend": 8
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 2,
+   "2027": 8
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Pasgeld",
+  "plaats": "rijswijk-zh",
+  "woningen": null,
+  "lat": 52.0374,
+  "lng": 4.3037
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5H2G80ZBHSCAREBN3VPD0S-koer-stadsvilla-karakter": {
+  "panden": 232,
+  "verblijfsobjecten": 1843,
+  "in_aanbouw": 168,
+  "opgeleverd": 64,
+  "status": {
+   "Pand in gebruik": 64,
+   "Bouw gestart": 2,
+   "Bouwvergunning verleend": 166
+  },
+  "bouwjaren": {
+   "2024": 34,
+   "2025": 196,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Koer Stadsvilla Karakter",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.901019,
+  "lng": 4.508659
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JWQVCF4HNX5R2N3SEA0XS6AK-new-maas": {
+  "panden": 11,
+  "verblijfsobjecten": 307,
+  "in_aanbouw": 1,
+  "opgeleverd": 10,
+  "status": {
+   "Pand in gebruik": 10,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 9,
+   "2025": 1,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "New Maas",
+  "plaats": "rotterdam",
+  "woningen": 176,
+  "lat": 51.90262613,
+  "lng": 4.54820292
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01JXF3FG3448DHSBTGMGV1C2G7-zwanenpark-fase-1": {
+  "panden": 329,
+  "verblijfsobjecten": 189,
+  "in_aanbouw": 253,
+  "opgeleverd": 76,
+  "status": {
+   "Bouw gestart": 253,
+   "Pand in gebruik": 76
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 76,
+   "2026": 252
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Zwanenpark Fase 1",
+  "plaats": "vlaardingen",
+  "woningen": 150,
+  "lat": 51.9258216,
+  "lng": 4.35689526
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01HTHJEGWW9YAGJAM9FT9ZXCFC-hof-van-wael-verandawoningen-fase-1": {
+  "panden": 426,
+  "verblijfsobjecten": 531,
+  "in_aanbouw": 125,
+  "opgeleverd": 301,
+  "status": {
+   "Pand in gebruik": 301,
+   "Bouwvergunning verleend": 125
+  },
+  "bouwjaren": {
+   "2024": 230,
+   "2025": 177,
+   "2026": 19
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Hof Van Wael Verandawoningen Fase 1",
+  "plaats": "westland",
+  "woningen": 16,
+  "lat": 51.99421503,
+  "lng": 4.18525457
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01JSPFNR7QYRN6AMD580ZM0ZA5-waelhoven-fase-1": {
+  "panden": 379,
+  "verblijfsobjecten": 463,
+  "in_aanbouw": 121,
+  "opgeleverd": 258,
+  "status": {
+   "Pand in gebruik": 258,
+   "Bouwvergunning verleend": 121
+  },
+  "bouwjaren": {
+   "2024": 231,
+   "2025": 129,
+   "2026": 19
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Waelhoven Fase 1",
+  "plaats": "westland",
+  "woningen": 55,
+  "lat": 52.00017976,
+  "lng": 4.18076269
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JR09HGSAJMES98D26E2Y3WNW-nieuw-kralingen": {
+  "panden": 500,
+  "verblijfsobjecten": 355,
+  "in_aanbouw": 207,
+  "opgeleverd": 293,
+  "status": {
+   "Pand in gebruik": 293,
+   "Bouw gestart": 37,
+   "Bouwvergunning verleend": 170
+  },
+  "bouwjaren": {
+   "2024": 176,
+   "2025": 237,
+   "2026": 87
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Nieuw Kralingen",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.94032547,
+  "lng": 4.49917669
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JRYV0RX2SMRT0Z3EHBR65K6Y-carnisse-eiland": {
+  "panden": 124,
+  "verblijfsobjecten": 255,
+  "in_aanbouw": 76,
+  "opgeleverd": 48,
+  "status": {
+   "Pand in gebruik": 48,
+   "Bouwvergunning verleend": 76
+  },
+  "bouwjaren": {
+   "2024": 46,
+   "2025": 75,
+   "2026": 3
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Carnisse Eiland",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.88452052,
+  "lng": 4.47703086
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JSPHCMW8C9EN4PDHGHGE5BSJ-weder": {
+  "panden": 3,
+  "verblijfsobjecten": 764,
+  "in_aanbouw": 2,
+  "opgeleverd": 1,
+  "status": {
+   "Pand in gebruik": 1,
+   "Bouwvergunning verleend": 2
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 1
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Weder",
+  "plaats": "rotterdam",
+  "woningen": 57,
+  "lat": 51.92370265,
+  "lng": 4.49560306
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JRYVHZM1KZV19X63QR5761Q7-opdreef": {
+  "panden": 64,
+  "verblijfsobjecten": 194,
+  "in_aanbouw": 56,
+  "opgeleverd": 8,
+  "status": {
+   "Pand in gebruik": 8,
+   "Bouwvergunning verleend": 56
+  },
+  "bouwjaren": {
+   "2024": 6,
+   "2025": 1,
+   "2026": 57
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Opdreef",
+  "plaats": "s-gravenhage",
+  "woningen": 71,
+  "lat": 52.03362907,
+  "lng": 4.25989069
+ },
+ "https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01H9GN7P44YGJTYAFFWBG9MK32-eve-nieuwbouw": {
+  "panden": 309,
+  "verblijfsobjecten": 256,
+  "in_aanbouw": 132,
+  "opgeleverd": 177,
+  "status": {
+   "Bouwvergunning verleend": 71,
+   "Pand in gebruik": 177,
+   "Bouw gestart": 61
+  },
+  "bouwjaren": {
+   "2024": 76,
+   "2025": 205,
+   "2026": 28
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Eve Nieuwbouw",
+  "plaats": "leidschendam-voorburg",
+  "woningen": 64,
+  "lat": 52.10049146,
+  "lng": 4.41805959
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JPSWSPAHN5XQ95KQA2FDTNKV-the-caland": {
+  "panden": 7,
+  "verblijfsobjecten": 3,
+  "in_aanbouw": 1,
+  "opgeleverd": 6,
+  "status": {
+   "Pand in gebruik": 6,
+   "Bouwvergunning verleend": 1
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 3,
+   "2026": 3
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "The Caland",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.90657221,
+  "lng": 4.47470908
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01HSBJRKJ5KE5Y189VETQ419MJ-boomgaerde-fase-2": {
+  "panden": 500,
+  "verblijfsobjecten": 263,
+  "in_aanbouw": 89,
+  "opgeleverd": 411,
+  "status": {
+   "Pand in gebruik": 411,
+   "Bouwvergunning verleend": 89
+  },
+  "bouwjaren": {
+   "2024": 143,
+   "2025": 357
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Boomgaerde Fase 2",
+  "plaats": "westland",
+  "woningen": 184,
+  "lat": 52.03832211,
+  "lng": 4.20466804
+ },
+ "https://nieuwbouw.nl/aanbod/koop/barendrecht/01JF0C105VY9DPKKHA0S31DPK8-zuydpolder-barendrecht-kastanje-erf": {
+  "panden": 76,
+  "verblijfsobjecten": 110,
+  "in_aanbouw": 76,
+  "opgeleverd": 0,
+  "status": {
+   "Bouwvergunning verleend": 9,
+   "Bouw gestart": 67
+  },
+  "bouwjaren": {
+   "2026": 76
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Zuydpolder Barendrecht Kastanje Erf",
+  "plaats": "barendrecht",
+  "woningen": 14,
+  "lat": 51.83735736,
+  "lng": 4.52515619
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HSDTVM298367FN1V8NYT3A8J-corner-lofts": {
+  "panden": 11,
+  "verblijfsobjecten": 1,
+  "in_aanbouw": 9,
+  "opgeleverd": 2,
+  "status": {
+   "Bouwvergunning verleend": 9,
+   "Pand in gebruik": 2
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 9,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Corner Lofts",
+  "plaats": "s-gravenhage",
+  "woningen": 265,
+  "lat": 52.07070926,
+  "lng": 4.32226462
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JJ4QQ7VPAEXYR06BYMT0HRAX-orion": {
+  "panden": 16,
+  "verblijfsobjecten": 2407,
+  "in_aanbouw": 8,
+  "opgeleverd": 8,
+  "status": {
+   "Pand in gebruik": 8,
+   "Bouw gestart": 4,
+   "Bouwvergunning verleend": 4
+  },
+  "bouwjaren": {
+   "2024": 5,
+   "2025": 6,
+   "2026": 5
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Orion",
+  "plaats": "s-gravenhage",
+  "woningen": null,
+  "lat": 52.06941,
+  "lng": 4.340345
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01HD3C418G9SX0BF59MQAE32PD-park-vijfsluizen": {
+  "panden": 254,
+  "verblijfsobjecten": 198,
+  "in_aanbouw": 0,
+  "opgeleverd": 254,
+  "status": {
+   "Pand in gebruik": 254
+  },
+  "bouwjaren": {
+   "2024": 123,
+   "2025": 73,
+   "2026": 58
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Park Vijfsluizen",
+  "plaats": "vlaardingen",
+  "woningen": null,
+  "lat": 51.91103495,
+  "lng": 4.36638039
+ },
+ "https://nieuwbouw.nl/aanbod/koop/maassluis/01HMGYM131R94XVDBNYMAXGV9Q-puur-maassluis": {
+  "panden": 164,
+  "verblijfsobjecten": 253,
+  "in_aanbouw": 18,
+  "opgeleverd": 146,
+  "status": {
+   "Bouwvergunning verleend": 16,
+   "Pand in gebruik": 146,
+   "Bouw gestart": 2
+  },
+  "bouwjaren": {
+   "2024": 89,
+   "2025": 12,
+   "2026": 63
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Puur Maassluis",
+  "plaats": "maassluis",
+  "woningen": null,
+  "lat": 51.92196986,
+  "lng": 4.25643504
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01JDW68FM3GJ54JS8EQAPHCMAT-edisonpark": {
+  "panden": 13,
+  "verblijfsobjecten": 50,
+  "in_aanbouw": 1,
+  "opgeleverd": 12,
+  "status": {
+   "Pand in gebruik": 11,
+   "Pand in gebruik (niet ingemeten)": 1,
+   "Bouwvergunning verleend": 1
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 9,
+   "2026": 3
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Edisonpark",
+  "plaats": "zoetermeer",
+  "woningen": 550,
+  "lat": 52.0616,
+  "lng": 4.518
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01H963AJ4X19MFKFAXJHSGG970-lindesteyn": {
+  "panden": 13,
+  "verblijfsobjecten": 15,
+  "in_aanbouw": 0,
+  "opgeleverd": 13,
+  "status": {
+   "Pand in gebruik": 13
+  },
+  "bouwjaren": {
+   "2024": 5,
+   "2025": 8
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Lindesteyn",
+  "plaats": "zwijndrecht",
+  "woningen": null,
+  "lat": 51.81383836,
+  "lng": 4.61089969
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HV9HEHBA0P2S3A17NF2G94BD-mares": {
+  "panden": 32,
+  "verblijfsobjecten": 220,
+  "in_aanbouw": 1,
+  "opgeleverd": 31,
+  "status": {
+   "Pand in gebruik": 31,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 31
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Mares",
+  "plaats": "s-gravenhage",
+  "woningen": null,
+  "lat": 52.09725776,
+  "lng": 4.25865657
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01H963AVMW1M8SXF12YZX22PYT-populus": {
+  "panden": 7,
+  "verblijfsobjecten": 0,
+  "in_aanbouw": 0,
+  "opgeleverd": 7,
+  "status": {
+   "Pand in gebruik": 7
+  },
+  "bouwjaren": {
+   "2024": 5,
+   "2025": 2
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Populus",
+  "plaats": "rotterdam",
+  "woningen": 200,
+  "lat": 51.96143658,
+  "lng": 4.54322261
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HJ6FZ8M6QXWASQE84M5PNQ73-maestro": {
+  "panden": 5,
+  "verblijfsobjecten": 394,
+  "in_aanbouw": 0,
+  "opgeleverd": 5,
+  "status": {
+   "Pand in gebruik": 1,
+   "Pand in gebruik (niet ingemeten)": 4
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2026": 4
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Maestro",
+  "plaats": "s-gravenhage",
+  "woningen": 122,
+  "lat": 52.03910497,
+  "lng": 4.25127983
+ },
+ "https://nieuwbouw.nl/aanbod/koop/delft/01H963AE6G4MYKTWGV494RAR4V-nieuwe-haven-delft": {
+  "panden": 8,
+  "verblijfsobjecten": 5,
+  "in_aanbouw": 3,
+  "opgeleverd": 5,
+  "status": {
+   "Pand in gebruik": 5,
+   "Bouw gestart": 2,
+   "Bouwvergunning verleend": 1
+  },
+  "bouwjaren": {
+   "2024": 4,
+   "2025": 3,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Nieuwe Haven Delft",
+  "plaats": "delft",
+  "woningen": null,
+  "lat": 52.000154,
+  "lng": 4.366465
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01H963ARJBZMZX9TW974D72EP2-fortunapark-vlaardingen": {
+  "panden": 2,
+  "verblijfsobjecten": 1,
+  "in_aanbouw": 0,
+  "opgeleverd": 2,
+  "status": {
+   "Pand in gebruik": 2
+  },
+  "bouwjaren": {
+   "2024": 2
+  },
+  "nieuwste_bouwjaar": 2024,
+  "naam": "Fortunapark Vlaardingen",
+  "plaats": "vlaardingen",
+  "woningen": 235,
+  "lat": 51.91559876,
+  "lng": 4.32826996
+ },
+ "https://nieuwbouw.nl/aanbod/koop/maassluis/01HE3P04P5NF22YQANCRPV5RK8-wonen-in-groen-fase-3": {
+  "panden": 219,
+  "verblijfsobjecten": 495,
+  "in_aanbouw": 26,
+  "opgeleverd": 193,
+  "status": {
+   "Bouwvergunning verleend": 21,
+   "Pand in gebruik": 193,
+   "Bouw gestart": 5
+  },
+  "bouwjaren": {
+   "2024": 135,
+   "2025": 24,
+   "2026": 60
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Wonen In Groen Fase 3",
+  "plaats": "maassluis",
+  "woningen": 37,
+  "lat": 51.920197,
+  "lng": 4.254703
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5H98RS391XD3CCQ5BWYH2K-de-kaai": {
+  "panden": 11,
+  "verblijfsobjecten": 1476,
+  "in_aanbouw": 6,
+  "opgeleverd": 5,
+  "status": {
+   "Pand in gebruik": 5,
+   "Bouwvergunning verleend": 6
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 2,
+   "2026": 7
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Kaai",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.91479072,
+  "lng": 4.503995
+ },
+ "https://nieuwbouw.nl/aanbod/koop/schiedam/01H963AK00PQNGH9CQQF7PE931-houthaven": {
+  "panden": 3,
+  "verblijfsobjecten": 3,
+  "in_aanbouw": 2,
+  "opgeleverd": 1,
+  "status": {
+   "Pand in gebruik": 1,
+   "Bouwvergunning verleend": 2
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 2
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Houthaven",
+  "plaats": "schiedam",
+  "woningen": null,
+  "lat": 51.90534581,
+  "lng": 4.39775802
+ },
+ "https://nieuwbouw.nl/aanbod/koop/nissewaard/01HDRWENHD8P1V4AY88WX6W1TF-new-haven": {
+  "panden": 188,
+  "verblijfsobjecten": 727,
+  "in_aanbouw": 99,
+  "opgeleverd": 89,
+  "status": {
+   "Bouwvergunning verleend": 98,
+   "Pand in gebruik": 89,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 6,
+   "2025": 140,
+   "2026": 42
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "New Haven",
+  "plaats": "nissewaard",
+  "woningen": null,
+  "lat": 51.8457,
+  "lng": 4.3329
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNS9H0DG7XDE03ZSSP0AB8G6-nieuw-kralingen-aan-de-boezem-ii": {
+  "panden": 500,
+  "verblijfsobjecten": 341,
+  "in_aanbouw": 212,
+  "opgeleverd": 288,
+  "status": {
+   "Pand in gebruik": 288,
+   "Bouw gestart": 52,
+   "Bouwvergunning verleend": 160
+  },
+  "bouwjaren": {
+   "2024": 176,
+   "2025": 246,
+   "2026": 78
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Nieuw Kralingen Aan De Boezem Ii",
+  "plaats": "rotterdam",
+  "woningen": 36,
+  "lat": 51.93943018,
+  "lng": 4.49706445
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01JKQK3FAAN6X7PY7GT3DBH4AS-waelrijk-fase-2": {
+  "panden": 175,
+  "verblijfsobjecten": 75,
+  "in_aanbouw": 33,
+  "opgeleverd": 142,
+  "status": {
+   "Pand in gebruik": 142,
+   "Bouwvergunning verleend": 33
+  },
+  "bouwjaren": {
+   "2024": 92,
+   "2025": 76,
+   "2026": 7
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Waelrijk Fase 2",
+  "plaats": "westland",
+  "woningen": null,
+  "lat": 52.00564248,
+  "lng": 4.17619943
+ },
+ "https://nieuwbouw.nl/aanbod/koop/maassluis/01JK6B5JY6SZG1SYBF7GQ844VP-burg-meesters": {
+  "panden": 227,
+  "verblijfsobjecten": 238,
+  "in_aanbouw": 212,
+  "opgeleverd": 15,
+  "status": {
+   "Bouwvergunning verleend": 120,
+   "Pand in gebruik": 15,
+   "Bouw gestart": 92
+  },
+  "bouwjaren": {
+   "2024": 7,
+   "2025": 10,
+   "2027": 210
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Burg Meesters",
+  "plaats": "maassluis",
+  "woningen": null,
+  "lat": 51.93749684,
+  "lng": 4.23252763
+ },
+ "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KFJMXGSAS54V963S8KPHX10J-zwanenpark-fase-2": {
+  "panden": 329,
+  "verblijfsobjecten": 189,
+  "in_aanbouw": 253,
+  "opgeleverd": 76,
+  "status": {
+   "Bouw gestart": 253,
+   "Pand in gebruik": 76
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 76,
+   "2026": 252
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Zwanenpark Fase 2",
+  "plaats": "vlaardingen",
+  "woningen": 150,
+  "lat": 51.9260793,
+  "lng": 4.35892944
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01HC2E3DX0JM8ESNGS38V1DJWA-nieuw-zand": {
+  "panden": 387,
+  "verblijfsobjecten": 467,
+  "in_aanbouw": 121,
+  "opgeleverd": 266,
+  "status": {
+   "Pand in gebruik": 266,
+   "Bouwvergunning verleend": 121
+  },
+  "bouwjaren": {
+   "2024": 239,
+   "2025": 127,
+   "2026": 21
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Nieuw Zand",
+  "plaats": "westland",
+  "woningen": null,
+  "lat": 52.000163,
+  "lng": 4.182302
+ },
+ "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01HE4ZT01HVH0ACC76XYKPW9WK-de-juffer": {
+  "panden": 238,
+  "verblijfsobjecten": 344,
+  "in_aanbouw": 67,
+  "opgeleverd": 171,
+  "status": {
+   "Pand in gebruik": 171,
+   "Bouwvergunning verleend": 4,
+   "Bouw gestart": 63
+  },
+  "bouwjaren": {
+   "2024": 72,
+   "2025": 66,
+   "2026": 97,
+   "2027": 3
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "De Juffer",
+  "plaats": "pijnacker-nootdorp",
+  "woningen": null,
+  "lat": 52.005977,
+  "lng": 4.43485
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01JJPE7Q2QQDX29BQA8KT8095P-waelrijk-fase-1-deel-1": {
+  "panden": 107,
+  "verblijfsobjecten": 37,
+  "in_aanbouw": 8,
+  "opgeleverd": 99,
+  "status": {
+   "Pand in gebruik": 99,
+   "Bouwvergunning verleend": 8
+  },
+  "bouwjaren": {
+   "2024": 55,
+   "2025": 45,
+   "2026": 7
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Waelrijk Fase 1 Deel 1",
+  "plaats": "westland",
+  "woningen": 22,
+  "lat": 52.00674184,
+  "lng": 4.17601566
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01HTMQNZY01K68BFE15V68WEKX-euryza-welgelegen": {
+  "panden": 107,
+  "verblijfsobjecten": 102,
+  "in_aanbouw": 54,
+  "opgeleverd": 53,
+  "status": {
+   "Pand in gebruik": 53,
+   "Bouwvergunning verleend": 6,
+   "Bouw gestart": 48
+  },
+  "bouwjaren": {
+   "2024": 35,
+   "2025": 14,
+   "2026": 58
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Euryza Welgelegen",
+  "plaats": "zwijndrecht",
+  "woningen": null,
+  "lat": 51.81588985,
+  "lng": 4.65249285
+ },
+ "https://nieuwbouw.nl/aanbod/koop/maassluis/01JTJ2W17H3PCVHZ876T8CXZ2X-vogelrijk": {
+  "panden": 43,
+  "verblijfsobjecten": 129,
+  "in_aanbouw": 34,
+  "opgeleverd": 9,
+  "status": {
+   "Bouwvergunning verleend": 1,
+   "Pand in gebruik": 9,
+   "Bouw gestart": 33
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 40,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Vogelrijk",
+  "plaats": "maassluis",
+  "woningen": 15,
+  "lat": 51.92924164,
+  "lng": 4.2329437
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01JVKQ65M9XGH1XZVSMVTYNC37-waelrijk-fase-1-deel-2": {
+  "panden": 150,
+  "verblijfsobjecten": 60,
+  "in_aanbouw": 25,
+  "opgeleverd": 125,
+  "status": {
+   "Pand in gebruik": 125,
+   "Bouwvergunning verleend": 25
+  },
+  "bouwjaren": {
+   "2024": 76,
+   "2025": 67,
+   "2026": 7
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Waelrijk Fase 1 Deel 2",
+  "plaats": "westland",
+  "woningen": 22,
+  "lat": 52.00612049,
+  "lng": 4.17610074
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01JV2DJQ2QEG0589FJGEKBEB0P-de-bostuinen-fase-2": {
+  "panden": 500,
+  "verblijfsobjecten": 458,
+  "in_aanbouw": 479,
+  "opgeleverd": 21,
+  "status": {
+   "Pand in gebruik": 21,
+   "Bouw gestart": 250,
+   "Bouwvergunning verleend": 229
+  },
+  "bouwjaren": {
+   "2024": 27,
+   "2025": 117,
+   "2026": 356
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Bostuinen Fase 2",
+  "plaats": "zwijndrecht",
+  "woningen": 66,
+  "lat": 51.8115441,
+  "lng": 4.63882631
+ },
+ "https://nieuwbouw.nl/aanbod/koop/maassluis/01JN0ZF7SW9D3SDZR36N7QJXJE-parkhof-wilgenrijk": {
+  "panden": 219,
+  "verblijfsobjecten": 495,
+  "in_aanbouw": 26,
+  "opgeleverd": 193,
+  "status": {
+   "Bouwvergunning verleend": 21,
+   "Pand in gebruik": 193,
+   "Bouw gestart": 5
+  },
+  "bouwjaren": {
+   "2024": 135,
+   "2025": 24,
+   "2026": 60
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Parkhof Wilgenrijk",
+  "plaats": "maassluis",
+  "woningen": 29,
+  "lat": 51.920197,
+  "lng": 4.254703
+ },
+ "https://nieuwbouw.nl/aanbod/koop/schiedam/01J9B9HDCX4S1Y8HY6APAQP5D1-het-rozenerf": {
+  "panden": 13,
+  "verblijfsobjecten": 10,
+  "in_aanbouw": 11,
+  "opgeleverd": 2,
+  "status": {
+   "Pand in gebruik": 2,
+   "Bouwvergunning verleend": 1,
+   "Bouw gestart": 10
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 11,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Het Rozenerf",
+  "plaats": "schiedam",
+  "woningen": null,
+  "lat": 51.93689834,
+  "lng": 4.40002514
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01J2XRC065PB9H06KF7QGDFGXT-maasterras-fase-1": {
+  "panden": 500,
+  "verblijfsobjecten": 481,
+  "in_aanbouw": 475,
+  "opgeleverd": 25,
+  "status": {
+   "Pand in gebruik": 25,
+   "Bouw gestart": 246,
+   "Bouwvergunning verleend": 229
+  },
+  "bouwjaren": {
+   "2024": 31,
+   "2025": 118,
+   "2026": 351
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Maasterras Fase 1",
+  "plaats": "zwijndrecht",
+  "woningen": null,
+  "lat": 51.8139844,
+  "lng": 4.63828169
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01H963ASB5QW844EZTAV73C611-euryza-nouveau-en-oeverture": {
+  "panden": 127,
+  "verblijfsobjecten": 202,
+  "in_aanbouw": 75,
+  "opgeleverd": 52,
+  "status": {
+   "Pand in gebruik": 52,
+   "Bouwvergunning verleend": 27,
+   "Bouw gestart": 48
+  },
+  "bouwjaren": {
+   "2024": 33,
+   "2025": 11,
+   "2026": 81,
+   "2027": 2
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Euryza Nouveau En Oeverture",
+  "plaats": "zwijndrecht",
+  "woningen": null,
+  "lat": 51.81712415,
+  "lng": 4.65320349
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01H963AR5FWCSA8RR2MC4FBYC3-parkrijk-de-lanen-fase-3": {
+  "panden": 269,
+  "verblijfsobjecten": 653,
+  "in_aanbouw": 76,
+  "opgeleverd": 193,
+  "status": {
+   "Pand in gebruik": 193,
+   "Bouw gestart": 1,
+   "Bouwvergunning verleend": 75
+  },
+  "bouwjaren": {
+   "2024": 107,
+   "2025": 78,
+   "2026": 84
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Parkrijk De Lanen Fase 3",
+  "plaats": "rijswijk-zh",
+  "woningen": null,
+  "lat": 52.02098071,
+  "lng": 4.33576673
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01H963AN72QQ1DCH0ECTJD971K-waelse-weelde": {
+  "panden": 362,
+  "verblijfsobjecten": 497,
+  "in_aanbouw": 111,
+  "opgeleverd": 251,
+  "status": {
+   "Pand in gebruik": 251,
+   "Bouwvergunning verleend": 111
+  },
+  "bouwjaren": {
+   "2024": 184,
+   "2025": 160,
+   "2026": 18
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Waelse Weelde",
+  "plaats": "westland",
+  "woningen": null,
+  "lat": 51.99363298,
+  "lng": 4.18689823
+ },
+ "https://nieuwbouw.nl/aanbod/koop/pijnacker-nootdorp/01HD5YZZS31PK2DCYE9V1Z19VD-knoest-wonen": {
+  "panden": 310,
+  "verblijfsobjecten": 434,
+  "in_aanbouw": 105,
+  "opgeleverd": 204,
+  "status": {
+   "Bouwvergunning verleend": 81,
+   "Pand in gebruik": 204,
+   "Verbouwing pand": 1,
+   "Bouw gestart": 24
+  },
+  "bouwjaren": {
+   "2024": 75,
+   "2025": 110,
+   "2026": 97,
+   "2027": 28
+  },
+  "nieuwste_bouwjaar": 2027,
+  "naam": "Knoest Wonen",
+  "plaats": "pijnacker-nootdorp",
+  "woningen": null,
+  "lat": 52.02720737,
+  "lng": 4.43240404
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BH0SXMTSV91GG1857PW1K-koer-parkwoningen": {
+  "panden": 229,
+  "verblijfsobjecten": 1884,
+  "in_aanbouw": 167,
+  "opgeleverd": 62,
+  "status": {
+   "Pand in gebruik": 62,
+   "Bouwvergunning verleend": 166,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 36,
+   "2025": 191,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Koer Parkwoningen",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.9015342,
+  "lng": 4.5084452
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01J8SPFTYZF5XSRRGYEKXYWR07-de-bostuinen-fase-1": {
+  "panden": 500,
+  "verblijfsobjecten": 418,
+  "in_aanbouw": 469,
+  "opgeleverd": 31,
+  "status": {
+   "Pand in gebruik": 31,
+   "Bouw gestart": 241,
+   "Bouwvergunning verleend": 228
+  },
+  "bouwjaren": {
+   "2024": 35,
+   "2025": 119,
+   "2026": 346
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Bostuinen Fase 1",
+  "plaats": "zwijndrecht",
+  "woningen": 66,
+  "lat": 51.81274442,
+  "lng": 4.63582374
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JC0KT64VFMX12YF3VBXGYKWS-het-zuider-carre": {
+  "panden": 223,
+  "verblijfsobjecten": 330,
+  "in_aanbouw": 29,
+  "opgeleverd": 194,
+  "status": {
+   "Pand in gebruik": 194,
+   "Bouwvergunning verleend": 27,
+   "Bouw gestart": 2
+  },
+  "bouwjaren": {
+   "2024": 12,
+   "2025": 187,
+   "2026": 24
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Het Zuider Carre",
+  "plaats": "rotterdam",
+  "woningen": 72,
+  "lat": 51.8850486,
+  "lng": 4.50310975
+ },
+ "https://nieuwbouw.nl/aanbod/koop/lansingerland/01J3CTPM1SB5H5V05YPH3KEPGC-spetterend-wonen-waterwijk": {
+  "panden": 500,
+  "verblijfsobjecten": 484,
+  "in_aanbouw": 278,
+  "opgeleverd": 222,
+  "status": {
+   "Bouwvergunning verleend": 134,
+   "Bouw gestart": 144,
+   "Pand in gebruik": 222
+  },
+  "bouwjaren": {
+   "2024": 167,
+   "2025": 202,
+   "2026": 131
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Spetterend Wonen Waterwijk",
+  "plaats": "lansingerland",
+  "woningen": null,
+  "lat": 51.97942291,
+  "lng": 4.47739807
+ },
+ "https://nieuwbouw.nl/aanbod/koop/schiedam/01J1YCZ9EHX8V82QVDZ4VSM3DG-dirkzwager-fase-2b": {
+  "panden": 188,
+  "verblijfsobjecten": 445,
+  "in_aanbouw": 115,
+  "opgeleverd": 73,
+  "status": {
+   "Pand in gebruik": 73,
+   "Bouw gestart": 74,
+   "Bouwvergunning verleend": 41
+  },
+  "bouwjaren": {
+   "2024": 15,
+   "2025": 66,
+   "2026": 107
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Dirkzwager Fase 2b",
+  "plaats": "schiedam",
+  "woningen": 23,
+  "lat": 51.91957227,
+  "lng": 4.40018132
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HE5GZED0T0036FD8YQ4Q7QWE-de-hofrij": {
+  "panden": 139,
+  "verblijfsobjecten": 177,
+  "in_aanbouw": 61,
+  "opgeleverd": 78,
+  "status": {
+   "Pand in gebruik": 78,
+   "Bouwvergunning verleend": 60,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 71,
+   "2025": 67,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Hofrij",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.949829,
+  "lng": 4.453994
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6QKKB5Z7NT764HS98DWBKZ-vlietpark-fase-2": {
+  "panden": 56,
+  "verblijfsobjecten": 133,
+  "in_aanbouw": 2,
+  "opgeleverd": 54,
+  "status": {
+   "Bouwvergunning verleend": 1,
+   "Pand in gebruik": 54,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 3,
+   "2025": 1,
+   "2026": 52
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Vlietpark Fase 2",
+  "plaats": "rotterdam",
+  "woningen": 26,
+  "lat": 51.8602028,
+  "lng": 4.3565922
+ },
+ "https://nieuwbouw.nl/aanbod/koop/schiedam/01HGDP2AVRAM6B0EVM47YG91FY-de-glasfabriek-entree-fase-1": {
+  "panden": 93,
+  "verblijfsobjecten": 407,
+  "in_aanbouw": 68,
+  "opgeleverd": 25,
+  "status": {
+   "Bouw gestart": 48,
+   "Bouwvergunning verleend": 20,
+   "Pand in gebruik": 25
+  },
+  "bouwjaren": {
+   "2024": 1,
+   "2025": 46,
+   "2026": 46
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Glasfabriek Entree Fase 1",
+  "plaats": "schiedam",
+  "woningen": null,
+  "lat": 51.91401772,
+  "lng": 4.40341658
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6VJGDKJGXGBX2ZA0AKZ-mix-b": {
+  "panden": 9,
+  "verblijfsobjecten": 545,
+  "in_aanbouw": 4,
+  "opgeleverd": 5,
+  "status": {
+   "Pand in gebruik": 4,
+   "Bouwvergunning verleend": 2,
+   "Bouw gestart": 2,
+   "Pand in gebruik (niet ingemeten)": 1
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 6,
+   "2026": 1
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Mix B",
+  "plaats": "rotterdam",
+  "woningen": 265,
+  "lat": 51.94036871,
+  "lng": 4.54529285
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HJ6FZ8PZR4DG8ZNDKTF6R6FS-moodz": {
+  "panden": 22,
+  "verblijfsobjecten": 1954,
+  "in_aanbouw": 19,
+  "opgeleverd": 3,
+  "status": {
+   "Bouwvergunning verleend": 16,
+   "Pand in gebruik": 3,
+   "Bouw gestart": 3
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 15,
+   "2026": 5
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Moodz",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.92931214,
+  "lng": 4.48020101
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BFP53RY8NNBA5B65NGWT8-koer-appartementen": {
+  "panden": 229,
+  "verblijfsobjecten": 1884,
+  "in_aanbouw": 167,
+  "opgeleverd": 62,
+  "status": {
+   "Pand in gebruik": 62,
+   "Bouwvergunning verleend": 166,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 36,
+   "2025": 191,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Koer Appartementen",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.9015342,
+  "lng": 4.5084452
+ },
+ "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HM6BGBGPRNFS0DACQ2V9HZ46-koer-herenhuizen": {
+  "panden": 229,
+  "verblijfsobjecten": 1884,
+  "in_aanbouw": 167,
+  "opgeleverd": 62,
+  "status": {
+   "Pand in gebruik": 62,
+   "Bouwvergunning verleend": 166,
+   "Bouw gestart": 1
+  },
+  "bouwjaren": {
+   "2024": 36,
+   "2025": 191,
+   "2026": 2
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Koer Herenhuizen",
+  "plaats": "rotterdam",
+  "woningen": null,
+  "lat": 51.9015342,
+  "lng": 4.5084452
+ },
+ "https://nieuwbouw.nl/aanbod/koop/westland/01HDP3NRWG5D0285JZ37HY84PB-de-harmonie": {
+  "panden": 63,
+  "verblijfsobjecten": 119,
+  "in_aanbouw": 4,
+  "opgeleverd": 59,
+  "status": {
+   "Pand in gebruik": 59,
+   "Bouwvergunning verleend": 4
+  },
+  "bouwjaren": {
+   "2024": 11,
+   "2025": 17,
+   "2026": 35
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Harmonie",
+  "plaats": "westland",
+  "woningen": null,
+  "lat": 51.99530716,
+  "lng": 4.20875341
+ },
+ "https://nieuwbouw.nl/aanbod/koop/capelle-aan-den-ijssel/01H963APYVS6ZVN6FDJKJAM8F6-blinq": {
+  "panden": 93,
+  "verblijfsobjecten": 184,
+  "in_aanbouw": 0,
+  "opgeleverd": 93,
+  "status": {
+   "Pand in gebruik": 93
+  },
+  "bouwjaren": {
+   "2024": 2,
+   "2025": 91
+  },
+  "nieuwste_bouwjaar": 2025,
+  "naam": "Blinq",
+  "plaats": "capelle-aan-den-ijssel",
+  "woningen": 180,
+  "lat": 51.9225434,
+  "lng": 4.5742038
+ },
+ "https://nieuwbouw.nl/aanbod/koop/delft/01H963AJTRJSZEZZ8AREWP57XY-de-tuin-van-teding": {
+  "panden": 13,
+  "verblijfsobjecten": 156,
+  "in_aanbouw": 6,
+  "opgeleverd": 7,
+  "status": {
+   "Pand in gebruik": 7,
+   "Bouwvergunning verleend": 3,
+   "Bouw gestart": 3
+  },
+  "bouwjaren": {
+   "2024": 4,
+   "2025": 5,
+   "2026": 4
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "De Tuin Van Teding",
+  "plaats": "delft",
+  "woningen": 10,
+  "lat": 52.01047382,
+  "lng": 4.33582306
+ },
+ "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HDR0MVEAKMXE028EBRYJGM7Q-flair10": {
+  "panden": 44,
+  "verblijfsobjecten": 61,
+  "in_aanbouw": 11,
+  "opgeleverd": 33,
+  "status": {
+   "Bouwvergunning verleend": 11,
+   "Pand in gebruik": 33
+  },
+  "bouwjaren": {
+   "2024": 33,
+   "2025": 2,
+   "2026": 9
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Flair10",
+  "plaats": "s-gravenhage",
+  "woningen": null,
+  "lat": 52.0399,
+  "lng": 4.2337
+ },
+ "https://nieuwbouw.nl/aanbod/koop/voorschoten/01HDPAA8X2PCC6BVR45HVYRQ4X-het-fortuyn": {
+  "panden": 343,
+  "verblijfsobjecten": 241,
+  "in_aanbouw": 113,
+  "opgeleverd": 230,
+  "status": {
+   "Pand in gebruik": 228,
+   "Bouw gestart": 1,
+   "Bouwvergunning verleend": 112,
+   "Pand in gebruik (niet ingemeten)": 2
+  },
+  "bouwjaren": {
+   "2024": 207,
+   "2025": 15,
+   "2026": 121
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Het Fortuyn",
+  "plaats": "voorschoten",
+  "woningen": 24,
+  "lat": 52.1478,
+  "lng": 4.4648
+ },
+ "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01HE2ZXNZ7PW9WKKR0AW4NADV3-soeterdael": {
+  "panden": 26,
+  "verblijfsobjecten": 576,
+  "in_aanbouw": 5,
+  "opgeleverd": 21,
+  "status": {
+   "Bouwvergunning verleend": 3,
+   "Pand in gebruik": 4,
+   "Bouw gestart": 2,
+   "Pand in gebruik (niet ingemeten)": 17
+  },
+  "bouwjaren": {
+   "2024": 4,
+   "2025": 3,
+   "2026": 19
+  },
+  "nieuwste_bouwjaar": 2026,
+  "naam": "Soeterdael",
+  "plaats": "zoetermeer",
+  "woningen": 29,
+  "lat": 52.0564,
+  "lng": 4.4911
+ }
+}

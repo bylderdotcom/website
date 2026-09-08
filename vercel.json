@@ -421,6 +421,136 @@
       "source": "/nieuwbouw-project/eikenstein-fase-3-36-woningen-zeist/",
       "destination": "/nieuwbouw-project/eikenstein-zeist/",
       "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/dillekwartier-fase-1-arnhem/",
+      "destination": "/nieuwbouw-project/dillekwartier-arnhem/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/dillekwartier-fase-2-arnhem/",
+      "destination": "/nieuwbouw-project/dillekwartier-arnhem/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/het-nieuwe-metterswane-fase-1-nijmegen/",
+      "destination": "/nieuwbouw-project/het-nieuwe-metterswane-nijmegen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/het-nieuwe-metterswane-fase-2-nijmegen/",
+      "destination": "/nieuwbouw-project/het-nieuwe-metterswane-nijmegen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/het-nieuwe-metterswane-fase-3-nijmegen/",
+      "destination": "/nieuwbouw-project/het-nieuwe-metterswane-nijmegen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/bellevue-fase-1-utrecht/",
+      "destination": "/nieuwbouw-project/bellevue-utrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/bellevue-fase-2-utrecht/",
+      "destination": "/nieuwbouw-project/bellevue-utrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/cix-merwede-fase-1-utrecht/",
+      "destination": "/nieuwbouw-project/cix-merwede-utrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/cix-merwede-fase-2-utrecht/",
+      "destination": "/nieuwbouw-project/cix-merwede-utrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/bloom-park-fase-1-utrecht/",
+      "destination": "/nieuwbouw-project/bloom-park-utrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/bloom-park-fase-2-utrecht/",
+      "destination": "/nieuwbouw-project/bloom-park-utrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/avalon-fase-1-breda/",
+      "destination": "/nieuwbouw-project/avalon-breda/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/avalon-fase-2-breda/",
+      "destination": "/nieuwbouw-project/avalon-breda/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/kraanbaan-fase-1-west-maas-en-waal/",
+      "destination": "/nieuwbouw-project/kraanbaan-west-maas-en-waal/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/kraanbaan-fase-1b-west-maas-en-waal/",
+      "destination": "/nieuwbouw-project/kraanbaan-west-maas-en-waal/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/hoeverijk-nieuwegein-fase-1-nieuwegein/",
+      "destination": "/nieuwbouw-project/hoeverijk-nieuwegein-nieuwegein/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/hoeverijk-nieuwegein-fase-2-nieuwegein/",
+      "destination": "/nieuwbouw-project/hoeverijk-nieuwegein-nieuwegein/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/buitenveen-aalsmeer-fase-1-aalsmeer/",
+      "destination": "/nieuwbouw-project/buitenveen-aalsmeer-aalsmeer/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/buitenveen-aalsmeer-fase-2-aalsmeer/",
+      "destination": "/nieuwbouw-project/buitenveen-aalsmeer-aalsmeer/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-fase-1-amsterdam/",
+      "destination": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-amsterdam/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-fase-2-amsterdam/",
+      "destination": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-amsterdam/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-fase-3-amsterdam/",
+      "destination": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-amsterdam/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-fase-4-amsterdam/",
+      "destination": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-amsterdam/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/bentwijck-fase-1-alphen-aan-den-rijn/",
+      "destination": "/nieuwbouw-project/bentwijck-alphen-aan-den-rijn/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/bentwijck-fase-2-alphen-aan-den-rijn/",
+      "destination": "/nieuwbouw-project/bentwijck-alphen-aan-den-rijn/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/bentwijck-fase-2b-alphen-aan-den-rijn/",
+      "destination": "/nieuwbouw-project/bentwijck-alphen-aan-den-rijn/",
+      "permanent": true
     }
   ],
   "rewrites": [
