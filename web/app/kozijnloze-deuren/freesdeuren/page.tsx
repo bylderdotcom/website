@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ConfiguratorCTA from '../../components/ConfiguratorCTA'
 import VakmanReviews, { reviewSchema } from '../../components/VakmanReviews'
 
 /**
@@ -241,6 +242,8 @@ export default function Freesdeuren() {
             RAL-kleur leverbaar.
           </p>
         </section>
+
+        <ConfiguratorCTA aanleiding="Deze dertien ontwerpen staan hierboven in wit. In de configurator zet je ze in elke RAL-kleur en zie je meteen waarom hetzelfde patroon in donker een heel andere deur wordt." />
 
         <section style={{ maxWidth: '68ch' }}>
           <h2 style={H2}>Hoe je kiest zonder er later spijt van te krijgen</h2>

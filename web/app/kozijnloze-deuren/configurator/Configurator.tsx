@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react'
 import * as THREE from 'three'
-import { ONTWERPEN, KLEUREN, type Ontwerp, type Kleur } from './ontwerpen'
+import { ONTWERPEN, KLEUREN, AFWERKINGEN, FINEREN,
+         type Afwerking } from './ontwerpen'
 import { maakTexturen } from './texturen'
 
 // Configurator voor kozijnloze deuren van Classic Next.
@@ -15,13 +16,27 @@ import { maakTexturen } from './texturen'
 // configurator veroudert net zo stil als een vanafprijs in een zin.
 
 type Deur = {
+  // Een deur zonder naam is bij de offerte onbruikbaar: "deur 3" zegt niemand
+  // waar hij hangt. De naam is de plek in huis.
+  naam: string
   ontwerp: string
+  afwerking: Afwerking
   ral: string
+  fineer: string
   richting: 'binnen' | 'buiten'
   scharnier: 'links' | 'rechts'
 }
 
-const NIEUW: Deur = { ontwerp: 'dawn', ral: '9010', richting: 'binnen', scharnier: 'links' }
+const NIEUW: Deur = {
+  naam: '', ontwerp: 'dawn', afwerking: 'gelakt', ral: '9010', fineer: 'licht',
+  richting: 'binnen', scharnier: 'links',
+}
+
+// Suggesties, geen keurslijf: het invoerveld blijft vrij tekst.
+const PLEKKEN = ['Hal', 'Woonkamer', 'Keuken', 'Slaapkamer', 'Badkamer', 'Berging',
+                 'Werkkamer', 'Overloop', 'Kinderkamer', 'Toilet']
+
+const GRONDVERF = '#E7E4DD'
 
 const INKT = 'rgba(61,46,30,'
 const GROEN = '#3D5A3E'
@@ -32,10 +47,14 @@ function leesUrl(): Deur[] {
   const q = new URLSearchParams(window.location.search).get('deuren')
   if (!q) return [NIEUW]
   const uit = q.split('_').map(s => {
-    const [ontwerp, ral, richting, scharnier] = s.split('-')
-    if (!ONTWERPEN.some(o => o.id === ontwerp) || !KLEUREN.some(k => k.ral === ral)) return null
+    const [ontwerp, afwerking, ral, fineer, richting, scharnier, naam] = s.split('~')
+    if (!ONTWERPEN.some(o => o.id === ontwerp)) return null
     return {
-      ontwerp, ral,
+      naam: decodeURIComponent(naam || ''),
+      ontwerp,
+      afwerking: (AFWERKINGEN.some(a => a.id === afwerking) ? afwerking : 'gelakt') as Afwerking,
+      ral: KLEUREN.some(k => k.ral === ral) ? ral : '9010',
+      fineer: FINEREN.some(f => f.id === fineer) ? fineer : 'licht',
       richting: richting === 'buiten' ? 'buiten' : 'binnen',
       scharnier: scharnier === 'rechts' ? 'rechts' : 'links',
     } as Deur
@@ -44,7 +63,8 @@ function leesUrl(): Deur[] {
 }
 
 const naarUrl = (d: Deur[]) =>
-  d.map(x => `${x.ontwerp}-${x.ral}-${x.richting}-${x.scharnier}`).join('_')
+  d.map(x => [x.ontwerp, x.afwerking, x.ral, x.fineer, x.richting, x.scharnier,
+              encodeURIComponent(x.naam)].join('~')).join('_')
 
 export default function Configurator() {
   const doek = useRef<HTMLDivElement>(null)
@@ -63,6 +83,9 @@ export default function Configurator() {
   const huidig = deuren[actief] ?? NIEUW
   const ontwerp = ONTWERPEN.find(o => o.id === huidig.ontwerp) ?? ONTWERPEN[0]
   const kleur = KLEUREN.find(k => k.ral === huidig.ral) ?? KLEUREN[0]
+  const fineer = FINEREN.find(f => f.id === huidig.fineer) ?? FINEREN[0]
+  const afwerking = AFWERKINGEN.find(a => a.id === huidig.afwerking) ?? AFWERKINGEN[1]
+  const naamVan = (d: Deur, i: number) => d.naam.trim() || `Deur ${i + 1}`
 
   useEffect(() => { setDeuren(leesUrl()) }, [])
 
@@ -190,18 +213,32 @@ export default function Configurator() {
   useEffect(() => {
     const st = scene.current
     if (!st) return
-    const { normalMap, map } = maakTexturen(ontwerp.groeven)
+    const { normalMap, map } = maakTexturen(
+      ontwerp.groeven, huidig.afwerking === 'fineer' ? fineer : undefined)
     st.materiaal.normalMap?.dispose()
     st.materiaal.map?.dispose()
     st.materiaal.normalMap = normalMap
     st.materiaal.map = map
     st.materiaal.needsUpdate = true
-  }, [ontwerp])
+  }, [ontwerp, huidig.afwerking, fineer])
 
-  // ── Kleur: alleen de basiskleur verandert, de schaduw blijft ────────────
+  // ── Kleur en glans volgen de afwerking ─────────────────────────────────
+  //
+  // Gegrond is matte grondverf en hoort dof te zijn; gelakt heeft een harde
+  // fabriekslak met glans; fineer is hout en krijgt zijn kleur uit de nerf, dus
+  // het materiaal zelf blijft wit — anders kleur je het hout.
   useEffect(() => {
-    scene.current?.materiaal.color.set(kleur.hex)
-  }, [kleur])
+    const m = scene.current?.materiaal
+    if (!m) return
+    if (huidig.afwerking === 'fineer') {
+      m.color.set('#ffffff'); m.roughness = 0.55; m.clearcoat = 0.25
+    } else if (huidig.afwerking === 'gegrond') {
+      m.color.set(GRONDVERF); m.roughness = 0.86; m.clearcoat = 0.0
+    } else {
+      m.color.set(kleur.hex); m.roughness = 0.42; m.clearcoat = 0.55
+    }
+    m.needsUpdate = true
+  }, [kleur, huidig.afwerking])
 
   // ── Draairichting en scharnierzijde ────────────────────────────────────
   useEffect(() => {
@@ -230,7 +267,11 @@ export default function Configurator() {
   const specTekst = deuren.map((d, i) => {
     const o = ONTWERPEN.find(x => x.id === d.ontwerp)!
     const k = KLEUREN.find(x => x.ral === d.ral)!
-    return `Deur ${i + 1}: ${o.naam} (${o.groef.toLowerCase()}) · RAL ${k.ral} ${k.naam} · `
+    const f = FINEREN.find(x => x.id === d.fineer)!
+    const afw = d.afwerking === 'gelakt' ? `gelakt in RAL ${k.ral} ${k.naam}`
+              : d.afwerking === 'fineer' ? `fineer ${f.naam.toLowerCase()} (houtsoort nog te kiezen)`
+              : 'gegrond, zelf te schilderen'
+    return `${naamVan(d, i)}: ${o.naam} (${o.groef.toLowerCase()}) · ${afw} · `
          + `plafondhoog · draait naar ${d.richting} · scharnieren ${d.scharnier}`
   }).join('\n')
 
@@ -274,69 +315,151 @@ export default function Configurator() {
       {/* ── De keuzes ── */}
       <div style={{ display: 'grid', gap: 22 }}>
 
-        {/* Deuren */}
+        {/* Deuren — de knop staat tussen de deuren zelf, niet in een hoek.
+            Dat een configuratie mééér deuren kan bevatten is de kern van het
+            product (een woning heeft er zes tot acht), en dat moet je zien
+            zonder ernaar te zoeken. */}
         <div>
-          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between',
-                        marginBottom: 8, gap: 12 }}>
-            <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: 0, color: '#1A1208' }}>
-              Jouw deuren
-            </h2>
-            <button onClick={() => { setDeuren(d => [...d, { ...huidig }]); setActief(deuren.length) }}
-              style={{ ...knop, padding: '6px 11px', fontSize: 13 }}>+ deur toevoegen</button>
-          </div>
-          <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap' }}>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }}>
+            Jouw deuren
+          </h2>
+          <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', alignItems: 'center' }}>
             {deuren.map((d, i) => {
               const k = KLEUREN.find(x => x.ral === d.ral)!
+              const f = FINEREN.find(x => x.id === d.fineer)!
+              const staal = d.afwerking === 'fineer' ? f.basis
+                          : d.afwerking === 'gegrond' ? GRONDVERF : k.hex
               return (
                 <button key={i} onClick={() => setActief(i)}
                   style={{ ...(i === actief ? knopAan : knop), padding: '7px 10px', fontSize: 13,
                            display: 'flex', alignItems: 'center', gap: 7 }}>
-                  <span style={{ width: 13, height: 13, borderRadius: 3, background: k.hex,
+                  <span style={{ width: 13, height: 13, borderRadius: 3, background: staal,
                                  border: `1px solid ${INKT}0.25)`, display: 'inline-block' }} />
-                  Deur {i + 1}
+                  {naamVan(d, i)}
                   {deuren.length > 1 && (
                     <span onClick={e => { e.stopPropagation()
                         setDeuren(x => x.filter((_, j) => j !== i))
                         setActief(a => Math.max(0, a - (i <= a ? 1 : 0))) }}
-                      aria-label={`Deur ${i + 1} verwijderen`}
+                      aria-label={`${naamVan(d, i)} verwijderen`}
                       style={{ marginLeft: 2, color: `${INKT}0.4)`, fontWeight: 700 }}>×</span>
                   )}
                 </button>
               )
             })}
+            <button onClick={() => { setDeuren(d => [...d, { ...huidig, naam: '' }])
+                                     setActief(deuren.length) }}
+              style={{ padding: '8px 14px', borderRadius: 9, border: 'none', background: GROEN,
+                       color: '#F5F0E8', fontSize: 13.5, fontWeight: 800, cursor: 'pointer',
+                       fontFamily: 'inherit' }}>
+              + Deur toevoegen
+            </button>
           </div>
         </div>
 
-        {/* Kleur — het hart van de tool */}
+        {/* Naam — waar hangt deze deur? */}
         <div>
-          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
-            Kleur
-          </h2>
-          <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
-            Sleep over het raster. RAL {kleur.ral} &middot; {kleur.naam}
+          <label htmlFor="deurnaam" style={{ display: 'block', fontSize: '1.02rem',
+            fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>Waar komt deze deur?</label>
+          <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 8px' }}>
+            Geef hem de naam van de ruimte, dan weet iedereen bij de offerte welke deur
+            welke is.
           </p>
-          <div
-            onPointerDown={() => setSleept(true)}
-            onPointerUp={() => setSleept(false)}
-            onPointerLeave={() => setSleept(false)}
-            style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(38px,1fr))',
-                     gap: 5, touchAction: 'none' }}>
-            {KLEUREN.map(k => (
-              <button key={k.ral}
-                onPointerDown={() => wijzig({ ral: k.ral })}
-                onPointerEnter={() => { if (sleept) wijzig({ ral: k.ral }) }}
-                title={`RAL ${k.ral} — ${k.naam}`}
-                aria-label={`RAL ${k.ral}, ${k.naam}`}
-                aria-pressed={k.ral === huidig.ral}
-                style={{
-                  aspectRatio: '1', borderRadius: 7, background: k.hex, cursor: 'pointer',
-                  border: k.ral === huidig.ral
-                    ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.18)`,
-                  boxShadow: k.ral === huidig.ral ? '0 0 0 3px rgba(61,90,62,0.16)' : 'none',
-                }} />
+          <input id="deurnaam" list="plekken" value={huidig.naam}
+            placeholder={`Bijvoorbeeld ${PLEKKEN[actief % PLEKKEN.length].toLowerCase()}`}
+            onChange={e => wijzig({ naam: e.target.value })}
+            style={{ width: '100%', padding: '10px 12px', borderRadius: 9, fontSize: 14.5,
+                     border: `1.5px solid ${INKT}0.14)`, fontFamily: 'inherit',
+                     color: '#1A1208', background: '#fff' }} />
+          <datalist id="plekken">{PLEKKEN.map(x => <option key={x} value={x} />)}</datalist>
+        </div>
+
+        {/* Afwerking — bepaalt of je een kleur of een houtsoort kiest */}
+        <div>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }}>
+            Afwerking
+          </h2>
+          <div style={{ display: 'flex', gap: 6 }}>
+            {AFWERKINGEN.map(a => (
+              <button key={a.id} onClick={() => wijzig({ afwerking: a.id })}
+                style={{ ...(a.id === huidig.afwerking ? knopAan : knop), flex: 1 }}>{a.naam}</button>
             ))}
           </div>
+          <p style={{ fontSize: 13, color: `${INKT}0.62)`, margin: '9px 0 0', lineHeight: 1.65 }}>
+            {afwerking.uitleg}
+          </p>
         </div>
+
+        {/* Kleur of houtsoort, afhankelijk van de afwerking */}
+        {huidig.afwerking === 'gelakt' && (
+          <div>
+            <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
+              Kleur
+            </h2>
+            <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
+              Sleep over het raster. RAL {kleur.ral} &middot; {kleur.naam}
+            </p>
+            <div
+              onPointerDown={() => setSleept(true)}
+              onPointerUp={() => setSleept(false)}
+              onPointerLeave={() => setSleept(false)}
+              style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(38px,1fr))',
+                       gap: 5, touchAction: 'none' }}>
+              {KLEUREN.map(k => (
+                <button key={k.ral}
+                  onPointerDown={() => wijzig({ ral: k.ral })}
+                  onPointerEnter={() => { if (sleept) wijzig({ ral: k.ral }) }}
+                  title={`RAL ${k.ral} — ${k.naam}`}
+                  aria-label={`RAL ${k.ral}, ${k.naam}`}
+                  aria-pressed={k.ral === huidig.ral}
+                  style={{
+                    aspectRatio: '1', borderRadius: 7, background: k.hex, cursor: 'pointer',
+                    border: k.ral === huidig.ral
+                      ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.18)`,
+                    boxShadow: k.ral === huidig.ral ? '0 0 0 3px rgba(61,90,62,0.16)' : 'none',
+                  }} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {huidig.afwerking === 'fineer' && (
+          <div>
+            <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
+              Houtsoort
+            </h2>
+            <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
+              Drie fineren. {fineer.naam}.
+            </p>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {FINEREN.map(f => (
+                <button key={f.id} onClick={() => wijzig({ fineer: f.id })}
+                  aria-pressed={f.id === huidig.fineer}
+                  style={{ flex: 1, height: 62, borderRadius: 9, cursor: 'pointer',
+                    background: `repeating-linear-gradient(90deg, ${f.basis} 0 6px, ${f.nerf} 6px 7px)`,
+                    border: f.id === huidig.fineer
+                      ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.18)`,
+                    boxShadow: f.id === huidig.fineer ? '0 0 0 3px rgba(61,90,62,0.16)' : 'none',
+                  }} />
+              ))}
+            </div>
+            {fineer.voorlopig && (
+              <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: '9px 0 0', lineHeight: 1.6 }}>
+                De houtnerf op dit scherm is een indicatie. Classic Next levert drie fineren;
+                zodra hun scans er zijn staat hier het echte materiaal, met de naam van de
+                houtsoort erbij.
+              </p>
+            )}
+          </div>
+        )}
+
+        {huidig.afwerking === 'gegrond' && (
+          <p style={{ fontSize: 14, color: `${INKT}0.7)`, lineHeight: 1.7, margin: 0,
+                      background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 12,
+                      padding: '14px 16px' }}>
+            Geen kleurkeuze nodig: je schildert deze deur zelf, in elke kleur die je wilt —
+            ook later nog een keer. Op het scherm zie je hem in grondverf.
+          </p>
+        )}
 
         {/* Ontwerp */}
         <div>

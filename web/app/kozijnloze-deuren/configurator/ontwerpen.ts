@@ -108,3 +108,33 @@ export const KLEUREN: Kleur[] = [
   { ral: '8017', naam: 'Chocoladebruin', hex: '#442F29' },
   { ral: '8019', naam: 'Grijsbruin', hex: '#3D3635' },
 ]
+
+
+// ── Afwerking ────────────────────────────────────────────────────────────
+// Drie wegen, en ze sluiten elkaar uit: gegrond schilder je zelf, gelakt komt in
+// een RAL-kleur uit de fabriek, fineer is hout en heeft dus geen kleurkeuze maar
+// een houtsoort.
+export type Afwerking = 'gegrond' | 'gelakt' | 'fineer'
+
+export const AFWERKINGEN: { id: Afwerking; naam: string; uitleg: string }[] = [
+  { id: 'gegrond', naam: 'Gegrond',
+    uitleg: 'Voorbehandeld en klaar om te schilderen. Elke kleur is dus mogelijk, ook eentje '
+          + 'die je later nog wilt veranderen — je schildert de deur mee met de wand.' },
+  { id: 'gelakt', naam: 'Gelakt',
+    uitleg: 'Afgelakt in de fabriek in de RAL-kleur die je kiest. Strakker en harder dan '
+          + 'schilderwerk op de bouw, en meteen klaar bij levering.' },
+  { id: 'fineer', naam: 'Fineer',
+    uitleg: 'Echt houtfineer. Geen kleurkeuze maar een houtsoort: de nerf is het patroon.' },
+]
+
+// VOORLOPIG. Classic Next levert drie houtsoorten; welke dat precies zijn en hoe
+// ze eruitzien volgt uit hun scans. Tot die er zijn tonen we een indicatie en
+// zegt de pagina dat er ook bij — een houtnerf verzinnen die bij levering anders
+// blijkt, is precies het soort belofte dat we niet doen.
+export type Fineer = { id: string; naam: string; basis: string; nerf: string; voorlopig: boolean }
+
+export const FINEREN: Fineer[] = [
+  { id: 'licht', naam: 'Licht', basis: '#C9A97E', nerf: '#A5834F', voorlopig: true },
+  { id: 'midden', naam: 'Midden', basis: '#9A6E45', nerf: '#7A5230', voorlopig: true },
+  { id: 'donker', naam: 'Donker', basis: '#5E4230', nerf: '#432D1F', voorlopig: true },
+]

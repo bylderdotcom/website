@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import type { Groef } from './ontwerpen'
+import type { Groef, Fineer } from './ontwerpen'
 
 // De groeven worden eerst als hoogtekaart getekend en daarna omgerekend naar een
 // normal map. Dat is de hele truc van deze configurator.
@@ -60,8 +60,32 @@ function tekenHoogte(groeven: Groef[]): ImageData {
   return g.getImageData(0, 0, BREEDTE, HOOGTE)
 }
 
+/** Een indicatieve houtnerf. Vervalt zodra de scans van Classic Next er zijn. */
+function tekenFineer(g: CanvasRenderingContext2D, f: Fineer) {
+  g.fillStyle = f.basis
+  g.fillRect(0, 0, BREEDTE, HOOGTE)
+  g.strokeStyle = f.nerf
+  g.globalAlpha = 0.30
+  // Verticale nerf met wat drift, zoals een gezaagd blad. Bewust grof: dit is
+  // een indicatie, geen weergave van het echte materiaal.
+  for (let i = 0; i < 190; i++) {
+    const x0 = Math.random() * BREEDTE
+    g.lineWidth = 0.6 + Math.random() * 2.6
+    g.globalAlpha = 0.06 + Math.random() * 0.20
+    g.beginPath()
+    g.moveTo(x0, 0)
+    let x = x0
+    for (let y = 0; y <= HOOGTE; y += 60) {
+      x += (Math.random() - 0.5) * 9
+      g.lineTo(x, y)
+    }
+    g.stroke()
+  }
+  g.globalAlpha = 1
+}
+
 /** Hoogtekaart → normal map (Sobel) plus een lichte donkering in de groef. */
-export function maakTexturen(groeven: Groef[]) {
+export function maakTexturen(groeven: Groef[], fineer?: Fineer) {
   const h = tekenHoogte(groeven)
   const nc = document.createElement('canvas'); nc.width = BREEDTE; nc.height = HOOGTE
   const mc = document.createElement('canvas'); mc.width = BREEDTE; mc.height = HOOGTE
@@ -91,14 +115,27 @@ export function maakTexturen(groeven: Groef[]) {
 
       // Kleurkaart: wit waar het vlak is, iets grijzer in de groef. Vermenigvuldigt
       // met de gekozen RAL-kleur, dus de groef wordt donkerder in élke kleur —
-      // precies zoals een schaduw zich hoort te gedragen.
+      // precies zoals een schaduw zich hoort te gedragen. Bij fineer wordt de
+      // houtnerf de basis en legt de groef er zijn schaduw overheen.
       const v = 255 - (1 - hoogte(x, y)) * 46
       md.data[i] = md.data[i + 1] = md.data[i + 2] = v
       md.data[i + 3] = 255
     }
   }
   nc.getContext('2d')!.putImageData(nd, 0, 0)
-  mc.getContext('2d')!.putImageData(md, 0, 0)
+  const mg = mc.getContext('2d')!
+  if (fineer) {
+    tekenFineer(mg, fineer)
+    // De groefdonkering als vermenigvuldiging over de nerf.
+    const tmp = document.createElement('canvas')
+    tmp.width = BREEDTE; tmp.height = HOOGTE
+    tmp.getContext('2d')!.putImageData(md, 0, 0)
+    mg.globalCompositeOperation = 'multiply'
+    mg.drawImage(tmp, 0, 0)
+    mg.globalCompositeOperation = 'source-over'
+  } else {
+    mg.putImageData(md, 0, 0)
+  }
 
   const normalMap = new THREE.CanvasTexture(nc)
   const map = new THREE.CanvasTexture(mc)

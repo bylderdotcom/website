@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ConfiguratorCTA from '../components/ConfiguratorCTA'
 
 /**
  * Pillar voor onzichtbare kozijnen / kozijnloze deuren.
@@ -302,6 +303,8 @@ export default function OnzichtbaarKozijnPage() {
         en vloerverwarming. Wie het pas bedenkt als de sleutel er is, betaalt sloopwerk en een tweede keer
         stucwerk bovenop de deur.
       </p>
+
+      <ConfiguratorCTA aanleiding="Dertien groefpatronen en elke RAL-kleur, plafondhoog. Sleep door het kleurenraster en zie wat er met het patroon gebeurt — want een groef is een schaduw, en die gedraagt zich in antraciet anders dan in gebroken wit." />
 
       <h2 style={H2}>Welke systemen er zijn</h2>
       <p style={P}>
