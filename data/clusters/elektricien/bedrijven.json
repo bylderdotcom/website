@@ -138944,5 +138944,47 @@
   "rating_row": "default",
   "contact_row": "default",
   "template": "default"
+ },
+ "bedrijf/kve-smart-solutions": {
+  "name": "KVE Smart Solutions",
+  "city": "Veldhoven",
+  "city_slug": "veldhoven",
+  "website": "https://www.kvesmartsolutions.nl/",
+  "tel": "0621933012",
+  "tel_disp": "06 21 93 30 12",
+  "contact_row": "v5",
+  "template": "aanmelding",
+  "siblings": [
+   {
+    "href": "/elektricien/bedrijf/elektro-brabant-pufvho/",
+    "name": "Elektro Brabant",
+    "rating": "5,0"
+   },
+   {
+    "href": "/elektricien/bedrijf/elektrotechnisch-bedrijf-van-riet-uo6q6g/",
+    "name": "Elektrotechnisch Bedrijf van Riet",
+    "rating": "5,0"
+   },
+   {
+    "href": "/elektricien/bedrijf/es-i-b-v-4nozni/",
+    "name": "ES&amp;I B.V.",
+    "rating": "5,0"
+   },
+   {
+    "href": "/elektricien/bedrijf/lt-elektrotechniek-gspjm0/",
+    "name": "LT Elektrotechniek",
+    "rating": "5,0"
+   },
+   {
+    "href": "/elektricien/bedrijf/redetta-elektrotechniek-8-izuu/",
+    "name": "Redetta elektrotechniek",
+    "rating": "5,0"
+   },
+   {
+    "href": "/elektricien/bedrijf/vroomen-elektrotechniek-inspecties-gvm_ue/",
+    "name": "Vroomen Elektrotechniek &amp; Inspecties",
+    "rating": "5,0"
+   }
+  ]
  }
 }
