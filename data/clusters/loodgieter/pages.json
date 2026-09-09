@@ -102428,5 +102428,22 @@
   ],
   "ldjson_sep": "\n",
   "content_kind": "city"
+ },
+ {
+  "slug": "bedrijf/cv-allround-water-riolering",
+  "file": "loodgieter/bedrijf/cv-allround-water-riolering/index.html",
+  "path": "/loodgieter/bedrijf/cv-allround-water-riolering/",
+  "title": "CV Allround Water Riolering — loodgieter in Helmond | Bylder",
+  "description": "CV Allround Water Riolering, loodgieter in Helmond. Contactgegevens, werkgebied en gebundelde beoordelingen op één plek — plus een gratis check of je offerte een eerlijke prijs heeft.",
+  "og_type": "article",
+  "robots": "noindex,follow",
+  "template": "default",
+  "footer": "default",
+  "aside": null,
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"LocalBusiness\", \"name\": \"CV Allround Water Riolering\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Helmond\", \"addressCountry\": \"NL\"}, \"areaServed\": \"Helmond\"}"
+  ],
+  "ldjson_sep": "\n",
+  "content_kind": "bedrijf"
  }
 ]

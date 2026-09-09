@@ -196920,5 +196920,44 @@
   "rating_row": "default",
   "contact_row": "default",
   "template": "default"
+ },
+ "bedrijf/cv-allround-water-riolering": {
+  "name": "CV Allround Water Riolering",
+  "city": "Helmond",
+  "city_slug": "helmond",
+  "template": "aanmelding",
+  "siblings": [
+   {
+    "href": "/loodgieter/bedrijf/barteq-badkamerdesign-syhpu0/",
+    "name": "BarteQ Badkamerdesign",
+    "rating": "5,0"
+   },
+   {
+    "href": "/loodgieter/bedrijf/df-installatietechniek-cxcax4/",
+    "name": "DF Installatietechniek",
+    "rating": "5,0"
+   },
+   {
+    "href": "/loodgieter/bedrijf/elektromaani-ftw06o/",
+    "name": "Elektromaani",
+    "rating": "5,0"
+   },
+   {
+    "href": "/loodgieter/bedrijf/installatiebedrijf-maikel-van-den-broek-vs2mba/",
+    "name": "Installatiebedrijf Maikel van den Broek",
+    "rating": "5,0"
+   },
+   {
+    "href": "/loodgieter/bedrijf/loodgieterprobleem-kwijt-rguhxa/",
+    "name": "Loodgieterprobleem Kwijt",
+    "rating": "5,0"
+   },
+   {
+    "href": "/loodgieter/bedrijf/mkb-ontstopping-reiniging-diensten-jk0rf4/",
+    "name": "MKB Ontstopping &amp; Reiniging Diensten",
+    "rating": "5,0"
+   }
+  ],
+  "contact_row": "geen"
  }
 }

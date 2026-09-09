@@ -73833,5 +73833,22 @@
   ],
   "ldjson_sep": "\n",
   "content_kind": "city"
+ },
+ {
+  "slug": "bedrijf/kve-smart-solutions",
+  "file": "elektricien/bedrijf/kve-smart-solutions/index.html",
+  "path": "/elektricien/bedrijf/kve-smart-solutions/",
+  "title": "KVE Smart Solutions — elektricien in Veldhoven | Bylder",
+  "description": "KVE Smart Solutions, elektricien in Veldhoven. Contactgegevens, werkgebied en gebundelde beoordelingen op één plek — plus een gratis check of je offerte een eerlijke prijs heeft.",
+  "og_type": "article",
+  "robots": "noindex,follow",
+  "template": "default",
+  "footer": "default",
+  "aside": null,
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"LocalBusiness\", \"name\": \"KVE Smart Solutions\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Veldhoven\", \"addressCountry\": \"NL\"}, \"areaServed\": \"Veldhoven\"}"
+  ],
+  "ldjson_sep": "\n",
+  "content_kind": "bedrijf"
  }
 ]

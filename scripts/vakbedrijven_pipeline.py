@@ -7,6 +7,7 @@ Modes:
   discover-places <vak> [n] Ontdek via Google Places API (betaald per call) per stad; n = pagina's/plaats (default 1, kostenbewust).
   clean-data                Schoon de bron op: postcode/huisnummer uit plaatsnaam + platforms/opleidingen op opt_out.
   export                    Haal alles uit Supabase en schrijf data/vakbedrijven.json (door de SEO-generator gelezen).
+  aanmelding <bestand.json> Voeg bedrijven toe die zich zélf aanmeldden via /voor-vakbedrijven/.
 
 Bron van waarheid = Supabase-tabel public.vakbedrijven. HTTP via curl (stabiele system-certs).
 Creds uit ../app/.env.local. GEEN KvK-data.
@@ -280,6 +281,53 @@ def export():
     print(f"Export: {len(rows)} bedrijven → data/vakbedrijven.json")
 
 
+def aanmelding(pad):
+    """Bedrijven die zich zelf aanmeldden via /voor-vakbedrijven/.
+
+    Die pagina belooft "je staat er waarschijnlijk al tussen" en biedt een mailtje
+    naar info@bylder.com. Voor wie er níét tussen staat gebeurde daarna niets: de
+    mail bleef in een inbox liggen. De eerste twee aanmeldingen wachtten veertien
+    en acht dagen.
+
+    Wat hier binnenkomt is door het bedrijf zelf opgegeven, en dat is de grens:
+    we vullen niets aan wat we niet van hen of van hun eigen site hebben. Een
+    verzonnen adres of een dood websiteadres op een profiel is erger dan een leeg
+    veld — dat kostte in juli al drie pagina's met bedrijven die niet bestonden.
+
+    Zonder Google-vermelding is er geen place_id, dus de slug krijgt geen
+    achtervoegsel (zoals bij de OSM-records) en er komt geen kaartkoppeling.
+
+    Invoer: JSON-lijst met tenminste naam, vak en stad.
+    """
+    rijen = json.load(open(pad, encoding="utf8"))
+    uit = []
+    for r in rijen:
+        ontbreekt = [k for k in ("naam", "vak", "stad") if not r.get(k)]
+        if ontbreekt:
+            print(f"  overgeslagen ({', '.join(ontbreekt)} ontbreekt): {r.get('naam') or r}")
+            continue
+        rec = {
+            "slug": f"{r['vak']}-{slugify(r['naam'])}",
+            "naam": r["naam"], "vak": r["vak"], "stad": r["stad"],
+            "status": "unclaimed", "opt_out": False,
+            # Eigen herkomst, zodat deze records te onderscheiden blijven van de
+            # 25.484 uit Google Places en de 213 uit OSM.
+            "bron": "aanmelding",
+        }
+        # Alle records krijgen dezelfde sleutels, ook de lege. PostgREST weigert
+        # een bulk-insert waarin het ene object meer velden heeft dan het andere
+        # (http 400) — en dat is precies wat er gebeurt zodra het ene bedrijf een
+        # website opgeeft en het andere niet.
+        for k in ("website", "email", "telefoon", "kvk", "postcode", "adres",
+                  "werkspot_url", "lat", "lng", "beschrijving"):
+            rec[k] = r.get(k) or None
+        # Zonder claim_email kan het bedrijf zijn eigen profiel niet overnemen.
+        rec["claim_email"] = r.get("claim_email") or r.get("email")
+        uit.append(rec)
+        print(f"  {rec['slug']}")
+    upsert(uit)
+
+
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else ""
     arg = sys.argv[2] if len(sys.argv) > 2 else "stukadoor"
@@ -287,5 +335,6 @@ if __name__ == "__main__":
     elif mode == "discover-places": discover_places(arg, int(sys.argv[3]) if len(sys.argv) > 3 else 1)
     elif mode == "clean-data": clean_data()
     elif mode == "export": export()
+    elif mode == "aanmelding": aanmelding(arg)
     else:
         print(__doc__)
