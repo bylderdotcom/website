@@ -137,6 +137,50 @@ export default function ConfiguratorPagina() {
 
         <Configurator />
 
+        {/* Wat je koopt is een samenstel, geen deur. Wie dat niet weet
+            vergelijkt de offerte met een deurblad bij de bouwmarkt, en dan
+            klopt het verschil nergens meer. */}
+        <section style={{ maxWidth: '68ch' }}>
+          <h2 style={H2}>Waar de combinatie uit bestaat</h2>
+          <p style={P}>
+            Je bestelt geen deur maar een samenstel: kozijn, deur en beslag komen als
+            &eacute;&eacute;n systeem uit de werkplaats, op elkaar afgesteld. Dat is de reden dat
+            het vlak na het stucwerk klopt — en de reden dat een offerte zich niet laat
+            vergelijken met een los deurblad.
+          </p>
+          <dl style={{ margin: '18px 0 0', display: 'grid', gap: 14 }}>
+            {[
+              ['Kozijn met AGS-montagesysteem',
+               'Een aluminium instuckozijn met verstelbare wandbeugels: de timmerman stelt het '
+               + 'haaks en waterpas in plaats van te passen en schaven. Stucgaas zit erbij, zodat '
+               + 'het stucwerk zonder naad op het profiel aansluit.'],
+              ['Deur uit de eigen werkplaats in Uden',
+               'Geen voorraaddeur uit een magazijn: elk blad wordt op maat gemaakt, gefreesd en '
+               + 'afgelakt in Uden, en met het bijbehorende kozijn samen uitgeleverd. Plafondhoog '
+               + 'is daardoor geen uitzondering maar de standaard.'],
+              ['Verdekt scharnier DX38',
+               'Van buiten onzichtbaar, met afdekplaatjes, en in drie richtingen verstelbaar. Dat '
+               + 'laatste is bij een plafondhoge deur geen luxe: hoe hoger het blad, hoe eerder je '
+               + 'een millimeter scheefstand ziet.'],
+              ['Magneetslot',
+               'Valt geruisloos dicht en heeft geen sluitkom in het kozijn nodig — precies '
+               + 'het zichtbare detail dat je met een kozijnloze deur wilde vermijden. Te kiezen '
+               + 'als loop, dag- en nachtslot of vrij/bezet.'],
+              ['Deurkruk van Aprile, Stile of Sterk',
+               'Elf modellen in massief materiaal, met rozetten vanaf 3 mm dik. Bij een deur die '
+               + 'verder geen lijnen heeft is de kruk het enige wat je aanraakt, en dus het enige '
+               + 'detail dat overblijft.'],
+            ].map(([kop, tekst]) => (
+              <div key={kop}>
+                <dt style={{ fontSize: 15.5, fontWeight: 800, color: '#1A1208', marginBottom: 3 }}>
+                  {kop}
+                </dt>
+                <dd style={{ ...P, margin: 0, fontSize: 15 }}>{tekst}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+
         <section style={{ maxWidth: '68ch' }}>
           <h2 style={H2}>Waar je op let voordat je aanvraagt</h2>
           <p style={P}>
