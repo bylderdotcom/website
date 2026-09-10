@@ -7,6 +7,7 @@ import { ONTWERPEN, KLEUREN, AFWERKINGEN, FINEREN,
          type Afwerking } from './ontwerpen'
 import { maakTexturen } from './texturen'
 import KleurKiezer, { dichtstbijzijndeRal } from './KleurKiezer'
+import { KRUKKEN, SLOTEN, SCHARNIEREN } from './beslag'
 
 // Configurator voor kozijnloze deuren van Classic Next.
 //
@@ -31,12 +32,17 @@ type Deur = {
   fineer: string
   richting: 'binnen' | 'buiten'
   scharnier: 'links' | 'rechts'
+  kruk: string
+  krukAfwerking: string
+  slot: string
+  scharnierKleur: string
 }
 
 const NIEUW: Deur = {
   naam: '', ontwerp: 'dawn', afwerking: 'gelakt', ral: '9010', vrij: '', helderheid: 1,
   fineer: 'licht',
   richting: 'binnen', scharnier: 'links',
+  kruk: 'oma-q-slim', krukAfwerking: 'Zwart', slot: 'loop', scharnierKleur: 'Zwart',
 }
 
 // Suggesties, geen keurslijf: het invoerveld blijft vrij tekst.
@@ -54,8 +60,14 @@ function leesUrl(): Deur[] {
   const q = new URLSearchParams(window.location.search).get('deuren')
   if (!q) return [NIEUW]
   const uit = q.split('_').map(s => {
-    const [ontwerp, afwerking, ral, vrij, fineer, richting, scharnier, naam] = s.split('~')
+    // Adressen van vóór 10 september misten het veld voor de vrije kleur en
+    // kenden nog geen beslag. Aan het aantal velden zie je welke soort het is.
+    const v = s.split('~')
+    const [ontwerp, afwerking, ral, vrij, fineer, richting, scharnier,
+           kruk, krukAfwerking, slot, scharnierKleur, naam] =
+      v.length === 7 ? [v[0], v[1], v[2], '', v[3], v[4], v[5], '', '', '', '', v[6]] : v
     if (!ONTWERPEN.some(o => o.id === ontwerp)) return null
+    const km = KRUKKEN.find(k => k.id === kruk) ?? KRUKKEN.find(k => k.id === NIEUW.kruk)!
     return {
       naam: decodeURIComponent(naam || ''),
       ontwerp,
@@ -66,21 +78,29 @@ function leesUrl(): Deur[] {
       fineer: FINEREN.some(f => f.id === fineer) ? fineer : 'licht',
       richting: richting === 'buiten' ? 'buiten' : 'binnen',
       scharnier: scharnier === 'rechts' ? 'rechts' : 'links',
+      kruk: km.id,
+      krukAfwerking: km.varianten.some(v => v.afwerking === krukAfwerking)
+        ? krukAfwerking : km.varianten[0].afwerking,
+      slot: SLOTEN.some(x => x.id === slot) ? slot : NIEUW.slot,
+      scharnierKleur: SCHARNIEREN.some(v => v.afwerking === scharnierKleur)
+        ? scharnierKleur : NIEUW.scharnierKleur,
     } as Deur
   }).filter(Boolean) as Deur[]
   return uit.length ? uit : [NIEUW]
 }
 
 const naarUrl = (d: Deur[]) =>
-  d.map(x => [x.ontwerp, x.afwerking, x.ral, x.fineer, x.richting, x.scharnier,
-              encodeURIComponent(x.naam)].join('~')).join('_')
+  d.map(x => [x.ontwerp, x.afwerking, x.ral, x.vrij.replace('#', ''), x.fineer,
+              x.richting, x.scharnier, x.kruk, x.krukAfwerking, x.slot,
+              x.scharnierKleur, encodeURIComponent(x.naam)].join('~')).join('_')
 
 export default function Configurator() {
   const doek = useRef<HTMLDivElement>(null)
   const scene = useRef<{
     renderer: THREE.WebGLRenderer; scene: THREE.Scene; camera: THREE.PerspectiveCamera
     deur: THREE.Mesh; scharnierpunt: THREE.Group; materiaal: THREE.MeshPhysicalMaterial
-    wandMat: THREE.MeshStandardMaterial
+    wandMat: THREE.MeshStandardMaterial; krukMat: THREE.MeshStandardMaterial
+    krukGroep: THREE.Group
     doelHoek: number; doelCam: THREE.Vector3; doelKijk: THREE.Vector3; stop: boolean
   } | null>(null)
 
@@ -88,6 +108,9 @@ export default function Configurator() {
   const [actief, setActief] = useState(0)
   const [sleept, setSleept] = useState(false)
   const [spec, setSpec] = useState(false)
+  // De server kent het adres van de bezoeker niet. Lees het pas na de eerste
+  // render, anders wijkt de mailto-link af van wat de server stuurde.
+  const [gemonteerd, setGemonteerd] = useState(false)
   // De wand in dezelfde kleur als de deur is niet zomaar een weergaveoptie: het
   // ís waar dit product voor bestaat. Zonder kozijn en zonder architraaf worden
   // deur en wand één vlak, en blijft alleen de schaduwvoeg over.
@@ -103,9 +126,15 @@ export default function Configurator() {
   const fineer = FINEREN.find(f => f.id === huidig.fineer) ?? FINEREN[0]
   const afwerking = AFWERKINGEN.find(a => a.id === huidig.afwerking) ?? AFWERKINGEN[1]
   const lakKleur = huidig.vrij || kleur.hex
+  const krukModel = KRUKKEN.find(k => k.id === huidig.kruk) ?? KRUKKEN[0]
+  const krukVar = krukModel.varianten.find(v => v.afwerking === huidig.krukAfwerking)
+              ?? krukModel.varianten[0]
+  const slotType = SLOTEN.find(x => x.id === huidig.slot) ?? SLOTEN[0]
+  const scharnierVar = SCHARNIEREN.find(x => x.afwerking === huidig.scharnierKleur)
+              ?? SCHARNIEREN[0]
   const naamVan = (d: Deur, i: number) => d.naam.trim() || `Deur ${i + 1}`
 
-  useEffect(() => { setDeuren(leesUrl()) }, [])
+  useEffect(() => { setDeuren(leesUrl()); setGemonteerd(true) }, [])
 
   // ── De scène ───────────────────────────────────────────────────────────
   useEffect(() => {
@@ -200,6 +229,25 @@ export default function Configurator() {
     deur.castShadow = true
     deur.receiveShadow = true
     deur.position.set(0.525, 0, 0)          // t.o.v. het scharnierpunt
+    // De kruk. Bewust een vereenvoudigde vorm en geen ingescand model: de foto
+    // in de keuzelijst toont het échte beslag, dit geeft alleen de plek, de maat
+    // en de kleur van het metaal in de ruimte. Dat staat ook bij de pagina.
+    const krukMat = new THREE.MeshStandardMaterial({
+      color: new THREE.Color('#1F2123'), metalness: 0.85, roughness: 0.3,
+    })
+    const krukGroep = new THREE.Group()
+    const rozet = new THREE.Mesh(new THREE.BoxGeometry(0.052, 0.052, 0.012), krukMat)
+    rozet.position.set(0, 0, 0.031)
+    const steel = new THREE.Mesh(new THREE.CylinderGeometry(0.009, 0.009, 0.032, 16), krukMat)
+    steel.rotation.x = Math.PI / 2
+    steel.position.set(0, 0, 0.05)
+    const greep = new THREE.Mesh(new THREE.BoxGeometry(0.118, 0.019, 0.019), krukMat)
+    greep.position.set(-0.05, 0, 0.063)
+    for (const m of [rozet, steel, greep]) { m.castShadow = true; krukGroep.add(m) }
+    // Op grijphoogte (1,05 m) en aan de sluitzijde, dus tegenover het scharnier.
+    krukGroep.position.set(0.40, -0.30, 0)
+    deur.add(krukGroep)
+
     const scharnierpunt = new THREE.Group()
     scharnierpunt.position.set(-0.525, 1.35, -0.02)
     scharnierpunt.add(deur)
@@ -221,6 +269,7 @@ export default function Configurator() {
     ro.observe(el)
 
     const st = { renderer, scene: sc, camera, deur, scharnierpunt, materiaal, wandMat,
+                 krukMat, krukGroep,
                  doelHoek: 0,
                  doelCam: camera.position.clone(),
                  doelKijk: new THREE.Vector3(0, 1.30, 0),
@@ -293,6 +342,23 @@ export default function Configurator() {
     st.doelHoek = hoek
   }, [huidig.scharnier, huidig.richting])
 
+  // ── De kruk: kleur en kant ─────────────────────────────────────────────
+  useEffect(() => {
+    const st = scene.current
+    if (!st) return
+    st.krukMat.color.set(krukVar.hex)
+    // Zwart en donker beslag is doorgaans mat gepoedercoat; chroom en goud
+    // spiegelen. Zonder dat verschil ziet alles eruit als hetzelfde metaal.
+    const donker = ['Zwart', 'Grafiet', 'Basalt'].includes(krukVar.afwerking)
+    st.krukMat.metalness = donker ? 0.35 : 0.9
+    st.krukMat.roughness = donker ? 0.55 : 0.22
+    st.krukMat.needsUpdate = true
+    // De kruk hoort aan de sluitzijde, dus tegenover de scharnieren.
+    const links = huidig.scharnier === 'links'
+    st.krukGroep.position.x = links ? 0.40 : -0.40
+    st.krukGroep.scale.x = links ? 1 : -1
+  }, [krukVar, huidig.scharnier])
+
   // ── Dichtbij of op afstand ─────────────────────────────────────────────
   useEffect(() => {
     const st = scene.current
@@ -335,15 +401,19 @@ export default function Configurator() {
                   : `gelakt in RAL ${k.ral} ${k.naam}`)
               : d.afwerking === 'fineer' ? `fineer ${f.naam.toLowerCase()} (houtsoort nog te kiezen)`
               : 'gegrond, zelf te schilderen'
+    const km = KRUKKEN.find(x => x.id === d.kruk) ?? KRUKKEN[0]
+    const sl = SLOTEN.find(x => x.id === d.slot) ?? SLOTEN[0]
     return `${naamVan(d, i)}: ${o.naam} (${o.groef.toLowerCase()}) · ${afw} · `
-         + `plafondhoog · draait naar ${d.richting} · scharnieren ${d.scharnier}`
+         + `plafondhoog · draait naar ${d.richting} · scharnieren ${d.scharnier} · `
+         + `kruk ${km.naam} (${km.merk}) in ${d.krukAfwerking} · ${sl.naam} · `
+         + `scharnier DX38 ${d.scharnierKleur}`
   }).join('\n')
 
   const mail = 'mailto:info@bylder.com?subject='
     + encodeURIComponent('Offerteaanvraag kozijnloze deuren')
     + '&body=' + encodeURIComponent(
         `Mijn configuratie:\n\n${specTekst}\n\n`
-        + `Bekijk hem terug: ${typeof window !== 'undefined' ? window.location.href : ''}\n\n`
+        + `Bekijk hem terug: ${gemonteerd ? window.location.href : ''}\n\n`
         + `Nog in te vullen:\nAantal deuren totaal:\nPlaats:\nWanddikte (indien bekend):\n`
         + `Oplevering / gewenste plaatsing:\nNaam:\nTelefoon:\n`)
 
@@ -357,8 +427,13 @@ export default function Configurator() {
   }
 
   return (
-    <div style={{ display: 'grid', gap: 20, gridTemplateColumns: 'minmax(0,1.15fr) minmax(300px,1fr)',
-                  alignItems: 'start' }}>
+    <div className="conf-raster" style={{ display: 'grid', gap: 20, alignItems: 'start' }}>
+      {/* Inline stijlen kennen geen mediaquery, en de tweede kolom eist 300 px.
+          Op een telefoon liep de rechterkolom daardoor buiten het scherm. */}
+      <style>{`
+        .conf-raster { grid-template-columns: minmax(0,1.15fr) minmax(300px,1fr) }
+        @media (max-width: 860px) { .conf-raster { grid-template-columns: minmax(0,1fr) } }
+      `}</style>
 
       {/* ── Het beeld ── */}
       <div>
@@ -563,6 +638,93 @@ export default function Configurator() {
           <p style={{ fontSize: 13, color: `${INKT}0.62)`, margin: '10px 0 0', lineHeight: 1.65 }}>
             {ontwerp.waar}
           </p>
+        </div>
+
+        {/* Beslag — de kruk zie je elke dag, dus die keuze hoort erbij en niet
+            pas bij de offerte. De foto's zijn van het echte beslag; de kruk in
+            het 3D-beeld is een vereenvoudigde vorm die alleen plek, maat en
+            kleur toont. */}
+        <div>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
+            Deurkruk
+          </h2>
+          <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
+            {krukModel.naam} van {krukModel.merk} &middot; {krukVar.afwerking}
+          </p>
+          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
+            {KRUKKEN.map(k => (
+              <button key={k.id}
+                onClick={() => wijzig({ kruk: k.id, krukAfwerking: k.varianten[0].afwerking })}
+                style={{ ...(k.id === huidig.kruk ? knopAan : knop), padding: '6px 10px',
+                         fontSize: 13 }}>{k.naam}</button>
+            ))}
+          </div>
+          <div style={{ display: 'grid', gap: 7,
+            gridTemplateColumns: 'repeat(auto-fill,minmax(88px,1fr))' }}>
+            {krukModel.varianten.map(v => (
+              <button key={v.afwerking} onClick={() => wijzig({ krukAfwerking: v.afwerking })}
+                title={v.afwerking} aria-label={`${krukModel.naam} in ${v.afwerking}`}
+                aria-pressed={v.afwerking === krukVar.afwerking}
+                style={{ padding: 0, cursor: 'pointer', borderRadius: 9, overflow: 'hidden',
+                  background: '#fff',
+                  border: v.afwerking === krukVar.afwerking
+                    ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.16)` }}>
+                <img src={`/img/classic-next/beslag/${v.beeld}.jpg`} alt=""
+                  width={340} height={340} loading="lazy" decoding="async"
+                  style={{ width: '100%', height: 'auto', display: 'block' }} />
+                <span style={{ display: 'block', fontSize: 11, padding: '3px 4px 5px',
+                  color: `${INKT}0.65)` }}>{v.afwerking}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Slot — dit is een functionele keuze, geen esthetische. Een badkamer
+            wil vrij/bezet; dat weet niet iedereen, dus staat het erbij. */}
+        <div>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
+            Slot
+          </h2>
+          <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
+            Magneetslot &mdash; valt geruisloos dicht en laat het wandvlak heel.
+          </p>
+          <div style={{ display: 'flex', gap: 6, marginBottom: 8 }}>
+            {SLOTEN.map(x => (
+              <button key={x.id} onClick={() => wijzig({ slot: x.id })}
+                style={{ ...(x.id === huidig.slot ? knopAan : knop), flex: 1,
+                         padding: '8px 6px', fontSize: 12.5 }}>{x.naam}</button>
+            ))}
+          </div>
+          <p style={{ fontSize: 13, color: `${INKT}0.62)`, margin: 0, lineHeight: 1.65 }}>
+            {slotType.uitleg}
+          </p>
+        </div>
+
+        {/* Scharnier */}
+        <div>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
+            Scharnier
+          </h2>
+          <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
+            Verdekt scharnier DX38 &mdash; van buiten onzichtbaar, in drie richtingen
+            verstelbaar. {scharnierVar.afwerking}.
+          </p>
+          <div style={{ display: 'flex', gap: 7 }}>
+            {SCHARNIEREN.map(v => (
+              <button key={v.afwerking} onClick={() => wijzig({ scharnierKleur: v.afwerking })}
+                aria-pressed={v.afwerking === scharnierVar.afwerking}
+                style={{ padding: 0, cursor: 'pointer', borderRadius: 9, overflow: 'hidden',
+                  background: '#fff', flex: 1, maxWidth: 130,
+                  border: v.afwerking === scharnierVar.afwerking
+                    ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.16)` }}>
+                <img src={`/img/classic-next/beslag/${v.beeld}.jpg`} alt=""
+                  width={249} height={340} loading="lazy" decoding="async"
+                  style={{ width: '100%', height: 'auto', display: 'block' }} />
+                <span style={{ display: 'block', fontSize: 11, padding: '3px 4px 5px',
+                  color: `${INKT}0.65)` }}>{v.afwerking}</span>
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Draairichting */}
