@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ConfiguratorCTA from '../components/ConfiguratorCTA'
 
 /**
  * Landingspagina voor de Beurs Eigen Huis, 9 tot en met 11 oktober 2026.
@@ -225,6 +226,8 @@ export default function BeursEigenHuis() {
             kozijnloze deuren</a>.
           </p>
         </section>
+
+        <ConfiguratorCTA aanleiding="Classic Next staat op de beurs met deze deuren. Stel er alvast een samen, dan weet je bij de stand precies waar je het over hebt — en wat je wilt vragen." />
 
         {/* Vragen */}
         <section style={{ maxWidth: '68ch' }}>
