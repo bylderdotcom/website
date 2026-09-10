@@ -155,9 +155,9 @@ export default function Nav({ merken }: { merken: number }) {
   }, [open])
 
   const logo = (
-    <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', flexShrink: 0 }}>
+    <a href="/" className="bv-logo" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', flexShrink: 0 }}>
       <span style={{ width: 32, height: 32, borderRadius: 8, background: '#3D5A3E', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#F5F0E8', fontSize: 13, fontWeight: 800, fontFamily: 'monospace' }}>B.</span>
-      <span style={{ fontWeight: 700, fontSize: 18, letterSpacing: '-0.02em', color: '#1A1208' }}>Bylder<span style={{ color: '#3D5A3E' }}>.com</span></span>
+      <span className="bv-lt" style={{ fontWeight: 700, fontSize: 18, letterSpacing: '-0.02em', color: '#1A1208' }}>Bylder<span style={{ color: '#3D5A3E' }}>.com</span></span>
     </a>
   )
 
@@ -192,7 +192,19 @@ export default function Nav({ merken }: { merken: number }) {
         + '.bv-deskl{display:inline}.bv-burger{display:none}'
         + '@media(max-width:1020px){.bv-top{display:none}.bv-desk{display:none}'
         + '.bv-deskl{display:none}.bv-burger{display:flex}}'
-        + '@media(min-width:1021px){.bv-sheet{display:none}}' }} />
+        + '@media(min-width:1021px){.bv-sheet{display:none}}'
+        // De mobiele balk paste niet binnen 375px: logo + CTA + hamburger waren
+        // samen breder dan het scherm, waardoor de hamburger buiten beeld viel
+        // en de hele pagina horizontaal kon scrollen. !important omdat de maten
+        // hierboven als inline-style op de elementen staan.
+        + '@media(max-width:1020px){.bv-bar{padding:13px 16px!important;gap:10px!important}'
+        + '.bv-r{gap:10px!important}.bv-cta{font-size:0.8125rem!important;padding:9px 14px!important}'
+        + '.bv-burger{padding:6px 2px!important}}'
+        + '@media(max-width:420px){.bv-bar{padding:12px 14px!important;gap:8px!important}'
+        + '.bv-logo{gap:8px!important}.bv-lt{font-size:16px!important}'
+        + '.bv-r{gap:8px!important}.bv-cta{font-size:0.75rem!important;padding:8px 12px!important}}'
+        + '@media(max-width:359px){.bv-bar{padding:12px 10px!important}.bv-logo{gap:6px!important}'
+        + '.bv-lt{font-size:15px!important}.bv-cta{padding:8px 10px!important}}' }} />
 
       <div className="bv-top" style={{ borderBottom: `1px solid ${INKT}0.06)`, background: '#EDE6D8' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '7px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
@@ -205,7 +217,7 @@ export default function Nav({ merken }: { merken: number }) {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '13px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
+      <div className="bv-bar" style={{ maxWidth: 1200, margin: '0 auto', padding: '13px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
         {logo}
 
         <div className="bv-desk" ref={wrapRef}>
@@ -239,10 +251,10 @@ export default function Nav({ merken }: { merken: number }) {
           ))}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+        <div className="bv-r" style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
           <a href="/functies/" className="bv-deskl" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
           <a href="https://app.bylder.com" className="bv-deskl" style={LINK}>Inloggen</a>
-          <a href="https://app.bylder.com/woningscan" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+          <a href="https://app.bylder.com/woningscan" className="bv-cta" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
             Maak je stappenplan
           </a>
           <button className="bv-burger" onClick={() => setMobielOpen((o) => !o)} aria-label="Menu" aria-expanded={mobielOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, flexDirection: 'column', gap: 4 }}>
