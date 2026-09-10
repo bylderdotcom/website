@@ -2,9 +2,11 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react'
 import * as THREE from 'three'
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 import { ONTWERPEN, KLEUREN, AFWERKINGEN, FINEREN,
          type Afwerking } from './ontwerpen'
 import { maakTexturen } from './texturen'
+import KleurKiezer, { dichtstbijzijndeRal } from './KleurKiezer'
 
 // Configurator voor kozijnloze deuren van Classic Next.
 //
@@ -22,13 +24,18 @@ type Deur = {
   ontwerp: string
   afwerking: Afwerking
   ral: string
+  // Vrij gekozen kleur. Leeg = de RAL uit het raster. Wat er geleverd wordt is
+  // altijd een RAL; de vrije kleur is er om te zien hoe iets valt.
+  vrij: string
+  helderheid: number
   fineer: string
   richting: 'binnen' | 'buiten'
   scharnier: 'links' | 'rechts'
 }
 
 const NIEUW: Deur = {
-  naam: '', ontwerp: 'dawn', afwerking: 'gelakt', ral: '9010', fineer: 'licht',
+  naam: '', ontwerp: 'dawn', afwerking: 'gelakt', ral: '9010', vrij: '', helderheid: 1,
+  fineer: 'licht',
   richting: 'binnen', scharnier: 'links',
 }
 
@@ -47,13 +54,15 @@ function leesUrl(): Deur[] {
   const q = new URLSearchParams(window.location.search).get('deuren')
   if (!q) return [NIEUW]
   const uit = q.split('_').map(s => {
-    const [ontwerp, afwerking, ral, fineer, richting, scharnier, naam] = s.split('~')
+    const [ontwerp, afwerking, ral, vrij, fineer, richting, scharnier, naam] = s.split('~')
     if (!ONTWERPEN.some(o => o.id === ontwerp)) return null
     return {
       naam: decodeURIComponent(naam || ''),
       ontwerp,
       afwerking: (AFWERKINGEN.some(a => a.id === afwerking) ? afwerking : 'gelakt') as Afwerking,
       ral: KLEUREN.some(k => k.ral === ral) ? ral : '9010',
+      vrij: /^[0-9a-f]{6}$/i.test(vrij || '') ? `#${vrij}` : '',
+      helderheid: 1,
       fineer: FINEREN.some(f => f.id === fineer) ? fineer : 'licht',
       richting: richting === 'buiten' ? 'buiten' : 'binnen',
       scharnier: scharnier === 'rechts' ? 'rechts' : 'links',
@@ -85,6 +94,7 @@ export default function Configurator() {
   const kleur = KLEUREN.find(k => k.ral === huidig.ral) ?? KLEUREN[0]
   const fineer = FINEREN.find(f => f.id === huidig.fineer) ?? FINEREN[0]
   const afwerking = AFWERKINGEN.find(a => a.id === huidig.afwerking) ?? AFWERKINGEN[1]
+  const lakKleur = huidig.vrij || kleur.hex
   const naamVan = (d: Deur, i: number) => d.naam.trim() || `Deur ${i + 1}`
 
   useEffect(() => { setDeuren(leesUrl()) }, [])
@@ -95,7 +105,9 @@ export default function Configurator() {
     if (!el) return
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false })
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    // Een groef is maar een paar pixels breed; op een lage pixelverhouding
+    // wordt hij een trapje. Tot 2,5 renderen kost weinig en scheelt veel.
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2.5))
     renderer.outputColorSpace = THREE.SRGBColorSpace
     renderer.toneMapping = THREE.ACESFilmicToneMapping
     renderer.toneMappingExposure = 0.92
@@ -105,6 +117,16 @@ export default function Configurator() {
 
     const sc = new THREE.Scene()
     sc.background = new THREE.Color('#CFC8BC')
+
+    // Omgevingsbelichting. Dit is de grootste sprong in realisme die er te maken
+    // is: lak is een spiegelend materiaal, en zonder iets om te weerspiegelen
+    // blijft het verf. RoomEnvironment bakt een simpele kamer met lichtvlakken
+    // tot een omgevingskaart — daarna vangt de deur die vlakken op als zachte
+    // glans, en zien donkere kleuren er als lak uit in plaats van als karton.
+    // Geen extern bestand nodig, dus geen laadtijd en geen afhankelijkheid.
+    const pmrem = new THREE.PMREMGenerator(renderer)
+    sc.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
+    sc.environmentIntensity = 0.55
 
     // Bijna frontaal. Schuin van opzij zie je een plaat op zijn kant en kun je
     // geen patroon beoordelen; recht van voren verdwijnt de diepte. Net uit het
@@ -121,7 +143,9 @@ export default function Configurator() {
     zon.shadow.mapSize.set(2048, 2048)
     zon.shadow.camera.left = -3; zon.shadow.camera.right = 3
     zon.shadow.camera.top = 4; zon.shadow.camera.bottom = -0.5
-    zon.shadow.bias = -0.0005
+    zon.shadow.bias = -0.0004
+    zon.shadow.normalBias = 0.02
+    zon.shadow.radius = 3
     sc.add(zon)
     sc.add(new THREE.HemisphereLight(0xf2f6ff, 0x9a9082, 0.42))
     const vul = new THREE.DirectionalLight(0xffffff, 0.32)
@@ -235,10 +259,10 @@ export default function Configurator() {
     } else if (huidig.afwerking === 'gegrond') {
       m.color.set(GRONDVERF); m.roughness = 0.86; m.clearcoat = 0.0
     } else {
-      m.color.set(kleur.hex); m.roughness = 0.42; m.clearcoat = 0.55
+      m.color.set(lakKleur); m.roughness = 0.42; m.clearcoat = 0.55
     }
     m.needsUpdate = true
-  }, [kleur, huidig.afwerking])
+  }, [lakKleur, huidig.afwerking])
 
   // ── Draairichting en scharnierzijde ────────────────────────────────────
   useEffect(() => {
@@ -268,7 +292,11 @@ export default function Configurator() {
     const o = ONTWERPEN.find(x => x.id === d.ontwerp)!
     const k = KLEUREN.find(x => x.ral === d.ral)!
     const f = FINEREN.find(x => x.id === d.fineer)!
-    const afw = d.afwerking === 'gelakt' ? `gelakt in RAL ${k.ral} ${k.naam}`
+    const vrijeRal = d.vrij ? dichtstbijzijndeRal(d.vrij) : null
+    const afw = d.afwerking === 'gelakt'
+              ? (vrijeRal
+                  ? `gelakt, gekozen kleur ${d.vrij} — dichtstbijzijnde RAL ${vrijeRal.ral} ${vrijeRal.naam}`
+                  : `gelakt in RAL ${k.ral} ${k.naam}`)
               : d.afwerking === 'fineer' ? `fineer ${f.naam.toLowerCase()} (houtsoort nog te kiezen)`
               : 'gegrond, zelf te schilderen'
     return `${naamVan(d, i)}: ${o.naam} (${o.groef.toLowerCase()}) · ${afw} · `
@@ -328,7 +356,8 @@ export default function Configurator() {
               const k = KLEUREN.find(x => x.ral === d.ral)!
               const f = FINEREN.find(x => x.id === d.fineer)!
               const staal = d.afwerking === 'fineer' ? f.basis
-                          : d.afwerking === 'gegrond' ? GRONDVERF : k.hex
+                          : d.afwerking === 'gegrond' ? GRONDVERF
+                          : (d.vrij || k.hex)
               return (
                 <button key={i} onClick={() => setActief(i)}
                   style={{ ...(i === actief ? knopAan : knop), padding: '7px 10px', fontSize: 13,
@@ -406,19 +435,32 @@ export default function Configurator() {
                        gap: 5, touchAction: 'none' }}>
               {KLEUREN.map(k => (
                 <button key={k.ral}
-                  onPointerDown={() => wijzig({ ral: k.ral })}
-                  onPointerEnter={() => { if (sleept) wijzig({ ral: k.ral }) }}
+                  onPointerDown={() => wijzig({ ral: k.ral, vrij: '' })}
+                  onPointerEnter={() => { if (sleept) wijzig({ ral: k.ral, vrij: '' }) }}
                   title={`RAL ${k.ral} — ${k.naam}`}
                   aria-label={`RAL ${k.ral}, ${k.naam}`}
-                  aria-pressed={k.ral === huidig.ral}
+                  aria-pressed={!huidig.vrij && k.ral === huidig.ral}
                   style={{
                     aspectRatio: '1', borderRadius: 7, background: k.hex, cursor: 'pointer',
-                    border: k.ral === huidig.ral
+                    border: !huidig.vrij && k.ral === huidig.ral
                       ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.18)`,
-                    boxShadow: k.ral === huidig.ral ? '0 0 0 3px rgba(61,90,62,0.16)' : 'none',
+                    boxShadow: !huidig.vrij && k.ral === huidig.ral
+                      ? '0 0 0 3px rgba(61,90,62,0.16)' : 'none',
                   }} />
               ))}
             </div>
+            <details style={{ marginTop: 12 }}>
+              <summary style={{ fontSize: 13.5, fontWeight: 700, color: GROEN, cursor: 'pointer' }}>
+                Een andere kleur proberen
+              </summary>
+              <div style={{ marginTop: 10 }}>
+                <KleurKiezer
+                  waarde={lakKleur}
+                  helderheid={huidig.helderheid}
+                  onKies={(hexKleur, _h, _s, v) =>
+                    wijzig({ vrij: hexKleur, helderheid: v })} />
+              </div>
+            </details>
           </div>
         )}
 
