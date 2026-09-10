@@ -80,13 +80,21 @@ export default function Configurator() {
   const scene = useRef<{
     renderer: THREE.WebGLRenderer; scene: THREE.Scene; camera: THREE.PerspectiveCamera
     deur: THREE.Mesh; scharnierpunt: THREE.Group; materiaal: THREE.MeshPhysicalMaterial
-    doelHoek: number; stop: boolean
+    wandMat: THREE.MeshStandardMaterial
+    doelHoek: number; doelCam: THREE.Vector3; doelKijk: THREE.Vector3; stop: boolean
   } | null>(null)
 
   const [deuren, setDeuren] = useState<Deur[]>([NIEUW])
   const [actief, setActief] = useState(0)
   const [sleept, setSleept] = useState(false)
   const [spec, setSpec] = useState(false)
+  // De wand in dezelfde kleur als de deur is niet zomaar een weergaveoptie: het
+  // ís waar dit product voor bestaat. Zonder kozijn en zonder architraaf worden
+  // deur en wand één vlak, en blijft alleen de schaduwvoeg over.
+  const [wandGelijk, setWandGelijk] = useState(false)
+  // Op afstand zie je pas of dat effect klopt. Van dichtbij beoordeel je de
+  // groef, van een meter of vier de wand.
+  const [veraf, setVeraf] = useState(false)
   const [gekopieerd, setGekopieerd] = useState(false)
 
   const huidig = deuren[actief] ?? NIEUW
@@ -212,14 +220,21 @@ export default function Configurator() {
     const ro = new ResizeObserver(maat)
     ro.observe(el)
 
-    const st = { renderer, scene: sc, camera, deur, scharnierpunt, materiaal,
-                 doelHoek: 0, stop: false }
+    const st = { renderer, scene: sc, camera, deur, scharnierpunt, materiaal, wandMat,
+                 doelHoek: 0,
+                 doelCam: camera.position.clone(),
+                 doelKijk: new THREE.Vector3(0, 1.30, 0),
+                 stop: false }
     scene.current = st
 
+    const _kijk = new THREE.Vector3(0, 1.30, 0)
     const lus = () => {
       if (st.stop) return
       // Zachte aanloop naar de doelhoek; een deur die verspringt oogt goedkoop.
       scharnierpunt.rotation.y += (st.doelHoek - scharnierpunt.rotation.y) * 0.12
+      camera.position.lerp(st.doelCam, 0.08)
+      _kijk.lerp(st.doelKijk, 0.08)
+      camera.lookAt(_kijk)
       renderer.render(sc, camera)
       requestAnimationFrame(lus)
     }
@@ -257,7 +272,9 @@ export default function Configurator() {
     if (huidig.afwerking === 'fineer') {
       m.color.set('#ffffff'); m.roughness = 0.55; m.clearcoat = 0.25
     } else if (huidig.afwerking === 'gegrond') {
-      m.color.set(GRONDVERF); m.roughness = 0.86; m.clearcoat = 0.0
+      // Wél de gekozen kleur, maar mat: dit is muurverf op de bouw, geen
+      // fabriekslak. Het verschil met 'gelakt' zit in de glans, niet in de kleur.
+      m.color.set(lakKleur); m.roughness = 0.88; m.clearcoat = 0.0
     } else {
       m.color.set(lakKleur); m.roughness = 0.42; m.clearcoat = 0.55
     }
@@ -275,6 +292,25 @@ export default function Configurator() {
     const hoek = 0.23 * (huidig.richting === 'buiten' ? 1 : -1) * (links ? 1 : -1)
     st.doelHoek = hoek
   }, [huidig.scharnier, huidig.richting])
+
+  // ── Dichtbij of op afstand ─────────────────────────────────────────────
+  useEffect(() => {
+    const st = scene.current
+    if (!st) return
+    st.doelCam.set(...(veraf ? [1.85, 1.62, 8.6] : [0.62, 1.46, 4.90]) as [number, number, number])
+    st.doelKijk.set(0, veraf ? 1.28 : 1.30, 0)
+  }, [veraf])
+
+  // ── Wand in dezelfde kleur als de deur ─────────────────────────────────
+  useEffect(() => {
+    const st = scene.current
+    if (!st) return
+    // Bij fineer volgt de wand de basiskleur van het hout; anders zou de wand
+    // wit blijven naast een houten deur en klopt het effect niet.
+    const kleurVoorWand = huidig.afwerking === 'fineer' ? fineer.basis : lakKleur
+    st.wandMat.color.set(wandGelijk ? kleurVoorWand : '#A9A296')
+    st.wandMat.needsUpdate = true
+  }, [wandGelijk, lakKleur, huidig.afwerking, fineer])
 
   // ── De URL volgt de configuratie, zodat je hem kunt delen ──────────────
   useEffect(() => {
@@ -333,10 +369,23 @@ export default function Configurator() {
           width: '100%', height: 'min(68vh, 640px)', borderRadius: 16,
           overflow: 'hidden', border: `1px solid ${INKT}0.12)`, background: '#EDE7DC',
         }} />
+        <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', margin: '10px 0 0' }}>
+          <button onClick={() => setWandGelijk(v => !v)} aria-pressed={wandGelijk}
+            style={wandGelijk ? knopAan : knop}>
+            Wand in dezelfde kleur
+          </button>
+          <button onClick={() => setVeraf(v => !v)} aria-pressed={veraf}
+            style={veraf ? knopAan : knop}>
+            {veraf ? 'Van dichtbij' : 'Op afstand bekijken'}
+          </button>
+        </div>
         <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
-          Weergave op schaal, plafondhoog (2.700 mm). Het licht valt van linksboven —
-          daarom zie je het groefpatroon veranderen als je een donkerder kleur kiest.
-          RAL-kleuren zijn een benadering op scherm; vraag een staal voor de definitieve keuze.
+          Weergave op schaal, plafondhoog (2.700 mm). Het licht valt van linksboven &mdash;
+          daarom verandert het groefpatroon als je een donkerder kleur kiest. Zet de wand in
+          dezelfde kleur en bekijk hem op afstand: dan zie je waar dit systeem het voor doet,
+          want zonder kozijn en architraaf worden deur en wand &eacute;&eacute;n vlak met alleen
+          een schaduwvoeg ertussen. Kleuren op scherm zijn een benadering; vraag een staal voor
+          de definitieve keuze.
         </p>
       </div>
 
@@ -419,13 +468,15 @@ export default function Configurator() {
         </div>
 
         {/* Kleur of houtsoort, afhankelijk van de afwerking */}
-        {huidig.afwerking === 'gelakt' && (
+        {(huidig.afwerking === 'gelakt' || huidig.afwerking === 'gegrond') && (
           <div>
             <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
-              Kleur
+              {huidig.afwerking === 'gegrond' ? 'Welke kleur ga je schilderen?' : 'Kleur'}
             </h2>
             <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
-              Sleep over het raster. RAL {kleur.ral} &middot; {kleur.naam}
+              {huidig.afwerking === 'gegrond'
+                ? 'Je bent nergens aan gebonden — kies gerust je wandkleur. Sleep over het raster.'
+                : `Sleep over het raster. RAL ${kleur.ral} · ${kleur.naam}`}
             </p>
             <div
               onPointerDown={() => setSleept(true)}
@@ -492,15 +543,6 @@ export default function Configurator() {
               </p>
             )}
           </div>
-        )}
-
-        {huidig.afwerking === 'gegrond' && (
-          <p style={{ fontSize: 14, color: `${INKT}0.7)`, lineHeight: 1.7, margin: 0,
-                      background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 12,
-                      padding: '14px 16px' }}>
-            Geen kleurkeuze nodig: je schildert deze deur zelf, in elke kleur die je wilt —
-            ook later nog een keer. Op het scherm zie je hem in grondverf.
-          </p>
         )}
 
         {/* Ontwerp */}
