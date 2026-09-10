@@ -37,7 +37,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           '/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;'
           + 'outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}'
           + '@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;'
-          + 'transition-duration:.01ms!important;scroll-behavior:auto!important}}' }} />
+          + 'transition-duration:.01ms!important;scroll-behavior:auto!important}}'
+          /* Mobiel vangnet, gelijk aan bn2.css voor de statische pagina's:
+             kaartenrijen die hard op twee of drie kolommen staan, brede
+             tabellen en blokken die niet mogen krimpen maakten de pagina
+             breder dan de telefoon. Alleen onder 720px. */
+          + '@media(max-width:720px){'
+          + '[style*="grid-template-columns:1fr 1fr"],[style*="grid-template-columns: 1fr 1fr"],'
+          + '[style*="grid-template-columns:1.6fr"],[style*="grid-template-columns:1fr 1.5fr"],'
+          + '[style*="grid-template-columns:2fr 1fr"],[style*="grid-template-columns:1fr 320px"],'
+          + '[style*="grid-template-columns:1fr 300px"],[style*="grid-template-columns:repeat(2,"],'
+          + '[style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(4,"],'
+          + '[style*="grid-template-columns:repeat(5,"],[style*="grid-template-columns: repeat(2,"],'
+          + '[style*="grid-template-columns: repeat(3,"],[style*="grid-template-columns: repeat(4,"]'
+          + '{grid-template-columns:1fr!important}'
+          + '.grid,.grid-2,.grid-3,.grid-4,.grid-5,.grid-cards,.stat-row,.art-grid,.aff-grid,'
+          + '.hero-grid,.step-grid,.two-col,.kv,.kv-grid,.seg-grid,.tile-grid,.layout,'
+          + '.further-grid,.verder-grid,.verder-lezen-grid,.read-more-grid,.cluster-grid,'
+          + '.keuze-grid,.compare-grid,.price-grid,.name-row,.vent-grid,.footer-inner,'
+          + '.footer-grid{grid-template-columns:1fr}'
+          + '*{min-width:0}'
+          + '[style*="min-width:2"],[style*="min-width:3"],[style*="min-width:4"],'
+          + '[style*="min-width:5"],[style*="min-width:6"],[style*="min-width:7"],'
+          + '[style*="min-width:8"],[style*="min-width:9"],[style*="min-width: 2"],'
+          + '[style*="min-width: 3"],[style*="min-width: 4"],[style*="min-width: 5"],'
+          + '[style*="min-width: 6"]{min-width:0!important}'
+          + 'h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}body{overflow-wrap:break-word}'
+          + 'table,table[class],table[style]{display:block;max-width:100%;overflow-x:auto}'
+          + 'table[style*="min-width"],table[style*="min-width"] *{min-width:0!important}}' }} />
       </head>
       <body style={{ margin: 0, background: '#F5F0E8', fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" }}>
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />

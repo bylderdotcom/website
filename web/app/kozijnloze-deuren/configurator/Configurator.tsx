@@ -520,7 +520,7 @@ export default function Configurator() {
           <input id="deurnaam" list="plekken" value={huidig.naam}
             placeholder={`Bijvoorbeeld ${PLEKKEN[actief % PLEKKEN.length].toLowerCase()}`}
             onChange={e => wijzig({ naam: e.target.value })}
-            style={{ width: '100%', padding: '10px 12px', borderRadius: 9, fontSize: 14.5,
+            style={{ width: '100%', boxSizing: 'border-box', padding: '10px 12px', borderRadius: 9, fontSize: 14.5,
                      border: `1.5px solid ${INKT}0.14)`, fontFamily: 'inherit',
                      color: '#1A1208', background: '#fff' }} />
           <datalist id="plekken">{PLEKKEN.map(x => <option key={x} value={x} />)}</datalist>
