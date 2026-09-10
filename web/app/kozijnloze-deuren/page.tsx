@@ -221,6 +221,49 @@ export default function OnzichtbaarKozijnPage() {
         waarom het moment waarop je kiest belangrijker is dan het merk dat je kiest.
       </p>
 
+      {/* Drie echte foto's, direct onder de inleiding.
+          De pagina legde tot nu toe uit hoe het wérkt — met een doorsnede en een
+          prijstabel — maar liet niet zien wat je krijgt. Bij een product dat
+          verkocht wordt op hoe het eruitziet, is dat de verkeerde volgorde.
+          De bijschriften dragen elk een feit dat verderop wordt uitgewerkt,
+          zodat het beeld niet alleen mooi is maar ook iets zegt. */}
+      <section style={{ margin: '34px 0 8px' }}>
+        <div style={{ display: 'grid', gap: 14,
+          gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))' }}>
+          {[
+            { src: 'deur-eiken-fineer',
+              alt: 'Plafondhoge binnendeur in eikenfineer, vlak in een witte wand, met een smalle '
+                 + 'schaduwvoeg rondom en een houten vloer die onder de deur doorloopt',
+              bij: 'Fineer laat de nerf het patroon zijn. De deur loopt van vloer tot plafond, '
+                 + 'dus er is geen strook wand die het vlak onderbreekt.' },
+            { src: 'deur-shadow-echt',
+              alt: 'Wit deurblad met vier fijne verticale groeven naast elkaar aan de sluitzijde, '
+                 + 'met zwart deurbeslag',
+              bij: 'Een groef is een schaduw. In wit fluistert het patroon; dezelfde deur in '
+                 + 'antraciet laat het roepen.' },
+            { src: 'deur-zwart-plafondhoog',
+              alt: 'Twee zwarte plafondhoge deuren in een witte hal, waarvan er één openstaat',
+              bij: 'Draairichting is een bouwkundige keuze, geen detail: hij bepaalt aan welke '
+                 + 'zijde het kozijn wordt afgewerkt.' },
+          ].map(b => (
+            <figure key={b.src} style={{ margin: 0 }}>
+              <img
+                src={`/img/classic-next/${b.src}.jpg`}
+                srcSet={`/img/classic-next/${b.src}-sm.jpg 600w, /img/classic-next/${b.src}.jpg 800w`}
+                sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 340px"
+                alt={b.alt} width={800} height={1200} loading="lazy" decoding="async"
+                style={{ width: '100%', height: 'auto', aspectRatio: '3/4', objectFit: 'cover',
+                         borderRadius: 12, display: 'block', background: '#EDE6D8' }} />
+              <figcaption style={{ fontSize: 13, lineHeight: 1.6, color: `${INKT}0.62)`,
+                                   margin: '8px 0 0' }}>{b.bij}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '12px 0 0' }}>
+          Beeld: Classic Next.
+        </p>
+      </section>
+
       {/* De eerste H2 moet het antwoord zijn, niet een bijschrift. Dit is de
           alinea die een AI-antwoord letterlijk kan overnemen, dus hij staat
           bovenaan en beantwoordt de vraag in twee zinnen. */}
