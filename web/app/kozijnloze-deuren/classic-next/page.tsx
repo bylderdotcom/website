@@ -246,6 +246,8 @@ export default function ClassicNext() {
           </div>
         </section>
 
+        <ConfiguratorCTA aanleiding="Stel een deur van Classic Next samen: ontwerp, kleur, draairichting, zoveel deuren als je woning telt. Je krijgt een sluitende specificatie en wij komen met een offerte terug." />
+
         <section>
           <h2 style={H2}>Wat ze maken</h2>
           <div style={{ display: 'grid', gap: 14,
@@ -300,8 +302,6 @@ export default function ClassicNext() {
             product ook de logische route, want de montage valt samen met de ruwbouw.
           </p>
         </section>
-
-        <ConfiguratorCTA aanleiding="Stel een deur van Classic Next samen: ontwerp, kleur, draairichting, zoveel deuren als je woning telt. Je krijgt een sluitende specificatie en wij komen met een offerte terug." />
 
         <section>
           <h2 style={H2}>Wat vakmensen ervan vinden</h2>
