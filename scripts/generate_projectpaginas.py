@@ -1052,6 +1052,88 @@ def kort_desc(tekst):
     return knip[:knip.rfind(" ")].rstrip(" ,;-") + "\u2026"
 
 
+# --- twee afwerkingen die vóór de oplevering vallen -------------------------
+# Waarom dit blok bovenaan staat: het is geen advertentie maar een deadline.
+# Een kozijnloos deurkozijn gaat in de wand en wordt meegestukadoord, en een
+# gietvloer ligt op de dekvloer. Allebei dus vóór de sleutel, en allebei
+# achteraf duur. Dat is wat het op déze pagina thuis maakt: hij gaat al over
+# keuzemomenten die sluiten.
+#
+# Het blok verschilt per project, want anders staat dezelfde alinea 189 keer
+# op de site: het noemt het opleverjaar van dit project, de plaats, en het
+# aantal gietvloerleggers dat wij in die plaats in kaart hebben. Geen van die
+# drie is verzonnen — ze komen uit dezelfde data als de rest van de pagina.
+
+_GV = None
+
+
+def _gietvloer_steden():
+    """Plaatsen waarvoor we een gietvloerpagina met bedrijven hebben."""
+    global _GV
+    if _GV is None:
+        try:
+            with open("data/clusters/gietvloer/cities.json", encoding="utf-8") as f:
+                rauw = json.load(f)
+            _GV = {k: len(v.get("companies") or []) for k, v in rauw.items()}
+        except (OSError, ValueError):
+            _GV = {}
+    return _GV
+
+
+def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi):
+    stad_slug = re.sub(r"[^a-z0-9]+", "-", plaats_ruw.lower()).strip("-")
+    n_gv = _gietvloer_steden().get(stad_slug, 0)
+    conf = ("/kozijnloze-deuren/configurator/?utm_source=bylder-site"
+            f"&amp;utm_campaign=project-{slug}")
+    gv_href = f"/gietvloer/{stad_slug}/" if n_gv else "/gietvloer/"
+
+    # De deadline in eigen woorden, met het opleverjaar van dít project.
+    jaar = f"{lo}" if hi <= lo else f"{lo}-{hi}"
+    deadline = (f"Bij een oplevering in {jaar} valt die keuze op de meerwerklijst, "
+                f"niet op de verhuislijst.")
+
+    gv_bewijs = (f"Je ziet wie het in {E(plaats)} doet, met beoordelingen en afstand."
+                 if n_gv else
+                 "Je ziet per plaats wie het doet, met beoordelingen en afstand.")
+
+    lokaal = (f" In {E(plaats)} hebben wij {n_gv} gietvloerleggers in kaart gebracht,"
+              f" met hun beoordelingen." if n_gv >= 3 else "")
+    return f"""<h2>Twee afwerkingen die je nu kiest, niet later</h2>
+<p>Twee dingen komen in nieuwbouw steeds vaker terug: deuren zonder kozijn en een
+gietvloer. Allebei om dezelfde reden &mdash; in een nieuw huis kan het, in een bestaand
+huis nauwelijks. En allebei hangen ze aan dezelfde klok: ze moeten besloten zijn voordat
+de stukadoor en de dekvloer klaar zijn, dus ruim v&oacute;&oacute;r de oplevering van
+{E(naam)}.{lokaal}</p>
+<div class="pk-keuzes">
+<article>
+<div class="pk-etiket">Deuren zonder kozijn</div>
+<h3>Een deur die opgaat in de wand</h3>
+<p>Plafondhoog, zonder omlijsting, en in dezelfde kleur als de wand: wat overblijft is
+een schaduwvoeg. <strong>Waarom nieuwbouw:</strong> het kozijn gaat ín de wand en wordt
+meegestukadoord. In een bestaande woning betekent dat wanden openen; hier is het een
+regel op de meerwerklijst. {deadline}</p>
+<p><a class="cta-primary" href="{conf}">Stel je deur samen &rarr;</a></p>
+<p class="noot">Dertien groefpatronen, elke RAL-kleur, en je ziet hem meteen in 3D.
+Je krijgt een prijs op je eigen configuratie.</p>
+</article>
+<article>
+<div class="pk-etiket">Gietvloer</div>
+<h3>E&eacute;n vloer, geen naden</h3>
+<p>Een naadloze vloer die over de hele verdieping doorloopt en de vloerverwarming die er
+al ligt beter benut dan tegels of hout. <strong>Waarom nieuwbouw:</strong> er ligt een
+verse dekvloer en het huis is leeg. Geen meubels eruit, geen plinten los, geen oude vloer
+afvoeren &mdash; precies de posten die een gietvloer in een bewoond huis duur maken.
+De dekvloer moet w&eacute;l droog zijn, en dat bepaalt wanneer het kan.</p>
+<p><a class="cta-primary" href="{gv_href}">Vraag een offerte aan &rarr;</a></p>
+<p class="noot">{gv_bewijs}</p>
+</article>
+</div>
+<p class="noot" style="margin-top:14px;">Met een gratis account krijg je bij allebei de
+<a href="/vouchers/">ledenkorting bij aangesloten merken</a>, en leggen we je keuzes vast
+in je dossier zodat je bij de offerte niets vergeet.</p>
+"""
+
+
 def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     naam, plaats = p["naam"], netjes(p["plaats"])
     won = p.get("woningen") or 0
@@ -1330,6 +1412,8 @@ afwerking en inrichting niet te veel betaalt.</p>
 
 {cijferstrook(strook)}
 
+{keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi)}
+
 <h2>Wat er nu op je afkomt</h2>
 <p>Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Je eigen
 <a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is leidend.</p>
@@ -1362,7 +1446,7 @@ afwerking en inrichting niet te veel betaalt.</p>
 <div class="pk-etiket">E&eacute;n handeling</div>
 <h2>Volg {E(naam)}</h2>
 <p>Wij meten de bouw elke twee weken, rekenen je deadlines terug naar jouw bouwnummer en
-zetten je kortingen klaar bij 61 merken. Elke nieuwe meting zie je terug in je dossier.</p>
+zetten je kortingen klaar bij 56 merken. Elke nieuwe meting zie je terug in je dossier.</p>
 <p><a class="cta-primary" href="{app}">Maak een gratis account &rarr;</a></p>
 <p class="fijn">Geen betaling nodig &middot; opzeggen wanneer je wilt</p>
 </div>
