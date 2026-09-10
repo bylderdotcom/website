@@ -310,7 +310,16 @@ function marktHtml(city?: string, citySlug?: string): string {
 // in drie maanden, en een deel daarvan is het bedrijf dat zijn eigen naam
 // googelt. Geen vast percentage: "vanaf 1%", want het verschilt per merk.
 function claimHtml(pageSlug: string, naam: string): string {
-  const slug = pageSlug.replace(/^bedrijf\//, '')
+  // De slug in de URL mist de vakprefix — die staat al in het pad
+    // (/badkamer/bedrijf/...), dus de generator haalt hem uit de slug. In de
+    // database heet hetzelfde record wél 'badkamer-<slug>'. De claimpagina zocht op
+    // een exacte match en vond dus niets, op elk profiel.
+    //
+    // De app accepteert sinds 10 september beide vormen, maar bij 3.595
+    // profielen (14%) hoort dezelfde kale slug bij twee vakken — Van Lokven
+    // Elektro staat er als elektricien én als loodgieter — en dan weigert de app
+    // terecht te gokken. Hier weten we het vak zeker, dus sturen we het mee.
+  const slug = 'badkamer-' + pageSlug.replace(/^bedrijf\//, '')   // vakprefix
   return '<div class="divider"></div>'
     + '<div style="background:#fff;border:1px solid rgba(61,46,30,0.12);border-radius:14px;'
     + 'padding:20px 22px;margin:20px 0;">'
