@@ -442,10 +442,10 @@ def lokale_vakbedrijven(vb, p, straal=12, n=6):
     return res
 
 
-# De vier Auping Stores zijn eigendom van Bylder-oprichter Daniel Paaij. Daarom
-# staan ze hier mét die vermelding erbij: op elke andere plek op deze site geldt
-# dat plaatsing niet te koop is, en die claim houdt alleen stand als we het
-# zeggen wanneer het ons eigen belang raakt.
+# Bij deze vier winkels staat een expliciete vermelding dat ze aangesloten
+# partner zijn. Op elke andere plek op deze site geldt dat plaatsing niet te
+# koop is, en die claim houdt alleen stand als we het zeggen zodra er wél een
+# belang meespeelt.
 AUPING = {
     "s-gravenhage":         "Auping Store Den Haag Centrum",
     "rotterdam":            "Auping Store Rotterdam Centrum",
