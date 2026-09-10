@@ -117,6 +117,13 @@ ul.bedrijven li strong{display:inline-block;}
 .pk-strook div:last-child{border-right:0;}
 .pk-strook b{display:block;font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.1;font-variant-numeric:tabular-nums;color:#1A1208;}
 .pk-strook span{display:block;font-size:12px;color:rgba(61,46,30,.66);margin-top:2px;line-height:1.35;}
+/* Twee keuzes die voor de oplevering vallen: naast elkaar, onder elkaar op mobiel. */
+.pk-keuzes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0 6px;}
+.pk-keuzes article{border:1px solid rgba(61,46,30,.14);border-radius:14px;padding:20px 20px 16px;background:#fff;}
+.pk-keuzes h3{font-size:17px;font-weight:800;letter-spacing:-.02em;margin:6px 0 8px;color:#1A1208;}
+.pk-keuzes p{font-size:14px;line-height:1.65;color:rgba(61,46,30,.78);margin:0 0 14px;}
+.pk-keuzes .noot{font-size:12.5px;color:rgba(61,46,30,.6);margin:10px 0 0;}
+@media(max-width:760px){.pk-keuzes{grid-template-columns:1fr;}}
 /* Tijdlijn: verstreken momenten grijs, het eerstvolgende gemarkeerd. */
 .pk-tijdlijn{margin:20px 0 6px;}
 .pk-moment{display:grid;grid-template-columns:9.5rem 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(61,46,30,.12);}
