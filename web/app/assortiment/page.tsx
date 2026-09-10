@@ -51,6 +51,8 @@ const AANBOD = [
       + 'Let op: het frame moet in de wand vóórdat de stukadoor komt — '
       + 'bij nieuwbouw is dit meerwerk, geen inrichting.',
     links: [
+      // De configurator eerst: dat is waar dit aanbod een offerte wordt.
+      { href: '/kozijnloze-deuren/configurator/', tekst: 'Stel je deur samen' },
       { href: '/kozijnloze-deuren/', tekst: 'Prijzen en wanneer je kiest' },
     ],
   },
