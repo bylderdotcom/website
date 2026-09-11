@@ -129,6 +129,8 @@ MENUS = [
     # statische pagina's en Next-routes hetzelfde beloven.
     ('Zakelijk', False, [
         ('/inkoopvoordeel/', 'Inkoopvoordeel voor vakbedrijven', 'Inkoopkorting én verdienen aan wat je klant koopt — €79 per jaar', True),
+        # Stond al in Nav.tsx (de Next-routes), ontbrak hier tot 11-09-2026.
+        ('/zakelijk/hoe-een-order-verloopt/', 'Hoe een order verloopt', 'Van doorverwijzing tot uitbetaling, in gewone taal', True),
         ('/deelnemer-worden/', 'Deelnemer worden', 'Bereik kopers op het juiste koopmoment', True),
         ('/deelnemer-worden/commercieel-vastgoed/', 'Commercieel vastgoed', None, False),
         ('/voor-vakbedrijven/', 'Voor vakbedrijven', None, False),
