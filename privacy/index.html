@@ -109,7 +109,7 @@ function bToggle(){
   <div class="container">
     <div class="badge">Juridisch</div>
     <h1>Privacybeleid</h1>
-    <p class="meta">Bylder Nederland B.V. · Versie 1.0 · Mei 2025 · Laatst bijgewerkt: 23 mei 2025</p>
+    <p class="meta">Bylder Nederland B.V. · Versie 1.1 · Laatst bijgewerkt: 11 september 2026</p>
 
     <p>Bylder Nederland B.V. (hierna: "Bylder", "wij", "ons") respecteert jouw privacy en gaat zorgvuldig om met jouw persoonsgegevens. In dit privacybeleid leggen wij uit welke gegevens wij verzamelen, hoe wij deze gebruiken en welke rechten jij hebt.</p>
 
@@ -144,13 +144,20 @@ function bToggle(){
 
     <h3>2.3 Gebruik van de dienst</h3>
     <ul>
-      <li>Geüploade documenten (plattegronden, offertes, tekeningen) — deze worden automatisch verwijderd na 24 uur</li>
+      <li>Documenten die je uploadt: plattegronden, tekeningen, offertes, contracten, facturen en foto's van gebreken. Hoe lang we die bewaren staat in hoofdstuk 6</li>
       <li>Chatgesprekken met de AI Kopersbegeleider</li>
       <li>Geclaimed vouchers en bijbehorende partnergegevens</li>
       <li>Woninggegevens die je invoert (adres, oppervlak, opleverdatum)</li>
     </ul>
 
-    <h3>2.4 Technische gegevens</h3>
+    <h3>2.4 Offerte-aanvragen</h3>
+    <ul>
+      <li>Naam, e-mailadres, telefoonnummer (optioneel), postcode en plaats</li>
+      <li>Wat je samenstelde in een configurator, met de hoeveelheden en je toelichting</li>
+      <li>De tekening die bij de aanvraag hoort, als je die in je account hebt geüpload</li>
+    </ul>
+
+    <h3>2.5 Technische gegevens</h3>
     <ul>
       <li>IP-adres</li>
       <li>Browser- en apparaattype</li>
@@ -168,17 +175,23 @@ function bToggle(){
     <h3>3.3 Verbetering van onze diensten</h3>
     <p>Wij analyseren anoniem gebruik van het platform om de AI en tools te verbeteren. Grondslag: gerechtvaardigd belang (art. 6 lid 1 sub f AVG).</p>
 
-    <h3>3.4 Wettelijke verplichtingen</h3>
+    <h3>3.4 Offerte-aanvragen</h3>
+    <p>Vraag je via Bylder een offerte aan, dan zoeken wij een vakbedrijf dat de opdracht kan uitvoeren en geven wij je aanvraag aan dat bedrijf. Het vakbedrijf maakt de offerte; ga je akkoord, dan sluit je de opdracht met dat bedrijf, niet met Bylder. Grondslag: je verzoek om een offerte, waarvoor het doorgeven aan het vakbedrijf nodig is (art. 6 lid 1 sub b AVG).</p>
+
+    <h3>3.5 Wettelijke verplichtingen</h3>
     <p>Wij bewaren betalingsgegevens voor de wettelijk vereiste periode (7 jaar) voor boekhoudkundige doeleinden. Grondslag: wettelijke verplichting (art. 6 lid 1 sub c AVG).</p>
 
     <h2>4. Geüploade documenten en AI-analyse</h2>
-    <p>Als je documenten uploadt voor de AI QuickScan of de AI Kopersbegeleider (plattegronden, offertes, contracten):</p>
+    <p>Documenten die je in je account uploadt (in je documentenmap, bij je tekeningen of bij een garantiemelding) behandelen we zo:</p>
     <ul>
-      <li>Worden documenten versleuteld verstuurd via een beveiligde verbinding (TLS)</li>
-      <li>Worden documenten opgeslagen in een beveiligde omgeving (Supabase Storage)</li>
-      <li>Worden documenten na 24 uur automatisch en definitief verwijderd</li>
-      <li>Worden documenten nooit gedeeld met derden, ook niet met partnermerken</li>
-      <li>Worden documenten verwerkt door Anthropic's Claude API voor de analyse — Anthropic slaat de inhoud niet op voor trainingen (Enterprise Privacy Mode)</li>
+      <li>Ze gaan versleuteld naar ons, via een beveiligde verbinding (TLS)</li>
+      <li>Ze staan in afgeschermde opslag (Supabase Storage). Er bestaat geen openbare link naar je bestanden. Open je een document, dan maken we een tijdelijke link die na een uur niet meer werkt</li>
+      <li>We bewaren ze zolang je account bestaat. Je tekeningen houden we bewust langer dan één sessie: zo kun je een nieuwe versie vergelijken met de vorige en zie je wat er in het meerwerk veranderde</li>
+      <li>Verwijder je een document, dan halen we het bestand meteen weg, samen met de afbeeldingen die we ervan maakten</li>
+      <li>We delen ze niet met partnermerken en verkopen ze niet. Vraag je een offerte aan, dan krijgt het vakbedrijf dat de offerte maakt de tekening die bij die aanvraag hoort</li>
+      <li>Laat je een document analyseren, dan gaat het naar Anthropic, de maker van Claude. Anthropic gebruikt wat via de API binnenkomt niet om zijn modellen te trainen</li>
+      <li>Laat je van een tekening een 3D-impressie of een 2D-plattegrond maken, dan gaat die tekening naar fal.ai, dat het beeld maakt</li>
+      <li>Anthropic en fal.ai zitten in de Verenigde Staten. Voor een analyse of een impressie verlaat je bestand dus de EU</li>
     </ul>
 
     <h2>5. Delen met derden</h2>
@@ -186,8 +199,10 @@ function bToggle(){
     <ul>
       <li><strong>Supabase</strong> — database en bestandsopslag (AVG-conform, datacenter in de EU)</li>
       <li><strong>Pay.nl</strong> — betalingsverwerking (PCI DSS gecertificeerd)</li>
-      <li><strong>Anthropic</strong> — AI-analyse van documenten en gesprekken (Enterprise Privacy Mode)</li>
-      <li><strong>Vercel</strong> — hosting van het platform (EU-regio)</strong></li>
+      <li><strong>Anthropic</strong> — AI-analyse van documenten en gesprekken (Verenigde Staten; gebruikt API-gegevens niet voor training)</li>
+      <li><strong>fal.ai</strong> — maakt 3D-impressies en 2D-plattegronden van tekeningen, alleen als je daarom vraagt (Verenigde Staten)</li>
+      <li><strong>Vercel</strong> — hosting van het platform (EU-regio)</li>
+      <li><strong>Uitvoerende vakbedrijven</strong> — alleen als je een offerte aanvraagt: je aanvraag, je contactgegevens en de bijbehorende tekening, via een persoonlijke link die na 30 dagen verloopt. Het vakbedrijf mag deze gegevens alleen voor jouw aanvraag gebruiken</li>
       <li><strong>Partnermerken</strong> — uitsluitend het gegenereerde vouchernummer bij het claimen van een voucher, nooit verdere persoonsgegevens</li>
     </ul>
     <p>Wij verkopen jouw gegevens nooit aan derden en delen geen gegevens voor marketingdoeleinden van derden.</p>
@@ -195,9 +210,10 @@ function bToggle(){
     <h2>6. Bewaartermijnen</h2>
     <ul>
       <li><strong>Accountgegevens</strong> — zolang je een actief account hebt, plus 2 jaar daarna</li>
-      <li><strong>Geüploade documenten</strong> — maximaal 24 uur na upload</li>
+      <li><strong>Geüploade documenten</strong> — zolang je account bestaat. Verwijder je een document, dan is het bestand meteen weg. Laat je je account verwijderen, dan zijn al je documenten binnen 7 dagen weg</li>
       <li><strong>Chatgesprekken</strong> — 12 maanden, daarna geanonimiseerd</li>
       <li><strong>Betalingsgegevens</strong> — 7 jaar (wettelijke bewaarplicht)</li>
+      <li><strong>Offerte-aanvragen</strong> — 2 jaar na de laatste handeling; is er een opdracht uit voortgekomen, dan 7 jaar (wettelijke bewaarplicht voor de administratie)</li>
       <li><strong>Analytische gegevens</strong> — geanonimiseerd, geen maximale bewaartermijn</li>
     </ul>
 
@@ -219,7 +235,8 @@ function bToggle(){
       <li>Versleutelde verbindingen (TLS/HTTPS) voor alle datatransport</li>
       <li>Row Level Security (RLS) op de database — gebruikers zien alleen hun eigen gegevens</li>
       <li>HMAC-verificatie van alle betalings-webhooks</li>
-      <li>Automatische verwijdering van geüploade bestanden na 24 uur</li>
+      <li>Afgeschermde bestandsopslag zonder openbare links; een document open je via een tijdelijke link die na een uur verloopt</li>
+      <li>Wekelijkse opschoning: bestanden die bij geen document of account meer horen, halen we weg</li>
       <li>Geen opslag van volledige betaalgegevens</li>
     </ul>
 
