@@ -122,6 +122,98 @@ def dd_item(href, title, sub, primair):
 # (36k statisch + 67.710 Next-routes). Dat was 24 kB per pagina — 57% van een
 # gemiddelde pagina — en liet de Vercel-build op schijfruimte stuklopen
 # (ENOSPC, 6.304 MB output). Als klassen is dezelfde nav ~4 kB.
+# Vangnet-CSS voor smalle schermen. Hoort hier en niet los onder in bn2.css:
+# dat bestand is gegenereerd, en `--css` schreef handmatige toevoegingen zonder
+# waarschuwing weg. Alles wat op /bn2.css hoort te staan, staat dus in dit
+# script. Regenereren: python3 _scripts/nav_pijlers_pass.py --css
+MOBIEL_VANGNET = '''
+/* Mobiele balk past binnen het scherm (fix 10-09-2026). Logo + CTA + hamburger
+   waren samen breder dan 375px: de hamburger viel buiten beeld en de hele site
+   kon horizontaal scrollen. Drie trappen: compacter vanaf de mobiele nav,
+   kleinere CTA onder 420px, en krappe marges onder 360px. */
+@media(max-width:1020px){.bn2-mw{padding:13px 16px;gap:10px}.bn2-r{gap:10px}.bn2-cta{font-size:0.8125rem;padding:9px 14px}.bn2-bg{padding:6px 2px}}
+@media(max-width:420px){.bn2-mw{padding:12px 14px;gap:8px}.bn2-logo{gap:8px}.bn2-lt{font-size:16px}.bn2-r{gap:8px}.bn2-cta{font-size:0.75rem;padding:8px 12px}}
+@media(max-width:359px){.bn2-mw{padding:12px 10px}.bn2-logo{gap:6px}.bn2-lt{font-size:15px}.bn2-cta{padding:8px 10px}}
+
+/* ── Mobiel vangnet (10-09-2026) ────────────────────────────────────────────
+   Bijna de helft van de pagina's schoof op een telefoon horizontaal mee:
+   kaartenrijen die hard op twee of drie kolommen staan, brede tabellen en
+   blokken die niet mochten krimpen. De pagina's komen uit een reeks
+   generatoren en dragen hun opmaak in de tag zelf, dus dit staat hier
+   centraal in plaats van in duizenden bestanden.
+
+   Twee gewichten, met opzet. De regels voor opmaak-in-de-tag hebben
+   !important nodig, want anders wint het style-attribuut. De regels op
+   klassenamen hebben dat níét: bn2.css staat als laatste in de <head>, dus
+   die winnen vanzelf van de paginastijl — maar een pagina die zélf al een
+   mobiele indeling meebrengt (bv. twee kolommen onder 768px) houdt de zijne.
+   Alles alleen onder 720px; daarboven verandert er niets. */
+@media(max-width:720px){
+  [style*="grid-template-columns:1fr "],
+  [style*="grid-template-columns: 1fr "],
+  [style*="grid-template-columns:1.6fr"],
+  [style*="grid-template-columns:2fr 1fr"],
+  [style*="grid-template-columns:repeat(2,"],
+  [style*="grid-template-columns:repeat(3,"],
+  [style*="grid-template-columns:repeat(4,"],
+  [style*="grid-template-columns:repeat(5,"],
+  [style*="grid-template-columns: repeat(2,"],
+  [style*="grid-template-columns: repeat(3,"],
+  [style*="grid-template-columns: repeat(4,"]{grid-template-columns:1fr!important}
+
+  .grid,.grid-2,.grid-3,.grid-4,.grid-5,.stat-row,.art-grid,.aff-grid,
+  .hero-grid,.step-grid,.two-col,.kv,.kv-grid,.seg-grid,.tile-grid,.layout,
+  .further-grid,.verder-grid,.verder-lezen-grid,.read-more-grid,.cluster-grid,
+  .keuze-grid,.compare-grid,.price-grid,.name-row,.vent-grid,.footer-inner,
+  .footer-grid{grid-template-columns:1fr}
+
+  /* Een raster- of flexkind mag standaard niet kleiner dan zijn langste woord;
+     daardoor duwde één lange kop de hele pagina breder. */
+  *{min-width:0}
+  /* Een kaart met min-width:280px past niet op een scherm van 320px. */
+  [style*="min-width:2"],[style*="min-width:3"],[style*="min-width:4"],
+  [style*="min-width:5"],[style*="min-width:6"],[style*="min-width:7"],
+  [style*="min-width:8"],[style*="min-width:9"],
+  [style*="min-width: 2"],[style*="min-width: 3"],[style*="min-width: 4"],
+  [style*="min-width: 5"],[style*="min-width: 6"]{min-width:0!important}
+  /* Een kop van 40px met een woord als 'verbouwingskosten' is breder dan een
+     telefoon. Nederlands breekt netjes af zolang de pagina lang=nl heeft. */
+  h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}
+  body{overflow-wrap:break-word}
+  /* Brede prijstabellen schuiven binnen hun eigen kader, niet de pagina. */
+  table,table[class],table[style]{display:block;max-width:100%;overflow-x:auto}
+  table[style*="min-width"],table[style*="min-width"] *{min-width:0!important}
+}
+
+/* ── Oude navigatie op smalle telefoons (11-09-2026) ────────────────────────
+   87 pagina's dragen nog de navigatie van vóór het huidige menu (.glass-nav).
+   Die balk was 343px breed op een scherm van 320px: logo, de knop en het
+   menu-knopje pasten niet naast elkaar. Zelfde aanpak als bij de nieuwe balk:
+   compacter vanaf 420px, krapper vanaf 360px. Logo en woordmerk dragen hun
+   maten in de tag, vandaar !important. */
+@media(max-width:420px){
+  .nav-inner{padding:12px 14px!important}
+  .nav-inner>a{gap:8px!important}
+  .nav-inner>a>span{font-size:16px!important}
+  .nav-right{gap:8px!important}
+  .nav-cta{font-size:0.75rem!important;padding:8px 12px!important}
+  .nav-burger{padding:6px 2px!important}
+}
+@media(max-width:359px){
+  .nav-inner{padding:12px 10px!important}
+  .nav-inner>a{gap:6px!important}
+  .nav-inner>a>span{font-size:15px!important}
+  .nav-cta{padding:8px 10px!important}
+}
+
+/* Een knop met een hele zin erin ('Activeer mijn Auping voucher →') stond op
+   nowrap en was daardoor 320px breed op een scherm van 320px. Op een telefoon
+   mag zo'n knop over twee regels. De balk-knop blijft wél op één regel. */
+@media(max-width:480px){
+  .btn-primary,.btn-secondary,.btn,.button{white-space:normal!important;max-width:100%}
+}
+'''
+
 CSS = (
     # De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte af van
     # of de pagina toevallig een globale reset meelevert; op content-box telt de
@@ -201,6 +293,7 @@ CSS = (
     f'box-shadow:0 0 0 8px rgba(245,240,232,.85)}}'
     f'@media (prefers-reduced-motion:reduce){{*{{animation-duration:.01ms!important;'
     f'transition-duration:.01ms!important;scroll-behavior:auto!important}}}}'
+    + MOBIEL_VANGNET
 )
 
 PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'
