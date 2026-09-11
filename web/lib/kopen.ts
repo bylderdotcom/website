@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
 import { metKennisbank, metWijzer } from './kennisbank-links'
-import { zonderOudKopstuk } from './oud-kopstuk'
+import { zonderOudKopstuk, zonderKaleNavRegel } from './oud-kopstuk'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'kopen'
@@ -67,7 +67,7 @@ export function getShellCss(templateField: string): string {
   if (!(templateField in _cssCache)) {
     const tpl = fs.readFileSync(path.join(TPL_DIR, `template.${templateField}.html`), 'utf8')
     const m = tpl.match(/<style[^>]*>([\s\S]*?)<\/style>/)
-    _cssCache[templateField] = m ? m[1] : ''
+    _cssCache[templateField] = m ? zonderKaleNavRegel(m[1]) : ''
   }
   return _cssCache[templateField]
 }
@@ -92,7 +92,8 @@ function readHub(slug: string): string {
 function getMainHtmlRaw(page: KopenPage): string {
   if (page.content_kind === 'vakstad') {
     const v = getVaksteden()[page.slug]
-    let body = readTpl(`content.vakstad.${v.template}.html`)
+    // Ook hier het ingebakken menu eruit — dit pad sloeg het knipwerk over.
+    let body = zonderOudKopstuk(readTpl(`content.vakstad.${v.template}.html`))
     body = body
       .replaceAll('{{city}}', v.city)
       .replaceAll('{{city_slug}}', v.city_slug)
