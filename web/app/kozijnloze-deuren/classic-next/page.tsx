@@ -191,6 +191,10 @@ export default function ClassicNext() {
 
         </section>
 
+        {/* De configurator direct onder de inleiding, vóór korting en
+            partnerprogramma: wie hier leest, wil zien hoe zo'n deur eruitziet. */}
+        <ConfiguratorCTA vroeg marge="34px 0 10px" aanleiding="Stel een deur van Classic Next samen: ontwerp, kleur, draairichting, zoveel deuren als je woning telt." />
+
         {/* Twee publieken, twee acties, en ze mogen elkaar niet in de weg zitten.
             De koper wil korting; de vakman wil weten of hij eraan verdient. Eén
             gedeelde knop zou voor allebei het verkeerde beloven, dus staan ze
@@ -245,8 +249,6 @@ export default function ClassicNext() {
             </div>
           </div>
         </section>
-
-        <ConfiguratorCTA aanleiding="Stel een deur van Classic Next samen: ontwerp, kleur, draairichting, zoveel deuren als je woning telt. Je krijgt een sluitende specificatie en wij komen met een offerte terug." />
 
         <section>
           <h2 style={H2}>Wat ze maken</h2>

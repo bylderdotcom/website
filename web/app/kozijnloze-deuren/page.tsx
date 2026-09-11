@@ -99,15 +99,28 @@ const SOORTEN = [
       + 'geluid tussen ruimtes.' },
 ]
 
-const MERKEN = [
+// Classic Next bovenaan, met de ledenkorting erbij (besluit Daniel, 11-09-2026).
+// De korting is dezelfde als op /kozijnloze-deuren/classic-next/ en staat daar
+// sinds de voucher op 'approved' staat (4 september 2026). Wordt de voucher ooit
+// ingetrokken: korting op null zetten, hier én op die pagina.
+type Merk = { naam: string; land: string; wat: string; pagina?: string; korting?: { kort: string; lang: string; url: string } }
+
+const MERKEN: Merk[] = [
+  { naam: 'Classic Next', land: 'Uden, NL',
+    wat: 'Complete kozijn-en-deurcombinatie met magneetslot en Basys-scharnieren, uit eigen werkplaats. '
+      + 'Deuren tot kamerhoog (2.700 mm), standaard 50 mm dik, elke RAL-kleur, ook als frameloos '
+      + 'schuifdeursysteem. Levert door heel Nederland en biedt meet- en montageservice op locatie.',
+    pagina: '/kozijnloze-deuren/classic-next/',
+    korting: {
+      kort: '5% ledenkorting',
+      lang: 'Leden van Bylder krijgen 5% korting op het assortiment van Classic Next. Je claimt de code '
+        + 'met een gratis account en laat hem zien bij je bestelling.',
+      url: 'https://app.bylder.com/dashboard/vouchers?utm_source=bylder-site&utm_campaign=kozijnloze-deuren-merken',
+    } },
   { naam: 'Xinnix', land: 'België', wat: 'X1, X2 en X3-profielen voor draaiend en schuivend. Het bekendste '
       + 'systeem in Nederland en België; veel dealers, dus makkelijk aan te komen.' },
   { naam: 'ECLISSE', land: 'Italië', wat: 'Sterk in schuifdeurcassettes (Syntesis) en kozijnloze draaideuren. '
       + 'Ruime keuze in wanddiktes.' },
-  { naam: 'Classic Next', land: 'Uden, NL',
-    wat: 'Complete kozijn-en-deurcombinatie met magneetslot en Basys-scharnieren, uit eigen werkplaats. '
-      + 'Deuren tot kamerhoog (2.700 mm), standaard 50 mm dik, elke RAL-kleur, ook als frameloos '
-      + 'schuifdeursysteem. Levert door heel Nederland en biedt meet- en montageservice op locatie.' },
 ]
 
 const VRAGEN = [
@@ -215,6 +228,13 @@ export default function OnzichtbaarKozijnPage() {
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Kozijnloze deuren: de deur verdwijnt in de wand
       </h1>
+
+      {/* De configurator is waar het geld wordt verdiend, dus hij staat direct
+          onder de kop, vóór de uitleg (Daniel, 11-09-2026: "hoger, opvallender,
+          met een visual"). Op een telefoon staat de knop zo in het eerste scherm. */}
+      <ConfiguratorCTA vroeg marge="22px 0 30px"
+        titel="Geef de deur dezelfde kleur als je wand"
+        aanleiding="Zonder kozijn en architraaf worden deur en wand één vlak. In de configurator kies je groefpatroon en kleur, en zie je het meteen." />
       <p style={{ ...P, fontSize: 17.5, maxWidth: '62ch' }}>
         Geen kozijn, geen architraaf, geen zichtbaar beslag — alleen een deurblad en een smalle schaduwvoeg.
         Ook wel <strong>kozijnloze deur</strong>, <strong>onzichtbare deur</strong> of{' '}
@@ -222,48 +242,7 @@ export default function OnzichtbaarKozijnPage() {
         waarom het moment waarop je kiest belangrijker is dan het merk dat je kiest.
       </p>
 
-      {/* Het geld wordt met de configurator verdiend, dus die staat boven de
-          uitleg en niet halverwege. De foto ernaast toont waar het systeem het
-          voor doet: deur en wand in dezelfde kleur, alleen een schaduwvoeg
-          ertussen. Dat is met woorden niet uit te leggen. */}
-      <section style={{ margin: '30px 0 10px' }}>
-        <div style={{ display: 'grid', gap: 20, alignItems: 'center',
-          gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))' }}>
-          <img
-            src="/img/classic-next/deur-wandkleur-gelijk.jpg"
-            srcSet="/img/classic-next/deur-wandkleur-gelijk-sm.jpg 560w, /img/classic-next/deur-wandkleur-gelijk.jpg 1120w"
-            sizes="(max-width:640px) 100vw, 50vw"
-            alt="Plafondhoge deur in exact dezelfde grijze wandafwerking als de muur eromheen; alleen een dunne schaduwvoeg laat zien waar de deur zit"
-            width={1120} height={1400} loading="eager" decoding="async"
-            style={{ width: '100%', height: 'auto', borderRadius: 14, display: 'block',
-                     background: '#EDE6D8' }} />
-          <div>
-            <p style={{ fontSize: 11.5, fontFamily: "'Space Mono',monospace",
-              textTransform: 'uppercase', letterSpacing: '0.08em', color: ROEST,
-              fontWeight: 700, margin: '0 0 8px' }}>Zelf samenstellen</p>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.022em',
-              margin: '0 0 10px', color: '#1A1208', textWrap: 'balance' }}>
-              Geef de deur dezelfde kleur als je wand
-            </h2>
-            <p style={{ ...P, fontSize: 15.5 }}>
-              Dat is waar dit systeem het voor doet: zonder kozijn en zonder architraaf
-              worden deur en wand &eacute;&eacute;n vlak, met alleen een schaduwvoeg ertussen.
-              In de configurator zet je de wand in de kleur van de deur en bekijk je het op
-              afstand &mdash; dan zie je pas of het klopt.
-            </p>
-            <p style={{ ...P, fontSize: 15.5, margin: '0 0 18px' }}>
-              Dertien groefpatronen, elke RAL-kleur, altijd plafondhoog. Je krijgt een
-              sluitende specificatie en wij komen met een offerte terug.
-            </p>
-            <a href="/kozijnloze-deuren/configurator/" style={{
-              display: 'inline-block', background: GROEN, color: '#F5F0E8', fontWeight: 800,
-              fontSize: 15.5, padding: '14px 26px', borderRadius: 12, textDecoration: 'none',
-            }}>Stel je deur samen &rarr;</a>
-          </div>
-        </div>
-      </section>
-
-      {/* Drie echte foto's, direct onder de inleiding.
+      {/* Vier echte foto's, direct onder de inleiding.
           De pagina legde tot nu toe uit hoe het wérkt — met een doorsnede en een
           prijstabel — maar liet niet zien wat je krijgt. Bij een product dat
           verkocht wordt op hoe het eruitziet, is dat de verkeerde volgorde.
@@ -271,8 +250,13 @@ export default function OnzichtbaarKozijnPage() {
           zodat het beeld niet alleen mooi is maar ook iets zegt. */}
       <section style={{ margin: '34px 0 8px' }}>
         <div style={{ display: 'grid', gap: 14,
-          gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))' }}>
+          gridTemplateColumns: 'repeat(auto-fit,minmax(170px,1fr))' }}>
           {[
+            { src: 'deur-wandkleur-gelijk',
+              alt: 'Plafondhoge deur in exact dezelfde grijze wandafwerking als de muur eromheen; '
+                 + 'alleen een dunne schaduwvoeg laat zien waar de deur zit',
+              bij: 'Deur en wand in dezelfde kleur: zonder kozijn en architraaf blijft alleen de '
+                 + 'schaduwvoeg over.' },
             { src: 'deur-eiken-fineer',
               alt: 'Plafondhoge binnendeur in eikenfineer, vlak in een witte wand, met een smalle '
                  + 'schaduwvoeg rondom en een houten vloer die onder de deur doorloopt',
@@ -398,12 +382,37 @@ export default function OnzichtbaarKozijnPage() {
       </p>
       <div style={{ display: 'grid', gap: 12 }}>
         {MERKEN.map((m) => (
-          <div key={m.naam} style={{ ...KAART, padding: '18px 22px' }}>
+          <div key={m.naam} style={{
+            ...KAART, padding: '18px 22px',
+            ...(m.korting ? { border: `1.5px solid ${GROEN}`, background: '#F4F7F2' } : {}),
+          }}>
             <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
               <h3 style={{ ...H3, margin: 0 }}>{m.naam}</h3>
               <span style={{ ...LABEL, fontSize: 11 }}>{m.land}</span>
+              {m.korting && (
+                <span style={{
+                  alignSelf: 'center', fontSize: 12, fontWeight: 800, color: '#F5F0E8', background: GROEN,
+                  borderRadius: 999, padding: '3px 10px', letterSpacing: '0.01em',
+                }}>{m.korting.kort}</span>
+              )}
             </div>
             <p style={{ ...P, margin: '6px 0 0', fontSize: 14.5 }}>{m.wat}</p>
+            {m.korting && (
+              <>
+                <p style={{ ...P, margin: '10px 0 0', fontSize: 14.5, color: '#1A1208' }}>{m.korting.lang}</p>
+                <p style={{ margin: '12px 0 0', display: 'flex', gap: 18, flexWrap: 'wrap', alignItems: 'center' }}>
+                  <a href={m.korting.url} style={{
+                    display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 10,
+                    padding: '10px 18px', fontWeight: 800, fontSize: 14, textDecoration: 'none',
+                  }}>Claim je korting &rarr;</a>
+                  {m.pagina && (
+                    <a href={m.pagina} style={{ color: GROEN, fontWeight: 700, fontSize: 14 }}>
+                      {`Meer over ${m.naam} \u2192`}
+                    </a>
+                  )}
+                </p>
+              </>
+            )}
           </div>
         ))}
       </div>
