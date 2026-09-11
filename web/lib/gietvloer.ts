@@ -10,6 +10,7 @@
 import type { Metadata } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
+import { opRaster } from './raster'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'gietvloer'
@@ -391,7 +392,7 @@ function readHub(slug: string): string {
 // (self-contained, alleen 'index' in dit cluster).
 export function getMainHtml(page: GietvloerPage): string {
   if (page.content_kind === 'city') return getCityHtml(page)
-  if (page.content_kind === 'bedrijf') return getBedrijfHtml(page)
+  if (page.content_kind === 'bedrijf') return opRaster(getBedrijfHtml(page))
   if (page.content_kind === 'register') return getRegisterHtml(page)
   return readHub(page.slug)
 }

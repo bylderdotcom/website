@@ -70,7 +70,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           + '@media(min-width:1021px){[style*="position:sticky;top:80px"],'
           + '[style*="position:sticky;top:84px"],[style*="position:sticky;top:90px"],'
           + '[style*="position:sticky;top:96px"],[style*="position:sticky;top:100px"],'
-          + '.sidebar-card{top:120px!important}}' }} />
+          + '.sidebar-card{top:120px!important}}'
+          /* Vakbedrijfprofielen op het raster van het menu (zie lib/raster.ts):
+             container = menuraster (1200px, zelfde zijmarge als het menu per
+             schermbreedte), inhoud even breed als voorheen maar links. */
+          + '.container.bv-raster{max-width:1200px;padding:0 24px;box-sizing:border-box}'
+          + '.container.bv-raster>*{max-width:824px}'
+          + '@media(max-width:1020px){.container.bv-raster{padding:0 16px}}'
+          + '@media(max-width:420px){.container.bv-raster{padding:0 14px}}'
+          + '@media(max-width:359px){.container.bv-raster{padding:0 10px}}' }} />
       </head>
       <body style={{ margin: 0, background: '#F5F0E8', fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" }}>
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />

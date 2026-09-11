@@ -199,6 +199,9 @@ export default function Nav({ merken }: { merken: number }) {
         + '@media(max-width:1020px){.bv-top{display:none}.bv-desk{display:none}'
         + '.bv-deskl{display:none}.bv-burger{display:flex}}'
         + '@media(min-width:1021px){.bv-sheet{display:none}}'
+        // Net boven 1020px (iPad liggend) paste het volledige menu niet; tot 1180px
+        // wat minder ruimte tussen de items, zoals in bn2.css.
+        + '@media(min-width:1021px) and (max-width:1180px){.bv-desk{gap:16px}.bv-r{gap:10px!important}}'
         // De mobiele balk paste niet binnen 375px: logo + CTA + hamburger waren
         // samen breder dan het scherm, waardoor de hamburger buiten beeld viel
         // en de hele pagina horizontaal kon scrollen. !important omdat de maten
