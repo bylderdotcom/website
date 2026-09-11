@@ -14,14 +14,38 @@
  */
 export function zonderOudKopstuk(html: string): string {
   return html
-    .replace(/<nav[^>]*glass-nav[\s\S]*?<\/nav>/g, '')
-    // Het huidige menu (byl-nav2026) óók. De menu-veegronde van 27-08-2026 liep
-    // door data/ heen en verving de glass-nav in deze fragmenten door het
-    // nieuwe menu. Dat herkende de regel hierboven niet meer, dus op /kopen/ en
-    // /project/ stond het menu er sinds eind augustus twee keer: het echte uit
-    // de layout, en daaronder een ongestijld exemplaar vol blauwe links en losse
-    // vinkjes (gevonden 11-09-2026).
-    .replace(/<nav[^>]*byl-nav2026[\s\S]*?<\/nav>/g, '')
+    // Elk ingebakken hoofdmenu, in alle drie de generaties die in deze
+    // fragmenten voorkomen: de glass-nav van vóór juli, het .ni-menu uit de
+    // kopen- en project-sjablonen ("Voordelen · Vouchers · Kopen · Prijzen"),
+    // en het huidige byl-nav2026-menu dat de veegronde van 27-08-2026 in data/
+    // schreef. De layout levert het echte menu; dat heeft geen aria-label, dus
+    // het kan hier niet per ongeluk mee. Kruimelpaden (aria-label="Kruimelpad")
+    // blijven staan.
+    //
+    // Tot 11-09-2026 herkende deze regel alleen de glass-nav. Op /kopen/ en
+    // /project/ stond daardoor sinds eind augustus een ongestijld tweede menu,
+    // en op alle ~33.000 kopen-pagina's lag het .ni-menu over het echte heen.
+    //
+    // Met het menu gaat ook het lege afstandsblok erna weg (<div
+    // style="padding-top:88px">). Dat hield ruimte vrij onder het oude, vaste
+    // menu; het echte menu neemt zijn eigen ruimte in. Het komt in 136
+    // fragmenten voor, steeds direct na het menu en nergens anders.
+    .replace(/<nav\b[^>]*(?:glass-nav|byl-nav2026|aria-label="Hoofdnavigatie")[^>]*>[\s\S]*?<\/nav>(?:\s*<div style="padding-top:\d+px"><\/div>)?/g, '')
     .replace(/<div class="mobile-nav"[\s\S]*?<\/div>/g, '')
     .replace(/<script>[\s\S]{0,200}?function toggleMobile[\s\S]*?<\/script>/g, '')
+}
+
+/**
+ * Haalt de kale `nav{...}`-regel uit de sjabloon-CSS.
+ *
+ * De oudere kopen- en project-sjablonen stijlen hun eigen menu met een
+ * tag-selector: nav{position:fixed;height:64px;display:flex;padding:0 5%}.
+ * Dat menu knippen we weg, maar de regel bleef staan en greep het échte menu
+ * uit de layout: platgedrukt tot 64px hoog, bovenbalk en hoofdbalk naast
+ * elkaar, de knop rechts van het scherm af.
+ */
+export function zonderKaleNavRegel(css: string): string {
+  // Alleen een regel waarvan de selector precies 'nav' is (na '}', '{' of aan
+  // het begin). 'header nav{…}' of '.mobile-nav{…}' blijven dus staan.
+  return css.replace(/(^|[{}])\s*nav\s*\{[^}]*\}/g, '$1')
 }
