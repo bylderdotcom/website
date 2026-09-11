@@ -262,6 +262,11 @@ MOBIEL_VANGNET = '''
 # tag, 20 via .sidebar-card (die klasse is overal sticky). Alleen boven 1020px:
 # daaronder is het menu 61px en past het ruim.
 STICKY_ONDER_MENU = """
+/* Net boven 1020px (iPad liggend: 1024) paste het volledige menu niet: het
+   stak 18px buiten beeld en de pagina schoof mee. Tot 1180px wat minder ruimte
+   tussen de items; er verdwijnt niets uit het menu. */
+@media(min-width:1021px) and (max-width:1180px){.bn2-desk{gap:16px}.bn2-r{gap:10px}}
+
 /* De /nieuwbouw/-pagina's (396) zetten de standaardmarge van de browser niet op
    nul: balk en menu stonden 8px van de rand. Elke andere pagina met dit menu
    heeft al margin:0 (gemeten 11-09-2026), dus dit raakt alleen die 396. */
