@@ -23,8 +23,11 @@ import os
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-# /data/ niet aanraken: dat zijn bronfragmenten die de Next-clusters inlezen,
-# geen pagina's die een bezoeker krijgt (web/build.sh kopieert de map niet).
+# /data/ niet aanraken: dat zijn bronfragmenten die de Next-clusters inlezen.
+# Een menu daarin wordt bij het inlezen weggeknipt (web/lib/oud-kopstuk.ts) —
+# de layout levert het echte. Toen deze pass die fragmenten wél herschreef,
+# herkende het knipwerk het nieuwe menu niet en stond het op /kopen/ en
+# /project/ dubbel (27-08 t/m 11-09-2026).
 EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/', '/data/')
 
 # Mappen waarvan Next de pagina's genereert. web/build.sh kopieert de statische
@@ -120,8 +123,12 @@ MENUS = [
         ('/kortingscode/', 'Kortingscodes per merk', None, False),
         ('/showroomsale/', 'Showroomsale', None, False),
     ]),
+    # Tot 11-09-2026 stond hier 'Word verkooppunt van het gecureerde
+    # assortiment — op uitnodiging'. Dat klopt niet meer: het lidmaatschap van
+    # €79 staat open voor elk vakbedrijf. Zelfde tekst als in Nav.tsx, zodat
+    # statische pagina's en Next-routes hetzelfde beloven.
     ('Zakelijk', False, [
-        ('/inkoopvoordeel/', 'Inkoopvoordeel voor vakbedrijven', 'Word verkooppunt van het gecureerde assortiment — op uitnodiging', True),
+        ('/inkoopvoordeel/', 'Inkoopvoordeel voor vakbedrijven', 'Inkoopkorting én verdienen aan wat je klant koopt — €79 per jaar', True),
         ('/deelnemer-worden/', 'Deelnemer worden', 'Bereik kopers op het juiste koopmoment', True),
         ('/deelnemer-worden/commercieel-vastgoed/', 'Commercieel vastgoed', None, False),
         ('/voor-vakbedrijven/', 'Voor vakbedrijven', None, False),

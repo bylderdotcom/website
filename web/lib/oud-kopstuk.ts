@@ -15,6 +15,13 @@
 export function zonderOudKopstuk(html: string): string {
   return html
     .replace(/<nav[^>]*glass-nav[\s\S]*?<\/nav>/g, '')
+    // Het huidige menu (byl-nav2026) óók. De menu-veegronde van 27-08-2026 liep
+    // door data/ heen en verving de glass-nav in deze fragmenten door het
+    // nieuwe menu. Dat herkende de regel hierboven niet meer, dus op /kopen/ en
+    // /project/ stond het menu er sinds eind augustus twee keer: het echte uit
+    // de layout, en daaronder een ongestijld exemplaar vol blauwe links en losse
+    // vinkjes (gevonden 11-09-2026).
+    .replace(/<nav[^>]*byl-nav2026[\s\S]*?<\/nav>/g, '')
     .replace(/<div class="mobile-nav"[\s\S]*?<\/div>/g, '')
     .replace(/<script>[\s\S]{0,200}?function toggleMobile[\s\S]*?<\/script>/g, '')
 }
