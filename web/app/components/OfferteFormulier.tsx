@@ -79,7 +79,6 @@ export default function OfferteFormulier(p: {
           naam: waarde('naam'), email: waarde('email'), telefoon: waarde('telefoon'),
           postcode: waarde('postcode'), plaats: waarde('plaats'),
           planning: waarde('planning'), toelichting: waarde('toelichting'),
-          toestemming_delen: f.get('toestemming') === 'on',
           website: waarde('website'),
           seconden: Math.round((Date.now() - geopend.current) / 1000),
         }),
@@ -118,13 +117,6 @@ export default function OfferteFormulier(p: {
       {/* Honeypot: onzichtbaar voor mensen, bots vullen hem in. */}
       <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true"
         style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }} />
-      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: 13.5, lineHeight: 1.55, color: `${INKT}0.8)`, cursor: 'pointer' }}>
-        <input type="checkbox" name="toestemming" required style={{ width: 18, height: 18, marginTop: 2, flexShrink: 0 }} />
-        <span>
-          Bylder mag mijn aanvraag en contactgegevens delen met het vakbedrijf dat de offerte maakt. Bylder bemiddelt en krijgt daarvoor een vergoeding van dat bedrijf.{' '}
-          <a href="/privacy/" style={{ color: ROEST }}>Privacy</a>
-        </span>
-      </label>
       <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
         <button type="submit" disabled={bezig} style={{
           background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 15, padding: '12px 22px',
@@ -132,6 +124,12 @@ export default function OfferteFormulier(p: {
         }}>{bezig ? 'Bezig met versturen…' : 'Verstuur aanvraag'}</button>
         <span style={{ fontSize: 12.5, color: `${INKT}0.55)` }}>Gratis en vrijblijvend</span>
       </div>
+      {/* Informeren, niet vragen: doorgeven aan het vakbedrijf is nodig om de
+          gevraagde offerte te maken (AVG art. 6 lid 1b), dus geen vinkje. */}
+      <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: 0, lineHeight: 1.55 }}>
+        We geven je aanvraag door aan het vakbedrijf dat de offerte maakt.{' '}
+        <a href="/privacy/" style={{ color: `${INKT}0.7)` }}>Privacy</a>
+      </p>
       {fout && (
         <p role="alert" style={{ fontSize: 13.5, color: ROEST, margin: 0, lineHeight: 1.55 }}>
           {fout} Je kunt je aanvraag ook <a href={p.mailFallback} style={{ color: ROEST, fontWeight: 700 }}>per mail sturen</a>.
