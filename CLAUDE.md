@@ -3,6 +3,39 @@
 Statische/getemplatede pSEO-site voor nieuwbouwkopers in NL, gedeployed op Vercel.
 Het koper-dashboard + betalingen zitten in een **aparte** repo (`~/Documents/GitHub/app`, app.bylder.com). Deze repo = de publieke site.
 
+## Propositie: meerdere winkels, één traject — en bewust geen eigen showrooms
+
+Een koper koopt zijn gietvloer, zijn binnendeuren en zijn gordijnen vrijwel nooit in
+dezelfde winkel. Dat is geen ongemak dat we wegpoetsen, het is de reden dat Bylder
+bestaat: bij ons shopt iemand bij meerdere winkels binnen één traject, in plaats van
+bij elke winkel opnieuw te beginnen.
+
+Daar komt bovenop wat een losse winkel niet kan bieden:
+- **Prijs door volume.** We kopen namens veel kopers in, dus prijs en voorwaarden zijn
+  beter dan wat iemand alleen bedingt.
+- **Een adviseur die tussen winkels beweegt.** Wil je in een gietvloershowroom je
+  favoriete gordijnstaal naast de vloer houden om te zien of het klopt? Dan regelt onze
+  adviseur dat. Dat is precies het werk dat geen enkele winkel voor de winkel van een
+  ander doet — en het is niet na te maken met software alleen.
+
+**Geen eigen showrooms — bewust besluit.** Eigen Huis, Decorette en soortgelijke ketens
+draaien dezelfde business op eigen vastgoed en eigen voorraad. Te kapitaalintensief. Wij
+gaan naar dezelfde omzet, maar slimmer: we ontsluiten de showrooms die er al staan in
+plaats van ze te bouwen.
+
+**Consequentie voor de navigatie.** Er hoort een showroomoverzicht **per producttype** in
+de site: wil je gietvloeren zien, dan zijn dít de winkels om te bezoeken; voor
+binnendeuren die andere. Dat is tegelijk de inspiratielaag en de reden dat een koper bij
+ons begint in plaats van bij Google.
+
+**Wat er al ligt (gemeten 11-09-2026).** `data/winkels-publiek.json` bevat 1.841 winkels
+met categorie, rating, reviews en coördinaten — waaronder vloeren (123), keuken (182),
+verlichting (127), sanitair (114), tegel (100), verf (87), zonwering (86), bedden (66) en
+raamdecoratie (62, = gordijnen). Wat ontbreekt zijn juist de categorieën van onze eigen
+vlaggenschepen: **gietvloer en binnendeuren bestaan nog niet als categorie.** In de
+navigatie staat alleen `/showroomsale/` — geen showroomoverzicht. Het gat zit dus in de
+taxonomie en de navigatie, niet in het ontbreken van data.
+
 ## Stack (feiten)
 - Pre-rendered HTML-pagina's per content-cluster (mappen in de repo-root, bv. `nieuwbouw-gids/`, `kortingscode/`, `offerte-check/`, `en-us/`).
 - Content-generatie via **Python-scripts** in `scripts/` (`nieuwbouw_scraper.py`, `vakbedrijven_pipeline.py`, `winkels_mvp.py`) + JSON-data in `data/`.
