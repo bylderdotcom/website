@@ -52,6 +52,12 @@ const PLEKKEN = ['Hal', 'Woonkamer', 'Keuken', 'Slaapkamer', 'Badkamer', 'Bergin
 const GRONDVERF = '#E7E4DD'
 
 const INKT = 'rgba(61,46,30,'
+// Maten van het systeem in meters. Het blad ligt vlak met de wand; de kier is
+// wat je van een instuckozijn nog ziet.
+const MAAT = {
+  blad: 1.05, dikte: 0.05, plafond: 2.72, kier: 0.003, vloerkier: 0.008,
+  get hoogte() { return this.plafond - this.kier - this.vloerkier },
+}
 const GROEN = '#3D5A3E'
 const ROEST = '#B85C38'
 
@@ -189,24 +195,36 @@ export default function Configurator() {
     vul.position.set(2.5, 1.6, 2.2)
     sc.add(vul)
 
-    // Wand met opening. De deur zit ín de wand: geen kozijn, alleen een schaduwvoeg.
+    // Wand met opening. De deur zit ín de wand: het profiel is meegestukadoord,
+    // dus tussen blad en wand blijft alleen een kier van 3 mm, en het blad ligt
+    // vlak met het wandvlak. Eerder was de opening 1,13 m voor een blad van
+    // 1,05 m — 40 mm speling per kant, en die zag je.
     const wandMat = new THREE.MeshStandardMaterial({ color: '#A9A296', roughness: 0.98 })
     const wand = new THREE.Group()
-    const stukken: [number, number, number, number][] = [
-      // breedte, hoogte, x, y
-      [2.60, 2.72, -1.865, 1.36],
-      [2.60, 2.72, 1.865, 1.36],
-    ]
-    for (const [w, h, x, y] of stukken) {
-      const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, 0.12), wandMat)
-      m.position.set(x, y, -0.06)
+    const zij = MAAT.blad / 2 + MAAT.kier
+    for (const x of [-(zij + 1.30), zij + 1.30]) {
+      const m = new THREE.Mesh(new THREE.BoxGeometry(2.60, MAAT.plafond, 0.12), wandMat)
+      m.position.set(x, MAAT.plafond / 2, -0.06)
       m.receiveShadow = true
       wand.add(m)
     }
-    // Terugliggende dagkant: geeft de schaduwvoeg zijn diepte.
-    const dag = new THREE.Mesh(new THREE.BoxGeometry(1.14, 2.76, 0.10), 
+    // De aanslag achter de kier: daar valt het blad tegenaan, en daardoor kijk
+    // je door de kier niet de ruimte erachter in.
+    const aanslagMat = new THREE.MeshStandardMaterial({ color: '#2A2B2D', roughness: 0.5, metalness: 0.4 })
+    const aanslagB = 0.012 + MAAT.kier
+    for (const [w, h, x, y] of [
+      [aanslagB, MAAT.plafond, -zij + aanslagB / 2, MAAT.plafond / 2],
+      [aanslagB, MAAT.plafond, zij - aanslagB / 2, MAAT.plafond / 2],
+      [zij * 2, aanslagB, 0, MAAT.plafond - aanslagB / 2],
+    ] as [number, number, number, number][]) {
+      const a = new THREE.Mesh(new THREE.BoxGeometry(w, h, 0.012), aanslagMat)
+      a.position.set(x, y, -MAAT.dikte - 0.006)
+      wand.add(a)
+    }
+    // Wat je ziet als de deur op een kier staat: de ruimte erachter, donker.
+    const dag = new THREE.Mesh(new THREE.BoxGeometry(zij * 2 + 0.2, MAAT.plafond, 0.02),
       new THREE.MeshStandardMaterial({ color: '#4A453D', roughness: 1 }))
-    dag.position.set(0, 1.36, -0.13)
+    dag.position.set(0, MAAT.plafond / 2, -0.30)
     dag.receiveShadow = true
     wand.add(dag)
     sc.add(wand)
@@ -225,10 +243,10 @@ export default function Configurator() {
       clearcoat: 0.55, clearcoatRoughness: 0.35,
       normalScale: new THREE.Vector2(1.15, 1.15),
     })
-    const deur = new THREE.Mesh(new THREE.BoxGeometry(1.05, 2.70, 0.05), materiaal)
+    const deur = new THREE.Mesh(new THREE.BoxGeometry(MAAT.blad, MAAT.hoogte, MAAT.dikte), materiaal)
     deur.castShadow = true
     deur.receiveShadow = true
-    deur.position.set(0.525, 0, 0)          // t.o.v. het scharnierpunt
+    deur.position.set(MAAT.blad / 2, 0, -MAAT.dikte / 2)   // t.o.v. het scharnierpunt
     // De kruk. Bewust een vereenvoudigde vorm en geen ingescand model: de foto
     // in de keuzelijst toont het échte beslag, dit geeft alleen de plek, de maat
     // en de kleur van het metaal in de ruimte. Dat staat ook bij de pagina.
@@ -249,7 +267,7 @@ export default function Configurator() {
     deur.add(krukGroep)
 
     const scharnierpunt = new THREE.Group()
-    scharnierpunt.position.set(-0.525, 1.35, -0.02)
+    scharnierpunt.position.set(-MAAT.blad / 2, MAAT.vloerkier + MAAT.hoogte / 2, 0)
     scharnierpunt.add(deur)
     sc.add(scharnierpunt)
 
@@ -335,8 +353,13 @@ export default function Configurator() {
     const st = scene.current
     if (!st) return
     const links = huidig.scharnier === 'links'
-    st.scharnierpunt.position.x = links ? -0.525 : 0.525
-    st.deur.position.x = links ? 0.525 : -0.525
+    const buiten = huidig.richting === 'buiten'
+    st.scharnierpunt.position.x = links ? -MAAT.blad / 2 : MAAT.blad / 2
+    st.deur.position.x = links ? MAAT.blad / 2 : -MAAT.blad / 2
+    // Het scharnier zit aan de kant waar de deur heen draait. Draait hij om het
+    // midden van het blad, dan zwaait de achterhoek met 3 mm kier de wand in.
+    st.scharnierpunt.position.z = buiten ? 0 : -MAAT.dikte
+    st.deur.position.z = buiten ? -MAAT.dikte / 2 : MAAT.dikte / 2
     // Naar buiten = naar de kijker toe.
     const hoek = 0.23 * (huidig.richting === 'buiten' ? 1 : -1) * (links ? 1 : -1)
     st.doelHoek = hoek
@@ -455,7 +478,7 @@ export default function Configurator() {
           </button>
         </div>
         <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
-          Weergave op schaal, plafondhoog (2.700 mm). Het licht valt van linksboven &mdash;
+          Weergave op schaal: plafondhoog bij 2.720 mm, met een kier van 3 mm rond het blad. Het licht valt van linksboven &mdash;
           daarom verandert het groefpatroon als je een donkerder kleur kiest. Zet de wand in
           dezelfde kleur en bekijk hem op afstand: dan zie je waar dit systeem het voor doet,
           want zonder kozijn en architraaf worden deur en wand &eacute;&eacute;n vlak met alleen
