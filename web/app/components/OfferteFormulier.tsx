@@ -47,8 +47,8 @@ export default function OfferteFormulier(p: {
       <div role="status" style={{ background: 'rgba(61,90,62,0.07)', border: `1px solid rgba(61,90,62,0.25)`, borderRadius: 12, padding: '16px 18px' }}>
         <div style={{ fontWeight: 800, fontSize: 16, color: '#1A1208', marginBottom: 6 }}>Je aanvraag is binnen</div>
         <p style={{ fontSize: 14, lineHeight: 1.6, margin: 0, color: `${INKT}0.8)` }}>
-          Je krijgt een bevestiging per mail. We zoeken een vakbedrijf dat dit bij jou kan maken en nemen daarna contact met je op.
-          De offerte komt van dat vakbedrijf. Ga je akkoord, dan sluit je de opdracht met hen, niet met Bylder.
+          Je krijgt een bevestiging per mail, met een knop naar je aanvraag in je Bylder-account. Daar zie je ook hoe het ermee staat.
+          We zoeken een vakbedrijf dat dit bij jou kan maken. De offerte komt van dat bedrijf; ga je akkoord, dan sluit je de opdracht met hen, niet met Bylder.
         </p>
       </div>
     )
