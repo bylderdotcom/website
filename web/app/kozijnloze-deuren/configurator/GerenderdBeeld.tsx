@@ -71,10 +71,10 @@ function laad(src: string) {
   })
 }
 
-type Staat = { gl: WebGLRenderingContext; prog: WebGLProgram; tex: WebGLTexture[] }
+type Staat = { gl: WebGLRenderingContext; prog: WebGLProgram; tex: WebGLTexture[]; lutKlaar: Promise<void> }
 
 export default function GerenderdBeeld(
-  { ontwerp, kleurHex, spiegel }: { ontwerp: string; kleurHex: string; spiegel: boolean },
+  { ontwerp, kleurHex, spiegel, zichtbaar = true }: { ontwerp: string; kleurHex: string; spiegel: boolean; zichtbaar?: boolean },
 ) {
   const doek = useRef<HTMLCanvasElement>(null)
   const staat = useRef<Staat | null>(null)
@@ -110,11 +110,16 @@ export default function GerenderdBeeld(
       gl.uniform1i(gl.getUniformLocation(prog, n), i)
       return t
     })
-    staat.current = { gl, prog, tex }
-    laad(`${MAP}/agx-correctie.png`).then(b => {
+    // Tekenen mag pas als de correctiecurve er is. Zonder die curve leest de
+    // shader een lege textuur en wordt elke pixel zwart. Dat gebeurde toen de
+    // deurbeelden al in de cache zaten (terug van 3D, of een tweede bezoek) en
+    // dus sneller klaar waren dan deze curve.
+    const lutKlaar = laad(`${MAP}/agx-correctie.png`).then(b => {
       gl.activeTexture(gl.TEXTURE4); gl.bindTexture(gl.TEXTURE_2D, tex[4])
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, b)
-    }).catch(() => setFout(true))
+    })
+    lutKlaar.catch(() => setFout(true))
+    staat.current = { gl, prog, tex, lutKlaar }
   }, [])
 
   // Per ontwerp de vier beelden (één keer ophalen), per kleur alleen opnieuw tekenen.
@@ -124,7 +129,7 @@ export default function GerenderdBeeld(
     let weg = false
     setLaadt(true)
     cache.current[ontwerp] ??= Promise.all(['n0', 'n1', 'n2', 'schaal'].map(k => laad(`${MAP}/${ontwerp}-${k}.webp`)))
-    cache.current[ontwerp].then(beelden => {
+    Promise.all([cache.current[ontwerp], st.lutKlaar]).then(([beelden]) => {
       if (weg) return
       const { gl, prog, tex } = st
       beelden.forEach((b, i) => {
@@ -142,7 +147,11 @@ export default function GerenderdBeeld(
   }, [ontwerp, kleurHex, spiegel])
 
   return (
-    <div style={{ position: 'absolute', inset: 0, background: '#2A2723' }}>
+    // Blijft staan als de koper naar 3D wisselt, alleen onzichtbaar: zo hoeft er
+    // niets opnieuw geladen te worden en blijft het bij één WebGL-context. Elke
+    // wissel maakte er eerst een nieuwe bij, en browsers gooien bij te veel
+    // contexten de oudste weg.
+    <div aria-hidden={!zichtbaar} style={{ position: 'absolute', inset: 0, background: '#2A2723', display: zichtbaar ? 'block' : 'none' }}>
       <canvas ref={doek} aria-label="Gerenderde deur in de gekozen kleur"
         style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block',
                  opacity: laadt ? 0.35 : 1, transition: 'opacity .25s' }} />
