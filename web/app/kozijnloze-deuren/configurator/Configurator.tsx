@@ -8,6 +8,7 @@ import { ONTWERPEN, KLEUREN, AFWERKINGEN, FINEREN,
 import { maakTexturen } from './texturen'
 import KleurKiezer, { dichtstbijzijndeRal } from './KleurKiezer'
 import { KRUKKEN, SLOTEN, SCHARNIEREN } from './beslag'
+import OfferteFormulier from '../../components/OfferteFormulier'
 import GerenderdBeeld from './GerenderdBeeld'
 
 // Configurator voor kozijnloze deuren van Classic Next.
@@ -830,9 +831,9 @@ export default function Configurator() {
             {deuren.length === 1 ? 'Jouw specificatie' : `Jouw specificatie — ${deuren.length} deuren`}
           </h2>
           <p style={{ fontSize: 13.5, color: `${INKT}0.7)`, margin: '0 0 14px', lineHeight: 1.65 }}>
-            Wij sturen je configuratie door en komen met een offerte terug. Prijzen hangen af
-            van maat, wanddikte en afwerking &mdash; daarom staat er hier geen bedrag dat
-            straks niet klopt.
+            Wij zetten je configuratie uit bij een vakbedrijf dat dit systeem plaatst, en je krijgt
+            een offerte van hen. Prijzen hangen af van maat, wanddikte en afwerking &mdash; daarom
+            staat er hier geen bedrag dat straks niet klopt.
           </p>
           {spec && (
             <pre style={{ fontSize: 12.5, lineHeight: 1.7, background: `${INKT}0.04)`,
@@ -841,10 +842,16 @@ export default function Configurator() {
                           color: `${INKT}0.8)`, whiteSpace: 'pre-wrap' }}>{specTekst}</pre>
           )}
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            <a href={mail} style={{
-              background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5,
-              padding: '12px 20px', borderRadius: 11, textDecoration: 'none',
-            }}>Vraag een offerte aan</a>
+            <OfferteFormulier
+              product="kozijnloze-deur"
+              bron="configurator-deur"
+              specificatie={specTekst}
+              configuratie={{ deuren }}
+              hoeveelheden={{ deuren: deuren.length }}
+              terugkijkUrl={() => window.location.href}
+              mailFallback={mail}
+              toelichtingHint="Bijv. totaal aantal deuren in huis, wanddikte, nieuwbouw of verbouwing"
+            />
             <button onClick={() => setSpec(s => !s)} style={knop}>
               {spec ? 'Verberg specificatie' : 'Toon specificatie'}
             </button>
