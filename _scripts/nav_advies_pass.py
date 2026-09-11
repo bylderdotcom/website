@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Advies-pass (2026-08-29): voegt het menu 'Advies' toe aan de bn2-hoofdnav.
 
+OVERBODIG SINDS 11-09-2026. Advies staat nu in nav_pijlers_pass.py zelf, en ná
+Kortingsvouchers (besluit Daniel). Deze pass zet het ervóór; draaien zou de
+volgorde terugdraaien. main() weigert daarom zonder --toch.
+
 De Next-routes krijgen hun nav uit web/app/components/Nav.tsx; die is los
 bijgewerkt. De statische pagina's dragen elk hun eigen kopie van dezelfde nav
 (de bn2-variant uit de veegronde van eind augustus), dus daar moet het menu
@@ -83,6 +87,10 @@ def verwerk(h):
 
 
 def main():
+    if "--toch" not in sys.argv:
+        print("Overbodig: Advies zit sinds 11-09-2026 in nav_pijlers_pass.py. "
+              "Draai die. (Met --toch draait deze pass alsnog.)")
+        return
     gewijzigd = overgeslagen = zonder_nav = 0
     scheef = []
     for dirpath, dirnames, files in os.walk(ROOT):

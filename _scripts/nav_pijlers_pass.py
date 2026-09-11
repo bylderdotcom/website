@@ -102,6 +102,19 @@ MENUS = [
         ('/oplevering-nieuwbouw/', 'Oplevering &amp; 5%-regeling', None, False),
         ('/ruimtes/', 'Keuzes per ruimte', None, False),
     ]),
+    ('Kortingsvouchers', False, [
+        ('/vouchers/', f'Ledenkorting bij {aantal_merken()} merken', 'Auping, Goossens, DRT en meer — met een gratis account', True),
+        ('/vouchers/auping/', 'Auping: 10% + gratis leenbed', None, False),
+        ('/kortingscode/', 'Kortingscodes per merk', None, False),
+        ('/showroomsale/', 'Showroomsale', None, False),
+    ]),
+    # Tot 11-09-2026 stond hier 'Word verkooppunt van het gecureerde
+    # assortiment — op uitnodiging'. Dat klopt niet meer: het lidmaatschap van
+    # €79 staat open voor elk vakbedrijf. Zelfde tekst als in Nav.tsx, zodat
+    # statische pagina's en Next-routes hetzelfde beloven.
+    # Volgorde gelijk aan Nav.tsx: Kortingsvouchers vóór Advies (besluit Daniel,
+    # 11-09-2026). Tot die dag stond Advies hier ervóór.
+    #
     # Advies stond tot 11-09-2026 niet in dit script: nav_advies_pass.py voegde
     # het er op 29-08 achteraf aan toe. Daardoor was het 'canonieke' menu hier
     # verouderd, en een run van dit script haalde Advies weer weg van 8.271
@@ -117,16 +130,6 @@ MENUS = [
         ('/kopersbegeleiding/klimaat-vloerkoeling-nieuwbouw/', 'Klimaat &amp; vloerkoeling', None, False),
         ('/kopersbegeleiding/onafhankelijke-kopersbegeleider-bouwkundig/', 'Onafhankelijke kopersbegeleider', None, False),
     ]),
-    ('Kortingsvouchers', False, [
-        ('/vouchers/', f'Ledenkorting bij {aantal_merken()} merken', 'Auping, Goossens, DRT en meer — met een gratis account', True),
-        ('/vouchers/auping/', 'Auping: 10% + gratis leenbed', None, False),
-        ('/kortingscode/', 'Kortingscodes per merk', None, False),
-        ('/showroomsale/', 'Showroomsale', None, False),
-    ]),
-    # Tot 11-09-2026 stond hier 'Word verkooppunt van het gecureerde
-    # assortiment — op uitnodiging'. Dat klopt niet meer: het lidmaatschap van
-    # €79 staat open voor elk vakbedrijf. Zelfde tekst als in Nav.tsx, zodat
-    # statische pagina's en Next-routes hetzelfde beloven.
     ('Zakelijk', False, [
         ('/inkoopvoordeel/', 'Inkoopvoordeel voor vakbedrijven', 'Inkoopkorting én verdienen aan wat je klant koopt — €79 per jaar', True),
         # Stond al in Nav.tsx (de Next-routes), ontbrak hier tot 11-09-2026.
