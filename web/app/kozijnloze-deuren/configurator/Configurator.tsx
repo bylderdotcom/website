@@ -8,6 +8,7 @@ import { ONTWERPEN, KLEUREN, AFWERKINGEN, FINEREN,
 import { maakTexturen } from './texturen'
 import KleurKiezer, { dichtstbijzijndeRal } from './KleurKiezer'
 import { KRUKKEN, SLOTEN, SCHARNIEREN } from './beslag'
+import GerenderdBeeld from './GerenderdBeeld'
 
 // Configurator voor kozijnloze deuren van Classic Next.
 //
@@ -127,6 +128,9 @@ export default function Configurator() {
   // Dicht is waar het product om draait: dan zie je alleen nog de kier. Op een
   // kier laat zien dát het een deur is, open laat zien hoe hij draait.
   const [stand, setStand] = useState<'dicht' | 'kier' | 'open'>('kier')
+  // Gerenderd is de foto uit Blender, 3D is het model om aan te draaien. Twee
+  // vragen: "hoe ziet dit eruit" wil een foto, "hoe werkt dit" wil een model.
+  const [weergave, setWeergave] = useState<'foto' | '3d'>('foto')
   const [gekopieerd, setGekopieerd] = useState(false)
 
   const huidig = deuren[actief] ?? NIEUW
@@ -135,6 +139,7 @@ export default function Configurator() {
   const fineer = FINEREN.find(f => f.id === huidig.fineer) ?? FINEREN[0]
   const afwerking = AFWERKINGEN.find(a => a.id === huidig.afwerking) ?? AFWERKINGEN[1]
   const lakKleur = huidig.vrij || kleur.hex
+  const toonFoto = weergave === 'foto' && huidig.afwerking !== 'fineer'
   const krukModel = KRUKKEN.find(k => k.id === huidig.kruk) ?? KRUKKEN[0]
   const krukVar = krukModel.varianten.find(v => v.afwerking === huidig.krukAfwerking)
               ?? krukModel.varianten[0]
@@ -469,13 +474,38 @@ export default function Configurator() {
 
       {/* ── Het beeld ── */}
       <div>
-        <div ref={doek} style={{
-          // Vaste hoogte in plaats van een verhouding: met aspect-ratio plus
-          // max-height rekt de doos zich alsnog op tot ver buiten beeld, en dan
-          // staat de deur half onder de vouw.
-          width: '100%', height: 'min(68vh, 640px)', borderRadius: 16,
-          overflow: 'hidden', border: `1px solid ${INKT}0.12)`, background: '#EDE7DC',
-        }} />
+        <div style={{ position: 'relative', width: '100%', height: 'min(68vh, 640px)', borderRadius: 16,
+                      overflow: 'hidden', border: `1px solid ${INKT}0.12)`, background: '#EDE7DC' }}>
+          <div ref={doek} style={{
+            // Vaste hoogte in plaats van een verhouding: met aspect-ratio plus
+            // max-height rekt de doos zich alsnog op tot ver buiten beeld, en dan
+            // staat de deur half onder de vouw.
+            width: '100%', height: '100%',
+          }} />
+          {toonFoto && (
+            // In de render zit de kruk links, dus de scharnieren rechts. Kiest de
+            // koper scharnieren links, dan spiegelen we het beeld.
+            <GerenderdBeeld ontwerp={ontwerp.id} kleurHex={lakKleur} spiegel={huidig.scharnier === 'links'} />
+          )}
+        </div>
+        <div role="group" aria-label="Weergave" style={{ display: 'flex', gap: 4, margin: '10px 0 0' }}>
+          <button onClick={() => setWeergave('foto')} aria-pressed={toonFoto} disabled={huidig.afwerking === 'fineer'}
+            title={huidig.afwerking === 'fineer' ? 'Fineer volgt zodra de houtscans er zijn' : undefined}
+            style={{ ...(toonFoto ? knopAan : knop), opacity: huidig.afwerking === 'fineer' ? 0.45 : 1 }}>
+            Gerenderd
+          </button>
+          <button onClick={() => setWeergave('3d')} aria-pressed={!toonFoto} style={!toonFoto ? knopAan : knop}>
+            3D
+          </button>
+        </div>
+        {toonFoto ? (
+          <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
+            Gerenderd in Blender, met deur en wand in de kleur die je kiest en een kier van 3 mm &mdash;
+            zo ziet een instuckozijn eruit na het stucwerk. De kruk staat hier in zwart; je eigen keuze en
+            de draairichting zie je in 3D.
+          </p>
+        ) : (
+        <>
         <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', margin: '10px 0 0' }}>
           <button onClick={() => setWandGelijk(v => !v)} aria-pressed={wandGelijk}
             style={wandGelijk ? knopAan : knop}>
@@ -500,6 +530,8 @@ export default function Configurator() {
           een schaduwvoeg ertussen. Kleuren op scherm zijn een benadering; vraag een staal voor
           de definitieve keuze.
         </p>
+        </>
+        )}
       </div>
 
       {/* ── De keuzes ── */}
