@@ -393,9 +393,9 @@ function readHub(slug: string): string {
 // De <main>-HTML voor elk van de 4 pagina-vormen: city (bedrijvengrid), bedrijf
 // (profiel), register (A-Z-overzicht, Fase 2 link-architectuur) of hub
 // (self-contained, alleen 'index' in dit cluster).
-export function getMainHtml(page: LoodgieterPage): string {
+function getMainHtmlRuw(page: LoodgieterPage): string {
   if (page.content_kind === 'city') return getCityHtml(page)
-  if (page.content_kind === 'bedrijf') return opRaster(getBedrijfHtml(page))
+  if (page.content_kind === 'bedrijf') return getBedrijfHtml(page)
   if (page.content_kind === 'register') return getRegisterHtml(page)
   return readHub(page.slug)
 }
@@ -431,4 +431,9 @@ export function slugToSegments(slug: string): string[] {
 }
 export function segmentsToSlug(segments?: string[]): string {
   return segments && segments.length ? segments.join('/') : 'index'
+}
+
+// Elke paginasoort van dit cluster op het raster van het menu (lib/raster.ts).
+export function getMainHtml(page: LoodgieterPage): string {
+  return opRaster(getMainHtmlRuw(page))
 }
