@@ -27,6 +27,10 @@ const GROEN = '#3D5A3E'
 const ROEST = '#B85C38'
 const DONKER = '#1A1208'
 const APP = 'https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=kopen-vloeren'
+// Na het aanmelden direct naar de tekeningen: daar leest de app de vloer-m² per
+// ruimte uit een bouwtekening. Dat is vandaag de eerste stap van de gietvloertool.
+const TEKENING = 'https://app.bylder.com/registreer?next=%2Fdashboard%2Ftekeningen'
+  + '&utm_source=bylder-site&utm_campaign=kopen-vloeren-gietvloer'
 
 // Het aantal zaken en de kortingsband komen uit dezelfde bron als de pagina:
 // een getal dat met de hand in een beschrijving staat, loopt stil uit de pas.
@@ -247,6 +251,35 @@ export default function VloerenPagina() {
           ))}
         </div>
         <div><a href={APP} style={KNOP}>Maak een gratis account en activeer je korting &rarr;</a></div>
+      </section>
+
+      {/* ── gietvloer op je eigen plattegrond ──
+          Wat vandaag bestaat: de app leest de vloer-m² per ruimte uit een bouwtekening.
+          De fotorealistische gietvloertool bouwt daarop verder — zelfde aanpak als de
+          deurconfigurator, maar dan in de eigen ruimte van de koper. */}
+      <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 28,
+                        alignItems: 'center', background: DONKER, color: '#F5F0E8', borderRadius: 18,
+                        padding: 'clamp(24px,4vw,40px)' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div style={{ ...LABEL, color: '#E8A87C' }}>Gietvloer op je eigen plattegrond</div>
+          <h2 style={{ ...H2, color: '#F5F0E8', margin: 0 }}>
+            Upload je bouwtekening en zie wat een gietvloer bij jou kost
+          </h2>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+          <p style={{ ...P, color: 'rgba(245,240,232,0.8)' }}>
+            We lezen de vloer-m² per ruimte uit je tekening. Met de prijs per m² hieronder weet je dan
+            wat een gietvloer in jouw huis kost &mdash; per ruimte, niet per gemiddelde. Binnenkort zie je
+            hem ook in je eigen ruimte, in de kleur die je kiest.
+          </p>
+          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>
+            <a href={TEKENING} style={{ ...KNOP, background: '#F5F0E8', color: DONKER }}>Upload je tekening &rarr;</a>
+            <a href="/gietvloer/" style={{ color: '#E8A87C', fontWeight: 700, fontSize: 15 }}>Gietvloerleggers bij jou in de buurt</a>
+          </div>
+          <p style={{ fontSize: 12.5, color: 'rgba(245,240,232,0.55)', margin: 0 }}>
+            Uploaden is gratis. De automatische berekening is voor leden.
+          </p>
+        </div>
       </section>
 
       {/* ── per situatie ── */}
