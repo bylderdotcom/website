@@ -907,6 +907,41 @@ def offerte_check_slug_bestaat(vak_slug, stad_slug):
     return os.path.isdir(os.path.join(ROOT, "offerte-check", vak_slug, stad_slug))
 
 
+# Kozijnloze deuren raken drie vakken direct: de stukadoor stuukt het kozijn mee,
+# de timmerman stelt het, en een kozijnbedrijf levert het alternatief. Op die
+# pagina's is een verwijzing geen reclame maar het volgende dat de bezoeker moet
+# weten. Elders zou hij wél reclame zijn, dus daar staat hij niet.
+VERWANT_DEUR = {
+    "stukadoor": ("Stucwerk en kozijnloze deuren",
+        "Een onzichtbaar kozijn wordt in de wand gezet en mee&shy;gestukadoord: het profiel krijgt "
+        "stucgaas en verdwijnt in het wandvlak. Dat betekent dat de deur besteld moet zijn v&oacute;&oacute;rdat "
+        "de stukadoor komt &mdash; en dat de stukadoor weet dat er een profiel in de wand zit."),
+    "timmerman": ("Kozijnloze deuren stellen",
+        "Een instuckozijn wordt gesteld met verstelbare wandbeugels in plaats van gepast en geschaafd. "
+        "Dat is ander werk dan een traditioneel kozijn inbouwen, en het bepaalt hoe zuiver het vlak "
+        "na het stucwerk uitkomt."),
+    "kozijnbedrijf": ("Het alternatief: een kozijn dat je niet ziet",
+        "Naast traditionele binnenkozijnen bestaat het onzichtbare kozijn: een profiel dat in de wand "
+        "wordt meegestukadoord, waarna alleen een schaduwvoeg overblijft. Het wordt v&oacute;&oacute;r de "
+        "afbouw besloten, niet erna."),
+}
+
+
+def verwante_deur_blok(vak_slug, bron):
+    """Verwijzing naar de deurenlaag, alleen op de vakken die eraan raken."""
+    item = VERWANT_DEUR.get(vak_slug)
+    if not item:
+        return ""
+    kop, tekst = item
+    u = f"?utm_source=bylder-site&amp;utm_campaign={bron}"
+    return f'''
+  <h2 style="font-size:1.5rem;font-weight:800;margin:36px 0 6px;">{kop}</h2>
+  <p style="font-size:15px;color:rgba(61,46,30,0.72);line-height:1.75;max-width:680px;margin-bottom:10px;">{tekst}</p>
+  <p style="font-size:15px;margin:0;"><a href="/kozijnloze-deuren/{u}" style="color:#3D5A3E;font-weight:700;">Hoe een kozijnloze deur werkt en wat het kost</a>
+  &middot; <a href="/kozijnloze-deuren/configurator/{u}" style="color:#B85C38;font-weight:700;">zelf samenstellen</a></p>
+'''
+
+
 def build_city_page(vak, vak_slug, stad, lokaal):
     slug = _slug(stad); n = len(lokaal)
     base = f"/{vak_slug}"
@@ -954,6 +989,7 @@ def build_city_page(vak, vak_slug, stad, lokaal):
   <p style="font-size:13.5px;color:rgba(61,46,30,0.55);margin-bottom:6px;">Onafhankelijk overzicht, standaard op relevantie gesorteerd. Geverifieerde bedrijven hebben hun profiel geclaimd.</p>
   {directory_sortable(vak, lokaal)}
   {claim_cta(vak, stad)}
+  {verwante_deur_blok(vak_slug, f"vak-{vak_slug}-{slug}")}
 
   {keuzehulp_block(vak)}
 
@@ -1349,6 +1385,7 @@ def build_profile(vak, vak_slug, b, buren):
   <div class="highlight" style="margin-top:20px;">Bylder toont {p} <strong>neutraal</strong> en verkoopt zelf geen {vak['werk']}. We bundelen beoordelingsscores uit meerdere bronnen en linken door naar de volledige reviews bij de bron &mdash; zodat je een eerlijk beeld krijgt.</div>
 
   {claim_cta(vak, stad if has_stad else None)}
+  {verwante_deur_blok(vak_slug, f"profiel-{vak_slug}")}
 
   <h2 style="font-size:1.5rem;font-weight:800;margin:36px 0 6px;">Wat kost een {s} zoals {naam}?</h2>
   <p style="font-size:15px;color:rgba(61,46,30,0.62);margin-bottom:4px;max-width:680px;">{vak['prijs_band']} Reken zelf een indicatie uit &mdash; en check daarna gratis of je échte offerte marktconform is.</p>
