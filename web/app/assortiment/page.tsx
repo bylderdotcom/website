@@ -180,7 +180,7 @@ export default function AssortimentPage() {
       <p style={P}>
         Dit is de volledige structuur van het assortiment &mdash; ingedeeld zoals je een woning afwerkt,
         niet zoals een magazijn is ingericht. Per categorie staat de gids met marktprijzen al klaar;
-        het partneraanbod vullen we categorie voor categorie, op uitnodiging.
+        het partneraanbod vullen we categorie voor categorie.
       </p>
       <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))' }}>
         {GROEPEN.map((g) => (
@@ -202,17 +202,22 @@ export default function AssortimentPage() {
       <h2 style={H2}>Leveren aan Bylder-bewoners?</h2>
       <div style={KAART}>
         <p style={{ ...P, marginBottom: 14 }}>
-          Deelnemen kan op uitnodiging — wij laten een handvol bedrijven per vak per regio toe, zodat
-          elke deelnemer er ook echt iets aan heeft. Werk dat via Bylder binnenkomt, wordt door
-          deelnemers uitgevoerd; wij nemen het nooit zelf aan.
+          {/* Tot 11-09-2026 stond hier "op uitnodiging — een handvol bedrijven per vak per regio".
+              Besluit Daniel, 29 aug 2026: elk vakbedrijf kan meedoen, zonder uitnodiging en zonder
+              maximum per gebied (zie /inkoopvoordeel/). Voor merken en winkels staat hier alleen
+              wat /zakelijk/hoe-een-order-verloopt/ ook zegt. */}
+          Merken en winkels sluiten één overeenkomst en kiezen zelf aan welke onderdelen ze meedoen:
+          consumentenkorting, inkooptarief en verwijsvergoeding. Werk dat via Bylder binnenkomt, wordt
+          door deelnemers uitgevoerd; wij nemen het nooit zelf aan.
         </p>
         <a href="/deelnemer-worden/" style={{
           display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 11,
           padding: '13px 22px', fontWeight: 800, fontSize: 15, textDecoration: 'none',
-        }}>Meld je aan voor een uitnodiging</a>
+        }}>Deelnemer worden</a>
         <p style={{ ...P, margin: '14px 0 0', fontSize: 14 }}>
-          Vakbedrijf? Bekijk het <a href="/inkoopvoordeel/" style={{ color: GROEN, fontWeight: 700 }}>inkoopvoordeel</a> &mdash;
-          word verkooppunt van dit assortiment.
+          Vakbedrijf? Met het <a href="/inkoopvoordeel/" style={{ color: GROEN, fontWeight: 700 }}>inkoopvoordeel</a>{' '}
+          krijg je inkoopkorting én verdien je aan wat je klant koopt &mdash; €79 per jaar, open voor elk
+          vakbedrijf, zonder maximum per regio.
         </p>
       </div>
 
