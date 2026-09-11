@@ -124,6 +124,9 @@ export default function Configurator() {
   // Op afstand zie je pas of dat effect klopt. Van dichtbij beoordeel je de
   // groef, van een meter of vier de wand.
   const [veraf, setVeraf] = useState(false)
+  // Dicht is waar het product om draait: dan zie je alleen nog de kier. Op een
+  // kier laat zien dát het een deur is, open laat zien hoe hij draait.
+  const [stand, setStand] = useState<'dicht' | 'kier' | 'open'>('kier')
   const [gekopieerd, setGekopieerd] = useState(false)
 
   const huidig = deuren[actief] ?? NIEUW
@@ -199,7 +202,7 @@ export default function Configurator() {
     // dus tussen blad en wand blijft alleen een kier van 3 mm, en het blad ligt
     // vlak met het wandvlak. Eerder was de opening 1,13 m voor een blad van
     // 1,05 m — 40 mm speling per kant, en die zag je.
-    const wandMat = new THREE.MeshStandardMaterial({ color: '#A9A296', roughness: 0.98 })
+    const wandMat = new THREE.MeshStandardMaterial({ color: '#A9A296', roughness: 0.86 })
     const wand = new THREE.Group()
     const zij = MAAT.blad / 2 + MAAT.kier
     for (const x of [-(zij + 1.30), zij + 1.30]) {
@@ -240,7 +243,10 @@ export default function Configurator() {
     const materiaal = new THREE.MeshPhysicalMaterial({
       color: new THREE.Color(KLEUREN[0].hex),
       roughness: 0.42, metalness: 0.0,
-      clearcoat: 0.55, clearcoatRoughness: 0.35,
+      clearcoat: 0.1, clearcoatRoughness: 0.5,
+      // De studio-omgeving is feller dan een kamer met één raam; op volle
+      // sterkte weerspiegelt een donker blad hem als een lichte baan.
+      envMapIntensity: 0.4, specularIntensity: 0.35,
       normalScale: new THREE.Vector2(1.15, 1.15),
     })
     const deur = new THREE.Mesh(new THREE.BoxGeometry(MAAT.blad, MAAT.hoogte, MAAT.dikte), materiaal)
@@ -343,7 +349,10 @@ export default function Configurator() {
       // fabriekslak. Het verschil met 'gelakt' zit in de glans, niet in de kleur.
       m.color.set(lakKleur); m.roughness = 0.88; m.clearcoat = 0.0
     } else {
-      m.color.set(lakKleur); m.roughness = 0.42; m.clearcoat = 0.55
+      // Zijdeglans, geen hoogglans. Met meer glans weerkaatst een donker blad
+      // de lichte kamer en leest het als een lichte baan naast een matte wand —
+      // precies het effect dat een kozijnloze deur niet moet hebben.
+      m.color.set(lakKleur); m.roughness = 0.62; m.clearcoat = 0.06; m.clearcoatRoughness = 0.55
     }
     m.needsUpdate = true
   }, [lakKleur, huidig.afwerking])
@@ -361,9 +370,9 @@ export default function Configurator() {
     st.scharnierpunt.position.z = buiten ? 0 : -MAAT.dikte
     st.deur.position.z = buiten ? -MAAT.dikte / 2 : MAAT.dikte / 2
     // Naar buiten = naar de kijker toe.
-    const hoek = 0.23 * (huidig.richting === 'buiten' ? 1 : -1) * (links ? 1 : -1)
-    st.doelHoek = hoek
-  }, [huidig.scharnier, huidig.richting])
+    const mate = stand === 'dicht' ? 0 : stand === 'kier' ? 0.23 : 1.25
+    st.doelHoek = mate * (buiten ? 1 : -1) * (links ? 1 : -1)
+  }, [huidig.scharnier, huidig.richting, stand])
 
   // ── De kruk: kleur en kant ─────────────────────────────────────────────
   useEffect(() => {
@@ -476,6 +485,12 @@ export default function Configurator() {
             style={veraf ? knopAan : knop}>
             {veraf ? 'Van dichtbij' : 'Op afstand bekijken'}
           </button>
+          <span role="group" aria-label="Stand van de deur" style={{ display: 'inline-flex', gap: 4 }}>
+            {([['dicht', 'Dicht'], ['kier', 'Op een kier'], ['open', 'Open']] as const).map(([w, t]) => (
+              <button key={w} onClick={() => setStand(w)} aria-pressed={stand === w}
+                style={stand === w ? knopAan : knop}>{t}</button>
+            ))}
+          </span>
         </div>
         <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
           Weergave op schaal: plafondhoog bij 2.720 mm, met een kier van 3 mm rond het blad. Het licht valt van linksboven &mdash;
