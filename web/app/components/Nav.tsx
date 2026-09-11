@@ -188,8 +188,9 @@ export default function Nav({ merken }: { merken: number }) {
     // tag-selector nav{display:flex;height:64px;padding:0 5%}. Die greep dit menu
     // op ~33.000 kopen-pagina's en drukte het plat (gevonden 11-09-2026). Het
     // statische menu (bn2.css) verdedigt zich al zo; inline wint van elke
-    // stylesheet-regel zonder !important.
-    <nav style={{ position: 'sticky', top: 0, zIndex: 50, display: 'block', height: 'auto', minHeight: 0, padding: 0, margin: 0, background: 'rgba(245,240,232,0.92)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
+    // stylesheet-regel zonder !important. lineHeight om dezelfde reden: anders erft
+    // het menu de regelhoogte van de pagina en verschilt zijn hoogte per route.
+    <nav style={{ position: 'sticky', top: 0, zIndex: 50, display: 'block', height: 'auto', minHeight: 0, padding: 0, margin: 0, lineHeight: 1.7, background: 'rgba(245,240,232,0.92)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: `1px solid ${INKT}0.07)` }}>
       {/* Zichtbaarheid per schermbreedte in CSS, zodat de eerste render meteen
           klopt — geen desktopmenu-flits meer op mobiel. */}
       <style dangerouslySetInnerHTML={{ __html:
