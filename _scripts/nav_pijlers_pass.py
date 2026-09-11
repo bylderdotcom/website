@@ -23,7 +23,9 @@ import os
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/')
+# /data/ niet aanraken: dat zijn bronfragmenten die de Next-clusters inlezen,
+# geen pagina's die een bezoeker krijgt (web/build.sh kopieert de map niet).
+EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/', '/data/')
 
 # Mappen waarvan Next de pagina's genereert. web/build.sh kopieert de statische
 # site met `cp -a -n`, dus waar Next al een bestand schreef wint Next en wordt
@@ -51,6 +53,18 @@ BOVENBALK = [
     ('/renovatie/', 'Renovatie'),
     ('/kennisbank/', 'Kennisbank'),
 ]
+
+def aantal_merken():
+    """Aantal merken, uit data/deelnemers.json — dezelfde telling als
+    web/lib/merken.ts, zodat statische pagina's en Next-routes hetzelfde getal
+    tonen. Stond hier tot 11-09-2026 hard als '61': het aantal vouchers uit de
+    legacy-import, niet het aantal merken."""
+    import json
+    with open(os.path.join(ROOT, 'data', 'deelnemers.json'), encoding='utf-8') as fh:
+        d = json.load(fh)
+    lijst = d if isinstance(d, list) else d.get('deelnemers', [])
+    return len({x['naam'] for x in lijst if x.get('naam')})
+
 
 MENUS = [
     ('Assortiment', True, [
@@ -85,8 +99,23 @@ MENUS = [
         ('/oplevering-nieuwbouw/', 'Oplevering &amp; 5%-regeling', None, False),
         ('/ruimtes/', 'Keuzes per ruimte', None, False),
     ]),
+    # Advies stond tot 11-09-2026 niet in dit script: nav_advies_pass.py voegde
+    # het er op 29-08 achteraf aan toe. Daardoor was het 'canonieke' menu hier
+    # verouderd, en een run van dit script haalde Advies weer weg van 8.271
+    # pagina's. Nu staat het er zelf in; de Advies-pass is daarmee overbodig.
+    ('Advies', False, [
+        ('/kopersbegeleiding-nieuwbouw/', 'Woningregisseur', 'E&eacute;n plan voor verbouwen, afwerken en inrichten &mdash; gratis', True),
+        ('/kopersbegeleiding-nieuwbouw/#ai-kopersbegeleider', 'AI Kopersbegeleider', 'Direct antwoord op je meerwerk- en keuzevragen, 24/7', True),
+        ('/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/', 'Meerwerklijst controleren', None, False),
+        ('/kopersbegeleiding/sluitingsdata-meerwerk-deadlines/', 'Sluitingsdata &amp; deadlines', None, False),
+        ('/kopersbegeleiding/bouwkundig-meerwerk-indeling/', 'Bouwkundig &amp; indeling', None, False),
+        ('/kopersbegeleiding/elektra-lichtplan-nieuwbouw/', 'Elektra &amp; lichtplan', None, False),
+        ('/kopersbegeleiding/keuken-badkamer-casco-opleveren/', 'Keuken &amp; badkamer casco', None, False),
+        ('/kopersbegeleiding/klimaat-vloerkoeling-nieuwbouw/', 'Klimaat &amp; vloerkoeling', None, False),
+        ('/kopersbegeleiding/onafhankelijke-kopersbegeleider-bouwkundig/', 'Onafhankelijke kopersbegeleider', None, False),
+    ]),
     ('Kortingsvouchers', False, [
-        ('/vouchers/', 'Ledenkorting bij 61 merken', 'Auping, Goossens, DRT en meer — met een gratis account', True),
+        ('/vouchers/', f'Ledenkorting bij {aantal_merken()} merken', 'Auping, Goossens, DRT en meer — met een gratis account', True),
         ('/vouchers/auping/', 'Auping: 10% + gratis leenbed', None, False),
         ('/kortingscode/', 'Kortingscodes per merk', None, False),
         ('/showroomsale/', 'Showroomsale', None, False),
@@ -122,6 +151,98 @@ def dd_item(href, title, sub, primair):
 # (36k statisch + 67.710 Next-routes). Dat was 24 kB per pagina — 57% van een
 # gemiddelde pagina — en liet de Vercel-build op schijfruimte stuklopen
 # (ENOSPC, 6.304 MB output). Als klassen is dezelfde nav ~4 kB.
+# Vangnet-CSS voor smalle schermen. Hoort hier en niet los onder in bn2.css:
+# dat bestand is gegenereerd, en `--css` schreef handmatige toevoegingen zonder
+# waarschuwing weg. Alles wat op /bn2.css hoort te staan, staat dus in dit
+# script. Regenereren: python3 _scripts/nav_pijlers_pass.py --css
+MOBIEL_VANGNET = '''
+/* Mobiele balk past binnen het scherm (fix 10-09-2026). Logo + CTA + hamburger
+   waren samen breder dan 375px: de hamburger viel buiten beeld en de hele site
+   kon horizontaal scrollen. Drie trappen: compacter vanaf de mobiele nav,
+   kleinere CTA onder 420px, en krappe marges onder 360px. */
+@media(max-width:1020px){.bn2-mw{padding:13px 16px;gap:10px}.bn2-r{gap:10px}.bn2-cta{font-size:0.8125rem;padding:9px 14px}.bn2-bg{padding:6px 2px}}
+@media(max-width:420px){.bn2-mw{padding:12px 14px;gap:8px}.bn2-logo{gap:8px}.bn2-lt{font-size:16px}.bn2-r{gap:8px}.bn2-cta{font-size:0.75rem;padding:8px 12px}}
+@media(max-width:359px){.bn2-mw{padding:12px 10px}.bn2-logo{gap:6px}.bn2-lt{font-size:15px}.bn2-cta{padding:8px 10px}}
+
+/* ── Mobiel vangnet (10-09-2026) ────────────────────────────────────────────
+   Bijna de helft van de pagina's schoof op een telefoon horizontaal mee:
+   kaartenrijen die hard op twee of drie kolommen staan, brede tabellen en
+   blokken die niet mochten krimpen. De pagina's komen uit een reeks
+   generatoren en dragen hun opmaak in de tag zelf, dus dit staat hier
+   centraal in plaats van in duizenden bestanden.
+
+   Twee gewichten, met opzet. De regels voor opmaak-in-de-tag hebben
+   !important nodig, want anders wint het style-attribuut. De regels op
+   klassenamen hebben dat níét: bn2.css staat als laatste in de <head>, dus
+   die winnen vanzelf van de paginastijl — maar een pagina die zélf al een
+   mobiele indeling meebrengt (bv. twee kolommen onder 768px) houdt de zijne.
+   Alles alleen onder 720px; daarboven verandert er niets. */
+@media(max-width:720px){
+  [style*="grid-template-columns:1fr "],
+  [style*="grid-template-columns: 1fr "],
+  [style*="grid-template-columns:1.6fr"],
+  [style*="grid-template-columns:2fr 1fr"],
+  [style*="grid-template-columns:repeat(2,"],
+  [style*="grid-template-columns:repeat(3,"],
+  [style*="grid-template-columns:repeat(4,"],
+  [style*="grid-template-columns:repeat(5,"],
+  [style*="grid-template-columns: repeat(2,"],
+  [style*="grid-template-columns: repeat(3,"],
+  [style*="grid-template-columns: repeat(4,"]{grid-template-columns:1fr!important}
+
+  .grid,.grid-2,.grid-3,.grid-4,.grid-5,.stat-row,.art-grid,.aff-grid,
+  .hero-grid,.step-grid,.two-col,.kv,.kv-grid,.seg-grid,.tile-grid,.layout,
+  .further-grid,.verder-grid,.verder-lezen-grid,.read-more-grid,.cluster-grid,
+  .keuze-grid,.compare-grid,.price-grid,.name-row,.vent-grid,.footer-inner,
+  .footer-grid{grid-template-columns:1fr}
+
+  /* Een raster- of flexkind mag standaard niet kleiner dan zijn langste woord;
+     daardoor duwde één lange kop de hele pagina breder. */
+  *{min-width:0}
+  /* Een kaart met min-width:280px past niet op een scherm van 320px. */
+  [style*="min-width:2"],[style*="min-width:3"],[style*="min-width:4"],
+  [style*="min-width:5"],[style*="min-width:6"],[style*="min-width:7"],
+  [style*="min-width:8"],[style*="min-width:9"],
+  [style*="min-width: 2"],[style*="min-width: 3"],[style*="min-width: 4"],
+  [style*="min-width: 5"],[style*="min-width: 6"]{min-width:0!important}
+  /* Een kop van 40px met een woord als 'verbouwingskosten' is breder dan een
+     telefoon. Nederlands breekt netjes af zolang de pagina lang=nl heeft. */
+  h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}
+  body{overflow-wrap:break-word}
+  /* Brede prijstabellen schuiven binnen hun eigen kader, niet de pagina. */
+  table,table[class],table[style]{display:block;max-width:100%;overflow-x:auto}
+  table[style*="min-width"],table[style*="min-width"] *{min-width:0!important}
+}
+
+/* ── Oude navigatie op smalle telefoons (11-09-2026) ────────────────────────
+   87 pagina's dragen nog de navigatie van vóór het huidige menu (.glass-nav).
+   Die balk was 343px breed op een scherm van 320px: logo, de knop en het
+   menu-knopje pasten niet naast elkaar. Zelfde aanpak als bij de nieuwe balk:
+   compacter vanaf 420px, krapper vanaf 360px. Logo en woordmerk dragen hun
+   maten in de tag, vandaar !important. */
+@media(max-width:420px){
+  .nav-inner{padding:12px 14px!important}
+  .nav-inner>a{gap:8px!important}
+  .nav-inner>a>span{font-size:16px!important}
+  .nav-right{gap:8px!important}
+  .nav-cta{font-size:0.75rem!important;padding:8px 12px!important}
+  .nav-burger{padding:6px 2px!important}
+}
+@media(max-width:359px){
+  .nav-inner{padding:12px 10px!important}
+  .nav-inner>a{gap:6px!important}
+  .nav-inner>a>span{font-size:15px!important}
+  .nav-cta{padding:8px 10px!important}
+}
+
+/* Een knop met een hele zin erin ('Activeer mijn Auping voucher →') stond op
+   nowrap en was daardoor 320px breed op een scherm van 320px. Op een telefoon
+   mag zo'n knop over twee regels. De balk-knop blijft wél op één regel. */
+@media(max-width:480px){
+  .btn-primary,.btn-secondary,.btn,.button{white-space:normal!important;max-width:100%}
+}
+'''
+
 CSS = (
     # De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte af van
     # of de pagina toevallig een globale reset meelevert; op content-box telt de
@@ -201,6 +322,7 @@ CSS = (
     f'box-shadow:0 0 0 8px rgba(245,240,232,.85)}}'
     f'@media (prefers-reduced-motion:reduce){{*{{animation-duration:.01ms!important;'
     f'transition-duration:.01ms!important;scroll-behavior:auto!important}}}}'
+    + MOBIEL_VANGNET
 )
 
 PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'
@@ -306,8 +428,80 @@ def zet_stylesheet_link(h):
     return h[:i] + LINKTAG + h[i:], True
 
 
+GATEN_BESTAND = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'nav_gaten.txt')
+
+
+def lees_gaten():
+    """Pagina's in een Next-map die Next zélf NIET wegschrijft.
+
+    Een map uit NEXT_ROUTES overslaan was te grof. Next rendert lang niet elk
+    pad in zo'n map: waar generateStaticParams niets oplevert, blijft het
+    statische bestand staan en krijgt de bezoeker dát te zien. Zo stonden 86
+    pagina's — bijna alle overgebleven vakbedrijfprofielen — maanden live met
+    het menu van vóór 26-08-2026, terwijl de veegronde ze overal elders had
+    vervangen (gevonden 11-09-2026).
+
+    De lijst komt van de live site: `--scan-gaten`. Hem met de hand bijwerken
+    heeft geen zin; opnieuw scannen wel, en _scripts/nav_bewaker.py meldt het
+    als hij scheef staat.
+    """
+    if not os.path.exists(GATEN_BESTAND):
+        return set()
+    with open(GATEN_BESTAND, encoding='utf-8') as fh:
+        return {r.strip() for r in fh if r.strip() and not r.startswith('#')}
+
+
+def scan_gaten(basis='https://www.bylder.com'):
+    """Schrijft nav_gaten.txt: welke statische pagina's in een Next-map worden
+    echt uitgeleverd?
+
+    Gemeten op de live site, niet op een lokale build. Een volledige
+    `next build` schrijft ~68.000 pagina's en ~30 GB weg; op 11-09-2026 liep
+    daarmee de schijf van de Mac vol. De vraag is ook veel kleiner: alleen de
+    statische bestanden in een Next-map doen ertoe (een paar honderd hooguit),
+    en voor elk ervan zegt de live pagina het meteen — draagt hij Next's
+    /_next/static-bundels, dan rendert Next hem; zo niet, dan krijgt de bezoeker
+    het statische bestand.
+    """
+    import subprocess
+    from concurrent.futures import ThreadPoolExecutor
+    kandidaten = []
+    for top in NEXT_ROUTES:
+        pad0 = os.path.join(ROOT, top)
+        if not os.path.isdir(pad0):
+            continue
+        for dp, _dns, fns in os.walk(pad0):
+            if 'index.html' in fns:
+                kandidaten.append(os.path.relpath(os.path.join(dp, 'index.html'), ROOT))
+
+    def meet(pad):
+        url = basis.rstrip('/') + '/' + pad[:-len('index.html')]
+        html = subprocess.run(['curl', '-s', '-L', '--max-time', '25', url],
+                              capture_output=True, text=True).stdout
+        if not html:
+            return pad, 'onbereikbaar'
+        return pad, ('next' if '/_next/static' in html else 'statisch')
+
+    with ThreadPoolExecutor(8) as ex:
+        uitslag = list(ex.map(meet, kandidaten))
+    gaten = sorted(p for p, s in uitslag if s == 'statisch')
+    onbereikbaar = [p for p, s in uitslag if s == 'onbereikbaar']
+    with open(GATEN_BESTAND, 'w', encoding='utf-8') as fh:
+        fh.write('# Statische pagina\'s in een Next-map die Next NIET rendert, en die dus\n'
+                 '# gewoon worden uitgeleverd. Gemeten op de live site met:\n'
+                 '#   python3 _scripts/nav_pijlers_pass.py --scan-gaten\n')
+        fh.write('\n'.join(gaten) + '\n')
+    print(f'nav_gaten.txt: {len(gaten)} van {len(kandidaten)} statische pagina\'s '
+          f'in Next-mappen worden echt uitgeleverd')
+    if onbereikbaar:
+        print(f'  let op: {len(onbereikbaar)} niet bereikbaar, niet meegeteld:',
+              ', '.join(onbereikbaar[:5]))
+    return gaten
+
+
 def run(scope=None):
     root = os.path.join(ROOT, scope) if scope else ROOT
+    gaten = lees_gaten()
     files = []
     for dp, dns, fns in os.walk(root):
         rel = dp.replace(ROOT, '') + '/'
@@ -315,12 +509,14 @@ def run(scope=None):
             dns[:] = []
             continue
         top = rel.strip('/').split('/')[0]
-        if top in NEXT_ROUTES:
-            dns[:] = []
-            continue
         for fn in fns:
-            if fn == 'index.html':
-                files.append(os.path.join(dp, fn))
+            if fn != 'index.html':
+                continue
+            pad = os.path.relpath(os.path.join(dp, fn), ROOT)
+            # Next-mappen overslaan, behalve de paden die Next niet rendert.
+            if top in NEXT_ROUTES and pad not in gaten:
+                continue
+            files.append(os.path.join(dp, fn))
     done = 0
     for f in files:
         try:
@@ -341,7 +537,9 @@ if __name__ == '__main__':
     # --emit-css: schrijft de CSS als TS-constante naar stdout, zodat Nav.tsx
     # (de Next-routes) exact dezelfde vormgeving gebruikt als de statische
     # pagina's. Zie web/app/components/navCss.ts.
-    if '--emit-css' in sys.argv:
+    if '--scan-gaten' in sys.argv:
+        scan_gaten()
+    elif '--emit-css' in sys.argv:
         import json
         print("// GEGENEREERD uit _scripts/nav_pijlers_pass.py (CSS-constante) — niet met de hand")
         print("// bijwerken. De statische pagina's en de Next-routes moeten letterlijk dezelfde")

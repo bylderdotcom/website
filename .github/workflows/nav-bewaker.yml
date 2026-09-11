@@ -1,0 +1,51 @@
+name: Nav-bewaker (wekelijks)
+
+# Standing order (CLAUDE.md): loops draaien read-only en leveren reviewbare
+# output — geen auto-publish. Deze check vergelijkt elke uitgeleverde statische
+# pagina met het huidige menu (marker byl-nav2026) en opent bij afwijking een
+# issue.
+#
+# Waarom. De veegronde die het menu uitrolt slaat de mappen over waarvan Next de
+# pagina's rendert, maar Next rendert niet élk pad in zo'n map. Zo stonden 86
+# pagina's — bijna alle overgebleven vakbedrijfprofielen — maanden live met het
+# menu van vóór 26-08-2026, zonder dat iets het meldde (gevonden 11-09-2026).
+# Zodra er weer een cluster naar web/app/ verhuist, kan hetzelfde gat ontstaan.
+#
+# De live-steekproef vangt het andere geval: de repo klopt, maar de deploy loopt
+# achter.
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # maandag 07:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controleer het menu
+        id: check
+        run: |
+          set +e
+          python3 _scripts/nav_bewaker.py --live 200 | tee /tmp/nav.txt
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+      - name: Open issue bij afwijking
+        if: steps.check.outputs.exit == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITEL="Pagina's zonder het huidige menu ($(date +%F))"
+          gh issue create --title "$TITEL" \
+            --body "$(printf 'De wekelijkse nav-bewaker vond pagina'\''s die niet het huidige menu dragen.\n\n```\n%s\n```\n\nHerstellen:\n1. `python3 _scripts/nav_pijlers_pass.py --scan-gaten` (meet op de live site welke pagina'\''s Next niet rendert)\n2. `python3 _scripts/nav_pijlers_pass.py` en `python3 _scripts/nav_advies_pass.py`\n3. PR openen, preview bekijken, mergen.\n\nNiet lokaal `next build` draaien om dit te meten: dat schrijft ~30 GB weg.\n\nRapport: reports/nav-bewaker.json (artifact van deze run).' "$(cat /tmp/nav.txt)")" \
+            --label "nav-drift" || gh issue create --title "$TITEL" --body "Zie workflow-log."
+      - name: Upload rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nav-bewaker
+          path: reports/nav-bewaker.json
