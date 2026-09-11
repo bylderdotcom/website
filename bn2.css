@@ -84,3 +84,11 @@
 @media(max-width:480px){
   .btn-primary,.btn-secondary,.btn,.button{white-space:normal!important;max-width:100%}
 }
+
+/* Meescrollende blokken onder het menu houden (11-09-2026). */
+@media(min-width:1021px){
+  [style*="position:sticky;top:80px"],[style*="position:sticky;top:84px"],
+  [style*="position:sticky;top:90px"],[style*="position:sticky;top:96px"],
+  [style*="position:sticky;top:100px"],
+  .sidebar-card{top:120px!important}
+}
