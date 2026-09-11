@@ -250,6 +250,22 @@ MOBIEL_VANGNET = '''
 }
 '''
 
+# Meescrollende blokken (sticky zijbalken, prijskaarten) stonden op 80–100px van
+# de bovenkant. Dat paste onder het oude menu van ~64px, maar het huidige menu is
+# op desktop 104px hoog en blijft zelf ook staan — de bovenkant van zo'n kaart
+# gleed er 5–25px onder. Gemeten 11-09-2026: 554 pagina's met de waarde in de
+# tag, 20 via .sidebar-card (die klasse is overal sticky). Alleen boven 1020px:
+# daaronder is het menu 61px en past het ruim.
+STICKY_ONDER_MENU = """
+/* Meescrollende blokken onder het menu houden (11-09-2026). */
+@media(min-width:1021px){
+  [style*="position:sticky;top:80px"],[style*="position:sticky;top:84px"],
+  [style*="position:sticky;top:90px"],[style*="position:sticky;top:96px"],
+  [style*="position:sticky;top:100px"],
+  .sidebar-card{top:120px!important}
+}
+"""
+
 CSS = (
     # De nav brengt zijn eigen box-sizing mee. Zonder dit hangt de breedte af van
     # of de pagina toevallig een globale reset meelevert; op content-box telt de
@@ -330,6 +346,7 @@ CSS = (
     f'@media (prefers-reduced-motion:reduce){{*{{animation-duration:.01ms!important;'
     f'transition-duration:.01ms!important;scroll-behavior:auto!important}}}}'
     + MOBIEL_VANGNET
+    + STICKY_ONDER_MENU
 )
 
 PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'

@@ -63,7 +63,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           + '[style*="min-width: 6"]{min-width:0!important}'
           + 'h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}body{overflow-wrap:break-word}'
           + 'table,table[class],table[style]{display:block;max-width:100%;overflow-x:auto}'
-          + 'table[style*="min-width"],table[style*="min-width"] *{min-width:0!important}}' }} />
+          + 'table[style*="min-width"],table[style*="min-width"] *{min-width:0!important}}'
+          /* Meescrollende blokken onder het menu houden: het menu is op desktop
+             104px hoog en blijft staan, een kaart op 100px gleed eronder
+             (homepage, /3d-sfeerimpressie/). Gelijk aan bn2.css. */
+          + '@media(min-width:1021px){[style*="position:sticky;top:80px"],'
+          + '[style*="position:sticky;top:84px"],[style*="position:sticky;top:90px"],'
+          + '[style*="position:sticky;top:96px"],[style*="position:sticky;top:100px"],'
+          + '.sidebar-card{top:120px!important}}' }} />
       </head>
       <body style={{ margin: 0, background: '#F5F0E8', fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" }}>
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
