@@ -189,6 +189,10 @@ export default function BeursEigenHuis() {
           </div>
         </section>
 
+        {/* De configurator hoog, maar ná de kaartenknop en de afzender: de kaarten
+            blijven de hoofdzaak van deze pagina. */}
+        <ConfiguratorCTA marge="34px 0 10px" aanleiding="Classic Next staat op de beurs met deze deuren. Stel er alvast een samen, dan weet je bij de stand precies waar je het over hebt — en wat je wilt vragen." />
+
         {/* Hoe het werkt */}
         <section>
           <h2 style={H2}>Hoe je ze krijgt</h2>
@@ -226,8 +230,6 @@ export default function BeursEigenHuis() {
             kozijnloze deuren</a>.
           </p>
         </section>
-
-        <ConfiguratorCTA aanleiding="Classic Next staat op de beurs met deze deuren. Stel er alvast een samen, dan weet je bij de stand precies waar je het over hebt — en wat je wilt vragen." />
 
         {/* Vragen */}
         <section style={{ maxWidth: '68ch' }}>

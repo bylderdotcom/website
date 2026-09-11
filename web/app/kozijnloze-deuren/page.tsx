@@ -228,6 +228,13 @@ export default function OnzichtbaarKozijnPage() {
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Kozijnloze deuren: de deur verdwijnt in de wand
       </h1>
+
+      {/* De configurator is waar het geld wordt verdiend, dus hij staat direct
+          onder de kop, vóór de uitleg (Daniel, 11-09-2026: "hoger, opvallender,
+          met een visual"). Op een telefoon staat de knop zo in het eerste scherm. */}
+      <ConfiguratorCTA vroeg marge="22px 0 30px"
+        titel="Geef de deur dezelfde kleur als je wand"
+        aanleiding="Zonder kozijn en architraaf worden deur en wand één vlak. In de configurator kies je groefpatroon en kleur, en zie je het meteen." />
       <p style={{ ...P, fontSize: 17.5, maxWidth: '62ch' }}>
         Geen kozijn, geen architraaf, geen zichtbaar beslag — alleen een deurblad en een smalle schaduwvoeg.
         Ook wel <strong>kozijnloze deur</strong>, <strong>onzichtbare deur</strong> of{' '}
@@ -235,48 +242,7 @@ export default function OnzichtbaarKozijnPage() {
         waarom het moment waarop je kiest belangrijker is dan het merk dat je kiest.
       </p>
 
-      {/* Het geld wordt met de configurator verdiend, dus die staat boven de
-          uitleg en niet halverwege. De foto ernaast toont waar het systeem het
-          voor doet: deur en wand in dezelfde kleur, alleen een schaduwvoeg
-          ertussen. Dat is met woorden niet uit te leggen. */}
-      <section style={{ margin: '30px 0 10px' }}>
-        <div style={{ display: 'grid', gap: 20, alignItems: 'center',
-          gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))' }}>
-          <img
-            src="/img/classic-next/deur-wandkleur-gelijk.jpg"
-            srcSet="/img/classic-next/deur-wandkleur-gelijk-sm.jpg 560w, /img/classic-next/deur-wandkleur-gelijk.jpg 1120w"
-            sizes="(max-width:640px) 100vw, 50vw"
-            alt="Plafondhoge deur in exact dezelfde grijze wandafwerking als de muur eromheen; alleen een dunne schaduwvoeg laat zien waar de deur zit"
-            width={1120} height={1400} loading="eager" decoding="async"
-            style={{ width: '100%', height: 'auto', borderRadius: 14, display: 'block',
-                     background: '#EDE6D8' }} />
-          <div>
-            <p style={{ fontSize: 11.5, fontFamily: "'Space Mono',monospace",
-              textTransform: 'uppercase', letterSpacing: '0.08em', color: ROEST,
-              fontWeight: 700, margin: '0 0 8px' }}>Zelf samenstellen</p>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.022em',
-              margin: '0 0 10px', color: '#1A1208', textWrap: 'balance' }}>
-              Geef de deur dezelfde kleur als je wand
-            </h2>
-            <p style={{ ...P, fontSize: 15.5 }}>
-              Dat is waar dit systeem het voor doet: zonder kozijn en zonder architraaf
-              worden deur en wand &eacute;&eacute;n vlak, met alleen een schaduwvoeg ertussen.
-              In de configurator zet je de wand in de kleur van de deur en bekijk je het op
-              afstand &mdash; dan zie je pas of het klopt.
-            </p>
-            <p style={{ ...P, fontSize: 15.5, margin: '0 0 18px' }}>
-              Dertien groefpatronen, elke RAL-kleur, altijd plafondhoog. Je krijgt een
-              sluitende specificatie en wij komen met een offerte terug.
-            </p>
-            <a href="/kozijnloze-deuren/configurator/" style={{
-              display: 'inline-block', background: GROEN, color: '#F5F0E8', fontWeight: 800,
-              fontSize: 15.5, padding: '14px 26px', borderRadius: 12, textDecoration: 'none',
-            }}>Stel je deur samen &rarr;</a>
-          </div>
-        </div>
-      </section>
-
-      {/* Drie echte foto's, direct onder de inleiding.
+      {/* Vier echte foto's, direct onder de inleiding.
           De pagina legde tot nu toe uit hoe het wérkt — met een doorsnede en een
           prijstabel — maar liet niet zien wat je krijgt. Bij een product dat
           verkocht wordt op hoe het eruitziet, is dat de verkeerde volgorde.
@@ -284,8 +250,13 @@ export default function OnzichtbaarKozijnPage() {
           zodat het beeld niet alleen mooi is maar ook iets zegt. */}
       <section style={{ margin: '34px 0 8px' }}>
         <div style={{ display: 'grid', gap: 14,
-          gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))' }}>
+          gridTemplateColumns: 'repeat(auto-fit,minmax(170px,1fr))' }}>
           {[
+            { src: 'deur-wandkleur-gelijk',
+              alt: 'Plafondhoge deur in exact dezelfde grijze wandafwerking als de muur eromheen; '
+                 + 'alleen een dunne schaduwvoeg laat zien waar de deur zit',
+              bij: 'Deur en wand in dezelfde kleur: zonder kozijn en architraaf blijft alleen de '
+                 + 'schaduwvoeg over.' },
             { src: 'deur-eiken-fineer',
               alt: 'Plafondhoge binnendeur in eikenfineer, vlak in een witte wand, met een smalle '
                  + 'schaduwvoeg rondom en een houten vloer die onder de deur doorloopt',
