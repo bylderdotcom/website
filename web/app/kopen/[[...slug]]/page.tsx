@@ -9,7 +9,10 @@ import { getPages, getPage, getMainHtml, getShellCss, toMetadata, slugToSegments
 // al in de body) vervallen. Phosphor-iconfont zoals in de bron.
 
 export function generateStaticParams() {
-  return getPages().map(p => ({ slug: slugToSegments(p.slug) }))
+  // /kopen/vloeren/ heeft een eigen pagina (web/app/kopen/vloeren/page.tsx);
+  // die gaat voor, dus hier niet nog een keer genereren.
+  const EIGEN = new Set(['vloeren'])
+  return getPages().filter(p => !EIGEN.has(p.slug)).map(p => ({ slug: slugToSegments(p.slug) }))
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug?: string[] }> }): Promise<Metadata> {
