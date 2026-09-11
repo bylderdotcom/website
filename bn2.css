@@ -21,13 +21,10 @@
    mobiele indeling meebrengt (bv. twee kolommen onder 768px) houdt de zijne.
    Alles alleen onder 720px; daarboven verandert er niets. */
 @media(max-width:720px){
-  [style*="grid-template-columns:1fr 1fr"],
-  [style*="grid-template-columns: 1fr 1fr"],
+  [style*="grid-template-columns:1fr "],
+  [style*="grid-template-columns: 1fr "],
   [style*="grid-template-columns:1.6fr"],
-  [style*="grid-template-columns:1fr 1.5fr"],
   [style*="grid-template-columns:2fr 1fr"],
-  [style*="grid-template-columns:1fr 320px"],
-  [style*="grid-template-columns:1fr 300px"],
   [style*="grid-template-columns:repeat(2,"],
   [style*="grid-template-columns:repeat(3,"],
   [style*="grid-template-columns:repeat(4,"],
@@ -58,4 +55,32 @@
   /* Brede prijstabellen schuiven binnen hun eigen kader, niet de pagina. */
   table,table[class],table[style]{display:block;max-width:100%;overflow-x:auto}
   table[style*="min-width"],table[style*="min-width"] *{min-width:0!important}
+}
+
+/* ── Oude navigatie op smalle telefoons (11-09-2026) ────────────────────────
+   87 pagina's dragen nog de navigatie van vóór het huidige menu (.glass-nav).
+   Die balk was 343px breed op een scherm van 320px: logo, de knop en het
+   menu-knopje pasten niet naast elkaar. Zelfde aanpak als bij de nieuwe balk:
+   compacter vanaf 420px, krapper vanaf 360px. Logo en woordmerk dragen hun
+   maten in de tag, vandaar !important. */
+@media(max-width:420px){
+  .nav-inner{padding:12px 14px!important}
+  .nav-inner>a{gap:8px!important}
+  .nav-inner>a>span{font-size:16px!important}
+  .nav-right{gap:8px!important}
+  .nav-cta{font-size:0.75rem!important;padding:8px 12px!important}
+  .nav-burger{padding:6px 2px!important}
+}
+@media(max-width:359px){
+  .nav-inner{padding:12px 10px!important}
+  .nav-inner>a{gap:6px!important}
+  .nav-inner>a>span{font-size:15px!important}
+  .nav-cta{padding:8px 10px!important}
+}
+
+/* Een knop met een hele zin erin ('Activeer mijn Auping voucher →') stond op
+   nowrap en was daardoor 320px breed op een scherm van 320px. Op een telefoon
+   mag zo'n knop over twee regels. De balk-knop blijft wél op één regel. */
+@media(max-width:480px){
+  .btn-primary,.btn-secondary,.btn,.button{white-space:normal!important;max-width:100%}
 }

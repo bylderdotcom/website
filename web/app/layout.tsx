@@ -43,10 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
              tabellen en blokken die niet mogen krimpen maakten de pagina
              breder dan de telefoon. Alleen onder 720px. */
           + '@media(max-width:720px){'
-          + '[style*="grid-template-columns:1fr 1fr"],[style*="grid-template-columns: 1fr 1fr"],'
-          + '[style*="grid-template-columns:1.6fr"],[style*="grid-template-columns:1fr 1.5fr"],'
-          + '[style*="grid-template-columns:2fr 1fr"],[style*="grid-template-columns:1fr 320px"],'
-          + '[style*="grid-template-columns:1fr 300px"],[style*="grid-template-columns:repeat(2,"],'
+          + '[style*="grid-template-columns:1fr "],[style*="grid-template-columns: 1fr "],'
+          + '[style*="grid-template-columns:1.6fr"],'
+          + '[style*="grid-template-columns:2fr 1fr"],[style*="grid-template-columns:repeat(2,"],'
           + '[style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(4,"],'
           + '[style*="grid-template-columns:repeat(5,"],[style*="grid-template-columns: repeat(2,"],'
           + '[style*="grid-template-columns: repeat(3,"],[style*="grid-template-columns: repeat(4,"]'
