@@ -99,15 +99,28 @@ const SOORTEN = [
       + 'geluid tussen ruimtes.' },
 ]
 
-const MERKEN = [
+// Classic Next bovenaan, met de ledenkorting erbij (besluit Daniel, 11-09-2026).
+// De korting is dezelfde als op /kozijnloze-deuren/classic-next/ en staat daar
+// sinds de voucher op 'approved' staat (4 september 2026). Wordt de voucher ooit
+// ingetrokken: korting op null zetten, hier én op die pagina.
+type Merk = { naam: string; land: string; wat: string; pagina?: string; korting?: { kort: string; lang: string; url: string } }
+
+const MERKEN: Merk[] = [
+  { naam: 'Classic Next', land: 'Uden, NL',
+    wat: 'Complete kozijn-en-deurcombinatie met magneetslot en Basys-scharnieren, uit eigen werkplaats. '
+      + 'Deuren tot kamerhoog (2.700 mm), standaard 50 mm dik, elke RAL-kleur, ook als frameloos '
+      + 'schuifdeursysteem. Levert door heel Nederland en biedt meet- en montageservice op locatie.',
+    pagina: '/kozijnloze-deuren/classic-next/',
+    korting: {
+      kort: '5% ledenkorting',
+      lang: 'Leden van Bylder krijgen 5% korting op het assortiment van Classic Next. Je claimt de code '
+        + 'met een gratis account en laat hem zien bij je bestelling.',
+      url: 'https://app.bylder.com/dashboard/vouchers?utm_source=bylder-site&utm_campaign=kozijnloze-deuren-merken',
+    } },
   { naam: 'Xinnix', land: 'België', wat: 'X1, X2 en X3-profielen voor draaiend en schuivend. Het bekendste '
       + 'systeem in Nederland en België; veel dealers, dus makkelijk aan te komen.' },
   { naam: 'ECLISSE', land: 'Italië', wat: 'Sterk in schuifdeurcassettes (Syntesis) en kozijnloze draaideuren. '
       + 'Ruime keuze in wanddiktes.' },
-  { naam: 'Classic Next', land: 'Uden, NL',
-    wat: 'Complete kozijn-en-deurcombinatie met magneetslot en Basys-scharnieren, uit eigen werkplaats. '
-      + 'Deuren tot kamerhoog (2.700 mm), standaard 50 mm dik, elke RAL-kleur, ook als frameloos '
-      + 'schuifdeursysteem. Levert door heel Nederland en biedt meet- en montageservice op locatie.' },
 ]
 
 const VRAGEN = [
@@ -398,12 +411,37 @@ export default function OnzichtbaarKozijnPage() {
       </p>
       <div style={{ display: 'grid', gap: 12 }}>
         {MERKEN.map((m) => (
-          <div key={m.naam} style={{ ...KAART, padding: '18px 22px' }}>
+          <div key={m.naam} style={{
+            ...KAART, padding: '18px 22px',
+            ...(m.korting ? { border: `1.5px solid ${GROEN}`, background: '#F4F7F2' } : {}),
+          }}>
             <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
               <h3 style={{ ...H3, margin: 0 }}>{m.naam}</h3>
               <span style={{ ...LABEL, fontSize: 11 }}>{m.land}</span>
+              {m.korting && (
+                <span style={{
+                  alignSelf: 'center', fontSize: 12, fontWeight: 800, color: '#F5F0E8', background: GROEN,
+                  borderRadius: 999, padding: '3px 10px', letterSpacing: '0.01em',
+                }}>{m.korting.kort}</span>
+              )}
             </div>
             <p style={{ ...P, margin: '6px 0 0', fontSize: 14.5 }}>{m.wat}</p>
+            {m.korting && (
+              <>
+                <p style={{ ...P, margin: '10px 0 0', fontSize: 14.5, color: '#1A1208' }}>{m.korting.lang}</p>
+                <p style={{ margin: '12px 0 0', display: 'flex', gap: 18, flexWrap: 'wrap', alignItems: 'center' }}>
+                  <a href={m.korting.url} style={{
+                    display: 'inline-block', background: GROEN, color: '#F5F0E8', borderRadius: 10,
+                    padding: '10px 18px', fontWeight: 800, fontSize: 14, textDecoration: 'none',
+                  }}>Claim je korting &rarr;</a>
+                  {m.pagina && (
+                    <a href={m.pagina} style={{ color: GROEN, fontWeight: 700, fontSize: 14 }}>
+                      {`Meer over ${m.naam} \u2192`}
+                    </a>
+                  )}
+                </p>
+              </>
+            )}
           </div>
         ))}
       </div>
