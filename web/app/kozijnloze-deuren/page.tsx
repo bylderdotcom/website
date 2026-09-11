@@ -415,6 +415,13 @@ export default function OnzichtbaarKozijnPage() {
         werk met dít systeem, niet naar stucwerk in het algemeen.
       </p>
       <p style={P}>
+        Wie de lijn rond de deur weghaalt, wil vaak ook de lijn onderaan de wand kwijt. Een{' '}
+        <a href="/kennisbank/vloeren/plintloos-afwerken/" style={{ color: GROEN, fontWeight: 700 }}>onzichtbare plint</a>{' '}
+        wordt net als dit kozijn meegestukadoord, en met een{' '}
+        <a href="/kopen/vloeren/" style={{ color: GROEN, fontWeight: 700 }}>gietvloer</a>{' '}
+        loopt ook de vloer zonder naad door. Alle drie worden besloten voordat de stukadoor komt.
+      </p>
+      <p style={P}>
         <a href="/stukadoor/" style={{ color: GROEN, fontWeight: 700 }}>Stukadoors in jouw gemeente</a>
         {' · '}
         <a href="/aannemer/" style={{ color: GROEN, fontWeight: 700 }}>Aannemers</a>
