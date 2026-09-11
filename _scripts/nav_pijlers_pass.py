@@ -262,6 +262,11 @@ MOBIEL_VANGNET = '''
 # tag, 20 via .sidebar-card (die klasse is overal sticky). Alleen boven 1020px:
 # daaronder is het menu 61px en past het ruim.
 STICKY_ONDER_MENU = """
+/* De /nieuwbouw/-pagina's (396) zetten de standaardmarge van de browser niet op
+   nul: balk en menu stonden 8px van de rand. Elke andere pagina met dit menu
+   heeft al margin:0 (gemeten 11-09-2026), dus dit raakt alleen die 396. */
+body{margin:0}
+
 /* Meescrollende blokken onder het menu houden (11-09-2026). */
 @media(min-width:1021px){
   [style*="position:sticky;top:80px"],[style*="position:sticky;top:84px"],
@@ -280,8 +285,14 @@ CSS = (
     # display/height/padding/overflow expliciet: veel pSEO-templates hebben een
     # eigen kale tag-selector nav{display:flex;height:64px;position:fixed} voor
     # hun oude nav, die anders doorlekt.
+    #
+    # line-height ook: zonder eigen regelhoogte erfde het menu die van de pagina,
+    # en was het 94 tot 108px hoog afhankelijk van waar je stond (gemeten
+    # 11-09-2026 op 188 pagina's; de nieuwbouw-gemeentepagina's hebben
+    # line-height:normal en kwamen op 94px). 1.7 is wat de meeste pagina's
+    # hebben: het menu is nu overal 105px.
     f'.{MARKER}{{display:block;position:sticky;top:0;z-index:50;height:auto;min-height:0;'
-    f'margin:0;padding:0;overflow:visible;background:rgba(245,240,232,0.92);'
+    f'margin:0;padding:0;overflow:visible;line-height:1.7;background:rgba(245,240,232,0.92);'
     f'backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);'
     f'border-bottom:1px solid {INKT}0.07)}}'
     f'.{P}-top{{display:block;border-bottom:1px solid {INKT}0.06);background:#EDE6D8}}'
@@ -323,7 +334,7 @@ CSS = (
     f'padding:9px 18px;border-radius:9px;text-decoration:none;white-space:nowrap}}'
     f'.{P}-bg{{display:none;cursor:pointer;padding:6px;flex-direction:column;gap:4px}}'
     f'.{P}-bg i{{width:20px;height:2px;background:#1A1208;border-radius:2px;display:block}}'
-    f'.{P}-cb{{position:absolute;opacity:0;pointer-events:none}}'
+    f'.{P}-cb{{position:absolute;opacity:0;pointer-events:none;margin:0}}'
     f'.{P}-sheet{{display:none;border-top:1px solid {INKT}0.07);background:#F5F0E8;'
     f'padding:4px 24px 20px;flex-direction:column;max-height:78vh;overflow-y:auto}}'
     f'.{P}-det{{border-bottom:1px solid {INKT}0.08)}}'
