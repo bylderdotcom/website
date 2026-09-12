@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { rasterBinnen } from '../../lib/raster'
 
 // Getrouwe port van /eerlijke-prijzen/index.html (Fase 1B).
 // Nav + Footer komen uit de gedeelde root-layout; de oude in-page nav en de
@@ -102,6 +103,9 @@ const CSS = `
 .ep-main .tile:hover{border-color:rgba(61,90,62,0.4);}
 .ep-main .cta-primary{display:inline-block;background:#F5F0E8;color:#3D5A3E;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;}
 @media(max-width:768px){.ep-main .container{padding:0 20px;}.ep-main .grid-3{grid-template-columns:1fr;}}
+
+/* Container op het raster van het menu (zie lib/raster.ts). */
+${rasterBinnen('.ep-main')}
 `
 
 export default function EerlijkePrijzenPage() {

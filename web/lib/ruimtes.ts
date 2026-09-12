@@ -8,6 +8,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import { RASTER_CLUSTER_CSS } from './raster'
 
 const SITE = 'https://www.bylder.com'
 const REPO = path.join(process.cwd(), '..')
@@ -301,5 +302,5 @@ export function ldjsonVoor(r: Ruimte): string[] {
 export function getRuimteCss(): string {
   const tpl = fs.readFileSync(path.join(REPO, 'templates', 'clusters', 'ruimtes', 'template.default.html'), 'utf8')
   const m = tpl.match(/<style[^>]*>([\s\S]*?)<\/style>/)
-  return m ? m[1] : ''
+  return m ? m[1] + RASTER_CLUSTER_CSS : ''
 }

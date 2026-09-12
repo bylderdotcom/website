@@ -9,6 +9,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { metKennisbank } from './kennisbank-links'
 import { metKlussen } from './uitgevoerde-klussen'
+import { RASTER_CLUSTER_CSS } from './raster'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'nieuwbouw-project'
@@ -57,7 +58,8 @@ export function getClusterCss(): string {
   if (_css === null) {
     const tpl = fs.readFileSync(path.join(TPL_DIR, 'template.default.html'), 'utf8')
     const m = tpl.match(/<style[^>]*>([\s\S]*?)<\/style>/)
-    _css = m ? m[1] : ''
+    // Container op het raster van het menu (lib/raster.ts).
+    _css = m ? m[1] + RASTER_CLUSTER_CSS : ''
   }
   return _css
 }
