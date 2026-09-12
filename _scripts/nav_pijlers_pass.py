@@ -28,7 +28,12 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 # de layout levert het echte. Toen deze pass die fragmenten wél herschreef,
 # herkende het knipwerk het nieuwe menu niet en stond het op /kopen/ en
 # /project/ dubbel (27-08 t/m 11-09-2026).
-EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/', '/data/')
+# /.claude/ evenmin: daar staan de worktrees van andere sessies, elk met een
+# eigen kopie van de hele site. Zonder deze regel liep een veegronde in de ene
+# checkout de 8.361 pagina's van een ándere sessie binnen en zette daar een menu
+# neer dat op die tak niet bestond (12-09-2026).
+EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.git/',
+           '/data/', '/.claude/')
 
 # Mappen waarvan Next de pagina's genereert. web/build.sh kopieert de statische
 # site met `cp -a -n`, dus waar Next al een bestand schreef wint Next en wordt
