@@ -1,16 +1,36 @@
 {
-  "_uitleg": "Showroomgids: gecureerde showrooms per producttype met een geschreven reden om erheen te gaan. Vermeldingen komen van Daniel; feiten (adres, uren, oppervlakte, merken) van de eigen website van de showroom, met datum. Geen reviewteksten, geen eigendomsverhoudingen, geen partnerlabel tenzij Daniel dat per showroom zegt. 'tip' met status 'concept' is een voorzet uit de eigen site van de showroom en wacht op Daniels woorden.",
+  "_uitleg": "Showroomgids: gecureerde showrooms per producttype met een geschreven reden om erheen te gaan. Vermeldingen komen van Daniel; feiten (adres, uren, oppervlakte, merken) van de eigen website van de showroom, met datum. Geen reviewteksten, geen eigendomsverhoudingen, geen partnerlabel tenzij Daniel dat per showroom zegt. 'tip' met status 'concept' is een voorzet uit de eigen site van de showroom en wacht op Daniels woorden; de status staat alleen in de data, niet op de pagina. Pagina's zijn geïndexeerd (besluit Daniel 12-09-2026).",
   "types": [
-    { "slug": "gietvloeren", "naam": "Gietvloeren", "kopen": "/kopen/vloeren/",
-      "intro": "Een gietvloer kies je niet van een foto. Kleur, glans en de naadloosheid zie je pas als je erop staat, bij daglicht, naast je meubels." },
-    { "slug": "tegels", "naam": "Tegels", "kopen": "/kopen/tegels/",
-      "intro": "Tegels wil je in het groot zien, gelegd, buiten én binnen. Een staal van tien bij tien zegt weinig over een vloer van veertig vierkante meter." },
-    { "slug": "bedden", "naam": "Bedden & matrassen", "kopen": "/kopen/slaap-en-bedden/",
-      "intro": "Een bed koop je liggend. Neem een uur, lig op meer dan één matras en kom terug op een ander moment van de dag." },
-    { "slug": "meubelen", "naam": "Meubelen", "kopen": "/kopen/zitmeubelen/",
-      "intro": "Designmeubels in een echte ruimte, met echt licht, verraden meer dan een productfoto: de zithoogte, de stof onder je hand, de maat naast een tafel." },
-    { "slug": "bouwmaterialen", "naam": "Bouwmaterialen & doe-het-zelf", "kopen": "/kopen/",
-      "intro": "Voor wie zelf afwerkt: één adres waar de badkamer, de vloer, de verf en de bouwmaterialen naast elkaar staan, zodat je de keuzes in samenhang ziet." }
+    {
+      "slug": "gietvloeren",
+      "naam": "Gietvloeren",
+      "kopen": "/kopen/vloeren/",
+      "intro": "Een gietvloer kies je niet van een foto. Kleur, glans en de naadloosheid zie je pas als je erop staat, bij daglicht, naast je meubels."
+    },
+    {
+      "slug": "tuin-bestrating",
+      "naam": "Tuin & bestrating",
+      "kopen": "/kopen/tuin/",
+      "intro": "Bestrating en terrastegels wil je buiten zien liggen, in het echte weer en op ware grootte. Een staal van tien bij tien zegt weinig over een terras van veertig vierkante meter."
+    },
+    {
+      "slug": "bedden",
+      "naam": "Bedden & matrassen",
+      "kopen": "/kopen/slaap-en-bedden/",
+      "intro": "Een bed koop je liggend. Neem een uur, lig op meer dan één matras en kom terug op een ander moment van de dag."
+    },
+    {
+      "slug": "meubelen",
+      "naam": "Meubelen",
+      "kopen": "/kopen/zitmeubelen/",
+      "intro": "Designmeubels in een echte ruimte, met echt licht, verraden meer dan een productfoto: de zithoogte, de stof onder je hand, de maat naast een tafel."
+    },
+    {
+      "slug": "bouwmaterialen",
+      "naam": "Bouwmaterialen & doe-het-zelf",
+      "kopen": "/kopen/",
+      "intro": "Voor wie zelf afwerkt: één adres waar de badkamer, de vloer, de verf en de bouwmaterialen naast elkaar staan, zodat je de keuzes in samenhang ziet."
+    }
   ],
   "showrooms": [
     {
@@ -21,25 +41,36 @@
       "adres": "Vughterstraat 280, 5211 GT 's-Hertogenbosch",
       "website": "https://www.drt.nl/vestigingen/gietvloeren-den-bosch/",
       "telefoon": "073 612 12 03",
-      "lat": 51.6836, "lng": 5.2985,
+      "lat": 51.6836,
+      "lng": 5.2985,
       "uren": "ma 10–17 · di–vr 9:30–17:30 · za 10–17 · eerste zondag van de maand 12–17 (zonder adviseur)",
-      "feiten": ["ruim 850 m² gietvloeren en terrazzo", "vloeren gecombineerd met designmeubels van MisterDesign", "bezoek met afspraak mogelijk, adviseur kijkt mee op je tekening"],
+      "feiten": [
+        "ruim 850 m² gietvloeren en terrazzo",
+        "vloeren gecombineerd met designmeubels van MisterDesign",
+        "bezoek met afspraak mogelijk, adviseur kijkt mee op je tekening"
+      ],
       "tip": "Hier zie je gietvloer en terrazzo naast elkaar in ingerichte ruimtes, niet als staal aan de muur. Neem je plattegrond mee: de adviseur kijkt mee waar de vloer doorloopt en waar een overgang komt. Ga bij daglicht — glansgraad en kleur veranderen met het licht.",
       "tip_status": "concept",
       "bron_datum": "2026-09-12"
     },
     {
       "id": "swanenberg-den-bosch",
-      "type": "tegels",
+      "type": "tuin-bestrating",
       "naam": "Swanenberg",
       "plaats": "'s-Hertogenbosch",
       "adres": "Rosmalensedijk 10, 5236 BD 's-Hertogenbosch",
       "website": "https://swanenberg.nu/showtuin/",
       "telefoon": "073 521 37 15",
-      "lat": 51.7186, "lng": 5.3451,
+      "lat": 51.7186,
+      "lng": 5.3451,
       "uren": "ma–vr 8–17 · za 8–15:30",
-      "feiten": ["showroom en showtuinen, samen ruim 5.000 m²", "keramische en natuurstenen tegels binnen, sierbestrating buiten", "ook wastafels, grind en split, tuinverlichting", "zonder afspraak welkom; afspraak kan"],
-      "tip": "De showtuinen zijn de reden om te gaan: dezelfde tegel binnen en buiten gelegd, in het echte weer. Wie vloer en terras wil laten doorlopen, ziet hier of dat werkt. Vroeg in de ochtend is het rustig.",
+      "feiten": [
+        "showroom en showtuinen, samen ruim 5.000 m²",
+        "keramische en natuurstenen tegels binnen, sierbestrating buiten",
+        "ook wastafels, grind en split, tuinverlichting",
+        "zonder afspraak welkom; afspraak kan"
+      ],
+      "tip": "De showtuinen zijn de reden om te gaan: bestrating en terrastegels gelegd in het echte weer, en dezelfde tegel binnen én buiten. Wie de vloer van de woonkamer wil laten doorlopen naar het terras, ziet hier of dat werkt. Vroeg in de ochtend is het rustig.",
       "tip_status": "concept",
       "bron_datum": "2026-09-12"
     },
@@ -51,9 +82,14 @@
       "adres": "Mariniersweg 58a, 3011 NR Rotterdam",
       "website": "https://www.auping.com/nl/stores/auping-store-rotterdam-centrum",
       "telefoon": "010 413 99 94",
-      "lat": 51.9214, "lng": 4.4886,
+      "lat": 51.9214,
+      "lng": 4.4886,
       "uren": "zie de website; in augustus en september op maandag gesloten",
-      "feiten": ["volledige Auping-collectie: matrassen, bedden, boxsprings, bedbodems, dekbedden en textiel", "uitgebreid proefliggen met slaapadvies", "stoffen en kleuren ter plekke te combineren"],
+      "feiten": [
+        "volledige Auping-collectie: matrassen, bedden, boxsprings, bedbodems, dekbedden en textiel",
+        "uitgebreid proefliggen met slaapadvies",
+        "stoffen en kleuren ter plekke te combineren"
+      ],
       "tip": "Eén merk, alles van dat merk, en tijd om te liggen. Ga hier heen als je Auping overweegt en het hele bed wilt samenstellen — bodem, matras, hoofdbord, stof — met iemand die de combinaties uit zijn hoofd kent.",
       "tip_status": "concept",
       "bron_datum": "2026-09-12"
@@ -66,9 +102,14 @@
       "adres": "Boonsweg 7, Heinenoord",
       "website": "https://www.slaapboulevard-kwakernaat.nl/",
       "telefoon": "0186 60 13 55",
-      "lat": 51.8302, "lng": 4.4959,
+      "lat": 51.8302,
+      "lng": 4.4959,
       "uren": "zie de website",
-      "feiten": ["4.000 m² over twee verdiepingen", "Auping, Hästens, Hülsta, Pullman, Treca Paris, Tempur en meer dan dertig andere merken", "proefslapen mogelijk"],
+      "feiten": [
+        "4.000 m² over twee verdiepingen",
+        "Auping, Hästens, Hülsta, Pullman, Treca Paris, Tempur en meer dan dertig andere merken",
+        "proefslapen mogelijk"
+      ],
       "tip": "Hier lig je op merken naast elkaar die je nergens anders in één ruimte vindt — van Auping tot Hästens. Dat is de plek om te ontdekken wat je eigenlijk prettig vindt, vóór je een merk kiest. Reken op een halve dag; het is groot.",
       "tip_status": "concept",
       "bron_datum": "2026-09-12"
@@ -81,9 +122,15 @@
       "adres": "Vughterstraat 278, 5211 GR 's-Hertogenbosch (Pompen & Verlouw) en Bastion Vught 35, 5211 CZ (The Gallery)",
       "website": "https://www.misterdesign.nl/onze-winkels/",
       "telefoon": "073 612 66 24",
-      "lat": 51.6836, "lng": 5.2983,
+      "lat": 51.6836,
+      "lng": 5.2983,
       "uren": "ma–za 9:30–17:30 · eerste zondag van de maand 12–17",
-      "feiten": ["twee winkels in de binnenstad: een verbouwde Ford-garage van 2.000 m² en een voormalige kunstgalerie van 800 m²", "designmeubels, verlichting en accessoires", "gratis parkeren bij Bastion Vught 35", "interieurspecialisten voor advies"],
+      "feiten": [
+        "twee winkels in de binnenstad: een verbouwde Ford-garage van 2.000 m² en een voormalige kunstgalerie van 800 m²",
+        "designmeubels, verlichting en accessoires",
+        "gratis parkeren bij Bastion Vught 35",
+        "interieurspecialisten voor advies"
+      ],
       "tip": "Twee winkels op loopafstand, en de eerste ligt naast de gietvloershowroom van DRT — combineer ze. In de Ford-garage staan meubels in kleine, afgesloten ruimtes; in The Gallery in het groot, met daglicht van het Bossche Broek. Zo zie je hetzelfde meubel in twee soorten kamers.",
       "tip_status": "concept",
       "bron_datum": "2026-09-12"
@@ -96,9 +143,15 @@
       "adres": "Minervaweg 3, 3741 GR Baarn",
       "website": "https://www.nijhofbaarn.nl/",
       "telefoon": "035 548 61 11",
-      "lat": 52.2079, "lng": 5.2646,
+      "lat": 52.2079,
+      "lng": 5.2646,
       "uren": "ma–za 9–18 · zo 11–17",
-      "feiten": ["ruim 20.000 m², direct aan de A1, gratis parkeren", "showrooms voor badkamer, keuken, vloeren, verf, verlichting, tuin en bouwmaterialen onder één dak", "Woon- en Leefstijlstudio met interieurstylisten", "restaurant en speeltuin; zaagservice en montage"],
+      "feiten": [
+        "ruim 20.000 m², direct aan de A1, gratis parkeren",
+        "showrooms voor badkamer, keuken, vloeren, verf, verlichting, tuin en bouwmaterialen onder één dak",
+        "Woon- en Leefstijlstudio met interieurstylisten",
+        "restaurant en speeltuin; zaagservice en montage"
+      ],
       "tip": "Voor wie een hele woning moet afwerken: hier loop je in één middag langs badkamer, vloer, verf en bouwmaterialen en ziet de keuzes bij elkaar in plaats van in vijf winkels. Neem de kinderen mee — er is een speeltuin en een restaurant — en plan een gesprek met de stylistes als je kleuren wilt afstemmen.",
       "tip_status": "concept",
       "bron_datum": "2026-09-12"

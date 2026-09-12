@@ -13,9 +13,9 @@ import { showroomTypes, showroomsVanType } from '@/lib/showrooms'
  * gaan. Deelnemer of niet doet er niet toe voor de plek in de gids.
  *
  * INDEXATIE
- * noindex tot de tips door Daniel zijn geschreven (status 'definitief'). Een
- * gids met twaalf goede vermeldingen is meer waard dan een lijst van honderd;
- * een gids met concepttekst hoort nog niet in Google.
+ * Geïndexeerd vanaf de eerste versie (besluit Daniel, 12-09-2026): de gids is
+ * bedoeld om gevonden te worden. De tips groeien in de data; de status
+ * 'concept' staat daar, niet op de pagina.
  */
 
 const SITE = 'https://www.bylder.com'
@@ -24,9 +24,8 @@ const GROEN = '#3D5A3E'
 
 export const metadata: Metadata = {
   title: 'Showrooms die het bezoek waard zijn | Bylder',
-  description: 'Per producttype de showrooms waar je echt iets ziet: gietvloeren, tegels, bedden, meubelen en bouwmaterialen. Met de reden waarom, en wat je meeneemt.',
+  description: 'Per producttype de showrooms waar je echt iets ziet: gietvloeren, tuin & bestrating, bedden, meubelen en bouwmaterialen. Met de reden waarom, en wat je meeneemt.',
   alternates: { canonical: `${SITE}/showrooms/` },
-  robots: { index: false, follow: true },
 }
 
 const LABEL: React.CSSProperties = {

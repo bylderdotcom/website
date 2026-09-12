@@ -10,14 +10,12 @@ import { showroomTypes, showroomType, showroomsVanType, datumNl } from '@/lib/sh
  * kunt), en de praktische regel (adres, uren, website). De reden staat voorop
  * omdat dat het enige is wat een gids onderscheidt van een adressenlijst.
  *
- * Zie /showrooms/page.tsx voor waarom de gids bestaat en waarom hij op noindex
- * staat tot de tips definitief zijn.
+ * Zie /showrooms/page.tsx voor waarom de gids bestaat.
  */
 
 const SITE = 'https://www.bylder.com'
 const INKT = 'rgba(61,46,30,'
 const GROEN = '#3D5A3E'
-const ROEST = '#B85C38'
 
 export function generateStaticParams() {
   return showroomTypes().map(t => ({ type: t.slug }))
@@ -33,7 +31,6 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
     title: `${t.naam}: showrooms die het bezoek waard zijn | Bylder`,
     description: `${lijst.length === 1 ? 'Eén showroom' : `${lijst.length} showrooms`} voor ${t.naam.toLowerCase()} in ${plaatsen} — met de reden waarom je erheen gaat en wat je meeneemt.`,
     alternates: { canonical: `${SITE}/showrooms/${type}/` },
-    robots: { index: false, follow: true },
   }
 }
 
@@ -82,9 +79,6 @@ export default async function ShowroomTypePage({ params }: { params: Promise<{ t
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '4px 14px' }}>
               <h2 style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', margin: 0 }}>{s.naam}</h2>
               <span style={{ fontSize: 14.5, color: `${INKT}0.6)` }}>{s.plaats}</span>
-              {s.tip_status === 'concept' && (
-                <span style={{ ...LABEL, color: ROEST, fontSize: 10.5 }}>Tip in concept</span>
-              )}
             </div>
 
             <div>
