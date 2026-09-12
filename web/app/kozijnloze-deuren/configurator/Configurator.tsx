@@ -483,11 +483,11 @@ export default function Configurator() {
             // staat de deur half onder de vouw.
             width: '100%', height: '100%',
           }} />
-          {toonFoto && (
-            // In de render zit de kruk links, dus de scharnieren rechts. Kiest de
-            // koper scharnieren links, dan spiegelen we het beeld.
-            <GerenderdBeeld ontwerp={ontwerp.id} kleurHex={lakKleur} spiegel={huidig.scharnier === 'links'} />
-          )}
+          {/* In de render zit de kruk links, dus de scharnieren rechts. Kiest de
+              koper scharnieren links, dan spiegelen we het beeld. Altijd
+              gemonteerd, alleen verborgen in 3D: zie GerenderdBeeld. */}
+          <GerenderdBeeld ontwerp={ontwerp.id} kleurHex={lakKleur} spiegel={huidig.scharnier === 'links'}
+            zichtbaar={toonFoto} />
         </div>
         <div role="group" aria-label="Weergave" style={{ display: 'flex', gap: 4, margin: '10px 0 0' }}>
           <button onClick={() => setWeergave('foto')} aria-pressed={toonFoto} disabled={huidig.afwerking === 'fineer'}
