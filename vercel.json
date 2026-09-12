@@ -6,6 +6,16 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/beurs",
+      "destination": "/kozijnloze-deuren/configurator/?bron=beurs",
+      "permanent": false
+    },
+    {
+      "source": "/beurs/tablet",
+      "destination": "/kozijnloze-deuren/configurator/?bron=beurs-tablet",
+      "permanent": false
+    },
+    {
       "source": "/deelnemer-worden/woonwinkels/",
       "destination": "/deelnemer-worden/winkels-webshops/",
       "permanent": true

@@ -1,6 +1,7 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { herkomst } from './herkomst'
 
 // Offerteformulier onder een configurator. Stuurt de aanvraag naar het loket in
 // de app (offerte_aanvragen), waar Daniel hem ziet en aan een partner geeft.
@@ -41,6 +42,11 @@ export default function OfferteFormulier(p: {
   const [fout, setFout] = useState('')
   const [klaar, setKlaar] = useState(false)
   const geopend = useRef(0)
+  // Kwam de bezoeker via een campagne-adres binnen (de beurs, bijvoorbeeld),
+  // dan is dát de herkomst — niet de plek op de site waar dit formulier staat.
+  // Welk product het is, staat toch al in een eigen veld.
+  const [campagne, setCampagne] = useState<string | null>(null)
+  useEffect(() => { setCampagne(herkomst()) }, [])
 
   if (klaar) {
     return (
@@ -73,7 +79,7 @@ export default function OfferteFormulier(p: {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          product: p.product, bron: p.bron,
+          product: p.product, bron: campagne || p.bron,
           specificatie: p.specificatie, configuratie: p.configuratie, hoeveelheden: p.hoeveelheden,
           terugkijk_url: p.terugkijkUrl(),
           naam: waarde('naam'), email: waarde('email'), telefoon: waarde('telefoon'),
