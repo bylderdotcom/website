@@ -214,7 +214,10 @@ const paginaSchema = {
 
 export default function OnzichtbaarKozijnPage() {
   return (
-    <main style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+    // Op het raster van het menu (besluit Daniel, 11-09-2026): de container is het
+    // menuraster, de inhoud houdt de breedte die ze had (812px) maar staat links.
+    <main style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+      <div style={{ maxWidth: 812 }}>
       <nav aria-label="Kruimelpad" style={{ ...LABEL, marginBottom: 10 }}>
         <a href="/" style={{ color: `${INKT}0.55)`, textDecoration: 'none' }}>Bylder</a>
         {' / '}
@@ -471,6 +474,7 @@ export default function OnzichtbaarKozijnPage() {
               dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(paginaSchema) }} />
+      </div>
     </main>
   )
 }
