@@ -34,7 +34,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             maar zakt naar 2.41:1 op de donkere secties, onder de 3:1 die WCAG
             1.4.11 eist voor UI — vandaar de lichte halo eromheen. */}
         <style dangerouslySetInnerHTML={{ __html:
-          '/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;'
+          /* box-sizing als eerste. De clusterpagina's brengen hun eigen reset mee,
+             de handgeschreven Next-pagina's niet: daar werd een container van
+             maxWidth 1200 met 24px marge 1248 breed, en stond het menu 24px links
+             van waar het op alle andere pagina's staat (logo op 120 in plaats van
+             144). Eén reset zet dat recht — en voorkomt dat een veld met
+             width:100% plus padding buiten zijn kolom valt (gevonden 11/12-09-2026). */
+          '*,*::before,*::after{box-sizing:border-box}'
+          + '/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;'
           + 'outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}'
           + '@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;'
           + 'transition-duration:.01ms!important;scroll-behavior:auto!important}}'

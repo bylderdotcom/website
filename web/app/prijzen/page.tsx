@@ -22,7 +22,9 @@ const H2: React.CSSProperties = { fontSize: '1.35rem', fontWeight: 800, letterSp
 
 export default function PrijzenPage() {
   return (
-    <main style={{ maxWidth: 820, margin: '0 auto', padding: '48px 24px', color: '#1A1208' }}>
+    // Op het raster van het menu (zie /kozijnloze-deuren/): inhoud houdt 772px, links.
+    <main style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 24px', color: '#1A1208' }}>
+      <div style={{ maxWidth: 772 }}>
       <h1 style={{ fontSize: '2.1rem', fontWeight: 800, letterSpacing: '-0.025em', marginBottom: 12 }}>
         Gratis voor bewoners. Bedrijven betalen voor zichtbaarheid.
       </h1>
@@ -144,6 +146,7 @@ export default function PrijzenPage() {
         <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=prijzen" style={{ display: 'inline-block', background: '#F5F0E8', color: '#3D5A3E', padding: '12px 24px', borderRadius: 10, fontWeight: 700, textDecoration: 'none' }}>
           Start gratis →
         </a>
+      </div>
       </div>
     </main>
   )
