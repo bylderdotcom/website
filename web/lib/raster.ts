@@ -35,3 +35,18 @@ export function opRaster(html: string): string {
   }
   return html
 }
+
+/**
+ * Kopen en project (~38.600 pagina's) regelen hun breedte niet in de opening
+ * maar in de sjabloonstijl: .c of .container, 1060px (op één na 1100px) met 5%
+ * zijmarge, gecentreerd. Op 1440px begon de tekst daardoor 118px rechts van het
+ * logo. Deze regels komen ná de sjabloonstijl en maken de container het
+ * menuraster; de inhoud erin houdt de breedte die ze op desktop had (916px),
+ * alleen links. Zelfde zijmarges per schermbreedte als het menu.
+ */
+export const RASTER_SJABLOON_CSS =
+  '.c,.container{max-width:1200px;margin:0 auto;padding:0 24px;box-sizing:border-box}'
+  + '.c>*,.container>*{max-width:916px}'
+  + '@media(max-width:1020px){.c,.container{padding:0 16px}}'
+  + '@media(max-width:420px){.c,.container{padding:0 14px}}'
+  + '@media(max-width:359px){.c,.container{padding:0 10px}}'

@@ -8,6 +8,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { metKennisbank } from './kennisbank-links'
 import { zonderOudKopstuk, zonderKaleNavRegel } from './oud-kopstuk'
+import { RASTER_SJABLOON_CSS } from './raster'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'project'
@@ -66,7 +67,8 @@ export function getShellCss(templateField: string): string {
   if (!(templateField in _cssCache)) {
     const tpl = fs.readFileSync(path.join(TPL_DIR, `template.${templateField}.html`), 'utf8')
     const m = tpl.match(/<style[^>]*>([\s\S]*?)<\/style>/)
-    _cssCache[templateField] = m ? zonderKaleNavRegel(m[1]) : ''
+    // Na de sjabloonstijl: container op het raster van het menu (lib/raster.ts).
+    _cssCache[templateField] = m ? zonderKaleNavRegel(m[1]) + RASTER_SJABLOON_CSS : ''
   }
   return _cssCache[templateField]
 }
