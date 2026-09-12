@@ -8,6 +8,12 @@
       "intro": "Een gietvloer kies je niet van een foto. Kleur, glans en de naadloosheid zie je pas als je erop staat, bij daglicht, naast je meubels."
     },
     {
+      "slug": "keukens",
+      "naam": "Keukens",
+      "kopen": "/kopen/keuken/",
+      "intro": "Een keuken op maat bestaat nog niet als je hem kiest. Je koopt hout, een lijn en een maker — en dat beoordeel je alleen door in een ruimte te staan die al zo is gemaakt."
+    },
+    {
       "slug": "tuin-bestrating",
       "naam": "Tuin & bestrating",
       "kopen": "/kopen/tuin/",
@@ -153,6 +159,28 @@
         "restaurant en speeltuin; zaagservice en montage"
       ],
       "tip": "Voor wie een hele woning moet afwerken: hier loop je in één middag langs badkamer, vloer, verf en bouwmaterialen en ziet de keuzes bij elkaar in plaats van in vijf winkels. Neem de kinderen mee — er is een speeltuin en een restaurant — en plan een gesprek met de stylistes als je kleuren wilt afstemmen.",
+      "tip_status": "concept",
+      "bron_datum": "2026-09-12"
+    },
+    {
+      "id": "eikmeester-roden",
+      "type": "keukens",
+      "naam": "Eikmeester",
+      "plaats": "Roden",
+      "adres": "Ceintuurbaan Noord 115, 9301 NT Roden",
+      "website": "https://eikmeester.nl/",
+      "telefoon": "085 27 35 113",
+      "lat": 53.1389,
+      "lng": 6.4308,
+      "uren": "di–vr 10–17 · za alleen op afspraak",
+      "feiten": [
+        "showroom van 400 m², volledig in Japandi-stijl ingericht",
+        "keukens op maat in noten- en eikenhout, strakke lijnen",
+        "levert en monteert in Noord-, Midden- en Zuid-Nederland; daarbuiten op aanvraag",
+        "levertijd 14 tot 16 weken vanaf de getekende offerte",
+        "gesprekken duren 1,5 tot 2 uur; je koopt hier niet in één bezoek"
+      ],
+      "tip": "De hele showroom is één stijl: 400 m² Japandi, en niets anders. Dat is precies waarom je erheen gaat — je ziet niet een keukenopstelling maar de sfeer waarin hij hoort te staan. Neem je plattegrond mee en trek er een dagdeel voor uit; één gesprek duurt hier anderhalf tot twee uur. En reken op veertien tot zestien weken levertijd, dus begin ruim voor je opleverdatum.",
       "tip_status": "concept",
       "bron_datum": "2026-09-12"
     }
