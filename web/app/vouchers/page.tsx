@@ -9,7 +9,7 @@ import { rasterBinnen } from '../../lib/raster'
 // Phosphor-iconfonts worden meegeladen zoals in de bron (een aantal voucher-
 // tegels leunt erop). Meta (incl. og/twitter/robots) + JSON-LD 1-op-1 over.
 
-const OG_TITLE = 'Kortingsvouchers nieuwbouw — 10% bij 40+ woonmerken | Bylder'
+const OG_TITLE = 'Kortingsvouchers nieuwbouw — 10% bij 56 woonmerken | Bylder'
 const DESC =
   'Exclusieve kortingsvouchers voor kopers van een nieuwbouwwoning. 10% bij DRT Contemporary, Goossens, Tables by Tim, Whoon en 35+ andere merken; bij Auping 10% op het reguliere assortiment, niet bovenop een sale. Gratis, met een Bylder-account.'
 
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kortingsvouchers wonen — Auping, Goossens, DRT & 40+ merken | Bylder',
-    description: 'Exclusieve kortingen voor nieuwbouw- en renovatiekopers. Gemiddeld €2.549 bespaard. Gratis voor bewoners.',
+    title: 'Kortingsvouchers wonen — Auping, Goossens, DRT & 56 merken | Bylder',
+    description: 'Ledenkorting voor nieuwbouw- en renovatiekopers bij 56 woonmerken. Gratis voor bewoners.',
   },
 }
 
@@ -47,7 +47,7 @@ const JSONLD_FAQ = {
     { '@type': 'Question', name: 'Waarom kan Bylder deze korting regelen?', acceptedAnswer: { '@type': 'Answer', text: 'Deelnemende merken en winkels betalen ons voor wat er via Bylder wordt verkocht. Voor jou is het gratis, en de korting die je krijgt verandert daar niet door.' } },
     { '@type': 'Question', name: 'Welke korting krijg ik bij Auping?', acceptedAnswer: { '@type': 'Answer', text: 'Met een gratis Bylder-account krijg je 10% korting bij Auping Rotterdam Centrum, Den Haag Centrum, Zoetermeer en Leidschendam. De korting geldt op het reguliere assortiment boxsprings, matrassen en bedframes en komt niet bovenop een lopende actie, sale of showroomsale — dan geldt die prijs. Je verzilvert hem in de winkel door je persoonlijke code op je telefoon te laten zien. Vanaf €5.000 besteding komt daar een gratis leenbed bij tijdens de levertijd, vanaf €6.500 een overnachting in Hotel Haverkist.' } },
     { '@type': 'Question', name: 'Zijn de Bylder vouchers ook geldig voor bestaande bouw en renovatie?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Alle Bylder kortingsvouchers zijn geldig voor zowel nieuwbouwkopers als kopers van bestaande woningen en renovatieprojecten. Met één gratis Bylder-account activeer je alle vouchers.' } },
-    { '@type': 'Question', name: 'Wat is de gemiddelde besparing via Bylder vouchers?', acceptedAnswer: { '@type': 'Answer', text: 'Bylder-gebruikers besparen gemiddeld €2.549 via kortingsvouchers bij 40+ partnermerken. De grootste besparingen komen van Parketgigant (25% op parket/laminaat), Lampenlicht (20% op verlichting), De Bossche Tapijtschuur (15% op raamdecoratie) en Auping (10% op bedden).' } },
+    { '@type': 'Question', name: 'Welke merken geven de hoogste korting?', acceptedAnswer: { '@type': 'Answer', text: 'De hoogste kortingen komen van Parketgigant (25% op parket/laminaat), Lampenlicht (20% op verlichting), De Bossche Tapijtschuur (15% op raamdecoratie) en Auping (10% op bedden).' } },
   ],
 }
 
@@ -189,13 +189,11 @@ export default function VouchersPage() {
       <section className="hero">
         <div className="container">
           <div className="hero-badge"><i className="ph-thin ph-tag"></i> Exclusieve kortingen</div>
-          <h1>Bespaar <em>gemiddeld €4.200</em><br />op je inrichting &amp; verbouwing</h1>
-          <p className="hero-sub">Exclusieve kortingsvouchers bij 40+ woonmerken — direct actief zodra je een gratis Bylder-account hebt.</p>
+          <h1>Ledenkorting bij <em>56 woonmerken</em><br />voor je inrichting &amp; verbouwing</h1>
+          <p className="hero-sub">Kortingsvouchers bij 56 woonmerken — direct actief zodra je een gratis Bylder-account hebt.</p>
           <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=vouchers-hero" className="btn-primary" style={{ margin: '0 auto 40px', display: 'inline-flex' }}>Vouchers activeren — gratis →</a>
           <div className="hero-stats">
-            <div><div className="stat-val">€4.200</div><div className="stat-lbl">Gem. besparing per lid</div></div>
-            <div><div className="stat-val">40+</div><div className="stat-lbl">Partnermerken</div></div>
-            <div><div className="stat-val">12.400+</div><div className="stat-lbl">Actieve leden</div></div>
+            <div><div className="stat-val">56</div><div className="stat-lbl">Woonmerken</div></div>
             <div><div className="stat-val">€0</div><div className="stat-lbl">Gratis voor bewoners</div></div>
           </div>
         </div>
@@ -248,10 +246,9 @@ export default function VouchersPage() {
 
       <section className="cta-section">
         <div className="container">
-          <h2>Activeer alle 40+ vouchers</h2>
+          <h2>Activeer alle vouchers</h2>
           <p>Gratis voor bewoners. Direct toegang tot alle kortingsvouchers én de AI-kopersbegeleider.</p>
           <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=vouchers-slot" className="btn-primary">Activeer mijn vouchers →</a>
-          <div style={{ marginTop: 16, fontSize: 13, color: 'rgba(245,240,232,0.55)', fontFamily: "'Space Mono',monospace" }}><i className="ph-thin ph-star"></i> 4.8/5 · 12.400+ leden · 14 dagen geld-terug garantie</div>
         </div>
       </section>
 

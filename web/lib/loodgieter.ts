@@ -74,7 +74,7 @@ type Bedrijf = {
 // unieke E-E-A-T-tekst, niet aanwezig in de city/bedrijf-contentfragmenten. Vervalt
 // met de oude footer → hier als contentregel behouden i.p.v. stilzwijgend laten vallen.
 const DISCLAIMER =
-  'Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is een onafhankelijk platform en geen loodgietersbedrijf.'
+  'Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is zelf geen loodgietersbedrijf.'
 const DISCLAIMER_HTML = `<p style="font-size:11px;color:rgba(61,46,30,0.72);margin-top:24px;max-width:680px;">${DISCLAIMER}</p>`
 
 const TILE_SHAPES = {

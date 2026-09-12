@@ -119,7 +119,7 @@ FOOTER = '''<footer style="background:#1A1208;padding:56px 0;">
       <div style="width:30px;height:30px;background:#3D5A3E;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;color:#F5F0E8;font-size:12px;">B.</div>
       <span style="font-weight:700;font-size:16px;color:#F5F0E8;">Bylder<span style="color:#8AAE8B;">.com</span></span>
     </div>
-    <p style="font-size:12px;color:rgba(245,240,232,0.5);max-width:640px;line-height:1.6;">Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, afmeting, constructie, regio en afwerking &mdash; geen offerte. Vergunningregels vatten de landelijke hoofdlijn samen; je gemeente en omgevingsplan zijn leidend. Bylder is een onafhankelijk platform en zelf geen prefab-fabrikant of bouwbedrijf.</p>
+    <p style="font-size:12px;color:rgba(245,240,232,0.5);max-width:640px;line-height:1.6;">Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, afmeting, constructie, regio en afwerking &mdash; geen offerte. Vergunningregels vatten de landelijke hoofdlijn samen; je gemeente en omgevingsplan zijn leidend. Bylder is zelf geen prefab-fabrikant of bouwbedrijf.</p>
     <p style="font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,0.55);margin-top:18px;">© 2025 Bylder Nederland B.V. — KvK 65020006</p>
   </div>
 </footer>'''

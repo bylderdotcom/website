@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: 'Hoe Bylder werkt — van adres tot laatste lamp | Bylder',
   description:
     'Drie stappen: welke woning je gaat inrichten, wat je daarvoor koopt, en hulp bij de keuzes. '
-    + 'Wat Bylder doet, waar de gemiddelde besparing van €4.200 vandaan komt, en waarom het gratis is voor bewoners.',
+    + 'Wat Bylder doet, waar kopers geld laten liggen, en waarom het gratis is voor bewoners.',
   alternates: { canonical: 'https://www.bylder.com/hoe-het-werkt/' },
 }
 
@@ -73,14 +73,17 @@ const STAPPEN = [
   },
 ]
 
-// De drie bronnen achter de €4.200 — bedragen zoals ze op de homepage stonden.
+// De drie plekken waar een koper geld laat liggen. Er stonden bedragen bij
+// (€1.840 / €2.549 / €1.640, samen de "€4.200" van de homepage); die zijn eruit
+// omdat ze nergens op terug te voeren waren. Wat we wél kunnen laten zien, is
+// wat er op elke plek gebeurt.
 const BRONNEN = [
-  { bedrag: '€1.840', titel: 'Meerwerkanalyse',
-    tekst: 'Gemiddelde overbetaling op de meerwerklijst die de analyse eruit haalt.' },
-  { bedrag: '€2.549', titel: 'Kortingsvouchers',
-    tekst: `Korting bij ${aantalMerken()} woonmerken voor je inrichting en afwerking.` },
-  { bedrag: '€1.640', titel: 'Offerte-check',
-    tekst: 'Verschil met de marktprijs op offertes van aannemer en leveranciers.' },
+  { titel: 'Meerwerkanalyse',
+    tekst: 'De meerwerklijst gaat post voor post langs de marktprijs, vóór je tekent.' },
+  { titel: 'Kortingsvouchers',
+    tekst: `Ledenkorting bij ${aantalMerken()} woonmerken voor je inrichting en afwerking.` },
+  { titel: 'Offerte-check',
+    tekst: 'Offertes van aannemer en leveranciers leggen we naast wat hetzelfde werk elders kost.' },
 ]
 
 // Vraag en antwoord — de tekst hieronder is óók wat in de FAQ-schema staat.
@@ -89,8 +92,8 @@ const VRAGEN = [
     v: 'Wat is een meerwerklijst en hoe controleer je die?',
     a: 'Een meerwerklijst is een offerte van de aannemer voor extra werkzaamheden bovenop de '
       + 'standaard bouwtekening: extra stopcontacten, vloerverwarming, een douchegoot. Gemiddeld bevat '
-      + 'zo’n lijst meer dan 40 posten. Uit Bylder-data blijkt dat 96% van de kopers ten minste één '
-      + 'post betaalt die significant boven de marktprijs ligt; de gemiddelde overbetaling is €1.840. '
+      + 'zo’n lijst meer dan 40 posten. Zonder vergelijking merk je niet dat je ergens te veel voor betaalt. '
+      + 'post betaalt die boven de marktprijs ligt. '
       + 'Bylder vergelijkt elke post met actuele marktdata en geeft per post groen, oranje of rood.',
   },
   {
@@ -115,8 +118,7 @@ const VRAGEN = [
   },
   {
     v: 'Wat is de gemiddelde besparing via Bylder?',
-    a: 'Bewoners besparen gemiddeld €4.200: €1.840 via meerwerkanalyse, €2.549 via kortingsvouchers '
-      + 'en €1.640 via offerte-check. Niet elke bewoner benut alle drie, daarom is het gemiddelde '
+    a: 'Op drie plekken: de meerwerkanalyse, de kortingsvouchers en de offerte-check. Niet elke bewoner benut alle drie, daarom is het '
       + 'lager dan de som.',
   },
   {
@@ -151,7 +153,7 @@ const howToSchema = {
     { '@type': 'HowToStep', name: 'Analyse ontvangen',
       text: 'Elke post wordt vergeleken met marktdata en krijgt groen (marktconform), oranje (check) of rood (te hoog).' },
     { '@type': 'HowToStep', name: 'Onderhandelen',
-      text: 'Gebruik de onderhandelingstips om overbetaling te voorkomen. Gemiddelde besparing: €1.840.' },
+      text: 'Gebruik de onderhandelingstips om overbetaling te voorkomen.' },
   ],
 }
 
@@ -206,29 +208,23 @@ export default function HoeHetWerktPage() {
         vakbedrijven uit jouw regio. Wij leggen de keuzes voor; jij kiest.
       </p>
       <p style={P}>
-        <strong>Waarom dat nodig is:</strong> 96% van de kopers betaalt minstens één post te duur,
-        gemiddeld €1.840 aan meerwerk alleen al. Niet uit slordigheid, maar omdat je zonder referentie
-        simpelweg niet weet wat een eerlijke prijs is. Bylder geeft je die referentie.
+        <strong>Waarom dat nodig is:</strong> een meerwerklijst is lang, en de prijzen erin staan
+        nergens naast een marktprijs. Niet uit slordigheid, maar omdat je zonder referentie simpelweg
+        niet weet wat een eerlijke prijs is. Bylder geeft je die referentie.
       </p>
 
-      <h2 style={H2}>Waar komt die €4.200 vandaan?</h2>
+      <h2 style={H2}>Waar kopers geld laten liggen</h2>
       <p style={P}>
-        Geen marketinggetal, maar de optelsom van drie plekken waar kopers geld laten liggen.
+        Drie plekken waar een koper te veel betaalt zonder het te merken. Bylder kijkt op alle drie mee.
       </p>
       <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))' }}>
         {BRONNEN.map((b) => (
           <div key={b.titel} style={KAART}>
-            <div style={CIJFER}>{b.bedrag}</div>
             <div style={{ ...LABEL, margin: '6px 0 8px' }}>{b.titel}</div>
             <p style={{ ...P, margin: 0, fontSize: 14.5 }}>{b.tekst}</p>
           </div>
         ))}
       </div>
-      <p style={{ ...P, fontSize: 13.5, marginTop: 14, color: `${INKT}0.6)` }}>
-        Bedragen zijn het gemiddelde per bron. Niet elke bewoner benut alle drie — daarom ligt de
-        gemiddelde totale besparing per bewoner op €4.200 en niet op de som van de drie.
-      </p>
-
       <h2 style={H2}>Waarom Bylder gratis is voor bewoners</h2>
       <div style={{ ...KAART, borderColor: 'rgba(61,90,62,0.35)' }}>
         <p style={{ ...P, margin: 0 }}>

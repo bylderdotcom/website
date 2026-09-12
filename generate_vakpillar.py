@@ -60,7 +60,7 @@ VAKKEN = {
             ("Wat kost een stukadoor per m² in 2026?", "Indicatief reken je in 2026 op &euro;8&ndash;&euro;14/m&sup2; voor spuitwerk (sausklaar plafond en wand), &euro;14&ndash;&euro;22/m&sup2; voor behangklaar en &euro;18&ndash;&euro;38/m&sup2; voor glad sausklaar handwerk. Sierpleister en buitenstucwerk liggen hoger (&euro;40&ndash;&euro;95/m&sup2;)."),
             ("Hoe weet ik of mijn stukadoor-offerte eerlijk is?", "Vergelijk de prijs per m&sup2; per werksoort met de marktbandbreedte. Bylder controleert je offerte per post met actuele marktdata en zegt of die marktconform (groen), twijfelachtig (oranje) of te hoog (rood) is &mdash; met een concreet onderhandelpunt."),
             ("Wat is het verschil tussen spuitwerk en glad pleisteren?", "Spuitwerk (spackspuiten) wordt machinaal aangebracht en is sneller en goedkoper, met een licht korrelige sausklare afwerking. Glad pleisteren is handwerk dat een volledig vlakke, direct schilderbare wand oplevert &mdash; arbeidsintensiever en duurder per m&sup2;."),
-            ("Is Bylder een stukadoorsbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen stucwerk en zijn geen leadverkoper. We tonen stukadoors neutraal &mdash; met beoordelingsscores van verschillende externe bronnen naast elkaar."),
+            ("Is Bylder een stukadoorsbedrijf of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij verkopen geen stucwerk en zijn geen leadverkoper. We tonen stukadoors neutraal &mdash; met beoordelingsscores van verschillende externe bronnen naast elkaar."),
             ("Ik ben stukadoor &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -97,7 +97,7 @@ VAKKEN = {
             ("Wat kost een schilder per m² in 2026?", "Indicatief: binnenschilderwerk &euro;12&ndash;&euro;28/m&sup2;, latex spuiten &euro;8&ndash;&euro;16/m&sup2;, houtwerk/kozijnen &euro;18&ndash;&euro;40/m&sup2; en buitenwerk &euro;25&ndash;&euro;55/m&sup2;. De prijs hangt vooral af van het voorwerk, het aantal lagen en of het wanden of houtwerk betreft."),
             ("Hoe weet ik of mijn schilder-offerte eerlijk is?", "Vergelijk de prijs per m&sup2; per werksoort met de marktbandbreedte. Bylder controleert je offerte per post met actuele marktdata en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
             ("Wat bepaalt de prijs van schilderwerk?", "Het voorwerk (schuren, plamuren, gronden), het aantal lagen en de verfkwaliteit, en of het wanden of houtwerk/kozijnen betreft. Houtwerk en buitenwerk zijn arbeidsintensiever."),
-            ("Is Bylder een schildersbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen schilderwerk en zijn geen leadverkoper &mdash; we tonen schilders neutraal en helpen je een eerlijke prijs te betalen."),
+            ("Is Bylder een schildersbedrijf of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij verkopen geen schilderwerk en zijn geen leadverkoper &mdash; we tonen schilders neutraal en helpen je een eerlijke prijs te betalen."),
             ("Ik ben schilder &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -135,7 +135,7 @@ VAKKEN = {
             ("Wat kost een loodgieter per uur in 2026?", "Indicatief &euro;45&ndash;&euro;75 per uur, plus &euro;25&ndash;&euro;50 voorrijkosten &mdash; regio- en spoedafhankelijk. Veel klussen worden per klus geoffreerd; check je offerte gratis tegen de markt op Bylder."),
             ("Wat kost het vervangen van een cv-ketel?", "Een nieuwe hr-combiketel inclusief installatie kost indicatief &euro;1.800&ndash;&euro;3.500, afhankelijk van merk, vermogen en aansluitwerk."),
             ("Hoe weet ik of mijn loodgieter-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, voorrijkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
-            ("Is Bylder een loodgietersbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen loodgieterswerk en zijn geen leadverkoper &mdash; we tonen loodgieters neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Is Bylder een loodgietersbedrijf of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij verkopen geen loodgieterswerk en zijn geen leadverkoper &mdash; we tonen loodgieters neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
             ("Ik ben loodgieter &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -173,7 +173,7 @@ VAKKEN = {
             ("Wat kost een elektricien per uur in 2026?", "Indicatief &euro;45&ndash;&euro;70 per uur, plus &euro;25&ndash;&euro;50 voorrijkosten &mdash; regio- en spoedafhankelijk. Veel klussen worden per klus geoffreerd; check je offerte gratis tegen de markt op Bylder."),
             ("Wat kost het vervangen van de groepenkast of een laadpaal?", "Een groepenkast vervangen of uitbreiden kost indicatief &euro;600&ndash;&euro;1.500; een thuislaadpaal installeren &euro;500&ndash;&euro;1.500, afhankelijk van het aantal groepen en de afstand tot de meterkast."),
             ("Hoe weet ik of mijn elektricien-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, voorrijkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
-            ("Is Bylder een elektricien of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen elektrawerk en zijn geen leadverkoper &mdash; we tonen elektriciens neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Is Bylder een elektricien of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij verkopen geen elektrawerk en zijn geen leadverkoper &mdash; we tonen elektriciens neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
             ("Ik ben elektricien &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan kopers-projecten &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -210,7 +210,7 @@ VAKKEN = {
             ("Wat kost een aanbouw of uitbouw in 2026?", "Indicatief &euro;15.000&ndash;&euro;60.000, sterk afhankelijk van oppervlak, afwerking en fundering. Vraag een gespecificeerde offerte en check gratis op Bylder of die marktconform is."),
             ("Wat kost een verbouwing?", "Van &euro;10.000 voor een enkele kamer tot &euro;80.000+ voor een complete woning &mdash; het hangt af van omvang, constructief werk en afwerkingsniveau."),
             ("Hoe weet ik of mijn aannemer-offerte eerlijk is?", "Vergelijk per post (arbeid, materiaal, onderaanneming, staartkosten) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
-            ("Is Bylder een aannemer of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij voeren zelf geen bouwwerk uit en zijn geen leadverkoper &mdash; we tonen aannemers neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Is Bylder een aannemer of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij voeren zelf geen bouwwerk uit en zijn geen leadverkoper &mdash; we tonen aannemers neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
             ("Ik ben aannemer &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -248,7 +248,7 @@ VAKKEN = {
             ("Wat kost een complete badkamer in 2026?", "Indicatief &euro;8.000&ndash;&euro;20.000 voor een gemiddelde badkamer; een basisbadkamer vanaf &euro;5.000 en luxe maatwerk &euro;20.000&ndash;&euro;40.000. Check je offerte gratis tegen de markt op Bylder."),
             ("Wat bepaalt de prijs van een badkamerrenovatie?", "Vooral de afmeting, de sanitair- en tegelkeuze en of er leidingwerk verlegd moet worden. Vloerverwarming, ventilatie en maatwerk verhogen de prijs verder."),
             ("Hoe weet ik of mijn badkamer-offerte eerlijk is?", "Vergelijk per post (tegelwerk, sanitair, installatie, arbeid) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
-            ("Is Bylder een badkamerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij verkopen geen badkamers en zijn geen leadverkoper &mdash; we tonen badkamerspecialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Is Bylder een badkamerbedrijf of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij verkopen geen badkamers en zijn geen leadverkoper &mdash; we tonen badkamerspecialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
             ("Ik ben badkamerspecialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -286,7 +286,7 @@ VAKKEN = {
             ("Wat kost een dakkapel in 2026?", "Indicatief &euro;7.000&ndash;&euro;12.000 voor een standaard kunststof dakkapel, &euro;9.000&ndash;&euro;16.000 in hout en &euro;14.000&ndash;&euro;35.000 voor een brede of op maat gemaakte dakkapel. Check je offerte gratis tegen de markt op Bylder."),
             ("Heb ik een vergunning nodig voor een dakkapel?", "Voor een dakkapel aan de achterkant is vaak geen vergunning nodig (vergunningsvrij), aan de voorkant meestal wel. Een goede specialist regelt of controleert dit voor je."),
             ("Hoe weet ik of mijn dakkapel-offerte eerlijk is?", "Vergelijk per post (element, plaatsing, afwerking, kraan/steiger) met de marktbandbreedte. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
-            ("Is Bylder een dakkapelbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij plaatsen zelf geen dakkapellen en zijn geen leadverkoper &mdash; we tonen dakkapelspecialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Is Bylder een dakkapelbedrijf of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij plaatsen zelf geen dakkapellen en zijn geen leadverkoper &mdash; we tonen dakkapelspecialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
             ("Ik ben dakkapelspecialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -324,7 +324,7 @@ VAKKEN = {
             ("Wat kost een gietvloer per m² in 2026?", "Indicatief &euro;50&ndash;&euro;90/m&sup2; voor epoxy, &euro;80&ndash;&euro;130/m&sup2; voor een PU-woonvloer en &euro;100&ndash;&euro;150/m&sup2; voor betonlook/microcement. De ondervloer en het voorwerk bepalen een groot deel van de prijs."),
             ("Wat is het verschil tussen een PU- en een epoxy-gietvloer?", "Een PU-gietvloer is flexibeler, warmer en comfortabeler &mdash; ideaal voor woonhuizen. Epoxy is harder en slijtvaster, maar koeler en gevoeliger voor scheurvorming; vaker in garages en bedrijfsruimtes."),
             ("Hoe weet ik of mijn gietvloer-offerte eerlijk is?", "Vergelijk de prijs per m&sup2; per vloersoort met de marktbandbreedte, inclusief egaliseren en voorwerk. Bylder controleert je offerte en zegt of die marktconform, twijfelachtig of te hoog is &mdash; met een concreet onderhandelpunt."),
-            ("Is Bylder een gietvloerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij leggen zelf geen gietvloeren en zijn geen leadverkoper &mdash; we tonen gietvloer-specialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
+            ("Is Bylder een gietvloerbedrijf of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij leggen zelf geen gietvloeren en zijn geen leadverkoper &mdash; we tonen gietvloer-specialisten neutraal, met beoordelingen uit meerdere bronnen naast elkaar."),
             ("Ik ben gietvloer-specialist &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd, beter vindbaar en gekoppeld aan nieuwbouw- en verbouwkopers &mdash; kost &euro;79 per jaar. Geen leadkosten, geen veiling."),
         ],
     },
@@ -476,7 +476,7 @@ VAKKEN = {
             ("Wat kost een dakdekker in 2026?", "Indicatief &euro;40&ndash;&euro;90/m&sup2; voor een nieuw plat dak en &euro;35&ndash;&euro;75/m&sup2; voor dakpannen vervangen. Dakisolatie inclusief nieuwe bedekking kost &euro;80&ndash;&euro;150/m&sup2;. Vraag altijd meerdere offertes op."),
             ("Kan ik bij het vervangen van mijn dak meteen isoleren?", "Ja, en dat loont: dakisolatie meenemen bij een toch al geplande dakvervanging is goedkoper dan later een aparte ingreep. Je kunt ook ISDE-subsidie aanvragen als de isolatiewaarde voldoet aan de eisen."),
             ("Hoe weet ik of mijn dakdekker-offerte eerlijk is?", "Controleer de prijs per m&sup2; per type werk, materiaalkosten en arbeid afzonderlijk. Bylder controleert je offerte per post en signaleert te hoge of ontbrekende posten."),
-            ("Is Bylder een dakdekkerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform voor woningkopers. Wij werken niet op commissie van dakdekkers en zijn geen leadverkoper."),
+            ("Is Bylder een dakdekkerbedrijf of bemiddelaar?", "Nee. Bylder is een platform voor woningkopers. Wij werken niet op commissie van dakdekkers en zijn geen leadverkoper."),
             ("Ik ben dakdekker &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren &mdash; geverifieerd en beter vindbaar bij woningkopers &mdash; kost &euro;79 per jaar."),
         ],
     },
@@ -551,7 +551,7 @@ VAKKEN = {
             ("Wat kost een timmerman in 2026?", "Indicatief &euro;50&ndash;&euro;80 per uur voor losse klussen. Kozijnen plaatsen kost &euro;150&ndash;&euro;350 per kozijn; vloer leggen &euro;15&ndash;&euro;35/m&sup2; exclusief materiaal. Maatwerk is sterk afhankelijk van omvang."),
             ("Wat is het verschil tussen een timmerman en een kozijnbedrijf?", "Een kozijnbedrijf levert en plaatst kozijnen inclusief glas; een timmerman plaatst de kozijnen maar levert het kozijn niet altijd zelf. Bij kozijnvervanging kun je beide inschakelen."),
             ("Hoe weet ik of mijn timmerwerk-offerte eerlijk is?", "Controleer het uurtarief, de geschatte uren en materiaalkosten afzonderlijk. Bylder controleert je offerte per post en signaleert te hoge posten."),
-            ("Is Bylder een timmerbedrijf of bemiddelaar?", "Nee. Bylder is een onafhankelijk platform &mdash; geen timmerbedrijf en geen leadverkoper. We tonen timmerlieden neutraal, met beoordelingen uit meerdere bronnen."),
+            ("Is Bylder een timmerbedrijf of bemiddelaar?", "Nee. Bylder is zelf geen timmerbedrijf en verkoopt geen leads. We tonen timmerlieden neutraal, met beoordelingen uit meerdere bronnen."),
             ("Ik ben timmerman &mdash; wat kost een profiel op Bylder?", "Vermelding is gratis. Je profiel activeren kost &euro;79 per jaar. Beter vindbaar bij woningkopers die verbouwen of verduurzamen."),
         ],
     },
@@ -861,7 +861,7 @@ def aanbesteding_block(vak, stad=None):
     return ('<div style="background:#3D5A3E;border-radius:18px;padding:34px;text-align:center;margin:32px 0;">'
             '<p style="font-size:11px;font-family:\'Space Mono\',monospace;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.55);margin-bottom:8px;">In &eacute;&eacute;n keer geregeld</p>'
             f'<h2 style="font-size:1.5rem;font-weight:800;color:#F5F0E8;margin-bottom:10px;">Krijg voorstellen van {html.escape(vak["plur"])}{waar}</h2>'
-            f'<p style="color:rgba(245,240,232,0.78);margin-bottom:22px;max-width:560px;margin-left:auto;margin-right:auto;font-size:14.5px;line-height:1.6;">Beschrijf je klus &eacute;&eacute;n keer &mdash; lokale {html.escape(vak["plur"])} reageren met een prijs. Bylder zet de marktprijs ernaast, zodat je weet wat eerlijk is.</p>'
+            f'<p style="color:rgba(245,240,232,0.78);margin-bottom:22px;max-width:560px;margin-left:auto;margin-right:auto;font-size:14.5px;line-height:1.6;">Beschrijf je klus &eacute;&eacute;n keer. Bylder zoekt er een vakbedrijf bij en zet de marktprijs ernaast, zodat je weet wat eerlijk is.</p>'
             f'<a href="{SIGNUP}" class="cta-primary">Vraag gratis voorstellen aan &#8594;</a></div>')
 
 
