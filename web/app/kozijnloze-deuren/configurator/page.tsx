@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import StandBalk from '../../components/StandBalk'
 import { ONTWERPEN, KLEUREN } from './ontwerpen'
 // Rechtstreeks importeren, niet via next/dynamic met ssr:false — dat mag niet in
 // een server-component. De configurator raakt window en document uitsluitend
@@ -134,6 +135,9 @@ export default function ConfiguratorPagina() {
             dus wat in gebroken wit fluistert, roept in antraciet.
           </p>
         </section>
+
+        {/* Alleen zichtbaar op de tablet die op de stand ligt; zie StandBalk. */}
+        <StandBalk />
 
         <Configurator />
 
