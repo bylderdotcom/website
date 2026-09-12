@@ -52,6 +52,7 @@
     .auping-body{padding:18px 16px 16px;display:flex;flex-direction:column;gap:10px;}
     .auping-perk{display:flex;align-items:flex-start;gap:12px;padding:13px;background:#EEF3F9;border-radius:12px;}
     .auping-perk-num{width:34px;height:34px;background:#003B6F;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:#fff;font-family:'Space Mono',monospace;flex-shrink:0;}
+    .auping-perk-ico{width:15px;height:15px;flex:0 0 auto;vertical-align:-2px;margin-right:6px;}
     .auping-perk-t{font-size:14px;font-weight:800;color:#003B6F;margin-bottom:2px;font-family:'Plus Jakarta Sans',sans-serif;}
     .auping-perk-d{font-size:12px;color:#2D4A6B;line-height:1.5;font-family:'Plus Jakarta Sans',sans-serif;}
     .auping-loc{font-size:11px;color:rgba(0,59,111,.45);text-align:center;font-family:'Space Mono',monospace;letter-spacing:.06em;padding-top:2px;}
@@ -83,11 +84,11 @@
         </div>
         <div class="auping-perk">
           <div class="auping-perk-num">2</div>
-          <div><div class="auping-perk-t">&#128705; Gratis leenbed</div><div class="auping-perk-d">Slaap comfortabel tijdens de levertijd van je Auping. <strong>Vanaf &#8364;5.000 besteding.</strong></div></div>
+          <div><div class="auping-perk-t"><svg class="auping-perk-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6"/><path d="M3 11h16a2 2 0 0 1 2 2v6"/><path d="M3 16h18"/><path d="M7 11V9h5v2"/></svg>Gratis leenbed</div><div class="auping-perk-d">Slaap comfortabel tijdens de levertijd van je Auping. <strong>Vanaf &#8364;5.000 besteding.</strong></div></div>
         </div>
         <div class="auping-perk" style="background:linear-gradient(135deg,#EEF3F9,#dce6f0);border:1px solid rgba(0,59,111,0.12);">
           <div class="auping-perk-num">3</div>
-          <div><div class="auping-perk-t">&#127976; Gratis Hotel Haverkist</div><div class="auping-perk-d">Overnachting + ontbijt voor 2 in Den Bosch, t.w.v. &#8364;199. <strong>Vanaf &#8364;6.500 besteding.</strong></div></div>
+          <div><div class="auping-perk-t"><svg class="auping-perk-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M15 10h4a2 2 0 0 1 2 2v9"/><path d="M9 7h2"/><path d="M9 11h2"/><path d="M9 15h2"/></svg>Gratis Hotel Haverkist</div><div class="auping-perk-d">Overnachting + ontbijt voor 2 in Den Bosch, t.w.v. &#8364;199. <strong>Vanaf &#8364;6.500 besteding.</strong></div></div>
         </div>
         <div class="auping-loc">ALLEEN IN DE WINKEL TE VERZILVEREN &mdash; TOON JE PERSOONLIJKE CODE UIT JE BYLDER-ACCOUNT &middot; UITSLUITEND BIJ AUPING ROTTERDAM CENTRUM, DEN HAAG CENTRUM, ZOETERMEER &amp; LEIDSCHENDAM</div>
         <a class="auping-cta" href="/vouchers/auping/" onclick="window._sluitAupingPopup()">Bekijk alle Auping voordelen &#8594;</a>
