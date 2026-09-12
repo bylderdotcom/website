@@ -282,6 +282,49 @@ div.c>*{max-width:916px}
 @media(max-width:359px){div.c{padding-left:10px!important;padding-right:10px!important}}
 """
 
+# De staart: 80 kleinere clusters, samen 1.026 pagina's (gemeten 12-09-2026).
+# Ze delen één patroon: een gecentreerde wikkel met een eigen breedte — .container
+# (780, 800, 900, 920, 1000, 1060, 1080, 1100, 1280px), .page-wrapper (780px) of
+# een <main> met de breedte in de tag (1400px). Elke breedte gaf een eigen
+# beginpunt voor de tekst; geen enkele stond onder het logo.
+#
+# Dezelfde ingreep als bij de drie grote families: de wikkel wordt het menuraster
+# (1200px, 24px zijmarge), de lopende tekst houdt een leeslengte van 916px en
+# staat links. Rasters, secties en kaarten houden hun volle breedte — anders
+# klappen kolommenblokken in.
+PROZA = ('p', 'h1', 'h2', 'h3', 'h4', 'ul', 'ol', 'dl', 'blockquote', 'article')
+_WIKKELS = ('div.container', 'main.container', 'div.page-wrapper', 'div.page-wrap',
+            'body>header.hero', 'main[style*="max-width:1400px"]')
+# Twee sjablonen zetten de breedte op een naamloze wikkel; ze zijn alleen te
+# herkennen aan de kop die erin staat.
+_HAS = ('body>header:has(h1.hero-h1)>div', 'body>main>section:has(>h1.hero-h1)')
+RASTER_STAART = """
+/* De staart van 80 kleinere clusters op het menuraster (12-09-2026). */
+%(wikkels)s{max-width:1200px!important;margin-left:auto!important;margin-right:auto!important;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box}
+/* Een wikkel in een wikkel springt niet nog eens in. */
+%(genest)s{padding-left:0!important;padding-right:0!important;max-width:none!important}
+/* Lopende tekst op leeslengte; rasters en secties houden de volle breedte. */
+%(proza)s{max-width:916px}
+/* De profielkaart van een vakbedrijf krijgt dezelfde breedte als zijn
+   Next-tweeling (824px, zie web/lib/raster.ts). */
+div.container>div.card{max-width:824px}
+/* Twee sjablonen zetten de breedte niet op een klasse maar op een naamloze
+   wikkel: een <header> met een blok van 1100px (bestaande-bouw) en een
+   <section> van 1100px in main (nieuwbouw-vs-bestaand). Ze zijn te herkennen
+   aan de kop die erin staat; daarom :has(). Browsers zonder :has() laten die
+   twee sjablonen staan zoals ze waren — 12 pagina's. */
+body>header:has(h1.hero-h1){padding-left:0!important;padding-right:0!important}
+%(has)s{max-width:1200px!important;margin-left:auto;margin-right:auto;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box}
+@media(max-width:1020px){%(wikkels)s,%(has)s{padding-left:16px!important;padding-right:16px!important}}
+@media(max-width:420px){%(wikkels)s,%(has)s{padding-left:14px!important;padding-right:14px!important}}
+@media(max-width:359px){%(wikkels)s,%(has)s{padding-left:10px!important;padding-right:10px!important}}
+""" % {
+    'wikkels': ','.join(_WIKKELS),
+    'genest': ','.join(f'{a} {b}' for a in _WIKKELS for b in _WIKKELS if not b.startswith('main')),
+    'proza': ','.join(f'{w}>{t}' for w in _WIKKELS for t in PROZA),
+    'has': ','.join(_HAS),
+}
+
 STICKY_ONDER_MENU = """
 /* Net boven 1020px (iPad liggend: 1024) paste het volledige menu niet: het
    stak 18px buiten beeld en de pagina schoof mee. Tot 1180px wat minder ruimte
@@ -390,6 +433,7 @@ CSS = (
     + MOBIEL_VANGNET
     + STICKY_ONDER_MENU
     + RASTER_DRIE_FAMILIES
+    + RASTER_STAART
 )
 
 PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'

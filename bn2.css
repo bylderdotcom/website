@@ -109,3 +109,23 @@ div.c>*{max-width:916px}
 @media(max-width:1020px){div.c{padding-left:16px!important;padding-right:16px!important}}
 @media(max-width:420px){div.c{padding-left:14px!important;padding-right:14px!important}}
 @media(max-width:359px){div.c{padding-left:10px!important;padding-right:10px!important}}
+
+/* De staart van 80 kleinere clusters op het menuraster (12-09-2026). */
+div.container,main.container,div.page-wrapper,div.page-wrap,body>header.hero,main[style*="max-width:1400px"]{max-width:1200px!important;margin-left:auto!important;margin-right:auto!important;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box}
+/* Een wikkel in een wikkel springt niet nog eens in. */
+div.container div.container,div.container div.page-wrapper,div.container div.page-wrap,div.container body>header.hero,main.container div.container,main.container div.page-wrapper,main.container div.page-wrap,main.container body>header.hero,div.page-wrapper div.container,div.page-wrapper div.page-wrapper,div.page-wrapper div.page-wrap,div.page-wrapper body>header.hero,div.page-wrap div.container,div.page-wrap div.page-wrapper,div.page-wrap div.page-wrap,div.page-wrap body>header.hero,body>header.hero div.container,body>header.hero div.page-wrapper,body>header.hero div.page-wrap,body>header.hero body>header.hero,main[style*="max-width:1400px"] div.container,main[style*="max-width:1400px"] div.page-wrapper,main[style*="max-width:1400px"] div.page-wrap,main[style*="max-width:1400px"] body>header.hero{padding-left:0!important;padding-right:0!important;max-width:none!important}
+/* Lopende tekst op leeslengte; rasters en secties houden de volle breedte. */
+div.container>p,div.container>h1,div.container>h2,div.container>h3,div.container>h4,div.container>ul,div.container>ol,div.container>dl,div.container>blockquote,div.container>article,main.container>p,main.container>h1,main.container>h2,main.container>h3,main.container>h4,main.container>ul,main.container>ol,main.container>dl,main.container>blockquote,main.container>article,div.page-wrapper>p,div.page-wrapper>h1,div.page-wrapper>h2,div.page-wrapper>h3,div.page-wrapper>h4,div.page-wrapper>ul,div.page-wrapper>ol,div.page-wrapper>dl,div.page-wrapper>blockquote,div.page-wrapper>article,div.page-wrap>p,div.page-wrap>h1,div.page-wrap>h2,div.page-wrap>h3,div.page-wrap>h4,div.page-wrap>ul,div.page-wrap>ol,div.page-wrap>dl,div.page-wrap>blockquote,div.page-wrap>article,body>header.hero>p,body>header.hero>h1,body>header.hero>h2,body>header.hero>h3,body>header.hero>h4,body>header.hero>ul,body>header.hero>ol,body>header.hero>dl,body>header.hero>blockquote,body>header.hero>article,main[style*="max-width:1400px"]>p,main[style*="max-width:1400px"]>h1,main[style*="max-width:1400px"]>h2,main[style*="max-width:1400px"]>h3,main[style*="max-width:1400px"]>h4,main[style*="max-width:1400px"]>ul,main[style*="max-width:1400px"]>ol,main[style*="max-width:1400px"]>dl,main[style*="max-width:1400px"]>blockquote,main[style*="max-width:1400px"]>article{max-width:916px}
+/* De profielkaart van een vakbedrijf krijgt dezelfde breedte als zijn
+   Next-tweeling (824px, zie web/lib/raster.ts). */
+div.container>div.card{max-width:824px}
+/* Twee sjablonen zetten de breedte niet op een klasse maar op een naamloze
+   wikkel: een <header> met een blok van 1100px (bestaande-bouw) en een
+   <section> van 1100px in main (nieuwbouw-vs-bestaand). Ze zijn te herkennen
+   aan de kop die erin staat; daarom :has(). Browsers zonder :has() laten die
+   twee sjablonen staan zoals ze waren — 12 pagina's. */
+body>header:has(h1.hero-h1){padding-left:0!important;padding-right:0!important}
+body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){max-width:1200px!important;margin-left:auto;margin-right:auto;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box}
+@media(max-width:1020px){div.container,main.container,div.page-wrapper,div.page-wrap,body>header.hero,main[style*="max-width:1400px"],body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){padding-left:16px!important;padding-right:16px!important}}
+@media(max-width:420px){div.container,main.container,div.page-wrapper,div.page-wrap,body>header.hero,main[style*="max-width:1400px"],body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){padding-left:14px!important;padding-right:14px!important}}
+@media(max-width:359px){div.container,main.container,div.page-wrapper,div.page-wrap,body>header.hero,main[style*="max-width:1400px"],body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){padding-left:10px!important;padding-right:10px!important}}
