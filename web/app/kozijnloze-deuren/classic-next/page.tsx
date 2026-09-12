@@ -327,7 +327,7 @@ export default function ClassicNext() {
           <h2 style={{ ...H2, margin: '0 0 12px' }}>Verder lezen</h2>
           <ul style={{ ...P, paddingLeft: 20, margin: 0 }}>
             <li><a href="/kozijnloze-deuren/" style={{ color: GROEN, fontWeight: 700 }}>Kozijnloze
-              deuren: prijzen en wanneer je kiest</a> &mdash; de merkonafhankelijke gids, met de
+              deuren: prijzen en wanneer je kiest</a> &mdash; de gids, met de
               andere leveranciers ernaast.</li>
             <li><a href="/kozijnloze-deuren/freesdeuren/" style={{ color: GROEN, fontWeight: 700 }}>De
               dertien freesdeuren</a> &mdash; elk ontwerp met foto, en waar het op zijn plek valt.</li>

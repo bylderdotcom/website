@@ -72,7 +72,7 @@ type Bedrijf = {
 // hub-pagina heeft al een vergelijkbare eigen disclaimer). Vervalt met de oude
 // footer → hier als contentregel behouden i.p.v. stilzwijgend laten vallen.
 const DISCLAIMER =
-  'Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is een onafhankelijk platform en geen gietvloerbedrijf.'
+  'Prijzen zijn indicatieve marktbandbreedtes (NL 2026) en verschillen per project, regio en afwerking. Reviewscores zijn afkomstig van de genoemde externe platforms; bekijk de volledige beoordelingen bij de bron. Bylder is zelf geen gietvloerbedrijf.'
 const DISCLAIMER_HTML = `<p style="font-size:11px;color:rgba(61,46,30,0.72);margin-top:24px;max-width:680px;">${DISCLAIMER}</p>`
 
 const TILE_SHAPES = {
