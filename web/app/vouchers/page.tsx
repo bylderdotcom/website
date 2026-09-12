@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import VoucherFaq from './VoucherFaq'
+import Rekenblok from './Rekenblok'
+import { posten, NIET_GEDEKT } from '../../lib/kortingen'
 import { rasterBinnen } from '../../lib/raster'
 
 // Getrouwe port van /vouchers/index.html (Fase 1B).
@@ -199,7 +201,16 @@ export default function VouchersPage() {
         </div>
       </section>
 
+      {/* Het rekenblok staat vóór de merken: eerst zien wat het jou scheelt,
+          dan pas de lijst. Zie web/lib/kortingen.ts voor waarom er geen
+          gemiddelde besparing meer op deze pagina staat. */}
       <section className="section" style={{ background: 'var(--white)', paddingTop: 0 }}>
+        <div className="container">
+          <Rekenblok posten={posten()} nietGedekt={NIET_GEDEKT} />
+        </div>
+      </section>
+
+      <section className="section" style={{ background: 'var(--cream-2)' }}>
         <div className="container">
           <div className="s-label">Slaap &amp; Meubelen</div>
           <h2 className="s-title">Slaapkamer, meubels &amp; wonen</h2>
@@ -207,7 +218,7 @@ export default function VouchersPage() {
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--cream-2)' }}>
+      <section className="section" style={{ background: 'var(--white)' }}>
         <div className="container">
           <div className="s-label">Vloeren &amp; Wandafwerking</div>
           <h2 className="s-title">Vloeren, tegels &amp; stucwerk</h2>
@@ -215,7 +226,7 @@ export default function VouchersPage() {
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--white)' }}>
+      <section className="section" style={{ background: 'var(--cream-2)' }}>
         <div className="container">
           <div className="s-label">Sanitair &amp; Raamdecoratie</div>
           <h2 className="s-title">Badkamer, keuken &amp; raamdecoratie</h2>
@@ -223,7 +234,7 @@ export default function VouchersPage() {
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--cream-2)' }}>
+      <section className="section" style={{ background: 'var(--white)' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: 0 }}>
             <div className="s-label" style={{ textAlign: 'center' }}>Hoe werkt het</div>
@@ -237,7 +248,7 @@ export default function VouchersPage() {
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--white)' }}>
+      <section className="section" style={{ background: 'var(--cream-2)' }}>
         <div className="container">
           <div style={{ textAlign: 'center' }}><div className="s-label">Vragen</div><h2 className="s-title">Veelgestelde vragen over vouchers</h2></div>
           <VoucherFaq />
