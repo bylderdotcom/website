@@ -100,7 +100,7 @@ export default function HomeServices() {
                   <div style={mrow}><span style={mdot('#4C7A4E')} />Stucwerk woonkamer<span style={mprice}>€2.340</span></div>
                   <div style={mrow}><span style={mdot('#C98A2E')} />Meerwerk elektra <small style={{ color: faint, fontSize: 9.5 }}>boven marktprijs</small><span style={mprice}>€4.100</span></div>
                   <div style={mrow}><span style={mdot('#4C7A4E')} />Vloerverwarming<span style={mprice}>€3.150</span></div>
-                  <div style={{ fontSize: 10.5, color: '#3D5A3E', fontWeight: 700, padding: '2px 2px 0' }}>AI checkt elke post · gem. besparing €1.640</div>
+                  <div style={{ fontSize: 10.5, color: '#3D5A3E', fontWeight: 700, padding: '2px 2px 0' }}>AI checkt elke post tegen de marktprijs</div>
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
