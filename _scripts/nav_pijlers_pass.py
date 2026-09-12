@@ -45,7 +45,7 @@ EXCLUDE = ('/output/', '/bylder-seo-', '/en-us/', '/web/', '/node_modules/', '/.
 # Bijwerken zodra er een route naar web/app/ verhuist: de lijst komt uit de
 # "Route (app)"-tabel onderaan de Vercel-bouwlog.
 NEXT_ROUTES = (
-    '3d-sfeerimpressie', 'aannemer', 'assortiment', 'badkamer', 'bouwvergunning',
+    '3d-sfeerimpressie', 'aannemer', 'assortiment', 'badkamer', 'bouwvergunning', 'showrooms',
     'dakkapel', 'eerlijke-prijzen', 'elektricien', 'functies', 'gereedschap-lenen',
     'gietvloer', 'hoe-het-werkt', 'inkoopvoordeel', 'kopen', 'kortingscode',
     'kozijnloze-deuren', 'loodgieter', 'nieuwbouw-project', 'prijzen', 'project',
@@ -77,6 +77,7 @@ def aantal_merken():
 MENUS = [
     ('Assortiment', True, [
         ('/assortiment/', 'Zo werkt ons assortiment', 'Deels eigen aanbod, deels partners — bij elk aanbod staat wie levert', True),
+        ('/showrooms/', 'Showrooms om te bezoeken', 'Per producttype de adressen die de rit waard zijn, en waarom', True),
         ('/kopen/vloeren/', 'Vloeren', None, False),
         ('/kopen/tegels/', 'Tegels', None, False),
         ('/kozijnloze-deuren/', 'Kozijnloze deuren', None, False),

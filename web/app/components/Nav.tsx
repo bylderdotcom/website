@@ -39,6 +39,8 @@ const menus = (MERKEN: number): Menu[] => [
     items: [
       { href: '/assortiment/', title: 'Zo werkt ons assortiment',
         sub: 'Deels eigen aanbod, deels partners — bij elk aanbod staat wie levert', primair: true },
+      { href: '/showrooms/', title: 'Showrooms om te bezoeken',
+        sub: 'Per producttype de adressen die de rit waard zijn, en waarom', primair: true },
       { href: '/kopen/vloeren/', title: 'Vloeren' },
       { href: '/kopen/tegels/', title: 'Tegels' },
       { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren' },
