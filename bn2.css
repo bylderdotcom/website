@@ -102,3 +102,10 @@ body{margin:0}
   [style*="position:sticky;top:100px"],
   .sidebar-card{top:120px!important}
 }
+
+/* aannemer-matching, renovatiekosten en offerte-check op het menuraster (12-09-2026). */
+div.c{max-width:1200px!important;margin:0 auto;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box}
+div.c>*{max-width:916px}
+@media(max-width:1020px){div.c{padding-left:16px!important;padding-right:16px!important}}
+@media(max-width:420px){div.c{padding-left:14px!important;padding-right:14px!important}}
+@media(max-width:359px){div.c{padding-left:10px!important;padding-right:10px!important}}

@@ -261,6 +261,22 @@ MOBIEL_VANGNET = '''
 # gleed er 5–25px onder. Gemeten 11-09-2026: 554 pagina's met de waarde in de
 # tag, 20 via .sidebar-card (die klasse is overal sticky). Alleen boven 1020px:
 # daaronder is het menu 61px en past het ruim.
+# De drie grote statische families — aannemer-matching (2.821),
+# renovatiekosten (2.257) en offerte-check (2.257), samen 7.335 pagina's —
+# gebruiken allemaal dezelfde container: div.c met 1060px, 5% marge,
+# gecentreerd. Op 1440px begon de tekst daardoor 118px rechts van het logo.
+# Nu het menuraster, met de inhoud op de breedte die ze had (916px), links.
+# Alleen div.c: één pagina gebruikt "c" ook als klasse op een energielabel-chip
+# (een span), en die moet blijven zoals hij is.
+RASTER_DRIE_FAMILIES = """
+/* aannemer-matching, renovatiekosten en offerte-check op het menuraster (12-09-2026). */
+div.c{max-width:1200px!important;margin:0 auto;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box}
+div.c>*{max-width:916px}
+@media(max-width:1020px){div.c{padding-left:16px!important;padding-right:16px!important}}
+@media(max-width:420px){div.c{padding-left:14px!important;padding-right:14px!important}}
+@media(max-width:359px){div.c{padding-left:10px!important;padding-right:10px!important}}
+"""
+
 STICKY_ONDER_MENU = """
 /* Net boven 1020px (iPad liggend: 1024) paste het volledige menu niet: het
    stak 18px buiten beeld en de pagina schoof mee. Tot 1180px wat minder ruimte
@@ -368,6 +384,7 @@ CSS = (
     f'transition-duration:.01ms!important;scroll-behavior:auto!important}}}}'
     + MOBIEL_VANGNET
     + STICKY_ONDER_MENU
+    + RASTER_DRIE_FAMILIES
 )
 
 PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'
