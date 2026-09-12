@@ -120,7 +120,7 @@ export default function EerlijkePrijzenPage() {
         <div style={{ maxWidth: 760 }}>
           <div className="badge">Eerlijke prijzen</div>
           <h1 style={{ fontSize: '2.6rem', fontWeight: 800, lineHeight: 1.14, marginBottom: 14 }}>Betaal je een eerlijke prijs voor je verbouwing?</h1>
-          <p style={{ fontSize: '1.12rem', color: 'rgba(61,46,30,0.72)', lineHeight: 1.7, marginBottom: 18 }}>Offerteprijzen lopen sterk uiteen. <strong>96% van de kopers betaalt minstens één post te duur.</strong> Bekijk hieronder de actuele marktbandbreedtes per categorie — en check gratis of jouw prijs marktconform is.</p>
+          <p style={{ fontSize: '1.12rem', color: 'rgba(61,46,30,0.72)', lineHeight: 1.7, marginBottom: 18 }}>Offerteprijzen lopen sterk uiteen, en per post staan ze nergens naast een marktprijs. Bekijk hieronder de actuele marktbandbreedtes per categorie — en check gratis of jouw prijs marktconform is.</p>
           <a href="https://app.bylder.com/registreer" style={{ display: 'inline-block', background: '#3D5A3E', color: '#F5F0E8', padding: '14px 28px', borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: 'none' }}>Check je prijs gratis →</a>
         </div>
 
@@ -145,7 +145,7 @@ export default function EerlijkePrijzenPage() {
         <div style={{ background: '#3D5A3E', borderRadius: 20, padding: 44, textAlign: 'center', margin: '40px 0' }}>
           <p style={{ fontSize: 11, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(245,240,232,0.5)', marginBottom: 10 }}>Bylder Prijs-benchmark</p>
           <h2 style={{ fontSize: '1.7rem', fontWeight: 800, color: '#F5F0E8', marginBottom: 12 }}>Betaal jij een eerlijke prijs?</h2>
-          <p style={{ color: 'rgba(245,240,232,0.72)', marginBottom: 26, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto', fontSize: 15, lineHeight: 1.65 }}>Vul je geoffreerde prijs in en zie direct of die marktconform is. Met gratis account benchmarkt Bylder je hele offerte of meerwerklijst automatisch — gemiddeld €1.840 bespaard.</p>
+          <p style={{ color: 'rgba(245,240,232,0.72)', marginBottom: 26, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto', fontSize: 15, lineHeight: 1.65 }}>Vul je geoffreerde prijs in en zie direct of die marktconform is. Met gratis account benchmarkt Bylder je hele offerte of meerwerklijst automatisch.</p>
           <a href="https://app.bylder.com/registreer" className="cta-primary">Check je prijs gratis →</a>
         </div>
 
