@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import VoucherFaq from './VoucherFaq'
+import { rasterBinnen } from '../../lib/raster'
 
 // Getrouwe port van /vouchers/index.html (Fase 1B).
 // Nav + Footer uit de gedeelde root-layout; de pagina-eigen mini-footer wordt
@@ -172,6 +173,9 @@ const CSS = `
 .vc-main .btn-primary:hover{background:var(--moss-2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(61,90,62,0.3)}
 @media(max-width:900px){.vc-main .vouchers-grid{grid-template-columns:repeat(2,1fr)}.vc-main .how-grid{grid-template-columns:1fr}}
 @media(max-width:540px){.vc-main .vouchers-grid{grid-template-columns:1fr}.vc-main .hero-stats{gap:24px}}
+
+/* Container op het raster van het menu (zie lib/raster.ts). */
+${rasterBinnen('.vc-main')}
 `
 
 export default function VouchersPage() {

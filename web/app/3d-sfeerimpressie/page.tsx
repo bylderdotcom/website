@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { rasterBinnen } from '../../lib/raster'
 
 // Getrouwe port van /3d-sfeerimpressie/index.html (Fase 1B).
 // Nav + Footer uit de gedeelde root-layout; de pagina-eigen footer bevatte enkel
@@ -137,6 +138,9 @@ const CSS = `
 .sf-main .style-tile:hover{border-color:rgba(61,90,62,0.4);}
 .sf-main .cta-primary{display:inline-block;background:#F5F0E8;color:#3D5A3E;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;}
 @media(max-width:768px){.sf-main .container{padding:0 20px;}.sf-main .grid-3{grid-template-columns:1fr;}.sf-main .hero-grid{grid-template-columns:1fr!important;gap:32px!important;}.sf-main aside{position:static!important;}}
+
+/* Container op het raster van het menu (zie lib/raster.ts). */
+${rasterBinnen('.sf-main')}
 `
 
 function Tile({ href, name, sub }: { href: string; name: string; sub: string }) {

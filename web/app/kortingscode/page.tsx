@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { KORTINGSCODE_MAIN_HTML } from './mainHtml'
+import { rasterBinnen } from '../../lib/raster'
 
 // Getrouwe port van /kortingscode/index.html (Fase 1B).
 // Deze hub is een data-gegenereerde index van 522 merk-tegels over 35
@@ -50,6 +51,9 @@ const CSS = `
 .kc-main .brandcard{background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:12px;padding:14px 16px;text-decoration:none;display:flex;align-items:center;justify-content:space-between;gap:8px;transition:border-color .2s}
 .kc-main .brandcard:hover{border-color:#3D5A3E}
 @media(max-width:768px){.kc-main .container{padding-left:20px;padding-right:20px}.kc-main .grid-cards{grid-template-columns:1fr 1fr!important}}
+
+/* Container op het raster van het menu (zie lib/raster.ts). */
+${rasterBinnen('.kc-main')}
 `
 
 export default function KortingscodePage() {

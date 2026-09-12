@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { rasterBinnen } from '../../lib/raster'
 
 // Getrouwe port van /functies/index.html (Fase 1B).
 // De woningtype-toggle (nieuwbouw/bestaand/renovatie) + #hash-preselectie is
@@ -14,6 +15,7 @@ const CSS = `
 .fn-root{--cream:#F5F0E8;--bark:#1A1208;--bark-2:#3D2E1E;--bark-3:rgba(61,46,30,.5);--moss:#3D5A3E;--moss-2:#4E7350;--rust:#B85C38;background:var(--cream);color:var(--bark-2);line-height:1.65}
 .fn-root *,.fn-root *::before,.fn-root *::after{box-sizing:border-box}
 .fn-root .container{max-width:1280px;margin:0 auto;padding:0 48px}
+${rasterBinnen('.fn-root')}
 .fn-root a{color:var(--moss)}
 .fn-root .btn{background:#3D5A3E;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
 .fn-root .btn:hover{background:#4E7350}

@@ -85,7 +85,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           + '.container.bv-raster>*{max-width:var(--bv-inhoud,824px)}'
           + '@media(max-width:1020px){.container.bv-raster{padding:0 16px}}'
           + '@media(max-width:420px){.container.bv-raster{padding:0 14px}}'
-          + '@media(max-width:359px){.container.bv-raster{padding:0 10px}}' }} />
+          + '@media(max-width:359px){.container.bv-raster{padding:0 10px}}'
+          /* Handgeschreven pagina's zetten hun zijmarge in de tag (padding:…px 24px…).
+             Op een telefoon gebruikt het menu 16/14/10px; zonder deze regel begon de
+             tekst daar 10px rechts van het logo. */
+          + '@media(max-width:1020px){main[style*="px 24px"]{padding-left:16px!important;padding-right:16px!important}}'
+          + '@media(max-width:420px){main[style*="px 24px"]{padding-left:14px!important;padding-right:14px!important}}'
+          + '@media(max-width:359px){main[style*="px 24px"]{padding-left:10px!important;padding-right:10px!important}}' }} />
       </head>
       <body style={{ margin: 0, background: '#F5F0E8', fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" }}>
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />

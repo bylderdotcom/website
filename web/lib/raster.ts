@@ -50,3 +50,36 @@ export const RASTER_SJABLOON_CSS =
   + '@media(max-width:1020px){.c,.container{padding:0 16px}}'
   + '@media(max-width:420px){.c,.container{padding:0 14px}}'
   + '@media(max-width:359px){.c,.container{padding:0 10px}}'
+
+/**
+ * De overige clusters (bouwvergunning, ruimtes, slaapkamer, wonen-in,
+ * gereedschap-lenen, kortingscode) gebruiken .container met 1180px en 48px
+ * marge, gecentreerd. Deze regels komen ná hun eigen stijl en zetten die
+ * container op het menuraster. Er staan geen gecentreerde blokken in, dus de
+ * inhoud houdt de volle breedte — ze begint alleen onder het logo.
+ */
+export const RASTER_CLUSTER_CSS =
+  '.container,.c{max-width:1200px;margin:0 auto;padding:0 24px;box-sizing:border-box}'
+  // Sommige fragmenten zetten de breedte in de tag zelf (kortingscode); die wint
+  // anders van de regel hierboven.
+  + '.container[style],.c[style]{max-width:1200px!important;padding-left:24px!important;padding-right:24px!important}'
+  + '@media(max-width:1020px){.container,.c,.container[style],.c[style]{padding-left:16px!important;padding-right:16px!important}}'
+  + '@media(max-width:420px){.container,.c,.container[style],.c[style]{padding-left:14px!important;padding-right:14px!important}}'
+  + '@media(max-width:359px){.container,.c,.container[style],.c[style]{padding-left:10px!important;padding-right:10px!important}}'
+
+/** Zelfde raster, maar binnen de eigen stijlprefix van een pagina (.kc-main …). */
+export function rasterBinnen(prefix: string): string {
+  return `${prefix} .container,${prefix} .c{max-width:1200px;margin:0 auto;padding:0 24px;box-sizing:border-box}`
+    + `${prefix} .container[style],${prefix} .c[style]{max-width:1200px!important;padding-left:24px!important;padding-right:24px!important}`
+    + `@media(max-width:1020px){${prefix} .container,${prefix} .c,${prefix} .container[style],${prefix} .c[style]{padding-left:16px!important;padding-right:16px!important}}`
+    + `@media(max-width:420px){${prefix} .container,${prefix} .c,${prefix} .container[style],${prefix} .c[style]{padding-left:14px!important;padding-right:14px!important}}`
+    + `@media(max-width:359px){${prefix} .container,${prefix} .c,${prefix} .container[style],${prefix} .c[style]{padding-left:10px!important;padding-right:10px!important}}`
+}
+
+/** wonen-in wikkelt zijn artikel in .wi (820px, gecentreerd). */
+export const RASTER_WONEN_IN_CSS =
+  '.wi{max-width:1200px;margin:0 auto;padding:0 24px;box-sizing:border-box}'
+  + '.wi>*{max-width:780px}'
+  + '@media(max-width:1020px){.wi{padding:0 16px}}'
+  + '@media(max-width:420px){.wi{padding:0 14px}}'
+  + '@media(max-width:359px){.wi{padding:0 10px}}'
