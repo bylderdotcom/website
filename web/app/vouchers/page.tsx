@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       'Exclusieve kortingsvouchers voor kopers van een nieuwbouwwoning. 10% bij DRT Contemporary, Goossens en meer; bij Auping op het reguliere assortiment, niet bovenop een sale.',
     url: 'https://www.bylder.com/vouchers/',
     locale: 'nl_NL',
-    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=2' }],
+    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=3' }],
   },
   twitter: {
     card: 'summary_large_image',

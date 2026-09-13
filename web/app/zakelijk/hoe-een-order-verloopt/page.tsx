@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: 'Van doorverwijzing tot uitbetaling, in gewone taal.',
     url: 'https://www.bylder.com/zakelijk/hoe-een-order-verloopt/',
     type: 'article',
-    images: [{ url: 'https://www.bylder.com/og-image.jpg' }],
+    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=3' }],
   },
   twitter: { card: 'summary_large_image' },
 }

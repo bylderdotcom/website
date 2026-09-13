@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: 'https://www.bylder.com/',
     type: 'website',
     locale: 'nl_NL',
-    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=2' }],
+    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=3' }],
   },
   twitter: {
     card: 'summary_large_image',

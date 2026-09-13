@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       'Alle functies per woningtype: nieuwbouw, bestaande bouw en renovatie. Zie wat gratis is en wat gratis voor bewoners.',
     url: 'https://www.bylder.com/functies/',
-    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=2' }],
+    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=3' }],
   },
 }
 
