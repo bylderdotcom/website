@@ -96,7 +96,7 @@ function Kaart({ kop, stand, standTekst, children }: {
 
 export default function ClassicNextPagina() {
   return (
-    <main style={{ maxWidth: 960, boxSizing: 'border-box', margin: '0 auto', padding: '48px 24px 80px', color: '#1A1208', display: 'grid', gap: 54 }}>
+    <main style={{ maxWidth: 1200, boxSizing: 'border-box', margin: '0 auto', padding: '48px 24px 80px', color: '#1A1208', display: 'grid', gap: 54 }}>
 
       <header style={{ display: 'grid', gap: 16 }}>
         <div style={{ ...MONO, display: 'flex', flexWrap: 'wrap', gap: '8px 18px' }}>
@@ -130,7 +130,7 @@ export default function ClassicNextPagina() {
         </div>
         <figure style={{ margin: 0, display: 'grid', gap: 14, background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, padding: 24 }}>
           <div style={{ overflowX: 'auto' }}>
-            <svg viewBox="0 0 900 590" role="img" style={{ display: 'block', minWidth: 800, maxWidth: '100%', height: 'auto', color: '#3D2E1E' }}
+            <svg viewBox="0 0 900 590" role="img" style={{ display: 'block', minWidth: 800, width: '100%', height: 'auto', color: '#3D2E1E' }}
               aria-label="Schema in drie fasen. Vóór de beurs staan vijf deurpagina's, een aankondigingsbalk op de hele site, de aanvraag voor 25 gratis kaarten en een ledenvoucher van 5 procent — alles live. Op de beurs: twee korte webadressen voor de eigen telefoon en voor het scherm op de stand, en de configurator met offerteaanvraag — alles live. Na de beurs staat het automatische account met Mijn offertes live; de mailing en de vermelding van showroom Uden en het Bylder-adviespunt in Rotterdam moeten nog gebouwd worden. Alle drie de fasen komen uit in het offerteloket, waarna Classic Next offreert, de klant in Bylder tekent en een vakman plaatst.">
               <defs>
                 <marker id="cnpijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -442,10 +442,13 @@ export default function ClassicNextPagina() {
       <section style={{ display: 'grid', gap: 16 }}>
         <div style={{ display: 'grid', gap: 8 }}>
           <span style={LABEL}>Wat we nog nodig hebben</span>
-          <h2 style={H2}>Drie dingen, en waarvoor</h2>
+          <h2 style={H2}>Zes dingen, en waarvoor</h2>
         </div>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 10 }}>
           {[
+            ['Thijs en Machiel testen de configurator.', 'Klik alle dertien ontwerpen, kleuren, beslag en draairichtingen door en zet op een rij wat niet klopt of ontbreekt — een verkeerde benaming, een scharnier dat er niet is, een combinatie die jullie niet leveren. Wat wij niet weten, kunnen we niet repareren, en na 2 oktober staat het vast.'],
+            ['Foto\u2019s van het fineer in hoge resolutie.', 'De configurator toont fineer nu als gerenderd beeld; voor de productpagina\u2019s en de mailing willen we de echte houtnerf laten zien. Per fineersoort één scherpe opname, minimaal 2.000 pixels breed.'],
+            ['Materiaalstalen voor het adviespunt in Rotterdam.', 'Fronten in de gangbare RAL-kleuren, de fineersoorten, en het beslag in alle uitvoeringen. Dat is wat een bezoeker daar in handen wil hebben voordat hij tekent — zonder naar Uden te rijden.'],
             ['Een reactietermijn op offertes.', 'Ons voorstel is vijf werkdagen. Een warme beurslead koelt in een week af, en de koper die op de stand enthousiast was, is dan alweer bij een ander gaan kijken.'],
             ['De openingstijden van de showroom in Uden.', 'Die hebben we nodig om het adres in de showroomgids te zetten. Nu staat er op jullie site geen tijd, alleen bellen of mailen — dat is voor een koper een drempel.'],
             ['Wie het scherm op de stand bedient.', 'En of dat een laptop of een tablet wordt. Aan die keuze hangt een proefdraai vóór 2 oktober vast, want beurs-wifi is berucht en de configurator is een 3D-tool.'],
@@ -475,7 +478,7 @@ export default function ClassicNextPagina() {
             </thead>
             <tbody>
               {[
-                ['15–19 sep', 'Afspraken op papier: plaatsing, reactietermijn, showroomgegevens', 'samen'],
+                ['15–19 sep', 'Afspraken op papier: plaatsing, reactietermijn, showroomgegevens. Thijs en Machiel testen de configurator; fineerfoto\u2019s en stalen onderweg', 'samen'],
                 ['22–26 sep', 'De mailing na de beurs bouwen en testen; binnendeuren in de showroomgids', 'Bylder'],
                 ['29 sep – 2 okt', 'QR-code, weergave op beurs-wifi, proefdraaien met het standteam', 'samen'],
                 ['5 oktober', 'Aanvragen voor de 25 kaarten sluit', 'bezoekers'],
