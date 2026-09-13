@@ -41,12 +41,12 @@
   <!-- stat pills -->
   <g font-family="Helvetica, Arial, sans-serif">
     <rect x="840" y="141" width="280" height="104" rx="14" fill="#F5F0E8" fill-opacity="0.06" stroke="#F5F0E8" stroke-opacity="0.10"/>
-    <text x="866" y="196" font-weight="800" font-size="30" letter-spacing="-1" fill="#F5F0E8">&#8364;4.200<tspan fill="#8AAE8B">+</tspan></text>
-    <text x="866" y="224" font-weight="500" font-size="13" fill="#F5F0E8" fill-opacity="0.42">Gemiddelde besparing per lid</text>
+    <text x="866" y="196" font-weight="800" font-size="30" letter-spacing="-1" fill="#F5F0E8">56</text>
+    <text x="866" y="224" font-weight="500" font-size="13" fill="#F5F0E8" fill-opacity="0.42">Woonmerken met ledenkorting</text>
 
     <rect x="840" y="263" width="280" height="104" rx="14" fill="#F5F0E8" fill-opacity="0.06" stroke="#F5F0E8" stroke-opacity="0.10"/>
-    <text x="866" y="318" font-weight="800" font-size="30" letter-spacing="-1" fill="#F5F0E8">40<tspan fill="#8AAE8B">+</tspan></text>
-    <text x="866" y="346" font-weight="500" font-size="13" fill="#F5F0E8" fill-opacity="0.42">Woonmerken met korting</text>
+    <text x="866" y="318" font-weight="800" font-size="30" letter-spacing="-1" fill="#F5F0E8">995<tspan fill="#8AAE8B">+</tspan></text>
+    <text x="866" y="346" font-weight="500" font-size="13" fill="#F5F0E8" fill-opacity="0.42">Nieuwbouwprojecten gevolgd</text>
 
     <rect x="840" y="385" width="280" height="104" rx="14" fill="#F5F0E8" fill-opacity="0.06" stroke="#F5F0E8" stroke-opacity="0.10"/>
     <text x="866" y="440" font-weight="800" font-size="30" letter-spacing="-1" fill="#F5F0E8">&#8364;99</text>
