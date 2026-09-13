@@ -108,7 +108,10 @@ function getMainHtmlRaw(page: KopenPage): string {
 
 function parseRobots(robots?: string) {
   if (!robots) return { index: true, follow: true }
-  if (robots.includes('noindex')) return { index: false, follow: false }
+  // noindex betekent hier 'niet opnemen', niet 'volg de links niet'. De rest van
+  // de site gebruikt 'noindex, follow' zodat het interne linkweefsel heel blijft;
+  // met nofollow zouden 30.000 stadspagina's hun eigen categorie afsnijden.
+  if (robots.includes('noindex')) return { index: false, follow: !robots.includes('nofollow') }
   const r: any = { index: true, follow: true }
   if (robots.includes('max-snippet:-1')) r['max-snippet'] = -1
   if (robots.includes('max-image-preview:large')) r['max-image-preview'] = 'large'
