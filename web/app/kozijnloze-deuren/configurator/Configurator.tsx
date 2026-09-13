@@ -9,6 +9,7 @@ import { maakTexturen } from './texturen'
 import KleurKiezer, { dichtstbijzijndeRal } from './KleurKiezer'
 import { KRUKKEN, SLOTEN, SCHARNIEREN } from './beslag'
 import OfferteFormulier from '../../components/OfferteFormulier'
+import OntwerpBewaren from '../../components/OntwerpBewaren'
 import GerenderdBeeld from './GerenderdBeeld'
 
 // Configurator voor kozijnloze deuren van Classic Next.
@@ -859,6 +860,18 @@ export default function Configurator() {
               navigator.clipboard?.writeText(window.location.href)
               setGekopieerd(true); setTimeout(() => setGekopieerd(false), 2000)
             }}>{gekopieerd ? 'Link gekopieerd' : 'Deel deze configuratie'}</button>
+            {/* De kleine stap vóór de offerte: alleen een e-mailadres, en het
+                ontwerp komt terug in de mail. Op de beurs is dit wat overblijft
+                van wie samenstelt en doorloopt. */}
+            <OntwerpBewaren
+              product="kozijnloze-deur"
+              bron="configurator-deur"
+              specificatie={specTekst}
+              configuratie={{ deuren }}
+              hoeveelheden={{ deuren: deuren.length }}
+              urlFn={() => window.location.href}
+              knopStijl={knop}
+            />
           </div>
           <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '12px 0 0', lineHeight: 1.6 }}>
             Deuren van <a href="/kozijnloze-deuren/classic-next/"
