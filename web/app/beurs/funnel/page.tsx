@@ -1,13 +1,18 @@
 import type { Metadata } from 'next'
 
 /**
- * /partners/classic-next/ — het samenwerkingsschema om met Classic Next te delen.
+ * /beurs/funnel/ — het samenwerkingsschema om met Classic Next te delen.
  *
  * WAAROM DEZE PAGINA BESTAAT
  * Daniel wilde één link kunnen sturen in plaats van een PDF: wat staat er klaar
  * rond de Beurs Eigen Huis, wat moet er nog gebouwd worden, en wat hebben we van
  * Classic Next nodig. Een pagina is bovendien bij te werken zonder opnieuw te
  * versturen — als er iets live gaat, klopt de link vanzelf weer.
+ *
+ * WAAROM ONDER /beurs/
+ * Het adres moet door de telefoon te noemen zijn. /beurs en /beurs/tablet gaan
+ * al naar de configurator (tijdelijke omleidingen in vercel.json, exacte paden),
+ * dus /beurs/funnel botst daar niet mee en hoort er qua naam wél bij.
  *
  * NOINDEX, EN NIET IN DE SITEMAP
  * Dit is een deelbaar document, geen publieke pagina. Hij staat nergens in de
@@ -26,7 +31,7 @@ export const metadata: Metadata = {
   description:
     'Van landingspagina tot getekende offerte: welke onderdelen draaien, wat er nog gebouwd wordt, '
     + 'en wat we van Classic Next nodig hebben voor de Beurs Eigen Huis.',
-  alternates: { canonical: `${SITE}/partners/classic-next/` },
+  alternates: { canonical: `${SITE}/beurs/funnel/` },
   robots: { index: false, follow: false },
 }
 

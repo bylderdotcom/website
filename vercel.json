@@ -6,6 +6,16 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/partners/classic-next",
+      "destination": "/beurs/funnel/",
+      "permanent": false
+    },
+    {
+      "source": "/partners/classic-next/",
+      "destination": "/beurs/funnel/",
+      "permanent": false
+    },
+    {
       "source": "/beurs",
       "destination": "/kozijnloze-deuren/configurator/?bron=beurs",
       "permanent": false
