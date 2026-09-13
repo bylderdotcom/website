@@ -5,6 +5,7 @@ import Script from 'next/script'
 import { HOME_STYLE } from './homeHtml'
 import { HOME_DELEN } from './homeSections'
 import HomeServices from './HomeServices'
+import ConfiguratorCTA from './components/ConfiguratorCTA'
 
 // De vier pijlers (HomeServices) staan niet meer op de homepage. Ze waren 1.383
 // pixels en zeiden op een abstract niveau hetzelfde als de drie stappen erboven.
@@ -12,6 +13,14 @@ import HomeServices from './HomeServices'
 // dat is gecontroleerd, niet aangenomen. De component blijft bestaan voor andere
 // pagina's.
 const PIJLERS_NA = -1
+
+// De configurator stond op vier productpagina's, maar niet op de pagina waar de
+// meeste mensen binnenkomen. Hij hoort na "Op maat laten maken": dat deel gaat
+// over dingen die voor jouw woning gemaakt worden, en de configurator is het
+// enige op de site waar je dat zelf kunt doen en er meteen een offerte op kunt
+// aanvragen. Niet hoger: boven de vouw staat de woningzoeker, en die is de
+// eerste vraag van de bezoeker.
+const CONFIGURATOR_NA = 5
 
 // Getrouwe port van de homepage-body. De secties + overlays worden byte-getrouw
 // via dangerouslySetInnerHTML gerenderd (behoudt exact alle markup, ids, Tailwind-
@@ -420,6 +429,18 @@ export default function HomeClient() {
         <div key={i}>
           <div dangerouslySetInnerHTML={{ __html: deel }} />
           {i === PIJLERS_NA && <HomeServices />}
+          {i === CONFIGURATOR_NA && (
+            <div style={{ background: '#F5F0E8', padding: '0 5% 72px' }}>
+              <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+                <ConfiguratorCTA
+                  marge="0"
+                  titel="Teken je eigen deuren, in elke kleur die je wilt"
+                  aanleiding={'Kies het groefpatroon en de RAL-kleur, en zie meteen hoe de deur in je wand '
+                    + 'staat. Wat je samenstelt mail je naar jezelf of vraag je direct aan.'}
+                />
+              </div>
+            </div>
+          )}
         </div>
       ))}
 
