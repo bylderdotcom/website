@@ -11,6 +11,7 @@ import type { Metadata } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
 import { opRaster } from './raster'
+import { metVerleider } from './verleider'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'gietvloer'
@@ -374,7 +375,7 @@ function getBedrijfHtml(page: GietvloerPage): string {
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
   const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
-  return body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`)
+  return metVerleider(body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`), 'gietvloer')
 }
 
 const _hubCache: Record<string, string> = {}
