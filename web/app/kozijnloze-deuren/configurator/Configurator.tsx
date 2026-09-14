@@ -487,8 +487,15 @@ export default function Configurator() {
           {/* In de render zit de kruk links, dus de scharnieren rechts. Kiest de
               koper scharnieren links, dan spiegelen we het beeld. Altijd
               gemonteerd, alleen verborgen in 3D: zie GerenderdBeeld. */}
-          <GerenderdBeeld ontwerp={ontwerp.id} kleurHex={lakKleur} spiegel={huidig.scharnier === 'links'}
-            zichtbaar={toonFoto} />
+          {/* Pas ná het monteren, want vóór dat moment staat de staat nog op het
+              standaardontwerp en is het adres nog niet gelezen. Wie via een
+              bewaarde link uit de beursmailing binnenkomt, haalde anders eerst
+              de vier beelden van Dawn op en daarna pas die van zijn eigen
+              ontwerp — bijna een megabyte die hij nooit te zien krijgt. */}
+          {gemonteerd && (
+            <GerenderdBeeld ontwerp={ontwerp.id} kleurHex={lakKleur} spiegel={huidig.scharnier === 'links'}
+              zichtbaar={toonFoto} />
+          )}
         </div>
         <div role="group" aria-label="Weergave" style={{ display: 'flex', gap: 4, margin: '10px 0 0' }}>
           <button onClick={() => setWeergave('foto')} aria-pressed={toonFoto} disabled={huidig.afwerking === 'fineer'}
