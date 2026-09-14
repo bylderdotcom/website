@@ -152,9 +152,23 @@ export default function GerenderdBeeld(
     // wissel maakte er eerst een nieuwe bij, en browsers gooien bij te veel
     // contexten de oudste weg.
     <div aria-hidden={!zichtbaar} style={{ position: 'absolute', inset: 0, background: '#2A2723', display: zichtbaar ? 'block' : 'none' }}>
+      {/* Wachtbeeld. De vier renders van een ontwerp zijn samen bijna een
+          megabyte; tot ze binnen zijn viel hier een donker vlak te zien — op een
+          snelle verbinding drie tot vijf seconden lang, op de beursvloer langer.
+          Dit beeld is 1,4 kB en staat er dus vrijwel meteen.
+
+          Wazig, en met opzet. Het toont de standaardkleur, terwijl de bezoeker
+          via een bewaarde link al een andere kleur kan hebben gekozen. Scherp
+          zou dat een verkeerd antwoord zijn; wazig leest het als "hij komt
+          eraan" — en dat klopt wél. */}
+      <img src={`${MAP}/wachtbeeld.webp`} alt="" aria-hidden="true" width={480} height={482}
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
+                 filter: 'blur(7px) saturate(0.8)', transform: 'scale(1.04)',
+                 opacity: laadt && !fout ? 1 : 0, transition: 'opacity .35s',
+                 pointerEvents: 'none' }} />
       <canvas ref={doek} aria-label="Gerenderde deur in de gekozen kleur"
-        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block',
-                 opacity: laadt ? 0.35 : 1, transition: 'opacity .25s' }} />
+        style={{ position: 'relative', width: '100%', height: '100%', objectFit: 'cover', display: 'block',
+                 opacity: laadt ? 0 : 1, transition: 'opacity .35s' }} />
       {fout && (
         <p style={{ position: 'absolute', inset: 'auto 16px 16px', margin: 0, color: '#F5F0E8', fontSize: 14,
                     background: 'rgba(20,16,11,.7)', padding: '10px 12px', borderRadius: 8 }}>
