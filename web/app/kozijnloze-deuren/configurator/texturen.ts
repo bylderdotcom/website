@@ -49,11 +49,17 @@ function tekenHoogte(groeven: Groef[]): ImageData {
       const my = gr.inset * BREEDTE      // gelijke marge in mm, niet in fractie
       g.rect(mx, my, BREEDTE - 2 * mx, HOOGTE - 2 * my)
     } else if (gr.soort === 'boog') {
-      g.arc(gr.cx * BREEDTE, gr.cy * HOOGTE, gr.r * BREEDTE, 0, Math.PI * 2)
+      // Het raster is isotroop — 1,5 mm per pixel in beide richtingen — dus een
+      // cirkel in de textuur blijft een cirkel op de deur.
+      const rad = (d: number) => (d * Math.PI) / 180
+      g.arc(gr.cx * BREEDTE, gr.cy * HOOGTE, gr.r * BREEDTE,
+            rad(gr.van ?? 0), rad(gr.tot ?? 360))
     } else if (gr.soort === 'chevron') {
+      // De punt wijst omhoog. Hij wees omlaag; gemeld door Classic Next op
+      // 14-09-2026 ("frees zit ondersteboven gespiegeld").
       const y = gr.y * HOOGTE, h = gr.hoogte * HOOGTE
-      const m = 0.10 * BREEDTE
-      g.moveTo(m, y); g.lineTo(BREEDTE / 2, y + h); g.lineTo(BREEDTE - m, y)
+      const m = 0.135 * BREEDTE            // binnen het kader van Ember
+      g.moveTo(m, y + h); g.lineTo(BREEDTE / 2, y); g.lineTo(BREEDTE - m, y + h)
     }
     g.stroke()
   }
