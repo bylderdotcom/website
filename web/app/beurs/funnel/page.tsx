@@ -100,7 +100,7 @@ export default function ClassicNextPagina() {
 
       <header style={{ display: 'grid', gap: 16 }}>
         <div style={{ ...MONO, display: 'flex', flexWrap: 'wrap', gap: '8px 18px' }}>
-          <span>Bylder × Classic Next</span><span>13 september 2026</span>
+          <span>Bylder × Classic Next</span><span>Bijgewerkt 15 september 2026</span>
           <span style={{ color: ROEST, fontWeight: 700 }}>Beurs Eigen Huis: 9–11 oktober</span>
         </div>
         <h1 style={{ fontSize: 'clamp(2rem,4.6vw,2.9rem)', fontWeight: 800, letterSpacing: '-0.028em', lineHeight: 1.05, margin: 0, textWrap: 'balance' }}>
@@ -108,8 +108,8 @@ export default function ClassicNextPagina() {
         </h1>
         <p style={{ ...P, fontSize: 17.5, maxWidth: '64ch' }}>
           Van de eerste klik tot een getekende offerte. Dit schema laat zien wat er vandaag al draait,
-          wat er nog gebouwd wordt vóór de beurs, en wat we van jullie nodig hebben. Alles wat groen
-          staat, is op 13 september gecontroleerd op bylder.com.
+          wat er nog gebouwd wordt vóór de beurs, en wat we van jullie nodig hebben. Eén pagina, altijd
+          de laatste stand — hier hoef je geen mail voor terug te zoeken.
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
           <Stand soort="live" tekst="Staat live" />
@@ -117,6 +117,39 @@ export default function ClassicNextPagina() {
           <Stand soort="bouw" tekst="Nog te bouwen" />
         </div>
       </header>
+
+      <section style={{ display: 'grid', gap: 16 }}>
+        <div style={{ display: 'grid', gap: 8 }}>
+          <span style={{ ...LABEL, color: GROEN }}>Verwerkt · 15 september</span>
+          <h2 style={H2}>Wat er sinds jullie test is veranderd</h2>
+          <p style={P}>
+            Thijs stuurde op 14 september zijn bevindingen. Alles hieronder staat inmiddels live en is
+            te bekijken op{' '}
+            <a href="/kozijnloze-deuren/configurator/" style={{ color: GROEN, fontWeight: 700 }}>
+              de configurator
+            </a>.
+          </p>
+        </div>
+        <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 10 }}>
+          {[
+            ['De magneetsloten staan erop.',
+             'De foto\u2019s hadden we al, ze stonden alleen niet op het scherm. Je kiest nu eerst het type \u2014 loop, dag- en nacht, vrij/bezet \u2014 en daaronder de afwerking, met foto erbij.'],
+            ['Tien ontwerpen gecorrigeerd, niet zeven.',
+             'Jullie mail zei \u201cbijv.\u201d, en dat bleek letterlijk. Na natekenen van alle dertien productfoto\u2019s weken er tien af. Naast jullie zeven: Aura had tien groeven waar het er dertien zijn, en de kaders van Solace en Halo stonden te dicht op de rand. Bij Shadow en Noir klopte ook het aantal \u2014 wij tekenden er drie en vijf, jullie foto\u2019s tonen er vier en vier.'],
+            ['Horizon en Ember hadden een vormfout.',
+             'Horizon is nu een halve cirkel met de platte kant tegen de linker kaderlijn, in plaats van een cirkel in het midden. De chevrons van Ember wijzen weer omhoog.'],
+            ['Oslo Oak zit in de configurator.',
+             'Het Unilin-materiaal dat Thijs stuurde was ruim bruikbaar en is meteen ingebouwd. Kies bij Afwerking \u201cFineer\u201d en dan Oslo Oak. De nerf ligt op ware grootte: de maat (1300 bij 1300 mm) stond in het V-Ray-bestand.'],
+            ['3D is nu de standaardweergave.',
+             'Het gerenderde beeld is destijds gemaakt met de oude, verkeerde maten en klopt dus niet meer. De 3D-weergave tekent de groeven uit onze eigen gegevens en is wél juist. Zodra er nieuwe renders zijn, draaien we dit terug.'],
+          ].map(([kop, tekst]) => (
+            <li key={kop} style={{ display: 'grid', gridTemplateColumns: '20px 1fr', gap: 12, background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 12, padding: '14px 16px', fontSize: 14.5, lineHeight: 1.6 }}>
+              <span aria-hidden="true" style={{ color: GROEN, fontWeight: 800, fontSize: 16, lineHeight: '22px' }}>&#10003;</span>
+              <span style={{ color: `${INKT}0.8)` }}><b style={{ color: '#1A1208' }}>{kop}</b> {tekst}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section style={{ display: 'grid', gap: 18 }}>
         <div style={{ display: 'grid', gap: 8 }}>
@@ -131,7 +164,7 @@ export default function ClassicNextPagina() {
         <figure style={{ margin: 0, display: 'grid', gap: 14, background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, padding: 24 }}>
           <div style={{ overflowX: 'auto' }}>
             <svg viewBox="0 0 900 590" role="img" style={{ display: 'block', minWidth: 800, width: '100%', height: 'auto', color: '#3D2E1E' }}
-              aria-label="Schema in drie fasen. Vóór de beurs staan vijf deurpagina's, een aankondigingsbalk op de hele site, de aanvraag voor 25 gratis kaarten en een ledenvoucher van 5 procent — alles live. Op de beurs: twee korte webadressen voor de eigen telefoon en voor het scherm op de stand, en de configurator met offerteaanvraag — alles live. Na de beurs staat het automatische account met Mijn offertes live; de mailing en de vermelding van showroom Uden en het Bylder-adviespunt in Rotterdam moeten nog gebouwd worden. Alle drie de fasen komen uit in het offerteloket, waarna Classic Next offreert, de klant in Bylder tekent en een vakman plaatst.">
+              aria-label="Schema in drie fasen. Vóór de beurs staan vijf deurpagina's, een aankondigingsbalk op de hele site, de aanvraag voor 25 gratis kaarten en een ledenvoucher van 5 procent — alles live. Op de beurs: twee korte webadressen voor de eigen telefoon en voor het scherm op de stand, en de configurator met offerteaanvraag — alles live. Na de beurs staat het automatische account met Mijn offertes live; ook de mailing na de beurs staat klaar; alleen de vermelding van showroom Uden en het Bylder-adviespunt in Rotterdam moet nog in de showroomgids. Alle drie de fasen komen uit in het offerteloket, waarna Classic Next offreert, de klant in Bylder tekent en een vakman plaatst.">
               <defs>
                 <marker id="cnpijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
                   <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
@@ -198,10 +231,10 @@ export default function ClassicNextPagina() {
                 <text x="644" y="92" fontSize="11.5" fill="currentColor" fillOpacity=".78">aanvrager krijgt er vanzelf een</text>
                 <text x="644" y="105" fontSize="10" fontFamily="Space Mono, monospace" fill={GROEN}>LIVE</text>
 
-                <rect x="630" y="120" width="240" height="58" rx="9" fill="none" stroke={ROEST} strokeWidth="1.6" strokeDasharray="5 4" />
+                <rect x="630" y="120" width="240" height="58" rx="9" fill="none" stroke={GROEN} strokeWidth="1.6" />
                 <text x="644" y="142" fontSize="13" fontWeight="700" fill="currentColor">Mailing na de beurs</text>
                 <text x="644" y="160" fontSize="11.5" fill="currentColor" fillOpacity=".78">naar iedereen die iets samenstelde</text>
-                <text x="644" y="173" fontSize="10" fontFamily="Space Mono, monospace" fill={ROEST}>TE BOUWEN</text>
+                <text x="644" y="173" fontSize="10" fontFamily="Space Mono, monospace" fill={GROEN}>LIVE · verzendknop klaar</text>
 
                 <rect x="630" y="188" width="240" height="76" rx="9" fill="none" stroke={ROEST} strokeWidth="1.6" strokeDasharray="5 4" />
                 <text x="644" y="210" fontSize="13" fontWeight="700" fill="currentColor">Waar je de deur ziet</text>
@@ -423,7 +456,7 @@ export default function ClassicNextPagina() {
               Classic Next heeft een eigen showroom in Uden. Dat is het adres waar een koper het
               systeem compleet kan zien: het onzichtbare kozijn, de scharnieren, het magneetslot.
             </p>
-            <span style={MONO}>Oostwijk 23b, 5406 XT Uden</span>
+            <span style={MONO}>Oostwijk 23b, 5406 XT Uden &middot; di t/m vr 10:00&#8211;16:00, op afspraak</span>
           </Kaart>
 
           <Kaart kop="Adviespunt Rotterdam" stand="komt" standTekst="Komt eraan">
@@ -441,21 +474,46 @@ export default function ClassicNextPagina() {
 
       <section style={{ display: 'grid', gap: 16 }}>
         <div style={{ display: 'grid', gap: 8 }}>
-          <span style={LABEL}>Wat we nog nodig hebben</span>
-          <h2 style={H2}>Zes dingen, en waarvoor</h2>
+          <span style={{ ...LABEL, color: ROEST }}>Wat we nog nodig hebben</span>
+          <h2 style={H2}>Vijf dingen, en waarvoor</h2>
+          <p style={P}>
+            Bijgewerkt op 15 september. Drie punten van de vorige lijst zijn beantwoord en staan
+            onderaan afgevinkt.
+          </p>
         </div>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 10 }}>
           {[
-            ['Thijs en Machiel testen de configurator.', 'Klik alle dertien ontwerpen, kleuren, beslag en draairichtingen door en zet op een rij wat niet klopt of ontbreekt — een verkeerde benaming, een scharnier dat er niet is, een combinatie die jullie niet leveren. Wat wij niet weten, kunnen we niet repareren, en na 2 oktober staat het vast.'],
-            ['Foto\u2019s van het fineer in hoge resolutie.', 'De configurator toont fineer nu als gerenderd beeld; voor de productpagina\u2019s en de mailing willen we de echte houtnerf laten zien. Per fineersoort één scherpe opname, minimaal 2.000 pixels breed.'],
-            ['Materiaalstalen voor het adviespunt in Rotterdam.', 'Fronten in de gangbare RAL-kleuren, de fineersoorten, en het beslag in alle uitvoeringen. Dat is wat een bezoeker daar in handen wil hebben voordat hij tekent — zonder naar Uden te rijden.'],
-            ['Een reactietermijn op offertes.', 'Ons voorstel is vijf werkdagen. Een warme beurslead koelt in een week af, en de koper die op de stand enthousiast was, is dan alweer bij een ander gaan kijken.'],
-            ['De openingstijden van de showroom in Uden.', 'Die hebben we nodig om het adres in de showroomgids te zetten. Nu staat er op jullie site geen tijd, alleen bellen of mailen — dat is voor een koper een drempel.'],
-            ['Wie het scherm op de stand bedient.', 'En of dat een laptop of een tablet wordt. Aan die keuze hangt een proefdraai vóór 2 oktober vast, want beurs-wifi is berucht en de configurator is een 3D-tool.'],
+            ['Controleer onze correcties op de tien ontwerpen.',
+             'Vooral Aura, Solace en Halo: die hebben wij aangepast op basis van jullie productfoto\u2019s, zonder dat jullie ze noemden. Meten wij dertien groeven bij Aura waar het er twaalf of veertien zijn, dan staat dat straks in elke offerte. Dit willen we vóór 2 oktober vast hebben.'],
+            ['De overige fineerdecors, in dezelfde vorm als Oslo Oak.',
+             'Dus de map met de tileable texturen (kleur, diepte, glans) plus het V-Ray-bestand \u2014 dat laatste niet weglaten, daar staat de maat in. 4K is ruim genoeg, 8K hoeft niet. En: onder welke naam verkopen jullie het? \u201c0H598-W07 Oslo Oak tanned red\u201d is een artikelnummer, geen naam waar een koper iets aan heeft.'],
+            ['Mogen wij het Unilin-materiaal gebruiken?',
+             'Dit zijn beelden van Unilin, niet van Classic Next. Jullie hebben er vermoedelijk gebruiksrecht op voor eigen verkoop, maar wij zetten ze op een commerciële site. Graag bevestigd, en of er een bronvermelding bij moet. Moet dat met Unilin geregeld worden, dan liever nu dan achteraf.'],
+            ['De 3D-modellen of renders van de dertien deuren.',
+             'CAD, STEP, of de bestanden waar jullie productfoto\u2019s uit komen. Daarmee maken we het gerenderde beeld weer kloppend, in plaats van het na te bouwen op basis van een foto. Zolang dat er niet is, blijft 3D de standaardweergave.'],
+            ['Een kleinere set materiaalstalen vóór 9 oktober.',
+             'Jullie schreven dat de samples ná de beurs komen. Daar wringt het: het adviespunt in Rotterdam is juist bedoeld voor de bezoeker die op de beurs enthousiast wordt en vóór het tekenen iets wil voelen. Wat ons betreft volstaat één gespoten paneel, één invisible scharnier en één magneetslot. De rest mag daarna volgen.'],
           ].map(([kop, tekst]) => (
             <li key={kop} style={{ display: 'grid', gridTemplateColumns: '20px 1fr', gap: 12, background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 12, padding: '14px 16px', fontSize: 14.5, lineHeight: 1.6 }}>
               <span aria-hidden="true" style={{ width: 16, height: 16, border: `2px solid ${INKT}0.45)`, borderRadius: 4, marginTop: 4 }} />
               <span style={{ color: `${INKT}0.8)` }}><b style={{ color: '#1A1208' }}>{kop}</b> {tekst}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
+          <span style={{ ...LABEL, color: GROEN }}>Beantwoord</span>
+        </div>
+        <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 8 }}>
+          {[
+            ['Reactietermijn op offertes.', 'Vijf werkdagen, akkoord bevestigd op 14 september.'],
+            ['Openingstijden showroom Uden.', 'Dinsdag t/m vrijdag, 10:00\u201316:00, bij voorkeur op afspraak. Gaat zo de showroomgids in.'],
+            ['Wie het scherm op de stand bedient.', 'Een tablet met eigen hotspot; Classic Next test dat zelf. Tip: open de configurator vóór de beurs één keer op díé tablet, dan staan de zware onderdelen in het geheugen van het apparaat.'],
+            ['Thijs en Machiel testen de configurator.', 'Gedaan op 14 september. Die test leverde zeven meldingen op en bij natekenen tien echte afwijkingen \u2014 zie bovenaan.'],
+          ].map(([kop, tekst]) => (
+            <li key={kop} style={{ display: 'grid', gridTemplateColumns: '20px 1fr', gap: 12, background: 'rgba(61,90,62,0.05)', border: `1px solid rgba(61,90,62,0.18)`, borderRadius: 12, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
+              <span aria-hidden="true" style={{ color: GROEN, fontWeight: 800, fontSize: 15, lineHeight: '21px' }}>&#10003;</span>
+              <span style={{ color: `${INKT}0.75)` }}><b style={{ color: '#1A1208' }}>{kop}</b> {tekst}</span>
             </li>
           ))}
         </ul>
@@ -478,8 +536,8 @@ export default function ClassicNextPagina() {
             </thead>
             <tbody>
               {[
-                ['15–19 sep', 'Afspraken op papier: plaatsing, reactietermijn, showroomgegevens. Thijs en Machiel testen de configurator; fineerfoto\u2019s en stalen onderweg', 'samen'],
-                ['22–26 sep', 'De mailing na de beurs bouwen en testen; binnendeuren in de showroomgids', 'Bylder'],
+                ['15–19 sep', 'Configuratortest verwerkt (klaar). Nog: de correcties laten controleren, de overige fineerdecors, en de rechten op het Unilin-materiaal', 'samen'],
+                ['22–26 sep', 'Mailing na de beurs staat klaar (klaar). Nog: binnendeuren in de showroomgids, en de gerenderde weergave zodra de modellen er zijn', 'Bylder'],
                 ['29 sep – 2 okt', 'QR-code, weergave op beurs-wifi, proefdraaien met het standteam', 'samen'],
                 ['5 oktober', 'Aanvragen voor de 25 kaarten sluit', 'bezoekers'],
                 ['9–11 oktober', 'Beurs. Elke avond gaan de aanvragen van die dag door naar Classic Next', 'Bylder'],
@@ -497,8 +555,10 @@ export default function ClassicNextPagina() {
       </section>
 
       <footer style={{ ...MONO, borderTop: `1px solid ${INKT}0.12)`, paddingTop: 18, lineHeight: 1.6 }}>
-        Opgesteld 13 september 2026 door Bylder, voor Classic Next. Alle onderdelen met de vermelding
-        &#8220;live&#8221; zijn op die datum gecontroleerd op www.bylder.com.
+        Opgesteld 13 september 2026 door Bylder, voor Classic Next. Bijgewerkt 15 september met de
+        verwerking van jullie configuratortest. Deze pagina is de laatste stand van zaken; wij houden
+        hem bij, zodat hij niet uit de mail hoeft te worden opgediept. Hij staat niet in Google en is
+        alleen via deze link te vinden.
       </footer>
     </main>
   )
