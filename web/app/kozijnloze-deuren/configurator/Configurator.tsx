@@ -38,6 +38,7 @@ type Deur = {
   kruk: string
   krukAfwerking: string
   slot: string
+  slotAfwerking: string
   scharnierKleur: string
 }
 
@@ -45,7 +46,8 @@ const NIEUW: Deur = {
   naam: '', ontwerp: 'dawn', afwerking: 'gelakt', ral: '9010', vrij: '', helderheid: 1,
   fineer: 'licht',
   richting: 'binnen', scharnier: 'links',
-  kruk: 'oma-q-slim', krukAfwerking: 'Zwart', slot: 'loop', scharnierKleur: 'Zwart',
+  kruk: 'oma-q-slim', krukAfwerking: 'Zwart', slot: 'loop', slotAfwerking: 'Zwart',
+  scharnierKleur: 'Zwart',
 }
 
 // Suggesties, geen keurslijf: het invoerveld blijft vrij tekst.
@@ -64,6 +66,11 @@ const MAAT = {
 const GROEN = '#3D5A3E'
 const ROEST = '#B85C38'
 
+/** De afwerkingen die bij dít slot horen — niet elk slot heeft er vier. */
+function slotVarianten(slotId: string) {
+  return (SLOTEN.find(x => x.id === slotId) ?? SLOTEN[0]).varianten
+}
+
 function leesUrl(): Deur[] {
   if (typeof window === 'undefined') return [NIEUW]
   const q = new URLSearchParams(window.location.search).get('deuren')
@@ -73,7 +80,7 @@ function leesUrl(): Deur[] {
     // kenden nog geen beslag. Aan het aantal velden zie je welke soort het is.
     const v = s.split('~')
     const [ontwerp, afwerking, ral, vrij, fineer, richting, scharnier,
-           kruk, krukAfwerking, slot, scharnierKleur, naam] =
+           kruk, krukAfwerking, slot, scharnierKleur, naam, slotAfwerking] =
       v.length === 7 ? [v[0], v[1], v[2], '', v[3], v[4], v[5], '', '', '', '', v[6]] : v
     if (!ONTWERPEN.some(o => o.id === ontwerp)) return null
     const km = KRUKKEN.find(k => k.id === kruk) ?? KRUKKEN.find(k => k.id === NIEUW.kruk)!
@@ -91,6 +98,10 @@ function leesUrl(): Deur[] {
       krukAfwerking: km.varianten.some(v => v.afwerking === krukAfwerking)
         ? krukAfwerking : km.varianten[0].afwerking,
       slot: SLOTEN.some(x => x.id === slot) ? slot : NIEUW.slot,
+      // Links van vóór 15 september kennen dit veld niet; dan de eerste
+      // afwerking die dit slot heeft, zodat er altijd een beeld bij hoort.
+      slotAfwerking: slotVarianten(slot).some(v => v.afwerking === slotAfwerking)
+        ? slotAfwerking : slotVarianten(slot)[0].afwerking,
       scharnierKleur: SCHARNIEREN.some(v => v.afwerking === scharnierKleur)
         ? scharnierKleur : NIEUW.scharnierKleur,
     } as Deur
@@ -101,7 +112,10 @@ function leesUrl(): Deur[] {
 const naarUrl = (d: Deur[]) =>
   d.map(x => [x.ontwerp, x.afwerking, x.ral, x.vrij.replace('#', ''), x.fineer,
               x.richting, x.scharnier, x.kruk, x.krukAfwerking, x.slot,
-              x.scharnierKleur, encodeURIComponent(x.naam)].join('~')).join('_')
+              x.scharnierKleur, encodeURIComponent(x.naam),
+              // Achteraan, want een link uit de beursmailing heeft dit veld niet.
+              // Ontbreekt het, dan valt leesUrl terug op de standaardafwerking.
+              x.slotAfwerking].join('~')).join('_')
 
 export default function Configurator() {
   const doek = useRef<HTMLDivElement>(null)
@@ -444,7 +458,7 @@ export default function Configurator() {
     const sl = SLOTEN.find(x => x.id === d.slot) ?? SLOTEN[0]
     return `${naamVan(d, i)}: ${o.naam} (${o.groef.toLowerCase()}) · ${afw} · `
          + `plafondhoog · draait naar ${d.richting} · scharnieren ${d.scharnier} · `
-         + `kruk ${km.naam} (${km.merk}) in ${d.krukAfwerking} · ${sl.naam} · `
+         + `kruk ${km.naam} (${km.merk}) in ${d.krukAfwerking} · ${sl.naam} in ${d.slotAfwerking} · `
          + `scharnier DX38 ${d.scharnierKleur}`
   }).join('\n')
 
@@ -769,14 +783,44 @@ export default function Configurator() {
           </p>
           <div style={{ display: 'flex', gap: 6, marginBottom: 8 }}>
             {SLOTEN.map(x => (
-              <button key={x.id} onClick={() => wijzig({ slot: x.id })}
+              <button key={x.id} onClick={() => wijzig({
+                slot: x.id,
+                // Niet elk slot heeft dezelfde afwerkingen — brons bestaat
+                // alleen bij het loopslot. Wissel je van slot, dan houden we de
+                // afwerking als die bestaat, en pakken anders de eerste.
+                slotAfwerking: x.varianten.some(v => v.afwerking === huidig.slotAfwerking)
+                  ? huidig.slotAfwerking : x.varianten[0].afwerking,
+              })}
                 style={{ ...(x.id === huidig.slot ? knopAan : knop), flex: 1,
                          padding: '8px 6px', fontSize: 12.5 }}>{x.naam}</button>
             ))}
           </div>
-          <p style={{ fontSize: 13, color: `${INKT}0.62)`, margin: 0, lineHeight: 1.65 }}>
+          <p style={{ fontSize: 13, color: `${INKT}0.62)`, margin: '0 0 10px', lineHeight: 1.65 }}>
             {slotType.uitleg}
           </p>
+          {/* De sloten hadden wél foto's in de repo en in de data, maar ze
+              stonden nergens op het scherm — alleen drie tekstknoppen. Gemeld
+              door Classic Next op 14-09-2026: "de afbeeldingen van de
+              magneetsloten missen in de configuratie." Zelfde opzet als bij de
+              kruk, zodat je ziet wat je kiest in plaats van het te lezen. */}
+          <div style={{ display: 'grid', gap: 7,
+            gridTemplateColumns: 'repeat(auto-fill,minmax(88px,1fr))' }}>
+            {slotType.varianten.map(v => (
+              <button key={v.afwerking} onClick={() => wijzig({ slotAfwerking: v.afwerking })}
+                title={v.afwerking} aria-label={`${slotType.naam} in ${v.afwerking}`}
+                aria-pressed={v.afwerking === huidig.slotAfwerking}
+                style={{ padding: 0, cursor: 'pointer', borderRadius: 9, overflow: 'hidden',
+                  background: '#fff',
+                  border: v.afwerking === huidig.slotAfwerking
+                    ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.16)` }}>
+                <img src={`/img/classic-next/beslag/${v.beeld}.jpg`} alt=""
+                  width={340} height={340} loading="lazy" decoding="async"
+                  style={{ width: '100%', height: 'auto', display: 'block' }} />
+                <span style={{ display: 'block', fontSize: 11, padding: '3px 4px 5px',
+                  color: `${INKT}0.65)` }}>{v.afwerking}</span>
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Scharnier */}
