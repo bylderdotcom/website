@@ -134,10 +134,27 @@ export const AFWERKINGEN: { id: Afwerking; naam: string; uitleg: string }[] = [
 // ze eruitzien volgt uit hun scans. Tot die er zijn tonen we een indicatie en
 // zegt de pagina dat er ook bij — een houtnerf verzinnen die bij levering anders
 // blijkt, is precies het soort belofte dat we niet doen.
-export type Fineer = { id: string; naam: string; basis: string; nerf: string; voorlopig: boolean }
+export type Fineer = {
+  id: string; naam: string
+  /** Basiskleur en nerfkleur van de getekende nerf — alleen voor de voorlopige. */
+  basis: string; nerf: string
+  voorlopig: boolean
+  /** Bestandsnaam onder /img/classic-next/fineer/ zonder achtervoegsel. */
+  beeld?: string
+  /** Hoeveel millimeter de tegel in werkelijkheid beslaat. Zonder dit getal
+   *  wordt de nerf te grof of te fijn; het staat in het V-Ray-bestand van Unilin. */
+  tegelMm?: number
+  /** Het artikelnummer van de leverancier, voor op de offerte. */
+  code?: string
+}
 
 export const FINEREN: Fineer[] = [
-  { id: 'licht', naam: 'Licht', basis: '#C9A97E', nerf: '#A5834F', voorlopig: true },
-  { id: 'midden', naam: 'Midden', basis: '#9A6E45', nerf: '#7A5230', voorlopig: true },
-  { id: 'donker', naam: 'Donker', basis: '#5E4230', nerf: '#432D1F', voorlopig: true },
+  // Het eerste echte decor. Aangeleverd door Classic Next op 14-09-2026 als
+  // compleet Unilin-materiaal: naadloze kleur- en dieptekaart, en in het
+  // V-Ray-bestand de maat — de tegel is 1300 bij 1300 mm.
+  { id: 'oslo-oak', naam: 'Oslo Oak', basis: '#654535', nerf: '#4A3226', voorlopig: false,
+    beeld: 'oslo-oak', tegelMm: 1300, code: '0H598-W07' },
+  { id: 'licht', naam: 'Licht (indicatie)', basis: '#C9A97E', nerf: '#A5834F', voorlopig: true },
+  { id: 'midden', naam: 'Midden (indicatie)', basis: '#9A6E45', nerf: '#7A5230', voorlopig: true },
+  { id: 'donker', naam: 'Donker (indicatie)', basis: '#5E4230', nerf: '#432D1F', voorlopig: true },
 ]
