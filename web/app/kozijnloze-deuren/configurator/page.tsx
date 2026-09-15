@@ -21,30 +21,6 @@ import Configurator from './Configurator'
  * tegenhouden voordat hij aanvraagt.
  */
 
-// De vier renders zo vroeg mogelijk opvragen.
-//
-// Gemeten op productie: ze begonnen pas op 1734 ms, want de browser leert pas
-// dat ze bestaan als de configurator-JavaScript geladen én uitgevoerd is. De
-// pagina zelf staat er dan al lang. Hiermee beginnen ze rond de 200 ms, naast
-// de JavaScript in plaats van erna.
-//
-// Waarom een scriptje en geen vaste <link>: wie via een bewaarde link uit de
-// beursmailing komt, heeft een ander ontwerp in zijn adres staan. Een vast
-// voorgeladen 'dawn' zou dan bijna een megabyte zijn die hij niet gebruikt,
-// bovenop de megabyte die hij wel nodig heeft. Dit leest het ontwerp uit het
-// adres en laadt het juiste. Statische export kent de zoekopdracht niet, dus
-// dit kan niet in de HTML zelf staan.
-const VOORLADEN = `(function(){try{
-var d=new URLSearchParams(location.search).get('deuren');
-var o=d?d.split('_')[0].split('~')[0]:'';
-if(!/^[a-z]{2,12}$/.test(o))o='dawn';
-['n0','n1','n2','schaal'].forEach(function(k){
-var l=document.createElement('link');
-l.rel='preload';l.as='image';l.type='image/webp';
-l.href='/img/classic-next/render/'+o+'-'+k+'.webp';
-document.head.appendChild(l);});
-}catch(e){}})()`
-
 export const metadata: Metadata = {
   title: 'Kozijnloze deur samenstellen — 13 ontwerpen, elke RAL-kleur | Bylder',
   description:
@@ -100,7 +76,6 @@ const VRAGEN = [
 export default function ConfiguratorPagina() {
   return (
     <div style={{ background: '#F5F0E8' }}>
-      <script dangerouslySetInnerHTML={{ __html: VOORLADEN }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@graph': [

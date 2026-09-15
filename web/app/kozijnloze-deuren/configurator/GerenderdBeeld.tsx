@@ -122,10 +122,17 @@ export default function GerenderdBeeld(
     staat.current = { gl, prog, tex, lutKlaar }
   }, [])
 
+  // Pas laden als deze weergave ook echt gekozen is. Sinds 3D de standaard is
+  // (15-09-2026) zou het component anders bij élk bezoek een megabyte ophalen
+  // voor een beeld dat niemand te zien krijgt. Eenmaal geladen blijft het staan,
+  // zodat heen-en-weer wisselen niets extra's kost.
+  const ooitGetoond = useRef(false)
+  if (zichtbaar) ooitGetoond.current = true
+
   // Per ontwerp de vier beelden (één keer ophalen), per kleur alleen opnieuw tekenen.
   useEffect(() => {
     const st = staat.current
-    if (!st) return
+    if (!st || !ooitGetoond.current) return
     let weg = false
     setLaadt(true)
     cache.current[ontwerp] ??= Promise.all(['n0', 'n1', 'n2', 'schaal'].map(k => laad(`${MAP}/${ontwerp}-${k}.webp`)))
@@ -144,7 +151,7 @@ export default function GerenderdBeeld(
       setLaadt(false)
     }).catch(() => { if (!weg) setFout(true) })
     return () => { weg = true }
-  }, [ontwerp, kleurHex, spiegel])
+  }, [ontwerp, kleurHex, spiegel, zichtbaar])
 
   return (
     // Blijft staan als de koper naar 3D wisselt, alleen onzichtbaar: zo hoeft er

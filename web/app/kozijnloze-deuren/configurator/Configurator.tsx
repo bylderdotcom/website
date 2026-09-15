@@ -146,7 +146,12 @@ export default function Configurator() {
   const [stand, setStand] = useState<'dicht' | 'kier' | 'open'>('kier')
   // Gerenderd is de foto uit Blender, 3D is het model om aan te draaien. Twee
   // vragen: "hoe ziet dit eruit" wil een foto, "hoe werkt dit" wil een model.
-  const [weergave, setWeergave] = useState<'foto' | '3d'>('foto')
+  // 3D is de standaard sinds 15-09-2026. De gerenderde beelden zijn in Blender
+  // gebakken met de oude groefgeometrie, en die klopte bij tien van de dertien
+  // ontwerpen niet (gemeld door Classic Next, nagemeten op hun referentiefoto's).
+  // 3D tekent de groeven uit de code en is dus wél juist. Terug naar 'foto'
+  // zodra er nieuwe renders zijn.
+  const [weergave, setWeergave] = useState<'foto' | '3d'>('3d')
   const [gekopieerd, setGekopieerd] = useState(false)
 
   const huidig = deuren[actief] ?? NIEUW
@@ -526,6 +531,8 @@ export default function Configurator() {
             Gerenderd in Blender, met deur en wand in de kleur die je kiest en een kier van 3 mm &mdash;
             zo ziet een instuckozijn eruit na het stucwerk. De kruk staat hier in zwart; je eigen keuze en
             de draairichting zie je in 3D.
+            <br /><strong style={{ color: '#B85C38' }}>Let op:</strong> het freespatroon in dit beeld wordt
+            nog bijgewerkt. Voor het juiste patroon: kies 3D.
           </p>
         ) : (
         <>
