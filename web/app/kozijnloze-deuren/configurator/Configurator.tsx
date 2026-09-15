@@ -5,7 +5,7 @@ import * as THREE from 'three'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 import { ONTWERPEN, KLEUREN, AFWERKINGEN, FINEREN,
          type Afwerking } from './ontwerpen'
-import { maakTexturen } from './texturen'
+import { maakTexturen, type Decor } from './texturen'
 import KleurKiezer, { dichtstbijzijndeRal } from './KleurKiezer'
 import { KRUKKEN, SLOTEN, SCHARNIEREN } from './beslag'
 import OfferteFormulier from '../../components/OfferteFormulier'
@@ -347,18 +347,37 @@ export default function Configurator() {
     }
   }, [])
 
+  // ── Het decor van de leverancier ───────────────────────────────────────
+  // Alleen ophalen als er ook echt fineer gekozen is: het zijn twee beelden van
+  // samen ongeveer 100 kB, en wie een gelakte deur samenstelt heeft er niets aan.
+  // Tot ze binnen zijn blijft de getekende nerf staan, dus er is nooit een gat.
+  const [decor, setDecor] = useState<Decor | null>(null)
+  useEffect(() => {
+    if (huidig.afwerking !== 'fineer' || !fineer.beeld || !fineer.tegelMm) { setDecor(null); return }
+    let weg = false
+    const laad = (n: string) => new Promise<HTMLImageElement>((ok, mis) => {
+      const b = new Image(); b.onload = () => ok(b); b.onerror = mis
+      b.src = `/img/classic-next/fineer/${fineer.beeld}-${n}.webp`
+    })
+    Promise.all([laad('kleur'), laad('diepte')])
+      .then(([kleur, diepte]) => { if (!weg) setDecor({ kleur, diepte, tegelMm: fineer.tegelMm! }) })
+      .catch(() => { if (!weg) setDecor(null) })
+    return () => { weg = true }
+  }, [huidig.afwerking, fineer])
+
   // ── Ontwerp → groeven op het deurblad ──────────────────────────────────
   useEffect(() => {
     const st = scene.current
     if (!st) return
     const { normalMap, map } = maakTexturen(
-      ontwerp.groeven, huidig.afwerking === 'fineer' ? fineer : undefined)
+      ontwerp.groeven, huidig.afwerking === 'fineer' ? fineer : undefined,
+      huidig.afwerking === 'fineer' ? (decor ?? undefined) : undefined)
     st.materiaal.normalMap?.dispose()
     st.materiaal.map?.dispose()
     st.materiaal.normalMap = normalMap
     st.materiaal.map = map
     st.materiaal.needsUpdate = true
-  }, [ontwerp, huidig.afwerking, fineer])
+  }, [ontwerp, huidig.afwerking, fineer, decor])
 
   // ── Kleur en glans volgen de afwerking ─────────────────────────────────
   //
@@ -457,7 +476,10 @@ export default function Configurator() {
               ? (vrijeRal
                   ? `gelakt, gekozen kleur ${d.vrij} — dichtstbijzijnde RAL ${vrijeRal.ral} ${vrijeRal.naam}`
                   : `gelakt in RAL ${k.ral} ${k.naam}`)
-              : d.afwerking === 'fineer' ? `fineer ${f.naam.toLowerCase()} (houtsoort nog te kiezen)`
+              : d.afwerking === 'fineer'
+                ? (f.voorlopig
+                    ? `fineer ${f.naam.toLowerCase()} (houtsoort nog te kiezen)`
+                    : `fineer ${f.naam}${f.code ? ` (${f.code})` : ''}`)
               : 'gegrond, zelf te schilderen'
     const km = KRUKKEN.find(x => x.id === d.kruk) ?? KRUKKEN[0]
     const sl = SLOTEN.find(x => x.id === d.slot) ?? SLOTEN[0]
@@ -696,14 +718,19 @@ export default function Configurator() {
               Houtsoort
             </h2>
             <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
-              Drie fineren. {fineer.naam}.
+              {fineer.naam}{fineer.code ? ` · ${fineer.code}` : ''}
             </p>
             <div style={{ display: 'flex', gap: 8 }}>
               {FINEREN.map(f => (
                 <button key={f.id} onClick={() => wijzig({ fineer: f.id })}
                   aria-pressed={f.id === huidig.fineer}
+                  title={f.naam}
                   style={{ flex: 1, height: 62, borderRadius: 9, cursor: 'pointer',
-                    background: `repeating-linear-gradient(90deg, ${f.basis} 0 6px, ${f.nerf} 6px 7px)`,
+                    // Een echt decor laat zijn eigen nerf zien; de voorlopige
+                    // blijven een gestreept vlakje, zodat het verschil zichtbaar is.
+                    background: f.beeld
+                      ? `url(/img/classic-next/fineer/${f.beeld}-kleur.webp) center/cover`
+                      : `repeating-linear-gradient(90deg, ${f.basis} 0 6px, ${f.nerf} 6px 7px)`,
                     border: f.id === huidig.fineer
                       ? `2.5px solid ${GROEN}` : `1px solid ${INKT}0.18)`,
                     boxShadow: f.id === huidig.fineer ? '0 0 0 3px rgba(61,90,62,0.16)' : 'none',
@@ -712,9 +739,9 @@ export default function Configurator() {
             </div>
             {fineer.voorlopig && (
               <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: '9px 0 0', lineHeight: 1.6 }}>
-                De houtnerf op dit scherm is een indicatie. Classic Next levert drie fineren;
-                zodra hun scans er zijn staat hier het echte materiaal, met de naam van de
-                houtsoort erbij.
+                De houtnerf op dit scherm is een indicatie, geen weergave van het echte
+                materiaal. Kies Oslo Oak om te zien hoe het eruitziet als de scan er wél is;
+                de overige decors volgen zodra Classic Next ze aanlevert.
               </p>
             )}
           </div>

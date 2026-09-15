@@ -22,12 +22,35 @@ const HOOGTE = 1800          // px; deurblad 2.700 mm
 /** Groefbreedte in pixels. Een echte frees is 4 à 8 mm; iets ruimer leest beter. */
 const GROEF_PX = 7
 
-function tekenHoogte(groeven: Groef[]): ImageData {
+/** Een geladen decor: de kleur- en dieptekaart van de leverancier. */
+export type Decor = { kleur: HTMLImageElement; diepte: HTMLImageElement; tegelMm: number }
+
+/** Tegelt een beeld over het hele deurdoek, op ware grootte. */
+function tegel(g: CanvasRenderingContext2D, beeld: HTMLImageElement, tegelMm: number) {
+  // Het doek is 700 px voor 1050 mm. Een tegel van 1300 mm is dus 866,67 px.
+  // Afronden naar hele pixels: op een halve pixel tekenen laat een zichtbare
+  // naad achter waar twee tegels elkaar raken, en 867 in plaats van 866,67 is
+  // een schaalfout van 0,04% — die ziet niemand.
+  const px = Math.round((tegelMm / 1050) * BREEDTE)
+  for (let y = 0; y < HOOGTE; y += px) {
+    for (let x = 0; x < BREEDTE; x += px) g.drawImage(beeld, x, y, px, px)
+  }
+}
+
+function tekenHoogte(groeven: Groef[], decor?: Decor): ImageData {
   const c = document.createElement('canvas')
   c.width = BREEDTE; c.height = HOOGTE
   const g = c.getContext('2d')!
   g.fillStyle = '#fff'
   g.fillRect(0, 0, BREEDTE, HOOGTE)
+  if (decor) {
+    // De nerf van het hout zit óók in het reliëf, maar veel ondieper dan een
+    // frees. Vandaar de lage dekking: je wilt hem zien in strijklicht, niet als
+    // een tweede groevenpatroon.
+    g.globalAlpha = 0.22
+    tegel(g, decor.diepte, decor.tegelMm)
+    g.globalAlpha = 1
+  }
 
   // Zwart = diep. De vervaging maakt van een platte lijn een V-vormige flank;
   // zonder die overgang staat de groef loodrecht en vangt hij geen licht.
@@ -91,8 +114,8 @@ function tekenFineer(g: CanvasRenderingContext2D, f: Fineer) {
 }
 
 /** Hoogtekaart → normal map (Sobel) plus een lichte donkering in de groef. */
-export function maakTexturen(groeven: Groef[], fineer?: Fineer) {
-  const h = tekenHoogte(groeven)
+export function maakTexturen(groeven: Groef[], fineer?: Fineer, decor?: Decor) {
+  const h = tekenHoogte(groeven, decor)
   const nc = document.createElement('canvas'); nc.width = BREEDTE; nc.height = HOOGTE
   const mc = document.createElement('canvas'); mc.width = BREEDTE; mc.height = HOOGTE
   const nd = nc.getContext('2d')!.createImageData(BREEDTE, HOOGTE)
@@ -131,7 +154,9 @@ export function maakTexturen(groeven: Groef[], fineer?: Fineer) {
   nc.getContext('2d')!.putImageData(nd, 0, 0)
   const mg = mc.getContext('2d')!
   if (fineer) {
-    tekenFineer(mg, fineer)
+    // Een echt decor van de leverancier gaat vóór op onze eigen getekende nerf.
+    if (decor) tegel(mg, decor.kleur, decor.tegelMm)
+    else tekenFineer(mg, fineer)
     // De groefdonkering als vermenigvuldiging over de nerf.
     const tmp = document.createElement('canvas')
     tmp.width = BREEDTE; tmp.height = HOOGTE
