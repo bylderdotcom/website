@@ -25,6 +25,9 @@ export type Showroom = {
   feiten: string[]
   tip: string
   tip_status: 'concept' | 'definitief'
+  /** Van Bylder zelf. Dan is 'gegevens van de website van de showroom' onzin,
+   *  en hoort er te staan dat hij nog moet openen. */
+  eigen?: boolean
   bron_datum: string
 }
 

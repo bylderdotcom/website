@@ -99,13 +99,19 @@ export default async function ShowroomTypePage({ params }: { params: Promise<{ t
                   {s.adres}<br />
                   {s.uren && <>{s.uren}<br /></>}
                   {s.telefoon && <>{s.telefoon}<br /></>}
-                  <a href={s.website} rel="noopener" style={{ color: GROEN, fontWeight: 700 }}>Website van {s.naam}</a>
+                  <a href={s.website} rel="noopener" style={{ color: GROEN, fontWeight: 700 }}>
+                    {s.eigen ? 'Over kozijnloze deuren' : `Website van ${s.naam}`}
+                  </a>
                 </p>
               </div>
             </div>
 
             <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: 0 }}>
-              Gegevens van de website van de showroom, gecontroleerd op {datumNl(s.bron_datum)}. Uren kunnen afwijken; bel bij twijfel.
+              {s.eigen
+                ? <>Een plek van Bylder zelf, nog in voorbereiding. Zodra het adres en de openingstijden
+                    vaststaan, staan ze hier.</>
+                : <>Gegevens van de website van de showroom, gecontroleerd op {datumNl(s.bron_datum)}.
+                    Uren kunnen afwijken; bel bij twijfel.</>}
             </p>
           </li>
         ))}
