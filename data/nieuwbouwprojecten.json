@@ -12233,6 +12233,20 @@
    "jaren": [],
    "oplevering": null,
    "oplevering_bron": null
+  },
+  {
+   "url": "https://www.nieuwbouw-kloostergoedtheresia.nl/",
+   "plaats": "vught",
+   "naam": "Kloostergoed Theresia",
+   "woningen": 156,
+   "status": "In verkoop",
+   "lat": 51.64806,
+   "lng": 5.27427,
+   "oplevering": null,
+   "oplevering_bron": null,
+   "jaren": null,
+   "handmatig": true,
+   "bron": "projectsite nieuwbouw-kloostergoedtheresia.nl, gecontroleerd 16-09-2026"
   }
  ]
 }

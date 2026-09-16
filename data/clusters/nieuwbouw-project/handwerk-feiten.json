@@ -107,6 +107,33 @@
    "waarde": ""
   }
  },
+ "kloostergoed-theresia-vught": {
+  "bestemming": {
+   "bron": "",
+   "gecontroleerd_op": "2026-09-16",
+   "waarde": ""
+  },
+  "historie": {
+   "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/",
+   "gecontroleerd_op": "2026-09-16",
+   "waarde": "Het terrein was van 1930 tot 2000 in gebruik door de zusters J.M.J. Het oude kloostergebouw is in 2026 gesloopt; juist op die plek komt het deelplan De Kloostertuin. De volwassen bomen en de parkachtige aanleg blijven staan."
+  },
+  "ontwikkelaar": {
+   "bron": "https://van-stiphout.nl/projecten/kloostergoed-theresia/",
+   "gecontroleerd_op": "2026-09-16",
+   "waarde": "BPD (Bouwfonds Gebiedsontwikkeling) ontwikkelt het project; fase 1 wordt gebouwd door Van Stiphout. De verkoop loopt via Lelieveld Makelaardij in Vught."
+  },
+  "starterslening": {
+   "bron": "",
+   "gecontroleerd_op": "2026-09-16",
+   "waarde": ""
+  },
+  "voorzieningen": {
+   "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/",
+   "gecontroleerd_op": "2026-09-16",
+   "waarde": "Het plan is autoluw: er wordt gecentraliseerd geparkeerd, zodat de straten tussen de woningen vrij blijven. De woningen zijn gasloos, met vloerverwarming en eigen opwek."
+  }
+ },
  "le-jardin-hoofddorp-haarlemmermeer": {
   "bestemming": {
    "bron": "",
