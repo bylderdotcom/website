@@ -23,17 +23,25 @@ const HOOGTE = 1800          // px; deurblad 2.700 mm
 const GROEF_PX = 7
 
 /** Een geladen decor: de kleur- en dieptekaart van de leverancier. */
-export type Decor = { kleur: HTMLImageElement; diepte: HTMLImageElement; tegelMm: number }
+export type Decor = {
+  kleur: HTMLImageElement
+  /** De persing van het decor. Ontbreekt bij decors waar de leverancier alleen
+   *  een normaalkaart gaf; dan blijft het oppervlak vlak. */
+  structuur?: HTMLImageElement
+  /** Breedte en hoogte van de tegel in millimeters. Niet elk decor is vierkant. */
+  tegelMm: [number, number]
+}
 
 /** Tegelt een beeld over het hele deurdoek, op ware grootte. */
-function tegel(g: CanvasRenderingContext2D, beeld: HTMLImageElement, tegelMm: number) {
-  // Het doek is 700 px voor 1050 mm. Een tegel van 1300 mm is dus 866,67 px.
-  // Afronden naar hele pixels: op een halve pixel tekenen laat een zichtbare
-  // naad achter waar twee tegels elkaar raken, en 867 in plaats van 866,67 is
-  // een schaalfout van 0,04% — die ziet niemand.
-  const px = Math.round((tegelMm / 1050) * BREEDTE)
-  for (let y = 0; y < HOOGTE; y += px) {
-    for (let x = 0; x < BREEDTE; x += px) g.drawImage(beeld, x, y, px, px)
+function tegel(g: CanvasRenderingContext2D, beeld: HTMLImageElement, tegelMm: [number, number]) {
+  // Het doek is 700 px voor 1050 mm en 1800 px voor 2700 mm — 1,5 mm per pixel
+  // in beide richtingen. Afronden naar hele pixels: op een halve pixel tekenen
+  // laat een zichtbare naad achter waar twee tegels elkaar raken, en een halve
+  // pixel op 867 is een schaalfout van 0,04%.
+  const bx = Math.round((tegelMm[0] / 1050) * BREEDTE)
+  const by = Math.round((tegelMm[1] / 2700) * HOOGTE)
+  for (let y = 0; y < HOOGTE; y += by) {
+    for (let x = 0; x < BREEDTE; x += bx) g.drawImage(beeld, x, y, bx, by)
   }
 }
 
@@ -43,12 +51,12 @@ function tekenHoogte(groeven: Groef[], decor?: Decor): ImageData {
   const g = c.getContext('2d')!
   g.fillStyle = '#fff'
   g.fillRect(0, 0, BREEDTE, HOOGTE)
-  if (decor) {
-    // De nerf van het hout zit óók in het reliëf, maar veel ondieper dan een
-    // frees. Vandaar de lage dekking: je wilt hem zien in strijklicht, niet als
-    // een tweede groevenpatroon.
+  if (decor?.structuur) {
+    // De persing zit óók in het reliëf, maar veel ondieper dan een frees.
+    // Vandaar de lage dekking: je wilt hem zien in strijklicht, niet als een
+    // tweede groevenpatroon.
     g.globalAlpha = 0.22
-    tegel(g, decor.diepte, decor.tegelMm)
+    tegel(g, decor.structuur, decor.tegelMm)
     g.globalAlpha = 1
   }
 
