@@ -38,7 +38,12 @@ taxonomie en de navigatie, niet in het ontbreken van data.
 
 ## Stack (feiten)
 - Pre-rendered HTML-pagina's per content-cluster (mappen in de repo-root, bv. `nieuwbouw-gids/`, `kortingscode/`, `offerte-check/`, `en-us/`).
-- Content-generatie via **Python-scripts** in `scripts/` (`nieuwbouw_scraper.py`, `vakbedrijven_pipeline.py`, `winkels_mvp.py`) + JSON-data in `data/`.
+- Content-generatie via **Python-scripts** in `scripts/` (`nieuwbouw_scraper.py`, `nwn_scraper.py`, `vakbedrijven_pipeline.py`, `winkels_mvp.py`) + JSON-data in `data/`.
+- **Twee bronnen voor nieuwbouwprojecten.** Nieuwbouw.nl is een deelnemersmodel en dekt de
+  markt maar half; Nieuw Wonen Nederland is de tweede bron. Bij die tweede nemen we
+  **uitsluitend feiten** over — geen foto's, geen omschrijvingen — en verwijzen we terug met
+  bronvermelding. Dat onderscheid is juridisch de hele zaak: zie de kop van `nwn_scraper.py`.
+  Funda scrapen is afgeraden: hun voorwaarden verbieden het woordelijk en ze blokkeren actief.
 - Node-deps minimaal: `@anthropic-ai/sdk`, `stripe`. Deploy + redirects via `vercel.json`.
 - Markten als taal-regio-subdir (`/en-us`, `/nl-be`, `/de`). NL staat op root — **niet verplaatsen**.
 
