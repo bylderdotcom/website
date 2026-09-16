@@ -355,13 +355,19 @@ export default function Configurator() {
   useEffect(() => {
     if (huidig.afwerking !== 'fineer' || !fineer.beeld || !fineer.tegelMm) { setDecor(null); return }
     let weg = false
-    const laad = (n: string) => new Promise<HTMLImageElement>((ok, mis) => {
+    const laad = (bestand: string) => new Promise<HTMLImageElement>((ok, mis) => {
       const b = new Image(); b.onload = () => ok(b); b.onerror = mis
-      b.src = `/img/classic-next/fineer/${fineer.beeld}-${n}.webp`
+      b.src = `/img/classic-next/fineer/${bestand}.webp`
     })
-    Promise.all([laad('kleur'), laad('diepte')])
-      .then(([kleur, diepte]) => { if (!weg) setDecor({ kleur, diepte, tegelMm: fineer.tegelMm! }) })
-      .catch(() => { if (!weg) setDecor(null) })
+    // De structuurkaart is gedeeld tussen decors uit dezelfde reeks, en ontbreekt
+    // bij één decor. Faalt hij, dan tonen we het decor gewoon vlak — beter dan
+    // helemaal geen hout.
+    Promise.all([
+      laad(`${fineer.beeld}-kleur`),
+      fineer.structuur ? laad(fineer.structuur).catch(() => undefined) : Promise.resolve(undefined),
+    ]).then(([kleur, structuur]) => {
+      if (!weg) setDecor({ kleur, structuur, tegelMm: fineer.tegelMm! })
+    }).catch(() => { if (!weg) setDecor(null) })
     return () => { weg = true }
   }, [huidig.afwerking, fineer])
 
@@ -720,12 +726,15 @@ export default function Configurator() {
             <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px' }}>
               {fineer.naam}{fineer.code ? ` · ${fineer.code}` : ''}
             </p>
-            <div style={{ display: 'flex', gap: 8 }}>
+            {/* Acht decors passen niet naast elkaar; een raster houdt de stalen
+                groot genoeg om de nerf te herkennen. */}
+            <div style={{ display: 'grid', gap: 8,
+              gridTemplateColumns: 'repeat(auto-fill, minmax(84px, 1fr))' }}>
               {FINEREN.map(f => (
                 <button key={f.id} onClick={() => wijzig({ fineer: f.id })}
                   aria-pressed={f.id === huidig.fineer}
-                  title={f.naam}
-                  style={{ flex: 1, height: 62, borderRadius: 9, cursor: 'pointer',
+                  title={`${f.naam}${f.code ? ` (${f.code})` : ''}`}
+                  style={{ height: 72, borderRadius: 9, cursor: 'pointer', padding: 0,
                     // Een echt decor laat zijn eigen nerf zien; de voorlopige
                     // blijven een gestreept vlakje, zodat het verschil zichtbaar is.
                     background: f.beeld

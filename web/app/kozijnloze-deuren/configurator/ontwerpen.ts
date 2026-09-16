@@ -126,8 +126,13 @@ export const AFWERKINGEN: { id: Afwerking; naam: string; uitleg: string }[] = [
   { id: 'gelakt', naam: 'Gelakt',
     uitleg: 'Afgelakt in de fabriek in de RAL-kleur die je kiest. Strakker en harder dan '
           + 'schilderwerk op de bouw, en meteen klaar bij levering.' },
-  { id: 'fineer', naam: 'Fineer',
-    uitleg: 'Echt houtfineer. Geen kleurkeuze maar een houtsoort: de nerf is het patroon.' },
+  // Let op: de decors die Classic Next levert zijn HPL — een geperst houtdecor,
+  // geen echt houtfineer. Dat stond hier eerst wel en is onjuist. Het verschil
+  // hoort de koper te weten: HPL is harder en krasvaster, fineer is echt hout
+  // met de prijs die daarbij hoort.
+  { id: 'fineer', naam: 'Houtdecor',
+    uitleg: 'Een geperst houtdecor (HPL) met de nerf voelbaar in het oppervlak. Geen kleurkeuze '
+          + 'maar een houtsoort: de nerf is het patroon. Harder en krasvaster dan gelakt.' },
 ]
 
 // VOORLOPIG. Classic Next levert drie houtsoorten; welke dat precies zijn en hoe
@@ -139,22 +144,45 @@ export type Fineer = {
   /** Basiskleur en nerfkleur van de getekende nerf — alleen voor de voorlopige. */
   basis: string; nerf: string
   voorlopig: boolean
-  /** Bestandsnaam onder /img/classic-next/fineer/ zonder achtervoegsel. */
+  /** Bestandsnaam van de kleurkaart onder /img/classic-next/fineer/. */
   beeld?: string
-  /** Hoeveel millimeter de tegel in werkelijkheid beslaat. Zonder dit getal
-   *  wordt de nerf te grof of te fijn; het staat in het V-Ray-bestand van Unilin. */
-  tegelMm?: number
+  /** De structuurkaart (persing). Decors uit dezelfde reeks delen die, dus hij
+   *  staat apart: W07 hoort bij drie decors, en dat scheelt 124 kB. */
+  structuur?: string
+  /** Hoeveel millimeter de tegel in werkelijkheid beslaat, breed bij hoog.
+   *  Niet elk decor is vierkant: Master Oak is een hele plaat van 3040 bij
+   *  1270 mm. Zonder deze maat wordt de nerf te grof of te fijn. */
+  tegelMm?: [number, number]
   /** Het artikelnummer van de leverancier, voor op de offerte. */
   code?: string
 }
 
+// De decors die Classic Next levert, aangeleverd als Unilin-materiaal op 14 en
+// 16 september 2026. Het zijn HPL-decors: een geperst houtdecor, geen echt
+// houtfineer.
+//
+// De maten komen uit het V-Ray-bestand van elk decor, niet uit een schatting.
+// Bij twee ervan stond de eenheid er niet bij; 3040 bij 1270 mm komt daar
+// vrijwel exact overeen met een standaard HPL-plaat van 3050 bij 1300, wat
+// bevestigt dat het om centimeters gaat.
 export const FINEREN: Fineer[] = [
-  // Het eerste echte decor. Aangeleverd door Classic Next op 14-09-2026 als
-  // compleet Unilin-materiaal: naadloze kleur- en dieptekaart, en in het
-  // V-Ray-bestand de maat — de tegel is 1300 bij 1300 mm.
-  { id: 'oslo-oak', naam: 'Oslo Oak', basis: '#654535', nerf: '#4A3226', voorlopig: false,
-    beeld: 'oslo-oak', tegelMm: 1300, code: '0H598-W07' },
-  { id: 'licht', naam: 'Licht (indicatie)', basis: '#C9A97E', nerf: '#A5834F', voorlopig: true },
-  { id: 'midden', naam: 'Midden (indicatie)', basis: '#9A6E45', nerf: '#7A5230', voorlopig: true },
-  { id: 'donker', naam: 'Donker (indicatie)', basis: '#5E4230', nerf: '#432D1F', voorlopig: true },
+  { id: 'oslo-oak', naam: 'Oslo Oak tanned red', basis: '#654535', nerf: '#4A3226', voorlopig: false,
+    beeld: 'oslo-oak', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H598-W07' },
+  { id: 'oslo-oak-cocoa', naam: 'Oslo Oak cocoa brown', basis: '#5A4032', nerf: '#412C22', voorlopig: false,
+    beeld: 'oslo-oak-cocoa', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H597-W07' },
+  { id: 'valley-ash', naam: 'Valley Ash sunlit brown', basis: '#8A6A4C', nerf: '#6A4F37', voorlopig: false,
+    beeld: 'valley-ash', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H593-W07' },
+  { id: 'dainty-oak-latte', naam: 'Dainty Oak latte', basis: '#B79A79', nerf: '#957B5E', voorlopig: false,
+    beeld: 'dainty-oak-latte', structuur: 'structuur-v1a', tegelMm: [1300, 1509], code: '0H267-V1A' },
+  { id: 'robinson-oak', naam: 'Robinson Oak light natural', basis: '#C0A484', nerf: '#9C8365', voorlopig: false,
+    beeld: 'robinson-oak', structuur: 'structuur-w06', tegelMm: [1306, 1300], code: '0H784-W06' },
+  { id: 'master-oak', naam: 'Master Oak natural', basis: '#A98A66', nerf: '#876C4E', voorlopig: false,
+    beeld: 'master-oak', structuur: 'structuur-v2a', tegelMm: [3040, 1270], code: '0H913-V2A' },
+  // Bij dit decor leverde Unilin geen structuurkaart, alleen een normaalkaart.
+  // Die kunnen wij niet in de hoogtekaart gebruiken; het decor is dus vlak.
+  { id: 'master-oak-patina', naam: 'Master Oak patina', basis: '#9B7F5E', nerf: '#7B6347', voorlopig: false,
+    beeld: 'master-oak-patina', tegelMm: [3040, 1270], code: '0H923-V2A' },
+  { id: 'kivu-wenge', naam: 'Kivu Wenge', basis: '#4A3A30', nerf: '#332721', voorlopig: false,
+    beeld: 'kivu-wenge', structuur: 'structuur-cst', tegelMm: [1300, 1300], code: '0H687-CST' },
 ]
+
