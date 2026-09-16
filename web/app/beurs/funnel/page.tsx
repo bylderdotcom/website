@@ -100,7 +100,7 @@ export default function ClassicNextPagina() {
 
       <header style={{ display: 'grid', gap: 16 }}>
         <div style={{ ...MONO, display: 'flex', flexWrap: 'wrap', gap: '8px 18px' }}>
-          <span>Bylder × Classic Next</span><span>Bijgewerkt 15 september 2026</span>
+          <span>Bylder × Classic Next</span><span>Bijgewerkt 16 september 2026</span>
           <span style={{ color: ROEST, fontWeight: 700 }}>Beurs Eigen Huis: 9–11 oktober</span>
         </div>
         <h1 style={{ fontSize: 'clamp(2rem,4.6vw,2.9rem)', fontWeight: 800, letterSpacing: '-0.028em', lineHeight: 1.05, margin: 0, textWrap: 'balance' }}>
@@ -138,8 +138,10 @@ export default function ClassicNextPagina() {
              'Jullie mail zei \u201cbijv.\u201d, en dat bleek letterlijk. Na natekenen van alle dertien productfoto\u2019s weken er tien af. Naast jullie zeven: Aura had tien groeven waar het er dertien zijn, en de kaders van Solace en Halo stonden te dicht op de rand. Bij Shadow en Noir klopte ook het aantal \u2014 wij tekenden er drie en vijf, jullie foto\u2019s tonen er vier en vier.'],
             ['Horizon en Ember hadden een vormfout.',
              'Horizon is nu een halve cirkel met de platte kant tegen de linker kaderlijn, in plaats van een cirkel in het midden. De chevrons van Ember wijzen weer omhoog.'],
-            ['Oslo Oak zit in de configurator.',
-             'Het Unilin-materiaal dat Thijs stuurde was ruim bruikbaar en is meteen ingebouwd. Kies bij Afwerking \u201cFineer\u201d en dan Oslo Oak. De nerf ligt op ware grootte: de maat (1300 bij 1300 mm) stond in het V-Ray-bestand.'],
+            ['Acht houtdecors zitten in de configurator.',
+             'Het Unilin-materiaal was ruim bruikbaar. Oslo Oak tanned red ging er op 15 september in; de zeven die Thijs op 16 september nastuurde staan er nu ook — Oslo Oak cocoa brown, Valley Ash sunlit brown, Dainty Oak latte, Robinson Oak light natural, Master Oak natural, Master Oak patina en Kivu Wenge. Kies bij Afwerking \u201cFineer\u201d en dan een decor. Elke nerf ligt op ware grootte: de maat staat in het V-Ray-bestand, en die verschilt per decor — van 1300 bij 1300 mm tot 3040 bij 1270 mm, een hele plaat.'],
+            ['Het heet geen fineer meer, maar houtdecor.',
+             'Bij de afwerking stond \u201cEcht houtfineer\u201d. Dat klopt niet voor HPL: dat is een geperst houtdecor. Voor een koper telt dat verschil \u2014 HPL is harder en krasvaster, echt fineer is hout met de prijs die daarbij hoort. Graag even bevestigen dat wij het zo goed omschrijven.'],
             ['3D is nu de standaardweergave.',
              'Het gerenderde beeld is destijds gemaakt met de oude, verkeerde maten en klopt dus niet meer. De 3D-weergave tekent de groeven uit onze eigen gegevens en is wél juist. Zodra er nieuwe renders zijn, draaien we dit terug.'],
           ].map(([kop, tekst]) => (
@@ -475,18 +477,20 @@ export default function ClassicNextPagina() {
       <section style={{ display: 'grid', gap: 16 }}>
         <div style={{ display: 'grid', gap: 8 }}>
           <span style={{ ...LABEL, color: ROEST }}>Wat we nog nodig hebben</span>
-          <h2 style={H2}>Vijf dingen, en waarvoor</h2>
+          <h2 style={H2}>Zes dingen, en waarvoor</h2>
           <p style={P}>
-            Bijgewerkt op 15 september. Drie punten van de vorige lijst zijn beantwoord en staan
-            onderaan afgevinkt.
+            Bijgewerkt op 16 september, nadat de zeven extra houtdecors binnenkwamen. Vier punten
+            zijn inmiddels beantwoord en staan onderaan afgevinkt.
           </p>
         </div>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 10 }}>
           {[
             ['Controleer onze correcties op de tien ontwerpen.',
              'Vooral Aura, Solace en Halo: die hebben wij aangepast op basis van jullie productfoto\u2019s, zonder dat jullie ze noemden. Meten wij dertien groeven bij Aura waar het er twaalf of veertien zijn, dan staat dat straks in elke offerte. Dit willen we vóór 2 oktober vast hebben.'],
-            ['De overige fineerdecors, in dezelfde vorm als Oslo Oak.',
-             'Dus de map met de tileable texturen (kleur, diepte, glans) plus het V-Ray-bestand \u2014 dat laatste niet weglaten, daar staat de maat in. 4K is ruim genoeg, 8K hoeft niet. En: onder welke naam verkopen jullie het? \u201c0H598-W07 Oslo Oak tanned red\u201d is een artikelnummer, geen naam waar een koper iets aan heeft.'],
+            ['Onder welke naam verkopen jullie de decors?',
+             '\u201c0H598-W07 Oslo Oak tanned red\u201d is een artikelnummer. Op de offerte wil een koper een naam zien. Nu staat het artikelnummer erbij, omdat dat het enige is wat we hebben.'],
+            ['Twee dingen die in de laatste levering ontbraken.',
+             'Bij Master Oak natural en Master Oak patina stond de eenheid niet in het V-Ray-bestand; wij lezen de tegel als 3040 bij 1270 mm omdat dat vrijwel exact een standaard HPL-plaat van 3050 bij 1300 is \u2014 graag bevestigd. En bij Master Oak patina zat geen structuurkaart, alleen een normaalkaart; dat decor is bij ons daarom vlak.'],
             ['Mogen wij het Unilin-materiaal gebruiken?',
              'Dit zijn beelden van Unilin, niet van Classic Next. Jullie hebben er vermoedelijk gebruiksrecht op voor eigen verkoop, maar wij zetten ze op een commerciële site. Graag bevestigd, en of er een bronvermelding bij moet. Moet dat met Unilin geregeld worden, dan liever nu dan achteraf.'],
             ['De 3D-modellen of renders van de dertien deuren.',
@@ -509,6 +513,7 @@ export default function ClassicNextPagina() {
             ['Reactietermijn op offertes.', 'Vijf werkdagen, akkoord bevestigd op 14 september.'],
             ['Openingstijden showroom Uden.', 'Dinsdag t/m vrijdag, 10:00\u201316:00, bij voorkeur op afspraak. Gaat zo de showroomgids in.'],
             ['Wie het scherm op de stand bedient.', 'Een tablet met eigen hotspot; Classic Next test dat zelf. Tip: open de configurator vóór de beurs één keer op díé tablet, dan staan de zware onderdelen in het geheugen van het apparaat.'],
+            ['De fineerdecors aanleveren.', 'Gedaan. Op 14 september \u00e9\u00e9n decor als proef, op 16 september zeven erbij \u2014 compleet met kleur-, diepte- en glanskaart en het V-Ray-bestand met de maat erin. Precies de vorm die we nodig hadden.'],
             ['Thijs en Machiel testen de configurator.', 'Gedaan op 14 september. Die test leverde zeven meldingen op en bij natekenen tien echte afwijkingen \u2014 zie bovenaan.'],
           ].map(([kop, tekst]) => (
             <li key={kop} style={{ display: 'grid', gridTemplateColumns: '20px 1fr', gap: 12, background: 'rgba(61,90,62,0.05)', border: `1px solid rgba(61,90,62,0.18)`, borderRadius: 12, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
