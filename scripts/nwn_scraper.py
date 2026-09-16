@@ -183,16 +183,39 @@ def mode_haal(hoeveel):
         open_staand = open_staand[: int(hoeveel)]
     print(f"{len(open_staand)} projecten ophalen, {DELAY}s ertussen…")
     op_url = {p["url"]: p for p in d["projecten"]}
-    gelukt = 0
+    gelukt = weg = storingen = 0
     for i, p in enumerate(open_staand, 1):
         try:
             p.update(lees_project(haal(p["url"]), p["url"]))
             gelukt += 1
+            storingen = 0
         except RuntimeError as e:
-            # Een foutcode is een signaal, geen hobbel: stoppen in plaats van
-            # doorrammen. Dat is het verschil tussen beleefd en vervelend.
+            # Drie soorten, drie reacties.
+            #
+            # 404/410 — een dood adres in hun eigen sitemap. Overslaan en
+            #   onthouden, want die komt niet meer terug.
+            # 000 — geen verbinding. Dat is bij ons vandaan net zo goed als bij
+            #   hen; één keer is ruis. Overslaan zónder markering, zodat hij
+            #   een volgende ronde opnieuw meegaat. Maar vijf op rij betekent
+            #   iets structureels, en dan stoppen we alsnog.
+            # De rest (403, 429, 5xx) — een afwijzing of een server in nood.
+            #   Direct stoppen; doorrammen is precies wat we niet doen.
+            code = str(e)
+            if any(c in code for c in ("404", "410")):
+                p["_mislukt"] = code
+                weg += 1
+                storingen = 0
+                continue
+            if "000" in code:
+                storingen += 1
+                if storingen < 5:
+                    print(f"  geen verbinding op {p['url']} — overgeslagen ({storingen}/5)")
+                    time.sleep(10)
+                    continue
+                print(f"  vijf keer achter elkaar geen verbinding — gestopt")
+                break
+            p["_mislukt"] = code
             print(f"  {e} op {p['url']} — gestopt")
-            p["_mislukt"] = str(e)
             break
         except Exception as e:
             print(f"  fout op {p['url']}: {e}")
@@ -201,7 +224,8 @@ def mode_haal(hoeveel):
             bewaar(d); print(f"  …{i}/{len(open_staand)}")
         time.sleep(DELAY)
     bewaar(d)
-    print(f"{gelukt} projecten opgehaald")
+    print(f"{gelukt} projecten opgehaald"
+          + (f", {weg} verdwenen pagina's overgeslagen" if weg else ""))
 
 
 def sleutel(naam, plaats):
