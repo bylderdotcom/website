@@ -57,7 +57,21 @@ def mode_list(max_pages):
             projecten.append({"url": BASE + u, "plaats": plaats_uit_url(u), "naam": naam_uit_slug(u)})
         if p % 10 == 0: print(f"  …pagina {p}, {len(projecten)} projecten")
         time.sleep(DELAY)
-    data = load(); data["projecten"] = projecten; save(data)
+    # Projecten die met de hand zijn toegevoegd overleven een nieuwe scrape.
+    # Nieuwbouw.nl is een deelnemersmodel: wie zijn CRM niet koppelt staat er
+    # niet op, en dat treft ook grote ontwikkelaars. Kloostergoed Theresia (156
+    # woningen, BPD) is het eerste voorbeeld — gevonden op 16-09-2026, staat op
+    # Funda en bij de makelaar maar niet hier. Zonder deze regel veegt de
+    # volgende run zulk handwerk weg.
+    data = load()
+    handwerk = [x for x in data.get("projecten", []) if x.get("handmatig")]
+    bestaand = {x["url"] for x in projecten}
+    behouden = [x for x in handwerk if x.get("url") not in bestaand]
+    data["projecten"] = projecten + behouden
+    if behouden:
+        print(f"  {len(behouden)} handmatig toegevoegd project(en) behouden: "
+              + ", ".join(x.get("naam", "?") for x in behouden))
+    save(data)
     import collections
     per = collections.Counter(x["plaats"] for x in projecten)
     print(f"\n{len(projecten)} projecten over {len(per)} gemeenten.")
