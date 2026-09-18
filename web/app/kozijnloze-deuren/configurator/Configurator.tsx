@@ -44,7 +44,7 @@ type Deur = {
 
 const NIEUW: Deur = {
   naam: '', ontwerp: 'dawn', afwerking: 'gelakt', ral: '9010', vrij: '', helderheid: 1,
-  fineer: 'licht',
+  fineer: 'oslo-oak',
   richting: 'binnen', scharnier: 'links',
   kruk: 'oma-q-slim', krukAfwerking: 'Zwart', slot: 'loop', slotAfwerking: 'Zwart',
   scharnierKleur: 'Zwart',
@@ -91,7 +91,7 @@ function leesUrl(): Deur[] {
       ral: KLEUREN.some(k => k.ral === ral) ? ral : '9010',
       vrij: /^[0-9a-f]{6}$/i.test(vrij || '') ? `#${vrij}` : '',
       helderheid: 1,
-      fineer: FINEREN.some(f => f.id === fineer) ? fineer : 'licht',
+      fineer: FINEREN.some(f => f.id === fineer) ? fineer : NIEUW.fineer,
       richting: richting === 'buiten' ? 'buiten' : 'binnen',
       scharnier: scharnier === 'rechts' ? 'rechts' : 'links',
       kruk: km.id,
@@ -476,16 +476,17 @@ export default function Configurator() {
   const specTekst = deuren.map((d, i) => {
     const o = ONTWERPEN.find(x => x.id === d.ontwerp)!
     const k = KLEUREN.find(x => x.ral === d.ral)!
-    const f = FINEREN.find(x => x.id === d.fineer)!
+    // Geen '!': de decorlijst verandert als de leverancier iets aanlevert of
+    // intrekt, en een oud adres wijst dan naar een decor dat niet meer bestaat.
+    const f = FINEREN.find(x => x.id === d.fineer) ?? FINEREN[0]
     const vrijeRal = d.vrij ? dichtstbijzijndeRal(d.vrij) : null
     const afw = d.afwerking === 'gelakt'
               ? (vrijeRal
                   ? `gelakt, gekozen kleur ${d.vrij} — dichtstbijzijnde RAL ${vrijeRal.ral} ${vrijeRal.naam}`
                   : `gelakt in RAL ${k.ral} ${k.naam}`)
-              : d.afwerking === 'fineer'
-                ? (f.voorlopig
-                    ? `fineer ${f.naam.toLowerCase()} (houtsoort nog te kiezen)`
-                    : `fineer ${f.naam}${f.code ? ` (${f.code})` : ''}`)
+              // Geen artikelnummer op de offerte: Classic Next laat dat voor de
+              // klant achterwege en bespreekt het bij het contact over de aanvraag.
+              : d.afwerking === 'fineer' ? `houtdecor ${f.naam}`
               : 'gegrond, zelf te schilderen'
     const km = KRUKKEN.find(x => x.id === d.kruk) ?? KRUKKEN[0]
     const sl = SLOTEN.find(x => x.id === d.slot) ?? SLOTEN[0]
@@ -606,7 +607,7 @@ export default function Configurator() {
           <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', alignItems: 'center' }}>
             {deuren.map((d, i) => {
               const k = KLEUREN.find(x => x.ral === d.ral)!
-              const f = FINEREN.find(x => x.id === d.fineer)!
+              const f = FINEREN.find(x => x.id === d.fineer) ?? FINEREN[0]
               const staal = d.afwerking === 'fineer' ? f.basis
                           : d.afwerking === 'gegrond' ? GRONDVERF
                           : (d.vrij || k.hex)
@@ -735,8 +736,8 @@ export default function Configurator() {
                   aria-pressed={f.id === huidig.fineer}
                   title={`${f.naam}${f.code ? ` (${f.code})` : ''}`}
                   style={{ height: 72, borderRadius: 9, cursor: 'pointer', padding: 0,
-                    // Een echt decor laat zijn eigen nerf zien; de voorlopige
-                    // blijven een gestreept vlakje, zodat het verschil zichtbaar is.
+                    // Elk decor laat zijn eigen nerf zien. Laadt de kleurkaart
+                    // niet, dan een gestreept vlakje in plaats van niets.
                     background: f.beeld
                       ? `url(/img/classic-next/fineer/${f.beeld}-kleur.webp) center/cover`
                       : `repeating-linear-gradient(90deg, ${f.basis} 0 6px, ${f.nerf} 6px 7px)`,
@@ -746,13 +747,6 @@ export default function Configurator() {
                   }} />
               ))}
             </div>
-            {fineer.voorlopig && (
-              <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: '9px 0 0', lineHeight: 1.6 }}>
-                De houtnerf op dit scherm is een indicatie, geen weergave van het echte
-                materiaal. Kies Oslo Oak om te zien hoe het eruitziet als de scan er wél is;
-                de overige decors volgen zodra Classic Next ze aanlevert.
-              </p>
-            )}
           </div>
         )}
 

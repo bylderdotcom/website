@@ -141,9 +141,10 @@ export const AFWERKINGEN: { id: Afwerking; naam: string; uitleg: string }[] = [
 // blijkt, is precies het soort belofte dat we niet doen.
 export type Fineer = {
   id: string; naam: string
-  /** Basiskleur en nerfkleur van de getekende nerf — alleen voor de voorlopige. */
+  /** Basiskleur en nerfkleur. Twee rollen: de wand volgt de basiskleur als er
+   *  houtdecor gekozen is, en als de kleurkaart niet laadt tekenen we hiermee
+   *  een grove nerf in plaats van een leeg vlak. */
   basis: string; nerf: string
-  voorlopig: boolean
   /** Bestandsnaam van de kleurkaart onder /img/classic-next/fineer/. */
   beeld?: string
   /** De structuurkaart (persing). Decors uit dezelfde reeks delen die, dus hij
@@ -166,23 +167,23 @@ export type Fineer = {
 // vrijwel exact overeen met een standaard HPL-plaat van 3050 bij 1300, wat
 // bevestigt dat het om centimeters gaat.
 export const FINEREN: Fineer[] = [
-  { id: 'oslo-oak', naam: 'Oslo Oak tanned red', basis: '#654535', nerf: '#4A3226', voorlopig: false,
+  { id: 'oslo-oak', naam: 'Oslo Oak tanned red', basis: '#654535', nerf: '#4A3226',
     beeld: 'oslo-oak', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H598-W07' },
-  { id: 'oslo-oak-cocoa', naam: 'Oslo Oak cocoa brown', basis: '#5A4032', nerf: '#412C22', voorlopig: false,
+  { id: 'oslo-oak-cocoa', naam: 'Oslo Oak cocoa brown', basis: '#5A4032', nerf: '#412C22',
     beeld: 'oslo-oak-cocoa', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H597-W07' },
-  { id: 'valley-ash', naam: 'Valley Ash sunlit brown', basis: '#8A6A4C', nerf: '#6A4F37', voorlopig: false,
+  { id: 'valley-ash', naam: 'Valley Ash sunlit brown', basis: '#8A6A4C', nerf: '#6A4F37',
     beeld: 'valley-ash', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H593-W07' },
-  { id: 'dainty-oak-latte', naam: 'Dainty Oak latte', basis: '#B79A79', nerf: '#957B5E', voorlopig: false,
+  { id: 'dainty-oak-latte', naam: 'Dainty Oak latte', basis: '#B79A79', nerf: '#957B5E',
     beeld: 'dainty-oak-latte', structuur: 'structuur-v1a', tegelMm: [1300, 1509], code: '0H267-V1A' },
-  { id: 'robinson-oak', naam: 'Robinson Oak light natural', basis: '#C0A484', nerf: '#9C8365', voorlopig: false,
+  { id: 'robinson-oak', naam: 'Robinson Oak light natural', basis: '#C0A484', nerf: '#9C8365',
     beeld: 'robinson-oak', structuur: 'structuur-w06', tegelMm: [1306, 1300], code: '0H784-W06' },
-  { id: 'master-oak', naam: 'Master Oak natural', basis: '#A98A66', nerf: '#876C4E', voorlopig: false,
+  { id: 'master-oak', naam: 'Master Oak natural', basis: '#A98A66', nerf: '#876C4E',
     beeld: 'master-oak', structuur: 'structuur-v2a', tegelMm: [3040, 1270], code: '0H913-V2A' },
   // Bij dit decor leverde Unilin geen structuurkaart, alleen een normaalkaart.
   // Die kunnen wij niet in de hoogtekaart gebruiken; het decor is dus vlak.
-  { id: 'master-oak-patina', naam: 'Master Oak patina', basis: '#9B7F5E', nerf: '#7B6347', voorlopig: false,
+  { id: 'master-oak-patina', naam: 'Master Oak patina', basis: '#9B7F5E', nerf: '#7B6347',
     beeld: 'master-oak-patina', tegelMm: [3040, 1270], code: '0H923-V2A' },
-  { id: 'kivu-wenge', naam: 'Kivu Wenge', basis: '#4A3A30', nerf: '#332721', voorlopig: false,
+  { id: 'kivu-wenge', naam: 'Kivu Wenge', basis: '#4A3A30', nerf: '#332721',
     beeld: 'kivu-wenge', structuur: 'structuur-cst', tegelMm: [1300, 1300], code: '0H687-CST' },
 ]
 
