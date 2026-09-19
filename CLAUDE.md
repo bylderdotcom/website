@@ -64,16 +64,16 @@ keer — preview bij de PR, productie na de merge — en één build duurt een k
 reeks wijzigingen op een dag loopt productie daardoor uren achter. `scripts/vercel-ignore.sh`
 slaat preview-builds nu over.
 
-**Ontsnappingsluik:** een branch die met `preview/` begint bouwt wél een preview. Gebruik dat
-voor wijzigingen die Daniel eerst wil zíén — een nieuwe pagina, een andere sectievolgorde, een
-ander ontwerp. Voor tekstcorrecties, datawijzigingen en scripts is het overbodig.
+**Ook voor visuele wijzigingen geen preview meer (besluit Daniel, 19-09-2026).** "Je mag het
+voortaan meteen live zetten, een preview is niet nodig." Dus: branch → PR → mergen → controleren
+op productie. Het ontsnappingsluik bestaat nog (een branch die met `preview/` begint bouwt wél
+een preview), maar gebruik het alleen als Daniel er expliciet om vraagt.
 
 **Vaste volgorde bij elke inhoudelijke wijziging:**
 1. **Werk op een branch, nooit direct op `main`.** De PR is het reviewmoment en de
    ongedaan-maak-knop, ook zonder preview.
-2. **Weegt het visueel?** Dan `preview/<naam>` als branchnaam, en opleveren met de
-   preview-URL vóór de merge. Zo niet: gewone branchnaam, mergen, en daarna op
-   **productie** controleren.
+2. **Gewone branchnaam, mergen, en daarna op productie controleren.** Alleen als Daniel
+   er expliciet om vraagt een `preview/<naam>`-branch.
 3. **Lever op met een URL bovenaan** — preview of productie — nooit met een lijst
    gewijzigde bestanden.
 4. **Voeg screenshots toe** van de gewijzigde pagina's, twee formaten:
@@ -82,8 +82,7 @@ ander ontwerp. Voor tekstcorrecties, datawijzigingen en scripts is het overbodig
    Gebruik de browser-tools (`preview_start` → `navigate` → `resize_window` → `screenshot`).
 5. **Beschrijf in gewone taal wat er veranderd is** aan wat de bezoeker ziet. Geen
    bestandsnamen, geen functienamen, geen regelnummers.
-6. **Mergen pas na akkoord van Daniel.** Dat geldt nog steeds — zonder preview des te meer,
-   want na de merge staat het live.
+6. **Mergen mag meteen.** Daniel beoordeelt op productie; de PR blijft de ongedaan-maak-knop.
 
 **Let op de build-gate.** Hetzelfde script slaat de build óók over als er in de laatste commit
 alleen `*.md`, `*.py`, `scripts/`, `_scripts/`, `reports/`, `_audits/` of `.claude/` wijzigde.
