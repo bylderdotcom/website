@@ -22,6 +22,11 @@ const HOOGTE = 1800          // px; deurblad 2.700 mm
 /** Groefbreedte in pixels. Een echte frees is 4 à 8 mm; iets ruimer leest beter. */
 const GROEF_PX = 7
 
+/** Het kader van Solace, Halo, Horizon en Ember, uit de CAD-tekeningen van
+ *  Classic Next: 139,5 mm van de zijkant en 127,5 mm van boven en onder. */
+const KADER_X = 0.155
+const KADER_Y = 0.0551
+
 /** Een geladen decor: de kleur- en dieptekaart van de leverancier. */
 export type Decor = {
   kleur: HTMLImageElement
@@ -76,8 +81,8 @@ function tekenHoogte(groeven: Groef[], decor?: Decor): ImageData {
       const y = gr.y * HOOGTE
       g.moveTo(0, y); g.lineTo(BREEDTE, y)
     } else if (gr.soort === 'kader') {
-      const mx = gr.inset * BREEDTE
-      const my = gr.inset * BREEDTE      // gelijke marge in mm, niet in fractie
+      const mx = gr.x * BREEDTE
+      const my = gr.y * HOOGTE
       g.rect(mx, my, BREEDTE - 2 * mx, HOOGTE - 2 * my)
     } else if (gr.soort === 'boog') {
       // Het raster is isotroop — 1,5 mm per pixel in beide richtingen — dus een
@@ -88,9 +93,21 @@ function tekenHoogte(groeven: Groef[], decor?: Decor): ImageData {
     } else if (gr.soort === 'chevron') {
       // De punt wijst omhoog. Hij wees omlaag; gemeld door Classic Next op
       // 14-09-2026 ("frees zit ondersteboven gespiegeld").
+      //
+      // De armen lopen precies van kaderlijn tot kaderlijn, onder 45 graden.
+      // De bovenste en de onderste punt vallen buiten het kader; die snijdt de
+      // clip eraf, zoals in de tekening.
       const y = gr.y * HOOGTE, h = gr.hoogte * HOOGTE
-      const m = 0.135 * BREEDTE            // binnen het kader van Ember
+      const m = KADER_X * BREEDTE
+      g.save()
+      g.beginPath()
+      g.rect(m, KADER_Y * HOOGTE, BREEDTE - 2 * m, HOOGTE - 2 * KADER_Y * HOOGTE)
+      g.clip()
+      g.beginPath()
       g.moveTo(m, y + h); g.lineTo(BREEDTE / 2, y); g.lineTo(BREEDTE - m, y + h)
+      g.stroke()
+      g.restore()
+      continue
     }
     g.stroke()
   }
