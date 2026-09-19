@@ -100,7 +100,7 @@ export default function ClassicNextPagina() {
 
       <header style={{ display: 'grid', gap: 16 }}>
         <div style={{ ...MONO, display: 'flex', flexWrap: 'wrap', gap: '8px 18px' }}>
-          <span>Bylder × Classic Next</span><span>Bijgewerkt 16 september 2026</span>
+          <span>Bylder × Classic Next</span><span>Bijgewerkt 19 september 2026</span>
           <span style={{ color: ROEST, fontWeight: 700 }}>Beurs Eigen Huis: 9–11 oktober</span>
         </div>
         <h1 style={{ fontSize: 'clamp(2rem,4.6vw,2.9rem)', fontWeight: 800, letterSpacing: '-0.028em', lineHeight: 1.05, margin: 0, textWrap: 'balance' }}>
@@ -123,8 +123,8 @@ export default function ClassicNextPagina() {
           <span style={{ ...LABEL, color: GROEN }}>Verwerkt · 15 september</span>
           <h2 style={H2}>Wat er sinds jullie test is veranderd</h2>
           <p style={P}>
-            Thijs stuurde op 14 september zijn bevindingen. Alles hieronder staat inmiddels live en is
-            te bekijken op{' '}
+            Thijs stuurde op 14 september zijn bevindingen, en op 18 september de CAD-tekeningen.
+            Alles hieronder staat inmiddels live en is te bekijken op{' '}
             <a href="/kozijnloze-deuren/configurator/" style={{ color: GROEN, fontWeight: 700 }}>
               de configurator
             </a>.
@@ -134,14 +134,16 @@ export default function ClassicNextPagina() {
           {[
             ['De magneetsloten staan erop.',
              'De foto\u2019s hadden we al, ze stonden alleen niet op het scherm. Je kiest nu eerst het type \u2014 loop, dag- en nacht, vrij/bezet \u2014 en daaronder de afwerking, met foto erbij.'],
-            ['Tien ontwerpen gecorrigeerd, niet zeven.',
-             'Jullie mail zei \u201cbijv.\u201d, en dat bleek letterlijk. Na natekenen van alle dertien productfoto\u2019s weken er tien af. Naast jullie zeven: Aura had tien groeven waar het er dertien zijn, en de kaders van Solace en Halo stonden te dicht op de rand. Bij Shadow en Noir klopte ook het aantal \u2014 wij tekenden er drie en vijf, jullie foto\u2019s tonen er vier en vier.'],
+            ['Alle dertien ontwerpen nagemeten op jullie eigen tekeningen.',
+             'De achttien CAD-tekeningen die Elisa terugvond bevatten alle dertien ontwerpen, plus vijf varianten die nooit in de reeks zijn gekomen. Daarmee hoeft er niets meer geschat te worden: elke groef staat er als twee lijnen op 3 mm van elkaar, op een blad van 900 bij 2315 mm. Elke groefpositie in de configurator komt nu daaruit.'],
+            ['De omlijsting stond te ver van de boven- en onderrand.',
+             'Bij Solace, Halo, Horizon en Ember. In de tekening ligt de kaderlijn 139,5 mm van de zijkant en 127,5 mm van boven en onder; bij ons werd één marge voor beide richtingen gebruikt, wat op de hoogte ruim 31 cm werd.'],
             ['Horizon en Ember hadden een vormfout.',
-             'Horizon is nu een halve cirkel met de platte kant tegen de linker kaderlijn, in plaats van een cirkel in het midden. De chevrons van Ember wijzen weer omhoog.'],
+             'Horizon bestaat uit twee halve cirkels met hun platte kant tegen de linker kaderlijn, waarvan de buitenste precies de rechter kaderlijn raakt. De visgraat van Ember wijst weer omhoog, loopt onder exact 45 graden van kaderlijn tot kaderlijn, en wordt boven en onder door het kader afgesneden.'],
             ['Acht houtdecors zitten in de configurator.',
              'Het Unilin-materiaal was ruim bruikbaar. Oslo Oak tanned red ging er op 15 september in; de zeven die Thijs op 16 september nastuurde staan er nu ook — Oslo Oak cocoa brown, Valley Ash sunlit brown, Dainty Oak latte, Robinson Oak light natural, Master Oak natural, Master Oak patina en Kivu Wenge. Kies bij Afwerking \u201cFineer\u201d en dan een decor. Elke nerf ligt op ware grootte: de maat staat in het V-Ray-bestand, en die verschilt per decor — van 1300 bij 1300 mm tot 3040 bij 1270 mm, een hele plaat.'],
             ['Het heet geen fineer meer, maar houtdecor.',
-             'Bij de afwerking stond \u201cEcht houtfineer\u201d. Dat klopt niet voor HPL: dat is een geperst houtdecor. Voor een koper telt dat verschil \u2014 HPL is harder en krasvaster, echt fineer is hout met de prijs die daarbij hoort. Graag even bevestigen dat wij het zo goed omschrijven.'],
+             'Bij de afwerking stond \u201cEcht houtfineer\u201d. Dat klopt niet voor HPL: dat is een geperst houtdecor. Thijs bevestigde op 18 september dat Classic Next uitsluitend HPL levert. Op de offerte staat nu de Unilin-naam zonder artikelnummer, zoals jullie het zelf doen.'],
             ['3D is nu de standaardweergave.',
              'Het gerenderde beeld is destijds gemaakt met de oude, verkeerde maten en klopt dus niet meer. De 3D-weergave tekent de groeven uit onze eigen gegevens en is wél juist. Zodra er nieuwe renders zijn, draaien we dit terug.'],
           ].map(([kop, tekst]) => (
@@ -477,24 +479,26 @@ export default function ClassicNextPagina() {
       <section style={{ display: 'grid', gap: 16 }}>
         <div style={{ display: 'grid', gap: 8 }}>
           <span style={{ ...LABEL, color: ROEST }}>Wat we nog nodig hebben</span>
-          <h2 style={H2}>Zes dingen, en waarvoor</h2>
+          <h2 style={H2}>Zeven dingen, en waarvoor</h2>
           <p style={P}>
-            Bijgewerkt op 16 september, nadat de zeven extra houtdecors binnenkwamen. Vier punten
-            zijn inmiddels beantwoord en staan onderaan afgevinkt.
+            Bijgewerkt op 19 september, na de CAD-tekeningen. Wat beantwoord is staat onderaan
+            afgevinkt — daar zijn er vier bij gekomen.
           </p>
         </div>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 10 }}>
           {[
-            ['Controleer onze correcties op de tien ontwerpen.',
-             'Vooral Aura, Solace en Halo: die hebben wij aangepast op basis van jullie productfoto\u2019s, zonder dat jullie ze noemden. Meten wij dertien groeven bij Aura waar het er twaalf of veertien zijn, dan staat dat straks in elke offerte. Dit willen we vóór 2 oktober vast hebben.'],
-            ['Onder welke naam verkopen jullie de decors?',
-             '\u201c0H598-W07 Oslo Oak tanned red\u201d is een artikelnummer. Op de offerte wil een koper een naam zien. Nu staat het artikelnummer erbij, omdat dat het enige is wat we hebben.'],
-            ['Twee dingen die in de laatste levering ontbraken.',
-             'Bij Master Oak natural en Master Oak patina stond de eenheid niet in het V-Ray-bestand; wij lezen de tegel als 3040 bij 1270 mm omdat dat vrijwel exact een standaard HPL-plaat van 3050 bij 1300 is \u2014 graag bevestigd. En bij Master Oak patina zat geen structuurkaart, alleen een normaalkaart; dat decor is bij ons daarom vlak.'],
+            ['Welke van de acht decors zijn fineer en geen HPL?',
+             'Thijs schreef dat hij er per ongeluk een paar kan hebben meegestuurd. Welke dat zijn weten we niet, dus staan ze nu allemaal als houtdecor in de configurator. Eén regel volstaat: welke moeten eruit. Dit is het enige punt dat vóór 2 oktober echt moet.'],
+            ['Wilt u de reeks aanvullen met meer HPL-decors?',
+             'Het aanbod stond in jullie mail van 18 september. Ja graag — in dezelfde vorm als de vorige keer, met het V-Ray-bestand erbij, want daar staat de maat van de nerf in.'],
+            ['Horen er varianten uit de tekeningen alsnog bij?',
+             'Vijf van de achttien tekeningen zitten niet in de reeks: Drift zonder de verticale lijn, een verticale met één horizontale hoog in het blad, een groevenbundel tegen de krukzijde in plaats van in het midden, en twee keer de omlijsting van Solace met een bredere frees (15 en 18 mm). Voeren jullie die, dan zetten we ze erbij.'],
+            ['De structuurkaart van Master Oak patina.',
+             'Daar zat alleen een normaalkaart bij, geen structuurkaart. Dat decor is bij ons daarom vlak: de nerf zie je wel, maar je voelt hem niet in het licht. Als die kaart er nog is, zetten we hem er alsnog in.'],
             ['Mogen wij het Unilin-materiaal gebruiken?',
              'Dit zijn beelden van Unilin, niet van Classic Next. Jullie hebben er vermoedelijk gebruiksrecht op voor eigen verkoop, maar wij zetten ze op een commerciële site. Graag bevestigd, en of er een bronvermelding bij moet. Moet dat met Unilin geregeld worden, dan liever nu dan achteraf.'],
-            ['De 3D-modellen of renders van de dertien deuren.',
-             'CAD, STEP, of de bestanden waar jullie productfoto\u2019s uit komen. Daarmee maken we het gerenderde beeld weer kloppend, in plaats van het na te bouwen op basis van een foto. Zolang dat er niet is, blijft 3D de standaardweergave.'],
+            ['Zijn er ook 3D-bestanden, naast de tekeningen?',
+             'De achttien tekeningen zijn 2D aanzichten — precies genoeg voor de groeven, en dat is het belangrijkste. Voor het gerenderde beeld zou een 3D-bestand (STEP of het model waar jullie productfoto\u2019s uit komen) het laatste gat dichten. Zolang dat er niet is, blijft 3D de standaardweergave.'],
             ['Een kleinere set materiaalstalen vóór 9 oktober.',
              'Jullie schreven dat de samples ná de beurs komen. Daar wringt het: het adviespunt in Rotterdam is juist bedoeld voor de bezoeker die op de beurs enthousiast wordt en vóór het tekenen iets wil voelen. Wat ons betreft volstaat één gespoten paneel, één invisible scharnier en één magneetslot. De rest mag daarna volgen.'],
           ].map(([kop, tekst]) => (
@@ -515,6 +519,10 @@ export default function ClassicNextPagina() {
             ['Wie het scherm op de stand bedient.', 'Een tablet met eigen hotspot; Classic Next test dat zelf. Tip: open de configurator vóór de beurs één keer op díé tablet, dan staan de zware onderdelen in het geheugen van het apparaat.'],
             ['De fineerdecors aanleveren.', 'Gedaan. Op 14 september \u00e9\u00e9n decor als proef, op 16 september zeven erbij \u2014 compleet met kleur-, diepte- en glanskaart en het V-Ray-bestand met de maat erin. Precies de vorm die we nodig hadden.'],
             ['Thijs en Machiel testen de configurator.', 'Gedaan op 14 september. Die test leverde zeven meldingen op en bij natekenen tien echte afwijkingen \u2014 zie bovenaan.'],
+            ['De CAD-tekeningen van de deuren.', 'Gedaan op 18 september, achttien stuks, via Elisa. Daarmee vervalt de vraag of onze correcties klopten: de groeven zijn er rechtstreeks uit overgenomen.'],
+            ['HPL of fineer.', 'Classic Next levert uitsluitend HPL. De site zegt nu “houtdecor” en legt uit wat dat is.'],
+            ['Onder welke naam de decors op de offerte komen.', 'De Unilin-benaming, zonder artikelnummer. Staat zo in de offerte.'],
+            ['De plaatmaat van 3050 bij 1300 mm.', 'Bevestigd op 18 september. De nerf van Master Oak ligt daarmee op ware grootte op het deurblad.'],
           ].map(([kop, tekst]) => (
             <li key={kop} style={{ display: 'grid', gridTemplateColumns: '20px 1fr', gap: 12, background: 'rgba(61,90,62,0.05)', border: `1px solid rgba(61,90,62,0.18)`, borderRadius: 12, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
               <span aria-hidden="true" style={{ color: GROEN, fontWeight: 800, fontSize: 15, lineHeight: '21px' }}>&#10003;</span>
@@ -541,7 +549,7 @@ export default function ClassicNextPagina() {
             </thead>
             <tbody>
               {[
-                ['15–19 sep', 'Configuratortest verwerkt (klaar). Nog: de correcties laten controleren, de overige fineerdecors, en de rechten op het Unilin-materiaal', 'samen'],
+                ['15–19 sep', 'Configuratortest verwerkt en alle dertien ontwerpen nagemeten op de CAD-tekeningen (klaar). Nog: welke decors fineer zijn, en de rechten op het Unilin-materiaal', 'samen'],
                 ['22–26 sep', 'Mailing na de beurs staat klaar (klaar). Nog: binnendeuren in de showroomgids, en de gerenderde weergave zodra de modellen er zijn', 'Bylder'],
                 ['29 sep – 2 okt', 'QR-code, weergave op beurs-wifi, proefdraaien met het standteam', 'samen'],
                 ['5 oktober', 'Aanvragen voor de 25 kaarten sluit', 'bezoekers'],
@@ -560,8 +568,8 @@ export default function ClassicNextPagina() {
       </section>
 
       <footer style={{ ...MONO, borderTop: `1px solid ${INKT}0.12)`, paddingTop: 18, lineHeight: 1.6 }}>
-        Opgesteld 13 september 2026 door Bylder, voor Classic Next. Bijgewerkt 15 september met de
-        verwerking van jullie configuratortest. Deze pagina is de laatste stand van zaken; wij houden
+        Opgesteld 13 september 2026 door Bylder, voor Classic Next. Bijgewerkt 19 september met de
+        dertien ontwerpen zoals ze in jullie CAD-tekeningen staan. Deze pagina is de laatste stand van zaken; wij houden
         hem bij, zodat hij niet uit de mail hoeft te worden opgediept. Hij staat niet in Google en is
         alleen via deze link te vinden.
       </footer>
