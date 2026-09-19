@@ -13,7 +13,10 @@
 export type Groef =
   | { soort: 'verticaal'; x: number }
   | { soort: 'horizontaal'; y: number }
-  | { soort: 'kader'; inset: number }
+  // Marge links/rechts en boven/onder apart: in de tekening is de kaderlijn
+  // 139,5 mm van de zijkant en 127,5 mm van de boven- en onderkant. Dat is in
+  // fracties dus niet hetzelfde getal.
+  | { soort: 'kader'; x: number; y: number }
   // van/tot in graden; weggelaten = hele cirkel. 0° is rechts, met de klok mee.
   | { soort: 'boog'; cx: number; cy: number; r: number; van?: number; tot?: number }
   | { soort: 'chevron'; y: number; hoogte: number }
@@ -32,49 +35,51 @@ export const ONTWERPEN: Ontwerp[] = [
     waar: 'Het vlakke deurblad. In een instuckozijn verdwijnt deze deur het verst in de wand.',
     groeven: [] },
   { id: 'dawn', naam: 'Dawn', groef: '1 verticale groef',
-    waar: 'Eén rechte lijn over de volle hoogte, op ruim een vijfde vanaf de krukzijde.',
-    groeven: [{ soort: 'verticaal', x: 0.217 }] },
+    waar: 'Eén rechte lijn over de volle hoogte, op ruim een kwart vanaf de krukzijde.',
+    groeven: [{ soort: 'verticaal', x: 0.2594 }] },
   { id: 'whisper', naam: 'Whisper', groef: '2 verticale groeven',
     waar: 'Op afstand lees je één accent, van dichtbij twee.',
-    groeven: [{ soort: 'verticaal', x: 0.217 }, { soort: 'verticaal', x: 0.331 }] },
+    groeven: [{ soort: 'verticaal', x: 0.2194 }, { soort: 'verticaal', x: 0.3228 }] },
   { id: 'shadow', naam: 'Shadow', groef: '4 verticale groeven',
     waar: 'Vangt strijklicht. In een ruimte met licht van opzij zie je de groeven pas echt.',
-    groeven: [0.132, 0.167, 0.199, 0.235].map(x => ({ soort: 'verticaal', x }) as Groef) },
+    groeven: [0.1417, 0.1728, 0.2039, 0.235].map(x => ({ soort: 'verticaal', x }) as Groef) },
   { id: 'noir', naam: 'Noir', groef: '4 verticale groeven',
     waar: 'Verdeelt de deur in vijf even brede vlakken. Een lattenlook zonder latten.',
-    groeven: [0.2, 0.4, 0.6, 0.8].map(x => ({ soort: 'verticaal', x }) as Groef) },
+    groeven: [0.207, 0.4023, 0.5977, 0.793].map(x => ({ soort: 'verticaal', x }) as Groef) },
   { id: 'aura', naam: 'Aura', groef: 'Bundel fijne groeven',
     waar: 'De meest uitgesproken van de verticale reeks. Eén per ruimte is genoeg.',
-    groeven: Array.from({ length: 13 }, (_, i) => ({ soort: 'verticaal', x: 0.274 + i * 0.0377 }) as Groef) },
+    groeven: Array.from({ length: 13 }, (_, i) => ({ soort: 'verticaal', x: 0.28 + i * 0.036667 }) as Groef) },
   { id: 'muse', naam: 'Muse', groef: '2 horizontale groeven',
     waar: 'Horizontaal maakt een ruimte optisch breder. Handig in een smalle overloop.',
-    groeven: [{ soort: 'horizontaal', y: 0.34 }, { soort: 'horizontaal', y: 0.66 }] },
+    groeven: [{ soort: 'horizontaal', y: 0.3328 }, { soort: 'horizontaal', y: 0.6672 }] },
   { id: 'echo', naam: 'Echo', groef: '4 horizontale groeven',
     waar: 'Regelmatiger dan Muse en daardoor rustiger, ondanks meer lijnen.',
     groeven: [0.2, 0.4, 0.6, 0.8].map(y => ({ soort: 'horizontaal', y }) as Groef) },
   { id: 'drift', naam: 'Drift', groef: 'Verticaal én horizontaal',
     waar: 'De enige met een duidelijke compositie. Vraagt om een wand waar hij alleen staat.',
-    groeven: [{ soort: 'verticaal', x: 0.238 }, { soort: 'horizontaal', y: 0.515 },
-              { soort: 'horizontaal', y: 0.612 }] },
+    groeven: [{ soort: 'verticaal', x: 0.2594 }, { soort: 'horizontaal', y: 0.5151 },
+              { soort: 'horizontaal', y: 0.6114 }] },
   { id: 'solace', naam: 'Solace', groef: 'Enkele omlijsting',
     waar: 'De klassieke paneeldeur, teruggebracht tot één lijn.',
-    groeven: [{ soort: 'kader', inset: 0.135 }] },
+    groeven: [{ soort: 'kader', x: 0.155, y: 0.0551 }] },
   { id: 'halo', naam: 'Halo', groef: 'Dubbele omlijsting',
     waar: 'Zelfde gedachte als Solace, met meer nadruk op de omtrek.',
-    groeven: [{ soort: 'kader', inset: 0.114 }, { soort: 'kader', inset: 0.134 }] },
+    groeven: [{ soort: 'kader', x: 0.155, y: 0.0551 },
+              { soort: 'kader', x: 0.2161, y: 0.0788 }] },
   { id: 'horizon', naam: 'Horizon', groef: 'Boogmotief',
     waar: 'Geen deur voor het hele huis, wel voor de deur waar je op uitkijkt vanaf de trap.',
-    // Geen cirkel in het midden maar een halve cirkel met de platte kant tegen
-    // de linker kaderlijn, die precies de rechter kaderlijn raakt. Zo staat hij
-    // op de foto van Classic Next; gemeten 15-09-2026.
-    groeven: [{ soort: 'kader', inset: 0.096 },
-              { soort: 'boog', cx: 0.096, cy: 0.5, r: 0.808, van: -90, tot: 90 },
-              { soort: 'boog', cx: 0.096, cy: 0.5, r: 0.773, van: -90, tot: 90 }] },
+    // Twee halve cirkels met hun platte kant tegen de linker kaderlijn; de
+    // buitenste raakt de rechter kaderlijn. Middelpunt op halve hoogte.
+    groeven: [{ soort: 'kader', x: 0.155, y: 0.0551 },
+              { soort: 'boog', cx: 0.1567, cy: 0.5, r: 0.685, van: -90, tot: 90 },
+              { soort: 'boog', cx: 0.1567, cy: 0.5, r: 0.615, van: -90, tot: 90 }] },
   { id: 'ember', naam: 'Ember', groef: 'Visgraat',
     waar: 'Slaat aan bij een visgraatvloer, en vloekt met bijna alles daarbuiten.',
-    groeven: [{ soort: 'kader', inset: 0.135 },
+    // Acht punten op gelijke afstand; de bovenste en de onderste lopen het
+    // kader uit en worden erdoor afgesneden, precies als in de tekening.
+    groeven: [{ soort: 'kader', x: 0.155, y: 0.0551 },
               ...Array.from({ length: 8 }, (_, i) =>
-                ({ soort: 'chevron', y: 0.13 + i * 0.095, hoogte: 0.058 }) as Groef)] },
+                ({ soort: 'chevron', y: 0.0039 + i * 0.124, hoogte: 0.1335 }) as Groef)] },
 ]
 
 // RAL-benaderingen voor het scherm. RAL is een fysieke standaard op een kleurstaal;
