@@ -120,6 +120,12 @@ ul.bedrijven li strong{display:inline-block;}
 .pk-strook b{display:block;font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.1;font-variant-numeric:tabular-nums;color:#1A1208;}
 .pk-strook span{display:block;font-size:12px;color:rgba(61,46,30,.66);margin-top:2px;line-height:1.35;}
 /* Twee keuzes die voor de oplevering vallen: naast elkaar, onder elkaar op mobiel. */
+/* De ledenkortingen: een lijst met bedragen, geen kaarten. Het zijn voorbeelden
+   bij één zin, niet drie keuzes die evenveel gewicht dragen. */
+.pk-leden{list-style:none;margin:16px 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px;}
+.pk-leden li{border:1px solid rgba(61,46,30,.14);border-radius:999px;padding:7px 14px;background:#fff;font-size:13.5px;color:#1A1208;}
+.pk-leden strong{font-weight:700;}
+.pk-leden span{color:rgba(61,46,30,.55);}
 /* Wat de tekeninganalyse teruggeeft, in drie vakjes onder het uploadblok. Geen
    kaarten met schaduw: dit zijn geen keuzes maar de uitkomst van één handeling. */
 .pk-uitkomst{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 20px;}
