@@ -1003,10 +1003,16 @@ def prijsfeiten_blok(p, naam, plaats):
         m2_laag = round(van / o_van)
         if tot and o_tot:
             m2_hoog = round(tot / o_tot)
-        lo_hi = (f"&euro;{m2_laag:,} tot &euro;{m2_hoog:,}".replace(",", ".")
-                 if m2_hoog and m2_hoog != m2_laag else f"&euro;{m2_laag:,}".replace(",", "."))
+        # Oplopend tonen. De kleinste woning heeft niet altijd de laagste
+        # vierkantemeterprijs — bij 1865 Stationskwartier is dat €5.830 tegen
+        # €5.067 voor de grootste — en "€5.830 tot €5.067" leest als een fout.
+        if m2_hoog and m2_hoog != m2_laag:
+            onder, boven = sorted((m2_laag, m2_hoog))
+            lo_hi = f"&euro;{onder:,} tot &euro;{boven:,}".replace(",", ".")
+        else:
+            lo_hi = f"&euro;{m2_laag:,}".replace(",", ".")
         rijen.append(("Prijs per vierkante meter", lo_hi,
-                      "de kleinste woning tegen de laagste prijs, de grootste tegen de hoogste"))
+                      "de goedkoopste en de duurste vierkante meter in dit project"))
 
     # Positie tussen de projecten die wij in dezelfde plaats volgen. Dit is de
     # vraag die een koper hardop stelt en die de website van de ontwikkelaar
@@ -1136,6 +1142,111 @@ erbij, want een plafondhoge deur vraagt niet om de standaardplint.</p>
 dossier, krijg je de <a href="/vouchers/">ledenkorting bij aangesloten merken</a> en toetsen we je
 offerte aan wat anderen in {E(netjes(plaats_ruw))} betaalden.</p>
 """
+
+
+
+# --- trede 4: wat het project zélf publiceert -------------------------------
+# Alles hierboven komt uit onze eigen bronnen: het Kadaster, het CBS, onze
+# bedrijvenlijst. Feitelijk, maar inwisselbaar — de pagina's leken daardoor op
+# elkaar. Dit blok komt van de website van het project zelf, geoogst door
+# scripts/projectsite_oogst.py, en verschilt per project van nature.
+#
+# HET STERKSTE DEEL IS WAT ER ONTBREEKT
+# Op de handgeschreven pagina van Haarlemszicht staat de scherpste alinea over
+# iets dat er níét is: "Er is geen openbare optielijst — de downloads bevatten
+# alleen situatie- en verkooptekeningen. Zonder die documenten weet je niet wat je
+# kunt kiezen en tegen welke prijs." Dat is precies het soort zin waarvoor een
+# koper terugkomt, en hij is af te leiden uit wat we wel en niet vinden.
+#
+# Eén voorbehoud, en dat staat er ook bij: wij kijken naar een handvol pagina's
+# van die site. Iets niet vinden is niet hetzelfde als iets niet bestaat. De zin
+# is daarom "wij vonden het niet, vraag ernaar" en nooit "het bestaat niet".
+PROJECTSITES_PAD = os.path.join(ROOT, "data", "projectsites.json")
+_SITES = None
+
+# Volgorde van belang voor een koper: zonder omschrijving en optielijst weet hij
+# niet wát hij kiest en tegen welke prijs; tekeningen en brochure zijn prettig.
+DOC_LABEL = [
+    ("technische omschrijving", "de technische omschrijving"),
+    ("optielijst", "de optie- of meerwerklijst"),
+    ("verkooptekeningen", "de verkooptekeningen"),
+    ("verkoopbrochure", "de brochure"),
+]
+
+
+def _projectsites():
+    global _SITES
+    if _SITES is None:
+        try:
+            _SITES = json.load(open(PROJECTSITES_PAD, encoding="utf8"))
+        except Exception:
+            _SITES = {}
+    return _SITES
+
+
+def projectsite_blok(p, naam):
+    f = _projectsites().get(p.get("url")) or {}
+    site = f.get("site")
+    if not site or f.get("_onbereikbaar"):
+        return "", []
+
+    docs = f.get("documenten") or {}
+    momenten = f.get("momenten") or {}
+    if not docs and not momenten:
+        return "", []
+
+    vragen = []
+    regels = []
+
+    # Wat er te downloaden is, en wat niet.
+    heeft = [(sleutel, label) for sleutel, label in DOC_LABEL if sleutel in docs]
+    mist = [(sleutel, label) for sleutel, label in DOC_LABEL if sleutel not in docs]
+    if heeft:
+        li = "".join(
+            f'<li><a href="{E(docs[sleutel])}" rel="nofollow noopener" target="_blank">'
+            f"{E(label[3:] if label.startswith('de ') else label)}</a></li>"
+            for sleutel, label in heeft)
+        regels.append(f"<p>Op hun eigen site staat {E(heeft[0][1])}"
+                      + (f" en nog {len(heeft) - 1} document{'en' if len(heeft) > 2 else ''}"
+                         if len(heeft) > 1 else "")
+                      + f" klaar:</p><ul class='bedrijven'>{li}</ul>")
+
+    # De twee die ertoe doen, als ze ontbreken.
+    kern_mist = [label for sleutel, label in mist
+                 if sleutel in ("technische omschrijving", "optielijst")]
+    if kern_mist:
+        wat = " en ".join(kern_mist)
+        regels.append(
+            f"<p><strong>Wat wij niet vonden: {E(wat)}.</strong> Vraag die op bij de makelaar "
+            f"v&oacute;&oacute;rdat je tekent. Zonder die twee weet je niet wat je zelf mag "
+            f"kiezen en tegen welke prijs &mdash; en dat is precies het deel waar meerwerk "
+            f"duur wordt. Wij keken naar een handvol pagina&rsquo;s van hun site; het kan zijn "
+            f"dat het er wel staat en wij het misten.</p>")
+        vragen.append((f"Publiceert {naam} een optielijst?",
+            f"Op de eigen site van het project vonden wij {wat} niet. Vraag die op bij de "
+            f"makelaar voordat je tekent: zonder die documenten weet je niet welk meerwerk "
+            f"mogelijk is en wat het kost. Wij keken naar een deel van hun site, dus het kan "
+            f"zijn dat het er wel staat."))
+
+    if "start verkoop" in momenten:
+        wanneer = momenten["start verkoop"].get("wanneer")
+        if wanneer:
+            regels.append(f"<p>Het project meldde zelf de start van de verkoop in "
+                          f"<strong>{E(wanneer)}</strong>.</p>")
+    if "uitverkocht" in momenten:
+        regels.append("<p>Op hun site staat dat (een deel van) dit project "
+                      "<strong>uitverkocht</strong> is. Voor wie al gekocht heeft verandert dat "
+                      "niets aan de keuzemomenten hieronder.</p>")
+
+    if not regels:
+        return "", []
+
+    blok = (f"<h2>Wat {E(naam)} zelf publiceert</h2>"
+            + "".join(regels)
+            + f'<p class="noot">Gevonden op <a href="{E(site)}" rel="nofollow noopener" '
+              f'target="_blank">de website van het project</a>, gecontroleerd op '
+              f'{nl_datum(f.get("_gehaald", ""))}.</p>')
+    return blok, vragen
 
 
 # --- ontwerpronde 29 augustus ----------------------------------------------
@@ -1402,6 +1513,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
     # De eigen cijfers van het project, en wat de afwerking daarmee kost.
     prijs_html, prijs_vragen = prijsfeiten_blok(p, naam, plaats)
+    site_html, site_vragen = projectsite_blok(p, naam)
     budget_html = afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi)
 
     besl_tot = sum(len(r["beslissingen"]) for r in ruimtes)
@@ -1556,6 +1668,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             f"woningen beschikbaar ({fv['verkocht_pct']}% verkocht). Gemeten door Bylder op de "
             f"beschikbaarheid per fase."))
     faq_items += prijs_vragen
+    faq_items += site_vragen
     faq_items += afgeleide_vragen(p, naam, plaats, lo, hi, won, buren,
                                   _gemeenten()["per_slug"].get(p["plaats"]))
 
@@ -1679,6 +1792,8 @@ afwerking en inrichting niet te veel betaalt.</p>
 {cijferstrook(strook)}
 
 {prijs_html}
+
+{site_html}
 
 {budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi)}
 
