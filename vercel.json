@@ -571,6 +571,61 @@
       "source": "/nieuwbouw-project/bentwijck-fase-2b-alphen-aan-den-rijn/",
       "destination": "/nieuwbouw-project/bentwijck-alphen-aan-den-rijn/",
       "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/parkbuurt-fase-3-almelo/",
+      "destination": "/nieuwbouw-project/parkbuurt-almelo/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/satijnhof-fase-2-enschede/",
+      "destination": "/nieuwbouw-project/satijnhof-enschede/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/satijnhof-fase-3-enschede/",
+      "destination": "/nieuwbouw-project/satijnhof-enschede/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/erve-berchus-fase-2-hengelo/",
+      "destination": "/nieuwbouw-project/erve-berchus-hengelo/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/erve-berchus-fase-3-hengelo/",
+      "destination": "/nieuwbouw-project/erve-berchus-hengelo/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/droomweide-fase-2-meerkerk/",
+      "destination": "/nieuwbouw-project/droomweide-meerkerk/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/droomweide-fase-3a-meerkerk/",
+      "destination": "/nieuwbouw-project/droomweide-meerkerk/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-helden-van-vroondaal-fase-2-s-gravenhage/",
+      "destination": "/nieuwbouw-project/de-helden-van-vroondaal-s-gravenhage/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-helden-van-vroondaal-fase-3-s-gravenhage/",
+      "destination": "/nieuwbouw-project/de-helden-van-vroondaal-s-gravenhage/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/weidse-peel-fase-1-sint-anthonis/",
+      "destination": "/nieuwbouw-project/weidse-peel-sint-anthonis/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/weidse-peel-fase-2-sint-anthonis/",
+      "destination": "/nieuwbouw-project/weidse-peel-sint-anthonis/",
+      "permanent": true
     }
   ],
   "rewrites": [

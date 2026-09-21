@@ -81,6 +81,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # Een label dat niet bestaat laat `gh issue create` falen, en met de
+          # `|| true` erachter verdween het alarm dan geruisloos. Dat is precies
+          # wat er met de meting van 15 september gebeurde. Daarom eerst zorgen
+          # dat het label bestaat.
+          gh label create "meting" --force >/dev/null 2>&1 || true
           gh issue create \
             --title "Bouwstatus-meting incompleet ($(date +%F)): ${{ steps.dekking.outputs.pct }}%" \
             --body "$(printf 'De tweewekelijkse meting haalde %s van de %s projecten (%s%%).\n\nEen onvolledige ronde is geen meting maar een gat in de reeks, en het logboek op de projectpagina'"'"'s leunt erop. Waarschijnlijke oorzaken: PDOK traag of uit de lucht, of de limiet van duizend panden per bbox.\n\n```\n%s\n```\n' "${{ steps.dekking.outputs.gemeten }}" "${{ steps.dekking.outputs.totaal }}" "${{ steps.dekking.outputs.pct }}" "$(tail -30 /tmp/meting.txt)")" \

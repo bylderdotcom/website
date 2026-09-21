@@ -203,19 +203,33 @@ SNAPSHOTS = _laad_snapshots()
 
 
 def _laad_bag():
-    """Laatste Kadaster-meting per project-URL: panden met recent bouwjaar in de
-    directe omgeving. Bewust 'omgeving' — een bbox vangt ook de buren, en zo
-    formuleren we het ook op de pagina."""
-    uit = {}
+    """Álle Kadaster-metingen per project-URL, op datum gesorteerd.
+
+    Dit hield eerst alleen de laatste meting bij: elke nieuwe snapshot overschreef
+    de vorige. Daardoor stond op 181 pagina's "Dit is de eerste meting" terwijl er
+    vier rondes van 976 projecten in data/bag-snapshots/ lagen — de reeks waar
+    deze pagina's het juist van moeten hebben. Eén meting is een momentopname,
+    vier metingen zijn een logboek, en dat logboek is het enige op deze pagina dat
+    de ontwikkelaar zelf niet publiceert.
+
+    Bewust 'omgeving': een bbox vangt ook de buren, en zo staat het ook op de pagina.
+    """
+    uit = collections.defaultdict(list)
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "bag-snapshots", "*.json"))):
         datum = os.path.basename(f)[:-5]
         for url, v in json.load(open(f, encoding="utf8")).items():
             if v.get("panden"):
-                uit[url] = (datum, v)
-    return uit
+                uit[url].append((datum, v))
+    return {u: sorted(r) for u, r in uit.items()}
 
 
-BAG = _laad_bag()
+# De PDOK-bevraging in scripts/bag_bouwstatus.py haalt er maximaal zoveel op.
+# Een project dat aan die grens zit, is niet volledig geteld.
+BAG_MAX = 500
+
+BAG_REEKS = _laad_bag()
+# De laatste meting per project, voor alles wat alleen de stand van nu nodig heeft.
+BAG = {u: r[-1] for u, r in BAG_REEKS.items()}
 
 
 def nl_datum(iso):
@@ -249,11 +263,15 @@ def bag_blok(p, naam):
         delen.append(f"<strong>{bv['opgeleverd']} recent opgeleverd</strong>")
     if not delen:
         return "", "", ""
+    afgekapt_nu = (bv.get("panden") or 0) >= BAG_MAX
     antwoord = (f'<p class="antwoord"><strong>Bouwstatus, peildatum {nl_datum(bd)}.</strong> '
                 f"In de directe omgeving van {E(naam)} registreert het Kadaster "
                 + " en ".join(delen)
                 + f", met {bv['nieuwste_bouwjaar']} als nieuwste bouwjaar. Wij meten dit elke "
-                  f"twee weken opnieuw.</p>")
+                  f"twee weken opnieuw."
+                + (" Het zoekvierkant bevat hier meer panden dan wij per ronde ophalen, dus dit "
+                   "is een steekproef uit de buurt en geen volledige telling." if afgekapt_nu else "")
+                + "</p>")
 
     rijen = "".join(
         f"<tr><th>{lbl}</th><td>{val}</td></tr>" for lbl, val in [
@@ -268,11 +286,67 @@ def bag_blok(p, naam):
              f'<p class="noot">Een zoekvierkant vangt ook de directe buren, dus dit is de stand '
              f"van de omgeving en niet uitsluitend van dit project. Het komt wel uit de officiele "
              f"registratie, niet uit een verkoopsite.</p>")
-    log = (f"<h2>Logboek</h2><ul class='log'>"
-           f"<li><strong>{nl_datum(bd)}</strong> &middot; {bv.get('in_aanbouw') or 0} panden in "
-           f"aanbouw, {bv.get('opgeleverd') or 0} opgeleverd (Kadaster)</li></ul>"
-           f'<p class="noot">Dit is de eerste meting. Vanaf de volgende ronde staat hier wat er '
-           f"tussen twee metingen veranderde &mdash; wanneer de bouw werkelijk vordert.</p>")
+    # Het logboek: elke meting die wij van dit project hebben, nieuwste bovenaan,
+    # met het verschil ten opzichte van de vorige erbij. Dat verschil is het punt.
+    # De stand van vandaag staat ook op de site van de ontwikkelaar; wat er tussen
+    # 8 en 15 september veranderde staat nergens anders.
+    #
+    # WAAROM HET VERSCHIL SOMS ONTBREEKT
+    # De PDOK-bevraging haalt maximaal 500 panden per zoekvierkant op. Zit een
+    # project aan die grens, dan krijgen we elke ronde een ándere greep van 500
+    # uit dezelfde buurt, en schuift de verdeling tussen 'in aanbouw' en
+    # 'opgeleverd' mee zonder dat er iets gebouwd is. Precies die 97 projecten
+    # lieten tussen 8 en 15 september een exacte omklap zien (+97 in aanbouw,
+    # -97 opgeleverd bij gelijk totaal). Bij die projecten tonen we de meting wel
+    # en het verschil niet: een getal dat beweegt door de meetmethode mag niet
+    # worden gelezen als bouwvoortgang.
+    reeks = BAG_REEKS.get(p.get("url")) or [(bd, bv)]
+    regels = []
+    for i in range(len(reeks) - 1, -1, -1):
+        dt, m = reeks[i]
+        aanbouw, opgeleverd = m.get("in_aanbouw") or 0, m.get("opgeleverd") or 0
+        afgekapt = (m.get("panden") or 0) >= BAG_MAX
+        staartje = ' <span class="delta stil">telling afgekapt op 500 panden</span>' if afgekapt else ""
+        if i > 0 and not afgekapt and not ((reeks[i - 1][1].get("panden") or 0) >= BAG_MAX):
+            vorige = reeks[i - 1][1]
+            da = aanbouw - (vorige.get("in_aanbouw") or 0)
+            do = opgeleverd - (vorige.get("opgeleverd") or 0)
+            stukjes = []
+            if da: stukjes.append(f"{'+' if da > 0 else ''}{da} in aanbouw")
+            if do: stukjes.append(f"{'+' if do > 0 else ''}{do} opgeleverd")
+            staartje = (f' <span class="delta">{E(", ".join(stukjes))} sinds '
+                        f'{nl_datum(reeks[i - 1][0])}</span>' if stukjes
+                        else ' <span class="delta">ongewijzigd</span>')
+        regels.append(f"<li><strong>{nl_datum(dt)}</strong> &middot; {aanbouw} panden in "
+                      f"aanbouw, {opgeleverd} opgeleverd (Kadaster){staartje}</li>")
+
+    if len(reeks) == 1:
+        staart = ('<p class="noot">Dit is de eerste meting van dit project. Vanaf de volgende '
+                  "ronde staat hier wat er tussen twee metingen veranderde.</p>")
+    else:
+        bruikbaar = [(d, m) for d, m in reeks if (m.get("panden") or 0) < BAG_MAX]
+        zin = ""
+        if len(bruikbaar) >= 2:
+            verschil = (bruikbaar[-1][1].get("opgeleverd") or 0) - (bruikbaar[0][1].get("opgeleverd") or 0)
+            if verschil > 0:
+                zin = (f"Sinds {nl_datum(bruikbaar[0][0])} registreerde het Kadaster "
+                       f"{verschil} pand{'en' if verschil != 1 else ''} m&eacute;&eacute;r als "
+                       f"opgeleverd in de omgeving. ")
+            elif verschil < 0:
+                zin = (f"Sinds {nl_datum(bruikbaar[0][0])} staan er {abs(verschil)} pand"
+                       f"{'en' if verschil != -1 else ''} m&iacute;nder als opgeleverd "
+                       f"geregistreerd; dat gebeurt als een pand van status wisselt. ")
+            else:
+                zin = (f"Sinds {nl_datum(bruikbaar[0][0])} veranderde er niets aan het aantal "
+                       f"opgeleverde panden in de omgeving. ")
+        else:
+            zin = ("Het zoekvierkant van dit project bevat meer panden dan wij per ronde ophalen, "
+                   "dus vergelijken we de rondes hier niet met elkaar. ")
+        staart = (f'<p class="noot">{len(reeks)} metingen sinds {nl_datum(reeks[0][0])}. {zin}'
+                  "Wij meten elke twee weken opnieuw; deze regels komen rechtstreeks uit die "
+                  "metingen.</p>")
+
+    log = f"<h2>Logboek</h2><ul class='log'>{''.join(regels)}</ul>{staart}"
     return antwoord, tabel, log
 
 
@@ -481,22 +555,19 @@ def auping_blok(p, naam_project, slug):
         kop = f"Korting op je bed &mdash; {E(winkel)}"
         knop = f"Toon je code voor {E(winkel)}"
     else:
-        winkel = "de vier Auping Stores"
-        waar = (f"De korting is te verzilveren bij vier winkels: {E(alle)}. Voor {E(naam_project)} "
-                f"is dat een rit, geen ommetje &mdash; reken daarop als je gaat passen, want een "
-                f"bed koop je niet zonder erop te liggen.")
-        kop = "Korting op je bed &mdash; bij vier Auping Stores"
-        knop = "Toon je code"
+        # Geen winkel binnen bereik, dus geen blok. Dit stond eerst op 242 van de
+        # 283 pagina's, waarvan 185 keer met de mededeling dat het een rit is —
+        # honderd woorden die overal hetzelfde zeggen en hier niets toevoegen.
+        # Dezelfde afweging als bij de Kluskist: alleen beloven wat kan.
+        return ""
     link = (f"https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site"
             f"&amp;utm_campaign=auping&amp;utm_content=project-{slug}")
     return f"""<h2>{kop}</h2>
-<p>Een bed is de eerste grote aankoop bij oplevering, en de enige die je niet kunt uitstellen.
-{waar} Tien procent korting op het hele assortiment, een gratis leenbed vanaf &euro;5.000 en
-een overnachting voor twee vanaf &euro;6.500. Niet stapelbaar met een lopende sale. Je
-verzilvert hem in de winkel met je persoonlijke code.</p>
+<p>{waar} Tien procent op het hele assortiment, te verzilveren in de winkel met je
+persoonlijke code.</p>
 <p><a class="cta-primary" href="{link}">{knop}</a></p>
-<p class="noot">Auping is aangesloten partner van Bylder. De korting weegt niet mee in welke
-bedrijven wij hierboven noemen; die lijst komt uit afstand, type en beoordelingen.</p>"""
+<p class="noot">Auping is aangesloten partner. De korting weegt niet mee in de bedrijven die wij
+hierboven noemen; die lijst komt uit afstand, type en beoordelingen.</p>"""
 
 
 # --- de woningregisseur -----------------------------------------------------
@@ -784,6 +855,7 @@ def afgeleide_vragen(p, naam, plaats, lo, hi, won, buren, gem):
 # geen vergelijkingen die we niet kunnen onderbouwen.
 GEMEENTEN_PAD = os.path.join(ROOT, "data", "gemeenten.json")
 _GEM = None
+_PRIJSIDX = None
 
 
 def _gemeenten():
@@ -871,6 +943,199 @@ def gemeente_blok(p, naam, plaats):
             f'opgeleverde nieuwbouw en verleende vergunningen) en de bedrijvenregistratie '
             f'van Bylder. Prijspeil {E(land.get("jaar_prijs", "")[:4])}.</p>')
 
+
+
+
+# --- trede 2: wat het project zélf opgeeft ---------------------------------
+# Nieuw Wonen Nederland levert per project een prijsvork en een woonoppervlak.
+# Nieuwbouw.nl doet dat niet. Dat zijn de eerste harde, projecteigen cijfers op
+# deze pagina's: alles daarvoor was een gemeentecijfer of een schatting, en dat
+# is precies wat 233 pagina's op elkaar deed lijken.
+#
+# Alles hieronder is rekenwerk op cijfers van het project zelf, of een
+# vergelijking met de projecten die wij al volgen. Geen enkel getal is verzonnen.
+
+def _prijs_index():
+    """Prijsvorken van alle projecten die er een opgeven, per plaats en landelijk."""
+    global _PRIJSIDX
+    if _PRIJSIDX is None:
+        alle = json.load(open(PROJECTEN, encoding="utf8"))["projecten"]
+        per_plaats = collections.defaultdict(list)
+        landelijk = []
+        for q in alle:
+            v = q.get("prijs_van")
+            if not v:
+                continue
+            per_plaats[q["plaats"]].append((v, q.get("naam") or "", q.get("plaats")))
+            landelijk.append(v)
+        _PRIJSIDX = {"plaats": per_plaats, "nl": sorted(landelijk)}
+    return _PRIJSIDX
+
+
+def _mediaan(xs):
+    xs = sorted(xs)
+    n = len(xs)
+    return None if not n else (xs[n // 2] if n % 2 else (xs[n // 2 - 1] + xs[n // 2]) // 2)
+
+
+def prijsfeiten_blok(p, naam, plaats):
+    """De prijsvork, het woonoppervlak en de vierkantemeterprijs van dít project,
+    afgezet tegen de andere projecten die wij in dezelfde plaats volgen."""
+    van, tot = p.get("prijs_van"), p.get("prijs_tot")
+    o_van, o_tot = p.get("woonoppervlak_van"), p.get("woonoppervlak_tot")
+    if not van and not o_van:
+        return "", []
+
+    rijen, vragen = [], []
+    vork = ""
+    if van:
+        vork = (f"&euro;{eur_duizend(van)} tot &euro;{eur_duizend(tot)}" if tot and tot > van
+                else f"vanaf &euro;{eur_duizend(van)}")
+        rijen.append(("Vraagprijs", vork, "zoals het project die zelf publiceert"))
+    if o_van:
+        opp = f"{o_van} tot {o_tot} m&sup2;" if o_tot and o_tot > o_van else f"vanaf {o_van} m&sup2;"
+        rijen.append(("Woonoppervlak", opp, "gebruiksoppervlakte wonen"))
+
+    # Vierkantemeterprijs: de goedkoopste woning op de kleinste maat, en de
+    # duurste op de grootste. Dat is de vork zoals hij daadwerkelijk uitpakt.
+    m2_laag = m2_hoog = None
+    if van and o_van:
+        m2_laag = round(van / o_van)
+        if tot and o_tot:
+            m2_hoog = round(tot / o_tot)
+        lo_hi = (f"&euro;{m2_laag:,} tot &euro;{m2_hoog:,}".replace(",", ".")
+                 if m2_hoog and m2_hoog != m2_laag else f"&euro;{m2_laag:,}".replace(",", "."))
+        rijen.append(("Prijs per vierkante meter", lo_hi,
+                      "de kleinste woning tegen de laagste prijs, de grootste tegen de hoogste"))
+
+    # Positie tussen de projecten die wij in dezelfde plaats volgen. Dit is de
+    # vraag die een koper hardop stelt en die de website van de ontwikkelaar
+    # nooit beantwoordt: zit ik hier duur? Het antwoord bestaat alleen doordat
+    # wij 1.268 projecten volgen — en het is per pagina ander rekenwerk met
+    # andere namen, wat deze pagina's onderling laat verschillen.
+    duiding = ""
+    if van:
+        idx = _prijs_index()
+        hier = sorted(idx["plaats"].get(p["plaats"], []))
+        if len(hier) >= 3:
+            lager = sum(1 for x, _n, _p in hier if x < van)
+            med = _mediaan([x for x, _n, _p in hier])
+            # De vijf projecten rond dit project in prijs, met naam.
+            pos = min(range(len(hier)), key=lambda i: abs(hier[i][0] - van))
+            van_i, tot_i = max(0, pos - 2), min(len(hier), pos + 3)
+            lijst = ""
+            for v2, n2, pl2 in hier[van_i:tot_i]:
+                dit = (n2 == naam)
+                link = f"/nieuwbouw-project/{slugify(n2, pl2)}/"
+                label = (f"<strong>{E(n2)}</strong>" if dit
+                         else f'<a href="{link}">{E(n2)}</a>')
+                lijst += (f'<tr{" style=\"background:rgba(184,92,56,0.07);\"" if dit else ""}>'
+                          f"<td>{label}</td><td><strong>vanaf &euro;{eur_duizend(v2)}</strong></td>"
+                          f'<td style="color:rgba(61,46,30,0.7);">'
+                          f'{"dit project" if dit else ""}</td></tr>')
+            duiding = (f"<p>Van de {len(hier)} projecten in {E(plaats)} waarvan wij een prijs "
+                       f"kennen, beginnen er {lager} lager dan {E(naam)}. De mediane instapprijs "
+                       f"in {E(plaats)} is &euro;{eur_duizend(med)}. Zo ligt {E(naam)} tussen zijn "
+                       f"directe buren:</p>"
+                       f'<table class="feit-tabel"><tbody>{lijst}</tbody></table>')
+            vragen.append((f"Is {naam} duur voor {plaats}?",
+                f"De instapprijs is \u20ac{eur_duizend(van)}. Van de {len(hier)} projecten in "
+                f"{plaats} waarvan wij een prijs kennen, beginnen er {lager} lager. De mediane "
+                f"instapprijs in {plaats} ligt op \u20ac{eur_duizend(med)}. Dat is een "
+                f"vergelijking van vraagprijzen, geen taxatie."))
+        else:
+            nl = idx["nl"]
+            med = _mediaan(nl)
+            if med:
+                duiding = (f"<p>Wij kennen van {len(nl)} nieuwbouwprojecten in Nederland de "
+                           f"instapprijs; de mediaan daarvan is &euro;{eur_duizend(med)}. "
+                           f"{E(naam)} begint {'daarboven' if van > med else 'daaronder'}.</p>")
+
+    if van and o_van:
+        m2_tekst = f"{m2_laag:,}".replace(",", ".")
+        maat = f"{o_van} tot {o_tot}" if o_tot and o_tot > o_van else f"{o_van}"
+        vragen.append((f"Wat kost een woning in {naam}?",
+            f"Het project publiceert {vork.replace('&euro;', chr(8364))} voor woningen van "
+            f"{maat} m\u00b2 gebruiksoppervlakte. Voor de kleinste woning komt dat neer op "
+            f"ongeveer \u20ac{m2_tekst} per vierkante meter. Prijzen zijn van de aanbieder; "
+            f"de actuele prijslijst van het project is leidend."))
+
+    tabel = "".join(f"<tr><td>{k}</td><td><strong>{v}</strong></td>"
+                    f"<td style=\"color:rgba(61,46,30,0.7);\">{t}</td></tr>" for k, v, t in rijen)
+    bron = p.get("bron") or "nieuwbouw.nl"
+    html_blok = (f"<h2>Wat {E(naam)} zelf opgeeft</h2>"
+                 f"<p>De cijfers die het project publiceert, met wat ze betekenen als je ze "
+                 f"naast de andere nieuwbouw in {E(plaats)} legt.</p>"
+                 f'<table class="feit-tabel"><tbody>{tabel}</tbody></table>'
+                 f"{duiding}"
+                 f'<p class="noot">Bron: {E(bron)}, overgenomen als feit en teruggelinkt. '
+                 f"Prijzen en oppervlakten wijzigen; de prijslijst van het project is leidend.</p>")
+    return html_blok, vragen
+
+
+# --- trede 3: wat de afwerking in dít project kost --------------------------
+# De vraag die elke koper stelt zodra de koopsom vaststaat. Wij hebben er twee
+# dingen voor: het woonoppervlak van het project zelf, en de bandbreedte die op
+# onze eigen gietvloerpagina staat. Alles daartussen is één vermenigvuldiging,
+# met de aanname zichtbaar in de tekst. Geen bedrag dat wij niet kunnen navertellen.
+GIETVLOER_M2 = (80, 130)          # PU-woonvloer, zoals op /gietvloer/ gepubliceerd
+
+
+def afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi):
+    o_van, o_tot = p.get("woonoppervlak_van"), p.get("woonoppervlak_tot")
+    if not o_van:
+        return ""
+    stad_slug = re.sub(r"[^a-z0-9]+", "-", plaats_ruw.lower()).strip("-")
+    n_gv = _gietvloer_steden().get(stad_slug, 0)
+    gv_href = f"/gietvloer/{stad_slug}/" if n_gv else "/gietvloer/"
+    conf = ("/kozijnloze-deuren/configurator/?utm_source=bylder-site"
+            f"&amp;utm_campaign=project-{slug}-budget")
+
+    # De begane grond is de verdieping waar een gietvloer doorloopt. Bij een
+    # eengezinswoning is dat grofweg de helft van het woonoppervlak; bij een
+    # appartement ligt alles op één laag. Wij rekenen met de helft en zeggen het
+    # erbij, zodat je het zelf kunt bijstellen.
+    bg_laag = round(o_van / 2)
+    bg_hoog = round((o_tot or o_van) / 2)
+    e_laag = bg_laag * GIETVLOER_M2[0]
+    e_hoog = bg_hoog * GIETVLOER_M2[1]
+    def eu(n):
+        return "&euro;" + f"{round(n / 100) * 100:,}".replace(",", ".")
+
+    jaar = f"{lo}" if hi <= lo else f"{lo}\u2013{hi}"
+    return f"""<h2>Wat de afwerking hier ongeveer kost</h2>
+<p>Gerekend met het woonoppervlak dat {E(naam)} zelf opgeeft
+({o_van}{f'&ndash;{o_tot}' if o_tot and o_tot > o_van else ''} m&sup2;). Richtbedragen om mee te
+beginnen, geen offerte &mdash; maar wel na te rekenen.</p>
+<div class="pk-keuzes">
+<article>
+<div class="pk-etiket">Gietvloer</div>
+<h3>{bg_laag}{f'&ndash;{bg_hoog}' if bg_hoog > bg_laag else ''} m&sup2; begane grond</h3>
+<p>Voor een PU-woonvloer rekenen we {GIETVLOER_M2[0]} tot {GIETVLOER_M2[1]} euro per vierkante
+meter &mdash; de bandbreedte die op onze <a href="{gv_href}">gietvloerpagina</a> staat. Voor dit
+project komt dat neer op ruwweg <strong>{eu(e_laag)} tot {eu(e_hoog)}</strong>. Wij rekenen de
+begane grond op de helft van het woonoppervlak; ligt jouw woning op &eacute;&eacute;n laag, dan
+verdubbel je het.</p>
+<p><a class="cta-primary" href="{gv_href}">Vraag offertes aan &rarr;</a></p>
+<p class="noot">De dekvloer moet droog zijn v&oacute;&oacute;r het gieten. Dat bepaalt wanneer
+het kan, en dus wanneer je moet beslissen.</p>
+</article>
+<article>
+<div class="pk-etiket">Binnendeuren</div>
+<h3>Plafondhoog, zonder kozijn</h3>
+<p>Het kozijn gaat &iacute;n de wand en wordt meegestukadoord: bij een oplevering in
+{jaar} is dat een regel op de meerwerklijst, in een bestaand huis een verbouwing. De prijs hangt
+af van het aantal deuren en de afwerking &mdash; in de configurator zie je hem op jouw eigen
+samenstelling.</p>
+<p><a class="cta-primary" href="{conf}">Stel je deuren samen &rarr;</a></p>
+<p class="noot">Dertien groefpatronen, elke RAL-kleur, direct in 3D &mdash; en de plint
+erbij, want een plafondhoge deur vraagt niet om de standaardplint.</p>
+</article>
+</div>
+<p class="noot" style="margin-top:14px;">Met een gratis account leggen we deze keuzes vast in je
+dossier, krijg je de <a href="/vouchers/">ledenkorting bij aangesloten merken</a> en toetsen we je
+offerte aan wat anderen in {E(netjes(plaats_ruw))} betaalden.</p>
+"""
 
 
 # --- ontwerpronde 29 augustus ----------------------------------------------
@@ -1099,38 +1364,29 @@ def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi):
     lokaal = (f" In {E(plaats)} hebben wij {n_gv} gietvloerleggers in kaart gebracht,"
               f" met hun beoordelingen." if n_gv >= 3 else "")
     return f"""<h2>Twee afwerkingen die je nu kiest, niet later</h2>
-<p>Twee dingen komen in nieuwbouw steeds vaker terug: deuren zonder kozijn en een
-gietvloer. Allebei om dezelfde reden &mdash; in een nieuw huis kan het, in een bestaand
-huis nauwelijks. En allebei hangen ze aan dezelfde klok: ze moeten besloten zijn voordat
-de stukadoor en de dekvloer klaar zijn, dus ruim v&oacute;&oacute;r de oplevering van
-{E(naam)}.{lokaal}</p>
+<p>Deuren zonder kozijn en een gietvloer kunnen allebei alleen in een nieuw huis, en allebei
+moeten ze besloten zijn voordat de stukadoor en de dekvloer klaar zijn &mdash; dus ruim
+v&oacute;&oacute;r de oplevering van {E(naam)}.{lokaal} {deadline}</p>
 <div class="pk-keuzes">
 <article>
 <div class="pk-etiket">Deuren zonder kozijn</div>
 <h3>Een deur die opgaat in de wand</h3>
-<p>Plafondhoog, zonder omlijsting, en in dezelfde kleur als de wand: wat overblijft is
-een schaduwvoeg. <strong>Waarom nieuwbouw:</strong> het kozijn gaat ín de wand en wordt
-meegestukadoord. In een bestaande woning betekent dat wanden openen; hier is het een
-regel op de meerwerklijst. {deadline}</p>
+<p>Plafondhoog, zonder omlijsting, in de kleur van de wand. Het kozijn gaat &iacute;n de wand en
+wordt meegestukadoord.</p>
 <p><a class="cta-primary" href="{conf}">Stel je deur samen &rarr;</a></p>
-<p class="noot">Dertien groefpatronen, elke RAL-kleur, en je ziet hem meteen in 3D.
-Je krijgt een prijs op je eigen configuratie.</p>
+<p class="noot">Dertien groefpatronen, elke RAL-kleur, direct in 3D. Ook de plinten.</p>
 </article>
 <article>
 <div class="pk-etiket">Gietvloer</div>
 <h3>E&eacute;n vloer, geen naden</h3>
-<p>Een naadloze vloer die over de hele verdieping doorloopt en de vloerverwarming die er
-al ligt beter benut dan tegels of hout. <strong>Waarom nieuwbouw:</strong> er ligt een
-verse dekvloer en het huis is leeg. Geen meubels eruit, geen plinten los, geen oude vloer
-afvoeren &mdash; precies de posten die een gietvloer in een bewoond huis duur maken.
-De dekvloer moet w&eacute;l droog zijn, en dat bepaalt wanneer het kan.</p>
+<p>Naadloos over de hele verdieping, en beter voor de vloerverwarming die er al ligt. De
+dekvloer moet w&eacute;l droog zijn, en dat bepaalt wanneer het kan.</p>
 <p><a class="cta-primary" href="{gv_href}">Vraag een offerte aan &rarr;</a></p>
 <p class="noot">{gv_bewijs}</p>
 </article>
 </div>
 <p class="noot" style="margin-top:14px;">Met een gratis account krijg je bij allebei de
-<a href="/vouchers/">ledenkorting bij aangesloten merken</a>, en leggen we je keuzes vast
-in je dossier zodat je bij de offerte niets vergeet.</p>
+<a href="/vouchers/">ledenkorting bij aangesloten merken</a>.</p>
 """
 
 
@@ -1143,6 +1399,10 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     hard = p.get("oplevering_bron") == "oplevertrefwoord"
     reg = f"?utm_source=bylder-site&amp;utm_campaign=project-{slug}"
     app = "https://app.bylder.com/registreer" + reg
+
+    # De eigen cijfers van het project, en wat de afwerking daarmee kost.
+    prijs_html, prijs_vragen = prijsfeiten_blok(p, naam, plaats)
+    budget_html = afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi)
 
     besl_tot = sum(len(r["beslissingen"]) for r in ruimtes)
     mw = sorted({m for r in ruimtes for m in (r.get("meerwerk") or [])})
@@ -1221,7 +1481,12 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
     # Meerwerkbedragen schalen mee met het woningtype dat in dit project overheerst;
     # de percentages zijn generiek, de uitkomst per project niet.
-    koopsom = 285000 if won >= 400 else (340000 if won >= 150 else 395000)
+    # Publiceert het project zelf een prijsvork, dan rekenen we daarmee. Anders
+    # blijft het een aanname op projectgrootte, en dat staat er dan ook bij.
+    if p.get("prijs_van"):
+        koopsom = (p["prijs_van"] + p["prijs_tot"]) // 2 if p.get("prijs_tot") else p["prijs_van"]
+    else:
+        koopsom = 285000 if won >= 400 else (340000 if won >= 150 else 395000)
     mw_laag, mw_hoog = int(koopsom * 0.05 / 1000) * 1000, int(koopsom * 0.15 / 1000) * 1000
     fin_max = int(koopsom * 0.25 / 1000) * 1000
     def eur(n):
@@ -1279,7 +1544,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     if p.get("oplevering") and p.get("oplevering_bron") == "oplevertrefwoord":
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
             f"Het project noemt zelf {p['oplevering']} als opleverjaar. Wij meten elke twee "
-            f"weken de verkoopstand en de bouwstatus in het Kadaster."))
+            f"weken de bouwstatus in het Kadaster; het verloop staat in het logboek op deze pagina."))
     else:
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
             f"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering "
@@ -1290,6 +1555,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             f"Stand {nl_datum(fd)}: nog {fv['beschikbaar']} van de {fv['eenheden']} aangeboden "
             f"woningen beschikbaar ({fv['verkocht_pct']}% verkocht). Gemeten door Bylder op de "
             f"beschikbaarheid per fase."))
+    faq_items += prijs_vragen
     faq_items += afgeleide_vragen(p, naam, plaats, lo, hi, won, buren,
                                   _gemeenten()["per_slug"].get(p["plaats"]))
 
@@ -1412,7 +1678,9 @@ afwerking en inrichting niet te veel betaalt.</p>
 
 {cijferstrook(strook)}
 
-{keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi)}
+{prijs_html}
+
+{budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi)}
 
 <h2>Wat er nu op je afkomt</h2>
 <p>Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Je eigen
@@ -1452,8 +1720,8 @@ zetten je kortingen klaar bij 56 merken. Elke nieuwe meting zie je terug in je d
 </div>
 
 <p style="font-size:13px;color:rgba(61,46,30,0.72);margin-top:28px;">Bouwstatus gemeten door
-Bylder in de BAG van het Kadaster. Verkoopstand van
-<a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">nieuwbouw.nl</a>. Landelijke
+Bylder in de BAG van het Kadaster. Projectgegevens van
+<a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">{E(p.get('bron') or 'nieuwbouw.nl')}</a>. Landelijke
 telling in de <a href="/nieuwbouw-project/oplevermonitor/">oplevermonitor</a>. Algemene uitleg
 over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer over de gemeente:
 <a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)}</a>.</p>
@@ -1636,6 +1904,12 @@ def main():
         # een kleiner project juist bruikbaar, want de regisseur kan er langs.
         if p["plaats"] in PILOT:
             return PILOT_POORT
+        # Een project dat zijn prijsvork én zijn woonoppervlak publiceert, draagt
+        # meer eigen feiten dan een groot project dat alleen een aantal woningen
+        # noemt. Daar mag de cohortdrempel dus lager: twintig kopers is genoeg
+        # publiek voor een pagina die echt iets te vertellen heeft.
+        if p.get("prijs_van") and p.get("woonoppervlak_van"):
+            return 20
         return MIN_WONINGEN
 
     kandidaten = [p for p in projecten

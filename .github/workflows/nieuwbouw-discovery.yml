@@ -57,6 +57,11 @@ jobs:
             echo
             echo "Volledig rapport: \`reports/nieuwe-projecten.json\` (artifact van deze run)."
           } > /tmp/body.md
+          # Een label dat niet bestaat laat `gh issue create` falen, en met de
+          # `|| true` erachter verdween het alarm dan geruisloos. Dat is precies
+          # wat er met de meting van 15 september gebeurde. Daarom eerst zorgen
+          # dat het label bestaat.
+          gh label create "content-kandidaten" --force >/dev/null 2>&1 || true
           gh issue create \
             --title "Nieuwe nieuwbouwprojecten: ${{ steps.tabel.outputs.nieuw }} gevonden ($(date +%F))" \
             --body-file /tmp/body.md \
