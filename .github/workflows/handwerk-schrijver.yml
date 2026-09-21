@@ -51,12 +51,10 @@ jobs:
       - name: Pagina's opnieuw maken en de uniciteit meten
         run: python3 scripts/generate_projectpaginas.py | tee -a uitvoer.log
 
-      - name: PR openen als er iets veranderde
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Tak wegschrijven
         run: |
           if git diff --quiet; then
-            echo "Geen wijzigingen - geen PR."
+            echo "Geen wijzigingen - niets te pushen."
             exit 0
           fi
           SAMENVATTING=$(grep -E 'projecten met feiten|weggegooid|mediaan|onder de' uitvoer.log | head -5)
@@ -78,19 +76,5 @@ jobs:
           git commit -q -F bericht.txt
           rm -f bericht.txt uitvoer.log
           git push -q origin "$TAK"
-          {
-            echo "Automatische ronde van de handwerk-schrijver."
-            echo
-            echo '```'
-            echo "$SAMENVATTING"
-            echo '```'
-            echo
-            echo "Elk feit draagt de URL waar het gevonden is en de controledatum."
-            echo "De generator toont alleen feiten met alle drie."
-            echo
-            echo "**Waar je op let:** staat het feit er echt op die bron, en is het geen"
-            echo "verkooptaal van de ontwikkelaar."
-          } > pr.txt
-          gh pr create --base main --head "$TAK" \
-            --title "Opgezochte feiten van de eigen projectsites, ronde $(date +%d-%m-%Y)" \
-            --body-file pr.txt
+          echo "Tak gepusht: $TAK"
+          echo "PR openen doet een mens of de assistent; Actions mag hier geen PR maken."
