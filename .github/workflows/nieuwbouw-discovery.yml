@@ -51,9 +51,10 @@ jobs:
             echo
             cat /tmp/tabel.md
             echo
-            echo "**Volgende stap:** kies welke projecten een eigen pagina onder \`/nieuwbouw-project/\` verdienen."
-            echo "Een pagina is alleen zinvol als laag A volledig gevuld kan worden (fase-advies + lokale koppelingen)."
-            echo "Voeg gekozen projecten toe aan \`data/clusters/nieuwbouw-project/bronnen.json\` zodat de vers-heid-loop ze meeneemt."
+            echo "**Volgende stap:** niets, als het goed is. De poort in \`generate_projectpaginas.py\` bepaalt"
+            echo "welke projecten een pagina krijgen, en de publicatieloop (donderdag) zet ze erop."
+            echo "Deze lijst is er om te zien wát er binnenkomt, niet om met de hand over te tikken."
+            echo "\`bronnen.json\` is alleen nog voor de handgeschreven pagina's; voeg daar niets aan toe."
             echo
             echo "Volledig rapport: \`reports/nieuwe-projecten.json\` (artifact van deze run)."
           } > /tmp/body.md
