@@ -203,19 +203,33 @@ SNAPSHOTS = _laad_snapshots()
 
 
 def _laad_bag():
-    """Laatste Kadaster-meting per project-URL: panden met recent bouwjaar in de
-    directe omgeving. Bewust 'omgeving' — een bbox vangt ook de buren, en zo
-    formuleren we het ook op de pagina."""
-    uit = {}
+    """Álle Kadaster-metingen per project-URL, op datum gesorteerd.
+
+    Dit hield eerst alleen de laatste meting bij: elke nieuwe snapshot overschreef
+    de vorige. Daardoor stond op 181 pagina's "Dit is de eerste meting" terwijl er
+    vier rondes van 976 projecten in data/bag-snapshots/ lagen — de reeks waar
+    deze pagina's het juist van moeten hebben. Eén meting is een momentopname,
+    vier metingen zijn een logboek, en dat logboek is het enige op deze pagina dat
+    de ontwikkelaar zelf niet publiceert.
+
+    Bewust 'omgeving': een bbox vangt ook de buren, en zo staat het ook op de pagina.
+    """
+    uit = collections.defaultdict(list)
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "bag-snapshots", "*.json"))):
         datum = os.path.basename(f)[:-5]
         for url, v in json.load(open(f, encoding="utf8")).items():
             if v.get("panden"):
-                uit[url] = (datum, v)
-    return uit
+                uit[url].append((datum, v))
+    return {u: sorted(r) for u, r in uit.items()}
 
 
-BAG = _laad_bag()
+# De PDOK-bevraging in scripts/bag_bouwstatus.py haalt er maximaal zoveel op.
+# Een project dat aan die grens zit, is niet volledig geteld.
+BAG_MAX = 500
+
+BAG_REEKS = _laad_bag()
+# De laatste meting per project, voor alles wat alleen de stand van nu nodig heeft.
+BAG = {u: r[-1] for u, r in BAG_REEKS.items()}
 
 
 def nl_datum(iso):
@@ -249,11 +263,15 @@ def bag_blok(p, naam):
         delen.append(f"<strong>{bv['opgeleverd']} recent opgeleverd</strong>")
     if not delen:
         return "", "", ""
+    afgekapt_nu = (bv.get("panden") or 0) >= BAG_MAX
     antwoord = (f'<p class="antwoord"><strong>Bouwstatus, peildatum {nl_datum(bd)}.</strong> '
                 f"In de directe omgeving van {E(naam)} registreert het Kadaster "
                 + " en ".join(delen)
                 + f", met {bv['nieuwste_bouwjaar']} als nieuwste bouwjaar. Wij meten dit elke "
-                  f"twee weken opnieuw.</p>")
+                  f"twee weken opnieuw."
+                + (" Het zoekvierkant bevat hier meer panden dan wij per ronde ophalen, dus dit "
+                   "is een steekproef uit de buurt en geen volledige telling." if afgekapt_nu else "")
+                + "</p>")
 
     rijen = "".join(
         f"<tr><th>{lbl}</th><td>{val}</td></tr>" for lbl, val in [
@@ -268,11 +286,67 @@ def bag_blok(p, naam):
              f'<p class="noot">Een zoekvierkant vangt ook de directe buren, dus dit is de stand '
              f"van de omgeving en niet uitsluitend van dit project. Het komt wel uit de officiele "
              f"registratie, niet uit een verkoopsite.</p>")
-    log = (f"<h2>Logboek</h2><ul class='log'>"
-           f"<li><strong>{nl_datum(bd)}</strong> &middot; {bv.get('in_aanbouw') or 0} panden in "
-           f"aanbouw, {bv.get('opgeleverd') or 0} opgeleverd (Kadaster)</li></ul>"
-           f'<p class="noot">Dit is de eerste meting. Vanaf de volgende ronde staat hier wat er '
-           f"tussen twee metingen veranderde &mdash; wanneer de bouw werkelijk vordert.</p>")
+    # Het logboek: elke meting die wij van dit project hebben, nieuwste bovenaan,
+    # met het verschil ten opzichte van de vorige erbij. Dat verschil is het punt.
+    # De stand van vandaag staat ook op de site van de ontwikkelaar; wat er tussen
+    # 8 en 15 september veranderde staat nergens anders.
+    #
+    # WAAROM HET VERSCHIL SOMS ONTBREEKT
+    # De PDOK-bevraging haalt maximaal 500 panden per zoekvierkant op. Zit een
+    # project aan die grens, dan krijgen we elke ronde een ándere greep van 500
+    # uit dezelfde buurt, en schuift de verdeling tussen 'in aanbouw' en
+    # 'opgeleverd' mee zonder dat er iets gebouwd is. Precies die 97 projecten
+    # lieten tussen 8 en 15 september een exacte omklap zien (+97 in aanbouw,
+    # -97 opgeleverd bij gelijk totaal). Bij die projecten tonen we de meting wel
+    # en het verschil niet: een getal dat beweegt door de meetmethode mag niet
+    # worden gelezen als bouwvoortgang.
+    reeks = BAG_REEKS.get(p.get("url")) or [(bd, bv)]
+    regels = []
+    for i in range(len(reeks) - 1, -1, -1):
+        dt, m = reeks[i]
+        aanbouw, opgeleverd = m.get("in_aanbouw") or 0, m.get("opgeleverd") or 0
+        afgekapt = (m.get("panden") or 0) >= BAG_MAX
+        staartje = ' <span class="delta stil">telling afgekapt op 500 panden</span>' if afgekapt else ""
+        if i > 0 and not afgekapt and not ((reeks[i - 1][1].get("panden") or 0) >= BAG_MAX):
+            vorige = reeks[i - 1][1]
+            da = aanbouw - (vorige.get("in_aanbouw") or 0)
+            do = opgeleverd - (vorige.get("opgeleverd") or 0)
+            stukjes = []
+            if da: stukjes.append(f"{'+' if da > 0 else ''}{da} in aanbouw")
+            if do: stukjes.append(f"{'+' if do > 0 else ''}{do} opgeleverd")
+            staartje = (f' <span class="delta">{E(", ".join(stukjes))} sinds '
+                        f'{nl_datum(reeks[i - 1][0])}</span>' if stukjes
+                        else ' <span class="delta">ongewijzigd</span>')
+        regels.append(f"<li><strong>{nl_datum(dt)}</strong> &middot; {aanbouw} panden in "
+                      f"aanbouw, {opgeleverd} opgeleverd (Kadaster){staartje}</li>")
+
+    if len(reeks) == 1:
+        staart = ('<p class="noot">Dit is de eerste meting van dit project. Vanaf de volgende '
+                  "ronde staat hier wat er tussen twee metingen veranderde.</p>")
+    else:
+        bruikbaar = [(d, m) for d, m in reeks if (m.get("panden") or 0) < BAG_MAX]
+        zin = ""
+        if len(bruikbaar) >= 2:
+            verschil = (bruikbaar[-1][1].get("opgeleverd") or 0) - (bruikbaar[0][1].get("opgeleverd") or 0)
+            if verschil > 0:
+                zin = (f"Sinds {nl_datum(bruikbaar[0][0])} registreerde het Kadaster "
+                       f"{verschil} pand{'en' if verschil != 1 else ''} m&eacute;&eacute;r als "
+                       f"opgeleverd in de omgeving. ")
+            elif verschil < 0:
+                zin = (f"Sinds {nl_datum(bruikbaar[0][0])} staan er {abs(verschil)} pand"
+                       f"{'en' if verschil != -1 else ''} m&iacute;nder als opgeleverd "
+                       f"geregistreerd; dat gebeurt als een pand van status wisselt. ")
+            else:
+                zin = (f"Sinds {nl_datum(bruikbaar[0][0])} veranderde er niets aan het aantal "
+                       f"opgeleverde panden in de omgeving. ")
+        else:
+            zin = ("Het zoekvierkant van dit project bevat meer panden dan wij per ronde ophalen, "
+                   "dus vergelijken we de rondes hier niet met elkaar. ")
+        staart = (f'<p class="noot">{len(reeks)} metingen sinds {nl_datum(reeks[0][0])}. {zin}'
+                  "Wij meten elke twee weken opnieuw; deze regels komen rechtstreeks uit die "
+                  "metingen.</p>")
+
+    log = f"<h2>Logboek</h2><ul class='log'>{''.join(regels)}</ul>{staart}"
     return antwoord, tabel, log
 
 
@@ -1470,7 +1544,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     if p.get("oplevering") and p.get("oplevering_bron") == "oplevertrefwoord":
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
             f"Het project noemt zelf {p['oplevering']} als opleverjaar. Wij meten elke twee "
-            f"weken de verkoopstand en de bouwstatus in het Kadaster."))
+            f"weken de bouwstatus in het Kadaster; het verloop staat in het logboek op deze pagina."))
     else:
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
             f"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering "

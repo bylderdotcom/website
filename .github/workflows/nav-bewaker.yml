@@ -40,6 +40,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           TITEL="Pagina's zonder het huidige menu ($(date +%F))"
+          # Een label dat niet bestaat laat `gh issue create` falen, en met de
+          # `|| true` erachter verdween het alarm dan geruisloos. Dat is precies
+          # wat er met de meting van 15 september gebeurde. Daarom eerst zorgen
+          # dat het label bestaat.
+          gh label create "nav-drift" --force >/dev/null 2>&1 || true
           gh issue create --title "$TITEL" \
             --body "$(printf 'De wekelijkse nav-bewaker vond pagina'\''s die niet het huidige menu dragen.\n\n```\n%s\n```\n\nHerstellen:\n1. `python3 _scripts/nav_pijlers_pass.py --scan-gaten` (meet op de live site welke pagina'\''s Next niet rendert)\n2. `python3 _scripts/nav_pijlers_pass.py` en `python3 _scripts/nav_advies_pass.py`\n3. PR openen, preview bekijken, mergen.\n\nNiet lokaal `next build` draaien om dit te meten: dat schrijft ~30 GB weg.\n\nRapport: reports/nav-bewaker.json (artifact van deze run).' "$(cat /tmp/nav.txt)")" \
             --label "nav-drift" || gh issue create --title "$TITEL" --body "Zie workflow-log."
