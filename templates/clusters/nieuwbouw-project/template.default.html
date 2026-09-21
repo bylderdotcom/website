@@ -131,6 +131,12 @@ ul.bedrijven li strong{display:inline-block;}
 @media(max-width:760px){.pk-bed{grid-template-columns:1fr;gap:16px;}}
 /* De ledenkortingen: een lijst met bedragen, geen kaarten. Het zijn voorbeelden
    bij één zin, niet drie keuzes die evenveel gewicht dragen. */
+/* Feiten van de eigen projectsite: label, feit, bron. Bewust een rij en
+   geen volzin — zie de noot in projectsite_blok(). */
+.pk-eigen{list-style:none;margin:14px 0 16px;padding:0;display:grid;gap:6px;}
+.pk-eigen li{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;font-size:14px;padding:7px 12px;border:1px solid rgba(61,46,30,.12);border-radius:10px;background:#fff;}
+.pk-eigen span{font-family:'Space Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:rgba(61,46,30,.5);}
+.pk-eigen a{font-size:12px;margin-left:auto;color:rgba(61,46,30,.55);}
 .pk-leden{list-style:none;margin:16px 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px;}
 .pk-leden li{border:1px solid rgba(61,46,30,.14);border-radius:999px;padding:7px 14px;background:#fff;font-size:13.5px;color:#1A1208;}
 .pk-leden strong{font-weight:700;}

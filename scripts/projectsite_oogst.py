@@ -108,6 +108,46 @@ TER_CONTROLE = {
     "oplevering":  r'oplevering|opgeleverd\s+in',
 }
 
+# --- de kenmerken die per project verschillen -------------------------------
+#
+# WAAROM DEZE ERBIJ KOMEN. De projectpagina's kwamen op 20% eigen tekst uit; de
+# vier handgeschreven pagina's op 81-86%. Het verschil is geen sjabloon maar
+# onderzoek: die vier noemen de bouwer, de manier van verwarmen, of er een
+# kopersbegeleider is. Precies de dingen die een koper wil weten vóór hij tekent,
+# en precies de dingen die op de eigen site van elk project anders staan.
+#
+# WAT WE WEL EN NIET OVERNEMEN. Alleen het feit en de vindplaats — nooit de zin
+# van de ontwikkelaar zelf. De gevonden zin gaat mee als bewijs voor de controle,
+# niet naar de pagina. Dezelfde grens als bij Nieuw Wonen Nederland: feiten mogen,
+# omschrijvingen niet.
+BOUWERS = [
+    "BAM", "Heijmans", "Dura Vermeer", "Van Wijnen", "Ballast Nedam", "VanWonen",
+    "Janssen de Jong", "Plegt-Vos", "Nijhuis", "Trebbe", "Koopmans", "Slokker",
+    "ERA Contour", "Heilijgers", "Roosdom Tijhuis", "Giesbers", "Hurks",
+    "Stam + De Koning", "Van Norel", "Klaassen", "Rotij", "De Bonth", "Adriaans",
+    "Hendriks Bouw", "Bébouw", "Van der Leij", "Schoonderbeek", "Vink Bouw",
+    "Aan de Stegge", "Van de Ven", "Berghege", "Van Bekkum", "Verwelius",
+]
+ONTWIKKELAARS = [
+    "BPD", "AM", "Synchroon", "Amvest", "Blauwhoed", "Novaform", "Timpaan",
+    "Van Wanrooij", "Heembouw", "Ten Brinke", "Kondor Wessels", "VORM", "Local",
+    "Wonam", "Being", "Greystar", "Certitudo", "Wibaut", "Lingotto", "Provast",
+]
+KENMERKEN = {
+    "warmtepomp":        (r'warmtepomp', "individuele warmtepomp"),
+    "stadsverwarming":   (r'stadsverwarming|warmtenet', "stadsverwarming of een warmtenet"),
+    "wko":               (r'\bwko\b|warmte-?koudeopslag', "warmte-koudeopslag"),
+    "vloerverwarming":   (r'vloerverwarming', "vloerverwarming"),
+    "zonnepanelen":      (r'zonnepanelen|pv-?panelen', "zonnepanelen"),
+    "nom":               (r'nul\s*op\s*de\s*meter|\bnom-?woning', "nul op de meter"),
+    "parkeerkelder":     (r'parkeerkelder|ondergronds\s+parkeren|parkeergarage',
+                          "een parkeerkelder of parkeergarage"),
+    "kopersbegeleider":  (r'kopersbegeleid|woonconsulent|kopersadviseur',
+                          "een eigen kopersbegeleider vanuit het project"),
+    "showroom":          (r'\bshowroom\b|inspiratiecentrum|woonwinkel\s+van\s+het\s+project',
+                          "een showroom of inspiratieruimte"),
+}
+
 # Woorden die verraden dat het een vraag of uitnodiging is en geen mededeling.
 GEEN_FEIT = re.compile(r'(schrijf\s+je\s+in|op\s+de\s+hoogte|nieuwsbrief|wil\s+je|'
                        r'blijf\s+op|interesse|meld\s+je\s+aan|\?)', re.I)
@@ -174,7 +214,8 @@ def oogst(url_site):
         time.sleep(DELAY)
 
     feiten = {"site": url_site, "gekeken": [u for u, _ in paginas], "documenten": {},
-              "momenten": {}, "ter_controle": {}, "_gehaald": date.today().isoformat()}
+              "momenten": {}, "ter_controle": {}, "kenmerken": {}, "partijen": {},
+              "_gehaald": date.today().isoformat()}
 
     for u, h in paginas:
         t = kale_tekst(h)
@@ -227,6 +268,33 @@ def oogst(url_site):
                                                 "zin": re.sub(r"\s+", " ", venster).strip()}
                 break
 
+        # Kenmerken: één treffer is genoeg, maar hij moet in een mededeling staan
+        # en niet in een vraag of een aanmeldzin.
+        for naam, (patroon, _) in KENMERKEN.items():
+            if naam in feiten["kenmerken"]:
+                continue
+            m = re.search(patroon, tl)
+            if not m:
+                continue
+            venster = t[max(0, m.start() - 110): m.end() + 110]
+            if GEEN_FEIT.search(venster):
+                continue
+            feiten["kenmerken"][naam] = {"bron": u, "zin": re.sub(r"\s+", " ", venster).strip()}
+
+        # Wie het bouwt en wie het ontwikkelt. Alleen een naam uit de lijst telt:
+        # "de ontwikkelaar" zonder naam is geen feit, en een willekeurig hoofdletter-
+        # woord levert bedrijfsnamen op die er niet staan.
+        for rol, namen in (("bouwer", BOUWERS), ("ontwikkelaar", ONTWIKKELAARS)):
+            if rol in feiten["partijen"]:
+                continue
+            for naam in namen:
+                if re.search(r'\b' + re.escape(naam.lower()) + r'\b', tl):
+                    i = tl.find(naam.lower())
+                    feiten["partijen"][rol] = {
+                        "naam": naam, "bron": u,
+                        "zin": re.sub(r"\s+", " ", t[max(0, i - 90): i + 110]).strip()}
+                    break
+
         if "uitverkocht" not in feiten["momenten"]:
             for m in UITVERKOCHT.finditer(tl):
                 venster = t[max(0, m.start() - 110): m.end() + 80]
@@ -246,7 +314,12 @@ def main():
         return ((p.get("woningen") or 0) >= 50
                 or (p.get("prijs_van") and p.get("woonoppervlak_van") and (p.get("woningen") or 0) >= 20))
 
-    todo = [p for p in doel["projecten"] if poort(p) and p["url"] not in bestaand]
+    # --opnieuw haalt ook de projecten op die er al in staan. Nodig zodra de
+    # oogst meer velden kent dan de vorige ronde: zonder deze vlag blijft de
+    # nieuwe extractie leeg voor de 297 die al binnen waren.
+    OPNIEUW = "--opnieuw" in sys.argv
+    todo = [p for p in doel["projecten"]
+            if poort(p) and (OPNIEUW or p["url"] not in bestaand)]
     if MAX:
         todo = todo[:MAX]
     print(f"{len(todo)} projecten te oogsten\n")

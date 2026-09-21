@@ -1374,11 +1374,52 @@ def projectsite_blok(p, naam):
 
     docs = f.get("documenten") or {}
     momenten = f.get("momenten") or {}
-    if not docs and not momenten:
+    kenmerken = f.get("kenmerken") or {}
+    partijen = f.get("partijen") or {}
+    if not docs and not momenten and not kenmerken and not partijen:
         return "", []
 
     vragen = []
     regels = []
+
+    # Wie het bouwt, en hoe het verwarmd wordt. Twee dingen die per project
+    # verschillen, die een koper wil weten vóór hij tekent, en die tot nu toe
+    # nergens op onze pagina stonden terwijl ze op de site van het project zelf
+    # staan. Elk met de vindplaats erbij; de zin van de ontwikkelaar nemen we
+    # niet over, alleen het feit.
+    wie = partijen.get("bouwer") or partijen.get("ontwikkelaar")
+    if wie:
+        vragen.append((f"Wie bouwt {naam}?",
+            f"{wie['naam']}, volgens de eigen site van het project. Wie er bouwt bepaalt welk "
+            f"meerwerk via de optielijst loopt en wat je na de oplevering zelf mag regelen."))
+
+    KENMERK_ZIN = {
+        "warmtepomp": "een individuele warmtepomp", "stadsverwarming": "stadsverwarming",
+        "wko": "warmte-koudeopslag", "vloerverwarming": "vloerverwarming",
+        "zonnepanelen": "zonnepanelen", "nom": "een nul-op-de-meter-uitvoering",
+        "parkeerkelder": "een parkeerkelder", "kopersbegeleider": "een eigen kopersbegeleider",
+        "showroom": "een eigen showroom",
+    }
+    # KORT HOUDEN IS HIER GEEN STIJLKWESTIE. De eerste versie zette deze feiten in
+    # volzinnen: zestig woorden omlijsting om twee woorden feit. Gemeten over 123
+    # pagina's zakte de uniciteit daardoor van 20,3% naar 19,2% — het frame is op
+    # elke pagina gelijk en verdringt de eigen tekst. Nu een rij met alleen het
+    # feit en de vindplaats.
+    rijen_f = []
+    if wie:
+        rol = "Bouwer" if partijen.get("bouwer") else "Ontwikkelaar"
+        rijen_f.append((rol, E(wie["naam"]), wie["bron"]))
+    for k in KENMERK_ZIN:
+        if k in kenmerken:
+            rijen_f.append(("Installatie" if k in ("warmtepomp", "stadsverwarming", "wko",
+                                                   "vloerverwarming") else "Op het terrein",
+                            E(KENMERK_ZIN[k]), kenmerken[k]["bron"]))
+    if rijen_f:
+        li = "".join(
+            f'<li><span>{lbl}</span> <strong>{wat}</strong> '
+            f'<a href="{E(bron)}" rel="nofollow noopener" target="_blank">bron</a></li>'
+            for lbl, wat, bron in rijen_f[:6])
+        regels.append(f"<ul class='pk-eigen'>{li}</ul>")
 
     # Wat er te downloaden is, en wat niet.
     heeft = [(sleutel, label) for sleutel, label in DOC_LABEL if sleutel in docs]
