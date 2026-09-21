@@ -1,0 +1,96 @@
+name: Opgezochte feiten per project schrijven
+
+# De laatste stap in het uniciteitswerk. Vier eerdere ingrepen bleven binnen één
+# punt omdat ze allemaal uit dezelfde kleine woordenschat putten; dit leest per
+# project de eigen website en laat daar vijf feiten uit halen. Elke bron is
+# anders, dus elke tekst is anders — dat is het hele punt.
+#
+# WAAROM DIT IN ACTIONS DRAAIT EN NIET LOKAAL
+# De sleutel staat als repo-secret. Die is met opzet niet te lezen, ook niet door
+# de assistent: GitHub geeft hem alleen aan de draaiende job.
+#
+# WAAROM HET EEN PR OPENT EN NIET COMMIT
+# Standing order in CLAUDE.md: loops leveren reviewbare PR's tot ze bewezen zijn.
+# Dit schrijft tekst — geen meting, geen hergeneratie van bestaande feiten — dus
+# hier hoort een mens tussen. De poort in de generator (waarde + bron + verse
+# controledatum) is de tweede zeef; deze PR is de eerste.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Aantal projecten (leeg = alle met een eigen site)"
+        required: false
+        default: "10"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  schrijven:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Feiten ophalen en schrijven
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.max }}" ]; then
+            python3 scripts/handwerk_schrijver.py --max "${{ inputs.max }}" | tee uitvoer.log
+          else
+            python3 scripts/handwerk_schrijver.py | tee uitvoer.log
+          fi
+
+      - name: Pagina's opnieuw maken en de uniciteit meten
+        run: python3 scripts/generate_projectpaginas.py | tee -a uitvoer.log
+
+      - name: PR openen als er iets veranderde
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then
+            echo "Geen wijzigingen - geen PR."
+            exit 0
+          fi
+          SAMENVATTING=$(grep -E 'projecten met feiten|weggegooid|mediaan|onder de' uitvoer.log | head -5)
+          TAK="handwerk-feiten-$(date +%Y%m%d-%H%M)"
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          git checkout -b "$TAK"
+          git add data/clusters/nieuwbouw-project/
+          {
+            echo "Opgezochte feiten van de eigen projectsites, ronde $(date +%d-%m-%Y)"
+            echo
+            echo "$SAMENVATTING"
+            echo
+            echo "Elk feit staat met de pagina waar het gevonden is en de datum van de"
+            echo "controle. De generator toont een feit alleen met alle drie, en laat het"
+            echo "na 400 dagen vervallen. Feiten waarvan de inhoudswoorden niet in de"
+            echo "opgehaalde tekst terugkwamen, heeft het script zelf weggegooid."
+          } > bericht.txt
+          git commit -q -F bericht.txt
+          rm -f bericht.txt uitvoer.log
+          git push -q origin "$TAK"
+          {
+            echo "Automatische ronde van de handwerk-schrijver."
+            echo
+            echo '```'
+            echo "$SAMENVATTING"
+            echo '```'
+            echo
+            echo "Elk feit draagt de URL waar het gevonden is en de controledatum."
+            echo "De generator toont alleen feiten met alle drie."
+            echo
+            echo "**Waar je op let:** staat het feit er echt op die bron, en is het geen"
+            echo "verkooptaal van de ontwikkelaar."
+          } > pr.txt
+          gh pr create --base main --head "$TAK" \
+            --title "Opgezochte feiten van de eigen projectsites, ronde $(date +%d-%m-%Y)" \
+            --body-file pr.txt
