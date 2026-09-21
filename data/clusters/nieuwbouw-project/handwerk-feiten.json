@@ -26,6 +26,18 @@
    "waarde": ""
   }
  },
+ "de-faam-breda": {
+  "ontwikkelaar": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De Faam wordt ontwikkeld door V.O.F. Fijn Faam Fantastisch, een samenwerking tussen Stebru B.V. en Synchroon B.V. De makelaar is Van de Water Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de plinten van de gebouwen komt horeca. Daarnaast zijn er ruimtes voor creatieve werkconcepten zoals flexplekken, atelierruimtes en studio's in de Faamhal en Fuséehal. Het gebied wordt ingericht met groene pleinen, verticale geveltuinen, daktuinen en heeft een autovrije opzet."
+  }
+ },
  "fortunapark-vlaardingen-vlaardingen": {
   "bestemming": {
    "bron": "",
@@ -60,9 +72,9 @@
    "waarde": ""
   },
   "historie": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.woneninhoeksenes.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek lag vroeger Houcky Nes, een eilandje in het IJ met een lage, hoekige vorm. Na inpoldering in 1875 verdween het eiland onder de nieuwe polder, maar de naam bleef behouden."
   },
   "ontwikkelaar": {
    "bron": "",
@@ -70,9 +82,9 @@
    "waarde": ""
   },
   "starterslening": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.woneninhoeksenes.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt 50 jaar afgekochte erfpacht zonder verrassingen in erfpachtkosten. Er is geen zelfbewoningsplicht of anti-speculatiebeding, wat volledige vrijheid bij aankoop biedt."
   },
   "voorzieningen": {
    "bron": "",
@@ -163,9 +175,9 @@
  },
  "leeuwepoort-herenhuizen-en-stadswoningen-utrecht": {
   "bestemming": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in Leeuwesteyn, een woonbuurt aan de westkant van het Amsterdam-Rijnkanaal met stedelijk karakter. De architectuur sluit aan bij art deco-elementen. Het ontwerp voorziet in drie groene binnentuinen en houten gevels. Voor dakbouw en aanbouwen zijn geen specifieke regels in de tekst genoemd."
   },
   "historie": {
    "bron": "",
@@ -183,9 +195,45 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk grenst aan Leidsche Rijn Centrum en Hoge Weide. Het Willem-Alexanderpark en het Oeverpark langs het Amsterdam-Rijnkanaal bieden recreatieruimte. Groene veldjes tussen de bouwvelden bieden speelgelegenheid. Via de Dafne Schippersbrug bereik je het oude centrum van Utrecht."
+  }
+ },
+ "rotterdam-tree-house-koopappartementen-rotterdam": {
+  "ontwikkelaar": {
+   "bron": "https://www.treehouserotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebouw wordt gerealiseerd door PRSC. Verkoopinformatie wordt verzorgd door Ooms Makelaars en Baljon Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://www.treehouserotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het gebouw bevinden zich horecagelegenheden, een cultuurpodium met capaciteit voor circa 200 personen, en kantoorruimte. Op loopafstand zijn restaurants, koffiezaken, cafés, winkels en culturele voorzieningen aanwezig. Direct naast station Rotterdam Centraal met treinverbindingen naar steden als Den Haag, Amsterdam, Utrecht, Londen en Parijs."
+  }
+ },
+ "sierlijke-dames-eindhoven": {
+  "ontwikkelaar": {
+   "bron": "https://www.sierlijkedames.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Land 's-Heeren ontwikkelt het project. Van Santvoort Makelaars is betrokken bij de verkoop van de appartementen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.sierlijkedames.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project grenst aan het Anthony van Leeuwenhoekpark. Dichtbij liggen Strijp-S met creatieve hotspots, het Klokgebouw, het Philips Stadion, Eindhoven Centraal en dagelijkse voorzieningen. Er ontstaat een groene parkachtige buitenruimte met een loopbrug naar het park."
+  }
+ },
+ "the-future-alkmaar": {
+  "starterslening": {
+   "bron": "https://thefuture.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt 36 woningen via KoopStart aan voor € 312.000 v.o.n. Deze regeling via het Nationaal Fonds Betaalbare Koopwoningen is bedoeld voor kopers onder de 35 jaar met een gezamenlijk inkomen tot twee keer modaal (€ 93.531 bruto per jaar in 2026). De getaxeerde marktwaarde van de woning mag maximaal € 420.000 bedragen."
+  },
+  "voorzieningen": {
+   "bron": "https://thefuture.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "The Future ligt direct naast NS Station Alkmaar Noord en de binnenstad ligt op enkele minuten fietsen. Het project zelf bevat een gezamenlijke binnentuin en groene daktuinen met ruimte voor ontmoeting, ontspanning en spelen."
   }
  },
  "westeinderhage-fase-1-aalsmeer": {
