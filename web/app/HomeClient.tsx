@@ -15,12 +15,13 @@ import ConfiguratorCTA from './components/ConfiguratorCTA'
 const PIJLERS_NA = -1
 
 // De configurator stond op vier productpagina's, maar niet op de pagina waar de
-// meeste mensen binnenkomen. Hij hoort na "Op maat laten maken": dat deel gaat
-// over dingen die voor jouw woning gemaakt worden, en de configurator is het
-// enige op de site waar je dat zelf kunt doen en er meteen een offerte op kunt
-// aanvragen. Niet hoger: boven de vouw staat de woningzoeker, en die is de
-// eerste vraag van de bezoeker.
-const CONFIGURATOR_NA = 5
+// meeste mensen binnenkomen. Hij stond eerst na "Op maat laten maken" — het
+// zevende blok, dus pas na vier schermen scrollen (Daniel, 21-09-2026: "mag wel
+// wat hoger"). Nu staat hij direct onder de hero: het eerste wat je op de
+// homepage tegenkomt nadat je de woningzoeker hebt gezien, en het enige op de
+// site waar je zelf iets kunt tekenen en er meteen een offerte op kunt vragen.
+// Niet hóger: de woningzoeker blijft de eerste vraag van de bezoeker.
+const CONFIGURATOR_NA = 0
 
 // Getrouwe port van de homepage-body. De secties + overlays worden byte-getrouw
 // via dangerouslySetInnerHTML gerenderd (behoudt exact alle markup, ids, Tailwind-
@@ -430,13 +431,16 @@ export default function HomeClient() {
           <div dangerouslySetInnerHTML={{ __html: deel }} />
           {i === PIJLERS_NA && <HomeServices />}
           {i === CONFIGURATOR_NA && (
-            <div style={{ background: '#F5F0E8', padding: '0 5% 72px' }}>
+            <div id="deuren" style={{ background: '#F5F0E8', padding: '0 5% 72px' }}>
               <div style={{ maxWidth: 1100, margin: '0 auto' }}>
                 <ConfiguratorCTA
+                  vroeg
                   marge="0"
-                  titel="Teken je eigen deuren, in elke kleur die je wilt"
-                  aanleiding={'Kies het groefpatroon en de RAL-kleur, en zie meteen hoe de deur in je wand '
-                    + 'staat. Wat je samenstelt mail je naar jezelf of vraag je direct aan.'}
+                  label="Kozijnloze deuren · offerte"
+                  titel="De kozijnloze deur is aan een opmars. Teken die van jou."
+                  aanleiding={'Geen kozijn, geen architraaf: deur en wand worden één vlak. '
+                    + 'Kies het groefpatroon en de RAL-kleur, zie meteen hoe het in je eigen wand '
+                    + 'staat, en vraag er direct een offerte op aan.'}
                 />
               </div>
             </div>

@@ -20,11 +20,16 @@ const CONFIGURATOR = '/kozijnloze-deuren/configurator/'
 export default function ConfiguratorCTA({
   aanleiding,
   titel = 'Stel je deur samen en vraag direct een offerte aan',
+  label = 'Configurator · offerte',
   marge = '44px 0',
   vroeg = false,
 }: {
   aanleiding: string
   titel?: string
+  // Het bovenschrift. Op de deurpagina's weet de lezer al waar hij is en is
+  // "configurator" de nieuwe informatie; op de homepage niet — daar moet er
+  // eerst staan waar het ovér gaat.
+  label?: string
   marge?: string
   // Staat het venster in het eerste scherm, laad het beeld dan meteen.
   vroeg?: boolean
@@ -42,7 +47,7 @@ export default function ConfiguratorCTA({
         <div style={{
           fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase',
           letterSpacing: '0.08em', color: '#E8A87C', fontWeight: 700, marginBottom: 10,
-        }}>Configurator &middot; offerte</div>
+        }}>{label}</div>
         <h2 style={{
           fontSize: '1.55rem', lineHeight: 1.2, fontWeight: 800, color: '#F5F0E8', margin: '0 0 10px',
           letterSpacing: '-0.022em', textWrap: 'balance',
