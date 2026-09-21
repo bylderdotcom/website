@@ -238,8 +238,14 @@ def mode_samenvoegen():
     doel = json.load(open(DOEL, encoding="utf-8"))
     bestaand = {sleutel(p.get("naam", ""), p.get("plaats", "")) for p in doel["projecten"]}
     nieuw = 0
+    # Drempel: een project moet minstens één harde uitspraak doen — een aantal
+    # woningen of een prijs. Van de 1.967 opgehaalde projecten staan er 1.704 op
+    # "Toekomstig", en daar staat vaak niets anders dan de naam en de plaats.
+    # Een pagina daarvan maken levert dunne content op, en daar hebben we er al
+    # te veel van in Search Console staan. Ze blijven wel in nwn-projecten.json,
+    # zodat een volgende ronde ze oppikt zodra er wel iets bekend is.
     for p in nwn:
-        if p.get("woningen") is None:
+        if p.get("woningen") is None and p.get("prijs_van") is None:
             continue
         if sleutel(p["naam"], p["plaats"]) in bestaand:
             continue
@@ -247,6 +253,9 @@ def mode_samenvoegen():
             "url": p["url"], "plaats": p["plaats"], "naam": p["naam"],
             "woningen": p["woningen"], "status": p.get("status"),
             "oplevering": None, "oplevering_bron": None, "jaren": None,
+            "prijs_van": p.get("prijs_van"), "prijs_tot": p.get("prijs_tot"),
+            "woonoppervlak_van": p.get("woonoppervlak_van"),
+            "woonoppervlak_tot": p.get("woonoppervlak_tot"),
             "handmatig": True,          # overleeft een nieuwbouw.nl-scrape
             "bron": "nieuwwonennederland.nl",
         })
