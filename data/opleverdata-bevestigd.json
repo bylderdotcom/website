@@ -1,0 +1,149 @@
+{
+ "_doc": "Opleverdata die het project zelf publiceert, stuk voor stuk tegen de bronzin gelegd en met de hand goedgekeurd. De oogster (scripts/projectsite_oogst.py) vindt deze data maar koppelt ze niet betrouwbaar aan het juiste moment: van de 28 kandidaten bleken er 8 een startdatum, een lotingsdatum of de planning van een andere fase. Daarom publiceren we alleen wat hier staat.",
+ "projecten": {
+  "https://nieuwbouw.nl/aanbod/koop/zwolle/01KS5GVRGHDD4MATM4RG2Y88TF-nova-67-appartementen": {
+   "naam": "Nova 67 Appartementen",
+   "plaats": "zwolle",
+   "wanneer": "medio 2026",
+   "jaar": 2026,
+   "bron": "https://www.deweezen.nl/de-weezen/fases-en-planning/",
+   "site": "https://www.deweezen.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HE343FREV27FVPE30TMP5YRJ-nelson-amsterdam": {
+   "naam": "Nelson Amsterdam",
+   "plaats": "amsterdam",
+   "wanneer": "2e kwartaal 2027",
+   "jaar": 2027,
+   "bron": "https://nelsonamsterdam.nl",
+   "site": "https://nelsonamsterdam.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/harderwijk/01KM0ASEDJQYC4NE0ND6YVDZ0W-havenhart": {
+   "naam": "Havenhart",
+   "plaats": "harderwijk",
+   "wanneer": "Q2 2028, eerste woningen",
+   "jaar": 2028,
+   "bron": "https://www.woneninhavenhart.nl",
+   "site": "https://www.woneninhavenhart.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01KGM37BMY21N97JF3VVCBSKHE-honk-hoofddorp": {
+   "naam": "Honk Hoofddorp",
+   "plaats": "haarlemmermeer",
+   "wanneer": "vanaf eind 2027",
+   "jaar": 2027,
+   "bron": "https://honkhoofddorp.nl",
+   "site": "https://honkhoofddorp.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/eindhoven/01J0R3BQ4NMECYHYJ02RKQX6HK-strijp-s4-fase-spark": {
+   "naam": "Strijp S4 Fase Spark",
+   "plaats": "eindhoven",
+   "wanneer": "zomer 2028",
+   "jaar": 2028,
+   "bron": "https://strijp-s4.nl",
+   "site": "https://strijp-s4.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/hoorn/01K8B6V3EKSPYHJSJS0C9GWE7Y-rozenrijk-in-zwaag": {
+   "naam": "Rozenrijk In Zwaag",
+   "plaats": "hoorn",
+   "wanneer": "eind 2027 of begin 2028",
+   "jaar": 2027,
+   "bron": "https://wonen-rozenrijk.nl",
+   "site": "https://wonen-rozenrijk.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/arnhem/01JT3CGRGF2WTQJGMXTMQ8M8RY-dillekwartier-fase-1": {
+   "naam": "Dillekwartier Fase 1",
+   "plaats": "arnhem",
+   "wanneer": "eerste halfjaar 2027",
+   "jaar": 2027,
+   "bron": "https://dillekwartier.nl/projectinformatie/planning-en-fasering/",
+   "site": "https://dillekwartier.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/westland/01JSPFNR7QYRN6AMD580ZM0ZA5-waelhoven-fase-1": {
+   "naam": "Waelhoven Fase 1",
+   "plaats": "westland",
+   "wanneer": "Q1 2027",
+   "jaar": 2027,
+   "bron": "https://www.waelhoven.nl",
+   "site": "https://www.waelhoven.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/halderberge/01J194M8Z1EC1GKGK4BHZ56TEF-sint-anna-oudenbosch": {
+   "naam": "Sint Anna Oudenbosch",
+   "plaats": "halderberge",
+   "wanneer": "vanaf Q2 2026",
+   "jaar": 2026,
+   "bron": "https://sintanna-oudenbosch.nl",
+   "site": "https://sintanna-oudenbosch.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01J8SY71H3NE6JC1ST6CVSJ5RN-roof-garden": {
+   "naam": "Roof Garden",
+   "plaats": "amsterdam",
+   "wanneer": "2e kwartaal 2028",
+   "jaar": 2028,
+   "bron": "https://roofgardenamsterdam.nl",
+   "site": "https://roofgardenamsterdam.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/amersfoort/01H98DQE1284YY1G5KSW486W4D-podium": {
+   "naam": "Podium",
+   "plaats": "amersfoort",
+   "wanneer": "april 2026",
+   "jaar": 2026,
+   "bron": "https://woneninpodium.nl/woningtypes/",
+   "site": "https://woneninpodium.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/nijmegen/01HE51SEM1X22QW5M2EJEJE43R-wonen-in-duet": {
+   "naam": "Wonen In Duet",
+   "plaats": "nijmegen",
+   "wanneer": "gefaseerd vanaf begin 2030",
+   "jaar": 2030,
+   "bron": "https://www.woneninduet.nl/projectinformatie/planning-en-fasering/",
+   "site": "https://www.woneninduet.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01JBKDH16V18EB2FKRZQGEEKF0-hoeverijk-nieuwegein-fase-1": {
+   "naam": "Hoeverijk Nieuwegein Fase 1",
+   "plaats": "nieuwegein",
+   "wanneer": "Q1 2028",
+   "jaar": 2028,
+   "bron": "https://www.hoeverijk-nieuwegein.nl/informatie/planning/",
+   "site": "https://www.hoeverijk-nieuwegein.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://nieuwbouw.nl/aanbod/koop/zwijndrecht/01J8SPFTYZF5XSRRGYEKXYWR07-de-bostuinen-fase-1": {
+   "naam": "De Bostuinen Fase 1",
+   "plaats": "zwijndrecht",
+   "wanneer": "najaar 2026",
+   "jaar": 2026,
+   "bron": "https://www.bostuinen-zwijndrecht.nl/planning/",
+   "site": "https://www.bostuinen-zwijndrecht.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://www.nieuwwonennederland.nl/nieuwbouw/broek-op-langedijk/rodeo/8385": {
+   "naam": "Rodeo",
+   "plaats": "broek-op-langedijk",
+   "wanneer": "Q2 2027",
+   "jaar": 2027,
+   "bron": "https://buurtschaprodeo.nl",
+   "site": "https://buurtschaprodeo.nl",
+   "gecontroleerd_op": "2026-09-21"
+  },
+  "https://www.nieuwwonennederland.nl/nieuwbouw/leiden/omega/15520": {
+   "naam": "Omega",
+   "plaats": "leiden",
+   "wanneer": "medio Q2 2027",
+   "jaar": 2027,
+   "bron": "https://www.omega-leiden.nl",
+   "site": "https://www.omega-leiden.nl",
+   "gecontroleerd_op": "2026-09-21"
+  }
+ }
+}
