@@ -438,8 +438,7 @@ def bag_blok(p, naam):
             zin = ("Het zoekvierkant van dit project bevat meer panden dan wij per ronde ophalen, "
                    "dus vergelijken we de rondes hier niet met elkaar. ")
         staart = (f'<p class="noot">{len(reeks)} metingen sinds {nl_datum(reeks[0][0])}. {zin}'
-                  "Wij meten elke twee weken opnieuw; deze regels komen rechtstreeks uit die "
-                  "metingen.</p>")
+                  "Wij meten elke twee weken opnieuw.</p>")
 
     verhaal = logboek_verhaal(reeks, naam)
     log = f"<h2>Logboek</h2>{verhaal}<ul class='log'>{''.join(regels)}</ul>{staart}"
@@ -966,10 +965,8 @@ def afgeleide_vragen(p, naam, plaats, lo, hi, won, buren, gem):
     #    en het is een van de meestgestelde vragen van een nieuwbouwkoper.
     if lo and lo >= 2020:
         uit.append((f"Heeft {naam} een gasaansluiting?",
-            f"Nee. Sinds 1 juli 2018 mogen nieuwbouwwoningen niet meer op aardgas worden "
-            f"aangesloten. {naam} wordt dus gasloos opgeleverd: koken doe je elektrisch en "
-            f"verwarmen gaat via een warmtepomp of stadsverwarming. Reken bij je meerwerk op "
-            f"een inductiekookplaat en een zwaardere groepenkast."))
+            f"Nee &mdash; sinds 1 juli 2018 mag dat niet meer (Wet VET). Reken dus op een "
+            f"inductiekookplaat en een zwaardere groepenkast in je meerwerk."))
 
     # 2. Wat sluit er nú. Dezelfde bron als de deadlinetabel, maar dan als
     #    antwoord op de vraag die een koper in augustus stelt.
@@ -1320,8 +1317,7 @@ het kan, en dus wanneer je moet beslissen.</p>
 af van het aantal deuren en de afwerking &mdash; in de configurator zie je hem op jouw eigen
 samenstelling, en het aantal deuren komt uit je plattegrond hierboven.</p>
 <p><a class="cta-primary" href="{conf}">Stel je deuren samen &rarr;</a></p>
-<p class="noot">Dertien groefpatronen, elke RAL-kleur, direct in 3D &mdash; en de plint
-erbij, want een plafondhoge deur vraagt niet om de standaardplint.</p>
+<p class="noot">Dertien groefpatronen, elke RAL-kleur, direct in 3D. Ook de plint.</p>
 </article>
 </div>
 <p class="noot" style="margin-top:14px;">Met een gratis account leggen we deze keuzes vast in je
@@ -1613,8 +1609,13 @@ def meet_uniciteit(toon=8):
     print(f"\nTekstuniciteit (shingle van {SHINGLE} woorden, gemeten op wat er nu staat):")
     print(f"  mediaan {med:.1f}%  ·  onder de {UNIEK_VLOER}%: {laag} van {len(scores)}")
     if laag:
-        print("  De vakbedrijf-profielen gingen op 31 juli uit de index toen ze onder "
-              f"de {UNIEK_VLOER}% zakten. Dit is dus de rem op het opschalen, niet de poort.")
+        # IJkpunten met dezelfde methode gemeten (N=8, nav en footer eruit), niet
+        # overgenomen uit een notitie: kennisbank 92,0%, nieuwbouw-plaatspagina's
+        # 36,1%, stukadoor-profielen 24,9% — die laatste staan uit de index.
+        print(f"  Zelfde methode op andere clusters: kennisbank 92%, plaatspagina's 36%, "
+              f"stukadoor-profielen 25% (die staan uit de index). Dit cluster zit daaronder.")
+        print("  Let op: dit cijfer hangt aan de shingle-lengte. Bij 15 woorden leest "
+              "dezelfde set 31,7%. Gebruik het om verschillen te zien, niet als rapportcijfer.")
     print("  laagste:", ", ".join(f"{n} ({s:.0f}%)" for s, n in scores[:3]))
     print("  hoogste:", ", ".join(f"{n} ({s:.0f}%)" for s, n in scores[-3:]))
     return scores
@@ -1652,8 +1653,7 @@ staan &mdash; en waar de tekening daar onduidelijk over is. {wanneer}</p>
 <div><strong>Elektra geteld</strong><span>lichtpunten en stopcontacten van de tekening</span></div>
 </div>
 <p><a class="cta-primary" href="{link}">Zet je plattegrond erin &rarr;</a></p>
-<p class="noot">Hiervoor is een gratis account nodig &mdash; de tekening moet ergens staan.
-Een foto van de tekening werkt ook; wij zeggen erbij hoe zeker de schatting is.</p>"""
+<p class="noot">Gratis account nodig; een foto van de tekening werkt ook.</p>"""
 
 
 def lidmaatschap_blok(app, met_auping):
@@ -1680,10 +1680,9 @@ def lidmaatschap_blok(app, met_auping):
     auping_zin = (" De Auping-korting hierboven is er zo een: die geldt bij vier winkels."
                   if met_auping else "")
     return f"""<h2>Wat het account verder oplevert</h2>
-<p>Met hetzelfde gratis account krijg je ledenkorting bij {n_totaal} aangesloten merken. Bij
-{n_overal} daarvan staat de korting los van een winkel &mdash; die gebruik je waar je ook
-woont. De andere {n_totaal - n_overal} hangen aan een vestiging, en welke dat in jouw buurt
-zijn zie je in je dossier.{auping_zin}</p>
+<p>Ledenkorting bij {n_totaal} merken. Bij {n_overal} staat die los van een winkel; de andere
+{n_totaal - n_overal} hangen aan een vestiging &mdash; welke dat bij jou zijn, staat in je
+dossier.{auping_zin}</p>
 <ul class="pk-leden">{rijtje}</ul>
 <p><a class="cta-stil" href="/vouchers/">Bekijk de ledenkortingen</a></p>"""
 
@@ -2276,8 +2275,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 <div class="pk-slot">
 <div class="pk-etiket">E&eacute;n handeling</div>
 <h2>Volg {E(naam)}</h2>
-<p>Wij meten de bouw elke twee weken, rekenen je deadlines terug naar jouw bouwnummer en
-zetten je kortingen klaar bij 56 merken. Elke nieuwe meting zie je terug in je dossier.</p>
+<p>Elke twee weken een nieuwe meting in je dossier, je deadlines teruggerekend naar jouw
+bouwnummer.</p>
 <p><a class="cta-primary" href="{app}">Maak een gratis account &rarr;</a></p>
 <p class="fijn">Geen betaling nodig &middot; opzeggen wanneer je wilt</p>
 </div>
