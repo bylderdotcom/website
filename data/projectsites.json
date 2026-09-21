@@ -18,6 +18,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/eindhoven/01KTY1NTD6CES17VJQH2H2F4EK-sierlijke-dames": {
@@ -35,6 +37,13 @@
     "zin": "oopinformatie Financiële check Downloads FAQ Contact Bekijk appartementen Sierlijke Dames Verwachte start bouw: oktober 2026 Nu in verkoop | Start bouw: Verwachting oktober 2026 Sierlijke Dames Eindhoven Op de kruising v"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.sierlijkedames.com",
+    "zin": "e toren is bestemd voor huurappartementen en wordt verhuurd door Trudo. Onder de torens komt een gezamenlijke parkeerkelder voor auto’s en fietsen. Daarnaast zijn er enkele privé parkeerplaatsen en bergingen beschikbaar, die separaat"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/oss/01KVFM9ZT8802SNK6FVV6X4JTZ-ooievaarshoek": {
@@ -47,6 +56,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Ballast Nedam",
+    "bron": "https://ooievaarshoek.nl",
+    "zin": "voorrang krijgen in de wijk. Start planontwikkeling Met de gunning van de tender starten Ballast Nedam Development en de gemeente Oss gezamenlijk met de verdere planuitwerking. In de komende periode"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/alkmaar/01KTKXQMFZCVD34VCJK189PYG4-the-future": {
@@ -60,6 +77,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/arnhem/01KTB8EBK4Y34RXM5JW0FXQKQP-dillekwartier-fase-2": {
@@ -86,6 +105,19 @@
     "zin": "de globale planning voor de 88 woningen uit de eerste fase (1a en 1b) en de 28 woningen in fase 2: Oplevering en wonen: Fase 1A en 1B in het eerste halfjaar van 2027 Fase 2 in het eerste halfjaar van 2028 Start bouw: St"
    }
   },
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+    "zin": "e woning wordt volledig gebouwgebonden energieneutraal. We doen dat onder meer met behulp van goede isolatie, zonnepanelen, gebalanceerde ventilatie, warmteterugwinunits en groene daken. 4. Onderhoudsarm Je woning wordt gebouwd met"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://dillekwartier.nl",
+    "zin": "Nieuwbouw in Arnhem, Dillekwartier Projectinformatie Woningaanbod VanWonen Interesse Inloggen VanWonen Logo Interesse Inloggen X Home Projectinformatie Het project Dillekwartie"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/dongen/01KTA3JB8HSY80WBEB3YMYFH4T-heem": {
@@ -93,12 +125,15 @@
   "gekeken": [
    "https://woneninnoorderbunder.nl",
    "https://woneninnoorderbunder.nl/nieuws/",
+   "https://woneninnoorderbunder.nl/downloads/",
    "https://woneninnoorderbunder.nl/account/mijn-documenten/",
    "https://woneninnoorderbunder.nl/nieuws/12969/informatiebijeenkomst-2-juli/",
-   "https://woneninnoorderbunder.nl/nieuws/12832/start-verkoop/",
-   "https://woneninnoorderbunder.nl/nieuws/12504/pre-sale-heem-start-6-mei/"
+   "https://woneninnoorderbunder.nl/nieuws/12832/start-verkoop/"
   ],
-  "documenten": {},
+  "documenten": {
+   "technische omschrijving": "https://woneninnoorderbunder.nl/downloads/",
+   "verkoopbrochure": "https://woneninnoorderbunder.nl/downloads/"
+  },
   "momenten": {
    "start verkoop": {
     "wanneer": "juni 2026",
@@ -107,6 +142,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KPDE48RKC9ER2MGEGFE5V50C-hoeksenes": {
@@ -127,6 +164,23 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.woneninhoeksenes.nl",
+    "zin": "oekse Nes: 50 jaar afgekochte erfpacht Inclusief complete keuken en badkamer Lage energielasten dankzij eigen warmtepomp Korte bouwtijd van 14 maanden Geen zelfbewoningsplicht Prijzen vanaf € 380.840 v.o.n. Comfortabel wonen in Am"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.woneninhoeksenes.nl",
+    "zin": "stapklaar en direct genieten. ✔ Duurzame en energiezuinige woningen: Energielabel A+++, eigen warmtepomp en 2 zonnepanelen per woning. ✔ Korte bouwtijd van circa 14 maanden: Binnen afzienbare tijd genieten van je nieuwe thuis. ✔ Gee"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.woneninhoeksenes.nl",
+    "zin": "lag hier Houcky Nes (Hoekse Nes): een eilandje in het IJ, vernoemd naar de lage, hoekige vorm van het land. Na inpoldering in 1875 verdween het eiland onder de nieuwe polder, maar de naam bleef. Gren"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/breda/01HDRVG492QFH33BNWCJR8A94H-de-faam": {
@@ -149,6 +203,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Synchroon",
+    "bron": "https://faambreda.nl",
+    "zin": "en ontwikkeling van: V.O.F. Fijn Faam Fantastisch een samenwerking tussen Stebru B.V . en Synchroon B.V. Privacy | Cookies"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JNGMQ8D3ECME3N3SCKHE0TVZ-rotterdam-tree-house-koopappartementen": {
@@ -163,6 +225,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01KNKDJAT4JV1DJHBJN6HCFDAG-leeuwepoort-herenhuizen-en-stadswoningen": {
@@ -186,6 +250,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://leeuwepoort.nl",
+    "zin": "en stadswoningen is gestart! Ja, ik schrijf me in Bekijk het aanbod Bouw is gestart! Duurzame toekomst Met Leeuwepoort zetten we een nieuwe stap in innovatief, biobased en duurzaam bouwen. Leeuwepoort"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/wageningen/01KPQWVVA96DE95GHKDS37XHQM-vad07bc-zelfbouwkavels": {
@@ -197,6 +269,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.vadapark.nl",
+    "zin": "ng van deze unieke leefplek en denk je mee over hoe jouw woning en de gezamenlijke ruimte vorm krijgt. Over hoe we elkaar straks ontmoeten, kinderen met elkaar kunnen spelen, tuinieren of samen koffie"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/moerdijk/01KPW4WCHJTF2XM6W8HJZNV4NS-markant": {
@@ -217,6 +297,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "BPD",
+    "bron": "https://nieuwbouw-markant.nl",
+    "zin": "orsnee wijk, maar eentje met lef en karakter. Markant Zevenbergen is een ontwikkeling van BPD , Synchroon en Remmers projectontwikkeling . Privacy policy Cookies"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/scherpenzeel/01KS7Q8BW3ER8DPDADCA4CV5B8-de-nieuwe-koepel-fase-2b": {
@@ -230,6 +318,17 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.whoon.nl/aanbod",
+    "zin": "ng. Onze nieuwbouwprojecten zijn voorzien van energiezuinige technologieën, zoals onderandere zonnepanelen en warmtepompen. Dit maakt onze woningen niet alleen comfortabel, maar ook vriendelijk voor het milieu en jouw portemonnee."
+   },
+   "zonnepanelen": {
+    "bron": "https://www.whoon.nl/aanbod",
+    "zin": "mstgerichte woning. Onze nieuwbouwprojecten zijn voorzien van energiezuinige technologieën, zoals onderandere zonnepanelen en warmtepompen. Dit maakt onze woningen niet alleen comfortabel, maar ook vriendelijk voor het milieu en jou"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zwolle/01KS5GVRGHDD4MATM4RG2Y88TF-nova-67-appartementen": {
@@ -262,6 +361,24 @@
     "zin": "geleverd. Appartementen James Opgeleverd Stadswoningen Philip, Milan, Amelie & Olivia Bouw gestart. Oplevering medio 2026. Appartementen Mees Bouw gestart. Oplevering medio 2026. Fase 1 - De Weezen Gebouwen & Openbare ru"
    }
   },
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://www.deweezen.nl/aanbod/stadswoningen/",
+    "zin": "ief groen binnenhof 3 of 4 (slaap)kamers Luxe sanitairkeramiek en tegelwerk van Villeroy & Boch Duurzaam door zonnepanelen en bodemenergiesysteem Priveparkeerplaats aan huis in overdekte garage Riante privéberging “Een eigen plek én"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Nijhuis",
+    "bron": "https://www.deweezen.nl",
+    "zin": "aar de ruimte in Nova? Ervaar het via de VR-tour! Ervaar Nova! Ontwikkeling en realisatie Nijhuis Bouw B.V. Molendijk Noord 92A 7460 AE Rijssen 0548 - 53 54 45 info@nijhuis.nl www.nijhuis.nl Explorius"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.deweezen.nl/aanbod/aanbod-appartementen/",
+    "zin": "ses en komen er 67 appartementen in Nova. Daarbij zijn alle appartementen verschillend in vorm, grote en beoogd voor andere doelgroepen. Zo is er voor elk wat wils binnen de Weezen. 3 verschillende ge"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/oss/01KRGVD10SM79VH6GZ2FAEYB40-het-veld-fase-4": {
@@ -275,6 +392,17 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.whoon.nl/aanbod",
+    "zin": "ng. Onze nieuwbouwprojecten zijn voorzien van energiezuinige technologieën, zoals onderandere zonnepanelen en warmtepompen. Dit maakt onze woningen niet alleen comfortabel, maar ook vriendelijk voor het milieu en jouw portemonnee."
+   },
+   "zonnepanelen": {
+    "bron": "https://www.whoon.nl/aanbod",
+    "zin": "mstgerichte woning. Onze nieuwbouwprojecten zijn voorzien van energiezuinige technologieën, zoals onderandere zonnepanelen en warmtepompen. Dit maakt onze woningen niet alleen comfortabel, maar ook vriendelijk voor het milieu en jou"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/roermond/01KRNEHS8S22ADVR4DGZMFVTQY-jazz-city": {
@@ -291,6 +419,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://jazzcity.nl",
+    "zin": "ren met 39 high-end koopwoningen siert de nieuwe skyline van Roermond. Met haar iconische vorm en ruime balkons rondom biedt Manhattan haar bewoners een adembenemend uitzicht over de omgeving. Opgelev"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/best/01KRE5ARZY3A3AW18EPBGFZ94B-aarlesche-erven-deelplan-6a": {
@@ -304,6 +440,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/dijk-en-waard/01KPNBAKP51N54504R5R864XP7-wonen-in-woodstone-sequoia": {
@@ -332,6 +470,21 @@
     "zin": "rder Nieuws 8 december 2025 Extra verkoopevent vrijdag 12 december! beheerder Nieuws 1 oktober 2025 Start bouw officieel gevierd beheerder Nieuws 18 september 2025 We zijn gestart met heien! beheerder Nieuws 14 juni 2025"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://www.woneninwoodstone.nl",
+    "zin": "garage met veel laadpalen Zonnepanelen op het gezamenlijke dak Plafondhoogte van 2,7 meter Vloerverkoeling en vloerverwarming Alle voorzieningen binnen handbereik Vanuit je nieuwe appartement loop je zo via kronkelende paadjes naar Win"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.woneninwoodstone.nl",
+    "zin": "n die Woodstone zo bijzonder maken. Hoofdentree van bijna 5 meter Beveiligde parkeergarage met veel laadpalen Zonnepanelen op het gezamenlijke dak Plafondhoogte van 2,7 meter Vloerverkoeling en vloerverwarming Alle voorzieningen bin"
+   },
+   "parkeerkelder": {
+    "bron": "https://www.woneninwoodstone.nl",
+    "zin": "tion om de hoek Duurzaam en energiezuinig wonen met label A++/A+++ Ruime parkeergelegenheid in een beveiligde parkeergarage Alle zorg zoals apotheek, fysio, dokter, tandarts om de hoek Groene parkachtige inrichting van het plangebied"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/dordrecht/01KN7C80G868H0AYDBMW5EN11N-de-hendrik": {
@@ -366,6 +519,14 @@
     "zin": "zen bekend, is de verkoopdocumentatie compleet en kun je je inschrijven voor een woning. zomer 2026 Oplevering Het Wantij De oplevering betekent dat de woningen bouwkundig gereed zijn en formeel worden overgedragen aan d"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://wonenopstadswerven.nl",
+    "zin": "rkoopproces Brochures Financiering Kopersopties The Yard II Kopersopties De Hendrik Duurzaamheid Veelgestelde vragen Voordelen van nieuwbouw Klimaatadaptatie appartementen Interesse Interesse Nu in ve"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/goirle/01KNRRC1TV974MDJXVVPRKBW96-de-oorsprong-fase-2": {
@@ -387,6 +548,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/hoeksche-waard/01KRBFCKWP63SVHDGJV58YJR8T-s-gravendeel-west-fase-1a": {
@@ -397,6 +560,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "BPD",
+    "bron": "https://www.sgravendeel-west.nl",
+    "zin": "euwsbrief Hoofdfase 2 is in ontwikkeling, dit is een samenwerking tussen ABB Bouwgroep en BPD. 's-Gravendeel 's-Gravendeel is gelegen in de Hoekse Waard, nabij verschillende uitvalswegen (A16, N3, A29"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nijmegen/01JWTF2P865SGK04E9KQMG7XDZ-het-nieuwe-metterswane-fase-3": {
@@ -424,6 +595,17 @@
     "zin": "te milestones op een rij: Q1 2024 Bouw gestart 15 april 2026 Fase 3 in verkoop Medio 2027 Verwachte oplevering Q1 2024 Bouw gestart 15 april 2026 Fase 3 in verkoop Medio 2027 Verwachte oplevering Locatie Proef de levendi"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://metterswane.nl/het-project/",
+    "zin": "wd en energiezuinig. De appartementen voldoen aan de modernste eisen als het gaat om energie en duurzaamheid. Vloerverwarming- en koeling vergroten je wooncomfort. Uitnodigend woningaanbod Het nieuwe Metterswane telt 22 verdiepingen. D"
+   },
+   "parkeerkelder": {
+    "bron": "https://metterswane.nl/het-project/",
+    "zin": "ingtypes, een supermarkt, een terras, een binnentuin, kantoren, horeca op de begane grond en een ondergrondse parkeergarage. Een betekenisvolle hotspot waar de essentie van stads leven centraal staat. De brievenbus Het gelaagde, kara"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01KQVSAYCYDHEF5MZ4SN7AP33F-nieuw-achterveld": {
@@ -439,6 +621,21 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://nieuwachterveld.nl/nieuws/13627/duurzaam-wonen-nieuw-achterveld/",
+    "zin": "gen in Nieuw Achterveld worden daarom gasloos en energiezuinig gebouwd. Ze worden onder meer voorzien van een warmtepomp, zonnepanelen en WTW-ventilatie. Ook de goede isolatie draagt bij aan een prettig binnenklimaat, in ieder sei"
+   },
+   "vloerverwarming": {
+    "bron": "https://nieuwachterveld.nl/nieuws/13627/duurzaam-wonen-nieuw-achterveld/",
+    "zin": "werkt energiezuinig en zorgt, in combinatie met de overige installaties, voor een comfortabel binnenklimaat. Vloerverwarming De warmte wordt gelijkmatig over de woning verdeeld via vloerverwarming. Hierdoor zijn radiatoren niet nodig"
+   },
+   "zonnepanelen": {
+    "bron": "https://nieuwachterveld.nl/nieuws/13627/duurzaam-wonen-nieuw-achterveld/",
+    "zin": "Achterveld worden daarom gasloos en energiezuinig gebouwd. Ze worden onder meer voorzien van een warmtepomp, zonnepanelen en WTW-ventilatie. Ook de goede isolatie draagt bij aan een prettig binnenklimaat, in ieder seizoen. De wonin"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/westland/01KK8RWYE21E3WTG059C76W4M3-boomgaerde-fase-3": {
@@ -463,6 +660,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Novaform",
+    "bron": "https://www.boomgaerde.nl",
+    "zin": "Inschrijf- en verkoopvoorwaarden Boomgaerde wordt gerealiseerd door Combinatie Van Mierlo-Novaform. Novaform Vastgoedontwikkelaars West B.V. is een KlokGroep-onderneming. Kijk voor meer nieuwbouwproje"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/geldrop-mierlo/01KQCSFTMEMCWN5EY2CNTDZ8VA-luchenweide": {
@@ -480,6 +685,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/hoorn/01KM066NZBZ58QH282676W7ATT-de-remise": {
@@ -495,6 +702,14 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://remisezwaag.nl",
+    "zin": "& De Stijl Makelaardij Contact Zie jij jezelf hier al wonen? De Remise krijgt steeds meer vorm. Maar hoe ziet het er straks uit als het project helemaal gerealiseerd is? In deze video nemen we je mee"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/westland/01KQSRXA8DTN37Z4F6D5ERK9XC-terrazza": {
@@ -519,6 +734,13 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "stadsverwarming": {
+    "bron": "https://woneninterrazza.nl/over-terrazza/",
+    "zin": "fort: een combinatie van hoogwaardige materialen en duurzame installaties. Zo is je woning aangesloten op het warmtenet, een slim en duurzaam alternatief voor aardgas. Op het dak vind je sedum. Het regenwater wordt opgevangen en"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01HE343FREV27FVPE30TMP5YRJ-nelson-amsterdam": {
@@ -536,6 +758,23 @@
     "wanneer": "2027",
     "bron": "https://nelsonamsterdam.nl",
     "zin": "ering vanaf 2e kwartaal 2027 In Nelson Smile zijn nog diverse appartementen direct beschikbaar . De oplevering staat gepland vanaf het 2e kwartaal 2027 . Nu kopen betekent dus binnen afzienbare tijd wonen op deze schitte"
+   }
+  },
+  "kenmerken": {
+   "wko": {
+    "bron": "https://nelsonamsterdam.nl",
+    "zin": "g gasloos. Dat is prettig voor je energierekening en goed voor de planeet! Nelson maakt gebruik van een eigen WKO-installatie voor de levering van warmwater en verwarming, waardoor je er altijd comfortabel bij zit. Bekijk h"
+   },
+   "zonnepanelen": {
+    "bron": "https://nelsonamsterdam.nl",
+    "zin": "igging aan het Nelson Mandelapark en aan de duurzame constructie en inrichting. Zo is het gebouw voorzien van zonnepanelen, groene daken en waterberging. Bovendien zijn alle woningen volledig gasloos. Dat is prettig voor je energier"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Synchroon",
+    "bron": "https://nelsonamsterdam.nl",
+    "zin": "ten 4-kamerappartementen Verkoopdocumenten Locatie Extra Financiële Check Erfpacht Wie is Synchroon Duurzaam wonen Interesse Inloggen De LAATSTE appartementen! Oplevering: Vanaf 2e kwartaal 2027 Bouw"
    }
   },
   "_gehaald": "2026-09-21"
@@ -561,6 +800,19 @@
     "zin": "ar het Rabo Woonevent op donderdag 17 september 2 september 2026 Evenementen De Boeg! 18 maart 2026 Start bouw De Boeg feestelijk ingeluid! 13 maart 2026 🏗️ Update vanaf de bouwplaats van De Boeg! 13 februari 2026 Binnen"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://wonenindeboeg.nl",
+    "zin": "begane grond van het appartementengebouw Alle woningen zijn voorzien van een warmte-terug-win-installatie en vloerverwarming en -koeling, daarmee koop je straks een energiezuinige woning en dat merk je maandelijks in je portemonnee. B"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://wonenindeboeg.nl",
+    "zin": "rmatie over hoe we omgaan met jouw persoonlijke informatie. Phone Aanmelden Nieuwsbrief → Heijmans Vastgoed [email protected] 010 266 28 00 Ooms Makelaars [email protected] 078 614 43 33 Damdrecht Mak"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/midden-groningen/01KPB9FNM6X7W6BDK6NWJ26Q48-vosholen": {
@@ -576,6 +828,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://woneninvosholen.nl",
+    "zin": "Nieuwbouw in Sappemeer, Vosholen Projectinformatie Woningaanbod VanWonen Interesse Inloggen Interesse Inloggen X Home Projectinformatie Het project Vosholen De locatie Sappem"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nijmegen/01KCGYPERBFZP6G117A7P04F9A-het-nieuwe-metterswane-fase-2": {
@@ -603,6 +863,17 @@
     "zin": "te milestones op een rij: Q1 2024 Bouw gestart 15 april 2026 Fase 3 in verkoop Medio 2027 Verwachte oplevering Q1 2024 Bouw gestart 15 april 2026 Fase 3 in verkoop Medio 2027 Verwachte oplevering Locatie Proef de levendi"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://metterswane.nl/het-project/",
+    "zin": "wd en energiezuinig. De appartementen voldoen aan de modernste eisen als het gaat om energie en duurzaamheid. Vloerverwarming- en koeling vergroten je wooncomfort. Uitnodigend woningaanbod Het nieuwe Metterswane telt 22 verdiepingen. D"
+   },
+   "parkeerkelder": {
+    "bron": "https://metterswane.nl/het-project/",
+    "zin": "ingtypes, een supermarkt, een terras, een binnentuin, kantoren, horeca op de begane grond en een ondergrondse parkeergarage. Een betekenisvolle hotspot waar de essentie van stads leven centraal staat. De brievenbus Het gelaagde, kara"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/dordrecht/01KNVSWAATVWZ9BVYGVZQPREPZ-liv-dordrecht": {
@@ -628,6 +899,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://liv-dordrecht.nl",
+    "zin": "e Leerpark Ontdek ‘LIV’: de nieuwste toevoeging aan het dynamische Leerpark in Dordrecht. Heijmans ontwikkelt hier 51 nieuwbouwwoningen, met appartementen, maisonnettes en een atelierwoning. Als je st"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/eindhoven/01KNS3H350GV06V0VFZ0JMTXH9-the-four": {
@@ -645,6 +924,14 @@
     "wanneer": "2027",
     "bron": "https://www.thefour.nl/projectinformatie/planning/",
     "zin": "u hier in . De komende tijd hoor je van ons! Verwachte start bouw: 2e kwartaal 2027 Verwachte start oplevering: circa 3 jaar na start bouw The future begins today! We are gearing up for the start! In just over three year"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://www.thefour.nl",
+    "zin": "Nieuwbouw in Eindhoven, The Four Projectinformatie VanWonen Interesse Inloggen Interesse Inloggen X Home Projectinformatie Het project The Four De locatie in Ein"
    }
   },
   "_gehaald": "2026-09-21"
@@ -676,6 +963,19 @@
     "zin": "onevent 1 mei 2026 De bouw van INCK is gestart! 5 maart 2026 Maak 2026 INCKredible! 13 januari 2026 Start bouw maart 2026 12 december 2025 Eerste woningen verkocht 11 december 2025 INCK Eindhoven is in verkoop! 19 novemb"
    }
   },
+  "kenmerken": {
+   "wko": {
+    "bron": "https://inck-eindhoven.nl",
+    "zin": "Home - INCK Eindhoven = height\"> Home Locatie Dit is INCK WKO – energie Daktuinen Community-ruimtes Woningaanbod Woningtypes Downloads Meer info Financiële check Nieuws Q"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://inck-eindhoven.nl",
+    "zin": "MEER INFORMATIE? Meld je aan voor de nieuwsbrief of neem contact op met het verkoopteam: Heijmans Vastgoed 073 543 5111 [email protected] Van Santvoort Makelaars 040 269 2530 [email protected] MEER O"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rotterdam/01KNVMXEAVV4BKPYPD64ZQKKA1-de-scharnier": {
@@ -698,6 +998,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://scharnier-katendrecht.nl",
+    "zin": "RKOCHT | BOUW GESTART Op de allermooiste plek van het schiereiland Katendrecht ontwikkelt Heijmans De Scharnier, een bijzonder woongebouw met koopappartementen in diverse prijsklassen. Gelegen op de k"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/almere/01KNKG4RAV39VPFJHB0NFSY97G-brooklyn-heights": {
@@ -723,6 +1031,23 @@
     "zin": "or je klaar! 04 Start bouw Kwartaal 2 2027 De bouw start naar verwachting in kwartaal 2 van 2027 05 Oplevering Kwartaal 4 2028 De oplevering is naar verwachting gepland in het vierde kwartaal van 2028. Lees meer Word je"
    }
   },
+  "kenmerken": {
+   "stadsverwarming": {
+    "bron": "https://brooklynheights.nl",
+    "zin": "ge woningen is de tuin meer dan 20 meter diep! Slim & duurzaam Dankzij vloerverwarming, warmteterugwinning en stadsverwarming ben jij klaar voor de toekomst. Dat is wonen met comfort én een goed gevoel. Een wijk die af is De rust van h"
+   },
+   "vloerverwarming": {
+    "bron": "https://brooklynheights.nl",
+    "zin": "p genieten in je eigen tuin. Voor sommige woningen is de tuin meer dan 20 meter diep! Slim & duurzaam Dankzij vloerverwarming, warmteterugwinning en stadsverwarming ben jij klaar voor de toekomst. Dat is wonen met comfort én een goed g"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Dura Vermeer",
+    "bron": "https://brooklynheights.nl",
+    "zin": "k Meer informatie Veelgestelde vragen Downloads Over NEXTHome Over THUIS de Showroom Over Dura Vermeer Nieuws Contact Aanmelden De verkoop is gestart! In deze eerste fase komen 25 grondgebonden woning"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/duiven/01JNK740G1PK0VFQDV1TSGBEK8-op-den-donk": {
@@ -736,6 +1061,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.wonenopdendonk.nl/woningtypes",
+    "zin": "ijkvloers en zelfs rolstoelvriendelijk; comfortabel voor nu en later. De gebouwen zijn energiezuinig met luchtwarmtepomp, veel groen op en aan het gebouw en ruimte voor water. Parkeren doe je uit het zicht. Zo woon je rustig bij h"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Blauwhoed",
+    "bron": "https://www.wonenopdendonk.nl",
+    "zin": "d Nog vragen? Neem contact op! Willemsen makelaars Makelaar 026-4452751 [email protected] Blauwhoed ontwikkelaar 010-45 35 311 [email protected] Verbinden, ontplooien, genieten... leven Privacy Statem"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nijkerk/01KNP3FDXD91VP5EEWQQ110CPQ-bakkerswaard-fase-2-bakkerspad": {
@@ -765,6 +1103,32 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://bakkerswaard.nl/woningtypes/",
+    "zin": "t respect voor het milieu en de toekomst. Dankzij vloerverwarming, hoogwaardige isolatie, zonnepanelen en een warmtepomp geniet je van een aangenaam binnenklimaat en een heel energiezuinig huis. Een groot pluspunt voor de wereld o"
+   },
+   "vloerverwarming": {
+    "bron": "https://bakkerswaard.nl/woningtypes/",
+    "zin": "or de toekomst De woningen in Bakkerswaard worden gebouwd met respect voor het milieu en de toekomst. Dankzij vloerverwarming, hoogwaardige isolatie, zonnepanelen en een warmtepomp geniet je van een aangenaam binnenklimaat en een heel"
+   },
+   "zonnepanelen": {
+    "bron": "https://bakkerswaard.nl/woningtypes/",
+    "zin": "rd worden gebouwd met respect voor het milieu en de toekomst. Dankzij vloerverwarming, hoogwaardige isolatie, zonnepanelen en een warmtepomp geniet je van een aangenaam binnenklimaat en een heel energiezuinig huis. Een groot pluspun"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://bakkerswaard.nl",
+    "zin": "euwsbrief om als eerste op de hoogte te zijn van nieuwe ontwikkelingen over Bakkerswaard. Heijmans Huizen E: [email protected] Verkoop en informatie Midden Nederland Makelaars Oranjelaan 6 3862 CX NIJ"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://bakkerswaard.nl/woningtypes/",
+    "zin": "lijke sfeer van het dorp. De uitstraling is eigentijds, met subtiele dorpse details in de vorm van baksteenaccenten en traditionele daklijnen. Binnen zorgen de praktische leefruimtes voor flexibilitei"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01KNPRE6QG6G28BX49BNKWFK0N-bellevue-fase-2": {
@@ -786,6 +1150,24 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://bellevue-utrecht.nl",
+    "zin": "n uitkijkend op de binnenstad van Utrecht. 163 koopappartementen verdeeld over drie gebouwen met ondergrondse parkeergarage. Net over de iconische ‘gele brug’ in Leidsche Rijn en aan het Amsterdam-Rijnkanaal. Een levendige plek waar"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://bellevue-utrecht.nl",
+    "zin": "ns op via [email protected] of één van de makelaars . Alles weten over nieuwbouw? Kijk op Heijmans Nieuwbouw . Jouw online hulp bij het kopen van een nieuwbouwwoning. © 2026 Copyright Heijmans Privacy"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://bellevue-utrecht.nl/nieuws/",
+    "zin": "drone vlogen we over het bouwterrein. Van bovenaf zie je goed hoe het project steeds meer vorm krijgt. 8.06.26 Lees meer BOUWUPDATE APRIL De afgelopen periode is er hard gewerkt op de bouwplaats. We z"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01KMMN3112FDVFDXDA4R25K71P-westeinderhage-fase-1": {
@@ -823,6 +1205,8 @@
     "zin": "026 Prognose start bouw fase 1 Start bouw binnenkort Prognose start verkoop fase 2 Q4 2026 Prognose oplevering eerste woningen fase 1 2028 Nieuws De zomer komt eraan. Liesbeth de Moet-Zomerhuis 2026-08-25T11:50:14+00:00"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01KKVJJQN9X1ZHYGGMF6VZZDN8-kop-west-wonen": {
@@ -845,6 +1229,23 @@
     "wanneer": "Q2 2027",
     "bron": "https://woneninkopwest.nl/verkoopprocedure/",
     "zin": ", beginnen wij met de voorbereidingen voor de bouw. Bij een voorspoedige verkoop verwachten wij een start bouw vanaf Q1 /Q2 2027. Wij verwachten dat de eerste woningen in Q2 2029 worden opgeleverd. Wij zijn niet aansprak"
+   }
+  },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://woneninkopwest.nl",
+    "zin": "ervlakte [ Kadewoningen I 7 luxe split level woningen 137m² oppervlakte gemiddeld Wonen aan het water Toegang parkeergarage Algemene fietsenstalling Zicht op groene binnentuin Uniek stads karakter [ Kadewoningen II 5 luxe woningen 10"
+   },
+   "kopersbegeleider": {
+    "bron": "https://woneninkopwest.nl/verkoopprocedure/",
+    "zin": "al getekend. Nadat u de koop- en aannemingsovereenkomst getekend heeft, wordt er en afspraak ingepland met de kopersbegeleider van de aannemer. In deze afspraak worden uw wensen met betrekking tot het verder aanpassen van de woning do"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://woneninkopwest.nl/nieuws/",
+    "zin": "werkt is bijna aangebroken. Op donderdag 3 september 12:00 uur… Lees meer Kop West krijgt vorm | sep 8, 2025 38 sociale huurwoningen in aantocht Alphen aan den Rijn, 18 juni 2025. De handtekeningen zi"
    }
   },
   "_gehaald": "2026-09-21"
@@ -871,6 +1272,23 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://woneninpam.nl",
+    "zin": "en energiezuinig wonen. Je hebt twee slaapkamers, een lichte woonkamer en een eigen balkon of terras. Met een warmtepomp, vloerverwarming, fietsenstalling en eigen parkeerplaats woon je hier het hele jaar door comfortabel. Luxe ap"
+   },
+   "vloerverwarming": {
+    "bron": "https://woneninpam.nl",
+    "zin": "inig wonen. Je hebt twee slaapkamers, een lichte woonkamer en een eigen balkon of terras. Met een warmtepomp, vloerverwarming, fietsenstalling en eigen parkeerplaats woon je hier het hele jaar door comfortabel. Luxe appartementen (ca."
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Ten Brinke",
+    "bron": "https://woneninpam.nl",
+    "zin": "e denkt Inschrijven Contact Vragen? Kijk ook even op de FAQ pagina! Ontwikkelaar & Bouwer Ten Brinke Vestiging Utrecht Ravenswade 4c 3439 LD Nieuwegein T: 088 - 37 41 300 www.tenbrinke.com Of stuur ee"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/harderwijk/01KM0ASEDJQYC4NE0ND6YVDZ0W-havenhart": {
@@ -894,6 +1312,13 @@
     "zin": "ning is onder voorbehoud en kan nog wijzigen. Q1 2026 Verkoop gestart! Q4 2026: Start bouw Q2 2028: Oplevering eerste woningen Meld je belangstelling! Havenhart is in verkoop en er is nog volop beweging in het aanbod. He"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://www.woneninhavenhart.nl",
+    "zin": "verwachte kosten of klusweekenden. Alles is fris, schoon en onder garantie. Comfortabel wonen Goede isolatie, vloerverwarming, frisse lucht en ruime vertrekken: moderne nieuwbouw is gebouwd voor comfort. Hoger, lichter, stiller en daar"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/tilburg/01KKENQJ3YFDXNDKAWQAS4X5D0-koningswei-koop": {
@@ -928,6 +1353,13 @@
     "zin": "gerond Sloopperiode 13 maart 2026 Bouw gestart 29 juni 12:00 uur In verkoop (online) Half jaar voor oplevering Start verhuur 1e kwartaal 2029 Verwachte oplevering Hartje Tilburg De centrale locatie in het hart van Tilbur"
    }
   },
+  "kenmerken": {
+   "wko": {
+    "bron": "https://koningswei-tilburg.nl/downloads/",
+    "zin": "F) Keuken nultekeningen (PDF) Woonwensenlijst (PDF) Toelichting woonwensenlijst (PDF) Brochure Warmtelevering WKO (PDF) Contact Heb je specifieke vragen over wonen of ondernemen in Koningswei, stuur dan een mail naar info@k"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/wageningen/01KKBPERV7B81GHDZGDTY45H3G-vadapark": {
@@ -939,6 +1371,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.vadapark.nl",
+    "zin": "ng van deze unieke leefplek en denk je mee over hoe jouw woning en de gezamenlijke ruimte vorm krijgt. Over hoe we elkaar straks ontmoeten, kinderen met elkaar kunnen spelen, tuinieren of samen koffie"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/gilze-en-rijen/01JWZZCT58SCH4EY8AWH1QM7NE-tussen-de-leijen": {
@@ -952,6 +1392,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/maashorst/01K248GY2FN7YSPE1JB8WJXX6P-connect": {
@@ -973,6 +1415,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01K9VNHNADKZV8S4AJ2YF69ZDW-leeuwepoort-appartementen": {
@@ -996,6 +1440,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://leeuwepoort.nl",
+    "zin": "en stadswoningen is gestart! Ja, ik schrijf me in Bekijk het aanbod Bouw is gestart! Duurzame toekomst Met Leeuwepoort zetten we een nieuwe stap in innovatief, biobased en duurzaam bouwen. Leeuwepoort"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01KH8Q8J7SGNRFGYMZY0PBD244-cix-merwede-fase-2": {
@@ -1010,6 +1462,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://www.cix-merwede.nl/aanbod-theatre/",
+    "zin": "opt als een rode draad door het ontwerp van de gebouwen. Groene daken, waterbuffering en energieopwekking met zonnepanelen maken van de binnenwereld van het blok een natuurlijke oase die bijdraagt aan de biodiversiteit en een pretti"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.cix-merwede.nl",
+    "zin": "x is een mix van karakteristieke gebouwen in de nieuwe Utrechtse stadswijk Merwede. Samen vormen ze een kleine stad-in-een-stad, waar buurtbewoners elkaar kennen. Hier vind jij de fijne woning die je"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KG777RQV5EX0SZD194TPXSF3-zwanenpark-fase-3": {
@@ -1027,6 +1492,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01KH94ENQY33S1QKGK6287M1HN-the-forest": {
@@ -1040,6 +1507,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "er Sloterdijk verrijst een nieuwbouwontwikkeling met vier woongebouwen, 313 appartementen en een ondergrondse parkeergarage. Eigen Haard en VORM kochten het project in april 2024 en werken samen aan de heron Lees meer De Kaai, Rotter"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "Homepage van VORM Kom bij ons werken Aanbod Aanbod Aanbod Aanbod Projecten Over VORM Kom bij ons werken Vacatures Kom bij o"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/drimmelen/01KH94S142VV6PFVB5SG1HX3QX-buitenmade": {
@@ -1053,6 +1533,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "er Sloterdijk verrijst een nieuwbouwontwikkeling met vier woongebouwen, 313 appartementen en een ondergrondse parkeergarage. Eigen Haard en VORM kochten het project in april 2024 en werken samen aan de heron Lees meer De Kaai, Rotter"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "Homepage van VORM Kom bij ons werken Aanbod Aanbod Aanbod Aanbod Projecten Over VORM Kom bij ons werken Vacatures Kom bij o"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/leeuwarden/01KEV8F9FG30KEG1WTH7VQ54TM-pioniers-van-middelsee-fase-3": {
@@ -1074,6 +1567,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K71CFQ1QH04K61C8S87VMSYW-havenmeester": {
@@ -1092,6 +1587,13 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://www.havenmeesterrijswijk.nl/woningtypes",
+    "zin": "e appartementen een prachtig uitzicht op de haven. De woningen zijn afgewerkt tot in de puntjes, voorzien van vloerverwarming, moderne badkamers en fijne buitenruimtes. Van een heerlijk balkon of loggia tot een riant dakterras: iedere"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01KGM37BMY21N97JF3VVCBSKHE-honk-hoofddorp": {
@@ -1120,6 +1622,14 @@
     "wanneer": "eind 2027",
     "bron": "https://honkhoofddorp.nl",
     "zin": "106 m² – va. € 580.000 v.o.n. 5-kamerappartement ca. 142 m² – € 975.000 v.o.n. Naar actueel aanbod Oplevering vanaf eind 2027 HONK in de maak Sinds eind 2025 wordt er volop gebouwd aan HONK. En dat zie je. De woongebouw"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://honkhoofddorp.nl",
+    "zin": "pdates vanaf de bouwplaats. Zo zie je precies hoe jouw toekomstige woonplek steeds verder vorm krijgt. Volg ons “Honk is wonen met de wereld aan je voeten.” Kom langs Verkoopcentrum geopend Iedere vri"
    }
   },
   "_gehaald": "2026-09-21"
@@ -1156,6 +1666,14 @@
     "zin": "rgieneutrale gezinswoningen - eind 2026 | VOLLEDIG VERKOCHT • Q4 2026 Dorps Wonen I Verwachte start oplevering 55 koopwoningen - najaar 2026 | VOLLEDIG VERKOCHT • Q4 2025 / Q2 2025 Entreezone I Opgeleverd 35 sociale huur"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.molenhoek-zuid.nl/nieuws",
+    "zin": "bekend. Wil je niks missen? Blijf op de hoogte Schrijf je in! De nieuwe woonbuurt krijgt vorm | Dit kan je verwachten Het is volop lente, ondertussen krijgt 'De Maastuin', de nieuwe woonbuurt in het"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/eindhoven/01J0R3BQ4NMECYHYJ02RKQX6HK-strijp-s4-fase-spark": {
@@ -1178,6 +1696,8 @@
     "zin": "nloggen Inschrijven Contact strijp-s SPARK LUMEN SYNC BLOCK SPARK Nog enkele beschikbaar! Verwachte oplevering: zomer 2028 Bekijk de woningselector WHERE THE EXPLORERS EXPLORERS CREATORS INVENTORS EXPLORERS LIVE STRIJP/S"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/hoorn/01K8B6V3EKSPYHJSJS0C9GWE7Y-rozenrijk-in-zwaag": {
@@ -1204,6 +1724,19 @@
     "zin": "ij de stad Hoorn, aan de rand van Rozenbuurt verrijst de ideale plek aan het water en in het groen. Oplevering eind 2027/begin 2028. Aanmelden Rozenrijk is volop in aanbouw! Bekijk het aanbod ! 2-WEKELIJKS OPEN HUIS: Zat"
    }
   },
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://wonen-rozenrijk.nl/downloads/",
+    "zin": "a (1Mb) Optietekeningen type 9b (1Mb) Optietekeningen type 10 (1Mb) Optietekeningen type 11 (933Kb) Showrooms Warmtepomp Klimaatgarant brochure (1Mb) Klimaatgarant tarievenlijst (480Kb) Sanitair brochure (13Mb) Tegelbrochure 20x40"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://wonen-rozenrijk.nl",
+    "zin": "taan de... Lees meer 7 september 2026 Toekomstige bewoners zien hun Rozenrijk steeds meer vorm krijgen Afgelopen zaterdag stonden onze kopers centraal tijdens de kopersbijeenkomst op de bouwplaats van"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/papendrecht/01K4YXKE2F46VY0S7DGGX86Z19-la-vinea": {
@@ -1222,6 +1755,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/almelo/01J85EG0XXBHNJS7E8RKY0FFYK-parkbuurt": {
@@ -1256,6 +1791,19 @@
     "zin": "Parkbuurt Almelo krijgt vorm dus kom kijken op de NVM Open Huizen Dag. lees verder 10 februari 2026 Start bouw event! Afgelopen dinsdag 10 februari mochten we met de kopers van fase 1A en 1B de start van de bouw vieren!"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://parkbuurt-almelo.nl",
+    "zin": "der 19 maart 2026 NVM Open Huizen Dag zaterdag 28 maart! 🌿 Lente! Parkbuurt Almelo krijgt vorm dus kom kijken op de NVM Open Huizen Dag. lees verder Alle nieuwsberichten bekijken Heb je vragen? Neem c"
+   },
+   "bouwer": {
+    "naam": "Janssen de Jong",
+    "bron": "https://parkbuurt-almelo.nl/nieuws/",
+    "zin": "van Blink Na een intensieve tenderfase heeft gemeente Almelo gekozen voor Blink (voorheen Janssen de Jong Projectontwikkeling) voor de realisatie van ca. 130 koopwoningen in Almelo. Het... lees verder"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nijkerk/01JE3KRW83CE6SX34BY7MSFHS4-doornsteeg-nijkerk": {
@@ -1284,6 +1832,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://doornsteeg-nijkerk.nl",
+    "zin": "Deelgebied De Boomgaard FIORE fase I | UITVERKOCHT In deelgebied De Boomgaard ontwikkelt Heijmans het plan FIORE. De eerste fase bestaat uit 20 woningen en biedt een diversiteit aan woningtypes, alle"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nissewaard/01KCS197QDBTVJKCMGWQFZVZHA-stockholm": {
@@ -1297,6 +1853,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "er Sloterdijk verrijst een nieuwbouwontwikkeling met vier woongebouwen, 313 appartementen en een ondergrondse parkeergarage. Eigen Haard en VORM kochten het project in april 2024 en werken samen aan de heron Lees meer De Kaai, Rotter"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "Homepage van VORM Kom bij ons werken Aanbod Aanbod Aanbod Aanbod Projecten Over VORM Kom bij ons werken Vacatures Kom bij o"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01K6MEGHSY7CZFWK2BFEG7ERTT-de-meesters-van-vroondaal": {
@@ -1309,6 +1878,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://demeestersvanvroondaal.nl",
+    "zin": "ontwikkeling van De Meesters van Vroondaal krijgt dit nieuwe woongebied zijn definitieve vorm. En wat voor één. In ‘De Meesters’ ervaar je de kunst van stijlvol wonen. De circa 130 woningen in dit sc"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/medemblik/01K94WVBMFEDGDNGX1SQ8VNB6Z-poldervaart": {
@@ -1319,6 +1896,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Timpaan",
+    "bron": "https://woneninpoldervaart.nl",
+    "zin": "ccount Account instellingen Uitloggen Poldervaart Onderdijk Iedereen verdient een (t)huis Timpaan en Ooms Wonen zijn momenteel bezig met de ontwikkeling van een nieuwe woonwijk genaamd Poldervaart in"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01K7RR2EHS8DENT33KW3546VRD-cix-merwede-fase-1": {
@@ -1333,6 +1918,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://www.cix-merwede.nl/aanbod-theatre/",
+    "zin": "opt als een rode draad door het ontwerp van de gebouwen. Groene daken, waterbuffering en energieopwekking met zonnepanelen maken van de binnenwereld van het blok een natuurlijke oase die bijdraagt aan de biodiversiteit en een pretti"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.cix-merwede.nl",
+    "zin": "x is een mix van karakteristieke gebouwen in de nieuwe Utrechtse stadswijk Merwede. Samen vormen ze een kleine stad-in-een-stad, waar buurtbewoners elkaar kennen. Hier vind jij de fijne woning die je"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01K8TCEDFWHB6VA2AFJZR3GHKH-bloom-park-fase-2": {
@@ -1364,6 +1962,8 @@
     "zin": "ijk het aanbod van Bloom Zuid De verkoop is in volle gang. Bekijk het aanbod in de woningzoeker. De bouw is gestart, je kunt hier al in 2028 wonen! Nog slechts enkele woningen beschikbaar. De bouw is gestart, je woont je hier"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/wierden/01HACNR3P0VG4A0YSVR2597YV4-zuidbroek-wierden-fase-3": {
@@ -1376,6 +1976,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "kopersbegeleider": {
+    "bron": "https://www.zuidbroekwierden.nl/informatie/verkoopproces/",
+    "zin": "-/aanneemovereenkomst is het tijd om jouw ideale woning samen te stellen. In deze stap kijk je samen met onze woonconsulent naar eventuele opties en meer-/minderwerk. Ook maak je specifieke afspraken over de keuken en badkamer. Voor"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Nijhuis",
+    "bron": "https://www.zuidbroekwierden.nl",
+    "zin": "d met de Privacy Verklaring Inloggen... Wachtwoord vergeten... Ontwikkeling en realisatie Nijhuis Bouw B.V. Molendijk Noord 92a 7460 AE Rijssen 0548 - 53 54 45 www.nijhuis.nl © 2026 Privacyverklaring"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/enschede/01JV9Q1E7WG3V3EQZ9AC6NZPZS-satijnhof-fase-2": {
@@ -1392,6 +2005,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01JSM2SB1M12F8X409SWBTVWEB-sem-hoofddorp": {
@@ -1402,6 +2017,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01K83007FZXMWT8FQTGNSAX8WM-west": {
@@ -1413,6 +2030,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Vink Bouw",
+    "bron": "https://westvlaardingen.nl",
+    "zin": "ialist in zorgomgevingen en het KDC-programma, Volantis – integraal duurzaamheidsmanager, Vink Bouw – technisch partner en Omgevingsmanager Carlijn Bergshoeff – verbinder met bewoners en lokale organi"
+   },
+   "ontwikkelaar": {
+    "naam": "Timpaan",
+    "bron": "https://westvlaardingen.nl",
+    "zin": "ialen zorgen voor een gezonde, rustgevende woonomgeving. Vastgoed- en gebiedsontwikkelaar Timpaan heeft de tender gewonnen die de gemeente Vlaardingen heeft uitgeschreven voor de locatie aan het Erasm"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01K7HCWTTWVNHQS8Z16GN3SNJN-flora": {
@@ -1424,6 +2054,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/koggenland/01K71NXYWKP5RSGKFZ9XDH6WHX-de-tuinen-ii": {
@@ -1434,6 +2066,13 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://detuinen-ursem.nl",
+    "zin": "jzonder dorps karakter. Ontdek uw ideale thuis, geschikt voor elke levensfase, met duurzame oplossingen zoals PV-panelen voor energie-efficiëntie en comfortabel wonen. Lees meer over de woningtypes Verkoop en informatie KRK Makela"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nijmegen/01K5731HSGZH1DDXHQTVN4FACS-het-nieuwe-metterswane-fase-1": {
@@ -1461,6 +2100,17 @@
     "zin": "te milestones op een rij: Q1 2024 Bouw gestart 15 april 2026 Fase 3 in verkoop Medio 2027 Verwachte oplevering Q1 2024 Bouw gestart 15 april 2026 Fase 3 in verkoop Medio 2027 Verwachte oplevering Locatie Proef de levendi"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://metterswane.nl/het-project/",
+    "zin": "wd en energiezuinig. De appartementen voldoen aan de modernste eisen als het gaat om energie en duurzaamheid. Vloerverwarming- en koeling vergroten je wooncomfort. Uitnodigend woningaanbod Het nieuwe Metterswane telt 22 verdiepingen. D"
+   },
+   "parkeerkelder": {
+    "bron": "https://metterswane.nl/het-project/",
+    "zin": "ingtypes, een supermarkt, een terras, een binnentuin, kantoren, horeca op de begane grond en een ondergrondse parkeergarage. Een betekenisvolle hotspot waar de essentie van stads leven centraal staat. De brievenbus Het gelaagde, kara"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/noardeast-fryslan/01K0VPRM6AGWRT5EX59BR03RCK-noarderstek-fase-4": {
@@ -1477,6 +2127,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/wormerland/01K6DBCHYT8ETFEKVRDM5SFYH4-silhouet": {
@@ -1492,6 +2144,14 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://woneninsilhouet.nl",
+    "zin": "Postvak in Mijn account Account instellingen Uitloggen Start verkoop 6 oktober Waar wonen vorm krijgt aan de Zaan Silhouet bevindt zich op de hoek van de Veerdijk en Noordweg aan de historische Zaan e"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/arnhem/01JT3CGRGF2WTQJGMXTMQ8M8RY-dillekwartier-fase-1": {
@@ -1518,6 +2178,19 @@
     "zin": "de globale planning voor de 88 woningen uit de eerste fase (1a en 1b) en de 28 woningen in fase 2: Oplevering en wonen: Fase 1A en 1B in het eerste halfjaar van 2027 Fase 2 in het eerste halfjaar van 2028 Start bouw: St"
    }
   },
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+    "zin": "e woning wordt volledig gebouwgebonden energieneutraal. We doen dat onder meer met behulp van goede isolatie, zonnepanelen, gebalanceerde ventilatie, warmteterugwinunits en groene daken. 4. Onderhoudsarm Je woning wordt gebouwd met"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://dillekwartier.nl",
+    "zin": "Nieuwbouw in Arnhem, Dillekwartier Projectinformatie Woningaanbod VanWonen Interesse Inloggen VanWonen Logo Interesse Inloggen X Home Projectinformatie Het project Dillekwartie"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/maastricht/01HF97M8PDH13XQ380PGJR363R-cour-200-koop-en-huurappartementen": {
@@ -1536,6 +2209,19 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Ballast Nedam",
+    "bron": "https://www.wonenaandegroeneloper.nl",
+    "zin": "7 15 22 maastricht@boek-offermans.nl Blijf op de hoogte Socials Facebook Instagram © 2025 Ballast Nedam Development Privacyverklaring Disclaimer"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.wonenaandegroeneloper.nl/aanbod",
+    "zin": "Bedaux de Brouwer Architecten. Geïnspireerd door de iconische stijl van Dudok en Berlage, vormen de speelse straatwanden en charmante, kromme straten een dynamisch en intiem straatbeeld. Uiteraard voo"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rijswijk-zh/01K5RFJATC5D9QCDQ5VATMDX2K-hof-van-rijswijk-de-prins": {
@@ -1556,6 +2242,19 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.hofvanrijswijk.nl",
+    "zin": "uin: rustig, beschut en toch midden in het vernieuwde stadscentrum. Parkeren goed geregeld In de nabijgelegen parkeergarages onder het complex zijn ruime parkeermogelijkheden beschikbaar. De bouw is in volle gang Hof van Rijswijk kri"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.hofvanrijswijk.nl",
+    "zin": "ermogelijkheden beschikbaar. De bouw is in volle gang Hof van Rijswijk krijgt steeds meer vorm op locatie. Naar verwachting woon je hier al eind 2027. Stap binnen in de Hofwoningen van Hof van Rijswij"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/roosendaal/01HJ8GXQVH1VFVZM3B6J7307X3-leonard-roosendaal": {
@@ -1567,6 +2266,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zwolle/01K5NJW0TXCRQXGA805PYJMQEQ-de-tippe-de-zuidpunt": {
@@ -1588,6 +2289,19 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.wonenindetippe.nl/projectinformatie/het-laatste-nieuws/11657/verslag-presentatie-de-zuidpunt/",
+    "zin": "tting of schaduw kunnen bieden tegen hittestress. Lekker buiten Tussen de twee appartementengebouwen komt een parkeergarage met een leef-dek beoogd. Dit kan een binnentuin met bankjes zijn, maar er zijn meer suggesties: - Jeu de boul"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Dura Vermeer",
+    "bron": "https://www.wonenindetippe.nl",
+    "zin": "ereen elkaar kent, fijne klein buurtjes dus! In De Zuidpunt ontwikkelt VanWonen samen met Dura Vermeer een gebied met appartementen voor iedereen. Zorg, sociale huur, midden dure huur en koop. De loca"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JZJ59W22XZZ1B2PTAFR3DPVK-elzenhagen-noordhof-4": {
@@ -1616,6 +2330,14 @@
     "wanneer": "augustus 2026",
     "bron": "https://woneninelzenhagen.nl/nl/nieuws/",
     "zin": "engezinswoningen in Amsterdam steeds schaarser worden 17 augustus 2026 Lees meer Nieuws Feestelijke start bouw Noordhof 4: een nieuwe woonplek komt tot leven 11 augustus 2026 Lees meer Nieuws Video: maak kennis met de Pa"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://woneninelzenhagen.nl",
+    "zin": "en van nieuwbouw Klimaatadaptatie appartementen Interesse Interesse Welkom in Elzenhagen. Amsterdam Noord op z’n best. Dit is hét moment: er zijn meerdere fases met appartementen en eengezinswoningen"
    }
   },
   "_gehaald": "2026-09-21"
@@ -1648,6 +2370,14 @@
     "zin": "engezinswoningen in Amsterdam steeds schaarser worden 17 augustus 2026 Lees meer Nieuws Feestelijke start bouw Noordhof 4: een nieuwe woonplek komt tot leven 11 augustus 2026 Lees meer Nieuws Video: maak kennis met de Pa"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://woneninelzenhagen.nl",
+    "zin": "en van nieuwbouw Klimaatadaptatie appartementen Interesse Interesse Welkom in Elzenhagen. Amsterdam Noord op z’n best. Dit is hét moment: er zijn meerdere fases met appartementen en eengezinswoningen"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nederweert/01K361ZVZTF6C09181T59VPM2P-winnerstraat": {
@@ -1662,6 +2392,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Van Wijnen",
+    "bron": "https://www.woneninwinnerstraat.nl",
+    "zin": "lusieve wijk, waar ruimte is voor starters, gezinnen én senioren. De komende jaren werken Van Wijnen en de gemeente Nederweert samen aan een aantrekkelijk en toekomstbestendig woongebied aan de Winner"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/gooise-meren/01JZJEP6405677EJ03212RXK3S-marienburg-fase-1": {
@@ -1676,6 +2414,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01JZ315BAMYGXAC40G6AW4QPZK-rhijn": {
@@ -1686,6 +2426,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/almelo/01JWZV3F1CNKRFN7W6NSZT7HJE-parkbuurt-almelo-fase-1b": {
@@ -1720,6 +2462,19 @@
     "zin": "Parkbuurt Almelo krijgt vorm dus kom kijken op de NVM Open Huizen Dag. lees verder 10 februari 2026 Start bouw event! Afgelopen dinsdag 10 februari mochten we met de kopers van fase 1A en 1B de start van de bouw vieren!"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://parkbuurt-almelo.nl",
+    "zin": "der 19 maart 2026 NVM Open Huizen Dag zaterdag 28 maart! 🌿 Lente! Parkbuurt Almelo krijgt vorm dus kom kijken op de NVM Open Huizen Dag. lees verder Alle nieuwsberichten bekijken Heb je vragen? Neem c"
+   },
+   "bouwer": {
+    "naam": "Janssen de Jong",
+    "bron": "https://parkbuurt-almelo.nl/nieuws/",
+    "zin": "van Blink Na een intensieve tenderfase heeft gemeente Almelo gekozen voor Blink (voorheen Janssen de Jong Projectontwikkeling) voor de realisatie van ca. 130 koopwoningen in Almelo. Het... lees verder"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/hoorn/01JP7VEQQJ68A3VRDEHEJ3JVEF-nieuwe-weelde": {
@@ -1733,6 +2488,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "er Sloterdijk verrijst een nieuwbouwontwikkeling met vier woongebouwen, 313 appartementen en een ondergrondse parkeergarage. Eigen Haard en VORM kochten het project in april 2024 en werken samen aan de heron Lees meer De Kaai, Rotter"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://aanbod.vorm.nl",
+    "zin": "Homepage van VORM Kom bij ons werken Aanbod Aanbod Aanbod Aanbod Projecten Over VORM Kom bij ons werken Vacatures Kom bij o"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/laarbeek/01JYRN0N5GFNKF4JDA2CVSRRFE-klokkengietery": {
@@ -1748,6 +2516,27 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.klokkengietery.nl/over-klokkengietery/",
+    "zin": "ndacht voor duurzaamheid en wooncomfort. Er worden moderne, energiezuinige installaties toegepast, zoals luchtwarmtepompen, vloerverwarming en waar mogelijk zonnepanelen. De woningen voldoen aan de nieuwste milieunormen en in het"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.klokkengietery.nl/over-klokkengietery/",
+    "zin": "urzaamheid en wooncomfort. Er worden moderne, energiezuinige installaties toegepast, zoals luchtwarmtepompen, vloerverwarming en waar mogelijk zonnepanelen. De woningen voldoen aan de nieuwste milieunormen en in het ontwerp is rekening"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.klokkengietery.nl/over-klokkengietery/",
+    "zin": "den moderne, energiezuinige installaties toegepast, zoals luchtwarmtepompen, vloerverwarming en waar mogelijk zonnepanelen. De woningen voldoen aan de nieuwste milieunormen en in het ontwerp is rekening gehouden met het behoud van g"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.klokkengietery.nl/over-klokkengietery/",
+    "zin": "ekeningen geven de basisstructuur weer, maar je hebt de vrijheid om alles naar eigen wens vorm te geven en te personaliseren. Bekijk de brochure Duurzaam wonen Bij de bouw van de woningen is veel aand"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JWQVCF4HNX5R2N3SEA0XS6AK-new-maas": {
@@ -1763,6 +2552,13 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://newmaas.nl",
+    "zin": "om. Het complex is voorzien van videointercom, liften, een eigen gym, koffiebar en lounge, werkplekken en een parkeergarage. Aan alle kanten is er een mooi uitzicht: op het water, de stad, de brug en het groen. Je woont ‘op’ het wate"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/veldhoven/01JWZZCT0M2F25SW5HRM0DBP21-veldhoven-slot-oost": {
@@ -1775,6 +2571,27 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.veldhovenslotoost.nl",
+    "zin": "bruiken voor het opladen van uw elektrische auto. De woningen worden voorzien van voldoende zonnepanelen, een warmtepomp met koeling en zeer goede isolatie van onder andere de gevel maar ook het glas. Bekijk het aanbod Natuurinclu"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.veldhovenslotoost.nl",
+    "zin": "u bijvoorbeeld gebruiken voor het opladen van uw elektrische auto. De woningen worden voorzien van voldoende zonnepanelen, een warmtepomp met koeling en zeer goede isolatie van onder andere de gevel maar ook het glas. Bekijk het aa"
+   },
+   "kopersbegeleider": {
+    "bron": "https://www.veldhovenslotoost.nl",
+    "zin": "Veldhoven Slot-Oost - Nieuwbouw in Veldhoven Slot-Oost Menu Menu Home Aanbod Kopersbegeleiding Contact FAQ Account Account Je bent nog niet ingelogd, log nu in of maak een account aan. Inloggen Aanmeld"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Ballast Nedam",
+    "bron": "https://www.veldhovenslotoost.nl",
+    "zin": "ten van Veldhoven, in de wijk Zeelst, ligt de nieuwbouwlocatie Slot-Oost. Hier ontwikkelt Ballast Nedam Development in totaal 59 woningen: 13 startkoopwoningen, 6 vrije sector hoekwoningen, 30 tweekap"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01JXF3FG3448DHSBTGMGV1C2G7-zwanenpark-fase-1": {
@@ -1792,6 +2609,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/breda/01JWTVET1B10C15FY28RTK7C09-avalon-fase-2": {
@@ -1828,6 +2647,19 @@
     "zin": "n rust brachten op het Hero terrein in Breda 16 maart 2026 Lees meer Nieuws 102 nieuwe huurwoningen opgeleverd in Hero van Breda 11 maart 2026 Lees meer Nieuws Groene doeners van start bij Hero van Breda 27 februari 2026 Le"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://herovanbreda.nl",
+    "zin": "Hero van Breda - Duurzaam wonen begint hier Plan Deelgebieden Locatie Nieuws Aanbod Service Houtbouw Financiering Kopersopties Duurza"
+   },
+   "bouwer": {
+    "naam": "BAM",
+    "bron": "https://herovanbreda.nl/nl/nieuws/",
+    "zin": "tralende start voor de buurtmoestuin in Hero van Breda 24 maart 2026 Lees meer Nieuws Hoe BAM Infraconsult en Quattro Expertise samen rust brachten op het Hero terrein in Breda 16 maart 2026 Lees meer"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01JX2BS7PG1QSVHG92K1Z4QD9N-de-veenhoven-mijdrecht": {
@@ -1842,6 +2674,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/dordrecht/01JPMB49Z3HRFW5KXC7P7RAMRH-the-yard-ii": {
@@ -1876,6 +2710,14 @@
     "zin": "zen bekend, is de verkoopdocumentatie compleet en kun je je inschrijven voor een woning. zomer 2026 Oplevering Het Wantij De oplevering betekent dat de woningen bouwkundig gereed zijn en formeel worden overgedragen aan d"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://wonenopstadswerven.nl",
+    "zin": "rkoopproces Brochures Financiering Kopersopties The Yard II Kopersopties De Hendrik Duurzaamheid Veelgestelde vragen Voordelen van nieuwbouw Klimaatadaptatie appartementen Interesse Interesse Nu in ve"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/westland/01JSPFNR7QYRN6AMD580ZM0ZA5-waelhoven-fase-1": {
@@ -1901,6 +2743,8 @@
     "zin": "Fase 1: de bouw van fase 1 (19 woningen) is in volle gang! Er zijn nog enkele woningen beschikbaar. Oplevering in Q1 2027! Fase 2: de verkoop van fase 2 is gestart! Er zijn nog verschillende woningen beschikbaar. Bekijk"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JQBV64YRPD6GMAYFCDCSJ0QH-elzenhagen-noordhof-5": {
@@ -1931,6 +2775,14 @@
     "zin": "engezinswoningen in Amsterdam steeds schaarser worden 17 augustus 2026 Lees meer Nieuws Feestelijke start bouw Noordhof 4: een nieuwe woonplek komt tot leven 11 augustus 2026 Lees meer Nieuws Video: maak kennis met de Pa"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://woneninelzenhagen.nl",
+    "zin": "en van nieuwbouw Klimaatadaptatie appartementen Interesse Interesse Welkom in Elzenhagen. Amsterdam Noord op z’n best. Dit is hét moment: er zijn meerdere fases met appartementen en eengezinswoningen"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JSPHCMW8C9EN4PDHGHGE5BSJ-weder": {
@@ -1946,6 +2798,14 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.wederwonen.nl/aanbod/",
+    "zin": "l. Een dynamisch uitzicht dat nooit gaat vervelen. De plattegrond van deze woning is slim vormgegeven met optimaal gebruik van de ruimte, waardoor een ruime woonkamer met open keuken en een ruime slaa"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01JRYVHZM1KZV19X63QR5761Q7-opdreef": {
@@ -1967,6 +2827,23 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://opdreefwonen.nl/extra-kosten-naast-de-verkoopprijs/",
+    "zin": ", de appartementen worden aangesloten op het verwarmingssysteem van Eteck. Je hebt daardoor geen cv-ketel of warmtepomp in je woning staan. Het appartement heeft vloerverwarming in alle woonruimten en op warme dagen kan de instal"
+   },
+   "vloerverwarming": {
+    "bron": "https://opdreefwonen.nl/extra-kosten-naast-de-verkoopprijs/",
+    "zin": "ingssysteem van Eteck. Je hebt daardoor geen cv-ketel of warmtepomp in je woning staan. Het appartement heeft vloerverwarming in alle woonruimten en op warme dagen kan de installatie de woning ook enkele graden koelen. De kosten voor E"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://opdreefwonen.nl",
+    "zin": "LastName FirstName Aanmelden Nieuwsbrief → Heb je vragen? Neem gerust contact op met ons! Heijmans Vastgoed Emily Blaauw (verkoopmanager) T | 073 543 51 11 E | [email protected] Interesse? Nelisse Mak"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01JSEBKJD9Z09MDNYJB82802TF-wildgroei": {
@@ -1981,6 +2858,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zaanstad/01JTTFGV2DV1E0312MXRAFBN91-wonen-op-hembrug": {
@@ -2003,6 +2882,19 @@
     "zin": "gsplan Hembrugterrein onherroepelijk September 2024 Bouwwerkzaamheden eerste fase gestart Eind 2026 Oplevering eerste huurwoningen Eind 2026 Verkoop eerste koopwoningen Bestemmingsplan onherroepelijk Medio 2023 Start bou"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://wonenophembrug.nl/aanbod/",
+    "zin": "Daarom blijft het terrein autoluw en parkeren bewoners hun auto grotendeels uit het zicht in een gezamenlijke parkeergarage. Een deel van de parkeerplaatsen bevindt zich dichtbij de woningen, in een parkeergarage of op het maaiveld,"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Ten Brinke",
+    "bron": "https://wonenophembrug.nl",
+    "zin": "gebiedsontwikkeling van Hembrug Zaandam B.V., bestaande uit ABC Planontwikkeling, LIFE en Ten Brinke. Disclaimer"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JQV5YTM0798HBVMAZPPQHV3G-tuinkwartier": {
@@ -2021,6 +2913,19 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://tuinkwartier.nl",
+    "zin": "zieningen en een divers woningaanbod in een natuurlijke woonomgeving. Met gevels van hergebruikte materialen, zonnepanelen, natuurinclusieve tuinen en een mobiliteitshub geeft Tuinkwartier ruimte aan mens én natuur. Meer over de loc"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://tuinkwartier.nl",
+    "zin": "n van nieuwbouw Planning 360 view Interesse Interesse Wonen in Tuinkwartier: Nieuwbouw in Amsterdam op Strandeiland Het woningaanbod van Duintuin is in verkoop! Kijk voor het actuele aanbod en meer in"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/breda/01J9NXDWN74EJXCFA950Z7SAMA-avalon-fase-1": {
@@ -2057,6 +2962,19 @@
     "zin": "n rust brachten op het Hero terrein in Breda 16 maart 2026 Lees meer Nieuws 102 nieuwe huurwoningen opgeleverd in Hero van Breda 11 maart 2026 Lees meer Nieuws Groene doeners van start bij Hero van Breda 27 februari 2026 Le"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://herovanbreda.nl",
+    "zin": "Hero van Breda - Duurzaam wonen begint hier Plan Deelgebieden Locatie Nieuws Aanbod Service Houtbouw Financiering Kopersopties Duurza"
+   },
+   "bouwer": {
+    "naam": "BAM",
+    "bron": "https://herovanbreda.nl/nl/nieuws/",
+    "zin": "tralende start voor de buurtmoestuin in Hero van Breda 24 maart 2026 Lees meer Nieuws Hoe BAM Infraconsult en Quattro Expertise samen rust brachten op het Hero terrein in Breda 16 maart 2026 Lees meer"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/leidschendam-voorburg/01H9GN7P44YGJTYAFFWBG9MK32-eve-nieuwbouw": {
@@ -2072,6 +2990,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Blauwhoed",
+    "bron": "https://www.vlietvoorde-eve.nl/over-ons/ontwikkelaar-aannemer/",
+    "zin": "aat Verkoopinformatie Brochure FAQ Nieuws Interesse Home Over ons Ontwikkelaar & aannemer Blauwhoed Samen de toekomst vormgeven. Nederland gezonder, gelukkiger en welvarender maken. Dankzij woningen d"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/stichtse-vecht/01JC0R3GZNKS9M6SC5W2KZWBVE-neptunus": {
@@ -2088,6 +3014,21 @@
     "zin": "T OP 6 JANUARI De verkoop van beide gebouwen, Nautilus en Triton, is ondertussen gestart. Verwachte oplevering Q1 2027 De bouw is in volle gang en de verwachting is dat de eerste appartementen vanaf januari 2027 worden o"
    }
   },
+  "kenmerken": {
+   "wko": {
+    "bron": "https://www.neptunus-maarssen.nl",
+    "zin": "aanbod Woningaanbod Technische omschrijving (PDF) Sanitair tegel- en vloerafwerking (PDF) Informatie brochure WKO (PDF) Locatie Financieren FAQ Contact Direct contact met de makelaar Luxueuze 3-kamer appartementen De bouw i"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.neptunus-maarssen.nl",
+    "zin": "warmen en koelen van de gebouwen wordt gebruik gemaakt van bodemenergie via Warmte Koude Opslag en dankzij de vloerverwarming geniet je in jouw appartement altijd van een comfortabel binnenklimaat. Tot slot zijn de appartementen volled"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.neptunus-maarssen.nl",
+    "zin": "imaat. Tot slot zijn de appartementen volledig gasloos; voor energieopwekking worden de gebouwen voorzien van zonnepanelen. Maak nu een financiële check Het hoge energielabel van de appartementen in Neptunus kan financieel voordeel"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/westland/01HSBJRKJ5KE5Y189VETQ419MJ-boomgaerde-fase-2": {
@@ -2112,6 +3053,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Novaform",
+    "bron": "https://www.boomgaerde.nl",
+    "zin": "Inschrijf- en verkoopvoorwaarden Boomgaerde wordt gerealiseerd door Combinatie Van Mierlo-Novaform. Novaform Vastgoedontwikkelaars West B.V. is een KlokGroep-onderneming. Kijk voor meer nieuwbouwproje"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JJ7CQCZAQ9CPK5NXAKRDNZ2E-boegbeeld-79-woningen": {
@@ -2133,6 +3082,13 @@
     "zin": "de 79 koopappartementen die verdeeld zijn over 3 van de 5 panden. meer over het project 17-02-2026 Start bouw feest, samen hebben we het gevierd! Lees meer 05-01-2026 Bouw van Boegbeeld Officieel Gestart! Lees meer 19 -"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.boegbeeld-ndsm.nl/het-project/",
+    "zin": "en met elkaar verbonden en vind je snel de weg naar je huis. Onder de koopappartementen van Boegbeeld zit een parkeergarage en je fiets parkeer je in de gezamenlijke stalling op de begane grond. Op deze website lees je alles over de"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/drechterland/01JKG13QCYRRFC35V1JA8K0TSV-hillegaar-venhuizen": {
@@ -2145,6 +3101,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Blauwhoed",
+    "bron": "https://www.nieuwbouw-venhuizen.nl",
+    "zin": "l protected] Helemaal thuis, helemaal Hillegaar Volg ons op: Privacy Statement Disclaimer Blauwhoed FAQ Dit project is een ontwikkeling van: Dé ideale plek om te wonen In het dorpshart van Venhuizen o"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/krimpenerwaard/01JKR5482R3ET92KSQ3GD3ZBY2-wonen-aan-de-spoorsingel-fase-2": {
@@ -2171,6 +3135,17 @@
     "zin": "g Q4 2024 FASE 1 - Start bouw (prognose) Q1 2025 FASE 2 - Start presale en verkoop Q1 2025 FASE 1 - Oplevering Q4 2025 FASE 2 - start bouw Januari 2026 FASE 2 - Oplevering (prognose incl. woonrijp maken) Q2 2027 Afrondin"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://wonenaandespoorsingel.nl/aanbod/halte/",
+    "zin": "ichte living op de verdieping 3 slaapkamers en een grote zolder Compleet met mooi sanitair 2 aparte toiletten Vloerverwarming en koeling in alle verblijfsruimten 2 privé-parkeerplaatsen Inpandige berging vanuit buiten bereikbaar Energi"
+   },
+   "zonnepanelen": {
+    "bron": "https://wonenaandespoorsingel.nl/aanbod/conducteur/",
+    "zin": "arming en koeling in alle verblijfsruimten Openbaar parkeren Berging in de achtertuin Voorzien van minimaal 2 zonnepanelen Energielabel A+++ Begane grond Eerste verdieping Tweede verdieping Derde verdieping Bnr. 22-1 & 24-1 100% ver"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/medemblik/01JMYK2SKX61DAM1BR8M720XKR-beldershoek": {
@@ -2182,6 +3157,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H906KQK346GPP7CR2T37V5CZ-willemspoort-zuid": {
@@ -2197,6 +3174,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://willemspoort.nl",
+    "zin": "bruik, auto’s en fietsen te delen en door het groen te gebruiken voor rust en ontmoeting. Heijmans zorgt voor een stevige basis: duurzame energie opwekken, regenwater vasthouden en infiltreren, natuur"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01JM2C4QTZ26GMRSBQN6TH4GPK-kraanbaan-fase-1b": {
@@ -2215,6 +3200,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/best/01JFCN22AK8SR21B18W0XGW2AH-b-centraal": {
@@ -2225,6 +3212,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/dongen/01JF7AGNXJMG55GGNC3BX085MK-noorderbunder": {
@@ -2232,12 +3221,15 @@
   "gekeken": [
    "https://woneninnoorderbunder.nl",
    "https://woneninnoorderbunder.nl/nieuws/",
+   "https://woneninnoorderbunder.nl/downloads/",
    "https://woneninnoorderbunder.nl/account/mijn-documenten/",
    "https://woneninnoorderbunder.nl/nieuws/12969/informatiebijeenkomst-2-juli/",
-   "https://woneninnoorderbunder.nl/nieuws/12832/start-verkoop/",
-   "https://woneninnoorderbunder.nl/nieuws/12504/pre-sale-heem-start-6-mei/"
+   "https://woneninnoorderbunder.nl/nieuws/12832/start-verkoop/"
   ],
-  "documenten": {},
+  "documenten": {
+   "technische omschrijving": "https://woneninnoorderbunder.nl/downloads/",
+   "verkoopbrochure": "https://woneninnoorderbunder.nl/downloads/"
+  },
   "momenten": {
    "start verkoop": {
     "wanneer": "juni 2026",
@@ -2246,6 +3238,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/halderberge/01J194M8Z1EC1GKGK4BHZ56TEF-sint-anna-oudenbosch": {
@@ -2267,6 +3261,14 @@
     "wanneer": "Q2 2026",
     "bron": "https://sintanna-oudenbosch.nl",
     "zin": "lige muziekschool - 2 nieuwbouw levensloopbestendige woningen Ontdek het project Bouw in volle gang Oplevering vanaf Q2 2026! De bouw van Sint-Anna is in volle gang. Er zijn nog een aantal hele fraaie kloosterwoningen en"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://sintanna-oudenbosch.nl",
+    "zin": "ect Situatie Financieel Downloads Versturen Sint-Anna Oudenbosch Waar klassiek en modern samensmelten Bekijk het aanbod Zaterdag 3 oktober 11.00 tot 15.00 uur • NVM Open Huizen Dag Kom binnenkijken bi"
    }
   },
   "_gehaald": "2026-09-21"
@@ -2292,6 +3294,13 @@
     "zin": "rt bouw: voormalig belastingkantoor krijgt nieuw leven Lees verder 1 juni 2026 Feestelijke viering! Start bouw Cornerlofts op 28 mei Lees verder 17 april 2026 Architect aan het woord: Mulderblauw Lees verder 23 juni 2025"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://cornerlofts.nl",
+    "zin": "artement in Corner Lofts Gebruik van de vele faciliteiten en services Centrale postvakken Berging (optioneel) Parkeergarage voor je fiets en auto, voorzien van oplaadpunten Communitiy Schoonmaakservice (optioneel) Supersnelle WiFi Ee"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/groningen/01JDJEHPDNJQHHDW3TAS75KG7Z-evert-wonen": {
@@ -2305,6 +3314,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://evert-wonen.nl",
+    "zin": "Nieuwbouw in Wijert-Zuid, Evert Projectinformatie VanWonen Interesse Inloggen VanWonen Logo Interesse Inloggen X Home Projectinformatie Het project Evert De loc"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nieuwkoop/01JC3ESJT704PNN4WQT89F5GHM-buyteleven": {
@@ -2315,6 +3332,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.buyteleven.nl",
+    "zin": "een avontuurlijk Buytepad. Hier vind je een thuis. Of je nu jong of ouder bent, een stel vormt, single door het leven gaat of een gezin hebt. Want alle eilanden hebben hun eigen sfeer, identiteit én"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01HR761BVFFMH489RFWPK8X2HF-kraanbaan-fase-1": {
@@ -2333,6 +3358,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/west-maas-en-waal/01HW7G5VVE39H50GQ8C1BV0JP5-lauwendael-fase-1": {
@@ -2351,6 +3378,21 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.lauwendael.nl",
+    "zin": "voor Lauwendael, dan kies je voor een duurzame woning die van alle moderne gemakken is voorzien. Denk aan een warmtepomp, vloerverwarming, uitstekende isolatie en zonnepanelen. Hierdoor zijn de woningen energieneutraal! Dit houdt"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.lauwendael.nl",
+    "zin": "ael, dan kies je voor een duurzame woning die van alle moderne gemakken is voorzien. Denk aan een warmtepomp, vloerverwarming, uitstekende isolatie en zonnepanelen. Hierdoor zijn de woningen energieneutraal! Dit houdt in dat ze evenvee"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.lauwendael.nl",
+    "zin": "die van alle moderne gemakken is voorzien. Denk aan een warmtepomp, vloerverwarming, uitstekende isolatie en zonnepanelen. Hierdoor zijn de woningen energieneutraal! Dit houdt in dat ze evenveel duurzame energie opwekken als nodig"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zaanstad/01J8J5F6KGWZH9DDHQFRYJWW9C-zaam-zaandam": {
@@ -2382,6 +3424,13 @@
     "zin": "ngen op loop en/of ﬁetsafstand bereikbaar Uitstekend bereikbaar per auto Bekijk de locatie Planning Oplevering: Najaar 2026 April 2024 Start bouw November 2024 Start verkoop Najaar 2026 Oplevering April 2024 Start bouw N"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://zaamzaandam.nl",
+    "zin": "rote biodiverse binnentuin Stoere industriële architectuur Duurzaam en efficiënt energieverbruik Ondergrondse parkeerkelder Vijf verschillende gebouwen 89 APPARTEMENTEN 40 t/m 72 m² 2 en 3 kamerwoningen met eigen buitenruimtes. Gelij"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01JDW68FM3GJ54JS8EQAPHCMAT-edisonpark": {
@@ -2392,6 +3441,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Dura Vermeer",
+    "bron": "https://edisonpark-zoetermeer.nl",
+    "zin": "laatste ontwikkelingen. Op de hoogte blijven © 2024 – Edisonpark is een ontwikkeling van Dura Vermeer , AM en Synchroon Privacy Statement | Privacy Policy | Cookies | Website door yoreM Digital in Re"
+   },
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://edisonpark-zoetermeer.nl",
+    "zin": "eveiligingsproblemen en het voldoen aan de regelgeving. Prestatiecookies Deze cookies verzamelen informatie over hoe u de website gebruikt, bijvoorbeeld welke pagina's u het meest bezoekt of als u een"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01J8SY71H3NE6JC1ST6CVSJ5RN-roof-garden": {
@@ -2409,6 +3471,13 @@
     "zin": "inmiddels afgerond. In september 2025 start de bouw van dit duurzame woonproject in Sloterdijk. De oplevering staat gepland voor het tweede kwartaal van 2028. Alle woningen uit de eerste verkoopfase zijn inmiddels verko"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://roofgardenamsterdam.nl/documenten/",
+    "zin": "1 MB Sanitair en tegelwerk brochure pdf - 403 KB Keuken Inspiratiemagazine pdf - 7 MB Verdiepingsoverzicht - Parkeerkelder pdf - 1 MB Informatie over betaalbarekoopwoningen pdf - 1 MB Overzichtstekening binnentuin pdf - 2 MB Tuinlan"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/gemert-bakel/01J8EYA1YR8Z92C69Z596NMFFY-doonheide-ii-fase-4": {
@@ -2435,6 +3504,21 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://doonheide2.nl",
+    "zin": "ers. De vijf huurwoningen zijn allemaal gelegen in deelgebied ‘de Kampen’ en zijn standaard uitgerust met een warmtepomp, zonnepanelen, drie slaapkamers en een zeer riante tuin. De tuinen, variërend met een oppervlakte van 92m 2 t"
+   },
+   "zonnepanelen": {
+    "bron": "https://doonheide2.nl",
+    "zin": "huurwoningen zijn allemaal gelegen in deelgebied ‘de Kampen’ en zijn standaard uitgerust met een warmtepomp, zonnepanelen, drie slaapkamers en een zeer riante tuin. De tuinen, variërend met een oppervlakte van 92m 2 tot 157m 2 , zi"
+   },
+   "vloerverwarming": {
+    "bron": "https://doonheide2.nl/verkoop-fase-x-gestart/",
+    "zin": "teraard zijn alle woningen gasloos, bovendien zijn ze energiezuinig dankzij de aanwezigheid van zonnepanelen, vloerverwarming en een lucht/water-warmtepomp. Comfort gaat zo in De Erven hand in hand met duurzaamheid. Alle informatie is"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/haarlem/01HWDD0B6J6R0Q50Z2PH3WJE6Q-plaza-residences-haarlem": {
@@ -2448,6 +3532,13 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://plazaresidences.nl",
+    "zin": "en eigen terras of balkon een privé-parkeerplaats onder het woongebouw een ruime berging onder het woongebouw vloerverwarming en vloerkoeling Het gebouw heeft twee liften en een gemeenschappelijke fietsenberging in de garage Bekijk de"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/westerkwartier/01J84SVYVVRYDGSK8FA420FR7Y-de-oostergast": {
@@ -2464,6 +3555,8 @@
     "zin": "kavel overzicht voor meer informatie. Afgerond: Verloting kavels Fase 2DA-Noord - 26 September 2024 Opleveringsdatum In De Oostergast is ruimte voor de bouw van circa vijftig nieuwe woningen waaronder 11 bouwkavels voor"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/wierden/01HSDF0EXBTNQK913S458RWPQX-de-berghorst-fase-1": {
@@ -2484,6 +3577,19 @@
     "wanneer": "2028",
     "bron": "https://wonenopdeberghorst.nl",
     "zin": "verkoopstukken zijn beschikbaar en je kunt je inschrijven voor jouw favoriete woning. Maart 2028 | Start Bouw Na de verkoop en afronding van alle voorbereidingen start de bouw van het project. Een mijlpaal waar we samen"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Roosdom Tijhuis",
+    "bron": "https://wonenopdeberghorst.nl",
+    "zin": "de voorbereidingen en ontwikkelingen in volle gang en pakken we samen op met de gemeente, Roosdom Tijhuis en Reggehave. Fase 3 biedt een uitgebreid aanbod van circa 135 woningen: met sociale huurwonin"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://wonenopdeberghorst.nl",
+    "zin": "als eerst. Meld je aan! © 2026 Wonen op de Berghorst Ontwerp & realisatie: Bloemendaal in Vorm Disclaimer | Privacy verklaring"
    }
   },
   "_gehaald": "2026-09-21"
@@ -2507,6 +3613,23 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.woneninmaoleveld.nl",
+    "zin": "mst. Vandaar dat alle huizen in ’t Mäöleveld gasloos zijn en zijn uitgerust met zonnepanelen, een lucht-water warmtepomp, goede isolatie en een gebalanceerd ventilatiesysteem met warmteterugwinning. Dat is namelijk beter voor het"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.woneninmaoleveld.nl",
+    "zin": "ningen voor een duurzame toekomst. Vandaar dat alle huizen in ’t Mäöleveld gasloos zijn en zijn uitgerust met zonnepanelen, een lucht-water warmtepomp, goede isolatie en een gebalanceerd ventilatiesysteem met warmteterugwinning. Dat"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Van Wijnen",
+    "bron": "https://www.woneninmaoleveld.nl",
+    "zin": "nu Project en planning Omgeving Nieuws Info Veelgestelde vragen Duurzaamheid Financiering Van Wijnen en Fijn wonen Account Account Je bent nog niet ingelogd, log nu in of maak een account aan. Inlogge"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/tilburg/01HJ8GXFSRDB5Z0YNPN2J1F8ZF-clarissenhof": {
@@ -2517,6 +3640,13 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://clarissenhof.com",
+    "zin": "binnendoor, via de reguliere entree van het gebouw. Tegen de noordzijde van het gebouw wordt een bovengrondse parkeergarage gebouwd, met ruimte voor circa 375 parkeerplaatsen. Schrijf je alvast in! Clarissenhof is een ontwikkeling va"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01HEARK3P45WRVF9DAWTQKD13P-kop-west": {
@@ -2537,6 +3667,17 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://www.spuiboulevard-dordrecht.nl",
+    "zin": "el 148 m2 Royale terrassen van 15 m2 tot 76 m2 op het zuiden Luxe keuken met inbouwapparatuur Modern sanitair Vloerverwarming Inpandige bergruimte en een separate berging Keuze uit 23 verschillende woningtypen Parkeren in eigen parkeer"
+   },
+   "parkeerkelder": {
+    "bron": "https://www.spuiboulevard-dordrecht.nl",
+    "zin": "warming Inpandige bergruimte en een separate berging Keuze uit 23 verschillende woningtypen Parkeren in eigen parkeergarage Duurzaam en onderhoudsarm Toplocatie in het centrum nabij alle voorzieningen Koopsommen van € 390.000,-- tot"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rotterdam/01H963AVMW1M8SXF12YZX22PYT-populus": {
@@ -2547,6 +3688,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://populus-rotterdam.nl",
+    "zin": "Home - Populus Rotterdam Home Het plan De locatie Aanmelden Blijf op de hoogte Populus De groene en sociale katalysator van Ommoord."
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/s-gravenhage/01HJ6FZ8M6QXWASQE84M5PNQ73-maestro": {
@@ -2557,6 +3706,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/heemskerk/01HC9VFT77EKM12TPNSDAP5Z7B-de-heerlijkheid-curtis": {
@@ -2567,6 +3718,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Trebbe",
+    "bron": "https://www.deheerlijkheidcurtis.nl",
+    "zin": "irecte woonomgeving. Tenderteam De Heerlijkheid Curtis is een ontwikkeling van Timpaan en Trebbe en het resultaat van een intensieve samenwerking met ontwerpers De Urbanisten (stedenbouw & landschap),"
+   },
+   "ontwikkelaar": {
+    "naam": "Timpaan",
+    "bron": "https://www.deheerlijkheidcurtis.nl",
+    "zin": "un in hun directe woonomgeving. Tenderteam De Heerlijkheid Curtis is een ontwikkeling van Timpaan en Trebbe en het resultaat van een intensieve samenwerking met ontwerpers De Urbanisten (stedenbouw &"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/molenlanden/01HDRVQVP34SP5C99E3C6Q0NGZ-de-overtuin": {
@@ -2597,6 +3761,32 @@
     "zin": "ft getoond. Lees verder De eerste bouwupdate van Spiegelhof 16 juli ' 26 Nadat we op 28 mei 2026 de start van de bouw van Spiegelhof op feestelijke wijze hebben ingeluid, is het nu tijd voor de eerste bouwupdate. Wat is er in d"
    }
   },
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.nieuwbouw-dewaalhoven.nl/algemeen/over-bpd",
+    "zin": "t om het verwarmen van je woning en het opwekken van elektriciteit. Zoals zonnepanelen, vloerverwarming, luchtwarmtepompen, HR++ glas en isolatie van muren, gevels en daken. Je bent dus niet alleen voorbereid op de toekomst zonder"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.nieuwbouw-dewaalhoven.nl/algemeen/over-bpd",
+    "zin": "stallaties als het gaat om het verwarmen van je woning en het opwekken van elektriciteit. Zoals zonnepanelen, vloerverwarming, luchtwarmtepompen, HR++ glas en isolatie van muren, gevels en daken. Je bent dus niet alleen voorbereid op d"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.nieuwbouw-dewaalhoven.nl/algemeen/over-bpd",
+    "zin": "de nieuwste installaties als het gaat om het verwarmen van je woning en het opwekken van elektriciteit. Zoals zonnepanelen, vloerverwarming, luchtwarmtepompen, HR++ glas en isolatie van muren, gevels en daken. Je bent dus niet allee"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://www.nieuwbouw-dewaalhoven.nl",
+    "zin": "bereikbaar via chat en telefoon Laat een bericht achter Veelgestelde vragen Cookies Over VanWonen Over BPD Disclaimer Privacy statement Klachten Internet Explorer Je bezoekt de content vanuit Interne"
+   },
+   "ontwikkelaar": {
+    "naam": "BPD",
+    "bron": "https://www.nieuwbouw-dewaalhoven.nl",
+    "zin": "a chat en telefoon Laat een bericht achter Veelgestelde vragen Cookies Over VanWonen Over BPD Disclaimer Privacy statement Klachten Internet Explorer Je bezoekt de content vanuit Internet Explorer. Al"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/putten/01HDZTD2Q0XCJXSVFWPMCH92TG-de-bosrande": {
@@ -2615,6 +3805,19 @@
     "zin": "en […] Lees verder VLEERMUIS­TOREN KLAAR VOOR BEWONING Geplaatst op 25 juli 2025 In juni 2025 is de bouw gestart en nu is hij af: de vleermuistoren in het bos bij De Bosrande! De toren is speciaal gebouwd om vleermuizen ee"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Schoonderbeek",
+    "bron": "https://debosrandeputten.nl",
+    "zin": "utten@wilmawonen.nl www.wilmawonen.nl LATEI Stadsring 139 3817 BA Amersfoort www.latei.nl Schoonderbeek BV Computerweg 16 3821 AB Amersfoort www.schoonderbeekbouw.nl Gemeente Gemeente Putten Fontanusp"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://debosrandeputten.nl/category/nieuws/",
+    "zin": "de hoogte gehouden worden? Meld je dan aan voor de nieuwsbrief. DE BOSRANDE KRIJGT VERDER VORM: INTENTIEOVER­EENKOMST GETEKEND Geplaatst op 5 juni 2026 De gemeente Putten en Bosrande Putten B.V. zijn"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01H963ARJBZMZX9TW974D72EP2-fortunapark-vlaardingen": {
@@ -2629,6 +3832,13 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://www.fortunapark-vlaardingen.nl",
+    "zin": "ingen en 96 appartementen Woonoppervlakte Van ca. 117m 2 tot 175m 2 Energiezuinig Gasloos, energielabel A+++, zonnepanelen en meer! Woningen waar je blij van wordt Fortunapark biedt ruimte aan bijna 250 eengezinswoningen en appartem"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amersfoort/01H98DQE1284YY1G5KSW486W4D-podium": {
@@ -2664,6 +3874,27 @@
     "zin": "eer worden aangepast. Vraag de makelaar om meer informatie. BEKIJK WONINGTYPE → SPOORWONING 3-LAAGS OPLEVERING APRIL 2026 Vanaf € 696.500,- v.o.n. Incl. reeds gekozen opties Woonoppervlakte van 160 m² 3 woonlagen 5,4 m b"
    }
   },
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://woneninpodium.nl/woningtypes/",
+    "zin": "gezamenlijke stallingsgarage Tuin op het Noordoosten Ruime inpandige berging Totaalprijs v.o.n. is inclusief warmtepomp In de v.o.n.-prijs zijn opties opgenomen die vermeld staan op de prijslijst. Van deze opties kan niet meer wo"
+   },
+   "zonnepanelen": {
+    "bron": "https://woneninpodium.nl/woningtypes/",
+    "zin": "tegelwerk Exclusief keuken Warmtepomp is in de V.O.N. inbegrepen en is eigendom van de koper Inclusief ca. 10 zonnepanelen Aparte berging in de privéachtertuin met groen sedumdak BEKIJK WONINGTYPE → TUINWONING 4-laagse woning UITVER"
+   },
+   "wko": {
+    "bron": "https://woneninpodium.nl/woningtypes/spoorwoningen/",
+    "zin": "n en materialen - Spoorwoningen Fase 2 Technische Omschrijving - Spoorwoningen Fase 2 Technische omschrijving WKO - Spoorwoningen Fase 2 Kopershandleiding - Spoorwoningen Fase 2 Situatietekening met tuin - Fase 2 Situatiete"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://woneninpodium.nl",
+    "zin": "n Podium? Meld je hier aan voor de nieuwsbrief. BLIJF OP DE HOOGTE → Een ontwikkeling van Heijmans Vastgoed Databankweg 28B, 3821 AL Amersfoort, tel 033 – 450 2400 Alles weten over nieuwbouw? Kijk op"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amstelveen/01H963AFT8TAR36TVM6E156Y24-hollandse-meesters": {
@@ -2684,6 +3915,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://hollandsemeestersamstelveen.nl/nl/aanbod/",
+    "zin": "6e verdieping. De meeste appartementen hebben daarnaast ook een eigen buitenruimte in de vorm van een balkon of dakterras. Zoek je een plek voor je eigen auto of motor? Die parkeer je in de ondergele"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AH9GV6ENFN790269R4FB-le-jardin-hoofddorp": {
@@ -2705,6 +3944,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Timpaan",
+    "bron": "https://www.lejardin-hoofddorp.nl",
+    "zin": "aar keer per jaar informeren we je over de laatste ontwikkelingen. Aanmelden Ontwikkelaar Timpaan Postbus 3097 2130 KB, Hoofddorp verkoop@timpaan.nl Verkoopinformatie Mooijekind Vleut Makelaars nieuwb"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/hengelo-o/01HE50XD3A91WN5DBXZNKD9ZSP-lange-wemen": {
@@ -2723,6 +3970,19 @@
     "wanneer": "eind 2027",
     "bron": "https://www.langewemen.nl/projectinformatie/planning-en-fasering/",
     "zin": "en planning. Na het Masterplan volgt de ruimtelijke procedure (beter bekend als het omgevingsplan). Start bouw vervolgfase eind 2027. Martijn van Essen Jouw verkoopmanager VanWonen Mail mij martijnvanessen@vanwonen.com I"
+   }
+  },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.langewemen.nl/projectinformatie/het-project-lange-wemen/",
+    "zin": "nten. De komende jaren komen er in Lange Wemen winkels, ruim 300 appartementen en stadswoningen, een openbare parkeergarage en een openbare fietsenstalling bij. De Drienerbeek loopt straks weer bovengronds door het hart van Lange Wem"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://www.langewemen.nl",
+    "zin": "Nieuwbouw in Hengelo, Lange Wemen Projectinformatie VanWonen Interesse Inloggen VanWonen Logo Interesse Inloggen X Home Projectinformatie Het project Lange Wemen"
    }
   },
   "_gehaald": "2026-09-21"
@@ -2753,6 +4013,14 @@
     "zin": "rt verkoop Waterroos Kwart 12 februari 2025 03-02-2025 Lees meer Timpaan, Intermaris en Kuin vieren start bouw 62 sociale huurappartementen in Rozenbuurt Zwaag 16-01-2025 Lees meer Rozenbuurt groeit tot een aantrekkelijk"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Timpaan",
+    "bron": "https://www.wonen-zwaag.nl/nieuws/",
+    "zin": "05-02-2025 Lees meer Start verkoop Waterroos Kwart 12 februari 2025 03-02-2025 Lees meer Timpaan, Intermaris en Kuin vieren start bouw 62 sociale huurappartementen in Rozenbuurt Zwaag 16-01-2025 Lees"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nijmegen/01HE51SEM1X22QW5M2EJEJE43R-wonen-in-duet": {
@@ -2772,6 +4040,19 @@
     "zin": "gevingsvergunning Na bouwvak 2026 Start bouw Prognose begin 2027 Verkoop Gefaseerd vanaf medio 2029 Oplevering en wonen Gefaseerd vanaf begin 2030 Jasja Scholtens Jouw omgevingsmanager Duet +316 250 851 24 Mail mij jasja"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.woneninduet.nl/projectinformatie/het-project/",
+    "zin": "et dakpark wordt Duet een pareltje in het Nijmeegse natuurnetwerk. Het gebouw wordt voorzien van een openbare parkeergarage met een groen biodivers dakpark. De parkeergarage heeft een bijzondere gevel, namelijk een stadsmuur. Het geh"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "VanWonen",
+    "bron": "https://www.woneninduet.nl",
+    "zin": "toren met 430 huur- en koopappartementen in Nijmegen Projectinformatie Interesse Inloggen VanWonen Logo Interesse Inloggen X Home Projectinformatie Het project Duet De locatie Nijmegen Planning en fas"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/woerden/01H963AEWB8184E7SZ6GFQV3FX-hanick": {
@@ -2785,6 +4066,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://www.hanick.nl",
+    "zin": "deale combinatie tussen rust en reuring. Ja, houd mij op de hoogte Eerst meer lezen Duurzaam wonen De woningen in Hanick gaan verder dan de strengste duurzaamheidsnormen. Dat betekent geen of lage ene"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zaanstad/01H963AFWG3VTM4F77GYHMYZGF-eilanden-van-hain": {
@@ -2803,6 +4092,32 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.eilandenvanhain.nl/nl/nieuws/",
+    "zin": "de toekomst. De woningen op de eilanden worden uitgerust met de nieuwste technologieën, zoals zonnepanelen en warmtepompen, en zijn volledig gasloos. Wat maakt een nieuwbouwwoning zo duurzaam en welke opties heb je om je woning nó"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.eilandenvanhain.nl/nl/nieuws/",
+    "zin": "imme keuze voor de toekomst. De woningen op de eilanden worden uitgerust met de nieuwste technologieën, zoals zonnepanelen en warmtepompen, en zijn volledig gasloos. Wat maakt een nieuwbouwwoning zo duurzaam en welke opties heb je o"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.eilandenvanhain.nl/nl/aanbod/eilanden-van-hain/2428/domus-maxima-type-11/34997/",
+    "zin": "ouet uit de Zaanse bouwtraditie, met houten gevelbekleding op metselwerk. De villa heeft geen gasaansluiting: vloerverwarming op een lucht/water-warmtepomp, met zonnepanelen op het dak. Twee parkeerplaatsen liggen op eigen terrein, en"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://www.eilandenvanhain.nl",
+    "zin": "Interesse Interesse Eilanden van Hain Wonen op een plek waar comfort, kwaliteit en duurzaamheid samenkomen met de natuur om je heen. Hiervoor verhuis je nog één keer: een echte buitenkans. Bekijk het"
+   },
+   "bouwer": {
+    "naam": "BAM",
+    "bron": "https://www.eilandenvanhain.nl/nl/nieuws/",
+    "zin": "Een van de mensen die daar een belangrijke rol in speelt is Theo Mol, projectmanager bij BAM Wonen. 23 juli 2026 Lees meer Nieuws Zomerse vooruitblik: de start verkoop van Eiland Fortezza komt dichte"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zaanstad/01H963AME4K7KNP3MYTCRG8CFK-wonen-in-hilko-zaandam": {
@@ -2820,6 +4135,14 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://woneninhilko.nl",
+    "zin": "ieuwend Hilko staat voor robuuste, industriële uitstraling gecombineerd met moderne, duurzame elementen. Ontdekken! Een nieuwe buurt, vol verrassingen, innovatieve architectuur en unieke woonconcepten"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01H963AK2N7RQE20DX6WJK6JYB-mica-mijdrecht": {
@@ -2831,6 +4154,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AF7K9TZQFAA7QQN93PQC-quatrebras-badhoevedorp": {
@@ -2858,6 +4183,14 @@
     "wanneer": "april 2026",
     "bron": "https://www.quatrebrasbadhoevedorp.nl/nl/nieuws/",
     "zin": "eld je dan hier vrijblijvend aan als geïnteresseerde in dit project. Nieuws Alle Nieuws Feestelijke start bouw Quatrebras Centrum Het Lint 14 april 2026 Lees meer Nieuws WoonwinQel nu ook het HoofdQwartier van de wijkage"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://www.quatrebrasbadhoevedorp.nl",
+    "zin": "wonen is nu heel dichtbij! Plan Quatrebras Badhoevedorp Park Centrum Dorp Groen en duurzaam Locatie Nieuws Aanbod Service Financiering Verkoopproces Kopersopties Duurzaamheid Veelgestelde vragen Voor"
    }
   },
   "_gehaald": "2026-09-21"
@@ -2894,6 +4227,31 @@
     "zin": "6 om 23:59 uur Toebedeling woningen september 2026 Start bouw De woningen worden gebouwd, Q2 - 2027 Oplevering Verwachte oplevering Q1-2028 Ontwikkelaar trebbe.nl Ontwikkelaar lunee.nl Makelaar Richterslaan 66 3431AK Nie"
    }
   },
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "je tegen kou, warmte en geluid. De woningen zijn energiezuinig dankzij gasloos wonen, pv-panelen en een bodemwarmtepomp met vloerverwarming en passieve koeling. Duurzame materialen zoals FSC-gecertificeerd hout en mossedumdaken,"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "warmte en geluid. De woningen zijn energiezuinig dankzij gasloos wonen, pv-panelen en een bodemwarmtepomp met vloerverwarming en passieve koeling. Duurzame materialen zoals FSC-gecertificeerd hout en mossedumdaken, samen met inheemse b"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "triple glas beschermen je tegen kou, warmte en geluid. De woningen zijn energiezuinig dankzij gasloos wonen, pv-panelen en een bodemwarmtepomp met vloerverwarming en passieve koeling. Duurzame materialen zoals FSC-gecertificeerd"
+   },
+   "showroom": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "n badkamer tot het tuinklaar maken van je huis, met de wooncoach doorloop je het proces stap voor stap. In de showroom van 3000m² van LIV ontdek je vier inspiratiewoningen op ware grootte, wat je een realistisch beeld geeft van"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Trebbe",
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "te zijn over de woningen in de laatste fase? Meld je aan voor de nieuwsbrief Ontwikkelaar trebbe.nl Ontwikkelaar lunee.nl Makelaar Richterslaan 66 3431AK Nieuwegein nieuwegein@dekeizer.nl 030 603 13 0"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01KA10C7YN4J9T3MZ2G3H5HPPC-buitenveen-aalsmeer-fase-2": {
@@ -2925,6 +4283,19 @@
     "zin": "-Holten en Roosdom Tijhuis geven officieel startsein voor nieuwbouwplan De Bergwachter 29 juni 2026 Start bouw Buitenveen Aalsmeer: aftrap van een nieuwe woonwijk 26 juni 2026 Gemeente en Roosdom Tijhuis werken samen aan"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Roosdom Tijhuis",
+    "bron": "https://roosdomtijhuis.nl",
+    "zin": "Home | Roosdom Tijhuis --> Toggle menu Aanbod Zakelijk Vakmanschap Contact Werken bij Home Over ons Actueel Referenti"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://roosdomtijhuis.nl/over-ons/duurzaamheid",
+    "zin": "energieverbruik wordt beperkt door verlies tegen te gaan, bijvoorbeeld door een compacte vorm of door isolatie van de woning of het gebouw. Door de schil optimaal te isoleren, kan de energiebehoefte"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/de-ronde-venen/01KGKVG5Q8F0N20H42QBSW0MRX-oosterlicht-fase-1": {
@@ -2940,6 +4311,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/vlaardingen/01KFJMXGSAS54V963S8KPHX10J-zwanenpark-fase-2": {
@@ -2957,6 +4330,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/bergen-op-zoom/01K5DXCT386QTF72ZXJQ8QZBQP-walzicht": {
@@ -2992,6 +4367,19 @@
     "zin": "ichten 13-04-2026 100% VERKOCHT 16-03-2026 Laatste woning fase 2 02-02-2026 70% verkocht 22-01-2026 Bouw gestart fase 1 05-12-2025 Bericht van Sint 21-08-2025 Inloopuurtje | iedere donderdag 08-07-2025 Fase 1 uitverkocht 2"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://nieuwbouw-walzicht.nl/nl/nieuwsbericht/laatste-woning-fase-2",
+    "zin": "laar. Kenmerken Woonoppervlakte 118 m2 Woningbreedte 5,4 meter Begane grond en eerste verdieping voorzien van vloerverwarming Standaard 3 slaapkamers Tuin op het noorden Keuken gelegen aan de voorzijde van de woning De woningen van het"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Van Wijnen",
+    "bron": "https://nieuwbouw-walzicht.nl",
+    "zin": "ij info@helmigmakelaardij.nl 0164 685 925 Walzicht is een ontwikkeling van van Agtmaal en Van Wijnen Het laatste nieuws 100% VERKOCHT 13-04-2026 Laatste woning fase 2 16-03-2026 70% verkocht 02-02-202"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01JN6FDQ2Q9FB45CXJCHNWH7EV-de-nieuwe-boterpolder": {
@@ -3015,6 +4403,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Van Wijnen",
+    "bron": "https://nieuweboterpolder.nl",
+    "zin": "verkoop en overige ontwikkelingen. Wonen in de nieuwe Boterpolder is een ontwikkeling van Van Wijnen: --> --> Vragen? Neem contact op met Koppes Makelaardij. info@koppesmakelaardij.nl 0172 434 561 Jul"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/utrecht/01J2EBQ906FBRGAECS4TA4W4DA-circulus": {
@@ -3032,6 +4428,21 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "stadsverwarming": {
+    "bron": "https://wonenincirculus.nl",
+    "zin": "toe en natuurdaken zorgen voor koeling en een fijn binnenklimaat. De woningen worden aangesloten op het stadswarmtenet. Groene binnenwereld Circulus is een gezonde leefomgeving voor mens, plant en dier. In de binnentuin creëren"
+   },
+   "zonnepanelen": {
+    "bron": "https://wonenincirculus.nl",
+    "zin": "ncept We maken Circulus zo energiezuinig als mogelijk. We beperken de warmtevraag door goede isolatie, passen zonnepanelen toe en natuurdaken zorgen voor koeling en een fijn binnenklimaat. De woningen worden aangesloten op het stads"
+   },
+   "kopersbegeleider": {
+    "bron": "https://wonenincirculus.nl/informatie/verkoopproces/",
+    "zin": "aannemingsovereenkomst, start de aannemer met de begeleiding ten aanzien van de meer- en minderwerkopties. De kopersbegeleider van de aannemer begeleidt jou verder bij de voor jouw woning beschikbare meerwerkopties en overige meerwerk"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/aalsmeer/01JQ6MG5YZJ7B58MRRTXVBPZ8X-buitenveen-aalsmeer-fase-1": {
@@ -3061,6 +4472,19 @@
     "wanneer": "juni 2026",
     "bron": "https://roosdomtijhuis.nl",
     "zin": "-Holten en Roosdom Tijhuis geven officieel startsein voor nieuwbouwplan De Bergwachter 29 juni 2026 Start bouw Buitenveen Aalsmeer: aftrap van een nieuwe woonwijk 26 juni 2026 Gemeente en Roosdom Tijhuis werken samen aan"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Roosdom Tijhuis",
+    "bron": "https://roosdomtijhuis.nl",
+    "zin": "Home | Roosdom Tijhuis --> Toggle menu Aanbod Zakelijk Vakmanschap Contact Werken bij Home Over ons Actueel Referenti"
+   },
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://roosdomtijhuis.nl/over-ons/duurzaamheid",
+    "zin": "energieverbruik wordt beperkt door verlies tegen te gaan, bijvoorbeeld door een compacte vorm of door isolatie van de woning of het gebouw. Door de schil optimaal te isoleren, kan de energiebehoefte"
    }
   },
   "_gehaald": "2026-09-21"
@@ -3097,6 +4521,17 @@
     "zin": "26 Verwachte start bouw fase 2 Dit is een prognose en kan later nog wijzigen. Najaar 2026 Verwachte oplevering grondgebonden woningen fase 1 Dit is een prognose en kan later nog wijzigen. Voorjaar 2027 Verwachte opleveri"
    }
   },
+  "kenmerken": {
+   "stadsverwarming": {
+    "bron": "https://www.bostuinen-zwijndrecht.nl/woningtypen/3-laags-woningen-met-kapdak-108-m2/",
+    "zin": "parkeergelegenheid in een groen hofje achter de woning Berging in de tuin Energiezuinig door het gebruik van stadsverwarming, uitstekende isolatie en vloerverwarming Energielabel A+++. Bouwnummer 64 t/m 75 aan hofje Duurzaam en comfor"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.bostuinen-zwijndrecht.nl/woningtypen/3-laags-woningen-met-kapdak-108-m2/",
+    "zin": "hter de woning Berging in de tuin Energiezuinig door het gebruik van stadsverwarming, uitstekende isolatie en vloerverwarming Energielabel A+++. Bouwnummer 64 t/m 75 aan hofje Duurzaam en comfortabel wonen Alle woningen in de Bostuinen"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/ede/01H963APBDF02GW6CB9T8ECZY4-enka-t-hartogshof": {
@@ -3107,6 +4542,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://enka-ede.nl",
+    "zin": "d. Enka Ede is 100% verkocht! We spelen de laatste noten van 't slotakkoord In 2007 heeft AM het Enka terrein gekocht voor de woning bouw met het doel dit karaktervolle (fabrieks)terrein te transforme"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H963AQXG8E2PEC5KWJ87KNCJ-bajeskwartier-the-martin": {
@@ -3124,6 +4567,14 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://www.bajeskwartier.com",
+    "zin": "Bajeskwartier Amsterdam - Stadsleven opnieuw uitgevonden - Bajeskwartier Home Wonen Ondernemen Locatie Actueel Home Actueel"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/nieuwegein/01JKQSZ5Y7FNNGDGE2CZ9AZ83E-hoeverijk-nieuwegein-fase-2": {
@@ -3158,6 +4609,31 @@
     "zin": "6 om 23:59 uur Toebedeling woningen september 2026 Start bouw De woningen worden gebouwd, Q2 - 2027 Oplevering Verwachte oplevering Q1-2028 Ontwikkelaar trebbe.nl Ontwikkelaar lunee.nl Makelaar Richterslaan 66 3431AK Nie"
    }
   },
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "je tegen kou, warmte en geluid. De woningen zijn energiezuinig dankzij gasloos wonen, pv-panelen en een bodemwarmtepomp met vloerverwarming en passieve koeling. Duurzame materialen zoals FSC-gecertificeerd hout en mossedumdaken,"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "warmte en geluid. De woningen zijn energiezuinig dankzij gasloos wonen, pv-panelen en een bodemwarmtepomp met vloerverwarming en passieve koeling. Duurzame materialen zoals FSC-gecertificeerd hout en mossedumdaken, samen met inheemse b"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "triple glas beschermen je tegen kou, warmte en geluid. De woningen zijn energiezuinig dankzij gasloos wonen, pv-panelen en een bodemwarmtepomp met vloerverwarming en passieve koeling. Duurzame materialen zoals FSC-gecertificeerd"
+   },
+   "showroom": {
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "n badkamer tot het tuinklaar maken van je huis, met de wooncoach doorloop je het proces stap voor stap. In de showroom van 3000m² van LIV ontdek je vier inspiratiewoningen op ware grootte, wat je een realistisch beeld geeft van"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Trebbe",
+    "bron": "https://www.hoeverijk-nieuwegein.nl",
+    "zin": "te zijn over de woningen in de laatste fase? Meld je aan voor de nieuwsbrief Ontwikkelaar trebbe.nl Ontwikkelaar lunee.nl Makelaar Richterslaan 66 3431AK Nieuwegein nieuwegein@dekeizer.nl 030 603 13 0"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/noordwijk/01J8J65D6M75YN0E7E1Q9WAA8C-buitenrijk-deelgebied-2-fase-1": {
@@ -3171,6 +4647,13 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://buitenrijk-noordwijk.nl",
+    "zin": "erd, zijn de ramen voorzien van triple glas (HR+++), en zijn alle woningen uitgerust met een individuele bodemwarmtepomp voor verwarming en verkoeling van de woning. Architecten over het ontwerp Oscar de Blanken en Robert Dessing,"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01J9C1KVQS32C0JW3D61F61BYM-tuinenrijk-veld-1": {
@@ -3187,6 +4670,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://wonenintuinenrijk.nl",
+    "zin": "uinenrijk is uitverkocht! Alle 130 woningen in de 4 velden zijn inmiddels verkocht. Duurzaam In Tuinenrijk ervaar je bij alles energie. De energie van een nieuw en toekomstgericht woongebied, de energ"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/haarlemmermeer/01H963AQ8S1KKDKWN51KK7DKBY-quatrebras-park-quartier-iii-fase-2": {
@@ -3214,6 +4705,14 @@
     "wanneer": "april 2026",
     "bron": "https://www.quatrebrasbadhoevedorp.nl/nl/nieuws/",
     "zin": "eld je dan hier vrijblijvend aan als geïnteresseerde in dit project. Nieuws Alle Nieuws Feestelijke start bouw Quatrebras Centrum Het Lint 14 april 2026 Lees meer Nieuws WoonwinQel nu ook het HoofdQwartier van de wijkage"
+   }
+  },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://www.quatrebrasbadhoevedorp.nl",
+    "zin": "wonen is nu heel dichtbij! Plan Quatrebras Badhoevedorp Park Centrum Dorp Groen en duurzaam Locatie Nieuws Aanbod Service Financiering Verkoopproces Kopersopties Duurzaamheid Veelgestelde vragen Voor"
    }
   },
   "_gehaald": "2026-09-21"
@@ -3250,6 +4749,17 @@
     "zin": "26 Verwachte start bouw fase 2 Dit is een prognose en kan later nog wijzigen. Najaar 2026 Verwachte oplevering grondgebonden woningen fase 1 Dit is een prognose en kan later nog wijzigen. Voorjaar 2027 Verwachte opleveri"
    }
   },
+  "kenmerken": {
+   "stadsverwarming": {
+    "bron": "https://www.bostuinen-zwijndrecht.nl/woningtypen/3-laags-woningen-met-kapdak-108-m2/",
+    "zin": "parkeergelegenheid in een groen hofje achter de woning Berging in de tuin Energiezuinig door het gebruik van stadsverwarming, uitstekende isolatie en vloerverwarming Energielabel A+++. Bouwnummer 64 t/m 75 aan hofje Duurzaam en comfor"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.bostuinen-zwijndrecht.nl/woningtypen/3-laags-woningen-met-kapdak-108-m2/",
+    "zin": "hter de woning Berging in de tuin Energiezuinig door het gebruik van stadsverwarming, uitstekende isolatie en vloerverwarming Energielabel A+++. Bouwnummer 64 t/m 75 aan hofje Duurzaam en comfortabel wonen Alle woningen in de Bostuinen"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01JCG3XDZRDRDBVGKTX6M1Z3QD-up-north": {
@@ -3261,6 +4771,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rotterdam/01JC0KT64VFMX12YF3VBXGYKWS-het-zuider-carre": {
@@ -3276,6 +4788,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01H9Q9M0JNA8BZWMXF9QYMQ18S-bentwijck-fase-2b": {
@@ -3287,6 +4801,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://bentwijck.nl",
+    "zin": "Bentwoud letterlijk om de hoek. Energieneutraal Alle woningen zijn all-electric en energiezuinig gebouwd, met zonnepanelen en een hoog energielabel. Comfortabel wonen met lage energiekosten. Centraal gelegen Benthuizen ligt centraal"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Van Wijnen",
+    "bron": "https://bentwijck.nl",
+    "zin": "026 De buurtcommunity is gestart We zijn begonnen met de Bentwijck BuurtApp. Met dank aan Van Wijnen, die de domeinnaam Bentwijck.nl om niet beschikbaar heeft gesteld voor deze buurtcommunity. De comm"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/rotterdam/01HCJ5J6VJGDKJGXGBX2ZA0AKZ-mix-b": {
@@ -3317,6 +4844,13 @@
     "zin": "aar 3 type j appartementen Bekijk appartementen Bekijk situatiekaart Laatste nieuws 29 januari 2025 Start bouw Dunoveste Doorwerth feestelijk ingeluid Op vrijdag 24 januari heeft wethouder Daniëlle van Bentem van de geme"
    }
   },
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.dunoveste.nl",
+    "zin": "sten’ aan de Houtsniplaan in Doorwerth Op een locatie in Doorwerth wordt een gebouw met 75 appartementen, een parkeergarage en een tuin op het dak: project Dunoveste ontwikkeld. De nieuwbouw wordt uitgevoerd door Janssen... Lees verd"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01H963ATSYV60QCMDTMF7V10WA-bentwijck-fase-1": {
@@ -3328,6 +4862,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://bentwijck.nl",
+    "zin": "Bentwoud letterlijk om de hoek. Energieneutraal Alle woningen zijn all-electric en energiezuinig gebouwd, met zonnepanelen en een hoog energielabel. Comfortabel wonen met lage energiekosten. Centraal gelegen Benthuizen ligt centraal"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Van Wijnen",
+    "bron": "https://bentwijck.nl",
+    "zin": "026 De buurtcommunity is gestart We zijn begonnen met de Bentwijck BuurtApp. Met dank aan Van Wijnen, die de domeinnaam Bentwijck.nl om niet beschikbaar heeft gesteld voor deze buurtcommunity. De comm"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/alphen-aan-den-rijn/01H963ATX1KKKZE5TFB5B3ZXAM-bentwijck-fase-2": {
@@ -3339,6 +4886,19 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "zonnepanelen": {
+    "bron": "https://bentwijck.nl",
+    "zin": "Bentwoud letterlijk om de hoek. Energieneutraal Alle woningen zijn all-electric en energiezuinig gebouwd, met zonnepanelen en een hoog energielabel. Comfortabel wonen met lage energiekosten. Centraal gelegen Benthuizen ligt centraal"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Van Wijnen",
+    "bron": "https://bentwijck.nl",
+    "zin": "026 De buurtcommunity is gestart We zijn begonnen met de Bentwijck BuurtApp. Met dank aan Van Wijnen, die de domeinnaam Bentwijck.nl om niet beschikbaar heeft gesteld voor deze buurtcommunity. De comm"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/amsterdam/01H9848CZX80G55CJFV4C5SHTF-elzenhagen-zuidbuurt-parkvillaz-6": {
@@ -3369,6 +4929,14 @@
     "zin": "engezinswoningen in Amsterdam steeds schaarser worden 17 augustus 2026 Lees meer Nieuws Feestelijke start bouw Noordhof 4: een nieuwe woonplek komt tot leven 11 augustus 2026 Lees meer Nieuws Video: maak kennis met de Pa"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://woneninelzenhagen.nl",
+    "zin": "en van nieuwbouw Klimaatadaptatie appartementen Interesse Interesse Welkom in Elzenhagen. Amsterdam Noord op z’n best. Dit is hét moment: er zijn meerdere fases met appartementen en eengezinswoningen"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/capelle-aan-den-ijssel/01H963APYVS6ZVN6FDJKJAM8F6-blinq": {
@@ -3384,6 +4952,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.essenvelt.nl",
+    "zin": "eling. Een nieuwe woonwijk waar woningen, groen en ruimte samen een prettige leefomgeving vormen. Iedere fase voegt nieuwe kwaliteiten toe en maakt de wijk steeds completer. De ruimte om fijn te leven"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01H963ASGDJ8JR79ZEHEF8X41V-tuinenrijk-veld-2": {
@@ -3400,6 +4976,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://www.wonenintuinenrijk.nl",
+    "zin": "uinenrijk is uitverkocht! Alle 130 woningen in de 4 velden zijn inmiddels verkocht. Duurzaam In Tuinenrijk ervaar je bij alles energie. De energie van een nieuw en toekomstgericht woongebied, de energ"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/s-hertogenbosch/01HDRA3KMAQ7T86FVP3CWT0Z0G-tuinenrijk-veld-3a": {
@@ -3416,6 +5000,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "AM",
+    "bron": "https://www.wonenintuinenrijk.nl",
+    "zin": "uinenrijk is uitverkocht! Alle 130 woningen in de 4 velden zijn inmiddels verkocht. Duurzaam In Tuinenrijk ervaar je bij alles energie. De energie van een nieuw en toekomstgericht woongebied, de energ"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zutphen/01HABWZWA7XQHTZG8K66BV95KJ-pracht": {
@@ -3427,6 +5019,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "bouwer": {
+    "naam": "Heijmans",
+    "bron": "https://pracht-noorderhaven.nl",
+    "zin": "Pracht Noorderhaven - Heijmans nieuwbouw Vind jouw droomwoning Nieuwbouwhulp Over Heijmans Nieuwbouw Vind jouw droomwoning Nieuwbouw"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://nieuwbouw.nl/aanbod/koop/zuidplas/01HE2Z6C6Q0DX7MDMQZNMH0S9Q-swanladriehoek": {
@@ -3437,6 +5037,14 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Synchroon",
+    "bron": "https://swanladriehoek.nl",
+    "zin": "oekadres Stadsplateau 14 3521 AZ Utrecht Postadres Postbus 431 3500 AK Utrecht Route naar Synchroon Menu Missie & Visie Projecten Ideeën voor morgen Nieuws Team Geduldig geld | TBI Werken bij Synchroo"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwbouw-kloostergoedtheresia.nl/": {
@@ -3464,6 +5072,27 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/algemeen/over-bpd",
+    "zin": "t om het verwarmen van je woning en het opwekken van elektriciteit. Zoals zonnepanelen, vloerverwarming, luchtwarmtepompen, HR++ glas en isolatie van muren, gevels en daken. Je bent dus niet alleen voorbereid op de toekomst zonder"
+   },
+   "vloerverwarming": {
+    "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/algemeen/over-bpd",
+    "zin": "stallaties als het gaat om het verwarmen van je woning en het opwekken van elektriciteit. Zoals zonnepanelen, vloerverwarming, luchtwarmtepompen, HR++ glas en isolatie van muren, gevels en daken. Je bent dus niet alleen voorbereid op d"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/algemeen/over-bpd",
+    "zin": "de nieuwste installaties als het gaat om het verwarmen van je woning en het opwekken van elektriciteit. Zoals zonnepanelen, vloerverwarming, luchtwarmtepompen, HR++ glas en isolatie van muren, gevels en daken. Je bent dus niet allee"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "BPD",
+    "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl",
+    "zin": "bereikbaar via chat en telefoon Laat een bericht achter Veelgestelde vragen Cookies Over BPD Disclaimer Privacy statement Klachten Internet Explorer Je bezoekt de content vanuit Internet Explorer. Al"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/akersloot/wonen-aan-het-alkmaardermeer/13269": {
@@ -3502,6 +5131,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/amsterdam/elements-part-one-te-koop/13111": {
@@ -3543,6 +5174,8 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/assen/delft77/15863": {
@@ -3560,6 +5193,13 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://delft77.nl",
+    "zin": "t in het groen Het gevarieerde woningaanbod is afgestemd op verschillende woonwensen. Boven de half verdiepte parkeerkelder komen trapsgewijs 33 appartementen. Door veel hout toe te passen vormt het gebouw één geheel met de groene om"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/assendelft/vrije-kavels-kreekrijk/13299": {
@@ -3572,6 +5212,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/baak/de-buitentuin-van-baak/15504": {
@@ -3614,6 +5256,8 @@
     "zin": "2 september 2024 Start verkoop 3 september 2024 Start sloop oktober 2024 Start bouw 19 januari 2026 Oplevering Q2 2027 Een ontwikkeling van: Verkoopinformatie: Een realisatie van: © 2026 Buurtschap RODEO Disclaimer Sitem"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/cuijk/cuijkse-tuinen-wonen-in-het-groen-zuid-fase-5/15773": {
@@ -3763,6 +5407,14 @@
     "zin": "ten, voor iedereen die eigentijds en duurzaam wil wonen. De verkoop start na de zomer. 23 juni 2025 Bouw gestart De bouw van Omega is begonnen. hiermee is de volgende belangrijke stap gezet naar de realistatie van een nieu"
    }
   },
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "Heembouw",
+    "bron": "https://www.omega-leiden.nl",
+    "zin": "realisatie van een nieuwe invulling van de Lammenschansdriehoek. Succes aan de aannemer, Heembouw uit Roelofarendsveen, met bouw van dit mooie plan! WELK APPARTEMENT KIES JIJ? Verkoop is gestart De v"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/leidschendam/landgoed-voorlei/13249": {
@@ -3808,6 +5460,14 @@
    }
   },
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://opderoeibaan.nl/nieuws/mooie-mijlpalen-in-zicht/10453",
+    "zin": "oces betekenen. We kijken ernaar uit om te zien hoe de woningen Op de Roeibaan binnenkort vorm krijgen. Mooie mijlpaal: De omgevingsvergunning is onherroepelijk. Een belangrijke mijlpaal is bereikt me"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/milsbeek/la-brique/13411": {
@@ -3824,6 +5484,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/molenhoek/molenhoek-zuid-dorps-wonen-i/15188": {
@@ -3864,6 +5526,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/numansdorp/de-kreek-van-de-torensteepolder/15861": {
@@ -3878,6 +5542,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/rijswijk/hof-van-rijswijk/10505": {
@@ -3926,6 +5592,8 @@
   "documenten": {},
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/s-gravenhage/parador-scheveningseweg-82/13139": {
@@ -3951,6 +5619,21 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://treilerstaete.nl",
+    "zin": "bei, Treilerstaete biedt de perfecte balans. Elke woning is volledig gasloos en voorzien van een hoogwaardige warmtepompinstallatie die samen met de vloerverwarming zorgt voor een gelijkmatige en efficiënte warmteverdeling. Het da"
+   },
+   "vloerverwarming": {
+    "bron": "https://treilerstaete.nl",
+    "zin": "r ook energiezuinig, met een energie-label A+ voor maximale duurzaamheid. De appartementen zijn uitgerust met vloerverwarming voor een aangename temperatuur in elk seizoen, en HR++ glas voor optimale isolatie en energie-efficiëntie. 20"
+   },
+   "zonnepanelen": {
+    "bron": "https://treilerstaete.nl",
+    "zin": "vloerverwarming zorgt voor een gelijkmatige en efficiënte warmteverdeling. Het dak is uitgerust met krachtige zonnepanelen, waardoor een groot deel van de benodigde energie zelf wordt opgewekt. Begane grond Appartementen op de eerst"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/s-gravenhage/ypsilon-park/15768": {
@@ -4019,6 +5702,23 @@
     "zin": "t een gezin: in Nosara creëert moeiteloos een thuis dat met je meebeweegt. De bouw is gestart en de oplevering staat gepland voor 2026, waardoor je hier volgend jaar al kunt wonen. Bekijk het aanbod Laatste woningen besc"
    }
   },
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://www.cartesius-utrecht.nl/aanbod",
+    "zin": "rrassen, en ook twee- en driekamerappartementen. Uiteraard zijn alle woningen voorzien van luxe elementen als vloerverwarming en een Bruynzeel designkeuken. Zoals je mag verwachten, ligt ook Cobana ligt midden in het groen van Cartesiu"
+   },
+   "parkeerkelder": {
+    "bron": "https://www.cartesius-utrecht.nl/aanbod-costa",
+    "zin": "laande deuren naar jouw eigen tuin én een enorme, direct toegankelijke binnentuin. Daarnaast kun je vanuit de parkeergarage recht je huis inlopen. Een zeldzame combinatie: het comfort en formaat van een echt gezinshuis, op een centra"
+   }
+  },
+  "partijen": {
+   "bouwer": {
+    "naam": "Ballast Nedam",
+    "bron": "https://www.cartesius-utrecht.nl",
+    "zin": "s Cartesius in gebruik geweest als stadsweide aan de rand van de stad voor stadsbewoners. Ballast Nedam Development heeft een plan gemaakt voor een stadswijk met een hoge duurzame en gezonde ambitie,"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/utrecht/cix-merwede-fase-3/15851": {
@@ -4058,6 +5758,13 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "vloerverwarming": {
+    "bron": "https://www.zettershof.nl",
+    "zin": "kamerappartementen van 56 tot 75 m² en 3 compacte grondgebonden woningen van ca. 57 m². Allemaal voorzien van vloerverwarming en een volledig afgewerkte badkamer en toilet. De energielabels lopen uiteen van A+ tot A+++. Je fiets stal j"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/veenendaal/t-kofschip/15755": {
@@ -4082,6 +5789,8 @@
     "zin": "over het nieuwe Hoendersveld in Venray. Zo zijn de omgevingsvergunningen verleend en koersen we op start bouw in... Meer informatie Fijne feestdagen! Vanaf 24 december 2025 tot en met 4 januari 2026 zijn wij met vakanti"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/voorschoten/park-beresteijn/9967": {
@@ -4118,6 +5827,13 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.hetmolenkwartier.nl",
+    "zin": "n zijn nog altijd zichtbaar. Archeologische vondsten bewondert u in het Stadsmuseum of, verrassend genoeg, in parkeergarage Castellum. Ook de omgeving biedt volop mogelijkheden: wandel- en fietsroutes, zoals die van Bodegraven via Wo"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/woerden/porta/15381": {
@@ -4134,6 +5850,13 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {
+   "parkeerkelder": {
+    "bron": "https://www.porta-woerden.nl",
+    "zin": "n die elk seizoen verrast en ontmoetingen stimuleert. Kinderen kunnen spelen in speelse loungenetten boven de parkeergarage. Aan de Steinhagensweg is ruimte voor een gezamenlijke woonkamer en twee commerciële units. Geniet van de nab"
+   }
+  },
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/zaandam/huren-aan-de-houthavenkade/15698": {
@@ -4155,6 +5878,8 @@
   },
   "momenten": {},
   "ter_controle": {},
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/zeist/eikenstein/15869": {
@@ -4189,6 +5914,27 @@
     "zin": "maat - wit op de wanden en antraciet op de vloeren. Previous Next planning Start bouw Start verhuur Oplevering Kwartaal 1 - 2022 We zijn gestart De bouw van Three Towers is onlangs gestart en naar verwachting zal de ople"
    }
   },
+  "kenmerken": {
+   "warmtepomp": {
+    "bron": "https://www.threetowers.nl",
+    "zin": "ijlvol en duurzaam is. De gebouwen zijn gasloos en voldoen aan alle eisen van deze tijd met zonnepanelen, een warmtepomp en heel veel groen. INSCHRIJVEN FACILITEITEN IN EN OM THree towers Voor ongekend shopplezier en culturele uit"
+   },
+   "zonnepanelen": {
+    "bron": "https://www.threetowers.nl",
+    "zin": "et comfortabel, stijlvol en duurzaam is. De gebouwen zijn gasloos en voldoen aan alle eisen van deze tijd met zonnepanelen, een warmtepomp en heel veel groen. INSCHRIJVEN FACILITEITEN IN EN OM THree towers Voor ongekend shopplezier"
+   },
+   "parkeerkelder": {
+    "bron": "https://www.threetowers.nl",
+    "zin": "op ieder moment van de dag even je boodschappen kunt doen, zonder echt de deur uit te hoeven. De bijbehorende parkeergarage met 152 plaatsen is deels voor bewoners, deels voor bezoekers van de supermarkt. De meeste grotere appartemen"
+   }
+  },
+  "partijen": {
+   "ontwikkelaar": {
+    "naam": "VORM",
+    "bron": "https://www.threetowers.nl",
+    "zin": "op de hoogte van de laatste ontwikkelingen. Abonneren WONEN IN Three Towers Three Towers vormt samen met het groene entreeplein, de binnentuin en de Jumbo supermarkt een uitnodigende wooncommunity in"
+   }
+  },
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/zuidhorn/de-groene-gaarde/15501": {
@@ -4219,6 +5965,8 @@
     "zin": "zen zijn te bekijken op de interactieve kaart . Schrijf je nu in voor een woning van jouw voorkeur. START BOUW APRIL 2026 De bouw van de 24 twee-onder-een-kapwoningen start in april 2026! Wil jij zeker zijn van een wonin"
    }
   },
+  "kenmerken": {},
+  "partijen": {},
   "_gehaald": "2026-09-21"
  },
  "https://www.nieuwwonennederland.nl/nieuwbouw/zutphen/nh1918/15867": {
