@@ -31,7 +31,7 @@ Gebruik:
     python3 scripts/generate_projectpaginas.py --min 100  # andere ondergrens
     python3 scripts/generate_projectpaginas.py --dry      # niets wegschrijven
 """
-import json, os, re, sys, glob, html, math, collections
+import json, os, re, sys, glob, html, math, collections, statistics
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -53,9 +53,14 @@ ALLEEN_REGIO = "--regio" in sys.argv
 # woningregisseur fysiek langs kan (zie PILOT verderop).
 ALLEEN_PILOT = "--pilot" in sys.argv
 MIN_WONINGEN = 50
+# De tweede poort, naast de woningdrempel: hoeveel eigen feiten een project
+# draagt. Zie eigen_feiten() in main(). 99 = uit (alleen de woningdrempel).
+MIN_FEITEN = 99
 for i, a in enumerate(sys.argv):
     if a == "--min" and i + 1 < len(sys.argv):
         MIN_WONINGEN = int(sys.argv[i + 1])
+    if a == "--feiten" and i + 1 < len(sys.argv):
+        MIN_FEITEN = int(sys.argv[i + 1])
 
 E = html.escape
 
@@ -1515,6 +1520,49 @@ def prijsvergelijking(g, land, plaats):
             f'<div class="cijfer">&euro;{eur_duizend(nl)}</div></div></div>')
 
 
+SHINGLE = 8
+UNIEK_VLOER = 35   # de grens waarop de vakbedrijf-profielen op 31 juli uit de index gingen
+
+
+def meet_uniciteit(toon=8):
+    """Meet hoeveel van elke pagina alleen op díe pagina staat.
+
+    STOND HIER EERST ALS VASTE TEKST. De generator printte elke ronde "mediaan
+    20,4%" — een getal uit een meting van weken eerder, hardgecodeerd, dat niet
+    meebewoog met wat hij zelf net had weggeschreven. Precies het cijfer waarop
+    we moeten besluiten of de poort open mag, en het werd niet gemeten.
+
+    Methode: elke pagina wordt gehakt in stukjes van acht opeenvolgende woorden
+    (de tekst, zonder script/style/svg). Een stukje dat op twee of meer pagina's
+    voorkomt telt als duplicaat. Uniciteit = het aandeel stukjes dat maar één
+    keer voorkomt in de hele set.
+    """
+    paden = [p for p in sorted(glob.glob(os.path.join(CLUSTER, "content", "*.html")))
+             if os.path.basename(p) not in ("index.html", "oplevermonitor.html")]
+    if len(paden) < 2:
+        return []
+    per, teller = {}, collections.Counter()
+    for pad in paden:
+        s = open(pad, encoding="utf8").read()
+        s = re.sub(r"<(script|style|svg)\b[^>]*>.*?</\1>", " ", s, flags=re.S | re.I)
+        w = re.sub(r"[^a-z0-9 ]", " ", html.unescape(re.sub(r"<[^>]+>", " ", s)).lower()).split()
+        sh = {tuple(w[i:i + SHINGLE]) for i in range(max(0, len(w) - SHINGLE + 1))}
+        per[pad] = sh
+        teller.update(sh)
+    scores = sorted((sum(1 for x in sh if teller[x] == 1) / len(sh) * 100,
+                     os.path.basename(pad)[:-5]) for pad, sh in per.items() if sh)
+    med = statistics.median(s[0] for s in scores)
+    laag = sum(1 for s in scores if s[0] < UNIEK_VLOER)
+    print(f"\nTekstuniciteit (shingle van {SHINGLE} woorden, gemeten op wat er nu staat):")
+    print(f"  mediaan {med:.1f}%  ·  onder de {UNIEK_VLOER}%: {laag} van {len(scores)}")
+    if laag:
+        print("  De vakbedrijf-profielen gingen op 31 juli uit de index toen ze onder "
+              f"de {UNIEK_VLOER}% zakten. Dit is dus de rem op het opschalen, niet de poort.")
+    print("  laagste:", ", ".join(f"{n} ({s:.0f}%)" for s, n in scores[:3]))
+    print("  hoogste:", ", ".join(f"{n} ({s:.0f}%)" for s, n in scores[-3:]))
+    return scores
+
+
 def tekening_blok(naam, slug, app, is_opgeleverd):
     """De plattegrond-upload, vlak onder de kop en als enige primaire vraag.
 
@@ -2380,8 +2428,41 @@ def main():
             return 20
         return MIN_WONINGEN
 
+    def eigen_feiten(p):
+        """Hoeveel dit project zélf te vertellen heeft.
+
+        WAAROM NAAST DE WONINGDREMPEL. De poort hierboven meet cohortgrootte, en
+        dat is een slechte maat voor of een pagina iets te zeggen heeft: 558 van
+        de 1.268 projecten hebben helemaal geen woningaantal en vallen dus af om
+        een leeg veld, niet omdat ze te klein zijn. Tegelijk haalt een project
+        van 60 woningen zonder verdere gegevens de poort wél, en dan staat er
+        een pagina die alleen zijn naam draagt.
+
+        Wat hier telt is wat de pagina uniek maakt: de Kadaster-meting (en
+        vooral de reeks, want die heeft niemand anders), de eigen prijsvork, het
+        woonoppervlak, en de ligging waarmee we winkels en vakbedrijven in de
+        buurt kunnen noemen.
+        """
+        n = 0
+        b = BAG.get(p.get("url"))
+        if b and (b[1].get("nieuwste_bouwjaar")):
+            n += 1
+        if b and b[1].get("in_aanbouw"):
+            n += 1
+        if len(SNAPSHOTS.get(p.get("url")) or []) >= 2:
+            n += 1          # een reeks is een logboek, en dat is het eigenste dat we hebben
+        if p.get("prijs_van"):
+            n += 1
+        if p.get("woonoppervlak_van"):
+            n += 1
+        if p.get("woningen"):
+            n += 1
+        if p.get("lat") and p.get("lng"):
+            n += 1
+        return n
+
     kandidaten = [p for p in projecten
-                  if (p.get("woningen") or 0) >= poort(p)
+                  if ((p.get("woningen") or 0) >= poort(p) or eigen_feiten(p) >= MIN_FEITEN)
                   and (not (ALLEEN_REGIO or ALLEEN_PILOT) or p["plaats"] in prio)]
 
     # In de pilotring telt bovendien het moment. Het regisseur-blok zegt "de keuzes
@@ -2578,10 +2659,7 @@ def main():
 
     print(f"{'DROOGDRAAI — ' if DRY else ''}{nieuw} nieuwe pagina's, {herzien} herzien, "
           f"{len(handgeschreven)} handgeschreven ongemoeid gelaten.")
-    print("Tekstuniciteit (shingle op >=2 pagina's = duplicaat): mediaan 20,4%. "
-          "Kennisbank 91%, de uit de index gehaalde profielen 35%. Sjabloneren "
-          "is hier uitgeput; het logboek moet het doen zodra er meerdere "
-          "metingen zijn en elk project een eigen verloop krijgt.")
+    meet_uniciteit()
     per = collections.Counter(netjes(p["plaats"]) for p in kandidaten)
     print("\ntop-plaatsen:", ", ".join(f"{g} ({n})" for g, n in per.most_common(8)))
 
