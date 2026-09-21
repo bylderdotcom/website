@@ -123,7 +123,9 @@ ul.bedrijven li strong{display:inline-block;}
 /* De Auping-korting met de foto van de homepage ernaast. Vierkant en begrensd:
    de bron is 1000x1000 en zou anders de halve pagina vullen. */
 .pk-bed{display:grid;grid-template-columns:280px minmax(0,1fr);gap:22px;align-items:start;margin:18px 0 8px;}
-.pk-bed img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block;border:1px solid rgba(61,46,30,.1);}
+/* height:auto is hier niet optioneel: zonder die regel wint het height="1000"
+   uit de HTML en wordt de foto 280 breed en 1000 hoog. Zie .pk-venster img. */
+.pk-bed img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block;border:1px solid rgba(61,46,30,.1);}
 .pk-bed p{margin:0 0 14px;}
 .pk-bed p:last-child{margin-bottom:0;}
 @media(max-width:760px){.pk-bed{grid-template-columns:1fr;gap:16px;}}
