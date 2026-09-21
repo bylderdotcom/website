@@ -1,0 +1,91 @@
+name: Projectpagina's publiceren (wekelijks)
+
+# De ontbrekende schakel. Wij meten elke veertien dagen de bouwstatus van 976
+# projecten, maar niets zette die metingen daarna op de site: de pagina's worden
+# gegenereerd, en dat gebeurde alleen met de hand. Het logboek — het enige blok
+# op die pagina's dat nergens anders bestaat — veroudert daardoor vanzelf.
+#
+# Deze loop draait de generator en commit wat er verandert. Eén keer per week,
+# dus één bouw: een volledige bouw van de site kost acht minuten en ongeveer
+# €0,46, en losse commits waren deze cyclus goed voor €119.
+#
+# WAAROM DIT MAG AUTO-PUBLICEREN, TEGEN DE STANDING ORDER IN
+# De standing order (CLAUDE.md) zegt: loops leveren reviewbare PR's, geen
+# auto-publish. Deze loop schrijft geen tekst. Hij draait dezelfde generator over
+# dezelfde data en zet er de nieuwste meting in — het verschil tussen twee
+# metingen is een feit uit het Kadaster, geen bewering van ons. De beoordeling
+# zit in de generator zelf (de poort) en die verandert hier niet.
+#
+# Wat hij níét doet: nieuwe projecten toevoegen. Dat blijft de oogstloop, en
+# daar staat wél een mens tussen.
+
+on:
+  schedule:
+    - cron: "0 5 * * 4"   # donderdag 05:00 UTC
+  workflow_dispatch:
+    inputs:
+      droogdraai:
+        description: "Alleen tonen wat er zou veranderen"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: projectpaginas-publiceren
+  cancel-in-progress: false
+
+jobs:
+  publiceer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pagina's genereren
+        id: gen
+        run: |
+          python3 scripts/generate_projectpaginas.py \
+            ${{ github.event.inputs.droogdraai == 'true' && '--dry' || '' }} | tee /tmp/gen.txt
+          echo "kandidaten=$(grep -oE '→ [0-9]+ kandidaten' /tmp/gen.txt | grep -oE '[0-9]+' || echo 0)" >> "$GITHUB_OUTPUT"
+
+      # Een ronde die opeens veel minder pagina's oplevert dan de vorige, betekent
+      # dat er iets met de brondata is gebeurd — niet dat er projecten verdwenen
+      # zijn. Liever hier stoppen dan honderden pagina's weggooien.
+      - name: Krimp controleren
+        if: github.event.inputs.droogdraai != 'true'
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, sys
+          uit = subprocess.run(["git", "diff", "--numstat", "--", "data/clusters/nieuwbouw-project/content"],
+                               capture_output=True, text=True).stdout
+          weg = sum(1 for r in uit.splitlines() if r.split("\t")[:2] == ["0", "0"])
+          verwijderd = subprocess.run(["git", "diff", "--diff-filter=D", "--name-only",
+                                       "--", "data/clusters/nieuwbouw-project/content"],
+                                      capture_output=True, text=True).stdout.split()
+          if len(verwijderd) > 20:
+              print(f"::error::{len(verwijderd)} pagina's zouden verdwijnen. Gestopt.")
+              sys.exit(1)
+          print(f"{len(verwijderd)} pagina('s) verdwijnen — binnen de marge.")
+          PY
+
+      - name: Publiceren
+        if: github.event.inputs.droogdraai != 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/clusters/nieuwbouw-project nieuwbouw-project-sitemap.xml vercel.json
+          if git diff --staged --quiet; then
+            echo "Niets veranderd — geen commit, geen bouw."
+          else
+            git commit -m "projectpagina's bijgewerkt: ${{ steps.gen.outputs.kandidaten }} pagina's, met de meting van deze ronde"
+            git push
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: generatie-log
+          path: /tmp/gen.txt

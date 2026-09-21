@@ -16,6 +16,13 @@ EXCL=(
   ':(exclude)scripts'      ':(exclude)_scripts'
   ':(exclude).github'      ':(exclude).DS_Store'
   ':(exclude)*.md'         ':(exclude)*.py'
+  # Meetdata alléén verandert geen enkele pagina: de projectpagina's worden
+  # gegenereerd, en pas dán komt een nieuwe meting op de site. De meetloop
+  # committeert elke veertien dagen een snapshot van 976 projecten, en dat
+  # startte tot nu toe een volledige bouw van 67.877 pagina's die daarna
+  # precies hetzelfde toonden. De publicatieloop (donderdag) bouwt wél.
+  ':(exclude)data/bag-snapshots'
+  ':(exclude)data/nieuwbouw-snapshots'
 )
 
 # Preview-builds standaard overslaan (besluit 29-07-2026). Elke wijziging bouwde
