@@ -126,6 +126,21 @@ ul.bedrijven li strong{display:inline-block;}
 .pk-keuzes p{font-size:14px;line-height:1.65;color:rgba(61,46,30,.78);margin:0 0 14px;}
 .pk-keuzes .noot{font-size:12.5px;color:rgba(61,46,30,.6);margin:10px 0 0;}
 @media(max-width:760px){.pk-keuzes{grid-template-columns:1fr;}}
+/* De deurkeuze krijgt het configuratorvenster erbij: "plafondhoog, in de kleur
+   van de wand" is niet voor te stellen zonder beeld. Daarom ook een bredere
+   kolom voor die kaart — in de helft van 1100px is het raster met RAL-kleuren
+   niet meer te lezen. min-width:0 want de adresbalk staat op nowrap en zou de
+   kaart anders breder maken dan de kolom (op mobiel liep hij van het scherm).
+   De brede kolom volgt de kaart met het venster: in het budgetblok staan de
+   deuren rechts, in het keuzeblok links. Zonder :has() blijven het twee
+   gelijke kolommen, en dat is de oude situatie. */
+.pk-keuzes article{min-width:0;}
+@media(min-width:761px){.pk-keuzes:has(article:first-child .pk-venster){grid-template-columns:1.35fr 1fr;}.pk-keuzes:has(article:last-child .pk-venster){grid-template-columns:1fr 1.35fr;}}
+.pk-venster{display:block;min-width:0;margin:-2px 0 14px;border:1px solid rgba(61,46,30,.14);border-radius:10px;overflow:hidden;background:#EDE6D8;}
+.pk-venster .balk{display:flex;align-items:center;gap:5px;padding:7px 10px;border-bottom:1px solid rgba(61,46,30,.1);min-width:0;}
+.pk-venster .balk i{display:block;flex:none;width:7px;height:7px;border-radius:999px;background:#D9CFBF;}
+.pk-venster .balk span{flex:1;min-width:0;margin-left:8px;padding:2px 8px;font-family:'Space Mono',monospace;font-size:10.5px;color:rgba(61,46,30,.6);background:#F5F0E8;border-radius:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.pk-venster img{display:block;width:100%;height:auto;}
 /* Tijdlijn: verstreken momenten grijs, het eerstvolgende gemarkeerd. */
 .pk-tijdlijn{margin:20px 0 6px;}
 .pk-moment{display:grid;grid-template-columns:9.5rem 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(61,46,30,.12);}

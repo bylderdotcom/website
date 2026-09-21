@@ -97,8 +97,31 @@ def laad_ruimtes():
     return uit
 
 
+# Opleverdata die het project zelf publiceert en die met de hand zijn nagelopen.
+# De oogster vindt ze wel maar koppelt ze niet betrouwbaar aan het juiste moment:
+# van 28 kandidaten bleken er acht een startdatum, een lotingsdatum of de planning
+# van een andere fase ("Q1 2024 Bouw gestart … Medio 2027 Verwachte oplevering"
+# leverde Q1 2024 op). Daarom staat hier alleen wat een mens heeft gezien.
+OPLEVER_BEVESTIGD_PAD = os.path.join(ROOT, "data", "opleverdata-bevestigd.json")
+_OPL = None
+
+
+def _opleverdata():
+    global _OPL
+    if _OPL is None:
+        try:
+            _OPL = json.load(open(OPLEVER_BEVESTIGD_PAD, encoding="utf8"))["projecten"]
+        except Exception:
+            _OPL = {}
+    return _OPL
+
+
 def oplever_schatting(p):
     """(tekst, jaar_van, jaar_tot, grondslag) — altijd als bandbreedte, nooit als feit."""
+    bev = _opleverdata().get(p.get("url"))
+    if bev:
+        j = bev["jaar"]
+        return (bev["wanneer"], j, j, "een opgave van het project zelf, nagelopen op de bron")
     if p.get("oplevering") and p.get("oplevering_bron") == "oplevertrefwoord":
         j = p["oplevering"]
         return (f"in {j}", j, j, "opgave van het project zelf")
@@ -1129,6 +1152,7 @@ het kan, en dus wanneer je moet beslissen.</p>
 <article>
 <div class="pk-etiket">Binnendeuren</div>
 <h3>Plafondhoog, zonder kozijn</h3>
+{VENSTER.format(conf=conf)}
 <p>Het kozijn gaat &iacute;n de wand en wordt meegestukadoord: bij een oplevering in
 {jaar} is dat een regel op de meerwerklijst, in een bestaand huis een verbouwing. De prijs hangt
 af van het aantal deuren en de afwerking &mdash; in de configurator zie je hem op jouw eigen
@@ -1456,6 +1480,23 @@ def _gietvloer_steden():
     return _GV
 
 
+# Het configuratorvenster: een schermafbeelding van de configurator zelf, in een
+# kaal vensterkader. Zonder beeld moet de koper zich "plafondhoog, in de kleur van
+# de wand" voorstellen; met beeld ziet hij in een halve seconde wat het ding doet.
+# Dezelfde afbeelding als in het blok op de homepage. De link is dezelfde als de
+# knop eronder, dus weg uit de tabvolgorde en weg voor de schermlezer.
+VENSTER = (
+    '<a class="pk-venster" href="{conf}" tabindex="-1" aria-hidden="true">'
+    '<span class="balk"><i></i><i></i><i></i>'
+    '<span>bylder.com/kozijnloze-deuren/configurator</span></span>'
+    '<img src="/img/configurator/configurator-voorbeeld.jpg"'
+    ' srcset="/img/configurator/configurator-voorbeeld-sm.jpg 640w,'
+    ' /img/configurator/configurator-voorbeeld.jpg 1200w"'
+    ' sizes="(max-width:760px) 92vw, 420px" alt="" width="1200" height="530"'
+    ' loading="lazy" decoding="async"></a>'
+)
+
+
 def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi):
     stad_slug = re.sub(r"[^a-z0-9]+", "-", plaats_ruw.lower()).strip("-")
     n_gv = _gietvloer_steden().get(stad_slug, 0)
@@ -1474,6 +1515,7 @@ def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi):
 
     lokaal = (f" In {E(plaats)} hebben wij {n_gv} gietvloerleggers in kaart gebracht,"
               f" met hun beoordelingen." if n_gv >= 3 else "")
+    venster = VENSTER.format(conf=conf)
     return f"""<h2>Twee afwerkingen die je nu kiest, niet later</h2>
 <p>Deuren zonder kozijn en een gietvloer kunnen allebei alleen in een nieuw huis, en allebei
 moeten ze besloten zijn voordat de stukadoor en de dekvloer klaar zijn &mdash; dus ruim
@@ -1482,6 +1524,7 @@ v&oacute;&oacute;r de oplevering van {E(naam)}.{lokaal} {deadline}</p>
 <article>
 <div class="pk-etiket">Deuren zonder kozijn</div>
 <h3>Een deur die opgaat in de wand</h3>
+{venster}
 <p>Plafondhoog, zonder omlijsting, in de kleur van de wand. Het kozijn gaat &iacute;n de wand en
 wordt meegestukadoord.</p>
 <p><a class="cta-primary" href="{conf}">Stel je deur samen &rarr;</a></p>
@@ -1531,6 +1574,14 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                     f"<strong>{opl_tekst}</strong>. Wij nemen dat als bandbreedte en niet als "
                     f"datum, want zo'n notatie gaat net zo vaak over de start van de verkoop "
                     f"als over de oplevering.</p>")
+    elif _opleverdata().get(p.get("url")):
+        b = _opleverdata()[p["url"]]
+        opl_blok = (f"<p>{E(naam)} noemt zelf <strong>{E(b['wanneer'])}</strong> als moment van "
+                    f"oplevering. Dat staat op "
+                    f'<a href="{E(b["bron"])}" rel="nofollow noopener" target="_blank">hun eigen '
+                    f"site</a>; wij hebben die zin nagelezen voordat we hem hier overnamen. Ook "
+                    f"een opgave van het project zelf is een planning en geen belofte &mdash; "
+                    f"jouw koop-/aannemingsovereenkomst is leidend.</p>")
     else:
         opl_blok = (f"<p>{E(naam)} publiceert zelf geen opleverdatum. Wij schatten daarom "
                     f"<strong>{opl_tekst}</strong>, op de vuistregel van ongeveer anderhalf jaar "
@@ -1657,6 +1708,13 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
             f"Het project noemt zelf {p['oplevering']} als opleverjaar. Wij meten elke twee "
             f"weken de bouwstatus in het Kadaster; het verloop staat in het logboek op deze pagina."))
+    elif _opleverdata().get(p.get("url")):
+        b = _opleverdata()[p["url"]]
+        faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
+            f"Het project noemt zelf {b['wanneer']} als moment van oplevering; dat staat op de "
+            f"eigen site van {naam} en is door ons nagelezen. Een planning is geen belofte — je "
+            f"koop-/aannemingsovereenkomst is leidend. Wij meten elke twee weken de bouwstatus "
+            f"in het Kadaster."))
     else:
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
             f"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering "
