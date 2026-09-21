@@ -12,6 +12,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { opRaster } from './raster'
 import { metVerleider } from './verleider'
+import { metEersteZet } from './eerstezet'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'schilder'
@@ -378,7 +379,9 @@ function getBedrijfHtml(page: SchilderPage): string {
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
   const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
-  return metVerleider(body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`), 'schilder')
+  return metEersteZet(
+    metVerleider(body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`), 'schilder'),
+    esc(b.name))
 }
 
 const _hubCache: Record<string, string> = {}

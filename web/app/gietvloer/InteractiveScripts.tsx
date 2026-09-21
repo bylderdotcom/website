@@ -2,38 +2,25 @@
 
 import { useEffect } from 'react'
 
-// Herbedraadt de 2 inline <script>-blokken uit de gietvloer-contenttemplates
-// (identiek op index/city/bedrijf-pagina's) die niet uitvoeren via
-// dangerouslySetInnerHTML: de kostencalculator (#kc-werk/#kc-m2/#kc-out) en,
-// alleen op stadspagina's, de sorteer-dropdown voor de bedrijvengrid
-// (#dir-sort/#dir-grid). Elementen die niet bestaan worden overgeslagen.
+import { wireKlusCheck } from '../components/klusCheck'
+
+// Herbedraadt wat de inline <script>-blokken in de gietvloer-contenttemplates
+// zouden doen — via dangerouslySetInnerHTML voeren die niet uit. Twee dingen:
+// de rekenhulp (#kc-werk/#kc-m2/#kc-out, op bedrijfsprofielen met #kc-bedrag
+// erbij — zie app/components/klusCheck.ts) en, alleen op stadspagina's, de
+// sorteer-dropdown voor de bedrijvengrid (#dir-sort/#dir-grid). Elementen die
+// niet bestaan worden overgeslagen.
 export default function InteractiveScripts() {
   useEffect(() => {
     const cleanups: Array<() => void> = []
 
-    // Kostencalculator — prijsbanden 1-op-1 uit de bron.
-    const W = [
-      { low: 80, high: 130 },
-      { low: 50, high: 90 },
-      { low: 100, high: 150 },
-      { low: 95, high: 150 },
-      { low: 15, high: 35 },
-    ]
-    const s = document.getElementById('kc-werk') as HTMLSelectElement | null
-    const m = document.getElementById('kc-m2') as HTMLInputElement | null
-    const o = document.getElementById('kc-out')
-    if (s && m && o) {
-      const fmt = (n: number) => n.toLocaleString('nl-NL')
-      const calc = () => {
-        const w = W[Number(s.value)]
-        const a = parseFloat((m.value || '').replace(',', '.'))
-        if (!w || !(a > 0)) { o.innerHTML = ''; return }
-        o.innerHTML = `Indicatie voor jouw klus: <strong>€${fmt(Math.round(w.low * a))} – €${fmt(Math.round(w.high * a))}</strong> <span style="color:rgba(61,46,30,0.72);font-size:13px;">(${w.low}–${w.high} €/m², indicatief)</span>`
-      }
-      s.addEventListener('change', calc)
-      m.addEventListener('input', calc)
-      cleanups.push(() => { s.removeEventListener('change', calc); m.removeEventListener('input', calc) })
-    }
+    // Rekenhulp: bandbreedte per werksoort, en op bedrijfsprofielen het
+    // oordeel over het bedrag uit de offerte van de bezoeker.
+    cleanups.push(wireKlusCheck({
+      W: [{ low: 80, high: 130 }, { low: 50, high: 90 }, { low: 100, high: 150 }, { low: 95, high: 150 }, { low: 15, high: 35 },],
+      perEenheid: true,
+      noot: 'indicatief',
+    }))
 
     // Sorteer-dropdown voor de bedrijvengrid (alleen op stadspagina's).
     const sel = document.getElementById('dir-sort') as HTMLSelectElement | null
