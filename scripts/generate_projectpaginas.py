@@ -1380,25 +1380,56 @@ def hero_tekening(naam):
     thuishoort. Dit is een schema, en het stempel zegt dat er ook bij.
     """
     return f"""<div class="pk-tekening">
-<svg viewBox="0 0 380 312" xmlns="http://www.w3.org/2000/svg" role="img"
-     aria-label="Schematische tekening van een woning met drie keuzemomenten">
+<svg viewBox="6 63 585 464" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Isometrische lijntekening van een woning met drie keuzemomenten: dakkapel, vloer en meerwerk">
 <defs><pattern id="pkr" width="20" height="20" patternUnits="userSpaceOnUse">
 <path d="M20 0 L0 0 0 20" fill="none" stroke="#3D5A3E" stroke-width=".5" opacity=".18"/></pattern></defs>
-<rect width="380" height="312" fill="url(#pkr)"/>
-<path d="M60 200 L190 130 L320 200 L190 270 Z" fill="none" stroke="#6B5B48" stroke-width="1" stroke-dasharray="5 5" opacity=".55"/>
-<path d="M110 175 L190 130 L270 175 L270 232 L190 277 L110 232 Z" fill="#FFFDF9" stroke="#3D5A3E" stroke-width="2.4" stroke-linejoin="round"/>
-<path d="M110 175 L190 220 L270 175" fill="none" stroke="#3D5A3E" stroke-width="2.4" stroke-linejoin="round"/>
-<path d="M190 220 L190 277" fill="none" stroke="#3D5A3E" stroke-width="2.4"/>
-<path d="M190 130 L190 90 L240 118 L240 158" fill="none" stroke="#3D5A3E" stroke-width="2" stroke-linejoin="round"/>
-<path d="M190 90 L240 118" fill="none" stroke="#3D5A3E" stroke-width="2"/>
-<rect x="132" y="196" width="20" height="26" fill="none" stroke="#3D5A3E" stroke-width="1.4"/>
-<rect x="228" y="196" width="20" height="26" fill="none" stroke="#3D5A3E" stroke-width="1.4"/>
-<circle cx="215" cy="112" r="13" fill="#C2410C"/><text x="215" y="117" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="700">1</text>
-<circle cx="163" cy="243" r="13" fill="#C2410C"/><text x="163" y="248" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="700">2</text>
-<circle cx="285" cy="188" r="13" fill="#C2410C"/><text x="285" y="193" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="700">3</text>
-<text x="215" y="86" text-anchor="middle" fill="#6B5B48" font-family="monospace" font-size="9" letter-spacing="1">DAKKAPEL</text>
-<text x="163" y="306" text-anchor="middle" fill="#6B5B48" font-family="monospace" font-size="9" letter-spacing="1">VLOER</text>
-<text x="300" y="192" text-anchor="start" fill="#6B5B48" font-family="monospace" font-size="9" letter-spacing="1">MEERWERK</text>
+<rect x="6" y="63" width="585" height="464" fill="url(#pkr)"/>
+<g fill="none" stroke="#3D5A3E" stroke-width="1.4" stroke-linecap="round">
+<path d="M283.4,214.7 L585.3,389.0 L356.6,521.0 L54.7,346.7 Z" stroke-dasharray="5 5" opacity=".45"/>
+<path d="M240.0,374.5 L240.0,326.9"/><path d="M304.0,411.4 L304.0,363.9"/>
+<path d="M394.3,414.7 L394.3,375.1"/>
+<path d="M105.0,359.9 L333.7,492.0"/><path d="M111.9,356.0 L98.2,363.9"/>
+<path d="M340.6,488.0 L326.9,495.9"/>
+</g>
+<g fill="none" stroke="#3D5A3E" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+<path d="M127.9,346.7 L356.6,478.8 L356.6,357.3 L127.9,225.3 Z" fill="#FFFDF9"/>
+<path d="M516.7,386.3 L356.6,478.8 L356.6,357.3 L436.6,216.0 L516.7,264.9 Z" fill="#FFFDF9"/>
+<path d="M208.0,84.0 L436.6,216.0 L356.6,357.3 L127.9,225.3 Z" fill="#FFFDF9"/>
+<path d="M155.4,362.6 L187.4,381.1 L187.4,301.8 L155.4,283.4 Z"/>
+<path d="M219.4,362.6 L260.5,386.3 L260.5,338.8 L219.4,315.0 Z"/>
+<path d="M283.4,399.5 L324.6,423.3 L324.6,375.8 L283.4,352.0 Z"/>
+<path d="M411.5,404.8 L377.2,424.6 L377.2,385.0 L411.5,365.2 Z"/>
+<path d="M372.6,179.1 L372.6,152.7 L395.5,165.9 L395.5,192.3"/>
+<path d="M372.6,152.7 L386.3,144.7 L409.2,157.9 L395.5,165.9"/>
+<path d="M409.2,157.9 L409.2,173.8"/>
+</g>
+<g fill="none" stroke="#3D5A3E" stroke-width="2" stroke-dasharray="4 4" opacity=".35">
+<path d="M212.5,183.1 L267.5,214.8 L267.5,177.8 L212.5,146.0 Z"/><path d="M212.5,146.0 L243.7,128.0"/>
+<path d="M267.5,177.8 L298.6,159.8"/><path d="M243.7,128.0 L298.6,159.8"/>
+<path d="M267.5,214.8 L298.6,159.8"/><path d="M226.3,181.7 L253.7,197.6 L253.7,179.1 L226.3,163.2 Z"/>
+<path d="M125.6,387.7 L217.1,440.5 L153.1,477.4 L61.6,424.6 Z"/><path d="M109.6,396.9 L201.1,449.7"/>
+<path d="M93.6,406.1 L185.1,458.9"/><path d="M77.6,415.4 L169.1,468.2"/>
+<path d="M324.6,199.5 L388.6,236.5 L345.2,313.2 L281.1,276.2 Z"/><path d="M345.8,211.8 L302.4,288.5"/>
+<path d="M367.3,224.2 L323.9,300.9"/><path d="M302.8,237.9 L366.9,274.9"/>
+</g>
+<g font-family="monospace" font-size="10" letter-spacing=".6" text-anchor="middle">
+<g transform="translate(240.0,103.9)">
+<line x1="0" y1="0" x2="0" y2="58" stroke="#B85C38" stroke-width="1.4" opacity=".7"/>
+<circle r="13" fill="#B85C38" stroke="#F5F0E8" stroke-width="2"/>
+<text y="4" fill="#fff" font-weight="700" font-size="12">1</text>
+<text y="-24" fill="#3D5A3E">1 DAKKAPEL</text></g>
+<g transform="translate(53.3,402.5)">
+<line x1="0" y1="0" x2="86" y2="30" stroke="#B85C38" stroke-width="1.4" opacity=".7"/>
+<circle r="13" fill="#B85C38" stroke="#F5F0E8" stroke-width="2"/>
+<text y="4" fill="#fff" font-weight="700" font-size="12">2</text>
+<text y="32" fill="#3D5A3E">2 VLOER</text></g>
+<g transform="translate(426.9,212.4)">
+<line x1="0" y1="0" x2="-92" y2="44" stroke="#B85C38" stroke-width="1.4" opacity=".7"/>
+<circle r="13" fill="#B85C38" stroke="#F5F0E8" stroke-width="2"/>
+<text y="4" fill="#fff" font-weight="700" font-size="12">3</text>
+<text y="32" fill="#3D5A3E">3 MEERWERK</text></g>
+</g>
 </svg>
 <div class="pk-stempel">{naam} &middot; schema, geen plattegrond</div>
 </div>"""
@@ -1506,6 +1537,38 @@ staan &mdash; en waar de tekening daar onduidelijk over is. {wanneer}</p>
 <p><a class="cta-primary" href="{link}">Zet je plattegrond erin &rarr;</a></p>
 <p class="noot">Hiervoor is een gratis account nodig &mdash; de tekening moet ergens staan.
 Een foto van de tekening werkt ook; wij zeggen erbij hoe zeker de schatting is.</p>"""
+
+
+def lidmaatschap_blok(app, met_auping):
+    """Wat het gratis account nog meer oplevert, op élke projectpagina.
+
+    De Auping-korting staat alleen op de 45 pagina's met een winkel binnen
+    bereik: vier winkels, alleen in de winkel, dus elders is het een belofte die
+    een koper niet kan verzilveren. Het lidmaatschap zelf geldt wél overal, en
+    dat stond nergens op deze pagina's — alleen een kale link naar /vouchers/
+    op zestig procent van de pagina.
+
+    EERLIJK OVER HET VERSCHIL. Van de 56 aangesloten merken zijn er 17 waar de
+    korting losstaat van een winkel; de andere 39 hangen aan een vestiging. Die
+    splitsing staat er met zoveel woorden bij, want "korting bij 56 merken"
+    suggereert dat ze allemaal overal gelden en dat is niet zo.
+    """
+    overal = [d for d in DEELNEMERS.values() if not d.get("plaats") and d.get("aanbod")]
+    n_overal, n_totaal = len(overal), len(DEELNEMERS)
+    # Drie met een hard getal; die zeggen meer dan een merk zonder bedrag.
+    keuze = [d for d in overal if re.match(r"^[€\d]", str(d.get("aanbod")))][:3]
+    rijtje = "".join(
+        f'<li><strong>{E(d["naam"])}</strong> &middot; {E(str(d["aanbod"]))} '
+        f'<span>{E(d.get("cat") or "")}</span></li>' for d in keuze)
+    auping_zin = (" De Auping-korting hierboven is er zo een: die geldt bij vier winkels."
+                  if met_auping else "")
+    return f"""<h2>Wat het account verder oplevert</h2>
+<p>Met hetzelfde gratis account krijg je ledenkorting bij {n_totaal} aangesloten merken. Bij
+{n_overal} daarvan staat de korting los van een winkel &mdash; die gebruik je waar je ook
+woont. De andere {n_totaal - n_overal} hangen aan een vestiging, en welke dat in jouw buurt
+zijn zie je in je dossier.{auping_zin}</p>
+<ul class="pk-leden">{rijtje}</ul>
+<p><a class="cta-stil" href="/vouchers/">Bekijk de ledenkortingen</a></p>"""
 
 
 def moment_zin(p, opl_tekst, aanwijzend="de"):
@@ -2063,6 +2126,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 {budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel_wanneer)}
 
 {aup_html}
+
+{lidmaatschap_blok(app, bool(aup_html))}
 
 {prijs_html}
 
