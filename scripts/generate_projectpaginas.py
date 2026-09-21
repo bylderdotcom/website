@@ -441,8 +441,65 @@ def bag_blok(p, naam):
                   "Wij meten elke twee weken opnieuw; deze regels komen rechtstreeks uit die "
                   "metingen.</p>")
 
-    log = f"<h2>Logboek</h2><ul class='log'>{''.join(regels)}</ul>{staart}"
+    verhaal = logboek_verhaal(reeks, naam)
+    log = f"<h2>Logboek</h2>{verhaal}<ul class='log'>{''.join(regels)}</ul>{staart}"
     return antwoord, tabel, log
+
+
+def logboek_verhaal(reeks, naam):
+    """Wat de meetreeks laat zien, in zinnen in plaats van rijtjes.
+
+    WAAROM. De uniciteit van deze pagina's stond op 19% terwijl 976 projecten
+    een eigen meetreeks hebben — het eigenste bezit dat we hebben, en het stond
+    er als tabel met overal dezelfde omlijstende woorden. Acht opeenvolgende
+    woorden zijn dan op elke pagina gelijk, ook al verschillen de getallen.
+
+    Hier kiest de vórm zich naar wat de reeks laat zien: stil, net begonnen,
+    aan de gang, of al aan het opleveren. Dat is geen opsmuk — het is precies
+    wat de koper wil weten, en het is per project anders.
+
+    Niets hier is een schatting. Elke zin gebruikt alleen data uit de metingen
+    zelf: de datums, het aantal panden in aanbouw en het aantal opgeleverd.
+    """
+    bruikbaar = [(d, m) for d, m in reeks if (m.get("panden") or 0) < BAG_MAX]
+    if len(bruikbaar) < 2:
+        return ""
+    (d0, m0), (d1, m1) = bruikbaar[0], bruikbaar[-1]
+    a0, a1 = m0.get("in_aanbouw") or 0, m1.get("in_aanbouw") or 0
+    o0, o1 = m0.get("opgeleverd") or 0, m1.get("opgeleverd") or 0
+    span = f"{nl_datum(d0)} en {nl_datum(d1)}"
+    n = len(bruikbaar)
+
+    if o1 > o0 and a1 < a0:
+        z = (f"Tussen {span} zag het Kadaster de bouw bij {naam} kantelen: "
+             f"{o1 - o0} pand{'en' if o1 - o0 != 1 else ''} ging{'en' if o1 - o0 != 1 else ''} "
+             f"van in aanbouw naar opgeleverd, en het aantal panden in aanbouw liep terug van "
+             f"{a0} naar {a1}. Dat is de fase waarin de eerste sleutels worden uitgereikt en "
+             f"de laatste keuzes bij de bouwer sluiten.")
+    elif o1 > o0:
+        z = (f"Tussen {span} registreerde het Kadaster {o1 - o0} pand"
+             f"{'en' if o1 - o0 != 1 else ''} als opgeleverd rond {naam}, terwijl er "
+             f"{a1} in aanbouw bleven staan. Er wordt hier dus opgeleverd en doorgebouwd "
+             f"tegelijk &mdash; gebruikelijk bij een project dat in fases gaat.")
+    elif a1 > a0 and a0 == 0:
+        z = (f"Bij de eerste meting op {nl_datum(d0)} stond er rond {naam} nog niets in "
+             f"aanbouw. Op {nl_datum(d1)} "
+             f"{'was dat 1 pand' if a1 == 1 else f'waren dat {a1} panden'}. De bouw is tussen die twee "
+             f"datums begonnen; vanaf hier gaan de keuzemomenten lopen.")
+    elif a1 > a0:
+        z = (f"Het aantal panden in aanbouw rond {naam} liep tussen {span} op van {a0} naar "
+             f"{a1}. De bouw ligt hier dus niet stil, en dat is het moment waarop de "
+             f"meerwerklijst begint te sluiten.")
+    elif a1 < a0 and o1 == o0:
+        z = (f"Tussen {span} daalde het aantal panden in aanbouw rond {naam} van {a0} naar "
+             f"{a1}, zonder dat er meer als opgeleverd geregistreerd werden. Dat gebeurt als "
+             f"panden van status wisselen; wij melden het zoals het Kadaster het noteert.")
+    else:
+        z = (f"Over {n} metingen tussen {span} bleef het beeld rond {naam} gelijk: "
+             f"{a1} pand{'en' if a1 != 1 else ''} in aanbouw en {o1} opgeleverd. Geen beweging "
+             f"in de registratie hoeft geen stilstand op de bouwplaats te zijn &mdash; het "
+             f"Kadaster boekt pas bij een statuswijziging.")
+    return f"<p>{z}</p>"
 
 
 def betrouwbaar(p, meting):
