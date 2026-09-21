@@ -652,13 +652,25 @@ def auping_blok(p, naam_project, slug):
         return ""
     link = (f"https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site"
             f"&amp;utm_campaign=auping&amp;utm_content=project-{slug}")
+    # Dezelfde foto als op de homepage (Noble Solid Oak), met hetzelfde srcset.
+    # Een bed laat zien waar de korting over gaat; het logo zegt alleen wie het
+    # merk is, en dat staat al in de kop en op de knop.
     return f"""<h2>{kop}</h2>
+<div class="pk-bed">
+<img src="/img/auping-noble-solid-oak.webp"
+     srcset="/img/auping-noble-solid-oak-sm.webp 500w, /img/auping-noble-solid-oak.webp 1000w"
+     sizes="(max-width:760px) 92vw, 280px"
+     alt="Auping Noble Solid Oak, een bed van massief eiken in een slaapkamer"
+     width="1000" height="1000" loading="lazy" decoding="async">
+<div>
 <p>{waar} Tien procent op het reguliere assortiment, te verzilveren in de winkel met je
 persoonlijke code. Bij een besteding vanaf &euro;5.000 komt daar een gratis leenbed bij voor de
 levertijd, en vanaf &euro;6.500 een overnachting. De korting komt niet bovenop een lopende actie
 of sale &mdash; dan geldt die prijs.</p>
 <p>Die persoonlijke code krijg je met hetzelfde gratis account waarin je plattegrond staat.</p>
 <p><a class="cta-primary" href="{link}">{knop}</a></p>
+</div>
+</div>
 <p class="noot">Auping is aangesloten partner. De korting weegt niet mee in de bedrijven die wij
 hierboven noemen; die lijst komt uit afstand, type en beoordelingen.</p>"""
 
