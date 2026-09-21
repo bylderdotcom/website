@@ -1809,6 +1809,19 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # Eén handeling direct onder het antwoord. Stond eerst op 1933 px, ver onder de
     # vouw: de bezoeker las wat wij weten en kon er niets mee. Les van Solvari, waar
     # de enige handeling op 441 px staat.
+    # De hero belooft anders iets wat niet meer kan: "wij volgen de bouw" en
+    # "wij bewaken je keuzemomenten" gaan over een bouw die af is. De regel-
+    # afbreking in de oorspronkelijke zin blijft staan, zodat de 281 pagina's van
+    # projecten die nog moeten opleveren byte voor byte gelijk blijven.
+    if is_opgeleverd:
+        intro_zin = ("De oplevering is geweest. Wij helpen je met wat daarna komt: wat de "
+                     "afwerking hoort te kosten, en bij welke winkels je korting krijgt.")
+        hero_knop = "Richt je woning in"
+    else:
+        intro_zin = ("Wij volgen de bouw, bewaken je keuzemomenten en zorgen dat je bij de\n"
+                     "afwerking en inrichting niet te veel betaalt.")
+        hero_knop = "Volg dit project"
+
     if is_opgeleverd:
         start_zin = (f"<p><strong>Woning gekocht in {E(naam)}?</strong> Hier is opgeleverd, dus "
                      f"het meerwerk is geweest. Wat je zelf doet &mdash; vloer, deuren, "
@@ -1993,10 +2006,9 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 <div>
 <div class="pk-etiket">{E(plaats)} &middot; {aant} &middot; {("opgeleverd " + E(opgel_wanneer)) if is_opgeleverd else ("oplevering " + E(opl_tekst))}</div>
 <h1>Je tekende voor {E(naam)}.<br>Nu begint het pas.</h1>
-<p class="intro">Wij volgen de bouw, bewaken je keuzemomenten en zorgen dat je bij de
-afwerking en inrichting niet te veel betaalt.</p>
+<p class="intro">{intro_zin}</p>
 <div class="pk-acties">
-<a class="cta-primary" href="{app}">Volg dit project &rarr;</a>
+<a class="cta-primary" href="{app}">{hero_knop} &rarr;</a>
 <a class="cta-stil" href="{app}-regisseur">Praat met een woningregisseur</a>
 </div>
 <p class="pk-onder">Gratis account &middot; geen betaling nodig &middot; opzeggen wanneer je wilt</p>
