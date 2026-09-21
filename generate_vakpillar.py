@@ -899,9 +899,9 @@ def claim_cta(vak, stad_label=None):
     waar = f" in {html.escape(stad_label)}" if stad_label else ""
     return (f'<div style="background:rgba(184,92,56,0.06);border:1px solid rgba(184,92,56,0.2);border-radius:14px;padding:18px 20px;margin:22px 0;">'
             f'<div style="font-weight:700;color:#1A1208;font-size:15px;margin-bottom:4px;">Ben jij {html.escape(vak["sing"])}{waar}? Sta erbij.</div>'
-            f'<div style="font-size:13.5px;color:rgba(61,46,30,0.7);line-height:1.6;margin-bottom:12px;">Vermelding is gratis. Activeer je profiel voor &euro;79 per jaar en word gekoppeld aan nieuwbouw- en verbouwkopers die n&uacute; een {html.escape(vak["sing"])} zoeken &mdash; geen terugkerende leadkosten.</div>'
-            f'<a href="{VOORDELEN}/" style="display:inline-block;background:#B85C38;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Bekijk de voordelen &amp; meld je aan &#8594;</a></div>'
-            f'<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:8px;">Bedrijfsgegevens via Google &amp; OpenStreetMap (&copy; OpenStreetMap-bijdragers, ODbL). Reviewscores afkomstig van de genoemde bronnen. Klopt iets niet? Laat het ons weten.</p>')
+            f'<div style="font-size:13.5px;color:rgba(61,46,30,0.7);line-height:1.6;margin-bottom:12px;">Je kunt dit profiel <strong>gratis overnemen</strong> en er je eigen omschrijving, diensten en werkgebied in zetten. Daarna kun je partner worden (&euro;79 per jaar) en reageren op nieuwbouw- en verbouwkopers die n&uacute; een {html.escape(vak["sing"])} zoeken &mdash; geen terugkerende leadkosten.</div>'
+            f'<a href="{VOORDELEN}/" style="display:inline-block;background:#B85C38;color:#F5F0E8;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;">Zo neem je je profiel over &#8594;</a></div>'
+            f'<p style="font-size:11px;color:rgba(61,46,30,0.4);margin-top:8px;">Bedrijfsgegevens via Google &amp; OpenStreetMap (&copy; OpenStreetMap-bijdragers, ODbL). Reviewscores afkomstig van de genoemde bronnen. Klopt iets niet? <a href="https://app.bylder.com/profiel-verwijderen" rel="nofollow" style="color:inherit;text-decoration:underline;">Laat het ons weten of haal je profiel weg</a>.</p>')
 
 def offerte_check_slug_bestaat(vak_slug, stad_slug):
     return os.path.isdir(os.path.join(ROOT, "offerte-check", vak_slug, stad_slug))
