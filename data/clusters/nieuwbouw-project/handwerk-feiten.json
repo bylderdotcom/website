@@ -26,6 +26,52 @@
    "waarde": ""
   }
  },
+ "de-faam-breda": {
+  "historie": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek stond een snoepfabriek met een kenmerkende schoorsteen en fabrieksgebouwen. De oude schoorsteen en gevelletters herinneren aan dit industriële verleden, dat behouden blijft in de nieuwe ontwikkeling."
+  },
+  "ontwikkelaar": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De FAAM wordt ontwikkeld door V.O.F. Fijn Faam Fantastisch, een samenwerking tussen Stebru B.V. en Synchroon B.V. De verkoop wordt afgehandeld door Van de Water Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de Citroencentrale komt horeca in de begane grond. De Faamhal en Fuséehal krijgen creatieve werkconcepten met flexplekken, atelierruimtes en studio's. Rond het industrieel erfgoed worden groene pleinen ingericht."
+  }
+ },
+ "dillekwartier-fase-2-arnhem": {
+  "bestemming": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De 116 woningen zijn ontworpen door architect Weusten Liedenbaum met eigentijds dorpse architectuur, inclusief opvallende dakkappellen en gemetselde elementen. De omgevingsvergunning voor fase 1A en B is verleend en onherroepelijk."
+  },
+  "ontwikkelaar": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VanWonen ontwikkelt de buurt Dillekwartier als onderdeel van Kruidenhorst, waarbij verschillende ontwikkelaars elk hun eigen deelbuurtjes bouwen."
+  },
+  "voorzieningen": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Scholen, winkelcentrum, zorginstellingen en sportclubs zijn op loop- en fietsafstand bereikbaar. De Arnhemse binnenstad is per fiets of openbaar vervoer snel bereikt via NS Station Arnhem-Zuid."
+  }
+ },
+ "fase-7b-best": {
+  "bestemming": {
+   "bron": "https://tuinen-aarlesche-erven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk is ruim opgezet met aandacht voor groen, duurzaamheid en leefkwaliteit. De architectuur is afwisselend vormgegeven en sluit aan op het dorpse karakter van Aarlesche Erven. Fase 7B brengt twee-onder-een-kapwoningen, vrijstaande woningen en rijwoningen in de verkoop."
+  },
+  "voorzieningen": {
+   "bron": "https://tuinen-aarlesche-erven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het centrum van Best zijn supermarkten, speciaalzaken, restaurants en praktische voorzieningen op korte fietsafstand. Verder zijn museum Bevrijdende Vleugels, brasserie 't Boshuys in de Sonse Heide (20 minuten fietsen), recreatiepark Aquabest (25 minuten fietsen) en natuurgebied Het Groene Woud (binnen 5 kilometer) bereikbaar."
+  }
+ },
  "fortunapark-vlaardingen-vlaardingen": {
   "bestemming": {
    "bron": "",
@@ -53,6 +99,18 @@
    "waarde": ""
   }
  },
+ "heem-dongen": {
+  "ontwikkelaar": {
+   "bron": "https://woneninnoorderbunder.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ontwikkelaar Blink bouwt de koopwoningen, woningcorporatie Casade realiseert de huurwoningen en de gemeente Dongen zorgt voor de openbare ruimte."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninnoorderbunder.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt liggen Park Vredeoord met wandelpaden (ongeveer 5 minuten fietsen), cultuurhuis De Cammeleur (circa 5 minuten fietsen), restaurant Den Hespel aan de rivier met aangrenzende speeltuin (circa 12 minuten fietsen) en recreatiepark 't Fazantje (ongeveer 9 minuten fietsen)."
+  }
+ },
  "hoeksenes-amsterdam": {
   "bestemming": {
    "bron": "",
@@ -60,9 +118,9 @@
    "waarde": ""
   },
   "historie": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.woneninhoeksenes.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek lag vroeger Houcky Nes, een eilandje in het IJ dat naar zijn lage, hoekige vorm was vernoemd. Na inpoldering in 1875 verdween het eiland onder de nieuwe polder, maar de naam bleef bestaan."
   },
   "ontwikkelaar": {
    "bron": "",
@@ -70,14 +128,14 @@
    "waarde": ""
   },
   "starterslening": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.woneninhoeksenes.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt 50 jaar afgekochte erfpacht zonder verrassingen in erfpachtkosten. Er is geen zelfbewoningsplicht of anti-speculatiebeding van toepassing, wat volledige vrijheid bij aankoop geeft."
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.woneninhoeksenes.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving zijn winkels, horeca en cultuur aanwezig. De wijk ligt aan het water en biedt rust en ruimte, met natuur dichtbij."
   }
  },
  "hof-van-rijswijk-de-prins-rijswijk-zh": {
@@ -163,9 +221,9 @@
  },
  "leeuwepoort-herenhuizen-en-stadswoningen-utrecht": {
   "bestemming": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project Leeuwepoort maakt deel uit van de wijk Leeuwesteyn aan de westkant van het Amsterdam-Rijnkanaal in Utrecht. De architectuur volgt art deco-stijl met herkenbare elementen en de wijk heeft een Utrechts karakter met stedelijke en groene kenmerken. Het plan voorziet in drie groene binnentuinen (Egeltuin, Pergolatuin en Wadituim) en een Oeverpark langs het kanaal."
   },
   "historie": {
    "bron": "",
@@ -183,9 +241,62 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk Leeuwesteyn grenst aan Leidsche Rijn Centrum en Hoge Weide. Via de Dafne Schippersbrug bereik je het oude centrum van Utrecht. In de buurt zijn groene veldjes tussen de bouwvelden voor speelgelegenheid. Het Oeverpark langs het Amsterdam-Rijnkanaal biedt ruimte voor recreatie met bestaande en nieuwe bomen."
+  }
+ },
+ "ooievaarshoek-oss": {
+  "ontwikkelaar": {
+   "bron": "https://ooievaarshoek.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ballast Nedam Development ontwikkelt het project samen met de gemeente Oss. Het bedrijf werkt aan het voorlopig ontwerp stedenbouwkundig plan en presenteerde dit plan op de inloopbijeenkomst."
+  },
+  "voorzieningen": {
+   "bron": "https://ooievaarshoek.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk krijgt een centraal dorpsplein en openbare binnentuinen als ontmoetingsplekken. Er komen speelplekken en gedeelde voorzieningen. Natte graslanden, boomgaarden en groene randen zijn onderdeel van de inrichting."
+  }
+ },
+ "rotterdam-tree-house-koopappartementen-rotterdam": {
+  "ontwikkelaar": {
+   "bron": "https://www.treehouserotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is een ontwikkeling van PRSC, met concept en realisatie door dezelfde partij. De verkoopinformatie wordt verzorgd door Ooms Makelaars en Baljon Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://www.treehouserotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het gebouw zijn horecagelegenheden, een cultuurpodium voor ongeveer 200 personen, en kantoorruimte aanwezig. Op loopafstand liggen restaurants, koffiezaken, cafés, winkels en culturele voorzieningen van Rotterdam. Het station Rotterdam Centraal ligt direct naast het gebouw."
+  }
+ },
+ "sierlijke-dames-eindhoven": {
+  "ontwikkelaar": {
+   "bron": "https://www.sierlijkedames.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Land 's-Heeren ontwikkelt het project. De makelaar en verkoper is Van Santvoort Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://www.sierlijkedames.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt zijn koffiebars, het Klokgebouw, het Philips Stadion en dagelijkse voorzieningen. Het project grenst aan het Anthony van Leeuwenhoekpark en ligt dicht bij Strijp-S met restaurants en het centrum van Eindhoven."
+  }
+ },
+ "the-future-alkmaar": {
+  "ontwikkelaar": {
+   "bron": "https://account.thefuture.nl/aanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is een ontwikkeling van Ter Steege Bouw Vastgoed uit Apeldoorn en Vastesteen Projectontwikkeling uit Alkmaar."
+  },
+  "starterslening": {
+   "bron": "https://thefuture.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Dit project biedt 36 woningen met KoopStart via het Nationaal Fonds Betaalbare Koopwoningen. Daarvan word je woning aangeboden voor een lagere prijs dan de marktwaarde. Je moet onder andere jonger zijn dan 35 jaar en je gezamenlijke inkomen mag maximaal twee keer modaal bedragen (voor 2026: €93.531 bruto per jaar)."
+  },
+  "voorzieningen": {
+   "bron": "https://thefuture.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "The Future ligt direct naast NS Station Alkmaar Noord, met de binnenstad op enkele minuten fietsen. In het project zelf zijn een gezamenlijke binnentuin en groene daktuinen voorzien waar je elkaar ontmoet."
   }
  },
  "westeinderhage-fase-1-aalsmeer": {
