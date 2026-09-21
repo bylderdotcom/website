@@ -136,6 +136,73 @@ def oplever_schatting(p):
             "dit project publiceert zelf geen datum")
 
 
+# Maandnummer per aanduiding zoals projecten hem schrijven. Bewust aan de late
+# kant: bij twijfel liever te laat dan te vroeg, want te vroeg betekent dat de
+# pagina een koper vertelt dat hij te laat is terwijl de keuzes nog open staan.
+_MAAND = {"januari": 1, "februari": 2, "maart": 3, "april": 4, "mei": 5, "juni": 6,
+          "juli": 7, "augustus": 8, "september": 9, "oktober": 10, "november": 11,
+          "december": 12}
+_PERIODE = {"begin": 4, "voorjaar": 6, "medio": 8, "zomer": 9, "midden": 8,
+            "najaar": 12, "herfst": 12, "eind": 12, "winter": 12}
+_KWARTAAL = {1: 3, 2: 6, 3: 9, 4: 12}
+
+
+def opgeleverd(p):
+    """(True, wanneer) als de oplevering aantoonbaar achter ons ligt.
+
+    WAAROM DIT POORTJE BESTAAT. De pagina rekende terug vanuit een opleverdatum
+    zonder te kijken of die al gepasseerd was. Op Podium (Amersfoort, april 2026)
+    en Nova 67 (Zwolle, medio 2026) stond daardoor in september 2026 nog steeds
+    dat de keuze "op de meerwerklijst valt, niet op de verhuislijst". Voor wie
+    daar koopt is dat precies verkeerd om: de meerwerklijst is daar dicht. De
+    tijdlijn en de deadlinetabel filterden verstreken mómenten al weg, maar niet
+    het geval dat de oplevering zélf voorbij is.
+
+    ALLEEN OP EEN NAGELOPEN DATUM. Een geschatte oplevering ("tussen 2027 en
+    2028", uit een vuistregel of uit kwartaalnotaties die net zo goed over de
+    verkoopstart kunnen gaan) is te zwak om een pagina op om te gooien: een
+    verkeerde gok schrijft een project af dat nog in verkoop is. Daarom telt
+    alleen wat een mens heeft nagelezen (opleverdata-bevestigd.json) of een
+    expliciet oplevertrefwoord uit de bron.
+
+    "VANAF" TELT NIET. "vanaf eind 2027" of "vanaf Q2 2026" is een gefaseerde
+    start, geen eindpunt: latere fases moeten dan nog kiezen. Zo'n project blijft
+    dus een project in wording.
+    """
+    bev = _opleverdata().get(p.get("url"))
+    if bev:
+        wanneer, jaar = bev["wanneer"], bev["jaar"]
+    elif p.get("oplevering") and p.get("oplevering_bron") == "oplevertrefwoord":
+        wanneer, jaar = f"in {p['oplevering']}", p["oplevering"]
+    else:
+        return (False, "")
+
+    laag = (wanneer or "").lower()
+    if "vanaf" in laag or "eerste woningen" in laag:
+        return (False, "")
+
+    maand = 12
+    for woord, m in _MAAND.items():
+        if woord in laag:
+            maand = m
+            break
+    else:
+        kw = re.search(r"\b(?:q|kwartaal\s*)([1-4])\b", laag) or \
+             re.search(r"\b([1-4])e\s*kwartaal\b", laag)
+        if kw:
+            maand = _KWARTAAL[int(kw.group(1))]
+        else:
+            for woord, m in _PERIODE.items():
+                if laag.startswith(woord) or f" {woord} " in f" {laag} ":
+                    maand = m
+                    break
+
+    # Strikt vóór deze maand: een oplevering die deze maand valt is nu bezig.
+    if (jaar, maand) < (VANDAAG.year, VANDAAG.month):
+        return (True, wanneer)
+    return (False, "")
+
+
 # Ketens die als vakbedrijf of woonwinkel in de data staan maar het niet zijn.
 # HORNBACH stond als badkamerspecialist op de pagina, een PLUS-supermarkt als
 # verlichtingszaak en een feestwinkel als woonwinkel — direct onder de zin dat
@@ -649,8 +716,8 @@ afwerking v&oacute;&oacute;r oplevering moet, en welke aankopen kunnen wachten t
 kloppen. In &eacute;&eacute;n plan, met &eacute;&eacute;n aanspreekpunt.</p>
 <p>Voor kopers in {E(naam_project)} doet <strong>Daniel Paaij</strong> dit zelf, aan de
 keukentafel in {E(plaats)}. Hij is de oprichter van Bylder en houdt deze gesprekken bewust
-zelf: de koper krijgt er een plan uit, en wij zien waar het in de praktijk vastloopt. Met een
-oplevering {E(opl_tekst)} vallen de keuzes nu.</p>
+zelf: de koper krijgt er een plan uit, en wij zien waar het in de praktijk vastloopt.
+{moment_zin(p, opl_tekst)}</p>
 <p>Het gesprek en het plan zijn <strong>gratis</strong>. Geen uurtarief, geen offerte achteraf.</p>
 <p><a class="cta-primary" href="{link}">Plan een gesprek over {E(naam_project)}</a></p>
 <p class="noot">Waarom dit gratis kan: Bylder verdient aan de bedrijven en winkels die zich bij
@@ -829,7 +896,16 @@ def afgeleide_vragen(p, naam, plaats, lo, hi, won, buren, gem):
 
     # 2. Wat sluit er nú. Dezelfde bron als de deadlinetabel, maar dan als
     #    antwoord op de vraag die een koper in augustus stelt.
-    dl = deadlines(lo, hi) if lo else []
+    # Na de oplevering klopt deze vraag niet meer: er sluit niets meer, want de
+    # meerwerklijst is dicht. De tabel filtert verstreken mómenten weg, maar bij
+    # een project dat al is opgeleverd blijft "kort voor oplevering" staan.
+    dl = [] if opgeleverd(p)[0] else (deadlines(lo, hi) if lo else [])
+    if opgeleverd(p)[0]:
+        uit.append((f"Wat moet ik nu al beslissen voor {naam}?",
+            f"Bij de bouwer niets meer: {naam} is opgeleverd en de meerwerklijst is gesloten. "
+            f"Wat overblijft regel je zelf en in je eigen tempo — vloer, binnendeuren, "
+            f"wandafwerking en raamdecoratie. Staat de woning nog leeg, dan is dat het "
+            f"goedkoopste moment om het in één keer te doen."))
     if dl:
         eerste = dl[0]
         uit.append((f"Wat moet ik nu al beslissen voor {naam}?",
@@ -1110,7 +1186,7 @@ def prijsfeiten_blok(p, naam, plaats):
 GIETVLOER_M2 = (80, 130)          # PU-woonvloer, zoals op /gietvloer/ gepubliceerd
 
 
-def afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi):
+def afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi, opgel=""):
     o_van, o_tot = p.get("woonoppervlak_van"), p.get("woonoppervlak_tot")
     if not o_van:
         return ""
@@ -1132,6 +1208,16 @@ def afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi):
         return "&euro;" + f"{round(n / 100) * 100:,}".replace(",", ".")
 
     jaar = f"{lo}" if hi <= lo else f"{lo}\u2013{hi}"
+    if opgel:
+        deur_zin = ("Het kozijn gaat &iacute;n de wand en wordt meegestukadoord. Hier is "
+                    "opgeleverd, dus dit loopt niet meer via de meerwerklijst: je kiest "
+                    "zelf wie het doet en wanneer.")
+    else:
+        # De regelafbreking staat er bewust in: zo blijven de pagina's van
+        # projecten die nog niet zijn opgeleverd byte voor byte gelijk.
+        deur_zin = (f"Het kozijn gaat &iacute;n de wand en wordt meegestukadoord: bij een "
+                    f"oplevering in\n{jaar} is dat een regel op de meerwerklijst, in een "
+                    f"bestaand huis een verbouwing.")
     return f"""<h2>Wat de afwerking hier ongeveer kost</h2>
 <p>Gerekend met het woonoppervlak dat {E(naam)} zelf opgeeft
 ({o_van}{f'&ndash;{o_tot}' if o_tot and o_tot > o_van else ''} m&sup2;). Richtbedragen om mee te
@@ -1153,8 +1239,7 @@ het kan, en dus wanneer je moet beslissen.</p>
 <div class="pk-etiket">Binnendeuren</div>
 <h3>Plafondhoog, zonder kozijn</h3>
 {VENSTER.format(conf=conf)}
-<p>Het kozijn gaat &iacute;n de wand en wordt meegestukadoord: bij een oplevering in
-{jaar} is dat een regel op de meerwerklijst, in een bestaand huis een verbouwing. De prijs hangt
+<p>{deur_zin} De prijs hangt
 af van het aantal deuren en de afwerking &mdash; in de configurator zie je hem op jouw eigen
 samenstelling.</p>
 <p><a class="cta-primary" href="{conf}">Stel je deuren samen &rarr;</a></p>
@@ -1384,7 +1469,44 @@ def prijsvergelijking(g, land, plaats):
             f'<div class="cijfer">&euro;{eur_duizend(nl)}</div></div></div>')
 
 
-def regisseur_kaart(naam_project, plaats, slug, opl_tekst):
+def moment_zin(p, opl_tekst, aanwijzend="de"):
+    """Eén zin over het moment, die ook klopt als er al opgeleverd is.
+
+    Stond twee keer bijna identiek in de regisseurblokken ("Met een oplevering
+    <datum> vallen de keuzes nu"). Na oplevering is dat onwaar: de keuzes bij de
+    bouwer zijn dan geweest, en juist daarom is er iets te regelen.
+    """
+    klaar, wanneer = opgeleverd(p)
+    if klaar:
+        return (f"Hier is {E(wanneer)} opgeleverd, dus de meerwerklijst is dicht &mdash; "
+                f"wat er nu gebeurt, kies je zelf.")
+    return f"Met een oplevering {E(opl_tekst)} vallen {aanwijzend} keuzes nu."
+
+
+def moment_blok(is_opgeleverd, opgel_wanneer, opl_tekst, grondslag, lo, app):
+    """De keuzemomenten, of — na oplevering — wat er dan nog te kiezen valt.
+
+    Vóór de oplevering is dit de urgentie van de pagina: de tijdlijn telt terug
+    naar de sleutel. Daarna slaat die redenering om. De tijdlijn zou alles grijs
+    tonen zonder eerstvolgend moment, en "zet je opleverdatum in je dossier"
+    vraagt om iets wat de bewoner al heeft. Wat er dan nog wél toe doet is dat
+    de meerwerklijst dicht is en de keuze dus van hem is.
+    """
+    if is_opgeleverd:
+        return f"""<h2>Wat er nu nog te kiezen valt</h2>
+<p>De oplevering was {E(opgel_wanneer)}. De meerwerklijst is daarmee dicht, en dat scheelt:
+vloer, deuren, wandafwerking en raamdecoratie liggen nu bij jou en niet bij de
+aannemer. Wie er nog niet woont heeft het rustigste moment te pakken dat er is, want in een
+leeg huis kan alles in &eacute;&eacute;n keer.</p>
+<p style="margin-top:20px;"><a class="cta-stil" href="{app}">Zet je woning in je dossier</a></p>"""
+    return f"""<h2>Wat er nu op je afkomt</h2>
+<p>Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Je eigen
+<a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is leidend.</p>
+{tijdlijn(lo)}
+<p style="margin-top:20px;"><a class="cta-stil" href="{app}">Zet je opleverdatum in je dossier</a></p>"""
+
+
+def regisseur_kaart(naam_project, plaats, slug, opl_tekst, opl_zin):
     """De woningregisseur in een donker vlak, zonder portret.
 
     Er komt geen foto (besluit Daniel, 29 aug). Een monogram is eerlijker dan een
@@ -1398,7 +1520,7 @@ def regisseur_kaart(naam_project, plaats, slug, opl_tekst):
 <div><h3>Dani&euml;l Paaij</h3><div class="rol">Woningregisseur &middot; oprichter van Bylder</div></div></div>
 <p>Meerwerk, afwerking en inrichting in &eacute;&eacute;n plan, aan je eigen keukentafel in {plaats}.
 Ongeveer anderhalf uur. Je krijgt een overzicht van wat je via de aannemer doet, wat je na
-oplevering zelf regelt, en in welke volgorde. Met een oplevering {opl_tekst} vallen die keuzes nu.</p>
+oplevering zelf regelt, en in welke volgorde. {opl_zin}</p>
 <p><strong>Het gesprek en het plan zijn gratis.</strong> Geen uurtarief, geen offerte achteraf.</p>
 <p><a class="cta-primary" href="{link}">Plan een gesprek over {naam_project}</a></p>
 <p class="fijn">Waarom dit gratis kan: Bylder verdient aan de bedrijven en winkels die zich bij ons
@@ -1497,17 +1619,24 @@ VENSTER = (
 )
 
 
-def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi):
+def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel=""):
     stad_slug = re.sub(r"[^a-z0-9]+", "-", plaats_ruw.lower()).strip("-")
     n_gv = _gietvloer_steden().get(stad_slug, 0)
     conf = ("/kozijnloze-deuren/configurator/?utm_source=bylder-site"
             f"&amp;utm_campaign=project-{slug}")
     gv_href = f"/gietvloer/{stad_slug}/" if n_gv else "/gietvloer/"
 
-    # De deadline in eigen woorden, met het opleverjaar van dít project.
+    # De deadline in eigen woorden, met het opleverjaar van dít project. Is er
+    # al opgeleverd, dan is het omgekeerde waar: de meerwerklijst is dicht, en
+    # dat is hier geen verlies maar de kern van het aanbod — je bent niet meer
+    # gebonden aan wat de bouwer aanbood.
     jaar = f"{lo}" if hi <= lo else f"{lo}-{hi}"
-    deadline = (f"Bij een oplevering in {jaar} valt die keuze op de meerwerklijst, "
-                f"niet op de verhuislijst.")
+    if opgel:
+        deadline = ("De meerwerklijst is hier dicht: dit regel je nu zelf, "
+                    "bij wie je zelf kiest.")
+    else:
+        deadline = (f"Bij een oplevering in {jaar} valt die keuze op de meerwerklijst, "
+                    f"niet op de verhuislijst.")
 
     gv_bewijs = (f"Je ziet wie het in {E(plaats)} doet, met beoordelingen en afstand."
                  if n_gv else
@@ -1516,10 +1645,21 @@ def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi):
     lokaal = (f" In {E(plaats)} hebben wij {n_gv} gietvloerleggers in kaart gebracht,"
               f" met hun beoordelingen." if n_gv >= 3 else "")
     venster = VENSTER.format(conf=conf)
-    return f"""<h2>Twee afwerkingen die je nu kiest, niet later</h2>
-<p>Deuren zonder kozijn en een gietvloer kunnen allebei alleen in een nieuw huis, en allebei
-moeten ze besloten zijn voordat de stukadoor en de dekvloer klaar zijn &mdash; dus ruim
-v&oacute;&oacute;r de oplevering van {E(naam)}.{lokaal} {deadline}</p>
+    if opgel:
+        inleiding = (f"<p>Deuren zonder kozijn en een gietvloer horen bij de eerste "
+                     f"maanden in een nieuw huis: allebei gaan ze het best in een woning "
+                     f"waar nog niets in zit.{lokaal} {deadline}</p>")
+        kop = "Twee afwerkingen die je het beste nu doet"
+    else:
+        # Regelafbrekingen exact als voorheen: pagina's van projecten die nog
+        # niet zijn opgeleverd blijven zo byte voor byte gelijk.
+        inleiding = (f"<p>Deuren zonder kozijn en een gietvloer kunnen allebei alleen in een "
+                     f"nieuw huis, en allebei\nmoeten ze besloten zijn voordat de stukadoor en "
+                     f"de dekvloer klaar zijn &mdash; dus ruim\nv&oacute;&oacute;r de oplevering "
+                     f"van {E(naam)}.{lokaal} {deadline}</p>")
+        kop = "Twee afwerkingen die je nu kiest, niet later"
+    return f"""<h2>{kop}</h2>
+{inleiding}
 <div class="pk-keuzes">
 <article>
 <div class="pk-etiket">Deuren zonder kozijn</div>
@@ -1549,6 +1689,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     won = p.get("woningen") or 0
     slug = slugify(naam, p["plaats"])
     opl_tekst, lo, hi, grondslag = oplever_schatting(p)
+    is_opgeleverd, opgel_wanneer = opgeleverd(p)
     plaats_ruw = p["plaats"]
     hard = p.get("oplevering_bron") == "oplevertrefwoord"
     reg = f"?utm_source=bylder-site&amp;utm_campaign=project-{slug}"
@@ -1557,7 +1698,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # De eigen cijfers van het project, en wat de afwerking daarmee kost.
     prijs_html, prijs_vragen = prijsfeiten_blok(p, naam, plaats)
     site_html, site_vragen = projectsite_blok(p, naam)
-    budget_html = afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi)
+    budget_html = afwerkbudget_blok(p, naam, plaats_ruw, slug, lo, hi, opgel_wanneer)
 
     besl_tot = sum(len(r["beslissingen"]) for r in ruimtes)
     mw = sorted({m for r in ruimtes for m in (r.get("meerwerk") or [])})
@@ -1668,11 +1809,19 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # Eén handeling direct onder het antwoord. Stond eerst op 1933 px, ver onder de
     # vouw: de bezoeker las wat wij weten en kon er niets mee. Les van Solvari, waar
     # de enige handeling op 441 px staat.
+    if is_opgeleverd:
+        start_zin = (f"<p><strong>Woning gekocht in {E(naam)}?</strong> Hier is opgeleverd, dus "
+                     f"het meerwerk is geweest. Wat je zelf doet &mdash; vloer, deuren, "
+                     f"wandafwerking &mdash; koop je bij ons voordeliger, en je garanties staan "
+                     f"op &eacute;&eacute;n plek.</p>")
+    else:
+        start_zin = (f"<p><strong>Woning gekocht in {E(naam)}?</strong> Wij volgen de bouw voor "
+                     f"je en rekenen elke deadline terug naar jouw bouwnummer. Je bespaart bij "
+                     f"de afwerking en inrichting, en je garanties staan straks op "
+                     f"&eacute;&eacute;n plek.</p>")
     start_html = (
         f'<div class="startblok">'
-        f"<p><strong>Woning gekocht in {E(naam)}?</strong> Wij volgen de bouw voor je en rekenen "
-        f"elke deadline terug naar jouw bouwnummer. Je bespaart bij de afwerking en inrichting, "
-        f"en je garanties staan straks op &eacute;&eacute;n plek.</p>"
+        f"{start_zin}"
         f'<p><a class="cta-primary" href="{app}">Volg {E(naam)} gratis</a></p>'
         f'<p class="klein">Gratis account &middot; geen betaling nodig &middot; opzeggen wanneer je wilt</p>'
         f"</div>")
@@ -1710,11 +1859,18 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             f"weken de bouwstatus in het Kadaster; het verloop staat in het logboek op deze pagina."))
     elif _opleverdata().get(p.get("url")):
         b = _opleverdata()[p["url"]]
-        faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
-            f"Het project noemt zelf {b['wanneer']} als moment van oplevering; dat staat op de "
-            f"eigen site van {naam} en is door ons nagelezen. Een planning is geen belofte — je "
-            f"koop-/aannemingsovereenkomst is leidend. Wij meten elke twee weken de bouwstatus "
-            f"in het Kadaster."))
+        if is_opgeleverd:
+            faq_items.append((f"Is {naam} al opgeleverd?",
+                f"Ja. Het project noemt zelf {b['wanneer']} als moment van oplevering; dat staat "
+                f"op de eigen site van {naam} en is door ons nagelezen. De meerwerklijst is "
+                f"daarmee gesloten: afwerking en inrichting regel je nu zelf. Wij meten elke twee "
+                f"weken de bouwstatus in het Kadaster."))
+        else:
+            faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
+                f"Het project noemt zelf {b['wanneer']} als moment van oplevering; dat staat op de "
+                f"eigen site van {naam} en is door ons nagelezen. Een planning is geen belofte — je "
+                f"koop-/aannemingsovereenkomst is leidend. Wij meten elke twee weken de bouwstatus "
+                f"in het Kadaster."))
     else:
         faq_items.append((f"Wanneer wordt {naam} opgeleverd?",
             f"Er is geen officiële opleverdatum gepubliceerd. Wij schatten een oplevering "
@@ -1745,7 +1901,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # Direct na de keuzemomenten: daar staat wát er beslist moet worden, hier
     # staat wie het samen met je doet. Vóór de bedrijvenlijsten, want dit is de
     # regie over die lijsten en niet nog een aanbieder erin.
-    reg_html = (regisseur_kaart(E(naam), E(plaats), slug, opl_tekst)
+    reg_html = (regisseur_kaart(E(naam), E(plaats), slug, opl_tekst, moment_zin(p, opl_tekst, "die"))
                 if plaats_ruw in REGISSEUR_GEBIED else "")
 
     aup_html = auping_blok(p, E(naam), slug)
@@ -1819,7 +1975,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         _d = date.fromisoformat(bag[0])
         strook.append((f"{_d.day} {NL_MAAND[_d.month - 1][:3]}", "laatste meting"))
     else:
-        strook.append((opl_tekst, "verwachte oplevering"))
+        strook.append((opgel_wanneer, "opgeleverd") if is_opgeleverd
+                      else (opl_tekst, "verwachte oplevering"))
 
     vragen_html = "".join(
         f'<details class="pk-vraag"{" open" if n == 0 else ""}>'
@@ -1834,7 +1991,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
 <div class="pk-hero">
 <div>
-<div class="pk-etiket">{E(plaats)} &middot; {aant} &middot; oplevering {E(opl_tekst)}</div>
+<div class="pk-etiket">{E(plaats)} &middot; {aant} &middot; {("opgeleverd " + E(opgel_wanneer)) if is_opgeleverd else ("oplevering " + E(opl_tekst))}</div>
 <h1>Je tekende voor {E(naam)}.<br>Nu begint het pas.</h1>
 <p class="intro">Wij volgen de bouw, bewaken je keuzemomenten en zorgen dat je bij de
 afwerking en inrichting niet te veel betaalt.</p>
@@ -1853,13 +2010,9 @@ afwerking en inrichting niet te veel betaalt.</p>
 
 {site_html}
 
-{budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi)}
+{budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel_wanneer)}
 
-<h2>Wat er nu op je afkomt</h2>
-<p>Teruggerekend vanuit een oplevering {opl_tekst} ({grondslag}). Je eigen
-<a href="/kennisbank/bouwtechniek/">koop-/aannemingsovereenkomst</a> is leidend.</p>
-{tijdlijn(lo)}
-<p style="margin-top:20px;"><a class="cta-stil" href="{app}">Zet je opleverdatum in je dossier</a></p>
+{moment_blok(is_opgeleverd, opgel_wanneer, opl_tekst, grondslag, lo, app)}
 
 {gem_html}
 {prijsvergelijking(g_hier, G["landelijk"], E(plaats))}
@@ -1908,7 +2061,17 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
     # krijgt ook de titel de belofte. GSC beslecht per pagina wie gelijk had.
     _m = [m for m in (SNAPSHOTS.get(p.get("url")) or []) if betrouwbaar(p, m[1])]
     pct_nu = _m[-1][1].get("verkocht_pct") if _m else None
-    if pct_nu is None or pct_nu >= 85:
+    if opgeleverd(p)[0]:
+        # Opgeleverd: "wij volgen de bouw" is dan een belofte over iets wat voorbij
+        # is, en juist in de zoekresultaten valt dat op. Wat er nog wel is: de
+        # afwerking, en die koopt de bewoner nu zelf.
+        # Kort houden: kort_titel() gooit alles achter het gedachtestreepje weg
+        # zodra de titel over de 60 tekens gaat, en "opgeleverd" is precies het
+        # woord dat deze pagina onderscheidt van de 280 andere.
+        titel = f"{naam}, {plaats} \u2014 opgeleverd"
+        desc = (f"{naam} is opgeleverd, dus de afwerking is aan jou. Ledenkorting bij "
+                f"aangesloten merken en je offerte getoetst aan marktprijzen. Gratis.")
+    elif pct_nu is None or pct_nu >= 85:
         titel = f"{naam}, {plaats} \u2014 korting bij woonwinkels"
         desc = (f"Woning gekocht in {naam}? Wij volgen de bouw voor je \u00e9n je bespaart op "
                 f"afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. "
@@ -2158,6 +2321,13 @@ def main():
     print(f"{len(projecten)} projecten · poort >= {MIN_WONINGEN} woningen"
           f"{' · alleen Rotterdamse straal' if ALLEEN_REGIO else ''}"
           f"{' · alleen pilotring (golf B)' if ALLEEN_PILOT else ''} → {len(kandidaten)} kandidaten")
+    # Opgeleverde projecten hardop tellen. Zonder deze regel valt het pas op als
+    # iemand toevallig zo'n pagina leest — en dan staat er al maanden dat de
+    # keuze "op de meerwerklijst valt" bij een project dat al bewoond wordt.
+    klaar = [q for q in kandidaten if opgeleverd(q)[0]]
+    if klaar:
+        print(f"opgeleverd (andere tekst, geen tijdlijn): {len(klaar)} — "
+              + ", ".join(f"{netjes_naam(q)} ({opgeleverd(q)[1]})" for q in klaar[:6]))
     gem_tel = collections.Counter(q["plaats"] for q in kandidaten)
     print(f"ontologie: {len(ruimtes)} ruimtes, "
           f"{sum(len(r['beslissingen']) for r in ruimtes)} beslissingen\n")
