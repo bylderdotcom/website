@@ -653,8 +653,11 @@ def auping_blok(p, naam_project, slug):
     link = (f"https://app.bylder.com/register?utm_source=bylder&amp;utm_medium=site"
             f"&amp;utm_campaign=auping&amp;utm_content=project-{slug}")
     return f"""<h2>{kop}</h2>
-<p>{waar} Tien procent op het hele assortiment, te verzilveren in de winkel met je
-persoonlijke code.</p>
+<p>{waar} Tien procent op het reguliere assortiment, te verzilveren in de winkel met je
+persoonlijke code. Bij een besteding vanaf &euro;5.000 komt daar een gratis leenbed bij voor de
+levertijd, en vanaf &euro;6.500 een overnachting. De korting komt niet bovenop een lopende actie
+of sale &mdash; dan geldt die prijs.</p>
+<p>Die persoonlijke code krijg je met hetzelfde gratis account waarin je plattegrond staat.</p>
 <p><a class="cta-primary" href="{link}">{knop}</a></p>
 <p class="noot">Auping is aangesloten partner. De korting weegt niet mee in de bedrijven die wij
 hierboven noemen; die lijst komt uit afstand, type en beoordelingen.</p>"""
@@ -1236,12 +1239,12 @@ verdubbel je het.</p>
 het kan, en dus wanneer je moet beslissen.</p>
 </article>
 <article>
-<div class="pk-etiket">Binnendeuren</div>
+<div class="pk-etiket">Binnendeuren &middot; ClassicNext</div>
 <h3>Plafondhoog, zonder kozijn</h3>
 {VENSTER.format(conf=conf)}
 <p>{deur_zin} De prijs hangt
 af van het aantal deuren en de afwerking &mdash; in de configurator zie je hem op jouw eigen
-samenstelling.</p>
+samenstelling, en het aantal deuren komt uit je plattegrond hierboven.</p>
 <p><a class="cta-primary" href="{conf}">Stel je deuren samen &rarr;</a></p>
 <p class="noot">Dertien groefpatronen, elke RAL-kleur, direct in 3D &mdash; en de plint
 erbij, want een plafondhoge deur vraagt niet om de standaardplint.</p>
@@ -1469,6 +1472,42 @@ def prijsvergelijking(g, land, plaats):
             f'<div class="cijfer">&euro;{eur_duizend(nl)}</div></div></div>')
 
 
+def tekening_blok(naam, slug, app, is_opgeleverd):
+    """De plattegrond-upload, vlak onder de kop en als enige primaire vraag.
+
+    WAAROM DIT BLOK BOVENAAN HOORT. De pagina vroeg om een account voordat hij
+    iets had bewezen, met "gratis, geen betaling nodig" als argument — dat neemt
+    een bezwaar weg en geeft geen reden. Dit geeft er wel een: er moet een
+    tekening in, dus dit kán niet zonder account. Het is geen functie die we
+    achter de registratie verstoppen, het is de reden om te registreren.
+
+    EN HET VOEDT DE CONFIGURATOR. De analyse telt de deuren. Dat is precies het
+    getal dat de deurconfigurator hieronder nodig heeft en dat een koper zelf
+    zit te schatten.
+
+    WAT ER BELOOFD WORDT IS WAT HIJ DOET. De tekeninganalyse geeft oppervlaktes
+    per ruimte, het gebruiksoppervlak, en tellingen van deuren, ramen,
+    lichtpunten en stopcontacten — plus waar de tekening onduidelijk is. Geen
+    bedragen: die zitten er niet in, dus beloven we ze hier niet.
+    """
+    link = app.replace(f"project-{slug}", f"project-{slug}-tekening")
+    wanneer = ("Woon je er nog niet, dan weet je zo wat er straks aan afwerking op je afkomt."
+               if is_opgeleverd else
+               "Zo weet je v&oacute;&oacute;r de meerwerklijst sluit waar je het over hebt.")
+    return f"""<h2>Zet je plattegrond erin, dan rekenen wij hem na</h2>
+<p>Je kreeg een plattegrond van de ontwikkelaar. Zet hem in je dossier en je krijgt er per
+ruimte de oppervlaktes uit, plus hoeveel deuren, ramen, lichtpunten en stopcontacten erop
+staan &mdash; en waar de tekening daar onduidelijk over is. {wanneer}</p>
+<div class="pk-uitkomst">
+<div><strong>Per ruimte</strong><span>vloer, wand en plafond in m&sup2;</span></div>
+<div><strong>Aantal deuren</strong><span>het getal dat de configurator hieronder vraagt</span></div>
+<div><strong>Elektra geteld</strong><span>lichtpunten en stopcontacten van de tekening</span></div>
+</div>
+<p><a class="cta-primary" href="{link}">Zet je plattegrond erin &rarr;</a></p>
+<p class="noot">Hiervoor is een gratis account nodig &mdash; de tekening moet ergens staan.
+Een foto van de tekening werkt ook; wij zeggen erbij hoe zeker de schatting is.</p>"""
+
+
 def moment_zin(p, opl_tekst, aanwijzend="de"):
     """Eén zin over het moment, die ook klopt als er al opgeleverd is.
 
@@ -1662,11 +1701,12 @@ def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel=""):
 {inleiding}
 <div class="pk-keuzes">
 <article>
-<div class="pk-etiket">Deuren zonder kozijn</div>
+<div class="pk-etiket">Deuren zonder kozijn &middot; ClassicNext</div>
 <h3>Een deur die opgaat in de wand</h3>
 {venster}
 <p>Plafondhoog, zonder omlijsting, in de kleur van de wand. Het kozijn gaat &iacute;n de wand en
-wordt meegestukadoord.</p>
+wordt meegestukadoord &mdash; dus deze keuze valt v&oacute;&oacute;r de stukadoor begint, eerder
+dan de meeste kopers denken.</p>
 <p><a class="cta-primary" href="{conf}">Stel je deur samen &rarr;</a></p>
 <p class="noot">Dertien groefpatronen, elke RAL-kleur, direct in 3D. Ook de plinten.</p>
 </article>
@@ -2018,11 +2058,15 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
 {cijferstrook(strook)}
 
+{tekening_blok(E(naam), slug, app, is_opgeleverd)}
+
+{budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel_wanneer)}
+
+{aup_html}
+
 {prijs_html}
 
 {site_html}
-
-{budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel_wanneer)}
 
 {moment_blok(is_opgeleverd, opgel_wanneer, opl_tekst, grondslag, lo, app)}
 
@@ -2037,7 +2081,6 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
 {lok_html}
 {wnk_html}
-{aup_html}
 
 {tabel_html}
 {log_html}
