@@ -892,12 +892,22 @@ FEITEN_PAD = os.path.join(CLUSTER, "handwerk-feiten.json")
 FEIT_HOUDBAAR_DAGEN = 400
 _FEITEN = None
 
+# De volgorde is de leesvolgorde op de pagina, en die is niet willekeurig: wat
+# er wél en niet in de koopsom zit staat bovenaan, want dat bepaalt of de
+# meerwerklijst over duizenden of tienduizenden euro's gaat. De geschiedenis van
+# de plek is aardig maar verandert niets aan wat iemand moet beslissen.
 FEIT_KOPPEN = {
-    "historie": "Wat hier eerder stond",
-    "starterslening": "Koopregelingen in deze gemeente",
+    "opleverniveau": "Wat er wel en niet in zit",
+    "kopersopties": "Meerwerk en kopersopties",
+    "bouwwijze": "Hoe het gebouwd wordt",
+    "buitenruimte": "Tuin, balkon en berging",
+    "parkeren": "Parkeren",
+    "fasering": "Fases en planning",
     "ontwikkelaar": "Wie het bouwt",
     "bestemming": "Bestemmingsplan en welstand",
+    "starterslening": "Koopregelingen in deze gemeente",
     "voorzieningen": "Voorzieningen in de wijk",
+    "historie": "Wat hier eerder stond",
 }
 
 
@@ -939,10 +949,13 @@ def handwerk_blok(slug, naam):
         stukken.append(f"<h3>{E(kop)}</h3><p>{E(waarde)} "
                        f'<span class="noot">({link}, gecontroleerd {nl_datum(gecontroleerd.isoformat())})</span></p>')
 
-    return (f"<h2>Over de plek van {E(naam)}</h2>"
-            f"<p>Wat we hierover opzochten, met de vindplaats erbij. Klopt er iets niet? "
-            f"Laat het weten &mdash; wij passen het aan en noteren wanneer.</p>"
-            + "".join(stukken))
+    # De kop was "Over de plek van X" toen dit blok alleen over de locatie ging.
+    # Met elf velden gaat het merendeel over de woning en de koop — opleverniveau,
+    # meerwerk, bouwwijze — en dan dekt "de plek" de lading niet meer.
+    return (f"<h2>Wat {E(naam)} zelf laat weten</h2>"
+            f"<p>Opgezocht op de eigen site van het project, met de vindplaats per punt. "
+            f"Klopt er iets niet? Laat het weten &mdash; wij passen het aan en noteren "
+            f"wanneer.</p>" + "".join(stukken))
 
 
 # --- trede 3: vragen die per project verschillen ---------------------------

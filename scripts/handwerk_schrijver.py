@@ -53,7 +53,7 @@ UIT = os.path.join(ROOT, "data", "clusters", "nieuwbouw-project", "handwerk-feit
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126 Safari/537.36")
 DELAY = 1.5
-MAX_TEKST = 18000          # tekens per project die we aan het model geven
+MAX_TEKST = 22000          # tekens per project die we aan het model geven
 MODEL = "claude-haiku-4-5-20251001"   # volumewerk hoort op het goedkope model
 
 DROOG = "--droog" in sys.argv
@@ -62,7 +62,18 @@ for i, a in enumerate(sys.argv):
     if a == "--max" and i + 1 < len(sys.argv):
         MAX = int(sys.argv[i + 1])
 
-VELDEN = ["historie", "starterslening", "ontwikkelaar", "bestemming", "voorzieningen"]
+# Elf velden. De eerste ronde vulde er gemiddeld twee tot drie per project, en
+# leverde daarmee +2,6 punt uniciteit op de behandelde pagina's. Meer velden is
+# de goedkoopste manier om dat verder te brengen: dezelfde opgehaalde tekst,
+# dezelfde controle, alleen meer waar we naar kijken.
+#
+# De zes nieuwe zijn gekozen op wat een koper moet weten vóór hij over meerwerk
+# beslist — en niet op wat mooi staat. Het opleverniveau is daarvan de
+# belangrijkste: of de keuken, het sanitair en het tegelwerk erin zitten,
+# bepaalt of de meerwerklijst over duizenden of over tienduizenden euro's gaat.
+VELDEN = ["historie", "starterslening", "ontwikkelaar", "bestemming", "voorzieningen",
+          "opleverniveau", "kopersopties", "bouwwijze", "buitenruimte", "parkeren",
+          "fasering"]
 
 OPDRACHT = """Je krijgt de tekst van de eigen website van een Nederlands nieuwbouwproject.
 
@@ -74,6 +85,16 @@ Haal er hoogstens vijf feiten uit, voor deze velden:
 - ontwikkelaar: wie het ontwikkelt of bouwt, en welke rol die partij heeft
 - bestemming: bestemmingsplan, welstand, of regels over aanbouwen en dakkapellen
 - voorzieningen: wat er in de wijk komt of al is (school, winkels, park, halte)
+- opleverniveau: wat er wel en niet in de koopsom zit — keuken, sanitair,
+  tegelwerk, vloerafwerking, schilderwerk; casco of afgewerkt
+- kopersopties: wat het project zegt over meerwerk, optielijst, showroom,
+  kopersbegeleiding en sluitingsdata van keuzes
+- bouwwijze: constructie en materialen (metselwerk, prefab, houtskeletbouw,
+  gietbouw), en wat dat betekent voor wanden en installaties
+- buitenruimte: tuin, balkon, dakterras, berging, en de oriëntatie ervan
+- parkeren: parkeerplaats bij de woning, parkeerkelder, parkeernorm, vergunning
+- fasering: hoeveel fases het project heeft, welke nu loopt, hoeveel woningen
+  per fase
 
 HARDE REGELS
 1. Alleen wat LETTERLIJK in de aangeleverde tekst staat. Niets aanvullen uit
@@ -109,7 +130,7 @@ def kale_tekst(h):
 
 def claude(prompt, sleutel):
     body = json.dumps({
-        "model": MODEL, "max_tokens": 1400,
+        "model": MODEL, "max_tokens": 2600,
         "system": OPDRACHT,
         "messages": [{"role": "user", "content": prompt}],
     })
