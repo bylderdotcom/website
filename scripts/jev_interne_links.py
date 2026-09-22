@@ -68,6 +68,21 @@ VAKKEN = {
     "anders": "None of the above, or a shop or showroom rather than an installer",
 }
 
+# NIET ELK CLUSTER IS EEN VAK.
+# De eerste ronde over badkamer en dakkapel leverde nul links op, en dat was geen
+# storing: de voorselectie eist "zelfde vak als het cluster", en "badkamer" en
+# "dakkapel" staan niet in VAKKEN — dat zijn klussen, geen beroepen. Een badkamer
+# wordt gelegd door een loodgieter of een tegelzetter, een dakkapel gezet door een
+# aannemer. Van de 2.144 badkamerbedrijven classificeerde Jev er 705 als loodgieter
+# en 512 als tegelzetter; van de 1.526 dakkapelbedrijven 1.031 als aannemer.
+#
+# Bewust géén "aannemer" bij badkamer: een algemene aannemer onder het kopje
+# badkamerspecialist is precies de vervuiling die dit blok moest opruimen.
+CLUSTER_VAKKEN = {
+    "badkamer": {"loodgieter", "tegel"},
+    "dakkapel": {"aannemer"},
+}
+
 
 def laad(cluster: str):
     cl = json.loads((DATA / "clusters" / cluster / "bedrijven.json").read_text())
@@ -120,7 +135,8 @@ def kandidaten(doel, alle, vakken=None) -> list:
             continue
         if vakken is not None:
             v = vakken.get(r["sleutel"])
-            if not v or v["zeker"] < VAK_ZEKERHEID or v["vak"] != doel["vak_cluster"]:
+            toegestaan = CLUSTER_VAKKEN.get(doel["vak_cluster"], {doel["vak_cluster"]})
+            if not v or v["zeker"] < VAK_ZEKERHEID or v["vak"] not in toegestaan:
                 continue
         d = km(doel, r)
         if d <= MAX_KM:

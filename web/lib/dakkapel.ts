@@ -11,6 +11,7 @@ import path from 'node:path'
 import { opRaster } from './raster'
 import { metVerleider } from './verleider'
 import { metEersteZet } from './eerstezet'
+import { extraLinksHtml } from './interne-links'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'dakkapel'
@@ -377,8 +378,11 @@ function getBedrijfHtml(page: DakkapelPage): string {
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
   const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
+  // Door Jev gerangschikte buurbedrijven, voor profielen waar de stadsregel te
+  // weinig tegels opleverde. Lege string als er voor dit profiel niets is.
+  const extra = extraLinksHtml(CLUSTER, page.slug, 'dakkapelspecialisten')
   return metEersteZet(
-    metVerleider(body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`), 'dakkapel'),
+    metVerleider(body.replace('</main>', `${extra}${markt}${claim}${DISCLAIMER_HTML}</main>`), 'dakkapel'),
     esc(b.name))
 }
 
