@@ -1,4 +1,52 @@
 {
+ "aarlesche-erven-deelplan-6a-best": {
+  "ontwikkelaar": {
+   "bron": "https://www.akkers-aarlesche-erven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Whoon Van Schijndel Bouw- en Ontwikkelingsmaatschappij ontwikkelt in totaal ruim 300 woningen in het project De Akkers, dat deel uitmaakt van Aarlesche Erven in Best."
+  },
+  "voorzieningen": {
+   "bron": "https://www.akkers-aarlesche-erven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In Best zijn er een tiental basisscholen, kinderopvang en het Heerbeeck College. Sportfaciliteiten liggen op De Leemkuilen en Naestenbest, er zijn twee zwembaden en BestGolf. In het centrum zijn winkels en horecagelegenheden. Het Groene Woud ligt ten noorden voor wandel- en fietstochten, natuurgebied De Nieuwe Heide met bos en vennen ligt in het oosten."
+  }
+ },
+ "avalon-fase-1-breda": {
+  "historie": {
+   "bron": "https://herovanbreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie tussen Kapittelweg en Teteringsedijk stond eerder een fabriek waar jam en frisdrank werden geproduceerd. Het industriële terrein krijgt nu een duurzame bestemming als woongebied met groen."
+  },
+  "voorzieningen": {
+   "bron": "https://herovanbreda.nl/nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De buurt heeft een centrale huiskamer (Club Hero) voor sociale activiteiten, een gezamenlijke moestuin, speelplekken en ontmoetingsruimtes. Het gebied is autoluw ingericht met centrale parkzones. In de buurt is een huisartsenpraktijk aanwezig."
+  }
+ },
+ "avalon-fase-2-breda": {
+  "historie": {
+   "bron": "https://herovanbreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op het terrein stond vroeger een fabriek waar jam en frisdrank werden geproduceerd. Dit industriële erfgoed wordt verwerkt in het architectonische ontwerp van de nieuwe buurt."
+  },
+  "voorzieningen": {
+   "bron": "https://herovanbreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk krijgt een centrale huiskamer (Club Hero) voor sociale activiteiten, een gezamenlijke moestuin, groene parkzones en een autovrij binnengebied. In de buurt zijn ook huisartsen aanwezig."
+  }
+ },
+ "b-centraal-best": {
+  "ontwikkelaar": {
+   "bron": "https://b-centraal.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is een ontwikkeling van Spoorzone Best BV, waarbij SDK Vastgoed als gedelegeerd ontwikkelaar optreedt."
+  },
+  "voorzieningen": {
+   "bron": "https://b-centraal.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het gebied komen winkeltjes, horeca, dienstverlening en cultuur. Het centrum van Best is op loopafstand bereikbaar voor dagelijkse boodschappen. Het station maakt bereikbaarheid van Eindhoven en de regio mogelijk."
+  }
+ },
  "bajeskwartier-the-martin-amsterdam": {
   "bestemming": {
    "bron": "",
@@ -11,9 +59,9 @@
    "waarde": ""
   },
   "ontwikkelaar": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.bajeskwartier.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Bajeskwartier is een ontwikkeling van Bajes Kwartier Ontwikkeling C.V., een samenwerking van am.nl, Schroders en AT Capital. The Starling is ontworpen door Arons & Gelauff Architecten."
   },
   "starterslening": {
    "bron": "",
@@ -21,9 +69,794 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.bajeskwartier.com/nl/aanbod/verkocht/bajeskwartier-the-starling/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In The Starling komen een gezondheidscentrum en fitness. Ook is er een ijswinkel gepland. In het gebouw bevindt zich een co-working space."
+  }
+ },
+ "bakkerswaard-fase-2-bakkerspad-nijkerk": {
+  "ontwikkelaar": {
+   "bron": "https://bakkerswaard.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans Huizen ontwikkelt Bakkerswaard. De verkoop en informatie worden verzorgd door Midden Nederland Makelaars."
+  },
+  "starterslening": {
+   "bron": "https://bakkerswaard.nl/bakkerspad-in-verkoop/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op tussenwoningen geldt een zelfbewoningsplicht van 2 jaar, wat betekent dat de koper de woning zelf moet bewonen en niet direct mag verhuren of doorverkopen. Voor alle woningen geldt een antispeculatiebeding van 5 jaar."
+  },
+  "voorzieningen": {
+   "bron": "https://bakkerswaard.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het dorp Nijkerkerveen biedt scholen en winkels. Bakkerswaard maakt deel uit van een groter woonomgeving met circa 350 woningen en is gelegen aan de zuidwestelijke rand van Nijkerkerveen, met het landschap en het dorp binnen bereik."
+  }
+ },
+ "beldershoek-medemblik": {
+  "voorzieningen": {
+   "bron": "https://beldershoek.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het IJsselmeer ligt vlakbij voor wandelingen. Met de fiets bereik je Medemblik en Enkhuizen met hun havens en terrassen. Dagelijkse voorzieningen zijn dichtbij."
+  }
+ },
+ "bellevue-fase-2-utrecht": {
+  "ontwikkelaar": {
+   "bron": "https://bellevue-utrecht.nl/nieuws/financieren/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans ontwikkelt het project. Het bedrijf werkt samen met financieel adviseurs van Rabobank, Hypotheekshop, Hypotheeknet en GeldXpert voor ondersteuning bij financiering."
+  },
+  "starterslening": {
+   "bron": "https://bellevue-utrecht.nl/woningtypes/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Voor een aantal bouwnummers in de Petite-categorie geldt de KoopStart regeling. Daarnaast geldt voor Petite en Moyenne appartementen een zelfbewoningsplicht."
+  },
+  "voorzieningen": {
+   "bron": "https://bellevue-utrecht.nl/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt aan het Amsterdam-Rijnkanaal, net over de gele brug in Leidsche Rijn. De locatie biedt dicht bij en uitzicht op de binnenstad van Utrecht met goed bereikbare voorzieningen te voet, fiets, openbaar vervoer en auto."
+  }
+ },
+ "bentwijck-fase-1-alphen-aan-den-rijn": {
+  "bestemming": {
+   "bron": "https://bentwijck.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De architectuur is geïnspireerd op de dorpskern van Benthuizen met kleinschalig karakter, wisselende kapvormen, gevels en metselwerk. Door de wijk loopt een groenzone met bomen, water en natuurlijke oevers."
+  },
+  "voorzieningen": {
+   "bron": "https://bentwijck.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Er is een brede school in de wijk. De wijk beschikt over een groenzone met bomen, water en ruimte voor biodiversiteit."
+  }
+ },
+ "bentwijck-fase-2-alphen-aan-den-rijn": {
+  "bestemming": {
+   "bron": "https://bentwijck.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De architectuur is geïnspireerd op de dorpskern van Benthuizen met kleinschalig karakter, wisselende kapvormen, gevels en metselwerk. Geen twee straten zijn hetzelfde."
+  },
+  "voorzieningen": {
+   "bron": "https://bentwijck.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Door de wijk kronkelt een groenzone met bomen, water, natuurlijke oevers en ruimte voor biodiversiteit. Er is een brede school in de wijk."
+  }
+ },
+ "bentwijck-fase-2b-alphen-aan-den-rijn": {
+  "bestemming": {
+   "bron": "https://bentwijck.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De architectuur van de wijk is geïnspireerd op de dorpskern van Benthuizen met kleinschalig karakter, wisselende kapvormen, gevels en metselwerk. Door de wijk loopt een groenzone met bomen, water, natuurlijke oevers en ruimte voor biodiversiteit."
+  },
+  "voorzieningen": {
+   "bron": "https://bentwijck.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk is een brede school aanwezig. De wijk bevat een groenzone met bomen, water en natuurlijke oevers voor biodiversiteit."
+  }
+ },
+ "bloom-park-fase-2-utrecht": {
+  "bestemming": {
+   "bron": "https://www.bloommerwede.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk Bloom Merwede is autovrij. De architectuur combineert stoere en natuurlijke materialen. Er is een groene binnentuin die het hart van de buurt vormt."
+  },
+  "voorzieningen": {
+   "bron": "https://www.bloommerwede.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt aan het Merwedekanaal en grenst aan het Merwedepark. De wijk is autovrij ingericht. Het Centraal Station van Utrecht is dichtbij."
+  }
+ },
+ "boegbeeld-79-woningen-amsterdam": {
+  "starterslening": {
+   "bron": "https://www.boegbeeld-ndsm.nl/woningaanbod/gebouw-c/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Er wordt erfpacht genoemd. De prijzen in de woningselector zijn exclusief erfpacht."
+  },
+  "voorzieningen": {
+   "bron": "https://www.boegbeeld-ndsm.nl/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het Hellingpark grenst direct aan het project. NDSM Amsterdam biedt creatieve, culturele, culinaire en sportieve voorzieningen in de wijk. Onder de appartementen bevindt zich een parkeergarage en gezamenlijke fietsenstallingen op de begane grond."
+  }
+ },
+ "boomgaerde-fase-2-westland": {
+  "historie": {
+   "bron": "https://www.boomgaerde.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie teelden tuinders vroeger fruit. Het terrein is nu bestemd voor de nieuwe woonwijk Boomgaerde."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.boomgaerde.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Boomgaerde wordt gerealiseerd door de Combinatie Van Mierlo-Novaform. Novaform Vastgoedontwikkelaars West B.V. is hierbij een KlokGroep-onderneming."
+  },
+  "voorzieningen": {
+   "bron": "https://www.boomgaerde.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op ongeveer 9 minuten fietsen van het strand. In de buurt bevinden zich recreatiepark Madestein, het Ockenburghse bos met een 9-holes golfbaan, en de binnenstad van Den Haag is binnen 25 minuten per auto bereikbaar."
+  }
+ },
+ "boomgaerde-fase-3-westland": {
+  "historie": {
+   "bron": "https://www.boomgaerde.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie teelden tuinders vroeger fruit. De grond wordt nu gebruikt voor de aanleg van een nieuwe woonwijk."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.boomgaerde.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Boomgaerde wordt gerealiseerd door de combinatie Van Mierlo-Novaform. Novaform Vastgoedontwikkelaars West B.V. is een KlokGroep-onderneming en fungeert als ontwikkelaar."
+  },
+  "voorzieningen": {
+   "bron": "https://www.boomgaerde.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op 9 minuten fietsen van het strand. In de buurt liggen recreatiepark Madestein, het Ockenburghse bos met een 9-holes golfbaan, en de dorpen van Westland. De binnenstad van Den Haag is binnen 25 minuten te bereiken."
+  }
+ },
+ "brooklyn-heights-almere": {
+  "bestemming": {
+   "bron": "https://brooklynheights.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Brooklyn Heights ligt in Almere-Poort en vormt het slotstuk van de wijk New Brooklyn. De woningen worden opgeleverd met energielabel A+, A++ of A+++."
+  },
+  "ontwikkelaar": {
+   "bron": "https://brooklynheights.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Dura Vermeer ontwikkelt Brooklyn Heights. Het project wordt ondersteund door NEXTHome voor hypotheekbegeleiding en THUIS de Showroom voor afwerking en inrichting."
+  },
+  "voorzieningen": {
+   "bron": "https://brooklynheights.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk New Brooklyn is vrijwel klaar met groene straten en bomen. In de buurt liggen dagelijkse voorzieningen en het station dichtbij. Park en strand zijn ook dichtbij."
+  }
+ },
+ "buitenrijk-deelgebied-2-fase-1-noordwijk": {
+  "bestemming": {
+   "bron": "https://buitenrijk-noordwijk.nl/nieuws/een-ontwerp-dat-echt-past/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk is ontworpen met autoluwe straten. De Nieuwe Voorstraat bevat veel verschillende woningtypen met traditionele en strakke ontwerpen afwisselend. In de Landgoederenzone zijn huizen geïnspireerd op landgoederen met statige vormen, grote kappen en overstekken. De openbare ruimte is ingericht met hoogwaardige materialen voor straten en stoepen."
+  },
+  "voorzieningen": {
+   "bron": "https://buitenrijk-noordwijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk ligt op ongeveer 10 fietsminuten van Noordwijk aan Zee. In de directe omgeving zijn er een ecologische zone langs de wijk, het Varkensbos op korte afstand, en het strand van Noordwijk is bereikbaar per fiets. In de wijk zelf zijn er avontuurlijke speelplekken en gezellige hofjes aanwezig."
+  }
+ },
+ "buitenveen-aalsmeer-fase-1-aalsmeer": {
+  "ontwikkelaar": {
+   "bron": "https://roosdomtijhuis.nl/over-ons/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Roosdom Tijhuis ontwikkelt en bouwt het project. Dit bedrijf voert de gehele gebieds- en woningbouwontwikkeling uit, inclusief architectuur, verkoop en bouw van de woningen zelf."
+  }
+ },
+ "buitenveen-aalsmeer-fase-2-aalsmeer": {
+  "ontwikkelaar": {
+   "bron": "https://roosdomtijhuis.nl/over-ons",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Roosdom Tijhuis ontwikkelt en bouwt het project. Het bedrijf voert de gehele gebiedsontwikkeling uit, inclusief architectuur, verkoop en bouw van woningen en appartementen zelf."
+  }
+ },
+ "buyteleven-nieuwkoop": {
+  "bestemming": {
+   "bron": "https://www.buyteleven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project bestaat uit 6 groene eilanden in een polderlandschap. Ieder eiland heeft zijn eigen sfeer en identiteit met verschillende woningtypes: rijwoningen, twee-onder-een-kapwoningen, vrijstaande woningen, levensloopbestendige woningen en beneden- of bovenwoningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.buyteleven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op loop- en fietsafstand van het centrum van Nieuwkoop met voorzieningen dichtbij. Via de rotonde aan het begin van de wijk bereik je in 10 minuten de N231, waardoor Alphen aan den Rijn (10 minuten), Utrecht en Den Haag (elk ongeveer 30 minuten rijden) goed bereikbaar zijn."
+  }
+ },
+ "cartesius-nicoya-utrecht": {
+  "historie": {
+   "bron": "https://www.cartesius-utrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Sinds de middeleeuwen was Cartesius in gebruik als stadsweide aan de rand van de stad voor stadsbewoners. Ballast Nedam Development heeft een plan gemaakt voor een moderne stadswijk met duurzame en gezonde ambities op deze locatie."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.cartesius-utrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ballast Nedam Development ontwikkelt Cartesius Utrecht. Het project bestaat uit verschillende deelgebieden zoals Nicoya, Loma Linda, met woningen verdeeld over vier blokken (Costa, Cobana, Coco en Nosara)."
+  },
+  "voorzieningen": {
+   "bron": "https://www.cartesius-utrecht.nl/aanbod-costa",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk is het herontwikkelde Utrechtse icoon CAB beschikbaar als culturele huiskamer. Verder zijn er groene binnentuinen, het Cartesius Central Park, community spaces en een natuurinclusieve aanleg met fietspaden en wandelroutes."
+  }
+ },
+ "ceci-amsterdam": {
+  "voorzieningen": {
+   "bron": "https://ceci.amsterdam",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in het Zuidas-district aan de Gustav Mahlerlaan en Jabbandaikade. In de nabijheid zijn parkeergarages met slimme mobiliteitoplossingen beschikbaar."
+  }
+ },
+ "circulus-utrecht": {
+  "bestemming": {
+   "bron": "https://wonenincirculus.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in het Utrechtse stadsdeel Leidsche Rijn. De gebouwen hebben een stoere gevel aan de Kandinskystraat en aan de Pablo Picassostraat."
+  },
+  "voorzieningen": {
+   "bron": "https://wonenincirculus.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk Leidsche Rijn zijn scholen, sportverenigingen, horeca, winkels en een bioscoop aanwezig. Met fiets of openbaar vervoer bereik je het centrum van Utrecht met grachten, restaurants en culturele voorzieningen."
+  }
+ },
+ "cix-merwede-fase-1-utrecht": {
+  "bestemming": {
+   "bron": "https://www.cix-merwede.nl/over-cix/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Merwede is geheel autoluw ingericht. De gebouwen worden uitgevoerd in natuurlijke tinten als mosgroen en mistgrijs, met ruime balkons en grote ramen. Natuurinclusiviteit staat voorop met speciaal aangelegde nestkasten en verblijfsplekken voor dieren."
+  },
+  "historie": {
+   "bron": "https://www.cix-merwede.nl/over-cix/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Merwede was eerder een bedrijventerrein dat wordt omgevormd tot een groene stadswijk. Het Depot-blok in Cix maakt gebruik van een voormalig fietsdepot dat als industrieel gebouw in gebruik was."
+  },
+  "voorzieningen": {
+   "bron": "https://www.cix-merwede.nl/over-cix/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk komen een markthal met lokale producten, een cultuurhuis, een sportschool, winkels, horeca, terrassen en een wijkpark. Het Bierbrouwersplein is het sociale hart met koffie- en wijnbars, creatieve werkplekken en evenementen."
+  }
+ },
+ "cix-merwede-fase-2-utrecht": {
+  "bestemming": {
+   "bron": "https://www.cix-merwede.nl/aanbod-city/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Merwede is ingericht als autoluwe wijk. De gebouwen in Cix hebben natuurlijke kleuren als mosgroen en mistgrijs. De architectuur combineert levendigheid op straatniveau met woningen erboven, met horeca, winkels en ateliers aan de voet."
+  },
+  "historie": {
+   "bron": "https://www.cix-merwede.nl/over-cix/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Merwede is een voormalig bedrijventerrein dat is omgevormd tot een nieuwe stadswijk. Cix maakt deel uit van deze ontwikkeling langs het Utrechtse Merwedekanaal."
+  },
+  "voorzieningen": {
+   "bron": "https://www.cix-merwede.nl/over-cix/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In en rond Cix zijn koffie- en wijnbars, lokale winkels, creatieve werkplekken, een cultuurhuis, sportschool en markthal met seizoensproducten aanwezig of gepland. Het wijkpark en het Merwedekanaal zijn in de nabijheid. Utrecht Centraal ligt op nog geen tien minuten fietsen."
+  }
+ },
+ "clarissenhof-tilburg": {
+  "ontwikkelaar": {
+   "bron": "https://clarissenhof.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Werkplaats Ontwikkelingsbedrijf B.V. is ontwikkelaar van Clarissenhof, SDK Vastgoed is gedelegeerd ontwikkelaar."
+  },
+  "voorzieningen": {
+   "bron": "https://clarissenhof.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de begane grond zijn horeca, kantoren, winkels en sportfaciliteiten gepland. Het project ligt direct tegenover het treinstation in de Spoorzone."
+  }
+ },
+ "connect-maashorst": {
+  "bestemming": {
+   "bron": "https://connect-uden.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het bestemmingsplan Leeuweriksweg is in de zomer van 2024 onherroepelijk geworden, wat betekent dat het project zonder bezwaren kan worden gerealiseerd."
+  },
+  "historie": {
+   "bron": "https://connect-uden.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de projectlocatie zijn sloopwerkzaamheden uitgevoerd. De gemeente is in januari 2025 gestart met de sloop van bestaande bebouwing om ruimte te maken voor het project."
+  },
+  "voorzieningen": {
+   "bron": "https://connect-uden.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Markant Theater Maashorst ligt op ongeveer 5 minuten fietsen, Bevrijdingspark op 2 minuten lopen, De Maashorst Nationaal Park op 15 minuten fietsen, Udense Markt op 10 minuten lopen, en Brasserie Verhoeven op 8 minuten lopen."
+  }
+ },
+ "corner-lofts-s-gravenhage": {
+  "historie": {
+   "bron": "https://cornerlofts.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie stond eerder een belastingkantoor dat is gesloopt voor de bouw van Corner Lofts."
+  },
+  "ontwikkelaar": {
+   "bron": "https://cornerlofts.nl/verkoopinformatie/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "HNTR Real Estate is de ontwikkelaar van het project. De aannemer voert de bouw uit."
+  },
+  "voorzieningen": {
+   "bron": "https://cornerlofts.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In en rond het gebouw zijn een supermarkt onder het gebouw, een sportschool aan de overkant, diverse horecavoorzieningen en het Waterfront Park voor sport en ontspanning. Het station Hollands Spoor ligt op slechts 1 minuut lopen afstand."
+  }
+ },
+ "cour-200-koop-en-huurappartementen-maastricht": {
+  "historie": {
+   "bron": "https://www.wonenaandegroeneloper.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Waar voorheen de A2 Maastricht in tweeën deelde, ligt nu een heerlijke brede bomenlaan van twee kilometer lang. De snelweg is vervangen door De Groene Loper met bomen, bloemenweides, stadsparkjes en speelplekken."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.wonenaandegroeneloper.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ballast Nedam Development ontwikkelt De Groene Loper. Het project omvat ongeveer 1.200 nieuwe woningen en appartementen in verschillende deelprojecten."
+  },
+  "voorzieningen": {
+   "bron": "https://www.wonenaandegroeneloper.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk beschikt over bijna 2.000 nieuwe bomen, bloemenweides, stadsparkjes, speelplekken, gezellige terrassen en vrije ruimte voor voetgangers en fietsers. Het centrum van Maastricht ligt binnen handbereik."
+  }
+ },
+ "de-berghorst-fase-1-wierden": {
+  "ontwikkelaar": {
+   "bron": "https://wonenopdeberghorst.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "KondorWessels Projecten voert het project uit in samenwerking met Roosdom Tijhuis en Reggehave. Het gaat om fase 3 van De Berghorst, waarbij fase 1 en 2 al zijn gerealiseerd."
+  }
+ },
+ "de-boeg-dordrecht": {
+  "ontwikkelaar": {
+   "bron": "https://wonenindeboeg.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans Vastgoed B.V. ontwikkelt het project. Het bedrijf is verantwoordelijk voor de nieuwbouwontwikkeling aan het Admiraalsplein in Dordrecht."
+  },
+  "voorzieningen": {
+   "bron": "https://wonenindeboeg.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving zijn supermarkten (Albert Heijn, ALDI, Advantage Supermarkt), een Indische toko, een vishandel, huisarts en tandarts bereikbaar. Het Admiraalsplein heeft ook een bushalte, en station Dordrecht Zuid ligt op loopafstand met regelmatige verbindingen naar andere steden. Het centrum van Dordrecht is ongeveer 15 minuten fietsen weg."
+  }
+ },
+ "de-bosrande-putten": {
+  "historie": {
+   "bron": "https://debosrandeputten.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de plek van De Bosrande stond vroeger het distributiecentrum van Sligro. Het terrein was afgesloten met hekken en belemmerden de doorgang naar het bos. Het versteende terrein wordt omgevormd tot groene woonwijk."
+  },
+  "ontwikkelaar": {
+   "bron": "https://debosrandeputten.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Bosrande Putten B.V. is een samenwerking tussen Wilma Wonen, LATEI en Schoonderbeek BV. De gemeente Putten werkt samen met deze ontwikkelaars aan de ontwikkeling van het project."
+  },
+  "starterslening": {
+   "bron": "https://debosrandeputten.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Er komen sociale- en betaalbare koopwoningen in het project. 30% van het totale woningaanbod (ongeveer 235 woningen) wordt sociale huur."
+  },
+  "voorzieningen": {
+   "bron": "https://debosrandeputten.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk wordt verbonden met het bos en de dorpskern van Putten met alle voorzieningen in de buurt. De wijk krijgt groene 'lopers' en autovrije groene 'longen'. In het aangrenzende bos komt een vleermuistoren."
+  }
+ },
+ "de-bostuinen-fase-2-zwijndrecht": {
+  "voorzieningen": {
+   "bron": "https://www.bostuinen-zwijndrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk heeft een parkachtige, kindvriendelijke omgeving met groene hofjes. Er zijn openbare parkeergelegenheden in groene hofjes en berging in de tuin. Het project ligt aan een bosrijke rand met groene bosrand."
+  }
+ },
+ "de-faam-breda": {
+  "historie": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op het terrein stond vroeger een snoepfabriek. De oude schoorsteen en fabrieksgebouwen zijn nog steeds zichtbaar en vormen het industriële erfgoed dat behouden blijft."
+  },
+  "ontwikkelaar": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "DE FAAM is een ontwikkeling van V.O.F. Fijn Faam Fantastisch, een samenwerking tussen Stebru B.V. en Synchroon B.V. De makelaar is Van de Water Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://faambreda.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In DE FAAM komt horeca in de plint van de Citroencentrale, waaronder koffie, lunch en dranken. Ook zijn er creatieve werkconcepten gepland in de Faamhal en Fuséehal met flexplekken, atelierruimtes en studio's. Het project bevat groene pleinen."
+  }
+ },
+ "de-groene-gaarde-zuidhorn": {
+  "bestemming": {
+   "bron": "https://degroenegaardezuidhorn.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De woningen hebben groene hagen aan de voorzijde, veranda's en bloembakken. De tweede verdieping kan optioneel als extra kamer worden ingericht. Uitbouwen van de keuken is mogelijk met 1200 of 2400 millimeter."
+  },
+  "ontwikkelaar": {
+   "bron": "https://degroenegaardezuidhorn.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Pandomo ontwikkelt het project, Lamberink realiseert het. Het gaat om 24 twee-onder-een-kapwoningen in de uitbreiding van wijk De Oostergast."
+  },
+  "voorzieningen": {
+   "bron": "https://degroenegaardezuidhorn.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn basisscholen, kinderopvang en een overdekt zwembad aanwezig. Het centrum van Zuidhorn met winkels, supermarkten en weekmarkt is dichtbij. Het treinstation van Zuidhorn biedt verbinding naar Groningen."
+  }
+ },
+ "de-heerlijkheid-curtis-heemskerk": {
+  "historie": {
+   "bron": "https://www.deheerlijkheidcurtis.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De naam curtis verwijst naar een oude woonvorm waarbij bewoners zorgdragen voor het landschap. Met het samengaan van een aantal curtissen rond het jaar 1000 ontstond Heemskerk. Dit historische concept en het omliggende landschap hebben als inspiratie gediend voor dit project."
+  },
+  "voorzieningen": {
+   "bron": "https://www.deheerlijkheidcurtis.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project bestaat uit vier woonclusters met collectieve binnentuinen en gemeenschappelijke voorzieningen verspreid over het plangebied. Een van de clusters bevat een meergeneratiehof waar starters, senioren en gezinnen samenleven."
+  }
+ },
+ "de-hendrik-dordrecht": {
+  "historie": {
+   "bron": "https://wonenopstadswerven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op dit schiereiland stonden vroeger scheepswerven waar schepen werden gebouwd. De Biesboschhal, de kraanbaan en de oude hellingen herinneren aan deze maritieme geschiedenis en vormen nu onderdeel van het nieuwe woongebied."
+  },
+  "voorzieningen": {
+   "bron": "https://wonenopstadswerven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De historische binnenstad van Dordrecht ligt op loopafstand via de Prins Clausbrug met winkels, horeca en cultuur. Een waterbus biedt verbinding naar Rotterdam. De Biesbosch is per fiets bereikbaar."
+  }
+ },
+ "de-johan-van-beverwijck-dordrecht": {
+  "ontwikkelaar": {
+   "bron": "https://www.spuiboulevard-dordrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VPO Johan van Beverwijck, onderdeel van de Van Pelt Groep, ontwikkelt het project. Waltmann Makelaars verzorgt de informatie en verkoop."
+  },
+  "voorzieningen": {
+   "bron": "https://www.spuiboulevard-dordrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op een toplocatie in het centrum nabij alle voorzieningen en veel groen. Op de begane grond bevinden zich aan de voorzijde winkels en voorzieningen."
+  }
+ },
+ "de-meesters-van-vroondaal-s-gravenhage": {
+  "historie": {
+   "bron": "https://demeestersvanvroondaal.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De Meesters van Vroondaal vormt het slotstuk van de ontwikkeling van het nieuwbouwgebied Vroondaal in Den Haag. Het project voltooit wat eerder is gestart in deze wijk."
+  },
+  "voorzieningen": {
+   "bron": "https://demeestersvanvroondaal.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de omgeving liggen winkelcentra, zorgfaciliteiten en scholen waaronder The International School of The Hague. Het project grenst aan natuur- en recreatiegebied Madestein, Landgoed Ockenburgh en badplaats Kijkduin. Er zijn uitstekende openbaar vervoeverbindingen en snelle bereikbaarheid naar Amsterdam en Rotterdam."
+  }
+ },
+ "de-nieuwe-boterpolder-alphen-aan-den-rijn": {
+  "ontwikkelaar": {
+   "bron": "https://nieuweboterpolder.nl/downloads/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Van Wijnen ontwikkelt het project De Nieuwe Boterpolder."
+  },
+  "voorzieningen": {
+   "bron": "https://nieuweboterpolder.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In Hazerswoude-Dorp zelf zijn diverse winkels, restaurants, scholen en een gezondheidscentrum op loopafstand van het dorpscentrum. De uitvalswegen N207 en N11 zijn goed bereikbaar. Alphen aan den Rijn is binnen 10 minuten met de auto bereikbaar, Zoetermeer en Leiden respectievelijk binnen 15 en 20 minuten."
+  }
+ },
+ "de-oorsprong-fase-2-goirle": {
+  "ontwikkelaar": {
+   "bron": "https://www.deoorsprong-goirle.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Van de Klok, een KlokGroep-onderneming, realiseert het project."
+  },
+  "voorzieningen": {
+   "bron": "https://www.deoorsprong-goirle.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De straten worden verrijkt met groene bermen, erfafscheidingen van hagen en bomen."
+  }
+ },
+ "de-oostergast-westerkwartier": {
+  "voorzieningen": {
+   "bron": "https://www.deoostergast-zuidhorn.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk heeft alle basisfaciliteiten in de buurt en is goed bereikbaar via fiets, auto en openbaar vervoer. Er is aandacht voor een groene opzet en duurzaamheid."
+  }
+ },
+ "de-remise-hoorn": {
+  "ontwikkelaar": {
+   "bron": "https://remisezwaag.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is een ontwikkeling en realisatie van Ware Vrijheid, een samenwerking tussen Brolan Vastgoed (onderdeel van De Geus Bouw) en HBB Groep. De bouwcombinatie bestaat uit De Geus Bouw en Huib Bakker Bouw."
+  },
+  "voorzieningen": {
+   "bron": "https://remisezwaag.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het plan wordt beschreven als een groene en eigentijdse woonomgeving met dorps karakter, autoluw ingericht met rust en groen in het hart van de wijk."
+  }
+ },
+ "de-scharnier-rotterdam": {
+  "historie": {
+   "bron": "https://scharnier-katendrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op Katendrecht stonden vroeger silo's, loodsen en andere zeemanskwartier-gerelateerde gebouwen. Het schiereiland was destijds Chinatown, hoerenbuurt en zeemanskwartier, maar is in de afgelopen tien tot twintig jaar volledig getransformeerd naar een gewilde woonwijk."
+  },
+  "ontwikkelaar": {
+   "bron": "https://scharnier-katendrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans ontwikkelt De Scharnier. Het project is een initiatief van New Industry Development en ontworpen door architect Kraaijvanger. Heijmans verzorgt ook de verkoop via Heijmans Vastgoed."
+  },
+  "starterslening": {
+   "bron": "https://scharnier-katendrecht.nl/woningtypes/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Haven- en parkappartementen vallen onder de KoopStart-regeling. Dit biedt financiële voordelen vooral voor starters op de woningmarkt: je koopt het appartement voor een lagere prijs dan de marktwaarde bij oplevering. Voor KoopStart-appartementen gelden een inkomensgrens en zelfbewoningsplicht."
+  },
+  "voorzieningen": {
+   "bron": "https://scharnier-katendrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk komen uitbreiding van basisschool De Globetrotter, een nieuwe vestiging van kinderdagverblijf kindeRdam, een horecagelegenheid met gemeenschappelijke tuin en een multifunctionele ruimte voor de wijk. In het gebouw zelf is een gemeenschappelijke buitentuin op de derde etage."
+  }
+ },
+ "de-tippe-de-zuidpunt-zwolle": {
+  "ontwikkelaar": {
+   "bron": "https://www.wonenindetippe.nl/het-project-de-zuidpunt/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VanWonen ontwikkelt samen met Dura Vermeer een gebied met appartementen. Het project bevat zorg, sociale huur, midden dure huur en koopwoningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.wonenindetippe.nl/het-project-de-zuidpunt/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De locatie ligt naast het station en vlakbij uitvalswegen en voorzieningen. De wijk De Tippe bestaat uit ongeveer 1.375 woningen opgedeeld in diverse kleine buurtjes met gezamenlijke binnenterreinen."
+  }
+ },
+ "de-tuinen-ii-koggenland": {
+  "voorzieningen": {
+   "bron": "https://detuinen-ursem.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt aan de groenrand van Ursem met scholen, sportverenigingen en winkels binnen loop- en fietsafstand. De omgeving heeft uitstekende verbindingen naar Alkmaar en Heerhugowaard."
+  }
+ },
+ "de-veenhoven-mijdrecht-de-ronde-venen": {
+  "ontwikkelaar": {
+   "bron": "https://www.deveenhovenmijdrecht.nl/nieuws/10441/koopovereenkomst-de-veenhoven-ondertekend/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Blink is de ontwikkelaar die samen met de gemeente De Ronde Venen de grondoverdracht heeft afgerond. Het project telt 118 woningen, waarvan de sociale huurappartementen door een woningcorporatie worden ontwikkeld."
+  },
+  "starterslening": {
+   "bron": "https://www.deveenhovenmijdrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt 45 betaalbare koopwoningen voor starters. Daarnaast zijn er 35 sociale huurappartementen beschikbaar."
+  },
+  "voorzieningen": {
+   "bron": "https://www.deveenhovenmijdrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving liggen het natuurgebied Botshol, de Vinkeveense Plassen voor watersportactiviteiten, en het Marickenpark met speeltoestellen. Binnen het project zelf zijn er een buurtschuur, gezamenlijke binnentuin, collectieve hofjes en een parkachtige landschap met wandelpaden."
+  }
+ },
+ "de-waalhoven-nijmegen": {
+  "bestemming": {
+   "bron": "https://www.nieuwbouw-dewaalhoven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk is ontworpen als klimaatbestendige wijk met parkachtige binnentuinen en wandelpaden in plaats van straten met auto's. Alle auto's parkeren ondergronds in de hoven."
+  },
+  "voorzieningen": {
+   "bron": "https://www.nieuwbouw-dewaalhoven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk beschikt over een urban sports park, wandelpaden, speelplaatsen met groene binnenhoven, een buurtkas, horeca en een natuurwinkel. De binnenstad van Nijmegen met winkels, cafés en musea ligt op korte afstand."
+  }
+ },
+ "delft77-assen": {
+  "voorzieningen": {
+   "bron": "https://delft77.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op tien minuten fietsafstand liggen het centrum van Assen, een supermarkt en het treinstation. Per auto bereik je de dichtstbijzijnde uitvalsweg in enkele minuten."
+  }
+ },
+ "dillekwartier-fase-1-arnhem": {
+  "bestemming": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De architectuur is ontworpen door architect Weusten Liedenbaum en kenmerkt zich door eigentijds dorpse vormen met opvallende dakkapellen en gemetselde elementen. De woningen hebben verspringende rooilijnen en groene voortuinen, wat variatie in het straatbeeld creëert."
+  },
+  "ontwikkelaar": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VanWonen ontwikkelt het Dillekwartier als deelbuurt binnen Kruidenhorst. VanWonen is verantwoordelijk voor de bouw van alle 116 koopwoningen in twee fases."
+  },
+  "voorzieningen": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Scholen, winkelcentrum, zorginstellingen en sportclubs bevinden zich op loop- en fietsafstand. De Arnhemse binnenstad is per fiets of openbaar vervoer bereikbaar, en NS Station Arnhem-Zuid biedt verbinding naar het centrum (10 minuten). Het project grenst aan rivierenlandschap en is omgeven door groen."
+  }
+ },
+ "dillekwartier-fase-2-arnhem": {
+  "bestemming": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De architectuur is ontworpen door architect Weusten Liedenbaum met een eigentijds dorpse stijl. Het straatbeeld kenmerkt zich door verspringende rooilijnen, verschillende kapvormen, groene voortuinen en opvallende dakkappels als gemetselde elementen."
+  },
+  "ontwikkelaar": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VanWonen ontwikkelt de buurt Dillekwartier als onderdeel van Kruidenhorst. VanWonen is verantwoordelijk voor het bouwen van 116 koopwoningen verdeeld over twee fases."
+  },
+  "voorzieningen": {
+   "bron": "https://dillekwartier.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Scholen, winkelcentrum, zorginstellingen en sportclubs liggen op loop- en fietsafstand. De Arnhemse binnenstad is snel bereikbaar met de fiets of openbaar vervoer via NS Station Arnhem-Zuid."
+  }
+ },
+ "doonheide-ii-fase-4-gemert-bakel": {
+  "ontwikkelaar": {
+   "bron": "https://doonheide2.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Keizersberg Vastgoed ontwikkelt het project. Van Grunsven Groep realiseert de bouw."
+  },
+  "starterslening": {
+   "bron": "https://doonheide2.nl/verkoop-10-starterswoningen-fase-1b-gestart/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt starterswoningen aan. In mei 2023 zijn tien starterswoningen in verkoop gegaan met een koopsom van €265.000. In augustus 2023 zijn 13 geschakelde woningen in Fase 2B voornamelijk bedoeld voor starters in verkoop gegaan."
+  },
+  "voorzieningen": {
+   "bron": "https://doonheide2.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt tussen het centrum van Gemert en het uitgestrekte buitengebied. De woningen worden gepositioneerd rondom groene verblijfsplekken (scheggen) die biodiversiteit en wateropvang mogelijk maken en verbinding vormen met het omringende landschap."
+  }
+ },
+ "doornsteeg-nijkerk-nijkerk": {
+  "ontwikkelaar": {
+   "bron": "https://doornsteeg-nijkerk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans ontwikkelt het plan FIORE in deelgebied De Boomgaard. Het bedrijf is verantwoordelijk voor de bouw van de koopwoningen in deze fase."
+  },
+  "starterslening": {
+   "bron": "https://doornsteeg-nijkerk.nl/woningtypes/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Bij de Rug-Aan-Rugwoningen in FIORE fase I en II is de KoopStart-regeling van toepassing. Voor FIORE fase II geldt voor alle 41 woningen een zelfbewoningsplicht van 2 jaar."
+  },
+  "voorzieningen": {
+   "bron": "https://doornsteeg-nijkerk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk ligt aan de westkant van Nijkerk met bereikbaarheid naar het station van Nijkerk en belangrijke uitvalswegen. De kronkelende Dammersbeek loopt door Doornsteeg en wordt omgeven door parken en groenzones."
+  }
+ },
+ "dorps-wonen-ii-mook-en-middelaar": {
+  "ontwikkelaar": {
+   "bron": "https://www.molenhoek-zuid.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Dorps Wonen II wordt ontwikkeld door VOF Molenhoek Zuid, een samenwerking van Van de Klok, Jansen Bouwontwikkeling en Exploitatiemaatschappij Molenhoek. De aannemer is bekend gemaakt, maar niet nader gespecificeerd in de beschikbare tekst."
+  },
+  "voorzieningen": {
+   "bron": "https://www.molenhoek-zuid.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in Molenhoek-Zuid tussen stad en land, met groen en water in de directe omgeving en de dynamiek van Nijmegen in de buurt. Er is een pas aangelegde binnentuin genaamd 'De Maastuin'."
+  }
+ },
+ "dunoveste-renkum": {
+  "historie": {
+   "bron": "https://www.dunoveste.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie stond voorheen het kantoorcomplex Dunoveste. Het gebouw is gesloopt en vervangen door het nieuwbouwproject met 75 appartementen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.dunoveste.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt direct aan de rand van het bos en tegenover het winkelcentrum met benodigde voorzieningen. De ligging is te midden van een groene omgeving."
+  }
+ },
+ "edisonpark-zoetermeer": {
+  "historie": {
+   "bron": "https://edisonpark-zoetermeer.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie stonden twee volkstuinen die worden omgevormd tot één nieuw woonpark. De huidige Edisonstraat wordt verlegd om één aaneengesloten woongebied te creëren."
+  },
+  "ontwikkelaar": {
+   "bron": "https://edisonpark-zoetermeer.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Dura Vermeer, AM en Synchroon vormen samen de ontwikkelcombinatie Edisonpark. Dit project wordt samen met de Gemeente Zoetermeer ontwikkeld."
+  },
+  "voorzieningen": {
+   "bron": "https://edisonpark-zoetermeer.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het park zelf is openbaar en voor iedereen toegankelijk met paden vooral voor fietsers en voetgangers. Er zijn diverse ontmoetingsplekken en een gemeenschappelijke tuin voor bewoners."
+  }
+ },
+ "eilanden-van-hain-zaanstad": {
+  "historie": {
+   "bron": "https://www.eilandenvanhain.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie stond oorspronkelijk een Romeinse wachttoren. Later was het een buitenplaats voordat het werd getransformeerd tot het huidige woongebied."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.eilandenvanhain.nl/nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "BAM Wonen is betrokken als aannemer en projectmanager. Common Affairs en Jos van Eldonk hebben aan het architectonische ontwerp gewerkt."
+  },
+  "voorzieningen": {
+   "bron": "https://www.eilandenvanhain.nl/nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in de buurt van Krommenie met een dorpscentrum met winkels, terrassen en boetieks. Binnen 30 kilometer bereik liggen historische steden, stranden, natuurgebieden en recreatiemogelijkheden. In de wijk zelf komen groenstructuur, beplanting en speelplekken."
+  }
+ },
+ "ekp-fase-1-s-hertogenbosch": {
+  "ontwikkelaar": {
+   "bron": "https://ekp-denbosch.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "SDK Vastgoed is de gebiedsontwikkelaar van EKP en maakt onder meer de EKP Excellence in Research Award mogelijk."
+  },
+  "voorzieningen": {
+   "bron": "https://ekp-denbosch.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving zijn verschillende voorzieningen aanwezig: Tramkade (culturele hotspot) op 1 minuut fietsen, het Centraal Station op 2 minuten fietsen, een huisarts op 2 minuten fietsen, een sportschool op 3 minuten fietsen, een supermarkt op 5 minuten fietsen en een bioscoop op 5 minuten fietsen. De Sint-Janskathedraal en het historische centrum liggen op 10 en 9 minuten fietsen."
+  }
+ },
+ "elzenhagen-noordhof-3-amsterdam": {
+  "bestemming": {
+   "bron": "https://woneninelzenhagen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project Elzenhagen is gelegen aan het Noordhollandsch Kanaal in Amsterdam-Noord. De wijk bestaat uit twee delen: de Zuidbuurt met autovrij wonen in een groen stadspark aan het water, en de Noordbuurt met gezellige straten met Amsterdams karakter en groene binnentuinen."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninelzenhagen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn op loopafstand beschikbaar: scholen, sportclubs, bioscoop, het Noorderpark en winkelcentrum Boven 't Y. Daarnaast bevinden zich nabijgelegen parken als Vliegenbos en Het Twiske. Het metrostation Noord biedt verbinding naar het centrum."
+  }
+ },
+ "elzenhagen-noordhof-4-amsterdam": {
+  "starterslening": {
+   "bron": "https://woneninelzenhagen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt erfpacht als financieringsoptie voor kopers. Dit wordt genoemd onder het kopje 'Financiering - Erfpacht' op de website."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninelzenhagen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn scholen, sportclubs, bioscoop, het Noorderpark en winkelcentrum Boven 't Y op loopafstand. Het metrostation Noord ligt direct naast Elzenhagen, waardoor je binnen enkele minuten in het centrum bent."
+  }
+ },
+ "elzenhagen-noordhof-5-amsterdam": {
+  "voorzieningen": {
+   "bron": "https://woneninelzenhagen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn scholen, sportclubs, bioscoop, het Noorderpark en winkelcentrum Boven 't Y op loopafstand. Het metrostation Noord biedt verbinding naar het centrum. In de buurt liggen ook het NDSM-terrein en het Vliegenbos."
+  }
+ },
+ "elzenhagen-zuidbuurt-parkvillaz-6-amsterdam": {
+  "starterslening": {
+   "bron": "https://woneninelzenhagen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt erfpacht als financieringsoptie voor koopwoningen in Elzenhagen."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninelzenhagen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn scholen, sportclubs, een bioscoop, het Noorderpark en winkelcentrum Boven 't Y op loopafstand. Metrostation Noord biedt rechtstreekse verbinding naar het centrum. Daarnaast liggen het NDSM-terrein en natuurgebieden als Vliegenbos en Het Twiske in de buurt."
+  }
+ },
+ "essenvelt-laanvillas-middelburg-z": {
+  "voorzieningen": {
+   "bron": "https://www.essenvelt.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De historische binnenstad van Middelburg, het NS-station en dagelijkse voorzieningen zijn op enkele minuten fietsen bereikbaar. In de directe omgeving liggen het Walcherse landschap, het Veerse Meer en de stranden aan de Zeeuwse kust."
+  }
+ },
+ "eve-nieuwbouw-leidschendam-voorburg": {
+  "ontwikkelaar": {
+   "bron": "https://www.vlietvoorde-eve.nl/over-ons/ontwikkelaar-aannemer/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Blauwhoed is de projectontwikkelaar die samen met bouwer Niersman het project realiseert. Niersman is een familiebedrijf dat zich specialiseert in bouw en ontwikkeling van woningen en heeft vestigingen in Voorschoten en Den Haag."
+  },
+  "voorzieningen": {
+   "bron": "https://www.vlietvoorde-eve.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de omgeving kun je wandelen, zwemmen in natuurwater, varen op de Vliet en golfen. Het project ligt in de Duivenvoordecorridor tussen Leidschendam-Voorburg en Voorschoten, op steenworp afstand van het stadse leven van Den Haag en Leiden met winkels en musea."
+  }
+ },
+ "fase-7b-best": {
+  "bestemming": {
+   "bron": "https://tuinen-aarlesche-erven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk is ruim opgezet met veel aandacht voor groen en leefkwaliteit. De architectuur is afwisselend vormgegeven en sluit aan op het dorpse karakter van Aarlesche Erven, met wandelroutes en groene openbare ruimtes."
+  },
+  "voorzieningen": {
+   "bron": "https://tuinen-aarlesche-erven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt liggen het Airborne museum Bevrijdende Vleugels, brasserie 't Boshuys in natuurgebied de Sonse Heide (ongeveer 20 minuten fietsen), recreatiepark Aquabest met zandstrand (ongeveer 25 minuten fietsen), natuurgebied Het Groene Woud binnen 5 kilometer, en het centrum van Best met winkels en horeca op korte fietsafstand."
   }
  },
  "fortunapark-vlaardingen-vlaardingen": {
@@ -33,9 +866,9 @@
    "waarde": ""
   },
   "historie": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.fortunapark-vlaardingen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is gebouwd op de locatie van de voormalige voetbalvereniging Fortuna."
   },
   "ontwikkelaar": {
    "bron": "",
@@ -48,9 +881,142 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.fortunapark-vlaardingen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het project komen een buurtkamer, buurtschuur, natuurspeelplekken en een moestuin. In de buurt zijn winkelcentrum, sportschool, restaurants, speelpark en sportclub op fietsafstand bereikbaar."
+  }
+ },
+ "hanick-woerden": {
+  "bestemming": {
+   "bron": "https://www.hanick.nl/nl/nieuws/2023/05/harmelen-aantrekkelijke-woonplaats-door-goede-sfeer-en-voorzieningen/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebied tussen de westelijke randweg Harmelen en de Hollandse kade naast Hofwijk-West is in provinciaal en gemeentelijk beleid aangeduid als mogelijke woningbouwlocatie. De provincie voorziet in circa 90 woningen op deze locatie."
+  },
+  "historie": {
+   "bron": "https://www.hanick.nl/nl/nieuws/2023/10/nieuwbouw-biedt-kansen-voor-groen-harmelen/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie lag eerder grasland dat omheind was. Dit gebied in de polder Haanwijk wordt nu ontwikkeld voor woningbouw."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.hanick.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De Maatschap Haanwijk ontwikkelt het project. Dit is een combinatie van AM Vastgoedontwikkeling B.V. en Van Oostrum Ontwikkeling B.V."
+  },
+  "starterslening": {
+   "bron": "https://www.hanick.nl/nl/nieuws/2023/10/nieuwbouw-biedt-kansen-voor-groen-harmelen/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project richt zich op betaalbare, duurzame woningen voor starters, senioren (nultrede-woningen) en doorstromers. Uit een petitie onder Harmelense jeugd voor starterswoningen bleek veel steun met 423 ondertekeningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.hanick.nl/nl/nieuws/2023/05/harmelen-aantrekkelijke-woonplaats-door-goede-sfeer-en-voorzieningen/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Harmelen ligt aan de poort van het Groene Hart met veel wandel- en fietsroutes. Het dorp heeft goede bereikbaarheid naar Utrecht, Amsterdam en Rotterdam via snelwegen. In het dorp zijn uitstekende voorzieningen en een actief verenigingsleven aanwezig."
+  }
+ },
+ "havenhart-harderwijk": {
+  "historie": {
+   "bron": "https://www.woneninhavenhart.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project verwijst naar het industriële verleden van de plek, waarbij de architectuur een knipoog naar dit verleden maakt. De exacte beschrijving van wat er vroeger stond, is niet in de tekst opgenomen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.woneninhavenhart.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de binnenstad van Harderwijk vind je winkels, horeca, kunst en cultuur op loop- en fietsafstand. Groen en bos liggen dichtbij met wandel- en mountainbikeroutes. Aan het water kun je suppen, sloepen, zwemmen of zeilen. De wijk heeft een stadsstrand en boulevard."
+  }
+ },
+ "havenmeester-rijswijk-zh": {
+  "historie": {
+   "bron": "https://www.havenmeesterrijswijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek stond vroeger een bedrijventerrein dat de komende jaren transformeert tot een woongebied aan het water. De Havenmeester maakt deel uit van gebiedsontwikkeling het Havenkwartier, waar in totaal zo'n 2500 woningen komen."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.havenmeesterrijswijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De Havenmeester wordt gerealiseerd door Adriaan van Erk, een KlokGroep-onderneming."
+  },
+  "voorzieningen": {
+   "bron": "https://www.havenmeesterrijswijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In zeven minuten fietsen bereik je Oud-Rijswijk en het Rijswijkse Bos. Met de auto ben je binnen tien tot vijftien minuten in het centrum van Den Haag of Delft, of op de boulevard van Scheveningen. Het project ligt in het Havenkwartier tussen Oud-Rijswijk en De Bogaard."
+  }
+ },
+ "heem-dongen": {
+  "ontwikkelaar": {
+   "bron": "https://woneninnoorderbunder.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ontwikkelaar Blink bouwt de koopwoningen, woningcorporatie Casade neemt de huurwoningen voor haar rekening, en de gemeente Dongen zorgt voor de openbare ruimte."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninnoorderbunder.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt zijn Park Vredeoord (5 min fietsen), cultuurhuis De Cammeleur (5 min fietsen), restaurant Den Hespel aan de rivier (12 min fietsen), recreatiepark 't Fazantje (9 min fietsen) en het natuurgebied Loonse & Drunense Duinen bereikbaar."
+  }
+ },
+ "het-molenkwartier-woerden": {
+  "historie": {
+   "bron": "https://www.hetmolenkwartier.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het Molenkwartier verrijst op de plek van een voormalige kantoorlocatie aan Watermolenlaan 4 en Houttuinlaan 5 in de Woerdense wijk Nieuw Middelland. Deze panden maken plaats voor een stedelijk woongebied."
+  },
+  "voorzieningen": {
+   "bron": "https://www.hetmolenkwartier.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op loopafstand van het levendige centrum van Woerden, het NS-station en omliggende natuur. Wandel- en fietsroutes verbinden Woerden met omliggende dorpen."
+  }
+ },
+ "het-nieuwe-metterswane-fase-1-nijmegen": {
+  "ontwikkelaar": {
+   "bron": "https://metterswane.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt gerealiseerd door Veluwezoom Verkerk Bouw en Bouwbedrijf Wessels Rijssen. Dit is een ontwikkeling waarbij deze twee bedrijven samen de bouw uitvoeren."
+  },
+  "voorzieningen": {
+   "bron": "https://metterswane.nl/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het gebouw zit een supermarkt, een terras, kantoren en horecagelegenheden op de begane grond. Verder is er een ondergrondse parkeergarage en een gemeenschappelijke binnentuin genaamd 'de brievenbus' op de tweede verdieping."
+  }
+ },
+ "het-nieuwe-metterswane-fase-2-nijmegen": {
+  "ontwikkelaar": {
+   "bron": "https://metterswane.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het nieuwe Metterswane wordt gerealiseerd door Veluwezoom Verkerk Bouw en Bouwbedrijf Wessels Rijssen. Deze bedrijven zijn verantwoordelijk voor de bouw van het project."
+  },
+  "voorzieningen": {
+   "bron": "https://metterswane.nl/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebouw bevat een supermarkt, een terras, horeca op de begane grond en een ondergrondse parkeergarage. Er is ook een gezamenlijke binnentuin genaamd 'de brievenbus' op de tweede verdieping."
+  }
+ },
+ "het-nieuwe-metterswane-fase-3-nijmegen": {
+  "bestemming": {
+   "bron": "https://metterswane.nl/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebouw omvat 276 appartementen, een supermarkt, kantoren, horeca op de begane grond, een binnentuin en een ondergrondse parkeergarage. De architectuur is ontworpen door Barcode Architects."
+  },
+  "ontwikkelaar": {
+   "bron": "https://metterswane.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het nieuwe Metterswane wordt gerealiseerd door Veluwezoom Verkerk Bouw en Bouwbedrijf Wessels Rijssen. Deze twee bouwbedrijven voeren gezamenlijk de constructie uit."
+  },
+  "voorzieningen": {
+   "bron": "https://metterswane.nl/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het gebouw zelf zijn een supermarkt, horeca op de begane grond en een terras aanwezig. Het project vormt een entree naar het nieuwe stationsgebied van Nijmegen en de historische binnenstad."
+  }
+ },
+ "hillegaar-venhuizen-drechterland": {
+  "ontwikkelaar": {
+   "bron": "https://www.nieuwbouw-venhuizen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Blauwhoed ontwikkelt het project Hillegaar. De verkoop en begeleiding worden verzorgd door CMK Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://www.nieuwbouw-venhuizen.nl/actueel/binnenkort-in-verkoop",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ontstaat in het dorpshart van Venhuizen. Voor financiële vragen kunnen kopers terecht bij Rabobank en Steengoedt Hypotheken die nauwe samenwerking hebben met Blauwhoed."
   }
  },
  "hoeksenes-amsterdam": {
@@ -60,9 +1026,9 @@
    "waarde": ""
   },
   "historie": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.woneninhoeksenes.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek lag vroeger Houcky Nes, een eilandje in het IJ dat naar zijn lage, hoekige vorm werd genoemd. Na inpoldering in 1875 verdween het eiland onder de nieuwe polder, maar de naam bleef behouden."
   },
   "ontwikkelaar": {
    "bron": "",
@@ -70,14 +1036,55 @@
    "waarde": ""
   },
   "starterslening": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.woneninhoeksenes.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt 50 jaar afgekochte erfpacht, zodat er geen verrassingen in de erfpachtkosten ontstaan. Er is geen zelfbewoningsplicht of anti-speculatiebeding van toepassing."
   },
   "voorzieningen": {
    "bron": "",
    "gecontroleerd_op": "",
    "waarde": ""
+  }
+ },
+ "hoendersveld-venray": {
+  "historie": {
+   "bron": "https://www.hoendersveld.nl/nieuws",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie stond het voormalige clubhuis van de duivenvereniging, dat in februari 2025 is gesloopt."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.hoendersveld.nl/nieuws/bouw-gestart",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Venterra ontwikkelt het project. De bouw wordt uitgevoerd door aannemer Bouwmij Janssen uit Venray. Voor het appartementencomplex blok A werkt Wonen Limburg mee als huurverstrekker."
+  },
+  "voorzieningen": {
+   "bron": "https://www.hoendersveld.nl/nieuws/bouwupdate-juni-2026",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in het centrum van Venray met zicht op de Grote Kerk. Het terrein wordt ingericht met kruidenplantsoenen langs de paden, wadi's voor wateropvang en een grote diversiteit in beplanting."
+  }
+ },
+ "hoeverijk-nieuwegein-fase-1-nieuwegein": {
+  "ontwikkelaar": {
+   "bron": "https://www.hoeverijk-nieuwegein.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt ontwikkeld door trebbe.nl en lunee.nl. De makelaar is De Keizer."
+  },
+  "voorzieningen": {
+   "bron": "https://www.hoeverijk-nieuwegein.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de omgeving liggen Cityplaza met meer dan 150 winkels, het culturele centrum DE KOM, sportfaciliteiten zoals Merwestein en golf- en tennisbanen, Fort Jutphaas met historische charme, en Down Under in Houten voor watersport en evenementen."
+  }
+ },
+ "hoeverijk-nieuwegein-fase-2-nieuwegein": {
+  "ontwikkelaar": {
+   "bron": "https://www.hoeverijk-nieuwegein.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt ontwikkeld door trebbe.nl en lunee.nl. De makelaar die het verkoopt is De Keizer."
+  },
+  "voorzieningen": {
+   "bron": "https://www.hoeverijk-nieuwegein.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de nabije omgeving zijn diverse voorzieningen aanwezig: Cityplaza met meer dan 150 winkels, het culturele centrum DE KOM, sportfaciliteiten zoals Merwestein en golf- en tennisbanen, evenals Down Under in Houten voor watersport. Fort Jutphaas biedt historische charme en groen."
   }
  },
  "hof-van-rijswijk-de-prins-rijswijk-zh": {
@@ -87,9 +1094,9 @@
    "waarde": ""
   },
   "historie": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.hofvanrijswijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project staat op de locatie van winkelcentrum De Bogaard, dat wordt vervangen door het toekomstige Bogaard stadscentrum met het nieuwbouwproject."
   },
   "ontwikkelaar": {
    "bron": "",
@@ -102,9 +1109,86 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.hofvanrijswijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving zijn winkels, horeca en restaurants aanwezig. Het project heeft bereikbaarheid naar Den Haag, Delft en Rotterdam. Nabij het project liggen rustige parken en historische plekken."
+  }
+ },
+ "hollandse-meesters-amstelveen": {
+  "voorzieningen": {
+   "bron": "https://hollandsemeestersamstelveen.nl/nl/aanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project heeft een grote gemeenschappelijke binnentuin van 1.400 m² met zitplekken, een gedeeld dakterras op de 6e verdieping voor burenactiviteiten, en parkeerplaatsen inclusief elektrische laadpalen in de ondergelegen stallingsruimte. De meeste appartementen hebben een eigen balkon of dakterras, en er is een fietsenstalling aanwezig."
+  }
+ },
+ "honk-hoofddorp-haarlemmermeer": {
+  "starterslening": {
+   "bron": "https://honkhoofddorp.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project noemt KoopStart als koopregelingen voor starters. De gemeente Haarlemmermeer kent geen zelfbewoningsplicht of gemeentelijk antispeculatiebeding voor dit project."
+  },
+  "voorzieningen": {
+   "bron": "https://honkhoofddorp.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het centrum van Hoofddorp met vele voorzieningen ligt vlakbij. In de polder kunnen hardlooptochten en wielrenroutes gedaan worden. Schiphol, Haarlem en Amsterdam zijn bereikbaar binnen ongeveer 15 minuten."
+  }
+ },
+ "inck-veld-a-eindhoven": {
+  "ontwikkelaar": {
+   "bron": "https://inck-eindhoven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "INCK Eindhoven is een initiatief van Woonbedrijf en Heijmans. Heijmans verzorgt de vastgoedverkoop en bouw van het project met circa 400 koop- en huurwoningen."
+  },
+  "voorzieningen": {
+   "bron": "https://inck-eindhoven.nl/vijf-vragen-antwoorden-over-de-gemeenschappelijke-daktuinen/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk ontstaat een Parkzone aan de Humperdincklaan en Glinkastraat als buurtpark voor ontmoeten, ontspannen en spelen. Er zijn daktuinen, community-ruimtes, en een ecologische zone langs de Karel de Grotelaan met bomen, heesters en graslanden. INCK ligt dichtbij het centrum van Eindhoven met voorzieningen in de omgeving."
+  }
+ },
+ "jazz-city-roermond": {
+  "ontwikkelaar": {
+   "bron": "https://jazzcity.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Jazz City is een ontwikkeling van SDK Vastgoed en JPO."
+  },
+  "voorzieningen": {
+   "bron": "https://jazzcity.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving zijn restaurants, cafés en luxe outletwinkels aanwezig. Het Arlopark en de Maasplassen liggen in de buurt, evenals de historische binnenstad van Roermond en het Designer Outlet Roermond."
+  }
+ },
+ "joie-de-vivre-nijmegen-nijmegen": {
+  "historie": {
+   "bron": "https://www.joiedevivrewonen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het iconische gebouw Piushove was ooit het hart van het Rijke Roomse leven. Het gebouw is liefdevol gerestaureerd en herbergt nu 28 appartement en penthouses."
+  },
+  "voorzieningen": {
+   "bron": "https://www.joiedevivrewonen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op een kwartier wandelen van het stadscentrum van Nijmegen, waar winkelstraatjes, boetieks en terrassen aanwezig zijn. In het project zelf zijn een atrium, private garden en private parking onderdeel van de woonomgeving."
+  }
+ },
+ "klokkengietery-laarbeek": {
+  "historie": {
+   "bron": "https://www.klokkengietery.nl/over-klokkengietery/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek stond de klokkengieterij van Petit & Fritsen, opgericht in 1660. Het monumentale Rijksmonument blijft behouden en wordt geïntegreerd in het nieuwe ontwerp. De karakteristieke hallen worden niet gesloopt."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.klokkengietery.nl/over-klokkengietery/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "BanBouw B.V. ontwikkelt het project. Architect Frans van Architecten|en|en heeft het ontwerp verzorgd met aandacht voor behoud van het monumentale pand en integratie van de historische hallen."
+  },
+  "starterslening": {
+   "bron": "https://www.klokkengietery.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Inwoners van Laarbeek, oud-inwoners en personen met economische binding (werkzaam in de gemeente) krijgen voorrang bij de toewijzing van woningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.klokkengietery.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de omgeving zijn supermarkten, scholen en restaurants aanwezig. Het dorp beschikt over een bruisend verenigingsleven met jaarlijkse evenementen. In de buurt liggen natuurgebieden, bossen, wateren en historische locaties zoals Kasteel Croy."
   }
  },
  "kloostergoed-theresia-vught": {
@@ -114,9 +1198,9 @@
    "waarde": ""
   },
   "historie": {
-   "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/",
-   "gecontroleerd_op": "2026-09-16",
-   "waarde": "Het terrein was van 1930 tot 2000 in gebruik door de zusters J.M.J. Het oude kloostergebouw is in 2026 gesloopt; juist op die plek komt het deelplan De Kloostertuin. De volwassen bomen en de parkachtige aanleg blijven staan."
+   "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op het terrein stond vroeger het klooster van de Zusters van Jezus, Maria, Jozef (JMJ), dat aan de Jagersboschlaan in Vught was gelegen. Het voormalige kloostergebouw wordt momenteel gesloopt om plaats te maken voor de nieuwbouwwoningen."
   },
   "ontwikkelaar": {
    "bron": "https://van-stiphout.nl/projecten/kloostergoed-theresia/",
@@ -129,9 +1213,93 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/",
-   "gecontroleerd_op": "2026-09-16",
-   "waarde": "Het plan is autoluw: er wordt gecentraliseerd geparkeerd, zodat de straten tussen de woningen vrij blijven. De woningen zijn gasloos, met vloerverwarming en eigen opwek."
+   "bron": "https://www.nieuwbouw-kloostergoedtheresia.nl/nieuws",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op het landgoed komen een kinderopvang (Mowgli, sinds mei 2026 in gebruik) en een kleinschalig zorgcomplex (Natuurlijk Thuys voor elf jongvolwassenen met een licht verstandelijke beperking) in De Moestuin. Het landgoed heeft groene binnentuinen, een gezamenlijke moestuin en wordt ingericht als autoluw gebied met centrale parkeerplaatsen."
+  }
+ },
+ "koningswei-koop-tilburg": {
+  "historie": {
+   "bron": "https://koningswei-tilburg.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek stond eerder de voormalige Piusstaete, die is gesloopt. Het Koningsplein transformeert van een stenen marktplein naar een groene woonomgeving."
+  },
+  "voorzieningen": {
+   "bron": "https://koningswei-tilburg.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in hartje Tilburg tussen de Piushaven en het centrum. In de buurt zijn op loop- of fietsafstand: station, restaurants, stadspark, museum, koffiebar en supermarkt. Op het Koningsplein zelf komt groen en een stadsweide."
+  }
+ },
+ "kop-west-wonen-alphen-aan-den-rijn": {
+  "voorzieningen": {
+   "bron": "https://woneninkopwest.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt direct aan de Rijnhaven met een sloephaven, boardwalk en steigers met toegang tot het water. In de nabijheid zijn winkels, horeca, scholen en sportclubs op loop- of fietsafstand. Bushaltes, het treinstation en uitvalswegen bieden verbinding naar werk en vrienden."
+  }
+ },
+ "kraanbaan-fase-1-west-maas-en-waal": {
+  "historie": {
+   "bron": "https://www.woneninkraanbaan.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op het terrein stonden oude loodsen, een monumentale kraanbaan en het monumentale gebouw de Klef. Deze worden getransformeerd tot een leefgebied."
+  },
+  "voorzieningen": {
+   "bron": "https://www.woneninkraanbaan.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het terrein ligt direct aan de nevengeul van de Waal en aan de Waalbandijk in Beneden-Leeuwen."
+  }
+ },
+ "kraanbaan-fase-1b-west-maas-en-waal": {
+  "historie": {
+   "bron": "https://www.woneninkraanbaan.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op het terrein stonden vroeger oude loodsen, een monumentale kraanbaan en het monumentale pand Klef, die worden getransformeerd tot een woongebied."
+  },
+  "voorzieningen": {
+   "bron": "https://www.woneninkraanbaan.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt direct aan de nevengeul van de Waal aan de Waalbandijk in Beneden-Leeuwen, wat een unieke ligging in de regio vormt."
+  }
+ },
+ "la-vinea-papendrecht": {
+  "ontwikkelaar": {
+   "bron": "https://woneninlavinea.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Gebroeders Blokland ontwikkelt La Vinea. Dit familiebedrijf begeleid toekomstige bewoners bij de aankoop van de appartementen en werkt samen met Kooyman Eigen Huis voor verkoopbegeleiding."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninlavinea.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt aan de rand van het centrum, direct grenzend aan het groene Vondelpark. De locatie is op loopafstand van het centrum van Papendrecht (5 minuten), het station en busknooppunt (8 minuten), en ligt dicht bij de uitvalswegen A15 en A16 (6 minuten rijden)."
+  }
+ },
+ "lange-wemen-hengelo-o": {
+  "ontwikkelaar": {
+   "bron": "https://www.langewemen.nl/projectinformatie/het-laatste-nieuws/11645/vanwonen-presenteert-masterplan-voor-vernieuwd-stadshart-van-hengelo/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VanWonen ontwikkelt het project samen met HMO en Gemeente Hengelo. VanWonen is gebiedsontwikkelaar en verantwoordelijk voor de realisatie van het masterplan."
+  },
+  "voorzieningen": {
+   "bron": "https://www.langewemen.nl/projectinformatie/het-project-lange-wemen/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebied krijgt winkels, een openbare parkeergarage, een openbare fietsenstalling en meer groen in de buitenruimte. De Drienerbeek loopt straks weer bovengronds door het hart van het gebied."
+  }
+ },
+ "lauwendael-fase-1-west-maas-en-waal": {
+  "bestemming": {
+   "bron": "https://www.lauwendael.nl/over-het-project",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk krijgt aandacht voor biodiversiteit en klimaatadaptatie. Platte daken van bergingen en uitbouwen krijgen een groendak, en er komt een wadi aan de zuidkant voor natuurlijke wateropvang."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.lauwendael.nl/over-het-project",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Van de Klok, een onderneming van KlokGroep, realiseert het project. Het gaat om fase 1 met 32 woningen die volledig verkocht zijn."
+  },
+  "voorzieningen": {
+   "bron": "https://www.lauwendael.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Lauwendael ligt op loopafstand van het centrum van Beneden-Leeuwen met winkels, supermarkten, scholen en kinderopvang. De locatie is goed ontsloten naar de N322 voor bereikbaarheid van Tiel, Nijmegen, Oss en Den Bosch."
   }
  },
  "le-jardin-hoofddorp-haarlemmermeer": {
@@ -146,9 +1314,9 @@
    "waarde": ""
   },
   "ontwikkelaar": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.lejardin-hoofddorp.nl/aanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Timpaan ontwikkelt Le Jardin. Het bedrijf is gevestigd in Hoofddorp en verzorgt de verkoop via makelaars Mooijekind Vleut en Brockhoff Nieuwbouwmakelaars."
   },
   "starterslening": {
    "bron": "",
@@ -156,16 +1324,28 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://www.lejardin-hoofddorp.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het Stadspark ligt tegenover het project. In de buurt zijn bakker, sportfaciliteiten en het centrum van Hoofddorp met terras. Het treinstation naar Amsterdam en Schiphol zijn bereikbaar. De wijk krijgt groene hofjes, speelplekken, wandelroutes langs de Kagertocht en autoluwe straatjes."
+  }
+ },
+ "leeuwepoort-appartementen-utrecht": {
+  "bestemming": {
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project heeft een Art Deco-architectuurstijl met herkenbare elementen. Drie collectieve binnentuinen zijn onderdeel van het ontwerp met focus op vergroening, circulariteit en biodiversiteit. Houten gevels versterken het natuurlijke karakter."
+  },
+  "voorzieningen": {
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt aan het Amsterdam-Rijnkanaal met het Oeverpark voor recreatie. De wijk grenst aan Leidsche Rijn Centrum en Hoge Weide. Via de Dafne Schippersbrug bereik je het oude centrum van Utrecht. Groene veldjes tussen de bouwvelden bieden speelgelegenheid."
   }
  },
  "leeuwepoort-herenhuizen-en-stadswoningen-utrecht": {
   "bestemming": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project Leeuwepoort is onderdeel van de wijk Leeuwesteyn aan de westkant van het Amsterdam-Rijnkanaal in Utrecht. De architectuur sluit aan bij het Art Deco-karakter van de buurt, met stoere Art Deco-gevels. Het ontwerp integreert drie collectieve binnentuinen met maximale vergroening en biodiversiteit."
   },
   "historie": {
    "bron": "",
@@ -173,9 +1353,9 @@
    "waarde": ""
   },
   "ontwikkelaar": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://leeuwepoort.nl/nl/aanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Beumer is betrokken bij het project als contactpunt voor nieuwbouwverkoop. Het project is ontworpen door architect Ard Hoksbergen, die bij het ontwerp rekening heeft gehouden met duurzaamheid en het creëren van een fijne leefomgeving."
   },
   "starterslening": {
    "bron": "",
@@ -183,9 +1363,793 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://leeuwepoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn aanwezig: het Oeverpark langs het Amsterdam-Rijnkanaal met bestaande en nieuwe bomen voor recreatie, groene veldjes tussen de bouwvelden met speelgelegenheid, en het Willem-Alexanderpark. De wijk grenst aan Leidsche Rijn Centrum en Hoge Weide, en is via de Dafne Schippersbrug verbonden met het oude centrum van Utrecht."
+  }
+ },
+ "liv-dordrecht-dordrecht": {
+  "ontwikkelaar": {
+   "bron": "https://liv-dordrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans Vastgoed ontwikkelt het project LIV. Het project maakt deel uit van de gebiedsontwikkeling Nieuw Land van Valk in Dordrecht."
+  },
+  "voorzieningen": {
+   "bron": "https://liv-dordrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn een supermarkt in de buurt en een aangrenzend park aanwezig. Het Dordrecht Centraal station ligt op 5 minuten afstand, de binnenstad is bereikbaar binnen 10 minuten fietsen. Het project zelf heeft groene binnentuinen, een fietsenstalling en parkeermogelijkheden in de openbare ruimte."
+  }
+ },
+ "luchenweide-geldrop-mierlo": {
+  "ontwikkelaar": {
+   "bron": "https://luchenweide.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Van Grunsven Groep is een bouwer en ontwikkelaar die dit project ontwikkelt."
+  },
+  "voorzieningen": {
+   "bron": "https://luchenweide.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt aan de oostzijde van de Fazantlaan in Mierlo in de wijk Luchen, in een groene omgeving."
+  }
+ },
+ "marienburg-fase-1-gooise-meren": {
+  "bestemming": {
+   "bron": "https://marienburgbussum.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het voormalige gemeentelijk monument wordt getransformeerd naar woongebouw met behoud van de karakteristieke architectuurale elementen van het originele klooster."
+  },
+  "historie": {
+   "bron": "https://marienburgbussum.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebouw werd aan het einde van de negentiende eeuw gebouwd als klooster en opende in 1881 als pensionaat voor jonge vrouwen. Later werd het omgevormd tot verzorgingshuis voor zusters en is inmiddels aangewezen als gemeentelijk monument."
+  },
+  "voorzieningen": {
+   "bron": "https://marienburgbussum.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de nabijheid liggen gezellige terrassen, boetiekjes, restaurants en dagelijkse voorzieningen. Twee NS-stations bevinden zich op korte afstand van het complex."
+  }
+ },
+ "markant-moerdijk": {
+  "ontwikkelaar": {
+   "bron": "https://nieuwbouw-markant.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Markant Zevenbergen is een ontwikkeling van BPD, Synchroon en Remmers projectontwikkeling."
+  },
+  "voorzieningen": {
+   "bron": "https://nieuwbouw-markant.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het station ligt op korte afstand. De gezellige dorpskern van Zevenbergen is snel bereikbaar. De wijk heeft brede wandelpaden, hofjes, veel bomen, water en groene speelplekken."
+  }
+ },
+ "nelson-amsterdam-amsterdam": {
+  "ontwikkelaar": {
+   "bron": "https://nelsonamsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Nelson is een ontwikkeling van Synchroon. De bouw wordt uitgevoerd door Synchroon en de projectverkoop wordt afgehandeld door makelaars Van de Steege Projectmakelaars, Mooijekind Vleut Makelaars en Fris Woningmakelaars."
+  },
+  "starterslening": {
+   "bron": "https://www.nelsonamsterdam.nl/verkoopdocumenten/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project noemt erfpacht als financieringsoptie. De woningen worden verkocht onder eeuwigdurende erfpacht volgens de Algemene Bepalingen voor eeuwigdurende erfpacht 2016 Amsterdam."
+  },
+  "voorzieningen": {
+   "bron": "https://nelsonamsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt naast het Nelson Mandelapark in Amsterdam Zuidoost. De appartementen hebben glas van vloer tot plafond met uitzicht op het park of het plein. Er is een nabijgelegen stallingsgarage in aanbouw voor parkeerplaatsen."
+  }
+ },
+ "neptunus-stichtse-vecht": {
+  "bestemming": {
+   "bron": "https://www.neptunus-maarssen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het Ruimtekwartier transformeert tot een compleet nieuw stadsdeel met circa 2.600 woningen. De twee woontorens Triton en Nautilus bepalen de skyline van het gebied."
+  },
+  "voorzieningen": {
+   "bron": "https://www.neptunus-maarssen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het Ruimtekwartier komen diverse ontmoetingsplekken zoals een picknickplek, sportplek en rustplek. Er is een hardlooproute door de hele wijk. Station Maarssen ligt op loopafstand met directe busverbindingen naar Utrecht. Ook de Haarrijnse plas en het centrum van Utrecht zijn bereikbaar."
+  }
+ },
+ "new-maas-rotterdam": {
+  "ontwikkelaar": {
+   "bron": "https://newmaas.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "New Maas is ontworpen door Barcode Architects. De makelaar Van Herk Nieuwbouwmakelaars verzorgt de verkoop."
+  },
+  "voorzieningen": {
+   "bron": "https://newmaas.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het gebouw zelf bevindt zich het New Maas Collective met koffiebar, lounge, gym en co-working ruimte voor bewoners. De bushalte ligt voor de deur, en een halte van de Watertaxi ligt eveneens voor de deur."
+  }
+ },
+ "nieuw-achterveld-west-maas-en-waal": {
+  "bestemming": {
+   "bron": "https://nieuwachterveld.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Er loopt een beroepsprocedure tegen het vastgestelde bestemmingsplan bij de Raad van State, wat de verkoopstart heeft vertraagd."
+  },
+  "historie": {
+   "bron": "https://nieuwachterveld.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie stond oorspronkelijk industrie. De architectuur van de nieuwe woningen sluit aan bij de voormalige industriële activiteiten op deze plek in Dreumel."
+  },
+  "ontwikkelaar": {
+   "bron": "https://nieuwachterveld.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is een initiatief van Van den Bosch Vastgoed, ROQ vastgoed, SAWI projectontwikkeling en Bruisten GWW. Bouwbedrijf Van Grunsven realiseert de woningen."
+  }
+ },
+ "nieuw-mosveen-s-gravenhage": {
+  "voorzieningen": {
+   "bron": "https://www.nieuwmosveen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk De Venen heeft speelplekken, wandelroutes, winkels en scholen in de buurt. Sportclubs liggen dichtbij voor voetballen, kanoën en paardrijden. De Uithof is enkele minuten fietsen weg met klimhal, ijsbaan en mountainbikeroutes. Tram 4 en bus 25 stoppen in de omgeving."
+  }
+ },
+ "noarderstek-fase-4-noardeast-fryslan": {
+  "bestemming": {
+   "bron": "https://www.noarderstek.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De nieuwe buurt krijgt een jaren '30-achtig uiterlijk met openbaar groen, meer bomen en ruim opgezette straten."
+  },
+  "historie": {
+   "bron": "https://www.noarderstek.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek stond voormalig tuincentrum Mollema. De veilinggebouwen worden gesloopt en maken plaats voor een nieuwe buurt."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.noarderstek.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt ontwikkeld door Zwanenburg Projecten."
+  }
+ },
+ "noorderbunder-dongen": {
+  "ontwikkelaar": {
+   "bron": "https://woneninnoorderbunder.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is een samenwerking tussen de gemeente Dongen, woningcorporatie Casade en ontwikkelaar Blink. Blink bouwt de koopwoningen, Casade verzorgt de huurwoningen en de gemeente draagt zorg voor de openbare ruimte."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninnoorderbunder.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de nabije omgeving liggen Park Vredeoord (vijver en bomenpad op circa 5 minuten fietsen), cultuurhuis De Cammeleur met voorstellingen en café (5 minuten fietsen), restaurant Den Hespel aan de rivier met speeltuin (12 minuten fietsen), recreatiepark 't Fazantje (9 minuten fietsen) en natuurgebied Loonse & Drunense Duinen."
+  }
+ },
+ "nova-67-appartementen-zwolle": {
+  "bestemming": {
+   "bron": "https://www.deweezen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De Weezen is een groen-stedelijk plan met duurzame kenmerken. Het ontwerp integreren groen op gevels, dakterrassen en daken, en het plan omvat slimme energie-installaties, een innovatief watersysteem en ruimte voor natuur."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.deweezen.nl/aanbod/overzicht",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt ontwikkeld en gerealiseerd door Nijhuis Bouw B.V. en Explorius Vastgoedontwikkeling B.V. De verkoop wordt verzorgd door Woonfabriek Zwolle en Edwin van Vilsteren Makelaars."
+  },
+  "voorzieningen": {
+   "bron": "https://www.deweezen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt aan de stadsgracht van Zwolle op enkele minuten loopafstand van het historische centrum. Via het Kerkbrugje bereik je in 10 minuten het hart van de binnenstad. Het plan grenst aan park De Wezenlanden en vormt een verbinding naar de wijken Assendorp en Wipstrik. In de wijk zelf komen een buurtpark en groene binnenhoven met wandelpaden."
+  }
+ },
+ "omega-leiden": {
+  "ontwikkelaar": {
+   "bron": "https://www.omega-leiden.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heembouw uit Roelofarendsveen is de aannemer die het project bouwt. Green.nl is verantwoordelijk voor de ontwikkeling. Fides Makelaars fungeert als makelaar en verkooppartner."
+  },
+  "voorzieningen": {
+   "bron": "https://www.omega-leiden.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt dicht bij sportfaciliteiten (5 minuten lopen), Lammenschans (5 minuten lopen), supermarkt (5 minuten lopen), Cronesteynpark (5 minuten fietsen), station Leiden Lammenschans, en het centrum van Leiden (8 minuten fietsen). In de buurt ligt ook het sportcomplex De Vliet met ijshal en zwembad."
+  }
+ },
+ "ooievaarshoek-oss": {
+  "ontwikkelaar": {
+   "bron": "https://ooievaarshoek.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ballast Nedam Development ontwikkelt de wijk samen met de gemeente Oss. Het bedrijf werkt aan het stedenbouwkundig plan en presenteerde het voorlopig ontwerp."
+  },
+  "voorzieningen": {
+   "bron": "https://ooievaarshoek.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk krijgt een centraal dorpsplein en openbare binnentuinen als ontmoetingsplekken. Er komen speelplekken en gedeelde voorzieningen. De wijk heeft natte graslanden, boomgaarden en groene randen."
+  }
+ },
+ "oosterlicht-fase-1-de-ronde-venen": {
+  "ontwikkelaar": {
+   "bron": "https://www.oosterlandmijdrecht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Kavel Vastgoed ontwikkelt Oosterland. Het project bestaat uit drie buurten: Oosterlicht, Oostervaart en Oosterhof, met in totaal ongeveer 800 woningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.oosterlandmijdrecht.nl/nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Buslijn 121 rijdt vanaf eind 2027 door Oosterland. Het project bevat een landschapspark als groene long van de wijk. Mijdrecht ligt binnen 30 minuten van Amsterdam, Utrecht en Schiphol."
+  }
+ },
+ "op-den-donk-duiven": {
+  "historie": {
+   "bron": "https://www.wonenopdendonk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de plek waar tot voor kort de IKC Remigiusschool stond, komt Op den Donk met twee paviljoens met 50 appartementen."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.wonenopdendonk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Blauwhoed is ontwikkelaar van het project. Het bedrijf betrekt toekomstige bewoners via co-creatie en participatie in het ontwikkelingsproces."
+  },
+  "starterslening": {
+   "bron": "https://www.wonenopdendonk.nl/op-den-donk/woningtypes/type-60-70m2",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de verkoop van enkele appartementtypes zijn toewijzings- en inkomenscriteria van toepassing, wat wijst op begeleide verkoop voor specifieke doelgroepen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.wonenopdendonk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In en rond Duiven liggen scholen, sport en winkels dichtbij. Je wandelt naar het centrum, de Droo en het park. De fietsroute over het Droopad verbindt de wijk met groen en de regio."
+  }
+ },
+ "opdreef-s-gravenhage": {
+  "ontwikkelaar": {
+   "bron": "https://opdreefwonen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans Vastgoed is verantwoordelijk voor de verkoop en ontwikkeling van het project. Emily Blaauw treedt op als verkoopmanager namens Heijmans Vastgoed."
+  },
+  "voorzieningen": {
+   "bron": "https://opdreefwonen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk krijgt meer groenvoorzieningen en speelplekken. In de buurt zijn winkels, scholen en sportparken aanwezig. Het recreatiegebied De Uithof ligt direct naast het project en het strand is dichtbij."
+  }
+ },
+ "pam-pampuslaan-1-amsterdam": {
+  "historie": {
+   "bron": "https://woneninpam.nl/woningtypes/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie Pampuslaan 1 in Weesp stond eerder een kantoorgebouw, dat wordt gesloopt om plaats te maken voor het appartementencomplex PAM."
+  },
+  "ontwikkelaar": {
+   "bron": "https://woneninpam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ten Brinke ontwikkelt en bouwt het project. Ten Brinke is gevestigd in Utrecht aan de Ravenswade 4c."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninpam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Weesp beschikt over winkels, scholen, musea en sportverenigingen. Het openbaar vervoer en centraal station zijn op ongeveer 5 minuten afstand. De historische binnenstad en haven liggen dichtbij."
+  }
+ },
+ "parkbuurt-almelo": {
+  "voorzieningen": {
+   "bron": "https://parkbuurt-almelo.nl/over-parkbuurt/locatie/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving liggen parken, sportvoorzieningen en scholen. Winkelcentrum Schelfhorst, basisscholen en sportfaciliteiten liggen op korte afstand. Sportpark Almelo, tennis- en padelbanen en een golfbaan liggen op fietsafstand. Het centrum van Almelo met winkels en terrassen aan het water is binnen tien minuten fietsend bereikbaar."
+  }
+ },
+ "parkbuurt-almelo-fase-1b-almelo": {
+  "voorzieningen": {
+   "bron": "https://parkbuurt-almelo.nl/over-parkbuurt/locatie/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving zijn parken, sportvoorzieningen en scholen aanwezig. Winkelcentrum Schelfhorst, basisscholen en sportfaciliteiten liggen op korte afstand. Sportpark Almelo, tennis- en padelbanen en een golfbaan zijn op fietsafstand bereikbaar. Het centrum van Almelo met winkels en terrassen is binnen tien minuten fietsend bereikbaar."
+  }
+ },
+ "pioniers-van-middelsee-fase-3-leeuwarden": {
+  "historie": {
+   "bron": "https://www.pioniersvanmiddelsee.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De woningen van Het Gemaal zijn geïnspireerd op een oud stoomgemaal. De Waag en 't Herenhuis zijn geïnspireerd op statige stadspanden. Het project maakt deel uit van de nieuwe wijk Middelsee aan de zuidkant van Leeuwarden."
+  },
+  "voorzieningen": {
+   "bron": "https://www.pioniersvanmiddelsee.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in de nieuwe wijk Middelsee, die is opgebouwd uit verschillende buurten zoals Havenstêd, Wetterstêd, Barrahûs en De Fellingen. De wijk heeft grachten en singels met water overal dichtbij, groene bomenlanen, kades en sfeervolle pleinen."
+  }
+ },
+ "plaza-residences-haarlem-haarlem": {
+  "historie": {
+   "bron": "https://plazaresidences.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op dit terrein stond vroeger een expeditieknooppunt dat is gesloopt voor de bouw van Plaza Residences."
+  },
+  "voorzieningen": {
+   "bron": "https://plazaresidences.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op loopafstand van het centrum van Haarlem met winkels en terrasjes. De duinen en buitenplaats Elswout liggen in de nabije omgeving. Het NS-station van Haarlem is dichtbij voor verbindingen naar Alkmaar, Amsterdam en Den Haag."
+  }
+ },
+ "podium-amersfoort": {
+  "bestemming": {
+   "bron": "https://woneninpodium.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Podium is onderdeel van Vathorst in Amersfoort en wordt ontwikkeld als stadswijk. Het project bevat ongeveer 440 nieuwbouwwoningen, waaronder koopwoningen met tuin en appartementen in het sociale en middeldure huursegment."
+  },
+  "ontwikkelaar": {
+   "bron": "https://woneninpodium.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans Vastgoed ontwikkelt Podium. Het bedrijf is gevestigd aan de Databankweg 28B in Amersfoort en heeft een telefoonnummer 033 – 450 2400."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninpodium.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk biedt ruimte voor een mix van woningen en bewoners met reuring en rust. Er zijn gemeenschappelijke binnentuinen en groene parkzones waaraan woningen grenzen."
+  }
+ },
+ "poldervaart-medemblik": {
+  "ontwikkelaar": {
+   "bron": "https://woneninpoldervaart.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Timpaan en Ooms Wonen ontwikkelen samen deze woonwijk met ongeveer 99 woningen."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninpoldervaart.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk wordt aangelegd naast de bestaande wijk Schuitvaerder, tussen Schuitvaerder en Zeedijk. Het project richt zich op een kindvriendelijke woonomgeving."
+  }
+ },
+ "populus-rotterdam": {
+  "historie": {
+   "bron": "https://populus-rotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De gebouwen van het Lokaal Cultureel Centrum Romeynshof verdwijnen. In het nieuwe Populus komen alle huidige voorzieningen terug: de bibliotheek, het gezondheidscentrum en het ERGO."
+  },
+  "voorzieningen": {
+   "bron": "https://populus-rotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebied krijgt een bibliotheek, gezondheidscentrum, ERGO, Het Huis van de Wijk, SKVR en een Centrum voor Jeugd en Gezin. De metrohalte Romeynshof is in het gebied aanwezig."
+  }
+ },
+ "porta-woerden": {
+  "bestemming": {
+   "bron": "https://www.porta-woerden.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Aan de Steinhagelsweg is ruimte voor een gezamenlijke woonkamer en twee commerciële units inbegrepen in het plan."
+  },
+  "voorzieningen": {
+   "bron": "https://www.porta-woerden.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn sportfaciliteiten aanwezig, en de Cattenbroekerplas ligt nabij. Winkelcentrum Snel & Polanen is bereikbaar via de poorten van PORTA. De binnenstad van Woerden met winkels en horeca ligt op fietsafstand."
+  }
+ },
+ "pracht-zutphen": {
+  "ontwikkelaar": {
+   "bron": "https://pracht-noorderhaven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Heijmans ontwikkelt het project. Het project bestaat uit drie appartementengebouwen met in totaal 74 appartementen en 6 penthouses."
+  },
+  "voorzieningen": {
+   "bron": "https://pracht-noorderhaven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het station, winkels en restaurants zijn gemakkelijk bereikbaar. Het centrum van Zutphen ligt op loopafstand en het project is goed verbonden met diverse N-wegen."
+  }
+ },
+ "quatrebras-badhoevedorp-haarlemmermeer": {
+  "voorzieningen": {
+   "bron": "https://www.quatrebrasbadhoevedorp.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op fietsafstand van voorzieningen in Amsterdam zoals theater Carré, de Pijp met boetiekjes en restaurantjes, en het Vondelpark. Binnen Badhoevedorp zelf zijn dagelijkse voorzieningen op loop- of fietsafstand bereikbaar. In de gebiedsontwikkeling komen maatschappelijke voorzieningen, openbaar groen en een nieuw centrumgebied."
+  }
+ },
+ "quatrebras-park-quartier-iii-fase-2-haarlemmermeer": {
+  "voorzieningen": {
+   "bron": "https://www.quatrebrasbadhoevedorp.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het gebied krijgt maatschappelijke voorzieningen, openbaar groen en een nieuw centrumgebied. In de buurt liggen scholen bereikbaar per fiets of lopend, het Amsterdamse Bos op enkele minuten afstand, en diverse voorzieningen in Amsterdam zoals theater Carré, de Pijp en het Vondelpark zijn op fietsafstand. Ook een Medisch Centrum De Badhoeve en Kinderboerderij de Hoeve zijn in het gebied aanwezig."
+  }
+ },
+ "rhijn-nieuwegein": {
+  "historie": {
+   "bron": "https://www.rhijnnieuwegein.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de plek stond vroeger geen bebouwing vanwege overstromingen, maar rond de elfde eeuw vestigden pioniers zich op de oevers. Het gebied heeft een rijke geschiedenis met kasteel Rijnhuizen en fort Jutphaas."
+  },
+  "voorzieningen": {
+   "bron": "https://www.rhijnnieuwegein.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het project zelf een supermarkt in de plint. In de directe omgeving ligt landgoed Rijnhuizen met park, en fort Jutphaas met restaurant. Utrecht ligt op 15 minuten fietsen met musea, winkels en uitgaansgelenheden."
+  }
+ },
+ "rodeo-broek-op-langedijk": {
+  "historie": {
+   "bron": "https://buurtschaprodeo.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek stond vroeger de Rodeo-fabriek, die is gesloopt. De sloopwerkzaamheden zijn officieel gestart in oktober 2024 en waren afgerond voordat de bouw van start ging."
+  },
+  "voorzieningen": {
+   "bron": "https://buurtschaprodeo.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in Broek op Langedijk met voorzieningen, scholen en sportverenigingen dichtbij. De wijk heeft toegang tot water: via de Oosterdel kun je het kanaal opvaren. Alkmaar ligt op 10 minuten afstand, Amsterdam op 30 minuten."
+  }
+ },
+ "roof-garden-amsterdam": {
+  "historie": {
+   "bron": "https://roofgardenamsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie stond eerder een bestaand pand dat is gesloopt. De sloop is inmiddels afgerond voordat in september 2025 de bouw van het woonproject van start ging."
+  },
+  "voorzieningen": {
+   "bron": "https://roofgardenamsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project beschikt over collectieve groene daktuinen op de vierde verdieping waar bewoners elkaar kunnen ontmoeten. De wijk Sloterdijk Stationskwartier biedt stadswonen op tien minuten fietsen van het centrum van Amsterdam."
+  }
+ },
+ "rotterdam-tree-house-koopappartementen-rotterdam": {
+  "ontwikkelaar": {
+   "bron": "https://www.treehouserotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "PRSC is verantwoordelijk voor concept en realisatie van Tree House. Het gebouw bevat 127 koopwoningen op de verdiepingen 25 tot en met 37, aangevuld met kantoorruimte, horeca en cultuurvoorzieningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.treehouserotterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het gebouw zijn horecagelegenheden, een cultuurpodium voor ongeveer 200 personen, en moderne kantoorruimte aanwezig. Daarnaast zijn op loopafstand restaurants, koffiezaken, cafés, winkels en culturele voorzieningen van de stad bereikbaar. Een fietsparkeergarage onder het gebouw is beschikbaar voor bewoners."
+  }
+ },
+ "rozenbuurt-fase-1a-hoorn": {
+  "bestemming": {
+   "bron": "https://www.wonen-zwaag.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het bestemmingsplan Rozenbuurt in Zwaag is definitief vastgesteld en voorziet in ruim baan voor 420 woningen. De wijk is autoluw, groen en klimaatadaptief met authentieke dorpse uitstraling voor straatjes en voetgangerspaden."
+  },
+  "historie": {
+   "bron": "https://www.wonen-zwaag.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de plek waar vroeger Rozenkwekerij Balk gevestigd was, staat nu de nieuwe wijk Rozenbuurt."
+  },
+  "voorzieningen": {
+   "bron": "https://www.wonen-zwaag.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Rozenbuurt beschikt over verschillende speel-, wandel- en ontmoetingsplekken. De wijk ligt centraal in de bebouwde kom van Zwaag, omringd door veel groen en grenzend aan park en sportvelden."
+  }
+ },
+ "rozenrijk-in-zwaag-hoorn": {
+  "ontwikkelaar": {
+   "bron": "https://wonen-rozenrijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Scholtens Projecten ontwikkelt het project. Het bedrijf is verantwoordelijk voor de bouw en realisatie van de 59 koopappartementen."
+  },
+  "voorzieningen": {
+   "bron": "https://wonen-rozenrijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk Rozenbuurt biedt groen, waterrijke omgeving, sportvelden in de nabijheid, winkels en goede bereikbaarheid via treinstations Hoorn Kersenboogerd en Hoorn CS. De wijk is autoluw en klimaatadaptief ingericht."
+  }
+ },
+ "s-gravendeel-west-fase-1a-hoeksche-waard": {
+  "bestemming": {
+   "bron": "https://www.sgravendeel-west.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project bestaat uit grondgebonden huizen in verschillende types: vrijstaande woningen, twee-onder-een-kapwoningen, eengezinswoningen en starterswoningen. Er wordt ook een groen landschap gecreëerd met speellocaties voor kinderen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.sgravendeel-west.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in de Hoekse Waard nabij verschillende uitvalswegen (A16, N3, A29) richting Dordrecht, Rotterdam en Breda. In en rondom 's-Gravendeel West zijn verschillende speellocaties gepland waar kinderen veilig kunnen spelen."
+  }
+ },
+ "sierlijke-dames-eindhoven": {
+  "ontwikkelaar": {
+   "bron": "https://www.sierlijkedames.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Land 's-Heeren is ontwikkelaar van het project. De huurappartementen in de tweede toren worden verhuurd door Trudo."
+  },
+  "voorzieningen": {
+   "bron": "https://www.sierlijkedames.com",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de nabije omgeving bevinden zich het Klokgebouw, het Philips Stadion, het Anthony van Leeuwenhoekpark en verschillende koffiebars. Eindhoven Centraal Station en dagelijkse voorzieningen liggen dichtbij. Rond de gebouwen ontstaat een groene, parkachtige buitenruimte met een loopbrug die aansluit op het Anthony van Leeuwenhoekpark."
+  }
+ },
+ "silhouet-wormerland": {
+  "ontwikkelaar": {
+   "bron": "https://woneninsilhouet.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VOF Horizon Ontwikkeling, een samenwerking tussen Timpaan en Bot Bouw, ontwikkelt het project."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninsilhouet.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt ligt Veenweidepark De Trickel aan de overkant van het water. Een supermarkt is gemakkelijk met de fiets bereikbaar en een bushalte ligt aan het einde van de straat."
+  }
+ },
+ "sint-anna-oudenbosch-halderberge": {
+  "historie": {
+   "bron": "https://sintanna-oudenbosch.nl/het-project",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek stonden het Sint Anna pensionaat en de voormalige muziekschool, die nu worden getransformeerd tot woningen. Het pensionaat wordt omgebouwd tot 16 appartementen en een stadswoning, terwijl de muziekschool 8 appartementen en een stadswoning krijgt."
+  },
+  "voorzieningen": {
+   "bron": "https://sintanna-oudenbosch.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De locatie ligt centraal in Oudenbosch met winkels, boetiekjes, theater en eetgelegenheden in de buurt. Het treinstation is op loopafstand, met verbindingen naar Roosendaal, Etten-Leur en Breda. In de openbare ruimte rondom het project is voldoende parkeergelegenheid aanwezig, inclusief een stallingsgarage aan de Lollestraat met 13 parkeerplaatsen."
+  }
+ },
+ "strijp-s4-fase-spark-eindhoven": {
+  "historie": {
+   "bron": "https://strijp-s4.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt ontwikkeld op het voormalige Philips-gebied, beter bekend als Strijp-S in Eindhoven."
+  },
+  "ontwikkelaar": {
+   "bron": "https://strijp-s4.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "SDK Vastgoed ontwikkelt Strijp/S4. Het eerste project SPARK bestaat uit 56 koopappartementen."
+  },
+  "voorzieningen": {
+   "bron": "https://strijp-s4.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk heeft horeca, werkplekken voor ondernemers en dagelijkse voorzieningen binnen loop- of fietsafstand. Het Philips de Jong park ligt op vijf minuten fietsen, Strijp-S station op twee minuten en het centrum op tien minuten."
+  }
+ },
+ "t-maoleveld-horst-aan-de-maas": {
+  "bestemming": {
+   "bron": "https://www.woneninmaoleveld.nl/nieuws/12759/update-juni-2026/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Voor de ontwikkeling was een wijziging van het bestemmingsplan nodig. De gemeente Horst aan de Maas heeft dit in juni 2025 vastgesteld, maar er is een bezwaar ingediend en de hoorzitting staat gepland voor begin juli 2026."
+  },
+  "historie": {
+   "bron": "https://www.woneninmaoleveld.nl/nieuws/12759/update-juni-2026/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie stond een boomgaard, waarvan de bomen zijn gerooid als voorbereiding op de nieuwbouw."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.woneninmaoleveld.nl/project-en-planning/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Van Wijnen realiseert de eerste fase van het project met 41 woningen (35 koop- en 6 huurwoningen) uit een totaal van 150 woningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.woneninmaoleveld.nl/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk beschikt over scholen en voorzieningen in de buurt, een gezamenlijke tuin met natuurvijver en fruitbomen, en voetgangerspaden langs autoluwe straten. De steden Horst en Venlo liggen dichtbij voor aanvullende voorzieningen."
+  }
+ },
+ "teelebeek-milsbeek": {
+  "historie": {
+   "bron": "https://www.wonenopdehey.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie stond vroeger niets bijzonders; de plek wordt Op de Hey genoemd omdat dit de historische naam van de locatie is, zoals te zien is op oude kaarten."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.wonenopdehey.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Nebuvast ontwikkelt het project Op de Hey. De verkoop en makelaardij worden afgehandeld door Makelaardij Twan Poels, Hans Janssen Makelaars en LIV Wooncoach."
+  },
+  "voorzieningen": {
+   "bron": "https://www.wonenopdehey.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De basisschool, dagelijkse winkels en verenigingsleven zijn dichtbij. In de wijk zelf zijn speelruimte, bomen, water en groenvoorzieningen aanwezig. De locatie ligt ook dicht bij natuurgebieden."
+  }
+ },
+ "terrazza-westland": {
+  "ontwikkelaar": {
+   "bron": "https://woneninterrazza.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Terrazza wordt ontwikkeld door VAN MIERLO Ontwikkeling. Het project maakt onderdeel uit van Waelpolder, een gebiedsontwikkeling van ONW (Ontwikkelingsmaatschappij Nieuwe Westland)."
+  },
+  "voorzieningen": {
+   "bron": "https://woneninterrazza.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het centrum van 's-Gravenzande met winkels, supermarkten en horeca ligt dichtbij. In de directe omgeving zijn scholen, sportverenigingen en medische voorzieningen aanwezig. Binnen het project zelf zijn een speeltuin en een buitensportveldje voorzien waar bewoners elkaar kunnen ontmoeten."
+  }
+ },
+ "the-four-eindhoven": {
+  "ontwikkelaar": {
+   "bron": "https://www.thefour.nl/projectinformatie/planning/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VanWonen ontwikkelt The Four. Het gebouw is ontworpen door architectenbureau Mecanoo Architecten."
+  },
+  "starterslening": {
+   "bron": "https://www.thefour.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Een groot deel van de appartementen valt binnen de categorie sociale koop tot € 250.000 v.o.n. en middeldure koop tot € 420.000 v.o.n. (prijspeil 2026)."
+  },
+  "voorzieningen": {
+   "bron": "https://www.thefour.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De begane grond biedt ruimte voor voorzieningen en nieuwe initiatieven. Op de zesde verdieping is er een royaal dakterras voor ontmoeting en verbinding van bewoners."
+  }
+ },
+ "the-future-alkmaar": {
+  "ontwikkelaar": {
+   "bron": "https://account.thefuture.nl/aanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt ontwikkeld door Ter Steege Bouw Vastgoed en Vastesteen Projectontwikkeling. Ter Steege Bouw Vastgoed is gevestigd in Apeldoorn, Vastesteen Projectontwikkeling in Alkmaar."
+  },
+  "starterslening": {
+   "bron": "https://thefuture.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project biedt 36 woningen aan via KoopStart, een regeling van het Nationaal Fonds Betaalbare Koopwoningen. De koopprijs bedraagt € 312.000 v.o.n., lager dan de marktwaarde. Koper moet jonger zijn dan 35 jaar en het gezamenlijke inkomen mag maximaal twee keer modaal bedragen (€ 93.531 bruto per jaar voor 2026)."
+  },
+  "voorzieningen": {
+   "bron": "https://thefuture.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "The Future ligt direct naast NS Station Alkmaar Noord, op enkele minuten fietsen van de binnenstad. Het stationsgebied wordt komende jaren vernieuwd tot een moderne stadswijk met wonen, werken en ontspanning. Dagelijkse voorzieningen zijn dichtbij."
+  }
+ },
+ "the-suites-sluisbuurt-amsterdam": {
+  "voorzieningen": {
+   "bron": "https://www.thesuites.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk komen een Montessorischool (bouw gestart april 2024), winkels en horeca. De supermarkt naast de Inholland-campus is al aanwezig. Tramhalte 9 is op 9 minuten, bushalte op 10 minuten. Cultureel centrum Baggerbeest is sinds maart 2024 open. Het IJ en groene ruimte zijn op loopafstand."
+  }
+ },
+ "the-yard-ii-dordrecht": {
+  "historie": {
+   "bron": "https://wonenopstadswerven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie stonden vroeger scheepswerven waar schepen werden gebouwd. De Biesboschhal, de kraanbaan en de oude hellingen herinneren aan deze maritieme geschiedenis en vormen nu onderdeel van de nieuwe stadswijk."
+  },
+  "voorzieningen": {
+   "bron": "https://wonenopstadswerven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De historische binnenstad van Dordrecht ligt op loopafstand via de Prins Clausbrug met terrassen, winkels en cultuur. Met de waterbus ben je in Rotterdam, en met de fiets bereik je de Biesbosch. Uitvalswegen liggen binnen handbereik."
+  }
+ },
+ "three-towers-zoeterwoude": {
+  "ontwikkelaar": {
+   "bron": "https://www.threetowers.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Woondromen waarmaken en De Koning Wonen verzorgen verhuur en informatie voor het project. Three Towers wordt ontwikkeld in de wijk Meerburg en is recent opgeleverd met 150 huurappartementen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.threetowers.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het project zit een Jumbo supermarkt aan het groene entreeplein. De wijk Meerburg heeft een groene binnentuin en groen entreeplein. Leiden ligt op fietsafstand met winkels, restaurants, terrasbooten en musea."
+  }
+ },
+ "tuinenrijk-veld-1-s-hertogenbosch": {
+  "voorzieningen": {
+   "bron": "https://wonenintuinenrijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn een winkelcentrum (De Groote Wielen) met gezondheidscentrum, een school (Campus Aan de Lanen), horeca en recreatiemogelijkheden zoals een waterplas met strand aan de Deltalaan aanwezig. De Maas ligt ook in de nabijheid."
+  }
+ },
+ "tuinenrijk-veld-2-s-hertogenbosch": {
+  "voorzieningen": {
+   "bron": "https://www.wonenintuinenrijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn een winkelcentrum (De Groote Wielen), een gezondheidscentrum, een school (Campus Aan de Lanen) en een waterplas met strand op loopafstand. Er zijn horeca-gelegenheden, een kade aan de waterplas en recreatiemogelijkheden zoals roeien en zwemmen."
+  }
+ },
+ "tuinenrijk-veld-3a-s-hertogenbosch": {
+  "voorzieningen": {
+   "bron": "https://www.wonenintuinenrijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn een winkelcentrum (De Groote Wielen) met gezondheidscentrum, school (Campus Aan de Lanen), horeca, een waterplas met strand aan de Deltalaan, en mogelijkheden voor roeien en vissen."
+  }
+ },
+ "tuinkwartier-amsterdam": {
+  "voorzieningen": {
+   "bron": "https://tuinkwartier.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk komen commerciële ruimtes in de begane grond waar bedrijven en voorzieningen zich kunnen vestigen. De wijk biedt dagelijkse voorzieningen en is bereikbaar met de IJtram of fiets naar het centrum van Amsterdam."
+  }
+ },
+ "tussen-de-leijen-gilze-en-rijen": {
+  "voorzieningen": {
+   "bron": "https://www.wonentussendeleijen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt zijn sportvoorzieningen zoals Tennisvereniging Rijen (8 minuten fietsen) en VV Rijen voetbalclub (35 minuten lopen). Het groene gebied Wolfsweide is geschikt voor hardlopen en wandelen (10 minuten lopen). Het centrum van Rijen met winkels en terrassen ligt op 30 minuten loopafstand. Het NS-station in Rijen biedt verbindingen naar het hele land."
+  }
+ },
+ "up-north-amsterdam": {
+  "bestemming": {
+   "bron": "https://www.upnorth-amsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project is duurzaam gebouwd volgens de BENG-norm. Op de begane grond aan de Klaprozenweg komen bedrijven en winkels."
+  },
+  "historie": {
+   "bron": "https://www.upnorth-amsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze plek in Amsterdam Noord lagen vroeger industriële havens. Het gebied is nu nog rauw en kaal, maar wordt getransformeerd naar een woonwijk."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.upnorth-amsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Up North wordt gerealiseerd door Van de Klok, een onderneming van KlokGroep."
+  },
+  "voorzieningen": {
+   "bron": "https://www.upnorth-amsterdam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de Klaprozenbuurt komen nieuwe supermarkten, horeca, basisscholen en voorzieningen voor zorg en welzijn. De buurt heeft groene parken en water, met ligging dicht bij het IJ."
+  }
+ },
+ "vad07bc-zelfbouwkavels-wageningen": {
+  "ontwikkelaar": {
+   "bron": "https://www.vadapark.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Steenvlinder ontwikkelt het project. Barten & Tiemessen is verantwoordelijk voor verkoop en informatie."
+  },
+  "voorzieningen": {
+   "bron": "https://www.vadapark.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de wijk zijn winkels, horeca, markt en station op loopafstand. Er zijn groene parken met speelplekken in de buurt. De Wageningse Geul en de Rijn zijn bereikbaar voor wandelingen."
+  }
+ },
+ "vadapark-wageningen": {
+  "ontwikkelaar": {
+   "bron": "https://www.vadapark.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Steenvlinder ontwikkelt het project. Barten & Tiemessen verzorgt de verkoop en informatie."
+  },
+  "voorzieningen": {
+   "bron": "https://www.vadapark.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op loopafstand van het centrum van Wageningen met winkels, horeca, markt en station. In de buurt zijn groene parken met speelplekken en wandelroutes langs de Wageningse Geul. Uitstekende fietsverbindingen zijn aanwezig."
+  }
+ },
+ "veldhoven-slot-oost-veldhoven": {
+  "ontwikkelaar": {
+   "bron": "https://www.veldhovenslotoost.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Ballast Nedam Development ontwikkelt dit project met in totaal 59 woningen."
+  },
+  "voorzieningen": {
+   "bron": "https://www.veldhovenslotoost.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het centrum van Veldhoven met winkels ligt op 2 km afstand. Een halte voor openbaar vervoer bevindt zich op ongeveer 0,5 km van de locatie. Een fietsroute verbindt het project met de High Tech Campus."
+  }
+ },
+ "vosholen-midden-groningen": {
+  "historie": {
+   "bron": "https://woneninvosholen.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De geschiedenis van het gebied gaat terug tot de 17e eeuw, toen de eerste bewoners zich vestigden in 'Hooge Sandt' en 'Sap-meer'. Dit begon als een gemeenschap van veenarbeiders en turfschippers."
+  },
+  "ontwikkelaar": {
+   "bron": "https://woneninvosholen.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "VanWonen ontwikkelt het project Vosholen met 84 woningen in totaal, waaronder vrijstaande woningen, twee-onder-éénkapwoningen, watervilla's en schuurwoningen."
+  }
+ },
+ "vrije-kavels-kreekrijk-assendelft": {
+  "bestemming": {
+   "bron": "https://www.vrijekavelskreekrijk.nl/downloads/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het beeldkwaliteitsplan Kreekrijk regelt de architectuurkwaliteit van het project. Kavels zijn gereserveerd voor vrijstaande villa's, waarbij kavels direct aan het water liggen of panoramisch zicht over het landschap bieden."
+  },
+  "voorzieningen": {
+   "bron": "https://www.vrijekavelskreekrijk.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt zijn boerderijen waar je kaas en eieren kunt kopen. Het polderlandschap biedt mogelijkheden voor wandelingen en fietstochten. Zaandam en Amsterdam liggen dichtbij."
+  }
+ },
+ "waelhoven-fase-1-westland": {
+  "historie": {
+   "bron": "https://www.waelhoven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Waelhoven vormt de laatste fase van de Waelpolder. Het project wordt gerealiseerd op de locatie van Waelpolder in 's-Gravenzande."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.waelhoven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "ABB Bouwgroep is verantwoordelijk voor de ontwikkeling en realisatie van Waelhoven."
+  },
+  "voorzieningen": {
+   "bron": "https://www.waelhoven.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Alle dagelijkse voorzieningen zijn binnen handbereik van Waelhoven. De kust ligt op fietsafstand. Het project heeft een centrale ligging met groene hoven waaraan de achtertuinen van de woningen grenzen."
+  }
+ },
+ "walzicht-bergen-op-zoom": {
+  "ontwikkelaar": {
+   "bron": "https://nieuwbouw-walzicht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Walzicht is een ontwikkeling van van Agtmaal en Van Wijnen. Helmig Makelaardij is de verkopend makelaar."
+  },
+  "voorzieningen": {
+   "bron": "https://nieuwbouw-walzicht.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De wijk ligt tussen natuurgebied Het Markiezaat met kreken, poelen, plassen en heidegronden, en het Markiezaatsmeer."
+  }
+ },
+ "west-vlaardingen": {
+  "ontwikkelaar": {
+   "bron": "https://westvlaardingen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Vastgoed- en gebiedsontwikkelaar Timpaan heeft de tender van de gemeente Vlaardingen gewonnen en realiseert het project. Timpaan werkt samen met architecten (VenhoevenCS), landschapsarchitecten (LOLA), zorgspecialisten (ICS Zorg) en bouwpartner Vink Bouw."
+  },
+  "voorzieningen": {
+   "bron": "https://westvlaardingen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project omvat een Kinderdienstcentrum van 2000m² van Ipse de Bruggen, een groene plint met koffiebar en binnentuin voor contact tussen bewoners en omwonenden."
   }
  },
  "westeinderhage-fase-1-aalsmeer": {
@@ -210,9 +2174,33 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://woneninwesteinderhage.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "De Westeinderplassen liggen op minder dan 100 meter afstand met mogelijkheden voor suppen, varen en zwemmen. Het oude dorpshart van Kudelstaart met dagelijkse voorzieningen ligt op ongeveer 4 minuten fietsen."
+  }
+ },
+ "wildgroei-utrecht": {
+  "starterslening": {
+   "bron": "https://wildgroei-haarrijn.nl/woningaanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In het Pergolahuis zijn alle 19 woningen aangemerkt als betaalbare koopwoningen met extra toewijzingseisen. In het Steigerhuis is bouwnummer 41 als betaalbare koopwoning aangemerkt."
+  },
+  "voorzieningen": {
+   "bron": "https://wildgroei-haarrijn.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de buurt liggen de Haarrijnse Plas met strandpaviljoen, Geertje's Hoeve (boerderij), speelnatuur OERRR, Maximapark, kasteel de Haar, brouwerij Maximus en sportvereniging DESTO. Voor dagelijkse boodschappen zijn supermarkten en winkels in Vleuten en Maarssen beschikbaar, en voor uitgebreider winkelen is het Leidsche Rijn Centrum en Utrecht bereikbaar."
+  }
+ },
+ "willemspoort-zuid-s-hertogenbosch": {
+  "ontwikkelaar": {
+   "bron": "https://willemspoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Willemspoort Zuid wordt ontwikkeld door de gemeente 's-Hertogenbosch, BrabantWonen en Heijmans Vastgoed. Heijmans Vastgoed is verantwoordelijk voor bouw en ontwikkeling, BrabantWonen verzorgt de verhuur van sociale huurappartementen."
+  },
+  "voorzieningen": {
+   "bron": "https://willemspoort.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de plint van de woningen komen voorzieningen die de gezonde leefomgeving versterken. De wijk grenst aan natuurgebied de Gement en ligt dicht bij de historische binnenstad van 's-Hertogenbosch."
   }
  },
  "willow-amsterdam": {
@@ -242,6 +2230,42 @@
    "waarde": ""
   }
  },
+ "winnerstraat-nederweert": {
+  "bestemming": {
+   "bron": "https://www.woneninwinnerstraat.nl/nieuws/gemeente-en-van-wijnen-tekenen-anterieure-overeenkomst-11/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het plangebied ligt tussen de Winnerstraat en de Zuid-Willemsvaart in Budschop. De anterieure overeenkomst is ondertekend en naar verwachting wordt medio 2027 de omgevingsvergunning aangevraagd."
+  },
+  "ontwikkelaar": {
+   "bron": "https://www.woneninwinnerstraat.nl/nieuws/gemeente-en-van-wijnen-tekenen-anterieure-overeenkomst-11/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Van Wijnen Projectontwikkeling Zuid ontwikkelt het plan. Van Wijnen neemt vooralsnog 57 van de 82 woningen voor haar rekening, terwijl de gemeente Nederweert samenwerkingspartner is."
+  },
+  "voorzieningen": {
+   "bron": "https://www.woneninwinnerstraat.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het centrum van Nederweert met winkels en horeca ligt op korte afstand. De A2 en N275 zijn nabij. In het plan zelf komen ontmoetingsplekken, doorkijkjes richting het kanaal en groenstroken."
+  }
+ },
+ "wonen-aan-de-spoorsingel-fase-2-krimpenerwaard": {
+  "historie": {
+   "bron": "https://wonenaandespoorsingel.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op deze locatie aan de Spoorstraat stond vroeger de spoorremise. Het oude spoorwegstation blijft behouden en wordt gerestaureerd; dit gebouw was oorspronkelijk gebouwd als reizigersonderkomen en woning voor de spoorwegmedewerker. De architectuur van de nieuwe appartementen verwijst naar de vesting- en spoorgeschiedenis van de plek, en naar de oude fabriekspanden die hier vroeger stonden."
+  },
+  "voorzieningen": {
+   "bron": "https://wonenaandespoorsingel.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Schoonhoven ligt centraal tussen Utrecht, Gouda en Rotterdam, elk op ongeveer 30 minuten rijden. Deze steden bieden voorzieningen op het gebied van winkelen, horeca en cultuur."
+  }
+ },
+ "wonen-in-duet-nijmegen": {
+  "voorzieningen": {
+   "bron": "https://www.woneninduet.nl/projectinformatie/het-project/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in het stationsgebied tegen het Waalfront. In de directe omgeving zijn het stadscentrum en groene doorgangen bereikbaar. Het gebouw zelf bevat gezamenlijke woon- en huiskamers, een binnentuin, een dakpark en een groene corridor voor ontmoeting."
+  }
+ },
  "wonen-in-hilko-zaandam-zaanstad": {
   "bestemming": {
    "bron": "",
@@ -249,9 +2273,9 @@
    "waarde": ""
   },
   "historie": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://woneninhilko.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Op de locatie waar Hilko wordt gebouwd stond eerder een slachthuis. Het gebied was bekend als de Slachthuisbuurt, ook wel de Boerejonkerbuurt genoemd. De oude fabrieksschoorsteen die zeep produceerde blijft behouden als herkenningspunt in de nieuwe buurt."
   },
   "ontwikkelaar": {
    "bron": "",
@@ -264,9 +2288,38 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://woneninhilko.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het station Zaandam Kogerveld ligt op loopafstand. Dagelijkse voorzieningen zoals supermarkt zijn dichtbij. In de wijk zijn sportvelden aanwezig. De Zaan loopt langs de buurt."
+  }
+ },
+ "wonen-in-woodstone-sequoia-dijk-en-waard": {
+  "voorzieningen": {
+   "bron": "https://www.woneninwoodstone.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving bevinden zich winkelcentrum Middenwaard met bekende winkelketens, bioscoop Vue, theater Cool, diverse sportfaciliteiten en recreatiegebieden zoals Geestmerambacht en Park van Luna. Het NS-station ligt om de hoek."
+  }
+ },
+ "wonen-op-hembrug-zaanstad": {
+  "bestemming": {
+   "bron": "https://wonenophembrug.nl/aanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het bestemmingsplan Hembrugterrein is medio 2023 onherroepelijk geworden. Het terrein blijft autoluw ingericht met parkering grotendeels uit het zicht in gezamenlijke parkeergarages."
+  },
+  "historie": {
+   "bron": "https://wonenophembrug.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het terrein was een voormalig militair terrein met monumentale fabrieksgebouwen, waaronder een voormalige munitiefabriek. Deze gebouwen met industriële details blijven herkenbaar in de nieuwe ontwikkeling."
+  },
+  "ontwikkelaar": {
+   "bron": "https://wonenophembrug.nl/aanbod/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Hembrug Zaandam B.V. ontwikkelt het terrein, bestaande uit de samenwerkingspartners ABC Planontwikkeling, LIFE en Ten Brinke."
+  },
+  "voorzieningen": {
+   "bron": "https://wonenophembrug.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het Hembrugbos grenst direct aan het terrein. Op het gebied komen horeca, cultuur, ateliers en evenementen. Zaandam centrum bereik je binnen 10 minuten fietsen, Amsterdam in ongeveer 12 minuten."
   }
  },
  "zaam-zaandam-zaanstad": {
@@ -281,9 +2334,9 @@
    "waarde": ""
   },
   "ontwikkelaar": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://zaamzaandam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project wordt ontwikkeld door Borghese Real Estate. Verkoop en informatie worden verzorgd door KRK makelaars en FRIS Woningmakelaars."
   },
   "starterslening": {
    "bron": "",
@@ -291,9 +2344,49 @@
    "waarde": ""
   },
   "voorzieningen": {
-   "bron": "",
-   "gecontroleerd_op": "",
-   "waarde": ""
+   "bron": "https://zaamzaandam.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt op loopafstand van station Zaandam en het stadscentrum. Alle voorzieningen zijn bereikbaar op loop- en fietsafstand. Amsterdam Centraal Station is per trein binnen 10 minuten bereikbaar."
+  }
+ },
+ "zettershof-utrecht": {
+  "voorzieningen": {
+   "bron": "https://www.zettershof.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "In de directe omgeving liggen terrassen aan de Oudegracht, restaurants, cafés, muziekpodia, theaters en winkels aan de Twijnstraat. De gemeente transformeert dit deel van de binnenstad tot een groener en beter leefbaar gebied."
+  }
+ },
+ "zuidbroek-wierden-fase-3-wierden": {
+  "voorzieningen": {
+   "bron": "https://www.zuidbroekwierden.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Wierden heeft winkels, terrassen, scholen en sportclubs die op loopafstand liggen. Het centrum van Wierden is ongeveer vijf minuten fietsen. In Zuidbroek zelf zijn speelplekken aanwezig voor kinderen."
+  }
+ },
+ "zwanenpark-fase-1-vlaardingen": {
+  "ontwikkelaar": {
+   "bron": "https://www.zwanenpark-vlaardingen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "ABB Bouwgroep ontwikkelt en realiseert het project. Het project wordt verkoopt via Makelaardij Thuis."
+  },
+  "voorzieningen": {
+   "bron": "https://www.zwanenpark-vlaardingen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in de wijk Holy Zuid in het noordelijke deel van Vlaardingen. De woningen worden omringd door groen en water en liggen tussen nieuw en bestaand groen."
+  }
+ },
+ "zwanenpark-fase-2-vlaardingen": {
+  "voorzieningen": {
+   "bron": "https://www.zwanenpark-vlaardingen.nl",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in de wijk Holy Zuid in het noordelijke deel van Vlaardingen. De woningen worden omringd door groen en water, met ruimte voor groen en maatregelen voor klimaatadaptatie en natuurinclusief bouwen."
+  }
+ },
+ "zwanenpark-fase-3-vlaardingen": {
+  "voorzieningen": {
+   "bron": "https://www.zwanenpark-vlaardingen.nl/nieuws/",
+   "gecontroleerd_op": "2026-09-21",
+   "waarde": "Het project ligt in de wijk Holy Zuid in het noordelijke deel van Vlaardingen. De woningen worden omringd door groen en water. Fase 3 bestaat uit 46 woningen met diverse typen: eengezinswoningen, begane grondappartementen en drielaagse bovenwoningen."
   }
  }
 }
