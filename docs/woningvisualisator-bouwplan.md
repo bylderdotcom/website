@@ -266,3 +266,74 @@ wie. Nu niet bouwen. Wel weten dat de woning die hier ontstaat twintig jaar meeg
    nieuw project.
 4. **Prijs zichtbaar in de materiaalstaat, of alleen hoeveelheden?** Bepaalt of stap 5
    een offerte is of een boodschappenlijst.
+
+---
+
+## 10. Eerste proef op een echte woning (23-09-2026)
+
+Getest op de stukken van een echte koper: opdrachtbevestiging meerwerk, technische
+omschrijving en meerwerktekening van een tussenwoning met uitbouw (drie verdiepingen,
+Van Wanrooij). Geen namen, adressen of bedragen in dit document.
+
+**Wat het uitwijst:**
+
+1. **Een aannemers-PDF is vectorwerk op schaal, geen plaatje.** De tekening (1:50, A3)
+   bevat de wanden als echte vlakken. Meten is daardoor rekenen, geen interpreteren.
+   Controle: de uitbouw meet uit de tekening exact 2.400 mm — hetzelfde getal als de
+   optie in de opdrachtbevestiging. Stap 9 (tekeningpijplijn) is voor dit soort PDF's
+   dus veel eenvoudiger dan het memo aannam; beeldherkenning is alleen nodig voor foto's
+   en gescande brochures.
+2. **De tekening codeert de meerwerkstatus al.** De legenda: zwart standaard, groen
+   voorlopig, rood definitief. Het model kan "basiswoning" en "jouw keuzes" dus zonder
+   extra invoer scheiden.
+3. **De schuine kap staat erin.** Hoogtelijnen (1.500+, 2.300+, 2.600+ vloer) geven de
+   dakhelling. Daaruit volgt ook het oppervlak waar je rechtop staat.
+4. **De afwerkstaat is per ruimte machine-leesbaar.** De technische omschrijving zegt per
+   ruimte wat vloer, wanden en plafond worden ("dekvloer", "vlak afgewerkt, verder
+   onbehandeld", "dakhout en -platen onbehandeld in het zicht"). Geometrie × afwerkstaat
+   = de materiaalstaat, zonder dat de koper iets invult.
+5. **Keuken, sanitair en tegels zijn bij oplevering al vergeven** — via de eigen showroom
+   van de ontwikkelaar, met een waardecheque die alleen daar geldig is en een
+   sluitingsdatum. Dat is niet ons speelveld.
+6. **Onze winkeldekking rond Den Bosch is dun.** De dichtstbijzijnde vloerenwinkel in
+   `winkels-publiek.json` ligt vanaf Rosmalen op 43 km. Dat is een datagat, geen
+   marktfeit.
+
+**Consequenties voor het plan:**
+
+- De koper uploadt zijn eigen drie stukken. Eén upload levert: wat al besloten is
+  (opdrachtbevestiging), hoe het wordt opgeleverd (technische omschrijving) en waar alles
+  zit (tekening). Het verschil is de lijst die Bylder vult. Auteursrecht speelt dan niet:
+  het zijn de eigen stukken van de koper.
+- Die stukken zijn persoonsgegevens (namen, e-mailadressen, handtekeningen). Ze horen in
+  de app-omgeving, nooit in deze repo.
+- Productregels die uit de stukken volgen en die de configurators moeten kennen:
+  vloerverwarming met koeling op alle verdiepingen (filter op warmteweerstand), geen
+  vloerverwarming onder het keukenblok, stalen verdiepingshoge kozijnen (kozijnloze
+  deuren alleen vóór de sluitingsdatum als minderwerk, of na oplevering).
+
+## 11. Commerciële positionering
+
+Wat de proef laat zien, is ook de boodschap. Een nieuwbouwkoper krijgt van de
+ontwikkelaar de muren, de installaties en wat op zijn meerwerklijst staat. Keuken,
+sanitair en tegels regelt de ontwikkelaar zelf. Al het andere komt kaal op te leveren:
+de vloer op elke verdieping, de wanden, de lampen voor de lichtpunten die hij al kocht,
+de raamdecoratie, de zolder.
+
+**Kernzin:** *De ontwikkelaar levert de muren en wat op je meerwerklijst staat. Voor de
+rest zorgen wij.*
+
+Waarom die zin werkt: hij is waar voor elke koper, hij is te controleren in zijn eigen
+technische omschrijving, en hij zet ons naast de ontwikkelaar in plaats van ertegenover.
+
+Drie bewijzen die bij elke aanbeveling horen, altijd concreet en uit de eigen woning:
+
+1. **We weten al wat je nodig hebt.** Vierkante meters, aantallen en breedtes komen uit
+   je eigen tekening, niet uit een formulier.
+2. **Je betaalt minder dan alleen.** Inkoop namens veel kopers.
+3. **Eén adviseur langs alle winkels.** Met je stalen van de ene showroom naar de andere,
+   in één planning.
+
+Waar het fout gaat als we het niet zo doen: praten over "inspiratie" of "ontzorgen"
+zonder getal erbij. De koper heeft net tientallen duizenden euro's aan meerwerk
+getekend; hij luistert alleen naar iets dat over zijn eigen huis gaat.
