@@ -186,5 +186,19 @@ export const FINEREN: Fineer[] = [
     beeld: 'master-oak-patina', tegelMm: [3040, 1270], code: '0H923-V2A' },
   { id: 'kivu-wenge', naam: 'Kivu Wenge', basis: '#4A3A30', nerf: '#332721',
     beeld: 'kivu-wenge', structuur: 'structuur-cst', tegelMm: [1300, 1300], code: '0H687-CST' },
+  // Vijf erbij, aangeleverd op 22 september als vervanging voor de twee decors
+  // die fineer bleken. Twee daarvan zijn geen hout: Pure Concrete light is een
+  // betonlook en Lime chalk white een kalkdecor. Ze staan wel onder dezelfde
+  // afwerking, want voor de deur maakt het niets uit — het is dezelfde HPL-plaat.
+  { id: 'royal-oak', naam: 'Royal Oak natural', basis: '#8F6E4F', nerf: '#876441',
+    beeld: 'royal-oak', structuur: 'structuur-v8a', tegelMm: [1860, 1300], code: '0H437-V8A' },
+  { id: 'royal-oak-dark', naam: 'Royal Oak dark brown', basis: '#4F3E2E', nerf: '#473623',
+    beeld: 'royal-oak-dark', structuur: 'structuur-v8a', tegelMm: [1860, 1300], code: '0H164-V8A' },
+  { id: 'valley-ash-silver', naam: 'Valley Ash silver grey', basis: '#D2D3CE', nerf: '#CFCFC9',
+    beeld: 'valley-ash-silver', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H590-W07' },
+  { id: 'lime-chalk-white', naam: 'Lime chalk white', basis: '#C8CAC7', nerf: '#C4C6C5',
+    beeld: 'lime-chalk-white', structuur: 'structuur-m02', tegelMm: [1300, 1300], code: '0F259-M02' },
+  { id: 'pure-concrete-light', naam: 'Pure Concrete light', basis: '#B7B6B1', nerf: '#AEADA8',
+    beeld: 'pure-concrete-light', structuur: 'structuur-bst', tegelMm: [1300, 1536], code: '0F989-BST' },
 ]
 
