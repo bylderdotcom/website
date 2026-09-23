@@ -1,0 +1,631 @@
+<title>Woningvisualisator Bylder</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --grond: #F5F0E8;
+    --stage: #EDE6D8;
+    --stage-2: #E4DBC8;
+    --vlak: #FBF8F2;
+    --inkt: #1A1208;
+    --inkt-70: rgba(26,18,8,.70);
+    --inkt-45: rgba(26,18,8,.45);
+    --lijn: rgba(26,18,8,.14);
+    --lijn-sterk: rgba(26,18,8,.28);
+    --groen: #3D5A3E;
+    --groen-zacht: #EBF0E8;
+    --terra: #B85C38;
+    --muur-vul: rgba(26,18,8,.10);
+    --muur-lijn: rgba(26,18,8,.42);
+    --muur-top: rgba(26,18,8,.62);
+    --vl-giet: #D9CFBF;
+    --vl-tegel: #DCE3E6;
+    --vl-pvc: #E4DBC8;
+    --vl-beton: #D3CFC7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --grond: #15100A;
+      --stage: #221A11;
+      --stage-2: #2B2117;
+      --vlak: #1E170E;
+      --inkt: #F2EADA;
+      --inkt-70: rgba(242,234,218,.72);
+      --inkt-45: rgba(242,234,218,.48);
+      --lijn: rgba(242,234,218,.14);
+      --lijn-sterk: rgba(242,234,218,.30);
+      --groen: #8AAE8B;
+      --groen-zacht: rgba(138,174,139,.14);
+      --terra: #E8A87C;
+      --muur-vul: rgba(242,234,218,.07);
+      --muur-lijn: rgba(242,234,218,.34);
+      --muur-top: rgba(242,234,218,.58);
+      --vl-giet: #4A4036;
+      --vl-tegel: #39424A;
+      --vl-pvc: #4C4132;
+      --vl-beton: #403B34;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --grond: #15100A;
+    --stage: #221A11;
+    --stage-2: #2B2117;
+    --vlak: #1E170E;
+    --inkt: #F2EADA;
+    --inkt-70: rgba(242,234,218,.72);
+    --inkt-45: rgba(242,234,218,.48);
+    --lijn: rgba(242,234,218,.14);
+    --lijn-sterk: rgba(242,234,218,.30);
+    --groen: #8AAE8B;
+    --groen-zacht: rgba(138,174,139,.14);
+    --terra: #E8A87C;
+    --muur-vul: rgba(242,234,218,.07);
+    --muur-lijn: rgba(242,234,218,.34);
+    --muur-top: rgba(242,234,218,.58);
+    --vl-giet: #4A4036;
+    --vl-tegel: #39424A;
+    --vl-pvc: #4C4132;
+    --vl-beton: #403B34;
+  }
+
+  body {
+    background: var(--grond);
+    color: var(--inkt);
+    font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  * { box-sizing: border-box; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 0 0; }
+
+  /* ---------- kop ---------- */
+  .kop { padding-block: 18px 12px; display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: baseline; }
+  .kop h1 { font-size: 20px; font-weight: 800; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+  .kop .plek { font-size: 13px; color: var(--inkt-70); margin: 0; }
+  .mono { font-family: 'Space Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow { font-size: 10.5px; letter-spacing: .13em; text-transform: uppercase; color: var(--inkt-45); font-weight: 700; }
+  .proefbalk {
+    display: flex; gap: 8px; align-items: flex-start;
+    border: 1px dashed var(--lijn-sterk); border-radius: 8px;
+    padding: 8px 11px; font-size: 12px; color: var(--inkt-70); margin-bottom: 14px;
+  }
+  .proefbalk b { color: var(--inkt); font-weight: 600; }
+
+  /* ---------- verdieping-kiezer ---------- */
+  .kiezer { display: flex; gap: 6px; padding: 3px; background: var(--stage); border-radius: 999px; width: max-content; max-width: 100%; overflow-x: auto; }
+  .kiezer button {
+    font: inherit; font-size: 13px; font-weight: 600; white-space: nowrap;
+    border: 0; background: transparent; color: var(--inkt-70);
+    padding: 7px 14px; border-radius: 999px; cursor: pointer;
+  }
+  .kiezer button[aria-selected="true"] { background: var(--inkt); color: var(--grond); }
+  .kiezer button:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; }
+
+  /* ---------- het dek (swipe) ---------- */
+  .dek {
+    display: grid; grid-auto-flow: column; grid-auto-columns: 100%;
+    overflow-x: auto; scroll-snap-type: x mandatory;
+    gap: 12px; margin-top: 12px;
+    scrollbar-width: none; -ms-overflow-style: none;
+  }
+  .dek::-webkit-scrollbar { display: none; }
+  .laag { scroll-snap-align: center; }
+  .stage {
+    position: relative;
+    background:
+      radial-gradient(120% 90% at 50% 12%, var(--stage-2) 0%, var(--stage) 62%, var(--stage) 100%);
+    border: 1px solid var(--lijn);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .stage svg { display: block; width: 100%; height: auto; max-height: min(58vh, 520px); }
+  .stage-kop {
+    position: absolute; inset: 12px 12px auto 12px;
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; pointer-events: none;
+  }
+  .stage-kop .nm { font-size: 13.5px; font-weight: 700; }
+  .stage-kop .sub { font-size: 11.5px; color: var(--inkt-70); }
+  .opp { text-align: right; }
+  .opp .getal { font-size: 19px; font-weight: 700; letter-spacing: -.02em; }
+  .opp .eh { font-size: 11px; color: var(--inkt-70); }
+
+  .veegtip { display: flex; align-items: center; gap: 7px; justify-content: center; font-size: 11.5px; color: var(--inkt-45); padding-top: 9px; }
+  .stip { display: flex; gap: 5px; }
+  .stip i { width: 5px; height: 5px; border-radius: 50%; background: var(--lijn-sterk); display: block; transition: background .2s; }
+  .stip i.aan { background: var(--inkt); }
+
+  /* ---------- panelen ---------- */
+  .paneel { padding-block: 20px 0; display: grid; gap: 18px; }
+  @media (min-width: 860px) {
+    .paneel { grid-template-columns: 1fr 1fr; align-items: start; }
+    .breed { grid-column: 1 / -1; }
+  }
+  section.blok > h2 {
+    font-size: 11px; letter-spacing: .13em; text-transform: uppercase; color: var(--inkt-45);
+    font-weight: 700; margin: 0 0 10px;
+  }
+  .ruimtes { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: var(--lijn); border-radius: 10px; overflow: hidden; }
+  .ruimtes li { background: var(--vlak); display: flex; align-items: center; gap: 10px; padding: 10px 12px; }
+  .swatch { width: 13px; height: 13px; border-radius: 3px; flex: none; border: 1px solid var(--lijn-sterk); }
+  .ruimtes .nm { font-weight: 600; font-size: 14px; }
+  .ruimtes .af { font-size: 12px; color: var(--inkt-45); }
+  .ruimtes .m2 { margin-left: auto; font-size: 13.5px; }
+
+  .staat { display: grid; gap: 1px; background: var(--lijn); border-radius: 10px; overflow: hidden; }
+  .staat .rij { background: var(--vlak); display: flex; align-items: baseline; gap: 10px; padding: 11px 12px; }
+  .staat .rij .lbl { font-weight: 600; font-size: 14px; }
+  .staat .rij .val { margin-left: auto; font-size: 15px; font-weight: 700; }
+  .staat .rij .eh { font-size: 11.5px; color: var(--inkt-45); font-weight: 400; }
+  .staat .leeg { background: var(--vlak); padding: 12px; font-size: 13px; color: var(--inkt-70); }
+
+  .keuzes { display: grid; gap: 8px; }
+  .keuze {
+    display: flex; align-items: center; gap: 11px; padding: 11px 12px;
+    background: var(--vlak); border: 1px solid var(--lijn); border-radius: 10px;
+  }
+  .keuze .tk { flex: none; width: 26px; height: 26px; display: grid; place-items: center; border-radius: 7px; background: var(--groen-zacht); color: var(--groen); }
+  .keuze .tx { min-width: 0; }
+  .keuze .tx b { display: block; font-size: 14px; font-weight: 600; }
+  .keuze .tx span { font-size: 12px; color: var(--inkt-70); }
+  .knop {
+    font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer;
+    border: 1px solid var(--inkt); background: transparent; color: var(--inkt);
+    padding: 7px 12px; border-radius: 999px; margin-left: auto; white-space: nowrap;
+  }
+  .knop:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; }
+  .knop[aria-pressed="true"] { background: var(--groen); border-color: var(--groen); color: #fff; }
+  :root[data-theme="dark"] .knop[aria-pressed="true"], :root:not([data-theme="light"]) .knop[aria-pressed="true"] { color: #15100A; }
+  .knop.vol { background: var(--inkt); color: var(--grond); }
+
+  .winkels { display: grid; gap: 8px; }
+  .winkel { display: flex; gap: 11px; align-items: center; padding: 11px 12px; background: var(--vlak); border: 1px solid var(--lijn); border-radius: 10px; }
+  .winkel .nm { font-weight: 600; font-size: 14px; line-height: 1.3; }
+  .winkel .mt { font-size: 12px; color: var(--inkt-70); }
+  .winkel .afst { margin-left: auto; text-align: right; font-size: 12.5px; color: var(--inkt-70); white-space: nowrap; }
+  .ster { color: var(--terra); }
+
+  .notitie { font-size: 12.5px; color: var(--inkt-70); border-left: 2px solid var(--terra); padding-left: 11px; }
+
+  /* ---------- onderbalk ---------- */
+  .onderbalk {
+    position: sticky; bottom: 0; margin-top: 22px;
+    background: var(--inkt); color: var(--grond);
+    border-radius: 14px 14px 0 0;
+    padding: 13px 16px calc(13px + env(safe-area-inset-bottom, 0px));
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  }
+  .onderbalk .tot { font-size: 12.5px; opacity: .78; line-height: 1.45; }
+  .onderbalk .tot b { opacity: 1; font-weight: 700; }
+  .onderbalk .knop { border-color: var(--grond); color: var(--grond); margin-left: auto; }
+  .onderbalk .knop.vol { background: var(--grond); color: var(--inkt); border-color: var(--grond); }
+
+  .legenda { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11.5px; color: var(--inkt-45); padding-top: 10px; }
+  .legenda span { display: inline-flex; align-items: center; gap: 6px; }
+  .legenda i { width: 16px; height: 0; border-top: 2px solid var(--muur-lijn); display: block; }
+  .legenda i.op { border-top-style: dashed; border-top-color: var(--terra); }
+
+  .voet { padding-block: 22px 30px; font-size: 12px; color: var(--inkt-45); }
+
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="kop">
+    <div>
+      <p class="eyebrow">Parkbuurt Almelo · fase 3</p>
+      <h1>Type C — tussenwoning, bouwnummer 24</h1>
+    </div>
+    <p class="plek mono">5,40 × 9,00 m · 3 verdiepingen · oplevering Q3 2027</p>
+  </header>
+
+  <p class="proefbalk">
+    <span>
+      <b>Voorbeeldwoning.</b> Maten uit de verkoopbrochure van het woningtype, met de hand gecontroleerd op 22-09-2026.
+      De 3D is opgebouwd uit de plattegrond — geen scan, geen foto's.
+    </span>
+  </p>
+
+  <div class="kiezer" role="tablist" aria-label="Verdieping"></div>
+
+  <div class="dek" id="dek" tabindex="0" aria-label="Verdiepingen, veeg opzij"></div>
+
+  <div class="veegtip">
+    <span class="stip" aria-hidden="true"></span>
+    <span>Veeg opzij voor de volgende verdieping</span>
+  </div>
+
+  <div class="legenda">
+    <span><i></i> wand</span>
+    <span><i class="op"></i> deur- en raamopening</span>
+    <span>Maten in millimeters uit de tekening</span>
+  </div>
+
+  <div class="paneel" id="paneel"></div>
+
+  <div class="onderbalk">
+    <div class="tot" id="totaal"></div>
+    <button class="knop vol" type="button" id="bewaar">Stuur mij mijn woning</button>
+  </div>
+
+  <p class="voet">
+    Ontwerpschets voor Bylder — de woningvisualisator zoals beschreven in
+    <span class="mono">docs/woningvisualisator-bouwplan.md</span>. Showrooms en afstanden komen uit de eigen winkeldata;
+    de plattegrond is een representatief woningtype, geen bestaand bouwnummer.
+  </p>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------------------------------------------------------------
+     De woning. Alles in millimeters, precies zoals het bouwplan voorschrijft:
+     ruimtes als gesloten polygonen, openingen als positie op een wand.
+     De m², het aantal deuren en de strekkende meters gordijn worden hieruit
+     gerekend — nergens met de hand ingetikt.
+  ---------------------------------------------------------------- */
+  var WONING = [
+    {
+      id: 'bg', naam: 'Begane grond', kort: 'Begane grond', hoogte: 2600,
+      ruimtes: [
+        { naam: 'Hal', vloer: 'giet', poly: [[0,0],[1600,0],[1600,1500],[1600,2300],[1600,3600],[0,3600]],
+          op: [ {e:0, van:300, br:1000, dr:0, h:2315, s:'deur', l:'voordeur'},
+                {e:1, van:350, br:800,  dr:0, h:2315, s:'deur'},
+                {e:2, van:100, br:600,  dr:0, h:2315, s:'deur'},
+                {e:3, van:250, br:900,  dr:0, h:2315, s:'doorgang'},
+                {e:4, van:350, br:930,  dr:0, h:2315, s:'deur'} ] },
+        { naam: 'Toilet', vloer: 'tegel', poly: [[1600,0],[2500,0],[2500,1500],[1600,1500]], op: [] },
+        { naam: 'Meterkast', vloer: 'beton', poly: [[1600,1500],[2500,1500],[2500,2300],[1600,2300]], op: [] },
+        { naam: 'Keuken', vloer: 'giet', poly: [[2500,0],[5400,0],[5400,3600],[1600,3600],[1600,2300],[2500,2300],[2500,1500]],
+          op: [ {e:0, van:500, br:1800, dr:900, h:1500, s:'raam'} ] },
+        { naam: 'Woonkamer', vloer: 'giet', poly: [[0,3600],[1600,3600],[5400,3600],[5400,9000],[0,9000]],
+          op: [ {e:3, van:600,  br:2400, dr:0,   h:2315, s:'pui', l:'tuindeuren'},
+                {e:3, van:3400, br:1400, dr:900, h:1500, s:'raam'} ] }
+      ]
+    },
+    {
+      id: 'v1', naam: 'Eerste verdieping', kort: '1e verdieping', hoogte: 2500,
+      ruimtes: [
+        { naam: 'Slaapkamer 1', vloer: 'pvc', poly: [[0,0],[5400,0],[5400,3600],[3000,3600],[1600,3600],[0,3600]],
+          op: [ {e:0, van:1000, br:2400, dr:950, h:1400, s:'raam'} ] },
+        { naam: 'Badkamer', vloer: 'tegel', poly: [[0,3600],[1600,3600],[1600,6000],[0,6000]],
+          op: [ {e:3, van:900, br:700, dr:1500, h:700, s:'raam'} ] },
+        { naam: 'Overloop', vloer: 'pvc', poly: [[1600,3600],[3000,3600],[3000,6000],[1600,6000]],
+          op: [ {e:0, van:300,  br:830, dr:0, h:2315, s:'deur'},
+                {e:1, van:1400, br:830, dr:0, h:2315, s:'deur'},
+                {e:2, van:300,  br:830, dr:0, h:2315, s:'deur'},
+                {e:3, van:1300, br:830, dr:0, h:2315, s:'deur'} ] },
+        { naam: 'Slaapkamer 2', vloer: 'pvc', poly: [[3000,3600],[5400,3600],[5400,9000],[3000,9000],[3000,6000]],
+          op: [ {e:2, van:500, br:1400, dr:950, h:1400, s:'raam'} ] },
+        { naam: 'Slaapkamer 3', vloer: 'pvc', poly: [[0,6000],[1600,6000],[3000,6000],[3000,9000],[0,9000]],
+          op: [ {e:3, van:900, br:1400, dr:950, h:1400, s:'raam'} ] }
+      ]
+    },
+    {
+      id: 'v2', naam: 'Tweede verdieping', kort: 'Zolder', hoogte: 2400,
+      ruimtes: [
+        { naam: 'Technische ruimte', vloer: 'beton', poly: [[0,0],[1800,0],[1800,2200],[0,2200]], op: [] },
+        { naam: 'Zolder', vloer: 'beton', poly: [[1800,0],[5400,0],[5400,9000],[0,9000],[0,2200],[1800,2200]],
+          op: [ {e:0, van:1200, br:1000, dr:900, h:1200, s:'raam'},
+                {e:2, van:2000, br:1200, dr:900, h:1200, s:'raam'},
+                {e:5, van:700,  br:830,  dr:0,   h:2315, s:'deur'} ] }
+      ]
+    }
+  ];
+
+  var VLOER = {
+    giet:  { naam: 'gietvloer',     kleur: 'var(--vl-giet)'  },
+    tegel: { naam: 'tegelvloer',    kleur: 'var(--vl-tegel)' },
+    pvc:   { naam: 'pvc / laminaat',kleur: 'var(--vl-pvc)'   },
+    beton: { naam: 'beton, kaal',   kleur: 'var(--vl-beton)' }
+  };
+
+  /* Keuzes per verdieping — elk verwijst naar een bestaande of geplande tool. */
+  var KEUZES = {
+    bg: [
+      { t: 'Gietvloer woonkamer, keuken en hal', s: 'Kleur, glans en korrel', tool: 'Configurator' },
+      { t: 'Binnendeuren', s: '4 stuks, kozijnloos, draairichting uit de tekening', tool: 'Configurator' },
+      { t: 'Raamdecoratie achtergevel', s: 'Tuindeuren 2,40 m + raam 1,40 m', tool: 'Offertetool' },
+      { t: 'Wandtegels toilet', s: 'Klein vlak, groot effect', tool: 'Offertetool' }
+    ],
+    v1: [
+      { t: 'Badkamer compleet', s: 'Tegels, sanitair, kranen', tool: 'Offertetool' },
+      { t: 'Binnendeuren', s: '4 stuks vanaf de overloop', tool: 'Configurator' },
+      { t: 'Raamdecoratie slaapkamers', s: 'Verduistering voor 3 ramen', tool: 'Offertetool' },
+      { t: 'Vloerafwerking', s: 'pvc of tapijt, per kamer te kiezen', tool: 'Configurator' }
+    ],
+    v2: [
+      { t: 'Zoldervloer', s: 'Kaal beton — afwerking is een vrije keuze', tool: 'Configurator' },
+      { t: 'Dakraam-verduistering', s: 'Meten kan pas na de kijkdag', tool: 'Offertetool' }
+    ]
+  };
+
+  /* Echte winkels uit data/winkels-publiek.json, gerekend vanaf het project. */
+  var WINKELS = {
+    bg: [
+      { n: 'Multipox Kunststof Vloeren', c: 'gietvloeren', r: 3.9, rv: 14, km: 37 },
+      { n: 'Plankenland', c: 'vloeren', r: 4.5, rv: 40, km: 37 }
+    ],
+    v1: [
+      { n: 'Ceralux — Vloeren, Badkamers & Interieur', c: 'sanitair', r: 4.9, rv: 83, km: 30 },
+      { n: 'Tegelhuys Wijhe', c: 'tegels', r: 4.7, rv: 70, km: 35 }
+    ],
+    v2: [
+      { n: 'A5 Deco Zwolle Zonwering', c: 'raamdecoratie', r: 4.8, rv: 52, km: 38 }
+    ]
+  };
+
+  /* ---------------- rekenen ---------------- */
+  function opp(poly) {
+    var a = 0;
+    for (var i = 0; i < poly.length; i++) {
+      var p = poly[i], q = poly[(i + 1) % poly.length];
+      a += p[0] * q[1] - q[0] * p[1];
+    }
+    return Math.abs(a) / 2 / 1e6;
+  }
+  function zwaartepunt(poly) {
+    var x = 0, y = 0;
+    for (var i = 0; i < poly.length; i++) { x += poly[i][0]; y += poly[i][1]; }
+    return [x / poly.length, y / poly.length];
+  }
+  function nl(n, d) { return n.toLocaleString('nl-NL', { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 }); }
+
+  function staatVan(laag) {
+    var s = { giet: 0, tegel: 0, pvc: 0, beton: 0, deuren: 0, raamM: 0, ramen: 0 };
+    laag.ruimtes.forEach(function (r) {
+      s[r.vloer] += opp(r.poly);
+      (r.op || []).forEach(function (o) {
+        if (o.s === 'deur' && o.l !== 'voordeur') s.deuren++;
+        if (o.s === 'raam' || o.s === 'pui') { s.raamM += o.br / 1000; s.ramen++; }
+      });
+    });
+    return s;
+  }
+
+  /* ---------------- tekenen ---------------- */
+  // Platte isometrie: de tekening blijft leesbaar, de wanden geven net genoeg opstand.
+  var COS = Math.cos(Math.PI / 6), YK = 0.42, ZK = 0.62;
+  function iso(x, y, z) { return [(x - y) * COS, (x + y) * YK - z * ZK]; }
+
+  function randen(laag) {
+    // Elke wand één keer: gedeelde wanden tussen twee ruimtes tellen niet dubbel.
+    var lijst = [], index = {};
+    laag.ruimtes.forEach(function (r) {
+      for (var i = 0; i < r.poly.length; i++) {
+        var a = r.poly[i], b = r.poly[(i + 1) % r.poly.length];
+        var k = [Math.min(a[0], b[0]), Math.min(a[1], b[1]), Math.max(a[0], b[0]), Math.max(a[1], b[1])].join('|');
+        var op = (r.op || []).filter(function (o) { return o.e === i; });
+        if (index[k] === undefined) {
+          index[k] = lijst.length;
+          lijst.push({ a: a, b: b, op: op });
+        } else if (op.length) {
+          lijst[index[k]].op = lijst[index[k]].op.concat(op.map(function (o) {
+            var L = lijst[index[k]];
+            var zelfde = L.a[0] === a[0] && L.a[1] === a[1];
+            var len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+            return zelfde ? o : { van: len - o.van - o.br, br: o.br, dr: o.dr, h: o.h, s: o.s, l: o.l };
+          }));
+        }
+      }
+    });
+    return lijst;
+  }
+
+  function svgVoor(laag) {
+    var H = laag.hoogte;
+    var stukken = [];      // {diepte, svg}
+    var vlakken = [];
+    var labels = [];
+
+    laag.ruimtes.forEach(function (r) {
+      var d = r.poly.map(function (p) { var q = iso(p[0], p[1], 0); return q[0] + ',' + q[1]; }).join(' ');
+      vlakken.push('<polygon points="' + d + '" fill="' + VLOER[r.vloer].kleur +
+        '" stroke="var(--muur-lijn)" stroke-width="26" stroke-opacity=".35" />');
+      var vlak = opp(r.poly);
+      if (vlak >= 2) {
+        var c = zwaartepunt(r.poly), ic = iso(c[0], c[1], 0);
+        labels.push(
+          '<text x="' + ic[0] + '" y="' + (ic[1] - 120) + '" text-anchor="middle" class="rlabel">' + r.naam + '</text>' +
+          '<text x="' + ic[0] + '" y="' + (ic[1] + 190) + '" text-anchor="middle" class="rmaat">' + nl(vlak, 1) + ' m²</text>'
+        );
+      }
+    });
+
+    randen(laag).forEach(function (w) {
+      var a = w.a, b = w.b;
+      var len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+      var ux = (b[0] - a[0]) / len, uy = (b[1] - a[1]) / len;
+      var pt = function (t, z) { return iso(a[0] + ux * t, a[1] + uy * t, z); };
+      var diepte = (a[0] + a[1] + b[0] + b[1]) / 2;
+
+      var op = w.op.slice().sort(function (p, q) { return p.van - q.van; });
+      var vlak = function (t0, t1, z0, z1, extra) {
+        var p1 = pt(t0, z0), p2 = pt(t1, z0), p3 = pt(t1, z1), p4 = pt(t0, z1);
+        return '<polygon points="' + [p1, p2, p3, p4].map(function (p) { return p[0] + ',' + p[1]; }).join(' ') +
+          '" class="muur"' + (extra || '') + ' />';
+      };
+
+      var s = '', cursor = 0;
+      op.forEach(function (o) {
+        if (o.van > cursor) s += vlak(cursor, o.van, 0, H);
+        if (o.dr > 0) s += vlak(o.van, o.van + o.br, 0, o.dr);           // borstwering
+        if (o.dr + o.h < H) s += vlak(o.van, o.van + o.br, o.dr + o.h, H); // bovendorpel
+        var q1 = pt(o.van, o.dr), q2 = pt(o.van + o.br, o.dr),
+            q3 = pt(o.van + o.br, o.dr + o.h), q4 = pt(o.van, o.dr + o.h);
+        s += '<polygon points="' + [q1, q2, q3, q4].map(function (p) { return p[0] + ',' + p[1]; }).join(' ') +
+             '" class="opening" />';
+        cursor = o.van + o.br;
+      });
+      if (cursor < len) s += vlak(cursor, len, 0, H);
+
+      var t1 = pt(0, H), t2 = pt(len, H);
+      s += '<line x1="' + t1[0] + '" y1="' + t1[1] + '" x2="' + t2[0] + '" y2="' + t2[1] + '" class="muurtop" />';
+      stukken.push({ d: diepte, s: s });
+    });
+
+    stukken.sort(function (p, q) { return p.d - q.d; });
+
+    var body = vlakken.join('') + stukken.map(function (x) { return x.s; }).join('') + labels.join('');
+
+    // Kader berekenen uit alle hoekpunten op z=0 en z=H.
+    var xs = [], ys = [];
+    laag.ruimtes.forEach(function (r) {
+      r.poly.forEach(function (p) {
+        [0, H].forEach(function (z) { var q = iso(p[0], p[1], z); xs.push(q[0]); ys.push(q[1]); });
+      });
+    });
+    var pad = 640;
+    var x0 = Math.min.apply(null, xs) - pad, x1 = Math.max.apply(null, xs) + pad;
+    var y0 = Math.min.apply(null, ys) - pad - 320, y1 = Math.max.apply(null, ys) + pad;
+
+    return '<svg viewBox="' + x0 + ' ' + y0 + ' ' + (x1 - x0) + ' ' + (y1 - y0) +
+      '" preserveAspectRatio="xMidYMid meet" role="img" aria-label="' + laag.naam + ' in doorzichtig 3D">' +
+      '<style>' +
+      '.muur{fill:var(--muur-vul);stroke:var(--muur-lijn);stroke-width:26;stroke-linejoin:round}' +
+      '.muurtop{stroke:var(--muur-top);stroke-width:42;stroke-linecap:round}' +
+      '.opening{fill:none;stroke:var(--terra);stroke-width:30;stroke-dasharray:120 85}' +
+      '.rlabel{font:700 380px "Plus Jakarta Sans",sans-serif;fill:var(--inkt);paint-order:stroke;stroke:var(--stage);stroke-width:80px}' +
+      '.rmaat{font:400 300px "Space Mono",monospace;fill:var(--inkt-70);paint-order:stroke;stroke:var(--stage);stroke-width:80px}' +
+      '</style>' + body + '</svg>';
+  }
+
+  /* ---------------- opbouw ---------------- */
+  var dek = document.getElementById('dek');
+  var kiezer = document.querySelector('.kiezer');
+  var stippen = document.querySelector('.stip');
+  var paneel = document.getElementById('paneel');
+  var gekozen = {};
+
+  WONING.forEach(function (laag, i) {
+    var totaalOpp = laag.ruimtes.reduce(function (s, r) { return s + opp(r.poly); }, 0);
+
+    var kaart = document.createElement('div');
+    kaart.className = 'laag';
+    kaart.innerHTML =
+      '<div class="stage">' + svgVoor(laag) +
+      '<div class="stage-kop"><div><div class="nm">' + laag.naam + '</div>' +
+      '<div class="sub">' + laag.ruimtes.length + ' ruimtes · plafond ' + nl(laag.hoogte / 1000, 2).replace('.', ',') + ' m</div></div>' +
+      '<div class="opp"><div class="getal mono">' + nl(totaalOpp, 1) + '</div><div class="eh">m² vloer</div></div></div></div>';
+    dek.appendChild(kaart);
+
+    var knop = document.createElement('button');
+    knop.type = 'button';
+    knop.setAttribute('role', 'tab');
+    knop.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+    knop.textContent = laag.kort;
+    knop.addEventListener('click', function () {
+      dek.scrollTo({ left: kaart.offsetLeft - dek.offsetLeft, behavior: 'smooth' });
+      toon(i);
+    });
+    kiezer.appendChild(knop);
+
+    var stip = document.createElement('i');
+    if (i === 0) stip.className = 'aan';
+    stippen.appendChild(stip);
+  });
+
+  function paneelVoor(i) {
+    var laag = WONING[i], s = staatVan(laag), id = laag.id;
+
+    var ruimtes = laag.ruimtes.map(function (r) {
+      return '<li><span class="swatch" style="background:' + VLOER[r.vloer].kleur + '"></span>' +
+        '<span><span class="nm">' + r.naam + '</span><br><span class="af">' + VLOER[r.vloer].naam + '</span></span>' +
+        '<span class="m2 mono">' + nl(opp(r.poly), 1) + ' m²</span></li>';
+    }).join('');
+
+    var rijen = [];
+    if (s.giet > 0.05) rijen.push(['Gietvloer', nl(s.giet, 1), 'm²']);
+    if (s.tegel > 0.05) rijen.push(['Tegelvloer', nl(s.tegel, 1), 'm²']);
+    if (s.pvc > 0.05) rijen.push(['Pvc of laminaat', nl(s.pvc, 1), 'm²']);
+    if (s.beton > 0.05) rijen.push(['Kaal beton', nl(s.beton, 1), 'm²']);
+    if (s.deuren) rijen.push(['Binnendeuren', String(s.deuren), 'stuks']);
+    if (s.ramen) rijen.push(['Raamdecoratie', nl(s.raamM, 2).replace('.', ','), 'strekkende meter']);
+    var staat = rijen.map(function (r) {
+      return '<div class="rij"><span class="lbl">' + r[0] + '</span>' +
+        '<span class="val mono">' + r[1] + ' <span class="eh">' + r[2] + '</span></span></div>';
+    }).join('');
+
+    var keuzes = (KEUZES[id] || []).map(function (k, n) {
+      var sleutel = id + ':' + n, aan = !!gekozen[sleutel];
+      return '<div class="keuze"><span class="tk" aria-hidden="true">' +
+        '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6">' +
+        '<rect x="1.5" y="1.5" width="11" height="11" rx="2"/><path d="M4 7.2l2.1 2.1L10 5.4"/></svg></span>' +
+        '<span class="tx"><b>' + k.t + '</b><span>' + k.s + ' · ' + k.tool + '</span></span>' +
+        '<button class="knop" type="button" data-sleutel="' + sleutel + '" aria-pressed="' + aan + '">' +
+        (aan ? 'Op mijn lijst' : 'Openen') + '</button></div>';
+    }).join('');
+
+    var winkels = (WINKELS[id] || []).map(function (w) {
+      return '<div class="winkel"><span><span class="nm">' + w.n + '</span><br>' +
+        '<span class="mt"><span class="ster">★</span> ' + nl(w.r, 1).replace('.', ',') + ' · ' + w.rv + ' reviews · ' + w.c + '</span></span>' +
+        '<span class="afst mono">' + w.km + ' km</span></div>';
+    }).join('');
+
+    return '' +
+      '<section class="blok"><h2>Ruimtes op deze verdieping</h2><ul class="ruimtes">' + ruimtes + '</ul>' +
+      '<p class="notitie" style="margin-top:12px">Deze getallen komen rechtstreeks uit de tekening. Verandert de tekening, dan verandert de offerte mee.</p>' +
+      '</section>' +
+      '<section class="blok"><h2>Wat je hier nodig hebt</h2>' +
+      (staat ? '<div class="staat">' + staat + '</div>' : '<div class="staat"><div class="leeg">Niets te kiezen op deze verdieping.</div></div>') +
+      '</section>' +
+      '<section class="blok breed"><h2>Keuzes voor deze verdieping</h2><div class="keuzes">' + keuzes + '</div></section>' +
+      (winkels ? '<section class="blok breed"><h2>Hier zie je dit in het echt</h2><div class="winkels">' + winkels + '</div>' +
+        '<p class="notitie" style="margin-top:12px">Eén adviseur loopt deze showrooms met je af, met je stalen mee van de ene naar de andere.</p></section>' : '');
+  }
+
+  function totaalTekst() {
+    var g = 0, d = 0, r = 0, o = 0, lijst = 0;
+    WONING.forEach(function (laag) {
+      var s = staatVan(laag);
+      g += s.giet; d += s.deuren; r += s.raamM;
+      laag.ruimtes.forEach(function (x) { o += opp(x.poly); });
+    });
+    Object.keys(gekozen).forEach(function (k) { if (gekozen[k]) lijst++; });
+    return '<b>' + nl(o, 1) + ' m²</b> woonoppervlak · <b>' + nl(g, 1) + ' m²</b> gietvloer · ' +
+      '<b>' + d + '</b> binnendeuren · <b>' + nl(r, 2).replace('.', ',') + ' m</b> raamdecoratie' +
+      (lijst ? '<br>' + lijst + ' keuze' + (lijst === 1 ? '' : 's') + ' op je lijst' : '');
+  }
+
+  var actief = -1;
+  function toon(i) {
+    if (i === actief) return;
+    actief = i;
+    Array.prototype.forEach.call(kiezer.children, function (b, n) { b.setAttribute('aria-selected', n === i ? 'true' : 'false'); });
+    Array.prototype.forEach.call(stippen.children, function (b, n) { b.className = n === i ? 'aan' : ''; });
+    paneel.innerHTML = paneelVoor(i);
+  }
+
+  paneel.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-sleutel]');
+    if (!b) return;
+    var k = b.getAttribute('data-sleutel');
+    gekozen[k] = !gekozen[k];
+    b.setAttribute('aria-pressed', String(!!gekozen[k]));
+    b.textContent = gekozen[k] ? 'Op mijn lijst' : 'Openen';
+    document.getElementById('totaal').innerHTML = totaalTekst();
+  });
+
+  var wacht;
+  dek.addEventListener('scroll', function () {
+    clearTimeout(wacht);
+    wacht = setTimeout(function () {
+      var i = Math.round(dek.scrollLeft / (dek.clientWidth + 12));
+      toon(Math.max(0, Math.min(WONING.length - 1, i)));
+    }, 60);
+  });
+
+  document.getElementById('bewaar').addEventListener('click', function () {
+    var b = this;
+    b.textContent = 'Naar welk e-mailadres?';
+    b.classList.remove('vol');
+    setTimeout(function () { b.textContent = 'Stuur mij mijn woning'; b.classList.add('vol'); }, 2200);
+  });
+
+  toon(0);
+  document.getElementById('totaal').innerHTML = totaalTekst();
+})();
+</script>

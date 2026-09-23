@@ -153,6 +153,9 @@ export default function Configurator() {
   // zodra er nieuwe renders zijn.
   const [weergave, setWeergave] = useState<'foto' | '3d'>('3d')
   const [gekopieerd, setGekopieerd] = useState(false)
+  // Kwam iemand hier vanuit /mijn-woning/, dan gaan zijn deuren daar ook weer naartoe.
+  // Alleen dat ene adres, zodat ?terug= geen omleiding naar een willekeurige site wordt.
+  const [terug, setTerug] = useState<string | null>(null)
 
   const huidig = deuren[actief] ?? NIEUW
   const ontwerp = ONTWERPEN.find(o => o.id === huidig.ontwerp) ?? ONTWERPEN[0]
@@ -169,7 +172,11 @@ export default function Configurator() {
               ?? SCHARNIEREN[0]
   const naamVan = (d: Deur, i: number) => d.naam.trim() || `Deur ${i + 1}`
 
-  useEffect(() => { setDeuren(leesUrl()); setGemonteerd(true) }, [])
+  useEffect(() => {
+    setDeuren(leesUrl()); setGemonteerd(true)
+    const t = new URLSearchParams(window.location.search).get('terug')
+    if (t === '/mijn-woning/') setTerug(t)
+  }, [])
 
   // ── De scène ───────────────────────────────────────────────────────────
   useEffect(() => {
@@ -521,6 +528,22 @@ export default function Configurator() {
         .conf-raster { grid-template-columns: minmax(0,1.15fr) minmax(300px,1fr) }
         @media (max-width: 860px) { .conf-raster { grid-template-columns: minmax(0,1fr) } }
       `}</style>
+
+      {terug && (
+        <div style={{ gridColumn: '1 / -1', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 12,
+                      justifyContent: 'space-between', background: '#EBF0E8', border: `1px solid ${GROEN}`,
+                      borderRadius: 14, padding: '12px 16px' }}>
+          <span style={{ fontSize: 14.5, color: '#1A1208', lineHeight: 1.5 }}>
+            <strong>{deuren.length} {deuren.length === 1 ? 'deur' : 'deuren'} uit je woning.</strong>{' '}
+            Kies per deur ontwerp en kleur; je keuzes gaan mee terug.
+          </span>
+          <a href={`${terug}?deuren=${encodeURIComponent(naarUrl(deuren))}`}
+            style={{ background: GROEN, color: '#fff', textDecoration: 'none', fontWeight: 700,
+                     padding: '10px 16px', borderRadius: 999, fontSize: 14.5, whiteSpace: 'nowrap' }}>
+            Terug naar mijn woning
+          </a>
+        </div>
+      )}
 
       {/* ── Het beeld ── */}
       <div>
