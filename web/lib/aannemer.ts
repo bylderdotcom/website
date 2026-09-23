@@ -14,6 +14,7 @@ import { opRaster } from './raster'
 import { metVerleider } from './verleider'
 import { metEersteZet } from './eerstezet'
 import { extraLinksHtml } from './interne-links'
+import { zonderUitgesloten } from './uitgesloten'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'aannemer'
@@ -402,7 +403,9 @@ function readHub(slug: string): string {
 // (profiel), register (A-Z-overzicht, Fase 2 link-architectuur) of hub
 // (self-contained, alleen 'index' in dit cluster).
 function getMainHtmlRuw(page: AannemerPage): string {
-  if (page.content_kind === 'city') return getCityHtml(page)
+  // Winkels, showrooms en bedrijven uit een heel ander vak blijven uit de
+  // plaatslijst; hun profiel blijft wel bestaan. Zie lib/uitgesloten.ts.
+  if (page.content_kind === 'city') return zonderUitgesloten(CLUSTER, getCityHtml(page))
   if (page.content_kind === 'bedrijf') return getBedrijfHtml(page)
   if (page.content_kind === 'register') return getRegisterHtml(page)
   return readHub(page.slug)
