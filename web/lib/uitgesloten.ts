@@ -1,0 +1,125 @@
+// Bedrijven die geen vakbedrijf zijn uit de overzichtslijsten houden.
+//
+// WAAROM. De acht clusters bevatten 25.594 profielen. De vakclassificatie van Jev
+// wees er 381 aan die geen installateur zijn maar een winkel, showroom of iets
+// heel anders. Na een tweede, anders gestelde vraag en een derde oordeel op hun
+// eigen website bleven er 206 over waar alle signalen het eens waren. Daar zitten
+// BAUHAUS Venlo, Karwei Hulst, Woonboulevard Dordt, Taxi Teylingen en een
+// Shell-station tussen — allemaal onder een vakkop waar ze niet horen.
+//
+// WAT DIT WEL EN NIET DOET. Het haalt de kaart van zo'n bedrijf uit de
+// plaatslijst ("badkamerspecialisten in Aalsmeer"). Het profiel zelf blijft
+// bestaan: geen URL die verdwijnt, geen 404, geen redirect, en de interne links
+// ernaartoe blijven werken. Zit er een fout in, dan is het één regel uit
+// data/vakbedrijven-uitgesloten.json halen en de volgende bouw staat het weer
+// goed. Omkeerbaar was hier meer waard dan zeker.
+//
+// HOE. De kaarten in de plaatspagina's zijn <div class="card vb-card">…</div> met
+// sluitende divs, en elke kaart draagt de link naar het profiel. We knippen op
+// het id-achtervoegsel van de slug, want dat is het enige dat de bron
+// (vakbedrijven.json) en het cluster-fragment delen.
+import fs from 'node:fs'
+import path from 'node:path'
+
+const REPO = path.join(process.cwd(), '..')
+
+type Uitgesloten = { cluster: string; naam: string; stad: string }
+
+let _perCluster: Record<string, Set<string>> | null = null
+let _perNaam: Record<string, Set<string>> | null = null
+
+/** Naam + plaats, genormaliseerd. De ItemList draagt niet ons profiel maar de
+ *  eigen website van het bedrijf, dus daar is de slug geen haakje. */
+function sleutel(naam: string, stad: string): string {
+  const k = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, '')
+  return `${k(naam)}|${k(stad)}`
+}
+
+function achtervoegsels(): Record<string, Set<string>> {
+  if (_perCluster) return _perCluster
+  _perCluster = {}
+  _perNaam = {}
+  try {
+    const rauw = fs.readFileSync(
+      path.join(REPO, 'data', 'vakbedrijven-uitgesloten.json'), 'utf8')
+    const alle: Record<string, Uitgesloten> = JSON.parse(rauw)
+    for (const [slug, v] of Object.entries(alle)) {
+      const id = slug.split('-').pop()
+      if (!id) continue
+      ;(_perCluster[v.cluster] ??= new Set()).add(id)
+      ;(_perNaam![v.cluster] ??= new Set()).add(sleutel(v.naam, v.stad))
+    }
+  } catch {
+    // Geen bestand = niets uitsluiten. De site bouwt ook zonder.
+  }
+  return _perCluster
+}
+
+/** Haalt uitgesloten bedrijven uit de ItemList in de gestructureerde data.
+ *
+ * DE PAGINA EN HET SCHEMA MOETEN HETZELFDE ZEGGEN. Na het filteren van de
+ * kaarten stond BAUHAUS Venlo nog wél in de ItemList van de plaatspagina: voor
+ * een bezoeker was hij weg, voor een zoekmachine niet. Dat is precies het soort
+ * verschil waar de claim-bewaker op let, en het maakt het filteren zinloos —
+ * Google leest die lijst.
+ */
+export function zonderUitgeslotenLd(cluster: string, blokken: string[]): string[] {
+  achtervoegsels()
+  if (!_perNaam?.[cluster]?.size) return blokken
+  return blokken.map(blok => {
+    if (!blok.includes('ItemList')) return blok
+    let d: any
+    try { d = JSON.parse(blok) } catch { return blok }
+    if (d?.['@type'] !== 'ItemList' || !Array.isArray(d.itemListElement)) return blok
+    const namen = _perNaam?.[cluster] ?? new Set<string>()
+    const over = d.itemListElement.filter((el: any) => {
+      const naam: string = el?.item?.name ?? ''
+      const stad: string = el?.item?.address?.addressLocality ?? ''
+      return !namen.has(sleutel(naam, stad))
+    })
+    if (over.length === d.itemListElement.length) return blok
+    // Posities opnieuw nummeren: een ItemList met gaten is ongeldig.
+    d.itemListElement = over.map((el: any, i: number) => ({ ...el, position: i + 1 }))
+    return JSON.stringify(d)
+  })
+}
+
+/** Haalt de kaarten van uitgesloten bedrijven uit een plaatspagina. */
+export function zonderUitgesloten(cluster: string, html: string): string {
+  const ids = achtervoegsels()[cluster]
+  if (!ids || ids.size === 0) return html
+
+  let uit = html
+  let vanaf = 0
+  for (;;) {
+    const i = uit.indexOf('vb-card', vanaf)
+    if (i < 0) break
+    const start = uit.lastIndexOf('<div', i)
+    if (start < 0) { vanaf = i + 7; break }
+
+    // Einde van de kaart: tellen tot de div weer sluit.
+    let diepte = 0
+    let j = start
+    const re = /<div\b|<\/div>/g
+    re.lastIndex = start
+    for (;;) {
+      const m = re.exec(uit)
+      if (!m) { j = -1; break }
+      diepte += m[0] === '</div>' ? -1 : 1
+      j = m.index + m[0].length
+      if (diepte === 0) break
+    }
+    if (j < 0) break
+
+    const kaart = uit.slice(start, j)
+    const href = kaart.match(new RegExp(`/${cluster}/bedrijf/([^"/]+)/`))
+    const id = href ? href[1].split('-').pop() : null
+    if (id && ids.has(id)) {
+      uit = uit.slice(0, start) + uit.slice(j)
+      vanaf = start
+    } else {
+      vanaf = j
+    }
+  }
+  return uit
+}

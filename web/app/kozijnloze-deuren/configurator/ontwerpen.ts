@@ -176,12 +176,8 @@ export const FINEREN: Fineer[] = [
     beeld: 'oslo-oak', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H598-W07' },
   { id: 'oslo-oak-cocoa', naam: 'Oslo Oak cocoa brown', basis: '#5A4032', nerf: '#412C22',
     beeld: 'oslo-oak-cocoa', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H597-W07' },
-  { id: 'valley-ash', naam: 'Valley Ash sunlit brown', basis: '#8A6A4C', nerf: '#6A4F37',
-    beeld: 'valley-ash', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H593-W07' },
   { id: 'dainty-oak-latte', naam: 'Dainty Oak latte', basis: '#B79A79', nerf: '#957B5E',
     beeld: 'dainty-oak-latte', structuur: 'structuur-v1a', tegelMm: [1300, 1509], code: '0H267-V1A' },
-  { id: 'robinson-oak', naam: 'Robinson Oak light natural', basis: '#C0A484', nerf: '#9C8365',
-    beeld: 'robinson-oak', structuur: 'structuur-w06', tegelMm: [1306, 1300], code: '0H784-W06' },
   { id: 'master-oak', naam: 'Master Oak natural', basis: '#A98A66', nerf: '#876C4E',
     beeld: 'master-oak', structuur: 'structuur-v2a', tegelMm: [3040, 1270], code: '0H913-V2A' },
   // Bij dit decor leverde Unilin geen structuurkaart, alleen een normaalkaart.
@@ -190,5 +186,19 @@ export const FINEREN: Fineer[] = [
     beeld: 'master-oak-patina', tegelMm: [3040, 1270], code: '0H923-V2A' },
   { id: 'kivu-wenge', naam: 'Kivu Wenge', basis: '#4A3A30', nerf: '#332721',
     beeld: 'kivu-wenge', structuur: 'structuur-cst', tegelMm: [1300, 1300], code: '0H687-CST' },
+  // Vijf erbij, aangeleverd op 22 september als vervanging voor de twee decors
+  // die fineer bleken. Twee daarvan zijn geen hout: Pure Concrete light is een
+  // betonlook en Lime chalk white een kalkdecor. Ze staan wel onder dezelfde
+  // afwerking, want voor de deur maakt het niets uit — het is dezelfde HPL-plaat.
+  { id: 'royal-oak', naam: 'Royal Oak natural', basis: '#8F6E4F', nerf: '#876441',
+    beeld: 'royal-oak', structuur: 'structuur-v8a', tegelMm: [1860, 1300], code: '0H437-V8A' },
+  { id: 'royal-oak-dark', naam: 'Royal Oak dark brown', basis: '#4F3E2E', nerf: '#473623',
+    beeld: 'royal-oak-dark', structuur: 'structuur-v8a', tegelMm: [1860, 1300], code: '0H164-V8A' },
+  { id: 'valley-ash-silver', naam: 'Valley Ash silver grey', basis: '#D2D3CE', nerf: '#CFCFC9',
+    beeld: 'valley-ash-silver', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H590-W07' },
+  { id: 'lime-chalk-white', naam: 'Lime chalk white', basis: '#C8CAC7', nerf: '#C4C6C5',
+    beeld: 'lime-chalk-white', structuur: 'structuur-m02', tegelMm: [1300, 1300], code: '0F259-M02' },
+  { id: 'pure-concrete-light', naam: 'Pure Concrete light', basis: '#B7B6B1', nerf: '#AEADA8',
+    beeld: 'pure-concrete-light', structuur: 'structuur-bst', tegelMm: [1300, 1536], code: '0F989-BST' },
 ]
 

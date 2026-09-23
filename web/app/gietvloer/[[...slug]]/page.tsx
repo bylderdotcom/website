@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getPages, getPage, getMainHtml, getShellCss, toMetadata, slugToSegments, segmentsToSlug } from '../../../lib/gietvloer'
 import InteractiveScripts from '../InteractiveScripts'
+import { zonderUitgeslotenLd } from '@/lib/uitgesloten'
 
 // /gietvloer/ (index-hub), /gietvloer/<stad>/ (bedrijvengrid) en
 // /gietvloer/bedrijf/<slug>/ (bedrijfsprofiel) in één optionele catch-all.
@@ -27,7 +28,7 @@ export default async function GietvloerPage({ params }: { params: Promise<{ slug
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
-      {page.ldjson.map((block, i) => (
+      {zonderUitgeslotenLd('gietvloer', page.ldjson).map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
       <div dangerouslySetInnerHTML={{ __html: main }} />

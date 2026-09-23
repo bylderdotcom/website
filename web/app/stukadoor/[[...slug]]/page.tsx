@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getPages, getPage, getMainHtml, getShellCss, toMetadata, slugToSegments, segmentsToSlug } from '../../../lib/stukadoor'
 import InteractiveScripts from '../InteractiveScripts'
+import { zonderUitgeslotenLd } from '@/lib/uitgesloten'
 
 // /stukadoor/ (index-hub), /stukadoor/<stad>/ (bedrijvengrid) en
 // /stukadoor/bedrijf/<slug>/ (bedrijfsprofiel) in één optionele catch-all.
@@ -27,7 +28,7 @@ export default async function StukadoorPage({ params }: { params: Promise<{ slug
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
-      {page.ldjson.map((block, i) => (
+      {zonderUitgeslotenLd('stukadoor', page.ldjson).map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
       <div dangerouslySetInnerHTML={{ __html: main }} />

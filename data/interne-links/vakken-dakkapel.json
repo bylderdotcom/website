@@ -1,0 +1,6106 @@
+{
+  "bedrijf/123-dakbeheer-dqhm6u": {
+    "vak": "aannemer",
+    "zeker": 0.32
+  },
+  "bedrijf/4-star-windows-njmdhi": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/4hoekdakbedekking-b65r70": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/4samen-wij-samen-1stg7o": {
+    "vak": "anders",
+    "zeker": 0.32
+  },
+  "bedrijf/a-a-b-s-bouw-en-timmerbedrijf-jdt0aa": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/a-a-m-van-boven-machinaal-timmerbedrijf-b-v-b0psgy": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/a-j-l-dakbedekkingen-b-v-q1em64": {
+    "vak": "aannemer",
+    "zeker": 0.38
+  },
+  "bedrijf/a-kok-kunststof-dakwerken-2ocsqo": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/a-m-klussenbedrijf-vjlzis": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/a-plus-geveltechniek-e3octs": {
+    "vak": "stukadoor",
+    "zeker": 0.36
+  },
+  "bedrijf/a-r-allround-rlavxm": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/a-vriens-timmerwerken-0osqyw": {
+    "vak": "parket",
+    "zeker": 0.34
+  },
+  "bedrijf/a5-deco-middelbeers-bv-evutdi": {
+    "vak": "anders",
+    "zeker": 0.25
+  },
+  "bedrijf/a5-deco-oosterhout-kunststof-kozijnen-en-zonwering-hghpai": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/aadbouw-rud8o8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aan-en-uitbouwspecialist-qlcbek": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/aandenrijn-dakkapellen-b74gac": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/aannemer-kleinbouw-twente-b-v-ahmppe": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemer-vakwerk-vandaag-b-v-vxgm_0": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/aannemer-volendam-b-v-tfmgfq": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemers-bouwbedrijf-heemstede-ctrr0q": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemersbedijf-luttikhuis-b-v-pneieo": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/aannemersbedrijf-bodijn-leiden-belces": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/aannemersbedrijf-braak-velsen-bv-5gb_wk": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/aannemersbedrijf-chambon-bv-f0v7is": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemersbedrijf-cordes-yufcbm": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/aannemersbedrijf-dani-rotterdam-wx33yc": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemersbedrijf-gidus-aarts-rkzqok": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemersbedrijf-gjalt-huisma-b-v-l4wete": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemersbedrijf-gz-geveltechniek-2t-p5k": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/aannemersbedrijf-j-s-siemensma-0ilaek": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/aannemersbedrijf-pardoel-b-v-qwdy7o": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemersbedrijf-rob-schepers-timmerwerken-dwzrye": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/aannemersbedrijf-t-romme-7iswyg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemersbedrijf-w-maassen-b-v-vec-0w": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/aannemersbedrijf-wakumbouw-rzica8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemingsbedrijf-dozy-b-v-bh7_r0": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemingsbedrijf-durostek-b-v-o7g0mm": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemingsbedrijf-h-monster-7-cc-u": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/aannemingsbedrijf-kersbergen-b-v-uftrrc": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemingsbedrijf-midden-west-t4zqks": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/aannemingsbedrijf-pijper-wptrsk": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/aannemingsbedrijf-w-mulder-gjbhfc": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aannemingsbedrijf-windhorst-recx5s": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/aartmaakt-nl-al3m8w": {
+    "vak": "anders",
+    "zeker": 0.31
+  },
+  "bedrijf/ab-dakkapellen-uit-mariahout-_joz-o": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/abm-dakkapellen-bv-wxx1e4": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/accuraat-dakservice-ylzr9k": {
+    "vak": "anders",
+    "zeker": 0.55
+  },
+  "bedrijf/accuratesse-vuauwa": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/adam-service-twente-l0fgmg": {
+    "vak": "anders",
+    "zeker": 0.26
+  },
+  "bedrijf/adams-daktechniek-am4ll8": {
+    "vak": "aannemer",
+    "zeker": 0.76
+  },
+  "bedrijf/ademabackus-dakwerken-k0scru": {
+    "vak": "anders",
+    "zeker": 0.47
+  },
+  "bedrijf/adk-dakwerken-dpwz9u": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/adma-se2wkw": {
+    "vak": "anders",
+    "zeker": 0.58
+  },
+  "bedrijf/admiraal-bouw-b-v-2nsq8c": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/advance-onderhoud-qrphtw": {
+    "vak": "onderhoud",
+    "zeker": 0.55
+  },
+  "bedrijf/adviesbureau-timmerbedrijf-dsa-bv-j5w": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/aevum-b-v-enkwl8": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/afbouw-spakenburg-xmvnse": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/ah-van-zijl-bouw-en-tim-werk-divnhm": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/aj-dakwerken-olwble": {
+    "vak": "aannemer",
+    "zeker": 0.42
+  },
+  "bedrijf/ak-bouw-veenendaal-a53s-c": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/ak-timmerbedrijf-eawp6o": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/aka-bouwbedrijf-bv-zy1pvw": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/akkul-woningrenovatie-ss-tme": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/ala-bouw-b-v-p2h1oe": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/albeka-trappen-en-kozijnen-kxa57o": {
+    "vak": "anders",
+    "zeker": 0.54
+  },
+  "bedrijf/alex-stam-montage-oyism4": {
+    "vak": "aannemer",
+    "zeker": 0.76
+  },
+  "bedrijf/alfa-b-v-nkgsvy": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/alkadro-bouw-t4puns": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/alku-ontdekkingscentrum-middelburg-kzsxig": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/alku-tilburg-kunststof-kozijnen-en-deuren-nj17us": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/all-clear-8i-bfo": {
+    "vak": "anders",
+    "zeker": 0.32
+  },
+  "bedrijf/all-round-dakwerken-b-v-rmbym8": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/all-window-cg5jdw": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/alles-onder-een-dak-v-o-f-bbu3lo": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/allmex-bouwgroep-ksrt9m": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/allround-bouw-hardenberg-i0wumy": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/allround-projecten-bv-uwzolderindeling-nl-dakkapelafwerking-nl-zolderverbouwen-nl-37puxi": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/almere-dakkapel-prefab-dakkapel-hpevha": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/almere-kozijnen-gevelbekleding-z-erhe": {
+    "vak": "aannemer",
+    "zeker": 0.54
+  },
+  "bedrijf/alpha-interiors-iglgdu": {
+    "vak": "anders",
+    "zeker": 0.6
+  },
+  "bedrijf/ambiance-zonwering-deurtotaal-goes-hsbyni": {
+    "vak": "aannemer",
+    "zeker": 0.36
+  },
+  "bedrijf/amersfoort-dakkapel-amersfoortdakkapel-6gcypq": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/ampa-kunststof-kozijnen-b-v-sbwer0": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/amstelland-kozijnen-bv-9vdtfa": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/amsterdam-dakkapel-ezpwbo": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/anatefka-dakbedekking-zmixn8": {
+    "vak": "aannemer",
+    "zeker": 0.42
+  },
+  "bedrijf/apeldoorn-dakkapel-houtlook-dakkapel-bj5oh4": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/ardi-bouw-materialen-v4ss2g": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/arjan-dekker-timmer-onderhoudsbedrijf-6aurbe": {
+    "vak": "onderhoud",
+    "zeker": 0.65
+  },
+  "bedrijf/arnhem-dakkapel-arnhemdakkapel-sxjzby": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/arno-de-bruin-lfx3nw": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/arno-leenders-timmerwerken-ftpsgu": {
+    "vak": "parket",
+    "zeker": 0.32
+  },
+  "bedrijf/arno-s-dakramen-r1hvhg": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/arnold-schouwink-timmerwerken-h6orvu": {
+    "vak": "parket",
+    "zeker": 0.5
+  },
+  "bedrijf/asco-uam7fe": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/atelia-g20bhg": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/aura-kozijnen-mill-p9z4ga": {
+    "vak": "anders",
+    "zeker": 0.77
+  },
+  "bedrijf/avambouw-bv-aannemersbedrijf-jqu5cu": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/avh-dak-en-schoorsteen-3yfdim": {
+    "vak": "aannemer",
+    "zeker": 0.39
+  },
+  "bedrijf/avw-dakramenspecialist-u3uqus": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/ayd-bouw-ninxbo": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/aypen-bv-alrsuo": {
+    "vak": "aannemer",
+    "zeker": 0.72
+  },
+  "bedrijf/b-b-kozijnen-b-v-z9c5kk": {
+    "vak": "anders",
+    "zeker": 0.66
+  },
+  "bedrijf/b-f-groep-vf-_bw": {
+    "vak": "anders",
+    "zeker": 0.35
+  },
+  "bedrijf/b-van-de-gevel-dakkapellen-specialist-exhfbi": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/baas-dakbedekkingen-wdst7s": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/babo-bouw-van-oosterom-yhat0c": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/badkamer-renovatie-dakopbouw-renovatie-men-klusser-e0p_q8": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bakker-construction-6f8w_a": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/bakker-totaal-bouw-ggmteu": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/bart-van-otterdijk-luyvzk": {
+    "vak": "aannemer",
+    "zeker": 0.69
+  },
+  "bedrijf/bas-bosch-dakkapellen-qpi62y": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/basbouw-waddinxveen-4-bdhw": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/baskapel-wkbjvy": {
+    "vak": "anders",
+    "zeker": 0.89
+  },
+  "bedrijf/baskapel-wn1qru": {
+    "vak": "anders",
+    "zeker": 0.93
+  },
+  "bedrijf/bck-kozijnen-rolluiken-sbjbnw": {
+    "vak": "anders",
+    "zeker": 0.77
+  },
+  "bedrijf/beau-dak-en-timmerwerken-n8vvhw": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/beaumont-dak-en-bouwwerken-wgpl5o": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/beek-bouwmeesters-wljb3k": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/beek-pannenlegger-pn_axm": {
+    "vak": "anders",
+    "zeker": 0.81
+  },
+  "bedrijf/beens-dakkapellen-nyacrw": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/beerens-daktechniek-weert-xblnbi": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/behrens-bouw-_7vwo8": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/bekkers-bouw-en-verbouw-ulzdtq": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bekura-kunststof-en-aluminium-ramen-b-v-0wllqo": {
+    "vak": "anders",
+    "zeker": 0.84
+  },
+  "bedrijf/belisol-den-bosch-kozijnen-deuren-en-schuifdeuren-nr93ik": {
+    "vak": "anders",
+    "zeker": 0.86
+  },
+  "bedrijf/belisol-eindhoven-kozijnen-deuren-schuifpuien-w9095g": {
+    "vak": "anders",
+    "zeker": 0.8
+  },
+  "bedrijf/belisol-goes-kozijnen-deuren-en-schuifpuien-kkkmlc": {
+    "vak": "anders",
+    "zeker": 0.76
+  },
+  "bedrijf/belisol-gouda-kozijnen-deuren-schuifpuien-7w3y5w": {
+    "vak": "anders",
+    "zeker": 0.79
+  },
+  "bedrijf/belisol-leiden-kozijnen-deuren-schuifpuien-zr8roa": {
+    "vak": "anders",
+    "zeker": 0.8
+  },
+  "bedrijf/belisol-steenwijk-kozijnen-deuren-schuifpuien-jgbdls": {
+    "vak": "anders",
+    "zeker": 0.81
+  },
+  "bedrijf/bema-prefab-rjliz4": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/ben-roos-qc22gs": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/bendabouw-geveltechniek-pi48-s": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/benelux-dakkapellen-b-v-gjy4wk": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/besteleendakkapel-nl-kgnxj4": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/beter-af-kozijn-b-v-hoqltc": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/beterbouw-nuenen-_zzsve": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/beyaart-aannemersbedrijf-yfw4os": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/bk-bouw-mpwdde": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bkkd-0fbhlu": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/blok-dakkapellen-vyx3ra": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/bm-daktechniek-qglrws": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/bo-montage-1lxe14": {
+    "vak": "anders",
+    "zeker": 0.37
+  },
+  "bedrijf/bob-onderhoudsbedrijf-67qupe": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/boerkamp-bouw-b-v-ct6pli": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bogaard-bouw-timmerwerken-jbm768": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bogers-kozijnen-deuren-dakkapellen-wjwhxo": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/bohre-bouw-lbqsw0": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/boma-dak-en-bouw-de-dakdekker-die-problemen-oplost-voor-ze-groter-worden-oe5f18": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/bongers-dakwerken-bv-uo1zow": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/bonne-dak-ltrpc8": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/borg-bouw-kqpl0e": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/borghuis-soer-dakdekkersbedrijf-6moptq": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/borrenbergs-timmerwerken-kjq5cy": {
+    "vak": "parket",
+    "zeker": 0.51
+  },
+  "bedrijf/bos-bouw-bouwonderneming-soest-iniify": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/bouw-aannemersbedrijf-van-den-helder-b-v-mlqo7g": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouw-aannemingsbedrijf-hooikaas-b-v-in3ups": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouw-en-klussenbedrijf-cremer-gaee5c": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouw-en-montage-willems-vhuapa": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/bouw-en-renovatiebedrijf-kurt-tndwkm": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouw-en-timmerbedrijf-c-rutten-jpyk-w": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouw-en-timmerbedrijf-tans-z6a_uq": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouw-en-timmerbedrijf-tynaarlo-gk-lgy": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouw-en-timmerbedrijf-will-van-limpt-yrl18a": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouw-en-timmerwerken-van-dijk-glrzto": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouw-klusbedrijf-nico-van-dijk-0ahe18": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouw-klussenbedrijf-a-r-allround-mnyxna": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouw-kozijnen-midden-nederland-1pjup8": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/bouw-metsel-bedrijf-van-steenwijk-tynaarlo-regio-assen-drenthe-z6p8li": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/bouw-timmer-en-onderhoudsbedrijf-paul-loef-bv-9qnagw": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/bouw-timmerbedrijf-j-dollee-b-v-iipops": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/bouw-timmerbedrijf-texel-bauxrm": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouw-timmerbedrijf-van-hamersveld-b-v-cnogji": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/bouwadvies-xxl-b-v-4xy23a": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/bouwbedrijf-akkermans-jnqoxc": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-bakkum-_urcwk": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-beerda-nfibhe": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-bouw-totaal-1_ahl0": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-bouw-uit-veenendaal-c2x_7y": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-bsg-bouw-m_exvm": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-call-the-guy-4cayrm": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-casmond-b-v-jtlht8": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/bouwbedrijf-cops-aannemer-someren-asten-a4kmty": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-d-g-holdorp-jpv0o8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-daamen-b-v-mihji8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64": {
+    "vak": "aannemer",
+    "zeker": 0.54
+  },
+  "bedrijf/bouwbedrijf-de-laat-xztddy": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-de-vries-b-v-fspqvk": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-de-winter-5vmvt0": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/bouwbedrijf-dgh-de-gouden-handjes-ojyexi": {
+    "vak": "aannemer",
+    "zeker": 0.3
+  },
+  "bedrijf/bouwbedrijf-dubru-wgw3ti": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/bouwbedrijf-exterkate-borne-b-v-aqfrum": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-florie-braqy0": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-gennex-d3amsm": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-gerritsen-pvstr8": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-harbers-b-v-bf99uc": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/bouwbedrijf-heever-b-v-kcyzcc": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-hulleman-en-ehg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-j-b-castricum-o3l2yg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-jasper-van-dam-2yecpc": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-kambier-bv-uubxvi": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-kloosterman-uczsji": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/bouwbedrijf-korthouwer-fzwp8s": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-kos-rqfpr4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-kreeft-b-v-_hap-a": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-kuiers-r43aiy": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/bouwbedrijf-mdt-jlasj8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-micasa-ermelo-rpofra": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-oort-oel5yk": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-p-c-de-winter-b-v-m8dhs0": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/bouwbedrijf-pascal-meijer-9p-trs": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/bouwbedrijf-pijnenburg-bv-co2e2m": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-reus-jsf-dc": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-rietveld-bv-eqphmq": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/bouwbedrijf-s-de-vos-jjlhlg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-schagen-b-v-dwcvd4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-schooneman-wzldxq": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-schreuder-b-v-dmz-rg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-sld-t9uo5y": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-spruit-bv-mcb14w": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/bouwbedrijf-t-van-der-meijden-ytpmju": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/bouwbedrijf-th-van-der-linden-bv-zqu4iw": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-ubbink-zevenaar-puo3rs": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwbedrijf-ubnfaa": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-van-der-zee-orstuu": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/bouwbedrijf-van-maurik-vcgvx8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-van-zundert-v5zpdu": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/bouwbedrijf-veenhuizen-viemoa": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwbedrijf-w-bouw-sel3wi": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/bouwbedrijf-wijlens-b-v-vhbehm": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwcombinatie-randstad-b-v-h-o-d-n-gevelwerk-randstad-n01zza": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/bouwgroep-best-zn-c_y": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/bouwgroep-huiskes-bv-econha": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/bouwgroep-leiden-_t3fpu": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/bouwkomeet-xoziw4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/bouwonderneming-b-de-haan-6ogbws": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/bouwonderneming-de-graaf-bv-z5qnuy": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bouwonderneming-zomer-gy92dw": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/bouwpartner-schutboom-rivrnc": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/bouwr-cg3jys": {
+    "vak": "aannemer",
+    "zeker": 0.67
+  },
+  "bedrijf/bouwservice-mako-iflsg4": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/bouwservice-panneman-mntqqa": {
+    "vak": "aannemer",
+    "zeker": 0.22
+  },
+  "bedrijf/bouwservice-t-o-jpmbgc": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/bouwservice-van-de-moosdijk-b-v-ylmxjk": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/bouwservice-van-de-ven-_zmfuw": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/bouwservice-voets-rxuuew": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/bouwsil-wg-y4o": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/bouwspecialist-wp3yok": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/bouwtechniek-koning-t9dhra": {
+    "vak": "aannemer",
+    "zeker": 0.35
+  },
+  "bedrijf/bouwtechniek-maarheeze-dlnnqk": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/braat-dakbedekking-familiebedrijf-met-echte-24-uurs-service-ytgow0": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/brabant-bouwt-bv-4sgo20": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bram-neijts-klusbedrijf-rcgkds": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/bravo-plus-uupiac": {
+    "vak": "anders",
+    "zeker": 0.36
+  },
+  "bedrijf/breedijk-bouw-en-aannemingsbedrijf-_eubdm": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bregman-timmerwerken-gx8gja": {
+    "vak": "parket",
+    "zeker": 0.64
+  },
+  "bedrijf/bremer-dakkapellen--dwf8a": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/breukers-bouw-timmerwerken-stpb7q": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/brezon-kunststof-kozijnen-zonwering-wto5i8": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/bricksdakwerk-tmj8ky": {
+    "vak": "aannemer",
+    "zeker": 0.57
+  },
+  "bedrijf/brokling-bouw-nxttca": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/bronz-totaalbouw-eb0-j8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/brouwer-dakkapellen-jmnm3y": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/brouwer4u-eb7v20": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/bruijn-bouwbedrijf-hstnaq": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/bruil-dakdekkers-en-timmerbedrijf-v69vck": {
+    "vak": "aannemer",
+    "zeker": 0.74
+  },
+  "bedrijf/brunssum-beheer-b-v-7ycl_g": {
+    "vak": "parket",
+    "zeker": 0.25
+  },
+  "bedrijf/bsb-kozijnen-p-dkpw": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/buildcore-techniek-6lgzac": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/buiten-clean-a_ftio": {
+    "vak": "onderhoud",
+    "zeker": 0.99
+  },
+  "bedrijf/bulthuis-dakdekkers-bv-zisp20": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/burgler-kozijnen-g_5lhk": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/bvd-timmerwerken-cxa_pg": {
+    "vak": "aannemer",
+    "zeker": 0.76
+  },
+  "bedrijf/by-leon-bwqlbm": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/c-d-j-daktechniek-0-mmki": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/carre-dakramen-aiplkg": {
+    "vak": "anders",
+    "zeker": 0.3
+  },
+  "bedrijf/cedak-fgrnjk": {
+    "vak": "anders",
+    "zeker": 0.34
+  },
+  "bedrijf/celo-bouw-installatiebedrijf-ybu3he": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/cequ-dakbedekkingen-v-o-f-phg4dq": {
+    "vak": "aannemer",
+    "zeker": 0.68
+  },
+  "bedrijf/cf-montage-sueymk": {
+    "vak": "aannemer",
+    "zeker": 0.67
+  },
+  "bedrijf/ck-kozijnen-bv-qjgluc": {
+    "vak": "anders",
+    "zeker": 0.61
+  },
+  "bedrijf/clean-select-hd3l1q": {
+    "vak": "parket",
+    "zeker": 0.24
+  },
+  "bedrijf/climate-king-cycksc": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/comatherm-kozijn-en-serrespecialist-zo_338": {
+    "vak": "anders",
+    "zeker": 0.76
+  },
+  "bedrijf/combi-dakkapel-b-v-1u8llk": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/combikozijnen-7jejmu": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/compleet-dak-b-v-0-akzq": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/concept-dakopbouw-rmw_hq": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/cor-van-esseveld-timmer-onderhoud-x39v94": {
+    "vak": "onderhoud",
+    "zeker": 0.64
+  },
+  "bedrijf/creon-kozijnen-jah8x0": {
+    "vak": "anders",
+    "zeker": 0.77
+  },
+  "bedrijf/crooijmans-dakbedekkingen-bv-uk2tka": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/crown-care-bv-j1xitw": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/d-j-dakkapellen-2pnkzo": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/d-j-r-allround-bouw-j4quoc": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/d-k-dakreparatie-ivdsca": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/d-klander-dak-iwyh1u": {
+    "vak": "anders",
+    "zeker": 0.55
+  },
+  "bedrijf/d-l-daktechniek-gblak0": {
+    "vak": "aannemer",
+    "zeker": 0.37
+  },
+  "bedrijf/d-timmerman-lhizvq": {
+    "vak": "parket",
+    "zeker": 0.48
+  },
+  "bedrijf/da-dakkapellen-mfijue": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/daba-bouw-uqvqog": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/dadeko-dakkapellen-deuren-en-kozijnen-nv6gqm": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/daglichten-nederland-4xafsm": {
+    "vak": "anders",
+    "zeker": 0.64
+  },
+  "bedrijf/dak-advies-groep-ctfhl4": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/dak-advies-groep-jcbq1o": {
+    "vak": "anders",
+    "zeker": 0.41
+  },
+  "bedrijf/dak-advies-groep-jx6wom": {
+    "vak": "anders",
+    "zeker": 0.6
+  },
+  "bedrijf/dak-advies-groep-k2tt3s": {
+    "vak": "anders",
+    "zeker": 0.57
+  },
+  "bedrijf/dak-advies-groep-muiecq": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/dak-advies-groep-rjfqj0": {
+    "vak": "anders",
+    "zeker": 0.55
+  },
+  "bedrijf/dak-advies-groep-ydryxq": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/dak-advies-groep-z0qolo": {
+    "vak": "anders",
+    "zeker": 0.41
+  },
+  "bedrijf/dak-ambulance-nederland-dakdekker-veenendaal-yw4ms0": {
+    "vak": "aannemer",
+    "zeker": 0.31
+  },
+  "bedrijf/dak-bouw-erwin-van-der-pers-mcihpg": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dak-centrale-holland-bv-l5pqe8": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/dak-en-aannemersbedrijf-op-en-top-b-v-gxse6c": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/dak-en-bouwservice-kusters-ymo8h0": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dak-en-installatiebedrijf-k-j-van-der-vis-12ay8c": {
+    "vak": "aannemer",
+    "zeker": 0.39
+  },
+  "bedrijf/dak-en-installatiewerk-twente-5vm5b0": {
+    "vak": "aannemer",
+    "zeker": 0.33
+  },
+  "bedrijf/dak-en-klusbedrijf-hommerson-kjavng": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/dak-en-renovatie-gebroeders-peters-v-o-f-gw1zt0": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dak-en-totaalbouw-jvo-inwn5c": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/dak-en-vastgoedonderhoud-van-gelder-iypqdi": {
+    "vak": "onderhoud",
+    "zeker": 0.74
+  },
+  "bedrijf/dak-en-woning-centrum-midden-nederland-bv-xnnthw": {
+    "vak": "aannemer",
+    "zeker": 0.37
+  },
+  "bedrijf/dak-en-woningonderhoud-nld-dakdekker-huq7l8": {
+    "vak": "onderhoud",
+    "zeker": 0.5
+  },
+  "bedrijf/dak-service-langedijk-8orkmy": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/dak-zeker-ieamwo": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/dakalux-showroom-9c9058": {
+    "vak": "anders",
+    "zeker": 0.92
+  },
+  "bedrijf/dakambulance-nederland-gorinchem-4sbjcu": {
+    "vak": "aannemer",
+    "zeker": 0.55
+  },
+  "bedrijf/dakbedekken-nl-rsy9h0": {
+    "vak": "aannemer",
+    "zeker": 0.54
+  },
+  "bedrijf/dakbeheer-totaal-dakdekker-bergen-op-zoom-1j8hgw": {
+    "vak": "anders",
+    "zeker": 0.6
+  },
+  "bedrijf/dakbeheer-zuid-den-bosch-hh3yyu": {
+    "vak": "onderhoud",
+    "zeker": 0.66
+  },
+  "bedrijf/dakbouwplus-g1fmwu": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/dakcentrale-dam-square-b-v-2fgbni": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/dakcentrale-midden-nederland-rmcdxe": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/dakcentrale-nederland-1cauy4": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/dakcentralewaterlandbv-acbw4a": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/dakcompany-b-v-robexq": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/dakdekker-almere-dakrenovaties-nl-tfmj9c": {
+    "vak": "aannemer",
+    "zeker": 0.75
+  },
+  "bedrijf/dakdekker-apeldoorn-hendriks-dak-en-geveltechniek-euwz9i": {
+    "vak": "aannemer",
+    "zeker": 0.57
+  },
+  "bedrijf/dakdekker-b-kersten-dakwerken-6iwlro": {
+    "vak": "anders",
+    "zeker": 0.57
+  },
+  "bedrijf/dakdekker-barneveld-dama-tfkycy": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/dakdekker-boxtel-okr5l8": {
+    "vak": "anders",
+    "zeker": 0.68
+  },
+  "bedrijf/dakdekker-boxtel-pawnx4": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/dakdekker-brunssum-fpvo7u": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/dakdekker-castricum-nau2po": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/dakdekker-delfzijl-bdwzio": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/dakdekker-den-bosch-all-round-dakonderhoud-xj9nzm": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/dakdekker-den-haag-wellhuis-dakwerken-jixsiu": {
+    "vak": "anders",
+    "zeker": 0.71
+  },
+  "bedrijf/dakdekker-den-helder--zcyuo": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/dakdekker-deurne-zmeeky": {
+    "vak": "anders",
+    "zeker": 0.71
+  },
+  "bedrijf/dakdekker-geldrop-milbhm": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/dakdekker-gerards-eztc0i": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/dakdekker-hardenberg-gli7t0": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/dakdekker-hendrik-ido-ambacht-bdh1sc": {
+    "vak": "anders",
+    "zeker": 0.71
+  },
+  "bedrijf/dakdekker-hengelo-_uier8": {
+    "vak": "anders",
+    "zeker": 0.71
+  },
+  "bedrijf/dakdekker-hoorn-mj6lcw": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/dakdekker-in-putten-a1koqk": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/dakdekker-kerkrade-s-4ftg": {
+    "vak": "anders",
+    "zeker": 0.75
+  },
+  "bedrijf/dakdekker-medemblik-claygw": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/dakdekker-meppel-lamy_e": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/dakdekker-nederland-2pbv9q": {
+    "vak": "anders",
+    "zeker": 0.6
+  },
+  "bedrijf/dakdekker-oldenzaal-4ziqqi": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/dakdekker-oldenzaal-ppunea": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/dakdekker-son-en-breugel-kusdky": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/dakdekker-terneuzen-ki82me": {
+    "vak": "anders",
+    "zeker": 0.76
+  },
+  "bedrijf/dakdekker-valkenswaard-qdreuc": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/dakdekker-veendam-pkc2gw": {
+    "vak": "anders",
+    "zeker": 0.47
+  },
+  "bedrijf/dakdekker-veendam-raszlw": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/dakdekker-venray-akqhfs": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/dakdekker-wageningen-6babxm": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/dakdekker-wijchen-a71ayq": {
+    "vak": "anders",
+    "zeker": 0.75
+  },
+  "bedrijf/dakdekker-winterswijk-wo3koy": {
+    "vak": "anders",
+    "zeker": 0.75
+  },
+  "bedrijf/dakdekker-z99vhc": {
+    "vak": "anders",
+    "zeker": 0.75
+  },
+  "bedrijf/dakdekker-zaltbommel-all-round-dakonderhoud-zw9o2i": {
+    "vak": "anders",
+    "zeker": 0.47
+  },
+  "bedrijf/dakdekker-zevenaar-fmkdca": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/dakdekkers-in-nederland-fye6ag": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/dakdekkersbedrijf-cakir-dak-almere-upzteo": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/dakdekkersbedrijf-dbf-s49bwk": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/dakdekkersbedrijf-ddi-h54awc": {
+    "vak": "anders",
+    "zeker": 0.54
+  },
+  "bedrijf/dakdekkersbedrijf-heerlen-rokthm": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/dakdekkersbedrijf-metus-xnqwpq": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/dakdekkersbedrijf-mike-spoel-0n3da4": {
+    "vak": "anders",
+    "zeker": 0.68
+  },
+  "bedrijf/dakdekkersbedrijf-peter-jongen-k7pxrs": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/dakdekkersbedrijf-pro-clean-dakwerken-sexkbo": {
+    "vak": "anders",
+    "zeker": 0.43
+  },
+  "bedrijf/dakdekkersbedrijf-van-moerkerk-f4hrcq": {
+    "vak": "anders",
+    "zeker": 0.76
+  },
+  "bedrijf/dakdekkersbedrijf-voets-dakdekker-etten-leur-fmoppk": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/dakdekkersbedrijf-waterdichtdak--5jwsc": {
+    "vak": "anders",
+    "zeker": 0.65
+  },
+  "bedrijf/dakdekkersbedrijf-zyan-ptvr74": {
+    "vak": "anders",
+    "zeker": 0.57
+  },
+  "bedrijf/dakdekkersnl-hilversum-zgctgo": {
+    "vak": "aannemer",
+    "zeker": 0.44
+  },
+  "bedrijf/dakdienst-vangelder-dakdekker-gouda-2o9yna": {
+    "vak": "anders",
+    "zeker": 0.65
+  },
+  "bedrijf/dakdienst-vangelder-heemskerk-iuqhr0": {
+    "vak": "anders",
+    "zeker": 0.39
+  },
+  "bedrijf/dakdokter-noord-bgm7hk": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/dakexpertise-nederland-soest-0y2rgw": {
+    "vak": "aannemer",
+    "zeker": 0.45
+  },
+  "bedrijf/dakgoof-hrwhnq": {
+    "vak": "anders",
+    "zeker": 0.59
+  },
+  "bedrijf/dakgoten-leerdam-boogaart-dakgoten-leerdam-d5kt-4": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/dakkampioenen-b-v-msm8la": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/dakkapel-aannemer-vv9y7w": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/dakkapel-alblasserdam-4wxgyc": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-almere-tdagiy": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-almere-vewmjm": {
+    "vak": "aannemer",
+    "zeker": 0.72
+  },
+  "bedrijf/dakkapel-alphen-aan-den-rijn-nyedd0": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-amersfoort-ongzta": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/dakkapel-amersfoort-r40bv8": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-amstelveen-pydy3a": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-amsterdam-auzvia": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-amsterdam-com-fpk9z4": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/dakkapel-amsterdam-umt4qo": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/dakkapel-apeldoorn--atqam": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/dakkapel-arnhem-viouq0": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/dakkapel-bekleden-schoorsteenrenovatie-schoorsteen-solutions-uaadba": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/dakkapel-bloemendaal-ektdvc": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-bodegraven-wuyqnc": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-boskoop-skbcgm": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-breda-hmsfsk": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-breda-jygikw": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/dakkapel-bussum-0n60sa": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-capelle-aan-den-ijssel-klf1li": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-culemborg-3wa0dk": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-de-bilt-tvpqqe": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-delft-yyquzm": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-den-haag-5rdzc4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-den-haag-lmp1zg": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/dakkapel-diemen-hfhsr4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-dordrecht-lnnufo": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/dakkapel-drachten-fsugso": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/dakkapel-eindhoven-zurg6e": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/dakkapel-enschede-prb-s0": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/dakkapel-fabriek-7j5i4q": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/dakkapel-geldermalsen-my_xgq": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-gorinchem-q3cwue": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-gouda-ap-fnm": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/dakkapel-groningen-jxeayy": {
+    "vak": "aannemer",
+    "zeker": 0.67
+  },
+  "bedrijf/dakkapel-haaglanden-rxfzw4": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-haarlem-isizyi": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-haarlem-vdxfpo": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/dakkapel-hardinxveld-ehnvky": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-heemstede-q9g_ya": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-heerlen-38d1ny": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/dakkapel-hellevoetsluis-zidg8i": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/dakkapel-hendrik-ido-ambacht-2yn2nu": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-hillegom-mtnvmi": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-hilversum-rbu4kk": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-hoofddorp-hnuu1e": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-hoogvliet-l_iais": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-houten-en6hk8": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-huizen-zsuqik": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-ijsselstein-6ijufq": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-katwijk-ayefxe": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-katwijk-w3asy8": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/dakkapel-kopen-breda-dakkapel-ooot0w": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/dakkapel-krimpen-aan-den-ijssel-1wiss4": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-landsmeer-ecb7ba": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-leerdam-onknoq": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-leiden-7-hb50": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-leiden-avfbfu": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/dakkapel-leiderdorp-trkk7i": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-leidschendam-apbzq0": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-lelystad-vwb3-m": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-limburg-tf8k-a": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-lisse-2cf4sq": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-lopik-dl-je4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-maassluis-he0flu": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-maastricht-iuv8wk": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/dakkapel-naaldwijk-xav7fw": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-naarden-81gjps": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-nieuw-vennep-kc8iye": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-nieuwegein-k0ffio": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-nieuwkoop-f_7u9a": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-nijmegen-n54aqe": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/dakkapel-nl-deventer-suriqi": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-noordwijk-16fica": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-noordwijkerhout-yistz8": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-nootdorp-l8vrae": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-oegstgeest-kgv6oe": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-offerte-online-pgdoio": {
+    "vak": "aannemer",
+    "zeker": 0.42
+  },
+  "bedrijf/dakkapel-onderhoudsvrij-7nfqdm": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-oosterhout-mwknye": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-papendrecht-qjuyfg": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-pijnacker--tgpjk": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/dakkapel-pijnacker-nmjuia": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-prijzen-s7oyqy": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/dakkapel-prijzen-vergelijken-c4no5g": {
+    "vak": "aannemer",
+    "zeker": 0.74
+  },
+  "bedrijf/dakkapel-purmerend-hwdq-4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-reiniging-de-haan-jzt-vq": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/dakkapel-reiniging-noord-nederland-wc3xpq": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/dakkapel-renoveren-nl-v259rw": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-rhoon-v7mip0": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-ridderkerk-aq_qyi": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-rijnsburg-nnbppe": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-rijswijk-ykz8be": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-roosendaal-rhhtiq": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/dakkapel-sassenheim-etmla8": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/dakkapel-schiedam-ut8dzm": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-schoonhoven-0is9yi": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-sliedrecht-_unb0w": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-soest-nl-la_mwg": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-spijkenisse-bshhoq": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-tekening-fjvuby": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/dakkapel-tiel-psbmcc": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/dakkapel-tilburg-mtzfgo": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/dakkapel-totaal-jwoc8y": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/dakkapel-uithoorn-yakk4g": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-upazuq": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/dakkapel-utrecht-cbrr7o": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/dakkapel-utrecht-i863_o": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-veenendaal-xg0juw": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-velsen-qurth0": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/dakkapel-vlaardingen-npt-ec": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-voorburg-vi4xxs": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-voorhout-udijuy": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-voorschoten-lquyhi": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-waalwijk-ibafug": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-waddinxveen-01o2ac": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-warenhuis-ovby1e": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/dakkapel-warenhuis-q9sxgw": {
+    "vak": "aannemer",
+    "zeker": 0.75
+  },
+  "bedrijf/dakkapel-warmond-aalry8": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-wassenaar-rtljec": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-weesp-t8aqpc": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-wereld-c5ey4c": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapel-westland-bv-cmq7ic": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/dakkapel-wg-iuirks": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/dakkapel-woerden-gmsbxy": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-zaandam-hwmm_w": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-zaltbommel-wsatoy": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-zandvoort-rjbwz0": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-zeeland-gy3h70": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/dakkapel-zoetermeer-kod7pe": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-zoeterwoude-a8galk": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-zwijndrecht-0rkbgm": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakkapel-zwijndrecht-_3x2b8": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/dakkapel-zwolle-ppgw_y": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/dakkapeladvies-nl--drprk": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/dakkapelbedrijf-dakkapel-rotterdam-raxyo0": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/dakkapeldeal-nederland-b-v-4ygkpc": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/dakkapeldirect-bv-u1mr3y": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/dakkapellen-_unccs": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/dakkapellen-dakkapel-den-bosch-b-jnpa": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/dakkapellen-drenthe-traditioneel-geplaatste-dakkapel-ciacpo": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/dakkapellen-haarlem-dakkapel-aeaxxq": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/dakkapellen-maatje-y2vjpa": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/dakkapellen-modulair-a91n8g": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/dakkapellen-nu-dakkapellen-showroom-heerhugowaard-94lqem": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/dakkapelman-mangroepbv-u_dizm": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/dakkapelnaarwens-nl-_qib4y": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/dakkapeloffertes-tuuxpg": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/dakkapelplaatsenvergelijker-d-07jo": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/dakkapelreiniging-nl-l1y5uy": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/dakkapelwoerden-com-zcta8w": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/dakkwartier-rt_-by": {
+    "vak": "aannemer",
+    "zeker": 0.72
+  },
+  "bedrijf/daklekkage-nl-met-echte-24-uurs-service-d6-4gk": {
+    "vak": "aannemer",
+    "zeker": 0.69
+  },
+  "bedrijf/dako-kozijnen-kcwuhk": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/dakonderhoud-k-van-zundert-lyw0do": {
+    "vak": "onderhoud",
+    "zeker": 0.89
+  },
+  "bedrijf/dakonderhoud-stensen-f-42b8": {
+    "vak": "onderhoud",
+    "zeker": 0.73
+  },
+  "bedrijf/dakonderhoud-van-gogh-dakdekker-ede-t7glii": {
+    "vak": "onderhoud",
+    "zeker": 0.46
+  },
+  "bedrijf/dakopbouw-haarlem-bznuh4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dakotech-wr9j2c": {
+    "vak": "anders",
+    "zeker": 0.58
+  },
+  "bedrijf/dakpanleggers-urk-se-spm": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/dakpannen-medemblik-nl-na84bk": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/dakpanvernieuwing-van-dijk-5fbtow": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/dakpunt-daken-aplfq0": {
+    "vak": "aannemer",
+    "zeker": 0.45
+  },
+  "bedrijf/dakraam-assen-71vuru": {
+    "vak": "anders",
+    "zeker": 0.8
+  },
+  "bedrijf/dakraam-lelystad-5rcme8": {
+    "vak": "anders",
+    "zeker": 0.84
+  },
+  "bedrijf/dakraam-montage-m-kiers-mvnzyi": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/dakraam-steenbergen-adoblu": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/dakraamexpert-wagenaar-ly5k30": {
+    "vak": "anders",
+    "zeker": 0.78
+  },
+  "bedrijf/dakraamlimburg-wttqxi": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/dakraammontage-com-actoxm": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/dakraammontage-noord-x_dyyu": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/dakramennederland-onderdeel-van-dakcentrale-nederland-f9ehpw": {
+    "vak": "anders",
+    "zeker": 0.58
+  },
+  "bedrijf/dakrenovatie-en-kleinonderhoud-reinders--d-tku": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/dakrenovatie-mulder-tksmya": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/dakreparatie-nu-k6sqew": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/dakservice-boer-mgt7nk": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/dakservice-kolen-quf7ym": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/dakservice-landerd-d44izi": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/dakservice-rooftop-groningen-eq154m": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/dakservice-smeets-bq2wss": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/dakservice-vroegh-dakdekker-bussum-cbghtq": {
+    "vak": "anders",
+    "zeker": 0.58
+  },
+  "bedrijf/dakservice-vroegh-dakdekker-heemstede-kmrf3o": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/dakspecialist-brabant-zaqpvo": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/dakspecialist-mt-69cmys": {
+    "vak": "aannemer",
+    "zeker": 0.3
+  },
+  "bedrijf/dakspecialist-nederland-83h7ck": {
+    "vak": "aannemer",
+    "zeker": 0.23
+  },
+  "bedrijf/dakspecialist-pk-wih1ji": {
+    "vak": "parket",
+    "zeker": 0.57
+  },
+  "bedrijf/dakster-kdkzgc": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/daktec-meppel-hk1qje": {
+    "vak": "anders",
+    "zeker": 0.55
+  },
+  "bedrijf/daktechniek-achterhoek-1uy4je": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/daktechniek-assen-b-v-12jso8": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/daktechniek-gelderland-yphaus": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/daktechniek-midden-nederland-3slmwk": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/daktechniek-winterswijk-b-v-i1aakw": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/dakvast-dakdekkers--joalq": {
+    "vak": "aannemer",
+    "zeker": 0.44
+  },
+  "bedrijf/dakvensteratwork-b-v-mzxxsq": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/dakvenstermeesters-montage-keurmerk-jaymwu": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/dakvisie-kerkrade-nj3umu": {
+    "vak": "anders",
+    "zeker": 0.6
+  },
+  "bedrijf/dakwerk-_zzv1e": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/dakwerk-nederland-wlpode": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/dakwerken-john-geilen-3vvbc4": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/dakwerken-wim-hermsen-rkw-ky": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/dakxl-groep-b-v-bkpsx0": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/dakxpert-6curce": {
+    "vak": "aannemer",
+    "zeker": 0.45
+  },
+  "bedrijf/dam-bouw-ciszcu": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/dama-dakbedekkingen-ftnws0": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/dangremond-timmerwerken-xgcgoy": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/danibouw-ilym98": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/daniels-kunststof-kozijnen-oe0p2q": {
+    "vak": "anders",
+    "zeker": 0.64
+  },
+  "bedrijf/danmon-kunststof-kozijnen-vof-7s8d8c": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/daro-daktechniek-jyp31u": {
+    "vak": "anders",
+    "zeker": 0.34
+  },
+  "bedrijf/de-boer-steenwijk-b-v-aannemersbedrijf-npyvnq": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/de-bouw-baron-4acwkm": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/de-bouwspecialist-wes-w9qkfe": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/de-brug-timmerfabriek-son-b-v-jpyeo4": {
+    "vak": "anders",
+    "zeker": 0.43
+  },
+  "bedrijf/de-dakbaas-5u8-9w": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/de-dakdekker-in-harderwijk-1l4igk": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/de-dakdekker-mh_vpq": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/de-groot-dakwerken-zo7ihs": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/de-groot-kozijnen-b-v-hq80gw": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/de-jong-dakkapellen-av2xya": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/de-jong-kozijnen-yjgow8": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/de-jong-prefab-adnc1a": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/de-jong-timmer-en-aannemersbedrijf-b-v-amstelveen-pt9ffm": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/de-jongh-dak-en-bouwservice-bv-2d8qf0": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/de-kozijn-adviseurs-yhdmna": {
+    "vak": "aannemer",
+    "zeker": 0.44
+  },
+  "bedrijf/de-kozijn-heren-jbsizi": {
+    "vak": "aannemer",
+    "zeker": 0.68
+  },
+  "bedrijf/de-kozijnenboer-7eqdxs": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/de-kozijnenspecialist-bv-0iq1ug": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/de-kroon-prefab-b-v-ynvqqs": {
+    "vak": "aannemer",
+    "zeker": 0.76
+  },
+  "bedrijf/de-kruijf-bouw-7r3ycm": {
+    "vak": "aannemer",
+    "zeker": 0.74
+  },
+  "bedrijf/de-leeuw-dakrenovatie-mljf3o": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/de-olde-bouw-yox9rc": {
+    "vak": "aannemer",
+    "zeker": 0.33
+  },
+  "bedrijf/de-spaan-kozijnen-isolatie-renovatie-xc6ihe": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/de-verbinding-b-v-50lklq": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/de-verbinding-dakkapellen-garoac": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/de-vos-bouw-1fr_vg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/de-wijs-dakbedekkingen-brwiac": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/de-wit-konings-dakspecialist-1srumq": {
+    "vak": "anders",
+    "zeker": 0.31
+  },
+  "bedrijf/decodak-vsrusc": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/dekker-bouw-an6xfo": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/dekozijnenexpert-almere-kunststof-kozijnen-dakkapellen-zgm-ky": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/dekozijnenexpert-w4shl4": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/delux-dakkapellen-hhnyn4": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/den-bosch-dakkapel-dakkapellen-xfsgxg": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/den-hertog-reiniging-tdp4xc": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/denhil-kunststof-kozijnen-n-zxc0": {
+    "vak": "aannemer",
+    "zeker": 0.74
+  },
+  "bedrijf/derissen-glasgroep-b-v-glashandel-derissen-geocj0": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/deuts-bouw-en-timmerbedrijf-bv-0fzqgy": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/devos-projecten-jbelxw": {
+    "vak": "anders",
+    "zeker": 0.31
+  },
+  "bedrijf/dhk-kozijnen-kunststof-kozijnen-bphkca": {
+    "vak": "anders",
+    "zeker": 0.71
+  },
+  "bedrijf/diamo-realisatie-sittard-s8uulc": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/diamond-deuren-drc9f8": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/dienstverlening-xl-febldm": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/diepeveen-kunststof-kozijnen-4xmqbs": {
+    "vak": "anders",
+    "zeker": 0.46
+  },
+  "bedrijf/dijkshoorn-timmerwerken-hhulry": {
+    "vak": "parket",
+    "zeker": 0.36
+  },
+  "bedrijf/dijkstra-bouw-wierden-nyjb_y": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/direct-kozijnen-nd5vqg": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/direct-verduurzamen-xjmo04": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/dirk-van-der-zanden-dak-timmerwerken--u5dhs": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/dirk-vd-einden-bouw-onderhoud-wqww1e": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/djale-dak-en-onderhoud-srva4e": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/dk-afbouw-renovatie-b-v-g7koim": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/dk-dakkapellen-tlftmq": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/dkk-i-direct-kunststof-kozijnen-dgk918": {
+    "vak": "anders",
+    "zeker": 0.64
+  },
+  "bedrijf/dlr-vastgoedonderhoud-b-v-dakdekker-lelystad-laxcr8": {
+    "vak": "onderhoud",
+    "zeker": 0.45
+  },
+  "bedrijf/dmdakwerken-dakdekkers-t30nsw": {
+    "vak": "aannemer",
+    "zeker": 0.57
+  },
+  "bedrijf/dmtd-xcmq9y": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/dng-bouwers-lpirja": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/dobbenberg-thj0lk": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/doko-kunststof-kozijnen-en-dakkapellen-r3oaym": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/domburg-bodegraven-b-v-3lfbca": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/doorschor-b-v-mhzofk": {
+    "vak": "stukadoor",
+    "zeker": 0.48
+  },
+  "bedrijf/dordrecht-dakkapel-tj0fxi": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/dreamkozijnen-b-v-xteqvw": {
+    "vak": "aannemer",
+    "zeker": 0.48
+  },
+  "bedrijf/driessen-bv-bouw-en-timmerbedrijf-peter-q84q1u": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/ds-timmerwerken-sa7cpe": {
+    "vak": "anders",
+    "zeker": 0.29
+  },
+  "bedrijf/dt-kozijnen-tswpje": {
+    "vak": "anders",
+    "zeker": 0.71
+  },
+  "bedrijf/dubbeldam-glas-en-timmerwerk-projecten-j79f1a": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/duma-bouw-installatie-ybbsre": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/dumont-dakdekker-fooqc4": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/dunselman-bouw-en-onderhoud-j-r-qr0j8k": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/duokozijn-b-v-2sb8yq": {
+    "vak": "anders",
+    "zeker": 0.39
+  },
+  "bedrijf/duolux-iitroq": {
+    "vak": "anders",
+    "zeker": 0.24
+  },
+  "bedrijf/duran-dak-renovatie-onderhoud-lwblka": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/duurzaam-plus-ecj9om": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/dv-specialist-a87ueg": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/dvz-aannemersbedrijf-nlv0la": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/dw-kozijnen-tg-cii": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/dynami-bouwservice-qidgka": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/ecokozijnen-fyyxpo": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/eembouw-kwaliteitsdakkapellen-b-v-ujhsry": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/eerko-slagter-33ionw": {
+    "vak": "anders",
+    "zeker": 1.0
+  },
+  "bedrijf/efficient-dakonderhoud-b-v-dakdekker-veenendaal-4jvsqe": {
+    "vak": "onderhoud",
+    "zeker": 0.34
+  },
+  "bedrijf/egels-dakbedekking-bv-44fhic": {
+    "vak": "aannemer",
+    "zeker": 0.55
+  },
+  "bedrijf/eijkerbouw-b-v-de-betrouwbare-partner-voor-levering-van-uw-houten-kozijnen-m1y4su": {
+    "vak": "anders",
+    "zeker": 0.92
+  },
+  "bedrijf/eindhoven-dakkapel-xsaod8": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/elbertsen-totaalbouw-oczah0": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/emergo-prefab-303yn0": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/emku-bouw-kozijntechniek-7jboz8": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/en-bouw-b-v-u3tx-o": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/enrico-huizing-verbouwbedrijf-okr8me": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/enschede-dakkapel-dakkapellen-rxwzx8": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/erdo-noord-oost-technodak-qvl5xo": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/euregio-bouwonderneming-b-v-mejjji": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/excellent-dakonderhoud-92a6xy": {
+    "vak": "onderhoud",
+    "zeker": 0.65
+  },
+  "bedrijf/exclusief-dakkapel-4la14s": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/expat-renov8-zpotoa": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/ezar-bouw-en-onderhoud-ljblny": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/fa-eisinga-q3o7ny": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/falux-z1zojy": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/faro-timmerwerken-b-v-0dgayg": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/feenstra-dakbeheer-nst1qu": {
+    "vak": "aannemer",
+    "zeker": 0.26
+  },
+  "bedrijf/feitsma-dakwerken-r0d5iu": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/ferolux-nostalgische-dakramen-qfls2o": {
+    "vak": "anders",
+    "zeker": 0.86
+  },
+  "bedrijf/fick-timmerwerken-bv--vnfmi": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/fidesse-ryl5nu": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/firma-elderman-ue9n6k": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/firma-piola-dakkapellen-bolgoa": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/fixed-by-chris-fldhti": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/flevo-kozijnen-fabriek-b-v-oxt-ni": {
+    "vak": "anders",
+    "zeker": 0.89
+  },
+  "bedrijf/focus-kozijntechniek-uden-voor-al-uw-kunststof-kozijnen-deuren-en-ramen-oq1cua": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/fonbouw-services-1rpxri": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/fontaine-bouw-7kdy9e": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/forte-houtskeletbouw-mmz9vc": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/frame-dakkapellen-hjmtqq": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/framez-dakkapellen-oao6t4": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/franco-fonken-ici3jo": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/frank-duits-timmerwerken-j_rbsm": {
+    "vak": "parket",
+    "zeker": 0.47
+  },
+  "bedrijf/franken-dakkapellen-llu5ve": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/freds-dakwerken-zmicjm": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/fresjo-bouwmeesters-pdlxfo": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/fuldbouw-4_wbg0": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/fvh-timmerspecialist-3ami44": {
+    "vak": "anders",
+    "zeker": 0.43
+  },
+  "bedrijf/g-j-mastenbroek-i2o3fg": {
+    "vak": "parket",
+    "zeker": 0.4
+  },
+  "bedrijf/g-p-dakservice-fu7y2q": {
+    "vak": "anders",
+    "zeker": 0.61
+  },
+  "bedrijf/g-p-de-jong-timmeren-en-onderhoud-yza4vw": {
+    "vak": "aannemer",
+    "zeker": 0.31
+  },
+  "bedrijf/g-p-iqerh0": {
+    "vak": "aannemer",
+    "zeker": 0.55
+  },
+  "bedrijf/g-p-m-van-zon-9dvemc": {
+    "vak": "anders",
+    "zeker": 0.61
+  },
+  "bedrijf/g-van-den-ancker-frkqa0": {
+    "vak": "anders",
+    "zeker": 0.89
+  },
+  "bedrijf/gaasbeek-totaalbouw-ede-jv_tfq": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/garant-kozijnen-bv-24mwhs": {
+    "vak": "anders",
+    "zeker": 0.77
+  },
+  "bedrijf/gebr-lemmen-maatwerk-in-zink-v-o-f-3ejs0i": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/gebr-van-der-hulst-fxzouw": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/gebroeders-tillemans-b-v-d4g6ea": {
+    "vak": "anders",
+    "zeker": 0.57
+  },
+  "bedrijf/gelders-dakkapel-tzmzwm": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/gemeentehuis-ooststellingwerf-x9wdxg": {
+    "vak": "anders",
+    "zeker": 1.0
+  },
+  "bedrijf/ger-koerts-bv-grra5u": {
+    "vak": "anders",
+    "zeker": 0.38
+  },
+  "bedrijf/geurts-bouwelementen-pkio2q": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/gevel-dak-b-v-is2hco": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/geveldakkapellen-tjeu-van-de-gevel-nu1-qa": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/geveltechniek-zeeland-zfdxxe": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/geven-beheermaatschappij-b-v-pfm9ii": {
+    "vak": "anders",
+    "zeker": 0.89
+  },
+  "bedrijf/gh-muijs-bouw-ewbdia": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/gijsen-bouw-timmerwerken-b-v-_7odni": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/gj-dakkapellen-veafa8": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/gloudemans-kozijnen-zonwering-izuxae": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/gmr-bouwservice-8mi8wc": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/go-dak-en-gevel-oi9-zk": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/goedkoopstedakramen-nl-uat0ya": {
+    "vak": "anders",
+    "zeker": 0.91
+  },
+  "bedrijf/goeree-kozijnen-en-dakkapellen-p_msti": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/gonxxt-b-v-k37weo": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/green-line-b-v-_wowj0": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/greencleanpro-f7ljyc": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/groen-dakwerken-5xh7g0": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/groningen-dakkapel-5orqom": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/groos-hunter-bouw-b-v-mtpfhc": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/groot-kozijnen-zonwering-weru-q-lux-jbwytu": {
+    "vak": "anders",
+    "zeker": 0.46
+  },
+  "bedrijf/guan-timmerwerken-lwwkna": {
+    "vak": "parket",
+    "zeker": 0.34
+  },
+  "bedrijf/h-s-timmerwerken-facq7a": {
+    "vak": "parket",
+    "zeker": 0.66
+  },
+  "bedrijf/haarlem-dakkapel-gfidra": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/habrobouw-b-v-ws3ldo": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/hafra-bouwbedrijf-o7qdq4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/hagelstein-montage-tq2uxi": {
+    "vak": "anders",
+    "zeker": 0.38
+  },
+  "bedrijf/hagman-timmer-en-onderhoudsbedrijf-n9vq5c": {
+    "vak": "onderhoud",
+    "zeker": 0.69
+  },
+  "bedrijf/halderberge-deuren-kozijnen-bv-feghxy": {
+    "vak": "anders",
+    "zeker": 0.86
+  },
+  "bedrijf/hammbouw-berekenjedakkapel-udlcpe": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/handels-bouw-en-timmerwerk-g-hmf0": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/hannink-bouwkundig-tekenbureau-vnpktm": {
+    "vak": "anders",
+    "zeker": 0.94
+  },
+  "bedrijf/harskamp-dakdekkers-zonnepanelen-en-kleinbouw-hu86xa": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/hartog-dakkapellen-bfzwfk": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/havardakonderhoud-dlm95a": {
+    "vak": "onderhoud",
+    "zeker": 0.86
+  },
+  "bedrijf/havati-pyj-9c": {
+    "vak": "anders",
+    "zeker": 0.65
+  },
+  "bedrijf/haxa-plus-6zlt10": {
+    "vak": "anders",
+    "zeker": 0.66
+  },
+  "bedrijf/hc-bouwen-wo9-qy": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/hc-dak-en-geveltechniek-pzxzcq": {
+    "vak": "aannemer",
+    "zeker": 0.66
+  },
+  "bedrijf/hedico-_rhnk0": {
+    "vak": "anders",
+    "zeker": 0.33
+  },
+  "bedrijf/hegeraat-leidekkersbedrijf-l1e2ni": {
+    "vak": "tegel",
+    "zeker": 0.19
+  },
+  "bedrijf/heideman-bouw-xrlf4s": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/heijnen-bouwgroep-b-v-cdncvm": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/hendriksen-bouw-b-v-cj3ym4": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/henk-van-leeuwen-timmerwerken-gcx71a": {
+    "vak": "parket",
+    "zeker": 0.31
+  },
+  "bedrijf/henkodak-zqa87k": {
+    "vak": "aannemer",
+    "zeker": 0.67
+  },
+  "bedrijf/henny-s-totaalbouw-ics6zy": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/henry-van-der-veen-service-sqjjtg": {
+    "vak": "onderhoud",
+    "zeker": 0.88
+  },
+  "bedrijf/hero-dakkapellen-b-v--cl2ks": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/herwijnen-bouw-sa12ak": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/het-bouwhuys-qx7uvk": {
+    "vak": "anders",
+    "zeker": 0.23
+  },
+  "bedrijf/het-kozijnhuys-kunststof-kozijnen-zeeland-kunststof-dakkapellen-zeeland-hul9ha": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/het-kunststof-kozijn-16cu10": {
+    "vak": "anders",
+    "zeker": 0.67
+  },
+  "bedrijf/heuvel-bouw-cwiorc": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/heuvelrug-kozijnen-kunststof-kozijnen-xzeigi": {
+    "vak": "anders",
+    "zeker": 0.78
+  },
+  "bedrijf/hezemans-pejmw8": {
+    "vak": "stukadoor",
+    "zeker": 0.39
+  },
+  "bedrijf/hg-bouwtechniek-yg1m1y": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/hg-timmerwerken-e4u8wi": {
+    "vak": "aannemer",
+    "zeker": 0.71
+  },
+  "bedrijf/hgd-boerboom-9stqoq": {
+    "vak": "parket",
+    "zeker": 0.29
+  },
+  "bedrijf/hk-vastgoed-onderhoud-amsterdam-b39axg": {
+    "vak": "aannemer",
+    "zeker": 0.75
+  },
+  "bedrijf/hk-vastgoed-onderhoud-haarlem-ybanvo": {
+    "vak": "aannemer",
+    "zeker": 0.67
+  },
+  "bedrijf/hl-bouw-en-montage-inq4gm": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/hm-dakkapellen-0xarzk": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/hofman-kozijnen-ngklny": {
+    "vak": "anders",
+    "zeker": 0.59
+  },
+  "bedrijf/hofstra-dakwerken-rd6its": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/hogazon-bv-gfuhng": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/holkamp-dakwerken-lxdmsq": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/hollandia-dakkapellen-vestiging-bleiswijk-umdmjc": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/hollandia-dakkapellen-vestiging-cruquius-bp42ai": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/hollandia-dakkapellen-vestiging-roosendaal-ftw-qs": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/hollands-totaal-bouw-s-p2jk": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/home-restyle-7rfvz4": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/honra-dakkapellen-qaobsq": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/hoogland-dakwerken-1la8f8": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/hopman-daken-fcsn7q": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/horizon-dakkapellen-ak8oea": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/horst-renovatie-b-v-kunststof-kozijnen-enschede-umc1fk": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/horsten-kozijnen-hznrii": {
+    "vak": "anders",
+    "zeker": 0.76
+  },
+  "bedrijf/hout-bouw-wijchen-lwzdyw": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/houtbouw-liessel-b-v-qe4vim": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/houtbouw-zeeland-v-o-f-0fj7sk": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/houthandel-van-der-heijden-buitenleven-van-der-heijden-cmigkw": {
+    "vak": "anders",
+    "zeker": 0.92
+  },
+  "bedrijf/houtlook-dakkapel-leiden-dakkapel-upgba4": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/houtvinding-hy2pqm": {
+    "vak": "parket",
+    "zeker": 0.7
+  },
+  "bedrijf/hs-dakwerken-8tcn-g": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/htc-timmerwerken-bv-7e8do0": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/huiskes-prefab-b-v-zmkv5e": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/huize-reuver-deuaqa": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/huko-bouwbedrijf-enschede-khl4l4": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/hummel-wooncomfort-kozijnen-zndlpg": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/hummelink-bouw-mga0am": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/huntinkbouw-bouwbedrijf-aanbouw-kozijnen-verbouw-mslzzm": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/hvdz-bouw-nmrjog": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/ideaal-dakkapel-cgale4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/ideaal-kozijn-b-v-vvfe8k": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/ijsselstreek-daktechniek-vkbges": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/ikwilmeerruimte-nl-w4xgaw": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/imbrego-b-v-y6w5bg": {
+    "vak": "aannemer",
+    "zeker": 0.42
+  },
+  "bedrijf/imperium-dakbeheer-dblqpm": {
+    "vak": "onderhoud",
+    "zeker": 0.5
+  },
+  "bedrijf/in-aanbouw-daat20": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/in-weelde-5nbbae": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/inhout-mdgpiy": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/inno-top-asten-xzyiby": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/innovidak-b-v-etpd60": {
+    "vak": "anders",
+    "zeker": 0.54
+  },
+  "bedrijf/iso-kozijnen-kunststof-en-aluminium-kozijnen-jkic3s": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/iso-reno-6ulyqg": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/isodu-kunststof-kozijnen-gpkeui": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/iwrap-pgjt9u": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/j-hendriks-bouw-en-timmerwerken-e6llke": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/j-hoogendoorn-timmer-en-onderhoudsbedrijf-6cwqlk": {
+    "vak": "onderhoud",
+    "zeker": 0.37
+  },
+  "bedrijf/j-j-timmerwerken-6jkh6w": {
+    "vak": "aannemer",
+    "zeker": 0.39
+  },
+  "bedrijf/j-k-dakwerken-itaodg": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/j-l-schone-ramen-weddp4": {
+    "vak": "anders",
+    "zeker": 0.57
+  },
+  "bedrijf/j-m-van-der-sluis-pfl87q": {
+    "vak": "anders",
+    "zeker": 0.79
+  },
+  "bedrijf/j-van-zundert-klusbedrijf-xjvlee": {
+    "vak": "aannemer",
+    "zeker": 0.34
+  },
+  "bedrijf/jack-de-boer-qfu13o": {
+    "vak": "anders",
+    "zeker": 0.9
+  },
+  "bedrijf/jacobs-daken-helmond-mug8im": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/jago-bouw-hnnuww": {
+    "vak": "aannemer",
+    "zeker": 0.71
+  },
+  "bedrijf/jan-de-klerk-timmerwerk-sjwffm": {
+    "vak": "parket",
+    "zeker": 0.48
+  },
+  "bedrijf/jan-mulder-bouw-38ezo8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/jansen-dak-herstel-bcvma4": {
+    "vak": "anders",
+    "zeker": 0.59
+  },
+  "bedrijf/jansma-burdaard-b-v-kunststof-kozijnen-dakkapellen-5-g_1u": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/jarino-modulaire-bouwsystemen-vvffzi": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/jasper-gerits-timmerwerken-1hdovi": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/jbs-bouw-en-aannemingsbedrijf-bfuzbw": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/jd-correct-r4wxpm": {
+    "vak": "anders",
+    "zeker": 0.12
+  },
+  "bedrijf/jdvtechniek-1vxl3i": {
+    "vak": "loodgieter",
+    "zeker": 0.42
+  },
+  "bedrijf/jedakkapel-ncsug8": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/jeha-totaalbouw--9tj80": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/jk-timmerwerk-allround-oubnom": {
+    "vak": "aannemer",
+    "zeker": 0.39
+  },
+  "bedrijf/jm-bouw-en-timmerwerken-xgrd_8": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/jm-dak-en-kozijn-knev14": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/jmdbouw-kunststof-kozijnen-rotterdam-dhfa8m": {
+    "vak": "aannemer",
+    "zeker": 0.72
+  },
+  "bedrijf/joey-ligtvoet-stucadoorswerken-4qpt5k": {
+    "vak": "stukadoor",
+    "zeker": 1.0
+  },
+  "bedrijf/john-schoeman-bouw-en-onderhoudsbedrijf-fyaa7s": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/jongsma-dkfhjw": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/jonk-tol-timmerwerken-ou_jfy": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/jordens-kunststoffen-bv-gwpk_w": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/jp-bouw-haarlem-bok4es": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/jp-goes-ozv_y4": {
+    "vak": "anders",
+    "zeker": 0.68
+  },
+  "bedrijf/jr-kunststof-kozijnen-wkj6ai": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/jt-bouw-timmerwerken-mr3b9c": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/jt-dak-zvrt0w": {
+    "vak": "aannemer",
+    "zeker": 0.54
+  },
+  "bedrijf/jtk-timmerwerken-pnxm5s": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/jv-roofservice-dakdekker-middelburg-owwots": {
+    "vak": "anders",
+    "zeker": 0.43
+  },
+  "bedrijf/jvp-timmerwerk-4owl4o": {
+    "vak": "parket",
+    "zeker": 0.53
+  },
+  "bedrijf/jvw-glazenwasserij-schoonmaakbedrijf-uvmul0": {
+    "vak": "onderhoud",
+    "zeker": 0.95
+  },
+  "bedrijf/jwk-bouw-omafs4": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/k-de-jong-aannemersbedrijf-b-v-rjeel0": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/k-visser-dakwerken-qrbqzs": {
+    "vak": "aannemer",
+    "zeker": 0.48
+  },
+  "bedrijf/ka-dak-renovaties-evjksw": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/kamsteeg-aanneming-en-onderhoud-b-v-mzc4vo": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/kbav-xx-gjw": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/kbrt-bouw-bv-lkubju": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/keeman-dak-zink-p7tyhw": {
+    "vak": "aannemer",
+    "zeker": 0.37
+  },
+  "bedrijf/keeris-kunststoframen-7nuwqc": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/kempkesbouw-lzmfvm": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/kennemerland-dakkapellen-lgp7fm": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/kkfh-edu4ew": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/klaassen-dakkapellen-dgdsfe": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/klinkende-werken-oyycey": {
+    "vak": "anders",
+    "zeker": 0.29
+  },
+  "bedrijf/klok-dakkapellen-qqmc0k": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/klusbedrijf-dennis-akkerman-ig4sm4": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/klusbedrijf-heidstra-bmnhog": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/klusbedrijf-hein-van-hoof-zlcwdc": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/klusbedrijf-m-van-dam-urgw7s": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/klusbedrijf-paridaans-_nck5a": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/klusbedrijf-rb-3llxfg": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/klusbedrijf-van-der-avoird-vi5gaa": {
+    "vak": "aannemer",
+    "zeker": 0.35
+  },
+  "bedrijf/klusman-koenen-2ougoq": {
+    "vak": "aannemer",
+    "zeker": 0.74
+  },
+  "bedrijf/klusmanschap-dakramen-owv0uu": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/klusminuten-nl-m11gwq": {
+    "vak": "aannemer",
+    "zeker": 0.71
+  },
+  "bedrijf/klusperuur-nl-nzei7y": {
+    "vak": "aannemer",
+    "zeker": 0.42
+  },
+  "bedrijf/klussen-en-renovatiebedrijf-breur-tihvsy": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/klussenbedrijf-j-velderman-xudxs4": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/klussenbedrijf-leo-den-boer-v-o-f-wz951w": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/klussenbedrijf-r-mathijsen-0l3nas": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/klussenbedrijf-wa-ekiae4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/klussenier-erwin-van-dijken-grhdlk": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/kme-bouw-en-kozijnen-b-v-ia40oa": {
+    "vak": "aannemer",
+    "zeker": 0.82
+  },
+  "bedrijf/knipping-friesland-q55rfy": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/knipping-kozijnen-deuren-dakkapellen-iyjdqg": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/knipping-twente-ocdris": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/knipping-zeeland-ytfrxs": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/knuif-bouwcombinatie-b-v-fbev9e": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/kokall-kozijnen-en-bouw-lw6juu": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/komfort-kozijnen-_key0i": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/koning-bouw-en-onderhoud-bouwbedrijf-giexta": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/koning-kozijn-zx7tzs": {
+    "vak": "anders",
+    "zeker": 0.82
+  },
+  "bedrijf/koning-prefab-j6qfyo": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/koss-kozijnen-a7wbx4": {
+    "vak": "aannemer",
+    "zeker": 0.44
+  },
+  "bedrijf/kosten-uitbouw-luarfu": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/koster-dakkapellen-wag6l0": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/kozijn-adviseur-bv-imfl7q": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/kozijn-en-gevel-g8hinq": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/kozijn-kompas-iir8ic": {
+    "vak": "aannemer",
+    "zeker": 0.54
+  },
+  "bedrijf/kozijn-noord-agta1c": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/kozijn-service-totaal-kst-kunststof-kozijnen-wierden-0vrqry": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/kozijncenter-ede-d5brn0": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/kozijndeal-nederland-b-v-r-adto": {
+    "vak": "anders",
+    "zeker": 0.8
+  },
+  "bedrijf/kozijnen-direkt-ugtwao": {
+    "vak": "anders",
+    "zeker": 0.4
+  },
+  "bedrijf/kozijnen-online-b-v-xmg2m8": {
+    "vak": "anders",
+    "zeker": 0.84
+  },
+  "bedrijf/kozijnen-sale-bv-hemhum": {
+    "vak": "anders",
+    "zeker": 0.86
+  },
+  "bedrijf/kozijnenbouw-gs7pnu": {
+    "vak": "anders",
+    "zeker": 0.39
+  },
+  "bedrijf/kozijnshop-nl-5bt9k4": {
+    "vak": "anders",
+    "zeker": 0.76
+  },
+  "bedrijf/kozion-eindhoven-2pcng4": {
+    "vak": "anders",
+    "zeker": 0.34
+  },
+  "bedrijf/kozion-s-hertogenbosch-6t5tmw": {
+    "vak": "parket",
+    "zeker": 0.32
+  },
+  "bedrijf/kozion-tilburg-xtgmpm": {
+    "vak": "parket",
+    "zeker": 0.33
+  },
+  "bedrijf/kraaij-aannemers-b-en-u-b-v-146nko": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/krom-timmer-en-bouwbedrijf-8zhqre": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/kroon-kozijn-arnhem-kunststof-kozijnen-mfttvk": {
+    "vak": "anders",
+    "zeker": 0.67
+  },
+  "bedrijf/kroon-kozijn-steenwijk-kunststof-kozijnen-jpcro0": {
+    "vak": "anders",
+    "zeker": 0.6
+  },
+  "bedrijf/kroon-kozijn-vechtdal-kunststof-kozijnen-uiyk1q": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/ks-bouw-b-v-6sopgs": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/kth-bouw-d-wbh4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/kuenen-bouw-bv-tgwrhu": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/kuenen-dakkapel-cedk_a": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/kuijsters-kozijnen-wesvtg": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/kuipers-installatiebedrijf-3-yoqa": {
+    "vak": "loodgieter",
+    "zeker": 0.84
+  },
+  "bedrijf/kuipers-installatiebedrijf-uhfkdw": {
+    "vak": "loodgieter",
+    "zeker": 0.86
+  },
+  "bedrijf/kunststof-kozijn-noord-holland-bv-xxlwam": {
+    "vak": "aannemer",
+    "zeker": 0.55
+  },
+  "bedrijf/kunststof-kozijnen-het-hogeland-oevzk4": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/kunststof-kozijnen-nuenen-adczem": {
+    "vak": "anders",
+    "zeker": 0.66
+  },
+  "bedrijf/kunststof-kozijnen-steenbergen-brhaaw": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/kunststofhuis-waterland-oovrvo": {
+    "vak": "anders",
+    "zeker": 0.4
+  },
+  "bedrijf/kupro-xo5e9y": {
+    "vak": "anders",
+    "zeker": 0.31
+  },
+  "bedrijf/kura-gmumlg": {
+    "vak": "anders",
+    "zeker": 0.27
+  },
+  "bedrijf/kura-montfort-b-v-724u5a": {
+    "vak": "anders",
+    "zeker": 0.28
+  },
+  "bedrijf/kuramo-kunststof-kozijnen-eetsxc": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/kwaliteitsbouw-kroodsma-1_rvao": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/laan-kunststof-aluminium-dwgkg4": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/lammers-renovatie-kunststof-kozijnen-en-gevelbekleding-1vjq0y": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/lardenoye-dakwerken-smouse": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/lau-van-der-zanden-machinaal-timmerbedrijf-kozijnen-deuren-en-ramen-h-ry7m": {
+    "vak": "anders",
+    "zeker": 0.81
+  },
+  "bedrijf/leemrijse-dak-en-wandtechniek-b-v-dakbedekking-gabcye": {
+    "vak": "aannemer",
+    "zeker": 0.45
+  },
+  "bedrijf/leeuwarden-dakkapel-leeuwardendakkapel-v2ssoy": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/legerstee-timmerwerken-teu0z4": {
+    "vak": "aannemer",
+    "zeker": 0.42
+  },
+  "bedrijf/lekdetectie-lekkageservice-van-gerven-avgziy": {
+    "vak": "loodgieter",
+    "zeker": 0.46
+  },
+  "bedrijf/lekk-b-v-yvxjau": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/lelie-dakbedekkingen-kichhy": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/lerna-laez4w": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/lichtstad-bouwgroep-x0rlak": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/liemers-kozijnen-qqvycg": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/limburg-dakdekker-dakrenovatie-2dl4pa": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/linex-prefab-daksystemen-bv-zor7qc": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/ll-bouw-uz_wpi": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/lofta-dakkapellen-0ig4ye": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/lofta-dakkapellen-fpd3be": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/lofta-dakkapellen-sdzoim": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/loodgietersbedrijf-van-der-meijde-o2obrc": {
+    "vak": "loodgieter",
+    "zeker": 1.0
+  },
+  "bedrijf/lumax-julaua": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/luxbox-belevingscentrum-ede-rvntdo": {
+    "vak": "anders",
+    "zeker": 0.55
+  },
+  "bedrijf/luxbox-bv-y0vvkm": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/m-brakkee-bmjzvs": {
+    "vak": "anders",
+    "zeker": 0.79
+  },
+  "bedrijf/m-f-kleijn-bouw-pitcv0": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/m-j-schilderwerken-onderhoud-zxsedk": {
+    "vak": "schilder",
+    "zeker": 1.0
+  },
+  "bedrijf/m-kaan-totaalbouw-b-v-cotmjm": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/m-m-schenk-bouwbedrijf-bp5l7a": {
+    "vak": "aannemer",
+    "zeker": 0.69
+  },
+  "bedrijf/m-m-timmerwerken-b7jadq": {
+    "vak": "parket",
+    "zeker": 0.4
+  },
+  "bedrijf/maat-bouwbedrijf-sehef8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/maat-dakkapellen-b-v-m1o79i": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/maatgarant-keralit-gevel-dakrandbekleding-iparw8": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/machinaal-timmerbedrijf-maas-adfyq8": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/machinaal-timmerbedrijf-van-der-heijden-ngu4pg": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/machinaal-timmerbedrijf-van-der-linden-bv-veeqgq": {
+    "vak": "anders",
+    "zeker": 0.57
+  },
+  "bedrijf/maik-megens-totaalbouw-jxhel8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/makker-glashandel-en-glaszetter-svmkhc": {
+    "vak": "anders",
+    "zeker": 0.84
+  },
+  "bedrijf/mammoet-bouw-bouwbedrijf-oldenzaal-pn0qvg": {
+    "vak": "aannemer",
+    "zeker": 0.82
+  },
+  "bedrijf/manning-dakbedekking-b-v-8ksbye": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/marci-totaalbouw-agznkw": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/maree-aanneming-b-v-gfxzpo": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/markant-kozijnen-npaubk": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/marku-daktotaal-b-v-ljz_ui": {
+    "vak": "anders",
+    "zeker": 0.15
+  },
+  "bedrijf/marsmans-technical-solutions-sxftgk": {
+    "vak": "anders",
+    "zeker": 0.37
+  },
+  "bedrijf/martens-dakbedekkingen-b-v-tcj61w": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/martien-geeven-dakdekkersbedrijf-en-dakgotenrenovatie-b-v-bhzdaa": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/martijn-hoekstra-schilderwerken-miwgou": {
+    "vak": "schilder",
+    "zeker": 1.0
+  },
+  "bedrijf/martijn-kozijn-5h_pzs": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/martijn-kozijn-asten-nuxh0w": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/masters-dakbedekkingen-b-v-_dcvds": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/mbouw-lochem-5n5qu0": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/md-dak-klusbedrijf-htb02m": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/mdl-maatwerk-dak-en-timmerwerken-usc46a": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/meer-kunststof-kozijnen-en-dakkapellen-gg7xe4": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/meer-woonruimte-nl-fhnjim": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/megens-montage-service-dnwt00": {
+    "vak": "aannemer",
+    "zeker": 0.72
+  },
+  "bedrijf/melis-lenohs": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/mentbouw-pr0c-k": {
+    "vak": "stukadoor",
+    "zeker": 0.5
+  },
+  "bedrijf/metkozijn-kunststof-kozijnen-deuren-en-zonweringen-pwhoze": {
+    "vak": "anders",
+    "zeker": 0.59
+  },
+  "bedrijf/metten-bouw-uaaejc": {
+    "vak": "aannemer",
+    "zeker": 0.57
+  },
+  "bedrijf/meulendijks-dakwerken-bv-vq1ck8": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/mevo-kozijnen-en-zonwering-sh-7ne": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/middelburg-dakkappe-4d-f9g": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/mijndaglicht-nl-bv-zktm0i": {
+    "vak": "anders",
+    "zeker": 0.58
+  },
+  "bedrijf/mitch-dakwerken-rksa1k": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/mk-montage-d9gr_k": {
+    "vak": "aannemer",
+    "zeker": 0.76
+  },
+  "bedrijf/mk-timmerservice-fj3gki": {
+    "vak": "parket",
+    "zeker": 0.68
+  },
+  "bedrijf/mk-windows-j3zbre": {
+    "vak": "anders",
+    "zeker": 0.86
+  },
+  "bedrijf/mkg-design-tngfn4": {
+    "vak": "anders",
+    "zeker": 0.29
+  },
+  "bedrijf/mlb-daktechniek-woebqg": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/mlb-timmerwerken-jlyysc": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/montage-en-onderhoudsbedrijf-leen-turken-djzpuk": {
+    "vak": "onderhoud",
+    "zeker": 0.82
+  },
+  "bedrijf/montagers-bouw-aluminium-en-kunststof-kozijnen-deuren-dakkapel-gevelbekleding-en-renovatie-yeint4": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/montis-bouw-jzcsl4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/mr-dakdekker-hengelo-g1jcmc": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/msbouw-rozenburg-fp80pw": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/msd-schilderwerken-tlnh-4": {
+    "vak": "schilder",
+    "zeker": 0.75
+  },
+  "bedrijf/msn-kunststof-kozijnen-pftgxy": {
+    "vak": "anders",
+    "zeker": 0.41
+  },
+  "bedrijf/mt-dak-en-gevelbouw-qyir54": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/mulder-kunststof-kozijnen-b-v-sfxb04": {
+    "vak": "anders",
+    "zeker": 0.41
+  },
+  "bedrijf/mulder-mulder-dakkapellen-b-v-g8vttm": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/mulderijbouw-f6vwoo": {
+    "vak": "aannemer",
+    "zeker": 0.76
+  },
+  "bedrijf/multi-kozijn-spakenburg-sukdri": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/mv-kozijn-swj5ak": {
+    "vak": "anders",
+    "zeker": 0.82
+  },
+  "bedrijf/mv-totaalbouw-tnlplu": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/mvl-dakwerken-wnplrm": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/n1-totaalbouw-im4bxe": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/nbtimmerwerken-6edoze": {
+    "vak": "aannemer",
+    "zeker": 0.68
+  },
+  "bedrijf/nederlandse-dakkapellen-b-v-yxn9tc": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/ng-bouw-h-i-ambacht-52uzfu": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/nh-dak-lekkages-3ndvze": {
+    "vak": "aannemer",
+    "zeker": 0.31
+  },
+  "bedrijf/nieuwekozijnen-l-sgo0": {
+    "vak": "aannemer",
+    "zeker": 0.67
+  },
+  "bedrijf/nieuwkoop-timmerwerken-dakbedekking-rihc-o": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/nijdak-b-v-utelxe": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/nijssen-dakwerken-9t7ngm": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/nk-dakwerken-vj7ome": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/nok-bouwadvies-bv-c2mmd4": {
+    "vak": "anders",
+    "zeker": 0.82
+  },
+  "bedrijf/noord-holland-dakkapellen-m-bfgw": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/noord-wester-dakkapellen-splbfs": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/nooyen-aannemersbedrijf-ccsiuy": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/offra-bv-5jtf-a": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/onderhoud-montage-dokkum-b-v-jquqtu": {
+    "vak": "onderhoud",
+    "zeker": 0.92
+  },
+  "bedrijf/onderhoudsbedrijf-serge-smit-cnm0km": {
+    "vak": "onderhoud",
+    "zeker": 0.43
+  },
+  "bedrijf/onderhoudsbedrijf-van-den-brink-v-o-f-bu0qgy": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/onderhoudsbedrijf-van-esch-obqyda": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/opweg-kozijn-en-geveltechniek-b-v-bbtohk": {
+    "vak": "anders",
+    "zeker": 0.62
+  },
+  "bedrijf/ouwehand-bouw-gorinchem-bv-qrg4y4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/oz-kunststof-aluminium-kozijnen-yahi-8": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/p-a-bouw-b-v-nvyhb8": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/p-j-van-leuken-dakwerken-ztuazo": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/p-w-hak-timmerwerken-bee9ai": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/pakro-dakspecialist-lswvs0": {
+    "vak": "stukadoor",
+    "zeker": 0.24
+  },
+  "bedrijf/panman-5qkpik": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/pasbouw-vqrdyw": {
+    "vak": "anders",
+    "zeker": 0.33
+  },
+  "bedrijf/pascaru-bouwbedrijf-sh6df4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/patrick-beenkens-dakwerken-_vernk": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/pawa-timmerwerken-xjrgv8": {
+    "vak": "aannemer",
+    "zeker": 0.34
+  },
+  "bedrijf/peek-dakbedekking-g85etc": {
+    "vak": "aannemer",
+    "zeker": 0.48
+  },
+  "bedrijf/pennings-bouw-ontwikkeling-yu2wse": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/perbouw-kozijnen-en-dakkapelen-specialist-dkwoim": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/perfect-dak-nederland-b-v-ph_nhk": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/perfect-dak-nederland-b-v-r1mm5q": {
+    "vak": "aannemer",
+    "zeker": 0.47
+  },
+  "bedrijf/perfect-dakkapellen-dakkapel-eindhoven-dog_8g": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/perfect-dakkapellen-prefab-dakkapellen-yqg-tu": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/perfect-glaszetters-kozijn-en-montagebedrijf-sedugu": {
+    "vak": "anders",
+    "zeker": 0.55
+  },
+  "bedrijf/perfect-totaalbouw-bv-fz2i4m": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/perodaktechniek-bv-ysmylg": {
+    "vak": "loodgieter",
+    "zeker": 0.24
+  },
+  "bedrijf/peters-dak-technieken-b-v-tlpzb8": {
+    "vak": "stukadoor",
+    "zeker": 0.42
+  },
+  "bedrijf/pex-dakbedekkingen-bv-rndmui": {
+    "vak": "anders",
+    "zeker": 0.58
+  },
+  "bedrijf/pinckers-dakkapellen-wti8km": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/plusgroen-hhp9dg": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/pms-bouw-s3kegi": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/polydak-lwibbc": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/polygoot-tnu9kw": {
+    "vak": "anders",
+    "zeker": 0.33
+  },
+  "bedrijf/polystyle-polyester-dakkapellen-frthqa": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/polyworkx-b-v-bzvwzu": {
+    "vak": "aannemer",
+    "zeker": 0.45
+  },
+  "bedrijf/postema-dakkapellen-b-v-urk0vc": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/postma-kunststof-kozijnen-xudgzk": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/pranger-kozijnen-a1v6xg": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/predakkapel-h8x0uc": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/prefab-amsterdam-dakopbouw-hzqddk": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/prefab-bouw-zeeland-mtzkn4": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/prefab-dakkapellen-bv-ldalxu": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/prefab-gelderland-pnoe7m": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/prefab-haarlem-lrm9ee": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/prefabbv-wg_txi": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/prefabkap-7yjrci": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/prefabxpert-kvje-g": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/prefatech-4xzula": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/prestobouw-b-v-8kossw": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/primodak-dakdekkers-lytyki": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/pro-dakonderhoud-aqq_xy": {
+    "vak": "onderhoud",
+    "zeker": 0.72
+  },
+  "bedrijf/pro-duurzaam-dakwerken-2dtimi": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/probouw-leiden-e4adrg": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/prodak-montage--ulzzo": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/prof-daken-constructies-4_3wly": {
+    "vak": "aannemer",
+    "zeker": 0.68
+  },
+  "bedrijf/profidakkapellen-h-n-x4": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/profit-prefab-dakkapellen-eh6m3a": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/pronk-dakkapellen-edv4ru": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/pz-bouw-timmerwerken-tj_xvg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/quaedvlieg-timmerwerken-fzxhgg": {
+    "vak": "parket",
+    "zeker": 0.55
+  },
+  "bedrijf/r-goorman-timmerwerken-oa4ppa": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/r-m-bouwcare-u7mpue": {
+    "vak": "aannemer",
+    "zeker": 0.82
+  },
+  "bedrijf/r-m-dakrenovaties-m_w3m4": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/r-t-kunststof-perpre": {
+    "vak": "anders",
+    "zeker": 0.41
+  },
+  "bedrijf/r-van-amen-timmer-en-bouwbedrijf-_6idqy": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/raadsveld-kunststof-kozijnen-xxvfmi": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/raamtechniek-zwiers-b-v-xowz_a": {
+    "vak": "anders",
+    "zeker": 0.68
+  },
+  "bedrijf/ramen-4u-b-v-verkoop-montage-van-raam-en-deurkozijnen-en-dakkapellen-37bdn0": {
+    "vak": "aannemer",
+    "zeker": 0.44
+  },
+  "bedrijf/ramenfabriek-op-t-hoog-purmerend-ftzz6u": {
+    "vak": "anders",
+    "zeker": 0.65
+  },
+  "bedrijf/rams-metsel-en-tegelwerken-xw1az0": {
+    "vak": "tegel",
+    "zeker": 0.99
+  },
+  "bedrijf/rayen-timmerwerken-montage-timmerman-boekel-noord-brabant--b9pwg": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/rb-daktechniek-rxery4": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/rdv-dak-dakwerkzaamheden-ar38fw": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/reinigingsbedrijf-de-laat-arhxeo": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/reintjes-glasbewassing-bedrijfsdiensten-vlnum8": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/reja-bouw-timmerbedrijf--cnxp4": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/remco-roosendaal-timmerwerken-h5swts": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/remco-van-der-beek-renovaties-kjzkvs": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/renato-volpe-schilderwerken-geunwo": {
+    "vak": "schilder",
+    "zeker": 1.0
+  },
+  "bedrijf/rene-pisters-dakwerken-b-v-ewt4to": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/reneko-kozijnen--t4iio": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/reno-totaalbouw-6ahjw0": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/renobaat-gijcm0": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/renobouw-nl-en-dezolderspecialist-nl-3t3z2o": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/renoplan-kozijnen-zcy1du": {
+    "vak": "aannemer",
+    "zeker": 0.44
+  },
+  "bedrijf/renovatie-tivo-bouw-en-ontwikkeling-jbvmvg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/rf-kunststof-kozijnen-xlij34": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/rh-timmerwerken-inbouwkasten-kast-op-maat-laten-maken-dakkapel-renovatie-mmowsk": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/riant-kozijnen-nryvro": {
+    "vak": "anders",
+    "zeker": 0.75
+  },
+  "bedrijf/ribouw-5acnai": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/rico-dak-en-timmerwerken-ft-7cu": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/ridders-montage-ukgc7g": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/rietdekkersbedrijf-van-der-heijden-thwxym": {
+    "vak": "anders",
+    "zeker": 0.77
+  },
+  "bedrijf/rifra-mpapvu": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/rijkenberg-bouw-13u5e4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/rijnders-verbouw-vcpf5o": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/rijnland-kozijnen-biq5ww": {
+    "vak": "anders",
+    "zeker": 0.75
+  },
+  "bedrijf/rl-dakkapel-mhdow4": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/rnt-onderhoud-dqp0vw": {
+    "vak": "onderhoud",
+    "zeker": 1.0
+  },
+  "bedrijf/robova-bqzjh8": {
+    "vak": "aannemer",
+    "zeker": 0.57
+  },
+  "bedrijf/roli-montage-en-renovatie-5pqqfq": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/rooijendijk-bouw-cuijk-j4qw50": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/rootselaar-diensten-van-coxicy": {
+    "vak": "onderhoud",
+    "zeker": 0.59
+  },
+  "bedrijf/rori-kozijnen-vmgq54": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/rosario-kozijnen-9menui": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/rotgans-dakwerken-b-v-ivrk2u": {
+    "vak": "aannemer",
+    "zeker": 0.45
+  },
+  "bedrijf/rotterdam-dakkapel-7fq8v0": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/rotterdam-dakkapel-eh4-fe": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/rovalux-oiul9u": {
+    "vak": "anders",
+    "zeker": 0.32
+  },
+  "bedrijf/roy-hartemink-bouw-montage-aa6ke4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/royaal-kozijnen-qxznnc": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/rozendaal-bouwbedrijf-qu9bm4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/rozende-_hdwje": {
+    "vak": "anders",
+    "zeker": 0.64
+  },
+  "bedrijf/rt-daken-2btk7a": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/rubiotech-vorozm": {
+    "vak": "anders",
+    "zeker": 0.54
+  },
+  "bedrijf/rudigro-beheer-b-v-x2dkue": {
+    "vak": "anders",
+    "zeker": 0.35
+  },
+  "bedrijf/ruiter-dakkapellen-dealer-vestiging-leeuwarden-phdzmo": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/ruiter-dakkapellen-hoofdkantoor-fabriek-3idi6q": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/ruiter-dakkapellen-vestiging-alkmaar-kz_ltq": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/ruiter-dakkapellen-vestiging-barendrecht-frquy4": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/ruiter-dakkapellen-vestiging-cruquius-ypmhg0": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/ruiter-dakkapellen-vestiging-eemnes-infgia": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/ruiter-dakkapellen-vestiging-eindhoven-pnavye": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/ruiter-dakkapellen-vestiging-houten-zr1khy": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/rutten-dakbedekkingen-oydqcq": {
+    "vak": "aannemer",
+    "zeker": 0.45
+  },
+  "bedrijf/ruud-smolenaers-timmerwerken-tkowq4": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/rvk-timmer-bouwbedrijf-b-v-2ivsfw": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/rvr-bouw-timmerwerken-oiq4sw": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/rvr-installatietechniek-gwxkwk": {
+    "vak": "loodgieter",
+    "zeker": 0.67
+  },
+  "bedrijf/rvs-bouw-mkqbfc": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/rw-de-dakkapellenspecialist-gq_cd4": {
+    "vak": "aannemer",
+    "zeker": 0.83
+  },
+  "bedrijf/s-berende-timmerwerken-iy5e5s": {
+    "vak": "parket",
+    "zeker": 0.36
+  },
+  "bedrijf/s-t-a-m-kozijnen-kunstof-kozijnen-horren-rolluiken-wor6zq": {
+    "vak": "anders",
+    "zeker": 0.68
+  },
+  "bedrijf/s-veenhuizen-dakwerken-awwm7o": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/s-w-bouwkundig-ingenieurs-bv-iniucm": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/sabina-montage-onderhoud-wx_mmk": {
+    "vak": "aannemer",
+    "zeker": 0.67
+  },
+  "bedrijf/sake-bekkema-aftimmer-en-montagebedrijf-w78w7k": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/salak-bouw-b-v-0e6vww": {
+    "vak": "aannemer",
+    "zeker": 0.82
+  },
+  "bedrijf/salbo-daktechniek-b-v-vqxx0q": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/sama-bouwservice-b-v-3er_rg": {
+    "vak": "aannemer",
+    "zeker": 0.28
+  },
+  "bedrijf/san-kozijnen-kunststof-kozijnen-specialist-1mu6g4": {
+    "vak": "anders",
+    "zeker": 0.65
+  },
+  "bedrijf/sander-damen-bouw-timmerwerken-yvlnuy": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/sanidrome-van-grinsven-ipjq1q": {
+    "vak": "loodgieter",
+    "zeker": 0.55
+  },
+  "bedrijf/santibouw-prv7cy": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/santos-kozijnen-amwus4": {
+    "vak": "anders",
+    "zeker": 0.54
+  },
+  "bedrijf/satijn-dakbedekkingen-njmhsi": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/sbbo-renovatie-b-v-54hfcw": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/sbe-multidiensten-schoonmaakbedrijf-bouwbedrijf-1ngw2m": {
+    "vak": "onderhoud",
+    "zeker": 0.88
+  },
+  "bedrijf/schatsbergen-dakrenovatie-onderhoud-b-v-dakdekker-rosmalen-irzgvm": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/scheer-dakkapellen-qzy3v4": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/scheerhoorn-bouw-rf3no4": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/scheurwater-kozijnen-26krpc": {
+    "vak": "anders",
+    "zeker": 0.58
+  },
+  "bedrijf/schiffmacher-dakkapellen-h8syee": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/schildersbedrijf-oonk-fhf5gw": {
+    "vak": "schilder",
+    "zeker": 1.0
+  },
+  "bedrijf/schipper-kozijnen-bv-amstelveen-b5jk-4": {
+    "vak": "aannemer",
+    "zeker": 0.82
+  },
+  "bedrijf/schipper-kozijnen-bv-gouda-hhjo7w": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/schipper-kozijnen-bv-groningen-0qabgs": {
+    "vak": "aannemer",
+    "zeker": 0.41
+  },
+  "bedrijf/schippers-bouw-6lqslm": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/scholte-dakambacht-bqsuys": {
+    "vak": "anders",
+    "zeker": 0.78
+  },
+  "bedrijf/schrijnemaekers-dakwerken-yx8eku": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/schut-m1bx1m": {
+    "vak": "parket",
+    "zeker": 0.32
+  },
+  "bedrijf/sd-kunststof-kozijnen-b-v-idwlju": {
+    "vak": "anders",
+    "zeker": 0.69
+  },
+  "bedrijf/sebas-vof-0oe7lg": {
+    "vak": "anders",
+    "zeker": 0.91
+  },
+  "bedrijf/select-windows-drachten-pwmmhk": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/selektdak-a9hjww": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/sener-dakkapellen-kehnzi": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  },
+  "bedrijf/sens-bouw-b-v-5sj1rg": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/shk-klussenbedrijf-ri9gpg": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/siepel-borger-ssq0ru": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/siersma-installaties-s_qdj8": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/sietsema-aannemersbedrijf-b-v-suapmi": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/simons-dakwerken-eh7ngq": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/simons-knipping-jur5t4": {
+    "vak": "anders",
+    "zeker": 0.33
+  },
+  "bedrijf/sintjago-bouw-fwmyb0": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/sk-totaalbouw-f3tfa8": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/skd-dakkapellen-kozijnen-sqx7ve": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/sknn-kunststof-kozijnen-zyn-ro": {
+    "vak": "aannemer",
+    "zeker": 0.4
+  },
+  "bedrijf/slager-dak-timmerwerken-b1ayts": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/slappendel-bouw-0_bmu4": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/smaak-dakkapellen-kozijnen-3tlj1o": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/smb-de-harde-k2_mjg": {
+    "vak": "anders",
+    "zeker": 0.31
+  },
+  "bedrijf/smeets-houtbouw-iobvzi": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/smeets-houttechniek-ecompc": {
+    "vak": "parket",
+    "zeker": 0.79
+  },
+  "bedrijf/smits-dakbedekkingen-7pgkpk": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/smits-dakkundig-onderhoud-wq-deo": {
+    "vak": "onderhoud",
+    "zeker": 0.51
+  },
+  "bedrijf/snel-dakkapel-yuv1xu": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/snoeren-allround-8xcbna": {
+    "vak": "elektricien",
+    "zeker": 0.47
+  },
+  "bedrijf/softwash-cleaning-dakkapel-reinigen-gevel-reinigen-terras-reinigen-boeidelen-schoonmaken-my1gnm": {
+    "vak": "onderhoud",
+    "zeker": 0.99
+  },
+  "bedrijf/spijkkapel-rpy3cq": {
+    "vak": "stukadoor",
+    "zeker": 0.18
+  },
+  "bedrijf/spitskozijn-b-v-t_v4qm": {
+    "vak": "anders",
+    "zeker": 0.46
+  },
+  "bedrijf/srh-bouwservice-tzhydm": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/star-bouwbedrijf-0rvjue": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/starkozijn-katwijk-aiovt4": {
+    "vak": "anders",
+    "zeker": 0.64
+  },
+  "bedrijf/starkozijn-v-d-vecht-kch5na": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/stauko-kozijnen-b-v-48ruuk": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/steenbakkers-dakonderhoud-crdq4y": {
+    "vak": "onderhoud",
+    "zeker": 0.42
+  },
+  "bedrijf/steenbakkers-dakwerken--ck-_q": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/stendert-kozijnen-wcch9g": {
+    "vak": "anders",
+    "zeker": 0.85
+  },
+  "bedrijf/ster-kozijn-bv-kpfgpw": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/sterk-kozijnen-b-v-vdak-4": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/stermon-timmer-en-aannemingsbedrijf-b-v-yv6nae": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/stetbouw-1kpyy4": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/steunebrink-montage-udbnng": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/stichting-administratiekantoor-topvorm-prefab-e_ojz4": {
+    "vak": "anders",
+    "zeker": 0.76
+  },
+  "bedrijf/stichtse-vecht-bouw-fkqs8i": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/stiphout-dakbedekkingen-5x9u3a": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/stipt-dakgroep-b-v-yq0wck": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/stk-totaal-projecten-b-v-qw21ig": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/stok-dakkapellen-2lgpse": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/strivo-bouw-ns_nre": {
+    "vak": "aannemer",
+    "zeker": 0.85
+  },
+  "bedrijf/stukadoor-rma-afwerkingsbedrijf-ivfzag": {
+    "vak": "stukadoor",
+    "zeker": 1.0
+  },
+  "bedrijf/sundermann-veranda-s-buitenverblijven-j1k8-e": {
+    "vak": "aannemer",
+    "zeker": 0.81
+  },
+  "bedrijf/super-kozijnen-tilburg-ejioz0": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/svw-aannemingsbedrijf-b-v-mjj7hi": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/swart-timmerwerk-onderhoud-nigel-swart-xw6m9g": {
+    "vak": "onderhoud",
+    "zeker": 0.54
+  },
+  "bedrijf/swiebel-bouwservice-b-v-aannemersbedrijf-ds9m6k": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/t-e-totaalbouw-tsbnna": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/t-hartemink-bouwservice-en-onderhoud-2e4iag": {
+    "vak": "aannemer",
+    "zeker": 0.64
+  },
+  "bedrijf/t-roof-b-v-dakwerken-bejdcu": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/t-schultz-timmer-en-onderhoudsbedrijf-0webfq": {
+    "vak": "onderhoud",
+    "zeker": 0.36
+  },
+  "bedrijf/takk-kozijnen-znaxuo": {
+    "vak": "aannemer",
+    "zeker": 0.37
+  },
+  "bedrijf/tdz-totaalbouw-5cpj3g": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/team-dakkapel-rbb7du": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/tecce-dak-en-wand-4ncsgk": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/techniek-brabant-welvzm": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/tectum-prefab-houtbouwelementen-hemlnq": {
+    "vak": "aannemer",
+    "zeker": 0.8
+  },
+  "bedrijf/teha-elementen-b-v-vvuln8": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/tekbouw-kozijn-guhp-e": {
+    "vak": "anders",
+    "zeker": 0.67
+  },
+  "bedrijf/tekening-dakkapel-nl-pcb510": {
+    "vak": "aannemer",
+    "zeker": 0.46
+  },
+  "bedrijf/tempelaars-totaalbouw--ctpxg": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/ten-hartog-daktechniek-hawcda": {
+    "vak": "anders",
+    "zeker": 0.61
+  },
+  "bedrijf/ter-beek-bouw-b-v-dvbfee": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/ter-haar-kozijnen-6wyrva": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/tes-dakwerken-it95hk": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/theunissen-timmerfabriek-b-v-sgxhiy": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/timlux-kkv7jw": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/timmer-en-afwerkingsbedrijf-erik-koenders-fzpg78": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/timmer-en-bouwbedrijf-h-den-besten-b-v-8un1c8": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/timmer-en-bouwbedrijf-j-m-boom-ezfmk0": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/timmer-en-dakdekkersbedrijf-borgans-en-zn-v-o-f-jwplms": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/timmer-en-klusbedrijf-van-luik-cnnima": {
+    "vak": "aannemer",
+    "zeker": 0.88
+  },
+  "bedrijf/timmer-en-klusbedrijf-versendaal-b-v-z7wem0": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/timmer-en-montagewerken-van-gestel-b-v-e_o6z8": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/timmer-en-onderhoudsbedrijf-p-kasius-r9txjq": {
+    "vak": "onderhoud",
+    "zeker": 0.66
+  },
+  "bedrijf/timmerbedrijf-bijlsma-crihla": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/timmerbedrijf-de-groot-b-v-par9oe": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/timmerbedrijf-de-regter-cbm2ho": {
+    "vak": "parket",
+    "zeker": 0.45
+  },
+  "bedrijf/timmerbedrijf-de-valk-uk6oj8": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/timmerbedrijf-janmaat-almelo-twente-ciigtc": {
+    "vak": "anders",
+    "zeker": 0.37
+  },
+  "bedrijf/timmerbedrijf-kees-hulleman-v-o-f-ip7xls": {
+    "vak": "anders",
+    "zeker": 0.38
+  },
+  "bedrijf/timmerbedrijf-meetdienst-timmerman-meppel-liscuw": {
+    "vak": "parket",
+    "zeker": 0.44
+  },
+  "bedrijf/timmerbedrijf-meijer-gcttkg": {
+    "vak": "parket",
+    "zeker": 0.36
+  },
+  "bedrijf/timmerbedrijf-noom-het-adres-voor-uw-aanbouw-dakopbouw-erker-dakkapel-xei39y": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/timmerbedrijf-r-veldhuizen-1bdgsc": {
+    "vak": "parket",
+    "zeker": 0.38
+  },
+  "bedrijf/timmerbedrijf-ron-limmen-kl_itu": {
+    "vak": "parket",
+    "zeker": 0.42
+  },
+  "bedrijf/timmerbedrijf-tjeufaco-r9p4lq": {
+    "vak": "parket",
+    "zeker": 0.56
+  },
+  "bedrijf/timmerbedrijf-van-moorsel-25z7me": {
+    "vak": "parket",
+    "zeker": 0.46
+  },
+  "bedrijf/timmerbedrijfwesterhof-x1mmqi": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/timmerfabriek-pors-b-v-alwhzu": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/timmers-kunststof-bv-e29fji": {
+    "vak": "aannemer",
+    "zeker": 0.38
+  },
+  "bedrijf/timmerservice-zeeuws-vlaanderen-bv-dgzowc": {
+    "vak": "parket",
+    "zeker": 0.44
+  },
+  "bedrijf/tiptop-dakbedekking-1w-pru": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/tjonger-kozijn-cs1jfu": {
+    "vak": "anders",
+    "zeker": 0.65
+  },
+  "bedrijf/tk-dakkapellen-zoetermeer-g1bdno": {
+    "vak": "aannemer",
+    "zeker": 0.79
+  },
+  "bedrijf/toelevering-online-het-kozijnplatform-voor-de-bouw-nl93a8": {
+    "vak": "anders",
+    "zeker": 0.94
+  },
+  "bedrijf/top-dakbeheer-ms4iuw": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/top-kozijn-upmpea": {
+    "vak": "anders",
+    "zeker": 0.67
+  },
+  "bedrijf/topdak-nederland-bv-krz3lw": {
+    "vak": "aannemer",
+    "zeker": 0.5
+  },
+  "bedrijf/topkapel-bv-0sda-k": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/totaal-dak-specialist-tbgs-b-v-znfgfu": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/totaal-daktechniek-b-v-dbijbu": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/totaalbouw-u5amwu": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/toy-bouw-en-interieur-dunmvo": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/trechsteiner-dakkapellen-hclrc8": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/trendydak-il1mts": {
+    "vak": "aannemer",
+    "zeker": 0.57
+  },
+  "bedrijf/trk-bouw-ty65es": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/trudodak-bv-7tkdlm": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/ts-bouwservice-1p5rd0": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/ttw-montage-itsyuu": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/tuhman-dakbedekkingen-vof-qgjdsu": {
+    "vak": "anders",
+    "zeker": 0.39
+  },
+  "bedrijf/turbo-dakwerken-cro0h4": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/tvdg-bouw-txyiju": {
+    "vak": "aannemer",
+    "zeker": 0.55
+  },
+  "bedrijf/tvk-_pzqos": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/twan-franken-bouwwerken-pwwu8m": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/twente-solutions-gmgzru": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/uiterwaal-kozijnen-en-zonwering-jeu9ey": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/ultra-kozijnen-kbupzu": {
+    "vak": "anders",
+    "zeker": 0.8
+  },
+  "bedrijf/uniedaken-zvlh4o": {
+    "vak": "aannemer",
+    "zeker": 0.42
+  },
+  "bedrijf/uniek-geveltechniek-o6eapo": {
+    "vak": "aannemer",
+    "zeker": 0.68
+  },
+  "bedrijf/unique-bouw-en-timmerwerken-ffqe2e": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/united-kozijnen-pjfxre": {
+    "vak": "aannemer",
+    "zeker": 0.54
+  },
+  "bedrijf/v-o-f-kaptheijns-dlbxxi": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/v-o-f-kuiers-dunnink-montage-_odxcu": {
+    "vak": "anders",
+    "zeker": 0.3
+  },
+  "bedrijf/vakkozijnen-hvkr38": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/valentinov-kozijnen-b-v-gbuio4": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/van-baal-kozijntechniek-b-v-4gcxiw": {
+    "vak": "aannemer",
+    "zeker": 0.74
+  },
+  "bedrijf/van-boxtel-timmerbedrijf-9jqkka": {
+    "vak": "parket",
+    "zeker": 0.36
+  },
+  "bedrijf/van-burk-bouw-timmerwerken-vxjrmi": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/van-bussel-totaalbouw-w0tp-y": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/van-de-klundert-bouw-8b-ore": {
+    "vak": "aannemer",
+    "zeker": 0.65
+  },
+  "bedrijf/van-delft-kozijntechniek-nsuv0k": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/van-den-berg-montage-b-v-wlpnsq": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/van-den-boom-bouw-b-v-scqoqc": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/van-den-brand-bouw-v6epes": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/van-den-brug-timmerwerken-iuilow": {
+    "vak": "anders",
+    "zeker": 0.32
+  },
+  "bedrijf/van-den-eijnden-van-bree-bouw-v-o-f-l4tuvw": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/van-den-heuvel-dakkapellen-showroom-op-afspraak-7i80t0": {
+    "vak": "anders",
+    "zeker": 0.53
+  },
+  "bedrijf/van-den-hondel-prefab-b-v-gtfpoc": {
+    "vak": "aannemer",
+    "zeker": 0.69
+  },
+  "bedrijf/van-den-noort-bouw-advies-fobqpo": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/van-der-heijden-dak-en-renovatiebedrijf-82kx38": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/van-der-heijden-dakkapellen-9r_3-o": {
+    "vak": "aannemer",
+    "zeker": 0.84
+  },
+  "bedrijf/van-der-helm-daktechniek-bv-cbh_8s": {
+    "vak": "anders",
+    "zeker": 0.68
+  },
+  "bedrijf/van-der-hulst-ptrarq": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/van-der-jest-dakbedekkingen-idakc8": {
+    "vak": "anders",
+    "zeker": 0.47
+  },
+  "bedrijf/van-der-leeuw-gmax4s": {
+    "vak": "anders",
+    "zeker": 0.73
+  },
+  "bedrijf/van-der-linde-bouw-kozijnen-lw5xwi": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/van-der-linden-montage-gevelrenovatie-voegwerken-ehevne": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/van-der-sterren-dakbedekkingen-j73g2y": {
+    "vak": "anders",
+    "zeker": 0.55
+  },
+  "bedrijf/van-der-vecht-huisstyle-pc7cra": {
+    "vak": "aannemer",
+    "zeker": 0.69
+  },
+  "bedrijf/van-der-velde-dakkapellen-1eikxy": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/van-der-vlugt-timmerwerken-jpqmra": {
+    "vak": "parket",
+    "zeker": 0.3
+  },
+  "bedrijf/van-der-wier-bouw-v-o-f-keiopo": {
+    "vak": "aannemer",
+    "zeker": 0.68
+  },
+  "bedrijf/van-diermen-bouw-en-onderhoud-8jpdsu": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/van-dijk-verbouw-en-onderhoud-s_uip0": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/van-dreumel-ramen-en-deuren-b-v-07ub04": {
+    "vak": "aannemer",
+    "zeker": 0.71
+  },
+  "bedrijf/van-eijck-bouw-pjez10": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/van-esseveld-6qgg5u": {
+    "vak": "anders",
+    "zeker": 0.34
+  },
+  "bedrijf/van-eupen-afbouw-en-montage-bedrijf-hoxsvg": {
+    "vak": "aannemer",
+    "zeker": 0.38
+  },
+  "bedrijf/van-gerven-bouwservice-o0qnde": {
+    "vak": "aannemer",
+    "zeker": 0.95
+  },
+  "bedrijf/van-gestel-dakbedekking-b-v-th9s0o": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/van-grinsven-dakkapellen-bv-sqgtl8": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/van-hattem-dakkapellen-fx2n2w": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/van-hoek-dakbedekkingen-b-v-gl80j8": {
+    "vak": "anders",
+    "zeker": 0.56
+  },
+  "bedrijf/van-kooten-bouw-en-onderhoudsbedrijf-iu7-hs": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/van-laar-daktechniek-en-boeibeplating-dq_91u": {
+    "vak": "anders",
+    "zeker": 0.42
+  },
+  "bedrijf/van-lanen-montage-en-kunststof-kozijnen-cidz6m": {
+    "vak": "anders",
+    "zeker": 0.45
+  },
+  "bedrijf/van-mook-dakbedekking-i80qts": {
+    "vak": "anders",
+    "zeker": 0.54
+  },
+  "bedrijf/van-oosterom-bouw-rgmz8w": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/van-ravenswaaij-rhenen-timmerwerken-oxni8u": {
+    "vak": "parket",
+    "zeker": 0.43
+  },
+  "bedrijf/van-roomen-zn-klus-en-verbouw-nl--twxes": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/van-uden-bouw-en-timmerwerken-4bias4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/van-vliet-zeeland-kz7tfk": {
+    "vak": "aannemer",
+    "zeker": 0.58
+  },
+  "bedrijf/van-voorden-bouw-r6gp0e": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/van-wanrooij-dakbedekkingen-bv-k-asic": {
+    "vak": "anders",
+    "zeker": 0.61
+  },
+  "bedrijf/van-wees-zeist-kozijnen-dakkapellen-meer-drzlxw": {
+    "vak": "aannemer",
+    "zeker": 0.63
+  },
+  "bedrijf/van-wette-dakkapellen-huvdeg": {
+    "vak": "aannemer",
+    "zeker": 0.86
+  },
+  "bedrijf/van-zon-kozijnen-b-v-412sq0": {
+    "vak": "anders",
+    "zeker": 0.5
+  },
+  "bedrijf/varney-dakwerken-k5rq34": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/vdb-kunststofkozijnen-zuoj2i": {
+    "vak": "anders",
+    "zeker": 0.51
+  },
+  "bedrijf/vdh-timmerwerken-b-v-s-uxi4": {
+    "vak": "parket",
+    "zeker": 0.35
+  },
+  "bedrijf/vdl-fd945a": {
+    "vak": "anders",
+    "zeker": 0.87
+  },
+  "bedrijf/veenstra-hellendedaken-dakrenovatie-cpwjt8": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/veenstra-stroeve-b-v-prefab-dakelementen-wandelementen-dakkapellen-m74mio": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/veld-kozijntechniek-b-v-qn79hc": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/veldman-htrjz0": {
+    "vak": "parket",
+    "zeker": 0.35
+  },
+  "bedrijf/velux-dakramenspecialist-tip-ifhrdy": {
+    "vak": "aannemer",
+    "zeker": 0.56
+  },
+  "bedrijf/venebouw-4glguk": {
+    "vak": "aannemer",
+    "zeker": 0.73
+  },
+  "bedrijf/ventalux-nbkxxw": {
+    "vak": "aannemer",
+    "zeker": 0.77
+  },
+  "bedrijf/ventana-noord-dakkapellen-bv-r5a_1i": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/veranda-medemblik-3co9ey": {
+    "vak": "anders",
+    "zeker": 0.36
+  },
+  "bedrijf/verbouwservice-rob-denkers-im7fbu": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/verbouwteam-mycx1o": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/verdellen-timmerwerken-rasalu": {
+    "vak": "anders",
+    "zeker": 0.4
+  },
+  "bedrijf/verduin-dakwerk-en-aannemersbedrijf-475lfg": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/verduurzamen-deurne-xpegso": {
+    "vak": "parket",
+    "zeker": 0.25
+  },
+  "bedrijf/vergunning-dakkapel-1mqumg": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/verhaar-bouw-ig3uw4": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/verhagen-zn-dak-en-montagetechniek-mp3may": {
+    "vak": "aannemer",
+    "zeker": 0.76
+  },
+  "bedrijf/verhees-en-van-dijk-installatietechniek-nt6jcw": {
+    "vak": "loodgieter",
+    "zeker": 0.62
+  },
+  "bedrijf/verhoef-dakramen-7mrlna": {
+    "vak": "anders",
+    "zeker": 0.72
+  },
+  "bedrijf/verhoef-dakramen-leiderdorp-d4gyrg": {
+    "vak": "anders",
+    "zeker": 0.78
+  },
+  "bedrijf/verhoef-timmerwerk-s7qkpe": {
+    "vak": "parket",
+    "zeker": 0.43
+  },
+  "bedrijf/verkerk-dakwerken-ooruh0": {
+    "vak": "aannemer",
+    "zeker": 0.61
+  },
+  "bedrijf/verkoulen-roermond-e0w-oi": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/vermeulen-daktechniek-bv--qvh8k": {
+    "vak": "aannemer",
+    "zeker": 0.37
+  },
+  "bedrijf/vero-bouw-interieurwerken-eyoyec": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/vero-kunststof-kozijnen-7ig47s": {
+    "vak": "aannemer",
+    "zeker": 0.43
+  },
+  "bedrijf/vero-online-b-v-wsiuhw": {
+    "vak": "aannemer",
+    "zeker": 0.7
+  },
+  "bedrijf/vestmeer-bouw-zaanstad-mq2lwk": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/vianen-dakkapellen-b-v-asb-fg": {
+    "vak": "aannemer",
+    "zeker": 0.89
+  },
+  "bedrijf/vip-dakservice-b-v-t_qfse": {
+    "vak": "aannemer",
+    "zeker": 0.57
+  },
+  "bedrijf/visser-douglashoutbouw-dakkapellen-niyimm": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/vlaander-groep-yqqifi": {
+    "vak": "aannemer",
+    "zeker": 0.82
+  },
+  "bedrijf/vmk-kozijnen-tkhb1s": {
+    "vak": "anders",
+    "zeker": 0.43
+  },
+  "bedrijf/vogels-dakwerken-vhzdpu": {
+    "vak": "anders",
+    "zeker": 0.48
+  },
+  "bedrijf/vogels-machinale-houtbewerking-timmerwerk-jnkqok": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/voku-amstelveen-weru-kvkk5a": {
+    "vak": "aannemer",
+    "zeker": 0.6
+  },
+  "bedrijf/vos-dakkapellen-nahzzo": {
+    "vak": "aannemer",
+    "zeker": 0.87
+  },
+  "bedrijf/vosbouw-assen-xjsj1g": {
+    "vak": "aannemer",
+    "zeker": 0.55
+  },
+  "bedrijf/vosmans-jwzvfm": {
+    "vak": "anders",
+    "zeker": 0.71
+  },
+  "bedrijf/vt-hulst-frlfri": {
+    "vak": "anders",
+    "zeker": 0.41
+  },
+  "bedrijf/vuykverbouw-b-v-tnpaje": {
+    "vak": "aannemer",
+    "zeker": 0.97
+  },
+  "bedrijf/w-a-daktechniek-z7vibq": {
+    "vak": "stukadoor",
+    "zeker": 0.39
+  },
+  "bedrijf/w-n-totaalbouw-bv-d2gpos": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/w-slappendel-vof-maatwerk-in-woningonderhoud-f3d3te": {
+    "vak": "onderhoud",
+    "zeker": 0.57
+  },
+  "bedrijf/wabo-bouwbedrijf-ueqipa": {
+    "vak": "aannemer",
+    "zeker": 0.99
+  },
+  "bedrijf/wand-en-plafond-expert-0xn2ng": {
+    "vak": "stukadoor",
+    "zeker": 0.91
+  },
+  "bedrijf/wanders-kozijnen-emyw6s": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/waterland-dakgroep-ddhu2u": {
+    "vak": "aannemer",
+    "zeker": 0.69
+  },
+  "bedrijf/wbb-dakkapellen-bv-y46dyg": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/weerts-van-der-zanden-b-v-an9k_m": {
+    "vak": "stukadoor",
+    "zeker": 0.41
+  },
+  "bedrijf/weku-ipsbkk": {
+    "vak": "aannemer",
+    "zeker": 0.59
+  },
+  "bedrijf/wellhuis-dakwerken-l4cnza": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/weos-rolluiken-en-zonweringen-3iwthu": {
+    "vak": "anders",
+    "zeker": 0.97
+  },
+  "bedrijf/weru-nederland-b-v-gd7lme": {
+    "vak": "aannemer",
+    "zeker": 0.54
+  },
+  "bedrijf/wessels-timmerwerken-ghcna4": {
+    "vak": "aannemer",
+    "zeker": 0.94
+  },
+  "bedrijf/west-dakkapel-b-v-vnz7_c": {
+    "vak": "anders",
+    "zeker": 0.44
+  },
+  "bedrijf/west-friesland-dakkapellen-kb6wxa": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/west-schoonmaak-glasbewassing-nelkr0": {
+    "vak": "onderhoud",
+    "zeker": 0.97
+  },
+  "bedrijf/westers-kunststofkozijnenfabriek-25wp-s": {
+    "vak": "anders",
+    "zeker": 0.86
+  },
+  "bedrijf/westfriesland-bouw-voxpuc": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/whj-dakkapel-reiniging-zmf91m": {
+    "vak": "onderhoud",
+    "zeker": 0.99
+  },
+  "bedrijf/wia-dakbeheer-cgph4e": {
+    "vak": "aannemer",
+    "zeker": 0.9
+  },
+  "bedrijf/wijco-duurzaam-kunststoftechniek-dltyko": {
+    "vak": "aannemer",
+    "zeker": 0.49
+  },
+  "bedrijf/wiko-dakkapellen-uzngey": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/wiko-dakkapellen-west-quijuu": {
+    "vak": "aannemer",
+    "zeker": 0.92
+  },
+  "bedrijf/wiko-gevelsystemen-npyhoc": {
+    "vak": "anders",
+    "zeker": 0.65
+  },
+  "bedrijf/willem-installaties-en-dakwerken-kcn0vq": {
+    "vak": "loodgieter",
+    "zeker": 0.38
+  },
+  "bedrijf/willems-dakwerken-lz9zpu": {
+    "vak": "anders",
+    "zeker": 0.47
+  },
+  "bedrijf/willemsen-dakbedekking-5uulii": {
+    "vak": "anders",
+    "zeker": 0.54
+  },
+  "bedrijf/willemsen-dakwerken-zprumg": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/wilting-groep-io_mjy": {
+    "vak": "aannemer",
+    "zeker": 0.71
+  },
+  "bedrijf/window-plus-specialist-in-kozijnen-deuren-en-schuifpuien-20nsi4": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/winkens-dakbedekkingen-b-v-fvo4mk": {
+    "vak": "aannemer",
+    "zeker": 0.52
+  },
+  "bedrijf/witlox-bouwbedrijf-qvqn0a": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/witra-kunststof-kozijnen-hkcub8": {
+    "vak": "anders",
+    "zeker": 0.7
+  },
+  "bedrijf/wk-dakkapellen-ghaesa": {
+    "vak": "aannemer",
+    "zeker": 0.91
+  },
+  "bedrijf/wouter-pasman-timmer-onderhoudsbedrijf-wzuiki": {
+    "vak": "onderhoud",
+    "zeker": 0.5
+  },
+  "bedrijf/wtb-bouw-renovatie-ipkrgg": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/xlence-renovatie-rjoxp0": {
+    "vak": "aannemer",
+    "zeker": 0.96
+  },
+  "bedrijf/ydema-kozijnen-bv-y0jpm0": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/yuri-hildering-mjunw4": {
+    "vak": "anders",
+    "zeker": 0.33
+  },
+  "bedrijf/zaan-dakwerken-zsbn-0": {
+    "vak": "aannemer",
+    "zeker": 0.62
+  },
+  "bedrijf/zaandam-dakkapel-zaandamdakkapel-uc13nm": {
+    "vak": "aannemer",
+    "zeker": 0.98
+  },
+  "bedrijf/zalmkozijnen-fxqey0": {
+    "vak": "anders",
+    "zeker": 0.63
+  },
+  "bedrijf/zantingh-2lpws8": {
+    "vak": "anders",
+    "zeker": 0.52
+  },
+  "bedrijf/zijm-blonk-jijnz4": {
+    "vak": "anders",
+    "zeker": 0.35
+  },
+  "bedrijf/zink-dakbedekking-rx99-y": {
+    "vak": "anders",
+    "zeker": 0.66
+  },
+  "bedrijf/zinkatelier-lqkk5s": {
+    "vak": "anders",
+    "zeker": 0.28
+  },
+  "bedrijf/zinkwerk-en-timmerwerk-aan-daken-deurne-syuoqm": {
+    "vak": "anders",
+    "zeker": 0.49
+  },
+  "bedrijf/zinzen-dakwerken-xe18vw": {
+    "vak": "aannemer",
+    "zeker": 0.53
+  },
+  "bedrijf/zk-kozijnen-b-v-hvtlma": {
+    "vak": "anders",
+    "zeker": 0.78
+  },
+  "bedrijf/zn-service-ode1zm": {
+    "vak": "aannemer",
+    "zeker": 0.44
+  },
+  "bedrijf/zolderverbouw-larenstein-b-v-_oayzm": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/zuid-west-kozijnen-f3fafo": {
+    "vak": "anders",
+    "zeker": 0.74
+  },
+  "bedrijf/zuidplas-bouw-4eyaty": {
+    "vak": "aannemer",
+    "zeker": 1.0
+  },
+  "bedrijf/zuidwest-bouw-en-geveltechniek-viame4": {
+    "vak": "aannemer",
+    "zeker": 0.51
+  },
+  "bedrijf/zwartenkot-bouw-onderhoud-4mqqey": {
+    "vak": "aannemer",
+    "zeker": 0.93
+  },
+  "bedrijf/zwn-daktechniek-vmvknc": {
+    "vak": "aannemer",
+    "zeker": 0.78
+  }
+}

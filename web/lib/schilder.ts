@@ -13,6 +13,8 @@ import path from 'node:path'
 import { opRaster } from './raster'
 import { metVerleider } from './verleider'
 import { metEersteZet } from './eerstezet'
+import { extraLinksHtml } from './interne-links'
+import { zonderUitgesloten } from './uitgesloten'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'schilder'
@@ -379,8 +381,11 @@ function getBedrijfHtml(page: SchilderPage): string {
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
   const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
+  // Door Jev gerangschikte buurbedrijven, voor profielen waar de stadsregel te
+  // weinig tegels opleverde. Lege string als er voor dit profiel niets is.
+  const extra = extraLinksHtml(CLUSTER, page.slug, 'schilders')
   return metEersteZet(
-    metVerleider(body.replace('</main>', `${markt}${claim}${DISCLAIMER_HTML}</main>`), 'schilder'),
+    metVerleider(body.replace('</main>', `${extra}${markt}${claim}${DISCLAIMER_HTML}</main>`), 'schilder'),
     esc(b.name))
 }
 
@@ -398,7 +403,9 @@ function readHub(slug: string): string {
 // (profiel), register (A-Z-overzicht, Fase 2 link-architectuur) of hub
 // (self-contained, alleen 'index' in dit cluster).
 function getMainHtmlRuw(page: SchilderPage): string {
-  if (page.content_kind === 'city') return getCityHtml(page)
+  // Winkels, showrooms en bedrijven uit een heel ander vak blijven uit de
+  // plaatslijst; hun profiel blijft wel bestaan. Zie lib/uitgesloten.ts.
+  if (page.content_kind === 'city') return zonderUitgesloten(CLUSTER, getCityHtml(page))
   if (page.content_kind === 'bedrijf') return getBedrijfHtml(page)
   if (page.content_kind === 'register') return getRegisterHtml(page)
   return readHub(page.slug)
