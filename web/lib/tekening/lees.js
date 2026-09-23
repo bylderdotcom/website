@@ -10,6 +10,10 @@
  * 53,7 m² tegen 54,5 m² met de hand, 11 van 11 binnendeuren goed geteld en benoemd.
  * Zie docs/woningvisualisator-bouwplan.md §10.
  *
+ * TWEE KOPIEËN, ÉÉN BRON: dit bestand staat ook in de app-repo (src/lib/tekening/lees.js,
+ * voor app.bylder.com/dashboard/mijn-woning). Wijzig ze samen, anders meten site en app
+ * verschillend.
+ *
  * pdf.js wordt van buiten meegegeven: de pagina laadt hem pas als iemand een
  * tekening kiest, zodat de rest van de site er niets van merkt.
  */

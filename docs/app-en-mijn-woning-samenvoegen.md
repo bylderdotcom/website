@@ -48,11 +48,10 @@ taalmodel; de site rekent zelf. Voor dezelfde woning krijg je twee verschillende
 Besluit: **gemeten gaat voor.** Het taalmodel blijft voor wat vectoren niet geven: foto's en
 scans van tekeningen, en symbolen die we nog niet tellen (lichtpunten, stopcontacten).
 
-**De haak zit achter de betaalmuur.** In de app is de berekening een ledenfunctie. Dat is
-de omgekeerde volgorde van wat werkt: de gratis Pascal-editor wint de gebruiker, de
-transactie komt daarna. Meten is bij ons gratis te geven, want het kost niets per keer.
-Zet de muur op wat echt geld of mensen kost: sfeerimpressies boven een quotum, de
-adviseur, offertebegeleiding.
+**Meten moet gratis blijven.** In de code staat bij de berekening nog een ledencontrole,
+maar sinds 23-07-2026 geeft die altijd toegang: Bylder is gratis voor bewoners. Meten kost
+ons bovendien niets per keer, dus dat blijft zo. Wordt er ooit weer een grens getrokken,
+dan niet hier: de meting is de haak, zoals de gratis Pascal-editor dat is.
 
 **Configuraties zweven.** Een ontwerp uit de configurator komt op een e-mailadres terecht,
 niet bij een woning. De deur-CTA in de app stuurt iemand naar een lege configurator, terwijl
@@ -133,8 +132,8 @@ ook ingelogd en blijft bewaard.
 
 ## 8. Beslissingen
 
-1. **Meten gratis, ook in de app?** Voorstel: ja. Betaald wordt wat per keer geld kost of
-   mensenwerk is.
+1. **Meten gratis, ook in de app?** Ja, dat is het al (gratis voor bewoners sinds 23-07).
+   Houd de meting buiten elke toekomstige grens.
 2. **Waar woont de lezer?** Voorstel: één module in de app, die de site importeert of
    kopieert bij elke release. Nooit twee versies die uit elkaar groeien.
 3. **Naam in het menu:** "Tekeningen & 3D" wordt "Mijn woning", dezelfde naam als de

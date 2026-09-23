@@ -153,8 +153,9 @@ export default function Configurator() {
   // zodra er nieuwe renders zijn.
   const [weergave, setWeergave] = useState<'foto' | '3d'>('3d')
   const [gekopieerd, setGekopieerd] = useState(false)
-  // Kwam iemand hier vanuit /mijn-woning/, dan gaan zijn deuren daar ook weer naartoe.
-  // Alleen dat ene adres, zodat ?terug= geen omleiding naar een willekeurige site wordt.
+  // Kwam iemand hier vanuit zijn woning (op de site of in de app), dan gaan zijn deuren daar
+  // ook weer naartoe. Alleen deze twee adressen, zodat ?terug= geen omleiding naar een
+  // willekeurige site wordt.
   const [terug, setTerug] = useState<string | null>(null)
 
   const huidig = deuren[actief] ?? NIEUW
@@ -175,7 +176,7 @@ export default function Configurator() {
   useEffect(() => {
     setDeuren(leesUrl()); setGemonteerd(true)
     const t = new URLSearchParams(window.location.search).get('terug')
-    if (t === '/mijn-woning/') setTerug(t)
+    if (t === '/mijn-woning/' || t === 'https://app.bylder.com/dashboard/mijn-woning/') setTerug(t)
   }, [])
 
   // ── De scène ───────────────────────────────────────────────────────────
