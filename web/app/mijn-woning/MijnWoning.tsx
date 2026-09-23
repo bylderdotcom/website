@@ -193,6 +193,32 @@ function koppelTerug(o: Opslag, q: string): { opslag: Opslag; aantal: number } {
   return { opslag: { ...o, deuren: nieuw }, aantal }
 }
 
+/* ------------------------------------------------------------------ naar het account */
+
+// "Bewaar mijn woning in je account": het model gaat mee naar app.bylder.com in het
+// #-deel van de link. Dat deel komt nooit bij een server; de app zet het in de browser
+// klaar (/mijn-woning/ontvang) en bewaart het na het inloggen of registreren.
+// Getallen worden afgerond en hulpvelden weggelaten: een hele woning past dan in
+// ongeveer 2,5 kB. Vorm: 'w1.' + base64url(deflate-raw(JSON)).
+const APP_ONTVANG = 'https://app.bylder.com/mijn-woning/ontvang'
+
+async function naarAccount(o: Opslag): Promise<string> {
+  const rond = (_: string, v: unknown) => typeof v === 'number' ? (Math.abs(v) < 10 ? Math.round(v * 1000) / 1000 : Math.round(v)) : v
+  const lagen = o.lagen.map(l => ({
+    naam: l.naam, schaal: l.schaal, wanden: l.wanden, kader: l.kader, binnenY: l.binnenY, kap: l.kap,
+    ruimtes: l.ruimtes.map(r => ({ id: r.id, naam: r.naam, m2: r.m2, x: r.x, y: r.y, stroken: r.stroken })),
+    deuren: l.deuren.map(d => ({ x: d.x, y: d.y, breedte: d.breedte, raakt: [], naar: d.naar })),
+  }))
+  const deuren: Record<string, string[]> = {}
+  Object.entries(o.deuren).forEach(([k, v]) => { deuren['deur:' + k] = v }) // app-sleutel: deur:<verdieping>:<index>
+  const json = JSON.stringify({ lagen, bron: o.bron, deuren, inst: { kleur: o.kleur, giet: o.giet } }, rond)
+  const stroom = new Blob([json]).stream().pipeThrough(new CompressionStream('deflate-raw'))
+  const bytes = new Uint8Array(await new Response(stroom).arrayBuffer())
+  let bin = ''
+  bytes.forEach(b => { bin += String.fromCharCode(b) })
+  return APP_ONTVANG + '#w1.' + btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+}
+
 /* ------------------------------------------------------------------ de pagina */
 
 type Stap = { t: string; klaar: boolean }
@@ -438,6 +464,17 @@ export default function MijnWoning() {
           </section>
 
           <section className="mw-samen">
+            <p className="mw-oog licht">Bewaren</p>
+            <h3>Bewaar je woning in je account.</h3>
+            <p>Dan staat hij ook op je telefoon en laptop, met je gekozen deuren, en zetten we de deuren en de vloer klaar in je persoonlijke plan. Gratis, geen abonnement.</p>
+            <div className="mw-cta" style={{ marginTop: 12 }}>
+              <button type="button" className="mw-knop mw-knop-knop" onClick={async () => { try { window.location.href = await naarAccount(o) } catch { setFout('Bewaren lukte niet in deze browser. Probeer het in een andere browser, of sleep je tekening in de app onder Mijn woning.') } }}>
+                Bewaar mijn woning in je account
+              </button>
+            </div>
+          </section>
+
+          <section className="mw-samen">
             <p className="mw-oog licht">Waarom via Bylder</p>
             <h3>Eén plan voor je hele woning, langs de winkels die het echt maken.</h3>
             <p>Uit één tekening: <b>{aantalDeuren} deuren</b> voor Classic Next en <b>≈ {nl(m2Giet)} m² vloer</b> voor DRT. Normaal meet je dat twee keer op, bij twee winkels. Hier ligt het klaar, met ledenkorting bij allebei, en een adviseur die je stalen van de ene showroom naar de andere meeneemt.</p>
@@ -520,6 +557,7 @@ const CSS = `
 .mw-plus li::before{content:"✓";color:${GROEN};font-weight:800;margin-right:6px}
 .mw-cta{display:flex;flex-wrap:wrap;gap:10px}
 .mw-knop{display:inline-block;background:${GROEN};color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:999px;font-size:15px}
+.mw-knop-knop{border:0;cursor:pointer;font:inherit;font-weight:700;font-size:15px;background:#F5F0E8;color:${INKT}}
 .mw-knop-licht{display:inline-block;color:${INKT};text-decoration:none;font-weight:700;padding:12px 18px;border-radius:999px;font-size:15px;border:1px solid rgba(26,18,8,.28)}
 .mw-kleuren{display:flex;flex-wrap:wrap;gap:8px}
 .mw-kleuren button{font:inherit;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:8px;padding:6px 12px 6px 6px;border-radius:999px;border:1px solid rgba(26,18,8,.28);background:#F5F0E8;color:${INKT};cursor:pointer}
