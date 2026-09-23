@@ -43,7 +43,7 @@
     // --- gevulde rechthoeken met hun kleur, in paginapunten (y omlaag)
     var ctm = vp.transform.slice(), stapel = [], vul = [0, 0, 0], rects = [];
     var fn = ops.fnArray, ar = ops.argsArray;
-    var pad = [];
+    var pad = [], bogen = [];
     for (var i = 0; i < fn.length; i++) {
       var f = fn[i], a = ar[i];
       if (f === OPS.save) stapel.push([ctm, vul]);
@@ -54,15 +54,22 @@
         // rechthoeken komen als 're' of als gesloten vierhoek van moveTo/lineTo
         // Een gevuld vlak: we nemen de omhullende van het hele pad, net als een CAD-lezer.
         // Wanden komen als 're', als gesloten vierhoek of als twee driehoeken; allemaal rechthoekig.
-        var sub = a[0], co = a[1], k = 0, alle = [], krom = false;
+        var sub = a[0], co = a[1], k = 0, alle = [], krom = false, bp = [];
         for (var j = 0; j < sub.length; j++) {
           var op = sub[j];
           if (op === OPS.rectangle) {
             var x = co[k], y = co[k + 1], w = co[k + 2], h = co[k + 3]; k += 4;
             alle.push(tp(ctm, x, y), tp(ctm, x + w, y + h));
-          } else if (op === OPS.moveTo || op === OPS.lineTo) { alle.push(tp(ctm, co[k], co[k + 1])); k += 2; }
-          else if (op === OPS.curveTo) { k += 6; krom = true; }
-          else if (op === OPS.curveTo2 || op === OPS.curveTo3) { k += 4; krom = true; }
+          } else if (op === OPS.moveTo || op === OPS.lineTo) { var pp = tp(ctm, co[k], co[k + 1]); alle.push(pp); bp.push(pp); k += 2; }
+          else if (op === OPS.curveTo) { for (var c1 = 0; c1 < 3; c1++) bp.push(tp(ctm, co[k + 2 * c1], co[k + 2 * c1 + 1])); k += 6; krom = true; }
+          else if (op === OPS.curveTo2 || op === OPS.curveTo3) { for (var c2 = 0; c2 < 2; c2++) bp.push(tp(ctm, co[k + 2 * c2], co[k + 2 * c2 + 1])); k += 4; krom = true; }
+        }
+        // een draaicirkel van een deur: kwartboog, vierkante omhullende van 70-130 cm
+        if (krom && bp.length) {
+          var bxs = bp.map(function (q) { return q[0] * MM; }), bys = bp.map(function (q) { return q[1] * MM; });
+          var bw = Math.max.apply(null, bxs) - Math.min.apply(null, bxs), bh = Math.max.apply(null, bys) - Math.min.apply(null, bys);
+          if (Math.max(bw, bh) >= 700 && Math.max(bw, bh) <= 1300 && Math.min(bw, bh) / Math.max(bw, bh) > 0.7)
+            bogen.push([Math.min.apply(null, bxs), Math.min.apply(null, bys), Math.max.apply(null, bxs), Math.max.apply(null, bys)]);
         }
         if (!krom && alle.length >= 3) {
           var xs = alle.map(function (q) { return q[0]; }), ys = alle.map(function (q) { return q[1]; });
@@ -139,7 +146,8 @@
       kap = { nokY: nokY, zNok: zNok, k: k };
     }
 
-    return { naam: naamM ? naamM[1] : 'Verdieping', schaal: schaal, wanden: wanden, labels: labels, kap: kap, kader: [bx0, by0, bx1, by1] };
+    return { naam: naamM ? naamM[1] : 'Verdieping', schaal: schaal, wanden: wanden, labels: labels, kap: kap, kader: [bx0, by0, bx1, by1],
+      bogen: bogen.filter(function (b) { return b[0] >= bx0 && b[2] <= bx1; }) };
   }
 
   /* Ruimtes vinden: raster van 50 mm, wanden verdikt zodat deuropeningen dichtgaan,
@@ -201,12 +209,21 @@
     function pak() { var top = heap[0], last = heap.pop(); if (heap.length) { heap[0] = last; var i = 0; for (;;) { var l = 2 * i + 1, r = l + 1, m = i; if (l < heap.length && heap[l][0] > heap[m][0]) m = l; if (r < heap.length && heap[r][0] > heap[m][0]) m = r; if (m === i) break; var t = heap[m]; heap[m] = heap[i]; heap[i] = t; i = m; } } return top; }
     var zaden = [];
     v.labels.forEach(function (l, id) {
-      var sx = Math.round((l.x - k[0]) / C), sy = Math.round((l.y - k[1]) / C), best = -1, bc = -1;
+      var sx = Math.round((l.x - k[0]) / C), sy = Math.round((l.y - k[1]) / C), best = -1e9, bc = -1;
       for (var dy = -10; dy <= 10; dy++) for (var dx = -10; dx <= 10; dx++) {
         var xx2 = sx + dx, yy2 = sy + dy; if (xx2 < 0 || yy2 < 0 || xx2 >= W || yy2 >= Hh) continue;
         var c = yy2 * W + xx2; if (muur[c] || buiten[c]) continue;
-        var sc = d[c] - 0.15 * Math.sqrt(dx * dx + dy * dy);
+        var sc = -Math.sqrt(dx * dx + dy * dy); // dichtstbijzijnde vrije cel: een label staat ín zijn kamer
         if (sc > best) { best = sc; bc = c; }
+      }
+      // vanaf het label bergop klimmen op de afstandskaart: naar het midden van dezelfde kamer,
+      // nooit door een deur (daar daalt de afstand eerst)
+      if (bc >= 0) for (var klim = 0; klim < 400; klim++) {
+        var nb2 = -1, hoog = d[bc];
+        [bc - 1, bc + 1, bc - W, bc + W, bc - W - 1, bc - W + 1, bc + W - 1, bc + W + 1].forEach(function (q) {
+          if (q >= 0 && q < d.length && !muur[q] && !buiten[q] && d[q] > hoog) { hoog = d[q]; nb2 = q; }
+        });
+        if (nb2 < 0) break; bc = nb2;
       }
       if (bc >= 0 && regio[bc] < 0) { regio[bc] = id; duw(bc, d[bc]); zaden.push(id); }
     });
@@ -239,12 +256,61 @@
     for (j = 0; j < regio.length; j++) if (regio[j] >= 0) { var h = hoofd(regio[j]); tel[h] = (tel[h] || 0) + 1; }
     var groepen = {};
     v.labels.forEach(function (l, i) { var h = hoofd(i); (groepen[h] = groepen[h] || []).push(l); });
-    return Object.keys(groepen).map(function (h) {
+    // vloerstroken per ruimte (voor het inkleuren), rij voor rij samengevoegd
+    var stroken = {};
+    for (y = 0; y < Hh; y++) {
+      var start = -1, wie = -1;
+      for (x = 0; x <= W; x++) {
+        var r0 = x < W && regio[y * W + x] >= 0 ? hoofd(regio[y * W + x]) : -1;
+        if (r0 !== wie) {
+          if (wie >= 0) {
+            var lijst = stroken[wie] = stroken[wie] || [], vorige = lijst[lijst.length - 1];
+            var nx0 = start * C + k[0], nx1 = x * C + k[0], ny = y * C + k[1];
+            if (vorige && vorige[0] === nx0 && vorige[2] === nx1 && vorige[3] === ny) vorige[3] = ny + C;
+            else lijst.push([nx0, ny, nx1, ny + C]);
+          }
+          start = x; wie = r0;
+        }
+      }
+    }
+    // deuren: draaicirkels binnen de woning, niet tegen de gevel (voordeur, tuindeuren)
+    v.deuren = (v.bogen || []).filter(function (b) { return b[1] > ylo + 60 && b[3] < yhi - 60; }).map(function (b) {
+      // welke ruimtes raakt de draaicirkel (met 20 cm marge)?
+      var raakt = {};
+      for (var yy = Math.floor((b[1] - 100 - k[1]) / C); yy <= Math.ceil((b[3] + 100 - k[1]) / C); yy++)
+        for (var xx = Math.floor((b[0] - 100 - k[0]) / C); xx <= Math.ceil((b[2] + 100 - k[0]) / C); xx++) {
+          if (xx < 0 || yy < 0 || xx >= W || yy >= Hh) continue;
+          var c = yy * W + xx; if (regio[c] >= 0) raakt[hoofd(regio[c])] = 1;
+        }
+      return { x: (b[0] + b[2]) / 2, y: (b[1] + b[3]) / 2, breedte: Math.max(b[2] - b[0], b[3] - b[1]), raakt: Object.keys(raakt).map(Number) };
+    });
+    var namen = {};
+    var uitk = Object.keys(groepen).map(function (h) {
       var ls = groepen[h];
       var nm = ls.map(function (l) { var s0 = l.s; return NETTE[s0.toLowerCase()] || (s0.charAt(0).toUpperCase() + s0.slice(1)); });
       var naam = nm.length > 1 ? nm.slice(0, -1).join(', ') + ' en ' + nm[nm.length - 1].toLowerCase() : nm[0];
-      return { naam: naam, m2: (tel[h] || 0) * C * C / 1e6, x: ls[0].x, y: ls[0].y };
+      namen[h] = naam;
+      return { id: +h, naam: naam, m2: (tel[h] || 0) * C * C / 1e6, x: ls[0].x, y: ls[0].y, stroken: stroken[h] || [] };
     });
+    // Een deur heet naar de ruimte die hij afsluit, niet naar de gang waar hij in draait.
+    var VOORRANG = ['toilet', 'badkamer', 'meterkast', 'trapkast', 'wasruimte', 'berging', 'bijkeuken', 'technische', 'onbenoemde',
+      'werkkamer', 'studeerkamer', 'slaapkamer', 'woonkamer', 'keuken', 'zolder', 'overloop', 'hal', 'entree'];
+    function rang(naam) { var n = naam.toLowerCase(); for (var i = 0; i < VOORRANG.length; i++) if (n.indexOf(VOORRANG[i]) === 0) return i; return 50; }
+    // Elke kamer heeft meestal één deur: wijs uniek toe, deuren met de minste keus eerst.
+    var bezet = {}, VRIJ = /^(woonkamer|keuken|overloop|hal|entree)/i;
+    v.deuren.map(function (d, i) { return i; })
+      .sort(function (a, b) { return (v.deuren[a].raakt.length - v.deuren[b].raakt.length) || (v.deuren[a].breedte - v.deuren[b].breedte); })
+      .forEach(function (i) {
+        var d = v.deuren[i];
+        // eerst echte kamers, verkeersruimte achteraan; daarbinnen de kleinste eerst
+        var kand = d.raakt.filter(function (h) { return namen[h]; }).sort(function (a, b) {
+          return (VRIJ.test(namen[a]) - VRIJ.test(namen[b])) || ((tel[a] || 0) - (tel[b] || 0));
+        }).map(function (h) { return namen[h]; });
+        var nm = kand.filter(function (n) { return !bezet[n] || VRIJ.test(n); })[0] || kand[0] || 'Binnendeur';
+        bezet[nm] = (bezet[nm] || 0) + 1;
+        d.naar = nm + (bezet[nm] > 1 ? ' (' + bezet[nm] + ')' : '');
+      });
+    return uitk;
   }
 
   async function leesPdf(pdfjsLib, data) {
