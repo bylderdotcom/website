@@ -176,12 +176,8 @@ export const FINEREN: Fineer[] = [
     beeld: 'oslo-oak', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H598-W07' },
   { id: 'oslo-oak-cocoa', naam: 'Oslo Oak cocoa brown', basis: '#5A4032', nerf: '#412C22',
     beeld: 'oslo-oak-cocoa', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H597-W07' },
-  { id: 'valley-ash', naam: 'Valley Ash sunlit brown', basis: '#8A6A4C', nerf: '#6A4F37',
-    beeld: 'valley-ash', structuur: 'structuur-w07', tegelMm: [1300, 1300], code: '0H593-W07' },
   { id: 'dainty-oak-latte', naam: 'Dainty Oak latte', basis: '#B79A79', nerf: '#957B5E',
     beeld: 'dainty-oak-latte', structuur: 'structuur-v1a', tegelMm: [1300, 1509], code: '0H267-V1A' },
-  { id: 'robinson-oak', naam: 'Robinson Oak light natural', basis: '#C0A484', nerf: '#9C8365',
-    beeld: 'robinson-oak', structuur: 'structuur-w06', tegelMm: [1306, 1300], code: '0H784-W06' },
   { id: 'master-oak', naam: 'Master Oak natural', basis: '#A98A66', nerf: '#876C4E',
     beeld: 'master-oak', structuur: 'structuur-v2a', tegelMm: [3040, 1270], code: '0H913-V2A' },
   // Bij dit decor leverde Unilin geen structuurkaart, alleen een normaalkaart.
