@@ -23,13 +23,22 @@ import path from 'node:path'
 
 const REPO = path.join(process.cwd(), '..')
 
-type Uitgesloten = { cluster: string; naam: string }
+type Uitgesloten = { cluster: string; naam: string; stad: string }
 
 let _perCluster: Record<string, Set<string>> | null = null
+let _perNaam: Record<string, Set<string>> | null = null
+
+/** Naam + plaats, genormaliseerd. De ItemList draagt niet ons profiel maar de
+ *  eigen website van het bedrijf, dus daar is de slug geen haakje. */
+function sleutel(naam: string, stad: string): string {
+  const k = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, '')
+  return `${k(naam)}|${k(stad)}`
+}
 
 function achtervoegsels(): Record<string, Set<string>> {
   if (_perCluster) return _perCluster
   _perCluster = {}
+  _perNaam = {}
   try {
     const rauw = fs.readFileSync(
       path.join(REPO, 'data', 'vakbedrijven-uitgesloten.json'), 'utf8')
@@ -38,11 +47,41 @@ function achtervoegsels(): Record<string, Set<string>> {
       const id = slug.split('-').pop()
       if (!id) continue
       ;(_perCluster[v.cluster] ??= new Set()).add(id)
+      ;(_perNaam![v.cluster] ??= new Set()).add(sleutel(v.naam, v.stad))
     }
   } catch {
     // Geen bestand = niets uitsluiten. De site bouwt ook zonder.
   }
   return _perCluster
+}
+
+/** Haalt uitgesloten bedrijven uit de ItemList in de gestructureerde data.
+ *
+ * DE PAGINA EN HET SCHEMA MOETEN HETZELFDE ZEGGEN. Na het filteren van de
+ * kaarten stond BAUHAUS Venlo nog wél in de ItemList van de plaatspagina: voor
+ * een bezoeker was hij weg, voor een zoekmachine niet. Dat is precies het soort
+ * verschil waar de claim-bewaker op let, en het maakt het filteren zinloos —
+ * Google leest die lijst.
+ */
+export function zonderUitgeslotenLd(cluster: string, blokken: string[]): string[] {
+  achtervoegsels()
+  if (!_perNaam?.[cluster]?.size) return blokken
+  return blokken.map(blok => {
+    if (!blok.includes('ItemList')) return blok
+    let d: any
+    try { d = JSON.parse(blok) } catch { return blok }
+    if (d?.['@type'] !== 'ItemList' || !Array.isArray(d.itemListElement)) return blok
+    const namen = _perNaam?.[cluster] ?? new Set<string>()
+    const over = d.itemListElement.filter((el: any) => {
+      const naam: string = el?.item?.name ?? ''
+      const stad: string = el?.item?.address?.addressLocality ?? ''
+      return !namen.has(sleutel(naam, stad))
+    })
+    if (over.length === d.itemListElement.length) return blok
+    // Posities opnieuw nummeren: een ItemList met gaten is ongeldig.
+    d.itemListElement = over.map((el: any, i: number) => ({ ...el, position: i + 1 }))
+    return JSON.stringify(d)
+  })
 }
 
 /** Haalt de kaarten van uitgesloten bedrijven uit een plaatspagina. */

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getPages, getPage, getMainHtml, getShellCss, toMetadata, slugToSegments, segmentsToSlug } from '../../../lib/elektricien'
 import InteractiveScripts from '../InteractiveScripts'
+import { zonderUitgeslotenLd } from '@/lib/uitgesloten'
 
 // /elektricien/ (index-hub), /elektricien/<stad>/ (bedrijvengrid) en
 // /elektricien/bedrijf/<slug>/ (bedrijfsprofiel) in één optionele catch-all.
@@ -27,7 +28,7 @@ export default async function ElektricienPage({ params }: { params: Promise<{ sl
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
-      {page.ldjson.map((block, i) => (
+      {zonderUitgeslotenLd('elektricien', page.ldjson).map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
       <div dangerouslySetInnerHTML={{ __html: main }} />
