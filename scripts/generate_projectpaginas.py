@@ -31,7 +31,7 @@ Gebruik:
     python3 scripts/generate_projectpaginas.py --min 100  # andere ondergrens
     python3 scripts/generate_projectpaginas.py --dry      # niets wegschrijven
 """
-import json, os, re, sys, glob, html, math, collections, statistics
+import json, os, re, sys, glob, html, math, collections, statistics, urllib.parse
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1676,38 +1676,43 @@ def meet_uniciteit(toon=8):
 
 
 def tekening_blok(naam, slug, app, is_opgeleverd):
-    """De plattegrond-upload, vlak onder de kop en als enige primaire vraag.
+    """De plattegrond erin, vlak onder de kop en als eerste vraag op de pagina.
 
     WAAROM DIT BLOK BOVENAAN HOORT. De pagina vroeg om een account voordat hij
-    iets had bewezen, met "gratis, geen betaling nodig" als argument — dat neemt
-    een bezwaar weg en geeft geen reden. Dit geeft er wel een: er moet een
-    tekening in, dus dit kán niet zonder account. Het is geen functie die we
-    achter de registratie verstoppen, het is de reden om te registreren.
+    iets had bewezen. Dit blok bewijst eerst: sleep de tekening erin en je ziet je
+    eigen woning in 3D, zonder account. Een woning zien maakt enthousiaster dan een
+    document uploaden (Daniel, 23-09-2026). Het account komt daarna, als de plek
+    waar die woning bewaard blijft.
 
-    EN HET VOEDT DE CONFIGURATOR. De analyse telt de deuren. Dat is precies het
-    getal dat de deurconfigurator hieronder nodig heeft en dat een koper zelf
-    zit te schatten.
+    WAAR DE KNOP HEEN GAAT. Naar /mijn-woning/ op deze site, met het project erbij
+    (?project=<slug>&naam=<naam>). Die pagina meet wanden, ruimtes, deuren en kap
+    uit de vectoren van de PDF, in de browser, en zet de naam van het project in
+    de kop. Een scan of foto heeft geen vectoren; daarvoor blijft de tekening-
+    analyse in de app (taalmodel), als tweede link.
 
-    WAT ER BELOOFD WORDT IS WAT HIJ DOET. De tekeninganalyse geeft oppervlaktes
-    per ruimte, het gebruiksoppervlak, en tellingen van deuren, ramen,
-    lichtpunten en stopcontacten — plus waar de tekening onduidelijk is. Geen
-    bedragen: die zitten er niet in, dus beloven we ze hier niet.
+    WAT ER BELOOFD WORDT IS WAT HIJ DOET. Oppervlakte per ruimte, de binnendeuren
+    geteld en benoemd, de vloer in m² met een rekenvoorbeeld. Geen offerte: de
+    offertetool voor gietvloeren bestaat nog niet.
     """
-    link = app.replace(f"project-{slug}", f"project-{slug}-tekening")
-    wanneer = ("Woon je er nog niet, dan weet je zo wat er straks aan afwerking op je afkomt."
+    link = ("/mijn-woning/?project=" + slug + "&naam=" + urllib.parse.quote(naam)
+            + "&utm_source=bylder&utm_medium=projectpagina&utm_campaign=mijn-woning")
+    foto = app.replace(f"project-{slug}", f"project-{slug}-tekening")
+    wanneer = ("Woon je er al, dan zie je zo wat er aan afwerking op je afkomt."
                if is_opgeleverd else
-               "Zo weet je v&oacute;&oacute;r de meerwerklijst sluit waar je het over hebt.")
-    return f"""<h2>Zet je plattegrond erin, dan rekenen wij hem na</h2>
-<p>Je kreeg een plattegrond van de ontwikkelaar. Zet hem in je dossier en je krijgt er per
-ruimte de oppervlaktes uit, plus hoeveel deuren, ramen, lichtpunten en stopcontacten erop
-staan &mdash; en waar de tekening daar onduidelijk over is. {wanneer}</p>
+               "Zo weet je v&oacute;&oacute;r de meerwerklijst sluit hoe je woning eruitziet en wat erin moet.")
+    return f"""<h2>Zie je woning in {E(naam)}, voordat hij af is</h2>
+<p>Sleep de plattegrond die je van de ontwikkelaar kreeg erin. Een paar seconden later staat
+je woning in 3D: elke ruimte met zijn vierkante meters, elke binnendeur geteld en benoemd
+naar de kamer die hij afsluit, en hoeveel vloer je nodig hebt. {wanneer}</p>
 <div class="pk-uitkomst">
-<div><strong>Per ruimte</strong><span>vloer, wand en plafond in m&sup2;</span></div>
-<div><strong>Aantal deuren</strong><span>het getal dat de configurator hieronder vraagt</span></div>
-<div><strong>Elektra geteld</strong><span>lichtpunten en stopcontacten van de tekening</span></div>
+<div><strong>Je woning in 3D</strong><span>wanden, ruimtes en kap uit je eigen tekening</span></div>
+<div><strong>Elke binnendeur</strong><span>geteld, en in &eacute;&eacute;n keer naar de deurconfigurator</span></div>
+<div><strong>Je vloer in m&sup2;</strong><span>per ruimte aan of uit, met een rekenvoorbeeld gietvloer</span></div>
 </div>
-<p><a class="cta-primary" href="{link}">Zet je plattegrond erin &rarr;</a></p>
-<p class="noot">Gratis account nodig; een foto van de tekening werkt ook.</p>"""
+<p><a class="cta-primary" href="{E(link)}">Zie je woning in 3D &rarr;</a></p>
+<p class="noot">Geen account nodig; je tekening blijft op je eigen apparaat. Werkt met de
+PDF van je verkoop- of meerwerktekening. Alleen een scan of foto?
+<a href="{foto}">Zet hem in je dossier</a>, dan rekenen wij hem na.</p>"""
 
 
 def lidmaatschap_blok(app, met_auping):
@@ -2291,7 +2296,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
 {cijferstrook(strook)}
 
-{tekening_blok(E(naam), slug, app, is_opgeleverd)}
+{tekening_blok(naam, slug, app, is_opgeleverd)}
 
 {budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel_wanneer)}
 
