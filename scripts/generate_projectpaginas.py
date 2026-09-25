@@ -1675,6 +1675,14 @@ def meet_uniciteit(toon=8):
     return scores
 
 
+def mijn_woning_link(naam, slug, plek):
+    """De link naar /mijn-woning/ met het project erbij. utm_content zegt welke knop
+    het was (hero of blok), zodat we zien welke van de twee het werk doet."""
+    return ("/mijn-woning/?project=" + slug + "&naam=" + urllib.parse.quote(naam)
+            + "&utm_source=bylder&utm_medium=projectpagina&utm_campaign=mijn-woning"
+            + "&utm_content=" + plek)
+
+
 def tekening_blok(naam, slug, app, is_opgeleverd):
     """De plattegrond erin, vlak onder de kop en als eerste vraag op de pagina.
 
@@ -1694,8 +1702,7 @@ def tekening_blok(naam, slug, app, is_opgeleverd):
     geteld en benoemd, de vloer in m² met een rekenvoorbeeld. Geen offerte: de
     offertetool voor gietvloeren bestaat nog niet.
     """
-    link = ("/mijn-woning/?project=" + slug + "&naam=" + urllib.parse.quote(naam)
-            + "&utm_source=bylder&utm_medium=projectpagina&utm_campaign=mijn-woning")
+    link = mijn_woning_link(naam, slug, "blok")
     foto = app.replace(f"project-{slug}", f"project-{slug}-tekening")
     wanneer = ("Woon je er al, dan zie je zo wat er aan afwerking op je afkomt."
                if is_opgeleverd else
@@ -2091,6 +2098,9 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # "wij bewaken je keuzemomenten" gaan over een bouw die af is. De regel-
     # afbreking in de oorspronkelijke zin blijft staan, zodat de 281 pagina's van
     # projecten die nog moeten opleveren byte voor byte gelijk blijven.
+    # De hoofdknop is sinds 25-09-2026 "Zie je woning in 3D": je eigen woning zien
+    # maakt meer indruk dan een project volgen (Daniel). Volgen blijft de tweede
+    # knop; de woningregisseur heeft verderop een eigen blok en kaart.
     if is_opgeleverd:
         intro_zin = ("De oplevering is geweest. Wij helpen je met wat daarna komt: wat de "
                      "afwerking hoort te kosten, en bij welke winkels je korting krijgt.")
@@ -2286,10 +2296,10 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 <h1>Je tekende voor {E(naam)}.<br>Nu begint het pas.</h1>
 <p class="intro">{intro_zin}</p>
 <div class="pk-acties">
-<a class="cta-primary" href="{app}">{hero_knop} &rarr;</a>
-<a class="cta-stil" href="{app}-regisseur">Praat met een woningregisseur</a>
+<a class="cta-primary" href="{E(mijn_woning_link(naam, slug, "hero"))}">Zie je woning in 3D &rarr;</a>
+<a class="cta-stil" href="{app}">{hero_knop}</a>
 </div>
-<p class="pk-onder">Gratis account &middot; geen betaling nodig &middot; opzeggen wanneer je wilt</p>
+<p class="pk-onder">Sleep je plattegrond erin &middot; geen account nodig &middot; je tekening blijft op je eigen apparaat</p>
 </div>
 {hero_tekening(E(naam))}
 </div>
