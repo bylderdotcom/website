@@ -35,6 +35,19 @@ type Opslag = {
   giet: Record<string, boolean>
   /** per deur (verdieping:index) de velden zoals de configurator ze in zijn adres zet */
   deuren: Record<string, string[]>
+  /** het nieuwbouwproject waar de bezoeker vandaan kwam (?project=&naam= op de projectpagina) */
+  project?: Project
+}
+
+type Project = { slug: string; naam: string }
+
+// De projectpagina's linken hierheen met ?project=<slug>&naam=<projectnaam>. De naam
+// staat in de kop en gaat mee naar het account; de slug koppelt de woning straks aan
+// het project in het dossier. Alleen wat er als een slug en een naam uitziet telt.
+function leesProject(u: URL): Project | undefined {
+  const slug = u.searchParams.get('project') ?? '', naam = (u.searchParams.get('naam') ?? '').trim()
+  if (!/^[a-z0-9][a-z0-9-]{0,119}$/.test(slug) || !naam || naam.length > 80) return undefined
+  return { slug, naam }
 }
 
 /* ------------------------------------------------------------------ hulpjes */
@@ -211,7 +224,7 @@ async function naarAccount(o: Opslag): Promise<string> {
   }))
   const deuren: Record<string, string[]> = {}
   Object.entries(o.deuren).forEach(([k, v]) => { deuren['deur:' + k] = v }) // app-sleutel: deur:<verdieping>:<index>
-  const json = JSON.stringify({ lagen, bron: o.bron, deuren, inst: { kleur: o.kleur, giet: o.giet } }, rond)
+  const json = JSON.stringify({ lagen, bron: o.bron, deuren, inst: { kleur: o.kleur, giet: o.giet }, project: o.project }, rond)
   const stroom = new Blob([json]).stream().pipeThrough(new CompressionStream('deflate-raw'))
   const bytes = new Uint8Array(await new Response(stroom).arrayBuffer())
   let bin = ''
@@ -230,6 +243,7 @@ export default function MijnWoning() {
   const [melding, setMelding] = useState('')
   const [actief, setActief] = useState(0)
   const [over, setOver] = useState(false)
+  const [project, setProject] = useState<Project | undefined>()
   const dek = useRef<HTMLDivElement>(null)
   const uitkomst = useRef<HTMLElement>(null)
   const deurBlok = useRef<HTMLElement>(null)
@@ -240,6 +254,9 @@ export default function MijnWoning() {
   useEffect(() => {
     const opgeslagen = leesOpslag()
     const u = new URL(window.location.href), q = u.searchParams.get('deuren')
+    const vanProject = leesProject(u)
+    if (vanProject) setProject(vanProject)
+    else if (opgeslagen?.project) setProject(opgeslagen.project)
     if (opgeslagen && q) {
       const { opslag, aantal } = koppelTerug(opgeslagen, q)
       bewaar(opslag)
@@ -273,13 +290,13 @@ export default function MijnWoning() {
       zet('Woning opbouwen'); await wacht(250); klaar('Je woning staat klaar')
       const giet: Record<string, boolean> = {}
       lagen[0].ruimtes.forEach(r => { if (!NIET_GIET.test(r.naam)) giet['0:' + r.id] = true })
-      bewaar({ lagen, bron: naam, kleur: 'zand', giet, deuren: {} })
+      bewaar({ lagen, bron: naam, kleur: 'zand', giet, deuren: {}, project })
       setActief(0)
       setTimeout(() => uitkomst.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100)
     } catch (e) {
       setStappen([]); setFout(e instanceof Error ? e.message : String(e))
     }
-  }, [bewaar])
+  }, [bewaar, project])
 
   const kies = (f?: File) => {
     if (!f) return
@@ -303,8 +320,8 @@ export default function MijnWoning() {
       <style>{CSS}</style>
 
       <header className="mw-kop">
-        <p className="mw-oog">Bylder · je woning, voordat hij gebouwd is</p>
-        <h1>Zie je nieuwe woning.<br />Sleep je plattegrond hierheen.</h1>
+        <p className="mw-oog">{project ? `Bylder · ${project.naam}` : 'Bylder · je woning, voordat hij gebouwd is'}</p>
+        <h1>{project ? <>Zie je woning in {project.naam}.</> : 'Zie je nieuwe woning.'}<br />Sleep je plattegrond hierheen.</h1>
         <p className="mw-lead">De tekening die je van de aannemer kreeg is genoeg. Wij lezen de wanden, de deuren en de vloer eruit, bouwen je woning op, en laten zien wat je ermee kunt.</p>
       </header>
 
