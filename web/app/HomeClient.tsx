@@ -122,15 +122,15 @@ export default function HomeClient({ children }: { children: React.ReactNode }) 
         card.querySelector('.reject')?.addEventListener('click', () => { cancelAutoplay(); rejectDemo(i) })
       })
 
-      // Bekijk opties (dakkapel): varianten live op de woning
+      // Bekijk opties (binnendeuren): varianten live op de woning
       const card1 = cardFor(1)
       const vPanel = card1 ? card1.querySelector<HTMLElement>('.variants') : null
       if (card1 && vPanel) {
         const vTitel = card1.querySelector('h3') as HTMLElement
         const vPrijs = card1.querySelector('.price') as HTMLElement
         const VAR: Record<string, { titel: string; prijs: string }> = {
-          a: { titel: 'Dakkapel in hout — 3 bedrijven vergeleken', prijs: 'vanaf €6.200' },
-          b: { titel: 'Dakkapel in kunststof — 3 bedrijven vergeleken', prijs: 'vanaf €5.400' },
+          a: { titel: 'Binnendeuren glad: 12 stuks, kozijnloos', prijs: '5% ledenkorting' },
+          b: { titel: 'Binnendeuren met groef: 12 stuks, kozijnloos', prijs: '5% ledenkorting' },
         }
         const toonVariant = (v: string) => {
           const ga = houseSvg.querySelector<SVGGElement>('.g1v-a')

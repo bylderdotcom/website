@@ -3,6 +3,7 @@ import HeldToneel, { type Regel } from './HeldToneel'
 import { HOME_DELEN } from '../homeSections'
 import { aantalMerken, deelnemers, type Deelnemer } from '@/lib/merken'
 import { HELD_STIJL } from './stijl'
+import { DEMO_TEKST, HUIS_TEKST, vervang, kostenBlok } from './demo'
 
 // De homepage rond één held: het uitlezen van tekeningen en planning, zodat de
 // koper op het juiste moment de beste keuze maakt — en zijn aankopen alvast
@@ -89,7 +90,7 @@ function woningtekening(): string {
   let depth = 0, m: RegExpExecArray | null
   while ((m = re.exec(h))) {
     depth += m[0] === '<div' ? 1 : -1
-    if (depth === 0) return opmaak + h.slice(start, m.index + 6)
+    if (depth === 0) return opmaak + vervang(h.slice(start, m.index + 6), HUIS_TEKST)
   }
   return ''
 }
@@ -226,7 +227,7 @@ export default function HomeHeld() {
         <div className="hh-wrap">
           <div className="hh-huis" dangerouslySetInnerHTML={{ __html: woningtekening() }} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: HOME_DELEN[7] }} />
+        <div dangerouslySetInnerHTML={{ __html: vervang(HOME_DELEN[7], DEMO_TEKST) }} />
       </section>
 
       {/* ── 7. Ook na de sleutel ── */}
@@ -293,7 +294,7 @@ export default function HomeHeld() {
       </section>
 
       {/* ── 9. Kosten per gemeente + op maat (ongewijzigd) ── */}
-      <div dangerouslySetInnerHTML={{ __html: HOME_DELEN[8] }} />
+      <div dangerouslySetInnerHTML={{ __html: kostenBlok(HOME_DELEN[8]) }} />
       <div dangerouslySetInnerHTML={{ __html: HOME_DELEN[5] }} />
 
       {/* ── 10. Gidsen, tools, steden + overlays (ongewijzigd) ── */}
