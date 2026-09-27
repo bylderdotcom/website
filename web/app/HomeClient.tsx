@@ -3,25 +3,6 @@
 import { useEffect } from 'react'
 import Script from 'next/script'
 import { HOME_STYLE } from './homeHtml'
-import { HOME_DELEN } from './homeSections'
-import HomeServices from './HomeServices'
-import ConfiguratorCTA from './components/ConfiguratorCTA'
-
-// De vier pijlers (HomeServices) staan niet meer op de homepage. Ze waren 1.383
-// pixels en zeiden op een abstract niveau hetzelfde als de drie stappen erboven.
-// Hun veertien interne links staan allemaal al in de voettekst of de navigatie —
-// dat is gecontroleerd, niet aangenomen. De component blijft bestaan voor andere
-// pagina's.
-const PIJLERS_NA = -1
-
-// De configurator stond op vier productpagina's, maar niet op de pagina waar de
-// meeste mensen binnenkomen. Hij stond eerst na "Op maat laten maken" — het
-// zevende blok, dus pas na vier schermen scrollen (Daniel, 21-09-2026: "mag wel
-// wat hoger"). Nu staat hij direct onder de hero: het eerste wat je op de
-// homepage tegenkomt nadat je de woningzoeker hebt gezien, en het enige op de
-// site waar je zelf iets kunt tekenen en er meteen een offerte op kunt vragen.
-// Niet hóger: de woningzoeker blijft de eerste vraag van de bezoeker.
-const CONFIGURATOR_NA = 0
 
 // Getrouwe port van de homepage-body. De secties + overlays worden byte-getrouw
 // via dangerouslySetInnerHTML gerenderd (behoudt exact alle markup, ids, Tailwind-
@@ -53,7 +34,7 @@ const TW_CONFIG = {
   },
 }
 
-export default function HomeClient() {
+export default function HomeClient({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const w = window as any
     const timers: ReturnType<typeof setTimeout>[] = []
@@ -141,15 +122,15 @@ export default function HomeClient() {
         card.querySelector('.reject')?.addEventListener('click', () => { cancelAutoplay(); rejectDemo(i) })
       })
 
-      // Bekijk opties (dakkapel): varianten live op de woning
+      // Bekijk opties (binnendeuren): varianten live op de woning
       const card1 = cardFor(1)
       const vPanel = card1 ? card1.querySelector<HTMLElement>('.variants') : null
       if (card1 && vPanel) {
         const vTitel = card1.querySelector('h3') as HTMLElement
         const vPrijs = card1.querySelector('.price') as HTMLElement
         const VAR: Record<string, { titel: string; prijs: string }> = {
-          a: { titel: 'Dakkapel in hout — 3 bedrijven vergeleken', prijs: 'vanaf €6.200' },
-          b: { titel: 'Dakkapel in kunststof — 3 bedrijven vergeleken', prijs: 'vanaf €5.400' },
+          a: { titel: 'Binnendeuren glad: 12 stuks, kozijnloos', prijs: '5% ledenkorting' },
+          b: { titel: 'Binnendeuren met groef: 12 stuks, kozijnloos', prijs: '5% ledenkorting' },
         }
         const toonVariant = (v: string) => {
           const ga = houseSvg.querySelector<SVGGElement>('.g1v-a')
@@ -423,30 +404,9 @@ export default function HomeClient() {
       <link rel="stylesheet" href="/home.css" />
 
       <style dangerouslySetInnerHTML={{ __html: HOME_STYLE }} />
-      {/* De delen staan in HOME_DELEN in de volgorde van de funnel. De vier
-          pijlers (HomeServices) komen na de drie stappen: de stappen zeggen wat
-          er gebeurt, de pijlers wat je krijgt. */}
-      {HOME_DELEN.map((deel, i) => (
-        <div key={i}>
-          <div dangerouslySetInnerHTML={{ __html: deel }} />
-          {i === PIJLERS_NA && <HomeServices />}
-          {i === CONFIGURATOR_NA && (
-            <div id="deuren" style={{ background: '#F5F0E8', padding: '0 5% 72px' }}>
-              <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-                <ConfiguratorCTA
-                  vroeg
-                  marge="0"
-                  label="Kozijnloze deuren · offerte"
-                  titel="De kozijnloze deur is aan een opmars. Teken die van jou."
-                  aanleiding={'Geen kozijn, geen architraaf: deur en wand worden één vlak. '
-                    + 'Kies het groefpatroon en de RAL-kleur, zie meteen hoe het in je eigen wand '
-                    + 'staat, en vraag er direct een offerte op aan.'}
-                />
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
+      {/* De secties komen uit HomeHeld (server-component): die leest de
+          merkenlijst van schijf. Hier alleen de interactie: woningzoek, demo. */}
+      {children}
 
       {/* Zelfstandig popup-script uit de bron; no-op op de homepage (detecteert #aupingPopup) */}
       <Script src="/auping-popup.js" strategy="afterInteractive" />

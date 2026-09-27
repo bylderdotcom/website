@@ -112,7 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             valt de widget terug op <body> en belandt hij ónder de voettekst,
             na de copyrightregel — waar hij op een fout lijkt. */}
         <main>{children}</main>
-        <Footer />
+        <Footer merken={aantalMerken()} />
       </body>
     </html>
   )

@@ -1,18 +1,19 @@
 import type { Metadata } from 'next'
 import HomeClient from './HomeClient'
+import HomeHeld from './held/HomeHeld'
 import { HOME_JSONLD } from './homeHtml'
 
 // Getrouwe port van de homepage index.html (Fase 1B). Metadata + JSON-LD hier
 // (server-component); de interactieve body zit in HomeClient ('use client').
 
-const OG_TITLE = 'Verbouwing, afwerking en inrichting — Bylder regelt het.'
+const OG_TITLE = 'Richt je huis in voordat het er staat — Bylder'
 const OG_DESC =
-  'Vul je adres in en Bylder regelt de rest: keuzes op het juiste moment, offertes gecheckt tegen marktprijzen en korting bij 56 woonmerken. Gratis voor bewoners.'
+  'Bylder leest je plattegrond en de planning van de bouwer: per keuze wanneer hij valt, en je deuren, vloer en verlichting alvast samengesteld met de maten uit jouw tekening. Gratis voor bewoners.'
 
 export const metadata: Metadata = {
-  title: 'Verbouwing, afwerking en inrichting | Bylder',
+  title: 'Richt je nieuwbouwhuis in voordat het er staat | Bylder',
   description:
-    'Bylder regelt verbouwing, afwerking en inrichting — begin met je adres. Offertes gecheckt tegen marktprijzen, korting bij 56 woonmerken. Gratis voor bewoners.',
+    'Bylder leest je plattegrond en de bouwplanning: per keuze wanneer hij valt, en je deuren, vloer en licht alvast samengesteld. Korting bij 56 merken. Gratis voor bewoners.',
   authors: [{ name: 'Bylder Nederland B.V.' }],
   keywords: [
     'kopersbegeleiding nieuwbouw', 'offerte check aannemer', 'meerwerk controleren',
@@ -48,7 +49,7 @@ export default function HomePage() {
       {HOME_JSONLD.map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
-      <HomeClient />
+      <HomeClient><HomeHeld /></HomeClient>
     </>
   )
 }

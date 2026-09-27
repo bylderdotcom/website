@@ -1,0 +1,2311 @@
+{
+ "gemeten_op": "2026-09-27",
+ "venster": [
+  "2026-08-27",
+  "2026-09-24"
+ ],
+ "totaal": {
+  "pagina's": 287,
+  "vertoningen": 1311,
+  "klikken": 49,
+  "registraties": 0
+ },
+ "per_project": [
+  {
+   "slug": "condorpark-apeldoorn",
+   "pad": "/nieuwbouw-project/condorpark-apeldoorn/",
+   "vertoningen": 285,
+   "klikken": 11,
+   "positie": 6.2,
+   "registraties": 0
+  },
+  {
+   "slug": "haarlemszicht-haarlem",
+   "pad": "/nieuwbouw-project/haarlemszicht-haarlem/",
+   "vertoningen": 189,
+   "klikken": 6,
+   "positie": 4.8,
+   "registraties": 0
+  },
+  {
+   "slug": "volharding-marum",
+   "pad": "/nieuwbouw-project/volharding-marum/",
+   "vertoningen": 65,
+   "klikken": 5,
+   "positie": 8.0,
+   "registraties": 0
+  },
+  {
+   "slug": "de-suikerzijde-groningen",
+   "pad": "/nieuwbouw-project/de-suikerzijde-groningen/",
+   "vertoningen": 59,
+   "klikken": 2,
+   "positie": 11.0,
+   "registraties": 0
+  },
+  {
+   "slug": "soeterdael-zoetermeer",
+   "pad": "/nieuwbouw-project/soeterdael-zoetermeer/",
+   "vertoningen": 57,
+   "klikken": 2,
+   "positie": 6.2,
+   "registraties": 0
+  },
+  {
+   "slug": "corner-lofts-s-gravenhage",
+   "pad": "/nieuwbouw-project/corner-lofts-s-gravenhage/",
+   "vertoningen": 38,
+   "klikken": 3,
+   "positie": 7.3,
+   "registraties": 0
+  },
+  {
+   "slug": "hillegaar-venhuizen-drechterland",
+   "pad": "/nieuwbouw-project/hillegaar-venhuizen-drechterland/",
+   "vertoningen": 35,
+   "klikken": 0,
+   "positie": 7.0,
+   "registraties": 0
+  },
+  {
+   "slug": "hof-van-rijswijk-de-prins-rijswijk-zh",
+   "pad": "/nieuwbouw-project/hof-van-rijswijk-de-prins-rijswijk-zh/",
+   "vertoningen": 35,
+   "klikken": 0,
+   "positie": 11.4,
+   "registraties": 0
+  },
+  {
+   "slug": "victoriapark-hoofddorp-fase-2-haarlemmermeer",
+   "pad": "/nieuwbouw-project/victoriapark-hoofddorp-fase-2-haarlemmermeer/",
+   "vertoningen": 29,
+   "klikken": 1,
+   "positie": 6.7,
+   "registraties": 0
+  },
+  {
+   "slug": "zwanenpark-vlaardingen",
+   "pad": "/nieuwbouw-project/zwanenpark-vlaardingen/",
+   "vertoningen": 29,
+   "klikken": 4,
+   "positie": 7.9,
+   "registraties": 0
+  },
+  {
+   "slug": "timber-rotterdam",
+   "pad": "/nieuwbouw-project/timber-rotterdam/",
+   "vertoningen": 28,
+   "klikken": 0,
+   "positie": 7.6,
+   "registraties": 0
+  },
+  {
+   "slug": "new-maas-rotterdam",
+   "pad": "/nieuwbouw-project/new-maas-rotterdam/",
+   "vertoningen": 23,
+   "klikken": 0,
+   "positie": 6.1,
+   "registraties": 0
+  },
+  {
+   "slug": "the-future-alkmaar",
+   "pad": "/nieuwbouw-project/the-future-alkmaar/",
+   "vertoningen": 22,
+   "klikken": 2,
+   "positie": 7.3,
+   "registraties": 0
+  },
+  {
+   "slug": "blinq-capelle-aan-den-ijssel",
+   "pad": "/nieuwbouw-project/blinq-capelle-aan-den-ijssel/",
+   "vertoningen": 17,
+   "klikken": 0,
+   "positie": 8.2,
+   "registraties": 0
+  },
+  {
+   "slug": "buitenmade-drimmelen",
+   "pad": "/nieuwbouw-project/buitenmade-drimmelen/",
+   "vertoningen": 17,
+   "klikken": 1,
+   "positie": 5.2,
+   "registraties": 0
+  },
+  {
+   "slug": "edisonpark-zoetermeer",
+   "pad": "/nieuwbouw-project/edisonpark-zoetermeer/",
+   "vertoningen": 17,
+   "klikken": 0,
+   "positie": 8.2,
+   "registraties": 0
+  },
+  {
+   "slug": "brooklyn-heights-almere",
+   "pad": "/nieuwbouw-project/brooklyn-heights-almere/",
+   "vertoningen": 14,
+   "klikken": 0,
+   "positie": 11.2,
+   "registraties": 0
+  },
+  {
+   "slug": "de-bostuinen-zwijndrecht",
+   "pad": "/nieuwbouw-project/de-bostuinen-zwijndrecht/",
+   "vertoningen": 14,
+   "klikken": 1,
+   "positie": 13.4,
+   "registraties": 0
+  },
+  {
+   "slug": "nieuw-kralingen-in-de-lanen-i-rotterdam",
+   "pad": "/nieuwbouw-project/nieuw-kralingen-in-de-lanen-i-rotterdam/",
+   "vertoningen": 14,
+   "klikken": 0,
+   "positie": 7.2,
+   "registraties": 0
+  },
+  {
+   "slug": "havenmeester-rijswijk-zh",
+   "pad": "/nieuwbouw-project/havenmeester-rijswijk-zh/",
+   "vertoningen": 13,
+   "klikken": 0,
+   "positie": 9.2,
+   "registraties": 0
+  },
+  {
+   "slug": "de-meesters-van-vroondaal-s-gravenhage",
+   "pad": "/nieuwbouw-project/de-meesters-van-vroondaal-s-gravenhage/",
+   "vertoningen": 12,
+   "klikken": 1,
+   "positie": 3.5,
+   "registraties": 0
+  },
+  {
+   "slug": "eve-nieuwbouw-leidschendam-voorburg",
+   "pad": "/nieuwbouw-project/eve-nieuwbouw-leidschendam-voorburg/",
+   "vertoningen": 11,
+   "klikken": 1,
+   "positie": 13.7,
+   "registraties": 0
+  },
+  {
+   "slug": "opdreef-s-gravenhage",
+   "pad": "/nieuwbouw-project/opdreef-s-gravenhage/",
+   "vertoningen": 11,
+   "klikken": 0,
+   "positie": 6.8,
+   "registraties": 0
+  },
+  {
+   "slug": "rotterdam-tree-house-koopappartementen-rotterdam",
+   "pad": "/nieuwbouw-project/rotterdam-tree-house-koopappartementen-rotterdam/",
+   "vertoningen": 11,
+   "klikken": 0,
+   "positie": 14.7,
+   "registraties": 0
+  },
+  {
+   "slug": "fortunapark-vlaardingen-vlaardingen",
+   "pad": "/nieuwbouw-project/fortunapark-vlaardingen-vlaardingen/",
+   "vertoningen": 10,
+   "klikken": 0,
+   "positie": 15.5,
+   "registraties": 0
+  },
+  {
+   "slug": "populus-rotterdam",
+   "pad": "/nieuwbouw-project/populus-rotterdam/",
+   "vertoningen": 10,
+   "klikken": 2,
+   "positie": 7.4,
+   "registraties": 0
+  },
+  {
+   "slug": "the-four-eindhoven",
+   "pad": "/nieuwbouw-project/the-four-eindhoven/",
+   "vertoningen": 10,
+   "klikken": 0,
+   "positie": 7,
+   "registraties": 0
+  },
+  {
+   "slug": "b-centraal-best",
+   "pad": "/nieuwbouw-project/b-centraal-best/",
+   "vertoningen": 9,
+   "klikken": 0,
+   "positie": 8.3,
+   "registraties": 0
+  },
+  {
+   "slug": "de-scharnier-rotterdam",
+   "pad": "/nieuwbouw-project/de-scharnier-rotterdam/",
+   "vertoningen": 9,
+   "klikken": 1,
+   "positie": 11.1,
+   "registraties": 0
+  },
+  {
+   "slug": "boomgaerde-westland",
+   "pad": "/nieuwbouw-project/boomgaerde-westland/",
+   "vertoningen": 8,
+   "klikken": 0,
+   "positie": 6.5,
+   "registraties": 0
+  },
+  {
+   "slug": "cour-200-koop-en-huurappartementen-maastricht",
+   "pad": "/nieuwbouw-project/cour-200-koop-en-huurappartementen-maastricht/",
+   "vertoningen": 8,
+   "klikken": 0,
+   "positie": 8.9,
+   "registraties": 0
+  },
+  {
+   "slug": "evert-wonen-groningen",
+   "pad": "/nieuwbouw-project/evert-wonen-groningen/",
+   "vertoningen": 8,
+   "klikken": 0,
+   "positie": 6.8,
+   "registraties": 0
+  },
+  {
+   "slug": "nova-67-appartementen-zwolle",
+   "pad": "/nieuwbouw-project/nova-67-appartementen-zwolle/",
+   "vertoningen": 8,
+   "klikken": 0,
+   "positie": 8.8,
+   "registraties": 0
+  },
+  {
+   "slug": "plaza-residences-haarlem-haarlem",
+   "pad": "/nieuwbouw-project/plaza-residences-haarlem-haarlem/",
+   "vertoningen": 8,
+   "klikken": 1,
+   "positie": 7.5,
+   "registraties": 0
+  },
+  {
+   "slug": "weder-rotterdam",
+   "pad": "/nieuwbouw-project/weder-rotterdam/",
+   "vertoningen": 8,
+   "klikken": 0,
+   "positie": 9,
+   "registraties": 0
+  },
+  {
+   "slug": "t-maoleveld-horst-aan-de-maas",
+   "pad": "/nieuwbouw-project/t-maoleveld-horst-aan-de-maas/",
+   "vertoningen": 7,
+   "klikken": 1,
+   "positie": 7.4,
+   "registraties": 0
+  },
+  {
+   "slug": "waelhoven-fase-1-westland",
+   "pad": "/nieuwbouw-project/waelhoven-fase-1-westland/",
+   "vertoningen": 7,
+   "klikken": 0,
+   "positie": 8.4,
+   "registraties": 0
+  },
+  {
+   "slug": "winnerstraat-nederweert",
+   "pad": "/nieuwbouw-project/winnerstraat-nederweert/",
+   "vertoningen": 7,
+   "klikken": 0,
+   "positie": 7.9,
+   "registraties": 0
+  },
+  {
+   "slug": "luchenweide-geldrop-mierlo",
+   "pad": "/nieuwbouw-project/luchenweide-geldrop-mierlo/",
+   "vertoningen": 6,
+   "klikken": 0,
+   "positie": 9.5,
+   "registraties": 0
+  },
+  {
+   "slug": "terrazza-westland",
+   "pad": "/nieuwbouw-project/terrazza-westland/",
+   "vertoningen": 6,
+   "klikken": 0,
+   "positie": 16.3,
+   "registraties": 0
+  },
+  {
+   "slug": "the-forest-amsterdam",
+   "pad": "/nieuwbouw-project/the-forest-amsterdam/",
+   "vertoningen": 6,
+   "klikken": 0,
+   "positie": 9,
+   "registraties": 0
+  },
+  {
+   "slug": "walzicht-bergen-op-zoom",
+   "pad": "/nieuwbouw-project/walzicht-bergen-op-zoom/",
+   "vertoningen": 6,
+   "klikken": 0,
+   "positie": 14.2,
+   "registraties": 0
+  },
+  {
+   "slug": "wonen-in-duet-nijmegen",
+   "pad": "/nieuwbouw-project/wonen-in-duet-nijmegen/",
+   "vertoningen": 6,
+   "klikken": 0,
+   "positie": 9,
+   "registraties": 0
+  },
+  {
+   "slug": "de-bosrande-putten",
+   "pad": "/nieuwbouw-project/de-bosrande-putten/",
+   "vertoningen": 5,
+   "klikken": 0,
+   "positie": 2,
+   "registraties": 0
+  },
+  {
+   "slug": "hanick-woerden",
+   "pad": "/nieuwbouw-project/hanick-woerden/",
+   "vertoningen": 5,
+   "klikken": 0,
+   "positie": 16.2,
+   "registraties": 0
+  },
+  {
+   "slug": "mix-b-rotterdam",
+   "pad": "/nieuwbouw-project/mix-b-rotterdam/",
+   "vertoningen": 5,
+   "klikken": 0,
+   "positie": 5.8,
+   "registraties": 0
+  },
+  {
+   "slug": "nieuw-kralingen-aan-de-boezem-ii-rotterdam",
+   "pad": "/nieuwbouw-project/nieuw-kralingen-aan-de-boezem-ii-rotterdam/",
+   "vertoningen": 5,
+   "klikken": 0,
+   "positie": 4.8,
+   "registraties": 0
+  },
+  {
+   "slug": "rozenrijk-in-zwaag-hoorn",
+   "pad": "/nieuwbouw-project/rozenrijk-in-zwaag-hoorn/",
+   "vertoningen": 5,
+   "klikken": 0,
+   "positie": 13.8,
+   "registraties": 0
+  },
+  {
+   "slug": "elzenhagen-noordhof-5-amsterdam",
+   "pad": "/nieuwbouw-project/elzenhagen-noordhof-5-amsterdam/",
+   "vertoningen": 4,
+   "klikken": 0,
+   "positie": 7,
+   "registraties": 0
+  },
+  {
+   "slug": "lauwendael-fase-1-west-maas-en-waal",
+   "pad": "/nieuwbouw-project/lauwendael-fase-1-west-maas-en-waal/",
+   "vertoningen": 4,
+   "klikken": 0,
+   "positie": 26.5,
+   "registraties": 0
+  },
+  {
+   "slug": "satijnhof-enschede",
+   "pad": "/nieuwbouw-project/satijnhof-enschede/",
+   "vertoningen": 4,
+   "klikken": 0,
+   "positie": 9,
+   "registraties": 0
+  },
+  {
+   "slug": "the-yard-ii-dordrecht",
+   "pad": "/nieuwbouw-project/the-yard-ii-dordrecht/",
+   "vertoningen": 4,
+   "klikken": 1,
+   "positie": 8.5,
+   "registraties": 0
+  },
+  {
+   "slug": "tuinkwartier-amsterdam",
+   "pad": "/nieuwbouw-project/tuinkwartier-amsterdam/",
+   "vertoningen": 4,
+   "klikken": 0,
+   "positie": 5.5,
+   "registraties": 0
+  },
+  {
+   "slug": "de-veenhoven-mijdrecht-de-ronde-venen",
+   "pad": "/nieuwbouw-project/de-veenhoven-mijdrecht-de-ronde-venen/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 8.7,
+   "registraties": 0
+  },
+  {
+   "slug": "doornsteeg-nijkerk-nijkerk",
+   "pad": "/nieuwbouw-project/doornsteeg-nijkerk-nijkerk/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 38,
+   "registraties": 0
+  },
+  {
+   "slug": "heem-dongen",
+   "pad": "/nieuwbouw-project/heem-dongen/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 4.7,
+   "registraties": 0
+  },
+  {
+   "slug": "hollandse-meesters-amstelveen",
+   "pad": "/nieuwbouw-project/hollandse-meesters-amstelveen/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 11.7,
+   "registraties": 0
+  },
+  {
+   "slug": "kraanbaan-west-maas-en-waal",
+   "pad": "/nieuwbouw-project/kraanbaan-west-maas-en-waal/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 33.7,
+   "registraties": 0
+  },
+  {
+   "slug": "noorderbunder-dongen",
+   "pad": "/nieuwbouw-project/noorderbunder-dongen/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 6.3,
+   "registraties": 0
+  },
+  {
+   "slug": "oosterlicht-fase-1-de-ronde-venen",
+   "pad": "/nieuwbouw-project/oosterlicht-fase-1-de-ronde-venen/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 3.7,
+   "registraties": 0
+  },
+  {
+   "slug": "overhoeken-zaanstad",
+   "pad": "/nieuwbouw-project/overhoeken-zaanstad/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 58,
+   "registraties": 0
+  },
+  {
+   "slug": "tuinenrijk-veld-1-s-hertogenbosch",
+   "pad": "/nieuwbouw-project/tuinenrijk-veld-1-s-hertogenbosch/",
+   "vertoningen": 3,
+   "klikken": 0,
+   "positie": 35,
+   "registraties": 0
+  },
+  {
+   "slug": "bloom-park-utrecht",
+   "pad": "/nieuwbouw-project/bloom-park-utrecht/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 2,
+   "registraties": 0
+  },
+  {
+   "slug": "cix-merwede-utrecht",
+   "pad": "/nieuwbouw-project/cix-merwede-utrecht/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 22,
+   "registraties": 0
+  },
+  {
+   "slug": "de-heerlijkheid-curtis-heemskerk",
+   "pad": "/nieuwbouw-project/de-heerlijkheid-curtis-heemskerk/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 9.5,
+   "registraties": 0
+  },
+  {
+   "slug": "duinhil-s-gravenhage",
+   "pad": "/nieuwbouw-project/duinhil-s-gravenhage/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 4.5,
+   "registraties": 0
+  },
+  {
+   "slug": "dunoveste-renkum",
+   "pad": "/nieuwbouw-project/dunoveste-renkum/",
+   "vertoningen": 2,
+   "klikken": 1,
+   "positie": 5,
+   "registraties": 0
+  },
+  {
+   "slug": "ekp-fase-1-s-hertogenbosch",
+   "pad": "/nieuwbouw-project/ekp-fase-1-s-hertogenbosch/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 4,
+   "registraties": 0
+  },
+  {
+   "slug": "elzenhagen-zuidbuurt-parkvillaz-6-amsterdam",
+   "pad": "/nieuwbouw-project/elzenhagen-zuidbuurt-parkvillaz-6-amsterdam/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 2.5,
+   "registraties": 0
+  },
+  {
+   "slug": "essenvelt-laanvillas-middelburg-z",
+   "pad": "/nieuwbouw-project/essenvelt-laanvillas-middelburg-z/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 16,
+   "registraties": 0
+  },
+  {
+   "slug": "havenhart-harderwijk",
+   "pad": "/nieuwbouw-project/havenhart-harderwijk/",
+   "vertoningen": 2,
+   "klikken": 1,
+   "positie": 14,
+   "registraties": 0
+  },
+  {
+   "slug": "het-nieuwe-metterswane-nijmegen",
+   "pad": "/nieuwbouw-project/het-nieuwe-metterswane-nijmegen/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 10,
+   "registraties": 0
+  },
+  {
+   "slug": "leeuwepoort-appartementen-utrecht",
+   "pad": "/nieuwbouw-project/leeuwepoort-appartementen-utrecht/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 18,
+   "registraties": 0
+  },
+  {
+   "slug": "markant-moerdijk",
+   "pad": "/nieuwbouw-project/markant-moerdijk/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 3,
+   "registraties": 0
+  },
+  {
+   "slug": "monchy-den-haag-s-gravenhage",
+   "pad": "/nieuwbouw-project/monchy-den-haag-s-gravenhage/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 4,
+   "registraties": 0
+  },
+  {
+   "slug": "pendorp-alkmaar",
+   "pad": "/nieuwbouw-project/pendorp-alkmaar/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 8.5,
+   "registraties": 0
+  },
+  {
+   "slug": "riva-rotterdam",
+   "pad": "/nieuwbouw-project/riva-rotterdam/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 9.5,
+   "registraties": 0
+  },
+  {
+   "slug": "strijp-s4-fase-spark-eindhoven",
+   "pad": "/nieuwbouw-project/strijp-s4-fase-spark-eindhoven/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 10,
+   "registraties": 0
+  },
+  {
+   "slug": "up-north-amsterdam",
+   "pad": "/nieuwbouw-project/up-north-amsterdam/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 26.5,
+   "registraties": 0
+  },
+  {
+   "slug": "weespersluis-vechtrijk-3b1-amsterdam",
+   "pad": "/nieuwbouw-project/weespersluis-vechtrijk-3b1-amsterdam/",
+   "vertoningen": 2,
+   "klikken": 0,
+   "positie": 4,
+   "registraties": 0
+  },
+  {
+   "slug": "de-nieuwe-koepel-fase-2b-scherpenzeel",
+   "pad": "/nieuwbouw-project/de-nieuwe-koepel-fase-2b-scherpenzeel/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 4,
+   "registraties": 0
+  },
+  {
+   "slug": "de-oorsprong-fase-2-goirle",
+   "pad": "/nieuwbouw-project/de-oorsprong-fase-2-goirle/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 1,
+   "registraties": 0
+  },
+  {
+   "slug": "de-pauwentuin-leidschendam-voorburg",
+   "pad": "/nieuwbouw-project/de-pauwentuin-leidschendam-voorburg/",
+   "vertoningen": 1,
+   "klikken": 1,
+   "positie": 30,
+   "registraties": 0
+  },
+  {
+   "slug": "de-remise-hoorn",
+   "pad": "/nieuwbouw-project/de-remise-hoorn/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 2,
+   "registraties": 0
+  },
+  {
+   "slug": "de-tippe-de-zuidpunt-zwolle",
+   "pad": "/nieuwbouw-project/de-tippe-de-zuidpunt-zwolle/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 4,
+   "registraties": 0
+  },
+  {
+   "slug": "maestro-s-gravenhage",
+   "pad": "/nieuwbouw-project/maestro-s-gravenhage/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 2,
+   "registraties": 0
+  },
+  {
+   "slug": "marienburg-fase-1-gooise-meren",
+   "pad": "/nieuwbouw-project/marienburg-fase-1-gooise-meren/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 4,
+   "registraties": 0
+  },
+  {
+   "slug": "park-overdeschie-woningen-rotterdam",
+   "pad": "/nieuwbouw-project/park-overdeschie-woningen-rotterdam/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 6,
+   "registraties": 0
+  },
+  {
+   "slug": "roof-garden-amsterdam",
+   "pad": "/nieuwbouw-project/roof-garden-amsterdam/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 1,
+   "registraties": 0
+  },
+  {
+   "slug": "vlietpark-fase-2-rotterdam",
+   "pad": "/nieuwbouw-project/vlietpark-fase-2-rotterdam/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 2,
+   "registraties": 0
+  },
+  {
+   "slug": "west-vlaardingen",
+   "pad": "/nieuwbouw-project/west-vlaardingen/",
+   "vertoningen": 1,
+   "klikken": 0,
+   "positie": 5,
+   "registraties": 0
+  },
+  {
+   "slug": "1865-stationskwartier-heerhugowaard",
+   "pad": "/nieuwbouw-project/1865-stationskwartier-heerhugowaard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "aan-de-molenwerf-koog-aan-de-zaan",
+   "pad": "/nieuwbouw-project/aan-de-molenwerf-koog-aan-de-zaan/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "aarlesche-erven-deelplan-6a-best",
+   "pad": "/nieuwbouw-project/aarlesche-erven-deelplan-6a-best/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "avalon-breda",
+   "pad": "/nieuwbouw-project/avalon-breda/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bajeskwartier-the-martin-amsterdam",
+   "pad": "/nieuwbouw-project/bajeskwartier-the-martin-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bakkerswaard-fase-2-bakkerspad-nijkerk",
+   "pad": "/nieuwbouw-project/bakkerswaard-fase-2-bakkerspad-nijkerk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bebrink-hengelo",
+   "pad": "/nieuwbouw-project/bebrink-hengelo/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "beldershoek-medemblik",
+   "pad": "/nieuwbouw-project/beldershoek-medemblik/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bellevue-utrecht",
+   "pad": "/nieuwbouw-project/bellevue-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bentwijck-alphen-aan-den-rijn",
+   "pad": "/nieuwbouw-project/bentwijck-alphen-aan-den-rijn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bloom-merwede-utrecht",
+   "pad": "/nieuwbouw-project/bloom-merwede-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bloom-zuid-merwede-utrecht",
+   "pad": "/nieuwbouw-project/bloom-zuid-merwede-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "boegbeeld-79-woningen-amsterdam",
+   "pad": "/nieuwbouw-project/boegbeeld-79-woningen-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "bonheur-haarlemmermeer",
+   "pad": "/nieuwbouw-project/bonheur-haarlemmermeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "brinken-in-de-zoom-fase-2-harderwijk",
+   "pad": "/nieuwbouw-project/brinken-in-de-zoom-fase-2-harderwijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "brughoofd-koog-aan-de-zaan",
+   "pad": "/nieuwbouw-project/brughoofd-koog-aan-de-zaan/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "buitenrijk-deelgebied-2-fase-1-noordwijk",
+   "pad": "/nieuwbouw-project/buitenrijk-deelgebied-2-fase-1-noordwijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "buitenveen-aalsmeer-aalsmeer",
+   "pad": "/nieuwbouw-project/buitenveen-aalsmeer-aalsmeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "buyteleven-nieuwkoop",
+   "pad": "/nieuwbouw-project/buyteleven-nieuwkoop/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "campus-driene-cadanshof-hengelo",
+   "pad": "/nieuwbouw-project/campus-driene-cadanshof-hengelo/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "cartesius-costa-stadswoningen-utrecht",
+   "pad": "/nieuwbouw-project/cartesius-costa-stadswoningen-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "cartesius-nicoya-utrecht",
+   "pad": "/nieuwbouw-project/cartesius-nicoya-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "centraal-heerhugowaard-heerhugowaard",
+   "pad": "/nieuwbouw-project/centraal-heerhugowaard-heerhugowaard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "circulus-utrecht",
+   "pad": "/nieuwbouw-project/circulus-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "cix-merwede-fase-3-utrecht",
+   "pad": "/nieuwbouw-project/cix-merwede-fase-3-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "clarissenhof-tilburg",
+   "pad": "/nieuwbouw-project/clarissenhof-tilburg/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "connect-maashorst",
+   "pad": "/nieuwbouw-project/connect-maashorst/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "cuijkse-tuinen-wonen-in-het-groen-zuid-fase-5-cuijk",
+   "pad": "/nieuwbouw-project/cuijkse-tuinen-wonen-in-het-groen-zuid-fase-5-cuijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-berghorst-fase-1-wierden",
+   "pad": "/nieuwbouw-project/de-berghorst-fase-1-wierden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-biezenweie-serooskerke",
+   "pad": "/nieuwbouw-project/de-biezenweie-serooskerke/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-boeg-dordrecht",
+   "pad": "/nieuwbouw-project/de-boeg-dordrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-brugse-zoom-nieuwerbrug-aan-den-rijn",
+   "pad": "/nieuwbouw-project/de-brugse-zoom-nieuwerbrug-aan-den-rijn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-buitentuin-van-baak-baak",
+   "pad": "/nieuwbouw-project/de-buitentuin-van-baak-baak/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-faam-breda",
+   "pad": "/nieuwbouw-project/de-faam-breda/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-groene-gaarde-zuidhorn",
+   "pad": "/nieuwbouw-project/de-groene-gaarde-zuidhorn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-helden-van-vroondaal-s-gravenhage",
+   "pad": "/nieuwbouw-project/de-helden-van-vroondaal-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-hendrik-dordrecht",
+   "pad": "/nieuwbouw-project/de-hendrik-dordrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-hoven-fase-1b-gennep",
+   "pad": "/nieuwbouw-project/de-hoven-fase-1b-gennep/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-johan-van-beverwijck-dordrecht",
+   "pad": "/nieuwbouw-project/de-johan-van-beverwijck-dordrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-koploper-delft",
+   "pad": "/nieuwbouw-project/de-koploper-delft/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-kreek-van-de-torensteepolder-numansdorp",
+   "pad": "/nieuwbouw-project/de-kreek-van-de-torensteepolder-numansdorp/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-meesters-van-vroondaal-fase-2-te-s-gravenhage-s-gravenhage",
+   "pad": "/nieuwbouw-project/de-meesters-van-vroondaal-fase-2-te-s-gravenhage-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-nieuwe-boterpolder-alphen-aan-den-rijn",
+   "pad": "/nieuwbouw-project/de-nieuwe-boterpolder-alphen-aan-den-rijn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-oostergast-westerkwartier",
+   "pad": "/nieuwbouw-project/de-oostergast-westerkwartier/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-overtuin-molenlanden",
+   "pad": "/nieuwbouw-project/de-overtuin-molenlanden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-portier-druten",
+   "pad": "/nieuwbouw-project/de-portier-druten/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-tuinen-ii-koggenland",
+   "pad": "/nieuwbouw-project/de-tuinen-ii-koggenland/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-waalhoven-nijmegen",
+   "pad": "/nieuwbouw-project/de-waalhoven-nijmegen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "de-zaanse-helden-zaanstad",
+   "pad": "/nieuwbouw-project/de-zaanse-helden-zaanstad/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "delft77-assen",
+   "pad": "/nieuwbouw-project/delft77-assen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "dillekwartier-arnhem",
+   "pad": "/nieuwbouw-project/dillekwartier-arnhem/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "doonheide-ii-fase-4-gemert-bakel",
+   "pad": "/nieuwbouw-project/doonheide-ii-fase-4-gemert-bakel/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "dorps-wonen-ii-mook-en-middelaar",
+   "pad": "/nieuwbouw-project/dorps-wonen-ii-mook-en-middelaar/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "droomweide-meerkerk",
+   "pad": "/nieuwbouw-project/droomweide-meerkerk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "edgarshof-koog-aan-de-zaan",
+   "pad": "/nieuwbouw-project/edgarshof-koog-aan-de-zaan/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "eikenstein-zeist",
+   "pad": "/nieuwbouw-project/eikenstein-zeist/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "eilanden-van-hain-zaanstad",
+   "pad": "/nieuwbouw-project/eilanden-van-hain-zaanstad/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "elements-amsterdam",
+   "pad": "/nieuwbouw-project/elements-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "elzenhagen-noordhof-3-amsterdam",
+   "pad": "/nieuwbouw-project/elzenhagen-noordhof-3-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "elzenhagen-noordhof-4-amsterdam",
+   "pad": "/nieuwbouw-project/elzenhagen-noordhof-4-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "elzenhagen-zuidbuurt-parkvillaz-7-en-14-amsterdam",
+   "pad": "/nieuwbouw-project/elzenhagen-zuidbuurt-parkvillaz-7-en-14-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "enka-t-hartogshof-ede",
+   "pad": "/nieuwbouw-project/enka-t-hartogshof-ede/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "erve-berchus-hengelo",
+   "pad": "/nieuwbouw-project/erve-berchus-hengelo/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "flora-haarlemmermeer",
+   "pad": "/nieuwbouw-project/flora-haarlemmermeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "hart-van-vrouwenakker-nieuwveen",
+   "pad": "/nieuwbouw-project/hart-van-vrouwenakker-nieuwveen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "heidepost-soesterberg",
+   "pad": "/nieuwbouw-project/heidepost-soesterberg/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "het-korianderkwartier-vroomshoop",
+   "pad": "/nieuwbouw-project/het-korianderkwartier-vroomshoop/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "het-molenkwartier-woerden",
+   "pad": "/nieuwbouw-project/het-molenkwartier-woerden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "het-veld-fase-4-oss",
+   "pad": "/nieuwbouw-project/het-veld-fase-4-oss/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "het-zuider-carre-rotterdam",
+   "pad": "/nieuwbouw-project/het-zuider-carre-rotterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "heulpark-kwintsheul-kwintsheul",
+   "pad": "/nieuwbouw-project/heulpark-kwintsheul-kwintsheul/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "hoeksenes-amsterdam",
+   "pad": "/nieuwbouw-project/hoeksenes-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "hoendersveld-venray",
+   "pad": "/nieuwbouw-project/hoendersveld-venray/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "hoeverijk-nieuwegein-nieuwegein",
+   "pad": "/nieuwbouw-project/hoeverijk-nieuwegein-nieuwegein/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "hof-van-haag-s-gravenhage",
+   "pad": "/nieuwbouw-project/hof-van-haag-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "hof-van-rijswijk-rijswijk",
+   "pad": "/nieuwbouw-project/hof-van-rijswijk-rijswijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "honk-hoofddorp-haarlemmermeer",
+   "pad": "/nieuwbouw-project/honk-hoofddorp-haarlemmermeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "inck-veld-a-eindhoven",
+   "pad": "/nieuwbouw-project/inck-veld-a-eindhoven/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "ivoordreef-fase-2-utrecht",
+   "pad": "/nieuwbouw-project/ivoordreef-fase-2-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "ivoordreef-utrecht",
+   "pad": "/nieuwbouw-project/ivoordreef-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "jazz-city-roermond",
+   "pad": "/nieuwbouw-project/jazz-city-roermond/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "joie-de-vivre-nijmegen-nijmegen",
+   "pad": "/nieuwbouw-project/joie-de-vivre-nijmegen-nijmegen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "kbf-dock-amsterdam",
+   "pad": "/nieuwbouw-project/kbf-dock-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "klokkengietery-laarbeek",
+   "pad": "/nieuwbouw-project/klokkengietery-laarbeek/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "kloostergoed-theresia-vught",
+   "pad": "/nieuwbouw-project/kloostergoed-theresia-vught/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "koningswei-koop-tilburg",
+   "pad": "/nieuwbouw-project/koningswei-koop-tilburg/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "koopse-glorie-fase-2-boskoop",
+   "pad": "/nieuwbouw-project/koopse-glorie-fase-2-boskoop/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "kop-west-alphen-aan-den-rijn",
+   "pad": "/nieuwbouw-project/kop-west-alphen-aan-den-rijn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "kop-west-wonen-alphen-aan-den-rijn",
+   "pad": "/nieuwbouw-project/kop-west-wonen-alphen-aan-den-rijn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "korenveld-fase-2-wanroij",
+   "pad": "/nieuwbouw-project/korenveld-fase-2-wanroij/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "la-brique-milsbeek",
+   "pad": "/nieuwbouw-project/la-brique-milsbeek/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "la-vinea-papendrecht",
+   "pad": "/nieuwbouw-project/la-vinea-papendrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "landgoed-voorlei-leidschendam",
+   "pad": "/nieuwbouw-project/landgoed-voorlei-leidschendam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "lange-wemen-hengelo-o",
+   "pad": "/nieuwbouw-project/lange-wemen-hengelo-o/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "langepad-zaandijk",
+   "pad": "/nieuwbouw-project/langepad-zaandijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "le-jardin-hoofddorp-haarlemmermeer",
+   "pad": "/nieuwbouw-project/le-jardin-hoofddorp-haarlemmermeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "leehoogte-hardenberg",
+   "pad": "/nieuwbouw-project/leehoogte-hardenberg/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "leeuwepoort-herenhuizen-en-stadswoningen-utrecht",
+   "pad": "/nieuwbouw-project/leeuwepoort-herenhuizen-en-stadswoningen-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "leonard-roosendaal-roosendaal",
+   "pad": "/nieuwbouw-project/leonard-roosendaal-roosendaal/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "linck-in-de-binck-s-gravenhage",
+   "pad": "/nieuwbouw-project/linck-in-de-binck-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "liv-dordrecht-dordrecht",
+   "pad": "/nieuwbouw-project/liv-dordrecht-dordrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "ludens-grow-utrecht",
+   "pad": "/nieuwbouw-project/ludens-grow-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "ludens-joy-utrecht",
+   "pad": "/nieuwbouw-project/ludens-joy-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "m-llincksvaart-fase-3-4-bergentheim",
+   "pad": "/nieuwbouw-project/m-llincksvaart-fase-3-4-bergentheim/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "melkhal-appartementen-enschede",
+   "pad": "/nieuwbouw-project/melkhal-appartementen-enschede/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "merwede-cix-blok-13-utrecht",
+   "pad": "/nieuwbouw-project/merwede-cix-blok-13-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "mica-mijdrecht-de-ronde-venen",
+   "pad": "/nieuwbouw-project/mica-mijdrecht-de-ronde-venen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "moerheim-dedemsvaart",
+   "pad": "/nieuwbouw-project/moerheim-dedemsvaart/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "molenhoek-zuid-dorps-wonen-i-molenhoek",
+   "pad": "/nieuwbouw-project/molenhoek-zuid-dorps-wonen-i-molenhoek/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "molenhoek-zuid-l-dorps-wonen-ll-molenhoek",
+   "pad": "/nieuwbouw-project/molenhoek-zuid-l-dorps-wonen-ll-molenhoek/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "molenhof-emmen",
+   "pad": "/nieuwbouw-project/molenhof-emmen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "muntbloem-zaanstad",
+   "pad": "/nieuwbouw-project/muntbloem-zaanstad/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nelson-amsterdam-amsterdam",
+   "pad": "/nieuwbouw-project/nelson-amsterdam-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "neptunus-stichtse-vecht",
+   "pad": "/nieuwbouw-project/neptunus-stichtse-vecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nh19-18-zutphen",
+   "pad": "/nieuwbouw-project/nh19-18-zutphen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nieuw-achterveld-west-maas-en-waal",
+   "pad": "/nieuwbouw-project/nieuw-achterveld-west-maas-en-waal/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nieuw-gelle-fase-3-4-winterswijk-meddo",
+   "pad": "/nieuwbouw-project/nieuw-gelle-fase-3-4-winterswijk-meddo/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nieuw-mosveen-s-gravenhage",
+   "pad": "/nieuwbouw-project/nieuw-mosveen-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nieuwe-rede-leimuiden",
+   "pad": "/nieuwbouw-project/nieuwe-rede-leimuiden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nieuwe-weelde-hoorn",
+   "pad": "/nieuwbouw-project/nieuwe-weelde-hoorn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nij-wenwille-drachten",
+   "pad": "/nieuwbouw-project/nij-wenwille-drachten/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "noarderstek-fase-4-noardeast-fryslan",
+   "pad": "/nieuwbouw-project/noarderstek-fase-4-noardeast-fryslan/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "noi-avenue-s-gravenhage",
+   "pad": "/nieuwbouw-project/noi-avenue-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "nooitgedacht-philip-schaap-kuhne-zeist",
+   "pad": "/nieuwbouw-project/nooitgedacht-philip-schaap-kuhne-zeist/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "noordkade-doetinchem",
+   "pad": "/nieuwbouw-project/noordkade-doetinchem/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "omega-leiden",
+   "pad": "/nieuwbouw-project/omega-leiden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "ooievaarshoek-oss",
+   "pad": "/nieuwbouw-project/ooievaarshoek-oss/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "op-de-roeibaan-meerstad",
+   "pad": "/nieuwbouw-project/op-de-roeibaan-meerstad/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "op-den-donk-duiven",
+   "pad": "/nieuwbouw-project/op-den-donk-duiven/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "overstaete-alkmaar",
+   "pad": "/nieuwbouw-project/overstaete-alkmaar/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "pam-pampuslaan-1-amsterdam",
+   "pad": "/nieuwbouw-project/pam-pampuslaan-1-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "parador-scheveningseweg-82-s-gravenhage",
+   "pad": "/nieuwbouw-project/parador-scheveningseweg-82-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "parc-sandur-emmen",
+   "pad": "/nieuwbouw-project/parc-sandur-emmen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "parckhart-soest",
+   "pad": "/nieuwbouw-project/parckhart-soest/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "park-beresteijn-voorschoten",
+   "pad": "/nieuwbouw-project/park-beresteijn-voorschoten/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "parkbuurt-almelo",
+   "pad": "/nieuwbouw-project/parkbuurt-almelo/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "parkbuurt-almelo-fase-1b-almelo",
+   "pad": "/nieuwbouw-project/parkbuurt-almelo-fase-1b-almelo/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "parkzijde-rijswijk-rijswijk",
+   "pad": "/nieuwbouw-project/parkzijde-rijswijk-rijswijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "pioniers-van-middelsee-fase-3-leeuwarden",
+   "pad": "/nieuwbouw-project/pioniers-van-middelsee-fase-3-leeuwarden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "plesmanduin-nieuwbouw-s-gravenhage",
+   "pad": "/nieuwbouw-project/plesmanduin-nieuwbouw-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "podium-amersfoort",
+   "pad": "/nieuwbouw-project/podium-amersfoort/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "poldervaart-medemblik",
+   "pad": "/nieuwbouw-project/poldervaart-medemblik/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "polly-amsterdam",
+   "pad": "/nieuwbouw-project/polly-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "porta-woerden",
+   "pad": "/nieuwbouw-project/porta-woerden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "portier-l-woningen-druten",
+   "pad": "/nieuwbouw-project/portier-l-woningen-druten/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "pracht-zutphen",
+   "pad": "/nieuwbouw-project/pracht-zutphen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "quatrebras-badhoevedorp-haarlemmermeer",
+   "pad": "/nieuwbouw-project/quatrebras-badhoevedorp-haarlemmermeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "quatrebras-park-quartier-iii-fase-2-haarlemmermeer",
+   "pad": "/nieuwbouw-project/quatrebras-park-quartier-iii-fase-2-haarlemmermeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "rhijn-nieuwegein",
+   "pad": "/nieuwbouw-project/rhijn-nieuwegein/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "rodeo-broek-op-langedijk",
+   "pad": "/nieuwbouw-project/rodeo-broek-op-langedijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "roodhekkenpas-west-druten",
+   "pad": "/nieuwbouw-project/roodhekkenpas-west-druten/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "rozenbuurt-fase-1a-hoorn",
+   "pad": "/nieuwbouw-project/rozenbuurt-fase-1a-hoorn/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "s-gravendeel-west-fase-1a-hoeksche-waard",
+   "pad": "/nieuwbouw-project/s-gravendeel-west-fase-1a-hoeksche-waard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "schuitegat-scheveningen-s-gravenhage",
+   "pad": "/nieuwbouw-project/schuitegat-scheveningen-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "sem-hoofddorp-haarlemmermeer",
+   "pad": "/nieuwbouw-project/sem-hoofddorp-haarlemmermeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "sierlijke-dames-eindhoven",
+   "pad": "/nieuwbouw-project/sierlijke-dames-eindhoven/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "silhouet-wormerland",
+   "pad": "/nieuwbouw-project/silhouet-wormerland/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "sint-anna-oudenbosch-halderberge",
+   "pad": "/nieuwbouw-project/sint-anna-oudenbosch-halderberge/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "smakkelaarspark-parkgebouw-utrecht",
+   "pad": "/nieuwbouw-project/smakkelaarspark-parkgebouw-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "stationsmeester-heerhugowaard",
+   "pad": "/nieuwbouw-project/stationsmeester-heerhugowaard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "stockholm-nissewaard",
+   "pad": "/nieuwbouw-project/stockholm-nissewaard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "strandparel-rockanje-rockanje",
+   "pad": "/nieuwbouw-project/strandparel-rockanje-rockanje/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "swanladriehoek-zuidplas",
+   "pad": "/nieuwbouw-project/swanladriehoek-zuidplas/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "t-kofschip-veenendaal",
+   "pad": "/nieuwbouw-project/t-kofschip-veenendaal/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "teelebeek-milsbeek",
+   "pad": "/nieuwbouw-project/teelebeek-milsbeek/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "the-hive-amsterdam",
+   "pad": "/nieuwbouw-project/the-hive-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "the-suites-sluisbuurt-amsterdam",
+   "pad": "/nieuwbouw-project/the-suites-sluisbuurt-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "treilerstaete-s-gravenhage",
+   "pad": "/nieuwbouw-project/treilerstaete-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "tuinenrijk-veld-2-s-hertogenbosch",
+   "pad": "/nieuwbouw-project/tuinenrijk-veld-2-s-hertogenbosch/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "tuinenrijk-veld-3a-s-hertogenbosch",
+   "pad": "/nieuwbouw-project/tuinenrijk-veld-3a-s-hertogenbosch/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "tussen-de-leijen-gilze-en-rijen",
+   "pad": "/nieuwbouw-project/tussen-de-leijen-gilze-en-rijen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "vad07bc-zelfbouwkavels-wageningen",
+   "pad": "/nieuwbouw-project/vad07bc-zelfbouwkavels-wageningen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "vadapark-wageningen",
+   "pad": "/nieuwbouw-project/vadapark-wageningen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "veenrijck-fase-1-nijkerkerveen",
+   "pad": "/nieuwbouw-project/veenrijck-fase-1-nijkerkerveen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "veldhoven-slot-oost-veldhoven",
+   "pad": "/nieuwbouw-project/veldhoven-slot-oost-veldhoven/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "vlietzicht-landgoed-voorlei-leidschendam",
+   "pad": "/nieuwbouw-project/vlietzicht-landgoed-voorlei-leidschendam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "vosholen-midden-groningen",
+   "pad": "/nieuwbouw-project/vosholen-midden-groningen/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "vrije-kavels-kreekrijk-assendelft",
+   "pad": "/nieuwbouw-project/vrije-kavels-kreekrijk-assendelft/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "weidse-peel-sint-anthonis",
+   "pad": "/nieuwbouw-project/weidse-peel-sint-anthonis/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "westeinderhage-fase-1-aalsmeer",
+   "pad": "/nieuwbouw-project/westeinderhage-fase-1-aalsmeer/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "westvaartpark-fase-3-hazerswoude-rijndijk",
+   "pad": "/nieuwbouw-project/westvaartpark-fase-3-hazerswoude-rijndijk/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "wildgroei-haarzuilens",
+   "pad": "/nieuwbouw-project/wildgroei-haarzuilens/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "wildgroei-utrecht",
+   "pad": "/nieuwbouw-project/wildgroei-utrecht/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "willemspoort-zuid-s-hertogenbosch",
+   "pad": "/nieuwbouw-project/willemspoort-zuid-s-hertogenbosch/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "willow-amsterdam",
+   "pad": "/nieuwbouw-project/willow-amsterdam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "wonen-aan-de-spoorsingel-fase-2-krimpenerwaard",
+   "pad": "/nieuwbouw-project/wonen-aan-de-spoorsingel-fase-2-krimpenerwaard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "wonen-aan-het-alkmaardermeer-akersloot",
+   "pad": "/nieuwbouw-project/wonen-aan-het-alkmaardermeer-akersloot/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "wonen-in-hilko-zaandam-zaanstad",
+   "pad": "/nieuwbouw-project/wonen-in-hilko-zaandam-zaanstad/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "wonen-in-woodstone-sequoia-dijk-en-waard",
+   "pad": "/nieuwbouw-project/wonen-in-woodstone-sequoia-dijk-en-waard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "wonen-op-hembrug-zaanstad",
+   "pad": "/nieuwbouw-project/wonen-op-hembrug-zaanstad/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "woodstone-sequoia-heerhugowaard",
+   "pad": "/nieuwbouw-project/woodstone-sequoia-heerhugowaard/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "ypsilon-park-s-gravenhage",
+   "pad": "/nieuwbouw-project/ypsilon-park-s-gravenhage/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "zaam-zaandam-zaandam",
+   "pad": "/nieuwbouw-project/zaam-zaandam-zaandam/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "zaam-zaandam-zaanstad",
+   "pad": "/nieuwbouw-project/zaam-zaandam-zaanstad/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "zuidbroek-wierden-fase-3-wierden",
+   "pad": "/nieuwbouw-project/zuidbroek-wierden-fase-3-wierden/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  },
+  {
+   "slug": "zuidzicht-alkmaar",
+   "pad": "/nieuwbouw-project/zuidzicht-alkmaar/",
+   "vertoningen": 0,
+   "klikken": 0,
+   "positie": null,
+   "registraties": 0
+  }
+ ]
+}

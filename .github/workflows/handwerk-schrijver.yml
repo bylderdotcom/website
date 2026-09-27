@@ -16,6 +16,19 @@ name: Opgezochte feiten per project schrijven
 # controledatum) is de tweede zeef; deze PR is de eerste.
 
 on:
+  # Wekelijks, op zaterdag. Bewust ná de ontdekkingsloop (vrijdag 07:00) en de
+  # publicatieloop (donderdag 05:00): nieuwe projecten zijn dan al binnen, en de
+  # feiten die hier bijkomen gaan mee met de publicatie van de week erop.
+  #
+  # Waarom dit een schema verdient en de andere loops in dit cluster ook hebben:
+  # 105 van de 287 projectpagina's hebben nog geen opgezochte feiten, en dat zijn
+  # precies de pagina's die op 20% eigen tekst blijven staan. Zonder schema komen
+  # die er niet bij en meten we op 13 oktober een stand die stilstaat.
+  #
+  # Het script slaat over wat het al heeft, dus een wekelijkse ronde raakt alleen
+  # wat nog leeg is of wat ouder is dan de houdbaarheid van 400 dagen.
+  schedule:
+    - cron: "0 6 * * 6"   # zaterdag 06:00 UTC
   workflow_dispatch:
     inputs:
       max:
