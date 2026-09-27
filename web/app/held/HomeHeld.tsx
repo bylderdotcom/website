@@ -24,7 +24,7 @@ const CONFIGURATOR = '/kozijnloze-deuren/configurator/'
 // (78 m² is 10,40 × 7,80); merk en korting worden hieronder uit de data gelezen.
 const VOORBEELD: Array<Omit<Regel, 'korting'> & { zoek: string; vast?: string }> = [
   { hoeveel: '12', eenheid: 'stuks', wat: 'Binnendeuren', toelichting: 'Plafondhoog, zonder kozijn, elke RAL-kleur', merk: 'ClassicNext', zoek: 'Classic Next', vast: 'configurator' },
-  { hoeveel: '78', eenheid: 'm² begane grond', wat: 'Gietvloer', toelichting: 'Over de hele begane grond, zonder naden', merk: 'DRT Flooring', zoek: 'DRT Contemporary Flooring' },
+  { hoeveel: '78', eenheid: 'm² vloer', wat: 'Gietvloer', toelichting: 'Over de hele begane grond, zonder naden', merk: 'DRT Flooring', zoek: 'DRT Contemporary Flooring' },
   { hoeveel: '9', eenheid: 'ramen', wat: 'Raamdecoratie', toelichting: 'Opgemeten voordat de steiger weg is', merk: 'Berg & Berg', zoek: 'Berg & Berg Den Haag' },
   { hoeveel: '3', eenheid: 'slaapkamers', wat: 'Bedden', toelichting: 'Met leenbed tijdens de levertijd', merk: 'Auping', zoek: 'Auping' },
   { hoeveel: '34', eenheid: 'lichtpunten', wat: 'Verlichting', toelichting: 'Op de punten die al in de tekening staan', merk: 'Lamp en Licht', zoek: 'Lamp en Licht' },
@@ -53,6 +53,21 @@ function uitgelicht(lijst: Deelnemer[], n = 12): Deelnemer[] {
   }
   return uit.slice(0, n)
 }
+
+
+// Vragen die een bezoeker op de homepage stelt, in zijn woorden. Zichtbaar op
+// de pagina én als FAQPage-schema, zodat een zoekmachine of een taalmodel het
+// antwoord kan citeren zonder de hele pagina te hoeven begrijpen.
+const VRAGEN: Array<[string, string]> = [
+  ['Wat doet Bylder precies?',
+   'Bylder leest de plattegrond en de bouwplanning van je nieuwbouwwoning uit. Daaruit volgt wat je moet kiezen (deuren, vloer, verlichting, raamdecoratie), wanneer de bouwer die keuze sluit, en bij welke aangesloten merken je het met korting koopt. Je deuren stel je alvast in 3D samen, met het aantal uit je eigen tekening.'],
+  ['Is Bylder gratis?',
+   'Ja, voor bewoners. De aangesloten merken en vakbedrijven betalen om vindbaar te zijn; daarom houden we advies en verkoop strikt gescheiden en staat bij elk product wie het levert.'],
+  ['Werkt het ook als mijn project nog niet op Bylder staat?',
+   'Ja. Vul je adres in: de woningscan leest het Kadaster en werkt op elk adres in Nederland. Een projectpagina is handig, maar niet nodig om je plattegrond te laten uitlezen.'],
+  ['Wat heb ik aan Bylder na de oplevering?',
+   'Je dossier blijft bestaan: dezelfde tekening, dezelfde merken, dezelfde adviseur. Voor de tuin, de zonwering, de laadpaal en de meubels, en voor garantie (Woningborg of SWK) en onderhoud van installaties.'],
+]
 
 const CAT_NL: Record<string, string> = {
   'PVC vloer': 'Vloeren', Meubelen: 'Meubels', Kitchen: 'Keuken', Vakman: 'Klussen', Deuren: 'Binnendeuren',
@@ -116,7 +131,7 @@ export default function HomeHeld() {
             </form>
 
             <p className="hh-zijpad">
-              Bestaande bouw of verbouwen? <a href="/functies/#renovatie">Die kant op →</a>
+              Geen nieuwbouw? <a href="/functies/#bestaande-bouw">Bestaande bouw</a> · <a href="/functies/#renovatie">Verbouwen</a> · <a href="/functies/#nieuwbouw">Alle functies</a>
             </p>
           </div>
 
@@ -240,6 +255,7 @@ export default function HomeHeld() {
                 <li><a href="/kennisbank/installaties/wtw-ventilatie-woning/">WTW-ventilatie: filters en onderhoud</a></li>
                 <li><a href="/kennisbank/vloeren/vloeronderhoud/">Vloeronderhoud per vloertype</a></li>
                 <li><a href="/kennisbank/badkamer/badkamer-onderhoud/">Badkamer onderhouden</a></li>
+                <li><a href="/woning-verduurzamen/ventilatie/">Ventilatie in een nieuwbouwwoning</a></li>
               </ul>
             </div>
             <div>
@@ -247,6 +263,7 @@ export default function HomeHeld() {
               <p>De tuin, de zonwering, de laadpaal: de grote uitgaven van het eerste jaar. Met dezelfde korting als vóór de sleutel.</p>
               <ul>
                 <li><a href="/nieuwbouw-gids/tuin-aanleggen/">Tuin aanleggen bij nieuwbouw</a></li>
+                <li><a href="/tuin-aanleggen/schutting-schermen/">Schutting en schermen</a></li>
                 <li><a href="/kennisbank/installaties/laadpaal-thuis/">Laadpaal thuis</a></li>
                 <li><a href="/nieuwbouw-gids/afwerking-na-oplevering/">Afwerking na de oplevering</a></li>
               </ul>
@@ -255,11 +272,31 @@ export default function HomeHeld() {
         </div>
       </section>
 
-      {/* ── 8. Kosten per gemeente + op maat (ongewijzigd) ── */}
+      {/* ── 8. Vragen ── */}
+      <section className="hh-faq">
+        <div className="hh-wrap">
+          <div className="hh-kop">
+            <p className="hh-oog">Veelgestelde vragen</p>
+            <h2>Kort en eerlijk.</h2>
+          </div>
+          <dl className="hh-vragen">
+            {VRAGEN.map(([v, a]) => (
+              <div key={v}><dt>{v}</dt><dd>{a}</dd></div>
+            ))}
+          </dl>
+        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'FAQPage',
+          mainEntity: VRAGEN.map(([v, a]) => ({ '@type': 'Question', name: v,
+            acceptedAnswer: { '@type': 'Answer', text: a } })),
+        }) }} />
+      </section>
+
+      {/* ── 9. Kosten per gemeente + op maat (ongewijzigd) ── */}
       <div dangerouslySetInnerHTML={{ __html: HOME_DELEN[8] }} />
       <div dangerouslySetInnerHTML={{ __html: HOME_DELEN[5] }} />
 
-      {/* ── 9. Gidsen, tools, steden + overlays (ongewijzigd) ── */}
+      {/* ── 10. Gidsen, tools, steden + overlays (ongewijzigd) ── */}
       <div dangerouslySetInnerHTML={{ __html: HOME_DELEN[10] }} />
     </>
   )

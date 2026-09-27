@@ -77,7 +77,7 @@ export default function HeldToneel({ regels, merken }: { regels: Regel[]; merken
 
         <div className="ht-staat">
           <div className="ht-staatkop">
-            <h2>Wat je nog moet kiezen</h2>
+            <p className="ht-kop">Wat je nog moet kiezen</p>
             <span>uit je eigen tekening</span>
           </div>
           {regels.map((r, i) => (

@@ -13,7 +13,7 @@ const OG_DESC =
 export const metadata: Metadata = {
   title: 'Richt je nieuwbouwhuis in voordat het er staat | Bylder',
   description:
-    'Wij lezen je plattegrond en de bouwplanning. Zo weet je per keuze wanneer hij valt en stel je deuren, vloer en verlichting alvast samen — met korting bij 56 merken. Gratis voor bewoners.',
+    'Bylder leest je plattegrond en de bouwplanning: per keuze wanneer hij valt, en je deuren, vloer en licht alvast samengesteld. Korting bij 56 merken. Gratis voor bewoners.',
   authors: [{ name: 'Bylder Nederland B.V.' }],
   keywords: [
     'kopersbegeleiding nieuwbouw', 'offerte check aannemer', 'meerwerk controleren',

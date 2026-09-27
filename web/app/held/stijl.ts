@@ -76,7 +76,7 @@ export const HELD_STIJL = `
 .ht-staat{padding:20px 22px 18px;display:flex;flex-direction:column}
 .ht-staatkop{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:8px;
   border-bottom:1.5px solid #1A1208}
-.ht-staatkop h2{margin:0;font-size:13px;font-weight:700;letter-spacing:.01em;color:#1A1208}
+.ht-staatkop .ht-kop{margin:0;font-size:13px;font-weight:700;letter-spacing:.01em;color:#1A1208}
 .ht-staatkop span{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
   color:rgba(61,46,30,.5)}
 .ht-rij{display:grid;grid-template-columns:58px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:9px 0;
@@ -162,12 +162,20 @@ export const HELD_STIJL = `
 .hh-na-grid a{color:#F5F0E8;font-size:14px;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(245,240,232,.3)}
 .hh-na-grid a:hover{border-bottom-color:#E8A87C;color:#E8A87C}
 
+/* ── 8. vragen ── */
+.hh-faq{background:#F5F0E8;padding:72px 0}
+.hh-vragen{margin:28px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 40px}
+.hh-vragen div{border-top:1.5px solid #1A1208;padding-top:14px}
+.hh-vragen dt{font-size:17px;font-weight:800;letter-spacing:-.015em;color:#1A1208;margin:0 0 6px}
+.hh-vragen dd{margin:0;font-size:14.5px;line-height:1.65;color:rgba(61,46,30,.74);max-width:60ch}
+
 @media(max-width:1000px){
   .hh-hero-grid{grid-template-columns:1fr;gap:36px}
   .hh-stappen{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hh-stappen::before{display:none}
   .hh-merkraster{grid-template-columns:repeat(3,minmax(0,1fr))}
   .hh-na-grid{grid-template-columns:1fr;gap:22px}
+  .hh-vragen{grid-template-columns:1fr}
 }
 @media(max-width:720px){
   .hh-wrap{padding:0 18px}
@@ -189,7 +197,8 @@ export const HELD_STIJL = `
   .ht-tekenvlak{border-right:0;border-bottom:1px solid rgba(61,46,30,.12);min-height:230px}
   .ht-plan{width:min(240px,80%)}
   .ht-staat{padding:16px 14px 14px}
-  .ht-rij{grid-template-columns:50px minmax(0,1fr) auto;gap:9px}
+  .ht-rij{grid-template-columns:56px minmax(0,1fr) auto;gap:9px}
+  .ht-hoeveel small{font-size:7.5px;letter-spacing:.04em}
   .ht-wat span{display:none}
   .ht-rail{grid-template-columns:repeat(5,1fr)}
   .ht-stap{padding:8px 6px}
