@@ -23,6 +23,17 @@ export type Regel = {
   korting: string   // "10%" of "configurator"
 }
 
+// De muren, als vlakken die uit de vloer omhoog komen zodra de tekening
+// kantelt (fase 2). Coördinaten in het 400×312-stelsel van de plattegrond:
+// [x, y, lengte, hoek, buitenmuur]. Openingen in de muren zijn de deuren die
+// in de SVG rood oplichten; die stukken zijn hier weggelaten.
+const MUREN: Array<[number, number, number, 0 | 90, boolean]> = [
+  [22, 22, 356, 0, true], [378, 22, 268, 90, true], [22, 290, 356, 0, true], [22, 22, 268, 90, true],
+  [22, 170, 74, 0, false], [130, 170, 52, 0, false], [216, 170, 30, 0, false],
+  [246, 22, 74, 90, false], [246, 130, 116, 90, false], [246, 280, 10, 90, false],
+  [246, 220, 38, 0, false], [318, 220, 18, 0, false], [366, 220, 12, 0, false],
+]
+
 const FASEN = [
   ['1', 'Je tekening'],
   ['2', 'Uitgelezen'],
@@ -71,6 +82,14 @@ export default function HeldToneel({ regels, merken }: { regels: Regel[]; merken
               <text className="ht-maat" x="312" y="126" textAnchor="middle">HAL</text>
               <text className="ht-maat" x="312" y="262" textAnchor="middle">BERGING</text>
             </svg>
+            <div className="ht-muren" aria-hidden="true">
+              {MUREN.map(([x, y, l, a, buiten], n) => (
+                <div key={n} className={'ht-m' + (buiten ? ' buiten' : '')} style={{
+                  left: `${x / 4}%`, top: `${y / 3.12}%`, width: `${l / 4}%`,
+                  ['--a' as string]: `${a}deg`, ['--n' as string]: n,
+                }} />
+              ))}
+            </div>
           </div>
           <span className="ht-stempel">BLAD 1 VAN 2 · BEGANE GROND 78 M²</span>
         </div>

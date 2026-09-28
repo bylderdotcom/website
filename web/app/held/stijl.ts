@@ -62,7 +62,14 @@ export const HELD_STIJL = `
 .ht-plan{position:relative;width:min(300px,86%);aspect-ratio:1.28;
   transition:transform 1.2s cubic-bezier(.62,.02,.22,1);transform:rotateX(0) rotateZ(0)}
 .ht-f2 .ht-plan,.ht-f3 .ht-plan,.ht-f4 .ht-plan,.ht-f5 .ht-plan{transform:rotateX(56deg) rotateZ(-43deg) scale(.96)}
+.ht-plan{transform-style:preserve-3d}
 .ht-plan svg{width:100%;height:100%;display:block;overflow:visible}
+.ht-muren{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}
+.ht-m{position:absolute;height:30px;background:rgba(61,90,62,.26);border-bottom:1.5px solid #3D5A3E;
+  transform-origin:0 0;transform:rotateZ(var(--a)) rotateX(90deg) scaleY(0);
+  transition:transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:calc(.5s + var(--n) * .05s)}
+.ht-m.buiten{background:rgba(61,90,62,.12);border-bottom-color:rgba(61,90,62,.55)}
+.ht-f2 .ht-m,.ht-f3 .ht-m,.ht-f4 .ht-m,.ht-f5 .ht-m{transform:rotateZ(var(--a)) rotateX(90deg) scaleY(1)}
 .ht-muur{fill:none;stroke:#3D5A3E;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
 .ht-dun{fill:none;stroke:#3D5A3E;stroke-width:1.2;opacity:.55}
 .ht-vlak{fill:#3D5A3E;opacity:0;transition:opacity .8s ease}
@@ -224,6 +231,6 @@ export const HELD_STIJL = `
   .ht-stap b{font-size:10.5px}
 }
 @media (prefers-reduced-motion:reduce){
-  .ht-plan,.ht-vlak,.ht-rij,.ht-merk,.ht-slot,.ht-deur{transition-duration:.01ms!important}
+  .ht-plan,.ht-vlak,.ht-rij,.ht-merk,.ht-slot,.ht-deur,.ht-m{transition-duration:.01ms!important}
 }
 `
