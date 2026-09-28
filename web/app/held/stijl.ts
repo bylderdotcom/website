@@ -143,6 +143,20 @@ export const HELD_STIJL = `
 .hh-voordeel{grid-area:voordeel;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;color:#FFF6EE;
   background:#B85C38;padding:4px 9px;border-radius:6px;white-space:nowrap}
 
+/* ── 4b. productfoto's en logo's ── */
+.hh-fotos{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.hh-fotos a{display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid rgba(61,46,30,.12);border-radius:14px;
+  overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,box-shadow .2s}
+.hh-fotos a:hover{border-color:rgba(61,90,62,.45);box-shadow:0 12px 36px rgba(61,46,30,.1)}
+.hh-fotos img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;height:auto}
+.hh-foto-merk{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#3D5A3E;
+  font-weight:700;margin:14px 16px 4px}
+.hh-fotos b{font-size:15px;font-weight:800;letter-spacing:-.015em;color:#1A1208;margin:0 16px}
+.hh-fotos p{font-size:13px;line-height:1.55;color:rgba(61,46,30,.72);margin:6px 16px 0;flex:1}
+.hh-foto-cta{font-size:13px;font-weight:700;color:#3D5A3E;margin:10px 16px 16px}
+.hh-logo img{display:block;max-width:100%;width:auto;object-fit:contain}
+.hh-merkraster{margin-top:12px}
+
 /* ── 6. demo ── */
 .hh-demo{background:#EDE6D8;padding-top:64px}
 .hh-demo .hh-huis{max-width:520px;margin:0 auto -30px}
@@ -174,6 +188,7 @@ export const HELD_STIJL = `
   .hh-stappen{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hh-stappen::before{display:none}
   .hh-merkraster{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hh-fotos{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hh-na-grid{grid-template-columns:1fr;gap:22px}
   .hh-vragen{grid-template-columns:1fr}
 }
@@ -189,6 +204,9 @@ export const HELD_STIJL = `
   .hh-stappen li{padding-top:0;padding-left:26px}
   .hh-stappen li::before{left:0;top:6px}
   .hh-merkraster{grid-template-columns:1fr 1fr;gap:9px}
+  .hh-fotos{gap:9px;margin-top:26px}
+  .hh-fotos p{display:none}
+  .hh-fotos b{font-size:13.5px}
   .hh-merkraster li{padding:12px 13px}
   .hh-merkraster b{font-size:13.5px}
   .hh-voordeel{font-size:11.5px}
