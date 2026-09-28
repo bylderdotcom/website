@@ -142,7 +142,7 @@ export default function HomeHeld() {
         <div className="hh-wrap hh-hero-grid">
           <div className="hh-hero-copy">
             <p className="hh-oog">Voor wie een nieuwbouwhuis kocht</p>
-            <h1>Richt je huis in<br /><em>voordat het er staat.</em></h1>
+            <h1>Richt je huis in{' '}<br /><em>voordat het er staat.</em></h1>
             <p className="hh-lead">
               <b>Wij lezen je plattegrond en de planning van de bouwer.</b> Zo weet je per keuze
               wanneer hij valt — en stel je je deuren, je vloer en je verlichting alvast samen met de

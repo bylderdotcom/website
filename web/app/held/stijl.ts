@@ -32,7 +32,7 @@ export const HELD_STIJL = `
 @media(min-width:1001px){.hh-hero-copy h1 br{display:inline}}
 .hh-lead{font-size:17px;line-height:1.65;color:rgba(61,46,30,.78);margin:20px 0 0;max-width:56ch}
 .hh-lead b{color:#1A1208;font-weight:700}
-.hh-zoek{margin:26px 0 0;background:#fff;border:1px solid rgba(61,46,30,.12);border-radius:16px;padding:18px;
+.hh-zoek,.hh-hero #woningzoek{margin:26px 0 0;background:#fff;border:1px solid rgba(61,46,30,.12);border-radius:16px;padding:18px;
   box-shadow:0 6px 24px rgba(26,18,8,.06);max-width:600px}
 .hh-zoek label{display:block;font-size:14.5px;font-weight:700;color:#1A1208;margin-bottom:9px}
 .hh-zoek-rij{display:flex;gap:9px;flex-wrap:wrap}
@@ -197,7 +197,7 @@ export const HELD_STIJL = `
   .hh-hero{padding:32px 0 48px}
   .hh-hero-copy h1{font-size:2.1rem}
   .hh-lead{font-size:15.5px}
-  .hh-zoek{padding:14px}
+  .hh-zoek,.hh-hero #woningzoek{padding:14px;margin-top:22px}
   .hh-zoek button{width:100%}
   .hh-keten,.hh-merken,.hh-na{padding:56px 0}
   .hh-stappen{grid-template-columns:1fr;gap:22px;margin-top:28px}
