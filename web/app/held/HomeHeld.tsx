@@ -40,7 +40,39 @@ function regels(lijst: Deelnemer[]): Regel[] {
 // al langskwamen, dan per categorie de beste — in de volgorde waarin een koper
 // ze tegenkomt (vloer, deuren, licht, raam, zonwering …). Op korting alleen
 // sorteren zette een wijnhuis met verhuiskado op plek twee.
-const VAST = ['Auping', 'Classic Next', 'Lamp en Licht', 'DRT Contemporary Flooring']
+// Auping en Classic Next staan al met foto in de bovenste rij, dus niet nog
+// eens in het raster. De merken met een logo in img/logos/ komen eerst.
+const IN_FOTORIJ = new Set(['Auping', 'Classic Next'])
+const VAST = ['DRT Contemporary Flooring', 'Lamp en Licht', 'Goossens', 'Tables by Tim', 'Whoon']
+
+// Logo's van de oude homepage (img/logos/), zelfde bestanden. Alleen waar er
+// een logo is vervangt het de naam; anders blijft de naam staan.
+const LOGOS: Record<string, [string, number]> = {
+  'Classic Next': ['/img/logos/classic-next.png', 22],
+  Auping: ['/img/logos/auping-blue.svg', 24],
+  'Tables by Tim': ['/img/logos/tablesbytim.png', 26],
+  Whoon: ['/img/logos/whoon.png', 24],
+  'DRT Contemporary Flooring': ['/img/logos/drt.svg', 22],
+  Goossens: ['/img/logos/goossens.svg', 22],
+}
+
+// De vier productfoto's van de oude homepage ("Vier keuzes die je vóór de
+// oplevering maakt"), nu de bovenste rij van het merkenblok. Zelfde beelden,
+// zelfde links, kortere tekst.
+const FOTOS = [
+  { href: '/kozijnloze-deuren/configurator/', img: '/img/classic-next/deur-eiken-fineer.jpg', sm: '/img/classic-next/deur-eiken-fineer-sm.jpg 600w, /img/classic-next/deur-eiken-fineer.jpg 800w',
+    alt: 'Plafondhoge binnendeur in eikenfineer, vlak in een witte wand met een smalle schaduwvoeg eromheen',
+    merk: 'Classic Next', titel: 'Onzichtbaar kozijn', tekst: 'Plafondhoog, zonder architraaf. Stel hem samen in 3D en vraag direct een offerte aan.', cta: 'Stel je deur samen' },
+  { href: '/vouchers/auping/', img: '/img/auping-noble-solid-oak.webp', sm: '/img/auping-noble-solid-oak-sm.webp 500w, /img/auping-noble-solid-oak.webp 1000w',
+    alt: 'Auping Noble Solid Oak bed van massief eiken in een slaapkamer met raam over de volle breedte',
+    merk: 'Auping', titel: 'Noble Solid Oak', tekst: 'Massief eiken bedframe met geïntegreerd nachtkastje, voor een slaapkamer die krapper is dan de verkooptekening leek.', cta: 'Auping-voordeel' },
+  { href: '/tuin-aanleggen/schutting-schermen/', img: '/img/gardenwall-weo35.webp', sm: '/img/gardenwall-weo35-sm.webp 500w, /img/gardenwall-weo35.webp 1000w',
+    alt: 'Fiberdeck Gardenwall WEO35 composiet schutting in teakkleur langs een tuinpad van grind',
+    merk: 'Fiberdeck', titel: 'Gardenwall WEO35', tekst: 'Composiet schutting die niet elk jaar geolied hoeft. Bij een kavel zonder erfafscheiding de eerste grote tuinpost.', cta: 'Schutting kiezen' },
+  { href: '/woning-verduurzamen/ventilatie/', img: '/img/noshow-ventilatie.webp', sm: '/img/noshow-ventilatie-sm.webp 500w, /img/noshow-ventilatie.webp 1000w',
+    alt: 'NoShow ventilatierooster vlak weggewerkt in een badkamerplafond, zichtbaar als een dunne ring',
+    merk: 'NoShow', titel: 'Weggewerkte ventilatie', tekst: 'Een vlakke ring in plaats van een kunststof rooster. Vervangt de standaardventielen van de aannemer.', cta: 'Over ventilatie' },
+]
 const VOLGORDE = ['PVC vloer', 'Deuren', 'Verlichting', 'Raamdecoratie', 'Zonwering', 'Sanitair',
   'Kitchen', 'Kasten', 'Smart home', 'Meubelen', 'Behang', 'Tuin', 'Tuinmeubelen', 'Vloertegels',
   'Wandtegels', 'Trapbekleding', 'Stucwerk', 'Groen dak']
@@ -49,7 +81,7 @@ function uitgelicht(lijst: Deelnemer[], n = 12): Deelnemer[] {
   const uit: Deelnemer[] = VAST.map(naam => lijst.find(d => d.naam === naam)).filter((d): d is Deelnemer => !!d)
   for (const cat of VOLGORDE) {
     if (uit.length >= n) break
-    const kandidaten = lijst.filter(d => d.cat === cat && !uit.includes(d)).sort((a, b) => pct(b.aanbod) - pct(a.aanbod))
+    const kandidaten = lijst.filter(d => d.cat === cat && !uit.includes(d) && !IN_FOTORIJ.has(d.naam)).sort((a, b) => pct(b.aanbod) - pct(a.aanbod))
     if (kandidaten[0]) uit.push(kandidaten[0])
   }
   return uit.slice(0, n)
@@ -207,11 +239,27 @@ export default function HomeHeld() {
             </div>
             <a className="hh-knop-licht" href="/vouchers/">Alle {merken} merken →</a>
           </div>
+          <ul className="hh-fotos" aria-label="Vier keuzes die je vóór de oplevering maakt">
+            {FOTOS.map(f => (
+              <li key={f.href}>
+                <a href={f.href}>
+                  <img src={f.img} srcSet={f.sm} sizes="(max-width:720px) 50vw, 280px" alt={f.alt}
+                    width={1000} height={1000} loading="lazy" decoding="async" />
+                  <span className="hh-foto-merk">{f.merk}</span>
+                  <b>{f.titel}</b>
+                  <p>{f.tekst}</p>
+                  <span className="hh-foto-cta">{f.cta} →</span>
+                </a>
+              </li>
+            ))}
+          </ul>
           <ul className="hh-merkraster" aria-label="Uitgelichte merken en hun korting">
             {top.map(d => (
               <li key={d.naam}>
                 <span className="hh-cat">{CAT_NL[d.cat] ?? d.cat}</span>
-                <b>{d.naam}</b>
+                {LOGOS[d.naam]
+                  ? <b className="hh-logo"><img src={LOGOS[d.naam][0]} alt={d.naam} style={{ height: LOGOS[d.naam][1] }} loading="lazy" /></b>
+                  : <b>{d.naam}</b>}
                 <span className="hh-voordeel">{d.aanbod}</span>
               </li>
             ))}
