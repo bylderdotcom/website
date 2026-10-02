@@ -98,6 +98,9 @@ const VRAGEN = [
     a: 'Classic Next, de fabrikant van onzichtbare kozijnen uit Uden. Zij stellen de kaarten '
       + 'beschikbaar voor lezers van Bylder; wij regelen de aanvraag en de verzending. Je hoeft niets '
       + 'bij Classic Next te kopen of aan te vragen om een kaart te krijgen.' },
+  { v: 'Staat Classic Next zelf op de beurs?',
+    a: 'Ja. Hun stand staat naast het Horecaplein. Daar zie je hun kozijnloze binnendeuren in het echt '
+      + 'en kun je vragen stellen over maten, afwerking en levertijd.' },
   { v: 'Waarom doen zij dat?',
     a: 'Omdat de bezoekers van die beurs precies de mensen zijn die zij willen bereiken: mensen die '
       + 'net een huis hebben gekocht en honderd keuzes voor de boeg hebben, waaronder de binnendeuren. '
@@ -183,7 +186,8 @@ export default function BeursEigenHuis() {
                 <a href="/kozijnloze-deuren/classic-next/" style={{ color: '#1A1208', fontWeight: 800 }}>Classic
                 Next</a> maakt onzichtbare kozijnen en binnendeuren in eigen werkplaats in Uden. Zij
                 stellen deze kaarten beschikbaar; wij regelen de aanvraag en de verzending. Je hoeft
-                niets bij hen te kopen om een kaart te krijgen.
+                niets bij hen te kopen om een kaart te krijgen. Op de beurs vind je hun stand{' '}
+                <strong style={{ color: '#1A1208' }}>naast het Horecaplein</strong>.
               </p>
             </div>
           </div>
@@ -191,7 +195,7 @@ export default function BeursEigenHuis() {
 
         {/* De configurator hoog, maar ná de kaartenknop en de afzender: de kaarten
             blijven de hoofdzaak van deze pagina. */}
-        <ConfiguratorCTA marge="34px 0 10px" aanleiding="Classic Next staat op de beurs met deze deuren. Stel er alvast een samen, dan weet je bij de stand precies waar je het over hebt — en wat je wilt vragen." />
+        <ConfiguratorCTA marge="34px 0 10px" aanleiding="Classic Next staat op de beurs met deze deuren, naast het Horecaplein. Stel er alvast een samen, dan weet je bij de stand precies waar je het over hebt — en wat je wilt vragen." />
 
         {/* Hoe het werkt */}
         <section>
