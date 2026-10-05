@@ -21,10 +21,10 @@ import ConfiguratorCTA from '../components/ConfiguratorCTA'
  */
 
 export const metadata: Metadata = {
-  title: 'Kozijnloze deuren: prijzen & wanneer je kiest | Bylder',
+  title: 'Kozijnloze deuren & onzichtbare kozijnen: prijzen 2026 | Bylder',
   description:
-    'Een kozijnloze deur hangt in een onzichtbaar kozijn: de deur verdwijnt in de wand. '
-    + 'Prijzen, merken, en waarom je dit vóór de ruwbouw beslist.',
+    'Een deur zonder kozijn hangt in een onzichtbaar kozijn en verdwijnt in de wand. Compleet vanaf '
+    + 'ca. €1.100, montage €250–600 per deur. Merken, en waarom je dit vóór de ruwbouw beslist.',
   alternates: { canonical: 'https://www.bylder.com/kozijnloze-deuren/' },
 }
 
@@ -105,11 +105,15 @@ const SOORTEN = [
 // ingetrokken: korting op null zetten, hier én op die pagina.
 type Merk = { naam: string; land: string; wat: string; pagina?: string; korting?: { kort: string; lang: string; url: string } }
 
+// Tijdelijk: Classic Next op de Beurs Eigen Huis (9 t/m 11 okt 2026), bij de build bepaald.
+const OP_DE_BEURS = Date.now() < Date.parse('2026-10-12T00:00:00+02:00')
+
 const MERKEN: Merk[] = [
   { naam: 'Classic Next', land: 'Uden, NL',
     wat: 'Complete kozijn-en-deurcombinatie met magneetslot en Basys-scharnieren, uit eigen werkplaats. '
       + 'Deuren tot kamerhoog (2.700 mm), standaard 50 mm dik, elke RAL-kleur, ook als frameloos '
-      + 'schuifdeursysteem. Levert door heel Nederland en biedt meet- en montageservice op locatie.',
+      + 'schuifdeursysteem. Levert door heel Nederland en biedt meet- en montageservice op locatie.'
+      + (OP_DE_BEURS ? ' Op de Beurs Eigen Huis (9 t/m 11 oktober, Jaarbeurs Utrecht) staan ze naast het Horecaplein.' : ''),
     pagina: '/kozijnloze-deuren/classic-next/',
     korting: {
       kort: '5% ledenkorting',
@@ -138,6 +142,13 @@ const VRAGEN = [
       + 'samen, in goede kwaliteit. Montage komt daar bovenop — reken op €250 tot €600 per deur, '
       + 'afhankelijk van de wand en de afwerking. Prefab-maten zijn 10 tot 20 procent goedkoper dan '
       + 'volledig maatwerk.',
+  },
+  {
+    v: 'Kan een binnendeur zonder kozijn?',
+    a: 'Ja. Bij een kozijnloze deur zit er wel een kozijn, maar dat staat ín de wand en wordt meegestuukt. '
+      + 'Je ziet het dus niet: geen kozijnstijlen, geen architraaf, alleen een schaduwvoeg van een paar '
+      + 'millimeter rond het deurblad. Zo\'n deur kun je in dezelfde kleur als de wand laten lakken, zodat '
+      + 'hij bijna wegvalt.',
   },
   {
     v: 'Wanneer moet ik deze keuze maken?',
@@ -200,7 +211,7 @@ const paginaSchema = {
       url: URL,
       name: 'Kozijnloze deuren: de deur verdwijnt in de wand',
       inLanguage: 'nl-NL',
-      dateModified: '2026-08-25',
+      dateModified: '2026-10-05',
       about: [
         { '@type': 'Thing', name: 'Kozijnloze deur' },
         { '@type': 'Thing', name: 'Onzichtbaar kozijn' },
@@ -229,7 +240,7 @@ export default function OnzichtbaarKozijnPage() {
       </nav>
       <p style={LABEL}>Keuze vóór de ruwbouw</p>
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
-        Kozijnloze deuren: de deur verdwijnt in de wand
+        Kozijnloze deuren en onzichtbare kozijnen: de deur verdwijnt in de wand
       </h1>
 
       {/* De configurator is waar het geld wordt verdiend, dus hij staat direct
@@ -239,8 +250,8 @@ export default function OnzichtbaarKozijnPage() {
         titel="Geef de deur dezelfde kleur als je wand"
         aanleiding="Zonder kozijn en architraaf worden deur en wand één vlak. In de configurator kies je groefpatroon en kleur, en zie je het meteen." />
       <p style={{ ...P, fontSize: 17.5, maxWidth: '62ch' }}>
-        Geen kozijn, geen architraaf, geen zichtbaar beslag — alleen een deurblad en een smalle schaduwvoeg.
-        Ook wel <strong>kozijnloze deur</strong>, <strong>onzichtbare deur</strong> of{' '}
+        Een deur zonder kozijn: geen architraaf, geen zichtbaar beslag, alleen een deurblad en een smalle
+        schaduwvoeg. Ook wel <strong>kozijnloze deur</strong>, <strong>onzichtbare deur</strong> of{' '}
         <strong>instuckozijn</strong> genoemd. Dit is wat het kost, hoe het technisch in elkaar zit, en
         waarom het moment waarop je kiest belangrijker is dan het merk dat je kiest.
       </p>
@@ -320,7 +331,7 @@ export default function OnzichtbaarKozijnPage() {
         </div>
       </div>
 
-      <h2 style={H2}>Wat het kost</h2>
+      <h2 style={H2}>Wat kost een kozijnloze binnendeur?</h2>
       <p style={P}>
         Prijzen zoals leveranciers ze zelf publiceren in augustus 2026. Bylder controleert offertes tegen
         marktprijzen; dit zijn de bedragen waarmee je een offerte kunt vergelijken.
@@ -442,10 +453,23 @@ export default function OnzichtbaarKozijnPage() {
         {' · '}
         <a href="/timmerman/" style={{ color: GROEN, fontWeight: 700 }}>Timmerlieden</a>
       </p>
+
+      <h2 style={H2}>Verder kijken</h2>
+      <p style={P}>
+        <a href="/kozijnloze-deuren/configurator/" style={{ color: GROEN, fontWeight: 700 }}>Stel je kozijnloze deur samen</a>
+        {' · '}
+        <a href="/kozijnloze-deuren/freesdeuren/" style={{ color: GROEN, fontWeight: 700 }}>Dertien freesontwerpen naast elkaar</a>
+        {' · '}
+        <a href="/kozijnloze-deuren/classic-next/" style={{ color: GROEN, fontWeight: 700 }}>Classic Next uit Uden</a>
+        {' · '}
+        <a href="/kozijnloze-deuren/classic-next/voor-vakbedrijven/" style={{ color: GROEN, fontWeight: 700 }}>Voor vakbedrijven die monteren</a>
+      </p>
       <p style={{ ...P, fontSize: 13, color: `${INKT}0.55)`, marginTop: 28 }}>
-        Laatst bijgewerkt: 25 augustus 2026. Prijzen zijn de bedragen die leveranciers op dat moment zelf
-        publiceerden; wij verkopen deze kozijnen niet zelf en krijgen geen vergoeding per doorverwijzing
-        naar een van de genoemde systemen.
+        Laatst bijgewerkt: 5 oktober 2026. Prijzen zijn de bedragen die leveranciers in augustus 2026 zelf
+        publiceerden. Wij verkopen deze kozijnen niet zelf. Met Classic Next werkt Bylder samen: vraag je via
+        Bylder een offerte aan en geef je Classic Next de opdracht, dan ontvangt Bylder daarvoor een vergoeding
+        van Classic Next. Dat verandert niets aan jouw prijs. Voor de andere genoemde systemen krijgen we geen
+        vergoeding.
       </p>
 
       <h2 style={H2}>Veelgestelde vragen</h2>

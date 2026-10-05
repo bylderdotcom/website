@@ -89,6 +89,11 @@ const SYSTEMEN = [
       + 'wandvlak opgaat. Relevant als je de deur onzichtbaar maakt maar de plint het effect zou breken.' },
 ]
 
+// Tijdelijk: Classic Next staat op de Beurs Eigen Huis, 9 t/m 11 oktober 2026.
+// Bij de build bepaald; de eerste build na 11 oktober laat het weg (en op 12
+// oktober ruimt Claude de beurspagina op).
+const OP_DE_BEURS = Date.now() < Date.parse('2026-10-12T00:00:00+02:00')
+
 const FEITEN: [string, string][] = [
   ['Wat', 'Onzichtbare kozijnen (instuckozijnen) en deuren als één systeem'],
   ['Waar', 'Eigen werkplaats in Uden, Noord-Brabant'],
@@ -183,6 +188,13 @@ export default function ClassicNext() {
             scharnieren. Wat overblijft is een schaduwvoeg. Alles wordt gemaakt in hun eigen
             werkplaats in Uden.
           </p>
+          {OP_DE_BEURS && (
+            <p style={{ ...P, background: '#fff', border: '1px solid rgba(61,90,62,0.25)', borderRadius: 12, padding: '12px 16px' }}>
+              <strong>Zien in het echt:</strong> Classic Next staat op de{' '}
+              <a href="/beurs-eigen-huis/" style={{ color: '#3D5A3E', fontWeight: 700 }}>Beurs Eigen Huis</a>,
+              9 tot en met 11 oktober in de Jaarbeurs Utrecht, naast het Horecaplein.
+            </p>
+          )}
           <p style={P}>
             Dit is geen inrichtingskeuze maar een bouwkeuze. Het frame moet in de wand v&oacute;&oacute;r
             de stukadoor komt, en dat betekent bij nieuwbouw: op de meerwerklijst, niet op de
