@@ -26,6 +26,7 @@ BRON = os.path.join(ROOT, "data", "nieuwbouwprojecten.json")
 UIT = os.path.join(ROOT, "data", "regio-cijfers.json")
 DRY = "--dry" in sys.argv
 
+TD = "padding:8px 12px;border-top:1px solid rgba(61,46,30,0.08);"  # tabelcel
 START, EIND = "<!--bylder:regiocijfers-->", "<!--/bylder:regiocijfers-->"
 BLOK = re.compile(re.escape(START) + r".*?" + re.escape(EIND), re.S)
 NL_MAAND = ("januari februari maart april mei juni juli augustus september oktober "
@@ -96,10 +97,10 @@ def blok_html(naam, projecten, paden, niveau):
             continue            # twee fases op één samengevoegde pagina: één rij
         if slug:
             gezien.add(slug)
-            naam_p = f'<a href="/nieuwbouw-project/{slug}/">{naam_p}</a>'
+            naam_p = f'<a href="/nieuwbouw-project/{slug}/" style="color:#3D5A3E;font-weight:600;">{naam_p}</a>'
         w = dz(p["woningen"]) if p.get("woningen") else "&mdash;"
-        pl = "" if niveau == "gemeente" else f"<td>{E(netjes(p['plaats']))}</td>"
-        rijen.append(f"<tr><td>{naam_p}</td>{pl}<td style='text-align:right;'>{w}</td></tr>")
+        pl = "" if niveau == "gemeente" else f"<td style='{TD}'>{E(netjes(p['plaats']))}</td>"
+        rijen.append(f"<tr><td style='{TD}'>{naam_p}</td>{pl}<td style='{TD}text-align:right;'>{w}</td></tr>")
 
     kop_pl = "" if niveau == "gemeente" else "<th>Gemeente</th>"
     zin = (f"In {E(netjes(naam))} staan op dit moment <strong>{dz(len(projecten))} "
@@ -131,6 +132,12 @@ def injecteer(pad, blok):
     if not blok:
         return False
     s = open(pad, encoding="utf8").read()
+    if "/data/clusters/" not in pad:
+        # Statische regiopagina's: het blok valt na de volle-breedte linkband, buiten
+        # elke container. Zelf de paginabreedte en een zijmarge meegeven.
+        blok = blok.replace('<section style="margin-top:40px;',
+                            '<section style="max-width:1152px;margin-left:auto;margin-right:auto;'
+                            'padding-left:16px;padding-right:16px;margin-top:40px;', 1)
     if BLOK.search(s):
         n = BLOK.sub(blok, s)
     elif "</main>" in s:
