@@ -65,6 +65,33 @@ for i, a in enumerate(sys.argv):
 E = html.escape
 
 
+_WONEN_IN = None
+
+
+def wonen_in_slug(plaats_slug):
+    """De /wonen-in/-pagina voor deze plaats, of None.
+
+    De link stond tot 5 okt 2026 rechtstreeks op de plaats-slug van het project.
+    Voor 36 woonplaatsen bestaat die pagina niet (heerhugowaard, rijswijk,
+    hengelo, …): wonen-in gaat per gemeente. Dus eerst zelf proberen, dan de
+    gemeente via data/plaats-gemeente.json, en alleen linken naar een pagina die
+    bestaat én in de index staat."""
+    global _WONEN_IN
+    if _WONEN_IN is None:
+        try:
+            pages = json.load(open(os.path.join(ROOT, "data", "clusters", "wonen-in", "pages.json"), encoding="utf8"))
+            ok = {x["slug"] for x in pages if "noindex" not in (x.get("robots") or "")}
+            pg = json.load(open(os.path.join(ROOT, "data", "plaats-gemeente.json"), encoding="utf8")).get("plaatsen", {})
+        except Exception:
+            ok, pg = set(), {}
+        _WONEN_IN = (ok, pg)
+    ok, pg = _WONEN_IN
+    if plaats_slug in ok:
+        return plaats_slug
+    gem = (pg.get(plaats_slug) or {}).get("slug")
+    return gem if gem in ok else None
+
+
 def slugify(naam, plaats):
     s = re.sub(r"[^a-z0-9]+", "-", f"{naam} {plaats}".lower()).strip("-")
     return re.sub(r"-{2,}", "-", s)
@@ -82,7 +109,11 @@ def netjes(s):
             "alphen-aan-den-rijn": "Alphen aan den Rijn",
             "hengelo-o": "Hengelo", "laren-nh": "Laren", "middelburg-z": "Middelburg",
             "s-hertogenbosch": "'s-Hertogenbosch"}
-    return vast.get(s, " ".join(w.capitalize() if len(w) > 3 else w for w in (s or "").split("-")))
+    # Tussenvoegsels klein, maar het eerste woord altijd met hoofdletter: "Oss",
+    # "Ede", "De Ronde Venen" (eerder werden alle korte woorden klein: "oss").
+    klein = {"aan", "den", "de", "op", "van", "het", "in", "bij", "ter", "ten", "der", "en", "a/d"}
+    woorden = (s or "").split("-")
+    return vast.get(s, " ".join(w.capitalize() if (i == 0 or w not in klein) else w for i, w in enumerate(woorden)))
 
 
 def km(a, b, c, d):
@@ -2284,6 +2315,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
         f"<summary>{E(q)}</summary><p>{E(a)}</p></details>"
         for n, (q, a) in enumerate(faq_items))
 
+    _wi = wonen_in_slug(p['plaats'])
+    wonen_in_zin = f' Meer over de gemeente: <a href="/wonen-in/{E(_wi)}/">wonen in {E(netjes(_wi))}</a>.' if _wi else ''
     body = f"""<main>
 <div class="container"><div class="kolom">
 <nav aria-label="Kruimelpad" style="font-size:12.5px;color:rgba(61,46,30,0.72);margin-bottom:18px;">
@@ -2354,8 +2387,7 @@ bouwnummer.</p>
 Bylder in de BAG van het Kadaster. Projectgegevens van
 <a href="{E(p['url'])}" rel="nofollow noopener" target="_blank">{E(p.get('bron') or 'nieuwbouw.nl')}</a>. Landelijke
 telling in de <a href="/nieuwbouw-project/oplevermonitor/">oplevermonitor</a>. Algemene uitleg
-over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer over de gemeente:
-<a href="/wonen-in/{E(p['plaats'])}/">wonen in {E(plaats)}</a>.</p>
+over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>.{wonen_in_zin}</p>
 </div></div>
 </main>"""
 
@@ -2364,32 +2396,38 @@ over meerwerk en opleveren in de <a href="/kennisbank/">kennisbank</a>. Meer ove
     # korting bij winkels in de buurt, niet op het ambtelijke resultaat). Waar het
     # project grotendeels verkocht is, is de zoeker vrijwel zeker een koper en
     # krijgt ook de titel de belofte. GSC beslecht per pagina wie gelijk had.
-    _m = [m for m in (SNAPSHOTS.get(p.get("url")) or []) if betrouwbaar(p, m[1])]
-    pct_nu = _m[-1][1].get("verkocht_pct") if _m else None
+    # TITEL (herzien 5 okt 2026, na Search Console)
+    # Tot nu toe kreeg vrijwel elke pagina "Naam, Plaats — korting bij woonwinkels":
+    # die tak was bedoeld voor projecten die voor 85% verkocht waren, maar
+    # betrouwbaar() staat sinds 5 aug uit, dus pct_nu was altijd None. Wie een
+    # projectpagina vindt, zoekt "<project> <plaats>" of "<project> oplevering"
+    # ("soeterdael oplevering"). Daar sluit de titel nu op aan: naam en plaats
+    # zonder komma, en wat we over de oplevering wéten. Een schatting komt nooit
+    # als jaartal in de titel; dan staat er "oplevering en meerwerk".
+    kern = naam if plaats.lower() in naam.lower() else f"{naam} {plaats}"
+    opl_tekst, _lo, _hi, grondslag = oplever_schatting(p)
+    bev = _opleverdata().get(p.get("url"))
+    hard = bool(bev) or (p.get("oplevering") and p.get("oplevering_bron") == "oplevertrefwoord")
     if opgeleverd(p)[0]:
         # Opgeleverd: "wij volgen de bouw" is dan een belofte over iets wat voorbij
-        # is, en juist in de zoekresultaten valt dat op. Wat er nog wel is: de
-        # afwerking, en die koopt de bewoner nu zelf.
-        # Kort houden: kort_titel() gooit alles achter het gedachtestreepje weg
-        # zodra de titel over de 60 tekens gaat, en "opgeleverd" is precies het
-        # woord dat deze pagina onderscheidt van de 280 andere.
-        titel = f"{naam}, {plaats} \u2014 opgeleverd"
+        # is. Wat er nog wel is: de afwerking, en die koopt de bewoner nu zelf.
+        titels = [f"{kern} \u2014 opgeleverd"]
         desc = (f"{naam} is opgeleverd, dus de afwerking is aan jou. Ledenkorting bij "
                 f"aangesloten merken en je offerte getoetst aan marktprijzen. Gratis.")
-    elif pct_nu is None or pct_nu >= 85:
-        titel = f"{naam}, {plaats} \u2014 korting bij woonwinkels"
-        desc = (f"Woning gekocht in {naam}? Wij volgen de bouw voor je \u00e9n je bespaart op "
-                f"afwerking en inrichting: ledenkortingen, offertes getoetst aan marktprijzen. "
-                f"Gratis.")
-    elif pct_nu is not None:
-        titel = f"{naam}, {plaats}: {pct_nu}% verkocht \u2014 oplevering"
-        desc = (f"{naam} kopen of al gekocht? Wij meten de verkoopstand elke twee weken "
-                f"({pct_nu}% verkocht) en helpen kopers besparen op afwerking en inrichting. "
-                f"Onafhankelijk, gratis.")
     else:
-        titel = f"{naam}, {plaats} \u2014 oplevering en bouwstatus"
-        desc = (f"{naam} in {plaats}: {aant}, oplevering {opl_tekst}. Wij volgen de bouwstatus "
-                f"en helpen kopers besparen op afwerking en inrichting. Gratis.")
+        if bev:
+            titels = [f"{kern} \u2014 oplevering {bev['wanneer']}", f"{kern} \u2014 oplevering {bev['jaar']}"]
+        elif hard:
+            titels = [f"{kern} \u2014 oplevering {p['oplevering']}"]
+        else:
+            titels = [f"{kern} \u2014 oplevering en meerwerk"]
+        titels.append(f"{kern} \u2014 oplevering")
+        # Een schatting heet in de snippet ook zo: "verwacht 2027–2028".
+        opl_kort = opl_tekst if hard else (f"verwacht {_lo}\u2013{_hi}" if _hi > _lo else f"verwacht {_lo}")
+        desc = (f"{naam} in {plaats}: {aant}, oplevering {opl_kort}. Meerwerk, afwerking en "
+                f"ledenkorting bij woonwinkels.")
+    # De eerste die past (met of zonder "| Bylder"); anders de kale naam en plaats.
+    titel = next((t for t in titels if len(t) <= TITEL_MAX), kern)
     art = {"@context": "https://schema.org", "@type": "Article",
            "headline": f"{naam}, {plaats} — wat er ná de handtekening komt",
            "description": desc,

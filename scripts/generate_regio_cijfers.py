@@ -44,14 +44,33 @@ def netjes(s):
             "noord-holland": "Noord-Holland", "zuid-holland": "Zuid-Holland"}
     if s in vast:
         return vast[s]
-    return " ".join(w.capitalize() if len(w) > 3 else w for w in s.split("-"))
+    # Tussenvoegsels klein, eerste woord altijd met hoofdletter ("Oss", "De Bilt").
+    klein = {"aan", "den", "de", "op", "van", "het", "in", "bij", "ter", "ten", "der", "en"}
+    return " ".join(w.capitalize() if (i == 0 or w not in klein) else w for i, w in enumerate(s.split("-")))
 
 
 def projectpaden():
-    """Slugs waarvoor al een echte projectpagina bestaat."""
+    """Bron-URL van het project → slug van zijn projectpagina.
+
+    Tot 5 okt 2026 bouwde dit script de slug zelf na uit naam en plaats. Dat mist
+    samengevoegde fases en pagina's met een afwijkende slug (zwanenpark-vlaardingen,
+    bloom-park-utrecht…), en daardoor linkten 273 van de 287 projectpagina's vanaf
+    geen enkele gemeente- of plaatspagina. Nu op de bron-URL, die elke
+    projectpagina in zijn Article-schema meedraagt (isBasedOn).
+    """
     p = os.path.join(ROOT, "data", "clusters", "nieuwbouw-project", "pages.json")
-    return {x["slug"] for x in json.load(open(p, encoding="utf8"))
-            if x.get("slug") not in ("index", "oplevermonitor")}
+    uit = {}
+    for x in json.load(open(p, encoding="utf8")):
+        if x.get("slug") in ("index", "oplevermonitor"):
+            continue
+        for ld in x.get("ldjson") or []:
+            try:
+                d = json.loads(ld)
+            except (TypeError, ValueError):
+                continue
+            if isinstance(d, dict) and d.get("isBasedOn"):
+                uit[d["isBasedOn"]] = x["slug"]
+    return uit
 
 
 def blok_html(naam, projecten, paden, niveau):
@@ -62,12 +81,21 @@ def blok_html(naam, projecten, paden, niveau):
     if not projecten:
         return ""
 
-    top = sorted(projecten, key=lambda p: -(p.get("woningen") or 0))[:10]
+    # Eerst alle projecten met een eigen pagina (dat zijn de links die tellen), dan
+    # aanvullen met de grootste andere projecten tot tien rijen.
+    groot = sorted(projecten, key=lambda p: -(p.get("woningen") or 0))
+    met = [p for p in groot if p.get("url") in paden]
+    zonder = [p for p in groot if p.get("url") not in paden]
+    top = met + zonder[:max(0, 10 - len(met))]
     rijen = []
+    gezien = set()
     for p in top:
         naam_p = E(p["naam"])
-        slug = re.sub(r"[^a-z0-9]+", "-", p["naam"].lower()).strip("-") + "-" + p["plaats"]
-        if slug in paden:
+        slug = paden.get(p.get("url"))
+        if slug and slug in gezien:
+            continue            # twee fases op één samengevoegde pagina: één rij
+        if slug:
+            gezien.add(slug)
             naam_p = f'<a href="/nieuwbouw-project/{slug}/">{naam_p}</a>'
         w = dz(p["woningen"]) if p.get("woningen") else "&mdash;"
         pl = "" if niveau == "gemeente" else f"<td>{E(netjes(p['plaats']))}</td>"

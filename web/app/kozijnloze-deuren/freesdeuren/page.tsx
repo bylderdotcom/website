@@ -133,7 +133,11 @@ export default function Freesdeuren() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@graph': [
-          {
+          // Product alleen met echte reviews. Zonder prijs, review of beoordeling
+          // keurt Google een Product af als productfragment (Search Console, okt
+          // 2026: ongeldige items). Geen offers-blok: zonder prijs op de pagina mag
+          // het schema er ook geen beweren.
+          ...(rs ? [{
             '@type': 'Product',
             name: 'Freesdeuren van Classic Next',
             description:
@@ -141,12 +145,8 @@ export default function Freesdeuren() {
               + 'leverbaar in elke RAL-kleur en te combineren met een onzichtbaar kozijn.',
             brand: { '@type': 'Brand', name: 'Classic Next' },
             category: 'Binnendeuren',
-            // Geen offers-blok: zonder prijs op de pagina mag het schema er ook
-            // geen beweren. Schema dat meer zegt dan de pagina is precies wat
-            // een handmatige maatregel oplevert.
-            areaServed: { '@type': 'Country', name: 'Nederland' },
-            ...(rs ?? {}),
-          },
+            ...rs,
+          }] : []),
           {
             '@type': 'ItemList',
             name: 'Freesdeur-ontwerpen',
