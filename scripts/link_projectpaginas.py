@@ -74,7 +74,7 @@ def link_in(html, naam, slug):
 def main():
     projecten = laad_projecten()
     bestanden = (glob.glob(os.path.join(ROOT, "nieuwbouw", "**", "index.html"), recursive=True)
-                 + glob.glob(os.path.join(ROOT, "wonen-in", "**", "index.html"), recursive=True))
+                 + glob.glob(os.path.join(ROOT, "data", "clusters", "wonen-in", "content", "*.html")))
     totaal = geraakt = 0
     for f in bestanden:
         h = open(f, encoding="utf8").read()

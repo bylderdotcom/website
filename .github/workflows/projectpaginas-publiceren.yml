@@ -51,6 +51,14 @@ jobs:
             ${{ github.event.inputs.droogdraai == 'true' && '--dry' || '' }} | tee /tmp/gen.txt
           echo "kandidaten=$(grep -oE '→ [0-9]+ kandidaten' /tmp/gen.txt | grep -oE '[0-9]+' || echo 0)" >> "$GITHUB_OUTPUT"
 
+      # Gemeente-, plaats- en provinciepagina's linken naar de projectpagina's.
+      # Zonder deze stap blijven nieuwe projectpagina's onvindbaar via de regio.
+      - name: Regiopagina's koppelen
+        if: github.event.inputs.droogdraai != 'true'
+        run: |
+          python3 scripts/generate_regio_cijfers.py
+          python3 scripts/link_projectpaginas.py
+
       # Een ronde die opeens veel minder pagina's oplevert dan de vorige, betekent
       # dat er iets met de brondata is gebeurd — niet dat er projecten verdwenen
       # zijn. Liever hier stoppen dan honderden pagina's weggooien.
@@ -76,7 +84,8 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/clusters/nieuwbouw-project nieuwbouw-project-sitemap.xml vercel.json
+          git add data/clusters/nieuwbouw-project nieuwbouw-project-sitemap.xml vercel.json \
+            nieuwbouw/ data/clusters/wonen-in/content data/regio-cijfers.json
           if git diff --staged --quiet; then
             echo "Niets veranderd — geen commit, geen bouw."
           else
