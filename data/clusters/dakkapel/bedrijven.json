@@ -4035,11 +4035,6 @@
     "rating": "4,3"
    },
    {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
-   },
-   {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
     "name": "Emergo Prefab",
     "rating": "4,7"
@@ -7986,11 +7981,6 @@
     "rating": "4,3"
    },
    {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
-   },
-   {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
     "name": "Emergo Prefab",
     "rating": "4,7"
@@ -11888,11 +11878,6 @@
     "href": "/dakkapel/bedrijf/raadsveld-kunststof-kozijnen-xxvfmi/",
     "name": "Raadsveld Kunststof Kozijnen",
     "rating": "4,3"
-   },
-   {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
    },
    {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
@@ -19939,52 +19924,6 @@
   "contact_row": "default",
   "template": "default"
  },
- "bedrijf/dakraammontage-noord-x_dyyu": {
-  "name": "Dakraammontage-noord",
-  "city": "Stadskanaal",
-  "rating_disp": "5,0",
-  "reviews": "52",
-  "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Dakraammontage-noord&amp;query_place_id=ChIJbw0xIU_bt0cRo3wBqX_dyyU",
-  "website": "https://dakraammontage-noord.nl/",
-  "tel": "0636177734",
-  "tel_disp": "06 36177734",
-  "city_slug": "stadskanaal",
-  "siblings": [
-   {
-    "href": "/dakkapel/bedrijf/raadsveld-kunststof-kozijnen-xxvfmi/",
-    "name": "Raadsveld Kunststof Kozijnen",
-    "rating": "4,3"
-   },
-   {
-    "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
-    "name": "Emergo Prefab",
-    "rating": "4,7"
-   },
-   {
-    "href": "/dakkapel/bedrijf/manning-dakbedekking-b-v-8ksbye/",
-    "name": "Manning Dakbedekking B.V.",
-    "rating": "4,0"
-   },
-   {
-    "href": "/dakkapel/bedrijf/bouwbedrijf-schreuder-b-v-dmz-rg/",
-    "name": "Bouwbedrijf Schreuder B.V.",
-    "rating": "4,8"
-   },
-   {
-    "href": "/dakkapel/bedrijf/klussenier-erwin-van-dijken-grhdlk/",
-    "name": "Klussenier Erwin van Dijken",
-    "rating": "3,8"
-   },
-   {
-    "href": "/dakkapel/bedrijf/baas-dakbedekkingen-wdst7s/",
-    "name": "Baas Dakbedekkingen",
-    "rating": "3,1"
-   }
-  ],
-  "rating_row": "default",
-  "contact_row": "default",
-  "template": "default"
- },
  "bedrijf/dakramennederland-onderdeel-van-dakcentrale-nederland-f9ehpw": {
   "name": "Dakramennederland onderdeel van Dakcentrale Nederland",
   "city": "Zutphen",
@@ -21338,11 +21277,6 @@
     "href": "/dakkapel/bedrijf/raadsveld-kunststof-kozijnen-xxvfmi/",
     "name": "Raadsveld Kunststof Kozijnen",
     "rating": "4,3"
-   },
-   {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
    },
    {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
@@ -24591,11 +24525,6 @@
     "rating": "4,3"
    },
    {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
-   },
-   {
     "href": "/dakkapel/bedrijf/manning-dakbedekking-b-v-8ksbye/",
     "name": "Manning Dakbedekking B.V.",
     "rating": "4,0"
@@ -27501,11 +27430,6 @@
     "rating": "4,3"
    },
    {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
-   },
-   {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
     "name": "Emergo Prefab",
     "rating": "4,7"
@@ -30292,11 +30216,6 @@
     "rating": "4,3"
    },
    {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
-   },
-   {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
     "name": "Emergo Prefab",
     "rating": "4,7"
@@ -32259,11 +32178,6 @@
     "href": "/dakkapel/bedrijf/raadsveld-kunststof-kozijnen-xxvfmi/",
     "name": "Raadsveld Kunststof Kozijnen",
     "rating": "4,3"
-   },
-   {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
    },
    {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
@@ -35423,11 +35337,6 @@
     "href": "/dakkapel/bedrijf/raadsveld-kunststof-kozijnen-xxvfmi/",
     "name": "Raadsveld Kunststof Kozijnen",
     "rating": "4,3"
-   },
-   {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
    },
    {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
@@ -39697,11 +39606,6 @@
   "tel_disp": "0599 614 484",
   "city_slug": "stadskanaal",
   "siblings": [
-   {
-    "href": "/dakkapel/bedrijf/dakraammontage-noord-x_dyyu/",
-    "name": "Dakraammontage-noord",
-    "rating": "5,0"
-   },
    {
     "href": "/dakkapel/bedrijf/emergo-prefab-303yn0/",
     "name": "Emergo Prefab",
