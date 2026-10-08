@@ -7,7 +7,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
-import { Images, Ruler, MagicWand, Couch, Television, Stairs, Books, Paperclip, PaperPlaneRight, X, Cube, Door, SquaresFour, Package, ArrowsClockwise } from '@phosphor-icons/react'
+import { Images, Ruler, MagicWand, Couch, Television, Stairs, Books, Paperclip, PaperPlaneRight, X, Cube, Door, SquaresFour, Package, ArrowsClockwise, MapTrifold, Check } from '@phosphor-icons/react'
 import { bouw as bouwKast } from '@/lib/kast/rekenmodel'
 import { VOORBEELD_HOEKKAST, type Ontwerp } from '@/lib/kast/ontwerp'
 import { Plattegrond, Uitslag } from './Tekeningen'
@@ -20,6 +20,7 @@ import Werkplaats from './Werkplaats'
 // beweegt, en zolang er nog geen ontwerp is een voorbeeldkast die rustig draait,
 // zodat je meteen ziet wat hier gebeurt.
 
+const PlekAanwijzen = dynamic(() => import('./PlekAanwijzen'), { ssr: false })
 const Kast3D = dynamic(() => import('./Kast3D'), { ssr: false, loading: () => <div className="ko-laden">3D laden…</div> })
 
 type Regel = { rol: 'koper' | 'ontwerper'; tekst: string; fotos: number }
@@ -54,6 +55,9 @@ export default function Ontwerper({ start }: { start?: string }) {
   const [gesprek, setGesprek] = useState<Regel[]>([])
   const [tekst, setTekst] = useState('')
   const [fotos, setFotos] = useState<Foto[]>([])
+  const [aanwijzen, setAanwijzen] = useState(false)
+  // Markering voor de ontwerper ('[Plattegrond]'); de koper ziet hem niet.
+  const [metPlattegrond, setMetPlattegrond] = useState(false)
   const [bezig, setBezig] = useState(false)
   const [bezigStap, setBezigStap] = useState(0)
   const [fout, setFout] = useState('')
@@ -132,15 +136,16 @@ export default function Ontwerper({ start }: { start?: string }) {
     e?.preventDefault()
     if (bezig || (!tekst.trim() && !fotos.length)) return
     setBezigStap(0); setBezig(true); setFout('')
-    const mijn: Regel = { rol: 'koper', tekst: tekst.trim(), fotos: fotos.length }
+    const tag = metPlattegrond && fotos.length ? '[Plattegrond] ' : ''
+    const mijn: Regel = { rol: 'koper', tekst: tag + tekst.trim(), fotos: fotos.length }
     setGesprek(g => [...g, mijn])
-    const body = { id, s: sleutel, tekst: tekst.trim(), fotos: fotos.map(({ media_type, data }) => ({ media_type, data })) }
+    const body = { id, s: sleutel, tekst: tag + tekst.trim(), fotos: fotos.map(({ media_type, data }) => ({ media_type, data })) }
     const terug = { tekst, fotos }
-    setTekst(''); setFotos([])
+    setTekst(''); setFotos([]); setMetPlattegrond(false)
     try {
       const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
       const j = await r.json()
-      if (!r.ok) { if (j.nodigEmail) setNodigEmail(true); setFout(j.nodigEmail ? '' : (j.error || 'Er ging iets mis.')); setGesprek(g => g.slice(0, -1)); setTekst(terug.tekst); setFotos(terug.fotos); return }
+      if (!r.ok) { if (j.nodigEmail) setNodigEmail(true); setFout(j.nodigEmail ? '' : (j.error || 'Er ging iets mis.')); setGesprek(g => g.slice(0, -1)); setTekst(terug.tekst); setFotos(terug.fotos); setMetPlattegrond(!!tag); return }
       zetId(j.id, j.sleutel); setBewaard(!!j.bewaard)
       if (j.ontwerp) { setOntwerp(j.ontwerp); setTab('3d') }
       setGesprek(j.gesprek ?? [])
@@ -178,7 +183,7 @@ export default function Ontwerper({ start }: { start?: string }) {
                 <div className="ko-start">
                   <ol className="ko-stappen">
                     <li><span className="ko-icoon"><Images size={20} /></span><div><strong>Laat zien wat je mooi vindt</strong><span>1 tot 4 foto’s van kasten die je aanspreken. Kleur en stijl haalt de ontwerper eruit.</span></div></li>
-                    <li><span className="ko-icoon"><Ruler size={20} /></span><div><strong>Vertel waar hij komt</strong><span>Welke muur of hoek, hoeveel ruimte, hoe hoog het plafond is en wat erin moet.</span></div></li>
+                    <li><span className="ko-icoon"><Ruler size={20} /></span><div><strong>Vertel waar hij komt</strong><span>Welke muur of hoek, hoeveel ruimte, hoe hoog het plafond is en wat erin moet. Heb je een plattegrond? Wijs de plek erop aan.</span><button type="button" className="ko-knop ko-knop-klein ko-stap-knop" onClick={() => setAanwijzen(true)}><MapTrifold size={16} aria-hidden="true" />Plattegrond uploaden</button></div></li>
                     <li><span className="ko-icoon"><MagicWand size={20} /></span><div><strong>De ontwerper tekent hem uit</strong><span>In 3D, met maten en zaaglijst. Daarna stuur je bij in gewone taal.</span></div></li>
                   </ol>
                   <div className="ko-label ko-label-klein">Of begin met</div>
@@ -196,7 +201,7 @@ export default function Ontwerper({ start }: { start?: string }) {
                   {r.rol === 'ontwerper' && <span className="ko-avatar" aria-hidden="true">B.</span>}
                   <div className="ko-bel">
                     {r.fotos > 0 && <div className="ko-fotolabel"><Images size={14} aria-hidden="true" /> {r.fotos} {r.fotos === 1 ? 'foto' : 'foto’s'}</div>}
-                    {r.tekst}
+                    {r.tekst.replace(/^\[Plattegrond\]\s*/, '')}
                   </div>
                 </div>
               ))}
@@ -229,6 +234,7 @@ export default function Ontwerper({ start }: { start?: string }) {
               )}
               <div className="ko-invoer">
                 <button type="button" className="ko-rond" onClick={() => bestand.current?.click()} aria-label="Foto’s toevoegen" title="Foto’s toevoegen"><Paperclip size={20} /></button>
+                <button type="button" className="ko-rond" onClick={() => setAanwijzen(true)} aria-label="Plattegrond: wijs de plek aan" title="Plattegrond: wijs de plek aan"><MapTrifold size={20} /></button>
                 <label htmlFor="kast-tekst" className="ko-verborgen">Bericht aan de ontwerper</label>
                 <textarea id="kast-tekst" ref={veld} value={tekst} rows={1} onChange={e => setTekst(e.target.value)}
                   placeholder={leeg ? 'Beschrijf je kast, of sleep hier foto’s naartoe…' : 'Bijv. ‘bovenkasten iets hoger’ of ‘alleen rechts een ronde kop’'}
@@ -238,6 +244,13 @@ export default function Ontwerper({ start }: { start?: string }) {
               </div>
               {fout ? <p role="alert" className="ko-fout">{fout}</p> : <p className="ko-hint">Enter verstuurt · Shift+Enter voor een nieuwe regel</p>}
             </form>
+            {aanwijzen && <PlekAanwijzen onSluit={() => setAanwijzen(false)} onKlaar={a => {
+              setAanwijzen(false)
+              setFotos(fs => [...a.fotos, ...fs].slice(0, 4))
+              setMetPlattegrond(true)
+              setTekst(t => a.tekst.replace(/^\[Plattegrond\]\s*/, '') + (t.trim() ? `\n${t}` : '\n'))
+              setTimeout(() => veld.current?.focus(), 50)
+            }} />}
             {sleep && <div className="ko-dropzone" aria-hidden="true"><Images size={34} /><span>Laat los om toe te voegen</span></div>}
           </section>
 
@@ -279,7 +292,7 @@ export default function Ontwerper({ start }: { start?: string }) {
                   {tab === 'werkplaats' && <Werkplaats bouw={bouw} />}
                 </div>
                 {ontwerp.notities?.length ? <ul className="ko-notities">{ontwerp.notities.map((n, i) => <li key={i}>{n}</li>)}</ul> : null}
-                {id && sleutel && <Meenemen id={id} s={sleutel} bewaard={bewaard} onBewaard={() => setBewaard(true)} />}
+                {id && sleutel && <Meenemen id={id} s={sleutel} bewaard={bewaard} onBewaard={() => setBewaard(true)} plattegrond={gesprek.some(r => r.tekst.startsWith('[Plattegrond]'))} />}
               </>
             )}
           </section>
@@ -313,7 +326,7 @@ function EmailPoort({ id, s, onKlaar }: { id: string; s: string; onKlaar: () => 
   )
 }
 
-function Meenemen({ id, s, bewaard, onBewaard }: { id: string; s: string; bewaard: boolean; onBewaard: () => void }) {
+function Meenemen({ id, s, bewaard, onBewaard, plattegrond }: { id: string; s: string; bewaard: boolean; onBewaard: () => void; plattegrond: boolean }) {
   const [email, setEmail] = useState('')
   const [bezig, setBezig] = useState(false)
   const [fout, setFout] = useState('')
@@ -321,9 +334,15 @@ function Meenemen({ id, s, bewaard, onBewaard }: { id: string; s: string; bewaar
   return (
     <div className="ko-offerte">
       <div className="ko-offerte-rij">
-        <div><strong>Tevreden? Vraag een offerte aan</strong><span>Neem je ontwerp mee naar je gratis Bylder-omgeving. Daar vraag je de offerte aan bij het timmerbedrijf, en ontwerp je verder op de plattegrond van je woning.</span></div>
+        <div><strong>Tevreden? Vraag een offerte aan</strong><span>Neem je ontwerp{plattegrond ? ' en je plattegrond' : ''} mee naar je gratis Bylder-omgeving. Een account maken duurt een halve minuut.</span></div>
         <a className="ko-knop ko-knop-primair" href={link}>Neem mee en vraag offerte aan</a>
       </div>
+      <ul className="ko-voordelen">
+        <li><Check size={15} weight="bold" aria-hidden="true" />Offerte van het timmerbedrijf op precies dit ontwerp; inmeten is gratis</li>
+        <li><Check size={15} weight="bold" aria-hidden="true" />{plattegrond ? 'Je plattegrond staat in je dossier, met de plek van de kast erop' : 'Je ontwerp blijft bewaard; je stuurt later verder bij'}</li>
+        <li><Check size={15} weight="bold" aria-hidden="true" />Zet je bouwtekening erin en zie je hele woning in 3D, met elke kamer gemeten</li>
+        <li><Check size={15} weight="bold" aria-hidden="true" />Ledenkorting bij de merken die meedoen, ook op deuren en vloeren</li>
+      </ul>
       {!bewaard && (
         <div className="ko-poort-rij" style={{ marginTop: 12 }}>
           <label htmlFor="kast-bewaar" className="ko-verborgen">E-mailadres om je ontwerp te bewaren</label>
@@ -398,6 +417,12 @@ const CSS = `
 .ko-voortgang{display:flex;gap:4px}
 .ko-voortgang b{flex:1;height:3px;border-radius:2px;background:var(--lijn);transition:background .6s}
 .ko-voortgang b.aan{background:var(--mos)}
+.ko-voordelen{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px;font-size:13.5px;line-height:1.45}
+.ko-voordelen li{display:flex;gap:8px;align-items:flex-start}
+.ko-voordelen svg{color:var(--mos);flex:none;margin-top:2px}
+.ko-invoer textarea:focus,.ko-invoer textarea:focus-visible{outline:none;box-shadow:none}
+@media (max-width:640px){.ko-invoer{gap:2px}.ko-invoer .ko-rond{width:36px;height:40px}}
+.ko-stap-knop{margin-top:10px;display:inline-flex;gap:7px;align-items:center}
 .ko-composer{padding:12px 14px 14px;border-top:1px solid var(--lijn)}
 .ko-duimen{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
 .ko-duim{position:relative}
