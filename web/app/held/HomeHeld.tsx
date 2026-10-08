@@ -1,3 +1,4 @@
+import KastCTA from '../components/KastCTA'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
 import HeldToneel, { type Regel } from './HeldToneel'
 import { HOME_DELEN } from '../homeSections'
@@ -223,6 +224,14 @@ export default function HomeHeld() {
             aanleiding={'Geen kozijn, geen architraaf: deur en wand worden één vlak. '
               + 'Kies het groefpatroon en de kleur, zie de deur in 3D in jouw kleur, '
               + 'en vraag er direct een offerte op aan — met het aantal dat in je tekening staat.'}
+          />
+          {/* Tweede maatwerkproduct naast de deuren: de kastontwerper. */}
+          <KastCTA
+            marge="20px 0 0"
+            label="Ontwerpen · kasten op maat"
+            titel="Een kast die precies in jouw hoek past."
+            aanleiding={'Laat een foto zien van een kast die je mooi vindt en vertel waar hij moet komen. '
+              + 'Je ziet hem in 3D met maten, en het timmerbedrijf krijgt de tekening en de zaaglijst.'}
           />
         </div>
       </section>
