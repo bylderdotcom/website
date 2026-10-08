@@ -115,6 +115,7 @@ export function bouw(o: Ontwerp): Bouw {
     let u = uFront
     let lengte = 0
     let topEersteSeg = yP
+    const kopNaast: number[] = []
     segs.forEach((s, si) => {
       const eerste = si === 0, laatste = si === segs.length - 1
       const waar = `${naam}, deel ${si + 1}`
@@ -157,8 +158,16 @@ export function bouw(o: Ontwerp): Bouw {
             }
             if (zi === s.zones.length - 1) rond.push({ naam: 'Kopblad', waar: zw, mat: mat.front, type: 'schijf', r: z.inhoud === 'open' ? R : R - MAAT.schil, y0: y1 - tf, y1, c, theta: lo, been: bi, u0: ku0, u1: ku1, dikte: tf })
             // vlakke zijden van de kop (zichtwerk)
-            const uk0 = naarBegin ? cu : cu - tf, uk1 = naarBegin ? cu + tf : cu
-            box('Kopwand korpuszijde', zw, mat.front, 'kopwand', uk0, uk1, 0, R, y, y1, { kant: 'zichtkant afgewerkt', zicht: true })
+            // Staat er een recht deel naast de kop, dan is diens zijwand de wand van
+            // de kop (die wordt aan de kopkant afgewerkt, zie hieronder). Een eigen
+            // kopwand zou op precies dezelfde plek staan: dubbel op de zaaglijst en
+            // in 3D twee vlakken door elkaar heen.
+            const buur = naarBegin ? segs[si + 1] : segs[si - 1]
+            if (buur?.vorm === 'recht') kopNaast.push(cu)
+            else {
+              const uk0 = naarBegin ? cu : cu - tf, uk1 = naarBegin ? cu + tf : cu
+              box('Kopwand korpuszijde', zw, mat.front, 'kopwand', uk0, uk1, 0, R, y, y1, { kant: 'zichtkant afgewerkt', zicht: true })
+            }
             const um0 = naarBegin ? cu - R : cu + tf, um1 = naarBegin ? cu : cu + R
             box('Kopwand muurzijde', zw, mat.front, 'kopwand', um0, um1, 0, tf, y, y1, { kant: 'zichtkant afgewerkt', zicht: true })
           }
@@ -281,6 +290,12 @@ export function bouw(o: Ontwerp): Bouw {
         box('Passtrook plafond', waar, mat.front, 'pas', eerste && isHoek ? D : a, e, dc, D, top, o.plafond, { kant: 'aftekenen op plafond', zicht: true })
       u = e
       lengte = e
+    })
+    // Zijwanden die aan een ronde kop grenzen zijn vanuit de kop te zien: in de
+    // afwerking, met de zichtkant afgewerkt.
+    delen.forEach(d => {
+      if (d.been !== bi || d.naam !== 'Zijwand' || !kopNaast.some(c => Math.abs(d.u0 - c) < 0.01 || Math.abs(d.u1 - c) < 0.01)) return
+      d.naam = 'Zijwand aan de kop'; d.mat = mat.front; d.zicht = true; d.kant = 'zichtkant afgewerkt'
     })
     // Vulstuk in de binnenhoek / passtroken in een nis
     if (isHoek) box('Vulstuk binnenhoek', naam, mat.front, 'vul', D, D + MAAT.vul, dc, D, yP, topEersteSeg, { kant: 'zichtkant afgewerkt', zicht: true })
