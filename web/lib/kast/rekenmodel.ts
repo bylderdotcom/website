@@ -298,7 +298,17 @@ export function bouw(o: Ontwerp): Bouw {
       d.naam = 'Zijwand aan de kop'; d.mat = mat.front; d.zicht = true; d.kant = 'zichtkant afgewerkt'
     })
     // Vulstuk in de binnenhoek / passtroken in een nis
-    if (isHoek) box('Vulstuk binnenhoek', naam, mat.front, 'vul', D, D + MAAT.vul, dc, D, yP, topEersteSeg, { kant: 'zichtkant afgewerkt', zicht: true })
+    // Het vulstuk loopt langs de zones met fronten. Naast een open vak blijft de
+    // hoek open: de planken lopen dan door tot in de hoek.
+    if (isHoek && segs[0]) {
+      let y = yP, van: number | null = null
+      const sluit = (tot: number) => { if (van !== null && tot > van) box('Vulstuk binnenhoek', naam, mat.front, 'vul', D, D + MAAT.vul, dc, D, van, tot, { kant: 'zichtkant afgewerkt', zicht: true }); van = null }
+      for (const z of segs[0].zones) {
+        if (z.inhoud === 'open' || z.inhoud === 'leeg') sluit(y); else if (van === null) van = y
+        y += z.hoogte
+      }
+      sluit(Math.min(y, topEersteSeg))
+    }
     if (o.opstelling === 'nis') {
       const top = maxTop
       box('Passtrook muur', naam, mat.front, 'pas', 0, MAAT.nisPas, dc, D, yP, top, { kant: 'aftekenen op muur', zicht: true })
