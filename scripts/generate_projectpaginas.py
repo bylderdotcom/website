@@ -1934,6 +1934,42 @@ VENSTER = (
 )
 
 
+# De kastontwerper: het tweede maatwerkproduct naast de deuren. Eén kaart onder
+# de afwerkkeuzes, met een vaste afbeelding uit de ontwerper (geen 3D op deze
+# pagina's: die moeten snel laden). Staat de plattegrond van de koper in Bylder,
+# dan kent de ontwerper de kamermaten al; dat is hier de reden om te beginnen.
+KAST_VENSTER = (
+    '<a class="pk-venster" href="{href}" tabindex="-1" aria-hidden="true">'
+    '<span class="balk"><i></i><i></i><i></i>'
+    '<span>bylder.com/kasten-op-maat/ontwerpen</span></span>'
+    '<img src="/img/kasten/hoekkast-3d.jpg"'
+    ' srcset="/img/kasten/hoekkast-3d-sm.jpg 600w, /img/kasten/hoekkast-3d.jpg 1200w"'
+    ' sizes="(max-width:760px) 92vw, 420px" alt="" width="1200" height="800"'
+    ' loading="lazy" decoding="async"></a>'
+)
+
+
+def kast_blok(slug):
+    href = ("/kasten-op-maat/ontwerpen/?utm_source=bylder-site"
+            f"&amp;utm_campaign=project-{slug}-kast")
+    return f"""<div class="pk-kast">
+<article>
+{KAST_VENSTER.format(href=href)}
+<div>
+<div class="pk-etiket">Kast op maat &middot; ontwerper</div>
+<h3>Een kast die precies in je hoek of nis past</h3>
+<p>Laat een foto zien van een kast die je mooi vindt en vertel waar hij komt. Je ziet hem in 3D
+met maten, en het timmerbedrijf krijgt de tekening en de zaaglijst. Staat je plattegrond in
+Bylder, dan kent de ontwerper de maten van je kamers al.</p>
+<p><a class="cta-primary" href="{href}">Ontwerp je kast &rarr;</a></p>
+<p class="noot">Vrije vorm, geen vaste kastjes. Het timmerbedrijf meet gratis in.
+<a href="/kasten-op-maat/">Hoe het werkt</a>.</p>
+</div>
+</article>
+</div>
+"""
+
+
 def keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel=""):
     stad_slug = re.sub(r"[^a-z0-9]+", "-", plaats_ruw.lower()).strip("-")
     n_gv = _gietvloer_steden().get(stad_slug, 0)
@@ -2342,6 +2378,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 {tekening_blok(naam, slug, app, is_opgeleverd)}
 
 {budget_html if budget_html else keuzes_blok(naam, plaats, plaats_ruw, slug, lo, hi, opgel_wanneer)}
+
+{kast_blok(slug)}
 
 {aup_html}
 
