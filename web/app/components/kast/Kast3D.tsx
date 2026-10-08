@@ -25,7 +25,7 @@ type Props = { bouw: Bouw; afwerking: Afwerking; binnen: 'wit' | 'zelfde'; open:
 
 export default function Kast3D({ bouw, afwerking, binnen, open, hoogte = 460, draai = false, achtergrond = '#EDE9E2' }: Props) {
   const box = useRef<HTMLDivElement>(null)
-  const staat = useRef<{ renderer: THREE.WebGLRenderer; scene: THREE.Scene; cam: THREE.PerspectiveCamera; ctr: OrbitControls; groep: THREE.Group | null; kader?: { midden: THREE.Vector3; grootte: number }; beweeg: { obj: THREE.Object3D; doel: number; soort: 'draai' | 'schuif'; as?: THREE.Vector3 }[]; open: boolean } | null>(null)
+  const staat = useRef<{ renderer: THREE.WebGLRenderer; scene: THREE.Scene; cam: THREE.PerspectiveCamera; ctr: OrbitControls; groep: THREE.Group | null; kader?: { midden: THREE.Vector3; grootte: number }; basisHoek: number | null; zwaai: boolean; beweeg: { obj: THREE.Object3D; doel: number; soort: 'draai' | 'schuif'; as?: THREE.Vector3 }[]; open: boolean } | null>(null)
 
   // eenmalig: renderer, licht, camera
   useEffect(() => {
@@ -52,7 +52,9 @@ export default function Kast3D({ bouw, afwerking, binnen, open, hoogte = 460, dr
     Object.assign(zon.shadow.camera, { left: -4, right: 4, top: 4, bottom: -4, near: 0.5, far: 16 })
     scene.add(zon, zon.target)
     const vul = new THREE.DirectionalLight('#E8EEFF', 0.6); vul.position.set(-5, 2, 4); scene.add(vul)
-    staat.current = { renderer, scene, cam, ctr, groep: null, beweeg: [], open: false }
+    staat.current = { renderer, scene, cam, ctr, groep: null, basisHoek: null, zwaai: false, beweeg: [], open: false }
+    // Wie zelf gaat draaien, neemt het over: het zwaaien stopt.
+    ctr.addEventListener('start', () => { if (staat.current) staat.current.zwaai = false })
 
     const maat = () => { const r = el.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); cam.aspect = r.width / Math.max(1, r.height); cam.updateProjectionMatrix(); kadreer(staat.current!) }
     const ro = new ResizeObserver(maat); ro.observe(el); maat()
@@ -65,6 +67,13 @@ export default function Kast3D({ bouw, afwerking, binnen, open, hoogte = 460, dr
         if (b.soort === 'draai') { const nu = b.obj.rotation.y; b.obj.rotation.y = reduce ? doel : nu + (doel - nu) * 0.1 }
         else { const nu = b.obj.userData.t ?? 0; const t = reduce ? doel : nu + (doel - nu) * 0.1; b.obj.userData.t = t; b.obj.position.copy(b.obj.userData.basis).addScaledVector(b.as!, t) }
       })
+      // Zachtjes heen en weer rond het vooraanzicht, niet helemaal rond: een
+      // inbouwkast heeft geen achterkant om naar te kijken.
+      if (s.zwaai && s.basisHoek !== null) {
+        const doel = s.basisHoek + Math.sin(performance.now() / 1000 * 0.45) * 0.5
+        const nu = ctr.getAzimuthalAngle()
+        cam.position.sub(ctr.target).applyAxisAngle(new THREE.Vector3(0, 1, 0), doel - nu).add(ctr.target)
+      }
       ctr.update(); renderer.render(scene, cam); raf = requestAnimationFrame(loop)
     }
     loop()
@@ -75,7 +84,7 @@ export default function Kast3D({ bouw, afwerking, binnen, open, hoogte = 460, dr
   useEffect(() => {
     const s = staat.current; if (!s) return
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    s.ctr.autoRotate = draai && !reduce; s.ctr.autoRotateSpeed = 0.9
+    s.ctr.autoRotate = false; s.zwaai = draai && !reduce
     s.scene.background = new THREE.Color(achtergrond)
   }, [draai, achtergrond])
 
@@ -93,6 +102,9 @@ export default function Kast3D({ bouw, afwerking, binnen, open, hoogte = 460, dr
     s.ctr.target.copy(midden)
     s.cam.position.copy(midden).add(richting)
     kadreer(s)
+    // Draaien blijft aan de voorkant: tot ongeveer 45 graden naar links en rechts.
+    s.basisHoek = s.ctr.getAzimuthalAngle()
+    s.ctr.minAzimuthAngle = s.basisHoek - 0.8; s.ctr.maxAzimuthAngle = s.basisHoek + 0.8
   }, [bouw, afwerking, binnen])
 
   return <div ref={box} style={{ width: '100%', height: hoogte, borderRadius: 18, overflow: 'hidden', background: achtergrond, touchAction: 'none' }} />
