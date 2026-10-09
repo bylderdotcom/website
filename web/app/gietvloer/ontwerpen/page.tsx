@@ -61,7 +61,7 @@ export default function GietvloerOntwerpenPage() {
           <nav aria-label="Kruimelpad" style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 14px' }}>
             <a href="/" style={{ color: 'inherit' }}>Bylder</a> / <a href="/gietvloer/" style={{ color: 'inherit' }}>Gietvloer</a> / <span aria-current="page">Ontwerpen</span>
           </nav>
-          <GietvloerHeld />
+          <GietvloerHeld api={API} />
           <Ontwerper api={API} modus="site" />
         </div>
       </div>

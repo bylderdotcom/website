@@ -19,7 +19,7 @@
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
-import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair } from '@phosphor-icons/react'
+import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair, Ticket } from '@phosphor-icons/react'
 import {
   KLEUREN, TYPES, MAX_STALEN, VOORLOPIG, NIET_GIET, kleurOp, typeOp, m2Van, isLicht, besteKleuren,
   type Analyse, type Keuze, type GekozenRuimte, type Match, type TypeId,
@@ -37,6 +37,7 @@ type Weergave = {
   id: string; sleutel: string | null; foto: string | null; analyse: Analyse | null; matches: Match[]
   keuze: Keuze; analyses: number; maxAnalyses: number; bewaard: boolean; gekoppeld: boolean; aangevraagd: boolean
   stalen: { datum: string; kleuren: { id: string; naam: string }[] } | null
+  voucher?: { code: string; tekst: string } | null
 }
 type Props = {
   api: string
@@ -52,6 +53,15 @@ type Props = {
 const APP = 'https://app.bylder.com'
 const OPSLAG = 'bylder:gietvloer:v1'
 const WONING_OPSLAG = 'bylder:mijn-woning:v1'
+
+/** Een stap in de trechter (app.bylder.com/api/trechter): platte tekst, geen preflight, niet wachten. */
+function meetStap(api: string, bron: 'site' | 'app', stap: string) {
+  try {
+    let id = localStorage.getItem('bylder:t')
+    if (!id) { id = crypto.randomUUID(); localStorage.setItem('bylder:t', id) }
+    fetch(api.replace(/\/api\/gietvloer.*$/, '/api/trechter'), { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify({ product: 'gietvloer', stap, sessie: id, bron }) }).catch(() => undefined)
+  } catch { /* privévenster of geen netwerk: niet erg */ }
+}
 
 const nl = (n: number, d = 0) => n.toLocaleString('nl-NL', { minimumFractionDigits: d, maximumFractionDigits: d })
 const eur = (n: number) => '€ ' + nl(Math.round(n / 50) * 50)
@@ -192,6 +202,8 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
   const geladen = useRef(false)
   const bestand = useRef<HTMLInputElement>(null)
   const teller = useRef(0)
+  const gemeten = useRef(new Set<string>())
+  const meet = (stap: string) => { if (gemeten.current.has(stap)) return; gemeten.current.add(stap); meetStap(api, modus, stap) }
 
   const bewaarLokaal = (id: string, s: string | null) => {
     sessie.current = { id, s }
@@ -288,6 +300,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
       const v = await verklein(f)
       setVoorbeeld(v.url)
       const d = await stuur({ actie: 'foto', foto: { media_type: v.media_type, data: v.data } }) as Weergave
+      meet('foto')
       // Kleur van de foto overnemen en meteen de hele keuze (ook de ruimtes) bewaren.
       if (d.keuze?.kleur) wijzig({ kleur: d.keuze.kleur, ...(keuze.type ? {} : { type: d.keuze.type }) })
       setTimeout(() => document.getElementById('gv-kleur')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150)
@@ -309,11 +322,13 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
   const matches = w?.matches?.length ? w.matches : kleur ? besteKleuren(kleur.hex).slice(0, 3) : []
 
   const wisselTekening = (sl: string) => {
+    meet('ruimtes')
     const nu = new Set(gekozen)
     if (nu.has(sl)) nu.delete(sl); else nu.add(sl)
     wijzig({ ruimtes: kandidaten.filter(r => nu.has(r.sleutel)), bron: 'tekening' })
   }
   const zetHandmatig = (lijst: GekozenRuimte[], uit = handUit) => {
+    meet('ruimtes')
     setHandmatig(lijst)
     wijzig({ ruimtes: lijst.filter(r => !uit.has(r.sleutel) && r.m2 > 0 && r.naam.trim()), bron: 'handmatig' })
   }
@@ -468,7 +483,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
         </div>
         <div className="gv-typen" role="radiogroup" aria-label="Type gietvloer">
           {TYPES.map(t => (
-            <button key={t.id} type="button" role="radio" aria-checked={keuze.type === t.id} className="gv-type" onClick={() => wijzig({ type: t.id as TypeId })}>
+            <button key={t.id} type="button" role="radio" aria-checked={keuze.type === t.id} className="gv-type" onClick={() => { meet('type'); wijzig({ type: t.id as TypeId }) }}>
               <span className="gv-type-kop">
                 <strong>{t.naam}</strong>
                 {a?.type === t.id && <em>past bij je foto</em>}
@@ -500,14 +515,20 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
             {type && m2 > 0 && <div className="gv-indicatie"><dt>Indicatie</dt><dd>{eur(m2 * type.prijs[0])} – {eur(m2 * type.prijs[1])}</dd></div>}
           </dl>
         </div>
+        <div className="gv-voucher">
+          <Ticket size={22} weight="thin" aria-hidden="true" />
+          {w?.voucher
+            ? <p><strong>Je Bylder-voucher: <span className="gv-mono-sterk">{w.voucher.code}</span></strong><br />{w.voucher.tekst}. De verwerker verrekent de korting op zijn factuur.</p>
+            : <p><strong>Bylder-voucher</strong><br />Gratis stalen, en 5% korting op je gietvloer vanaf € 7.500 (excl. btw). Je persoonlijke code krijg je bij je stalen of je offerte.</p>}
+        </div>
         {modus === 'app' && renderApi
           ? <Impressie api={renderApi} w={w} laag={woning ? woning[laag] : null} li={laag} gekozen={gekozen} kleur={hex} bewaar={() => stuur({ actie: 'keuze', keuze: eff })} />
-          : modus === 'site' && <ImpressieTeaser koppel={koppel} maak={() => stuur({ actie: 'keuze', keuze: eff })} />}
+          : modus === 'site' && <ImpressieTeaser koppel={koppel} maak={() => { meet('account-klik'); return stuur({ actie: 'keuze', keuze: eff }) }} />}
         <div className="gv-twee">
           <Stalen modus={modus} w={w} kleur={keuze.kleur ?? null} matches={matches} naam={naam} stuur={stuur} />
           {modus === 'app'
             ? <Offerte w={w} m2={m2} type={!!type} naam={naam} stuur={stuur} />
-            : <Account koppel={koppel} maak={() => stuur({ actie: 'keuze', keuze: eff })} />}
+            : <Account koppel={koppel} maak={() => { meet('account-klik'); return stuur({ actie: 'keuze', keuze: eff }) }} />}
         </div>
         <Woning modus={modus} />
       </section>
@@ -945,6 +966,11 @@ const CSS = `
 .gv-imp-beeld{display:block;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#E9E3D8}
 .gv-imp-beeld img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
 .gv-imp-beeld:hover img{transform:scale(1.03)}
+.gv-voucher{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;margin:0 0 14px;padding:14px 16px;border-radius:16px;border:1.5px dashed rgba(184,92,56,.45);background:rgba(184,92,56,.05)}
+.gv-voucher svg{color:var(--koper)}
+.gv-voucher p{margin:0;font-size:14.5px;line-height:1.55}
+.gv-voucher strong{color:var(--inkt)}
+.gv-mono-sterk{font-family:ui-monospace,Menlo,monospace;letter-spacing:.04em}
 .gv-rest{margin-top:22px}
 .gv-rest-rij{display:grid;gap:8px}
 @media (min-width:760px){.gv-rest-rij{grid-template-columns:repeat(3,1fr)}}
