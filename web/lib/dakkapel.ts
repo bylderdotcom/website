@@ -67,6 +67,9 @@ type Bedrijf = {
   website?: string
   tel?: string
   tel_disp?: string
+  /** door het bedrijf zelf aangeleverd (correctieverzoek of beheerd profiel) */
+  adres?: string
+  omschrijving?: string
 }
 
 // Disclaimer uit de cluster-footer (templates/clusters/dakkapel/footer.default.html):
@@ -376,6 +379,12 @@ function getBedrijfHtml(page: DakkapelPage): string {
   if (b.siblings) {
     body = body.replace('{{tiles}}', b.siblings.map(renderTile).join(''))
   }
+  // Adres en omschrijving alleen als het bedrijf ze zelf aanleverde.
+  if (b.adres) body = body.replace('Dakkapelspecialist in {{city}}</div>', `$&<div style="font-size:14px;color:rgba(61,46,30,0.6);margin-top:4px;">${esc(b.adres)}</div>`)
+  if (b.omschrijving) body = body.replace('<div class="highlight"', `<div style="margin-top:20px;background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:14px;padding:18px 20px;">`
+    + `<h2 style="font-size:1.1rem;font-weight:800;margin:0 0 8px;color:#1A1208;">Over {{name}}</h2>`
+    + `<p style="font-size:15px;line-height:1.7;color:rgba(61,46,30,0.78);margin:0;">${esc(b.omschrijving)}</p>`
+    + `<p style="font-size:11px;color:rgba(61,46,30,0.55);margin:8px 0 0;">Omschrijving aangeleverd door het bedrijf zelf.</p></div>\n  <div class="highlight"`)
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
   const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
