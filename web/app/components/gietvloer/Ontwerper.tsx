@@ -19,7 +19,7 @@
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
-import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info } from '@phosphor-icons/react'
+import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair } from '@phosphor-icons/react'
 import {
   KLEUREN, TYPES, MAX_STALEN, VOORLOPIG, NIET_GIET, kleurOp, typeOp, m2Van, isLicht, besteKleuren,
   type Analyse, type Keuze, type GekozenRuimte, type Match, type TypeId,
@@ -45,6 +45,8 @@ type Props = {
   woning?: Laag[] | null
   startGiet?: Record<string, boolean> | null
   naam?: string
+  /** app: route voor de fotorealistische impressie (/api/gietvloer/render) */
+  renderApi?: string
 }
 
 const APP = 'https://app.bylder.com'
@@ -171,7 +173,7 @@ function Staal({ kleur, wolk, glans, label }: { kleur: string; wolk: number; gla
 
 /* ---------------------------------------------------------------- het scherm */
 
-export default function Ontwerper({ api, modus, woning: woningProp, startGiet, naam }: Props) {
+export default function Ontwerper({ api, modus, woning: woningProp, startGiet, naam, renderApi }: Props) {
   const [w, setW] = useState<Weergave | null>(null)
   const [keuze, setKeuze] = useState<Keuze>({})
   const [woning, setWoning] = useState<Laag[] | null>(woningProp ?? null)
@@ -498,6 +500,9 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
             {type && m2 > 0 && <div className="gv-indicatie"><dt>Indicatie</dt><dd>{eur(m2 * type.prijs[0])} – {eur(m2 * type.prijs[1])}</dd></div>}
           </dl>
         </div>
+        {modus === 'app' && renderApi
+          ? <Impressie api={renderApi} w={w} laag={woning ? woning[laag] : null} li={laag} gekozen={gekozen} kleur={hex} bewaar={() => stuur({ actie: 'keuze', keuze: eff })} />
+          : modus === 'site' && <ImpressieTeaser koppel={koppel} maak={() => stuur({ actie: 'keuze', keuze: eff })} />}
         <div className="gv-twee">
           <Stalen modus={modus} w={w} kleur={keuze.kleur ?? null} matches={matches} naam={naam} stuur={stuur} />
           {modus === 'app'
@@ -619,6 +624,110 @@ function Offerte({ w, m2, type, naam, stuur }: { w: Weergave | null; m2: number;
   )
 }
 
+/* ---------------------------------------------------------------- fotorealistische impressie */
+
+// Stijlen: dezelfde sleutels als RENDER_STYLES in de app (src/lib/renderStyles.ts).
+const STIJLEN = [['scandinavisch', 'Scandinavisch'], ['japandi', 'Japandi'], ['modern-warm', 'Modern warm'], ['industrieel', 'Industrieel'], ['klassiek', 'Klassiek'], ['botanisch', 'Botanisch']] as const
+type Render = { id: string; style: string; image_url: string; created_at: string }
+
+/** De verdieping als maquette zonder tekst (PNG), als basis voor de impressie van boven. */
+async function planPng(laag: Laag, li: number, gekozen: Set<string>, kleur: string): Promise<string> {
+  const k = laag.kader, ox = k[0], oy = k[1], H = 1100
+  let svg = ''
+  laag.ruimtes.forEach(r => r.stroken.forEach(st => {
+    svg += `<polygon fill="${gekozen.has(`${li}:${r.id}`) ? kleur : '#D9D3C8'}" points="${pts([[st[0] - ox, st[1] - oy], [st[2] - ox, st[1] - oy], [st[2] - ox, st[3] - oy], [st[0] - ox, st[3] - oy]])}"/>`
+  }))
+  const vlakken: { d: number; s: string }[] = []
+  laag.wanden.forEach(w => {
+    const a = [w[0] - ox, w[1] - oy, w[2] - ox, w[3] - oy], c = [[a[0], a[1]], [a[2], a[1]], [a[2], a[3]], [a[0], a[3]]]
+    ;[[0, 1], [1, 2], [2, 3], [3, 0]].forEach(([i, j]) => { const p = c[i], q = c[j]; vlakken.push({ d: (p[0] + q[0] + p[1] + q[1]) / 2, s: `<polygon fill="#EFEBE4" stroke="#9C958A" stroke-width="10" points="${pts([[p[0], p[1], 0], [q[0], q[1], 0], [q[0], q[1], H], [p[0], p[1], H]])}"/>` }) })
+    vlakken.push({ d: (a[0] + a[2] + a[1] + a[3]) / 2 + 1, s: `<polygon fill="#3A342D" points="${pts(c.map(q => [q[0], q[1], H]))}"/>` })
+  })
+  vlakken.sort((p, q) => p.d - q.d)
+  const xs: number[] = [], ys: number[] = []
+  ;[[0, 0], [k[2] - ox, 0], [k[2] - ox, k[3] - oy], [0, k[3] - oy]].forEach(q => [0, H].forEach(z => { const p = iso(q[0], q[1], z); xs.push(p[0]); ys.push(p[1]) }))
+  const pad = 400, vx = Math.min(...xs) - pad, vy = Math.min(...ys) - pad, b = Math.max(Math.max(...xs) + pad - vx, Math.max(...ys) + pad - vy)
+  const tekst = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vx} ${vy} ${b} ${b}" width="1024" height="1024"><rect x="${vx}" y="${vy}" width="${b}" height="${b}" fill="#F4F1EC"/>${svg}${vlakken.map(v => v.s).join('')}</svg>`
+  const img = new Image(); img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(tekst); await img.decode()
+  const c = document.createElement('canvas'); c.width = c.height = 1024; c.getContext('2d')!.drawImage(img, 0, 0, 1024, 1024)
+  return c.toDataURL('image/png')
+}
+
+function Impressie({ api, w, laag, li, gekozen, kleur, bewaar }: {
+  api: string; w: Weergave | null; laag: Laag | null; li: number; gekozen: Set<string>; kleur: string; bewaar: () => Promise<unknown>
+}) {
+  const [stijl, setStijl] = useState<string>('scandinavisch')
+  const [renders, setRenders] = useState<Render[]>([])
+  const [teller, setTeller] = useState<{ gebruikt: number; limiet: number } | null>(null)
+  const [bezig, setBezig] = useState<'' | 'kamer' | 'verdieping'>('')
+  const [fout, setFout] = useState('')
+  useEffect(() => {
+    fetch(api).then(r => r.json()).then(d => { if (Array.isArray(d.renders)) setRenders(d.renders); if (d.limiet) setTeller({ gebruikt: d.gebruikt, limiet: d.limiet }) }).catch(() => undefined)
+  }, [api])
+  const op = teller ? teller.gebruikt >= teller.limiet : false
+  const maak = async (soort: 'kamer' | 'verdieping') => {
+    setFout(''); setBezig(soort)
+    try {
+      const d = await bewaar() as Weergave
+      const id = d?.id ?? w?.id
+      if (!id) throw new Error('Kies eerst een kleur.')
+      const beeld = soort === 'verdieping' && laag ? await planPng(laag, li, gekozen, kleur) : undefined
+      const r = await fetch(api, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id, soort, stijl, verdieping: laag ? mooi(laag.naam) : '', beeld }) })
+      const j = await r.json().catch(() => ({}))
+      if (!r.ok || !j.render) throw new Error(j.error || 'De impressie lukte niet. Probeer het opnieuw.')
+      setRenders(x => [j.render, ...x]); setTeller({ gebruikt: j.gebruikt, limiet: j.limiet })
+    } catch (e) { setFout((e as Error).message) } finally { setBezig('') }
+  }
+  return (
+    <div className="gv-impressie">
+      <div className="gv-imp-kop">
+        <Sparkle size={24} weight="thin" aria-hidden="true" />
+        <div><h3>Zie het in het echt</h3><p>Een fotorealistisch beeld van je woning met deze vloer. Het duurt ongeveer twintig seconden.</p></div>
+      </div>
+      <div className="gv-stijlen" role="radiogroup" aria-label="Inrichtingsstijl">
+        {STIJLEN.map(([k, l]) => <button key={k} type="button" role="radio" aria-checked={stijl === k} onClick={() => setStijl(k)}>{l}</button>)}
+      </div>
+      <div className="gv-acties">
+        <button type="button" className="gv-knop gv-knop-donker" disabled={!!bezig || op} onClick={() => maak('kamer')}><Armchair size={18} aria-hidden="true" />{bezig === 'kamer' ? 'Woonkamer maken…' : 'Mijn woonkamer'}</button>
+        {laag && <button type="button" className="gv-knop" disabled={!!bezig || op} onClick={() => maak('verdieping')}><Cube size={18} aria-hidden="true" />{bezig === 'verdieping' ? 'Verdieping maken…' : `${mooi(laag.naam)} van boven`}</button>}
+      </div>
+      {bezig && <div className="gv-imp-bezig" role="status"><i /><span>We leggen je vloer, zetten het licht en richten de kamer in…</span></div>}
+      {fout && <p role="alert" className="gv-fout">{fout}</p>}
+      {renders.length > 0 && (
+        <div className="gv-imp-rij">
+          {renders.map(r => (
+            <a key={r.id} href={r.image_url} target="_blank" rel="noopener noreferrer" className="gv-imp-beeld">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={r.image_url} alt={`Impressie met je gietvloer, stijl ${STIJLEN.find(s => s[0] === r.style)?.[1] ?? r.style}`} loading="lazy" />
+            </a>
+          ))}
+        </div>
+      )}
+      {teller && <p className="gv-klein">{op ? `Je hebt je ${teller.limiet} impressies van deze maand gebruikt.` : `Nog ${teller.limiet - teller.gebruikt} van ${teller.limiet} deze maand, gratis.`} Een impressie is een sfeerbeeld: de echte kleur zie je op een staal.</p>}
+    </div>
+  )
+}
+
+function ImpressieTeaser({ koppel, maak }: { koppel: string | null; maak: () => Promise<unknown> }) {
+  const [bezig, setBezig] = useState(false)
+  return (
+    <div className="gv-impressie gv-imp-teaser">
+      <div className="gv-imp-kop">
+        <Sparkle size={24} weight="thin" aria-hidden="true" />
+        <div><h3>Zie je woonkamer met deze vloer, fotorealistisch</h3><p>In je Bylder-omgeving maken we van je keuze een beeld van je eigen woonkamer, in de stijl die je kiest. Gratis met een account.</p></div>
+      </div>
+      <button type="button" className="gv-knop gv-knop-donker" disabled={bezig} onClick={async () => {
+        setBezig(true)
+        try {
+          const d = await maak() as Weergave
+          const link = d?.sleutel ? `${APP}/dashboard/gietvloer/koppel?id=${encodeURIComponent(d.id)}&s=${encodeURIComponent(d.sleutel)}` : koppel
+          if (link) window.location.href = link
+        } finally { setBezig(false) }
+      }}><Sparkle size={18} aria-hidden="true" />Maak mijn impressie<ArrowRight size={16} aria-hidden="true" /></button>
+    </div>
+  )
+}
+
 /* ---------------------------------------------------------------- account (website) */
 
 function Account({ koppel, maak }: { koppel: string | null; maak: () => Promise<unknown> }) {
@@ -630,6 +739,7 @@ function Account({ koppel, maak }: { koppel: string | null; maak: () => Promise<
       <p>Maak een gratis account en neem je vloer mee. Daar vraag je de offerte aan, en ligt de rest van je woning ook klaar.</p>
       <ul className="gv-voordelen">
         <li><Check size={15} weight="bold" aria-hidden="true" />Offerte van een verwerker die Dr. Schutz aanbeveelt, op jouw ruimtes en kleur</li>
+        <li><Check size={15} weight="bold" aria-hidden="true" />Een fotorealistisch beeld van je eigen woonkamer met deze vloer</li>
         <li><Check size={15} weight="bold" aria-hidden="true" />Je vloer, je kleur en je foto blijven bewaard, op telefoon en laptop</li>
         <li><Check size={15} weight="bold" aria-hidden="true" />Ook je binnendeuren en kasten op maat ontwerpen, in dezelfde woning</li>
         <li><Check size={15} weight="bold" aria-hidden="true" />Ledenkorting bij de merken die meedoen, en een adviseur die je stalen van showroom naar showroom meeneemt</li>
@@ -816,6 +926,25 @@ const CSS = `
 .gv-veld input,.gv-veld select,.gv-veld textarea{min-height:44px;border:1px solid var(--lijn);border-radius:10px;padding:8px 11px;font:inherit;font-size:15px;color:var(--inkt);background:#fff;min-width:0;width:100%}
 .gv-veld input.kort{width:110px}
 .gv-akkoord{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;font-size:13.5px;line-height:1.5}
+.gv-impressie{display:grid;gap:12px;margin:0 0 14px;padding:18px;border-radius:18px;background:linear-gradient(160deg,#FBF8F3,#F1EADF);border:1px solid var(--lijn)}
+.gv-imp-kop{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.gv-imp-kop svg{color:var(--koper)}
+.gv-imp-kop h3{margin:0 0 4px;font-size:1.1rem;color:var(--inkt)}
+.gv-imp-kop p{margin:0;font-size:14.5px;line-height:1.55}
+.gv-imp-teaser{background:linear-gradient(160deg,#1A1208,#3A2A1A);border-color:transparent;color:#EDE6D8}
+.gv-imp-teaser h3{color:#fff}.gv-imp-teaser p{color:rgba(237,230,216,.8)}.gv-imp-teaser .gv-imp-kop svg{color:#E8A87C}
+.gv-imp-teaser .gv-knop-donker{background:#F5F0E8;color:var(--inkt);border-color:#F5F0E8;justify-self:start}
+.gv-knop-donker{background:var(--inkt);border-color:var(--inkt);color:#F5F0E8}
+.gv-stijlen{display:flex;flex-wrap:wrap;gap:6px}
+.gv-stijlen button{min-height:38px;padding:7px 13px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;font-weight:600;font-size:13.5px;font-family:inherit;color:var(--inkt);cursor:pointer}
+.gv-stijlen button[aria-checked=true]{border-color:var(--inkt);background:var(--inkt);color:#F5F0E8}
+.gv-imp-bezig{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--zacht)}
+.gv-imp-bezig i{width:18px;height:18px;border-radius:50%;border:2px solid var(--lijn);border-top-color:var(--koper);animation:gv-draai .9s linear infinite}
+@keyframes gv-draai{to{transform:rotate(360deg)}}
+.gv-imp-rij{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.gv-imp-beeld{display:block;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#E9E3D8}
+.gv-imp-beeld img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.gv-imp-beeld:hover img{transform:scale(1.03)}
 .gv-rest{margin-top:22px}
 .gv-rest-rij{display:grid;gap:8px}
 @media (min-width:760px){.gv-rest-rij{grid-template-columns:repeat(3,1fr)}}
