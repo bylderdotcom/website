@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Ontwerper from '../../components/gietvloer/Ontwerper'
+import GietvloerHeld from '../../components/gietvloer/GietvloerHeld'
 import { TYPES } from '../../components/gietvloer/gegevens'
 
 // De gietvloerontwerper op de website. Het scherm praat met de publieke API van de
@@ -57,16 +58,10 @@ export default function GietvloerOntwerpenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div style={{ background: '#F5F0E8' }}>
         <div style={{ maxWidth: 1180, margin: '0 auto', padding: '26px 16px 8px' }}>
-          <nav aria-label="Kruimelpad" style={{ fontSize: 13, color: `${INKT}0.6)` }}>
+          <nav aria-label="Kruimelpad" style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 14px' }}>
             <a href="/" style={{ color: 'inherit' }}>Bylder</a> / <a href="/gietvloer/" style={{ color: 'inherit' }}>Gietvloer</a> / <span aria-current="page">Ontwerpen</span>
           </nav>
-          <p style={{ font: '700 12px/1 ui-monospace,Menlo,monospace', letterSpacing: '.08em', textTransform: 'uppercase', color: '#B85C38', margin: '18px 0 8px' }}>Gietvloer · tot 3 stalen gratis</p>
-          <h1 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.7rem)', lineHeight: 1.08, fontWeight: 800, letterSpacing: '-.035em', color: '#1A1208', margin: '0 0 10px', maxWidth: '20ch', textWrap: 'balance' }}>
-            Ontwerp je gietvloer, vanaf de foto die je mooi vindt.
-          </h1>
-          <p style={{ fontSize: 16, lineHeight: 1.6, color: `${INKT}0.72)`, margin: '0 0 22px', maxWidth: '62ch' }}>
-            Wij lezen de kleur en de glans, laten de vloer zien in je eigen woning en zetten de typen eerlijk naast elkaar. Stalen komen gratis van Dr. Schutz.
-          </p>
+          <GietvloerHeld />
           <Ontwerper api={API} modus="site" />
         </div>
       </div>
