@@ -477,7 +477,7 @@ export default function MijnWoning() {
             </div>
             <p className="mw-klein">Rekenvoorbeeld op €{PRIJS_M2} per m², het bedrag uit het voorbeeld op onze DRT-pagina. Je echte prijs volgt uit de opmeting. Kleuren zijn een indicatie op je scherm, geen staal.</p>
             <div className="mw-cta"><a className="mw-knop" href="/vouchers/drt-contemporary/">Vraag een gratis opmeting aan</a></div>
-            <p className="mw-klein">De offertetool voor gietvloeren komt eraan. Tot die er is, meet DRT gratis bij je thuis.</p>
+            <p className="mw-klein">Een vloer gezien die je mooi vindt? <a href="/gietvloer/ontwerpen/" style={{ color: GROEN, fontWeight: 700 }}>Upload de foto in de gietvloerontwerper</a>: we zoeken de kleur erbij, je ruimtes staan al klaar, en je vraagt tot drie stalen gratis aan.</p>
           </section>
 
           <section className="mw-samen">
