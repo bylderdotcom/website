@@ -242,6 +242,15 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
       else if (modus === 'site') { try { localStorage.removeItem(OPSLAG) } catch { /* niets */ } }
     }
     laad().catch(() => undefined)
+    // Uploadt de bezoeker bovenaan de pagina zijn tekening, dan staat die woning hier ook klaar.
+    const nieuweWoning = () => {
+      try {
+        const o = JSON.parse(localStorage.getItem(WONING_OPSLAG) || 'null')
+        if (o && Array.isArray(o.lagen) && o.lagen.length) { setWoning(o.lagen); setGiet(o.giet ?? null); setLaag(0); setKeuze(k => (k.bron === 'tekening' ? { ...k, ruimtes: undefined, bron: undefined } : k)) }
+      } catch { /* niets */ }
+    }
+    window.addEventListener('bylder:woning', nieuweWoning)
+    return () => window.removeEventListener('bylder:woning', nieuweWoning)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
