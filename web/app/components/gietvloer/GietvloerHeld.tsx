@@ -395,7 +395,16 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
 
 /* ---------------------------------------------------------------- het scherm */
 
-export default function GietvloerHeld() {
+/** Een stap in de trechter van de app; zie /admin/trechter. */
+function meetStap(api: string, stap: string) {
+  try {
+    let id = localStorage.getItem('bylder:t')
+    if (!id) { id = crypto.randomUUID(); localStorage.setItem('bylder:t', id) }
+    fetch(api.replace(/\/api\/gietvloer.*$/, '/api/trechter'), { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify({ product: 'gietvloer', stap, sessie: id, bron: 'site' }) }).catch(() => undefined)
+  } catch { /* niet erg */ }
+}
+
+export default function GietvloerHeld({ api }: { api: string }) {
   const doek = useRef<HTMLDivElement>(null)
   const sc = useRef<Scene | null>(null)
   const bestand = useRef<HTMLInputElement>(null)
@@ -407,6 +416,7 @@ export default function GietvloerHeld() {
   const [eigen, setEigen] = useState<string | null>(null)
 
   useEffect(() => {
+    meetStap(api, 'opening')
     const rustig = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const s = maakScene(doek.current!, setFase, rustig)
     if (!s) { setGeenWebgl(true); return }
@@ -417,6 +427,7 @@ export default function GietvloerHeld() {
       if (o?.lagen?.length) { s.start(naarPlan(o.lagen[0], o.giet ?? null, 0)); setEigen(o.bron ?? 'je tekening') }
     } catch { /* geen woning */ }
     return () => { s.stop(); sc.current = null }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const kies = async (f?: File | null) => {
@@ -437,6 +448,7 @@ export default function GietvloerHeld() {
         localStorage.setItem(WONING_OPSLAG, JSON.stringify({ lagen, bron: f.name, kleur: 'zand', giet, deuren: {}, ...(oud?.project ? { project: oud.project } : {}) }))
       } catch { /* privévenster: de film werkt toch */ }
       window.dispatchEvent(new Event('bylder:woning'))
+      meetStap(api, 'tekening')
       sc.current?.start(naarPlan(lagen[0], giet, 0))
       setEigen(f.name); setLezen('')
       doek.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
