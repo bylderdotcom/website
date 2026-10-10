@@ -1,4 +1,5 @@
 import KastCTA from '../components/KastCTA'
+import GietvloerCTA from '../components/GietvloerCTA'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
 import HeldToneel, { type Regel } from './HeldToneel'
 import { HOME_DELEN } from '../homeSections'
@@ -200,7 +201,7 @@ export default function HomeHeld() {
             <li>
               <span className="hh-tijd">Vóór de oplevering</span>
               <h3>Samenstellen</h3>
-              <p>Je deuren in 3D, in jouw kleur, met het aantal uit je tekening. Vloer en verlichting volgen dezelfde weg.</p>
+              <p>Je deuren in 3D, in jouw kleur, met het aantal uit je tekening. Je kast op maat, en je gietvloer in je eigen woning.</p>
               <a href={CONFIGURATOR}>Stel je deur samen →</a>
             </li>
             <li>
@@ -232,6 +233,14 @@ export default function HomeHeld() {
             titel="Een kast die precies in jouw hoek past."
             aanleiding={'Laat een foto zien van een kast die je mooi vindt en vertel waar hij moet komen. '
               + 'Je ziet hem in 3D met maten, en het timmerbedrijf krijgt de tekening en de zaaglijst.'}
+          />
+          {/* Derde: de gietvloerontwerper. */}
+          <GietvloerCTA
+            marge="20px 0 0"
+            label="Ontwerpen · gietvloer"
+            titel="Je gietvloer zien liggen, in je eigen woning."
+            aanleiding={'Upload een foto van een vloer die je mooi vindt. We lezen de kleur en zoeken de drie '
+              + 'kleuren die er het dichtst bij liggen. Kies per ruimte en verdieping, en vraag tot drie stalen gratis aan.'}
           />
         </div>
       </section>

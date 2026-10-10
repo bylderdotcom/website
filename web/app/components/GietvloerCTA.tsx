@@ -7,7 +7,9 @@ import { KLEUREN } from './gietvloer/gegevens'
 const ONTWERPER = '/gietvloer/ontwerpen/'
 const STAALTJES = ['kalkwit', 'zandbeige', 'betongrijs', 'taupe', 'grafiet', 'antraciet']
 
-export default function GietvloerCTA({ aanleiding, marge = '44px 0' }: { aanleiding: string; marge?: string }) {
+export default function GietvloerCTA({
+  aanleiding, marge = '44px 0', label = 'Gietvloer · ontwerpen', titel = 'Zie je gietvloer in je eigen woning, vanaf één foto',
+}: { aanleiding: string; marge?: string; label?: string; titel?: string }) {
   const kleuren = STAALTJES.map(id => KLEUREN.find(k => k.id === id)!).filter(Boolean)
   return (
     <aside aria-label="Gietvloerontwerper" style={{
@@ -15,8 +17,8 @@ export default function GietvloerCTA({ aanleiding, marge = '44px 0' }: { aanleid
       gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
     }}>
       <div style={{ padding: '28px 28px 26px' }}>
-        <div style={{ fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.08em', color: '#E8A87C', fontWeight: 700, marginBottom: 10 }}>Gietvloer · ontwerpen</div>
-        <h2 style={{ fontSize: '1.55rem', lineHeight: 1.2, fontWeight: 800, color: '#F5F0E8', margin: '0 0 10px', letterSpacing: '-0.022em', textWrap: 'balance' }}>Zie je gietvloer in je eigen woning, vanaf één foto</h2>
+        <div style={{ fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.08em', color: '#E8A87C', fontWeight: 700, marginBottom: 10 }}>{label}</div>
+        <h2 style={{ fontSize: '1.55rem', lineHeight: 1.2, fontWeight: 800, color: '#F5F0E8', margin: '0 0 10px', letterSpacing: '-0.022em', textWrap: 'balance' }}>{titel}</h2>
         <p style={{ fontSize: 15.5, lineHeight: 1.7, color: 'rgba(245,240,232,0.78)', margin: '0 0 16px', maxWidth: '56ch' }}>{aanleiding}</p>
         <a href={ONTWERPER} style={{ display: 'inline-block', background: '#F5F0E8', color: '#1A1208', fontWeight: 800, fontSize: 16, padding: '15px 26px', borderRadius: 12, textDecoration: 'none' }}>Ontwerp je gietvloer &rarr;</a>
         <ul aria-label="Wat je krijgt" style={{ listStyle: 'none', padding: 0, margin: '18px 0 0', display: 'flex', flexWrap: 'wrap', gap: 8 }}>
@@ -25,7 +27,9 @@ export default function GietvloerCTA({ aanleiding, marge = '44px 0' }: { aanleid
           ))}
         </ul>
       </div>
-      <div aria-hidden="true" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, padding: 28 }}>
+      {/* Drie kolommen uitgeschreven, niet als repeat(3, …): de mobiele regel in de layout
+          zet elk repeat(3,-raster op één kolom, en dan worden de staaltjes schermbreed. */}
+      <div aria-hidden="true" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr) minmax(0,1fr)', gap: 10, padding: '4px 28px 28px' }}>
         {kleuren.map(k => (
           <div key={k.id} style={{ aspectRatio: '4 / 3', borderRadius: 12, background: `radial-gradient(120% 90% at 20% 15%, rgba(255,255,255,.22), transparent 55%), ${k.hex}`, display: 'flex', alignItems: 'flex-end', padding: 8 }}>
             <span style={{ fontSize: 11.5, fontWeight: 700, color: k.id === 'grafiet' || k.id === 'antraciet' ? '#F5F0E8' : '#1A1208' }}>{k.naam}</span>

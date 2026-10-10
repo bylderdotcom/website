@@ -22,6 +22,12 @@ const COLS: Col[] = [
     { href: '/deelnemer-worden/commercieel-vastgoed/', label: 'Commercieel vastgoed' },
     { href: '/en-us/', label: 'For US homebuyers' },
   ] },
+  { title: 'Ontwerpen', links: [
+    { href: '/kozijnloze-deuren/configurator/', label: 'Kozijnloze deuren' },
+    { href: '/kasten-op-maat/ontwerpen/', label: 'Kast op maat' },
+    { href: '/gietvloer/ontwerpen/', label: 'Gietvloer' },
+    { href: '/mijn-woning/', label: 'Mijn woning' },
+  ] },
   { title: 'Nieuwbouw', links: [
     { href: '/nieuwbouw-koper/', label: 'Nieuwbouwkoper' },
     { href: '/nieuwbouw-project/', label: 'Nieuwbouwprojecten' },
@@ -107,7 +113,7 @@ const STIJL = `
 .ft-feit div{border-left:2px solid rgba(245,240,232,.18);padding-left:14px}
 .ft-feit b{display:block;font-family:'Space Mono',monospace;font-size:22px;font-weight:700;color:#F5F0E8;letter-spacing:-.02em}
 .ft-feit span{display:block;font-size:12.5px;color:rgba(245,240,232,.6);margin-top:3px;line-height:1.4}
-.ft-kol{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:28px 22px;padding:40px 0 36px}
+.ft-kol{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:28px 22px;padding:40px 0 36px}
 .ft-kol p{font-size:10.5px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:#F5F0E8;font-weight:700;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid rgba(245,240,232,.14)}
 .ft-kol ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .ft-kol a{font-size:13px;color:rgba(245,240,232,.62);text-decoration:none;line-height:1.35}
