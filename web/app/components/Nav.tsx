@@ -34,6 +34,20 @@ const BOVENBALK: { href: string; label: string }[] = [
 
 const menus = (MERKEN: number): Menu[] => [
   {
+    // De configuratoren: wat een bezoeker hier zelf maakt, in 3D of in zijn eigen woning.
+    label: 'Ontwerpen',
+    items: [
+      { href: '/kozijnloze-deuren/configurator/', title: 'Kozijnloze deuren',
+        sub: 'Stel je deuren samen in 3D, in elke RAL-kleur', primair: true },
+      { href: '/kasten-op-maat/ontwerpen/', title: 'Kast op maat',
+        sub: 'Vanaf een voorbeeldfoto, met tekening en zaaglijst', primair: true },
+      { href: '/gietvloer/ontwerpen/', title: 'Gietvloer',
+        sub: 'Kleur uit je eigen foto, per ruimte en verdieping', primair: true },
+      { href: '/mijn-woning/', title: 'Mijn woning' },
+      { href: '/showrooms/', title: 'Showrooms om te bezoeken' },
+    ],
+  },
+  {
     label: 'Assortiment',
     breed: true,
     items: [
@@ -196,19 +210,22 @@ export default function Nav({ merken }: { merken: number }) {
       {/* Zichtbaarheid per schermbreedte in CSS, zodat de eerste render meteen
           klopt — geen desktopmenu-flits meer op mobiel. */}
       <style dangerouslySetInnerHTML={{ __html:
-        '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:24px}'
+        '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:22px}'
         + '.bv-deskl{display:inline}.bv-burger{display:none}'
-        + '@media(max-width:1020px){.bv-top{display:none}.bv-desk{display:none}'
+        + '@media(max-width:1180px){.bv-top{display:none}.bv-desk{display:none}'
         + '.bv-deskl{display:none}.bv-burger{display:flex}}'
-        + '@media(min-width:1021px){.bv-sheet{display:none}}'
-        // Net boven 1020px (iPad liggend) paste het volledige menu niet; tot 1180px
-        // wat minder ruimte tussen de items, zoals in bn2.css.
-        + '@media(min-width:1021px) and (max-width:1180px){.bv-desk{gap:16px}.bv-r{gap:10px!important}}'
+        + '@media(min-width:1181px){.bv-sheet{display:none}}'
+        // Zes menu's (sinds Ontwerpen erbij kwam, 10-10-2026) passen pas vanaf 1181px.
+        // Daaronder, ook op een iPad liggend, het mobiele menu. Tot 1400px blijft
+        // Functies weg uit de balk (staat in het mobiele menu en in de footer) en
+        // zit er minder ruimte tussen de items.
+        + '@media(max-width:1399px){.bv-fn{display:none!important}}'
+        + '@media(min-width:1181px) and (max-width:1300px){.bv-desk{gap:15px}.bv-r{gap:10px!important}}'
         // De mobiele balk paste niet binnen 375px: logo + CTA + hamburger waren
         // samen breder dan het scherm, waardoor de hamburger buiten beeld viel
         // en de hele pagina horizontaal kon scrollen. !important omdat de maten
         // hierboven als inline-style op de elementen staan.
-        + '@media(max-width:1020px){.bv-bar{padding:13px 16px!important;gap:10px!important}'
+        + '@media(max-width:1180px){.bv-bar{padding:13px 16px!important;gap:10px!important}'
         + '.bv-r{gap:10px!important}.bv-cta{font-size:0.8125rem!important;padding:9px 14px!important}'
         + '.bv-burger{padding:6px 2px!important}}'
         + '@media(max-width:420px){.bv-bar{padding:12px 14px!important;gap:8px!important}'
@@ -263,7 +280,7 @@ export default function Nav({ merken }: { merken: number }) {
         </div>
 
         <div className="bv-r" style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <a href="/functies/" className="bv-deskl" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
+          <a href="/functies/" className="bv-deskl bv-fn" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
           <a href="https://app.bylder.com" className="bv-deskl" style={LINK}>Inloggen</a>
           <a href="https://app.bylder.com/woningscan" className="bv-cta" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
             Maak je stappenplan
