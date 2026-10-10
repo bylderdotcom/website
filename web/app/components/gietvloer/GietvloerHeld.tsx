@@ -486,7 +486,7 @@ export default function GietvloerHeld({ api }: { api: string }) {
           })}
         </div>
         <ul className="gh-punten">
-          <li>Tot 3 stalen gratis via Dr. Schutz</li><li>PU, epoxy of microcement</li><li>Gratis, zonder account</li>
+          <li>Tot 3 stalen gratis</li><li>PU, epoxy of microcement</li><li>Gratis, zonder account</li>
         </ul>
       </div>
       <div className="gh-beeld">

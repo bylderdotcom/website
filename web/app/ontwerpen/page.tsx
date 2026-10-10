@@ -42,9 +42,9 @@ const PRODUCTEN = [
   {
     naam: 'Gietvloer', href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer',
     swatch: true, alt: '',
-    wie: 'Dr. Schutz levert het materiaal, een verwerker die zij aanbevelen legt de vloer.',
+    wie: 'Een gespecialiseerde verwerker legt de vloer.',
     wat: 'Je uploadt een foto van een vloer die je mooi vindt. We lezen de kleur en tonen de drie kleuren die er het dichtst bij liggen. Je kiest per ruimte en verdieping, en het type: PU, epoxy of cementgebonden.',
-    daarna: 'Tot drie stalen zijn gratis, Dr. Schutz stuurt ze op. Daarna meet de verwerker in en maakt de offerte.',
+    daarna: 'Tot drie stalen zijn gratis en komen bij je thuis. Daarna meet de verwerker in en maakt de offerte.',
   },
 ]
 

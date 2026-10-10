@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { leesPdf, type Verdieping } from '@/lib/tekening/lees'
 import { ONTWERPEN, KLEUREN, FINEREN } from '../kozijnloze-deuren/configurator/ontwerpen'
+import { GIET_PRIJS_M2 } from '../components/gietvloer/gegevens'
 
 /* ------------------------------------------------------------------ vaste gegevens */
 
@@ -13,8 +14,8 @@ import { ONTWERPEN, KLEUREN, FINEREN } from '../kozijnloze-deuren/configurator/o
 const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/'
 const OPSLAG = 'bylder:mijn-woning:v1'
 const H = 2600 // plafondhoogte; staat zelden op een tekening, dus een aanname die we tonen
-const PRIJS_M2 = 85 // rekenvoorbeeld van /vouchers/drt-contemporary/, geen offerte
-const KORTING = 0.1 // ledenkorting DRT via Bylder
+// De gietvloer is neutraal voor de koper (besluit Daniel, 10-10-2026): geen merk, een
+// prijsindicatie uit de PU-range van de gietvloerontwerper.
 const CONFIGURATOR = '/kozijnloze-deuren/configurator/'
 // Standaarddeur van de configurator (NIEUW in Configurator.tsx), veld voor veld.
 const STANDAARD = ['dawn', 'gelakt', '9010', '', 'oslo-oak', 'binnen', 'links', 'oma-q-slim', 'Zwart', 'loop', 'Zwart', '', 'Zwart']
@@ -313,7 +314,7 @@ export default function MijnWoning() {
   const aantalDeuren = o ? o.lagen.reduce((t, l) => t + l.deuren.length, 0) : 0
   const gekozen = o ? Object.keys(o.deuren).length : 0
   const m2Giet = o ? o.lagen.reduce((t, l, li) => t + l.ruimtes.reduce((s, r) => s + (o.giet[li + ':' + r.id] ? r.m2 : 0), 0), 0) : 0
-  const bruto = m2Giet * PRIJS_M2, korting = bruto * KORTING
+  const [vanaf, tot] = GIET_PRIJS_M2.map(p => Math.round((m2Giet * p) / 50) * 50)
 
   return (
     <div className="mw">
@@ -443,9 +444,9 @@ export default function MijnWoning() {
 
           {/* ================= VLOER ================= */}
           <section className="mw-product" aria-labelledby="mw-vloer">
-            <p className="mw-oog groen">Vloer · DRT Contemporary</p>
+            <p className="mw-oog groen">Vloer · gietvloer</p>
             <h2 id="mw-vloer" className="mw-p-kop">≈ {nl(m2Giet)} m² gietvloer, gemeten uit je tekening.</h2>
-            <p className="mw-p-lead">DRT legt naadloze polyurethaan gietvloeren. Een gietvloer is dun en ligt direct op de dekvloer, en gaat daardoor goed samen met vloerverwarming. Kies welke ruimtes meedoen: de vloer in je woning kleurt mee.</p>
+            <p className="mw-p-lead">Een gietvloer is naadloos en dun en ligt direct op de dekvloer, en gaat daardoor goed samen met vloerverwarming. Kies welke ruimtes meedoen: de vloer in je woning kleurt mee.</p>
             <div className="mw-kleuren" role="radiogroup" aria-label="Kleurindicatie gietvloer">
               {KLEURVLOER.map(c => (
                 <button key={c.id} type="button" role="radio" aria-checked={o.kleur === c.id} onClick={() => bewaar({ ...o, kleur: c.id })}>
@@ -470,13 +471,13 @@ export default function MijnWoning() {
               ))}
             </div>
             <div className="mw-reken">
-              <div><span>{nl(m2Giet, 1)} m² × €{PRIJS_M2}</span><span className="mono">{eur(bruto)}</span></div>
-              <div className="groen"><span>10% ledenkorting DRT via Bylder</span><span className="mono">− {eur(korting)}</span></div>
+              <div><span>{nl(m2Giet, 1)} m² × € {GIET_PRIJS_M2[0]} – {GIET_PRIJS_M2[1]} (PU)</span><span className="mono">{eur(vanaf)} – {nl(tot)}</span></div>
+              <div className="groen"><span>Bylder-voucher: gratis stalen, 5% korting vanaf € 7.500 (excl. btw)</span><span className="mono">inbegrepen</span></div>
               <div><span>Opmeting aan huis</span><span className="mono">gratis</span></div>
-              <div className="tot"><span>Rekenvoorbeeld</span><span className="mono">{eur(bruto - korting)}</span></div>
+              <div className="tot"><span>Indicatie</span><span className="mono">{eur(vanaf)} – {nl(tot)}</span></div>
             </div>
-            <p className="mw-klein">Rekenvoorbeeld op €{PRIJS_M2} per m², het bedrag uit het voorbeeld op onze DRT-pagina. Je echte prijs volgt uit de opmeting. Kleuren zijn een indicatie op je scherm, geen staal.</p>
-            <div className="mw-cta"><a className="mw-knop" href="/vouchers/drt-contemporary/">Vraag een gratis opmeting aan</a></div>
+            <p className="mw-klein">Indicatie voor een PU-gietvloer, inclusief btw. Je echte prijs volgt uit het inmeten. Kleuren zijn een indicatie op je scherm, geen staal.</p>
+            <div className="mw-cta"><a className="mw-knop" href="/gietvloer/ontwerpen/">Kies kleur en type, en vraag stalen aan</a></div>
             <p className="mw-klein">Een vloer gezien die je mooi vindt? <a href="/gietvloer/ontwerpen/" style={{ color: GROEN, fontWeight: 700 }}>Upload de foto in de gietvloerontwerper</a>: we zoeken de kleur erbij, je ruimtes staan al klaar, en je vraagt tot drie stalen gratis aan.</p>
           </section>
 
@@ -494,7 +495,7 @@ export default function MijnWoning() {
           <section className="mw-samen">
             <p className="mw-oog licht">Waarom via Bylder</p>
             <h3>Eén plan voor je hele woning, langs de winkels die het echt maken.</h3>
-            <p>Uit één tekening: <b>{aantalDeuren} deuren</b> voor Classic Next en <b>≈ {nl(m2Giet)} m² vloer</b> voor DRT. Normaal meet je dat twee keer op, bij twee winkels. Hier ligt het klaar, met ledenkorting bij allebei, en een adviseur die je stalen van de ene showroom naar de andere meeneemt.</p>
+            <p>Uit één tekening: <b>{aantalDeuren} deuren</b> voor Classic Next en <b>≈ {nl(m2Giet)} m² gietvloer</b>. Normaal meet je dat twee keer op, bij twee winkels. Hier ligt het klaar, met voordeel via Bylder bij allebei, en een adviseur die je stalen van de ene showroom naar de andere meeneemt.</p>
           </section>
 
           <p className="mw-voet">

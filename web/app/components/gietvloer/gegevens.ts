@@ -222,3 +222,6 @@ export const isLicht = (hex: string) => {
   const n = parseInt(hex.slice(1), 16)
   return 0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255) > 150
 }
+
+/** Indicatie per m² voor een gietvloer in een woning (PU, incl. btw), voor Mijn woning. */
+export const GIET_PRIJS_M2 = TYPES.find(t => t.id === 'pu')!.prijs
