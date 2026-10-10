@@ -38,11 +38,13 @@ const menus = (MERKEN: number): Menu[] => [
     label: 'Ontwerpen',
     items: [
       { href: '/kozijnloze-deuren/configurator/', title: 'Kozijnloze deuren',
-        sub: 'Stel je deuren samen in 3D, in elke RAL-kleur', primair: true },
+        sub: 'In 3D samenstellen, offerte en levering door Classic Next', primair: true },
       { href: '/kasten-op-maat/ontwerpen/', title: 'Kast op maat',
-        sub: 'Vanaf een voorbeeldfoto, met tekening en zaaglijst', primair: true },
+        sub: 'Vanaf een voorbeeldfoto, gemaakt door een timmerbedrijf', primair: true },
       { href: '/gietvloer/ontwerpen/', title: 'Gietvloer',
-        sub: 'Kleur uit je eigen foto, per ruimte en verdieping', primair: true },
+        sub: 'Kleur uit je eigen foto, gelegd door een verwerker', primair: true },
+      // De belofte dat een ontwerp ook te bestellen is, met de uitleg erachter.
+      { href: '/ontwerpen/', title: 'Zo werkt bestellen' },
       { href: '/mijn-woning/', title: 'Mijn woning' },
       { href: '/showrooms/', title: 'Showrooms om te bezoeken' },
     ],
