@@ -35,7 +35,7 @@ export default async function GietvloerPage({ params }: { params: Promise<{ slug
       <div dangerouslySetInnerHTML={{ __html: main }} />
       {!page.slug.startsWith('bedrijf/') && (
         <div style={{ maxWidth: 1180, margin: '0 auto', padding: '0 16px' }}>
-          <GietvloerCTA aanleiding="Upload een foto van een gietvloer die je mooi vindt. Wij lezen de kleur en de glans, je kiest de ruimtes in je woning, en Dr. Schutz stuurt tot drie stalen gratis." />
+          <GietvloerCTA aanleiding="Upload een foto van een gietvloer die je mooi vindt. Wij lezen de kleur en de glans, je kiest de ruimtes in je woning, en je krijgt tot drie stalen gratis thuis." />
         </div>
       )}
       <InteractiveScripts />

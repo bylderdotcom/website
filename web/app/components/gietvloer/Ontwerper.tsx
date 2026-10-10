@@ -369,7 +369,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
               <div className="gv-stappen">
                 <p><Palette size={18} aria-hidden="true" />We lezen kleur, toon en glans, en corrigeren voor het licht op de foto.</p>
                 <p><House size={18} aria-hidden="true" />Je ziet de vloer in je eigen woning, kamer voor kamer.</p>
-                <p><Truck size={18} aria-hidden="true" />Tot drie stalen gratis thuis, verstuurd door Dr. Schutz.</p>
+                <p><Truck size={18} aria-hidden="true" />Tot drie stalen gratis thuisbezorgd.</p>
               </div>
             )}
             <div className="gv-acties">
@@ -407,7 +407,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
             </div>
           )}
           {a && !alleKleuren && <button type="button" className="gv-link" onClick={() => setAlleKleuren(true)}>Alle {KLEUREN.length} kleuren tonen</button>}
-          {VOORLOPIG && <p className="gv-klein">Voorlopige kleurenkaart: de kleuren van Dr. Schutz volgen. Vraag je stalen aan, dan stuurt Dr. Schutz de drie kleuren uit hun assortiment die het dichtst bij jouw keuze liggen. Een scherm toont kleur nooit precies; een staal wel.</p>}
+          {VOORLOPIG && <p className="gv-klein">Voorlopige kleurenkaart: de definitieve kleuren volgen. Vraag je stalen aan, dan krijg je de drie kleuren uit het assortiment die het dichtst bij jouw keuze liggen. Een scherm toont kleur nooit precies; een staal wel.</p>}
         </div>
       </section>
 
@@ -556,7 +556,7 @@ function Stalen({ modus, w, kleur, matches, naam, stuur }: {
     <div className="gv-kaartje gv-klaar">
       <Truck size={26} weight="thin" aria-hidden="true" />
       <h3>Je stalen zijn aangevraagd</h3>
-      <p>Dr. Schutz stuurt je gratis {w.stalen.kleuren.map(k => k.naam).join(', ')}. Leg ze bij daglicht op de plek van de vloer, en kijk ook ’s avonds.</p>
+      <p>Je krijgt gratis {w.stalen.kleuren.map(k => k.naam).join(', ')}. Leg ze bij daglicht op de plek van de vloer, en kijk ook ’s avonds.</p>
     </div>
   )
   const wissel = (id: string) => {
@@ -573,7 +573,7 @@ function Stalen({ modus, w, kleur, matches, naam, stuur }: {
     <div className="gv-kaartje">
       <Truck size={26} weight="thin" aria-hidden="true" />
       <h3>Tot 3 stalen gratis</h3>
-      <p>Dr. Schutz stuurt ze naar je toe. Een staal laat de kleur en de glans beter zien dan een scherm.</p>
+      <p>We sturen ze naar je toe. Een staal laat de kleur en de glans beter zien dan een scherm.</p>
       <div className="gv-staal-keuze" role="group" aria-label={`Kies tot ${MAX_STALEN} kleuren`}>
         {KLEUREN.filter(k => gekozen.includes(k.id) || matches.some(m => m.kleur.id === k.id) || k.id === kleur).concat(open ? KLEUREN.filter(k => !gekozen.includes(k.id) && !matches.some(m => m.kleur.id === k.id) && k.id !== kleur) : []).map(k => (
           <button key={k.id} type="button" aria-pressed={gekozen.includes(k.id)} disabled={!gekozen.includes(k.id) && gekozen.length >= MAX_STALEN} onClick={() => wissel(k.id)}>
@@ -589,7 +589,7 @@ function Stalen({ modus, w, kleur, matches, naam, stuur }: {
         <div className="gv-velden-rij">{veld('straat', 'Straat', { autoComplete: 'address-line1' })}{veld('huisnummer', 'Nr.', { autoComplete: 'off', className: 'kort' })}</div>
         <div className="gv-velden-rij">{veld('postcode', 'Postcode', { autoComplete: 'postal-code', className: 'kort' })}{veld('plaats', 'Plaats', { autoComplete: 'address-level2' })}</div>
       </div>
-      <label className="gv-akkoord"><input type="checkbox" checked={akkoord} onChange={e => setAkkoord(e.target.checked)} /><span>Bylder geeft mijn naam, adres en de gekozen kleuren door aan Dr. Schutz, zodat zij de stalen kunnen versturen.</span></label>
+      <label className="gv-akkoord"><input type="checkbox" checked={akkoord} onChange={e => setAkkoord(e.target.checked)} /><span>Bylder geeft mijn naam, adres en de gekozen kleuren door aan de fabrikant die de stalen verstuurt.</span></label>
       <button type="button" className="gv-knop gv-knop-primair" disabled={bezig || !gekozen.length || !akkoord} onClick={verstuur}>
         {bezig ? 'Bezig…' : `Vraag ${gekozen.length === 1 ? 'het staal' : `${gekozen.length} stalen`} gratis aan`}
       </button>
@@ -610,7 +610,7 @@ function Offerte({ w, m2, type, naam, stuur }: { w: Weergave | null; m2: number;
     <div className="gv-kaartje gv-klaar">
       <Receipt size={26} weight="thin" aria-hidden="true" />
       <h3>Je offerte is aangevraagd</h3>
-      <p>Een verwerker die Dr. Schutz aanbeveelt krijgt je ruimtes, je kleur en je foto. Hij meet eerst in. De offerte zie je bij Mijn offertes.</p>
+      <p>Een gespecialiseerde verwerker krijgt je ruimtes, je kleur en je foto. Hij meet eerst in. De offerte zie je bij Mijn offertes.</p>
       <Link className="gv-knop" href="/dashboard/offertes">Naar mijn offertes<ArrowRight size={16} aria-hidden="true" /></Link>
     </div>
   )
@@ -622,7 +622,7 @@ function Offerte({ w, m2, type, naam, stuur }: { w: Weergave | null; m2: number;
     <div className="gv-kaartje">
       <Receipt size={26} weight="thin" aria-hidden="true" />
       <h3>Vraag de offerte aan</h3>
-      <p>Bij een verwerker die Dr. Schutz aanbeveelt. Hij krijgt je ruimtes, kleur en inspiratiefoto, en meet eerst in. Gratis en vrijblijvend.</p>
+      <p>Bij een gespecialiseerde verwerker. Hij krijgt je ruimtes, kleur en inspiratiefoto, en meet eerst in. Gratis en vrijblijvend.</p>
       <div className="gv-velden">
         {veld('naam', 'Naam', { autoComplete: 'name' })}
         <div className="gv-velden-rij">{veld('postcode', 'Postcode', { autoComplete: 'postal-code', className: 'kort' })}{veld('plaats', 'Plaats', { autoComplete: 'address-level2' })}</div>
@@ -759,7 +759,7 @@ function Account({ koppel, maak }: { koppel: string | null; maak: () => Promise<
       <h3>Offerte? Ga verder in je Bylder-omgeving</h3>
       <p>Maak een gratis account en neem je vloer mee. Daar vraag je de offerte aan, en ligt de rest van je woning ook klaar.</p>
       <ul className="gv-voordelen">
-        <li><Check size={15} weight="bold" aria-hidden="true" />Offerte van een verwerker die Dr. Schutz aanbeveelt, op jouw ruimtes en kleur</li>
+        <li><Check size={15} weight="bold" aria-hidden="true" />Offerte van een gespecialiseerde verwerker, op jouw ruimtes en kleur</li>
         <li><Check size={15} weight="bold" aria-hidden="true" />Een fotorealistisch beeld van je eigen woonkamer met deze vloer</li>
         <li><Check size={15} weight="bold" aria-hidden="true" />Je vloer, je kleur en je foto blijven bewaard, op telefoon en laptop</li>
         <li><Check size={15} weight="bold" aria-hidden="true" />Ook je binnendeuren en kasten op maat ontwerpen, in dezelfde woning</li>

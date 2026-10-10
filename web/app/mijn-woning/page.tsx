@@ -9,7 +9,7 @@ import MijnWoning from './MijnWoning'
  * leest wanden, ruimtes, deuren en kap uit de PDF, bouwt de woning in doorzichtig 3D
  * op, en zet er twee dingen onder die we verkopen: de binnendeuren (Classic Next,
  * rechtstreeks naar de configurator met alle deuren al klaargezet) en de vloer
- * (DRT-gietvloer, per ruimte aan te zetten, met een rekenvoorbeeld).
+ * (gietvloer, per ruimte aan te zetten, met een prijsindicatie).
  *
  * HEEN EN TERUG MET DE CONFIGURATOR
  * De knop naar de configurator geeft ?terug=/mijn-woning/ mee. De configurator toont

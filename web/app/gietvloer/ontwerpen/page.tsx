@@ -5,7 +5,7 @@ import { TYPES } from '../../components/gietvloer/gegevens'
 
 // De gietvloerontwerper op de website. Het scherm praat met de publieke API van de
 // app (app.bylder.com/api/gietvloer): zonder account, met id + sleutel in de URL.
-// Stalen gaan via Dr. Schutz; de offerte loopt via een account in de app.
+// Stalen gaan naar de fabrikant (voor de koper neutraal); de offerte loopt via een account in de app.
 // De tekst eronder is wat een zoekmachine leest: een fotovak en knoppen zijn voor
 // een crawler leeg.
 
@@ -29,11 +29,11 @@ const prijs = (id: string) => { const t = TYPES.find(x => x.id === id)!; return 
 
 const VRAGEN = [
   { v: 'Hoe haalt de ontwerper de kleur uit mijn foto?', a: 'De AI kijkt alleen naar de vloer en schat de kleur zoals die bij neutraal daglicht is. Warm avondlicht of een filter maakt een vloer op een foto vaak warmer of donkerder dan hij is; daar corrigeert hij voor. Daarna zoeken we de drie kleuren die het dichtst bij liggen, gemeten zoals het oog kleur ziet. Een scherm toont kleur nooit precies, daarom kun je stalen aanvragen.' },
-  { v: 'Zijn de stalen echt gratis?', a: 'Ja, tot drie stalen. Dr. Schutz stuurt ze naar je huisadres. We geven daarvoor alleen je naam, je adres en de gekozen kleuren door, en pas nadat je daar akkoord op gaf.' },
+  { v: 'Zijn de stalen echt gratis?', a: 'Ja, tot drie stalen. De fabrikant stuurt ze naar je huisadres. We geven daarvoor alleen je naam, je adres en de gekozen kleuren door, en pas nadat je daar akkoord op gaf.' },
   { v: 'Wat kost een gietvloer per m²?', a: `Als indicatie, inclusief btw: een PU-gietvloer ${prijs('pu')} per m², epoxy ${prijs('epoxy')} en een cementgebonden vloer (microcement) ${prijs('cement')}. Voorbereiding van de dekvloer en plinten komen er soms bij. De echte prijs volgt na het inmeten.` },
   { v: 'Kan een gietvloer op vloerverwarming?', a: 'Ja. Een gietvloer is een paar millimeter dik en geeft warmte snel door. Belangrijk is dat de dekvloer droog genoeg is en dat de vloerverwarming volgens schema is opgestookt voordat de vloer gelegd wordt. In een nieuwbouwwoning plan je dat rond de oplevering.' },
   { v: 'Ik heb geen bouwtekening. Kan ik toch ontwerpen?', a: 'Ja. Je vult zelf in welke ruimtes een gietvloer krijgen, met een schatting van de vierkante meters. Heb je de plattegrond van je aannemer wel, zet hem dan in Mijn woning: dan meten we elke kamer uit de tekening en zie je de vloer in je eigen woning.' },
-  { v: 'Wie legt de vloer?', a: 'Een verwerker die Dr. Schutz aanbeveelt. Je vraagt de offerte aan in je gratis Bylder-omgeving; de verwerker krijgt je ruimtes, je kleur en je inspiratiefoto, en meet eerst in voordat hij een definitieve prijs geeft.' },
+  { v: 'Wie legt de vloer?', a: 'Een gespecialiseerde verwerker. Je vraagt de offerte aan in je gratis Bylder-omgeving; de verwerker krijgt je ruimtes, je kleur en je inspiratiefoto, en meet eerst in voordat hij een definitieve prijs geeft.' },
 ]
 
 const schema = {
