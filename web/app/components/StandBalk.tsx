@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { herkomst, TABLET_HERKOMST } from './herkomst'
+import { STAND_ID } from './trechter'
 
 /**
  * De balk op de tablet die op de stand ligt.
@@ -41,7 +42,11 @@ export default function StandBalk({ adres = '/beurs/tablet' }: { adres?: string 
       </span>
       <button
         type="button"
-        onClick={() => { window.location.href = adres }}
+        onClick={() => {
+          // Nieuwe bezoeker, nieuwe id in de trechter.
+          try { sessionStorage.removeItem(STAND_ID) } catch { /* niet erg */ }
+          window.location.href = adres
+        }}
         style={{
           background: ZAND, color: GROEN, fontWeight: 800, fontSize: 14.5, fontFamily: 'inherit',
           border: 0, borderRadius: 9, padding: '9px 16px', cursor: 'pointer',

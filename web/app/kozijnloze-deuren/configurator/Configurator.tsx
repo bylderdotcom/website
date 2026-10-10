@@ -11,6 +11,9 @@ import { KRUKKEN, SLOTEN, SCHARNIEREN } from './beslag'
 import OfferteFormulier from '../../components/OfferteFormulier'
 import OntwerpBewaren from '../../components/OntwerpBewaren'
 import GerenderdBeeld from './GerenderdBeeld'
+import { meetStap } from '../../components/trechter'
+
+const meet = (stap: string) => meetStap('kozijnloze-deur', stap)
 
 // Configurator voor kozijnloze deuren van Classic Next.
 //
@@ -175,6 +178,7 @@ export default function Configurator() {
 
   useEffect(() => {
     setDeuren(leesUrl()); setGemonteerd(true)
+    meet('opening')
     const t = new URLSearchParams(window.location.search).get('terug')
     if (t === '/mijn-woning/' || t === 'https://app.bylder.com/dashboard/mijn-woning/') setTerug(t)
   }, [])
@@ -479,6 +483,7 @@ export default function Configurator() {
 
   const wijzig = useCallback((p: Partial<Deur>) => {
     setDeuren(d => d.map((x, i) => (i === actief ? { ...x, ...p } : x)))
+    meet('aangepast')
   }, [actief])
 
   const specTekst = deuren.map((d, i) => {
@@ -652,7 +657,7 @@ export default function Configurator() {
                 </button>
               )
             })}
-            <button onClick={() => { setDeuren(d => [...d, { ...huidig, naam: '' }])
+            <button onClick={() => { setDeuren(d => [...d, { ...huidig, naam: '' }]); meet('tweede-deur')
                                      setActief(deuren.length) }}
               style={{ padding: '8px 14px', borderRadius: 9, border: 'none', background: GROEN,
                        color: '#F5F0E8', fontSize: 13.5, fontWeight: 800, cursor: 'pointer',
@@ -965,11 +970,12 @@ export default function Configurator() {
               mailFallback={mail}
               toelichtingHint="Bijv. totaal aantal deuren in huis, wanddikte, nieuwbouw of verbouwing"
             />
-            <button onClick={() => setSpec(s => !s)} style={knop}>
+            <button onClick={() => { if (!spec) meet('specificatie'); setSpec(s => !s) }} style={knop}>
               {spec ? 'Verberg specificatie' : 'Toon specificatie'}
             </button>
             <button style={knop} onClick={() => {
               navigator.clipboard?.writeText(window.location.href)
+              meet('gedeeld')
               setGekopieerd(true); setTimeout(() => setGekopieerd(false), 2000)
             }}>{gekopieerd ? 'Link gekopieerd' : 'Deel deze configuratie'}</button>
             {/* De kleine stap vóór de offerte: alleen een e-mailadres, en het
