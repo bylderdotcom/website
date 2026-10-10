@@ -51,7 +51,13 @@ export const HELD_STIJL = `
 /* ── het toneel ── */
 .ht{border:1px solid rgba(61,46,30,.14);border-radius:16px;background:#FFFDF9;overflow:hidden;
   box-shadow:0 18px 50px rgba(26,18,8,.08);font-variant-numeric:tabular-nums}
-.ht-doek{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);min-height:420px}
+.ht-doek{display:grid;grid-template-columns:minmax(0,1fr)}
+.ht-doek .ht-tekenvlak{min-height:380px;border-right:0;border-bottom:1px solid rgba(61,46,30,.12)}
+.ht-doek .ht-wat span{display:none}
+.ht-doek .ht-rij{padding:7px 0}
+.wf-doek{position:absolute;inset:0}.wf-doek canvas{display:block;width:100%!important;height:100%!important}
+.ht-rij.aan{background:linear-gradient(90deg,rgba(184,92,56,.10),rgba(184,92,56,0));box-shadow:inset 3px 0 0 #B85C38}
+.ht-stap:disabled{cursor:default}
 .ht-tekenvlak{position:relative;border-right:1px solid rgba(61,46,30,.12);perspective:1000px;display:grid;
   place-items:center;padding:24px 16px;overflow:hidden;background:#F5F0E8}
 .ht-raster{position:absolute;inset:0;
@@ -77,7 +83,7 @@ export const HELD_STIJL = `
 .ht-maat{font-family:'Space Mono',monospace;font-size:7px;fill:rgba(61,46,30,.5);letter-spacing:.08em}
 .ht-deur{fill:none;stroke:#B85C38;stroke-width:3.2;stroke-linecap:round;opacity:0;transition:opacity .45s ease}
 .ht-f2 .ht-deur,.ht-f3 .ht-deur,.ht-f4 .ht-deur,.ht-f5 .ht-deur{opacity:1}
-.ht-stempel{position:absolute;left:16px;bottom:12px;font-family:'Space Mono',monospace;font-size:9px;
+.ht-stempel{position:absolute;z-index:1;left:16px;bottom:12px;font-family:'Space Mono',monospace;font-size:9px;
   letter-spacing:.12em;color:rgba(61,46,30,.45)}
 
 .ht-staat{padding:20px 22px 18px;display:flex;flex-direction:column}
@@ -88,7 +94,7 @@ export const HELD_STIJL = `
   color:rgba(61,46,30,.5)}
 .ht-rij{display:grid;grid-template-columns:58px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:9px 0;
   border-bottom:1px solid rgba(61,46,30,.12);opacity:.28;transform:translateY(4px);
-  transition:opacity .5s ease,transform .5s ease;transition-delay:calc(var(--i) * .09s)}
+  transition:opacity .5s ease,transform .5s ease,background .5s ease,box-shadow .5s ease;transition-delay:calc(var(--i) * .09s)}
 .ht-f3 .ht-rij,.ht-f4 .ht-rij,.ht-f5 .ht-rij{opacity:1;transform:none}
 .ht-hoeveel{font-family:'Space Mono',monospace;font-weight:700;font-size:15px;color:#B85C38;text-align:right;
   letter-spacing:-.02em}
@@ -109,7 +115,7 @@ export const HELD_STIJL = `
   padding:6px 11px;border-radius:4px}
 .ht-slot p{margin:0;font-size:12px;color:rgba(61,46,30,.66);line-height:1.5;max-width:36ch}
 
-.ht-rail{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(61,46,30,.12);
+.ht-rail{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(61,46,30,.12);
   border-top:1px solid rgba(61,46,30,.12)}
 .ht-stap{background:#FFFDF9;border:0;padding:10px 11px;text-align:left;cursor:pointer;font:inherit;
   color:rgba(61,46,30,.6);transition:background .25s,color .25s;border-top:2px solid transparent}
@@ -219,13 +225,13 @@ export const HELD_STIJL = `
   .hh-voordeel{font-size:11.5px}
   .hh-demo .hh-huis{margin-bottom:-10px}
   .ht-doek{grid-template-columns:1fr;min-height:0}
-  .ht-tekenvlak{border-right:0;border-bottom:1px solid rgba(61,46,30,.12);min-height:230px}
+  .ht-doek .ht-tekenvlak{min-height:320px}
   .ht-plan{width:min(240px,80%)}
   .ht-staat{padding:16px 14px 14px}
   .ht-rij{grid-template-columns:56px minmax(0,1fr) auto;gap:9px}
   .ht-hoeveel small{font-size:7.5px;letter-spacing:.04em}
   .ht-wat span{display:none}
-  .ht-rail{grid-template-columns:repeat(5,1fr)}
+  .ht-rail{grid-template-columns:repeat(3,1fr)}
   .ht-stap{padding:8px 6px}
   .ht-stap em{display:none}
   .ht-stap b{font-size:10.5px}

@@ -26,10 +26,12 @@ const CONFIGURATOR = '/kozijnloze-deuren/configurator/'
 // De voorbeeldwoning in de kop. Hoeveelheden zijn na te tellen op de tekening
 // (78 m² is 10,40 × 7,80); merk en korting worden hieronder uit de data gelezen.
 const VOORBEELD: Array<Omit<Regel, 'korting'> & { zoek: string; vast?: string }> = [
+  // In de volgorde van de film erboven: vloer, deuren, kast. De gietvloer is neutraal
+  // (geen merk; besluit Daniel 10-10-2026), de kast maakt een timmerbedrijf.
+  { hoeveel: '78', eenheid: 'm² vloer', wat: 'Gietvloer', toelichting: 'Over de hele begane grond, zonder naden', merk: 'Gietvloer op maat', zoek: '', vast: 'ontwerper' },
   { hoeveel: '12', eenheid: 'stuks', wat: 'Binnendeuren', toelichting: 'Plafondhoog, zonder kozijn, elke RAL-kleur', merk: 'ClassicNext', zoek: 'Classic Next', vast: 'configurator' },
-  { hoeveel: '78', eenheid: 'm² vloer', wat: 'Gietvloer', toelichting: 'Over de hele begane grond, zonder naden', merk: 'DRT Flooring', zoek: 'DRT Contemporary Flooring' },
+  { hoeveel: '3,2', eenheid: 'm kast', wat: 'Kast op maat', toelichting: 'Tegen de wand uit je tekening, met tv-vak', merk: 'Timmerbedrijf', zoek: '', vast: 'ontwerper' },
   { hoeveel: '9', eenheid: 'ramen', wat: 'Raamdecoratie', toelichting: 'Opgemeten voordat de steiger weg is', merk: 'Berg & Berg', zoek: 'Berg & Berg Den Haag' },
-  { hoeveel: '3', eenheid: 'slaapkamers', wat: 'Bedden', toelichting: 'Met leenbed tijdens de levertijd', merk: 'Auping', zoek: 'Auping' },
   { hoeveel: '34', eenheid: 'lichtpunten', wat: 'Verlichting', toelichting: 'Op de punten die al in de tekening staan', merk: 'Lamp en Licht', zoek: 'Lamp en Licht' },
 ]
 
