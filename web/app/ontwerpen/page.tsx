@@ -5,9 +5,11 @@ import type { Metadata } from 'next'
 // laat zien dat elk ontwerp een offerte wordt, en die offerte een bestelling bij
 // de partij die het maakt of legt.
 //
-// Wat hier over Mijn woning staat, moet kloppen met wat Mijn woning echt doet:
-// deuren en gietvloer zitten erin, de kast nog niet. Pas de tekst aan zodra dat
-// verandert.
+// Wat hier over Mijn woning staat, moet kloppen met wat Mijn woning echt doet
+// (app, digitale tweeling fase 1 t/m 3, 10-10-2026): deuren, gietvloer en kast staan
+// erin; per onderdeel de stand van de offerte; wijzigen mag altijd, met een nieuwe
+// offerte als er iets wezenlijks verandert; één tijdlijn. De site is de voorproef
+// zonder account; aanvragen, aanpassen en bestellen gebeurt in de app.
 
 const URL = 'https://www.bylder.com/ontwerpen/'
 const INKT = 'rgba(61,46,30,'
@@ -56,11 +58,12 @@ const STAPPEN = [
 ]
 
 const VRAGEN = [
-  { v: 'Kan ik bij Bylder ook echt bestellen, of alleen ontwerpen?', a: 'Je kunt echt bestellen. Elk ontwerp gaat als offerteaanvraag naar de partij die het product maakt of legt: Classic Next voor de deuren, een timmerbedrijf voor de kast, een verwerker voor de gietvloer. Na inmeten krijg je een definitieve prijs. Ga je akkoord, dan bestel je bij die partij.' },
+  { v: 'Kan ik bij Bylder ook echt bestellen, of alleen ontwerpen?', a: 'Je kunt echt bestellen. Elk ontwerp gaat als offerteaanvraag naar de partij die het product maakt of legt. Dat zijn fabrikanten en vakbedrijven die we kiezen op de kwaliteit van hun product en van hun werk. Na inmeten krijg je een definitieve prijs. Ga je akkoord, dan bestel je bij die partij.' },
   { v: 'Bij wie betaal ik?', a: 'Bij de maker of verwerker, op hun factuur. Bylder rekent niets aan jou: wij worden betaald door de partners, met een vergoeding over wat via ons besteld wordt.' },
   { v: 'Wat kost ontwerpen?', a: 'Niets. De ontwerpers zijn gratis, ook zonder account. Een account heb je pas nodig als je een offerte aanvraagt of je ontwerpen wilt bewaren in Mijn woning.' },
   { v: 'Kan ik meerdere producten tegelijk ontwerpen?', a: 'Ja. Elk ontwerp krijgt zijn eigen offerte, van de partij die het maakt. In Mijn woning staan ze bij elkaar op je eigen plattegrond, zodat je ziet of deur, vloer en kast bij elkaar passen.' },
-  { v: 'Wat doet Mijn woning precies?', a: 'Je uploadt de plattegrond van je aannemer. Wij lezen de verdiepingen, de ruimtes en de deuren eruit en bouwen je woning na. Je deuren staan erin op de plek uit de tekening, en de vierkante meters voor je gietvloer komen per ruimte uit de tekening. De kast op maat komt er binnenkort bij.' },
+  { v: 'Wat doet Mijn woning precies?', a: 'Je uploadt de plattegrond van je aannemer. Wij lezen de verdiepingen, de ruimtes en de deuren eruit en bouwen je woning na. Je deuren staan erin op de plek uit de tekening, de vierkante meters voor je gietvloer komen per ruimte uit de tekening, en je kast op maat staat tegen de wand die je aanwees. Per onderdeel zie je hoe ver je offerte is, en alles staat op één tijdlijn tot de oplevering.' },
+  { v: 'Kan ik mijn ontwerp nog aanpassen als ik al een offerte heb?', a: 'Ja, altijd, ook nadat je getekend hebt. Verandert er iets wezenlijks, zoals de maten van een kast, een extra ruimte met gietvloer of een ander groefpatroon op een deur, dan zie je dat meteen in Mijn woning. Met één klik vraag je een nieuwe offerte aan; de maker krijgt de verschillen erbij. Een kleine wijziging, zoals een andere kleur, geven we gewoon door. Heb je al getekend, dan blijft je offerte gelden tot je de nieuwe tekent.' },
   { v: 'Ik heb nog geen bouwtekening. Kan ik toch beginnen?', a: 'Ja. Elke ontwerper werkt ook zonder tekening: je vult de maten of ruimtes zelf in. Komt je tekening later, dan zet je hem in Mijn woning en sluiten je ontwerpen erop aan.' },
 ]
 
@@ -141,13 +144,23 @@ export default function OntwerpenPage() {
 
           <h2 style={H2}>Alles samen in Mijn woning</h2>
           <p style={P}>
-            Een deur, een vloer en een kast koop je bij drie verschillende partijen. Of ze bij elkaar passen, zie je pas
+            Je deuren, je vloer en je kast komen vaak van verschillende makers. Of ze bij elkaar passen, zie je pas
             als ze samen in je huis staan. Daarom bouwen we je woning na uit de plattegrond van je aannemer: de
             verdiepingen, de ruimtes en de deuren.
           </p>
           <p style={P}>
             Je deuren staan erin op de plek uit de tekening, elk met de kleur en het ontwerp dat je koos. De gietvloer
-            krijgt de vierkante meters per ruimte uit diezelfde tekening. De kast op maat komt er binnenkort bij.
+            krijgt de vierkante meters per ruimte uit diezelfde tekening. Je kast op maat staat tegen de wand die je
+            aanwees, met de lengte uit de tekening.
+          </p>
+          <p style={P}>
+            Per onderdeel zie je hoe ver je offerte is: aangevraagd, binnen, getekend, ingemeten, opgeleverd. Wijzigen
+            mag altijd. Verandert er iets wezenlijks, dan zie je dat meteen en vraag je met één klik een nieuwe offerte
+            aan. Alles staat op één tijdlijn, tot de oplevering van je woning.
+          </p>
+          <p style={P}>
+            Hier op de site probeer je het uit, zonder account. Bewaren, aanvragen, aanpassen en bestellen doe je in je
+            gratis account.
           </p>
           <a href="/mijn-woning/" style={{ display: 'inline-block', marginTop: 6, background: '#1A1208', color: '#F5F0E8', fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11, textDecoration: 'none' }}>Zet je tekening in Mijn woning &rarr;</a>
 

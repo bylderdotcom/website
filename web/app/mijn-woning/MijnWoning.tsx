@@ -484,7 +484,7 @@ export default function MijnWoning() {
           <section className="mw-samen">
             <p className="mw-oog licht">Bewaren</p>
             <h3>Bewaar je woning in je account.</h3>
-            <p>Dan staat hij ook op je telefoon en laptop, met je gekozen deuren, en zetten we de deuren en de vloer klaar in je persoonlijke plan. Gratis, geen abonnement.</p>
+            <p>Dan staat hij ook op je telefoon en laptop, met je gekozen deuren. In je account zet je er een kast op maat bij, vraag je offertes aan, zie je per onderdeel hoe ver het is en pas je alles aan wanneer je wilt. Gratis, geen abonnement.</p>
             <div className="mw-cta" style={{ marginTop: 12 }}>
               <button type="button" className="mw-knop mw-knop-knop" onClick={async () => { try { window.location.href = await naarAccount(o) } catch { setFout('Bewaren lukte niet in deze browser. Probeer het in een andere browser, of sleep je tekening in de app onder Mijn woning.') } }}>
                 Bewaar mijn woning in je account
