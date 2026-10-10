@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Nav-bewaker: meldt pagina's die niet het huidige menu dragen.
+"""Nav-bewaker: meldt pagina's die niet het huidige menu dragen (letterlijk de
+canonieke nav uit nav_pijlers_pass.py, niet alleen de marker).
 
 Waarom dit bestaat. De veegronde die het menu uitrolt (nav_pijlers_pass.py)
 slaat de mappen over waarvan Next de pagina's rendert. Next rendert echter niet
@@ -32,7 +33,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from nav_pijlers_pass import EXCLUDE, MARKER, NEXT_ROUTES, ROOT, lees_gaten  # noqa: E402
+from nav_pijlers_pass import CANON_NAV, EXCLUDE, MARKER, NEXT_ROUTES, ROOT, lees_gaten  # noqa: E402
 
 RAPPORT = os.path.join(ROOT, 'reports', 'nav-bewaker.json')
 BASIS = 'https://www.bylder.com'
@@ -91,7 +92,10 @@ def lokaal_controleren(paden):
         # menu en hoort hier niet als fout te tellen.
         if '<nav' not in h:
             continue
-        if MARKER not in h:
+        # Niet alleen de marker: ook een menu van een vorige versie telt als fout.
+        # Tot 10-10-2026 keek dit alleen naar de marker, en zag het niet dat 8.360
+        # pagina's het menu Ontwerpen misten.
+        if MARKER not in h or CANON_NAV not in h:
             mist.append(pad)
     return mist
 

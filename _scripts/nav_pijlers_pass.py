@@ -75,6 +75,14 @@ def aantal_merken():
 
 
 MENUS = [
+    # Ontwerpen (10-10-2026): de configuratoren, als eerste menu. Gelijk aan Nav.tsx.
+    ('Ontwerpen', False, [
+        ('/kozijnloze-deuren/configurator/', 'Kozijnloze deuren', 'Stel je deuren samen in 3D, in elke RAL-kleur', True),
+        ('/kasten-op-maat/ontwerpen/', 'Kast op maat', 'Vanaf een voorbeeldfoto, met tekening en zaaglijst', True),
+        ('/gietvloer/ontwerpen/', 'Gietvloer', 'Kleur uit je eigen foto, per ruimte en verdieping', True),
+        ('/mijn-woning/', 'Mijn woning', None, False),
+        ('/showrooms/', 'Showrooms om te bezoeken', None, False),
+    ]),
     ('Assortiment', True, [
         ('/assortiment/', 'Zo werkt ons assortiment', 'Deels eigen aanbod, deels partners — bij elk aanbod staat wie levert', True),
         ('/showrooms/', 'Showrooms om te bezoeken', 'Per producttype de adressen die de rit waard zijn, en waarom', True),
@@ -178,7 +186,7 @@ MOBIEL_VANGNET = '''
    waren samen breder dan 375px: de hamburger viel buiten beeld en de hele site
    kon horizontaal scrollen. Drie trappen: compacter vanaf de mobiele nav,
    kleinere CTA onder 420px, en krappe marges onder 360px. */
-@media(max-width:1020px){.bn2-mw{padding:13px 16px;gap:10px}.bn2-r{gap:10px}.bn2-cta{font-size:0.8125rem;padding:9px 14px}.bn2-bg{padding:6px 2px}}
+@media(max-width:1180px){.bn2-mw{padding:13px 16px;gap:10px}.bn2-r{gap:10px}.bn2-cta{font-size:0.8125rem;padding:9px 14px}.bn2-bg{padding:6px 2px}}
 @media(max-width:420px){.bn2-mw{padding:12px 14px;gap:8px}.bn2-logo{gap:8px}.bn2-lt{font-size:16px}.bn2-r{gap:8px}.bn2-cta{font-size:0.75rem;padding:8px 12px}}
 @media(max-width:359px){.bn2-mw{padding:12px 10px}.bn2-logo{gap:6px}.bn2-lt{font-size:15px}.bn2-cta{padding:8px 10px}}
 
@@ -327,10 +335,12 @@ body>header:has(h1.hero-h1){padding-left:0!important;padding-right:0!important}
 }
 
 STICKY_ONDER_MENU = """
-/* Net boven 1020px (iPad liggend: 1024) paste het volledige menu niet: het
-   stak 18px buiten beeld en de pagina schoof mee. Tot 1180px wat minder ruimte
-   tussen de items; er verdwijnt niets uit het menu. */
-@media(min-width:1021px) and (max-width:1180px){.bn2-desk{gap:16px}.bn2-r{gap:10px}}
+/* Zes menu's (sinds Ontwerpen, 10-10-2026) passen pas vanaf 1181px; daaronder het
+   mobiele menu (zie de max-width:1180px-regels). Tot 1300px minder ruimte tussen
+   de items, en tot 1400px staat Functies niet in de balk (wel in het mobiele menu
+   onder Meer, en in de footer). Gelijk aan Nav.tsx. */
+@media(min-width:1181px) and (max-width:1300px){.bn2-desk{gap:15px}.bn2-r{gap:10px}}
+@media(max-width:1399px){.bn2-lnk.sm{display:none}}
 
 /* De /nieuwbouw/-pagina's (396) zetten de standaardmarge van de browser niet op
    nul: balk en menu stonden 8px van de rand. Elke andere pagina met dit menu
@@ -378,7 +388,7 @@ CSS = (
     f'font-family:monospace}}'
     f'.{P}-lt{{font-weight:700;font-size:18px;letter-spacing:-0.02em;color:#1A1208}}'
     f'.{P}-lg{{color:#3D5A3E}}'
-    f'.{P}-desk{{display:flex;align-items:center;gap:24px}}'
+    f'.{P}-desk{{display:flex;align-items:center;gap:22px}}'
     f'.{P}-m{{position:relative}}'
     f'.{P}-btn{{font-size:0.875rem;font-weight:600;color:{INKT}0.8);background:none;border:none;'
     f'cursor:pointer;font-family:inherit;padding:0;display:inline-flex;align-items:center;gap:5px}}'
@@ -422,7 +432,7 @@ CSS = (
     # Mobiel: bovenbalk en desktopmenu weg, burger erbij. Het paneel opent via de
     # verborgen checkbox — geen JavaScript. De checked-regel staat binnen deze
     # media query, dus op desktop blijft het paneel dicht.
-    f'@media(max-width:1020px){{.{P}-top{{display:none}}.{P}-desk{{display:none}}'
+    f'@media(max-width:1180px){{.{P}-top{{display:none}}.{P}-desk{{display:none}}'
     f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}'
     # .o is de React-variant (state), :checked de CSS-only variant. Beide staan
     # binnen deze media query, dus op desktop blijft het paneel altijd dicht.
