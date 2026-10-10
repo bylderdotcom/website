@@ -1,13 +1,16 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
+import dynamic from 'next/dynamic'
+import { FILM_FASEN } from './fasen'
 
-// De held van de homepage, in beeld: een plattegrond die wordt uitgelezen.
+// De held van de homepage, in beeld: van tekening naar ingericht huis.
 //
-// Vijf fasen, in een lus: de tekening ligt plat → kantelt en licht op (de
-// deuren rood) → de hoeveelheden verschijnen → per regel het merk en de korting
-// → het zegel met het aantal merken. Dit is geen illustratie bij een tekst maar
-// de tekst zelf: wat Bylder doet, zonder één zin uitleg.
+// Links een 3D-film (WoningFilm): de tekening tekent zich, de muren komen omhoog, de
+// gietvloer loopt vol, de kozijnloze deuren zakken op hun plek en de kast op maat bouwt
+// zich op. Rechts loopt de lijst mee: wat je nog moet kiezen, uit je eigen tekening, met
+// per regel het merk en het voordeel. De regel van de stap die in beeld is licht op.
+// Zonder WebGL staat de oude, platte plattegrond er.
 //
 // De woning is een voorbeeld (10,40 × 7,80 m begane grond); de merken en de
 // kortingen komen uit data/deelnemers.json en zijn dus echt. Wat hier NIET
@@ -34,33 +37,25 @@ const MUREN: Array<[number, number, number, 0 | 90, boolean]> = [
   [246, 220, 38, 0, false], [318, 220, 18, 0, false], [366, 220, 12, 0, false],
 ]
 
-const FASEN = [
-  ['1', 'Je tekening'],
-  ['2', 'Uitgelezen'],
-  ['3', 'Wat je kiest'],
-  ['4', 'Merk en korting'],
-  ['5', 'In je dossier'],
-] as const
+const WoningFilm = dynamic(() => import('./WoningFilm'), { ssr: false })
+
+// Filmstap → de oude fasen van de lijst (1 plat … 5 zegel).
+const LIJST_FASE = [1, 2, 3, 4, 5, 5]
+// Welke regel in beeld is, per filmstap.
+const IN_BEELD: Record<number, string> = { 2: 'Gietvloer', 3: 'Binnendeuren', 4: 'Kast op maat' }
 
 export default function HeldToneel({ regels, merken }: { regels: Regel[]; merken: number }) {
-  const [fase, setFase] = useState(1)
-  const [vast, setVast] = useState(false)
-  const timer = useRef<ReturnType<typeof setInterval> | null>(null)
-
-  useEffect(() => {
-    if (vast) return
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setFase(5); return }
-    timer.current = setInterval(() => setFase(f => (f === 5 ? 1 : f + 1)), 2600)
-    return () => { if (timer.current) clearInterval(timer.current) }
-  }, [vast])
-
-  const kies = (n: number) => { setVast(true); setFase(n) }
+  const [stap, setStap] = useState(0)
+  const [naar, setNaar] = useState({ fase: 0, n: 0 })
+  const [plat, setPlat] = useState(false)
+  const fase = plat ? 5 : LIJST_FASE[stap]
 
   return (
-    <div className={`ht ht-f${fase}`} aria-label="Zo leest Bylder een plattegrond uit">
+    <div className={`ht ht-f${fase}`} aria-label="Zo wordt je tekening een ingericht huis">
       <div className="ht-doek">
         <div className="ht-tekenvlak">
-          <div className="ht-raster" aria-hidden="true" />
+          {!plat && <WoningFilm opFase={setStap} naar={naar} opGeenWebgl={() => setPlat(true)} />}
+          {plat && <><div className="ht-raster" aria-hidden="true" />
           <div className="ht-plan">
             <svg viewBox="0 0 400 312" role="img" aria-label="Plattegrond van de begane grond met de binnendeuren gemarkeerd">
               <path className="ht-vlak" d="M22 22 H378 V290 H22 Z" />
@@ -90,7 +85,7 @@ export default function HeldToneel({ regels, merken }: { regels: Regel[]; merken
                 }} />
               ))}
             </div>
-          </div>
+          </div></>}
           <span className="ht-stempel">BLAD 1 VAN 2 · BEGANE GROND 78 M²</span>
         </div>
 
@@ -100,7 +95,7 @@ export default function HeldToneel({ regels, merken }: { regels: Regel[]; merken
             <span>uit je eigen tekening</span>
           </div>
           {regels.map((r, i) => (
-            <div className="ht-rij" key={r.wat} style={{ ['--i' as string]: i }}>
+            <div className={'ht-rij' + (!plat && IN_BEELD[stap] === r.wat ? ' aan' : '')} key={r.wat} style={{ ['--i' as string]: i }}>
               <div className="ht-hoeveel">{r.hoeveel}<small>{r.eenheid}</small></div>
               <div className="ht-wat"><b>{r.wat}</b><span>{r.toelichting}</span></div>
               <div className="ht-merk"><b>{r.merk}</b><span className="ht-korting">{r.korting}</span></div>
@@ -113,11 +108,11 @@ export default function HeldToneel({ regels, merken }: { regels: Regel[]; merken
         </div>
       </div>
 
-      <div className="ht-rail" role="tablist" aria-label="Fasen">
-        {FASEN.map(([n, naam]) => (
-          <button key={n} type="button" role="tab" className="ht-stap"
-            aria-selected={fase === +n} onClick={() => kies(+n)}>
-            <em>Fase {n}</em><b>{naam}</b>
+      <div className="ht-rail" role="tablist" aria-label="Stappen van de film">
+        {FILM_FASEN.map((naam, n) => (
+          <button key={naam} type="button" role="tab" className="ht-stap"
+            aria-selected={!plat && stap === n} onClick={() => setNaar(x => ({ fase: n, n: x.n + 1 }))} disabled={plat}>
+            <em>Stap {n + 1}</em><b>{naam}</b>
           </button>
         ))}
       </div>
