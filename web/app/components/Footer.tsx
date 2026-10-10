@@ -23,6 +23,7 @@ const COLS: Col[] = [
     { href: '/en-us/', label: 'For US homebuyers' },
   ] },
   { title: 'Ontwerpen', links: [
+    { href: '/ontwerpen/', label: 'Ontwerpen en bestellen' },
     { href: '/kozijnloze-deuren/configurator/', label: 'Kozijnloze deuren' },
     { href: '/kasten-op-maat/ontwerpen/', label: 'Kast op maat' },
     { href: '/gietvloer/ontwerpen/', label: 'Gietvloer' },

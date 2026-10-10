@@ -77,9 +77,10 @@ def aantal_merken():
 MENUS = [
     # Ontwerpen (10-10-2026): de configuratoren, als eerste menu. Gelijk aan Nav.tsx.
     ('Ontwerpen', False, [
-        ('/kozijnloze-deuren/configurator/', 'Kozijnloze deuren', 'Stel je deuren samen in 3D, in elke RAL-kleur', True),
-        ('/kasten-op-maat/ontwerpen/', 'Kast op maat', 'Vanaf een voorbeeldfoto, met tekening en zaaglijst', True),
-        ('/gietvloer/ontwerpen/', 'Gietvloer', 'Kleur uit je eigen foto, per ruimte en verdieping', True),
+        ('/kozijnloze-deuren/configurator/', 'Kozijnloze deuren', 'In 3D samenstellen, offerte en levering door Classic Next', True),
+        ('/kasten-op-maat/ontwerpen/', 'Kast op maat', 'Vanaf een voorbeeldfoto, gemaakt door een timmerbedrijf', True),
+        ('/gietvloer/ontwerpen/', 'Gietvloer', 'Kleur uit je eigen foto, gelegd door een verwerker', True),
+        ('/ontwerpen/', 'Zo werkt bestellen', None, False),
         ('/mijn-woning/', 'Mijn woning', None, False),
         ('/showrooms/', 'Showrooms om te bezoeken', None, False),
     ]),
