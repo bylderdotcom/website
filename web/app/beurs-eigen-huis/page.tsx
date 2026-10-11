@@ -20,8 +20,10 @@ import ConfiguratorCTA from '../components/ConfiguratorCTA'
  * geen aanbod — wij organiseren de beurs niet en verkopen geen kaarten, en
  * schema mag nooit meer beweren dan de pagina.
  *
- * TIJDELIJK: na 11 oktober 2026 gaat deze pagina op noindex of eruit, samen met
- * de aankondigingsbalk (zie _scripts/aankondigingsbalk_pass.py --verwijder).
+ * AFGELOPEN: sinds 11-10-2026 op noindex (wel follow, zodat de links blijven tellen),
+ * uit de sitemap, en de aankondigingsbalk is overal weg (aankondigingsbalk_pass.py
+ * --verwijder). De pagina blijft bestaan voor wie een oude link of mail opent, met
+ * bovenaan dat de beurs voorbij is.
  */
 
 export const metadata: Metadata = {
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     + '9 t/m 11 oktober 2026 in de Jaarbeurs Utrecht. Maximaal twee per persoon, per post. '
     + 'Aanvragen tot 5 oktober.',
   alternates: { canonical: 'https://www.bylder.com/beurs-eigen-huis/' },
+  robots: { index: false, follow: true },
   openGraph: {
     title: 'Gratis kaarten voor de Beurs Eigen Huis 2026',
     description:
@@ -146,6 +149,14 @@ export default function BeursEigenHuis() {
       }) }} />
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 20px' }}>
+
+        {/* De beurs is voorbij: wie een oude link opent, ziet dat meteen, met de weg naar de deuren. */}
+        <p role="status" style={{ margin: '28px 0 0', padding: '14px 18px', borderRadius: 12, background: '#fff',
+                                  border: '1.5px solid #3D5A3E', fontSize: 15, lineHeight: 1.6, maxWidth: '68ch' }}>
+          <strong>De Beurs Eigen Huis 2026 is voorbij.</strong> Bedankt voor je bezoek aan de stand van Classic Next.
+          Je kozijnloze deuren samenstellen kan nog steeds:{' '}
+          <a href="/kozijnloze-deuren/configurator/" style={{ color: '#3D5A3E', fontWeight: 700 }}>naar de configurator</a>.
+        </p>
 
         {/* Hero — één belofte, één knop, en meteen de grenzen erbij */}
         <section style={{ padding: '48px 0 8px', maxWidth: '68ch' }}>
