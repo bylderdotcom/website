@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getPages, getPage, getMainHtml, getShellCss, toMetadata, slugToSegments, segmentsToSlug } from '../../../lib/aannemer'
 import InteractiveScripts from '../InteractiveScripts'
+import MetCommercieleStap from '../../components/MetCommercieleStap'
 import { zonderUitgeslotenLd } from '@/lib/uitgesloten'
 
 // /aannemer/ (index-hub), /aannemer/<stad>/ (bedrijvengrid) en
@@ -31,7 +32,8 @@ export default async function AannemerPage({ params }: { params: Promise<{ slug?
       {zonderUitgeslotenLd('aannemer', page.ldjson).map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
-      <div dangerouslySetInnerHTML={{ __html: main }} />
+      {/* Commerciële stap per vak: web/lib/aanbod.ts */}
+      <MetCommercieleStap html={main} pad={`aannemer/${page.slug}`} />
       <InteractiveScripts />
     </>
   )

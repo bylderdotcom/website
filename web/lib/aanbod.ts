@@ -50,6 +50,19 @@ export const ONDERWERPEN: Record<string, Aanbod> = {
   'kopen/zonnepanelen': { stap: 'korting', titel: 'Korting bij de merken van Bylder' },
   'kopen/laadpalen': { stap: 'korting', titel: 'Korting bij de merken van Bylder' },
   'kopen': { stap: 'auping' },
+
+  // Vakmannen per stad (/loodgieter/<stad>/ enz.): de stap die past bij wat de koper laat doen.
+  'loodgieter': { stap: 'korting', categorieen: ['Sanitair', 'Wandtegels'], titel: 'Korting op het sanitair zelf',
+    aanleiding: 'De loodgieter sluit aan, het sanitair koop je zelf. Met een gratis Bylder-account krijg je ledenkorting bij deze zaken:' },
+  'aannemer': { stap: 'deuren', aanleiding: 'Verbouw je of laat je afbouwen? Een kozijnloze deur gaat vóór de stukadoor de wand in; dan moet de aannemer het weten. Stel je deuren samen in 3D en vraag direct een offerte aan bij Classic Next.' },
+  'schilder': { stap: 'korting', categorieen: ['Behang', 'Muurbekleding', 'Stucwerk'], titel: 'Korting op behang en wandafwerking',
+    aanleiding: 'De schilder zet de verf of het behang op, het materiaal kies je zelf. Met een gratis Bylder-account krijg je ledenkorting bij deze merken:' },
+  'elektricien': { stap: 'korting', categorieen: ['Verlichting', 'Smart home'], titel: 'Korting op verlichting en slim wonen',
+    aanleiding: 'De elektricien legt de punten aan, de lampen koop je zelf. Met een gratis Bylder-account krijg je ledenkorting bij deze merken:' },
+  'badkamer': { stap: 'korting', categorieen: ['Sanitair', 'Wandtegels', 'Vloertegels'], titel: 'Korting op sanitair en tegels',
+    aanleiding: 'Sanitair en tegels zijn vaak de helft van de badkamerrekening. Met een gratis Bylder-account krijg je ledenkorting bij deze zaken:' },
+  'stukadoor': { stap: 'plinten', aanleiding: 'Komt de stukadoor? Dan is dit het moment voor een onzichtbare plint en een kozijnloze deur: allebei gaan ze vóór het stucwerk de wand in. Vraag de offerte aan voordat het stucwerk is ingepland.' },
+  'dakkapel': { stap: 'kast', aanleiding: 'Een zolder met dakkapel wordt pas een kamer met genoeg bergruimte. Ontwerp een kast op maat vanaf een voorbeeldfoto, zie hem in 3D en vraag een offerte aan bij een timmerbedrijf.' },
 }
 
 /** Het aanbod voor een pad als 'kopen/sanitair/wastafel/utrecht': het langste onderwerp dat past. */
