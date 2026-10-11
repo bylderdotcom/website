@@ -45,6 +45,9 @@ taxonomie en de navigatie, niet in het ontbreken van data.
   bronvermelding. Dat onderscheid is juridisch de hele zaak: zie de kop van `nwn_scraper.py`.
   Funda scrapen is afgeraden: hun voorwaarden verbieden het woordelijk en ze blokkeren actief.
 - Node-deps minimaal: `@anthropic-ai/sdk`, `stripe`. Deploy + redirects via `vercel.json`.
+- **Het hoofdmenu staat op één plek: `web/app/components/menu.json`.** Nav.tsx leest het, en
+  `web/build.sh` (stap 4) zet het bij elke build op alle statische pagina's. Menu wijzigen =
+  alleen dat bestand. Geen veegrondes over de HTML meer.
 - Markten als taal-regio-subdir (`/en-us`, `/nl-be`, `/de`). NL staat op root — **niet verplaatsen**.
 
 ## Standing orders (gelden voor elke wijziging hier)

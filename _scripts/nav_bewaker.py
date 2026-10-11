@@ -17,6 +17,11 @@ Dit script controleert het wél, in twee lagen:
   live    steekproef op www.bylder.com, om te zien of de deploy klopt met de
           repo (een pagina kan in de repo goed staan en in de build verkeerd).
 
+Sinds 11-10-2026 zet de build zelf het menu uit menu.json op elke statische
+pagina (web/build.sh, stap 4). De lokale laag is daarmee informatief: een
+bestand in de repo met een ouder menu wordt bij de deploy toch bijgewerkt. Wat
+telt is de live-laag, en die vergelijkt nu het hele menu, niet alleen de marker.
+
 Gebruik:
   python3 _scripts/nav_bewaker.py              # alleen lokaal
   python3 _scripts/nav_bewaker.py --live 200   # plus 200 live-steekproeven
@@ -111,7 +116,9 @@ def live_controleren(paden, basis, aantal):
             return (pad, 'onbereikbaar')
         if '<nav' not in out:
             return None
-        return None if MARKER in out else (pad, 'oud menu live')
+        if MARKER not in out:
+            return (pad, 'oud menu live')
+        return None if CANON_NAV in out else (pad, 'menu wijkt af van menu.json')
 
     with ThreadPoolExecutor(8) as ex:
         return [r for r in ex.map(haal, steek) if r]
@@ -129,7 +136,7 @@ def main():
     paden = uitgeleverde_paginas()
     mist = lokaal_controleren(paden)
     print(f'uitgeleverde statische pagina\'s: {len(paden)}')
-    print(f'zonder het huidige menu (lokaal): {len(mist)}')
+    print(f'in de repo nog met een ouder menu (de build werkt ze bij): {len(mist)}')
     for pad in mist[:20]:
         print('  ', url_van(pad))
     if len(mist) > 20:
@@ -153,7 +160,9 @@ def main():
         }, fh, ensure_ascii=False, indent=1)
     print('rapport:', os.path.relpath(RAPPORT, ROOT))
 
-    return 1 if (mist or live_mist) else 0
+    # Alleen wat live misgaat telt als fout; de repo-bestanden zet de build recht.
+    # Zonder live-steekproef blijft de lokale meting de poort.
+    return 1 if (live_mist if live else mist) else 0
 
 
 if __name__ == '__main__':
