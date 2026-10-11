@@ -60,6 +60,7 @@ const menus = (MERKEN: number): Menu[] => [
       { href: '/kopen/vloeren/', title: 'Vloeren' },
       { href: '/kopen/tegels/', title: 'Tegels' },
       { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren' },
+      { href: '/onzichtbare-plinten/', title: 'Onzichtbare plinten' },
       { href: '/kopen/binnendeuren/', title: 'Binnendeuren' },
       { href: '/kopen/buitendeuren/', title: 'Buitendeuren' },
       { href: '/kopen/keuken/', title: 'Keukens' },

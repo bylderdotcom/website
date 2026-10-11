@@ -454,6 +454,20 @@ export default function OnzichtbaarKozijnPage() {
         <a href="/timmerman/" style={{ color: GROEN, fontWeight: 700 }}>Timmerlieden</a>
       </p>
 
+      {/* Cross-sell (besluit Daniel, 11-10-2026): kozijnloos en plintloos verwijzen naar elkaar. */}
+      <section aria-labelledby="ook-plintloos" style={{ ...KAART, marginTop: 44, display: 'grid', gap: 10, borderColor: GROEN, borderWidth: 1.5 }}>
+        <span style={{ ...LABEL, color: ROEST }}>Hoort erbij</span>
+        <h2 id="ook-plintloos" style={{ ...H2, margin: 0, fontSize: '1.3rem' }}>Ook geen plinten?</h2>
+        <p style={{ ...P, margin: 0 }}>
+          Zonder kozijn en architraaf valt de plint ineens op: de laatste lijst op de wand. Een <strong>onzichtbare
+          plint</strong> zit in de wand, vlak met het stucwerk, of laat alleen een smalle voeg boven de vloer. Hij gaat
+          net als het kozijn vóór de stukadoor de wand in, dus je regelt beide op hetzelfde moment.
+        </p>
+        <p style={{ margin: 0 }}>
+          <a href="/onzichtbare-plinten/" style={{ color: GROEN, fontWeight: 800, fontSize: 15 }}>Onzichtbare plinten: uitvoeringen, kosten en offerte &rarr;</a>
+        </p>
+      </section>
+
       <h2 style={H2}>Verder kijken</h2>
       <p style={P}>
         <a href="/kozijnloze-deuren/configurator/" style={{ color: GROEN, fontWeight: 700 }}>Stel je kozijnloze deur samen</a>

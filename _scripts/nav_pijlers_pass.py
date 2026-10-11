@@ -90,6 +90,7 @@ MENUS = [
         ('/kopen/vloeren/', 'Vloeren', None, False),
         ('/kopen/tegels/', 'Tegels', None, False),
         ('/kozijnloze-deuren/', 'Kozijnloze deuren', None, False),
+        ('/onzichtbare-plinten/', 'Onzichtbare plinten', None, False),
         ('/kopen/binnendeuren/', 'Binnendeuren', None, False),
         ('/kopen/buitendeuren/', 'Buitendeuren', None, False),
         ('/kopen/keuken/', 'Keukens', None, False),

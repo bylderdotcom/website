@@ -1081,6 +1081,13 @@ export default function Configurator() {
               knopStijl={knop}
             />
           </div>
+          {/* Cross-sell: zonder kozijn valt de plint op. Zelfde moment in de bouw. */}
+          <p style={{ fontSize: 13.5, color: `${INKT}0.75)`, margin: '14px 0 0', lineHeight: 1.6, padding: '10px 12px',
+                      background: 'rgba(61,90,62,0.06)', borderRadius: 9 }}>
+            <strong>Ook geen plinten?</strong> Een onzichtbare plint maakt de wand helemaal strak en gaat, net als het
+            kozijn, vóór de stukadoor de wand in.{' '}
+            <a href="/onzichtbare-plinten/" style={{ color: GROEN, fontWeight: 700 }}>Bekijk onzichtbare plinten</a>
+          </p>
           <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '12px 0 0', lineHeight: 1.6 }}>
             Deuren van <a href="/kozijnloze-deuren/classic-next/"
               style={{ color: ROEST, fontWeight: 700 }}>Classic Next</a> uit Uden, geleverd als
