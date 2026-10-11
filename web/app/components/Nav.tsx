@@ -21,121 +21,20 @@ import { useState, useEffect, useRef } from 'react'
  * voettekst; de linkpoort in scripts/homepage_herordenen.mjs bewaakt dat.
  */
 
+import MENU from './menu.json'
+
 type Item = { href: string; title: string; sub?: string; primair?: boolean }
 type Menu = { label: string; items: Item[]; breed?: boolean }
 
-// Smalle bovenbalk: waar je woning in zit + de leeswereld + zakelijk.
-const BOVENBALK: { href: string; label: string }[] = [
-  { href: '/nieuwbouw-koper/', label: 'Nieuwbouw' },
-  { href: '/bestaande-bouw/', label: 'Bestaande bouw' },
-  { href: '/renovatie/', label: 'Renovatie' },
-  { href: '/kennisbank/', label: 'Kennisbank' },
-]
+// HET MENU STAAT IN menu.json, niet hier (11-10-2026). Hetzelfde bestand zet bij
+// elke build het menu op alle statische pagina's (_scripts/nav_pijlers_pass.py
+// --stempel, vanuit web/build.sh). Eén wijziging daar = elke pagina.
+const BOVENBALK: { href: string; label: string }[] = MENU.bovenbalk
 
-const menus = (MERKEN: number): Menu[] => [
-  {
-    // De configuratoren: wat een bezoeker hier zelf maakt, in 3D of in zijn eigen woning.
-    label: 'Ontwerpen',
-    items: [
-      { href: '/kozijnloze-deuren/configurator/', title: 'Kozijnloze deuren',
-        sub: 'In 3D samenstellen, offerte en levering door Classic Next', primair: true },
-      { href: '/kasten-op-maat/ontwerpen/', title: 'Kast op maat',
-        sub: 'Vanaf een voorbeeldfoto, gemaakt door een timmerbedrijf', primair: true },
-      { href: '/gietvloer/ontwerpen/', title: 'Gietvloer',
-        sub: 'Kleur uit je eigen foto, gelegd door een verwerker', primair: true },
-      // De belofte dat een ontwerp ook te bestellen is, met de uitleg erachter.
-      { href: '/ontwerpen/', title: 'Zo werkt bestellen' },
-      { href: '/mijn-woning/', title: 'Mijn woning' },
-      { href: '/showrooms/', title: 'Showrooms om te bezoeken' },
-    ],
-  },
-  {
-    label: 'Assortiment',
-    breed: true,
-    items: [
-      { href: '/assortiment/', title: 'Zo werkt ons assortiment',
-        sub: 'Deels eigen aanbod, deels partners — bij elk aanbod staat wie levert', primair: true },
-      { href: '/showrooms/', title: 'Showrooms om te bezoeken',
-        sub: 'Per producttype de adressen die de rit waard zijn, en waarom', primair: true },
-      { href: '/kopen/vloeren/', title: 'Vloeren' },
-      { href: '/kopen/tegels/', title: 'Tegels' },
-      { href: '/kozijnloze-deuren/', title: 'Kozijnloze deuren' },
-      { href: '/onzichtbare-plinten/', title: 'Onzichtbare plinten' },
-      { href: '/kopen/binnendeuren/', title: 'Binnendeuren' },
-      { href: '/kopen/buitendeuren/', title: 'Buitendeuren' },
-      { href: '/kopen/keuken/', title: 'Keukens' },
-      { href: '/kopen/sanitair/', title: 'Badkamer & sanitair' },
-      { href: '/kopen/slaap-en-bedden/', title: 'Bedden & matrassen' },
-      { href: '/kopen/zitmeubelen/', title: 'Banken & stoelen' },
-      { href: '/kopen/kasten/', title: 'Kasten' },
-      { href: '/kopen/raamdecoratie/', title: 'Raamdecoratie' },
-      { href: '/kopen/verlichting/', title: 'Verlichting' },
-      { href: '/kopen/elektronica/', title: 'Elektronica' },
-      { href: '/kopen/verf/', title: 'Verf' },
-      { href: '/kopen/wandafwerking/', title: 'Wandafwerking' },
-      { href: '/kopen/tuin/', title: 'Tuin' },
-      { href: '/kopen/dakkapellen/', title: 'Dakkapellen' },
-      { href: '/kopen/zonnepanelen/', title: 'Zonnepanelen' },
-      { href: '/kopen/isolatie/', title: 'Isolatie' },
-      { href: '/kopen/laadpalen/', title: 'Laadpalen' },
-    ],
-  },
-  {
-    label: 'Diensten',
-    items: [
-      { href: '/offerte-check/', title: 'Offerte-check',
-        sub: 'Betaal je een eerlijke prijs? Gratis gecheckt', primair: true },
-      { href: '/aannemer/', title: 'Vind een vakbedrijf',
-        sub: 'Aannemer, loodgieter, elektricien — met beoordelingen', primair: true },
-      { href: '/meerwerk/', title: 'Meerwerk controleren',
-        sub: 'Vóór je tekent, tegen marktprijzen', primair: true },
-      { href: '/eerlijke-prijzen/', title: 'Eerlijke prijzen per klus' },
-      { href: '/bouwvergunning/', title: 'Bouwvergunning' },
-      { href: '/oplevering-nieuwbouw/', title: 'Oplevering & 5%-regeling' },
-      { href: '/ruimtes/', title: 'Keuzes per ruimte' },
-    ],
-  },
-  {
-    label: 'Kortingsvouchers',
-    items: [
-      { href: '/vouchers/', title: `Ledenkorting bij ${MERKEN} merken`,
-        sub: 'Auping, Goossens, DRT en meer — met een gratis account', primair: true },
-      { href: '/vouchers/auping/', title: 'Auping: 10% + gratis leenbed' },
-      { href: '/kortingscode/', title: 'Kortingscodes per merk' },
-      { href: '/showroomsale/', title: 'Showroomsale' },
-    ],
-  },
-  {
-    label: 'Advies',
-    items: [
-      { href: '/kopersbegeleiding-nieuwbouw/', title: 'Woningregisseur',
-        sub: 'Eén plan voor verbouwen, afwerken en inrichten — gratis', primair: true },
-      { href: '/kopersbegeleiding-nieuwbouw/#ai-kopersbegeleider', title: 'AI Kopersbegeleider',
-        sub: 'Direct antwoord op je meerwerk- en keuzevragen, 24/7', primair: true },
-      { href: '/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/', title: 'Meerwerklijst controleren' },
-      { href: '/kopersbegeleiding/sluitingsdata-meerwerk-deadlines/', title: 'Sluitingsdata & deadlines' },
-      { href: '/kopersbegeleiding/bouwkundig-meerwerk-indeling/', title: 'Bouwkundig & indeling' },
-      { href: '/kopersbegeleiding/elektra-lichtplan-nieuwbouw/', title: 'Elektra & lichtplan' },
-      { href: '/kopersbegeleiding/keuken-badkamer-casco-opleveren/', title: 'Keuken & badkamer casco' },
-      { href: '/kopersbegeleiding/klimaat-vloerkoeling-nieuwbouw/', title: 'Klimaat & vloerkoeling' },
-      { href: '/kopersbegeleiding/onafhankelijke-kopersbegeleider-bouwkundig/', title: 'Onafhankelijke kopersbegeleider' },
-    ],
-  },
-  {
-    label: 'Zakelijk',
-    items: [
-      { href: '/inkoopvoordeel/', title: 'Inkoopvoordeel voor vakbedrijven',
-        sub: 'Inkoopkorting én verdienen aan wat je klant koopt — €79 per jaar', primair: true },
-      { href: '/zakelijk/hoe-een-order-verloopt/', title: 'Hoe een order verloopt',
-        sub: 'Van doorverwijzing tot uitbetaling, in gewone taal', primair: true },
-      { href: '/deelnemer-worden/', title: 'Deelnemer worden',
-        sub: 'Bereik kopers op het juiste koopmoment', primair: true },
-      { href: '/deelnemer-worden/commercieel-vastgoed/', title: 'Commercieel vastgoed' },
-      { href: '/voor-vakbedrijven/', title: 'Voor vakbedrijven' },
-      { href: '/zakelijk/', title: 'Alles over Bylder Zakelijk' },
-    ],
-  },
-]
+const menus = (MERKEN: number): Menu[] => (MENU.menus as Menu[]).map((m) => ({
+  ...m,
+  items: m.items.map((i) => ({ ...i, title: i.title.replace('{merken}', String(MERKEN)) })),
+}))
 
 const INKT = 'rgba(61,46,30,'
 const LINK: React.CSSProperties = {

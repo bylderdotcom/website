@@ -19,6 +19,13 @@
 # accordeon — geen dubbele state, geen scripts nodig.
 #
 # Idempotent via de marker-klasse "byl-nav2026" op de nieuwe <nav>-tag.
+#
+# SINDS 11-10-2026: ÉÉN MENU, AUTOMATISCH OVERAL. De inhoud staat alleen in
+# web/app/components/menu.json. web/build.sh roept dit script bij elke deploy
+# aan met --stempel, en zet het menu dan op elke statische pagina in de
+# build-output. Een menuwijziging = menu.json aanpassen, mergen, klaar. Een
+# veegronde over de repo (dit script zonder opties) is niet meer nodig; hij
+# houdt alleen de gecommitte bestanden gelijk met wat live staat.
 import os
 import sys
 
@@ -55,13 +62,6 @@ MARKER = 'byl-nav2026'
 
 INKT = 'rgba(61,46,30,'
 
-BOVENBALK = [
-    ('/nieuwbouw-koper/', 'Nieuwbouw'),
-    ('/bestaande-bouw/', 'Bestaande bouw'),
-    ('/renovatie/', 'Renovatie'),
-    ('/kennisbank/', 'Kennisbank'),
-]
-
 def aantal_merken():
     """Aantal merken, uit data/deelnemers.json — dezelfde telling als
     web/lib/merken.ts, zodat statische pagina's en Next-routes hetzelfde getal
@@ -74,88 +74,34 @@ def aantal_merken():
     return len({x['naam'] for x in lijst if x.get('naam')})
 
 
-MENUS = [
-    # Ontwerpen (10-10-2026): de configuratoren, als eerste menu. Gelijk aan Nav.tsx.
-    ('Ontwerpen', False, [
-        ('/kozijnloze-deuren/configurator/', 'Kozijnloze deuren', 'In 3D samenstellen, offerte en levering door Classic Next', True),
-        ('/kasten-op-maat/ontwerpen/', 'Kast op maat', 'Vanaf een voorbeeldfoto, gemaakt door een timmerbedrijf', True),
-        ('/gietvloer/ontwerpen/', 'Gietvloer', 'Kleur uit je eigen foto, gelegd door een verwerker', True),
-        ('/ontwerpen/', 'Zo werkt bestellen', None, False),
-        ('/mijn-woning/', 'Mijn woning', None, False),
-        ('/showrooms/', 'Showrooms om te bezoeken', None, False),
-    ]),
-    ('Assortiment', True, [
-        ('/assortiment/', 'Zo werkt ons assortiment', 'Deels eigen aanbod, deels partners — bij elk aanbod staat wie levert', True),
-        ('/showrooms/', 'Showrooms om te bezoeken', 'Per producttype de adressen die de rit waard zijn, en waarom', True),
-        ('/kopen/vloeren/', 'Vloeren', None, False),
-        ('/kopen/tegels/', 'Tegels', None, False),
-        ('/kozijnloze-deuren/', 'Kozijnloze deuren', None, False),
-        ('/onzichtbare-plinten/', 'Onzichtbare plinten', None, False),
-        ('/kopen/binnendeuren/', 'Binnendeuren', None, False),
-        ('/kopen/buitendeuren/', 'Buitendeuren', None, False),
-        ('/kopen/keuken/', 'Keukens', None, False),
-        ('/kopen/sanitair/', 'Badkamer &amp; sanitair', None, False),
-        ('/kopen/slaap-en-bedden/', 'Bedden &amp; matrassen', None, False),
-        ('/kopen/zitmeubelen/', 'Banken &amp; stoelen', None, False),
-        ('/kopen/kasten/', 'Kasten', None, False),
-        ('/kopen/raamdecoratie/', 'Raamdecoratie', None, False),
-        ('/kopen/verlichting/', 'Verlichting', None, False),
-        ('/kopen/elektronica/', 'Elektronica', None, False),
-        ('/kopen/verf/', 'Verf', None, False),
-        ('/kopen/wandafwerking/', 'Wandafwerking', None, False),
-        ('/kopen/tuin/', 'Tuin', None, False),
-        ('/kopen/dakkapellen/', 'Dakkapellen', None, False),
-        ('/kopen/zonnepanelen/', 'Zonnepanelen', None, False),
-        ('/kopen/isolatie/', 'Isolatie', None, False),
-        ('/kopen/laadpalen/', 'Laadpalen', None, False),
-    ]),
-    ('Diensten', False, [
-        ('/offerte-check/', 'Offerte-check', 'Betaal je een eerlijke prijs? Gratis gecheckt', True),
-        ('/aannemer/', 'Vind een vakbedrijf', 'Aannemer, loodgieter, elektricien — met beoordelingen', True),
-        ('/meerwerk/', 'Meerwerk controleren', 'Vóór je tekent, tegen marktprijzen', True),
-        ('/eerlijke-prijzen/', 'Eerlijke prijzen per klus', None, False),
-        ('/bouwvergunning/', 'Bouwvergunning', None, False),
-        ('/oplevering-nieuwbouw/', 'Oplevering &amp; 5%-regeling', None, False),
-        ('/ruimtes/', 'Keuzes per ruimte', None, False),
-    ]),
-    ('Kortingsvouchers', False, [
-        ('/vouchers/', f'Ledenkorting bij {aantal_merken()} merken', 'Auping, Goossens, DRT en meer — met een gratis account', True),
-        ('/vouchers/auping/', 'Auping: 10% + gratis leenbed', None, False),
-        ('/kortingscode/', 'Kortingscodes per merk', None, False),
-        ('/showroomsale/', 'Showroomsale', None, False),
-    ]),
-    # Tot 11-09-2026 stond hier 'Word verkooppunt van het gecureerde
-    # assortiment — op uitnodiging'. Dat klopt niet meer: het lidmaatschap van
-    # €79 staat open voor elk vakbedrijf. Zelfde tekst als in Nav.tsx, zodat
-    # statische pagina's en Next-routes hetzelfde beloven.
-    # Volgorde gelijk aan Nav.tsx: Kortingsvouchers vóór Advies (besluit Daniel,
-    # 11-09-2026). Tot die dag stond Advies hier ervóór.
-    #
-    # Advies stond tot 11-09-2026 niet in dit script: nav_advies_pass.py voegde
-    # het er op 29-08 achteraf aan toe. Daardoor was het 'canonieke' menu hier
-    # verouderd, en een run van dit script haalde Advies weer weg van 8.271
-    # pagina's. Nu staat het er zelf in; de Advies-pass is daarmee overbodig.
-    ('Advies', False, [
-        ('/kopersbegeleiding-nieuwbouw/', 'Woningregisseur', 'E&eacute;n plan voor verbouwen, afwerken en inrichten &mdash; gratis', True),
-        ('/kopersbegeleiding-nieuwbouw/#ai-kopersbegeleider', 'AI Kopersbegeleider', 'Direct antwoord op je meerwerk- en keuzevragen, 24/7', True),
-        ('/kopersbegeleiding/meerwerklijst-nieuwbouw-controleren/', 'Meerwerklijst controleren', None, False),
-        ('/kopersbegeleiding/sluitingsdata-meerwerk-deadlines/', 'Sluitingsdata &amp; deadlines', None, False),
-        ('/kopersbegeleiding/bouwkundig-meerwerk-indeling/', 'Bouwkundig &amp; indeling', None, False),
-        ('/kopersbegeleiding/elektra-lichtplan-nieuwbouw/', 'Elektra &amp; lichtplan', None, False),
-        ('/kopersbegeleiding/keuken-badkamer-casco-opleveren/', 'Keuken &amp; badkamer casco', None, False),
-        ('/kopersbegeleiding/klimaat-vloerkoeling-nieuwbouw/', 'Klimaat &amp; vloerkoeling', None, False),
-        ('/kopersbegeleiding/onafhankelijke-kopersbegeleider-bouwkundig/', 'Onafhankelijke kopersbegeleider', None, False),
-    ]),
-    ('Zakelijk', False, [
-        ('/inkoopvoordeel/', 'Inkoopvoordeel voor vakbedrijven', 'Inkoopkorting én verdienen aan wat je klant koopt — €79 per jaar', True),
-        # Stond al in Nav.tsx (de Next-routes), ontbrak hier tot 11-09-2026.
-        ('/zakelijk/hoe-een-order-verloopt/', 'Hoe een order verloopt', 'Van doorverwijzing tot uitbetaling, in gewone taal', True),
-        ('/deelnemer-worden/', 'Deelnemer worden', 'Bereik kopers op het juiste koopmoment', True),
-        ('/deelnemer-worden/commercieel-vastgoed/', 'Commercieel vastgoed', None, False),
-        ('/voor-vakbedrijven/', 'Voor vakbedrijven', None, False),
-        ('/zakelijk/', 'Alles over Bylder Zakelijk', None, False),
-    ]),
-]
+# HET MENU STAAT NIET MEER IN DIT SCRIPT (11-10-2026). De enige bron is
+# web/app/components/menu.json; Nav.tsx (de Next-pagina's) leest hetzelfde
+# bestand. Tot deze dag stond het menu twee keer uitgeschreven, hier en in
+# Nav.tsx, en liepen die steeds uit elkaar (Advies ontbrak hier, Zakelijk
+# miste een regel, de volgorde verschilde). Teksten in de JSON zijn platte
+# tekst; hier worden ze HTML-veilig gemaakt.
+MENU_JSON = os.path.join(ROOT, 'web', 'app', 'components', 'menu.json')
+
+
+def lees_menu():
+    import json
+    from html import escape
+    with open(MENU_JSON, encoding='utf-8') as fh:
+        d = json.load(fh)
+    merken = str(aantal_merken())
+
+    def t(s):
+        return escape(s.replace('{merken}', merken), quote=False)
+
+    bovenbalk = [(b['href'], t(b['label'])) for b in d['bovenbalk']]
+    menus = [(t(m['label']), bool(m.get('breed')),
+              [(escape(i['href']), t(i['title']), t(i['sub']) if i.get('sub') else None,
+                bool(i.get('primair'))) for i in m['items']])
+             for m in d['menus']]
+    return bovenbalk, menus
+
+
+BOVENBALK, MENUS = lees_menu()
 
 SLUGS = ['as', 'di', 'kv', 'zk']
 
@@ -657,11 +603,65 @@ def run(scope=None):
     print(f'aangepast: {done} bestanden')
 
 
+def stempel(outdir, next_lijst):
+    """Zet het menu uit menu.json op elke statische pagina in de build-output.
+
+    Draait in web/build.sh na de overlay, dus bij elke deploy. Daarmee is een
+    menuwijziging niet meer afhankelijk van een veegronde over de repo: wat in
+    menu.json staat, staat na de build op elke pagina (11-10-2026).
+
+    Pagina's die Next zelf schreef worden overgeslagen; die krijgen het menu al
+    uit Nav.tsx. Welke dat zijn weet build.sh precies: de lijst wordt gemaakt
+    vóór de overlay, toen ./out alleen Next-output bevatte. Daardoor is hier
+    geen NEXT_ROUTES of nav_gaten.txt nodig.
+
+    Schrijft alleen bestanden waarvan de inhoud verandert. Na de eerste keer is
+    dat bijna niets, dus de stap kost vooral leestijd.
+    """
+    outdir = os.path.abspath(outdir)
+    with open(next_lijst, encoding='utf-8') as fh:
+        van_next = {os.path.abspath(r.strip()) for r in fh if r.strip()}
+    gezien = aangepast = 0
+    for dp, dns, fns in os.walk(outdir):
+        rel = dp[len(outdir):] + '/'
+        if rel.startswith('/_next/') or '/en-us/' in rel:
+            dns[:] = []
+            continue
+        for fn in fns:
+            if not fn.endswith('.html'):
+                continue
+            f = os.path.join(dp, fn)
+            if f in van_next:
+                continue
+            try:
+                with open(f, encoding='utf-8') as fh:
+                    h = fh.read()
+            except (UnicodeDecodeError, OSError):
+                continue
+            if '<nav' not in h:
+                continue
+            gezien += 1
+            nh, ch = transform(h)
+            nh, ch2 = zet_stylesheet_link(nh)
+            if ch or ch2:
+                with open(f, 'w', encoding='utf-8') as fh:
+                    fh.write(nh)
+                aangepast += 1
+    with open(os.path.join(outdir, 'bn2.css'), 'w', encoding='utf-8') as fh:
+        fh.write(CSS)
+    print(f'menu: {gezien} statische pagina\'s met een menu, {aangepast} bijgewerkt '
+          f'({len(van_next)} Next-pagina\'s overgeslagen)')
+
+
 if __name__ == '__main__':
     # --emit-css: schrijft de CSS als TS-constante naar stdout, zodat Nav.tsx
     # (de Next-routes) exact dezelfde vormgeving gebruikt als de statische
     # pagina's. Zie web/app/components/navCss.ts.
-    if '--scan-gaten' in sys.argv:
+    if '--stempel' in sys.argv:
+        # --stempel <outdir> <lijst-met-next-html>: zie stempel() en web/build.sh.
+        i = sys.argv.index('--stempel')
+        stempel(sys.argv[i + 1], sys.argv[i + 2])
+    elif '--scan-gaten' in sys.argv:
         scan_gaten()
     elif '--emit-css' in sys.argv:
         import json

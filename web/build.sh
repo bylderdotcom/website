@@ -5,10 +5,10 @@ set -euo pipefail
 cd "$(dirname "$0")"          # web/
 ROOT="$(cd .. && pwd)"        # repo-root (de bestaande statische site)
 
-echo "▸ 1/3  next build (statische export → web/out)"
+echo "▸ 1/4  next build (statische export → web/out)"
 npx --no-install next build
 
-echo "▸ 2/3  RSC-prefetch-payloads opruimen (__next*.txt/index.txt per route)"
+echo "▸ 2/4  RSC-prefetch-payloads opruimen (__next*.txt/index.txt per route)"
 # App Router-static-export genereert per route ook RSC-prefetch-.txt-bestanden
 # voor client-side <Link>-navigatie. Geen enkele geporte pagina gebruikt next/link
 # (alle interne links zijn platte <a href> in dangerouslySetInnerHTML-content) —
@@ -19,7 +19,12 @@ echo "▸ 2/3  RSC-prefetch-payloads opruimen (__next*.txt/index.txt per route)"
 # (bv. robots.txt) nooit raken.
 find ./out -name "*.txt" -delete
 
-echo "▸ 3/3  overlay bestaande statische site (Next-pagina's blijven behouden)"
+# Welke HTML Next zelf schreef, vastgelegd vóór de overlay: stap 4 laat die
+# pagina's met rust (ze krijgen hun menu al uit Nav.tsx).
+NEXT_HTML="$(mktemp)"
+find "$PWD/out" -name "*.html" > "$NEXT_HTML"
+
+echo "▸ 3/4  overlay bestaande statische site (Next-pagina's blijven behouden)"
 # Bestanden die Next al genereerde worden NIET overschreven (cp -n), dus de
 # door Next gerenderde routes blijven staan; al het andere komt van de
 # bestaande site. Dev-/bron-mappen worden uitgesloten (top-level; geneste
@@ -81,5 +86,20 @@ for entry in "$ROOT"/*; do
     cp -n "$entry" "./out/$name" || true
   fi
 done
+
+echo "▸ 4/4  menu uit web/app/components/menu.json op elke statische pagina"
+# Eén menu voor de hele site (11-10-2026). Tot deze dag zat het menu als
+# kopie in ~38.000 statische HTML-bestanden en moest elke wijziging met een
+# veegronde worden rondgebracht; clusters die die ronde misten liepen achter.
+# Nu zet elke build het menu opnieuw neer, uit hetzelfde bestand dat Nav.tsx
+# leest. Een wijziging in menu.json staat dus na de volgende deploy overal.
+# Zonder python3 geen afgebroken deploy: dan blijft het menu staan zoals het
+# in de bestanden zat, en zegt de bouwlog dat hardop.
+if command -v python3 >/dev/null 2>&1; then
+  python3 "$ROOT/_scripts/nav_pijlers_pass.py" --stempel ./out "$NEXT_HTML"
+else
+  echo "⚠ python3 ontbreekt: menu NIET bijgewerkt op de statische pagina's"
+fi
+rm -f "$NEXT_HTML"
 
 echo "✓ klaar — web/out bevat de volledige site (Next + bestaand)"
