@@ -53,6 +53,9 @@ const NIEUW: Deur = {
   scharnierKleur: 'Zwart',
 }
 
+/** Alles behalve de plek: deuren met dezelfde uitvoering zijn één type. */
+const typeVan = ({ naam: _n, ...rest }: Deur) => JSON.stringify(rest)
+
 // Suggesties, geen keurslijf: het invoerveld blijft vrij tekst.
 const PLEKKEN = ['Hal', 'Woonkamer', 'Keuken', 'Slaapkamer', 'Badkamer', 'Berging',
                  'Werkkamer', 'Overloop', 'Kinderkamer', 'Toilet']
@@ -132,6 +135,10 @@ export default function Configurator() {
 
   const [deuren, setDeuren] = useState<Deur[]>([NIEUW])
   const [actief, setActief] = useState(0)
+  // Deuren met hetzelfde ontwerp, dezelfde kleur en hetzelfde beslag zijn één type. Een
+  // keuze geldt voor het hele type, tenzij de koper één deur apart aanpast (bijvoorbeeld
+  // één deur die naar buiten draait).
+  const [apart, setApart] = useState(false)
   const [sleept, setSleept] = useState(false)
   const [spec, setSpec] = useState(false)
   // De server kent het adres van de bezoeker niet. Lees het pas na de eerste
@@ -482,9 +489,24 @@ export default function Configurator() {
   }, [deuren])
 
   const wijzig = useCallback((p: Partial<Deur>) => {
-    setDeuren(d => d.map((x, i) => (i === actief ? { ...x, ...p } : x)))
+    setDeuren(d => {
+      const k = typeVan(d[actief] ?? NIEUW)
+      return d.map((x, i) => (i === actief || (!apart && typeVan(x) === k) ? { ...x, ...p } : x))
+    })
     meet('aangepast')
-  }, [actief])
+  }, [actief, apart])
+
+  // Draairichting en scharnierzijde: in 3D meteen open, zodat je ziet hoe hij draait.
+  const wijzigDraai = (p: Partial<Deur>) => { wijzig(p); setStand('open') }
+
+  // De types, in de volgorde waarin ze voor het eerst voorkomen, met de deuren erin.
+  const groepen: number[][] = []
+  deuren.forEach((d, i) => {
+    const g = groepen.find(x => typeVan(deuren[x[0]]) === typeVan(d))
+    if (g) g.push(i); else groepen.push([i])
+  })
+  const groep = groepen.find(g => g.includes(actief)) ?? [actief]
+  const voegToe = (d: Deur) => { setDeuren(x => [...x, d]); setActief(deuren.length) }
 
   const specTekst = deuren.map((d, i) => {
     const o = ONTWERPEN.find(x => x.id === d.ontwerp)!
@@ -573,6 +595,25 @@ export default function Configurator() {
             <GerenderdBeeld ontwerp={ontwerp.id} kleurHex={lakKleur} spiegel={huidig.scharnier === 'links'}
               zichtbaar={toonFoto} />
           )}
+          {/* Bovenaanzicht: hoe de deur draait, bij elke keuze meteen zichtbaar. */}
+          <Draaischema richting={huidig.richting} scharnier={huidig.scharnier} />
+          {/* Wand in de kleur van de deur: in het beeld zelf, want het ís het product. In de
+              gerenderde weergave zijn wand en deur altijd gelijk; uitzetten gaat naar 3D. */}
+          <button onClick={() => {
+              if (toonFoto) { setWeergave('3d'); setWandGelijk(false) } else setWandGelijk(v => !v)
+            }}
+            aria-pressed={toonFoto || wandGelijk}
+            style={{ position: 'absolute', left: 12, bottom: 12, display: 'inline-flex', alignItems: 'center', gap: 8,
+                     padding: '8px 12px 8px 8px', borderRadius: 999, border: `1px solid ${INKT}0.16)`,
+                     background: 'rgba(255,255,255,0.94)', cursor: 'pointer', fontFamily: 'inherit',
+                     fontSize: 13, fontWeight: 700, color: '#1A1208', boxShadow: '0 2px 10px rgba(26,18,8,0.12)' }}>
+            <span aria-hidden="true" style={{ width: 34, height: 20, borderRadius: 999, position: 'relative',
+                     background: toonFoto || wandGelijk ? GROEN : `${INKT}0.25)`, transition: 'background .2s' }}>
+              <span style={{ position: 'absolute', top: 2, left: toonFoto || wandGelijk ? 16 : 2, width: 16, height: 16,
+                     borderRadius: '50%', background: '#fff', transition: 'left .2s' }} />
+            </span>
+            Wand in dezelfde kleur
+          </button>
         </div>
         <div role="group" aria-label="Weergave" style={{ display: 'flex', gap: 4, margin: '10px 0 0' }}>
           <button onClick={() => setWeergave('foto')} aria-pressed={toonFoto} disabled={huidig.afwerking === 'fineer'}
@@ -587,18 +628,14 @@ export default function Configurator() {
         {toonFoto ? (
           <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
             Gerenderd in Blender, met deur en wand in de kleur die je kiest en een kier van 3 mm &mdash;
-            zo ziet een instuckozijn eruit na het stucwerk. De kruk staat hier in zwart; je eigen keuze en
-            de draairichting zie je in 3D.
+            zo ziet een instuckozijn eruit na het stucwerk. De kruk staat hier in zwart; je eigen keuze zie je
+            in 3D. Het schema rechtsboven laat zien hoe de deur draait.
             <br /><strong style={{ color: '#B85C38' }}>Let op:</strong> het freespatroon in dit beeld wordt
             nog bijgewerkt. Voor het juiste patroon: kies 3D.
           </p>
         ) : (
         <>
         <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', margin: '10px 0 0' }}>
-          <button onClick={() => setWandGelijk(v => !v)} aria-pressed={wandGelijk}
-            style={wandGelijk ? knopAan : knop}>
-            Wand in dezelfde kleur
-          </button>
           <button onClick={() => setVeraf(v => !v)} aria-pressed={veraf}
             style={veraf ? knopAan : knop}>
             {veraf ? 'Van dichtbij' : 'Op afstand bekijken'}
@@ -612,8 +649,8 @@ export default function Configurator() {
         </div>
         <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
           Weergave op schaal: plafondhoog bij 2.720 mm, met een kier van 3 mm rond het blad. Het licht valt van linksboven &mdash;
-          daarom verandert het groefpatroon als je een donkerder kleur kiest. Zet de wand in
-          dezelfde kleur en bekijk hem op afstand: dan zie je waar dit systeem het voor doet,
+          daarom verandert het groefpatroon als je een donkerder kleur kiest. Het schema rechtsboven
+          laat zien hoe de deur draait. Zet de wand in dezelfde kleur en bekijk hem op afstand: dan zie je waar dit systeem het voor doet,
           want zonder kozijn en architraaf worden deur en wand &eacute;&eacute;n vlak met alleen
           een schaduwvoeg ertussen. Kleuren op scherm zijn een benadering; vraag een staal voor
           de definitieve keuze.
@@ -625,63 +662,142 @@ export default function Configurator() {
       {/* ── De keuzes ── */}
       <div style={{ display: 'grid', gap: 22 }}>
 
-        {/* Deuren — de knop staat tussen de deuren zelf, niet in een hoek.
-            Dat een configuratie mééér deuren kan bevatten is de kern van het
-            product (een woning heeft er zes tot acht), en dat moet je zien
-            zonder ernaar te zoeken. */}
+        {/* Deuren per type. Een woning heeft er zes tot acht, vaak van één of twee
+            types: je geeft per type het aantal op en per deur waar hij komt, in
+            plaats van elke deur los aan te maken. */}
         <div>
           <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }}>
-            Jouw deuren
+            Jouw deuren{deuren.length > 1 ? ` (${deuren.length})` : ''}
           </h2>
           <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', alignItems: 'center' }}>
-            {deuren.map((d, i) => {
-              const k = KLEUREN.find(x => x.ral === d.ral)!
+            {groepen.map((g, gi) => {
+              const d = deuren[g[0]]
+              const o = ONTWERPEN.find(x => x.id === d.ontwerp) ?? ONTWERPEN[0]
+              const k = KLEUREN.find(x => x.ral === d.ral) ?? KLEUREN[0]
               const f = FINEREN.find(x => x.id === d.fineer) ?? FINEREN[0]
               const staal = d.afwerking === 'fineer' ? f.basis
                           : d.afwerking === 'gegrond' ? GRONDVERF
                           : (d.vrij || k.hex)
+              const aan = g.includes(actief)
               return (
-                <button key={i} onClick={() => setActief(i)}
-                  style={{ ...(i === actief ? knopAan : knop), padding: '7px 10px', fontSize: 13,
+                <button key={gi} onClick={() => { setActief(g[0]); setApart(false) }} aria-pressed={aan}
+                  style={{ ...(aan ? knopAan : knop), padding: '7px 10px', fontSize: 13,
                            display: 'flex', alignItems: 'center', gap: 7 }}>
                   <span style={{ width: 13, height: 13, borderRadius: 3, background: staal,
                                  border: `1px solid ${INKT}0.25)`, display: 'inline-block' }} />
-                  {naamVan(d, i)}
-                  {deuren.length > 1 && (
+                  {groepen.length > 1 ? `Type ${gi + 1}: ` : ''}{o.naam} · {g.length === 1 && d.naam.trim() ? d.naam.trim() : `${g.length}×`}
+                  {groepen.length > 1 && (
                     <span onClick={e => { e.stopPropagation()
-                        setDeuren(x => x.filter((_, j) => j !== i))
-                        setActief(a => Math.max(0, a - (i <= a ? 1 : 0))) }}
-                      aria-label={`${naamVan(d, i)} verwijderen`}
+                        setDeuren(x => x.filter((_, j) => !g.includes(j)))
+                        setActief(0); setApart(false) }}
+                      aria-label={`Type ${gi + 1} verwijderen`}
                       style={{ marginLeft: 2, color: `${INKT}0.4)`, fontWeight: 700 }}>×</span>
                   )}
                 </button>
               )
             })}
-            <button onClick={() => { setDeuren(d => [...d, { ...huidig, naam: '' }]); meet('tweede-deur')
-                                     setActief(deuren.length) }}
+            <button onClick={() => {
+                const i = ONTWERPEN.findIndex(o => o.id === huidig.ontwerp)
+                voegToe({ ...huidig, naam: '', ontwerp: ONTWERPEN[(i + 1) % ONTWERPEN.length].id }); setApart(false); meet('tweede-deur')
+              }}
               style={{ padding: '8px 14px', borderRadius: 9, border: 'none', background: GROEN,
                        color: '#F5F0E8', fontSize: 13.5, fontWeight: 800, cursor: 'pointer',
                        fontFamily: 'inherit' }}>
-              + Deur toevoegen
+              + Ander type deur
             </button>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', margin: '14px 0 0' }}>
+            <span id="aantal-label" style={{ fontSize: 14, fontWeight: 700, color: '#1A1208' }}>
+              Hoeveel deuren van {groepen.length > 1 ? 'dit type' : 'deze uitvoering'}?
+            </span>
+            <span role="group" aria-labelledby="aantal-label" style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+              <button aria-label="Eén deur minder" disabled={groep.length <= 1}
+                onClick={() => { const weg = groep[groep.length - 1]
+                  setDeuren(x => x.filter((_, j) => j !== weg))
+                  if (actief >= weg) setActief(groep[0]) }}
+                style={{ ...knop, padding: '6px 13px', opacity: groep.length <= 1 ? 0.4 : 1 }}>−</button>
+              <span aria-live="polite" style={{ minWidth: 28, textAlign: 'center', fontWeight: 800, fontSize: 16 }}>{groep.length}</span>
+              <button aria-label="Eén deur meer" disabled={deuren.length >= 40}
+                onClick={() => { voegToe({ ...deuren[groep[0]], naam: '' }); setActief(groep[0]); if (deuren.length === 1) meet('tweede-deur') }}
+                style={{ ...knop, padding: '6px 13px' }}>+</button>
+            </span>
           </div>
         </div>
 
-        {/* Naam — waar hangt deze deur? */}
+        {/* Waar komt elke deur? De naam is de plek in huis. */}
         <div>
-          <label htmlFor="deurnaam" style={{ display: 'block', fontSize: '1.02rem',
-            fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>Waar komt deze deur?</label>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
+            {groep.length > 1 ? 'Waar komen ze?' : 'Waar komt deze deur?'}
+          </h2>
           <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 8px' }}>
-            Geef hem de naam van de ruimte, dan weet iedereen bij de offerte welke deur
+            Geef elke deur de naam van de ruimte, dan weet iedereen bij de offerte welke deur
             welke is.
           </p>
-          <input id="deurnaam" list="plekken" value={huidig.naam}
-            placeholder={`Bijvoorbeeld ${PLEKKEN[actief % PLEKKEN.length].toLowerCase()}`}
-            onChange={e => wijzig({ naam: e.target.value })}
-            style={{ width: '100%', boxSizing: 'border-box', padding: '10px 12px', borderRadius: 9, fontSize: 14.5,
-                     border: `1.5px solid ${INKT}0.14)`, fontFamily: 'inherit',
-                     color: '#1A1208', background: '#fff' }} />
+          <div style={{ display: 'grid', gap: 6 }}>
+            {groep.map((i, n) => (
+              <div key={i} style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                {groep.length > 1 && <label htmlFor={`deurnaam-${i}`} style={{ fontSize: 12.5, color: `${INKT}0.6)`, minWidth: 48 }}>Deur {n + 1}</label>}
+                <input id={`deurnaam-${i}`} list="plekken" value={deuren[i].naam}
+                  aria-label={groep.length > 1 ? undefined : 'Waar komt deze deur?'}
+                  placeholder={`Bijvoorbeeld ${PLEKKEN[i % PLEKKEN.length].toLowerCase()}`}
+                  onChange={e => { const v = e.target.value; setDeuren(x => x.map((d, j) => (j === i ? { ...d, naam: v } : d))) }}
+                  style={{ flex: 1, minWidth: 0, boxSizing: 'border-box', padding: '9px 12px', borderRadius: 9, fontSize: 14.5,
+                           border: `1.5px solid ${i === actief && apart ? GROEN : `${INKT}0.14)`}`, fontFamily: 'inherit',
+                           color: '#1A1208', background: '#fff' }} />
+                {groep.length > 1 && (
+                  <button onClick={() => { setActief(i); setApart(true) }}
+                    style={{ background: 'none', border: 0, padding: '4px 2px', cursor: 'pointer', fontFamily: 'inherit',
+                             fontSize: 12.5, fontWeight: 700, color: GROEN, whiteSpace: 'nowrap' }}>
+                    Anders uitvoeren
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
           <datalist id="plekken">{PLEKKEN.map(x => <option key={x} value={x} />)}</datalist>
+          {apart && (
+            <p role="status" style={{ fontSize: 13, margin: '10px 0 0', padding: '9px 12px', borderRadius: 9,
+                                      background: 'rgba(61,90,62,0.08)', color: '#1A1208', lineHeight: 1.5 }}>
+              Je past nu alleen <strong>{naamVan(huidig, actief)}</strong> aan. Verander je iets, dan wordt
+              hij een eigen type.{' '}
+              <button onClick={() => setApart(false)} style={{ background: 'none', border: 0, padding: 0, cursor: 'pointer',
+                fontFamily: 'inherit', fontSize: 13, fontWeight: 700, color: GROEN, textDecoration: 'underline' }}>Klaar</button>
+            </p>
+          )}
+        </div>
+
+        {/* Draairichting en scharnieren: hoe de deur in de muur hangt. Staat vooraan,
+            want het bepaalt het kozijn en dus de bestelling. Het schema in het beeld
+            laat meteen zien wat je kiest. */}
+        <div>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
+            Draairichting en scharnieren
+          </h2>
+          <p style={{ fontSize: 13, color: `${INKT}0.6)`, margin: '0 0 10px', lineHeight: 1.55 }}>
+            Gezien vanaf de kant waar je nu staat. Naar binnen draait hij van je af, de ruimte in; naar
+            buiten draait hij naar je toe.
+          </p>
+          <div style={{ display: 'grid', gap: 10, gridTemplateColumns: '1fr 1fr' }}>
+            <div role="group" aria-label="Draait naar">
+              <div style={{ fontSize: 12.5, fontWeight: 700, color: `${INKT}0.6)`, margin: '0 0 5px' }}>Draait naar</div>
+              <div style={{ display: 'flex', gap: 6 }}>
+                {(['binnen', 'buiten'] as const).map(r => (
+                  <button key={r} onClick={() => wijzigDraai({ richting: r })} aria-pressed={r === huidig.richting}
+                    style={{ ...(r === huidig.richting ? knopAan : knop), flex: 1 }}>{r}</button>
+                ))}
+              </div>
+            </div>
+            <div role="group" aria-label="Scharnieren">
+              <div style={{ fontSize: 12.5, fontWeight: 700, color: `${INKT}0.6)`, margin: '0 0 5px' }}>Scharnieren</div>
+              <div style={{ display: 'flex', gap: 6 }}>
+                {(['links', 'rechts'] as const).map(z => (
+                  <button key={z} onClick={() => wijzigDraai({ scharnier: z })} aria-pressed={z === huidig.scharnier}
+                    style={{ ...(z === huidig.scharnier ? knopAan : knop), flex: 1 }}>{z}</button>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Afwerking — bepaalt of je een kleur of een houtsoort kiest */}
@@ -916,32 +1032,6 @@ export default function Configurator() {
           </div>
         </div>
 
-        {/* Draairichting */}
-        <div style={{ display: 'grid', gap: 14, gridTemplateColumns: '1fr 1fr' }}>
-          <div>
-            <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }}>
-              Draait naar
-            </h2>
-            <div style={{ display: 'flex', gap: 6 }}>
-              {(['binnen', 'buiten'] as const).map(r => (
-                <button key={r} onClick={() => wijzig({ richting: r })}
-                  style={{ ...(r === huidig.richting ? knopAan : knop), flex: 1 }}>{r}</button>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }}>
-              Scharnieren
-            </h2>
-            <div style={{ display: 'flex', gap: 6 }}>
-              {(['links', 'rechts'] as const).map(s => (
-                <button key={s} onClick={() => wijzig({ scharnier: s })}
-                  style={{ ...(s === huidig.scharnier ? knopAan : knop), flex: 1 }}>{s}</button>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Specificatie + offerte */}
         <div style={{ background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 14,
                       padding: 20 }}>
@@ -999,5 +1089,38 @@ export default function Configurator() {
         </div>
       </div>
     </div>
+  )
+}
+
+/**
+ * Bovenaanzicht van de deur in de wand, voor in het beeld. De kijker staat onderaan
+ * (zoals in 3D: naar buiten = naar de kijker toe), scharnieren links of rechts gezien
+ * vanaf die kant. Het blad staat open, met de zwaai gestippeld.
+ */
+function Draaischema({ richting, scharnier }: { richting: 'binnen' | 'buiten'; scharnier: 'links' | 'rechts' }) {
+  const L = scharnier === 'links', B = richting === 'buiten'
+  // Wand op y 56, opening van x 42 tot 98; het blad (56 lang) draait om het scharnier.
+  const y = 56, hx = L ? 42 : 98, ex = L ? 98 : 42, eind = B ? y + 56 : y - 56
+  // Labels aan de kant zonder zwaai, zodat ze nooit door het blad lopen.
+  const lx = L ? 134 : 6, anker = L ? 'end' : 'start'
+  return (
+    <figure aria-label={`Bovenaanzicht: draait naar ${richting}, scharnieren ${scharnier}`}
+      style={{ position: 'absolute', right: 12, top: 12, margin: 0, padding: '8px 10px 7px',
+               background: 'rgba(255,255,255,0.94)', borderRadius: 12, border: `1px solid ${INKT}0.14)`,
+               boxShadow: '0 2px 10px rgba(26,18,8,0.12)', width: 128, boxSizing: 'border-box' }}>
+      <svg viewBox="0 0 140 112" width="108" height="86" aria-hidden="true" style={{ display: 'block', margin: '0 auto' }}>
+        <text x={lx} y="12" textAnchor={anker} fontSize="11" fill="rgba(61,46,30,0.6)">ruimte</text>
+        <text x={lx} y="106" textAnchor={anker} fontSize="11" fill="rgba(61,46,30,0.6)">jij</text>
+        <line x1="0" y1={y} x2="42" y2={y} stroke="#1A1208" strokeWidth="7" />
+        <line x1="98" y1={y} x2="140" y2={y} stroke="#1A1208" strokeWidth="7" />
+        <path d={`M ${ex} ${y} A 56 56 0 0 ${L === B ? 1 : 0} ${hx} ${eind}`}
+          fill="none" stroke={GROEN} strokeWidth="1.4" strokeDasharray="3 3" />
+        <line x1={hx} y1={y} x2={hx} y2={eind} stroke={GROEN} strokeWidth="4.5" strokeLinecap="round" />
+        <circle cx={hx} cy={y} r="3.6" fill={ROEST} />
+      </svg>
+      <figcaption style={{ fontSize: 11, lineHeight: 1.3, textAlign: 'center', color: '#1A1208', fontWeight: 700, marginTop: 2 }}>
+        Naar {richting} · scharnier {scharnier}
+      </figcaption>
+    </figure>
   )
 }
