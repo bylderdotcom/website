@@ -61,15 +61,30 @@ const KLEURREEKS = ['antraciet', 'betongrijs', 'zandbeige', 'kalkwit']
 
 type Film = { naar: (fase: number) => void; stop: () => void }
 
-function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boolean): Film | null {
-  let renderer: THREE.WebGLRenderer
-  try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false }) } catch { return null }
+function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boolean, opVerloren: () => void): Film | null {
+  // LICHT (11-10-2026): op telefoons liep de grafische kaart vast — het scherm werd even zwart
+  // en daarna stond er een kapot vlak (Daniel, op zijn telefoon). De film rendert per beeld de
+  // hele scène twee keer (de spiegeling in de vloer), met zachte schaduwen en randvloeiing op
+  // hoge resolutie. Op kleine schermen en zwakkere toestellen nu zonder spiegeling, met lage
+  // resolutie, harde schaduwen en zonder randvloeiing. Het verhaal blijft hetzelfde.
   const klein = window.innerWidth < 760
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, klein ? 1.75 : 2))
+  const zwak = (navigator.hardwareConcurrency ?? 8) <= 4 || ((navigator as { deviceMemory?: number }).deviceMemory ?? 8) <= 4
+  const licht = klein || zwak
+  let renderer: THREE.WebGLRenderer
+  try { renderer = new THREE.WebGLRenderer({ antialias: !licht, alpha: false, powerPreference: licht ? 'low-power' : 'default' }) } catch { return null }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, licht ? 1.25 : 2))
   renderer.toneMapping = THREE.ACESFilmicToneMapping
   renderer.shadowMap.enabled = true
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap
+  renderer.shadowMap.type = licht ? THREE.PCFShadowMap : THREE.PCFSoftShadowMap
+  // Geeft de grafische kaart het toch op, dan stopt de film en staat de stilstaande tekening
+  // er (opVerloren). Zonder dit bleef er een zwart of kapot vlak staan.
+  renderer.domElement.addEventListener('webglcontextlost', e => { e.preventDefault(); renderer.setAnimationLoop(null); opVerloren() }, { once: true })
   renderer.domElement.setAttribute('aria-hidden', 'true')
+  // Een 3D-vlak is zwart tot het eerste beeld klaar is; op een telefoon duurt dat even.
+  // Daarom onzichtbaar tot dat eerste beeld, dan zacht erin.
+  renderer.domElement.style.opacity = '0'
+  renderer.domElement.style.transition = 'opacity .35s ease'
+  let eerste = true
   doek.appendChild(renderer.domElement)
 
   const scene = new THREE.Scene()
@@ -82,7 +97,7 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
 
   const hemi = new THREE.HemisphereLight('#fffaf2', '#b9ad9c', 1.2); scene.add(hemi)
   const zon = new THREE.DirectionalLight('#ffe7c4', 0.6)
-  zon.castShadow = true; zon.shadow.mapSize.set(klein ? 1024 : 2048, klein ? 1024 : 2048); zon.shadow.bias = -0.0004; zon.shadow.normalBias = 0.02; zon.shadow.radius = 4
+  zon.castShadow = true; zon.shadow.mapSize.set(licht ? 512 : 2048, licht ? 512 : 2048); zon.shadow.bias = -0.0004; zon.shadow.normalBias = 0.02; zon.shadow.radius = 4
   scene.add(zon, zon.target)
 
   const raster = rasterTextuur(), wolk = wolkTextuur()
@@ -101,10 +116,12 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
   /* vloer */
   const uOud = { r: { value: 0 }, o: { value: o.clone() } }, uNieuw = { r: { value: 0 }, o: { value: o.clone() } }
   const uDek = { r: { value: 1e3 }, o: { value: o.clone() } }
-  const vloerMat = (kleur: THREE.ColorRepresentation) => new THREE.MeshPhysicalMaterial({
-    color: kleur, map: wolk, roughness: 0.32, clearcoat: 1, clearcoatRoughness: 0.06, envMapIntensity: 1.25,
-    polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2,
-  })
+  const vloerMat = (kleur: THREE.ColorRepresentation) => licht
+    ? new THREE.MeshStandardMaterial({ color: kleur, map: wolk, roughness: 0.28, envMapIntensity: 1.35, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 })
+    : new THREE.MeshPhysicalMaterial({
+      color: kleur, map: wolk, roughness: 0.32, clearcoat: 1, clearcoatRoughness: 0.06, envMapIntensity: 1.25,
+      polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2,
+    })
   const dek = new THREE.Mesh(vloerVlak([BINNEN]), vloerMateriaal(new THREE.MeshStandardMaterial({ color: DEKVLOER, roughness: 0.97 }), uDek))
   dek.position.y = 0.001; dek.receiveShadow = true; groep.add(dek)
   const oudMat = vloerMat(DEKVLOER), nieuwMat = vloerMat(DEKVLOER)
@@ -113,18 +130,21 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
   const nieuw = new THREE.Mesh(vloerVlak([BINNEN]), vloerMateriaal(nieuwMat, uNieuw))
   oud.position.y = 0.003; nieuw.position.y = 0.005; oud.receiveShadow = nieuw.receiveShadow = true; groep.add(oud, nieuw)
   const zwart = new THREE.Color('#000')
-  const spiegel = new Reflector(vloerVlak([BINNEN], true), { shader: SPIEGEL, clipBias: 0.003, textureWidth: Math.round(doek.clientWidth * 0.4) || 256, textureHeight: Math.round(doek.clientHeight * 0.4) || 256 })
-  const sm = spiegel.material as THREE.ShaderMaterial
-  sm.transparent = true; sm.depthWrite = false; sm.blending = THREE.AdditiveBlending
-  sm.polygonOffset = true; sm.polygonOffsetFactor = -8; sm.polygonOffsetUnits = -8
-  sm.uniforms.uO.value.copy(o)
-  const voorSpiegel = spiegel.onBeforeRender.bind(spiegel)
-  spiegel.onBeforeRender = (...a: Parameters<typeof spiegel.onBeforeRender>) => {
-    const bg = scene.background, fog = scene.fog; scene.background = zwart; scene.fog = null; grond.visible = false; rasterVlak.visible = false
-    voorSpiegel(...a)
-    scene.background = bg; scene.fog = fog; grond.visible = true; rasterVlak.visible = true
+  // De spiegeling rendert de scène per beeld een tweede keer; alleen op sterke toestellen.
+  const spiegel = licht ? null : new Reflector(vloerVlak([BINNEN], true), { shader: SPIEGEL, clipBias: 0.003, textureWidth: Math.round(doek.clientWidth * 0.4) || 256, textureHeight: Math.round(doek.clientHeight * 0.4) || 256 })
+  const sm = spiegel?.material as THREE.ShaderMaterial | undefined
+  if (spiegel && sm) {
+    sm.transparent = true; sm.depthWrite = false; sm.blending = THREE.AdditiveBlending
+    sm.polygonOffset = true; sm.polygonOffsetFactor = -8; sm.polygonOffsetUnits = -8
+    sm.uniforms.uO.value.copy(o)
+    const voorSpiegel = spiegel.onBeforeRender.bind(spiegel)
+    spiegel.onBeforeRender = (...a: Parameters<typeof spiegel.onBeforeRender>) => {
+      const bg = scene.background, fog = scene.fog; scene.background = zwart; scene.fog = null; grond.visible = false; rasterVlak.visible = false
+      voorSpiegel(...a)
+      scene.background = bg; scene.fog = fog; grond.visible = true; rasterVlak.visible = true
+    }
+    spiegel.rotation.x = -Math.PI / 2; spiegel.position.y = 0.01; groep.add(spiegel)
   }
-  spiegel.rotation.x = -Math.PI / 2; spiegel.position.y = 0.01; groep.add(spiegel)
   const straal = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.09, 1.6, 20), vloerMat(DEKVLOER))
   straal.position.set(o.x, 0.8, o.y); straal.scale.y = 0; groep.add(straal)
 
@@ -269,8 +289,8 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
     const gietT = t - gietStart
     const g = gietT < 0 ? 0 : uit(Math.min(1, gietT / (T.giet[1] - T.giet[0])))
     uNieuw.r.value = g * rMax
-    const u = sm.uniforms; u.uR.value = Math.max(uNieuw.r.value, uOud.r.value > 100 ? 1e3 : 0); u.uSterkte.value = 0.04 + 0.06 * zacht(tussen(t, T.foto))
-    oudMat.color.copy(doelOud); nieuwMat.color.copy(doelNieuw); (straal.material as THREE.MeshPhysicalMaterial).color.copy(doelNieuw)
+    if (sm) { const u = sm.uniforms; u.uR.value = Math.max(uNieuw.r.value, uOud.r.value > 100 ? 1e3 : 0); u.uSterkte.value = 0.04 + 0.06 * zacht(tussen(t, T.foto)) }
+    oudMat.color.copy(doelOud); nieuwMat.color.copy(doelNieuw); (straal.material as THREE.MeshStandardMaterial).color.copy(doelNieuw)
     const s = gietT < -0.25 ? 0 : gietT < 0.15 ? (gietT + 0.25) / 0.4 : gietT < 1.5 ? 1 : Math.max(0, 1 - (gietT - 1.5) / 0.35)
     straal.scale.y = Math.max(0.001, s); straal.position.y = 1.6 - 0.8 * s; straal.visible = s > 0.01
     if (gietT > T.giet[1] - T.giet[0] + 0.05 && !doelOud.equals(doelNieuw)) { doelOud.copy(doelNieuw); uOud.r.value = 1e3 }
@@ -292,6 +312,7 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
     if (nf !== fase) { fase = nf; opFase(nf) }
     if (!rustig && t > T.foto[1] && gietT > T.wissel) { kleurIdx = (kleurIdx + 1) % KLEURREEKS.length; nieuweGiet(KLEUREN.find(k => k.id === KLEURREEKS[kleurIdx])!.hex, t) }
     renderer.render(scene, cam)
+    if (eerste) { eerste = false; requestAnimationFrame(() => { renderer.domElement.style.opacity = '1' }) }
   }
 
   const maat = () => {
@@ -311,7 +332,7 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
       if (n <= 2) { doelOud = new THREE.Color(DEKVLOER); uOud.r.value = 0; gietStart = T.giet[0]; kleurIdx = 0; doelNieuw = new THREE.Color(KLEUREN.find(k => k.id === KLEURREEKS[0])!.hex) }
       fase = -1
     },
-    stop: () => { renderer.setAnimationLoop(null); ro.disconnect(); io.disconnect(); spiegel.dispose(); renderer.dispose(); pmrem.dispose(); doek.removeChild(renderer.domElement) },
+    stop: () => { renderer.setAnimationLoop(null); ro.disconnect(); io.disconnect(); spiegel?.dispose(); renderer.dispose(); pmrem.dispose(); if (renderer.domElement.parentNode === doek) doek.removeChild(renderer.domElement) },
   }
 }
 
@@ -330,7 +351,7 @@ export default function WoningFilm({ opFase, naar, opGeenWebgl }: {
   useEffect(() => {
     if (!doek.current) return
     const rustig = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const f = maakFilm(doek.current, x => terug.current(x), rustig)
+    const f = maakFilm(doek.current, x => terug.current(x), rustig, opGeenWebgl)
     if (!f) { opGeenWebgl(); return }
     film.current = f
     return () => { f.stop(); film.current = null }
