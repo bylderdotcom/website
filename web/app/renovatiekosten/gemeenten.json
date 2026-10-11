@@ -1,0 +1,1407 @@
+[
+{
+"slug": "s-hertogenbosch",
+"naam": "'s-Hertogenbosch",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "aa-en-hunze",
+"naam": "Aa en Hunze",
+"provincie": "Drenthe"
+},
+{
+"slug": "aalten",
+"naam": "Aalten",
+"provincie": "Gelderland"
+},
+{
+"slug": "alblasserdam",
+"naam": "Alblasserdam",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "alkmaar",
+"naam": "Alkmaar",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "almelo",
+"naam": "Almelo",
+"provincie": "Overijssel"
+},
+{
+"slug": "almere",
+"naam": "Almere",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "alphen-aan-den-rijn",
+"naam": "Alphen aan den Rijn",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "altena",
+"naam": "Altena",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "amersfoort",
+"naam": "Amersfoort",
+"provincie": "Utrecht"
+},
+{
+"slug": "amstelveen",
+"naam": "Amstelveen",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "amsterdam",
+"naam": "Amsterdam",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "apeldoorn",
+"naam": "Apeldoorn",
+"provincie": "Gelderland"
+},
+{
+"slug": "arnhem",
+"naam": "Arnhem",
+"provincie": "Gelderland"
+},
+{
+"slug": "assen",
+"naam": "Assen",
+"provincie": "Drenthe"
+},
+{
+"slug": "asten",
+"naam": "Asten",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "baarn",
+"naam": "Baarn",
+"provincie": "Utrecht"
+},
+{
+"slug": "barendrecht",
+"naam": "Barendrecht",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "barneveld",
+"naam": "Barneveld",
+"provincie": "Gelderland"
+},
+{
+"slug": "beekdaelen",
+"naam": "Beekdaelen",
+"provincie": "Limburg"
+},
+{
+"slug": "beesel",
+"naam": "Beesel",
+"provincie": "Limburg"
+},
+{
+"slug": "bergen",
+"naam": "Bergen",
+"provincie": "Limburg"
+},
+{
+"slug": "bergen-op-zoom",
+"naam": "Bergen op Zoom",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "bernheze",
+"naam": "Bernheze",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "best",
+"naam": "Best",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "beverwijk",
+"naam": "Beverwijk",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "bladel",
+"naam": "Bladel",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "blaricum",
+"naam": "Blaricum",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "bloemendaal",
+"naam": "Bloemendaal",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "bodegraven-reeuwijk",
+"naam": "Bodegraven-Reeuwijk",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "boekel",
+"naam": "Boekel",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "borger-odoorn",
+"naam": "Borger-Odoorn",
+"provincie": "Drenthe"
+},
+{
+"slug": "borne",
+"naam": "Borne",
+"provincie": "Overijssel"
+},
+{
+"slug": "borsele",
+"naam": "Borsele",
+"provincie": "Zeeland"
+},
+{
+"slug": "boxtel",
+"naam": "Boxtel",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "breda",
+"naam": "Breda",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "brielle",
+"naam": "Brielle",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "bronckhorst",
+"naam": "Bronckhorst",
+"provincie": "Gelderland"
+},
+{
+"slug": "brummen",
+"naam": "Brummen",
+"provincie": "Gelderland"
+},
+{
+"slug": "brunssum",
+"naam": "Brunssum",
+"provincie": "Limburg"
+},
+{
+"slug": "bunschoten",
+"naam": "Bunschoten",
+"provincie": "Utrecht"
+},
+{
+"slug": "buren",
+"naam": "Buren",
+"provincie": "Gelderland"
+},
+{
+"slug": "capelle-aan-den-ijssel",
+"naam": "Capelle aan den IJssel",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "castricum",
+"naam": "Castricum",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "coevorden",
+"naam": "Coevorden",
+"provincie": "Drenthe"
+},
+{
+"slug": "cranendonck",
+"naam": "Cranendonck",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "cuijk",
+"naam": "Cuijk",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "de-bilt",
+"naam": "De Bilt",
+"provincie": "Utrecht"
+},
+{
+"slug": "de-fryske-marren",
+"naam": "De Fryske Marren",
+"provincie": "Friesland"
+},
+{
+"slug": "de-wolden",
+"naam": "De Wolden",
+"provincie": "Drenthe"
+},
+{
+"slug": "delft",
+"naam": "Delft",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "delfzijl",
+"naam": "Delfzijl",
+"provincie": "Groningen"
+},
+{
+"slug": "den-haag",
+"naam": "Den Haag",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "den-helder",
+"naam": "Den Helder",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "deurne",
+"naam": "Deurne",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "deventer",
+"naam": "Deventer",
+"provincie": "Overijssel"
+},
+{
+"slug": "diemen",
+"naam": "Diemen",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "dinkelland",
+"naam": "Dinkelland",
+"provincie": "Overijssel"
+},
+{
+"slug": "doetinchem",
+"naam": "Doetinchem",
+"provincie": "Gelderland"
+},
+{
+"slug": "dongen",
+"naam": "Dongen",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "dordrecht",
+"naam": "Dordrecht",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "drimmelen",
+"naam": "Drimmelen",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "dronten",
+"naam": "Dronten",
+"provincie": "Flevoland"
+},
+{
+"slug": "echt-susteren",
+"naam": "Echt-Susteren",
+"provincie": "Limburg"
+},
+{
+"slug": "edam-volendam",
+"naam": "Edam-Volendam",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "ede",
+"naam": "Ede",
+"provincie": "Gelderland"
+},
+{
+"slug": "eemnes",
+"naam": "Eemnes",
+"provincie": "Utrecht"
+},
+{
+"slug": "eemsdelta",
+"naam": "Eemsdelta",
+"provincie": "Groningen"
+},
+{
+"slug": "eersel",
+"naam": "Eersel",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "eijsden-margraten",
+"naam": "Eijsden-Margraten",
+"provincie": "Limburg"
+},
+{
+"slug": "eindhoven",
+"naam": "Eindhoven",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "emmen",
+"naam": "Emmen",
+"provincie": "Drenthe"
+},
+{
+"slug": "enkhuizen",
+"naam": "Enkhuizen",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "enschede",
+"naam": "Enschede",
+"provincie": "Overijssel"
+},
+{
+"slug": "ermelo",
+"naam": "Ermelo",
+"provincie": "Gelderland"
+},
+{
+"slug": "etten-leur",
+"naam": "Etten-Leur",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "geertruidenberg",
+"naam": "Geertruidenberg",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "geldrop-mierlo",
+"naam": "Geldrop-Mierlo",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "gemert-bakel",
+"naam": "Gemert-Bakel",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "gennep",
+"naam": "Gennep",
+"provincie": "Limburg"
+},
+{
+"slug": "goeree-overflakkee",
+"naam": "Goeree-Overflakkee",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "goes",
+"naam": "Goes",
+"provincie": "Zeeland"
+},
+{
+"slug": "gooise-meren",
+"naam": "Gooise Meren",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "gorinchem",
+"naam": "Gorinchem",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "gouda",
+"naam": "Gouda",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "goudse-gaardenring",
+"naam": "Goudse Gaardenring",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "grave",
+"naam": "Grave",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "groningen",
+"naam": "Groningen",
+"provincie": "Groningen"
+},
+{
+"slug": "gulpen-wittem",
+"naam": "Gulpen-Wittem",
+"provincie": "Limburg"
+},
+{
+"slug": "haaksbergen",
+"naam": "Haaksbergen",
+"provincie": "Overijssel"
+},
+{
+"slug": "haarlem",
+"naam": "Haarlem",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "haarlemmermeer",
+"naam": "Haarlemmermeer",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "halderberge",
+"naam": "Halderberge",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "hardenberg",
+"naam": "Hardenberg",
+"provincie": "Overijssel"
+},
+{
+"slug": "harderwijk",
+"naam": "Harderwijk",
+"provincie": "Gelderland"
+},
+{
+"slug": "hardinxveld-giessendam",
+"naam": "Hardinxveld-Giessendam",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "heemstede",
+"naam": "Heemstede",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "heerenveen",
+"naam": "Heerenveen",
+"provincie": "Friesland"
+},
+{
+"slug": "heerhugowaard",
+"naam": "Heerhugowaard",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "heerlen",
+"naam": "Heerlen",
+"provincie": "Limburg"
+},
+{
+"slug": "heeze-leende",
+"naam": "Heeze-Leende",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "hellendoorn",
+"naam": "Hellendoorn",
+"provincie": "Overijssel"
+},
+{
+"slug": "hellevoetsluis",
+"naam": "Hellevoetsluis",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "helmond",
+"naam": "Helmond",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "hendrik-ido-ambacht",
+"naam": "Hendrik-Ido-Ambacht",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "hengelo",
+"naam": "Hengelo",
+"provincie": "Overijssel"
+},
+{
+"slug": "het-hogeland",
+"naam": "Het Hogeland",
+"provincie": "Groningen"
+},
+{
+"slug": "hilversum",
+"naam": "Hilversum",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "hoeksche-waard",
+"naam": "Hoeksche Waard",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "hoogeveen",
+"naam": "Hoogeveen",
+"provincie": "Drenthe"
+},
+{
+"slug": "hoorn",
+"naam": "Hoorn",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "horst-aan-de-maas",
+"naam": "Horst aan de Maas",
+"provincie": "Limburg"
+},
+{
+"slug": "houten",
+"naam": "Houten",
+"provincie": "Utrecht"
+},
+{
+"slug": "huizen",
+"naam": "Huizen",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "hulst",
+"naam": "Hulst",
+"provincie": "Zeeland"
+},
+{
+"slug": "ijsselstein",
+"naam": "IJsselstein",
+"provincie": "Utrecht"
+},
+{
+"slug": "kaag-en-braassem",
+"naam": "Kaag en Braassem",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "kampen",
+"naam": "Kampen",
+"provincie": "Overijssel"
+},
+{
+"slug": "kapelle",
+"naam": "Kapelle",
+"provincie": "Zeeland"
+},
+{
+"slug": "katwijk",
+"naam": "Katwijk",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "kerkrade",
+"naam": "Kerkrade",
+"provincie": "Limburg"
+},
+{
+"slug": "krimpen-aan-den-ijssel",
+"naam": "Krimpen aan den IJssel",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "krimpenerwaard",
+"naam": "Krimpenerwaard",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "laarbeek",
+"naam": "Laarbeek",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "landerd",
+"naam": "Landerd",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "landgraaf",
+"naam": "Landgraaf",
+"provincie": "Limburg"
+},
+{
+"slug": "landsmeer",
+"naam": "Landsmeer",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "lansingerland",
+"naam": "Lansingerland",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "laren",
+"naam": "Laren",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "leeuwarden",
+"naam": "Leeuwarden",
+"provincie": "Friesland"
+},
+{
+"slug": "leiden",
+"naam": "Leiden",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "leiderdorp",
+"naam": "Leiderdorp",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "leidschendam-voorburg",
+"naam": "Leidschendam-Voorburg",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "lelystad",
+"naam": "Lelystad",
+"provincie": "Flevoland"
+},
+{
+"slug": "leudal",
+"naam": "Leudal",
+"provincie": "Limburg"
+},
+{
+"slug": "lochem",
+"naam": "Lochem",
+"provincie": "Gelderland"
+},
+{
+"slug": "loon-op-zand",
+"naam": "Loon op Zand",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "lopik",
+"naam": "Lopik",
+"provincie": "Utrecht"
+},
+{
+"slug": "loppersum",
+"naam": "Loppersum",
+"provincie": "Groningen"
+},
+{
+"slug": "losser",
+"naam": "Losser",
+"provincie": "Overijssel"
+},
+{
+"slug": "maarheeze",
+"naam": "Maarheeze",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "maasdriel",
+"naam": "Maasdriel",
+"provincie": "Gelderland"
+},
+{
+"slug": "maasgouw",
+"naam": "Maasgouw",
+"provincie": "Limburg"
+},
+{
+"slug": "maassluis",
+"naam": "Maassluis",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "maastricht",
+"naam": "Maastricht",
+"provincie": "Limburg"
+},
+{
+"slug": "medemblik",
+"naam": "Medemblik",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "meerssen",
+"naam": "Meerssen",
+"provincie": "Limburg"
+},
+{
+"slug": "meierijstad",
+"naam": "Meierijstad",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "meppel",
+"naam": "Meppel",
+"provincie": "Drenthe"
+},
+{
+"slug": "middelburg",
+"naam": "Middelburg",
+"provincie": "Zeeland"
+},
+{
+"slug": "midden-delfland",
+"naam": "Midden-Delfland",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "midden-drenthe",
+"naam": "Midden-Drenthe",
+"provincie": "Drenthe"
+},
+{
+"slug": "midden-groningen",
+"naam": "Midden-Groningen",
+"provincie": "Groningen"
+},
+{
+"slug": "mill-en-sint-hubert",
+"naam": "Mill en Sint Hubert",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "moerdijk",
+"naam": "Moerdijk",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "molenlanden",
+"naam": "Molenlanden",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "montferland",
+"naam": "Montferland",
+"provincie": "Gelderland"
+},
+{
+"slug": "montfoort",
+"naam": "Montfoort",
+"provincie": "Utrecht"
+},
+{
+"slug": "mook-en-middelaar",
+"naam": "Mook en Middelaar",
+"provincie": "Limburg"
+},
+{
+"slug": "neder-betuwe",
+"naam": "Neder-Betuwe",
+"provincie": "Gelderland"
+},
+{
+"slug": "niederrhein",
+"naam": "Niederrhein",
+"provincie": "Limburg"
+},
+{
+"slug": "nieuwegein",
+"naam": "Nieuwegein",
+"provincie": "Utrecht"
+},
+{
+"slug": "nieuwkoop",
+"naam": "Nieuwkoop",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "nijmegen",
+"naam": "Nijmegen",
+"provincie": "Gelderland"
+},
+{
+"slug": "nissewaard",
+"naam": "Nissewaard",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "noardeast-frysl-n",
+"naam": "Noardeast-Fryslân",
+"provincie": "Friesland"
+},
+{
+"slug": "noord-beveland",
+"naam": "Noord-Beveland",
+"provincie": "Zeeland"
+},
+{
+"slug": "noordenveld",
+"naam": "Noordenveld",
+"provincie": "Drenthe"
+},
+{
+"slug": "noordoostpolder",
+"naam": "Noordoostpolder",
+"provincie": "Flevoland"
+},
+{
+"slug": "noordwijk",
+"naam": "Noordwijk",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "nuenen",
+"naam": "Nuenen",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "nunspeet",
+"naam": "Nunspeet",
+"provincie": "Gelderland"
+},
+{
+"slug": "nuth",
+"naam": "Nuth",
+"provincie": "Limburg"
+},
+{
+"slug": "oirschot",
+"naam": "Oirschot",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "oldambt",
+"naam": "Oldambt",
+"provincie": "Groningen"
+},
+{
+"slug": "oldenzaal",
+"naam": "Oldenzaal",
+"provincie": "Overijssel"
+},
+{
+"slug": "olst-wijhe",
+"naam": "Olst-Wijhe",
+"provincie": "Overijssel"
+},
+{
+"slug": "onderbanken",
+"naam": "Onderbanken",
+"provincie": "Limburg"
+},
+{
+"slug": "oosterhout",
+"naam": "Oosterhout",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "ooststellingwerf",
+"naam": "Ooststellingwerf",
+"provincie": "Friesland"
+},
+{
+"slug": "oostzaan",
+"naam": "Oostzaan",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "opsterland",
+"naam": "Opsterland",
+"provincie": "Friesland"
+},
+{
+"slug": "oss",
+"naam": "Oss",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "oude-ijsselstreek",
+"naam": "Oude IJsselstreek",
+"provincie": "Gelderland"
+},
+{
+"slug": "papendrecht",
+"naam": "Papendrecht",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "peel-en-maas",
+"naam": "Peel en Maas",
+"provincie": "Limburg"
+},
+{
+"slug": "pijnacker-nootdorp",
+"naam": "Pijnacker-Nootdorp",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "purmerend",
+"naam": "Purmerend",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "putten",
+"naam": "Putten",
+"provincie": "Gelderland"
+},
+{
+"slug": "reimerswaal",
+"naam": "Reimerswaal",
+"provincie": "Zeeland"
+},
+{
+"slug": "renkum",
+"naam": "Renkum",
+"provincie": "Gelderland"
+},
+{
+"slug": "reusel-de-mierden",
+"naam": "Reusel-De Mierden",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "rheden",
+"naam": "Rheden",
+"provincie": "Gelderland"
+},
+{
+"slug": "rhenen",
+"naam": "Rhenen",
+"provincie": "Utrecht"
+},
+{
+"slug": "ridderkerk",
+"naam": "Ridderkerk",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "rijssen-holten",
+"naam": "Rijssen-Holten",
+"provincie": "Overijssel"
+},
+{
+"slug": "rijswijk",
+"naam": "Rijswijk",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "roermond",
+"naam": "Roermond",
+"provincie": "Limburg"
+},
+{
+"slug": "roosendaal",
+"naam": "Roosendaal",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "rotterdam",
+"naam": "Rotterdam",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "schagen",
+"naam": "Schagen",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "schiedam",
+"naam": "Schiedam",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "schinnen",
+"naam": "Schinnen",
+"provincie": "Limburg"
+},
+{
+"slug": "schouwen-duiveland",
+"naam": "Schouwen-Duiveland",
+"provincie": "Zeeland"
+},
+{
+"slug": "simpelveld",
+"naam": "Simpelveld",
+"provincie": "Limburg"
+},
+{
+"slug": "sint-michielsgestel",
+"naam": "Sint-Michielsgestel",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "sint-oedenrode",
+"naam": "Sint-Oedenrode",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "sittard-geleen",
+"naam": "Sittard-Geleen",
+"provincie": "Limburg"
+},
+{
+"slug": "sliedrecht",
+"naam": "Sliedrecht",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "sluis",
+"naam": "Sluis",
+"provincie": "Zeeland"
+},
+{
+"slug": "smallingerland",
+"naam": "Smallingerland",
+"provincie": "Friesland"
+},
+{
+"slug": "soest",
+"naam": "Soest",
+"provincie": "Utrecht"
+},
+{
+"slug": "someren",
+"naam": "Someren",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "son-en-breugel",
+"naam": "Son en Breugel",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "spijkenisse",
+"naam": "Spijkenisse",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "stadskanaal",
+"naam": "Stadskanaal",
+"provincie": "Groningen"
+},
+{
+"slug": "stede-broec",
+"naam": "Stede Broec",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "steenbergen",
+"naam": "Steenbergen",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "steenwijkerland",
+"naam": "Steenwijkerland",
+"provincie": "Overijssel"
+},
+{
+"slug": "stichtse-vecht",
+"naam": "Stichtse Vecht",
+"provincie": "Utrecht"
+},
+{
+"slug": "s-dwest-frysl-n",
+"naam": "Súdwest-Fryslân",
+"provincie": "Friesland"
+},
+{
+"slug": "terneuzen",
+"naam": "Terneuzen",
+"provincie": "Zeeland"
+},
+{
+"slug": "texel",
+"naam": "Texel",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "teylingen",
+"naam": "Teylingen",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "tholen",
+"naam": "Tholen",
+"provincie": "Zeeland"
+},
+{
+"slug": "tiel",
+"naam": "Tiel",
+"provincie": "Gelderland"
+},
+{
+"slug": "tilburg",
+"naam": "Tilburg",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "tubbergen",
+"naam": "Tubbergen",
+"provincie": "Overijssel"
+},
+{
+"slug": "twenterand",
+"naam": "Twenterand",
+"provincie": "Overijssel"
+},
+{
+"slug": "tynaarlo",
+"naam": "Tynaarlo",
+"provincie": "Drenthe"
+},
+{
+"slug": "tytsjerksteradiel",
+"naam": "Tytsjerksteradiel",
+"provincie": "Friesland"
+},
+{
+"slug": "uitgeest",
+"naam": "Uitgeest",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "urk",
+"naam": "Urk",
+"provincie": "Flevoland"
+},
+{
+"slug": "utrecht",
+"naam": "Utrecht",
+"provincie": "Utrecht"
+},
+{
+"slug": "utrechtse-heuvelrug",
+"naam": "Utrechtse Heuvelrug",
+"provincie": "Utrecht"
+},
+{
+"slug": "vaals",
+"naam": "Vaals",
+"provincie": "Limburg"
+},
+{
+"slug": "valkenburg-aan-de-geul",
+"naam": "Valkenburg aan de Geul",
+"provincie": "Limburg"
+},
+{
+"slug": "valkenswaard",
+"naam": "Valkenswaard",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "veendam",
+"naam": "Veendam",
+"provincie": "Groningen"
+},
+{
+"slug": "veenendaal",
+"naam": "Veenendaal",
+"provincie": "Utrecht"
+},
+{
+"slug": "veere",
+"naam": "Veere",
+"provincie": "Zeeland"
+},
+{
+"slug": "veldhoven",
+"naam": "Veldhoven",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "velsen",
+"naam": "Velsen",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "venlo",
+"naam": "Venlo",
+"provincie": "Limburg"
+},
+{
+"slug": "venray",
+"naam": "Venray",
+"provincie": "Limburg"
+},
+{
+"slug": "vijfheerenlanden",
+"naam": "Vijfheerenlanden",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "vlaardingen",
+"naam": "Vlaardingen",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "vlissingen",
+"naam": "Vlissingen",
+"provincie": "Zeeland"
+},
+{
+"slug": "voerendaal",
+"naam": "Voerendaal",
+"provincie": "Limburg"
+},
+{
+"slug": "voorne-aan-zee",
+"naam": "Voorne aan Zee",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "waadhoeke",
+"naam": "Waadhoeke",
+"provincie": "Friesland"
+},
+{
+"slug": "waalre",
+"naam": "Waalre",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "waalwijk",
+"naam": "Waalwijk",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "waddinxveen",
+"naam": "Waddinxveen",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "wageningen",
+"naam": "Wageningen",
+"provincie": "Gelderland"
+},
+{
+"slug": "wassenaar",
+"naam": "Wassenaar",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "waterland",
+"naam": "Waterland",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "weert",
+"naam": "Weert",
+"provincie": "Limburg"
+},
+{
+"slug": "west-betuwe",
+"naam": "West Betuwe",
+"provincie": "Gelderland"
+},
+{
+"slug": "westerkwartier",
+"naam": "Westerkwartier",
+"provincie": "Groningen"
+},
+{
+"slug": "westerveld",
+"naam": "Westerveld",
+"provincie": "Drenthe"
+},
+{
+"slug": "westervoort",
+"naam": "Westervoort",
+"provincie": "Gelderland"
+},
+{
+"slug": "westland",
+"naam": "Westland",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "weststellingwerf",
+"naam": "Weststellingwerf",
+"provincie": "Friesland"
+},
+{
+"slug": "wierden",
+"naam": "Wierden",
+"provincie": "Overijssel"
+},
+{
+"slug": "wijchen",
+"naam": "Wijchen",
+"provincie": "Gelderland"
+},
+{
+"slug": "wijk-bij-duurstede",
+"naam": "Wijk bij Duurstede",
+"provincie": "Utrecht"
+},
+{
+"slug": "winsum",
+"naam": "Winsum",
+"provincie": "Groningen"
+},
+{
+"slug": "winterswijk",
+"naam": "Winterswijk",
+"provincie": "Gelderland"
+},
+{
+"slug": "woerden",
+"naam": "Woerden",
+"provincie": "Utrecht"
+},
+{
+"slug": "woudrichem",
+"naam": "Woudrichem",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "zaandam",
+"naam": "Zaandam",
+"provincie": "Noord-Holland"
+},
+{
+"slug": "zeewolde",
+"naam": "Zeewolde",
+"provincie": "Flevoland"
+},
+{
+"slug": "zeist",
+"naam": "Zeist",
+"provincie": "Utrecht"
+},
+{
+"slug": "zevenaar",
+"naam": "Zevenaar",
+"provincie": "Gelderland"
+},
+{
+"slug": "zoetermeer",
+"naam": "Zoetermeer",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "zuidplas",
+"naam": "Zuidplas",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "zundert",
+"naam": "Zundert",
+"provincie": "Noord-Brabant"
+},
+{
+"slug": "zutphen",
+"naam": "Zutphen",
+"provincie": "Gelderland"
+},
+{
+"slug": "zwijndrecht",
+"naam": "Zwijndrecht",
+"provincie": "Zuid-Holland"
+},
+{
+"slug": "zwolle",
+"naam": "Zwolle",
+"provincie": "Overijssel"
+}
+]
