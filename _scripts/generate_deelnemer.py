@@ -342,6 +342,11 @@ def render_hub():
 <div class="divider"></div>
 <h2 style="font-size:1.6rem;font-weight:800;margin:48px 0 24px;">Kies je segment</h2>
 <div class="seg-grid">{cards}</div>
+<div class="card" style="margin:40px 0 0;padding:32px;border:1.5px solid #3D5A3E;">
+<h2 style="font-size:1.3rem;font-weight:800;margin-bottom:10px;">Aanbevelers: vakmannen en bedrijven die onze producten aanraden</h2>
+<p style="font-size:15px;color:rgba(61,46,30,0.72);line-height:1.75;margin-bottom:12px;">Je komt bij kopers thuis, vaak al op de kijkdag. Raad je kozijnloze deuren, een gietvloer of een kast op maat aan, dan laat je je QR-code scannen. De koper krijgt 10% korting op de orderwaarde, en alles wat hij aanvraagt staat op jouw naam, ook als hij pas na de oplevering bestelt.</p>
+<p style="font-size:15px;color:rgba(61,46,30,0.72);line-height:1.75;margin-bottom:16px;">Jij krijgt een vergoeding per opdracht, die we per samenwerking met je afspreken. Je koopt niets in en maakt geen offerte: de maker doet de rest.</p>
+<a href="/voor-vakbedrijven/#aanbevelen-maatwerk" class="il-link">→ Zo werkt aanbevelen</a></div>
 <div class="card" style="margin:40px 0;padding:32px;">
 <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:10px;">Verwijzers: makelaars &amp; hypotheekadviseurs</h2>
 <p style="font-size:15px;color:rgba(61,46,30,0.72);line-height:1.75;margin-bottom:16px;">Jij spreekt kopers op hét moment. Verwijs ze naar Bylder en ontvang €25 per geactiveerde koper — je klant bespaart gemiddeld €4.200, jij verdient aan advies dat je toch al gaf.</p>
