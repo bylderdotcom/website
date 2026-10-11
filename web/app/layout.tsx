@@ -4,6 +4,7 @@ import Aankondiging from './components/Aankondiging'
 import Nav from './components/Nav'
 import { aantalMerken } from '@/lib/merken'
 import Footer from './components/Footer'
+import AanbrengRef from './components/AanbrengRef'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bylder.com'),
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           + '@media(max-width:359px){main[style*="px 24px"]{padding-left:10px!important;padding-right:10px!important}}' }} />
       </head>
       <body style={{ margin: 0, background: '#F5F0E8', fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" }}>
+        <AanbrengRef />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,

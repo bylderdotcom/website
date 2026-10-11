@@ -20,6 +20,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair, Ticket } from '@phosphor-icons/react'
+import { metRef } from '../aanbreng'
 import {
   KLEUREN, TYPES, MAX_STALEN, VOORLOPIG, NIET_GIET, kleurOp, typeOp, m2Van, isLicht, besteKleuren,
   type Analyse, type Keuze, type GekozenRuimte, type Match, type TypeId,
@@ -742,7 +743,7 @@ function ImpressieTeaser({ koppel, maak }: { koppel: string | null; maak: () => 
         try {
           const d = await maak() as Weergave
           const link = d?.sleutel ? `${APP}/dashboard/gietvloer/koppel?id=${encodeURIComponent(d.id)}&s=${encodeURIComponent(d.sleutel)}` : koppel
-          if (link) window.location.href = link
+          if (link) window.location.href = metRef(link)
         } finally { setBezig(false) }
       }}><Sparkle size={18} aria-hidden="true" />Maak mijn impressie<ArrowRight size={16} aria-hidden="true" /></button>
     </div>
@@ -771,7 +772,7 @@ function Account({ koppel, maak }: { koppel: string | null; maak: () => Promise<
           // Eerst de laatste keuze bewaren (en zo nodig het ontwerp aanmaken), dan naar de app.
           const d = await maak() as Weergave
           const link = d?.sleutel ? `${APP}/dashboard/gietvloer/koppel?id=${encodeURIComponent(d.id)}&s=${encodeURIComponent(d.sleutel)}` : koppel
-          if (link) window.location.href = link
+          if (link) window.location.href = metRef(link)
         } finally { setBezig(false) }
       }}>Maak een account en vraag de offerte aan<ArrowRight size={16} aria-hidden="true" /></button>
       <p className="gv-klein">Gratis, geen abonnement. Een account maken duurt een halve minuut.</p>
