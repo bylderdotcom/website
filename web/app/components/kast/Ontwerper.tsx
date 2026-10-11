@@ -12,6 +12,7 @@ import { bouw as bouwKast } from '@/lib/kast/rekenmodel'
 import { VOORBEELD_HOEKKAST, type Ontwerp } from '@/lib/kast/ontwerp'
 import { Plattegrond, Uitslag } from './Tekeningen'
 import Werkplaats from './Werkplaats'
+import { metRef } from '../aanbreng'
 
 // Het ontwerpscherm: links het gesprek met de AI, rechts de kast (3D, aanzicht,
 // plattegrond, werkplaats). Alles rechts komt uit het rekenmodel.
@@ -330,7 +331,7 @@ function Meenemen({ id, s, bewaard, onBewaard, plattegrond }: { id: string; s: s
   const [email, setEmail] = useState('')
   const [bezig, setBezig] = useState(false)
   const [fout, setFout] = useState('')
-  const link = `${APP}/dashboard/kast/koppel?id=${encodeURIComponent(id)}&s=${encodeURIComponent(s)}`
+  const link = metRef(`${APP}/dashboard/kast/koppel?id=${encodeURIComponent(id)}&s=${encodeURIComponent(s)}`)
   return (
     <div className="ko-offerte">
       <div className="ko-offerte-rij">

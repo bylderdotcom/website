@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { herkomst } from './herkomst'
+import { leesRef } from './aanbreng'
 
 // Offerteformulier onder een configurator. Stuurt de aanvraag naar het loket in
 // de app (offerte_aanvragen), waar Daniel hem ziet en aan een partner geeft.
@@ -79,7 +80,7 @@ export default function OfferteFormulier(p: {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          product: p.product, bron: campagne || p.bron,
+          product: p.product, bron: campagne || p.bron, ref: leesRef() ?? undefined,
           specificatie: p.specificatie, configuratie: p.configuratie, hoeveelheden: p.hoeveelheden,
           terugkijk_url: p.terugkijkUrl(),
           naam: waarde('naam'), email: waarde('email'), telefoon: waarde('telefoon'),

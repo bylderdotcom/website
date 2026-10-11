@@ -114,7 +114,7 @@ const schema = {
 
 export default function OnzichtbarePlintenPage() {
   return (
-    <main style={{ maxWidth: 1100, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <nav aria-label="Kruimelpad" style={LABEL}>
         <a href="/" style={{ color: 'inherit' }}>Bylder</a> / <a href="/assortiment/" style={{ color: 'inherit' }}>Assortiment</a> / Onzichtbare plinten
@@ -261,6 +261,6 @@ export default function OnzichtbarePlintenPage() {
           </details>
         ))}
       </div>
-    </main>
+    </div>
   )
 }
