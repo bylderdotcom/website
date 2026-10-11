@@ -41,6 +41,25 @@ Status: **nog niet gebouwd.**
 7. **Partners:** wie plaatst het? Dat zijn stukadoors en afbouwbedrijven, met een systeemleverancier erachter. In de
    admin bestaat het product al; de partners moeten er nog aan worden gekoppeld.
 
+## Cross-sell tussen deuren en plinten (Daniel, 11-10-2026)
+
+Kozijnloze deuren en onzichtbare plinten verwijzen **altijd naar elkaar**, in beide richtingen. Het is dezelfde
+belofte (strakke wand zonder lijsten), dezelfde planning (vóór de stukadoor) en vaak dezelfde koper.
+
+- **Productpagina's:** op `/kozijnloze-deuren/` een blok "Ook geen plinten?" naar de plintenpagina, en op
+  `/onzichtbare-plinten/` een blok "Ook geen kozijnen?" naar de deuren. Beide met één zin over waarom ze samen gaan
+  en hetzelfde moment in de bouw.
+- **Deurconfigurator:** na de specificatie een regel "Je wand wordt strak zonder kozijn. Maak hem ook strak zonder
+  plint: x meter in jouw woning" (meters uit Mijn woning als die er is). Bij de offerteaanvraag een vinkje "ook
+  onzichtbare plinten aanvragen".
+- **Plintenpagina en aanvraag:** omgekeerd, met een link naar de configurator en het aantal deuren uit de tekening.
+- **Mijn woning:** bij het deurenblok een verwijzing naar het plintenblok en andersom. In de aanvraag in de app
+  staan beide onderdelen al naast elkaar.
+- **Kennisbank en clusters:** het artikel over plintloos afwerken en de pagina's over kozijnloze deuren linken naar
+  elkaar.
+- **Meten:** in de trechter tellen hoe vaak een deuraanvraag ook plinten meekrijgt en andersom, zodat we zien of de
+  cross-sell werkt.
+
 ## Eerst checken, vóór het bouwen
 
 - **De termen die mensen zoeken:** "onzichtbare plint", "schaduwvoeg plint", "plintloos", "verdiepte plint",
@@ -55,5 +74,5 @@ Status: **nog niet gebouwd.**
 
 1. Termen en zoekvolume checken, en de partners voor plaatsing vastleggen.
 2. De productpagina met FAQ en een kostensectie, gekoppeld aan de bestaande aanvraag in de app.
-3. Interne links en een plek in het menu.
+3. Interne links, de cross-sell met de kozijnloze deuren (in beide richtingen) en een plek in het menu.
 4. Meters uit de tekening in Mijn woning: de plint als element in de tweeling, met status en momentopname.
