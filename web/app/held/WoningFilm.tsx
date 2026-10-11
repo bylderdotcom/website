@@ -60,25 +60,28 @@ const KLEURREEKS = ['antraciet', 'betongrijs', 'zandbeige', 'kalkwit']
 /* ---------------------------------------------------------------- de scène */
 
 type Film = { naar: (fase: number) => void; stop: () => void }
+type Niveau = 'vol' | 'licht' | 'minimaal'
 
-function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boolean, opVerloren: () => void): Film | null {
+function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boolean, opVerloren: (t: number) => void, niveau: Niveau, startT = 0): Film | null {
   // LICHT (11-10-2026): op telefoons liep de grafische kaart vast — het scherm werd even zwart
   // en daarna stond er een kapot vlak (Daniel, op zijn telefoon). De film rendert per beeld de
   // hele scène twee keer (de spiegeling in de vloer), met zachte schaduwen en randvloeiing op
   // hoge resolutie. Op kleine schermen en zwakkere toestellen nu zonder spiegeling, met lage
   // resolutie, harde schaduwen en zonder randvloeiing. Het verhaal blijft hetzelfde.
-  const klein = window.innerWidth < 760
-  const zwak = (navigator.hardwareConcurrency ?? 8) <= 4 || ((navigator as { deviceMemory?: number }).deviceMemory ?? 8) <= 4
-  const licht = klein || zwak
+  //
+  // Ook die lichte versie liep op Daniels telefoon nog vast (11-10-2026, avond). Daarom op
+  // telefoons ook geen schaduwberekening en geen belichtingsomgeving (PMREM): allebei bekende
+  // oorzaken van vastlopers op Android-grafische kaarten. Gewoon licht vangt het op.
+  const licht = niveau !== 'vol'
   let renderer: THREE.WebGLRenderer
   try { renderer = new THREE.WebGLRenderer({ antialias: !licht, alpha: false, powerPreference: licht ? 'low-power' : 'default' }) } catch { return null }
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, licht ? 1.25 : 2))
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, niveau === 'minimaal' ? 1 : licht ? 1.25 : 2))
   renderer.toneMapping = THREE.ACESFilmicToneMapping
-  renderer.shadowMap.enabled = true
-  renderer.shadowMap.type = licht ? THREE.PCFShadowMap : THREE.PCFSoftShadowMap
+  renderer.shadowMap.enabled = !licht
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap
   // Geeft de grafische kaart het toch op, dan stopt de film en staat de stilstaande tekening
   // er (opVerloren). Zonder dit bleef er een zwart of kapot vlak staan.
-  renderer.domElement.addEventListener('webglcontextlost', e => { e.preventDefault(); renderer.setAnimationLoop(null); opVerloren() }, { once: true })
+  renderer.domElement.addEventListener('webglcontextlost', e => { e.preventDefault(); renderer.setAnimationLoop(null); opVerloren((performance.now() - t0) / 1000) }, { once: true })
   renderer.domElement.setAttribute('aria-hidden', 'true')
   // Een 3D-vlak is zwart tot het eerste beeld klaar is; op een telefoon duurt dat even.
   // Daarom onzichtbaar tot dat eerste beeld, dan zacht erin.
@@ -91,13 +94,13 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
   const papier = new THREE.Color('#F7F3EC'), warm = new THREE.Color('#D3C8B7')
   scene.background = papier.clone()
   scene.fog = new THREE.Fog(papier, 30, 70)
-  const pmrem = new THREE.PMREMGenerator(renderer)
-  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
+  const pmrem = licht ? null : new THREE.PMREMGenerator(renderer)
+  if (pmrem) scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
   const cam = new THREE.PerspectiveCamera(36, 1, 0.1, 200)
 
   const hemi = new THREE.HemisphereLight('#fffaf2', '#b9ad9c', 1.2); scene.add(hemi)
   const zon = new THREE.DirectionalLight('#ffe7c4', 0.6)
-  zon.castShadow = true; zon.shadow.mapSize.set(licht ? 512 : 2048, licht ? 512 : 2048); zon.shadow.bias = -0.0004; zon.shadow.normalBias = 0.02; zon.shadow.radius = 4
+  zon.castShadow = !licht; zon.shadow.mapSize.set(2048, 2048); zon.shadow.bias = -0.0004; zon.shadow.normalBias = 0.02; zon.shadow.radius = 4
   scene.add(zon, zon.target)
 
   const raster = rasterTextuur(), wolk = wolkTextuur()
@@ -258,7 +261,7 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
   // ?filmt=6.5 zet de film stil op dat moment: om elke stap te kunnen nakijken.
   const q = Number(new URLSearchParams(window.location.search).get('filmt'))
   const stil = Number.isFinite(q) && q > 0 ? q : null
-  let t0 = performance.now(), gietStart = T.giet[0], kleurIdx = 0, fase = -1, actief = true
+  let t0 = performance.now() - startT * 1000, gietStart = T.giet[0], kleurIdx = 0, fase = -1, actief = true
   let doelOud = new THREE.Color(DEKVLOER), doelNieuw = new THREE.Color(KLEUREN.find(k => k.id === KLEURREEKS[0])!.hex)
 
   function camera(t: number) {
@@ -304,7 +307,7 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
     // eindbeeld
     const f = zacht(tussen(t, T.foto))
     renderer.toneMappingExposure = 0.95 - f * 0.17
-    zon.intensity = 0.5 + f * 1.25; hemi.intensity = 1.1 - f * 0.65
+    if (licht) { zon.intensity = 0.9 + f * 1.0; hemi.intensity = 1.75 - f * 0.45 } else { zon.intensity = 0.5 + f * 1.25; hemi.intensity = 1.1 - f * 0.65 }
     scene.environmentIntensity = 0.4 + f * 0.5
     ;(grond.material as THREE.MeshStandardMaterial).color.copy(papier).lerp(warm, f)
     meubels.forEach(m => { const k = uit(tussen(t, [T.foto[0] + m.d * 0.8, T.foto[0] + m.d * 0.8 + 0.9])); m.obj.visible = k > 0.001; m.obj.scale.setScalar(Math.max(0.001, k)) })
@@ -332,7 +335,7 @@ function maakFilm(doek: HTMLDivElement, opFase: (f: number) => void, rustig: boo
       if (n <= 2) { doelOud = new THREE.Color(DEKVLOER); uOud.r.value = 0; gietStart = T.giet[0]; kleurIdx = 0; doelNieuw = new THREE.Color(KLEUREN.find(k => k.id === KLEURREEKS[0])!.hex) }
       fase = -1
     },
-    stop: () => { renderer.setAnimationLoop(null); ro.disconnect(); io.disconnect(); spiegel?.dispose(); renderer.dispose(); pmrem.dispose(); if (renderer.domElement.parentNode === doek) doek.removeChild(renderer.domElement) },
+    stop: () => { renderer.setAnimationLoop(null); ro.disconnect(); io.disconnect(); spiegel?.dispose(); renderer.dispose(); pmrem?.dispose(); if (renderer.domElement.parentNode === doek) doek.removeChild(renderer.domElement) },
   }
 }
 
@@ -350,11 +353,25 @@ export default function WoningFilm({ opFase, naar, opGeenWebgl }: {
 
   useEffect(() => {
     if (!doek.current) return
+    const el = doek.current
     const rustig = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const f = maakFilm(doek.current, x => terug.current(x), rustig, opGeenWebgl)
-    if (!f) { opGeenWebgl(); return }
-    film.current = f
-    return () => { f.stop(); film.current = null }
+    const klein = window.innerWidth < 760
+    const zwak = (navigator.hardwareConcurrency ?? 8) <= 4 || ((navigator as { deviceMemory?: number }).deviceMemory ?? 8) <= 4
+    let weg = false, wacht: ReturnType<typeof setTimeout> | undefined
+    // Valt de grafische kaart weg, dan één keer opnieuw in de lichtste versie, vanaf hetzelfde
+    // moment in de film. Lukt ook dat niet, dan de stilstaande tekening.
+    const start = (niveau: Niveau, t: number) => {
+      const f = maakFilm(el, x => terug.current(x), rustig, tNu => {
+        film.current?.stop(); film.current = null
+        if (weg) return
+        if (niveau === 'minimaal') { opGeenWebgl(); return }
+        wacht = setTimeout(() => { if (!weg) start('minimaal', tNu) }, 600)
+      }, niveau, t)
+      if (!f) { opGeenWebgl(); return }
+      film.current = f
+    }
+    start(klein || zwak ? 'licht' : 'vol', 0)
+    return () => { weg = true; clearTimeout(wacht); film.current?.stop(); film.current = null }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
