@@ -52,6 +52,10 @@ taxonomie en de navigatie, niet in het ontbreken van data.
 
 ## Standing orders (gelden voor elke wijziging hier)
 - **Volledige optimalisatie standaard.** Elke nieuwe/aangepaste publieke pagina krijgt ongevraagd SEO/GEO/AEO/structured-data/CRO/CWV/a11y/E-E-A-T. Optimalisatie = onderdeel van "klaar".
+- **Elke pagina een commerciële CTA (besluit Daniel, 11-10-2026).** Een vervolgstap waar Bylder aan
+  verdient: een configurator/ontwerper (deuren, gietvloer, kast), een offerteaanvraag (plinten) of
+  ledenkorting. "Start gratis" of een offerte-check alleen telt niet. Bouwstenen in
+  `web/app/components/`: ConfiguratorCTA, GietvloerCTA, KastCTA, VoucherCTA, AanbodStrook.
 - **NL-schrijfstijl.** Geen AI-clichés ("naadloos", "ontdek de mogelijkheden", "in de snel veranderende wereld" e.d.). Korte zinnen, concreet, vanuit eigen data. Geen holle intro/outro.
 - **Geen emoji als UI-iconen.** Gebruik lijn-iconen; emoji alleen in mail/WhatsApp-tekst.
 - **Markt-terminologie checken** vóór bouwen/uitrollen per markt (BE='renting', NO='billån', DE='Gewerbeleasing'). Voorkom schalen van foute termen.
