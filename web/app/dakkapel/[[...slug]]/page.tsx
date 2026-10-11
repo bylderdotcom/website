@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getPages, getPage, getMainHtml, getShellCss, toMetadata, slugToSegments, segmentsToSlug } from '../../../lib/dakkapel'
 import InteractiveScripts from '../InteractiveScripts'
+import MetCommercieleStap from '../../components/MetCommercieleStap'
 import { zonderUitgeslotenLd } from '@/lib/uitgesloten'
 
 // /dakkapel/ (index-hub), /dakkapel/<stad>/ (bedrijvengrid) en
@@ -32,7 +33,8 @@ export default async function DakkapelPage({ params }: { params: Promise<{ slug?
       {zonderUitgeslotenLd('dakkapel', page.ldjson).map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
-      <div dangerouslySetInnerHTML={{ __html: main }} />
+      {/* Commerciële stap per vak: web/lib/aanbod.ts */}
+      <MetCommercieleStap html={main} pad={`dakkapel/${page.slug}`} />
       <InteractiveScripts />
     </>
   )
