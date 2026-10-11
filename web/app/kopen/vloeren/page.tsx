@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import CommercieleStap from '../../components/CommercieleStap'
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -161,7 +162,7 @@ export default function VloerenPagina() {
   ]
 
   return (
-    <main style={{ maxWidth: 1200, margin: '0 auto', padding: '40px 24px 80px', color: DONKER,
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '40px 24px 80px', color: DONKER,
                    display: 'flex', flexDirection: 'column', gap: 64 }}>
       {schema.map((s, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
@@ -404,6 +405,7 @@ export default function VloerenPagina() {
           <a href="/kennisbank/vloeren/vloer-in-nieuwbouw/" style={{ color: GROEN }}>vloer in nieuwbouw</a>
         </p>
       </section>
-    </main>
+      <CommercieleStap pad="kopen/vloeren" marge="40px 0 0" />
+    </div>
   )
 }
