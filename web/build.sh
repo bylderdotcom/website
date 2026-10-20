@@ -102,4 +102,10 @@ else
 fi
 rm -f "$NEXT_HTML"
 
+# De zoeklijst achter het zoekvak op de homepage, vers uit de projectpagina's. Stond tot
+# 20-10-2026 met de hand in web/public/ en liep een maand achter (38 van 288 projecten).
+if command -v python3 >/dev/null 2>&1; then
+  python3 "$ROOT/_scripts/zoek_index.py" --uit ./out/zoek-index.json
+fi
+
 echo "✓ klaar — web/out bevat de volledige site (Next + bestaand)"

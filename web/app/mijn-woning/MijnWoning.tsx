@@ -336,6 +336,28 @@ export default function MijnWoning() {
         <span className="mw-sleep-s">of <u>kies een PDF</u> · verkoop- of meerwerktekening</span>
       </label>
 
+      {/* Nog geen tekening? (gebruikerstest 20-10-2026): dit was de hoofdknop op elke
+          projectpagina, en zonder PDF liep hij dood. De meeste bezoekers hebben hun tekening niet
+          bij de hand. Twee wegen die zonder tekening werken. */}
+      {!o && stappen.length === 0 && (
+        <section className="mw-zonder" aria-labelledby="mw-zonder-kop">
+          <h2 id="mw-zonder-kop">Nog geen tekening bij de hand?</h2>
+          <form className="mw-zonder-adres" action="https://app.bylder.com/woningscan" method="get">
+            <label htmlFor="mw-adres">Vul je adres in. We kijken bij het Kadaster hoe ver de bouw is en welke keuzes je nog maakt.</label>
+            <div>
+              <input id="mw-adres" name="q" autoComplete="street-address" placeholder={project ? `Je adres in ${project.naam}` : 'Straat en huisnummer, of je plaats'} />
+              <button type="submit">Bekijk je woning</button>
+            </div>
+          </form>
+          <p className="mw-zonder-of">Of begin meteen met een onderdeel:</p>
+          <ul className="mw-zonder-lijst">
+            <li><a href="/kozijnloze-deuren/configurator/">Kozijnloze deuren samenstellen</a></li>
+            <li><a href="/gietvloer/ontwerpen/">Gietvloer ontwerpen</a></li>
+            <li><a href="/kasten-op-maat/ontwerpen/">Kast op maat ontwerpen</a></li>
+          </ul>
+        </section>
+      )}
+
       {stappen.length > 0 && (
         <ol className="mw-stappen" aria-live="polite">
           {stappen.map((s, i) => <li key={i} className={s.klaar ? 'klaar' : 'bezig'}>{s.t}</li>)}
@@ -521,6 +543,15 @@ const CSS = `
 .mw-oog.groen{color:${GROEN}}.mw-oog.licht{color:rgba(245,240,232,.6)}
 .mw-kop h1{font-size:clamp(26px,6.4vw,44px);line-height:1.08;font-weight:800;letter-spacing:-.03em;margin:6px 0 12px;text-wrap:balance}
 .mw-lead{max-width:60ch;margin:0;color:rgba(26,18,8,.7);font-size:15.5px;line-height:1.6}
+.mw-zonder{margin:18px 0 0;background:#fff;border:1px solid rgba(26,18,8,.1);border-radius:16px;padding:18px 18px 16px}
+.mw-zonder h2{font-size:17px;font-weight:800;margin:0 0 6px;letter-spacing:-.01em}
+.mw-zonder-adres label{display:block;font-size:14px;color:rgba(26,18,8,.7);line-height:1.55;margin:0 0 10px}
+.mw-zonder-adres div{display:flex;gap:8px;flex-wrap:wrap}
+.mw-zonder-adres input{flex:1 1 220px;min-width:0;padding:12px 14px;border:1.5px solid rgba(26,18,8,.15);border-radius:10px;font:inherit;font-size:15px;background:#fff;color:#1A1208}
+.mw-zonder-adres button{flex:0 0 auto;padding:12px 18px;border:0;border-radius:10px;background:${GROEN};color:#F5F0E8;font:inherit;font-weight:800;font-size:15px;cursor:pointer}
+.mw-zonder-of{font-size:13.5px;color:rgba(26,18,8,.6);margin:14px 0 6px}
+.mw-zonder-lijst{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.mw-zonder-lijst a{display:inline-block;padding:8px 12px;border:1.5px solid rgba(61,90,62,.3);border-radius:999px;color:${GROEN};font-weight:700;font-size:13.5px;text-decoration:none}
 .mw-sleep{position:relative;display:grid;justify-items:center;gap:8px;text-align:center;cursor:pointer;border:2px dashed rgba(26,18,8,.28);border-radius:16px;background:#FBF8F2;padding:34px 16px;margin-top:20px}
 .mw-sleep:hover,.mw-sleep.over{border-color:${GROEN};background:#EBF0E8}
 .mw-sleep:focus-within{outline:3px solid ${GROEN};outline-offset:3px}
