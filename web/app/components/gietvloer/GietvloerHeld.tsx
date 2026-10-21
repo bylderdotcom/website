@@ -103,9 +103,13 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
   let renderer: THREE.WebGLRenderer
   try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false }) } catch { return null }
   const klein = window.innerWidth < 760
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, klein ? 1.75 : 2))
+  // Licht op een telefoon (gebruikerstest 20-10-2026: de pagina bevroor daar ruim 4 s bij het
+  // opstarten): geen spiegeling, geen schaduwen, geen omgevingsbelichting en een eenvoudiger
+  // vloermateriaal. Zelfde keuze als de film op de homepage (held/WoningFilm.tsx, 'licht').
+  const licht = klein || window.matchMedia('(pointer: coarse)').matches
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, licht ? 1.5 : 2))
   renderer.toneMapping = THREE.ACESFilmicToneMapping
-  renderer.shadowMap.enabled = true
+  renderer.shadowMap.enabled = !licht
   renderer.shadowMap.type = THREE.PCFSoftShadowMap
   doek.appendChild(renderer.domElement)
 
@@ -113,13 +117,13 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
   const papier = new THREE.Color('#F2EDE3'), warm = new THREE.Color('#CFC4B3')
   scene.background = papier.clone()
   scene.fog = new THREE.Fog(papier, 30, 70)
-  const pmrem = new THREE.PMREMGenerator(renderer)
-  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
+  const pmrem = licht ? null : new THREE.PMREMGenerator(renderer)
+  if (pmrem) scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
   const cam = new THREE.PerspectiveCamera(36, 1, 0.1, 200)
 
   const hemi = new THREE.HemisphereLight('#fffaf2', '#b9ad9c', 1.2); scene.add(hemi)
   const zon = new THREE.DirectionalLight('#ffe7c4', 0.6)
-  zon.castShadow = true; zon.shadow.mapSize.set(klein ? 1024 : 2048, klein ? 1024 : 2048); zon.shadow.bias = -0.0004; zon.shadow.normalBias = 0.02; zon.shadow.radius = 4
+  zon.castShadow = !licht; zon.shadow.mapSize.set(klein ? 1024 : 2048, klein ? 1024 : 2048); zon.shadow.bias = -0.0004; zon.shadow.normalBias = 0.02; zon.shadow.radius = 4
   scene.add(zon, zon.target)
 
   const raster = rasterTextuur(), wolk = wolkTextuur()
@@ -135,7 +139,7 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
   const lijnMat = new THREE.LineBasicMaterial({ color: '#2B3A2C', transparent: true })
   const uOud = { r: { value: 0 }, o: { value: new THREE.Vector2() } }, uNieuw = { r: { value: 0 }, o: { value: new THREE.Vector2() } }
   const uDek = { r: { value: 1e3 }, o: { value: new THREE.Vector2() } }
-  let oudMat: THREE.MeshPhysicalMaterial, nieuwMat: THREE.MeshPhysicalMaterial
+  let oudMat: THREE.MeshStandardMaterial, nieuwMat: THREE.MeshStandardMaterial
   let straal: THREE.Mesh
   let spiegel: Reflector | null = null
   const zwart = new THREE.Color('#000')
@@ -143,7 +147,9 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
   let t0 = performance.now(), gietStart = 0, kleurIdx = 0, zelfGekozen = false, fase = -1, actief = true
   let doelOud = new THREE.Color(DEKVLOER), doelNieuw = new THREE.Color(DEKVLOER)
 
-  const vloerMat = (kleur: THREE.ColorRepresentation) => new THREE.MeshPhysicalMaterial({
+  const vloerMat = (kleur: THREE.ColorRepresentation): THREE.MeshStandardMaterial => licht
+    ? new THREE.MeshStandardMaterial({ color: kleur, map: wolk, roughness: 0.38, metalness: 0, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 })
+    : new THREE.MeshPhysicalMaterial({
     color: kleur, map: wolk, roughness: 0.32, clearcoat: 1, clearcoatRoughness: 0.06, envMapIntensity: 1.25,
     polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2,
   })
@@ -169,19 +175,21 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
     const nieuw = new THREE.Mesh(vloerVlak(giet), vloerMateriaal(nieuwMat, uNieuw))
     oud.position.y = 0.003; nieuw.position.y = 0.005
     oud.receiveShadow = nieuw.receiveShadow = true; groep.add(oud, nieuw)
-    spiegel?.dispose()
-    const sp = new Reflector(vloerVlak(giet, true), { shader: SPIEGEL, clipBias: 0.003, textureWidth: Math.round(doek.clientWidth * 0.4), textureHeight: Math.round(doek.clientHeight * 0.4) })
-    const mat = sp.material as THREE.ShaderMaterial
-    mat.transparent = true; mat.depthWrite = false; mat.blending = THREE.AdditiveBlending
-    mat.polygonOffset = true; mat.polygonOffsetFactor = -8; mat.polygonOffsetUnits = -8
-    mat.uniforms.uO.value.copy(o)
-    const voor = sp.onBeforeRender.bind(sp)
-    sp.onBeforeRender = (...a: Parameters<typeof sp.onBeforeRender>) => {
-      const bg = scene.background, fog = scene.fog; scene.background = zwart; scene.fog = null; grond.visible = false; rasterVlak.visible = false
-      voor(...a)
-      scene.background = bg; scene.fog = fog; grond.visible = true; rasterVlak.visible = true
+    spiegel?.dispose(); spiegel = null
+    if (!licht) {
+      const sp = new Reflector(vloerVlak(giet, true), { shader: SPIEGEL, clipBias: 0.003, textureWidth: Math.round(doek.clientWidth * 0.4), textureHeight: Math.round(doek.clientHeight * 0.4) })
+      const mat = sp.material as THREE.ShaderMaterial
+      mat.transparent = true; mat.depthWrite = false; mat.blending = THREE.AdditiveBlending
+      mat.polygonOffset = true; mat.polygonOffsetFactor = -8; mat.polygonOffsetUnits = -8
+      mat.uniforms.uO.value.copy(o)
+      const voor = sp.onBeforeRender.bind(sp)
+      sp.onBeforeRender = (...a: Parameters<typeof sp.onBeforeRender>) => {
+        const bg = scene.background, fog = scene.fog; scene.background = zwart; scene.fog = null; grond.visible = false; rasterVlak.visible = false
+        voor(...a)
+        scene.background = bg; scene.fog = fog; grond.visible = true; rasterVlak.visible = true
+      }
+      sp.rotation.x = -Math.PI / 2; sp.position.y = 0.01; groep.add(sp); spiegel = sp
     }
-    sp.rotation.x = -Math.PI / 2; sp.position.y = 0.01; groep.add(sp); spiegel = sp
 
     // straal van boven
     straal = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.09, 1.6, 20), vloerMat(DEKVLOER))
@@ -263,14 +271,15 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
     const g = gietT < 0 ? 0 : uit(Math.min(1, gietT / (T.giet[1] - T.giet[0])))
     uNieuw.r.value = g * rMax
     if (spiegel) { const u = (spiegel.material as THREE.ShaderMaterial).uniforms; u.uR.value = Math.max(uNieuw.r.value, uOud.r.value > 100 ? 1e3 : 0); u.uSterkte.value = 0.04 + 0.06 * zacht(tussen(t, T.foto)) }
-    oudMat.color.copy(doelOud); nieuwMat.color.copy(doelNieuw); (straal.material as THREE.MeshPhysicalMaterial).color.copy(doelNieuw)
+    oudMat.color.copy(doelOud); nieuwMat.color.copy(doelNieuw); (straal.material as THREE.MeshStandardMaterial).color.copy(doelNieuw)
     const s = gietT < -0.25 ? 0 : gietT < 0.15 ? (gietT + 0.25) / 0.4 : gietT < 1.6 ? 1 : Math.max(0, 1 - (gietT - 1.6) / 0.35)
     straal.scale.y = Math.max(0.001, s); straal.position.y = 1.6 - 0.8 * s; straal.visible = s > 0.01
     if (gietT > T.giet[1] - T.giet[0] + 0.05 && !doelOud.equals(doelNieuw)) { doelOud.copy(doelNieuw); uOud.r.value = 1e3 }
     // 4. foto
     const f = zacht(tussen(t, T.foto))
     renderer.toneMappingExposure = 0.95 - f * 0.17
-    zon.intensity = 0.5 + f * 1.25; hemi.intensity = 1.1 - f * 0.65
+    // Zonder belichtingsomgeving (telefoon) moet gewoon licht het opvangen, net als in held/WoningFilm.tsx.
+    if (licht) { zon.intensity = 1.3 + f * 1.1; hemi.intensity = 2.9 - f * 0.1 } else { zon.intensity = 0.5 + f * 1.25; hemi.intensity = 1.1 - f * 0.65 }
     scene.environmentIntensity = 0.4 + f * 0.5
     ;(grond.material as THREE.MeshStandardMaterial).color.copy(papier).lerp(warm, f)
     meubels.forEach(m => { const k = uit(tussen(t, [T.foto[0] + m.d * 0.8, T.foto[0] + m.d * 0.8 + 0.9])); m.obj.scale.setScalar(Math.max(0.001, k)) })
@@ -285,7 +294,7 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
   function nieuweGiet(hex: string, t: number) {
     doelOud.copy(doelNieuw); uOud.r.value = 1e3
     doelNieuw = new THREE.Color(hex); gietStart = t
-    ;(straal.material as THREE.MeshPhysicalMaterial).color.set(hex)
+    ;(straal.material as THREE.MeshStandardMaterial).color.set(hex)
   }
 
   const maat = () => {
@@ -307,7 +316,7 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
   return {
     start,
     giet: hex => { zelfGekozen = true; const t = (performance.now() - t0) / 1000; if (rustig) { doelOud.set(hex); doelNieuw.set(hex) } else nieuweGiet(hex, Math.max(t, T.foto[0])) },
-    stop: () => { renderer.setAnimationLoop(null); ro.disconnect(); io.disconnect(); renderer.dispose(); pmrem.dispose(); doek.removeChild(renderer.domElement) },
+    stop: () => { renderer.setAnimationLoop(null); ro.disconnect(); io.disconnect(); renderer.dispose(); pmrem?.dispose(); doek.removeChild(renderer.domElement) },
     fase: () => fase,
   }
 }
@@ -337,15 +346,28 @@ export default function GietvloerHeld({ api }: { api: string }) {
   useEffect(() => {
     meetStap(api, 'opening')
     const rustig = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const s = maakScene(doek.current!, setFase, rustig)
-    if (!s) { setGeenWebgl(true); return }
-    sc.current = s
-    // Staat er al een tekening in Mijn woning, dan meteen die woning.
-    try {
-      const o = JSON.parse(localStorage.getItem(WONING_OPSLAG) || 'null')
-      if (o?.lagen?.length) { s.start(naarPlan(o.lagen[0], o.giet ?? null, 0)); setEigen(o.bron ?? 'je tekening') }
-    } catch { /* geen woning */ }
-    return () => { s.stop(); sc.current = null }
+    // De 3D pas opbouwen als de pagina staat en de browser even niets te doen heeft: kop,
+    // knoppen en tekst zijn dan al bruikbaar, ook op een trage telefoon.
+    let s: Scene | null = null, weg = false
+    const bouwNu = () => {
+      if (weg || !doek.current) return
+      s = maakScene(doek.current, setFase, rustig)
+      if (!s) { setGeenWebgl(true); return }
+      sc.current = s
+      // Staat er al een tekening in Mijn woning, dan meteen die woning.
+      try {
+        const o = JSON.parse(localStorage.getItem(WONING_OPSLAG) || 'null')
+        if (o?.lagen?.length) { s.start(naarPlan(o.lagen[0], o.giet ?? null, 0)); setEigen(o.bron ?? 'je tekening') }
+      } catch { /* geen woning */ }
+    }
+    // Safari kent requestIdleCallback niet: daar een korte pauze.
+    const idle = 'requestIdleCallback' in window
+    const id = idle ? window.requestIdleCallback(bouwNu, { timeout: 1200 }) : window.setTimeout(bouwNu, 300)
+    return () => {
+      weg = true
+      if (idle) window.cancelIdleCallback(id); else clearTimeout(id)
+      s?.stop(); sc.current = null
+    }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
