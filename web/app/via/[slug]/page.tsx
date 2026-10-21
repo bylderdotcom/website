@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { AANBRENGERS } from '../aanbrengers'
 import RefVastleggen from './RefVastleggen'
+import { KLEUREN } from '../../components/gietvloer/gegevens'
 
 /**
  * De pagina achter de link en QR-code van een vakman (11-10-2026). Scenario: hij staat op
@@ -39,12 +40,20 @@ const ROEST = '#B85C38'
 const P: React.CSSProperties = { fontSize: 16, lineHeight: 1.7, color: `${INKT}0.78)`, margin: '0 0 12px', maxWidth: '64ch' }
 const LABEL: React.CSSProperties = { fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.08em', color: ROEST, fontWeight: 700 }
 
-const PRODUCTEN = [
-  { naam: 'Deuren zonder kozijn', korting: '10% korting', wat: 'Plafondhoge deuren die vlak in de wand liggen, zonder kozijn of architraaf. Stel ze samen in 3D.', href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deuren samen', moment: 'Kies vóór de stukadoor komt' },
-  { naam: 'Gietvloer', korting: '10% korting', wat: 'Upload een foto van een vloer die je mooi vindt; we zoeken de kleur en rekenen je ruimtes uit. Tot drie stalen gratis.', href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer', moment: 'Kies vóór de oplevering' },
-  { naam: 'Kast op maat', korting: '10% korting', wat: 'Laat een foto zien van een kast die je mooi vindt en wijs aan waar hij komt. Je ziet hem in 3D, met maten.', href: '/kasten-op-maat/ontwerpen/', knop: 'Ontwerp je kast', moment: 'Gratis inmeten na de oplevering' },
-  { naam: 'Auping bed', korting: '10% korting', wat: 'Op het reguliere assortiment van Auping: boxsprings, matrassen en bedframes. Niet bovenop een lopende actie of sale.', href: 'https://app.bylder.com/dashboard/vouchers', knop: 'Haal je Auping-code', moment: 'Gratis account nodig' },
+// Beeld per product (verzoek Daniel, 20-10-2026): de koper ziet meteen wat hij krijgt en van
+// welk merk. Deuren en Auping met foto en logo; de gietvloer met kleurvlakken en de kast met
+// het 3D-beeld uit de ontwerper, zonder merk: daar kiest de koper zelf de maker.
+type Product = { naam: string; korting: string; wat: string; href: string; knop: string; moment: string; img?: string; sm?: string; alt?: string; logo?: [string, string, number]; kleuren?: boolean; door?: string }
+const PRODUCTEN: Product[] = [
+  { naam: 'Deuren zonder kozijn', korting: '10% korting', wat: 'Plafondhoge deuren die vlak in de wand liggen, zonder kozijn of architraaf. Stel ze samen in 3D.', href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deuren samen', moment: 'Kies vóór de stukadoor komt',
+    img: '/img/classic-next/deur-eiken-fineer.jpg', sm: '/img/classic-next/deur-eiken-fineer-sm.jpg 600w, /img/classic-next/deur-eiken-fineer.jpg 800w', alt: 'Plafondhoge binnendeur in eikenfineer, vlak in een witte wand', logo: ['/img/logos/classic-next.png', 'Classic Next', 18] },
+  { naam: 'Gietvloer', korting: '10% korting', wat: 'Upload een foto van een vloer die je mooi vindt; we zoeken de kleur en rekenen je ruimtes uit. Tot drie stalen gratis.', href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer', moment: 'Kies vóór de oplevering', kleuren: true, door: 'Gelegd door een verwerker' },
+  { naam: 'Kast op maat', korting: '10% korting', wat: 'Laat een foto zien van een kast die je mooi vindt en wijs aan waar hij komt. Je ziet hem in 3D, met maten.', href: '/kasten-op-maat/ontwerpen/', knop: 'Ontwerp je kast', moment: 'Gratis inmeten na de oplevering',
+    img: '/img/kasten/hoekkast-3d-sm.jpg', sm: '/img/kasten/hoekkast-3d-sm.jpg 600w, /img/kasten/hoekkast-3d.jpg 1200w', alt: 'Hoekkast op maat in 3D, uit de kastontwerper van Bylder', door: 'Gemaakt door een timmerbedrijf' },
+  { naam: 'Auping bed', korting: '10% korting', wat: 'Op het reguliere assortiment van Auping: boxsprings, matrassen en bedframes. Niet bovenop een lopende actie of sale.', href: 'https://app.bylder.com/dashboard/vouchers', knop: 'Haal je Auping-code', moment: 'Gratis account nodig',
+    img: '/img/auping-noble-solid-oak.webp', sm: '/img/auping-noble-solid-oak-sm.webp 500w, /img/auping-noble-solid-oak.webp 1000w', alt: 'Auping Noble Solid Oak bed van massief eiken in een lichte slaapkamer', logo: ['/img/logos/auping-blue.svg', 'Auping', 20] },
 ]
+const STAALTJES = ['kalkwit', 'zandbeige', 'betongrijs', 'grafiet'].map(id => KLEUREN.find(k => k.id === id)!).filter(Boolean)
 
 export default async function ViaPagina({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -64,14 +73,24 @@ export default async function ViaPagina({ params }: { params: Promise<{ slug: st
         een offerte aan bij de maker en beslist pas daarna.
       </p>
 
-      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', margin: '26px 0 0' }}>
+      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', margin: '26px 0 0' }}>
         {PRODUCTEN.map(p => (
-          <section key={p.naam} aria-labelledby={`p-${p.href}`} style={{ background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, padding: '20px 20px 18px', display: 'flex', flexDirection: 'column', gap: 8 }}>
-            <span style={{ alignSelf: 'flex-start', fontSize: 12.5, fontWeight: 800, color: GROEN, background: 'rgba(61,90,62,0.1)', borderRadius: 999, padding: '4px 10px' }}>{p.korting}</span>
+          <section key={p.naam} aria-labelledby={`p-${p.href}`} style={{ background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+            <span style={{ display: 'block', aspectRatio: '4 / 3', overflow: 'hidden', background: '#1A1208', position: 'relative' }}>
+              {p.img
+                ? <img src={p.img} srcSet={p.sm} sizes="(max-width:720px) 100vw, 240px" alt={p.alt} width={600} height={450} loading="lazy" decoding="async" style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }} />
+                : <span aria-hidden="true" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', height: '100%' }}>{STAALTJES.map(k => <span key={k.id} style={{ background: k.hex }} />)}</span>}
+              <span style={{ position: 'absolute', left: 10, top: 10, fontSize: 12.5, fontWeight: 800, color: GROEN, background: '#F5F0E8', borderRadius: 999, padding: '4px 10px' }}>{p.korting}</span>
+            </span>
+            <span style={{ padding: '16px 20px 18px', display: 'flex', flexDirection: 'column', gap: 8, flex: 1 }}>
+            {p.logo
+              ? <img src={p.logo[0]} alt={p.logo[1]} height={p.logo[2]} style={{ height: p.logo[2], width: 'auto', alignSelf: 'flex-start' }} />
+              : <span style={{ fontSize: 12, fontWeight: 700, color: `${INKT}0.55)`, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.06em' }}>{p.door}</span>}
             <h2 id={`p-${p.href}`} style={{ fontSize: '1.15rem', fontWeight: 800, margin: '2px 0 0' }}>{p.naam}</h2>
             <p style={{ fontSize: 14.5, lineHeight: 1.6, color: `${INKT}0.75)`, margin: 0, flex: 1 }}>{p.wat}</p>
             <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: 0 }}>{p.moment}</p>
             <a href={p.href} style={{ marginTop: 6, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 16px', borderRadius: 10, textDecoration: 'none', textAlign: 'center' }}>{p.knop}</a>
+            </span>
           </section>
         ))}
       </div>
