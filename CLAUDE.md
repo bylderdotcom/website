@@ -36,6 +36,13 @@ vlaggenschepen: **gietvloer en binnendeuren bestaan nog niet als categorie.** In
 navigatie staat alleen `/showroomsale/` — geen showroomoverzicht. Het gat zit dus in de
 taxonomie en de navigatie, niet in het ontbreken van data.
 
+## Koers (besluit Daniel, 21-10-2026)
+- **VS: lanceren met een premium-model.** Gebruikers betalen daar een premiumbedrag. Bedrag en
+  vorm liggen nog niet vast; markt-terminologie eerst checken (zie standing orders).
+- **NL: een webshop bouwen.** Ontwerp en details nog open. Sluit aan op wat er al ligt: de
+  configurators (deuren, gietvloer, kast), de offerteflow en de ledenkorting in `web/lib/aanbod.ts`.
+Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meenemen.
+
 ## Stack (feiten)
 - Pre-rendered HTML-pagina's per content-cluster (mappen in de repo-root, bv. `nieuwbouw-gids/`, `kortingscode/`, `offerte-check/`, `en-us/`).
 - Content-generatie via **Python-scripts** in `scripts/` (`nieuwbouw_scraper.py`, `nwn_scraper.py`, `vakbedrijven_pipeline.py`, `winkels_mvp.py`) + JSON-data in `data/`.
@@ -45,10 +52,18 @@ taxonomie en de navigatie, niet in het ontbreken van data.
   bronvermelding. Dat onderscheid is juridisch de hele zaak: zie de kop van `nwn_scraper.py`.
   Funda scrapen is afgeraden: hun voorwaarden verbieden het woordelijk en ze blokkeren actief.
 - Node-deps minimaal: `@anthropic-ai/sdk`, `stripe`. Deploy + redirects via `vercel.json`.
+- **Het hoofdmenu staat op één plek: `web/app/components/menu.json`.** Nav.tsx leest het, en
+  `web/build.sh` (stap 4) zet het bij elke build op alle statische pagina's. Menu wijzigen =
+  alleen dat bestand. Geen veegrondes over de HTML meer.
 - Markten als taal-regio-subdir (`/en-us`, `/nl-be`, `/de`). NL staat op root — **niet verplaatsen**.
 
 ## Standing orders (gelden voor elke wijziging hier)
 - **Volledige optimalisatie standaard.** Elke nieuwe/aangepaste publieke pagina krijgt ongevraagd SEO/GEO/AEO/structured-data/CRO/CWV/a11y/E-E-A-T. Optimalisatie = onderdeel van "klaar".
+- **Elke pagina een commerciële CTA (besluit Daniel, 11-10-2026).** Een vervolgstap waar Bylder aan
+  verdient: een configurator/ontwerper (deuren, gietvloer, kast), een offerteaanvraag (plinten) of
+  ledenkorting. "Start gratis" of een offerte-check alleen telt niet. Welke stap bij welk onderwerp
+  hoort staat op één plek: `web/lib/aanbod.ts`; `<CommercieleStap pad=…>` kiest de vorm. De
+  AanbodStrook eronder toont altijd ook Auping met foto, zoals op de homepage.
 - **NL-schrijfstijl.** Geen AI-clichés ("naadloos", "ontdek de mogelijkheden", "in de snel veranderende wereld" e.d.). Korte zinnen, concreet, vanuit eigen data. Geen holle intro/outro.
 - **Geen emoji als UI-iconen.** Gebruik lijn-iconen; emoji alleen in mail/WhatsApp-tekst.
 - **Markt-terminologie checken** vóór bouwen/uitrollen per markt (BE='renting', NO='billån', DE='Gewerbeleasing'). Voorkom schalen van foute termen.
