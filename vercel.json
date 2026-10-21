@@ -6,6 +6,46 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/login",
+      "destination": "https://app.bylder.com/inloggen",
+      "permanent": false
+    },
+    {
+      "source": "/login/",
+      "destination": "https://app.bylder.com/inloggen",
+      "permanent": false
+    },
+    {
+      "source": "/inloggen",
+      "destination": "https://app.bylder.com/inloggen",
+      "permanent": false
+    },
+    {
+      "source": "/inloggen/",
+      "destination": "https://app.bylder.com/inloggen",
+      "permanent": false
+    },
+    {
+      "source": "/registreer",
+      "destination": "https://app.bylder.com/registreer",
+      "permanent": false
+    },
+    {
+      "source": "/registreer/",
+      "destination": "https://app.bylder.com/registreer",
+      "permanent": false
+    },
+    {
+      "source": "/registreren",
+      "destination": "https://app.bylder.com/registreer",
+      "permanent": false
+    },
+    {
+      "source": "/registreren/",
+      "destination": "https://app.bylder.com/registreer",
+      "permanent": false
+    },
+    {
       "source": "/partners/classic-next",
       "destination": "/beurs/funnel/",
       "permanent": false
