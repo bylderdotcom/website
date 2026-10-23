@@ -16,6 +16,7 @@ import { metVerleider } from './verleider'
 import { metEersteZet } from './eerstezet'
 import { extraLinksHtml } from './interne-links'
 import { zonderUitgesloten } from './uitgesloten'
+import { stadslinks } from './stadslinks'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'loodgieter'
@@ -383,6 +384,7 @@ function getBedrijfHtml(page: LoodgieterPage): string {
     body = body.replace('{{tiles}}', b.siblings.map(renderTile).join(''))
   }
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
+  body = stadslinks(body, CLUSTER, b.city_slug, b.city, getCities())
   const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
   // Door Jev gerangschikte buurbedrijven, voor profielen waar de stadsregel te
