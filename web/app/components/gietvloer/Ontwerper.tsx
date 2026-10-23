@@ -612,7 +612,7 @@ function Offerte({ w, m2, type, naam, stuur }: { w: Weergave | null; m2: number;
       <Receipt size={26} weight="thin" aria-hidden="true" />
       <h3>Je offerte is aangevraagd</h3>
       <p>Een gespecialiseerde verwerker krijgt je ruimtes, je kleur en je foto. Hij meet eerst in. De offerte zie je bij Mijn offertes.</p>
-      <Link className="gv-knop" href="/dashboard/offertes">Naar mijn offertes<ArrowRight size={16} aria-hidden="true" /></Link>
+      <Link className="gv-knop" href={`${APP}/dashboard/offertes`}>Naar mijn offertes<ArrowRight size={16} aria-hidden="true" /></Link>
     </div>
   )
   const veld = (k: keyof typeof v, label: string, extra: React.InputHTMLAttributes<HTMLInputElement> = {}) => (

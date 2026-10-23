@@ -81,7 +81,8 @@ export default function VakmanReviews({ product, wat }: { product: string; wat: 
           Wat hier komt te staan is dus geen marketingtekst maar een oordeel uit de praktijk:
           hoe de montage beviel, waar je op moet letten, en wat je de volgende keer anders doet.
         </p>
-        <a href="/vakbedrijf-beoordeling/?product=eigen-ervaring" style={{
+        {/* Er is (nog) geen beoordelingsformulier; tot die tijd komt een beoordeling per mail binnen. */}
+        <a href={`mailto:danielpaaij@bylder.com?subject=${encodeURIComponent(`Beoordeling als vakman: ${wat}`)}`} style={{
           color: GROEN, fontWeight: 700, fontSize: 15, textDecoration: 'underline',
           textUnderlineOffset: 3,
         }}>Beoordeel dit product als vakman</a>

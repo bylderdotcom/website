@@ -108,4 +108,14 @@ if command -v python3 >/dev/null 2>&1; then
   python3 "$ROOT/_scripts/zoek_index.py" --uit ./out/zoek-index.json
 fi
 
+# Dode interne links naar de dichtstbijzijnde bestaande pagina erboven (23-10-2026). Zes
+# generatoren linkten samen naar 6.231 pagina's die niet bestaan; deze stap houdt dat bij elke
+# build dicht, ook voor de volgende generator. Uitleg en voorbeelden: kop van het script.
+echo "▸ dode interne links omzetten"
+if command -v python3 >/dev/null 2>&1; then
+  python3 "$ROOT/_scripts/dode_links_pass.py" ./out
+else
+  echo "⚠ python3 ontbreekt: dode links NIET omgezet"
+fi
+
 echo "✓ klaar — web/out bevat de volledige site (Next + bestaand)"
