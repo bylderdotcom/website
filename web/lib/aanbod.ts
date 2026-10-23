@@ -51,6 +51,28 @@ export const ONDERWERPEN: Record<string, Aanbod> = {
   'kopen/laadpalen': { stap: 'korting', titel: 'Korting bij de merken van Bylder' },
   'kopen': { stap: 'auping' },
 
+  // Klus per gemeente (/project/<klus>/<gemeente>/, 23-10-2026). Wat een koper na de oplevering
+  // laat doen, met de stap waar Bylder aan verdient; de klussen van bestaande bouw ook, want die
+  // pagina's staan op noindex maar een bezoeker die er komt, krijgt wel een vervolgstap.
+  'project/badkamer-renovatie': { stap: 'korting', categorieen: ['Sanitair', 'Wandtegels', 'Vloertegels'], titel: 'Korting op sanitair en tegels',
+    aanleiding: 'Sanitair en tegels zijn vaak de helft van de badkamerrekening. Met een gratis Bylder-account krijg je ledenkorting bij deze zaken:' },
+  'project/badkamer-tegelen': { stap: 'korting', categorieen: ['Wandtegels', 'Vloertegels', 'Sanitair'], titel: 'Korting op tegels' },
+  'project/gietvloer-leggen': { stap: 'gietvloer' },
+  'project/vloerverwarming-installeren': { stap: 'gietvloer', aanleiding: 'Vloerverwarming en een gietvloer horen bij elkaar: de vloer geeft de warmte snel en gelijkmatig af. Upload een foto van een gietvloer die je mooi vindt; wij lezen de kleur en je krijgt tot drie stalen gratis thuis.' },
+  'project/parket-leggen': { stap: 'korting', categorieen: ['PVC vloer', 'Trapbekleding'], titel: 'Korting op vloeren' },
+  'project/traprenovatie': { stap: 'korting', categorieen: ['Trapbekleding', 'PVC vloer'], titel: 'Korting op trap en vloer' },
+  'project/keuken-monteren': { stap: 'korting', categorieen: ['Kitchen', 'Verlichting', 'Wandtegels'], titel: 'Korting op je keuken' },
+  'project/raamdecoratie-plaatsen': { stap: 'korting', categorieen: ['Raamdecoratie', 'Zonwering'], titel: 'Korting op raamdecoratie en zonwering' },
+  'project/zonwering-installeren': { stap: 'korting', categorieen: ['Zonwering', 'Raamdecoratie'], titel: 'Korting op zonwering' },
+  'project/slaapkamer-inrichten': { stap: 'auping' },
+  'project/verlichting-installeren': { stap: 'korting', categorieen: ['Verlichting', 'Smart home'], titel: 'Korting op verlichting en slim wonen' },
+  'project/schilderwerk-binnen': { stap: 'korting', categorieen: ['Behang', 'Muurbekleding', 'Stucwerk'], titel: 'Korting op behang en wandafwerking' },
+  'project/stucwerk': { stap: 'plinten', aanleiding: 'Komt de stukadoor? Dan is dit het moment voor een onzichtbare plint en een kozijnloze deur: allebei gaan ze vóór het stucwerk de wand in. Vraag de offerte aan voordat het stucwerk is ingepland.' },
+  'project/aanbouw-realiseren': { stap: 'deuren' },
+  'project/dakkapel-plaatsen': { stap: 'kast', aanleiding: 'Een zolder met dakkapel wordt pas een kamer met genoeg bergruimte. Ontwerp een kast op maat vanaf een voorbeeldfoto, zie hem in 3D en vraag een offerte aan bij een timmerbedrijf.' },
+  'project/tuinbestrating': { stap: 'korting', categorieen: ['Tuin', 'Tuinmeubelen', 'Groen dak'], titel: 'Korting voor je tuin' },
+  'project': { stap: 'korting', titel: 'Korting bij de merken van Bylder' },
+
   // Vakmannen per stad (/loodgieter/<stad>/ enz.): de stap die past bij wat de koper laat doen.
   'loodgieter': { stap: 'korting', categorieen: ['Sanitair', 'Wandtegels'], titel: 'Korting op het sanitair zelf',
     aanleiding: 'De loodgieter sluit aan, het sanitair koop je zelf. Met een gratis Bylder-account krijg je ledenkorting bij deze zaken:' },
