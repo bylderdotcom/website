@@ -952,11 +952,31 @@ def _feiten():
     return _FEITEN
 
 
-def handwerk_blok(slug, naam):
-    """Toont alleen feiten met een waarde, een bron en een verse controledatum."""
+# DUBBELE FEITEN (23-10-2026). De schrijver vult elf velden uit dezelfde opgehaalde
+# tekst, en zet hetzelfde feit dan soms onder twee koppen: bij Treilerstaete stonden
+# vloerverwarming, warmtepomp en zonnepanelen onder "Wat er wel en niet in zit" én
+# onder "Hoe het gebouwd wordt". Een bezoeker leest dan twee keer hetzelfde, en voor
+# de uniciteit telt het niet mee. Per zin: deelt hij de helft of meer van zijn
+# inhoudswoorden met een zin die eerder op de pagina al staat, dan valt hij weg.
+_STOP = set("de het een en van in op met voor zijn is er aan te bij als dat die dit ook of naar door "
+            "om uit over tot worden wordt hebben heeft kan kunnen je jij u ze zij wij we hun haar "
+            "niet nog wel meer alle elke deze zo dan".split())
+
+
+def _woorden(zin):
+    return {w for w in re.findall(r"[a-z\u00e0-\u00ff0-9+]+", zin.lower()) if len(w) > 2 and w not in _STOP}
+
+
+def _zinnen(tekst):
+    return [z.strip() for z in re.split(r"(?<=[.!?])\s+", tekst) if z.strip()]
+
+
+def bruikbare_feiten(slug):
+    """{veld: (waarde, bron, datum)} in de volgorde van FEIT_KOPPEN: alleen met waarde,
+    bron en verse controledatum, en zonder zinnen die eerder op de pagina al staan."""
     vak = _feiten().get(slug) or {}
-    bruikbaar = []
-    for sleutel, kop in FEIT_KOPPEN.items():
+    uit, eerder = {}, []
+    for sleutel in FEIT_KOPPEN:
         f = vak.get(sleutel) or {}
         waarde, bron, datum = (f.get("waarde") or "").strip(), (f.get("bron") or "").strip(), \
                               (f.get("gecontroleerd_op") or "").strip()
@@ -968,8 +988,75 @@ def handwerk_blok(slug, naam):
             continue
         if (VANDAAG - gecontroleerd).days > FEIT_HOUDBAAR_DAGEN:
             continue
-        bruikbaar.append((kop, waarde, bron, gecontroleerd))
+        houden = []
+        for zin in _zinnen(waarde):
+            w = _woorden(zin)
+            if len(w) >= 3 and any(len(w & e) / len(w) >= 0.5 for e in eerder):
+                continue
+            houden.append(zin)
+            eerder.append(w)
+        if houden:
+            uit[sleutel] = (" ".join(houden), bron, gecontroleerd)
+    return uit
 
+
+# FEITEN ALS ANTWOORD (23-10-2026). De vier handgeschreven pagina's halen per pagina
+# vijftien keer zoveel vertoningen als de gegenereerde, op vrijwel dezelfde positie.
+# Het verschil zit in hun vragenblok: "Hoe zit het met parkeren bij CondorPark?",
+# "Wat stond er eerder op deze plek?" — de vragen die een koper intypt, beantwoord met
+# feiten van dát project. De gegenereerde pagina's hadden die feiten wel, maar in een
+# los blok, en gaven in het vragenblok antwoorden die op alle 283 pagina's gelijk
+# waren. Nu wordt elk opgezocht feit hier de vraag die erbij hoort; wat als antwoord
+# staat, komt niet nog eens in het feitenblok. Volgorde = volgorde in het vragenblok.
+FEIT_VRAGEN = {
+    "opleverniveau": "Wat zit er in de koopsom van {n}?",
+    "parkeren": "Hoe zit het met parkeren bij {n}?",
+    "buitenruimte": "Heeft {n} een tuin, balkon of berging?",
+    "kopersopties": "Welke kopersopties en welk meerwerk biedt {n}?",
+    "fasering": "Uit welke fases en woningen bestaat {n}?",
+    "bouwwijze": "Hoe wordt {n} gebouwd?",
+    "voorzieningen": "Welke voorzieningen zijn er rond {n}?",
+    "ontwikkelaar": "Wie ontwikkelt {n}?",
+    "historie": "Wat stond er eerder op de plek van {n}?",
+}
+_WARMTE = re.compile(r"warmtepomp|warmtenet|stadswarmte|stadsverwarming|\bwko\b|bodemenergie|"
+                     r"bodemwarmte|all-electric|gasloos", re.I)
+
+
+def _bronzin(bron, gecontroleerd):
+    domein = urllib.parse.urlparse(bron).netloc.replace("www.", "") if bron.startswith("http") else bron
+    return f" Bron: de eigen site van het project ({domein}), gecontroleerd {nl_datum(gecontroleerd.isoformat())}."
+
+
+def feiten_vragen(slug, naam, al):
+    """Vraag-antwoordparen uit de opgezochte feiten, plus de velden die daarmee beantwoord
+    zijn. `al` zijn de vragen die er al staan: "Wie bouwt X?" uit de projectsite maakt de
+    vraag over de ontwikkelaar overbodig."""
+    feiten, uit, gebruikt = bruikbare_feiten(slug), [], set()
+    for sleutel, vraag in FEIT_VRAGEN.items():
+        if sleutel not in feiten:
+            continue
+        if sleutel == "ontwikkelaar" and any(q.startswith("Wie bouwt") for q in al):
+            continue
+        waarde, bron, gecontroleerd = feiten[sleutel]
+        uit.append((vraag.format(n=naam), waarde + _bronzin(bron, gecontroleerd)))
+        gebruikt.add(sleutel)
+    return uit, gebruikt
+
+
+def gas_antwoord(slug, naam):
+    """Het gasantwoord met de warmtebron van dít project, als de eigen site die noemt."""
+    for waarde, bron, gecontroleerd in bruikbare_feiten(slug).values():
+        zin = next((z for z in _zinnen(waarde) if _WARMTE.search(z)), None)
+        if zin:
+            return (f"Nee &mdash; sinds 1 juli 2018 mag dat niet meer (Wet VET). Volgens de eigen site "
+                    f"van {naam}: {zin}" + _bronzin(bron, gecontroleerd))
+    return None
+
+
+def handwerk_blok(slug, naam, al_beantwoord=frozenset()):
+    """De opgezochte feiten die niet al als antwoord in het vragenblok staan."""
+    bruikbaar = [(FEIT_KOPPEN[k], *v) for k, v in bruikbare_feiten(slug).items() if k not in al_beantwoord]
     if not bruikbaar:
         return ""
 
@@ -2249,10 +2336,24 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             f"Stand {nl_datum(fd)}: nog {fv['beschikbaar']} van de {fv['eenheden']} aangeboden "
             f"woningen beschikbaar ({fv['verkocht_pct']}% verkocht). Gemeten door Bylder op de "
             f"beschikbaarheid per fase."))
+    # De opgezochte feiten als antwoord op de vraag die erbij hoort (zie FEIT_VRAGEN).
+    # Wat hier beantwoord wordt, laat het feitenblok verderop weg.
+    f_vragen, f_gebruikt = feiten_vragen(slug, naam, [q for q, _ in site_vragen])
+    faq_items += f_vragen[:1]          # wat er in de koopsom zit: direct na oplevering
     faq_items += prijs_vragen
+    faq_items += f_vragen[1:]
+    if "kopersopties" in f_gebruikt:
+        # "Publiceert X een optielijst? ... vonden wij niet" spreekt het kopersoptie-
+        # antwoord tegen; dat antwoord komt van dezelfde site en zegt meer.
+        site_vragen = [(q, a) for q, a in site_vragen if not q.startswith("Publiceert")]
     faq_items += site_vragen
-    faq_items += afgeleide_vragen(p, naam, plaats, lo, hi, won, buren,
-                                  _gemeenten()["per_slug"].get(p["plaats"]))
+    gas = gas_antwoord(slug, naam)
+    faq_items += [(q, gas if gas and q.startswith("Heeft ") and "gasaansluiting" in q else a)
+                  for q, a in afgeleide_vragen(p, naam, plaats, lo, hi, won, buren,
+                                               _gemeenten()["per_slug"].get(p["plaats"]))]
+    # Antwoorden zijn platte tekst: zowel de zichtbare lijst als het FAQ-schema escapen
+    # zelf. Een "&mdash;" in de bron kwam daardoor letterlijk op de pagina te staan.
+    faq_items = [(html.unescape(q), html.unescape(a)) for q, a in faq_items]
 
     faq_html = "<h2>Veelgestelde vragen over " + E(naam) + "</h2>" + "".join(
         f"<h3>{E(q)}</h3><p>{E(ant)}</p>" for q, ant in faq_items)
@@ -2264,7 +2365,7 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
 
     # Opgezocht handwerk. Leeg zolang er niets met bron is vastgelegd — dat is
     # de bedoeling en geen gebrek.
-    hand_html = handwerk_blok(slug, E(naam))
+    hand_html = handwerk_blok(slug, E(naam), f_gebruikt)
 
     # Direct na de keuzemomenten: daar staat wát er beslist moet worden, hier
     # staat wie het samen met je doet. Vóór de bedrijvenlijsten, want dit is de
