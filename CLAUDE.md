@@ -58,7 +58,8 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
 - Markten als taal-regio-subdir (`/en-us`, `/nl-be`, `/de`). NL staat op root — **niet verplaatsen**.
 - **Klus per gemeente staat op één plek: `/project/<klus>/<gemeente>/` (besluit Daniel, 23-10-2026).**
   De stadpagina's van `/renovatiekosten/` en `/offerte-check/<vak>/<stad>/` concurreerden met
-  `/project/` op dezelfde zoekopdracht; ze zijn weg en verwijzen door (vercel.json). Draai
+  `/project/` op dezelfde zoekopdracht; ze zijn weg en verwijzen door (vercel.json). Het overzicht
+  `/renovatiekosten/` en de 8 onderdeelpagina's (`/renovatiekosten/badkamer/` enz., Next) blijven. Draai
   `scripts/generate_cluster.py` of `make_vak_hubs.py` niet voor die twee: dan komen ze terug.
   De klussen van bestaande bouw (aanbouw, dakkapel, isolatie, duurzaam verbouwen, laadpaal,
   tuinbestrating, inductiekookplaat) staan op noindex tot de 11 klussen voor nieuwbouwkopers
