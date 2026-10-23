@@ -35,69 +35,74 @@ export const KLEUREN: Kleur[] = [
 ]
 export const kleurOp = (id: string | null | undefined) => KLEUREN.find(k => k.id === id) ?? null
 
-export type TypeId = 'pu' | 'epoxy' | 'cement'
+export type TypeId = 'fine' | 'cement' | 'lava' | 'concrete'
 export type VloerType = {
   id: TypeId; naam: string; kort: string; voor: string[]; tegen: string[]
-  vloerverwarming: string; prijs: [number, number]
+  /** Hoe druk de tekening is (1 rustig – 4 druk) en hoe makkelijk schoon te houden (1–5), uit de keuzehulp. */
+  tekening: number; schoon: number
+  prijsNiveau: '€€' | '€€€'
+  /** Indicatie per m² incl. btw. null tot Dr. Schutz de ranges met de verwerkers heeft afgestemd. */
+  prijs: [number, number] | null
+  kleuren: number
+  wand: boolean
+  vloerverwarming: string
+  /** Hoeveel wolk het staaltje in de ontwerper toont (0–1). */
+  wolk: number
 }
 
-// Prijzen: indicatie per m² inclusief btw. Afgeleid van de Bylder-prijsbenchmark voor
-// gietvloer (25%–75%: €70–€130 per m²), per type geschoven naar waar het materiaal en
-// het handwerk zitten. Geen offerte: die volgt na de opmeting.
+// DE VIER BIO-SYSTEMEN VAN DR. SCHUTZ (besluit Daniel, 23-10-2026; mail Lars 22-10-2026,
+// keuzehulp en webteksten). Gekozen op tekening, van rustig naar druk. De kwaliteit is bij
+// alle vier gelijk: Shore D80, 100% waterdicht, UV-stabiel, emissiearm en hypoallergeen.
+// Nog open bij Dr. Schutz: de prijsranges per regio, EC1 PLUS-keurmerk of "EC1+ Ready" per
+// systeem, vloerverwarming bij Cement, Lava en Concrete, en de kleurcodes. Tot dan noemen
+// we geen keurmerk en geen bedragen per systeem.
+const VVW_BEVESTIGD = 'Geschikt voor vloerverwarming.'
+const VVW_OPEN = 'Of deze vloer bij vloerverwarming past, bevestigt de verwerker bij de opmeting.'
 export const TYPES: VloerType[] = [
   {
-    id: 'pu', naam: 'PU-gietvloer', kort: 'Polyurethaan. De meest gekozen gietvloer in woningen.',
-    voor: [
-      'Voelt warmer en iets zachter aan dan epoxy',
-      'Dempt loopgeluid beter, de kamer galmt minder',
-      'Licht elastisch, dus minder gevoelig voor haarscheurtjes',
-      'Naadloos, ook door deuropeningen heen',
-    ],
-    tegen: [
-      'Duurder dan epoxy',
-      'Zware punten (stoelpoten, kasten) laten eerder een afdruk: vilt eronder',
-      'De toplaag wordt na een aantal jaren opnieuw gecoat',
-    ],
-    vloerverwarming: 'Goed: de vloer is een paar millimeter dik en geeft warmte snel door.',
-    prijs: [80, 115],
+    id: 'fine', naam: 'Bio Fine', kort: 'De rustigste tekening. Zacht, egaal en tijdloos.',
+    voor: ['Rustig en ruimtelijk, past bij elk interieur', 'Eenvoudig schoon te houden', 'Laat meubels en kunst de aandacht houden'],
+    tegen: ['Op een rustig vlak zie je kruimels en gebruikssporen sneller'],
+    tekening: 1, schoon: 4, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
+    vloerverwarming: VVW_BEVESTIGD, wolk: 0.15,
   },
   {
-    id: 'epoxy', naam: 'Epoxy-gietvloer', kort: 'Hard en slijtvast. Vaak gekozen voor garage, berging of werkruimte.',
-    voor: [
-      'Heel hard en slijtvast',
-      'Bestand tegen vlekken en schoonmaakmiddelen',
-      'De voordeligste gietvloer per m²',
-    ],
-    tegen: [
-      'Voelt harder en kouder aan',
-      'Meer loopgeluid en galm in een woonkamer',
-      'Kan in fel zonlicht na verloop van tijd vergelen',
-      'Weinig elastisch: scheurtjes in de ondervloer kunnen doorkomen',
-    ],
-    vloerverwarming: 'Kan, maar de vloer voelt harder aan. In een woonkamer kiezen de meeste kopers PU.',
-    prijs: [65, 90],
+    id: 'cement', naam: 'Bio Cement', kort: 'Een subtiele wolkentekening met de sfeer van gepolijst cement.',
+    voor: ['Industriële uitstraling zonder dat het onrustig wordt', 'Meer levendigheid dan Bio Fine', 'Gebruikssporen vallen minder op'],
+    tegen: ['Iets meer aandacht bij het schoonmaken dan Bio Fine'],
+    tekening: 2, schoon: 3, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
+    vloerverwarming: VVW_OPEN, wolk: 0.5,
   },
   {
-    id: 'cement', naam: 'Cementgebonden (microcement)', kort: 'Minerale vloer met de levendige, wolkerige betonlook.',
-    voor: [
-      'Echte minerale uitstraling, elke vloer is anders',
-      'Mat en levendig, met wolken en nuances',
-      'Ook op wanden, trap en in de badkamer door te zetten',
-    ],
-    tegen: [
-      'Handwerk: de uitstraling hangt af van de verwerker',
-      'Poreuzer: de afwerklaag en het onderhoud zijn belangrijk tegen vlekken',
-      'Haarscheurtjes horen bij het materiaal',
-      'Duurder door het vele handwerk',
-    ],
-    vloerverwarming: 'Goed, mits de dekvloer droog genoeg is en de verwarming volgens schema is opgestookt.',
-    prijs: [100, 145],
+    id: 'lava', naam: 'Bio Lava', kort: 'Levendig en vol karakter, met duidelijke wolken en echte lavasteentjes.',
+    voor: ['Geeft je ruimte direct karakter', 'Vuil en gebruikssporen vallen nauwelijks op door de lavasteentjes'],
+    tegen: ['Een uitgesproken tekening waar je van moet houden', 'Vraagt het meeste aandacht bij het schoonmaken'],
+    tekening: 3, schoon: 2, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
+    vloerverwarming: VVW_OPEN, wolk: 0.75,
+  },
+  {
+    id: 'concrete', naam: 'Bio Concrete', kort: 'De drukste tekening, met de echte uitstraling van beton of natuursteen.',
+    voor: ['Volledig met diamant geslepen, daardoor extreem glad', 'Het makkelijkst schoon te houden van de vier',
+      'Oogt als echt beton of natuursteen', 'De enige van de vier die ook op de wanden kan'],
+    tegen: ['Een stap duurder door het extra slijpwerk en de extra arbeid', 'De drukste tekening: je moet ervan houden'],
+    tekening: 4, schoon: 5, prijsNiveau: '€€€', prijs: null, kleuren: 10, wand: true,
+    vloerverwarming: VVW_OPEN, wolk: 0.95,
   },
 ]
 export const typeOp = (id: string | null | undefined) => TYPES.find(t => t.id === id) ?? null
 
+/** Wat voor alle vier geldt (keuzehulp Dr. Schutz). */
+export const VOOR_ALLE = [
+  'Shore D80: zeer krasvast en slijtvast',
+  '100% waterdicht, ook voor badkamer, keuken en bijkeuken',
+  'UV-stabiel: vergeelt niet, ook voor een grote raampartij',
+  'Emissiearm en hypoallergeen',
+  'Naadloos en met de hand gelegd: geen twee vloeren zijn hetzelfde',
+]
+
 // Kamers die bij een nieuwe keuze standaard uit staan.
-export const NIET_GIET = /^(toilet|badkamer|meterkast|wasruimte|trap|berging|technische)/i
+// De badkamer en de wasruimte staan sinds 23-10-2026 aan: alle vier Bio-systemen zijn waterdicht.
+export const NIET_GIET = /^(toilet|meterkast|trap|berging|technische)/i
 
 /* ---------------------------------------------------------------- analyse en keuze */
 
@@ -223,5 +228,6 @@ export const isLicht = (hex: string) => {
   return 0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255) > 150
 }
 
-/** Indicatie per m² voor een gietvloer in een woning (PU, incl. btw), voor Mijn woning. */
-export const GIET_PRIJS_M2 = TYPES.find(t => t.id === 'pu')!.prijs
+/** Indicatie per m² voor een gietvloer in een woning (incl. btw), voor Mijn woning: de Bylder-
+ *  prijsbenchmark voor gietvloer, 25%–75%. Vervangen door de ranges per systeem zodra die er zijn. */
+export const GIET_PRIJS_M2: [number, number] = [70, 130]
