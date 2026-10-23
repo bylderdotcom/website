@@ -1,0 +1,79 @@
+name: Woonwinkels uit OpenStreetMap (maandelijks)
+
+# Ververst data/winkels-osm.json: woonwinkels per producttype in heel Nederland, uit het
+# Geofabrik-extract van OpenStreetMap. Uitleg en bronvermelding: kop van scripts/osm_winkels.py.
+#
+# WAAROM DIT ZELF NAAR MAIN GAAT (besluit Daniel, 23-10-2026, zelfde regeling als de feitenronde)
+# Een tak die op een handmatige PR wacht, blijft liggen. De ronde commit daarom zelf, maar
+# alleen als het aantal winkels niet meer dan 20% lager is dan de vorige keer en er minstens
+# 1.500 zijn: een grote daling wijst op een kapot extract of een kapotte filter, niet op
+# winkels die verdwenen. Anders een tak en een issue.
+
+on:
+  schedule:
+    - cron: "17 4 3 * *"   # de 3e van de maand, 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: osm-winkels
+  cancel-in-progress: false
+
+jobs:
+  verversen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Osmium en het extract van Nederland
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y osmium-tool > /dev/null
+          curl -sSL -o /tmp/nl.osm.pbf https://download.geofabrik.de/europe/netherlands-latest.osm.pbf
+          osmium tags-filter /tmp/nl.osm.pbf nwr/shop -o /tmp/shops.osm.pbf
+          osmium export /tmp/shops.osm.pbf -f geojsonseq -o /tmp/shops.geojsonseq \
+            --geometry-types=point,polygon -a id
+
+      - name: Omzetten
+        run: |
+          VORIG=$(python3 -c "import json;print(json.load(open('data/winkels-osm.json'))['aantal'])" 2>/dev/null || echo 0)
+          echo "VORIG=$VORIG" >> "$GITHUB_ENV"
+          python3 scripts/osm_winkels.py /tmp/shops.geojsonseq | tee /tmp/uit.log
+
+      - name: Controle
+        id: controle
+        run: |
+          NU=$(python3 -c "import json;print(json.load(open('data/winkels-osm.json'))['aantal'])")
+          echo "nu=$NU" >> "$GITHUB_OUTPUT"
+          if [ "$NU" -lt 1500 ] || [ "$VORIG" -gt 0 -a $(( NU * 100 / VORIG )) -lt 80 ]; then
+            echo "ok=nee" >> "$GITHUB_OUTPUT"
+            echo "::warning::$NU winkels, vorige keer $VORIG: te groot verschil"
+          else
+            echo "ok=ja" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Naar main
+        if: steps.controle.outputs.ok == 'ja'
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          git add data/winkels-osm.json
+          if git diff --staged --quiet; then echo "Niets veranderd."; exit 0; fi
+          git commit -q -m "Woonwinkels uit OpenStreetMap ververst: ${{ steps.controle.outputs.nu }} winkels (was $VORIG)"
+          git pull -q --rebase origin main && git push -q origin HEAD:main
+
+      - name: Tak en issue bij een te groot verschil
+        if: steps.controle.outputs.ok == 'nee'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          TAK="osm-winkels-$(date +%Y%m%d)"
+          git checkout -q -b "$TAK" && git add data/winkels-osm.json
+          git commit -q -m "Woonwinkels uit OpenStreetMap (niet naar main: te groot verschil)" && git push -q origin "$TAK"
+          gh issue create --title "Woonwinkels uit OpenStreetMap: niet gepubliceerd" \
+            --body "$(printf 'De maandelijkse ronde vond %s winkels, vorige keer %s. Dat verschil is te groot om zonder kijken te publiceren.\n\nDe uitkomst staat op de tak `%s`.\n\nRun: %s' "${{ steps.controle.outputs.nu }}" "$VORIG" "$TAK" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}")"
