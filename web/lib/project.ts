@@ -9,6 +9,7 @@ import path from 'node:path'
 import { metKennisbank } from './kennisbank-links'
 import { zonderOudKopstuk, zonderKaleNavRegel } from './oud-kopstuk'
 import { RASTER_SJABLOON_CSS } from './raster'
+import { KLUSSEN, lokaal, lokaalHtml, vragen } from './klus-lokaal'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'project'
@@ -33,6 +34,9 @@ export type ProjectPage = {
 }
 
 type Vakstad = { city: string; city_slug: string; prov: string; prov_slug: string; template: string }
+
+/** Waar page.tsx de commerciële stap (CommercieleStap) tussen de HTML zet. */
+export const STAP_PLEK = '<!--klus-stap-->'
 
 function decodeEntities(s: string): string {
   return s
@@ -92,6 +96,19 @@ function getMainHtmlRaw(page: ProjectPage): string {
     const v = getVaksteden()[page.slug]
     // Ook hier het ingebakken menu eruit — dit pad sloeg het knipwerk over.
     let body = zonderOudKopstuk(readTpl(`content.vakstad.${v.template}.html`))
+    // De prijzen zijn landelijk; "gecorrigeerd voor regio" klopte niet (23-10-2026).
+    body = body.replace('Bylder vergelijkt jouw offerte automatisch met deze prijzen, gecorrigeerd voor regio {{prov}}.',
+      'Landelijke richtprijzen 2026. Bylder vergelijkt jouw offerte met deze prijzen; lokaal kan het afwijken.')
+    // Lokale inhoud en de commerciële stap direct onder de prijzen (zie klus-lokaal.ts). De
+    // stap is React en komt in page.tsx op de plek van STAP_PLEK; de sections staan hier op
+    // het hoogste niveau, dus knippen daar breekt geen element.
+    const [klus] = page.slug.split('/')
+    const l = lokaal(klus, v.city_slug, v.city)
+    const eindPrijzen = body.indexOf('</section>', body.indexOf('id="prijzen"'))
+    if (eindPrijzen > 0) {
+      const na = eindPrijzen + '</section>'.length
+      body = body.slice(0, na) + (l ? lokaalHtml(l) : '') + STAP_PLEK + body.slice(na)
+    }
     body = body
       .replaceAll('{{city}}', v.city)
       .replaceAll('{{city_slug}}', v.city_slug)
@@ -104,7 +121,9 @@ function getMainHtmlRaw(page: ProjectPage): string {
 
 function parseRobots(robots?: string) {
   if (!robots) return { index: true, follow: true }
-  if (robots.includes('noindex')) return { index: false, follow: false }
+  // noindex mag follow niet meeslepen: de bestaande-bouw-klussen staan op noindex, maar hun
+  // links naar de andere klussen en de vakbedrijven moeten blijven tellen (23-10-2026).
+  if (robots.includes('noindex')) return { index: false, follow: !robots.includes('nofollow') }
   const r: any = { index: true, follow: true }
   if (robots.includes('max-snippet:-1')) r['max-snippet'] = -1
   if (robots.includes('max-image-preview:large')) r['max-image-preview'] = 'large'
@@ -112,10 +131,52 @@ function parseRobots(robots?: string) {
   return r
 }
 
+/** Titel en omschrijving op de zoekopdracht ("badkamer renovatie utrecht kosten"), met wat er
+ *  lokaal te vinden is. Alleen voor de klussen in KLUSSEN; de rest houdt de oude titel. */
+function lokaleMeta(page: ProjectPage): { title: string; description: string } | null {
+  if (page.content_kind !== 'vakstad') return null
+  const v = getVaksteden()[page.slug], [klus] = page.slug.split('/')
+  const l = KLUSSEN[klus] ? lokaal(klus, v.city_slug, v.city) : null
+  if (!l) return null
+  const n = l.bedrijven.reduce((s, b) => s + b.totaal, 0)
+  const kort = l.klus.naam.toLowerCase()
+  const opties = [
+    n ? `${l.klus.naam} ${v.city}: kosten 2026 en ${n} vakbedrijven | Bylder` : '',
+    l.winkelsTotaal ? `${l.klus.naam} ${v.city}: kosten 2026 en ${l.winkelsTotaal} showrooms | Bylder` : '',
+    `${l.klus.naam} ${v.city}: kosten 2026 | Bylder`,
+  ].filter(Boolean)
+  const title = opties.find(t => t.length <= 68) ?? opties[opties.length - 1]
+  const stukken = [
+    n ? `${n} ${l.bedrijven.map(b => b.wie).join(' en ')} met reviews` : '',
+    l.winkelsTotaal ? `${l.winkelsTotaal} winkels voor ${l.klus.winkelsLabel} binnen 15 km` : '',
+  ].filter(Boolean)
+  const description = `Wat kost ${kort} in ${v.city}? Richtprijzen 2026${stukken.length ? ', ' + stukken.join(', ') : ''}. ` +
+    `Laat je offerte gratis checken en krijg ledenkorting.`
+  return { title, description }
+}
+
+/** De JSON-LD van de pagina, met de lokale vragen erbij in het FAQ-schema. */
+export function getLdjson(page: ProjectPage): string[] {
+  if (page.content_kind !== 'vakstad') return page.ldjson
+  const v = getVaksteden()[page.slug], [klus] = page.slug.split('/')
+  const l = KLUSSEN[klus] ? lokaal(klus, v.city_slug, v.city) : null
+  const extra = l ? vragen(l) : []
+  if (!extra.length) return page.ldjson
+  return page.ldjson.map(block => {
+    try {
+      const d = JSON.parse(block)
+      if (d['@type'] !== 'FAQPage') return block
+      d.mainEntity = [...(d.mainEntity ?? []), ...extra.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } }))]
+      return JSON.stringify(d)
+    } catch { return block }
+  })
+}
+
 export function toMetadata(page: ProjectPage) {
   const url = SITE + page.path
-  const title = decodeEntities(page.title)
-  const description = decodeEntities(page.description)
+  const lok = lokaleMeta(page)
+  const title = lok?.title ?? decodeEntities(page.title)
+  const description = lok?.description ?? decodeEntities(page.description)
   return {
     title,
     description,
@@ -123,8 +184,8 @@ export function toMetadata(page: ProjectPage) {
     robots: parseRobots(page.robots),
     openGraph: {
       type: (page.og_type as any) || 'website',
-      title: decodeEntities(page.og_title || page.title),
-      description: decodeEntities(page.og_description || page.description),
+      title: lok?.title ?? decodeEntities(page.og_title || page.title),
+      description: lok?.description ?? decodeEntities(page.og_description || page.description),
       url,
       ...(page.og_image ? { images: [{ url: page.og_image }] } : {}),
     },
