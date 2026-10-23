@@ -1,0 +1,63 @@
+name: OSM-telling woonwinkels (eenmalig onderzoek)
+
+# Eenmalig onderzoek (23-10-2026): hoeveel winkels per producttype staan er in
+# OpenStreetMap voor heel Nederland? Overpass gaf time-outs op landelijke vragen; dit telt
+# het Geofabrik-bestand van Nederland zelf. Alleen lezen, schrijft niets. Draait alleen op de
+# werktak van de assistent en wordt na het onderzoek weer verwijderd.
+on:
+  push:
+    branches: [claude/stoic-wright-0zidpm]
+    paths: [.github/workflows/osm-telling.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  tel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Osmium en het bestand van Nederland
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y osmium-tool > /dev/null
+          curl -sSL -o nl.osm.pbf https://download.geofabrik.de/europe/netherlands-latest.osm.pbf
+          ls -la nl.osm.pbf
+          osmium fileinfo -e nl.osm.pbf | grep -iE "timestamp|Number of" | head -6
+      - name: Winkels en bedrijven eruit
+        run: |
+          osmium tags-filter nl.osm.pbf nwr/shop nwr/craft nwr/office=company -o sel.osm.pbf
+          osmium export sel.osm.pbf -f geojsonseq -o sel.geojsonseq --geometry-types=point,polygon
+      - name: Tellen
+        run: |
+          python3 - <<'PY'
+          import json, re, collections
+          TAGS = ['bathroom_furnishing','tiles','flooring','carpet','kitchen','lighting','curtain','window_blind',
+                  'bed','furniture','paint','interior_decoration','doors','doityourself','houseware','trade',
+                  'fireplace','glaziery','windows','hardware','garden_centre','wallpaper']
+          tel = collections.Counter(); web = collections.Counter(); adres = collections.Counter(); open_ = collections.Counter()
+          naam = collections.Counter(); voorbeeld = collections.defaultdict(list); craft = collections.Counter()
+          for regel in open('sel.geojsonseq', encoding='utf-8'):
+              regel = regel.lstrip('\x1e').strip()
+              if not regel: continue
+              p = json.loads(regel)['properties']
+              s = p.get('shop')
+              if s in TAGS:
+                  tel[s] += 1
+                  if p.get('website') or p.get('contact:website'): web[s] += 1
+                  if p.get('addr:street'): adres[s] += 1
+                  if p.get('opening_hours'): open_[s] += 1
+              if p.get('craft') in ('tiler','floorer','carpenter','painter','plasterer','plumber','electrician','window_construction','kitchen'):
+                  craft[p['craft']] += 1
+              n = (p.get('name') or '').lower()
+              for w in ('gietvloer', 'binnendeur', 'kozijn', 'badkamer', 'tegel', 'keuken', 'vloer'):
+                  if w in n:
+                      naam[w] += 1
+                      if len(voorbeeld[w]) < 5: voorbeeld[w].append(f"{p.get('name')} ({s or p.get('craft') or p.get('office')})")
+          print(f"{'shop':24}{'totaal':>8}{'website':>9}{'adres':>8}{'openingstijden':>16}")
+          for t in TAGS:
+              print(f"{t:24}{tel[t]:>8}{web[t]:>9}{adres[t]:>8}{open_[t]:>16}")
+          print('\ncraft (vakbedrijven):', dict(craft))
+          print('\nnaam bevat (shop, craft of office=company):')
+          for w, n in naam.most_common():
+              print(f'  {w:12}{n:>6}   bv. ' + '; '.join(voorbeeld[w]))
+          PY
