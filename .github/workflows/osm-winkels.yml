@@ -48,7 +48,10 @@ jobs:
         run: |
           NU=$(python3 -c "import json;print(json.load(open('data/winkels-osm.json'))['aantal'])")
           echo "nu=$NU" >> "$GITHUB_OUTPUT"
-          if [ "$NU" -lt 1500 ] || [ "$VORIG" -gt 0 -a $(( NU * 100 / VORIG )) -lt 80 ]; then
+          # Eerste keer (VORIG=0): alleen de ondergrens. Bash rekent de deling binnen [ ] altijd uit,
+          # ook achter -a, dus de vergelijking met de vorige keer staat apart.
+          TE_LAAG=$(python3 -c "n,v=$NU,$VORIG; print('ja' if n < 1500 or (v > 0 and n < 0.8 * v) else 'nee')")
+          if [ "$TE_LAAG" = ja ]; then
             echo "ok=nee" >> "$GITHUB_OUTPUT"
             echo "::warning::$NU winkels, vorige keer $VORIG: te groot verschil"
           else
