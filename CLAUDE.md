@@ -56,6 +56,13 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
   `web/build.sh` (stap 4) zet het bij elke build op alle statische pagina's. Menu wijzigen =
   alleen dat bestand. Geen veegrondes over de HTML meer.
 - Markten als taal-regio-subdir (`/en-us`, `/nl-be`, `/de`). NL staat op root — **niet verplaatsen**.
+- **Klus per gemeente staat op één plek: `/project/<klus>/<gemeente>/` (besluit Daniel, 23-10-2026).**
+  De stadpagina's van `/renovatiekosten/` en `/offerte-check/<vak>/<stad>/` concurreerden met
+  `/project/` op dezelfde zoekopdracht; ze zijn weg en verwijzen door (vercel.json). Draai
+  `scripts/generate_cluster.py` of `make_vak_hubs.py` niet voor die twee: dan komen ze terug.
+  De klussen van bestaande bouw (aanbouw, dakkapel, isolatie, duurzaam verbouwen, laadpaal,
+  tuinbestrating, inductiekookplaat) staan op noindex tot de 11 klussen voor nieuwbouwkopers
+  bewijzen dat de aanpak werkt.
 
 ## Standing orders (gelden voor elke wijziging hier)
 - **Volledige optimalisatie standaard.** Elke nieuwe/aangepaste publieke pagina krijgt ongevraagd SEO/GEO/AEO/structured-data/CRO/CWV/a11y/E-E-A-T. Optimalisatie = onderdeel van "klaar".

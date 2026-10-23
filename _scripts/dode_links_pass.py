@@ -11,7 +11,8 @@
 # de volgende; deze stap draait bij elke build over het eindresultaat en houdt het dicht.
 #
 # Wat "bestaat" is: een bestand in de output (map/index.html, bestand.html of bestand), of een
-# pad dat een redirect of rewrite uit vercel.json opvangt (die werkt gewoon). Redirects met een
+# pad dat een redirect of rewrite uit vercel.json opvangt (die werkt gewoon). Een link naar een
+# redirect met een bestaand doel gaat sinds 23-10-2026 meteen naar dat doel. Redirects met een
 # host-voorwaarde (bylder.com → www) tellen niet mee: die vangen alles.
 #
 # Voorbeelden: /stukadoor/zuidwolde/ → /stukadoor/; /nieuwbouw/zeeland/terneuzen/terneuzen-west/
@@ -42,13 +43,14 @@ BESTAND = re.compile(r'\.(?!html?$)[a-z0-9]{2,5}$', re.I)
 
 
 def bron_regex(bron):
-    """Een Vercel-source (/x/:pad*, /y/(.*), /z/:slug) als regex voor het hele pad."""
+    """Een Vercel-source (/x/:pad*, /y/(.*), /z/:slug) als regex voor het hele pad, met de
+    benoemde stukken als groep, zodat een doel als /project/badkamer/:stad/ in te vullen is."""
     uit, i = '', 0
     while i < len(bron):
         c = bron[i]
         if c == ':':
             m = re.match(r':(\w+)([*+?])?', bron[i:])
-            uit += '.*' if m.group(2) in ('*', '+') else '[^/]+'
+            uit += f"(?P<{m.group(1)}>{'.*' if m.group(2) in ('*', '+') else '[^/]+'})"
             if m.group(2) == '?':
                 uit += '?'
             i += len(m.group(0))
@@ -63,9 +65,19 @@ def bron_regex(bron):
 
 
 def vercel_bronnen():
+    """[(regex, doel)] in de volgorde van vercel.json (de eerste die past wint, net als bij
+    Vercel). Doel is None bij een rewrite: die werkt, maar het adres blijft hetzelfde."""
     d = json.load(open(os.path.join(ROOT, 'vercel.json'), encoding='utf-8'))
-    regels = [r for r in d.get('redirects', []) + d.get('rewrites', []) if 'has' not in r]
-    return [bron_regex(r['source']) for r in regels]
+    return [(bron_regex(r['source']), r['destination']) for r in d.get('redirects', []) if 'has' not in r] + \
+           [(bron_regex(r['source']), None) for r in d.get('rewrites', []) if 'has' not in r]
+
+
+def ingevuld(m, doel):
+    """Het doel van een redirect met de stukken uit het pad ingevuld, of None als dat niet
+    zeker kan (extern doel, $1-verwijzing)."""
+    if not doel or not doel.startswith('/') or '$' in doel:
+        return None
+    return re.sub(r':(\w+)\*?', lambda g: m.groupdict().get(g.group(1)) or '', doel)
 
 
 def bestaande_paden(out):
@@ -93,8 +105,16 @@ def main():
         if pad in besluit:
             return besluit[pad]
         nieuw = pad
-        if not (pad in paden or pad + '/' in paden or pad.startswith(('/api/', '/_next/'))
-                or '//' in pad or BESTAND.search(pad) or any(b.match(pad) for b in bronnen)):
+        # Een redirect gaat vóór een bestand, net als bij Vercel. Is het doel er, dan linkt de
+        # pagina er meteen heen in plaats van via de omweg (bv. de samengevoegde
+        # /renovatiekosten/badkamer/utrecht/ → /project/badkamer-renovatie/utrecht/, 23-10-2026).
+        r = next(((rx.match(pad), d) for rx, d in bronnen if rx.match(pad)), None)
+        if r:
+            via = ingevuld(*r)
+            if via and (via in paden or via + '/' in paden):
+                nieuw = via
+        elif not (pad in paden or pad + '/' in paden or pad.startswith(('/api/', '/_next/'))
+                  or '//' in pad or BESTAND.search(pad)):
             delen = pad.strip('/').split('/')
             nieuw = '/'
             for n in range(len(delen) - 1, 0, -1):
