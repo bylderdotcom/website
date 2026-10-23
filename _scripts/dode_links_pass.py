@@ -20,7 +20,9 @@
 # Raakt ook de RSC-payload in Next-pagina's (href=\"…\"), zodat de HTML en de payload gelijk
 # blijven. Schrijft alleen bestanden die echt veranderen.
 #
-# Gebruik:  python3 _scripts/dode_links_pass.py <out-map> [--droog]
+# Gebruik:  python3 _scripts/dode_links_pass.py <out-map> [--droog] [--rapport <bestand>]
+#   --droog    niets schrijven, alleen tellen
+#   --rapport  per dood linkdoel een regel "oud<TAB>nieuw" naar <bestand>
 import collections
 import json
 import os
@@ -126,6 +128,9 @@ def main():
                         f.write(nieuw_html)
 
     dood = sorted(p for p, n in besluit.items() if n != p)
+    if '--rapport' in sys.argv:
+        with open(sys.argv[sys.argv.index('--rapport') + 1], 'w', encoding='utf-8') as f:
+            f.writelines(f'{p}\t{besluit[p]}\n' for p in dood)
     print(f'  {len(dood)} dode linkdoelen, {links} links in {bestanden} pagina\'s omgezet'
           + (' (droog: niets geschreven)' if droog else ''))
     for groep, n in per_groep.most_common(12):
