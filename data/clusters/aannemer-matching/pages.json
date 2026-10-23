@@ -2196,7 +2196,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Aannemer vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde aannemers in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Aannemer vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde aannemers in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Aannemer vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -7554,7 +7554,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Elektricien vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde elektriciens in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Elektricien vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde elektriciens in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Elektricien vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -12912,7 +12912,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Hovenier vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde hoveniers in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Hovenier vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde hoveniers in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Hovenier vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -18284,7 +18284,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Isolatiebedrijf vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde isolatiebedrijfs in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Isolatiebedrijf vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde isolatiebedrijfs in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Isolatiebedrijf vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -23642,7 +23642,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Loodgieter vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde loodgieters in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Loodgieter vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde loodgieters in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Loodgieter vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -29000,7 +29000,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Schilder vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde schilders in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Schilder vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde schilders in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Schilder vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -34358,7 +34358,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Stukadoor vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde stukadoors in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Stukadoor vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde stukadoors in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Stukadoor vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -39716,7 +39716,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Tegelzetter vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde tegelzetters in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Tegelzetter vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde tegelzetters in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Tegelzetter vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -45074,7 +45074,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Timmerman vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde timmermans in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Timmerman vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde timmermans in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Timmerman vinden — betrouwbaar &amp; gecertificeerd | Bylder",
@@ -50432,7 +50432,7 @@
   "footer": "v11",
   "aside": null,
   "ldjson": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Vloerenlegger vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde vloerenleggers in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"99\",\"priceCurrency\":\"EUR\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Vloerenlegger vinden via Bylder\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Bylder Nederland B.V.\",\"url\":\"https://bylder.com\"},\"description\":\"Bylder matcht kopers met gecertificeerde vloerenleggers in heel Nederland. Inclusief offerte-check en kortingsvouchers.\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Nederland\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"EUR\",\"description\":\"Gratis voor bewoners\"}}\n"
   ],
   "ldjson_sep": "",
   "og_title": "Vloerenlegger vinden — betrouwbaar &amp; gecertificeerd | Bylder",

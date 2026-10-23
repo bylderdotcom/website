@@ -165,9 +165,9 @@ def build_json_ld(row: dict) -> str:
         "serviceType": "Kopersbegeleiding nieuwbouw",
         "offers": {
             "@type": "Offer",
-            "price": "99",
+            "price": "0",
             "priceCurrency": "EUR",
-            "description": "Eenmalig lidmaatschap inclusief AI Kopersbegeleider en vouchers"
+            "description": "Gratis voor bewoners, inclusief AI-kopersbegeleider en vouchers"
         }
     }
 
