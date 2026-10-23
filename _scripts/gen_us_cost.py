@@ -62,6 +62,7 @@ METROS = [
 
 # Hand-gemaakte pijler-/guide-pagina's (niet gegenereerd, wel in de sitemap)
 GUIDE_PATHS = [
+  "/en-us/upgrade-check/",
   "/en-us/guides/",
   "/en-us/guides/are-builder-upgrades-worth-it/",
   "/en-us/guides/is-my-contractor-quote-too-high/",
@@ -86,7 +87,7 @@ HEAD = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, follow">
 <link rel="canonical" href="{canonical}">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
@@ -230,7 +231,8 @@ def main():
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm+=f'<url><loc>{BASE}/en-us/</loc><priority>0.9</priority></url>\n'
     for g in GUIDE_PATHS: sm+=f'<url><loc>{BASE}{g}</loc><priority>0.8</priority></url>\n'
-    for u in urls: sm+=f'<url><loc>{u}</loc></url>\n'
+    # De kostenpagina's staan sinds 23-10-2026 op noindex en dus niet in de sitemap (besluit
+    # Daniel): 1 klik in drie maanden, positie 14-47 tegen Angi/HomeAdvisor. Zie CLAUDE.md, VS.
     sm+='</urlset>\n'
     write(f"{ROOT}/en-us-sitemap.xml", sm)
     print(f"Gegenereerd: {len(urls)} pagina's ({len(PROJECTS)} projecten x {len(METROS)} steden + hubs)")
