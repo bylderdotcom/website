@@ -16,16 +16,6 @@
       "permanent": true
     },
     {
-      "source": "/renovatiekosten/aanbouw",
-      "destination": "/project/aanbouw-realiseren/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/aanbouw/",
-      "destination": "/project/aanbouw-realiseren/",
-      "permanent": true
-    },
-    {
       "source": "/renovatiekosten/badkamer/:stad",
       "destination": "/project/badkamer-renovatie/:stad/",
       "permanent": true
@@ -33,16 +23,6 @@
     {
       "source": "/renovatiekosten/badkamer/:stad/",
       "destination": "/project/badkamer-renovatie/:stad/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/badkamer",
-      "destination": "/project/badkamer-renovatie/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/badkamer/",
-      "destination": "/project/badkamer-renovatie/",
       "permanent": true
     },
     {
@@ -56,16 +36,6 @@
       "permanent": true
     },
     {
-      "source": "/renovatiekosten/dakkapel",
-      "destination": "/project/dakkapel-plaatsen/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/dakkapel/",
-      "destination": "/project/dakkapel-plaatsen/",
-      "permanent": true
-    },
-    {
       "source": "/renovatiekosten/gietvloer/:stad",
       "destination": "/project/gietvloer-leggen/:stad/",
       "permanent": true
@@ -73,16 +43,6 @@
     {
       "source": "/renovatiekosten/gietvloer/:stad/",
       "destination": "/project/gietvloer-leggen/:stad/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/gietvloer",
-      "destination": "/project/gietvloer-leggen/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/gietvloer/",
-      "destination": "/project/gietvloer-leggen/",
       "permanent": true
     },
     {
@@ -96,16 +56,6 @@
       "permanent": true
     },
     {
-      "source": "/renovatiekosten/keuken",
-      "destination": "/project/keuken-monteren/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/keuken/",
-      "destination": "/project/keuken-monteren/",
-      "permanent": true
-    },
-    {
       "source": "/renovatiekosten/schilderwerk/:stad",
       "destination": "/project/schilderwerk-binnen/:stad/",
       "permanent": true
@@ -113,16 +63,6 @@
     {
       "source": "/renovatiekosten/schilderwerk/:stad/",
       "destination": "/project/schilderwerk-binnen/:stad/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/schilderwerk",
-      "destination": "/project/schilderwerk-binnen/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/schilderwerk/",
-      "destination": "/project/schilderwerk-binnen/",
       "permanent": true
     },
     {
@@ -136,16 +76,6 @@
       "permanent": true
     },
     {
-      "source": "/renovatiekosten/warmtepomp",
-      "destination": "/project/duurzaam-verbouwen/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/warmtepomp/",
-      "destination": "/project/duurzaam-verbouwen/",
-      "permanent": true
-    },
-    {
       "source": "/renovatiekosten/zonnepanelen/:stad",
       "destination": "/project/duurzaam-verbouwen/:stad/",
       "permanent": true
@@ -153,26 +83,6 @@
     {
       "source": "/renovatiekosten/zonnepanelen/:stad/",
       "destination": "/project/duurzaam-verbouwen/:stad/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/zonnepanelen",
-      "destination": "/project/duurzaam-verbouwen/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/zonnepanelen/",
-      "destination": "/project/duurzaam-verbouwen/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten",
-      "destination": "/project/",
-      "permanent": true
-    },
-    {
-      "source": "/renovatiekosten/",
-      "destination": "/project/",
       "permanent": true
     },
     {
