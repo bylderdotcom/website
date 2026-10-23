@@ -496,13 +496,13 @@ def build_hub():
         "@context": "https://schema.org", "@type": "SoftwareApplication",
         "name": "Bylder 3D-sfeerimpressie", "applicationCategory": "DesignApplication",
         "operatingSystem": "Web",
-        "offers": {"@type": "Offer", "price": "99", "priceCurrency": "EUR", "description": "Eenmalig Bylder-lidmaatschap"},
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "description": "Gratis voor bewoners"},
         "description": desc,
     }
     qa = [
         ("Wat is een 3D-sfeerimpressie?", "Een 3D-sfeerimpressie is een realistische weergave van hoe een ruimte eruit kan zien, gegenereerd uit je plattegrond. Het laat materialen, kleuren en sfeer zien, zodat je je nieuwe woning kunt ervaren vóór de afwerking en inrichting vaststaan."),
         ("Hoe maakt Bylder de impressie?", "Je uploadt je plattegrond of bouwtekening in je Bylder-dashboard en kiest een van de zes interieurstijlen. De AI genereert binnen enkele minuten een sfeerimpressie van je ruimte in die stijl."),
-        ("Is het gratis?", "Een account aanmaken en je plattegrond uploaden is gratis. Het genereren van 3D-sfeerimpressies zit in het Bylder-lidmaatschap (eenmalig €99), waarmee je tot tien impressies per maand maakt en kortingen bij 60+ woonmerken activeert."),
+        ("Is het gratis?", "Ja. Een account aanmaken, je plattegrond uploaden en 3D-sfeerimpressies genereren is gratis voor bewoners: je maakt tot tien impressies per maand en activeert kortingen bij 56 woonmerken."),
         ("Vervangt dit een interieurontwerper of bouwtekening?", "Nee. Een sfeerimpressie is bedoeld om snel te verkennen, keuzes te maken en te communiceren. Voor een definitief ontwerp of een bouwvergunning blijven een interieurontwerper en gecertificeerde tekeningen nodig."),
         ("Voor welke woningen werkt het?", "Voor nieuwbouw, bestaande bouw én renovatie. De tool is woningtype-bewust, zodat de impressie aansluit op jouw situatie."),
     ]
