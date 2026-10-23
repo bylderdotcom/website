@@ -6,6 +6,46 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/voorwaarden",
+      "destination": "/algemene-voorwaarden/",
+      "permanent": true
+    },
+    {
+      "source": "/voorwaarden/",
+      "destination": "/algemene-voorwaarden/",
+      "permanent": true
+    },
+    {
+      "source": "/privacyverklaring",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacyverklaring/",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/over",
+      "destination": "/over-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/over/",
+      "destination": "/over-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/disclaimer",
+      "destination": "/algemene-voorwaarden/",
+      "permanent": true
+    },
+    {
+      "source": "/disclaimer/",
+      "destination": "/algemene-voorwaarden/",
+      "permanent": true
+    },
+    {
       "source": "/login",
       "destination": "https://app.bylder.com/inloggen",
       "permanent": false
