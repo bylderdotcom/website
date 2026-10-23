@@ -12,16 +12,6 @@
    "website": "http://www.markawonen.nl/"
   },
   {
-   "naam": "Woonmall Alexandrium",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.2,
-   "reviews": 1886,
-   "lat": 51.9515154,
-   "lng": 4.5626806,
-   "website": "https://www.woonmallalexandrium.nl/"
-  },
-  {
    "naam": "Table du Sud - Rotterdam",
    "cat": "meubelwinkel",
    "groep": "woonwinkel",
@@ -2712,26 +2702,6 @@
    "website": "http://www.talensshopinshop.nl/"
   },
   {
-   "naam": "Kilinclar Automaterialen Schiedam",
-   "cat": "verf",
-   "groep": "interieurwinkel",
-   "rating": 4.5,
-   "reviews": 122,
-   "lat": 51.910076499999995,
-   "lng": 4.4100068,
-   "website": "http://www.kilinclar.nl/"
-  },
-  {
-   "naam": "Kilinclar Automaterialen Spaanse polder",
-   "cat": "verf",
-   "groep": "interieurwinkel",
-   "rating": 4.4,
-   "reviews": 198,
-   "lat": 51.927873999999996,
-   "lng": 4.4185929999999995,
-   "website": "https://www.kilinclar.nl/"
-  },
-  {
    "naam": "RDR woning- en projectstoffering",
    "cat": "raamdecoratie",
    "groep": "interieurwinkel",
@@ -3370,16 +3340,6 @@
    "lat": 51.917204000000005,
    "lng": 4.3356684,
    "website": "https://www.velderhof.nl/winkels/vlaardingen?utm_source=GMB&utm_medium=organic&utm_campaign=vlaardingen"
-  },
-  {
-   "naam": "Boulevard Vlaardingen - Hoogstad",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 5,
-   "reviews": 1,
-   "lat": 51.916984299999996,
-   "lng": 4.336023,
-   "website": "https://boulevardvlaardingen.nl/"
   },
   {
    "naam": "Thuis Bij Serena",
@@ -6392,16 +6352,6 @@
    "website": "https://www.mskstores.nl/"
   },
   {
-   "naam": "S.M.R. Schouten Montage Ridderkerk",
-   "cat": "sanitair",
-   "groep": "interieurwinkel",
-   "rating": 4,
-   "reviews": 4,
-   "lat": 51.8789611,
-   "lng": 4.6127885,
-   "website": "http://www.schoutenmontage.nl/"
-  },
-  {
    "naam": "mafatelier",
    "cat": "verlichting",
    "groep": "interieurwinkel",
@@ -6440,16 +6390,6 @@
    "lat": 51.861113599999996,
    "lng": 4.5864079,
    "website": "http://www.snoeituinmaterialen.nl/"
-  },
-  {
-   "naam": "Toolstation Ridderkerk",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.5,
-   "reviews": 79,
-   "lat": 51.8709374,
-   "lng": 4.605330299999999,
-   "website": "https://www.toolstation.nl/?utm_source=Local&utm_campaign=MyBusiness_DU&utm_medium=Organic&utm_term=all&utm_content=Ridderkerk&y_source=1_OTI0ODI3MDktNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
   },
   {
    "naam": "Neijenesch Gereedschappen en IJzerwaren",
@@ -6970,16 +6910,6 @@
    "lat": 51.8550512,
    "lng": 4.3050112,
    "website": "https://www.lampidee.nl/winkels/spijkenisse?utm_source=google-mijn-bedrijf&utm_medium=organic"
-  },
-  {
-   "naam": "Winkelcentrum De Kopspijker",
-   "cat": "woonwinkel",
-   "groep": "woonwinkel",
-   "rating": 3.7,
-   "reviews": 1778,
-   "lat": 51.8504346,
-   "lng": 4.3287195,
-   "website": "http://www.shoppeninspijkenisse.nl/"
   },
   {
    "naam": "Homerestyling Cadeauwinkel",
@@ -8702,26 +8632,6 @@
    "website": "http://www.mozaiek-marokko.nl/"
   },
   {
-   "naam": "MediaMarkt Dordrecht",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 3.8,
-   "reviews": 3564,
-   "lat": 51.8119267,
-   "lng": 4.6681341,
-   "website": "https://www.mediamarkt.nl/nl/store/mediamarkt-dordrecht-1275?utm_source=google%20places&utm_medium=seo-places%20link"
-  },
-  {
-   "naam": "PLUS Vogelplein",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 3.8,
-   "reviews": 993,
-   "lat": 51.810539999999996,
-   "lng": 4.68464,
-   "website": "https://www.plus.nl/supermarkten/dordrecht_plus-vogelplein_509?utm_source=google_gmb&utm_medium=organic"
-  },
-  {
    "naam": "TegellijmKopen.NL",
    "cat": "tegel",
    "groep": "interieurwinkel",
@@ -9622,16 +9532,6 @@
    "website": "https://puurenlicht.nl/"
   },
   {
-   "naam": "Oostendorp Nederland | Sportveldverlichting",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.7,
-   "reviews": 45,
-   "lat": 51.811761399999995,
-   "lng": 4.6062917,
-   "website": "https://www.oostendorpnederland.nl/"
-  },
-  {
    "naam": "Candol Online",
    "cat": "verlichting",
    "groep": "interieurwinkel",
@@ -9670,16 +9570,6 @@
    "lat": 51.804307699999995,
    "lng": 4.6257098,
    "website": "https://www.bouwcenter.nl/logus-de-hoop/zwijndrecht"
-  },
-  {
-   "naam": "Boon's markt Zwijndrecht",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4,
-   "reviews": 511,
-   "lat": 51.822045599999996,
-   "lng": 4.6394554999999995,
-   "website": "https://boonsmarkt.nl/winkels/boons-markt-zwijndrecht"
   },
   {
    "naam": "Rbl Bouw",
@@ -9932,16 +9822,6 @@
    "website": "http://www.janriskemode.nl/"
   },
   {
-   "naam": "Winkelcentrum Westpolder",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.1,
-   "reviews": 1769,
-   "lat": 51.8365153,
-   "lng": 4.685162,
-   "website": "http://www.winkelcentrum-westpolder.nl/"
-  },
-  {
    "naam": "Winkelpark De Meent",
    "cat": "meubelwinkel",
    "groep": "woonwinkel",
@@ -9970,16 +9850,6 @@
    "lat": 51.8299629,
    "lng": 4.682618,
    "website": "http://www.benschopwoninginrichting.com/"
-  },
-  {
-   "naam": "Style & Brands (YAYA Damesmode)",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.7,
-   "reviews": 35,
-   "lat": 51.826035999999995,
-   "lng": 4.6847008,
-   "website": "http://www.style-brands.nl/"
   },
   {
    "naam": "Het Binnenhuis | Binnenhuiswijzer.nl",
@@ -10162,16 +10032,6 @@
    "website": "https://www.judalevison.nl/"
   },
   {
-   "naam": "Boon's Markt Papendrecht",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.4,
-   "reviews": 371,
-   "lat": 51.8330528,
-   "lng": 4.7313782,
-   "website": "https://boonsmarkt.nl/winkels/boons-markt-papendrecht"
-  },
-  {
    "naam": "Delware Trading BV",
    "cat": "verlichting",
    "groep": "interieurwinkel",
@@ -10270,16 +10130,6 @@
    "lat": 51.830733099999996,
    "lng": 4.7022564,
    "website": "https://rs-tegelzetbedrijf.nl/"
-  },
-  {
-   "naam": "Aannemersbedrijf Garant",
-   "cat": "tegel",
-   "groep": "interieurwinkel",
-   "rating": 5,
-   "reviews": 6,
-   "lat": 51.830925900000004,
-   "lng": 4.6819977999999995,
-   "website": "https://aannemersbedrijfgarant.nl/"
   },
   {
    "naam": "Tegelzetbedrijf Edgar. van der Sande",
@@ -10940,16 +10790,6 @@
    "lat": 52.0170489,
    "lng": 4.3028454,
    "website": "https://bava.nl/"
-  },
-  {
-   "naam": "Van Kapel Installatietechniek",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 3.8,
-   "reviews": 36,
-   "lat": 52.0091087,
-   "lng": 4.3520511,
-   "website": "http://www.vankapel.nl/"
   },
   {
    "naam": "OPAL Lighting",
@@ -12522,16 +12362,6 @@
    "website": "https://decorette.nl/winkels-decorette/maassluis/"
   },
   {
-   "naam": "L'eau Vive Fashion",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.6,
-   "reviews": 284,
-   "lat": 51.9211609,
-   "lng": 4.2548813999999995,
-   "website": "http://www.leauvivewebshop.nl/"
-  },
-  {
    "naam": "M&R woonaccessoires",
    "cat": "meubelwinkel",
    "groep": "woonwinkel",
@@ -13022,16 +12852,6 @@
    "website": "https://www.albeka.nl/?utm_source=Google%20Mijn%20bedrijf%20Ambacht&utm_medium=Organic&utm_campaign=Google%20Mijn%20bedrijf%20Ambacht"
   },
   {
-   "naam": "Winkelcentrum - de Schoof",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4,
-   "reviews": 1672,
-   "lat": 51.8493834,
-   "lng": 4.644347700000001,
-   "website": "http://www.de-schoof.nl/"
-  },
-  {
    "naam": "de Heer Wonen & Slapen I Morgana Hendrik-Ido-Ambacht",
    "cat": "meubelwinkel",
    "groep": "woonwinkel",
@@ -13132,16 +12952,6 @@
    "website": "https://www.twinterieurs.nl/"
   },
   {
-   "naam": "De Hoop Kringloop (leerwerkbedrijf van Werkvisie)",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.6,
-   "reviews": 100,
-   "lat": 51.8480954,
-   "lng": 4.651978,
-   "website": "http://dehoopkringloop.nl/"
-  },
-  {
    "naam": "Hoog Ambacht",
    "cat": "meubelwinkel",
    "groep": "woonwinkel",
@@ -13180,16 +12990,6 @@
    "lat": 51.831938799999996,
    "lng": 4.6255258999999995,
    "website": "https://woonwebshop.com/"
-  },
-  {
-   "naam": "Automotive Flocking",
-   "cat": "woonwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.9,
-   "reviews": 7,
-   "lat": 51.8436433,
-   "lng": 4.6247207,
-   "website": "http://www.flocken.nl/"
   },
   {
    "naam": "Warm & Sfeervol Wonen",
@@ -13350,16 +13150,6 @@
    "lat": 51.5818234,
    "lng": 4.7445328,
    "website": "https://www.lampidee.nl/winkels/breda"
-  },
-  {
-   "naam": "PLUS Alfred Koehoorn",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.2,
-   "reviews": 732,
-   "lat": 51.838404999999995,
-   "lng": 4.636394999999999,
-   "website": "https://www.plus.nl/supermarkten/hendrik-ido-ambacht_plus-alfred-koehoorn_383?utm_source=google_gmb&utm_medium=organic"
   },
   {
    "naam": "Intertegel",
@@ -13622,16 +13412,6 @@
    "website": "http://www.degrootwonenenslapen.nl/"
   },
   {
-   "naam": "Stichting Kringloop Krimpen aan den IJssel",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 3.9,
-   "reviews": 114,
-   "lat": 51.9161533,
-   "lng": 4.6033224,
-   "website": "http://www.kringloopkrimpen.nl/"
-  },
-  {
    "naam": "Meer Parket",
    "cat": "vloeren",
    "groep": "interieurwinkel",
@@ -13722,16 +13502,6 @@
    "website": "http://badkamervergelijk.nl/"
   },
   {
-   "naam": "Smaragd Installatie Service",
-   "cat": "sanitair",
-   "groep": "interieurwinkel",
-   "rating": 5,
-   "reviews": 27,
-   "lat": 51.920850599999994,
-   "lng": 4.6225686999999995,
-   "website": "https://www.smaragdinstallatieservice.nl/"
-  },
-  {
    "naam": "Sterk Staaltje Licht",
    "cat": "verlichting",
    "groep": "interieurwinkel",
@@ -13750,16 +13520,6 @@
    "lat": 51.9313254,
    "lng": 4.5589224999999995,
    "website": "http://www.vandendool.nl/?y_source=1_MjMyNDYyOC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
-  },
-  {
-   "naam": "Tuincentrum Slingerland Krimpen aan de Lek",
-   "cat": "tegel",
-   "groep": "interieurwinkel",
-   "rating": 4.4,
-   "reviews": 533,
-   "lat": 51.9017479,
-   "lng": 4.643434,
-   "website": "http://www.tuincentrumslingerland.nl/"
   },
   {
    "naam": "Van Buuren Tuin en Houtprojecten",
@@ -14462,16 +14222,6 @@
    "website": "http://www.prinsenland-montage.nl/"
   },
   {
-   "naam": "Vliet Montage | Specialist in installatie en montage van badkamers, alles in eigen beheer.",
-   "cat": "sanitair",
-   "groep": "interieurwinkel",
-   "rating": 5,
-   "reviews": 7,
-   "lat": 51.979409999999994,
-   "lng": 4.501107,
-   "website": "https://www.vlietmontage.nl/"
-  },
-  {
    "naam": "I.v.p. Total",
    "cat": "sanitair",
    "groep": "interieurwinkel",
@@ -14780,16 +14530,6 @@
    "lat": 52.035011499999996,
    "lng": 4.501233399999999,
    "website": "http://www.fepgroep.nl/"
-  },
-  {
-   "naam": "Bloemschikwinkel",
-   "cat": "muurdecoratie",
-   "groep": "interieurwinkel",
-   "rating": 4.9,
-   "reviews": 15,
-   "lat": 51.993816599999995,
-   "lng": 4.4974033,
-   "website": "http://www.bloemschikwinkel.nl/"
   },
   {
    "naam": "Stijger Garden Design",
@@ -15112,16 +14852,6 @@
    "website": "http://albrandswaard.wereldwinkels.nl/"
   },
   {
-   "naam": "PLUS Rick Hoogendoorn",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4,
-   "reviews": 738,
-   "lat": 51.8569168,
-   "lng": 4.3910513,
-   "website": "https://www.plus.nl/supermarkten/poortugaal_plus-rick-hoogendoorn_698?utm_source=google_gmb&utm_medium=organic"
-  },
-  {
    "naam": "Nostalgisch Wonen",
    "cat": "woonwinkel",
    "groep": "woonwinkel",
@@ -15190,16 +14920,6 @@
    "lat": 51.8578769,
    "lng": 4.3874216,
    "website": "https://hetterphuis.nl/"
-  },
-  {
-   "naam": "De Plantenhal Rhoon",
-   "cat": "woonwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.2,
-   "reviews": 2132,
-   "lat": 51.865227499999996,
-   "lng": 4.430798,
-   "website": "http://www.deplantenhal.nl/"
   },
   {
    "naam": "De Woon Winkel",
@@ -15310,16 +15030,6 @@
    "lat": 51.8479114,
    "lng": 4.3669845,
    "website": "https://stuca-paint.nl/"
-  },
-  {
-   "naam": "Primera Rhoon",
-   "cat": "verf",
-   "groep": "interieurwinkel",
-   "rating": 4.3,
-   "reviews": 259,
-   "lat": 51.8558963,
-   "lng": 4.4188868999999995,
-   "website": "https://www.primera.nl/primera-polder-rhoon?utm_source=google-places&utm_medium=organic&utm_campaign=google-places-RHOON-31611"
   },
   {
    "naam": "Verhuco",
@@ -15500,26 +15210,6 @@
    "lat": 51.620146,
    "lng": 5.4323239999999995,
    "website": "http://www.heerkensverlichting.nl/"
-  },
-  {
-   "naam": "De Zonnebankspecialist",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.6,
-   "reviews": 33,
-   "lat": 51.858047,
-   "lng": 4.4389121,
-   "website": "http://dezonnebankspecialist.nl/"
-  },
-  {
-   "naam": "ALDI",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.1,
-   "reviews": 478,
-   "lat": 51.855704499999995,
-   "lng": 4.3895466,
-   "website": "https://www.aldi.nl/?cid=OS_NL_GMB_Homepage_poortugaal_kikkerstraat"
   },
   {
    "naam": "Lampenlicht Outlet Zaandam",
@@ -15742,16 +15432,6 @@
    "website": "https://www.thestone.nl/"
   },
   {
-   "naam": "Pijnacker Centrum",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.1,
-   "reviews": 2017,
-   "lat": 52.0188523,
-   "lng": 4.4318805,
-   "website": "https://pijnackercentrum.nl/"
-  },
-  {
    "naam": "Meubelmakerij Notenboom",
    "cat": "meubelwinkel",
    "groep": "woonwinkel",
@@ -15830,16 +15510,6 @@
    "lat": 52.0183949,
    "lng": 4.431126,
    "website": "http://wereldwinkelpijnacker.nl/"
-  },
-  {
-   "naam": "Bruna Pijnacker Centrum",
-   "cat": "meubelwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.2,
-   "reviews": 289,
-   "lat": 52.019211500000004,
-   "lng": 4.4319943,
-   "website": "http://www.brunapijnacker.nl/"
   },
   {
    "naam": "Terre des Hommes Pijnacker",
@@ -15932,26 +15602,6 @@
    "website": "https://www.vannieropverlichting.nl/"
   },
   {
-   "naam": "PLUS Sabine Zondag",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.2,
-   "reviews": 958,
-   "lat": 52.019385,
-   "lng": 4.428335,
-   "website": "https://www.plus.nl/supermarkten/pijnacker_plus-sabine-zondag_756?utm_source=google_gmb&utm_medium=organic"
-  },
-  {
-   "naam": "Expert",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 3.7,
-   "reviews": 97,
-   "lat": 52.0192599,
-   "lng": 4.432977,
-   "website": "https://www.expert.nl/winkels/pijnacker?utm_source=googlemybusiness&utm_campaign=GMB%20-%20Expert%20Pijnacker&utm_medium=organic"
-  },
-  {
    "naam": "HTR Light Support",
    "cat": "verlichting",
    "groep": "interieurwinkel",
@@ -16000,16 +15650,6 @@
    "lat": 52.0172934,
    "lng": 4.4355186,
    "website": "http://www.animalcorner.nl/"
-  },
-  {
-   "naam": "THV Behangservice, behanger renovlies, klusbedrijf.",
-   "cat": "muurdecoratie",
-   "groep": "interieurwinkel",
-   "rating": 5,
-   "reviews": 23,
-   "lat": 52.0030394,
-   "lng": 4.4493423,
-   "website": "https://thvbehangservice.nl/"
   },
   {
    "naam": "Stork Interieurspecialist",
@@ -17010,16 +16650,6 @@
    "lat": 51.856843399999995,
    "lng": 4.6747086,
    "website": "https://www.illumnia-signs.nl/"
-  },
-  {
-   "naam": "PLUS van Holten",
-   "cat": "verlichting",
-   "groep": "interieurwinkel",
-   "rating": 4.4,
-   "reviews": 441,
-   "lat": 51.8679263,
-   "lng": 4.6638093,
-   "website": "https://www.plus.nl/supermarkten/alblasserdam_plus-van-holten_941?utm_source=google_gmb&utm_medium=organic"
   },
   {
    "naam": "Dutch Wall Decor BV",
@@ -18411,5 +18041,196 @@
    "lng": 6.1186439,
    "website": "https://lefebre-slaapcomfort.nl/?utm_source=local&utm_medium=organic&utm_content=googlemybusiness"
   }
- ]
+ ],
+ "_verwijderd": {
+  "datum": "2026-10-23",
+  "reden": "Geen woonwinkel of showroom; met de hand nagelopen (besluit Daniel, 23-10-2026). Niet opnieuw toevoegen.",
+  "winkels": [
+   {
+    "naam": "Woonmall Alexandrium",
+    "cat": "meubelwinkel",
+    "reden": "winkelcentrum of woonboulevard, geen winkel"
+   },
+   {
+    "naam": "Kilinclar Automaterialen Schiedam",
+    "cat": "verf",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "Kilinclar Automaterialen Spaanse polder",
+    "cat": "verf",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "Boulevard Vlaardingen - Hoogstad",
+    "cat": "meubelwinkel",
+    "reden": "winkelcentrum of woonboulevard, geen winkel"
+   },
+   {
+    "naam": "S.M.R. Schouten Montage Ridderkerk",
+    "cat": "sanitair",
+    "reden": "vakbedrijf of installateur, geen winkel"
+   },
+   {
+    "naam": "Toolstation Ridderkerk",
+    "cat": "verlichting",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "Winkelcentrum De Kopspijker",
+    "cat": "woonwinkel",
+    "reden": "winkelcentrum of woonboulevard, geen winkel"
+   },
+   {
+    "naam": "MediaMarkt Dordrecht",
+    "cat": "verlichting",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "PLUS Vogelplein",
+    "cat": "verlichting",
+    "reden": "supermarkt"
+   },
+   {
+    "naam": "Oostendorp Nederland | Sportveldverlichting",
+    "cat": "verlichting",
+    "reden": "vakbedrijf of installateur, geen winkel"
+   },
+   {
+    "naam": "Boon's markt Zwijndrecht",
+    "cat": "verlichting",
+    "reden": "supermarkt"
+   },
+   {
+    "naam": "Winkelcentrum Westpolder",
+    "cat": "meubelwinkel",
+    "reden": "winkelcentrum of woonboulevard, geen winkel"
+   },
+   {
+    "naam": "Style & Brands (YAYA Damesmode)",
+    "cat": "meubelwinkel",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "Boon's Markt Papendrecht",
+    "cat": "verlichting",
+    "reden": "supermarkt"
+   },
+   {
+    "naam": "Aannemersbedrijf Garant",
+    "cat": "tegel",
+    "reden": "vakbedrijf of installateur, geen winkel"
+   },
+   {
+    "naam": "Van Kapel Installatietechniek",
+    "cat": "verlichting",
+    "reden": "vakbedrijf of installateur, geen winkel"
+   },
+   {
+    "naam": "L'eau Vive Fashion",
+    "cat": "meubelwinkel",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "Winkelcentrum - de Schoof",
+    "cat": "meubelwinkel",
+    "reden": "winkelcentrum of woonboulevard, geen winkel"
+   },
+   {
+    "naam": "De Hoop Kringloop (leerwerkbedrijf van Werkvisie)",
+    "cat": "meubelwinkel",
+    "reden": "kringloop, geen showroom voor nieuw"
+   },
+   {
+    "naam": "Automotive Flocking",
+    "cat": "woonwinkel",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "PLUS Alfred Koehoorn",
+    "cat": "verlichting",
+    "reden": "supermarkt"
+   },
+   {
+    "naam": "Stichting Kringloop Krimpen aan den IJssel",
+    "cat": "meubelwinkel",
+    "reden": "kringloop, geen showroom voor nieuw"
+   },
+   {
+    "naam": "Smaragd Installatie Service",
+    "cat": "sanitair",
+    "reden": "vakbedrijf of installateur, geen winkel"
+   },
+   {
+    "naam": "Tuincentrum Slingerland Krimpen aan de Lek",
+    "cat": "tegel",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "Vliet Montage | Specialist in installatie en montage van badkamers, alles in eigen beheer.",
+    "cat": "sanitair",
+    "reden": "vakbedrijf of installateur, geen winkel"
+   },
+   {
+    "naam": "Bloemschikwinkel",
+    "cat": "muurdecoratie",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "PLUS Rick Hoogendoorn",
+    "cat": "meubelwinkel",
+    "reden": "supermarkt"
+   },
+   {
+    "naam": "De Plantenhal Rhoon",
+    "cat": "woonwinkel",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "Primera Rhoon",
+    "cat": "verf",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "De Zonnebankspecialist",
+    "cat": "verlichting",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "ALDI",
+    "cat": "verlichting",
+    "reden": "supermarkt"
+   },
+   {
+    "naam": "Pijnacker Centrum",
+    "cat": "meubelwinkel",
+    "reden": "winkelcentrum of woonboulevard, geen winkel"
+   },
+   {
+    "naam": "Bruna Pijnacker Centrum",
+    "cat": "meubelwinkel",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "PLUS Sabine Zondag",
+    "cat": "verlichting",
+    "reden": "supermarkt"
+   },
+   {
+    "naam": "Expert",
+    "cat": "verlichting",
+    "reden": "ander soort winkel"
+   },
+   {
+    "naam": "THV Behangservice, behanger renovlies, klusbedrijf.",
+    "cat": "muurdecoratie",
+    "reden": "vakbedrijf of installateur, geen winkel"
+   },
+   {
+    "naam": "PLUS van Holten",
+    "cat": "verlichting",
+    "reden": "supermarkt"
+   }
+  ]
+ }
 }
