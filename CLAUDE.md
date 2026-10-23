@@ -127,6 +127,10 @@ een kwartier live" zonder `vercel ls website` te checken.
   geen pagina weg, mediaan eigen tekst niet gedaald, hooguit 25% van de feiten weggegooid. Anders een
   tak plus een issue. Reden: de tak-plus-handmatige-PR bleef na 1 oktober drie rondes liggen. Een
   nieuwe loop die zelf publiceert vraagt opnieuw om Daniels akkoord en om zulke controles.
+- **Ook de maandelijkse ronde voor woonwinkels uit OpenStreetMap mag zelf naar main (besluit Daniel,
+  23-10-2026).** `osm-winkels.yml` ververst `data/winkels-osm.json`, alleen als er minstens 1.500
+  winkels zijn en het aantal niet meer dan 20% daalt; anders een tak plus een issue. Google Places
+  niet verder opschalen: de voorwaarden staan bewaren langer dan 30 dagen niet toe.
 
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.

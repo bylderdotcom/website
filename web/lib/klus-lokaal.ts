@@ -119,9 +119,25 @@ function bedrijvenVan(vak: string): Bedrijf[] {
 const score = (rating: number, reviews: number) => rating * Math.min(1, Math.log10(1 + reviews) / 2)
 
 // --- winkels en showrooms ---------------------------------------------------
-type Winkel = { naam: string; cat: string; rating?: number; reviews?: number; lat: number; lng: number; website?: string }
+// Twee bronnen: winkels-publiek.json (Google, met ratings, vooral regio Rotterdam) en
+// winkels-osm.json (OpenStreetMap, heel Nederland, zonder ratings; scripts/osm_winkels.py,
+// maandelijks ververst). Dezelfde winkel in beide telt één keer: zelfde naam binnen 300 m,
+// of welke naam dan ook binnen 40 m. De Google-versie wint, want die heeft de rating.
+type Winkel = { naam: string; cat: string; rating?: number; reviews?: number; lat: number; lng: number; website?: string; osm?: boolean }
 let _winkels: Winkel[] | null = null
-const winkels = () => (_winkels ??= (() => { const w = lees('data', 'winkels-publiek.json'); return (Array.isArray(w) ? w : Object.values(w).find(Array.isArray)) as Winkel[] })())
+const sleutelNaam = (n: string) => terug(n).toLowerCase().replace(/[^a-z0-9]+/g, '')
+function winkels(): Winkel[] {
+  if (_winkels) return _winkels
+  const g = lees('data', 'winkels-publiek.json')
+  const google = ((Array.isArray(g) ? g : Object.values(g).find(Array.isArray)) as Winkel[]).filter(w => w.lat && w.lng)
+  let osm: Winkel[] = []
+  try { osm = (lees('data', 'winkels-osm.json').winkels as Winkel[]).map(w => ({ ...w, osm: true })) } catch { /* nog niet gedraaid */ }
+  const dubbel = (o: Winkel) => google.some(w => {
+    const d = km([w.lat, w.lng], [o.lat, o.lng])
+    return d < 0.04 || (d < 0.3 && sleutelNaam(w.naam) === sleutelNaam(o.naam))
+  })
+  return (_winkels = [...google, ...osm.filter(o => !dubbel(o))])
+}
 let _deelnemers: Map<string, string> | null = null
 function bylderKorting(naam: string): string | undefined {
   if (!_deelnemers) {
@@ -166,7 +182,7 @@ export function lokaal(klusSlug: string, gemeente: string, stad: string): Lokaal
   const dichtbij = c ? winkels().filter(w => klus.winkels.includes(w.cat) && w.lat && w.lng)
     .map(w => ({ w, km: km(c, [w.lat, w.lng]), korting: bylderKorting(w.naam) })).filter(x => x.km <= 15) : []
   dichtbij.sort((a, b) => (b.korting !== undefined ? 1 : 0) - (a.korting !== undefined ? 1 : 0)
-    || score(b.w.rating ?? 0, b.w.reviews ?? 0) - score(a.w.rating ?? 0, a.w.reviews ?? 0))
+    || score(b.w.rating ?? 0, b.w.reviews ?? 0) - score(a.w.rating ?? 0, a.w.reviews ?? 0) || a.km - b.km)
 
   const hierBouw = projecten().filter(p => hoortBij(p.plaats, gemeente))
   const metPagina = hierBouw.map(p => ({ naam: p.naam, pad: `/nieuwbouw-project/${projSlug(p.naam, p.plaats)}/` }))
@@ -221,7 +237,8 @@ export function lokaalHtml(l: Lokaal): string {
   }
   if (l.winkels.length) {
     delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:24px 0 6px">${E(l.klus.winkelsLabel.charAt(0).toUpperCase() + l.klus.winkelsLabel.slice(1))} bekijken in de buurt</h3>` +
-      `<p style="${p}">${nl(l.winkelsTotaal)} winkels en showrooms binnen 15 kilometer van ${E(l.stad)}. Bij een winkel met Bylder-korting krijg je met een gratis account ledenkorting.</p>` +
+      `<p style="${p}">${nl(l.winkelsTotaal)} winkels en showrooms binnen 15 kilometer van ${E(l.stad)}. Bij een winkel met Bylder-korting krijg je met een gratis account ledenkorting.` +
+      (l.winkels.some(x => x.w.osm) ? ' <span style="font-size:13px">Winkelgegevens deels &copy; <a href="https://www.openstreetmap.org/copyright" rel="nofollow noopener" target="_blank" style="color:inherit">OpenStreetMap-bijdragers</a> (ODbL).</span>' : '') + '</p>' +
       `<ul style="list-style:none;padding:0;margin:0 0 8px">` + l.winkels.map(x =>
         `<li style="${li}"><strong>${E(x.w.naam)}</strong>` +
         (x.korting !== undefined ? ` <span style="background:#3D5A3E;color:#F5F0E8;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px">Bylder-korting${x.korting ? ': ' + E(x.korting) : ''}</span>` : '') +
