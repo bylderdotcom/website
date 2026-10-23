@@ -834,30 +834,87 @@ en daarom komt het advies met de vraag erbij of het ook zonder ons goedkoper kan
 nergens aan vast: geen contract, geen verplichte offerte, en je dossier blijft van jou.</p>"""
 
 
+WINKELS_OSM = os.path.join(ROOT, "data", "winkels-osm.json")
+
+
+def osm_winkels(google):
+    """De winkels uit OpenStreetMap (scripts/osm_winkels.py, maandelijks ververst) die niet
+    al in de Google-lijst staan: zelfde naam binnen 300 m, of iets binnen 40 m, telt als
+    dezelfde. Ze krijgen osm=True; ratings hebben ze niet (23-10-2026)."""
+    try:
+        osm = json.load(open(WINKELS_OSM, encoding="utf8"))["winkels"]
+    except (OSError, ValueError, KeyError):
+        return []
+    sleutel = lambda n: re.sub(r"[^a-z0-9]+", "", html.unescape(n or "").lower())
+    per_vak = collections.defaultdict(list)
+    for w in google:
+        if w.get("lat") and w.get("lng"):
+            per_vak[(round(float(w["lat"]), 1), round(float(w["lng"]), 1))].append(w)
+    uit = []
+    for o in osm:
+        buren = [w for dl in (-0.1, 0, 0.1) for dn in (-0.1, 0, 0.1)
+                 for w in per_vak.get((round(o["lat"] + dl, 1), round(o["lng"] + dn, 1)), [])]
+        dubbel = any((d := km(o["lat"], o["lng"], float(w["lat"]), float(w["lng"]))) < 0.04
+                     or (d < 0.3 and sleutel(w["naam"]) == sleutel(o["naam"])) for w in buren)
+        if not dubbel:
+            uit.append({**o, "osm": True})
+    return uit
+
+
+_MIDDEN = None
+
+
+def _gemeente_midden():
+    global _MIDDEN
+    if _MIDDEN is None:
+        try:
+            _MIDDEN = {g["slug"]: (g["lat"], g["lng"]) for g in
+                       json.load(open(os.path.join(ROOT, "data", "gemeenten.json"), encoding="utf8"))["gemeenten"]
+                       if g.get("lat") and g.get("lng")}
+        except (OSError, ValueError, KeyError):
+            _MIDDEN = {}
+    return _MIDDEN
+
+
+# Producttypes in het blok "woonwinkels binnen 15 km": wat een koper na de oplevering inricht.
+WINKEL_CATS = ("keuken", "vloeren", "sanitair", "meubelwinkel", "bedden", "raamdecoratie",
+               "verlichting", "tegel")
+
+
 def lokale_winkels(wk, p, straal=15, n=6):
     """Woonwinkels en interieurzaken in de buurt. Bewust GEEN prefab of
     hypotheekadvies: prefab hoort bij verbouwen (dakkapel, aanbouw) en niet bij
     een oplevering, en de hypotheek is bij dit publiek al geregeld. Wat er van de
     geldvraag wel toe doet — meerwerkfinanciering — staat als tekstblok op de
-    pagina, niet als adviseurslijst."""
-    if not (p.get("lat") and p.get("lng")):
-        return []
+    pagina, niet als adviseurslijst.
+
+    Google-winkels moeten minstens 4 sterren en 20 beoordelingen hebben. Winkels uit
+    OpenStreetMap hebben geen rating; ze tellen mee waar de Google-lijst niets heeft (sinds
+    23-10-2026 dus ook buiten de regio Rotterdam), achter de beoordeelde winkels en op afstand."""
+    lat, lng = p.get("lat"), p.get("lng")
+    if not (lat and lng):
+        # 61 projecten hebben geen eigen coördinaten; dan het midden van de plaats uit
+        # data/gemeenten.json. Dat is minder precies, maar binnen 15 km nog steeds de buurt.
+        c = _gemeente_midden().get(p.get("plaats"))
+        if not c:
+            return []
+        lat, lng = c
     goed = {"woonwinkel", "interieurwinkel"}
     uit = []
     for w in wk:
         g = w.get("groep") or w.get("cat")
-        if g not in goed and (w.get("cat") not in ("keuken", "vloeren", "sanitair", "meubelwinkel")):
+        if g not in goed and w.get("cat") not in WINKEL_CATS:
             continue
         if geweerd(w.get("naam"), None, False):
             continue
-        if float(w.get("rating") or 0) < 4.0:
+        if not w.get("osm") and (float(w.get("rating") or 0) < 4.0 or (w.get("reviews") or 0) < 20):
             continue
         if not (w.get("lat") and w.get("lng")):
             continue
-        d = km(float(p["lat"]), float(p["lng"]), float(w["lat"]), float(w["lng"]))
-        if d <= straal and (w.get("reviews") or 0) >= 20:
+        d = km(float(lat), float(lng), float(w["lat"]), float(w["lng"]))
+        if d <= straal:
             uit.append((d, w))
-    uit.sort(key=lambda t: (-(t[1].get("reviews") or 0), t[0]))
+    uit.sort(key=lambda t: (bool(t[1].get("osm")), -(t[1].get("reviews") or 0), t[0]))
     zien, res = set(), []
     for d, w in uit:
         c = w.get("cat")
@@ -2385,10 +2442,12 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
             dl = deelnemer(w["naam"])
             merk = (f' <span class="deelnemer">Bylder-korting'
                     + (f": {E(dl['aanbod'])}" if dl.get("aanbod") else "") + "</span>") if dl else ""
-            li += (f"<li><strong>{E(w['naam'])}</strong>{merk} &mdash; {E(w.get('cat') or 'wonen')}, "
+            site = (f' &middot; <a href="{E(w["website"])}" rel="nofollow noopener" target="_blank">website</a>'
+                    if w.get("osm") and w.get("website") else "")
+            li += (f"<li><strong>{E(html.unescape(w['naam']))}</strong>{merk} &mdash; {E(w.get('cat') or 'wonen')}, "
                    f"{d:.0f} km"
                    + (f", &#9733;{w['rating']} uit {w['reviews']} beoordelingen" if w.get("rating") else "")
-                   + "</li>")
+                   + site + "</li>")
         vraag = (f'<div class="card"><h3>Nog geen Bylder-korting bij een van deze winkels?</h3>'
                  f"<p>Bylder-leden krijgen ledenkorting bij aangesloten winkels en merken. Wil "
                  f"jij korting bij een winkel die nog niet meedoet? Maak een gratis account "
@@ -2398,9 +2457,13 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
                  f'<p><a class="cta-primary" href="https://app.bylder.com/winkelwens?project={slug}'
                  f'&amp;utm_source=bylder-site&amp;utm_campaign=project-{slug}-winkelwens">'
                  f"Vraag korting aan bij winkels in de buurt</a></p></div>")
+        osm = any(w.get("osm") for _, w in wnk)
         wnk_html = (f"<h2>Woonwinkels binnen 15 km</h2><ul class='bedrijven'>{li}</ul>"
-                    f'<p class="noot">Gespreid over categorie&euml;n, minstens twintig '
-                    f"beoordelingen, minimaal vier sterren. Deze lijst is niet te koop.</p>"
+                    f'<p class="noot">Gespreid over categorie&euml;n. Winkels met een score hebben '
+                    f"minstens twintig beoordelingen en vier sterren. Deze lijst is niet te koop."
+                    + (' Winkelgegevens deels &copy; <a href="https://www.openstreetmap.org/copyright" '
+                       'rel="nofollow noopener" target="_blank">OpenStreetMap-bijdragers</a> (ODbL).'
+                       if osm else "") + "</p>"
                     + vraag)
 
     # --- buurprojecten: per gemeente andere namen ---
@@ -2695,6 +2758,7 @@ def main():
     vb = vbd if isinstance(vbd, list) else (vbd.get("vakbedrijven") or list(vbd.values())[0])
     wkd = json.load(open(WINKELS, encoding="utf8"))
     wk = wkd["winkels"] if isinstance(wkd, dict) else wkd
+    wk = wk + osm_winkels(wk)
     ruimtes = laad_ruimtes()
 
     pj = os.path.join(CLUSTER, "pages.json")
