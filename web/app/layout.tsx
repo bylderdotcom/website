@@ -97,7 +97,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AanbrengRef />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
-          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
+          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`
+            // Klik op de commerciële stap tellen, met de plek op de pagina (MetCommercieleStap).
+            + `document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-meet-stap] a');if(a)gtag('event','commerciele_stap',{plek:a.closest('[data-meet-stap]').getAttribute('data-meet-stap'),doel:a.getAttribute('href'),pagina:location.pathname})});`,
         }} />
         {/* Meldkanaal. Op de 8.714 losse pagina's staat dit script per pagina
             in de HTML; de 26 pagina's die hier doorheen komen — homepage

@@ -37,20 +37,32 @@ export default function MetCommercieleStap({ html, pad }: { html: string; pad: s
     const diepte = (kop.match(/<div\b/g) ?? []).length - (kop.match(/<\/div>/g) ?? []).length
     if (diepte === 1) knip = h2[1]
   }
+  // Op een bedrijfsprofiel direct onder het blok met naam, telefoon en website (23-10-2026).
+  // Wie op een bedrijfsnaam zoekt, haakt na het eerste scherm af; onderaan zag vrijwel
+  // niemand de stap. Knip waar het blok met de h1 sluit en de container weer de ouder is.
+  const h1 = h.indexOf('<h1')
+  if (container && pad.includes('/bedrijf/') && h1 > 0) {
+    let diepte = 0
+    for (const m of h.matchAll(/<div\b|<\/div>/g)) {
+      diepte += m[0] === '</div>' ? -1 : 1
+      if (m.index! > h1 && diepte === 1) { knip = m.index! + m[0].length; break }
+    }
+  }
+  const plek = knip < 0 ? 'onderaan' : stad ? 'stad-boven' : 'profiel-boven'
   return (
     <div style={wrapper}>
       {knip > 0 ? (
         <>
           <div dangerouslySetInnerHTML={{ __html: h.slice(0, knip) + '</div>' }} />
-          <div className="container bv-raster">
-            <CommercieleStap pad={pad} alleen="stap" marge="8px 0 24px" />
+          <div className="container bv-raster" data-meet-stap={plek}>
+            <CommercieleStap pad={pad} alleen="stap" marge={stad ? '8px 0 24px' : '20px 0 4px'} />
           </div>
           <div dangerouslySetInnerHTML={{ __html: container + h.slice(knip) }} />
         </>
       ) : (
         <>
           <div dangerouslySetInnerHTML={{ __html: h }} />
-          <div className="container bv-raster">
+          <div className="container bv-raster" data-meet-stap={plek}>
             <CommercieleStap pad={pad} alleen="stap" marge="32px 0 0" />
           </div>
         </>
