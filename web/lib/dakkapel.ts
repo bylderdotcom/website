@@ -13,6 +13,7 @@ import { metVerleider } from './verleider'
 import { metEersteZet } from './eerstezet'
 import { extraLinksHtml } from './interne-links'
 import { zonderUitgesloten } from './uitgesloten'
+import { stadslinks } from './stadslinks'
 
 const SITE = 'https://www.bylder.com'
 const CLUSTER = 'dakkapel'
@@ -386,6 +387,7 @@ function getBedrijfHtml(page: DakkapelPage): string {
     + `<p style="font-size:15px;line-height:1.7;color:rgba(61,46,30,0.78);margin:0;">${esc(b.omschrijving)}</p>`
     + `<p style="font-size:11px;color:rgba(61,46,30,0.55);margin:8px 0 0;">Omschrijving aangeleverd door het bedrijf zelf.</p></div>\n  <div class="highlight"`)
   body = fillPlaceholders(body, { name: b.name, city: b.city, city_slug: b.city_slug })
+  body = stadslinks(body, CLUSTER, b.city_slug, b.city, getCities())
   const markt = marktHtml(b.city, b.city_slug)
   const claim = claimHtml(page.slug, b.name)
   // Door Jev gerangschikte buurbedrijven, voor profielen waar de stadsregel te
