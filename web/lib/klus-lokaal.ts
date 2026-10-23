@@ -161,7 +161,7 @@ const heeftPagina = (slug: string) =>
 export type Lokaal = {
   klus: Klus; stad: string
   bedrijven: { wie: string; vak: string; totaal: number; top: Bedrijf[] }[]
-  winkels: { w: Winkel; km: number; korting?: string }[]; winkelsTotaal: number
+  winkels: { w: Winkel; km: number; korting?: string }[]; winkelsTotaal: number; winkelsOsm: boolean
   nieuwbouw: { totaal: number; woningen: number; metPagina: { naam: string; pad: string }[] }
   markt: Cijfers | null; gemeente: string; klusSlug: string
 }
@@ -190,7 +190,7 @@ export function lokaal(klusSlug: string, gemeente: string, stad: string): Lokaal
 
   return (_cache[sleutel] = {
     klus, stad, bedrijven,
-    winkels: dichtbij.slice(0, 6), winkelsTotaal: dichtbij.length,
+    winkels: dichtbij.slice(0, 6), winkelsTotaal: dichtbij.length, winkelsOsm: dichtbij.some(x => x.w.osm),
     nieuwbouw: { totaal: hierBouw.length, woningen: hierBouw.reduce((s, p) => s + (p.woningen ?? 0), 0), metPagina },
     markt: cijfersVan(gemeente), gemeente, klusSlug,
   })
@@ -238,7 +238,7 @@ export function lokaalHtml(l: Lokaal): string {
   if (l.winkels.length) {
     delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:24px 0 6px">${E(l.klus.winkelsLabel.charAt(0).toUpperCase() + l.klus.winkelsLabel.slice(1))} bekijken in de buurt</h3>` +
       `<p style="${p}">${nl(l.winkelsTotaal)} winkels en showrooms binnen 15 kilometer van ${E(l.stad)}. Bij een winkel met Bylder-korting krijg je met een gratis account ledenkorting.` +
-      (l.winkels.some(x => x.w.osm) ? ' <span style="font-size:13px">Winkelgegevens deels &copy; <a href="https://www.openstreetmap.org/copyright" rel="nofollow noopener" target="_blank" style="color:inherit">OpenStreetMap-bijdragers</a> (ODbL).</span>' : '') + '</p>' +
+      (l.winkelsOsm ? ' <span style="font-size:13px">Winkelgegevens deels &copy; <a href="https://www.openstreetmap.org/copyright" rel="nofollow noopener" target="_blank" style="color:inherit">OpenStreetMap-bijdragers</a> (ODbL).</span>' : '') + '</p>' +
       `<ul style="list-style:none;padding:0;margin:0 0 8px">` + l.winkels.map(x =>
         `<li style="${li}"><strong>${E(x.w.naam)}</strong>` +
         (x.korting !== undefined ? ` <span style="background:#3D5A3E;color:#F5F0E8;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px">Bylder-korting${x.korting ? ': ' + E(x.korting) : ''}</span>` : '') +
