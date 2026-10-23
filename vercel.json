@@ -6,6 +6,256 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/renovatiekosten/aanbouw/:stad",
+      "destination": "/project/aanbouw-realiseren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/aanbouw/:stad/",
+      "destination": "/project/aanbouw-realiseren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/aanbouw",
+      "destination": "/project/aanbouw-realiseren/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/aanbouw/",
+      "destination": "/project/aanbouw-realiseren/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/badkamer/:stad",
+      "destination": "/project/badkamer-renovatie/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/badkamer/:stad/",
+      "destination": "/project/badkamer-renovatie/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/badkamer",
+      "destination": "/project/badkamer-renovatie/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/badkamer/",
+      "destination": "/project/badkamer-renovatie/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/dakkapel/:stad",
+      "destination": "/project/dakkapel-plaatsen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/dakkapel/:stad/",
+      "destination": "/project/dakkapel-plaatsen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/dakkapel",
+      "destination": "/project/dakkapel-plaatsen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/dakkapel/",
+      "destination": "/project/dakkapel-plaatsen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/gietvloer/:stad",
+      "destination": "/project/gietvloer-leggen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/gietvloer/:stad/",
+      "destination": "/project/gietvloer-leggen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/gietvloer",
+      "destination": "/project/gietvloer-leggen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/gietvloer/",
+      "destination": "/project/gietvloer-leggen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/keuken/:stad",
+      "destination": "/project/keuken-monteren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/keuken/:stad/",
+      "destination": "/project/keuken-monteren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/keuken",
+      "destination": "/project/keuken-monteren/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/keuken/",
+      "destination": "/project/keuken-monteren/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/schilderwerk/:stad",
+      "destination": "/project/schilderwerk-binnen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/schilderwerk/:stad/",
+      "destination": "/project/schilderwerk-binnen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/schilderwerk",
+      "destination": "/project/schilderwerk-binnen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/schilderwerk/",
+      "destination": "/project/schilderwerk-binnen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/warmtepomp/:stad",
+      "destination": "/project/duurzaam-verbouwen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/warmtepomp/:stad/",
+      "destination": "/project/duurzaam-verbouwen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/warmtepomp",
+      "destination": "/project/duurzaam-verbouwen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/warmtepomp/",
+      "destination": "/project/duurzaam-verbouwen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/zonnepanelen/:stad",
+      "destination": "/project/duurzaam-verbouwen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/zonnepanelen/:stad/",
+      "destination": "/project/duurzaam-verbouwen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/zonnepanelen",
+      "destination": "/project/duurzaam-verbouwen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/zonnepanelen/",
+      "destination": "/project/duurzaam-verbouwen/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten",
+      "destination": "/project/",
+      "permanent": true
+    },
+    {
+      "source": "/renovatiekosten/",
+      "destination": "/project/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/aannemer/:stad",
+      "destination": "/project/aanbouw-realiseren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/aannemer/:stad/",
+      "destination": "/project/aanbouw-realiseren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/badkamer/:stad",
+      "destination": "/project/badkamer-renovatie/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/badkamer/:stad/",
+      "destination": "/project/badkamer-renovatie/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/dakkapel/:stad",
+      "destination": "/project/dakkapel-plaatsen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/dakkapel/:stad/",
+      "destination": "/project/dakkapel-plaatsen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/elektricien/:stad",
+      "destination": "/project/verlichting-installeren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/elektricien/:stad/",
+      "destination": "/project/verlichting-installeren/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/gietvloer/:stad",
+      "destination": "/project/gietvloer-leggen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/gietvloer/:stad/",
+      "destination": "/project/gietvloer-leggen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/loodgieter/:stad",
+      "destination": "/project/badkamer-renovatie/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/loodgieter/:stad/",
+      "destination": "/project/badkamer-renovatie/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/schilder/:stad",
+      "destination": "/project/schilderwerk-binnen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/schilder/:stad/",
+      "destination": "/project/schilderwerk-binnen/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/stukadoor/:stad",
+      "destination": "/project/stucwerk/:stad/",
+      "permanent": true
+    },
+    {
+      "source": "/offerte-check/stukadoor/:stad/",
+      "destination": "/project/stucwerk/:stad/",
+      "permanent": true
+    },
+    {
       "source": "/voorwaarden",
       "destination": "/algemene-voorwaarden/",
       "permanent": true
