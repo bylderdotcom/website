@@ -42,6 +42,14 @@ taxonomie en de navigatie, niet in het ontbreken van data.
 - **NL: een webshop bouwen.** Ontwerp en details nog open. Sluit aan op wat er al ligt: de
   configurators (deuren, gietvloer, kast), de offerteflow en de ledenkorting in `web/lib/aanbod.ts`.
 Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meenemen.
+- **VS, fase 1 (besluit Daniel, 23-10-2026).** Niet concurreren op klus-per-stad (Angi/HomeAdvisor winnen;
+  de 373 `/en-us/cost/`-pagina's staan op noindex). Wel: de Amerikaanse nieuwbouwkoper, het moment
+  van de builder's **design center**. Eerste test: `/en-us/upgrade-check/`, een wachtlijst met één van
+  drie prijzen ($99/$199/$349, willekeurig per bezoeker); meten met GA4 `upgrade_check_view` en
+  `upgrade_check_signup` en `feature_requests` met segment `us_wachtlijst`.
+  **Termen die kopers zelf gebruiken:** design center (appointment), options / upgrades, structural
+  options (eerdere deadline dan finishes), after closing, rough-in, pre-drywall inspection,
+  blue-tape walkthrough, punch list, 11-month warranty walkthrough. Niet "meerwerk"-vertalingen.
 
 ## Stack (feiten)
 - Pre-rendered HTML-pagina's per content-cluster (mappen in de repo-root, bv. `nieuwbouw-gids/`, `kortingscode/`, `offerte-check/`, `en-us/`).
