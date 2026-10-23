@@ -10492,16 +10492,6 @@
    "website": "http://www.locolama.nl/"
   },
   {
-   "naam": "Groene Vingers",
-   "cat": "woonwinkel",
-   "groep": "woonwinkel",
-   "rating": 4.6,
-   "reviews": 331,
-   "lat": 52.010999999999996,
-   "lng": 4.3611382999999995,
-   "website": "https://groenevingersdelft.nl/"
-  },
-  {
    "naam": "SoLow Feestwinkel Delft",
    "cat": "woonwinkel",
    "groep": "woonwinkel",
@@ -17282,16 +17272,6 @@
    "website": "https://sikkenspaintcenter.sikkenscenter.nl/"
   },
   {
-   "naam": "De Oude Bank",
-   "cat": "verf",
-   "groep": null,
-   "rating": 4.1,
-   "reviews": 50,
-   "lat": 52.4975133,
-   "lng": 6.1271758,
-   "website": "https://de-oude-bank.nl/"
-  },
-  {
    "naam": "Mooij Verf",
    "cat": "verf",
    "groep": null,
@@ -18230,6 +18210,16 @@
     "naam": "PLUS van Holten",
     "cat": "verlichting",
     "reden": "supermarkt"
+   },
+   {
+    "naam": "Groene Vingers",
+    "cat": "woonwinkel",
+    "reden": "geen woonwinkel (besluit Daniel)"
+   },
+   {
+    "naam": "De Oude Bank",
+    "cat": "verf",
+    "reden": "geen woonwinkel (besluit Daniel)"
    }
   ]
  }
