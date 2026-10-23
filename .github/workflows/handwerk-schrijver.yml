@@ -9,26 +9,31 @@ name: Opgezochte feiten per project schrijven
 # De sleutel staat als repo-secret. Die is met opzet niet te lezen, ook niet door
 # de assistent: GitHub geeft hem alleen aan de draaiende job.
 #
-# WAAROM HET EEN PR OPENT EN NIET COMMIT
-# Standing order in CLAUDE.md: loops leveren reviewbare PR's tot ze bewezen zijn.
-# Dit schrijft tekst — geen meting, geen hergeneratie van bestaande feiten — dus
-# hier hoort een mens tussen. De poort in de generator (waarde + bron + verse
-# controledatum) is de tweede zeef; deze PR is de eerste.
+# WAAROM DIT ZELF NAAR MAIN GAAT (besluit Daniel, 23-10-2026)
+# Tot deze dag pushte de ronde een tak en moest een mens daar een PR van maken.
+# Actions mag in deze repo geen PR's openen. Dat gebeurde na 1 oktober niet meer:
+# de rondes van 3, 10 en 17 oktober bleven als tak liggen en de site hield de
+# feiten van 1 oktober. Daarom commit de ronde nu zelf naar main, net als de
+# publicatieronde, maar alleen als drie controles slagen:
+#   1. er verdwijnt geen enkele projectpagina;
+#   2. de mediaan eigen tekst daalt niet;
+#   3. het script gooit niet meer dan 25% van de gevonden feiten weg (meer wijst
+#      op een kapotte bron of een kapot script, niet op een gewone ronde).
+# Slaagt er één niet, dan blijft het een tak en komt er een issue, zodat het niet
+# opnieuw stil blijft liggen. Elk feit houdt daarnaast de poort in de generator
+# (waarde + bron + verse controledatum).
 
 on:
-  # Wekelijks, op zaterdag. Bewust ná de ontdekkingsloop (vrijdag 07:00) en de
-  # publicatieloop (donderdag 05:00): nieuwe projecten zijn dan al binnen, en de
-  # feiten die hier bijkomen gaan mee met de publicatie van de week erop.
+  # Om de week, op zaterdag (besluit Daniel, 23-10-2026): een feit is 400 dagen
+  # houdbaar en er komen per week maar een paar projecten bij. GitHub kent geen
+  # tweewekelijks schema; de job draait elke zaterdag en stopt in de oneven weken.
+  # Bewust ná de ontdekkingsloop (vrijdag 07:00) en de publicatieloop (donderdag
+  # 05:00): nieuwe projecten zijn dan al binnen.
   #
-  # Waarom dit een schema verdient en de andere loops in dit cluster ook hebben:
-  # 105 van de 287 projectpagina's hebben nog geen opgezochte feiten, en dat zijn
-  # precies de pagina's die op 20% eigen tekst blijven staan. Zonder schema komen
-  # die er niet bij en meten we op 13 oktober een stand die stilstaat.
-  #
-  # Het script slaat over wat het al heeft, dus een wekelijkse ronde raakt alleen
-  # wat nog leeg is of wat ouder is dan de houdbaarheid van 400 dagen.
+  # Het script slaat over wat het al heeft, dus een ronde raakt alleen wat nog leeg
+  # is of wat ouder is dan de houdbaarheid van 400 dagen.
   schedule:
-    - cron: "0 6 * * 6"   # zaterdag 06:00 UTC
+    - cron: "0 6 * * 6"   # zaterdag 06:00 UTC, alleen in even weken
   workflow_dispatch:
     inputs:
       max:
@@ -38,20 +43,44 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+  issues: write
+
+# Dezelfde rij als de publicatieronde: die schrijft in dezelfde bestanden.
+concurrency:
+  group: projectpaginas-publiceren
+  cancel-in-progress: false
 
 jobs:
   schrijven:
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
+      - name: Om de week
+        id: week
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ $(( 10#$(date +%V) % 2 )) -eq 1 ]; then
+            echo "Oneven week ($(date +%V)): deze zaterdag niet."
+            echo "door=nee" >> "$GITHUB_OUTPUT"
+          else
+            echo "door=ja" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.week.outputs.door == 'ja'
 
       - uses: actions/setup-python@v5
+        if: steps.week.outputs.door == 'ja'
         with:
           python-version: "3.12"
 
+      - name: Uniciteit vóór de ronde
+        if: steps.week.outputs.door == 'ja'
+        run: |
+          python3 scripts/generate_projectpaginas.py --dry | tee voor.log
+          git checkout -- .
+
       - name: Feiten ophalen en schrijven
+        if: steps.week.outputs.door == 'ja'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -62,32 +91,92 @@ jobs:
           fi
 
       - name: Pagina's opnieuw maken en de uniciteit meten
+        if: steps.week.outputs.door == 'ja'
         run: python3 scripts/generate_projectpaginas.py | tee -a uitvoer.log
 
-      - name: Tak wegschrijven
+      - name: Controles
+        id: controle
+        if: steps.week.outputs.door == 'ja'
         run: |
-          if git diff --quiet; then
-            echo "Geen wijzigingen - niets te pushen."
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          def mediaan(pad):
+              m = re.findall(r'mediaan ([0-9.]+)%', open(pad).read())
+              return float(m[-1]) if m else None
+          fouten = []
+          weg = subprocess.run(["git", "diff", "--diff-filter=D", "--name-only", "--",
+                                "data/clusters/nieuwbouw-project/content"],
+                               capture_output=True, text=True).stdout.split()
+          if weg:
+              fouten.append(f"{len(weg)} projectpagina('s) zouden verdwijnen")
+          voor, na = mediaan("voor.log"), mediaan("uitvoer.log")
+          if voor is None or na is None:
+              fouten.append("mediaan eigen tekst niet te lezen uit de uitvoer")
+          elif na < voor:
+              fouten.append(f"mediaan eigen tekst daalt van {voor}% naar {na}%")
+          log = open("uitvoer.log").read()
+          m = re.search(r'(\d+) feiten weggegooid', log)
+          gegooid = int(m.group(1)) if m else 0
+          feiten = json.load(open("data/clusters/nieuwbouw-project/handwerk-feiten.json"))
+          bewaard = sum(1 for p in feiten.values() for v in p.values()
+                        if isinstance(v, dict) and v.get("waarde"))
+          if gegooid and gegooid / (gegooid + bewaard) > 0.25:
+              fouten.append(f"{gegooid} van {gegooid + bewaard} feiten weggegooid (meer dan 25%)")
+          print(f"mediaan {voor}% → {na}% · {gegooid} weggegooid, {bewaard} bewaard · {len(weg)} pagina's weg")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"ok={'nee' if fouten else 'ja'}\n")
+              f.write(f"samenvatting=mediaan {voor}% → {na}%, {gegooid} feiten weggegooid, {bewaard} bewaard\n")
+              f.write(f"fouten={'; '.join(fouten)}\n")
+          for x in fouten:
+              print(f"::warning::{x}")
+          PY
+
+      - name: Naar main
+        id: main
+        if: steps.week.outputs.door == 'ja' && steps.controle.outputs.ok == 'ja'
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          git add data/clusters/nieuwbouw-project/ nieuwbouw-project-sitemap.xml
+          if git diff --staged --quiet; then
+            echo "Geen wijzigingen - niets te doen."
             exit 0
           fi
           SAMENVATTING=$(grep -E 'projecten met feiten|weggegooid|mediaan|onder de' uitvoer.log | head -5)
-          TAK="handwerk-feiten-$(date +%Y%m%d-%H%M)"
-          git config user.name "bylderdotcom"
-          git config user.email "info@bylder.com"
-          git checkout -b "$TAK"
-          git add data/clusters/nieuwbouw-project/
           {
             echo "Opgezochte feiten van de eigen projectsites, ronde $(date +%d-%m-%Y)"
             echo
             echo "$SAMENVATTING"
             echo
-            echo "Elk feit staat met de pagina waar het gevonden is en de datum van de"
-            echo "controle. De generator toont een feit alleen met alle drie, en laat het"
-            echo "na 400 dagen vervallen. Feiten waarvan de inhoudswoorden niet in de"
-            echo "opgehaalde tekst terugkwamen, heeft het script zelf weggegooid."
+            echo "Controles geslaagd: geen pagina weg, mediaan eigen tekst niet gedaald,"
+            echo "hooguit 25% van de feiten weggegooid. Elk feit staat met de pagina waar het"
+            echo "gevonden is en de datum van de controle; de generator toont het alleen met"
+            echo "alle drie en laat het na 400 dagen vervallen."
           } > bericht.txt
           git commit -q -F bericht.txt
-          rm -f bericht.txt uitvoer.log
+          rm -f bericht.txt
+          # main kan tijdens de ronde (tot vijf uur) bewogen zijn
+          if git pull -q --rebase origin main && git push -q origin HEAD:main; then
+            echo "Naar main gepusht."
+          else
+            git rebase --abort 2>/dev/null || true
+            echo "push=mislukt" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Tak en issue als het niet naar main kon
+        if: steps.week.outputs.door == 'ja' && (steps.controle.outputs.ok == 'nee' || steps.main.outputs.push == 'mislukt')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FOUTEN: ${{ steps.controle.outputs.fouten }}
+          SAMENVATTING: ${{ steps.controle.outputs.samenvatting }}
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          TAK="handwerk-feiten-$(date +%Y%m%d-%H%M)"
+          git checkout -q -b "$TAK"
+          git add data/clusters/nieuwbouw-project/ nieuwbouw-project-sitemap.xml
+          git commit -q -m "Opgezochte feiten, ronde $(date +%d-%m-%Y) (niet naar main: ${FOUTEN:-push mislukt})" || true
           git push -q origin "$TAK"
-          echo "Tak gepusht: $TAK"
-          echo "PR openen doet een mens of de assistent; Actions mag hier geen PR maken."
+          gh issue create \
+            --title "Feitenronde $(date +%d-%m-%Y) niet gepubliceerd" \
+            --body "$(printf 'De feitenronde is niet naar main gegaan.\n\nReden: %s\n\n%s\n\nDe uitkomst staat op de tak `%s`. Kijk wat er misging; is het in orde, merge dan die tak.\n\nRun: %s' "${FOUTEN:-push naar main mislukt}" "$SAMENVATTING" "$TAK" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}")"
