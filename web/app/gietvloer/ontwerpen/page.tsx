@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Ontwerper from '../../components/gietvloer/Ontwerper'
 import GietvloerHeld from '../../components/gietvloer/GietvloerHeld'
-import { TYPES } from '../../components/gietvloer/gegevens'
+import { TYPES, GIET_PRIJS_M2 } from '../../components/gietvloer/gegevens'
 
 // De gietvloerontwerper op de website. Het scherm praat met de publieke API van de
 // app (app.bylder.com/api/gietvloer): zonder account, met id + sleutel in de URL.
@@ -25,12 +25,13 @@ const H2: React.CSSProperties = { fontSize: '1.45rem', fontWeight: 800, letterSp
 const P: React.CSSProperties = { fontSize: 16, lineHeight: 1.75, color: `${INKT}0.78)`, margin: '0 0 14px' }
 const KAART: React.CSSProperties = { background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, padding: '16px 20px' }
 
-const prijs = (id: string) => { const t = TYPES.find(x => x.id === id)!; return `€${t.prijs[0]} tot €${t.prijs[1]}` }
 
 const VRAGEN = [
   { v: 'Hoe haalt de ontwerper de kleur uit mijn foto?', a: 'De AI kijkt alleen naar de vloer en schat de kleur zoals die bij neutraal daglicht is. Warm avondlicht of een filter maakt een vloer op een foto vaak warmer of donkerder dan hij is; daar corrigeert hij voor. Daarna zoeken we de drie kleuren die het dichtst bij liggen, gemeten zoals het oog kleur ziet. Een scherm toont kleur nooit precies, daarom kun je stalen aanvragen.' },
   { v: 'Zijn de stalen echt gratis?', a: 'Ja, tot drie stalen. De fabrikant stuurt ze naar je huisadres. We geven daarvoor alleen je naam, je adres en de gekozen kleuren door, en pas nadat je daar akkoord op gaf.' },
-  { v: 'Wat kost een gietvloer per m²?', a: `Als indicatie, inclusief btw: een PU-gietvloer ${prijs('pu')} per m², epoxy ${prijs('epoxy')} en een cementgebonden vloer (microcement) ${prijs('cement')}. Voorbereiding van de dekvloer en plinten komen er soms bij. De echte prijs volgt na het inmeten.` },
+  { v: 'Wat kost een gietvloer per m²?', a: `Als indicatie kost een gietvloer in een woning €${GIET_PRIJS_M2[0]} tot €${GIET_PRIJS_M2[1]} per m², inclusief btw (Bylder-prijsbenchmark). Van de vier vloeren van Dr. Schutz zijn Bio Fine, Bio Cement en Bio Lava gelijk geprijsd; Bio Concrete is een stap duurder door het extra slijpwerk. De prijs per systeem stemt Dr. Schutz af met de verwerkers in jouw regio. Voorbereiding van de dekvloer en plinten komen er soms bij. De echte prijs volgt na het inmeten.` },
+  { v: 'Welke gietvloer is het makkelijkst schoon te houden?', a: 'Bio Concrete: die wordt volledig met diamant geslepen en is daardoor extreem glad. Bio Fine is ook eenvoudig schoon te houden, maar op een rustig vlak zie je kruimels sneller. Bij Bio Lava vallen vuil en gebruikssporen nauwelijks op, maar hij vraagt het meeste aandacht bij het schoonmaken.' },
+  { v: 'Kan een gietvloer in de badkamer?', a: 'Ja. Alle vier de vloeren van Dr. Schutz zijn 100% waterdicht en geschikt voor badkamer, keuken en bijkeuken. Wil je ook de wanden in hetzelfde materiaal, kies dan Bio Concrete: die is als enige van de vier ook voor wanden.' },
   { v: 'Kan een gietvloer op vloerverwarming?', a: 'Ja. Een gietvloer is een paar millimeter dik en geeft warmte snel door. Belangrijk is dat de dekvloer droog genoeg is en dat de vloerverwarming volgens schema is opgestookt voordat de vloer gelegd wordt. In een nieuwbouwwoning plan je dat rond de oplevering.' },
   { v: 'Ik heb geen bouwtekening. Kan ik toch ontwerpen?', a: 'Ja. Je vult zelf in welke ruimtes een gietvloer krijgen, met een schatting van de vierkante meters. Heb je de plattegrond van je aannemer wel, zet hem dan in Mijn woning: dan meten we elke kamer uit de tekening en zie je de vloer in je eigen woning.' },
   { v: 'Wie legt de vloer?', a: 'Een gespecialiseerde verwerker. Je vraagt de offerte aan in je gratis Bylder-omgeving; de verwerker krijgt je ruimtes, je kleur en je inspiratiefoto, en meet eerst in voordat hij een definitieve prijs geeft.' },
@@ -70,8 +71,8 @@ export default function GietvloerOntwerpenPage() {
           <h2 style={{ ...H2, marginTop: 30 }}>Van inspiratiefoto naar een vloer die je kunt bestellen</h2>
           <p style={P}>Bijna iedereen begint met een foto: een woonkamer op Pinterest, een vloer in een showroom. Het lastige is de stap daarna. Welke kleur is dat precies, welk type vloer, en hoe ziet hij eruit in jouw kamers? Daar is deze ontwerper voor.</p>
           <p style={P}>Je kiest per ruimte en per verdieping waar de gietvloer komt. Komt je tekening uit <a href="/mijn-woning/" style={{ color: GROEN, fontWeight: 700 }}>Mijn woning</a>, dan zie je de vloer meteen in je eigen plattegrond, met de vierkante meters per kamer. Zonder tekening vul je de ruimtes zelf in.</p>
-          <h2 style={H2}>PU, epoxy of cementgebonden</h2>
-          <p style={P}>In een woning kiezen de meeste kopers een PU-gietvloer: warmer en stiller dan epoxy, en licht elastisch. Epoxy is hard en voordelig, maar voelt koud en galmt meer; het past beter in een garage of berging. Een cementgebonden vloer (microcement) geeft de levendige, wolkerige betonlook, maar vraagt meer handwerk en onderhoud. In de ontwerper staan de voor- en nadelen per type naast elkaar.</p>
+          <h2 style={H2}>Vier vloeren, van rustig naar uitgesproken</h2>
+          <p style={P}>De ontwerper werkt met de Bio-vloeren van Dr. Schutz. Je kiest op tekening: {TYPES.map(t => t.naam).join(', ').replace(/, ([^,]*)$/, ' en $1')}, van een egale tot een uitgesproken vloer. De kwaliteit is bij alle vier gelijk: Shore D80 krasvast, 100% waterdicht en UV-stabiel. Bio Concrete is het makkelijkst schoon te houden en kan als enige ook op de wanden, maar is een stap duurder. Kies vooral op gevoel en bekijk een staal voordat je beslist.</p>
           <p style={P}>Wil je eerst vergelijken wie er bij jou in de buurt gietvloeren legt? <a href="/gietvloer/" style={{ color: GROEN, fontWeight: 700 }}>Bekijk gietvloerbedrijven per plaats</a>.</p>
           <h2 style={H2}>Veelgestelde vragen</h2>
           <div style={{ display: 'grid', gap: 10 }}>

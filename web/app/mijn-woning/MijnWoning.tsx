@@ -15,7 +15,7 @@ const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/'
 const OPSLAG = 'bylder:mijn-woning:v1'
 const H = 2600 // plafondhoogte; staat zelden op een tekening, dus een aanname die we tonen
 // De gietvloer is neutraal voor de koper (besluit Daniel, 10-10-2026): geen merk, een
-// prijsindicatie uit de PU-range van de gietvloerontwerper.
+// prijsindicatie uit de Bylder-prijsbenchmark van de gietvloerontwerper.
 const CONFIGURATOR = '/kozijnloze-deuren/configurator/'
 // Standaarddeur van de configurator (NIEUW in Configurator.tsx), veld voor veld.
 const STANDAARD = ['dawn', 'gelakt', '9010', '', 'oslo-oak', 'binnen', 'links', 'oma-q-slim', 'Zwart', 'loop', 'Zwart', '', 'Zwart']
@@ -493,12 +493,12 @@ export default function MijnWoning() {
               ))}
             </div>
             <div className="mw-reken">
-              <div><span>{nl(m2Giet, 1)} m² × € {GIET_PRIJS_M2[0]} – {GIET_PRIJS_M2[1]} (PU)</span><span className="mono">{eur(vanaf)} – {nl(tot)}</span></div>
+              <div><span>{nl(m2Giet, 1)} m² × € {GIET_PRIJS_M2[0]} – {GIET_PRIJS_M2[1]}</span><span className="mono">{eur(vanaf)} – {nl(tot)}</span></div>
               <div className="groen"><span>Bylder-voucher: gratis stalen, 5% korting vanaf € 7.500 (excl. btw)</span><span className="mono">inbegrepen</span></div>
               <div><span>Opmeting aan huis</span><span className="mono">gratis</span></div>
               <div className="tot"><span>Indicatie</span><span className="mono">{eur(vanaf)} – {nl(tot)}</span></div>
             </div>
-            <p className="mw-klein">Indicatie voor een PU-gietvloer, inclusief btw. Je echte prijs volgt uit het inmeten. Kleuren zijn een indicatie op je scherm, geen staal.</p>
+            <p className="mw-klein">Indicatie voor een gietvloer in een woning, inclusief btw (Bylder-prijsbenchmark). Je echte prijs volgt uit het inmeten. Kleuren zijn een indicatie op je scherm, geen staal.</p>
             <div className="mw-cta"><a className="mw-knop" href="/gietvloer/ontwerpen/">Kies kleur en type, en vraag stalen aan</a></div>
             <p className="mw-klein">Een vloer gezien die je mooi vindt? <a href="/gietvloer/ontwerpen/" style={{ color: GROEN, fontWeight: 700 }}>Upload de foto in de gietvloerontwerper</a>: we zoeken de kleur erbij, je ruimtes staan al klaar, en je vraagt tot drie stalen gratis aan.</p>
           </section>

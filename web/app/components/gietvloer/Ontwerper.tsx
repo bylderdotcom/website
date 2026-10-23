@@ -22,7 +22,7 @@ import Link from 'next/link'
 import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair, Ticket } from '@phosphor-icons/react'
 import { metRef } from '../aanbreng'
 import {
-  KLEUREN, TYPES, MAX_STALEN, VOORLOPIG, NIET_GIET, kleurOp, typeOp, m2Van, isLicht, besteKleuren,
+  KLEUREN, TYPES, VOOR_ALLE, MAX_STALEN, VOORLOPIG, NIET_GIET, kleurOp, typeOp, m2Van, isLicht, besteKleuren,
   type Analyse, type Keuze, type GekozenRuimte, type Match, type TypeId,
 } from './gegevens'
 
@@ -162,6 +162,10 @@ function VloerPlan({ laag, li, gekozen, kleur, wolk, glans, wissel }: {
 }
 
 /** Een vloerstaal in perspectief: zo ligt de kleur op de vloer, met wolken en glans. */
+function Bolletjes({ n, van }: { n: number; van: number }) {
+  return <span className="gv-bol" aria-hidden="true">{Array.from({ length: van }, (_, i) => <i key={i} className={i < n ? 'aan' : ''} />)}</span>
+}
+
 function Staal({ kleur, wolk, glans, label }: { kleur: string; wolk: number; glans: boolean; label?: string }) {
   const id = 'gv-s' + useId().replace(/[^a-zA-Z0-9]/g, '')
   const p = pts([[0, 0], [6000, 0], [6000, 4000], [0, 4000]])
@@ -313,9 +317,10 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
   const hex = kleur?.hex ?? '#CBC6BC'
   const type = typeOp(keuze.type)
   const a = w?.analyse ?? null
-  const uitstraling = a?.uitstraling ?? (keuze.type === 'cement' ? 'gewolkt' : 'licht gewolkt')
-  const wolk = keuze.type === 'cement' ? 0.9 : uitstraling === 'gewolkt' ? 0.7 : uitstraling === 'licht gewolkt' ? 0.35 : 0
-  const glans = (a?.glans ?? 'zijdeglans') !== 'mat' && keuze.type !== 'cement'
+  const uitstraling = a?.uitstraling ?? 'licht gewolkt'
+  // Het staaltje volgt het gekozen systeem (van rustig naar druk); zonder keuze de foto.
+  const wolk = type ? type.wolk : uitstraling === 'gewolkt' ? 0.7 : uitstraling === 'licht gewolkt' ? 0.35 : 0.1
+  const glans = a ? a.glans !== 'mat' : type?.id === 'concrete'
   const gekozen = new Set((eff.ruimtes ?? []).map(r => r.sleutel))
   const m2 = m2Van(eff)
   const handLijst = handmatig ?? eff.ruimtes ?? HANDMATIG
@@ -476,6 +481,8 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
       <section className="gv-blok" aria-labelledby="gv-3">
         <p className="gv-stap"><span>3</span>Het type</p>
         <h2 id="gv-3" className="gv-h2">Welke gietvloer past bij jou?</h2>
+        <p className="gv-uitleg">Vier vloeren van Dr. Schutz, van een rustige naar een uitgesproken tekening. De kwaliteit is bij alle vier gelijk; kies vooral op gevoel, en bekijk een staal voordat je beslist.</p>
+        <ul className="gv-alle">{VOOR_ALLE.map(v => <li key={v}><Check size={15} weight="bold" aria-hidden="true" />{v}</li>)}</ul>
         <div className="gv-vvw" role="radiogroup" aria-label="Komt er vloerverwarming?">
           <span><Thermometer size={18} aria-hidden="true" />Komt er vloerverwarming?</span>
           {([['ja', 'Ja'], ['nee', 'Nee'], ['weet-niet', 'Weet ik nog niet']] as const).map(([v, l]) => (
@@ -490,17 +497,23 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
                 {a?.type === t.id && <em>past bij je foto</em>}
               </span>
               <span className="gv-type-kort">{t.kort}</span>
+              <span className="gv-schaal" aria-label={`Tekening ${t.tekening} van 4, schoonmaakgemak ${t.schoon} van 5, prijsniveau ${t.prijsNiveau}`}>
+                <span>Tekening <Bolletjes n={t.tekening} van={4} /></span>
+                <span>Schoonmaken <Bolletjes n={t.schoon} van={5} /></span>
+                <span>Prijs <b>{t.prijsNiveau}</b></span>
+              </span>
               <span className="gv-type-sub">Voordelen</span>
               <ul className="gv-voor">{t.voor.map(v => <li key={v}>{v}</li>)}</ul>
               <span className="gv-type-sub">Nadelen</span>
               <ul className="gv-tegen">{t.tegen.map(v => <li key={v}>{v}</li>)}</ul>
               {keuze.vloerverwarming === 'ja' && <span className="gv-type-vvw"><Thermometer size={15} aria-hidden="true" />{t.vloerverwarming}</span>}
-              <span className="gv-type-prijs">€ {t.prijs[0]}–{t.prijs[1]} per m²</span>
+              {t.wand && <span className="gv-type-vvw">Ook geschikt voor de wanden</span>}
+              <span className="gv-type-prijs">{t.prijs ? `€ ${t.prijs[0]}–${t.prijs[1]} per m²` : `${t.kleuren} kleuren · prijs na de opmeting`}</span>
               {keuze.type === t.id && <Check className="gv-vink" size={18} weight="bold" aria-hidden="true" />}
             </button>
           ))}
         </div>
-        <p className="gv-klein">Prijzen zijn een indicatie per m² inclusief btw, uit de Bylder-prijsbenchmark voor gietvloeren. Voorbereiding van de ondervloer en plinten komen er soms bij. Je echte prijs volgt na de opmeting.</p>
+        <p className="gv-klein">Prijsniveau ten opzichte van elkaar: Bio Concrete is een stap duurder door het extra slijpwerk. De prijs per m² stemt Dr. Schutz af met de verwerkers in jouw regio; je echte prijs volgt na de opmeting. Voorbereiding van de ondervloer en plinten komen er soms bij.</p>
       </section>
 
       {/* ============ 4. stalen en offerte ============ */}
@@ -513,7 +526,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
             <div><dt>Kleur</dt><dd>{kleur?.naam ?? 'nog niet gekozen'}</dd></div>
             <div><dt>Type</dt><dd>{type?.naam ?? 'nog niet gekozen'}</dd></div>
             <div><dt>Oppervlak</dt><dd>≈ {nl(m2, 1)} m²</dd></div>
-            {type && m2 > 0 && <div className="gv-indicatie"><dt>Indicatie</dt><dd>{eur(m2 * type.prijs[0])} – {eur(m2 * type.prijs[1])}</dd></div>}
+            {type?.prijs && m2 > 0 && <div className="gv-indicatie"><dt>Indicatie</dt><dd>{eur(m2 * type.prijs[0])} – {eur(m2 * type.prijs[1])}</dd></div>}
           </dl>
         </div>
         <div className="gv-voucher">
@@ -917,6 +930,12 @@ const CSS = `
 .gv-voor li::before{content:'';position:absolute;left:2px;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--mos)}
 .gv-tegen li::before{content:'';position:absolute;left:2px;top:.75em;width:8px;height:2px;background:var(--koper)}
 .gv-type-vvw{display:flex;gap:6px;align-items:flex-start;margin-top:6px;padding:8px 10px;border-radius:10px;background:var(--papier);font-size:13.5px;line-height:1.45}
+.gv-uitleg{font-size:15px;line-height:1.6;color:var(--tekst);margin:0 0 10px;max-width:62ch}
+.gv-alle{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;color:var(--tekst)}
+.gv-alle li{display:flex;align-items:flex-start;gap:6px}.gv-alle svg{flex:none;margin-top:3px;color:var(--mos)}
+.gv-schaal{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:rgba(61,46,30,.72);margin:2px 0 6px}
+.gv-schaal>span{display:inline-flex;align-items:center;gap:6px}
+.gv-bol{display:inline-flex;gap:3px}.gv-bol i{width:8px;height:8px;border-radius:50%;background:rgba(61,46,30,.18)}.gv-bol i.aan{background:var(--mos)}
 .gv-type-prijs{margin-top:auto;padding-top:8px;font:700 14px ui-monospace,Menlo,monospace;color:var(--inkt)}
 .gv-overzicht{display:grid;gap:14px;align-items:center;margin-bottom:16px}
 @media (min-width:760px){.gv-overzicht{grid-template-columns:260px 1fr}}
