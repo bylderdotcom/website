@@ -82,14 +82,17 @@ const VAST: Record<string, [number, number]> = {
 let _coord: Record<string, [number, number]> | null = null
 function coordVan(gemeente: string): [number, number] | null {
   if (!_coord) {
+    // Het midden van een gemeente ligt soms ver van de stad: dat van Rotterdam ligt in de
+    // haven, en dan stond een winkel in Maassluis op "3 km". Waar we minstens drie
+    // nieuwbouwprojecten met die plaatsnaam kennen, is hun mediaan een beter midden.
     _coord = { ...VAST }
     for (const g of lees('data', 'gemeenten.json').gemeenten as { slug: string; lat?: number; lng?: number }[])
       if (g.lat && g.lng) _coord[g.slug] = [g.lat, g.lng]
-    const som: Record<string, [number, number, number]> = {}
-    for (const p of projecten()) if (p.lat && p.lng) {
-      const s = (som[p.plaats] ??= [0, 0, 0]); s[0] += p.lat; s[1] += p.lng; s[2]++
-    }
-    for (const [k, [a, b, n]] of Object.entries(som)) if (!(k in _coord)) _coord[k] = [a / n, b / n]
+    const per: Record<string, [number, number][]> = {}
+    for (const p of projecten()) if (p.lat && p.lng) (per[p.plaats] ??= []).push([p.lat, p.lng])
+    const mediaan = (xs: number[]) => { const z = [...xs].sort((a, b) => a - b); return z[Math.floor(z.length / 2)] }
+    for (const [k, pts] of Object.entries(per))
+      if (pts.length >= 3 || !(k in _coord)) _coord[k] = [mediaan(pts.map(x => x[0])), mediaan(pts.map(x => x[1]))]
   }
   return _coord[gemeente] ?? _coord[gemeenteVan(gemeente)] ?? null
 }
@@ -206,14 +209,15 @@ export function lokaalHtml(l: Lokaal): string {
   const k = kort(l.klus.naam), h2 = 'font-size:clamp(1.4rem,2.2vw,2rem);font-weight:800;color:var(--bark);letter-spacing:-0.025em;margin:0 0 8px'
   const p = 'font-size:15px;color:var(--bark-3);margin:0 0 16px;max-width:68ch;line-height:1.65'
   const li = 'padding:10px 0;border-bottom:1px solid rgba(61,46,30,0.1);font-size:15px'
+  const a = 'color:#3D5A3E;font-weight:600'
   const delen: string[] = []
 
   for (const b of l.bedrijven) {
     delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:24px 0 6px">${nl(b.totaal)} ${E(b.wie)} in ${E(l.stad)}</h3>` +
       `<ul style="list-style:none;padding:0;margin:0 0 8px">` + b.top.map(x =>
-        `<li style="${li}"><a href="${x.pad}" style="font-weight:700">${E(x.naam)}</a>` +
+        `<li style="${li}"><a href="${x.pad}" style="font-weight:700;color:#3D5A3E">${E(x.naam)}</a>` +
         (x.rating ? ` <span style="color:var(--bark-3)">&#9733; ${x.rating.toFixed(1).replace('.', ',')} uit ${nl(x.reviews)} reviews</span>` : '') + '</li>').join('') +
-      `</ul><p style="${p}"><a href="/${b.vak}/">Alle ${E(b.wie)} op Bylder &rarr;</a></p>`)
+      `</ul><p style="${p}"><a href="/${b.vak}/" style="${a}">Alle ${E(b.wie)} op Bylder &rarr;</a></p>`)
   }
   if (l.winkels.length) {
     delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:24px 0 6px">${E(l.klus.winkelsLabel.charAt(0).toUpperCase() + l.klus.winkelsLabel.slice(1))} bekijken in de buurt</h3>` +
@@ -222,15 +226,15 @@ export function lokaalHtml(l: Lokaal): string {
         `<li style="${li}"><strong>${E(x.w.naam)}</strong>` +
         (x.korting !== undefined ? ` <span style="background:#3D5A3E;color:#F5F0E8;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px">Bylder-korting${x.korting ? ': ' + E(x.korting) : ''}</span>` : '') +
         ` <span style="color:var(--bark-3)">&middot; ${x.km.toFixed(0)} km${x.w.rating ? ` &middot; &#9733; ${String(x.w.rating).replace('.', ',')} uit ${nl(x.w.reviews ?? 0)} reviews` : ''}</span>` +
-        (x.w.website ? ` &middot; <a href="${E(x.w.website)}" rel="nofollow noopener" target="_blank">website</a>` : '') + '</li>').join('') + '</ul>' +
-      (l.klus.gids ? `<p style="${p}"><a href="/showrooms/${l.klus.gids}/">De showrooms die wij aanraden voor ${E(l.klus.winkelsLabel)} &rarr;</a></p>` : ''))
+        (x.w.website ? ` &middot; <a href="${E(x.w.website)}" rel="nofollow noopener" target="_blank" style="${a}">website</a>` : '') + '</li>').join('') + '</ul>' +
+      (l.klus.gids ? `<p style="${p}"><a href="/showrooms/${l.klus.gids}/" style="${a}">De showrooms die wij aanraden voor ${E(l.klus.winkelsLabel)} &rarr;</a></p>` : ''))
   }
   if (l.nieuwbouw.totaal) {
     delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:24px 0 6px">Nieuwbouw in ${E(l.stad)}</h3>` +
       `<p style="${p}">Bylder volgt ${nl(l.nieuwbouw.totaal)} nieuwbouwprojecten in ${E(l.stad)}. Kopers daar laten de ${E(k)} meestal in het eerste jaar na de sleutel doen.` +
       (l.nieuwbouw.metPagina.length ? ' Per project staat uitgewerkt wat er wanneer beslist moet worden:' : '') + '</p>' +
       (l.nieuwbouw.metPagina.length ? '<ul style="margin:0 0 8px;padding-left:20px">' +
-        l.nieuwbouw.metPagina.map(x => `<li style="padding:4px 0"><a href="${x.pad}">${E(x.naam)}</a></li>`).join('') + '</ul>' : ''))
+        l.nieuwbouw.metPagina.map(x => `<li style="padding:4px 0"><a href="${x.pad}" style="${a}">${E(x.naam)}</a></li>`).join('') + '</ul>' : ''))
   }
   const m = l.markt
   if (m && (m.verhuizingen || m.gereed || m.prijs)) {
@@ -244,11 +248,11 @@ export function lokaalHtml(l: Lokaal): string {
     ].filter(Boolean)
     delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:24px 0 6px">De woningmarkt in ${E(m.gemeente)}</h3>` +
       `<p style="${p}">${E(m.gemeente)} telde ${zinnen.map(E).join(', ')}. Wie verhuist of een nieuwe woning krijgt, begint aan de afwerking: ` +
-      `daar zit de vraag naar ${E(k)}. Bron: CBS en Kadaster. <a href="/wonen-in/${E(m.slug)}/">Alle cijfers over wonen in ${E(m.gemeente)}</a>.</p>`)
+      `daar zit de vraag naar ${E(k)}. Bron: CBS en Kadaster. <a href="/wonen-in/${E(m.slug)}/" style="${a}">Alle cijfers over wonen in ${E(m.gemeente)}</a>.</p>`)
   }
   const ander = Object.entries(KLUSSEN).filter(([s]) => s !== l.klusSlug)
   delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:24px 0 6px">Andere klussen in ${E(l.stad)}</h3>` +
-    `<p style="${p}">` + ander.map(([s, x]) => `<a href="/project/${s}/${l.gemeente}/">${E(x.naam.toLowerCase())}</a>`).join(' &middot; ') + '</p>')
+    `<p style="${p}">` + ander.map(([s, x]) => `<a href="/project/${s}/${l.gemeente}/" style="${a}">${E(x.naam.toLowerCase())}</a>`).join(' &middot; ') + '</p>')
   const v = vragen(l)
   if (v.length) delen.push(`<h3 style="font-size:1.15rem;font-weight:800;margin:28px 0 6px">Vragen over ${E(k)} in ${E(l.stad)}</h3>` +
     v.map(([q, a]) => `<details style="border-bottom:1px solid rgba(61,46,30,0.12);padding:12px 0"><summary style="font-weight:700;cursor:pointer">${E(q)}</summary><p style="${p};margin-top:8px">${E(a)}</p></details>`).join(''))
