@@ -17,8 +17,14 @@
 # Voorbeelden: /stukadoor/zuidwolde/ → /stukadoor/; /nieuwbouw/zeeland/terneuzen/terneuzen-west/
 # → /nieuwbouw/zeeland/terneuzen/. Querystring en anker vervallen, want ze horen bij het oude doel.
 #
-# Raakt ook de RSC-payload in Next-pagina's (href=\"…\"), zodat de HTML en de payload gelijk
-# blijven. Schrijft alleen bestanden die echt veranderen.
+# ALLEEN DE ZICHTBARE HTML, NOOIT <script>. Een eerste versie paste ook de RSC-payload van
+# Next aan (href=\"…\" in self.__next_f.push). Die payload bevat tekststukken met hun lengte
+# ervoor; een langere of kortere link maakte die lengte fout en de pagina bouwde in de browser
+# niet meer op ("This page couldn't load", 23-10-2026, ~15 min live, teruggedraaid in #269).
+# Nu blijft elk script ongemoeid. React laat bij het hydrateren de href in de server-HTML
+# staan, dus de bezoeker krijgt de omgezette link. Ook JavaScript dat zelf een link opbouwt
+# ('/bouwvergunning/'+c.slug+'/') valt zo buiten schot. Schrijft alleen bestanden die echt
+# veranderen.
 #
 # Gebruik:  python3 _scripts/dode_links_pass.py <out-map> [--droog] [--rapport <bestand>]
 #   --droog    niets schrijven, alleen tellen
@@ -30,7 +36,8 @@ import re
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-LINK = re.compile(r'href=(\\?")(/[^"\\#?\s<>]*)([#?][^"\\]*)?(\\?")')
+LINK = re.compile(r'href="(/[^"#?\s<>\'+\\]*)([#?][^"]*)?"')
+SCRIPT = re.compile(r'(<script\b.*?</script>)', re.S | re.I)
 BESTAND = re.compile(r'\.(?!html?$)[a-z0-9]{2,5}$', re.I)
 
 
@@ -112,14 +119,16 @@ def main():
             telling = [0]
 
             def vervang(m):
-                nieuw = doel(m.group(2))
-                if nieuw == m.group(2):
+                nieuw = doel(m.group(1))
+                if nieuw == m.group(1):
                     return m.group(0)
                 telling[0] += 1
-                per_groep['/' + m.group(2).strip('/').split('/')[0] + '/'] += 1
-                return f'href={m.group(1)}{nieuw}{m.group(4)}'
+                per_groep['/' + m.group(1).strip('/').split('/')[0] + '/'] += 1
+                return f'href="{nieuw}"'
 
-            nieuw_html = LINK.sub(vervang, html)
+            # Even delen zijn HTML, oneven delen zijn complete <script>-blokken.
+            delen = SCRIPT.split(html)
+            nieuw_html = ''.join(d if i % 2 else LINK.sub(vervang, d) for i, d in enumerate(delen))
             if telling[0]:
                 bestanden += 1
                 links += telling[0]

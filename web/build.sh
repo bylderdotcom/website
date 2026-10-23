@@ -113,9 +113,9 @@ fi
 # build dicht, ook voor de volgende generator. Uitleg en voorbeelden: kop van het script.
 echo "▸ dode interne links omzetten"
 if command -v python3 >/dev/null 2>&1; then
-  # EERSTE RONDE DROOG (23-10-2026): tellen en een lijst publiceren om na te lopen, niets
-  # omzetten. Na die controle --droog en --rapport weghalen.
-  python3 "$ROOT/_scripts/dode_links_pass.py" ./out --droog --rapport ./out/dode-links-rapport.txt
+  # Droge ronde 23-10-2026 nagelopen: 11.258 dode linkdoelen, alle 404 op productie, geen
+  # werkend doel in de lijst. Scripts blijven ongemoeid (zie kop van het script, #269).
+  python3 "$ROOT/_scripts/dode_links_pass.py" ./out
 else
   echo "⚠ python3 ontbreekt: dode links NIET omgezet"
 fi
