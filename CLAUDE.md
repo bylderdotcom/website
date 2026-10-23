@@ -115,6 +115,11 @@ een kwartier live" zonder `vercel ls website` te checken.
 - Deze repo heeft twee Actions: `nieuwbouw-discovery.yml` en `project-freshness.yml`. Nog geen
   volledige loop-set zoals de evtrader-repo (13 loops).
 - Bij het bouwen ervan: **loops draaien read-only / leveren reviewbare PR's** tot bewezen; geen auto-publish naar productie zonder human-gate. Scoped tokens per service, nooit master-keys.
+- **Uitzondering: de feitenronde voor projectpagina's mag zelf naar main (besluit Daniel, 23-10-2026).**
+  `handwerk-schrijver.yml` draait om de week en commit zelf, maar alleen als drie controles slagen:
+  geen pagina weg, mediaan eigen tekst niet gedaald, hooguit 25% van de feiten weggegooid. Anders een
+  tak plus een issue. Reden: de tak-plus-handmatige-PR bleef na 1 oktober drie rondes liggen. Een
+  nieuwe loop die zelf publiceert vraagt opnieuw om Daniels akkoord en om zulke controles.
 
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.
