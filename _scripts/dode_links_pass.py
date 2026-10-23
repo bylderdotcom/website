@@ -30,9 +30,7 @@ import re
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-# Een ' of + in het pad is JavaScript dat een link opbouwt ('/bouwvergunning/'+c.slug+'/'),
-# geen link: die valt buiten het patroon en blijft staan.
-LINK = re.compile(r'href=(\\?")(/[^"\\#?\s<>\'+]*)([#?][^"\\]*)?(\\?")')
+LINK = re.compile(r'href=(\\?")(/[^"\\#?\s<>]*)([#?][^"\\]*)?(\\?")')
 BESTAND = re.compile(r'\.(?!html?$)[a-z0-9]{2,5}$', re.I)
 
 
