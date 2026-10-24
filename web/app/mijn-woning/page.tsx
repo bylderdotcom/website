@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import MijnWoning from './MijnWoning'
+import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
 
 /**
  * /mijn-woning/ — sleep je plattegrond erin en zie je nieuwe woning.
@@ -41,6 +42,9 @@ export default function Pagina() {
   return (
     <main style={{ background: '#F5F0E8', minHeight: '100vh' }}>
       <MijnWoning />
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 16px 56px' }}>
+        <EigenVakmanMeekijken campagne="mijn-woning" marge="8px 0 0" />
+      </div>
     </main>
   )
 }

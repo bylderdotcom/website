@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { aantalMerken } from '@/lib/merken'
+import EigenVakmanMeekijken, { EIGEN_VAKMAN_VRAAG } from '../components/EigenVakmanMeekijken'
 
 /**
  * De uitlegpagina — en de reden dat de homepage lichter kan worden.
@@ -88,6 +89,7 @@ const BRONNEN = [
 
 // Vraag en antwoord — de tekst hieronder is óók wat in de FAQ-schema staat.
 const VRAGEN = [
+  EIGEN_VAKMAN_VRAAG,
   {
     v: 'Wat is een meerwerklijst en hoe controleer je die?',
     a: 'Een meerwerklijst is een offerte van de aannemer voor extra werkzaamheden bovenop de '
@@ -199,6 +201,8 @@ export default function HoeHetWerktPage() {
           </li>
         ))}
       </ol>
+
+      <EigenVakmanMeekijken campagne="hoe-het-werkt" marge="40px 0 0" />
 
       <h2 style={H2}>Wat is Bylder?</h2>
       <p style={P}>

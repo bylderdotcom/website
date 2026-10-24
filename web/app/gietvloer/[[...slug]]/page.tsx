@@ -3,6 +3,7 @@ import { getPages, getPage, getMainHtml, getShellCss, toMetadata, slugToSegments
 import InteractiveScripts from '../InteractiveScripts'
 import { zonderUitgeslotenLd } from '@/lib/uitgesloten'
 import GietvloerCTA from '../../components/GietvloerCTA'
+import EigenVakmanMeekijken from '../../components/EigenVakmanMeekijken'
 
 // /gietvloer/ (index-hub), /gietvloer/<stad>/ (bedrijvengrid) en
 // /gietvloer/bedrijf/<slug>/ (bedrijfsprofiel) in één optionele catch-all.
@@ -36,6 +37,7 @@ export default async function GietvloerPage({ params }: { params: Promise<{ slug
       {!page.slug.startsWith('bedrijf/') && (
         <div style={{ maxWidth: 1180, margin: '0 auto', padding: '0 16px' }}>
           <GietvloerCTA aanleiding="Upload een foto van een gietvloer die je mooi vindt. Wij lezen de kleur en de glans, je kiest de ruimtes in je woning, en je krijgt tot drie stalen gratis thuis." />
+          <EigenVakmanMeekijken product="je gietvloer" campagne="gietvloer" marge="24px 0 40px" />
         </div>
       )}
       <InteractiveScripts />

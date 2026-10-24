@@ -51,6 +51,19 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
   options (eerdere deadline dan finishes), after closing, rough-in, pre-drywall inspection,
   blue-tape walkthrough, punch list, 11-month warranty walkthrough. Niet "meerwerk"-vertalingen.
 
+- **Koper nodigt zelf bedrijven uit (besluit Daniel, 24-10-2026), NL én VS.** Naast onze partners
+  nodigt een koper in zijn offerteaanvraag (app) elk bedrijf uit met een e-mailadres. Het kijkt mee in
+  de digitale tweeling met de geconfigureerde maatwerkproducten en zet zijn offerte ernaast. USP én de
+  manier waarop nieuwe partners ons leren kennen. Afspraken: **geen commissie** op zelf gekozen
+  bedrijven; de uitnodigingsmail is een verzoek van de koper, **geen reclame**, een partneraanbod pas
+  ná hun reactie; de koper bepaalt per bedrijf wat het ziet. Op de site: blok
+  `web/app/components/EigenVakmanMeekijken.tsx` (homepage, hoe-het-werkt, mijn-woning, deuren,
+  gietvloer, kasten). VS-aanbod: uploaden + 3D + configuratoren + eigen bedrijven uitnodigen, $399
+  eenmalig vooraf (richtprijs Daniel).
+- **OPEN, niet vergeten: lijst met volgende producten die kopers in hun woning kunnen toevoegen.**
+  Nu: binnendeuren, gietvloer, kast op maat (en plinten via offerte). Bij elk gesprek over de
+  tweeling, configuratoren of de VS-lancering: Daniel herinneren dat deze lijst nog gemaakt moet worden.
+
 ## Stack (feiten)
 - Pre-rendered HTML-pagina's per content-cluster (mappen in de repo-root, bv. `nieuwbouw-gids/`, `kortingscode/`, `offerte-check/`, `en-us/`).
 - Content-generatie via **Python-scripts** in `scripts/` (`nieuwbouw_scraper.py`, `nwn_scraper.py`, `vakbedrijven_pipeline.py`, `winkels_mvp.py`) + JSON-data in `data/`.
