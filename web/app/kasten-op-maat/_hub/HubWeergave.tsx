@@ -3,6 +3,7 @@ import { voorbeeld } from '@/lib/kast/voorbeelden'
 import { PIJLER, TYPES, urlVan, BIJGEWERKT, URL_BASIS, type HubPagina } from '@/lib/kast/hub'
 import { Uitslag } from '../../components/kast/Tekeningen'
 import VoorbeeldKast from './VoorbeeldKast'
+import EigenVakmanMeekijken from '../../components/EigenVakmanMeekijken'
 
 // Eén weergave voor de pijler en de typepagina's. Alles wat hier staat komt uit
 // het rekenmodel of uit lib/kast/hub.ts; er staat geen enkel getal met de hand.
@@ -177,6 +178,8 @@ export default function HubWeergave({ p }: { p: HubPagina }) {
           ))}
         </div>
       </div>
+
+      <EigenVakmanMeekijken product="je kast" campagne="kasten-op-maat" marge="44px 0 0" />
 
       <aside aria-label="Begin met ontwerpen" style={{ background: '#1A1208', borderRadius: 20, padding: '30px 28px', margin: '52px 0 0', color: '#F5F0E8' }}>
         <p style={{ ...LABEL, color: '#E8A87C' }}>Ontwerper · offerte</p>

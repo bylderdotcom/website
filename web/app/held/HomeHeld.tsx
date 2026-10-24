@@ -1,6 +1,7 @@
 import KastCTA from '../components/KastCTA'
 import GietvloerCTA from '../components/GietvloerCTA'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
+import EigenVakmanMeekijken, { EIGEN_VAKMAN_VRAAG } from '../components/EigenVakmanMeekijken'
 import HeldToneel, { type Regel } from './HeldToneel'
 import { HOME_DELEN } from '../homeSections'
 import { aantalMerken, deelnemers, type Deelnemer } from '@/lib/merken'
@@ -102,6 +103,7 @@ const VRAGEN: Array<[string, string]> = [
    'Ja, voor bewoners. De aangesloten merken en vakbedrijven betalen om vindbaar te zijn; daarom houden we advies en verkoop strikt gescheiden en staat bij elk product wie het levert.'],
   ['Werkt het ook als mijn project nog niet op Bylder staat?',
    'Ja. Vul je adres in: de woningscan leest het Kadaster en werkt op elk adres in Nederland. Een projectpagina is handig, maar niet nodig om je plattegrond te laten uitlezen.'],
+  [EIGEN_VAKMAN_VRAAG.v, EIGEN_VAKMAN_VRAAG.a],
   ['Wat heb ik aan Bylder na de oplevering?',
    'Je dossier blijft bestaan: dezelfde tekening, dezelfde merken, dezelfde adviseur. Voor de tuin, de zonwering, de laadpaal en de meubels, en voor garantie (Woningborg of SWK) en onderhoud van installaties.'],
 ]
@@ -244,6 +246,13 @@ export default function HomeHeld() {
             aanleiding={'Upload een foto van een vloer die je mooi vindt. We lezen de kleur en zoeken de drie '
               + 'kleuren die er het dichtst bij liggen. Kies per ruimte en verdieping, en vraag tot drie stalen gratis aan.'}
           />
+        </div>
+      </section>
+
+      {/* ── 3b. Eigen vakman kijkt mee in de woning (besluit Daniel, 24-10-2026) ── */}
+      <section style={{ padding: '8px 0 56px' }}>
+        <div className="hh-wrap">
+          <EigenVakmanMeekijken campagne="homepage" marge="0" />
         </div>
       </section>
 

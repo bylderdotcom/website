@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
+import EigenVakmanMeekijken, { EIGEN_VAKMAN_VRAAG } from '../components/EigenVakmanMeekijken'
 
 /**
  * Pillar voor onzichtbare kozijnen / kozijnloze deuren.
@@ -128,6 +129,7 @@ const MERKEN: Merk[] = [
 ]
 
 const VRAGEN = [
+  EIGEN_VAKMAN_VRAAG,
   {
     v: 'Wat is een onzichtbaar kozijn precies?',
     a: 'Een aluminium of stalen frame dat in de ruwbouw wordt gezet en daarna wordt meegestuukt. Na het '
@@ -453,6 +455,8 @@ export default function OnzichtbaarKozijnPage() {
         {' · '}
         <a href="/timmerman/" style={{ color: GROEN, fontWeight: 700 }}>Timmerlieden</a>
       </p>
+
+      <EigenVakmanMeekijken product="je binnendeuren" campagne="kozijnloze-deuren" marge="36px 0 0" />
 
       {/* Cross-sell (besluit Daniel, 11-10-2026): kozijnloos en plintloos verwijzen naar elkaar. */}
       <section aria-labelledby="ook-plintloos" style={{ ...KAART, marginTop: 44, display: 'grid', gap: 10, borderColor: GROEN, borderWidth: 1.5 }}>
