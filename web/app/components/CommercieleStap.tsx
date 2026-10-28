@@ -7,6 +7,7 @@
 //           <CommercieleStap pad="..." alleen="strook" />  alleen de strook
 
 import { aanbodVoor, aantalMerken, kortingenVoor, type Aanbod } from '@/lib/aanbod'
+import { plaatsInRegio } from '@/lib/afwerken'
 import AanbodStrook from './AanbodStrook'
 import AfwerkpakketCTA from './AfwerkpakketCTA'
 import AupingCTA from './AupingCTA'
@@ -48,11 +49,14 @@ export default function CommercieleStap({
 }: { pad: string; alleen?: 'stap' | 'strook'; marge?: string }) {
   const a = aanbodVoor(pad) ?? { stap: 'auping' as const }
   const merken = aantalMerken()
+  const inRegio = !!plaatsInRegio(pad)
   return (
     <>
+      {/* Elke pagina ook: Bylder kan de hele afwerking aannemen (28-10-2026). In de regio Den
+          Bosch staat die stap vóór de gewone stap, groot en met de plaats erin. */}
+      {alleen !== 'strook' && inRegio && <AfwerkpakketCTA pad={pad} marge={marge} />}
       {alleen !== 'strook' && <Stap a={a} merken={merken} marge={marge} />}
-      {/* Elke pagina ook: Bylder kan de hele afwerking aannemen (28-10-2026). */}
-      {alleen !== 'strook' && <AfwerkpakketCTA marge="0 0 20px" />}
+      {alleen !== 'strook' && !inRegio && <AfwerkpakketCTA pad={pad} marge="0 0 20px" />}
       {alleen !== 'stap' && <AanbodStrook merken={merken} titel="Meer regelen via Bylder" marge={marge} />}
     </>
   )
