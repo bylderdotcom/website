@@ -161,8 +161,10 @@ export default function Nav({ merken }: { merken: number }) {
                 {m.label}
                 {pijl(open === m.label)}
               </button>
-              {open === m.label && (
-                <div style={{
+              {/* Altijd in de HTML, verborgen tot het menu open is: zo zien zoekmachines dezelfde
+                  menulinks als op de statische pagina's (audit 28-10-2026). */}
+              {(
+                <div hidden={open !== m.label} style={{
                   position: 'absolute', top: 'calc(100% + 14px)', left: m.breed ? 'auto' : 0,
                   right: m.breed ? -160 : 'auto', background: '#fff', border: `1px solid ${INKT}0.1)`,
                   borderRadius: 14, boxShadow: '0 12px 40px rgba(61,46,30,0.12)', padding: 8,
