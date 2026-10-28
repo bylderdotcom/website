@@ -1,7 +1,9 @@
 // KOPIE van app/src/components/kast/Werkplaats.tsx (bylderdotcom/app). Wijzig beide tegelijk.
-import { zaaglijst, platen, beslag, type Bouw } from '@/lib/kast/rekenmodel'
+import { zaaglijst, platen, beslag, zaaglijstCsv, aanzichtDxf, type Bouw } from '@/lib/kast/rekenmodel'
 
-// Wat het timmerbedrijf nodig heeft: zaaglijst, platen, beslag en de vakken.
+// Wat het timmerbedrijf nodig heeft: zaaglijst, platen, beslag en de vakken. De zaaglijst
+// ook als Excel-bestand en het vooraanzicht als dxf, want zo werken timmerbedrijven
+// (Meerbeek Timmerwerken: zaaglijst in Excel, tekenen in SketchUp).
 
 const th: React.CSSProperties = { textAlign: 'left', padding: '8px 10px', fontSize: 11, letterSpacing: '.06em', textTransform: 'uppercase', color: 'rgba(61,46,30,.55)', fontFamily: 'monospace', background: '#F5F0E8' }
 const td: React.CSSProperties = { padding: '7px 10px', borderTop: '1px solid rgba(61,46,30,.1)', fontSize: 13.5, verticalAlign: 'top' }
@@ -9,6 +11,7 @@ const n: React.CSSProperties = { ...td, textAlign: 'right', fontVariantNumeric: 
 const tabel: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', background: '#fff' }
 const doos: React.CSSProperties = { overflowX: 'auto', border: '1px solid rgba(61,46,30,.12)', borderRadius: 12 }
 const nl = (v: number) => v.toLocaleString('nl-NL')
+const knop: React.CSSProperties = { display: 'inline-block', fontSize: 13.5, fontWeight: 700, color: '#3D5A3E', border: '1.5px solid rgba(61,90,62,.35)', borderRadius: 10, padding: '8px 12px', textDecoration: 'none', background: '#fff' }
 
 export default function Werkplaats({ bouw }: { bouw: Bouw }) {
   const lijst = zaaglijst(bouw)
@@ -20,6 +23,10 @@ export default function Werkplaats({ bouw }: { bouw: Bouw }) {
           {bouw.waarschuwingen.map((w, i) => <p key={'w' + i} style={{ margin: 0, fontSize: 13.5, color: '#6B5A1F', background: 'rgba(200,160,60,.12)', padding: '8px 12px', borderRadius: 10 }}>{w}</p>)}
         </div>
       )}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        <a style={knop} download="zaaglijst.csv" href={'data:text/csv;charset=utf-8,' + encodeURIComponent(zaaglijstCsv(bouw))}>Zaaglijst voor Excel ↓</a>
+        <a style={knop} download="vooraanzicht.dxf" href={'data:application/dxf;charset=utf-8,' + encodeURIComponent(aanzichtDxf(bouw))}>Vooraanzicht als dxf ↓</a>
+      </div>
       <div>
         <h3 style={{ fontSize: 15, margin: '0 0 8px' }}>Vakken</h3>
         <div style={doos}><table style={tabel}><thead><tr><th style={th}>Vak</th><th style={{ ...th, textAlign: 'right' }}>Breed</th><th style={{ ...th, textAlign: 'right' }}>Vrij hoog</th><th style={th}>Voor</th></tr></thead>

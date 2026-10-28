@@ -3,7 +3,7 @@
 // WAT DEZE PAGINA'S ANDERS MAKEN DAN DIE VAN EEN KASTENMAKER
 // Elke pagina toont een echt ontwerp uit ons rekenmodel, met de maten, vakken en
 // het aantal onderdelen dat een timmerbedrijf ervoor zaagt. De vakregels (deur
-// max 60 cm breed, plank max 80 cm zonder lat) zijn dezelfde als die de ontwerper
+// max 70 cm breed, plank max 75 cm zonder lat) zijn dezelfde als die de ontwerper
 // bewaakt. Zo is de tekst te controleren en niet te verzinnen.
 //
 // GEEN PRIJZEN
@@ -46,10 +46,10 @@ export const PIJLER: HubPagina = {
     { h2: 'Waarom het ontwerp altijd te maken is', p: [
       'Elk ontwerp gaat door een rekenmodel dat werkt zoals een meubelmaker denkt: in korpussen, fronten, planken en beslag. Het bewaakt de vakregels, en een ontwerp dat er een breekt, komt niet bij je terug.',
     ], lijst: [
-      'Een deur is hooguit 60 cm breed en 240 cm hoog; breder wordt een dubbele deur.',
-      'Een legplank van 18 mm overspant hooguit 80 cm; tot 120 cm met een lat onder de voorkant.',
+      'Een deur is hooguit 70 cm breed en 260 cm hoog; breder wordt een dubbele deur. Een deur van 260 cm krijgt zes scharnieren.',
+      'Een legplank van 18 mm overspant in een kast hooguit 75 cm. Breder kan tot 120 cm met een lat onder de voorkant, maar een tussenschot is beter.',
       'Een lade is hooguit 100 cm breed en minstens 12 cm hoog.',
-      'Tussen kast en plafond blijft 2 cm voor een passtrook die de meubelmaker op het plafond aftekent.',
+      'Tussen kast en plafond blijft 3 cm en tegen een muur 5 cm, voor een passtrook die de meubelmaker aftekent. Strakker kan niet: de kast moet erin bij de montage, en een deur of lade naast de muur moet vrij open.',
       'Deuren in een binnenhoek krijgen een vulstuk van 6 cm en zo nodig een openingsbegrenzer, zodat ze elkaar niet raken.',
     ] },
     { h2: 'Met of zonder bouwtekening', p: [
@@ -95,7 +95,7 @@ export const TYPES: HubPagina[] = [
     ],
     vragen: [
       { v: 'Hoe diep moet een hoekkast zijn?', a: 'Voor spullen en boeken is 40 cm genoeg, voor kleding op hangers 60 cm. Hoe ondieper, hoe kleiner en sierlijker een ronde kop wordt.' },
-      { v: 'Kan een hoekkast tot het plafond?', a: 'Ja. De kast komt tot 2 cm onder het plafond; die ruimte werkt de meubelmaker af met een passtrook die hij op het plafond aftekent, omdat geen plafond helemaal recht is.' },
+      { v: 'Kan een hoekkast tot het plafond?', a: 'Ja. De kast komt tot 3 cm onder het plafond; die ruimte werkt de meubelmaker af met een passtrook die hij op het plafond aftekent, omdat geen plafond helemaal recht is.' },
       ...ALGEMEEN,
     ],
   },
@@ -132,7 +132,7 @@ export const TYPES: HubPagina[] = [
     intro: 'Een nis is de dankbaarste plek voor een kast op maat: de muren doen het zijwerk, en een kast die van muur tot muur loopt, oogt alsof hij er altijd was. Het enige wat telt, is dat de kast ook past als de muren niet helemaal recht zijn.',
     secties: [
       { h2: 'Passtroken voor scheve muren', p: [
-        'Geen muur is helemaal recht. Daarom houdt de ontwerper aan beide kanten 2 cm over voor een passtrook. De meubelmaker tekent die af op de muur en zaagt hem precies op maat, zodat er geen kier zichtbaar is.',
+        'Geen muur is helemaal recht. Daarom houdt de ontwerper aan beide kanten 5 cm over voor een passtrook: dan krijg je de kast erin en draait een deur naast de muur vrij. De meubelmaker tekent die af op de muur en zaagt hem precies op maat, zodat er geen kier zichtbaar is.',
         'Meet de nis daarom op drie hoogtes: onder, in het midden en boven. De kleinste maat telt.',
       ] },
       { h2: 'Hal: schoenen, jassen en tassen', p: [
@@ -152,8 +152,8 @@ export const TYPES: HubPagina[] = [
     h1: 'Boekenkast op maat: open vakken die blijven staan',
     intro: 'Een boekenkast staat of valt met zijn planken. Boeken zijn zwaar, en een plank die te breed is, zakt na een paar maanden door. Een boekenkast op maat lost dat op met de juiste vakbreedte, en vult de muur zonder losse gaten.',
     secties: [
-      { h2: 'Vakbreedte: hooguit 80 cm', p: [
-        'Een legplank van 18 mm met boeken erop overspant hooguit 80 cm. Daarom verdeelt de ontwerper een brede muur in vakken van ongeveer 76 cm binnenmaat. Wil je bredere vakken, dan krijgen de planken een lat onder de voorkant, tot 120 cm.',
+      { h2: 'Vakbreedte: hooguit 75 cm', p: [
+        'Een legplank van 18 mm met boeken erop overspant hooguit 75 cm. Daarom verdeelt de ontwerper een brede muur in vakken van ongeveer 74 cm binnenmaat. Wil je bredere vakken, dan krijgen de planken een lat onder de voorkant, tot 120 cm.',
       ] },
       { h2: 'Diepte en vakhoogte', p: [
         'Voor boeken is 30 tot 35 cm diep genoeg. Een vak van 32 cm hoog past bijna alle boeken; voor grote kunstboeken maak je één of twee vakken hoger. In het voorbeeld zijn de open vakken 34 cm hoog, met onderin dichte kastjes van 70 cm voor spullen die je niet wilt zien.',
@@ -176,7 +176,7 @@ export const TYPES: HubPagina[] = [
         'Kleding op hangers vraagt 60 cm diepte. Voor overhemden en jasjes is 100 cm hanghoogte genoeg, voor jurken en jassen 150 tot 160 cm. In het voorbeeld heeft elk deel een hangvak van 182 cm hoog en een vak met vijf planken.',
       ] },
       { h2: 'Dubbele deuren van hooguit 60 cm', p: [
-        'Een deur van meer dan 60 cm breed trekt krom en draait te ver de kamer in. Een deel van 120 cm krijgt daarom twee deuren, met een tussenschot onder de naad. Bovenin komen bovenkasten voor wat je zelden pakt.',
+        'Een deur van meer dan 70 cm breed trekt krom en draait te ver de kamer in. Een deel van 120 cm krijgt daarom twee deuren, met een tussenschot onder de naad. Bovenin komen bovenkasten voor wat je zelden pakt.',
       ] },
     ],
     vragen: [
@@ -189,4 +189,4 @@ export const TYPES: HubPagina[] = [
 export const ALLE = [PIJLER, ...TYPES]
 export const URL_BASIS = 'https://www.bylder.com/kasten-op-maat/'
 export const urlVan = (p: HubPagina) => (p.slug ? `${URL_BASIS}${p.slug}/` : URL_BASIS)
-export const BIJGEWERKT = '2026-10-08'
+export const BIJGEWERKT = '2026-10-28'

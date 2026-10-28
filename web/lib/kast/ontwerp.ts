@@ -188,7 +188,7 @@ export const VOORBEELD_HOEKKAST: Ontwerp = {
   plafond: 260,
   diepte: 40,
   plint: { hoogte: 8, terug: 4 },
-  passtrook: 2,
+  passtrook: 3,
   opstelling: 'hoek',
   eersteBeenLinks: true,
   benen: [
@@ -197,13 +197,13 @@ export const VOORBEELD_HOEKKAST: Ontwerp = {
       segmenten: [
         { breedte: 114, vorm: 'recht', zones: [
           { hoogte: 186, inhoud: 'deuren', deuren: 2, tussenschot: true,
-            vakken: [{ planken: 1, vrijOnder: 148, functie: 'stofzuiger' }, { planken: 4 }] },
-          { hoogte: 64, inhoud: 'deuren', deuren: 2, vakken: [{ planken: 0 }, { planken: 1 }] },
+            vakken: [{ planken: 0, functie: 'stofzuiger' }, { planken: 4 }] },
+          { hoogte: 63, inhoud: 'deuren', deuren: 2, vakken: [{ planken: 0 }, { planken: 1 }] },
         ] },
         { breedte: 40, vorm: 'rond', zones: [
           { hoogte: 60, inhoud: 'dicht' },
           { hoogte: 126, inhoud: 'open', planken: 3 },
-          { hoogte: 64, inhoud: 'dicht' },
+          { hoogte: 63, inhoud: 'dicht' },
         ] },
       ],
     },
@@ -212,12 +212,12 @@ export const VOORBEELD_HOEKKAST: Ontwerp = {
       segmenten: [
         { breedte: 112, vorm: 'recht', zones: [
           { hoogte: 186, inhoud: 'deuren', deuren: 2, planken: 4 },
-          { hoogte: 64, inhoud: 'deuren', deuren: 2, planken: 1 },
+          { hoogte: 63, inhoud: 'deuren', deuren: 2, planken: 1 },
         ] },
         { breedte: 40, vorm: 'rond', zones: [
           { hoogte: 60, inhoud: 'dicht' },
           { hoogte: 126, inhoud: 'open', planken: 3 },
-          { hoogte: 64, inhoud: 'dicht' },
+          { hoogte: 63, inhoud: 'dicht' },
         ] },
       ],
     },
