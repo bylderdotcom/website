@@ -41,15 +41,19 @@ Bylder neemt zelf de opdracht aan voor de hele afwerking van een nieuwbouwwoning
 tegelwerk, sanitair/badkamer, vloeren, binnendeuren, schilderwerk en kasten. Eén offerte (uit de
 tekening van de koper), één contract, één planning, één aanspreekpunt. **Geen eigen ploegen:** het
 werk doen vakbedrijven uit het netwerk als onderaannemer; bij elk onderdeel in de offerte staat wie
-uitvoert. Een van de oprichters is eigenaar van een klusbedrijf (klussenier.nl), dus tegelwerk en
-sanitair kunnen vanaf dag één.
+uitvoert. Tegelwerk en sanitair kunnen vanaf dag één. **Noem nergens (site, mail, teksten) welke
+relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-2026).**
 - **Regio: Den Bosch** ('s-Hertogenbosch, Rosmalen, Vught, Sint-Michielsgestel, Heusden, Oss,
   Maasdriel). Andere regio's pas als er uitvoerders zijn; regiopagina's daar op noindex tot dan.
 - **Elk bezoek moet het weten.** Pagina's: `/nieuwbouw-afwerken/` + 7 onderdeelpagina's (inhoud:
   `web/lib/afwerken.ts`, bedragen uit de prijsbenchmark). `AfwerkpakketCTA` staat onder elke
   `CommercieleStap`, op de homepage, als eerste kaart in de AanbodStrook en in het menu (Diensten).
   Aanvragen: product `afwerking-nieuwbouw` in de app (`BYLDER_AANNEMER`).
-- **De gids met vakbedrijven** blijft, en is ook de werving van uitvoerders (pull, geen koude mail).
+- **De gids met vakbedrijven** blijft, en is ook de werving van uitvoerders (pull, geen koude mail):
+  `/uitvoerder-worden/` (aanmelding naar de app, `feature_requests` segment `uitvoerder`), een blok op
+  `/voor-vakbedrijven/` en een kaart in het vakbedrijf-dashboard na het claimen.
+- **In de regio** (plaatsen in `plaatsInRegio`, `web/lib/afwerken.ts`) staat de afwerkstap groot vóór
+  de gewone commerciële stap; elders klein eronder. Pagina's over een onderdeel linken naar dat onderdeel.
 - **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
   claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
 

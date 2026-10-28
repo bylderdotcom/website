@@ -119,6 +119,7 @@ export default function NieuwbouwAfwerkenPage() {
         controleren het werk. In je offerte staat bij elk onderdeel wie het uitvoert. Ken je zelf een goed bedrijf, dan
         kan dat ook: noem het in je aanvraag.
       </p>
+      <p style={S.p}>Ben je zelf vakbedrijf in de regio? <a href="/uitvoerder-worden/" style={S.link}>Word uitvoerder bij Bylder →</a></p>
 
       <section id="aanvraag" aria-labelledby="aanvraag-kop" style={S.aanvraag}>
         <h2 id="aanvraag-kop" style={{ ...S.h2, margin: '0 0 8px' }}>Vraag je offerte aan</h2>

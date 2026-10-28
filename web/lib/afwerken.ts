@@ -15,6 +15,34 @@ export const REGIO = {
   gemeenten: ["'s-Hertogenbosch", 'Rosmalen', 'Vught', 'Sint-Michielsgestel', 'Heusden', 'Oss', 'Maasdriel'],
 }
 
+/** Stads- en gemeentenaam per slug zoals de clusters ze gebruiken (/stukadoor/<slug>/, /project/<klus>/<slug>/). */
+const REGIO_SLUGS: Record<string, string> = {
+  's-hertogenbosch': "'s-Hertogenbosch", 'den-bosch': 'Den Bosch', rosmalen: 'Rosmalen', vught: 'Vught',
+  'sint-michielsgestel': 'Sint-Michielsgestel', heusden: 'Heusden', oss: 'Oss', maasdriel: 'Maasdriel',
+}
+
+/** De plaats in de regio waar een pagina over gaat, of null. */
+export function plaatsInRegio(pad: string): string | null {
+  for (const deel of pad.replace(/^\/|\/$/g, '').split('/')) if (REGIO_SLUGS[deel]) return REGIO_SLUGS[deel]
+  return null
+}
+
+/** Welk onderdeel van de afwerking bij een pagina hoort, op het begin van het pad. */
+const ONDERDEEL_VOOR: [RegExp, string][] = [
+  [/^(stukadoor|project\/stucwerk|kopen\/wandafwerking)\b/, 'stucwerk'],
+  [/^(project\/badkamer-tegelen|kopen\/tegels)\b/, 'tegelwerk'],
+  [/^(badkamer|loodgieter|project\/badkamer-renovatie|kopen\/sanitair)\b/, 'sanitair'],
+  [/^(gietvloer|project\/(gietvloer-leggen|parket-leggen|vloerverwarming-installeren)|kopen\/vloeren)\b/, 'vloeren'],
+  [/^(kozijnloze-deuren|kopen\/binnendeuren)\b/, 'binnendeuren'],
+  [/^(schilder|project\/schilderwerk-binnen|kopen\/verf)\b/, 'schilderwerk'],
+  [/^(kasten-op-maat|kopen\/kasten)\b/, 'kasten'],
+]
+export function onderdeelVoorPad(pad: string): Onderdeel | null {
+  const p = pad.replace(/^\//, '')
+  const hit = ONDERDEEL_VOOR.find(([re]) => re.test(p))
+  return hit ? onderdeel(hit[1]) : null
+}
+
 export type Onderdeel = {
   slug: string
   naam: string
