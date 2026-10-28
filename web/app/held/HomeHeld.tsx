@@ -1,7 +1,6 @@
 import KastCTA from '../components/KastCTA'
 import GietvloerCTA from '../components/GietvloerCTA'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
-import AfwerkpakketCTA from '../components/AfwerkpakketCTA'
 import EigenVakmanMeekijken, { EIGEN_VAKMAN_VRAAG } from '../components/EigenVakmanMeekijken'
 import HeldToneel, { type Regel } from './HeldToneel'
 import { HOME_DELEN } from '../homeSections'
@@ -97,11 +96,21 @@ function uitgelicht(lijst: Deelnemer[], n = 12): Deelnemer[] {
 // Vragen die een bezoeker op de homepage stelt, in zijn woorden. Zichtbaar op
 // de pagina én als FAQPage-schema, zodat een zoekmachine of een taalmodel het
 // antwoord kan citeren zonder de hele pagina te hoeven begrijpen.
+// De drie pijlers onder de belofte. Wat gratis is en wat je betaalt staat er eerlijk bij (punt 5).
+const PIJLERS = [
+  { titel: 'Ontwerp in je eigen woning', tekst: 'Je woning in 3D uit je eigen tekening. Stel je deuren, gietvloer en kasten samen met de maten die echt kloppen.',
+    href: '/ontwerpen/', knop: 'Begin met ontwerpen', voet: 'Gratis' },
+  { titel: 'Laat het afwerken door Bylder', tekst: 'Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten in één offerte, één planning en met één aanspreekpunt.',
+    href: '/nieuwbouw-afwerken/', knop: 'Vraag een offerte aan', voet: 'Eén offerte · regio Den Bosch' },
+  { titel: 'Richt in met korting', tekst: 'De rest koop je zelf, bij de winkels die jij kiest, met ledenkorting bij {merken} merken. Een adviseur helpt tussen de winkels.',
+    href: '/vouchers/', knop: 'Bekijk de kortingen', voet: 'Gratis account' },
+]
+
 const VRAGEN: Array<[string, string]> = [
   ['Wat doet Bylder precies?',
    'Bylder leest de plattegrond en de bouwplanning van je nieuwbouwwoning uit. Daaruit volgt wat je moet kiezen (deuren, vloer, verlichting, raamdecoratie), wanneer de bouwer die keuze sluit, en bij welke aangesloten merken je het met korting koopt. Je deuren stel je alvast in 3D samen, met het aantal uit je eigen tekening.'],
   ['Is Bylder gratis?',
-   'Ja, voor bewoners. De aangesloten merken en vakbedrijven betalen om vindbaar te zijn; daarom houden we advies en verkoop strikt gescheiden en staat bij elk product wie het levert.'],
+   'Ontwerpen, je woningdossier, de offerte-check en de ledenkorting zijn gratis voor bewoners. Laat je de afwerking door Bylder doen, dan betaal je de prijs in die offerte; daar verdienen wij aan. Bij elk aanbod staat wie het levert, en de offerte-check toetst ook onze eigen offertes aan marktprijzen.'],
   ['Werkt het ook als mijn project nog niet op Bylder staat?',
    'Ja. Vul je adres in: de woningscan leest het Kadaster en werkt op elk adres in Nederland. Een projectpagina is handig, maar niet nodig om je plattegrond te laten uitlezen.'],
   [EIGEN_VAKMAN_VRAAG.v, EIGEN_VAKMAN_VRAAG.a],
@@ -149,11 +158,12 @@ export default function HomeHeld() {
         <div className="hh-wrap hh-hero-grid">
           <div className="hh-hero-copy">
             <p className="hh-oog">Voor wie een nieuwbouwhuis kocht</p>
-            <h1>Richt je huis in{' '}<br /><em>voordat het er staat.</em></h1>
+            {/* Eén belofte, drie pijlers eronder (voorstel 28-10-2026: de site vertelde zes verhalen tegelijk). */}
+            <h1>Van sleutel tot{' '}<br /><em>ingericht huis.</em></h1>
             <p className="hh-lead">
-              <b>Wij lezen je plattegrond en de planning van de bouwer.</b> Zo weet je per keuze
-              wanneer hij valt — en stel je je deuren, je vloer en je verlichting alvast samen met de
-              aantallen en de maten uit jouw eigen tekening. Gratis voor bewoners.
+              <b>Eén partij voor je hele afwerking en inrichting.</b> Wij lezen je plattegrond en de
+              planning van de bouwer. Je ontwerpt je deuren, vloer en kasten in je eigen woning, wij
+              werken alles af in één offerte, en de rest koop je met korting bij {merken} merken.
             </p>
 
             <form id="woningzoek" className="hh-zoek" action="/nieuwbouw-project/" method="get">
@@ -181,13 +191,24 @@ export default function HomeHeld() {
         </div>
       </section>
 
-      {/* ── 2. De keten: lezen, timen, samenstellen, kopen — op de tijdas van de bouw ── */}
-      {/* Bylder als aannemer voor de hele afwerking (besluit Daniel, 28-10-2026). */}
-      <section style={{ padding: '8px 0 0' }}>
+      {/* ── 1b. De drie pijlers onder de belofte (voorstel 28-10-2026). Vervangt de losse afwerkbalk. ── */}
+      <section className="hh-pijlers" aria-label="Wat Bylder voor je doet">
         <div className="hh-wrap">
-          <AfwerkpakketCTA marge="0" plek="homepage" />
+          <ol>
+            {PIJLERS.map((p, i) => (
+              <li key={p.titel}>
+                <span className="hh-pijler-nr" aria-hidden="true">{i + 1}</span>
+                <h2>{p.titel}</h2>
+                <p>{p.tekst.replace('{merken}', String(merken))}</p>
+                <a href={p.href} data-meet={`homepage-pijler-${i + 1}`}>{p.knop} →</a>
+                <span className="hh-pijler-voet">{p.voet}</span>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
+
+      {/* ── 2. De keten: lezen, timen, samenstellen, kopen — op de tijdas van de bouw ── */}
 
       <section className="hh-keten">
         <div className="hh-wrap">
