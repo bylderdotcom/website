@@ -13,8 +13,8 @@ import Aanmelden from './Aanmelden'
 const URL = 'https://www.bylder.com/uitvoerder-worden/'
 
 export const metadata: Metadata = {
-  title: 'Uitvoerder worden bij Bylder: werk in nieuwbouw, regio Den Bosch',
-  description: 'Stukadoor, tegelzetter, vloerenlegger, schilder of timmerbedrijf in de regio Den Bosch? Doe het werk in nieuwbouwwoningen waarvoor Bylder de opdracht aanneemt. Geen acquisitie, maten vooraf uit de tekening.',
+  title: 'Uitvoerder worden: werk in nieuwbouw, regio Den Bosch | Bylder',
+  description: 'Stukadoor, tegelzetter, vloerenlegger, schilder of timmerbedrijf in de regio Den Bosch? Doe werk in nieuwbouw waarvoor Bylder de opdracht aanneemt. Geen acquisitie.',
   alternates: { canonical: URL },
   openGraph: { title: 'Werk in nieuwbouw, zonder acquisitie', url: URL, type: 'website',
     description: 'Bylder neemt de afwerking van nieuwbouwwoningen aan. Wij zoeken vakbedrijven die het werk doen.' },

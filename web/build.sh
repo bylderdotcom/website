@@ -97,6 +97,8 @@ echo "▸ 4/4  menu uit web/app/components/menu.json op elke statische pagina"
 # in de bestanden zat, en zegt de bouwlog dat hardop.
 if command -v python3 >/dev/null 2>&1; then
   python3 "$ROOT/_scripts/nav_pijlers_pass.py" --stempel ./out "$NEXT_HTML"
+  # De balk "Bylder als aannemer" boven elke footer (28-10-2026), uit dezelfde bron als Footer.tsx.
+  python3 "$ROOT/_scripts/afwerkbalk_pass.py" --stempel ./out "$NEXT_HTML"
 else
   echo "⚠ python3 ontbreekt: menu NIET bijgewerkt op de statische pagina's"
 fi

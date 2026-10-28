@@ -13,10 +13,10 @@ import { Stijl as S, Lijn } from './stijl'
  */
 
 export const metadata: Metadata = {
-  title: 'Nieuwbouwwoning laten afwerken, één offerte | regio Den Bosch | Bylder',
+  title: 'Nieuwbouw laten afwerken in één offerte, regio Den Bosch | Bylder',
   description:
-    'Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten in één offerte, berekend uit je eigen tekening. '
-    + 'Bylder neemt de opdracht aan en plant alles; vakbedrijven uit de regio voeren uit. Regio Den Bosch.',
+    'Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten in één offerte uit je tekening. '
+    + 'Bylder neemt de opdracht aan; vakbedrijven uit de regio voeren uit.',
   alternates: { canonical: URL_AFWERKEN },
   openGraph: { title: 'Je nieuwbouwhuis afgewerkt, in één offerte', url: URL_AFWERKEN, type: 'website',
     description: 'Van stucwerk tot kasten: één offerte uit je eigen tekening, één planning en één aanspreekpunt.' },

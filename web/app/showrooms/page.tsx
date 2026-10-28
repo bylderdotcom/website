@@ -43,6 +43,11 @@ export default function ShowroomsPage() {
   const totaal = types.reduce((n, t) => n + showroomsVanType(t.slug).length, 0)
   return (
     <main style={{ maxWidth: 1200, boxSizing: 'border-box', margin: '0 auto', padding: '48px 24px 72px', color: '#1A1208' }}>
+      {/* Gestructureerde data (audit 28-10-2026): de gids als lijst van producttypes. */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Showrooms die het bezoek waard zijn', url: `${SITE}/showrooms/`,
+        mainEntity: { '@type': 'ItemList', itemListElement: types.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.naam, url: `${SITE}/showrooms/${t.slug}/` })) },
+      }) }} />
       <p style={LABEL}>Showroomgids</p>
       <h1 style={{ fontSize: '2.1rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance' }}>
         Showrooms die het bezoek waard zijn

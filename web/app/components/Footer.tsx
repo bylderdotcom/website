@@ -1,3 +1,5 @@
+import { readFileSync } from 'fs'
+import path from 'path'
 // Gedeelde site-footer — ÉÉN bron voor elke pagina. Server-component (geen JS).
 // Structuur 1:1 overgenomen van de bestaande site (6 kolommen + logo + onderbalk).
 
@@ -10,6 +12,7 @@ const COLS: Col[] = [
   // wonen en verbouwen, en dan de vier bestaande lijsten.
   { title: 'Bylder', links: [
     { href: '/hoe-het-werkt/', label: 'Hoe Bylder werkt' },
+    { href: '/nieuwbouw-afwerken/', label: 'Nieuwbouw laten afwerken', accent: true },
     { href: '/functies/', label: 'Alle functies' },
     { href: '/nieuwbouw-tools/', label: 'Alle tools' },
     { href: '/prijzen/', label: 'Prijzen' },
@@ -19,6 +22,7 @@ const COLS: Col[] = [
     { href: '/zakelijk/', label: 'Zakelijk' },
     { href: '/deelnemer-worden/', label: 'Deelnemer worden' },
     { href: '/inkoopvoordeel/', label: 'Inkoopvoordeel vakbedrijven' },
+    { href: '/uitvoerder-worden/', label: 'Uitvoerder worden' },
     { href: '/deelnemer-worden/commercieel-vastgoed/', label: 'Commercieel vastgoed' },
     { href: '/en-us/', label: 'For US homebuyers' },
   ] },
@@ -132,8 +136,15 @@ const STIJL = `
 @media(max-width:640px){.ft{padding:48px 0 28px}.ft-kol{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 18px;padding:32px 0 28px}.ft-feit{grid-template-columns:1fr 1fr;gap:14px}.ft-feit b{font-size:19px}}
 `
 
+// De balk "Bylder als aannemer" boven de footer (besluit Daniel, 28-10-2026: elk bezoek moet weten
+// dat Bylder de hele afwerking kan aannemen). Eén bron: afwerkbalk.html, die web/build.sh ook op
+// elke statische pagina zet (_scripts/afwerkbalk_pass.py).
+const AFWERKBALK = readFileSync(path.join(process.cwd(), 'app/components/afwerkbalk.html'), 'utf-8')
+
 export default function Footer({ merken = 56 }: { merken?: number }) {
   return (
+    <>
+    <div dangerouslySetInnerHTML={{ __html: AFWERKBALK }} />
     <footer className="ft">
       <style dangerouslySetInnerHTML={{ __html: STIJL }} />
       <div className="ft-wrap">
@@ -180,5 +191,6 @@ export default function Footer({ merken = 56 }: { merken?: number }) {
         </div>
       </div>
     </footer>
+    </>
   )
 }
