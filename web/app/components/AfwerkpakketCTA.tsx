@@ -9,7 +9,7 @@ import { onderdeelVoorPad, plaatsInRegio } from '@/lib/afwerken'
 
 const GROEN = '#3D5A3E'
 
-export default function AfwerkpakketCTA({ marge = '14px 0 0', pad = '' }: { marge?: string; pad?: string }) {
+export default function AfwerkpakketCTA({ marge = '14px 0 0', pad = '', plek = 'onder-stap' }: { marge?: string; pad?: string; plek?: string }) {
   const o = onderdeelVoorPad(pad)
   const plaats = plaatsInRegio(pad)
   const href = o ? `/nieuwbouw-afwerken/${o.slug}/` : '/nieuwbouw-afwerken/'
@@ -25,7 +25,7 @@ export default function AfwerkpakketCTA({ marge = '14px 0 0', pad = '' }: { marg
         <p style={{ fontSize: 15.5, lineHeight: 1.65, color: 'rgba(245,240,232,0.85)', margin: '0 0 16px', maxWidth: '64ch' }}>
           Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten. Wij maken de offerte uit je tekening, plannen alles en zijn je enige aanspreekpunt. Het werk doen vakbedrijven uit de regio.
         </p>
-        <a href={href} style={{ display: 'inline-block', background: '#F5F0E8', color: '#1A1208', fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11, textDecoration: 'none' }}>Vraag je offerte aan →</a>
+        <a href={href} data-meet={`regio:${plaats}`} style={{ display: 'inline-block', background: '#F5F0E8', color: '#1A1208', fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11, textDecoration: 'none' }}>Vraag je offerte aan →</a>
       </aside>
     )
   }
@@ -40,7 +40,7 @@ export default function AfwerkpakketCTA({ marge = '14px 0 0', pad = '' }: { marg
           <strong>Of laat Bylder {wat} regelen.</strong> Van stucwerk tot tegels, badkamer, vloeren, deuren en kasten: één offerte uit je tekening, één planning, één aanspreekpunt. <span style={{ color: 'rgba(61,46,30,0.65)' }}>Nu in de regio Den Bosch.</span>
         </p>
       </div>
-      <a href={href} style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px', borderRadius: 10, textDecoration: 'none' }}>Vraag een offerte aan →</a>
+      <a href={href} data-meet={plek} style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px', borderRadius: 10, textDecoration: 'none' }}>Vraag een offerte aan →</a>
     </aside>
   )
 }

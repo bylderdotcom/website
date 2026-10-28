@@ -55,6 +55,12 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   `/voor-vakbedrijven/` en een kaart in het vakbedrijf-dashboard na het claimen.
 - **In de regio** (plaatsen in `plaatsInRegio`, `web/lib/afwerken.ts`) staat de afwerkstap groot vóór
   de gewone commerciële stap; elders klein eronder. Pagina's over een onderdeel linken naar dat onderdeel.
+- **Projectpagina's in de regio** krijgen "Laat je woning in <project> afwerken" (`afwerkBlokProject`),
+  met een knop naar het formulier waarin project en oplevering al zijn ingevuld.
+- **Meten (28-10-2026):** elke verstuurde aanvraag = GA4 `generate_lead` (`lead_type` offerte/uitvoerder,
+  `product`, `bron`, `pagina`); klikken op een afwerkverwijzing = `afwerk_klik` met `plek` (balk, onder-stap,
+  regio:<plaats>, project, offerte-check, homepage). Helper: `web/app/components/meet.ts`. In GA4
+  `generate_lead` als key event markeren.
 - **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
   claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
 

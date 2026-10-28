@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import { meetLead } from '../components/meet'
 
 // Aanmelding als uitvoerder (28-10-2026). Gaat naar de app: /api/uitvoerder-aanmelding.
 
@@ -39,6 +40,7 @@ export default function Aanmelden() {
       }) })
       const j = await res.json().catch(() => ({}))
       if (!res.ok) { setFout(j.error || 'Versturen lukte niet.'); setBezig(false); return }
+      meetLead('uitvoerder', { vakken: vakken.join(',') })
       setKlaar(true)
     } catch { setFout('Versturen lukte niet. Controleer je verbinding.'); setBezig(false) }
   }
