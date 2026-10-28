@@ -53,32 +53,34 @@ export type VloerType = {
 // DE VIER BIO-SYSTEMEN VAN DR. SCHUTZ (besluit Daniel, 23-10-2026; mail Lars 22-10-2026,
 // keuzehulp en webteksten). Gekozen op tekening, van rustig naar druk. De kwaliteit is bij
 // alle vier gelijk: Shore D80, 100% waterdicht, UV-stabiel, emissiearm en hypoallergeen.
-// Nog open bij Dr. Schutz: de prijsranges per regio, EC1 PLUS-keurmerk of "EC1+ Ready" per
-// systeem, vloerverwarming bij Cement, Lava en Concrete, en de kleurcodes. Tot dan noemen
-// we geen keurmerk en geen bedragen per systeem.
-const VVW_BEVESTIGD = 'Geschikt voor vloerverwarming.'
-const VVW_OPEN = 'Of deze vloer bij vloerverwarming past, bevestigt de verwerker bij de opmeting.'
+// Bevestigd door Lars (mail 23-10-2026): alle vier EMICODE EC1 PLUS-gecertificeerd (de
+// webteksten met "EC1+ Ready" waren van vóór de certificering), alle vier uitstekend geschikt
+// voor vloerverwarming, en 20/20/20/10 kleuren. Bio Fine is technisch de fijne eindlaag op
+// Bio Cement; dat is informatie voor de verwerker, de koper hoort: een heel egale
+// lavasteenvloer met een zeer fijne korrel. Nog open: de prijsranges (met de verwerkers) en
+// de kleuren per systeem met naam, code en foto. Tot dan geen bedragen per systeem.
+const VVW = 'Uitstekend geschikt voor vloerverwarming: de vloer ligt zonder lucht op de ondergrond, dus de warmte komt er ongehinderd door.'
 export const TYPES: VloerType[] = [
   {
-    id: 'fine', naam: 'Bio Fine', kort: 'De rustigste tekening. Zacht, egaal en tijdloos.',
-    voor: ['Rustig en ruimtelijk, past bij elk interieur', 'Eenvoudig schoon te houden', 'Laat meubels en kunst de aandacht houden'],
+    id: 'fine', naam: 'Bio Fine', kort: 'De rustigste: een heel egale lavasteenvloer met een zeer fijne korrel.',
+    voor: ['Rustig en ruimtelijk, past bij elk interieur', 'Zeer fijne korrel, eenvoudig te onderhouden', 'Laat meubels en kunst de aandacht houden'],
     tegen: ['Op een rustig vlak zie je kruimels en gebruikssporen sneller'],
     tekening: 1, schoon: 4, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
-    vloerverwarming: VVW_BEVESTIGD, wolk: 0.15,
+    vloerverwarming: VVW, wolk: 0.15,
   },
   {
     id: 'cement', naam: 'Bio Cement', kort: 'Een subtiele wolkentekening met de sfeer van gepolijst cement.',
     voor: ['Industriële uitstraling zonder dat het onrustig wordt', 'Meer levendigheid dan Bio Fine', 'Gebruikssporen vallen minder op'],
     tegen: ['Iets meer aandacht bij het schoonmaken dan Bio Fine'],
     tekening: 2, schoon: 3, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
-    vloerverwarming: VVW_OPEN, wolk: 0.5,
+    vloerverwarming: VVW, wolk: 0.5,
   },
   {
     id: 'lava', naam: 'Bio Lava', kort: 'Levendig en vol karakter, met duidelijke wolken en echte lavasteentjes.',
     voor: ['Geeft je ruimte direct karakter', 'Vuil en gebruikssporen vallen nauwelijks op door de lavasteentjes'],
     tegen: ['Een uitgesproken tekening waar je van moet houden', 'Vraagt het meeste aandacht bij het schoonmaken'],
     tekening: 3, schoon: 2, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
-    vloerverwarming: VVW_OPEN, wolk: 0.75,
+    vloerverwarming: VVW, wolk: 0.75,
   },
   {
     id: 'concrete', naam: 'Bio Concrete', kort: 'De drukste tekening, met de echte uitstraling van beton of natuursteen.',
@@ -86,7 +88,7 @@ export const TYPES: VloerType[] = [
       'Oogt als echt beton of natuursteen', 'De enige van de vier die ook op de wanden kan'],
     tegen: ['Een stap duurder door het extra slijpwerk en de extra arbeid', 'De drukste tekening: je moet ervan houden'],
     tekening: 4, schoon: 5, prijsNiveau: '€€€', prijs: null, kleuren: 10, wand: true,
-    vloerverwarming: VVW_OPEN, wolk: 0.95,
+    vloerverwarming: VVW, wolk: 0.95,
   },
 ]
 export const typeOp = (id: string | null | undefined) => TYPES.find(t => t.id === id) ?? null
@@ -96,7 +98,8 @@ export const VOOR_ALLE = [
   'Shore D80: zeer krasvast en slijtvast',
   '100% waterdicht, ook voor badkamer, keuken en bijkeuken',
   'UV-stabiel: vergeelt niet, ook voor een grote raampartij',
-  'Emissiearm en hypoallergeen',
+  'EMICODE EC1 PLUS-gecertificeerd: de vloer geeft vrijwel geen emissies af, en is hypoallergeen',
+  'Uitstekend geschikt voor vloerverwarming',
   'Naadloos en met de hand gelegd: geen twee vloeren zijn hetzelfde',
 ]
 
