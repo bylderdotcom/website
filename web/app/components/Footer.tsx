@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs'
 import path from 'path'
+import { getPages as projectPaginas } from '@/lib/nieuwbouw-project'
 // Gedeelde site-footer — ÉÉN bron voor elke pagina. Server-component (geen JS).
 // Structuur 1:1 overgenomen van de bestaande site (6 kolommen + logo + onderbalk).
 
@@ -138,7 +139,9 @@ const STIJL = `
 
 // De balk "Bylder als aannemer" boven de footer (besluit Daniel, 28-10-2026: elk bezoek moet weten
 // dat Bylder de hele afwerking kan aannemen). Eén bron: afwerkbalk.html, die web/build.sh ook op
-// elke statische pagina zet (_scripts/afwerkbalk_pass.py).
+// elke statische pagina zet als deel van deze footer (_scripts/footer_pass.py).
+// Het aantal projectpagina's, geteld bij de build (stond vast op 289, inclusief overzicht en monitor).
+const PROJECTEN = projectPaginas().filter(p => p.slug && !['index', 'oplevermonitor'].includes(p.slug)).length
 const AFWERKBALK = readFileSync(path.join(process.cwd(), 'app/components/afwerkbalk.html'), 'utf-8')
 
 export default function Footer({ merken = 56 }: { merken?: number }) {
@@ -162,7 +165,7 @@ export default function Footer({ merken = 56 }: { merken?: number }) {
           </div>
           <div className="ft-feit" aria-label="Bylder in cijfers">
             <div><b>{merken}</b><span>aangesloten merken met ledenkorting</span></div>
-            <div><b>289</b><span>nieuwbouwprojecten met een eigen pagina</span></div>
+            <div><b>{PROJECTEN}</b><span>nieuwbouwprojecten met een eigen pagina</span></div>
             <div><b>0 €</b><span>voor bewoners — de merken betalen</span></div>
           </div>
         </div>

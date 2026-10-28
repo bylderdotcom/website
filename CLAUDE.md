@@ -47,7 +47,8 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   Maasdriel). Andere regio's pas als er uitvoerders zijn; regiopagina's daar op noindex tot dan.
 - **Elk bezoek moet het weten.** Pagina's: `/nieuwbouw-afwerken/` + 7 onderdeelpagina's (inhoud:
   `web/lib/afwerken.ts`, bedragen uit de prijsbenchmark). `AfwerkpakketCTA` staat onder elke
-  `CommercieleStap`, op de homepage, als eerste kaart in de AanbodStrook en in het menu (Diensten).
+  `CommercieleStap`, op de homepage, als eerste kaart in de AanbodStrook, in het menu (Diensten) en als
+  balk boven de footer van elke pagina.
   Aanvragen: product `afwerking-nieuwbouw` in de app (`BYLDER_AANNEMER`).
 - **De gids met vakbedrijven** blijft, en is ook de werving van uitvoerders (pull, geen koude mail):
   `/uitvoerder-worden/` (aanmelding naar de app, `feature_requests` segment `uitvoerder`), een blok op
@@ -98,6 +99,9 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
 - **Het hoofdmenu staat op één plek: `web/app/components/menu.json`.** Nav.tsx leest het, en
   `web/build.sh` (stap 4) zet het bij elke build op alle statische pagina's. Menu wijzigen =
   alleen dat bestand. Geen veegrondes over de HTML meer.
+- **De footer staat ook op één plek: `web/app/components/Footer.tsx` (28-10-2026).** `web/build.sh`
+  knipt de footer uit een Next-pagina en zet hem op elke statische pagina (`_scripts/footer_pass.py`),
+  inclusief de balk "Bylder als aannemer" (`afwerkbalk.html`). Footer wijzigen = alleen Footer.tsx.
 - Markten als taal-regio-subdir (`/en-us`, `/nl-be`, `/de`). NL staat op root — **niet verplaatsen**.
 - **Klus per gemeente staat op één plek: `/project/<klus>/<gemeente>/` (besluit Daniel, 23-10-2026).**
   De stadpagina's van `/renovatiekosten/` en `/offerte-check/<vak>/<stad>/` concurreerden met
