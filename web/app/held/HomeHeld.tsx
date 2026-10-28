@@ -1,6 +1,7 @@
 import KastCTA from '../components/KastCTA'
 import GietvloerCTA from '../components/GietvloerCTA'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
+import AfwerkpakketCTA from '../components/AfwerkpakketCTA'
 import EigenVakmanMeekijken, { EIGEN_VAKMAN_VRAAG } from '../components/EigenVakmanMeekijken'
 import HeldToneel, { type Regel } from './HeldToneel'
 import { HOME_DELEN } from '../homeSections'
@@ -181,6 +182,13 @@ export default function HomeHeld() {
       </section>
 
       {/* ── 2. De keten: lezen, timen, samenstellen, kopen — op de tijdas van de bouw ── */}
+      {/* Bylder als aannemer voor de hele afwerking (besluit Daniel, 28-10-2026). */}
+      <section style={{ padding: '8px 0 0' }}>
+        <div className="hh-wrap">
+          <AfwerkpakketCTA marge="0" />
+        </div>
+      </section>
+
       <section className="hh-keten">
         <div className="hh-wrap">
           <div className="hh-kop">

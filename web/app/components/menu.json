@@ -167,6 +167,12 @@
       "label": "Diensten",
       "items": [
         {
+          "href": "/nieuwbouw-afwerken/",
+          "title": "Nieuwbouw laten afwerken",
+          "sub": "Stucwerk tot kasten in één offerte, Bylder als aannemer",
+          "primair": true
+        },
+        {
           "href": "/offerte-check/",
           "title": "Offerte-check",
           "sub": "Betaal je een eerlijke prijs? Gratis gecheckt",

@@ -36,6 +36,23 @@ vlaggenschepen: **gietvloer en binnendeuren bestaan nog niet als categorie.** In
 navigatie staat alleen `/showroomsale/` — geen showroomoverzicht. Het gat zit dus in de
 taxonomie en de navigatie, niet in het ontbreken van data.
 
+## Bylder als hoofdaannemer voor de afwerking (besluit Daniel, 28-10-2026)
+Bylder neemt zelf de opdracht aan voor de hele afwerking van een nieuwbouwwoning: stucwerk,
+tegelwerk, sanitair/badkamer, vloeren, binnendeuren, schilderwerk en kasten. Eén offerte (uit de
+tekening van de koper), één contract, één planning, één aanspreekpunt. **Geen eigen ploegen:** het
+werk doen vakbedrijven uit het netwerk als onderaannemer; bij elk onderdeel in de offerte staat wie
+uitvoert. Een van de oprichters is eigenaar van een klusbedrijf (klussenier.nl), dus tegelwerk en
+sanitair kunnen vanaf dag één.
+- **Regio: Den Bosch** ('s-Hertogenbosch, Rosmalen, Vught, Sint-Michielsgestel, Heusden, Oss,
+  Maasdriel). Andere regio's pas als er uitvoerders zijn; regiopagina's daar op noindex tot dan.
+- **Elk bezoek moet het weten.** Pagina's: `/nieuwbouw-afwerken/` + 7 onderdeelpagina's (inhoud:
+  `web/lib/afwerken.ts`, bedragen uit de prijsbenchmark). `AfwerkpakketCTA` staat onder elke
+  `CommercieleStap`, op de homepage, als eerste kaart in de AanbodStrook en in het menu (Diensten).
+  Aanvragen: product `afwerking-nieuwbouw` in de app (`BYLDER_AANNEMER`).
+- **De gids met vakbedrijven** blijft, en is ook de werving van uitvoerders (pull, geen koude mail).
+- **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
+  claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
+
 ## Koers (besluit Daniel, 21-10-2026)
 - **VS: lanceren met een premium-model.** Gebruikers betalen daar een premiumbedrag. Bedrag en
   vorm liggen nog niet vast; markt-terminologie eerst checken (zie standing orders).

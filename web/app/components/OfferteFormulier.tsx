@@ -29,7 +29,7 @@ const label: React.CSSProperties = { display: 'block', fontSize: 13, fontWeight:
 const PLANNING = ['Zo snel mogelijk', 'Binnen 3 maanden', 'Over 3 tot 6 maanden', 'Later dan 6 maanden', 'Weet ik nog niet']
 
 export default function OfferteFormulier(p: {
-  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie'
+  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie' | 'afwerking-nieuwbouw'
   bron: string
   specificatie: string
   configuratie: unknown
@@ -49,13 +49,18 @@ export default function OfferteFormulier(p: {
   const [campagne, setCampagne] = useState<string | null>(null)
   useEffect(() => { setCampagne(herkomst()) }, [])
 
+  // Bij de afwerking van een nieuwbouwwoning neemt Bylder zelf de opdracht aan (28-10-2026).
+  const aannemer = p.product === 'afwerking-nieuwbouw'
+
   if (klaar) {
     return (
       <div role="status" style={{ background: 'rgba(61,90,62,0.07)', border: `1px solid rgba(61,90,62,0.25)`, borderRadius: 12, padding: '16px 18px' }}>
         <div style={{ fontWeight: 800, fontSize: 16, color: '#1A1208', marginBottom: 6 }}>Je aanvraag is binnen</div>
         <p style={{ fontSize: 14, lineHeight: 1.6, margin: 0, color: `${INKT}0.8)` }}>
           Je krijgt een bevestiging per mail, met een knop naar je aanvraag in je Bylder-account. Daar zie je ook hoe het ermee staat.
-          We zoeken een vakbedrijf dat dit bij jou kan maken. De offerte komt van dat bedrijf; ga je akkoord, dan sluit je de opdracht met hen, niet met Bylder.
+          {aannemer
+            ? 'We nemen binnen twee werkdagen contact met je op om je woning en de planning door te nemen. De offerte komt van Bylder: één prijs voor alles. Het werk doen vakbedrijven uit de regio, en wij plannen en controleren het.'
+            : 'We zoeken een vakbedrijf dat dit bij jou kan maken. De offerte komt van dat bedrijf; ga je akkoord, dan sluit je de opdracht met hen, niet met Bylder.'}
         </p>
       </div>
     )
@@ -134,7 +139,9 @@ export default function OfferteFormulier(p: {
       {/* Informeren, niet vragen: doorgeven aan het vakbedrijf is nodig om de
           gevraagde offerte te maken (AVG art. 6 lid 1b), dus geen vinkje. */}
       <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: 0, lineHeight: 1.55 }}>
-        We geven je aanvraag door aan het vakbedrijf dat de offerte maakt.{' '}
+        {aannemer
+          ? 'Bylder maakt de offerte. De vakbedrijven die het werk doen, krijgen alleen wat ze daarvoor nodig hebben.'
+          : 'We geven je aanvraag door aan het vakbedrijf dat de offerte maakt.'}{' '}
         <a href="/privacy/" style={{ color: `${INKT}0.7)` }}>Privacy</a>
       </p>
       {fout && (
