@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import OfferteFormulier from './OfferteFormulier'
 
 // Aanvraag voor de afwerking van een nieuwbouwwoning, met Bylder als aannemer (28-10-2026).
@@ -26,6 +26,13 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
   const [m2, setM2] = useState('')
   const [oplevering, setOplevering] = useState('')
   const [project, setProject] = useState('')
+  // Vanaf een projectpagina (?project=Tuinenrijk Veld 2&oplevering=2027–2028): alvast ingevuld.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search)
+    const p = q.get('project'), o = q.get('oplevering')
+    if (p) setProject(p.slice(0, 120))
+    if (o) setOplevering(o.slice(0, 60))
+  }, [])
 
   const namen = onderdelen.filter(o => gekozen.includes(o.slug)).map(o => o.naam)
   const specificatie = [

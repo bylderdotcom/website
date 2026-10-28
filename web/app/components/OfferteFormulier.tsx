@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { herkomst } from './herkomst'
 import { leesRef } from './aanbreng'
+import { meet, meetLead } from './meet'
 
 // Offerteformulier onder een configurator. Stuurt de aanvraag naar het loket in
 // de app (offerte_aanvragen), waar Daniel hem ziet en aan een partner geeft.
@@ -68,7 +69,7 @@ export default function OfferteFormulier(p: {
 
   if (!open) {
     return (
-      <button type="button" onClick={() => { setOpen(true); geopend.current = Date.now() }} style={{
+      <button type="button" onClick={() => { setOpen(true); geopend.current = Date.now(); meet('offerte_formulier_open', { product: p.product }) }} style={{
         background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '12px 20px',
         borderRadius: 11, border: 0, cursor: 'pointer', fontFamily: 'inherit',
       }}>Vraag een offerte aan</button>
@@ -97,6 +98,7 @@ export default function OfferteFormulier(p: {
       })
       const j = await res.json().catch(() => ({}))
       if (!res.ok) { setFout(j.error || 'Versturen lukte niet.'); setBezig(false); return }
+      meetLead('offerte', { product: p.product, bron: campagne || p.bron })
       setKlaar(true)
     } catch {
       setFout('Versturen lukte niet. Controleer je verbinding.')

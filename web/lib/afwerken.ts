@@ -198,3 +198,28 @@ export const URL_AFWERKEN = 'https://www.bylder.com/nieuwbouw-afwerken/'
 export const euro = (n: number) => '€' + n.toLocaleString('nl-NL')
 export const prijsTekst = (p: NonNullable<Onderdeel['prijs']>) =>
   p.eenheid === 'totaal' ? `${euro(p.van)} tot ${euro(p.tot)}` : `${euro(p.van)} tot ${euro(p.tot)} per ${p.eenheid}`
+
+/** De plaats in de regio voor een projectpagina: de slug eindigt op de plaats (tuinenrijk-veld-2-s-hertogenbosch). */
+export function plaatsVoorProject(slug: string): string | null {
+  const hit = Object.keys(REGIO_SLUGS).sort((a, b) => b.length - a.length).find(k => slug.endsWith(`-${k}`))
+  return hit ? REGIO_SLUGS[hit] : null
+}
+
+const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+
+/**
+ * Blok "Laat je woning in <project> afwerken" voor projectpagina's in de regio (28-10-2026). Als HTML,
+ * omdat het in het fragment van de projectpagina komt, direct boven "Twee afwerkingen die je nu kiest".
+ * De knop opent het afwerkformulier met project en oplevering al ingevuld.
+ */
+export function afwerkBlokProject(project: string, plaats: string, oplevering: string | null): string {
+  const q = new URLSearchParams({ project, ...(oplevering ? { oplevering } : {}) }).toString()
+  const href = `/nieuwbouw-afwerken/?${q}#aanvraag`
+  const wanneer = oplevering ? `, afgestemd op de oplevering (verwacht ${esc(oplevering)})` : ''
+  return `<!--bylder:afwerk-project--><aside aria-label="Je hele afwerking door Bylder" style="margin:28px 0;background:#3D5A3E;color:#F5F0E8;border-radius:18px;padding:24px 26px">`
+    + `<p style="font-family:'Space Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;color:#E8D9B8;margin:0 0 8px">Bylder als aannemer · ${esc(plaats)}</p>`
+    + `<p style="font-size:1.45rem;font-weight:800;line-height:1.2;margin:0 0 10px;color:#F5F0E8">Laat je woning in ${esc(project)} in één keer afwerken.</p>`
+    + `<p style="font-size:15.5px;line-height:1.65;margin:0 0 16px;color:rgba(245,240,232,0.85);max-width:64ch">Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten: één offerte uit je tekening, en één planning${wanneer}. Het werk doen vakbedrijven uit de regio; jij hebt één aanspreekpunt.</p>`
+    + `<a href="${esc(href)}" onclick="window.gtag&&gtag('event','afwerk_klik',{plek:'project',pagina:location.pathname})" style="display:inline-block;background:#F5F0E8;color:#1A1208;border-radius:11px;padding:13px 22px;font-weight:800;font-size:15px;text-decoration:none">Vraag een offerte aan voor ${esc(project)} &rarr;</a>`
+    + `</aside>`
+}

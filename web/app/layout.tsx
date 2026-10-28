@@ -3,6 +3,7 @@ import Script from 'next/script'
 import Nav from './components/Nav'
 import { aantalMerken } from '@/lib/merken'
 import Footer from './components/Footer'
+import KlikMeter from './components/KlikMeter'
 import AanbrengRef from './components/AanbrengRef'
 
 export const metadata: Metadata = {
@@ -115,6 +116,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             na de copyrightregel — waar hij op een fout lijkt. */}
         <main>{children}</main>
         <Footer merken={aantalMerken()} />
+        <KlikMeter />
       </body>
     </html>
   )

@@ -185,7 +185,7 @@ export default function HomeHeld() {
       {/* Bylder als aannemer voor de hele afwerking (besluit Daniel, 28-10-2026). */}
       <section style={{ padding: '8px 0 0' }}>
         <div className="hh-wrap">
-          <AfwerkpakketCTA marge="0" />
+          <AfwerkpakketCTA marge="0" plek="homepage" />
         </div>
       </section>
 
