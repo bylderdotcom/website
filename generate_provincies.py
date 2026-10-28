@@ -39,9 +39,9 @@ for row in rows:
 
 # Provincie emoji mapping
 prov_emoji = {
-    "Noord-Holland": "🌷", "Zuid-Holland": "🏙️", "Utrecht": "<i class="ph-thin ph-bank"></i>",
+    "Noord-Holland": "🌷", "Zuid-Holland": "🏙️", "Utrecht": '<i class=\"ph-thin ph-bank\"></i>',
     "Noord-Brabant": "🌳", "Gelderland": "🦅", "Overijssel": "💧",
-    "Flevoland": "🌊", "Groningen": "<i class="ph-thin ph-lightning"></i>", "Friesland": "⛵",
+    "Flevoland": "🌊", "Groningen": '<i class=\"ph-thin ph-lightning\"></i>', "Friesland": "⛵",
     "Drenthe": "🌲", "Zeeland": "🦞", "Limburg": "🏔️",
 }
 
@@ -51,7 +51,7 @@ def generate_provincie_page(provincie, gemeenten):
     totaal_proj   = sum(int(g['aantal_projecten']) for g in gemeenten)
     gem_besp      = sum(float(g['gem_besparing'].replace('€','').replace('.','').replace(',','.')) for g in gemeenten) / len(gemeenten)
     gem_besp_fmt  = fmt_euro(gem_besp)
-    emoji         = prov_emoji.get(provincie, "<i class="ph-thin ph-house"></i>")
+    emoji         = prov_emoji.get(provincie, '<i class=\"ph-thin ph-house\"></i>')
 
     # Top 6 gemeenten op aantal projecten
     top6 = sorted(gemeenten, key=lambda g: int(g['aantal_projecten']), reverse=True)[:6]
@@ -140,7 +140,7 @@ gtag('config', 'G-LZYCRP1169');
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/tw-nieuwbouw.css">
 <style>
 *{{box-sizing:border-box}}html{{scroll-behavior:smooth}}
 body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}}
@@ -417,7 +417,7 @@ prov_cards = ""
 for prov, gemeenten in alle_provincies:
     slug = slugify(prov)
     totaal = sum(int(g['aantal_projecten']) for g in gemeenten)
-    emoji = {"Noord-Holland":"🌷","Zuid-Holland":"🏙️","Utrecht":"<i class="ph-thin ph-bank"></i>","Noord-Brabant":"🌳","Gelderland":"🦅","Overijssel":"💧","Flevoland":"🌊","Groningen":"<i class="ph-thin ph-lightning"></i>","Friesland":"⛵","Drenthe":"🌲","Zeeland":"🦞","Limburg":"🏔️"}.get(prov,"<i class="ph-thin ph-house"></i>")
+    emoji = {"Noord-Holland":"🌷","Zuid-Holland":"🏙️","Utrecht":'<i class=\"ph-thin ph-bank\"></i>',"Noord-Brabant":"🌳","Gelderland":"🦅","Overijssel":"💧","Flevoland":"🌊","Groningen":'<i class=\"ph-thin ph-lightning\"></i>',"Friesland":"⛵","Drenthe":"🌲","Zeeland":"🦞","Limburg":"🏔️"}.get(prov,'<i class=\"ph-thin ph-house\"></i>')
     prov_cards += f"""<a href="/nieuwbouw/{slug}/" style="text-decoration:none;display:block;background:#F5F0E8;border:1px solid rgba(61,46,30,0.08);border-radius:14px;padding:20px;transition:all 0.2s;" onmouseover="this.style.background='#fff';this.style.borderColor='rgba(61,90,62,0.25)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#F5F0E8';this.style.borderColor='rgba(61,46,30,0.08)';this.style.transform=''">
   <div style="font-size:1.8rem;margin-bottom:8px;">{emoji}</div>
   <div style="font-size:16px;font-weight:800;color:#1A1208;margin-bottom:4px;">{prov}</div>
@@ -449,7 +449,7 @@ gtag('config', 'G-LZYCRP1169');
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/tw-nieuwbouw.css">
 <style>
 *{{box-sizing:border-box}}body{{background:#F5F0E8;color:#3D2E1E;font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}}
 .container{{width:100%!important;max-width:1280px!important;margin-left:auto!important;margin-right:auto!important;padding-left:48px!important;padding-right:48px!important}}
