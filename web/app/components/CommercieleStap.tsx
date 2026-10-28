@@ -8,6 +8,7 @@
 
 import { aanbodVoor, aantalMerken, kortingenVoor, type Aanbod } from '@/lib/aanbod'
 import AanbodStrook from './AanbodStrook'
+import AfwerkpakketCTA from './AfwerkpakketCTA'
 import AupingCTA from './AupingCTA'
 import ConfiguratorCTA from './ConfiguratorCTA'
 import GietvloerCTA from './GietvloerCTA'
@@ -50,6 +51,8 @@ export default function CommercieleStap({
   return (
     <>
       {alleen !== 'strook' && <Stap a={a} merken={merken} marge={marge} />}
+      {/* Elke pagina ook: Bylder kan de hele afwerking aannemen (28-10-2026). */}
+      {alleen !== 'strook' && <AfwerkpakketCTA marge="0 0 20px" />}
       {alleen !== 'stap' && <AanbodStrook merken={merken} titel="Meer regelen via Bylder" marge={marge} />}
     </>
   )

@@ -237,7 +237,9 @@ export default function HoeHetWerktPage() {
           wij een volumebonus. Daarom houden we advies en verkoop strikt gescheiden. Onze gidsen en
           de offerte-check vergelijken op marktprijs — ook als dat tegen ons eigen aanbod ingaat — en
           bij elk aanbod staat wie het levert. Uitvoering doen wij nooit met eigen mensen; die gaat
-          altijd naar een deelnemer.
+          altijd naar een vakbedrijf. Bij de afwerking van een nieuwbouwwoning nemen we de opdracht
+          wel zelf aan: één offerte en één planning, uitgevoerd door vakbedrijven uit de regio
+          (<a href="/nieuwbouw-afwerken/" style={{ color: GROEN, fontWeight: 700 }}>nieuwbouw laten afwerken</a>).
         </p>
         <p style={{ marginTop: 14, marginBottom: 0 }}>
           <a href="/prijzen/" style={{ fontWeight: 700, color: GROEN, fontSize: 14.5 }}>
