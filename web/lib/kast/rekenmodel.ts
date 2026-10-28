@@ -14,7 +14,11 @@
 
 import type { Ontwerp, Zone, Vak } from './ontwerp'
 
-export const MAAT = { naad: 0.3, vul: 6, front: 1.9, rug: 0.8, schil: 1.0, nisPas: 2, maxPlank: 80, maxPlankLat: 120, maxDeurB: 60, maxDeurH: 240, maxLade: 100 }
+// Vakregels uit de praktijk (Jim Meerbeek, Meerbeek Timmerwerken, 14 okt 2026): passtrook
+// 3 cm onder het plafond en 5 cm tegen een muur, want een inbouwkast moet erin kunnen en
+// een deur of lade moet open; legplanken in een kast niet breder dan 75 cm; deuren tot
+// 70 cm breed en 260 cm hoog; kleinste buigstraal 9 cm.
+export const MAAT = { naad: 0.3, vul: 6, front: 1.9, rug: 0.8, schil: 1.0, nisPas: 5, plafPas: 3, maxPlank: 75, maxPlankLat: 120, maxDeurB: 70, maxDeurH: 260, maxLade: 100, minStraal: 9 }
 
 export type Rol = 'korpus' | 'plank' | 'rug' | 'front' | 'vul' | 'plint' | 'pas' | 'kopwand'
 export type Deel = {
@@ -65,15 +69,15 @@ export function materialen(o: Ontwerp) {
   const front = a.soort === 'lak' ? `MDF lakdragend 19 mm, gelakt ${a.naam}${a.glans ? ' ' + a.glans : ''}`
     : a.soort === 'hout' ? `MDF 19 mm met fineer, ${a.naam}` : `Decorplaat 19 mm, ${a.naam}`
   return {
-    korpus: o.binnen === 'wit' ? 'Wit melamine spaanplaat 18 mm' : front,
+    korpus: o.binnen === 'wit' ? 'Wit melamine spaanplaat 18 mm (bv. Thermopal W10410 SD)' : front,
     front,
     buig: a.soort === 'lak' ? 'Buig-MDF 2 × 5 mm, gelakt' : `Buig-MDF 2 × 5 mm met fineer, ${a.naam}`,
     rug: 'MDF wit 8 mm (rug)',
   }
 }
 
-/** Aantal scharnieren naar deurhoogte. */
-export const scharnierAantal = (h: number) => (h <= 90 ? 2 : h <= 160 ? 3 : h <= 220 ? 4 : 5)
+/** Aantal scharnieren naar deurhoogte (cm), zoals Meerbeek Timmerwerken het aanhoudt. */
+export const scharnierAantal = (h: number) => (h <= 100 ? 2 : h <= 170 ? 3 : h <= 220 ? 4 : h <= 240 ? 5 : 6)
 
 export function bouw(o: Ontwerp): Bouw {
   const fouten: string[] = [], waarsch: string[] = []
@@ -109,9 +113,21 @@ export function bouw(o: Ontwerp): Bouw {
     // Startpunten: korpus en voorkant
     let uFront = 0, uKorpus = 0
     if (isHoek) { uFront = D + MAAT.vul; uKorpus = bi === 0 ? 0 : D }
-    if (o.opstelling === 'nis') { uFront = MAAT.nisPas; uKorpus = MAAT.nisPas }
-
     const segs = been.segmenten
+    // Passtrook in een nis: 5 cm aan beide kanten. Past een eerder ontwerp daar niet
+    // meer mee in de nis, dan zoveel als er is (min 2 cm), met een waarschuwing, zodat
+    // bewaarde ontwerpen niet ineens fout zijn.
+    let pas = MAAT.nisPas
+    if (o.opstelling === 'nis' && been.muurlengte) {
+      const kast = segs.reduce((t, s) => t + s.breedte, 0)
+      const ruimte = (been.muurlengte - kast) / 2
+      if (ruimte < MAAT.nisPas - 0.05 && ruimte >= 2 - 0.05) {
+        pas = r1(ruimte)
+        waarsch.push(`In de nis blijft aan elke kant ${nl(pas)} cm voor de passtrook. Houd ${MAAT.nisPas} cm aan, zeker naast een deur: dan kan de kast erin en draait de deur vrij. Maak de kast ${nl(2 * (MAAT.nisPas - pas))} cm smaller.`)
+      }
+    }
+    if (o.opstelling === 'nis') { uFront = pas; uKorpus = pas }
+
     let u = uFront
     let lengte = 0
     let topEersteSeg = yP
@@ -124,6 +140,8 @@ export function bouw(o: Ontwerp): Bouw {
       if (eerste) topEersteSeg = top
       if (top + (o.passtrook > 0 ? o.passtrook : 0) > o.plafond + 0.5)
         fouten.push(`${waar}: ${nl(top)} cm hoog plus ${nl(o.passtrook)} cm passtrook past niet onder het plafond van ${nl(o.plafond)} cm.`)
+      if (bi === 0 && eerste && o.passtrook > 0 && o.passtrook < MAAT.plafPas)
+        waarsch.push(`Tussen kast en plafond staat ${nl(o.passtrook)} cm. Houd minstens ${MAAT.plafPas} cm aan: dan kan de kast erin bij montage en tekent de meubelmaker de passtrook af op het plafond.`)
       const gat = o.plafond - top
       if (gat > Math.max(o.passtrook, 0) + 0.5 && gat < 10)
         waarsch.push(`${waar}: tussen kast en plafond blijft ${nl(gat)} cm. Dat is te weinig om schoon te houden en te veel voor een passtrook. Maak hem hoger of laat minstens 10 cm vrij.`)
@@ -133,6 +151,7 @@ export function bouw(o: Ontwerp): Bouw {
         if (!vrijeKant) fouten.push(`${waar}: een ronde kop kan alleen aan een vrij uiteinde.`)
         if (Math.abs(s.breedte - D) > 0.5) waarsch.push(`${waar}: een ronde kop is even breed als de kast diep is; gerekend met ${nl(D)} cm.`)
         const R = D
+        if (R < MAAT.minStraal) fouten.push(`${waar}: een straal van ${nl(R)} cm is te klein om te buigen (min ${MAAT.minStraal}).`)
         const naarBegin = o.opstelling === 'wand' && eerste && !laatste
         const cu = naarBegin ? u + R : u
         // kwart tussen +v en ±u
@@ -311,9 +330,9 @@ export function bouw(o: Ontwerp): Bouw {
     }
     if (o.opstelling === 'nis') {
       const top = maxTop
-      box('Passtrook muur', naam, mat.front, 'pas', 0, MAAT.nisPas, dc, D, yP, top, { kant: 'aftekenen op muur', zicht: true })
-      box('Passtrook muur', naam, mat.front, 'pas', lengte, lengte + MAAT.nisPas, dc, D, yP, top, { kant: 'aftekenen op muur', zicht: true })
-      lengte += MAAT.nisPas
+      box('Passtrook muur', naam, mat.front, 'pas', 0, pas, dc, D, yP, top, { kant: 'aftekenen op muur', zicht: true })
+      box('Passtrook muur', naam, mat.front, 'pas', lengte, lengte + pas, dc, D, yP, top, { kant: 'aftekenen op muur', zicht: true })
+      lengte += pas
     }
     lengtes.push({ muur: naam, lengte: r1(lengte) })
     if (been.muurlengte) {
@@ -393,7 +412,9 @@ export function platen(b: Bouw) {
   const plaat: Record<string, number> = {}
   const m2: Record<string, number> = {}
   zaaglijst(b).forEach(r => { m2[r.mat] = (m2[r.mat] ?? 0) + (r.L * r.B * r.n) / 1e6 * (r.mat === b.mat.buig ? 2 : 1) })
-  Object.keys(m2).forEach(k => { plaat[k] = /melamine/.test(k) ? 2.8 * 2.07 : 3.05 * 1.22 })
+  // Plaatmaten zoals de meeste timmerbedrijven inkopen: wit en zwart melamine 2655 × 2100,
+  // de rest 2800 × 2070 (Meerbeek, 14 okt 2026).
+  Object.keys(m2).forEach(k => { plaat[k] = /melamine/.test(k) ? 2.655 * 2.1 : 2.8 * 2.07 })
   return Object.keys(m2).map(k => ({ mat: k, m2: Math.round(m2[k] * 10) / 10, platen: Math.ceil(m2[k] / (plaat[k] * 0.8)) }))
 }
 
@@ -402,11 +423,11 @@ export function beslag(b: Bouw) {
   const planken = b.delen.filter(d => d.rol === 'plank').length
   const korpussen = b.delen.filter(d => d.naam === 'Rug').length
   const lijst: [string, number][] = [
-    ['Potscharnier 35 mm, opdek, zachtsluitend', deuren.reduce((s, d) => s + (d.scharnieren ?? 2), 0)],
+    ['Potscharnier 35 mm, opdek, zachtsluitend (bv. Blum CLIP top BLUMOTION)', deuren.reduce((s, d) => s + (d.scharnieren ?? 2), 0)],
     ['  waarvan met openingsbegrenzer ±90° (deur in de binnenhoek)', deuren.filter(d => d.begrenzer).reduce((s, d) => s + (d.scharnieren ?? 2), 0)],
     ['Greep', b.fronten.filter(f => f.greep).length],
-    ['Drukopener (greeploze fronten)', b.fronten.filter(f => f.soort !== 'paneel' && !f.greep).length],
-    ['Ladegeleider volledig uittrekbaar, zachtsluitend (paar)', lades.length],
+    ['Drukopener (greeploze fronten; bv. Hettich Push to open magneet, inboor)', b.fronten.filter(f => f.soort !== 'paneel' && !f.greep).length],
+    ['Ladesysteem volledig uittrekbaar, zachtsluitend (bv. Hettich AvanTech YOU)', lades.length],
     ['Plankdrager', planken * 4],
     ['Versterkingslat onder brede plank', b.delen.filter(d => d.naam === 'Legplank met lat').length],
     ['Stelpoot met plintclip', Math.max(4, korpussen * 2)],
@@ -414,4 +435,47 @@ export function beslag(b: Bouw) {
   ]
   if (b.vakken.some(v => /stofzuig/i.test(v.functie ?? ''))) lijst.push(['Stopcontact in het stofzuigervak (elektricien)', 1])
   return lijst.filter(([, n]) => n > 0)
+}
+
+/* ───────────── Bestanden voor de werkplaats ───────────── */
+
+/** Zaaglijst als CSV voor Excel: puntkomma's en een BOM, zodat Nederlandse Excel hem goed opent. */
+export function zaaglijstCsv(b: Bouw): string {
+  const cel = (v: string | number) => {
+    const t = String(v)
+    return /[;"\n]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t
+  }
+  const rijen: (string | number)[][] = [['Materiaal', 'Onderdeel', 'Waar', 'Lengte (mm)', 'Breedte (mm)', 'Dikte (mm)', 'Aantal', 'Afwerking']]
+  zaaglijst(b).forEach(r => rijen.push([r.mat, r.naam, r.waar.join(', '), r.L, r.B, r.T, r.n, r.afwerking]))
+  return '\uFEFF' + rijen.map(r => r.map(cel).join(';')).join('\r\n') + '\r\n'
+}
+
+/**
+ * Vooraanzicht per been als DXF (R12, in mm), voor SketchUp of AutoCAD. Elk deel is een
+ * rechthoek op een eigen laag (korpus, fronten, passtroken...); de benen staan naast
+ * elkaar met 900 mm tussenruimte. Ronde koppen staan erin als hun uitslag langs de muur.
+ */
+export function aanzichtDxf(b: Bouw): string {
+  const mm = (v: number) => Math.round(v * 10)
+  const regels: string[] = ['0', 'SECTION', '2', 'ENTITIES']
+  const lijn = (laag: string, x0: number, y0: number, x1: number, y1: number) =>
+    regels.push('0', 'LINE', '8', laag, '10', String(x0), '20', String(y0), '30', '0', '11', String(x1), '21', String(y1), '31', '0')
+  const rechthoek = (laag: string, x0: number, y0: number, x1: number, y1: number) => {
+    lijn(laag, x0, y0, x1, y0); lijn(laag, x1, y0, x1, y1); lijn(laag, x1, y1, x0, y1); lijn(laag, x0, y1, x0, y0)
+  }
+  const tekst = (laag: string, x: number, y: number, h: number, t: string) =>
+    regels.push('0', 'TEXT', '8', laag, '10', String(x), '20', String(y), '30', '0', '40', String(h), '1', t)
+  const LAAG: Record<string, string> = { korpus: 'KORPUS', plank: 'PLANKEN', rug: 'RUG', vul: 'VULSTUK', plint: 'PLINT', pas: 'PASSTROOK', kopwand: 'KOPWAND' }
+  let x = 0
+  b.maten.benen.forEach((been, bi) => {
+    // Rug en kopwand aan de muurzijde vallen in het vooraanzicht achter de rest; weglaten houdt de tekening leesbaar.
+    b.delen.filter(d => d.been === bi && d.rol !== 'rug' && d.naam !== 'Kopwand muurzijde')
+      .forEach(d => rechthoek(LAAG[d.rol] ?? 'OVERIG', x + mm(d.u0), mm(d.b[2]), x + mm(d.u1), mm(d.b[3])))
+    b.rond.filter(r => r.been === bi).forEach(r => rechthoek('RONDE KOP', x + mm(r.u0), mm(r.y0), x + mm(r.u1), mm(r.y1)))
+    b.fronten.filter(f => f.been === bi).forEach(f => rechthoek(f.soort === 'lade' ? 'LADEFRONTEN' : 'DEUREN', x + mm(f.u0), mm(f.b[2]), x + mm(f.u1), mm(f.b[3])))
+    tekst('TEKST', x, -120, 45, `${been.muur}: ${mm(been.lengte)} mm breed, ${mm(b.maten.hoogte)} mm hoog, ${mm(b.maten.diepte)} mm diep`)
+    x += mm(been.lengte) + 900
+  })
+  regels.push('0', 'ENDSEC', '0', 'EOF')
+  return regels.join('\r\n') + '\r\n'
 }

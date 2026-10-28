@@ -27,7 +27,7 @@ const KAART: React.CSSProperties = { background: '#fff', border: `1px solid ${IN
 const STAPPEN = [
   { t: 'De koper ontwerpt', p: 'Met voorbeeldfoto’s en een gesprek met de ontwerper. Die legt alles vast in maten en bewaakt de vakregels hieronder. Kleur en afwerking komen uit de foto’s, als RAL-kleur of houtsoort.' },
   { t: 'De koper vraagt een offerte aan', p: 'Vanuit zijn Bylder-omgeving, na akkoord om zijn gegevens met jou te delen. Jij krijgt een melding per e-mail.' },
-  { t: 'Jij opent de aanvraag', p: 'In je partneromgeving op app.bylder.com: het ontwerp in 3D, vooraanzicht en plattegrond met maten, de zaaglijst, de beslaglijst, de foto’s uit het gesprek, en naam, adres en telefoonnummer van de koper.' },
+  { t: 'Jij opent de aanvraag', p: 'In je partneromgeving op app.bylder.com: het ontwerp in 3D, vooraanzicht en plattegrond met maten, de zaaglijst (ook als Excel-bestand), het vooraanzicht als dxf voor SketchUp of AutoCAD, de beslaglijst, de foto’s uit het gesprek, en naam, adres en telefoonnummer van de koper.' },
   { t: 'Je meet in en maakt een offerte', p: 'Elk ontwerp heeft een maatstatus. ‘Gemeten’ komt uit een bouwtekening of nauwkeurige meting; ‘indicatief’ is geschat. Inmeten doe je in beide gevallen, en het is voor de koper gratis. De opdracht sluit je rechtstreeks met de koper.' },
 ]
 
@@ -40,8 +40,9 @@ export default function VoorTimmerbedrijvenPage() {
     `Lades hooguit ${MAAT.maxLade} cm breed.`,
     `Frontnaad ${MAAT.naad * 10} mm, frontdikte ${MAAT.front * 10} mm, rug ${MAAT.rug * 10} mm.`,
     `Vulstuk van ${MAAT.vul} cm in een binnenhoek; deuren daar met openingsbegrenzer.`,
-    `${MAAT.nisPas} cm speling in een nis, en een passtrook tegen het plafond.`,
-    'Ronde koppen alleen aan een vrij uiteinde, als kwartcirkel met straal gelijk aan de diepte, open of dicht.',
+    `Passtrook ${MAAT.nisPas} cm tegen een muur en ${MAAT.plafPas} cm tegen het plafond: de kast moet erin bij montage, en een deur naast de muur moet vrij draaien.`,
+    'Scharnieren naar deurhoogte: 2 tot 100 cm, 3 tot 170, 4 tot 220, 5 tot 240 en 6 tot 260 cm.',
+    `Ronde koppen alleen aan een vrij uiteinde, als kwartcirkel met straal gelijk aan de diepte (minstens ${MAAT.minStraal} cm), open of dicht.`,
   ]
   return (
     <main style={{ maxWidth: 1200, margin: '0 auto', padding: '44px 24px 72px', color: '#1A1208' }}>
@@ -98,7 +99,7 @@ export default function VoorTimmerbedrijvenPage() {
 
       <div style={{ maxWidth: 812 }}>
         <h2 style={H2}>De vakregels die de ontwerper bewaakt</h2>
-        <p style={P}>Een ontwerp dat een van deze regels breekt, laat de ontwerper niet aan de koper zien; hij past het eerst aan.</p>
+        <p style={P}>Een ontwerp dat een van deze regels breekt, laat de ontwerper niet aan de koper zien; hij past het eerst aan. In oktober 2026 hebben we de regels nagelopen met een timmerbedrijf dat dit werk dagelijks doet: passtroken, plankbreedtes, deurmaten en het aantal scharnieren komen uit die praktijk.</p>
         <ul style={{ ...P, paddingLeft: 20, display: 'grid', gap: 6 }}>
           {regels.map(r => <li key={r}>{r}</li>)}
         </ul>

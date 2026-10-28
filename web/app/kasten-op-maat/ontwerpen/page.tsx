@@ -54,7 +54,7 @@ export default function KastOntwerpenPage() {
       <section style={{ maxWidth: 1200, margin: '0 auto', padding: '8px 24px 72px', color: '#1A1208' }} aria-label="Uitleg bij de ontwerper">
         <div style={{ maxWidth: 812 }}>
           <h2 style={{ ...H2, marginTop: 24 }}>Van voorbeeldfoto tot zaaglijst</h2>
-          <p style={P}>De ontwerper werkt zoals een meubelmaker denkt: in korpussen, fronten, planken en beslag. Je beschrijft wat je wilt in gewone taal, hij legt het vast in maten. Een rekenmodel controleert elk voorstel op de vakregels, zoals deuren van hooguit 60 cm breed en planken die niet doorbuigen. Wat niet te maken is, komt niet bij je terug.</p>
+          <p style={P}>De ontwerper werkt zoals een meubelmaker denkt: in korpussen, fronten, planken en beslag. Je beschrijft wat je wilt in gewone taal, hij legt het vast in maten. Een rekenmodel controleert elk voorstel op de vakregels, zoals deuren van hooguit 70 cm breed, planken die niet doorbuigen en ruimte rondom om de kast te kunnen plaatsen. Wat niet te maken is, komt niet bij je terug.</p>
           <p style={P}>Je ziet de kast in 3D, in vooraanzicht en als plattegrond. Ben je tevreden, dan neem je het ontwerp mee naar je Bylder-omgeving en vraag je daar een offerte aan. Het timmerbedrijf krijgt dan precies wat jij ziet, plus de zaaglijst en de beslaglijst.</p>
           <p style={P}><a href="/kasten-op-maat/" style={{ color: GROEN, fontWeight: 700 }}>Lees meer over kasten op maat</a>, of kijk per type:</p>
           <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 8px', display: 'flex', flexWrap: 'wrap', gap: 8 }}>
