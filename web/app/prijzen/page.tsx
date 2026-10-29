@@ -87,33 +87,18 @@ export default function PrijzenPage() {
         Je deelname loopt per jaar; vóór de verlenging ontvang je een betaalverzoek en opzeggen kan per jaar.
       </p>
 
-      <h2 style={H2}>En daarnaast: betalen als het werkt</h2>
-      <p style={{ fontSize: 15, color: 'rgba(61,46,30,0.7)', lineHeight: 1.7, margin: '0 0 14px' }}>
-        Het jaarbedrag koopt je plek in de matching. Wat je daarna betaalt hangt af van of het
-        werkt: één vast bedrag per <strong>getekende opdracht</strong> die via Bylder binnenkwam.
-        Geen kosten per lead, geen veiling, geen percentage over je factuur — een bedrag per
-        klusomvang, zodat je vooraf weet waar je aan toe bent.
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(190px,1fr))', gap: 18 }}>
-        <div style={CARD}>
-          <div style={PRIJS}>€99</div>
-          <div style={SUB}>opdracht tot €2.500</div>
-        </div>
-        <div style={CARD}>
-          <div style={PRIJS}>€299</div>
-          <div style={SUB}>€2.500 tot €15.000</div>
-        </div>
-        <div style={CARD}>
-          <div style={PRIJS}>€599</div>
-          <div style={SUB}>boven €15.000</div>
-        </div>
+      <h2 style={H2}>Werk uitvoeren voor Bylder</h2>
+      <div style={{ ...CARD, borderColor: 'rgba(61,90,62,0.35)' }}>
+        <div style={PRIJS}>Aanmelden is gratis</div>
+        <div style={SUB}>voor stukadoors, tegelzetters, vloerenleggers, schilders en timmerbedrijven</div>
+        <p style={{ ...LI, margin: '0 0 12px' }}>
+          Bylder neemt de hele afwerking van nieuwbouwwoningen aan, in één offerte voor de koper. Het werk doen
+          vakbedrijven uit ons netwerk. Je krijgt de maten en de planning vooraf, maakt geen offertes voor niets en
+          factureert aan Bylder. Tarief en betaaltermijn leggen we per vak vast in een overeenkomst. Dit staat los van
+          je plek in de gids; het kan allebei.
+        </p>
+        <a href="/uitvoerder-worden/" data-meet="prijzen-uitvoerder" style={{ display: 'inline-block', background: '#3D5A3E', color: '#F5F0E8', padding: '12px 22px', borderRadius: 10, fontWeight: 700, textDecoration: 'none' }}>Meld je aan als uitvoerder →</a>
       </div>
-      <p style={{ fontSize: 13.5, color: 'rgba(61,46,30,0.72)', margin: '10px 0 0' }}>
-        Geen opdracht betekent geen kosten. Je jaarlijkse totaal aan opdrachtbedragen is
-        gemaximeerd, dus je weet wat het maximaal kan worden. Dit vervangt op termijn het
-        jaarbedrag: hoe beter wij zien welk werk er daadwerkelijk uit een match volgt, hoe meer
-        het model op resultaat gaat rusten en hoe minder op deelname.
-      </p>
 
       <h2 style={H2}>Producten laten aanbevelen</h2>
       <div style={CARD}>
