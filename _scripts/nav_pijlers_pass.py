@@ -5,7 +5,8 @@
 # door de huidige canonieke nav uit web/app/components/Nav.tsx (ontwerp Daniel,
 # 26-08-2026): bovenbalk (Nieuwbouw/Bestaande bouw/Renovatie/Kennisbank) +
 # hoofdrij met vier pijlers (Assortiment/Diensten/Kortingsvouchers/Zakelijk),
-# Functies, Inloggen en de knop "Maak je stappenplan".
+# Functies, Inloggen en de knoppen uit menu.json ("Maak je stappenplan" en,
+# sinds 29-10-2026, "Vraag een offerte aan").
 #
 # Vervangt het HELE <nav>-element (open- t/m sluittag), niet alleen de
 # binnenkant — de oude structuur (glass-nav met .nav-links/.nav-mobile, of
@@ -98,10 +99,18 @@ def lees_menu():
               [(escape(i['href']), t(i['title']), t(i['sub']) if i.get('sub') else None,
                 bool(i.get('primair'))) for i in m['items']])
              for m in d['menus']]
-    return bovenbalk, menus
+    # De twee knoppen rechts (29-10-2026): (href, label, sub, meet, primair).
+    knoppen = [(escape(k['href']), t(k['label']), t(k['sub']), k['meet'], bool(k.get('primair')))
+               for k in d.get('knoppen', [])]
+    return bovenbalk, menus, knoppen
 
 
-BOVENBALK, MENUS = lees_menu()
+BOVENBALK, MENUS, KNOPPEN = lees_menu()
+
+
+def meet_js(knop, plek):
+    # Telt klikken op de menuknoppen als GA4-event menu_klik (29-10-2026).
+    return f"window.gtag&&gtag('event','menu_klik',{{knop:'{knop}',plek:'{plek}'}})"
 
 SLUGS = ['as', 'di', 'kv', 'zk']
 
@@ -285,10 +294,10 @@ body>header:has(h1.hero-h1){padding-left:0!important;padding-right:0!important}
 STICKY_ONDER_MENU = """
 /* Zes menu's (sinds Ontwerpen, 10-10-2026) passen pas vanaf 1181px; daaronder het
    mobiele menu (zie de max-width:1180px-regels). Tot 1300px minder ruimte tussen
-   de items, en tot 1400px staat Functies niet in de balk (wel in het mobiele menu
+   de items, en tot 1500px staat Functies niet in de balk (wel in het mobiele menu
    onder Meer, en in de footer). Gelijk aan Nav.tsx. */
-@media(min-width:1181px) and (max-width:1300px){.bn2-desk{gap:15px}.bn2-r{gap:10px}}
-@media(max-width:1399px){.bn2-lnk.sm{display:none}}
+@media(min-width:1181px) and (max-width:1300px){.bn2-desk{gap:11px}.bn2-r{gap:10px}.bn2-cta{font-size:.8125rem;padding:9px 12px}}
+@media(max-width:1499px){.bn2-lnk.sm{display:none}}
 
 /* De /nieuwbouw/-pagina's (396) zetten de standaardmarge van de browser niet op
    nul: balk en menu stonden 8px van de rand. Elke andere pagina met dit menu
@@ -359,7 +368,17 @@ CSS = (
     f'.{P}-lnk{{font-size:0.875rem;color:{INKT}0.72);text-decoration:none}}'
     f'.{P}-lnk.sm{{font-size:0.8rem}}'
     f'.{P}-cta{{background:#3D5A3E;color:#F5F0E8;font-size:0.875rem;font-weight:700;'
-    f'padding:9px 18px;border-radius:9px;text-decoration:none;white-space:nowrap}}'
+    f'padding:9px 18px;border-radius:9px;text-decoration:none;white-space:nowrap;'
+    f'border:1.5px solid #3D5A3E}}'
+    # Tweede knop: zelfde maat, omlijnd. Op mobiel alleen in het uitklapmenu.
+    f'.{P}-cta.o{{background:transparent;color:#3D5A3E}}'
+    # Bovenaan het mobiele menu: de twee knoppen als kaart met een regel uitleg.
+    f'.{P}-kn{{display:grid;grid-template-columns:1fr;gap:8px;padding:14px 0 10px}}'
+    f'.{P}-kk{{display:block;padding:12px;border-radius:12px;text-decoration:none;'
+    f'background:#3D5A3E;color:#F5F0E8;border:1.5px solid #3D5A3E;line-height:1.35}}'
+    f'.{P}-kk strong{{display:block;font-size:14px;font-weight:800;margin-bottom:3px}}'
+    f'.{P}-kk span{{display:block;font-size:12px;opacity:.85}}'
+    f'.{P}-kk.o{{background:#fff;color:#1A1208}}'
     f'.{P}-bg{{display:none;cursor:pointer;padding:6px;flex-direction:column;gap:4px}}'
     f'.{P}-bg i{{width:20px;height:2px;background:#1A1208;border-radius:2px;display:block}}'
     f'.{P}-cb{{position:absolute;opacity:0;pointer-events:none;margin:0}}'
@@ -381,7 +400,7 @@ CSS = (
     # verborgen checkbox — geen JavaScript. De checked-regel staat binnen deze
     # media query, dus op desktop blijft het paneel dicht.
     f'@media(max-width:1180px){{.{P}-top{{display:none}}.{P}-desk{{display:none}}'
-    f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}'
+    f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}.{P}-cta.o{{display:none}}'
     # .o is de React-variant (state), :checked de CSS-only variant. Beide staan
     # binnen deze media query, dus op desktop blijft het paneel altijd dicht.
     f'.{P}-cb:checked~.{P}-sheet,.{P}-sheet.o{{display:flex}}}}'
@@ -430,6 +449,11 @@ def build_nav():
     mobiel.append(f'<details class="{P}-det"><summary class="{P}-sum">Meer</summary>'
                   f'<div>{meer}</div></details>')
 
+    kaarten = ''.join(
+        f'<a href="{h}" class="{P}-kk{"" if pr else " o"}" onclick="{meet_js(m, "menu-mobiel")}">'
+        f'<strong>{l}</strong><span>{sub}</span></a>'
+        for h, l, sub, m, pr in sorted(KNOPPEN, key=lambda k: not k[4]))
+
     return (
         f'<nav aria-label="Hoofdnavigatie" class="{MARKER}">'
         f'<input type="checkbox" id="{P}-cb" class="{P}-cb">'
@@ -441,10 +465,11 @@ def build_nav():
         f'<div class="{P}-r">'
         f'<a href="/functies/" class="{P}-lnk sm">Functies</a>'
         f'<a href="https://app.bylder.com" class="{P}-lnk">Inloggen</a>'
-        f'<a href="https://app.bylder.com/woningscan" class="{P}-cta">Maak je stappenplan</a>'
+        + ''.join(f'<a href="{h}" class="{P}-cta{"" if pr else " o"}" onclick="{meet_js(m, "balk")}">{l}</a>'
+                  for h, l, sub, m, pr in KNOPPEN) +
         f'<label for="{P}-cb" class="{P}-bg" aria-label="Menu"><i></i><i></i><i></i></label>'
         f'</div></div>'
-        f'<div class="{P}-sheet">{"".join(mobiel)}'
+        f'<div class="{P}-sheet"><div class="{P}-kn">{kaarten}</div>{"".join(mobiel)}'
         f'<a href="https://app.bylder.com" class="{P}-ml">Inloggen</a></div></nav>'
     )
 
