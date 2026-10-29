@@ -14,7 +14,7 @@ const GROEN = '#3D5A3E'
 type Kaart = { href: string; merk: string; titel: string; tekst: string; knop: string; img?: string; sm?: string; alt?: string; kleuren?: boolean }
 
 const kaarten = (merken: number): Kaart[] => [
-  { href: '/nieuwbouw-afwerken/', merk: 'Bylder als aannemer', titel: 'Je hele afwerking', tekst: 'Stucwerk, tegels, badkamer, vloeren, deuren en kasten in één offerte. Regio Den Bosch.', knop: 'Vraag een offerte aan' },
+  { href: '/nieuwbouw-afwerken/', merk: 'Bylder als aannemer', titel: 'Je hele afwerking', tekst: 'Stucwerk, tegels, badkamer, vloeren, deuren en kasten in één offerte.', knop: 'Vraag een offerte aan' },
   { href: '/kozijnloze-deuren/configurator/', merk: 'Classic Next', titel: 'Kozijnloze deuren', tekst: 'Plafondhoog, zonder architraaf. Stel samen in 3D en vraag direct een offerte aan.', knop: 'Stel je deur samen',
     img: '/img/classic-next/deur-eiken-fineer.jpg', sm: '/img/classic-next/deur-eiken-fineer-sm.jpg 600w, /img/classic-next/deur-eiken-fineer.jpg 800w',
     alt: 'Plafondhoge binnendeur in eikenfineer, vlak in een witte wand' },

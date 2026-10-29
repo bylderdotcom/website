@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { ONDERDELEN, REGIO, URL_AFWERKEN, onderdeel, prijsTekst } from '@/lib/afwerken'
+import { ONDERDELEN, URL_AFWERKEN, onderdeel, prijsTekst } from '@/lib/afwerken'
 import AfwerkAanvraag from '../../components/AfwerkAanvraag'
 import { Stijl as S, Lijn } from '../stijl'
 
@@ -26,12 +26,12 @@ export default async function OnderdeelPage({ params }: { params: Promise<{ onde
   const url = `${URL_AFWERKEN}${o.slug}/`
   const vragen = [
     ...o.vragen,
-    { v: `Wie voert het ${o.naam.toLowerCase()} uit?`, a: 'Bylder neemt de opdracht aan en plant het werk. Het wordt uitgevoerd door een vakbedrijf uit de regio, dat in je offerte staat. Je hebt één aanspreekpunt: Bylder.' },
+    { v: `Wie voert het ${o.naam.toLowerCase()} uit?`, a: 'Bylder neemt de opdracht aan en plant het werk. Het wordt uitgevoerd door een vakbedrijf bij jou in de buurt, dat in je offerte staat. Je hebt één aanspreekpunt: Bylder.' },
   ]
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Service', name: `${o.naam} in een nieuwbouwwoning`, serviceType: o.naam, url,
       provider: { '@type': 'Organization', name: 'Bylder Nederland B.V.', url: 'https://www.bylder.com/' },
-      areaServed: REGIO.gemeenten.map(g => ({ '@type': 'City', name: g })),
+      areaServed: { '@type': 'Country', name: 'Nederland' },
       ...(o.prijs && o.prijs.eenheid !== 'totaal' ? { offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: o.prijs.van, highPrice: o.prijs.tot } } : {}) },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: vragen.map(q => ({ '@type': 'Question', name: q.v, acceptedAnswer: { '@type': 'Answer', text: q.a } })) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -49,7 +49,7 @@ export default async function OnderdeelPage({ params }: { params: Promise<{ onde
 
       <div style={S.held}>
         <div>
-          <p style={S.oog}>Onderdeel van je afwerking · {REGIO.naam}</p>
+          <p style={S.oog}>Onderdeel van je afwerking</p>
           <h1 style={S.h1}>{o.h1}</h1>
           <p style={S.lead}>{o.kort} Bylder maakt de offerte uit je tekening, als los onderdeel of samen met de rest van je afwerking, en plant het op het goede moment.</p>
           <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>

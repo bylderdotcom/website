@@ -1,32 +1,32 @@
 import type { Metadata } from 'next'
-import { ONDERDELEN, REGIO, VOLGORDE, URL_AFWERKEN, prijsTekst } from '@/lib/afwerken'
+import { ONDERDELEN, VOLGORDE, URL_AFWERKEN, prijsTekst } from '@/lib/afwerken'
 import AfwerkAanvraag from '../components/AfwerkAanvraag'
 import { Stijl as S, Lijn } from './stijl'
 
 /**
  * /nieuwbouw-afwerken/ — Bylder als hoofdaannemer voor de afwerking van een nieuwbouwwoning
  * (besluit Daniel, 28-10-2026). Eén offerte, één contract, één planning; het werk doen
- * vakbedrijven uit de regio als onderaannemer. Eerst in de regio Den Bosch.
+ * vakbedrijven uit de regio als onderaannemer. Landelijk.
  *
  * Inhoud: web/lib/afwerken.ts. Het FAQ-schema herhaalt alleen wat zichtbaar op de pagina staat.
  * Geen claims over garantie of verzekering op de pagina zolang die niet zijn vastgelegd.
  */
 
 export const metadata: Metadata = {
-  title: 'Nieuwbouw laten afwerken in één offerte, regio Den Bosch | Bylder',
+  title: 'Nieuwbouw laten afwerken in één offerte | Bylder',
   description:
     'Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten in één offerte uit je tekening. '
-    + 'Bylder neemt de opdracht aan; vakbedrijven uit de regio voeren uit.',
+    + 'Bylder neemt de opdracht aan; vakbedrijven bij jou in de buurt voeren uit.',
   alternates: { canonical: URL_AFWERKEN },
   openGraph: { title: 'Je nieuwbouwhuis afgewerkt, in één offerte', url: URL_AFWERKEN, type: 'website',
     description: 'Van stucwerk tot kasten: één offerte uit je eigen tekening, één planning en één aanspreekpunt.' },
 }
 
 const VRAGEN = [
-  { v: 'Wie neemt de opdracht aan?', a: 'Bylder. Je sluit één overeenkomst met Bylder voor alles wat je laat doen. Het werk doen vakbedrijven uit de regio, die wij selecteren, inplannen en controleren. Bij elk onderdeel in de offerte staat welk bedrijf het uitvoert.' },
+  { v: 'Wie neemt de opdracht aan?', a: 'Bylder. Je sluit één overeenkomst met Bylder voor alles wat je laat doen. Het werk doen vakbedrijven die wij selecteren, inplannen en controleren. Bij elk onderdeel in de offerte staat welk bedrijf het uitvoert.' },
   { v: 'Waarom één offerte in plaats van losse vakbedrijven?', a: 'Omdat de afwerking een volgorde heeft. De stukadoor moet weg voordat de tegelzetter komt, en de vloer komt pas als de schilder klaar is. Met losse bedrijven regel jij die planning zelf. Bij ons heb je één planning, één aanspreekpunt en één prijs.' },
   { v: 'Hoe kunnen jullie een offerte maken zonder eerst te meten?', a: 'We halen de maten uit je tekening: vierkante meters vloer, wand en plafond per ruimte, het aantal deuren en waar de badkamer zit. Daarmee maken we de offerte. Voordat we beginnen, meten we wel in, zodat er niets wordt gemaakt op een maat die niet klopt.' },
-  { v: 'Waar werken jullie?', a: `Nu in de ${REGIO.naam}: ${REGIO.gemeenten.join(', ')}. Woon je elders, laat je aanvraag dan toch achter: we breiden uit naar waar de vraag is.` },
+  { v: 'Waar werken jullie?', a: 'In heel Nederland. Laat je aanvraag achter met de plaats van je woning; we maken je offerte met vakbedrijven bij jou in de buurt.' },
   { v: 'Welke btw geldt?', a: 'Bij de afwerking van een nieuwbouwwoning rekent iedere aannemer 21% btw. Het lage tarief geldt alleen voor arbeid aan woningen die ouder zijn dan twee jaar. Onze bedragen zijn inclusief btw.' },
   { v: 'Kan ik ook één onderdeel laten doen?', a: 'Ja. Vink in de aanvraag aan wat je wilt. Wil je alleen een vloer of alleen een badkamer, dan maken we daar een offerte voor.' },
   { v: 'Kan ik jullie offerte laten checken?', a: 'Ja. Onze offerte-check vergelijkt elke offerte met marktprijzen, ook die van onszelf. Zo zie je of je een eerlijke prijs betaalt.' },
@@ -36,7 +36,7 @@ export default function NieuwbouwAfwerkenPage() {
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Service', name: 'Afwerking van een nieuwbouwwoning', serviceType: 'Afbouw en afwerking nieuwbouw',
       provider: { '@type': 'Organization', name: 'Bylder Nederland B.V.', url: 'https://www.bylder.com/' },
-      areaServed: REGIO.gemeenten.map(g => ({ '@type': 'City', name: g })), url: URL_AFWERKEN,
+      areaServed: { '@type': 'Country', name: 'Nederland' }, url: URL_AFWERKEN,
       hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Onderdelen', itemListElement: ONDERDELEN.map(o => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: o.naam, url: `${URL_AFWERKEN}${o.slug}/` } })) } },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: VRAGEN.map(q => ({ '@type': 'Question', name: q.v, acceptedAnswer: { '@type': 'Answer', text: q.a } })) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -50,12 +50,12 @@ export default function NieuwbouwAfwerkenPage() {
 
       <div style={S.held}>
         <div>
-          <p style={S.oog}>Bylder als aannemer · {REGIO.naam}</p>
+          <p style={S.oog}>Bylder als aannemer</p>
           <h1 style={S.h1}>Je nieuwbouwhuis afgewerkt, in één offerte.</h1>
           <p style={S.lead}>
             Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten. Wij maken de offerte uit je eigen
             tekening, plannen alles in de goede volgorde en zijn je enige aanspreekpunt. Het werk doen vakbedrijven
-            uit de regio.
+            bij jou in de buurt.
           </p>
           <ul style={S.vinkjes}>
             {['Eén prijs voor alles, berekend uit je tekening', 'Eén planning vanaf je opleverdatum', 'Eén aanspreekpunt, van stukadoor tot timmerman'].map(t => (
@@ -119,7 +119,7 @@ export default function NieuwbouwAfwerkenPage() {
         controleren het werk. In je offerte staat bij elk onderdeel wie het uitvoert. Ken je zelf een goed bedrijf, dan
         kan dat ook: noem het in je aanvraag.
       </p>
-      <p style={S.p}>Ben je zelf vakbedrijf in de regio? <a href="/uitvoerder-worden/" style={S.link}>Word uitvoerder bij Bylder →</a></p>
+      <p style={S.p}>Ben je zelf vakbedrijf? <a href="/uitvoerder-worden/" style={S.link}>Word uitvoerder bij Bylder →</a></p>
 
       <section id="aanvraag" aria-labelledby="aanvraag-kop" style={S.aanvraag}>
         <h2 id="aanvraag-kop" style={{ ...S.h2, margin: '0 0 8px' }}>Vraag je offerte aan</h2>

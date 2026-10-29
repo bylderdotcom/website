@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 
 // De canonieke prijspagina: hier staat het hele commerciële model bij elkaar.
-// Bewoners betalen niets (besluit 23-07-2026); zakelijke deelnemers betalen voor
+// Bewoners betalen niets voor ontwerpen, dossier, check en korting (besluit 23-07-2026); de afwerking
+// door Bylder betalen ze in één offerte (28-10-2026). Zakelijke deelnemers betalen voor
 // zichtbaarheid. Elke segmentpagina noemt zijn eigen prijs, maar dit is de enige
 // plek waar het geheel te overzien is — daarom linken de segmenten hierheen terug.
 export const metadata: Metadata = {
   title: 'Prijzen — gratis voor bewoners, betaald voor bedrijven | Bylder',
   description:
-    'Bylder is gratis voor bewoners: woningdossier, AI-begeleiding en offerte-checks. Bedrijven betalen voor zichtbaarheid — €79 per jaar lokaal, €995 landelijk.',
+    'Ontwerpen, woningdossier, offerte-check en ledenkorting zijn gratis voor bewoners. De afwerking door Bylder in één offerte. Bedrijven: €79 per jaar lokaal, €995 landelijk.',
   alternates: { canonical: 'https://www.bylder.com/prijzen/' },
 }
 
@@ -29,11 +30,11 @@ export default function PrijzenPage() {
         Gratis voor bewoners. Bedrijven betalen voor zichtbaarheid.
       </h1>
       <p style={{ fontSize: 16.5, color: 'rgba(61,46,30,0.68)', lineHeight: 1.75, marginBottom: 10 }}>
-        Woon je in de woning, dan kost Bylder je niets. Wil je als bedrijf aanbevolen worden aan onze
-        bewoners, dan betaal je daarvoor — en elk bedrijf betaalt hetzelfde, zodat de volgorde in onze
-        aanbevelingen nooit te koop is.
+        Ontwerpen, je woningdossier, de offerte-check en de ledenkorting kosten je niets. Laat je de
+        afwerking van je woning door Bylder doen, dan betaal je alleen de prijs in die offerte. Bedrijven
+        betalen voor hun plek in de gids, en elk bedrijf betaalt hetzelfde: de volgorde is nooit te koop.
       </p>
-      <p style={{ fontSize: 12.5, color: 'rgba(61,46,30,0.72)', marginBottom: 24 }}>Laatst bijgewerkt: 26 juli 2026</p>
+      <p style={{ fontSize: 12.5, color: 'rgba(61,46,30,0.72)', marginBottom: 24 }}>Laatst bijgewerkt: 28 oktober 2026</p>
 
       <h2 style={H2}>Voor bewoners</h2>
       <div style={{ ...CARD, borderColor: 'rgba(61,90,62,0.35)' }}>
@@ -41,11 +42,23 @@ export default function PrijzenPage() {
         <div style={SUB}>geen abonnement, geen creditcard</div>
         <ul style={{ margin: 0, paddingLeft: 20 }}>
           <li style={LI}>Je woningdossier: bouwtekening, planning, keuzes en documenten op één plek</li>
+          <li style={LI}>Je woning in 3D en de ontwerpers voor deuren, gietvloer en kasten</li>
           <li style={LI}>AI-begeleiding met onbeperkt vragen over jouw woning</li>
           <li style={LI}>Onbeperkt offertes en meerwerklijsten laten checken tegen marktprijzen</li>
           <li style={LI}>Tot tien 3D-sfeerimpressies per maand</li>
           <li style={LI}>Kortingsvouchers bij 56 woonmerken</li>
         </ul>
+      </div>
+
+      <h2 style={H2}>De afwerking door Bylder</h2>
+      <div style={CARD}>
+        <div style={PRIJS}>Eén offerte</div>
+        <div style={SUB}>voor alles wat je laat doen</div>
+        <p style={{ ...LI, margin: '0 0 12px' }}>
+          Wij maken de offerte uit je eigen tekening. Per onderdeel zie je wat het kost en welk vakbedrijf het
+          uitvoert. Indicaties per onderdeel staan op de pagina <a href="/nieuwbouw-afwerken/" style={{ color: '#3D5A3E', fontWeight: 600 }}>nieuwbouw laten afwerken</a>.
+        </p>
+        <a href="/nieuwbouw-afwerken/#aanvraag" data-meet="prijzen" style={{ display: 'inline-block', background: '#3D5A3E', color: '#F5F0E8', padding: '12px 22px', borderRadius: 10, fontWeight: 700, textDecoration: 'none' }}>Vraag een offerte aan →</a>
       </div>
 
       <h2 style={H2}>Voor bedrijven: aanbevolen worden</h2>
@@ -139,13 +152,14 @@ export default function PrijzenPage() {
       </p>
 
       <div style={{ background: '#3D5A3E', color: '#F5F0E8', borderRadius: 18, padding: 32, marginTop: 28 }}>
-        <h2 style={{ fontSize: '1.3rem', fontWeight: 800, margin: '0 0 8px' }}>Begin gratis</h2>
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 800, margin: '0 0 8px' }}>Van sleutel tot ingericht huis</h2>
         <p style={{ fontSize: 15, lineHeight: 1.7, opacity: 0.85, margin: '0 0 18px' }}>
-          Maak een account, upload je bouwtekening en zie wat Bylder voor jouw woning uitrekent.
+          Ontwerp je deuren, gietvloer en kasten in je eigen woning, en laat de afwerking in één offerte doen.
         </p>
-        <a href="https://app.bylder.com/registreer?utm_source=bylder-site&utm_campaign=prijzen" style={{ display: 'inline-block', background: '#F5F0E8', color: '#3D5A3E', padding: '12px 24px', borderRadius: 10, fontWeight: 700, textDecoration: 'none' }}>
-          Start gratis →
-        </a>
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          <a href="/nieuwbouw-afwerken/#aanvraag" data-meet="prijzen-slot" style={{ display: 'inline-block', background: '#F5F0E8', color: '#1A1208', padding: '12px 24px', borderRadius: 10, fontWeight: 800, textDecoration: 'none' }}>Vraag een offerte aan →</a>
+          <a href="/ontwerpen/" style={{ display: 'inline-block', color: '#F5F0E8', border: '1px solid rgba(245,240,232,.4)', padding: '12px 24px', borderRadius: 10, fontWeight: 700, textDecoration: 'none' }}>Begin met ontwerpen</a>
+        </div>
       </div>
       </div>
     </main>

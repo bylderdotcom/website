@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { REGIO } from '@/lib/afwerken'
 import { Stijl as S, Lijn } from '../nieuwbouw-afwerken/stijl'
 import Aanmelden from './Aanmelden'
 
@@ -13,8 +12,8 @@ import Aanmelden from './Aanmelden'
 const URL = 'https://www.bylder.com/uitvoerder-worden/'
 
 export const metadata: Metadata = {
-  title: 'Uitvoerder worden: werk in nieuwbouw, regio Den Bosch | Bylder',
-  description: 'Stukadoor, tegelzetter, vloerenlegger, schilder of timmerbedrijf in de regio Den Bosch? Doe werk in nieuwbouw waarvoor Bylder de opdracht aanneemt. Geen acquisitie.',
+  title: 'Uitvoerder worden: werk in nieuwbouw zonder acquisitie | Bylder',
+  description: 'Stukadoor, tegelzetter, vloerenlegger, schilder of timmerbedrijf? Doe werk in nieuwbouw waarvoor Bylder de opdracht aanneemt. Geen acquisitie.',
   alternates: { canonical: URL },
   openGraph: { title: 'Werk in nieuwbouw, zonder acquisitie', url: URL, type: 'website',
     description: 'Bylder neemt de afwerking van nieuwbouwwoningen aan. Wij zoeken vakbedrijven die het werk doen.' },
@@ -29,7 +28,6 @@ const KRIJGT = [
 const VRAGEN_WE = [
   'Ingeschreven bij de KvK, met een aansprakelijkheidsverzekering voor bedrijven',
   'Ervaring met dit werk in woningen, het liefst in nieuwbouw',
-  `Je werkt in de ${REGIO.naam}`,
   'Je komt op de afgesproken dag, en meldt het als dat niet lukt',
   'Na afloop foto’s van het werk, voor de oplevering aan de koper',
 ]
@@ -43,7 +41,7 @@ const VRAGEN = [
   { v: 'Wat is het verschil met een profiel in de gids?', a: 'In de gids sta je als bedrijf, en kopers vragen jou rechtstreeks een offerte. Als uitvoerder doe je werk waarvoor Bylder de opdracht heeft aangenomen: wij maken de offerte en plannen, jij voert uit. Het kan allebei.' },
   { v: 'Hoe word ik betaald?', a: 'Je factureert aan Bylder. Tarief en betaaltermijn leggen we vooraf vast in de overeenkomst, per vak.' },
   { v: 'Moet ik exclusief voor Bylder werken?', a: 'Nee. Je plant zelf hoeveel ruimte je voor ons vrijhoudt.' },
-  { v: 'Werken jullie ook buiten de regio Den Bosch?', a: 'Nog niet. Meld je toch aan als je elders werkt: zodra we uitbreiden, bellen we eerst de bedrijven die er al staan.' },
+  { v: 'In welke regio werken jullie?', a: 'In heel Nederland. Geef bij je aanmelding op waar je werkt; we plannen je in voor woningen in jouw werkgebied.' },
 ]
 
 export default function UitvoerderWordenPage() {
@@ -57,11 +55,11 @@ export default function UitvoerderWordenPage() {
     <main style={S.main}>
       {ld.map((b, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(b) }} />)}
       <nav aria-label="Kruimelpad" style={S.kruimel}><a href="/" style={S.kruimelLink}>Home</a> › Uitvoerder worden</nav>
-      <p style={S.oog}>Voor vakbedrijven · {REGIO.naam}</p>
+      <p style={S.oog}>Voor vakbedrijven</p>
       <h1 style={S.h1}>Werk in nieuwbouw, zonder acquisitie.</h1>
       <p style={S.lead}>
         Bylder neemt de afwerking van nieuwbouwwoningen aan: stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk
-        en kasten. Wij hebben geen eigen ploegen. Het werk doen vakbedrijven uit de regio. Ben jij er een van?
+        en kasten. Wij hebben geen eigen ploegen. Het werk doen vakbedrijven bij de koper in de buurt. Ben jij er een van?
       </p>
       <a href="#aanmelden" style={S.knop}>Meld je aan als uitvoerder</a>
 

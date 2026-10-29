@@ -126,6 +126,20 @@ export const HELD_STIJL = `
 .ht-stap b{display:block;font-size:12px;font-weight:700;letter-spacing:-.01em}
 
 /* ── 2. de keten ── */
+.hh-pijlers{background:#F5F0E8;padding:0 0 64px}
+.hh-pijlers ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hh-pijlers li{background:#fff;border:1px solid rgba(61,46,30,.1);border-radius:18px;padding:24px 22px;display:flex;flex-direction:column;gap:10px}
+.hh-pijlers li:nth-child(2){background:#3D5A3E;border-color:#3D5A3E;color:#F5F0E8}
+.hh-pijler-nr{width:30px;height:30px;border-radius:9px;background:#EBF0E8;color:#3D5A3E;font-weight:800;font-family:'Space Mono',monospace;display:inline-flex;align-items:center;justify-content:center}
+.hh-pijlers li:nth-child(2) .hh-pijler-nr{background:rgba(245,240,232,.16);color:#F5F0E8}
+.hh-pijlers h2{font-size:1.25rem;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:4px 0 0}
+.hh-pijlers p{font-size:15px;line-height:1.6;color:rgba(61,46,30,.75);margin:0;flex:1}
+.hh-pijlers li:nth-child(2) p{color:rgba(245,240,232,.85)}
+.hh-pijlers a{font-weight:800;font-size:15px;color:#3D5A3E;text-decoration:none}
+.hh-pijlers li:nth-child(2) a{display:inline-block;align-self:flex-start;background:#F5F0E8;color:#1A1208;padding:11px 18px;border-radius:10px}
+.hh-pijler-voet{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(61,46,30,.55)}
+.hh-pijlers li:nth-child(2) .hh-pijler-voet{color:#E8D9B8}
+@media(max-width:900px){.hh-pijlers ol{grid-template-columns:1fr}}
 .hh-keten{background:#fff;padding:80px 0}
 .hh-stappen{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;
   position:relative}

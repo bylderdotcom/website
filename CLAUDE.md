@@ -43,8 +43,12 @@ tekening van de koper), één contract, één planning, één aanspreekpunt. **G
 werk doen vakbedrijven uit het netwerk als onderaannemer; bij elk onderdeel in de offerte staat wie
 uitvoert. Tegelwerk en sanitair kunnen vanaf dag één. **Noem nergens (site, mail, teksten) welke
 relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-2026).**
-- **Regio: Den Bosch** ('s-Hertogenbosch, Rosmalen, Vught, Sint-Michielsgestel, Heusden, Oss,
-  Maasdriel). Andere regio's pas als er uitvoerders zijn; regiopagina's daar op noindex tot dan.
+- **Landelijk actief; marketing zet in op de regio Den Bosch** ('s-Hertogenbosch, Rosmalen, Vught,
+  Sint-Michielsgestel, Heusden, Oss, Maasdriel). **Noem "regio Den Bosch" nergens op de site** (besluit
+  Daniel, 29-10-2026). Pagina's over een plaats in die regio krijgen wel het grote blok met de plaatsnaam.
+- **Niet uitleggen waar Bylder aan verdient** (besluit Daniel, 29-10-2026): kopers interesseert het niet.
+  Wel: wat gratis is, en dat je bij de afwerking alleen de prijs in de offerte betaalt.
+- **CTA: "Vraag een offerte aan"**, niet "Start gratis" (29-10-2026).
 - **Elk bezoek moet het weten.** Pagina's: `/nieuwbouw-afwerken/` + 7 onderdeelpagina's (inhoud:
   `web/lib/afwerken.ts`, bedragen uit de prijsbenchmark). `AfwerkpakketCTA` staat onder elke
   `CommercieleStap`, op de homepage, als eerste kaart in de AanbodStrook, in het menu (Diensten) en als
