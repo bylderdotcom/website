@@ -2,7 +2,7 @@
  * Bylder als hoofdaannemer voor de afwerking van een nieuwbouwwoning (besluit Daniel, 28-10-2026).
  *
  * Eén offerte, één contract, één planning en één aanspreekpunt. Het werk doen vakbedrijven uit
- * het netwerk als onderaannemer; Bylder heeft geen eigen ploegen. Eerst in de regio Den Bosch.
+ * het netwerk als onderaannemer; Bylder heeft geen eigen ploegen. Landelijk; de marketing zet in op de regio Den Bosch (niet op de site noemen, besluit Daniel 29-10-2026).
  *
  * Deze file is de bron voor /nieuwbouw-afwerken/ en /nieuwbouw-afwerken/<onderdeel>/. De
  * bedragen komen uit de Bylder-prijsbenchmark (app: src/lib/priceBenchmarks.ts, p25–p75,
@@ -68,7 +68,7 @@ export const ONDERDELEN: Onderdeel[] = [
   {
     slug: 'stucwerk', naam: 'Stucwerk',
     h1: 'Stucwerk in je nieuwbouwwoning',
-    title: 'Stucwerk nieuwbouwwoning laten doen, regio Den Bosch | Bylder',
+    title: 'Stucwerk nieuwbouwwoning laten doen | Bylder',
     description: 'Wanden en plafonds gestuct, in één offerte voor je hele afwerking. Glad sausklaar €18 tot €38 per m², spuitwerk vanaf €8, berekend uit je tekening.',
     kort: 'Wanden en plafonds glad of in structuur, de basis voor al het andere.',
     wat: ['Wanden glad stucen of sausklaar maken', 'Plafonds stucen in plaats van spuitwerk', 'Hoekprofielen en stucstoppers', 'Afkitten bij kozijnen en plafonds'],
@@ -85,7 +85,7 @@ export const ONDERDELEN: Onderdeel[] = [
   {
     slug: 'tegelwerk', naam: 'Tegelwerk',
     h1: 'Tegelwerk in je nieuwbouwwoning',
-    title: 'Tegelwerk nieuwbouw laten doen, regio Den Bosch | Bylder',
+    title: 'Tegelwerk nieuwbouw laten doen | Bylder',
     description: 'Badkamer, toilet en vloeren betegeld, als onderdeel van één offerte voor je hele afwerking. Indicatie €60 tot €130 per m² inclusief leggen.',
     kort: 'Badkamer, toilet, keukenwand en tegelvloeren, gelegd door een tegelzetter uit de regio.',
     wat: ['Wand- en vloertegels in badkamer en toilet', 'Tegelvloeren in woonkamer, hal en keuken', 'Keukenwand of spatwand', 'Kitwerk en afwerkprofielen'],
@@ -101,7 +101,7 @@ export const ONDERDELEN: Onderdeel[] = [
   {
     slug: 'sanitair', naam: 'Sanitair en badkamer',
     h1: 'Badkamer en sanitair in je nieuwbouwwoning',
-    title: 'Badkamer nieuwbouw laten plaatsen, regio Den Bosch | Bylder',
+    title: 'Badkamer nieuwbouw laten plaatsen | Bylder',
     description: 'Een complete badkamer en toilet, van tegels tot kraan, in één offerte voor je hele afwerking. Indicatie €7.000 tot €20.000 voor een complete badkamer.',
     kort: 'Douche, bad, wastafelmeubel, toilet en kranen, geplaatst en aangesloten.',
     wat: ['Douche of inloopdouche met douchegoot', 'Bad, wastafelmeubel en spiegel', 'Hangend toilet en fonteintje', 'Kranen, thermostaat en radiator'],
@@ -117,7 +117,7 @@ export const ONDERDELEN: Onderdeel[] = [
   {
     slug: 'vloeren', naam: 'Vloeren',
     h1: 'De vloer in je nieuwbouwwoning',
-    title: 'Vloer nieuwbouw laten leggen, regio Den Bosch | Bylder',
+    title: 'Vloer nieuwbouw laten leggen | Bylder',
     description: 'Gietvloer, pvc of laminaat in je hele woning, als onderdeel van één offerte voor je afwerking. Indicatie €35 tot €130 per m², berekend uit je tekening.',
     kort: 'Gietvloer, pvc of laminaat, per ruimte gekozen en in één keer gelegd.',
     wat: ['Gietvloer van Dr. Schutz', 'Pvc of laminaat, ook in visgraat', 'Egaliseren van de dekvloer', 'Plinten of onzichtbare plinten'],
@@ -134,7 +134,7 @@ export const ONDERDELEN: Onderdeel[] = [
   {
     slug: 'binnendeuren', naam: 'Binnendeuren',
     h1: 'Binnendeuren in je nieuwbouwwoning',
-    title: 'Binnendeuren nieuwbouw laten plaatsen, regio Den Bosch | Bylder',
+    title: 'Binnendeuren nieuwbouw laten plaatsen | Bylder',
     description: 'Kozijnloze of gewone binnendeuren, afgehangen en afgesteld, als onderdeel van één offerte voor je hele afwerking. Stel je deuren eerst samen in 3D.',
     kort: 'Kozijnloze deuren van Classic Next of gewone binnendeuren, afgehangen met beslag.',
     wat: ['Kozijnloze, plafondhoge deuren', 'Gewone binnendeuren in bestaande kozijnen', 'Beslag, sloten en deurstoppers', 'Schuifdeuren en taatsdeuren'],
@@ -150,7 +150,7 @@ export const ONDERDELEN: Onderdeel[] = [
   {
     slug: 'schilderwerk', naam: 'Schilderwerk',
     h1: 'Schilderwerk in je nieuwbouwwoning',
-    title: 'Schilderwerk nieuwbouw binnen, regio Den Bosch | Bylder',
+    title: 'Schilderwerk nieuwbouw binnen | Bylder',
     description: 'Wanden, plafonds en kozijnen binnen geschilderd, als onderdeel van één offerte voor je hele afwerking. Indicatie €12 tot €28 per m².',
     kort: 'Wanden, plafonds, kozijnen en trap binnen, in de kleuren die je kiest.',
     wat: ['Wanden en plafonds latexen', 'Binnenkozijnen en deuren lakken', 'Trap en traphek', 'Voorbehandelen van nieuw stucwerk'],
@@ -165,7 +165,7 @@ export const ONDERDELEN: Onderdeel[] = [
   {
     slug: 'kasten', naam: 'Kasten op maat',
     h1: 'Kasten op maat in je nieuwbouwwoning',
-    title: 'Kasten op maat nieuwbouw, regio Den Bosch | Bylder',
+    title: 'Kasten op maat nieuwbouw | Bylder',
     description: 'Inbouwkasten, tv-wand en garderobe op maat, als onderdeel van één offerte voor je hele afwerking. Ontwerp je kast eerst in 3D.',
     kort: 'Inbouwkasten, garderobe, tv-wand en trapkast, gemaakt door een timmerbedrijf.',
     wat: ['Inbouwkast in een nis', 'Garderobe en kledingkast', 'Tv-wand en boekenkast', 'Kast onder de trap'],
@@ -219,7 +219,7 @@ export function afwerkBlokProject(project: string, plaats: string, oplevering: s
   return `<!--bylder:afwerk-project--><aside aria-label="Je hele afwerking door Bylder" style="margin:28px 0;background:#3D5A3E;color:#F5F0E8;border-radius:18px;padding:24px 26px">`
     + `<p style="font-family:'Space Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;color:#E8D9B8;margin:0 0 8px">Bylder als aannemer · ${esc(plaats)}</p>`
     + `<p style="font-size:1.45rem;font-weight:800;line-height:1.2;margin:0 0 10px;color:#F5F0E8">Laat je woning in ${esc(project)} in één keer afwerken.</p>`
-    + `<p style="font-size:15.5px;line-height:1.65;margin:0 0 16px;color:rgba(245,240,232,0.85);max-width:64ch">Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten: één offerte uit je tekening, en één planning${wanneer}. Het werk doen vakbedrijven uit de regio; jij hebt één aanspreekpunt.</p>`
+    + `<p style="font-size:15.5px;line-height:1.65;margin:0 0 16px;color:rgba(245,240,232,0.85);max-width:64ch">Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten: één offerte uit je tekening, en één planning${wanneer}. Het werk doen vakbedrijven bij jou in de buurt; jij hebt één aanspreekpunt.</p>`
     + `<a href="${esc(href)}" onclick="window.gtag&&gtag('event','afwerk_klik',{plek:'project',pagina:location.pathname})" style="display:inline-block;background:#F5F0E8;color:#1A1208;border-radius:11px;padding:13px 22px;font-weight:800;font-size:15px;text-decoration:none">Vraag een offerte aan voor ${esc(project)} &rarr;</a>`
     + `</aside>`
 }

@@ -6,9 +6,9 @@ import type { Metadata } from 'next'
 // zichtbaarheid. Elke segmentpagina noemt zijn eigen prijs, maar dit is de enige
 // plek waar het geheel te overzien is — daarom linken de segmenten hierheen terug.
 export const metadata: Metadata = {
-  title: 'Prijzen en waar Bylder aan verdient | Bylder',
+  title: 'Prijzen — gratis voor bewoners, betaald voor bedrijven | Bylder',
   description:
-    'Ontwerpen, woningdossier, offerte-check en ledenkorting zijn gratis voor bewoners. Laat je de afwerking door Bylder doen, dan betaal je één offerte. Zo verdienen we, en dit blijft onafhankelijk.',
+    'Ontwerpen, woningdossier, offerte-check en ledenkorting zijn gratis voor bewoners. De afwerking door Bylder in één offerte. Bedrijven: €79 per jaar lokaal, €995 landelijk.',
   alternates: { canonical: 'https://www.bylder.com/prijzen/' },
 }
 
@@ -27,33 +27,14 @@ export default function PrijzenPage() {
     <main style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 24px', color: '#1A1208' }}>
       <div style={{ maxWidth: 772 }}>
       <h1 style={{ fontSize: '2.1rem', fontWeight: 800, letterSpacing: '-0.025em', marginBottom: 12 }}>
-        Waar Bylder aan verdient, en wat gratis blijft
+        Gratis voor bewoners. Bedrijven betalen voor zichtbaarheid.
       </h1>
       <p style={{ fontSize: 16.5, color: 'rgba(61,46,30,0.68)', lineHeight: 1.75, marginBottom: 10 }}>
         Ontwerpen, je woningdossier, de offerte-check en de ledenkorting kosten je niets. Laat je de
-        afwerking van je woning door Bylder doen, dan betaal je de prijs in die offerte. Hieronder staat
-        precies waar we aan verdienen, en wat daar los van blijft.
+        afwerking van je woning door Bylder doen, dan betaal je alleen de prijs in die offerte. Bedrijven
+        betalen voor hun plek in de gids, en elk bedrijf betaalt hetzelfde: de volgorde is nooit te koop.
       </p>
       <p style={{ fontSize: 12.5, color: 'rgba(61,46,30,0.72)', marginBottom: 24 }}>Laatst bijgewerkt: 28 oktober 2026</p>
-
-      <h2 style={H2}>Waar Bylder aan verdient</h2>
-      <div style={CARD}>
-        <ul style={{ margin: 0, paddingLeft: 20 }}>
-          <li style={LI}><strong>Als aannemer van je afwerking.</strong> Laat je stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk of kasten door ons doen, dan zit onze marge in de prijs van de offerte. Die prijs is alles-in: het werk, de planning en onze controle. Je betaalt geen bemiddelingskosten bovenop.</li>
-          <li style={LI}><strong>Van bedrijven die bij ons staan.</strong> Winkels en vakbedrijven betalen voor hun plek in de gids, en een vergoeding als er via Bylder een opdracht uit komt (zie hieronder).</li>
-          <li style={LI}><strong>Van merken.</strong> Op ons eigen assortiment zit marge, en bij merken in het inkoopprogramma krijgen we een volumebonus.</li>
-        </ul>
-      </div>
-
-      <h2 style={H2}>Wat daar los van blijft</h2>
-      <div style={{ ...CARD, borderColor: 'rgba(61,90,62,0.35)' }}>
-        <ul style={{ margin: 0, paddingLeft: 20 }}>
-          <li style={LI}><strong>De offerte-check toetst ook onze eigen offertes</strong> aan dezelfde marktprijzen als die van ieder ander bedrijf.</li>
-          <li style={LI}><strong>De volgorde in de gids is niet te koop.</strong> Elk bedrijf betaalt hetzelfde; we rangschikken op geschiktheid.</li>
-          <li style={LI}><strong>Bij elk aanbod staat wie het levert</strong>, en of het ons eigen aanbod is.</li>
-          <li style={LI}><strong>Je kiest zelf.</strong> Je kunt ook je eigen vakman uitnodigen om mee te kijken en een offerte te maken.</li>
-        </ul>
-      </div>
 
       <h2 style={H2}>Voor bewoners</h2>
       <div style={{ ...CARD, borderColor: 'rgba(61,90,62,0.35)' }}>
@@ -72,7 +53,7 @@ export default function PrijzenPage() {
       <h2 style={H2}>De afwerking door Bylder</h2>
       <div style={CARD}>
         <div style={PRIJS}>Eén offerte</div>
-        <div style={SUB}>voor alles wat je laat doen · nu in de regio Den Bosch</div>
+        <div style={SUB}>voor alles wat je laat doen</div>
         <p style={{ ...LI, margin: '0 0 12px' }}>
           Wij maken de offerte uit je eigen tekening. Per onderdeel zie je wat het kost en welk vakbedrijf het
           uitvoert. Indicaties per onderdeel staan op de pagina <a href="/nieuwbouw-afwerken/" style={{ color: '#3D5A3E', fontWeight: 600 }}>nieuwbouw laten afwerken</a>.

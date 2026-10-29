@@ -5,7 +5,7 @@ import { onderdeelVoorPad, plaatsInRegio } from '@/lib/afwerken'
 // Staat onder de commerciële stap van elke pagina (CommercieleStap), op de homepage en in het menu.
 //
 // Met een pad: gaat de pagina over een onderdeel (stucwerk, tegels, vloer...), dan linkt hij naar
-// dat onderdeel; ligt de plaats in de regio Den Bosch, dan wordt hij groter en noemt hij de plaats.
+// dat onderdeel; ligt de plaats in onze marketingregio (Den Bosch), dan wordt hij groter en noemt hij de plaats.
 
 const GROEN = '#3D5A3E'
 
@@ -23,7 +23,7 @@ export default function AfwerkpakketCTA({ marge = '14px 0 0', pad = '', plek = '
           In {plaats} regelen wij {wat}, in één offerte.
         </h2>
         <p style={{ fontSize: 15.5, lineHeight: 1.65, color: 'rgba(245,240,232,0.85)', margin: '0 0 16px', maxWidth: '64ch' }}>
-          Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten. Wij maken de offerte uit je tekening, plannen alles en zijn je enige aanspreekpunt. Het werk doen vakbedrijven uit de regio.
+          Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten. Wij maken de offerte uit je tekening, plannen alles en zijn je enige aanspreekpunt. Het werk doen vakbedrijven bij jou in de buurt.
         </p>
         <a href={href} data-meet={`regio:${plaats}`} style={{ display: 'inline-block', background: '#F5F0E8', color: '#1A1208', fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11, textDecoration: 'none' }}>Vraag je offerte aan →</a>
       </aside>
@@ -37,7 +37,7 @@ export default function AfwerkpakketCTA({ marge = '14px 0 0', pad = '', plek = '
           <path d="M3 21V9l9-6 9 6v12M3 21h18M9 21v-6h6v6" />
         </svg>
         <p style={{ margin: 0, fontSize: 15, lineHeight: 1.55, color: '#1A1208' }}>
-          <strong>Of laat Bylder {wat} regelen.</strong> Van stucwerk tot tegels, badkamer, vloeren, deuren en kasten: één offerte uit je tekening, één planning, één aanspreekpunt. <span style={{ color: 'rgba(61,46,30,0.65)' }}>Nu in de regio Den Bosch.</span>
+          <strong>Of laat Bylder {wat} regelen.</strong> Van stucwerk tot tegels, badkamer, vloeren, deuren en kasten: één offerte uit je tekening, één planning, één aanspreekpunt.
         </p>
       </div>
       <a href={href} data-meet={plek} style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px', borderRadius: 10, textDecoration: 'none' }}>Vraag een offerte aan →</a>

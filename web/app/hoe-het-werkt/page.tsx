@@ -102,15 +102,8 @@ const VRAGEN = [
     v: 'Wat kost kopersbegeleiding in Nederland?',
     a: 'Kopersbegeleiding via een aankoopmakelaar of bouwkundig adviseur kost €1.500 tot €5.000 per '
       + 'traject. Bylder is gratis voor bewoners — inclusief meerwerkanalyse, offerte-check, '
-      + 'projectplanning en kortingsvouchers. Bylder verdient aan deelnemers, aan het eigen assortiment '
-      + 'en, als je de afwerking door ons laat doen, aan die opdracht.',
-  },
-  {
-    v: 'Waar verdient Bylder aan?',
-    a: 'Laat je de afwerking door Bylder doen, dan zit onze marge in de prijs van die offerte. '
-      + 'Daarnaast betalen bedrijven voor hun plek in de gids en zit er marge op ons eigen assortiment. '
-      + 'Ontwerpen, je woningdossier, de offerte-check en de ledenkorting zijn gratis. De offerte-check '
-      + 'vergelijkt op marktprijs, ook onze eigen offertes, en bij elk aanbod staat wie het levert.',
+      + 'projectplanning en kortingsvouchers. Laat je de afwerking door Bylder doen, dan betaal je '
+      + 'alleen de prijs in die offerte.',
   },
   {
     v: 'Wat kost Bylder?',
@@ -229,14 +222,12 @@ export default function HoeHetWerktPage() {
           </div>
         ))}
       </div>
-      <h2 style={H2}>Waar Bylder aan verdient</h2>
+      <h2 style={H2}>Wat je betaalt</h2>
       <div style={{ ...KAART, borderColor: 'rgba(61,90,62,0.35)' }}>
         <p style={{ ...P, margin: 0 }}>
           Ontwerpen, je woningdossier, de offerte-check en de ledenkorting zijn gratis voor bewoners. Laat je de
-          afwerking door Bylder doen, dan zit onze marge in de prijs van die offerte. Daarnaast betalen bedrijven
-          voor hun plek in de gids, zit er marge op ons eigen assortiment en krijgen we een volumebonus bij merken
-          in het inkoopprogramma. Daarom houden we twee dingen los: de offerte-check toetst ook onze eigen
-          offertes aan marktprijzen, en bij elk aanbod staat wie het levert.
+          afwerking door Bylder doen, dan betaal je alleen de prijs in die offerte. De offerte-check toetst ook
+          onze eigen offertes aan marktprijzen, en bij elk aanbod staat wie het levert.
         </p>
         <p style={{ marginTop: 14, marginBottom: 0 }}>
           <a href="/prijzen/" style={{ fontWeight: 700, color: GROEN, fontSize: 14.5 }}>

@@ -101,7 +101,7 @@ const PIJLERS = [
   { titel: 'Ontwerp in je eigen woning', tekst: 'Je woning in 3D uit je eigen tekening. Stel je deuren, gietvloer en kasten samen met de maten die echt kloppen.',
     href: '/ontwerpen/', knop: 'Begin met ontwerpen', voet: 'Gratis' },
   { titel: 'Laat het afwerken door Bylder', tekst: 'Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten in één offerte, één planning en met één aanspreekpunt.',
-    href: '/nieuwbouw-afwerken/', knop: 'Vraag een offerte aan', voet: 'Eén offerte · regio Den Bosch' },
+    href: '/nieuwbouw-afwerken/', knop: 'Vraag een offerte aan', voet: 'Eén offerte, één planning' },
   { titel: 'Richt in met korting', tekst: 'De rest koop je zelf, bij de winkels die jij kiest, met ledenkorting bij {merken} merken. Een adviseur helpt tussen de winkels.',
     href: '/vouchers/', knop: 'Bekijk de kortingen', voet: 'Gratis account' },
 ]
@@ -110,7 +110,7 @@ const VRAGEN: Array<[string, string]> = [
   ['Wat doet Bylder precies?',
    'Bylder leest de plattegrond en de bouwplanning van je nieuwbouwwoning uit. Daaruit volgt wat je moet kiezen (deuren, vloer, verlichting, raamdecoratie), wanneer de bouwer die keuze sluit, en bij welke aangesloten merken je het met korting koopt. Je deuren stel je alvast in 3D samen, met het aantal uit je eigen tekening.'],
   ['Is Bylder gratis?',
-   'Ontwerpen, je woningdossier, de offerte-check en de ledenkorting zijn gratis voor bewoners. Laat je de afwerking door Bylder doen, dan betaal je de prijs in die offerte; daar verdienen wij aan. Bij elk aanbod staat wie het levert, en de offerte-check toetst ook onze eigen offertes aan marktprijzen.'],
+   'Ontwerpen, je woningdossier, de offerte-check en de ledenkorting zijn gratis voor bewoners. Laat je de afwerking door Bylder doen, dan betaal je alleen de prijs in die offerte. Bij elk aanbod staat wie het levert, en de offerte-check toetst ook onze eigen offertes aan marktprijzen.'],
   ['Werkt het ook als mijn project nog niet op Bylder staat?',
    'Ja. Vul je adres in: de woningscan leest het Kadaster en werkt op elk adres in Nederland. Een projectpagina is handig, maar niet nodig om je plattegrond te laten uitlezen.'],
   [EIGEN_VAKMAN_VRAAG.v, EIGEN_VAKMAN_VRAAG.a],
