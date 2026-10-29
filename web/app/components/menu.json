@@ -5,7 +5,8 @@
     "dat bij elke Vercel-build (web/build.sh, stap 4) het menu op alle statische pagina's zet.",
     "Wijzig je hier iets, dan staat het na de volgende build op elke pagina. Geen veegronde nodig.",
     "Platte tekst (& gewoon als &). {merken} wordt het aantal merken uit data/deelnemers.json.",
-    "primair: true = kaartje bovenaan het uitklapmenu, met sub als toelichting."
+    "primair: true = kaartje bovenaan het uitklapmenu, met sub als toelichting.",
+    "knoppen: de twee knoppen rechts in de balk (besluit Daniel, 29-10-2026). primair = gevulde knop, ook op mobiel in de balk; de andere is een omlijnde knop op desktop. In het mobiele menu staan ze allebei bovenaan als kaart, met sub als uitleg. meet = waarde van 'knop' in GA4-event menu_klik."
   ],
   "bovenbalk": [
     {
@@ -23,6 +24,21 @@
     {
       "href": "/kennisbank/",
       "label": "Kennisbank"
+    }
+  ],
+  "knoppen": [
+    {
+      "href": "https://app.bylder.com/woningscan",
+      "label": "Maak je stappenplan",
+      "sub": "Gratis: wat je wanneer moet regelen",
+      "meet": "stappenplan"
+    },
+    {
+      "href": "/nieuwbouw-afwerken/#aanvraag",
+      "label": "Vraag een offerte aan",
+      "sub": "Je hele afwerking in één offerte",
+      "meet": "offerte",
+      "primair": true
     }
   ],
   "menus": [

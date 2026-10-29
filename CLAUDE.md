@@ -109,6 +109,9 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
 - **Het hoofdmenu staat op één plek: `web/app/components/menu.json`.** Nav.tsx leest het, en
   `web/build.sh` (stap 4) zet het bij elke build op alle statische pagina's. Menu wijzigen =
   alleen dat bestand. Geen veegrondes over de HTML meer.
+  Rechts in de balk twee knoppen uit `knoppen` in menu.json (besluit Daniel, 29-10-2026): "Vraag een
+  offerte aan" (gevuld, ook op mobiel) en "Maak je stappenplan" (omlijnd, desktop); in het mobiele menu
+  allebei bovenaan als kaart met uitleg. Klikken = GA4 `menu_klik` met `knop` en `plek` (balk/menu-mobiel).
 - **De footer staat ook op één plek: `web/app/components/Footer.tsx` (28-10-2026).** `web/build.sh`
   knipt de footer uit een Next-pagina en zet hem op elke statische pagina (`_scripts/footer_pass.py`),
   inclusief de balk "Bylder als aannemer" (`afwerkbalk.html`). Footer wijzigen = alleen Footer.tsx.

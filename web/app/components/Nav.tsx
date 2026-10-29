@@ -22,6 +22,7 @@ import { useState, useEffect, useRef } from 'react'
  */
 
 import MENU from './menu.json'
+import { meet } from './meet'
 
 type Item = { href: string; title: string; sub?: string; primair?: boolean }
 type Menu = { label: string; items: Item[]; breed?: boolean }
@@ -30,6 +31,11 @@ type Menu = { label: string; items: Item[]; breed?: boolean }
 // elke build het menu op alle statische pagina's (_scripts/nav_pijlers_pass.py
 // --stempel, vanuit web/build.sh). Eén wijziging daar = elke pagina.
 const BOVENBALK: { href: string; label: string }[] = MENU.bovenbalk
+// De twee knoppen rechts (besluit Daniel, 29-10-2026): de primaire gevuld en ook op mobiel in de
+// balk, de andere omlijnd op desktop. In het mobiele menu staan ze allebei bovenaan als kaart.
+type Knop = { href: string; label: string; sub: string; meet: string; primair?: boolean }
+const KNOPPEN: Knop[] = MENU.knoppen
+const KNOPPEN_EERST_PRIMAIR = [...KNOPPEN].sort((a, b) => Number(!!b.primair) - Number(!!a.primair))
 
 const menus = (MERKEN: number): Menu[] => (MENU.menus as Menu[]).map((m) => ({
   ...m,
@@ -115,14 +121,16 @@ export default function Nav({ merken }: { merken: number }) {
         '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:22px}'
         + '.bv-deskl{display:inline}.bv-burger{display:none}'
         + '@media(max-width:1180px){.bv-top{display:none}.bv-desk{display:none}'
-        + '.bv-deskl{display:none}.bv-burger{display:flex}}'
+        + '.bv-deskl{display:none}.bv-burger{display:flex}.bv-cta2{display:none!important}}'
         + '@media(min-width:1181px){.bv-sheet{display:none}}'
         // Zes menu's (sinds Ontwerpen erbij kwam, 10-10-2026) passen pas vanaf 1181px.
         // Daaronder, ook op een iPad liggend, het mobiele menu. Tot 1400px blijft
         // Functies weg uit de balk (staat in het mobiele menu en in de footer) en
         // zit er minder ruimte tussen de items.
-        + '@media(max-width:1399px){.bv-fn{display:none!important}}'
-        + '@media(min-width:1181px) and (max-width:1300px){.bv-desk{gap:15px}.bv-r{gap:10px!important}}'
+        // Sinds de tweede knop (29-10-2026) tot 1500px, en tot 1300px compactere knoppen.
+        + '@media(max-width:1499px){.bv-fn{display:none!important}}'
+        + '@media(min-width:1181px) and (max-width:1300px){.bv-desk{gap:11px}.bv-r{gap:10px!important}'
+        + '.bv-cta{font-size:0.8125rem!important;padding:9px 12px!important}}'
         // De mobiele balk paste niet binnen 375px: logo + CTA + hamburger waren
         // samen breder dan het scherm, waardoor de hamburger buiten beeld viel
         // en de hele pagina horizontaal kon scrollen. !important omdat de maten
@@ -186,9 +194,13 @@ export default function Nav({ merken }: { merken: number }) {
         <div className="bv-r" style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
           <a href="/functies/" className="bv-deskl bv-fn" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
           <a href="https://app.bylder.com" className="bv-deskl" style={LINK}>Inloggen</a>
-          <a href="https://app.bylder.com/woningscan" className="bv-cta" style={{ background: '#3D5A3E', color: '#F5F0E8', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-            Maak je stappenplan
-          </a>
+          {KNOPPEN.map((k) => (
+            <a key={k.href} href={k.href} onClick={() => meet('menu_klik', { knop: k.meet, plek: 'balk' })}
+               className={k.primair ? 'bv-cta' : 'bv-cta bv-cta2'}
+               style={{ background: k.primair ? '#3D5A3E' : 'transparent', color: k.primair ? '#F5F0E8' : '#3D5A3E', border: '1.5px solid #3D5A3E', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+              {k.label}
+            </a>
+          ))}
           <button className="bv-burger" onClick={() => setMobielOpen((o) => !o)} aria-label="Menu" aria-expanded={mobielOpen} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, flexDirection: 'column', gap: 4 }}>
             {[0, 1, 2].map((i) => <span key={i} style={{ width: 20, height: 2, background: '#1A1208', borderRadius: 2, display: 'block' }} />)}
           </button>
@@ -197,6 +209,15 @@ export default function Nav({ merken }: { merken: number }) {
 
       {mobielOpen && (
         <div className="bv-sheet" style={{ borderTop: `1px solid ${INKT}0.07)`, background: '#F5F0E8', padding: '4px 24px 20px', flexDirection: 'column', maxHeight: '78vh', overflowY: 'auto', display: 'flex' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 8, padding: '14px 0 10px' }}>
+            {KNOPPEN_EERST_PRIMAIR.map((k) => (
+              <a key={k.href} href={k.href} onClick={() => meet('menu_klik', { knop: k.meet, plek: 'menu-mobiel' })}
+                 style={{ display: 'block', padding: 12, borderRadius: 12, textDecoration: 'none', lineHeight: 1.35, border: '1.5px solid #3D5A3E', background: k.primair ? '#3D5A3E' : '#fff', color: k.primair ? '#F5F0E8' : '#1A1208' }}>
+                <strong style={{ display: 'block', fontSize: 14, fontWeight: 800, marginBottom: 3 }}>{k.label}</strong>
+                <span style={{ display: 'block', fontSize: 12, opacity: 0.85 }}>{k.sub}</span>
+              </a>
+            ))}
+          </div>
           {/* Accordeon: alles dicht tot je een sectie aanraakt — verzoek Daniel,
               de platte lijst met 30+ regels was onbruikbaar. */}
           {MENUS.map((m) => (
