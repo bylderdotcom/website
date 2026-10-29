@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { leesPdf, type Verdieping } from '@/lib/tekening/lees'
 import { ONTWERPEN, KLEUREN, FINEREN } from '../kozijnloze-deuren/configurator/ontwerpen'
 import { GIET_PRIJS_M2 } from '../components/gietvloer/gegevens'
+import { VOORBEELD_LAGEN, VOORBEELD_DEUREN } from './voorbeeld'
 
 /* ------------------------------------------------------------------ vaste gegevens */
 
@@ -38,6 +39,8 @@ type Opslag = {
   deuren: Record<string, string[]>
   /** het nieuwbouwproject waar de bezoeker vandaan kwam (?project=&naam= op de projectpagina) */
   project?: Project
+  /** de voorbeeldwoning (?voorbeeld): wordt niet bewaard */
+  voorbeeld?: boolean
 }
 
 type Project = { slug: string; naam: string }
@@ -249,7 +252,7 @@ export default function MijnWoning() {
   const uitkomst = useRef<HTMLElement>(null)
   const deurBlok = useRef<HTMLElement>(null)
 
-  const bewaar = useCallback((n: Opslag | null) => { setO(n); schrijfOpslag(n) }, [])
+  const bewaar = useCallback((n: Opslag | null) => { setO(n); if (!n?.voorbeeld) schrijfOpslag(n) }, [])
 
   // Bij binnenkomst: bewaarde woning ophalen, en wat de configurator eventueel terugstuurt.
   useEffect(() => {
@@ -258,6 +261,12 @@ export default function MijnWoning() {
     const vanProject = leesProject(u)
     if (vanProject) setProject(vanProject)
     else if (opgeslagen?.project) setProject(opgeslagen.project)
+    // ?voorbeeld: de fictieve tussenwoning, zonder de eigen bewaarde woning te overschrijven.
+    if (u.searchParams.has('voorbeeld') && !q) {
+      const giet: Record<string, boolean> = { '0:1': true, '0:2': true }
+      setO({ lagen: VOORBEELD_LAGEN, bron: 'een voorbeeldtekening', kleur: 'zand', giet, deuren: VOORBEELD_DEUREN, project: vanProject, voorbeeld: true })
+      return
+    }
     if (opgeslagen && q) {
       const { opslag, aantal } = koppelTerug(opgeslagen, q)
       bewaar(opslag)
@@ -351,6 +360,7 @@ export default function MijnWoning() {
           </form>
           <p className="mw-zonder-of">Of begin meteen met een onderdeel:</p>
           <ul className="mw-zonder-lijst">
+            <li><a href="/mijn-woning/?voorbeeld">Bekijk eerst een voorbeeldwoning in 3D</a></li>
             <li><a href="/kozijnloze-deuren/configurator/">Kozijnloze deuren samenstellen</a></li>
             <li><a href="/gietvloer/ontwerpen/">Gietvloer ontwerpen</a></li>
             <li><a href="/kasten-op-maat/ontwerpen/">Kast op maat ontwerpen</a></li>
@@ -367,7 +377,8 @@ export default function MijnWoning() {
 
       {o && (
         <section ref={uitkomst} className="mw-uit" aria-labelledby="mw-uit-kop">
-          <h2 id="mw-uit-kop">Dit is je woning</h2>
+          <h2 id="mw-uit-kop">{o.voorbeeld ? 'Zo ziet een woning eruit' : 'Dit is je woning'}</h2>
+          {o.voorbeeld && <p className="mw-sub"><strong>Dit is een voorbeeld:</strong> een fictieve tussenwoning. Sleep hierboven je eigen tekening erin, dan staat jouw woning hier.</p>}
           <p className="mw-sub"><span className="mono">≈ {nl(totaal)} m²</span> binnen de wanden, gemeten uit {o.bron} op schaal 1:{o.lagen[0].schaal}. Plafondhoogte 2,60 m aangenomen.</p>
 
           <div className="mw-kiezer" role="tablist" aria-label="Verdieping">

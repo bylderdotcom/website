@@ -27,7 +27,8 @@ const VRAGEN = [
   { v: 'Waarom één offerte in plaats van losse vakbedrijven?', a: 'Omdat de afwerking een volgorde heeft. De stukadoor moet weg voordat de tegelzetter komt, en de vloer komt pas als de schilder klaar is. Met losse bedrijven regel jij die planning zelf. Bij ons heb je één planning, één aanspreekpunt en één prijs.' },
   { v: 'Hoe kunnen jullie een offerte maken zonder eerst te meten?', a: 'We halen de maten uit je tekening: vierkante meters vloer, wand en plafond per ruimte, het aantal deuren en waar de badkamer zit. Daarmee maken we de offerte. Voordat we beginnen, meten we wel in, zodat er niets wordt gemaakt op een maat die niet klopt.' },
   { v: 'Waar werken jullie?', a: 'In heel Nederland. Laat je aanvraag achter met de plaats van je woning; we maken je offerte met vakbedrijven bij jou in de buurt.' },
-  { v: 'Welke btw geldt?', a: 'Bij de afwerking van een nieuwbouwwoning rekent iedere aannemer 21% btw. Het lage tarief geldt alleen voor arbeid aan woningen die ouder zijn dan twee jaar. Onze bedragen zijn inclusief btw.' },
+  { v: 'Kan het ook bij een bestaande woning of een renovatie?', a: 'Ja. Nieuwbouw doen we het meest, maar ook voor een bestaande woning of een renovatie maken we één offerte voor de afwerking. Kies in de aanvraag om wat voor woning het gaat. Een tekening helpt; heb je die niet, dan meten we in.' },
+  { v: 'Welke btw geldt?', a: 'Bij de afwerking van een nieuwbouwwoning rekent iedere aannemer 21% btw. Is je woning ouder dan twee jaar, dan geldt voor de arbeid van onder meer schilderen en stukadoren het lage tarief van 9%; in je offerte staat per onderdeel welk tarief geldt. De indicaties op deze pagina zijn inclusief 21% btw.' },
   { v: 'Kan ik ook één onderdeel laten doen?', a: 'Ja. Vink in de aanvraag aan wat je wilt. Wil je alleen een vloer of alleen een badkamer, dan maken we daar een offerte voor.' },
   { v: 'Kan ik jullie offerte laten checken?', a: 'Ja. Onze offerte-check vergelijkt elke offerte met marktprijzen, ook die van onszelf. Zo zie je of je een eerlijke prijs betaalt.' },
 ]
@@ -55,10 +56,10 @@ export default function NieuwbouwAfwerkenPage() {
           <p style={S.lead}>
             Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten. Wij maken de offerte uit je eigen
             tekening, plannen alles in de goede volgorde en zijn je enige aanspreekpunt. Het werk doen vakbedrijven
-            bij jou in de buurt.
+            bij jou in de buurt. Ook voor een bestaande woning of een renovatie.
           </p>
           <ul style={S.vinkjes}>
-            {['Eén prijs voor alles, berekend uit je tekening', 'Eén planning vanaf je opleverdatum', 'Eén aanspreekpunt, van stukadoor tot timmerman'].map(t => (
+            {['Eén prijs voor alles, berekend uit je tekening', 'Eén planning vanaf je oplevering of startdatum', 'Eén aanspreekpunt, van stukadoor tot timmerman'].map(t => (
               <li key={t} style={S.vinkje}><Lijn d="M5 12l5 5 9-10" /> {t}</li>
             ))}
           </ul>

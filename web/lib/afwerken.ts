@@ -199,27 +199,44 @@ export const euro = (n: number) => '€' + n.toLocaleString('nl-NL')
 export const prijsTekst = (p: NonNullable<Onderdeel['prijs']>) =>
   p.eenheid === 'totaal' ? `${euro(p.van)} tot ${euro(p.tot)}` : `${euro(p.van)} tot ${euro(p.tot)} per ${p.eenheid}`
 
-/** De plaats in de regio voor een projectpagina: de slug eindigt op de plaats (tuinenrijk-veld-2-s-hertogenbosch). */
-export function plaatsVoorProject(slug: string): string | null {
-  const hit = Object.keys(REGIO_SLUGS).sort((a, b) => b.length - a.length).find(k => slug.endsWith(`-${k}`))
-  return hit ? REGIO_SLUGS[hit] : null
-}
-
 const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
 /**
- * Blok "Laat je woning in <project> afwerken" voor projectpagina's in de regio (28-10-2026). Als HTML,
- * omdat het in het fragment van de projectpagina komt, direct boven "Twee afwerkingen die je nu kiest".
- * De knop opent het afwerkformulier met project en oplevering al ingevuld.
+ * Blok "Van sleutel tot ingericht huis in <project>" op elke projectpagina (besluit Daniel, 29-10-2026;
+ * eerst alleen in de regio als "Laat je woning afwerken"). Als HTML, omdat het in het fragment van de
+ * projectpagina komt, direct boven "Twee afwerkingen die je nu kiest". Toont de voorbeeldwoning in 3D
+ * (/mijn-woning/?voorbeeld), de offerteknop met project en oplevering al ingevuld, en dat de koper
+ * zijn eigen vakman kan laten meekijken.
  */
-export function afwerkBlokProject(project: string, plaats: string, oplevering: string | null): string {
+export function afwerkBlokProject(project: string, slug: string, oplevering: string | null): string {
   const q = new URLSearchParams({ project, ...(oplevering ? { oplevering } : {}) }).toString()
-  const href = `/nieuwbouw-afwerken/?${q}#aanvraag`
-  const wanneer = oplevering ? `, afgestemd op de oplevering (verwacht ${esc(oplevering)})` : ''
-  return `<!--bylder:afwerk-project--><aside aria-label="Je hele afwerking door Bylder" style="margin:28px 0;background:#3D5A3E;color:#F5F0E8;border-radius:18px;padding:24px 26px">`
-    + `<p style="font-family:'Space Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;color:#E8D9B8;margin:0 0 8px">Bylder als aannemer · ${esc(plaats)}</p>`
-    + `<p style="font-size:1.45rem;font-weight:800;line-height:1.2;margin:0 0 10px;color:#F5F0E8">Laat je woning in ${esc(project)} in één keer afwerken.</p>`
-    + `<p style="font-size:15.5px;line-height:1.65;margin:0 0 16px;color:rgba(245,240,232,0.85);max-width:64ch">Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten: één offerte uit je tekening, en één planning${wanneer}. Het werk doen vakbedrijven bij jou in de buurt; jij hebt één aanspreekpunt.</p>`
-    + `<a href="${esc(href)}" onclick="window.gtag&&gtag('event','afwerk_klik',{plek:'project',pagina:location.pathname})" style="display:inline-block;background:#F5F0E8;color:#1A1208;border-radius:11px;padding:13px 22px;font-weight:800;font-size:15px;text-decoration:none">Vraag een offerte aan voor ${esc(project)} &rarr;</a>`
-    + `</aside>`
+  const offerte = `/nieuwbouw-afwerken/?${q}#aanvraag`
+  const voorbeeld = `/mijn-woning/?voorbeeld&${new URLSearchParams({ project: slug, naam: project }).toString()}`
+  const meet = (plek: string) => `window.gtag&&gtag('event','afwerk_klik',{plek:'${plek}',pagina:location.pathname})`
+  const stap = (n: string, t: string, p: string) =>
+    `<li style="display:flex;gap:12px;align-items:flex-start;margin:0 0 12px"><span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#3D5A3E;color:#F5F0E8;font:700 13px/26px 'Space Mono',monospace;text-align:center">${n}</span>`
+    + `<span style="font-size:15px;line-height:1.55;color:rgba(61,46,30,0.82)"><strong style="color:#1A1208">${t}</strong> ${p}</span></li>`
+  return `<!--bylder:afwerk-project--><style>@media(max-width:720px){.sleutel-beeld{order:-1}}</style><section aria-labelledby="sleutel-kop" style="margin:32px 0;background:#fff;border:1px solid rgba(61,46,30,0.1);border-radius:20px;padding:clamp(20px,4vw,34px);display:grid;gap:24px 32px;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));align-items:center">`
+    + `<div>`
+    + `<p style="font-family:'Space Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;color:#3D5A3E;margin:0 0 8px">Alles voor je woning, via Bylder</p>`
+    + `<h2 id="sleutel-kop" style="font-size:clamp(1.4rem,2.6vw,1.85rem);font-weight:800;line-height:1.2;letter-spacing:-0.02em;margin:0 0 14px;color:#1A1208">Van sleutel tot ingericht huis in ${esc(project)}</h2>`
+    + `<ol style="list-style:none;margin:0 0 18px;padding:0">`
+    + stap('1', 'Zie je woning in 3D.', 'Uit je eigen plattegrond, met elke ruimte en elke deur. Daarin ontwerp je deuren, vloer en kasten.')
+    + stap('2', 'Laat het afwerken in één offerte.', `Stucwerk, tegels, badkamer, vloeren, deuren, schilderwerk en kasten, met één planning${oplevering ? ` op je oplevering (verwacht ${esc(oplevering)})` : ''}.`)
+    + stap('3', 'Richt in met korting.', 'Ledenkorting bij woonwinkels en merken in de buurt.')
+    + `</ol>`
+    + `<div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px">`
+    + `<a href="${esc(offerte)}" onclick="${meet('project')}" style="background:#3D5A3E;color:#F5F0E8;border-radius:11px;padding:13px 20px;font-weight:800;font-size:15px;text-decoration:none">Vraag een offerte aan &rarr;</a>`
+    + `<a href="${esc(voorbeeld)}" onclick="${meet('project-voorbeeld')}" style="border:1.5px solid #3D5A3E;color:#3D5A3E;border-radius:11px;padding:12px 18px;font-weight:700;font-size:15px;text-decoration:none">Bekijk een voorbeeldwoning in 3D</a>`
+    + `</div>`
+    + `<p style="display:flex;gap:10px;align-items:flex-start;margin:0;padding-top:14px;border-top:1px solid rgba(61,46,30,0.1);font-size:14.5px;line-height:1.55;color:rgba(61,46,30,0.8)">`
+    + `<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D5A3E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><path d="M4 5h7v14H4zM13 5h7v14h-7zM6.5 9h2M6.5 12h2M15.5 9h2M15.5 12h2"/></svg>`
+    + `<span><strong style="color:#1A1208">Je eigen vakman kijkt mee.</strong> Ook het bedrijf dat jij al kent, maakt een offerte voor je woning, naast die van Bylder.</span></p>`
+    + `</div>`
+    // #sleutel-film: hier speelt ProjectFilm de film van de homepage zodra hij in beeld komt;
+    // daaronder het stilstaande beeld van de voorbeeldwoning voor wie geen WebGL heeft.
+    + `<figure class="sleutel-beeld" style="margin:0"><div id="sleutel-film" style="position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:#EDE6D8;border:1px solid rgba(61,46,30,0.1)">`
+    + `<img src="/img/voorbeeldwoning-3d.webp" srcset="/img/voorbeeldwoning-3d-sm.webp 600w, /img/voorbeeldwoning-3d.webp 1200w" sizes="(max-width: 760px) 100vw, 560px" width="1200" height="712" loading="lazy" decoding="async" alt="Voorbeeldwoning in 3D: een plattegrond die een woning wordt, met vierkante meters en genummerde binnendeuren" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain"></div>`
+    + `<figcaption style="font-size:12.5px;color:rgba(61,46,30,0.65);margin-top:8px">Voorbeeld: zo wordt een plattegrond een woning in 3D. Met jouw tekening staat hier je eigen woning.</figcaption></figure>`
+    + `</section>`
 }
