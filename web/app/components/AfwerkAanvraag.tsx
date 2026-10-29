@@ -26,6 +26,8 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
   const [m2, setM2] = useState('')
   const [oplevering, setOplevering] = useState('')
   const [project, setProject] = useState('')
+  // Nieuwbouw is de focus, maar bestaande bouw en renovatie mogen ook (besluit Daniel, 29-10-2026).
+  const [soort, setSoort] = useState('Nieuwbouw')
   // Vanaf een projectpagina (?project=Tuinenrijk Veld 2&oplevering=2027–2028): alvast ingevuld.
   useEffect(() => {
     const q = new URLSearchParams(window.location.search)
@@ -36,10 +38,11 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
 
   const namen = onderdelen.filter(o => gekozen.includes(o.slug)).map(o => o.naam)
   const specificatie = [
-    `Afwerking nieuwbouw, Bylder als aannemer`,
+    `Afwerking, Bylder als aannemer`,
+    `Woning: ${soort}`,
     `Onderdelen: ${namen.length ? namen.join(', ') : 'nog niet gekozen'}`,
     m2 ? `Woonoppervlakte: ${m2} m²` : '',
-    oplevering ? `Oplevering woning: ${oplevering}` : '',
+    oplevering ? `Oplevering of start: ${oplevering}` : '',
     project ? `Project: ${project}` : '',
   ].filter(Boolean).join('\n')
   const zet = (slug: string, aan: boolean) => setGekozen(g => aan ? [...new Set([...g, slug])] : g.filter(x => x !== slug))
@@ -63,19 +66,23 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
       <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))' }}>
         <div><label htmlFor="af-m2" style={label}>Woonoppervlakte (m²)</label>
           <input id="af-m2" inputMode="numeric" value={m2} onChange={e => setM2(e.target.value.replace(/[^\d]/g, '').slice(0, 4))} placeholder="bv. 120" style={veld} /></div>
-        <div><label htmlFor="af-opl" style={label}>Oplevering van je woning</label>
+        <div><label htmlFor="af-soort" style={label}>Soort woning</label>
+          <select id="af-soort" value={soort} onChange={e => setSoort(e.target.value)} style={veld}>
+            {['Nieuwbouw', 'Bestaande woning', 'Renovatie'].map(x => <option key={x}>{x}</option>)}
+          </select></div>
+        <div><label htmlFor="af-opl" style={label}>Oplevering of gewenste start</label>
           <input id="af-opl" value={oplevering} onChange={e => setOplevering(e.target.value.slice(0, 60))} placeholder="bv. maart 2027" style={veld} /></div>
-        <div><label htmlFor="af-proj" style={label}>Nieuwbouwproject</label>
-          <input id="af-proj" value={project} onChange={e => setProject(e.target.value.slice(0, 120))} placeholder="naam of straat" style={veld} /></div>
+        <div><label htmlFor="af-proj" style={label}>{soort === 'Nieuwbouw' ? 'Nieuwbouwproject' : 'Plaats of straat'}</label>
+          <input id="af-proj" value={project} onChange={e => setProject(e.target.value.slice(0, 120))} placeholder={soort === 'Nieuwbouw' ? 'naam of straat' : 'bv. Rosmalen'} style={veld} /></div>
       </div>
       <OfferteFormulier
         product="afwerking-nieuwbouw"
         bron={bron}
         specificatie={specificatie}
-        configuratie={{ onderdelen: gekozen, oplevering: oplevering || null, project: project || null }}
+        configuratie={{ onderdelen: gekozen, soort, oplevering: oplevering || null, project: project || null }}
         hoeveelheden={{ m2_woning: m2 ? Number(m2) : null }}
         terugkijkUrl={() => window.location.href}
-        mailFallback={`mailto:danielpaaij@bylder.com?subject=${encodeURIComponent('Afwerking nieuwbouw')}&body=${encodeURIComponent(specificatie)}`}
+        mailFallback={`mailto:danielpaaij@bylder.com?subject=${encodeURIComponent('Afwerking door Bylder')}&body=${encodeURIComponent(specificatie)}`}
         toelichtingHint="Bijvoorbeeld: wat je al hebt geregeld, of wensen voor kleuren en materialen. Je tekening kun je na je aanvraag in je account zetten."
       />
     </div>

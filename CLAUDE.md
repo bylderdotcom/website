@@ -49,6 +49,8 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
 - **Niet uitleggen waar Bylder aan verdient** (besluit Daniel, 29-10-2026): kopers interesseert het niet.
   Wel: wat gratis is, en dat je bij de afwerking alleen de prijs in de offerte betaalt.
 - **CTA: "Vraag een offerte aan"**, niet "Start gratis" (29-10-2026).
+- **Ook bestaande bouw en renovatie** (besluit Daniel, 29-10-2026); nieuwbouw blijft de focus. Het
+  aanvraagformulier vraagt het soort woning; product en URL blijven `afwerking-nieuwbouw` / `/nieuwbouw-afwerken/`.
 - **Elk bezoek moet het weten.** Pagina's: `/nieuwbouw-afwerken/` + 7 onderdeelpagina's (inhoud:
   `web/lib/afwerken.ts`, bedragen uit de prijsbenchmark). `AfwerkpakketCTA` staat onder elke
   `CommercieleStap`, op de homepage, als eerste kaart in de AanbodStrook, in het menu (Diensten) en als
@@ -59,8 +61,10 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   `/voor-vakbedrijven/` en een kaart in het vakbedrijf-dashboard na het claimen.
 - **In de regio** (plaatsen in `plaatsInRegio`, `web/lib/afwerken.ts`) staat de afwerkstap groot vóór
   de gewone commerciële stap; elders klein eronder. Pagina's over een onderdeel linken naar dat onderdeel.
-- **Projectpagina's in de regio** krijgen "Laat je woning in <project> afwerken" (`afwerkBlokProject`),
-  met een knop naar het formulier waarin project en oplevering al zijn ingevuld.
+- **Elke projectpagina** krijgt "Van sleutel tot ingericht huis in <project>" (`afwerkBlokProject`, 29-10-2026):
+  drie stappen, offerteknop met project en oplevering ingevuld, de voorbeeldwoning in 3D
+  (`/mijn-woning/?voorbeeld`, data in `web/app/mijn-woning/voorbeeld.ts`), "je eigen vakman kijkt mee", en de film
+  van de homepage (`ProjectFilm.tsx`, laadt pas in beeld; zonder WebGL een stilstaand beeld).
 - **Meten (28-10-2026):** elke verstuurde aanvraag = GA4 `generate_lead` (`lead_type` offerte/uitvoerder,
   `product`, `bron`, `pagina`); klikken op een afwerkverwijzing = `afwerk_klik` met `plek` (balk, onder-stap,
   regio:<plaats>, project, offerte-check, homepage). Helper: `web/app/components/meet.ts`. In GA4
