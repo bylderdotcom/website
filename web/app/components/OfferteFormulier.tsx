@@ -30,7 +30,7 @@ const label: React.CSSProperties = { display: 'block', fontSize: 13, fontWeight:
 const PLANNING = ['Zo snel mogelijk', 'Binnen 3 maanden', 'Over 3 tot 6 maanden', 'Later dan 6 maanden', 'Weet ik nog niet']
 
 export default function OfferteFormulier(p: {
-  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie' | 'afwerking-nieuwbouw'
+  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie' | 'afwerking-nieuwbouw' | 'winkel-plint' | 'winkel-scharnier'
   bron: string
   specificatie: string
   configuratie: unknown
@@ -52,14 +52,19 @@ export default function OfferteFormulier(p: {
 
   // Bij de afwerking van een nieuwbouwwoning neemt Bylder zelf de opdracht aan (28-10-2026).
   const aannemer = p.product === 'afwerking-nieuwbouw'
+  // Een bestelling in de Bylder-winkel (31-10-2026): Bylder is de verkoper. Zolang er geen betaling in
+  // de site zit, bevestigen wij de bestelling met prijs, levertijd en een betaallink.
+  const bestelling = p.product.startsWith('winkel-')
 
   if (klaar) {
     return (
       <div role="status" style={{ background: 'rgba(61,90,62,0.07)', border: `1px solid rgba(61,90,62,0.25)`, borderRadius: 12, padding: '16px 18px' }}>
-        <div style={{ fontWeight: 800, fontSize: 16, color: '#1A1208', marginBottom: 6 }}>Je aanvraag is binnen</div>
+        <div style={{ fontWeight: 800, fontSize: 16, color: '#1A1208', marginBottom: 6 }}>{bestelling ? 'Je bestelling is binnen' : 'Je aanvraag is binnen'}</div>
         <p style={{ fontSize: 14, lineHeight: 1.6, margin: 0, color: `${INKT}0.8)` }}>
-          Je krijgt een bevestiging per mail, met een knop naar je aanvraag in je Bylder-account. Daar zie je ook hoe het ermee staat.
-          {aannemer
+          {bestelling
+            ? 'Binnen één werkdag krijg je van ons een bevestiging met de prijs, de levertijd en een betaallink. Pas als je betaalt is de bestelling definitief.'
+            : 'Je krijgt een bevestiging per mail, met een knop naar je aanvraag in je Bylder-account. Daar zie je ook hoe het ermee staat. '}
+          {bestelling ? null : aannemer
             ? 'We nemen binnen twee werkdagen contact met je op om je woning en de planning door te nemen. De offerte komt van Bylder: één prijs voor alles. Het werk doen vakbedrijven uit de regio, en wij plannen en controleren het.'
             : 'We zoeken een vakbedrijf dat dit bij jou kan maken. De offerte komt van dat bedrijf; ga je akkoord, dan sluit je de opdracht met hen, niet met Bylder.'}
         </p>
@@ -72,7 +77,7 @@ export default function OfferteFormulier(p: {
       <button type="button" onClick={() => { setOpen(true); geopend.current = Date.now(); meet('offerte_formulier_open', { product: p.product }) }} style={{
         background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '12px 20px',
         borderRadius: 11, border: 0, cursor: 'pointer', fontFamily: 'inherit',
-      }}>Vraag een offerte aan</button>
+      }}>{bestelling ? 'Bestellen' : 'Vraag een offerte aan'}</button>
     )
   }
 
@@ -91,14 +96,15 @@ export default function OfferteFormulier(p: {
           terugkijk_url: p.terugkijkUrl(),
           naam: waarde('naam'), email: waarde('email'), telefoon: waarde('telefoon'),
           postcode: waarde('postcode'), plaats: waarde('plaats'),
-          planning: waarde('planning'), toelichting: waarde('toelichting'),
+          planning: waarde('planning'),
+          toelichting: [bestelling && waarde('adres') ? `Afleveradres: ${waarde('adres')}` : '', waarde('toelichting')].filter(Boolean).join('\n'),
           website: waarde('website'),
           seconden: Math.round((Date.now() - geopend.current) / 1000),
         }),
       })
       const j = await res.json().catch(() => ({}))
       if (!res.ok) { setFout(j.error || 'Versturen lukte niet.'); setBezig(false); return }
-      meetLead('offerte', { product: p.product, bron: campagne || p.bron })
+      meetLead(bestelling ? 'bestelling' : 'offerte', { product: p.product, bron: campagne || p.bron })
       setKlaar(true)
     } catch {
       setFout('Versturen lukte niet. Controleer je verbinding.')
@@ -107,7 +113,7 @@ export default function OfferteFormulier(p: {
   }
 
   return (
-    <form onSubmit={verstuur} style={{ display: 'grid', gap: 12, width: '100%' }} aria-label="Offerte aanvragen">
+    <form onSubmit={verstuur} style={{ display: 'grid', gap: 12, width: '100%' }} aria-label={bestelling ? 'Bestellen' : 'Offerte aanvragen'}>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
         <div><label htmlFor="of-naam" style={label}>Naam *</label><input id="of-naam" name="naam" required autoComplete="name" style={veld} /></div>
         <div><label htmlFor="of-email" style={label}>E-mail *</label><input id="of-email" name="email" type="email" required autoComplete="email" style={veld} /></div>
@@ -117,6 +123,10 @@ export default function OfferteFormulier(p: {
           <div><label htmlFor="of-plaats" style={label}>Plaats *</label><input id="of-plaats" name="plaats" required autoComplete="address-level2" style={veld} /></div>
         </div>
       </div>
+      {bestelling && (
+        <div><label htmlFor="of-adres" style={label}>Straat en huisnummer (afleveradres) *</label>
+          <input id="of-adres" name="adres" required autoComplete="street-address" style={veld} /></div>
+      )}
       <div>
         <label htmlFor="of-planning" style={label}>Wanneer moet het er zijn?</label>
         <select id="of-planning" name="planning" defaultValue="" style={veld}>
@@ -135,8 +145,8 @@ export default function OfferteFormulier(p: {
         <button type="submit" disabled={bezig} style={{
           background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 15, padding: '12px 22px',
           borderRadius: 11, border: 0, cursor: bezig ? 'wait' : 'pointer', fontFamily: 'inherit', opacity: bezig ? 0.6 : 1,
-        }}>{bezig ? 'Bezig met versturen…' : 'Verstuur aanvraag'}</button>
-        <span style={{ fontSize: 12.5, color: `${INKT}0.55)` }}>Gratis en vrijblijvend</span>
+        }}>{bezig ? 'Bezig met versturen…' : bestelling ? 'Plaats bestelling' : 'Verstuur aanvraag'}</button>
+        <span style={{ fontSize: 12.5, color: `${INKT}0.55)` }}>{bestelling ? 'Je betaalt pas na onze bevestiging' : 'Gratis en vrijblijvend'}</span>
       </div>
       {/* Informeren, niet vragen: doorgeven aan het vakbedrijf is nodig om de
           gevraagde offerte te maken (AVG art. 6 lid 1b), dus geen vinkje. */}
