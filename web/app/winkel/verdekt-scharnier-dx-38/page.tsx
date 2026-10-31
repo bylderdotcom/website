@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ScharnierBestel from './ScharnierBestel'
+import BestelMoment from '../BestelMoment'
 import Vinkje from '../Vinkje'
 import { PLINT, SCHARNIER } from '@/lib/winkel'
 import { S, GROEN } from '../stijl'
@@ -83,6 +84,7 @@ export default function Pagina() {
 
       <section id="bestellen" aria-labelledby="bestellen-kop" style={{ scrollMarginTop: 110 }}>
         <h2 id="bestellen-kop" style={S.h2}>Bestellen</h2>
+        <div style={{ marginBottom: 14 }}><BestelMoment wat="Een kozijnloze deur met verdekte scharnieren" /></div>
         <div style={S.bestel}><ScharnierBestel /></div>
       </section>
 

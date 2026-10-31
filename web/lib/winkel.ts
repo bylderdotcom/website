@@ -3,13 +3,18 @@
  * verkoper; de leverancier levert rechtstreeks. Eerste producten, van Dutch Doors Company (Classic
  * Next): de onzichtbare plint van AGS-systems en het verdekte scharnier Basys DX-38 Design.
  *
- * PRIJZEN: alleen wat met de leverancier is afgesproken als verkoopprijs. Staat `prijs` op null, dan
- * toont de site geen bedrag en bevestigen we de prijs bij de bestelling (je betaalt pas daarna).
- * De prijslijst die we kregen is die voor vakbedrijven; de consumentenprijs moet nog vastgesteld
- * worden. De deurprijzen uit diezelfde lijst zijn alleen voor intern gebruik en staan hier niet.
+ * PRIJZEN staan NIET hier maar in de app (src/lib/winkel.ts), en de site haalt ze op
+ * (app/winkel/prijzen.ts): de prijs op de pagina is dan altijd wat de klant afrekent. Zolang een prijs
+ * daar op null staat, toont de site geen bedrag en bevestigen wij de bestelling met een betaallink.
+ * De deurprijzen van de leverancier zijn alleen voor intern gebruik en staan nergens.
  */
 
 export type Variant = { id: string; naam: string; artikel?: string }
+
+/** Levertijd waarmee de planner rekent. Aanname tot de leverancier hem bevestigt (31-10-2026). */
+export const LEVERTIJD_WEKEN = 3
+/** Marge tussen levering en de dag dat de stukadoor begint. */
+export const MARGE_WEKEN = 1
 
 export const PLINT = {
   slug: 'onzichtbare-plint',
@@ -30,8 +35,6 @@ export const PLINT = {
     'light-60': { steen: '10061', droogbouw: '10060', binnenhoek: '11060', buitenhoek: '12060' },
   } as Record<string, { steen: string; droogbouw: string; binnenhoek: string; buitenhoek: string }>,
   koppelstuk: '13000',
-  /** Verkoopprijs per profiel van 2 m, incl. btw. Nog niet vastgesteld. */
-  prijs: null as number | null,
   /** Zaagverlies bovenop de gemeten meters. */
   verlies: 0.07,
 }
@@ -47,12 +50,8 @@ export const SCHARNIER = {
     { id: 'vernikkeld', naam: 'Velours vernikkeld (RVS-look)' },
     { id: 'zwart', naam: 'Zwart mat' },
   ] as Variant[],
-  /** Verkoopprijs per scharnier en per set afdekplaatjes, incl. btw. Nog niet vastgesteld. */
-  prijs: null as number | null,
-  prijsAfdekplaatjes: null as number | null,
 }
 
-export const euro = (n: number) => '€' + n.toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
 /* ---------------------------------------------------------------- plinten uit een plattegrond */
 
