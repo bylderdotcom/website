@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import PlintCalculator from './PlintCalculator'
 import PlintBeeld from '../PlintBeeld'
+import BestelMoment from '../BestelMoment'
 import Vinkje from '../Vinkje'
 import { PLINT, SCHARNIER } from '@/lib/winkel'
 import { S, INKT, GROEN } from '../stijl'
@@ -91,6 +92,7 @@ export default function Pagina() {
       <section id="bestellen" aria-labelledby="bestellen-kop" style={{ scrollMarginTop: 110 }}>
         <h2 id="bestellen-kop" style={S.h2}>Bereken en bestel je pakket</h2>
         <p style={S.p}>Staat je woning in <a href="/mijn-woning/" style={{ color: GROEN, fontWeight: 700 }}>Mijn woning</a>, dan rekenen we per ruimte uit hoeveel profielen, hoeken en koppelstukken je nodig hebt. Anders vul je de meters zelf in.</p>
+        <div style={{ marginBottom: 14 }}><BestelMoment wat="Het plintprofiel" /></div>
         <div style={S.bestel}><PlintCalculator /></div>
       </section>
 

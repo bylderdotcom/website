@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import OfferteFormulier from '../../components/OfferteFormulier'
-import { SCHARNIER, euro } from '@/lib/winkel'
+import Afrekenen from '../Afrekenen'
+import { useWinkelPrijzen, euroCent } from '../prijzen'
+import { SCHARNIER } from '@/lib/winkel'
 
 // Bestellen van het verdekte scharnier (31-10-2026): aantal deuren of scharnieren, kleur en of de
 // magnetische afdekplaatjes erbij moeten. Drie scharnieren per deur.
@@ -18,6 +19,7 @@ export default function ScharnierBestel() {
   const [deuren, setDeuren] = useState('1')
   const [kleur, setKleur] = useState(SCHARNIER.kleuren[0].id)
   const [afdek, setAfdek] = useState(true)
+  const prijzen = useWinkelPrijzen()
   const n = Math.max(1, Math.min(200, Math.round(Number(deuren) || 1)))
   const stuks = n * SCHARNIER.perDeur
   const kleurNaam = SCHARNIER.kleuren.find(k => k.id === kleur)?.naam ?? kleur
@@ -26,7 +28,9 @@ export default function ScharnierBestel() {
     `${stuks} scharnieren (${n} ${n === 1 ? 'deur' : 'deuren'} × ${SCHARNIER.perDeur}), ${kleurNaam}`,
     afdek ? `${stuks} × magnetische afdekplaatjes` : 'Zonder afdekplaatjes',
   ].join('\n')
-  const totaal = SCHARNIER.prijs != null ? stuks * SCHARNIER.prijs + (afdek && SCHARNIER.prijsAfdekplaatjes != null ? stuks * SCHARNIER.prijsAfdekplaatjes : 0) : null
+  const online = !!prijzen?.online['winkel-scharnier']
+  const ps = prijzen?.prijzen.scharnier
+  const totaal = online && ps ? stuks * ps.stuk! + (afdek ? stuks * ps.afdekplaat! : 0) + (prijzen!.prijzen.verzending.scharnier ?? 0) : null
 
   return (
     <div style={{ display: 'grid', gap: 16 }}>
@@ -45,17 +49,17 @@ export default function ScharnierBestel() {
       <p aria-live="polite" style={{ margin: 0, fontSize: 15, color: '#1A1208', background: '#fff', border: '1.5px solid #3D5A3E', borderRadius: 12, padding: '12px 16px' }}>
         <strong>{stuks} scharnieren</strong> · {kleurNaam}{afdek ? ' · met afdekplaatjes' : ''}
         <br /><span style={{ fontSize: 14, color: `${INKT}0.7)` }}>
-          {totaal != null ? <>Totaal <strong>{euro(totaal)}</strong>, incl. btw.</> : 'De prijs staat in de bevestiging die je na je bestelling krijgt. Je betaalt pas als je akkoord bent.'}
+          {totaal != null ? <>Totaal <strong>{euroCent(totaal)}</strong>, incl. btw en verzending.</> : 'De prijs staat in de bevestiging die je na je bestelling krijgt. Je betaalt pas als je akkoord bent.'}
         </span>
       </p>
-      <OfferteFormulier
+      <Afrekenen
         product="winkel-scharnier"
-        bron="winkel-scharnier"
+        online={online}
+        totaalCent={totaal}
+        klaar
         specificatie={spec}
         configuratie={{ deuren: n, kleur, afdekplaatjes: afdek }}
         hoeveelheden={{ scharnieren: stuks }}
-        terugkijkUrl={() => window.location.href}
-        mailFallback={`mailto:info@bylder.com?subject=${encodeURIComponent('Bestelling scharnieren DX-38')}&body=${encodeURIComponent(spec)}`}
         toelichtingHint="Bijvoorbeeld de dikte van je deuren, of welk kozijn je hebt"
       />
     </div>

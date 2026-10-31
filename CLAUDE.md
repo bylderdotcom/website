@@ -77,8 +77,14 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   (AGS Light 46/60, calculator uit Mijn woning), `/winkel/verdekt-scharnier-dx-38/` (Basys). Gegevens en prijzen op
   één plek: `web/lib/winkel.ts`. Bestellen = `OfferteFormulier` met product `winkel-*` (app: `WINKEL`); wij bevestigen
   met prijs en betaallink tot er online betalen is.
-- **Prijzen alleen als verkoopprijs is afgesproken** (`prijs: null` = geen bedrag op de site). De deurprijzen van Dutch
-  Doors Company zijn intern en komen nergens op de site.
+- **Prijzen staan alleen in de app** (`src/lib/winkel.ts`, centen incl. btw); de site haalt ze op (`web/app/winkel/prijzen.ts`).
+  Alleen invullen als de verkoopprijs is afgesproken. Zijn alle prijzen van een product bekend, dan rekent de klant
+  af met iDEAL (Pay.nl, tabel `winkel_bestellingen`, exchange `/api/winkel/paynl-exchange`); anders bevestigen wij met
+  een betaallink. De deurprijzen van Dutch Doors Company zijn intern en komen nergens op de site.
+- **Op tijd voor de bouw:** planner "Wanneer moet je bestellen?" (`BestelMoment.tsx`, datums in localStorage) en de
+  tijdlijn op `/winkel/`. Levertijd in de planner: `LEVERTIJD_WEKEN` in `web/lib/winkel.ts` (aanname tot bevestigd).
+- **Wat je buren kozen:** per projectpagina, uit `/api/project-keuzes` (app, `src/lib/buren.ts`). Alleen tellingen,
+  pas vanaf 3 kopers per regel; anders niets zichtbaar.
 
 ## Koers (besluit Daniel, 21-10-2026)
 - **VS: lanceren met een premium-model.** Gebruikers betalen daar een premiumbedrag. Bedrag en

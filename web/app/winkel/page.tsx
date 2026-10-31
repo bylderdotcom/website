@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import PlintBeeld from './PlintBeeld'
+import Tijdlijn from './Tijdlijn'
 import { PLINT, SCHARNIER } from '@/lib/winkel'
 import { S, INKT, GROEN } from './stijl'
 
@@ -62,6 +63,10 @@ export default function Pagina() {
           </a>
         ))}
       </div>
+
+      <h2 style={S.h2}>Wat je wanneer regelt</h2>
+      <p style={S.p}>In de volgorde van de bouw. Vul op een productpagina in wanneer de stukadoor komt, dan staan hier je datums bij.</p>
+      <Tijdlijn />
 
       <p style={{ ...S.p, fontSize: 14, marginTop: 30 }}>Bylder is de verkoper. Je bestelling en de betaling lopen via ons; de leverancier levert rechtstreeks bij je af.</p>
     </main>

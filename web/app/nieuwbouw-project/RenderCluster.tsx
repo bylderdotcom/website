@@ -5,6 +5,7 @@ import { aantalMerken } from '../../lib/merken'
 import AanbodStrook from '../components/AanbodStrook'
 import { afwerkBlokProject } from '../../lib/afwerken'
 import ProjectFilm from './ProjectFilm'
+import BurenKozen from './BurenKozen'
 
 // Server-component: rendert één nieuwbouw-project-clusterpagina. Cluster-CSS +
 // JSON-LD + de <main>-HTML. Nav + Footer komen uit de gedeelde root-layout.
@@ -30,6 +31,7 @@ export default function RenderCluster({ page }: { page: ClusterPage }) {
       ))}
       <div dangerouslySetInnerHTML={{ __html: main }} />
       <ProjectFilm />
+      <BurenKozen project={page.slug} />
       <div className="container">
         <AanbodStrook merken={aantalMerken()} titel="Alles wat je via Bylder regelt" marge="8px 0 56px" />
       </div>

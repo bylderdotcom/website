@@ -239,4 +239,6 @@ export function afwerkBlokProject(project: string, slug: string, oplevering: str
     + `<img src="/img/voorbeeldwoning-3d.webp" srcset="/img/voorbeeldwoning-3d-sm.webp 600w, /img/voorbeeldwoning-3d.webp 1200w" sizes="(max-width: 760px) 100vw, 560px" width="1200" height="712" loading="lazy" decoding="async" alt="Voorbeeldwoning in 3D: een plattegrond die een woning wordt, met vierkante meters en genummerde binnendeuren" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain"></div>`
     + `<figcaption style="font-size:12.5px;color:rgba(61,46,30,0.65);margin-top:8px">Voorbeeld: zo wordt een plattegrond een woning in 3D. Met jouw tekening staat hier je eigen woning.</figcaption></figure>`
     + `</section>`
+    // Plek voor "Wat je buren kozen" (BurenKozen.tsx); blijft leeg tot er genoeg kopers zijn.
+    + `<div id="buren-kozen"></div>`
 }
