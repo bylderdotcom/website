@@ -74,7 +74,7 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
 
 ## Bylder-winkel (besluit Daniel, 31-10-2026)
 - **Bylder is de verkoper**, de leverancier levert rechtstreeks. Pagina's: `/winkel/`, `/winkel/onzichtbare-plint/`
-  (AGS Light 46/60, calculator uit Mijn woning), `/winkel/verdekt-scharnier-dx-38/` (Basys). Gegevens en prijzen op
+  (AGS Light 46/60, calculator uit Mijn woning), `/winkel/verdekt-scharnier-dx-38/` (Basys). Productgegevens op
   één plek: `web/lib/winkel.ts`. Bestellen = `OfferteFormulier` met product `winkel-*` (app: `WINKEL`); wij bevestigen
   met prijs en betaallink tot er online betalen is.
 - **Prijzen staan alleen in de app** (`src/lib/winkel.ts`, centen incl. btw); de site haalt ze op (`web/app/winkel/prijzen.ts`).
