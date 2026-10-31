@@ -237,6 +237,12 @@ export default function OnzichtbarePlintenPage() {
         </div>
       </section>
 
+      {/* De plint zelf bestellen kan sinds 31-10-2026 in de winkel, met het pakket uit je plattegrond. */}
+      <div style={{ ...KAART, marginTop: 40, display: 'flex', flexWrap: 'wrap', gap: '12px 24px', alignItems: 'center', justifyContent: 'space-between', borderColor: 'rgba(61,90,62,0.35)' }}>
+        <p style={{ ...P, margin: 0 }}><strong style={{ color: '#1A1208' }}>Zelf bestellen?</strong> De onzichtbare plint van AGS-systems (Light 46 en Light 60) bestel je bij Bylder. We rekenen het pakket uit je plattegrond: profielen, hoeken en koppelstukken.</p>
+        <a href="/winkel/onzichtbare-plint/" style={{ background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px', borderRadius: 10, textDecoration: 'none' }}>Bereken en bestel</a>
+      </div>
+
       <h2 id="offerte" style={H2}>Vraag een offerte aan</h2>
       <p style={P}>
         We zetten je aanvraag uit bij een vakbedrijf dat inbouwplinten plaatst. Het komt eerst kijken en meet na; de

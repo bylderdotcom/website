@@ -72,6 +72,14 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
 - **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
   claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
 
+## Bylder-winkel (besluit Daniel, 31-10-2026)
+- **Bylder is de verkoper**, de leverancier levert rechtstreeks. Pagina's: `/winkel/`, `/winkel/onzichtbare-plint/`
+  (AGS Light 46/60, calculator uit Mijn woning), `/winkel/verdekt-scharnier-dx-38/` (Basys). Gegevens en prijzen op
+  één plek: `web/lib/winkel.ts`. Bestellen = `OfferteFormulier` met product `winkel-*` (app: `WINKEL`); wij bevestigen
+  met prijs en betaallink tot er online betalen is.
+- **Prijzen alleen als verkoopprijs is afgesproken** (`prijs: null` = geen bedrag op de site). De deurprijzen van Dutch
+  Doors Company zijn intern en komen nergens op de site.
+
 ## Koers (besluit Daniel, 21-10-2026)
 - **VS: lanceren met een premium-model.** Gebruikers betalen daar een premiumbedrag. Bedrag en
   vorm liggen nog niet vast; markt-terminologie eerst checken (zie standing orders).
