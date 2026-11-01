@@ -57,7 +57,7 @@ export default function Nav({ merken }: { merken: number }) {
   // doorgegeven: deze component draait in de browser en kan zelf geen bestand
   // lezen.
   const MENUS = menus(merken)
-  // Het winkelmandje (1-11-2026): op desktop altijd, op mobiel alleen als er iets in zit.
+  // Het winkelmandje (1-11-2026): een winkelwagentje, altijd in beeld, met het aantal erbij.
   const mand = useMand()
   // Alleen nog interactie-state. Of je mobiel bent beslist CSS, niet JavaScript:
   // de oude isMobile-useState begon op false, waardoor elke mobiele bezoeker
@@ -124,7 +124,7 @@ export default function Nav({ merken }: { merken: number }) {
         '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:22px}'
         + '.bv-deskl{display:inline}.bv-burger{display:none}'
         + '@media(max-width:1180px){.bv-top{display:none}.bv-desk{display:none}'
-        + '.bv-deskl{display:none}.bv-burger{display:flex}.bv-cta2{display:none!important}.bv-mand:not(.vol){display:none!important}}'
+        + '.bv-deskl{display:none}.bv-burger{display:flex}.bv-cta2{display:none!important}}'
         + '@media(min-width:1181px){.bv-sheet{display:none}}'
         // Zes menu's (sinds Ontwerpen erbij kwam, 10-10-2026) passen pas vanaf 1181px.
         // Daaronder, ook op een iPad liggend, het mobiele menu. Tot 1400px blijft
@@ -199,8 +199,8 @@ export default function Nav({ merken }: { merken: number }) {
           <a href="/functies/" className="bv-deskl bv-fn" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
           <a href="https://app.bylder.com" className="bv-deskl" style={LINK}>Inloggen</a>
           <a href="/winkel/mand/" className={mand.length ? 'bv-mand vol' : 'bv-mand'} aria-label={mand.length ? `Je mandje, ${mand.length} ${mand.length === 1 ? 'product' : 'producten'}` : 'Je mandje'}
-             style={{ position: 'relative', display: 'inline-flex', color: '#1A1208', padding: 4 }}>
-            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8zM9 8V6a3 3 0 0 1 6 0v2" /></svg>
+             style={{ position: 'relative', display: 'inline-flex', color: '#1A1208', padding: 2 }}>
+            <svg aria-hidden="true" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2.5 3.5h2.2l2.6 11.1a1.2 1.2 0 0 0 1.2.9h8.6a1.2 1.2 0 0 0 1.2-.9L20.5 7.5H5.9" /><circle cx="9.6" cy="19.6" r="1.5" /><circle cx="17" cy="19.6" r="1.5" /></svg>
             {mand.length > 0 && <span style={{ position: 'absolute', top: -2, right: -4, minWidth: 17, height: 17, borderRadius: 9, background: '#B85C38', color: '#fff', fontSize: 10.5, fontWeight: 800, lineHeight: '17px', textAlign: 'center', padding: '0 4px' }}>{mand.length}</span>}
           </a>
           {KNOPPEN.map((k) => (
