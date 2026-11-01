@@ -81,6 +81,11 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   Alleen invullen als de verkoopprijs is afgesproken. Zijn alle prijzen van een product bekend, dan rekent de klant
   af met iDEAL (Pay.nl, tabel `winkel_bestellingen`, exchange `/api/winkel/paynl-exchange`); anders bevestigen wij met
   een betaallink. De deurprijzen van Dutch Doors Company zijn intern en komen nergens op de site.
+- **Afrekenen zonder drempel (besluit Daniel, 1-11-2026):** nooit een account vragen; na betaling hangt de bestelling
+  aan het account op dat e-mailadres (app: Mijn bestellingen) en de mail logt meteen in. Geen verplicht wachtwoord
+  meer (ook niet bij offertes): inloggen met Google of een inloglink (`/api/inloglink`). Formulier: "Snel invullen met
+  Google" (Client ID van de app; www.bylder.com moet in Google Cloud als herkomst staan), postcode + huisnummer vullen
+  straat en plaats (`/api/adres`, BAG), en de browser onthoudt de gegevens (`bylder:klant:v1`).
 - **Op tijd voor de bouw:** planner "Wanneer moet je bestellen?" (`BestelMoment.tsx`, datums in localStorage) en de
   tijdlijn op `/winkel/`. Levertijd in de planner: `LEVERTIJD_WEKEN` in `web/lib/winkel.ts` (aanname tot bevestigd).
 - **Wat je buren kozen:** per projectpagina, uit `/api/project-keuzes` (app, `src/lib/buren.ts`). Alleen tellingen,
