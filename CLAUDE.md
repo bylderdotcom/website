@@ -75,8 +75,12 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
 ## Bylder-winkel (besluit Daniel, 31-10-2026)
 - **Bylder is de verkoper**, de leverancier levert rechtstreeks. Pagina's: `/winkel/`, `/winkel/onzichtbare-plint/`
   (AGS Light 46/60, calculator uit Mijn woning), `/winkel/verdekt-scharnier-dx-38/` (Basys). Productgegevens op
-  één plek: `web/lib/winkel.ts`. Bestellen = `OfferteFormulier` met product `winkel-*` (app: `WINKEL`); wij bevestigen
-  met prijs en betaallink tot er online betalen is.
+  één plek: `web/lib/winkel.ts`. **Winkelmandje (1-11-2026):** productpagina's hebben "In je mandje" (`MandKnop`),
+  het mandje staat in localStorage (`web/app/winkel/mand.ts`, `bylder:mand:v1`), icoon met aantal in het menu (Nav.tsx
+  en het statische menu), afrekenen op `/winkel/mand/` (één betaling; app `berekenMand`: verzending één keer per
+  leverancier, bestellijst per leverancier in het seintje). Zonder online prijzen gaat het mandje als bestelling
+  (`winkel-mand`) naar het loket en bevestigen wij met een betaallink. Nieuw product = gegevens + prijzen + regels in
+  app `src/lib/winkel.ts` (LEVERANCIER, itemRegels) en `productCent` in `web/app/winkel/prijzen.ts`.
 - **Prijzen staan alleen in de app** (`src/lib/winkel.ts`, centen incl. btw); de site haalt ze op (`web/app/winkel/prijzen.ts`).
   Alleen invullen als de verkoopprijs is afgesproken. Zijn alle prijzen van een product bekend, dan rekent de klant
   af met iDEAL (Pay.nl, tabel `winkel_bestellingen`, exchange `/api/winkel/paynl-exchange`); anders bevestigen wij met

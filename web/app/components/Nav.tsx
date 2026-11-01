@@ -23,6 +23,7 @@ import { useState, useEffect, useRef } from 'react'
 
 import MENU from './menu.json'
 import { meet } from './meet'
+import { useMand } from '../winkel/mand'
 
 type Item = { href: string; title: string; sub?: string; primair?: boolean }
 type Menu = { label: string; items: Item[]; breed?: boolean }
@@ -56,6 +57,8 @@ export default function Nav({ merken }: { merken: number }) {
   // doorgegeven: deze component draait in de browser en kan zelf geen bestand
   // lezen.
   const MENUS = menus(merken)
+  // Het winkelmandje (1-11-2026): op desktop altijd, op mobiel alleen als er iets in zit.
+  const mand = useMand()
   // Alleen nog interactie-state. Of je mobiel bent beslist CSS, niet JavaScript:
   // de oude isMobile-useState begon op false, waardoor elke mobiele bezoeker
   // eerst een flits van het desktopmenu zag totdat de JS geladen was.
@@ -121,16 +124,17 @@ export default function Nav({ merken }: { merken: number }) {
         '.bv-top{display:block}.bv-desk{display:flex;align-items:center;gap:22px}'
         + '.bv-deskl{display:inline}.bv-burger{display:none}'
         + '@media(max-width:1180px){.bv-top{display:none}.bv-desk{display:none}'
-        + '.bv-deskl{display:none}.bv-burger{display:flex}.bv-cta2{display:none!important}}'
+        + '.bv-deskl{display:none}.bv-burger{display:flex}.bv-cta2{display:none!important}.bv-mand:not(.vol){display:none!important}}'
         + '@media(min-width:1181px){.bv-sheet{display:none}}'
         // Zes menu's (sinds Ontwerpen erbij kwam, 10-10-2026) passen pas vanaf 1181px.
         // Daaronder, ook op een iPad liggend, het mobiele menu. Tot 1400px blijft
         // Functies weg uit de balk (staat in het mobiele menu en in de footer) en
         // zit er minder ruimte tussen de items.
-        // Sinds de tweede knop (29-10-2026) tot 1500px, en tot 1300px compactere knoppen.
-        + '@media(max-width:1499px){.bv-fn{display:none!important}}'
-        + '@media(min-width:1181px) and (max-width:1300px){.bv-desk{gap:11px}.bv-r{gap:10px!important}'
-        + '.bv-cta{font-size:0.8125rem!important;padding:9px 12px!important}}'
+        // Sinds de tweede knop (29-10-2026) en het mandje (1-11-2026): Functies pas vanaf 1700px,
+        // en tot dan compactere knoppen en minder ruimte, zodat alles binnen de 1200px past.
+        + '@media(max-width:1699px){.bv-fn{display:none!important}}'
+        + '@media(min-width:1181px) and (max-width:1699px){.bv-desk{gap:9px}.bv-r{gap:8px!important}'
+        + '.bv-cta{font-size:0.78rem!important;padding:9px 10px!important}}'
         // De mobiele balk paste niet binnen 375px: logo + CTA + hamburger waren
         // samen breder dan het scherm, waardoor de hamburger buiten beeld viel
         // en de hele pagina horizontaal kon scrollen. !important omdat de maten
@@ -194,6 +198,11 @@ export default function Nav({ merken }: { merken: number }) {
         <div className="bv-r" style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
           <a href="/functies/" className="bv-deskl bv-fn" style={{ ...LINK, fontSize: '0.8rem' }}>Functies</a>
           <a href="https://app.bylder.com" className="bv-deskl" style={LINK}>Inloggen</a>
+          <a href="/winkel/mand/" className={mand.length ? 'bv-mand vol' : 'bv-mand'} aria-label={mand.length ? `Je mandje, ${mand.length} ${mand.length === 1 ? 'product' : 'producten'}` : 'Je mandje'}
+             style={{ position: 'relative', display: 'inline-flex', color: '#1A1208', padding: 4 }}>
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8zM9 8V6a3 3 0 0 1 6 0v2" /></svg>
+            {mand.length > 0 && <span style={{ position: 'absolute', top: -2, right: -4, minWidth: 17, height: 17, borderRadius: 9, background: '#B85C38', color: '#fff', fontSize: 10.5, fontWeight: 800, lineHeight: '17px', textAlign: 'center', padding: '0 4px' }}>{mand.length}</span>}
+          </a>
           {KNOPPEN.map((k) => (
             <a key={k.href} href={k.href} onClick={() => meet('menu_klik', { knop: k.meet, plek: 'balk' })}
                className={k.primair ? 'bv-cta' : 'bv-cta bv-cta2'}

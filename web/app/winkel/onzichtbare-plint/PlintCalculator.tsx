@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import Afrekenen from '../Afrekenen'
-import { useWinkelPrijzen, euroCent } from '../prijzen'
+import MandKnop from '../MandKnop'
+import { useWinkelPrijzen, euroCent, productCent } from '../prijzen'
 import { PLINT, plintPakket, wandVanRuimte } from '@/lib/winkel'
 import { VOORBEELD_LAGEN } from '../../mijn-woning/voorbeeld'
 import type { Verdieping } from '@/lib/tekening/lees'
@@ -83,9 +83,8 @@ export default function PlintCalculator() {
   const art = PLINT.artikelen[model]
   const online = !!prijzen?.online['winkel-plint']
   const pp = prijzen?.prijzen.plint
-  const totaalCent = online && pp && geldig
-    ? pakket.profielen * pp.profiel! + pakket.binnenhoeken * pp.binnenhoek! + pakket.buitenhoeken * pp.buitenhoek! + pakket.koppelstukken * pp.koppelstuk! + (prijzen!.prijzen.verzending.plint ?? 0)
-    : null
+  void pp
+  const totaalCent = online && geldig ? productCent('winkel-plint', { profielen: pakket.profielen, binnenhoeken: pakket.binnenhoeken, buitenhoeken: pakket.buitenhoeken, koppelstukken: pakket.koppelstukken }, prijzen) : null
 
   const regels = [
     `${pakket.profielen} × profiel ${m.naam} voor ${wand === 'steen' ? 'steen' : 'gipswand (droogbouw)'}, 2 m (art. ${art[wand]})`,
@@ -171,22 +170,21 @@ export default function PlintCalculator() {
             </ul>
             <p style={{ margin: '12px 0 0', fontSize: 14.5, color: `${INKT}0.8)` }}>
               {totaalCent != null
-                ? <><strong style={{ fontSize: 18, color: '#1A1208' }}>{euroCent(totaalCent)}</strong> incl. btw en verzending. Je betaalt met iDEAL.</>
+                ? <><strong style={{ fontSize: 18, color: '#1A1208' }}>{euroCent(totaalCent)}</strong> incl. btw, excl. verzending. Je rekent af in je mandje, met iDEAL.</>
                 : <>De prijs staat in de bevestiging die je na je bestelling krijgt. Je betaalt pas als je akkoord bent.</>}
             </p>
           </>
         ) : <p style={{ margin: 0, fontSize: 14.5, color: `${INKT}0.65)` }}>Vul de meters in of kies je ruimtes, dan staat hier wat je nodig hebt.</p>}
       </section>
 
-      <Afrekenen
+      <MandKnop
         product="winkel-plint"
-        online={online}
-        totaalCent={totaalCent}
         klaar={geldig}
-        specificatie={spec}
+        titel={`Onzichtbare plint ${m.naam}, ${wand === 'steen' ? 'steen' : 'gipswand'}`}
+        regels={regels}
+        href="/winkel/onzichtbare-plint/"
         configuratie={{ model, wand, bron, profielen: pakket.profielen, binnenhoeken: pakket.binnenhoeken, buitenhoeken: pakket.buitenhoeken, koppelstukken: pakket.koppelstukken, ruimtes: actieveLagen ? ruimtes.filter(aan).map(r => r.naam) : null }}
         hoeveelheden={{ m_plint: geldig ? Math.round(meter * 10) / 10 : null, profielen: geldig ? pakket.profielen : null, binnenhoeken: pakket.binnenhoeken, buitenhoeken: pakket.buitenhoeken, koppelstukken: pakket.koppelstukken }}
-        toelichtingHint="Bijvoorbeeld wanneer de stukadoor komt, of als je hulp wilt bij de keuze"
       />
     </div>
   )
