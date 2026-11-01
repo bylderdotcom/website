@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import Afrekenen from '../Afrekenen'
-import { useWinkelPrijzen, euroCent } from '../prijzen'
+import MandKnop from '../MandKnop'
+import { useWinkelPrijzen, euroCent, productCent } from '../prijzen'
 import { SCHARNIER } from '@/lib/winkel'
 
 // Bestellen van het verdekte scharnier (31-10-2026): aantal deuren of scharnieren, kleur en of de
@@ -29,8 +29,7 @@ export default function ScharnierBestel() {
     afdek ? `${stuks} × magnetische afdekplaatjes` : 'Zonder afdekplaatjes',
   ].join('\n')
   const online = !!prijzen?.online['winkel-scharnier']
-  const ps = prijzen?.prijzen.scharnier
-  const totaal = online && ps ? stuks * ps.stuk! + (afdek ? stuks * ps.afdekplaat! : 0) + (prijzen!.prijzen.verzending.scharnier ?? 0) : null
+  const totaal = online ? productCent('winkel-scharnier', { deuren: n, afdekplaatjes: afdek }, prijzen) : null
 
   return (
     <div style={{ display: 'grid', gap: 16 }}>
@@ -49,18 +48,17 @@ export default function ScharnierBestel() {
       <p aria-live="polite" style={{ margin: 0, fontSize: 15, color: '#1A1208', background: '#fff', border: '1.5px solid #3D5A3E', borderRadius: 12, padding: '12px 16px' }}>
         <strong>{stuks} scharnieren</strong> · {kleurNaam}{afdek ? ' · met afdekplaatjes' : ''}
         <br /><span style={{ fontSize: 14, color: `${INKT}0.7)` }}>
-          {totaal != null ? <>Totaal <strong>{euroCent(totaal)}</strong>, incl. btw en verzending.</> : 'De prijs staat in de bevestiging die je na je bestelling krijgt. Je betaalt pas als je akkoord bent.'}
+          {totaal != null ? <><strong>{euroCent(totaal)}</strong>, incl. btw, excl. verzending.</> : 'De prijs staat in de bevestiging die je na je bestelling krijgt. Je betaalt pas als je akkoord bent.'}
         </span>
       </p>
-      <Afrekenen
+      <MandKnop
         product="winkel-scharnier"
-        online={online}
-        totaalCent={totaal}
         klaar
-        specificatie={spec}
+        titel="Verdekt scharnier Basys DX-38"
+        regels={spec.split('\n').slice(1)}
+        href="/winkel/verdekt-scharnier-dx-38/"
         configuratie={{ deuren: n, kleur, afdekplaatjes: afdek }}
         hoeveelheden={{ scharnieren: stuks }}
-        toelichtingHint="Bijvoorbeeld de dikte van je deuren, of welk kozijn je hebt"
       />
     </div>
   )

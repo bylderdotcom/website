@@ -5,6 +5,7 @@ import Script from 'next/script'
 import { leesRef } from '../components/aanbreng'
 import { meet, meetLead } from '../components/meet'
 import { WINKEL_API, euroCent } from './prijzen'
+import { leegMand, type MandRegel } from './mand'
 
 // Afrekenen in de winkel (31-10-2026, zonder drempels sinds 1-11-2026).
 //   - Nooit een account vragen: na de betaling hoort de bestelling bij het account op dit
@@ -42,15 +43,18 @@ function uitToken(jwt: string): { naam?: string; email?: string } {
 }
 
 export default function Afrekenen(p: {
-  product: 'winkel-plint' | 'winkel-scharnier'
+  /** De regels uit het mandje (1-11-2026): alles in één keer afrekenen. */
+  items: MandRegel[]
   online: boolean
   totaalCent: number | null
-  configuratie: Record<string, unknown>
-  specificatie: string
-  hoeveelheden: Record<string, number | null>
-  klaar: boolean
   toelichtingHint?: string
 }) {
+  // Eén product: dat product; meer: een mandje. Zo heet de bestelling in de app.
+  const product = p.items.length === 1 ? p.items[0].product : 'winkel-mand'
+  const specificatie = p.items.map(i => [i.titel, ...i.regels.map(x => `  ${x}`)].join('\n')).join('\n')
+  const hoeveelheden: Record<string, number | null> = {}
+  p.items.forEach(i => Object.entries(i.hoeveelheden).forEach(([k, v]) => { if (v != null) hoeveelheden[k] = (hoeveelheden[k] ?? 0) + v }))
+  const klaar = p.items.length > 0
   const [open, setOpen] = useState(false)
   const [k, setK] = useState<Klant>(LEEG)
   const [toelichting, setToelichting] = useState('')
@@ -84,7 +88,7 @@ export default function Afrekenen(p: {
       client_id: GOOGLE_CLIENT_ID,
       callback: (r: { credential: string }) => {
         const u = uitToken(r.credential)
-        if (u.email) { setK(x => ({ ...x, email: u.email!, naam: x.naam || u.naam || '' })); setViaGoogle(true); meet('afrekenen_google', { product: p.product }) }
+        if (u.email) { setK(x => ({ ...x, email: u.email!, naam: x.naam || u.naam || '' })); setViaGoogle(true); meet('afrekenen_google', { product }) }
       },
     })
     g.accounts.id.renderButton(googleKnop.current, { theme: 'outline', size: 'large', text: 'continue_with', shape: 'pill', locale: 'nl', width: 280 })
@@ -101,9 +105,9 @@ export default function Afrekenen(p: {
 
   if (!open) {
     return (
-      <button type="button" disabled={!p.klaar} onClick={() => { setOpen(true); geopend.current = Date.now(); meet('afrekenen_open', { product: p.product }) }} style={{
+      <button type="button" disabled={!klaar} onClick={() => { setOpen(true); geopend.current = Date.now(); meet('afrekenen_open', { product }) }} style={{
         background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11, border: 0,
-        cursor: p.klaar ? 'pointer' : 'not-allowed', opacity: p.klaar ? 1 : 0.5, fontFamily: 'inherit',
+        cursor: klaar ? 'pointer' : 'not-allowed', opacity: klaar ? 1 : 0.5, fontFamily: 'inherit',
       }}>{p.online ? `Afrekenen${p.totaalCent != null ? ` · ${euroCent(p.totaalCent)}` : ''}` : 'Bestellen'}</button>
     )
   }
@@ -119,25 +123,26 @@ export default function Afrekenen(p: {
       if (p.online) {
         const res = await fetch(`${WINKEL_API}/bestel`, {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ product: p.product, configuratie: p.configuratie, bron: p.product, ref: leesRef() ?? undefined,
+          body: JSON.stringify({ items: p.items.map(i => ({ product: i.product, configuratie: i.configuratie })), bron: 'winkel-mand', ref: leesRef() ?? undefined,
             naam: k.naam, email: k.email, telefoon: k.telefoon, adres, postcode: k.postcode, plaats: k.plaats, toelichting, website: honing }),
         })
         const j = await res.json().catch(() => ({}))
         if (!res.ok || !j.betaalUrl) { setFout(j.error || 'Afrekenen lukte niet.'); setBezig(false); return }
-        meetLead('bestelling', { product: p.product, bron: 'winkel', waarde: p.totaalCent != null ? p.totaalCent / 100 : null })
+        meetLead('bestelling', { product, bron: 'winkel', waarde: p.totaalCent != null ? p.totaalCent / 100 : null })
         window.location.href = j.betaalUrl
       } else {
         // Nog geen online prijzen: als bestelling naar het loket in de app; wij bevestigen met een betaallink.
         const res = await fetch(`${APP}/api/offerte-aanvraag`, {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ product: p.product, bron: p.product, ref: leesRef() ?? undefined, specificatie: p.specificatie, configuratie: p.configuratie,
-            hoeveelheden: p.hoeveelheden, terugkijk_url: window.location.href, naam: k.naam, email: k.email, telefoon: k.telefoon,
+          body: JSON.stringify({ product, bron: 'winkel-mand', ref: leesRef() ?? undefined, specificatie, configuratie: { items: p.items.map(i => ({ product: i.product, configuratie: i.configuratie })) },
+            hoeveelheden, terugkijk_url: window.location.href, naam: k.naam, email: k.email, telefoon: k.telefoon,
             postcode: k.postcode, plaats: k.plaats, planning: '', toelichting: [`Afleveradres: ${adres}, ${k.postcode} ${k.plaats}`, toelichting].filter(Boolean).join('\n'),
             website: honing, seconden: Math.round((Date.now() - geopend.current) / 1000) }),
         })
         const j = await res.json().catch(() => ({}))
         if (!res.ok) { setFout(j.error || 'Versturen lukte niet.'); setBezig(false); return }
-        meetLead('bestelling', { product: p.product, bron: 'winkel' })
+        meetLead('bestelling', { product, bron: 'winkel' })
+        leegMand()
         setKlaarMelding(true)
       }
     } catch {

@@ -296,8 +296,8 @@ STICKY_ONDER_MENU = """
    mobiele menu (zie de max-width:1180px-regels). Tot 1300px minder ruimte tussen
    de items, en tot 1500px staat Functies niet in de balk (wel in het mobiele menu
    onder Meer, en in de footer). Gelijk aan Nav.tsx. */
-@media(min-width:1181px) and (max-width:1300px){.bn2-desk{gap:11px}.bn2-r{gap:10px}.bn2-cta{font-size:.8125rem;padding:9px 12px}}
-@media(max-width:1499px){.bn2-lnk.sm{display:none}}
+@media(min-width:1181px) and (max-width:1699px){.bn2-desk{gap:9px}.bn2-r{gap:8px}.bn2-cta{font-size:.78rem;padding:9px 10px}}
+@media(max-width:1699px){.bn2-lnk.sm{display:none}}
 
 /* De /nieuwbouw/-pagina's (396) zetten de standaardmarge van de browser niet op
    nul: balk en menu stonden 8px van de rand. Elke andere pagina met dit menu
@@ -379,6 +379,11 @@ CSS = (
     f'.{P}-kk strong{{display:block;font-size:14px;font-weight:800;margin-bottom:3px}}'
     f'.{P}-kk span{{display:block;font-size:12px;opacity:.85}}'
     f'.{P}-kk.o{{background:#fff;color:#1A1208}}'
+    # Het winkelmandje (1-11-2026): het aantal zet een klein script uit localStorage.
+    f'.{P}-mand{{position:relative;display:inline-flex;color:#1A1208;padding:4px}}'
+    f'.{P}-mn{{display:none;position:absolute;top:-2px;right:-4px;min-width:17px;height:17px;border-radius:9px;'
+    f'background:#B85C38;color:#fff;font-size:10.5px;font-weight:800;line-height:17px;text-align:center;padding:0 4px}}'
+    f'.{P}-mand.vol .{P}-mn{{display:block}}'
     f'.{P}-bg{{display:none;cursor:pointer;padding:6px;flex-direction:column;gap:4px}}'
     f'.{P}-bg i{{width:20px;height:2px;background:#1A1208;border-radius:2px;display:block}}'
     f'.{P}-cb{{position:absolute;opacity:0;pointer-events:none;margin:0}}'
@@ -400,7 +405,7 @@ CSS = (
     # verborgen checkbox — geen JavaScript. De checked-regel staat binnen deze
     # media query, dus op desktop blijft het paneel dicht.
     f'@media(max-width:1180px){{.{P}-top{{display:none}}.{P}-desk{{display:none}}'
-    f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}.{P}-cta.o{{display:none}}'
+    f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}.{P}-cta.o{{display:none}}.{P}-mand:not(.vol){{display:none}}'
     # .o is de React-variant (state), :checked de CSS-only variant. Beide staan
     # binnen deze media query, dus op desktop blijft het paneel altijd dicht.
     f'.{P}-cb:checked~.{P}-sheet,.{P}-sheet.o{{display:flex}}}}'
@@ -417,6 +422,14 @@ CSS = (
 PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'
         '<path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" '
         'stroke-linecap="round"/></svg>')
+
+
+MAND_SVG = ('<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+            'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8zM9 8V6a3 3 0 0 1 6 0v2"/></svg>')
+# Zet het aantal producten uit het mandje (localStorage, zie web/app/winkel/mand.ts) bij het icoon.
+MAND_SCRIPT = ('<script>try{var n=JSON.parse(localStorage.getItem("bylder:mand:v1")||"[]").length;if(n){'
+               'document.querySelectorAll("[data-mand-aantal]").forEach(function(e){e.textContent=n;'
+               'e.parentNode.classList.add("vol");e.parentNode.setAttribute("aria-label","Je mandje, "+n+(n==1?" product":" producten"))})}}catch(e){}</script>')
 
 
 def build_nav():
@@ -465,12 +478,13 @@ def build_nav():
         f'<div class="{P}-r">'
         f'<a href="/functies/" class="{P}-lnk sm">Functies</a>'
         f'<a href="https://app.bylder.com" class="{P}-lnk">Inloggen</a>'
+        + f'<a href="/winkel/mand/" class="{P}-mand" aria-label="Je mandje">{MAND_SVG}<span class="{P}-mn" data-mand-aantal></span></a>'
         + ''.join(f'<a href="{h}" class="{P}-cta{"" if pr else " o"}" onclick="{meet_js(m, "balk")}">{l}</a>'
                   for h, l, sub, m, pr in KNOPPEN) +
         f'<label for="{P}-cb" class="{P}-bg" aria-label="Menu"><i></i><i></i><i></i></label>'
         f'</div></div>'
         f'<div class="{P}-sheet"><div class="{P}-kn">{kaarten}</div>{"".join(mobiel)}'
-        f'<a href="https://app.bylder.com" class="{P}-ml">Inloggen</a></div></nav>'
+        f'<a href="https://app.bylder.com" class="{P}-ml">Inloggen</a></div>{MAND_SCRIPT}</nav>'
     )
 
 

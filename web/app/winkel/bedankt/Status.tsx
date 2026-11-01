@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { WINKEL_API, euroCent } from '../prijzen'
+import { leegMand } from '../mand'
 import { S, GROEN, INKT } from '../stijl'
 
 type Bestelling = { nummer: string; status: string; regels: { naam: string; aantal: number; prijs_cent: number }[]; verzend_cent: number; totaal_cent: number }
@@ -18,6 +19,7 @@ export default function Status() {
     const vraag = () => fetch(url).then(r => (r.ok ? r.json() : Promise.reject())).then((d: Bestelling) => {
       if (weg) return
       setB(d)
+      if (d.status !== 'open') leegMand() // betaald: het mandje is afgerekend
       if (d.status === 'open' && ++pogingen < 8) setTimeout(vraag, 2500)
     }).catch(() => { if (!weg) setFout(true) })
     vraag()
