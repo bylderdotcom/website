@@ -380,7 +380,7 @@ CSS = (
     f'.{P}-kk span{{display:block;font-size:12px;opacity:.85}}'
     f'.{P}-kk.o{{background:#fff;color:#1A1208}}'
     # Het winkelmandje (1-11-2026): het aantal zet een klein script uit localStorage.
-    f'.{P}-mand{{position:relative;display:inline-flex;color:#1A1208;padding:4px}}'
+    f'.{P}-mand{{position:relative;display:inline-flex;color:#1A1208;padding:2px}}'
     f'.{P}-mn{{display:none;position:absolute;top:-2px;right:-4px;min-width:17px;height:17px;border-radius:9px;'
     f'background:#B85C38;color:#fff;font-size:10.5px;font-weight:800;line-height:17px;text-align:center;padding:0 4px}}'
     f'.{P}-mand.vol .{P}-mn{{display:block}}'
@@ -405,7 +405,7 @@ CSS = (
     # verborgen checkbox — geen JavaScript. De checked-regel staat binnen deze
     # media query, dus op desktop blijft het paneel dicht.
     f'@media(max-width:1180px){{.{P}-top{{display:none}}.{P}-desk{{display:none}}'
-    f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}.{P}-cta.o{{display:none}}.{P}-mand:not(.vol){{display:none}}'
+    f'.{P}-lnk{{display:none}}.{P}-bg{{display:flex}}.{P}-cta.o{{display:none}}'
     # .o is de React-variant (state), :checked de CSS-only variant. Beide staan
     # binnen deze media query, dus op desktop blijft het paneel altijd dicht.
     f'.{P}-cb:checked~.{P}-sheet,.{P}-sheet.o{{display:flex}}}}'
@@ -424,8 +424,8 @@ PIJL = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true">'
         'stroke-linecap="round"/></svg>')
 
 
-MAND_SVG = ('<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-            'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8zM9 8V6a3 3 0 0 1 6 0v2"/></svg>')
+MAND_SVG = ('<svg aria-hidden="true" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+            'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 3.5h2.2l2.6 11.1a1.2 1.2 0 0 0 1.2.9h8.6a1.2 1.2 0 0 0 1.2-.9L20.5 7.5H5.9"/><circle cx="9.6" cy="19.6" r="1.5"/><circle cx="17" cy="19.6" r="1.5"/></svg>')
 # Zet het aantal producten uit het mandje (localStorage, zie web/app/winkel/mand.ts) bij het icoon.
 MAND_SCRIPT = ('<script>try{var n=JSON.parse(localStorage.getItem("bylder:mand:v1")||"[]").length;if(n){'
                'document.querySelectorAll("[data-mand-aantal]").forEach(function(e){e.textContent=n;'
