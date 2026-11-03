@@ -1,0 +1,43 @@
+name: GA4 inrichten en trechter per product (maandelijks)
+
+# Afgesproken met Daniel (3-11-2026). Zelfde serviceaccount als de Search Console-meting
+# (repo-secret GSC_KEY_JSON), als Editor in de GA4-property. Leest alleen cijfers en zet
+# eigen dimensies en belangrijke gebeurtenissen in GA4; raakt de site niet aan.
+# De trechter komt elke maand als issue.
+
+on:
+  schedule:
+    - cron: "41 5 2 * *"   # de 2e van de maand, na de Search Console-meting
+  workflow_dispatch:
+    inputs:
+      taak:
+        description: "inrichten of trechter"
+        default: "trechter"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  ga4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Uitvoeren
+        env:
+          GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
+        run: |
+          pip install -q google-auth requests
+          python3 scripts/ga4.py "${{ github.event.inputs.taak || 'trechter' }}"
+      - name: Trechter als issue
+        if: (github.event.inputs.taak || 'trechter') == 'trechter'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "meting" --force >/dev/null 2>&1 || true
+          gh issue create --title "Trechter per product, $(date +%m-%Y)" --body-file reports/ga4-trechter.md --label meting \
+          || gh issue create --title "Trechter per product, $(date +%m-%Y)" --body-file reports/ga4-trechter.md
