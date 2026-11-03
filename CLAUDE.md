@@ -85,7 +85,12 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   werk begint. Treden op twee plekken: `web/lib/projectkorting.ts` en app `src/lib/projectkorting.ts`. Blok met teller
   (vanaf 3) en deelknop op elke projectpagina (`ProjectKorting.tsx`), uitleg op `/projectkorting/`. Het project reist mee
   als `configuratie.project_slug` van de aanvraag; teller: app `/api/projectkorting`; de admin ziet de korting bij de
-  aanvraag. Delen = GA4 `projectkorting_delen`; deellink met utm_source=buren. Auping 5%/10% volgt na akkoord winkels.
+  aanvraag. Delen = GA4 `projectkorting_delen`; deellink met utm_source=buren.
+- **Burenkorting Auping (besluit Daniel, 3-11-2026):** 5% bij 3 woningen in hetzelfde project (jij + 2 buren), 10% bij 5.
+  Eén persoonlijke code per koper; de winkel controleert en verzilvert ingelogd in het winkelportaal
+  (app `/merchant/verzilveren`, één account per winkel, merken in `merchants.verzilver_merken`). Code in app
+  `src/lib/burenkorting.ts`; **staat uit** (`BUREN_ACTIEF`) tot de vier Auping-winkels het weten. Bij aanzetten ook de
+  ~7.700 vermeldingen "Auping: 10%" op de site aanpassen naar "tot 10%". Bestaande AUPING2026-codes blijven 10%.
 - **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
   claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
 
