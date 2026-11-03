@@ -1,6 +1,7 @@
 'use client'
 
 import { herkomst, TABLET_HERKOMST } from './herkomst'
+import { meetConfigurator } from './meet'
 
 /**
  * Een stap in de trechter van een configurator (app.bylder.com/admin/trechter).
@@ -21,6 +22,7 @@ const gemeten = new Set<string>()
 export function meetStap(product: string, stap: string) {
   if (gemeten.has(`${product}:${stap}`)) return
   gemeten.add(`${product}:${stap}`)
+  meetConfigurator(product, stap)
   try {
     const h = herkomst()
     const opslag = h === TABLET_HERKOMST ? sessionStorage : localStorage

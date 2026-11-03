@@ -13,5 +13,11 @@ export function meet(naam: string, params: Record<string, string | number | null
   } catch { /* geen gtag (adblocker): niet erg */ }
 }
 
+// Trechter per product in GA4 (3-11-2026): configurator_stap (product, stap) is de eerste
+// stap, offerte_formulier_open de tweede, generate_lead de derde. Dezelfde stappen gaan ook
+// naar de eigen trechter in de app (/admin/trechter).
+export const meetConfigurator = (product: string, stap: string) =>
+  meet('configurator_stap', { product, stap })
+
 export const meetLead = (leadType: string, params: Record<string, string | number | null> = {}) =>
   meet('generate_lead', { lead_type: leadType, ...params })

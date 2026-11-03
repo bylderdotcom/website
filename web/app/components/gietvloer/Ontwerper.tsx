@@ -18,6 +18,7 @@
 // sleutel in de URL en lokaal bewaard, in de app op het account.
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
+import { meetConfigurator } from '../meet'
 import Link from 'next/link'
 import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair, Ticket } from '@phosphor-icons/react'
 import { metRef } from '../aanbreng'
@@ -57,6 +58,7 @@ const WONING_OPSLAG = 'bylder:mijn-woning:v1'
 
 /** Een stap in de trechter (app.bylder.com/api/trechter): platte tekst, geen preflight, niet wachten. */
 function meetStap(api: string, bron: 'site' | 'app', stap: string) {
+  meetConfigurator('gietvloer', stap)
   try {
     let id = localStorage.getItem('bylder:t')
     if (!id) { id = crypto.randomUUID(); localStorage.setItem('bylder:t', id) }
