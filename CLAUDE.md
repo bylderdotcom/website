@@ -74,6 +74,12 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   `product`, `bron`, `pagina`); klikken op een afwerkverwijzing = `afwerk_klik` met `plek` (balk, onder-stap,
   regio:<plaats>, project, offerte-check, homepage). Helper: `web/app/components/meet.ts`. In GA4
   `generate_lead` als key event markeren.
+- **Vakbedrijfprofielen (besluit Daniel, 3-11-2026):** direct onder de bedrijfskaart het profielblok
+  (`web/app/components/ProfielStap.tsx`, via `MetCommercieleStap`, ook op gietvloerprofielen): "Offerte van <bedrijf>?
+  Leg hem naast de marktprijs, en naast een offerte van Bylder", hoofdknop naar het afwerkonderdeel van dat vak
+  (`/nieuwbouw-afwerken/<onderdeel>/#aanvraag`), tweede knop naar de prijscheck (`#prijscheck`), plus drie vragen
+  "Voordat je tekent bij …" per vak. Vervangt de configurator bovenaan. Meten: `commerciele_stap` plek profiel-boven
+  en `afwerk_klik` plek profiel; nulmeting 8 klikken, 0 aanvragen in 28 dagen.
 - **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
   claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
 
