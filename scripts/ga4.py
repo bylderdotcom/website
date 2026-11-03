@@ -162,6 +162,39 @@ def trechter(s, prop):
                                                "onzichtbare-plint") and not p.startswith("winkel"))
     if overig:
         regels += ["", "Overig: " + ", ".join(f"{p} ({t[p].get('generate_lead', 0)} aanvragen)" for p in overig)]
+    # Terugkerende bezoekers en betrokkenheid per groep pagina's (3-11-2026): komen mensen terug, en waar
+    # blijven ze? Groep = het eerste deel van het pad (/loodgieter/, /nieuwbouw-project/, ...).
+    nvr = rapport(s, prop, {"dateRanges": [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}],
+                            "dimensions": [{"name": "newVsReturning"}], "metrics": [{"name": "activeUsers"}]})
+    nv = {r["dimensionValues"][0]["value"]: int(r["metricValues"][0]["value"]) for r in nvr}
+    tot_nv = sum(nv.values())
+    regels += ["", "## Komen bezoekers terug?", "",
+               f"Nieuw: {nv.get('new', 0):,} · terugkerend: {nv.get('returning', 0):,}".replace(",", ".")
+               + (f" ({100 * nv.get('returning', 0) / tot_nv:.0f}%)" if tot_nv else "")]
+    paden = rapport(s, prop, {"dateRanges": [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}],
+                              "dimensions": [{"name": "pagePath"}, {"name": "newVsReturning"}],
+                              "metrics": [{"name": "screenPageViews"}, {"name": "activeUsers"}, {"name": "userEngagementDuration"}],
+                              "limit": 25000})
+    groep = {}
+    for r in paden:
+        pad, soort = (d["value"] for d in r["dimensionValues"])
+        g = "/" + (pad.strip("/").split("/")[0] + "/" if pad.strip("/") else "")
+        x = groep.setdefault(g, {"views": 0, "gebruikers": 0, "terug": 0, "sec": 0.0})
+        v, u, sec = int(r["metricValues"][0]["value"]), int(r["metricValues"][1]["value"]), float(r["metricValues"][2]["value"])
+        x["views"] += v; x["gebruikers"] += u; x["sec"] += sec
+        if soort == "returning": x["terug"] += u
+    top = sorted(groep.items(), key=lambda kv: -kv[1]["views"])[:15]
+    regels += ["", "| Groep | Weergaven | Gebruikers | Waarvan terugkerend | Tijd per gebruiker |", "|---|---|---|---|---|"]
+    for g, x in top:
+        regels.append(f"| {g} | {x['views']} | {x['gebruikers']} | {100 * x['terug'] / x['gebruikers']:.0f}% | {x['sec'] / max(1, x['gebruikers']):.0f} s |"
+                      if x["gebruikers"] else f"| {g} | {x['views']} | 0 | – | – |")
+    # "Volg je project" (sinds 3-11-2026)
+    volg = rapport(s, prop, {"dateRanges": [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}],
+                             "dimensions": [{"name": "eventName"}], "metrics": [{"name": "eventCount"}],
+                             "dimensionFilter": {"filter": {"fieldName": "eventName", "inListFilter": {"values": ["project_volgen", "projectkorting_delen"]}}}})
+    vv = {r["dimensionValues"][0]["value"]: r["metricValues"][0]["value"] for r in volg}
+    regels += ["", f"Project gevolgd: {vv.get('project_volgen', 0)} keer · projectkorting gedeeld: {vv.get('projectkorting_delen', 0)} keer"]
+
     # Vakbedrijfprofielen (profielblok sinds 3-11-2026): klikken per plek.
     plekken = rapport(s, prop, {
         "dateRanges": [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}],

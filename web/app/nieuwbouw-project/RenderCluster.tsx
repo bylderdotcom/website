@@ -5,6 +5,7 @@ import { aantalMerken } from '../../lib/merken'
 import AanbodStrook from '../components/AanbodStrook'
 import { afwerkBlokProject } from '../../lib/afwerken'
 import ProjectKorting from './ProjectKorting'
+import VolgProject from './VolgProject'
 import ProjectFilm from './ProjectFilm'
 import BurenKozen from './BurenKozen'
 import ProjectBalk from './ProjectBalk'
@@ -44,7 +45,7 @@ export default function RenderCluster({ page }: { page: ClusterPage }) {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
       <div dangerouslySetInnerHTML={{ __html: voorPk }} />
-      <div className="container"><div className="kolom"><ProjectKorting slug={page.slug} project={project} offerte={offerteUrl} /></div></div>
+      <div className="container"><div className="kolom"><ProjectKorting slug={page.slug} project={project} offerte={offerteUrl} /><VolgProject slug={page.slug} project={project} /></div></div>
       {naPk && <div dangerouslySetInnerHTML={{ __html: naPk }} />}
       <ProjectFilm />
       <BurenKozen project={page.slug} />

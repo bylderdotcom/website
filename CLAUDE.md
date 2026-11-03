@@ -91,6 +91,11 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   (app `/merchant/verzilveren`, één account per winkel, merken in `merchants.verzilver_merken`). Code in app
   `src/lib/burenkorting.ts`; **staat uit** (`BUREN_ACTIEF`) tot de vier Auping-winkels het weten. Bij aanzetten ook de
   ~7.700 vermeldingen "Auping: 10%" op de site aanpassen naar "tot 10%". Bestaande AUPING2026-codes blijven 10%.
+- **Volg je project (besluit Daniel, 3-11-2026):** onder de projectkorting op elke projectpagina (`VolgProject.tsx`):
+  e-mailadres, dubbele bevestiging, hooguit één mail per week als oplevering, bouw (Kadaster), projectkorting of
+  "Wat je buren kozen" verandert. Status per project: `web/public/data/project-status.json` (generator). App: tabel
+  `project_volgers`, `/api/project-volgen`, cron `/api/cron/project-volgers` (maandag). GA4 `project_volgen`.
+  Maandrapport (`ga4.py`) telt ook terugkerende bezoekers en betrokkenheid per groep pagina's.
 - **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
   claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
 
