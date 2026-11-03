@@ -18,7 +18,7 @@
 // sleutel in de URL en lokaal bewaard, in de app op het account.
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
-import { meetConfigurator } from '../meet'
+import { meetConfigurator, meetLead, meet as meetGa } from '../meet'
 import Link from 'next/link'
 import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair, Ticket } from '@phosphor-icons/react'
 import { metRef } from '../aanbreng'
@@ -578,9 +578,8 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
           : modus === 'site' && <ImpressieTeaser koppel={koppel} maak={() => { meet('account-klik'); return stuur({ actie: 'keuze', keuze: eff }) }} />}
         <div className="gv-twee">
           <Stalen modus={modus} w={w} kleur={keuze.kleur ?? null} matches={matches} naam={naam} stuur={stuur} />
-          {modus === 'app'
-            ? <Offerte w={w} m2={m2} type={!!type} naam={naam} stuur={stuur} />
-            : <Account koppel={koppel} maak={() => { meet('account-klik'); return stuur({ actie: 'keuze', keuze: eff }) }} />}
+          {/* Offerte zonder account vooraf, ook op de site (3-11-2026); het account komt er daarna bij. */}
+          <Offerte w={w} m2={m2} type={!!type} naam={naam} stuur={stuur} site={modus === 'site' ? () => stuur({ actie: 'keuze', keuze: eff }) : undefined} />
         </div>
         <Woning modus={modus} />
       </section>
@@ -652,31 +651,36 @@ function Stalen({ modus, w, kleur, matches, naam, stuur }: {
 
 /* ---------------------------------------------------------------- offerte (app) */
 
-function Offerte({ w, m2, type, naam, stuur }: { w: Weergave | null; m2: number; type: boolean; naam?: string; stuur: (b: Record<string, unknown>) => Promise<unknown> }) {
-  const [v, setV] = useState({ naam: naam ?? '', postcode: '', plaats: '', telefoon: '', planning: '', toelichting: '' })
+function Offerte({ w, m2, type, naam, stuur, site }: { w: Weergave | null; m2: number; type: boolean; naam?: string; stuur: (b: Record<string, unknown>) => Promise<unknown>; site?: () => Promise<unknown> }) {
+  const [v, setV] = useState({ naam: naam ?? '', email: '', postcode: '', plaats: '', telefoon: '', planning: '', toelichting: '' })
   const [akkoord, setAkkoord] = useState(false)
   const [bezig, setBezig] = useState(false)
   const [fout, setFout] = useState('')
   const [klaar, setKlaar] = useState(false)
+  // GA4 stap 2 van de trechter: de koper begint aan het formulier (eerste veld in focus), zoals
+  // offerte_formulier_open bij de deuren. Niet bij laden: het kaartje staat altijd op de pagina.
+  const begonnen = useRef(false)
+  const begin = () => { if (!begonnen.current) { begonnen.current = true; meetGa('offerte_formulier_open', { product: 'gietvloer' }) } }
   if (w?.aangevraagd || klaar) return (
     <div className="gv-kaartje gv-klaar">
       <Receipt size={26} weight="thin" aria-hidden="true" />
       <h3>Je offerte is aangevraagd</h3>
-      <p>Een gespecialiseerde verwerker krijgt je ruimtes, je kleur en je foto. Hij meet eerst in. De offerte zie je bij Mijn offertes.</p>
-      <Link className="gv-knop" href={`${APP}/dashboard/offertes`}>Naar mijn offertes<ArrowRight size={16} aria-hidden="true" /></Link>
+      <p>Een gespecialiseerde verwerker krijgt je ruimtes, je kleur en je foto. Hij meet eerst in.{site ? ' Je krijgt een mail met een knop naar je Bylder-account; daar komt de offerte. Een wachtwoord heb je niet nodig.' : ' De offerte zie je bij Mijn offertes.'}</p>
+      {!site && <Link className="gv-knop" href={`${APP}/dashboard/offertes`}>Naar mijn offertes<ArrowRight size={16} aria-hidden="true" /></Link>}
     </div>
   )
   const veld = (k: keyof typeof v, label: string, extra: React.InputHTMLAttributes<HTMLInputElement> = {}) => (
     <label className="gv-veld"><span>{label}</span><input value={v[k]} onChange={e => setV({ ...v, [k]: e.target.value })} {...extra} /></label>
   )
-  const klaarVoor = m2 > 0 && type && !!w
+  const klaarVoor = m2 > 0 && type && !!w && (!site || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.email))
   return (
-    <div className="gv-kaartje">
+    <div className="gv-kaartje" onFocusCapture={begin}>
       <Receipt size={26} weight="thin" aria-hidden="true" />
       <h3>Vraag de offerte aan</h3>
       <p>Bij een gespecialiseerde verwerker. Hij krijgt je ruimtes, kleur en inspiratiefoto, en meet eerst in. Gratis en vrijblijvend.</p>
       <div className="gv-velden">
         {veld('naam', 'Naam', { autoComplete: 'name' })}
+        {site && veld('email', 'E-mail', { type: 'email', autoComplete: 'email' })}
         <div className="gv-velden-rij">{veld('postcode', 'Postcode', { autoComplete: 'postal-code', className: 'kort' })}{veld('plaats', 'Plaats', { autoComplete: 'address-level2' })}</div>
         {veld('telefoon', 'Telefoon (handig voor het inmeten)', { type: 'tel', autoComplete: 'tel' })}
         <label className="gv-veld"><span>Wanneer?</span>
@@ -689,9 +693,15 @@ function Offerte({ w, m2, type, naam, stuur }: { w: Weergave | null; m2: number;
       <label className="gv-akkoord"><input type="checkbox" checked={akkoord} onChange={e => setAkkoord(e.target.checked)} /><span>Bylder mag mijn aanvraag, naam en contactgegevens delen met de verwerker.</span></label>
       <button type="button" className="gv-knop gv-knop-primair" disabled={bezig || !klaarVoor || !akkoord} onClick={async () => {
         setFout(''); setBezig(true)
-        try { await stuur({ actie: 'offerte', ...v, akkoord }); setKlaar(true) } catch (e) { setFout((e as Error).message) } finally { setBezig(false) }
+        try {
+          if (site) await site() // laatste keuze eerst bewaren
+          await stuur({ actie: 'offerte', ...v, akkoord })
+          meetLead('offerte', { product: 'gietvloer', bron: site ? 'gietvloer-ontwerper-site' : 'app' })
+          setKlaar(true)
+        } catch (e) { setFout((e as Error).message) } finally { setBezig(false) }
       }}>{bezig ? 'Bezig…' : 'Vraag de offerte aan'}</button>
-      {!klaarVoor && <p className="gv-klein">Kies eerst de ruimtes en het type.</p>}
+      {!klaarVoor && <p className="gv-klein">{m2 > 0 && type ? 'Vul je naam en e-mailadres in.' : 'Kies eerst de ruimtes en het type.'}</p>}
+      {site && <p className="gv-klein">Gratis en vrijblijvend. Je Bylder-account maken we er meteen bij, zonder wachtwoord.</p>}
       {fout && <p role="alert" className="gv-fout">{fout}</p>}
     </div>
   )
@@ -797,36 +807,6 @@ function ImpressieTeaser({ koppel, maak }: { koppel: string | null; maak: () => 
           if (link) window.location.href = metRef(link)
         } finally { setBezig(false) }
       }}><Sparkle size={18} aria-hidden="true" />Maak mijn impressie<ArrowRight size={16} aria-hidden="true" /></button>
-    </div>
-  )
-}
-
-/* ---------------------------------------------------------------- account (website) */
-
-function Account({ koppel, maak }: { koppel: string | null; maak: () => Promise<unknown> }) {
-  const [bezig, setBezig] = useState(false)
-  return (
-    <div className="gv-kaartje gv-account">
-      <Receipt size={26} weight="thin" aria-hidden="true" />
-      <h3>Offerte? Ga verder in je Bylder-omgeving</h3>
-      <p>Maak een gratis account en neem je vloer mee. Daar vraag je de offerte aan, en ligt de rest van je woning ook klaar.</p>
-      <ul className="gv-voordelen">
-        <li><Check size={15} weight="bold" aria-hidden="true" />Offerte van een gespecialiseerde verwerker, op jouw ruimtes en kleur</li>
-        <li><Check size={15} weight="bold" aria-hidden="true" />Een fotorealistisch beeld van je eigen woonkamer met deze vloer</li>
-        <li><Check size={15} weight="bold" aria-hidden="true" />Je vloer, je kleur en je foto blijven bewaard, op telefoon en laptop</li>
-        <li><Check size={15} weight="bold" aria-hidden="true" />Ook je binnendeuren en kasten op maat ontwerpen, in dezelfde woning</li>
-        <li><Check size={15} weight="bold" aria-hidden="true" />Ledenkorting bij de merken die meedoen, en een adviseur die je stalen van showroom naar showroom meeneemt</li>
-      </ul>
-      <button type="button" className="gv-knop gv-knop-primair" disabled={bezig} onClick={async () => {
-        setBezig(true)
-        try {
-          // Eerst de laatste keuze bewaren (en zo nodig het ontwerp aanmaken), dan naar de app.
-          const d = await maak() as Weergave
-          const link = d?.sleutel ? `${APP}/dashboard/gietvloer/koppel?id=${encodeURIComponent(d.id)}&s=${encodeURIComponent(d.sleutel)}` : koppel
-          if (link) window.location.href = metRef(link)
-        } finally { setBezig(false) }
-      }}>Maak een account en vraag de offerte aan<ArrowRight size={16} aria-hidden="true" /></button>
-      <p className="gv-klein">Gratis, geen abonnement. Een account maken duurt een halve minuut.</p>
     </div>
   )
 }
