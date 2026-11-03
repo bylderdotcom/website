@@ -13,6 +13,7 @@ import { VOORBEELD_HOEKKAST, type Ontwerp } from '@/lib/kast/ontwerp'
 import { Plattegrond, Uitslag } from './Tekeningen'
 import Werkplaats from './Werkplaats'
 import { metRef } from '../aanbreng'
+import { meetConfigurator } from '../meet'
 
 // Het ontwerpscherm: links het gesprek met de AI, rechts de kast (3D, aanzicht,
 // plattegrond, werkplaats). Alles rechts komt uit het rekenmodel.
@@ -101,6 +102,7 @@ export default function Ontwerper({ start }: { start?: string }) {
     let id0 = q.get('id'), s0 = q.get('s')
     if (!id0 || !s0) { try { const o = JSON.parse(localStorage.getItem(OPSLAG) || 'null'); if (o?.id && o?.s) { id0 = o.id; s0 = o.s } } catch {} }
     if (id0 && s0) laad(id0, s0)
+    meetConfigurator('kast', 'opening')
     const st = q.get('start') || start
     const gevonden = STARTERS.find(x => x.slug === st)
     if (gevonden && !(id0 && s0)) setTekst(gevonden.tekst)
@@ -158,6 +160,7 @@ export default function Ontwerper({ start }: { start?: string }) {
     e?.preventDefault()
     if (bezig || (!tekst.trim() && !fotos.length)) return
     setBezigStap(0); setBezig(true); setFout('')
+    if (!gesprek.length) meetConfigurator('kast', 'eerste-bericht')
     const tag = metPlattegrond && fotos.length ? '[Plattegrond] ' : ''
     const mijn: Regel = { rol: 'koper', tekst: tag + tekst.trim(), fotos: fotos.length }
     setGesprek(g => [...g, mijn])
@@ -333,6 +336,7 @@ export default function Ontwerper({ start }: { start?: string }) {
 }
 
 async function bewaar(id: string, s: string, email: string) {
+  meetConfigurator('kast', 'bewaard')
   const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ actie: 'bewaar', id, s, email }) })
   const j = await r.json().catch(() => ({}))
   return r.ok ? null : (j.error || 'Bewaren mislukt')

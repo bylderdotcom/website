@@ -16,6 +16,7 @@
 // Zonder WebGL of met 'minder beweging' staat meteen het eindbeeld stil.
 
 import { useEffect, useRef, useState } from 'react'
+import { meetConfigurator } from '../meet'
 import * as THREE from 'three'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js'
@@ -325,6 +326,7 @@ function maakScene(doek: HTMLDivElement, opFase: (f: number) => void, rustig: bo
 
 /** Een stap in de trechter van de app; zie /admin/trechter. */
 function meetStap(api: string, stap: string) {
+  meetConfigurator('gietvloer', stap)
   try {
     let id = localStorage.getItem('bylder:t')
     if (!id) { id = crypto.randomUUID(); localStorage.setItem('bylder:t', id) }
