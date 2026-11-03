@@ -89,8 +89,8 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
 - **Burenkorting Auping (besluit Daniel, 3-11-2026):** 5% bij 3 woningen in hetzelfde project (jij + 2 buren), 10% bij 5.
   Eén persoonlijke code per koper; de winkel controleert en verzilvert ingelogd in het winkelportaal
   (app `/merchant/verzilveren`, één account per winkel, merken in `merchants.verzilver_merken`). Code in app
-  `src/lib/burenkorting.ts`; **staat uit** (`BUREN_ACTIEF`) tot de vier Auping-winkels het weten. Bij aanzetten ook de
-  ~7.700 vermeldingen "Auping: 10%" op de site aanpassen naar "tot 10%". Bestaande AUPING2026-codes blijven 10%.
+  `src/lib/burenkorting.ts`; **aan sinds 3-11-2026** (`BUREN_ACTIEF`); de site zegt overal "tot 10%". Winkels koppelt
+  Daniel met een SQL-regel zodra ze een account hebben. Bestaande AUPING2026-codes blijven 10%.
 - **Volg je project (besluit Daniel, 3-11-2026):** onder de projectkorting op elke projectpagina (`VolgProject.tsx`):
   e-mailadres, dubbele bevestiging, hooguit één mail per week als oplevering, bouw (Kadaster), projectkorting of
   "Wat je buren kozen" verandert. Status per project: `web/public/data/project-status.json` (generator). App: tabel
