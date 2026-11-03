@@ -24,16 +24,16 @@ name: Opgezochte feiten per project schrijven
 # (waarde + bron + verse controledatum).
 
 on:
-  # Om de week, op zaterdag (besluit Daniel, 23-10-2026): een feit is 400 dagen
-  # houdbaar en er komen per week maar een paar projecten bij. GitHub kent geen
-  # tweewekelijks schema; de job draait elke zaterdag en stopt in de oneven weken.
+  # Elke zaterdag (sinds 3-11-2026; daarvoor om de week, besluit 23-10-2026): sinds
+  # de projectronde zelf publiceert komen er elke week pagina's bij die feiten nodig
+  # hebben. Een feit blijft 400 dagen houdbaar.
   # Bewust ná de ontdekkingsloop (vrijdag 07:00) en de publicatieloop (donderdag
   # 05:00): nieuwe projecten zijn dan al binnen.
   #
   # Het script slaat over wat het al heeft, dus een ronde raakt alleen wat nog leeg
   # is of wat ouder is dan de houdbaarheid van 400 dagen.
   schedule:
-    - cron: "0 6 * * 6"   # zaterdag 06:00 UTC, alleen in even weken
+    - cron: "0 6 * * 6"   # zaterdag 06:00 UTC, elke week
   workflow_dispatch:
     inputs:
       max:
@@ -58,12 +58,9 @@ jobs:
       - name: Om de week
         id: week
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ] && [ $(( 10#$(date +%V) % 2 )) -eq 1 ]; then
-            echo "Oneven week ($(date +%V)): deze zaterdag niet."
-            echo "door=nee" >> "$GITHUB_OUTPUT"
-          else
-            echo "door=ja" >> "$GITHUB_OUTPUT"
-          fi
+          # Sinds 3-11-2026 elke week (besluit Daniel): met 533 projectpagina's en elke week
+          # nieuwe erbij is om de week te traag. De stap blijft staan, zodat terugzetten één regel is.
+          echo "door=ja" >> "$GITHUB_OUTPUT"
 
       - uses: actions/checkout@v4
         if: steps.week.outputs.door == 'ja'
