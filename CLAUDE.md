@@ -226,6 +226,11 @@ een kwartier live" zonder `vercel ls website` te checken.
   geen pagina weg, mediaan eigen tekst niet gedaald, hooguit 25% van de feiten weggegooid. Anders een
   tak plus een issue. Reden: de tak-plus-handmatige-PR bleef na 1 oktober drie rondes liggen. Een
   nieuwe loop die zelf publiceert vraagt opnieuw om Daniels akkoord en om zulke controles.
+- **De projectronde mag zelf naar main (besluit Daniel, 3-11-2026).** `nieuwbouw-discovery.yml` (vrijdag) zet nieuwe
+  projecten uit nieuwbouw.nl én Nieuw Wonen Nederland in `data/nieuwbouwprojecten.json` en start daarna de
+  publicatieronde, alleen als: de lijst niet krimpt, hooguit 100 nieuwe per ronde, geldige JSON. Anders tak + issue.
+  De feitenronde (`handwerk-schrijver.yml`) draait sinds dezelfde dag **elke** zaterdag. Volgende stap (nog niet
+  gebouwd): maandelijkse verbeterronde op GSC-cijfers per projectpagina; daarvoor is Search Console-toegang nodig.
 - **Ook de maandelijkse ronde voor woonwinkels uit OpenStreetMap mag zelf naar main (besluit Daniel,
   23-10-2026).** `osm-winkels.yml` ververst `data/winkels-osm.json`, alleen als er minstens 1.500
   winkels zijn en het aantal niet meer dan 20% daalt; anders een tak plus een issue. Google Places

@@ -1,14 +1,21 @@
-name: Nieuwe nieuwbouwprojecten ontdekken (wekelijks)
+name: Nieuwe nieuwbouwprojecten ontdekken en publiceren (wekelijks)
 
-# Vindt elke week de nieuw op de markt gekomen nieuwbouwprojecten, verrijkt
-# alleen die nieuwe (beleefd: ~2s tussen requests) en scoort ze op
-# pagina-waardigheid. Opent een issue met de kandidaten.
+# Vindt elke week de nieuw op de markt gekomen nieuwbouwprojecten, uit beide bronnen
+# (nieuwbouw.nl en Nieuw Wonen Nederland), zet ze in de projectlijst en start daarna
+# de publicatieronde, die er een pagina van maakt.
 #
-# Standing order (CLAUDE.md): read-only, reviewbare output, geen auto-publish.
-# Deze loop genereert dus GEEN projectpagina's. Waarom niet: 995 bijna-identieke
-# pagina's is de dunne-content-val die de kortingscode-pagina's op noindex
-# bracht — en die sinds Helpful Content het hele domein meesleept. Een mens
-# kiest uit de kandidatenlijst welke projecten een volwaardige pagina krijgen.
+# WAAROM DIT SINDS 3-11-2026 ZELF NAAR MAIN GAAT (besluit Daniel)
+# Tot deze dag maakte de ronde alleen een lijstje (een issue). De nieuwe projecten
+# kwamen nooit in data/nieuwbouwprojecten.json, dus het aantal projectpagina's groeide
+# niet. Daniel: "het aantal nieuwbouwprojectpagina's uitbreiden zodra er een nieuw
+# project wordt geïdentificeerd". Welke projecten een pagina krijgen beslist de poort
+# in generate_projectpaginas.py (MIN_FEITEN), niet deze ronde.
+#
+# Zoals elke ronde die zelf publiceert: alleen als de controles slagen.
+#   1. de projectlijst krimpt niet;
+#   2. hooguit 100 nieuwe projecten in één ronde (meer wijst op een kapotte bron);
+#   3. de lijst is geldige JSON.
+# Slaagt er één niet, dan een tak plus een issue in plaats van main.
 
 on:
   schedule:
@@ -16,60 +23,131 @@ on:
   workflow_dispatch:
     inputs:
       max_pages:
-        description: "Aantal lijstpagina's om te scannen"
+        description: "Aantal lijstpagina's van nieuwbouw.nl om te scannen"
         default: "60"
 
 permissions:
-  contents: read
+  contents: write
   issues: write
+  actions: write
+
+# Dezelfde rij als de publicatie- en feitenronde: die schrijven in dezelfde bestanden.
+concurrency:
+  group: projectpaginas-publiceren
+  cancel-in-progress: false
 
 jobs:
   discover:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
-      - name: Scan en scoor nieuwe projecten
+      - name: Aantal vóór de ronde
+        run: python3 -c "import json;print(len(json.load(open('data/nieuwbouwprojecten.json'))['projecten']))" > /tmp/voor.txt
+
+      - name: Nieuwbouw.nl scannen en nieuwe projecten verrijken
         run: python3 scripts/nieuwbouw_scraper.py discover "${{ github.event.inputs.max_pages || '60' }}"
 
-      - name: Bouw kandidatentabel
+      # Tweede bron: alleen feiten (zie de kop van nwn_scraper.py). Nieuwe adressen uit de
+      # sitemap, daarvan hooguit 150 ophalen per ronde, en wat een aantal woningen of een
+      # prijs noemt in de hoofdlijst zetten.
+      - name: Nieuw Wonen Nederland bijwerken
+        run: |
+          python3 scripts/nwn_scraper.py --lijst
+          python3 scripts/nwn_scraper.py --haal 150
+          python3 scripts/nwn_scraper.py --samenvoegen
+
+      - name: Kandidatentabel
         id: tabel
         run: |
-          python3 scripts/report_nieuwe_projecten.py > /tmp/tabel.md
-          echo "nieuw=$(python3 -c "import json;print(json.load(open('reports/nieuwe-projecten.json'))['nieuw'])")" >> "$GITHUB_OUTPUT"
-          cat /tmp/tabel.md
+          python3 scripts/report_nieuwe_projecten.py > /tmp/tabel.md || echo "(geen tabel)" > /tmp/tabel.md
+          echo "nieuw=$(python3 -c "import json;print(json.load(open('reports/nieuwe-projecten.json'))['nieuw'])" 2>/dev/null || echo 0)" >> "$GITHUB_OUTPUT"
 
-      - name: Open issue met kandidaten
-        if: steps.tabel.outputs.nieuw != '0'
+      - name: Controles
+        id: controle
+        run: |
+          python3 - <<'PY'
+          import json, os
+          fouten = []
+          try:
+              na = len(json.load(open("data/nieuwbouwprojecten.json"))["projecten"])
+          except Exception as e:
+              na = None
+              fouten.append(f"projectlijst onleesbaar: {e}")
+          voor = int(open("/tmp/voor.txt").read().strip())
+          if na is not None:
+              if na < voor:
+                  fouten.append(f"projectlijst krimpt van {voor} naar {na}")
+              elif na - voor > 100:
+                  fouten.append(f"{na - voor} nieuwe projecten in één ronde (meer dan 100)")
+          print(f"projecten: {voor} → {na}")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"ok={'nee' if fouten else 'ja'}\n")
+              f.write(f"erbij={(na or voor) - voor}\n")
+              f.write(f"fouten={'; '.join(fouten)}\n")
+          for x in fouten:
+              print(f"::warning::{x}")
+          PY
+
+      - name: Naar main en publiceren
+        id: main
+        if: steps.controle.outputs.ok == 'ja'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          git add data/nieuwbouwprojecten.json data/nwn-projecten.json
+          if git diff --staged --quiet; then
+            echo "Geen nieuwe projecten."
+            exit 0
+          fi
+          git commit -q -m "Nieuwe nieuwbouwprojecten: ${{ steps.controle.outputs.erbij }} erbij ($(date +%d-%m-%Y))"
+          if git pull -q --rebase origin main && git push -q origin HEAD:main; then
+            echo "Naar main gepusht; publicatieronde starten."
+            gh workflow run projectpaginas-publiceren.yml --ref main
+          else
+            git rebase --abort 2>/dev/null || true
+            echo "push=mislukt" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Tak en issue als het niet naar main kon
+        if: steps.controle.outputs.ok == 'nee' || steps.main.outputs.push == 'mislukt'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FOUTEN: ${{ steps.controle.outputs.fouten }}
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          TAK="nieuwe-projecten-$(date +%Y%m%d-%H%M)"
+          git checkout -q -b "$TAK"
+          git add data/nieuwbouwprojecten.json data/nwn-projecten.json
+          git commit -q -m "Nieuwe projecten, ronde $(date +%d-%m-%Y) (niet naar main: ${FOUTEN:-push mislukt})" || true
+          git push -q origin "$TAK"
+          gh issue create \
+            --title "Projectronde $(date +%d-%m-%Y) niet gepubliceerd" \
+            --body "$(printf 'De ronde voor nieuwe nieuwbouwprojecten is niet naar main gegaan.\n\nReden: %s\n\nDe uitkomst staat op de tak `%s`. Kijk wat er misging; is het in orde, merge dan die tak.\n\nRun: %s' "${FOUTEN:-push naar main mislukt}" "$TAK" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}")"
+
+      # Ter informatie: wat er binnenkwam. Geen actie nodig.
+      - name: Overzicht als issue
+        if: steps.tabel.outputs.nieuw != '0' && steps.controle.outputs.ok == 'ja'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           {
-            echo "De wekelijkse scan vond **${{ steps.tabel.outputs.nieuw }}** nieuwe projecten."
+            echo "De wekelijkse scan vond **${{ steps.tabel.outputs.nieuw }}** nieuwe projecten op nieuwbouw.nl;"
+            echo "met Nieuw Wonen Nederland kwamen er **${{ steps.controle.outputs.erbij }}** in de projectlijst."
             echo
-            echo "## Kandidaten (score >= 60)"
+            echo "Ze staan in de lijst en de publicatieronde is gestart: wie de poort haalt, heeft vandaag een pagina."
+            echo "Geen actie nodig; dit is ter informatie."
             echo
             cat /tmp/tabel.md
-            echo
-            echo "**Volgende stap:** niets, als het goed is. De poort in \`generate_projectpaginas.py\` bepaalt"
-            echo "welke projecten een pagina krijgen, en de publicatieloop (donderdag) zet ze erop."
-            echo "Deze lijst is er om te zien wát er binnenkomt, niet om met de hand over te tikken."
-            echo "\`bronnen.json\` is alleen nog voor de handgeschreven pagina's; voeg daar niets aan toe."
-            echo
-            echo "Volledig rapport: \`reports/nieuwe-projecten.json\` (artifact van deze run)."
           } > /tmp/body.md
-          # Een label dat niet bestaat laat `gh issue create` falen, en met de
-          # `|| true` erachter verdween het alarm dan geruisloos. Dat is precies
-          # wat er met de meting van 15 september gebeurde. Daarom eerst zorgen
-          # dat het label bestaat.
           gh label create "content-kandidaten" --force >/dev/null 2>&1 || true
-          gh issue create \
-            --title "Nieuwe nieuwbouwprojecten: ${{ steps.tabel.outputs.nieuw }} gevonden ($(date +%F))" \
-            --body-file /tmp/body.md \
-            --label "content-kandidaten" \
-          || gh issue create \
-            --title "Nieuwe nieuwbouwprojecten ($(date +%F))" \
-            --body-file /tmp/body.md
+          gh issue create --title "Nieuwe nieuwbouwprojecten: ${{ steps.controle.outputs.erbij }} erbij ($(date +%F))" \
+            --body-file /tmp/body.md --label "content-kandidaten" \
+          || gh issue create --title "Nieuwe nieuwbouwprojecten ($(date +%F))" --body-file /tmp/body.md
 
       - uses: actions/upload-artifact@v4
         if: always()
