@@ -162,6 +162,21 @@ def trechter(s, prop):
                                                "onzichtbare-plint") and not p.startswith("winkel"))
     if overig:
         regels += ["", "Overig: " + ", ".join(f"{p} ({t[p].get('generate_lead', 0)} aanvragen)" for p in overig)]
+    # Vakbedrijfprofielen (profielblok sinds 3-11-2026): klikken per plek.
+    plekken = rapport(s, prop, {
+        "dateRanges": [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}],
+        "dimensions": [{"name": "eventName"}, {"name": "customEvent:plek"}],
+        "metrics": [{"name": "eventCount"}],
+        "dimensionFilter": {"filter": {"fieldName": "eventName", "inListFilter": {"values": [
+            "commerciele_stap", "afwerk_klik"]}}},
+        "limit": 100})
+    if plekken:
+        regels += ["", "## Klikken per plek", "", "| Event | Plek | Klikken |", "|---|---|---|"]
+        for r in sorted(plekken, key=lambda r: -int(r["metricValues"][0]["value"])):
+            ev, pl = (d["value"] for d in r["dimensionValues"])
+            regels.append(f"| {ev} | {pl} | {r['metricValues'][0]['value']} |")
+        regels += ["", "Profielblok: commerciele_stap plek profiel-boven (beide knoppen) en afwerk_klik plek profiel "
+                   "(alleen 'Vraag een offerte aan bij Bylder'). Nulmeting tot 3-11: 8 klikken op de stap."]
     os.makedirs(os.path.dirname(RAPPORT), exist_ok=True)
     open(RAPPORT, "w", encoding="utf8").write("\n".join(regels) + "\n")
     print("\n".join(regels))
