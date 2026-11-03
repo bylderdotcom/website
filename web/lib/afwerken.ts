@@ -209,7 +209,7 @@ const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
  * zijn eigen vakman kan laten meekijken.
  */
 export function afwerkBlokProject(project: string, slug: string, oplevering: string | null): string {
-  const q = new URLSearchParams({ project, ...(oplevering ? { oplevering } : {}) }).toString()
+  const q = new URLSearchParams({ project, project_slug: slug, ...(oplevering ? { oplevering } : {}) }).toString()
   const offerte = `/nieuwbouw-afwerken/?${q}#aanvraag`
   const voorbeeld = `/mijn-woning/?voorbeeld&${new URLSearchParams({ project: slug, naam: project }).toString()}`
   const meet = (plek: string) => `window.gtag&&gtag('event','afwerk_klik',{plek:'${plek}',pagina:location.pathname})`

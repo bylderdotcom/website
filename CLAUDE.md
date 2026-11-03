@@ -80,6 +80,12 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   (`/nieuwbouw-afwerken/<onderdeel>/#aanvraag`), tweede knop naar de prijscheck (`#prijscheck`), plus drie vragen
   "Voordat je tekent bij …" per vak. Vervangt de configurator bovenaan. Meten: `commerciele_stap` plek profiel-boven
   en `afwerk_klik` plek profiel; nulmeting 8 klikken, 0 aanvragen in 28 dagen.
+- **Projectkorting (besluit Daniel, 3-11-2026):** korting op de afwerking door Bylder die stijgt met het aantal woningen
+  in hetzelfde nieuwbouwproject met een getekende opdracht: 4% vanaf 2, 7% vanaf 4, 10% vanaf 6; ook achteraf, tot het
+  werk begint. Treden op twee plekken: `web/lib/projectkorting.ts` en app `src/lib/projectkorting.ts`. Blok met teller
+  (vanaf 3) en deelknop op elke projectpagina (`ProjectKorting.tsx`), uitleg op `/projectkorting/`. Het project reist mee
+  als `configuratie.project_slug` van de aanvraag; teller: app `/api/projectkorting`; de admin ziet de korting bij de
+  aanvraag. Delen = GA4 `projectkorting_delen`; deellink met utm_source=buren. Auping 5%/10% volgt na akkoord winkels.
 - **Geloofwaardigheid:** de offerte-check vergelijkt ook onze eigen offertes met marktprijzen. Geen
   claims over garantie of verzekering op de site zolang die niet zijn vastgelegd. Btw 21% (nieuwbouw).
 
