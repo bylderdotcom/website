@@ -127,7 +127,11 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
   eenmalig vooraf (richtprijs Daniel).
 - **Deuren: Bylder maakt de offerte (besluit Daniel, 3-11-2026).** Niet "een vakbedrijf"; de koper sluit de opdracht
   met Bylder (app: `BYLDER_OFFERTE`). Classic Next maakt, een vakbedrijf monteert; Bylder is het aanspreekpunt.
-- **OPEN, niet vergeten: GA4 inrichten (afgesproken met Daniel, 3-11-2026).** De events bestaan al (`generate_lead`,
+- **GA4 ingericht (3-11-2026):** serviceaccount `bylder-gsc-reader@bylder-gsc.iam.gserviceaccount.com` (sleutel = repo-secret
+  `GSC_KEY_JSON`) is Editor op property 540349275. `scripts/ga4.py inrichten` maakte 7 eigen dimensies (product, stap,
+  lead_type, bron, plek, knop, pagina); `ga4.yml` zet elke 2e van de maand de trechter per product als issue.
+  Nulmeting 6-10 t/m 3-11: 14.679 paginaweergaven, 1 offerteformulier geopend, 0 aanvragen, 8 klikken op een commerciële stap.
+- **Was OPEN: GA4 inrichten (afgesproken met Daniel, 3-11-2026).** De events bestaan al (`generate_lead`,
   `offerte_formulier_open`, `afwerk_klik`, `menu_klik`, `mand_toevoegen`, `afrekenen_open`, sinds 3-11 ook
   `configurator_stap` met `product` en `stap` voor deuren, gietvloer en kast); nog nodig in GA4 zelf (Daniel): een trechter
   per product (configurator bekeken → formulier geopend → aanvraag verstuurd), key events en een vast rapport.
