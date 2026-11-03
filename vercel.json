@@ -1051,6 +1051,51 @@
       "source": "/nieuwbouw-project/schoterkwartier-fase-2-woningen-haarlem/",
       "destination": "/nieuwbouw-project/schoterkwartier-fase-haarlem/",
       "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/victoriapark-hoofddorp-fase-3-haarlemmermeer/",
+      "destination": "/nieuwbouw-project/victoriapark-hoofddorp-haarlemmermeer/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/het-veld-fase-4-oss/",
+      "destination": "/nieuwbouw-project/het-veld-oss/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/cix-merwede-fase-3-utrecht/",
+      "destination": "/nieuwbouw-project/cix-merwede-utrecht/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/kop-west-fase-1-alphen-aan-den-rijn/",
+      "destination": "/nieuwbouw-project/kop-west-alphen-aan-den-rijn/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/eilanden-van-hain-fase-1-zaanstad/",
+      "destination": "/nieuwbouw-project/eilanden-van-hain-zaanstad/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/walzicht-fase-4-bergen-op-zoom/",
+      "destination": "/nieuwbouw-project/walzicht-bergen-op-zoom/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/parckhart-fase-1-soest/",
+      "destination": "/nieuwbouw-project/parckhart-soest/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/volharding-fase-1-westerkwartier/",
+      "destination": "/nieuwbouw-project/volharding-westerkwartier/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/volharding-fase-3-westerkwartier/",
+      "destination": "/nieuwbouw-project/volharding-westerkwartier/",
+      "permanent": true
     }
   ],
   "rewrites": [
