@@ -66,6 +66,9 @@ export default function OfferteFormulier(p: {
             : 'Je krijgt een bevestiging per mail, met een knop naar je aanvraag in je Bylder-account. Daar zie je ook hoe het ermee staat. '}
           {bestelling ? null : aannemer
             ? 'We nemen binnen twee werkdagen contact met je op om je woning en de planning door te nemen. De offerte komt van Bylder: één prijs voor alles. Het werk doen vakbedrijven uit de regio, en wij plannen en controleren het.'
+            : p.product === 'kozijnloze-deur'
+            // Bylder maakt de offerte voor de deuren (besluit Daniel, 3-11-2026).
+            ? 'We kijken je samenstelling na en sturen je binnen twee werkdagen een offerte van Bylder. Ga je akkoord, dan sluit je de opdracht met Bylder; je hebt één aanspreekpunt.'
             : 'We zoeken een vakbedrijf dat dit bij jou kan maken. De offerte komt van dat bedrijf; ga je akkoord, dan sluit je de opdracht met hen, niet met Bylder.'}
         </p>
       </div>

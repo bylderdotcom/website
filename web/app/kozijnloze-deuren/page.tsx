@@ -484,10 +484,8 @@ export default function OnzichtbaarKozijnPage() {
       </p>
       <p style={{ ...P, fontSize: 13, color: `${INKT}0.55)`, marginTop: 28 }}>
         Laatst bijgewerkt: 5 oktober 2026. Prijzen zijn de bedragen die leveranciers in augustus 2026 zelf
-        publiceerden. Wij verkopen deze kozijnen niet zelf. Met Classic Next werkt Bylder samen: vraag je via
-        Bylder een offerte aan en geef je Classic Next de opdracht, dan ontvangt Bylder daarvoor een vergoeding
-        van Classic Next. Dat verandert niets aan jouw prijs. Voor de andere genoemde systemen krijgen we geen
-        vergoeding.
+        publiceerden. Kozijnloze deuren van Classic Next verkopen we zelf: de offerte komt van Bylder. Voor de
+        andere genoemde systemen krijgen we geen vergoeding.
       </p>
 
       <h2 style={H2}>Veelgestelde vragen</h2>

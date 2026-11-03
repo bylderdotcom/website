@@ -125,6 +125,12 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
   `web/app/components/EigenVakmanMeekijken.tsx` (homepage, hoe-het-werkt, mijn-woning, deuren,
   gietvloer, kasten). VS-aanbod: uploaden + 3D + configuratoren + eigen bedrijven uitnodigen, $399
   eenmalig vooraf (richtprijs Daniel).
+- **Deuren: Bylder maakt de offerte (besluit Daniel, 3-11-2026).** Niet "een vakbedrijf"; de koper sluit de opdracht
+  met Bylder (app: `BYLDER_OFFERTE`). Classic Next maakt, een vakbedrijf monteert; Bylder is het aanspreekpunt.
+- **OPEN, niet vergeten: GA4 inrichten (afgesproken met Daniel, 3-11-2026).** De events bestaan al (`generate_lead`,
+  `offerte_formulier_open`, `afwerk_klik`, `menu_klik`, `mand_toevoegen`, `afrekenen_open`); nog nodig: een trechter
+  per product (configurator bekeken → formulier geopend → aanvraag verstuurd), key events en een vast rapport.
+  Bij elk gesprek over conversie, offertes of bezoek: Daniel herinneren als dit nog niet gedaan is.
 - **OPEN, niet vergeten: lijst met volgende producten die kopers in hun woning kunnen toevoegen.**
   Nu: binnendeuren, gietvloer, kast op maat (en plinten via offerte). Bij elk gesprek over de
   tweeling, configuratoren of de VS-lancering: Daniel herinneren dat deze lijst nog gemaakt moet worden.
