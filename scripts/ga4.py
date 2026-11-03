@@ -215,8 +215,34 @@ def trechter(s, prop):
     print("\n".join(regels))
 
 
+def paden(s, prop, prefix):
+    """Per pagina binnen een groep (bv. /kozijnloze-deuren/): weergaven, gebruikers, tijd, terugkerend."""
+    eind = date.today() - timedelta(days=1)
+    begin = eind - timedelta(days=27)
+    rijen = rapport(s, prop, {"dateRanges": [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}],
+                              "dimensions": [{"name": "pagePath"}],
+                              "metrics": [{"name": "screenPageViews"}, {"name": "activeUsers"}, {"name": "userEngagementDuration"}],
+                              "dimensionFilter": {"filter": {"fieldName": "pagePath", "stringFilter": {"matchType": "BEGINS_WITH", "value": prefix}}},
+                              "limit": 200})
+    print(f"Pagina's onder {prefix}, {begin:%d-%m} t/m {eind:%d-%m-%Y}")
+    for r in sorted(rijen, key=lambda r: -int(r["metricValues"][0]["value"])):
+        pad = r["dimensionValues"][0]["value"]
+        v, u, sec = (float(m["value"]) for m in r["metricValues"])
+        print(f"  {pad}: {int(v)} weergaven, {int(u)} gebruikers, {sec / max(1, u):.0f} s per gebruiker")
+    # Bronnen van die gebruikers, om te zien waar ze vandaan komen.
+    bron = rapport(s, prop, {"dateRanges": [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}],
+                             "dimensions": [{"name": "sessionDefaultChannelGroup"}], "metrics": [{"name": "activeUsers"}],
+                             "dimensionFilter": {"filter": {"fieldName": "pagePath", "stringFilter": {"matchType": "BEGINS_WITH", "value": prefix}}}})
+    print("  kanalen: " + ", ".join(f"{r['dimensionValues'][0]['value']} {r['metricValues'][0]['value']}" for r in bron))
+
+
 if __name__ == "__main__":
     taak = sys.argv[1] if len(sys.argv) > 1 else "trechter"
     s = sessie()
     prop = vind_property(s)
-    inrichten(s, prop) if taak == "inrichten" else trechter(s, prop)
+    if taak == "inrichten":
+        inrichten(s, prop)
+    elif taak.startswith("paden:"):
+        paden(s, prop, taak.split(":", 1)[1])
+    else:
+        trechter(s, prop)

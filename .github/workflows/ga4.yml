@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       taak:
-        description: "inrichten of trechter"
+        description: "inrichten, trechter of paden:/groep/"
         default: "trechter"
 
 permissions:
