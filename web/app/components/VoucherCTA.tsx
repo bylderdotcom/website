@@ -26,7 +26,7 @@ export default function VoucherCTA({
       )}
       <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>
         <a href="/vouchers/" style={{ display: 'inline-block', background: '#F5F0E8', color: '#1A1208', fontWeight: 800, fontSize: 16, padding: '15px 26px', borderRadius: 12, textDecoration: 'none' }}>Bekijk de kortingen &rarr;</a>
-        <a href="/vouchers/auping/" style={{ color: '#F5F0E8', fontWeight: 700, fontSize: 14.5 }}>Auping: 10% en een gratis leenbed</a>
+        <a href="/vouchers/auping/" style={{ color: '#F5F0E8', fontWeight: 700, fontSize: 14.5 }}>Auping: tot 10% en een gratis leenbed</a>
       </div>
     </aside>
   )
