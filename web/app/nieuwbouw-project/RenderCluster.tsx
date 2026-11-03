@@ -6,6 +6,7 @@ import AanbodStrook from '../components/AanbodStrook'
 import { afwerkBlokProject } from '../../lib/afwerken'
 import ProjectFilm from './ProjectFilm'
 import BurenKozen from './BurenKozen'
+import ProjectBalk from './ProjectBalk'
 
 // Server-component: rendert één nieuwbouw-project-clusterpagina. Cluster-CSS +
 // JSON-LD + de <main>-HTML. Nav + Footer komen uit de gedeelde root-layout.
@@ -21,7 +22,10 @@ export default function RenderCluster({ page }: { page: ClusterPage }) {
   const project = main.match(/Je tekende voor ([^<.]+)\./)?.[1]?.trim() ?? page.title.split(' — ')[0]
   const oplevering = page.description.match(/oplevering verwacht ([^.,]+)/)?.[1]?.trim() ?? null
   const blok = afwerkBlokProject(project, page.slug, oplevering)
-  const anker = main.search(/<h2[^>]*>Twee afwerkingen/)
+  // Zo hoog mogelijk (3-11-2026): wie op een projectpagina komt, moet meteen zien wat Bylder voor
+  // hem doet. Direct onder de kop en de cijfers; anders vóór de afwerkkeuzes; anders achteraan.
+  let anker = main.search(/<h2[^>]*>Zie je woning in/)
+  if (anker < 0) anker = main.search(/<h2[^>]*>Twee afwerkingen/)
   main = anker >= 0 ? main.slice(0, anker) + blok + main.slice(anker) : main + blok
   return (
     <>
@@ -32,6 +36,8 @@ export default function RenderCluster({ page }: { page: ClusterPage }) {
       <div dangerouslySetInnerHTML={{ __html: main }} />
       <ProjectFilm />
       <BurenKozen project={page.slug} />
+      <ProjectBalk project={project} offerte={`/nieuwbouw-afwerken/?${new URLSearchParams({ project, ...(oplevering ? { oplevering } : {}) }).toString()}#aanvraag`}
+        woning={`/mijn-woning/?${new URLSearchParams({ project: page.slug, naam: project }).toString()}`} />
       <div className="container">
         <AanbodStrook merken={aantalMerken()} titel="Alles wat je via Bylder regelt" marge="8px 0 56px" />
       </div>

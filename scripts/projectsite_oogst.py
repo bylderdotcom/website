@@ -310,8 +310,21 @@ def main():
     doel = json.load(open(PROJECTEN, encoding="utf8"))
     bestaand = json.load(open(UIT, encoding="utf8")) if os.path.exists(UIT) else {}
 
+    # Elk project met een pagina hoort erbij (3-11-2026): ook de pagina's die de generator met
+    # de lagere poort aanmaakt en die op noindex wachten tot er opgezochte feiten zijn. Welke
+    # dat zijn staat in pages.json (isBasedOn in de JSON-LD is de bron-URL van het project).
+    met_pagina = set()
+    try:
+        for x in json.load(open(os.path.join(ROOT, "data", "clusters", "nieuwbouw-project", "pages.json"), encoding="utf8")):
+            for blok in x.get("ldjson") or []:
+                m = re.search(r'"isBasedOn":\s*"([^"]+)"', blok)
+                if m:
+                    met_pagina.add(m.group(1))
+    except (OSError, ValueError):
+        pass
+
     def poort(p):
-        return ((p.get("woningen") or 0) >= 50
+        return (p["url"] in met_pagina or (p.get("woningen") or 0) >= 50
                 or (p.get("prijs_van") and p.get("woonoppervlak_van") and (p.get("woningen") or 0) >= 20))
 
     # --opnieuw haalt ook de projecten op die er al in staan. Nodig zodra de

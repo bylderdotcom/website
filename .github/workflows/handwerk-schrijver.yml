@@ -79,6 +79,14 @@ jobs:
           python3 scripts/generate_projectpaginas.py --dry | tee voor.log
           git checkout -- .
 
+      # Sinds 3-11-2026: eerst de eigen website zoeken van projecten die er nog geen hebben,
+      # vooral de nieuwe pagina's die op noindex wachten. Zonder site geen feiten, en zonder
+      # feiten blijven ze uit de index. Begrensd per ronde: elke vindplaats is een paar pagina's
+      # ophalen met pauze ertussen.
+      - name: Projectsites zoeken voor nieuwe pagina's
+        if: steps.week.outputs.door == 'ja'
+        run: python3 scripts/projectsite_oogst.py --max 120 | tee oogst.log
+
       - name: Feiten ophalen en schrijven
         if: steps.week.outputs.door == 'ja'
         env:
@@ -137,7 +145,7 @@ jobs:
         run: |
           git config user.name "bylderdotcom"
           git config user.email "info@bylder.com"
-          git add data/clusters/nieuwbouw-project/ nieuwbouw-project-sitemap.xml
+          git add data/clusters/nieuwbouw-project/ data/projectsites.json nieuwbouw-project-sitemap.xml
           if git diff --staged --quiet; then
             echo "Geen wijzigingen - niets te doen."
             exit 0
@@ -174,7 +182,7 @@ jobs:
           git config user.email "info@bylder.com"
           TAK="handwerk-feiten-$(date +%Y%m%d-%H%M)"
           git checkout -q -b "$TAK"
-          git add data/clusters/nieuwbouw-project/ nieuwbouw-project-sitemap.xml
+          git add data/clusters/nieuwbouw-project/ data/projectsites.json nieuwbouw-project-sitemap.xml
           git commit -q -m "Opgezochte feiten, ronde $(date +%d-%m-%Y) (niet naar main: ${FOUTEN:-push mislukt})" || true
           git push -q origin "$TAK"
           gh issue create \

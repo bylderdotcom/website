@@ -61,7 +61,12 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   `/voor-vakbedrijven/` en een kaart in het vakbedrijf-dashboard na het claimen.
 - **In de regio** (plaatsen in `plaatsInRegio`, `web/lib/afwerken.ts`) staat de afwerkstap groot vóór
   de gewone commerciële stap; elders klein eronder. Pagina's over een onderdeel linken naar dat onderdeel.
-- **Elke projectpagina** krijgt "Van sleutel tot ingericht huis in <project>" (`afwerkBlokProject`, 29-10-2026):
+- **Alle nieuwbouwprojecten met genoeg eigen gegevens krijgen een pagina, en alles staat op index (besluit Daniel,
+  3-11-2026: "dan komt het bezoek vanzelf").** Generator-poort `MIN_FEITEN = 4` (533 pagina's, was 289). Bewust
+  risico: de meeste pagina's zijn ~21% uniek. Daarom zoekt de feitenronde (`handwerk-schrijver.yml`) eerst de eigen
+  projectsite van nieuwe pagina's (`projectsite_oogst.py --max 120`) en schrijft er feiten bij. Een indexpoort staat
+  klaar maar uit (`MIN_OPGEZOCHT = 0`; op 2 = nieuwe pagina's op noindex tot twee opgezochte feiten). Volgen in GSC.
+- **Elke projectpagina** krijgt direct onder de kop "Van sleutel tot ingericht huis in <project>" (`afwerkBlokProject`, 29-10-2026; sinds 3-11 bovenaan) en een vaste balk met offerteknop (`ProjectBalk.tsx`):
   drie stappen, offerteknop met project en oplevering ingevuld, de voorbeeldwoning in 3D
   (`/mijn-woning/?voorbeeld`, data in `web/app/mijn-woning/voorbeeld.ts`), "je eigen vakman kijkt mee", en de film
   van de homepage (`ProjectFilm.tsx`, laadt pas in beeld; zonder WebGL een stilstaand beeld).
