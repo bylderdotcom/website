@@ -1,0 +1,4482 @@
+{
+"1865-stationskwartier-heerhugowaard": {
+"naam": "1865 - Stationskwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"32-woningen-biddinghuizen-dronten": {
+"naam": "32 Woningen Biddinghuizen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 114,
+"panden_opgeleverd": 67,
+"gemeten": "2026-11-01"
+},
+"39-appartementen-5-havenvillas-almelo": {
+"naam": "39 Appartementen 5 Havenvillas",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 67,
+"panden_opgeleverd": 104,
+"gemeten": "2026-11-01"
+},
+"aan-de-molenwerf-koog-aan-de-zaan": {
+"naam": "Aan de Molenwerf",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"aarlesche-erven-deelplan-6a-best": {
+"naam": "Aarlesche Erven Deelplan 6a",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 56,
+"panden_opgeleverd": 444,
+"gemeten": "2026-11-01"
+},
+"acht-appartementen-vorden-bronckhorst": {
+"naam": "Acht Appartementen Vorden",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 18,
+"gemeten": "2026-11-01"
+},
+"aregon-almere": {
+"naam": "Aregon",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"avalon-breda": {
+"naam": "Avalon",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 216,
+"panden_opgeleverd": 24,
+"gemeten": "2026-11-01"
+},
+"b-centraal-best": {
+"naam": "B Centraal",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 42,
+"panden_opgeleverd": 19,
+"gemeten": "2026-11-01"
+},
+"backerrueb-fase-1-breda": {
+"naam": "Backerrueb Fase 1",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 17,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"bajeskwartier-the-martin-amsterdam": {
+"naam": "Bajeskwartier The Martin",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 28,
+"gemeten": "2026-11-01"
+},
+"bakkerswaard-fase-2-bakkerspad-nijkerk": {
+"naam": "Bakkerswaard Fase 2 Bakkerspad",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 178,
+"panden_opgeleverd": 116,
+"gemeten": "2026-11-01"
+},
+"bataviahaven-stadsfront-appartementen-lelystad": {
+"naam": "Bataviahaven Stadsfront Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 22,
+"gemeten": "2026-11-01"
+},
+"bebrink-hengelo": {
+"naam": "BeBrink",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"beldershoek-medemblik": {
+"naam": "Beldershoek",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 16,
+"panden_opgeleverd": 13,
+"gemeten": "2026-11-01"
+},
+"bellevue-goese-diep-appartementen-goes": {
+"naam": "Bellevue Goese Diep Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 55,
+"gemeten": "2026-11-01"
+},
+"bellevue-goese-diep-herenhuizen-goes": {
+"naam": "Bellevue Goese Diep Herenhuizen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 52,
+"gemeten": "2026-11-01"
+},
+"bellevue-utrecht": {
+"naam": "Bellevue",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 6,
+"gemeten": "2026-11-01"
+},
+"bentwijck-alphen-aan-den-rijn": {
+"naam": "Bentwijck",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 378,
+"gemeten": "2026-11-01"
+},
+"berghse-weide-fase-1-oss": {
+"naam": "Berghse Weide Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 90,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"berkummer-dijck-zwolle": {
+"naam": "Berkummer Dijck",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 57,
+"panden_opgeleverd": 11,
+"gemeten": "2026-11-01"
+},
+"blinq-capelle-aan-den-ijssel": {
+"naam": "Blinq",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 95,
+"gemeten": "2026-11-01"
+},
+"bloementuin-appartementen-teylingen": {
+"naam": "Bloementuin Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 41,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"bloementuin-bootligplaatsen-teylingen": {
+"naam": "Bloementuin Bootligplaatsen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 41,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"blok-a-en-blok-i-fase-1-harlingen": {
+"naam": "Blok A En Blok I Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 74,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"blom-fase-3-hoeksche-waard": {
+"naam": "Blom Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 64,
+"panden_opgeleverd": 166,
+"gemeten": "2026-11-01"
+},
+"bloom-merwede-utrecht": {
+"naam": "Bloom Merwede",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"bloom-park-utrecht": {
+"naam": "Bloom Park",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 53,
+"panden_opgeleverd": 10,
+"gemeten": "2026-11-01"
+},
+"bloom-zuid-merwede-utrecht": {
+"naam": "Bloom Zuid | Merwede",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"boegbeeld-79-woningen-amsterdam": {
+"naam": "Boegbeeld 79 Woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"bonheur-haarlemmermeer": {
+"naam": "Bonheur",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 255,
+"gemeten": "2026-11-01"
+},
+"boomgaerde-westland": {
+"naam": "Boomgaerde",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 86,
+"panden_opgeleverd": 414,
+"gemeten": "2026-11-01"
+},
+"bouwkavel-noorderweg-34-vroomshoop-twenterand": {
+"naam": "Bouwkavel Noorderweg 34 Vroomshoop",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 24,
+"gemeten": "2026-11-01"
+},
+"bries-in-medemblik-medemblik": {
+"naam": "Bries In Medemblik",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 14,
+"gemeten": "2026-11-01"
+},
+"brink-noordenveld": {
+"naam": "Brink",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 11,
+"panden_opgeleverd": 46,
+"gemeten": "2026-11-01"
+},
+"brinken-in-de-zoom-fase-2-harderwijk": {
+"naam": "Brinken in de Zoom fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 21,
+"gemeten": "2026-11-01"
+},
+"brooklyn-heights-almere": {
+"naam": "Brooklyn Heights",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 38,
+"panden_opgeleverd": 462,
+"gemeten": "2026-11-01"
+},
+"brughoofd-koog-aan-de-zaan": {
+"naam": "BrugHoofd",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 21,
+"panden_opgeleverd": 86,
+"gemeten": "2026-11-01"
+},
+"brunssum-emmakwartier-brunssum": {
+"naam": "Brunssum Emmakwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 45,
+"panden_opgeleverd": 47,
+"gemeten": "2026-11-01"
+},
+"buitenhof-rijswijk-zh": {
+"naam": "Buitenhof",
+"oplevering": "tussen 2026 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 86,
+"panden_opgeleverd": 133,
+"gemeten": "2026-11-01"
+},
+"buitenmade-drimmelen": {
+"naam": "Buitenmade",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"buitenplaats-kraaijenberg-vught": {
+"naam": "Buitenplaats Kraaijenberg",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 96,
+"panden_opgeleverd": 12,
+"gemeten": "2026-11-01"
+},
+"buitenplaats-zuidwijk-dordrecht": {
+"naam": "Buitenplaats Zuidwijk",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 10,
+"gemeten": "2026-11-01"
+},
+"buitenrijk-deelgebied-2-fase-1-noordwijk": {
+"naam": "Buitenrijk Deelgebied 2 Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 46,
+"gemeten": "2026-11-01"
+},
+"buitenveen-aalsmeer-aalsmeer": {
+"naam": "Buitenveen Aalsmeer",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"buitenwaard-dijk-en-waard": {
+"naam": "Buitenwaard",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 118,
+"panden_opgeleverd": 17,
+"gemeten": "2026-11-01"
+},
+"bundereiland-bodegraven-reeuwijk": {
+"naam": "Bundereiland",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 56,
+"panden_opgeleverd": 13,
+"gemeten": "2026-11-01"
+},
+"buyteleven-nieuwkoop": {
+"naam": "Buyteleven",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 15,
+"panden_opgeleverd": 81,
+"gemeten": "2026-11-01"
+},
+"cadzand-duinhof-noord-sluis": {
+"naam": "Cadzand Duinhof Noord",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 13,
+"gemeten": "2026-11-01"
+},
+"campus-driene-cadanshof-hengelo": {
+"naam": "Campus Driene - Cadanshof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 378,
+"panden_opgeleverd": 106,
+"gemeten": "2026-11-01"
+},
+"campus-driene-fase-5-triomfhof-hengelo-o": {
+"naam": "Campus Driene Fase 5 Triomfhof",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 366,
+"panden_opgeleverd": 134,
+"gemeten": "2026-11-01"
+},
+"carmelveste-land-van-cuijk": {
+"naam": "Carmelveste",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 122,
+"gemeten": "2026-11-01"
+},
+"cartesius-costa-stadswoningen-utrecht": {
+"naam": "Cartesius-Costa Stadswoningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 12,
+"panden_opgeleverd": 65,
+"gemeten": "2026-11-01"
+},
+"cartesius-nicoya-utrecht": {
+"naam": "Cartesius - Nicoya",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"ceci-amsterdam": {
+"naam": "Ceci",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 5,
+"gemeten": "2026-11-01"
+},
+"centraal-heerhugowaard-heerhugowaard": {
+"naam": "Centraal - Heerhugowaard",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"circulus-utrecht": {
+"naam": "Circulus",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"cix-merwede-utrecht": {
+"naam": "Cix Merwede",
+"oplevering": "rond 2028",
+"opgeleverd": false,
+"in_aanbouw": 52,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"clarissenhof-tilburg": {
+"naam": "Clarissenhof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 39,
+"panden_opgeleverd": 53,
+"gemeten": "2026-11-01"
+},
+"condorpark-apeldoorn": {
+"naam": "Condorpark",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"connect-maashorst": {
+"naam": "Connect",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 32,
+"panden_opgeleverd": 22,
+"gemeten": "2026-11-01"
+},
+"corner-lofts-s-gravenhage": {
+"naam": "Corner Lofts",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 9,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"cour-200-koop-en-huurappartementen-maastricht": {
+"naam": "Cour 200 Koop En Huurappartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 119,
+"panden_opgeleverd": 74,
+"gemeten": "2026-11-01"
+},
+"cuijkse-tuinen-wonen-in-het-groen-zuid-fase-5-cuijk": {
+"naam": "Cuijkse tuinen | Wonen in het groen Zuid | Fase 5",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-angerloo-emmen": {
+"naam": "De Angerloo",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 12,
+"gemeten": "2026-11-01"
+},
+"de-assinkhof-enschede": {
+"naam": "De Assinkhof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 53,
+"panden_opgeleverd": 68,
+"gemeten": "2026-11-01"
+},
+"de-berghorst-fase-1-wierden": {
+"naam": "De Berghorst Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 166,
+"gemeten": "2026-11-01"
+},
+"de-berkelse-weelde-lansingerland": {
+"naam": "De Berkelse Weelde",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-biezenweie-serooskerke": {
+"naam": "De Biezenweie",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-binnenoever-hardinxveld-giessendam": {
+"naam": "De Binnenoever",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 115,
+"panden_opgeleverd": 159,
+"gemeten": "2026-11-01"
+},
+"de-blauwe-hoek-lingewaard": {
+"naam": "De Blauwe Hoek",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 19,
+"panden_opgeleverd": 70,
+"gemeten": "2026-11-01"
+},
+"de-boeg-dordrecht": {
+"naam": "De Boeg",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 135,
+"panden_opgeleverd": 42,
+"gemeten": "2026-11-01"
+},
+"de-bosrande-putten": {
+"naam": "De Bosrande",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 76,
+"gemeten": "2026-11-01"
+},
+"de-bostuinen-zwijndrecht": {
+"naam": "De Bostuinen",
+"oplevering": "najaar 2026",
+"opgeleverd": false,
+"in_aanbouw": 467,
+"panden_opgeleverd": 33,
+"gemeten": "2026-11-01"
+},
+"de-boterlinie-noordenveld": {
+"naam": "De Boterlinie",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 28,
+"panden_opgeleverd": 95,
+"gemeten": "2026-11-01"
+},
+"de-bousberg-woningen-landgraaf": {
+"naam": "De Bousberg Woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 18,
+"panden_opgeleverd": 29,
+"gemeten": "2026-11-01"
+},
+"de-bovenhof-halderberge": {
+"naam": "De Bovenhof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 59,
+"panden_opgeleverd": 83,
+"gemeten": "2026-11-01"
+},
+"de-brugse-zoom-nieuwerbrug-aan-den-rijn": {
+"naam": "De Brugse Zoom",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-buitentuin-van-baak-baak": {
+"naam": "De Buitentuin van Baak",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-buitentuin-van-baak-bronckhorst": {
+"naam": "De Buitentuin Van Baak",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 77,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"de-burgemeester-tilburg": {
+"naam": "De Burgemeester",
+"oplevering": "rond 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-concurrent-hengelo-o": {
+"naam": "De Concurrent",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 212,
+"gemeten": "2026-11-01"
+},
+"de-faam-breda": {
+"naam": "De Faam",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 20,
+"panden_opgeleverd": 151,
+"gemeten": "2026-11-01"
+},
+"de-generaal-breda": {
+"naam": "De Generaal",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 10,
+"gemeten": "2026-11-01"
+},
+"de-glasfabriek-kaft-fase-2-schiedam": {
+"naam": "De Glasfabriek Kaft Fase 2",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 54,
+"panden_opgeleverd": 38,
+"gemeten": "2026-11-01"
+},
+"de-grassen-fase-2-heusden": {
+"naam": "De Grassen Fase 2",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 25,
+"panden_opgeleverd": 20,
+"gemeten": "2026-11-01"
+},
+"de-groene-gaarde-westerkwartier": {
+"naam": "De Groene Gaarde",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 249,
+"panden_opgeleverd": 132,
+"gemeten": "2026-11-01"
+},
+"de-groene-gaarde-zuidhorn": {
+"naam": "De Groene Gaarde",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-groene-heerlijkheid-deurne": {
+"naam": "De Groene Heerlijkheid",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 166,
+"panden_opgeleverd": 218,
+"gemeten": "2026-11-01"
+},
+"de-grote-bottel-35-woningen-deurne": {
+"naam": "De Grote Bottel 35 Woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 373,
+"panden_opgeleverd": 127,
+"gemeten": "2026-11-01"
+},
+"de-heerlijckheid-goeree-overflakkee": {
+"naam": "De Heerlijckheid",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 161,
+"panden_opgeleverd": 12,
+"gemeten": "2026-11-01"
+},
+"de-heerlijkheid-curtis-heemskerk": {
+"naam": "De Heerlijkheid Curtis",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 9,
+"panden_opgeleverd": 5,
+"gemeten": "2026-11-01"
+},
+"de-heikant-fase-1a-gennep": {
+"naam": "De Heikant Fase 1a",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 106,
+"panden_opgeleverd": 18,
+"gemeten": "2026-11-01"
+},
+"de-helden-van-vroondaal-s-gravenhage": {
+"naam": "De Helden van Vroondaal",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-hendrik-dordrecht": {
+"naam": "De Hendrik",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 80,
+"panden_opgeleverd": 40,
+"gemeten": "2026-11-01"
+},
+"de-heuvelsche-velden-laarbeek": {
+"naam": "De Heuvelsche Velden",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 105,
+"panden_opgeleverd": 138,
+"gemeten": "2026-11-01"
+},
+"de-hoge-veste-borne": {
+"naam": "De Hoge Veste",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 111,
+"panden_opgeleverd": 338,
+"gemeten": "2026-11-01"
+},
+"de-horsten-borne": {
+"naam": "De Horsten",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 111,
+"panden_opgeleverd": 298,
+"gemeten": "2026-11-01"
+},
+"de-hoven-fase-1-de-ronde-venen": {
+"naam": "De Hoven Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 187,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"de-hoven-fase-1b-gennep": {
+"naam": "De Hoven - fase 1b",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-johan-van-beverwijck-dordrecht": {
+"naam": "De Johan Van Beverwijck",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 50,
+"panden_opgeleverd": 42,
+"gemeten": "2026-11-01"
+},
+"de-koploper-delft": {
+"naam": "De Koploper",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-kreek-van-de-torensteepolder-numansdorp": {
+"naam": "De Kreek van de Torensteepolder",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-lage-veste-borne": {
+"naam": "De Lage Veste",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 111,
+"panden_opgeleverd": 332,
+"gemeten": "2026-11-01"
+},
+"de-lanen-deelplan-6-verkocht-noordwijk": {
+"naam": "De Lanen Deelplan 6 Verkocht",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 69,
+"panden_opgeleverd": 306,
+"gemeten": "2026-11-01"
+},
+"de-lierhof-venray": {
+"naam": "De Lierhof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 31,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"de-lindenhorst-zeist": {
+"naam": "De Lindenhorst",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-meesters-van-vroondaal-fase-2-te-s-gravenhage-s-gravenhage": {
+"naam": "De Meesters van Vroondaal - Fase 2 te 's-Gravenhage",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 151,
+"panden_opgeleverd": 349,
+"gemeten": "2026-11-01"
+},
+"de-meesters-van-vroondaal-s-gravenhage": {
+"naam": "De Meesters Van Vroondaal",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 217,
+"panden_opgeleverd": 283,
+"gemeten": "2026-11-01"
+},
+"de-nieuwe-boterpolder-alphen-aan-den-rijn": {
+"naam": "De Nieuwe Boterpolder",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 100,
+"panden_opgeleverd": 13,
+"gemeten": "2026-11-01"
+},
+"de-nieuwe-koepel-fase-2b-scherpenzeel": {
+"naam": "De Nieuwe Koepel Fase 2b",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 304,
+"panden_opgeleverd": 112,
+"gemeten": "2026-11-01"
+},
+"de-oorsprong-fase-2-goirle": {
+"naam": "De Oorsprong Fase 2",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 16,
+"gemeten": "2026-11-01"
+},
+"de-oostergast-westerkwartier": {
+"naam": "De Oostergast",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 230,
+"panden_opgeleverd": 149,
+"gemeten": "2026-11-01"
+},
+"de-oosttribune-leeuwarden": {
+"naam": "De Oosttribune",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 198,
+"panden_opgeleverd": 18,
+"gemeten": "2026-11-01"
+},
+"de-overtuin-molenlanden": {
+"naam": "De Overtuin",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 12,
+"gemeten": "2026-11-01"
+},
+"de-pas-noord-overbetuwe": {
+"naam": "De Pas Noord",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 202,
+"panden_opgeleverd": 64,
+"gemeten": "2026-11-01"
+},
+"de-pauwentuin-leidschendam-voorburg": {
+"naam": "De Pauwentuin",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 70,
+"gemeten": "2026-11-01"
+},
+"de-pieter-tilburg-tilburg": {
+"naam": "De Pieter Tilburg",
+"oplevering": "in 2026",
+"opgeleverd": false,
+"in_aanbouw": 26,
+"panden_opgeleverd": 17,
+"gemeten": "2026-11-01"
+},
+"de-plantage-de-zomergaard-ii-west-betuwe": {
+"naam": "De Plantage De Zomergaard Ii",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 358,
+"panden_opgeleverd": 55,
+"gemeten": "2026-11-01"
+},
+"de-portier-druten": {
+"naam": "De Portier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-remise-hoorn": {
+"naam": "De Remise",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 48,
+"panden_opgeleverd": 156,
+"gemeten": "2026-11-01"
+},
+"de-rijter-almelo": {
+"naam": "De Rijter",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-schalm-emmen": {
+"naam": "De Schalm",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 54,
+"gemeten": "2026-11-01"
+},
+"de-scharnier-rotterdam": {
+"naam": "De Scharnier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"de-spjocht-leeuwarden": {
+"naam": "De Spjocht",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 209,
+"panden_opgeleverd": 135,
+"gemeten": "2026-11-01"
+},
+"de-spykerij-arnhem": {
+"naam": "De Spykerij",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 80,
+"panden_opgeleverd": 16,
+"gemeten": "2026-11-01"
+},
+"de-stolptuin-hoorn": {
+"naam": "De Stolptuin",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 16,
+"panden_opgeleverd": 241,
+"gemeten": "2026-11-01"
+},
+"de-tippe-de-zuidpunt-zwolle": {
+"naam": "De Tippe De Zuidpunt",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 84,
+"panden_opgeleverd": 416,
+"gemeten": "2026-11-01"
+},
+"de-tuin-van-teding-delft": {
+"naam": "De Tuin Van Teding",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"de-tuinen-ii-koggenland": {
+"naam": "De Tuinen Ii",
+"oplevering": "in 2026",
+"opgeleverd": false,
+"in_aanbouw": 25,
+"panden_opgeleverd": 95,
+"gemeten": "2026-11-01"
+},
+"de-vechtvliet-hardenberg": {
+"naam": "De Vechtvliet",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 120,
+"gemeten": "2026-11-01"
+},
+"de-veenhoven-mijdrecht-de-ronde-venen": {
+"naam": "De Veenhoven Mijdrecht",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 32,
+"gemeten": "2026-11-01"
+},
+"de-vesting-blok-3-s-hertogenbosch": {
+"naam": "De Vesting Blok 3",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 137,
+"panden_opgeleverd": 362,
+"gemeten": "2026-11-01"
+},
+"de-vesting-blok-5-s-hertogenbosch": {
+"naam": "De Vesting Blok 5",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 137,
+"panden_opgeleverd": 362,
+"gemeten": "2026-11-01"
+},
+"de-vrieswijck-fase-3-opsterland": {
+"naam": "De Vrieswijck Fase 3",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 48,
+"panden_opgeleverd": 103,
+"gemeten": "2026-11-01"
+},
+"de-waalhoven-nijmegen": {
+"naam": "De Waalhoven",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 52,
+"panden_opgeleverd": 205,
+"gemeten": "2026-11-01"
+},
+"de-waarden-iv-aarlesche-erven-best": {
+"naam": "De Waarden Iv Aarlesche Erven",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 28,
+"panden_opgeleverd": 472,
+"gemeten": "2026-11-01"
+},
+"de-wilg-hoog-dalem-gorinchem": {
+"naam": "De Wilg Hoog Dalem",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 94,
+"panden_opgeleverd": 262,
+"gemeten": "2026-11-01"
+},
+"de-woongaard-groningen": {
+"naam": "De Woongaard",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"de-zaanse-helden-zaanstad": {
+"naam": "De Zaanse Helden",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 290,
+"gemeten": "2026-11-01"
+},
+"de-zuster-park-langendijk-breda": {
+"naam": "De Zuster Park Langendijk",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"delft77-assen": {
+"naam": "Delft77",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"dikkerscomplex-hengelo-o": {
+"naam": "Dikkerscomplex",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 261,
+"gemeten": "2026-11-01"
+},
+"dillekwartier-arnhem": {
+"naam": "Dillekwartier",
+"oplevering": "eerste halfjaar 2027",
+"opgeleverd": false,
+"in_aanbouw": 273,
+"panden_opgeleverd": 23,
+"gemeten": "2026-11-01"
+},
+"dirkzwager-schiedam": {
+"naam": "Dirkzwager",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 95,
+"panden_opgeleverd": 78,
+"gemeten": "2026-11-01"
+},
+"dn-hertog-oss": {
+"naam": "Dn Hertog",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 14,
+"panden_opgeleverd": 25,
+"gemeten": "2026-11-01"
+},
+"dok-5-schippersdok-doetinchem": {
+"naam": "Dok 5 Schippersdok",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 63,
+"panden_opgeleverd": 84,
+"gemeten": "2026-11-01"
+},
+"dok-district-almere": {
+"naam": "Dok District",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"domus-nova-boxtel": {
+"naam": "Domus Nova",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 39,
+"panden_opgeleverd": 14,
+"gemeten": "2026-11-01"
+},
+"doonheide-ii-fase-4-gemert-bakel": {
+"naam": "Doonheide Ii Fase 4",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 29,
+"panden_opgeleverd": 345,
+"gemeten": "2026-11-01"
+},
+"doornsteeg-fiore-fase-2-nijkerk": {
+"naam": "Doornsteeg Fiore Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 84,
+"panden_opgeleverd": 143,
+"gemeten": "2026-11-01"
+},
+"doornsteeg-nijkerk-nijkerk": {
+"naam": "Doornsteeg Nijkerk",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 354,
+"panden_opgeleverd": 28,
+"gemeten": "2026-11-01"
+},
+"dorps-wonen-ii-mook-en-middelaar": {
+"naam": "Dorps Wonen Ii",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 112,
+"panden_opgeleverd": 163,
+"gemeten": "2026-11-01"
+},
+"dr-huber-noodthof-doetinchem": {
+"naam": "Dr Huber Noodthof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 64,
+"panden_opgeleverd": 64,
+"gemeten": "2026-11-01"
+},
+"drie-onder-een-kapwoningen-in-beerzerveld-ommen": {
+"naam": "Drie Onder Een Kapwoningen In Beerzerveld",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 5,
+"panden_opgeleverd": 27,
+"gemeten": "2026-11-01"
+},
+"droomweide-meerkerk": {
+"naam": "Droomweide |",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"droomweide-vijfheerenlanden": {
+"naam": "Droomweide",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 174,
+"panden_opgeleverd": 79,
+"gemeten": "2026-11-01"
+},
+"duinhil-s-gravenhage": {
+"naam": "Duinhil",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"duinkust-voorne-aan-zee": {
+"naam": "Duinkust",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"duinpaviljoen-katwijk": {
+"naam": "Duinpaviljoen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 26,
+"gemeten": "2026-11-01"
+},
+"duintuin-amsterdam": {
+"naam": "Duintuin",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"dunninkserf-staphorst": {
+"naam": "Dunninkserf",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 35,
+"panden_opgeleverd": 33,
+"gemeten": "2026-11-01"
+},
+"dunoveste-renkum": {
+"naam": "Dunoveste",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"edgarshof-koog-aan-de-zaan": {
+"naam": "Edgarshof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 11,
+"panden_opgeleverd": 86,
+"gemeten": "2026-11-01"
+},
+"edisonpark-zoetermeer": {
+"naam": "Edisonpark",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 12,
+"gemeten": "2026-11-01"
+},
+"eikenstein-zeist": {
+"naam": "Eikenstein",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 117,
+"panden_opgeleverd": 26,
+"gemeten": "2026-11-01"
+},
+"eilanden-van-hain-zaanstad": {
+"naam": "Eilanden Van Hain",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 123,
+"panden_opgeleverd": 114,
+"gemeten": "2026-11-01"
+},
+"ekp-fase-1-s-hertogenbosch": {
+"naam": "Ekp Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 23,
+"gemeten": "2026-11-01"
+},
+"elements-amsterdam": {
+"naam": "Elements",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 11,
+"panden_opgeleverd": 25,
+"gemeten": "2026-11-01"
+},
+"elzenhagen-noordhof-3-amsterdam": {
+"naam": "Elzenhagen Noordhof 3",
+"oplevering": "in 2028",
+"opgeleverd": false,
+"in_aanbouw": 12,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"elzenhagen-noordhof-4-amsterdam": {
+"naam": "Elzenhagen Noordhof 4",
+"oplevering": "in 2028",
+"opgeleverd": false,
+"in_aanbouw": 12,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"elzenhagen-noordhof-5-amsterdam": {
+"naam": "Elzenhagen Noordhof 5",
+"oplevering": "in 2028",
+"opgeleverd": false,
+"in_aanbouw": 12,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"elzenhagen-parkvilla-8-en-9-zuidbuurt-amsterdam": {
+"naam": "Elzenhagen Parkvilla 8 En 9 Zuidbuurt",
+"oplevering": "tussen 2026 en 2029",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"elzenhagen-zuidbuurt-parkvillas-10-11-en-12-amsterdam": {
+"naam": "Elzenhagen Zuidbuurt Parkvillas 10 11 En 12",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"elzenhagen-zuidbuurt-parkvillaz-6-amsterdam": {
+"naam": "Elzenhagen Zuidbuurt Parkvillaz 6",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"elzenhagen-zuidbuurt-parkvillaz-7-en-14-amsterdam": {
+"naam": "Elzenhagen Zuidbuurt Parkvillaz 7 En 14",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"enka-t-hartogshof-ede": {
+"naam": "Enka T Hartogshof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 100,
+"panden_opgeleverd": 42,
+"gemeten": "2026-11-01"
+},
+"erve-berchus-fase-3-hengelo-o": {
+"naam": "Erve Berchus Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 56,
+"panden_opgeleverd": 410,
+"gemeten": "2026-11-01"
+},
+"erve-berchus-hengelo": {
+"naam": "Erve Berchus",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 56,
+"panden_opgeleverd": 437,
+"gemeten": "2026-11-01"
+},
+"erve-solms-oirschot": {
+"naam": "Erve Solms",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 29,
+"panden_opgeleverd": 120,
+"gemeten": "2026-11-01"
+},
+"esreyn-hengelo-o": {
+"naam": "Esreyn",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 226,
+"gemeten": "2026-11-01"
+},
+"essenvelt-laanvillas-middelburg-z": {
+"naam": "Essenvelt Laanvillas",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 111,
+"gemeten": "2026-11-01"
+},
+"eureka-nieuwegein": {
+"naam": "Eureka",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 65,
+"gemeten": "2026-11-01"
+},
+"eve-nieuwbouw-leidschendam-voorburg": {
+"naam": "Eve Nieuwbouw",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 134,
+"panden_opgeleverd": 179,
+"gemeten": "2026-11-01"
+},
+"evert-wonen-groningen": {
+"naam": "Evert Wonen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 24,
+"gemeten": "2026-11-01"
+},
+"fleur-deux-46-eengezinswoningen-maastricht": {
+"naam": "Fleur Deux 46 Eengezinswoningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 90,
+"panden_opgeleverd": 117,
+"gemeten": "2026-11-01"
+},
+"fleur-le-sud-fase-5-maastricht": {
+"naam": "Fleur Le Sud Fase 5",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 91,
+"panden_opgeleverd": 117,
+"gemeten": "2026-11-01"
+},
+"flora-haarlemmermeer": {
+"naam": "Flora",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 10,
+"gemeten": "2026-11-01"
+},
+"floris-49-appartementen-zwolle": {
+"naam": "Floris 49 Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 59,
+"gemeten": "2026-11-01"
+},
+"florissant-waalwijk": {
+"naam": "Florissant",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 18,
+"panden_opgeleverd": 41,
+"gemeten": "2026-11-01"
+},
+"fortunapark-vlaardingen-vlaardingen": {
+"naam": "Fortunapark Vlaardingen",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"frontier-dordrecht": {
+"naam": "Frontier",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 44,
+"panden_opgeleverd": 11,
+"gemeten": "2026-11-01"
+},
+"gaard-zuidplas": {
+"naam": "Gaard",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 153,
+"panden_opgeleverd": 74,
+"gemeten": "2026-11-01"
+},
+"gebouw-a-oosterhout": {
+"naam": "Gebouw A",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"gehucht-zuid-fase-1a-veldhoven": {
+"naam": "Gehucht Zuid Fase 1a",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 38,
+"gemeten": "2026-11-01"
+},
+"gloed-teylingen": {
+"naam": "Gloed",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 236,
+"panden_opgeleverd": 152,
+"gemeten": "2026-11-01"
+},
+"grote-bottel-deurne": {
+"naam": "Grote Bottel",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 354,
+"panden_opgeleverd": 125,
+"gemeten": "2026-11-01"
+},
+"hanick-woerden": {
+"naam": "Hanick",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 6,
+"gemeten": "2026-11-01"
+},
+"harmelen-fase-2-woerden": {
+"naam": "Harmelen Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 24,
+"gemeten": "2026-11-01"
+},
+"hart-van-vrouwenakker-nieuwveen": {
+"naam": "Hart van Vrouwenakker",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"hartje-haaften-west-betuwe": {
+"naam": "Hartje Haaften",
+"oplevering": "tussen 2026 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 47,
+"panden_opgeleverd": 15,
+"gemeten": "2026-11-01"
+},
+"havenhart-harderwijk": {
+"naam": "Havenhart",
+"oplevering": "Q2 2028, eerste woningen",
+"opgeleverd": false,
+"in_aanbouw": 137,
+"panden_opgeleverd": 363,
+"gemeten": "2026-11-01"
+},
+"havenkade-ceres-dronten": {
+"naam": "Havenkade Ceres",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 124,
+"panden_opgeleverd": 139,
+"gemeten": "2026-11-01"
+},
+"havenkade-tellus-fase-2-dronten": {
+"naam": "Havenkade Tellus Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 123,
+"panden_opgeleverd": 112,
+"gemeten": "2026-11-01"
+},
+"havenkade-watervillas-libera-dronten": {
+"naam": "Havenkade Watervillas Libera",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 123,
+"panden_opgeleverd": 122,
+"gemeten": "2026-11-01"
+},
+"havenmeester-rijswijk-zh": {
+"naam": "Havenmeester",
+"oplevering": "tussen 2026 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 54,
+"panden_opgeleverd": 6,
+"gemeten": "2026-11-01"
+},
+"heem-dongen": {
+"naam": "Heem",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 33,
+"panden_opgeleverd": 15,
+"gemeten": "2026-11-01"
+},
+"heemtuinen-vlaardingen-fase-3-woodstock-vlaardingen": {
+"naam": "Heemtuinen Vlaardingen Fase 3 Woodstock",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 38,
+"panden_opgeleverd": 43,
+"gemeten": "2026-11-01"
+},
+"heer-van-beek-beek-l": {
+"naam": "Heer Van Beek",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"heidepost-soesterberg": {
+"naam": "Heidepost",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"het-broekveld-vianenstraat-velp-rheden": {
+"naam": "Het Broekveld Vianenstraat Velp",
+"oplevering": "tussen 2026 en 2027",
+"opgeleverd": false,
+"in_aanbouw": 27,
+"panden_opgeleverd": 96,
+"gemeten": "2026-11-01"
+},
+"het-fortuyn-voorschoten": {
+"naam": "Het Fortuyn",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 113,
+"panden_opgeleverd": 241,
+"gemeten": "2026-11-01"
+},
+"het-houthof-molenlanden": {
+"naam": "Het Houthof",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 25,
+"gemeten": "2026-11-01"
+},
+"het-korianderkwartier-vroomshoop": {
+"naam": "Het Korianderkwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"het-lint-10-appartementen-haarlemmermeer": {
+"naam": "Het Lint 10 Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 103,
+"gemeten": "2026-11-01"
+},
+"het-lint-fase-berk-gorinchem": {
+"naam": "Het Lint Fase Berk",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 94,
+"panden_opgeleverd": 323,
+"gemeten": "2026-11-01"
+},
+"het-lint-fase-linde-gorinchem": {
+"naam": "Het Lint Fase Linde",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 94,
+"panden_opgeleverd": 311,
+"gemeten": "2026-11-01"
+},
+"het-molenkwartier-woerden": {
+"naam": "Het Molenkwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 43,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"het-mozaiek-twenterand": {
+"naam": "Het Mozaiek",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 44,
+"gemeten": "2026-11-01"
+},
+"het-nieuwe-metterswane-nijmegen": {
+"naam": "Het Nieuwe Metterswane",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 15,
+"gemeten": "2026-11-01"
+},
+"het-nieuwe-suikerentrepot-moerdijk": {
+"naam": "Het Nieuwe Suikerentrepot",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"het-thuisvak-leeuwarden": {
+"naam": "Het Thuisvak",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 198,
+"panden_opgeleverd": 18,
+"gemeten": "2026-11-01"
+},
+"het-veld-oss": {
+"naam": "Het Veld",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 329,
+"panden_opgeleverd": 122,
+"gemeten": "2026-11-01"
+},
+"het-vennehof-fase-2-veenendaal": {
+"naam": "Het Vennehof Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 61,
+"panden_opgeleverd": 20,
+"gemeten": "2026-11-01"
+},
+"het-zuider-carre-rotterdam": {
+"naam": "Het Zuider Carre",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 29,
+"panden_opgeleverd": 194,
+"gemeten": "2026-11-01"
+},
+"heulpark-kwintsheul-kwintsheul": {
+"naam": "Heulpark, Kwintsheul",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"hibi-amsterdam": {
+"naam": "Hibi",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 9,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"hillegaar-venhuizen-drechterland": {
+"naam": "Hillegaar Venhuizen",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 148,
+"panden_opgeleverd": 26,
+"gemeten": "2026-11-01"
+},
+"hoeksenes-amsterdam": {
+"naam": "Hoeksenes",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"hoendersveld-venray": {
+"naam": "Hoendersveld",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 33,
+"panden_opgeleverd": 33,
+"gemeten": "2026-11-01"
+},
+"hoeverijk-nieuwegein-nieuwegein": {
+"naam": "Hoeverijk Nieuwegein",
+"oplevering": "Q1 2028",
+"opgeleverd": false,
+"in_aanbouw": 31,
+"panden_opgeleverd": 119,
+"gemeten": "2026-11-01"
+},
+"hof-van-beemden-steenbergen": {
+"naam": "Hof Van Beemden",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 53,
+"gemeten": "2026-11-01"
+},
+"hof-van-haag-s-gravenhage": {
+"naam": "Hof van Haag",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"hof-van-rijswijk-de-prins-rijswijk-zh": {
+"naam": "Hof Van Rijswijk De Prins",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 23,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"hof-van-rijswijk-de-prinses-rijswijk-zh": {
+"naam": "Hof Van Rijswijk De Prinses",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 23,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"hof-van-rijswijk-rijswijk": {
+"naam": "Hof van Rijswijk",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 5,
+"panden_opgeleverd": 6,
+"gemeten": "2026-11-01"
+},
+"hof-van-saan-appartementen-diemen": {
+"naam": "Hof Van Saan Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 88,
+"panden_opgeleverd": 79,
+"gemeten": "2026-11-01"
+},
+"hof-van-wael-verandawoningen-westland": {
+"naam": "Hof Van Wael Verandawoningen",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 133,
+"panden_opgeleverd": 314,
+"gemeten": "2026-11-01"
+},
+"hofstee-ii-schouwen-duiveland": {
+"naam": "Hofstee Ii",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 197,
+"panden_opgeleverd": 119,
+"gemeten": "2026-11-01"
+},
+"hoge-woerd-ewijk-fase-1-beuningen": {
+"naam": "Hoge Woerd Ewijk Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"hollandse-meesters-amstelveen": {
+"naam": "Hollandse Meesters",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"honk-hoofddorp-haarlemmermeer": {
+"naam": "Honk Hoofddorp",
+"oplevering": "vanaf eind 2027",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 61,
+"gemeten": "2026-11-01"
+},
+"honk-hoofddorp-koopstart-fase-2-haarlemmermeer": {
+"naam": "Honk Hoofddorp Koopstart Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"huurappartementen-dr-huber-noodthof-doetinchem": {
+"naam": "Huurappartementen Dr. Huber Noodthof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"inck-eindhoven-veld-a-eindhoven": {
+"naam": "Inck Eindhoven Veld A",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"inck-eindhoven-veld-b-eindhoven": {
+"naam": "Inck Eindhoven Veld B",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"inck-veld-a-eindhoven": {
+"naam": "Inck Veld A",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 41,
+"panden_opgeleverd": 47,
+"gemeten": "2026-11-01"
+},
+"isabellaveld-44-woningen-vught": {
+"naam": "Isabellaveld 44 Woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 117,
+"panden_opgeleverd": 25,
+"gemeten": "2026-11-01"
+},
+"ivoordreef-fase-2-utrecht": {
+"naam": "Ivoordreef | Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"ivoordreef-utrecht": {
+"naam": "Ivoordreef",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"jazz-city-roermond": {
+"naam": "Jazz City",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"joie-de-vivre-nijmegen-nijmegen": {
+"naam": "Joie De Vivre - Nijmegen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 14,
+"panden_opgeleverd": 20,
+"gemeten": "2026-11-01"
+},
+"kapelledries-fase-3-bergeijk": {
+"naam": "Kapelledries Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 65,
+"panden_opgeleverd": 25,
+"gemeten": "2026-11-01"
+},
+"kavels-nieuw-rijnvaert-katwijk": {
+"naam": "Kavels Nieuw Rijnvaert",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 39,
+"panden_opgeleverd": 133,
+"gemeten": "2026-11-01"
+},
+"kbf-dock-amsterdam": {
+"naam": "KBF Dock",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"kernhemmerhout-ede": {
+"naam": "Kernhemmerhout",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 200,
+"panden_opgeleverd": 300,
+"gemeten": "2026-11-01"
+},
+"kernhemmerzoom-ede": {
+"naam": "Kernhemmerzoom",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 200,
+"panden_opgeleverd": 300,
+"gemeten": "2026-11-01"
+},
+"ketelhuis-spoorzone-tilburg": {
+"naam": "Ketelhuis Spoorzone",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 39,
+"panden_opgeleverd": 53,
+"gemeten": "2026-11-01"
+},
+"kiem-pijnacker-nootdorp": {
+"naam": "Kiem",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"klokkengietery-laarbeek": {
+"naam": "Klokkengietery",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 48,
+"panden_opgeleverd": 26,
+"gemeten": "2026-11-01"
+},
+"kloostergoed-theresia-vught": {
+"naam": "Kloostergoed Theresia",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 97,
+"panden_opgeleverd": 14,
+"gemeten": "2026-11-01"
+},
+"kompanjon-smallingerland": {
+"naam": "Kompanjon",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 50,
+"gemeten": "2026-11-01"
+},
+"koningskwartier-aan-de-laan-zuidplas": {
+"naam": "Koningskwartier Aan De Laan",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 210,
+"gemeten": "2026-11-01"
+},
+"koningskwartier-fase-8-zuidplas": {
+"naam": "Koningskwartier Fase 8",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 318,
+"gemeten": "2026-11-01"
+},
+"koningswei-koop-tilburg": {
+"naam": "Koningswei Koop",
+"oplevering": "rond 2029",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 14,
+"gemeten": "2026-11-01"
+},
+"koopse-glorie-fase-2-boskoop": {
+"naam": "Koopse Glorie fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"kop-van-de-stadswerven-harderwijk": {
+"naam": "Kop Van De Stadswerven",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 84,
+"panden_opgeleverd": 384,
+"gemeten": "2026-11-01"
+},
+"kop-west-alphen-aan-den-rijn": {
+"naam": "Kop West",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"kop-west-wonen-alphen-aan-den-rijn": {
+"naam": "Kop West Wonen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 28,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"kops-kwartier-nijmegen": {
+"naam": "Kops Kwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 28,
+"panden_opgeleverd": 34,
+"gemeten": "2026-11-01"
+},
+"korenveld-fase-2-wanroij": {
+"naam": "Korenveld | fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"kraanbaan-west-maas-en-waal": {
+"naam": "Kraanbaan",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 31,
+"gemeten": "2026-11-01"
+},
+"kwadijkerpark-fase-2b-purmerend": {
+"naam": "Kwadijkerpark Fase 2b",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 95,
+"panden_opgeleverd": 300,
+"gemeten": "2026-11-01"
+},
+"la-brique-milsbeek": {
+"naam": "La Brique",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 41,
+"panden_opgeleverd": 28,
+"gemeten": "2026-11-01"
+},
+"la-vinea-papendrecht": {
+"naam": "La Vinea",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 160,
+"gemeten": "2026-11-01"
+},
+"laarveld-weert": {
+"naam": "Laarveld",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 218,
+"panden_opgeleverd": 37,
+"gemeten": "2026-11-01"
+},
+"lab074-hengelo-o": {
+"naam": "Lab074",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"land-van-essche-fase-1-hoeksche-waard": {
+"naam": "Land Van Essche Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 252,
+"gemeten": "2026-11-01"
+},
+"landgoed-voorlei-leidschendam": {
+"naam": "Landgoed Voorlei",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 41,
+"panden_opgeleverd": 204,
+"gemeten": "2026-11-01"
+},
+"lange-wemen-hengelo-o": {
+"naam": "Lange Wemen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 46,
+"panden_opgeleverd": 97,
+"gemeten": "2026-11-01"
+},
+"langepad-zaandijk": {
+"naam": "Langepad",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 110,
+"panden_opgeleverd": 90,
+"gemeten": "2026-11-01"
+},
+"lauwendael-west-maas-en-waal": {
+"naam": "Lauwendael",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 114,
+"gemeten": "2026-11-01"
+},
+"lauwerserf-gorinchem-gorinchem": {
+"naam": "Lauwerserf Gorinchem",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 230,
+"panden_opgeleverd": 270,
+"gemeten": "2026-11-01"
+},
+"le-jardin-hoofddorp-haarlemmermeer": {
+"naam": "Le Jardin Hoofddorp",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 5,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"lead-leiden-leiden": {
+"naam": "Lead Leiden",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"leehoogte-hardenberg": {
+"naam": "Leehoogte",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"leeuwarden-unia-de-boomgaard-leeuwarden": {
+"naam": "Leeuwarden Unia De Boomgaard",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 213,
+"panden_opgeleverd": 136,
+"gemeten": "2026-11-01"
+},
+"leeuwendonk-fase-1-west-maas-en-waal": {
+"naam": "Leeuwendonk Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 56,
+"gemeten": "2026-11-01"
+},
+"leeuwepoort-appartementen-utrecht": {
+"naam": "Leeuwepoort Appartementen",
+"oplevering": "tussen 2026 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 81,
+"panden_opgeleverd": 156,
+"gemeten": "2026-11-01"
+},
+"leeuwepoort-herenhuizen-en-stadswoningen-utrecht": {
+"naam": "Leeuwepoort Herenhuizen En Stadswoningen",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 81,
+"panden_opgeleverd": 133,
+"gemeten": "2026-11-01"
+},
+"lemster-kwartier-de-fryske-marren": {
+"naam": "Lemster Kwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 181,
+"panden_opgeleverd": 32,
+"gemeten": "2026-11-01"
+},
+"leonard-roosendaal-roosendaal": {
+"naam": "Leonard Roosendaal",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 182,
+"gemeten": "2026-11-01"
+},
+"leyens-erve-bilthoven-woningen-de-bilt": {
+"naam": "Leyens Erve Bilthoven Woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 31,
+"panden_opgeleverd": 50,
+"gemeten": "2026-11-01"
+},
+"lightyards-eindhoven": {
+"naam": "Lightyards",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 12,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"linck-in-de-binck-s-gravenhage": {
+"naam": "Linck in de Binck",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"linck-oss": {
+"naam": "Linck",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 51,
+"gemeten": "2026-11-01"
+},
+"liv-dordrecht-dordrecht": {
+"naam": "Liv Dordrecht",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 127,
+"gemeten": "2026-11-01"
+},
+"liviahof-beuningen-gld": {
+"naam": "Liviahof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"loeff-fase-1-waalwijk": {
+"naam": "Loeff Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 49,
+"panden_opgeleverd": 68,
+"gemeten": "2026-11-01"
+},
+"lots-hof-dordrecht": {
+"naam": "Lots Hof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 173,
+"gemeten": "2026-11-01"
+},
+"lotus-nieuwegein-nieuwegein": {
+"naam": "Lotus Nieuwegein",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 29,
+"gemeten": "2026-11-01"
+},
+"luchenweide-geldrop-mierlo": {
+"naam": "Luchenweide",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 119,
+"panden_opgeleverd": 115,
+"gemeten": "2026-11-01"
+},
+"ludens-grow-utrecht": {
+"naam": "Ludens Grow",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 24,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"ludens-joy-utrecht": {
+"naam": "Ludens Joy",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"m-llincksvaart-fase-3-4-bergentheim": {
+"naam": "Möllincksvaart fase 3.4",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"maestro-s-gravenhage": {
+"naam": "Maestro",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 5,
+"gemeten": "2026-11-01"
+},
+"marea-koopaanbod-noordwijk": {
+"naam": "Marea Koopaanbod",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 6,
+"gemeten": "2026-11-01"
+},
+"marienburg-fase-1-gooise-meren": {
+"naam": "Marienburg Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 11,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"markant-moerdijk": {
+"naam": "Markant",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 183,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"mees-18-appartementen-zwolle": {
+"naam": "Mees 18 Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 61,
+"gemeten": "2026-11-01"
+},
+"meijn-nijmegen": {
+"naam": "Meijn",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 16,
+"gemeten": "2026-11-01"
+},
+"melkhal-appartementen-enschede": {
+"naam": "Melkhal - appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"menheerse-erf-fase-4-de-salie-goeree-overflakkee": {
+"naam": "Menheerse Erf Fase 4 De Salie",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 52,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"merwede-cix-blok-13-utrecht": {
+"naam": "Merwede | Cix Blok 13",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 53,
+"panden_opgeleverd": 10,
+"gemeten": "2026-11-01"
+},
+"mica-mijdrecht-de-ronde-venen": {
+"naam": "Mica Mijdrecht",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 18,
+"gemeten": "2026-11-01"
+},
+"milestone-eindhoven": {
+"naam": "Milestone",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 55,
+"panden_opgeleverd": 56,
+"gemeten": "2026-11-01"
+},
+"miller-38-koopappartementen-maastricht": {
+"naam": "Miller 38 Koopappartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 23,
+"gemeten": "2026-11-01"
+},
+"mix-b-rotterdam": {
+"naam": "Mix B",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"mix-cammingha-melkema-hof-leeuwarden": {
+"naam": "Mix Cammingha Melkema Hof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 40,
+"panden_opgeleverd": 174,
+"gemeten": "2026-11-01"
+},
+"mix-cammingha-melkema-staete-leeuwarden": {
+"naam": "Mix Cammingha Melkema Staete",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 40,
+"panden_opgeleverd": 153,
+"gemeten": "2026-11-01"
+},
+"moerheim-dedemsvaart": {
+"naam": "Moerheim",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 39,
+"panden_opgeleverd": 44,
+"gemeten": "2026-11-01"
+},
+"molenhoek-zuid-dorps-wonen-i-molenhoek": {
+"naam": "Molenhoek-Zuid | Dorps Wonen I",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"molenhoek-zuid-l-dorps-wonen-ll-molenhoek": {
+"naam": "Molenhoek-Zuid l Dorps Wonen ll",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"molenhof-emmen": {
+"naam": "Molenhof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 11,
+"gemeten": "2026-11-01"
+},
+"monchy-den-haag-s-gravenhage": {
+"naam": "Monchy Den Haag",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 5,
+"gemeten": "2026-11-01"
+},
+"monnikenpark-fase-2c-hilversum": {
+"naam": "Monnikenpark Fase 2c",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 150,
+"panden_opgeleverd": 20,
+"gemeten": "2026-11-01"
+},
+"mooi-noordwolde-weststellingwerf": {
+"naam": "Mooi Noordwolde",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 49,
+"panden_opgeleverd": 24,
+"gemeten": "2026-11-01"
+},
+"mooi-st-anne-waadhoeke": {
+"naam": "Mooi St Anne",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 14,
+"gemeten": "2026-11-01"
+},
+"muntbloem-zaanstad": {
+"naam": "Muntbloem",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 22,
+"panden_opgeleverd": 140,
+"gemeten": "2026-11-01"
+},
+"negen-van-de-wilg-gorinchem": {
+"naam": "Negen Van De Wilg",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 94,
+"panden_opgeleverd": 256,
+"gemeten": "2026-11-01"
+},
+"nelson-amsterdam-amsterdam": {
+"naam": "Nelson Amsterdam",
+"oplevering": "2e kwartaal 2027",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"neptunus-stichtse-vecht": {
+"naam": "Neptunus",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 169,
+"gemeten": "2026-11-01"
+},
+"nest-poel-zuidplas": {
+"naam": "Nest Poel",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 153,
+"panden_opgeleverd": 74,
+"gemeten": "2026-11-01"
+},
+"new-brooklyn-bridge-almere": {
+"naam": "New Brooklyn Bridge",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 47,
+"panden_opgeleverd": 453,
+"gemeten": "2026-11-01"
+},
+"new-joymere-almere": {
+"naam": "New Joymere",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 23,
+"panden_opgeleverd": 48,
+"gemeten": "2026-11-01"
+},
+"new-maas-rotterdam": {
+"naam": "New Maas",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 20,
+"gemeten": "2026-11-01"
+},
+"next-15-hoogezand-midden-groningen": {
+"naam": "Next 15 Hoogezand",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 101,
+"panden_opgeleverd": 183,
+"gemeten": "2026-11-01"
+},
+"nh19-18-zutphen": {
+"naam": "NH19|18",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"niemeskant-fase-2-maashorst": {
+"naam": "Niemeskant Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 242,
+"panden_opgeleverd": 10,
+"gemeten": "2026-11-01"
+},
+"nieuw-achterveld-west-maas-en-waal": {
+"naam": "Nieuw Achterveld",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 82,
+"panden_opgeleverd": 24,
+"gemeten": "2026-11-01"
+},
+"nieuw-bergen-fase-1-eindhoven": {
+"naam": "Nieuw Bergen Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 24,
+"panden_opgeleverd": 40,
+"gemeten": "2026-11-01"
+},
+"nieuw-boekhorst-teylingen": {
+"naam": "Nieuw Boekhorst",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 236,
+"panden_opgeleverd": 148,
+"gemeten": "2026-11-01"
+},
+"nieuw-dronen-zuid-bodegraven": {
+"naam": "Nieuw Dronen - Zuid",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"nieuw-eilands-eigen-amstelveen": {
+"naam": "Nieuw Eilands Eigen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 76,
+"panden_opgeleverd": 153,
+"gemeten": "2026-11-01"
+},
+"nieuw-gelle-fase-3-4-winterswijk-meddo": {
+"naam": "Nieuw Gelle - fase 3/4",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"nieuw-gelle-fase-4-winterswijk": {
+"naam": "Nieuw Gelle Fase 4",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 25,
+"panden_opgeleverd": 47,
+"gemeten": "2026-11-01"
+},
+"nieuw-kralingen-aan-de-boezem-ii-rotterdam": {
+"naam": "Nieuw Kralingen Aan De Boezem Ii",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 212,
+"panden_opgeleverd": 288,
+"gemeten": "2026-11-01"
+},
+"nieuw-kralingen-in-de-lanen-i-rotterdam": {
+"naam": "Nieuw Kralingen In De Lanen I",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 212,
+"panden_opgeleverd": 288,
+"gemeten": "2026-11-01"
+},
+"nieuw-mosveen-s-gravenhage": {
+"naam": "Nieuw Mosveen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"nieuw-rijnvaert-fase-1b-oegstgeest": {
+"naam": "Nieuw Rijnvaert Fase 1b",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 120,
+"panden_opgeleverd": 248,
+"gemeten": "2026-11-01"
+},
+"nieuwe-rede-kaag-en-braassem": {
+"naam": "Nieuwe Rede",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 20,
+"panden_opgeleverd": 67,
+"gemeten": "2026-11-01"
+},
+"nieuwe-rede-leimuiden": {
+"naam": "Nieuwe Rede",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"nieuwe-weelde-hoorn": {
+"naam": "Nieuwe Weelde",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 47,
+"panden_opgeleverd": 166,
+"gemeten": "2026-11-01"
+},
+"nij-wenwille-drachten": {
+"naam": "Nij Wenwille",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"noarderstek-fase-4-noardeast-fryslan": {
+"naam": "Noarderstek Fase 4",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 73,
+"panden_opgeleverd": 42,
+"gemeten": "2026-11-01"
+},
+"noi-avenue-s-gravenhage": {
+"naam": "NOI Avenue",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 9,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"nooitgedacht-philip-schaap-kuhne-zeist": {
+"naam": "Nooitgedacht / Philip Schaap / Kuhne",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"noorderbunder-dongen": {
+"naam": "Noorderbunder",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 33,
+"panden_opgeleverd": 17,
+"gemeten": "2026-11-01"
+},
+"noordkade-doetinchem": {
+"naam": "Noordkade",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"nova-67-appartementen-zwolle": {
+"naam": "Nova 67 Appartementen",
+"oplevering": "medio 2026",
+"opgeleverd": true,
+"in_aanbouw": 10,
+"panden_opgeleverd": 60,
+"gemeten": "2026-11-01"
+},
+"novus-leeuwarden-leeuwarden": {
+"naam": "Novus Leeuwarden",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"nxt-avenue-almere-almere": {
+"naam": "Nxt Avenue Almere",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 39,
+"panden_opgeleverd": 461,
+"gemeten": "2026-11-01"
+},
+"o-kade-groningen": {
+"naam": "O Kade",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 31,
+"panden_opgeleverd": 23,
+"gemeten": "2026-11-01"
+},
+"omega-leiden": {
+"naam": "Omega",
+"oplevering": "medio Q2 2027",
+"opgeleverd": false,
+"in_aanbouw": 91,
+"panden_opgeleverd": 23,
+"gemeten": "2026-11-01"
+},
+"ons-dorp-fase-3-hardinxveld-giessendam": {
+"naam": "Ons Dorp Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 134,
+"panden_opgeleverd": 138,
+"gemeten": "2026-11-01"
+},
+"ons-erf-lincolnpark-haarlemmermeer": {
+"naam": "Ons Erf Lincolnpark",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"ooievaarshoek-oss": {
+"naam": "Ooievaarshoek",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 60,
+"panden_opgeleverd": 31,
+"gemeten": "2026-11-01"
+},
+"oosteinderkwartier-aalsmeer": {
+"naam": "Oosteinderkwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 12,
+"panden_opgeleverd": 54,
+"gemeten": "2026-11-01"
+},
+"oosterlicht-fase-1-de-ronde-venen": {
+"naam": "Oosterlicht Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 100,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"op-de-roeibaan-meerstad": {
+"naam": "Op de Roeibaan",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"op-den-donk-duiven": {
+"naam": "Op Den Donk",
+"oplevering": "tussen 2026 en 2029",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 29,
+"gemeten": "2026-11-01"
+},
+"opbroek-oost-fase-1-rijssen-holten": {
+"naam": "Opbroek Oost Fase 1",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 178,
+"panden_opgeleverd": 305,
+"gemeten": "2026-11-01"
+},
+"opdreef-s-gravenhage": {
+"naam": "Opdreef",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 91,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"oranjehof-terneuzen": {
+"naam": "Oranjehof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 46,
+"gemeten": "2026-11-01"
+},
+"othene-frisiusschans-terneuzen": {
+"naam": "Othene Frisiusschans",
+"oplevering": "in 2025",
+"opgeleverd": true,
+"in_aanbouw": 196,
+"panden_opgeleverd": 304,
+"gemeten": "2026-11-01"
+},
+"othene-iqube-terneuzen": {
+"naam": "Othene Iqube",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 195,
+"panden_opgeleverd": 305,
+"gemeten": "2026-11-01"
+},
+"oud-neef-tytsjerksteradiel": {
+"naam": "Oud Neef",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 115,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"overhoeken-zaanstad": {
+"naam": "Overhoeken",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 25,
+"gemeten": "2026-11-01"
+},
+"overstaete-alkmaar": {
+"naam": "Overstaete",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"pam-pampuslaan-1-amsterdam": {
+"naam": "Pam Pampuslaan 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 54,
+"panden_opgeleverd": 47,
+"gemeten": "2026-11-01"
+},
+"parador-scheveningseweg-82-s-gravenhage": {
+"naam": "Parador, Scheveningseweg 82",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"parc-sandur-emmen": {
+"naam": "Parc Sandur",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"parc-tholen-fase-1-tholen": {
+"naam": "Parc Tholen Fase 1",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 132,
+"panden_opgeleverd": 36,
+"gemeten": "2026-11-01"
+},
+"parckhart-soest": {
+"naam": "Parckhart",
+"oplevering": "tussen 2027 en 2029",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"park-beresteijn-voorschoten": {
+"naam": "Park Beresteijn",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"park-overdeschie-woningen-rotterdam": {
+"naam": "Park Overdeschie Woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 64,
+"panden_opgeleverd": 36,
+"gemeten": "2026-11-01"
+},
+"park-valley-fase-4-pink-blossom-diemen": {
+"naam": "Park Valley Fase 4 Pink Blossom",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"park-west-het-verlaat-leeuwarden": {
+"naam": "Park West Het Verlaat",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 33,
+"panden_opgeleverd": 16,
+"gemeten": "2026-11-01"
+},
+"park-west-nijderbij-leeuwarden": {
+"naam": "Park West Nijderbij",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 34,
+"panden_opgeleverd": 19,
+"gemeten": "2026-11-01"
+},
+"parkbuurt-almelo": {
+"naam": "Parkbuurt",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 209,
+"panden_opgeleverd": 30,
+"gemeten": "2026-11-01"
+},
+"parkbuurt-almelo-fase-1b-almelo": {
+"naam": "Parkbuurt Almelo Fase 1b",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 211,
+"panden_opgeleverd": 29,
+"gemeten": "2026-11-01"
+},
+"parkhof-wilgenrijk-maassluis": {
+"naam": "Parkhof Wilgenrijk",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 25,
+"panden_opgeleverd": 194,
+"gemeten": "2026-11-01"
+},
+"parkrand-estate-groningen": {
+"naam": "Parkrand Estate",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 17,
+"panden_opgeleverd": 178,
+"gemeten": "2026-11-01"
+},
+"parkrand-leusden-fase-4-leusden": {
+"naam": "Parkrand Leusden Fase 4",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 259,
+"gemeten": "2026-11-01"
+},
+"parkzijde-rijswijk-rijswijk": {
+"naam": "Parkzijde Rijswijk",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"pelmolenpad-fase-1b-hoorn": {
+"naam": "Pelmolenpad Fase 1b",
+"oplevering": "tussen 2027 en 2029",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"pendorp-alkmaar": {
+"naam": "Pendorp",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"pioniers-van-middelsee-leeuwarden": {
+"naam": "Pioniers Van Middelsee",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 281,
+"panden_opgeleverd": 219,
+"gemeten": "2026-11-01"
+},
+"plan-woerden-woerden": {
+"naam": "Plan Woerden",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 43,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"plaza-residences-haarlem-haarlem": {
+"naam": "Plaza Residences Haarlem",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 34,
+"gemeten": "2026-11-01"
+},
+"plesmanduin-nieuwbouw-s-gravenhage": {
+"naam": "Plesmanduin Nieuwbouw",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 5,
+"gemeten": "2026-11-01"
+},
+"podium-amersfoort": {
+"naam": "Podium",
+"oplevering": "april 2026",
+"opgeleverd": true,
+"in_aanbouw": 45,
+"panden_opgeleverd": 257,
+"gemeten": "2026-11-01"
+},
+"podium-etten-leur": {
+"naam": "Podium",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 68,
+"gemeten": "2026-11-01"
+},
+"poldervaart-medemblik": {
+"naam": "Poldervaart",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 15,
+"gemeten": "2026-11-01"
+},
+"polly-amsterdam": {
+"naam": "Polly",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 23,
+"panden_opgeleverd": 11,
+"gemeten": "2026-11-01"
+},
+"pondhouse-rotterdam-rotterdam": {
+"naam": "Pondhouse Rotterdam",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"poortwachter-druten": {
+"naam": "Poortwachter",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 90,
+"panden_opgeleverd": 134,
+"gemeten": "2026-11-01"
+},
+"populus-rotterdam": {
+"naam": "Populus",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 13,
+"gemeten": "2026-11-01"
+},
+"porta-woerden": {
+"naam": "PORTA",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"portier-l-woningen-druten": {
+"naam": "Portier l woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"pracht-zutphen": {
+"naam": "Pracht",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"prelude-schiedam": {
+"naam": "Prelude",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 32,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"quatrebras-badhoevedorp-haarlemmermeer": {
+"naam": "Quatrebras Badhoevedorp",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 105,
+"gemeten": "2026-11-01"
+},
+"quatrebras-park-quartier-iii-fase-2-haarlemmermeer": {
+"naam": "Quatrebras Park Quartier Iii Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 271,
+"gemeten": "2026-11-01"
+},
+"raadhuys-bronckhorst": {
+"naam": "Raadhuys",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"raadshof-ede": {
+"naam": "Raadshof",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 279,
+"panden_opgeleverd": 21,
+"gemeten": "2026-11-01"
+},
+"raelterhof-raalte": {
+"naam": "Raelterhof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 326,
+"gemeten": "2026-11-01"
+},
+"residences-van-oranje-fase-1-noordwijk": {
+"naam": "Residences Van Oranje Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 13,
+"gemeten": "2026-11-01"
+},
+"rhijn-nieuwegein": {
+"naam": "Rhijn",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 22,
+"panden_opgeleverd": 375,
+"gemeten": "2026-11-01"
+},
+"rise-de-caai-eindhoven": {
+"naam": "Rise De Caai",
+"oplevering": "rond 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"riva-rotterdam": {
+"naam": "Riva",
+"oplevering": "tussen 2026 en 2027",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"rodeo-broek-op-langedijk": {
+"naam": "Rodeo",
+"oplevering": "Q2 2027",
+"opgeleverd": false,
+"in_aanbouw": 64,
+"panden_opgeleverd": 35,
+"gemeten": "2026-11-01"
+},
+"roderstate-noordenveld": {
+"naam": "Roderstate",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 18,
+"panden_opgeleverd": 94,
+"gemeten": "2026-11-01"
+},
+"rolreder-zaanstad": {
+"naam": "Rolreder",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 95,
+"panden_opgeleverd": 20,
+"gemeten": "2026-11-01"
+},
+"roodhekkenpas-west-druten": {
+"naam": "Roodhekkenpas-West",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 63,
+"panden_opgeleverd": 52,
+"gemeten": "2026-11-01"
+},
+"roof-garden-amsterdam": {
+"naam": "Roof Garden",
+"oplevering": "2e kwartaal 2028",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 11,
+"gemeten": "2026-11-01"
+},
+"rotterdam-tree-house-koopappartementen-rotterdam": {
+"naam": "Rotterdam Tree House Koopappartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 4,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"rozenbuurt-fase-1a-hoorn": {
+"naam": "Rozenbuurt Fase 1a",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 64,
+"panden_opgeleverd": 218,
+"gemeten": "2026-11-01"
+},
+"rozenrijk-in-zwaag-hoorn": {
+"naam": "Rozenrijk In Zwaag",
+"oplevering": "eind 2027 of begin 2028",
+"opgeleverd": false,
+"in_aanbouw": 60,
+"panden_opgeleverd": 218,
+"gemeten": "2026-11-01"
+},
+"rutgershof-lochem": {
+"naam": "Rutgershof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 42,
+"gemeten": "2026-11-01"
+},
+"s-gravendeel-west-fase-1a-hoeksche-waard": {
+"naam": "S Gravendeel West Fase 1a",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 284,
+"panden_opgeleverd": 11,
+"gemeten": "2026-11-01"
+},
+"saam-leiden": {
+"naam": "Saam",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 100,
+"panden_opgeleverd": 81,
+"gemeten": "2026-11-01"
+},
+"satijnhof-enschede": {
+"naam": "Satijnhof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 68,
+"panden_opgeleverd": 170,
+"gemeten": "2026-11-01"
+},
+"schoterkwartier-fase-haarlem": {
+"naam": "Schoterkwartier Fase",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 66,
+"panden_opgeleverd": 35,
+"gemeten": "2026-11-01"
+},
+"schuitegat-scheveningen-s-gravenhage": {
+"naam": "Schuitegat Scheveningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 9,
+"panden_opgeleverd": 16,
+"gemeten": "2026-11-01"
+},
+"sem-hoofddorp-haarlemmermeer": {
+"naam": "Sem Hoofddorp",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 38,
+"panden_opgeleverd": 52,
+"gemeten": "2026-11-01"
+},
+"sierlijke-dames-eindhoven": {
+"naam": "Sierlijke Dames",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 20,
+"panden_opgeleverd": 38,
+"gemeten": "2026-11-01"
+},
+"silhouet-appartementen-wormerland": {
+"naam": "Silhouet Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"silhouet-eengezinswoningen-wormerland": {
+"naam": "Silhouet Eengezinswoningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"silhouet-wormerland": {
+"naam": "Silhouet",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 41,
+"panden_opgeleverd": 27,
+"gemeten": "2026-11-01"
+},
+"sint-anna-oudenbosch-halderberge": {
+"naam": "Sint Anna Oudenbosch",
+"oplevering": "vanaf Q2 2026",
+"opgeleverd": false,
+"in_aanbouw": 30,
+"panden_opgeleverd": 59,
+"gemeten": "2026-11-01"
+},
+"smakkelaarspark-parkgebouw-utrecht": {
+"naam": "Smakkelaarspark | Parkgebouw",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"smariuskade-fase-carre-tilburg": {
+"naam": "Smariuskade Fase Carre",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 64,
+"panden_opgeleverd": 61,
+"gemeten": "2026-11-01"
+},
+"smariuskade-fase-desem-tilburg": {
+"naam": "Smariuskade Fase Desem",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 64,
+"panden_opgeleverd": 61,
+"gemeten": "2026-11-01"
+},
+"soeterdael-zoetermeer": {
+"naam": "Soeterdael",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 5,
+"panden_opgeleverd": 22,
+"gemeten": "2026-11-01"
+},
+"sonnenwijzer-kampen": {
+"naam": "Sonnenwijzer",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 7,
+"panden_opgeleverd": 37,
+"gemeten": "2026-11-01"
+},
+"spetterend-wonen-de-zoom-lansingerland": {
+"naam": "Spetterend Wonen De Zoom",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 15,
+"panden_opgeleverd": 16,
+"gemeten": "2026-11-01"
+},
+"springfield-arnhem": {
+"naam": "Springfield",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 152,
+"panden_opgeleverd": 103,
+"gemeten": "2026-11-01"
+},
+"stadsbuiten-utrecht": {
+"naam": "Stadsbuiten",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 15,
+"gemeten": "2026-11-01"
+},
+"stadsdok-doetinchem": {
+"naam": "Stadsdok",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 65,
+"panden_opgeleverd": 117,
+"gemeten": "2026-11-01"
+},
+"stadspassage-enschede": {
+"naam": "Stadspassage",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"starrenburg-fase-1-voorschoten": {
+"naam": "Starrenburg Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 99,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"stationsmeester-heerhugowaard": {
+"naam": "Stationsmeester",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"stationsweg-49-renkum": {
+"naam": "Stationsweg 49",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 11,
+"panden_opgeleverd": 19,
+"gemeten": "2026-11-01"
+},
+"stockholm-nissewaard": {
+"naam": "Stockholm",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 5,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"strandparel-rockanje-rockanje": {
+"naam": "Strandparel Rockanje",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 27,
+"panden_opgeleverd": 10,
+"gemeten": "2026-11-01"
+},
+"strijp-s4-fase-spark-eindhoven": {
+"naam": "Strijp S4 Fase Spark",
+"oplevering": "zomer 2028",
+"opgeleverd": false,
+"in_aanbouw": 21,
+"panden_opgeleverd": 43,
+"gemeten": "2026-11-01"
+},
+"suikerzijde-hanny-van-den-horsthof-groningen": {
+"naam": "Suikerzijde Hanny Van Den Horsthof",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 157,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"swanladriehoek-zuidplas": {
+"naam": "Swanladriehoek",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 153,
+"panden_opgeleverd": 76,
+"gemeten": "2026-11-01"
+},
+"t-kofschip-veenendaal": {
+"naam": "'t Kofschip",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 105,
+"gemeten": "2026-11-01"
+},
+"t-maoleveld-horst-aan-de-maas": {
+"naam": "T Maoleveld",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 23,
+"gemeten": "2026-11-01"
+},
+"t-zandvoort-doetinchem": {
+"naam": "T Zandvoort",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 8,
+"panden_opgeleverd": 33,
+"gemeten": "2026-11-01"
+},
+"teelebeek-milsbeek": {
+"naam": "Teelebeek",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 143,
+"panden_opgeleverd": 17,
+"gemeten": "2026-11-01"
+},
+"terrazza-westland": {
+"naam": "Terrazza",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 132,
+"panden_opgeleverd": 368,
+"gemeten": "2026-11-01"
+},
+"the-forest-amsterdam": {
+"naam": "The Forest",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"the-four-eindhoven": {
+"naam": "The Four",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 21,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"the-future-3-kamer-appartementen-nu-in-verkoop-alkmaar": {
+"naam": "The Future - 3-kamer appartementen nu in verkoop!",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"the-future-alkmaar": {
+"naam": "The Future",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"the-hive-amsterdam": {
+"naam": "The Hive",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"the-suites-sluisbuurt-amsterdam": {
+"naam": "The Suites - Sluisbuurt",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"the-triplets-amsterdam": {
+"naam": "The Triplets",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 12,
+"gemeten": "2026-11-01"
+},
+"the-yard-ii-dordrecht": {
+"naam": "The Yard Ii",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 81,
+"panden_opgeleverd": 34,
+"gemeten": "2026-11-01"
+},
+"thorbeckehof-almelo-almelo": {
+"naam": "Thorbeckehof Almelo",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 49,
+"panden_opgeleverd": 97,
+"gemeten": "2026-11-01"
+},
+"thorbeckekwartier-fase-1-arnhem": {
+"naam": "Thorbeckekwartier Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 27,
+"panden_opgeleverd": 30,
+"gemeten": "2026-11-01"
+},
+"timber-rotterdam": {
+"naam": "Timber",
+"oplevering": "in 2027",
+"opgeleverd": false,
+"in_aanbouw": 27,
+"panden_opgeleverd": 35,
+"gemeten": "2026-11-01"
+},
+"treilerstaete-s-gravenhage": {
+"naam": "Treilerstaete",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"trije-terpen-sud-noardeast-fryslan": {
+"naam": "Trije Terpen Sud",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"tuindorp-hillegom-fase-3-eengezinswoningen-hillegom": {
+"naam": "Tuindorp Hillegom Fase 3 Eengezinswoningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 265,
+"panden_opgeleverd": 175,
+"gemeten": "2026-11-01"
+},
+"tuinenrijk-veld-1-s-hertogenbosch": {
+"naam": "Tuinenrijk Veld 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 137,
+"panden_opgeleverd": 362,
+"gemeten": "2026-11-01"
+},
+"tuinenrijk-veld-2-s-hertogenbosch": {
+"naam": "Tuinenrijk Veld 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 137,
+"panden_opgeleverd": 362,
+"gemeten": "2026-11-01"
+},
+"tuinenrijk-veld-3a-s-hertogenbosch": {
+"naam": "Tuinenrijk Veld 3a",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 137,
+"panden_opgeleverd": 362,
+"gemeten": "2026-11-01"
+},
+"tuinkwartier-amsterdam": {
+"naam": "Tuinkwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 182,
+"panden_opgeleverd": 33,
+"gemeten": "2026-11-01"
+},
+"tussen-de-leijen-gilze-en-rijen": {
+"naam": "Tussen De Leijen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 234,
+"panden_opgeleverd": 16,
+"gemeten": "2026-11-01"
+},
+"tussen-kasteel-en-wijchens-meer-wijchen": {
+"naam": "Tussen Kasteel En Wijchens Meer",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 3,
+"panden_opgeleverd": 123,
+"gemeten": "2026-11-01"
+},
+"twist-1-borne": {
+"naam": "Twist 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 104,
+"gemeten": "2026-11-01"
+},
+"twist-2-borne": {
+"naam": "Twist 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 104,
+"gemeten": "2026-11-01"
+},
+"up-north-amsterdam": {
+"naam": "Up North",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"vad07bc-zelfbouwkavels-wageningen": {
+"naam": "Vad07bc Zelfbouwkavels",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 14,
+"panden_opgeleverd": 40,
+"gemeten": "2026-11-01"
+},
+"vadapark-wageningen": {
+"naam": "Vadapark",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 14,
+"panden_opgeleverd": 40,
+"gemeten": "2026-11-01"
+},
+"valkenswaard-mariakerk-valkenswaard": {
+"naam": "Valkenswaard Mariakerk",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 83,
+"panden_opgeleverd": 78,
+"gemeten": "2026-11-01"
+},
+"van-marishof-haarlemmermeer": {
+"naam": "Van Marishof",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 13,
+"panden_opgeleverd": 65,
+"gemeten": "2026-11-01"
+},
+"veenrijck-fase-1-nijkerkerveen": {
+"naam": "Veenrijck fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"veghels-buiten-noordoost-fase-1-meierijstad": {
+"naam": "Veghels Buiten Noordoost Fase 1",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 210,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"veldhoven-slot-oost-veldhoven": {
+"naam": "Veldhoven Slot Oost",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 85,
+"panden_opgeleverd": 50,
+"gemeten": "2026-11-01"
+},
+"victoriapark-hoofddorp-haarlemmermeer": {
+"naam": "Victoriapark Hoofddorp",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 163,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"vlietpark-fase-2-rotterdam": {
+"naam": "Vlietpark Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 54,
+"gemeten": "2026-11-01"
+},
+"vlietzicht-landgoed-voorlei-leidschendam": {
+"naam": "VLIETZICHT-Landgoed Voorlei",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 41,
+"panden_opgeleverd": 204,
+"gemeten": "2026-11-01"
+},
+"vogelrijk-maassluis": {
+"naam": "Vogelrijk",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 34,
+"panden_opgeleverd": 27,
+"gemeten": "2026-11-01"
+},
+"volharding-westerkwartier": {
+"naam": "Volharding",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"voor-de-brug-fase-3-bodegraven-reeuwijk": {
+"naam": "Voor De Brug Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 68,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"vosholen-midden-groningen": {
+"naam": "Vosholen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 26,
+"panden_opgeleverd": 79,
+"gemeten": "2026-11-01"
+},
+"vredehof-fase-1-nissewaard": {
+"naam": "Vredehof Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 324,
+"panden_opgeleverd": 91,
+"gemeten": "2026-11-01"
+},
+"vrije-kavels-kreekrijk-assendelft": {
+"naam": "Vrije Kavels Kreekrijk",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"vroomshoop-oost-twenterand": {
+"naam": "Vroomshoop Oost",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 37,
+"panden_opgeleverd": 48,
+"gemeten": "2026-11-01"
+},
+"waelhoven-westland": {
+"naam": "Waelhoven",
+"oplevering": "Q1 2027",
+"opgeleverd": false,
+"in_aanbouw": 122,
+"panden_opgeleverd": 278,
+"gemeten": "2026-11-01"
+},
+"waelrijk-fase-1-deel-1-westland": {
+"naam": "Waelrijk Fase 1 Deel 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 5,
+"panden_opgeleverd": 104,
+"gemeten": "2026-11-01"
+},
+"waelrijk-fase-1-deel-2-westland": {
+"naam": "Waelrijk Fase 1 Deel 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 20,
+"panden_opgeleverd": 132,
+"gemeten": "2026-11-01"
+},
+"waelrijk-fase-3-westland": {
+"naam": "Waelrijk Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 123,
+"gemeten": "2026-11-01"
+},
+"walzicht-bergen-op-zoom": {
+"naam": "Walzicht",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 127,
+"panden_opgeleverd": 79,
+"gemeten": "2026-11-01"
+},
+"waterhof-oostzaan-oostzaan": {
+"naam": "Waterhof Oostzaan",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 19,
+"panden_opgeleverd": 67,
+"gemeten": "2026-11-01"
+},
+"waterrijk-fase-1-dronten": {
+"naam": "Waterrijk Fase 1",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 124,
+"panden_opgeleverd": 159,
+"gemeten": "2026-11-01"
+},
+"waterroos-kwarts-hoorn": {
+"naam": "Waterroos Kwarts",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 58,
+"panden_opgeleverd": 220,
+"gemeten": "2026-11-01"
+},
+"weder-rotterdam": {
+"naam": "Weder",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 1,
+"gemeten": "2026-11-01"
+},
+"weespersluis-vechtrijk-3b1-amsterdam": {
+"naam": "Weespersluis Vechtrijk 3b1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 499,
+"gemeten": "2026-11-01"
+},
+"weideveld-fase-1-eemnes": {
+"naam": "Weideveld Fase 1",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 43,
+"panden_opgeleverd": 138,
+"gemeten": "2026-11-01"
+},
+"weidewald-doetinchem": {
+"naam": "Weidewald",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 26,
+"panden_opgeleverd": 250,
+"gemeten": "2026-11-01"
+},
+"weidse-peel-sint-anthonis": {
+"naam": "Weidse Peel |",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"werf-oegstgeest-oegstgeest": {
+"naam": "Werf Oegstgeest",
+"oplevering": "tussen 2026 en 2029",
+"opgeleverd": false,
+"in_aanbouw": 5,
+"panden_opgeleverd": 45,
+"gemeten": "2026-11-01"
+},
+"wergea-grut-palma-west-leeuwarden": {
+"naam": "Wergea Grut Palma West",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 89,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+},
+"west-vlaardingen": {
+"naam": "West",
+"oplevering": "tussen 2027 en 2029",
+"opgeleverd": false,
+"in_aanbouw": 38,
+"panden_opgeleverd": 43,
+"gemeten": "2026-11-01"
+},
+"westeinderhage-fase-1-aalsmeer": {
+"naam": "Westeinderhage Fase 1",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 115,
+"panden_opgeleverd": 8,
+"gemeten": "2026-11-01"
+},
+"westvaartpark-fase-3-hazerswoude-rijndijk": {
+"naam": "Westvaartpark Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 49,
+"panden_opgeleverd": 274,
+"gemeten": "2026-11-01"
+},
+"wherezien-fase-1-purmerend": {
+"naam": "Wherezien Fase 1",
+"oplevering": "tussen 2027 en 2030",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"wildgroei-haarzuilens": {
+"naam": "Wildgroei",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"wildgroei-utrecht": {
+"naam": "Wildgroei",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 107,
+"panden_opgeleverd": 0,
+"gemeten": "2026-11-01"
+},
+"willemspoort-zuid-s-hertogenbosch": {
+"naam": "Willemspoort Zuid",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 14,
+"gemeten": "2026-11-01"
+},
+"willow-amsterdam": {
+"naam": "Willow",
+"oplevering": "in 2026",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 4,
+"gemeten": "2026-11-01"
+},
+"winnerstraat-nederweert": {
+"naam": "Winnerstraat",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 13,
+"gemeten": "2026-11-01"
+},
+"wisselkwartier-oosterhout": {
+"naam": "Wisselkwartier",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 1,
+"panden_opgeleverd": 7,
+"gemeten": "2026-11-01"
+},
+"wonen-aan-de-beeklaan-4-levensloopbestendige-woningen-twenterand": {
+"naam": "Wonen Aan De Beeklaan 4 Levensloopbestendige Woningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 44,
+"panden_opgeleverd": 137,
+"gemeten": "2026-11-01"
+},
+"wonen-aan-de-spoorsingel-fase-2-krimpenerwaard": {
+"naam": "Wonen Aan De Spoorsingel Fase 2",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 25,
+"panden_opgeleverd": 76,
+"gemeten": "2026-11-01"
+},
+"wonen-aan-het-alkmaardermeer-akersloot": {
+"naam": "Wonen aan het Alkmaardermeer",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"wonen-bij-maenen-valkenswaard": {
+"naam": "Wonen Bij Maenen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 88,
+"panden_opgeleverd": 84,
+"gemeten": "2026-11-01"
+},
+"wonen-in-appelgaard-voorne-aan-zee": {
+"naam": "Wonen In Appelgaard",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 170,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"wonen-in-de-zomertaling-dijk-en-waard": {
+"naam": "Wonen In De Zomertaling",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 279,
+"panden_opgeleverd": 166,
+"gemeten": "2026-11-01"
+},
+"wonen-in-duet-nijmegen": {
+"naam": "Wonen In Duet",
+"oplevering": "gefaseerd vanaf begin 2030",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 9,
+"gemeten": "2026-11-01"
+},
+"wonen-in-greenz-fase-2-veenendaal": {
+"naam": "Wonen In Greenz Fase 2",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 261,
+"panden_opgeleverd": 239,
+"gemeten": "2026-11-01"
+},
+"wonen-in-groen-fase-3-maassluis": {
+"naam": "Wonen In Groen Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 25,
+"panden_opgeleverd": 194,
+"gemeten": "2026-11-01"
+},
+"wonen-in-hilko-zaandam-zaanstad": {
+"naam": "Wonen In Hilko Zaandam",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 23,
+"panden_opgeleverd": 112,
+"gemeten": "2026-11-01"
+},
+"wonen-in-oosterdalfsen-dalfsen": {
+"naam": "Wonen In Oosterdalfsen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 14,
+"panden_opgeleverd": 25,
+"gemeten": "2026-11-01"
+},
+"wonen-in-woodstone-sequoia-dijk-en-waard": {
+"naam": "Wonen In Woodstone Sequoia",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 12,
+"panden_opgeleverd": 24,
+"gemeten": "2026-11-01"
+},
+"wonen-op-hembrug-zaanstad": {
+"naam": "Wonen Op Hembrug",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 10,
+"panden_opgeleverd": 1,
+"gemeten": "2026-11-01"
+},
+"woodstone-sequoia-heerhugowaard": {
+"naam": "Woodstone Sequoia",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"woonveld-aan-de-bosrand-haarlemmermeer": {
+"naam": "Woonveld Aan De Bosrand",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 222,
+"panden_opgeleverd": 278,
+"gemeten": "2026-11-01"
+},
+"woud-zuidplas": {
+"naam": "Woud",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 153,
+"panden_opgeleverd": 76,
+"gemeten": "2026-11-01"
+},
+"ypsilon-park-s-gravenhage": {
+"naam": "Ypsilon Park",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"zaam-zaandam-zaandam": {
+"naam": "ZAAM Zaandam",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"zaam-zaandam-zaanstad": {
+"naam": "Zaam Zaandam",
+"oplevering": "in 2026",
+"opgeleverd": false,
+"in_aanbouw": 6,
+"panden_opgeleverd": 178,
+"gemeten": "2026-11-01"
+},
+"zalt-noordwijk": {
+"naam": "Zalt",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 3,
+"gemeten": "2026-11-01"
+},
+"zuidbroek-wierden-fase-3-wierden": {
+"naam": "Zuidbroek Wierden Fase 3",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 18,
+"panden_opgeleverd": 193,
+"gemeten": "2026-11-01"
+},
+"zuidendijkse-tuin-dordrecht": {
+"naam": "Zuidendijkse Tuin",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 66,
+"panden_opgeleverd": 42,
+"gemeten": "2026-11-01"
+},
+"zuiderweide-dronten": {
+"naam": "Zuiderweide",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 45,
+"panden_opgeleverd": 182,
+"gemeten": "2026-11-01"
+},
+"zuiderweide-dronten-fase-1a-appartementen-dronten": {
+"naam": "Zuiderweide Dronten Fase 1a Appartementen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 45,
+"panden_opgeleverd": 182,
+"gemeten": "2026-11-01"
+},
+"zuiderweide-dronten-fase-1b-rar-en-hofwoningen-dronten": {
+"naam": "Zuiderweide Dronten Fase 1b Rar En Hofwoningen",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 45,
+"panden_opgeleverd": 182,
+"gemeten": "2026-11-01"
+},
+"zuiderweide-dronten-fase-2b-dronten": {
+"naam": "Zuiderweide Dronten Fase 2b",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 45,
+"panden_opgeleverd": 182,
+"gemeten": "2026-11-01"
+},
+"zuiderweide-fase-4a-de-vierspan-dronten": {
+"naam": "Zuiderweide Fase 4a De Vierspan",
+"oplevering": "tussen 2026 en 2027",
+"opgeleverd": false,
+"in_aanbouw": 45,
+"panden_opgeleverd": 181,
+"gemeten": "2026-11-01"
+},
+"zuidzicht-alkmaar": {
+"naam": "ZuidZicht",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 2,
+"panden_opgeleverd": 12,
+"gemeten": "2026-11-01"
+},
+"zuydpolder-barendrecht-kastanje-erf-barendrecht": {
+"naam": "Zuydpolder Barendrecht Kastanje Erf",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 79,
+"panden_opgeleverd": 0,
+"gemeten": "2026-11-01"
+},
+"zwanenpark-vlaardingen": {
+"naam": "Zwanenpark",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 252,
+"panden_opgeleverd": 77,
+"gemeten": "2026-11-01"
+},
+"zwembadweg-fase-1-meierijstad": {
+"naam": "Zwembadweg Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 149,
+"panden_opgeleverd": 2,
+"gemeten": "2026-11-01"
+}
+}

@@ -366,6 +366,7 @@ BAG_MAX = 500
 BAG_REEKS = _laad_bag()
 # De laatste meting per project, voor alles wat alleen de stand van nu nodig heeft.
 BAG = {u: r[-1] for u, r in BAG_REEKS.items()}
+STATUS = {}  # slug -> wat er te volgen valt (zie main)
 
 
 def nl_datum(iso):
@@ -2929,6 +2930,13 @@ def main():
         buren = [q for q in kandidaten if q["plaats"] == p["plaats"] and q["url"] != p["url"]]
         buren.sort(key=lambda q: -(q.get("woningen") or 0))
         slug, body, rij = bouw_pagina(p, ruimtes, vb, wk, buren, gem_tel[p["plaats"]], indexeerbaar=True)
+        # "Volg je project" (3-11-2026): wat er per project te volgen valt. De app vergelijkt dit
+        # wekelijks met wat een volger eerder zag en mailt bij een verandering.
+        _bag = BAG.get(p.get("url"))
+        STATUS[slug] = {"naam": netjes_naam(p), "oplevering": oplever_schatting(p)[0], "opgeleverd": bool(opgeleverd(p)[0]),
+                        "in_aanbouw": (_bag[1].get("in_aanbouw") if _bag else None) or 0,
+                        "panden_opgeleverd": (_bag[1].get("opgeleverd") if _bag else None) or 0,
+                        "gemeten": _bag[0] if _bag else None}
         if slug in handgeschreven:
             continue                      # nooit over handwerk heen schrijven
         # De indexpoort (3-11-2026): al in de index, of genoeg opgezochte feiten.
@@ -3043,6 +3051,12 @@ def main():
                       key=lambda x: x["slug"])
         json.dump(vast + rest, open(pj, "w", encoding="utf8"), ensure_ascii=False, indent=1)
         open(pj, "a").write("\n")
+        # Status per project voor "Volg je project" (app: /api/cron/project-volgers).
+        sj = os.path.join(ROOT, "web", "public", "data", "project-status.json")
+        os.makedirs(os.path.dirname(sj), exist_ok=True)
+        geldig = {x["slug"] for x in rest}
+        json.dump({k: v for k, v in sorted(STATUS.items()) if k in geldig}, open(sj, "w", encoding="utf8"), ensure_ascii=False, indent=0)
+        print(f"projectstatus: {len(geldig & set(STATUS))} projecten")
 
     if not DRY:
         sm = os.path.join(ROOT, "nieuwbouw-project-sitemap.xml")
