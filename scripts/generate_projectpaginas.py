@@ -55,7 +55,17 @@ ALLEEN_PILOT = "--pilot" in sys.argv
 MIN_WONINGEN = 50
 # De tweede poort, naast de woningdrempel: hoeveel eigen feiten een project
 # draagt. Zie eigen_feiten() in main(). 99 = uit (alleen de woningdrempel).
-MIN_FEITEN = 99
+#
+# SINDS 3-11-2026 OP 4 (besluit Daniel: meer projectpagina's is het belangrijkste).
+# Dat zijn ~250 projecten extra, en ze gaan allemaal in de index ("dan komt het bezoek
+# vanzelf"). Bewust risico: in de GSC-export van 3-11 kregen alleen pagina's met
+# eigen tekst klikken (Condorpark 85%, Haarlemszicht 86%, Volharding 81% uniek); de
+# rest zit rond de 21-25%. Daarom zoekt de feitenronde nu ook voor deze pagina's de
+# eigen projectsite en feiten op (handwerk-schrijver.yml). Wil je toch weer een
+# poort: zet MIN_OPGEZOCHT op 2, dan wacht een nieuwe pagina op noindex tot hij
+# twee opgezochte feiten heeft.
+MIN_FEITEN = 4
+MIN_OPGEZOCHT = 0
 for i, a in enumerate(sys.argv):
     if a == "--min" and i + 1 < len(sys.argv):
         MIN_WONINGEN = int(sys.argv[i + 1])
@@ -2912,6 +2922,8 @@ def main():
           f"{sum(len(r['beslissingen']) for r in ruimtes)} beslissingen\n")
 
     nieuw = herzien = 0
+    noindex_tel = 0
+    nieuw_wacht = []
     hub_rijen = []
     for p in kandidaten:
         buren = [q for q in kandidaten if q["plaats"] == p["plaats"] and q["url"] != p["url"]]
@@ -2919,6 +2931,17 @@ def main():
         slug, body, rij = bouw_pagina(p, ruimtes, vb, wk, buren, gem_tel[p["plaats"]], indexeerbaar=True)
         if slug in handgeschreven:
             continue                      # nooit over handwerk heen schrijven
+        # De indexpoort (3-11-2026): al in de index, of genoeg opgezochte feiten.
+        stond_in_index = any(x["slug"] == slug and "noindex" not in (x.get("robots") or "") for x in pages)
+        if not (stond_in_index or len(bruikbare_feiten(slug)) >= MIN_OPGEZOCHT):
+            rij["robots"] = "noindex,follow"
+            noindex_tel += 1
+            if not DRY:
+                os.makedirs(os.path.join(CLUSTER, "content"), exist_ok=True)
+                open(os.path.join(CLUSTER, "content", f"{slug}.html"), "w", encoding="utf8").write(body)
+                pages = [x for x in pages if x["slug"] != slug] + [rij]
+            nieuw_wacht.append(slug)
+            continue
         hub_rijen.append({"path": rij["path"], "_naam": netjes_naam(p),
                           "_plaats": netjes(p["plaats"]), "_won": p.get("woningen") or 0,
                           "_opl": oplever_schatting(p)[0]})
@@ -3025,6 +3048,8 @@ def main():
 
     print(f"{'DROOGDRAAI — ' if DRY else ''}{nieuw} nieuwe pagina's, {herzien} herzien, "
           f"{len(handgeschreven)} handgeschreven ongemoeid gelaten.")
+    print(f"wacht op opgezochte feiten (noindex,follow): {noindex_tel} pagina's"
+          + (f" — o.a. {', '.join(nieuw_wacht[:5])}" if nieuw_wacht else ""))
     meet_uniciteit()
     per = collections.Counter(netjes(p["plaats"]) for p in kandidaten)
     print("\ntop-plaatsen:", ", ".join(f"{g} ({n})" for g, n in per.most_common(8)))

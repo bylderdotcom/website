@@ -866,6 +866,191 @@
       "source": "/nieuwbouw-project/weidse-peel-fase-2-sint-anthonis/",
       "destination": "/nieuwbouw-project/weidse-peel-sint-anthonis/",
       "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/victoriapark-hoofddorp-fase-1-haarlemmermeer/",
+      "destination": "/nieuwbouw-project/victoriapark-hoofddorp-haarlemmermeer/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/victoriapark-hoofddorp-fase-2-haarlemmermeer/",
+      "destination": "/nieuwbouw-project/victoriapark-hoofddorp-haarlemmermeer/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/pioniers-van-middelsee-fase-1-leeuwarden/",
+      "destination": "/nieuwbouw-project/pioniers-van-middelsee-leeuwarden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/pioniers-van-middelsee-fase-2-leeuwarden/",
+      "destination": "/nieuwbouw-project/pioniers-van-middelsee-leeuwarden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/pioniers-van-middelsee-fase-3-leeuwarden/",
+      "destination": "/nieuwbouw-project/pioniers-van-middelsee-leeuwarden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/pioniers-van-middelsee-fase-4-leeuwarden/",
+      "destination": "/nieuwbouw-project/pioniers-van-middelsee-leeuwarden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/thorbeckehof-almelo-fase-2-almelo/",
+      "destination": "/nieuwbouw-project/thorbeckehof-almelo-almelo/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/thorbeckehof-almelo-fase-3-almelo/",
+      "destination": "/nieuwbouw-project/thorbeckehof-almelo-almelo/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zwanenpark-fase-4-vlaardingen/",
+      "destination": "/nieuwbouw-project/zwanenpark-vlaardingen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/vroomshoop-oost-fase-3-twenterand/",
+      "destination": "/nieuwbouw-project/vroomshoop-oost-twenterand/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/vroomshoop-oost-fase-3-6-woningen-twenterand/",
+      "destination": "/nieuwbouw-project/vroomshoop-oost-twenterand/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-heuvelsche-velden-fase-1-laarbeek/",
+      "destination": "/nieuwbouw-project/de-heuvelsche-velden-laarbeek/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-heuvelsche-velden-fase-2-laarbeek/",
+      "destination": "/nieuwbouw-project/de-heuvelsche-velden-laarbeek/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/hartje-haaften-fase-1-west-betuwe/",
+      "destination": "/nieuwbouw-project/hartje-haaften-west-betuwe/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/hartje-haaften-fase-2-west-betuwe/",
+      "destination": "/nieuwbouw-project/hartje-haaften-west-betuwe/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/droomweide-fase-1-vijfheerenlanden/",
+      "destination": "/nieuwbouw-project/droomweide-vijfheerenlanden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/droomweide-fase-2-vijfheerenlanden/",
+      "destination": "/nieuwbouw-project/droomweide-vijfheerenlanden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/droomweide-fase-3a-vijfheerenlanden/",
+      "destination": "/nieuwbouw-project/droomweide-vijfheerenlanden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/waelhoven-fase-1-westland/",
+      "destination": "/nieuwbouw-project/waelhoven-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/waelhoven-fase-2-westland/",
+      "destination": "/nieuwbouw-project/waelhoven-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/parkbuurt-fase-1b-almelo/",
+      "destination": "/nieuwbouw-project/parkbuurt-almelo/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-heerlijckheid-fase-1-goeree-overflakkee/",
+      "destination": "/nieuwbouw-project/de-heerlijckheid-goeree-overflakkee/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-heerlijckheid-fase-2-goeree-overflakkee/",
+      "destination": "/nieuwbouw-project/de-heerlijckheid-goeree-overflakkee/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/pendorp-fase-1a-alkmaar/",
+      "destination": "/nieuwbouw-project/pendorp-alkmaar/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/pendorp-fase-1b-alkmaar/",
+      "destination": "/nieuwbouw-project/pendorp-alkmaar/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/hof-van-wael-verandawoningen-fase-1-westland/",
+      "destination": "/nieuwbouw-project/hof-van-wael-verandawoningen-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/hof-van-wael-verandawoningen-fase-2-westland/",
+      "destination": "/nieuwbouw-project/hof-van-wael-verandawoningen-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/nieuwe-rede-fase-2a-kaag-en-braassem/",
+      "destination": "/nieuwbouw-project/nieuwe-rede-kaag-en-braassem/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/nieuwe-rede-fase-3-kaag-en-braassem/",
+      "destination": "/nieuwbouw-project/nieuwe-rede-kaag-en-braassem/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/dirkzwager-fase-2b-schiedam/",
+      "destination": "/nieuwbouw-project/dirkzwager-schiedam/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/dirkzwager-fase-3-schiedam/",
+      "destination": "/nieuwbouw-project/dirkzwager-schiedam/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/lauwendael-fase-1-west-maas-en-waal/",
+      "destination": "/nieuwbouw-project/lauwendael-west-maas-en-waal/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/lauwendael-fase-2-west-maas-en-waal/",
+      "destination": "/nieuwbouw-project/lauwendael-west-maas-en-waal/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zuiderweide-fase-2a-dronten/",
+      "destination": "/nieuwbouw-project/zuiderweide-dronten/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zuiderweide-fase-3-dronten/",
+      "destination": "/nieuwbouw-project/zuiderweide-dronten/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/schoterkwartier-fase-2-appartementen-haarlem/",
+      "destination": "/nieuwbouw-project/schoterkwartier-fase-haarlem/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/schoterkwartier-fase-2-woningen-haarlem/",
+      "destination": "/nieuwbouw-project/schoterkwartier-fase-haarlem/",
+      "permanent": true
     }
   ],
   "rewrites": [
