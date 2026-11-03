@@ -1,17 +1,17 @@
 {
 "_bron": "© OpenStreetMap-bijdragers, ODbL (openstreetmap.org/copyright); Geofabrik-extract van Nederland, eigen selectie van woonwinkels",
-"_datum": "2026-10-23",
-"aantal": 4060,
+"_datum": "2026-11-03",
+"aantal": 4070,
 "per_cat": {
-"meubelwinkel": 1771,
-"bedden": 478,
-"verlichting": 115,
-"tegel": 52,
-"vloeren": 311,
+"meubelwinkel": 1772,
+"bedden": 479,
+"verlichting": 116,
+"tegel": 53,
+"vloeren": 314,
 "sanitair": 234,
-"keuken": 680,
-"verf": 205,
-"raamdecoratie": 117,
+"keuken": 681,
+"verf": 206,
+"raamdecoratie": 118,
 "zonwering": 69,
 "deuren": 28
 },
@@ -897,6 +897,14 @@
 "osm": 4386050488
 },
 {
+"naam": "Bedstyling",
+"cat": "bedden",
+"lat": 52.212778,
+"lng": 5.963373,
+"plaats": "Apeldoorn",
+"osm": 2687029702
+},
+{
 "naam": "Bedtextiel Outlet",
 "cat": "bedden",
 "lat": 52.04304,
@@ -1774,6 +1782,15 @@
 "osm": 2772998058
 },
 {
+"naam": "Bouckaert Slaapcomfort",
+"cat": "bedden",
+"lat": 52.216287,
+"lng": 4.514865,
+"website": "https://bouckaertslaapcomfort.nl/",
+"plaats": "Sassenheim",
+"osm": 2937687711
+},
+{
 "naam": "Boxspring Etten-Leur",
 "cat": "bedden",
 "lat": 51.569216,
@@ -1841,13 +1858,6 @@
 "website": "https://www.broring.com",
 "plaats": "Amsterdam",
 "osm": 2818825701
-},
-{
-"naam": "Budget Home Decor",
-"cat": "bedden",
-"lat": 52.351926,
-"lng": 4.891564,
-"osm": 11910236527
 },
 {
 "naam": "Burmann",
@@ -2998,8 +3008,8 @@
 {
 "naam": "Perfect Slapen",
 "cat": "bedden",
-"lat": 52.681531,
-"lng": 5.023182,
+"lat": 52.68152,
+"lng": 5.023184,
 "plaats": "Wognum",
 "osm": 2813394411
 },
@@ -4712,9 +4722,11 @@
 {
 "naam": "Bij ons in de keuken",
 "cat": "keuken",
-"lat": 52.034979,
-"lng": 5.16915,
-"osm": 5816373055
+"lat": 52.034974,
+"lng": 5.169141,
+"website": "https://webshop.bijonsindekeuken.nl/",
+"plaats": "Houten",
+"osm": 4939587239
 },
 {
 "naam": "Boco Keukens",
@@ -6530,8 +6542,8 @@
 {
 "naam": "Keuken Kampioen",
 "cat": "keuken",
-"lat": 51.663414,
-"lng": 5.040969,
+"lat": 51.663438,
+"lng": 5.040837,
 "website": "https://www.keukenkampioen.nl/showrooms/kaatsheuvel/",
 "plaats": "Kaatsheuvel",
 "osm": 2836883736
@@ -7484,6 +7496,15 @@
 "website": "https://keukendiscounters.nl/keukenwinkel-leiderdorp",
 "plaats": "Leiderdorp",
 "osm": 2934652938
+},
+{
+"naam": "Keukendump",
+"cat": "keuken",
+"lat": 51.663379,
+"lng": 5.041137,
+"website": "https://www.keukendump.nl/winkels/kaatsheuvel/",
+"plaats": "Kaatsheuvel",
+"osm": 2836879297
 },
 {
 "naam": "KeukenHal",
@@ -9046,6 +9067,7 @@
 "cat": "keuken",
 "lat": 51.360432,
 "lng": 5.734095,
+"website": "https://www.nuvakeukens.nl/showrooms/someren/",
 "plaats": "Someren",
 "osm": 2851423173
 },
@@ -11410,6 +11432,15 @@
 "osm": 11107185242
 },
 {
+"naam": "Blijft Mooi",
+"cat": "meubelwinkel",
+"lat": 52.154241,
+"lng": 4.489695,
+"website": "https://www.blijftmooi.nl",
+"plaats": "Leiden",
+"osm": 2774029684
+},
+{
 "naam": "BlokhutA7",
 "cat": "meubelwinkel",
 "lat": 53.198795,
@@ -12427,7 +12458,7 @@
 "osm": 6517089925
 },
 {
-"naam": "De Houren Schaal",
+"naam": "De Houten Schaal",
 "cat": "meubelwinkel",
 "lat": 51.676215,
 "lng": 4.789394,
@@ -12581,14 +12612,6 @@
 "website": "https://www.oudeikentafels.nl",
 "plaats": "Enschede",
 "osm": 2755970499
-},
-{
-"naam": "de Schakel",
-"cat": "meubelwinkel",
-"lat": 52.943187,
-"lng": 4.770036,
-"plaats": "Den Helder",
-"osm": 2858944499
 },
 {
 "naam": "De Slaap lekker winkel",
@@ -13196,10 +13219,11 @@
 "osm": 13171758127
 },
 {
-"naam": "Egner kantoorspecialist",
+"naam": "Egner Thuis op kantoor",
 "cat": "meubelwinkel",
 "lat": 52.944264,
 "lng": 4.773234,
+"website": "https://www.egner.nl",
 "plaats": "Den Helder",
 "osm": 2858943500
 },
@@ -13279,6 +13303,14 @@
 "website": "https://www.eliving.nl/",
 "plaats": "Utrecht",
 "osm": 3023166789
+},
+{
+"naam": "ELLDA Home",
+"cat": "meubelwinkel",
+"lat": 51.792306,
+"lng": 4.647003,
+"plaats": "Dordrecht",
+"osm": 2781480842
 },
 {
 "naam": "Ellerman",
@@ -15769,8 +15801,8 @@
 {
 "naam": "JYSK",
 "cat": "meubelwinkel",
-"lat": 51.792152,
-"lng": 4.646787,
+"lat": 51.792125,
+"lng": 4.646677,
 "website": "https://jysk.nl/winkels/dordrecht/mijlweg",
 "plaats": "Dordrecht",
 "osm": 2781480856
@@ -17704,6 +17736,15 @@
 "osm": 2928112337
 },
 {
+"naam": "Laviva Bedding",
+"cat": "meubelwinkel",
+"lat": 51.81385,
+"lng": 4.503438,
+"website": "https://lavivabedding.nl/",
+"plaats": "Heinenoord",
+"osm": 14336455595
+},
+{
 "naam": "Lazzoni",
 "cat": "meubelwinkel",
 "lat": 52.336445,
@@ -19457,7 +19498,7 @@
 "cat": "meubelwinkel",
 "lat": 51.96161,
 "lng": 4.77656,
-"website": "https://www.meubelenenmeer.nl/",
+"website": "https://www.meubelenenmeer.nl",
 "plaats": "Stolwijk",
 "osm": 2914804785
 },
@@ -23729,15 +23770,6 @@
 "osm": 2592765546
 },
 {
-"naam": "Tom's Vintage Shop",
-"cat": "meubelwinkel",
-"lat": 52.154241,
-"lng": 4.489695,
-"website": "https://tomsvintageshop.nl",
-"plaats": "Leiden",
-"osm": 2774029684
-},
-{
 "naam": "Torba Villa",
 "cat": "meubelwinkel",
 "lat": 52.091302,
@@ -25676,6 +25708,15 @@
 "osm": 3416682183
 },
 {
+"naam": "'t Zolderke",
+"cat": "raamdecoratie",
+"lat": 51.573219,
+"lng": 5.067362,
+"website": "https://www.zolderke.nl/",
+"plaats": "Tilburg",
+"osm": 2848324442
+},
+{
 "naam": "A House of Happiness",
 "cat": "raamdecoratie",
 "lat": 51.419781,
@@ -27251,8 +27292,8 @@
 {
 "naam": "Nova badkamers & Keukens",
 "cat": "sanitair",
-"lat": 52.232551,
-"lng": 5.365616,
+"lat": 52.232546,
+"lng": 5.365604,
 "plaats": "Bunschoten-Spakenburg",
 "osm": 6821286812
 },
@@ -28856,6 +28897,14 @@
 "osm": 272766601
 },
 {
+"naam": "Poolmax",
+"cat": "tegel",
+"lat": 52.070494,
+"lng": 4.342401,
+"plaats": "'s-Gravenhage",
+"osm": 2714667042
+},
+{
 "naam": "R. de Groot Sierbestrating",
 "cat": "tegel",
 "lat": 51.831068,
@@ -29959,6 +30008,14 @@
 "lng": 5.30961,
 "plaats": "Eersel",
 "osm": 2828632661
+},
+{
+"naam": "Jo Heuts Verf",
+"cat": "verf",
+"lat": 50.850714,
+"lng": 5.71451,
+"website": "https://www.joheutsverf.nl/",
+"osm": 14336917472
 },
 {
 "naam": "Keizer, KijkopKleur",
@@ -31585,6 +31642,15 @@
 "osm": 3041805821
 },
 {
+"naam": "MijnLicht",
+"cat": "verlichting",
+"lat": 52.505921,
+"lng": 6.101836,
+"website": "https://mijnlicht.nl/",
+"plaats": "Zwolle",
+"osm": 2497575581
+},
+{
 "naam": "Montage JS",
 "cat": "verlichting",
 "lat": 52.36042,
@@ -31963,11 +32029,11 @@
 {
 "naam": "AT Vloerspecialist",
 "cat": "vloeren",
-"lat": 52.534843,
-"lng": 6.055847,
+"lat": 52.533989,
+"lng": 6.057067,
 "website": "https://www.atvloerspecialist.nl/",
 "plaats": "Zwolle",
-"osm": 2879851791
+"osm": 2879849012
 },
 {
 "naam": "Atlas Parket",
@@ -32143,6 +32209,15 @@
 "osm": 5920803022
 },
 {
+"naam": "Budget Home Decor",
+"cat": "vloeren",
+"lat": 52.351916,
+"lng": 4.891542,
+"website": "https://www.budgethomedecor.nl",
+"plaats": "Amsterdam",
+"osm": 2817709455
+},
+{
 "naam": "Carpet King",
 "cat": "vloeren",
 "lat": 52.068553,
@@ -32231,6 +32306,15 @@
 "lng": 4.361508,
 "plaats": "Delft",
 "osm": 4104590448
+},
+{
+"naam": "De Vloerenman",
+"cat": "vloeren",
+"lat": 52.015695,
+"lng": 5.058857,
+"website": "https://www.vloerenmantegels.nl",
+"plaats": "IJsselstein",
+"osm": 4627934384
 },
 {
 "naam": "De Vloerspecialisten",
@@ -32608,7 +32692,7 @@
 "cat": "vloeren",
 "lat": 51.852123,
 "lng": 5.753004,
-"website": "https://www.hornbachvloeren.nl/",
+"website": "https://www.hornbachvloeren.nl/vestigingsinfo/hornbach-beuningen-vloeren/",
 "plaats": "Beuningen Gld",
 "osm": 2977228904
 },
@@ -34161,8 +34245,8 @@
 {
 "naam": "VillaStar Woninginrichting",
 "cat": "vloeren",
-"lat": 52.935838,
-"lng": 4.770581,
+"lat": 52.9358,
+"lng": 4.770575,
 "website": "https://villastar.nl",
 "plaats": "Den Helder",
 "osm": 2858751223
@@ -34425,6 +34509,15 @@
 "website": "https://www.wiggersparket.nl/",
 "plaats": "Borne",
 "osm": 2777070595
+},
+{
+"naam": "Willem Designvloeren",
+"cat": "vloeren",
+"lat": 51.940673,
+"lng": 5.654673,
+"website": "https://www.willemdesignvloeren.nl",
+"plaats": "Opheusden",
+"osm": 3017996241
 },
 {
 "naam": "Winckler Parketvloeren",
