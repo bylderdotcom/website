@@ -232,6 +232,9 @@ een kwartier live" zonder `vercel ls website` te checken.
   De feitenronde (`handwerk-schrijver.yml`) draait sinds dezelfde dag **elke** zaterdag, en werkt eerst de pagina's
   bij die Google al laat zien. Die cijfers komen maandelijks uit Search Console (`gsc-projectmeting.yml`,
   `scripts/gsc_projectmeting.py` → `gsc-meting.json` + kansenlijst als issue; repo-secret `GSC_KEY_JSON`).
+- **Titels met de hand (3-11-2026):** de 25 projectpagina's met veel vertoningen en weinig klikken kregen een eigen
+  titel en omschrijving in `data/clusters/nieuwbouw-project/titels.json` (gaat boven de generator, ook op handwerk; met
+  de oude titel en doorklik erbij). Meting van 2 december: doorklik vergelijken met `oud`; werkt het, dan de formule aanpassen.
 - **Ook de maandelijkse ronde voor woonwinkels uit OpenStreetMap mag zelf naar main (besluit Daniel,
   23-10-2026).** `osm-winkels.yml` ververst `data/winkels-osm.json`, alleen als er minstens 1.500
   winkels zijn en het aantal niet meer dan 20% daalt; anders een tak plus een issue. Google Places

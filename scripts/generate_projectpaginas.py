@@ -3025,7 +3025,20 @@ def main():
             if len(x.get("description", "")) > DESC_MAX:
                 x["description"] = kort_desc(x["description"])
 
-        vast = [x for x in pages if x["slug"] in ("index", "oplevermonitor")]
+        # Met de hand herschreven titels en omschrijvingen (3-11-2026, uit Search
+        # Console: veel vertoond, weinig geklikt). Gaan boven de berekende, ook op
+        # handwerk. In titels.json staat ook wat er eerst stond, om te vergelijken.
+        TITELS = os.path.join(CLUSTER, "titels.json")
+        if os.path.exists(TITELS):
+            hand = json.load(open(TITELS, encoding="utf8")).get("paginas", {})
+            for x in pages:
+                h = hand.get(x["slug"])
+                if h:
+                    x["title"] = h["title"]
+                    if h.get("description"):
+                        x["description"] = h["description"]
+
+        vast =[x for x in pages if x["slug"] in ("index", "oplevermonitor")]
         rest = sorted([x for x in pages if x["slug"] not in ("index", "oplevermonitor")],
                       key=lambda x: x["slug"])
         json.dump(vast + rest, open(pj, "w", encoding="utf8"), ensure_ascii=False, indent=1)
