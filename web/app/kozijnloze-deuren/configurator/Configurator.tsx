@@ -151,6 +151,8 @@ export default function Configurator() {
   // Op afstand zie je pas of dat effect klopt. Van dichtbij beoordeel je de
   // groef, van een meter of vier de wand.
   const [veraf, setVeraf] = useState(false)
+  // Waar het beeld op inzoomt (3-11-2026): bij kruk, slot en scharnier dichtbij het beslag, anders de deur.
+  const [focus, setFocus] = useState<'deur' | 'kruk'>('deur')
   // Dicht is waar het product om draait: dan zie je alleen nog de kier. Op een
   // kier laat zien dát het een deur is, open laat zien hoe hij draait.
   const [stand, setStand] = useState<'dicht' | 'kier' | 'open'>('kier')
@@ -181,6 +183,26 @@ export default function Configurator() {
   const slotType = SLOTEN.find(x => x.id === huidig.slot) ?? SLOTEN[0]
   const scharnierVar = SCHARNIEREN.find(x => x.afwerking === huidig.scharnierKleur)
               ?? SCHARNIEREN[0]
+
+  // Vaste balk onderaan (3-11-2026): je keuze in één regel en de offerteknop, zodat je na je laatste
+  // keuze niet terug hoeft te zoeken. Weg zodra het offerteblok in beeld is (of je er voorbij bent).
+  const offerteBlok = useRef<HTMLDivElement>(null)
+  const [balkWeg, setBalkWeg] = useState(false)
+  useEffect(() => {
+    const el = offerteBlok.current
+    if (!el || !('IntersectionObserver' in window)) return
+    const io = new IntersectionObserver(([e]) => setBalkWeg(e.isIntersecting || e.boundingClientRect.top < 0))
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+  const naarOfferte = () => {
+    const el = offerteBlok.current
+    if (!el) return
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // Open meteen het formulier, als dat nog dicht is.
+    const knop = [...el.querySelectorAll('button')].find(b => b.textContent?.trim() === 'Vraag een offerte aan')
+    knop?.click()
+  }
   const naamVan = (d: Deur, i: number) => d.naam.trim() || `Deur ${i + 1}`
 
   useEffect(() => {
@@ -465,9 +487,16 @@ export default function Configurator() {
   useEffect(() => {
     const st = scene.current
     if (!st) return
+    if (focus === 'kruk' && !veraf) {
+      // Het beslag zit aan de sluitzijde, op ongeveer 1,06 m: daar dichtbij kijken.
+      const x = huidig.scharnier === 'links' ? 0.40 : -0.40
+      st.doelCam.set(x * 0.6 + 0.15, 1.22, 1.65)
+      st.doelKijk.set(x, 1.06, 0)
+      return
+    }
     st.doelCam.set(...(veraf ? [1.85, 1.62, 8.6] : [0.62, 1.46, 4.90]) as [number, number, number])
     st.doelKijk.set(0, veraf ? 1.28 : 1.30, 0)
-  }, [veraf])
+  }, [veraf, focus, huidig.scharnier])
 
   // ── Wand in dezelfde kleur als de deur ─────────────────────────────────
   useEffect(() => {
@@ -554,7 +583,24 @@ export default function Configurator() {
           Op een telefoon liep de rechterkolom daardoor buiten het scherm. */}
       <style>{`
         .conf-raster { grid-template-columns: minmax(0,1.15fr) minmax(300px,1fr) }
-        @media (max-width: 860px) { .conf-raster { grid-template-columns: minmax(0,1fr) } }
+        /* Het beeld blijft in beeld terwijl je door de keuzes scrolt (3-11-2026). */
+        .conf-beeld { position: sticky; top: 118px; z-index: 4 }
+        .conf-doos { height: min(calc(100vh - 300px), 640px) }
+        @media (max-width: 860px) {
+          .conf-raster { grid-template-columns: minmax(0,1fr) }
+          /* Telefoon: het beeld bovenin vast, kleiner, met een effen achtergrond eronder. */
+          .conf-beeld { top: 60px; margin: 0 -20px; padding: 8px 20px 10px; background: #F5F0E8;
+                        box-shadow: 0 8px 14px -12px rgba(26,18,8,.35) }
+          .conf-doos { height: 36vh }
+          .conf-uitleg, .conf-extra { display: none !important }
+          .conf-weergave { margin-top: 8px !important }
+          .conf-weergave button { padding: 6px 12px !important; font-size: 12.5px !important }
+          .conf-schema { transform: scale(.72); transform-origin: top right }
+        }
+        .conf-balk { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: rgba(255,253,249,.97);
+                     border-top: 1px solid rgba(61,46,30,.14); box-shadow: 0 -6px 18px -12px rgba(26,18,8,.35);
+                     transition: transform .25s; padding: 10px 20px calc(10px + env(safe-area-inset-bottom)) }
+        .conf-balk.weg { transform: translateY(110%) }
       `}</style>
 
       {terug && (
@@ -574,8 +620,8 @@ export default function Configurator() {
       )}
 
       {/* ── Het beeld ── */}
-      <div>
-        <div style={{ position: 'relative', width: '100%', height: 'min(68vh, 640px)', borderRadius: 16,
+      <div className="conf-beeld">
+        <div className="conf-doos" style={{ position: 'relative', width: '100%', borderRadius: 16,
                       overflow: 'hidden', border: `1px solid ${INKT}0.12)`, background: '#EDE7DC' }}>
           <div ref={doek} style={{
             // Vaste hoogte in plaats van een verhouding: met aspect-ratio plus
@@ -615,7 +661,7 @@ export default function Configurator() {
             Wand in dezelfde kleur
           </button>
         </div>
-        <div role="group" aria-label="Weergave" style={{ display: 'flex', gap: 4, margin: '10px 0 0' }}>
+        <div role="group" aria-label="Weergave" className="conf-weergave" style={{ display: 'flex', gap: 4, margin: '10px 0 0' }}>
           <button onClick={() => setWeergave('foto')} aria-pressed={toonFoto} disabled={huidig.afwerking === 'fineer'}
             title={huidig.afwerking === 'fineer' ? 'Fineer volgt zodra de houtscans er zijn' : undefined}
             style={{ ...(toonFoto ? knopAan : knop), opacity: huidig.afwerking === 'fineer' ? 0.45 : 1 }}>
@@ -626,16 +672,19 @@ export default function Configurator() {
           </button>
         </div>
         {toonFoto ? (
-          <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
+          <details className="conf-uitleg" style={{ margin: '8px 0 0' }}>
+          <summary style={{ fontSize: 12.5, color: `${INKT}0.6)`, cursor: 'pointer', fontWeight: 700 }}>Over deze weergave</summary>
+          <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '6px 0 0', lineHeight: 1.6 }}>
             Gerenderd in Blender, met deur en wand in de kleur die je kiest en een kier van 3 mm &mdash;
             zo ziet een instuckozijn eruit na het stucwerk. De kruk staat hier in zwart; je eigen keuze zie je
             in 3D. Het schema rechtsboven laat zien hoe de deur draait.
             <br /><strong style={{ color: '#B85C38' }}>Let op:</strong> het freespatroon in dit beeld wordt
             nog bijgewerkt. Voor het juiste patroon: kies 3D.
           </p>
+          </details>
         ) : (
         <>
-        <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', margin: '10px 0 0' }}>
+        <div className="conf-extra" style={{ display: 'flex', gap: 7, flexWrap: 'wrap', margin: '10px 0 0' }}>
           <button onClick={() => setVeraf(v => !v)} aria-pressed={veraf}
             style={veraf ? knopAan : knop}>
             {veraf ? 'Van dichtbij' : 'Op afstand bekijken'}
@@ -647,7 +696,9 @@ export default function Configurator() {
             ))}
           </span>
         </div>
-        <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '8px 0 0', lineHeight: 1.6 }}>
+        <details className="conf-uitleg" style={{ margin: '8px 0 0' }}>
+        <summary style={{ fontSize: 12.5, color: `${INKT}0.6)`, cursor: 'pointer', fontWeight: 700 }}>Over deze weergave</summary>
+        <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '6px 0 0', lineHeight: 1.6 }}>
           Weergave op schaal: plafondhoog bij 2.720 mm, met een kier van 3 mm rond het blad. Het licht valt van linksboven &mdash;
           daarom verandert het groefpatroon als je een donkerder kleur kiest. Het schema rechtsboven
           laat zien hoe de deur draait. Zet de wand in dezelfde kleur en bekijk hem op afstand: dan zie je waar dit systeem het voor doet,
@@ -655,12 +706,14 @@ export default function Configurator() {
           een schaduwvoeg ertussen. Kleuren op scherm zijn een benadering; vraag een staal voor
           de definitieve keuze.
         </p>
+        </details>
         </>
         )}
       </div>
 
       {/* ── De keuzes ── */}
-      <div style={{ display: 'grid', gap: 22 }}>
+      <div style={{ display: 'grid', gap: 22 }}
+        onClickCapture={e => setFocus((e.target as HTMLElement).closest('[data-focus="kruk"]') ? 'kruk' : 'deur')}>
 
         {/* Deuren per type. Een woning heeft er zes tot acht, vaak van één of twee
             types: je geeft per type het aantal op en per deur waar hij komt, in
@@ -919,7 +972,7 @@ export default function Configurator() {
             pas bij de offerte. De foto's zijn van het echte beslag; de kruk in
             het 3D-beeld is een vereenvoudigde vorm die alleen plek, maat en
             kleur toont. */}
-        <div>
+        <div data-focus="kruk">
           <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
             Deurkruk
           </h2>
@@ -956,7 +1009,7 @@ export default function Configurator() {
 
         {/* Slot — dit is een functionele keuze, geen esthetische. Een badkamer
             wil vrij/bezet; dat weet niet iedereen, dus staat het erbij. */}
-        <div>
+        <div data-focus="kruk">
           <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
             Slot
           </h2>
@@ -1006,7 +1059,7 @@ export default function Configurator() {
         </div>
 
         {/* Scharnier */}
-        <div>
+        <div data-focus="kruk">
           <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 3px', color: '#1A1208' }}>
             Scharnier
           </h2>
@@ -1033,8 +1086,8 @@ export default function Configurator() {
         </div>
 
         {/* Specificatie + offerte */}
-        <div style={{ background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 14,
-                      padding: 20 }}>
+        <div ref={offerteBlok} id="offerte" style={{ background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 14,
+                      padding: 20, scrollMarginTop: 120 }}>
           <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 6px', color: '#1A1208' }}>
             {deuren.length === 1 ? 'Jouw specificatie' : `Jouw specificatie — ${deuren.length} deuren`}
           </h2>
@@ -1095,6 +1148,24 @@ export default function Configurator() {
           </p>
         </div>
       </div>
+
+      <div className={balkWeg ? 'conf-balk weg' : 'conf-balk'} aria-hidden={balkWeg}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', alignItems: 'center', gap: 14, justifyContent: 'space-between' }}>
+          <p style={{ margin: 0, fontSize: 13.5, lineHeight: 1.4, color: '#1A1208', minWidth: 0 }}>
+            <strong>{ontwerp.naam}</strong>
+            <span style={{ color: `${INKT}0.7)` }}>
+              {' · '}{huidig.afwerking === 'fineer' ? fineer.naam : huidig.afwerking === 'gegrond' ? 'gegrond' : huidig.vrij ? 'eigen kleur' : `RAL ${kleur.ral}`}
+              {' · '}{krukModel.naam} {krukVar.afwerking.toLowerCase()}
+              {' · '}{deuren.length} {deuren.length === 1 ? 'deur' : 'deuren'}
+            </span>
+          </p>
+          <button type="button" onClick={naarOfferte} tabIndex={balkWeg ? -1 : 0}
+            style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px',
+                     borderRadius: 10, border: 0, cursor: 'pointer', fontFamily: 'inherit' }}>
+            Vraag een offerte aan
+          </button>
+        </div>
+      </div>
     </div>
   )
 }
@@ -1111,7 +1182,7 @@ function Draaischema({ richting, scharnier }: { richting: 'binnen' | 'buiten'; s
   // Labels aan de kant zonder zwaai, zodat ze nooit door het blad lopen.
   const lx = L ? 134 : 6, anker = L ? 'end' : 'start'
   return (
-    <figure aria-label={`Bovenaanzicht: draait naar ${richting}, scharnieren ${scharnier}`}
+    <figure className="conf-schema" aria-label={`Bovenaanzicht: draait naar ${richting}, scharnieren ${scharnier}`}
       style={{ position: 'absolute', right: 12, top: 12, margin: 0, padding: '8px 10px 7px',
                background: 'rgba(255,255,255,0.94)', borderRadius: 12, border: `1px solid ${INKT}0.14)`,
                boxShadow: '0 2px 10px rgba(26,18,8,0.12)', width: 128, boxSizing: 'border-box' }}>
