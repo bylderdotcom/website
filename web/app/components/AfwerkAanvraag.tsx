@@ -26,13 +26,17 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
   const [m2, setM2] = useState('')
   const [oplevering, setOplevering] = useState('')
   const [project, setProject] = useState('')
+  // Projectkorting (3-11-2026): het adres van de projectpagina reist mee, zodat de aanvraag meetelt
+  // voor het project. Alleen als de koper de projectnaam niet heeft veranderd.
+  const [projectSlug, setProjectSlug] = useState<{ slug: string; naam: string } | null>(null)
   // Nieuwbouw is de focus, maar bestaande bouw en renovatie mogen ook (besluit Daniel, 29-10-2026).
   const [soort, setSoort] = useState('Nieuwbouw')
   // Vanaf een projectpagina (?project=Tuinenrijk Veld 2&oplevering=2027–2028): alvast ingevuld.
   useEffect(() => {
     const q = new URLSearchParams(window.location.search)
-    const p = q.get('project'), o = q.get('oplevering')
+    const p = q.get('project'), o = q.get('oplevering'), s = q.get('project_slug')
     if (p) setProject(p.slice(0, 120))
+    if (p && s && /^[a-z0-9][a-z0-9-]{1,119}$/.test(s)) setProjectSlug({ slug: s, naam: p.slice(0, 120) })
     if (o) setOplevering(o.slice(0, 60))
   }, [])
 
@@ -79,7 +83,7 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
         product="afwerking-nieuwbouw"
         bron={bron}
         specificatie={specificatie}
-        configuratie={{ onderdelen: gekozen, soort, oplevering: oplevering || null, project: project || null }}
+        configuratie={{ onderdelen: gekozen, soort, oplevering: oplevering || null, project: project || null, project_slug: projectSlug && projectSlug.naam === project ? projectSlug.slug : null }}
         hoeveelheden={{ m2_woning: m2 ? Number(m2) : null }}
         terugkijkUrl={() => window.location.href}
         mailFallback={`mailto:danielpaaij@bylder.com?subject=${encodeURIComponent('Afwerking door Bylder')}&body=${encodeURIComponent(specificatie)}`}

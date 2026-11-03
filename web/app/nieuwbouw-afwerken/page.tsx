@@ -29,6 +29,7 @@ const VRAGEN = [
   { v: 'Waar werken jullie?', a: 'In heel Nederland. Laat je aanvraag achter met de plaats van je woning; we maken je offerte met vakbedrijven bij jou in de buurt.' },
   { v: 'Kan het ook bij een bestaande woning of een renovatie?', a: 'Ja. Nieuwbouw doen we het meest, maar ook voor een bestaande woning of een renovatie maken we één offerte voor de afwerking. Kies in de aanvraag om wat voor woning het gaat. Een tekening helpt; heb je die niet, dan meten we in.' },
   { v: 'Welke btw geldt?', a: 'Bij de afwerking van een nieuwbouwwoning rekent iedere aannemer 21% btw. Is je woning ouder dan twee jaar, dan geldt voor de arbeid van onder meer schilderen en stukadoren het lage tarief van 9%; in je offerte staat per onderdeel welk tarief geldt. De indicaties op deze pagina zijn inclusief 21% btw.' },
+  { v: 'Krijg ik korting als mijn buren ook meedoen?', a: 'Ja, met de projectkorting. Laten meer woningen in hetzelfde nieuwbouwproject de afwerking door Bylder doen, dan krijgt iedereen korting: 4% vanaf 2 woningen, 7% vanaf 4 en 10% vanaf 6. Ook wie eerder tekende. Zie bylder.com/projectkorting.' },
   { v: 'Kan ik ook één onderdeel laten doen?', a: 'Ja. Vink in de aanvraag aan wat je wilt. Wil je alleen een vloer of alleen een badkamer, dan maken we daar een offerte voor.' },
   { v: 'Kan ik jullie offerte laten checken?', a: 'Ja. Onze offerte-check vergelijkt elke offerte met marktprijzen, ook die van onszelf. Zo zie je of je een eerlijke prijs betaalt.' },
 ]
