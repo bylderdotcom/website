@@ -73,6 +73,27 @@ export default function Ontwerper({ start }: { start?: string }) {
   const bestand = useRef<HTMLInputElement>(null)
 
   const bouw = useMemo(() => (ontwerp ? bouwKast(ontwerp) : null), [ontwerp])
+
+  // Je kast blijft vindbaar tijdens het gesprek (3-11-2026). Op desktop staat hij vast naast het
+  // gesprek; op mobiel staat hij boven het gesprek, en verschijnt er een balk zodra hij uit beeld is.
+  // Werkt de ontwerper hem bij terwijl hij uit beeld is, dan zegt de balk dat.
+  const podium = useRef<HTMLElement>(null)
+  const [podiumInBeeld, setPodiumInBeeld] = useState(true)
+  const [bijgewerkt, setBijgewerkt] = useState(false)
+  useEffect(() => {
+    const el = podium.current
+    if (!el || !('IntersectionObserver' in window)) return
+    const io = new IntersectionObserver(([e]) => { setPodiumInBeeld(e.isIntersecting); if (e.isIntersecting) setBijgewerkt(false) }, { threshold: 0.25 })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+  const vorigeOntwerp = useRef<Ontwerp | null>(null)
+  useEffect(() => {
+    if (ontwerp && vorigeOntwerp.current && ontwerp !== vorigeOntwerp.current && !podiumInBeeld) setBijgewerkt(true)
+    vorigeOntwerp.current = ontwerp
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ontwerp])
+  const naarKast = () => podium.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   const voorbeeldBouw = useMemo(() => bouwKast(VOORBEELD_HOEKKAST), [])
 
   useEffect(() => {
@@ -256,7 +277,7 @@ export default function Ontwerper({ start }: { start?: string }) {
           </section>
 
           {/* ── De kast ── */}
-          <section className="ko-paneel ko-podium" aria-label="De kast">
+          <section ref={podium} className="ko-paneel ko-podium" aria-label="De kast">
             {!bouw || !ontwerp ? (
               <div className="ko-showcase">
                 <Kast3D bouw={voorbeeldBouw} afwerking={VOORBEELD_HOEKKAST.afwerking} binnen="wit" open={false} draai hoogte="100%" achtergrond="#E9E3D8" />
@@ -298,6 +319,14 @@ export default function Ontwerper({ start }: { start?: string }) {
             )}
           </section>
         </div>
+
+        {ontwerp && bouw && (
+          <div className={'ko-balk' + (podiumInBeeld ? ' weg' : '') + (bijgewerkt ? ' nieuw' : '')} aria-hidden={podiumInBeeld}>
+            <i className="ko-staal ko-balk-staal" style={{ background: ontwerp.afwerking.hex }} aria-hidden="true" />
+            <p><strong>{bijgewerkt ? 'Je kast is bijgewerkt' : ontwerp.naam}</strong><span>{bouw.maten.benen.map(b => `${String(b.lengte).replace('.', ',')}`).join(' + ')} × {bouw.maten.hoogte} cm · {ontwerp.afwerking.naam}</span></p>
+            <button type="button" className="ko-knop ko-knop-klein" onClick={naarKast} tabIndex={podiumInBeeld ? -1 : 0}>Bekijk je kast</button>
+          </div>
+        )}
       </div>
     </div>
   )
@@ -385,6 +414,17 @@ const CSS = `
 .ko-select select{border:0;background:transparent;font-weight:600;font-size:14px;font-family:inherit;color:var(--inkt);padding:11px 6px;cursor:pointer;outline:none}
 .ko-grid{display:grid;gap:20px;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start}
 @media (max-width:980px){.ko-grid{grid-template-columns:1fr}.ko-podium{order:-1}}
+@media (min-width:981px){.ko-podium{position:sticky;top:118px}}
+.ko-balk{display:none}
+@media (max-width:980px){
+  .ko-balk{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,249,.97);border-top:1px solid rgba(61,46,30,.14);box-shadow:0 -6px 18px -12px rgba(26,18,8,.35);transition:transform .25s}
+  .ko-balk.weg{transform:translateY(110%)}
+  .ko-balk.nieuw{background:#EBF0E8}
+  .ko-balk p{margin:0;flex:1;min-width:0;font-size:13.5px;line-height:1.35;color:#1A1208}
+  .ko-balk p strong{display:block}.ko-balk p span{display:block;color:rgba(61,46,30,.64);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ko-balk-staal{flex-shrink:0;width:34px!important;height:34px!important;border-radius:9px!important}
+  .ko-balk .ko-knop{flex-shrink:0}
+}
 .ko-paneel{position:relative;background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.9);border-radius:24px;box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 24px 60px -30px rgba(26,18,8,.35),0 2px 6px -2px rgba(26,18,8,.08);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);min-width:0}
 .ko-gesprek{display:flex;flex-direction:column;height:min(760px,calc(100vh - 190px));min-height:560px}
 .ko-berichten{flex:1;overflow-y:auto;padding:22px 22px 8px;display:grid;gap:14px;align-content:start}

@@ -339,12 +339,27 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
     wijzig({ ruimtes: lijst.filter(r => !uit.has(r.sleutel) && r.m2 > 0 && r.naam.trim()), bron: 'handmatig' })
   }
 
+  // Je vloer blijft in beeld terwijl je de stappen doorloopt (3-11-2026): op desktop een vaste kolom
+  // rechts, op mobiel een balk onderaan. Weg zodra stap 4 (stalen en prijs) in beeld is.
+  const slotRef = useRef<HTMLElement>(null)
+  const [bijSlot, setBijSlot] = useState(false)
+  useEffect(() => {
+    const el = slotRef.current
+    if (!el || !('IntersectionObserver' in window)) return
+    const io = new IntersectionObserver(([e]) => setBijSlot(e.isIntersecting || e.boundingClientRect.top < 0))
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+  const naarSlot = () => slotRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
   const koppel = w && w.sleutel ? `${APP}/dashboard/gietvloer/koppel?id=${encodeURIComponent(w.id)}&s=${encodeURIComponent(w.sleutel)}` : null
 
   return (
     <div className="gv">
       <style>{CSS}</style>
 
+      <div className="gv-kolommen">
+      <div className="gv-stappen-kol">
       {/* ============ 1. inspiratie ============ */}
       <section className="gv-blok" aria-labelledby="gv-1">
         <p className="gv-stap"><span>1</span>Je inspiratie</p>
@@ -516,8 +531,29 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
         <p className="gv-klein">Prijsniveau ten opzichte van elkaar: Bio Concrete is een stap duurder door het extra slijpwerk. De prijs per m² stemt Dr. Schutz af met de verwerkers in jouw regio; je echte prijs volgt na de opmeting. Voorbereiding van de ondervloer en plinten komen er soms bij.</p>
       </section>
 
+      </div>
+
+      <aside className="gv-zij" aria-label="Jouw vloer">
+        <p className="gv-stap"><span>&#9679;</span>Jouw vloer</p>
+        <Staal kleur={hex} wolk={wolk} glans={glans} />
+        <dl className="gv-zij-lijst">
+          <div><dt>Kleur</dt><dd>{kleur?.naam ?? 'nog niet gekozen'}</dd></div>
+          <div><dt>Type</dt><dd>{type?.naam ?? 'nog niet gekozen'}</dd></div>
+          <div><dt>Oppervlak</dt><dd>{m2 > 0 ? `≈ ${nl(m2, 1)} m²` : 'nog niet gekozen'}</dd></div>
+          {type?.prijs && m2 > 0 && <div><dt>Indicatie</dt><dd>{eur(m2 * type.prijs[0])} – {eur(m2 * type.prijs[1])}</dd></div>}
+        </dl>
+        <button type="button" className="gv-knop" onClick={naarSlot}>Gratis stalen en je prijs</button>
+      </aside>
+      </div>
+
+      <div className={'gv-balk' + (bijSlot ? ' weg' : '')} aria-hidden={bijSlot}>
+        <i className="gv-balk-staal" style={{ background: hex }} aria-hidden="true" />
+        <p><strong>{kleur?.naam ?? 'Kies je kleur'}</strong><span>{[type?.naam, m2 > 0 ? `≈ ${nl(m2, 0)} m²` : ''].filter(Boolean).join(' · ') || 'Stap voor stap naar je vloer'}</span></p>
+        <button type="button" className="gv-knop" onClick={naarSlot} tabIndex={bijSlot ? -1 : 0}>Stalen en prijs</button>
+      </div>
+
       {/* ============ 4. stalen en offerte ============ */}
-      <section className="gv-blok gv-slot" aria-labelledby="gv-4">
+      <section ref={slotRef} className="gv-blok gv-slot" aria-labelledby="gv-4" style={{ scrollMarginTop: 110 }}>
         <p className="gv-stap"><span>4</span>Stalen en offerte</p>
         <h2 id="gv-4" className="gv-h2">Zie hem in het echt, en vraag de prijs.</h2>
         <div className="gv-overzicht">
@@ -945,6 +981,24 @@ const CSS = `
 .gv-overzicht dt{color:var(--zacht)}
 .gv-overzicht dd{margin:0;font-weight:700;color:var(--inkt);text-align:right}
 .gv-indicatie dd{font-family:ui-monospace,Menlo,monospace}
+.gv-kolommen{display:block}
+.gv-zij{display:none}
+@media (min-width:1100px){
+  .gv-kolommen{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:start}
+  .gv-zij{display:block;position:sticky;top:118px;background:#fff;border:1px solid var(--lijn);border-radius:22px;padding:20px;box-shadow:0 18px 40px -30px rgba(26,18,8,.35)}
+  .gv-zij .gv-staal{border-radius:14px;overflow:hidden;margin:4px 0 12px}
+  .gv-zij-lijst{margin:0 0 14px;display:grid;gap:8px}
+  .gv-zij-lijst div{display:flex;justify-content:space-between;gap:10px;font-size:14px;border-bottom:1px solid var(--lijn);padding-bottom:6px}
+  .gv-zij-lijst dt{color:var(--zacht)}.gv-zij-lijst dd{margin:0;font-weight:700;color:var(--inkt);text-align:right}
+  .gv-zij .gv-knop{width:100%;justify-content:center}
+  .gv-balk{display:none!important}
+}
+.gv-balk{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,249,.97);border-top:1px solid var(--lijn);box-shadow:0 -6px 18px -12px rgba(26,18,8,.35);transition:transform .25s}
+.gv-balk.weg{transform:translateY(110%)}
+.gv-balk-staal{flex-shrink:0;width:38px;height:38px;border-radius:10px;border:1px solid rgba(26,18,8,.15)}
+.gv-balk p{margin:0;flex:1;min-width:0;font-size:13.5px;line-height:1.35;color:var(--inkt)}
+.gv-balk p strong{display:block}.gv-balk p span{color:var(--zacht);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gv-balk .gv-knop{flex-shrink:0}
 .gv-twee{display:grid;gap:12px}
 @media (min-width:900px){.gv-twee{grid-template-columns:1fr 1fr;align-items:start}}
 .gv-kaartje{display:grid;gap:10px;padding:18px;border-radius:18px;border:1px solid var(--lijn);background:linear-gradient(180deg,#fff,#FBF8F3)}
