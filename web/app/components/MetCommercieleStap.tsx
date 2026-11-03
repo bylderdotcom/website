@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react'
 import CommercieleStap from './CommercieleStap'
+import ProfielStap, { heeftProfielStap } from './ProfielStap'
 
 // Rendert een cluster-fragment (de vakmannen per stad: loodgieter, aannemer, schilder,
 // elektricien, badkamer, stukadoor, dakkapel) met de commerciële stap erin (11-10-2026).
@@ -49,13 +50,20 @@ export default function MetCommercieleStap({ html, pad }: { html: string; pad: s
     }
   }
   const plek = knip < 0 ? 'onderaan' : stad ? 'stad-boven' : 'profiel-boven'
+  // Op een profiel staat bovenaan sinds 3-11-2026 het profielblok (ProfielStap.tsx) in plaats van
+  // de configurator: "Offerte van <bedrijf>? Leg hem naast een offerte van Bylder."
+  const vak = pad.split('/')[0]
+  const profiel = plek === 'profiel-boven' && heeftProfielStap(vak)
+  const naam = profiel ? (h.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim() : ''
   return (
     <div style={wrapper}>
       {knip > 0 ? (
         <>
           <div dangerouslySetInnerHTML={{ __html: h.slice(0, knip) + '</div>' }} />
           <div className="container bv-raster" data-meet-stap={plek}>
-            <CommercieleStap pad={pad} alleen="stap" marge={stad ? '8px 0 24px' : '20px 0 4px'} />
+            {profiel
+              ? <ProfielStap vak={vak} naam={naam} prijscheck={h.includes('id="prijscheck"')} />
+              : <CommercieleStap pad={pad} alleen="stap" marge={stad ? '8px 0 24px' : '20px 0 4px'} />}
           </div>
           <div dangerouslySetInnerHTML={{ __html: container + h.slice(knip) }} />
         </>

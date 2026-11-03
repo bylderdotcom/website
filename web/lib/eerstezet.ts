@@ -80,7 +80,8 @@ function widget(oud: string, naam: string, vakCta: string): string {
     : `<div style="margin-bottom:10px;">${veld(sel)}</div>`
 
   return (
-    `<div style="background:#fff;border:1px solid ${INKT}0.12);border-radius:16px;`
+    // id: de knop "Check eerst je offerte" in het profielblok (ProfielStap.tsx) springt hierheen.
+    `<div id="prijscheck" style="scroll-margin-top:90px;background:#fff;border:1px solid ${INKT}0.12);border-radius:16px;`
     + 'padding:22px 24px;margin:20px 0 4px;">'
     + `<h2 style="font-weight:800;font-size:1.12rem;color:#1A1208;margin:0 0 4px;letter-spacing:-0.01em;">`
     // Bij een lange bedrijfsnaam vult de kop op mobiel drie regels en duwt hij de
