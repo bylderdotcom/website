@@ -49,7 +49,9 @@ def sessie():
     ruw = os.environ.get("GSC_KEY_JSON", "").strip()
     if not ruw:
         sys.exit("Geen sleutel (GSC_KEY_JSON). Niets gedaan.")
-    cred = service_account.Credentials.from_service_account_info(json.loads(ruw), scopes=scopes)
+    info = json.loads(ruw)
+    print(f"serviceaccount: {info.get('client_email')} (project {info.get('project_id')})")
+    cred = service_account.Credentials.from_service_account_info(info, scopes=scopes)
     return AuthorizedSession(cred)
 
 
