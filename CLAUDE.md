@@ -137,6 +137,9 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
   `GSC_KEY_JSON`) is Editor op property 540349275. `scripts/ga4.py inrichten` maakte 7 eigen dimensies (product, stap,
   lead_type, bron, plek, knop, pagina); `ga4.yml` zet elke 2e van de maand de trechter per product als issue.
   Nulmeting 6-10 t/m 3-11: 14.679 paginaweergaven, 1 offerteformulier geopend, 0 aanvragen, 8 klikken op een commerciële stap.
+  **Ook in de app (3-11-2026):** dezelfde property in app.bylder.com (`src/lib/meet.ts`); site en app delen het _ga-cookie.
+  App-events: `login`, `login_start`, `sign_up`, `generate_lead` (bron app), `offerte_getekend` (value). Site: `purchase` bij een
+  betaalde winkelbestelling (`/winkel/bedankt/`). Belangrijke gebeurtenissen: generate_lead, offerte_getekend, purchase.
 - **Was OPEN: GA4 inrichten (afgesproken met Daniel, 3-11-2026).** De events bestaan al (`generate_lead`,
   `offerte_formulier_open`, `afwerk_klik`, `menu_klik`, `mand_toevoegen`, `afrekenen_open`, sinds 3-11 ook
   `configurator_stap` met `product` en `stap` voor deuren, gietvloer en kast); nog nodig in GA4 zelf (Daniel): een trechter

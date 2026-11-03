@@ -38,7 +38,7 @@ DIMENSIES = [  # parameter, naam in GA4, uitleg
     ("knop", "Menuknop", "Welke knop in het menu"),
     ("pagina", "Pagina van de actie", "Pad van de pagina waarop de actie gebeurde"),
 ]
-BELANGRIJK = ["generate_lead"]
+BELANGRIJK = ["generate_lead", "offerte_getekend", "purchase"]  # offerte_getekend: app (3-11-2026)
 
 
 def sessie():

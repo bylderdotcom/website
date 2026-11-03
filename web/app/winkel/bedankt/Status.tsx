@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { WINKEL_API, euroCent } from '../prijzen'
 import { leegMand } from '../mand'
+import { meet } from '../../components/meet'
 import { S, GROEN, INKT } from '../stijl'
 
 type Bestelling = { nummer: string; status: string; regels: { naam: string; aantal: number; prijs_cent: number }[]; verzend_cent: number; totaal_cent: number }
@@ -20,6 +21,16 @@ export default function Status() {
       if (weg) return
       setB(d)
       if (d.status !== 'open') leegMand() // betaald: het mandje is afgerekend
+      // GA4 'purchase' één keer per bestelling (ook als de klant de pagina herlaadt).
+      if (d.status !== 'open' && d.status !== 'geannuleerd') {
+        try {
+          const k = 'bylder:gemeten:' + d.nummer
+          if (!localStorage.getItem(k)) {
+            localStorage.setItem(k, '1')
+            meet('purchase', { transaction_id: d.nummer, value: d.totaal_cent / 100, currency: 'EUR', shipping: d.verzend_cent / 100 })
+          }
+        } catch { /* privévenster: niet erg */ }
+      }
       if (d.status === 'open' && ++pogingen < 8) setTimeout(vraag, 2500)
     }).catch(() => { if (!weg) setFout(true) })
     vraag()
