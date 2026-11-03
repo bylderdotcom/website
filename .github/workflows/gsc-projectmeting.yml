@@ -1,0 +1,69 @@
+name: Projectpagina's meten in Google (maandelijks)
+
+# Ronde 3 (besluit Daniel, 3-11-2026): elke maand per projectpagina de cijfers uit
+# Search Console. Schrijft alleen meetgegevens (gsc-meting.json), geen pagina-inhoud;
+# de feitenronde gebruikt ze om de pagina's die Google al laat zien eerst bij te werken.
+# De kansenlijst (veel gezien, weinig geklikt; net buiten de top 10) komt als issue.
+#
+# Toegang: repo-secret GSC_KEY_JSON = de inhoud van het JSON-bestand van het
+# serviceaccount dat leesrecht heeft op sc-domain:bylder.com. Zonder secret stopt de
+# ronde netjes.
+
+on:
+  schedule:
+    - cron: "17 5 2 * *"   # de 2e van de maand, 05:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: projectpaginas-publiceren
+  cancel-in-progress: false
+
+jobs:
+  meten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sleutel aanwezig?
+        id: sleutel
+        env:
+          GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
+        run: |
+          if [ -z "$GSC_KEY_JSON" ]; then
+            echo "::warning::Repo-secret GSC_KEY_JSON ontbreekt; niets gemeten."
+            echo "door=nee" >> "$GITHUB_OUTPUT"
+          else
+            echo "door=ja" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Meten
+        if: steps.sleutel.outputs.door == 'ja'
+        env:
+          GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
+        run: |
+          pip install -q google-auth requests
+          python3 scripts/gsc_projectmeting.py
+      - name: Meting naar main
+        if: steps.sleutel.outputs.door == 'ja'
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          git add data/clusters/nieuwbouw-project/gsc-meting.json
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -q -m "Projectpagina's in Google: meting $(date +%m-%Y)"
+          git pull -q --rebase origin main && git push -q origin HEAD:main
+      - name: Kansen als issue
+        if: steps.sleutel.outputs.door == 'ja'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "projectpaginas" --force >/dev/null 2>&1 || true
+          gh issue create --title "Projectpagina's in Google: kansen $(date +%m-%Y)" \
+            --body-file reports/gsc-kansen.md --label "projectpaginas" \
+          || gh issue create --title "Projectpagina's in Google: kansen $(date +%m-%Y)" --body-file reports/gsc-kansen.md

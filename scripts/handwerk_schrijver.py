@@ -197,6 +197,19 @@ def main():
 
     todo = [(u, v) for u, v in sites.items()
             if v.get("site") and not v.get("_onbereikbaar") and u in projecten]
+    # Volgorde (3-11-2026): eerst de pagina's die Google al laat zien (gsc-meting.json,
+    # maandelijks uit Search Console), dan pagina's zonder enig opgezocht feit, dan de rest.
+    # Zo levert een ronde met --max het meeste op.
+    try:
+        gsc = json.load(open(os.path.join(ROOT, "data", "clusters", "nieuwbouw-project", "gsc-meting.json"),
+                             encoding="utf8")).get("paginas", {})
+    except (OSError, ValueError):
+        gsc = {}
+    def voorrang(item):
+        p = projecten[item[0]]
+        s = slugify(p["naam"], p["plaats"])
+        return (-(gsc.get(s, {}).get("vertoningen", 0)), 0 if s not in bestaand else 1)
+    todo.sort(key=voorrang)
     if MAX:
         todo = todo[:MAX]
     print(f"{len(todo)} projecten met een eigen site\n")
