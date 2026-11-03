@@ -1092,8 +1092,9 @@ export default function Configurator() {
             {deuren.length === 1 ? 'Jouw specificatie' : `Jouw specificatie — ${deuren.length} deuren`}
           </h2>
           <p style={{ fontSize: 13.5, color: `${INKT}0.7)`, margin: '0 0 14px', lineHeight: 1.65 }}>
-            Wij zetten je configuratie uit bij een vakbedrijf dat dit systeem plaatst, en je krijgt
-            een offerte van hen. Prijzen hangen af van maat, wanddikte en afwerking &mdash; daarom
+            Bylder maakt de offerte: we kijken je samenstelling na en je krijgt binnen twee werkdagen een prijs,
+            met de maten en de planning. Eén aanspreekpunt, van bestelling tot montage. Prijzen hangen af van
+            maat, wanddikte en afwerking &mdash; daarom
             staat er hier geen bedrag dat straks niet klopt.
           </p>
           {spec && (
