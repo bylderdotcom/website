@@ -23,6 +23,9 @@ from datetime import date, timedelta
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAPPORT = os.path.join(ROOT, "reports", "ga4-trechter.md")
 METING_ID = "G-LZYCRP1169"
+# Property-ID van Bylder.com (Daniel, 3-11-2026). accountSummaries gaf een lege lijst voor een
+# serviceaccount met alleen toegang tot de property; dan rechtstreeks deze.
+PROPERTY = "properties/540349275"
 ADMIN = "https://analyticsadmin.googleapis.com/v1beta"
 DATA = "https://analyticsdata.googleapis.com/v1beta"
 
@@ -73,7 +76,7 @@ def vind_property(s):
         for p in acc.get("propertySummaries", []):
             kandidaten.append((p["property"], p.get("displayName"), acc.get("displayName")))
     if not kandidaten:
-        sys.exit("Het serviceaccount ziet geen enkele GA4-property. Staat het bij Toegangsbeheer voor property?")
+        kandidaten = [(PROPERTY, "Bylder.com", "?")]
     for prop, naam, acc in kandidaten:
         for st in alle(s, f"{ADMIN}/{prop}/dataStreams", "dataStreams"):
             if (st.get("webStreamData") or {}).get("measurementId") == METING_ID:
