@@ -229,8 +229,9 @@ een kwartier live" zonder `vercel ls website` te checken.
 - **De projectronde mag zelf naar main (besluit Daniel, 3-11-2026).** `nieuwbouw-discovery.yml` (vrijdag) zet nieuwe
   projecten uit nieuwbouw.nl én Nieuw Wonen Nederland in `data/nieuwbouwprojecten.json` en start daarna de
   publicatieronde, alleen als: de lijst niet krimpt, hooguit 100 nieuwe per ronde, geldige JSON. Anders tak + issue.
-  De feitenronde (`handwerk-schrijver.yml`) draait sinds dezelfde dag **elke** zaterdag. Volgende stap (nog niet
-  gebouwd): maandelijkse verbeterronde op GSC-cijfers per projectpagina; daarvoor is Search Console-toegang nodig.
+  De feitenronde (`handwerk-schrijver.yml`) draait sinds dezelfde dag **elke** zaterdag, en werkt eerst de pagina's
+  bij die Google al laat zien. Die cijfers komen maandelijks uit Search Console (`gsc-projectmeting.yml`,
+  `scripts/gsc_projectmeting.py` → `gsc-meting.json` + kansenlijst als issue; repo-secret `GSC_KEY_JSON`).
 - **Ook de maandelijkse ronde voor woonwinkels uit OpenStreetMap mag zelf naar main (besluit Daniel,
   23-10-2026).** `osm-winkels.yml` ververst `data/winkels-osm.json`, alleen als er minstens 1.500
   winkels zijn en het aantal niet meer dan 20% daalt; anders een tak plus een issue. Google Places
