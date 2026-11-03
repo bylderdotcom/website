@@ -2,12 +2,12 @@
 // Wens Daniel (11-10-2026): Auping overal tonen zoals op de homepage, mét het beeld van het
 // bed. Zelfde foto als de bovenste rij van het merkenblok op de homepage (HomeHeld.tsx).
 //
-// Voorwaarden zoals op /vouchers/auping/: 10% op het reguliere assortiment bij vier winkels,
+// Voorwaarden zoals op /vouchers/auping/: burenkorting (5% bij 3 woningen, 10% bij 5) op het reguliere assortiment bij vier winkels,
 // niet bovenop een sale; gratis leenbed vanaf €5.000.
 
 export default function AupingCTA({
-  aanleiding = 'Met een gratis Bylder-account krijg je 10% korting op het reguliere Auping-assortiment, en vanaf €5.000 een gratis leenbed zolang je nieuwe bed wordt gemaakt.',
-  titel = 'Auping: 10% korting en een gratis leenbed',
+  aanleiding = 'Samen met je buren uit je nieuwbouwproject krijg je korting op het reguliere Auping-assortiment: 5% bij 3 woningen, 10% bij 5. En vanaf €5.000 een gratis leenbed zolang je nieuwe bed wordt gemaakt.',
+  titel = 'Auping: tot 10% korting en een gratis leenbed',
   label = 'Voucher · Auping',
   marge = '44px 0',
 }: { aanleiding?: string; titel?: string; label?: string; marge?: string }) {

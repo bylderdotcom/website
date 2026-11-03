@@ -13,7 +13,7 @@ import { rasterBinnen } from '../../lib/raster'
 
 const OG_TITLE = 'Kortingsvouchers nieuwbouw — 10% bij 56 woonmerken | Bylder'
 const DESC =
-  'Exclusieve kortingsvouchers voor kopers van een nieuwbouwwoning. 10% bij DRT Contemporary, Goossens, Tables by Tim, Whoon en 35+ andere merken; bij Auping 10% op het reguliere assortiment, niet bovenop een sale. Gratis, met een Bylder-account.'
+  'Exclusieve kortingsvouchers voor kopers van een nieuwbouwwoning. 10% bij DRT Contemporary, Goossens, Tables by Tim, Whoon en 35+ andere merken; bij Auping tot 10% samen met je buren, op het reguliere assortiment, niet bovenop een sale. Gratis, met een Bylder-account.'
 
 export const metadata: Metadata = {
   title: OG_TITLE,
@@ -47,9 +47,9 @@ const JSONLD_FAQ = {
   '@type': 'FAQPage',
   mainEntity: [
     { '@type': 'Question', name: 'Waarom kan Bylder deze korting regelen?', acceptedAnswer: { '@type': 'Answer', text: 'Deelnemende merken en winkels betalen ons voor wat er via Bylder wordt verkocht. Voor jou is het gratis, en de korting die je krijgt verandert daar niet door.' } },
-    { '@type': 'Question', name: 'Welke korting krijg ik bij Auping?', acceptedAnswer: { '@type': 'Answer', text: 'Met een gratis Bylder-account krijg je 10% korting bij Auping Rotterdam Centrum, Den Haag Centrum, Zoetermeer en Leidschendam. De korting geldt op het reguliere assortiment boxsprings, matrassen en bedframes en komt niet bovenop een lopende actie, sale of showroomsale — dan geldt die prijs. Je verzilvert hem in de winkel door je persoonlijke code op je telefoon te laten zien. Vanaf €5.000 besteding komt daar een gratis leenbed bij tijdens de levertijd, vanaf €6.500 een overnachting in Hotel Haverkist.' } },
+    { '@type': 'Question', name: 'Welke korting krijg ik bij Auping?', acceptedAnswer: { '@type': 'Answer', text: 'Samen met je buren uit je nieuwbouwproject krijg je korting bij Auping Rotterdam Centrum, Den Haag Centrum, Zoetermeer en Leidschendam: 5% als 3 woningen uit hetzelfde project bij Bylder zijn, 10% vanaf 5. De korting geldt op het reguliere assortiment boxsprings, matrassen en bedframes en komt niet bovenop een lopende actie, sale of showroomsale — dan geldt die prijs. Je verzilvert hem in de winkel door je persoonlijke code op je telefoon te laten zien. Vanaf €5.000 besteding komt daar een gratis leenbed bij tijdens de levertijd, vanaf €6.500 een overnachting in Hotel Haverkist.' } },
     { '@type': 'Question', name: 'Zijn de Bylder vouchers ook geldig voor bestaande bouw en renovatie?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Alle Bylder kortingsvouchers zijn geldig voor zowel nieuwbouwkopers als kopers van bestaande woningen en renovatieprojecten. Met één gratis Bylder-account activeer je alle vouchers.' } },
-    { '@type': 'Question', name: 'Welke merken geven de hoogste korting?', acceptedAnswer: { '@type': 'Answer', text: 'De hoogste kortingen komen van Parketgigant (25% op parket/laminaat), Lampenlicht (20% op verlichting), De Bossche Tapijtschuur (15% op raamdecoratie) en Auping (10% op bedden).' } },
+    { '@type': 'Question', name: 'Welke merken geven de hoogste korting?', acceptedAnswer: { '@type': 'Answer', text: 'De hoogste kortingen komen van Parketgigant (25% op parket/laminaat), Lampenlicht (20% op verlichting), De Bossche Tapijtschuur (15% op raamdecoratie) en Auping (tot 10% op bedden, samen met je buren).' } },
   ],
 }
 
@@ -65,7 +65,7 @@ type Voucher = {
 
 const SECTIE_1: Voucher[] = [
   { brand: 'Classic Next', cat: 'Kozijnloze deuren', discount: '5%', desc: 'Op onzichtbare kozijnen en binnendeuren als één systeem, met magneetslot en verdekte scharnieren. Uit eigen werkplaats in Uden, levering door heel Nederland.', logo: '/img/voucher-logos/cnx-doorframes-com.png', alt: 'Classic Next logo' },
-  { brand: 'Auping', cat: 'Slaapkamer & matrassen', discount: '10%', desc: 'Geldig bij Auping Rotterdam Centrum, Den Haag Centrum, Zoetermeer en Leidschendam, op het reguliere assortiment. Niet bovenop een lopende actie of sale. Gratis leenbed vanaf €5.000 besteding.', logo: '/img/voucher-logos/auping-nl.png', alt: 'Auping logo' },
+  { brand: 'Auping', cat: 'Slaapkamer & matrassen', discount: 'tot 10%', desc: '5% bij 3 woningen uit je nieuwbouwproject, 10% bij 5. Geldig bij Auping Rotterdam Centrum, Den Haag Centrum, Zoetermeer en Leidschendam, op het reguliere assortiment. Niet bovenop een lopende actie of sale. Gratis leenbed vanaf €5.000 besteding.', logo: '/img/voucher-logos/auping-nl.png', alt: 'Auping logo' },
   { brand: 'Goossens Den Bosch', cat: 'Meubelen & wonen', discount: '10%', desc: 'Winkelkorting + gratis 2D woonadviesdienst. Op alle banken, tafels, kasten en woonaccessoires.', logo: '/img/voucher-logos/goossenswonen-nl.svg', alt: 'Goossens Den Bosch logo' },
   { brand: 'Tylko', cat: 'Maatwerk kasten', discount: '€250', desc: '€250 korting bij besteding vanaf €800. Op maatwerk kasten, wandmeubels en boekenkasten.', icon: 'ph-thin ph-armchair' },
   { brand: 'Tables by Tim', cat: 'Maatwerk eettafels', discount: '€125', desc: '€125 korting op handgemaakte eettafels van massief eiken en walnoot. Gratis opmeetafspraak inbegrepen.', logo: '/img/voucher-logos/tablesbytim-nl.png', alt: 'Tables by Tim logo' },
