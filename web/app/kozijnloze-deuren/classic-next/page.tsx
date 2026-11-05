@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ConfiguratorCTA from '../../components/ConfiguratorCTA'
+import Portfolio from '../Portfolio'
 import VakmanReviews, { reviewSchema } from '../../components/VakmanReviews'
 
 /**
@@ -263,6 +264,9 @@ export default function ClassicNext() {
             ))}
           </div>
         </section>
+
+        {/* Echte deuren van Classic Next in woningen (5-11-2026), dezelfde galerij als op /kozijnloze-deuren/. */}
+        <Portfolio intro="Deuren van Classic Next in echte woningen: op maat gemaakt in de eigen werkplaats in Uden en door een vakbedrijf geplaatst." />
 
         <section style={{ maxWidth: '68ch' }}>
           <h2 style={H2}>De feiten op een rij</h2>
