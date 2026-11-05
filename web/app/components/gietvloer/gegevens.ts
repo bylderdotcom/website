@@ -13,7 +13,11 @@
 export const VOORLOPIG = true
 export const MAX_STALEN = 3
 
-export type Kleur = { id: string; naam: string; hex: string; code?: string }
+export type Kleur = {
+  id: string; naam: string; hex: string; code?: string
+  /** Echte kleur uit het assortiment van één systeem, met foto (www.bylder.com/img/gietvloer/…). */
+  type?: TypeId; foto?: string
+}
 
 export const KLEUREN: Kleur[] = [
   { id: 'kalkwit', naam: 'Kalkwit', hex: '#ECE8E0' },
@@ -32,6 +36,29 @@ export const KLEUREN: Kleur[] = [
   { id: 'antraciet', naam: 'Antraciet', hex: '#4E4C49' },
   { id: 'basalt', naam: 'Basalt', hex: '#3B3B3A' },
   { id: 'zwart', naam: 'Diepzwart', hex: '#262524' },
+  // Bio Fine: de 20 kleuren van Dr. Schutz (mail Lars 4-11-2026, foto's 'Bio Fine webversie').
+  // De hexcode is het gemiddelde van het midden van de foto, alleen voor het vergelijken met een
+  // inspiratiefoto. Bio Cement, Bio Lava en Bio Concrete volgen; tot dan de voorlopige kaart hierboven.
+  { id: 'fine-balos', naam: 'Balos', hex: '#AB9985', type: 'fine', foto: '/img/gietvloer/bio-fine/balos.webp' },
+  { id: 'fine-bassa', naam: 'Bassa', hex: '#A18D76', type: 'fine', foto: '/img/gietvloer/bio-fine/bassa.webp' },
+  { id: 'fine-bildenberg', naam: 'Bildenberg', hex: '#A3998F', type: 'fine', foto: '/img/gietvloer/bio-fine/bildenberg.webp' },
+  { id: 'fine-bolton', naam: 'Bolton', hex: '#A59E96', type: 'fine', foto: '/img/gietvloer/bio-fine/bolton.webp' },
+  { id: 'fine-colmar', naam: 'Colmar', hex: '#A89E95', type: 'fine', foto: '/img/gietvloer/bio-fine/colmar.webp' },
+  { id: 'fine-hikari', naam: 'Hikari', hex: '#B19F88', type: 'fine', foto: '/img/gietvloer/bio-fine/hikari.webp' },
+  { id: 'fine-juvelen', naam: 'Juvelen', hex: '#A59586', type: 'fine', foto: '/img/gietvloer/bio-fine/juvelen.webp' },
+  { id: 'fine-kiri', naam: 'Kiri', hex: '#AF9C8A', type: 'fine', foto: '/img/gietvloer/bio-fine/kiri.webp' },
+  { id: 'fine-kuggen', naam: 'Kuggen', hex: '#BEADA5', type: 'fine', foto: '/img/gietvloer/bio-fine/kuggen.webp' },
+  { id: 'fine-olivera', naam: 'Olivera', hex: '#A49787', type: 'fine', foto: '/img/gietvloer/bio-fine/olivera.webp' },
+  { id: 'fine-orla', naam: 'Orla', hex: '#AA9989', type: 'fine', foto: '/img/gietvloer/bio-fine/orla.webp' },
+  { id: 'fine-osaka', naam: 'Osaka', hex: '#B6A289', type: 'fine', foto: '/img/gietvloer/bio-fine/osaka.webp' },
+  { id: 'fine-oxford', naam: 'Oxford', hex: '#9C8A77', type: 'fine', foto: '/img/gietvloer/bio-fine/oxford.webp' },
+  { id: 'fine-pada', naam: 'Pada', hex: '#968A81', type: 'fine', foto: '/img/gietvloer/bio-fine/pada.webp' },
+  { id: 'fine-palmleaf', naam: 'Palmleaf', hex: '#AE9179', type: 'fine', foto: '/img/gietvloer/bio-fine/palmleaf.webp' },
+  { id: 'fine-pisa', naam: 'Pisa', hex: '#B0A69C', type: 'fine', foto: '/img/gietvloer/bio-fine/pisa.webp' },
+  { id: 'fine-preston', naam: 'Preston', hex: '#A79587', type: 'fine', foto: '/img/gietvloer/bio-fine/preston.webp' },
+  { id: 'fine-serra', naam: 'Serra', hex: '#B6A899', type: 'fine', foto: '/img/gietvloer/bio-fine/serra.webp' },
+  { id: 'fine-shard', naam: 'Shard', hex: '#9E9185', type: 'fine', foto: '/img/gietvloer/bio-fine/shard.webp' },
+  { id: 'fine-stockholm', naam: 'Stockholm', hex: '#A19889', type: 'fine', foto: '/img/gietvloer/bio-fine/stockholm.webp' },
 ]
 export const kleurOp = (id: string | null | undefined) => KLEUREN.find(k => k.id === id) ?? null
 
@@ -41,7 +68,7 @@ export type VloerType = {
   /** Hoe druk de tekening is (1 rustig – 4 druk) en hoe makkelijk schoon te houden (1–5), uit de keuzehulp. */
   tekening: number; schoon: number
   prijsNiveau: '€€' | '€€€'
-  /** Indicatie per m² incl. btw. null tot Dr. Schutz de ranges met de verwerkers heeft afgestemd. */
+  /** Indicatie per m² incl. btw (Dr. Schutz, afgestemd met de verwerkers, mail Lars 4-11-2026). */
   prijs: [number, number] | null
   kleuren: number
   wand: boolean
@@ -57,29 +84,29 @@ export type VloerType = {
 // webteksten met "EC1+ Ready" waren van vóór de certificering), alle vier uitstekend geschikt
 // voor vloerverwarming, en 20/20/20/10 kleuren. Bio Fine is technisch de fijne eindlaag op
 // Bio Cement; dat is informatie voor de verwerker, de koper hoort: een heel egale
-// lavasteenvloer met een zeer fijne korrel. Nog open: de prijsranges (met de verwerkers) en
-// de kleuren per systeem met naam, code en foto. Tot dan geen bedragen per systeem.
+// lavasteenvloer met een zeer fijne korrel. Prijzen (mail Lars 4-11-2026): Fine, Cement en Lava
+// € 80–130 per m², Concrete € 100–150, minimaal 35 m². Kleuren met foto: Bio Fine; de rest volgt.
 const VVW = 'Uitstekend geschikt voor vloerverwarming: de vloer ligt zonder lucht op de ondergrond, dus de warmte komt er ongehinderd door.'
 export const TYPES: VloerType[] = [
   {
     id: 'fine', naam: 'Bio Fine', kort: 'De rustigste: een heel egale lavasteenvloer met een zeer fijne korrel.',
     voor: ['Rustig en ruimtelijk, past bij elk interieur', 'Zeer fijne korrel, eenvoudig te onderhouden', 'Laat meubels en kunst de aandacht houden'],
     tegen: ['Op een rustig vlak zie je kruimels en gebruikssporen sneller'],
-    tekening: 1, schoon: 4, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
+    tekening: 1, schoon: 4, prijsNiveau: '€€', prijs: [80, 130], kleuren: 20, wand: false,
     vloerverwarming: VVW, wolk: 0.15,
   },
   {
     id: 'cement', naam: 'Bio Cement', kort: 'Een subtiele wolkentekening met de sfeer van gepolijst cement.',
     voor: ['Industriële uitstraling zonder dat het onrustig wordt', 'Meer levendigheid dan Bio Fine', 'Gebruikssporen vallen minder op'],
     tegen: ['Iets meer aandacht bij het schoonmaken dan Bio Fine'],
-    tekening: 2, schoon: 3, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
+    tekening: 2, schoon: 3, prijsNiveau: '€€', prijs: [80, 130], kleuren: 20, wand: false,
     vloerverwarming: VVW, wolk: 0.5,
   },
   {
     id: 'lava', naam: 'Bio Lava', kort: 'Levendig en vol karakter, met duidelijke wolken en echte lavasteentjes.',
     voor: ['Geeft je ruimte direct karakter', 'Vuil en gebruikssporen vallen nauwelijks op door de lavasteentjes'],
     tegen: ['Een uitgesproken tekening waar je van moet houden', 'Vraagt het meeste aandacht bij het schoonmaken'],
-    tekening: 3, schoon: 2, prijsNiveau: '€€', prijs: null, kleuren: 20, wand: false,
+    tekening: 3, schoon: 2, prijsNiveau: '€€', prijs: [80, 130], kleuren: 20, wand: false,
     vloerverwarming: VVW, wolk: 0.75,
   },
   {
@@ -87,11 +114,23 @@ export const TYPES: VloerType[] = [
     voor: ['Volledig met diamant geslepen, daardoor extreem glad', 'Het makkelijkst schoon te houden van de vier',
       'Oogt als echt beton of natuursteen', 'De enige van de vier die ook op de wanden kan'],
     tegen: ['Een stap duurder door het extra slijpwerk en de extra arbeid', 'De drukste tekening: je moet ervan houden'],
-    tekening: 4, schoon: 5, prijsNiveau: '€€€', prijs: null, kleuren: 10, wand: true,
+    tekening: 4, schoon: 5, prijsNiveau: '€€€', prijs: [100, 150], kleuren: 10, wand: true,
     vloerverwarming: VVW, wolk: 0.95,
   },
 ]
 export const typeOp = (id: string | null | undefined) => TYPES.find(t => t.id === id) ?? null
+
+/** Minimale oppervlakte voor een gietvloer (Dr. Schutz). Een kleinere vloer wordt als 35 m² gerekend. */
+export const MIN_M2 = 35
+
+/** De kleuren die bij een systeem horen: eigen kleuren met foto, anders de voorlopige kaart. */
+export function kleurenVoor(type: TypeId | null | undefined): Kleur[] {
+  const eigen = KLEUREN.filter(k => k.type === (type ?? 'fine'))
+  return eigen.length ? eigen : KLEUREN.filter(k => !k.type)
+}
+
+/** Tekst bij de kleuren en afbeeldingen, op verzoek van Dr. Schutz (mail Lars 4-11-2026). */
+export const KLEUR_VOORBEHOUD = 'De getoonde kleuren en afbeeldingen zijn uitsluitend ter indicatie. Door verschillen in beeldscherminstellingen kan de weergave afwijken van de werkelijke kleur en structuur van de vloer. Aan de afbeeldingen kunnen geen rechten worden ontleend. Bekijk alle kleuren bij een verwerker in de buurt, of vraag alvast drie kleurstalen aan van je favoriete kleuren.'
 
 /** Wat voor alle vier geldt (keuzehulp Dr. Schutz). */
 export const VOOR_ALLE = [
@@ -231,6 +270,6 @@ export const isLicht = (hex: string) => {
   return 0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255) > 150
 }
 
-/** Indicatie per m² voor een gietvloer in een woning (incl. btw), voor Mijn woning: de Bylder-
- *  prijsbenchmark voor gietvloer, 25%–75%. Vervangen door de ranges per systeem zodra die er zijn. */
-export const GIET_PRIJS_M2: [number, number] = [70, 130]
+/** Indicatie per m² voor een gietvloer in een woning (incl. btw), voor Mijn woning: de ranges van
+ *  Dr. Schutz over alle vier de systemen (mail Lars 4-11-2026). */
+export const GIET_PRIJS_M2: [number, number] = [80, 150]
