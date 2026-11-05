@@ -509,7 +509,7 @@ export default function MijnWoning() {
               <div><span>Opmeting aan huis</span><span className="mono">gratis</span></div>
               <div className="tot"><span>Indicatie</span><span className="mono">{eur(vanaf)} – {nl(tot)}</span></div>
             </div>
-            <p className="mw-klein">Indicatie voor een gietvloer in een woning, inclusief btw (Bylder-prijsbenchmark). Je echte prijs volgt uit het inmeten. Kleuren zijn een indicatie op je scherm, geen staal.</p>
+            <p className="mw-klein">Indicatie voor een gietvloer in een woning, inclusief btw (Dr. Schutz, alle vier de systemen; minimaal 35 m²). Je echte prijs volgt uit het inmeten. Kleuren zijn een indicatie op je scherm, geen staal.</p>
             <div className="mw-cta"><a className="mw-knop" href="/gietvloer/ontwerpen/">Kies kleur en type, en vraag stalen aan</a></div>
             <p className="mw-klein">Een vloer gezien die je mooi vindt? <a href="/gietvloer/ontwerpen/" style={{ color: GROEN, fontWeight: 700 }}>Upload de foto in de gietvloerontwerper</a>: we zoeken de kleur erbij, je ruimtes staan al klaar, en je vraagt tot drie stalen gratis aan.</p>
           </section>

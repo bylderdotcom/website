@@ -24,6 +24,7 @@ import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, 
 import { metRef } from '../aanbreng'
 import {
   KLEUREN, TYPES, VOOR_ALLE, MAX_STALEN, VOORLOPIG, NIET_GIET, kleurOp, typeOp, m2Van, isLicht, besteKleuren,
+  kleurenVoor, MIN_M2, KLEUR_VOORBEHOUD,
   type Analyse, type Keuze, type GekozenRuimte, type Match, type TypeId,
 } from './gegevens'
 
@@ -168,7 +169,10 @@ function Bolletjes({ n, van }: { n: number; van: number }) {
   return <span className="gv-bol" aria-hidden="true">{Array.from({ length: van }, (_, i) => <i key={i} className={i < n ? 'aan' : ''} />)}</span>
 }
 
-function Staal({ kleur, wolk, glans, label }: { kleur: string; wolk: number; glans: boolean; label?: string }) {
+// Foto's van echte kleuren staan op www.bylder.com (ook gebruikt vanuit de app).
+const fotoUrl = (f: string) => `https://www.bylder.com${f}`
+
+function Staal({ kleur, wolk, glans, label, foto }: { kleur: string; wolk: number; glans: boolean; label?: string; foto?: string }) {
   const id = 'gv-s' + useId().replace(/[^a-zA-Z0-9]/g, '')
   const p = pts([[0, 0], [6000, 0], [6000, 4000], [0, 4000]])
   const z = pts([[6000, 0, 0], [6000, 4000, 0], [6000, 4000, -260], [6000, 0, -260]])
@@ -178,11 +182,12 @@ function Staal({ kleur, wolk, glans, label }: { kleur: string; wolk: number; gla
       <defs>
         <Wolk id={id} licht={isLicht(kleur)} sterkte={wolk} />
         <linearGradient id={id + 'g'} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#fff" stopOpacity=".35" /><stop offset=".5" stopColor="#fff" stopOpacity="0" /></linearGradient>
+        {foto && <pattern id={id + 'f'} patternUnits="userSpaceOnUse" width="6000" height="4000"><image href={fotoUrl(foto)} width="6000" height="4000" preserveAspectRatio="xMidYMid slice" /></pattern>}
       </defs>
       <polygon points={z} fill={kleur} style={{ filter: 'brightness(.78)' }} />
       <polygon points={v} fill={kleur} style={{ filter: 'brightness(.88)' }} />
-      <polygon points={p} fill={kleur} />
-      {wolk > 0 && <polygon points={p} fill="#000" filter={`url(#${id})`} />}
+      <polygon points={p} fill={foto ? `url(#${id}f)` : kleur} />
+      {wolk > 0 && !foto && <polygon points={p} fill="#000" filter={`url(#${id})`} />}
       {glans && <polygon points={p} fill={`url(#${id}g)`} />}
     </svg>
   )
@@ -412,7 +417,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
             <div className="gv-matches" role="radiogroup" aria-label="Kleuren die het dichtst bij je foto liggen">
               {matches.map(m => (
                 <button key={m.kleur.id} type="button" role="radio" aria-checked={keuze.kleur === m.kleur.id} className="gv-match" onClick={() => wijzig({ kleur: m.kleur.id })}>
-                  <Staal kleur={m.kleur.hex} wolk={wolk} glans={glans} label={`Vloerstaal ${m.kleur.naam}`} />
+                  <Staal kleur={m.kleur.hex} foto={m.kleur.foto} wolk={wolk} glans={glans} label={`Vloerstaal ${m.kleur.naam}`} />
                   <strong>{m.kleur.naam}</strong>
                   <span>{m.oordeel}</span>
                   {keuze.kleur === m.kleur.id && <Check className="gv-vink" size={16} weight="bold" aria-hidden="true" />}
@@ -422,15 +427,17 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
           )}
           {(alleKleuren || !a) && (
             <div className="gv-kaart" role="radiogroup" aria-label="Alle kleuren">
-              {KLEUREN.map(k => (
-                <button key={k.id} type="button" role="radio" aria-checked={keuze.kleur === k.id} onClick={() => wijzig({ kleur: k.id })}>
-                  <i style={{ background: k.hex }} />{k.naam}
+              {kleurenVoor(type?.id).map(k => (
+                <button key={k.id} type="button" role="radio" aria-checked={keuze.kleur === k.id} onClick={() => wijzig({ kleur: k.id, ...(k.type && !keuze.type ? { type: k.type } : {}) })}>
+                  <i style={{ background: k.foto ? `url(${fotoUrl(k.foto)}) center/cover` : k.hex }} />{k.naam}
                 </button>
               ))}
             </div>
           )}
-          {a && !alleKleuren && <button type="button" className="gv-link" onClick={() => setAlleKleuren(true)}>Alle {KLEUREN.length} kleuren tonen</button>}
-          {VOORLOPIG && <p className="gv-klein">Voorlopige kleurenkaart: de definitieve kleuren volgen. Vraag je stalen aan, dan krijg je de drie kleuren uit het assortiment die het dichtst bij jouw keuze liggen. Een scherm toont kleur nooit precies; een staal wel.</p>}
+          {a && !alleKleuren && <button type="button" className="gv-link" onClick={() => setAlleKleuren(true)}>Alle {kleurenVoor(type?.id).length} kleuren tonen</button>}
+          {kleurenVoor(type?.id)[0]?.foto
+            ? <p className="gv-klein">{type ? `De ${kleurenVoor(type.id).length} kleuren van ${type.naam}.` : `De ${kleurenVoor(null).length} kleuren van Bio Fine; kies je een ander type, dan zie je die kleuren.`} {KLEUR_VOORBEHOUD}</p>
+            : VOORLOPIG && <p className="gv-klein">Voorlopige kleurenkaart voor {type ? type.naam : 'dit type'}: de echte kleuren volgen. Vraag je stalen aan, dan krijg je de drie kleuren uit het assortiment die het dichtst bij jouw keuze liggen. {KLEUR_VOORBEHOUD}</p>}
         </div>
       </section>
 
@@ -530,19 +537,19 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
             </button>
           ))}
         </div>
-        <p className="gv-klein">Prijsniveau ten opzichte van elkaar: Bio Concrete is een stap duurder door het extra slijpwerk. De prijs per m² stemt Dr. Schutz af met de verwerkers in jouw regio; je echte prijs volgt na de opmeting. Voorbereiding van de ondervloer en plinten komen er soms bij.</p>
+        <p className="gv-klein">Prijsniveau ten opzichte van elkaar: Bio Fine, Bio Cement en Bio Lava kosten € 80 tot € 130 per m², Bio Concrete € 100 tot € 150, inclusief btw; minimaal 35 m². Je echte prijs volgt na de opmeting. Voorbereiding van de ondervloer en plinten komen er soms bij.</p>
       </section>
 
       </div>
 
       <aside className="gv-zij" aria-label="Jouw vloer">
         <p className="gv-stap"><span>&#9679;</span>Jouw vloer</p>
-        <Staal kleur={hex} wolk={wolk} glans={glans} />
+        <Staal kleur={hex} foto={kleur?.foto} wolk={wolk} glans={glans} />
         <dl className="gv-zij-lijst">
           <div><dt>Kleur</dt><dd>{kleur?.naam ?? 'nog niet gekozen'}</dd></div>
           <div><dt>Type</dt><dd>{type?.naam ?? 'nog niet gekozen'}</dd></div>
           <div><dt>Oppervlak</dt><dd>{m2 > 0 ? `≈ ${nl(m2, 1)} m²` : 'nog niet gekozen'}</dd></div>
-          {type?.prijs && m2 > 0 && <div><dt>Indicatie</dt><dd>{eur(m2 * type.prijs[0])} – {eur(m2 * type.prijs[1])}</dd></div>}
+          {type?.prijs && m2 > 0 && <div><dt>Indicatie</dt><dd>{eur(Math.max(m2, MIN_M2) * type.prijs[0])} – {eur(Math.max(m2, MIN_M2) * type.prijs[1])}{m2 < MIN_M2 ? ` (minimaal ${MIN_M2} m²)` : ''}</dd></div>}
         </dl>
         <button type="button" className="gv-knop" onClick={naarSlot}>Gratis stalen en je prijs</button>
       </aside>
@@ -559,12 +566,12 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
         <p className="gv-stap"><span>4</span>Stalen en offerte</p>
         <h2 id="gv-4" className="gv-h2">Zie hem in het echt, en vraag de prijs.</h2>
         <div className="gv-overzicht">
-          <Staal kleur={hex} wolk={wolk} glans={glans} />
+          <Staal kleur={hex} foto={kleur?.foto} wolk={wolk} glans={glans} />
           <dl>
             <div><dt>Kleur</dt><dd>{kleur?.naam ?? 'nog niet gekozen'}</dd></div>
             <div><dt>Type</dt><dd>{type?.naam ?? 'nog niet gekozen'}</dd></div>
             <div><dt>Oppervlak</dt><dd>≈ {nl(m2, 1)} m²</dd></div>
-            {type?.prijs && m2 > 0 && <div className="gv-indicatie"><dt>Indicatie</dt><dd>{eur(m2 * type.prijs[0])} – {eur(m2 * type.prijs[1])}</dd></div>}
+            {type?.prijs && m2 > 0 && <div className="gv-indicatie"><dt>Indicatie</dt><dd>{eur(Math.max(m2, MIN_M2) * type.prijs[0])} – {eur(Math.max(m2, MIN_M2) * type.prijs[1])}{m2 < MIN_M2 ? ` (minimaal ${MIN_M2} m²)` : ''}</dd></div>}
           </dl>
         </div>
         <div className="gv-voucher">
