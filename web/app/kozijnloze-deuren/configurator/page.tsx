@@ -5,6 +5,7 @@ import { ONTWERPEN, KLEUREN } from './ontwerpen'
 // een server-component. De configurator raakt window en document uitsluitend
 // binnen effecten aan, dus hij overleeft het prerenderen prima.
 import Configurator from './Configurator'
+import Portfolio from '../Portfolio'
 
 /**
  * Configurator voor kozijnloze deuren.
@@ -140,6 +141,9 @@ export default function ConfiguratorPagina() {
         <StandBalk />
 
         <Configurator />
+
+        {/* Echte deuren in echte woningen (5-11-2026): bewijs dat het besteld en geplaatst kan worden. */}
+        <Portfolio />
 
         {/* Wat je koopt is een samenstel, geen deur. Wie dat niet weet
             vergelijkt de offerte met een deurblad bij de bouwmarkt, en dan
