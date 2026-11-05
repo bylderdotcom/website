@@ -49,7 +49,7 @@ const ANDER: Foto[] = [
     bij: 'Voordeur in donker eiken.' },
 ]
 
-export default function Portfolio({ marge = '46px 0 0' }: { marge?: string }) {
+export default function Portfolio({ marge = '46px 0 0', intro }: { marge?: string; intro?: string }) {
   return (
     <section aria-labelledby="portfolio-kop" style={{ margin: marge }}>
       <style>{'.pf-raster{grid-template-columns:repeat(3,minmax(0,1fr))}.pf-klein{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:640px){.pf-raster{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important}}'}</style>
@@ -57,8 +57,7 @@ export default function Portfolio({ marge = '46px 0 0' }: { marge?: string }) {
         Gemaakt in Uden, geplaatst in echte woningen
       </h2>
       <p style={{ fontSize: 15.5, lineHeight: 1.65, color: `${INKT}0.75)`, margin: '0 0 16px', maxWidth: '64ch' }}>
-        Wat je hierboven samenstelt, wordt op maat gemaakt in de werkplaats van Classic Next en door een vakbedrijf geplaatst.
-        Zo ziet het er in een woning uit.
+        {intro ?? 'Wat je hierboven samenstelt, wordt op maat gemaakt in de werkplaats van Classic Next en door een vakbedrijf geplaatst. Zo ziet het er in een woning uit.'}
       </p>
       <Raster fotos={KOZIJNLOOS} min={200} />
       <h3 style={{ fontSize: 16, fontWeight: 800, margin: '24px 0 10px', color: '#1A1208' }}>Ook ander maatwerk van Classic Next</h3>
