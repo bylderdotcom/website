@@ -7,7 +7,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
-import { Images, Ruler, MagicWand, Couch, Television, Stairs, Books, Paperclip, PaperPlaneRight, X, Cube, Door, SquaresFour, Package, ArrowsClockwise, MapTrifold, Check } from '@phosphor-icons/react'
+import { Images, MagicWand, Couch, Television, Stairs, Books, Paperclip, PaperPlaneRight, X, Cube, Door, SquaresFour, Package, ArrowsClockwise, MapTrifold, Check } from '@phosphor-icons/react'
 import { bouw as bouwKast } from '@/lib/kast/rekenmodel'
 import { VOORBEELD_HOEKKAST, type Ontwerp } from '@/lib/kast/ontwerp'
 import { Plattegrond, Uitslag } from './Tekeningen'
@@ -206,11 +206,6 @@ export default function Ontwerper({ start }: { start?: string }) {
             <div className="ko-berichten" ref={lijst}>
               {leeg && (
                 <div className="ko-start">
-                  <ol className="ko-stappen">
-                    <li><span className="ko-icoon"><Images size={20} /></span><div><strong>Laat zien wat je mooi vindt</strong><span>1 tot 4 foto’s van kasten die je aanspreken. Kleur en stijl haalt de ontwerper eruit.</span></div></li>
-                    <li><span className="ko-icoon"><Ruler size={20} /></span><div><strong>Vertel waar hij komt</strong><span>Welke muur of hoek, hoeveel ruimte, hoe hoog het plafond is en wat erin moet. Heb je een plattegrond? Wijs de plek erop aan.</span><button type="button" className="ko-knop ko-knop-klein ko-stap-knop" onClick={() => setAanwijzen(true)}><MapTrifold size={16} aria-hidden="true" />Plattegrond uploaden</button></div></li>
-                    <li><span className="ko-icoon"><MagicWand size={20} /></span><div><strong>De ontwerper tekent hem uit</strong><span>In 3D, met maten en zaaglijst. Daarna stuur je bij in gewone taal.</span></div></li>
-                  </ol>
                   <div className="ko-label ko-label-klein">Of begin met</div>
                   <div className="ko-starters">
                     {STARTERS.map(s => (
@@ -243,7 +238,20 @@ export default function Ontwerper({ start }: { start?: string }) {
               <div ref={eind} />
             </div>
 
-            <form className="ko-composer" onSubmit={verstuur}>
+            <form className={`ko-composer${leeg ? ' ko-composer-groot' : ''}`} onSubmit={verstuur}>
+              {leeg && (
+                <div className="ko-intake-kop">
+                  <h2>Beschrijf je kast in je eigen woorden</h2>
+                  <p>Foto’s van kasten die je mooi vindt + een paar zinnen = je kast in 3D, met maten en zaaglijst.</p>
+                </div>
+              )}
+              {leeg && fotos.length === 0 && (
+                <button type="button" className="ko-fotovak" onClick={() => bestand.current?.click()}>
+                  <Images size={26} aria-hidden="true" />
+                  <strong>Sleep hier foto’s van kasten die je mooi vindt</strong>
+                  <span>of kies foto’s · tot 4 · ook vanaf je telefoon</span>
+                </button>
+              )}
               {nodigEmail && id && sleutel && <EmailPoort id={id} s={sleutel} onKlaar={() => { setNodigEmail(false); setBewaard(true); setTimeout(() => verstuur(), 50) }} />}
               {fotos.length > 0 && (
                 <div className="ko-duimen">
@@ -258,16 +266,24 @@ export default function Ontwerper({ start }: { start?: string }) {
                 </div>
               )}
               <div className="ko-invoer">
+                {!leeg && (<>
                 <button type="button" className="ko-rond" onClick={() => bestand.current?.click()} aria-label="Foto’s toevoegen" title="Foto’s toevoegen"><Paperclip size={20} /></button>
                 <button type="button" className="ko-rond" onClick={() => setAanwijzen(true)} aria-label="Plattegrond: wijs de plek aan" title="Plattegrond: wijs de plek aan"><MapTrifold size={20} /></button>
+                </>)}
                 <label htmlFor="kast-tekst" className="ko-verborgen">Bericht aan de ontwerper</label>
-                <textarea id="kast-tekst" ref={veld} value={tekst} rows={1} onChange={e => setTekst(e.target.value)}
-                  placeholder={leeg ? 'Beschrijf je kast, of sleep hier foto’s naartoe…' : 'Bijv. ‘bovenkasten iets hoger’ of ‘alleen rechts een ronde kop’'}
+                <textarea id="kast-tekst" ref={veld} value={tekst} rows={leeg ? 4 : 1} onChange={e => setTekst(e.target.value)}
+                  placeholder={leeg ? 'Bijv. ‘Kast in de hal, 240 cm breed tot het plafond. Links ronde open vakken, rechts een plek voor jassen. Zandkleur, zonder grepen.’' : 'Bijv. ‘bovenkasten iets hoger’ of ‘alleen rechts een ronde kop’'}
                   onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); verstuur() } }} />
-                <button type="submit" className="ko-rond ko-stuur" disabled={!kan} aria-label="Verstuur"><PaperPlaneRight size={20} weight="fill" /></button>
+                {!leeg && <button type="submit" className="ko-rond ko-stuur" disabled={!kan} aria-label="Verstuur"><PaperPlaneRight size={20} weight="fill" /></button>}
                 <input ref={bestand} type="file" accept="image/jpeg,image/png,image/webp" multiple onChange={e => { kiesFotos(e.target.files); e.target.value = '' }} hidden />
               </div>
-              {fout ? <p role="alert" className="ko-fout">{fout}</p> : <p className="ko-hint">Enter verstuurt · Shift+Enter voor een nieuwe regel</p>}
+              {leeg && (
+                <div className="ko-intake-acties">
+                  <button type="button" className="ko-knop" onClick={() => setAanwijzen(true)}><MapTrifold size={18} aria-hidden="true" />Plattegrond uploaden</button>
+                  <button type="submit" className="ko-knop ko-knop-primair ko-knop-groot" disabled={!kan}><MagicWand size={18} aria-hidden="true" />Ontwerp mijn kast</button>
+                </div>
+              )}
+              {fout ? <p role="alert" className="ko-fout">{fout}</p> : <p className="ko-hint">{leeg ? 'Gratis en zonder account. Daarna stuur je bij in gewone taal.' : 'Enter verstuurt · Shift+Enter voor een nieuwe regel'}</p>}
             </form>
             {aanwijzen && <PlekAanwijzen onSluit={() => setAanwijzen(false)} onKlaar={a => {
               setAanwijzen(false)
@@ -287,8 +303,8 @@ export default function Ontwerper({ start }: { start?: string }) {
                 <div className="ko-showcase-kaart">
                   <div className="ko-label ko-label-klein">Voorbeeld</div>
                   <strong>Hoekkast met ronde koppen</strong>
-                  <span>Ontworpen uit twee foto’s en drie zinnen. Jouw ontwerp verschijnt hier.</span>
-                  <button type="button" className="ko-knop ko-knop-klein" onClick={() => nieuw(true)}>Begin met dit voorbeeld</button>
+                  <span>Ontworpen uit twee foto’s en drie zinnen. Probeer het voorbeeld, of beschrijf je eigen kast: hij verschijnt hier.</span>
+                  <button type="button" className="ko-knop ko-knop-klein" onClick={() => nieuw(true)}>Probeer dit voorbeeld</button>
                 </div>
               </div>
             ) : (
@@ -469,6 +485,17 @@ const CSS = `
 @media (max-width:640px){.ko-invoer{gap:2px}.ko-invoer .ko-rond{width:36px;height:40px}}
 .ko-stap-knop{margin-top:10px;display:inline-flex;gap:7px;align-items:center}
 .ko-composer{padding:12px 14px 14px;border-top:1px solid var(--lijn)}
+.ko-composer-groot{order:-1;border-top:0;padding:22px 22px 6px}
+.ko-intake-kop h2{margin:0 0 4px;font-size:clamp(1.2rem,2.2vw,1.45rem);font-weight:800;letter-spacing:-.02em;color:var(--inkt)}
+.ko-intake-kop p{margin:0 0 14px;font-size:14px;line-height:1.5;color:var(--zacht)}
+.ko-fotovak{width:100%;display:grid;justify-items:center;gap:4px;padding:18px 14px;margin:0 0 10px;border-radius:16px;border:2px dashed rgba(61,90,62,.35);background:rgba(61,90,62,.04);color:var(--inkt);font-family:inherit;cursor:pointer;transition:border-color .15s,background .15s}
+.ko-fotovak:hover{border-color:var(--mos);background:rgba(61,90,62,.08)}
+.ko-fotovak svg{color:var(--mos)}.ko-fotovak strong{font-size:14.5px}.ko-fotovak span{font-size:12.5px;color:var(--zacht)}
+.ko-composer-groot .ko-invoer textarea:focus,.ko-composer-groot .ko-invoer textarea:focus-visible{outline:none!important;box-shadow:none!important}
+.ko-composer-groot .ko-invoer{padding:8px 10px}.ko-composer-groot .ko-invoer textarea{font-size:15.5px}
+.ko-intake-acties{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ko-knop-groot{flex:1 1 200px;justify-content:center;padding:13px 18px;font-size:15.5px;font-weight:800}
+.ko-composer-groot ~ .ko-berichten .ko-start{padding-top:0}
 .ko-duimen{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
 .ko-duim{position:relative}
 .ko-duim img{width:64px;height:64px;object-fit:cover;border-radius:12px;display:block;box-shadow:0 4px 12px -6px rgba(26,18,8,.5)}
