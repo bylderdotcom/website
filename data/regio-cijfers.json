@@ -1,5 +1,5 @@
 {
- "gemeten_op": "2026-11-05",
+ "gemeten_op": "2026-11-06",
  "regios": {
   "drenthe": {
    "niveau": "provincie",
@@ -21,9 +21,9 @@
   },
   "gelderland": {
    "niveau": "provincie",
-   "projecten": 174,
-   "woningen": 6628,
-   "bekend": 83
+   "projecten": 177,
+   "woningen": 6674,
+   "bekend": 85
   },
   "groningen": {
    "niveau": "gemeente",
@@ -40,9 +40,9 @@
   },
   "noord-brabant": {
    "niveau": "provincie",
-   "projecten": 179,
-   "woningen": 10863,
-   "bekend": 108
+   "projecten": 181,
+   "woningen": 10927,
+   "bekend": 109
   },
   "noord-holland": {
    "niveau": "provincie",
@@ -65,15 +65,15 @@
   },
   "zeeland": {
    "niveau": "provincie",
-   "projecten": 30,
-   "woningen": 218,
-   "bekend": 8
+   "projecten": 31,
+   "woningen": 282,
+   "bekend": 9
   },
   "zuid-holland": {
    "niveau": "provincie",
-   "projecten": 242,
-   "woningen": 9558,
-   "bekend": 129
+   "projecten": 247,
+   "woningen": 9845,
+   "bekend": 134
   },
   "assen": {
    "niveau": "gemeente",
@@ -316,7 +316,7 @@
   "lingewaard": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 4,
+   "projecten": 5,
    "woningen": 10,
    "bekend": 1
   },
@@ -351,9 +351,9 @@
   "nijmegen": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 22,
-   "woningen": 2092,
-   "bekend": 13
+   "projecten": 24,
+   "woningen": 2138,
+   "bekend": 15
   },
   "nunspeet": {
    "niveau": "gemeente",
@@ -638,7 +638,7 @@
   "breda": {
    "niveau": "gemeente",
    "provincie": "noord-brabant",
-   "projecten": 19,
+   "projecten": 20,
    "woningen": 1802,
    "bekend": 8
   },
@@ -848,9 +848,9 @@
   "tholen": {
    "niveau": "gemeente",
    "provincie": "zeeland",
-   "projecten": 1,
-   "woningen": 28,
-   "bekend": 1
+   "projecten": 2,
+   "woningen": 92,
+   "bekend": 2
   },
   "tilburg": {
    "niveau": "gemeente",
@@ -1258,6 +1258,13 @@
    "woningen": 457,
    "bekend": 2
   },
+  "bunnik": {
+   "niveau": "gemeente",
+   "provincie": "utrecht",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
   "de-bilt": {
    "niveau": "gemeente",
    "provincie": "utrecht",
@@ -1464,9 +1471,9 @@
   "hardinxveld-giessendam": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 2,
-   "woningen": 68,
-   "bekend": 2
+   "projecten": 3,
+   "woningen": 87,
+   "bekend": 3
   },
   "hellevoetsluis": {
    "niveau": "gemeente",
@@ -1653,9 +1660,9 @@
   "voorne-aan-zee": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 4,
-   "woningen": 59,
-   "bekend": 3
+   "projecten": 5,
+   "woningen": 109,
+   "bekend": 4
   },
   "voorschoten": {
    "niveau": "gemeente",
@@ -1667,9 +1674,9 @@
   "waddinxveen": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 1,
-   "woningen": 0,
-   "bekend": 0
+   "projecten": 2,
+   "woningen": 63,
+   "bekend": 1
   },
   "wassenaar": {
    "niveau": "gemeente",
@@ -1681,16 +1688,16 @@
   "westland": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 16,
-   "woningen": 467,
-   "bekend": 11
+   "projecten": 17,
+   "woningen": 512,
+   "bekend": 12
   },
   "zoetermeer": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 2,
-   "woningen": 579,
-   "bekend": 2
+   "projecten": 3,
+   "woningen": 689,
+   "bekend": 3
   },
   "zuidplas": {
    "niveau": "gemeente",
