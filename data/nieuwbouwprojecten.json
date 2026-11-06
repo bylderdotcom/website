@@ -20411,6 +20411,245 @@
    "woonoppervlak_tot": 94,
    "handmatig": true,
    "bron": "nieuwwonennederland.nl"
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/breda/01M6RFGV60E4MZJMAXWQBXCC5A-zaartoever",
+   "plaats": "breda",
+   "naam": "Zaartoever",
+   "woningen": null,
+   "lat": 51.573666,
+   "lng": 4.762438,
+   "status": "In verkoop",
+   "jaren": [
+    2027,
+    2029
+   ],
+   "oplevering": 2029,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 52,
+   "redenen": [
+    "aantal woningen onbekend",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2029 — lange aanloop",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/bunnik/01M6NY5FAKYNR34D9T4DEKYFFX-lumenhof",
+   "plaats": "bunnik",
+   "naam": "Lumenhof",
+   "woningen": null,
+   "lat": 52.048866,
+   "lng": 5.230281,
+   "status": "In verkoop",
+   "jaren": [],
+   "oplevering": null,
+   "oplevering_bron": null,
+   "score": 40,
+   "redenen": [
+    "aantal woningen onbekend",
+    "in verkoop — funnelvenster staat open",
+    "opleverjaar onbekend",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/hardinxveld-giessendam/01M6K00N2Z8BA7TNANT0G9V7F4-hvd",
+   "plaats": "hardinxveld-giessendam",
+   "naam": "Hvd",
+   "woningen": 19,
+   "lat": 51.82842395,
+   "lng": 4.8085378,
+   "status": "In verkoop",
+   "jaren": [
+    2027
+   ],
+   "oplevering": 2027,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 35,
+   "redenen": [
+    "19 woningen (klein)",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2027 — klusvenster binnen bereik",
+    "locatie bekend (geo-schema mogelijk)",
+    "GEEN eigen zoekbare naam — niemand zoekt hierop; geen pagina"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/lingewaard/01M6GF1JMZWKRPSB23QFYNHYXF-erfdragers",
+   "plaats": "lingewaard",
+   "naam": "Erfdragers",
+   "woningen": null,
+   "lat": 51.884,
+   "lng": 5.884,
+   "status": "In verkoop",
+   "jaren": [
+    2026,
+    2027,
+    2028
+   ],
+   "oplevering": 2028,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 65,
+   "redenen": [
+    "aantal woningen onbekend",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2028 — klusvenster binnen bereik",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01M6GF5T9806MA54XGV85BV3D7-spiegelhof",
+   "plaats": "nijmegen",
+   "naam": "Spiegelhof",
+   "woningen": 23,
+   "lat": 51.863487,
+   "lng": 5.849411,
+   "status": "In verkoop",
+   "jaren": [
+    2028
+   ],
+   "oplevering": 2028,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 70,
+   "redenen": [
+    "23 woningen (klein)",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2028 — klusvenster binnen bereik",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/nijmegen/01M6NE3GMWYT9PVEFGW68G9BQ3-zuidhof-fase-1",
+   "plaats": "nijmegen",
+   "naam": "Zuidhof Fase 1",
+   "woningen": 23,
+   "lat": 51.863487,
+   "lng": 5.849411,
+   "status": "In verkoop",
+   "jaren": [
+    2029
+   ],
+   "oplevering": 2029,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 57,
+   "redenen": [
+    "23 woningen (klein)",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2029 — lange aanloop",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/tholen/01M6QZ6B1SZBSBJMAWPWQYSEGN-buitenhof-fase-1",
+   "plaats": "tholen",
+   "naam": "Buitenhof Fase 1",
+   "woningen": 64,
+   "lat": 51.529907,
+   "lng": 4.205881,
+   "status": "In verkoop",
+   "jaren": [
+    2027,
+    2028
+   ],
+   "oplevering": 2028,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 80,
+   "redenen": [
+    "64 woningen",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2028 — klusvenster binnen bereik",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/voorne-aan-zee/01M6K8Q0525CXE9W7VCJHXG0YM-buitenplaats-brielle-fase-1",
+   "plaats": "voorne-aan-zee",
+   "naam": "Buitenplaats Brielle Fase 1",
+   "woningen": 50,
+   "lat": 51.8981,
+   "lng": 4.163973,
+   "status": "In verkoop",
+   "jaren": [
+    2027
+   ],
+   "oplevering": 2027,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 80,
+   "redenen": [
+    "50 woningen",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2027 — klusvenster binnen bereik",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/waddinxveen/01M6K9HVVMXQF4DSB1XS9K8VBR-park-vredenburgh",
+   "plaats": "waddinxveen",
+   "naam": "Park Vredenburgh",
+   "woningen": 63,
+   "lat": 52.029724,
+   "lng": 4.63504,
+   "status": "In verkoop",
+   "jaren": [
+    2027,
+    2028
+   ],
+   "oplevering": 2028,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 80,
+   "redenen": [
+    "63 woningen",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2028 — klusvenster binnen bereik",
+    "locatie bekend (geo-schema mogelijk)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/westland/01M6JYT6NMXFHTYJVZFH45T73Y-lierkwartier-aan-de-kade-fase-2",
+   "plaats": "westland",
+   "naam": "Lierkwartier Aan De Kade Fase 2",
+   "woningen": 45,
+   "lat": 51.979702,
+   "lng": 4.258806,
+   "status": "In verkoop",
+   "jaren": [
+    2027,
+    2029
+   ],
+   "oplevering": 2029,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 79,
+   "redenen": [
+    "45 woningen",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2029 — lange aanloop",
+    "locatie bekend (geo-schema mogelijk)",
+    "prioriteitsregio (nabij een Auping-winkel)"
+   ]
+  },
+  {
+   "url": "https://nieuwbouw.nl/aanbod/koop/zoetermeer/01M6RGWEKGR4NSHW5KAM5PW43Q-up",
+   "plaats": "zoetermeer",
+   "naam": "Up",
+   "woningen": 110,
+   "lat": 52.06040855,
+   "lng": 4.49363301,
+   "status": "In verkoop",
+   "jaren": [
+    2028
+   ],
+   "oplevering": 2028,
+   "oplevering_bron": "kwartaalnotatie (onzeker)",
+   "score": 35,
+   "redenen": [
+    "110 woningen",
+    "in verkoop — funnelvenster staat open",
+    "oplevering ~2028 — klusvenster binnen bereik",
+    "locatie bekend (geo-schema mogelijk)",
+    "PRIORITEITSREGIO — Auping-winkel in deze gemeente",
+    "GEEN eigen zoekbare naam — niemand zoekt hierop; geen pagina"
+   ]
   }
  ]
 }

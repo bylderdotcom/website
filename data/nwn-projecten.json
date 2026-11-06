@@ -27832,6 +27832,20 @@
    "woonoppervlak_van": null,
    "woonoppervlak_tot": null,
    "_gehaald": "2026-11-03"
+  },
+  {
+   "url": "https://www.nieuwwonennederland.nl/nieuwbouw/utrecht/smakkelaarspark-parkgebouw/15921",
+   "plaats": "utrecht",
+   "naam": "Smakkelaarspark | Parkgebouw",
+   "bron": "nieuwwonennederland.nl",
+   "bron_id": "15921",
+   "woningen": 12,
+   "status": "In verkoop",
+   "prijs_van": 669000,
+   "prijs_tot": 1120000,
+   "woonoppervlak_van": 89,
+   "woonoppervlak_tot": 133,
+   "_gehaald": "2026-11-06"
   }
  ]
 }
