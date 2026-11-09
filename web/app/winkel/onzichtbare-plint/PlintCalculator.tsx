@@ -83,7 +83,8 @@ export default function PlintCalculator() {
   const art = PLINT.artikelen[model]
   const online = !!prijzen?.online['winkel-plint']
   const pp = prijzen?.prijzen.plint
-  void pp
+  // Op offertebasis (Thijs, 9-11-2026): de profielprijs is bekend, hoeken, koppelstukken en transport komen in de offerte.
+  const profielenCent = geldig && pp?.profiel != null ? pakket.profielen * pp.profiel : null
   const totaalCent = online && geldig ? productCent('winkel-plint', { profielen: pakket.profielen, binnenhoeken: pakket.binnenhoeken, buitenhoeken: pakket.buitenhoeken, koppelstukken: pakket.koppelstukken }, prijzen) : null
 
   const regels = [
@@ -171,7 +172,9 @@ export default function PlintCalculator() {
             <p style={{ margin: '12px 0 0', fontSize: 14.5, color: `${INKT}0.8)` }}>
               {totaalCent != null
                 ? <><strong style={{ fontSize: 18, color: '#1A1208' }}>{euroCent(totaalCent)}</strong> incl. btw, excl. verzending. Je rekent af in je mandje, met iDEAL.</>
-                : <>De prijs staat in de bevestiging die je na je bestelling krijgt. Je betaalt pas als je akkoord bent.</>}
+                : profielenCent != null
+                  ? <>Profielen: <strong style={{ fontSize: 18, color: '#1A1208' }}>{euroCent(profielenCent)}</strong> incl. btw ({euroCent(pp!.profiel! / 2)} per meter). Hoeken, koppelstukken en de levering komen in je offerte; je betaalt pas als je akkoord bent.</>
+                  : <>De prijs staat in de bevestiging die je na je bestelling krijgt. Je betaalt pas als je akkoord bent.</>}
             </p>
           </>
         ) : <p style={{ margin: 0, fontSize: 14.5, color: `${INKT}0.65)` }}>Vul de meters in of kies je ruimtes, dan staat hier wat je nodig hebt.</p>}

@@ -43,13 +43,18 @@ export const SCHARNIER = {
   slug: 'verdekt-scharnier-dx-38',
   naam: 'Verdekt scharnier DX-38 Design',
   merk: 'Basys',
-  kort: 'Verborgen scharnier voor kozijnloze en strakke binnendeuren. Draagt tot 80 kg per set, in drie richtingen verstelbaar.',
+  kort: 'Verborgen scharnier voor kozijnloze en strakke binnendeuren. Draagt tot 80 kg per set, in drie richtingen verstelbaar, met magnetische afdekplaatjes.',
   draagvermogenKg: 80,
   perDeur: 3,
+  /** Op voorraad (Thijs, 9-11-2026). RVS en aluminium-look op aanvraag. */
   kleuren: [
-    { id: 'vernikkeld', naam: 'Velours vernikkeld (RVS-look)' },
+    { id: 'vernikkeld', naam: 'Velours vernikkeld' },
     { id: 'zwart', naam: 'Zwart mat' },
+    { id: 'brons', naam: 'Donker brons' },
   ] as Variant[],
+  /** Vanaf welke deurdikte het past; ook in bestaande houten kozijnen. */
+  deurdikteMm: 38,
+  gewichtGram: 350,
 }
 
 
