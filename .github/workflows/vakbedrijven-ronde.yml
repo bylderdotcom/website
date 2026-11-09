@@ -1,0 +1,74 @@
+name: Gids vakbedrijven bijwerken (wekelijks)
+
+# Zet goedgekeurde aanmeldingen op de site en haalt bedrijven met opt_out (verwijderverzoek)
+# eraf. Uitleg en controles: kop van scripts/vakbedrijven_ronde.py.
+#
+# WAAROM DIT ZELF NAAR MAIN GAAT (besluit Daniel, 9-11-2026). Een verwijderverzoek moet binnen
+# vijf werkdagen weg zijn en een aanmelding hoort niet te blijven liggen. De ronde commit zelf,
+# maar alleen bij hooguit 25 nieuwe en 40 verwijderde profielen; meer = tak + issue.
+# Repo-secrets: SUPABASE_URL en SUPABASE_SERVICE_ROLE_KEY.
+
+on:
+  schedule:
+    - cron: "23 5 * * 3"   # woensdag 05:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: vakbedrijven-ronde
+  cancel-in-progress: false
+
+jobs:
+  ronde:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ronde
+        id: ronde
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::Repo-secrets SUPABASE_URL en SUPABASE_SERVICE_ROLE_KEY ontbreken"; exit 1
+          fi
+          python3 scripts/vakbedrijven_ronde.py
+          cat reports/vakbedrijven-ronde.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Naar main
+        if: steps.ronde.outputs.ok == 'ja'
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          git add data templates vercel.json ./*sitemap*.xml
+          if git diff --staged --quiet; then echo "Niets veranderd."; exit 0; fi
+          git commit -q -m "Gids vakbedrijven: ${{ steps.ronde.outputs.nieuw }} nieuw, ${{ steps.ronde.outputs.weg }} weg"
+          git pull -q --rebase origin main && git push -q origin HEAD:main
+
+      - name: Tak en issue als het te veel is
+        if: steps.ronde.outputs.ok == 'nee'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "bylderdotcom"
+          git config user.email "info@bylder.com"
+          TAK="vakbedrijven-ronde-$(date +%Y%m%d)"
+          git checkout -q -b "$TAK" && git add data templates vercel.json ./*sitemap*.xml
+          git commit -q -m "Gids vakbedrijven (niet naar main: meer dan de grens)" && git push -q origin "$TAK"
+          gh issue create --title "Gids vakbedrijven: niet gepubliceerd" \
+            --body "$(cat reports/vakbedrijven-ronde.md; printf '\n\nDe uitkomst staat op de tak `%s`.\nRun: %s' "$TAK" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}")"
+
+      - name: Issue voor aanmeldingen die niet geplaatst konden worden
+        if: steps.ronde.outputs.ok == 'ja' && steps.ronde.outputs.geweigerd != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "Gids vakbedrijven: aanmeldingen niet geplaatst ($(date +%d-%m-%Y))" --body-file reports/vakbedrijven-ronde.md

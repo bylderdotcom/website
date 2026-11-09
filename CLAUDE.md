@@ -265,6 +265,13 @@ een kwartier live" zonder `vercel ls website` te checken.
 - **Titels met de hand (3-11-2026):** de 25 projectpagina's met veel vertoningen en weinig klikken kregen een eigen
   titel en omschrijving in `data/clusters/nieuwbouw-project/titels.json` (gaat boven de generator, ook op handwerk; met
   de oude titel en doorklik erbij). Meting van 2 december: doorklik vergelijken met `oud`; werkt het, dan de formule aanpassen.
+- **De gids met vakbedrijven heeft een wekelijkse ronde die zelf naar main mag (besluit Daniel, 9-11-2026).**
+  Aanmelden via `/bedrijf-aanmelden/` (app `/api/bedrijf-aanmelding`, `feature_requests` segment `vermelding`); Daniel keurt
+  goed in app `/admin/aanmeldingen` ("Zet in de gids" = rij in `vakbedrijven`, bron `aanmelding`). `vakbedrijven-ronde.yml`
+  (woensdag) zet die profielen op de site (`scripts/profiel_toevoegen.py`, sjabloon `content.bedrijf.aanmelding.html`,
+  noindex tot geclaimd) en haalt elk bedrijf met `opt_out` eraf (`scripts/profiel_verwijderen.py`, met 301 naar de
+  plaatspagina). Alleen bij hooguit 25 nieuw en 40 weg; anders tak + issue. App-cron `/api/cron/gids-online` mailt het
+  bedrijf zodra het profiel online staat. Repo-secrets: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
 - **Ook de maandelijkse ronde voor woonwinkels uit OpenStreetMap mag zelf naar main (besluit Daniel,
   23-10-2026).** `osm-winkels.yml` ververst `data/winkels-osm.json`, alleen als er minstens 1.500
   winkels zijn en het aantal niet meer dan 20% daalt; anders een tak plus een issue. Google Places
