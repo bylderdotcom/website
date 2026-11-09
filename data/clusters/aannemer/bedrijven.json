@@ -37585,52 +37585,6 @@
   "contact_row": "default",
   "template": "default"
  },
- "bedrijf/boerkamp-bouw-b-v-ct6pli": {
-  "name": "Boerkamp Bouw B.V.",
-  "city": "Hengelo",
-  "rating_disp": "5,0",
-  "reviews": "19",
-  "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Boerkamp%20Bouw%20B.V.&amp;query_place_id=ChIJjbuZJugRuEcR4j4l_CT6PLI",
-  "website": "https://www.boerkampbouw.nl/",
-  "tel": "0747002155",
-  "tel_disp": "074 700 2155",
-  "city_slug": "hengelo",
-  "siblings": [
-   {
-    "href": "/aannemer/bedrijf/prefast-y2wwbi/",
-    "name": "Prefast",
-    "rating": "4,5"
-   },
-   {
-    "href": "/aannemer/bedrijf/mulder-aannemersbedrijf-bv-hlb5_4/",
-    "name": "Mulder Aannemersbedrijf BV",
-    "rating": "4,8"
-   },
-   {
-    "href": "/aannemer/bedrijf/dura-vermeer-bouw-en-vastgoed-hengelo-caxcri/",
-    "name": "Dura Vermeer Bouw en Vastgoed Hengelo",
-    "rating": "4,4"
-   },
-   {
-    "href": "/aannemer/bedrijf/vossebeld-bouw-0b3iyc/",
-    "name": "Vossebeld Bouw",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
-    "name": "Bouwbedrijf De Jong Twente B.V.",
-    "rating": "4,5"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwbedrijf-markslag-avgu9s/",
-    "name": "Bouwbedrijf Markslag",
-    "rating": "4,3"
-   }
-  ],
-  "rating_row": "default",
-  "contact_row": "default",
-  "template": "default"
- },
  "bedrijf/boezewinkel-mulder-bouw-w780nk": {
   "name": "Boezewinkel &amp; Mulder Bouw",
   "city": "Brummen",
@@ -47838,11 +47792,6 @@
     "href": "/aannemer/bedrijf/bouwbedrijf-markslag-avgu9s/",
     "name": "Bouwbedrijf Markslag",
     "rating": "4,3"
-   },
-   {
-    "href": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -56763,11 +56712,6 @@
     "href": "/aannemer/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -88281,11 +88225,6 @@
     "href": "/aannemer/bedrijf/bouwbedrijf-markslag-avgu9s/",
     "name": "Bouwbedrijf Markslag",
     "rating": "4,3"
-   },
-   {
-    "href": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -129714,11 +129653,6 @@
     "href": "/aannemer/bedrijf/bouwbedrijf-markslag-avgu9s/",
     "name": "Bouwbedrijf Markslag",
     "rating": "4,3"
-   },
-   {
-    "href": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -137039,11 +136973,6 @@
     "href": "/aannemer/bedrijf/bouwbedrijf-markslag-avgu9s/",
     "name": "Bouwbedrijf Markslag",
     "rating": "4,3"
-   },
-   {
-    "href": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -168556,11 +168485,6 @@
     "href": "/aannemer/bedrijf/bouwbedrijf-markslag-avgu9s/",
     "name": "Bouwbedrijf Markslag",
     "rating": "4,3"
-   },
-   {
-    "href": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",

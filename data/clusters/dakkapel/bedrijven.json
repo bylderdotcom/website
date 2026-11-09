@@ -1794,11 +1794,6 @@
     "rating": "4,5"
    },
    {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
-   },
-   {
     "href": "/dakkapel/bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig/",
     "name": "SterckBouw | Kunststof kozijnen, gevelbekleding, deuren en meer",
     "rating": "4,6"
@@ -5550,52 +5545,6 @@
   "contact_row": "v2",
   "template": "default"
  },
- "bedrijf/boerkamp-bouw-b-v-ct6pli": {
-  "name": "Boerkamp Bouw B.V.",
-  "city": "Hengelo",
-  "rating_disp": "5,0",
-  "reviews": "19",
-  "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Boerkamp%20Bouw%20B.V.&amp;query_place_id=ChIJjbuZJugRuEcR4j4l_CT6PLI",
-  "website": "https://www.boerkampbouw.nl/",
-  "tel": "0747002155",
-  "tel_disp": "074 700 2155",
-  "city_slug": "hengelo",
-  "siblings": [
-   {
-    "href": "/dakkapel/bedrijf/lerna-laez4w/",
-    "name": "Lerna",
-    "rating": "5,0"
-   },
-   {
-    "href": "/dakkapel/bedrijf/spitskozijn-b-v-t_v4qm/",
-    "name": "Spitskozijn B.V.",
-    "rating": "5,0"
-   },
-   {
-    "href": "/dakkapel/bedrijf/adam-service-twente-l0fgmg/",
-    "name": "Adam Service Twente",
-    "rating": "5,0"
-   },
-   {
-    "href": "/dakkapel/bedrijf/vmk-kozijnen-tkhb1s/",
-    "name": "VMK Kozijnen",
-    "rating": "4,4"
-   },
-   {
-    "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
-    "name": "Bouwbedrijf De Jong Twente B.V.",
-    "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig/",
-    "name": "SterckBouw | Kunststof kozijnen, gevelbekleding, deuren en meer",
-    "rating": "4,6"
-   }
-  ],
-  "rating_row": "default",
-  "contact_row": "default",
-  "template": "default"
- },
  "bedrijf/bogaard-bouw-timmerwerken-jbm768": {
   "name": "Bogaard Bouw &amp; Timmerwerken",
   "city": "Ankeveen",
@@ -6947,11 +6896,6 @@
     "href": "/dakkapel/bedrijf/vmk-kozijnen-tkhb1s/",
     "name": "VMK Kozijnen",
     "rating": "4,4"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    },
    {
     "href": "/dakkapel/bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig/",
@@ -12986,11 +12930,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -21728,11 +21667,6 @@
     "rating": "5,0"
    },
    {
-    "href": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im/",
-    "name": "Jacobs daken Helmond",
-    "rating": "4,9"
-   },
-   {
     "href": "/dakkapel/bedrijf/van-eupen-afbouw-en-montage-bedrijf-hoxsvg/",
     "name": "Van Eupen Afbouw en Montage Bedrijf",
     "rating": "4,0"
@@ -23908,11 +23842,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -29471,11 +29400,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -30093,47 +30017,6 @@
   "rating_row": "default",
   "contact_row": "v2",
   "template": "v2"
- },
- "bedrijf/jacobs-daken-helmond-mug8im": {
-  "name": "Jacobs daken Helmond",
-  "city": "Helmond",
-  "rating_disp": "4,9",
-  "reviews": "8",
-  "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Jacobs%20daken%20Helmond&amp;query_place_id=ChIJE3y6eSkhx0cRfry7uMuG8IM",
-  "website": "http://jacobsdaken.nl/",
-  "tel": "0617378366",
-  "tel_disp": "06 17378366",
-  "city_slug": "helmond",
-  "siblings": [
-   {
-    "href": "/dakkapel/bedrijf/de-jongh-dak-en-bouwservice-bv-2d8qf0/",
-    "name": "De Jongh Dak en Bouwservice bv",
-    "rating": "4,9"
-   },
-   {
-    "href": "/dakkapel/bedrijf/van-baal-kozijntechniek-b-v-4gcxiw/",
-    "name": "van Baal Kozijntechniek B.V",
-    "rating": "4,8"
-   },
-   {
-    "href": "/dakkapel/bedrijf/simons-knipping-jur5t4/",
-    "name": "Simons Knipping",
-    "rating": "4,3"
-   },
-   {
-    "href": "/dakkapel/bedrijf/van-de-klundert-bouw-8b-ore/",
-    "name": "van de Klundert Bouw",
-    "rating": "5,0"
-   },
-   {
-    "href": "/dakkapel/bedrijf/van-eupen-afbouw-en-montage-bedrijf-hoxsvg/",
-    "name": "Van Eupen Afbouw en Montage Bedrijf",
-    "rating": "4,0"
-   }
-  ],
-  "rating_row": "default",
-  "contact_row": "default",
-  "template": "default"
  },
  "bedrijf/jago-bouw-hnnuww": {
   "name": "Jago Bouw",
@@ -32340,11 +32223,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -34280,11 +34158,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    },
    {
     "href": "/dakkapel/bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig/",
@@ -36528,11 +36401,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -43334,11 +43202,6 @@
     "rating": "5,0"
    },
    {
-    "href": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im/",
-    "name": "Jacobs daken Helmond",
-    "rating": "4,9"
-   },
-   {
     "href": "/dakkapel/bedrijf/van-eupen-afbouw-en-montage-bedrijf-hoxsvg/",
     "name": "Van Eupen Afbouw en Montage Bedrijf",
     "rating": "4,0"
@@ -43974,11 +43837,6 @@
     "rating": "4,5"
    },
    {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
-   },
-   {
     "href": "/dakkapel/bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig/",
     "name": "SterckBouw | Kunststof kozijnen, gevelbekleding, deuren en meer",
     "rating": "4,6"
@@ -44355,11 +44213,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -45418,11 +45271,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -46755,11 +46603,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -47825,11 +47668,6 @@
     "rating": "5,0"
    },
    {
-    "href": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im/",
-    "name": "Jacobs daken Helmond",
-    "rating": "4,9"
-   },
-   {
     "href": "/dakkapel/bedrijf/van-eupen-afbouw-en-montage-bedrijf-hoxsvg/",
     "name": "Van Eupen Afbouw en Montage Bedrijf",
     "rating": "4,0"
@@ -47950,11 +47788,6 @@
     "href": "/dakkapel/bedrijf/simons-knipping-jur5t4/",
     "name": "Simons Knipping",
     "rating": "4,3"
-   },
-   {
-    "href": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im/",
-    "name": "Jacobs daken Helmond",
-    "rating": "4,9"
    },
    {
     "href": "/dakkapel/bedrijf/van-eupen-afbouw-en-montage-bedrijf-hoxsvg/",
@@ -48822,11 +48655,6 @@
     "href": "/dakkapel/bedrijf/van-de-klundert-bouw-8b-ore/",
     "name": "van de Klundert Bouw",
     "rating": "5,0"
-   },
-   {
-    "href": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im/",
-    "name": "Jacobs daken Helmond",
-    "rating": "4,9"
    }
   ],
   "rating_row": "default",
@@ -50689,11 +50517,6 @@
     "href": "/dakkapel/bedrijf/bouwbedrijf-de-jong-twente-b-v-wq4p64/",
     "name": "Bouwbedrijf De Jong Twente B.V.",
     "rating": "4,5"
-   },
-   {
-    "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-    "name": "Boerkamp Bouw B.V.",
-    "rating": "5,0"
    },
    {
     "href": "/dakkapel/bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig/",
