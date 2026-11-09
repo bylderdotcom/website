@@ -13,7 +13,7 @@ import os, html, json, re, unicodedata, sys, urllib.parse
 BASE = "https://www.bylder.com"
 SIGNUP = "https://app.bylder.com/registreer"
 VOORDELEN = "/voor-vakbedrijven"
-INTAKE = "mailto:info@bylder.com?subject=Mijn%20bedrijf%20aanmelden%20op%20Bylder&body=Bedrijfsnaam%3A%0APlaats%3A%0AGoogle-%2FWerkspot-%2Fwebsite-link%3A%0A"
+INTAKE = "/bedrijf-aanmelden/"
 OFFERTE_HUB = "/offerte-check"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 MIN_PER_STAD = 3
@@ -1131,7 +1131,7 @@ def build_voor_vakbedrijven(totaal, plaatsen):
     qa = [
         ("Wat kost een profiel op Bylder?", "Vermelding is gratis &mdash; veel bedrijven staan er al in. Je profiel <strong>activeren</strong> kost &euro;79 per jaar. Geen leadkosten en geen veiling."),
         ("Wat is het verschil met Werkspot of een leadplatform?", "Bij leadplatforms betaal je per lead of per maand en bied je mee op dezelfde aanvraag. Bij Bylder betaal je &eacute;&eacute;n keer &euro;79 voor een geactiveerd profiel &mdash; en wij tonen je neutraal, met je beoordelingen uit meerdere bronnen naast elkaar."),
-        ("Hoe meld ik mijn bedrijf aan?", "Je deelt je Google-, Werkspot- of websitelink en wij stellen je profiel samen &mdash; geen formulieren. Daarna activeer je het en ben je vindbaar voor kopers in jouw plaats."),
+        ("Hoe meld ik mijn bedrijf aan?", "Je vult een kort formulier in met je Google-, Werkspot- of websitelink, en wij stellen je profiel samen. Daarna activeer je het en ben je vindbaar voor kopers in jouw plaats."),
         ("Voor welke vakbedrijven is dit?", "We starten met stukadoors en schilders en breiden uit naar tegelzetters, installateurs, dakdekkers en alle andere bouw- en afbouwvakken."),
         ("Krijg ik leads?", "Je wordt gekoppeld aan nieuwbouw- en verbouwkopers in jouw regio op het moment dat zij jouw vak plannen &mdash; via hun project in de Bylder-app. Geen koude leads, geen veiling."),
     ]
@@ -1150,7 +1150,7 @@ def build_voor_vakbedrijven(totaal, plaatsen):
     vgrid = "".join(f'<div class="card"><div style="width:28px;height:4px;border-radius:2px;background:#3D5A3E;margin-bottom:12px;"></div>'
         f'<div style="font-weight:700;font-size:15px;color:#1A1208;margin-bottom:4px;">{t}</div>'
         f'<div style="font-size:13.5px;color:rgba(61,46,30,0.66);line-height:1.6;">{d}</div></div>' for t, d in voordelen)
-    stappen = [("1", "Deel je link", "Stuur je Google-, Werkspot- of websitelink &mdash; geen formulieren."),
+    stappen = [("1", "Deel je link", "Vul het korte formulier in met je Google-, Werkspot- of websitelink."),
                ("2", "Wij vullen je profiel", "Bylder stelt je profiel samen met je gegevens en gebundelde reviews."),
                ("3", "Activeer voor &euro;79", "Eén bedrag per jaar en je bent live, hoger vindbaar en gekoppeld aan kopers.")]
     sgrid = "".join(f'<div style="flex:1;min-width:220px;"><div style="width:38px;height:38px;border-radius:10px;background:#3D5A3E;color:#F5F0E8;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:\'Space Mono\',monospace;">{n}</div>'
