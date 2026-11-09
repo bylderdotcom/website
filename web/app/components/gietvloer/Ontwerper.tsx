@@ -24,7 +24,7 @@ import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, 
 import { metRef } from '../aanbreng'
 import {
   KLEUREN, TYPES, VOOR_ALLE, MAX_STALEN, VOORLOPIG, NIET_GIET, kleurOp, typeOp, m2Van, isLicht, besteKleuren,
-  kleurenVoor, MIN_M2, KLEUR_VOORBEHOUD,
+  kleurenVoor, kleurInType, MIN_M2, KLEUR_VOORBEHOUD,
   type Analyse, type Keuze, type GekozenRuimte, type Match, type TypeId,
 } from './gegevens'
 
@@ -332,7 +332,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
   const m2 = m2Van(eff)
   const handLijst = handmatig ?? eff.ruimtes ?? HANDMATIG
   const foto = voorbeeld ?? w?.foto ?? null
-  const matches = w?.matches?.length ? w.matches : kleur ? besteKleuren(kleur.hex).slice(0, 3) : []
+  const matches = w?.matches?.length ? w.matches : kleur ? besteKleuren(kleur.hex, 3, type?.id).slice(0, 3) : []
 
   const wisselTekening = (sl: string) => {
     meet('ruimtes')
@@ -515,7 +515,7 @@ export default function Ontwerper({ api, modus, woning: woningProp, startGiet, n
         </div>
         <div className="gv-typen" role="radiogroup" aria-label="Type gietvloer">
           {TYPES.map(t => (
-            <button key={t.id} type="button" role="radio" aria-checked={keuze.type === t.id} className="gv-type" onClick={() => { meet('type'); wijzig({ type: t.id as TypeId }) }}>
+            <button key={t.id} type="button" role="radio" aria-checked={keuze.type === t.id} className="gv-type" onClick={() => { meet('type'); const nieuw = kleurInType(keuze.kleur, t.id as TypeId); wijzig({ type: t.id as TypeId, ...(nieuw !== undefined ? { kleur: nieuw } : {}) }) }}>
               <span className="gv-type-kop">
                 <strong>{t.naam}</strong>
                 {a?.type === t.id && <em>past bij je foto</em>}
