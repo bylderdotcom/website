@@ -38,7 +38,7 @@ export const KLEUREN: Kleur[] = [
   { id: 'zwart', naam: 'Diepzwart', hex: '#262524' },
   // Bio Fine: de 20 kleuren van Dr. Schutz (mail Lars 4-11-2026, foto's 'Bio Fine webversie').
   // De hexcode is het gemiddelde van het midden van de foto, alleen voor het vergelijken met een
-  // inspiratiefoto. Bio Cement, Bio Lava en Bio Concrete volgen; tot dan de voorlopige kaart hierboven.
+  // inspiratiefoto. De voorlopige kaart hierboven blijft alleen als vangnet voor een systeem zonder eigen kleuren.
   { id: 'fine-balos', naam: 'Balos', hex: '#AB9985', type: 'fine', foto: '/img/gietvloer/bio-fine/balos.webp' },
   { id: 'fine-bassa', naam: 'Bassa', hex: '#A18D76', type: 'fine', foto: '/img/gietvloer/bio-fine/bassa.webp' },
   { id: 'fine-bildenberg', naam: 'Bildenberg', hex: '#A3998F', type: 'fine', foto: '/img/gietvloer/bio-fine/bildenberg.webp' },
@@ -59,6 +59,61 @@ export const KLEUREN: Kleur[] = [
   { id: 'fine-serra', naam: 'Serra', hex: '#B6A899', type: 'fine', foto: '/img/gietvloer/bio-fine/serra.webp' },
   { id: 'fine-shard', naam: 'Shard', hex: '#9E9185', type: 'fine', foto: '/img/gietvloer/bio-fine/shard.webp' },
   { id: 'fine-stockholm', naam: 'Stockholm', hex: '#A19889', type: 'fine', foto: '/img/gietvloer/bio-fine/stockholm.webp' },
+  // Bio Cement, Bio Lava en Bio Concrete: foto's 'webversie' van Dr. Schutz (9-11-2026), zelfde werkwijze.
+  // Bio Cement
+  { id: 'cement-balos', naam: 'Balos', hex: '#8F8170', type: 'cement', foto: '/img/gietvloer/bio-cement/balos.webp' },
+  { id: 'cement-bassa', naam: 'Bassa', hex: '#8E7C67', type: 'cement', foto: '/img/gietvloer/bio-cement/bassa.webp' },
+  { id: 'cement-bildenberg', naam: 'Bildenberg', hex: '#97928B', type: 'cement', foto: '/img/gietvloer/bio-cement/bildenberg.webp' },
+  { id: 'cement-bolton', naam: 'Bolton', hex: '#9F9A91', type: 'cement', foto: '/img/gietvloer/bio-cement/bolton.webp' },
+  { id: 'cement-colmar', naam: 'Colmar', hex: '#98928C', type: 'cement', foto: '/img/gietvloer/bio-cement/colmar.webp' },
+  { id: 'cement-hikari', naam: 'Hikari', hex: '#9B8B78', type: 'cement', foto: '/img/gietvloer/bio-cement/hikari.webp' },
+  { id: 'cement-juvelen', naam: 'Juvelen', hex: '#908479', type: 'cement', foto: '/img/gietvloer/bio-cement/juvelen.webp' },
+  { id: 'cement-kiri', naam: 'Kiri', hex: '#A89787', type: 'cement', foto: '/img/gietvloer/bio-cement/kiri.webp' },
+  { id: 'cement-kuggen', naam: 'Kuggen', hex: '#A1948C', type: 'cement', foto: '/img/gietvloer/bio-cement/kuggen.webp' },
+  { id: 'cement-olivera', naam: 'Olivera', hex: '#958B80', type: 'cement', foto: '/img/gietvloer/bio-cement/olivera.webp' },
+  { id: 'cement-orla', naam: 'Orla', hex: '#A09385', type: 'cement', foto: '/img/gietvloer/bio-cement/orla.webp' },
+  { id: 'cement-osaka', naam: 'Osaka', hex: '#A3937D', type: 'cement', foto: '/img/gietvloer/bio-cement/osaka.webp' },
+  { id: 'cement-oxford', naam: 'Oxford', hex: '#938372', type: 'cement', foto: '/img/gietvloer/bio-cement/oxford.webp' },
+  { id: 'cement-pada', naam: 'Pada', hex: '#7E7771', type: 'cement', foto: '/img/gietvloer/bio-cement/pada.webp' },
+  { id: 'cement-palmleaf', naam: 'Palmleaf', hex: '#88705C', type: 'cement', foto: '/img/gietvloer/bio-cement/palmleaf.webp' },
+  { id: 'cement-pisa', naam: 'Pisa', hex: '#989088', type: 'cement', foto: '/img/gietvloer/bio-cement/pisa.webp' },
+  { id: 'cement-preston', naam: 'Preston', hex: '#A0948B', type: 'cement', foto: '/img/gietvloer/bio-cement/preston.webp' },
+  { id: 'cement-serra', naam: 'Serra', hex: '#A59E92', type: 'cement', foto: '/img/gietvloer/bio-cement/serra.webp' },
+  { id: 'cement-shard', naam: 'Shard', hex: '#9A9187', type: 'cement', foto: '/img/gietvloer/bio-cement/shard.webp' },
+  { id: 'cement-stockholm', naam: 'Stockholm', hex: '#918D83', type: 'cement', foto: '/img/gietvloer/bio-cement/stockholm.webp' },
+  // Bio Lava
+  { id: 'lava-balos', naam: 'Balos', hex: '#948473', type: 'lava', foto: '/img/gietvloer/bio-lava/balos.webp' },
+  { id: 'lava-bassa', naam: 'Bassa', hex: '#9C8A74', type: 'lava', foto: '/img/gietvloer/bio-lava/bassa.webp' },
+  { id: 'lava-bildenberg', naam: 'Bildenberg', hex: '#A1988E', type: 'lava', foto: '/img/gietvloer/bio-lava/bildenberg.webp' },
+  { id: 'lava-bolton', naam: 'Bolton', hex: '#99938A', type: 'lava', foto: '/img/gietvloer/bio-lava/bolton.webp' },
+  { id: 'lava-colmar', naam: 'Colmar', hex: '#A49D95', type: 'lava', foto: '/img/gietvloer/bio-lava/colmar.webp' },
+  { id: 'lava-hikari', naam: 'Hikari', hex: '#A79782', type: 'lava', foto: '/img/gietvloer/bio-lava/hikari.webp' },
+  { id: 'lava-juvelen', naam: 'Juvelen', hex: '#9B8E82', type: 'lava', foto: '/img/gietvloer/bio-lava/juvelen.webp' },
+  { id: 'lava-kiri', naam: 'Kiri', hex: '#9C8A78', type: 'lava', foto: '/img/gietvloer/bio-lava/kiri.webp' },
+  { id: 'lava-kuggen', naam: 'Kuggen', hex: '#ADA098', type: 'lava', foto: '/img/gietvloer/bio-lava/kuggen.webp' },
+  { id: 'lava-olivera', naam: 'Olivera', hex: '#9B9182', type: 'lava', foto: '/img/gietvloer/bio-lava/olivera.webp' },
+  { id: 'lava-orla', naam: 'Orla', hex: '#A19484', type: 'lava', foto: '/img/gietvloer/bio-lava/orla.webp' },
+  { id: 'lava-osaka', naam: 'Osaka', hex: '#B09B7E', type: 'lava', foto: '/img/gietvloer/bio-lava/osaka.webp' },
+  { id: 'lava-oxford', naam: 'Oxford', hex: '#958776', type: 'lava', foto: '/img/gietvloer/bio-lava/oxford.webp' },
+  { id: 'lava-pada', naam: 'Pada', hex: '#948A83', type: 'lava', foto: '/img/gietvloer/bio-lava/pada.webp' },
+  { id: 'lava-palmleaf', naam: 'Palmleaf', hex: '#9A806B', type: 'lava', foto: '/img/gietvloer/bio-lava/palmleaf.webp' },
+  { id: 'lava-pisa', naam: 'Pisa', hex: '#9B928A', type: 'lava', foto: '/img/gietvloer/bio-lava/pisa.webp' },
+  { id: 'lava-preston', naam: 'Preston', hex: '#9E9187', type: 'lava', foto: '/img/gietvloer/bio-lava/preston.webp' },
+  { id: 'lava-serra', naam: 'Serra', hex: '#9A9082', type: 'lava', foto: '/img/gietvloer/bio-lava/serra.webp' },
+  { id: 'lava-shard', naam: 'Shard', hex: '#958B80', type: 'lava', foto: '/img/gietvloer/bio-lava/shard.webp' },
+  { id: 'lava-stockholm', naam: 'Stockholm', hex: '#999386', type: 'lava', foto: '/img/gietvloer/bio-lava/stockholm.webp' },
+  // Bio Concrete
+  { id: 'concrete-bassa', naam: 'Bassa', hex: '#887B6B', type: 'concrete', foto: '/img/gietvloer/bio-concrete/bassa.webp' },
+  { id: 'concrete-bildenberg', naam: 'Bildenberg', hex: '#96918C', type: 'concrete', foto: '/img/gietvloer/bio-concrete/bildenberg.webp' },
+  { id: 'concrete-hikari', naam: 'Hikari', hex: '#9F8F7C', type: 'concrete', foto: '/img/gietvloer/bio-concrete/hikari.webp' },
+  { id: 'concrete-juvelen', naam: 'Juvelen', hex: '#877D75', type: 'concrete', foto: '/img/gietvloer/bio-concrete/juvelen.webp' },
+  { id: 'concrete-olivera', naam: 'Olivera', hex: '#8C8479', type: 'concrete', foto: '/img/gietvloer/bio-concrete/olivera.webp' },
+  { id: 'concrete-orla', naam: 'Orla', hex: '#9E938A', type: 'concrete', foto: '/img/gietvloer/bio-concrete/orla.webp' },
+  { id: 'concrete-osaka', naam: 'Osaka', hex: '#9F8E78', type: 'concrete', foto: '/img/gietvloer/bio-concrete/osaka.webp' },
+  { id: 'concrete-oxford', naam: 'Oxford', hex: '#948879', type: 'concrete', foto: '/img/gietvloer/bio-concrete/oxford.webp' },
+  { id: 'concrete-serra', naam: 'Serra', hex: '#9B9388', type: 'concrete', foto: '/img/gietvloer/bio-concrete/serra.webp' },
+  { id: 'concrete-shard', naam: 'Shard', hex: '#918A83', type: 'concrete', foto: '/img/gietvloer/bio-concrete/shard.webp' },
+  { id: 'concrete-stockholm', naam: 'Stockholm', hex: '#87837B', type: 'concrete', foto: '/img/gietvloer/bio-concrete/stockholm.webp' },
 ]
 export const kleurOp = (id: string | null | undefined) => KLEUREN.find(k => k.id === id) ?? null
 
@@ -85,7 +140,7 @@ export type VloerType = {
 // voor vloerverwarming, en 20/20/20/10 kleuren. Bio Fine is technisch de fijne eindlaag op
 // Bio Cement; dat is informatie voor de verwerker, de koper hoort: een heel egale
 // lavasteenvloer met een zeer fijne korrel. Prijzen (mail Lars 4-11-2026): Fine, Cement en Lava
-// € 80–130 per m², Concrete € 100–150, minimaal 35 m². Kleuren met foto: Bio Fine; de rest volgt.
+// € 80–130 per m², Concrete € 100–150, minimaal 35 m². Kleuren met foto van alle vier (Concrete: 11 foto's).
 const VVW = 'Uitstekend geschikt voor vloerverwarming: de vloer ligt zonder lucht op de ondergrond, dus de warmte komt er ongehinderd door.'
 export const TYPES: VloerType[] = [
   {
@@ -114,7 +169,7 @@ export const TYPES: VloerType[] = [
     voor: ['Volledig met diamant geslepen, daardoor extreem glad', 'Het makkelijkst schoon te houden van de vier',
       'Oogt als echt beton of natuursteen', 'De enige van de vier die ook op de wanden kan'],
     tegen: ['Een stap duurder door het extra slijpwerk en de extra arbeid', 'De drukste tekening: je moet ervan houden'],
-    tekening: 4, schoon: 5, prijsNiveau: '€€€', prijs: [100, 150], kleuren: 10, wand: true,
+    tekening: 4, schoon: 5, prijsNiveau: '€€€', prijs: [100, 150], kleuren: 11, wand: true,
     vloerverwarming: VVW, wolk: 0.95,
   },
 ]
@@ -127,6 +182,15 @@ export const MIN_M2 = 35
 export function kleurenVoor(type: TypeId | null | undefined): Kleur[] {
   const eigen = KLEUREN.filter(k => k.type === (type ?? 'fine'))
   return eigen.length ? eigen : KLEUREN.filter(k => !k.type)
+}
+
+/** Wisselt de koper van systeem: dezelfde kleurnaam in het nieuwe systeem, anders de dichtstbijzijnde. */
+export function kleurInType(kleurId: string | null | undefined, type: TypeId): string | undefined {
+  const k = kleurOp(kleurId)
+  if (!k) return undefined
+  if (k.type === type || (!k.type && !KLEUREN.some(x => x.type === type))) return k.id
+  const zelfde = KLEUREN.find(x => x.type === type && x.naam === k.naam)
+  return zelfde?.id ?? besteKleuren(k.hex, 1, type)[0]?.kleur.id
 }
 
 /** Tekst bij de kleuren en afbeeldingen, op verzoek van Dr. Schutz (mail Lars 4-11-2026). */
@@ -258,9 +322,12 @@ export type Match = { kleur: Kleur; afstand: number; oordeel: string }
 const oordeel = (d: number) => (d < 3 ? 'Vrijwel gelijk' : d < 6 ? 'Dichtbij' : d < 12 ? 'Zelfde richting' : 'Verder weg')
 
 /** De drie kleuren uit de kaart die het dichtst bij de vloer op de foto liggen. */
-export function besteKleuren(hex: string, n = 3): Match[] {
+export function besteKleuren(hex: string, n = 3, type?: TypeId | null): Match[] {
   if (!/^#[0-9a-f]{6}$/i.test(hex)) return []
-  return KLEUREN.map(k => ({ kleur: k, afstand: Math.round(kleurAfstand(hex, k.hex) * 10) / 10 }))
+  // Binnen het gekozen systeem; zonder systeem over alle echte kleuren (met foto).
+  const echt = KLEUREN.filter(k => k.type)
+  const lijst = type ? kleurenVoor(type) : echt.length ? echt : KLEUREN
+  return lijst.map(k => ({ kleur: k, afstand: Math.round(kleurAfstand(hex, k.hex) * 10) / 10 }))
     .sort((a, b) => a.afstand - b.afstand).slice(0, n)
     .map(m => ({ ...m, oordeel: oordeel(m.afstand) }))
 }
