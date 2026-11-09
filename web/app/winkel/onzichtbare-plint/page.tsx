@@ -27,6 +27,8 @@ const VRAGEN = [
   { v: 'Light 46 of Light 60?', a: 'Het verschil is de hoogte van de plint: 46 of 60 mm. Een lage plint valt minder op; een hogere beschermt de wand beter tegen stofzuiger en stoelpoten. Het profiel is in beide gevallen 15 mm diep.' },
   { v: 'Steen of gipswand?', a: 'Er is een profiel voor steen, beton of kalkzandsteen en een voor gipswanden (droogbouw). Kies wat bij je wanden past. Heb je beide, bestel dan per wandtype.' },
   { v: 'Hoe wordt het gemonteerd?', a: 'Profielen op maat zagen, hoeken erop, montageschuim op de achterkant, uitlijnen op hoogte en vastzetten, vóór het stucwerk. Na het leggen van de vloer gaat de folie eraf en klik je de plint erin. Het werk is voor een stukadoor of timmerman.' },
+  { v: 'Wat kost de onzichtbare plint?', a: 'Het profiel kost € 18,15 per meter inclusief btw (€ 36,30 per profiel van 2 m). Hoeken, koppelstukken en de levering zetten we in je offerte, op basis van je pakket. Je betaalt pas als je akkoord bent.' },
+  { v: 'Zit de plint zelf erbij?', a: 'Nee. Je koopt het aluminium profiel. De plint die erin valt (hout of mdf, tot 9 mm dik) kies je zelf, bijvoorbeeld in de kleur van je vloer of je wand.' },
   { v: 'Kan er verlichting in?', a: 'Ja. In het profiel past een ledstrip voor indirect licht langs de vloer.' },
   { v: 'Hoe klopt de berekening?', a: 'Uit je plattegrond nemen we per ruimte de wand rond de vloer, min de deuropeningen, plus 7% zaagverlies. Profielen zijn 2 meter lang. Laat de maten voor het bestellen nog even nameten door wie het monteert.' },
   { v: 'Wie is de verkoper?', a: 'Bylder. Je bestelling en de betaling lopen via ons; de leverancier levert rechtstreeks bij je af.' },

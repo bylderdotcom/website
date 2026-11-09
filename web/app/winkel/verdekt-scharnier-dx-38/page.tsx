@@ -22,8 +22,10 @@ export const metadata: Metadata = {
 
 const VRAGEN = [
   { v: 'Hoeveel scharnieren per deur?', a: `${SCHARNIER.perDeur}. Een set van drie draagt deuren tot ${SCHARNIER.draagvermogenKg} kg, ook zware en kamerhoge deuren.` },
-  { v: 'Past het in elk kozijn?', a: 'Het scharnier wordt verdekt in deur en kozijn gefreesd. Kozijnloze kozijnen worden daarvoor voorgefreesd geleverd. Bij een bestaand kozijn bepaalt je timmerman of de uitsparing past; zet het in de toelichting, dan kijken we mee.' },
-  { v: 'Wat doen de afdekplaatjes?', a: 'Ze klikken magnetisch over de bevestiging. De schroeven zijn dan niet meer te zien, ook niet als de deur openstaat.' },
+  { v: 'Past het in elk kozijn?', a: `Het past op deuren vanaf ${SCHARNIER.deurdikteMm} mm dik, ook in een bestaand houten kozijn. Het scharnier wordt verdekt in deur en kozijn gefreesd; kozijnloze kozijnen worden voorgefreesd geleverd. Freest je timmerman zelf, dan is er een freesmal bij te bestellen.` },
+  { v: 'Wat kost het?', a: 'De prijs per scharnier staat bij Bestellen, inclusief btw en de magnetische afdekplaatjes. Per deur heb je er drie nodig.' },
+  { v: 'Zitten de afdekplaatjes erbij?', a: 'Ja. Ze klikken magnetisch over de bevestiging. De schroeven zijn dan niet meer te zien, ook niet als de deur openstaat.' },
+  { v: 'Welke kleuren zijn er?', a: 'Velours vernikkeld, zwart mat en donker brons liggen op voorraad. RVS en aluminium-look zijn er op aanvraag.' },
   { v: 'Moet het na een tijd opnieuw worden afgesteld?', a: 'Nee. Je stelt de deur bij de montage in drie richtingen af, en het scharnier houdt die stand.' },
   { v: 'Wie is de verkoper?', a: 'Bylder. Je bestelling en de betaling lopen via ons; de leverancier levert rechtstreeks bij je af.' },
 ]
@@ -32,7 +34,9 @@ export default function Pagina() {
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Product', name: `${SCHARNIER.merk} ${SCHARNIER.naam}`, brand: { '@type': 'Brand', name: SCHARNIER.merk },
       description: SCHARNIER.kort, url: URL, image: ['https://www.bylder.com/img/winkel/dx38.webp', 'https://www.bylder.com/img/winkel/dx38-afdekplaat.webp'],
-      category: 'Deurbeslag', seller: { '@type': 'Organization', name: 'Bylder' } },
+      category: 'Deurbeslag', seller: { '@type': 'Organization', name: 'Bylder' },
+      offers: { '@type': 'Offer', price: '50.22', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: URL,
+        seller: { '@type': 'Organization', name: 'Bylder' } } },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: VRAGEN.map(q => ({ '@type': 'Question', name: q.v, acceptedAnswer: { '@type': 'Answer', text: q.a } })) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bylder.com/' },
@@ -49,7 +53,7 @@ export default function Pagina() {
           <p style={S.oog}>Winkel · {SCHARNIER.merk}</p>
           <h1 style={S.h1}>Verdekt scharnier DX-38 Design. Je ziet het niet, je merkt het niet.</h1>
           <p style={S.lead}>{SCHARNIER.kort} Gemaakt in Duitsland van massief en roestvast staal.</p>
-          {[`Draagt tot ${SCHARNIER.draagvermogenKg} kg per set van drie`, 'In drie richtingen verstelbaar, en het blijft staan', 'Magnetische afdekplaatjes: geen schroef in zicht', 'Velours vernikkeld (RVS-look) of zwart mat'].map(t => (
+          {[`Draagt tot ${SCHARNIER.draagvermogenKg} kg per set van drie`, 'In drie richtingen verstelbaar, en het blijft staan', 'Magnetische afdekplaatjes inbegrepen: geen schroef in zicht', `Past op deuren vanaf ${SCHARNIER.deurdikteMm} mm, ook in een bestaand houten kozijn`, 'Velours vernikkeld, zwart mat of donker brons, op voorraad'].map(t => (
             <p key={t} style={S.feit}><Vinkje />{t}</p>
           ))}
           <a href="#bestellen" style={{ display: 'inline-block', marginTop: 10, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 15.5, padding: '13px 22px', borderRadius: 11, textDecoration: 'none' }}>Bestellen</a>
@@ -72,8 +76,12 @@ export default function Pagina() {
               ['Verstelling', '3D, in hoogte, zijwaarts en in diepte'],
               ['Lengte', '180 mm'],
               ['Materiaal', 'massief staal, roestvast staal en hoogwaardige legeringen'],
-              ['Kleuren', SCHARNIER.kleuren.map(k => k.naam).join(', ') + '; andere kleuren op aanvraag'],
-              ['Afwerking', 'optioneel magnetische afdekplaatjes'],
+              ['Deurdikte', `vanaf ${SCHARNIER.deurdikteMm} mm`],
+              ['Kozijn', 'kozijnloos kozijn (voorgefreesd) of een bestaand houten kozijn'],
+              ['Kleuren', SCHARNIER.kleuren.map(k => k.naam).join(', ') + ' (op voorraad); RVS en aluminium-look op aanvraag'],
+              ['Afwerking', 'magnetische afdekplaatjes inbegrepen'],
+              ['Gewicht', `ongeveer ${SCHARNIER.gewichtGram} gram per scharnier`],
+              ['Freesmal', 'Basys Pivotica DX, 3-delig dubbel op strip, los te bestellen'],
               ['Herkomst', 'Duitsland'],
             ].map(([k, v]) => (
               <tr key={k}><th scope="row" style={{ ...S.tabelCel, width: '34%' }}>{k}</th><td style={S.tabelCel}>{v}</td></tr>
