@@ -1126,6 +1126,26 @@
       "source": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im",
       "destination": "/dakkapel/helmond/",
       "permanent": true
+    },
+    {
+      "source": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0/",
+      "destination": "/aannemer/waalre/",
+      "permanent": true
+    },
+    {
+      "source": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0",
+      "destination": "/aannemer/waalre/",
+      "permanent": true
+    },
+    {
+      "source": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
+      "destination": "/schilder/landgraaf/",
+      "permanent": true
+    },
+    {
+      "source": "/schilder/bedrijf/schildersbedrijf-af-yaow1s",
+      "destination": "/schilder/landgraaf/",
+      "permanent": true
     }
   ],
   "rewrites": [

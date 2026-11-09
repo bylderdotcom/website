@@ -33839,11 +33839,6 @@
     "href": "/aannemer/bedrijf/bos-veranda-qe972a/",
     "name": "Bos Veranda",
     "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0/",
-    "name": "Bouwservice M.vd.W",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -38271,11 +38266,6 @@
    {
     "href": "/aannemer/bedrijf/basten-onderhoud-w7agyi/",
     "name": "Basten onderhoud",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0/",
-    "name": "Bouwservice M.vd.W",
     "rating": "5,0"
    }
   ],
@@ -72681,52 +72671,6 @@
   "contact_row": "v2",
   "template": "default"
  },
- "bedrijf/bouwservice-m-vd-w-3_n0f0": {
-  "name": "Bouwservice M.vd.W",
-  "city": "Waalre",
-  "rating_disp": "5,0",
-  "reviews": "5",
-  "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Bouwservice%20M.vd.W&amp;query_place_id=ChIJjd213n3ZxkcReDkh93_N0F0",
-  "website": "https://www.bouwservicemvdw.nl/",
-  "tel": "0611047927",
-  "tel_disp": "06 11047927",
-  "city_slug": "waalre",
-  "siblings": [
-   {
-    "href": "/aannemer/bedrijf/rocks-veranda-h0ukng/",
-    "name": "Rocks veranda",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/van-hooff-bouw-en-timmerwerken-om8bu0/",
-    "name": "Van Hooff Bouw en Timmerwerken",
-    "rating": "3,4"
-   },
-   {
-    "href": "/aannemer/bedrijf/buitenbinnen-overkappingen-uqo8xi/",
-    "name": "BuitenBinnen overkappingen",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/tiptop-dakbedekking-1w-pru/",
-    "name": "Tiptop Dakbedekking",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bos-veranda-qe972a/",
-    "name": "Bos Veranda",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/basten-onderhoud-w7agyi/",
-    "name": "Basten onderhoud",
-    "rating": "5,0"
-   }
-  ],
-  "rating_row": "default",
-  "contact_row": "default",
-  "template": "default"
- },
  "bedrijf/bouwservice-marco-van-alst-sfltkg": {
   "name": "Bouwservice Marco Van Alst",
   "city": "Reusel",
@@ -75928,11 +75872,6 @@
    {
     "href": "/aannemer/bedrijf/basten-onderhoud-w7agyi/",
     "name": "Basten onderhoud",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0/",
-    "name": "Bouwservice M.vd.W",
     "rating": "5,0"
    }
   ],
@@ -141560,11 +141499,6 @@
     "href": "/aannemer/bedrijf/basten-onderhoud-w7agyi/",
     "name": "Basten onderhoud",
     "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0/",
-    "name": "Bouwservice M.vd.W",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -154303,11 +154237,6 @@
     "href": "/aannemer/bedrijf/basten-onderhoud-w7agyi/",
     "name": "Basten onderhoud",
     "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0/",
-    "name": "Bouwservice M.vd.W",
-    "rating": "5,0"
    }
   ],
   "rating_row": "default",
@@ -161145,11 +161074,6 @@
    {
     "href": "/aannemer/bedrijf/basten-onderhoud-w7agyi/",
     "name": "Basten onderhoud",
-    "rating": "5,0"
-   },
-   {
-    "href": "/aannemer/bedrijf/bouwservice-m-vd-w-3_n0f0/",
-    "name": "Bouwservice M.vd.W",
     "rating": "5,0"
    }
   ],

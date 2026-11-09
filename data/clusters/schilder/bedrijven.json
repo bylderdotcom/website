@@ -4556,11 +4556,6 @@
     "rating": "4,8"
    },
    {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
-   },
-   {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
     "name": "Emmerik Schilderwerken van",
     "rating": "4,6"
@@ -14284,11 +14279,6 @@
     "rating": "4,8"
    },
    {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
-   },
-   {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
     "name": "Emmerik Schilderwerken van",
     "rating": "4,6"
@@ -18886,11 +18876,6 @@
     "href": "/schilder/bedrijf/daniel-nak-schilderwerken-y2jan8/",
     "name": "Daniël Nak - Schilderwerken",
     "rating": "4,8"
-   },
-   {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
    },
    {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
@@ -23942,11 +23927,6 @@
     "href": "/schilder/bedrijf/parkstadschilderwerken-6qwjw4/",
     "name": "Parkstadschilderwerken",
     "rating": "4,9"
-   },
-   {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
    },
    {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
@@ -36654,11 +36634,6 @@
     "href": "/schilder/bedrijf/daniel-nak-schilderwerken-y2jan8/",
     "name": "Daniël Nak - Schilderwerken",
     "rating": "4,8"
-   },
-   {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
    },
    {
     "href": "/schilder/bedrijf/alink-schilderwerken-pkceh8/",
@@ -98008,11 +97983,6 @@
     "rating": "4,8"
    },
    {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
-   },
-   {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
     "name": "Emmerik Schilderwerken van",
     "rating": "4,6"
@@ -118087,11 +118057,6 @@
     "rating": "4,8"
    },
    {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
-   },
-   {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
     "name": "Emmerik Schilderwerken van",
     "rating": "4,6"
@@ -129292,52 +129257,6 @@
   "contact_row": "default",
   "template": "v21"
  },
- "bedrijf/schildersbedrijf-af-yaow1s": {
-  "name": "Schildersbedrijf AF!",
-  "city": "Landgraaf",
-  "rating_disp": "4,7",
-  "reviews": "13",
-  "maps_href": "https://www.google.com/maps/search/?api=1&amp;query=Schildersbedrijf%20AF%21&amp;query_place_id=ChIJw90kcWS9wEcRkgWClyaoW1s",
-  "website": "http://www.schildersbedrijf-af.nl/",
-  "tel": "0642087195",
-  "tel_disp": "06 42087195",
-  "city_slug": "landgraaf",
-  "siblings": [
-   {
-    "href": "/schilder/bedrijf/bs-schilderwerken-a1pydy/",
-    "name": "BS Schilderwerken",
-    "rating": "5,0"
-   },
-   {
-    "href": "/schilder/bedrijf/schildersbedrijf-sjef-van-ooyen-landgraaf-ahz1ly/",
-    "name": "Schildersbedrijf Sjef van Ooyen Landgraaf",
-    "rating": "4,3"
-   },
-   {
-    "href": "/schilder/bedrijf/parkstadschilderwerken-6qwjw4/",
-    "name": "Parkstadschilderwerken",
-    "rating": "4,9"
-   },
-   {
-    "href": "/schilder/bedrijf/daniel-nak-schilderwerken-y2jan8/",
-    "name": "Daniël Nak - Schilderwerken",
-    "rating": "4,8"
-   },
-   {
-    "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
-    "name": "Emmerik Schilderwerken van",
-    "rating": "4,6"
-   },
-   {
-    "href": "/schilder/bedrijf/alink-schilderwerken-pkceh8/",
-    "name": "Alink Schilderwerken",
-    "rating": "5,0"
-   }
-  ],
-  "rating_row": "default",
-  "contact_row": "default",
-  "template": "default"
- },
  "bedrijf/schildersbedrijf-aggenbach-fydlxu": {
   "name": "Schildersbedrijf Aggenbach",
   "city": "Deventer",
@@ -139613,11 +139532,6 @@
     "href": "/schilder/bedrijf/daniel-nak-schilderwerken-y2jan8/",
     "name": "Daniël Nak - Schilderwerken",
     "rating": "4,8"
-   },
-   {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
    },
    {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
@@ -167066,11 +166980,6 @@
     "rating": "4,8"
    },
    {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
-   },
-   {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
     "name": "Emmerik Schilderwerken van",
     "rating": "4,6"
@@ -172396,11 +172305,6 @@
     "href": "/schilder/bedrijf/daniel-nak-schilderwerken-y2jan8/",
     "name": "Daniël Nak - Schilderwerken",
     "rating": "4,8"
-   },
-   {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
    },
    {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
@@ -213959,11 +213863,6 @@
     "href": "/schilder/bedrijf/daniel-nak-schilderwerken-y2jan8/",
     "name": "Daniël Nak - Schilderwerken",
     "rating": "4,8"
-   },
-   {
-    "href": "/schilder/bedrijf/schildersbedrijf-af-yaow1s/",
-    "name": "Schildersbedrijf AF!",
-    "rating": "4,7"
    },
    {
     "href": "/schilder/bedrijf/emmerik-schilderwerken-van-eawaku/",
