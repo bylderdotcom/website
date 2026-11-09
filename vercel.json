@@ -1096,6 +1096,36 @@
       "source": "/nieuwbouw-project/volharding-fase-3-westerkwartier/",
       "destination": "/nieuwbouw-project/volharding-westerkwartier/",
       "permanent": true
+    },
+    {
+      "source": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli/",
+      "destination": "/aannemer/hengelo/",
+      "permanent": true
+    },
+    {
+      "source": "/aannemer/bedrijf/boerkamp-bouw-b-v-ct6pli",
+      "destination": "/aannemer/hengelo/",
+      "permanent": true
+    },
+    {
+      "source": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
+      "destination": "/dakkapel/hengelo/",
+      "permanent": true
+    },
+    {
+      "source": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli",
+      "destination": "/dakkapel/hengelo/",
+      "permanent": true
+    },
+    {
+      "source": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im/",
+      "destination": "/dakkapel/helmond/",
+      "permanent": true
+    },
+    {
+      "source": "/dakkapel/bedrijf/jacobs-daken-helmond-mug8im",
+      "destination": "/dakkapel/helmond/",
+      "permanent": true
     }
   ],
   "rewrites": [

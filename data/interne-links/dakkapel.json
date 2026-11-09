@@ -2207,14 +2207,6 @@
       "vak_zeker": 1.0
     },
     {
-      "href": "/dakkapel/bedrijf/boerkamp-bouw-b-v-ct6pli/",
-      "name": "Boerkamp Bouw B.V.",
-      "rating": 5.0,
-      "km": 5.0,
-      "noul": 0.76,
-      "vak_zeker": 1.0
-    },
-    {
       "href": "/dakkapel/bedrijf/sterckbouw-kunststof-kozijnen-gevelbekleding-deuren-en-meer-xkqiig/",
       "name": "SterckBouw | Kunststof kozijnen, gevelbekleding, deuren en meer",
       "rating": 4.6,
@@ -12122,16 +12114,6 @@
       "km": 3.4,
       "noul": 0.6,
       "vak_zeker": 1.0
-    }
-  ],
-  "bedrijf/jacobs-daken-helmond-mug8im": [
-    {
-      "href": "/dakkapel/bedrijf/rico-dak-en-timmerwerken-ft-7cu/",
-      "name": "Rico dak en timmerwerken",
-      "rating": 5.0,
-      "km": 6.0,
-      "noul": 0.84,
-      "vak_zeker": 0.85
     }
   ],
   "bedrijf/jan-de-klerk-timmerwerk-sjwffm": [

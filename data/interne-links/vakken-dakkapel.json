@@ -587,10 +587,6 @@
     "vak": "onderhoud",
     "zeker": 1.0
   },
-  "bedrijf/boerkamp-bouw-b-v-ct6pli": {
-    "vak": "aannemer",
-    "zeker": 1.0
-  },
   "bedrijf/bogaard-bouw-timmerwerken-jbm768": {
     "vak": "aannemer",
     "zeker": 0.99
@@ -3438,10 +3434,6 @@
   "bedrijf/jack-de-boer-qfu13o": {
     "vak": "anders",
     "zeker": 0.9
-  },
-  "bedrijf/jacobs-daken-helmond-mug8im": {
-    "vak": "aannemer",
-    "zeker": 0.47
   },
   "bedrijf/jago-bouw-hnnuww": {
     "vak": "aannemer",
