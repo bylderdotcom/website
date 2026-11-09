@@ -37,7 +37,9 @@ def ophalen(filter_, velden):
     rijen, offset = [], 0
     while True:
         q = f'{base}?select={velden}&{filter_}&order=slug&limit=1000&offset={offset}'
-        req = urllib.request.Request(q, headers={'apikey': key, 'Authorization': f'Bearer {key}'})
+        # Nieuwe Supabase-sleutels (sb_secret_…) zijn geen JWT: alleen in de apikey-header.
+        h = {'apikey': key} if key.startswith('sb_') else {'apikey': key, 'Authorization': f'Bearer {key}'}
+        req = urllib.request.Request(q, headers=h)
         with urllib.request.urlopen(req, timeout=60) as r:
             deel = json.load(r)
         rijen += deel
