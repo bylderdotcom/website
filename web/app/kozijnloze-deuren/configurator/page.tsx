@@ -6,15 +6,17 @@ import { ONTWERPEN, KLEUREN } from './ontwerpen'
 // binnen effecten aan, dus hij overleeft het prerenderen prima.
 import Configurator from './Configurator'
 import Portfolio from '../Portfolio'
+import { VANAF, euroRond } from './prijs'
 
 /**
  * Configurator voor kozijnloze deuren.
  *
  * WAT DEZE PAGINA MOET DOEN
  * Iemand zover krijgen dat hij een offerte aanvraagt, met beeld en met een
- * sluitende specificatie — niet met een prijs. Prijzen hangen af van maat,
- * wanddikte en afwerking; een bedrag hier zou net zo stil verouderen als de
- * vanafprijs die we van de merkpagina hebben gehaald.
+ * sluitende specificatie — en sinds 10-11-2026 met een prijsindicatie per deur
+ * (./prijs.ts, lijst van Classic Next, incl. btw en excl. montage). In vier weken
+ * gebruikten 6 mensen de configurator en vroeg niemand een offerte aan; het
+ * ontbreken van een prijs was de meest waarschijnlijke drempel.
  *
  * WAAROM ER TEKST ONDER STAAT
  * Een WebGL-doek is voor een zoekmachine een leeg vlak. De uitleg eronder is
@@ -48,10 +50,13 @@ const KAART: React.CSSProperties = {
 }
 
 const VRAGEN = [
-  { v: 'Waarom staan er geen prijzen bij?',
-    a: 'Omdat een prijs voor dit product afhangt van de maat, de wanddikte en de afwerking. '
-      + 'Een vanafprijs in een configurator veroudert stil, en dan klopt de offerte niet met wat '
-      + 'je hier zag. Je krijgt een prijs op je eigen configuratie.' },
+  { v: 'Wat kost een kozijnloze deur?',
+    a: `Een complete deur met kozijn, scharnieren en magneetslot begint bij ${euroRond(VANAF)} inclusief btw: `
+      + 'standaardhoogte, gegrond, zonder freeswerk en zonder kruk. Plafondhoog, afgelakt en met freeswerk '
+      + 'kost meer; de configurator rekent het per deur voor je uit. Montage komt er nog bij.' },
+  { v: 'Is de prijs in de configurator definitief?',
+    a: 'Nee, het is een indicatie op basis van de prijslijst van Classic Next. Wanddikte, afwijkende maten '
+      + 'en montage bepalen de definitieve prijs. Die staat in je offerte, binnen twee werkdagen.' },
   { v: 'Zijn de kleuren op mijn scherm betrouwbaar?',
     a: 'Als richting wel, als keuze niet. RAL is een fysieke standaard op een kleurstaal; elk '
       + 'beeldscherm geeft hem anders weer. Gebruik de configurator om te zien hoe het patroon '
@@ -90,8 +95,8 @@ export default function ConfiguratorPagina() {
               `Stel een plafondhoge kozijnloze deur samen uit ${ONTWERPEN.length} groefpatronen `
               + `en ${KLEUREN.length} RAL-kleuren, en vraag er een offerte op aan.`,
             isAccessibleForFree: true,
-            // Geen offers-blok: er staat geen prijs op de pagina, dus het schema
-            // mag er ook geen beweren.
+            offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: VANAF.toFixed(2),
+              description: 'Complete kozijnloze deur met kozijn, scharnieren en magneetslot; exclusief montage' },
           },
           {
             '@type': 'FAQPage',
