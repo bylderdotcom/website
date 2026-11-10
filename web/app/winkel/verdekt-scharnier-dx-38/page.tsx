@@ -35,7 +35,10 @@ export default function Pagina() {
     { '@context': 'https://schema.org', '@type': 'Product', name: `${SCHARNIER.merk} ${SCHARNIER.naam}`, brand: { '@type': 'Brand', name: SCHARNIER.merk },
       description: SCHARNIER.kort, url: URL, image: ['https://www.bylder.com/img/winkel/dx38.webp', 'https://www.bylder.com/img/winkel/dx38-afdekplaat.webp'],
       category: 'Deurbeslag', seller: { '@type': 'Organization', name: 'Bylder' },
-      offers: { '@type': 'Offer', price: '50.22', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: URL,
+      // Zelfde aanbod als de productlijst voor Google (app /api/winkel/feed.xml): een set van 3 voor één deur.
+      offers: { '@type': 'Offer', name: 'Set van 3 scharnieren voor één deur', price: '150.66', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: URL,
+        shippingDetails: { '@type': 'OfferShippingDetails', shippingRate: { '@type': 'MonetaryAmount', value: '6.95', currency: 'EUR' },
+          shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'NL' } },
         seller: { '@type': 'Organization', name: 'Bylder' } } },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: VRAGEN.map(q => ({ '@type': 'Question', name: q.v, acceptedAnswer: { '@type': 'Answer', text: q.a } })) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
