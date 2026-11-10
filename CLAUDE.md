@@ -111,7 +111,9 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
 - **Prijzen staan alleen in de app** (`src/lib/winkel.ts`, centen incl. btw); de site haalt ze op (`web/app/winkel/prijzen.ts`).
   Alleen invullen als de verkoopprijs is afgesproken. Zijn alle prijzen van een product bekend, dan rekent de klant
   af met iDEAL (Pay.nl, tabel `winkel_bestellingen`, exchange `/api/winkel/paynl-exchange`); anders bevestigen wij met
-  een betaallink. De deurprijzen van Dutch Doors Company zijn intern en komen nergens op de site.
+  een betaallink. Deurprijzen: Classic Next (Thijs en Machiel) is akkoord met prijzen in de deurconfigurator (10-11-2026; lijst 'Prijs per onderdeel':
+  kozijn, deurblad, scharnieren, slot, kruk), **exclusief montage** (besluit Daniel). Bouwen zodra Thijs de open vragen heeft beantwoord
+  (kozijnprijs € 449/495 of € 650/695, twee tikfouten, onze inkoop). Scharnieren: 3 per deur tot 2315 mm, 4 bij hoger of kamerhoog.
 - **Afrekenen zonder drempel (besluit Daniel, 1-11-2026):** nooit een account vragen; na betaling hangt de bestelling
   aan het account op dat e-mailadres (app: Mijn bestellingen) en de mail logt meteen in. Geen verplicht wachtwoord
   meer (ook niet bij offertes): inloggen met Google of een inloglink (`/api/inloglink`). Formulier: "Snel invullen met

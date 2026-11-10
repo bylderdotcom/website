@@ -39,7 +39,7 @@ export function productCent(product: string, c: Record<string, unknown>, w: Wink
     return n(c.profielen) * p.profiel! + n(c.binnenhoeken) * p.binnenhoek! + n(c.buitenhoeken) * p.buitenhoek! + n(c.koppelstukken) * p.koppelstuk!
   }
   if (product === 'winkel-scharnier') {
-    const p = w.prijzen.scharnier, stuks = Math.max(1, n(c.deuren)) * 3
+    const p = w.prijzen.scharnier, stuks = Math.max(1, n(c.deuren)) * (c.kamerhoog ? 4 : 3)
     if (p.stuk == null || (c.mal && p.mal == null)) return null
     return stuks * p.stuk + (c.mal ? p.mal! : 0)
   }
