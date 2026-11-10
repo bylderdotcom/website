@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ConfiguratorCTA from '../../components/ConfiguratorCTA'
 import Portfolio from '../Portfolio'
 import VakmanReviews, { reviewSchema } from '../../components/VakmanReviews'
+import { VANAF, euroRond } from '../configurator/prijs'
 
 /**
  * Merkpagina voor Classic Next, Uden.
@@ -17,9 +18,8 @@ import VakmanReviews, { reviewSchema } from '../../components/VakmanReviews'
  * vangen — en hem noemen maakt een merk dat net begint alleen maar ouder en
  * onduidelijker dan het is.
  *
- * GEEN PRIJZEN. Een vanafprijs op een merkpagina veroudert stil: de pagina blijft
- * hem beweren lang nadat de leverancier hem heeft bijgesteld, en dan klopt de
- * offerte niet met wat wij zeggen.
+ * PRIJZEN sinds 10-11-2026 (Classic Next akkoord): de vanafprijs komt uit
+ * configurator/prijs.ts, dezelfde bron als de configurator, zodat hij niet stil veroudert.
  *
  * WAT ER BEWUST NIET OP STAAT
  * De ledenkorting staat er sinds 4 september 2026, en pas sinds die dag: de
@@ -102,9 +102,10 @@ const FEITEN: [string, string][] = [
 
 const VRAGEN = [
   { v: 'Wat kost een kozijn van Classic Next?',
-    a: 'Dat hangt af van hoogte, breedte, wanddikte en afwerking, en het is dus een offerte en geen '
-      + 'schapprijs. Kamerhoge deuren en extra breedtes kosten meer dan standaardmaten. Montage komt '
-      + 'er nog bij: reken op €250 tot €600 per deur, afhankelijk van de wand.' },
+    a: `Een complete deur met kozijn, scharnieren en magneetslot begint bij ${euroRond(VANAF)} inclusief btw `
+      + '(standaardhoogte, gegrond, zonder kruk). Kamerhoge deuren, aflakken en freeswerk kosten meer; de '
+      + 'configurator rekent het per deur uit. Montage komt er nog bij: reken op €250 tot €600 per deur, '
+      + 'afhankelijk van de wand.' },
   { v: 'Kan ik er als particulier terecht?',
     a: 'Het bedrijf richt zich op de professionele markt: architecten, interieurontwerpers en '
       + 'projectontwikkelaars. Voor een nieuwbouwkoper betekent dat in de praktijk dat je aannemer of '

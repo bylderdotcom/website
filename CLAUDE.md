@@ -111,9 +111,12 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
 - **Prijzen staan alleen in de app** (`src/lib/winkel.ts`, centen incl. btw); de site haalt ze op (`web/app/winkel/prijzen.ts`).
   Alleen invullen als de verkoopprijs is afgesproken. Zijn alle prijzen van een product bekend, dan rekent de klant
   af met iDEAL (Pay.nl, tabel `winkel_bestellingen`, exchange `/api/winkel/paynl-exchange`); anders bevestigen wij met
-  een betaallink. Deurprijzen: Classic Next (Thijs en Machiel) is akkoord met prijzen in de deurconfigurator (10-11-2026; lijst 'Prijs per onderdeel':
-  kozijn, deurblad, scharnieren, slot, kruk), **exclusief montage** (besluit Daniel). Bouwen zodra Thijs de open vragen heeft beantwoord
-  (kozijnprijs € 449/495 of € 650/695, twee tikfouten, onze inkoop). Scharnieren: 3 per deur tot 2315 mm, 4 bij hoger of kamerhoog.
+  een betaallink. Deurprijzen (besluit Daniel, 10-11-2026; Classic Next akkoord): de deurconfigurator toont per deur een prijsindicatie,
+  incl. btw en **exclusief montage**, uit één bestand: `web/app/kozijnloze-deuren/configurator/prijs.ts` (kozijn als compleet pakket
+  met scharnieren en magneetslot € 650/695 ex btw, deurblad per hoogte en afwerking, freeswerk € 90 per deur, kruk per model;
+  houtdecor en Molinia zonder bedrag). Nieuwe keuze Hoogte (plafondhoog of standaard). De vanafprijs op `/kozijnloze-deuren/`,
+  de merkpagina en in de FAQ komt uit hetzelfde bestand. Scharnieren: 3 per deur tot 2315 mm, 4 bij hoger of kamerhoog.
+  Nog open bij Thijs: onze inkoop op deur en kozijn, en of freeswerk per deur of per lijn is.
 - **Afrekenen zonder drempel (besluit Daniel, 1-11-2026):** nooit een account vragen; na betaling hangt de bestelling
   aan het account op dat e-mailadres (app: Mijn bestellingen) en de mail logt meteen in. Geen verplicht wachtwoord
   meer (ook niet bij offertes): inloggen met Google of een inloglink (`/api/inloglink`). Formulier: "Snel invullen met

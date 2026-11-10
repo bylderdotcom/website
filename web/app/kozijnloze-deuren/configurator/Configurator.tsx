@@ -12,13 +12,19 @@ import OfferteFormulier from '../../components/OfferteFormulier'
 import OntwerpBewaren from '../../components/OntwerpBewaren'
 import GerenderdBeeld from './GerenderdBeeld'
 import { meetStap } from '../../components/trechter'
+import { HOOGTES, deurPrijs, euro, euroRond, type Hoogte } from './prijs'
 
 const meet = (stap: string) => meetStap('kozijnloze-deur', stap)
 
 // Configurator voor kozijnloze deuren van Classic Next.
 //
-// De deur is altijd plafondhoog: dat is het product, en het is ook het verhaal —
-// dit is geen deur in een gat maar een wandvlak dat opengaat.
+// De deur is standaard plafondhoog: dat is het product, en het is ook het verhaal —
+// dit is geen deur in een gat maar een wandvlak dat opengaat. Wie een gangbare
+// opening heeft, kiest de standaardhoogte (sinds 10-11-2026, voor de prijs).
+//
+// PRIJS (besluit Daniel, 10-11-2026; Classic Next akkoord): per deur een indicatie uit
+// ./prijs.ts, inclusief btw en exclusief montage. De definitieve prijs staat in de offerte.
+// De tekst hieronder is de oude afweging, van toen er geen prijzen in stonden.
 //
 // Er staan bewust GEEN prijzen in. De tool moet overtuigen met wat je ziet en met
 // een sluitende specificatie; het bedrag komt uit de offerte. Een vanafprijs in een
@@ -43,6 +49,7 @@ type Deur = {
   slot: string
   slotAfwerking: string
   scharnierKleur: string
+  hoogte: Hoogte
 }
 
 const NIEUW: Deur = {
@@ -50,7 +57,7 @@ const NIEUW: Deur = {
   fineer: 'oslo-oak',
   richting: 'binnen', scharnier: 'links',
   kruk: 'oma-q-slim', krukAfwerking: 'Zwart', slot: 'loop', slotAfwerking: 'Zwart',
-  scharnierKleur: 'Zwart',
+  scharnierKleur: 'Zwart', hoogte: 'plafond',
 }
 
 /** Alles behalve de plek: deuren met dezelfde uitvoering zijn één type. */
@@ -86,7 +93,7 @@ function leesUrl(): Deur[] {
     // kenden nog geen beslag. Aan het aantal velden zie je welke soort het is.
     const v = s.split('~')
     const [ontwerp, afwerking, ral, vrij, fineer, richting, scharnier,
-           kruk, krukAfwerking, slot, scharnierKleur, naam, slotAfwerking] =
+           kruk, krukAfwerking, slot, scharnierKleur, naam, slotAfwerking, hoogte] =
       v.length === 7 ? [v[0], v[1], v[2], '', v[3], v[4], v[5], '', '', '', '', v[6]] : v
     if (!ONTWERPEN.some(o => o.id === ontwerp)) return null
     const km = KRUKKEN.find(k => k.id === kruk) ?? KRUKKEN.find(k => k.id === NIEUW.kruk)!
@@ -110,6 +117,8 @@ function leesUrl(): Deur[] {
         ? slotAfwerking : slotVarianten(slot)[0].afwerking,
       scharnierKleur: SCHARNIEREN.some(v => v.afwerking === scharnierKleur)
         ? scharnierKleur : NIEUW.scharnierKleur,
+      // Links van vóór 10 november kennen geen hoogte: plafondhoog, zoals het toen altijd was.
+      hoogte: hoogte === 'standaard' ? 'standaard' : 'plafond',
     } as Deur
   }).filter(Boolean) as Deur[]
   return uit.length ? uit : [NIEUW]
@@ -121,7 +130,7 @@ const naarUrl = (d: Deur[]) =>
               x.scharnierKleur, encodeURIComponent(x.naam),
               // Achteraan, want een link uit de beursmailing heeft dit veld niet.
               // Ontbreekt het, dan valt leesUrl terug op de standaardafwerking.
-              x.slotAfwerking].join('~')).join('_')
+              x.slotAfwerking, x.hoogte].join('~')).join('_')
 
 export default function Configurator() {
   const doek = useRef<HTMLDivElement>(null)
@@ -537,6 +546,10 @@ export default function Configurator() {
   const groep = groepen.find(g => g.includes(actief)) ?? [actief]
   const voegToe = (d: Deur) => { setDeuren(x => [...x, d]); setActief(deuren.length) }
 
+  const prijsVan = (d: Deur) => deurPrijs({
+    hoogte: d.hoogte, afwerking: d.afwerking, kruk: d.kruk, krukAfwerking: d.krukAfwerking,
+    freeswerk: (ONTWERPEN.find(x => x.id === d.ontwerp)?.groeven.length ?? 0) > 0,
+  })
   const specTekst = deuren.map((d, i) => {
     const o = ONTWERPEN.find(x => x.id === d.ontwerp)!
     const k = KLEUREN.find(x => x.ral === d.ral)!
@@ -554,11 +567,18 @@ export default function Configurator() {
               : 'gegrond, zelf te schilderen'
     const km = KRUKKEN.find(x => x.id === d.kruk) ?? KRUKKEN[0]
     const sl = SLOTEN.find(x => x.id === d.slot) ?? SLOTEN[0]
+    const pr = prijsVan(d)
     return `${naamVan(d, i)}: ${o.naam} (${o.groef.toLowerCase()}) · ${afw} · `
-         + `plafondhoog · draait naar ${d.richting} · scharnieren ${d.scharnier} · `
+         + `${d.hoogte === 'standaard' ? 'standaardhoogte (tot 231,5 cm)' : 'plafondhoog (tot 270 cm)'} · draait naar ${d.richting} · scharnieren ${d.scharnier} · `
          + `kruk ${km.naam} (${km.merk}) in ${d.krukAfwerking} · ${sl.naam} in ${d.slotAfwerking} · `
          + `scharnier DX38 ${d.scharnierKleur}`
+         + ` · prijsindicatie ${pr.totaal == null ? 'in de offerte (houtdecor)' : euro(pr.totaal) + ' incl. btw, excl. montage' + (pr.zonderKruk ? ' en excl. kruk' : '')}`
   }).join('\n')
+
+  const prijzen = deuren.map(prijsVan)
+  const somBekend = prijzen.reduce((t, x) => t + (x.totaal ?? 0), 0)
+  const allesBekend = prijzen.every(x => x.totaal != null)
+  const prijsHuidig = prijsVan(huidig)
 
   const mail = 'mailto:info@bylder.com?subject='
     + encodeURIComponent('Offerteaanvraag kozijnloze deuren')
@@ -853,6 +873,22 @@ export default function Configurator() {
           </div>
         </div>
 
+        {/* Hoogte — bepaalt mee de prijs */}
+        <div>
+          <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }}>
+            Hoogte
+          </h2>
+          <div style={{ display: 'flex', gap: 6 }}>
+            {HOOGTES.map(h => (
+              <button key={h.id} onClick={() => wijzig({ hoogte: h.id })} aria-pressed={h.id === huidig.hoogte}
+                style={{ ...(h.id === huidig.hoogte ? knopAan : knop), flex: 1 }}>{h.naam}</button>
+            ))}
+          </div>
+          <p style={{ fontSize: 13, color: `${INKT}0.62)`, margin: '9px 0 0', lineHeight: 1.65 }}>
+            {(HOOGTES.find(h => h.id === huidig.hoogte) ?? HOOGTES[0]).uitleg} Tot 93 cm breed; breder kan op aanvraag.
+          </p>
+        </div>
+
         {/* Afwerking — bepaalt of je een kleur of een houtsoort kiest */}
         <div>
           <h2 style={{ fontSize: '1.02rem', fontWeight: 800, margin: '0 0 8px', color: '#1A1208' }}>
@@ -1092,11 +1128,42 @@ export default function Configurator() {
             {deuren.length === 1 ? 'Jouw specificatie' : `Jouw specificatie — ${deuren.length} deuren`}
           </h2>
           <p style={{ fontSize: 13.5, color: `${INKT}0.7)`, margin: '0 0 14px', lineHeight: 1.65 }}>
-            Bylder maakt de offerte: we kijken je samenstelling na en je krijgt binnen twee werkdagen een prijs,
-            met de maten en de planning. Eén aanspreekpunt, van bestelling tot montage. Prijzen hangen af van
-            maat, wanddikte en afwerking &mdash; daarom
-            staat er hier geen bedrag dat straks niet klopt.
+            Bylder maakt de offerte: we kijken je samenstelling na en je krijgt binnen twee werkdagen de definitieve
+            prijs, met de maten en de planning. Eén aanspreekpunt, van bestelling tot montage.
           </p>
+          <div aria-live="polite" style={{ border: `1.5px solid ${GROEN}`, borderRadius: 12, padding: '14px 16px', margin: '0 0 14px' }}>
+            <p style={{ margin: '0 0 8px', fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 700, color: GROEN }}>
+              Prijsindicatie{deuren.length > 1 ? ` · ${naamVan(huidig, actief)}` : ''}
+            </p>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14, color: '#1A1208' }}>
+              <tbody>
+                {prijsHuidig.regels.map(r => (
+                  <tr key={r.naam}>
+                    <td style={{ padding: '3px 8px 3px 0', color: `${INKT}0.8)` }}>{r.naam}</td>
+                    <td style={{ padding: '3px 0', textAlign: 'right', whiteSpace: 'nowrap', fontVariantNumeric: 'tabular-nums' }}>{r.bedrag != null ? euro(r.bedrag) : 'in de offerte'}</td>
+                  </tr>
+                ))}
+                <tr>
+                  <th scope="row" style={{ padding: '8px 8px 0 0', textAlign: 'left', borderTop: `1px solid ${INKT}0.14)` }}>Deze deur</th>
+                  <td style={{ padding: '8px 0 0', textAlign: 'right', fontWeight: 800, fontSize: 17, whiteSpace: 'nowrap', borderTop: `1px solid ${INKT}0.14)`, fontVariantNumeric: 'tabular-nums' }}>
+                    {prijsHuidig.totaal != null ? euro(prijsHuidig.totaal) : 'in de offerte'}
+                  </td>
+                </tr>
+                {deuren.length > 1 && (
+                  <tr>
+                    <th scope="row" style={{ padding: '4px 8px 0 0', textAlign: 'left' }}>Alle {deuren.length} deuren</th>
+                    <td style={{ padding: '4px 0 0', textAlign: 'right', fontWeight: 800, whiteSpace: 'nowrap', fontVariantNumeric: 'tabular-nums' }}>
+                      {allesBekend ? euro(somBekend) : somBekend > 0 ? `${euro(somBekend)} + houtdecor` : 'in de offerte'}
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+            <p style={{ fontSize: 12.5, color: `${INKT}0.62)`, margin: '10px 0 0', lineHeight: 1.6 }}>
+              Inclusief btw, exclusief montage en levering. {prijsHuidig.totaal == null ? 'Houtdecor is maatwerk: die prijs staat in je offerte. ' : ''}Een indicatie op basis van de
+              prijslijst van Classic Next; wanddikte en afwijkende maten kunnen de prijs veranderen.
+            </p>
+          </div>
           {spec && (
             <pre style={{ fontSize: 12.5, lineHeight: 1.7, background: `${INKT}0.04)`,
                           padding: '12px 14px', borderRadius: 9, overflowX: 'auto',
@@ -1108,7 +1175,7 @@ export default function Configurator() {
               product="kozijnloze-deur"
               bron="configurator-deur"
               specificatie={specTekst}
-              configuratie={{ deuren }}
+              configuratie={{ deuren, prijsindicatie: { totaal: allesBekend ? somBekend : null, per_deur: prijzen.map(x => x.totaal), incl_btw: true, excl_montage: true } }}
               hoeveelheden={{ deuren: deuren.length }}
               terugkijkUrl={() => window.location.href}
               mailFallback={mail}
@@ -1159,6 +1226,7 @@ export default function Configurator() {
               {' · '}{krukModel.naam} {krukVar.afwerking.toLowerCase()}
               {' · '}{deuren.length} {deuren.length === 1 ? 'deur' : 'deuren'}
             </span>
+            {somBekend > 0 && <strong style={{ display: 'block', fontSize: 13.5 }}>{allesBekend ? '' : 'vanaf '}{euroRond(somBekend)} <span style={{ fontWeight: 500, color: `${INKT}0.6)` }}>incl. btw, excl. montage</span></strong>}
           </p>
           <button type="button" onClick={naarOfferte} tabIndex={balkWeg ? -1 : 0}
             style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px',
