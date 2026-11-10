@@ -10,7 +10,9 @@
 // zij de drie dichtstbijzijnde kleuren uit hun eigen assortiment sturen. Komt de echte
 // kaart, vervang dan KLEUREN en zet VOORLOPIG op false.
 
-export const VOORLOPIG = true
+// Sinds 9-11-2026 hebben alle vier de systemen hun echte kleuren met foto: de voorlopige kaart is alleen nog
+// een vangnet, en staalaanvragen gaan met de echte kleurnaam naar Dr. Schutz.
+export const VOORLOPIG = false
 export const MAX_STALEN = 3
 
 export type Kleur = {
