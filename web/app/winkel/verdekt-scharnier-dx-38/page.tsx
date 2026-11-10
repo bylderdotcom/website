@@ -28,6 +28,7 @@ const VRAGEN = [
   { v: 'Welke kleuren zijn er?', a: 'Velours vernikkeld, zwart mat en donker brons liggen op voorraad. RVS en aluminium-look zijn er op aanvraag.' },
   { v: 'Moet het na een tijd opnieuw worden afgesteld?', a: 'Nee. Je stelt de deur bij de montage in drie richtingen af, en het scharnier houdt die stand.' },
   { v: 'Wie is de verkoper?', a: 'Bylder. Je bestelling en de betaling lopen via ons; de leverancier levert rechtstreeks bij je af.' },
+  { v: 'Kan ik het terugsturen?', a: 'Ja, binnen 14 dagen na ontvangst, zonder reden. Hoe dat gaat staat op de pagina Verzending en retour in de winkel (bylder.com/winkel/verzending-en-retour).' },
 ]
 
 export default function Pagina() {

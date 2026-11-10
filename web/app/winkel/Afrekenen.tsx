@@ -180,7 +180,7 @@ export default function Afrekenen(p: {
         <button type="submit" disabled={bezig} style={{ background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 15, padding: '13px 22px', borderRadius: 11, border: 0, cursor: bezig ? 'wait' : 'pointer', opacity: bezig ? 0.6 : 1, fontFamily: 'inherit' }}>
           {bezig ? 'Even geduld…' : p.online ? `Betalen met iDEAL${p.totaalCent != null ? ` · ${euroCent(p.totaalCent)}` : ''}` : 'Plaats bestelling'}
         </button>
-        <span style={{ fontSize: 12.5, color: `${INKT}0.6)` }}>{p.online ? 'Bylder is de verkoper · prijs incl. btw en verzending' : 'Je betaalt pas na onze bevestiging'}</span>
+        <span style={{ fontSize: 12.5, color: `${INKT}0.6)` }}>{p.online ? 'Bylder is de verkoper · prijs incl. btw en verzending' : 'Je betaalt pas na onze bevestiging'} · <a href="/winkel/verzending-en-retour/" style={{ color: 'inherit' }}>14 dagen bedenktijd</a></span>
       </div>
       <p style={{ fontSize: 12.5, color: `${INKT}0.6)`, margin: 0 }}>Je bestelling komt in je Bylder-account op dit e-mailadres, zodat je hem kunt volgen. Een wachtwoord is niet nodig.</p>
     </form>
