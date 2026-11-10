@@ -142,7 +142,7 @@ jobs:
         run: |
           git config user.name "bylderdotcom"
           git config user.email "info@bylder.com"
-          git add data/clusters/nieuwbouw-project/ data/projectsites.json nieuwbouw-project-sitemap.xml
+          git add data/clusters/nieuwbouw-project/ data/projectsites.json nieuwbouw-project-sitemap.xml web/public/data/project-status.json
           if git diff --staged --quiet; then
             echo "Geen wijzigingen - niets te doen."
             exit 0
@@ -161,7 +161,7 @@ jobs:
           git commit -q -F bericht.txt
           rm -f bericht.txt
           # main kan tijdens de ronde (tot vijf uur) bewogen zijn
-          if git pull -q --rebase origin main && git push -q origin HEAD:main; then
+          if git pull -q --rebase --autostash origin main && git push -q origin HEAD:main; then
             echo "Naar main gepusht."
           else
             git rebase --abort 2>/dev/null || true
@@ -179,7 +179,7 @@ jobs:
           git config user.email "info@bylder.com"
           TAK="handwerk-feiten-$(date +%Y%m%d-%H%M)"
           git checkout -q -b "$TAK"
-          git add data/clusters/nieuwbouw-project/ data/projectsites.json nieuwbouw-project-sitemap.xml
+          git add data/clusters/nieuwbouw-project/ data/projectsites.json nieuwbouw-project-sitemap.xml web/public/data/project-status.json
           git commit -q -m "Opgezochte feiten, ronde $(date +%d-%m-%Y) (niet naar main: ${FOUTEN:-push mislukt})" || true
           git push -q origin "$TAK"
           gh issue create \
