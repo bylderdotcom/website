@@ -311,6 +311,14 @@
 "panden_opgeleverd": 47,
 "gemeten": "2026-11-01"
 },
+"buitenhof-fase-1-tholen": {
+"naam": "Buitenhof Fase 1",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
 "buitenhof-rijswijk-zh": {
 "naam": "Buitenhof",
 "oplevering": "tussen 2026 en 2028",
@@ -326,6 +334,14 @@
 "in_aanbouw": 2,
 "panden_opgeleverd": 8,
 "gemeten": "2026-11-01"
+},
+"buitenplaats-brielle-fase-1-voorne-aan-zee": {
+"naam": "Buitenplaats Brielle Fase 1",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
 },
 "buitenplaats-kraaijenberg-vught": {
 "naam": "Buitenplaats Kraaijenberg",
@@ -3095,6 +3111,14 @@
 "panden_opgeleverd": 0,
 "gemeten": null
 },
+"park-vredenburgh-waddinxveen": {
+"naam": "Park Vredenburgh",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
 "park-west-het-verlaat-leeuwarden": {
 "naam": "Park West Het Verlaat",
 "oplevering": "tussen 2027 en 2028",
@@ -3894,6 +3918,14 @@
 "in_aanbouw": 13,
 "panden_opgeleverd": 4,
 "gemeten": "2026-11-01"
+},
+"up-zoetermeer": {
+"naam": "Up",
+"oplevering": "rond 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
 },
 "vad07bc-zelfbouwkavels-wageningen": {
 "naam": "Vad07bc Zelfbouwkavels",
