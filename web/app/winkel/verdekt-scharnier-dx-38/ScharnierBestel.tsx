@@ -19,18 +19,20 @@ export default function ScharnierBestel() {
   const [deuren, setDeuren] = useState('1')
   const [kleur, setKleur] = useState(SCHARNIER.kleuren[0].id)
   const [mal, setMal] = useState(false)
+  const [hoog, setHoog] = useState(false)
   const prijzen = useWinkelPrijzen()
   const n = Math.max(1, Math.min(200, Math.round(Number(deuren) || 1)))
-  const stuks = n * SCHARNIER.perDeur
+  const per = hoog ? SCHARNIER.perDeurHoog : SCHARNIER.perDeur
+  const stuks = n * per
   const kleurNaam = SCHARNIER.kleuren.find(k => k.id === kleur)?.naam ?? kleur
   const spec = [
     `Bestelling ${SCHARNIER.merk} ${SCHARNIER.naam}`,
-    `${stuks} scharnieren (${n} ${n === 1 ? 'deur' : 'deuren'} × ${SCHARNIER.perDeur}), ${kleurNaam}`,
+    `${stuks} scharnieren (${n} ${n === 1 ? 'deur' : 'deuren'} × ${per}${hoog ? ', hoger dan 2315 mm of kamerhoog' : ''}), ${kleurNaam}`,
     'Inclusief magnetische afdekplaatjes',
     ...(mal ? ['1 × freesmal Basys Pivotica DX'] : []),
   ].join('\n')
   const online = !!prijzen?.online['winkel-scharnier']
-  const totaal = productCent('winkel-scharnier', { deuren: n, mal }, prijzen)
+  const totaal = productCent('winkel-scharnier', { deuren: n, mal, kamerhoog: hoog }, prijzen)
   const perStuk = prijzen?.prijzen.scharnier.stuk ?? null
   const malCent = prijzen?.prijzen.scharnier.mal ?? null
 
@@ -42,6 +44,11 @@ export default function ScharnierBestel() {
         <div><label htmlFor="sc-kleur" style={label}>Kleur</label>
           <select id="sc-kleur" value={kleur} onChange={e => setKleur(e.target.value)} style={veld}>
             {SCHARNIER.kleuren.map(k => <option key={k.id} value={k.id}>{k.naam}</option>)}
+          </select></div>
+        <div><label htmlFor="sc-hoogte" style={label}>Hoogte van de deur</label>
+          <select id="sc-hoogte" value={hoog ? 'hoog' : 'std'} onChange={e => setHoog(e.target.value === 'hoog')} style={veld}>
+            <option value="std">Tot 231,5 cm: {SCHARNIER.perDeur} per deur</option>
+            <option value="hoog">Hoger of kamerhoog: {SCHARNIER.perDeurHoog} per deur</option>
           </select></div>
       </div>
       <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: 15, cursor: 'pointer', lineHeight: 1.5 }}>
@@ -62,7 +69,7 @@ export default function ScharnierBestel() {
         titel="Verdekt scharnier Basys DX-38"
         regels={spec.split('\n').slice(1)}
         href="/winkel/verdekt-scharnier-dx-38/"
-        configuratie={{ deuren: n, kleur, mal }}
+        configuratie={{ deuren: n, kleur, mal, kamerhoog: hoog }}
         hoeveelheden={{ scharnieren: stuks }}
       />
     </div>

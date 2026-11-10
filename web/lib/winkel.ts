@@ -45,7 +45,10 @@ export const SCHARNIER = {
   merk: 'Basys',
   kort: 'Verborgen scharnier voor kozijnloze en strakke binnendeuren. Draagt tot 80 kg per set, in drie richtingen verstelbaar, met magnetische afdekplaatjes.',
   draagvermogenKg: 80,
+  /** Per deur tot 2315 mm hoog; hogere en kamerhoge deuren krijgen er 4 (lijst Classic Next, 10-11-2026). */
   perDeur: 3,
+  perDeurHoog: 4,
+  hoogGrensMm: 2315,
   /** Op voorraad (Thijs, 9-11-2026). RVS en aluminium-look op aanvraag. */
   kleuren: [
     { id: 'vernikkeld', naam: 'Velours vernikkeld' },
