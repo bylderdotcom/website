@@ -68,7 +68,7 @@ export default function Pagina() {
       <p style={S.p}>In de volgorde van de bouw. Vul op een productpagina in wanneer de stukadoor komt, dan staan hier je datums bij.</p>
       <Tijdlijn />
 
-      <p style={{ ...S.p, fontSize: 14, marginTop: 30 }}>Bylder is de verkoper. Je bestelling en de betaling lopen via ons; de leverancier levert rechtstreeks bij je af.</p>
+      <p style={{ ...S.p, fontSize: 14, marginTop: 30 }}>Bylder is de verkoper. Je bestelling en de betaling lopen via ons; de leverancier levert rechtstreeks bij je af. <a href="/winkel/verzending-en-retour/" style={{ color: 'inherit' }}>Verzending en retour</a>: 14 dagen bedenktijd.</p>
     </main>
   )
 }

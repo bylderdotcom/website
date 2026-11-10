@@ -32,6 +32,7 @@ const VRAGEN = [
   { v: 'Kan er verlichting in?', a: 'Ja. In het profiel past een ledstrip voor indirect licht langs de vloer.' },
   { v: 'Hoe klopt de berekening?', a: 'Uit je plattegrond nemen we per ruimte de wand rond de vloer, min de deuropeningen, plus 7% zaagverlies. Profielen zijn 2 meter lang. Laat de maten voor het bestellen nog even nameten door wie het monteert.' },
   { v: 'Wie is de verkoper?', a: 'Bylder. Je bestelling en de betaling lopen via ons; de leverancier levert rechtstreeks bij je af.' },
+  { v: 'Kan ik het terugsturen?', a: 'Ja, binnen 14 dagen na ontvangst, zonder reden. Hoe dat gaat staat op de pagina Verzending en retour in de winkel (bylder.com/winkel/verzending-en-retour).' },
 ]
 
 export default function Pagina() {
