@@ -13,7 +13,7 @@ import Presentatie from './Presentatie'
  */
 
 export const metadata: Metadata = {
-  title: 'Klusseniers × Bylder: de presentatie | Bylder',
+  title: 'Klussenier × Bylder: de presentatie | Bylder',
   description: 'Je eigen link, je vergoeding en de woning van je klant in 3D. De presentatie voor Klusseniers.',
   robots: { index: false, follow: false },
   alternates: { canonical: 'https://www.bylder.com/klusseniers/presentatie/' },
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 export default function PresentatiePagina() {
   const dias = DIAS.map(d => ({ id: d.id, html: vulIn(d.html) }))
   return (
-    <main style={{ background: '#F5F0E8', padding: '32px 16px 64px' }}>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" precedence="default" />
+    <main style={{ background: '#F3F5F9', padding: '32px 16px 64px' }}>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700;800&display=swap" precedence="default" />
       <Presentatie dias={dias} />
     </main>
   )

@@ -10,6 +10,8 @@ export type Aanbrenger = {
   website?: string
   /** Wat hij zelf doet, in één zin. */
   vak: string
+  /** Huisstijl van de pagina: die van zijn eigen organisatie (11-11-2026: Klussenier), anders Bylder. */
+  huisstijl?: 'klussenier'
 }
 
 export const AANBRENGERS: Aanbrenger[] = [
@@ -20,5 +22,6 @@ export const AANBRENGERS: Aanbrenger[] = [
     plaats: 'Rosmalen',
     website: 'https://mikevangiesen.klussenier.nl/klusbedrijf/rosmalen/',
     vak: 'Klusbedrijf voor afbouw en verbouw',
+    huisstijl: 'klussenier',
   },
 ]
