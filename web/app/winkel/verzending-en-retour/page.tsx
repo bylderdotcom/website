@@ -43,7 +43,7 @@ export default function Pagina() {
       <p style={S.lead}>Bylder is de verkoper. De leverancier stuurt je bestelling rechtstreeks naar je toe. Hieronder staat wat verzenden kost, hoe je iets terugstuurt en wat je doet als er iets mis is.</p>
 
       <h2 style={S.h2}>Verzending</h2>
-      <p style={S.p}>We leveren in Nederland. Scharnieren en ander klein beslag versturen we als pakket voor <strong>€ 6,95 per bestelling</strong>. Profielen van 2 meter en deuren met kozijn gaan met een aparte vervoerder; die kosten staan in onze bevestiging voordat je betaalt.</p>
+      <p style={S.p}>We leveren in Nederland. Scharnieren en ander klein beslag versturen we als pakket voor <strong>€ 6,95 per bestelling</strong>. Deuren met kozijn gaan met een aparte vervoerder voor <strong>€ 99 per bestelling</strong>. Profielen van 2 meter ook; die kosten staan in onze bevestiging voordat je betaalt.</p>
       <p style={S.p}>Wat op voorraad ligt, gaat doorgaans binnen enkele werkdagen de deur uit. Je krijgt een mail zodra je bestelling onderweg is.</p>
 
       <h2 style={S.h2}>Terugsturen binnen 14 dagen</h2>

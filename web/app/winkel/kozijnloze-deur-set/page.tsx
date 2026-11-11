@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import DeursetBestel from './DeursetBestel'
+import KleurTegels from './KleurTegels'
 import BestelMoment from '../BestelMoment'
 import Vinkje from '../Vinkje'
 import { DEURSET, PLINT } from '@/lib/winkel'
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   title: `Kozijnloze deur met onzichtbaar kozijn, complete set ${PRIJS_TEKST} | Bylder`,
   description: `Complete kozijnloze binnendeur van Classic Next voor ${PRIJS_TEKST}: onzichtbaar kozijn, deurblad, verdekte scharnieren en magneetslot. Gegrond, schilder hem mee met je wand.`,
   alternates: { canonical: URL },
-  openGraph: { title: 'Kozijnloze deur, standaardset gegrond', url: URL, type: 'website', images: ['https://www.bylder.com/img/classic-next/portfolio-gang-wit.webp'],
+  openGraph: { title: 'Kozijnloze deur, standaardset gegrond', url: URL, type: 'website', images: ['https://www.bylder.com/img/winkel/deuren/origin-gegrond.webp'],
     description: `Onzichtbaar kozijn, deurblad, scharnieren en magneetslot in één set, ${PRIJS_TEKST} incl. btw.` },
 }
 
@@ -32,7 +33,7 @@ const VRAGEN = [
   { v: 'Welke maten zijn er?', a: 'Deurbladen van 73, 78, 83, 88 of 93 cm breed en 201,5, 211,5 of 231,5 cm hoog. De prijs is voor al deze maten gelijk. Plafondhoog (tot 270 cm) of breder kan via de configurator.' },
   { v: 'Wanneer moet ik bestellen?', a: `Vóór de stukadoor komt: het kozijn wordt in de wand gestuct. Reken op een levertijd van ongeveer ${DEURSET.levertijdWeken} weken.` },
   { v: 'Wat heb je van mij nodig?', a: 'De maat van het deurblad, de kant van de scharnieren en het slot. De wanddikte en eventuele bijzonderheden zet je in de toelichting bij het afrekenen; we controleren je bestelling voordat hij in productie gaat.' },
-  { v: 'Wat kost de levering?', a: 'Een deur met kozijn gaat met een aparte vervoerder. De leverkosten staan in onze bevestiging, voordat je betaalt.' },
+  { v: 'Wat kost de levering?', a: 'Een deur met kozijn gaat met een aparte vervoerder: € 99 per bestelling, ook als je meer deuren bestelt.' },
   { v: 'Kan ik de deur laten monteren?', a: `Ja. Monteren duurt ongeveer ${MONTAGE_UUR} uur per deur. Laat je de afwerking door Bylder doen, dan nemen we de montage mee in dezelfde offerte.` },
   { v: 'Wie is de verkoper?', a: 'Bylder. Je bestelling en de betaling lopen via ons; Classic Next maakt en levert de deur.' },
 ]
@@ -40,7 +41,7 @@ const VRAGEN = [
 export default function Pagina() {
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Product', name: `${DEURSET.merk} ${DEURSET.naam}`, brand: { '@type': 'Brand', name: DEURSET.merk },
-      description: DEURSET.kort, url: URL, image: ['https://www.bylder.com/img/classic-next/portfolio-gang-wit.webp'],
+      description: DEURSET.kort, url: URL, image: ['https://www.bylder.com/img/winkel/deuren/origin-gegrond.webp'],
       category: 'Binnendeuren', seller: { '@type': 'Organization', name: 'Bylder' },
       offers: { '@type': 'Offer', price: PRIJS, priceCurrency: 'EUR', availability: 'https://schema.org/BackOrder', url: URL,
         seller: { '@type': 'Organization', name: 'Bylder' } } },
@@ -68,11 +69,15 @@ export default function Pagina() {
           ))}
           <a href="#bestellen" style={{ display: 'inline-block', marginTop: 10, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 15.5, padding: '13px 22px', borderRadius: 11, textDecoration: 'none' }}>Bestellen</a>
         </div>
-        <div style={{ ...S.beeld, maxHeight: 620 }}>
-          <img src="/img/classic-next/portfolio-gang-wit.webp" width="800" height="1600" alt="Kozijnloze deur van Classic Next, vlak in een witte wand" style={{ width: '100%', height: '100%', maxHeight: 620, objectFit: 'cover', objectPosition: 'center 72%', display: 'block' }} />
+        <div style={S.beeld}>
+          <img src="/img/winkel/deuren/origin-gegrond.webp" width="1200" height="1260" alt="Gegronde kozijnloze deur, vlak in een wand in dezelfde kleur" style={{ width: '100%', height: 'auto', display: 'block' }} />
         </div>
       </div>
-      <p style={{ ...S.p, fontSize: 13, margin: '10px 0 0' }}>Beeld: Classic Next. De deur op de foto is geschilderd; je ontvangt hem gegrond.</p>
+      <p style={{ ...S.p, fontSize: 13, margin: '10px 0 0' }}>Render van de gegronde deur, met de wand in dezelfde kleur. Kruk niet inbegrepen.</p>
+
+      <h2 style={S.h2}>Liever meteen in kleur?</h2>
+      <p style={S.p}>Dezelfde set, in de fabriek afgelakt in een van zes kleuren. Ook plafondhoog.</p>
+      <KleurTegels />
 
       <h2 style={S.h2}>Wat je krijgt</h2>
       <div style={{ ...S.kaart, padding: 0, overflow: 'hidden' }}>

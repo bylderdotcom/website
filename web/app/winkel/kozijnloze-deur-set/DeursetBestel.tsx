@@ -1,12 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import MandKnop from '../MandKnop'
 import { useWinkelPrijzen, euroCent, productCent } from '../prijzen'
-import { DEURSET } from '@/lib/winkel'
+import { DEURSET, setKleur } from '@/lib/winkel'
 
-// Bestellen van de standaardset kozijnloze deur (11-11-2026): aantal, maat, draairichting en slot.
-// De prijs is per set vast; de leverkosten staan in de bevestiging tot Classic Next ze heeft opgegeven.
+// Bestellen van een deurset (11-11-2026): aantal, maat, draairichting en slot. Zonder `ral` de gegronde
+// standaardset; met `ral` een afgelakte set in die kleur, standaardhoogte of plafondhoog (?hoogte=plafond
+// in het adres kiest plafondhoog vooraf, voor de link vanuit Google Shopping). Prijs per set vast.
 
 const INKT = 'rgba(61,46,30,'
 const veld: React.CSSProperties = {
@@ -15,7 +16,13 @@ const veld: React.CSSProperties = {
 }
 const label: React.CSSProperties = { display: 'block', fontSize: 13, fontWeight: 700, color: `${INKT}0.75)`, margin: '0 0 5px' }
 
-export default function DeursetBestel() {
+export default function DeursetBestel({ ral }: { ral?: string }) {
+  const kleur = setKleur(ral)
+  const [plafond, setPlafond] = useState(false)
+  const [plafondCm, setPlafondCm] = useState('260')
+  useEffect(() => {
+    if (kleur && new URLSearchParams(window.location.search).get('hoogte') === 'plafond') setPlafond(true)
+  }, [kleur])
   const [aantal, setAantal] = useState('1')
   const [breedte, setBreedte] = useState(88)
   const [hoogte, setHoogte] = useState('231,5')
@@ -24,13 +31,16 @@ export default function DeursetBestel() {
   const prijzen = useWinkelPrijzen()
   const n = Math.max(1, Math.min(60, Math.round(Number(aantal) || 1)))
   const online = !!prijzen?.online['winkel-deurset']
-  const totaal = productCent('winkel-deurset', { aantal: n }, prijzen)
-  const perSet = prijzen?.prijzen.deurset?.set ?? null
+  const cfg = { aantal: n, ral: kleur?.ral, plafond: !!kleur && plafond }
+  const totaal = productCent('winkel-deurset', cfg, prijzen)
+  const perSet = productCent('winkel-deurset', { ...cfg, aantal: 1 }, prijzen)
+  const hCm = plafond ? String(Math.max(230, Math.min(270, Math.round(Number(plafondCm) || 260)))) : hoogte
+  const uitvoering = kleur ? `afgelakt RAL ${kleur.ral} ${kleur.naam}` : 'gegrond'
   const slotNaam = DEURSET.sloten.find(s => s.id === slot)?.naam.split(' (')[0] ?? slot
   const regels = [
-    `${n} × standaardset gegrond, ${breedte} × ${hoogte} cm`,
+    `${n} × ${plafond && kleur ? 'plafondhoge set' : 'standaardset'} ${uitvoering}, ${breedte} × ${hCm} cm`,
     `Scharnieren ${draai}, ${slotNaam.toLowerCase()}`,
-    'Kozijn met bovendorpel, 3 scharnieren DX-38 en magneetslot; zonder kruk',
+    `Kozijn met bovendorpel, ${plafond && kleur ? 4 : 3} scharnieren DX-38 en magneetslot; zonder kruk`,
   ]
 
   return (
@@ -42,10 +52,22 @@ export default function DeursetBestel() {
           <select id="ds-b" value={breedte} onChange={e => setBreedte(Number(e.target.value))} style={veld}>
             {DEURSET.breedtes.map(b => <option key={b} value={b}>{b} cm</option>)}
           </select></div>
-        <div><label htmlFor="ds-h" style={label}>Hoogte deurblad</label>
-          <select id="ds-h" value={hoogte} onChange={e => setHoogte(e.target.value)} style={veld}>
-            {DEURSET.hoogtes.map(h => <option key={h} value={h}>{h} cm</option>)}
-          </select></div>
+        {kleur && (
+          <div style={{ gridColumn: '1 / -1' }}><label htmlFor="ds-ph" style={label}>Hoogte</label>
+            <select id="ds-ph" value={plafond ? 'plafond' : 'std'} onChange={e => setPlafond(e.target.value === 'plafond')} style={veld}>
+              <option value="std">Standaardhoogte, tot 231,5 cm</option>
+              <option value="plafond">Plafondhoog, tot 270 cm</option>
+            </select></div>
+        )}
+        {plafond && kleur ? (
+          <div><label htmlFor="ds-pc" style={label}>Hoogte tot het plafond (cm)</label>
+            <input id="ds-pc" inputMode="numeric" value={plafondCm} onChange={e => setPlafondCm(e.target.value.replace(/[^\d]/g, '').slice(0, 3))} style={veld} /></div>
+        ) : (
+          <div><label htmlFor="ds-h" style={label}>Hoogte deurblad</label>
+            <select id="ds-h" value={hoogte} onChange={e => setHoogte(e.target.value)} style={veld}>
+              {DEURSET.hoogtes.map(h => <option key={h} value={h}>{h} cm</option>)}
+            </select></div>
+        )}
         <div><label htmlFor="ds-d" style={label}>Scharnieren</label>
           <select id="ds-d" value={draai} onChange={e => setDraai(e.target.value === 'rechts' ? 'rechts' : 'links')} style={veld}>
             <option value="links">Links</option><option value="rechts">Rechts</option>
@@ -56,7 +78,7 @@ export default function DeursetBestel() {
           </select></div>
       </div>
       <p aria-live="polite" style={{ margin: 0, fontSize: 15, color: '#1A1208', background: '#fff', border: '1.5px solid #3D5A3E', borderRadius: 12, padding: '12px 16px' }}>
-        <strong>{n} {n === 1 ? 'deur' : 'deuren'}</strong> · {breedte} × {hoogte} cm · scharnieren {draai}
+        <strong>{n} {n === 1 ? 'deur' : 'deuren'}</strong> · {kleur ? `RAL ${kleur.ral} · ` : ''}{breedte} × {hCm} cm · scharnieren {draai}
         <br /><span style={{ fontSize: 14, color: `${INKT}0.7)` }}>
           {totaal != null
             ? <><strong style={{ fontSize: 17, color: '#1A1208' }}>{euroCent(totaal)}</strong> incl. btw{n > 1 && perSet != null ? <> ({euroCent(perSet)} per deur)</> : null}, excl. montage en levering. {online ? 'Je rekent af in je mandje, met iDEAL.' : 'De leverkosten staan in onze bevestiging; je betaalt pas als je akkoord bent.'}</>
@@ -66,10 +88,10 @@ export default function DeursetBestel() {
       <MandKnop
         product="winkel-deurset"
         klaar
-        titel="Kozijnloze deur, standaardset gegrond"
+        titel={kleur ? `Kozijnloze deur ${kleur.naam}${plafond ? ', plafondhoog' : ''}` : 'Kozijnloze deur, standaardset gegrond'}
         regels={regels}
-        href={`/winkel/${DEURSET.slug}/`}
-        configuratie={{ aantal: n, breedte, hoogte, draai, slot }}
+        href={kleur ? `/winkel/${DEURSET.slug}/ral-${kleur.ral}/` : `/winkel/${DEURSET.slug}/`}
+        configuratie={{ aantal: n, breedte, hoogte: hCm, draai, slot, ...(kleur ? { ral: kleur.ral, plafond } : {}) }}
         hoeveelheden={{ deuren: n }}
       />
     </div>

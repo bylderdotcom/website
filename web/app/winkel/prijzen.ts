@@ -10,7 +10,7 @@ export type WinkelPrijzen = {
   prijzen: {
     plint: { profiel: number | null; binnenhoek: number | null; buitenhoek: number | null; koppelstuk: number | null }
     scharnier: { stuk: number | null; afdekplaat: number | null; mal?: number | null }
-    deurset?: { set: number | null }
+    deurset?: { set: number | null; gelakt?: number | null; gelaktPlafond?: number | null }
     /** Per leverancier, één keer per bestelling. */
     verzending: Record<string, number | null>
   }
@@ -45,7 +45,8 @@ export function productCent(product: string, c: Record<string, unknown>, w: Wink
     return stuks * p.stuk + (c.mal ? p.mal! : 0)
   }
   if (product === 'winkel-deurset') {
-    const set = w.prijzen.deurset?.set
+    const d = w.prijzen.deurset
+    const set = !c.ral ? d?.set : c.plafond ? d?.gelaktPlafond : d?.gelakt
     return set == null ? null : Math.max(1, n(c.aantal)) * set
   }
   return null

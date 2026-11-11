@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 }
 
 const PRODUCTEN = [
-  { href: `/winkel/${DEURSET.slug}/`, merk: DEURSET.merk, naam: DEURSET.naam, tekst: 'Onzichtbaar kozijn, deurblad, scharnieren en magneetslot in één set. Gegrond: schilder hem mee met je wand.',
-    beeld: <img src="/img/classic-next/portfolio-gang-wit-sm.webp" width="800" height="1600" alt="Kozijnloze deur van Classic Next in een witte gang" style={{ height: 280, width: '100%', objectFit: 'cover', display: 'block' }} /> },
+  { href: `/winkel/${DEURSET.slug}/`, merk: DEURSET.merk, naam: DEURSET.naam, tekst: 'Onzichtbaar kozijn, deurblad, scharnieren en magneetslot in één set. Gegrond om mee te schilderen, of afgelakt in zes kleuren.',
+    beeld: <img src="/img/winkel/deuren/origin-6005-sm.webp" width="400" height="420" alt="Kozijnloze deur in mosgroen" style={{ height: 280, width: '100%', objectFit: 'cover', display: 'block' }} /> },
   { href: `/winkel/${PLINT.slug}/`, merk: PLINT.merk, naam: PLINT.naam, tekst: 'Inbouwplint vlak met de wand. Het pakket rekenen we uit je plattegrond.', beeld: <div style={{ padding: 16 }}><PlintBeeld /></div> },
   { href: `/winkel/${SCHARNIER.slug}/`, merk: SCHARNIER.merk, naam: SCHARNIER.naam, tekst: `Verborgen scharnier tot ${SCHARNIER.draagvermogenKg} kg per set, 3D verstelbaar.`,
     beeld: <img src="/img/winkel/dx38.webp" width="1000" height="1366" alt="Verdekt scharnier Basys DX-38 Design" style={{ height: 260, width: 'auto', display: 'block', margin: '12px auto' }} /> },
