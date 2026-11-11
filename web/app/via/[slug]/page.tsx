@@ -21,6 +21,11 @@ import { VANAF, euroRond } from '../../kozijnloze-deuren/configurator/prijs'
  * Gietvloer: een verwerker uit het netwerk. Kast: een timmerbedrijf uit het netwerk. Auping: de winkel, met de code.
  * De winkel (vaste prijzen, geen aanbrengkorting) en de afwerking door Bylder staan hier bewust niet op.
  *
+ * OPTIMALISATIE (11-11-2026, verzoek Daniel): voor nieuwbouw én bestaande bouw; bovenaan wie de vakman is, wat de klant
+ * krijgt en één hoofdknop naar de eigen woning in 3D in de app (met ?ref=, zodat de aanbrenger bewaard blijft, ook na het
+ * inloggen); een voorbeeld zonder account; delen met je partner via WhatsApp; een voorvertoning (Open Graph) voor als de
+ * vakman de link zelf via WhatsApp deelt. Klikken gemeten met data-meet (GA4 afwerk_klik, plek via-...).
+ *
  * Geen zoekpagina (noindex): hij is persoonlijk en hoort niet in Google.
  */
 
@@ -33,8 +38,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!a) return {}
   return {
     title: `Aanbevolen door ${a.naam}, ${a.bedrijf} | Bylder`,
-    description: `${a.naam} raadt deze maatwerkproducten aan voor je nieuwe woning. Via deze link krijg je 10% korting op de orderwaarde.`,
+    description: `${a.naam} regelt 10% korting op deuren zonder kozijn, een gietvloer en een kast op maat. Zie ze eerst in je eigen woning in 3D.`,
     robots: { index: false, follow: false },
+    // De voorvertoning als de vakman de link via WhatsApp of mail deelt.
+    openGraph: { type: 'website', url: `https://www.bylder.com/via/${a.slug}/`, siteName: 'Bylder',
+      title: `10% korting via ${a.naam.split(' ')[0]} van ${a.bedrijf}`,
+      description: 'Deuren zonder kozijn, gietvloer en kast op maat. Gratis ontwerpen in je eigen woning in 3D.',
+      images: [{ url: 'https://www.bylder.com/img/voorbeeldwoning-3d.webp', width: 1200, height: 712, alt: 'Een woning in 3D met gekozen vloer en deuren' }] },
     alternates: { canonical: `https://www.bylder.com/via/${a.slug}/` },
   }
 }
@@ -52,10 +62,10 @@ type Product = { naam: string; korting: string; wat: string; href: string; knop:
 const PRODUCTEN: Product[] = [
   { naam: 'Deuren zonder kozijn', korting: '10% korting', wat: 'Plafondhoge deuren die vlak in de wand liggen, zonder kozijn of architraaf. Stel ze samen in 3D.', href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deuren samen', moment: `Vanaf ${euroRond(VANAF)} per deur vóór korting · kies vóór de stukadoor komt`, offerte: 'Bylder maakt je offerte en is je aanspreekpunt',
     img: '/img/classic-next/deur-eiken-fineer.jpg', sm: '/img/classic-next/deur-eiken-fineer-sm.jpg 600w, /img/classic-next/deur-eiken-fineer.jpg 800w', alt: 'Plafondhoge binnendeur in eikenfineer, vlak in een witte wand', logo: ['/img/logos/classic-next.png', 'Classic Next', 18] },
-  { naam: 'Gietvloer', korting: '10% korting', wat: 'Upload een foto van een vloer die je mooi vindt; we zoeken de kleur en rekenen je ruimtes uit. Tot drie stalen gratis.', href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer', moment: 'Kies vóór de oplevering', kleuren: true, door: 'Gelegd door een verwerker', offerte: 'Offerte van een verwerker bij jou in de buurt' },
+  { naam: 'Gietvloer', korting: '10% korting', wat: 'Upload een foto van een vloer die je mooi vindt; we zoeken de kleur en rekenen je ruimtes uit. Tot drie stalen gratis.', href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer', moment: 'Kies voordat de vloer gelegd wordt', kleuren: true, door: 'Gelegd door een verwerker', offerte: 'Offerte van een verwerker bij jou in de buurt' },
   { naam: 'Kast op maat', korting: '10% korting', wat: 'Laat een foto zien van een kast die je mooi vindt en wijs aan waar hij komt. Je ziet hem in 3D, met maten.', href: '/kasten-op-maat/ontwerpen/', knop: 'Ontwerp je kast', moment: 'Gratis inmeten na de oplevering', offerte: 'Offerte van een timmerbedrijf uit ons netwerk',
     img: '/img/kasten/hoekkast-3d-sm.jpg', sm: '/img/kasten/hoekkast-3d-sm.jpg 600w, /img/kasten/hoekkast-3d.jpg 1200w', alt: 'Hoekkast op maat in 3D, uit de kastontwerper van Bylder', door: 'Gemaakt door een timmerbedrijf' },
-  { naam: 'Auping bed', korting: '10% korting', wat: 'Op het reguliere assortiment van Auping: boxsprings, matrassen en bedframes. Niet bovenop een lopende actie of sale.', href: 'https://app.bylder.com/dashboard/vouchers', knop: 'Haal je Auping-code', moment: 'Gratis account nodig', offerte: 'Je code laat je zien in de Auping-winkel',
+  { naam: 'Auping bed', korting: '10% korting', wat: 'Op het reguliere assortiment van Auping: boxsprings, matrassen en bedframes. Niet bovenop een lopende actie of sale.', href: 'https://app.bylder.com/dashboard/vouchers?ref={slug}', knop: 'Haal je Auping-code', moment: 'Gratis account nodig', offerte: 'Je code laat je zien in de Auping-winkel',
     img: '/img/auping-noble-solid-oak.webp', sm: '/img/auping-noble-solid-oak-sm.webp 500w, /img/auping-noble-solid-oak.webp 1000w', alt: 'Auping Noble Solid Oak bed van massief eiken in een lichte slaapkamer', logo: ['/img/logos/auping-blue.svg', 'Auping', 20] },
 ]
 const STAALTJES = ['kalkwit', 'zandbeige', 'betongrijs', 'grafiet'].map(id => KLEUREN.find(k => k.id === id)!).filter(Boolean)
@@ -65,20 +75,41 @@ export default async function ViaPagina({ params }: { params: Promise<{ slug: st
   const a = AANBRENGERS.find(x => x.slug === slug)
   if (!a) notFound()
   const voornaam = a.naam.split(' ')[0]
+  const app3d = `https://app.bylder.com/dashboard/mijn-woning?ref=${a.slug}`
+  const deelTekst = `Kijk, via ${voornaam} van ${a.bedrijf} krijgen we 10% korting op deuren, een gietvloer en kasten: https://www.bylder.com/via/${a.slug}/`
+  const initialen = a.naam.split(' ').filter(w => /^[A-Z]/.test(w)).map(w => w[0]).slice(0, 2).join('')
+  const KNOP: React.CSSProperties = { background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 16, padding: '14px 22px', borderRadius: 12, textDecoration: 'none', display: 'inline-block' }
+  const KNOP2: React.CSSProperties = { background: '#fff', color: '#1A1208', fontWeight: 800, fontSize: 16, padding: '13px 20px', borderRadius: 12, textDecoration: 'none', display: 'inline-block', border: `1.5px solid ${INKT}0.18)` }
   return (
     <div style={{ maxWidth: 1000, margin: '0 auto', padding: '44px 24px 72px', color: '#1A1208' }}>
       <RefVastleggen slug={a.slug} />
-      <p style={LABEL}>Aanbevolen door {a.naam} · {a.bedrijf}</p>
-      <h1 style={{ fontSize: '2.1rem', fontWeight: 800, letterSpacing: '-0.028em', margin: '8px 0 14px', textWrap: 'balance', maxWidth: '24ch' }}>
-        Maatwerk voor je nieuwe woning, met 10% korting via {voornaam}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 6 }}>
+        <span aria-hidden="true" style={{ width: 52, height: 52, borderRadius: 26, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 19, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{initialen}</span>
+        <p style={{ ...LABEL, margin: 0 }}>Aanbevolen door {a.naam}<br /><span style={{ color: `${INKT}0.6)` }}>{a.bedrijf}</span></p>
+      </div>
+      <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.4rem)', fontWeight: 800, letterSpacing: '-0.028em', margin: '10px 0 14px', textWrap: 'balance', maxWidth: '22ch' }}>
+        Deuren, vloer en kasten voor je huis, met 10% korting via {voornaam}
       </h1>
       <p style={{ ...P, fontSize: 18 }}>
-        {voornaam} raadt deze producten aan omdat ze bij een nieuwbouwwoning het verschil maken, en omdat je ze op tijd
-        moet regelen. Via deze link krijg je <strong>10% korting op de orderwaarde</strong>. Je ontwerpt gratis, vraagt
-        een offerte aan en beslist pas daarna.
+        Ga je verbouwen of krijg je de sleutel van een nieuwe woning? Zet je huis in 3D en zie de deuren, de vloer en de
+        kasten meteen op hun plek. Via deze link krijg je <strong>10% korting op de orderwaarde</strong>. Ontwerpen is
+        gratis; je beslist pas na een definitieve prijs.
+      </p>
+      <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 22px', display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        {['10% korting via ' + voornaam, 'Gratis ontwerpen', 'Nieuwbouw en bestaande bouw', 'Je beslist pas na de prijs'].map(t => (
+          <li key={t} style={{ fontSize: 14, fontWeight: 700, color: GROEN, background: 'rgba(61,90,62,0.08)', borderRadius: 999, padding: '6px 12px' }}>{t}</li>
+        ))}
+      </ul>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, alignItems: 'center' }}>
+        <a href={app3d} data-meet="via-3d-boven" style={KNOP}>Zet je woning in 3D</a>
+        <a href="#producten" style={KNOP2}>Kies een product</a>
+      </div>
+      <p style={{ fontSize: 13.5, color: `${INKT}0.6)`, margin: '10px 0 0' }}>
+        Gratis account, inloggen met Google of een link in je mail. Eerst rondkijken? <a href="/mijn-woning/?voorbeeld" data-meet="via-voorbeeld" style={{ color: GROEN, fontWeight: 700 }}>Bekijk een voorbeeldwoning</a>.
       </p>
 
-      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', margin: '26px 0 0' }}>
+      <h2 id="producten" style={{ fontSize: '1.45rem', fontWeight: 800, letterSpacing: '-0.02em', margin: '44px 0 4px', scrollMarginTop: 110 }}>Waar je korting op krijgt</h2>
+      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', margin: '16px 0 0' }}>
         {PRODUCTEN.map(p => (
           <section key={p.naam} aria-labelledby={`p-${p.href}`} style={{ background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
             <span style={{ display: 'block', aspectRatio: '4 / 3', overflow: 'hidden', background: '#1A1208', position: 'relative' }}>
@@ -95,11 +126,25 @@ export default async function ViaPagina({ params }: { params: Promise<{ slug: st
             <p style={{ fontSize: 14.5, lineHeight: 1.6, color: `${INKT}0.75)`, margin: 0, flex: 1 }}>{p.wat}</p>
             <p style={{ fontSize: 13, color: '#1A1208', margin: 0, fontWeight: 600 }}>{p.offerte}</p>
             <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: 0 }}>{p.moment}</p>
-            <a href={p.href} style={{ marginTop: 6, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 16px', borderRadius: 10, textDecoration: 'none', textAlign: 'center' }}>{p.knop}</a>
+            <a href={p.href.replace('{slug}', a.slug)} data-meet={`via-${p.href.split('/')[1] || 'auping'}`} style={{ marginTop: 6, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 16px', borderRadius: 10, textDecoration: 'none', textAlign: 'center' }}>{p.knop}</a>
             </span>
           </section>
         ))}
       </div>
+
+      <section aria-labelledby="h-3d" style={{ marginTop: 44, background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 18, overflow: 'hidden', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))' }}>
+        <img src="/img/voorbeeldwoning-3d.webp" srcSet="/img/voorbeeldwoning-3d-sm.webp 600w, /img/voorbeeldwoning-3d.webp 1200w" sizes="(max-width:720px) 100vw, 480px"
+          alt="Een woning in 3D, met de gekozen vloer en deuren per ruimte" width={1200} height={712} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', background: '#E9E4DA' }} />
+        <div style={{ padding: '22px 24px', display: 'flex', flexDirection: 'column', gap: 10 }}>
+          <h2 id="h-3d" style={{ fontSize: '1.3rem', fontWeight: 800, margin: 0 }}>Je hele huis in 3D, uit je eigen plattegrond</h2>
+          <ul style={{ ...P, margin: 0, paddingLeft: 20, fontSize: 15.5 }}>
+            <li>Upload de bouwtekening of een plattegrond, van een nieuw of een bestaand huis.</li>
+            <li>De ruimtes en m² komen eruit; je kiest vloer, deuren en kasten per kamer.</li>
+            <li>Laat {voornaam} meekijken en zet zijn offerte ernaast.</li>
+          </ul>
+          <div><a href={app3d} data-meet="via-3d-blok" style={KNOP}>Zet je woning in 3D</a></div>
+        </div>
+      </section>
 
       <h2 style={{ fontSize: '1.45rem', fontWeight: 800, letterSpacing: '-0.02em', margin: '48px 0 12px' }}>Zo werkt het</h2>
       <ol style={{ ...P, paddingLeft: 22, display: 'grid', gap: 8 }}>
@@ -114,6 +159,11 @@ export default async function ViaPagina({ params }: { params: Promise<{ slug: st
           deze link bestelt. Jij betaalt daar niets extra voor; je krijgt juist korting. Bylder kiest de makers op de
           kwaliteit van hun product en hun werk; bij wie je bestelt, beslis je zelf.
         </p>
+      </div>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, alignItems: 'center', marginTop: 26 }}>
+        <a href={`https://wa.me/?text=${encodeURIComponent(deelTekst)}`} data-meet="via-deel-whatsapp" rel="noopener" style={KNOP2}>Stuur naar je partner via WhatsApp</a>
+        <span style={{ fontSize: 13.5, color: `${INKT}0.6)` }}>De korting gaat mee: de link onthoudt {voornaam}.</span>
       </div>
 
       <p style={{ ...P, fontSize: 13.5, marginTop: 28 }}>
