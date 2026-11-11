@@ -2429,7 +2429,8 @@ def bouw_pagina(p, ruimtes, vb, wk, buren, gem_totaal, indexeerbaar):
     # De gemeente in cijfers. Staat vóór de bedrijvenlijsten en ná de
     # keuzemomenten: eerst wat er speelt in dit project, dan waar het staat, dan
     # wie het kan uitvoeren.
-    gem_html = gemeente_blok(p, E(naam), E(plaats))
+    # Ongeëscaped doorgeven: gemeente_blok escapet zelf (stond er dubbel: "&#x27;s-Hertogenbosch in cijfers").
+    gem_html = gemeente_blok(p, naam, plaats)
 
     # Opgezocht handwerk. Leeg zolang er niets met bron is vastgelegd — dat is
     # de bedoeling en geen gebrek.

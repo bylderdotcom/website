@@ -137,9 +137,12 @@ export default function ConfiguratorPagina() {
             Stel je kozijnloze deur samen
           </h1>
           <p style={{ ...P, fontSize: 17.5, margin: 0 }}>
-            Dertien groefpatronen, elke RAL-kleur, altijd plafondhoog. Sleep door het
+            Dertien groefpatronen, elke RAL-kleur, altijd plafondhoog.
+            {/* Op een telefoon alleen de eerste zin: de deur moet meteen in beeld (UX-audit 11-11-2026). */}
+            <span className="kd-lang"> Sleep door het
             kleurenraster en kijk wat er met het patroon gebeurt: een groef is een schaduw,
-            dus wat in gebroken wit fluistert, roept in antraciet.
+            dus wat in gebroken wit fluistert, roept in antraciet.</span>
+            <style>{'@media(max-width:720px){.kd-lang{display:none}}'}</style>
           </p>
         </section>
 

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { usePathname } from 'next/navigation'
 
 /**
  * Gedeelde site-navigatie — ÉÉN bron voor elke pagina.
@@ -64,6 +65,8 @@ export default function Nav({ merken }: { merken: number }) {
   // eerst een flits van het desktopmenu zag totdat de JS geladen was.
   const [open, setOpen] = useState<string | null>(null)
   const [mobielOpen, setMobielOpen] = useState(false)
+  const pad = usePathname() ?? ''
+  const inConfigurator = /^\/(kozijnloze-deuren\/configurator|gietvloer\/ontwerpen|kasten-op-maat\/ontwerpen)/.test(pad)
   const [mobielSectie, setMobielSectie] = useState<string | null>(null)
   const wrapRef = useRef<HTMLDivElement>(null)
 
@@ -141,7 +144,14 @@ export default function Nav({ merken }: { merken: number }) {
         // hierboven als inline-style op de elementen staan.
         + '@media(max-width:1180px){.bv-bar{padding:13px 16px!important;gap:10px!important}'
         + '.bv-r{gap:10px!important}.bv-cta{font-size:0.8125rem!important;padding:9px 14px!important}'
-        + '.bv-burger{padding:6px 2px!important}}'
+        + '.bv-burger{padding:6px 2px!important}'
+        // Tikdoelen van minstens 44px (UX-audit 11-11-2026): groter raakvlak, zelfde plek in de balk.
+        + '.bv-mand{padding:10px!important;margin:-8px!important}'
+        + '.bv-burger{padding:14px 12px!important;margin:-8px -10px!important}'
+        + '.bv-cta{padding-top:12px!important;padding-bottom:12px!important}'
+        // In de configurators staat de eigen offerteknop onderaan; twee knoppen met dezelfde tekst
+        // en een ander doel in één scherm verwart.
+        + '.bv-cta-weg{display:none!important}}'
         + '@media(max-width:420px){.bv-bar{padding:12px 14px!important;gap:8px!important}'
         + '.bv-logo{gap:8px!important}.bv-lt{font-size:16px!important}'
         + '.bv-r{gap:8px!important}.bv-cta{font-size:0.75rem!important;padding:8px 12px!important}}'
@@ -205,7 +215,7 @@ export default function Nav({ merken }: { merken: number }) {
           </a>
           {KNOPPEN.map((k) => (
             <a key={k.href} href={k.href} onClick={() => meet('menu_klik', { knop: k.meet, plek: 'balk' })}
-               className={k.primair ? 'bv-cta' : 'bv-cta bv-cta2'}
+               className={(k.primair ? 'bv-cta' : 'bv-cta bv-cta2') + (inConfigurator ? ' bv-cta-weg' : '')}
                style={{ background: k.primair ? '#3D5A3E' : 'transparent', color: k.primair ? '#F5F0E8' : '#3D5A3E', border: '1.5px solid #3D5A3E', fontSize: '0.875rem', fontWeight: 700, padding: '9px 18px', borderRadius: 9, textDecoration: 'none', whiteSpace: 'nowrap' }}>
               {k.label}
             </a>

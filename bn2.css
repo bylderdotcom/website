@@ -131,3 +131,6 @@ body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){max-width:120
 @media(max-width:1020px){div.container,main.container,div.page-wrapper,div.page-wrap,body>header.hero,main[style*="max-width:1400px"],body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){padding-left:16px!important;padding-right:16px!important}}
 @media(max-width:420px){div.container,main.container,div.page-wrapper,div.page-wrap,body>header.hero,main[style*="max-width:1400px"],body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){padding-left:14px!important;padding-right:14px!important}}
 @media(max-width:359px){div.container,main.container,div.page-wrapper,div.page-wrap,body>header.hero,main[style*="max-width:1400px"],body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){padding-left:10px!important;padding-right:10px!important}}
+/* UX-audit 11-11-2026: invulvelden 16px (iPhone zoomt anders in) en tikdoelen van 44px in het menu. */
+@media(max-width:720px){input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea{font-size:16px!important}}
+@media(max-width:1180px){.bn2-mand{padding:10px;margin:-8px}.bn2-bg{padding:14px 12px;margin:-8px -10px}.bn2-cta{padding-top:12px;padding-bottom:12px}}

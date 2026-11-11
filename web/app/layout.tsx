@@ -64,6 +64,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           + '.keuze-grid,.compare-grid,.price-grid,.name-row,.vent-grid,.footer-inner,'
           + '.footer-grid{grid-template-columns:1fr}'
           + '*{min-width:0}'
+          /* iPhone zoomt in op een veld met een letter onder 16px; daarna verspringt de pagina (UX-audit 11-11-2026). */
+          + 'input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea{font-size:16px!important}'
           + '[style*="min-width:2"],[style*="min-width:3"],[style*="min-width:4"],'
           + '[style*="min-width:5"],[style*="min-width:6"],[style*="min-width:7"],'
           + '[style*="min-width:8"],[style*="min-width:9"],[style*="min-width: 2"],'
