@@ -179,6 +179,12 @@ Bij elk plan dat de VS-markt (`/en-us`) of verkoop in NL raakt: deze koers meene
   Nu: binnendeuren, gietvloer, kast op maat (en plinten via offerte). Bij elk gesprek over de
   tweeling, configuratoren of de VS-lancering: Daniel herinneren dat deze lijst nog gemaakt moet worden.
 
+- **OPEN, niet vergeten: "van AI-ontwerp naar realiteit bij jou in huis" (idee Daniel, 11-11-2026).** Daniel heeft met AI een
+  voorraadkast ontworpen die nergens te koop is en wil die laten maken. Dat wordt de eerste proef én een propositie: iemand
+  ontwerpt een meubel met AI (of uploadt een AI-beeld), Bylder maakt er een maakbaar ontwerp van (maten, zaaglijst, dxf via de
+  kastontwerper), een timmerbedrijf maakt het, een vakman plaatst het. Eerst Daniels eigen kast als voorbeeld met foto's van
+  beeld tot geplaatst; daarna een pagina. Bij elk gesprek over de kastontwerper, fabrieken of de visie: Daniel hieraan herinneren.
+
 ## Stack (feiten)
 - Pre-rendered HTML-pagina's per content-cluster (mappen in de repo-root, bv. `nieuwbouw-gids/`, `kortingscode/`, `offerte-check/`, `en-us/`).
 - Content-generatie via **Python-scripts** in `scripts/` (`nieuwbouw_scraper.py`, `nwn_scraper.py`, `vakbedrijven_pipeline.py`, `winkels_mvp.py`) + JSON-data in `data/`.
