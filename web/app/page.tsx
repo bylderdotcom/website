@@ -1,19 +1,17 @@
 import type { Metadata } from 'next'
-import HomeClient from './HomeClient'
-import HomeHeld from './held/HomeHeld'
+import NieuweHome from './home/NieuweHome'
 import { HOME_JSONLD } from './homeHtml'
 
-// Getrouwe port van de homepage index.html (Fase 1B). Metadata + JSON-LD hier
-// (server-component); de interactieve body zit in HomeClient ('use client').
+// Metadata + JSON-LD hier; de pagina zelf is app/home/NieuweHome.tsx (sinds 11-11-2026).
 
-const OG_TITLE = 'Richt je huis in voordat het er staat — Bylder'
+const OG_TITLE = 'Van sleutel tot ingericht huis | Bylder'
 const OG_DESC =
-  'Bylder leest je plattegrond en de planning van de bouwer: per keuze wanneer hij valt, en je deuren, vloer en verlichting alvast samengesteld met de maten uit jouw tekening. Gratis voor bewoners.'
+  'Upload je tekening en zie je woning in 3D. Kies je deuren, vloer en kasten op hun plek, en laat het afwerken in één offerte. Gratis ontwerpen, voor nieuwbouw en bestaande bouw.'
 
 export const metadata: Metadata = {
-  title: 'Richt je nieuwbouwhuis in voordat het er staat | Bylder',
+  title: 'Je woning in 3D: deuren, vloer en kasten kiezen en laten afwerken | Bylder',
   description:
-    'Van sleutel tot ingericht huis: ontwerp je deuren, vloer en kasten in je eigen woning, laat de afwerking in één offerte doen en richt in met korting bij 56 merken.',
+    'Van sleutel tot ingericht huis: zet je woning in 3D uit je eigen tekening, kies deuren, gietvloer en kasten met prijs, en laat de afwerking in één offerte doen.',
   authors: [{ name: 'Bylder Nederland B.V.' }],
   keywords: [
     'kopersbegeleiding nieuwbouw', 'offerte check aannemer', 'meerwerk controleren',
@@ -49,7 +47,7 @@ export default function HomePage() {
       {HOME_JSONLD.map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
-      <HomeClient><HomeHeld /></HomeClient>
+      <NieuweHome />
     </>
   )
 }
