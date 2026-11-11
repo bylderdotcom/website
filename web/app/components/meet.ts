@@ -28,5 +28,8 @@ export const meetConfigurator = (product: string, stap: string) => {
   } catch { /* geen window: server */ }
 }
 
-export const meetLead = (leadType: string, params: Record<string, string | number | null> = {}) =>
+export const meetLead = (leadType: string, params: Record<string, string | number | null> = {}) => {
   meet('generate_lead', { lead_type: leadType, ...params })
+  // De reisbalk (Reisbalk.tsx) zet stap 4 "Offerte" op gedaan zodra er een offerte is aangevraagd.
+  if (leadType === 'offerte') { try { localStorage.setItem('bylder:aanvraag:v1', new Date().toISOString().slice(0, 10)) } catch { /* privévenster */ } }
+}

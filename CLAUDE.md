@@ -316,5 +316,13 @@ een kwartier live" zonder `vercel ls website` te checken.
   Ook gedaan (11-11): tekst onder 13px op een telefoon naar 13px (regel in `layout.tsx` en `bn2.css`), footer per groep
   inklapbaar op een telefoon (vinkje zonder script, `Footer.tsx`). Nog open: eigen foto's van stucwerk, tegels en badkamer (Daniel).
 
+- **Eén reislijn en de site die je woning kent (besluit Daniel, 11-11-2026).** Onder het menu staat op de pagina's van de
+  reis (homepage, mijn-woning, deuren, gietvloer, kasten, afwerken, winkel, projectpagina's, /via/) een balk met vijf
+  stappen: Tekening, Woning in 3D, Kiezen, Offerte, Afgewerkt (`web/app/components/Reisbalk.tsx`, in `layout.tsx`; alleen
+  Next-pagina's, verborgen op een telefoon in de configurators). Afgevinkt op basis van de woning in de browser
+  (`web/lib/jouw-woning.ts`, leest `bylder:mijn-woning:v1`) en een verstuurde aanvraag (`bylder:aanvraag:v1`, gezet in
+  `meetLead`). Met een eigen woning staat er "Jouw woning: 83 m² · 7 deuren" en rekenen de productkaarten op de homepage
+  met die aantallen (`JouwRegel.tsx`). Klikken: `data-meet` `reis-<n>`, `reis-woning`, `reis-volgende-<n>`.
+
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.

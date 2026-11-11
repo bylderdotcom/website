@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import Nav from './components/Nav'
+import Reisbalk from './components/Reisbalk'
 import { aantalMerken } from '@/lib/merken'
 import Footer from './components/Footer'
 import KlikMeter from './components/KlikMeter'
@@ -115,6 +116,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             niet mee te vechten om de eerste render. */}
         <Script src="/mis-je-iets.js" strategy="lazyOnload" />
         <Nav merken={aantalMerken()} />
+        {/* De reis in één lijn, met de eigen woning van de bezoeker erbij (11-11-2026). */}
+        <Reisbalk />
         {/* <main> is hier geen opsmuk. Twee redenen: schermlezers en
             toetsenbordgebruikers gebruiken het om de navigatie over te slaan,
             en mis-je-iets.js hangt zichzelf onder in dit blok. Zonder <main>
