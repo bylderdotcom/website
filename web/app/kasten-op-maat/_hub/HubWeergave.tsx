@@ -136,7 +136,7 @@ export default function HubWeergave({ p }: { p: HubPagina }) {
 
         <h2 style={H2}>Wat het timmerbedrijf van dit ontwerp krijgt</h2>
         <p style={P}>Een deel van de zaaglijst van het voorbeeld hierboven. Elk onderdeel heeft een lengte, breedte en dikte in millimeters, het materiaal en de afwerking van de kanten.</p>
-        <div style={{ overflowX: 'auto', border: `1px solid ${INKT}0.12)`, borderRadius: 14, background: '#fff' }}>
+        <div style={{ overflowX: 'auto', borderTop: `1px solid ${INKT}0.14)` }}>
           <table style={{ borderCollapse: 'collapse', width: '100%', minWidth: 460, fontSize: 14 }}>
             <caption style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0 0 0 0)' }}>Zaaglijst, eerste regels</caption>
             <thead><tr>{['Onderdeel', 'Aantal', 'L × B × D (mm)', 'Materiaal'].map(h => <th key={h} scope="col" style={{ ...LABEL, textAlign: 'left', padding: '10px 12px', background: '#F5F0E8' }}>{h}</th>)}</tr></thead>
@@ -169,9 +169,9 @@ export default function HubWeergave({ p }: { p: HubPagina }) {
 
       <div style={{ maxWidth: 812 }}>
         <h2 style={H2}>Veelgestelde vragen</h2>
-        <div style={{ display: 'grid', gap: 10 }}>
+        <div style={{ borderBottom: `1px solid ${INKT}0.14)` }}>
           {p.vragen.map(q => (
-            <details key={q.v} style={{ ...KAART, padding: '16px 20px' }}>
+            <details key={q.v} style={{ borderTop: `1px solid ${INKT}0.14)`, padding: '16px 0' }}>
               <summary style={{ fontWeight: 800, cursor: 'pointer', fontSize: 16 }}>{q.v}</summary>
               <p style={{ ...P, margin: '10px 0 0', fontSize: 15 }}>{q.a}</p>
             </details>

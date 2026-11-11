@@ -38,6 +38,8 @@ const ROEST = '#B85C38'
 const KAART: React.CSSProperties = {
   background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 16, padding: 24,
 }
+// Stijlboek (11-11-2026): tekst die je alleen leest staat tussen lijnen, niet in een kader.
+const RIJ: React.CSSProperties = { borderTop: `1px solid ${INKT}0.14)`, padding: '18px 0' }
 const H2: React.CSSProperties = {
   fontSize: '1.55rem', fontWeight: 800, letterSpacing: '-0.022em', margin: '54px 0 12px',
   textWrap: 'balance', color: '#1A1208',
@@ -280,7 +282,7 @@ export default function OnzichtbaarKozijnPage() {
         Dat bepaalt wanneer je hem moet maken, en dat is de kern van deze pagina.
       </p>
 
-      <div style={{ ...KAART, display: 'flex', gap: 26, alignItems: 'center', flexWrap: 'wrap', marginTop: 22 }}>
+      <div style={{ display: 'flex', gap: 26, alignItems: 'center', flexWrap: 'wrap', marginTop: 22 }}>
         <div style={{ flex: '1 1 300px', minWidth: 260 }}><Doorsnede /></div>
         <div style={{ flex: '1 1 240px' }}>
           <h3 style={{ ...H3, marginBottom: 10 }}>Wat je op de doorsnede ziet</h3>
@@ -297,7 +299,7 @@ export default function OnzichtbaarKozijnPage() {
         Prijzen zoals leveranciers ze zelf publiceren in augustus 2026. Bylder controleert offertes tegen
         marktprijzen; dit zijn de bedragen waarmee je een offerte kunt vergelijken.
       </p>
-      <div style={{ overflowX: 'auto', border: `1px solid ${INKT}0.12)`, borderRadius: 14, background: '#fff' }}>
+      <div style={{ overflowX: 'auto', borderTop: `1px solid ${INKT}0.14)` }}>
         <table style={{ borderCollapse: 'collapse', width: '100%', minWidth: 460 }}>
           <thead>
             <tr>
@@ -330,9 +332,9 @@ export default function OnzichtbaarKozijnPage() {
       </p>
 
       <h2 style={H2}>Drie manieren waarop het kan</h2>
-      <div style={{ display: 'grid', gap: 14, gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))' }}>
+      <div style={{ display: 'grid', gap: '0 32px', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))' }}>
         {SOORTEN.map((s) => (
-          <div key={s.titel} style={KAART}>
+          <div key={s.titel} style={RIJ}>
             <h3 style={H3}>{s.titel}</h3>
             <p style={{ ...P, margin: 0, fontSize: 14.5 }}>{s.tekst}</p>
           </div>
@@ -361,8 +363,7 @@ export default function OnzichtbaarKozijnPage() {
       <div style={{ display: 'grid', gap: 12 }}>
         {MERKEN.map((m) => (
           <div key={m.naam} style={{
-            ...KAART, padding: '18px 22px',
-            ...(m.korting ? { border: `1.5px solid ${GROEN}`, background: '#F4F7F2' } : {}),
+            ...(m.korting ? { ...KAART, padding: '18px 22px', border: `1.5px solid ${GROEN}`, background: '#F4F7F2' } : RIJ),
           }}>
             <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
               <h3 style={{ ...H3, margin: 0 }}>{m.naam}</h3>
@@ -451,9 +452,9 @@ export default function OnzichtbaarKozijnPage() {
       </p>
 
       <h2 style={H2}>Veelgestelde vragen</h2>
-      <div style={{ display: 'grid', gap: 12 }}>
+      <div style={{ maxWidth: 860, borderBottom: `1px solid ${INKT}0.14)` }}>
         {VRAGEN.map((q) => (
-          <div key={q.v} style={KAART}>
+          <div key={q.v} style={RIJ}>
             <h3 style={H3}>{q.v}</h3>
             <p style={{ ...P, margin: 0, fontSize: 15.5 }}>{q.a}</p>
           </div>

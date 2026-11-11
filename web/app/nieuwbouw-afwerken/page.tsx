@@ -130,7 +130,7 @@ export default function NieuwbouwAfwerkenPage() {
       </section>
 
       <h2 style={S.h2}>Veelgestelde vragen</h2>
-      <div style={{ display: 'grid', gap: 10, maxWidth: 820 }}>
+      <div style={{ maxWidth: 820, borderBottom: '1px solid rgba(61,46,30,0.14)' }}>
         {VRAGEN.map(q => (
           <details key={q.v} style={S.vraag}>
             <summary style={{ fontWeight: 800, cursor: 'pointer', fontSize: 16 }}>{q.v}</summary>
