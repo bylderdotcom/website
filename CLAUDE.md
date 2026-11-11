@@ -346,6 +346,9 @@ een kwartier live" zonder `vercel ls website` te checken.
   heeft "Zie het in het echt" (app `/api/gietvloer/render`, ongeveer twintig seconden); de kastontwerper moet hetzelfde
   krijgen: de ontworpen kast fotorealistisch in de eigen kamer. Bij elk gesprek over de kastontwerper of configuratoren:
   Daniel hieraan herinneren tot het gebouwd is.
+  **Zodra er een render van een maatwerkkast is (wens Daniel, 11-11-2026):** die vervangt de platte blauwe 3D-afbeelding
+  `web/public/img/kasten/hoekkast-3d(-sm).jpg` overal: homepagekaart (`NieuweHome.tsx`), `KastCTA.tsx`, `AanbodStrook.tsx`,
+  `/ontwerpen/`, `/via/<slug>/` en de dia's van de Klusseniers (`img/klusseniers/kast.jpg`). Op 11-11 bestond er nog geen.
 
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.
