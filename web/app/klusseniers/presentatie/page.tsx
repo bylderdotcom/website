@@ -21,8 +21,10 @@ export const metadata: Metadata = {
     type: 'website', url: 'https://www.bylder.com/klusseniers/presentatie/', siteName: 'Bylder',
     title: 'Klusseniers × Bylder: jouw klant, jouw link, jouw vergoeding',
     description: 'Meeverdienen aan de deuren, gietvloer en kasten die je klanten toch al kopen.',
-    images: [{ url: 'https://www.bylder.com/img/klusseniers/woning3d.webp', alt: 'Een woning in 3D met de ruimtes en hun oppervlakte' }],
+    // De eerste dia als voorvertoning in WhatsApp en mail (11-11-2026): logo's en de belofte.
+    images: [{ url: 'https://www.bylder.com/img/klusseniers/og-presentatie.jpg', width: 1200, height: 630, alt: 'Klussenier × Bylder.com: jouw klant, jouw link, jouw vergoeding' }],
   },
+  twitter: { card: 'summary_large_image', images: ['https://www.bylder.com/img/klusseniers/og-presentatie.jpg'] },
 }
 
 export default function PresentatiePagina() {
