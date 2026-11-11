@@ -241,6 +241,11 @@ voortaan meteen live zetten, een preview is niet nodig." Dus: branch → PR → 
 op productie. Het ontsnappingsluik bestaat nog (een branch die met `preview/` begint bouwt wél
 een preview), maar gebruik het alleen als Daniel er expliciet om vraagt.
 
+**Eerst lokaal op schermbeelden, dan één keer live (besluit Daniel, 11-11-2026).** Elke samenvoeging naar main kost een
+build. Daarom: bouwen op de werktak, lokaal draaien, Daniel schermbeelden sturen (390 en 1440), bijsturen tot het goed is,
+en pas na zijn akkoord alles in één keer samenvoegen. Geen Vercel-preview. "Mergen mag meteen" hieronder geldt alleen nog
+voor kleine reparaties en als Daniel zegt dat het live mag.
+
 **Vaste volgorde bij elke inhoudelijke wijziging:**
 1. **Werk op een branch, nooit direct op `main`.** De PR is het reviewmoment en de
    ongedaan-maak-knop, ook zonder preview.
@@ -341,6 +346,9 @@ een kwartier live" zonder `vercel ls website` te checken.
   heeft "Zie het in het echt" (app `/api/gietvloer/render`, ongeveer twintig seconden); de kastontwerper moet hetzelfde
   krijgen: de ontworpen kast fotorealistisch in de eigen kamer. Bij elk gesprek over de kastontwerper of configuratoren:
   Daniel hieraan herinneren tot het gebouwd is.
+  **Zodra er een render van een maatwerkkast is (wens Daniel, 11-11-2026):** die vervangt de platte blauwe 3D-afbeelding
+  `web/public/img/kasten/hoekkast-3d(-sm).jpg` overal: homepagekaart (`NieuweHome.tsx`), `KastCTA.tsx`, `AanbodStrook.tsx`,
+  `/ontwerpen/`, `/via/<slug>/` en de dia's van de Klusseniers (`img/klusseniers/kast.jpg`). Op 11-11 bestond er nog geen.
 
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.
