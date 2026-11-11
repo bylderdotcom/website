@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import ProjectFilm from '../nieuwbouw-project/ProjectFilm'
-import Portfolio from '../kozijnloze-deuren/Portfolio'
 import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
 import { VANAF, euroRond } from '../kozijnloze-deuren/configurator/prijs'
 import { GIET_PRIJS_M2 } from '../components/gietvloer/gegevens'
@@ -37,6 +36,16 @@ const PRODUCTEN = [
     img: '/img/kasten/hoekkast-3d-sm.jpg', alt: 'Hoekkast op maat in 3D, uit de kastontwerper', meet: 'home-kast' },
 ]
 
+// Zes beelden uit zes hoeken van het aanbod, elk naar zijn eigen pagina.
+const GALERIJ = [
+  { titel: 'Deuren zonder kozijn', tekst: 'Geplaatst in een woning, vlak in de wand', img: '/img/classic-next/portfolio-wit-bad-sm.webp', alt: 'Witte kozijnloze deur naast een vrijstaand bad', href: '/kozijnloze-deuren/' },
+  { titel: 'Gietvloer', tekst: 'Naadloos door de hele verdieping', img: '/img/klusseniers/gietvloer-foto.jpg', alt: 'Lichtgrijze gietvloer met twee okergele fauteuils', href: '/gietvloer/' },
+  { titel: 'Kast op maat', tekst: 'Ontworpen in 3D, gemaakt door een timmerbedrijf', img: '/img/kasten/hoekkast-3d-sm.jpg', alt: 'Blauwe hoekkast op maat in 3D', href: '/kasten-op-maat/' },
+  { titel: 'Slaapkamer', tekst: 'Auping, met korting tot 10%', img: '/img/auping-noble-solid-oak-sm.webp', alt: 'Auping bed van massief eiken in een lichte slaapkamer', href: '/vouchers/auping/' },
+  { titel: 'Tuin', tekst: 'Schutting die niet elk jaar geolied hoeft', img: '/img/gardenwall-weo35-sm.webp', alt: 'Composiet schutting in teakkleur langs een tuinpad', href: '/tuin-aanleggen/schutting-schermen/' },
+  { titel: 'Ventilatie', tekst: 'Weggewerkt in het plafond', img: '/img/noshow-ventilatie-sm.webp', alt: 'Ventilatierooster als dunne ring in een badkamerplafond', href: '/woning-verduurzamen/ventilatie/' },
+]
+
 const VRAGEN: [string, string][] = [
   ['Wat doet Bylder?', 'Je uploadt de tekening van je woning. Bylder maakt er je woning in 3D van, met de maten per ruimte. Daarin kies je deuren, vloer en kasten, en je vraagt één offerte aan voor de afwerking.'],
   ['Wat kost het?', 'Ontwerpen is gratis en kan zonder account. Laat je iets maken of afwerken, dan betaal je de prijs in de offerte. Je beslist pas na een definitieve prijs.'],
@@ -51,12 +60,11 @@ export default function Voorbeeld() {
         .hv{max-width:1120px;margin:0 auto;padding:0 20px}
         .hv-held{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:center;padding-top:48px;padding-bottom:56px}
         .hv-drie{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+        .hv-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+        @media(max-width:860px){.hv-gal{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
         .hv-afw{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:center}
         .hv-blok{padding-top:56px}
         @media(max-width:860px){.hv-held{grid-template-columns:minmax(0,1fr);gap:24px;padding-top:28px;padding-bottom:36px}.hv-drie{grid-template-columns:minmax(0,1fr)}.hv-afw{grid-template-columns:minmax(0,1fr)}.hv-blok{padding-top:40px}}
-        /* Bewijs kort houden: zes foto's (vier op een telefoon), zonder het tweede raster. */
-        .hv-bewijs .pf-raster>*:nth-child(n+7){display:none}.hv-bewijs .pf-klein,.hv-bewijs [aria-labelledby=portfolio-kop] h3{display:none!important}
-        @media(max-width:640px){.hv-bewijs .pf-raster>*:nth-child(n+5){display:none}}
         .hv-vr{border-top:1px solid ${INKT}0.12)}.hv-vr:last-of-type{border-bottom:1px solid ${INKT}0.12)}
         .hv-vr>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:56px;font-weight:700;font-size:17px}
         .hv-vr>summary::-webkit-details-marker{display:none}
@@ -124,9 +132,20 @@ export default function Voorbeeld() {
         </div>
       </section>
 
-      {/* 5. Bewijs. */}
-      <section className="hv hv-blok hv-bewijs">
-        <Portfolio marge="0" intro="Wat je samenstelt, wordt op maat gemaakt en door een vakbedrijf geplaatst. Zo ziet het er in een woning uit." />
+      {/* 5. Bewijs, breder dan deuren (Daniel, 11-11-2026: "we zijn veel meer dan dat"). */}
+      <section className="hv hv-blok" aria-labelledby="hv-breed">
+        <h2 id="hv-breed" style={H2}>Van vloer tot tuin</h2>
+        <p style={{ ...P, marginBottom: 20 }}>Wat je bij Bylder kiest en laat maken, voor in huis en eromheen.</p>
+        <div className="hv-gal">
+          {GALERIJ.map(g => (
+            <a key={g.href + g.titel} href={g.href} data-meet="home-galerij" style={{ textDecoration: 'none', color: '#1A1208', display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <span style={{ display: 'block', position: 'relative', aspectRatio: '4 / 3', borderRadius: 14, overflow: 'hidden', background: '#E9E4DA' }}>
+                <img src={g.img} alt={g.alt} loading="lazy" decoding="async" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+              </span>
+              <span style={{ fontSize: 15.5, lineHeight: 1.4 }}><strong>{g.titel}</strong><br /><span style={{ color: `${INKT}0.65)`, fontSize: 14.5 }}>{g.tekst}</span></span>
+            </a>
+          ))}
+        </div>
         <EigenVakmanMeekijken campagne="homepage-voorbeeld" marge="40px 0 0" />
       </section>
 
