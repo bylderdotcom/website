@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ConfiguratorFeedback from '../../components/ConfiguratorFeedback'
 import Ontwerper from '../../components/gietvloer/Ontwerper'
 import GietvloerHeld from '../../components/gietvloer/GietvloerHeld'
 import { TYPES, GIET_PRIJS_M2 } from '../../components/gietvloer/gegevens'
@@ -64,6 +65,7 @@ export default function GietvloerOntwerpenPage() {
           </nav>
           <GietvloerHeld api={API} />
           <Ontwerper api={API} modus="site" />
+          <ConfiguratorFeedback product="gietvloer" />
         </div>
       </div>
       <section style={{ maxWidth: 1180, margin: '0 auto', padding: '8px 16px 72px', color: '#1A1208' }} aria-label="Uitleg bij de gietvloerontwerper">

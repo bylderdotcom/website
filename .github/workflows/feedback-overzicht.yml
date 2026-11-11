@@ -1,0 +1,18 @@
+name: Feedbacklijst overzicht (alleen lezen)
+# Handmatig te starten. Leest feature_requests en feature_clusters en zet een samenvatting
+# zonder persoonsgegevens in de samenvatting van de run (scripts/feedback_overzicht.py).
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  overzicht:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Overzicht
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python3 scripts/feedback_overzicht.py

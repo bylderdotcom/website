@@ -1,0 +1,116 @@
+name: Feature-request → draft-PR
+# Tegenhanger van dezelfde workflow in de app-repo (11-11-2026). De nachtelijke job in de app
+# (/api/cron/feedback-pr) stuurt een goedgekeurd cluster hierheen als de meldingen van de
+# publieke site komen (bron_repo website). Tot nu toe was er hier niets dat luisterde, dus
+# bleven zulke clusters voor altijd op "gepland" staan.
+# Claude Code werkt de spec uit en opent een DRAFT-PR. Nooit mergen: elke wijziging gaat langs een mens.
+on:
+  repository_dispatch:
+    types: [feature-request]
+  workflow_dispatch:
+    inputs:
+      cluster_id:
+        description: Cluster-id (handmatig opnieuw draaien)
+        required: true
+      titel:
+        description: Titel van het cluster
+        required: true
+      spec:
+        description: De implementatie-spec (Markdown)
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  bouw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Gegevens uitpakken
+        id: invoer
+        env:
+          CLUSTER_ID: ${{ github.event.client_payload.cluster_id || inputs.cluster_id }}
+          TITEL: ${{ github.event.client_payload.titel || inputs.titel }}
+          SPEC: ${{ github.event.client_payload.spec || inputs.spec }}
+        run: |
+          set -euo pipefail
+          case "$CLUSTER_ID" in (*[!A-Za-z0-9-]*|'') echo "Ongeldig cluster-id"; exit 1;; esac
+          echo "cluster_id=$CLUSTER_ID" >> "$GITHUB_OUTPUT"
+          printf '%s' "$TITEL" | tr -d '\n\r' | cut -c1-120 > /tmp/titel.txt
+          echo "branch=feature-request/${CLUSTER_ID:0:8}" >> "$GITHUB_OUTPUT"
+          printf '%s' "$SPEC" > /tmp/spec.md
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Afhankelijkheden
+        run: npm ci --prefix web
+
+      - name: Claude Code draaien op de spec
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -euo pipefail
+          npm install -g @anthropic-ai/claude-code
+          git config user.name "bylder-bot"
+          git config user.email "bot@bylder.com"
+          git checkout -B "${{ steps.invoer.outputs.branch }}"
+          claude -p "$(cat <<'EOF'
+          Hieronder staat een spec die voortkomt uit meldingen van echte bezoekers van bylder.com.
+          Implementeer de kleinst mogelijke verandering die het probleem oplost.
+          Regels:
+          - Volg CLAUDE.md in deze repo (schrijfstijl, geen emoji als iconen, wat nooit op de site mag).
+          - Werk in web/ (Next-pagina's en componenten). Draai geen generatoren en wijzig geen data/.
+          - Raak geen prijzen, betaalroutes, api/ of vercel.json aan; noem het in plaats daarvan in de PR.
+          - Draai `npx tsc --noEmit -p web` en controleer dat er geen nieuwe fouten zijn.
+          - Lukt het niet betrouwbaar, verander dan niets en leg in de PR uit waarom.
+          EOF
+          )
+          $(cat /tmp/spec.md)" --permission-mode acceptEdits
+
+      - name: Draft-PR openen
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo "Geen wijzigingen — geen PR." && exit 0
+          fi
+          TITEL="$(cat /tmp/titel.txt)"
+          git add -A
+          git commit -m "$TITEL" -m "Automatisch voorstel uit de feature-request-funnel." -m "Cluster: ${{ steps.invoer.outputs.cluster_id }}"
+          git push -u origin "${{ steps.invoer.outputs.branch }}" --force-with-lease
+          {
+            echo "Automatisch voorstel op basis van meldingen van bezoekers van bylder.com."
+            echo
+            echo "**Dit is een voorstel, geen besluit.** Lees de spec, controleer de wijziging"
+            echo "en pas aan waar nodig. Er wordt niets automatisch gemerged."
+            echo
+            echo "<details><summary>De spec</summary>"
+            echo
+            cat /tmp/spec.md
+            echo
+            echo "</details>"
+          } > /tmp/pr-body.md
+          URL=$(gh pr create --draft --title "$TITEL" --body-file /tmp/pr-body.md \
+            --head "${{ steps.invoer.outputs.branch }}" --base main)
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+      - name: PR-url terugmelden aan de app
+        if: steps.pr.outputs.url != ''
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          if [ -z "$CRON_SECRET" ]; then echo "CRON_SECRET ontbreekt in deze repo: PR-url niet teruggemeld."; exit 0; fi
+          curl -sS -X POST "https://app.bylder.com/api/cron/feedback-pr" \
+            -H "Authorization: Bearer $CRON_SECRET" \
+            -H "Content-Type: application/json" \
+            -d "{\"cluster_id\":\"${{ steps.invoer.outputs.cluster_id }}\",\"pr_url\":\"${{ steps.pr.outputs.url }}\"}"
