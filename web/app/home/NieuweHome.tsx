@@ -3,6 +3,7 @@ import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
 import { VANAF, euroRond } from '../kozijnloze-deuren/configurator/prijs'
 import { GIET_PRIJS_M2 } from '../components/gietvloer/gegevens'
 import { aantalMerken } from '@/lib/merken'
+import JouwRegel from '../components/JouwRegel'
 
 /**
  * De homepage sinds 11-11-2026 (besluit Daniel na de UX-audit). De vorige was op een telefoon 22 schermen
@@ -24,11 +25,11 @@ const KNOP: React.CSSProperties = { display: 'inline-flex', alignItems: 'center'
 const KNOP2: React.CSSProperties = { ...KNOP, background: 'transparent', color: GROEN, border: `1.5px solid ${GROEN}` }
 
 const PRODUCTEN = [
-  { naam: 'Deuren zonder kozijn', tekst: 'Plafondhoog en vlak in de wand. Kies kleur, groefpatroon en kruk.', prijs: `Vanaf ${euroRond(VANAF)} per deur`, href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deur samen',
+  { naam: 'Deuren zonder kozijn', tekst: 'Plafondhoog en vlak in de wand. Kies kleur, groefpatroon en kruk.', prijs: `Vanaf ${euroRond(VANAF)} per deur`, href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deur samen', soort: 'deuren' as const,
     img: '/img/winkel/deuren/origin-6005-sm.webp', alt: 'Kozijnloze deur in mosgroen, vlak in een wand in dezelfde kleur', meet: 'home-deuren' },
-  { naam: 'Gietvloer', tekst: 'Eén vloer zonder naden. Zie de kleur in je eigen kamers en vraag drie stalen aan.', prijs: `€ ${GIET_PRIJS_M2[0]} tot € ${GIET_PRIJS_M2[1]} per m²`, href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer',
+  { naam: 'Gietvloer', tekst: 'Eén vloer zonder naden. Zie de kleur in je eigen kamers en vraag drie stalen aan.', prijs: `€ ${GIET_PRIJS_M2[0]} tot € ${GIET_PRIJS_M2[1]} per m²`, href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer', soort: 'gietvloer' as const,
     img: '/img/gietvloer/dr-schutz-gietvloer-ruimte.jpg', alt: 'Lichtgrijze gietvloer van Dr. Schutz in een ruimte met twee okergele fauteuils', meet: 'home-gietvloer' },
-  { naam: 'Kast op maat', tekst: 'Beschrijf je kast of upload een foto. Je ziet hem in 3D, met maten.', prijs: 'Gratis ontwerpen en inmeten', href: '/kasten-op-maat/ontwerpen/', knop: 'Ontwerp je kast',
+  { naam: 'Kast op maat', tekst: 'Beschrijf je kast of upload een foto. Je ziet hem in 3D, met maten.', prijs: 'Gratis ontwerpen en inmeten', href: '/kasten-op-maat/ontwerpen/', knop: 'Ontwerp je kast', soort: 'kast' as const,
     img: '/img/kasten/hoekkast-3d-sm.jpg', alt: 'Hoekkast op maat in 3D, uit de kastontwerper', meet: 'home-kast' },
 ]
 
@@ -105,7 +106,7 @@ export default function NieuweHome() {
               <span style={{ padding: '18px 20px 20px', display: 'flex', flexDirection: 'column', gap: 8, flex: 1 }}>
                 <strong style={{ fontSize: 20, letterSpacing: '-0.01em' }}>{p.naam}</strong>
                 <span style={{ fontSize: 15.5, lineHeight: 1.55, color: `${INKT}0.72)`, flex: 1 }}>{p.tekst}</span>
-                <span style={{ fontSize: 14.5, fontWeight: 700 }}>{p.prijs}</span>
+                <span style={{ fontSize: 14.5, fontWeight: 700 }}><JouwRegel soort={p.soort} standaard={p.prijs} perDeur={VANAF} perM2={GIET_PRIJS_M2} /></span>
                 <span style={{ color: GROEN, fontWeight: 800, fontSize: 15.5 }}>{p.knop} →</span>
               </span>
             </a>
