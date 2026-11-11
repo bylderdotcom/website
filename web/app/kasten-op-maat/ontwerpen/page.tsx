@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ConfiguratorFeedback from '../../components/ConfiguratorFeedback'
 import Ontwerper from '../../components/kast/Ontwerper'
 import { TYPES, URL_BASIS } from '@/lib/kast/hub'
 
@@ -51,6 +52,7 @@ export default function KastOntwerpenPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Ontwerper />
+      <ConfiguratorFeedback product="kast" />
       <section style={{ maxWidth: 1200, margin: '0 auto', padding: '8px 24px 72px', color: '#1A1208' }} aria-label="Uitleg bij de ontwerper">
         <div style={{ maxWidth: 812 }}>
           <h2 style={{ ...H2, marginTop: 24 }}>Van voorbeeldfoto tot zaaglijst</h2>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ConfiguratorFeedback from '../../components/ConfiguratorFeedback'
 import StandBalk from '../../components/StandBalk'
 import { ONTWERPEN, KLEUREN } from './ontwerpen'
 // Rechtstreeks importeren, niet via next/dynamic met ssr:false — dat mag niet in
@@ -146,6 +147,7 @@ export default function ConfiguratorPagina() {
         <StandBalk />
 
         <Configurator />
+        <ConfiguratorFeedback product="kozijnloze-deur" />
 
         {/* Echte deuren in echte woningen (5-11-2026): bewijs dat het besteld en geplaatst kan worden. */}
         <Portfolio />

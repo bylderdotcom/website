@@ -127,7 +127,8 @@ module.exports = async function handler(req, res) {
         tekst,
         email,
         url: body.url ? String(body.url).slice(0, 300) : null,
-        context: body.context ? String(body.context).slice(0, 200) : null,
+        // 500: de configurators sturen stap, route en scherm mee (ConfiguratorFeedback, 11-11-2026).
+        context: body.context ? String(body.context).slice(0, 500) : null,
         ip_hash: hash,
         status,
       }),
