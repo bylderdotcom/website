@@ -34,7 +34,7 @@ const VRAGEN = [
   { v: 'Wanneer moet ik bestellen?', a: `Vóór de stukadoor komt: het kozijn wordt in de wand gestuct. Reken op een levertijd van ongeveer ${DEURSET.levertijdWeken} weken.` },
   { v: 'Wat heb je van mij nodig?', a: 'De maat van het deurblad, de kant van de scharnieren en het slot. De wanddikte en eventuele bijzonderheden zet je in de toelichting bij het afrekenen; we controleren je bestelling voordat hij in productie gaat.' },
   { v: 'Wat kost de levering?', a: 'Een deur met kozijn gaat met een aparte vervoerder: € 99 per bestelling, ook als je meer deuren bestelt.' },
-  { v: 'Kan ik de deur laten monteren?', a: `Ja. Monteren duurt ongeveer ${MONTAGE_UUR} uur per deur. Laat je de afwerking door Bylder doen, dan nemen we de montage mee in dezelfde offerte.` },
+  { v: 'Kan ik de deur laten monteren?', a: `Ja. Monteren duurt ongeveer ${MONTAGE_UUR} uur per deur; hoe dat gaat zie je op bylder.com/kozijnloze-deuren/montage. Laat je de afwerking door Bylder doen, dan nemen we de montage mee in dezelfde offerte.` },
   { v: 'Wie is de verkoper?', a: 'Bylder. Je bestelling en de betaling lopen via ons; Classic Next maakt en levert de deur.' },
 ]
 
@@ -90,7 +90,7 @@ export default function Pagina() {
               ['Scharnieren', '3 × Basys DX-38 Design, verdekt en in drie richtingen verstelbaar'],
               ['Slot', 'Magneetslot: loop, dag- en nachtslot of vrij/bezet'],
               ['Niet inbegrepen', 'Deurkruk, montage en levering'],
-              ['Montage', `ongeveer ${MONTAGE_UUR} uur per deur, vóór het stucwerk`],
+              ['Montage', `ongeveer ${MONTAGE_UUR} uur per deur, kozijn vóór het stucwerk`],
               ['Levertijd', `ongeveer ${DEURSET.levertijdWeken} weken`],
             ].map(([k, v]) => (
               <tr key={k}><th scope="row" style={{ ...S.tabelCel, width: '34%' }}>{k}</th><td style={S.tabelCel}>{v}</td></tr>
@@ -124,7 +124,7 @@ export default function Pagina() {
         <p style={{ ...S.p, margin: 0 }}><strong style={{ color: '#1A1208' }}>Hoort erbij: de onzichtbare plint.</strong> Zonder kozijn valt de plint op. Ook die gaat vóór het stucwerk de wand in.</p>
         <a href={`/winkel/${PLINT.slug}/`} style={{ background: GROEN, color: '#F5F0E8', fontWeight: 800, padding: '11px 16px', borderRadius: 10, textDecoration: 'none' }}>Naar de onzichtbare plint</a>
       </div>
-      <p style={{ ...S.p, fontSize: 13.5, marginTop: 18 }}><a href="/winkel/verzending-en-retour/" style={{ color: 'inherit' }}>Verzending en retour</a></p>
+      <p style={{ ...S.p, fontSize: 13.5, marginTop: 18 }}><a href="/kozijnloze-deuren/montage/" style={{ color: 'inherit' }}>Zo wordt de deur gemonteerd</a> · <a href="/winkel/verzending-en-retour/" style={{ color: 'inherit' }}>Verzending en retour</a></p>
     </main>
   )
 }

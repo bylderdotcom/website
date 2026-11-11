@@ -45,7 +45,7 @@ export default async function Pagina({ params }: { params: Promise<{ kleur: stri
     { v: 'Klopt de kleur op mijn scherm?', a: `Als richting. RAL ${k.ral} is een vaste kleurstandaard, maar elk scherm toont kleur anders. Twijfel je, bekijk dan een RAL-kaart of vraag ons een staal.` },
     { v: 'Hoe hoog is plafondhoog?', a: 'Je geeft bij het bestellen de hoogte tot je plafond op, tussen 230 en 270 cm. De deur loopt dan door tot het plafond.' },
     { v: 'Wanneer moet ik bestellen?', a: `Vóór de stukadoor komt: het kozijn wordt in de wand gestuct. Reken op een levertijd van ongeveer ${DEURSET.levertijdWeken} weken.` },
-    { v: 'Kan ik de deur laten monteren?', a: `Ja. Monteren duurt ongeveer ${MONTAGE_UUR} uur per deur. Laat je de afwerking door Bylder doen, dan nemen we de montage mee in dezelfde offerte.` },
+    { v: 'Kan ik de deur laten monteren?', a: `Ja. Monteren duurt ongeveer ${MONTAGE_UUR} uur per deur; hoe dat gaat zie je op bylder.com/kozijnloze-deuren/montage. Laat je de afwerking door Bylder doen, dan nemen we de montage mee in dezelfde offerte.` },
     { v: 'Wie is de verkoper?', a: 'Bylder. Je bestelling en de betaling lopen via ons; Classic Next maakt en levert de deur.' },
   ]
   const ld = [
@@ -116,7 +116,7 @@ export default async function Pagina({ params }: { params: Promise<{ kleur: stri
         <p style={{ ...S.p, margin: 0 }}><strong style={{ color: '#1A1208' }}>Hoort erbij: de onzichtbare plint.</strong> Zonder kozijn valt de plint op. Ook die gaat vóór het stucwerk de wand in.</p>
         <a href={`/winkel/${PLINT.slug}/`} style={{ background: GROEN, color: '#F5F0E8', fontWeight: 800, padding: '11px 16px', borderRadius: 10, textDecoration: 'none' }}>Naar de onzichtbare plint</a>
       </div>
-      <p style={{ ...S.p, fontSize: 13.5, marginTop: 18 }}><a href="/winkel/verzending-en-retour/" style={{ color: 'inherit' }}>Verzending en retour</a></p>
+      <p style={{ ...S.p, fontSize: 13.5, marginTop: 18 }}><a href="/kozijnloze-deuren/montage/" style={{ color: 'inherit' }}>Zo wordt de deur gemonteerd</a> · <a href="/winkel/verzending-en-retour/" style={{ color: 'inherit' }}>Verzending en retour</a></p>
     </main>
   )
 }
