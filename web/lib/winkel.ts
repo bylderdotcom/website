@@ -82,6 +82,17 @@ export const DEURSET = {
   levertijdWeken: 6,
 }
 
+/** Sets in kleur (besluit Daniel, 11-11-2026): afgelakt, standaardhoogte of plafondhoog. Zelfde lijst als app SET_KLEUR. */
+export const SET_KLEUREN = [
+  { ral: '6005', naam: 'mosgroen', hex: '#2F4538' },
+  { ral: '5011', naam: 'staalblauw', hex: '#1A2B3C' },
+  { ral: '3005', naam: 'wijnrood', hex: '#59191F' },
+  { ral: '7016', naam: 'antracietgrijs', hex: '#383E42' },
+  { ral: '9005', naam: 'gitzwart', hex: '#0E0E10' },
+  { ral: '6021', naam: 'bleekgroen', hex: '#89AC76' },
+]
+export const setKleur = (ral: string | undefined) => SET_KLEUREN.find(k => k.ral === ral) ?? null
+
 /* ---------------------------------------------------------------- plinten uit een plattegrond */
 
 type Rechthoek = [number, number, number, number]

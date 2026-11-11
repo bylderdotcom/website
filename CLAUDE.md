@@ -121,6 +121,10 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   kozijn tot 2400 mm met 3 scharnieren en magneetslot + gegrond deurblad tot 93 x 231,5 cm, € 1.258,40 incl. btw, excl. kruk, montage en
   levering. Gegrond, zodat de koper hem meeschildert met de wand. Eigen verzendregel `dutch-doors-vracht` (nog zonder bedrag: bestellen
   via betaallink; met een bedrag gaat hij op iDEAL en vanzelf in de Google-productlijst, app `/api/winkel/feed.xml`).
+  **In kleur (11-11-2026):** afgelakt in zes RAL-kleuren (6005, 5011, 3005, 7016, 9005, 6021; `SET_KLEUREN` in `web/lib/winkel.ts`, app
+  `SET_KLEUR`), standaardhoogte € 1.366,09 of plafondhoog € 1.720,02 (incl. vierde scharnier), pagina per kleur `/winkel/kozijnloze-deur-set/ral-<ral>/`.
+  Beelden zijn renders uit de configurator (`web/public/img/winkel/deuren/origin-<ral>.webp`), deur en wand in dezelfde kleur. Vracht € 99 per
+  bestelling: alle deursets met iDEAL en in de Google-productlijst. Groefontwerpen volgen zodra de freesprijs bekend is.
   Montage: ongeveer 2,5 uur per deur (`MONTAGE_UUR` in `configurator/prijs.ts`), genoemd bij de deuren, de configurator en de set.
 - **Afrekenen zonder drempel (besluit Daniel, 1-11-2026):** nooit een account vragen; na betaling hangt de bestelling
   aan het account op dat e-mailadres (app: Mijn bestellingen) en de mail logt meteen in. Geen verplicht wachtwoord

@@ -66,8 +66,12 @@ export function deurPrijs(d: DeurVoorPrijs): Prijs {
   return { totaal, regels, zonderKruk: kruk == null }
 }
 
+/** Een complete set zonder kruk en zonder freeswerk: kozijn (met het vierde scharnier bij plafondhoog) plus deurblad. */
+export const setPrijs = (hoogte: Hoogte, afwerking: 'gegrond' | 'gelakt') =>
+  Math.round((KOZIJN[hoogte] + (hoogte === 'plafond' ? SCHARNIER : 0) + BLAD[hoogte][afwerking]) * 100) / 100
+
 /** Laagste prijs voor een complete deur zonder kruk: standaardhoogte, gegrond, zonder freeswerk. */
-export const VANAF = KOZIJN.standaard + BLAD.standaard.gegrond
+export const VANAF = setPrijs('standaard', 'gegrond')
 
 /** Montagetijd per deur (opgave Daniel, 11-11-2026). */
 export const MONTAGE_UUR = '2,5'
