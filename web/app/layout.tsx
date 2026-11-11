@@ -43,6 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
              144). Eén reset zet dat recht — en voorkomt dat een veld met
              width:100% plus padding buiten zijn kolom valt (gevonden 11/12-09-2026). */
           '*,*::before,*::after{box-sizing:border-box}'
+          /* Stijlboek (11-11-2026): cijfers, maten en bedragen in de typemachineletter, als op een bouwtekening. */
+          + ".maat{font-family:'Space Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;letter-spacing:-0.03em}"
           + '/*a11y-focus*/:focus-visible{outline:3px solid #3D5A3E!important;'
           + 'outline-offset:2px;box-shadow:0 0 0 8px rgba(245,240,232,.85)}'
           + '@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;'
