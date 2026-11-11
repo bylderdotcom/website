@@ -27,7 +27,7 @@ const PRODUCTEN = [
   { naam: 'Deuren zonder kozijn', tekst: 'Plafondhoog en vlak in de wand. Kies kleur, groefpatroon en kruk.', prijs: `Vanaf ${euroRond(VANAF)} per deur`, href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deur samen',
     img: '/img/winkel/deuren/origin-6005-sm.webp', alt: 'Kozijnloze deur in mosgroen, vlak in een wand in dezelfde kleur', meet: 'home-deuren' },
   { naam: 'Gietvloer', tekst: 'Eén vloer zonder naden. Zie de kleur in je eigen kamers en vraag drie stalen aan.', prijs: `€ ${GIET_PRIJS_M2[0]} tot € ${GIET_PRIJS_M2[1]} per m²`, href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer',
-    img: '/img/gietvloer/gietvloer-in-woning.webp', alt: 'Donkere gietvloer door de hele begane grond van een woning in 3D', meet: 'home-gietvloer' },
+    img: '/img/gietvloer/dr-schutz-gietvloer-ruimte.jpg', alt: 'Lichtgrijze gietvloer van Dr. Schutz in een ruimte met twee okergele fauteuils', meet: 'home-gietvloer' },
   { naam: 'Kast op maat', tekst: 'Beschrijf je kast of upload een foto. Je ziet hem in 3D, met maten.', prijs: 'Gratis ontwerpen en inmeten', href: '/kasten-op-maat/ontwerpen/', knop: 'Ontwerp je kast',
     img: '/img/kasten/hoekkast-3d-sm.jpg', alt: 'Hoekkast op maat in 3D, uit de kastontwerper', meet: 'home-kast' },
 ]
