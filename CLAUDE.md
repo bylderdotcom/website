@@ -335,13 +335,15 @@ een kwartier live" zonder `vercel ls website` te checken.
      sanitair, vloeren, binnendeuren, schilderwerk, kasten). Staat op de zeven onderdeelpagina's van `/nieuwbouw-afwerken/`.
      Nieuw onderwerp = nieuw accent in dat bestand, geen losse illustratie of stockfoto. `maquetteSvg()` geeft de svg voor
      mails en offertes (nog te doen). Deelbeelden (WhatsApp, 1200x630) van de zeven onderdeelpagina's: `web/public/img/og/afwerken-<slug>.jpg`.
+     Ook voor homepage, deuren, kasten, gietvloer, afwerken en mijn-woning (`img/og/<naam>.jpg`).
   2. **Cijfers, maten en bedragen in de typemachineletter**: klasse `maat` (Space Mono, in `layout.tsx`).
   3. **Eén gevulde groene knop per scherm**, links onder de tekst; een tweede stap is een link met een pijl.
   4. **Wit in plaats van kaders**: ruimte scheidt, een lijn ordent; een wit vlak met rand alleen voor iets wat je aanklikt
      of invult (productkaart, formulier, prijs). Geen kader in een kader.
   5. Groen is schaars: de hoofdactie of het accent in het beeld. Roest alleen voor het kleine label boven een kop.
   Nog door te voeren op bestaande pagina's (per pagina, bij de eerstvolgende wijziging): statische pagina's (`bn2.css`),
-  deelafbeeldingen van de overige pagina's, mails en offertes.
+  mails en offertes. Gedaan (11-11): lijnen in plaats van kaders op deuren, kasten en afwerken; `/gietvloer/` is een
+  productpagina in dezelfde opbouw (de gids per stad staat onderaan, steden en profielen in `app/gietvloer/[...slug]`).
 - **OPEN, niet vergeten: fotorealistische render ook bij kast op maat (wens Daniel, 11-11-2026).** De gietvloerontwerper
   heeft "Zie het in het echt" (app `/api/gietvloer/render`, ongeveer twintig seconden); de kastontwerper moet hetzelfde
   krijgen: de ontworpen kast fotorealistisch in de eigen kamer. Bij elk gesprek over de kastontwerper of configuratoren:

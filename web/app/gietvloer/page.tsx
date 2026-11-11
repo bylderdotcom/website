@@ -20,7 +20,8 @@ export const metadata: Metadata = {
   title: `Gietvloer: prijs per m², vier soorten en je kleur in je eigen woning | Bylder`,
   description: `Een gietvloer kost €${GIET_PRIJS_M2[0]} tot €${GIET_PRIJS_M2[1]} per m². Vergelijk de vier vloeren van Dr. Schutz, zie je kleur in je eigen kamers en vraag tot drie stalen gratis aan.`,
   alternates: { canonical: URL },
-  openGraph: { title: 'Gietvloer: één vloer zonder naden, in de kleur die jij kiest', description: `Vier vloeren, ${KLEUREN.filter(k => k.type).length} kleuren, €${GIET_PRIJS_M2[0]} tot €${GIET_PRIJS_M2[1]} per m². Zie hem in je eigen woning.`, url: URL, type: 'website', images: [{ url: `https://www.bylder.com${FOTO}` }] },
+  openGraph: { title: 'Gietvloer: één vloer zonder naden, in de kleur die jij kiest', description: `Vier vloeren, ${KLEUREN.filter(k => k.type).length} kleuren, €${GIET_PRIJS_M2[0]} tot €${GIET_PRIJS_M2[1]} per m². Zie hem in je eigen woning.`, url: URL, type: 'website', images: [{ url: 'https://www.bylder.com/img/og/gietvloer.jpg', width: 1200, height: 630, alt: 'Maquette van een woning met de vloer in groen' }] },
+  twitter: { card: 'summary_large_image' },
 }
 
 const INKT = 'rgba(61,46,30,', GROEN = '#3D5A3E'

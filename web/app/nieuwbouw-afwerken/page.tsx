@@ -19,7 +19,9 @@ export const metadata: Metadata = {
     + 'Bylder neemt de opdracht aan; vakbedrijven bij jou in de buurt voeren uit.',
   alternates: { canonical: URL_AFWERKEN },
   openGraph: { title: 'Je nieuwbouwhuis afgewerkt, in één offerte', url: URL_AFWERKEN, type: 'website',
-    description: 'Van stucwerk tot kasten: één offerte uit je eigen tekening, één planning en één aanspreekpunt.' },
+    description: 'Van stucwerk tot kasten: één offerte uit je eigen tekening, één planning en één aanspreekpunt.',
+    images: [{ url: 'https://www.bylder.com/img/og/afwerken.jpg', width: 1200, height: 630, alt: 'Maquette van een woning met alle wanden in groen' }] },
+  twitter: { card: 'summary_large_image' },
 }
 
 const VRAGEN = [
@@ -130,7 +132,7 @@ export default function NieuwbouwAfwerkenPage() {
       </section>
 
       <h2 style={S.h2}>Veelgestelde vragen</h2>
-      <div style={{ display: 'grid', gap: 10, maxWidth: 820 }}>
+      <div style={{ maxWidth: 820, borderBottom: '1px solid rgba(61,46,30,0.14)' }}>
         {VRAGEN.map(q => (
           <details key={q.v} style={S.vraag}>
             <summary style={{ fontWeight: 800, cursor: 'pointer', fontSize: 16 }}>{q.v}</summary>

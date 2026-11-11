@@ -20,11 +20,11 @@ export const Stijl: Record<string, React.CSSProperties> = {
   link: { color: GROEN, fontWeight: 700 },
   raster: { listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))' },
   kaartLink: { display: 'flex', flexDirection: 'column', gap: 6, height: '100%', boxSizing: 'border-box', background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 14, padding: '18px 18px 16px', textDecoration: 'none' },
-  stappen: { listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 10, gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))' },
-  stap: { display: 'flex', gap: 12, alignItems: 'flex-start', background: '#fff', border: `1px solid ${INKT}0.1)`, borderRadius: 14, padding: '14px 16px' },
+  stappen: { listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '0 32px', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))' },
+  stap: { display: 'flex', gap: 12, alignItems: 'flex-start', borderTop: `1px solid ${INKT}0.14)`, padding: '16px 0' },
   nummer: { flexShrink: 0, width: 30, height: 30, borderRadius: 9, background: '#EBF0E8', color: GROEN, fontWeight: 800, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'monospace' },
   aanvraag: { margin: '56px 0 0', background: '#EDE6D8', borderRadius: 20, padding: 'clamp(20px, 4vw, 34px)' },
-  vraag: { background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 14, padding: '16px 20px' },
+  vraag: { borderTop: `1px solid ${INKT}0.14)`, padding: '16px 0' },
 }
 
 /** Lijn-icoon (geen emoji als UI-icoon). */
