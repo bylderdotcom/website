@@ -307,5 +307,13 @@ een kwartier live" zonder `vercel ls website` te checken.
   in de juiste repo (sinds 11-11 ook hier), die een **draft-PR** opent. Nooit automatisch mergen tot Daniel grenzen
   vaststelt en er tests per configurator zijn. Stand van de lijst: `feedback-overzicht.yml` (handmatig, alleen lezen).
 
+- **Homepage ingekort (besluit Daniel, 11-11-2026, na de UX-audit).** Zes blokken met één doel, "Zet je woning in 3D":
+  kop met de film, drie producten met prijs, één regel over korting bij merken, afwerken door Bylder, "Van vloer tot tuin"
+  met "je eigen vakman kijkt mee", vier vragen (`web/app/home/NieuweHome.tsx`). De vorige homepage (22 schermen, 15 blokken,
+  101 links) staat nog in `web/app/held/HomeHeld.tsx` en `HomeClient.tsx` om terug te kunnen. Nulmeting 14-10 t/m 10-11:
+  203 bezoekers, 10% scrolt tot onderaan, 41% zonder interactie, 0 aanvragen. **Rond 9 december vergelijken**
+  (`ga4.yml` met taak `vanaf:/`). Projectpagina's: blokken na de afwerkkeuzes zijn uitklapbaar (`klapIn` in RenderCluster).
+  Nog te doen uit de audit: kleine labels (10-12px) groter, footer inklappen op mobiel, eigen foto's van stucwerk/tegels/badkamer.
+
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.

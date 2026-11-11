@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import ProjectFilm from '../nieuwbouw-project/ProjectFilm'
 import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
 import { VANAF, euroRond } from '../kozijnloze-deuren/configurator/prijs'
@@ -6,19 +5,15 @@ import { GIET_PRIJS_M2 } from '../components/gietvloer/gegevens'
 import { aantalMerken } from '@/lib/merken'
 
 /**
- * VOORBEELD van een nieuwe homepage (UX-audit 11-11-2026, verzoek Daniel: "eerst als voorbeeld bouwen").
- * De echte homepage is op een telefoon 22 schermen met 15 blokken en 101 links. Dit voorstel heeft zes
- * blokken en één doel: de bezoeker zet zijn woning in 3D. Vanuit daar volgen deuren, vloer, kast en de offerte.
+ * De homepage sinds 11-11-2026 (besluit Daniel na de UX-audit). De vorige was op een telefoon 22 schermen
+ * met 15 blokken en 101 links; 1 op de 10 bezoekers scrolde door en er kwamen geen aanvragen. Deze heeft zes
+ * blokken en één doel: de bezoeker zet zijn woning in 3D. Nulmeting 14-10 t/m 10-11: 203 bezoekers, 295
+ * weergaven, 41% zonder interactie, 0 aanvragen. Na vier weken vergelijken (scripts/ga4.py vanaf:/).
  *
- * Niet in Google (noindex) en nergens gelinkt. Keurt Daniel het goed, dan vervangt dit app/page.tsx en
- * verhuizen de blokken die hier niet staan (merken, prijscheck, na de oplevering, kosten per gemeente,
- * op maat laten maken, tijdlijn) naar hun eigen pagina's.
+ * Wat hier niet meer staat heeft een eigen pagina: merken (/vouchers/), prijscheck (/offerte-check/),
+ * kosten per gemeente (/project/), tijdlijn (/hoe-het-werkt/), na de oplevering (gidsen). De vorige
+ * homepage staat nog in app/held/HomeHeld.tsx en app/HomeClient.tsx, om terug te kunnen.
  */
-
-export const metadata: Metadata = {
-  title: 'Voorbeeld nieuwe homepage | Bylder',
-  robots: { index: false, follow: false },
-}
 
 const INKT = 'rgba(26,18,8,'
 const GROEN = '#3D5A3E'
@@ -32,7 +27,7 @@ const PRODUCTEN = [
   { naam: 'Deuren zonder kozijn', tekst: 'Plafondhoog en vlak in de wand. Kies kleur, groefpatroon en kruk.', prijs: `Vanaf ${euroRond(VANAF)} per deur`, href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deur samen',
     img: '/img/winkel/deuren/origin-6005-sm.webp', alt: 'Kozijnloze deur in mosgroen, vlak in een wand in dezelfde kleur', meet: 'home-deuren' },
   { naam: 'Gietvloer', tekst: 'Eén vloer zonder naden. Zie de kleur in je eigen kamers en vraag drie stalen aan.', prijs: `€ ${GIET_PRIJS_M2[0]} tot € ${GIET_PRIJS_M2[1]} per m²`, href: '/gietvloer/ontwerpen/', knop: 'Ontwerp je gietvloer',
-    img: '/img/klusseniers/gietvloer-foto.jpg', alt: 'Lichtgrijze gietvloer in een ruimte met twee okergele fauteuils', meet: 'home-gietvloer' },
+    img: '/img/gietvloer/gietvloer-in-woning.webp', alt: 'Donkere gietvloer door de hele begane grond van een woning in 3D', meet: 'home-gietvloer' },
   { naam: 'Kast op maat', tekst: 'Beschrijf je kast of upload een foto. Je ziet hem in 3D, met maten.', prijs: 'Gratis ontwerpen en inmeten', href: '/kasten-op-maat/ontwerpen/', knop: 'Ontwerp je kast',
     img: '/img/kasten/hoekkast-3d-sm.jpg', alt: 'Hoekkast op maat in 3D, uit de kastontwerper', meet: 'home-kast' },
 ]
@@ -40,7 +35,7 @@ const PRODUCTEN = [
 // Zes beelden uit zes hoeken van het aanbod, elk naar zijn eigen pagina.
 const GALERIJ = [
   { titel: 'Deuren zonder kozijn', tekst: 'Geplaatst in een woning, vlak in de wand', img: '/img/classic-next/portfolio-wit-bad-sm.webp', alt: 'Witte kozijnloze deur naast een vrijstaand bad', href: '/kozijnloze-deuren/' },
-  { titel: 'Gietvloer', tekst: 'Naadloos door de hele verdieping', img: '/img/klusseniers/gietvloer-foto.jpg', alt: 'Lichtgrijze gietvloer met twee okergele fauteuils', href: '/gietvloer/' },
+  { titel: 'Gietvloer', tekst: '70 kleuren, drie stalen gratis', img: '/img/gietvloer/bio-lava/pisa.webp', alt: 'Kleurstaal van gietvloer Bio Lava in de kleur Pisa', href: '/gietvloer/' },
   { titel: 'Kast op maat', tekst: 'Ontworpen in 3D, gemaakt door een timmerbedrijf', img: '/img/kasten/hoekkast-3d-sm.jpg', alt: 'Blauwe hoekkast op maat in 3D', href: '/kasten-op-maat/' },
   { titel: 'Slaapkamer', tekst: 'Auping, met korting tot 10%', img: '/img/auping-noble-solid-oak-sm.webp', alt: 'Auping bed van massief eiken in een lichte slaapkamer', href: '/vouchers/auping/' },
   { titel: 'Tuin', tekst: 'Schutting die niet elk jaar geolied hoeft', img: '/img/gardenwall-weo35-sm.webp', alt: 'Composiet schutting in teakkleur langs een tuinpad', href: '/tuin-aanleggen/schutting-schermen/' },
@@ -54,7 +49,7 @@ const VRAGEN: [string, string][] = [
   ['Kan mijn eigen vakman meedoen?', 'Ja. Je nodigt hem uit met zijn e-mailadres. Hij ziet je woning met je keuzes en zet zijn offerte ernaast.'],
 ]
 
-export default function Voorbeeld() {
+export default function NieuweHome() {
   return (
     <main style={{ background: '#F5F0E8', color: '#1A1208' }}>
       <style>{`
@@ -72,10 +67,6 @@ export default function Voorbeeld() {
         .hv-vr>summary::after{content:"";flex:none;width:10px;height:10px;border-right:2px solid ${GROEN};border-bottom:2px solid ${GROEN};transform:rotate(45deg);margin-right:6px}
         .hv-vr[open]>summary::after{transform:rotate(-135deg)}
       `}</style>
-
-      <p style={{ margin: 0, padding: '8px 20px', background: '#1A1208', color: '#F5F0E8', fontSize: 13.5, textAlign: 'center' }}>
-        Voorbeeld van de nieuwe homepage. Niet zichtbaar voor bezoekers en niet in Google.
-      </p>
 
       {/* 1. Kop: één belofte, één knop. */}
       <section className="hv hv-held" aria-labelledby="hv-kop">
@@ -153,9 +144,13 @@ export default function Voorbeeld() {
             </a>
           ))}
         </div>
-        <EigenVakmanMeekijken campagne="homepage-voorbeeld" marge="40px 0 0" />
+        <EigenVakmanMeekijken campagne="homepage" marge="40px 0 0" />
       </section>
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        mainEntity: VRAGEN.map(([v, a]) => ({ '@type': 'Question', name: v, acceptedAnswer: { '@type': 'Answer', text: a } })),
+      }) }} />
       {/* 6. Vier vragen. */}
       <section className="hv hv-blok" aria-labelledby="hv-vr" style={{ paddingBottom: 72 }}>
         <h2 id="hv-vr" style={{ ...H2, marginBottom: 16 }}>Kort en eerlijk</h2>
