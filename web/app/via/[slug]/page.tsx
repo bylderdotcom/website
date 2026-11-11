@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: { type: 'website', url: `https://www.bylder.com/via/${a.slug}/`, siteName: 'Bylder',
       title: `10% korting via ${a.naam.split(' ')[0]} van ${a.bedrijf}`,
       description: 'Deuren zonder kozijn, gietvloer en kast op maat. Gratis ontwerpen in je eigen woning in 3D.',
-      images: [{ url: 'https://www.bylder.com/img/voorbeeldwoning-3d.webp', width: 1200, height: 712, alt: 'Een woning in 3D met gekozen vloer en deuren' }] },
+      images: [{ url: 'https://www.bylder.com/img/voorbeeldwoning-3d-v2.webp', width: 1200, height: 712, alt: 'Een woning in 3D met gekozen vloer en deuren' }] },
     alternates: { canonical: `https://www.bylder.com/via/${a.slug}/` },
   }
 }
@@ -68,13 +68,15 @@ const PRODUCTEN: Product[] = [
   { naam: 'Auping bed', korting: '10% korting', wat: 'Op het reguliere assortiment van Auping: boxsprings, matrassen en bedframes. Niet bovenop een lopende actie of sale.', href: 'https://app.bylder.com/dashboard/vouchers?ref={slug}', knop: 'Haal je Auping-code', moment: 'Gratis account nodig', offerte: 'Je code laat je zien in de Auping-winkel',
     img: '/img/auping-noble-solid-oak.webp', sm: '/img/auping-noble-solid-oak-sm.webp 500w, /img/auping-noble-solid-oak.webp 1000w', alt: 'Auping Noble Solid Oak bed van massief eiken in een lichte slaapkamer', logo: ['/img/logos/auping-blue.svg', 'Auping', 20] },
 ]
-// Huisstijl per organisatie (verzoek Daniel, 11-11-2026): een Klussenier deelt een pagina in de
-// kleuren en letters van Klussenier (marineblauw, rood, Futura-achtige koppen), met beide logo's.
+// Per organisatie (11-11-2026): het logo bovenaan als herkenning. Kleuren en letters kunnen per
+// organisatie, maar Klussenier houdt de Bylder-huisstijl (besluit Daniel).
 type Thema = { knop: string; knopTekst: string; accent: string; tint: string; tintRand: string; inkt: string; kop?: string; tekst?: string; pagina?: string; zacht?: string; logo?: [string, string] }
 const THEMA: Record<'bylder' | 'klussenier', Thema> = {
   bylder: { knop: GROEN, knopTekst: '#F5F0E8', accent: GROEN, tint: 'rgba(61,90,62,0.08)', tintRand: 'rgba(61,90,62,0.2)', inkt: '#1A1208' },
-  klussenier: { knop: '#C11733', knopTekst: '#FFFFFF', accent: '#213C73', tint: 'rgba(33,60,115,0.07)', tintRand: 'rgba(33,60,115,0.2)', inkt: '#14213D',
-    kop: "'Barlow Condensed', 'Arial Narrow', sans-serif", tekst: "'Source Sans 3', Arial, sans-serif", pagina: '#FFFFFF', zacht: '#4A5568', logo: ['/img/klusseniers/klussenier-logo.png', 'Klussenier, vertrouwd verbouwen'] },
+  // Besluit Daniel (11-11-2026): de pagina blijft in Bylder-huisstijl, want de klant koopt bij Bylder.
+  // Het logo van de organisatie staat bovenaan als herkenning ("aanbevolen door").
+  klussenier: { knop: GROEN, knopTekst: '#F5F0E8', accent: GROEN, tint: 'rgba(61,90,62,0.08)', tintRand: 'rgba(61,90,62,0.2)', inkt: '#1A1208',
+    logo: ['/img/klusseniers/klussenier-logo.png', 'Klussenier, vertrouwd verbouwen'] },
 }
 
 const STAALTJES = ['kalkwit', 'zandbeige', 'betongrijs', 'grafiet'].map(id => KLEUREN.find(k => k.id === id)!).filter(Boolean)
@@ -156,7 +158,7 @@ export default async function ViaPagina({ params }: { params: Promise<{ slug: st
       </div>
 
       <section aria-labelledby="h-3d" style={{ marginTop: 44, background: '#fff', border: `1px solid ${INKT}0.12)`, borderRadius: 18, overflow: 'hidden', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))' }}>
-        <img src="/img/voorbeeldwoning-3d.webp" srcSet="/img/voorbeeldwoning-3d-sm.webp 600w, /img/voorbeeldwoning-3d.webp 1200w" sizes="(max-width:720px) 100vw, 480px"
+        <img src="/img/voorbeeldwoning-3d-v2.webp" srcSet="/img/voorbeeldwoning-3d-v2-sm.webp 600w, /img/voorbeeldwoning-3d-v2.webp 1200w" sizes="(max-width:720px) 100vw, 480px"
           alt="Een woning in 3D, met de gekozen vloer en deuren per ruimte" width={1200} height={712} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', background: '#E9E4DA' }} />
         <div style={{ padding: '22px 24px', display: 'flex', flexDirection: 'column', gap: 10 }}>
           <h2 id="h-3d" style={{ ...KOP, fontSize: '1.3rem', fontWeight: 800, margin: 0 }}>Je hele huis in 3D, uit je eigen plattegrond</h2>
