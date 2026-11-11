@@ -30,7 +30,7 @@ const label: React.CSSProperties = { display: 'block', fontSize: 13, fontWeight:
 const PLANNING = ['Zo snel mogelijk', 'Binnen 3 maanden', 'Over 3 tot 6 maanden', 'Later dan 6 maanden', 'Weet ik nog niet']
 
 export default function OfferteFormulier(p: {
-  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie' | 'afwerking-nieuwbouw' | 'winkel-plint' | 'winkel-scharnier'
+  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie' | 'afwerking-nieuwbouw' | 'winkel-plint' | 'winkel-scharnier' | 'winkel-deurset'
   bron: string
   specificatie: string
   configuratie: unknown
