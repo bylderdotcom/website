@@ -3,6 +3,7 @@ import ProjectFilm from '../nieuwbouw-project/ProjectFilm'
 import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
 import { VANAF, euroRond } from '../kozijnloze-deuren/configurator/prijs'
 import { GIET_PRIJS_M2 } from '../components/gietvloer/gegevens'
+import { aantalMerken } from '@/lib/merken'
 
 /**
  * VOORBEELD van een nieuwe homepage (UX-audit 11-11-2026, verzoek Daniel: "eerst als voorbeeld bouwen").
@@ -120,6 +121,12 @@ export default function Voorbeeld() {
           ))}
         </div>
       </section>
+
+      {/* Korting bij merken blijft zichtbaar als één regel: het is een eigen verdienlijn (11-11-2026). */}
+      <p className="hv" style={{ fontSize: 16, color: `${INKT}0.75)`, paddingTop: 22 }}>
+        De rest van je inrichting koop je met korting bij {aantalMerken()} merken, van verlichting tot zonwering.{' '}
+        <a href="/vouchers/" data-meet="home-merken" style={{ color: GROEN, fontWeight: 800 }}>Bekijk de kortingen →</a>
+      </p>
 
       {/* 4. Afwerken door Bylder. */}
       <section className="hv hv-blok" aria-labelledby="hv-afw">
