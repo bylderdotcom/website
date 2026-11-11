@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import PlintBeeld from './PlintBeeld'
 import Tijdlijn from './Tijdlijn'
-import { PLINT, SCHARNIER, DEURSET } from '@/lib/winkel'
+import { PLINT, SCHARNIER, DEURSET, SET_KLEUREN } from '@/lib/winkel'
 import { S, INKT, GROEN } from './stijl'
 
 /**
@@ -13,14 +13,19 @@ import { S, INKT, GROEN } from './stijl'
 const URL = 'https://www.bylder.com/winkel/'
 
 export const metadata: Metadata = {
-  title: 'Winkel: onzichtbare plinten en verdekte scharnieren | Bylder',
-  description: 'Producten voor een strakke woning, besteld bij Bylder. Het pakket berekend uit je eigen plattegrond, op tijd voor de stukadoor.',
+  title: 'Winkel: kozijnloze deuren, onzichtbare plinten en scharnieren | Bylder',
+  description: 'Kozijnloze deuren als complete set, gegrond of in zes kleuren, plus onzichtbare plinten en verdekte scharnieren. Besteld bij Bylder, op tijd voor de stukadoor.',
   alternates: { canonical: URL },
 }
 
+// Alle deuren apart in beeld (11-11-2026, Daniel: "ik zie in de winkel maar 1 deur"): gegrond en de zes kleuren,
+// elk met de render en de eigen pagina, zoals ze ook in de productlijst voor Google staan.
+const DEUREN = [
+  { href: `/winkel/${DEURSET.slug}/`, naam: 'Gegrond', sub: 'Meeschilderen in je wandkleur', beeld: 'gegrond' },
+  ...SET_KLEUREN.map(k => ({ href: `/winkel/${DEURSET.slug}/ral-${k.ral}/`, naam: k.naam[0].toUpperCase() + k.naam.slice(1), sub: `Afgelakt RAL ${k.ral}`, beeld: k.ral })),
+]
+
 const PRODUCTEN = [
-  { href: `/winkel/${DEURSET.slug}/`, merk: DEURSET.merk, naam: DEURSET.naam, tekst: 'Onzichtbaar kozijn, deurblad, scharnieren en magneetslot in één set. Gegrond om mee te schilderen, of afgelakt in zes kleuren.',
-    beeld: <img src="/img/winkel/deuren/origin-6005-sm.webp" width="400" height="420" alt="Kozijnloze deur in mosgroen" style={{ height: 280, width: '100%', objectFit: 'cover', display: 'block' }} /> },
   { href: `/winkel/${PLINT.slug}/`, merk: PLINT.merk, naam: PLINT.naam, tekst: 'Inbouwplint vlak met de wand. Het pakket rekenen we uit je plattegrond.', beeld: <div style={{ padding: 16 }}><PlintBeeld /></div> },
   { href: `/winkel/${SCHARNIER.slug}/`, merk: SCHARNIER.merk, naam: SCHARNIER.naam, tekst: `Verborgen scharnier tot ${SCHARNIER.draagvermogenKg} kg per set, 3D verstelbaar.`,
     beeld: <img src="/img/winkel/dx38.webp" width="1000" height="1366" alt="Verdekt scharnier Basys DX-38 Design" style={{ height: 260, width: 'auto', display: 'block', margin: '12px auto' }} /> },
@@ -29,7 +34,7 @@ const PRODUCTEN = [
 export default function Pagina() {
   const ld = [
     { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Bylder-winkel', url: URL,
-      hasPart: PRODUCTEN.map(p => ({ '@type': 'Product', name: `${p.merk} ${p.naam}`, url: `https://www.bylder.com${p.href}` })) },
+      hasPart: [...DEUREN.map(d => ({ '@type': 'Product', name: `Classic Next kozijnloze deur ${d.naam.toLowerCase()}`, url: `https://www.bylder.com${d.href}` })), ...PRODUCTEN.map(p => ({ '@type': 'Product', name: `${p.merk} ${p.naam}`, url: `https://www.bylder.com${p.href}` }))] },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bylder.com/' },
       { '@type': 'ListItem', position: 2, name: 'Winkel', item: URL }] },
@@ -41,6 +46,21 @@ export default function Pagina() {
       <p style={S.oog}>Bylder-winkel</p>
       <h1 style={S.h1}>De winkel die je woning kent.</h1>
       <p style={S.lead}>Producten voor een strakke woning, besteld bij Bylder. We rekenen uit wat je nodig hebt uit je eigen plattegrond, en zeggen erbij wanneer het er moet zijn.</p>
+
+
+      <h2 style={{ ...S.h2, marginTop: 20 }}>Kozijnloze deuren, als complete set</h2>
+      <p style={{ ...S.p, margin: '0 0 14px' }}>Onzichtbaar kozijn, deurblad, verdekte scharnieren en magneetslot. Standaardhoogte of plafondhoog, exclusief kruk en montage. Levering in ongeveer {DEURSET.levertijdWeken} weken.</p>
+      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fill, minmax(min(46%, 136px), 1fr))', margin: '0 0 34px' }}>
+        {DEUREN.map(d => (
+          <a key={d.href} href={d.href} style={{ ...S.kaart, padding: 0, overflow: 'hidden', textDecoration: 'none', color: '#1A1208', display: 'flex', flexDirection: 'column' }}>
+            <img src={`/img/winkel/deuren/origin-${d.beeld}-sm.webp`} width="400" height="420" loading="lazy" decoding="async" alt={`Kozijnloze deur ${d.naam.toLowerCase()}, ${d.sub.toLowerCase()}`} style={{ width: '100%', height: 'auto', aspectRatio: '400 / 420', objectFit: 'cover', display: 'block' }} />
+            <span style={{ padding: '10px 12px 12px', display: 'flex', flexDirection: 'column', gap: 2 }}>
+              <strong style={{ fontSize: 15 }}>{d.naam}</strong>
+              <span style={{ fontSize: 13, color: `${INKT}0.65)` }}>{d.sub}</span>
+            </span>
+          </a>
+        ))}
+      </div>
 
       <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', margin: '6px 0 34px' }}>
         {[
