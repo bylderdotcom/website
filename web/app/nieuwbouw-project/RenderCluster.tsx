@@ -16,6 +16,38 @@ import ProjectBalk from './ProjectBalk'
 // Commerciële stappen (11-10-2026): verrijkProject zet plinten, ledenkorting en Auping met
 // foto in de pagina, en de gietvloerknop naar de ontwerper. Onderaan de AanbodStrook.
 // De <main>-tags van het fragment gaan eruit: de layout levert de <main> al.
+// Rust op de pagina (UX-audit 11-11-2026): de pagina was op een telefoon 25 schermen met 20 blokken.
+// De blokken waar een koper iets mee doet blijven open; de rest wordt een rij uitklapbare koppen.
+// De tekst blijft in de HTML staan (Google leest hem), de bezoeker ziet een overzicht.
+const OPEN = /Zie je woning in|Twee afwerkingen|zelf publiceert/
+function klapIn(html: string): string {
+  const koppen = [...html.matchAll(/<h2[^>]*>[\s\S]*?<\/h2>/g)]
+  if (koppen.length < 4) return html
+  let uit = html.slice(0, koppen[0].index!)
+  koppen.forEach((k, i) => {
+    const eind = i + 1 < koppen.length ? koppen[i + 1].index! : html.length
+    const stuk = html.slice(k.index!, eind)
+    if (OPEN.test(k[0])) { uit += stuk; return }
+    // Alleen het deel dat netjes binnen zijn eigen <div>'s blijft gaat in het uitklapblok.
+    let diepte = 0, knip = stuk.length
+    for (const t of stuk.matchAll(/<(\/?)div\b[^>]*>/g)) {
+      diepte += t[1] ? -1 : 1
+      if (diepte < 0) { knip = t.index!; break }
+    }
+    if (diepte > 0) { uit += stuk; return }
+    const inhoud = stuk.slice(k[0].length, knip)
+    if (inhoud.replace(/<[^>]+>/g, '').trim().length < 20) { uit += stuk; return }
+    uit += `<details class="pm"><summary>${k[0]}</summary>${inhoud}</details>` + stuk.slice(knip)
+  })
+  return uit
+}
+const KLAP_CSS = '.pm{border-top:1px solid rgba(26,18,8,.12);margin:0}.pm:last-of-type{border-bottom:1px solid rgba(26,18,8,.12)}'
+  + '.pm>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 2px;min-height:44px}'
+  + '.pm>summary::-webkit-details-marker{display:none}.pm>summary h2{margin:0!important;font-size:1.1rem!important;line-height:1.3!important;letter-spacing:-.01em}'
+  + '.pm>summary::after{content:"";flex:none;width:10px;height:10px;border-right:2px solid #3D5A3E;border-bottom:2px solid #3D5A3E;transform:rotate(45deg);margin:0 6px 4px 0;transition:transform .15s}'
+  + '.pm[open]>summary::after{transform:rotate(-135deg);margin-bottom:-4px}.pm[open]{padding-bottom:18px}'
+  + '@media(prefers-reduced-motion:reduce){.pm>summary::after{transition:none}}'
+
 export default function RenderCluster({ page }: { page: ClusterPage }) {
   const css = getClusterCss()
   let main = verrijkProject(getMainHtml(page), page.slug)
@@ -37,10 +69,11 @@ export default function RenderCluster({ page }: { page: ClusterPage }) {
   const opKolom = diepte === 2 && /^\s*<div class="container"><div class="kolom">/.test(voorPk)
   if (opKolom) { voorPk += '</div></div>'; naPk = '<div class="container"><div class="kolom">' + naPk }
   else { voorPk = voorPk + naPk; naPk = '' }
+  if (naPk) naPk = klapIn(naPk)
   const offerteUrl = `/nieuwbouw-afwerken/?${new URLSearchParams({ project, project_slug: page.slug, ...(oplevering ? { oplevering } : {}) }).toString()}#aanvraag`
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: css }} />
+      <style dangerouslySetInnerHTML={{ __html: css + KLAP_CSS }} />
       {page.ldjson.map((block, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: block }} />
       ))}
