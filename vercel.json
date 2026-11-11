@@ -394,7 +394,17 @@
       "permanent": true
     },
     {
-      "source": "/klussen(.*)",
+      "source": "/klussen",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/klussen/(.*)",
+      "destination": "/kopen/",
+      "permanent": true
+    },
+    {
+      "source": "/klussen-(.*)",
       "destination": "/kopen/",
       "permanent": true
     },
