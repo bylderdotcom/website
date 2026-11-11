@@ -66,6 +66,23 @@ export default function Pagina() {
         ))}
       </div>
 
+      <h2 style={S.h2}>Op maat? Ontwerp het zelf, met prijs.</h2>
+      <p style={S.p}>Past een standaardset niet, stel dan je eigen uitvoering samen. Je ziet hem in je woning en krijgt binnen twee werkdagen een offerte van Bylder.</p>
+      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))' }}>
+        {[
+          ['/kozijnloze-deuren/configurator/', 'Kozijnloze deur samenstellen', 'Plafondhoog, freeswerk, elke RAL-kleur of houtdecor. Prijs per deur.'],
+          ['/gietvloer/ontwerpen/', 'Gietvloer ontwerpen', 'Kies vloer en kleur, zie hem in je eigen woning en vraag stalen aan.'],
+          ['/kasten-op-maat/ontwerpen/', 'Kast op maat ontwerpen', 'Beschrijf je kast of upload een foto: je kast in 3D, met maten.'],
+          ['/nieuwbouw-afwerken/#aanvraag', 'Alles in één offerte', 'Stucwerk, vloeren, deuren, tegels en kasten: één offerte, één planning.'],
+        ].map(([href, t, p]) => (
+          <a key={href} href={href} style={{ ...S.kaart, padding: '16px 18px', textDecoration: 'none', color: '#1A1208', display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <strong style={{ fontSize: 16 }}>{t}</strong>
+            <span style={{ fontSize: 14.5, color: `${INKT}0.72)`, lineHeight: 1.55, flex: 1 }}>{p}</span>
+            <span style={{ color: GROEN, fontWeight: 800, fontSize: 14.5 }}>{href.startsWith('/nieuwbouw') ? 'Vraag een offerte aan →' : 'Begin met ontwerpen →'}</span>
+          </a>
+        ))}
+      </div>
+
       <h2 style={S.h2}>Wat je wanneer regelt</h2>
       <p style={S.p}>In de volgorde van de bouw. Vul op een productpagina in wanneer de stukadoor komt, dan staan hier je datums bij.</p>
       <Tijdlijn />
