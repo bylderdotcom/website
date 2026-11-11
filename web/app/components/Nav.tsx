@@ -154,7 +154,7 @@ export default function Nav({ merken }: { merken: number }) {
         + '.bv-cta-weg{display:none!important}}'
         + '@media(max-width:420px){.bv-bar{padding:12px 14px!important;gap:8px!important}'
         + '.bv-logo{gap:8px!important}.bv-lt{font-size:16px!important}'
-        + '.bv-r{gap:8px!important}.bv-cta{font-size:0.75rem!important;padding:8px 12px!important}}'
+        + '.bv-r{gap:8px!important}.bv-cta{font-size:0.8125rem!important;padding:12px 10px!important}}'
         + '@media(max-width:359px){.bv-bar{padding:12px 10px!important}.bv-logo{gap:6px!important}'
         + '.bv-lt{font-size:15px!important}.bv-cta{padding:8px 10px!important}}' }} />
 

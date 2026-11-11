@@ -64,6 +64,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           + '.keuze-grid,.compare-grid,.price-grid,.name-row,.vent-grid,.footer-inner,'
           + '.footer-grid{grid-template-columns:1fr}'
           + '*{min-width:0}'
+          /* Kleine letters (10 tot 12,5px) op een telefoon naar 13px (UX-audit 11-11-2026). Het tellertje van het mandje niet. */
+          + '[style*="font-size:10px"],[style*="font-size:10.5px"],[style*="font-size:11px"],[style*="font-size:11.5px"],[style*="font-size:12px"],[style*="font-size:12.5px"],[style*="font-size: 10px"],[style*="font-size: 11px"],[style*="font-size: 12px"]{font-size:13px!important}'
+          + '.bv-mand span,.bn2-mn{font-size:10.5px!important}'
+          + '.mw-oog,.mw-stage-kop .sub,.mw-groep-kop,.gh-oog,.gv-type-sub,.ko-label,.ko-hint,.pk-etiket{font-size:13px!important}'
           /* iPhone zoomt in op een veld met een letter onder 16px; daarna verspringt de pagina (UX-audit 11-11-2026). */
           + 'input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea{font-size:16px!important}'
           + '[style*="min-width:2"],[style*="min-width:3"],[style*="min-width:4"],'

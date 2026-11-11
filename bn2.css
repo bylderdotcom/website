@@ -4,7 +4,7 @@
    kon horizontaal scrollen. Drie trappen: compacter vanaf de mobiele nav,
    kleinere CTA onder 420px, en krappe marges onder 360px. */
 @media(max-width:1180px){.bn2-mw{padding:13px 16px;gap:10px}.bn2-r{gap:10px}.bn2-cta{font-size:0.8125rem;padding:9px 14px}.bn2-bg{padding:6px 2px}}
-@media(max-width:420px){.bn2-mw{padding:12px 14px;gap:8px}.bn2-logo{gap:8px}.bn2-lt{font-size:16px}.bn2-r{gap:8px}.bn2-cta{font-size:0.75rem;padding:8px 12px}}
+@media(max-width:420px){.bn2-mw{padding:12px 14px;gap:8px}.bn2-logo{gap:8px}.bn2-lt{font-size:16px}.bn2-r{gap:8px}.bn2-cta{font-size:0.8125rem;padding:12px 10px}}
 @media(max-width:359px){.bn2-mw{padding:12px 10px}.bn2-logo{gap:6px}.bn2-lt{font-size:15px}.bn2-cta{padding:8px 10px}}
 
 /* ── Mobiel vangnet (10-09-2026) ────────────────────────────────────────────
@@ -134,3 +134,5 @@ body>header:has(h1.hero-h1)>div,body>main>section:has(>h1.hero-h1){max-width:120
 /* UX-audit 11-11-2026: invulvelden 16px (iPhone zoomt anders in) en tikdoelen van 44px in het menu. */
 @media(max-width:720px){input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea{font-size:16px!important}}
 @media(max-width:1180px){.bn2-mand{padding:10px;margin:-8px}.bn2-bg{padding:14px 12px;margin:-8px -10px}.bn2-cta{padding-top:12px;padding-bottom:12px}}
+/* UX-audit 11-11-2026: kleine letters op een telefoon naar 13px; het tellertje van het mandje niet. */
+@media(max-width:720px){[style*="font-size:10px"],[style*="font-size:10.5px"],[style*="font-size:11px"],[style*="font-size:11.5px"],[style*="font-size:12px"],[style*="font-size:12.5px"],[style*="font-size: 10px"],[style*="font-size: 11px"],[style*="font-size: 12px"]{font-size:13px!important}.bn2-mn{font-size:10.5px!important}}

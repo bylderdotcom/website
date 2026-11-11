@@ -313,7 +313,8 @@ een kwartier live" zonder `vercel ls website` te checken.
   101 links) staat nog in `web/app/held/HomeHeld.tsx` en `HomeClient.tsx` om terug te kunnen. Nulmeting 14-10 t/m 10-11:
   203 bezoekers, 10% scrolt tot onderaan, 41% zonder interactie, 0 aanvragen. **Rond 9 december vergelijken**
   (`ga4.yml` met taak `vanaf:/`). Projectpagina's: blokken na de afwerkkeuzes zijn uitklapbaar (`klapIn` in RenderCluster).
-  Nog te doen uit de audit: kleine labels (10-12px) groter, footer inklappen op mobiel, eigen foto's van stucwerk/tegels/badkamer.
+  Ook gedaan (11-11): tekst onder 13px op een telefoon naar 13px (regel in `layout.tsx` en `bn2.css`), footer per groep
+  inklapbaar op een telefoon (vinkje zonder script, `Footer.tsx`). Nog open: eigen foto's van stucwerk, tegels en badkamer (Daniel).
 
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.
