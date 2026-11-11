@@ -121,7 +121,8 @@ const STIJL = `
 .ft-feit b{display:block;font-family:'Space Mono',monospace;font-size:22px;font-weight:700;color:#F5F0E8;letter-spacing:-.02em}
 .ft-feit span{display:block;font-size:12.5px;color:rgba(245,240,232,.6);margin-top:3px;line-height:1.4}
 .ft-kol{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:28px 22px;padding:40px 0 36px}
-.ft-kol p{font-size:10.5px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:#F5F0E8;font-weight:700;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid rgba(245,240,232,.14)}
+.ft-kol label{display:block;font-size:10.5px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:#F5F0E8;font-weight:700;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid rgba(245,240,232,.14)}
+.ft-cb{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
 .ft-kol ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .ft-kol a{font-size:13px;color:rgba(245,240,232,.62);text-decoration:none;line-height:1.35}
 .ft-kol a:hover{color:#F5F0E8}
@@ -134,7 +135,13 @@ const STIJL = `
 .ft-ok{display:flex;align-items:center;gap:6px;font-size:12px;font-family:'Space Mono',monospace;color:rgba(245,240,232,.5)}
 .ft-ok i{width:6px;height:6px;border-radius:50%;background:#659567;display:inline-block}
 @media(max-width:1000px){.ft-kol{grid-template-columns:repeat(4,minmax(0,1fr))}.ft-top{grid-template-columns:1fr;gap:28px}.ft-feit{align-self:start}}
-@media(max-width:640px){.ft{padding:48px 0 28px}.ft-kol{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 18px;padding:32px 0 28px}.ft-feit{grid-template-columns:1fr 1fr;gap:14px}.ft-feit b{font-size:19px}}
+@media(max-width:640px){.ft{padding:48px 0 28px}.ft-kol{grid-template-columns:minmax(0,1fr);gap:0;padding:20px 0 24px}
+.ft-kol label{display:flex;align-items:center;justify-content:space-between;min-height:48px;margin:0;padding:0;font-size:13px;cursor:pointer}
+.ft-kol label::after{content:"";width:8px;height:8px;border-right:2px solid rgba(245,240,232,.7);border-bottom:2px solid rgba(245,240,232,.7);transform:rotate(45deg);margin-right:6px}
+.ft-cb:checked+label::after{transform:rotate(-135deg)}
+.ft-cb:not(:checked)~ul{display:none}.ft-kol ul{padding:12px 0 18px;gap:0}.ft-kol a{display:block;padding:9px 0;font-size:15px}
+.ft-cb:focus-visible+label{outline:2px solid #8AAE8B;outline-offset:2px}
+.ft-feit span,.ft-bar p,.ft-bar a,.ft-bar span,.ft-ok{font-size:13px!important}.ft-feit{grid-template-columns:1fr 1fr;gap:14px}.ft-feit b{font-size:19px}}
 `
 
 // De balk "Bylder als aannemer" boven de footer (besluit Daniel, 28-10-2026: elk bezoek moet weten
@@ -166,14 +173,17 @@ export default function Footer({ merken = 56 }: { merken?: number }) {
           <div className="ft-feit" aria-label="Bylder in cijfers">
             <div><b>{merken}</b><span>aangesloten merken met ledenkorting</span></div>
             <div><b>{PROJECTEN}</b><span>nieuwbouwprojecten met een eigen pagina</span></div>
-            <div><b>0 €</b><span>voor bewoners — de merken betalen</span></div>
+            <div><b>0 €</b><span>voor bewoners: ontwerpen en ledenkorting zijn gratis</span></div>
           </div>
         </div>
 
         <nav className="ft-kol" aria-label="Sitemap">
-          {COLS.map(col => (
+          {COLS.map((col, i) => (
             <div key={col.title}>
-              <p>{col.title}</p>
+              {/* Op een telefoon klapt elke groep in (UX-audit 11-11-2026): de footer was daar drie schermen.
+                  Een vinkje zonder script, zodat het ook op de statische pagina's werkt. Op desktop altijd open. */}
+              <input type="checkbox" className="ft-cb" id={`ft-${i}`} aria-label={`${col.title} tonen`} />
+              <label htmlFor={`ft-${i}`}>{col.title}</label>
               <ul>
                 {col.links.map(l => (
                   <li key={l.href + l.label}>
