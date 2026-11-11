@@ -68,7 +68,7 @@ export default function Reisbalk() {
           ))}
         </ol>
         <div className="rb-r">
-          {w && <a className="rb-w" href="/mijn-woning/" data-meet="reis-woning" style={{ color: `${INKT}0.7)`, fontWeight: 600 }}>Jouw woning{w.project ? ` in ${w.project}` : ''}: {feiten}</a>}
+          {w && <a className="rb-w" href="/mijn-woning/" data-meet="reis-woning" style={{ color: `${INKT}0.7)`, fontWeight: 600 }}>Jouw woning{w.project ? ` in ${w.project}` : ''}: <span className="maat">{feiten}</span></a>}
           {stap.href ? <a href={stap.href} data-meet={`reis-volgende-${nu + 1}`}><span className="rb-l">{stap.doe}</span><span className="rb-k">{stap.kort}</span> →</a> : <span style={{ color: `${INKT}0.7)` }}><span className="rb-l">{stap.doe}</span><span className="rb-k">{stap.kort}</span></span>}
         </div>
       </div>

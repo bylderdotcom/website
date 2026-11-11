@@ -106,7 +106,7 @@ export default function NieuweHome() {
               <span style={{ padding: '18px 20px 20px', display: 'flex', flexDirection: 'column', gap: 8, flex: 1 }}>
                 <strong style={{ fontSize: 20, letterSpacing: '-0.01em' }}>{p.naam}</strong>
                 <span style={{ fontSize: 15.5, lineHeight: 1.55, color: `${INKT}0.72)`, flex: 1 }}>{p.tekst}</span>
-                <span style={{ fontSize: 14.5, fontWeight: 700 }}><JouwRegel soort={p.soort} standaard={p.prijs} perDeur={VANAF} perM2={GIET_PRIJS_M2} /></span>
+                <span className="maat" style={{ fontSize: 14, fontWeight: 700 }}><JouwRegel soort={p.soort} standaard={p.prijs} perDeur={VANAF} perM2={GIET_PRIJS_M2} /></span>
                 <span style={{ color: GROEN, fontWeight: 800, fontSize: 15.5 }}>{p.knop} →</span>
               </span>
             </a>

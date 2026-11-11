@@ -324,5 +324,23 @@ een kwartier live" zonder `vercel ls website` te checken.
   `meetLead`). Met een eigen woning staat er "Jouw woning: 83 m² · 7 deuren" en rekenen de productkaarten op de homepage
   met die aantallen (`JouwRegel.tsx`). Klikken: `data-meet` `reis-<n>`, `reis-woning`, `reis-volgende-<n>`.
 
+- **Stijlboek (besluit Daniel, 11-11-2026): `/stijlboek/` (noindex). Elke nieuwe of aangepaste pagina houdt zich hieraan.**
+  1. **Het vaste beeld is de woning als maquette** (`web/app/components/Maquette.tsx`, servercomponent, getekend uit de
+     voorbeeldwoning): witte muren, donkere rand, en per onderwerp precies één ding groen (`accent`: stucwerk, tegelwerk,
+     sanitair, vloeren, binnendeuren, schilderwerk, kasten). Staat op de zeven onderdeelpagina's van `/nieuwbouw-afwerken/`.
+     Nieuw onderwerp = nieuw accent in dat bestand, geen losse illustratie of stockfoto. `maquetteSvg()` geeft de svg voor
+     deelbeelden, mails en offertes (nog te doen).
+  2. **Cijfers, maten en bedragen in de typemachineletter**: klasse `maat` (Space Mono, in `layout.tsx`).
+  3. **Eén gevulde groene knop per scherm**, links onder de tekst; een tweede stap is een link met een pijl.
+  4. **Wit in plaats van kaders**: ruimte scheidt, een lijn ordent; een wit vlak met rand alleen voor iets wat je aanklikt
+     of invult (productkaart, formulier, prijs). Geen kader in een kader.
+  5. Groen is schaars: de hoofdactie of het accent in het beeld. Roest alleen voor het kleine label boven een kop.
+  Nog door te voeren op bestaande pagina's (per pagina, bij de eerstvolgende wijziging): statische pagina's (`bn2.css`),
+  deelafbeeldingen in maquettestijl, mails en offertes.
+- **OPEN, niet vergeten: fotorealistische render ook bij kast op maat (wens Daniel, 11-11-2026).** De gietvloerontwerper
+  heeft "Zie het in het echt" (app `/api/gietvloer/render`, ongeveer twintig seconden); de kastontwerper moet hetzelfde
+  krijgen: de ontworpen kast fotorealistisch in de eigen kamer. Bij elk gesprek over de kastontwerper of configuratoren:
+  Daniel hieraan herinneren tot het gebouwd is.
+
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.
