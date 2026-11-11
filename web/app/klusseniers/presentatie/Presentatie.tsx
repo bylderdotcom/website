@@ -9,13 +9,13 @@ const CSS = `
 .kp-dia section{position:relative;box-sizing:border-box;width:${B}px;height:${H}px;overflow:hidden;margin:0}
 .kp-dia h1,.kp-dia h2,.kp-dia h3,.kp-dia p{margin:0;-webkit-hyphens:manual;hyphens:manual;overflow-wrap:normal}
 .kp-dia img,.kp-dia video{display:block}
-.kp-knop{font:600 15px/1 'Plus Jakarta Sans',system-ui,sans-serif;border-radius:999px;padding:13px 20px;cursor:pointer;border:1.5px solid #3D5A3E;display:inline-flex;gap:8px;align-items:center}
-.kp-knop:focus-visible{outline:3px solid #B85C38;outline-offset:2px}
+.kp-knop{font:600 15px/1 'Plus Jakarta Sans',system-ui,sans-serif;border-radius:999px;padding:13px 20px;cursor:pointer;border:1.5px solid #213C73;display:inline-flex;gap:8px;align-items:center}
+.kp-knop:focus-visible{outline:3px solid #C11733;outline-offset:2px}
 `
 
 function Doek({ dia, schaal }: { dia: Dia; schaal: number }) {
   return (
-    <div className="kp-dia" style={{ width: B, height: H, transform: `scale(${schaal})`, transformOrigin: 'top left', fontFamily: "'DM Sans', Arial, sans-serif" }}
+    <div className="kp-dia" style={{ width: B, height: H, transform: `scale(${schaal})`, transformOrigin: 'top left', fontFamily: "'Source Sans 3', Arial, sans-serif" }}
       dangerouslySetInnerHTML={{ __html: dia.html }} />
   )
 }
@@ -82,15 +82,15 @@ export default function Presentatie({ dias }: { dias: Dia[] }) {
       <style>{CSS}</style>
       <header style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: 24 }}>
         <div style={{ maxWidth: 640 }}>
-          <p style={{ margin: '0 0 8px', fontFamily: "'Space Mono',monospace", fontSize: 12, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#B85C38', fontWeight: 700 }}>Klusseniers × Bylder</p>
-          <h1 style={{ margin: 0, fontSize: 'clamp(26px,4vw,40px)', lineHeight: 1.15, color: '#1A1208', fontWeight: 800 }}>Jouw klant, jouw link, jouw vergoeding</h1>
-          <p style={{ margin: '10px 0 0', fontSize: 16, lineHeight: 1.6, color: 'rgba(61,46,30,0.78)' }}>De presentatie in {dias.length} dia&apos;s. Presenteer hem schermvullend, of scrol erdoorheen.</p>
+          <p style={{ margin: '0 0 8px', fontFamily: "'Space Mono',monospace", fontSize: 12, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#C11733', fontWeight: 700 }}>Klussenier × Bylder</p>
+          <h1 style={{ margin: 0, fontSize: 'clamp(30px,4.6vw,46px)', lineHeight: 1.1, color: '#14213D', fontWeight: 800, fontFamily: "'Barlow Condensed', 'Arial Narrow', sans-serif" }}>Jouw klant, jouw link, jouw vergoeding</h1>
+          <p style={{ margin: '10px 0 0', fontSize: 16, lineHeight: 1.6, color: '#4A5568' }}>De presentatie in {dias.length} dia&apos;s. Presenteer hem schermvullend, of scrol erdoorheen.</p>
         </div>
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-          <button type="button" className="kp-knop" onClick={() => start(0)} style={{ background: '#3D5A3E', color: '#F5F0E8' }} data-meet="klusseniers-presenteer">
+          <button type="button" className="kp-knop" onClick={() => start(0)} style={{ background: '#C11733', color: '#FFFFFF', borderColor: '#C11733' }} data-meet="klusseniers-presenteer">
             <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z" /></svg>Presenteer
           </button>
-          <button type="button" className="kp-knop" onClick={kopieer} style={{ background: 'transparent', color: '#3D5A3E' }}>
+          <button type="button" className="kp-knop" onClick={kopieer} style={{ background: 'transparent', color: '#213C73' }}>
             {gekopieerd ? 'Link gekopieerd' : 'Kopieer de link'}
           </button>
         </div>
@@ -103,7 +103,7 @@ export default function Presentatie({ dias }: { dias: Dia[] }) {
             style={{ cursor: 'zoom-in', display: 'block', width: '100%', aspectRatio: '16 / 9', overflow: 'hidden', borderRadius: 12, boxShadow: '0 1px 0 #E2D8C6, 0 10px 30px rgba(26,18,8,0.08)', background: '#fff', position: 'relative' }}>
             {breed > 0 && <Doek dia={d} schaal={s} />}
             <button type="button" onClick={e => { e.stopPropagation(); start(i) }} className="kp-knop" aria-label={`Dia ${i + 1} schermvullend tonen`}
-              style={{ position: 'absolute', right: 10, bottom: 10, background: 'rgba(245,240,232,0.92)', color: '#3D5A3E', padding: '8px 12px', fontSize: 13 }}>{i + 1}</button>
+              style={{ position: 'absolute', right: 10, bottom: 10, background: 'rgba(255,255,255,0.92)', color: '#213C73', padding: '8px 12px', fontSize: 13 }}>{i + 1}</button>
           </div>
         ))}
       </div>
@@ -112,14 +112,14 @@ export default function Presentatie({ dias }: { dias: Dia[] }) {
         onClick={e => { const x = e.clientX / window.innerWidth; naar(x < 0.3 ? -1 : 1) }}
         onTouchStart={e => { veeg.current = e.touches[0].clientX }}
         onTouchEnd={e => { if (veeg.current === null) return; const dx = e.changedTouches[0].clientX - veeg.current; veeg.current = null; if (Math.abs(dx) > 50) { e.preventDefault(); naar(dx < 0 ? 1 : -1) } }}
-        style={{ position: 'fixed', inset: 0, zIndex: 1000, background: '#0F1611', display: nu === null ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+        style={{ position: 'fixed', inset: 0, zIndex: 1000, background: '#0E1A33', display: nu === null ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
         {nu !== null && (
           <div key={nu} style={{ width: B * sp, height: H * sp, overflow: 'hidden' }}>
             <Doek dia={dias[nu]} schaal={sp} />
           </div>
         )}
         {nu !== null && (
-          <div onClick={e => e.stopPropagation()} style={{ position: 'fixed', right: 16, bottom: 16, display: 'flex', gap: 8, alignItems: 'center', font: "600 14px 'Plus Jakarta Sans',system-ui,sans-serif", color: '#CFDCCB', background: 'rgba(15,22,17,0.7)', padding: '6px 8px 6px 14px', borderRadius: 999 }}>
+          <div onClick={e => e.stopPropagation()} style={{ position: 'fixed', right: 16, bottom: 16, display: 'flex', gap: 8, alignItems: 'center', font: "600 14px 'Plus Jakarta Sans',system-ui,sans-serif", color: '#D5DDEC', background: 'rgba(14,26,51,0.75)', padding: '6px 8px 6px 14px', borderRadius: 999 }}>
             <span aria-live="polite">{nu + 1} / {dias.length}</span>
             <button type="button" onClick={() => naar(-1)} aria-label="Vorige dia" style={{ all: 'unset', cursor: 'pointer', padding: '4px 8px' }}>←</button>
             <button type="button" onClick={() => naar(1)} aria-label="Volgende dia" style={{ all: 'unset', cursor: 'pointer', padding: '4px 8px' }}>→</button>
