@@ -61,6 +61,27 @@ export const SCHARNIER = {
 }
 
 
+/**
+ * Standaardset kozijnloze deur (besluit Daniel, 11-11-2026): één vaste samenstelling met een vaste prijs, zodat hij
+ * in de winkel kan worden besteld. Gegrond, zodat de koper hem in de kleur van de wand meeschildert. Wie iets
+ * anders wil (plafondhoog, afgelakt, freeswerk) gaat naar de configurator. Prijs: app src/lib/winkel.ts.
+ */
+export const DEURSET = {
+  slug: 'kozijnloze-deur-set',
+  naam: 'Kozijnloze deur, standaardset gegrond',
+  merk: 'Classic Next',
+  kort: 'Complete kozijnloze binnendeur: onzichtbaar kozijn, deurblad, verdekte scharnieren en magneetslot. Gegrond, zodat je hem meeschildert in de kleur van je wand.',
+  breedtes: [73, 78, 83, 88, 93],
+  hoogtes: ['201,5', '211,5', '231,5'],
+  sloten: [
+    { id: 'loop', naam: 'Loopslot (valt dicht, niet af te sluiten)' },
+    { id: 'dag-nacht', naam: 'Dag- en nachtslot (met sleutel)' },
+    { id: 'vrij-bezet', naam: 'Vrij/bezet (badkamer, toilet)' },
+  ] as Variant[],
+  /** Levering volgens de prijslijst van Classic Next: "mogelijk in 6 weken". */
+  levertijdWeken: 6,
+}
+
 /* ---------------------------------------------------------------- plinten uit een plattegrond */
 
 type Rechthoek = [number, number, number, number]

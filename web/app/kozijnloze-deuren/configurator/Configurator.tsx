@@ -12,7 +12,7 @@ import OfferteFormulier from '../../components/OfferteFormulier'
 import OntwerpBewaren from '../../components/OntwerpBewaren'
 import GerenderdBeeld from './GerenderdBeeld'
 import { meetStap } from '../../components/trechter'
-import { HOOGTES, deurPrijs, euro, euroRond, type Hoogte } from './prijs'
+import { HOOGTES, MONTAGE_UUR, deurPrijs, euro, euroRond, type Hoogte } from './prijs'
 
 const meet = (stap: string) => meetStap('kozijnloze-deur', stap)
 
@@ -1160,7 +1160,7 @@ export default function Configurator() {
               </tbody>
             </table>
             <p style={{ fontSize: 12.5, color: `${INKT}0.62)`, margin: '10px 0 0', lineHeight: 1.6 }}>
-              Inclusief btw, exclusief montage en levering. {prijsHuidig.totaal == null ? 'Houtdecor is maatwerk: die prijs staat in je offerte. ' : ''}Een indicatie op basis van de
+              Inclusief btw, exclusief montage en levering. Monteren duurt ongeveer {MONTAGE_UUR} uur per deur{deuren.length > 1 ? `, voor ${deuren.length} deuren dus zo'n ${(deuren.length * 2.5).toLocaleString('nl-NL')} uur` : ''}. {prijsHuidig.totaal == null ? 'Houtdecor is maatwerk: die prijs staat in je offerte. ' : ''}Een indicatie op basis van de
               prijslijst van Classic Next; wanddikte en afwijkende maten kunnen de prijs veranderen.
             </p>
           </div>

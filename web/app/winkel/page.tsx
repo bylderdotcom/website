@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import PlintBeeld from './PlintBeeld'
 import Tijdlijn from './Tijdlijn'
-import { PLINT, SCHARNIER } from '@/lib/winkel'
+import { PLINT, SCHARNIER, DEURSET } from '@/lib/winkel'
 import { S, INKT, GROEN } from './stijl'
 
 /**
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
 }
 
 const PRODUCTEN = [
+  { href: `/winkel/${DEURSET.slug}/`, merk: DEURSET.merk, naam: DEURSET.naam, tekst: 'Onzichtbaar kozijn, deurblad, scharnieren en magneetslot in één set. Gegrond: schilder hem mee met je wand.',
+    beeld: <img src="/img/classic-next/portfolio-gang-wit-sm.webp" width="800" height="1600" alt="Kozijnloze deur van Classic Next in een witte gang" style={{ height: 280, width: '100%', objectFit: 'cover', display: 'block' }} /> },
   { href: `/winkel/${PLINT.slug}/`, merk: PLINT.merk, naam: PLINT.naam, tekst: 'Inbouwplint vlak met de wand. Het pakket rekenen we uit je plattegrond.', beeld: <div style={{ padding: 16 }}><PlintBeeld /></div> },
   { href: `/winkel/${SCHARNIER.slug}/`, merk: SCHARNIER.merk, naam: SCHARNIER.naam, tekst: `Verborgen scharnier tot ${SCHARNIER.draagvermogenKg} kg per set, 3D verstelbaar.`,
     beeld: <img src="/img/winkel/dx38.webp" width="1000" height="1366" alt="Verdekt scharnier Basys DX-38 Design" style={{ height: 260, width: 'auto', display: 'block', margin: '12px auto' }} /> },

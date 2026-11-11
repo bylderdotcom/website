@@ -13,6 +13,7 @@ import { S, INKT, GROEN } from '../stijl'
 // Wat erbij hoort: per product in het mandje een suggestie die er nog niet in zit.
 const ERBIJ: Record<string, { product: string; href: string; tekst: string }> = {
   'winkel-plint': { product: 'winkel-scharnier', href: `/winkel/${SCHARNIER.slug}/`, tekst: 'Bij je onzichtbare plint: het verdekte scharnier voor een kozijnloze deur.' },
+  'winkel-deurset': { product: 'winkel-plint', href: `/winkel/${PLINT.slug}/`, tekst: 'Bij je kozijnloze deur: de onzichtbare plint, ook vóór het stucwerk de wand in.' },
   'winkel-scharnier': { product: 'winkel-plint', href: `/winkel/${PLINT.slug}/`, tekst: 'Bij je scharnieren: de onzichtbare plint, ook vóór het stucwerk de wand in.' },
 }
 

@@ -11,7 +11,7 @@ const EVENT = 'bylder-mand'
 
 export type MandRegel = {
   id: string
-  product: 'winkel-plint' | 'winkel-scharnier'
+  product: 'winkel-plint' | 'winkel-scharnier' | 'winkel-deurset'
   titel: string
   /** Wat erin zit, zoals de klant het leest. */
   regels: string[]

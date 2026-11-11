@@ -69,5 +69,8 @@ export function deurPrijs(d: DeurVoorPrijs): Prijs {
 /** Laagste prijs voor een complete deur zonder kruk: standaardhoogte, gegrond, zonder freeswerk. */
 export const VANAF = KOZIJN.standaard + BLAD.standaard.gegrond
 
+/** Montagetijd per deur (opgave Daniel, 11-11-2026). */
+export const MONTAGE_UUR = '2,5'
+
 export const euro = (n: number) => '€ ' + n.toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 export const euroRond = (n: number) => '€ ' + Math.round(n).toLocaleString('nl-NL')

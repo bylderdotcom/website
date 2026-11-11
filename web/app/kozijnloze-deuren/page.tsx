@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
 import Portfolio from './Portfolio'
 import EigenVakmanMeekijken, { EIGEN_VAKMAN_VRAAG } from '../components/EigenVakmanMeekijken'
-import { VANAF, euroRond } from './configurator/prijs'
+import { VANAF, MONTAGE_UUR, euroRond } from './configurator/prijs'
 
 /**
  * Pillar voor onzichtbare kozijnen / kozijnloze deuren.
@@ -317,7 +317,7 @@ export default function OnzichtbaarKozijnPage() {
               <td style={{ ...CEL, fontWeight: 700 }}>vanaf {euroRond(VANAF)}</td>
               <td style={CEL}>Kozijn, deurblad, scharnieren en magneetslot, inclusief btw. <a href="/kozijnloze-deuren/configurator/" style={{ color: 'inherit', fontWeight: 700 }}>Reken je eigen deur uit</a></td></tr>
             <tr><td style={CEL}>Montage</td><td style={{ ...CEL, fontWeight: 700 }}>€250 – €600</td>
-              <td style={CEL}>Per deur; hangt af van de wand en het stucwerk</td></tr>
+              <td style={CEL}>Per deur, ongeveer {MONTAGE_UUR} uur werk; hangt af van de wand en het stucwerk</td></tr>
             <tr><td style={{ ...CEL, borderBottom: 'none' }}>Bij bestaande bouw</td>
               <td style={{ ...CEL, borderBottom: 'none', fontWeight: 700 }}>+ sloop &amp; stucwerk</td>
               <td style={{ ...CEL, borderBottom: 'none' }}>Sparing openhakken en de wand opnieuw afwerken</td></tr>

@@ -117,6 +117,11 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   houtdecor en Molinia zonder bedrag). Nieuwe keuze Hoogte (plafondhoog of standaard). De vanafprijs op `/kozijnloze-deuren/`,
   de merkpagina en in de FAQ komt uit hetzelfde bestand. Scharnieren: 3 per deur tot 2315 mm, 4 bij hoger of kamerhoog.
   Nog open bij Thijs: onze inkoop op deur en kozijn, en of freeswerk per deur of per lijn is.
+- **Standaardset kozijnloze deur in de winkel (besluit Daniel, 11-11-2026):** `/winkel/kozijnloze-deur-set/`, product `winkel-deurset`:
+  kozijn tot 2400 mm met 3 scharnieren en magneetslot + gegrond deurblad tot 93 x 231,5 cm, € 1.258,40 incl. btw, excl. kruk, montage en
+  levering. Gegrond, zodat de koper hem meeschildert met de wand. Eigen verzendregel `dutch-doors-vracht` (nog zonder bedrag: bestellen
+  via betaallink; met een bedrag gaat hij op iDEAL en vanzelf in de Google-productlijst, app `/api/winkel/feed.xml`).
+  Montage: ongeveer 2,5 uur per deur (`MONTAGE_UUR` in `configurator/prijs.ts`), genoemd bij de deuren, de configurator en de set.
 - **Afrekenen zonder drempel (besluit Daniel, 1-11-2026):** nooit een account vragen; na betaling hangt de bestelling
   aan het account op dat e-mailadres (app: Mijn bestellingen) en de mail logt meteen in. Geen verplicht wachtwoord
   meer (ook niet bij offertes): inloggen met Google of een inloglink (`/api/inloglink`). Formulier: "Snel invullen met
