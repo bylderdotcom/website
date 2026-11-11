@@ -13,17 +13,17 @@ export default function GietvloerCTA({
   const kleuren = STAALTJES.map(id => KLEUREN.find(k => k.id === id)!).filter(Boolean)
   return (
     <aside aria-label="Gietvloerontwerper" style={{
-      background: '#1A1208', borderRadius: 20, margin: marge, overflow: 'hidden', display: 'grid', alignItems: 'center',
+      background: '#fff', border: '1px solid rgba(61,46,30,0.12)', borderRadius: 20, margin: marge, overflow: 'hidden', display: 'grid', alignItems: 'center',
       gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
     }}>
       <div style={{ padding: '28px 28px 26px' }}>
-        <div style={{ fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.08em', color: '#E8A87C', fontWeight: 700, marginBottom: 10 }}>{label}</div>
-        <h2 style={{ fontSize: '1.55rem', lineHeight: 1.2, fontWeight: 800, color: '#F5F0E8', margin: '0 0 10px', letterSpacing: '-0.022em', textWrap: 'balance' }}>{titel}</h2>
-        <p style={{ fontSize: 15.5, lineHeight: 1.7, color: 'rgba(245,240,232,0.78)', margin: '0 0 16px', maxWidth: '56ch' }}>{aanleiding}</p>
-        <a href={ONTWERPER} style={{ display: 'inline-block', background: '#F5F0E8', color: '#1A1208', fontWeight: 800, fontSize: 16, padding: '15px 26px', borderRadius: 12, textDecoration: 'none' }}>Ontwerp je gietvloer &rarr;</a>
+        <div style={{ fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.08em', color: '#B85C38', fontWeight: 700, marginBottom: 10 }}>{label}</div>
+        <h2 style={{ fontSize: '1.55rem', lineHeight: 1.2, fontWeight: 800, color: '#1A1208', margin: '0 0 10px', letterSpacing: '-0.022em', textWrap: 'balance' }}>{titel}</h2>
+        <p style={{ fontSize: 15.5, lineHeight: 1.7, color: 'rgba(61,46,30,0.8)', margin: '0 0 16px', maxWidth: '56ch' }}>{aanleiding}</p>
+        <a href={ONTWERPER} style={{ display: 'inline-block', background: '#3D5A3E', color: '#F5F0E8', fontWeight: 800, fontSize: 16, padding: '15px 26px', borderRadius: 12, textDecoration: 'none' }}>Ontwerp je gietvloer &rarr;</a>
         <ul aria-label="Wat je krijgt" style={{ listStyle: 'none', padding: 0, margin: '18px 0 0', display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {['Kleur uit je eigen foto', 'Per ruimte en verdieping', 'PU, epoxy of microcement', 'Tot 3 stalen gratis'].map(t => (
-            <li key={t} style={{ fontSize: 13, fontWeight: 700, color: '#F5F0E8', border: '1px solid rgba(245,240,232,0.25)', borderRadius: 999, padding: '5px 12px' }}>{t}</li>
+            <li key={t} style={{ fontSize: 13, fontWeight: 700, color: '#1A1208', border: '1px solid rgba(61,46,30,0.2)', borderRadius: 999, padding: '5px 12px' }}>{t}</li>
           ))}
         </ul>
       </div>

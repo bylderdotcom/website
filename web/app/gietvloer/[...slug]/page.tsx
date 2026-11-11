@@ -13,17 +13,19 @@ import EigenVakmanMeekijken from '../../components/EigenVakmanMeekijken'
 // is behouden als contentregel op city/bedrijf-pagina's (web/lib/gietvloer.ts).
 // InteractiveScripts herbedraadt de kostencalculator + sorteer-dropdown.
 
+export const dynamicParams = false
 export function generateStaticParams() {
-  return getPages().map(p => ({ slug: slugToSegments(p.slug) }))
+  // De hub /gietvloer/ zelf is sinds 11-11-2026 een productpagina (app/gietvloer/page.tsx); hier de steden en profielen.
+  return getPages().filter(p => p.slug !== 'index').map(p => ({ slug: slugToSegments(p.slug) }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug?: string[] }> }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
   const { slug } = await params
   const page = getPage(segmentsToSlug(slug))
   return page ? toMetadata(page) : {}
 }
 
-export default async function GietvloerPage({ params }: { params: Promise<{ slug?: string[] }> }) {
+export default async function GietvloerPage({ params }: { params: Promise<{ slug: string[] }> }) {
   const { slug } = await params
   const page = getPage(segmentsToSlug(slug))!
   const css = getShellCss()
