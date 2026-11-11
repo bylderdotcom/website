@@ -16,7 +16,7 @@ const KAART: React.CSSProperties = { background: '#fff', border: `1px solid ${IN
 const H2: React.CSSProperties = { fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.022em', margin: '52px 0 12px', textWrap: 'balance', color: '#1A1208' }
 const P: React.CSSProperties = { fontSize: 16, lineHeight: 1.75, color: `${INKT}0.78)`, margin: '0 0 14px' }
 const LABEL: React.CSSProperties = { fontSize: 11.5, fontFamily: "'Space Mono',monospace", textTransform: 'uppercase', letterSpacing: '0.08em', color: `${INKT}0.55)`, fontWeight: 700 }
-const KNOP: React.CSSProperties = { display: 'inline-block', background: '#1A1208', color: '#F5F0E8', fontWeight: 800, fontSize: 16, padding: '15px 26px', borderRadius: 12, textDecoration: 'none' }
+const KNOP: React.CSSProperties = { display: 'inline-block', background: '#3D5A3E', color: '#F5F0E8', fontWeight: 800, fontSize: 16, padding: '15px 26px', borderRadius: 12, textDecoration: 'none' }
 
 const nl = (v: number) => v.toLocaleString('nl-NL', { maximumFractionDigits: 1 })
 export const ontwerpUrl = (p: HubPagina) => `/kasten-op-maat/ontwerpen/${p.slug ? `?start=${p.slug}` : ''}`
@@ -181,13 +181,13 @@ export default function HubWeergave({ p }: { p: HubPagina }) {
 
       <EigenVakmanMeekijken product="je kast" campagne="kasten-op-maat" marge="44px 0 0" />
 
-      <aside aria-label="Begin met ontwerpen" style={{ background: '#1A1208', borderRadius: 20, padding: '30px 28px', margin: '52px 0 0', color: '#F5F0E8' }}>
-        <p style={{ ...LABEL, color: '#E8A87C' }}>Ontwerper · offerte</p>
+      <aside aria-label="Begin met ontwerpen" style={{ background: '#fff', border: '1px solid rgba(61,46,30,0.12)', borderRadius: 20, padding: '30px 28px', margin: '52px 0 0', color: '#1A1208' }}>
+        <p style={{ ...LABEL, color: '#B85C38' }}>Ontwerper · offerte</p>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: '8px 0 10px', textWrap: 'balance' }}>Zie je eigen kast in 3D, voordat er iets gezaagd wordt</h2>
-        <p style={{ fontSize: 15.5, lineHeight: 1.7, color: 'rgba(245,240,232,.78)', margin: '0 0 18px', maxWidth: '58ch' }}>
+        <p style={{ fontSize: 15.5, lineHeight: 1.7, color: 'rgba(61,46,30,0.8)', margin: '0 0 18px', maxWidth: '58ch' }}>
           Upload een paar voorbeeldfoto’s, vertel waar de kast komt en wat erin moet. Met of zonder bouwtekening; het timmerbedrijf meet altijd gratis in.
         </p>
-        <a href={ontwerpUrl(p)} style={{ ...KNOP, background: '#F5F0E8', color: '#1A1208' }}>{knopTekst(p)} &rarr;</a>
+        <a href={ontwerpUrl(p)} style={KNOP}>{knopTekst(p)} &rarr;</a>
       </aside>
       <p style={{ fontSize: 12.5, color: `${INKT}0.5)`, margin: '18px 0 0' }}>Bijgewerkt {new Date(BIJGEWERKT).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' })}. <span style={{ color: KOPER }}>Bylder</span> rekent elk voorbeeld door met hetzelfde model als de ontwerper.</p>
     </main>

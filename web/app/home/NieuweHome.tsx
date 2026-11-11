@@ -22,7 +22,6 @@ const WONING = '/mijn-woning/'
 const H2: React.CSSProperties = { fontSize: 'clamp(1.5rem, 3.4vw, 2.1rem)', fontWeight: 800, letterSpacing: '-0.025em', lineHeight: 1.15, margin: '0 0 10px', textWrap: 'balance', color: '#1A1208' }
 const P: React.CSSProperties = { fontSize: 17, lineHeight: 1.65, color: `${INKT}0.72)`, margin: 0, maxWidth: '60ch' }
 const KNOP: React.CSSProperties = { display: 'inline-flex', alignItems: 'center', minHeight: 48, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 16, padding: '0 22px', borderRadius: 12, textDecoration: 'none' }
-const KNOP2: React.CSSProperties = { ...KNOP, background: 'transparent', color: GROEN, border: `1.5px solid ${GROEN}` }
 
 const PRODUCTEN = [
   { naam: 'Deuren zonder kozijn', tekst: 'Plafondhoog en vlak in de wand. Kies kleur, groefpatroon en kruk.', prijs: `Vanaf ${euroRond(VANAF)} per deur`, href: '/kozijnloze-deuren/configurator/', knop: 'Stel je deur samen', soort: 'deuren' as const,
@@ -80,7 +79,7 @@ export default function NieuweHome() {
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
             <a href={WONING} data-meet="home-3d" style={KNOP}>Zet je woning in 3D</a>
-            <a href="/mijn-woning/?voorbeeld" data-meet="home-voorbeeld" style={KNOP2}>Bekijk een voorbeeld</a>
+            <a href="/mijn-woning/?voorbeeld" data-meet="home-voorbeeld" style={{ color: GROEN, fontWeight: 700, fontSize: 16, padding: '12px 4px' }}>Bekijk een voorbeeld →</a>
           </div>
           <p style={{ fontSize: 14, color: `${INKT}0.6)`, margin: '12px 0 0' }}>Gratis, zonder account. Voor nieuwbouw en bestaande bouw.</p>
         </div>

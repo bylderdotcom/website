@@ -307,16 +307,16 @@ export default function OnzichtbaarKozijnPage() {
             </tr>
           </thead>
           <tbody>
-            <tr><td style={CEL}>Kozijn los</td><td style={{ ...CEL, fontWeight: 700 }}>€700 – €1.500</td>
+            <tr><td style={CEL}>Kozijn los</td><td className="maat" style={{ ...CEL, fontWeight: 700, whiteSpace: 'nowrap' }}>€700 – €1.500</td>
               <td style={CEL}>Materiaal, wanddikte, plafondhoog of standaard</td></tr>
             <tr><td style={CEL}>Kozijn + deur, compleet</td>
-              <td style={{ ...CEL, fontWeight: 700 }}>vanaf €1.100</td>
+              <td className="maat" style={{ ...CEL, fontWeight: 700, whiteSpace: 'nowrap' }}>vanaf €1.100</td>
               <td style={CEL}>Inclusief scharnieren, magneetslot en deurklink; prefab-maat is
                 10&ndash;20% goedkoper dan maatwerk</td></tr>
             <tr><td style={CEL}>Classic Next via Bylder, compleet</td>
-              <td style={{ ...CEL, fontWeight: 700 }}>vanaf {euroRond(VANAF)}</td>
+              <td className="maat" style={{ ...CEL, fontWeight: 700, whiteSpace: 'nowrap' }}>vanaf {euroRond(VANAF)}</td>
               <td style={CEL}>Kozijn, deurblad, scharnieren en magneetslot, inclusief btw. <a href="/kozijnloze-deuren/configurator/" style={{ color: 'inherit', fontWeight: 700 }}>Reken je eigen deur uit</a></td></tr>
-            <tr><td style={CEL}>Montage</td><td style={{ ...CEL, fontWeight: 700 }}>€250 – €600</td>
+            <tr><td style={CEL}>Montage</td><td className="maat" style={{ ...CEL, fontWeight: 700, whiteSpace: 'nowrap' }}>€250 – €600</td>
               <td style={CEL}>Per deur, ongeveer {MONTAGE_UUR} uur werk; hangt af van de wand en het stucwerk. <a href="/kozijnloze-deuren/montage/" style={{ color: 'inherit', fontWeight: 700 }}>Zo gaat de montage</a></td></tr>
             <tr><td style={{ ...CEL, borderBottom: 'none' }}>Bij bestaande bouw</td>
               <td style={{ ...CEL, borderBottom: 'none', fontWeight: 700 }}>+ sloop &amp; stucwerk</td>
