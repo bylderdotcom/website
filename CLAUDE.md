@@ -292,5 +292,14 @@ een kwartier live" zonder `vercel ls website` te checken.
   winkels zijn en het aantal niet meer dan 20% daalt; anders een tak plus een issue. Google Places
   niet verder opschalen: de voorwaarden staan bewaren langer dan 30 dagen niet toe.
 
+- **Feedbackronde (11-11-2026, verzoek Daniel: configurators en app voortdurend verbeteren op feedback).** Alle meldingen
+  in app-tabel `feature_requests`: "Mis je iets?" onderaan elke pagina (`mis-je-iets.js`, `api/feature-request.js`), sinds
+  11-11 ook in de drie configurators (`web/app/components/ConfiguratorFeedback.tsx`, met stap, route, scherm en de link met
+  keuzes; GA4 `configurator_feedback`), in de app (dashboards) en bij partners per aanvraag ("Had je alles voor een goede
+  offerte?", app `AanvraagCompleet.tsx`, alleen "nee" wordt bewaard). App-cron `feedback-clustering` (03:00) groepeert;
+  Daniel keurt goed in app `/admin/feedback`; `feedback-pr` schrijft een spec en stuurt die naar `feature-request-pr.yml`
+  in de juiste repo (sinds 11-11 ook hier), die een **draft-PR** opent. Nooit automatisch mergen tot Daniel grenzen
+  vaststelt en er tests per configurator zijn. Stand van de lijst: `feedback-overzicht.yml` (handmatig, alleen lezen).
+
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.
