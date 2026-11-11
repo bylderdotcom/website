@@ -236,12 +236,48 @@ def paden(s, prop, prefix):
     print("  kanalen: " + ", ".join(f"{r['dimensionValues'][0]['value']} {r['metricValues'][0]['value']}" for r in bron))
 
 
+def vanaf(s, prop, pad):
+    """Wat doen bezoekers op één pagina (bv. de homepage)? Weergaven, gebeurtenissen op die pagina,
+    de pagina's waar ze daarna heen gaan (verwijzer = deze pagina) en de klikken per plek/knop.
+    Voor de UX-audit van 11-11-2026: welke blokken van de homepage worden gebruikt?"""
+    eind = date.today() - timedelta(days=1)
+    begin = eind - timedelta(days=27)
+    dr = [{"startDate": begin.isoformat(), "endDate": eind.isoformat()}]
+    op = {"filter": {"fieldName": "pagePath", "stringFilter": {"matchType": "EXACT", "value": pad}}}
+    print(f"Pagina {pad}, {begin:%d-%m} t/m {eind:%d-%m-%Y}")
+    for r in rapport(s, prop, {"dateRanges": dr, "metrics": [{"name": "screenPageViews"}, {"name": "activeUsers"}, {"name": "userEngagementDuration"}, {"name": "bounceRate"}], "dimensionFilter": op}):
+        v, u, sec, b = (float(m["value"]) for m in r["metricValues"])
+        print(f"  {int(v)} weergaven, {int(u)} gebruikers, {sec / max(1, u):.0f} s per gebruiker, {b * 100:.0f}% zonder interactie")
+    print("  Gebeurtenissen op deze pagina:")
+    for r in sorted(rapport(s, prop, {"dateRanges": dr, "dimensions": [{"name": "eventName"}], "metrics": [{"name": "eventCount"}, {"name": "activeUsers"}], "dimensionFilter": op}), key=lambda r: -int(r["metricValues"][0]["value"])):
+        print(f"    {r['dimensionValues'][0]['value']}: {r['metricValues'][0]['value']} keer, {r['metricValues'][1]['value']} gebruikers")
+    for dim in ("customEvent:plek", "customEvent:knop", "linkUrl"):
+        try:
+            rijen = rapport(s, prop, {"dateRanges": dr, "dimensions": [{"name": "eventName"}, {"name": dim}], "metrics": [{"name": "eventCount"}], "dimensionFilter": op, "limit": 60})
+        except SystemExit as e:
+            print(f"  ({dim} niet beschikbaar: {str(e)[:80]})"); continue
+        rijen = [r for r in rijen if r["dimensionValues"][1]["value"] not in ("(not set)", "")]
+        if rijen:
+            print(f"  Klikken per {dim}:")
+            for r in sorted(rijen, key=lambda r: -int(r["metricValues"][0]["value"]))[:40]:
+                print(f"    {r['dimensionValues'][0]['value']} · {r['dimensionValues'][1]['value']}: {r['metricValues'][0]['value']}")
+    print("  Waar ze daarna heen gaan (pagina's met deze pagina als verwijzer):")
+    for host in ("https://www.bylder.com", "https://bylder.com"):
+        ref = {"filter": {"fieldName": "pageReferrer", "stringFilter": {"matchType": "EXACT", "value": host + pad}}}
+        rijen = rapport(s, prop, {"dateRanges": dr, "dimensions": [{"name": "pagePath"}], "metrics": [{"name": "screenPageViews"}], "dimensionFilter": ref, "limit": 60})
+        for r in sorted(rijen, key=lambda r: -int(r["metricValues"][0]["value"]))[:40]:
+            if r["dimensionValues"][0]["value"] != pad:
+                print(f"    {r['dimensionValues'][0]['value']}: {r['metricValues'][0]['value']}")
+
+
 if __name__ == "__main__":
     taak = sys.argv[1] if len(sys.argv) > 1 else "trechter"
     s = sessie()
     prop = vind_property(s)
     if taak == "inrichten":
         inrichten(s, prop)
+    elif taak.startswith("vanaf:"):
+        vanaf(s, prop, taak.split(":", 1)[1])
     elif taak.startswith("paden:"):
         paden(s, prop, taak.split(":", 1)[1])
     else:
