@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { ONDERDELEN, URL_AFWERKEN, onderdeel, prijsTekst } from '@/lib/afwerken'
 import AfwerkAanvraag from '../../components/AfwerkAanvraag'
 import { Stijl as S, Lijn } from '../stijl'
-import Maquette, { type MaquetteAccent } from '../../components/Maquette'
+import Maquette, { MAQUETTE_ALT, type MaquetteAccent } from '../../components/Maquette'
 
 // /nieuwbouw-afwerken/<onderdeel>/ — één onderdeel van de afwerking, met dezelfde aanvraag als de
 // hoofdpagina, dit onderdeel vooraf aangevinkt. Inhoud: web/lib/afwerken.ts.
@@ -18,7 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ onderdeel
   if (!o) return {}
   const url = `${URL_AFWERKEN}${o.slug}/`
   return { title: o.title, description: o.description, alternates: { canonical: url },
-    openGraph: { title: o.h1, description: o.description, url, type: 'website' } }
+    openGraph: { title: o.h1, description: o.description, url, type: 'website', images: [{ url: `https://www.bylder.com/img/og/afwerken-${o.slug}.jpg`, width: 1200, height: 630, alt: MAQUETTE_ALT[o.slug as MaquetteAccent] }] },
+    twitter: { card: 'summary_large_image' } }
 }
 
 export default async function OnderdeelPage({ params }: { params: Promise<{ onderdeel: string }> }) {
@@ -64,7 +65,7 @@ export default async function OnderdeelPage({ params }: { params: Promise<{ onde
           <p style={{ ...S.oog, margin: '0 0 8px' }}>Indicatie</p>
           {o.prijs ? (
             <>
-              <p className="maat" style={{ fontSize: '1.7rem', fontWeight: 700, margin: '0 0 4px' }}>{prijsTekst(o.prijs)}</p>
+              <p className="maat" style={{ fontSize: '1.5rem', fontWeight: 400, margin: '0 0 4px' }}>{prijsTekst(o.prijs)}</p>
               <p style={{ fontSize: 14, color: 'rgba(61,46,30,0.7)', margin: 0 }}>{o.prijs.tekst}, inclusief btw (Bylder-prijsbenchmark, 2026)</p>
             </>
           ) : (

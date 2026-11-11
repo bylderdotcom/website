@@ -28,7 +28,7 @@ export const MAQUETTE_ALT: Record<MaquetteAccent, string> = {
   sanitair: 'Maquette van een verdieping met bad, wastafel en toilet in groen in de badkamer',
   vloeren: 'Maquette van de begane grond met de hele vloer in groen',
   binnendeuren: 'Maquette van een verdieping met de vier binnendeuren in groen',
-  schilderwerk: 'Maquette van een verdieping met de wanden in groen: het schilderwerk',
+  schilderwerk: 'Maquette van een verdieping met de wanden van één slaapkamer in groen geschilderd',
   kasten: 'Maquette van een verdieping met een kast op maat in groen in de slaapkamer',
 }
 
@@ -36,13 +36,23 @@ function teken(accent: MaquetteAccent): string {
   const l = VOORBEELD_LAGEN[LAAG[accent]]
   const k = l.kader, bx = k[2] - k[0], by = k[3] - k[1]
   const stuk: { d: number; s: string }[] = []
-  const blok = (x0: number, y0: number, x1: number, y1: number, h: number, kl: typeof PAPIER, z0 = 0) => {
+  const blok = (x0: number, y0: number, x1: number, y1: number, h: number, kl: typeof PAPIER, z0 = 0, naad = true, sla: number[] = []) => {
     const c = [[x0, y0], [x1, y0], [x1, y1], [x0, y1]]
     ;[[0, 1], [1, 2], [2, 3], [3, 0]].forEach(([i, j]) => {
+      if (sla.includes(i)) return
       const a = c[i], b = c[j]
-      stuk.push({ d: (a[0] + b[0] + a[1] + b[1]) / 2, s: `<polygon fill="${i % 2 === 0 ? kl.x : kl.y}" stroke="${kl.lijn}" stroke-width="10" stroke-linejoin="round" points="${pts([[a[0], a[1], z0], [b[0], b[1], z0], [b[0], b[1], h], [a[0], a[1], h]])}"/>` })
+      stuk.push({ d: (a[0] + b[0] + a[1] + b[1]) / 2, s: `<polygon fill="${i % 2 === 0 ? kl.x : kl.y}" stroke="${naad ? kl.lijn : (i % 2 === 0 ? kl.x : kl.y)}" stroke-width="10" stroke-linejoin="round" points="${pts([[a[0], a[1], z0], [b[0], b[1], z0], [b[0], b[1], h], [a[0], a[1], h]])}"/>` })
     })
     stuk.push({ d: (x0 + x1 + y0 + y1) / 2 + 1, s: `<polygon fill="${kl.t}" stroke="${kl.t}" stroke-width="10" stroke-linejoin="round" points="${pts(c.map(q => [q[0], q[1], h]))}"/>` })
+  }
+  // Een lange wand in stukken van hooguit 400 mm, zodat wat ervoor en erachter staat in de goede volgorde wordt getekend.
+  const wand = (x0: number, y0: number, x1: number, y1: number, kl: typeof PAPIER) => {
+    const langsX = (x1 - x0) >= (y1 - y0), lang = langsX ? x1 - x0 : y1 - y0, n = Math.max(1, Math.ceil(lang / 400))
+    for (let i = 0; i < n; i++) {
+      const a = i / n, b = (i + 1) / n
+      if (langsX) blok(x0 + lang * a, y0, x0 + lang * b, y1, MUUR, kl, 0, false, [...(i > 0 ? [3] : []), ...(i < n - 1 ? [1] : [])])
+      else blok(x0, y0 + lang * a, x1, y0 + lang * b, MUUR, kl, 0, false, [...(i > 0 ? [0] : []), ...(i < n - 1 ? [2] : [])])
+    }
   }
   const vlak = (x0: number, y0: number, x1: number, y1: number, vul: string) =>
     `<polygon fill="${vul}" points="${pts([[x0, y0, 0], [x1, y0, 0], [x1, y1, 0], [x0, y1, 0]])}"/>`
@@ -61,8 +71,8 @@ function teken(accent: MaquetteAccent): string {
     }
   }
 
-  const wandKleur = accent === 'stucwerk' || accent === 'schilderwerk' ? { ...GROEN, x: '#C9D8C5', y: '#AFC3AB' } : PAPIER
-  l.wanden.forEach(w => blok(w[0], w[1], w[2], w[3], MUUR, wandKleur))
+  const wandKleur = accent === 'stucwerk' ? { ...GROEN, x: '#C9D8C5', y: '#AFC3AB' } : PAPIER
+  l.wanden.forEach(w => wand(w[0], w[1], w[2], w[3], wandKleur))
 
   if (accent === 'binnendeuren') l.deuren.forEach(d => {
     // De deur staat in de wand waar hij doorheen gaat: langs de lange kant van die wand, iets dikker, in groen.
@@ -77,6 +87,11 @@ function teken(accent: MaquetteAccent): string {
     blok(s[2] - 1750, s[1] + 60, s[2] - 60, s[1] + 800, 560, GROEN)            // bad
     blok(s[0] + 60, s[3] - 1300, s[0] + 520, s[3] - 100, 850, GROEN)            // wastafelmeubel
     blok(s[2] - 460, s[3] - 700, s[2] - 60, s[3] - 160, 420, GROEN)             // toilet
+  }
+  if (accent === 'schilderwerk') {
+    // Eén kamer geschilderd: de twee wanden waar je tegenaan kijkt in groen, zodat het verschilt van stucwerk (alle wanden).
+    const r = l.ruimtes.find(q => /slaapkamer 1/i.test(q.naam))
+    if (r) { const s = r.stroken[0]; blok(s[0], s[1], s[2], s[1] + 50, MUUR, GROEN); blok(s[0], s[1], s[0] + 50, s[3], MUUR, GROEN) }
   }
   if (accent === 'kasten') {
     const r = l.ruimtes.find(q => /slaapkamer 1/i.test(q.naam))
