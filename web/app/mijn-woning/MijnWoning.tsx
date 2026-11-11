@@ -109,9 +109,14 @@ const pts = (a: number[][]) => a.map(q => { const p = iso(q[0], q[1], q[2]); ret
 
 function svgVoor(l: Verdieping, li: number, o: Opslag): string {
   const k = l.kader, ox = k[0], oy = k[1], kap = l.kap
-  const zk = kap ? (y: number) => Math.max(0, kap.zNok - kap.k * Math.abs(y + oy - kap.nokY)) : () => H
+  // Muren als doorsnede op ongeveer halve hoogte (11-11-2026): dicht en wit, zoals in de film op de
+  // homepage, zodat je in de kamers kijkt in plaats van door grijze glazen dozen. Onder een kap volgt
+  // de muur het dak, maar nooit hoger dan de doorsnede.
+  const MUUR = H * 0.5
+  const zk = kap ? (y: number) => Math.min(MUUR, Math.max(0, kap.zNok - kap.k * Math.abs(y + oy - kap.nokY))) : () => MUUR
   const y0 = (l.binnenY ? l.binnenY[0] : k[1]) - oy, y1 = (l.binnenY ? l.binnenY[1] : k[3]) - oy, bx = k[2] - k[0]
   const tint = (KLEURVLOER.find(c => c.id === o.kleur) ?? KLEURVLOER[1]).c
+  const schaduw = `<polygon class="s" points="${pts([[260, y0 + 420, 0], [bx + 420, y0 + 420, 0], [bx + 420, y1 + 520, 0], [260, y1 + 520, 0]])}"/>`
   let vloer = `<polygon class="v" points="${pts([[0, y0, 0], [bx, y0, 0], [bx, y1, 0], [0, y1, 0]])}"/>`
   l.ruimtes.forEach(r => {
     if (!o.giet[li + ':' + r.id]) return
@@ -123,8 +128,8 @@ function svgVoor(l: Verdieping, li: number, o: Opslag): string {
   const blok = (x0: number, a0: number, x1: number, a1: number, cls: string) => {
     const c = [[x0, a0], [x1, a0], [x1, a1], [x0, a1]]
     ;[[0, 1], [1, 2], [2, 3], [3, 0]].forEach(([i, j]) => {
-      const a = c[i], b = c[j]
-      stuk.push({ d: (a[0] + b[0] + a[1] + b[1]) / 2, s: `<polygon class="${cls}" points="${pts([[a[0], a[1], 0], [b[0], b[1], 0], [b[0], b[1], zk(b[1])], [a[0], a[1], zk(a[1])]])}"/>` })
+      const a = c[i], b = c[j], kant = i % 2 === 0 ? ' x' : ' y'
+      stuk.push({ d: (a[0] + b[0] + a[1] + b[1]) / 2, s: `<polygon class="${cls}${kant}" points="${pts([[a[0], a[1], 0], [b[0], b[1], 0], [b[0], b[1], zk(b[1])], [a[0], a[1], zk(a[1])]])}"/>` })
     })
     stuk.push({ d: (x0 + x1 + a0 + a1) / 2 + 1, s: `<polygon class="${cls} t" points="${pts(c.map(q => [q[0], q[1], zk(q[1])]))}"/>` })
   }
@@ -162,15 +167,17 @@ function svgVoor(l: Verdieping, li: number, o: Opslag): string {
   const xs: number[] = [], ys: number[] = []
   ;[[0, y0], [bx, y0], [bx, y1], [0, y1], [0, 0], [bx, k[3] - oy]].forEach(q => [0, kap ? kap.zNok : H].forEach(z => { const p = iso(q[0], q[1], z); xs.push(p[0]); ys.push(p[1]) }))
   const pad = 600, vx0 = Math.min(...xs) - pad, vx1 = Math.max(...xs) + pad, vy0 = Math.min(...ys) - pad - 380, vy1 = Math.max(...ys) + pad
-  return `<svg viewBox="${vx0} ${vy0} ${vx1 - vx0} ${vy1 - vy0}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${mooi(l.naam)} in doorzichtig 3D">`
-    + '<style>.v{fill:#D3CFC7;stroke:rgba(26,18,8,.42);stroke-width:22;stroke-opacity:.3}.g{stroke:none;opacity:.92}'
-    + '.m{fill:rgba(26,18,8,.10);stroke:rgba(26,18,8,.42);stroke-width:18;stroke-linejoin:round}.m.t{fill:rgba(26,18,8,.62);fill-opacity:.55}'
-    + '.m.r{fill:#B85C38;fill-opacity:.16;stroke:#B85C38;stroke-opacity:.8}.m.r.t{fill:#B85C38;fill-opacity:.7}'
-    + '.k{fill:#1A1208;fill-opacity:.035;stroke:rgba(26,18,8,.42);stroke-width:18}.h{stroke:#3D5A3E;stroke-width:30;stroke-dasharray:140 90}'
-    + '.d circle{stroke:#EDE6D8;stroke-width:50}.d text{font:700 290px "Plus Jakarta Sans",sans-serif}'
-    + '.l{font:700 540px "Plus Jakarta Sans",sans-serif;fill:#1A1208;paint-order:stroke;stroke:#EDE6D8;stroke-width:110px}'
-    + '.n{font:400 420px "Space Mono",monospace;fill:rgba(26,18,8,.7);paint-order:stroke;stroke:#EDE6D8;stroke-width:110px}</style>'
-    + vloer + stuk.map(x => x.s).join('') + extra + labels + '</svg>'
+  return `<svg viewBox="${vx0} ${vy0} ${vx1 - vx0} ${vy1 - vy0}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${mooi(l.naam)} in 3D">`
+    // Stijl van de film op de homepage (11-11-2026): lichte vloer, dichte witte muren in twee tinten
+    // voor diepte, donkere bovenkant als doorsnede, zachte schaduw onder de woning.
+    + '<style>.s{fill:rgba(26,18,8,.10)}.v{fill:#ECE7DE;stroke:#D8D1C4;stroke-width:16}.g{stroke:none}'
+    + '.m{stroke:#D4CCBF;stroke-width:10;stroke-linejoin:round}.m.x{fill:#F7F4EE}.m.y{fill:#E4DED3}.m.t{fill:#2F2A24;stroke:#2F2A24}'
+    + '.m.r.x{fill:#F1D9CB}.m.r.y{fill:#E6C6B4}.m.r{stroke:#B85C38}.m.r.t{fill:#B85C38;stroke:#B85C38}'
+    + '.k{fill:#1A1208;fill-opacity:.03;stroke:rgba(26,18,8,.25);stroke-width:14;stroke-dasharray:80 60}.h{stroke:#3D5A3E;stroke-width:30;stroke-dasharray:140 90}'
+    + '.d circle{stroke:#FBF8F2;stroke-width:60}.d text{font:700 290px "Plus Jakarta Sans",sans-serif}'
+    + '.l{font:700 500px "Plus Jakarta Sans",sans-serif;fill:#1A1208;paint-order:stroke;stroke:#FBF8F2;stroke-width:90px;stroke-linejoin:round}'
+    + '.n{font:600 380px "Plus Jakarta Sans",sans-serif;fill:#3D5A3E;paint-order:stroke;stroke:#FBF8F2;stroke-width:90px;stroke-linejoin:round}</style>'
+    + schaduw + vloer + stuk.map(x => x.s).join('') + extra + labels + '</svg>'
 }
 
 /** Doorlopende nummering over alle verdiepingen: 1 t/m het aantal deuren. */
