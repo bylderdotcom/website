@@ -95,7 +95,12 @@ export default async function Pagina({ params }: { params: Promise<{ kleur: stri
 
       <h2 style={S.h2}>Andere kleuren</h2>
       <KleurTegels huidig={k.ral} />
-      <p style={{ ...S.p, fontSize: 14.5, marginTop: 14 }}>Liever zelf schilderen in de kleur van je wand? <a href={`/winkel/${DEURSET.slug}/`} style={{ color: GROEN, fontWeight: 700 }}>De gegronde set</a>. Een andere RAL-kleur of freeswerk? <a href="/kozijnloze-deuren/configurator/" style={{ color: GROEN, fontWeight: 700 }}>Stel hem samen in de configurator</a>.</p>
+      <p style={{ ...S.p, fontSize: 14.5, marginTop: 14 }}>Liever zelf schilderen in de kleur van je wand? <a href={`/winkel/${DEURSET.slug}/`} style={{ color: GROEN, fontWeight: 700 }}>De gegronde set</a>.</p>
+
+      <div style={{ ...S.kaart, marginTop: 28, display: 'flex', flexWrap: 'wrap', gap: '12px 24px', alignItems: 'center', justifyContent: 'space-between' }}>
+        <p style={{ ...S.p, margin: 0 }}><strong style={{ color: '#1A1208' }}>Een andere RAL-kleur, freeswerk of houtdecor?</strong> Stel je deur samen in de configurator en zie de prijs per deur. Bylder maakt de offerte.</p>
+        <a href="/kozijnloze-deuren/configurator/" style={{ background: GROEN, color: '#F5F0E8', fontWeight: 800, padding: '11px 16px', borderRadius: 10, textDecoration: 'none' }}>Naar de configurator</a>
+      </div>
 
       <h2 style={S.h2}>Vragen</h2>
       <div style={{ display: 'grid', gap: 10 }}>
