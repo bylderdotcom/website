@@ -227,7 +227,8 @@ publieke pagina is daarom pas "klaar" als hij hem kan bekíjken.
 **Previews staan standaard uit (besluit Daniel, 29-07-2026).** Elke wijziging bouwde twee
 keer — preview bij de PR, productie na de merge — en één build duurt een kwartier. Bij een
 reeks wijzigingen op een dag loopt productie daardoor uren achter. `scripts/vercel-ignore.sh`
-slaat preview-builds nu over.
+slaat preview-builds nu over. Sinds 11-11-2026 maakt Vercel voor `claude/**`-branches helemaal geen deployment meer aan
+(`git.deploymentEnabled` in `vercel.json`, ook in de app): geen preview in de rij, geen kosten.
 
 **Ook voor visuele wijzigingen geen preview meer (besluit Daniel, 19-09-2026).** "Je mag het
 voortaan meteen live zetten, een preview is niet nodig." Dus: branch → PR → mergen → controleren

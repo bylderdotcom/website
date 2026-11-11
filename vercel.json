@@ -3,6 +3,7 @@
   "installCommand": "npm install && npm install --prefix web",
   "buildCommand": "bash web/build.sh",
   "ignoreCommand": "bash scripts/vercel-ignore.sh",
+  "git": { "deploymentEnabled": { "claude/**": false } },
   "outputDirectory": "web/out",
   "redirects": [
     {
