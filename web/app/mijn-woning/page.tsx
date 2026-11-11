@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     + 'binnendeuren erin zitten en hoeveel vierkante meter vloer je nodig hebt.',
   alternates: { canonical: 'https://www.bylder.com/mijn-woning/' },
   robots: { index: false, follow: false },
+  openGraph: { title: 'Zet je woning in 3D, uit je eigen tekening', url: 'https://www.bylder.com/mijn-woning/', type: 'website', images: [{ url: 'https://www.bylder.com/img/og/mijn-woning.jpg', width: 1200, height: 630, alt: 'De woning als maquette, van bovenaf' }] },
+  twitter: { card: 'summary_large_image' },
 }
 
 export default function Pagina() {

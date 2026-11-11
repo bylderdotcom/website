@@ -29,6 +29,8 @@ export const metadata: Metadata = {
     'Een deur zonder kozijn hangt in een onzichtbaar kozijn en verdwijnt in de wand. Compleet vanaf '
     + 'ca. €1.100, montage €250–600 per deur. Merken, en waarom je dit vóór de ruwbouw beslist.',
   alternates: { canonical: 'https://www.bylder.com/kozijnloze-deuren/' },
+  openGraph: { title: 'Kozijnloze deuren: de deur verdwijnt in de wand', url: 'https://www.bylder.com/kozijnloze-deuren/', type: 'website', images: [{ url: 'https://www.bylder.com/img/og/deuren.jpg', width: 1200, height: 630, alt: 'Maquette van een woning met de binnendeuren in groen' }] },
+  twitter: { card: 'summary_large_image' },
 }
 
 const INKT = 'rgba(61,46,30,'

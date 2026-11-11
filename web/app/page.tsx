@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     url: 'https://www.bylder.com/',
     type: 'website',
     locale: 'nl_NL',
-    images: [{ url: 'https://www.bylder.com/og-image.jpg?v=3' }],
+    images: [{ url: 'https://www.bylder.com/img/og/home.jpg', width: 1200, height: 630, alt: 'Van sleutel tot ingericht huis: de woning als maquette' }],
   },
   twitter: {
     card: 'summary_large_image',
