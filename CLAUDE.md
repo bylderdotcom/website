@@ -349,6 +349,13 @@ een kwartier live" zonder `vercel ls website` te checken.
   Nog door te voeren op bestaande pagina's (per pagina, bij de eerstvolgende wijziging): statische pagina's (`bn2.css`),
   mails en offertes. Gedaan (11-11): lijnen in plaats van kaders op deuren, kasten en afwerken; `/gietvloer/` is een
   productpagina in dezelfde opbouw (de gids per stad staat onderaan, steden en profielen in `app/gietvloer/[...slug]`).
+- **Zie de vloer in je eigen kamer (besluit Daniel, 12-11-2026, naar het voorbeeld van Trap op maat bij GAMMA/Karwei).**
+  Op `/gietvloer/`: foto van de eigen kamer kiezen, vloer en kleur kiezen, en dezelfde kamer zien met die gietvloer, met een
+  schuif voor en na (`web/app/components/gietvloer/KamerFoto.tsx`). **Zonder account.** App: `/api/gietvloer/kamerfoto`
+  (beeldbewerking op aanwijzing via fal, model in `GIET_FOTO_MODEL`; de foto wordt niet bewaard). Kosten begrensd: 4 beelden
+  per bezoeker per dag en 200 per dag in totaal (`GIET_FOTO_PER_DAG`, `GIET_FOTO_TOTAAL`), geteld in `trechter`
+  (product gietvloer, stap kamerfoto). GA4 `kamerfoto` met `stap`. Werkt het, dan dezelfde opzet voor een kozijnloze deur
+  in de eigen gang en een kast op de eigen wand.
 - **OPEN, niet vergeten: fotorealistische render ook bij kast op maat (wens Daniel, 11-11-2026).** De gietvloerontwerper
   heeft "Zie het in het echt" (app `/api/gietvloer/render`, ongeveer twintig seconden); de kastontwerper moet hetzelfde
   krijgen: de ontworpen kast fotorealistisch in de eigen kamer. Bij elk gesprek over de kastontwerper of configuratoren:

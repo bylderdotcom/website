@@ -6,6 +6,7 @@ import { onderdeel } from '@/lib/afwerken'
 import Maquette from '../components/Maquette'
 import JouwRegel from '../components/JouwRegel'
 import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
+import KamerFoto from '../components/gietvloer/KamerFoto'
 
 // /gietvloer/ — de productpagina voor de gietvloer (11-11-2026, besluit Daniel), in dezelfde opbouw als
 // /kozijnloze-deuren/ en /kasten-op-maat/ en volgens het stijlboek. Tot die dag was dit de hub van de gids
@@ -90,7 +91,7 @@ export default function GietvloerPagina() {
           </p>
           <div style={{ display: 'flex', gap: 18, flexWrap: 'wrap', alignItems: 'center' }}>
             <a href={ONTWERPER} data-meet="gietvloer-held" style={KNOP}>Ontwerp je gietvloer →</a>
-            <a href="#prijs" style={{ color: GROEN, fontWeight: 700 }}>Bekijk de prijzen →</a>
+            <a href="#kf-kop" style={{ color: GROEN, fontWeight: 700 }}>Zie hem in je eigen kamer →</a>
           </div>
           <p style={{ fontSize: 14, color: `${INKT}0.65)`, margin: '14px 0 0' }}>Gratis, zonder account. Inclusief btw.</p>
         </div>
@@ -111,6 +112,8 @@ export default function GietvloerPagina() {
           </li>
         ))}
       </ol>
+
+      <KamerFoto />
 
       <h2 style={H2}>Vier vloeren, van rustig naar druk</h2>
       <p style={P}>De kwaliteit is bij alle vier gelijk: 100% waterdicht, UV-stabiel en emissiearm (EMICODE EC1 PLUS). Je kiest op de tekening in de vloer.</p>
