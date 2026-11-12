@@ -246,6 +246,11 @@ build. Daarom: bouwen op de werktak, lokaal draaien, Daniel schermbeelden sturen
 en pas na zijn akkoord alles in één keer samenvoegen. Geen Vercel-preview. "Mergen mag meteen" hieronder geldt alleen nog
 voor kleine reparaties en als Daniel zegt dat het live mag.
 
+**Voor het samenvoegen: kijk wat main intussen kreeg (les van 12-11-2026).** De rondes (projecten, feiten, gids) schrijven
+zelf naar main. `git merge -s ours origin/main` gooit hun werk weg als de werktak daarop achterloopt. Dus eerst
+`git log <merge-base>..origin/main`; staat daar iets van een ronde, zet de werktak dan gelijk aan main en leg alleen de
+eigen wijziging erbovenop. Controle: `git diff --stat origin/main HEAD` mag alleen de eigen bestanden tonen.
+
 **Vaste volgorde bij elke inhoudelijke wijziging:**
 1. **Werk op een branch, nooit direct op `main`.** De PR is het reviewmoment en de
    ongedaan-maak-knop, ook zonder preview.
@@ -344,6 +349,13 @@ een kwartier live" zonder `vercel ls website` te checken.
   Nog door te voeren op bestaande pagina's (per pagina, bij de eerstvolgende wijziging): statische pagina's (`bn2.css`),
   mails en offertes. Gedaan (11-11): lijnen in plaats van kaders op deuren, kasten en afwerken; `/gietvloer/` is een
   productpagina in dezelfde opbouw (de gids per stad staat onderaan, steden en profielen in `app/gietvloer/[...slug]`).
+- **Zie de vloer in je eigen kamer (besluit Daniel, 12-11-2026, naar het voorbeeld van Trap op maat bij GAMMA/Karwei).**
+  Op `/gietvloer/`: foto van de eigen kamer kiezen, vloer en kleur kiezen, en dezelfde kamer zien met die gietvloer, met een
+  schuif voor en na (`web/app/components/gietvloer/KamerFoto.tsx`). **Zonder account.** App: `/api/gietvloer/kamerfoto`
+  (beeldbewerking op aanwijzing via fal, model in `GIET_FOTO_MODEL`; de foto wordt niet bewaard). Kosten begrensd: 4 beelden
+  per bezoeker per dag en 200 per dag in totaal (`GIET_FOTO_PER_DAG`, `GIET_FOTO_TOTAAL`), geteld in `trechter`
+  (product gietvloer, stap kamerfoto). GA4 `kamerfoto` met `stap`. Werkt het, dan dezelfde opzet voor een kozijnloze deur
+  in de eigen gang en een kast op de eigen wand.
 - **OPEN, niet vergeten: fotorealistische render ook bij kast op maat (wens Daniel, 11-11-2026).** De gietvloerontwerper
   heeft "Zie het in het echt" (app `/api/gietvloer/render`, ongeveer twintig seconden); de kastontwerper moet hetzelfde
   krijgen: de ontworpen kast fotorealistisch in de eigen kamer. Bij elk gesprek over de kastontwerper of configuratoren:
