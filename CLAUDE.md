@@ -246,6 +246,11 @@ build. Daarom: bouwen op de werktak, lokaal draaien, Daniel schermbeelden sturen
 en pas na zijn akkoord alles in één keer samenvoegen. Geen Vercel-preview. "Mergen mag meteen" hieronder geldt alleen nog
 voor kleine reparaties en als Daniel zegt dat het live mag.
 
+**Voor het samenvoegen: kijk wat main intussen kreeg (les van 12-11-2026).** De rondes (projecten, feiten, gids) schrijven
+zelf naar main. `git merge -s ours origin/main` gooit hun werk weg als de werktak daarop achterloopt. Dus eerst
+`git log <merge-base>..origin/main`; staat daar iets van een ronde, zet de werktak dan gelijk aan main en leg alleen de
+eigen wijziging erbovenop. Controle: `git diff --stat origin/main HEAD` mag alleen de eigen bestanden tonen.
+
 **Vaste volgorde bij elke inhoudelijke wijziging:**
 1. **Werk op een branch, nooit direct op `main`.** De PR is het reviewmoment en de
    ongedaan-maak-knop, ook zonder preview.
