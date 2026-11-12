@@ -7,6 +7,11 @@
   "outputDirectory": "web/out",
   "redirects": [
     {
+      "source": "/homepage-voorbeeld/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
       "source": "/homepage-voorbeeld/:pad*",
       "destination": "/",
       "permanent": false
