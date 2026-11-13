@@ -356,6 +356,20 @@ een kwartier live" zonder `vercel ls website` te checken.
   per bezoeker per dag en 200 per dag in totaal (`GIET_FOTO_PER_DAG`, `GIET_FOTO_TOTAAL`), geteld in `trechter`
   (product gietvloer, stap kamerfoto). GA4 `kamerfoto` met `stap`. Werkt het, dan dezelfde opzet voor een kozijnloze deur
   in de eigen gang en een kast op de eigen wand.
+- **Eén bouwsteen voor "zie het in je eigen foto" (13-11-2026).** Site: `web/app/components/FotoVoorNa.tsx` (upload, schuif,
+  limiet, "Klopt dit beeld?" en een meldknop bij een storing; beide naar de feedbacklijst). App: `src/lib/fotobewerking.ts`
+  (limiet 4 per bezoeker per dag en 200 per dag per tool, model in `FOTO_MODEL`). Gebruikt door de gietvloer
+  (`gietvloer/KamerFoto.tsx`, app `/api/gietvloer/kamerfoto`) en de **kozijnloze deur** (`DeurFoto.tsx` op
+  `/kozijnloze-deuren/`, app `/api/deuren/deurfoto`: eigen deur vervangen door een deur zonder kozijn, in de wandkleur of
+  een van de zes RAL-kleuren van de set, zoals nu of tot het plafond; GA4 `deurfoto`). Volgende in de rij (voorstel,
+  akkoord Daniel op de volgorde): schilderwerk en stucwerk, kast op maat, tegelwerk en badkamer.
+- **Bewaking van tools en configurators (besluit Daniel, 13-11-2026: "als hij niet werkt moeten we dat meteen weten").**
+  App `src/lib/bewaking.ts`: `meldToolFout(tool, reden)` legt elke fout aan onze kant vast (tabel `trechter`, stap `fout`)
+  en mailt Daniel, hooguit één mail per tool per uur. Aangesloten op de fototools, de renders (gietvloer, kast) en de
+  AI van de kast- en gietvloerontwerper (druk bij de AI telt niet als storing). **Dagelijkse zelftest**: app-cron
+  `/api/cron/tool-test` (06:20 UTC) maakt per beeldmodel één klein proefbeeld en kijkt of de pagina's met een tool of
+  configurator openen; mislukt er iets, dan dezelfde mail. Nieuwe tool = aansluiten op `meldToolFout` en toevoegen aan
+  de zelftest. Nog niet: tellingen per tool in het maandrapport.
 - **OPEN, niet vergeten: fotorealistische render ook bij kast op maat (wens Daniel, 11-11-2026).** De gietvloerontwerper
   heeft "Zie het in het echt" (app `/api/gietvloer/render`, ongeveer twintig seconden); de kastontwerper moet hetzelfde
   krijgen: de ontworpen kast fotorealistisch in de eigen kamer. Bij elk gesprek over de kastontwerper of configuratoren:
