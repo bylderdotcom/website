@@ -364,7 +364,14 @@ een kwartier live" zonder `vercel ls website` te checken.
   een van de zes RAL-kleuren van de set, zoals nu of tot het plafond; GA4 `deurfoto`). **Wanden (13-11-2026):** `WandFoto.tsx` op
   `/nieuwbouw-afwerken/schilderwerk/` en `/stucwerk/`, app `/api/afwerken/wandfoto`: de wanden in een van tien kleuren,
   strak gestuukt of alleen geschilderd; de kleursleutels staan op twee plekken (site `WAND_KLEUREN`, app `KLEUR`); GA4
-  `wandfoto`. Volgende in de rij: kast op maat, tegelwerk en badkamer.
+  `wandfoto`. **Kast (13-11-2026):** `KastFoto.tsx` op `/kasten-op-maat/`
+  en de pagina's per kasttype (begint op dat type), app `/api/kast/wandfoto`: een kast van muur tot plafond op de eigen
+  wand, vijf soorten, zes kleuren, greeploos of staafgreep; een impressie van het idee, niet het ontwerp met maten; GA4
+  `kastfoto`. Volgende in de rij: tegelwerk en badkamer.
+  **Elke fototool licht de configurator uit (verzoek Daniel, 13-11-2026):** vast blokje "Deze foto / De configurator" in
+  `FotoVoorNa` (prop `vervolg` met `naam` en `daar`): de foto is een indruk zonder maten en prijs, in de configurator,
+  ontwerper of offerte kies je de echte uitvoering en zie je de prijs, met de link erbij. Een nieuwe fototool zonder
+  die uitleg is niet af.
 - **Bewaking van tools en configurators (besluit Daniel, 13-11-2026: "als hij niet werkt moeten we dat meteen weten").**
   App `src/lib/bewaking.ts`: `meldToolFout(tool, reden)` legt elke fout aan onze kant vast (tabel `trechter`, stap `fout`)
   en mailt Daniel, hooguit één mail per tool per uur. Aangesloten op de fototools, de renders (gietvloer, kast) en de

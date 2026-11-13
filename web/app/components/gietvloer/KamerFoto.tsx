@@ -24,7 +24,7 @@ export default function KamerFoto() {
       knopKies="Kies een foto van je kamer" knopMaak="Laat mijn vloer zien" knopOpnieuw="Maak opnieuw met deze kleur"
       bezigKnop="Je vloer wordt gelegd…" bezigTekst="We leggen je vloer. Dat duurt ongeveer twintig seconden."
       naLabel="Met gietvloer" naAlt={`Je kamer met een gietvloer ${naam} in de kleur ${gekozen?.naam}`}
-      vervolg={{ href: '/gietvloer/ontwerpen/', tekst: 'Ontwerp je gietvloer en vraag drie stalen aan' }}
+      vervolg={{ href: '/gietvloer/ontwerpen/', tekst: 'Ontwerp je gietvloer', naam: 'De ontwerper', daar: 'Je kiest per ruimte waar de vloer komt, ziet je vierkante meters en de prijs, en vraagt tot drie stalen aan.' }}
       keuze={{ type, kleur: gekozen?.id ?? '' }} keuzeTekst={`${type} | ${gekozen?.id ?? ''}`} sleutel={`${type}:${gekozen?.id}`}>
       <span className="kf-lab" id="kf-type">Vloer</span>
       <div className="kf-types" role="radiogroup" aria-labelledby="kf-type">

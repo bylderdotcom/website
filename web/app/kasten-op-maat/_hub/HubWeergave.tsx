@@ -4,6 +4,7 @@ import { PIJLER, TYPES, urlVan, BIJGEWERKT, URL_BASIS, type HubPagina } from '@/
 import { Uitslag } from '../../components/kast/Tekeningen'
 import VoorbeeldKast from './VoorbeeldKast'
 import EigenVakmanMeekijken from '../../components/EigenVakmanMeekijken'
+import KastFoto from '../../components/KastFoto'
 
 // Eén weergave voor de pijler en de typepagina's. Alles wat hier staat komt uit
 // het rekenmodel of uit lib/kast/hub.ts; er staat geen enkel getal met de hand.
@@ -122,6 +123,12 @@ export default function HubWeergave({ p }: { p: HubPagina }) {
           <figcaption style={{ fontSize: 13, color: `${INKT}0.6)`, marginTop: 8 }}>Vooraanzicht met maten, zoals het timmerbedrijf het krijgt. Maten in centimeters.</figcaption>
         </figure>
 
+      </div>
+
+      {/* Een kast op de eigen wand van de bezoeker (13-11-2026), tussen het voorbeeld en de uitleg. */}
+      <KastFoto start={p.slug || undefined} />
+
+      <div style={{ maxWidth: 812 }}>
         {p.secties.map(s => (
           <section key={s.h2}>
             <h2 style={H2}>{s.h2}</h2>

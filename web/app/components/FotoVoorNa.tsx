@@ -32,7 +32,8 @@ export type FotoVoorNaProps = {
   knopKies: string; knopMaak: string; knopOpnieuw: string
   bezigKnop: string; bezigTekst: string
   naLabel: string; naAlt: string
-  vervolg: { href: string; tekst: string }
+  /** De stap waar Bylder aan verdient (configurator, ontwerper of offerte), met wat je daar anders doet dan hier. */
+  vervolg: { href: string; tekst: string; naam: string; daar: string }
   /** Wat er met het verzoek meegaat (naast de foto), en een korte omschrijving voor de feedbacklijst. */
   keuze: Record<string, string>
   keuzeTekst: string
@@ -117,6 +118,14 @@ export default function FotoVoorNa(p: FotoVoorNaProps) {
         .kf-oordeel form{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%}
         .kf-oordeel label{width:100%;font-weight:700}
         .kf-oordeel input{flex:1;min-width:180px;padding:10px 12px;border-radius:10px;border:1px solid ${INKT}0.25);font-family:inherit;font-size:16px;background:#fff}
+        .kf-verschil{margin:22px 0 0;border-top:1px solid ${INKT}0.14);border-bottom:1px solid ${INKT}0.14)}
+        .kf-verschil div{display:grid;grid-template-columns:132px minmax(0,1fr);gap:4px 14px;padding:12px 0}
+        .kf-verschil div+div{border-top:1px solid ${INKT}0.14)}
+        .kf-verschil dt{font:700 13px 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:${INKT}0.6);padding-top:3px}
+        .kf-verschil dd{margin:0;font-size:15px;line-height:1.55;color:${INKT}0.82)}
+        .kf-verschil a{color:${GROEN};font-weight:800;white-space:nowrap}
+        .kf-verschil .nu dt{color:${GROEN}}
+        @media(max-width:520px){.kf-verschil div{grid-template-columns:minmax(0,1fr)}.kf-verschil a{white-space:normal}}
         .kf-klein{font-size:13.5px!important;color:${INKT}0.62)!important;margin:12px 0 0!important;line-height:1.55!important}
         @media(max-width:820px){.kf{grid-template-columns:minmax(0,1fr)}.kf-beeld{order:-1}}
       
@@ -144,11 +153,6 @@ export default function FotoVoorNa(p: FotoVoorNaProps) {
           </p>
         )}
         {beeld && (
-          <p style={{ margin: '18px 0 0', fontSize: 16 }}>
-            Bevalt het? <a href={p.vervolg.href} onClick={() => meet(p.meetNaam, { stap: 'vervolg', product: p.keuzeTekst })} style={{ color: GROEN, fontWeight: 700 }}>{p.vervolg.tekst} →</a>
-          </p>
-        )}
-        {beeld && (
           <div className="kf-oordeel" aria-live="polite">
             {oordeel === '' && <><span>Klopt dit beeld?</span>
               <button type="button" onClick={() => { setOordeel('ja'); meet(p.meetNaam, { stap: 'oordeel-ja', product: p.keuzeTekst }) }}>Ja</button>
@@ -164,6 +168,13 @@ export default function FotoVoorNa(p: FotoVoorNaProps) {
             {oordeel === 'dank' && <span>Dank je, we kijken ernaar.</span>}
           </div>
         )}
+        {/* Het verschil met de configurator, altijd zichtbaar (verzoek Daniel, 13-11-2026): de foto is een indruk,
+            de configurator is waar je de echte uitvoering kiest en de prijs ziet. */}
+        <dl className="kf-verschil">
+          <div><dt>Deze foto</dt><dd>Een indruk van hoe het bij jou staat. Zonder maten en zonder prijs.</dd></div>
+          <div className={beeld ? 'nu' : undefined}><dt>{p.vervolg.naam}</dt><dd>{p.vervolg.daar}{' '}
+            <a href={p.vervolg.href} onClick={() => meet(p.meetNaam, { stap: 'vervolg', product: p.keuzeTekst })}>{p.vervolg.tekst} →</a></dd></div>
+        </dl>
         <p className="kf-klein">
           Gratis, zonder account{over !== null ? `, nog ${over} ${over === 1 ? 'beeld' : 'beelden'} vandaag` : ''}. Je foto wordt alleen gebruikt om dit beeld te maken en niet door ons bewaard.
           Het beeld is een impressie.
