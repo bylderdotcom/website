@@ -4,6 +4,7 @@ import { ONDERDELEN, URL_AFWERKEN, onderdeel, prijsTekst } from '@/lib/afwerken'
 import AfwerkAanvraag from '../../components/AfwerkAanvraag'
 import { Stijl as S, Lijn } from '../stijl'
 import Maquette, { MAQUETTE_ALT, type MaquetteAccent } from '../../components/Maquette'
+import WandFoto from '../../components/WandFoto'
 
 // /nieuwbouw-afwerken/<onderdeel>/ — één onderdeel van de afwerking, met dezelfde aanvraag als de
 // hoofdpagina, dit onderdeel vooraf aangevinkt. Inhoud: web/lib/afwerken.ts.
@@ -75,6 +76,9 @@ export default async function OnderdeelPage({ params }: { params: Promise<{ onde
         </aside>
         </div>
       </div>
+
+      {/* Wanden in de eigen foto van de bezoeker (13-11-2026), alleen bij schilderwerk en stucwerk. */}
+      {(o.slug === 'schilderwerk' || o.slug === 'stucwerk') && <WandFoto onderdeel={o.slug} />}
 
       <h2 style={S.h2}>Wat eronder valt</h2>
       <ul style={{ ...S.vinkjes, maxWidth: 720 }}>
