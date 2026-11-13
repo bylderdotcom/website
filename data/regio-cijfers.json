@@ -1,5 +1,5 @@
 {
- "gemeten_op": "2026-11-12",
+ "gemeten_op": "2026-11-13",
  "regios": {
   "drenthe": {
    "niveau": "provincie",
@@ -9,7 +9,7 @@
   },
   "flevoland": {
    "niveau": "provincie",
-   "projecten": 43,
+   "projecten": 44,
    "woningen": 780,
    "bekend": 24
   },
@@ -21,9 +21,9 @@
   },
   "gelderland": {
    "niveau": "provincie",
-   "projecten": 177,
-   "woningen": 6674,
-   "bekend": 85
+   "projecten": 179,
+   "woningen": 6717,
+   "bekend": 87
   },
   "groningen": {
    "niveau": "gemeente",
@@ -40,15 +40,15 @@
   },
   "noord-brabant": {
    "niveau": "provincie",
-   "projecten": 181,
-   "woningen": 10927,
-   "bekend": 109
+   "projecten": 184,
+   "woningen": 11004,
+   "bekend": 111
   },
   "noord-holland": {
    "niveau": "provincie",
-   "projecten": 229,
-   "woningen": 11725,
-   "bekend": 121
+   "projecten": 233,
+   "woningen": 11776,
+   "bekend": 123
   },
   "overijssel": {
    "niveau": "provincie",
@@ -65,15 +65,15 @@
   },
   "zeeland": {
    "niveau": "provincie",
-   "projecten": 31,
+   "projecten": 32,
    "woningen": 282,
    "bekend": 9
   },
   "zuid-holland": {
    "niveau": "provincie",
-   "projecten": 247,
-   "woningen": 9845,
-   "bekend": 134
+   "projecten": 250,
+   "woningen": 9999,
+   "bekend": 137
   },
   "assen": {
    "niveau": "gemeente",
@@ -127,7 +127,7 @@
   "lelystad": {
    "niveau": "gemeente",
    "provincie": "flevoland",
-   "projecten": 2,
+   "projecten": 3,
    "woningen": 9,
    "bekend": 1
   },
@@ -351,9 +351,9 @@
   "nijmegen": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 24,
-   "woningen": 2138,
-   "bekend": 15
+   "projecten": 26,
+   "woningen": 2181,
+   "bekend": 17
   },
   "nunspeet": {
    "niveau": "gemeente",
@@ -638,9 +638,9 @@
   "breda": {
    "niveau": "gemeente",
    "provincie": "noord-brabant",
-   "projecten": 20,
-   "woningen": 1802,
-   "bekend": 8
+   "projecten": 21,
+   "woningen": 1835,
+   "bekend": 9
   },
   "cuijk": {
    "niveau": "gemeente",
@@ -838,6 +838,13 @@
    "woningen": 61,
    "bekend": 2
   },
+  "someren": {
+   "niveau": "gemeente",
+   "provincie": "noord-brabant",
+   "projecten": 1,
+   "woningen": 44,
+   "bekend": 1
+  },
   "steenbergen": {
    "niveau": "gemeente",
    "provincie": "noord-brabant",
@@ -848,7 +855,7 @@
   "tholen": {
    "niveau": "gemeente",
    "provincie": "zeeland",
-   "projecten": 2,
+   "projecten": 3,
    "woningen": 92,
    "bekend": 2
   },
@@ -946,9 +953,9 @@
   "diemen": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 5,
-   "woningen": 74,
-   "bekend": 2
+   "projecten": 7,
+   "woningen": 125,
+   "bekend": 4
   },
   "drechterland": {
    "niveau": "gemeente",
@@ -1023,7 +1030,7 @@
   "hoorn": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 9,
+   "projecten": 10,
    "woningen": 931,
    "bekend": 7
   },
@@ -1093,7 +1100,7 @@
   "zaandam": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 2,
+   "projecten": 3,
    "woningen": 34,
    "bekend": 2
   },
@@ -1282,7 +1289,7 @@
   "eemnes": {
    "niveau": "gemeente",
    "provincie": "utrecht",
-   "projecten": 2,
+   "projecten": 3,
    "woningen": 20,
    "bekend": 1
   },
@@ -1450,9 +1457,9 @@
   "goeree-overflakkee": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 8,
-   "woningen": 81,
-   "bekend": 3
+   "projecten": 10,
+   "woningen": 191,
+   "bekend": 5
   },
   "gorinchem": {
    "niveau": "gemeente",
@@ -1548,9 +1555,9 @@
   "leidschendam-voorburg": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 2,
-   "woningen": 86,
-   "bekend": 2
+   "projecten": 3,
+   "woningen": 130,
+   "bekend": 3
   },
   "maassluis": {
    "niveau": "gemeente",

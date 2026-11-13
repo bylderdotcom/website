@@ -783,6 +783,14 @@
 "panden_opgeleverd": 138,
 "gemeten": "2026-11-01"
 },
+"de-hoffelijkheijd-appartementen-goeree-overflakkee": {
+"naam": "De Hoffelijkheijd Appartementen",
+"oplevering": "tussen 2026 en 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
 "de-hoge-veste-borne": {
 "naam": "De Hoge Veste",
 "oplevering": "tussen 2027 en 2028",
@@ -1138,6 +1146,14 @@
 "de-zuster-park-langendijk-breda": {
 "naam": "De Zuster Park Langendijk",
 "oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"debuut-fase-1-nijmegen": {
+"naam": "DeBuut |  Fase 1",
+"oplevering": "tussen 2027 en 2028",
 "opgeleverd": false,
 "in_aanbouw": 0,
 "panden_opgeleverd": 0,
@@ -2190,6 +2206,14 @@
 "in_aanbouw": 4,
 "panden_opgeleverd": 31,
 "gemeten": "2026-11-01"
+},
+"kreek-vlietvoorde-leidschendam-voorburg": {
+"naam": "Kreek Vlietvoorde",
+"oplevering": "tussen 2027 en 2029",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
 },
 "kwadijkerpark-fase-2b-purmerend": {
 "naam": "Kwadijkerpark Fase 2b",
@@ -3598,6 +3622,14 @@
 "in_aanbouw": 15,
 "panden_opgeleverd": 16,
 "gemeten": "2026-11-01"
+},
+"spot24-vista-nijmegen": {
+"naam": "SPOT24 - Vista",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
 },
 "springfield-arnhem": {
 "naam": "Springfield",
