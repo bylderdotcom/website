@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ConfiguratorCTA from '../components/ConfiguratorCTA'
+import DeurFoto from '../components/DeurFoto'
 import Portfolio from './Portfolio'
 import EigenVakmanMeekijken, { EIGEN_VAKMAN_VRAAG } from '../components/EigenVakmanMeekijken'
 import { VANAF, MONTAGE_UUR, euroRond } from './configurator/prijs'
@@ -268,6 +269,9 @@ export default function OnzichtbaarKozijnPage() {
           configurator, met de foto's van Classic Next). Bij een product dat verkocht wordt op hoe het eruitziet,
           hoort het beeld vóór de uitleg. */}
       <Portfolio marge="34px 0 8px" intro="Op maat gemaakt in de werkplaats van Classic Next in Uden en door een vakbedrijf geplaatst. Zo ziet een kozijnloze deur er in een woning uit." />
+
+      {/* Een deur zonder kozijn in de eigen foto van de bezoeker (13-11-2026), na de galerij met echte woningen. */}
+      <DeurFoto />
 
       {/* De eerste H2 moet het antwoord zijn, niet een bijschrift. Dit is de
           alinea die een AI-antwoord letterlijk kan overnemen, dus hij staat
