@@ -43,33 +43,41 @@
   ],
   "menus": [
     {
-      "label": "Ontwerpen",
+      "label": "Zelf ontwerpen",
       "items": [
+        {
+          "href": "/mijn-woning/",
+          "title": "Je woning in 3D",
+          "sub": "Upload je tekening: ruimtes, deuren en vierkante meters staan erin",
+          "primair": true
+        },
         {
           "href": "/kozijnloze-deuren/configurator/",
           "title": "Kozijnloze deuren",
-          "sub": "In 3D samenstellen, offerte en levering door Classic Next",
+          "sub": "Per deur samenstellen in 3D, met de prijs erbij",
           "primair": true
         },
         {
           "href": "/kasten-op-maat/ontwerpen/",
           "title": "Kast op maat",
-          "sub": "Vanaf een voorbeeldfoto, gemaakt door een timmerbedrijf",
+          "sub": "In 3D met maten en zaaglijst, daarna offertes op dat ontwerp",
           "primair": true
         },
         {
           "href": "/gietvloer/ontwerpen/",
           "title": "Gietvloer",
-          "sub": "Kleur uit je eigen foto, gelegd door een verwerker",
+          "sub": "Per ruimte uit je tekening, met vierkante meters en prijs",
+          "primair": true
+        },
+        {
+          "href": "/badkamer-ontwerpen/",
+          "title": "Badkamer",
+          "sub": "Uit je tekening naar één offerte; de ontwerper in 3D volgt",
           "primair": true
         },
         {
           "href": "/ontwerpen/",
-          "title": "Zo werkt bestellen"
-        },
-        {
-          "href": "/mijn-woning/",
-          "title": "Mijn woning"
+          "title": "Zo werkt zelf ontwerpen"
         },
         {
           "href": "/showrooms/",
