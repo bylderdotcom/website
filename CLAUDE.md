@@ -116,13 +116,15 @@ relatie Bylder heeft met een klusbedrijf of uitvoerder (besluit Daniel, 28-10-20
   met scharnieren en magneetslot € 650/695 ex btw, deurblad per hoogte en afwerking, freeswerk € 90 per deur, kruk per model;
   houtdecor en Molinia zonder bedrag). Nieuwe keuze Hoogte (plafondhoog of standaard). De vanafprijs op `/kozijnloze-deuren/`,
   de merkpagina en in de FAQ komt uit hetzelfde bestand. Scharnieren: 3 per deur tot 2315 mm, 4 bij hoger of kamerhoog.
-  Nog open bij Thijs: onze inkoop op deur en kozijn, en of freeswerk per deur of per lijn is.
+  Antwoorden Thijs (13-11-2026): het vierde scharnier zit al in de € 695; freeswerk is per deurontwerp, niet per lijn
+  (€ 90 klopt); Molinia zwart € 47,00 incl. btw. Voor Molinia goud en goud mat gaf hij € 45,45 | € 89,00: die passen niet
+  bij elkaar, dus daar staat nog geen bedrag tot hij het bevestigt. Nog open bij Thijs: onze inkoop op deur en kozijn.
 - **Standaardset kozijnloze deur in de winkel (besluit Daniel, 11-11-2026):** `/winkel/kozijnloze-deur-set/`, product `winkel-deurset`:
   kozijn tot 2400 mm met 3 scharnieren en magneetslot + gegrond deurblad tot 93 x 231,5 cm, € 1.258,40 incl. btw, excl. kruk, montage en
   levering. Gegrond, zodat de koper hem meeschildert met de wand. Eigen verzendregel `dutch-doors-vracht` (nog zonder bedrag: bestellen
   via betaallink; met een bedrag gaat hij op iDEAL en vanzelf in de Google-productlijst, app `/api/winkel/feed.xml`).
   **In kleur (11-11-2026):** afgelakt in zes RAL-kleuren (6005, 5011, 3005, 7016, 9005, 6021; `SET_KLEUREN` in `web/lib/winkel.ts`, app
-  `SET_KLEUR`), standaardhoogte € 1.366,09 of plafondhoog € 1.720,02 (incl. vierde scharnier), pagina per kleur `/winkel/kozijnloze-deur-set/ral-<ral>/`.
+  `SET_KLEUR`), standaardhoogte € 1.366,09 of plafondhoog € 1.669,80 (het vierde scharnier zit in het kozijnpakket van € 695, Thijs 13-11-2026; was € 1.720,02), pagina per kleur `/winkel/kozijnloze-deur-set/ral-<ral>/`.
   Beelden zijn renders uit de configurator (`web/public/img/winkel/deuren/origin-<ral>.webp`), deur en wand in dezelfde kleur. Vracht € 99 per
   bestelling: alle deursets met iDEAL en in de Google-productlijst. Groefontwerpen volgen zodra de freesprijs bekend is.
   Montage: ongeveer 2,5 uur per deur (`MONTAGE_UUR` in `configurator/prijs.ts`), genoemd bij de deuren, de configurator en de set.
@@ -367,7 +369,9 @@ een kwartier live" zonder `vercel ls website` te checken.
   `wandfoto`. **Kast (13-11-2026):** `KastFoto.tsx` op `/kasten-op-maat/`
   en de pagina's per kasttype (begint op dat type), app `/api/kast/wandfoto`: een kast van muur tot plafond op de eigen
   wand, vijf soorten, zes kleuren, greeploos of staafgreep; een impressie van het idee, niet het ontwerp met maten; GA4
-  `kastfoto`. Volgende in de rij: tegelwerk en badkamer.
+  `kastfoto`. **Badkamer (13-11-2026):** `BadkamerFoto.tsx` op
+  `/nieuwbouw-afwerken/tegelwerk/` en `/sanitair/`, app `/api/afwerken/badkamerfoto`: zes tegels, vloer, wand of allebei,
+  sanitair laten staan of nieuw; GA4 `badkamerfoto`. Daarmee is de reeks compleet.
   **Elke fototool licht de configurator uit (verzoek Daniel, 13-11-2026):** vast blokje "Deze foto / De configurator" in
   `FotoVoorNa` (prop `vervolg` met `naam` en `daar`): de foto is een indruk zonder maten en prijs, in de configurator,
   ontwerper of offerte kies je de echte uitvoering en zie je de prijs, met de link erbij. Een nieuwe fototool zonder
