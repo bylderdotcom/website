@@ -361,8 +361,10 @@ een kwartier live" zonder `vercel ls website` te checken.
   (limiet 4 per bezoeker per dag en 200 per dag per tool, model in `FOTO_MODEL`). Gebruikt door de gietvloer
   (`gietvloer/KamerFoto.tsx`, app `/api/gietvloer/kamerfoto`) en de **kozijnloze deur** (`DeurFoto.tsx` op
   `/kozijnloze-deuren/`, app `/api/deuren/deurfoto`: eigen deur vervangen door een deur zonder kozijn, in de wandkleur of
-  een van de zes RAL-kleuren van de set, zoals nu of tot het plafond; GA4 `deurfoto`). Volgende in de rij (voorstel,
-  akkoord Daniel op de volgorde): schilderwerk en stucwerk, kast op maat, tegelwerk en badkamer.
+  een van de zes RAL-kleuren van de set, zoals nu of tot het plafond; GA4 `deurfoto`). **Wanden (13-11-2026):** `WandFoto.tsx` op
+  `/nieuwbouw-afwerken/schilderwerk/` en `/stucwerk/`, app `/api/afwerken/wandfoto`: de wanden in een van tien kleuren,
+  strak gestuukt of alleen geschilderd; de kleursleutels staan op twee plekken (site `WAND_KLEUREN`, app `KLEUR`); GA4
+  `wandfoto`. Volgende in de rij: kast op maat, tegelwerk en badkamer.
 - **Bewaking van tools en configurators (besluit Daniel, 13-11-2026: "als hij niet werkt moeten we dat meteen weten").**
   App `src/lib/bewaking.ts`: `meldToolFout(tool, reden)` legt elke fout aan onze kant vast (tabel `trechter`, stap `fout`)
   en mailt Daniel, hooguit één mail per tool per uur. Aangesloten op de fototools, de renders (gietvloer, kast) en de
