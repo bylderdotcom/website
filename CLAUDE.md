@@ -426,8 +426,13 @@ een kwartier live" zonder `vercel ls website` te checken.
   snijplan dat reststukken hergebruikt. **Lessen:** begin bij de tekening van de koper met vaste afvoeren (niet zelf
   muren tekenen); vaste volgorde ruimte, sanitair, tegels; klein gekozen assortiment met prijs, geen catalogus; tegels
   bestellen inclusief snijverlies; zichtbare haalbaarheidscheck (afvoer, draairuimte deur, vrije ruimte); delen met een
-  gewone link; 3D-modellen moeten we grotendeels zelf (laten) maken, 2BA/ETIM geeft maten en artikelgegevens, geen
-  modellen; rechten per merk vroeg regelen. Eerst nodig van Daniel: welke leverancier(s) voor tegels en sanitair.
+  gewone link; rechten per merk vroeg regelen. **3D-modellen bestaan al (correctie Daniel, 13-11-2026):** fabrikanten
+  publiceren BIM-bibliotheken (Roca hele catalogus, Duravit 150+, Geberit, Villeroy & Boch, VitrA) op BIMobject, NBS
+  Source, bimstore en hun eigen vakportaal; aec-data.com heeft o.a. Hansgrohe en Geberit. Twee haken: (1) de
+  gebruiksvoorwaarden van BIMobject staan alleen eigen, niet-commercieel gebruik toe, een toepassing loopt via hun
+  ontwikkelaarsvoorwaarden of via toestemming van de fabrikant zelf; (2) het zijn Revit/ArchiCAD/IFC-bestanden, bedoeld
+  voor bouwtekeningen: omzetten naar het web (glb) en materialen opknappen blijft werk. 2BA/ETIM geeft maten en
+  artikelgegevens. Nog niet nagekeken: of fabrikanten zelf glb leveren. Eerst nodig van Daniel: welke leverancier(s) voor tegels en sanitair.
   Concept met 56 regels en 20 vragen voor de vakman (13-11-2026, nog niet nagekeken):
   https://claude.ai/artifact/NgSYbFCLh3wMxcZTYzExNx. Uitgangspunt: regels beslissen, de AI legt uit; een vakman kijkt
   elk ontwerp na voor bestelling of uitvoering, en elke correctie wordt een nieuwe regel.
