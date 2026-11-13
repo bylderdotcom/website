@@ -415,3 +415,16 @@ een kwartier live" zonder `vercel ls website` te checken.
 
 ## Modelgebruik
 - Getrapt: mechanisch/volume goedkoop, architectuur/security/copy-met-merkrisico op het sterkste model. Final review vóór productie altijd op het sterkste model.
+
+- **OPEN: eigen 3D-badkamerontwerper met echt assortiment (wens Daniel, 13-11-2026).** De badkamerfoto is een indruk; dit
+  wordt de configurator. Eerst gekeken naar Saninet (saninet.eu) en ViSoft (alleen via zoekresultaten, hun sites waren
+  vanuit de sessie niet te openen; nog een demo of proefversie aanvragen). Wat we weten: beide zijn gereedschap voor de
+  showroomverkoper; de koper krijgt bij Saninet alleen een kijk-app met code, bij ViSoft een planner per winkel (ViPlan).
+  Saninet: ruim 40.000 producten met maten en prijzen, eigen team dat 3D-modellen maakt, uitvoer in delen (beeld voor de
+  koper, maattekening met aansluitpunten en stuklijst voor de installateur), vanaf € 70 per maand. ViSoft: tegeldatabase
+  van 500+ fabrikanten (merken op slot tot de fabrikant toestemming geeft), legpatroon, startpunt, voegkleur en een
+  snijplan dat reststukken hergebruikt. **Lessen:** begin bij de tekening van de koper met vaste afvoeren (niet zelf
+  muren tekenen); vaste volgorde ruimte, sanitair, tegels; klein gekozen assortiment met prijs, geen catalogus; tegels
+  bestellen inclusief snijverlies; zichtbare haalbaarheidscheck (afvoer, draairuimte deur, vrije ruimte); delen met een
+  gewone link; 3D-modellen moeten we grotendeels zelf (laten) maken, 2BA/ETIM geeft maten en artikelgegevens, geen
+  modellen; rechten per merk vroeg regelen. Eerst nodig van Daniel: welke leverancier(s) voor tegels en sanitair.
