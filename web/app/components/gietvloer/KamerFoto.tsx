@@ -32,6 +32,9 @@ export default function KamerFoto() {
   const [fout, setFout] = useState('')
   const [over, setOver] = useState<number | null>(null)
   const [schuif, setSchuif] = useState(50)
+  // Oordeel over het beeld: '' nog niet gevraagd, 'ja', 'nee' (toelichting open), 'dank' (verstuurd).
+  const [oordeel, setOordeel] = useState<'' | 'ja' | 'nee' | 'dank'>('')
+  const [toelichting, setToelichting] = useState('')
   const kies = useRef<HTMLInputElement>(null)
   const gekozen = kleuren.find(k => k.id === kleur) ?? kleuren[0]
 
@@ -44,15 +47,25 @@ export default function KamerFoto() {
   const wisselType = (t: TypeId) => { setType(t); setKleur(kleurenVoor(t)[0]?.id ?? ''); setNa(null) }
   const maak = async () => {
     if (!foto || !gekozen) return
-    setFout(''); setBezig(true); meet('kamerfoto', { stap: 'maak', product: type })
+    setFout(''); setOordeel(''); setBezig(true); meet('kamerfoto', { stap: 'maak', product: type })
     try {
       const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ beeld: foto, type, kleur: gekozen.id }) })
       const j = await r.json().catch(() => ({}))
       if (!r.ok || !j.url) throw new Error(j.error || 'Het beeld lukte niet. Probeer het zo opnieuw.')
       // Pas tonen als het beeld geladen is, zodat de schuif niet over een leeg vlak gaat.
       await new Promise<void>((ok, nee) => { const i = new Image(); i.onload = () => ok(); i.onerror = () => nee(new Error('Het beeld kon niet geladen worden. Probeer het opnieuw.')); i.src = j.url })
-      setNa(j.url); setSchuif(50); setOver(typeof j.over === 'number' ? j.over : null); meet('kamerfoto', { stap: 'klaar', product: type })
+      setNa(j.url); setSchuif(50); setOordeel(''); setToelichting(''); setOver(typeof j.over === 'number' ? j.over : null); meet('kamerfoto', { stap: 'klaar', product: type })
     } catch (e) { setFout((e as Error).message); meet('kamerfoto', { stap: 'fout' }) } finally { setBezig(false) }
+  }
+
+  // Een melding gaat naar dezelfde lijst als "Mis je iets?" (feature_requests), met de vloer en de kleur erbij.
+  const meld = async (waarom: 'beeld' | 'storing') => {
+    const tekst = waarom === 'beeld'
+      ? `Het beeld van mijn kamer met gietvloer klopt niet. ${toelichting.trim()}`.trim()
+      : `Zie de vloer in je eigen kamer werkt niet: ${fout}`
+    setOordeel('dank'); meet('kamerfoto', { stap: waarom === 'beeld' ? 'oordeel-nee' : 'storing-gemeld', product: type })
+    await fetch('/api/feature-request', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tekst, context: `kamerfoto | ${type} | ${gekozen?.id ?? ''} | ${typeof window !== 'undefined' ? window.innerWidth : ''}px`, website: '' }) }).catch(() => undefined)
   }
 
   return (
@@ -83,6 +96,11 @@ export default function KamerFoto() {
         .kf-bereik{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
         .kf-etiket{position:absolute;bottom:12px;font:700 13px 'Space Mono',monospace;background:rgba(26,18,8,.72);color:#F5F0E8;padding:5px 9px;border-radius:7px;pointer-events:none}
         .kf-bezig{position:absolute;inset:0;background:rgba(245,240,232,.82);display:grid;place-items:center;font-weight:700;padding:20px}
+        .kf-oordeel{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin:16px 0 0;font-size:15px;color:${INKT}0.8)}
+        .kf-oordeel button{font-weight:700;font-size:14.5px;font-family:inherit;padding:9px 16px;min-height:40px;border-radius:999px;border:1px solid ${INKT}0.25);background:#fff;color:#1A1208;cursor:pointer}
+        .kf-oordeel form{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%}
+        .kf-oordeel label{width:100%;font-weight:700}
+        .kf-oordeel input{flex:1;min-width:180px;padding:10px 12px;border-radius:10px;border:1px solid ${INKT}0.25);font-family:inherit;font-size:16px;background:#fff}
         .kf-klein{font-size:13.5px!important;color:${INKT}0.62)!important;margin:12px 0 0!important;line-height:1.55!important}
         @media(max-width:820px){.kf{grid-template-columns:minmax(0,1fr)}.kf-beeld{order:-1}}
       `}</style>
@@ -111,11 +129,33 @@ export default function KamerFoto() {
           </button>
         </div>
         {foto && !bezig && <p className="kf-klein"><button type="button" className="kf-link" onClick={() => kies.current?.click()}>Andere foto kiezen</button></p>}
-        {fout && <p role="alert" style={{ color: '#8C2F1E', fontSize: 15, margin: '12px 0 0' }}>{fout}</p>}
+        {fout && (
+          <p role="alert" style={{ color: '#8C2F1E', fontSize: 15, margin: '12px 0 0' }}>
+            {fout}{' '}
+            {oordeel === 'dank' ? <span style={{ color: GROEN }}>Dank je, we kijken ernaar.</span>
+              : <button type="button" className="kf-link" onClick={() => meld('storing')}>Meld dat het niet werkt</button>}
+          </p>
+        )}
         {na && (
           <p style={{ margin: '18px 0 0', fontSize: 16 }}>
             Bevalt het? <a href={`/gietvloer/ontwerpen/`} onClick={() => meet('kamerfoto', { stap: 'ontwerper', product: type })} style={{ color: GROEN, fontWeight: 700 }}>Ontwerp je gietvloer en vraag drie stalen aan →</a>
           </p>
+        )}
+        {na && (
+          <div className="kf-oordeel" aria-live="polite">
+            {oordeel === '' && <><span>Klopt dit beeld?</span>
+              <button type="button" onClick={() => { setOordeel('ja'); meet('kamerfoto', { stap: 'oordeel-ja', product: type }) }}>Ja</button>
+              <button type="button" onClick={() => setOordeel('nee')}>Nee</button></>}
+            {oordeel === 'ja' && <span>Fijn, dank je.</span>}
+            {oordeel === 'nee' && (
+              <form onSubmit={e => { e.preventDefault(); meld('beeld') }}>
+                <label htmlFor="kf-waarom">Wat klopt er niet?</label>
+                <input id="kf-waarom" value={toelichting} onChange={e => setToelichting(e.target.value)} maxLength={300} placeholder="Bijvoorbeeld: de bank is ook veranderd" />
+                <button type="submit">Verstuur</button>
+              </form>
+            )}
+            {oordeel === 'dank' && <span>Dank je, we kijken ernaar.</span>}
+          </div>
         )}
         <p className="kf-klein">
           Gratis, zonder account{over !== null ? `, nog ${over} ${over === 1 ? 'beeld' : 'beelden'} vandaag` : ''}. Je foto wordt alleen gebruikt om dit beeld te maken en niet door ons bewaard.
