@@ -5,7 +5,7 @@ import { TYPES, KLEUREN, GIET_PRIJS_M2, MIN_M2, KLEUR_VOORBEHOUD } from '../comp
 import { onderdeel } from '@/lib/afwerken'
 import Maquette from '../components/Maquette'
 import JouwRegel from '../components/JouwRegel'
-import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
+import DrieOffertes from '../components/DrieOffertes'
 import KamerFoto from '../components/gietvloer/KamerFoto'
 
 // /gietvloer/ — de productpagina voor de gietvloer (11-11-2026, besluit Daniel), in dezelfde opbouw als
@@ -186,7 +186,7 @@ export default function GietvloerPagina() {
         ))}
       </div>
 
-      <EigenVakmanMeekijken product="je gietvloer" campagne="gietvloer" marge="64px 0 0" />
+      <DrieOffertes soort="gietvloer" href={ONTWERPER} marge="64px 0 0" />
 
       {lijst.length > 0 && (
         <section aria-labelledby="gv-steden">

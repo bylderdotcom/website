@@ -387,7 +387,12 @@ een kwartier live" zonder `vercel ls website` te checken.
   **Periode van plaatsen (verzoek Daniel, 13-11-2026):** de kastaanvraag vraagt "Plaatsen vanaf" en "Uiterlijk" (maanden);
   bewaard in `configuratie.plaatsing` ({van, tot} als JJJJ-MM) en als zin in `planning` (app `src/lib/plaatsing.ts`).
   **Nog te bouwen:** capaciteit per bedrijf en maand, en daarop doorsturen; dezelfde periode bij gietvloer en afwerking;
-  timmerbedrijven werven via de gids (aanbod op profiel en dashboard). Gietvloer pas na overleg met Dr. Schutz.
+  timmerbedrijven werven via de gids (aanbod op profiel en dashboard).
+  **Ook voor de gietvloer (besluit Daniel, 13-11-2026):** `DrieOffertes soort="gietvloer"` op `/gietvloer/` (vervangt daar
+  `EigenVakmanMeekijken`), de teller in de app ook bij een vlooraanvraag, en de periode "Leggen vanaf / Uiterlijk" in de
+  gietvloerontwerper op de site en in de app (site `web/lib/plaatsing.ts`). **Let op Dr. Schutz:** de ontwerper rekent met
+  hun vloeren en kleuren; een bedrijf dat de koper zelf uitnodigt kan een ander merk aanbieden. De tekst zegt daarom "de
+  kleur die je koos", niet "dezelfde vloer". Niet met Lars afgestemd op 13-11.
 - **Bewaking van tools en configurators (besluit Daniel, 13-11-2026: "als hij niet werkt moeten we dat meteen weten").**
   App `src/lib/bewaking.ts`: `meldToolFout(tool, reden)` legt elke fout aan onze kant vast (tabel `trechter`, stap `fout`)
   en mailt Daniel, hooguit één mail per tool per uur. Aangesloten op de fototools, de renders (gietvloer, kast) en de
