@@ -383,7 +383,7 @@ een kwartier live" zonder `vercel ls website` te checken.
   `src/lib/verdeling.ts` (`voorstelPartners`): actief, doet het product, werkt in de provincie, niet de hele periode vol;
   volgorde: ruimte boven beperkt, dan passende expertise, dan het kleinste werkgebied. Daniel keurt elk voorstel goed in
   de admin. Per bedrijf in te vullen in `/admin/partners/<id>`: expertise (`EXPERTISE` per product) en capaciteit per
-  maand (ruimte, beperkt, vol). **Database-stap nodig** (Daniel, handmatig): app
+  maand (ruimte, beperkt, vol). **Database-stap** (door Daniel uitgevoerd op 13-11-2026): app
   `supabase/migrations/20261113120000_partner_capaciteit_expertise.sql`; zonder die stap werkt alles door op product en
   werkgebied en meldt het partnerformulier dat capaciteit en expertise niet bewaard zijn.
   **Periode:** de aanvraag vraagt "Plaatsen vanaf / Uiterlijk" (kast) of "Leggen vanaf / Uiterlijk" (gietvloer, site en
@@ -436,7 +436,4 @@ een kwartier live" zonder `vercel ls website` te checken.
   Concept met 56 regels en 20 vragen voor de vakman (13-11-2026, nog niet nagekeken):
   https://claude.ai/artifact/NgSYbFCLh3wMxcZTYzExNx. Uitgangspunt: regels beslissen, de AI legt uit; een vakman kijkt
   elk ontwerp na voor bestelling of uitvoering, en elke correctie wordt een nieuwe regel.
-- **OPEN, Daniel herinneren bij elk gesprek tot het gedaan is (zijn verzoek, 13-11-2026):** de twee regels SQL voor
-  capaciteit en expertise van partners uitvoeren in de Supabase SQL-editor van Bylder (app
-  `supabase/migrations/20261113120000_partner_capaciteit_expertise.sql`). Zonder die stap worden capaciteit en expertise
-  in het partnerformulier niet bewaard.
+- **Gedaan (Daniel, 13-11-2026):** de databasestap voor capaciteit en expertise van partners is uitgevoerd in Supabase.

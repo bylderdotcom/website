@@ -27,8 +27,9 @@ const COLS: Col[] = [
     { href: '/deelnemer-worden/commercieel-vastgoed/', label: 'Commercieel vastgoed' },
     { href: '/en-us/', label: 'For US homebuyers' },
   ] },
-  { title: 'Ontwerpen', links: [
-    { href: '/ontwerpen/', label: 'Ontwerpen en bestellen' },
+  { title: 'Zelf ontwerpen', links: [
+    { href: '/ontwerpen/', label: 'Zo werkt zelf ontwerpen' },
+    { href: '/badkamer-ontwerpen/', label: 'Badkamer' },
     { href: '/kozijnloze-deuren/configurator/', label: 'Kozijnloze deuren' },
     { href: '/kasten-op-maat/ontwerpen/', label: 'Kast op maat' },
     { href: '/gietvloer/ontwerpen/', label: 'Gietvloer' },
