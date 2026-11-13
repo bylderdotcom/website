@@ -376,6 +376,18 @@ een kwartier live" zonder `vercel ls website` te checken.
   `FotoVoorNa` (prop `vervolg` met `naam` en `daar`): de foto is een indruk zonder maten en prijs, in de configurator,
   ontwerper of offerte kies je de echte uitvoering en zie je de prijs, met de link erbij. Een nieuwe fototool zonder
   die uitleg is niet af.
+- **3D-aanbesteding: "Eén ontwerp, tot drie offertes" (besluit Daniel, 13-11-2026).** Het idee: zoals Werkspot, maar de
+  bedrijven rekenen allemaal op hetzelfde ontwerp in 3D, met maten en zaaglijst. Eerst voor de kast op maat.
+  **Telling van 13-11-2026** (`feedback-overzicht.yml` met keuze `partners`, `scripts/partners_overzicht.py`, alleen
+  aantallen): 1 partnerbedrijf in de app (kozijnloze deuren, landelijk), 0 voor kast, gietvloer en afwerking; 2 aanvragen,
+  0 uitgezet. **Daarom beloven we geen offertes uit ons eigen netwerk:** de koper nodigt zelf tot drie bedrijven uit die
+  hij kent (bestond al: app `dashboard/offertes/<id>`, `ZelfUitnodigen`); waar wij een partner hebben vult de app aan.
+  Site: `web/app/components/DrieOffertes.tsx` op de kastenpagina's (vervangt daar `EigenVakmanMeekijken`). App: na de
+  aanvraag in de kastontwerper de oproep met link naar `#uitnodigen`, en een teller "x van de 3".
+  **Periode van plaatsen (verzoek Daniel, 13-11-2026):** de kastaanvraag vraagt "Plaatsen vanaf" en "Uiterlijk" (maanden);
+  bewaard in `configuratie.plaatsing` ({van, tot} als JJJJ-MM) en als zin in `planning` (app `src/lib/plaatsing.ts`).
+  **Nog te bouwen:** capaciteit per bedrijf en maand, en daarop doorsturen; dezelfde periode bij gietvloer en afwerking;
+  timmerbedrijven werven via de gids (aanbod op profiel en dashboard). Gietvloer pas na overleg met Dr. Schutz.
 - **Bewaking van tools en configurators (besluit Daniel, 13-11-2026: "als hij niet werkt moeten we dat meteen weten").**
   App `src/lib/bewaking.ts`: `meldToolFout(tool, reden)` legt elke fout aan onze kant vast (tabel `trechter`, stap `fout`)
   en mailt Daniel, hooguit één mail per tool per uur. Aangesloten op de fototools, de renders (gietvloer, kast) en de
