@@ -428,3 +428,10 @@ een kwartier live" zonder `vercel ls website` te checken.
   bestellen inclusief snijverlies; zichtbare haalbaarheidscheck (afvoer, draairuimte deur, vrije ruimte); delen met een
   gewone link; 3D-modellen moeten we grotendeels zelf (laten) maken, 2BA/ETIM geeft maten en artikelgegevens, geen
   modellen; rechten per merk vroeg regelen. Eerst nodig van Daniel: welke leverancier(s) voor tegels en sanitair.
+  Concept met 56 regels en 20 vragen voor de vakman (13-11-2026, nog niet nagekeken):
+  https://claude.ai/artifact/NgSYbFCLh3wMxcZTYzExNx. Uitgangspunt: regels beslissen, de AI legt uit; een vakman kijkt
+  elk ontwerp na voor bestelling of uitvoering, en elke correctie wordt een nieuwe regel.
+- **OPEN, Daniel herinneren bij elk gesprek tot het gedaan is (zijn verzoek, 13-11-2026):** de twee regels SQL voor
+  capaciteit en expertise van partners uitvoeren in de Supabase SQL-editor van Bylder (app
+  `supabase/migrations/20261113120000_partner_capaciteit_expertise.sql`). Zonder die stap worden capaciteit en expertise
+  in het partnerformulier niet bewaard.
