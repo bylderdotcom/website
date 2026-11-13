@@ -25,7 +25,7 @@ export default function DeurFoto() {
       knopKies="Kies een foto van je deur" knopMaak="Laat mijn deur zien" knopOpnieuw="Maak opnieuw met deze keuze"
       bezigKnop="Je deur wordt geplaatst…" bezigTekst="We plaatsen je deur. Dat duurt ongeveer twintig seconden."
       naLabel="Zonder kozijn" naAlt={`Je eigen deur vervangen door een kozijnloze deur, ${kleurNaam}`}
-      vervolg={{ href: '/kozijnloze-deuren/configurator/', tekst: 'Stel je deur samen en zie de prijs' }}
+      vervolg={{ href: '/kozijnloze-deuren/configurator/', tekst: 'Stel je deur samen', naam: 'De configurator', daar: 'Je kiest per deur het groefpatroon, de kleur, de hoogte en de kruk, en ziet de prijs per deur.' }}
       keuze={{ kleur, hoogte }} keuzeTekst={`${kleur} | ${hoogte}`} sleutel={`${kleur}:${hoogte}`}>
       <span className="kf-lab" id="df-kleur">Kleur: {kleurNaam}</span>
       <div className="kf-kleuren" role="radiogroup" aria-labelledby="df-kleur">

@@ -35,7 +35,7 @@ export default function WandFoto({ onderdeel }: { onderdeel: 'schilderwerk' | 's
       knopKies="Kies een foto van je kamer" knopMaak="Laat mijn wanden zien" knopOpnieuw="Maak opnieuw met deze keuze"
       bezigKnop="Je wanden worden gedaan…" bezigTekst="We doen je wanden. Dat duurt ongeveer twintig seconden."
       naLabel={strak ? 'Strak en geschilderd' : 'Geschilderd'} naAlt={`Je kamer met de wanden in ${gekozen.naam.toLowerCase()}${strak ? ', strak gestuukt' : ''}`}
-      vervolg={{ href: '#aanvraag', tekst: 'Vraag je offerte aan' }}
+      vervolg={{ href: '#aanvraag', tekst: 'Vraag je offerte aan', naam: 'De offerte', daar: 'Wij rekenen je wandoppervlak uit je tekening en je krijgt de prijs per onderdeel.' }}
       keuze={{ kleur: gekozen.id, strak: strak ? 'ja' : 'nee' }} keuzeTekst={`${gekozen.id} | ${strak ? 'strak' : 'alleen verf'} | ${onderdeel}`} sleutel={`${gekozen.id}:${strak}`}>
       <span className="kf-lab" id="wf-kleur">Kleur: {gekozen.naam}</span>
       <div className="kf-kleuren" role="radiogroup" aria-labelledby="wf-kleur">
