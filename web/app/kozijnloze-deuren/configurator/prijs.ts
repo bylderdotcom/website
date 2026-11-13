@@ -7,9 +7,11 @@
 //  - Deurblad 50 mm, tot 930 mm breed: tot 2315 mm hoog of tot 2700 mm hoog, gegrond of afgelakt
 //    (afgelakt tot 2700 = € 685 ex btw; de € 658 in de lijst was een tikfout).
 //  - Freeswerk: € 90 ex btw per deur (prijslijst: "meerprijs freeslijn ontwerp per deur").
-//  - Deuren hoger dan 2315 mm krijgen een vierde scharnier; dat rekenen we erbij (€ 41,50 ex btw).
+//  - Deuren hoger dan 2315 mm krijgen een vierde scharnier. Dat zit al in het pakket van € 695 (Thijs, 13-11-2026);
+//    tot die dag rekenden we er € 41,50 ex btw bij.
 //  - Krukken per model en kleur. Oval 1750 zwart = € 32,23 ex btw (tikfout in de lijst hersteld).
-//    Molinia staat niet in de lijst: geen bedrag, komt in de offerte.
+//    Molinia (Thijs, 13-11-2026): zwart € 38,84 ex btw = € 47,00. Voor goud en goud mat gaf hij € 45,45 | € 89,00;
+//    die twee bedragen passen niet bij elkaar (45,45 ex btw is 55,00 incl.), dus tot hij het bevestigt: geen bedrag.
 //  - Houtdecor (HPL) is op offertebasis: geen bedrag.
 // Verandert een prijs, dan alleen hier. De indicatie gaat mee in de offerteaanvraag.
 
@@ -26,11 +28,11 @@ const BLAD: Record<Hoogte, { gegrond: number; gelakt: number }> = {
   plafond: { gegrond: btw(490), gelakt: btw(685) },
 }
 const FREESWERK = btw(90)
-const SCHARNIER = btw(41.5)
 
 /** Kruk per model; een bedrag per kleur waar de lijst dat onderscheidt. */
 const KRUK: Record<string, number | Record<string, number>> = {
   carlina: 108, fragola: 47, guava: 178, lima: 33, 'oma-q-slim': 34, sorella: 183,
+  molinia: { Zwart: 47 },
   'oval-1741': { Basalt: 69, 'Goud mat': 85, Koper: 69, Zwart: 64 },
   'oval-1743': { Basalt: 78, 'Goud mat': 94, Koper: 78, Zwart: 71 },
   'oval-1750': { RVS: 29.9, Zwart: 39, Goud: 47, Wit: 41 },
@@ -57,7 +59,7 @@ export function deurPrijs(d: DeurVoorPrijs): Prijs {
   const blad = d.afwerking === 'fineer' ? null : BLAD[d.hoogte][d.afwerking]
   const kruk = krukPrijs(d.kruk, d.krukAfwerking)
   const regels: Prijs['regels'] = [
-    { naam: `Kozijn ${hoog ? 'tot 270 cm' : 'tot 240 cm'}, met ${hoog ? '4' : '3'} scharnieren en magneetslot`, bedrag: KOZIJN[d.hoogte] + (hoog ? SCHARNIER : 0) },
+    { naam: `Kozijn ${hoog ? 'tot 270 cm' : 'tot 240 cm'}, met ${hoog ? '4' : '3'} scharnieren en magneetslot`, bedrag: KOZIJN[d.hoogte] },
     { naam: `Deurblad ${hoog ? 'tot 270 cm' : 'tot 231,5 cm'}, ${d.afwerking === 'gegrond' ? 'gegrond' : d.afwerking === 'gelakt' ? 'afgelakt' : 'houtdecor'}`, bedrag: blad },
     ...(d.freeswerk ? [{ naam: 'Freeswerk', bedrag: FREESWERK }] : []),
     { naam: 'Deurkruk', bedrag: kruk },
@@ -66,9 +68,9 @@ export function deurPrijs(d: DeurVoorPrijs): Prijs {
   return { totaal, regels, zonderKruk: kruk == null }
 }
 
-/** Een complete set zonder kruk en zonder freeswerk: kozijn (met het vierde scharnier bij plafondhoog) plus deurblad. */
+/** Een complete set zonder kruk en zonder freeswerk: kozijn (bij plafondhoog met het vierde scharnier erin) plus deurblad. */
 export const setPrijs = (hoogte: Hoogte, afwerking: 'gegrond' | 'gelakt') =>
-  Math.round((KOZIJN[hoogte] + (hoogte === 'plafond' ? SCHARNIER : 0) + BLAD[hoogte][afwerking]) * 100) / 100
+  Math.round((KOZIJN[hoogte] + BLAD[hoogte][afwerking]) * 100) / 100
 
 /** Laagste prijs voor een complete deur zonder kruk: standaardhoogte, gegrond, zonder freeswerk. */
 export const VANAF = setPrijs('standaard', 'gegrond')

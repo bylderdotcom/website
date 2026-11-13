@@ -20,6 +20,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import { meetConfigurator, meetLead, meet as meetGa } from '../meet'
 import Link from 'next/link'
+import { maandOpties } from '@/lib/plaatsing'
 import { ImageSquare, UploadSimple, Palette, House, Stack, Package, Door, Cube, Check, ArrowRight, Truck, Receipt, Thermometer, Plus, Trash, Info, Sparkle, Armchair, Ticket } from '@phosphor-icons/react'
 import { metRef } from '../aanbreng'
 import {
@@ -658,8 +659,10 @@ function Stalen({ modus, w, kleur, matches, naam, stuur }: {
 
 /* ---------------------------------------------------------------- offerte (app) */
 
+const MAANDEN = maandOpties()
+
 function Offerte({ w, m2, type, naam, stuur, site }: { w: Weergave | null; m2: number; type: boolean; naam?: string; stuur: (b: Record<string, unknown>) => Promise<unknown>; site?: () => Promise<unknown> }) {
-  const [v, setV] = useState({ naam: naam ?? '', email: '', postcode: '', plaats: '', telefoon: '', planning: '', toelichting: '' })
+  const [v, setV] = useState({ naam: naam ?? '', email: '', postcode: '', plaats: '', telefoon: '', plaatsing_van: '', plaatsing_tot: '', toelichting: '' })
   const [akkoord, setAkkoord] = useState(false)
   const [bezig, setBezig] = useState(false)
   const [fout, setFout] = useState('')
@@ -690,11 +693,21 @@ function Offerte({ w, m2, type, naam, stuur, site }: { w: Weergave | null; m2: n
         {site && veld('email', 'E-mail', { type: 'email', autoComplete: 'email' })}
         <div className="gv-velden-rij">{veld('postcode', 'Postcode', { autoComplete: 'postal-code', className: 'kort' })}{veld('plaats', 'Plaats', { autoComplete: 'address-level2' })}</div>
         {veld('telefoon', 'Telefoon (handig voor het inmeten)', { type: 'tel', autoComplete: 'tel' })}
-        <label className="gv-veld"><span>Wanneer?</span>
-          <select value={v.planning} onChange={e => setV({ ...v, planning: e.target.value })}>
-            <option value="">Kies…</option><option>Direct na de oplevering</option><option>Binnen 3 maanden</option><option>Over 3 tot 6 maanden</option><option>Weet ik nog niet</option>
-          </select>
-        </label>
+        {/* De periode van leggen (13-11-2026): daarmee kiest Bylder verwerkers die dan ruimte hebben. */}
+        <div className="gv-velden-rij">
+          <label className="gv-veld"><span>Leggen vanaf</span>
+            <select value={v.plaatsing_van} onChange={e => setV({ ...v, plaatsing_van: e.target.value, plaatsing_tot: v.plaatsing_tot && v.plaatsing_tot < e.target.value ? '' : v.plaatsing_tot })}>
+              <option value="">Weet ik nog niet</option>
+              {MAANDEN.map(m => <option key={m.id} value={m.id}>{m.naam}</option>)}
+            </select>
+          </label>
+          <label className="gv-veld"><span>Uiterlijk</span>
+            <select value={v.plaatsing_tot} disabled={!v.plaatsing_van} onChange={e => setV({ ...v, plaatsing_tot: e.target.value })}>
+              <option value="">Geen einddatum</option>
+              {MAANDEN.filter(m => !v.plaatsing_van || m.id >= v.plaatsing_van).map(m => <option key={m.id} value={m.id}>{m.naam}</option>)}
+            </select>
+          </label>
+        </div>
         <label className="gv-veld"><span>Nog iets dat de verwerker moet weten?</span><textarea rows={3} value={v.toelichting} onChange={e => setV({ ...v, toelichting: e.target.value })} /></label>
       </div>
       <label className="gv-akkoord"><input type="checkbox" checked={akkoord} onChange={e => setAkkoord(e.target.checked)} /><span>Bylder mag mijn aanvraag, naam en contactgegevens delen met de verwerker.</span></label>
