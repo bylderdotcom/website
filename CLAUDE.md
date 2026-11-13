@@ -376,23 +376,28 @@ een kwartier live" zonder `vercel ls website` te checken.
   `FotoVoorNa` (prop `vervolg` met `naam` en `daar`): de foto is een indruk zonder maten en prijs, in de configurator,
   ontwerper of offerte kies je de echte uitvoering en zie je de prijs, met de link erbij. Een nieuwe fototool zonder
   die uitleg is niet af.
-- **3D-aanbesteding: "Eén ontwerp, tot drie offertes" (besluit Daniel, 13-11-2026).** Het idee: zoals Werkspot, maar de
-  bedrijven rekenen allemaal op hetzelfde ontwerp in 3D, met maten en zaaglijst. Eerst voor de kast op maat.
-  **Telling van 13-11-2026** (`feedback-overzicht.yml` met keuze `partners`, `scripts/partners_overzicht.py`, alleen
-  aantallen): 1 partnerbedrijf in de app (kozijnloze deuren, landelijk), 0 voor kast, gietvloer en afwerking; 2 aanvragen,
-  0 uitgezet. **Daarom beloven we geen offertes uit ons eigen netwerk:** de koper nodigt zelf tot drie bedrijven uit die
-  hij kent (bestond al: app `dashboard/offertes/<id>`, `ZelfUitnodigen`); waar wij een partner hebben vult de app aan.
-  Site: `web/app/components/DrieOffertes.tsx` op de kastenpagina's (vervangt daar `EigenVakmanMeekijken`). App: na de
-  aanvraag in de kastontwerper de oproep met link naar `#uitnodigen`, en een teller "x van de 3".
-  **Periode van plaatsen (verzoek Daniel, 13-11-2026):** de kastaanvraag vraagt "Plaatsen vanaf" en "Uiterlijk" (maanden);
-  bewaard in `configuratie.plaatsing` ({van, tot} als JJJJ-MM) en als zin in `planning` (app `src/lib/plaatsing.ts`).
-  **Nog te bouwen:** capaciteit per bedrijf en maand, en daarop doorsturen; dezelfde periode bij gietvloer en afwerking;
-  timmerbedrijven werven via de gids (aanbod op profiel en dashboard).
-  **Ook voor de gietvloer (besluit Daniel, 13-11-2026):** `DrieOffertes soort="gietvloer"` op `/gietvloer/` (vervangt daar
-  `EigenVakmanMeekijken`), de teller in de app ook bij een vlooraanvraag, en de periode "Leggen vanaf / Uiterlijk" in de
-  gietvloerontwerper op de site en in de app (site `web/lib/plaatsing.ts`). **Let op Dr. Schutz:** de ontwerper rekent met
-  hun vloeren en kleuren; een bedrijf dat de koper zelf uitnodigt kan een ander merk aanbieden. De tekst zegt daarom "de
-  kleur die je koos", niet "dezelfde vloer". Niet met Lars afgestemd op 13-11.
+- **3D-aanbesteding: "Eén ontwerp, tot drie offertes" (besluit Daniel, 13-11-2026).** Zoals Werkspot, maar de bedrijven
+  rekenen allemaal op hetzelfde ontwerp in 3D, met maten en zaaglijst. Voor de kast op maat en de gietvloer.
+  **Bylder kiest de bedrijven, de koper nodigt niet zelf uit (besluit Daniel, 13-11-2026):** een gecureerde selectie van
+  hooguit drie, op capaciteit in de gevraagde periode en op expertise van de fabriek of verwerker. Regels in app
+  `src/lib/verdeling.ts` (`voorstelPartners`): actief, doet het product, werkt in de provincie, niet de hele periode vol;
+  volgorde: ruimte boven beperkt, dan passende expertise, dan het kleinste werkgebied. Daniel keurt elk voorstel goed in
+  de admin. Per bedrijf in te vullen in `/admin/partners/<id>`: expertise (`EXPERTISE` per product) en capaciteit per
+  maand (ruimte, beperkt, vol). **Database-stap nodig** (Daniel, handmatig): app
+  `supabase/migrations/20261113120000_partner_capaciteit_expertise.sql`; zonder die stap werkt alles door op product en
+  werkgebied en meldt het partnerformulier dat capaciteit en expertise niet bewaard zijn.
+  **Periode:** de aanvraag vraagt "Plaatsen vanaf / Uiterlijk" (kast) of "Leggen vanaf / Uiterlijk" (gietvloer, site en
+  app), bewaard in `configuratie.plaatsing` ({van, tot} als JJJJ-MM) en als zin in `planning` (app `src/lib/plaatsing.ts`,
+  site `web/lib/plaatsing.ts`).
+  **Zelf uitnodigen is bij kast en gietvloer uit** (app `dashboard/offertes/<id>`: alleen eerder gedane uitnodigingen
+  blijven zichtbaar om in te trekken); bij de andere producten bestaat het nog. Het besluit van 24-10 (koper nodigt zelf
+  bedrijven uit) en het blok `EigenVakmanMeekijken` op de overige pagina's zijn hiermee niet herzien: vraag Daniel.
+  Site: `web/app/components/DrieOffertes.tsx` op de kastenpagina's en `/gietvloer/` (vervangt daar `EigenVakmanMeekijken`).
+  **Telling van 13-11-2026** (`feedback-overzicht.yml` met keuze `partners`, alleen aantallen): 1 partnerbedrijf in de
+  app (kozijnloze deuren, landelijk), 0 voor kast, gietvloer en afwerking; 2 aanvragen, 0 uitgezet. **"Tot drie offertes"
+  is dus pas waar zodra er bedrijven voor kast en vloer in de app staan, met capaciteit en expertise.**
+  **Nog te bouwen:** bedrijven die hun eigen capaciteit bijhouden in de partneromgeving; dezelfde periode bij de
+  afwerking; timmerbedrijven en verwerkers aansluiten.
 - **Bewaking van tools en configurators (besluit Daniel, 13-11-2026: "als hij niet werkt moeten we dat meteen weten").**
   App `src/lib/bewaking.ts`: `meldToolFout(tool, reden)` legt elke fout aan onze kant vast (tabel `trechter`, stap `fout`)
   en mailt Daniel, hooguit één mail per tool per uur. Aangesloten op de fototools, de renders (gietvloer, kast) en de

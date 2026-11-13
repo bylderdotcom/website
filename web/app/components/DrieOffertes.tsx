@@ -1,10 +1,9 @@
-// "Eén ontwerp, tot drie offertes" (13-11-2026, besluit Daniel): de 3D-aanbesteding voor de kast op maat en de gietvloer. De koper
-// nodigt zelf de bedrijven uit die hij kent; ze rekenen allemaal op hetzelfde ontwerp, met dezelfde maten en zaaglijst.
-// Bewust "tot drie" en "die je kent": op 13-11-2026 was er nog geen timmerbedrijf als partner aangesloten, dus wij
-// beloven geen offertes uit ons eigen netwerk. Waar we wel een partner hebben, vult de app aan. Het uitnodigen zelf
-// zit in de app (dashboard/offertes/<id>#uitnodigen); de periode van plaatsen vraagt de aanvraag in de ontwerper.
-// Geen belofte over capaciteit: doorsturen op de planning van bedrijven bestaat nog niet.
-// Vervangt op de kastenpagina's het blok EigenVakmanMeekijken: dat vertelde hetzelfde.
+// "Eén ontwerp, tot drie offertes" (13-11-2026, besluit Daniel): de 3D-aanbesteding voor de kast op maat en de gietvloer.
+// Bylder kiest zelf hooguit drie bedrijven, op capaciteit in de gevraagde periode en op expertise; de koper nodigt
+// niet zelf uit. De bedrijven rekenen allemaal op hetzelfde ontwerp. De selectie staat in de app (src/lib/verdeling.ts),
+// Daniel keurt elk voorstel goed. De periode vraagt de aanvraag in de ontwerper.
+// LET OP: op 13-11-2026 was er nog geen bedrijf voor kast of gietvloer als partner aangesloten. "Tot drie" is dus een
+// belofte die pas waar is zodra er bedrijven met capaciteit en expertise in de app staan.
 
 const INKT = 'rgba(61,46,30,', GROEN = '#3D5A3E'
 type Soort = 'kast' | 'gietvloer'
@@ -14,19 +13,18 @@ const TEKST: Record<Soort, { intro: string; knop: string; punten: [string, strin
     knop: 'Ontwerp je kast en vraag offertes aan',
     punten: [
       ['Hetzelfde ontwerp voor iedereen', 'Elk bedrijf krijgt je kast in 3D, met de maten, de indeling en de zaaglijst. Niemand hoeft te gokken, dus je vergelijkt prijzen voor precies dezelfde kast.'],
-      ['Jij kiest wie meedoet', 'Een timmerman, een interieurbouwer, een keukenzaak: nodig tot drie bedrijven uit die je kent. Ze hebben geen account nodig en zien alleen wat jij deelt.'],
-      ['Geplaatst wanneer het jou past', 'Je geeft aan in welke maanden de kast geplaatst moet worden. Die periode gaat mee met je aanvraag, zodat een bedrijf meteen ziet of het past.'],
+      ['Wij kiezen de bedrijven', 'Je ontwerp gaat naar hooguit drie bedrijven die dit soort kast kunnen maken: gespoten, in fineer, met ronde vormen. Jij hoeft niemand te zoeken.'],
+      ['Geplaatst wanneer het jou past', 'Je geeft aan in welke maanden de kast geplaatst moet worden. Wij kiezen bedrijven die dan ruimte hebben.'],
     ],
   },
-  // Gietvloer (13-11-2026, besluit Daniel). De ontwerper rekent met de vloeren en kleuren van Dr. Schutz; een bedrijf
-  // dat de koper zelf uitnodigt kan een ander merk aanbieden. Daarom "de kleur die je koos" en niet "dezelfde vloer".
+  // Gietvloer (13-11-2026, besluit Daniel): wij kiezen de verwerkers zelf, dus het blijft de vloer uit de ontwerper.
   gietvloer: {
-    intro: 'Vraag je bij drie bedrijven een gietvloer aan, dan rekent elk met eigen maten. Hier werkt het andersom: je kiest je ruimtes en je kleur één keer, en de bedrijven rekenen allemaal op diezelfde aanvraag.',
+    intro: 'Vraag je bij drie verwerkers een gietvloer aan, dan rekent elk met eigen maten. Hier werkt het andersom: je kiest je ruimtes en je kleur één keer, en de verwerkers rekenen allemaal op diezelfde aanvraag.',
     knop: 'Ontwerp je gietvloer en vraag offertes aan',
     punten: [
-      ['Dezelfde aanvraag voor iedereen', 'Elk bedrijf krijgt je ruimtes, je vierkante meters, het type vloer en de kleur die je koos. Zo vergelijk je prijzen voor hetzelfde werk.'],
-      ['Jij kiest wie meedoet', 'Nodig tot drie vloerenbedrijven uit die je kent. Ze hebben geen account nodig en zien alleen wat jij deelt.'],
-      ['Gelegd wanneer het jou past', 'Je geeft aan in welke maanden de vloer gelegd moet worden. Die periode gaat mee met je aanvraag, zodat een bedrijf meteen ziet of het past.'],
+      ['Dezelfde vloer voor iedereen', 'Elke verwerker krijgt je ruimtes, je vierkante meters, het type vloer en de kleur. Zo vergelijk je prijzen voor precies dezelfde vloer.'],
+      ['Wij kiezen de verwerkers', 'Je aanvraag gaat naar hooguit drie verwerkers die de vloer leggen die jij koos. Jij hoeft niemand te zoeken.'],
+      ['Gelegd wanneer het jou past', 'Je geeft aan in welke maanden de vloer gelegd moet worden. Wij kiezen verwerkers die dan ruimte hebben.'],
     ],
   },
 }

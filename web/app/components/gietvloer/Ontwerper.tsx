@@ -693,7 +693,7 @@ function Offerte({ w, m2, type, naam, stuur, site }: { w: Weergave | null; m2: n
         {site && veld('email', 'E-mail', { type: 'email', autoComplete: 'email' })}
         <div className="gv-velden-rij">{veld('postcode', 'Postcode', { autoComplete: 'postal-code', className: 'kort' })}{veld('plaats', 'Plaats', { autoComplete: 'address-level2' })}</div>
         {veld('telefoon', 'Telefoon (handig voor het inmeten)', { type: 'tel', autoComplete: 'tel' })}
-        {/* De periode van leggen (13-11-2026): gaat mee naar de verwerker, en later sturen we daarop door. */}
+        {/* De periode van leggen (13-11-2026): daarmee kiest Bylder verwerkers die dan ruimte hebben. */}
         <div className="gv-velden-rij">
           <label className="gv-veld"><span>Leggen vanaf</span>
             <select value={v.plaatsing_van} onChange={e => setV({ ...v, plaatsing_van: e.target.value, plaatsing_tot: v.plaatsing_tot && v.plaatsing_tot < e.target.value ? '' : v.plaatsing_tot })}>
