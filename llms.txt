@@ -1,6 +1,33 @@
 # Bylder.com
 
-> Bylder is het verticaal geïntegreerde woonplatform van Nederland: advies, ontwerp, inkoop en uitvoering voor kopers van nieuwbouw- en verbouwwoningen komen samen in één woningdossier, in plaats van verdeeld over losse portalen en tussenpartijen. Het platform biedt onafhankelijke kopersbegeleiding, AI offerte-checks (aannemer, keuken, badkamer, verduurzaming), marktprijs-benchmarks per m², collectieve kortingsvouchers bij 60+ woonmerken en een landelijke directory van vakbedrijven. Cijfers op deze site (zoals gemiddelde besparingen en m²-prijzen) komen uit door Bylder geanalyseerde offertes en projecten.
+> Bylder is een Nederlands platform waar kopers van een nieuwbouwwoning hun huis zelf ontwerpen en laten afwerken. Uit de bouwtekening maakt Bylder de woning in 3D. Daarin ontwerpt de koper zijn kozijnloze deuren, kast op maat en gietvloer, met de eigen maten en de prijs erbij; dat ontwerp is meteen de offerteaanvraag. Bylder neemt daarnaast als aannemer de hele afwerking aan (stucwerk, tegelwerk, badkamer, vloeren, deuren, schilderwerk, kasten) in één offerte, en verkoopt een klein assortiment rechtstreeks in de winkel. Ook voor bestaande bouw en renovatie. Alle prijzen op deze pagina zijn indicaties inclusief btw, stand november 2026; de actuele prijs staat op de gelinkte pagina.
+
+## Zelf ontwerpen (gratis, zonder account)
+
+- [Zelf ontwerpen: overzicht](https://www.bylder.com/ontwerpen/): hoe het werkt, van tekening naar ontwerp, offerte en uitvoering
+- [Je woning in 3D](https://www.bylder.com/mijn-woning/): upload de plattegrond van de aannemer; ruimtes, deuren en vierkante meters worden uitgelezen. Er is een voorbeeldwoning om het te proberen
+- [Kozijnloze deuren samenstellen](https://www.bylder.com/kozijnloze-deuren/configurator/): per deur hoogte, kleur of fineer, groefpatroon, draairichting en kruk, in 3D met een prijs per deur. Vanaf ongeveer € 1.258 per deur, exclusief montage (ongeveer 2,5 uur per deur). Bylder maakt de offerte; meer op [kozijnloze deuren](https://www.bylder.com/kozijnloze-deuren/)
+- [Kast op maat ontwerpen](https://www.bylder.com/kasten-op-maat/ontwerpen/): beschrijf de kast of upload een foto; resultaat in 3D met maten, tekening en zaaglijst. Ontwerpen en inmeten zijn gratis. Meer op [kasten op maat](https://www.bylder.com/kasten-op-maat/)
+- [Gietvloer ontwerpen](https://www.bylder.com/gietvloer/ontwerpen/): per ruimte uit de tekening, vier vloeren van Dr. Schutz (Bio Fine, Bio Cement, Bio Lava, Bio Concrete). € 80 tot € 150 per m², minimaal 35 m², tot drie stalen gratis. Meer op [gietvloer](https://www.bylder.com/gietvloer/)
+- [Badkamer zelf ontwerpen](https://www.bylder.com/badkamer-ontwerpen/): badkamer en toilet met maten in de woning in 3D en één offerte uit de tekening. Indicatie € 7.000 tot € 20.000 voor een complete badkamer. De ontwerper in 3D is in de maak
+
+## Afwerking door Bylder (één offerte, één planning, één aanspreekpunt)
+
+- [Nieuwbouw laten afwerken](https://www.bylder.com/nieuwbouw-afwerken/): Bylder neemt de opdracht aan voor de hele afwerking; de offerte komt uit de tekening van de koper. Een offerte aanvragen is gratis; de koper betaalt de prijs in de offerte
+- Per onderdeel: [stucwerk](https://www.bylder.com/nieuwbouw-afwerken/stucwerk/), [tegelwerk](https://www.bylder.com/nieuwbouw-afwerken/tegelwerk/), [sanitair en badkamer](https://www.bylder.com/nieuwbouw-afwerken/sanitair/), [vloeren](https://www.bylder.com/nieuwbouw-afwerken/vloeren/), [binnendeuren](https://www.bylder.com/nieuwbouw-afwerken/binnendeuren/), [schilderwerk](https://www.bylder.com/nieuwbouw-afwerken/schilderwerk/), [kasten](https://www.bylder.com/nieuwbouw-afwerken/kasten/)
+- [Projectkorting](https://www.bylder.com/projectkorting/): korting op de afwerking die stijgt met het aantal woningen in hetzelfde nieuwbouwproject: 4% vanaf 2, 7% vanaf 4, 10% vanaf 6
+- [Nieuwbouwprojecten](https://www.bylder.com/nieuwbouw-project/): een pagina per nieuwbouwproject met oplevering, woningtypen en wat er na de sleutel te regelen is
+
+## Winkel (Bylder is de verkoper, afrekenen zonder account)
+
+- [Winkel](https://www.bylder.com/winkel/): onzichtbare plint, verdekt scharnier en een complete set voor een kozijnloze deur
+- [Kozijnloze deur als set](https://www.bylder.com/winkel/kozijnloze-deur-set/): kozijn met scharnieren en magneetslot plus deurblad. Gegrond € 1.258,40; afgelakt in zes RAL-kleuren € 1.366,09 (standaardhoogte) of € 1.669,80 (plafondhoog); exclusief kruk en montage, vracht € 99 per bestelling
+- [Onzichtbare plint](https://www.bylder.com/winkel/onzichtbare-plint/) en [verdekt scharnier DX 38](https://www.bylder.com/winkel/verdekt-scharnier-dx-38/)
+- Productlijst met actuele prijzen (XML): https://app.bylder.com/api/winkel/feed.xml
+
+## Zie het in je eigen foto (een indruk, zonder maten en prijs)
+
+- Een foto van de eigen ruimte uploaden en dezelfde ruimte zien met een [gietvloer](https://www.bylder.com/gietvloer/), een [deur zonder kozijn](https://www.bylder.com/kozijnloze-deuren/), een [kast op maat](https://www.bylder.com/kasten-op-maat/), [andere wandkleuren](https://www.bylder.com/nieuwbouw-afwerken/schilderwerk/) of [andere tegels](https://www.bylder.com/nieuwbouw-afwerken/tegelwerk/). Gratis, zonder account
 
 ## Kennisbank (naslagwerk)
 
@@ -45,7 +72,9 @@
 ## Vakbedrijven & aanbod
 
 - [Aannemers per plaats](https://www.bylder.com/aannemer/) — idem voor schilder, loodgieter, elektricien, stukadoor, badkamerspecialist e.a.
-- [Kortingsvouchers en showroomsales](https://www.bylder.com/showroomsale/) bij 60+ woonmerken
+- [Kortingsvouchers](https://www.bylder.com/vouchers/) en [showroomsales](https://www.bylder.com/showroomsale/) bij ruim 50 woonmerken
+- [Showrooms om te bezoeken](https://www.bylder.com/showrooms/), per producttype
+- [Bedrijf aanmelden voor de gids](https://www.bylder.com/bedrijf-aanmelden/): gratis vermelding voor vakbedrijven
 
 ## Deelnemen (zakelijk)
 

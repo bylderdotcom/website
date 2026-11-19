@@ -443,3 +443,11 @@ een kwartier live" zonder `vercel ls website` te checken.
   bedrijven staan. Een plaatspagina ontstaat bij de eerste aanmelding in die plaats (`PLAATS_BIJ_AANMELDING` in
   `scripts/profiel_toevoegen.py`). In het aanmeldformulier staat Kitwerk als vak; in de admin kies je `kitwerk` als gids.
   Niet in het menu of de footer zolang de rubriek klein is.
+- **Agents als klant (B2A, 19-11-2026, naar aanleiding van a16z "Welcome to the B2A economy").** Vindbaar zijn in AI is
+  stap één; de volgende is dat een agent bij ons kan vergelijken en afronden. Stand: AI-bots zijn welkom (`robots.txt`),
+  `llms.txt` beschrijft sinds 19-11 het huidige aanbod met prijzen (bij elke prijswijziging of nieuw product bijwerken),
+  de winkel heeft een productlijst en afrekenen zonder account. **Nog te doen:** Bylder claimen in ChatGPT ("Businesses
+  in ChatGPT", door Daniel; productlijst vraagt o.a. item_id, title, description, url, brand, seller_name, image_url,
+  price, availability; eerst de voorwaarden lezen, volgens secundaire bronnen gaan die boven een opt-out voor
+  datamining); prijzen van deuren, gietvloer en afwerking opvraagbaar maken op één adres; daarna een koppeling waarmee
+  een agent een offerte kan aanvragen.
