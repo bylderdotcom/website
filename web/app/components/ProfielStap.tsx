@@ -80,6 +80,14 @@ const VAKKEN: Record<string, Vak> = {
       'Hoe werkt meerwerk: vooraf schriftelijk akkoord?',
       'Is er een planning met opleverdatum, en wat gebeurt bij uitloop?'],
   },
+  kitwerk: {
+    kop: 'Kitwerk is de laatste stap. Is de rest al geregeld?',
+    tekst: 'Tegelwerk, badkamer, vloeren, plinten en schilderwerk: Bylder maakt er één offerte voor, met één planning en één aanspreekpunt. Het kitwerk zit daarin.',
+    onderdeel: 'tegelwerk', wie: 'een kitbedrijf',
+    vragen: ['Is de prijs per strekkende meter, en zit oude kit verwijderen erin?',
+      'Welke kit komt waar: sanitairkit in natte hoeken, overschilderbaar langs plinten?',
+      'Hoe lang moet de kit uitharden voordat je de ruimte gebruikt?'],
+  },
   elektricien: {
     kop: 'Na de elektra komt de afwerking.',
     tekst: 'Stucwerk, schilderwerk, vloeren en deuren: Bylder maakt er één offerte voor, met één planning en één aanspreekpunt. Leg hem naast wat je al hebt.',

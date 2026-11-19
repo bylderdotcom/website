@@ -83,6 +83,7 @@ export const ONDERWERPEN: Record<string, Aanbod> = {
     aanleiding: 'De elektricien legt de punten aan, de lampen koop je zelf. Met een gratis Bylder-account krijg je ledenkorting bij deze merken:' },
   'badkamer': { stap: 'korting', categorieen: ['Sanitair', 'Wandtegels', 'Vloertegels'], titel: 'Korting op sanitair en tegels',
     aanleiding: 'Sanitair en tegels zijn vaak de helft van de badkamerrekening. Met een gratis Bylder-account krijg je ledenkorting bij deze zaken:' },
+  'kitwerk': { stap: 'plinten', aanleiding: 'Een plint die je moet afkitten, of een plint die in de wand verdwijnt? Een onzichtbare plint gaat vóór de stukadoor de wand in en heeft geen kitnaad langs de wand. Vraag de offerte aan voordat het stucwerk is ingepland.' },
   'stukadoor': { stap: 'plinten', aanleiding: 'Komt de stukadoor? Dan is dit het moment voor een onzichtbare plint en een kozijnloze deur: allebei gaan ze vóór het stucwerk de wand in. Vraag de offerte aan voordat het stucwerk is ingepland.' },
   'dakkapel': { stap: 'kast', aanleiding: 'Een zolder met dakkapel wordt pas een kamer met genoeg bergruimte. Ontwerp een kast op maat vanaf een voorbeeldfoto, zie hem in 3D en vraag een offerte aan bij een timmerbedrijf.' },
 }

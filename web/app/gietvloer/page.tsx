@@ -15,7 +15,16 @@ import KamerFoto from '../components/gietvloer/KamerFoto'
 
 const URL = 'https://www.bylder.com/gietvloer/'
 const ONTWERPER = '/gietvloer/ontwerpen/'
-const FOTO = '/img/gietvloer/dr-schutz-gietvloer-ruimte.jpg'
+const FOTO = '/img/gietvloer/dr-schutz/bio-cement-serra-1.jpg'
+
+// Woningen met een gietvloer van Dr. Schutz (beelden van Dr. Schutz, met toestemming, 19-11-2026; Drive-map "Dr. Schutz").
+// Nog niet geplaatst: drie foto's van Bio Fine in Oxford (elk 17 MB, te groot om op te halen).
+const THUIS = [
+  { src: '/img/gietvloer/dr-schutz/bio-cement-serra-2.webp', type: 'Bio Cement', kleur: 'Serra', alt: 'Woonkamer met een lichte gietvloer Bio Cement in de kleur Serra, een witte bank en een donkere houten salontafel' },
+  { src: '/img/gietvloer/dr-schutz/bio-cement-serra-3.webp', type: 'Bio Cement', kleur: 'Serra', alt: 'Eetkamer en keuken met een doorlopende gietvloer Bio Cement in de kleur Serra en een notenhouten kastenwand' },
+  { src: '/img/gietvloer/dr-schutz/bio-cement-serra-4.webp', type: 'Bio Cement', kleur: 'Serra', alt: 'Keukeneiland in notenhout op een gietvloer Bio Cement in de kleur Serra' },
+  { src: '/img/gietvloer/dr-schutz/bio-lava-shard-1.webp', type: 'Bio Lava', kleur: 'Shard', alt: 'Woonkamer met hoge ramen en een grijsbruine gietvloer Bio Lava in de kleur Shard' },
+]
 
 export const metadata: Metadata = {
   title: `Gietvloer: prijs per m², vier soorten en je kleur in je eigen woning | Bylder`,
@@ -70,6 +79,8 @@ export default function GietvloerPagina() {
     <main style={{ maxWidth: 1180, margin: '0 auto', padding: '28px 16px 72px', color: '#1A1208' }}>
       {ld.map((b, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(b) }} />)}
       <style>{`.gv-held{display:grid;gap:32px;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center}
+        .gv-thuis{list-style:none;padding:0;margin:0;display:grid;gap:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+        @media(max-width:900px){.gv-thuis{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
         .gv-vier{list-style:none;padding:0;margin:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
         .gv-vier a{display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid ${INKT}0.12);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit}
         .gv-rij{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1.4fr);gap:8px 20px;padding:14px 0;border-top:${LIJN};align-items:baseline}
@@ -96,9 +107,9 @@ export default function GietvloerPagina() {
           <p style={{ fontSize: 14, color: `${INKT}0.65)`, margin: '14px 0 0' }}>Gratis, zonder account. Inclusief btw.</p>
         </div>
         <figure style={{ margin: 0 }}>
-          <img src={FOTO} alt="Lichtgrijze gietvloer zonder naden in een ruimte met hoge ramen en gele fauteuils" width={1200} height={900} fetchPriority="high" decoding="async"
+          <img src={FOTO} srcSet="/img/gietvloer/dr-schutz/bio-cement-serra-1-sm.jpg 800w, /img/gietvloer/dr-schutz/bio-cement-serra-1.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="Eetkamer en keuken met een lichte gietvloer zonder naden die doorloopt onder een stalen deur" width={1600} height={1200} fetchPriority="high" decoding="async"
             style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '4 / 3', objectFit: 'cover', borderRadius: 18 }} />
-          <figcaption style={{ fontSize: 13, color: `${INKT}0.6)`, marginTop: 8 }}>Gietvloer van Dr. Schutz</figcaption>
+          <figcaption className="maat" style={{ fontSize: 13, color: `${INKT}0.6)`, marginTop: 8 }}>Bio Cement, kleur Serra · Dr. Schutz</figcaption>
         </figure>
       </div>
 
@@ -135,6 +146,20 @@ export default function GietvloerPagina() {
           )
         })}
       </ul>
+
+      <h2 style={H2}>Zo ligt hij in huis</h2>
+      <p style={P}>Woningen met een gietvloer van Dr. Schutz. De vloer loopt door van kamer naar keuken, zonder naad en zonder drempel.</p>
+      <ul className="gv-thuis">
+        {THUIS.map(f => (
+          <li key={f.src}>
+            <figure style={{ margin: 0 }}>
+              <img src={f.src} alt={f.alt} loading="lazy" decoding="async" width={900} height={1200} style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '3 / 4', objectFit: 'cover', borderRadius: 14 }} />
+              <figcaption className="maat" style={{ fontSize: 13, color: `${INKT}0.65)`, marginTop: 8 }}>{f.type}, kleur {f.kleur}</figcaption>
+            </figure>
+          </li>
+        ))}
+      </ul>
+      <p style={{ margin: '18px 0 0' }}><a href={ONTWERPER} data-meet="gietvloer-thuis" style={{ color: GROEN, fontWeight: 800, textDecoration: 'underline', textUnderlineOffset: 3 }}>Kies deze vloer voor je eigen kamers →</a></p>
 
       <h2 id="prijs" style={{ ...H2, scrollMarginTop: 120 }}>Wat kost een gietvloer?</h2>
       <p style={P}>Indicatie per m², inclusief btw. Een vloer kleiner dan {MIN_M2} m² wordt als {MIN_M2} m² gerekend. De verwerker meet in voordat je een offerte krijgt.</p>
