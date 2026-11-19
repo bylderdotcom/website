@@ -3,7 +3,11 @@
   "installCommand": "npm install && npm install --prefix web",
   "buildCommand": "bash web/build.sh",
   "ignoreCommand": "bash scripts/vercel-ignore.sh",
-  "git": { "deploymentEnabled": { "claude/**": false } },
+  "git": {
+    "deploymentEnabled": {
+      "claude/**": false
+    }
+  },
   "outputDirectory": "web/out",
   "redirects": [
     {
@@ -1166,6 +1170,96 @@
     {
       "source": "/schilder/bedrijf/schildersbedrijf-af-yaow1s",
       "destination": "/schilder/landgraaf/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-nieuwe-koepel-fase-2b-scherpenzeel/",
+      "destination": "/nieuwbouw-project/de-nieuwe-koepel-scherpenzeel/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-nieuwe-koepel-fase-4a-scherpenzeel/",
+      "destination": "/nieuwbouw-project/de-nieuwe-koepel-scherpenzeel/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-grassen-fase-1a-heusden/",
+      "destination": "/nieuwbouw-project/de-grassen-heusden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-grassen-fase-2-heusden/",
+      "destination": "/nieuwbouw-project/de-grassen-heusden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/waterrijk-fase-1-dronten/",
+      "destination": "/nieuwbouw-project/waterrijk-dronten/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/waterrijk-fase-2a-dronten/",
+      "destination": "/nieuwbouw-project/waterrijk-dronten/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/waterrijk-fase-2b-dronten/",
+      "destination": "/nieuwbouw-project/waterrijk-dronten/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zwembadweg-fase-1-meierijstad/",
+      "destination": "/nieuwbouw-project/zwembadweg-meierijstad/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/zwembadweg-fase-2-meierijstad/",
+      "destination": "/nieuwbouw-project/zwembadweg-meierijstad/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/de-glasfabriek-kaft-fase-2-schiedam/",
+      "destination": "/nieuwbouw-project/de-glasfabriek-kaft-schiedam/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/droomweide-fase-3b-vijfheerenlanden/",
+      "destination": "/nieuwbouw-project/droomweide-vijfheerenlanden/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/waelrijk-fase-3-westland/",
+      "destination": "/nieuwbouw-project/waelrijk-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/waelrijk-fase-4-westland/",
+      "destination": "/nieuwbouw-project/waelrijk-westland/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/havenkade-watervillas-libera-fase-2-dronten/",
+      "destination": "/nieuwbouw-project/havenkade-watervillas-libera-dronten/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/parkzijde-fase-1-arnhem/",
+      "destination": "/nieuwbouw-project/parkzijde-arnhem/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/parkzijde-fase-2-arnhem/",
+      "destination": "/nieuwbouw-project/parkzijde-arnhem/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/scarlet-fase-1-nijmegen/",
+      "destination": "/nieuwbouw-project/scarlet-nijmegen/",
+      "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/scarlet-fase-2-nijmegen/",
+      "destination": "/nieuwbouw-project/scarlet-nijmegen/",
       "permanent": true
     }
   ],
