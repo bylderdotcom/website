@@ -20,7 +20,7 @@ const PIJL: React.CSSProperties = { color: GROEN, fontWeight: 800, fontSize: 15.
 
 export const metadata: Metadata = {
   title: 'AI-assistent voor je nieuwbouwwoning: Bylder regelt | Bylder',
-  description: 'Een AI-assistent die je nieuwbouwwoning kent: je ruimtes, vierkante meters, deuren en opleverdatum. Hij zoekt uit wat er te regelen is en zet het klaar; jij keurt goed. Gratis.',
+  description: 'Een AI-assistent die je nieuwbouwwoning kent: je ruimtes, vierkante meters, deuren en opleverdatum. Hij zoekt uit wat er te regelen is en zet het klaar; jij keurt goed. Ook voor verbouwen en renoveren. Gratis.',
   alternates: { canonical: URL },
   openGraph: { title: 'Bylder regelt: de assistent die je nieuwbouwwoning kent', description: 'Hij kent je woning uit je bouwtekening, zet offertes en ontwerpen klaar, en jij keurt goed.', url: URL, type: 'website', images: [{ url: 'https://www.bylder.com/img/og/mijn-woning.jpg', width: 1200, height: 630, alt: 'Voorbeeldwoning als maquette, van bovenaf' }] },
 }
@@ -162,6 +162,18 @@ export default function BylderRegeltPage() {
               <a href="/mijn-woning/?voorbeeld" style={PIJL}>Bekijk de voorbeeldwoning in 3D &rarr;</a>
             </div>
             <Maquette accent="geen" bijschrift="Voorbeeldwoning, begane grond" />
+          </div>
+
+          <h2 style={H2}>Ook voor een woning die je verbouwt of renoveert</h2>
+          <div className="br-twee">
+            <div style={{ borderTop: LIJN, padding: '16px 0 10px' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: '0 0 6px' }}>Bestaande woning</h3>
+              <p style={{ ...P, fontSize: 15.5, margin: 0 }}>Hij begint bij de staat van het huis: bouwjaar, energielabel en wat er al verbouwd is. Heb je een plattegrond, dan leest hij die net zo in als een bouwtekening. Zonder plattegrond geef je de maten zelf door.</p>
+            </div>
+            <div style={{ borderTop: LIJN, padding: '16px 0 10px' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: '0 0 6px' }}>Renovatie</h3>
+              <p style={{ ...P, fontSize: 15.5, margin: 0 }}>Hij zet eerst de volgorde op een rij: casco, dan installaties, dan afbouw. De offerte voor de afwerking werkt hetzelfde als bij nieuwbouw. Het advies over meerwerk is er alleen voor nieuwbouw.</p>
+            </div>
           </div>
 
           <h2 style={H2}>Wat hij niet doet</h2>
