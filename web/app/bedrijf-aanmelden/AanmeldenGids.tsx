@@ -10,7 +10,7 @@ const API = process.env.NEXT_PUBLIC_BEDRIJF_API ?? 'https://app.bylder.com/api/b
 const INKT = 'rgba(61,46,30,'
 const GROEN = '#3D5A3E'
 const VAKKEN: [string, string][] = [['aannemer', 'Aannemer'], ['badkamer', 'Badkamer'], ['dakkapel', 'Dakkapel'], ['elektricien', 'Elektricien'],
-  ['gietvloer', 'Gietvloer'], ['loodgieter', 'Loodgieter'], ['schilder', 'Schilder'], ['stukadoor', 'Stukadoor'], ['tegelzetter', 'Tegelzetter'],
+  ['gietvloer', 'Gietvloer'], ['loodgieter', 'Loodgieter'], ['schilder', 'Schilder'], ['stukadoor', 'Stukadoor'], ['tegelzetter', 'Tegelzetter'], ['kitwerk', 'Kitwerk'],
   ['vloeren', 'Vloeren'], ['binnendeuren', 'Binnendeuren'], ['kasten', 'Kasten en timmerwerk'], ['keuken', 'Keuken'], ['anders', 'Anders']]
 
 const veld: React.CSSProperties = { width: '100%', boxSizing: 'border-box', padding: '11px 12px', borderRadius: 9, border: `1.5px solid ${INKT}0.16)`, fontSize: 15, fontFamily: 'inherit', color: '#1A1208', background: '#fff' }

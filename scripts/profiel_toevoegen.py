@@ -32,8 +32,11 @@ from profiel_verwijderen import schrijf  # noqa: E402
 ENKELVOUD = {
     'aannemer': 'aannemer', 'badkamer': 'badkamerspecialist', 'dakkapel': 'dakkapelspecialist',
     'elektricien': 'elektricien', 'gietvloer': 'gietvloerspecialist', 'loodgieter': 'loodgieter',
-    'schilder': 'schilder', 'stukadoor': 'stukadoor',
+    'schilder': 'schilder', 'stukadoor': 'stukadoor', 'kitwerk': 'kitbedrijf',
 }
+# Rubrieken zonder ingelezen bedrijvenbestand: een plaatspagina ontstaat bij de eerste aanmelding in die plaats.
+PLAATS_BIJ_AANMELDING = {'kitwerk'}
+MEERVOUD = {'kitwerk': 'Kitbedrijven'}
 
 
 def slugify(s):
@@ -86,6 +89,16 @@ def voeg_toe(r):
         return False, f'{naam}: staat er al'
     city_slug = slugify(stad)
     stadje = cities.get(city_slug)
+    if not stadje and vak in PLAATS_BIJ_AANMELDING and city_slug:
+        stadje = cities[city_slug] = {'city': stad, 'city_slug': city_slug, 'companies': [], 'template': 'default'}
+        mv = MEERVOUD[vak]
+        pages.append({
+            'slug': city_slug, 'file': f'{vak}/{city_slug}/index.html', 'path': f'/{vak}/{city_slug}/',
+            'title': f'{mv} in {esc(stad)} | Bylder',
+            'description': f'{mv} in en rond {esc(stad)} die zich bij Bylder hebben aangemeld, met website en telefoon. Plus waar je op let bij kitwerk.',
+            'og_type': 'article', 'robots': 'noindex,follow', 'template': 'default', 'footer': 'default', 'aside': None,
+            'ldjson': [], 'ldjson_sep': '\n', 'content_kind': 'city',
+        })
     if not stadje:
         return False, f'{naam}: plaats "{stad}" heeft nog geen pagina bij {vak}'
     stad = stadje.get('city') or stad

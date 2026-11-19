@@ -1,0 +1,18 @@
+[
+ {
+  "slug": "index",
+  "file": "kitwerk/index.html",
+  "path": "/kitwerk/",
+  "title": "Kitwerk: wanneer, welke kit en kitbedrijven per plaats | Bylder",
+  "description": "Kitwerk is de laatste stap van je afwerking. Wanneer je laat kitten, welke kit waar hoort, waar je op let en welke kitbedrijven zich bij Bylder hebben aangemeld.",
+  "og_type": "article",
+  "robots": "noindex,follow",
+  "template": "default",
+  "footer": "default",
+  "aside": null,
+  "ldjson": [
+   "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Wanneer laat je kitten?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Als laatste stap van de afwerking: na het tegelwerk, het schilderwerk en het plaatsen van plinten en sanitair. In een badkamer vóór je hem in gebruik neemt, want kit moet eerst uitharden.\"}}, {\"@type\": \"Question\", \"name\": \"Wat is het verschil tussen sanitairkit en acrylaatkit?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Sanitairkit is siliconenkit: blijvend elastisch en waterdicht, voor douche, bad, wastafel en aanrecht. Je kunt hem niet overschilderen. Acrylaatkit is overschilderbaar en bedoeld voor naden langs plinten, kozijnen en plafonds in droge ruimtes.\"}}, {\"@type\": \"Question\", \"name\": \"Hoe wordt kitwerk afgerekend?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Meestal per strekkende meter, soms met een starttarief of voorrijkosten. Vraag of het verwijderen van oude kit en het schoonmaken van de naad in de prijs zitten; dat is vaak het meeste werk.\"}}]}"
+  ],
+  "ldjson_sep": "\n"
+ }
+]

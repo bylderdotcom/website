@@ -437,3 +437,9 @@ een kwartier live" zonder `vercel ls website` te checken.
   https://claude.ai/artifact/NgSYbFCLh3wMxcZTYzExNx. Uitgangspunt: regels beslissen, de AI legt uit; een vakman kijkt
   elk ontwerp na voor bestelling of uitvoering, en elke correctie wordt een nieuwe regel.
 - **Gedaan (Daniel, 13-11-2026):** de databasestap voor capaciteit en expertise van partners is uitgevoerd in Supabase.
+- **Rubriek kitwerk in de gids (besluit Daniel, 19-11-2026):** `/kitwerk/`, toegevoegd na de eerste aanmelding van een
+  kitbedrijf. Zelfde opbouw als de andere rubrieken (`web/lib/kitwerk.ts`, `data/clusters/kitwerk/`,
+  `templates/clusters/kitwerk/`), maar zonder prijzen: er is geen benchmark voor kitwerk. Alles op noindex tot er genoeg
+  bedrijven staan. Een plaatspagina ontstaat bij de eerste aanmelding in die plaats (`PLAATS_BIJ_AANMELDING` in
+  `scripts/profiel_toevoegen.py`). In het aanmeldformulier staat Kitwerk als vak; in de admin kies je `kitwerk` als gids.
+  Niet in het menu of de footer zolang de rubriek klein is.
