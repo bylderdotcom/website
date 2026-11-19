@@ -451,3 +451,13 @@ een kwartier live" zonder `vercel ls website` te checken.
   price, availability; eerst de voorwaarden lezen, volgens secundaire bronnen gaan die boven een opt-out voor
   datamining); prijzen van deuren, gietvloer en afwerking opvraagbaar maken op één adres; daarna een koppeling waarmee
   een agent een offerte kan aanvragen.
+- **Bylder als agent voor de nieuwbouwkoper (besluit Daniel, 19-11-2026).** Niet alleen klant worden van andermans
+  agent, maar zelf de agent zijn. In de app bestaat hij al: "Bylder regelt" in het dashboard (app `/api/agent`,
+  `src/lib/agent/`). Sinds 19-11 leest hij de woning in 3D en de lopende aanvragen, kent hij wat Bylder zelf levert, en
+  verstuurt een goedgekeurd voorstel van het type offerte een aanvraag voor de afwerking (`src/lib/agent/uitvoeren.ts`,
+  via dezelfde weg als het formulier op de site). **Wat hij over zichzelf zegt (besluit Daniel):** "Dit kan Bylder voor
+  je doen, dit is de prijs, en je kunt het naast een andere offerte leggen." Hij legt niet uit waar Bylder aan verdient
+  en noemt zich niet onafhankelijk. Hij voert nooit zelf uit: de koper drukt op de knop. **Volgende handelingen, in
+  deze volgorde:** rekenen met onze prijzen (deuren, vloer, afwerking), deadlines bewaken en er zelf over beginnen, de
+  keuzelijst van de aannemer nalopen; daarna dezelfde handelingen openstellen voor agents van anderen.
+  Nog na te lopen: op de site staat op plekken "onafhankelijk" (onder meer in `llms.txt` en de kopersbegeleiding).
