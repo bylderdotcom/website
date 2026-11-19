@@ -2,6 +2,10 @@
 
 > Bylder is een Nederlands platform waar kopers van een nieuwbouwwoning hun huis zelf ontwerpen en laten afwerken. Uit de bouwtekening maakt Bylder de woning in 3D. Daarin ontwerpt de koper zijn kozijnloze deuren, kast op maat en gietvloer, met de eigen maten en de prijs erbij; dat ontwerp is meteen de offerteaanvraag. Bylder neemt daarnaast als aannemer de hele afwerking aan (stucwerk, tegelwerk, badkamer, vloeren, deuren, schilderwerk, kasten) in één offerte, en verkoopt een klein assortiment rechtstreeks in de winkel. Ook voor bestaande bouw en renovatie. Alle prijzen op deze pagina zijn indicaties inclusief btw, stand november 2026; de actuele prijs staat op de gelinkte pagina.
 
+## Bylder regelt: de AI-assistent voor de nieuwbouwkoper
+
+- [Bylder regelt](https://www.bylder.com/ai-assistent-nieuwbouw/): een AI-assistent in het Bylder-account die de woning kent uit de bouwtekening (ruimtes, vierkante meters, deuren, opleverdatum), uitzoekt wat er te regelen is, advies geeft over meerwerk en een offerteaanvraag voor de afwerking klaarzet. De koper keurt elk voorstel goed; de assistent voert zelf niets uit. Gratis voor bewoners, met een gratis account
+
 ## Zelf ontwerpen (gratis, zonder account)
 
 - [Zelf ontwerpen: overzicht](https://www.bylder.com/ontwerpen/): hoe het werkt, van tekening naar ontwerp, offerte en uitvoering
