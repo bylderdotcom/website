@@ -457,7 +457,9 @@ een kwartier live" zonder `vercel ls website` te checken.
   verstuurt een goedgekeurd voorstel van het type offerte een aanvraag voor de afwerking (`src/lib/agent/uitvoeren.ts`,
   via dezelfde weg als het formulier op de site). **Wat hij over zichzelf zegt (besluit Daniel):** "Dit kan Bylder voor
   je doen, dit is de prijs, en je kunt het naast een andere offerte leggen." Hij legt niet uit waar Bylder aan verdient
-  en noemt zich niet onafhankelijk. Hij voert nooit zelf uit: de koper drukt op de knop. **Volgende handelingen, in
-  deze volgorde:** rekenen met onze prijzen (deuren, vloer, afwerking), deadlines bewaken en er zelf over beginnen, de
+  en noemt zich niet onafhankelijk. Hij voert nooit zelf uit: de koper drukt op de knop. **Rekenen met onze prijzen (19-11-2026):** app `src/lib/agent/rekenen.ts`,
+  met de bedragen uit de winkel (deuren), de gietvloergegevens en de prijsbenchmark; stucwerk en schilderwerk alleen
+  met m² wand van de koper. **Volgende handelingen, in
+  deze volgorde:** deadlines bewaken en er zelf over beginnen, de
   keuzelijst van de aannemer nalopen; daarna dezelfde handelingen openstellen voor agents van anderen.
   Nog na te lopen: op de site staat op plekken "onafhankelijk" (onder meer in `llms.txt` en de kopersbegeleiding).
