@@ -1,5 +1,5 @@
 {
- "gemeten_op": "2026-11-19",
+ "gemeten_op": "2026-11-20",
  "regios": {
   "drenthe": {
    "niveau": "provincie",
@@ -9,21 +9,21 @@
   },
   "flevoland": {
    "niveau": "provincie",
-   "projecten": 44,
+   "projecten": 47,
    "woningen": 780,
    "bekend": 24
   },
   "friesland": {
    "niveau": "provincie",
-   "projecten": 35,
+   "projecten": 36,
    "woningen": 783,
    "bekend": 27
   },
   "gelderland": {
    "niveau": "provincie",
-   "projecten": 179,
-   "woningen": 6717,
-   "bekend": 87
+   "projecten": 194,
+   "woningen": 7046,
+   "bekend": 90
   },
   "groningen": {
    "niveau": "gemeente",
@@ -40,28 +40,28 @@
   },
   "noord-brabant": {
    "niveau": "provincie",
-   "projecten": 184,
-   "woningen": 11004,
-   "bekend": 111
+   "projecten": 185,
+   "woningen": 11014,
+   "bekend": 112
   },
   "noord-holland": {
    "niveau": "provincie",
-   "projecten": 233,
-   "woningen": 11776,
-   "bekend": 123
+   "projecten": 238,
+   "woningen": 11843,
+   "bekend": 124
   },
   "overijssel": {
    "niveau": "provincie",
-   "projecten": 135,
-   "woningen": 2198,
-   "bekend": 59
+   "projecten": 136,
+   "woningen": 2278,
+   "bekend": 60
   },
   "utrecht": {
    "niveau": "gemeente",
    "provincie": "utrecht",
-   "projecten": 44,
-   "woningen": 1698,
-   "bekend": 24
+   "projecten": 46,
+   "woningen": 1808,
+   "bekend": 26
   },
   "zeeland": {
    "niveau": "provincie",
@@ -71,9 +71,9 @@
   },
   "zuid-holland": {
    "niveau": "provincie",
-   "projecten": 250,
-   "woningen": 9999,
-   "bekend": 137
+   "projecten": 251,
+   "woningen": 10053,
+   "bekend": 138
   },
   "assen": {
    "niveau": "gemeente",
@@ -113,14 +113,14 @@
   "almere": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 24,
+   "projecten": 25,
    "woningen": 341,
    "bekend": 7
   },
   "dronten": {
    "niveau": "gemeente",
    "provincie": "flevoland",
-   "projecten": 15,
+   "projecten": 17,
    "woningen": 415,
    "bekend": 15
   },
@@ -162,7 +162,7 @@
   "leeuwarden": {
    "niveau": "gemeente",
    "provincie": "friesland",
-   "projecten": 20,
+   "projecten": 21,
    "woningen": 617,
    "bekend": 19
   },
@@ -309,9 +309,16 @@
   "harderwijk": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 7,
-   "woningen": 213,
-   "bekend": 3
+   "projecten": 8,
+   "woningen": 513,
+   "bekend": 4
+  },
+  "heerde": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 2,
+   "woningen": 6,
+   "bekend": 1
   },
   "lingewaard": {
    "niveau": "gemeente",
@@ -351,9 +358,9 @@
   "nijmegen": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 26,
-   "woningen": 2181,
-   "bekend": 17
+   "projecten": 30,
+   "woningen": 2204,
+   "bekend": 18
   },
   "nunspeet": {
    "niveau": "gemeente",
@@ -379,7 +386,7 @@
   "overbetuwe": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 2,
+   "projecten": 3,
    "woningen": 38,
    "bekend": 1
   },
@@ -411,10 +418,17 @@
    "woningen": 480,
    "bekend": 2
   },
+  "tiel": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
+  },
   "veenendaal": {
    "niveau": "gemeente",
    "provincie": "utrecht",
-   "projecten": 17,
+   "projecten": 20,
    "woningen": 153,
    "bekend": 9
   },
@@ -435,9 +449,16 @@
   "west-betuwe": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 3,
+   "projecten": 4,
    "woningen": 64,
    "bekend": 3
+  },
+  "westervoort": {
+   "niveau": "gemeente",
+   "provincie": "gelderland",
+   "projecten": 1,
+   "woningen": 0,
+   "bekend": 0
   },
   "wijchen": {
    "niveau": "gemeente",
@@ -463,7 +484,7 @@
   "zevenaar": {
    "niveau": "gemeente",
    "provincie": "gelderland",
-   "projecten": 6,
+   "projecten": 7,
    "woningen": 0,
    "bekend": 0
   },
@@ -806,9 +827,9 @@
   "oss": {
    "niveau": "gemeente",
    "provincie": "noord-brabant",
-   "projecten": 7,
-   "woningen": 864,
-   "bekend": 6
+   "projecten": 8,
+   "woningen": 874,
+   "bekend": 7
   },
   "roosendaal": {
    "niveau": "gemeente",
@@ -1016,7 +1037,7 @@
   "hilversum": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 4,
+   "projecten": 5,
    "woningen": 32,
    "bekend": 1
   },
@@ -1093,21 +1114,21 @@
   "wormerland": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 3,
-   "woningen": 201,
-   "bekend": 3
+   "projecten": 4,
+   "woningen": 268,
+   "bekend": 4
   },
   "zaandam": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 3,
+   "projecten": 4,
    "woningen": 34,
    "bekend": 2
   },
   "zaanstad": {
    "niveau": "gemeente",
    "provincie": "noord-holland",
-   "projecten": 17,
+   "projecten": 18,
    "woningen": 1203,
    "bekend": 9
   },
@@ -1198,9 +1219,9 @@
   "oldenzaal": {
    "niveau": "gemeente",
    "provincie": "overijssel",
-   "projecten": 2,
-   "woningen": 14,
-   "bekend": 1
+   "projecten": 3,
+   "woningen": 94,
+   "bekend": 2
   },
   "ommen": {
    "niveau": "gemeente",
@@ -1541,9 +1562,9 @@
   "lansingerland": {
    "niveau": "gemeente",
    "provincie": "zuid-holland",
-   "projecten": 3,
-   "woningen": 203,
-   "bekend": 2
+   "projecten": 4,
+   "woningen": 257,
+   "bekend": 3
   },
   "leiden": {
    "niveau": "gemeente",

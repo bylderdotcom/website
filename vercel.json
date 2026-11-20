@@ -1261,6 +1261,11 @@
       "source": "/nieuwbouw-project/scarlet-fase-2-nijmegen/",
       "destination": "/nieuwbouw-project/scarlet-nijmegen/",
       "permanent": true
+    },
+    {
+      "source": "/nieuwbouw-project/silhouet-appartementen-fase-2-wormerland/",
+      "destination": "/nieuwbouw-project/silhouet-appartementen-wormerland/",
+      "permanent": true
     }
   ],
   "rewrites": [

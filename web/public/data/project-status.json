@@ -495,6 +495,14 @@
 "panden_opgeleverd": 7,
 "gemeten": "2026-11-15"
 },
+"cix-theatre-utrecht": {
+"naam": "Cix Theatre",
+"oplevering": "rond 2026",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
 "clarissenhof-tilburg": {
 "naam": "Clarissenhof",
 "oplevering": "tussen 2027 en 2028",
@@ -1214,6 +1222,14 @@
 "in_aanbouw": 30,
 "panden_opgeleverd": 470,
 "gemeten": "2026-11-15"
+},
+"de-weide-veluwe-fase-5-harderwijk": {
+"naam": "De Weide Veluwe Fase 5",
+"oplevering": "rond 2027",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
 },
 "de-wilg-hoog-dalem-gorinchem": {
 "naam": "De Wilg Hoog Dalem",
@@ -2470,6 +2486,14 @@
 "in_aanbouw": 41,
 "panden_opgeleverd": 205,
 "gemeten": "2026-11-15"
+},
+"lange-vaart-lansingerland": {
+"naam": "Lange Vaart",
+"oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
 },
 "lange-wemen-hengelo-o": {
 "naam": "Lange Wemen",
@@ -3938,6 +3962,14 @@
 "stadspassage-enschede": {
 "naam": "Stadspassage",
 "oplevering": "tussen 2027 en 2028",
+"opgeleverd": false,
+"in_aanbouw": 0,
+"panden_opgeleverd": 0,
+"gemeten": null
+},
+"stakenbeek-fase-2a-oldenzaal": {
+"naam": "Stakenbeek Fase 2a",
+"oplevering": "rond 2028",
 "opgeleverd": false,
 "in_aanbouw": 0,
 "panden_opgeleverd": 0,
