@@ -27944,6 +27944,62 @@
    "woonoppervlak_van": 58,
    "woonoppervlak_tot": 118,
    "_gehaald": "2026-11-13"
+  },
+  {
+   "url": "https://www.nieuwwonennederland.nl/nieuwbouw/afferden/groenemorgen/15930",
+   "plaats": "afferden",
+   "naam": "Groenemorgen",
+   "bron": "nieuwwonennederland.nl",
+   "bron_id": "15930",
+   "woningen": null,
+   "status": null,
+   "prijs_van": null,
+   "prijs_tot": null,
+   "woonoppervlak_van": 85,
+   "woonoppervlak_tot": 162,
+   "_gehaald": "2026-11-20"
+  },
+  {
+   "url": "https://www.nieuwwonennederland.nl/nieuwbouw/utrecht/cix-theatre/15931",
+   "plaats": "utrecht",
+   "naam": "Cix Theatre",
+   "bron": "nieuwwonennederland.nl",
+   "bron_id": "15931",
+   "woningen": null,
+   "status": "Toekomstig",
+   "prijs_van": 350000,
+   "prijs_tot": 1070000,
+   "woonoppervlak_van": 49,
+   "woonoppervlak_tot": 177,
+   "_gehaald": "2026-11-20"
+  },
+  {
+   "url": "https://www.nieuwwonennederland.nl/nieuwbouw/utrecht/libero/15932",
+   "plaats": "utrecht",
+   "naam": "Libero",
+   "bron": "nieuwwonennederland.nl",
+   "bron_id": "15932",
+   "woningen": null,
+   "status": null,
+   "prijs_van": 815000,
+   "prijs_tot": 980000,
+   "woonoppervlak_van": 120,
+   "woonoppervlak_tot": 150,
+   "_gehaald": "2026-11-20"
+  },
+  {
+   "url": "https://www.nieuwwonennederland.nl/nieuwbouw/zaandam/la-paix/15929",
+   "plaats": "zaandam",
+   "naam": "La Paix",
+   "bron": "nieuwwonennederland.nl",
+   "bron_id": "15929",
+   "woningen": null,
+   "status": "Toekomstig",
+   "prijs_van": 225000,
+   "prijs_tot": 499500,
+   "woonoppervlak_van": 29,
+   "woonoppervlak_tot": 109,
+   "_gehaald": "2026-11-20"
   }
  ]
 }
