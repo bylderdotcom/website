@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.bylder.com/kozijnloze-deuren/configurator/' },
   openGraph: {
     title: 'Stel je kozijnloze deur samen',
-    description: '13 ontwerpen, elke RAL-kleur, plafondhoog. Zie de groef veranderen met de kleur.',
+    description: '13 ontwerpen, elke RAL-kleur, plafondhoog of standaard. Zie de groef veranderen met de kleur.',
     url: 'https://www.bylder.com/kozijnloze-deuren/configurator/',
     type: 'website',
   },
@@ -62,10 +62,11 @@ const VRAGEN = [
     a: 'Als richting wel, als keuze niet. RAL is een fysieke standaard op een kleurstaal; elk '
       + 'beeldscherm geeft hem anders weer. Gebruik de configurator om te zien hoe het patroon '
       + 'zich gedraagt bij licht en donker, en vraag een staal voor de definitieve kleur.' },
-  { v: 'Waarom altijd plafondhoog?',
-    a: 'Dat is waar dit systeem voor gemaakt is. Zonder bovenlicht en zonder zichtbaar kozijn '
-      + 'vormt de deur één vlak met de wand — dat effect verdwijnt zodra er een strook wand '
-      + 'boven de deur overblijft.' },
+  { v: 'Plafondhoog of standaardhoogte?',
+    a: 'Plafondhoog is waar dit systeem voor gemaakt is. Zonder bovenlicht en zonder zichtbaar kozijn '
+      + 'vormt de deur één vlak met de wand; dat effect verdwijnt zodra er een strook wand boven de deur '
+      + 'overblijft. Heeft je woning al een opening op standaardhoogte (tot 231,5 cm), dan kies je die: '
+      + 'die is goedkoper. De prijs zie je per deur in de configurator.' },
   { v: 'Wat betekent naar binnen of naar buiten draaien?',
     a: 'De kant waarheen de deur opengaat, gezien vanuit de ruimte die je binnenkomt. Het bepaalt '
       + 'aan welke zijde het kozijn wordt afgewerkt en waar de deur ruimte nodig heeft. Twijfel je, '
@@ -137,7 +138,7 @@ export default function ConfiguratorPagina() {
             Stel je kozijnloze deur samen
           </h1>
           <p style={{ ...P, fontSize: 17.5, margin: 0 }}>
-            Dertien groefpatronen, elke RAL-kleur, altijd plafondhoog.
+            Dertien groefpatronen, elke RAL-kleur, plafondhoog of standaard.
             {/* Op een telefoon alleen de eerste zin: de deur moet meteen in beeld (UX-audit 11-11-2026). */}
             <span className="kd-lang"> Sleep door het
             kleurenraster en kijk wat er met het patroon gebeurt: een groef is een schaduw,

@@ -66,7 +66,7 @@ export default function ConfiguratorCTA({
         <ul aria-label="Wat je kiest" style={{
           listStyle: 'none', padding: 0, margin: '18px 0 0', display: 'flex', flexWrap: 'wrap', gap: 8,
         }}>
-          {['13 groefpatronen', 'Elke RAL-kleur', 'Altijd plafondhoog', 'Deur en wand in één kleur'].map(t => (
+          {['13 groefpatronen', 'Elke RAL-kleur', 'Plafondhoog of standaard', 'Deur en wand in één kleur'].map(t => (
             <li key={t} style={{
               fontSize: 13, fontWeight: 700, color: '#1A1208', border: '1px solid rgba(61,46,30,0.2)',
               borderRadius: 999, padding: '5px 12px',

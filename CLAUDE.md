@@ -461,6 +461,11 @@ een kwartier live" zonder `vercel ls website` te checken.
   deze volgorde:** rekenen met onze prijzen (deuren, vloer, afwerking), deadlines bewaken en er zelf over beginnen, de
   keuzelijst van de aannemer nalopen; daarna dezelfde handelingen openstellen voor agents van anderen.
   Nog na te lopen: op de site staat op plekken "onafhankelijk" (onder meer in `llms.txt` en de kopersbegeleiding).
+- **Audit-proefrun 21-11-2026 (issue 406).** Nieuwe opzet: als koper op een telefoon door de site lopen en beginnen bij de
+  GA4-cijfers, hooguit vijf bevindingen. Uitkomst: configurators 33 gebruikers, 0 formulieren; kast vraagt nog een account;
+  ruim de helft van het bezoek is geen koper (/aannemer/ 5 s, /vakbedrijf/ en /wonen-in/ 0 s). Daarop (besluit Daniel 21-11):
+  `/mijn-woning/` op index en in de sitemap; menu "Bouwkundig kopersbegeleider" in plaats van "Onafhankelijke…";
+  deurconfigurator "plafondhoog of standaard". De verkoopchat (app `api/sales-chat`) volgt sinds 21-11 de koers.
 - **Rondes en audits nagelopen (21-11-2026).** Alle geplande rondes slaagden. De cijfercontrole van 11-11 (`reports/claim-drift.md`)
   is achterhaald: live staat overal 56 merken. Het aantal projecten op `/nieuwbouw-project/` wordt bij de build geteld. De
   meldingen "tekening uploaden lukt niet" en "account verwijderen" waren al op 11-11 opgelost (app-PR 112); de groepen in de
