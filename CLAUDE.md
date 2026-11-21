@@ -39,6 +39,8 @@ taxonomie en de navigatie, niet in het ontbreken van data.
 ## Bylder als hoofdaannemer voor de afwerking (besluit Daniel, 28-10-2026)
 **Twee routes (Daniel, 21-11-2026):** de koper kiest of Bylder het werk doet (Bylder neemt de opdracht aan, vakbedrijven als
 onderaannemer) of dat Bylder de aanvraag aanbesteedt bij andere vakbedrijven (de koper sluit de opdracht met dat bedrijf).
+Het afwerkformulier vraagt dat bovenaan ("Laat Bylder het doen" / "Zet het uit bij vakbedrijven"); de tweede route is in de app
+product `afwerking-aanbesteden` (niet in `BYLDER_AANNEMER`, geen projectkorting), met `configuratie.route`.
 Bylder neemt zelf de opdracht aan voor de hele afwerking van een nieuwbouwwoning: stucwerk,
 tegelwerk, sanitair/badkamer, vloeren, binnendeuren, schilderwerk en kasten. Eén offerte (uit de
 tekening van de koper), één contract, één planning, één aanspreekpunt. **Geen eigen ploegen:** het

@@ -31,6 +31,9 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
   const [projectSlug, setProjectSlug] = useState<{ slug: string; naam: string } | null>(null)
   // Nieuwbouw is de focus, maar bestaande bouw en renovatie mogen ook (besluit Daniel, 29-10-2026).
   const [soort, setSoort] = useState('Nieuwbouw')
+  // Twee routes (Daniel, 21-11-2026): Bylder doet het (één offerte, opdracht met Bylder) of Bylder zet de aanvraag uit
+  // bij vakbedrijven (offertes van meerdere bedrijven, opdracht met het bedrijf dat de koper kiest).
+  const [route, setRoute] = useState<'bylder' | 'aanbesteden'>('bylder')
   // Vanaf een vakbedrijfprofiel (?naast=<bedrijf>, 21-11-2026): de koper heeft daar al een offerte van of
   // wil er een. Dat gaat mee in de aanvraag, zodat onze offerte dezelfde posten naast elkaar zet.
   const [naast, setNaast] = useState('')
@@ -47,7 +50,7 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
 
   const namen = onderdelen.filter(o => gekozen.includes(o.slug)).map(o => o.naam)
   const specificatie = [
-    `Afwerking, Bylder als aannemer`,
+    route === 'bylder' ? `Afwerking, Bylder als aannemer` : `Afwerking, uitzetten bij vakbedrijven (aanbesteding)`,
     `Woning: ${soort}`,
     `Onderdelen: ${namen.length ? namen.join(', ') : 'nog niet gekozen'}`,
     m2 ? `Woonoppervlakte: ${m2} m²` : '',
@@ -65,6 +68,24 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
           <button type="button" onClick={() => setNaast('')} style={{ border: 0, background: 'none', padding: 0, font: 'inherit', color: GROEN, textDecoration: 'underline', cursor: 'pointer' }}>Niet vergelijken</button>
         </p>
       )}
+      <fieldset style={{ border: 0, padding: 0, margin: 0 }}>
+        <legend style={{ ...label, marginBottom: 8 }}>Hoe wil je het laten doen?</legend>
+        <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+          {([
+            ['bylder', 'Laat Bylder het doen', 'Eén offerte en één aanspreekpunt. Je sluit de opdracht met Bylder; vakbedrijven voeren uit.'],
+            ['aanbesteden', 'Zet het uit bij vakbedrijven', 'Offertes van meerdere bedrijven op dezelfde aanvraag. Je sluit de opdracht met het bedrijf dat je kiest.'],
+          ] as const).map(([id, kop, uitleg]) => {
+            const aan = route === id
+            return (
+              <label key={id} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', padding: '12px 14px', borderRadius: 10, cursor: 'pointer', background: '#fff', border: `1.5px solid ${aan ? GROEN : `${INKT}0.16)`}` }}>
+                <input type="radio" name="af-route" checked={aan} onChange={() => setRoute(id)} style={{ width: 17, height: 17, marginTop: 2, accentColor: GROEN }} />
+                <span><strong style={{ display: 'block', fontSize: 14.5, color: '#1A1208' }}>{kop}</strong>
+                  <span style={{ fontSize: 13, lineHeight: 1.5, color: `${INKT}0.7)` }}>{uitleg}</span></span>
+              </label>
+            )
+          })}
+        </div>
+      </fieldset>
       <fieldset style={{ border: 0, padding: 0, margin: 0 }}>
         <legend style={{ ...label, marginBottom: 8 }}>Wat wil je laten doen?</legend>
         <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))' }}>
@@ -92,10 +113,10 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
           <input id="af-proj" value={project} onChange={e => setProject(e.target.value.slice(0, 120))} placeholder={soort === 'Nieuwbouw' ? 'naam of straat' : 'bv. Rosmalen'} style={veld} /></div>
       </div>
       <OfferteFormulier
-        product="afwerking-nieuwbouw"
+        product={route === 'bylder' ? 'afwerking-nieuwbouw' : 'afwerking-aanbesteden'}
         bron={bron}
         specificatie={specificatie}
-        configuratie={{ onderdelen: gekozen, soort, oplevering: oplevering || null, project: project || null, project_slug: projectSlug && projectSlug.naam === project ? projectSlug.slug : null, naast: naast || null }}
+        configuratie={{ route, onderdelen: gekozen, soort, oplevering: oplevering || null, project: project || null, project_slug: projectSlug && projectSlug.naam === project ? projectSlug.slug : null, naast: naast || null }}
         hoeveelheden={{ m2_woning: m2 ? Number(m2) : null }}
         terugkijkUrl={() => window.location.href}
         mailFallback={`mailto:danielpaaij@bylder.com?subject=${encodeURIComponent('Afwerking door Bylder')}&body=${encodeURIComponent(specificatie)}`}
