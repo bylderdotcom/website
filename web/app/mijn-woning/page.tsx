@@ -23,10 +23,9 @@ import EigenVakmanMeekijken from '../components/EigenVakmanMeekijken'
  * verstuurd en niet bewaard; alleen het model dat eruit komt. Bewaren in een account
  * op app.bylder.com is de volgende stap (docs/woningvisualisator-bouwplan.md §4).
  *
- * NOINDEX, EN NIET IN DE SITEMAP
- * Dit is een proef op echte tekeningen (standing order: onvalideerd = noindex tot
- * bewijs). Er staat geen voorbeeldtekening in: de enige proeftekening die we hebben
- * is van een echte koper.
+ * IN DE INDEX EN DE SITEMAP (besluit Daniel, 21-11-2026)
+ * Stond tot 21-11 op noindex als proef. Sindsdien de pagina waar de homepage alles naartoe
+ * stuurt ("Zet je woning in 3D"), met een fictieve voorbeeldwoning erin (voorbeeld.ts).
  */
 
 export const metadata: Metadata = {
@@ -35,14 +34,38 @@ export const metadata: Metadata = {
     'Sleep de plattegrond van je aannemer hierheen. Je ziet je woning in 3D, hoeveel '
     + 'binnendeuren erin zitten en hoeveel vierkante meter vloer je nodig hebt.',
   alternates: { canonical: 'https://www.bylder.com/mijn-woning/' },
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
   openGraph: { title: 'Zet je woning in 3D, uit je eigen tekening', url: 'https://www.bylder.com/mijn-woning/', type: 'website', images: [{ url: 'https://www.bylder.com/img/og/mijn-woning.jpg', width: 1200, height: 630, alt: 'De woning als maquette, van bovenaf' }] },
   twitter: { card: 'summary_large_image' },
+}
+
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebApplication',
+      name: 'Je woning in 3D',
+      url: 'https://www.bylder.com/mijn-woning/',
+      applicationCategory: 'DesignApplication',
+      operatingSystem: 'Web',
+      description: 'Sleep de plattegrond van je aannemer erin en zie je woning in 3D, met het aantal binnendeuren en de vierkante meters vloer per ruimte.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+      provider: { '@type': 'Organization', name: 'Bylder', url: 'https://www.bylder.com/' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Bylder', item: 'https://www.bylder.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Je woning in 3D', item: 'https://www.bylder.com/mijn-woning/' },
+      ],
+    },
+  ],
 }
 
 export default function Pagina() {
   return (
     <main style={{ background: '#F5F0E8', minHeight: '100vh' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
       <MijnWoning />
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 16px 56px' }}>
         <EigenVakmanMeekijken campagne="mijn-woning" marge="8px 0 0" />
