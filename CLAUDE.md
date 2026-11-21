@@ -472,9 +472,9 @@ een kwartier live" zonder `vercel ls website` te checken.
   ontwerper op de site (app `api/kast` actie `offerte`, gedeelde afhandeling in `src/lib/kast/offerte-server.ts`, ook gebruikt
   door `api/kast/mijn`); meenemen naar de app blijft als link.
   Opgeruimd (21-11): "onafhankelijk" over Bylder zelf weg op ~2.300 pagina's (gidsoverzichten, productvergelijkingen, vakpagina's,
-  kopersbegeleiding, llms.txt). **De Amazon-melding ("Als Amazon-partner verdient Bylder aan kwalificerende aankopen") blijft
-  staan:** die is verplicht bij affiliate-links (voorwaarden Amazon, reclameregels); alleen de zin over "onafhankelijke
-  prijsanalyses" is weg. Map `output/` (331 oude pagina's) en `api/betaling-start.js` met zijn route verwijderd.
+  kopersbegeleiding, llms.txt). **Bylder verdient niet meer aan Amazon (Daniel, 21-11-2026):** de blokken "Aanbevolen
+  producten" met Amazon-links (partnercode bylder05-21) en de vraag "Beïnvloeden deze aanbevelingen…" zijn weg van 86
+  kennisbankpagina's; `_scripts/generate_kennisbank.py` maakt ze niet meer (`AMAZON_UIT`). Map `output/` (331 oude pagina's) en `api/betaling-start.js` met zijn route verwijderd.
 - **Rondes en audits nagelopen (21-11-2026).** Alle geplande rondes slaagden. De cijfercontrole van 11-11 (`reports/claim-drift.md`)
   is achterhaald: live staat overal 56 merken. Het aantal projecten op `/nieuwbouw-project/` wordt bij de build geteld. De
   meldingen "tekening uploaden lukt niet" en "account verwijderen" waren al op 11-11 opgelost (app-PR 112); de groepen in de
