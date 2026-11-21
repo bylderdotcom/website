@@ -192,7 +192,7 @@ export default function Ontwerper({ start }: { start?: string }) {
           <div>
             <div className="ko-label">Bylder maatwerk · kast op maat</div>
             <h1>Ontwerp een kast die precies past</h1>
-            <p>Laat zien wat je mooi vindt en vertel waar hij komt. De ontwerper tekent hem uit, tot op de zaaglijst voor het timmerbedrijf.</p>
+            <p>Laat zien wat je mooi vindt en vertel waar hij komt. De ontwerper tekent hem uit, tot op de zaaglijst voor de maker.</p>
           </div>
           <div className="ko-acties">
             <button type="button" className="ko-knop" onClick={() => nieuw(false)}><ArrowsClockwise size={16} aria-hidden="true" />Nieuw ontwerp</button>
@@ -395,7 +395,7 @@ function Meenemen({ id, s, bewaard, onBewaard, plattegrond }: { id: string; s: s
   if (klaar) return (
     <div className="ko-offerte ko-offerte-klaar" role="status">
       <strong>Je offerte is aangevraagd</strong>
-      <span>Het timmerbedrijf krijgt je ontwerp met de tekeningen en de zaaglijst, en komt inmeten voordat er gezaagd wordt. Je krijgt een mail met een knop naar je Bylder-account; daar komt de offerte. Een wachtwoord heb je niet nodig.</span>
+      <span>Wij zetten je ontwerp met de tekeningen en de zaaglijst uit bij timmerfabrieken en interieurbouwers die er in jouw periode tijd voor hebben. Hun offertes komen in je Bylder-account; je krijgt een mail met een knop ernaartoe. Een wachtwoord heb je niet nodig.</span>
     </div>
   )
   const veld = (k: keyof typeof v, label: string, extra: React.InputHTMLAttributes<HTMLInputElement> = {}) => (
@@ -406,7 +406,7 @@ function Meenemen({ id, s, bewaard, onBewaard, plattegrond }: { id: string; s: s
     <div className="ko-offerte ko-offerte-form" onFocusCapture={begin}>
       <div>
         <strong>Tevreden? Vraag een offerte aan</strong>
-        <span>Een timmerbedrijf rekent op precies dit ontwerp, met de tekeningen en de zaaglijst, en meet eerst in. Gratis en vrijblijvend, zonder account vooraf.</span>
+        <span>Wij vragen voor je offertes aan bij timmerfabrieken en interieurbouwers. Ze rekenen allemaal op precies dit ontwerp, met de tekeningen en de zaaglijst, zodat je ze eerlijk naast elkaar legt. Gratis en vrijblijvend, zonder account vooraf.</span>
       </div>
       <div className="ko-velden">
         {veld('naam', 'Naam', { autoComplete: 'name' })}
@@ -427,8 +427,8 @@ function Meenemen({ id, s, bewaard, onBewaard, plattegrond }: { id: string; s: s
           </select>
         </label>
       </div>
-      <label className="ko-veld"><span>Nog iets dat het timmerbedrijf moet weten?</span><textarea rows={3} value={v.toelichting} onChange={e => setV({ ...v, toelichting: e.target.value })} /></label>
-      <label className="ko-akkoord"><input type="checkbox" checked={akkoord} onChange={e => setAkkoord(e.target.checked)} /><span>Bylder mag mijn aanvraag, naam en contactgegevens delen met het timmerbedrijf.</span></label>
+      <label className="ko-veld"><span>Nog iets dat de maker moet weten?</span><textarea rows={3} value={v.toelichting} onChange={e => setV({ ...v, toelichting: e.target.value })} /></label>
+      <label className="ko-akkoord"><input type="checkbox" checked={akkoord} onChange={e => setAkkoord(e.target.checked)} /><span>Bylder mag mijn aanvraag, naam en contactgegevens delen met de timmerfabrieken en interieurbouwers die de offerte maken.</span></label>
       <div className="ko-offerte-rij">
         <button type="button" className="ko-knop ko-knop-primair" disabled={bezig || !klaarVoor} onClick={async () => {
           setFout(''); setBezig(true)
