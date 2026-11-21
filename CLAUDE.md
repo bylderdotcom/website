@@ -466,6 +466,11 @@ een kwartier live" zonder `vercel ls website` te checken.
   ruim de helft van het bezoek is geen koper (/aannemer/ 5 s, /vakbedrijf/ en /wonen-in/ 0 s). Daarop (besluit Daniel 21-11):
   `/mijn-woning/` op index en in de sitemap; menu "Bouwkundig kopersbegeleider" in plaats van "Onafhankelijke…";
   deurconfigurator "plafondhoog of standaard". De verkoopchat (app `api/sales-chat`) volgt sinds 21-11 de koers.
+  Punt 1 (21-11): deurconfigurator toont bij één deur die precies een winkelset is (Origin, gegrond standaard of afgelakt in een
+  setkleur) "Bestel als set" en de balk "Bestel deze deur"; offerte blijft de groene hoofdknop (Daniel: de meeste kopers willen
+  meerdere, verschillende deuren). Meten: `configurator_stap` set-getoond / set-bestellen. Kast: offerte zonder account in de
+  ontwerper op de site (app `api/kast` actie `offerte`, gedeelde afhandeling in `src/lib/kast/offerte-server.ts`, ook gebruikt
+  door `api/kast/mijn`); meenemen naar de app blijft als link.
 - **Rondes en audits nagelopen (21-11-2026).** Alle geplande rondes slaagden. De cijfercontrole van 11-11 (`reports/claim-drift.md`)
   is achterhaald: live staat overal 56 merken. Het aantal projecten op `/nieuwbouw-project/` wordt bij de build geteld. De
   meldingen "tekening uploaden lukt niet" en "account verwijderen" waren al op 11-11 opgelost (app-PR 112); de groepen in de
