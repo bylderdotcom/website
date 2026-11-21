@@ -1270,10 +1270,6 @@
   ],
   "rewrites": [
     {
-      "source": "/api/betaling-start",
-      "destination": "/api/betaling-start.js"
-    },
-    {
       "source": "/api/paynl-exchange",
       "destination": "/api/paynl-exchange.js"
     },

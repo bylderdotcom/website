@@ -39,3 +39,4 @@ data/plaatsen/
 # metingen komt het logboek er nooit — en dat logboek is het enige op een
 # projectpagina dat de ontwikkelaar niet kan kopiëren.
 # Een landelijke meting is ~490 kB; elke twee weken is ~13 MB per jaar.
+output/

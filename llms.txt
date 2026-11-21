@@ -70,7 +70,7 @@
 - [Keuken & badkamer offerte-check](https://www.bylder.com/keuken-badkamer-offerte-check/)
 - [3D-sfeerimpressie](https://www.bylder.com/3d-sfeerimpressie/): plattegrond naar 3D-interieur in gekozen stijl
 - [Plattegrond inrichten](https://www.bylder.com/plattegrond-inrichten/): meubels op schaal passen
-- [Prefab-configurator](https://www.bylder.com/tools/prefab-configurator/): configureer een aanbouw, dakopbouw of dakkapel — onafhankelijke prijsindicatie, marktbenchmark en vergunningcheck
+- [Prefab-configurator](https://www.bylder.com/tools/prefab-configurator/): configureer een aanbouw, dakopbouw of dakkapel — prijsindicatie, marktbenchmark en vergunningcheck
 - [Gratis nieuwbouw-tools](https://www.bylder.com/nieuwbouw-tools/): budget-calculator, meerwerk-calculator, opleveringschecklist
 
 ## Vakbedrijven & aanbod

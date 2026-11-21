@@ -948,7 +948,7 @@ def build_city_page(vak, vak_slug, stad, lokaal):
     canonical = f"{BASE}{base}/{slug}/"
     title = f"{vak['sing'].capitalize()} in {stad} nodig? {n} bedrijven, reviews & prijzen (2026) | Bylder"
     desc = (f"Vind en vergelijk {n} {vak['plur']} in {stad}: reviews, websites en marktprijzen. "
-            f"Check gratis of je offerte eerlijk is. Onafhankelijk overzicht van Bylder.")
+            f"Check gratis of je offerte eerlijk is. Een overzicht van Bylder.")
     qa = [
         (f"Wat kost een {vak['sing']} in {stad}?", vak["stad_kost"] + " Check je offerte gratis tegen actuele marktdata."),
         (f"Hoe vind ik een goede {vak['sing']} in {stad}?",
@@ -986,7 +986,7 @@ def build_city_page(vak, vak_slug, stad, lokaal):
   {aanbesteding_block(vak, stad)}
 
   <h2 style="font-size:1.5rem;font-weight:800;margin:32px 0 8px;">{n} {vak['plur']} in {html.escape(stad)}</h2>
-  <p style="font-size:13.5px;color:rgba(61,46,30,0.55);margin-bottom:6px;">Onafhankelijk overzicht, standaard op relevantie gesorteerd. Geverifieerde bedrijven hebben hun profiel geclaimd.</p>
+  <p style="font-size:13.5px;color:rgba(61,46,30,0.55);margin-bottom:6px;">Overzicht van vakbedrijven, gesorteerd op relevantie. Geverifieerde bedrijven hebben hun profiel geclaimd.</p>
   {directory_sortable(vak, lokaal)}
   {claim_cta(vak, stad)}
   {verwante_deur_blok(vak_slug, f"vak-{vak_slug}-{slug}")}
