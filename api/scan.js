@@ -73,12 +73,14 @@ Retourneer ALLEEN het JSON-object, geen andere tekst.`;
     }
 
     const response = await client.messages.create({
-      model: 'claude-haiku-4-5',
-      max_tokens: 256,
+      model: 'claude-haiku-5-5',
+      // Dit model denkt eerst na; dat telt mee in max_tokens.
+      max_tokens: 2000,
+      output_config: { effort: 'low' },
       messages: [{ role: 'user', content: messageContent }]
     });
 
-    const raw = response.content[0]?.text || '';
+    const raw = response.content.map((b) => (b.type === 'text' ? b.text : '')).join('');
 
     // Parse JSON uit de response
     const jsonMatch = raw.match(/\{[\s\S]*\}/);

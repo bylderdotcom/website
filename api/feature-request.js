@@ -51,8 +51,10 @@ async function moderate(tekst) {
     const Anthropic = require('@anthropic-ai/sdk').default || require('@anthropic-ai/sdk');
     const client = new Anthropic({ apiKey: key });
     const msg = await client.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 150,
+      model: 'claude-haiku-5-5',
+      // Dit model denkt eerst na; dat telt mee in max_tokens.
+      max_tokens: 2000,
+      output_config: { effort: 'low' },
       system:
         'Je filtert meldingen op een Nederlandse website voor mensen die bouwen, kopen of ' +
         'verbouwen. Bezoekers melden wat ze missen of wat niet werkt. Keur een melding GOED ' +
