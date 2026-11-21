@@ -468,6 +468,6 @@ een kwartier live" zonder `vercel ls website` te checken.
   op het huidige model en melden storingen via `meldToolFout` (`tekening-lezen`, `document-lezen`, `kopersbegeleider`); nog niet
   in de dagelijkse zelftest. Nog op een ouder model: bod-advies, sales-chat, vouchermoderatie, offerteposten, de twee
   feedback-crons en de moderatie in `api/feature-request.js`. De wekelijkse audit (`_audits/`) draaide op Daniels Mac met een
-  prompt van het oude lidmaatschapsmodel en stopte na 21-09; sinds 21-11 een wekelijkse taak in de cloud die een issue
-  "Audit <datum>" opent (alleen lezen). Nog open uit de rondes: CBS-cijfers bijwerken (issue 79, handwerk), kansenlijst
+  prompt van het oude lidmaatschapsmodel en stopte na 21-09; opnieuw aanzetten als wekelijkse taak in de cloud (alleen lezen,
+  één issue "Audit <datum>") wacht op Daniels akkoord. Nog open uit de rondes: CBS-cijfers bijwerken (issue 79, handwerk), kansenlijst
   projectpagina's (issue 318, meting 2 december), map `output/` (331 bestanden, niet meer bereikbaar) en `api/betaling-start.js` opruimen.
