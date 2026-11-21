@@ -478,8 +478,8 @@ een kwartier live" zonder `vercel ls website` te checken.
   **Kast: Bylder verkoopt de kast niet zelf** maar zet de aanvraag uit bij meerdere timmerfabrieken en interieurbouwers (Daniel,
   21-11-2026); teksten in de ontwerper en de mails zeggen dat. **"Leadveiling" niet gebruiken in teksten voor kopers** (Daniel:
   zegt een consument niets); op pagina's voor vakbedrijven mag het. De vraag "Is Bylder een <vak> of bemiddelaar?" op de
-  vakpagina's (schema en zichtbaar, en in `generate_vakpillar.py`) zegt nu: voor de afwerking maakt Bylder één offerte en neemt de
-  opdracht aan, vakbedrijven voeren uit; bij elektra, dakkapel en dak: Bylder doet dat zelf niet. Map `output/` (331 oude pagina's) en `api/betaling-start.js` met zijn route verwijderd.
+  vakpagina's (schema en zichtbaar, en in `generate_vakpillar.py`) zegt nu: voor de afwerking kán Bylder één offerte maken en de
+  opdracht aannemen (Daniel 21-11: soms, niet altijd), vakbedrijven voeren uit; bij elektra, dakkapel en dak: Bylder doet dat zelf niet. Map `output/` (331 oude pagina's) en `api/betaling-start.js` met zijn route verwijderd.
 - **Rondes en audits nagelopen (21-11-2026).** Alle geplande rondes slaagden. De cijfercontrole van 11-11 (`reports/claim-drift.md`)
   is achterhaald: live staat overal 56 merken. Het aantal projecten op `/nieuwbouw-project/` wordt bij de build geteld. De
   meldingen "tekening uploaden lukt niet" en "account verwijderen" waren al op 11-11 opgelost (app-PR 112); de groepen in de
