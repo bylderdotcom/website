@@ -82,12 +82,14 @@ Rules:
     }
 
     const response = await client.messages.create({
-      model: 'claude-opus-4-5',
-      max_tokens: 2000,
+      model: 'claude-opus-5-5',
+      // Dit model denkt eerst na; dat telt mee in max_tokens.
+      max_tokens: 16000,
+      output_config: { effort: 'medium' },
       messages: [{ role: 'user', content }],
     });
 
-    const raw = response.content[0]?.text || '';
+    const raw = response.content.map((b) => (b.type === 'text' ? b.text : '')).join('');
     const match = raw.match(/\{[\s\S]*\}/);
     if (!match) throw new Error('No valid JSON in response');
     const report = JSON.parse(match[0]);

@@ -108,9 +108,11 @@ export function heeftProfielStap(vak: string) {
 export default function ProfielStap({ vak, naam, prijscheck }: { vak: string; naam: string; prijscheck: boolean }) {
   const v = VAKKEN[vak]
   if (!v) return null
-  const offerte = `/nieuwbouw-afwerken/${v.onderdeel ? v.onderdeel + '/' : ''}#aanvraag`
   // Lange namen vullen op mobiel drie regels; een 'naam' als '.' is geen naam.
   const kort = naam.length <= 28 && /[a-z0-9]{2}/i.test(naam)
+  // De naam reist mee: het formulier opent met "naast de offerte van <bedrijf>" (21-11-2026).
+  const echt = /[a-z0-9]{2}/i.test(naam)
+  const offerte = `/nieuwbouw-afwerken/${v.onderdeel ? v.onderdeel + '/' : ''}${echt ? `?naast=${encodeURIComponent(naam.slice(0, 80))}` : ''}#aanvraag`
   return (
     <>
       <section aria-labelledby="profielstap-kop" style={{ background: GROEN, color: ROOM, borderRadius: 16, padding: 'clamp(20px,3.5vw,28px)', margin: '20px 0 14px' }}>

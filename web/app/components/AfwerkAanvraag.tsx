@@ -31,6 +31,9 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
   const [projectSlug, setProjectSlug] = useState<{ slug: string; naam: string } | null>(null)
   // Nieuwbouw is de focus, maar bestaande bouw en renovatie mogen ook (besluit Daniel, 29-10-2026).
   const [soort, setSoort] = useState('Nieuwbouw')
+  // Vanaf een vakbedrijfprofiel (?naast=<bedrijf>, 21-11-2026): de koper heeft daar al een offerte van of
+  // wil er een. Dat gaat mee in de aanvraag, zodat onze offerte dezelfde posten naast elkaar zet.
+  const [naast, setNaast] = useState('')
   // Vanaf een projectpagina (?project=Tuinenrijk Veld 2&oplevering=2027–2028): alvast ingevuld.
   useEffect(() => {
     const q = new URLSearchParams(window.location.search)
@@ -38,6 +41,8 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
     if (p) setProject(p.slice(0, 120))
     if (p && s && /^[a-z0-9][a-z0-9-]{1,119}$/.test(s)) setProjectSlug({ slug: s, naam: p.slice(0, 120) })
     if (o) setOplevering(o.slice(0, 60))
+    const n = (q.get('naast') || '').replace(/[<>]/g, '').trim().slice(0, 80)
+    if (n) setNaast(n)
   }, [])
 
   const namen = onderdelen.filter(o => gekozen.includes(o.slug)).map(o => o.naam)
@@ -48,11 +53,18 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
     m2 ? `Woonoppervlakte: ${m2} m²` : '',
     oplevering ? `Oplevering of start: ${oplevering}` : '',
     project ? `Project: ${project}` : '',
+    naast ? `Naast de offerte van: ${naast}` : '',
   ].filter(Boolean).join('\n')
   const zet = (slug: string, aan: boolean) => setGekozen(g => aan ? [...new Set([...g, slug])] : g.filter(x => x !== slug))
 
   return (
     <div style={{ display: 'grid', gap: 16 }}>
+      {naast && (
+        <p style={{ margin: 0, padding: '10px 0 12px', borderBottom: `1px solid ${INKT}0.14)`, fontSize: 14.5, lineHeight: 1.5, color: `${INKT}0.85)` }}>
+          Je legt onze offerte naast die van <strong>{naast}</strong>. Heb je die al binnen? Zet hem na je aanvraag in je account, dan rekenen wij dezelfde posten uit.{' '}
+          <button type="button" onClick={() => setNaast('')} style={{ border: 0, background: 'none', padding: 0, font: 'inherit', color: GROEN, textDecoration: 'underline', cursor: 'pointer' }}>Niet vergelijken</button>
+        </p>
+      )}
       <fieldset style={{ border: 0, padding: 0, margin: 0 }}>
         <legend style={{ ...label, marginBottom: 8 }}>Wat wil je laten doen?</legend>
         <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))' }}>
@@ -83,7 +95,7 @@ export default function AfwerkAanvraag({ onderdelen, gekozen: start, bron }: {
         product="afwerking-nieuwbouw"
         bron={bron}
         specificatie={specificatie}
-        configuratie={{ onderdelen: gekozen, soort, oplevering: oplevering || null, project: project || null, project_slug: projectSlug && projectSlug.naam === project ? projectSlug.slug : null }}
+        configuratie={{ onderdelen: gekozen, soort, oplevering: oplevering || null, project: project || null, project_slug: projectSlug && projectSlug.naam === project ? projectSlug.slug : null, naast: naast || null }}
         hoeveelheden={{ m2_woning: m2 ? Number(m2) : null }}
         terugkijkUrl={() => window.location.href}
         mailFallback={`mailto:danielpaaij@bylder.com?subject=${encodeURIComponent('Afwerking door Bylder')}&body=${encodeURIComponent(specificatie)}`}
