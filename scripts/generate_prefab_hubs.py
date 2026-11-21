@@ -207,7 +207,7 @@ def render(cfg):
 
   <div style="background:rgba(61,90,62,0.06);border:1px solid rgba(61,90,62,0.18);border-radius:16px;padding:26px;margin:40px 0;">
     <h2 style="font-size:1.35rem;font-weight:800;margin-bottom:8px;">Betaal je een eerlijke prijs?</h2>
-    <p style="font-size:15px;color:rgba(61,46,30,0.85);line-height:1.7;margin-bottom:16px;max-width:640px;">Bylder is onafhankelijk: geen fabrikant, geen leadveiling. Je vergelijkt bedrijven neutraal en checkt je offerte gratis tegen actuele marktdata &mdash; met gemiddeld <strong>&euro;1.640</strong> besparing per gecontroleerde offerte.</p>
+    <p style="font-size:15px;color:rgba(61,46,30,0.85);line-height:1.7;margin-bottom:16px;max-width:640px;">Bylder is geen leadveiling. Je vergelijkt bedrijven en checkt je offerte gratis tegen actuele marktdata &mdash; met gemiddeld <strong>&euro;1.640</strong> besparing per gecontroleerde offerte.</p>
     <a href="{cfg["cta_href"]}" style="display:inline-block;background:#3D5A3E;color:#F5F0E8;padding:13px 26px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;">{cfg["cta_label"]} &#8594;</a>
   </div>
 

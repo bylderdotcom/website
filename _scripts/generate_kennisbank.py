@@ -18,7 +18,12 @@ AMAZON_TAG = 'bylder05-21'
 AMAZON_DOM = 'www.amazon.nl'
 ASIN_RE = re.compile(r'^[A-Z0-9]{10}$')
 
+# Bylder verdient niet meer aan Amazon (besluit Daniel, 21-11-2026): geen productblokken meer.
+AMAZON_UIT = True
+
 def laad_producten():
+    if AMAZON_UIT:
+        return []
     """Leest producten.json. Alleen items met een geldige 10-teken ASIN
     worden meegenomen — zo gaat er nooit een kapotte/lege link live."""
     p = os.path.join(SRC, 'producten.json')

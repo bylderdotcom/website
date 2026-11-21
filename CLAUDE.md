@@ -466,6 +466,15 @@ een kwartier live" zonder `vercel ls website` te checken.
   ruim de helft van het bezoek is geen koper (/aannemer/ 5 s, /vakbedrijf/ en /wonen-in/ 0 s). Daarop (besluit Daniel 21-11):
   `/mijn-woning/` op index en in de sitemap; menu "Bouwkundig kopersbegeleider" in plaats van "Onafhankelijke…";
   deurconfigurator "plafondhoog of standaard". De verkoopchat (app `api/sales-chat`) volgt sinds 21-11 de koers.
+  Punt 1 (21-11): deurconfigurator toont bij één deur die precies een winkelset is (Origin, gegrond standaard of afgelakt in een
+  setkleur) "Bestel als set" en de balk "Bestel deze deur"; offerte blijft de groene hoofdknop (Daniel: de meeste kopers willen
+  meerdere, verschillende deuren). Meten: `configurator_stap` set-getoond / set-bestellen. Kast: offerte zonder account in de
+  ontwerper op de site (app `api/kast` actie `offerte`, gedeelde afhandeling in `src/lib/kast/offerte-server.ts`, ook gebruikt
+  door `api/kast/mijn`); meenemen naar de app blijft als link.
+  Opgeruimd (21-11): "onafhankelijk" over Bylder zelf weg op ~2.300 pagina's (gidsoverzichten, productvergelijkingen, vakpagina's,
+  kopersbegeleiding, llms.txt). **Bylder verdient niet meer aan Amazon (Daniel, 21-11-2026):** de blokken "Aanbevolen
+  producten" met Amazon-links (partnercode bylder05-21) en de vraag "Beïnvloeden deze aanbevelingen…" zijn weg van 86
+  kennisbankpagina's; `_scripts/generate_kennisbank.py` maakt ze niet meer (`AMAZON_UIT`). Map `output/` (331 oude pagina's) en `api/betaling-start.js` met zijn route verwijderd.
 - **Rondes en audits nagelopen (21-11-2026).** Alle geplande rondes slaagden. De cijfercontrole van 11-11 (`reports/claim-drift.md`)
   is achterhaald: live staat overal 56 merken. Het aantal projecten op `/nieuwbouw-project/` wordt bij de build geteld. De
   meldingen "tekening uploaden lukt niet" en "account verwijderen" waren al op 11-11 opgelost (app-PR 112); de groepen in de
@@ -479,4 +488,4 @@ een kwartier live" zonder `vercel ls website` te checken.
   (329 gemeentepagina's, bij 106 sloeg de vergelijkingszin om volgens de vaste regel: onder 0,8 keer de oplevering "minder", boven
   1,2 keer "meer"; eerst `--droog` draaien en de omgeslagen zinnen nalezen). Vanaf een vakbedrijfprofiel opent het
   afwerkformulier met "naast de offerte van <bedrijf>" (`?naast=`, in `configuratie.naast`). Nog open uit de rondes: kansenlijst
-  projectpagina's (issue 318, meting 2 december), map `output/` (331 bestanden, niet meer bereikbaar) en `api/betaling-start.js` opruimen.
+  projectpagina's (issue 318, meting 2 december), (output/ en betaling-start zijn op 21-11 opgeruimd).

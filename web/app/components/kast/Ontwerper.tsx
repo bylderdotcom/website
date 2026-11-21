@@ -7,13 +7,14 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
-import { Images, MagicWand, Couch, Television, Stairs, Books, Paperclip, PaperPlaneRight, X, Cube, Door, SquaresFour, Package, ArrowsClockwise, MapTrifold, Check } from '@phosphor-icons/react'
+import { Images, MagicWand, Couch, Television, Stairs, Books, Paperclip, PaperPlaneRight, X, Cube, Door, SquaresFour, Package, ArrowsClockwise, MapTrifold } from '@phosphor-icons/react'
 import { bouw as bouwKast } from '@/lib/kast/rekenmodel'
 import { VOORBEELD_HOEKKAST, type Ontwerp } from '@/lib/kast/ontwerp'
 import { Plattegrond, Uitslag } from './Tekeningen'
 import Werkplaats from './Werkplaats'
 import { metRef } from '../aanbreng'
-import { meetConfigurator } from '../meet'
+import { meetConfigurator, meetLead, meet as meetGa } from '../meet'
+import { maandOpties } from '@/lib/plaatsing'
 
 // Het ontwerpscherm: links het gesprek met de AI, rechts de kast (3D, aanzicht,
 // plattegrond, werkplaats). Alles rechts komt uit het rekenmodel.
@@ -376,32 +377,80 @@ function EmailPoort({ id, s, onKlaar }: { id: string; s: string; onKlaar: () => 
   )
 }
 
+const MAANDEN = maandOpties()
+
+// Offerte aanvragen zonder account (21-11-2026, audit: 12 gebruikers in de kastontwerper, 0 aanvragen;
+// de offerte vroeg eerst een account in de app). Zelfde opzet als de gietvloer: naam, e-mail, plaats en
+// de periode van plaatsen; de app maakt het account erbij en de mail logt meteen in. Meenemen naar de
+// Bylder-omgeving blijft als link voor wie verder wil ontwerpen in de woning in 3D.
 function Meenemen({ id, s, bewaard, onBewaard, plattegrond }: { id: string; s: string; bewaard: boolean; onBewaard: () => void; plattegrond: boolean }) {
-  const [email, setEmail] = useState('')
+  const [v, setV] = useState({ naam: '', email: '', postcode: '', plaats: '', telefoon: '', plaatsing_van: '', plaatsing_tot: '', toelichting: '' })
+  const [akkoord, setAkkoord] = useState(false)
   const [bezig, setBezig] = useState(false)
   const [fout, setFout] = useState('')
+  const [klaar, setKlaar] = useState(false)
+  const begonnen = useRef(false)
+  const begin = () => { if (!begonnen.current) { begonnen.current = true; meetGa('offerte_formulier_open', { product: 'kast' }) } }
   const link = metRef(`${APP}/dashboard/kast/koppel?id=${encodeURIComponent(id)}&s=${encodeURIComponent(s)}`)
+  if (klaar) return (
+    <div className="ko-offerte ko-offerte-klaar" role="status">
+      <strong>Je offerte is aangevraagd</strong>
+      <span>Het timmerbedrijf krijgt je ontwerp met de tekeningen en de zaaglijst, en komt inmeten voordat er gezaagd wordt. Je krijgt een mail met een knop naar je Bylder-account; daar komt de offerte. Een wachtwoord heb je niet nodig.</span>
+    </div>
+  )
+  const veld = (k: keyof typeof v, label: string, extra: React.InputHTMLAttributes<HTMLInputElement> = {}) => (
+    <label className="ko-veld"><span>{label}</span><input value={v[k]} onChange={e => setV({ ...v, [k]: e.target.value })} {...extra} /></label>
+  )
+  const klaarVoor = v.naam.trim() && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.email) && v.plaats.trim() && akkoord
   return (
-    <div className="ko-offerte">
-      <div className="ko-offerte-rij">
-        <div><strong>Tevreden? Vraag een offerte aan</strong><span>Neem je ontwerp{plattegrond ? ' en je plattegrond' : ''} mee naar je gratis Bylder-omgeving. Een account maken duurt een halve minuut.</span></div>
-        <a className="ko-knop ko-knop-primair" href={link}>Neem mee en vraag offerte aan</a>
+    <div className="ko-offerte ko-offerte-form" onFocusCapture={begin}>
+      <div>
+        <strong>Tevreden? Vraag een offerte aan</strong>
+        <span>Een timmerbedrijf rekent op precies dit ontwerp, met de tekeningen en de zaaglijst, en meet eerst in. Gratis en vrijblijvend, zonder account vooraf.</span>
       </div>
-      <ul className="ko-voordelen">
-        <li><Check size={15} weight="bold" aria-hidden="true" />Offerte van het timmerbedrijf op precies dit ontwerp; inmeten is gratis</li>
-        <li><Check size={15} weight="bold" aria-hidden="true" />{plattegrond ? 'Je plattegrond staat in je dossier, met de plek van de kast erop' : 'Je ontwerp blijft bewaard; je stuurt later verder bij'}</li>
-        <li><Check size={15} weight="bold" aria-hidden="true" />Zet je bouwtekening erin en zie je hele woning in 3D, met elke kamer gemeten</li>
-        <li><Check size={15} weight="bold" aria-hidden="true" />Ledenkorting bij de merken die meedoen, ook op deuren en vloeren</li>
-      </ul>
-      {!bewaard && (
-        <div className="ko-poort-rij" style={{ marginTop: 12 }}>
-          <label htmlFor="kast-bewaar" className="ko-verborgen">E-mailadres om je ontwerp te bewaren</label>
-          <input id="kast-bewaar" type="email" autoComplete="email" placeholder="Of bewaar het: je e-mailadres" value={email} onChange={e => setEmail(e.target.value)} />
-          <button type="button" className="ko-knop ko-knop-klein" disabled={bezig || !email.includes('@')} onClick={async () => { setBezig(true); const f = await bewaar(id, s, email); setBezig(false); if (f) setFout(f); else onBewaard() }}>Mail mij de link</button>
-        </div>
-      )}
-      {bewaard && <p className="ko-hint" style={{ marginTop: 8 }}>Bewaard. Je hebt een mail met een link om verder te gaan.</p>}
+      <div className="ko-velden">
+        {veld('naam', 'Naam', { autoComplete: 'name' })}
+        {veld('email', 'E-mail', { type: 'email', autoComplete: 'email' })}
+        {veld('postcode', 'Postcode', { autoComplete: 'postal-code' })}
+        {veld('plaats', 'Plaats', { autoComplete: 'address-level2' })}
+        {veld('telefoon', 'Telefoon (handig voor het inmeten)', { type: 'tel', autoComplete: 'tel' })}
+        <label className="ko-veld"><span>Plaatsen vanaf</span>
+          <select value={v.plaatsing_van} onChange={e => setV({ ...v, plaatsing_van: e.target.value, plaatsing_tot: v.plaatsing_tot && v.plaatsing_tot < e.target.value ? '' : v.plaatsing_tot })}>
+            <option value="">Weet ik nog niet</option>
+            {MAANDEN.map(m => <option key={m.id} value={m.id}>{m.naam}</option>)}
+          </select>
+        </label>
+        <label className="ko-veld"><span>Uiterlijk</span>
+          <select value={v.plaatsing_tot} disabled={!v.plaatsing_van} onChange={e => setV({ ...v, plaatsing_tot: e.target.value })}>
+            <option value="">Geen einddatum</option>
+            {MAANDEN.filter(m => !v.plaatsing_van || m.id >= v.plaatsing_van).map(m => <option key={m.id} value={m.id}>{m.naam}</option>)}
+          </select>
+        </label>
+      </div>
+      <label className="ko-veld"><span>Nog iets dat het timmerbedrijf moet weten?</span><textarea rows={3} value={v.toelichting} onChange={e => setV({ ...v, toelichting: e.target.value })} /></label>
+      <label className="ko-akkoord"><input type="checkbox" checked={akkoord} onChange={e => setAkkoord(e.target.checked)} /><span>Bylder mag mijn aanvraag, naam en contactgegevens delen met het timmerbedrijf.</span></label>
+      <div className="ko-offerte-rij">
+        <button type="button" className="ko-knop ko-knop-primair" disabled={bezig || !klaarVoor} onClick={async () => {
+          setFout(''); setBezig(true)
+          try {
+            const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ actie: 'offerte', id, s, ...v, akkoord }) })
+            const j = await r.json().catch(() => ({}))
+            if (!r.ok) throw new Error(j.error || 'Versturen mislukte. Probeer het opnieuw.')
+            meetLead('offerte', { product: 'kast', bron: 'kast-ontwerper-site' })
+            setKlaar(true)
+          } catch (e) { setFout((e as Error).message) } finally { setBezig(false) }
+        }}>{bezig ? 'Bezig…' : 'Vraag een offerte aan'}</button>
+        <a href={link} className="ko-link">Of neem je ontwerp{plattegrond ? ' en je plattegrond' : ''} mee naar je Bylder-omgeving →</a>
+      </div>
+      {!klaarVoor && <p className="ko-hint">Vul je naam, e-mail en plaats in en vink het akkoord aan.</p>}
       {fout && <p role="alert" className="ko-fout">{fout}</p>}
+      {!bewaard && (
+        <button type="button" className="ko-link ko-tekstknop" disabled={bezig || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.email)}
+          onClick={async () => { setBezig(true); const f = await bewaar(id, s, v.email); setBezig(false); if (f) setFout(f); else onBewaard() }}>
+          Nog niet zover? Mail mij een link naar dit ontwerp
+        </button>
+      )}
+      {bewaard && <p className="ko-hint">Bewaard. Je hebt een mail met een link om verder te gaan.</p>}
     </div>
   )
 }
@@ -544,17 +593,18 @@ const CSS = `
 .ko-offerte-rij{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .ko-offerte-klaar{display:grid;gap:4px}
 .ko-offerte-form{display:grid;gap:12px}
-.ko-velden{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
-.ko-veld{display:grid;gap:5px}
+.ko-velden{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:560px){.ko-velden{grid-template-columns:1fr}}
+.ko-veld{display:grid;gap:5px;min-width:0}
 .ko-veld span{font-size:12.5px;font-weight:600;color:var(--zacht)}
-.ko-veld input,.ko-veld textarea{font:inherit;font-size:14px;padding:10px 12px;border-radius:11px;border:1.5px solid var(--lijn);background:#fff;color:var(--inkt)}
+.ko-veld input,.ko-veld textarea,.ko-veld select{width:100%;box-sizing:border-box;font:inherit;font-size:14px;padding:10px 12px;border-radius:11px;border:1.5px solid var(--lijn);background:#fff;color:var(--inkt)}
 .ko-akkoord{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.5}
 .ko-poort{display:grid;gap:6px;padding:14px 16px;margin-bottom:10px;border-radius:16px;background:linear-gradient(135deg,rgba(232,168,124,.16),rgba(61,90,62,.08));border:1px solid var(--lijn)}
 .ko-poort strong{color:var(--inkt);font-size:15px}
 .ko-poort span{font-size:13.5px;color:var(--zacht);line-height:1.5}
 .ko-poort-rij{display:flex;gap:8px;flex-wrap:wrap}
 .ko-poort-rij input{flex:1;min-width:180px;font:inherit;font-size:14px;padding:10px 12px;border-radius:11px;border:1.5px solid var(--lijn);background:#fff;color:var(--inkt)}
-a.ko-knop{text-decoration:none}
+a.ko-knop{text-decoration:none}\n.ko-link{font-size:13.5px;font-weight:700;color:var(--mos);text-decoration:none}\n.ko-tekstknop{background:none;border:0;padding:0;font-family:inherit;cursor:pointer;justify-self:start;text-align:left}\n.ko-tekstknop:disabled{color:var(--zacht);cursor:default}
 .ko-laden{height:100%;min-height:300px;display:grid;place-items:center;color:var(--zacht);font-size:13px}
 .ko button:focus-visible,.ko select:focus-visible{outline:2px solid var(--koper);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.ko *{animation:none!important;transition:none!important}}

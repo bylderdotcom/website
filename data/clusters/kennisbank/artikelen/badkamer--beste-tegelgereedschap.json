@@ -10,9 +10,18 @@
     "Wij zetten het gereedschap op een rij dat zijn werk echt doet, gekozen op basis van gebruikservaringen en de eisen van de klus — niet op wie het meeste betaalt. Zo zie je in één oogopslag wat je pakt en waarom."
   ],
   "stats": [
-    ["4", "kernklussen: boren/snijden, leggen, voegen, kitten"],
-    ["<3 mm", "hoogteverschil dat een nivelleersysteem wegwerkt"],
-    ["€6.100", "gem. besparing van Bylder-gebruikers bij een badkamer"]
+    [
+      "4",
+      "kernklussen: boren/snijden, leggen, voegen, kitten"
+    ],
+    [
+      "<3 mm",
+      "hoogteverschil dat een nivelleersysteem wegwerkt"
+    ],
+    [
+      "€6.100",
+      "gem. besparing van Bylder-gebruikers bij een badkamer"
+    ]
   ],
   "secties": [
     {
@@ -29,16 +38,38 @@
     }
   ],
   "faq": [
-    {"q": "Kan ik tegels boren met een gewone steenboor?", "a": "Voor zachte wandtegels lukt het soms, maar bij hard gres of porselein slaat een gewone steenboor de tegel stuk of glijdt hij weg op het glazuur. Een diamant-tegelboor grijpt direct, boort schoon en voorkomt barsten — mits je koelt met water en op een laag toerental werkt."},
-    {"q": "Welke kit gebruik ik in de badkamer?", "a": "Gebruik een schimmelwerende sanitairkit op siliconenbasis. Die blijft elastisch, houdt water buiten en gaat schimmel tegen op naden rond bad, douche en wastafel. Gewone acryl- of bouwkit is niet waterbestendig genoeg en gaat in een natte ruimte snel schimmelen of loslaten."},
-    {"q": "Heb ik een nivelleersysteem echt nodig?", "a": "Voor grote of rechthoekige tegels wel: een nivelleersysteem met clips en wiggen houdt naastliggende tegels op gelijke hoogte, zodat je geen uitstekende randen (lippage) krijgt. Bij kleine tegels of ervaren handen kan het zonder, maar het systeem maakt strak leggen een stuk vergevingsgezinder."},
-    {"q": "Hoe verwijder ik oude kit het makkelijkst?", "a": "Breng een siliconenkit-verwijderaar aan, laat die de kit losweken en steek de naad daarna af met een kitmesje of schraper. Verwijder alle resten, maak de naad schimmelvrij en vetvrij, en breng pas dan nieuwe sanitairkit aan — anders hecht de nieuwe kit niet."},
-    {"q": "Beïnvloeden deze aanbevelingen jullie prijsadvies?", "a": "Nee. Onafhankelijke keuzes; als Amazon-partner verdient Bylder aan kwalificerende aankopen, los van onze marktprijs-analyses en offertechecks."}
+    {
+      "q": "Kan ik tegels boren met een gewone steenboor?",
+      "a": "Voor zachte wandtegels lukt het soms, maar bij hard gres of porselein slaat een gewone steenboor de tegel stuk of glijdt hij weg op het glazuur. Een diamant-tegelboor grijpt direct, boort schoon en voorkomt barsten — mits je koelt met water en op een laag toerental werkt."
+    },
+    {
+      "q": "Welke kit gebruik ik in de badkamer?",
+      "a": "Gebruik een schimmelwerende sanitairkit op siliconenbasis. Die blijft elastisch, houdt water buiten en gaat schimmel tegen op naden rond bad, douche en wastafel. Gewone acryl- of bouwkit is niet waterbestendig genoeg en gaat in een natte ruimte snel schimmelen of loslaten."
+    },
+    {
+      "q": "Heb ik een nivelleersysteem echt nodig?",
+      "a": "Voor grote of rechthoekige tegels wel: een nivelleersysteem met clips en wiggen houdt naastliggende tegels op gelijke hoogte, zodat je geen uitstekende randen (lippage) krijgt. Bij kleine tegels of ervaren handen kan het zonder, maar het systeem maakt strak leggen een stuk vergevingsgezinder."
+    },
+    {
+      "q": "Hoe verwijder ik oude kit het makkelijkst?",
+      "a": "Breng een siliconenkit-verwijderaar aan, laat die de kit losweken en steek de naad daarna af met een kitmesje of schraper. Verwijder alle resten, maak de naad schimmelvrij en vetvrij, en breng pas dan nieuwe sanitairkit aan — anders hecht de nieuwe kit niet."
+    }
   ],
   "links": {
-    "tool": ["/keuken-badkamer-offerte-check/", "Keuken & badkamer offerte-check"],
-    "commercieel": ["/badkamer-renoveren/", "Badkamer renoveren met Bylder"],
-    "zusters": ["voegen-en-kitwerk", "schimmel-voorkomen", "badkamertegels-kiezen", "waterdichting-badkamer"]
+    "tool": [
+      "/keuken-badkamer-offerte-check/",
+      "Keuken & badkamer offerte-check"
+    ],
+    "commercieel": [
+      "/badkamer-renoveren/",
+      "Badkamer renoveren met Bylder"
+    ],
+    "zusters": [
+      "voegen-en-kitwerk",
+      "schimmel-voorkomen",
+      "badkamertegels-kiezen",
+      "waterdichting-badkamer"
+    ]
   },
   "affiliate_categorie": "badkameronderhoud"
 }

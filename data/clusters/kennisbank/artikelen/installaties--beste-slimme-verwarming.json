@@ -10,9 +10,18 @@
     "Wij zetten de oplossingen op een rij die hun werk echt doen — gekozen op basis van gebruikservaringen, compatibiliteit met jouw cv of warmtepomp en een reëel besparingseffect, niet op wie het meeste betaalt. We zijn eerlijk over de terugverdientijd: sommige ingrepen betalen zich binnen een seizoen terug, andere pas na jaren."
   ],
   "stats": [
-    ["1 °C", "lager stoken scheelt al zo'n 6% op je gasverbruik"],
-    ["<1 jaar", "terugverdientijd van radiatorfolie achter een buitenmuur"],
-    ["€4.200", "gem. besparing van Bylder-gebruikers"]
+    [
+      "1 °C",
+      "lager stoken scheelt al zo'n 6% op je gasverbruik"
+    ],
+    [
+      "<1 jaar",
+      "terugverdientijd van radiatorfolie achter een buitenmuur"
+    ],
+    [
+      "€4.200",
+      "gem. besparing van Bylder-gebruikers"
+    ]
   ],
   "secties": [
     {
@@ -29,16 +38,38 @@
     }
   ],
   "faq": [
-    {"q": "Werkt een slimme thermostaat op een warmtepomp?", "a": "Vaak wel voor aan/uit-sturing en het programmeren van tijden, maar lang niet altijd voor het aanpassen van de stooklijn — dat regelt de warmtepomp meestal zelf. Controleer daarom eerst de compatibiliteitslijst van de fabrikant met jouw specifieke toestel. Op een cv-ketel met OpenTherm haal je doorgaans het meeste rendement."},
-    {"q": "Wat verdient zich het snelst terug?", "a": "Radiatorfolie achter een radiator op een ongeïsoleerde buitenmuur is de goedkoopste ingreep en verdient zich vaak binnen één stookseizoen terug. Een slimme thermostaat of een set radiatorknoppen bespaart meer in absolute euro's, maar heeft een langere terugverdientijd — reken op enkele jaren, afhankelijk van je stookgedrag en isolatie."},
-    {"q": "Hebben slimme radiatorknoppen zin bij vloerverwarming?", "a": "Nee. Radiatorknoppen regelen de doorstroming in een radiator; bij vloerverwarming is er geen radiator om op te plaatsen. Daar stuur je de temperatuur via de thermostaat of per verwarmingsgroep in de verdeler. Radiatorknoppen zijn juist het meest waardevol in weinig gebruikte kamers met een radiator."},
-    {"q": "Bespaart een slimme stekker met energiemeting op mijn verwarming?", "a": "Niet direct — je cv-ketel of warmtepomp hangt niet op een stopcontact. Een slimme stekker meet losse apparaten en helpt je sluipverbruik en stille grootverbruikers op te sporen. Dat is winst op je totale energierekening, maar staat los van je verwarmingskosten."},
-    {"q": "Beïnvloeden deze aanbevelingen jullie prijsadvies?", "a": "Nee. Onafhankelijke keuzes; als Amazon-partner verdient Bylder aan kwalificerende aankopen, los van onze marktprijs-analyses en offertechecks."}
+    {
+      "q": "Werkt een slimme thermostaat op een warmtepomp?",
+      "a": "Vaak wel voor aan/uit-sturing en het programmeren van tijden, maar lang niet altijd voor het aanpassen van de stooklijn — dat regelt de warmtepomp meestal zelf. Controleer daarom eerst de compatibiliteitslijst van de fabrikant met jouw specifieke toestel. Op een cv-ketel met OpenTherm haal je doorgaans het meeste rendement."
+    },
+    {
+      "q": "Wat verdient zich het snelst terug?",
+      "a": "Radiatorfolie achter een radiator op een ongeïsoleerde buitenmuur is de goedkoopste ingreep en verdient zich vaak binnen één stookseizoen terug. Een slimme thermostaat of een set radiatorknoppen bespaart meer in absolute euro's, maar heeft een langere terugverdientijd — reken op enkele jaren, afhankelijk van je stookgedrag en isolatie."
+    },
+    {
+      "q": "Hebben slimme radiatorknoppen zin bij vloerverwarming?",
+      "a": "Nee. Radiatorknoppen regelen de doorstroming in een radiator; bij vloerverwarming is er geen radiator om op te plaatsen. Daar stuur je de temperatuur via de thermostaat of per verwarmingsgroep in de verdeler. Radiatorknoppen zijn juist het meest waardevol in weinig gebruikte kamers met een radiator."
+    },
+    {
+      "q": "Bespaart een slimme stekker met energiemeting op mijn verwarming?",
+      "a": "Niet direct — je cv-ketel of warmtepomp hangt niet op een stopcontact. Een slimme stekker meet losse apparaten en helpt je sluipverbruik en stille grootverbruikers op te sporen. Dat is winst op je totale energierekening, maar staat los van je verwarmingskosten."
+    }
   ],
   "links": {
-    "tool": ["/nieuwbouw-tools/", "Gratis nieuwbouw-tools"],
-    "commercieel": ["/woning-verduurzamen/", "Woning verduurzamen met Bylder"],
-    "zusters": ["warmtepomp-typen", "domotica-slim-huis", "energielabel-woning", "hybride-warmtepomp"]
+    "tool": [
+      "/nieuwbouw-tools/",
+      "Gratis nieuwbouw-tools"
+    ],
+    "commercieel": [
+      "/woning-verduurzamen/",
+      "Woning verduurzamen met Bylder"
+    ],
+    "zusters": [
+      "warmtepomp-typen",
+      "domotica-slim-huis",
+      "energielabel-woning",
+      "hybride-warmtepomp"
+    ]
   },
   "affiliate_categorie": "smarthome"
 }

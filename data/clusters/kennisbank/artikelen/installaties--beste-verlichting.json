@@ -10,9 +10,18 @@
     "Wij zetten de oplossingen op een rij die hun werk echt doen, gekozen op basis van gebruikservaringen en wat per ruimte nodig is, niet op wie het meeste betaalt. Zo weet je in één oogopslag welke lamp, dimmer of hulpmiddel bij jouw klus past en waar je een erkend installateur inschakelt."
   ],
   "stats": [
-    ["3", "lagen licht: sfeer, werk en accent"],
-    ["trailing edge", "de juiste dimtechniek voor moderne led"],
-    ["€4.200", "gem. besparing van Bylder-gebruikers"]
+    [
+      "3",
+      "lagen licht: sfeer, werk en accent"
+    ],
+    [
+      "trailing edge",
+      "de juiste dimtechniek voor moderne led"
+    ],
+    [
+      "€4.200",
+      "gem. besparing van Bylder-gebruikers"
+    ]
   ],
   "secties": [
     {
@@ -29,15 +38,33 @@
     }
   ],
   "faq": [
-    {"q": "Waarom knippert mijn led-lamp op de dimmer?", "a": "Meestal omdat je dimmer nog van het oude, fase-aansnijdende type is. Moderne led dimt vloeiend op een trailing-edge dimmer (fase-afsnijding). Controleer daarnaast of de lamp echt dimbaar is en of het totale wattage binnen het bereik van de dimmer valt."},
-    {"q": "Kan ik slimme verlichting zelf aanleggen?", "a": "Slimme lampen indraaien, een ledstrip op een adapter aansluiten of een stekkerdoos plaatsen kun je zelf. Het vervangen van een inbouwdimmer of het aanpassen van vaste 230V-bedrading raakt de vaste installatie; laat dat door een erkend installateur doen, zeker als er een nieuwe groep of aansluitpunt bij komt."},
-    {"q": "Heb ik een hub of gateway nodig voor slimme lampen?", "a": "Dat hangt van het systeem af. Sommige slimme lampen werken direct via wifi of bluetooth, andere vragen een aparte gateway voor een stabieler netwerk en meer schakelopties. Wil je later uitbreiden met sensoren en schakelaars, dan is een systeem met gateway vaak toekomstvaster."},
-    {"q": "Beïnvloeden deze aanbevelingen jullie prijsadvies?", "a": "Nee. Onafhankelijke keuzes; als Amazon-partner verdient Bylder aan kwalificerende aankopen, los van onze marktprijs-analyses en offertechecks."}
+    {
+      "q": "Waarom knippert mijn led-lamp op de dimmer?",
+      "a": "Meestal omdat je dimmer nog van het oude, fase-aansnijdende type is. Moderne led dimt vloeiend op een trailing-edge dimmer (fase-afsnijding). Controleer daarnaast of de lamp echt dimbaar is en of het totale wattage binnen het bereik van de dimmer valt."
+    },
+    {
+      "q": "Kan ik slimme verlichting zelf aanleggen?",
+      "a": "Slimme lampen indraaien, een ledstrip op een adapter aansluiten of een stekkerdoos plaatsen kun je zelf. Het vervangen van een inbouwdimmer of het aanpassen van vaste 230V-bedrading raakt de vaste installatie; laat dat door een erkend installateur doen, zeker als er een nieuwe groep of aansluitpunt bij komt."
+    },
+    {
+      "q": "Heb ik een hub of gateway nodig voor slimme lampen?",
+      "a": "Dat hangt van het systeem af. Sommige slimme lampen werken direct via wifi of bluetooth, andere vragen een aparte gateway voor een stabieler netwerk en meer schakelopties. Wil je later uitbreiden met sensoren en schakelaars, dan is een systeem met gateway vaak toekomstvaster."
+    }
   ],
   "links": {
-    "tool": ["/3d-sfeerimpressie/", "3D-sfeerimpressie van je interieur"],
-    "commercieel": ["/verbouwen/", "Verbouwen met Bylder"],
-    "zusters": ["laadpaal-thuis", "groepenkast-en-3-fase", "domotica-slim-huis"]
+    "tool": [
+      "/3d-sfeerimpressie/",
+      "3D-sfeerimpressie van je interieur"
+    ],
+    "commercieel": [
+      "/verbouwen/",
+      "Verbouwen met Bylder"
+    ],
+    "zusters": [
+      "laadpaal-thuis",
+      "groepenkast-en-3-fase",
+      "domotica-slim-huis"
+    ]
   },
   "affiliate_categorie": "elektra"
 }
