@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 }
 
 const VRAGEN = [
-  { v: 'Wie neemt de opdracht aan?', a: 'Bylder. Je sluit één overeenkomst met Bylder voor alles wat je laat doen. Het werk doen vakbedrijven die wij selecteren, inplannen en controleren. Bij elk onderdeel in de offerte staat welk bedrijf het uitvoert.' },
+  { v: 'Wie neemt de opdracht aan?', a: 'Dat kies je zelf. Laat je het Bylder doen, dan sluit je één overeenkomst met Bylder voor alles wat je laat doen; het werk doen vakbedrijven die wij selecteren, inplannen en controleren, en bij elk onderdeel in de offerte staat welk bedrijf het uitvoert. Kies je ervoor het uit te zetten bij vakbedrijven, dan krijg je offertes van meerdere bedrijven op dezelfde aanvraag en sluit je de opdracht met het bedrijf dat je kiest.' },
   { v: 'Waarom één offerte in plaats van losse vakbedrijven?', a: 'Omdat de afwerking een volgorde heeft. De stukadoor moet weg voordat de tegelzetter komt, en de vloer komt pas als de schilder klaar is. Met losse bedrijven regel jij die planning zelf. Bij ons heb je één planning, één aanspreekpunt en één prijs.' },
   { v: 'Hoe kunnen jullie een offerte maken zonder eerst te meten?', a: 'We halen de maten uit je tekening: vierkante meters vloer, wand en plafond per ruimte, het aantal deuren en waar de badkamer zit. Daarmee maken we de offerte. Voordat we beginnen, meten we wel in, zodat er niets wordt gemaakt op een maat die niet klopt.' },
   { v: 'Waar werken jullie?', a: 'In heel Nederland. Laat je aanvraag achter met de plaats van je woning; we maken je offerte met vakbedrijven bij jou in de buurt.' },
@@ -123,11 +123,16 @@ export default function NieuwbouwAfwerkenPage() {
         controleren het werk. In je offerte staat bij elk onderdeel wie het uitvoert. Ken je zelf een goed bedrijf, dan
         kan dat ook: noem het in je aanvraag.
       </p>
+      <p style={S.p}>
+        Liever zelf kiezen tussen bedrijven? Dan zetten wij je aanvraag uit bij vakbedrijven die er in jouw periode tijd
+        voor hebben. Je krijgt hun offertes op dezelfde aanvraag en sluit de opdracht met het bedrijf dat je kiest. Welke
+        route je wilt, kies je in het formulier hieronder.
+      </p>
       <p style={S.p}>Ben je zelf vakbedrijf? <a href="/uitvoerder-worden/" style={S.link}>Word uitvoerder bij Bylder →</a></p>
 
       <section id="aanvraag" aria-labelledby="aanvraag-kop" style={S.aanvraag}>
         <h2 id="aanvraag-kop" style={{ ...S.h2, margin: '0 0 8px' }}>Vraag je offerte aan</h2>
-        <p style={{ ...S.p, margin: '0 0 18px' }}>Gratis en vrijblijvend. We nemen binnen twee werkdagen contact met je op.</p>
+        <p style={{ ...S.p, margin: '0 0 18px' }}>Gratis en vrijblijvend. Laat het Bylder doen, of laat ons het uitzetten bij vakbedrijven. We nemen binnen twee werkdagen contact met je op.</p>
         <AfwerkAanvraag onderdelen={ONDERDELEN.map(o => ({ slug: o.slug, naam: o.naam }))} gekozen={ONDERDELEN.map(o => o.slug)} bron="nieuwbouw-afwerken" />
       </section>
 

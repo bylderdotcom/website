@@ -148,7 +148,7 @@ def trechter(s, prop):
               f"Bezoekers: {int(bez[0]['value']):,} · sessies: {int(bez[1]['value']):,}".replace(",", "."), "",
               "| Product | Configurator gebruikt | Formulier geopend | Aanvraag verstuurd | Formulier → aanvraag |",
               "|---|---|---|---|---|"]
-    for prod in ("kozijnloze-deur", "gietvloer", "kast", "afwerking-nieuwbouw", "onzichtbare-plint"):
+    for prod in ("kozijnloze-deur", "gietvloer", "kast", "afwerking-nieuwbouw", "afwerking-aanbesteden", "afwerking-aanbesteden", "onzichtbare-plint"):
         v = t.get(prod, {})
         c, f, l = v.get("configurator_stap", 0), v.get("offerte_formulier_open", 0), v.get("generate_lead", 0)
         regels.append(f"| {prod} | {c or '–'} | {f} | {l} | {pct(l, f)} |")

@@ -30,7 +30,7 @@ const label: React.CSSProperties = { display: 'block', fontSize: 13, fontWeight:
 const PLANNING = ['Zo snel mogelijk', 'Binnen 3 maanden', 'Over 3 tot 6 maanden', 'Later dan 6 maanden', 'Weet ik nog niet']
 
 export default function OfferteFormulier(p: {
-  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie' | 'afwerking-nieuwbouw' | 'winkel-plint' | 'winkel-scharnier' | 'winkel-deurset'
+  product: 'kozijnloze-deur' | 'gietvloer' | 'onzichtbare-plint' | 'combinatie' | 'afwerking-nieuwbouw' | 'afwerking-aanbesteden' | 'winkel-plint' | 'winkel-scharnier' | 'winkel-deurset'
   bron: string
   specificatie: string
   configuratie: unknown
@@ -52,6 +52,8 @@ export default function OfferteFormulier(p: {
 
   // Bij de afwerking van een nieuwbouwwoning neemt Bylder zelf de opdracht aan (28-10-2026).
   const aannemer = p.product === 'afwerking-nieuwbouw'
+  // De andere route (21-11-2026): Bylder zet de afwerking uit bij vakbedrijven; de koper kiest er een.
+  const aanbesteden = p.product === 'afwerking-aanbesteden'
   // Een bestelling in de Bylder-winkel (31-10-2026): Bylder is de verkoper. Zolang er geen betaling in
   // de site zit, bevestigen wij de bestelling met prijs, levertijd en een betaallink.
   const bestelling = p.product.startsWith('winkel-')
@@ -66,6 +68,8 @@ export default function OfferteFormulier(p: {
             : 'Je krijgt een bevestiging per mail, met een knop naar je aanvraag in je Bylder-account. Daar zie je ook hoe het ermee staat. '}
           {bestelling ? null : aannemer
             ? 'We nemen binnen twee werkdagen contact met je op om je woning en de planning door te nemen. De offerte komt van Bylder: één prijs voor alles. Het werk doen vakbedrijven uit de regio, en wij plannen en controleren het.'
+            : aanbesteden
+            ? 'We zetten je aanvraag uit bij vakbedrijven die er in jouw periode tijd voor hebben. Hun offertes komen in je account; ze rekenen allemaal op dezelfde aanvraag. Ga je akkoord, dan sluit je de opdracht met het bedrijf dat je kiest.'
             : p.product === 'kozijnloze-deur'
             // Bylder maakt de offerte voor de deuren (besluit Daniel, 3-11-2026).
             ? 'We kijken je samenstelling na en sturen je binnen twee werkdagen een offerte van Bylder. Ga je akkoord, dan sluit je de opdracht met Bylder; je hebt één aanspreekpunt.'
@@ -156,7 +160,7 @@ export default function OfferteFormulier(p: {
       <p style={{ fontSize: 12.5, color: `${INKT}0.55)`, margin: 0, lineHeight: 1.55 }}>
         {aannemer
           ? 'Bylder maakt de offerte. De vakbedrijven die het werk doen, krijgen alleen wat ze daarvoor nodig hebben.'
-          : 'We geven je aanvraag door aan het vakbedrijf dat de offerte maakt.'}{' '}
+          : aanbesteden ? 'We geven je aanvraag door aan de vakbedrijven die een offerte maken.' : 'We geven je aanvraag door aan het vakbedrijf dat de offerte maakt.'}{' '}
         <a href="/privacy/" style={{ color: `${INKT}0.7)` }}>Privacy</a>
       </p>
       {fout && (
