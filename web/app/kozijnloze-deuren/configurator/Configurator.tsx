@@ -13,8 +13,26 @@ import OntwerpBewaren from '../../components/OntwerpBewaren'
 import GerenderdBeeld from './GerenderdBeeld'
 import { meetStap } from '../../components/trechter'
 import { HOOGTES, MONTAGE_UUR, deurPrijs, euro, euroRond, type Hoogte } from './prijs'
+import { setKleur } from '@/lib/winkel'
 
 const meet = (stap: string) => meetStap('kozijnloze-deur', stap)
+
+// Is deze deur precies een kant-en-klare set uit de winkel (21-11-2026, audit: 16 gebruikers in de
+// configurator, 0 offerteformulieren)? Dan kan hij meteen besteld worden met iDEAL, zonder te wachten op
+// een offerte. Sets: vlak (Origin), gegrond op standaardhoogte, of afgelakt in een van de zes setkleuren
+// (standaard of plafondhoog). De prijs van kozijn plus deurblad is gelijk aan de winkelprijs; de kruk zit
+// niet in de set.
+function setVoorDeur(d: { ontwerp: string; afwerking: string; ral: string; vrij: string; hoogte: Hoogte }) {
+  if (d.ontwerp !== 'origin' || d.vrij) return null
+  if (d.afwerking === 'gegrond' && d.hoogte === 'standaard')
+    return { naam: 'de standaardset gegrond', href: '/winkel/kozijnloze-deur-set/#bestellen' }
+  const k = d.afwerking === 'gelakt' ? setKleur(d.ral) : null
+  if (!k) return null
+  return {
+    naam: `de set in ${k.naam} (RAL ${k.ral})${d.hoogte === 'plafond' ? ', plafondhoog' : ''}`,
+    href: `/winkel/kozijnloze-deur-set/ral-${k.ral}/${d.hoogte === 'plafond' ? '?hoogte=plafond' : ''}#bestellen`,
+  }
+}
 
 // Configurator voor kozijnloze deuren van Classic Next.
 //
@@ -579,6 +597,11 @@ export default function Configurator() {
   const somBekend = prijzen.reduce((t, x) => t + (x.totaal ?? 0), 0)
   const allesBekend = prijzen.every(x => x.totaal != null)
   const prijsHuidig = prijsVan(huidig)
+  // Alleen bij één deur: een set bestel je per uitvoering, en bij meer deuren hoort de offerte.
+  const set = deuren.length === 1 ? setVoorDeur(huidig) : null
+  const setPrijs = set ? prijsHuidig.regels.slice(0, 2).reduce((t, r) => t + (r.bedrag ?? 0), 0) : 0
+  const setGezien = useRef(false)
+  useEffect(() => { if (set && !setGezien.current) { setGezien.current = true; meet('set-getoond') } }, [set])
 
   const mail = 'mailto:info@bylder.com?subject='
     + encodeURIComponent('Offerteaanvraag kozijnloze deuren')
@@ -1163,6 +1186,24 @@ export default function Configurator() {
               Inclusief btw, exclusief montage en levering. Monteren duurt ongeveer {MONTAGE_UUR} uur per deur{deuren.length > 1 ? `, voor ${deuren.length} deuren dus zo'n ${(deuren.length * 2.5).toLocaleString('nl-NL')} uur` : ''}. {prijsHuidig.totaal == null ? 'Houtdecor is maatwerk: die prijs staat in je offerte. ' : ''}Een indicatie op basis van de
               prijslijst van Classic Next; wanddikte en afwijkende maten kunnen de prijs veranderen.
             </p>
+            {set ? (
+              <div style={{ borderTop: `1px solid ${INKT}0.14)`, margin: '12px 0 0', padding: '12px 0 0' }}>
+                <p style={{ margin: '0 0 6px', fontSize: 14.5, lineHeight: 1.55, color: '#1A1208' }}>
+                  <strong>Deze deur kun je meteen bestellen.</strong> Hij bestaat als {set.naam}: <span className="maat" style={{ fontWeight: 700 }}>{euro(setPrijs)}</span> voor
+                  kozijn en deurblad, zonder kruk. Afrekenen met iDEAL, vracht € 99 per bestelling, levering in ongeveer 6 weken.
+                </p>
+                <a href={set.href} data-meet="deur-set-bestellen" onClick={() => meet('set-bestellen')}
+                   style={{ fontSize: 14.5, fontWeight: 800, color: GROEN, textDecoration: 'none' }}>
+                  Bestel als set →
+                </a>
+                <span style={{ fontSize: 13, color: `${INKT}0.62)` }}> Montage erbij of meer deuren? Vraag hieronder de offerte aan.</span>
+              </div>
+            ) : deuren.length === 1 && huidig.afwerking !== 'fineer' ? (
+              <p style={{ fontSize: 12.5, color: `${INKT}0.62)`, margin: '8px 0 0', lineHeight: 1.6 }}>
+                Meteen bestellen kan met het vlakke ontwerp Origin: gegrond op standaardhoogte, of afgelakt in een van de
+                zes kleuren uit de <a href="/winkel/kozijnloze-deur-set/" style={{ color: GROEN }}>winkel</a>.
+              </p>
+            ) : null}
           </div>
           {spec && (
             <pre style={{ fontSize: 12.5, lineHeight: 1.7, background: `${INKT}0.04)`,
@@ -1226,13 +1267,23 @@ export default function Configurator() {
               {' · '}{krukModel.naam} {krukVar.afwerking.toLowerCase()}
               {' · '}{deuren.length} {deuren.length === 1 ? 'deur' : 'deuren'}
             </span>
-            {somBekend > 0 && <strong style={{ display: 'block', fontSize: 13.5 }}>{allesBekend ? '' : 'vanaf '}{euroRond(somBekend)} <span style={{ fontWeight: 500, color: `${INKT}0.6)` }}>incl. btw, excl. montage</span></strong>}
+            {set
+              ? <strong style={{ display: 'block', fontSize: 13.5 }}>{euroRond(setPrijs)} <span style={{ fontWeight: 500, color: `${INKT}0.6)` }}>als set, zonder kruk en montage</span></strong>
+              : somBekend > 0 && <strong style={{ display: 'block', fontSize: 13.5 }}>{allesBekend ? '' : 'vanaf '}{euroRond(somBekend)} <span style={{ fontWeight: 500, color: `${INKT}0.6)` }}>incl. btw, excl. montage</span></strong>}
           </p>
-          <button type="button" onClick={naarOfferte} tabIndex={balkWeg ? -1 : 0}
-            style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px',
-                     borderRadius: 10, border: 0, cursor: 'pointer', fontFamily: 'inherit' }}>
-            Vraag een offerte aan
-          </button>
+          {set ? (
+            <a href={set.href} tabIndex={balkWeg ? -1 : 0} data-meet="deur-set-balk" onClick={() => meet('set-bestellen')}
+              style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px',
+                       borderRadius: 10, textDecoration: 'none', fontFamily: 'inherit' }}>
+              Bestel deze deur
+            </a>
+          ) : (
+            <button type="button" onClick={naarOfferte} tabIndex={balkWeg ? -1 : 0}
+              style={{ flexShrink: 0, background: GROEN, color: '#F5F0E8', fontWeight: 800, fontSize: 14.5, padding: '11px 18px',
+                       borderRadius: 10, border: 0, cursor: 'pointer', fontFamily: 'inherit' }}>
+              Vraag een offerte aan
+            </button>
+          )}
         </div>
       </div>
     </div>
