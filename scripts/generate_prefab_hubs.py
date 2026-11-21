@@ -207,7 +207,7 @@ def render(cfg):
 
   <div style="background:rgba(61,90,62,0.06);border:1px solid rgba(61,90,62,0.18);border-radius:16px;padding:26px;margin:40px 0;">
     <h2 style="font-size:1.35rem;font-weight:800;margin-bottom:8px;">Betaal je een eerlijke prijs?</h2>
-    <p style="font-size:15px;color:rgba(61,46,30,0.85);line-height:1.7;margin-bottom:16px;max-width:640px;">Bylder is geen leadveiling. Je vergelijkt bedrijven en checkt je offerte gratis tegen actuele marktdata &mdash; met gemiddeld <strong>&euro;1.640</strong> besparing per gecontroleerde offerte.</p>
+    <p style="font-size:15px;color:rgba(61,46,30,0.85);line-height:1.7;margin-bottom:16px;max-width:640px;">Je vergelijkt bedrijven en checkt je offerte gratis tegen actuele marktprijzen.</p>
     <a href="{cfg["cta_href"]}" style="display:inline-block;background:#3D5A3E;color:#F5F0E8;padding:13px 26px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;">{cfg["cta_label"]} &#8594;</a>
   </div>
 
@@ -233,7 +233,7 @@ def render(cfg):
 AANBOUW = {
     "path": "aanbouw", "crumb": "Prefab aanbouw", "badge": "Aanbouw &amp; uitbouw",
     "title": "Prefab aanbouw: kosten, vergunning en aanpak | Bylder",
-    "desc": "Wat kost een prefab aanbouw of uitbouw? Marktprijzen per m², wanneer het vergunningvrij is en waar je op let bij offertes. Onafhankelijk van Bylder.",
+    "desc": "Wat kost een prefab aanbouw of uitbouw? Marktprijzen per m², wanneer het vergunningvrij is en waar je op let bij offertes. Van Bylder.",
     "h1": "Prefab aanbouw &amp; uitbouw: kosten, vergunning en aanpak",
     "tldr": "Een prefab aanbouw wordt in een fabriek gemaakt en in delen op locatie geplaatst &mdash; vaak binnen een dag. Reken op &euro;1.200&ndash;&euro;2.800+ per m². In het achtererfgebied is een aanbouw vaak vergunningvrij, binnen grenzen.",
     "cta_href": "/offerte-check/aannemer/", "cta_label": "Check je aanbouw-offerte",
