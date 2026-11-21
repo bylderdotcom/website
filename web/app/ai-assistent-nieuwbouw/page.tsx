@@ -3,7 +3,7 @@ import Maquette from '../components/Maquette'
 
 // Bylder regelt: de assistent die je nieuwbouwwoning kent (19-11-2026, besluit Daniel).
 // De propositiepagina bij de agent in de app (app /dashboard/woningdossier, src/lib/agent/).
-// Alles wat hier staat, kan de agent vandaag. Wat nog komt staat apart, zonder datum.
+// Alles wat hier staat, kan de agent vandaag (rekenen met onze prijzen sinds 19-11-2026). Wat nog komt staat apart, zonder datum.
 // Hij noemt zich niet onafhankelijk en er staat niet waar Bylder aan verdient (besluiten Daniel).
 // Het voorbeeldgesprek noemt geen prijzen: de agent noemt alleen prijzen uit onze eigen gegevens.
 
@@ -29,6 +29,7 @@ const DOET = [
   { t: 'Hij kent je woning', p: 'Je uploadt de plattegrond van je aannemer. Daarna weet hij je verdiepingen, elke ruimte met vierkante meters, je aantal deuren en je opleverdatum. Je hoeft niets opnieuw uit te leggen.' },
   { t: 'Hij zegt wat nu aan de beurt is', p: 'Nieuwbouw heeft een harde klok: contract, sluitingsdatum voor meerwerk, oplevering. Hij zet op een rij wat je nu moet beslissen, wat binnenkort en wat later kan.' },
   { t: 'Hij loopt je meerwerk na', p: 'Per onderdeel hoor je of je het beter via de bouwer regelt of na de oplevering, met de marktprijs erbij. Constructief werk en leidingen horen bij de bouwer; afwerking kan vaak daarna.' },
+  { t: 'Hij rekent met jouw aantallen', p: 'Wat kosten je deuren, je gietvloer of je tegelvloer ongeveer? Hij rekent met onze prijzen en met de aantallen uit je tekening, en zegt erbij wat er niet in zit. Voor de rest van de afwerking geeft hij de marktprijs.' },
   { t: 'Hij zet de offerte klaar', p: 'Wil je stucwerk, tegelwerk, een badkamer, vloeren, deuren, schilderwerk of kasten laten doen? Hij maakt de aanvraag met jouw onderdelen en je woonoppervlakte. Jij keurt goed, dan is hij verstuurd.' },
   { t: 'Hij wijst je de juiste ontwerper', p: 'Voor kozijnloze deuren, een kast op maat of een gietvloer opent hij de ontwerper waarin je het zelf samenstelt, met de maten uit je tekening.' },
   { t: 'Hij onthoudt wat loopt', p: 'Hij ziet welke aanvragen je al hebt gedaan en hoe ver ze zijn. Hij stelt niet voor wat je al geregeld hebt.' },
@@ -36,13 +37,12 @@ const DOET = [
 
 const GRENZEN = [
   { t: 'Hij voert niets uit zonder jou', p: 'Hij legt een voorstel neer als kaart. Er gebeurt pas iets als jij op goedkeuren drukt. Een aanvraag versturen kan alleen jij.' },
-  { t: 'Hij verzint geen prijzen', p: 'Hij noemt alleen bedragen die uit onze eigen gegevens komen. Heeft hij geen prijs, dan zegt hij waar je hem ziet: in de ontwerper of in de offerte.' },
+  { t: 'Hij verzint geen prijzen', p: 'Hij noemt alleen bedragen die uit onze eigen gegevens komen, als bandbreedte, en zegt of het onze prijs is of een marktindicatie. De definitieve prijs staat in de ontwerper of in de offerte.' },
   { t: 'Hij is van Bylder', p: 'Hij stelt voor wat Bylder voor je kan doen. Elke offerte kun je naast een andere leggen. Een offerte aanvragen is gratis, en je zit nergens aan vast tot je tekent.' },
   { t: 'Hij zegt wat hij niet kan', p: 'Kan hij iets niet, dan zegt hij dat en geeft hij het door aan ons. Zo weten wij wat er ontbreekt.' },
 ]
 
 const STRAKS = [
-  'Rekenen met onze prijzen: wat je deuren, je vloer of je badkamer ongeveer kosten, met de aantallen uit je tekening.',
   'Deadlines bewaken en er zelf over beginnen, bijvoorbeeld drie weken voor de sluitingsdatum van je meerwerk.',
   'De keuzelijst van je aannemer inlezen en per regel zeggen: nu via de bouwer of later.',
 ]
