@@ -466,8 +466,12 @@ een kwartier live" zonder `vercel ls website` te checken.
   meldingen "tekening uploaden lukt niet" en "account verwijderen" waren al op 11-11 opgelost (app-PR 112); de groepen in de
   feedbacklijst staan alleen nog op "nieuw". App (21-11): tekening berekenen, document nalezen en de kopersbegeleider draaien
   op het huidige model en melden storingen via `meldToolFout` (`tekening-lezen`, `document-lezen`, `kopersbegeleider`); nog niet
-  in de dagelijkse zelftest. Nog op een ouder model: bod-advies, sales-chat, vouchermoderatie, offerteposten, de twee
-  feedback-crons en de moderatie in `api/feature-request.js`. De wekelijkse audit (`_audits/`) draaide op Daniels Mac met een
+  in de dagelijkse zelftest. Sinds 21-11 ook op het huidige model: bod-advies, sales-chat, vouchermoderatie, offerteposten, de twee
+  feedback-crons en op de site `api/scan.js`, `quote-check.js`, `full-report.js` en `feature-request.js`; de zelftest doet per
+  taalmodel één kort verzoek. Nog op een ouder model: `scripts/handwerk_schrijver.py` (de feitenronde; bewust niet aangeraakt). De wekelijkse audit (`_audits/`) draaide op Daniels Mac met een
   prompt van het oude lidmaatschapsmodel en stopte na 21-09; opnieuw aanzetten als wekelijkse taak in de cloud (alleen lezen,
-  één issue "Audit <datum>") wacht op Daniels akkoord. Nog open uit de rondes: CBS-cijfers bijwerken (issue 79, handwerk), kansenlijst
+  één issue "Audit <datum>") wacht op Daniels akkoord. CBS-vergunningen bijgewerkt op 21-11 naar 2025 K4 t/m 2026 K3 met `scripts/cbs_vergunningen_bijwerken.py`
+  (329 gemeentepagina's, bij 106 sloeg de vergelijkingszin om volgens de vaste regel: onder 0,8 keer de oplevering "minder", boven
+  1,2 keer "meer"; eerst `--droog` draaien en de omgeslagen zinnen nalezen). Vanaf een vakbedrijfprofiel opent het
+  afwerkformulier met "naast de offerte van <bedrijf>" (`?naast=`, in `configuratie.naast`). Nog open uit de rondes: kansenlijst
   projectpagina's (issue 318, meting 2 december), map `output/` (331 bestanden, niet meer bereikbaar) en `api/betaling-start.js` opruimen.
